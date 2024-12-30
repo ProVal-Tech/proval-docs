@@ -1,0 +1,111 @@
+active-directory:
+  label: Active Directory
+  description: Content related to Active Directory.
+
+adobe:
+  label: Adobe
+  description: Content related to Adobe software.
+
+backup:
+  label: Backup
+  description: Content related to backing up data.
+
+chrome:
+  label: Chrome
+  description: Content related to the Chrome web browser.
+
+configuration:
+  label: Configuration
+  description: Content related to configuring a device.
+
+database:
+  label: Database
+  description: Content related to databases.
+
+disk-encryption:
+  label: Disk Encryption
+  description: Content related to disk encryption.
+
+dns:
+  label: DNS
+  description: Content related to DNS.
+
+firefox:
+  label: Firefox
+  description: Content related to the Firefox web browser.
+
+hyper-v:
+  label: Hyper-V
+  description: Content related to Hyper-V virtualization.
+
+installation:
+  label: Installation
+  description: Content related to installing software.
+
+networking:
+  label: Networking
+  description: Content related to networking.
+
+n-able:
+  label: N-able
+  description: Content related to N-able software.
+
+notification:
+  label: Notification
+  description: Content related to notifications.
+
+office365:
+  label: Office 365
+  description: Content related to Office 365.
+
+performance:
+  label: Performance
+  description: Content related to measuring or improving system performance.
+
+print:
+  label: Print
+  description: Content related to printing.
+
+recovery:
+  label: Recovery
+  description: Content related to recovering data.
+
+report:
+  label: Report
+  description: Content related to generating reports.
+
+security:
+  label: Security
+  description: Content related to security.
+
+setup:
+  label: Setup
+  description: Content related to setting up a device.
+
+software:
+  label: Software
+  description: Content related to software.
+
+uninstallation:
+  label: Uninstallation
+  description: Content related to uninstalling software.
+
+update:
+  label: Updates
+  description: Content related to updating software.
+
+virtualization:
+  label: Virtualization
+  description: Content related to virtualization.
+
+web-browser:
+  label: Web Browser
+  description: Content related to web browsers.
+
+windows:
+  label: Windows
+  description: Content related to the Windows operating system.
+
+wireless:
+  label: Wireless
+  description: Content related to wireless networking.
