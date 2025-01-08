@@ -1,0 +1,31 @@
+---
+id: 'cwa-missing-dell-openmanage-software'
+title: 'Missing Dell OpenManage Software Monitor'
+title_meta: 'Missing Dell OpenManage Software Monitor'
+keywords: ['monitor', 'dell', 'software', 'management', 'alert']
+description: 'This document outlines a monitor designed to check for the absence of Dell OpenManage System Management Software on Dell machines, ensuring that critical hardware components are properly managed and monitored. It includes suggested alert templates and ticketing information for effective incident management.'
+tags: ['monitoring', 'software', 'alert', 'ticketing', 'dell']
+draft: false
+unlisted: false
+---
+## Summary
+
+This monitor checks for missing vendor software on Dell machines. It will flag any machines where "Dell OpenManage System Management Software" is not installed.
+
+**Suggested Alert Template:** `△ Custom - Ticket Creation - Computer`
+
+## Dependencies
+
+[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+
+## Target
+
+Managed Servers  
+![Image](5078775/docs/8052311/images/23892531)
+
+## Ticketing
+
+- **Subject:** `SW - Missing Dell OpenManage on %Computername%(%computerid%)`
+  
+- **Summary:** To ensure proper monitoring of critical hardware components on this server, it is essential to install Dell OpenManage System Management Software. This software will enable the generation of accurate event log entries in the event of hardware failures. Please proceed with the installation as soon as possible.
+

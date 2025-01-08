@@ -1,0 +1,37 @@
+---
+id: 'cwa-gpresult-data-storage'
+title: 'GPResult Data Storage'
+title_meta: 'GPResult Data Storage'
+keywords: ['gpresult', 'gpo', 'active-directory', 'management', 'database']
+description: 'This document outlines the process of storing GPResult information gathered from the Group Policy. It details the dependencies required for the script, the database table structure, and the significance of each column in the context of Group Policy Objects (GPO).'
+tags: ['database', 'gpo', 'management', 'active-directory', 'security']
+draft: false
+unlisted: false
+---
+## Purpose
+
+Stores gpresult information from the script [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](https://proval.itglue.com/DOC-5078775-8528236)
+
+## Dependencies
+
+- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](https://proval.itglue.com/DOC-5078775-8528236)
+- [EPM - Windows Configuration - Agnostic - Get-GPResult](https://proval.itglue.com/DOC-5078775-8498353)
+
+## Tables
+
+#### plugin_proval_gpresult
+
+| Column        | Type      | Explanation                                                                                     |
+|---------------|-----------|-------------------------------------------------------------------------------------------------|
+| ComputerID    | INT       | The ComputerID of the audited agent.                                                           |
+| Type          | VARCHAR   | The type of GPO (User/Computer)                                                                |
+| Principal     | VARCHAR   | The [UPN](https://www.codetwo.com/kb/upn/) that the GPO is applied in the context of.         |
+| Domain        | VARCHAR   | The AD domain that the GPO is applied from.                                                    |
+| SOM           | VARCHAR   | The [scope of management](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-gpod/4b293f38-2e0b-48e6-9df6-ec3fd8c48512) for the GPO. |
+| Name          | VARCHAR   | The name of the GPO.                                                                            |
+| Enabled       | TINYINT   | Shows if the GPO is enabled.                                                                    |
+| IsValid       | TINYINT   | Shows if the GPO is valid in the current context.                                              |
+| AccessDenied   | TINYINT   | Shows if access was denied to apply the GPO.                                                   |
+| SecurityFilter | VARCHAR   | Shows the security filters that were applied that led to the GPO application.                  |
+
+

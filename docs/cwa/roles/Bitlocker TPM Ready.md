@@ -1,0 +1,20 @@
+---
+id: 'cwa-check-tpm-status'
+title: 'Check TPM Status for Machines'
+title_meta: 'Check TPM Status for Machines in ConnectWise Automate'
+keywords: ['tpm', 'machine', 'connectwise', 'database', 'role']
+description: 'This document outlines a role that checks if the Trusted Platform Module (TPM) is ready for use on a machine. If the TPM is ready, the role is applied to the machine in the ConnectWise Automate database, ensuring proper configuration and security measures are in place.'
+tags: ['configuration', 'security', 'windows', 'connectwise']
+draft: false
+unlisted: false
+---
+## Summary
+
+This role checks the machine if the machine TPM is ready to use, if so this role gets applied to the machine in the Automate database.
+
+## Settings
+
+| Detection String                                                                                           | Comparator | Result | Applicable OS |
+|------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
+| {@%C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |
+

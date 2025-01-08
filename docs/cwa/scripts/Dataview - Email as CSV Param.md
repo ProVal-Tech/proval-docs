@@ -1,0 +1,74 @@
+---
+id: 'cwa-email-filterable-dataviews'
+title: 'Email Filterable Content of Dataviews'
+title_meta: 'Email Filterable Content of Dataviews'
+keywords: ['email', 'dataview', 'csv', 'report', 'filter', 'client', 'location', 'computer']
+description: 'This document provides a detailed overview of a script that emails filterable content from specified dataviews. Users can input multiple dataview IDs and receive the corresponding CSV reports via email, with the ability to filter by client, location, or computer.'
+tags: ['email', 'csv', 'report', 'filter', 'client', 'location', 'computer', 'database']
+draft: false
+unlisted: false
+---
+## Summary
+
+The script can be used to email filterable content of any dataview. The CSV files for the requested dataview(s) will be emailed to the email address specified in the Email parameter. Dataviewids should be an integer number or a comma-separated list of integers.
+
+Dataviews can now be filtered by client/location/computer.
+
+## Sample Run
+
+1. ![Image](5078775/docs/8856158/images/15384570)  
+   Each Dataviewids provided will be filtered out for each clientid in the Filter_ID variable, converted into a CSV report, and emailed out.  
+
+2. ![Image](5078775/docs/8856158/images/15384571)  
+   Each Dataviewids provided will be filtered out for each Computerid in the Filter_ID variable, converted into a CSV report, and emailed out.  
+
+3. ![Image](5078775/docs/8856158/images/15384573)  
+   4 reports will be generated here, one report each for the current client, reports will be filtered for the clientid of the computer that the script is running.
+
+4. ![Image](5078775/docs/8856158/images/15384574)  
+   4 unfiltered reports will be sent to all provided Email addresses. Those csv files will contain all the data from the dataviews defined in the dataviewids.
+
+## Variables
+
+| Name          | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| Dataviewid    | One of the dataviewids passed to the dataviewids parameter                                  |
+| Email         | Email address passed as a parameter.                                                         |
+| Check         | For the verification of the existence of that [Dataviewid](Dataviewid@.)                   |
+| Cnt           | Row number to be used in the loop.                                                          |
+| SQL_Query     | To store the modified sql query for that dataview.                                         |
+| Tocsv         | To store the output of the [SQL_Query](SQL_Query@.)                                        |
+| DVName        | Name of the dataview with dataviewid= [Dataviewid](Dataviewid@.). Its main purpose is to serve as the Subject line of the Email. |
+| DVNameFile    | [DVName](DVName@) with a few special characters replaced in order to use that as the name of the csv file. |
+| Count         | Row Number to be used in the inner loop applying filters.                                   |
+| Offset        | To be used along with SQL Query to find the ids passed in the loop.                         |
+| FilterID      | Level ID (Clienttid/Computerid/Locationid) to generate the report for.                     |
+| LoopVerification | (Global/Filtered), to check whether the script is generating Global/Unfiltered report or filtered report. |
+
+### User Parameters
+
+| Name           | Example                                         | Required | Description                                                                                                                                                     |
+|----------------|-------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Dataviewids    | 1,2,3,4,5,6,819,111,765,15,61,55,123          | True     | Ids of the dataview to be emailed. It can be a single integer for emailing just one dataview or can be multiple ids separated by a comma.                   |
+| Email          | [someone@somewhere.something](mailto:someone@somewhere.something) | True     | Email address to receive the CSV file or the content of the dataview. To input the multiple addresses, each email has to be separated by a semicolon ';' without any space. |
+| Filter_Level    | Client                                        | False    | Supported values are Client, Location, and Computer. This can be used to define the level of filter you would like to apply on the dataviews. Leaving it blank will generate an unfiltered report. |
+| Filter_ID      | 1,2,3,5                                       | False    | ID of the Level defined in the Filter_Level. e.g., Clientid(s), to filter the report against if Client is set as Filter_Level. It can be a single integer for emailing all the [Dataviewids](Dataviewids@) filtered by that single id or can be multiple ids separated by a comma. Any special characters or spaces are prohibited. A space in here will not result to the expected result. |
+
+## Process
+
+1. Check for the number of dataviewids passed by the user.
+2. Store the count in the `@cnt@` variable.
+3. Run a loop and repeat the following steps for the number of `@cnt@` times. One time for each dataviewid.
+4. Verify if the dataviewid exists or not.
+5. Skip the loop for the dataview if it does not exist in the dataviews table, otherwise, perform the following steps.
+6. Select the SQL query for that dataviewid from the dataviews table and alter it in a way so that the output of that SQL query can be stored in a single variable in a comma-separated format. Here the SQL query is stored under the `@SQL_Query@` variable.
+7. Filter out that SQL query, if `@Filter_Level@` is defined.
+8. Run the SQL query generated in step 6 and store the output under the name of the `@To_csv@` variable.
+9. A file write text function writes the value stored in the `@To_csv@` variable into a csv file on the machine it ran against.
+10. Upload that csv file saved in step 9 over to the Automate server.
+11. Email that `%uploadedfilepath%` to the email address(es) passed into that `@Email@` user variable.
+
+## Output
+
+Email with a `@DataviewName@.Csv` file attached.
+

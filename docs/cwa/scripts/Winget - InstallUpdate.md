@@ -1,0 +1,44 @@
+---
+id: 'cwa-install-winget-package'
+title: 'Install Winget Package on Target Endpoint'
+title_meta: 'Install Winget Package on Target Endpoint'
+keywords: ['winget', 'package', 'install', 'endpoint']
+description: 'This document provides a detailed guide on how to install a Winget package on a target endpoint, including sample runs, dependencies, and parameters required for the process.'
+tags: ['installation', 'software', 'windows', 'endpoint']
+draft: false
+unlisted: false
+---
+## Summary
+
+Installs a Winget package on a target endpoint.
+
+## Sample Run
+
+![Sample Run](5078775/docs/11956636/images/17934981)
+
+## Dependencies
+
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973)
+
+#### Global Parameters
+
+| Name         | Example                | Required | Description                                                                 |
+|--------------|------------------------|----------|-----------------------------------------------------------------------------|
+| ProjectName  | Invoke-WingetProcessor | True     | This represents the name of the Agnostic script, and should not be changed. |
+
+#### User Parameters
+
+| Name      | Example                          | Required | Description                                |
+|-----------|----------------------------------|----------|--------------------------------------------|
+| PackageId | Cisco.CiscoWebexMeetings        | True     | The Winget package you wish to install.   |
+| Scope     | msstore<br>winget               | True     | The Source to use when obtaining the package. |
+
+## Process
+
+Please Reference [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973) for process.
+
+## Output
+
+- Script log
+
+

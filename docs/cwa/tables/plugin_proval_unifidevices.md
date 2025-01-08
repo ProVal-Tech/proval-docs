@@ -1,0 +1,39 @@
+---
+id: 'cwa-epm-data-collection-solution-update-table-data-unificontroller'
+title: 'EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController'
+title_meta: 'EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController'
+keywords: ['data', 'collection', 'unifi', 'controller', 'table', 'update']
+description: 'This document outlines the structure and purpose of the EPM Data Collection for the UnifiController, detailing the dependencies and table schema used for holding device data associated with each controller.'
+tags: ['database', 'configuration', 'update', 'networking', 'software']
+draft: false
+unlisted: false
+---
+## Child of Solution
+
+[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-9913178)  
+
+## Purpose
+
+Holds device data for each controller listed in [EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-9913178) 
+
+## Dependencies
+
+- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](https://proval.itglue.com/DOC-5078775-7291568)
+- [CWM - Automate - Script - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-10243077)
+
+## Tables
+
+### plugin_proval_unifidevices
+
+| Column        | Type   | Explanation                                                                                  |
+|---------------|--------|----------------------------------------------------------------------------------------------|
+| ControllerID  | String | The Unique ControllerID of the Unifi Controller that holds this device.                    |
+| SiteName      | String | The Name of the Site that the device belongs to in the Unifi Controller.                    |
+| SiteDesc      | String | At times the SiteName may display a value different from the description you gave in the controller, this should clarify the site. |
+| Mad           | String | The Mac address of the device.                                                               |
+| State         | Int    | The state of the device.                                                                     |
+| Adopted       | String | True if Adopted, False if not.                                                              |
+| Disabled      | String | True if Disabled, False if not.                                                              |
+| Model         | String | The Model of the device.                                                                     |
+| Type          | String | The Type of Unifi Device.                                                                    |
+

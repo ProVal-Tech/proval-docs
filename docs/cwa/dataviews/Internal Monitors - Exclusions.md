@@ -1,0 +1,35 @@
+---
+id: 'cwa-computer-exclusion-monitoring'
+title: 'Computer Exclusion Monitoring in ConnectWise Automate'
+title_meta: 'Computer Exclusion Monitoring in ConnectWise Automate'
+keywords: ['monitoring', 'exclusion', 'computers', 'automate', 'detection', 'autofix']
+description: 'This document provides an overview of the dataview that displays computers excluded from internal monitors in ConnectWise Automate. It outlines the exclusion actions and details the columns included in the dataview, such as Computer ID, Monitor Set, Client Name, and more.'
+tags: ['monitoring', 'exclusion', 'automate', 'computers', 'report']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview displays the computers excluded from the internal monitors.  
+You can find this information in Automate in the areas displayed below.
+
+**Exclusion Actions:**
+1. "Excluded From Detection" - indicates that the computer is added to the "Disabled Computers" section.
+2. "Excluded From Autofix" indicates the presence of the computer in the "Script Disable" section.
+
+![Image](5078775/docs/10452065/images/14490944)
+
+## Columns
+
+| Column              | Description                       |
+|---------------------|-----------------------------------|
+| Computerid          | Computerid                        |
+| Monitor Set         | Name of the Monitor Set           |
+| Client Name         | Client Name                       |
+| Location Name       | Location Name                     |
+| Excluded Computer    | Computer Name                     |
+| Exclusion Action    | "Excluded From Detection" or "Excluded From Autofix" |
+| Operating System    | Operating System                  |
+| Last Contact        | Last Contact                      |
+| Days Since Last Contact | Days Since Last Contact        |
+

@@ -1,0 +1,34 @@
+---
+id: 'cwa-hide-weather-widget'
+title: 'Hide Weather Widget from Taskbar'
+title_meta: 'Hide Weather Widget from Taskbar'
+keywords: ['registry', 'widget', 'windows', 'taskbar', 'automation']
+description: 'This script inserts a registry key to hide the weather widget from the Windows taskbar. Initially rolled out in version 21H1, the weather widget has been pushed through cumulative updates on supported versions. The script verifies the successful addition of the registry key and flags the machine for a reboot if successful.'
+tags: ['registry', 'windows', 'setup', 'update', 'performance']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script will insert a registry key to hide the weather widget from the taskbar. The new weather widget was initially rolled out to 21H1 but Microsoft has been pushing it through cumulative updates on supported versions.
+
+**Time Saved by Automation:** 10 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8013655/images/11155715)
+
+## Variables
+
+`@Result@` - This variable will show whether the registry key addition was successfully added or not.
+
+## Process
+
+- Runs PowerShell to insert a registry key that will hide the Weather widget on the Windows taskbar and verifies whether the registry key was successfully added or not.
+- If the registry key was successfully added then the script will run the `@Flag for Reboot` script that will flag the machine for a reboot.
+
+## Output
+
+- Script log
+
+

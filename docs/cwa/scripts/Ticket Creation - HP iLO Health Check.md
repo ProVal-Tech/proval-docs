@@ -1,0 +1,29 @@
+---
+id: 'cwa-auto-fix-hp-ilo-health-check'
+title: 'Auto-Fix Script for HP iLO Health Check'
+title_meta: 'Auto-Fix Script for HP iLO Health Check'
+keywords: ['automation', 'ticketing', 'monitoring', 'client', 'server']
+description: 'This document provides an overview of an auto-fix script designed for the HP iLO Health Check monitor, which automatically generates tickets in Automate for detected devices or servers, enhancing efficiency in ticket management.'
+tags: ['ticket', 'monitoring', 'client', 'server', 'health', 'automation']
+draft: false
+unlisted: false
+---
+## Summary
+
+This is an auto-fix script used by the [EPM - Vendor Specific - Solution - HP iLO Health Check](https://proval.itglue.com/DOC-5078775-10073297) monitor set to manage ticketing.
+
+The script's primary function is to automatically generate a computer-level ticket when the device or server is detected in Automate. By comparing the name set in the 'iLO Automation Password' password entry with the available client computers, it swiftly identifies matches and initiates ticket creation for the corresponding computer. In cases where no match is found, it seamlessly generates a client-level ticket.
+
+## Sample Run
+
+Should be executed from the `△ Custom - Ticket Creation - HP iLO Health Check` alert template only.
+
+## Dependencies
+
+[EPM - Vendor Specific - Solution - HP iLO Health Check](https://proval.itglue.com/DOC-5078775-10073297)
+
+## Output
+
+- Script Log
+- Ticket
+

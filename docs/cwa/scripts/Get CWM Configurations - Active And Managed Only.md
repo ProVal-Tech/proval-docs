@@ -1,0 +1,53 @@
+---
+id: 'cwa-fetch-cwm-configurations'
+title: 'Fetch ConnectWise Manage Configurations'
+title_meta: 'Fetch ConnectWise Manage Configurations'
+keywords: ['connectwise', 'configurations', 'database', 'custom', 'table', 'dataview', 'sql', 'api']
+description: 'This document outlines a script that retrieves basic information from ConnectWise Manage configurations and stores it in a custom database table. It also details the necessary variables, global parameters, and provides links for creating API keys and obtaining client IDs.'
+tags: ['configuration', 'database', 'sql', 'report', 'connectwise', 'custom']
+draft: false
+unlisted: false
+---
+## Summary
+
+The script fetches the basic information of ConnectWise Manage configurations and stores it into a custom table [CWM - Automate - Custom Table - pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881), which is further displayed by the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](https://proval.itglue.com/DOC-5078775-13403823) dataview.
+
+## Sample Run
+
+![Sample Run](5078775/docs/13403824/images/19226980)
+
+## Sub-Script
+
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+
+## Variables
+
+| Name                | Description                                                                                      |
+|---------------------|--------------------------------------------------------------------------------------------------|
+| ProjectName         | Get-CWMConfiguration                                                                             |
+| WorkingDirectory     | C:\ProgramData\_automation\Script\Get-CWMConfiguration                                          |
+| JsonFileName        | Get-CWMConfiguration.Json                                                                        |
+| TableName           | [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881)                      |
+| SQLDeleteStatement   | Stores SQL query to remove the stale data from [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881) table |
+| SQLStartStatement    | Stores SQL query to input the new data in [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881) table |
+
+#### Global Parameters
+
+| Name          | Example                                         | Required | Description                                                                                      |
+|---------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------------|
+| serverurl     | [stage.cwmanage.com](http://stage.cwmanage.com) | True     | ConnectWise Manage Instance URL without http or https.                                          |
+| CompanyID     | CWManage                                       | True     | CompanyID used to access CW Manage instance. ![CompanyID](5078775/docs/13403824/images/19227253) |
+| PublicKey     | abC1dEFg23HIjk45L                             | True     | Public API Key                                                                                   |
+| PrivateKey    | L54kjIH32gFEd1ae87                            | True     | Private API Key                                                                                  |
+| CWMClientid   | 97e76471-52b5-43c9-a5ec-0153ec905881         | True     | ClientID provided by ConnectWise for API development                                             |
+
+How to create API Keys: [https://connectwise20.my.site.com/serviceandsupport/s/article/How-to-Create-API-Keys](https://connectwise20.my.site.com/serviceandsupport/s/article/How-to-Create-API-Keys)
+
+How to get clientID: [https://connectwise20.my.site.com/serviceandsupport/s/article/Request-to-get-a-Client-ID](https://connectwise20.my.site.com/serviceandsupport/s/article/Request-to-get-a-Client-ID)
+
+## Output
+
+- Script Log
+- Custom Table
+- Dataview
+

@@ -1,0 +1,120 @@
+---
+id: 'cwa-manually-troubleshoot-orange-icon-issue'
+title: 'Manually Troubleshoot the Orange Icon Issue with ScreenConnect Client'
+title_meta: 'Manually Troubleshoot the Orange Icon Issue with ScreenConnect Client'
+keywords: ['screenconnect', 'troubleshoot', 'client', 'orange', 'issue']
+description: 'This document provides a step-by-step guide for technicians to manually troubleshoot the Orange Icon issue with the ScreenConnect client in Automate. The Orange Icon indicates a potential problem with the application installation or connectivity to the ScreenConnect Web portal. Follow the outlined steps to resolve the issue effectively.'
+tags: ['configuration', 'software', 'uninstallation', 'windows', 'notification']
+draft: false
+unlisted: false
+---
+## Description
+
+The purpose of the document is to guide the technician to manually troubleshoot the Orange Icon issue with the ScreenConnect client from Automate. Orange Icon denotes that the ScreenConnect client application is installed on the computer but is either corrupt or somehow the computer is unable to reach the ScreenConnect Web portal or relay address.
+
+![Image](5078775/docs/13282507/images/19031473)
+
+**Note:** The following steps can only solve the problem if it's related to the application, not the network connection.
+
+## Step 1
+
+Login to the Thick Client and open the Computer Management Screen of the concerned computer.
+
+## Step 2
+
+Disable ScreenConnect deployment by right-clicking on the ScreenConnect Icon.  
+![Image](5078775/docs/13282507/images/19031592)  
+After disabling:  
+![Image](5078775/docs/13282507/images/19031593)
+
+## Step 3
+
+Open Software tile  
+![Image](5078775/docs/13282507/images/19031626)
+
+## Step 4
+
+Search for `ScreenConnect Client` and copy the full name of the application.  
+![Image](5078775/docs/13282507/images/19031660)
+
+## Step 5
+
+Uninstall the application.  
+![Image](5078775/docs/13282507/images/19031724)  
+To make the command run silently, add the following to the end of the uninstall command:
+
+```
+/qb+ /norestart
+```
+
+For example, The default command would look something like this:
+
+```
+MsiExec.exe /X{9B368B57-5FB5-4DEF-9670-511649689C76}
+```
+
+That needs to change to this:
+
+```
+MsiExec.exe /X{9B368B57-5FB5-4DEF-9670-511649689C76} /qb+ /norestart
+```
+
+**NOTE** After running the command, you may need to wait for it to succeed before proceeding to the next step.
+
+## Step 6
+
+Resend Software Inventory after uninstalling the application.  
+![Image](5078775/docs/13282507/images/19031663)
+
+## Step 7
+
+Ensure that the application is removed.  
+![Image](5078775/docs/13282507/images/19031695)
+
+## Step 8
+
+Remove the application traces and the associated registry key from the computer.  
+
+```
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';Get-Item 'HKLM:\SYSTEM\CurrentControlSet\Services\@ApplicationName@' | Remove-Item -Force -Confirm:$False ; Get-Item -Path 'C:\Program Files (x86)\@ApplicationName@' | Remove-Item -Force -Recurse -Confirm:$False; Stop-service -Name '@ApplicationName@' -Force -Confirm:$False; & SC DELETE '@ApplicationName@'"
+```
+
+**Replace @ApplicationName@ in the above command** with the name of the application **copied in Step 4**.
+
+e.g.,  
+
+```
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';Get-Item 'HKLM:\SYSTEM\CurrentControlSet\Services\ScreenConnect Client (7df67d57637499f5)' | Remove-Item -Force -Confirm:$False; Get-Item -Path 'C:\Program Files (x86)\ScreenConnect Client (7df67d57637499f5)' | Remove-Item -Force -Recurse -Confirm:$False; Stop-service -Name 'ScreenConnect Client (7df67d57637499f5)' -Force -Confirm:$False; & SC DELETE 'ScreenConnect Client (7df67d57637499f5)'"
+```
+
+Run the command on the computer to remove the application traces and registry keys.  
+![Image](5078775/docs/13282507/images/19031713)  
+![Image](5078775/docs/13282507/images/19031714)
+
+## Step 9
+
+Wait for the command to complete and then restart the computer. It's not mandatory but the reinstall script might not work sometimes without restarting the computer. This step can be skipped, but if the solution doesn't work, then the computer should be restarted before retrying.
+
+## Step 10
+
+After the computer starts checking back with Automate post restart; run the [`ScreenConnect - Repair [RMM+, Autofix, Globals]*`](https://proval.itglue.com/5078775/docs/8216334) script, and wait for the script to complete.  
+![Image](5078775/docs/13282507/images/21464612)  
+![Image](5078775/docs/13282507/images/21464707)
+
+## Step 11
+
+Ensure that the computer starts checking in with the ScreenConnect Web portal.  
+![Image](5078775/docs/13282507/images/19031745)
+
+## Step 12
+
+Once it starts checking in with the ScreenConnect Web portal, enable the ScreenConnect in Automate as well.  
+![Image](5078775/docs/13282507/images/19031756)  
+
+This should turn the ScreenConnect icon to Green and thus the problem is resolved.  
+![Image](5078775/docs/13282507/images/19031759)
+
+## Note
+
+If the above mentioned steps failed to resolve the problem then you'll have to access the computer manually and ensure that the computer is able to reach the ScreenConnect Web Portal.
+

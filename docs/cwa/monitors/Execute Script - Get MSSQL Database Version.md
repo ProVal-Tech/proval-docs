@@ -1,0 +1,27 @@
+---
+id: 'cwa-internal-monitor-mssql-version'
+title: 'Internal Monitor for MSSQL Database Version'
+title_meta: 'Internal Monitor for MSSQL Database Version'
+keywords: ['mssql', 'monitor', 'database', 'version', 'script']
+description: 'This document outlines the functionality of the internal monitor that executes a script to retrieve the MSSQL database version weekly. It details dependencies, target systems, and ticketing information.'
+tags: ['mssql', 'monitor', 'database', 'script', 'weekly']
+draft: false
+unlisted: false
+---
+## Summary
+
+The internal monitor executes the [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760) once per week against the MSSQL servers available in the environment.
+
+## Dependencies
+
+- [Custom Table - pvl_mssql_db_version](https://proval.itglue.com/DOC-5078775-15161868)
+- [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760)
+
+## Target
+
+The internal monitor is explicitly limited to the `MSSQL Servers` present in the environment.
+
+## Ticketing
+
+**Name:** `△ Custom - Execute Script - Get MSSQL Database Version`
+

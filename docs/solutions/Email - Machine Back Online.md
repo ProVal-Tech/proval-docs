@@ -1,0 +1,75 @@
+---
+id: 'cwa-machine-back-online-notification'
+title: 'ConnectWise Automate Machine Back Online Notification'
+title_meta: 'ConnectWise Automate Machine Back Online Notification'
+keywords: ['connectwise', 'notification', 'email', 'machine', 'check-in']
+description: 'This document provides a comprehensive solution for notifying contacts about a machine\'s online check-in status in ConnectWise Automate. It includes associated content, implementation steps, and FAQs to ensure effective setup and usage.'
+tags: ['alert', 'email', 'monitor', 'setup', 'template', 'automate']
+draft: false
+unlisted: false
+---
+## Purpose
+
+This solution is intended to provide notification of a machine's ConnectWise Automate online check-in to a contact.
+
+## Associated Content
+
+| Content                                                                                                                                                       | Type              | Function                                                                                                                        |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157)           | Internal Monitor   | Detects the machines the moment it starts checking in with Automate.                                                          |
+| [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156)                                   | Script            | Send an E-Mail to the E-Mail addresses mentioned in the computer-level EDF "Online Alert E-mail" for the machines detected by the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157) monitor. |
+| △ Custom - Machine Back Online                                                                                                                             | Alert Template    | To execute the [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156) script against the machines detected by the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157) monitor. |
+
+## Implementation
+
+Import the script [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156).  
+Import the monitor set [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157).  
+Reload System Cache.  
+Create the alert template `△ Custom - Machine Back Online`.
+
+```
+INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `GUID`) 
+SELECT 
+'△ Custom - E-Mail - Machine Back Online' AS `Name`, 
+'△ Custom - E-Mail - Machine Back Online' AS `Comment`,
+'PRONOC' AS `Last_User`,
+(NOW()) AS `Last_Date`,
+'20bd12ab-6f23-42e6-ad8a-373fc41faab9' AS `GUID` 
+WHERE (SELECT COUNT(*) FROM alerttemplate WHERE GUID = '20bd12ab-6f23-42e6-ad8a-373fc41faab9') = '0';
+
+INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Trump`, `GUID`, `WarningAction`)
+SELECT 
+(SELECT alertactionid FROM alerttemplate WHERE `GUID` = '20bd12ab-6f23-42e6-ad8a-373fc41faab9') AS `AlertActionid`,
+'127' AS `DayOfWeek`,
+'00:00:00' AS `TimeStart`,
+'23:59:00' AS `TimeEnd`,
+'512' AS `AlertAction`,
+'-2' AS `ContactID`,
+'0' AS `UserID`,
+(SELECT Scriptid FROM lt_scripts WHERE scriptGUID = '73415a51-8a97-11ed-91e5-000c295e5f17') AS `Scriptid`,
+'0' AS `Trump`,
+'7245e028-bbee-4fff-9df6-35ebdaea3933' AS `GUID`,
+'512' AS `WarningAction` 
+WHERE (SELECT COUNT(*) FROM alerttemplates WHERE GUID = '7245e028-bbee-4fff-9df6-35ebdaea3933') = '0';
+```
+
+Set the Email addresses at the computer-level EDF `Online Alert E-mail` placed under the `Default` EDF section for the concerned computers. To set multiple email addresses, each address must be separated by a semi-colon (;).  
+e.g.,  
+Multiple E-mail Addresses:  
+![Multiple E-mail Addresses](5078775/docs/11753155/images/16462885)  
+Single E-mail Address:  
+![Single E-mail Address](5078775/docs/11753155/images/16462886)  
+
+## FAQ
+
+```
+Q: How to stop receiving the E-Mails after getting the work done? 
+
+A: Remove the E-Mail address(es) from the EDF. 
+```
+![FAQ Image](5078775/docs/11753155/images/16462889)
+
+## Sample E-Mail
+
+![Sample E-Mail](5078775/docs/11753155/images/16462890)
+

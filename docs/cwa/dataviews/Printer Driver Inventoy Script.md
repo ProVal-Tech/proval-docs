@@ -1,0 +1,38 @@
+---
+id: 'cwa-dataview-printer-driver-inventory'
+title: 'Dataview for Printer Driver Inventory'
+title_meta: 'Dataview for Printer Driver Inventory - Overview and Details'
+keywords: ['printer', 'driver', 'inventory', 'dataview', 'script']
+description: 'This document provides an overview of the Dataview that displays installed Printer Driver information obtained from the CWM - Automate - Script - Get - Printer Driver Inventory [DV] script. It includes details about dependencies and the columns available in the Dataview for better management and reporting of printer drivers across client systems.'
+tags: ['report', 'software', 'windows', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+The Dataview displays the installed [Printer Driver](https://www.technipages.com/definition/printer-driver) information obtained by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806) script.
+
+## Dependencies
+
+- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](https://proval.itglue.com/DOC-5078775-10854819)
+- [CWM - Automate - Solution - Get - Printer Driver Inventory](https://proval.itglue.com/DOC-5078775-10854823)
+- [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806)
+
+## Columns
+
+| Column                 | Description                                           |
+|-----------------------|-------------------------------------------------------|
+| Client Name           | Client Name                                          |
+| Location Name         | Location Name                                        |
+| Computer Name         | Computer Name                                        |
+| Operating System      | Operating System                                     |
+| OS Type               | Whether Server or Workstation                         |
+| Chassis               | Whether Physical Machine/Virtual Machine/Laptop      |
+| Printer Name          | Printer Name                                         |
+| Printer Environment    | Printer Environment e.g., Windows x64 or Windows x86|
+| Manufacturer          | Printer Manufacturer                                  |
+| Driver Version        | Printer Driver Version                                |
+| Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806) |
+| Last Contact          | Last Contact with RMM                                |
+| Days Since Last Contact| Days Since Last Contact with RMM                     |
+

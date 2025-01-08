@@ -1,0 +1,30 @@
+---
+id: 'cwa-custom-host-file-entries'
+title: 'Custom Host File Entries Script'
+title_meta: 'Custom Host File Entries Script for PowerShell'
+keywords: ['custom', 'host', 'file', 'entries', 'script']
+description: 'This document details a PowerShell script that retrieves custom entries from the computer's host file, updating the Host File Data EDF accordingly. It can be run on individual agents or scheduled across multiple computers to ensure Automate data remains current.'
+tags: ['edf', 'windows', 'update', 'configuration', 'automation']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script runs a PowerShell command to pull what custom entries exist in the computer's host file. If there are custom entries, the Host File Data EDF gets updated with the information separated by commas. If there are no custom entries, it updates the EDF with 'No Custom Entries.'
+
+## Sample Run
+
+This script can be run on a single agent or scheduled on a batch of computers on a recurring basis to keep data inside of Automate up to date. There are no variables needed for this script.
+
+![Sample Run](5078775/docs/9106329/images/12604409)
+
+## Process
+
+1. Run a PowerShell command to return all custom results inside of the Windows host file separated by comma.
+2. Update the Host File Contents EDF under Host File Info.
+
+## Output
+
+This script outputs information into the Host File Contents EDF and can be outputted to a Dataview and monitored upon if desired.
+
+

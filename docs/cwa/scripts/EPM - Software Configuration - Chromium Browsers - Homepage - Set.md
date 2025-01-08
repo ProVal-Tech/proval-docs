@@ -1,0 +1,44 @@
+---
+id: 'cwa-swm-software-configuration-set-chromiumhomepage'
+title: 'SWM - Software Configuration - Set-ChromiumHomepage'
+title_meta: 'SWM - Software Configuration - Set-ChromiumHomepage'
+keywords: ['chromium', 'homepage', 'browser', 'configuration', 'edge', 'chrome']
+description: 'This document outlines the implementation of the SWM - Software Configuration - Set-ChromiumHomepage script for enforcing a homepage in Chromium-based browsers like Google Chrome and Microsoft Edge. It details the parameters, sample runs, and dependencies needed for effective usage.'
+tags: ['configuration', 'browser', 'chrome', 'edge', 'setup']
+draft: false
+unlisted: false
+---
+## Summary
+
+It is an Automate implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372109) to enforce a home page for the Chromium Browsers. Supported Browsers are `Google Chrome`, and `Microsoft Edge`. 
+
+The `Browser` parameter can be used to specify the browser's name.
+
+## Sample Run
+
+- Setting [https://www.provaltech.com](https://www.provaltech.com) to Google Chrome's homepage:  
+  ![Image](5078775/docs/14985330/images/21675417)
+
+- Setting [https://www.provaltech.com](https://www.provaltech.com) to Google Chrome's homepage:  
+  ![Image](5078775/docs/14985330/images/21675448)
+
+- Setting [https://www.provaltech.com](https://www.provaltech.com) to both Microsoft Edge's and Google Chrome's homepage:  
+  ![Image](5078775/docs/14985330/images/21675486)
+
+## Dependencies
+
+[SWM - Software Configuration - Set-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372109)
+
+#### User Parameters
+
+| Name                     | Example                                               | Required | Description                                                                                                      |
+|--------------------------|-------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------|
+| Browser                  | Chrome                                                | False    | The 'Browser' parameter specifies the browser for setting the homepage. Only 'Chrome' and 'Edge' are acceptable values. If this parameter is left blank, the script will attempt to set the homepage for both Chrome and Edge browsers. |
+| Homepage                 | [https://www.provaltech.com/](https://www.provaltech.com/) | True     | String value of the homepage to set in the browser.                                                             |
+| EnforceOnNewTab         | 1                                                     | False    | Set to 1 to force the homepage on each new tab instead of the new tab page.                                    |
+| EnforceHomepageStartup   | 1                                                     | False    | Set to 1 to force the homepage to be the only open tab at startup of the browser.                               |
+
+## Output
+
+- Script Logs
+

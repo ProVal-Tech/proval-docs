@@ -1,0 +1,42 @@
+---
+id: 'cwa-proval-script-audit-summary'
+title: 'ProVal Script Audit Data Summary'
+title_meta: 'ProVal Script Audit Data Summary'
+keywords: ['proval', 'sync', 'scripts', 'environment', 'plugin']
+description: 'This document provides a comprehensive overview of scripts located in the ProVal folders, detailing their synchronization status with the ProSync plugin and usage within the environment. It includes information on script execution frequency and timestamps for first and last runs.'
+tags: ['proval', 'scripts', 'sync', 'plugin', 'environment']
+draft: false
+unlisted: false
+---
+## Summary
+
+Lists all the scripts which are in 'proval', 'Proval - client specific', 'Proval - development' folder. It depicts their sync status with ProSync plugin. Along with that it helps to identify if the script is being used in environment or not.
+
+## Dependencies
+
+plugin_prosync_scripts
+
+## Columns
+
+| Column                     | Description                                             |
+|----------------------------|---------------------------------------------------------|
+| Folder Name                | Name of the Folder                                      |
+| Script ID                  | Script ID                                              |
+| Script Name                | Name of the script                                     |
+| Total Runs                 | Number of times script executed in environment         |
+| Synced In ProVal Plugin    | Is script synced with prosync plugin or not            |
+| FirstRuntime               | Depicts first time script was executed in environment. |
+| LastRuntime                | Depicts last time script was executed in environment.  |
+
+## Reference Tables
+
+- ScriptFolders
+- lt_scripts
+- h_systemtimings
+- plugin_prosync_scripts
+
+## Sample Screenshot
+
+[![Sample Screenshot](thumbnail/2023-02-10_08_55_37-ProVal_Script_Audit_Data_Summary.png)](large/2023-02-10_08_55_37-ProVal_Script_Audit_Data_Summary.png)
+
+

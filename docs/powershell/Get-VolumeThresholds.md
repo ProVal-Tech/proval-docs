@@ -13,9 +13,9 @@ Gathers and returns information about each applicable volume and their requested
 
 Dynamic Mode
 ---
-In Dynamic mode, the script uses the [Get-VolumeExhaustionEstimate](../Get-VolumeExhaustionEstimate/Get-VolumeExhaustionEstimate.ps1) script to generate datapoints for the size of the volume across time. Once the number of datapoints crosses a threshold (defined by the parameter `MinimumSamples`) an estimation of the volume space X days before exhaustion is generated (where X is the value of `DaysToLead`). This estimation is then returned as a threshold for the target volume.
+In Dynamic mode, the script uses the [Get-VolumeExhaustionEstimate](./Get-VolumeExhaustionEstimate.md) script to generate datapoints for the size of the volume across time. Once the number of datapoints crosses a threshold (defined by the parameter `MinimumSamples`) an estimation of the volume space X days before exhaustion is generated (where X is the value of `DaysToLead`). This estimation is then returned as a threshold for the target volume.
 
-If not enough samples have been gathered or the [Get-VolumeExhaustionEstimate](../Get-VolumeExhaustionEstimate/Get-VolumeExhaustionEstimate.ps1) script fails to download then the script falls back to Static mode.
+If not enough samples have been gathered or the [Get-VolumeExhaustionEstimate](./Get-VolumeExhaustionEstimate.md) script fails to download then the script falls back to Static mode.
 
 Static Mode
 ---

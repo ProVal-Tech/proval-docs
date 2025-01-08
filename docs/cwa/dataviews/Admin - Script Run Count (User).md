@@ -1,0 +1,29 @@
+---
+id: 'cwa-script-usage-dataview'
+title: 'Script Usage Dataview for RMM'
+title_meta: 'Script Usage Dataview for RMM'
+keywords: ['dataview', 'scripts', 'usage', 'rmm', 'monitoring']
+description: 'This document provides a comprehensive overview of a dataview designed to display data related to the frequency of script execution by users within a remote monitoring and management environment. It aims to assess whether technicians are actively utilizing scripts or primarily providing remote support.'
+tags: ['report', 'performance', 'monitoring', 'usage', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview will display data related to how often scripts are being run by users in the environment. The goal of this dataview is to show if Techs are using scripts or are just providing remote support without using the RMM.
+
+## Dependencies
+
+None
+
+## Columns
+
+| Column        | Description                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------------|
+| Script Name   | The name of the script that was run                                                              |
+| Run by User   | The user that ran the script                                                                     |
+| ScriptID      | The numerical value of the script                                                                 |
+| Times Run     | A count of the number of times the script was run by this user in the last 30 days              |
+| Last Run      | The last time the script was ran by the user                                                    |
+
+

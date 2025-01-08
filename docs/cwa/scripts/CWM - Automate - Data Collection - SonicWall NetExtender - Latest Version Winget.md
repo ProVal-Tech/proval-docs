@@ -1,0 +1,28 @@
+---
+id: 'cwa-sonicwall-netextender-version'
+title: 'SonicWall NetExtender Version Storage Script'
+title_meta: 'SonicWall NetExtender Version Storage Script'
+keywords: ['sonicwall', 'netextender', 'version', 'system', 'properties']
+description: 'This document describes a script designed to store the latest version of SonicWall NetExtender in the system properties, ensuring that the most up-to-date version is easily accessible and manageable.'
+tags: ['configuration', 'software', 'update', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script is designed to store the SonicWall NetExtender latest version to the system properties.
+
+## Sample Run
+
+![Sample Run](5078775/docs/13816835/images/19895223)
+
+#### System Properties
+
+| Name                          | Example   | Required | Description                                                                                      |
+|-------------------------------|-----------|----------|--------------------------------------------------------------------------------------------------|
+| SonicWall_Netextender_Version | 10.2.331 | True     | This system property stores the latest version of SonicWall NetExtender which was fetched by this script |
+
+## Output
+
+- Script log
+

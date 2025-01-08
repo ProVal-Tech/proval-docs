@@ -1,0 +1,43 @@
+---
+id: 'cwa-install-dell-command-update'
+title: 'Install Dell Command Update'
+title_meta: 'Install Dell Command Update'
+keywords: ['dell', 'command', 'update', 'installation', 'scan']
+description: 'This document provides a script for installing and running a scan for Dell Command Update, detailing user parameters and process steps to ensure a smooth installation and update experience.'
+tags: ['installation', 'update', 'dell', 'firmware', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script installs and runs a scan for Dell Command Update.  
+
+**Time Saved by Automation:** 10 Minutes  
+
+## Sample Run
+
+![Sample Run](5078775/docs/8170878/images/11376800)  
+
+## Variables
+
+| Variable | Description |
+|----------|-------------|
+| Logs     | This contains the Dell command execution failure logs |
+
+#### User Parameters
+
+| Name         | Example | Required | Description                                                                                                   |
+|--------------|---------|----------|---------------------------------------------------------------------------------------------------------------|
+| DCU_INSTALL  | 1       | False    | Set it to 1 then it will (Just install/Upgrade DCU. No scans or updates)                                     |
+| DCU_SCAN     | 1       | False    | Set it to 1 then it will (Install/Upgrade DCU, run a scan, no updates)                                      |
+| DCU_BIOS     | 1       | False    | Set it to 1 then it will (Install/Upgrade DCU if needed, run a scan, run updates and attempt BIOS)          |
+
+## Process
+
+This script installs Dell Command Update if not present, updates it to 3.1.2 if needed, configures it, runs a scan, and then runs a one-time Dell firmware update by default if no value is provided in the user parameters.  
+
+## Output
+
+- Script log  
+
+

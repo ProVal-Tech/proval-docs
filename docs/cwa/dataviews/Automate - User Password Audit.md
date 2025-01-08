@@ -1,0 +1,32 @@
+---
+id: 'cwa-automate-user-password-strength'
+title: 'Automate User Password Strength Checker'
+title_meta: 'Automate User Password Strength Checker'
+keywords: ['automate', 'password', 'strength', 'security', 'user']
+description: 'This document outlines the criteria for determining whether an Automate user’s password is considered strong or weak. It details the requirements for a strong password, including character length, variety, and complexity, and provides a summary of the data view used to assess password strength.'
+tags: ['security', 'password', 'user', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview denotes if an Automate user's password is set to a weak string. The following items are required for a "strong" password:
+
+- No variations on the word "Password"
+  - P@s$W0rd
+  - p@$swORD
+  - etc.
+- At least 10 characters long
+- Contains one lower case character
+- Contains one upper case character
+- Contains one numeric character
+- Contains one non-alphanumeric character
+
+## Columns
+
+| Column          | Description                                                  |
+|-----------------|--------------------------------------------------------------|
+| Username        | User Name                                                   |
+| Email           | Email of user                                              |
+| Password Error  | The password complexity error to show whether password set is strong or not. |
+

@@ -1,0 +1,140 @@
+---
+id: 'cwa-offline-agents-auto-retire'
+title: 'Offline Agents Auto-Retire Script'
+title_meta: 'Offline Agents Auto-Retire Script for ConnectWise Automate'
+keywords: ['offline', 'agents', 'auto-retire', 'script', 'automate', 'threshold', 'exclusions']
+description: 'This document outlines the Offline Agents Auto-Retire script for ConnectWise Automate, detailing its purpose, implementation steps, user parameters, and system properties. It provides guidance on setting thresholds for retiring offline computers and managing exclusions through Extra Data Fields (EDFs).'
+tags: ['automate', 'exclusions', 'threshold', 'script', 'setup', 'configuration', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+The purpose of this script is to retire the computers that are offline in Automate for more than the days defined in the system property `AutoRetireThreshold_Days`.
+
+![Image](5078775/docs/11419941/images/19296868)
+
+Following EDFs can be used to overwrite the Threshold Days defined in the System property `AutoRetireThreshold_Days`.
+
+Client-Level EDF: "AutoRetire Threshold Days"
+
+![Image](5078775/docs/11419941/images/19296897)
+
+Location-Level EDF: "AutoRetireThreshold_Days"
+
+![Image](5078775/docs/11419941/images/19296924)
+
+Following EDFs can be used to exclude a client/location/computer from retirement:
+
+Client-Level EDF: "Exclude From Auto-Retire Automation"
+
+![Image](5078775/docs/11419941/images/15913943)
+
+Location-Level EDF: "Exclude From Auto-Retire Automation"
+
+![Image](5078775/docs/11419941/images/15913944)
+
+Computer-Level EDF: "Exclude From Auto-Retire Automation"
+
+![Image](5078775/docs/11419941/images/15913945)
+
+## Sample Run
+
+In order to create the system properties and EDFs utilized in the script, the 'Set_Environment' User Parameter should be set to 1 for its very first execution. The global property 'AutoRetireThreshold_Days' is set when the value in 'Set_Global_Threshold_Days' is set. If left empty, the global property will be set to '90'.
+
+1. Open the script up, found under ProVal\Automate\Automate - Offline Agents - Auto-Retire --> Hit Debug Script
+   ![Image](5078775/docs/11419941/images/20055087)
+
+2. Select any client and make sure to set the 'Set_Environment' variable to 1. You can set the global threshold to whatever the partner is requesting as well. The default is 90 days if that is not selected.
+   ![Image](5078775/docs/11419941/images/19822531)
+
+3. Run this script with your custom settings.
+   - **NOTE**: Setting a new threshold will NOT overwrite the existing threshold if this has been run before. You must manually modify the property if the threshold property is in the system presently.
+
+Scheduling the script to run at regular intervals is suggested to schedule weekly for better results. 
+
+![Image](5078775/docs/11419941/images/19822747)
+
+## Implementation
+
+- Import the script 
+- Run the script against any client with the `Set_Environment` parameter set to 1 and `Set_Global_Threshold_Days` set to the number of days for global property `AutoRetireThreshold_Days`.
+- Schedule the script in the dashboard to run at regular intervals.
+
+## Dependencies
+
+[CWM - Automate - Solution - Offline/Broken Agents](https://proval.itglue.com/DOC-5078775-13319030)
+
+**Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441) script are excluded from retirement.**
+
+## Variables
+
+| Name              | Description                             |
+|-------------------|-----------------------------------------|
+| RetireStatement    | SQL Query Used to retire the computers  |
+
+### User Parameters
+
+| Name                      | Example | Required                   | Description                                                                                                                                                                                                 |
+|---------------------------|---------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Set_Environment           | 1       | Mandatory for first run    | For the script's initial execution, this parameter must be used. The dependent EDFs and the system property are essential for the script to function properly. These required EDFs and System Property are created when the script is executed with this parameter set to 1. |
+| Set_Global_Threshold_Days | 45      | False                      | The global property 'AutoRetireThreshold_Days' is set when the value in 'Set_Global_Threshold_Days' is set. If left empty, the global property will be set to '90'.                                     |
+
+### System Properties
+
+| Name                      | Example | Required | Description                                                                                                                             |
+|---------------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| AutoRetireThreshold_Days  | 90      | True     | Threshold days to retire the offline computers. The default is 90. It can either be set during the first execution of the script or manually from the dashboard. |
+
+### Extra Data Fields
+
+| Name                           | Level   | Section     | Type      | Required | Description                                                                                                                        |
+|--------------------------------|---------|-------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------|
+| Exclude From Auto-Retire Automation | Client  | Exclusions  | Check box | False    | Script will not generate any tickets for the client, if this EDF is checked.                                                      |
+| Exclude From Auto-Retire Automation | Location | Exclusions  | Check box | False    | Script will not include any computer from the location in the ticket, if this EDF is checked.                                     |
+| Exclude From Auto-Retire Automation | Computer | Exclusions  | Check box | False    | Script will not include the computer in the ticket, if this EDF is checked.                                                       |
+| AutoRetire Threshold Days      | Client  | Default     | TextBox   | False    | To overwrite the threshold set in the Global Property `AutoRetireThreshold_Days` for the client.                                  |
+| AutoRetire Threshold Days      | Location | Default     | TextBox   | False    | To overwrite the threshold set in the Global Property `AutoRetireThreshold_Days` and Client-Level EDF `AutoRetire Threshold Days` for the location. |
+
+## Output
+
+- Script log
+
+## Sample Log
+
+```
+2023-09-20 15:49:53: Retiring 4 obsolete agents
+
+Computerid: 896
+Computer Name: DEV-WIN11-DCJOI
+Client Name: Development
+Location Name: Dev
+Operating System: Microsoft Windows 11 Pro x64
+Last Contact: 2022-09-20 15:46:02
+Last Logged In User: PROVALDEV\Test
+
+Computerid: 904
+Computer Name: DEV-WIN11-2
+Client Name: Development
+Location Name: Dev
+Operating System: Microsoft Windows 11 Pro x64
+Last Contact: 2022-09-20 15:47:48
+Last Logged In User: DEV-WIN11-2\Test
+
+Computerid: 912
+Computer Name: DEV-WIN11-1
+Client Name: Development
+Location Name: Dev
+Operating System: Microsoft Windows 11 Pro x64
+Last Contact: 2022-09-20 13:04:05
+Last Logged In User: DEV-WIN11-1\Test
+
+Computerid: 917
+Computer Name: DEV-WIN10-DCJOI
+Client Name: Development
+Location Name: Dev
+Operating System: Microsoft Windows 10 Pro x64
+Last Contact: 2022-09-20 15:49:13
+Last Logged In User: DEV-WIN10-DCJOI\Test
+```
+

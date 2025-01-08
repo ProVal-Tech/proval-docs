@@ -1,0 +1,31 @@
+---
+id: 'cwa-antivirus-status'
+title: 'Antivirus Status Overview'
+title_meta: 'Antivirus Status Overview - Detailed Insights'
+keywords: ['antivirus', 'status', 'security', 'agent', 'protection']
+description: 'This document provides a comprehensive overview of the antivirus status on agents, detailing information about the installed antivirus software, its activation status, and whether it is up to date. It includes key metrics such as last contact time, operating system details, and protection status.'
+tags: ['security', 'report', 'windows', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview gives detail information about Antivirus installed on the agent and whether the security product is active and up to date or not.
+
+## Columns
+
+| Column                     | Description                                                  |
+|----------------------------|--------------------------------------------------------------|
+| Computer Name              | Agent Name                                                  |
+| Computer Virus AP          | VirusAP info<br>1- Virus Scanner is Active<br>0 - Virus Scanner is Deactive |
+| Location Name              | Location name of the agent                                   |
+| Client Name                | Client Name of the agent                                     |
+| Last Contact               | Last contact of the agent with RMM                          |
+| Last Contact Format        | Last contact in yyyy-mm-dd format                           |
+| Days Since Last Contact    | Days count since agent not communicated with RMM            |
+| Operating System           | Operating system of the agent                                |
+| AV Name                    | Antivirus information (Product Name)                         |
+| Protection Status          | Antivirus enabled or not                                     |
+| AV Definition Status       | Antivirus up to date or not.                                 |
+
+

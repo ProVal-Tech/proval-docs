@@ -35,16 +35,16 @@ Note: This process requires a data gathering period no shorter than 15 hours. Th
     - The means of the UNIX timestamps and remaining volume space from the datapoints are gathered.
     - The [Least squares method](https://en.wikipedia.org/wiki/Least_squares) is used to approximate the slope (*m*) of the Line of Best Fit for the datapoints.
 
-        <img style="background-color: white; padding: 5px" src="https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}m=\frac{\sum_{i=1}^{n}(x_{i}&space;-&space;\overline{X})(y_{i}&space;-&space;\overline{Y})}{\sum_{i=1}^{n}(x_{i}&space;-&space;\overline{X})^{2}}" title="Least Squares Method"></img>
+        [Equation](https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}m=\frac{\sum_{i=1}^{n}(x_{i}&space;-&space;\overline{X})(y_{i}&space;-&space;\overline{Y})}{\sum_{i=1}^{n}(x_{i}&space;-&space;\overline{X})^{2}})
         
     - The y-intercept (*c*) is calculated by the following equation:
 
-        <img style="background-color: white; padding: 5px" src="https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}c&space;=&space;\overline{Y}&space;-&space;m\overline{X}"></img>
+        [Equation](https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}c&space;=&space;\overline{Y}&space;-&space;m\overline{X})
 
     - If the slope is greater than or equal to 0 then the current trend of volume space is constant or upward and the volume is skipped.
     - The epoch time of volume space exhaustion (when the remaining space on the volume = 0) is calculated by the following equation:
 
-        <img style="background-color: white; padding: 5px" src="https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}\\y=mx&plus;c\\*0=mx&plus;c\\$-$c=mx\\x=\frac{\text{-}c}{m}"></img>
+        [Equation](https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}\\y=mx&plus;c\\*0=mx&plus;c\\$-$c=mx\\x=\frac{\text{-}c}{m})
         
         - If the date of exhaustion is over three years, then the volume will be skipped.
     - With this value calculated we can determine the amount of space that will be left `$DaysToLead` days before exhaustion.
@@ -112,8 +112,3 @@ Suppresses all informational, warning, and error console output.
     EstimatedLeadSpace       NoteProperty double          The amount of space estimated to be remaining after $DaysToLead days.
     ExhaustionEstimation     NoteProperty System.TimeSpan The amount of estimated time remaining before volume exhaustion.
     ExhaustionEstimationDate NoteProperty System.DateTime The estimated date of volume exhaustion.
-
-Log Files
----
-    ./Get-VolumeExhaustionEstimate-log.txt
-    ./Get-VolumeExhaustionEstimate-error.txt

@@ -1,0 +1,33 @@
+---
+id: 'cwa-client-patch-status'
+title: 'Client-Level Patch Status Breakdown'
+title_meta: 'Client-Level Patch Status Breakdown'
+keywords: ['client', 'patch', 'status', 'machines', 'breakdown']
+description: 'This document provides an RMM specific display of the client-level breakdown of machines that are missing a certain number of patches, including detailed columns for client ID, name, operating system, patch status, and machine count.'
+tags: ['report', 'windows', 'update', 'security', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This Dataview is the RMM specific display of the client-level breakdown of machines missing a certain amount of patches.
+
+Sample Screenshot:  
+![Sample Screenshot](5078775/docs/11867771/images/16625770)
+
+## Dependencies
+
+- [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](https://proval.itglue.com/DOC-5078775-11867749)  
+- [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](https://proval.itglue.com/DOC-5078775-11867748)  
+
+## Columns
+
+| Column        | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| Clientid     | Clientid                                                                                     |
+| Client Name   | Client Name                                                                                  |
+| os            | Operating System (Server | Workstation)                                                     |
+| Patch Status  | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)         |
+| Machine Count | Number of machines falling under the concerned category/patch status for the client.       |
+
+

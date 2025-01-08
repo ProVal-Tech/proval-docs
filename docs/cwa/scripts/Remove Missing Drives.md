@@ -1,0 +1,25 @@
+---
+id: 'cwa-remove-drives-script'
+title: 'Remove Drives Script'
+title_meta: 'Remove Drives Script for Unlisted Machines'
+keywords: ['drives', 'sql', 'database', 'cleanup', 'detection']
+description: 'This document outlines a script that automates the removal of drives from machines that are still listed but no longer detected. It provides a summary of the process, a sample run, and the time saved by using this automation.'
+tags: ['database', 'cleanup', 'detection', 'windows', 'performance']
+draft: false
+unlisted: false
+---
+## Summary
+
+Removes drives that are still listed on machines, but no longer detected on them.
+
+Time Saved by Automation: 5 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8246621/images/11483295)
+
+## Process
+
+- The script runs SQL query against the database to delete the drives from the machines that are still listed but no longer detected on them.
+
+

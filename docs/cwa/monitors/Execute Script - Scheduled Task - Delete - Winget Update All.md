@@ -1,0 +1,32 @@
+---
+id: 'cwa-internal-monitor-winget-update'
+title: 'Internal Monitor for Winget Update Tasks'
+title_meta: 'Internal Monitor for Winget Update Tasks'
+keywords: ['windows', 'monitor', 'task', 'winget', 'update', 'client']
+description: 'This document details the internal monitor that identifies Windows 10 and 11 computers with existing Winget Update tasks, while ensuring that task creation is enabled at the appropriate levels. It outlines the dependencies and target for the associated alert template.'
+tags: ['windows', 'monitoring', 'update', 'task', 'alert']
+draft: false
+unlisted: false
+---
+## Summary
+
+The internal monitor identifies Windows 10 and 11 computers where either the `Winget Update All [Logged on User]` or `Winget Update All [System]` tasks exist, but task creation is disabled either at the computer or the location level, or task creation is not enabled at the client level.
+
+Task creation settings are controlled by the Extra Data Fields outlined in the [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195) document.
+
+## Dependencies
+
+- [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195)
+- [Script - Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949)
+
+## Target
+
+Global
+
+## Alert Template
+
+**Name:** △ Custom - Execute Script - Scheduled Task - Delete - Winget Update All
+
+The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949) against the detected machines.
+
+

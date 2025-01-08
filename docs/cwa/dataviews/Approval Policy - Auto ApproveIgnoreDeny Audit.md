@@ -1,0 +1,38 @@
+---
+id: 'cwa-auto-approval-policy-view'
+title: 'Auto Approval Policy View'
+title_meta: 'Auto Approval Policy View'
+keywords: ['approval', 'policy', 'settings', 'proval', 'filters']
+description: 'This document provides an overview of the dataview used to examine the Auto Approve, Auto Ignore, and Auto Deny settings of Approval Policies, detailing the various characteristics and statuses related to patch approvals.'
+tags: ['approval', 'policy', 'status', 'severity', 'category']
+draft: false
+unlisted: false
+---
+## Summary
+
+The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny settings of all the Approval Policies.
+
+## Dependencies
+
+[plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5078775-8988282)
+
+## Columns
+
+| Column                                         | Description                                                                                                                                                              |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Examined Characteristics                       | For What Characteristics the Approval Policy is being examined? Approved, Denied, or Ignored.                                                                         |
+| ID                                             | The ID of the Approval Policy.                                                                                                                                         |
+| Approval Policy                                | Name of the Approval Policy.                                                                                                                                           |
+| Examined Characteristics - Category Status      | Whether the Category filtering is enabled for that examined Characteristics. Like, approved by category, Ignore by category, or Deny by Category is turned on or not. |
+| Examined Characteristics - Categories           | Group_Concat list of the categories that are either approved, denied, or ignored. For detailed information on this, one can refer [Patch Approval Category Detailed info](https://proval.itglue.com/DOC-5078775-8988840) dataview. |
+| Examined Characteristics - Severity Status      | Whether the Severity filtering is enabled for that examined Characteristics. Like, approved by Severity, Ignore by Severity, or Deny by Severity is turned on or not. |
+| Unspecified Severity                           | Whether the patches with unspecified Severity are approved, ignored, or denied.                                                                                        |
+| Low Severity                                   | Whether the patches with Low Severity are approved, ignored, or denied.                                                                                               |
+| Moderate Severity                              | Whether the patches with Moderate Severity are approved, ignored, or denied.                                                                                          |
+| Important Severity                             | Whether the patches with Important Severity are approved, ignored, or denied.                                                                                         |
+| Critical Severity                              | Whether the patches with Critical Severity are approved, ignored, or denied.                                                                                          |
+| Examined Characteristics - Title Status        | Whether the Title filtering is enabled for that examined Characteristics. Like, approved by Title, Ignore by Title, or Deny by Title is turned on or not.             |
+| Examined Characteristics - By Titles           | Group_Concat list of the Titles that are either approved, denied, or ignored.                                                                                         |
+| Examined Characteristics - CVSS Status         | Whether the patches are approved on the basis of CVSS score or not.                                                                                                   |
+| Examined Characteristics - CVSS >              | CVSS score above which auto-approval of patches is applied.                                                                                                          |
+

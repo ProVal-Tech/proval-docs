@@ -1,0 +1,51 @@
+---
+id: 'cwa-download-file-sftp'
+title: 'Download File from SFTP Servers'
+title_meta: 'Download File from SFTP Servers'
+keywords: ['sftp', 'download', 'file', 'client', 'password', 'entry']
+description: 'This document provides a detailed guide on how to use a script to download files from SFTP servers. It explains the necessary client-level password entry setup, user parameters required for execution, and provides sample runs for clarity.'
+tags: ['sftp', 'client', 'password', 'download', 'file', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+The script facilitates an option to download a file from SFTP servers. The information of the download should be saved in a client-level password entry as explained later in this document and feed the title of that password entry to the script from the user parameter `SFTP_Password_Title`.
+
+## Password Entry
+
+Setting the required details to execute the script into a client-level password entry is mandatory. The password entry should be configured as follows:
+
+- **Title:** The title can be anything. Although, it should be unique for the client and should not already exist on the client. Since the script will be using this title to fetch the details from the password entry.
+
+- **User Name:** UserName will be the username required to reach out to the SFTP server.
+
+- **URL:** Store the hostname of the SFTP server in the URL field.
+
+- **Password:** The password should belong to the user stored in the `User Name` field.  
+  ![Password Entry](5078775/docs/15248517/images/22227767)
+
+## Sample Run
+
+![Sample Run](5078775/docs/15248517/images/22227842)
+
+## Variables
+
+| Name              | Description                                         |
+|-------------------|-----------------------------------------------------|
+| ProjectName       | Get-SFTPFile                                       |
+| WorkingDirectory   | C:\ProgramData\_Automation\Script\Get-SFTPFile    |
+| ScriptPath        | C:\ProgramData\_Automation\Script\Get-SFTPFile\Get-SFTPFile.ps1 |
+
+## User Parameters
+
+| Name                   | Example                           | Required | Description                                                                                                             |
+|------------------------|-----------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
+| SFTP_Password_Title    | SFTP Creds - Win11 Download       | True     | Title of the Password Stored at the client's Password tab to download the required file from the SFTP server.         |
+| File_Path              | Win11_23H2_Enterprise.iso         | True     | Full path to download from the SFTP Server. If the file is placed at the root level in the SFTP server then use the file's name as illustrated in the sample run. |
+| Destination_Path       | C:\Windows\LTSvc\Packages\Win11ISO | False    | Full path of the directory on the end machine to store the downloaded file. By default, the script will download the file into the `C:\temp` if this parameter is not set. |
+
+## Output
+
+- Script Logs
+

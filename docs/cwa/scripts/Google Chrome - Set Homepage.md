@@ -1,0 +1,48 @@
+---
+id: 'cwa_set_chrome_homepage'
+title: 'Set Google Chrome Homepage'
+title_meta: 'Set Google Chrome Homepage - Registry Policy Script'
+keywords: ['chrome', 'homepage', 'registry', 'policy', 'enforce']
+description: 'This document explains a script that sets the homepage in Google Chrome by modifying the registry policy. It outlines the parameters, dependencies, and process involved in enforcing a specific URL as the homepage, along with optional switches for additional enforcement at startup and on new tabs.'
+tags: ['chrome', 'registry', 'setup', 'configuration', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script takes a string parameter to define the URL to set the homepage to and adds the registry policy for an enforced homepage in Google Chrome.
+
+Time Saved by Automation: 5 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8066335/images/11360087)
+
+## Dependencies
+
+- Windows 10 1703+
+- Google Chrome 86+
+- [Set-ChromeHomepage](https://proval.itglue.com/DOC-5078775-7347741)
+
+## Variables
+
+- `@PS1DataLog@` - Helps to verify if the script actually succeeded.
+- `@PS1ErrorLog@` - Helps to track failure of the script.
+
+#### User Parameters
+
+| Name                       | Example                     | Required | Description                                                                                  |
+|----------------------------|-----------------------------|----------|----------------------------------------------------------------------------------------------|
+| `-Homepage`                | [www.google.com](http://www.google.com) | True     | The string value of the homepage to set in the browser.                                     |
+| `-EnforceOnNewTab`        |                             | False    | Include this switch to force the homepage on each new tab instead of the new tab page.     |
+| `-EnforceHomepageStartup`  |                             | False    | Include this switch to force the homepage to be the only open tab at startup of the browser. |
+
+## Process
+
+The script takes a string parameter to define the URL to set the homepage to. The applicable registry policies are applied to set the homepage to the one defined by the parameter. Optionally, switches can be used to enforce the homepage on startup, and to enforce the homepage on each new tab.
+
+## Output
+
+- Script log
+- Local file on computer
+

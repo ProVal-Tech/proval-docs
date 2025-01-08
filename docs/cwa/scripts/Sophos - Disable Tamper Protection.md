@@ -1,0 +1,38 @@
+---
+id: 'cwa-reboot-safe-mode-sophos-tamper-protection'
+title: 'Reboot into Safe Mode and Disable Sophos Tamper Protection'
+title_meta: 'Reboot into Safe Mode and Disable Sophos Tamper Protection'
+keywords: ['sophos', 'tamper', 'protection', 'reboot', 'safe', 'mode', 'registry']
+description: 'This document describes a script that reboots a Windows machine into safe mode and modifies the registry keys related to tamper protection for systems with Sophos Tamper Protection enabled, ultimately streamlining the process of disabling this feature.'
+tags: ['windows', 'security', 'setup', 'configuration', 'recovery']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script will reboot a machine into safe mode and change the registry keys related to tamper protection for machines with Sophos Tamper Protection enabled.
+
+Time Saved by Automation: 20 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8058691/images/11217466)
+
+## Dependencies
+
+- The target machine must have Sophos installed.
+- The target machine must be a Windows operating system.
+
+## Variables
+
+- `@Result@` - Used to verify if the tamper protection was disabled properly.
+
+## Process
+
+The script will first verify that the target device has Sophos installed. The script will reboot the machine into safe mode and wait for the machine to come back up. The script will stop the Sophos services and then change the appropriate registry keys to disable tamper protection. The script will then restart Sophos services and reboot the machine back to normal mode. The script will verify that tamper protection was properly disabled; if successful, the script will exit with a success log message. If the script fails, it will exit with an error log message.
+
+## Output
+
+Script log messages only.
+
+

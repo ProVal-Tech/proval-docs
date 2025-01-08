@@ -1,0 +1,29 @@
+---
+id: 'cwa-microsoft-365-click-to-run-monitor'
+title: 'Microsoft 365 Click-to-Run Monitor'
+title_meta: 'Microsoft 365 Click-to-Run Monitor'
+keywords: ['microsoft', 'office', 'monitor', 'click-to-run', 'script']
+description: 'This document outlines the internal monitor that executes the Microsoft 365 - Click-to-Run - Get Details script on online machines with Microsoft Office 365 installed. It targets machines that have not run the script for over 14 days and selectively focuses on those under a Managed Mode policy in Automate.'
+tags: ['microsoft', 'office', 'monitor', 'windows', 'software', 'update']
+draft: false
+unlisted: false
+---
+## Summary
+
+This internal monitor executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775) script on online machines with Microsoft Office 365 installed on them. It will execute the script on the machines where it has not been run for over 14 days. Additionally, the monitor selectively targets machines with a Managed Mode policy in Automate.
+
+## Dependencies
+
+- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
+- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846)
+
+## Target
+
+Managed Windows Computers
+
+![Image](5078775/docs/14568059/images/26205624)
+
+## Alert Template
+
+**Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
+

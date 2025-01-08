@@ -1,0 +1,31 @@
+---
+id: 'cwa-disable-firewall-notifications'
+title: 'Disable Firewall Notifications for All Users on Windows'
+title_meta: 'Disable Firewall Notifications for All Users on Windows'
+keywords: ['firewall', 'notifications', 'windows', 'script', 'disable']
+description: 'This document provides a detailed overview of a script designed to disable firewall notifications for all users on a Windows system, streamlining user experience and enhancing system management.'
+tags: ['windows', 'firewall', 'notifications', 'configuration', 'setup', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script will disable the firewall notifications to all users on a Windows system.
+
+Time Saved by Automation: 15 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8138252/images/11354605)
+
+## Process
+
+- This script will run a Powershell script to disable the firewall notifications on a Windows system.
+- It will check the output of the PSscript; if there is no error, then it will exit out. Otherwise, it will check for Windows 10 machines.
+- If the Windows 10 machine is found, it will run a new Powershell script on the machine to disable the firewall notifications for all users.
+
+## Output
+
+- Script logs
+
+

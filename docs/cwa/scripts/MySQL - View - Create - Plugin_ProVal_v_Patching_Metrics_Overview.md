@@ -1,0 +1,28 @@
+---
+id: 'cwa-import-plugin-proval-v-patching-metrics-overview'
+title: 'Import Plugin Proval V Patching Metrics Overview'
+title_meta: 'Import Plugin Proval V Patching Metrics Overview'
+keywords: ['import', 'plugin', 'proval', 'patching', 'metrics', 'overview']
+description: 'This document provides a detailed overview of the process for importing the plugin_proval_v_patching_metrics_overview view into the database, including steps to drop the existing view, create a new one, and assign permissions to Automate users.'
+tags: ['database', 'setup', 'configuration', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+Imports the [plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163) view into the database.
+
+## Sample Run
+
+![Sample Run](5078775/docs/11915171/images/16713998)
+
+## Process
+
+- Drops the view [plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163) if it already exists.
+- Create the view [plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163).
+- Assigns permission of the view to all the Automate users.
+
+## Output
+
+- View
+

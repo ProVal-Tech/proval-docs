@@ -1,0 +1,33 @@
+---
+id: 'cwa-store-last-signed-in-user'
+title: 'Store Last Signed-In User'
+title_meta: 'Store Last Signed-In User'
+keywords: ['backup', 'logon', 'user', 'registry', 'computer']
+description: 'This document describes a script used to store the last signed-in user information for PRONOC users, allowing them to restore their computer to its previous state after work is completed. It details the process of creating a registry backup and logging the results.'
+tags: ['backup', 'registry', 'logon', 'computer', 'script', 'user']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script is used to store the last signed-in user so PRONOC users can run this script prior to logging in, and then can put the computer back into the state it was in prior to logging in after work is completed.
+
+## Sample Run
+
+![Sample Run](5078775/docs/9507732/images/13146109)
+
+## Variables
+
+| Name          | Description                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------------|
+| LogonBackup   | Collects information about backup taken successfully or not. The reg backup at path: C:\Temp\Logonbackup\logonexport.reg |
+
+## Process
+
+This script stores the last sign-in user info from the registry as a registry backup to the local computer. It stores the last logged in user data to the file "C:\Temp\Logonbackup\logonexport.reg". It then queries the results of the returned script for errors and sends this to the script log.
+
+## Output
+
+- Script log
+
+

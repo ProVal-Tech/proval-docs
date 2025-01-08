@@ -1,0 +1,30 @@
+---
+id: 'cwa-audit-ninite-configurations'
+title: 'Audit of Ninite Plugin Configurations'
+title_meta: 'Audit of Ninite Plugin Configurations'
+keywords: ['audit', 'ninite', 'plugin', 'configurations', 'settings', 'applications']
+description: 'This document provides an audit of all locations that have different configurations from the global settings in the Ninite Plugin, detailing the discrepancies in application configurations for better management.'
+tags: ['configuration', 'software', 'report', 'ninite']
+draft: false
+unlisted: false
+---
+## Summary
+
+This displays an audit of all of the locations that have any different configuration from the global settings in Ninite Plugin.
+
+## Dependencies
+
+Table:
+- mp_niniteselections
+
+## Columns
+
+| Column                       | Description                                                       |
+|------------------------------|-------------------------------------------------------------------|
+| LocationID                   | Location ID of the location                                       |
+| Location Name                | Name of the Location                                             |
+| ClientID                     | ID of the Client                                                |
+| Client Name                  | Name of the Client                                              |
+| Different App Configurations  | Applications that are different from global settings in Ninite   |
+| Number of Different Apps      | Total count of applications that are different from global settings|
+

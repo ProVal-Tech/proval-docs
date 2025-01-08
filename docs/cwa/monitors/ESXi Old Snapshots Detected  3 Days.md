@@ -1,0 +1,29 @@
+---
+id: 'cwa-esxi-snapshot-monitoring'
+title: 'ESXi Snapshot Monitoring'
+title_meta: 'ESXi Snapshot Monitoring for Alerting and Ticket Creation'
+keywords: ['esxi', 'monitoring', 'snapshots', 'alerting', 'ticket']
+description: 'This document describes a monitor that identifies ESXi host servers with snapshots older than three days, generating alerts and tickets for proactive management. It is intended to be used alongside a script for automatic ticket creation, ensuring timely resolution of issues related to virtual machine snapshots.'
+tags: ['alert', 'ticket', 'virtualization', 'networking']
+draft: false
+unlisted: false
+---
+## Summary
+
+This Monitor identifies the ESXi host servers that contain one or more snapshots older than three days.
+
+Default Alerting contains the information of all the virtual machines and the older snapshots grouped by ESXi host. It will generate a ticket against the Network Probe of the concerned ESXi host with the information of all the snapshots older than 3 days.
+
+This is intended to be used with the [Script - Ticket Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-10689215) as the auto-fix.
+
+Alert Template: △ Custom - Ticket Creation - ESXi Monitoring
+
+## Target
+
+Limited by the SQL to the Network Probes detecting any ESXi host
+
+## Dependencies
+
+[Script - Ticket Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-10689215)
+
+

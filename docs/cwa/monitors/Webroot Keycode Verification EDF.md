@@ -1,0 +1,32 @@
+---
+id: 'cwa-webroot-keycode-verification-monitor'
+title: 'Webroot Keycode Verification Monitor'
+title_meta: 'Webroot Keycode Verification Monitor'
+keywords: ['monitor', 'webroot', 'keycode', 'verification', 'agent']
+description: 'This document outlines the setup and dependencies for the Webroot Keycode Verification Monitor, which checks for online agents that have not run the specified script in the last 30 days, ensuring that Webroot is installed and deployment is enabled.'
+tags: ['monitor', 'webroot', 'agent', 'ticketing', 'deployment']
+draft: false
+unlisted: false
+---
+## Summary
+
+This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420) has not run in the last 30 days and the agent has Webroot installed and the deployment enabled.
+
+## Dependencies
+
+- [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420)
+- EDFs:
+  - Enable Webroot Deployment - Computer EDF
+  - Exclude Webroot Deployment - Location EDF
+  - Exclude Webroot Deployment - Client EDF
+
+## Ticketing
+
+- To set up the ticketing for the keycode mismatch detection it is mandatory to set the ticket category in the monitor.
+
+![Ticketing Setup](5078775/docs/14989291/images/21699969)
+
+## Target
+
+- Global
+

@@ -1,0 +1,27 @@
+---
+id: 'cwa-configure-winget-auto-update-monitor'
+title: 'Configure Winget Auto Update Monitor'
+title_meta: 'Configure Winget Auto Update Monitor'
+keywords: ['winget', 'update', 'monitor', 'script', 'windows']
+description: 'This internal monitor executes the Configure Winget Auto Update script on Windows machines where the solution is enabled. It detects changes made to the client-level EDFs and runs the script on the relevant computers. If a computer was previously included in the solution and then excluded, the script will be executed with the Uninstall parameter.'
+tags: ['windows', 'update', 'software', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This internal monitor executes the **[Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896)** script on Windows machines where the solution is enabled. It detects changes made to the client-level EDFs and runs the script on the relevant computers. If a computer was previously included in the solution and then excluded, the script will be executed with the `Uninstall` parameter.
+
+## Dependencies
+
+- **[SWM - Software Update - Script - Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896)**
+- **[SWM - Software Update - Custom Table - pvl_wau_config](https://proval.itglue.com/DOC-5078775-17973964)**
+
+## Target
+
+Global
+
+## Alert Template
+
+`△ Custom - Execute Script - Configure Winget Auto Update`
+

@@ -1,0 +1,35 @@
+---
+id: 'cwa-cluster-disk-space-audit-report'
+title: 'Cluster Disk Space Audit Report'
+title_meta: 'Cluster Disk Space Audit Report'
+keywords: ['audit', 'cluster', 'disk', 'space', 'report', 'hyper-v']
+description: 'This document provides a detailed overview of the cluster disk space audit report generated from the pvl_cluster_volumes table. It includes information on the client, location, computer, operating system, and various metrics related to cluster volume sizes and usage, as well as dependencies on the relevant CWA script.'
+tags: ['audit', 'cluster', 'disk', 'hyper-v', 'report', 'performance']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview is built to show the cluster disk space audit report fetched from the table "pvl_cluster_volumes" where the script [CWA Script - Windows Cluster Volume Space Audit](https://proval.itglue.com/DOC-5078775-15952791) performs the audit.
+
+## Dependencies
+
+[CWA Script - Windows Cluster Volume Space Audit](https://proval.itglue.com/DOC-5078775-15952791)
+
+## Columns
+
+| Column                                   | Description                                                               |
+|------------------------------------------|---------------------------------------------------------------------------|
+| Client                                   | Client name of the agent                                                  |
+| Location                                 | Location name of the agent                                               |
+| Computer                                 | The computer name of the agent                                           |
+| Operating System                         | The operating system name of the agent                                   |
+| LastContact                              | Last contact of the agent with the RMM tool                             |
+| Cluster Name                             | The cluster name of the Hyper-V cluster server                           |
+| Cluster Path                             | The cluster path of the Hyper-V cluster server                           |
+| Cluster Volume Total Size (GB)          | The cluster volume total size on the Hyper-V cluster server              |
+| Cluster Volume Free Space (GB)          | The cluster volume available size on the Hyper-V cluster server          |
+| Cluster Volume Used Space (GB)          | The cluster volume used size on the Hyper-V cluster server               |
+| Cluster Volume Free Percent              | The cluster volume available in percent of the Hyper-V cluster server    |
+| Script Last Run Time                     | Script last run time when the latest audit was done on the Hyper-V cluster server. |
+

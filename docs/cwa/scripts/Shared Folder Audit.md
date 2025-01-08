@@ -1,0 +1,51 @@
+---
+id: 'cwa-shared-folder-audit'
+title: 'Shared Folder Audit Script'
+title_meta: 'Shared Folder Audit Script for Access Permissions'
+keywords: ['shared', 'folder', 'audit', 'permissions', 'access']
+description: 'This document describes a script that collects detailed information about shared folder access, including share names, paths, types, user permissions, and access rights. The automation of this process saves approximately 10 minutes of manual work.'
+tags: ['configuration', 'security', 'windows', 'networking']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script collects information of shared folder details such as Share Name, Shared path, Shared Type, User having access to the share folder, permission type (Allow or Deny), permission right (full, read, change or no access) etc.  
+Time Saved by Automation: 10 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8047493/images/11199174)
+
+## Dependencies
+
+[Shared Folder Audit](https://proval.itglue.com/DOC-5078775-7978131)
+
+## Variables
+
+- `@PowerShellout@` - The results from the PowerShell script
+- `@LoopCounter@` - Used to loop through the data based on how much data is returned in the script
+- `@NameLoop@` - The name of the share
+- `@ResourceLoop@` - The resource information about the share
+- `@RemarkLoop@` - The remark information about the share
+- `@AccountNameLoop@` - The AccountName information about the share
+- `@AccessControlType@` - The Access Control Type information about the share
+- `@AccessRight@` - The Access Right information about the share
+- `@Check@` - Used to check the loop counter
+
+#### Script States
+
+| Name                      | Example                                           | Description                                                                                     |
+|---------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| ShareFolder@loopcounter@ | Example -- Resource -- Remark --AccountName - AccessControlType -- AccessRight | This is a concatenated string of the values above and is used to display the data in the associated Dataview |
+
+## Process
+
+The script will run a PowerShell script to gather the data from the endpoint. The script will then use a specially designed SQL loop that will separate out the results from the PowerShell run into different script state lines. Once the loop writes a bad value, the script will stop the loop and finish processing the script states for the machine.
+
+## Output
+
+- Script States to be displayed in a Dataview
+- Script Log Messages
+
+

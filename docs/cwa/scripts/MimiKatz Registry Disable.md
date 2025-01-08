@@ -1,0 +1,42 @@
+---
+id: 'cwa-autofix-script-mimikatz'
+title: 'Autofix Script for MimiKatz Vulnerable Systems'
+title_meta: 'Autofix Script for MimiKatz Vulnerable Systems'
+keywords: ['autofix', 'mimikatz', 'vulnerability', 'registry', 'monitor', 'ticketing']
+description: 'This document provides an overview of an autofix script designed to disable the MimiKatz registry setting if a monitor detects it is enabled. The script is integrated with ticketing to manage service requests and logs its actions for review.'
+tags: ['security', 'monitoring', 'ticketing', 'registry', 'automation']
+draft: false
+unlisted: false
+---
+## Summary
+
+This is an autofix Script that needs to be setup with monitor @ProVal - Production - Security - Potential MimiKatz Vulnerable System. The script will disable the MimiKatz registry if the monitor finds it enabled.
+
+Time Saved by Automation: 5 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8134360/images/11325555)
+
+## Dependencies
+
+- @ProVal - Production - Security - Potential MimiKatz Vulnerable System
+
+#### Global Parameters
+
+| Name                     | Example | Required | Description                                          |
+|--------------------------|---------|----------|------------------------------------------------------|
+| Enable Ticketing         | 1       | False    | if you want ticketing enabled then set it to 1      |
+| TicketCreationCategory    | 120     | False    | Helps in managing service board for tickets          |
+
+## Process
+
+- Set the registry value for "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest\UseLogonCredential" to 0
+- Verifies if the changes are successfully made
+- By default ticketing is enabled so sends success or failure tickets for attention.
+
+## Output
+
+- Script log
+- Ticket
+

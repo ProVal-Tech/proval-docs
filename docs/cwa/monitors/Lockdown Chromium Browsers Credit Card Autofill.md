@@ -1,0 +1,57 @@
+---
+id: 'cwa_lockdown_browsers_credit_card_autofill'
+title: 'Lockdown Browsers Credit Card Autofill'
+title_meta: 'Lockdown Browsers Credit Card Autofill'
+keywords: ['lockdown', 'browsers', 'credit', 'card', 'autofill', 'chromium', 'chrome', 'edge', 'brave']
+description: 'This document outlines the process for disabling the Autofilling feature for credit cards in Chromium-based browsers including Google Chrome, Microsoft Edge, and Brave by modifying registry settings. It includes details on affected settings, implementation suggestions, and dependencies for effective monitoring.'
+tags: ['configuration', 'security', 'windows', 'web-browser']
+draft: false
+unlisted: false
+---
+## Summary
+
+The remote monitor attempts to disable the Autofilling feature for credit cards in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave. This solution entails modifying the computer's registry settings.
+
+**Affected Setting for Google Chrome:**  
+![Google Chrome Setting](5078775/docs/15124293/images/21906080)
+
+**Affected Settings for Microsoft Edge:**  
+![Microsoft Edge Settings](5078775/docs/15124293/images/21906088)
+
+**Affected Setting for Brave:**  
+![Brave Setting](5078775/docs/15124293/images/21906093)
+
+**Note:**
+- The changes will only happen once the browser is restarted if it's currently open.
+- If the PowerShell version on the machines is older than version 5, the remote monitor may not produce the expected outcomes.
+
+## Details
+
+**Suggested "Limit to":** Lockdown Browsers Credit Card Autofill  
+**Suggested Alert Style:** Continuous  
+**Suggested Alert Template:** Default - Do Nothing  
+
+Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Chromium Browsers Credit Card Lockdown - Status](https://proval.itglue.com/DOC-5078775-15124294) dataview.
+
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
+|--------------|----------------|------------|---------------|------------|----------|--------|
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 604800 (Weekly) | Screenshot attached below. |
+
+![Screenshot](5078775/docs/15124293/images/21906098)
+
+## Dependencies
+
+**Search:** `Lockdown Browsers Credit Card Autofill`  
+**Search:** `Lockdown Browsers Autofill`  
+**Group:** `△ Lockdown Browsers Autofill`  
+**Dataview:** [EPM - Dataview - Chromium Browsers Credit Card Lockdown - Status](https://proval.itglue.com/DOC-5078775-15124294)
+
+## Target
+
+**Group:** △ Lockdown Browsers Password Manager  
+![Target Group](5078775/docs/15124293/images/22515729)
+
+## Implementation
+
+[Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)
+

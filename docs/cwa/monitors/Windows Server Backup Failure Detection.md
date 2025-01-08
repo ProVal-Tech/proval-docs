@@ -1,0 +1,30 @@
+---
+id: 'cwa-windows-server-backup-monitor'
+title: 'Windows Server Backup Monitor'
+title_meta: 'Windows Server Backup Monitor for Remote Monitoring'
+keywords: ['backup', 'monitor', 'windows', 'server', 'ticket']
+description: 'This document outlines a remote monitoring solution that detects the last backup status of Windows Server Backup. It raises a ticket if the backup fails, ensuring prompt attention to backup issues.'
+tags: ['backup', 'monitor', 'windows', 'server', 'notification']
+draft: false
+unlisted: false
+---
+## Summary
+
+This remote monitor detects the last backup status of the Windows Server Backup.  
+If the backup failed, then it will raise a ticket.
+
+## Details
+
+| Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
+|--------------|----------------|-------------|--------------|------------|----------|--------|
+| System       | 127.0.0.1     | Run File    | C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "Get-WBSummary | select-object -ExpandProperty LastBackupResultHR" | Equals     | 3600     | 0      |
+
+## Dependencies
+
+[Windows Server Backup](https://proval.itglue.com/DOC-5078775-13083383)
+
+## Target
+
+It should be targeted on the group which is bounded with a search via role "Windows Sever Backup".
+
+

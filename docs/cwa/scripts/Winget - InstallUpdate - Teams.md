@@ -1,0 +1,31 @@
+---
+id: 'cwa-teams-machine-wide-installer'
+title: 'Teams Machine-Wide Installer Deployment'
+title_meta: 'Teams Machine-Wide Installer Deployment'
+keywords: ['teams', 'installer', 'deployment', 'winget', 'microsoft']
+description: 'This document provides an implementation guide for deploying the Teams Machine-Wide Installer application using a script based on the SWM - Software Installation - Script - Winget. It includes parameters, sample runs, and output logs for effective deployment.'
+tags: ['installation', 'windows', 'software', 'update']
+draft: false
+unlisted: false
+---
+## Summary
+
+An implementation of [SWM - Software Installation - Script - Winget - Install/Update](https://proval.itglue.com/DOC-5078775-11956636) script to deploy `Teams Machine-Wide Installer` application only.
+
+## Sample Run
+
+![Sample Run](5078775/docs/13496687/images/19379500)
+
+#### Global Parameters
+
+| Name        | Value               |
+|-------------|---------------------|
+| ProjectName | Invoke-Webrequest    |
+| PackageID   | Microsoft.Teams      |
+| Source      | Winget               |
+
+## Output
+
+- Script Logs
+
+

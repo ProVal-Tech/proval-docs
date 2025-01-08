@@ -1,0 +1,15 @@
+---
+id: 'cwa-bginfo-configuration'
+title: 'BGInfo Configuration Script'
+title_meta: 'BGInfo Configuration Script'
+keywords: ['bginfo', 'configuration', 'download', 'tool', 'script']
+description: 'This document outlines a script designed to download and configure the BGInfo tool, ensuring the proper .bgi configuration file is placed in the designated LTshare directory for optimal usage.'
+tags: ['configuration', 'tool', 'script', 'bginfo', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+The purpose of the script is to download and configure the [BGInfo](https://learn.microsoft.com/en-us/sysinternals/downloads/bginfo) tool with the proper `.bgi` configuration file. `.bgi` file should be placed in the LTshare (WebDAV for hosted partners) at the `Transfer\Tools\BGInfo`
+
+

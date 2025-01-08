@@ -1,0 +1,39 @@
+---
+id: 'cwa-mssql-database-version'
+title: 'MSSQL Database Version and Patch Level Overview'
+title_meta: 'MSSQL Database Version and Patch Level Overview'
+keywords: ['mssql', 'database', 'version', 'patch', 'monitoring']
+description: 'This document provides an overview of the version and patch level details of MSSQL Servers, detailing the data collected through the associated script and its dependencies. It outlines the key columns and their descriptions for better understanding and utilization.'
+tags: ['database', 'monitoring', 'report', 'windows', 'version', 'patch']
+draft: false
+unlisted: false
+---
+## Summary
+
+The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760).
+
+## Dependencies
+
+- [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760)
+- [Custom Table - pvl_mssql_db_version](https://proval.itglue.com/DOC-5078775-15161868)
+- [Internal Monitor - Execute Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161763)
+
+## Columns
+
+| Column                | Description                                                        |
+|----------------------|--------------------------------------------------------------------|
+| Clientid             | Clientd (Hidden)                                                  |
+| Locationid           | Locationid (Hidden)                                              |
+| Computerid           | Computerid (Hidden)                                              |
+| Client               | Client Name                                                       |
+| Location             | Location Name                                                     |
+| Computer             | Computer Name                                                     |
+| Operating System      | Operating System                                                  |
+| Form Factor          | Form Factor of the Machine (Virtual Server/Physical Server/HyperV Host) |
+| Last Contact         | Last Contact with RMM                                            |
+| MSSQL Instance       | Name of the MSSQL Instance                                       |
+| MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
+| MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
+| Data Collection Time  | Data Collection Time                                              |
+
+

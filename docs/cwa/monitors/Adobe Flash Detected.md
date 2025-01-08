@@ -1,0 +1,22 @@
+---
+id: 'cwa-internal-monitor-adobe-flash'
+title: 'Internal Monitor for Adobe Flash Detection'
+title_meta: 'Internal Monitor for Adobe Flash Detection'
+keywords: ['monitor', 'detection', 'adobe', 'flash', 'agent']
+description: 'This document outlines an internal monitor designed to detect the presence of Adobe Flash on systems where the agent is installed. It includes necessary dependencies and is targeted for Windows operating systems.'
+tags: ['adobe', 'monitor', 'windows', 'software']
+draft: false
+unlisted: false
+---
+## Summary
+
+This internal monitor will detect the agent where Adobe Flash is installed.
+
+## Dependencies
+
+@Adobe Flash Player Uninstaller - V2 [Autofix, Ticket] -- Script
+
+## Target
+
+Windows OS
+

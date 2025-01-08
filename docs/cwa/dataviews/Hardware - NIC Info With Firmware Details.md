@@ -1,0 +1,26 @@
+---
+id: 'cwa-network-adapter-info'
+title: 'Network Adapter Information Dataview'
+title_meta: 'Network Adapter Information Dataview'
+keywords: ['network', 'adapter', 'information', 'dataview', 'networking']
+description: 'This document provides a summary of a Dataview that displays information about existing network adapters, including details such as client name, location name, computer name, NIC type, NIC name, driver name, and driver version.'
+tags: ['networking', 'windows', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This Dataview will show information about existing network adapters.
+
+## Columns
+
+| Column          | Description                             |
+|-----------------|-----------------------------------------|
+| Client Name     | Display the Client Name.                |
+| Location Name   | Display the Location Name.              |
+| Computer Name   | Display the Computer Name.              |
+| NIC Type        | Display the Network adapter type.       |
+| NIC Name        | Display the Network adapter name.       |
+| Driver Name     | Display the Network adapter driver name.|
+| Driver Version  | Display the Network adapter driver version.|
+

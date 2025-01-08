@@ -1,0 +1,28 @@
+---
+id: 'cwa-highest-net-version-dataview'
+title: 'Highest Detected .NET Version Dataview for Windows Machines'
+title_meta: 'Highest Detected .NET Version Dataview for Windows Machines'
+keywords: ['dataview', 'net', 'windows', 'version', 'clients', 'machines']
+description: 'This document provides a dataview that displays the highest detected .NET version for Windows machines within the environment, detailing client and machine information along with the last contact time.'
+tags: ['database', 'report', 'windows', 'performance']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview will show the highest detected .NET version for Windows machines in the environment.
+
+## Dependencies
+
+None
+
+## Columns
+
+| Column                          | Description                                         |
+|---------------------------------|-----------------------------------------------------|
+| Clients name                    | The name of the client                              |
+| Locations name                  | The name of the location                            |
+| Computers name                  | The name of the machine                             |
+| Computers Last Contact          | The time the computer last contacted Automate      |
+| Inv_OperatingSystem Net_Version | The highest .NET version detected by Automate      |
+

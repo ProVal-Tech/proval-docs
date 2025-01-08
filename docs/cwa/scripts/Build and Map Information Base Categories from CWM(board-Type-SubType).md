@@ -1,0 +1,45 @@
+---
+id: 'cwa-create-info-base-categories'
+title: 'Create Information Base Categories for Manage Boards'
+title_meta: 'Create Information Base Categories for Manage Boards'
+keywords: ['script', 'manage', 'categories', 'ticket', 'automation']
+description: 'This document describes a script that automates the creation of information base categories for every imported manage board in the CW Manage Plugin, saving approximately 30 minutes of manual work. It includes details on dependencies, variables, global parameters, and the process involved.'
+tags: ['configuration', 'database', 'update', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script will create information base categories (ticket categories) for every imported manage board.
+
+Time Saved by Automation: 30 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8216287/images/11437758)
+
+## Dependencies
+
+CW Manage Plugin should be configured.
+
+## Variables
+
+| **Variable Name**               | **Description**                                                                                     |
+|----------------------------------|-----------------------------------------------------------------------------------------------------|
+| InfoCats                        | This variable stores the results of the SQL query which fetches the info categories.               |
+| UpdateExistingInfoCats         | This variable stores the results of the SQL query which updates the info base categories.          |
+
+#### Global Parameters
+
+| Name                           | Example | Required | Description                                                                                           |
+|--------------------------------|---------|----------|-------------------------------------------------------------------------------------------------------|
+| I have backed up the db       | 1       | True     | This represents that the DB has been backed up prior to making any changes to Infobase categories.   |
+
+## Process
+
+This script will create information base categories (ticket categories) for every imported manage board. This script runs 3 SQL queries to get, ignore and update the info base categories in the CW manage Plugin.
+
+## Output
+
+CW Manage Plugin
+

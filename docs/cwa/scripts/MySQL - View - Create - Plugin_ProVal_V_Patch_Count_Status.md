@@ -1,0 +1,27 @@
+---
+id: 'cwa-cwm-automate-view-plugin-proval-v-patch-count-status'
+title: 'CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status'
+title_meta: 'CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status'
+keywords: ['view', 'plugin', 'patch', 'status', 'automate']
+description: 'This document outlines the creation of the CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status view, detailing the process, sample run, and output involved in the setup.'
+tags: ['view', 'permission', 'setup', 'plugin', 'status']
+draft: false
+unlisted: false
+---
+## Summary
+
+This Script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](https://proval.itglue.com/DOC-5078775-11867749) view.
+
+## Sample Run
+
+![Sample Run](5078775/docs/11867748/images/16625702)
+
+## Process
+
+- Creates the view.
+- Assign the permissions of the view to all the users.
+
+## Output
+
+- View
+

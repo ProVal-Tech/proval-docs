@@ -1,0 +1,21 @@
+---
+id: 'cwa-detect-domain-firewall-profile'
+title: 'Detect Domain Profile of Windows Firewall'
+title_meta: 'Detect Domain Profile of Windows Firewall'
+keywords: ['firewall', 'windows', 'domain', 'profile', 'detection']
+description: 'This document outlines a method to detect if the Domain profile of the Windows Firewall is enabled on a Windows operating system. It includes the detection string, comparator, and applicable operating systems.'
+tags: ['firewall', 'windows', 'security', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This role will detect if the Domain profile of the Windows Firewall is enabled.
+
+## Settings
+
+| Detection String                                             | Comparator | Result | Applicable OS |
+|------------------------------------------------------------|------------|--------|----------------|
+| {%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
+
+

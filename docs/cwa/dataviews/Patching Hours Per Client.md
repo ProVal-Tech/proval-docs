@@ -1,0 +1,26 @@
+---
+id: 'cwa-patching-jobs-summary'
+title: 'Patching Jobs Summary per Client'
+title_meta: 'Patching Jobs Summary per Client'
+keywords: ['patching', 'jobs', 'client', 'summary', 'hours']
+description: 'This document provides a detailed overview of patching jobs and the total patching hours for each client over the last 30 days. It includes key metrics such as the number of devices in patch managed mode and the total patch duration.'
+tags: ['report', 'patching', 'performance', 'windows', 'update']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview represents the number of patching jobs and total patching hours per client.
+
+## Columns
+
+| Column                             | Description                                               |
+|------------------------------------|-----------------------------------------------------------|
+| Clientid                           | Computerid of the machine                                 |
+| Client Name                        | Name of the client                                        |
+| Patch Managed Devices              | Number of Devices in patch managed mode per client       |
+| Number of Patch Jobs last 30 days  | Number of Patch Jobs per Client in the last 30 days      |
+| Sum of Patching hours last 30 days | Sum of Patching hours per Client in the last 30 days     |
+| Total Patch Duration               | Total Patch Duration per Client in the last 30 days      |
+
+

@@ -1,0 +1,26 @@
+---
+id: 'cwa_move_agent_to_retired_assets'
+title: 'Move Agent to Retired Assets'
+title_meta: 'Move Agent to Retired Assets - Automate Agent Management'
+keywords: ['agent', 'retired', 'assets', 'sql', 'monitor']
+description: 'This document describes a script designed to move an agent to retired assets automatically. It serves as an autofix for retiring agents, saving approximately 3 minutes of manual work. The script should only be executed through the monitor, not manually.'
+tags: ['automation', 'database', 'monitor', 'uninstallation', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script will move the agent it's run against to retired assets, this can be used as an autofix to automatically retire agents.
+
+Time Saved by Automation: 3 Minutes
+
+Note: This should not be ran manually, it should only be ran through the monitor.
+
+## Sample Run
+
+![Sample Run](5078775/docs/8138256/images/11353673)
+
+## Process
+
+This script runs a SQL query against the machine to retire it.
+

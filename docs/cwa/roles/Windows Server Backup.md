@@ -1,0 +1,21 @@
+---
+id: 'cwa-detect-windows-server-backup'
+title: 'Detect Windows Server Backup Installation'
+title_meta: 'Detect Windows Server Backup Installation'
+keywords: ['detection', 'windows', 'server', 'backup', 'feature']
+description: 'This document outlines a role created to detect the installation of the Windows Server Backup feature. It includes the detection string, comparator, and applicable operating systems for effective monitoring.'
+tags: ['detection', 'windows', 'backup', 'configuration', 'software']
+draft: false
+unlisted: false
+---
+## Summary
+
+This role is created to detect the agents where the Windows Server Backup feature is installed.
+
+## Settings
+
+| Detection String                                                                                          | Comparator | Result | Applicable OS |
+|-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
+| {@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name Windows-Server-Backup -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Installed"@%} | Contains   | True   | Windows        |
+
+

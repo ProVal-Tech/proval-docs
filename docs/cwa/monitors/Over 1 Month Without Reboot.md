@@ -1,0 +1,26 @@
+---
+id: 'cwa-internal-monitor-system-uptime-alert'
+title: 'Internal Monitor for System Uptime Alert'
+title_meta: 'Internal Monitor for System Uptime Alert'
+keywords: ['monitor', 'uptime', 'alert', 'system', 'machines']
+description: 'This document details an internal monitor designed to track machines with a system uptime greater than 30 days and provide alerts if the machine has been online in the last 15 minutes. It is applicable for both servers and workstations managed in 24x7 and 8x5 environments.'
+tags: ['monitoring', 'alert', 'uptime', 'servers', 'workstations']
+draft: false
+unlisted: false
+---
+## Summary
+
+This internal monitor looks for machines showing a system uptime greater than 30 days (in seconds) and alerts if the machine is online within the last 15 minutes.
+
+## Dependencies
+
+None
+
+## Target
+
+Optional Targets:
+- Global - Should be run without explicitly defined targets.
+- Managed 24x7 | 8x5 Servers
+- Managed 24x7 | 8x5 Workstations
+
+

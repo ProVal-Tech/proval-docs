@@ -1,0 +1,30 @@
+---
+id: 'cwa-custom-table-mssql-database-version'
+title: 'Custom Table for MSSQL Database Version'
+title_meta: 'Custom Table for MSSQL Database Version'
+keywords: ['mssql', 'database', 'custom', 'version', 'table']
+description: 'This document outlines the purpose and structure of a custom table that stores data gathered from the MSSQL database version script, including its dependencies and the data it collects.'
+tags: ['database', 'custom', 'version', 'report', 'setup']
+draft: false
+unlisted: false
+---
+## Purpose
+
+The custom table stores the data gathered by the [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760) and gets displayed in the [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865).
+
+## Dependencies
+
+- [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865)
+- [Internal Monitor - Execute Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161763)
+- [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760)
+
+## Table
+
+| Column        | Type     | Explanation                          |
+|---------------|----------|--------------------------------------|
+| computerid    | int      | Computerid                           |
+| Instance      | Varchar  | Name of the Database Instance        |
+| Version       | Varchar  | Version of the Database Instance     |
+| PatchLevel    | Varchar  | Patch Level of the Database Instance |
+| ScriptRunTime | DateTime | Data Collection Time                 |
+

@@ -1,0 +1,163 @@
+---
+id: 'cwa-automate-reboot-prompt'
+title: 'Automate User Reboot Prompt Solution'
+title_meta: 'Automate User Reboot Prompt Solution'
+keywords: ['automate', 'reboot', 'prompt', 'user', 'monitor', 'script']
+description: 'This document outlines the implementation of a solution that prompts end users to reboot their machines through Automate, ensuring that the machines are rebooted either voluntarily or forcefully. It includes update notices, associated content, implementation steps, configuration details, and customization options.'
+tags: ['alert', 'edf', 'exclusion', 'monitor', 'script', 'template', 'update', 'windows']
+draft: false
+unlisted: false
+---
+## Purpose
+
+The purpose of this solution is to give the client an ability to have Automate prompt the end user to reboot the machine and make sure the machine eventually gets rebooted (Either forcefully or voluntarily by the end user).
+
+## Update Notice: 16-December-2024
+
+Client, Location, and Computer-Level Exclusion EDF `Disable Reboot Prompt` has been introduced. Flagging the EDF will exclude the machines at the respective level.
+
+Steps to import the updates:
+- Update the [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) script from the Prosync plugin.
+- Update the [Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) internal monitor from the Prosync plugin.
+- Run the script [Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) **once** on any machine with user parameter `SetEnvironment` set to 1.
+  
+![Image](5078775/docs/9088563/images/19758444)
+
+## Update Notice: 06-June-2024
+
+If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and the computer has a reboot pending flag, but the `Suppress Reboot` policy is applied by the patch manager and the pending reboot flag was set due to a patch job, the machine will be excluded from the script's functionality. Instead, the prompts and reboot will be managed by Automate's built-in `Suppress Reboot` policy. This may result in inconsistently connected machines not getting a proper reboot.
+
+## Associated Content
+
+| Content | Type | Function |
+|---------|------|----------|
+| [Monitor - Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) | Internal Monitor | To monitor for machines the client decides need to be rebooted and issues a script to prompt the user. |
+| [Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) | Script | To physically handle the reboot prompting and execution. |
+| [Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) | Script | To clear all flags indicating the machine needs a reboot so they can be set again later. |
+| [Monitor - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) | Internal Monitor | This internal monitor is designed to detect the agents whose reboot was done by the script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It detects the agents and triggers the script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) to clear the EDFs so they can be re-triggered at another time. |
+| [Monitor - Machines with Login Bug Issue](https://proval.itglue.com/DOC-5078775-16966380) | Internal Monitor | This internal monitor detects the agents with Login Bug Issues and it has been more than 07 days since its detection and the machine has still not been rebooted. |
+| △ Custom - Autofix - Prompt for Reboot with Forced Reboot | Alert Template | This template is used with monitor [Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) to schedule the autofix script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). |
+| △ Custom - Autofix - Reset Reboot Pending EDFs | Alert Template | This template is used with the monitor [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) to schedule the autofix script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421). |
+| △ Custom - Ticket Creation - Computer | Alert Template | This template is used with the monitor [Machines with Login Bug Issue](https://proval.itglue.com/DOC-5078775-16966380). |
+| [Dataview - User Prompt - Reboot [Audit]](https://proval.itglue.com/DOC-5078775-16112792) | Dataview | This dataview is designed to track the working of the [User Prompt for the Reboot](https://proval.itglue.com/DOC-5078775-9088563) solution. |
+
+## Implementation
+
+### Updating Process:
+- Remove the monitor 'ProVal - Production - Reboot Pending [Prompt]' (IF it exists)
+  - Take note of any exclusions made to this monitor, however, there will likely be no customizations to it.
+- Remove the monitor [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) (IF it exists)
+- Remove the Alert Template '~Autofix - Prompt for Reboot and Force' (Or whatever is assigned to the monitor presently, we will be importing a new alert template with this solution).
+  - If you cannot find any alert templates configured, skip over this step
+- Update the script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644)
+- Update the script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421)
+- Import both alert templates '△ Custom - Autofix - Reset Reboot Pending EDFs' and '△ Custom - Autofix - Prompt for Reboot with Forced Reboot'
+- Delete the Reset Reboot Pending EDFs Script Schedule on the All Agents group
+
+![Image](5078775/docs/9088563/images/19911790)
+
+- Proceed through the Fresh Install Process steps.
+
+### Fresh Install Process:
+1. Import both scripts outlined in this document (ProSync Plugin)
+2. Import all the monitors outlined in this document (ProSync Plugin)
+3. Import all the alert templates outlined in this document (ProSync Plugin)
+4. Import the dataview outlined in this document (ProSync Plugin)
+
+### Configuration Steps:
+1. Set the correct alert templates to the **Disabled** monitors
+
+![Image](5078775/docs/9088563/images/26004019)
+
+2. Run the script [Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) **once** on any machine with user parameter `SetEnvironment` set to 1:
+
+![Image](5078775/docs/9088563/images/19758444)
+
+   Running the script with this parameter will import the below properties with default values and also import the EDFs as mentioned below:
+   - proval_RebootForceTimeDelayMin- Default Setting [5]
+   - proval_RebootPromptWhenPendingReboot - Default Setting [0]
+   - proval_RebootPromptUptimeDays - Default Setting [0]
+   - proval_RebootPromptMSG - Default Setting [Your computer is currently in need of a reboot.]
+   - proval_RebootPromptDurBetweenPrompt - Default Setting [4]
+   - proval_RebootPromptCount - Default Setting [4]
+   - Proval_RebootPromptUsePrompter - Default Setting [0]
+
+   #EDFs imported are:
+   1. Last Prompted - Text Box
+   2. Times Prompted - Text Box
+   3. Pending Reboot - Checkbox
+
+3. Before Enabling the monitors, validate that the monitor will return results when checking the 'Pending Reboot' EDF. Simply pick a random workstation that is online and check the 'Pending Reboot' EDF and save it:
+
+![Image](5078775/docs/9088563/images/19911971)
+
+4. Then Open the Disabled Monitor 'ProVal - Production - Reboot Pending [Prompt]' and validate the new machine pops up into the results
+
+![Image](5078775/docs/9088563/images/19912021)
+
+   **NOTE** If the count is more than 1, then settings are changed from their defaults and the consultant should weigh in on whether we should enable the monitors or not.
+
+5. After confirming that, you can uncheck the pending reboot box from that machine and fully enable all the monitors.
+   - It is recommended to keep the monitor targeting globally to make sure the EDFs, when checked, always prompt the user, however, the client may request for the monitor to be more limited and in this case you can enable the monitor specifically for certain groups.
+
+## Prompter Prompt Examples
+
+![Image](5078775/docs/9088563/images/17064684)
+
+Icon and header images can be set by [https://%redirhostname%/WCC2/Utilities/HeaderImage](https://%redirhostname%/WCC2/Utilities/HeaderImage)
+
+At the final prompt, you will receive this popup through Windows FIRST
+
+![Image](5078775/docs/9088563/images/17064792)
+
+Then this will popup, explaining the reboot.
+
+![Image](5078775/docs/9088563/images/17064820)
+
+## Automate Prompt Examples
+
+![Image](5078775/docs/9088563/images/12722777)
+
+![Image](5078775/docs/9088563/images/12723123)
+
+![Image](5078775/docs/9088563/images/12723715)
+
+![Image](5078775/docs/9088563/images/12725998)
+
+At the final prompt, you will receive this popup through Windows FIRST
+
+![Image](5078775/docs/9088563/images/12728768)
+
+Then this will popup, explaining the reboot.
+
+![Image](5078775/docs/9088563/images/12728774)
+
+## EDF Examples
+
+- Pending Reboot [Checkbox - Manually Editable]
+  - ![Image](5078775/docs/9088563/images/23189435)
+- Last Prompted [Text Field - Non Editable]
+  - ![Image](5078775/docs/9088563/images/23189436)
+- Times Prompted [Text Field - Non Editable]
+  - ![Image](5078775/docs/9088563/images/23189437)
+
+## Customizations
+
+| Property | Description | Default Setting |
+|----------|-------------|-----------------|
+| System Property: proval_RebootPromptCount | How many times the user will be prompted | 4 |
+| System Property: proval_RebootPromptDurBetweenPrompt | Amount of time in hours between prompts | 4 |
+| System Property: proval_RebootPromptMSG | The default message for the reboot prompt | 'Your computer is currently in need of a reboot.' |
+| System Property: proval_RebootPromptUptimeDays | Automatically sets the reboot prompt flag after X days of machine uptime | 0 (Disabled) |
+| System Property: proval_RebootPromptWhenPendingReboot | Toggles this solution on the windows embedded reboot flag | 0 (Disabled) |
+| System Property: proval_RebootForceTimeDelayMin | Adjusts the time delay on the forced reboot in minutes | 5 |
+| System Property: Proval_RebootPromptUsePrompter | Use [Prompter](https://proval.itglue.com/DOC-5078775-10243074) instead of Automate's default Prompts/messages | 0 (Disabled) |
+
+## Exclusion EDFs
+
+| Name | Type | Section | Level | Description |
+|------|------|---------|-------|-------------|
+| Disable Reboot Prompt | CheckBox | Exclusions | Client | Flag this EDF to exclude the client from the solution. |
+| Disable Reboot Prompt | CheckBox | Exclusions | Location | Flag this EDF to exclude the location from the solution. |
+| Disable Reboot Prompt | CheckBox | Exclusions | Computer | Flag this EDF to exclude the computer from the solution. |
+

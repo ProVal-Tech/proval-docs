@@ -1,0 +1,42 @@
+---
+id: 'cwa-remove-java-script'
+title: 'Java Uninstallation Script'
+title_meta: 'Java Uninstallation Script for Efficient Removal of Java Versions'
+keywords: ['java', 'uninstall', 'script', 'windows', 'software']
+description: 'This document details a script designed to check and uninstall all installed versions of Java from a target machine. It automates the process by creating and executing a RemoveJAVA.cmd file, streamlining software management and saving time in system maintenance.'
+tags: ['uninstallation', 'software', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script will check and uninstall all installed versions of Java from the target machine. This script will create a RemoveJAVA.cmd file. Then run the .cmd file and it will uninstall Java from the machine.
+
+Time Saved by Automation: 5 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8011127/images/11150322)
+
+## Dependencies
+
+- Windows OS
+- @Java Removal Procedure (Agnostic content)
+
+## Variables
+
+- @SoftwareCnt@ -> How many versions of Java are installed
+
+## Process
+
+1. The script verifies that Java is detected installed
+2. Counts how many versions of Java are installed on the machine
+3. Write up the required uninstall RemoveJAVA.cmd file and runs it
+4. The script loops through each detected Java install
+5. The script will verify that all versions of Java are removed
+   - Logs a failure in Automate's script logs if there's Java still detected
+
+## Output
+
+- Script log
+

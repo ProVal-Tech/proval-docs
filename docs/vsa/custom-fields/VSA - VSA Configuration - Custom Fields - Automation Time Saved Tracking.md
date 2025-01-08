@@ -1,0 +1,25 @@
+---
+id: 'vsa-automation-time-saved-tracking'
+title: 'Automation Time Saved Tracking'
+title_meta: 'Automation Time Saved Tracking'
+keywords: ['time', 'tracking', 'saved', 'automation', 'client']
+description: 'This document provides an overview of how to track the approximate amount of time saved for clients due to ProVal Automation. It includes details on monthly and cumulative values, along with dependencies and field descriptions.'
+tags: ['configuration', 'report', 'performance', 'software', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+Keeps a running total for the approximate amount of time saved to the client due to ProVal Automation. Monthly and Cumulative values.
+
+## Dependencies
+
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+
+## Details
+
+| Field Name                             | Type of Field (Machine or Organization) | Description                                                        |
+|----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
+| xPVAL Automation Time Saved Monthly     | CF                                      | Integer representing number of minutes saved through automation. Resets Monthly. |
+| xPVAL Automation Time Saved Cumulative  | CF                                      | Integer representing number of minutes saved through automation.    |
+

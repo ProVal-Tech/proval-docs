@@ -1,0 +1,34 @@
+---
+id: 'cwa-update-orchestrator-monitor'
+title: 'Update Orchestrator Service Monitor'
+title_meta: 'Update Orchestrator Service Monitor'
+keywords: ['monitor', 'service', 'windows', 'alert', 'check']
+description: 'This document provides details on a monitor designed to check the status of the Update Orchestrator Service on Windows machines. If the service is running, it triggers an alert based on the specified template. Suggested configurations for the monitor, including check actions and dependencies, are also included.'
+tags: ['windows', 'service', 'alert', 'monitor', 'check']
+draft: false
+unlisted: false
+---
+## Summary
+
+This monitor will check for the update orchestrator service. If running then it will trigger the alert template applied.
+
+## Details
+
+**Suggested "Limit to"**: Windows Machines  
+**Suggested Alert Style**: Continuous  
+
+Insert the details of the monitor in the below table.
+
+| Check Action | Server Address | Check Type    | Check Value | Comparator | Interval | Result |
+|--------------|----------------|---------------|-------------|------------|----------|--------|
+| System       | 127.0.0.1     | Service Check | UsoSvc      | Contains   | 60       | 0      |
+
+## Dependencies
+
+- [Update Orchestrator Service - Disable](https://proval.itglue.com/DOC-5078775-7909078)
+
+## Target
+
+Windows Machine
+
+

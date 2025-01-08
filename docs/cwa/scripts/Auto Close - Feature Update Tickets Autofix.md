@@ -1,0 +1,36 @@
+---
+id: 'cwa-finish-tickets-feature-update'
+title: 'Finish Tickets for Feature Update'
+title_meta: 'Finish Tickets for Feature Update'
+keywords: ['tickets', 'feature', 'update', 'windows', 'monitor']
+description: 'This document outlines a script designed to finalize new or open tickets related to the feature pack upgrade solution for Windows 10 machines that have been updated to the latest build. It details the affected ticket subjects, sample run, dependencies, and variables used in the script.'
+tags: ['windows', 'update', 'monitor', 'ticket', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+The purpose of the script is to finish the new/open tickets created by the feature pack upgrading solution for the Windows 10 machines which are already updated to the latest build.
+
+Affected ticket subjects:
+
+- Pre-Reboot Installation Failure of Feature Update for %ClientName%/%ComputerName%
+- Feature Update Reboot Ignored on %ClientName%/%ComputerName%
+
+## Sample Run
+
+![Sample Run](5078775/docs/12579656/images/17813376)
+
+## Dependencies
+
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+- [CWM - Automate - Internal Monitor - ProVal - Client Specific - Auto Close - Feature Update Tickets](https://proval.itglue.com/DOC-5078775-12579658)
+
+## Variables
+
+| Name        | Description                                    |
+|-------------|------------------------------------------------|
+| STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
+| Count       | Number of tickets to finish                     |
+| SQLTicketid | Ticketid to finish/close                       |
+

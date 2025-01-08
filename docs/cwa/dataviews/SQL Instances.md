@@ -1,0 +1,28 @@
+---
+id: 'cwa-sql-instances-report'
+title: 'SQL Instances Report'
+title_meta: 'SQL Instances Report'
+keywords: ['sql', 'instances', 'report', 'client', 'computer']
+description: 'This document provides a comprehensive report on all installed SQL instances found on an endpoint, detailing client names, location names, computer names, detection status, and the versions and editions of SQL instances detected.'
+tags: ['database', 'report', 'client', 'computer', 'version']
+draft: false
+unlisted: false
+---
+## Summary
+
+Displays all installed SQL instances found on an endpoint
+
+## Dependencies
+
+- [CWM - Automate - Role - SQL_Instances](https://proval.itglue.com/DOC-5078775-12325244)
+
+## Columns
+
+| Column               | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| ClientName          | The name of the client.                                                    |
+| LocationName        | The name of the location.                                                  |
+| ComputerName        | The name of the computer.                                                  |
+| CurrentlyDetected    | 0 if no SQL instances are detected, 1 if SQL instances are detected.       |
+| Versions-Editions   | The found versions and editions separated by a comma.                      |
+

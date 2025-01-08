@@ -1,0 +1,120 @@
+---
+id: 'cwa-remove-pua-implementation'
+title: 'CWA Implementation of Remove-PUA'
+title_meta: 'CWA Implementation of Remove-PUA'
+keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit']
+description: 'This document provides a detailed overview of the CWA implementation of the Remove-PUA script, including file hashes, sample runs, user parameters, and supported bloatware for effective uninstallation of unwanted applications.'
+tags: ['bloatware', 'uninstallation', 'audit', 'script', 'emailing']
+draft: false
+unlisted: false
+---
+## Summary
+
+A CWA implementation of the agnostic script [Remove-PUA](https://proval.itglue.com/DOC-5078775-9434539). Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](https://proval.itglue.com/DOC-5078775-17775281) dataview.
+
+## File Hash
+
+**File Path:** `C:\ProgramData\_Automation\script\Remove-PUA\Manage-OverFlowedVariable.ps1`  
+**File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
+**File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
+
+**File Path:** `C:\ProgramData\_Automation\script\Remove-PUA\Remove-PUA-AI.ps1`  
+**File Hash (Sha256):** `EAAB382CA77CA8FD229655E8D0D5C6886B7BA98E46B3061A9038BF06336C3B5F`  
+**File Hash (MD5):** `397F58E10753F16DB925B599A7AA9F09`  
+
+**File Path:** `C:\ProgramData\_Automation\script\Remove-PUA\Remove-PUA.ps1`  
+**File Hash (Sha256):** `92BE1EB0A4480C2C6045F541539ABC7D58C114DE7DA186628632AE53C0D50E59`  
+**File Hash (MD5):** `7889293F23B73B76D95B8B533E1455DD`  
+
+## Sample Run
+
+To fetch the list of installed Bloatware into the [Bloatware Audit](https://proval.itglue.com/DOC-5078775-17775281) dataview:  
+![Sample Run 1](5078775/docs/11157214/images/27218117)
+
+To fetch the list of installed Bloatware and email it to the user running the script:  
+![Sample Run 2](5078775/docs/11157214/images/27400380)
+
+To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
+![Sample Run 3](5078775/docs/11157214/images/27218300)
+
+To remove all installed Bloatware supported by the script:  
+![Sample Run 4](5078775/docs/11157214/images/27218355)
+
+To remove all xboxfeatureapps, except xboxGameOverlay:  
+![Sample Run 5](5078775/docs/11157214/images/27218402)
+
+To remove all installed Bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
+![Sample Run 6](5078775/docs/11157214/images/27401099)
+
+## Dependencies
+
+[SWM - Software Uninstall - Agnostic - Remove-PUA](https://proval.itglue.com/DOC-5078775-9434539)  
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+
+## User Parameters
+
+| Name          | Example                                          | Accepted Values                                                                                     | Required   | Description                                                                                                                                                                            |
+|---------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ListBloatware | 1                                                | - 1<br>- 2                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](https://proval.itglue.com/DOC-5078775-17775281) dataview.<br>`2`: Fetch installed bloatware into the [Bloatware Audit](https://proval.itglue.com/DOC-5078775-17775281) dataview and send the list to the user running the script. |
+| Remove        | Microsoft.BingNews,Microsoft.BingWeather,Microsoft.People |                                                                                                     | Partially  | The name(s) of the application or applications you wish to uninstall                                                                                                               |
+| Remove All    | 1                                                |                                                                                                     | Partially  | Set it to 1 to remove all bloatware by category or all found bloatware with or without exceptions                                                                                   |
+| Category      | XboxFeaturesApps                                | - MsftBloatApps<br>- ThirdPartyBloatApps<br>- WindowsStoreApps<br>- XboxFeaturesApps<br>- NonAppxApps | False      | Used with RemoveAll will filter bloatware to a certain category allowing you to select just a specific category of bloatware                                                        |
+| Except        | xboxGameOverlay                                 |                                                                                                     | False      | Used with RemoveAll or Category to remove all except some item(s) from a category or all together                                                                                   |
+
+## Emailing
+
+The script is designed to send the list of installed Bloatware to the user running the script if the `ListBloatware` parameter is set to `2`.
+
+**Sample Email:**  
+![Sample Email](5078775/docs/11157214/images/27402436)
+
+**Sample CSV File:**  
+**![Sample CSV](5078775/docs/11157214/images/27402573)**
+
+## Output
+
+- Script log
+- Dataview (if `ListBloatware` parameter is used)
+
+## Supported Bloatware
+
+| MsftBloatApps                            | ThirdPartyBloatApps                       | WindowsStoreApps                       | XboxFeaturesApps                   | NonAppxApps                                             |
+|------------------------------------------|-------------------------------------------|---------------------------------------|-----------------------------------|---------------------------------------------------------|
+| Microsoft.3DBuilder                       | 46928bounde.EclipseManager                | Microsoft.DesktopAppInstaller         | Microsoft.Xbox.TCUI               | Clean Your Device                                       |
+| Microsoft.AppConnector                    | 4DF9E0F8.Netflix                          | Microsoft.WindowsStore                 | Microsoft.XboxApp                 | Dell Optimizer Service                                  |
+| Microsoft.BingFinance                     | 828B5831.HiddenCityMysteryofShadows      |                                       | Microsoft.XboxGameOverlay         | Dell Power Manager Service                               |
+| Microsoft.BingNews                        | 89006A2E.AutodeskSketchBook               |                                       | Microsoft.XboxIdentityProvider    | Dell SupportAssist OS Recovery Plugin for Dell Update   |
+| Microsoft.BingSports                      | 9E2F88E3.Twitter                          |                                       | Microsoft.XboxSpeechToTextOverlay | HP Notifications                                         |
+| Microsoft.BingWeather                     | A278AB0D.DisneyMagicKingdoms             |                                       |                                   | HP TechPulse                                           |
+| Microsoft.CommsPhone                      | A278AB0D.MarchofEmpires                  |                                       |                                   | Lenovo Quick Clean                                      |
+| Microsoft.ConnectivityStore               | ActiproSoftwareLLC.562882FEEB491         |                                       |                                   | Lenovo Vantage Service                                   |
+| Microsoft.Getstarted                       | AD2F1837.HPPCHardwareDiagnosticsWindows   |                                       |                                   |                                                         |
+| Microsoft.Messaging                        | AD2F1837.HPPowerManager                   |                                       |                                   |                                                         |
+| Microsoft.Microsoft3DViewer               | AD2F1837.HPPrivacySettings                |                                       |                                   |                                                         |
+| Microsoft.MicrosoftOfficeHub               | AD2F1837.HPQuickDrop                      |                                       |                                   |                                                         |
+| Microsoft.MicrosoftPowerBIForWindows      | AD2F1837.HPSupportAssistant               |                                       |                                   |                                                         |
+| Microsoft.MicrosoftSolitaireCollection     | AD2F1837.HPSystemInformation              |                                       |                                   |                                                         |
+| Microsoft.MicrosoftStickyNotes             | AD2F1837.myHP                             |                                       |                                   |                                                         |
+| Microsoft.MinecraftUWP                    | AdobeSystemsIncorporated.AdobePhotoshopExpress |                                   |                                   |                                                         |
+| Microsoft.MixedReality.Portal              | CAF9E577.Plex                             |                                       |                                   |                                                         |
+| Microsoft.MSPaint                         | D52A8D61.FarmVille2CountryEscape          |                                       |                                   |                                                         |
+| Microsoft.NetworkSpeedTest                | D5EA27B7.Duolingo-LearnLanguagesforFree  |                                       |                                   |                                                         |
+| Microsoft.Office.OneNote                  | Drawboard.DrawboardPDF                    |                                       |                                   |                                                         |
+| Microsoft.Office.OneNote                  | E046963F.cameraSettings                   |                                       |                                   |                                                         |
+| Microsoft.Office.Sway                     | E046963F.LenovoCompanion                  |                                       |                                   |                                                         |
+| Microsoft.OneConnect                       | E046963F.LenovoSettingsforEnterprise      |                                       |                                   |                                                         |
+| Microsoft.People                          | Facebook.Facebook                          |                                       |                                   |                                                         |
+| Microsoft.Print3D                         | flaregamesGmbH.RoyalRevolt2              |                                       |                                   |                                                         |
+| Microsoft.RemoteDesktop                    | GAMELOFTSA.Asphalt8Airborne               |                                       |                                   |                                                         |
+| Microsoft.SkypeApp                        | KeeperSecurityInc.Keeper                  |                                       |                                   |                                                         |
+| Microsoft.Windows.Photos                  | king.com.BubbleWitch3Saga                 |                                       |                                   |                                                         |
+| Microsoft.WindowsAlarms                   | king.com.CandyCrushSodaSaga               |                                       |                                   |                                                         |
+| Microsoft.WindowsCamera                   |                                           |                                       |                                   |                                                         |
+| microsoft.windowscommunicationsapps       |                                           |                                       |                                   |                                                         |
+| Microsoft.WindowsFeedbackHub              |                                           |                                       |                                   |                                                         |
+| Microsoft.WindowsMaps                     |                                           |                                       |                                   |                                                         |
+| Microsoft.WindowsPhone                    |                                           |                                       |                                   |                                                         |
+| Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
+| Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
+| Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
+

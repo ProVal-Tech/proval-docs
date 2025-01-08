@@ -1,0 +1,36 @@
+---
+id: 'cwa-exchange-mitigation-tool'
+title: 'Exchange On-Premise Mitigation Tool for Hafnium CVE'
+title_meta: 'Exchange On-Premise Mitigation Tool for Hafnium CVE'
+keywords: ['exchange', 'mitigation', 'cve', 'hafnium', 'script', 'ticket', 'scan']
+description: 'This document describes a script designed to run the Exchange on-premise mitigation tool provided by Microsoft Exchange. It detects the Hafnium CVE, creates a ticket if found, and executes a full scan to implement the necessary mitigation. The script is intended for use on Windows Exchange servers only, saving approximately 30 minutes of manual effort.'
+tags: ['cve', 'ticket', 'script', 'scan', 'windows', 'security', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script helps to run the Exchange on-premise mitigation tool provided by Microsoft Exchange to detect the Hafnium CVE. If found, then it will create a ticket and run the full scan to fix the mitigation. The script must be run against the Windows Exchange servers only.
+
+Time Saved by Automation: 30 Minutes
+
+## Sample Run
+
+![Sample Run](5078775/docs/8104916/images/11285473)
+
+#### Global Parameters
+
+| Name            | Example                                          | Required | Description                                                                                   |
+|-----------------|--------------------------------------------------|----------|-----------------------------------------------------------------------------------------------|
+| TicketCreation   | Set the value to 1 for Ticket creation           | 0 or 1   | Change the value from 0 to 1 to create a ticket for threat detection.                       |
+
+## Process
+
+This script helps to run the Exchange on-premise mitigation tool provided by Microsoft Exchange to detect the Hafnium CVE. If found, then it will create a ticket and run the full scan to fix the mitigation. The script will RunFullScan when a threat is detected to fix it. It will also create tickets depending upon the global param value set and will attach the log file to the ticket.
+
+## Output
+
+- Script log
+- Logfile named as msert.log
+
+

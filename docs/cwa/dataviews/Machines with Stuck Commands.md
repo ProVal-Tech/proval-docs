@@ -1,0 +1,34 @@
+---
+id: 'cwa-stuck-command-report'
+title: 'Stuck Command Report for Machines'
+title_meta: 'Stuck Command Report for Machines'
+keywords: ['machines', 'command', 'execution', 'report', 'status']
+description: 'This document provides a detailed report on machines where a specific command has been stuck in the execution state for an extended period, typically exceeding one hour. It includes various columns such as Client ID, Computer ID, Operating System, and more to help identify and troubleshoot issues.'
+tags: ['report', 'status', 'computer', 'execution', 'last-contact', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+The dataview displays information about machines where a specific command has been stuck in the execution state for an extended period, typically exceeding one hour.
+
+## Columns
+
+| Column                   | Description                           |
+|--------------------------|---------------------------------------|
+| Clientid                 | Clientid (Hidden)                    |
+| Locationid               | Locationid (Hidden)                  |
+| Computerid               | Computerid                            |
+| Client                   | Client Name                           |
+| Location                 | Location Name                         |
+| Computer                 | Computer Name                         |
+| Operating System         | Operating System                      |
+| Last Contact             | Last Contact with RMM                |
+| Last Logged-In User      | Last Logged-In User                   |
+| Form Factor              | Form Factor                           |
+| Stuck Command            | Command that is Stuck                |
+| Command Parameter        | Parameter of the Stuck Command        |
+| Date Updated             | Start time of the command            |
+| Stuck Since (Hours)     | Stuck Since (Hours)                  |
+
+

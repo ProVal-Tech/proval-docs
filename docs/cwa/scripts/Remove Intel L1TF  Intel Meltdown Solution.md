@@ -1,0 +1,33 @@
+---
+id: 'cwa-remove-intel-vulnerabilities'
+title: 'Remove Intel L1TF and Meltdown Vulnerabilities from Automate Environment'
+title_meta: 'Remove Intel L1TF and Meltdown Vulnerabilities from Automate Environment'
+keywords: ['intel', 'l1tf', 'meltdown', 'vulnerabilities', 'automate']
+description: 'This document outlines a script designed to remove Intel L1TF and Intel Meltdown vulnerabilities from the Automate environment, detailing the process and expected output.'
+tags: ['configuration', 'security', 'uninstallation']
+draft: false
+unlisted: false
+---
+## Summary
+
+The script will remove the Intel L1TF and Intel Meltdown Solution from the Automate Environment.
+
+## Sample Run
+
+![Sample Run](5078775/docs/10910994/images/15187527)
+
+## Process
+
+1. Remove "Intel L1TF Vulnerability Check" and "Intel Meltdown Vulnerability Check" scripts, if they exist.
+2. Remove the "Intel L1TF Vulnerable" and "Intel Meltdown Vulnerable" groups.
+3. Remove "Intel L1TF Vulnerable" and "Intel Meltdown Vulnerable" searches.
+4. Remove "'Intel L1TF Vulnerability Status" and "'Intel Meltdown Vulnerability Status" dataview.
+5. Remove "'Intel L1TF Vulnerability Status" and "'Intel Meltdown Vulnerability Status" computer level EDF.
+6. Remove the entry of primary script from pendingscripts, runningscripts and scheduledscripts table.
+7. Remove the primary script ("Intel L1TF Vulnerability Check" and "Intel Meltdown Vulnerability Check").
+8. Refreshes the Computer level EDFs.
+
+## Output
+
+Script Log
+

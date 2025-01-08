@@ -1,0 +1,18 @@
+---
+id: 'cwa-monitor-automate-user-lockout'
+title: 'Monitor Automate User Lockout'
+title_meta: 'Monitor Automate User Lockout'
+keywords: ['automate', 'monitor', 'user', 'lockout']
+description: 'This document provides a summary of a monitor designed to detect Automate users who have been locked out from logging in, ensuring better management and security of user access.'
+tags: ['security', 'notification', 'setup']
+draft: false
+unlisted: false
+---
+## Summary
+
+This monitor detects Automate users that have been locked out of logging in.
+
+## Target
+
+Global
+

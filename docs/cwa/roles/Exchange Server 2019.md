@@ -1,0 +1,20 @@
+---
+id: 'cwa-detect-exchange-server-2019'
+title: 'Detect Exchange Server 2019 Installation'
+title_meta: 'Detect Exchange Server 2019 Installation'
+keywords: ['exchange', 'server', 'detection', 'installation', 'windows']
+description: 'This document outlines the detection method for verifying if Exchange Server 2019 is installed on a Windows system. It includes the detection string, comparator, result, and applicable operating system for accurate identification.'
+tags: ['detection', 'windows', 'setup', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+This role will detect if Exchange Server 2019 is installed.
+
+## Settings
+
+| Detection String                                                                                                                                         | Comparator | Result | Applicable OS |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
+| {%_and|{%_eq|{%-HKLM\\Software\\Microsoft\\ExchangeServer\\v15\\Setup:MsiProductMajor-%}|15_%}|{%_eq|{%-HKLM\\Software\\Microsoft\\ExchangeServer\\v15\\Setup:MsiProductMinor-%}|2_%}_%} | Equals     | 1      | Windows        |
+

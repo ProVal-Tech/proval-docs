@@ -1,10 +1,10 @@
 ---
-id: ps-remove-sentinelone
-title: 'Remove-SentinelOne'
-title_meta: 'Remove-SentinelOne Command'
-keywords: ['remove', 'sentinelone', 'uninstall', 'security']
-description: 'Documentation for the Remove-SentinelOne command to uninstall the SentinelOne agent from a Windows system.'
-tags: ['uninstallation', 'security', 'windows']
+id: ps-remove-userregistryvalue
+title: 'Remove-UserRegistryValue'
+title_meta: 'Remove-UserRegistryValue Command'
+keywords: ['remove', 'registry', 'user', 'key']
+description: 'Documentation for the Remove-UserRegistryValue command to remove specific registry values for all users.'
+tags: ['configuration', 'windows', 'security']
 draft: false
 unlisted: false
 ---

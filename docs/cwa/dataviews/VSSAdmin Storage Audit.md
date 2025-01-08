@@ -1,0 +1,36 @@
+---
+id: 'cwa-vss-admin-storage-detail'
+title: 'VSS Admin Storage Detail for All Volumes'
+title_meta: 'VSS Admin Storage Detail for All Volumes'
+keywords: ['vss', 'storage', 'volume', 'audit', 'agent']
+description: 'This document provides a detailed overview of the VSS admin storage for all volumes, including dependencies and columns that store essential information about each agent and its storage utilization.'
+tags: ['backup', 'storage', 'report', 'windows', 'virtualization']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview stores the detail of VSS admin storage for all volumes.
+
+## Dependencies
+
+- [VSS Resize](https://proval.itglue.com/DOC-5078775-10728931)
+- [Vssadmin List Storage Audit](https://proval.itglue.com/DOC-5078775-10728929)
+- [plugin_proval_vssadminstorage](https://proval.itglue.com/DOC-5078775-10728928)
+
+## Columns
+
+| Column                   | Description                                   |
+|-------------------------|-----------------------------------------------|
+| Client Name             | Client Name of the agent                      |
+| Location Name           | Location Name of the agent                    |
+| Computer Name           | Computer Name of the agent                    |
+| Operating System        | Operating system of the agent                 |
+| LastContact             | Last contact of the agent with the RMM       |
+| ShadowCopy Volume       | ShadowCopy volume letter                      |
+| VSS Used Storage        | vss storage occupied on the disk              |
+| VSS Allocated Storage   | Vss storage allocated on the disk             |
+| VSS Max Storage         | VSS max storage provided                      |
+| Script Ran Date         | Script last ran date on the agent            |
+
+
