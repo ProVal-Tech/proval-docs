@@ -19,3 +19,4 @@ Role used to detect the servers with Network Device Enrollment Service Feature i
 | {@%powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Device-Enrollment' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains    | Installed | Windows       |
 
 
+

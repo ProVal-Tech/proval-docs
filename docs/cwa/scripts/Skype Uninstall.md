@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8058534/images/11216809)
+![Sample Run](..\..\..\static\img\Skype-Uninstall\image_1.png)
 
 ## Dependencies
 
@@ -31,4 +31,5 @@ If Skype is removed successfully, the script will exit with a successful log mes
 ## Output
 
 Script log messages
+
 

@@ -15,7 +15,7 @@ Please provide the variable `InternetExplorerIntegrationCloudSiteList` in the Po
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10220561/images/14191887)
+![Sample Run](..\..\..\static\img\Enable-IE-Mode-in-Microsoft-Edge\image_1.png)
 
 ## Variables
 
@@ -38,5 +38,6 @@ Once the setting is done it checks the computer EDFs for the logging in the data
 ## Output
 
 - Script log
+
 
 

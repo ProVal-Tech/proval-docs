@@ -32,3 +32,4 @@ The goal of this solution is to detect and disable NTLMv1.1.
   - If the auto fix is needed, import the alert template: `△ Custom - Autofix - Disable NTLMv1.1`.
 
 
+

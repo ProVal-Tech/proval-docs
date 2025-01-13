@@ -29,3 +29,4 @@ Insert the details of the monitor in the below table.
 - Group of windows machines having 'DUO Security Authentication Proxy' application installed
 
 
+

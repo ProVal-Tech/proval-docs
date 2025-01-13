@@ -14,7 +14,7 @@ Imports the [plugin_proval_v_patching_metrics_overview](https://proval.itglue.co
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11915171/images/16713998)
+![Sample Run](..\..\..\static\img\MySQL---View---Create---Plugin_ProVal_v_Patching_Metrics_Overview\image_1.png)
 
 ## Process
 
@@ -25,4 +25,5 @@ Imports the [plugin_proval_v_patching_metrics_overview](https://proval.itglue.co
 ## Output
 
 - View
+
 

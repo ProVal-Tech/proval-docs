@@ -14,7 +14,7 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12028459/images/16869637)
+![Sample Run](..\..\..\static\img\Get-SetupDiag-Report\image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,6 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 Outputs to a variable (@SetupDiagResult@) that can be referenced in parent scripts.
 
 See [Invoke-SetupDiag](https://proval.itglue.com/DOC-5078775-12024896) for additional output information.
+
 
 

@@ -14,7 +14,7 @@ The purpose of this script is to uninstall Onedrive from Windows machines.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/15406067/images/22408222)
+![Sample Run](..\..\..\static\img\Onedrive-Uninstallation\image_1.png)
 
 ## Global Parameters
 
@@ -40,5 +40,6 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
 
 

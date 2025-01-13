@@ -19,3 +19,4 @@ This role denotes if the agent has Bitlocker TPM Present.
 | {%@C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe -command "Get-Tpm|select -ExpandProperty TPMPresent"@%} | Contains   | True   | Windows        |
 
 
+

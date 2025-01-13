@@ -17,7 +17,7 @@ The script is created to verify the installation of all the necessary patches in
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8930107/images/12387639)
+![Sample Run](..\..\..\static\img\Active-Directory---Privilege-Escalation-Attack-Mitigation\image_1.png)
 
 ## Dependencies
 
@@ -67,5 +67,6 @@ These EDFs are also presented in the dataview [Workaround - Active Directory pri
 
 - Extra Data Fields
 - Dataview
+
 
 

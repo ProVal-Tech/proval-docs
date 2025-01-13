@@ -23,3 +23,4 @@ Alert Template: ~Fetch Windows Update Report
 
 Limited to the Windows Machines with Managed Patch Policy via SQL query.
 
+

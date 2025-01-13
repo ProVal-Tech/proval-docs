@@ -27,3 +27,4 @@ The dataview provides the status of the Network devices in the environment.
 | External Sync                      | This displays if the external sync is disabled or enabled on the network device. |
 
 
+

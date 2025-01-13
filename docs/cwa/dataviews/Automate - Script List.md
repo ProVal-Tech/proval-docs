@@ -14,7 +14,7 @@ This dataview will list all scripts in the environment with details about their 
 
 The Script log retention days can be seen at the automate location below:
 
-![Script Log Retention Days](5078775/docs/8197426/images/16674043)
+![Script Log Retention Days](..\..\..\static\img\Automate---Script-List\image_1.png)
 
 ## Columns
 
@@ -41,5 +41,6 @@ The Script log retention days can be seen at the automate location below:
 
 ## Sample Screenshot
 
-![Sample Screenshot](5078775/docs/8197426/images/18281992)
+![Sample Screenshot](..\..\..\static\img\Automate---Script-List\image_2.png)
+
 

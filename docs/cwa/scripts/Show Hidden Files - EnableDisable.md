@@ -16,7 +16,7 @@ Time Saved by Automation: 2 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8168901/images/11368660)
+![Sample Run](..\..\..\static\img\Show-Hidden-Files---EnableDisable\image_1.png)
 
 ## Variables
 
@@ -35,5 +35,6 @@ Time Saved by Automation: 2 Minutes
 ## Output
 
 - Script log
+
 
 

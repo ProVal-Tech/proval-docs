@@ -32,3 +32,4 @@ This Solution will pull installed print driver version information into Automate
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most probably because of the permissions, try running [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](https://proval.itglue.com/DOC-5078775-8056027) script.
 
+

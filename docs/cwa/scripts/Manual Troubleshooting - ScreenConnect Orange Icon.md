@@ -12,7 +12,7 @@ unlisted: false
 
 The purpose of the document is to guide the technician to manually troubleshoot the Orange Icon issue with the ScreenConnect client from Automate. Orange Icon denotes that the ScreenConnect client application is installed on the computer but is either corrupt or somehow the computer is unable to reach the ScreenConnect Web portal or relay address.
 
-![Image](5078775/docs/13282507/images/19031473)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_1.png)
 
 **Note:** The following steps can only solve the problem if it's related to the application, not the network connection.
 
@@ -23,24 +23,24 @@ Login to the Thick Client and open the Computer Management Screen of the concern
 ## Step 2
 
 Disable ScreenConnect deployment by right-clicking on the ScreenConnect Icon.  
-![Image](5078775/docs/13282507/images/19031592)  
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_2.png)  
 After disabling:  
-![Image](5078775/docs/13282507/images/19031593)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_3.png)
 
 ## Step 3
 
 Open Software tile  
-![Image](5078775/docs/13282507/images/19031626)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_4.png)
 
 ## Step 4
 
 Search for `ScreenConnect Client` and copy the full name of the application.  
-![Image](5078775/docs/13282507/images/19031660)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_5.png)
 
 ## Step 5
 
 Uninstall the application.  
-![Image](5078775/docs/13282507/images/19031724)  
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_6.png)  
 To make the command run silently, add the following to the end of the uninstall command:
 
 ```
@@ -64,12 +64,12 @@ MsiExec.exe /X{9B368B57-5FB5-4DEF-9670-511649689C76} /qb+ /norestart
 ## Step 6
 
 Resend Software Inventory after uninstalling the application.  
-![Image](5078775/docs/13282507/images/19031663)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_7.png)
 
 ## Step 7
 
 Ensure that the application is removed.  
-![Image](5078775/docs/13282507/images/19031695)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_8.png)
 
 ## Step 8
 
@@ -88,8 +88,8 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ```
 
 Run the command on the computer to remove the application traces and registry keys.  
-![Image](5078775/docs/13282507/images/19031713)  
-![Image](5078775/docs/13282507/images/19031714)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_9.png)  
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_10.png)
 
 ## Step 9
 
@@ -98,23 +98,24 @@ Wait for the command to complete and then restart the computer. It's not mandato
 ## Step 10
 
 After the computer starts checking back with Automate post restart; run the [`ScreenConnect - Repair [RMM+, Autofix, Globals]*`](https://proval.itglue.com/5078775/docs/8216334) script, and wait for the script to complete.  
-![Image](5078775/docs/13282507/images/21464612)  
-![Image](5078775/docs/13282507/images/21464707)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_11.png)  
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_12.png)
 
 ## Step 11
 
 Ensure that the computer starts checking in with the ScreenConnect Web portal.  
-![Image](5078775/docs/13282507/images/19031745)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_13.png)
 
 ## Step 12
 
 Once it starts checking in with the ScreenConnect Web portal, enable the ScreenConnect in Automate as well.  
-![Image](5078775/docs/13282507/images/19031756)  
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_14.png)  
 
 This should turn the ScreenConnect icon to Green and thus the problem is resolved.  
-![Image](5078775/docs/13282507/images/19031759)
+![Image](..\..\..\static\img\Manual-Troubleshooting---ScreenConnect-Orange-Icon\image_15.png)
 
 ## Note
 
 If the above mentioned steps failed to resolve the problem then you'll have to access the computer manually and ensure that the computer is able to reach the ScreenConnect Web Portal.
+
 

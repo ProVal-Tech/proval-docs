@@ -59,5 +59,6 @@ Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk In
 
 ## Sample Screenshot
 
-![Sample Screenshot](5078775/docs/12960042/images/18608495)
+![Sample Screenshot](..\..\..\static\img\Crystal-Disk-Info-Report\image_1.png)
+
 

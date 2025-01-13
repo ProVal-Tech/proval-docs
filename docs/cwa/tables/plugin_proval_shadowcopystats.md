@@ -34,3 +34,4 @@ Stores information about Windows shadow copies.
 | MaxSpace      | FLOAT   | Maximum space provided to the Shadow Copy in GB.                                               |
 
 
+

@@ -13,7 +13,7 @@ unlisted: false
 This dataview will display some basic patching-related information for all the windows machines present in the environment. This can come handy while troubleshooting some patching-related issues.  
 
 Sample Screenshot:  
-![Sample Screenshot](5078775/docs/10782487/images/15017516)  
+![Sample Screenshot](..\..\..\static\img\Windows-Patching---Quick-Audit-(Reference-Table)\image_1.png)  
 
 ## Dependencies
 
@@ -49,11 +49,12 @@ Sample Screenshot:
 **A:** It's because dataview is so complex and most likely because of the amount of data it is processing. There is no better way to overcome that, however, [CWM - Automate - Script - Dataview - Email as CSV [Param]](https://proval.itglue.com/DOC-5078775-8856158) script can be used to Email out the dataview and apply the filters in the csv rather than in the dataview.  
 
 Step 1: Find the ID of the `Windows Patching - Quick Audit (Reference Table)` dataview.  
-![Step 1](5078775/docs/10782487/images/15952944)  
+![Step 1](..\..\..\static\img\Windows-Patching---Quick-Audit-(Reference-Table)\image_2.png)  
 
 Step 2: Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](https://proval.itglue.com/DOC-5078775-8856158) script against any online windows machine with the correct parameters.  
-![Step 2](5078775/docs/10782487/images/15952955)  
+![Step 2](..\..\..\static\img\Windows-Patching---Quick-Audit-(Reference-Table)\image_3.png)  
 
 Once you get the CSV in your Email, you can easily apply the required filters.
+
 
 

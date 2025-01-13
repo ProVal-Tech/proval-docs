@@ -18,3 +18,4 @@ This role is detected on machines that have the 64-bit version of StorageCraft I
 |-----------------------------------------------------------------------------------------------------------|---------------|-----------|----------------|
 | %@powershell.exe "(Get-Item 'C:\Program Files (x86)\StorageCraft\ImageManager\ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion"@% | Regex Match   | ^7\.6.    | Windows        |
 
+

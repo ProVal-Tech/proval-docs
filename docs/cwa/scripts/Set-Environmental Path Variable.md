@@ -16,11 +16,11 @@ Will add a requested windows path to the environmental path variable for the des
 
 - Setting a User scoped path variable
 
-![User Scoped Path Variable](5078775/docs/11976251/images/16791832)
+![User Scoped Path Variable](..\..\..\static\img\Set-Environmental-Path-Variable\image_1.png)
 
 - Setting more than one machine scoped path variables.
 
-![Machine Scoped Path Variables](5078775/docs/11976251/images/16791887)
+![Machine Scoped Path Variables](..\..\..\static\img\Set-Environmental-Path-Variable\image_2.png)
 
 **NOTE:**  Scope is not mandatory and if left blank the scope will default to the machine scoped variable.
 
@@ -46,5 +46,6 @@ Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](htt
 ## Output
 
 - Script log
+
 
 

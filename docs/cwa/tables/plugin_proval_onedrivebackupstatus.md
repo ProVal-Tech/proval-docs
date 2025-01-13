@@ -32,3 +32,4 @@ Stores information about redirection of Desktop, Documents, and Pictures to OneD
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
 
+

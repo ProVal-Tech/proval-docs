@@ -14,10 +14,11 @@ The script turns on Num-Lock at the log-on screen for Windows machines.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13227006/images/18946034)
+![Sample Run](..\..\..\static\img\Enable-Num-Lock-On-Sign-In\image_1.png)
 
 ## Output
 
 - Script Log
+
 
 

@@ -14,7 +14,7 @@ This is an Automate implementation of the agnostic script [RSM - Active Director
 
 ## Sample Run
 
-> ![Sample Run](5078775/docs/15193954/images/22030198)
+> ![Sample Run](..\..\..\static\img\Group-Policy---Audit\image_1.png)
 
 ## Dependencies
 
@@ -25,4 +25,5 @@ This is an Automate implementation of the agnostic script [RSM - Active Director
 - Custom Table
 - Dataview
 - Script Log
+
 

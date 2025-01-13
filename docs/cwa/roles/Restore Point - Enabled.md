@@ -18,3 +18,4 @@ This role checks the registry if Restore point is enabled or not, if so it appli
 |------------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore:RPSessionInterval-%} | Equals     | 1      | Windows        |
 
+

@@ -14,7 +14,7 @@ Installs the Teams Machine-wide Installer and installs Teams for the current use
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8204931/images/11422914)
+![Sample Run](..\..\..\static\img\Microsoft-Teams---Install\image_1.png)
 
 ## Dependencies
 
@@ -28,5 +28,6 @@ See [Deploy-MSTeams](https://proval.itglue.com/DOC-5078775-8204723) for process 
 
 - Script log
 - Local file on computer
+
 
 

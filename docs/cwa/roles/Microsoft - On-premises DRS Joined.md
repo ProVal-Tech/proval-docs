@@ -21,3 +21,4 @@ Uses dsregcmd.exe to query system and determine domain / azure domain join statu
 | {%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : YES*') -and ($DSRegStatus -like '*DomainJoined : YES*')]"@%} | Equals     | True   | Windows        |
 
 
+

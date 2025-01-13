@@ -25,3 +25,4 @@ Displays the Power Profile for each agent in the environment. The Dataview fetch
 | Power Profile   | Displays the Power Profile set on the machine |
 
 
+

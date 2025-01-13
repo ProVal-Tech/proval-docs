@@ -19,7 +19,7 @@ Affected ticket subjects:
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12579656/images/17813376)
+![Sample Run](..\..\..\static\img\Auto-Close---Feature-Update-Tickets-Autofix\image_1.png)
 
 ## Dependencies
 
@@ -33,4 +33,5 @@ Affected ticket subjects:
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticketid to finish/close                       |
+
 

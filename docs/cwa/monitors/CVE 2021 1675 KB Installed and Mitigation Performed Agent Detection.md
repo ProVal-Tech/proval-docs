@@ -22,3 +22,4 @@ This monitor will detect agents where the CVE-2021-1675 patch has been installed
 Global
 
 
+

@@ -99,11 +99,12 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search.  
 **Limit To:** `Server Role - AD - Infrastructure Master`  
 
-![Image 1](5078775/docs/14952901/images/21621301)  
-![Image 2](5078775/docs/14952901/images/26055110)  
+![Image 1](..\..\..\static\img\AD-Account-LockOut-Detection\image_1.png)  
+![Image 2](..\..\..\static\img\AD-Account-LockOut-Detection\image_2.png)  
 
 ---
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
+
 

@@ -30,3 +30,4 @@ The purpose of this Dataview is to represent the Extradatafields that have eithe
 | IsRestricted              | Represents whether EDF is restricted or not                         |
 | (Masked/Password)        | Represents whether EDF is Masked or has a password                  |
 
+

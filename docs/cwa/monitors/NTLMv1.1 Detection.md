@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator   | Interval | Result                                       |
 |--------------|----------------|-------------|-------------|---------------|----------|----------------------------------------------|
-| System       | 127.0.0.1     | Run File    | REDACTED    | State Based   | 900      | ![](5078775/docs/14448809/images/20886600) |
+| System       | 127.0.0.1     | Run File    | REDACTED    | State Based   | 900      | ![](..\..\..\static\img\NTLMv1.1-Detection\image_1.png) |
 
 ## Target
 
@@ -35,5 +35,6 @@ Managed Windows Computers
 ## How to Import
 
 [Import - Remote Monitor - NTLMv1.1 Detection](https://proval.itglue.com/DOC-5078775-14448845)
+
 
 

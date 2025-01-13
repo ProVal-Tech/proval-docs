@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 900      | <Screenshot Below> |
 
-![Screenshot](5078775/docs/14952698/images/21620804)
+![Screenshot](..\..\..\static\img\RSM---Active-Directory--AD-Account-Lockout-Detection\image_1.png)
 
 ## Dependencies
 
@@ -35,9 +35,9 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Domain Controllers  
-![Image](5078775/docs/14952698/images/21620842)  
+![Image](..\..\..\static\img\RSM---Active-Directory--AD-Account-Lockout-Detection\image_2.png)  
 The monitor set should be limited to the `<Server Role - AD - Infrastructure Master>` search.  
-![Image](5078775/docs/14952698/images/26055207)
+![Image](..\..\..\static\img\RSM---Active-Directory--AD-Account-Lockout-Detection\image_3.png)
 
 ## Implementation
 
@@ -61,4 +61,5 @@ Endpoint    :    DEV-Win11DomainJoined
 Domain      :    provaltestdomain.local
 DC          :    DEV-SERVER-2019$
 ```
+
 

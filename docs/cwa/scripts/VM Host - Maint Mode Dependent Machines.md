@@ -14,10 +14,11 @@ The script will place the virtual machines hosted on a Hyper-V Host into Mainten
 
 ## Sample Run
 
-![Image](5078775/docs/8181460/images/23114972)
+![Image](..\..\..\static\img\VM-Host---Maint-Mode-Dependent-Machines\image_1.png)
 
 What will get set on all VMs running with an Automate Agent on the host:
 
-![Image](5078775/docs/8181460/images/23234931)
+![Image](..\..\..\static\img\VM-Host---Maint-Mode-Dependent-Machines\image_2.png)
+
 
 

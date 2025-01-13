@@ -17,7 +17,7 @@ The intended target for this script would be "AV- Disabled" monitor.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8134363/images/11360515)
+![Sample Run](..\..\..\static\img\Autofix---Monitor-AV-Service-Status\image_1.png)
 
 ## Variables
 
@@ -49,4 +49,5 @@ The intended target for this script would be "AV- Disabled" monitor.
 
 - Script log
 - Script state
+
 

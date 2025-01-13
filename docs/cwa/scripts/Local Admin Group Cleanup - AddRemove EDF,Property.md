@@ -18,7 +18,7 @@ Windows OS other than Domain Controllers
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14525386/images/20989583)
+![Sample Run](..\..\..\static\img\Local-Admin-Group-Cleanup---AddRemove-EDF,Property\image_1.png)
 
 ## Global Parameters
 
@@ -44,11 +44,11 @@ Windows OS other than Domain Controllers
 
 Agent EDF to Remove/Add user/group to local admin specifically for that machine
 
-![Dependency Image 1](5078775/docs/14525386/images/20989581)
+![Dependency Image 1](..\..\..\static\img\Local-Admin-Group-Cleanup---AddRemove-EDF,Property\image_2.png)
 
 Client Level EDF to Remove/Add user/Group to local admin specifically for Particular Client
 
-![Dependency Image 2](5078775/docs/14525386/images/20989582)
+![Dependency Image 2](..\..\..\static\img\Local-Admin-Group-Cleanup---AddRemove-EDF,Property\image_3.png)
 
 If nothing is mentioned in Agent and Client EDF, the default users/group mentioned in the system property "Local_Admin_Group_Approved_Members" will be used.
 
@@ -76,5 +76,6 @@ To enable the ticketing on failure, the ticket category must be set in the globa
 
 `Please look into why this automation failed to complete.`  
 `Thank you`
+
 
 

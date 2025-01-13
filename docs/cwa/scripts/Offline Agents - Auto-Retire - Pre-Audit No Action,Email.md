@@ -18,15 +18,15 @@ For initial execution:
 
 Set `Set_Environment` value to 1 and Set `Set_Global_Threshold_Days` value as per client's requirement suppose it's '180' days.
 
-![Sample Run](5078775/docs/15495098/images/22552479)
+![Sample Run](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_1.png)
 
 Leave all parameters except `Email_address` blank for email regarding all the obsolete workstations
 
-![Sample Run](5078775/docs/15495098/images/22552502)
+![Sample Run](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_2.png)
 
 Set `Server` value to `1` for email regarding all the obsolete workstations as well as servers
 
-![Sample Run](5078775/docs/15495098/images/22552524)
+![Sample Run](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_3.png)
 
 **Note: Since this is a client script, it must be executed on the client.**
 
@@ -52,7 +52,7 @@ Set `Server` value to `1` for email regarding all the obsolete workstations as w
 |-----------------------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AutoRetireThreshold_Days    | 180     | True     | Threshold days to retire the offline computers. The default is 90. It can either be set during the first execution of the script or manually from the dashboard.                                                                 |
 
-![System Properties](5078775/docs/15495098/images/22550917)
+![System Properties](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_4.png)
 
 ### Extra Data Fields
 
@@ -68,25 +68,25 @@ Set `Server` value to `1` for email regarding all the obsolete workstations as w
 
 Client-Level EDF: "AutoRetire Threshold Days"
 
-![Client-Level EDF](5078775/docs/15495098/images/22550907)
+![Client-Level EDF](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_5.png)
 
 Location-Level EDF: "AutoRetireThreshold_Days"
 
-![Location-Level EDF](5078775/docs/15495098/images/22550909)
+![Location-Level EDF](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_6.png)
 
 **Following EDFs can be used to exclude a client/location/computer from retirement:**
 
 Client-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Client-Level EDF](5078775/docs/15495098/images/22550902)
+![Client-Level EDF](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_7.png)
 
 Location-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Location-Level EDF](5078775/docs/15495098/images/22550903)
+![Location-Level EDF](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_8.png)
 
 Computer-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Computer-Level EDF](5078775/docs/15495098/images/22550904)
+![Computer-Level EDF](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_9.png)
 
 ## Implementation
 
@@ -94,7 +94,7 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
 
 2. Reload the System Cache
 
-   ![Reload Cache](5078775/docs/15495098/images/22755612)
+   ![Reload Cache](..\..\..\static\img\Offline-Agents---Auto-Retire---Pre-Audit-No-Action,Email\image_10.png)
 
 3. Configure the script as follows:
 
@@ -102,4 +102,5 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
    - Debug the script against any client with the `Set_Environment` parameter set to 1 and `Set_Global_Threshold_Days` set to the number of days for global property `AutoRetireThreshold_Days`.
      - Validate the system property was set correctly by navigating to 'System → Configuration → Dashboard → Config → Configurations → Properties' → Check the property 'AutoRetireThreshold_Days'
    - Run the script against the desired client
+
 

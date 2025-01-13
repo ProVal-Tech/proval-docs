@@ -68,3 +68,4 @@ Location of output for log, result, and error files.
     .\Protect-ScreenLock-error.txt
     .\gpresult_computer.html
     .\gpresult_user.html
+

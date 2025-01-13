@@ -34,6 +34,7 @@ This solution ensures the SonicWall NetExtender gets installed/updated to the la
 4. Apply the △ Custom - Autofix - SonicWall NetExtender - Install/Update alert template to the [SonicWall NetExtender Deployment](https://proval.itglue.com/DOC-5532599-13399427) monitor.
 5. Apply the △ Custom - Autofix - SonicWall NetExtender - Latest Version Collector alert template to the [SonicWall NetExtender - Latest Version Detection](https://proval.itglue.com/DOC-5078775-13813876) monitor.
 6. Run the [SonicWall NetExtender - Latest Version [Winget]](https://proval.itglue.com/DOC-5078775-13816835) Script and ensure the script populates the System Property  
-   ![Image](5078775/docs/12674331/images/19948547)
+   ![Image](..\..\static\img\SonicWall-NetExtender---InstallUpdate\image_1.png)
 7. Enable the deployment monitor.
+
 

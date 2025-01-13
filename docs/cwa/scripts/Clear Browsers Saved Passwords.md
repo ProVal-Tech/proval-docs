@@ -22,13 +22,14 @@ The script is designed to remove saved passwords from the following browsers:
 
 ## Sample Run
 
-![Sample Run 1](5078775/docs/16050255/images/23902915)
+![Sample Run 1](..\..\..\static\img\Clear-Browsers-Saved-Passwords\image_1.png)
 
 Run with a parameter set to 1, to wipe out the Microsoft Edge Wallet passwords and disable the cloud sync of the Edge Wallet so that passwords don't sync back from the cloud.
 
-![Sample Run 2](5078775/docs/16050255/images/23902945)
+![Sample Run 2](..\..\..\static\img\Clear-Browsers-Saved-Passwords\image_2.png)
 
 ## Output
 
 - Script Log
+
 

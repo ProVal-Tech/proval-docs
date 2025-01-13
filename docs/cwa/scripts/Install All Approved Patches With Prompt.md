@@ -22,7 +22,7 @@ While the script can be executed from Automate, it is recommended to utilize it 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11257931/images/22636457)
+![Sample Run](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_1.png)
 
 ## Dependencies
 
@@ -33,42 +33,43 @@ While the script can be executed from Automate, it is recommended to utilize it 
 #### Pre-Patch Installation Prompt
 
 **CASE 1:** If the approved production patches are available on the computer to install  
-![Case 1](5078775/docs/11257931/images/22636967)
+![Case 1](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_2.png)
 
 **CASE 2:** If there are no patches available to install. The script will exit if there are no approved production patches are missing on the computer.  
-![Case 2](5078775/docs/11257931/images/22637012)
+![Case 2](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_3.png)
 
 #### Post Patch Reboot Confirmation
 
 **First Prompt:**  
-![First Prompt](5078775/docs/11257931/images/26092057)
+![First Prompt](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_4.png)
 
 **Second Prompt:** This prompt will only be sent if the user fails to select a convenient time in the first prompt between the next 48 hours to restart the computer.  
-![Second Prompt](5078775/docs/11257931/images/26092062)
+![Second Prompt](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_5.png)
 
 **Final Prompt:** The script will be scheduled to restart the computer after 48 hours if the user fails to select a convenient time between the next 48 hours to restart their computer.  
-![Final Prompt](5078775/docs/11257931/images/26092063)
+![Final Prompt](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_6.png)
 
 #### Pre Reboot Prompt
 
 This prompt will be sent solely if an automatic restart is scheduled after 48 hours.  
-![Pre Reboot Prompt](5078775/docs/11257931/images/22637214)
+![Pre Reboot Prompt](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_7.png)
 
 ## Post Reboot Prompt
 
 **CASE 1:** If the patch job was successful and there are no approved production patches left to install.  
-![Post Reboot Case 1](5078775/docs/11257931/images/22637266)
+![Post Reboot Case 1](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_8.png)
 
 **CASE 2:** If Automate fails to install any patch(es).  
-![Post Reboot Case 2](5078775/docs/11257931/images/22637285)
+![Post Reboot Case 2](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_9.png)
 
 #### Windows Reboot Schedule Notification
 
 A pop-up message will appear at the bottom right corner of the screen to remind the end user of the scheduled reboot.  
-![Windows Reboot Schedule Notification](5078775/docs/11257931/images/22637315)
+![Windows Reboot Schedule Notification](..\..\..\static\img\Install-All-Approved-Patches-With-Prompt\image_10.png)
 
 ## Output
 
 - Script Log
 - Prompt on End Machine
+
 

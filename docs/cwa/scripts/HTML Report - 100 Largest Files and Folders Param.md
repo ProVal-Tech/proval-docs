@@ -14,7 +14,7 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12788916/images/18154998)
+![Sample Run](..\..\..\static\img\HTML-Report---100-Largest-Files-and-Folders-Param\image_1.png)
 
 ## Variables
 
@@ -42,10 +42,11 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 
 ## Sample Email
 
-![Sample Email](5078775/docs/12788916/images/18155005)
+![Sample Email](..\..\..\static\img\HTML-Report---100-Largest-Files-and-Folders-Param\image_2.png)
 
 ## Sample Report
 
-![Sample Report](5078775/docs/12788916/images/18973940)
+![Sample Report](..\..\..\static\img\HTML-Report---100-Largest-Files-and-Folders-Param\image_3.png)
+
 
 

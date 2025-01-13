@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8066335/images/11360087)
+![Sample Run](..\..\..\static\img\Google-Chrome---Set-Homepage\image_1.png)
 
 ## Dependencies
 
@@ -45,4 +45,5 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
 

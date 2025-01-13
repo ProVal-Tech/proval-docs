@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156785/images/11353830)
+![Sample Run](..\..\..\static\img\LTCache---Delete-All-Files\image_1.png)
 
 ## Variables
 
@@ -33,5 +33,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 

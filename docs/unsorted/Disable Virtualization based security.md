@@ -1,0 +1,36 @@
+---
+id: 'ps-disable-windows-defender-credential-guard'
+title: 'Disable Windows Defender Credential Guard'
+title_meta: 'Disable Windows Defender Credential Guard'
+keywords: ['registry', 'windows', 'defender', 'credential', 'guard', 'reboot']
+description: 'This document provides a script to disable Windows Defender Credential Guard by modifying the registry settings as outlined in a referenced article. It includes a sample run, dependencies, and variable descriptions, ensuring a comprehensive understanding of the script operation and its output.'
+tags: ['configuration', 'windows', 'reboot', 'security']
+draft: true
+unlisted: true
+---
+## Summary
+
+This script will set the registry based on the below article:  
+[https://windowsreport.com/disable-windows-defender-credential-guard-windows-11/](https://windowsreport.com/disable-windows-defender-credential-guard-windows-11/).  
+Once the registry is set, it will set the machine to reboot using the prompter solution.
+
+## Sample Run
+
+![Sample Run](..\..\static\img\Disable-Virtualization-based-security\image_1.png)
+
+## Dependencies
+
+[EPM - Windows Configuration - Solution - User Prompt for Reboot](https://proval.itglue.com/DOC-5078775-9088563)
+
+## Variables
+
+| Name  | Description                                    |
+|-------|------------------------------------------------|
+| psout | It contains the status of the registry set or not |
+
+## Output
+
+- Script log
+
+
+

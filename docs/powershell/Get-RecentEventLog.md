@@ -66,3 +66,4 @@ Get events from the Windows event log that have triggered from the last run of t
 | `Seconds`      |       | False    |               | Int    | Override the registry date check and instead return entries prior to the specified number of seconds. |
 ## Output
     System.Diagnostics.Eventing.Reader.EventLogRecord
+

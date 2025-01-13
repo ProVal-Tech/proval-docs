@@ -25,3 +25,4 @@ This Dataview populates information about the [Denied Patches](https://proval.it
 | Title  | Title of the denied patch.       |
 | Reason | Reason behind denying the patch.  |
 
+

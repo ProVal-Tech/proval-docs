@@ -25,3 +25,4 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](https://proval.itglue
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
 
 
+

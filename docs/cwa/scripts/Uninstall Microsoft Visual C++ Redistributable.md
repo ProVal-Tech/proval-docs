@@ -14,7 +14,7 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/15886925/images/23124491)
+![Sample Run](..\..\..\static\img\Uninstall-Microsoft-Visual-C++-Redistributable\image_1.png)
 
 ## Variables
 
@@ -33,4 +33,5 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 ## Output
 
 - Script Log
+
 

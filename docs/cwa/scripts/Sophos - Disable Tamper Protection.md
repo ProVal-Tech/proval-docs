@@ -16,7 +16,7 @@ Time Saved by Automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8058691/images/11217466)
+![Sample Run](..\..\..\static\img\Sophos---Disable-Tamper-Protection\image_1.png)
 
 ## Dependencies
 
@@ -34,5 +34,6 @@ The script will first verify that the target device has Sophos installed. The sc
 ## Output
 
 Script log messages only.
+
 
 

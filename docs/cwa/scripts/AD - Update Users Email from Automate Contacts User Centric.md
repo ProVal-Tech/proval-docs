@@ -16,7 +16,7 @@ This script is designed to update AD users where their email addresses have not 
 ## Sample Run
 
 **Target:** Domain Controllers  
-![Sample Run](5078775/docs/7751072/images/10796754)
+![Sample Run](..\..\..\static\img\AD---Update-Users-Email-from-Automate-Contacts-User-Centric\image_1.png)
 
 ## Dependencies
 
@@ -54,4 +54,5 @@ The script will then verify if there were any errors during the PowerShell run; 
 ## Output
 
 Script log messages only.
+
 

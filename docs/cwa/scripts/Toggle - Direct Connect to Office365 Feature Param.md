@@ -28,7 +28,7 @@ Please make sure the "ExcludeExplicitO365Endpoint" parameter has the right value
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10852119/images/15102582)
+![Sample Run](..\..\..\static\img\Toggle---Direct-Connect-to-Office365-Feature-Param\image_1.png)
 
 ## Variables
 
@@ -51,5 +51,6 @@ Please make sure the "ExcludeExplicitO365Endpoint" parameter has the right value
 ## Output
 
 Script Log
+
 
 

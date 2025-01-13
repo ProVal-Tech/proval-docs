@@ -1,0 +1,39 @@
+---
+id: 'rmm-machines-with-huntress-agent'
+title: 'Machines With Huntress Agent'
+title_meta: 'Machines With Huntress Agent - Dynamic Group Configuration'
+keywords: ['huntress', 'windows', 'dynamic', 'group', 'criteria']
+description: 'This document outlines the steps to create a dynamic group that filters Windows machines with the Huntress Agent installed. It includes criteria for software installation and group management instructions.'
+tags: ['windows', 'software', 'configuration', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+This group filters out windows machines with huntress agent installed on them.
+
+## Summary
+
+![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_1.png)
+
+**Group Type:** Dynamic  
+**Group Name:** Machines With Huntress Agent  
+**Description:** Machines with Huntress Agent installed on them  
+
+## Criteria
+
+![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_2.png)
+
+- Installed Software contains any of `Huntress Agent`
+- OS Product Contains of `Windows`
+- Available Should be True.
+
+## Group
+
+Once adding the above criteria, click the Save button to Save the Group.  
+![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_3.png)
+
+![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_4.png)
+
+
+

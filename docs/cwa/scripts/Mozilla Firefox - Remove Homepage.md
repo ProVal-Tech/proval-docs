@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8050069/images/11313622)
+![Sample Run](..\..\..\static\img\Mozilla-Firefox---Remove-Homepage\image_1.png)
 
 ## Dependencies
 
@@ -37,4 +37,5 @@ The script will scan for and remove all homepage policies from the Firefox polic
 
 - Script log
 - Local file on computer
+
 

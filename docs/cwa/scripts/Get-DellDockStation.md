@@ -34,7 +34,7 @@ Windows 10, Windows 11 Workstations
 This script is designed to be run as an autofix with the [Internal Monitor - Execute Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073356).  
 
 Also, it can be run manually  
-![Sample Run](5078775/docs/15073374/images/21811798)
+![Sample Run](..\..\..\static\img\Get-DellDockStation\image_1.png)
 
 ## Output
 
@@ -46,5 +46,6 @@ Also, it can be run manually
 Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073356) monitor set to enable ticketing for `Dell Command | Monitor` installation failure.  
 
 **Subject:** Dell Command | Monitor Installation Failed  
-![Ticket Example](5078775/docs/15073374/images/23039890)
+![Ticket Example](..\..\..\static\img\Get-DellDockStation\image_2.png)
+
 

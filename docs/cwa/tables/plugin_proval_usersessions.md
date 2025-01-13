@@ -30,3 +30,4 @@ Stores data about active user sessions on Windows machines.
 | Timestamp     | DATETIME | The date and time that the audit was run.        |
 
 
+

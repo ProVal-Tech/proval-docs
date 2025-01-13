@@ -27,3 +27,4 @@ This solution is used to check the Azure AD status of a machine. An agent proced
 - Agent Procedure needs to be run once these are created
 
 
+

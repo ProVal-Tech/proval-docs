@@ -14,11 +14,11 @@ This script will log off a user, users, or all users.
 
 ## Sample Run
 
-![Sample Run 1](5078775/docs/11275682/images/16137459)
+![Sample Run 1](..\..\..\static\img\Users---Logoff\image_1.png)
 
 Setting the User parameter to this will log off the user named 'calve' and the user named 'test'.
 
-![Sample Run 2](5078775/docs/11275682/images/16137489)
+![Sample Run 2](..\..\..\static\img\Users---Logoff\image_2.png)
 
 Setting the user parameter to All will log off all users.
 
@@ -32,5 +32,6 @@ Setting the user parameter to All will log off all users.
 
 Determine the scope  
 Log off the desired user or users.
+
 
 

@@ -25,3 +25,4 @@ Detailed information of the patches that are auto approved or denied or ignored 
 | Category Approval Status   | The auto policy mentioned in the next column is disabled or enabled. Like Approval is enabled or disabled, deny is enabled or disabled or is ignored or nothing set against that category for that Approval Policy. |
 | Auto Policy               | The policy that is applied on that Patch Category for that Approval Policy. Like Approved, Denied or Ignored.       |
 
+

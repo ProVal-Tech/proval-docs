@@ -36,3 +36,4 @@ Installs the ublock-origin extension to firefox and removes the rights to remove
 ## Output
 
     .\Register-FirefoxExtension-log.txt
+

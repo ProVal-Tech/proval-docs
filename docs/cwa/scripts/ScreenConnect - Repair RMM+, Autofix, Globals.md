@@ -19,7 +19,7 @@ Additionally, the script will send an email to [alerts@provaltech.com](mailto:al
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8216334/images/21463723)
+![Sample Run](..\..\..\static\img\ScreenConnect---Repair-RMM+,-Autofix,-Globals\image_1.png)
 
 ## Dependencies
 
@@ -73,4 +73,5 @@ Reason: Automate has executed the autofix script 3 times over the last 7 days bu
 Please reinstall the ScreenConnect Client Manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 ```
+
 

@@ -50,3 +50,4 @@ This dataview audit snapshots for virtual machines hosted on the Hyper-V Server.
 | Is Current Snapshot              | Displays whether the snapshot is current or not         |
 
 
+

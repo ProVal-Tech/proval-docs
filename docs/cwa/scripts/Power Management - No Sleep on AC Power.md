@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8216618/images/11440983)
+![Sample Run](..\..\..\static\img\Power-Management---No-Sleep-on-AC-Power\image_1.png)
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ The script will download the EXE file and will execute it.
 ## Output
 
 - Script log
+
 
 

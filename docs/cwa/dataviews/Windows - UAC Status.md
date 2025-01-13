@@ -26,3 +26,4 @@ This dataview helps you audit UAC status on machines with the help of a script @
 | User Account Control   | Displays the status of UAC on machines      |
 
 
+

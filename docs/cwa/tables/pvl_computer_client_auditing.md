@@ -26,3 +26,4 @@ It's a temporary table created by [CWM - Automate - Script - Agents Migration Mo
 | Clientid    | int(8)  | Clientid       |
 | Timestamp   | datetime | Script Run Time |
 
+

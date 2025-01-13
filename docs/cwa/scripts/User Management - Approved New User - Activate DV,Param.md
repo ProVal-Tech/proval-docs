@@ -17,7 +17,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7771978/images/10823207)
+![Sample Run](..\..\..\static\img\User-Management---Approved-New-User---Activate-DV,Param\image_1.png)
 
 ## Dependencies
 
@@ -50,4 +50,5 @@ Ex:
 - Script log
 - Dataview
 - custom table
+
 

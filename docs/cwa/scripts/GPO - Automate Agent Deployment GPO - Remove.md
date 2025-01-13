@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156783/images/11354066)
+![Sample Run](..\..\..\static\img\GPO---Automate-Agent-Deployment-GPO---Remove\image_1.png)
 
 ## Process
 
@@ -25,4 +25,5 @@ Runs the appropriate PowerShell to remove the "Automate Agent Deployment" GPO fr
 ## Output
 
 - Script log
+
 

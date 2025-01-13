@@ -1,0 +1,35 @@
+---
+id: 'ps-install-windows-patch'
+title: 'Install Windows Patch Script'
+title_meta: 'Install Windows Patch Script for Efficient Patch Management'
+keywords: ['install', 'patch', 'windows', 'kbnumber', 'reboot']
+description: 'This document provides an overview of a script designed to install specified patches on Windows machines, detailing parameters for rebooting, sample runs, and expected output logs.'
+tags: ['windows', 'update', 'configuration', 'software', 'installation', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+The purpose of this script is to install the desired patch on the windows machines.
+
+## Sample Run
+
+Leave the Reboot parameter blank or set it to '0' to prevent the machine from rebooting.  
+![Image](..\..\..\static\img\Universal-KB-Installer\image_1.png)  
+
+Set Reboot Parameter to '1' to reboot the machine  
+
+![Image](..\..\..\static\img\Universal-KB-Installer\image_2.png)  
+
+#### User Parameters
+
+| Name     | Example   | Required | Description                                                                                   |
+|----------|-----------|----------|-----------------------------------------------------------------------------------------------|
+| KBNumber | 5044285   | True     | KB ID Number of the patch that needs to be installed.                                        |
+| Reboot   | 0         | False    | Set this value to '1' to reboot the machine after patch installation during script execution. Leave it blank or set it to '0' to prevent the machine from rebooting. |
+
+## Output
+
+- Script Logs
+
+

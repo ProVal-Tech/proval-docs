@@ -34,3 +34,4 @@ These tables are filled by the Events `ProvalUptime` and `ProvalUptimeDays`. The
 | PercentOnline  | DOUBLE   | The percentage of time that the agent was online on the specified SampleDate. |
 | SampleDate    | DATE     | The date of the measurements used to calculate the PercentOnline. |
 
+

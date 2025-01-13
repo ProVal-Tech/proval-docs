@@ -35,3 +35,4 @@ Set Custom Display Scaling for Windows Machines
 ## Output
     .\Set-DisplayScaling-log.txt
     .\Set-DisplayScaling-Error.txt
+

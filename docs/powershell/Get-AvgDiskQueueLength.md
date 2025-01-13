@@ -55,3 +55,4 @@ This example runs the script to calculate the average of the last 5 samples of t
 ## Output
     .\Get-AvgDiskQueueLength-log.txt
     .\Get-AvgDiskQueueLength-Error.txt
+

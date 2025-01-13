@@ -19,3 +19,4 @@ This role contains the PowerShell version in its serial key.
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference =  'SilentlyContinue'; Write-Host \"$(Get-host).Version.Major).$((Get-Host).Version.Minor).$((Get-Host).version.Build).$((Get-Host).Version.Revision)\" -NoNewLine"@%}` | Exist      | PowerShell Version in SerialKey | Windows        |
 
 
+

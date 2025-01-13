@@ -32,3 +32,4 @@ Will ensure that a new version of .Net is installed and disable the old versions
 
     .\Disable-DotNet3-log.txt
     .\Disable-DotNet3-error.txt
+

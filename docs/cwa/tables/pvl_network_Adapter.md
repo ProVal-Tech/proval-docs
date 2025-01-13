@@ -47,3 +47,4 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | SettingID            | varchar(64)   | interface id of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
 
+

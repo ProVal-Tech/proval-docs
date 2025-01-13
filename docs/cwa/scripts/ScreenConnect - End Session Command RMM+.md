@@ -18,7 +18,7 @@ This script will attempt to end a matching session in the CW Control portal usin
 
 **Target:** Any machine with CW Control installed
 
-![Sample Run](5078775/docs/7721259/images/10833501)
+![Sample Run](..\..\..\static\img\ScreenConnect---End-Session-Command-RMM+\image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ This script will populate several variables required for RMM+ to function proper
 ## Output
 
 **Script log messages only**
+
 
 

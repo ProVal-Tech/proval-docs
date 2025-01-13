@@ -34,3 +34,4 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 | vulnerable_cve_2023_5217     | varchar(32) | Vulnerable_CVE_2023_5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
 | datetime                     | datetime    | Data Collection Time from the endpoint                                                          |
 
+

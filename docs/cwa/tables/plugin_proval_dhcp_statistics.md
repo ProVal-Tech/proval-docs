@@ -37,3 +37,4 @@ Stores information about DHCP scopes on the target machine gathered by the scrip
 | PercentUsed       | INT     | The percentage of used IP addresses in the DHCP scope.  |
 
 
+

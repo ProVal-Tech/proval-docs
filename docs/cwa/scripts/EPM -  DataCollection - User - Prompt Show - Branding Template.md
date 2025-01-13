@@ -16,7 +16,7 @@ This Automate Script is intended to set branding standards for a client. Its onl
 
 This Script is a Branding Script for the User Prompt - Show script and should never be run manually; it should only be called from other scripts and before running the proval/Windows/User Prompt - Show script. Running this script manually will result in nothing happening at all. It simply sets variables to the desired values. To use this script, copy and paste the lines in the Else section of this script into the desired script, enable the desired functions and set their values, and enable the two run script lines.
 
-![Sample Run Image](5078775/docs/10152014/images/14090257)
+![Sample Run Image](..\..\..\static\img\EPM----DataCollection---User---Prompt-Show---Branding-Template\image_1.png)
 
 ## Dependencies
 
@@ -49,7 +49,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 These descriptions are present in the script for ease of use:
 
-![Variable Descriptions](5078775/docs/10152014/images/14090343)
+![Variable Descriptions](..\..\..\static\img\EPM----DataCollection---User---Prompt-Show---Branding-Template\image_2.png)
 
 ## Process
 
@@ -58,4 +58,5 @@ This script simply assigns values to variables for use in the User Prompt - Show
 ## Output
 
 This script outputs standard variable settings to the calling script to be used by User Prompt - Show to produce a standard branded pop-up theme.
+
 

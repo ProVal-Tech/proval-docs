@@ -30,5 +30,6 @@ This script is a function script called from **[CWM - Automate - Solution - Auto
 
 This script will add the following section to the log variable:
 
-![Output](5078775/docs/11639125/images/16259121)
+![Output](..\..\..\static\img\Automate-Database-Maintenance---Drives\image_1.png)
+
 

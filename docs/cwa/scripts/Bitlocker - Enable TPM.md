@@ -14,7 +14,7 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11410958/images/15913687)
+![Sample Run](..\..\..\static\img\Bitlocker---Enable-TPM\image_1.png)
 
 ## Dependencies
 
@@ -35,4 +35,5 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 ## Output
 
 - Script Logs
+
 

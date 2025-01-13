@@ -30,3 +30,4 @@ Retrieves information about available power plans, subgroups, and power settings
 
 ## Output
 Get-PowerPlansInfo-log.txt
+

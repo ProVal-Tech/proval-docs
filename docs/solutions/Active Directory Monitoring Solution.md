@@ -83,8 +83,8 @@ This article encompasses multiple components and contents. Please import and imp
 ## Implementation (Plugin)
 
 1. The solutions presented in this section rely on the functionality provided by the **`Active Directory`** plugin. Therefore, it is imperative to verify that both the **`Active Directory`** and **`Active Directory Remote`** plugins are correctly installed and operational within the environment.
-   ![Image 1](5078775/docs/17248608/images/26306733)
-   ![Image 2](5078775/docs/17248608/images/26306734)
+   ![Image 1](..\..\static\img\Active-Directory-Monitoring-Solution\image_1.png)
+   ![Image 2](..\..\static\img\Active-Directory-Monitoring-Solution\image_2.png)
 
 2. Ensure that the RMM+ Plugin is correctly configured and operational within the environment, as this solution relies on the proper configuration of the [CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217).
 
@@ -123,7 +123,7 @@ This article encompasses multiple components and contents. Please import and imp
    - [Active Directory Reporting SQL Import Attachment](https://proval.itglue.com/DOC-5078775-15079008)
 
 4. Import the file using System → General → Import → SQL File (The SQL file is too large for a remote monitor).
-   ![Image](5078775/docs/17248608/images/27760707)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_3.png)
    - Doing this will configure the following reports:
      - [Report - Active Directory User Assessment](https://proval.itglue.com/DOC-5078775-9493611)
      - [Report - Active Directory User Groups - Detail](https://proval.itglue.com/DOC-5078775-9570449)
@@ -138,7 +138,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Alert Template - **`△ Custom - Autofix - AD Plugin Sync Out of Date`**
 
 2. Reload the system cache.
-   ![Image](5078775/docs/17248608/images/27674819)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_4.png)
 
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Active Directory - Sync Out of Date](https://proval.itglue.com/DOC-5078775-10093123).
@@ -150,7 +150,7 @@ This article encompasses multiple components and contents. Please import and imp
    - [Internal Monitor - Active Directory - Enabled Test Accounts](https://proval.itglue.com/DOC-5078775-7936283)
 
 2. Reload the System Cache:
-   ![Image](5078775/docs/17248608/images/27675022)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_5.png)
 
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Active Directory - Enabled Test Accounts](https://proval.itglue.com/DOC-5078775-7936283).
@@ -164,14 +164,14 @@ This article encompasses multiple components and contents. Please import and imp
    - [Internal Monitor - Domain Computers Missing Automate Agent](https://proval.itglue.com/DOC-5078775-15186683)
 
 2. Reload the System Cache:
-   ![Image](5078775/docs/17248608/images/27675022)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_5.png)
 
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Domain Computers Missing Automate Agent](https://proval.itglue.com/DOC-5078775-15186683).
      - Assign the **`△ Custom - Ticket Creation - Client`** alert template.
      - If the partner requires an Email Creation - Client alert template, this will need to get built by development.
 
-   ![Image](5078775/docs/17248608/images/26306744)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_6.png)
 
 ### ADPluginUser - Create
 
@@ -182,9 +182,9 @@ This article encompasses multiple components and contents. Please import and imp
 
 2. Run the script against any online computer with **`Set Environment`** parameter set to **`1`**.
    - Set the required values for the rest of the user parameters. (This should be specified by the consultant).
-   ![Image](5078775/docs/17248608/images/27758498)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_7.png)
    - *Note: There are default values for all the main parameters (Shown Below).*
-   ![Image](5078775/docs/17248608/images/27758486)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_8.png)
 
 3. Validate the system property values within the System Dashboard.
 
@@ -194,17 +194,17 @@ This article encompasses multiple components and contents. Please import and imp
    - [Internal Monitor - Active Directory - User Last Logon > X Days](https://proval.itglue.com/DOC-5078775-10813367)
 
 2. Reload the System Cache:
-   ![Image](5078775/docs/17248608/images/27675022)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_5.png)
 
 3. Edit the monitor with the last login value specified by the consultant; if this has not been specified then reach out to the consultant to clarify:
-   ![Image](5078775/docs/17248608/images/27820911)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_9.png)
 
 4. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Active Directory - User Last Logon > X Days](https://proval.itglue.com/DOC-5078775-10813367).
      - Assign the **`△ Custom - Ticket Creation - Computer`** alert template.
      - OR
      - Assign the **`△ Custom - Email Creation - Computer`** alert template.
-   ![Image](5078775/docs/17248608/images/26306743)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_10.png)
 
 ## Implementation (No Plugin)
 
@@ -222,11 +222,11 @@ The solutions presented in this section do not rely on any plugin.
      - *Note: This is optional. Only import this if specifically requested.*
 
 2. Reload the System Cache:
-   ![Image](5078775/docs/17248608/images/27675022)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_5.png)
 
 3. Schedule the [Script - Group Policy - Audit](https://proval.itglue.com/DOC-5078775-15193954) to run once per day against the domain controllers group.
-   ![Image](5078775/docs/17248608/images/27820822)
-   ![Image](5078775/docs/17248608/images/27820839)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_11.png)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_12.png)
 
 4. **Only perform this step if requested by the consultant:**
    - Navigate to Automation → Monitors → Internal Monitors and configure the following:
@@ -234,7 +234,7 @@ The solutions presented in this section do not rely on any plugin.
        - Assign the **`△ Custom - Ticket Creation - Computer`** alert template.
        - OR
        - Assign the **`△ Custom - Email Creation - Computer`** alert template.
-   ![Image](5078775/docs/17248608/images/26306746)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_13.png)
 
 ### Enable AD Recycle Bin
 
@@ -247,7 +247,7 @@ The solutions presented in this section do not rely on any plugin.
 3. Import the [CWM - Automate - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146) using the following instructions outlined here: [Import - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-14764163).
 
 4. Reload the System Cache:
-   ![Image](5078775/docs/17248608/images/27675022)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_5.png)
 
 5. Locate the [EPM - User Management - Remote Monitor - Reset AD Users Password Age](https://proval.itglue.com/DOC-5078775-13664978) remote monitor.
    - By opening the **`Domain Controllers`** group.
@@ -258,7 +258,7 @@ The solutions presented in this section do not rely on any plugin.
 1. Import the [Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646049) using the following instructions outlined here: [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646252).
 
 2. Reload the System Cache:
-   ![Image](5078775/docs/17248608/images/27675022)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_5.png)
 
 3. Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646049) remote monitor.
    - By opening the **`Domain Controllers`** group.
@@ -275,34 +275,34 @@ The solutions presented in this section do not rely on any plugin.
      ```
 
 2. Open the **`Server Status`** tool by navigating to **`Help`** → **`Server Status`**.
-   ![Image](5078775/docs/17248608/images/27821112)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_14.png)
 
 3. Click the **`Do Group Refresh`** button to refresh and apply the changes made.
-   ![Image](5078775/docs/17248608/images/27821115)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_15.png)
 
 4. Click **`OK`** to the popup message and wait for a minute to allow the changes to take effect.
-   ![Image](5078775/docs/17248608/images/27821117)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_16.png)
 
 5. Import the following script from the ProSync Plugin:
    - [Script - New Domain Admin Monitor - Create](https://proval.itglue.com/5078775/docs/16548733)
 
 6. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the **`Set_Environment`** parameter set to **`1`**. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-   ![Image](5078775/docs/17248608/images/27821123)
-   ![Image](5078775/docs/17248608/images/27821124)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_17.png)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_18.png)
 
 7. Reload System Cache.
-   ![Image](5078775/docs/17248608/images/27821127)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_19.png)
 
 8. Configure System Properties and EDFs.
    - Navigate to the **System Dashboard → Config → Configurations → Properties**.
    - Find the properties beginning with **`NDA_Monitoring`**.
-   ![Image](5078775/docs/17248608/images/27821130)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_20.png)
      - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations. You can find that [here](https://proval.itglue.com/5078775/docs/16548733).
 
 9. Schedule the Script.
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.
-   ![Image](5078775/docs/17248608/images/27821134)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_21.png)
 
 ### Domain Admin Lockout
 
@@ -310,9 +310,10 @@ The solutions presented in this section do not rely on any plugin.
    - [Implement - Remote Monitor - Domain Admin Account Lockout](https://proval.itglue.com/DOC-5078775-16951789).
 
 2. **_If the partner does not have any PSA integration_**, then navigate to the Domain Controllers group:
-   ![Image](5078775/docs/17248608/images/27821649)
+   ![Image](..\..\static\img\Active-Directory-Monitoring-Solution\image_22.png)
    - Then adjust the alert template for this monitor to be:
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
+
 

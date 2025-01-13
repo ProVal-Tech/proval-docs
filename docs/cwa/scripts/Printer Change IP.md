@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7819331/images/13144770)
+![Sample Run](..\..\..\static\img\Printer-Change-IP\image_1.png)
 
 ## Variables
 
@@ -40,5 +40,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 

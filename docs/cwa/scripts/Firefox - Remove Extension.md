@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8105008/images/11313600)
+![Sample Run](..\..\..\static\img\Firefox---Remove-Extension\image_1.png)
 
 ## Dependencies
 
@@ -54,4 +54,5 @@ The script then checks if a `policies.json` file already exists in the distribut
 
 - Script log
 - Local file on computer
+
 

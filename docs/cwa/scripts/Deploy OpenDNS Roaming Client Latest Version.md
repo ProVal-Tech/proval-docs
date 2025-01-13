@@ -18,19 +18,19 @@ The script will push an update to the windows device if an out-of-date version i
 
 - Set up the client EDF values as necessary per client.
 
-![Image](5078775/docs/11617616/images/16225177)
+![Image](..\..\..\static\img\Deploy-OpenDNS-Roaming-Client-Latest-Version\image_1.png)
 
 - Set any location level exclusions here.
 
-![Image](5078775/docs/11617616/images/16225235)
+![Image](..\..\..\static\img\Deploy-OpenDNS-Roaming-Client-Latest-Version\image_2.png)
 
 - Set any computer level exclusions here.
 
-![Image](5078775/docs/11617616/images/16225291)
+![Image](..\..\..\static\img\Deploy-OpenDNS-Roaming-Client-Latest-Version\image_3.png)
 
 - Import and run the new script.
 
-![Image](5078775/docs/11617616/images/16225302)
+![Image](..\..\..\static\img\Deploy-OpenDNS-Roaming-Client-Latest-Version\image_4.png)
 
 ## Dependencies
 
@@ -55,4 +55,5 @@ The script will push an update to the windows device if an out-of-date version i
 | ServiceloopCounter       | Variable used to loop for a set amount of time looking for the service to start.                  |
 | FinishStatus             | This variable is used when checking basic powershell for common powershell issues, ie. incorrect version, missing modules etc. |
 | Message                  | Holds the final log message in the event that we finish the install and need to verify.           |
+
 

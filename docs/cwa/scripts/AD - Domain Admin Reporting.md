@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8011207/images/11150680)
+![Sample Run](..\..\..\static\img\AD---Domain-Admin-Reporting\image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Script state
 - Ticket (optionally)
+
 
 

@@ -28,10 +28,10 @@ Action items:
 ## Sample Run
 
 Set up the assigned Encrypted Client Level EDF Values  
-![Sample Run](5078775/docs/11587368/images/16176167)
+![Sample Run](..\..\..\static\img\Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)\image_1.png)
 
 Run the script on the target machine  
-![Run Script](5078775/docs/11587368/images/16176187)
+![Run Script](..\..\..\static\img\Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)\image_2.png)
 
 ## Dependencies
 
@@ -54,5 +54,6 @@ AppID, AppSecret, and Tenant ID EDFs must be set at the client level.
 - If the output does not contain All Devices synced, then the Get-Windowsautopilotinfo.ps1 failed and the script will fail.
 - If the FinishStatus of the script PowerShell Response - All Errors - Check is false, then the check for common environmental errors found a known issue and the script will fail.
 - The script log will hold any error type information.
+
 
 

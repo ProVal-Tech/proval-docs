@@ -28,26 +28,26 @@ To register an application:
 
 1. Go to [https://www.portal.azure.com](https://www.portal.azure.com) and log in with your Azure admin credentials. If you do not have an account, create one at this time.
 2. On the homepage under Azure services, click **App Registrations**.  
-   ![App Registrations](5078775/docs/13958284/images/20306675)
+   ![App Registrations](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_1.png)
 3. Click **New Registration**.  
-   ![New Registration](5078775/docs/13958284/images/20306668)
+   ![New Registration](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_2.png)
 4. Enter a name for the registration.  
-   ![Enter Name](5078775/docs/13958284/images/20306676)
+   ![Enter Name](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_3.png)
 5. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**.  
-   ![Supported Account Types](5078775/docs/13958284/images/20306681)
+   ![Supported Account Types](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_4.png)
 6. Click **Register**. Your application is created and you are redirected to your application page to generate a client secret for this application.
 7. Click **Certificates & secrets**.  
-   ![Certificates & Secrets](5078775/docs/13958284/images/20306686)
+   ![Certificates & Secrets](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_5.png)
 8. Click **New client secret**.
 9. Enter a **Description**.
 10. Select the longest possible duration (currently two years) under **Expires**.
 11. Click **Add**. Your client secret is generated. Copy and save the **Value** (not the Secret ID). You need this code to configure Automate patch installs. The client secret Value is never displayed again after you leave this page. Next, add permissions to your application.  
     **Warning**: Copy and save the Value (not the Secret ID) before proceeding; the Value is never displayed again after you navigate away from this screen.  
-    ![Client Secret Warning](5078775/docs/13958284/images/20306692)
+    ![Client Secret Warning](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_6.png)
 12. Click **API permissions**.  
-    ![API Permissions](5078775/docs/13958284/images/20306696)
+    ![API Permissions](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_7.png)
 13. Click **Add a permission**.  
-    ![Add a Permission](5078775/docs/13958284/images/20306704)
+    ![Add a Permission](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_8.png)
 14. Select **Microsoft Graph**.  
     ![Select Microsoft Graph](https://docs.connectwise.com/@api/deki/files/32459/scn_o365setup_azure_apipermissions_addperimssion_msgraph.png?revision=1)
 15. Click **Application permissions**.
@@ -58,18 +58,18 @@ To register an application:
 20. Remove the default permission `User.Read` (Delegated type), which is not needed.
 21. Click **Add permissions**. A **Preparing content** button displays. Proceed when the button is no longer disabled.
 22. Click **Grant admin consent**. A confirmation window displays.  
-    ![Grant Admin Consent](5078775/docs/13958284/images/20306709)
+    ![Grant Admin Consent](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_9.png)
 23. Click **Accept**. Each permission is granted.  
-    ![Accept Permissions](5078775/docs/13958284/images/20306729)
+    ![Accept Permissions](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_10.png)
 24. Click **Overview** to view your **Application (client) ID** and **Directory (tenant) ID**. Keep this page open as you need to enter this ID to configure the required EDFs in Automate.  
-    ![Overview](5078775/docs/13958284/images/20306733)
+    ![Overview](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_11.png)
 
 ## Sample Run
 
 - The script will generate a report for the clientid `24`. This report will then be dispatched via email to the addresses specified in the user parameter `EmailAddress`. The script will utilize the information provided in these parameters to establish a connection with the Office 365 portal.  
-  ![Sample Run 1](5078775/docs/13958284/images/20106879)
+  ![Sample Run 1](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_12.png)
 - The script will generate a report for the client associated with the computer on which the script is executed. This report will subsequently be emailed to the user who initiated the script. The script will leverage the information stored in the client-level EDFs to establish a connection with the Office 365 portal.  
-  ![Sample Run 2](5078775/docs/13958284/images/20106888)
+  ![Sample Run 2](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_13.png)
 
 ## Global Variables
 
@@ -96,7 +96,7 @@ To register an application:
 | M365 Client Secret  | W/c9zFv622GjDgY+ZaPPFJiO3Z6GpD4R/9a+CT4yGA= | True (Otherwise set the value in the user parameter `Office365_Client_Secret` while running the script.) | Office 365 Client Secret                                                                                          |
 
 These EDFs in the Client-Level EDF section `Office 365 - MFA Status Report`.  
-![Client-Level EDFs](5078775/docs/13958284/images/20285447)
+![Client-Level EDFs](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_14.png)
 
 ## Output
 
@@ -116,11 +116,12 @@ These EDFs in the Client-Level EDF section `Office 365 - MFA Status Report`.
 
 The script can create a ticket for failures. The ticketing feature can be toggled by the script's global parameter `Failure_Tickets`.
 
-![Ticketing](5078775/docs/13958284/images/20341813)
+![Ticketing](..\..\..\static\img\Export-Office-365-users-MFA-Status-Report\image_15.png)
 
 **Ticket Subject:** `Failed to Gather Office 365 Users MFA Report for <Client Name>`
 
 **Ticket Body for configuration error:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations. Set the Office365 ClientID, TenantID, and Client Secret in the Client level EDFs 'Office 365 - ClientID', 'Office 365 - TenantID', and 'Office 365 - Client Secret' respectively for <Client Name>. The EDFs are present in the Client level EDF section 'Office 365 - MFA Status Report'. Alternatively, you can pass the required values in the script's user parameters 'Office365_Client_ID', 'Office365_Tenant_ID', and 'Office365_Client_Secret' respectively while initiating the script.`
 
 **Ticket Body for the script failure:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations.<br>&lt;Error returned by the PowerShell script&gt;`
+
 

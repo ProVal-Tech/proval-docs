@@ -13,7 +13,7 @@ unlisted: false
 This Dataview is the RMM specific display of the client-level breakdown of machines missing a certain amount of patches.
 
 Sample Screenshot:  
-![Sample Screenshot](5078775/docs/11867771/images/16625770)
+![Sample Screenshot](..\..\..\static\img\Dash---Missing-Patch---Count-by-Machines---Client-Filter\image_1.png)
 
 ## Dependencies
 
@@ -29,5 +29,6 @@ Sample Screenshot:
 | os            | Operating System (Server | Workstation)                                                     |
 | Patch Status  | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)         |
 | Machine Count | Number of machines falling under the concerned category/patch status for the client.       |
+
 
 

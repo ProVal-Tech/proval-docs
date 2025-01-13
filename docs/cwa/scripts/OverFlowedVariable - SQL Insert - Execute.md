@@ -37,26 +37,26 @@ This is a function script and should not be run manually.
 
 1. In any script where you expect that a variable overflow is likely.
    1. Add a variable named `JsonFileName`, Set it to the name of the Temporary .Json file you wish to create.
-      ![Image](5078775/docs/10546355/images/14629618)
+      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_1.png)
    2. Add a variable named `SQLStartStatement`, Set it to the SQL Insert Statement from "Insert Into" to "Values".
-      ![Image](5078775/docs/10546355/images/14629659)
+      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_2.png)
       Note the space between "Values" and the trailing quotation.
    3. Add a variable named `SQLTailString`, set it to the SQL Insert Statement from "On Duplicate" to the end of the string.
-      ![Image](5078775/docs/10546355/images/14629743)
+      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_3.png)
       Note the space between the leading quotation and "ON".
    4. Add a variable named `DataPointNames` and set it to a comma separated list of the Individual saved object Names.
-      ![Image](5078775/docs/10546355/images/14629796)
+      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_4.png)
       You will use these here, the notice the similar naming in the class.
-      ![Image](5078775/docs/10546355/images/14629851)
+      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_5.png)
    5. Modify the PowerShell script and store results in : `@psout@`
       1. Create a class
-         ![Image](5078775/docs/10546355/images/14629851)
+         ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_5.png)
       2. Populate your class with items.
-         ![Image](5078775/docs/10546355/images/14629853)
+         ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_6.png)
       3. Export your data to Json
-         ![Image](5078775/docs/10546355/images/14629858)
+         ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_7.png)
    6. Call the Parse - OverflowedVariable script after the PowerShell run.
-      ![Image](5078775/docs/10546355/images/14629932)
+      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_8.png)
 
 ## Powershell Procedure
 
@@ -79,5 +79,6 @@ This is a function script and should not be run manually.
    - `Totalrowstolimit`
    - `Sqlinsert`
 10. Return that object.
+
 
 

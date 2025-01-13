@@ -14,7 +14,7 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11896863/images/16684607)
+![Sample Run](..\..\..\static\img\Get-Firefox-Browser-Extensions\image_1.png)
 
 ## Dependencies
 
@@ -35,4 +35,5 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 - Script logs
 - Custom Table
 - Dataview
+
 

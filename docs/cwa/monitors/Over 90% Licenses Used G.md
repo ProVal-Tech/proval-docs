@@ -17,10 +17,11 @@ The suggested alert template is Default Create Automate Ticket.
 
 For the on-prem partners, tickets will be generated for the Automate server.  
 For the hosted partners, it will be the minimum computerid of Clientid 1. If Clientid 1 is not the primary client for a hosted partner then the clientid should be updated in the Additional Field:  
-![Image](5078775/docs/8063471/images/16866933)
+![Image](..\..\..\static\img\Over-90%-Licenses-Used-G\image_1.png)
 
 ## Target
 
 The suggested target for the monitor.  
 Global - Should be run without explicitly defined targets.
+
 

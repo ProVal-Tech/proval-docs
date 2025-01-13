@@ -27,3 +27,4 @@ Holds audit data from [CWM - Automate - Script - Remove - PUA](https://proval.it
 | Category            | VARCHAR  | The Category that the pua belongs to.   |
 | DataCollectionTime  | DateTime | Data Collection Time                     |
 
+

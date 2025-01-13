@@ -16,7 +16,7 @@ Time Saved by Automation: # Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8105006/images/11286220)
+![Sample Run](..\..\..\static\img\ShadowControl-Uninstall-v2\image_1.png)
 
 ## Variables
 
@@ -33,4 +33,5 @@ Time Saved by Automation: # Minutes
 ## Output
 
 - Script log
+
 

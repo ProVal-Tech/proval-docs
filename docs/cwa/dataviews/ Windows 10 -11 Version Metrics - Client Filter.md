@@ -14,7 +14,7 @@ This dataview will display the number of Windows 10 and Windows 11 Machines by t
 
 Additional Summarized row per Windows version, eg - Windows 10, Windows 11, Windows 11+10. Please see below for reference:
 
-![Image](5078775/docs/11560609/images/19181320)
+![Image](..\..\..\static\img\-Windows-10--11-Version-Metrics---Client-Filter\image_1.png)
 
 There are three summarized rows in this dataview, one for all windows 10, one for all windows 11, and the final one for the combined number of windows 10 and windows 11 for the client. The red row represents that this ReleaseID is not supported by Microsoft anymore.
 
@@ -49,5 +49,6 @@ There are three summarized rows in this dataview, one for all windows 10, one fo
 | **Client Name**                     | Client Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Clientid**                        | Clientid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Is Supported**                    | Yes/No (Used for Conditional Formatting)                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+
 
 

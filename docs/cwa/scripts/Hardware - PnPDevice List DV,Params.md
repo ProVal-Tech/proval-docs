@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8170654/images/11372959)
+![Sample Run](..\..\..\static\img\Hardware---PnPDevice-List-DV,Params\image_1.png)
 
 ## Dependencies
 
@@ -48,5 +48,6 @@ This script collects information of device name and version as provided for the 
 ## Output
 
 - Dataview
+
 
 

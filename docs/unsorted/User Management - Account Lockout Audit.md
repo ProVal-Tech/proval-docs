@@ -1,0 +1,56 @@
+---
+id: 'ps-audit-locked-account'
+title: 'Audit Locked Account Script'
+title_meta: 'Audit Locked Account Script'
+keywords: ['audit', 'locked', 'account', 'security', 'event', 'log', 'detection', 'management']
+description: 'This document provides details on a script that audits locked accounts, captures relevant data from security event logs, and stores this information for future reference. It includes sample runs, dependencies, variable documentation, and process descriptions.'
+tags: ['security', 'audit', 'windows', 'database', 'notification']
+draft: true
+unlisted: true
+---
+## Summary
+
+This script audits the locked account and stores it in the table.
+
+## Sample Run
+
+![Sample Run](..\..\static\img\User-Management---Account-Lockout-Audit\image_1.png)
+
+## Dependencies
+
+- [Account LockOut Audit](https://proval.itglue.com/DOC-5078775-10218265)
+- [AD Account Lockout Detection](https://proval.itglue.com/DOC-5078775-10220558)
+- [plugin_proval_account_lock](https://proval.itglue.com/DOC-5078775-10220562)
+- [User Management - Account Lock Detail](https://proval.itglue.com/DOC-5078775-10220563)
+
+## Variables
+
+Document the various variables in the script. Delete any section that is not relevant to your script.
+
+| Name       | Description                          |
+|------------|--------------------------------------|
+| LockAudit  | This contains the locked user detail |
+
+#### Global Parameters
+
+| Name         | Example                                             | Required | Description                                         |
+|--------------|-----------------------------------------------------|----------|-----------------------------------------------------|
+| Email        | [abc@xyz.com](mailto:abc@xyz.com); [efg@tty.com](mailto:efg@tty.com); | False    | Email address to send email on Lockout Detail      |
+| Email_Option | 1 or 0                                            | False    | 0 - No Email by default<br>1 - Send email to the email provided |
+
+## Process
+
+This script audits the locked account and stores it in the table based on the security event log 4740. This stores that information in the table for future record and shows it in the dataview.
+
+## Output
+
+The location and method by which this script returns data.
+
+Ex:
+
+- Script log
+- plugin_proval_account_lock
+- Dataview
+
+
+

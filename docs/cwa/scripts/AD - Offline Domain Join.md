@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8165864/images/11377381)
+![Sample Run](..\..\..\static\img\AD---Offline-Domain-Join\image_1.png)
 
 ## Variables
 
@@ -37,5 +37,6 @@ The target is then checked for success in the offline domain join.
 ## Output
 
 - Script log
+
 
 

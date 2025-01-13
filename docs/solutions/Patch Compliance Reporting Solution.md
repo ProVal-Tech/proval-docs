@@ -59,13 +59,13 @@ These reports are dependent on the following items:
 4. Follow the instructions outlined in the [Patch Compliance Reporting SQL Import Attachment](https://proval.itglue.com/5078775/docs/17898232) document to import the reports into report center.
 
 5. Reload the system cache:
-   ![Reload Cache](5078775/docs/17889366/images/27459931)
+   ![Reload Cache](..\..\static\img\Patch-Compliance-Reporting-Solution\image_1.png)
 
 6. After the reports have been imported, the reports can instantly be viewed by going into the Report Center --> Report List --> View the reports mentioned in this document:
-   ![View Reports](5078775/docs/17889366/images/27459992)
+   ![View Reports](..\..\static\img\Patch-Compliance-Reporting-Solution\image_2.png)
    
    To view them from the Right-Click menu (Reports --> Health --> Patch Compliance - CU Audit - XXXX), the control center must be restarted before they become visible. If the partner does not need to access them right away, this is typically not an issue.
-   ![Right-Click Menu](5078775/docs/17889366/images/27460042)
+   ![Right-Click Menu](..\..\static\img\Patch-Compliance-Reporting-Solution\image_3.png)
 
 ## FAQ
 
@@ -100,5 +100,6 @@ A: The cumulative update data gets audited from the [Solution - Latest Installed
 ## Potential Problems
 
 If you see the following error when opening one of the reports, it means at least one of the View's or the custom table is missing and is unable to reference it. If they are all there, verify you have full permissions to the table and Views.
-![Potential Problems](5078775/docs/17889366/images/27437752)
+![Potential Problems](..\..\static\img\Patch-Compliance-Reporting-Solution\image_4.png)
+
 

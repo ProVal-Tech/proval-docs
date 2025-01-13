@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8059674/images/11218727)
+![Sample Run](..\..\..\static\img\Windows---Uninstall-Win-10-Update-Assistant\image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,6 @@ The script will first check and see if the Windows 10 Upgrade Assistant is insta
 ## Output
 
 - Script log messages only
+
 
 

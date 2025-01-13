@@ -14,10 +14,11 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](https
 
 ## Sample Run
 
-![Sample Run](5078775/docs/16162268/images/23629051)
+![Sample Run](..\..\..\static\img\Log4J-Remediation-Residue-Removal\image_1.png)
 
 ## Dependencies
 
 [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631)
+
 
 

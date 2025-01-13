@@ -16,7 +16,7 @@ Time Saved by Automation: 10-20 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7819431/images/10885236)
+![Sample Run](..\..\..\static\img\FTP---Download-File\image_1.png)
 
 ## Variables
 
@@ -43,5 +43,6 @@ Time Saved by Automation: 10-20 Minutes
 ## Output
 
 - Script log
+
 
 

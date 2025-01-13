@@ -18,7 +18,7 @@ This way the monitor which depends on a role to detect machines and perform acti
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8061282/images/11220696)
+![Sample Run](..\..\..\static\img\Role-Definition---Change-Param\image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ An SQL query is executed against the Automate DB to apply or ignore the role on 
 - **Action Missing** - Action not provided in Parameter
   
 - **Exit with Error** - Script failed to execute properly
+
 
 

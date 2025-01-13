@@ -35,7 +35,7 @@ The solution aims to keep the winget supported updated and report the current st
 | △ Custom - Execute Script - Configure Winget Auto Update               | Alert Template | Executes the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script against the computers detected by the [Execute Script - Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973898) internal monitor. |
 
 **Client-Level EDFs:**  
-![Client-Level EDFs](5078775/docs/17973901/images/27743175)
+![Client-Level EDFs](..\..\static\img\Winget-Auto-Update\image_1.png)
 
 `Exclude From Winget Auto Update` checkbox is available at the location and computer-level EDF section `Exclusions` to exclude the location and computer respectively.
 
@@ -55,16 +55,16 @@ The solution aims to keep the winget supported updated and report the current st
    - Alert Template - △ Custom - Execute Script - Configure Winget Auto Update
 
 3. Reload the system cache:  
-   ![Reload Cache](5078775/docs/17973901/images/27584703)
+   ![Reload Cache](..\..\static\img\Winget-Auto-Update\image_2.png)
 
 4. Run the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) table used by the solution.  
-   ![Run Winget App Audit](5078775/docs/17973901/images/27743167)
+   ![Run Winget App Audit](..\..\static\img\Winget-Auto-Update\image_3.png)
 
 5. Run the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script (if imported) with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](https://proval.itglue.com/DOC-5078775-17973964) table and the EDFs used by the solution.  
-   ![Run Configure Winget Auto Update](5078775/docs/17973901/images/27743168)
+   ![Run Configure Winget Auto Update](..\..\static\img\Winget-Auto-Update\image_4.png)
 
 6. Reload the system cache again:  
-   ![Reload Cache](5078775/docs/17973901/images/27584703)
+   ![Reload Cache](..\..\static\img\Winget-Auto-Update\image_2.png)
 
 7. Configure the auditing solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -77,4 +77,5 @@ The solution aims to keep the winget supported updated and report the current st
      - [Internal Monitor - Execute Script - Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973898)  
        - Alert Template - `△ Custom - Execute Script - Configure Winget Auto Update`
        - Right-click and Run Now to start the monitor
+
 

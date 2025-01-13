@@ -17,11 +17,11 @@ Updates Windows 10 to the latest release with the option to either prompt the us
 ### If aborting the reboot, and a user is logged in the user will see the following
 1. A blue box saying the computer will reboot will pop up with a close button, it will last about 5 seconds and vanish.
 
-![image](5078775/docs/9447918/images/13209646)
+![image](..\..\..\static\img\Windows-10---Update\image_1.png)
 
 2. After the blue box vanishes a black notification may appear in the lower right-hand side of the screen saying a user logout was aborted.
 
-![image](5078775/docs/9447918/images/13209649)
+![image](..\..\..\static\img\Windows-10---Update\image_2.png)
 
 ### ***IMPORTANT FUNCTIONALITY NOTE***
 If aborting the reboot, between the time that a user sees the blue banner and the time the computer is restarted **any change made to the C:\windows directory and its subfolders will be LOST after rebooting.**
@@ -33,7 +33,7 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 ## Sample Run
 
-![image](5078775/docs/9447918/images/13049696)
+![image](..\..\..\static\img\Windows-10---Update\image_3.png)
 
 ## Dependencies
 
@@ -52,5 +52,6 @@ Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows
 ## Output
 
 - Script log
+
 
 

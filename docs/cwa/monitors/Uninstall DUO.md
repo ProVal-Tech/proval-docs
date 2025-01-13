@@ -1,0 +1,33 @@
+---
+id: 'rmm-windows-duo-agent-exclusion-monitor'
+title: 'Windows Duo Agent Exclusion Monitor'
+title_meta: 'Windows Duo Agent Exclusion Monitor'
+keywords: ['duo', 'monitor', 'windows', 'exclusion', 'agent']
+description: 'This document outlines the purpose and dependencies of the Windows Duo Agent Exclusion Monitor, which is designed to detect Windows machines with Duo installed and manage exclusions based on client, location, or computer level settings.'
+tags: ['exclusion', 'windows', 'software', 'monitoring', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+The purpose of this monitor is to detect the Windows machines with Duo installed on them and EDF `Duo Agent Exclusion` is opted at the client, location, or computer level.
+
+**Note:** *The same EDFs are also being used in the [SWM - Software Install - DUO Install/Upgrade - Latest Version](https://proval.itglue.com/DOC-5078775-9713528). Selecting these EDFs will exclude the agent from DUO deployment and will also uninstall DUO from the machine if it is already installed.*
+
+## Dependencies
+
+| Name                    | Level    | Type     | Section     | Description                                                                                           |
+|-------------------------|----------|----------|-------------|-------------------------------------------------------------------------------------------------------|
+| DUO Agent Exclusion     | Client   | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the Client.<br>![Image](..\..\..\static\img\Uninstall-DUO\image_1.png) |
+| DUO Agent Exclusion     | Location | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the location.<br>![Image](..\..\..\static\img\Uninstall-DUO\image_2.png) |
+| DUO Agent Exclusion     | Computer | Checkbox | Exclusions  | Select this EDF to remove DUO from the selected machine only.<br>![Image](..\..\..\static\img\Uninstall-DUO\image_3.png) |
+
+## Target
+
+Global
+
+## Alert Template
+
+△ Custom - Execute Script - Uninstall DUO
+
+

@@ -1,0 +1,29 @@
+---
+id: 'cwa-microsoft-365-update-channel-audit'
+title: 'Microsoft 365 Update Channel Audit'
+title_meta: 'Microsoft 365 Update Channel Audit'
+keywords: ['microsoft', 'update', 'channel', 'audit', 'click-to-run']
+description: 'This document outlines how to detect computers with differing Microsoft 365 update channels as set in the Client or Computer Level Update Channel. It requires Microsoft 365 Click-to-Run installation and a managed patch policy.'
+tags: ['microsoft', 'update', 'audit', 'software', 'configuration']
+draft: false
+unlisted: false
+---
+## Summary
+
+The internal monitor detects computers where the Microsoft 365 update channel is different as set in the Client or Computer Level `Update Channel`. The computer must have Microsoft 365 Click-to-Run installed and a managed patch policy applied.
+
+## Dependencies
+
+- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
+- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846)
+- [SWM - Software Configuration - Script - Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164646)
+
+## Target
+
+Global
+
+## Alert Template
+
+**Name:** `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
+
+

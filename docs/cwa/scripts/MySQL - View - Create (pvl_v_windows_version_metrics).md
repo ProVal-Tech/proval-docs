@@ -14,10 +14,11 @@ This script can be used to import [SEC - Windows Patching - MySQL View - pvl_v_w
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11564063/images/19180985)
+![Sample Run](..\..\..\static\img\MySQL---View---Create-(pvl_v_windows_version_metrics)\image_1.png)
 
 ## Dependencies
 
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)  
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)  
+
 

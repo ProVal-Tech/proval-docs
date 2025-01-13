@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8216289/images/11437906)
+![Sample Run](..\..\..\static\img\CHKDSK---Run-(All-Drives)\image_1.png)
 
 ## Global Parameters
 
@@ -31,5 +31,6 @@ This script will run check disk for all internal drives a machine has. This scri
 ## Output
 
 - Script log
+
 
 

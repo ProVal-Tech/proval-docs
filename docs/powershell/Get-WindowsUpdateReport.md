@@ -106,3 +106,4 @@ Running this script on Windows 7 and below is at best unstable and at worst caus
 ### Log File
 
     .\Get-Windows10PatchInfo-log.txt
+

@@ -16,7 +16,7 @@ Collects information regarding any existing crash dump.
 
 - To collect data run the Get-CrashDump script on a target endpoint.
 
-![Sample Run Image](5078775/docs/11956458/images/16762718)
+![Sample Run Image](..\..\..\static\img\Get-CrashDump\image_1.png)
 
 ### Expected Return Types
 
@@ -85,14 +85,15 @@ Collects information regarding any existing crash dump.
 
 ### Ticket
 
-![Ticket Image](5078775/docs/11956458/images/16766330)
+![Ticket Image](..\..\..\static\img\Get-CrashDump\image_2.png)
 
 ### Email
 
-![Email Image](5078775/docs/11956458/images/16766379)
+![Email Image](..\..\..\static\img\Get-CrashDump\image_3.png)
 
 ### Custom Table
 
-![Custom Table Image](5078775/docs/11956458/images/16766448)
+![Custom Table Image](..\..\..\static\img\Get-CrashDump\image_4.png)
+
 
 

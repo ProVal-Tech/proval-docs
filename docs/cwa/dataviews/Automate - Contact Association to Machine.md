@@ -29,3 +29,4 @@ This dataview shows which machines are associated to specific Contacts in Automa
 | Shutdown             | Check whether contact has shutdown permission or not                    |
 | Wake On Lan          | Check whether contact has Wake On Lan permission or not.                |
 
+

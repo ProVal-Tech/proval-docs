@@ -76,3 +76,4 @@ The purpose of the solution is to detect machines that have been offline in Auto
        - Set the required ticket category (To Alert on broken agents).
        - Right-click and Run Now to start the monitor.
 
+

@@ -39,3 +39,4 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 - Import the dataview.
 
 
+

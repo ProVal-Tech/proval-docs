@@ -18,7 +18,7 @@ Time Saved by Automation: 10 minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156780/images/11377733)
+![Sample Run](..\..\..\static\img\Windows---Local-Administrator-Process\image_1.png)
 
 ## Variables
 
@@ -46,5 +46,6 @@ The script will start by checking if the password entry already exists for the c
 ## Output
 
 - Script log
+
 
 

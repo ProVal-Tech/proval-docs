@@ -17,3 +17,4 @@ This internal monitor detects machines with outdated Microsoft Edge versions.
 Windows Machines - Should be run on all Windows machines
 
 
+

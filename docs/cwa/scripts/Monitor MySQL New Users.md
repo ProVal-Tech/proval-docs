@@ -19,7 +19,7 @@ Time Saved by Automation: 7 Minutes.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8244302/images/11670540)
+![Sample Run](..\..\..\static\img\Monitor-MySQL-New-Users\image_1.png)
 
 ## Variables
 
@@ -42,5 +42,6 @@ Step 3: If the script state doesn't exist or is empty, fill it.
 ## Output
 
 Email
+
 
 

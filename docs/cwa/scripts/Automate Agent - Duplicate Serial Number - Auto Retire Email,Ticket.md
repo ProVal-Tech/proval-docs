@@ -22,7 +22,7 @@ Introduced the following system properties:
 
 Run the script with the `Set_Environment` parameter to import the newly introduced properties.
 
-![Update Notice Image](5078775/docs/15646427/images/27927154)
+![Update Notice Image](..\..\..\static\img\Automate-Agent---Duplicate-Serial-Number---Auto-Retire-Email,Ticket\image_1.png)
 
 Remove the `Automate Agent - Duplicate Serial Number - Retire` script if it exists.
 
@@ -30,17 +30,17 @@ Remove the `Automate Agent - Duplicate Serial Number - Retire` script if it exis
 
 Set the parameter `Set_environment` for the first execution.
 
-![Sample Run Image](5078775/docs/15646427/images/22854169)
+![Sample Run Image](..\..\..\static\img\Automate-Agent---Duplicate-Serial-Number---Auto-Retire-Email,Ticket\image_2.png)
 
 Specify the email address where you would like to receive the output of the result.
 
-![Email Specification Image](5078775/docs/15646427/images/22854157)
+![Email Specification Image](..\..\..\static\img\Automate-Agent---Duplicate-Serial-Number---Auto-Retire-Email,Ticket\image_3.png)
 
 ## Schedule
 
 It is suggested to run the script once per script.
 
-![Schedule Image](5078775/docs/15646427/images/27927142)
+![Schedule Image](..\..\..\static\img\Automate-Agent---Duplicate-Serial-Number---Auto-Retire-Email,Ticket\image_4.png)
 
 ## System Property
 
@@ -78,4 +78,5 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 In case there is no duplicate serial number:
 
 `No duplicate Machines identified based on Serial Number.`
+
 

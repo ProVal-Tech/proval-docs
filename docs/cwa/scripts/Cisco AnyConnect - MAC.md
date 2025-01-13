@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156787/images/11353614)
+![Sample Run](..\..\..\static\img\Cisco-AnyConnect---MAC\image_1.png)
 
 ## Variables
 
@@ -36,4 +36,5 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 

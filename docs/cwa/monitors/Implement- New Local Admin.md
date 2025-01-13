@@ -195,8 +195,9 @@ unlisted: false
 - Check the concerned groups, ensure the monitor set is created and configured with the correct search, and apply the appropriate alert template.  
   **Limit To:** `All Computers Excluding Domain Controllers`  
   **Alert Template:** `△ Custom - Ticket Creation Computer - Failures Only`  
-  ![Image](5078775/docs/14069154/images/20271716)
+  ![Image](..\..\..\static\img\Implement--New-Local-Admin\image_1.png)
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
-  ![Image](5078775/docs/14069154/images/20271717)
+  ![Image](..\..\..\static\img\Implement--New-Local-Admin\image_2.png)
+
 

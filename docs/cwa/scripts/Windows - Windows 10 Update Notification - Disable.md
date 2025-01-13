@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8066334/images/11437974)
+![Sample Run](..\..\..\static\img\Windows---Windows-10-Update-Notification---Disable\image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
+
 
 

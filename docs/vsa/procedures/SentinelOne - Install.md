@@ -1,0 +1,59 @@
+---
+id: 'cwa-sentinelone-install-windows'
+title: 'SentinelOne Installation on Windows'
+title_meta: 'SentinelOne Installation on Windows'
+keywords: ['sentinelone', 'installation', 'windows', 'endpoint', 'background', 'teams']
+description: 'This document provides a detailed guide on installing the SentinelOne application on Windows endpoints, including steps for deploying the necessary files and configuring backgrounds for Microsoft Teams users.'
+tags: ['installation', 'windows', 'endpoint', 'background', 'teams']
+draft: false
+unlisted: false
+---
+## Summary
+
+Installs the SentinelOne application on the endpoint.
+
+## Implementation
+
+Export the agent procedure.  
+**Name:** SentinelOne - Install - (Windows)
+
+![Image 1](..\..\..\static\img\SentinelOne---Install\image_1.png)
+
+![Image 2](..\..\..\static\img\SentinelOne---Install\image_2.png)
+
+The agent procedure requires a ZIP file with the backgrounds.  
+The ZIP can contain multiple images.  
+The following images are supported: ('jpeg', 'jpg', 'png', 'bmp')
+
+![Image 3](..\..\..\static\img\SentinelOne---Install\image_3.png)
+
+If the file selected is "[background.zip](http://background.zip)", no further changes are required.  
+If a different file has been specified, update the filename in the PowerShell execution.  
+Modify **[background.zip](http://background.zip)** to the name of the ZIP you've selected in the previous step.
+
+![Image 4](..\..\..\static\img\SentinelOne---Install\image_4.png)
+
+## Dependencies
+
+- Managed File (Import-TeamsBackground.PS1)
+- Managed File (background.zip)
+
+## Process
+
+- Deploy the ZIP file and Import-TeamsBackground.ps1 to the endpoint.
+- Check if Teams is installed and get the list of active users' info
+  - Get the user profile path from the user's SID for each active user
+    - Create the Backgrounds and Uploads folders for each active user
+      - Extract images from the ZIP file
+        - Remove the temporary directories if they exist
+        - Create the temporary directories
+          - Extract images from the ZIP file to the temporary directory
+            - Rename JPEG, JPG, PNG, BMP files with Teams GUID
+            - Create a _thumb copy of each image.
+              - Copy renamed images to active users' Teams Backgrounds directories
+
+## Output
+
+Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
+
+

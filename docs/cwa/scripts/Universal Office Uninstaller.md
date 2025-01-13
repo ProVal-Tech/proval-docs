@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8050062/images/11203757)
+![Sample Run](..\..\..\static\img\Universal-Office-Uninstaller\image_1.png)
 
 ## Dependencies
 
@@ -31,5 +31,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

@@ -26,3 +26,4 @@ This Dataview provides patching information for devices online within the last 3
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
 
 
+

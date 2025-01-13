@@ -29,3 +29,4 @@ SQL 2019          MsDtsServer150
 | {%@sc queryex type= service | find /i "MsDtsServer140"@%} | Contains   | MsDtsServer140   | Windows        |
 
 
+

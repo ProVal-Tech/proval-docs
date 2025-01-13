@@ -24,3 +24,4 @@ To present information about possible Log4Shell vulnerabilities and attacks on A
 | [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](https://proval.itglue.com/DOC-5078775-8886309) | Dataview    | Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit. |
 | [CWM - Automate - Script - Log4J Remediation Residue Removal](https://proval.itglue.com/DOC-5078775-16162268) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631) script including the `Everything` service. |
 
+

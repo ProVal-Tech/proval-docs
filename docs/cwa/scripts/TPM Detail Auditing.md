@@ -16,7 +16,7 @@ Time Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8304569/images/11594927)
+![Sample Run](..\..\..\static\img\TPM-Detail-Auditing\image_1.png)
 
 ## Dependencies
 
@@ -52,5 +52,6 @@ Time Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 

@@ -19,3 +19,4 @@ This role definition helps you track down machines with legacy BIOS type.
 | {%@bcdedit | find /i "path"@%}     | Regex Match    | .exe   | Windows        |
 
 
+

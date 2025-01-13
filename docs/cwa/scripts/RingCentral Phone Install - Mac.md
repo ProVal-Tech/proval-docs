@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8220954/images/11443776)
+![Sample Run](..\..\..\static\img\RingCentral-Phone-Install---Mac\image_1.png)
 
 Note: This script will only run against OSX machines. If this script is not working please notify ProVal - [support@provaltech.com](mailto:support@provaltech.com)
 
@@ -35,4 +35,5 @@ The script will put the machine into Fast Talk as that makes the script run more
 ## Output
 
 Script log messages
+
 

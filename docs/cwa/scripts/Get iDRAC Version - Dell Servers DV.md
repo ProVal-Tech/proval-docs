@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7854396/images/10932916)
+![Sample Run](..\..\..\static\img\Get-iDRAC-Version---Dell-Servers-DV\image_1.png)
 
 ## Variables
 
@@ -42,5 +42,6 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 

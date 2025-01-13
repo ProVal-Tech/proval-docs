@@ -19,7 +19,7 @@ File Hash: 606FC62A7E6AD61143B93A6426BAD11F99C05AAD01BDFA0963F6AC83D6935C73
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14466238/images/20911724)  
+![Sample Run](..\..\..\static\img\Script---Winget---InstallUpdate-Autofix,Param\image_1.png)  
 
 ## Variables
 
@@ -46,5 +46,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 

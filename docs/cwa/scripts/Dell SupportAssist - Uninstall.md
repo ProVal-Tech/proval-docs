@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8104910/images/11285420)
+![Sample Run](..\..\..\static\img\Dell-SupportAssist---Uninstall\image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
+
 
 

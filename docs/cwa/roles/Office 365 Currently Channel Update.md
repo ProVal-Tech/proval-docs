@@ -18,3 +18,4 @@ This role detects if the O365 apps are on the Current Update Channel.
 |--------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------|----------------|
 | {%-HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration:CDNBaseUrl-%} | Contains   | [http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60](http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60) | Windows        |
 
+

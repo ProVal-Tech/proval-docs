@@ -16,19 +16,19 @@ This script will implement or remove the setup of the entire Network Firewall so
 
 ## Install the solution
 
-![Image](5078775/docs/11822859/images/16562084)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_1.png)
 
 Leaving the Action blank or entering anything other than uninstall will install the solution based on the following condition
 
-![Image](5078775/docs/11822859/images/16562092)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_2.png)
 
 ## Remove the Solution
 
-![Image](5078775/docs/11822859/images/16562098)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_3.png)
 
 Setting Action to Uninstall will remove the solution based on the following condition.
 
-![Image](https://proval.itglue.com/5078775/docs/11822859/images/16562092)
+![Image](https://proval.itglue.com/..\..\..\static\img\Net-Firewall-Monitoring\image_2.png)
 
 # Technician Required Steps
 
@@ -56,69 +56,69 @@ Important Notes.
 
 - Client Level, under Security Compliance
 
-![Image](5078775/docs/11822859/images/16556068)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_4.png)
 
 - Computer Level Exclusion under Security Compliance
 
-![Image](5078775/docs/11822859/images/16556108)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_5.png)
 
 ## Creates the Searches
 
 - Windows Firewall Enabled
 
-![Image](5078775/docs/11822859/images/16556159)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_6.png)
 
 - Windows Firewall Monitoring Enabled - Servers
 
-![Image](5078775/docs/11822859/images/16556210)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_7.png)
 
 - Windows Firewall Monitoring Enabled - Workstations
 
-![Image](5078775/docs/11822859/images/16556251)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_8.png)
 
 ## Creates the groups
 
 - △ System Monitoring
 
-![Image](5078775/docs/11822859/images/16556281)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_9.png)
 
 - △ Windows Firewall
 
-![Image](5078775/docs/11822859/images/16556324)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_10.png)
 
 ## Creates and links the Remote Monitors
 
 - △ Disabled Net Firewall Profile
 
-![Image](5078775/docs/11822859/images/16556343)
-![Image](5078775/docs/11822859/images/16556345)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_11.png)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_12.png)
 
 - △ Enable Net Firewall Profile Failed
 
-![Image](5078775/docs/11822859/images/16556350)
-![Image](5078775/docs/11822859/images/16556360)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_13.png)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_14.png)
 
 # Process (Removal)
 
 ## Remove the remote monitors
 
-![Image](5078775/docs/11822859/images/16562060)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_15.png)
 
 ## Remove the Groups
 
-![Image](5078775/docs/11822859/images/16562065)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_16.png)
 
 ## Remove the Searches
 
-![Image](5078775/docs/11822859/images/16562068)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_17.png)
 
 ## Remove any filled in extra data field data
 
-![Image](5078775/docs/11822859/images/16562071)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_18.png)
 
 ## Remove the EDFs
 
-![Image](5078775/docs/11822859/images/16562073)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_19.png)
 
 # Explanation of Solution
 
@@ -132,7 +132,7 @@ Ticketing is formatted and should not autoclose but every 10 days (a limitation 
 
 ## △ Enable Net Firewall Profile Failed
 
-![Image](5078775/docs/11822859/images/16562207)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_20.png)
 
 1. This line shows the actionable item that needs to be addressed.
 2. This reflects the monitor that triggered this ticket
@@ -142,11 +142,12 @@ Ticketing is formatted and should not autoclose but every 10 days (a limitation 
 
 ## △ Disabled Net Firewall Profile
 
-![Image](5078775/docs/11822859/images/16562287)
+![Image](..\..\..\static\img\Net-Firewall-Monitoring\image_21.png)
 
 1. This line shows the actionable item that needs to be addressed. (This monitor for some reason is including a :1737 in the return, I believe this has something to do with a potential array being passed back in automate it is formatting as a new line.
 2. This reflects the monitor that triggered this ticket
 3. This reflects the status of that monitor on the target
 4. This reflects the target of the monitor
 5. This is the returned data from the target when running the monitor. This will tell you why the target failed, in this case it is showing that the monitor failed because the public Net firewall is disabled.
+
 

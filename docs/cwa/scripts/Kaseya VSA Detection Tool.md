@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7836232/images/10907300)
+![Sample Run](..\..\..\static\img\Kaseya-VSA-Detection-Tool\image_1.png)
 
 ## Dependencies
 
@@ -38,5 +38,6 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 

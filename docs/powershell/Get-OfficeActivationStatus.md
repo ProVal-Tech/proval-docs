@@ -22,3 +22,4 @@ Uses the SoftwareLicensingProduct CIM class to gather activation details and out
 
 ## Output
 .\Get-OfficeActivationStatus-log.txt
+

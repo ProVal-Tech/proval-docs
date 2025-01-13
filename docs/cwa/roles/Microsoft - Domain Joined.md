@@ -19,3 +19,4 @@ This role definition helps you track machines which are domain joined.
 | `%{powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : YES*')]"@%}` | Equals     | True   | Windows        |
 
 
+

@@ -20,5 +20,6 @@ Executes the [SEC - Encryption - Script - Lock Stolen System](https://proval.itg
 
 `Marked as Stolen` Group
 
-![Image](5078775/docs/12991040/images/18562705)
+![Image](..\..\..\static\img\EDF-Based-Stolen-Systems-Monitor\image_1.png)
+
 

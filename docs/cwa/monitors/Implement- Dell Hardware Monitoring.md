@@ -240,8 +240,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 Limit to: `Computers - Dell Servers`
 
-![Image](5078775/docs/15248345/images/22136104)
+![Image](..\..\..\static\img\Implement--Dell-Hardware-Monitoring\image_1.png)
 
 ### 8.
 Set the appropriate alert template.
+
 

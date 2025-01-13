@@ -27,3 +27,4 @@ This dataview detects if the machine allows local caching of files for offline a
 | Offline Files Status  | Enabled / Disabled for offline file status (based on role detection) |
 
 
+

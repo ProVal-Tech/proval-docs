@@ -32,3 +32,4 @@ This dataview displays information about the latest Windows rollup update that h
 | LastContact     | Agent Last Contact with the Automate                      |
 
 
+

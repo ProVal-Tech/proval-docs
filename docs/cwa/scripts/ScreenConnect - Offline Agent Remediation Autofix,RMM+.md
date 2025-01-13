@@ -19,7 +19,7 @@ Time Saved by Automation: 15 Minutes
 ## Sample Run
 
 Intended Target: An Autofix script for Offline Server Monitoring.  
-![Sample Run](5078775/docs/8008294/images/14652303)
+![Sample Run](..\..\..\static\img\ScreenConnect---Offline-Agent-Remediation-Autofix,RMM+\image_1.png)
 
 ## Dependencies
 
@@ -89,5 +89,6 @@ It will clear the Agent status script state and will finish any open offline Ser
 - Script Log
 - Script State
 - Ticket
+
 
 

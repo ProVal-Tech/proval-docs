@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8060348/images/11219765)
+![Sample Run](..\..\..\static\img\OneDrive---Backup-Status\image_1.png)
 
 ## Dependencies
 
@@ -28,5 +28,6 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - custom table
 - Dataview
+
 
 

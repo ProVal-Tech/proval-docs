@@ -35,3 +35,4 @@ Data used for auditing Windows 10 versions. Displays information grouped by Clie
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
 
 
+

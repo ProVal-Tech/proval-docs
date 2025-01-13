@@ -19,7 +19,7 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12584847/images/17823356)
+![Sample Run](..\..\..\static\img\Hyper-V---Checkpoint-Create-Param\image_1.png)
 
 ## Variables
 
@@ -38,5 +38,6 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 ## Output
 
 - Script logs
+
 
 

@@ -18,7 +18,7 @@ It will then set the location settings to use the new LTCache settings.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8071136/images/11231805)
+![Sample Run](..\..\..\static\img\Setup-Probe-LTCache-Share\image_1.png)
 
 ## Dependencies
 
@@ -45,4 +45,5 @@ Location must have a probe enabled, otherwise script will exit with error.
 ## Output
 
 Script log
+
 

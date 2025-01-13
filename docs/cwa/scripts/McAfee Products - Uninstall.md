@@ -14,7 +14,7 @@ This script is an Automate Implementation of the agnostic solution [SWM - Softwa
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11570429/images/16147254)
+![Sample Run](..\..\..\static\img\McAfee-Products---Uninstall\image_1.png)
 
 ## Dependencies
 
@@ -29,4 +29,5 @@ This script is an Automate Implementation of the agnostic solution [SWM - Softwa
 ## Output
 
 - Script Log
+
 

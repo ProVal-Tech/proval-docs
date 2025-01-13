@@ -18,7 +18,7 @@ Note: The script must not be imported to any of our partners.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9563113/images/13227680)
+![Sample Run](..\..\..\static\img\Fetch-Denied-Patch-List-From-Centralized-ITGLue-KBIDs\image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ Note: The script must not be imported to any of our partners.
 For Failure:  
 - Script Log  
 - Email  
+
 
 

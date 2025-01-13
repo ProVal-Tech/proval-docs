@@ -32,3 +32,4 @@ The custom table stores the data gathered by the [Windows - Check Windows 11 Com
 | LastRan     | DATETIME | Timestamp for the collected data.                                                               |
 
 
+

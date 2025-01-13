@@ -42,3 +42,4 @@ Explanation of the usage of the below example.
 Location of output for log, result, and error files.
     
     .\Remove-UserRegistryValue-log.txt
+

@@ -15,7 +15,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7882704/images/10970456)
+![Sample Run](..\..\..\static\img\Automate---New-Super-Admin-Monitoring\image_1.png)
 
 ## Dependencies
 
@@ -39,5 +39,6 @@ A temporary custom table is referenced to determine the previous state of the su
 
 - Ticket
 - Script Log
+
 
 

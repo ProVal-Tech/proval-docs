@@ -23,16 +23,16 @@ Also, please note that the computer can be restarted even without setting the `R
 ## Sample Run
 
 - Install available BIOS Updates without restarting the computer:  
-  ![Install available BIOS Updates without restarting](5078775/docs/11247140/images/20050689)
+  ![Install available BIOS Updates without restarting](..\..\..\static\img\Lenovo-LSUpdate---Wrapper\image_1.png)
 
 - Install available BIOS updates and restart the computer immediately:  
-  ![Install available BIOS updates and restart](5078775/docs/11247140/images/20050684)
+  ![Install available BIOS updates and restart](..\..\..\static\img\Lenovo-LSUpdate---Wrapper\image_2.png)
 
 - Install all available updates without restarting the computer: (This option may not work as desired, because the reboot cannot be fully suppressed while installing `driver` and `firmware` updates.)  
-  ![Install all available updates without restarting](5078775/docs/11247140/images/20050691)
+  ![Install all available updates without restarting](..\..\..\static\img\Lenovo-LSUpdate---Wrapper\image_3.png)
 
 - Install all available updates and restart the computer immediately:  
-  ![Install all available updates and restart](5078775/docs/11247140/images/20050717)
+  ![Install all available updates and restart](..\..\..\static\img\Lenovo-LSUpdate---Wrapper\image_4.png)
 
 ---
 
@@ -62,5 +62,6 @@ PowerShell Version 5+
 ## Output
 
 - Script logs
+
 
 

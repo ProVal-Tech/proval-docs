@@ -1,0 +1,111 @@
+---
+id: 'ps-wget-export-import-update-uninstall'
+title: 'WinGet Export, Import, Update, and Uninstall'
+title_meta: 'WinGet Export, Import, Update, and Uninstall'
+keywords: ['winget', 'export', 'import', 'update', 'uninstall', 'json', 'packages']
+description: 'This document provides an overview of various WinGet functionalities including exporting a list of software packages to a JSON file, importing packages from a JSON file, updating all compatible software packages, and uninstalling specific software packages using WinGet on endpoints. It includes dependencies, implementation details, and Datto variable configurations for each process.'
+tags: ['json', 'software', 'installation', 'uninstallation', 'update', 'configuration']
+draft: true
+unlisted: true
+---
+## WinGet Export
+
+### Overview
+Exports a JSON File containing a list of WinGet Software Packages on the endpoint. Uses ProVal's Invoke-WinGetProcessor.ps1 agnostic content.
+
+### Dependencies
+[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+
+### Implementation
+Import the Component in this directory into the target environment.
+
+### Datto Variables
+
+| Variable Name | Type   | Default | Description                                       |
+|---------------|--------|---------|---------------------------------------------------|
+| `JSONPath`    | `String` |         | Path to the JSON File on the endpoint.           |
+
+### Output
+stdOut & stdError
+
+## WinGet Import Install
+
+### Overview
+Imports a JSON File containing a list of WinGet Software Packages (generated using WinGet Export) and installs all contained packages.
+
+### Dependencies
+[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+
+### Implementation
+Import the Component in this directory into the target environment.
+
+### Datto Variables
+
+| Variable Name  | Type    | Default | Description                                                                                           |
+|----------------|---------|---------|-------------------------------------------------------------------------------------------------------|
+| `JSONPath`     | `String`|         | Path to the JSON File on the endpoint. If included with this Component, the path should be only the name of the file. |
+| `AllowUpdate`  | `Boolean`| `True`  | Should WinGet update existing packages on the endpoint?                                              |
+
+### Output
+stdOut & stdError
+
+## WinGet UpdateAll
+
+### Overview
+Updates all compatible software packages, using Winget, on an endpoint.
+
+### Dependencies
+[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+
+### Implementation
+Import the Component in this directory into the target environment.
+
+### Datto Variables
+None
+
+### Output
+stdOut & stdError
+
+## WinGet Package Uninstall
+
+### Overview
+Install a software package, using Winget, on an endpoint.
+
+### Dependencies
+[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+
+### Implementation
+Import the Component in this directory into the target environment.
+
+### Datto Variables
+
+| Variable Name  | Type    | Default | Description                                                                                           |
+|----------------|---------|---------|-------------------------------------------------------------------------------------------------------|
+| `PackageId`    | `String`|         | Package name(s) you want to install, separated by comma. Syntax: 'notepadd++.notepad++','Git.Git','Ditto.Ditto' |
+| `AllowUpdate`  | `Boolean`| `True`  | Should WinGet update existing packages on the endpoint?                                              |
+
+### Output
+stdOut & stdError
+
+## Winget Package Uninstall
+
+### Overview
+Uninstall a software package, using Winget, on an endpoint.
+
+### Dependencies
+[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+
+### Implementation
+Import the Component in this directory into the target environment.
+
+### Datto Variables
+
+| Variable Name  | Type    | Default | Description                                                                                           |
+|----------------|---------|---------|-------------------------------------------------------------------------------------------------------|
+| `PackageId`    | `String`|         | Package name(s) you want to install, separated by comma. Syntax: 'notepadd++.notepad++','Git.Git','Ditto.Ditto' |
+
+### Output
+stdOut & stdError
+
+
+

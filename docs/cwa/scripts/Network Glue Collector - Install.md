@@ -16,7 +16,7 @@ An Activation Key is Necessary and it can be found on the Clients' IT Glue page 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9360868/images/26735378)
+![Sample Run](..\..\..\static\img\Network-Glue-Collector---Install\image_1.png)
 
 #### User Parameters
 
@@ -61,4 +61,5 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 - **Body:**  
   Network Glue Collector installation failed on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
   @ErrorLog@.
+
 

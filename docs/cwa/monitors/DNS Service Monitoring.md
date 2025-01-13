@@ -83,8 +83,9 @@ unlisted: false
    ```
 
 2. Open the `Windows DNS Servers` group  
-   ![Windows DNS Servers](5078775/docs/13604735/images/27239113)
+   ![Windows DNS Servers](..\..\..\static\img\DNS-Service-Monitoring\image_1.png)
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
-   ![Check Remote Monitor](5078775/docs/13604735/images/27239188)
+   ![Check Remote Monitor](..\..\..\static\img\DNS-Service-Monitoring\image_2.png)
+
 

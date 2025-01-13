@@ -49,3 +49,4 @@ Finally, the script logs the overall result of the removal process, indicating w
 Location of output for log, result, and error files.
     Remove-BitdefenderEndpointSecurity-log.txt
     Remove-BitdefenderEndpointSecurity-Error.txt
+

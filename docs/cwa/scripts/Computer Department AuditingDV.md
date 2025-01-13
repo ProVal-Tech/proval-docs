@@ -14,7 +14,7 @@ This script collects the AD Users department information.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9004334/images/12472787)
+![Sample Run](..\..\..\static\img\Computer-Department-AuditingDV\image_1.png)
 
 ## Dependencies
 
@@ -33,4 +33,5 @@ It will store the information to the table `plugin_proval_computer_department` a
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
+
 

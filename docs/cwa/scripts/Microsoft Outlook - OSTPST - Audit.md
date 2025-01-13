@@ -17,7 +17,7 @@ File Hash: B5689044612005060B790DFC5560C8E28E44B82BDE107D971AA146B91F147881
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8168634/images/22545165)
+![Sample Run](..\..\..\static\img\Microsoft-Outlook---OSTPST---Audit\image_1.png)
 
 ## Dependencies
 
@@ -27,5 +27,6 @@ File Hash: B5689044612005060B790DFC5560C8E28E44B82BDE107D971AA146B91F147881
 
 - Script log
 - Dataview
+
 
 

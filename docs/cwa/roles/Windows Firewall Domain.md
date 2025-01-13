@@ -19,3 +19,4 @@ This role will detect if the Domain profile of the Windows Firewall is enabled.
 | {%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
 
 
+

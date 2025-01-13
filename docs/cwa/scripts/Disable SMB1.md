@@ -18,10 +18,11 @@ Windows OS
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13844440/images/19911008)
+![Sample Run](..\..\..\static\img\Disable-SMB1\image_1.png)
 
 ## Output
 
 - Script log
+
 
 

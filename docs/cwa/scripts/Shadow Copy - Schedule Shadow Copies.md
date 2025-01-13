@@ -16,7 +16,7 @@ Time Saved by Automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8246320/images/11483325)
+![Sample Run](..\..\..\static\img\Shadow-Copy---Schedule-Shadow-Copies\image_1.png)
 
 ## Dependencies
 
@@ -41,5 +41,6 @@ Once the global parameters are configured to the desired values, the script will
 ## Output
 
 Script log
+
 
 

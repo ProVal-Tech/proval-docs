@@ -55,3 +55,4 @@ Joins a domain using online method or offline method.
     Console - domain join results, or nothing on error.
     .\Join-Domain-log.txt
     .\Join-Domain-error.txt
+

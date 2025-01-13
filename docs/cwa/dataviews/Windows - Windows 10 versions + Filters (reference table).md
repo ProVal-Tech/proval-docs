@@ -35,3 +35,4 @@ This dataview contains information about Windows 10 build information and patch 
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
 
 
+

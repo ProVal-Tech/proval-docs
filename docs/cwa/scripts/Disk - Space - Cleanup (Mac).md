@@ -14,7 +14,7 @@ This script performs a disk cleanup on a MAC device.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9948081/images/13916130)
+![Sample Run](..\..\..\static\img\Disk---Space---Cleanup-(Mac)\image_1.png)
 
 ## Dependencies
 
@@ -30,4 +30,5 @@ This script performs a disk cleanup on a MAC device.
 ## Output
 
 - Script Logs
+
 

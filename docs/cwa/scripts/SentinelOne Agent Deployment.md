@@ -14,11 +14,11 @@ Deploys the SentinelOne agent with an agent token set at either the Global, Clie
 
 ## Sample Run
 
-![Sample Run 1](5078775/docs/11599920/images/16198808)
+![Sample Run 1](..\..\..\static\img\SentinelOne-Agent-Deployment\image_1.png)
 
 - Running in this manner with No token will result in the script attempting the client level token edf value, and if this is not set it will grab the System property token value to process the request.
 
-![Sample Run 2](5078775/docs/11599920/images/16198827)
+![Sample Run 2](..\..\..\static\img\SentinelOne-Agent-Deployment\image_2.png)
 
 - Adding a token to the Token parameter will trump all client level tokens and global property tokens, and use the provided token as the means to process the request.
 
@@ -42,13 +42,13 @@ Global Parameter Set instructions:
 
 Client level tokens can be set in the following client edf location:
 
-![Client EDF Location](5078775/docs/11599920/images/16217674)
+![Client EDF Location](..\..\..\static\img\SentinelOne-Agent-Deployment\image_3.png)
 
 Exclusions can be set in the following locations:
 
-![Exclusion Location 1](5078775/docs/11599920/images/16217679)
+![Exclusion Location 1](..\..\..\static\img\SentinelOne-Agent-Deployment\image_4.png)
 
-![Exclusion Location 2](5078775/docs/11599920/images/16217693)
+![Exclusion Location 2](..\..\..\static\img\SentinelOne-Agent-Deployment\image_5.png)
 
 ## Variables
 
@@ -81,4 +81,5 @@ Exclusions can be set in the following locations:
 ## Output
 
 - Script log
+
 

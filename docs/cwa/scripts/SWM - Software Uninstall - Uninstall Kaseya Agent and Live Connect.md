@@ -14,7 +14,7 @@ The purpose of the script is to remove `Kaseya Agent` and `Live Connect` applica
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13072583/images/18693997)
+![Sample Run](..\..\..\static\img\SWM---Software-Uninstall---Uninstall-Kaseya-Agent-and-Live-Connect\image_1.png)
 
 ## Variables
 
@@ -25,5 +25,6 @@ The purpose of the script is to remove `Kaseya Agent` and `Live Connect` applica
 ## Output
 
 - Script Log
+
 
 

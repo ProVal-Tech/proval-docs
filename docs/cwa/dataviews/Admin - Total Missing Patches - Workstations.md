@@ -23,3 +23,4 @@ This dataview shows the number of missing patches for each workstation patching 
 | AgentType      | Displays the agent type                          |
 | MissingPatches | Displays the number of missing patches on the machine |
 
+

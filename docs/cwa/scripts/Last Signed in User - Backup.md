@@ -14,7 +14,7 @@ This script is used to store the last signed-in user so PRONOC users can run thi
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9507732/images/13146109)
+![Sample Run](..\..\..\static\img\Last-Signed-in-User---Backup\image_1.png)
 
 ## Variables
 
@@ -29,5 +29,6 @@ This script stores the last sign-in user info from the registry as a registry ba
 ## Output
 
 - Script log
+
 
 

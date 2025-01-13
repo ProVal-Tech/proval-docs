@@ -9,7 +9,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8056027/images/17555446)
+![Sample Run](..\..\..\static\img\MySQL---Permission---Set-Custom-Table-Permissions\image_1.png)
 
 It's converted to a client script and should be scheduled to run every 2 hours.
 
@@ -18,4 +18,5 @@ It's converted to a client script and should be scheduled to run every 2 hours.
 | Name             | Description                                                                                                         |
 |------------------|---------------------------------------------------------------------------------------------------------------------|
 | UpdateStatements  | The variable will store the SQL result which will be further used as an update statement to grant permission to custom ProVal tables. |
+
 

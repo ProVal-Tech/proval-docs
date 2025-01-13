@@ -18,7 +18,7 @@ Alert Template: △ Custom - Ticket Creation - Computer
 
 To exclude the self-signed, Microsoft-generated, and any certificate with a GUID in Subject, uncomment the following lines in the Additional Condition. But before adding any exclusions, it is suggested to review the [EPM - Network - Dataview - SSL Certificate Audit](https://proval.itglue.com/5078775/docs/9382198) dataview to ensure that enabling these exclusions is not going to exclude any important certificate.
 
-![Image](5078775/docs/9256567/images/26277103)
+![Image](..\..\..\static\img\Certificate-Expiration--30-Days\image_1.png)
 
 ## Dependencies
 
@@ -58,5 +58,6 @@ Expiration: 2023-04-20 19:59:59
 
 ## Example Ticket
 
-![Image](5078775/docs/9256567/images/26278456)
+![Image](..\..\..\static\img\Certificate-Expiration--30-Days\image_2.png)
+
 

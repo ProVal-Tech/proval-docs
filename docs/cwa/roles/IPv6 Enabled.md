@@ -1,0 +1,26 @@
+---
+id: 'ps-identify-ipv6-machines'
+title: 'Identify Machines with IPv6 Enabled'
+title_meta: 'Identify Machines with IPv6 Enabled'
+keywords: ['ipv6', 'network', 'adapter', 'windows', 'detection']
+description: 'This document outlines the steps to identify machines where IPv6 is enabled on any network adapter. It includes a detection string, comparator, and applicable operating systems for effective implementation.'
+tags: ['networking', 'windows', 'configuration', 'security']
+draft: false
+unlisted: false
+---
+## Summary
+
+The purpose of this role is to identify the machines where IPv6 is enabled on any network adapter.
+
+## Settings
+
+| Detection String                                                                                                          | Comparator | Result | Applicable OS |
+|---------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
+| `%{@C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "(Get-NetAdapterBinding -Name '*' -ComponentID 'ms_tcpip6').enabled"@%}` | Contains   | True   | Windows        |
+
+## Implementation
+
+Use the following document as a guide to implement this role:  
+[https://proval.itglue.com/5078775/docs/17883447](https://proval.itglue.com/5078775/docs/17883447)
+
+

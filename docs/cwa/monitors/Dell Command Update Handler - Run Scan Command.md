@@ -22,3 +22,4 @@ Alert Template: Dell Command Update - Run Scan Command
 
 The SQL query is limiting it to Dell Workstations running Windows 10 or Windows 11.
 
+

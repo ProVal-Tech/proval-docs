@@ -46,3 +46,4 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 | Compatibility Check  | Equals   | Capable        | Green  |
 
 
+

@@ -30,3 +30,4 @@ This dataview pulls from the script information regarding file shares and permis
 | Permission Type        | Either Allow or Deny                             |
 | Permission Right       | Full, Read, Change or No Access                  |
 
+

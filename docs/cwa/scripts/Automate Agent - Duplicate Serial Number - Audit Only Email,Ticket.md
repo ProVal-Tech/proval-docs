@@ -18,11 +18,11 @@ This is a client script and will work only for the Physical Machines. Virtual Ma
 
 Set the parameter `Set_environment` for first execution.
 
-![Sample Run Image 1](5078775/docs/15645498/images/22854182)
+![Sample Run Image 1](..\..\..\static\img\Automate-Agent---Duplicate-Serial-Number---Audit-Only-Email,Ticket\image_1.png)
 
 Specify the email address where you would like to receive the output of the result.
 
-![Sample Run Image 2](5078775/docs/15645498/images/22854194)
+![Sample Run Image 2](..\..\..\static\img\Automate-Agent---Duplicate-Serial-Number---Audit-Only-Email,Ticket\image_2.png)
 
 ## System Properties
 
@@ -66,4 +66,5 @@ Duplicate Agents are listed below:
 In case there is no duplicate serial number:
 
 `No duplicate Machines identified based on Serial Number.`
+
 

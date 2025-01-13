@@ -48,3 +48,4 @@ This dataview audit snapshots for virtual machines hosted on the ESXI
 | Is Current Snapshot           | Displays whether the snapshot is current or not       |
 
 
+

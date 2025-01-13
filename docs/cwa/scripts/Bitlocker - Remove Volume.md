@@ -14,9 +14,9 @@ Disable Bitlocker protection on one (or all) volumes.
 
 ## Sample Run
 
-![Sample Run Image 1](5078775/docs/8953686/images/12419251)
+![Sample Run Image 1](..\..\..\static\img\Bitlocker---Remove-Volume\image_1.png)
 
-![Sample Run Image 2](5078775/docs/8953686/images/12419255)
+![Sample Run Image 2](..\..\..\static\img\Bitlocker---Remove-Volume\image_2.png)
 
 ## Dependencies
 
@@ -38,5 +38,6 @@ See process information in the document for [SEC - Encryption - Agnostic - Unpro
 
 - Script log
 - Local file on computer
+
 
 

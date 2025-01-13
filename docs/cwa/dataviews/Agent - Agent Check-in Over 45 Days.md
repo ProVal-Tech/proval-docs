@@ -30,3 +30,4 @@ This dataview shows information about agents that have not checked in for 45 day
 | All Contact Detail      | Dataview contains all the contact detail of the agent such as email address, phone number, full name etc. |
 
 
+

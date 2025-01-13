@@ -38,6 +38,7 @@ Note: Only if the Remote monitor (from dependencies) has executed/run at least o
 
 ## Sample Screenshot
 
-![Sample Screenshot](5078775/docs/7974498/images/18928629)
+![Sample Screenshot](..\..\..\static\img\Security---TLS-Status\image_1.png)
+
 
 

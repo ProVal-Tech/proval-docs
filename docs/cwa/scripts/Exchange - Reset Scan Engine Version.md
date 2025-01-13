@@ -14,7 +14,7 @@ This script resolves the stuck e-mail issue in Microsoft Exchange based on the f
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9004743/images/12473382)
+![Sample Run](..\..\..\static\img\Exchange---Reset-Scan-Engine-Version\image_1.png)
 
 ## Dependencies
 
@@ -58,4 +58,5 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
+
 

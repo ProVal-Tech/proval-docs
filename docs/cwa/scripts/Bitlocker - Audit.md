@@ -25,10 +25,10 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 ## Sample Run
 
 **First Run:** Run the script against any online windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution.  
-![First Run](5078775/docs/8943478/images/26077572)
+![First Run](..\..\..\static\img\Bitlocker---Audit\image_1.png)
 
 **Regular Execution:**  
-![Regular Execution](5078775/docs/8943478/images/26077620)
+![Regular Execution](..\..\..\static\img\Bitlocker---Audit\image_2.png)
 
 ## Dependencies
 
@@ -67,5 +67,6 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 - Custom table
 - Dataview
 - Backup file under LTshare at "LTShare\Uploads\<ClientName>\<ComputerName (Computerid)>"
+
 
 

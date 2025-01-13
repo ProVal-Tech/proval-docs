@@ -31,3 +31,4 @@ This dataview will collectively show all required information about the PrintNig
 | CVE-2021-34527 Patch      | CVE Patch install status               |
 | Mitigation Status         | It confirms whether mitigation applied or not. |
 
+

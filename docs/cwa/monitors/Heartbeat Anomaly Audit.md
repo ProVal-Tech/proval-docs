@@ -35,3 +35,4 @@ This typically indicates one of three issues:
 2. Your Router/Firewall is not forwarding UDP port 75.
 3. Something is obstructing traffic on UDP port 75 (such as an AV/Security Appliance).
 
+

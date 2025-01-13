@@ -43,3 +43,4 @@ It is being created by a script named as: "User Management - New Local Account A
 | Approve Status           | TINYINT  | It denotes whether the account is approved to get enabled. (0- Not Approved, 1-Approved and Enabled, 2- No Action). |
 | Approve Date Status      | DATETIME | It represents when the newly created account was approved to get enabled. (If date is 1970-01-01 00:00:00 it means, Not Approved). |
 
+

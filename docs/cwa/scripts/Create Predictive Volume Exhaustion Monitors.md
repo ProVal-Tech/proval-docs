@@ -14,7 +14,7 @@ This script is used to generate volume space monitors on the target machine for 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9655085/images/14883297)
+![Sample Run](..\..\..\static\img\Create-Predictive-Volume-Exhaustion-Monitors\image_1.png)
 
 ## Dependencies
 
@@ -70,5 +70,6 @@ The script writes and passes the required variables to the Execute Script step. 
 
 - Script log
 - Local file on computer
+
 
 

@@ -1,0 +1,22 @@
+---
+id: 'vsa-office-activation-status'
+title: 'Office Activation Status Tracker'
+title_meta: 'Office Activation Status Tracker'
+keywords: ['office', 'activation', 'status', 'tracker']
+description: 'This document provides details on tracking the activation status of installed Office applications, including a specific field for monitoring this status on machines.'
+tags: ['office', 'status', 'tracking', 'machine']
+draft: false
+unlisted: false
+---
+## Summary
+
+Tracks the activation status of any installed office applications.
+
+## Details
+
+| Field Name                     | Type of Field (Machine or Organization) | Description                                        |
+|--------------------------------|------------------------------------------|----------------------------------------------------|
+| xPVAL Office Activation Status  | Mach                                     | Tracks the activation status of any installed office applications. |
+
+
+

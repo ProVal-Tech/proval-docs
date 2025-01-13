@@ -26,18 +26,18 @@ Alert Template: `△ Custom - Ticket Creation - Ping Monitor`
 
 | Name                              | Example | Required | Description                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------|---------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _sysPingMonitor_EnableClientTickets | 1       | False    | Set its value to '1' in order to create client tickets under the client corresponding to the IP being pinged in the monitor. The script will match the IP with the router address in the automate and will fetch the corresponding client. If not found, it will create the standard computer tickets on the automate server. By default, its value is '0' which means only standard tickets are enabled. ![Image](5078775/docs/15313843/images/23854138) |
+| _sysPingMonitor_EnableClientTickets | 1       | False    | Set its value to '1' in order to create client tickets under the client corresponding to the IP being pinged in the monitor. The script will match the IP with the router address in the automate and will fetch the corresponding client. If not found, it will create the standard computer tickets on the automate server. By default, its value is '0' which means only standard tickets are enabled. ![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_1.png) |
 
 ## Sample Ping Monitor
 
 **Status Tab:**  
-![Image](5078775/docs/15313843/images/22249477)
+![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_2.png)
 
 **Location Tab:**  
-![Image](5078775/docs/15313843/images/22249484)
+![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_3.png)
 
 **Alerting Tab:**  
-![Image](5078775/docs/15313843/images/22249508)
+![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_4.png)
 
 **Subject:** `NTW - Ping Failure - %WHERE%`
 
@@ -53,17 +53,18 @@ Result: %RESULT%
 **%LocalAddress%:** This variable returns the private address of the local computer where the monitor set is executed.
 
 **Configuration Tab:**  
-![Image](5078775/docs/15313843/images/22249599)
+![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_5.png)
 
 **History Tab:**  
-![Image](5078775/docs/15313843/images/22249609)
+![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_6.png)
 
 ## Sample Ticket
 
 The script will generate the tickets utilizing the subject and message stored in the Alerting tab of the monitor set.  
-![Image](5078775/docs/15313843/images/22249710)
+![Image](..\..\..\static\img\Ticket-Creation---Ping-Monitor\image_7.png)
 
 ## Output
 
 - Ticket
+
 

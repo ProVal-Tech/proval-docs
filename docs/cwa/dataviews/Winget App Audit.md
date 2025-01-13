@@ -42,3 +42,4 @@ Displays the information of `Winget` supported applications fetched by the [Wing
 | Data Collection Time      | Data Collection Time.                                                                                    |
 
 
+

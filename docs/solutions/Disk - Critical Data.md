@@ -34,3 +34,4 @@ The solution summary focuses on gathering hard drive failure data from target ma
 - Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) Internal Monitor.
 - Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) Internal Monitor, check the monitor's document for implementation and alert template.
 
+

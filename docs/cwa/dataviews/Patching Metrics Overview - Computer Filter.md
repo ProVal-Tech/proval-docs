@@ -60,3 +60,4 @@ The approval age is divided into five categories:
 [![Sample Screenshot](thumbnail/2023-01-21_00_44_23-Patching_Metrics_Overview_-_Computer_Filter_Data_Summary.png)](large/2023-01-21_00_44_23-Patching_Metrics_Overview_-_Computer_Filter_Data_Summary.png)
 
 
+

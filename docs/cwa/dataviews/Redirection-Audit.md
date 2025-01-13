@@ -65,3 +65,4 @@ LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)
 LEFT JOIN locations l ON (l.LocationID = c.LocationID)
 ```
 
+

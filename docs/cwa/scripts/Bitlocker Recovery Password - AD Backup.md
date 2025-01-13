@@ -24,7 +24,7 @@ This Automate script executes the Backup-BitlockerRecoveryPW.ps1 agnostic script
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10672949/images/14820666)
+![Sample Run](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_1.png)
 
 ### Output
 
@@ -39,32 +39,33 @@ This Automate script executes the Backup-BitlockerRecoveryPW.ps1 agnostic script
 ## GPO Creation Process
 
 1. Click the Search icon in the taskbar and type “**group policy**“. You can then click **Group Policy Management** to launch it.
-   ![Step 1](5078775/docs/9045331/images/16626828)
+   ![Step 1](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_2.png)
 
 2. Now in the left pane of Group Policy Management, right-click your AD domain and select “**Create a GPO in this domain, and Link it here…**” from the menu.
-   ![Step 2](5078775/docs/9045331/images/16626838)
+   ![Step 2](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_3.png)
 
 3. In the New GPO dialog, give the GPO a name and click **OK**.
-   ![Step 3](5078775/docs/9045331/images/16626843)
+   ![Step 3](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_4.png)
 
 ### Configuration
 
 4. Right-click the newly-created GPO in the left pane, and select **Edit**.
-   ![Step 4](5078775/docs/9045331/images/16626854)
+   ![Step 4](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_5.png)
 
 5. Browse to `Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> BitLocker Drive Encryption`, and then double-click the policy “**Store BitLocker recovery information in Active Directory Domain Services**“.
-   ![Step 5](5078775/docs/9045331/images/16626860)
+   ![Step 5](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_6.png)
 
 6. Set the policy to **Enabled**. Make sure the “**Require BitLocker backup to AD DS**” option is checked, and select to store both recovery passwords and key packages.
-   ![Step 6](5078775/docs/9045331/images/16626869)
+   ![Step 6](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_7.png)
 
 7. Next, expand **BitLocker Drive Encryption** in the left pane. You’ll see three nodes: Fixed Data Drives, Operating System Drives, Removable Data Drives. Just select Fixed Data Drives and double-click the policy “**Choose how BitLocker-protected fixed drives can be recovered**“.
-   ![Step 7](5078775/docs/9045331/images/16626888)
+   ![Step 7](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_8.png)
 
 8. Set it to **Enabled**. Check the options “Save BitLocker recovery information to AD DS for fixed drives” and then click OK.
-   ![Step 8](5078775/docs/9045331/images/16626894)
+   ![Step 8](..\..\..\static\img\Bitlocker-Recovery-Password---AD-Backup\image_9.png)
 
 9. Go to the “Operating System Drives” node and turn on the similar policy “**Choose how BitLocker-protected operating system drives can be recovered**“. Afterwards, go to the “Removable Data Drives” node and enable the policy “**Choose how BitLocker-protected removable drives can be recovered**“.
 
 10. When any client PC retrieves the policy changes, BitLocker recovery information will be automatically and silently backed up to AD DS when BitLocker is turned on for fixed drives, OS drives or removable drives.
+
 

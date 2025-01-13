@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8141146/images/11334075)
+![Sample Run](..\..\..\static\img\Windows-Firewall---Enable\image_1.png)
 
 ## Process
 
@@ -26,5 +26,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

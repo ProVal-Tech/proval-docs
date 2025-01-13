@@ -29,3 +29,4 @@ Stores baseline information about Office 365 users gathered by the script [O365 
 | 2FAStatus   | CHAR | String denoting the type of 2FA set up on the account.         |
 | ContactID   | INT  | The ContactID associated with the O365 user. Will be NULL if a match cannot be found. |
 
+

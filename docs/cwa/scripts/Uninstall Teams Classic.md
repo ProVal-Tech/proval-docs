@@ -18,7 +18,7 @@ This script uninstalls `Microsoft Teams Classic` from Windows machines.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/16069386/images/23465488)
+![Sample Run](..\..\..\static\img\Uninstall-Teams-Classic\image_1.png)
 
 ## Global Parameters
 
@@ -44,4 +44,5 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@  
+
 

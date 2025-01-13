@@ -15,7 +15,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156774/images/11437988)  
+![Sample Run](..\..\..\static\img\Windows-Hello-for-Business---Disable\image_1.png)  
 
 ## Process
 
@@ -24,5 +24,6 @@ This script disables Windows Hello for Business by adding in the registry key `H
 ## Output
 
 - Script log  
+
 
 

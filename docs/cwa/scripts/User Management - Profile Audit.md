@@ -19,7 +19,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8011047/images/11150237)
+![Sample Run](..\..\..\static\img\User-Management---Profile-Audit\image_1.png)
 
 ## Dependencies
 
@@ -46,5 +46,6 @@ Time Saved by Automation: 15 Minutes
 - Script log
 - [custom_proval_computer_accounts](https://proval.itglue.com/DOC-5078775-7966268)
 - @Windows – Local Account Audit (Dataview)
+
 
 

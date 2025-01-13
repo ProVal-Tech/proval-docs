@@ -29,7 +29,7 @@ Reboot the computer.
 **Target:** Windows Device  
 **Note:** This script will forcefully reboot to the target device. It may not be ideal to run this script during business hours.
 
-![Sample Run](5078775/docs/8002408/images/15004547)
+![Sample Run](..\..\..\static\img\Patch-Error-Troubleshooting\image_1.png)
 
 ## Process
 
@@ -47,5 +47,6 @@ Reboot the computer.
 ## Output
 
 **Script logs**
+
 
 

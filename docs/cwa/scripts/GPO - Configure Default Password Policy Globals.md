@@ -16,7 +16,7 @@ The script modifies the properties of the default password policy for a domain. 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8181459/images/11386747)
+![Sample Run](..\..\..\static\img\GPO---Configure-Default-Password-Policy-Globals\image_1.png)
 
 #### Global Parameters
 
@@ -40,5 +40,6 @@ The script modifies the properties of the default password policy for a domain. 
 ## Output
 
 - Script log
+
 
 

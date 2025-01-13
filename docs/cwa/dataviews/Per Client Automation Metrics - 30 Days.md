@@ -26,3 +26,4 @@ The data displayed in the dataview are from the past 30 days only.
 | Total Tickets Generated        | Total number of tickets generated in the past 30 days for the client.                                         |
 | Total time Saved by Automation | Total amount of time saved by the Automation in the past 30 days for the client. The logic uses the time saved filed of the script, and then falls back to the run time interval if it's not filled. Format: Days:Hours:Minutes:Seconds |
 
+

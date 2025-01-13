@@ -43,27 +43,27 @@ This solution is built to monitor the Windows Cluster Shared volume, create tick
    - [Dataview - Windows Cluster Volume Space Audit [Script]](https://proval.itglue.com/DOC-5078775-15952792)
 
 2. Reload the system cache:
-   ![Reload Cache](5078775/docs/15952793/images/23244463)
+   ![Reload Cache](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_1.png)
 
 3. Configure the Audit script by following the below steps:
    - Navigate to Automation -> Scripts.
    - Open the script "Windows Cluster Volume Space Audit [DV]" and click debug.
    - Select any random client and computer.
    - Set the value of the Set_Environment Parameter to 1 and click OK.  
-   ![Set Environment](5078775/docs/15952793/images/23480963)
+   ![Set Environment](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_2.png)
    - Once the debugger screen opens, click Start and Finish.  
-   ![Start Finish](5078775/docs/15952793/images/23480966)  
-   ![Completion](5078775/docs/15952793/images/23480967)
+   ![Start Finish](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_3.png)  
+   ![Completion](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_4.png)
    - Once the script is completed successfully, Click OK.
 
 4. Reload the system cache:
-   ![Reload Cache](5078775/docs/15952793/images/23244463)
+   ![Reload Cache](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_1.png)
 
 5. Navigate to Browse -> Groups -> _System Automation -> Cluster Detected. Launch it by double-clicking on it.  
-   ![Cluster Detected](5078775/docs/15952793/images/23480970)  
+   ![Cluster Detected](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_5.png)  
    Navigate to Computers -> Scheduled Scripts.  
    It should show the below schedule of the "Windows Cluster Volume Space Audit [DV]" script:  
-   ![Scheduled Scripts](5078775/docs/15952793/images/23480974)
+   ![Scheduled Scripts](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_6.png)
 
 ### Alerting
 
@@ -73,7 +73,7 @@ This solution is built to monitor the Windows Cluster Shared volume, create tick
    - Alert Template - △ CUSTOM - Execute Script - Windows Cluster Shared Volume.
 
 2. Reload the system cache:
-   ![Reload Cache](5078775/docs/15952793/images/23244463)
+   ![Reload Cache](..\..\..\static\img\Solution---Windows-Cluster-Shared-Volume\image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Browse -> Groups -> _System Automation -> Cluster Detected.
@@ -81,5 +81,6 @@ This solution is built to monitor the Windows Cluster Shared volume, create tick
      - Set up with alert template `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
 
 > Note: The autofix [Script - Windows Cluster Shared Volume [Autofix,Ticket]](https://proval.itglue.com/DOC-5078775-15952795) also calls the [Script - Windows Cluster Volume Space Audit [DV]](https://proval.itglue.com/DOC-5078775-15952791) whenever the cluster volume space is detected below 20% as a warning or below 10% as an error. So, this maintains the fresh audit report for the ones we need to keep an eye on.
+
 
 

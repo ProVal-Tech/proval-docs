@@ -14,7 +14,7 @@ This is an automate implementation of the Disable-PowershellVersion2 agnostic sc
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11192970/images/15640253)
+![Sample Run](..\..\..\static\img\Powershell-V2---Disable\image_1.png)
 
 ## Dependencies
 
@@ -23,4 +23,5 @@ This is an automate implementation of the Disable-PowershellVersion2 agnostic sc
 ## Process
 
 Please review the agnostic content document for complete process.
+
 

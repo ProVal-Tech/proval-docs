@@ -38,5 +38,6 @@ The purpose of the dataview is to display the historical data of the user's idle
 
 ## Sample Screenshot
 
-![Sample Screenshot](5078775/docs/12929901/images/18447330)
+![Sample Screenshot](..\..\..\static\img\IdleMon-Report\image_1.png)
+
 

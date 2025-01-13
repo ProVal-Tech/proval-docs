@@ -145,8 +145,8 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 2.
 Perform `Refresh Searches` and `Do Group Refresh` from `MySQL Server Status` tool.
 
-![Image 1](5078775/docs/14461257/images/20904398)
-![Image 2](5078775/docs/14461257/images/20904402)
+![Image 1](..\..\..\static\img\Implement--SMB1-Traffic-Detection\image_1.png)
+![Image 2](..\..\..\static\img\Implement--SMB1-Traffic-Detection\image_2.png)
 
 ## Step 3.
 Reload System Cache after a couple of minutes.
@@ -157,8 +157,9 @@ Refresh Groups and Look for the `SMB1 Server Enabled [Remote Monitor]` group.
 ## Step 5.
 Validate the presence of the `SMB1 Traffic Detection` remote monitor on the group.
 
-![Image](5078775/docs/14461257/images/20904445)
+![Image](..\..\..\static\img\Implement--SMB1-Traffic-Detection\image_3.png)
 
 ## Step 6.
 Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854) script for errors/failures.
+
 

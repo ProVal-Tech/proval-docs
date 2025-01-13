@@ -16,7 +16,7 @@ This script is used to enforce the installation of an extension or list of exten
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8175231/images/11377573)
+![Sample Run](..\..\..\static\img\Microsoft-Edge---Install-Extension\image_1.png)
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ The script takes a single parameter which is an array of ExtensionIDs to install
 ## Output
 
 - Script log
+
 
 

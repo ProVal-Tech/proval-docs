@@ -14,7 +14,7 @@ The script creates an RDP shortcut on the desktop of each user on a Windows comp
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13745294/images/20017128)
+![Sample Run](..\..\..\static\img\Desktop-Shortcut---Create---RDP\image_1.png)
 
 #### User Parameters
 
@@ -27,7 +27,8 @@ The script creates an RDP shortcut on the desktop of each user on a Windows comp
 
 - Script Log
 - RDP shortcut on user's desktop:
-  ![Shortcut Image 1](5078775/docs/13745294/images/19772658)
-  ![Shortcut Image 2](5078775/docs/13745294/images/19772664)
+  ![Shortcut Image 1](..\..\..\static\img\Desktop-Shortcut---Create---RDP\image_2.png)
+  ![Shortcut Image 2](..\..\..\static\img\Desktop-Shortcut---Create---RDP\image_3.png)
+
 
 

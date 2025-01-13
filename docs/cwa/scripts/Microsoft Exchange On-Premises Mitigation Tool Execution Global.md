@@ -16,7 +16,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8104916/images/11285473)
+![Sample Run](..\..\..\static\img\Microsoft-Exchange-On-Premises-Mitigation-Tool-Execution-Global\image_1.png)
 
 #### Global Parameters
 
@@ -32,5 +32,6 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Logfile named as msert.log
+
 
 

@@ -53,7 +53,7 @@ Gathers and displays information about Windows user profiles.
    - [Dataview - Windows - User Profiles](https://proval.itglue.com/DOC-5078775-8476497)
 
 5. Reload the System Cache  
-   ![Reload System Cache](5078775/docs/15227185/images/22118560)
+   ![Reload System Cache](..\..\static\img\Windows-User-Profiles\image_1.png)
 
 6. Configure the solution as follows:
    - Navigate to Automation → Scripts to perform the below task:
@@ -73,4 +73,5 @@ Optional Configuration (Client Performed):
        - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
        - Right-click and Run Now to start the monitor.
      - Use the mentioned [Remote Monitor](https://proval.itglue.com/5078775/docs/17975723) to exclude any domain trust relationship issues.
+
 

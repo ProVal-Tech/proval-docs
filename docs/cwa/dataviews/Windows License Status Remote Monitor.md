@@ -32,3 +32,4 @@ This will display the status of the Windows License fetched by the remote monito
 | Windows License Status  | The status of the windows license if it is got expired or about to expired or is licensed. |
 
 
+

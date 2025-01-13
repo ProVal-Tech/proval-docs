@@ -1,0 +1,101 @@
+---
+id: 'cwa-active-directory-reporting'
+title: 'Active Directory Reporting Solution'
+title_meta: 'Active Directory Reporting Solution for Clients'
+keywords: ['active-directory', 'report', 'user', 'assessment', 'group', 'computer', 'audit']
+description: 'This document provides a comprehensive guide to generating professional Active Directory reports that clients can use to assess and clean up their Active Directories. It includes example reports, detailed descriptions of included reports, associated content, implementation instructions, FAQs, and potential problems to watch out for.'
+tags: ['active-directory', 'report', 'user', 'group', 'computer', 'security']
+draft: false
+unlisted: false
+---
+## Purpose
+
+To provide clients with a professional looking Active Directory report that they can present to Clients and use to clean up Client Active Directories.
+
+## Example Reports
+
+[![AD User Assessment - Main Example Page](thumbnail/AD_User_Assessment_-_Main_Example_Page.png)](large/AD_User_Assessment_-_Main_Example_Page.png)
+[![AD User Assessment - Domain Admin Page](thumbnail/AD_User_Assessment_-_Domain_Admin_Page.png)](large/AD_User_Assessment_-_Domain_Admin_Page.png)
+[![AD User Assessment - Users Example Page](thumbnail/AD_User_Assessment_-_Users_Example_Page.png)](large/AD_User_Assessment_-_Users_Example_Page.png)
+[![AD User Assessment - Duplicate Accounts Example Page](thumbnail/AD_User_Assessment_-_Duplicate_Accounts_Example_Page.png)](large/AD_User_Assessment_-_Duplicate_Accounts_Example_Page.png)
+[![AD User Groups - Graph Example Page](thumbnail/AD_User_Groups_-_Graph_Example_Page.png)](large/AD_User_Groups_-_Graph_Example_Page.png)
+[![AD User Groups - Group List Example Page](thumbnail/AD_User_Groups_-_Group_List_Example_Page.png)](large/AD_User_Groups_-_Group_List_Example_Page.png)
+[![Computers in Active Directory - No Agent - Example Page](thumbnail/Computers_in_Active_Directory_-_No_Agent_-_Example_Page.png)](large/Computers_in_Active_Directory_-_No_Agent_-_Example_Page.png)
+
+## Reports Included
+
+| Content                                                                                                           | Type   | Function                                                                                                                         |
+|-------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------|
+| [Report - Active Directory User Assessment](https://proval.itglue.com/DOC-5078775-9493611)                       | Report | Displays a overall health view of the Clients Active Directory along with a full user report                                     |
+| [Report - Active Directory User Groups - Detail](https://proval.itglue.com/DOC-5078775-9570449)                  | Report | Displays a complete user list with all groups that each user is in, along with a overall view of what groups are used the most. |
+| [Report - Computers in Active Directory - No Agent](https://proval.itglue.com/DOC-5078775-9570676)              | Report | Displays a list of all computers that are in Active Directory but not in Automate. Can be used to clean up Client Active Directories. |
+| SubPageHeaderLandscape                                                                                             | Subreport | Used as the template for the page header on these reports.                                                                        |
+
+## Associated Content
+
+### Automate Content
+
+| Content                                                                                                           | Type   | Function                                                                                                                         |
+|-------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------|
+| [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)     | Script | This script utilizes the agnostic script [EPM - Accounts - Agnostic - Script - Test-Credentials](https://proval.itglue.com/DOC-5078775-9590057) to test the hashed credentials in AD against a known compromised or weak list. It returns items to be placed into a custom table plugin_proval_ad_pwd_audit. |
+| [AD - Create Views/Table/Schedule for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882)    | Script | This creates all of the needed items in the Database to ensure the [Active Directory Reporting Solution](https://proval.itglue.com/DOC-5078775-9331097) functions correctly. |
+
+### Additional Content
+
+| Content                                                                                                           | Type   | Function                                                                                                                         |
+|-------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------|
+| [Active Directory Reporting SQL Import Attachment](https://proval.itglue.com/DOC-5078775-15079008)               | Document | Please download the Import_All_AD_Reports.sql attached to this document.                                                       |
+| [RSM - Active Directory - Agnostic - Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592)       | Agnostic Content | Agnostic method of gathering information on users with potentially compromised passwords by querying currently available comprehensive lists of known password hashes. It is used in the Automate script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761). |
+
+## Dependencies
+
+These reports are dependent on the following items:
+
+1. [AD - Create Views/Table/Schedule for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882)
+2. [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)
+3. The Active Directory Plugin must be installed and configured for these reports to function.
+
+## Implementation
+
+1. Import the Script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) (This needs to be imported before creating the Table/Views/and Schedule)
+2. Import the Script [AD - Create Views/Table/Schedule for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882)
+   - Run the script once to create the framework needed for the solution. **Delete the script afterward.**
+3. Download the attached SQL file named 'Import_All_AD_Reports.sql'  
+   Refer to the below doc for the attachment:  
+   [Active Directory Reporting SQL Import Attachment](https://proval.itglue.com/DOC-5078775-15079008)  
+4. Import the file using System → General → Import → SQL File (The SQL file is too large for a remote monitor)
+
+## FAQ
+
+**Q: On the User Assessment Report, How do I get rid of the Red X for Password Compliance Info?**  
+A: A Green Check is displayed when all of the following conditions are met:  
+   1. Minimum Password Length > 8 Characters  
+   2. Password Complexity Enabled  
+   3. Lock Threshold is not set to 'Never Lock Account'  
+   4. Lockout Duration is >= 30 Minutes  
+   5. Reverse Encryption is not enabled  
+
+**Q: On the User Assessment Report, What does 'Weak Password Detection' Mean?**  
+A: The graph seen on the bottom right of the first page indicates whether or not the Active Directory password has been found in a password dictionary. Every password within Active Directory is audited via its hash and compared to the hashes of common passwords or breached ones. By default, the detection goes through a list of 38,647,798 different password combinations that are either common or have been compromised in some way. If a password is found in the dictionary, it will flag it as detected and highlight the user in the list below the graph.
+
+**Q: On the User Assessment Report, What does it mean if a user account has 'Unknown' under the Account Controls column?**  
+A: If you see a user that is reported as Unknown status under Account Controls, it means that the user is using a combination of configuration settings that are not normally used. For example, if a user account is set up to have a non-expiring password, with reverse encryption enabled, and is also disabled, this may produce an 'Unknown' result. To fix this, you can either change the user to remove the uncommon setting (in the example case, this would be the reverse encryption enabled) or you can contact ProVal and we should be able to update the report after getting information on that account.
+
+**Q: On the Computers in Active Directory - No Agent Report, How can a machine in Active Directory have never logged into the domain controller?**  
+A: Typically, if you see 'Never' for the last time the computer logged into the domain, this means it was a computer that was created on a past domain controller that has never logged into the new domain controller. It is normally safe to 'delete' these machines from Active Directory, however, I would recommend disabling them and then deleting them after a week or so just to be safe.
+
+## Potential Problems
+
+If you see the following error when opening one of the reports, it means at least one of the View's or the custom table is missing and is unable to reference it. If they are all there, verify you have full permissions to the table and Views.
+
+![Error Example](..\..\..\static\img\Active-Directory-Reporting-Solution\image_1.png)
+
+If all of your clients do not have any detected weak passwords, the auditing script may not be scheduled. Check the following group to make sure: Service Plans\Windows Servers\Server Roles\Windows Servers Core Services\Domain Controllers [The script should be scheduled here and limited against the 'Server Roles\Server Role - AD - Infrastructure Master' search - Running Every Monday at 6:10AM]
+
+![Scheduled Script Example](..\..\..\static\img\Active-Directory-Reporting-Solution\image_2.png)
+
+If no data is displayed at all in these reports, check to make sure your Active Directory Plugin is installed and configured for the client you are running it on.
+
+![Plugin Example](..\..\..\static\img\Active-Directory-Reporting-Solution\image_3.png)
+
+

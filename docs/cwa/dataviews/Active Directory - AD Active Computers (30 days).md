@@ -29,3 +29,4 @@ The Active directory plugin must be installed and configured properly to detect 
 | Last Contact With RMM      | Displays the Description of the machine if anything is there |
 | Last logon                | Displays the Last Login date and time                  |
 
+

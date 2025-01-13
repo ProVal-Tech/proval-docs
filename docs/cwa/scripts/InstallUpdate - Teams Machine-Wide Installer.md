@@ -14,10 +14,11 @@ An implementation of the agnostic script [SWM - Software Install - Agnostic - De
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14439666/images/20863570)
+![Sample Run](..\..\..\static\img\InstallUpdate---Teams-Machine-Wide-Installer\image_1.png)
 
 ## Output
 
 - Script logs
+
 
 

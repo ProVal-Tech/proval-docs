@@ -14,10 +14,10 @@ Runs Windows volume repair against one or more volumes.
 
 ## Sample Run
 
-![Sample Run 1](5078775/docs/11420452/images/16031859)  
+![Sample Run 1](..\..\..\static\img\Invoke-RepairVolume\image_1.png)  
 Run a scan and repair on the C drive with minimal drive interruption.
 
-![Sample Run 2](5078775/docs/11420452/images/16031876)  
+![Sample Run 2](..\..\..\static\img\Invoke-RepairVolume\image_2.png)  
 Run a scan and repair on all available drives, stopping the drives completely during the process.
 
 ## Dependencies
@@ -40,5 +40,6 @@ Run a scan and repair on all available drives, stopping the drives completely du
 ## Output
 
 - Script log
+
 
 

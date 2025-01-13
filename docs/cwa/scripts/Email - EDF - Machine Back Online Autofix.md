@@ -38,5 +38,6 @@ To be executed as an Autofix script only. The `△ Custom - E-Mail - Machine Bac
 
 - Email  
   Sample Email:  
-  ![Sample Email](5078775/docs/11753156/images/16462862)
+  ![Sample Email](..\..\..\static\img\Email---EDF---Machine-Back-Online-Autofix\image_1.png)
+
 

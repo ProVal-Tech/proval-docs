@@ -17,7 +17,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8143435/images/11336324)
+![Sample Run](..\..\..\static\img\Audit-WMI-Patch-History\image_1.png)
 
 ## Dependencies
 
@@ -31,5 +31,6 @@ This script audits the current patch history from .NET to a custom table (plugin
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
+
 
 

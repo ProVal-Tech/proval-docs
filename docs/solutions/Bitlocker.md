@@ -24,7 +24,7 @@ To manage Bitlocker protection on endpoints.
   - [Dataview - Bitlocker Status - Retired Computers](https://proval.itglue.com/DOC-5078775-17010179)
 - Sync the modified scripts from the `Prosync` plugin and run the [Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script against any online Windows computer with the `Set_Environment` parameter set to `1` to modify the custom tables.
 
-![Image](5078775/docs/14876168/images/26077520)
+![Image](..\..\static\img\Bitlocker\image_1.png)
 
 ## Associated Content
 
@@ -91,10 +91,10 @@ To manage Bitlocker protection on endpoints.
    - Windows Server BitLocker-RemoteAdminTool
 
 6. Reload the System Cache  
-   ![Image](5078775/docs/14876168/images/21622864)
+   ![Image](..\..\static\img\Bitlocker\image_2.png)
 
 7. Execute the [Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) against any online windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution.  
-   ![Image](5078775/docs/14876168/images/26077539)
+   ![Image](..\..\static\img\Bitlocker\image_3.png)
 
 8. Configure the solution as follows:
    - Navigate to Automation --> Monitors within the CWA Control Center and setup the following:
@@ -143,5 +143,6 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](https://proval.itglue.com/DOC-5078775-13808694).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
+
 
 

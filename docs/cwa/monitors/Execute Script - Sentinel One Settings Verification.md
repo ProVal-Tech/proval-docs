@@ -26,3 +26,4 @@ Name: △ CUSTOM - Execute Script - Sentinel One Settings Verification
 
 Note* - Ensure to import [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820) script before importing/creating the alert template as the template should run this script.
 
+

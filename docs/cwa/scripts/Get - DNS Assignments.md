@@ -14,7 +14,7 @@ The script retrieves details about accessible network adapters from a Windows co
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14378277/images/20772274)
+![Sample Run](..\..\..\static\img\Get---DNS-Assignments\image_1.png)
 
 ## Variables
 
@@ -31,5 +31,6 @@ The script retrieves details about accessible network adapters from a Windows co
 - Script Log
 - Custom Table
 - Dataview
+
 
 

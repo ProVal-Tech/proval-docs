@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8199528/images/11413549)
+![Sample Run](..\..\..\static\img\Mozilla-Firefox---Set-Homepage\image_1.png)
 
 ## Dependencies
 
@@ -44,4 +44,5 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
 

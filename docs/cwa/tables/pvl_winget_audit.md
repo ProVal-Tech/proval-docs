@@ -34,3 +34,4 @@ Stores the audit data fetched by the [Winget App Audit](https://proval.itglue.co
 | DataCollectionTime  | datetime  | Data Collection Time.                                                                            |
 
 
+

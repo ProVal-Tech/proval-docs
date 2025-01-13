@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8116260/images/11299499)
+![Sample Run](..\..\..\static\img\Screensaver---Enable-Mystify-Globals\image_1.png)
 
 ### Global Parameters
 
@@ -32,5 +32,6 @@ The script will run a PowerShell script to create a scheduled task that will ena
 ## Output
 
 - Script log
+
 
 

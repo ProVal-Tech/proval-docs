@@ -25,3 +25,4 @@ This Dataview shows all the agents with their HeartBeat data and status.
 | Heartbeat Status          | Display the agent heartbeat status. Whether it's found or Missing. |
 | Days Since Last Heartbeat  | Display the days count since the Last Heartbeat was received.  |
 
+

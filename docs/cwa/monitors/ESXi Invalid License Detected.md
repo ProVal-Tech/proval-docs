@@ -26,11 +26,12 @@ Global
 
 **Body:** `The ESXi Host @ESXHostName@ (Device ID: %result%) is reporting in Automate with an invalid license key and has been added to Automate for at least 14 days. Typically ESXi hosts may be setup with a trial key early on but should be transitioned to a full license after onboarding. Please review the detected host and see if a license needs to be applied. The current license key is reporting: %fieldname%`
 
-![Image](5078775/docs/13433276/images/19446762)
+![Image](..\..\..\static\img\ESXi-Invalid-License-Detected\image_1.png)
 
 ## Alert Template
 
 **Name:** `△ Custom - Ticket Creation - ESXi Monitoring`
 
 **The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-10689215) **script on failure.**
+
 

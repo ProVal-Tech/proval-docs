@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8220356/images/11443555)
+![Sample Run](..\..\..\static\img\Dell-Command-Configure---Command-Handler\image_1.png)
 
 The script provides the syntax `CCTK.exe --`. See example in screenshot.
 
@@ -49,4 +49,5 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
+
 

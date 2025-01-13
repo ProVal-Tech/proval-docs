@@ -16,15 +16,15 @@ This script will create a ticket in our (ProVal's) AutoTask portal if the overal
 
 ## Sample Run
 
-![Sample Run Image](5078775/docs/10390940/images/14561549)
+![Sample Run Image](..\..\..\static\img\Database-size-increased-by-5%Global\image_1.png)
 
 On Prem Partners: preferred way to run/schedule the script: 
 
-![On Prem Partners Image](5078775/docs/10390940/images/14561550)
+![On Prem Partners Image](..\..\..\static\img\Database-size-increased-by-5%Global\image_2.png)
 
 Hosted Partners: Preferred way to run/schedule the script:
 
-![Hosted Partners Image](5078775/docs/10390940/images/14567316)
+![Hosted Partners Image](..\..\..\static\img\Database-size-increased-by-5%Global\image_3.png)
 
 The script can be scheduled against a 24x7 online server. A domain controller is typically a good choice as they tend to have high uptime. **Note: if the agent on the DC is reinstalled, or has a change to the computerid, this script will need to be scheduled again against the new agent.**
 
@@ -78,4 +78,5 @@ Here's the list of 10 largest tables:
 
 - Script States
 - Email
+
 

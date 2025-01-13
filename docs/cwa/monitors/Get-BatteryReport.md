@@ -29,3 +29,4 @@ The nature of the monitor is to select all computers which have returned a valid
 
 The Alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978) script.
 
+

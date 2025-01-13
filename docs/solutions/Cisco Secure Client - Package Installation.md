@@ -38,14 +38,14 @@ Installs the Cisco Secure client and selected modules for both Windows and Macin
    - `△ Custom - Execute Script - Cisco Secure Client - Package Installation [Wrapper]`
 
 4. Reload the System Cache  
-   ![Reload the System Cache](5078775/docs/15889185/images/23125730)
+   ![Reload the System Cache](..\..\static\img\Cisco-Secure-Client---Package-Installation\image_1.png)
 
 5. Configure the Windows Installation Script as outlined below:
    - Go to Ltshare (WebDAV for hosted partners) and create `LTShare\Transfer\Software\Cisco_Secure_Client` if it's not already created.
    - Go to [Software Download - Cisco Systems](https://software.cisco.com/download/home/286330811/type/282364313/release/5.1.3.62)
    - Download the latest version of `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` and place it in LTShare (WebDAV for hosted partners) at `LTShare\Transfer\Software\Cisco_Secure_Client` as `Cisco_Secure_Client.zip`.  
-     ![Cisco Secure Client Zip](5078775/docs/15889185/images/23126118)  
-     ![Cisco Secure Client Zip](5078775/docs/15889185/images/23126122)
+     ![Cisco Secure Client Zip](..\..\static\img\Cisco-Secure-Client---Package-Installation\image_2.png)  
+     ![Cisco Secure Client Zip](..\..\static\img\Cisco-Secure-Client---Package-Installation\image_3.png)
    - Navigate to Automation → Scripts to perform the below task:
      - Open [SWM - Software Install - Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604) and debug it against any machine with "Set Environment" = 1 to create all the EDFs.
 
@@ -53,8 +53,8 @@ Installs the Cisco Secure client and selected modules for both Windows and Macin
    - Go to Ltshare (WebDAV for hosted partners) and create `LTShare\Transfer\Software\Cisco_Secure_Client` if it's not already created.
    - Go to [Software Download - Cisco Systems](https://software.cisco.com/download/home/286330811/type/282364313/release/5.1.3.62)
    - Download the latest version of `Cisco Secure Client Pre-Deployment Package (Mac OS)` and place it in LTShare (WebDAV for hosted partners) at `LTShare\Transfer\Software\Cisco_Secure_Client` as `Cisco_Secure_Client.dmg`.  
-     ![Cisco Secure Client DMG](5078775/docs/15889185/images/23126506)  
-     ![Cisco Secure Client DMG](5078775/docs/15889185/images/23126507)
+     ![Cisco Secure Client DMG](..\..\static\img\Cisco-Secure-Client---Package-Installation\image_4.png)  
+     ![Cisco Secure Client DMG](..\..\static\img\Cisco-Secure-Client---Package-Installation\image_5.png)
    - Navigate to Automation → Scripts to perform the below task:
      - Open [SWM - Software Install - Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960) and debug it against any machine with "Set Environment" = 1 to create all EDFs.
 
@@ -64,4 +64,5 @@ Installs the Cisco Secure client and selected modules for both Windows and Macin
      - Right-click and Run Now to start the monitor.
 
 8. Work with the partner on Cisco Secure Client modules they would like to install for both MAC and Windows. Set the Cisco Secure Client EDFs accordingly. For more information on these modules and EDFs, go to [Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960) and [Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604).
+
 

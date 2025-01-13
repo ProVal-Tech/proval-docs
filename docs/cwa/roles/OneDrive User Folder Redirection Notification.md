@@ -18,3 +18,4 @@ This role will determine if the folder redirection notifications are enabled for
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM\SOFTWARE\Policies\Microsoft\OneDrive:KFMSilentOptInWithNotification-%}` | Equals     | 1      | Windows OS     |
 
+

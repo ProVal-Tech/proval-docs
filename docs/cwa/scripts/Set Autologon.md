@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8047246/images/11198825)
+![Sample Run](..\..\..\static\img\Set-Autologon\image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,6 @@ This script will download the Autologon.exe from Microsoft to the LTSvc folder. 
 ## Output
 
 - Script log messages
+
 
 

@@ -35,3 +35,4 @@ Stores gpresult information from the script [EPM - Windows Configuration - Scrip
 | SecurityFilter | VARCHAR   | Shows the security filters that were applied that led to the GPO application.                  |
 
 
+

@@ -20,7 +20,7 @@ This monitor will check the status of the `VeeamBackupSvc` service and restart i
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|-------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 300      | ![Result Image](5078775/docs/16366362/images/23932280) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 300      | ![Result Image](..\..\..\static\img\SWM---Service-Restart--Veeam-Service-Monitor\image_1.png) |
 
 ## Dependencies
 
@@ -29,7 +29,7 @@ This monitor will check the status of the `VeeamBackupSvc` service and restart i
 ## Target
 
 Managed Computers with `VeeamBackupSvc` service.  
-![Target Image](5078775/docs/16366362/images/23932321)  
+![Target Image](..\..\..\static\img\SWM---Service-Restart--Veeam-Service-Monitor\image_2.png)  
 
 ## Ticketing
 
@@ -48,4 +48,5 @@ Managed Computers with `VeeamBackupSvc` service.
 ## Implementation
 
 [Implement - Remote Monitor - Veeam Service Monitor](https://proval.itglue.com/DOC-5078775-16366763)
+
 

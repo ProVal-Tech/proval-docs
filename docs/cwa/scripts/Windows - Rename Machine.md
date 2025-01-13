@@ -16,9 +16,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run Image 1](5078775/docs/8175270/images/11427578)
+![Sample Run Image 1](..\..\..\static\img\Windows---Rename-Machine\image_1.png)
 
-![Sample Run Image 2](5078775/docs/8175270/images/11378184)
+![Sample Run Image 2](..\..\..\static\img\Windows---Rename-Machine\image_2.png)
 
 ## Dependencies
 
@@ -59,5 +59,6 @@ If there are errors in the run of the script, an error file will be generated:
 ```
 .\Rename-Machine-error.txt
 ```
+
 
 

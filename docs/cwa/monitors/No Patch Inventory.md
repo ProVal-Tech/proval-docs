@@ -17,3 +17,4 @@ This Internal Monitor detects machines where patch inventory shows 0 available p
 Global
 
 
+

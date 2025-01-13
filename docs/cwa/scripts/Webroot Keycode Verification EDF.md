@@ -14,7 +14,7 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14989420/images/21699973)
+![Sample Run](..\..\..\static\img\Webroot-Keycode-Verification-EDF\image_2.png)
 
 ## Dependencies
 
@@ -33,4 +33,5 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 - Script log
 - EDF
 - Dataview
+
 

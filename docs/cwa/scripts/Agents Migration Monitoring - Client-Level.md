@@ -14,7 +14,7 @@ The script's objective is to identify the computers that have been transferred f
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12597806/images/17842996)
+![Sample Run](..\..\..\static\img\Agents-Migration-Monitoring---Client-Level\image_1.png)
 
 It is a client script that has to be set up to run on a regular basis, either daily or hourly.
 
@@ -47,5 +47,6 @@ It is a client script that has to be set up to run on a regular basis, either da
 
 ## Sample Ticket
 
-![Sample Ticket](5078775/docs/12597806/images/17843247)
+![Sample Ticket](..\..\..\static\img\Agents-Migration-Monitoring---Client-Level\image_2.png)
+
 

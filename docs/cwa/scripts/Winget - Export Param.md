@@ -28,15 +28,15 @@ Path to the reports on local machine:
 
 **Example 1:** Export and place the `Softwarelist.json` file at `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json` on end machine.
 
-![Example 1](5078775/docs/15494298/images/22550583)
+![Example 1](..\..\..\static\img\Winget---Export-Param\image_1.png)
 
 **Example 2:** Export and place both `software.json` and `software.csv` files respectively at `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json` and `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.csv` on end machine. Send out the reports to the user running the script via separate emails.
 
-![Example 2](5078775/docs/15494298/images/22550680)
+![Example 2](..\..\..\static\img\Winget---Export-Param\image_2.png)
 
 **Example 3:** Export and place both `software.json` and `software.csv` files respectively at `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json` and `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.csv` on end machine. Send out the reports to [support@provaltech.com](mailto:support@provaltech.com) via separate emails.
 
-![Example 3](5078775/docs/15494298/images/22550717)
+![Example 3](..\..\..\static\img\Winget---Export-Param\image_3.png)
 
 ### User Parameters
 
@@ -50,5 +50,6 @@ Path to the reports on local machine:
 
 - Script logs
 - Email(s) (if enabled)
+
 
 

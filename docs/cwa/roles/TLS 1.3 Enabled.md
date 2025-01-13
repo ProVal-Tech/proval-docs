@@ -38,3 +38,4 @@ Related Dataview
 | {%-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client:Enabled-%} | Equals     | 1      | Windows        |
 
 
+

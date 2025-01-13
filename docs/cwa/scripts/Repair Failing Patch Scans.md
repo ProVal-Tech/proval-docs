@@ -18,7 +18,7 @@ This script was designed to be called from a monitor.
 
 To run this script manually, please see the below screenshots.
 
-![Screenshot](5078775/docs/8918403/images/12370689)
+![Screenshot](..\..\..\static\img\Repair-Failing-Patch-Scans\image_1.png)
 
 In the Advanced Settings --> Parameters area please enter in the following string of text:
 
@@ -26,7 +26,7 @@ In the Advanced Settings --> Parameters area please enter in the following strin
 @status@=FAILED
 ```
 
-![Screenshot](5078775/docs/8918403/images/12370797)
+![Screenshot](..\..\..\static\img\Repair-Failing-Patch-Scans\image_2.png)
 
 This will allow the script to be run manually instead of called by the monitor.
 
@@ -53,4 +53,5 @@ This autofix script is called by the monitor [ProVal - Development - Last scanne
 
 - Script log messages only
 - Please reach out to [support@provaltech.com](mailto:support@provaltech.com) if you would like this solution to begin ticketing.
+
 

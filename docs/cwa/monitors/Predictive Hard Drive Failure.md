@@ -23,9 +23,9 @@ The EPM - Disk - Internal Monitor - Predictive Hard Drive Failure is an internal
 
 - Replace the `<MONITORID>` in the Additional Condition with the ID of the monitor set.  
   Before:  
-  ![Before](5078775/docs/12662475/images/17944322)  
+  ![Before](..\..\..\static\img\Predictive-Hard-Drive-Failure\image_1.png)  
   After:  
-  ![After](5078775/docs/12662475/images/17944345)
+  ![After](..\..\..\static\img\Predictive-Hard-Drive-Failure\image_2.png)
 
 ## Target
 
@@ -56,4 +56,5 @@ Disk Interface: <Disk Interface>
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
 

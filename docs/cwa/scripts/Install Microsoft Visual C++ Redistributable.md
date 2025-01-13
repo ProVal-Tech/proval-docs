@@ -14,7 +14,7 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/15886924/images/23124903)
+![Sample Run](..\..\..\static\img\Install-Microsoft-Visual-C++-Redistributable\image_1.png)
 
 ## Variables
 
@@ -29,4 +29,5 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 |----------|-----------------------|----------|-----------------------------------------------------------------------------------------------|
 | Release  | 2019<br>2012,2013,2022 | False    | Set the release id(s) of the Redistributable to install.                                   |
 | Purge    | 1                     | False    | Setting this parameter to 1 will remove the unsupported Redistributable and install the supported Redistributable. |
+
 

@@ -12,7 +12,7 @@ unlisted: false
 
 This script is used with the remote monitors of the [Solution - Automate server and CW Manage Plugin Monitoring](https://proval.itglue.com/5078775/docs/10390988) which needed to get created due to static Global Variables and a specific `Subject` that had to be used.
 
-![Image](5078775/docs/11182312/images/21357403)
+![Image](..\..\..\static\img\Automate-Server-Monitoring---Service---Restart-Autofix\image_1.png)
 
 The script will only send a SUCCESS email if a FAILURE email has already been sent for that service.
 
@@ -52,7 +52,7 @@ Will not work manually, it can be used via the `△ Custom - Autofix - Restart S
 |-------------------------------|-------------------------------------------|----------|---------------------------------------------------------------------------------------------------|
 | ProVal_Alerts_Email_Address    | [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | True     | By Default, the system property `ProVal_Alerts_Email_Address` will get set to [alerts@provaltech.com.](mailto:alerts@provaltech.com.) This can be changed in the event these alerts should be going somewhere else. |
 
-![Image](5078775/docs/11182312/images/21357429)
+![Image](..\..\..\static\img\Automate-Server-Monitoring---Service---Restart-Autofix\image_2.png)
 
 #### Script State
 
@@ -72,4 +72,5 @@ Please reference agnostic content documentation for Service Restart Process.
 
 - Script Log
 - Email
+
 

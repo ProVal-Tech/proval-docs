@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8170792/images/11373044)
+![Sample Run](..\..\..\static\img\Force-Contacts-to-'Managed'-(User-Centric)\image_1.png)
 
 ## Dependencies
 
@@ -29,4 +29,5 @@ This script is for use in conjunction with User-Centric. When users are imported
 ## Output
 
 Manage plugin
+
 

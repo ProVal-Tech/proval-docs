@@ -21,3 +21,4 @@ This dataview provides information about available agent licenses in Automate.
 | Online Computers (30 Days)     | Displays the number of machines that have the last contact in the last 30 days |
 | Percentage online              | Displays the percentage of machines that have the last contact in the last 30 days |
 
+

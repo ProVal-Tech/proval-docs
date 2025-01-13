@@ -59,3 +59,4 @@ This dataview displays the Bitlocker information on all computers that have run 
 | TPMActivated           | The activation state of the TPM on the target.                                                                      |
 
 
+

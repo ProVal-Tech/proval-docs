@@ -24,3 +24,4 @@ Iterates through all user appdata/local folders and removes any remaining datto 
 
 ## Output
 .\Remove-DattoRmmAgent-log.txt
+

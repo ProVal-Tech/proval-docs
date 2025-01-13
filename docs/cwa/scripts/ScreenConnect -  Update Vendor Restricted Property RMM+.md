@@ -18,7 +18,7 @@ System property `PropertyIndex` needs to be set before running the script.
 
 Target: Any machine with CW Control installed for setting up the properties.
 
-![Sample Run](5078775/docs/15555264/images/22622715)
+![Sample Run](..\..\..\static\img\ScreenConnect----Update-Vendor-Restricted-Property-RMM+\image_1.png)
 
 ## Dependencies
 
@@ -58,4 +58,5 @@ Target: Any machine with CW Control installed for setting up the properties.
 ## Output
 
 Script log messages only.
+
 

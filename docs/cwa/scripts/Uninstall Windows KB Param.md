@@ -19,11 +19,11 @@ The script will endeavour to remove the targeted update without initiating a sys
 
 The computer will undergo a reboot if the patch necessitates a restart to finalize the removal process.
 
-![Sample Run Image 1](5078775/docs/14195284/images/20486005)
+![Sample Run Image 1](..\..\..\static\img\Uninstall-Windows-KB-Param\image_1.png)
 
 The script will endeavor to prevent an immediate reboot; nonetheless, it is important to acknowledge that, in specific circumstances, the update may autonomously initiate a mandatory system reboot.
 
-![Sample Run Image 2](5078775/docs/14195284/images/20486018)
+![Sample Run Image 2](..\..\..\static\img\Uninstall-Windows-KB-Param\image_2.png)
 
 #### User Parameters
 
@@ -35,5 +35,6 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
+
 
 

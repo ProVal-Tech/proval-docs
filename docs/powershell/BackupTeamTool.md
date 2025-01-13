@@ -55,3 +55,4 @@ By organizing the script into functions and menus, the content operates in a mod
 ## Output
     BackupTeamTool-log.txt
     BackupTeamTool-Error.txt
+

@@ -14,7 +14,7 @@ This process is used to upgrade a Windows operating system to a specific Feature
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7446079/images/11945411)
+![Sample Run](..\..\..\static\img\Windows-10-Feature-Update-Process\image_1.png)
 
 ## Dependencies
 
@@ -149,5 +149,6 @@ $fileStream = [System.IO.File]::OpenRead($zip)
 $hash = $md5.ComputeHash($fileStream)
 $hash -join ','
 ```
+
 
 

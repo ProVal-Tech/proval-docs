@@ -26,7 +26,7 @@ This script utilizes the agnostic script [Test-WeakCredentials](https://proval.i
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9590761/images/13394588)
+![Sample Run](..\..\..\static\img\Weak-Passwords---AD-Test\image_1.png)
 
 ## Dependencies
 
@@ -57,5 +57,6 @@ This script utilizes the agnostic script [Test-WeakCredentials](https://proval.i
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
+
 
 

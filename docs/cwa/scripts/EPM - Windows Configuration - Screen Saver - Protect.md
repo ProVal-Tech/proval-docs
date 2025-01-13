@@ -14,7 +14,7 @@ Ensures that the screen saver settings are enabled and set to the specified time
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8384885/images/11690298)
+![Sample Run](..\..\..\static\img\EPM---Windows-Configuration---Screen-Saver---Protect\image_1.png)
 
 ## Dependencies
 
@@ -50,5 +50,6 @@ See [Protect-ScreenLock](https://proval.itglue.com/DOC-5078775-8381648)
 .\gpresult_computer.html
 .\gpresult_user.html
 ```
+
 
 

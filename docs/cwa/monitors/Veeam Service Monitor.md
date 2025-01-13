@@ -260,15 +260,16 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Now execute your query from a RAWSQL monitor set.  
 Once the query is executed, reload the control center.
 
-![Control Center](5078775/docs/16366763/images/23932732)
+![Control Center](..\..\..\static\img\Veeam-Service-Monitor\image_1.png)
 
 Then re-open the group where the monitor is created.  
 The monitor will come up with the search '`VeeamBackupSvc`' added to the LIMIT.
 
-![Monitor](5078775/docs/16366763/images/23932729)
+![Monitor](..\..\..\static\img\Veeam-Service-Monitor\image_2.png)
 
 ---
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 

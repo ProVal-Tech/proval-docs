@@ -16,11 +16,11 @@ This script utilizes the Crystal Disk Info hard drive testing program to automat
 - Hard Drive reporting predictive failure. Last Run: [<Date/Time>]
 - Hard Drive reporting Bad. Imminent failure possible. Last Run: [<Date/Time>]
 
-![Image](5078775/docs/9078044/images/12571646)
+![Image](..\..\..\static\img\Crystal-Disk-Info---Audit-Disk-Health\image_1.png)
 
 ## Sample Run
 
-![Image](5078775/docs/9078044/images/12571617)
+![Image](..\..\..\static\img\Crystal-Disk-Info---Audit-Disk-Health\image_2.png)
 
 ## Dependencies
 
@@ -70,4 +70,5 @@ The status information gets updated to the following places:
 
 - Script Log
 - Hard Drive Status EDF
+
 

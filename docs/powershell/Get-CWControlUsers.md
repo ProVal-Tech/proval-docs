@@ -51,3 +51,4 @@ Returns all users and their respective properties for the ConnectWise Control se
     System Object
     .\Get-CWControlUsers-Log.txt
     .\Get-CWControlUsers.txt
+

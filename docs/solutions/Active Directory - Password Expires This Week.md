@@ -28,7 +28,7 @@ Alerts the domain user if their domain password is set to expire within the next
    - Alert Template - △ Custom - Password Expiration Notification
 
 2. Reload the system cache:
-   ![Reload the system cache](5078775/docs/11713521/images/26489457)
+   ![Reload the system cache](..\..\static\img\Active-Directory---Password-Expires-This-Week\image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -40,4 +40,5 @@ Alerts the domain user if their domain password is set to expire within the next
 
 **Q: Users are not receiving emails?**  
 A: Ensure that the user has an email address set for their active directory account, Script's global variables are set correctly, and lastly the emails are not failing from Automate.
+
 

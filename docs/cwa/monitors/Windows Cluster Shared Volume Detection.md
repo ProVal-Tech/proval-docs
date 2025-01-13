@@ -86,9 +86,10 @@ unlisted: false
 
 3. Now execute your query from an RAWSQL monitor set.
    - Once the query is executed, reload the system cache
-     - ![Image](5078775/docs/15952816/images/23244840)
+     - ![Image](..\..\..\static\img\Windows-Cluster-Shared-Volume-Detection\image_1.png)
 
 4. Re-open the group where the monitor is created (It should be the `Cluster Detected` group)
    - Validate that the monitor is limited to the search 'Windows 10/11 Machines'
    - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`
+
 

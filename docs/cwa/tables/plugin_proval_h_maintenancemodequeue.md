@@ -28,3 +28,4 @@ Stores historical information about queued maintenance modes. This is filled by 
 | Duration    | INT     | The number of minutes that the maintenance mode will last.              |
 | Mode        | INT     | The type of maintenance mode (1 = Alerts, 2 = Scripts, 3 = Alerts & Scripts) |
 
+

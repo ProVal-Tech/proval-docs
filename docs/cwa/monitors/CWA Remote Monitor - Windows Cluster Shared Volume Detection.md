@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|-------------|------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | <REDACTED>  | State Based | 3600     | <Screenshot below> |
 
-![Image](5078775/docs/15952794/images/23244506)
+![Image](..\..\..\static\img\CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection\image_1.png)
 
 ## Dependencies
 
@@ -34,11 +34,12 @@ Insert the details of the monitor in the below table.
 
 Should be targeted to a Cluster Detected group.
 
-![Image](5078775/docs/15952794/images/23244547)
+![Image](..\..\..\static\img\CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection\image_2.png)
 
 ## Implementation
 
 Please follow the below implementation document to install this content:
 
 - [Import - Remote Monitor - Windows Cluster Shared Volume Detection](https://proval.itglue.com/DOC-5078775-15952816)
+
 

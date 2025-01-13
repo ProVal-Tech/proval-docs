@@ -24,9 +24,10 @@ This monitor checks the online agent where the script [EPM - Data Collection - S
 
 - To set up the ticketing for the keycode mismatch detection it is mandatory to set the ticket category in the monitor.
 
-![Ticketing Setup](5078775/docs/14989291/images/21699969)
+![Ticketing Setup](..\..\..\static\img\Webroot-Keycode-Verification-EDF\image_1.png)
 
 ## Target
 
 - Global
+
 

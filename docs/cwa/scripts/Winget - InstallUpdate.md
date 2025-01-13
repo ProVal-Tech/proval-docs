@@ -14,7 +14,7 @@ Installs a Winget package on a target endpoint.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11956636/images/17934981)
+![Sample Run](..\..\..\static\img\Winget---InstallUpdate\image_1.png)
 
 ## Dependencies
 
@@ -40,5 +40,6 @@ Please Reference [SWM - Software Management - Powershell - Invoke-WingetProcesso
 ## Output
 
 - Script log
+
 
 

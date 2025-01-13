@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8143437/images/11338161)
+![Sample Run](..\..\..\static\img\Microsoft-Edge---Remove-Extension\image_1.png)
 
 ## Dependencies
 
@@ -67,5 +67,6 @@ Example:
 ```
 .\Unregister-EdgeExtension-log.txt
 ```
+
 
 

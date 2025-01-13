@@ -14,7 +14,7 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14894150/images/21557407)
+![Sample Run](..\..\..\static\img\Mozilla-Firefox---Homepage---Set\image_1.png)
 
 ## Dependencies
 
@@ -30,4 +30,5 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Logs
+
 

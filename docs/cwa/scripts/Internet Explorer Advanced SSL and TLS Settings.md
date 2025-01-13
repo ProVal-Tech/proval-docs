@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7770039/images/10838940)
+![Sample Run](..\..\..\static\img\Internet-Explorer-Advanced-SSL-and-TLS-Settings\image_1.png)
 
 ## Dependencies
 
@@ -85,5 +85,6 @@ Various options are:
 - Script log
 - Script state
 - Dataview
+
 
 

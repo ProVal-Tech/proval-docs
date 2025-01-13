@@ -18,11 +18,12 @@ This dataview pulls from the role detection of Fast Boot. This shows all machine
 
 ## Columns
 
-| Column          | Description                                           |
-|-----------------|-------------------------------------------------------|
-| Client Name     | Client Name                                          |
-| Computer Name   | Computer Name                                        |
-| OS              | OS installed on the machine                          |
-| FastBoot status  | Shows FastBoot Enabled if the role is detected, or 'Not Detected' if FastBoot is disabled |
+| Column          | Description                                                                               |
+| --------------- | ----------------------------------------------------------------------------------------- |
+| Client Name     | Client Name                                                                               |
+| Computer Name   | Computer Name                                                                             |
+| OS              | OS installed on the machine                                                               |
+| FastBoot status | Shows FastBoot Enabled if the role is detected, or 'Not Detected' if FastBoot is disabled |
+
 
 

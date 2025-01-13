@@ -34,3 +34,4 @@ This table stores the drive's data of the Hyper-Vs at different schedules of the
 | SSD           | TINYINT  | Disk checks whether SSD or not                   |
 
 
+

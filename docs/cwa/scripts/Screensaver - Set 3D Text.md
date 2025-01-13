@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8157458/images/11354874)
+![Sample Run](..\..\..\static\img\Screensaver---Set-3D-Text\image_1.png)
 
 #### Global Parameters
 
@@ -41,5 +41,6 @@ Please put a message not more than 20 characters (character, integer, spaces, sp
 ## Output
 
 - Script log
+
 
 

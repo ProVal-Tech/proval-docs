@@ -18,7 +18,7 @@ Overall, the "CWM - Automate - Script - Windows Installer Properties [DV]" scrip
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12404266/images/17519861)
+![Sample Run](..\..\..\static\img\Windows-Installer-Properties-DV\image_1.png)
 
 ## Dependencies
 
@@ -38,4 +38,5 @@ Overall, the "CWM - Automate - Script - Windows Installer Properties [DV]" scrip
 - Custom Table
 - Dataview
 - Script Logs
+
 

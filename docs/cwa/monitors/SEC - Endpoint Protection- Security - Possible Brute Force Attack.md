@@ -27,7 +27,7 @@ Change this value from 10 to the desired value after importing the remote monito
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File   | REDACTED      | State Based | 3600     | <Shown Below> |
 
-![Image](5078775/docs/13832378/images/26372437)
+![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_1.png)
 
 **State Conditions:**
 
@@ -44,8 +44,8 @@ Change this value from 10 to the desired value after importing the remote monito
 ## Target
 
 Domain Controllers  
-![Image](5078775/docs/13832378/images/26372565)  
-![Image](5078775/docs/13832378/images/26372559)  
+![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_2.png)  
+![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_3.png)  
 
 ## Alerting
 
@@ -91,10 +91,11 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625 Documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)
 
 **Sample Ticket:**  
-![Image](5078775/docs/13832378/images/26372371)
+![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_4.png)
 
 ## Implementation
 
 [Import - Remote Monitor - Security - Possible Brute Force Attack](https://proval.itglue.com/DOC-5078775-13832549)
+
 
 

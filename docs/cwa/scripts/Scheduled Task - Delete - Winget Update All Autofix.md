@@ -14,7 +14,7 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 ## Sample Run
 
-![Sample Run](5078775/docs/15226949/images/22089389)
+![Sample Run](..\..\..\static\img\Scheduled-Task---Delete---Winget-Update-All-Autofix\image_1.png)
 
 ## Dependencies
 
@@ -31,5 +31,6 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
+
 
 

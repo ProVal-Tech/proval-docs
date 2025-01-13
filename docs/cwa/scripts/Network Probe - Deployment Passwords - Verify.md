@@ -12,7 +12,7 @@ unlisted: false
 
 The script's determines whether or not the credentials given to a Network Probe to install agents are accurate. All the credentials will be tested against the Network Probe. If a username is saved without the "\\" symbol then it will be treated as a domain credential and will be checked as '@Domain@\@Username@'.
 
-![Image](5078775/docs/10390931/images/14634235)
+![Image](..\..\..\static\img\Network-Probe---Deployment-Passwords---Verify\image_1.png)
 
 It can come in handy while troubleshooting the agent installation issues from a Network Probe.
 
@@ -20,7 +20,7 @@ It can come in handy while troubleshooting the agent installation issues from a 
 
 ## Sample Run
 
-![Image](5078775/docs/10390931/images/14634236)
+![Image](..\..\..\static\img\Network-Probe---Deployment-Passwords---Verify\image_2.png)
 
 ## Variables
 
@@ -72,6 +72,7 @@ It can come in handy while troubleshooting the agent installation issues from a 
 
 **Sample:**
 
-![Image](5078775/docs/10390931/images/14634237)
+![Image](..\..\..\static\img\Network-Probe---Deployment-Passwords---Verify\image_3.png)
+
 
 

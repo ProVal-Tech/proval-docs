@@ -33,3 +33,4 @@ This datatview will display basic information related to folder redirection on e
 | Pictures Redirected Path  | If PicturesEnabled is True, this will display the full path to the user's pictures folder    |
 | TimeStamp                 | The last time this data was gathered                                                          |
 
+

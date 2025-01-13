@@ -41,3 +41,4 @@ This will set the browser homepage to DuckDuckGo and enforce that page on startu
 ## Output
 
     .\Set-ChromiumHomepage-log.txt
+

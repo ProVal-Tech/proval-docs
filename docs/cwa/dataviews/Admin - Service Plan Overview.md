@@ -28,3 +28,4 @@ This Dataview shows the status of the Service plan, Onboarding, patching, and ot
 | Administrator Credentials  | Display the status of Admin creds set in Deployment & default tab on Locations.                      |
 | Cache Drive                | Display the status of the Location cache drive.                                                     |
 
+

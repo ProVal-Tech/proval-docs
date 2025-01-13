@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8010962/images/11150099)
+![Sample Run](..\..\..\static\img\User-Session-Audit\image_1.png)
 
 ## Dependencies
 
@@ -36,5 +36,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

@@ -67,10 +67,10 @@ Gather information about and monitor the health status of HP iLO devices.
    - [Dataview - HP iLO Checks Not Running](https://proval.itglue.com/DOC-5078775-15762427)
 
 5. Reload the System Cache.  
-   ![Reload System Cache](5078775/docs/10073297/images/22339741)
+   ![Reload System Cache](..\..\static\img\HP-iLO-Health-Check\image_1.png)
 
 6. Execute the [Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559) script against an online Windows machine with the `RecreateTable` parameter set to `1` to create the [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560) custom table.  
-   ![Execute Script](5078775/docs/10073297/images/22215807)
+   ![Execute Script](..\..\static\img\HP-iLO-Health-Check\image_2.png)
 
 7. Configure the client-level password entries labelled as `iLO Automation Password` for the iLO Devices to be audited. See the documentation for the internal monitor [Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037) for more information on how to set up this password entry.
 
@@ -90,5 +90,6 @@ Gather information about and monitor the health status of HP iLO devices.
     Configure the **Optional** content as follows:
     - Navigate to System > Configuration > Dashboard > Management > Scheduled Client Scripts
       - Schedule the [HP iLO Credential Missing Detection](https://proval.itglue.com/DOC-5078775-13814638) script to run once per week.  
-      ![Schedule Script](5078775/docs/10073297/images/22215821)
+      ![Schedule Script](..\..\static\img\HP-iLO-Health-Check\image_3.png)
+
 

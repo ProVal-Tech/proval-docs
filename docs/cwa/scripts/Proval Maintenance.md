@@ -18,7 +18,7 @@ This script cleans up old data that Automate wouldn't do so on its own.
 
 This is a client script and can be scheduled from System > Dashboard > Manage > Scheduled Client Script.
 
-![Sample Run](5078775/docs/8009808/images/12936141)
+![Sample Run](..\..\..\static\img\Proval-Maintenance\image_1.png)
 
 #### Global Parameters
 
@@ -53,4 +53,5 @@ This script cleans up lots of tables in the database, in order of operation:
 10. Network Device Cleanup
 11. Inactive Ticket Status Cleanup
 12. Patch Manager History Cleanup
+
 

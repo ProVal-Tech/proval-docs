@@ -1,0 +1,32 @@
+---
+id: 'vsa-automation-time-monthly-reset-schedule'
+title: 'Automation Time Monthly Reset Schedule'
+title_meta: 'Automation Time Monthly Reset Schedule'
+keywords: ['schedule', 'reset', 'cf', 'field', 'monthly', 'automation', 'policy']
+description: 'This document outlines the details of the Automation Time Monthly Reset Schedule, including its dependencies, policy name, description, and active policy objects for managing automation time resets effectively.'
+tags: ['configuration', 'schedule', 'policy', 'automation', 'vsa']
+draft: false
+unlisted: false
+---
+# Summary
+
+Schedules the Monthly CF Field Reset AP.
+
+# Dependencies
+
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+
+# Details
+
+- **Policy Name**: Automation Time Monthly Reset Schedule
+- **Policy Description**: Schedules the Monthly CF Field Reset AP.
+- **Applied View**: All Machines
+- **Assigned Organizations / Machine Groups**: NA
+- **Assigned Machines**: NA
+- **Policy Objects Active**:
+  - **Policy Object Name**: Agent Procedure
+  - **Policy Object Settings**:
+    - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](https://proval.itglue.com/DOC-5078775-11143679)
+      - **Policy Object Member Settings**: Monthly, 1st day, midnight, do not SiO
+
+

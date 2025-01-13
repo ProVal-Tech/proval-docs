@@ -22,7 +22,7 @@ Note: This is strictly for the browser cache and will not remove the browser his
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8009215/images/23317094)
+![Sample Run](..\..\..\static\img\Clear-Browser-Caches\image_1.png)
 
 ## Sub-Scripts
 
@@ -38,4 +38,5 @@ Note: This is strictly for the browser cache and will not remove the browser his
 ## Output
 
 - Script log
+
 

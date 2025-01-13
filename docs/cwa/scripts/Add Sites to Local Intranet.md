@@ -12,33 +12,33 @@ unlisted: false
 
 The script functions by adding the site(s) specified in the `Sites` parameter to the 'local intranet zone' on the Windows computer.
 
-![Image](5078775/docs/14680809/images/21248797)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_1.png)
 
 ## Sample Run
 
 **Input:**  
-![Image](5078775/docs/14680809/images/21280326)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_2.png)
 
 **Result:**  
-![Image](5078775/docs/14680809/images/21249062)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_3.png)
 
 **Input:**  
-![Image](5078775/docs/14680809/images/21280366)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_4.png)
 
 **Result:**  
-![Image](5078775/docs/14680809/images/21249092)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_5.png)
 
 **Input:**  
-![Image](5078775/docs/14680809/images/21280393)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_6.png)
 
 **Result:**  
-![Image](5078775/docs/14680809/images/21280692)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_7.png)
 
 **Input:**  
-**![Image](5078775/docs/14680809/images/21280394)**
+**![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_8.png)**
 
 **Result:**  
-![Image](5078775/docs/14680809/images/21280693)
+![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_9.png)
 
 ## Variables
 
@@ -58,5 +58,6 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
+
 
 

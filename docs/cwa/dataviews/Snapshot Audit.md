@@ -51,3 +51,4 @@ This dataview helps you audit snapshots of the virtual machines that exist on an
 | Is Current Snapshot            | Displays whether the snapshot is current or not      |
 
 
+

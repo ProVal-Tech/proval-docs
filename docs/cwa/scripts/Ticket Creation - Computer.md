@@ -22,13 +22,13 @@ This script has been updated to remove the limit of the %FieldName% and %Result%
 
 This script's only dependency is that the Alerting tab be filled out on the monitor you are applying this ticket creation script to.
 
-![Alerting Tab](5078775/docs/9098338/images/12593704)
+![Alerting Tab](..\..\..\static\img\Ticket-Creation---Computer\image_1.png)
 
 ### Things to note:
 1. The 'Alert Message Subject...' for both Success and failure MUST be the same or else there may be issues.
 2. Variables you are able to use for these messages:
    1. %FIELDNAME% - This is the 'Identity Field' value that you assign in the **Configuration Tab** of the monitor (Shown in the picture below)
-      ![Identity Field](5078775/docs/9098338/images/12593750)
+      ![Identity Field](..\..\..\static\img\Ticket-Creation---Computer\image_2.png)
    2. %clientname% - Displays the client name of the affected machine.
    3. %locationname% - Displays the current location of the affected machine.
    4. %computername% - Displays the computer name of the affected machine.
@@ -47,9 +47,10 @@ This script outputs logging information into the script log in the scripting tab
 
 ## Example Ticket
 
-![Example Ticket](5078775/docs/9098338/images/12773997)
+![Example Ticket](..\..\..\static\img\Ticket-Creation---Computer\image_3.png)
 
 What the Alerting Tab Looks like:
 
-![Alerting Tab Example](5078775/docs/9098338/images/12774007)
+![Alerting Tab Example](..\..\..\static\img\Ticket-Creation---Computer\image_4.png)
+
 

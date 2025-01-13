@@ -14,7 +14,7 @@ This script gets the File Vault Status of a Mac machine and stores it to a compu
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10027994/images/13930224)
+![Sample Run](..\..\..\static\img\OSX---File-Vault-Audit\image_1.png)
 
 Suggested is to schedule the script to run daily against the MAC machines to keep the dataview up-to-date.
 
@@ -31,4 +31,5 @@ Suggested is to schedule the script to run daily against the MAC machines to kee
 ## Output
 
 - EDF
+
 

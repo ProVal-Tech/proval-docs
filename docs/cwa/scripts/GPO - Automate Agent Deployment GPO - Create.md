@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8105005/images/11286064)
+![Sample Run](..\..\..\static\img\GPO---Automate-Agent-Deployment-GPO---Create\image_1.png)
 
 ## Dependencies
 
@@ -47,4 +47,5 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 

@@ -14,7 +14,7 @@ This script runs the agnostic [EPM - Windows Configuration - Agnostic - Invoke-V
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11707942/images/16434395)  
+![Sample Run](..\..\..\static\img\Invoke-VolumeOptimization\image_1.png)  
 Will run a PowerShell equivalent of defrag on the target machine.
 
 ## Dependencies
@@ -64,6 +64,7 @@ If the script/monitor is intended to create tickets, please note the Subject and
 %computername%'s results:  
 @psout@  
 
-![Ticket Example](5078775/docs/11707942/images/16434591)
+![Ticket Example](..\..\..\static\img\Invoke-VolumeOptimization\image_2.png)
+
 
 

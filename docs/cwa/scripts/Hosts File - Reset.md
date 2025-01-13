@@ -14,7 +14,7 @@ This script simply renames the current host file to have OLD in the name and rep
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9107163/images/12604736)
+![Sample Run](..\..\..\static\img\Hosts-File---Reset\image_1.png)
 
 ## Dependencies
 
@@ -34,6 +34,7 @@ This script is dependent on the following items:
 This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
-  - ![Host File Contents](5078775/docs/9107163/images/12604783)
+  - ![Host File Contents](..\..\..\static\img\Hosts-File---Reset\image_2.png)
+
 
 

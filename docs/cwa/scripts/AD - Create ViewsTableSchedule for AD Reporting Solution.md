@@ -21,7 +21,7 @@ This creates all of the needed items in the Database to ensure the [Active Direc
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9492882/images/13148150)
+![Sample Run](..\..\..\static\img\AD---Create-ViewsTableSchedule-for-AD-Reporting-Solution\image_1.png)
 
 ## Dependencies
 
@@ -39,4 +39,5 @@ Other items depend on this script being run to function, which I have listed bel
 ## Output
 
 This is a one-time use script, used to install/create a table, 4 views, and schedule a script. After running once, this script can be removed from the environment.
+
 

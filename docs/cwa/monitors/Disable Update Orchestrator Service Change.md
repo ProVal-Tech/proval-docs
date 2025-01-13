@@ -76,3 +76,4 @@ A) Yes, The **Windows Update service (wuauserv)** is essential for Windows Updat
 A) No, Automate's patch management relies solely on the Windows Update service and UI mode (Check for Updates), so stopping the Update Orchestrator won't affect it.
 
 
+

@@ -41,12 +41,12 @@ Notes:
   10.0.0.4 ==> Correct
   ```
 - Sample Screenshot:  
-  ![](5078775/docs/12549610/images/17765255)
+  ![](..\..\..\static\img\ESXi---Snapshot-Create-Param\image_1.png)
 - Add proper Parameters while executing the script.  
-  ![](5078775/docs/12549610/images/20611119)  
+  ![](..\..\..\static\img\ESXi---Snapshot-Create-Param\image_2.png)  
   The `Password_Title` should be the title of the password entry created in the first step. In the above example, the script will attempt to create a snapshot for the virtual machine `Test_VM 1` and will attempt to remove that snapshot after 24 hours. It will not generate any alerts on failure.
 - For alerting on failure:  
-  ![](5078775/docs/12549610/images/20611130)  
+  ![](..\..\..\static\img\ESXi---Snapshot-Create-Param\image_3.png)  
   In this example, the script will attempt to create a snapshot for the virtual machine `Test_VM 1` and will attempt to remove that snapshot after 24 hours. Additionally, the script will create a ticket if it fails to deliver the desired results and will send a failure email to the user running/scheduling the script. Either or both of the alerting options can be used.
 
 ## Dependencies
@@ -132,4 +132,5 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate Failed to create Snapshot for the Virtual machine @VMName@. Please review manually. 
 PowerShell script Result: @psout@
 ```
+
 

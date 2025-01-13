@@ -20,7 +20,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8014332/images/14982245)
+![Sample Run](..\..\..\static\img\Prevent-Saving-Browser-Passwords-(IE.Chrome.FF)\image_1.png)
 
 In the above screenshot, Password Saving Feature for the Browsers will be disabled for the computer, and any currently saved passwords will be removed. Selecting to remove saved passwords will close the concerned browser.
 
@@ -55,5 +55,6 @@ In the above screenshot, Password Saving Feature for the Browsers will be disabl
 
 - Script log
 - Script State
+
 
 

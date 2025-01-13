@@ -29,8 +29,8 @@ Windows Machines - It can be run on all Windows machines.
 
 ## Screenshots/Detail Info
 
-![Screenshot 1](5078775/docs/12732680/images/18610189)  
-![Screenshot 2](5078775/docs/12732680/images/18610197)  
+![Screenshot 1](..\..\..\static\img\Add-Auto-Lockout-Policy\image_1.png)  
+![Screenshot 2](..\..\..\static\img\Add-Auto-Lockout-Policy\image_2.png)  
 
 PowerShell code:
 
@@ -41,5 +41,6 @@ C:\\Windows\\system32\\cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Comman
 ### Note:
 
 This is expected to NOT work on any EOL systems. The PowerShell will error out.
+
 
 

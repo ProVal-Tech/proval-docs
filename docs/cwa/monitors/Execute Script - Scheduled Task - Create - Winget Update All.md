@@ -23,12 +23,13 @@ The monitor executes the [Script - Scheduled Task - Create - Winget Update All [
 
 Managed Windows Workstations
 
-![Image](5078775/docs/14825214/images/21999167)
+![Image](..\..\..\static\img\Execute-Script---Scheduled-Task---Create---Winget-Update-All\image_1.png)
 
 ## Alert Template
 
 **Name**: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
 
 The alert template executes the [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195)
+
 
 

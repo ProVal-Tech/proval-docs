@@ -35,3 +35,4 @@ Holds requested Unifi Controller data specific to the controller only.
 | UserName     | String | The User name for the admin user on the Unifi Controller.                 |
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
 
+

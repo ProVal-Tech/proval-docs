@@ -44,61 +44,62 @@ Importing this script will import the following scripts too:
 Set action can be used for setting a specific homepage to the concerned browser(s).
 
 **Parameters Used:**  
-![Set Parameters](5078775/docs/14985323/images/21756242)
+![Set Parameters](..\..\..\static\img\Browser---Homepage---Manage\image_1.png)
 
 **Output:**  
-![Set Output](5078775/docs/14985323/images/21756215)
+![Set Output](..\..\..\static\img\Browser---Homepage---Manage\image_2.png)
 
 ### Remove:
 Remove action can be used to remove the currently applied Homepage from the concerned browser(s).
 
 **Parameters Used:**  
-![Remove Parameters](5078775/docs/14985323/images/21756282)
+![Remove Parameters](..\..\..\static\img\Browser---Homepage---Manage\image_3.png)
 
 **Output:**  
 **Google Chrome:**  
-![Remove Chrome Output](5078775/docs/14985323/images/21756232)  
+![Remove Chrome Output](..\..\..\static\img\Browser---Homepage---Manage\image_4.png)  
 **Mozilla Firefox:**  
-![Remove Firefox Output](5078775/docs/14985323/images/21756281)  
+![Remove Firefox Output](..\..\..\static\img\Browser---Homepage---Manage\image_5.png)  
 **Microsoft Edge:**  
-![Remove Edge Output](5078775/docs/14985323/images/21756283)
+![Remove Edge Output](..\..\..\static\img\Browser---Homepage---Manage\image_6.png)
 
 ### Replace:
 The `Replace` action serves to substitute the existing homepage configuration in the specified browser(s) with a new one. This functionality proves useful when you intend to replace the current homepage with an alternative one. Another scenario where this action is beneficial is when a homepage has been erroneously configured with the `EnforceOnNewTab` option. In such cases, users can rectify the error by employing the `Replace` action in the script, leaving the `EnforceOnNewTab` parameter empty. This ensures a seamless correction of the previous misconfiguration.
 
 **Parameters Used:**  
-![Replace Parameters](5078775/docs/14985323/images/21756237)
+![Replace Parameters](..\..\..\static\img\Browser---Homepage---Manage\image_7.png)
 
 **Output:**  
-![Replace Output](5078775/docs/14985323/images/21756243)
+![Replace Output](..\..\..\static\img\Browser---Homepage---Manage\image_8.png)
 
 ## Sample Run
 
 - Set the Homepage on a single browser.  
 Example: Setting [https://www.provaltech.com](https://www.provaltech.com) to the homepage of Google Chrome:  
-![Set Chrome Homepage](5078775/docs/14985323/images/21676085)
+![Set Chrome Homepage](..\..\..\static\img\Browser---Homepage---Manage\image_9.png)
 
 - Remove the Homepage from one single browser:  
 Example: Removing the homepage from Mozilla Firefox:  
-![Remove Firefox Homepage](5078775/docs/14985323/images/21720186)
+![Remove Firefox Homepage](..\..\..\static\img\Browser---Homepage---Manage\image_10.png)
 
 - Replace the current homepage on a single browser.  
 Example: Replacing the homepage on Microsoft Edge with [https://www.provaltech.com](https://www.provaltech.com):  
-![Replace Edge Homepage](5078775/docs/14985323/images/21756205)
+![Replace Edge Homepage](..\..\..\static\img\Browser---Homepage---Manage\image_11.png)
 
 - Perform an action against multiple browsers:  
 Example: Replacing the homepage with [https://www.provaltech.com](https://www.provaltech.com) for Google Chrome and Mozilla Firefox:  
-![Replace Chrome and Firefox Homepage](5078775/docs/14985323/images/21746518)
+![Replace Chrome and Firefox Homepage](..\..\..\static\img\Browser---Homepage---Manage\image_12.png)
 
 - Perform an action against all browsers:  
 Example: Removing the homepage from all three browsers (Google Chrome, Microsoft Edge, Mozilla Firefox):  
-![Remove All Browsers Homepage](5078775/docs/14985323/images/21720182)
+![Remove All Browsers Homepage](..\..\..\static\img\Browser---Homepage---Manage\image_13.png)
 
 - Enforce the homepage on Browser startup.  
 Example: Configuring Google Chrome and Microsoft Edge to open [https://www.provaltech.com](https://www.provaltech.com) as the homepage upon startup and ensuring that this setting is enforced in both browsers.  
-![Enforce Homepage on Startup](5078775/docs/14985323/images/21756208)
+![Enforce Homepage on Startup](..\..\..\static\img\Browser---Homepage---Manage\image_14.png)
 
 ## Output
 
 - Script logs
+
 

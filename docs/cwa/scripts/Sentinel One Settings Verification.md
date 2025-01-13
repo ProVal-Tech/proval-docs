@@ -14,7 +14,7 @@ Obtains the site key and URL associated with the target endpoint and compares th
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12924820/images/18438710)
+![Sample Run](..\..\..\static\img\Sentinel-One-Settings-Verification\image_1.png)
 
 ## Variables
 
@@ -61,11 +61,11 @@ Do not encrypt the EDF used in the Global Variable `Client_Level_Sentinel_One_To
 
 **Incorrect Configuration:**
 
-![Incorrect Configuration](5078775/docs/12924820/images/21041133)
+![Incorrect Configuration](..\..\..\static\img\Sentinel-One-Settings-Verification\image_2.png)
 
 **Correct Configuration:**
 
-![Correct Configuration](5078775/docs/12924820/images/21041137)
+![Correct Configuration](..\..\..\static\img\Sentinel-One-Settings-Verification\image_3.png)
 
 ## Output
 
@@ -73,11 +73,11 @@ Do not encrypt the EDF used in the Global Variable `Client_Level_Sentinel_One_To
 
 The script will use ticket creation category mentioned in the monitor [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924830)
 
-![TicketCreationCategory](5078775/docs/12924820/images/26727132)
+![TicketCreationCategory](..\..\..\static\img\Sentinel-One-Settings-Verification\image_4.png)
 
 ### Ticket
 
-![Ticket](5078775/docs/12924820/images/18438782)
+![Ticket](..\..\..\static\img\Sentinel-One-Settings-Verification\image_5.png)
 
 ### Example: 
 
@@ -96,4 +96,5 @@ SentinelOne URL should be: <URL>
 SentinelOne Site key should be: <LicenseKey>
 To resolve a license key mismatch in Sentinel One, you must uninstall and then re-install the software using the correct license key.
 ```
+
 

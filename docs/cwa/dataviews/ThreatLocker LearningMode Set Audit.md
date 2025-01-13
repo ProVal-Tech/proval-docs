@@ -1,0 +1,37 @@
+---
+id: 'cwa-threatlocker-learning-mode-dataview'
+title: 'Threatlocker Learning Mode Dataview'
+title_meta: 'Threatlocker Learning Mode Dataview'
+keywords: ['threatlocker', 'dataview', 'learning', 'mode', 'script', 'audit']
+description: 'This document provides a comprehensive overview of the Threatlocker Learning Mode Dataview, detailing its dependencies, columns, and the information it captures regarding the learning mode settings applied through the specified script.'
+tags: ['database', 'configuration', 'report', 'software', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview stores the result of the threatlocker learning mode setting done via script [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697).
+
+## Dependencies
+
+- [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697)
+- [Custom Table - pvl_threatlocker-disable_audit](https://proval.itglue.com/DOC-5078775-16557699)
+
+## Columns
+
+| Column                     | Description                                                                                               |
+|---------------------------|-----------------------------------------------------------------------------------------------------------|
+| Client                    | Client name of the agent                                                                                 |
+| Location                  | Location name of the agent                                                                                 |
+| Computer                  | Name of the agent                                                                                          |
+| Operating System          | This displays the OS name of the agent                                                                     |
+| LastContact               | It shows the agent's last contact with the Automate control center                                         |
+| LTUserName                | This stores the LT user name who scheduled the learning mode via executing script [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697) |
+| LearningMode Reason       | This stores the learning mode reason set by the lt user.                                                  |
+| LearningMode StartTime    | This shows the learning mode start date and time                                                          |
+| LearningMode EndTime      | This shows the learning mode end date and time                                                            |
+| LearningModeDuration (Hours) | This shows the learning mode duration in hours                                                          |
+| LearningMode Set Status    | This stores the learning mode status whether successfully set or failed.                                   |
+| LearningMode Log Record    | This stores the learning mode logs of success or failure.                                                 |
+
+

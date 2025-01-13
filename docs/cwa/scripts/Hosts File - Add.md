@@ -14,7 +14,7 @@ This script takes the user parameters when running the script and places them in
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9106955/images/12604515)
+![Sample Run](..\..\..\static\img\Hosts-File---Add\image_1.png)
 
 ## Dependencies
 
@@ -42,6 +42,7 @@ This script is dependent on the following items:
 This script outputs information to the following areas:
 - Script Log
 - Host File Contents (Extra Data Field)
-  - ![Output 1](5078775/docs/9106955/images/12604596) OR ![Output 2](5078775/docs/9106955/images/12604598)
+  - ![Output 1](..\..\..\static\img\Hosts-File---Add\image_2.png) OR ![Output 2](..\..\..\static\img\Hosts-File---Add\image_3.png)
+
 
 

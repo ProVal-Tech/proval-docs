@@ -13,7 +13,7 @@ Place the attached `Pci4.0_Template.ictpl` file under the "LTShare\Transfer\conf
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12486318/images/17665852)
+![Sample Run](..\..\..\static\img\IISCrypto---PCI-4.0---TLS-Version-and-Cipher-Suites\image_1.png)
 
 ## Dependencies
 
@@ -42,4 +42,5 @@ Copyright (c) 2011-2022 Nartac Software Inc.
 Registry exported to file: C:\ProgramData\_automation\script\IISCrypto_PCI_4_0\IISCrypto_PCI_4_0Backup.reg
 Template applied: PCI 4.0
 ```
+
 

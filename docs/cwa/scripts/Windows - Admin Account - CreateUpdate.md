@@ -28,30 +28,30 @@ The script is executed by [Windows Local Admin Account Process](https://proval.i
 A new system property and EDF has been introduced for setting password to never expire. Update the [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script from the `Prosync` plugin.
 
 Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` as `1` to implement the changes for the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution.  
-![Image](https://proval.itglue.com/5078775/docs/13026633/images/19277145)
+![Image](https://proval.itglue.com/..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_1.png)
 
 ## Update Notice: 27-September-2024
 
 The solution's Extra Data Fields have been renamed. Update the [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script from the `Prosync` plugin.
 
 Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` as `1` to implement the changes for the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution.  
-![Image](5078775/docs/13026633/images/19277145)
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_1.png)
 
 Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` as `1` to implement the changes for the [Windows Domain Admin Process](https://proval.itglue.com/DOC-5078775-13280371) solution.  
-![Image](5078775/docs/8223774/images/19277155)
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_2.png)
 
 ## Sample Run
 
 - Running the script with the user parameter `SetEnvironment_Local_Admin_Process` as `1` will import the EDFs and System Properties needed for the implementation of [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution.  
-  ![Image](5078775/docs/8223774/images/19277151)
+  ![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_3.png)
   
 - Running the script with the user parameter `SetEnvironment_Domain_Admin_Process` as `1` will import the EDFs and System Properties needed for the implementation of [Windows Domain Admin Process](https://proval.itglue.com/DOC-5078775-13280371) solution.  
-  ![Image](5078775/docs/8223774/images/19277155)
+  ![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_2.png)
 
 - During manual script execution, if either the `username` or `title` parameter is not provided, the script will automatically fallback to the Client-Level Extra Data Fields (EDFs) and system properties to retrieve the relevant username and title information. This fallback mechanism ensures seamless functionality and avoids any disruptions caused by missing parameters.  
   Example:  
-  ![Image](5078775/docs/8228774/images/19283039)  
-  ![Image](5078775/docs/8228774/images/19283062)
+  ![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_4.png)  
+  ![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_5.png)
 
 ## Dependencies
 
@@ -95,7 +95,7 @@ Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Pr
 | Default_Local_Admin_Password_Change_Notification_Email  | <blank>              | False    | Setting an email address in this field will ensure an email gets sent out when the password gets auto-rotated.                                          |
 | Default_Local_Admin_Password_Never_Expire    | 0                             | False    | Setting the value to 1 will ensure the password never expire property of the created user is enabled.                                                     |
 
-![Image](5078775/docs/8223774/images/27097302)
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_6.png)
 
 ## Local Admin Process EDFs
 
@@ -112,9 +112,9 @@ Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Pr
 | Local Admin Process Exclusion             | Check Box | Location| Marking this checkbox will exclude all the computers of this location from Automation. Monitor set will not execute the script on these machines anymore. Yet the script can be executed manually. It is placed in the `Exclusions` tab. |
 
 **Example:**  
-![Image](5078775/docs/8223774/images/27097132)  
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_7.png)  
 For the configuration shown in the screenshot, the solution will create `AutomateTestAccount` user against all `Windows Workstations`. Password will be saved at the client's password tab with the title `Automate Test Account - 6-3-2024` and display name `Automate Test Account`. Password for each computer will be updated once per `60` days.  
-![Image](5078775/docs/8228774/images/19454825)
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_8.png)
 
 **Note:** Updating the password in the respective password entry will re-run the script against the computer (or against all computers at the client, if it's a client-level password), within 2 hours of the update.
 
@@ -129,9 +129,9 @@ For the configuration shown in the screenshot, the solution will create `Automat
 | Domain Admin Process Exclusion           | CheckBox  | Computer| Marking this checkbox will exclude the domain controller from Automation. Monitor set will not execute the script on this domain controller anymore. Yet the script can be executed manually. It is placed in the `Exclusions` tab. This EDF can be useful in case of multiple domains at a client, and the partner would like to exclude one of the domains from the process. In such scenario, the partner can mark this exclusion EDF on all the domain controllers of the domain to exclude. |
 
 **Example:**  
-![Image](5078775/docs/8223774/images/25985686)  
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_9.png)  
 For the configuration shown in the screenshot, the solution will create `Ram_Test_Account` domain admin account and the credentials will be saved at the client's password tab with the title `Domain Admin - <Domain>`. Password will be updated once per `60` days.  
-![Image](5078775/docs/8223774/images/19027187)
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_10.png)
 
 **Note:** Updating the password in the respective password entry will re-run the script against the domain controller within 2 hours of the update.
 
@@ -143,7 +143,7 @@ For the configuration shown in the screenshot, the solution will create `Ram_Tes
 | Default_Domain_Admin_Password_Title       | CW-Automate Domain Admin      | True     | Default Title of the password entry in the table to update or create. If the user parameter `title` is not set and client level EDF `1c. Domain Admin Password Title` is blank as well, then the script will use the value set in this system property. (Domain Name will be added to the end of the title while storing it to the passwords tab. e.g., CW-Automate Domain Admin - [testdomain.local](http://testdomain.local)) |
 | Default_Domain_Admin_Password_Change_Days| 45                            | True     | Default Number of days to update the password after. It can be overridden by the client-level EDF `1d. Update Password After_Days`.                     |
 
-![Image](5078775/docs/8223774/images/19027050)
+![Image](..\..\..\static\img\Windows---Admin-Account---CreateUpdate\image_11.png)
 
 ## Output
 
@@ -162,5 +162,6 @@ Attempted credentials are saved as <Title> at passwords tab of the client in Aut
 ```
 Account Creation/Update Output: <Output of the PowerShell Script>
 ```
+
 
 

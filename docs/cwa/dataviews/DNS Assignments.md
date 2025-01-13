@@ -45,3 +45,4 @@ Gives a display of a devices active network adapter and its associated settings.
 | Bytes Rec       | The number of bytes received on the adapter.        |
 
 
+

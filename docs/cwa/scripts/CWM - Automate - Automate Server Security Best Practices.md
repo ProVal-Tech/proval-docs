@@ -18,7 +18,7 @@ The main execution is all PowerShell; however, due to the inclusion of API integ
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12377196/images/17470266)
+![Sample Run](..\..\..\static\img\CWM---Automate---Automate-Server-Security-Best-Practices\image_1.png)
 
 ## Variables
 
@@ -196,7 +196,7 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 
 ## Ticket Example
 
-![Ticket Example](5078775/docs/12377196/images/17470378)
+![Ticket Example](..\..\..\static\img\CWM---Automate---Automate-Server-Security-Best-Practices\image_2.png)
 
 Full output of request
 ```
@@ -347,5 +347,6 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 
 Reading View
 
-![Reading View](5078775/docs/12377196/images/17470381)
+![Reading View](..\..\..\static\img\CWM---Automate---Automate-Server-Security-Best-Practices\image_3.png)
+
 

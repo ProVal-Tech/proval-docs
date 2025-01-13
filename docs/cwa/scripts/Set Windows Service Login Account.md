@@ -14,9 +14,9 @@ Used to change the service login account for a target service.
 
 ## Sample Run
 
-![Sample Run 1](5078775/docs/8439875/images/11761579)
+![Sample Run 1](..\..\..\static\img\Set-Windows-Service-Login-Account\image_1.png)
 
-![Sample Run 2](5078775/docs/8439875/images/11761581)
+![Sample Run 2](..\..\..\static\img\Set-Windows-Service-Login-Account\image_2.png)
 
 ## Dependencies
 
@@ -48,5 +48,6 @@ See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.i
   - `.\\Set-ServiceLogin-log.txt`
   - `.\\Set-ServiceLogin-data.txt`
   - `.\\Set-ServiceLogin-error.txt`
+
 
 

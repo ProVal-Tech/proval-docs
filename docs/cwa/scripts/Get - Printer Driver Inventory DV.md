@@ -16,7 +16,7 @@ Intended Target: Windows Computers
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10854806/images/15106298)
+![Sample Run](..\..\..\static\img\Get---Printer-Driver-Inventory-DV\image_1.png)
 
 ## Dependencies
 
@@ -44,4 +44,5 @@ Intended Target: Windows Computers
 - Script Log
 - Custom Table
 - Dataview
+
 

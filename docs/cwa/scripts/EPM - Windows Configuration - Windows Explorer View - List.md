@@ -14,7 +14,7 @@ This script will set the Windows explorer view to List View.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10219461/images/14190819)
+![Sample Run](..\..\..\static\img\EPM---Windows-Configuration---Windows-Explorer-View---List\image_1.png)
 
 ## Variables
 
@@ -35,5 +35,6 @@ This script performs below action:
 ## Output
 
 - Script log
+
 
 

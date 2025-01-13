@@ -289,7 +289,8 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 
 Locate your remote monitor by opening the group(s) remote monitors tab.
 
-![Remote Monitor](5078775/docs/13242522/images/27841109)
+![Remote Monitor](..\..\..\static\img\SMB1-Detection-Query\image_1.png)
 
 Please validate that the Alert Template is properly set to "`Default - Do Nothing`".
+
 

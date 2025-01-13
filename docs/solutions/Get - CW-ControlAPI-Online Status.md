@@ -20,3 +20,4 @@ This solution provides a way to compare ConnectWise Automate online devices with
 | [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](https://proval.itglue.com/DOC-5078775-9912293) | Custom Table  | Holds values from Get - CW-Control - Online Status        |
 | [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](https://proval.itglue.com/DOC-5078775-9915631) | Dataview      | Displays the data from the custom table compared to state in automate. |
 
+

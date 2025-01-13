@@ -1,0 +1,33 @@
+---
+id: 'rmm-cw-rmm-task-detect-smb1-custom-field'
+title: 'CW RMM - Custom Field for SMB1 Detection Results'
+title_meta: 'CW RMM - Custom Field for SMB1 Detection Results'
+keywords: ['cw', 'rmm', 'smb1', 'custom', 'field', 'detection']
+description: 'This document provides an overview of a custom field used in ConnectWise RMM to store and display the results of the task that detects SMB1 status. It includes details on dependencies, field types, and sample values.'
+tags: ['custom', 'detection', 'field', 'status', 'connectwise', 'rmm']
+draft: false
+unlisted: false
+---
+## Summary
+
+This custom field is used to store and display the results of the task [CW RMM - Task - Detect SMB1](https://proval.itglue.com/DOC-5078775-14419758).
+
+## Dependencies
+
+[CW RMM - Task - Detect SMB1](https://proval.itglue.com/DOC-5078775-14419758)
+
+## Details
+
+| Field Name       | Type of Field (Machine or Organization) | Description                                 |
+|------------------|-----------------------------------------|---------------------------------------------|
+| SMB1 Enabled     | Endpoint                                | SMB1 Status fetched by 'Detect SMB1' Script |
+
+## ScreenShot
+
+![Screenshot](..\..\..\static\img\SMB1-Enabled\image_1.png)
+
+## Sample Value
+
+![Sample Value](..\..\..\static\img\SMB1-Enabled\image_2.png)
+
+

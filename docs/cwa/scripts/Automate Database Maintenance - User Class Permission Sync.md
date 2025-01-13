@@ -38,3 +38,4 @@ This script is a function script called from [CWM - Automate - Script - Automate
 
 This script will add the logs to the log variable.
 
+

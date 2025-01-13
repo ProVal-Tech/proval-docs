@@ -26,11 +26,11 @@ Set the System Property `Agent_Repair_Re_Install_Enabled` to `0` to disable the 
 
 The script must be run with the `Set Environment = 1` setting for the first time after the update. This will create the system properties used by the script.
 
-![Sample Run 1](5078775/docs/7761441/images/19084183)
+![Sample Run 1](..\..\..\static\img\Automate-Agent---Auto-Repair\image_1.png)
 
 For Regular Execution:
 
-![Sample Run 2](5078775/docs/7761441/images/19084184)
+![Sample Run 2](..\..\..\static\img\Automate-Agent---Auto-Repair\image_2.png)
 
 By default, the script will be called by the **[Monitor - No Checkin for More Than 30 Days*](https://proval.itglue.com/DOC-5078775-8041387)**
 
@@ -102,11 +102,11 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 To enable ticketing on failure, the ticket category must be set in the alerting tab of the monitor set calling the script, or at the group level if the monitor set is enabled on the group. Also, the script will not create any tickets for manual executions.
 
 From Monitor Set:  
-![Monitor Set](5078775/docs/7761441/images/19084501)
+![Monitor Set](..\..\..\static\img\Automate-Agent---Auto-Repair\image_3.png)
 
 From Group:  
-![Group 1](5078775/docs/7761441/images/19084507)  
-![Group 2](5078775/docs/7761441/images/19084531)
+![Group 1](..\..\..\static\img\Automate-Agent---Auto-Repair\image_4.png)  
+![Group 2](..\..\..\static\img\Automate-Agent---Auto-Repair\image_5.png)
 
 **Ticket Subject:** `Agent Reinstall Failed/Broken Agent - <clientname>\\<computername>`
 
@@ -150,5 +150,6 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
+
 
 

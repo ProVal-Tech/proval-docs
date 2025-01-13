@@ -107,3 +107,4 @@ Returns a system Object containing all data from the generated battery report
             StartChargeCapacity
             StartFullChargeCapacity
             StartTimestamp
+

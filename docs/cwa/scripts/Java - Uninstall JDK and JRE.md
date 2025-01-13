@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8011127/images/11150322)
+![Sample Run](..\..\..\static\img\Java---Uninstall-JDK-and-JRE\image_1.png)
 
 ## Dependencies
 
@@ -39,4 +39,5 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 

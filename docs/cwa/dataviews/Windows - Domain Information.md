@@ -34,3 +34,4 @@ This dataview shows you how a computer is domain joined (or not domain joined) t
 | Microsoft - On-premises DRS Joined | Joined | Not Joined if the machine is Device Registration Service (DRS) AD joined |
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
 
+

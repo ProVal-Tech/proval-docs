@@ -14,7 +14,7 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8355447/images/24252470)
+![Sample Run](..\..\..\static\img\Windows---Check-Windows-11-Compatibility\image_1.png)
 
 ## Variables
 
@@ -29,5 +29,6 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 Dataview: [Windows 11 Upgrade Compatibility](https://proval.itglue.com/DOC-5078775-8355449)  
 Custom table: [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448)
+
 
 

@@ -58,3 +58,4 @@ These variables are used in the prompter script. They should be set in any scrip
 | dateTimeSelection   | Date Time selected by the user.                                                                          |
 | userResponse       | Input/Feedback provided by the user in the User Input Field.                                            |
 
+

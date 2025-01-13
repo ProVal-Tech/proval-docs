@@ -19,3 +19,4 @@ The role detects the agents on which the Remote Desktop Virtualization Host feat
 | `%{@powershell "(Get-WindowsFeature RDS-Virtualization).Installed"@%}` | Equals     | True   | Windows        |
 
 
+

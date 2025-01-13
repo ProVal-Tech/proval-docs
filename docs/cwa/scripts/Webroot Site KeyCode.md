@@ -14,10 +14,11 @@ Login to Webroot Portal
 ## Step 2.
 Go to the Site List --> Sites --> Details
 
-![Image](5078775/docs/14989313/images/21683126)
+![Image](..\..\..\static\img\Webroot-Site-KeyCode\image_1.png)
 
 You will set the code in the format xxxx-xxxx-xxxx-xxxx-xxxx.
 
 ## Step 3.
 Copy the code and paste it to client EDF 'Webroot Site KeyCode' for the solution to work.
+
 

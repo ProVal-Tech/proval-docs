@@ -42,5 +42,6 @@ Displays the data fetched by the [CWM - Automate - Script - Get Lastest Installe
 
 ## Sample Screenshot
 
-![Sample Screenshot](5078775/docs/12849510/images/18936574)
+![Sample Screenshot](..\..\..\static\img\Latest-Installed-Cumulative-Update\image_1.png)
+
 

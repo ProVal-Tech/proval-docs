@@ -14,7 +14,7 @@ This is an automate implementation of the Disable-DotNet3 agnostic script.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11094764/images/15640313)
+![Sample Run](..\..\..\static\img\DotNet3---Disable\image_1.png)
 
 ## Dependencies
 
@@ -23,4 +23,5 @@ This is an automate implementation of the Disable-DotNet3 agnostic script.
 ## Process
 
 Please review agnostic content documentation for process information.
+
 

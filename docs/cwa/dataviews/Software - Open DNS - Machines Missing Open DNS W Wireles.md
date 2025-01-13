@@ -28,3 +28,4 @@ None
 | Wireless card  | Will look to see if any of the cards connected to the endpoint are wireless compatible        |
 | Umbrella Agent | If the Open DNS/Umbrella Agent is installed on the endpoint                                   |
 
+

@@ -42,3 +42,4 @@ To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inv
 | DriverVersion      | varchar(32)   | Driver Version                                            |
 | ScriptRunTime      | varchar(25)   | Script Run Time                                           |
 
+

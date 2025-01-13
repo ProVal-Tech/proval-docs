@@ -14,8 +14,8 @@ This dataview will display the number of Windows 10 Machines by the build number
 
 Sample Screenshot:
 
-![Screenshot 1](5078775/docs/7789750/images/14363485)
-![Screenshot 2](5078775/docs/7789750/images/14581325)
+![Screenshot 1](..\..\..\static\img\Windows---Windows-Feature-Build-Metrics-UPDATED\image_1.png)
+![Screenshot 2](..\..\..\static\img\Windows---Windows-Feature-Build-Metrics-UPDATED\image_2.png)
 
 ## Dependencies
 
@@ -34,5 +34,6 @@ Sample Screenshot:
 | % Total Online                  | The number of machines on each Windows 10 build with the above filter / the total number of Windows 10 machines with the same filter applied. (Available in column chooser)                                                                        |
 | Machines W/ Patch Policy        | The number of machines on each Windows 10 build with the following filter: The Windows 10 machine must have a patch policy with "Managed Mode" or "Managed Mode UI Disabled" as its patch install method. (Available in column chooser)           |
 | % Total W/ Patch Policy         | The number of machines on each Windows 10 build with the above filter / the total number of Windows 10 machines with the same filter applied. (Available in column chooser)                                                                        |
+
 
 

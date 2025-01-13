@@ -55,3 +55,4 @@ A: It's most probably because of the permissions, try running [CWM - Automate - 
 A: You'll have to ensure that necessary exclusions are defined in the AV/security products. [AV Exclusions - ProVal Standard](https://proval.itglue.com/DOC-5078775-10955006). Alternatively, a whitelist object can be defined/added in the AV/security product's portal using the certificate attached to the email to run this particular script.  
 **Whitelisting the certificate will not overcome any restrictions/rules blocking/restricting the computers to communicate with [https://file.provaltech.com](https://file.provaltech.com)**.
 
+

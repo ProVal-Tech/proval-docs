@@ -52,3 +52,4 @@ Get the installed extensions for the Mozilla Firefox browser.
     ExtensionVersion        NoteProperty string ExtensionVersion=1.1.1
     UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
 ```
+

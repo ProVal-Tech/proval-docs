@@ -27,3 +27,4 @@ Stores the recovery key from the script [Bitlocker - Key Retrieval](https://prov
 | LastUpdated  | DATETIME| The last time the agent recovery key was audited.  |
 
 
+

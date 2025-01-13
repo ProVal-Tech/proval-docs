@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12944749/images/18475059)
+![Sample Run](..\..\..\static\img\MySQL---Permission---Set-agentdeploymentreadinesscheck-Table-Permissions\image_1.png)
 
 It's converted to a client script and should be scheduled to run every 12-24 hours.
 
@@ -25,4 +25,5 @@ It's converted to a client script and should be scheduled to run every 12-24 hou
 | Name            | Description                                                                                             |
 |-----------------|---------------------------------------------------------------------------------------------------------|
 | UpdateStatements | The variable will store the SQL result which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
+
 

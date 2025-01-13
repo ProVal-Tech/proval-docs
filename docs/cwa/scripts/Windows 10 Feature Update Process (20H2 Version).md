@@ -16,7 +16,7 @@ Time Saved by Automation: 120 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156781/images/11354579)
+![Sample Run](..\..\..\static\img\Windows-10-Feature-Update-Process-(20H2-Version)\image_1.png)
 
 ## Variables
 
@@ -53,5 +53,6 @@ Time Saved by Automation: 120 Minutes
 ## Output
 
 - Script log
+
 
 

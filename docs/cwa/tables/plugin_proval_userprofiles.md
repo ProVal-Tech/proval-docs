@@ -34,3 +34,4 @@ Stores Windows user profile information. Data is filled by [EPM - Accounts - Scr
 | Enabled     | VARCHAR  | True or False on if the local account is enabled. If not a local user, then field is set to Remote. |
 
 
+

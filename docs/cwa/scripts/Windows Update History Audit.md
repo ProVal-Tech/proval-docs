@@ -14,7 +14,7 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12275093/images/17300755)
+![Sample Run](..\..\..\static\img\Windows-Update-History-Audit\image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,6 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 
 - Script Log
 - [pvl_windows_updates](https://proval.itglue.com/DOC-5078775-12275091)
+
 
 

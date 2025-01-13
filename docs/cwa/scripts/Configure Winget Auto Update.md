@@ -76,16 +76,16 @@ These scripts come with the `Winget-AutoUpdate` application.
 
 First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](https://proval.itglue.com/DOC-5078775-17973964) table and EDFs used by the solution.
 
-![First Run](5078775/docs/17973896/images/27599439)
+![First Run](..\..\..\static\img\Configure-Winget-Auto-Update\image_1.png)
 
 Regular execution:  
-![Regular Execution](5078775/docs/17973896/images/27599714)
+![Regular Execution](..\..\..\static\img\Configure-Winget-Auto-Update\image_2.png)
 
 To uninstall `Winget-AutoUpdate` and wipe its traces. It will remove the [Winget Auto Update Errors](https://proval.itglue.com/DOC-5078775-17973900) remote monitor if exists. Additionally, Computer-level EDF `Exclude From Winget Auto Update` will be flagged as well resulting in excluding the computer from the solution and preventing the script execution in future.  
-![Uninstall](5078775/docs/17973896/images/27599886)
+![Uninstall](..\..\..\static\img\Configure-Winget-Auto-Update\image_3.png)
 
 Script's default nature is to compare the existing configuration before running the installation. Setting the `Force` to `1` will skip the comparison.  
-![Force](5078775/docs/17973896/images/27599938)
+![Force](..\..\..\static\img\Configure-Winget-Auto-Update\image_4.png)
 
 ## Dependencies
 
@@ -116,14 +116,14 @@ Script's default nature is to compare the existing configuration before running 
 | WAU - Whitelist            | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL... | Text      |                                                                                                                           | A comma-separated list of applications to update. By default, the solution will enable the Auto-update for all applications unless a whitelist is defined. Specifying this list overrides the blacklisted applications. |
 | WAU-Blacklist              | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL... | Text      |                                                                                                                           | A comma-separated list of applications to exclude. Only one of Whitelist or Blacklist can be used at a time. If both are provided, Whitelist will take precedence. |
 | WAU - InstallUserContext   |                                                          | Check-Box |                                                                                                                           | Flag this EDF to enable auto-update for User-level applications, too. By default, only system-level applications are updated. <br> **Note:** End users may observe a PowerShell window appearing on their screens during the scheduled update if the user context is enabled. |
-| WAU - NotificationLevel     | SuccessOnly                                             | Dropdown  | - Full<br>- SuccessOnly<br>- None                                                                                          | Specifies the notification level for application updates. <br> **Default:** None <br> **Sample Notification:** ![Notification Sample](5078775/docs/17973896/images/27600294) |
+| WAU - NotificationLevel     | SuccessOnly                                             | Dropdown  | - Full<br>- SuccessOnly<br>- None                                                                                          | Specifies the notification level for application updates. <br> **Default:** None <br> **Sample Notification:** ![Notification Sample](..\..\..\static\img\Configure-Winget-Auto-Update\image_5.png) |
 | WAU - UpdateInterval       | Daily                                                    | Dropdown  | - Daily<br>- BiDaily<br>- Weekly<br>- BiWeekly<br>- Monthly<br>- Never                                                     | Specifies the frequency of updates for the applications. This EDF defines how frequently the available updates are checked and implemented for the applications. <br> **Default:** Daily |
 | WAU - UpdatesAtTime        | 06AM                                                    | Dropdown  | - 12AM<br>- 12:30AM<br>- 01AM<br>- 01:30AM<br>- 02AM<br>- 02:30AM<br>- 03AM<br>- 03:30AM<br>- 04AM<br>- 04:30AM<br>- 05AM<br>- 05:30AM<br>- 06AM<br>- 06:30AM<br>- 07AM<br>- 07:30AM<br>- 08AM<br>- 08:30AM<br>- 09AM<br>- 09:30AM<br>- 10AM<br>- 10:30AM<br>- 11AM<br>- 11:30AM<br>- 12PM<br>- 12:30PM<br>- 01PM<br>- 01:30PM<br>- 02PM<br>- 02:30PM<br>- 03PM<br>- 03:30PM<br>- 04PM<br>- 04:30PM<br>- 05PM<br>- 05:30PM<br>- 06PM<br>- 06:30PM<br>- 07PM<br>- 07:30PM<br>- 08PM<br>- 08:30PM<br>- 09PM<br>- 09:30PM<br>- 10PM<br>- 10:30PM<br>- 11PM<br>- 11:30PM | Specifies the time for updates in 12-hour format for updating the applications. <br> **Default:** 06AM |
 | WAU - updatesAtLogon      |                                                          | Check-Box |                                                                                                                           | Flag this EDF to configure WAU to run at user logon. Both UpdatesAtTime and UpdatesAtLogon can be used together. |
 | WAU - doNotRunAfterInstallation |                                                  | Check-Box |                                                                                                                           | Flag this EDF to Prevent Winget-AutoUpdate from running immediately after installation. By default, it runs after installation. |
 | WAU - MonitorFailures      |                                                          | Check-Box |                                                                                                                           | Flag this EDF to create the [Winget Auto Update Errors](https://proval.itglue.com/DOC-5078775-17973900) remote monitor on the computer to alert on Winget AutoUpdate failures. |
 
-![Client-Level EDF](5078775/docs/17973896/images/27601086)
+![Client-Level EDF](..\..\..\static\img\Configure-Winget-Auto-Update\image_6.png)
 
 ## Location-Level EDF
 
@@ -147,4 +147,5 @@ Script's default nature is to compare the existing configuration before running 
   - Winget-AutoUpdate-Notify
   - Winget-AutoUpdate-Policies
   - Winget-AutoUpdate-UserContext
+
 

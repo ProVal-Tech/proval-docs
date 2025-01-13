@@ -31,7 +31,8 @@ This script is a function script called from [CWM - Automate - Script - Automate
 
 This script will add the following section to the log variable:
 
-![Output Section](5078775/docs/11640839/images/16260771)
+![Output Section](..\..\..\static\img\Automate-Database-Maintenance---UserCentric\image_1.png)
 
 or data if applicable.
+
 

@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator    | Interval | Result |
 |--------------|----------------|------------|---------------|----------------|----------|--------|
-| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based    | 3600     | ![Result](5078775/docs/14007936/images/20189156) |
+| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based    | 3600     | ![Result](..\..\..\static\img\Uninstall-TeamViewer\image_1.png) |
 
 ## Target
 
@@ -39,5 +39,6 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall TeamViewer](https://proval.itglue.com/DOC-5078775-14007937)
+
 
 

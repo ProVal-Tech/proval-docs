@@ -36,3 +36,4 @@ This dataview shows the Windows 10 machines with build and patch policy status c
 | LastPatched                   | This provide the date when the agent was last patched       |
 
 
+

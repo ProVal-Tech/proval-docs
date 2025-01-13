@@ -26,7 +26,7 @@ Gathers information about user profiles. Data is stored into the custom table [p
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8476496/images/11803512)
+![Sample Run](..\..\..\static\img\User-Profile---Get-Information\image_1.png)
 
 ## Dependencies
 
@@ -38,5 +38,6 @@ Gathers information about user profiles. Data is stored into the custom table [p
 - Script log
 - Local file on computer
 - Dataview
+
 
 

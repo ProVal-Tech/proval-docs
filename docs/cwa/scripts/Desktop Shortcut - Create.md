@@ -14,12 +14,12 @@ Creates a desktop shortcut for all users.
 
 ## Sample Run
 
-![Image 1](5078775/docs/11686735/images/19020009)  
-![Image 2](5078775/docs/11686735/images/16342925)  
+![Image 1](..\..\..\static\img\Desktop-Shortcut---Create\image_1.png)  
+![Image 2](..\..\..\static\img\Desktop-Shortcut---Create\image_2.png)  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-![Image 3](5078775/docs/11686735/images/16342949)  
-![Image 4](5078775/docs/11686735/images/19020012)  
-![Image 5](5078775/docs/11686735/images/16342966)  
+![Image 3](..\..\..\static\img\Desktop-Shortcut---Create\image_3.png)  
+![Image 4](..\..\..\static\img\Desktop-Shortcut---Create\image_4.png)  
+![Image 5](..\..\..\static\img\Desktop-Shortcut---Create\image_5.png)  
 
 ## Dependencies
 
@@ -36,5 +36,6 @@ Creates a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for process.
+
 
 

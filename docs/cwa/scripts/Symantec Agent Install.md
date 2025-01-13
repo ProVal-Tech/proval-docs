@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8133022/images/11323011)
+![Sample Run](..\..\..\static\img\Symantec-Agent-Install\image_1.png)
 
 ## Dependencies
 
@@ -30,4 +30,5 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 

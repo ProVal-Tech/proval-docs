@@ -14,10 +14,11 @@ The script installs the New Microsoft Teams on both Windows and Mac computers. U
 
 ## Sample Run
 
-![Sample Run](5078775/docs/15932618/images/23202652)
+![Sample Run](..\..\..\static\img\Install-New-Microsoft-Teams\image_1.png)
 
 ## Output
 
 - Script Log
+
 
 

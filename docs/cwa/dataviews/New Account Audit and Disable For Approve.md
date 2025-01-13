@@ -40,3 +40,4 @@ This dataview shows newly created accounts. It can be used in auditing of accoun
 | New Account Approved         | It shows whether new account is approved after verification (No Action Require - Since disable not enabled then it will show approval not required too) |
 | New Account Approved Date    | It shows when the account is approved to get enabled.                      |
 
+

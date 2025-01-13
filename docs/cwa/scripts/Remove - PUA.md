@@ -29,22 +29,22 @@ A CWA implementation of the agnostic script [Remove-PUA](https://proval.itglue.c
 ## Sample Run
 
 To fetch the list of installed Bloatware into the [Bloatware Audit](https://proval.itglue.com/DOC-5078775-17775281) dataview:  
-![Sample Run 1](5078775/docs/11157214/images/27218117)
+![Sample Run 1](..\..\..\static\img\Remove---PUA\image_1.png)
 
 To fetch the list of installed Bloatware and email it to the user running the script:  
-![Sample Run 2](5078775/docs/11157214/images/27400380)
+![Sample Run 2](..\..\..\static\img\Remove---PUA\image_2.png)
 
 To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
-![Sample Run 3](5078775/docs/11157214/images/27218300)
+![Sample Run 3](..\..\..\static\img\Remove---PUA\image_3.png)
 
 To remove all installed Bloatware supported by the script:  
-![Sample Run 4](5078775/docs/11157214/images/27218355)
+![Sample Run 4](..\..\..\static\img\Remove---PUA\image_4.png)
 
 To remove all xboxfeatureapps, except xboxGameOverlay:  
-![Sample Run 5](5078775/docs/11157214/images/27218402)
+![Sample Run 5](..\..\..\static\img\Remove---PUA\image_5.png)
 
 To remove all installed Bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
-![Sample Run 6](5078775/docs/11157214/images/27401099)
+![Sample Run 6](..\..\..\static\img\Remove---PUA\image_6.png)
 
 ## Dependencies
 
@@ -66,10 +66,10 @@ To remove all installed Bloatware supported by the script except `Microsoft.Bing
 The script is designed to send the list of installed Bloatware to the user running the script if the `ListBloatware` parameter is set to `2`.
 
 **Sample Email:**  
-![Sample Email](5078775/docs/11157214/images/27402436)
+![Sample Email](..\..\..\static\img\Remove---PUA\image_7.png)
 
 **Sample CSV File:**  
-**![Sample CSV](5078775/docs/11157214/images/27402573)**
+**![Sample CSV](..\..\..\static\img\Remove---PUA\image_8.png)**
 
 ## Output
 
@@ -117,4 +117,5 @@ The script is designed to send the list of installed Bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
+
 

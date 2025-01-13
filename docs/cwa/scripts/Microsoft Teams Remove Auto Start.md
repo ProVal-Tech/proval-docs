@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8138247/images/11354743)
+![Sample Run](..\..\..\static\img\Microsoft-Teams-Remove-Auto-Start\image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ Time Saved by Automation: 15 Minutes
 ## Output
 
 - Script log
+
 
 

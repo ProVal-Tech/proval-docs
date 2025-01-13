@@ -27,7 +27,7 @@ For getting a ticket, you must change the global parameter value for TicketCreat
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8062236/images/11221750)
+![Sample Run](..\..\..\static\img\Exchange-Zero-Day-Patch-Logging\image_1.png)
 
 ## Dependencies
 
@@ -58,5 +58,6 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVE-
 
 - Script log
 - Ticketing if enabled in Globals
+
 
 

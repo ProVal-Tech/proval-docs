@@ -14,12 +14,12 @@ This script collects the Webroot hashed keycode from the machine and further mat
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8223773/images/21682998)
+![Sample Run](..\..\..\static\img\Webroot-Keycode-Verification\image_1.png)
 
 ## Dependencies
 
 Webroot SecureAnyWhere with Utility Plugin  
-![Dependencies](5078775/docs/8223773/images/19274245)
+![Dependencies](..\..\..\static\img\Webroot-Keycode-Verification\image_2.png)
 
 ## EDFs
 
@@ -33,4 +33,5 @@ Webroot SecureAnyWhere with Utility Plugin
 - Script log
 - EDF
 - Dataview
+
 

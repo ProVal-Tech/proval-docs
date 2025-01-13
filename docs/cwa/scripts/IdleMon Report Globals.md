@@ -20,7 +20,7 @@ The logged-in user must re-login after installing the tool. The script will inst
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12869569/images/18332765)
+![Sample Run](..\..\..\static\img\IdleMon-Report-Globals\image_1.png)
 
 Schedule the script to run periodically against the computer to monitor.
 
@@ -49,4 +49,5 @@ The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be place
 
 - Script log
 - Dataview
+
 

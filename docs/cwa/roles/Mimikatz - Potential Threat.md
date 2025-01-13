@@ -25,3 +25,4 @@ If it is not set but exists - system is vulnerable - see [Mimikatz - Vulnerable]
 | {%-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredential-%} | Equals     | 1      | Windows        |
 
 
+

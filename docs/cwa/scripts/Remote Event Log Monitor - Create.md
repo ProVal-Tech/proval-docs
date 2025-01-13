@@ -16,7 +16,7 @@ PowerShell-related issues are addressed in the WARNING state. It is suggested to
 
 Note: You have to review the properties of the event log to monitor to determine the name.
 
-![Event Log Monitor](5078775/docs/9742626/images/21552936)
+![Event Log Monitor](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_1.png)
 
 ## Requirements
 
@@ -37,7 +37,7 @@ The following parameters will configure a remote monitor on groupid 1675, restri
 
 The aforementioned monitor will be designed to scan for Informational events from the Application log, which contain an event ID of 7040, the message within the event log containing the phrase "The Start Type of", and generated over the last 86400 seconds.
 
-![Monitor Configuration](5078775/docs/9742626/images/17956085)
+![Monitor Configuration](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_2.png)
 
 The following parameters will be utilized to configure a remote monitor on groupid 1675, restricted to searchid 75:
 - Monitor Name: Application - Event 7040,7041 - Provider Service Control Manager
@@ -45,7 +45,7 @@ The following parameters will be utilized to configure a remote monitor on group
 
 The aforementioned monitor will be designed to scan for all events from the Application log, which contain an event ID of 7040 or 7041, with the provider name of 'Service Control Manager', and have generated at least thrice over the last 300 seconds (Monitor's interval).
 
-![Event Monitor](5078775/docs/9742626/images/17956091)
+![Event Monitor](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_3.png)
 
 ## Dependencies
 
@@ -98,22 +98,22 @@ The aforementioned monitor will be designed to scan for all events from the Appl
 ## Sample Remote Monitors
 
 # Multiple Monitors:
-![Multiple Monitors](5078775/docs/9742626/images/17956940)
+![Multiple Monitors](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_4.png)
 
 # Configuration Tab:
-![Configuration Tab](5078775/docs/9742626/images/17956949)
+![Configuration Tab](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_5.png)
 
 # Example Warning:
-![Example Warning](5078775/docs/9742626/images/17956963)
+![Example Warning](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_6.png)
 
 # Example Failed:
-![Example Failed](5078775/docs/9742626/images/17957093)
+![Example Failed](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_7.png)
 
 # Example Success:
-![Example Success](5078775/docs/9742626/images/17957166)
+![Example Success](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_8.png)
 
 # Alerting Tab:
-![Alerting Tab](5078775/docs/9742626/images/17957042)
+![Alerting Tab](..\..\..\static\img\Remote-Event-Log-Monitor---Create\image_9.png)
 
 # Example %RESULT%
 ```
@@ -130,4 +130,5 @@ TimeCreated                            Id LevelDisplayName Message
 4/18/2023 9:06:48 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 4/18/2023 9:01:58 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 ```
+
 

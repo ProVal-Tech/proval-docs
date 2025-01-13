@@ -28,3 +28,4 @@ This custom table holds the target computer id, the script Id of a script you wi
 | ScriptID          | INT  | The target script to be executed on the computer.        |
 | ScriptParameters   | Text | Any parameters necessary for the successful run of the script being targeted. |
 
+

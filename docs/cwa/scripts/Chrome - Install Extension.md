@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8009570/images/11148218)
+![Sample Run](..\..\..\static\img\Chrome---Install-Extension\image_1.png)
 
 ## Dependencies
 
@@ -44,4 +44,5 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Local file on computer
+
 

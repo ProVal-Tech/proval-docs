@@ -14,7 +14,7 @@ This script installs/updates the NordPass on the machines. This script will inst
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13867978/images/20257850)
+![Sample Run](..\..\..\static\img\InstallUpdate-NordPass\image_1.png)
 
 ## Global Parameters
 
@@ -82,5 +82,6 @@ S/N OF PC: @biosver@
 If the update fails, you can try manually installing NordPass on your machine by following the instructions provided in the link below:  
 [Installing NordPass on Windows](https://support.nordpass.com/hc/en-us/articles/360004799257-Installing-NordPass-on-Windows)  
 This guide will walk you through the steps to install NordPass on your Windows system.
+
 
 

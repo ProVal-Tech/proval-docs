@@ -114,9 +114,10 @@ unlisted: false
 - Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search and alert template.  
   Limit To: Distinct Domain Controller Per Client  
   Alert Template: △ Custom - Ticket Creation Computer - Failures Only  
-  ![Image](5078775/docs/13460543/images/19315783)
+  ![Image](..\..\..\static\img\New-Domain-Admin\image_1.png)
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
-  ![Image](5078775/docs/13460543/images/19315775)  
+  ![Image](..\..\..\static\img\New-Domain-Admin\image_2.png)  
   
+
 

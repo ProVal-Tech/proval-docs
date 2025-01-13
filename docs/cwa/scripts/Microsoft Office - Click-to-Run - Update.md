@@ -20,3 +20,4 @@ Update Microsoft 365 Apps to their latest version.
 - \ProgramData\_automation\script\Update-Office\Update-Office-log.txt
 
 
+

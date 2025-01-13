@@ -30,3 +30,4 @@ Returns a list of all Sql replication instances that are not syncronized or sync
 Location of output for log, result, and error files.
     System Object
     .\Get-DesynchronizedSqlReplicas-log.txt
+

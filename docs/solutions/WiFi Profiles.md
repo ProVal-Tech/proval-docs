@@ -51,3 +51,4 @@ The purpose of the solution is to find out and remove the malicious/suspicious W
 - Set the EDFs defined in the [script's](https://proval.itglue.com/DOC-5078775-12979854) document as per the data available in the [dataview](https://proval.itglue.com/DOC-5078775-12979850).
 - Apply the `△ CUSTOM - Execute Script - Get - Wifi Profiles` alert template on the monitor set.
 
+

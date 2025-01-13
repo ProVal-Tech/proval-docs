@@ -18,10 +18,11 @@ Domain Controllers
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14448793/images/20886936)
+![Sample Run](..\..\..\static\img\Disable-NTLMv1.1\image_1.png)
 
 ## Output
 
 - Script log
+
 
 

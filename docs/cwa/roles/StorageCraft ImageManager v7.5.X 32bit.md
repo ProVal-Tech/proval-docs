@@ -19,3 +19,4 @@ This role definition helps you track down machines with StorageCraft ImageManage
 | `%{@powershell.exe "(Get-Item 'C:\\Program Files\\StorageCraft\\ImageManager\\ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion"@%}` | Regex Match    | `^7\.5.`    | Windows        |
 
 
+

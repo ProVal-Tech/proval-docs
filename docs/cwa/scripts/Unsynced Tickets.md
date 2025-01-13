@@ -26,10 +26,10 @@ Remove the internal monitor [**ProVal - Production - Automate - Ticket Sync Unsu
 
 It is a client script and should be scheduled to run once per **X** hours. **X** is the number of hours set for the script's Global Parameter `Threshold`.
 
-![Sample Run Image 1](5078775/docs/13283114/images/19032090)
+![Sample Run Image 1](..\..\..\static\img\Unsynced-Tickets\image_1.png)
 
 Schedule:
-![Sample Run Image 2](5078775/docs/13283114/images/19032091)
+![Sample Run Image 2](..\..\..\static\img\Unsynced-Tickets\image_2.png)
 
 ## Variables
 
@@ -53,9 +53,9 @@ Schedule:
 
 **Examples:**
 - Single Email Address:
-![Single Email Example](5078775/docs/13283114/images/19032100)
+![Single Email Example](..\..\..\static\img\Unsynced-Tickets\image_3.png)
 - Multiple Email Addresses:
-![Multiple Email Example](5078775/docs/13283114/images/19032101)
+![Multiple Email Example](..\..\..\static\img\Unsynced-Tickets\image_4.png)
 
 **Note:** The script will not create the system property. Hence, this system property should be created before scheduling/running the script. Otherwise, the script will not work.
 
@@ -81,5 +81,6 @@ Ticket Body: <Ticket Body>
 ```
 
 **Sample Screenshot:**
-![Sample Screenshot](5078775/docs/13283114/images/19118587)
+![Sample Screenshot](..\..\..\static\img\Unsynced-Tickets\image_5.png)
+
 

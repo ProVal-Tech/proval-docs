@@ -14,9 +14,10 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11076442/images/23317464)
+![Sample Run](..\..\..\static\img\Gecko-Cache---Clear\image_1.png)
 
 ## Output
 
 - Script log
+
 

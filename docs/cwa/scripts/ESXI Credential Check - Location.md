@@ -14,7 +14,7 @@ This script will create a client ticket for any location in which a virtual mach
 
 To exclude any location from this check please set this check box to checked.
 
-![Image](5078775/docs/12030406/images/17065676)
+![Image](..\..\..\static\img\ESXI-Credential-Check---Location\image_1.png)
 
 ## Sample Run
 
@@ -36,8 +36,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Ticketing
 
-![Image](5078775/docs/12030406/images/17065807)
+![Image](..\..\..\static\img\ESXI-Credential-Check---Location\image_2.png)
 
-![Image](5078775/docs/12030406/images/17065815)
+![Image](..\..\..\static\img\ESXI-Credential-Check---Location\image_3.png)
+
 
 

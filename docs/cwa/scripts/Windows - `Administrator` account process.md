@@ -21,7 +21,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7742920/images/15193054)
+![Sample Run](..\..\..\static\img\Windows---`Administrator`-account-process\image_1.png)
 
 ## Variables
 
@@ -57,11 +57,11 @@ Note: The client level password entry can be created manually if desired, but th
 
 **(Manual password creation before first run)**
 
-![Manual password creation](5078775/docs/7742920/images/15193082)
+![Manual password creation](..\..\..\static\img\Windows---`Administrator`-account-process\image_2.png)
 
 **(Manual password change)**
 
-![Manual password change](5078775/docs/7742920/images/15193083)
+![Manual password change](..\..\..\static\img\Windows---`Administrator`-account-process\image_3.png)
 
 **Script Process:**
 
@@ -92,5 +92,6 @@ Password Complexity Failed: If the password did not meet the target device's com
 ## Output
 
 Script log messages
+
 
 

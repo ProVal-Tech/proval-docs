@@ -23,13 +23,13 @@ File Path: `C:\ProgramData\_automation\script\Install-FeatureUpdate\Install-Feat
 ## Sample Run
 
 To upgrade a computer from Windows 10 to Windows 11, forcefully reboot it, skipping Free Drive Space Check and with a custom image/icon in the user's prompt:  
-![Upgrade Prompt](5078775/docs/12028460/images/18899173)
+![Upgrade Prompt](..\..\..\static\img\Install-Windows-Upgrade\image_1.png)
 
 To install the latest available feature pack on a Windows 10+ machine, without restarting and with the default image/icon in the user's prompt:  
-![Install Prompt](5078775/docs/12028460/images/18899218)
+![Install Prompt](..\..\..\static\img\Install-Windows-Upgrade\image_2.png)
 
 ### Example Prompt
-![Example Prompt](5078775/docs/12028460/images/17133454)
+![Example Prompt](..\..\..\static\img\Install-Windows-Upgrade\image_3.png)
 
 ## Dependencies
 
@@ -155,5 +155,6 @@ Error Log
 Setup Diag Result  
 ----------------  
 `<Outcome of the SetupDiagTool verifying the upgrade process>`
+
 
 

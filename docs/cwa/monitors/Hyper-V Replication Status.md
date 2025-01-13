@@ -31,7 +31,7 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Windows HyperV Host  
-![HyperV Host](5078775/docs/12436894/images/17581759)
+![HyperV Host](..\..\..\static\img\Hyper-V-Replication-Status\image_1.png)
 
 ## Ticketing
 
@@ -61,5 +61,6 @@ TESTDNS01 replication state: Warning
 
 Please follow the below article for the implementation:  
 [Implementation Article](https://proval.itglue.com/5078775/docs/15601954)
+
 
 

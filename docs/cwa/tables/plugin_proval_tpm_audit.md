@@ -45,3 +45,4 @@ It holds all data from the Get-TPM command.
 | TpmReady               | VARCHAR | Holds the value of the TpmReady property of Get-TPM                |
 
 
+

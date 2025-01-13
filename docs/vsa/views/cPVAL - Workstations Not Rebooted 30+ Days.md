@@ -1,0 +1,33 @@
+---
+id: 'vsa-workstation-reboot-report'
+title: 'Workstation Reboot Report'
+title_meta: 'Workstation Reboot Report'
+keywords: ['workstation', 'reboot', 'report', 'view', 'filter']
+description: 'This document provides a detailed overview of a view that displays workstations that have not rebooted in the last 30+ days. It includes information on dependencies, applied filters, and an export attachment for further analysis.'
+tags: ['report', 'windows', 'performance', 'filter', 'database']
+draft: false
+unlisted: false
+---
+# Summary
+
+This View will show the data of workstations, that have not rebooted in the last 30+ days.
+
+# Dependencies
+
+None
+
+# View Filters
+
+List all filters applied to this view
+
+| Filter Name         | Advanced Filter? | Filter Value                                        |
+|---------------------|------------------|-----------------------------------------------------|
+| OS Type             | N                | All Workstations                                    |
+| Operating System     | N                | NOT *MAC* AND NOT *LINUX*                          |
+| Machine Status      | N                | Show machines that have not rebooted in last 30 day |
+
+### Export Attachment
+
+Attach the content XML VSA Export to this document.
+
+

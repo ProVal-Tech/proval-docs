@@ -30,3 +30,4 @@ This dataview will show the encryption status of endpoints in Automate. Specific
 | FileVault Status                 | The FileVault status for Mac devices                                                             |
 | Last logon User                  | The last user that logged into the device based on information gathered by Automate             |
 
+

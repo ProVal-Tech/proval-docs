@@ -18,12 +18,13 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8071091/images/11231692)
+![Sample Run](..\..\..\static\img\Network-Probe---Enable\image_1.png)
 
 Script executes the LT Command to enable network probe
 
 ## Output
 
 No Output - Command Log
+
 
 

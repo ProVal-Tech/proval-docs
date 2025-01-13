@@ -56,9 +56,9 @@ WHERE (SELECT COUNT(*) FROM alerttemplates WHERE GUID = '7245e028-bbee-4fff-9df6
 Set the Email addresses at the computer-level EDF `Online Alert E-mail` placed under the `Default` EDF section for the concerned computers. To set multiple email addresses, each address must be separated by a semi-colon (;).  
 e.g.,  
 Multiple E-mail Addresses:  
-![Multiple E-mail Addresses](5078775/docs/11753155/images/16462885)  
+![Multiple E-mail Addresses](..\..\static\img\Email---Machine-Back-Online\image_1.png)  
 Single E-mail Address:  
-![Single E-mail Address](5078775/docs/11753155/images/16462886)  
+![Single E-mail Address](..\..\static\img\Email---Machine-Back-Online\image_2.png)  
 
 ## FAQ
 
@@ -67,9 +67,10 @@ Q: How to stop receiving the E-Mails after getting the work done?
 
 A: Remove the E-Mail address(es) from the EDF. 
 ```
-![FAQ Image](5078775/docs/11753155/images/16462889)
+![FAQ Image](..\..\static\img\Email---Machine-Back-Online\image_3.png)
 
 ## Sample E-Mail
 
-![Sample E-Mail](5078775/docs/11753155/images/16462890)
+![Sample E-Mail](..\..\static\img\Email---Machine-Back-Online\image_4.png)
+
 

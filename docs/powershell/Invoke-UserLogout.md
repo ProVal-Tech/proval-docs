@@ -36,3 +36,4 @@ Location of output for log, result, and error files.
     .\Invoke-UserLogout-log.txt
     .\Invoke-UserLogout-data.txt
     .\Invoke-UserLogout-error.txt
+

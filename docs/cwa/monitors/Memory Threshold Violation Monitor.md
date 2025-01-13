@@ -45,7 +45,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based | 600      | ![Result](5078775/docs/13276501/images/19463711) |
+| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based | 600      | ![Result](..\..\..\static\img\Memory-Threshold-Violation-Monitor\image_1.png) |
 
 ## Target
 
@@ -83,10 +83,11 @@ chrome                 4.55
 ```
 
 **Sample Ticket:**  
-![Sample Ticket](5078775/docs/13276501/images/19022407)
+![Sample Ticket](..\..\..\static\img\Memory-Threshold-Violation-Monitor\image_2.png)
 
 ## How to Import
 
 [Import - Remote Monitor - Memory Threshold Violation Monitor](https://proval.itglue.com/DOC-5078775-13276991)
+
 
 

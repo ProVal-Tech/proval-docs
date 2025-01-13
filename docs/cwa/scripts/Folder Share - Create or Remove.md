@@ -20,7 +20,7 @@ Target: Windows Device
 
 Please see the user parameters section below for additional information!
 
-![Sample Run](5078775/docs/7776316/images/10828605)
+![Sample Run](..\..\..\static\img\Folder-Share---Create-or-Remove\image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ The script will execute a PowerShell script passing the above parameters. The sc
 ## Output
 
 Script log messages
+
 
 

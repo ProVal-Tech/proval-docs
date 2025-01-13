@@ -33,3 +33,4 @@ Windows Machines
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Monthly Enterprise](https://proval.itglue.com/DOC-5078775-8009392) script.
 
+

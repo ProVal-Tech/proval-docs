@@ -16,7 +16,7 @@ This script will create a ticket in our (ProValtech's) Autotask Portal if the Co
 
 It is a client script and should be scheduled in the Dashboard's Offline Computer
 
-![Sample Run](5078775/docs/10390939/images/14567452)
+![Sample Run](..\..\..\static\img\Nightly-Database-Backup-Monitoring\image_1.png)
 
 ## Variables
 
@@ -32,7 +32,7 @@ It is a client script and should be scheduled in the Dashboard's Offline Compute
 |----------------------------------|-------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ProVal_Alerts_Email_Address       | [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | True     | By default, the system property `ProVal_Alerts_Email_Address` will get set to [alerts@provaltech.com](mailto:alerts@provaltech.com). This can be changed in the event these alerts should be going somewhere else. |
 
-![System Properties](5078775/docs/10390939/images/21356584)
+![System Properties](..\..\..\static\img\Nightly-Database-Backup-Monitoring\image_2.png)
 
 ## Process
 
@@ -52,4 +52,5 @@ A MySQL backup for ConnectWise Automate was generated last night but it is lower
 ## Output
 
 - Email
+
 

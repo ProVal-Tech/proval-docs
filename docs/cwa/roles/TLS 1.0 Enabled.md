@@ -19,3 +19,4 @@ This role shows if an agent has TLS 1.0 Enabled.
 | {%-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client:Enabled-%} | Equals     | 1      | Windows        |
 
 
+

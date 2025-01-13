@@ -32,7 +32,7 @@ The purpose of this solution is to install the QuickPass agent on Windows machin
    - `△ Custom - Execute Script - Deploy QuickPass Agent`
 
 4. Reload the System Cache  
-   ![System Cache](5078775/docs/15308970/images/22238466)
+   ![System Cache](..\..\static\img\QuickPass-Agent-Deployment\image_1.png)
 
 5. Configure the solution as follows:
    - Navigate to Automation → Scripts within the CWA Control Center.
@@ -46,4 +46,5 @@ The purpose of this solution is to install the QuickPass agent on Windows machin
      - Client EDF - QuicPass
      - Client EDF - QuickPass Agent ID
      - System Property - QuickpassInstallToken
+
 

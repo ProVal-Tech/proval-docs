@@ -16,7 +16,7 @@ Time Saved by Automation: 60 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8062328/images/11221967)
+![Sample Run](..\..\..\static\img\Build-and-Map-Information-Base-Categories-from-CWM(board-Type-SubType-Item\image_1.png)
 
 ## Dependencies
 
@@ -41,4 +41,5 @@ Maps those new info base categories in the CW Manage plugin tables.
 ## Output
 
 No script output, reload cache and view info base categories in system dashboard & review the CW Manage plugin Ticket category area.
+
 

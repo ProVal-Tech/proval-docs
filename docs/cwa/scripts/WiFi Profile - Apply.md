@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8140815/images/11333557)
+![Sample Run](..\..\..\static\img\WiFi-Profile---Apply\image_1.png)
 
 ## Dependencies
 
@@ -39,4 +39,5 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 

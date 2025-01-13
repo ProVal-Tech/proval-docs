@@ -78,3 +78,4 @@ Remove-UserProfile.ps1 -Username "domain\domainuser"
     ./Remove-UserProfile-log.txt
     ./Remove-UserProfile-data.txt
     ./Remove-UserProfile-error.txt
+

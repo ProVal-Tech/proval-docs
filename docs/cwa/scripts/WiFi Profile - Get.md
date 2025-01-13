@@ -17,7 +17,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8041474/images/11191271)
+![Sample Run](..\..\..\static\img\WiFi-Profile---Get\image_1.png)
 
 ## Variables
 
@@ -39,4 +39,5 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Table plugin_proval_wifi_profiles
+
 

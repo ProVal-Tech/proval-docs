@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](5078775/docs/14066620/images/21622913) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](..\..\..\static\img\New-Local-Admin\image_1.png) |
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Managed Windows Workstations and Servers.
 
 The monitor set should be limited to the `<All Computers Excluding Domain Controllers>` search.
 
-![Target Image](5078775/docs/14066620/images/20271374)
+![Target Image](..\..\..\static\img\New-Local-Admin\image_2.png)
 
 ## Implementation
 
@@ -52,7 +52,8 @@ Please follow the instructions provided in the implementation article to impleme
 `<Newly Created Local Admin(s)>`
 
 **Example:**  
-![Example Image](5078775/docs/14066620/images/21622903)
+![Example Image](..\..\..\static\img\New-Local-Admin\image_3.png)
 
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
 

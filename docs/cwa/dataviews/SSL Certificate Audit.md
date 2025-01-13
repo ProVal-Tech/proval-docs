@@ -38,3 +38,4 @@ It is designed to present a full list of all certificates found on machines and 
 | Status               | Certificate's current Status in text.                                                            |
 
 
+

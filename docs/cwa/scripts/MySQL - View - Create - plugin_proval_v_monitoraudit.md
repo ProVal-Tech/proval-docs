@@ -14,7 +14,7 @@ This script creates the [View - plugin_proval_v_monitoraudit](https://proval.itg
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11931049/images/16731941)
+![Sample Run](..\..\..\static\img\MySQL---View---Create---plugin_proval_v_monitoraudit\image_1.png)
 
 ## Process
 
@@ -25,4 +25,5 @@ This script creates the [View - plugin_proval_v_monitoraudit](https://proval.itg
 ## Output
 
 - View
+
 

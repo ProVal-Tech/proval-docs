@@ -36,3 +36,4 @@ The dataview is created to verify the workaround applied and installation of all
 | Last Contact                        | Last Contact of the Computer.                                                                                                                   |
 
 
+

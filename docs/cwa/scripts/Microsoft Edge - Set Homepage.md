@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8199518/images/11413544)
+![Sample Run](..\..\..\static\img\Microsoft-Edge---Set-Homepage\image_1.png)
 
 ## Dependencies
 
@@ -45,5 +45,6 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
 
 

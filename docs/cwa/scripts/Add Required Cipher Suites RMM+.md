@@ -14,7 +14,7 @@ The script's goal is to add the [Cipher Suites](https://docs.connectwise.com/Con
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13003833/images/18586482)
+![Sample Run](..\..\..\static\img\Add-Required-Cipher-Suites-RMM+\image_1.png)
 
 ## Dependencies
 
@@ -38,4 +38,5 @@ The script's goal is to add the [Cipher Suites](https://docs.connectwise.com/Con
 ## Output
 
 Script Log
+
 

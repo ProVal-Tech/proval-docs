@@ -29,3 +29,4 @@ Stores information about Windows restore points.
 | SequenceNumber       | INT     | The number of previous sequences that this restore point has been through. |
 
 
+

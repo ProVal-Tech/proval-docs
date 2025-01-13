@@ -23,7 +23,7 @@ This Remote monitor will provide alerting on HyperV host snapshots that have tur
 |--------------|----------------|------------|-------------|------------|----------|--------|
 | System       | Default        | Run File   | **REDACTED**| State Based | 3600     | Screenshot attached below |
 
-![Screenshot](5078775/docs/11910818/images/24142035)
+![Screenshot](..\..\..\static\img\HyperV---Snapshot-Age--3-Days\image_1.png)
 
 ## Target
 
@@ -52,5 +52,6 @@ CreationTime: 7/16/2024 2:02 PM
 ## Implementation
 
 [Implementation Guide](https://proval.itglue.com/5078775/docs/15601843)
+
 
 

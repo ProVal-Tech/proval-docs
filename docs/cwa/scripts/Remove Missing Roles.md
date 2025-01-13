@@ -16,9 +16,10 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8092777/images/11262416)
+![Sample Run](..\..\..\static\img\Remove-Missing-Roles\image_1.png)
 
 ## Process
 
 - The script runs SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.
+
 

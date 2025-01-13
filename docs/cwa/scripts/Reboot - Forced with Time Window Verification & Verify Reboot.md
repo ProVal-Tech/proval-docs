@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8008781/images/11147199)
+![Sample Run](..\..\..\static\img\Reboot---Forced-with-Time-Window-Verification-&-Verify-Reboot\image_1.png)
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

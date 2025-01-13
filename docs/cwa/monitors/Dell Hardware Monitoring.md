@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File   | **REDACTED**  | State-Based | 3600     | Screenshot attached Below |
 
-![Screenshot](5078775/docs/12104772/images/22136091)
+![Screenshot](..\..\..\static\img\Dell-Hardware-Monitoring\image_1.png)
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ Insert the details of the monitor in the below table.
 
 The remote monitor should be limited to the `Computers - Dell Servers` search on the **Managed Servers** service plan group(s).
 
-![Target Image](5078775/docs/12104772/images/22136107)
+![Target Image](..\..\..\static\img\Dell-Hardware-Monitoring\image_2.png)
 
 ## Ticketing
 
@@ -48,4 +48,5 @@ The remote monitor should be limited to the `Computers - Dell Servers` search on
 ## Implementation
 
 [Implement - Remote Monitor - Dell Hardware Monitoring](https://proval.itglue.com/DOC-5078775-15248345)
+
 

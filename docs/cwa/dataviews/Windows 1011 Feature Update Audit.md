@@ -45,3 +45,4 @@ This dataview shows the Windows 10/11 complete listing with their build version 
 | EOL    | Equals     | No    | **<span style="color: rgb(0, 128, 0);">Green</span>** |
 
 
+

@@ -15,10 +15,10 @@ This is an automate wrapper for the agnostic Get-DCDiagReport.ps1. The script wi
 ## Sample Run
 
 Run the script without setting the `Excluded_TestNames` parameter to perform available tests during the diagnostic.  
-![Sample Run 1](5078775/docs/12664605/images/19760715)
+![Sample Run 1](..\..\..\static\img\Get-DCDiagReport\image_1.png)
 
 A set of specific test names can be passed to the `Excluded_TestNames` parameters to exclude from the diagnostic.  
-![Sample Run 2](5078775/docs/12664605/images/19760792)
+![Sample Run 2](..\..\..\static\img\Get-DCDiagReport\image_2.png)
 
 ## Dependencies
 
@@ -59,6 +59,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Ticketing
 
-![Ticketing](5078775/docs/12664605/images/19609440)  
+![Ticketing](..\..\..\static\img\Get-DCDiagReport\image_3.png)  
 **Script will not close/finish any ticket.**
+
 

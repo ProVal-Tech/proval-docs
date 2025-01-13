@@ -15,7 +15,7 @@ Time Saved by Automation: 120 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8168779/images/11368517)
+![Sample Run](..\..\..\static\img\DEV---Windows-10-Upgrade-Assistant\image_1.png)
 
 ## Dependencies
 
@@ -42,5 +42,6 @@ Time Saved by Automation: 120 Minutes
 ## Output
 
 - Script log
+
 
 

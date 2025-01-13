@@ -31,9 +31,9 @@ Delete from agents where `Name` = 'ProVal - Production - Security - Possible Bru
 
 Navigate to `Help` > `Server Status` and `Do Group Refresh`.
 
-![Image 1](5078775/docs/13832549/images/26372670)
+![Image 1](..\..\..\static\img\Security---Possible-Brute-Force-Attack\image_1.png)
 
-![Image 2](5078775/docs/13832549/images/26372656)
+![Image 2](..\..\..\static\img\Security---Possible-Brute-Force-Attack\image_2.png)
 
 ---
 
@@ -117,14 +117,14 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 ## Step 4.
 Locate your remote monitor by navigating to the `Domain Controller`.
 
-![Image](5078775/docs/13832549/images/26372727)
+![Image](..\..\..\static\img\Security---Possible-Brute-Force-Attack\image_3.png)
 
 ---
 
 ## Step 5.
 Ensure that the monitor set is limited to the `Server Role - AD - Infrastructure Master` search.
 
-![Image](5078775/docs/13832549/images/26372747)
+![Image](..\..\..\static\img\Security---Possible-Brute-Force-Attack\image_4.png)
 
 ---
 
@@ -132,4 +132,5 @@ Ensure that the monitor set is limited to the `Server Role - AD - Infrastructure
 Implement the appropriate alert template for alerting. 
 
 Suggested alert template: `△ Custom - Ticket Creation Computer - Failures Only`
+
 

@@ -21,7 +21,7 @@ Time Saved by Automation: 5 Minutes
 ## Sample Run
 
 Target: Windows Device  
-![Sample Run Image](5078775/docs/8002546/images/11140140)
+![Sample Run Image](..\..\..\static\img\Reboot---Forced-with-30-Min-or-Custom-Maintenance-Mode\image_1.png)
 
 #### User Parameters
 
@@ -47,5 +47,6 @@ The script will then issue a Windows CLI command to restart the device and then 
 ## Output
 
 Script log messages
+
 
 

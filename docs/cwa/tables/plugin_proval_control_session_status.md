@@ -29,3 +29,4 @@ This will hold the current ConnectWise Control agent online status for each agen
 | LastConnectedDate   | DATETIME     | Holds the last connected date of the ConnectWise Control agent.                               |
 | SCName              | VARCHAR(50)  | Holds the computer name as displayed in the ConnectWise Control portal for that agent.       |
 
+

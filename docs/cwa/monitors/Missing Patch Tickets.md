@@ -91,3 +91,4 @@ WHERE
 
 **Note:** Ensure that the [CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]*](https://proval.itglue.com/DOC-5078775-12589458) script is imported before creating the alert template.
 
+

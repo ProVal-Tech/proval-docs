@@ -16,10 +16,11 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8032206/images/11181234)
+![Sample Run](..\..\..\static\img\Office-Update-Disable\image_1.png)
 
 ## Process
 
 - Disables office update by running a PowerShell command which updates a registry value “HKLM:\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration” and setting the UpdateEnabled to False.
+
 
 

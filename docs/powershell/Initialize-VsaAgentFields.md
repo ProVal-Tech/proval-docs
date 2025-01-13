@@ -34,3 +34,4 @@ Uses VSAAPI module to interface with client environment, setting new CustomField
    
 Initialize-VsaAgentFields-Log.txt
 Initialize-VsaAgentFields-error.txt
+

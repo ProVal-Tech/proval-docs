@@ -26,3 +26,4 @@ This table holds information on patches to deny as per [denied patches](https://
 | Title  | varchar(2000) | Title of the patch to deny.        |
 | Reason | varchar(2000) | Reason behind denying the patch.    |
 
+

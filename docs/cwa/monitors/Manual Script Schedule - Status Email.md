@@ -43,5 +43,6 @@ Here, %Result% contains the Script Name: "Scriptname" ran on computer "Computern
 
 **Email Example:**
 
-![Email Example](5078775/docs/15475750/images/22542931)
+![Email Example](..\..\..\static\img\Manual-Script-Schedule---Status-Email\image_1.png)
+
 

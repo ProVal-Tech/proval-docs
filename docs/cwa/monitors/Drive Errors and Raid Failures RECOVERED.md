@@ -70,16 +70,17 @@ HAVING
 
 **Q: How do I ignore certain error types or only alert on a number of events?**  
 **A:** At the end of the query there is a commented-out (by default) line for this behavior.  
-![Image](5078775/docs/11914951/images/16704877)
+![Image](..\..\..\static\img\Drive-Errors-and-Raid-Failures-RECOVERED\image_1.png)
 
 Remove the `#` from this line and that will allow this line to go into production. In this example, we want to ignore controller errors if there are less than 20 of them on a specific drive. The portion:  
-![Image](5078775/docs/11914951/images/16704878)  
+![Image](..\..\..\static\img\Drive-Errors-and-Raid-Failures-RECOVERED\image_2.png)  
 is the subject line of the event log that we want to exclude unless there are X results. The portion here:  
-![Image](5078775/docs/11914951/images/16704879)  
+![Image](..\..\..\static\img\Drive-Errors-and-Raid-Failures-RECOVERED\image_3.png)  
 is the number of events.
 
 Translated from programming to human, this essentially says "Do not tell me about controller errors unless there are more than 20 of them". 
 
 This could work for Paging Errors or Bad Blocks or really anything you can match.
+
 
 

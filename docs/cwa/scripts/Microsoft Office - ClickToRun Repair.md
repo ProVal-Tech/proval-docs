@@ -15,7 +15,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8032207/images/11313657)
+![Sample Run](..\..\..\static\img\Microsoft-Office---ClickToRun-Repair\image_1.png)
 
 ## Dependencies
 
@@ -41,5 +41,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

@@ -29,3 +29,4 @@ Displays detailed information about the GPO links per GPO from the script @Group
 | Enforced      | VARCHAR | True or False depending on if the link is being enforced.        |
 | LinkEnabled   | VARCHAR | True or False depending on if the link is enabled.               |
 
+

@@ -25,3 +25,4 @@ This solution contains a remote monitor, a search, an alert template, and a scri
 - Follow the below document for import and implementation steps:  
   [Import - Remote Monitor - ProVal - Production - DNS Service Check](https://proval.itglue.com/DOC-5078775-13604735)
 
+

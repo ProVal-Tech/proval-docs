@@ -21,10 +21,10 @@ Also, the script can be used for on-prem partners only.
 
 ## Sample Run
 
-![Sample Run Image](5078775/docs/10390932/images/14561583)  
+![Sample Run Image](..\..\..\static\img\Purge-IIS-Logs-Older-than-X-Days-Param\image_1.png)  
 
 Preferred is to schedule the script against the "Labtech Server" to run once per week:  
-![Schedule Image](5078775/docs/10390932/images/14561585)  
+![Schedule Image](..\..\..\static\img\Purge-IIS-Logs-Older-than-X-Days-Param\image_2.png)  
 
 ## Variables
 
@@ -48,5 +48,6 @@ Step 2: Generates the logs as per the PS script's outcome and exits.
 ## Output
 
 - Script Log
+
 
 

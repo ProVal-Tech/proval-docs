@@ -13,13 +13,13 @@ unlisted: false
 The remote monitor attempts to disable the Autofilling feature for addresses in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave. This solution entails modifying the computer's registry settings.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](5078775/docs/15470041/images/22515650)
+![Google Chrome Setting](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_1.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](5078775/docs/15470041/images/22515652)
+![Microsoft Edge Setting](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_2.png)
 
 **Affected Setting for Brave:**  
-![Brave Setting](5078775/docs/15470041/images/22515653)
+![Brave Setting](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_3.png)
 
 **Note:**
 - The changes will only happen once the browser is restarted if it's currently open.
@@ -37,7 +37,7 @@ Using any alert templates is not recommended unless the partner specifically des
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based| 604800 (Weekly) | Screenshot attached below. |
 
-![Screenshot](5078775/docs/15470041/images/22515654)
+![Screenshot](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_4.png)
 
 ## Dependencies
 
@@ -49,9 +49,10 @@ Using any alert templates is not recommended unless the partner specifically des
 ## Target
 
 **Group:** △ Lockdown Browsers Autofill  
-![Target Group](5078775/docs/15470041/images/22515724)
+![Target Group](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_5.png)
 
 ## Implementation
 
 [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)
+
 

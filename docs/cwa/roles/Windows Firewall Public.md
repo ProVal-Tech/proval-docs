@@ -19,3 +19,4 @@ This role will determine if the Windows Firewall is enabled to the "public" sett
 | `{%@netsh advfirewall show publicprofile state| find "State"@%}` | Contains   | ON     | Windows OS     |
 
 
+

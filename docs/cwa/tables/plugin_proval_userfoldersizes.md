@@ -27,3 +27,4 @@ Stores user folder size information from the script @Get User Folder Sizes (Scri
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
 
 
+

@@ -41,3 +41,4 @@ PowerShell v5
 
 ## Output
     .\Get-UserProfiles-log.txt
+

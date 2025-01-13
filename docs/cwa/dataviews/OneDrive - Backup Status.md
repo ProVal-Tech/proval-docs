@@ -33,3 +33,4 @@ This dataview will display basic information related to OneDrive on endpoints.
 | PicturesPath     | If PicturesEnabled is True, this will display the full path to the user's pictures folder           |
 | TimeStamp        | The last time this data was gathered                                                                  |
 
+

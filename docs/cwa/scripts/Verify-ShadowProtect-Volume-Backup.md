@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8007747/images/11145922)
+![Sample Run](..\..\..\static\img\Verify-ShadowProtect-Volume-Backup\image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

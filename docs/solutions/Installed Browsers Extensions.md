@@ -31,3 +31,4 @@ Supported Browsers: Google Chrome, Brave, Microsoft Edge Chromium, and Mozilla F
 - Debug the script against any online Windows machine to create the [plugin_proval_browsers_extensions](https://proval.itglue.com/DOC-5078775-11896865) table.
 - Check the [Installed Browsers Extensions [Script]](https://proval.itglue.com/DOC-5078775-11896883) dataview for the data and if it's empty then you can execute the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](https://proval.itglue.com/DOC-5078775-8056027) script to grant the table's permissions to all of the Automate users.
 
+

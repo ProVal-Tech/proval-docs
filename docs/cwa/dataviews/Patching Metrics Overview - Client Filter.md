@@ -48,3 +48,4 @@ The SQL query filters the results for the Patch Managed computers only, removing
 [![Patching Metrics Overview - Client Filter Data Summary](thumbnail/2023-01-21_01_13_14-Patching_Metrics_Overview_-_Client_Filter_Data_Summary.png)](large/2023-01-21_01_13_14-Patching_Metrics_Overview_-_Client_Filter_Data_Summary.png)
 
 
+

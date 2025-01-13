@@ -44,3 +44,4 @@ Stores information about Bitlocker configuration on target machines.
 | LastUpdated               | DATETIME  | The last time the volume was audited.                                                                                         |
 
 
+

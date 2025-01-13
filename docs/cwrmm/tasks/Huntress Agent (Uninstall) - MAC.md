@@ -1,0 +1,125 @@
+---
+id: 'cwa-huntress-agent-uninstall-mac'
+title: 'Huntress Agent (Uninstall) - MAC'
+title_meta: 'Huntress Agent (Uninstall) - MAC'
+keywords: ['uninstall', 'huntress', 'mac', 'agent', 'script']
+description: 'This document provides a comprehensive guide on uninstalling the Huntress agent from a Mac system using a custom script. It includes step-by-step instructions for creating and deploying the script, as well as handling potential errors during the uninstallation process.'
+tags: ['mac', 'script', 'custom', 'uninstallation', 'error', 'log']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script uninstalls the Mac from the MAC agent.
+
+## Create Script
+
+Please create a new "PowerShell" style script to implement this script.
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_1.png)  
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_2.png)  
+
+**Name:** Huntress Agent (Uninstall) - MAC  
+**Description:** This script uninstalls the Mac from the MAC agent.  
+**Category:** Custom  
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_3.png)  
+
+# Script
+
+## Row 1 Function: Bash Script
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_4.png)  
+
+Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
+
+```
+#!/bin/bash
+
+# Check if Huntress is installed
+if [ ! -d "/Applications/Huntress.app" ]; then
+    echo "Huntress is already uninstalled."
+    exit 0
+fi
+
+# Uninstall Huntress
+/Applications/Huntress.app/Contents/MacOS/Uninstall -S
+
+# Revalidate uninstallation
+if [ -d "/Applications/Huntress.app" ]; then
+    echo "Failed to uninstall Huntress."
+else
+    echo "Huntress uninstalled successfully."
+fi
+```
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_5.png)  
+
+## Step 2 Function: Script Log
+
+- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Search and select the `Script Log` function.
+- Input the following:  
+
+```
+%Output%
+```
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_6.png)  
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_7.png)  
+
+## Step 3 Logic: If/Then
+
+- Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_8.png)  
+
+## ROW 3a Condition: Output Contains
+
+- Type `Failed to uninstall Huntress` in the Value box.  
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_9.png)  
+
+## ROW 3b Function: Script Exit
+
+- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Search and select the `Script Exit` function.
+- Input the following:  
+
+```
+Huntress failed to uninstall. Refer to the logs: %Output%
+```
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_10.png)  
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_11.png)  
+
+## Step 4 Function: Script Exit
+
+- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Search and select the `Script Exit` function.
+- Leave it blank  
+
+```
+```
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_10.png)  
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_12.png)  
+
+## Step 5: Complete Script
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_13.png)  
+
+## Script Deployment
+
+For now, the task has been created to run manually on the machines.  
+Go to Automations > Tasks.  
+Search for Huntress Agent (Uninstall) - MAC.  
+Then click on Schedule and provide the parameters detail as it is necessary for the script completion.  
+
+![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_14.png)  
+
+## Output
+
+- Script log
+
+

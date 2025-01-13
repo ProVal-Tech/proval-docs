@@ -23,7 +23,7 @@ Ticketing is optional if global parameter is set to a ticket category above 0.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9595566/images/13283952)
+![Sample Run](..\..\..\static\img\Chromium-Browser-Update\image_1.png)
 
 ## Dependencies
 
@@ -48,4 +48,5 @@ Resends software to Automate server and performs basic checking for new version 
 
 - Script log
 - Optional - Ticketing
+
 

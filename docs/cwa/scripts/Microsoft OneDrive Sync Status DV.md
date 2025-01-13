@@ -14,7 +14,7 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 ## Sample Run
 
-![Sample Run](5078775/docs/14227796/images/20511754)
+![Sample Run](..\..\..\static\img\Microsoft-OneDrive-Sync-Status-DV\image_1.png)
 
 ## Dependencies
 
@@ -39,5 +39,6 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 - Script log
 - Script states
+
 
 

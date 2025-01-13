@@ -20,7 +20,7 @@ Windows OS and PowerShell 5.0 is required
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8071511/images/11232366)
+![Sample Run](..\..\..\static\img\O365---Audit-Users-to-Custom-Table-DV\image_1.png)
 
 ## Dependencies
 
@@ -51,4 +51,5 @@ Windows OS and PowerShell 5.0 is required
 ## Output
 
 Script Log
+
 

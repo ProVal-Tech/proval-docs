@@ -14,7 +14,7 @@ The script will remove the Intel L1TF and Intel Meltdown Solution from the Autom
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10910994/images/15187527)
+![Sample Run](..\..\..\static\img\Remove-Intel-L1TF--Intel-Meltdown-Solution\image_1.png)
 
 ## Process
 
@@ -30,4 +30,5 @@ The script will remove the Intel L1TF and Intel Meltdown Solution from the Autom
 ## Output
 
 Script Log
+
 

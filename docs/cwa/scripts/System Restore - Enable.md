@@ -17,7 +17,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8059436/images/11218392)
+![Sample Run](..\..\..\static\img\System-Restore---Enable\image_1.png)
 
 ## Dependencies
 
@@ -40,5 +40,6 @@ The script will run a PowerShell command that will enable System Restore on the 
 ## Output
 
 - Script log message only
+
 
 

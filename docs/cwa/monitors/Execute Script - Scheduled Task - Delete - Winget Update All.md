@@ -30,3 +30,4 @@ Global
 The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949) against the detected machines.
 
 
+

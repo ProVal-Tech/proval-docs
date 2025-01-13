@@ -18,7 +18,7 @@ Appends data from that agnostic script to that created table.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10677468/images/14828270)
+![Sample Run](..\..\..\static\img\Disk---Gather-Critical-Data\image_1.png)
 
 ## Dependencies
 
@@ -143,4 +143,5 @@ Appends data from that agnostic script to that created table.
    - This script is reporting on the state of the physical hard disk, not the logical drive, the percentage used is the percentage of the physical disk that is utilized by all designated partitions and those partition sizes reflect the total physical disk usage.
 4. I updated this script to its newest version and now the script fails every time
    - Please set refresh table to 'Yes' on the first run after a version upgrade of this script.
+
 

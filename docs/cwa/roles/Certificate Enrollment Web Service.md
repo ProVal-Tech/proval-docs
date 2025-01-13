@@ -19,3 +19,4 @@ Role used to detect the servers with Certificate Enrollment Web Service Feature 
 | {@%powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Enroll-Web-Svc' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains    | Installed | Windows        |
 
 
+

@@ -22,3 +22,4 @@ The monitor runs on Bitlocker Enabled Machines and checks if the key retrieval d
 Global
 
 
+

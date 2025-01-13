@@ -17,14 +17,14 @@ This document helps with Configuring the RMM+ Plugin and explains how to create 
 1. Log in to the client's control portal and check if the extension for RMM+ has been updated.
 
 2. Go to `edit setting` for the RMM+ plugin  
-   ![Image](5078775/docs/9770217/images/13563970)
+   ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_1.png)
 
 3. Go to RMMPlus.Accesskey and select the `custom` option. Create a random password as the custom value.
 
 4. Go to AllowedOrigin and select the `custom` option. Enter the FQDN of the client's environment.  
    The FQDN should not contain `https://`  
    For Ex- Origin: [labtech.provaltech.com](http://labtech.provaltech.com)  
-   ![Image](5078775/docs/9770217/images/21296464)
+   ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_2.png)
 
 5. Save the setting.
 
@@ -38,36 +38,37 @@ This document helps with Configuring the RMM+ Plugin and explains how to create 
    | RMMPlus_Headers                 | Origin: FQDN as entered in step 4 (For ex - Origin: [labtech.provaltech.com](http://labtech.provaltech.com)) |
    | RMMPlus_StaleAgentThreshold     | 30                                                                                         |
    | RMMPlus_Timeout                 | 10000                                                                                      |  
-   ![Image](5078775/docs/9770217/images/22119383)
+   ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_3.png)
 
 8. Add the Get Post Plugin in the client's environment. Follow the below steps:  
    - Open Plugin Manager. Navigate to advanced > Manage Plugins > Add Plugin  
-     ![Image](5078775/docs/9770217/images/13565273)
+     ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_4.png)
    - Select the .dll file for the Get Post Plugin. See attachment.
    - Check the box for a remote agent.
    - Enable the plugin. It will restart the DB agent.
    - Reload DB agent plugins.
 
 9. Reload the System Cache.  
-   ![Image](5078775/docs/9770217/images/22119456)
+   ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_5.png)
 
 10. Open the `ScreenConnect Client - Command - Execute*` script and check if you can see the `Plugin Function DataComm - HTTP GET/POST` step.  
-    ![Image](5078775/docs/9770217/images/22119517)
+    ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_6.png)
 
 ## Optional
 
 Create a session group in the ScreenConnect portal for machines that have not checked into Control for over **`X`** days.  
 - Go to ScreenConnect Web Portal.
 - Navigate to the `Access` portal.  
-  ![Image](5078775/docs/9770217/images/22119726)
+  ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_7.png)
 - Click on the `+ Create session group` option available at the bottom of the screen.  
-  ![Image](5078775/docs/9770217/images/22119701)
+  ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_8.png)
 - Enter the name for the session and add the filter as below. You can customize it as per the requirement by clicking on the **`+`** icon in front of the `Session Filter` option. You can also select the `Show reference` option for more clarity.  
   ```
   GuestConnectedCount = 0 AND LastEventTime < $30DAYSAGO
   ```
   Change the number of days in `$30DAYSAGO` as your requirement.  
-  ![Image](5078775/docs/9770217/images/22119999)
+  ![Image](..\..\..\static\img\CWM---Automate---RMM+-Plugin-Configuration\image_9.png)
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
+
 
 

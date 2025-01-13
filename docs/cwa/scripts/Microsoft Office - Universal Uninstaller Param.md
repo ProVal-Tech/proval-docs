@@ -14,7 +14,7 @@ This script downloads the offscrub files from the repo and then attempts to unin
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13106132/images/19022212)
+![Sample Run](..\..\..\static\img\Microsoft-Office---Universal-Uninstaller-Param\image_1.png)
 
 ## Dependencies
 
@@ -42,5 +42,6 @@ This script can be run anytime as it is completely silent and no restart is requ
 
 - Script log  
 - Local file on computer
+
 
 

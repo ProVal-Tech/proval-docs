@@ -30,3 +30,4 @@ Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](h
 | Class         | Varchar(1000) | Class of the PnpDevice               |
 | Date          | datetime     | Script Run Time                      |
 
+

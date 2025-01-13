@@ -14,7 +14,7 @@ Executes the `query session` command and stores the result in a custom table.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12366454/images/17452386)
+![Sample Run](..\..\..\static\img\Windows-Sessions-DV,-Globals\image_1.png)
 
 ## Dependencies
 
@@ -36,5 +36,6 @@ Executes the `query session` command and stores the result in a custom table.
 
 - Dataview
 - Custom Table
+
 
 

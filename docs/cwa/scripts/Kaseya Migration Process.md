@@ -18,7 +18,7 @@ Time Saved by Automation: 10 Minutes
 ## Sample Run
 
 Target: Windows Agent  
-![Image](5078775/docs/7973319/images/11103271)
+![Image](..\..\..\static\img\Kaseya-Migration-Process\image_1.png)
 
 ## Dependencies
 
@@ -38,4 +38,5 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 Outputs fail/success to the script log in Automate.
+
 

@@ -34,3 +34,4 @@ Displays information about the TPM configuration on endpoints.
 | LockedOut           | Displays whether TPM locked or not                            |
 | TPMVersion          | Displays the TPM version on the endpoint                     |
 
+

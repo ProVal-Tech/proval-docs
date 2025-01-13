@@ -19,3 +19,4 @@ This role is detected on machines on which OneDrive User Folder redirection is e
 | `{%-HKLM\SOFTWARE\Policies\Microsoft\OneDrive:KFMSilentOptIn-%}` | Exists     |        | Windows        |
 
 
+

@@ -366,14 +366,14 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 7.
 Reload System Cache
 
-![Reload System Cache](5078775/docs/15025130/images/22516363)
+![Reload System Cache](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_1.png)
 
 ## Step 8.
 Refresh Searches and Groups.
 
-![Refresh Searches and Groups](5078775/docs/15025130/images/21735642)
+![Refresh Searches and Groups](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_2.png)
 
-![Refresh Searches and Groups](5078775/docs/15025130/images/21735641)
+![Refresh Searches and Groups](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_3.png)
 
 ## Step 9.
 Confirm the presence of the following remote monitors on the `△ Lockdown Browsers Autofill` group:
@@ -382,7 +382,8 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
 
-![Confirm Remote Monitors](5078775/docs/15025130/images/22516388)
+![Confirm Remote Monitors](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_4.png)
 
-![Confirm Remote Monitors](5078775/docs/15025130/images/22516436)
+![Confirm Remote Monitors](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_5.png)
+
 

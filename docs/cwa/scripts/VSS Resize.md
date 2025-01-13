@@ -14,7 +14,7 @@ This script will reset the vssadmin size and also update the table with the late
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10728931/images/14918220)
+![Sample Run](..\..\..\static\img\VSS-Resize\image_1.png)
 
 ## Dependencies
 
@@ -47,5 +47,6 @@ The script validates scope and resize success.
 - Script log
 - Table
 - Dataview
+
 
 

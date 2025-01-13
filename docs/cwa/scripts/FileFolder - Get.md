@@ -17,7 +17,7 @@ For regex reference: [https://regexr.com/](https://regexr.com/)
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10390960/images/14634277)
+![Sample Run](..\..\..\static\img\FileFolder---Get\image_1.png)
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ Everything.exe and es.exe will be downloaded from ProVal's File Server. So, the 
 
 - Script Log
 - @SearchResult@ holds the results.
+
 
 

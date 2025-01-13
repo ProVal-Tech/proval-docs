@@ -1,0 +1,33 @@
+---
+id: 'cwa-smbv1-detection-remediation'
+title: 'SMBv1 Enabled Detection & Remediation Dataview'
+title_meta: 'SMBv1 Enabled Detection & Remediation Dataview'
+keywords: ['smbv1', 'detection', 'remediation', 'dataview', 'agent']
+description: 'This document provides a comprehensive overview of the dataview that gathers data from the SMBv1 Enabled Detection & Remediation script, detailing the status of SMB on agents where it is deployed, including client information, operating system, and vulnerability state.'
+tags: ['detection', 'remediation', 'status', 'vulnerability', 'agent', 'dataview', 'client', 'os']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522) and depicts the status of SMB Enabled on the agent where it is deployed.
+
+## Dependencies
+
+[CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522)
+
+## Columns
+
+| Column                     | Description                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| Client                    | Client name of the agent                                                                      |
+| Location                  | Location name of the agent                                                                    |
+| Computer                  | The computer name of the agent                                                                |
+| Operating System          | The operating system name of the agent                                                        |
+| LastContact               | The last contact info of agent with the Automate                                              |
+| SMBv1 Status              | This stores the status of SMBv1 status after script execution                                 |
+| SMBv1 Logging             | This stores the script PowerShell execution output for logging                                 |
+| SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522) |
+| SMBv1 Vulnerability State  | This shows whether the device is vulnerable or not vulnerable based on the script output detection |
+
+

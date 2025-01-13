@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8132905/images/11322596)
+![Sample Run](..\..\..\static\img\Huntress-Agent-Install---Download\image_1.png)
 
 ## Variables
 
@@ -35,5 +35,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 

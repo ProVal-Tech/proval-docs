@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8010863/images/11149953)
+![Sample Run](..\..\..\static\img\Maintenance-Mode---Clear\image_1.png)
 
 ## Variables
 
@@ -29,4 +29,5 @@ The script will run the command to remove Maintenance mode from the target machi
 ## Output
 
 - Script log
+
 

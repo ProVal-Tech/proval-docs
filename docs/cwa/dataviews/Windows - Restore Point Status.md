@@ -27,3 +27,4 @@ The dataview displays the status of the Restore point for workstations.
 | Restore Point Status | Displays if the Restore point is Enabled or Disabled on the computers. |
 
 
+

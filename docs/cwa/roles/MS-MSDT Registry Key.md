@@ -19,3 +19,4 @@ This role detects the existence of the HKEY_CLASSES_ROOT\ms-msdt Registry Key to
 | {@%Reg query "HKEY_CLASSES_ROOT\ms-msdt"@%} | Contains   | REG_SZ  | Windows        |
 
 
+

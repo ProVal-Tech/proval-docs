@@ -17,13 +17,13 @@ Time Saved by Automation: 10 Minutes
 ## Sample Run
 
 Set Mode:
-![Set Mode](5078775/docs/8115944/images/16668348)
+![Set Mode](..\..\..\static\img\Windows---Set-Wallpaper\image_1.png)
 
 Enforcement mode:
-![Enforcement mode](5078775/docs/8115944/images/16668364)
+![Enforcement mode](..\..\..\static\img\Windows---Set-Wallpaper\image_2.png)
 
 Reset Mode:
-![Reset Mode](5078775/docs/8115944/images/16668381)
+![Reset Mode](..\..\..\static\img\Windows---Set-Wallpaper\image_3.png)
 
 #### User Parameters
 
@@ -38,5 +38,6 @@ Reset Mode:
 ```
 C:\ProgramData\_automation\script\Set-Wallpaper\Set-Wallpaper-log.txt
 ```
+
 
 

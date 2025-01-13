@@ -258,10 +258,11 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 **Limit to:** `Windows Machines Excluding Virtual`
 
-![image](5078775/docs/14952900/images/21642583)
+![image](..\..\..\static\img\Implement--Drive-Errors-and-Raid-Failures\image_1.png)
 
 ---
 
 ## Step 8
 Set the appropriate alert template.
+
 

@@ -28,3 +28,4 @@ This dataview will show the BIOS boot type for machines, whether they are UEFI o
 | BIOS Version         | The BIOS version detected by Automate                                                           |
 | BIOS Type            | Using the [BIOS Type - Legacy](https://proval.itglue.com/DOC-5078775-7899860) role, this will determine if the machine has the legacy or UEFI boot type |
 
+

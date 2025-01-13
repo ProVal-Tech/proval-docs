@@ -26,3 +26,4 @@ This dataview represents the number of patching jobs and total patching hours pe
 | Total Patch Duration                     | Total Patch Duration per machine in the last 30 days|
 
 
+

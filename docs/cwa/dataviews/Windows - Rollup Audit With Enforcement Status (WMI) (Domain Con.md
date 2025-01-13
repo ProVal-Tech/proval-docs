@@ -34,3 +34,4 @@ This dataview collects latest rollup installation detail on domain controllers.
 | LastContact       | Agent Last Contact with the Automate                   |
 | Enforcement Status | Confirms if Enforcement enabled or not. This is outdated info as it has been fixed with Dec 2020 rollup release. |
 
+

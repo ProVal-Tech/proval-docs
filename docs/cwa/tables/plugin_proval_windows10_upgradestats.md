@@ -32,3 +32,4 @@ Contains data regarding the Windows 10 - Feature Update - Install Latest script 
 | TotalAttempts      | INT       | The Total attempts it took to upgrade to this version.                                         |
 
 
+

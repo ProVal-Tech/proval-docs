@@ -16,7 +16,7 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 ## Sample Run
 
-![Sample Run](5078775/docs/13550866/images/19458696)
+![Sample Run](..\..\..\static\img\Export-Application-and-Security-Logs-to-CSV\image_1.png)
 
 ## Variables
 
@@ -40,5 +40,6 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 - Script Logs
 - File Upload
+
 
 

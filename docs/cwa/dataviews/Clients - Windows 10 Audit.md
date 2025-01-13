@@ -36,3 +36,4 @@ A thorough examination of Windows 10 computers and their patching for each clien
 | Windows 10 Patch Compliance         | Avg patch compliance for all the Windows 10 computers.                                         |
 
 
+

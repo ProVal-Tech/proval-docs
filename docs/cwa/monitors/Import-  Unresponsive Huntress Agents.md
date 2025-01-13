@@ -252,8 +252,9 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Check the concerned groups, ensure the monitor set is created and configured with the correct search.  
 **Limit to:**  ` Machines with Huntress Agent`
 
-![Image](5078775/docs/16097655/images/23510535)
+![Image](..\..\..\static\img\Import---Unresponsive-Huntress-Agents\image_1.png)
 
 ## Step 7
-Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor ![Image](5078775/docs/16097655/images/23510681)
+Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor ![Image](..\..\..\static\img\Import---Unresponsive-Huntress-Agents\image_2.png)
+
 

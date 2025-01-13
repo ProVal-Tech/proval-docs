@@ -13,13 +13,13 @@ unlisted: false
 This script is triggered from the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642). The script prompts the user to reboot with a simple yes or no prompt. There are 3 EDF's that get imported with the script:
 
 - **Pending Reboot** [Checkbox - Manually Editable]
-  ![](5078775/docs/9076644/images/12569943)
+  ![](..\..\..\static\img\User-Prompt---Reboot\image_1.png)
   
 - **Last Prompted** [Text Field - Non Editable]
-  ![](5078775/docs/9076644/images/12569944)
+  ![](..\..\..\static\img\User-Prompt---Reboot\image_2.png)
 
 - **Times Prompted** [Text Field - Non Editable]
-  ![](5078775/docs/9076644/images/12569946)
+  ![](..\..\..\static\img\User-Prompt---Reboot\image_3.png)
 
 If the user chooses to suppress the prompt by hitting no, it will update the Last Prompted and Times Prompted EDF with new information. The Last Prompted EDF outlines the date and time when the script recorded the user was prompted and the script was run. The Times Prompted EDF gets increased by 1 every time the script runs.
 
@@ -65,4 +65,5 @@ The following items depend on this script to function correctly:
 ## Output
 
 The EDF's outlined above get updated as the script gets triggered. The monitor looks at the EDFs to confirm it is following the 'proval_RebootPromptDurBetweenPrompt' System Property.
+
 

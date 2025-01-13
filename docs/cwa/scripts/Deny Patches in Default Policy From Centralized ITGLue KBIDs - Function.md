@@ -16,7 +16,7 @@ It's function is to deny those patches present in [plugin_proval_denied_patches]
 ## Sample Run
 
 This is a function Script and can not be executed directly to the computers.  
-![Sample Run Image](5078775/docs/9564856/images/13229498)
+![Sample Run Image](..\..\..\static\img\Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs---Function\image_1.png)
 
 ## Dependencies
 
@@ -40,4 +40,5 @@ Step 2: Runs a loop to deny that KBID for all applicable operating systems.
 ## Output
 
 Denied Patches can be checked from the default approval policy.
+
 

@@ -21,3 +21,4 @@ This dataview can be used to audit the Maintenance Window applied to a Group or 
 | Maint Window Note   | Displays additional comments for a Maintenance Window.                                        |
 | Number Of Machines   | This is the total machine on which the Maintenance Window is applied.                        |
 
+

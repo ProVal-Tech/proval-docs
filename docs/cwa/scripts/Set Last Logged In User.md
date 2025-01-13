@@ -21,19 +21,19 @@ This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser]
 
 - Clears the last logged-in user's information from the login screen. The computer must be restarted manually afterwards to implement the changes.
   
-  ![Sample Run 1](5078775/docs/16039627/images/23412437)
+  ![Sample Run 1](..\..\..\static\img\Set-Last-Logged-In-User\image_1.png)
 
 - Clears the last logged-in user's information from the login screen and forcefully restarts the computer.
   
-  ![Sample Run 2](5078775/docs/16039627/images/23412512)
+  ![Sample Run 2](..\..\..\static\img\Set-Last-Logged-In-User\image_2.png)
 
 - Sets the specified local user as the last logged-in user. The computer must be restarted manually afterwards to implement the changes.
   
-  ![Sample Run 3](5078775/docs/16039627/images/23412523)
+  ![Sample Run 3](..\..\..\static\img\Set-Last-Logged-In-User\image_3.png)
 
 - Sets the specified domain user as the last logged-in user and forcefully restarts the computer.
   
-  ![Sample Run 4](5078775/docs/16039627/images/23412529)
+  ![Sample Run 4](..\..\..\static\img\Set-Last-Logged-In-User\image_4.png)
 
 ## Variables
 
@@ -54,4 +54,5 @@ This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser]
 ## Output
 
 - Script log
+
 

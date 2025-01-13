@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Condition    | Interval | Result |
 |--------------|----------------|------------|---------------|--------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 604800   | ![Image](5078775/docs/14230303/images/20515017) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 604800   | ![Image](..\..\..\static\img\Add-Windows-Capability---RSAT\image_1.png) |
 
 ## Dependencies
 
@@ -47,5 +47,6 @@ Required Group of Machines
 ## Implementation
 
 [Implement - Remote Monitor - Add Windows Capability - RSAT](https://proval.itglue.com/DOC-5078775-14230457)
+
 
 

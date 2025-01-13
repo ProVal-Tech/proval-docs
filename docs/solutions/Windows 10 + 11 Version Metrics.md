@@ -39,3 +39,4 @@ This solution displays a well-calculated version metrics with multiple filters.
 - `SELECT * From [pvl_v_windows_version_metrics](https://proval.itglue.com/DOC-5078775-11564063);`  
 - `SELECT * From [plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690);`
 
+

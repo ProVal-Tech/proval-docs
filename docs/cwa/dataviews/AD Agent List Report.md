@@ -30,3 +30,4 @@ This Dataview displays any machines found within the Active Directory integratio
 | ObjectClasses            | Displays the object class of the machine            |
 | ObjectType               | Displays the object type of the machine             |
 
+

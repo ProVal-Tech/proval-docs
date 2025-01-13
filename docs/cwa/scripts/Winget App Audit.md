@@ -25,10 +25,10 @@ The script conducts an audit of the computer for applications supported by Winge
 ## Sample Run
 
 First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) table used by the solution.  
-![First Run](5078775/docs/17973895/images/27743164)
+![First Run](..\..\..\static\img\Winget-App-Audit\image_1.png)
 
 Regular execution:  
-![Regular Execution](5078775/docs/17973895/images/27743165)
+![Regular Execution](..\..\..\static\img\Winget-App-Audit\image_2.png)
 
 ## Dependencies
 
@@ -56,5 +56,6 @@ Regular execution:
 - Script log
 - Custom table
 - Dataview
+
 
 

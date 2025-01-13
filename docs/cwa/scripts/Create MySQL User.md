@@ -16,7 +16,7 @@ Requirement: CW Automate Version 22 Patch 10 +
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8719601/images/12119045)
+![Sample Run](..\..\..\static\img\Create-MySQL-User\image_1.png)
 
 #### User Parameters
 
@@ -28,4 +28,5 @@ Requirement: CW Automate Version 22 Patch 10 +
 ## Process
 
 This script runs a SQL query and creates a new MYSQL user with Full permissions for `Labtech` database.
+
 

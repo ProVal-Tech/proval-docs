@@ -17,16 +17,16 @@ It's important to know that for browsers based on Chromium (like Google Chrome, 
 For Firefox, turning off the Password Manager will also disable Autofill.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](5078775/docs/15018079/images/21735602)
+![Google Chrome Setting](..\..\..\static\img\Lockdown-Browsers-Password-Manager\image_1.png)
 
 **Affected Setting for Brave:**  
-![Brave Setting](5078775/docs/15018079/images/21735604)
+![Brave Setting](..\..\..\static\img\Lockdown-Browsers-Password-Manager\image_2.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](5078775/docs/15018079/images/21735606)
+![Microsoft Edge Setting](..\..\..\static\img\Lockdown-Browsers-Password-Manager\image_3.png)
 
 **Affected Settings for Mozilla Firefox:**  
-![Mozilla Firefox Setting](5078775/docs/15018079/images/21735609)
+![Mozilla Firefox Setting](..\..\..\static\img\Lockdown-Browsers-Password-Manager\image_4.png)
 
 **Note:**
 - The changes will only happen once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
@@ -44,7 +44,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 |--------------|----------------|------------|---------------|-------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 604800 (Weekly) | Screenshot attached below. |
 
-![Screenshot](5078775/docs/15018079/images/21735619)
+![Screenshot](..\..\..\static\img\Lockdown-Browsers-Password-Manager\image_5.png)
 
 ## Dependencies
 
@@ -56,10 +56,11 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Target
 
 **Group:** △ Lockdown Browsers Autofill  
-![Target Group](5078775/docs/15018079/images/22515765)
+![Target Group](..\..\..\static\img\Lockdown-Browsers-Password-Manager\image_6.png)
 
 ## Implementation
 
 [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)  
+
 
 

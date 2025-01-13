@@ -28,3 +28,4 @@ Stores individual patch information per computer and their installation status f
 | Result      | VARCHAR  | The current installation status of the audited patch.|
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
 
+

@@ -18,7 +18,7 @@ Disk cleanup will only run against Windows machines. When run as an auto-fix fro
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7540106/images/10631015)
+![Sample Run](..\..\..\static\img\Disk-Space-Monitoring-Process\image_1.png)
 
 ## Dependencies
 
@@ -67,4 +67,5 @@ The following steps are performed:
 <video width="100%" height="Auto" controls="">
   <source src="https://proval.itglue.com/attachments/11261624" type="video/webm">
 </video>
+
 

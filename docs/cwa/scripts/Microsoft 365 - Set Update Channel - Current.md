@@ -18,7 +18,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8181470/images/11397941)
+![Sample Run](..\..\..\static\img\Microsoft-365---Set-Update-Channel---Current\image_1.png)
 
 ## Dependencies
 
@@ -27,4 +27,5 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8059170/images/11218032)
+![Sample Run](..\..\..\static\img\Space-Auditing-Script\image_1.png)
 
 ## Dependencies
 
@@ -58,6 +58,7 @@ If the script failed and has not gathered the data appropriately it will exit wi
 
 ## Example Output
 
-![Example Output](5078775/docs/8059170/images/11218230)
+![Example Output](..\..\..\static\img\Space-Auditing-Script\image_2.png)
+
 
 

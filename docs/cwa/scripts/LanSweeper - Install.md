@@ -15,7 +15,7 @@ Installs the LanSweeper agent.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/9004339/images/12472891)
+![Sample Run](..\..\..\static\img\LanSweeper---Install\image_1.png)
 
 ## Dependencies
 
@@ -33,11 +33,12 @@ Installs the LanSweeper agent.
 
 [https://www.lansweeper.com/knowledgebase/silently-installing-lsagent-on-a-windows-linux-or-mac-computer/](https://www.lansweeper.com/knowledgebase/silently-installing-lsagent-on-a-windows-linux-or-mac-computer/)  
 It is dependent on three parameters for installation to complete, they are:  
-![Process Image](5078775/docs/9004339/images/12472981)  
+![Process Image](..\..\..\static\img\LanSweeper---Install\image_2.png)  
 
 Once the value provided during script execution, the LsAgent will be successfully installed.
 
 ## Output
 
 - Script log
+
 

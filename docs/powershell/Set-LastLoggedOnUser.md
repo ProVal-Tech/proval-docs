@@ -74,3 +74,4 @@ The user must have logged on to the computer at least once to be set at the logi
 
     .\Set-LastLoggedOnUser-Log.txt
     .\Set-LastLoggedOnUser-Error.txt
+

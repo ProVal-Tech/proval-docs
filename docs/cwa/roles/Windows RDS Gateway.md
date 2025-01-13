@@ -19,3 +19,4 @@ This role determines if the agent is acting as an RDS Gateway server.
 | {%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
 
 
+

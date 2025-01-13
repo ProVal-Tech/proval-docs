@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8092181/images/11261578)
+![Sample Run](..\..\..\static\img\GPO-Import-Process\image_1.png)
 
 ## Dependencies
 
@@ -52,5 +52,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 

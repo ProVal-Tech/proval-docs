@@ -46,3 +46,4 @@ Location of output for log, result, and error files.
     .\New-Win10Zip-error.txt
 
 [mct]: https://github.com/AveYo/MediaCreationTool.bat
+

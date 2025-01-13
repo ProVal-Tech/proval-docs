@@ -14,7 +14,7 @@ This script helps to set each user's registry Software\Microsoft\Office\OfficeVe
 
 ## Sample Run
 
-![Sample Run](5078775/docs/12684815/images/18468242)
+![Sample Run](..\..\..\static\img\Set-OST-Max-Size\image_1.png)
 
 ## Dependency
 
@@ -30,5 +30,6 @@ Strapper Module
 ## Output
 
 - Script log
+
 
 

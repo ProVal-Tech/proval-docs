@@ -16,7 +16,7 @@ Intended Target: Windows Computers
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10861683/images/15115044)
+![Sample Run](..\..\..\static\img\Get-PNPDevices-DV\image_1.png)
 
 ## Dependencies
 
@@ -43,5 +43,6 @@ Intended Target: Windows Computers
 
 - Script Log
 - Dataview
+
 
 

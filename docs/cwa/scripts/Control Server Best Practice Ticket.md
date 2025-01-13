@@ -16,7 +16,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8041473/images/11191224)
+![Sample Run](..\..\..\static\img\Control-Server-Best-Practice-Ticket\image_1.png)
 
 ## Variables
 
@@ -46,5 +46,6 @@ Time Saved by Automation: 30 Minutes
 ## Output
 
 Ticket
+
 
 

@@ -14,7 +14,7 @@ Create a Client-level ticket with the information of all the machines which are 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10219819/images/17604985)  
+![Sample Run](..\..\..\static\img\Offline-Machines-Detection-per-client-Global\image_1.png)  
 It is a client script. Schedule it to run every `@Threshold_Offline_Days@` days.
 
 #### Global Variables
@@ -143,4 +143,5 @@ PC Model: Virtual Machine
 OS: Microsoft Windows 10 Enterprise x64
 S/N OF PC: 8204-9944-0772-5397-0764-9709-12
 ```
+
 

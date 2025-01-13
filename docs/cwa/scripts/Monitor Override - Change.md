@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8050059/images/11203576)
+![Sample Run](..\..\..\static\img\Monitor-Override---Change\image_1.png)
 
 #### User Parameters
 
@@ -29,5 +29,6 @@ Time Saved by Automation: 5 Minutes
 
 - Takes input of Monitor Name and the alert template from the user
 - Executes SQL queries to set the override and the alert template
+
 
 

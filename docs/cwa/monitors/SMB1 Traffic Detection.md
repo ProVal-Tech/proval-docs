@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](5078775/docs/14460386/images/20903558) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](..\..\..\static\img\SMB1-Traffic-Detection\image_1.png) |
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ Details: `
 ## Implementation
 
 [Implement - Remote Monitor - SMB1 Traffic Detection](https://proval.itglue.com/DOC-5078775-14461257)
+
 
 

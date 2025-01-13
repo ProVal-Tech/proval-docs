@@ -20,9 +20,9 @@ Moreover, it only applies to PCs that are patch-managed and using Automate's def
 
 Replace the word `<MonitorID>` in the additional condition with the actual monitorid.
 
-![Image 1](5078775/docs/12689441/images/17988095)
+![Image 1](..\..\..\static\img\Agent-Not-Patched--45-Days---Patch-History\image_1.png)
 
-![Image 2](5078775/docs/12689441/images/17988098)
+![Image 2](..\..\..\static\img\Agent-Not-Patched--45-Days---Patch-History\image_2.png)
 
 ## Dependencies
 
@@ -61,4 +61,5 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
 

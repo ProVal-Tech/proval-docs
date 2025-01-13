@@ -14,7 +14,7 @@ This is an Automate script intended to execute the Soji application found in the
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11073740/images/15443608)
+![Sample Run](..\..\..\static\img\Soji---Disk-Space-Management\image_1.png)
 
 Please Reference the Soji documentation for Argument options.
 
@@ -40,4 +40,5 @@ Please Reference the Soji documentation for Argument options.
 - Script log
 - Desired file output to the soji directory ie. json etc.
 - On Labtech server: `%LTShare%\Uploads\%ClientName%\%ComputerName% - %Computerid%\SojiLogs.zip`
+
 

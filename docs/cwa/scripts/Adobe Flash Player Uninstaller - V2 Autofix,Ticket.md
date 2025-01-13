@@ -16,7 +16,7 @@ Time Saved by Automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8217087/images/11438989)
+![Sample Run](..\..\..\static\img\Adobe-Flash-Player-Uninstaller---V2-Autofix,Ticket\image_1.png)
 
 ## Dependencies
 
@@ -37,4 +37,5 @@ If failed then it will try to uninstall using the Uninstaller Software script us
 ## Output
 
 - Script log
+
 

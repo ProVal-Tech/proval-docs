@@ -256,12 +256,13 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Check the concerned groups, ensure the monitor set is created and configured with the correct search.  
 **Limit to:** `Windows Machines - Excluding End-of-Life Windows Machines`
 
-![Image](5078775/docs/15423273/images/22444881)
+![Image](..\..\..\static\img\-Windows-License-Status\image_1.png)
 
 ---
 
 ## Step 7
 Set the alert template to `△ Custom - Ticket Creation Computer - Warning and Failed` on the monitor.
 
-![Image](5078775/docs/15423273/images/22444886)
+![Image](..\..\..\static\img\-Windows-License-Status\image_2.png)
+
 

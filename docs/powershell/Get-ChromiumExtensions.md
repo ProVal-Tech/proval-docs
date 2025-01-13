@@ -64,3 +64,4 @@ Get installed extensions from Microsoft Edge and Brave.
     IsDefault               NoteProperty bool IsDefault=False
     ExtensionVersion        NoteProperty string ExtensionVersion=1.12.2
     UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
+

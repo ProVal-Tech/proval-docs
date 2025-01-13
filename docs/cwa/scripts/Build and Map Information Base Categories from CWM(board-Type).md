@@ -16,7 +16,7 @@ This script is for clients that would like to optimize their ticket routing from
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8216286/images/11437732)
+![Sample Run](..\..\..\static\img\Build-and-Map-Information-Base-Categories-from-CWM(board-Type)\image_1.png)
 
 ## Dependencies
 
@@ -39,7 +39,7 @@ CW Manage Plugin should be configured.
 
 This script will create Information Base Categories based on which boards are imported in the Connectwise Manage Plugin. These Categories will be named 'AA - Board - Type - Priority' EX:
 
-![Process Example](5078775/docs/8216286/images/11437716)
+![Process Example](..\..\..\static\img\Build-and-Map-Information-Base-Categories-from-CWM(board-Type)\image_2.png)
 
 There is another option for clients that have subtypes and are using them; this one will create all the categories for Board, Type, and subtype at each priority. **NOTE:** This script will create a TON of entries if you use the Board Type SubType flavor, so be warned. In our test environment, it equated to ~2000 entries.
 
@@ -47,11 +47,12 @@ It is highly recommended if you have not already to set your priorities in manag
 
 **BEFORE running this script after making changes in manage, run 'system checks' from the manage plugin in order to update the boards, status, types, and subtypes that the Manage Plugin sees.**
 
-![System Checks](5078775/docs/8216286/images/11437726)
+![System Checks](..\..\..\static\img\Build-and-Map-Information-Base-Categories-from-CWM(board-Type)\image_3.png)
 
 This script runs only SQL against the database. It is set up to dynamically attempt to update all existing mappings to use the new setup within plugins and other locations.
 
 ## Output
 
 CW Manage Plugin
+
 

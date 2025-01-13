@@ -27,3 +27,4 @@ None
 | Type            | Shows 'Internal' or 'Remote' depending on the type of monitor      |
 | Times Failed    | Shows the cumulative number of failures in the last 3 days         |
 
+

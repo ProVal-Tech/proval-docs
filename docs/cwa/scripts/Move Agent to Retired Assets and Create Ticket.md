@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8156782/images/11354534)
+![Sample Run](..\..\..\static\img\Move-Agent-to-Retired-Assets-and-Create-Ticket\image_1.png)
 
 ## Process
 
@@ -25,4 +25,5 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 

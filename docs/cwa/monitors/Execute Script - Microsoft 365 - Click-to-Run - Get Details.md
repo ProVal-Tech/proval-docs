@@ -21,9 +21,10 @@ This internal monitor executes the [Microsoft 365 - Click-to-Run - Get Details](
 
 Managed Windows Computers
 
-![Image](5078775/docs/14568059/images/26205624)
+![Image](..\..\..\static\img\Execute-Script---Microsoft-365---Click-to-Run---Get-Details\image_1.png)
 
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
+
 

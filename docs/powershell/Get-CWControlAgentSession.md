@@ -45,3 +45,4 @@ Return a system object containing,
 
     .\Get-CWControlAgentSession-log.txt
     .\Get-CWControlAgentSession-error.txt
+

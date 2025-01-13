@@ -26,3 +26,4 @@ Stores information about gathered WiFi profiles from [WiFi Profile - Get](https:
 | ssid     | VARCHAR | The SSID of the WiFi profile.                    |
 | xml      | BLOB    | The configuration information of the WiFi profile.|
 
+

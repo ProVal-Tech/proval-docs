@@ -34,3 +34,4 @@ This dataview shows information about GPOs, their applied policies, and settings
 | Property     | Displays properties of the Group policies.       |
 | PropertyData | Displays detailed information for the GPO settings.|
 
+

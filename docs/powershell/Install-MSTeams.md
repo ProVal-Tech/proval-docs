@@ -51,3 +51,4 @@ Uninstalls and deprovisions the existing Microsoft Teams installation before rei
 
     .\Install-MSTeams-log.txt
     .\Install-MSTeams-error.txt
+

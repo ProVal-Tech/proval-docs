@@ -16,11 +16,12 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8032205/images/11181159)
+![Sample Run](..\..\..\static\img\AD---Refresh-Plugin-Information\image_1.png)
 
 ## Process
 
 - Runs LabTech Command 13 to reset the AD plugin on the DC
 - Run another LabTech command "update plugins" to synchronize plugin data on the agent.
+
 
 

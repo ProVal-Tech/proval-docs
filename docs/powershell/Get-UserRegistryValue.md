@@ -42,3 +42,4 @@ Just the parameters required by the script
 Location of output for log, result, and error files.
 
     .\Get-UserRegistryValue-log.txt
+

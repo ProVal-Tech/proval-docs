@@ -17,11 +17,12 @@ This script can only be used as autofix for monitors that check for the machine 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8165881/images/11364434)
+![Sample Run](..\..\..\static\img\Remind-User-of-Reboot-Needed-Autofix\image_1.png)
 
 ## Process
 
 - The script first verifies if the user is logged in or not. If not, exit out.
 - If the user is logged in, send a popup message to the user to reboot their machine online.
+
 
 

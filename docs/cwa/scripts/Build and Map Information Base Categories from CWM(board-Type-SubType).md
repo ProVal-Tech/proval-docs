@@ -16,7 +16,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8216287/images/11437758)
+![Sample Run](..\..\..\static\img\Build-and-Map-Information-Base-Categories-from-CWM(board-Type-SubType)\image_1.png)
 
 ## Dependencies
 
@@ -42,4 +42,5 @@ This script will create information base categories (ticket categories) for ever
 ## Output
 
 CW Manage Plugin
+
 

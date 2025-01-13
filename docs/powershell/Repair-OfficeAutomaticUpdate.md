@@ -35,3 +35,4 @@ Checks the following common failures:
 .\Repair-OfficeAutomaticUpdate-log.txt
 
 .\Repair-OfficeAutomaticUpdate-error.txt
+

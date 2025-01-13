@@ -19,3 +19,4 @@ This role is detected by agents where User Account Control is Enabled.
 | {%-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System:EnableLUA-%} | Equals     | 1      | Windows 10     |
 
 
+

@@ -45,3 +45,4 @@ Unsupported for MySQL version < 5.7
 | Client_Name                       | Varchar(50)      | Name of the client where clientid > 0 and 'Environmental Calculation' for the global calculation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 
+

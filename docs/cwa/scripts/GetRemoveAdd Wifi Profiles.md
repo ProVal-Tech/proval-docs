@@ -29,24 +29,24 @@ It is important to note that the addition of profiles can also be managed throug
 ## Sample Run
 
 - For the first execution of the script, the value of the user parameter `Set_Environment` should be set to 1. This will create the EDF, System property, and custom table used by the script:  
-![Sample Run](5078775/docs/12979854/images/20203357)
+![Sample Run](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_1.png)
 
 - The Wi-Fi Profile/SSID to remove from the computer should be provided within the `Profiles_To_Remove` parameter. Each SSID should be enclosed in double quotes and separated by a comma. Also, if there is a comma(,) in the SSID, then it should be replaced by a double semi-colon (;;).
     - Example 1: To remove a single Wifi-Profile  
-    ![Example 1](5078775/docs/12979854/images/20203392)
+    ![Example 1](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_2.png)
     - Example 2: To remove multiple Wi-Fi Profiles  
-    ![Example 2](5078775/docs/12979854/images/20203398)
+    ![Example 2](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_3.png)
     - Example 3: If there is a comma in Wi-Fi Profile Name. e.g., `SSID with a , Comma` or `SSID , with multiple , Commas`  
-    ![Example 3](5078775/docs/12979854/images/20203404)
+    ![Example 3](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_4.png)
 
 - The Wi-Fi Profile/SSID to be added from the computer should be provided within the `Profiles_To_Add` parameter. Each SSID should be enclosed in single quotes and separated by commas. Additionally, along with the names of the profiles, the `Primary_Computerid` parameter should be set to specify the computer ID from which the profile information is to be copied. While adding a SSID with a single quotation in the name itself, a backslash should be added before the quotation. The complete name should always be enclosed between the single quotations.  
   For example:  
   To Add `Bob's Wifi` in the parameter it should be passed as `'Bob\\'s Wifi'`.  
   To Add `Bob's Wifi`, `HR's Wifi`, and `Wifi Network X` in the parameter it should be passed as `'Bob\\'s Wifi', 'HR's Wifi','Wifi Network X'`.  
     - Example 1: To add a single Wifi-Profile  
-    ![Example 1](5078775/docs/12979854/images/20203493)
+    ![Example 1](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_5.png)
     - Example 2: To add multiple Wifi-Profiles  
-    ![Example 2](5078775/docs/12979854/images/20203521)
+    ![Example 2](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_6.png)
 
 ## Variables
 
@@ -76,7 +76,7 @@ It is important to note that the addition of profiles can also be managed throug
 |-------------------------|---------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Safe_Wifi_Networks      | "Safe Network", "Another Safe Network", "Safe Network With a ;; Comma"  | False    | Stores the list of globally whitelisted/Safe wifi profiles. Script will not accidentally remove the profile(s) if it's mentioned in here. Each Name/SSID should be enclosed in double quotation and separated by a comma.                      |
 
-![Safe Wifi Networks](5078775/docs/12979854/images/18646956)
+![Safe Wifi Networks](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_7.png)
 
 ## Client-Level EDFs
 
@@ -86,7 +86,7 @@ It is important to note that the addition of profiles can also be managed throug
 | Primary ComputerID      | Computer Name (Computerid)                            | True (if Client-level EDF `Wifi Profiles To Add` is set) | To store the name and id of the computer to fetch the information of the Wifi Profiles to Add to the end machines of the client. It's a dropdown field with the `Name (Computerid)` of the computers of the client.                                                                                  |
 | Wifi Profiles To Add    | 'SSID1', 'SSID2', 'SSID3'                            | False                                 | SSID or Name of the Wifi Profile(s) to add to the end machines of the client. These Wifi Profiles should be available on the computer selected in the `Primary ComputerID` EDF. Each SSID should be enclosed in single quotes and separated by commas. While adding a SSID with a single quotation in the name itself, a backslash should be added before the quotation. The complete name should always be enclosed between the single quotations. |
 
-![Client-Level EDFs](5078775/docs/12979854/images/20204516)
+![Client-Level EDFs](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_8.png)
 
 ## Location-Level EDFs
 
@@ -97,7 +97,7 @@ It is important to note that the addition of profiles can also be managed throug
 
 Location-Level EDFs can be used to override the Client-Level EDFs. Syntax used to store data in the location-level EDF `Wifi Profiles To Add` is the same as that of the client-level EDF `Wifi Profiles To Add`.
 
-![Location-Level EDFs](5078775/docs/12979854/images/20204622)
+![Location-Level EDFs](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_9.png)
 
 ## Computer-Level EDF
 
@@ -105,11 +105,12 @@ Location-Level EDFs can be used to override the Client-Level EDFs. Syntax used t
 |------------------------------------|--------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exclude From Wifi Profile Addition   | Check Box    | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](https://proval.itglue.com/DOC-5078775-14020258) monitor set detections.                     |
 
-![Computer-Level EDF](5078775/docs/12979854/images/20204783)
+![Computer-Level EDF](..\..\..\static\img\GetRemoveAdd-Wifi-Profiles\image_10.png)
 
 ## Output
 
 - Script Log
 - Dataview
+
 
 

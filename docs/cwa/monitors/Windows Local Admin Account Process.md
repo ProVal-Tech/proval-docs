@@ -22,11 +22,12 @@ Check [Script's](https://proval.itglue.com/DOC-5078775-8223774) document for mor
 
 With the exception of Domain Controllers, only Windows machines belonging to clients that have the `Enabled for Servers and Workstations` selected for the `1a. Local Admin Process` EDF. Selecting the `Enabled for Workstations Only` option will limit the local admin creation to the workstations only.
 
-![Image](5078775/docs/13026629/images/26431473)
+![Image](..\..\..\static\img\Windows-Local-Admin-Account-Process\image_1.png)
 
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script on the machines detected by the monitor set.
+
 

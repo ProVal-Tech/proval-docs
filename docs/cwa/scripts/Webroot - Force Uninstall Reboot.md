@@ -16,7 +16,7 @@ Time Saved by Automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8217086/images/11438966)
+![Sample Run](..\..\..\static\img\Webroot---Force-Uninstall-Reboot\image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ This script first checks if the Webroot service is running on the machine or not
 ## Output
 
 - Script log
+
 
 

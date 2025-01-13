@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8134360/images/11325555)
+![Sample Run](..\..\..\static\img\MimiKatz-Registry-Disable\image_1.png)
 
 ## Dependencies
 
@@ -39,4 +39,5 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Ticket
+
 

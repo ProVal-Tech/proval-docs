@@ -14,7 +14,7 @@ The script runs a standard shell command to disable Windows Firewall for all pro
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8074191/images/11236943)
+![Sample Run](..\..\..\static\img\Windows-Firewall---Disable\image_1.png)
 
 ## Process
 
@@ -23,5 +23,6 @@ The script will run if the Windows Firewall is enabled on the machine. The scrip
 ## Output
 
 - Script log
+
 
 

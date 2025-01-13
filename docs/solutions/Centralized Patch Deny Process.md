@@ -45,3 +45,4 @@ Note: I have mentioned this time here because the [Fetch Denied Patch List From 
 **Q:** Can we exclude an OS for a KB? eg, deny a KBID for Windows 10 version 1809 but let it be approved for Windows Server 2019.  
 **A:** No.
 
+

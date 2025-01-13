@@ -12,48 +12,48 @@ unlisted: false
 
 The purpose of this script is to retire the computers that are offline in Automate for more than the days defined in the system property `AutoRetireThreshold_Days`.
 
-![Image](5078775/docs/11419941/images/19296868)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_1.png)
 
 Following EDFs can be used to overwrite the Threshold Days defined in the System property `AutoRetireThreshold_Days`.
 
 Client-Level EDF: "AutoRetire Threshold Days"
 
-![Image](5078775/docs/11419941/images/19296897)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_2.png)
 
 Location-Level EDF: "AutoRetireThreshold_Days"
 
-![Image](5078775/docs/11419941/images/19296924)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_3.png)
 
 Following EDFs can be used to exclude a client/location/computer from retirement:
 
 Client-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Image](5078775/docs/11419941/images/15913943)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_4.png)
 
 Location-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Image](5078775/docs/11419941/images/15913944)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_5.png)
 
 Computer-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Image](5078775/docs/11419941/images/15913945)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_6.png)
 
 ## Sample Run
 
 In order to create the system properties and EDFs utilized in the script, the 'Set_Environment' User Parameter should be set to 1 for its very first execution. The global property 'AutoRetireThreshold_Days' is set when the value in 'Set_Global_Threshold_Days' is set. If left empty, the global property will be set to '90'.
 
 1. Open the script up, found under ProVal\Automate\Automate - Offline Agents - Auto-Retire --> Hit Debug Script
-   ![Image](5078775/docs/11419941/images/20055087)
+   ![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_7.png)
 
 2. Select any client and make sure to set the 'Set_Environment' variable to 1. You can set the global threshold to whatever the partner is requesting as well. The default is 90 days if that is not selected.
-   ![Image](5078775/docs/11419941/images/19822531)
+   ![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_8.png)
 
 3. Run this script with your custom settings.
    - **NOTE**: Setting a new threshold will NOT overwrite the existing threshold if this has been run before. You must manually modify the property if the threshold property is in the system presently.
 
 Scheduling the script to run at regular intervals is suggested to schedule weekly for better results. 
 
-![Image](5078775/docs/11419941/images/19822747)
+![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_9.png)
 
 ## Implementation
 
@@ -137,4 +137,5 @@ Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
 Last Logged In User: DEV-WIN10-DCJOI\Test
 ```
+
 

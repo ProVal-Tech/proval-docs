@@ -19,3 +19,4 @@ This role will determine if the primary build number for ShadowProtect SPX is ve
 | `{%-HKLM\SOFTWARE\StorageCraft Technology Corporation\spx:InstalledVersion-%}` | Regex Match   | ^7\..  | Windows OS     |
 
 
+

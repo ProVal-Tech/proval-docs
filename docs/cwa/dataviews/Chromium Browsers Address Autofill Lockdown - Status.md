@@ -34,3 +34,4 @@ The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer 
 | Last Logged In User                           | Last Logged In User                                                                              |
 | Credit Cards and Addresses Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the Autofilling feature for addresses for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
 
+

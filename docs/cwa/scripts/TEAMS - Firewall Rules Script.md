@@ -18,7 +18,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8009434/images/11147752)
+![Sample Run](..\..\..\static\img\TEAMS---Firewall-Rules-Script\image_1.png)
 
 ## Dependencies
 
@@ -38,5 +38,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

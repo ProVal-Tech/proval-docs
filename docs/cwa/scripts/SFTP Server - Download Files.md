@@ -23,11 +23,11 @@ Setting the required details to execute the script into a client-level password 
 - **URL:** Store the hostname of the SFTP server in the URL field.
 
 - **Password:** The password should belong to the user stored in the `User Name` field.  
-  ![Password Entry](5078775/docs/15248517/images/22227767)
+  ![Password Entry](..\..\..\static\img\SFTP-Server---Download-Files\image_1.png)
 
 ## Sample Run
 
-![Sample Run](5078775/docs/15248517/images/22227842)
+![Sample Run](..\..\..\static\img\SFTP-Server---Download-Files\image_2.png)
 
 ## Variables
 
@@ -48,4 +48,5 @@ Setting the required details to execute the script into a client-level password 
 ## Output
 
 - Script Logs
+
 

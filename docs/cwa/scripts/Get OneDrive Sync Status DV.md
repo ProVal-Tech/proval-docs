@@ -16,10 +16,10 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 
 First Run: Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](https://proval.itglue.com/DOC-5078775-16007815).
 
-![First Run](5078775/docs/16007800/images/23493556)
+![First Run](..\..\..\static\img\Get-OneDrive-Sync-Status-DV\image_1.png)
 
 Regular Execution:  
-![Regular Execution](5078775/docs/16007800/images/23493577)
+![Regular Execution](..\..\..\static\img\Get-OneDrive-Sync-Status-DV\image_2.png)
 
 ## User Parameters
 
@@ -37,11 +37,12 @@ Regular Execution:
 
 1. Is the OneDrive Sync Status in the [Dataview - OneDrive Sync Status [Script]](https://proval.itglue.com/DOC-5078775-16007808) contains the data for the OneDrive Sync or Script?  
    Ans: The data in the OneDrive Sync Status is the OneDrive Sync data, not the script data.  
-   ![OneDrive Sync Status](5078775/docs/16007800/images/26604076)
+   ![OneDrive Sync Status](..\..\..\static\img\Get-OneDrive-Sync-Status-DV\image_3.png)
 
 2. Can this script be run in the environment where a security application is applied?  
    Ans: Yes, you just need to whitelist the below hashes:  
    C:\ProgramData\_Automation\Script\ODSync\ODSyncUtility.ps1: -> **A5EBD70394BA53B0D3A093FB47C94985**  
    C:\ProgramData\_Automation\Script\ODSyncUtil\ODSyncFetch.ps1: -> **4626F936E0BABCE79F350E096671A19F**  
+
 
 

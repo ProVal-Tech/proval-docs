@@ -19,7 +19,7 @@ This script will adjust the local registry on the target device and will disable
 **Target:** Windows Device  
 **Note:** This script is part of the ProVal @Fast Boot Solution. This solution can be run manually and not as an autofix.
 
-![Sample Run](5078775/docs/7776315/images/10828372)
+![Sample Run](..\..\..\static\img\Fast-Boot---Disable\image_1.png)
 
 ## Dependencies
 
@@ -44,5 +44,6 @@ If the value did not change in the registry, the script will exit as a failure w
 ## Output
 
 Script log messages only.
+
 
 

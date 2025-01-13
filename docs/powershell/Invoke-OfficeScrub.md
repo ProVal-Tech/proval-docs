@@ -48,3 +48,4 @@ Removes all installed versions of Office.
 ## Output
     .\Invoke-OffScrub-log.txt
     .\Invoke-OffScrub-error.txt
+

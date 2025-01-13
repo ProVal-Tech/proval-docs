@@ -26,14 +26,14 @@ Intended Target: Windows Computers
 1. Import the Sysmon Install Script
 2. Set the optional config file as a user parameter, or leave blank if you do not have a specified config file.
 
-![Image](5078775/docs/9713579/images/16629657) or ![Image](5078775/docs/9713579/images/16629704)
+![Image](..\..\static\img\Sysmon\image_1.png) or ![Image](..\..\static\img\Sysmon\image_2.png)
 
 ## Uninstall Sysmon From an Endpoint (Sysmon - Uninstall)
 
 1. Import the Sysmon - Uninstall Script
 2. Run the Script
 
-![Image](5078775/docs/9713579/images/16629807)
+![Image](..\..\static\img\Sysmon\image_3.png)
 
 ### Optional Script Enhancement Suggestions
 
@@ -51,7 +51,7 @@ Intended Target: Windows Computers
    8. Condition: Missing
    9. Interval: 300
 
-![Image](5078775/docs/9713579/images/16631343) ![Image](5078775/docs/9713579/images/16631356)
+![Image](..\..\static\img\Sysmon\image_4.png) ![Image](..\..\static\img\Sysmon\image_5.png)
 
 ## Variables
 
@@ -78,5 +78,6 @@ Intended Target: Windows Computers
 ## Output
 
 - Script log
+
 
 

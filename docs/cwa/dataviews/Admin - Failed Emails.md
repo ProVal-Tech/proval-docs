@@ -28,3 +28,4 @@ None
 | FailDate  | The date the email failed to send                                                               |
 | ErrorMsg  | The error message gathered by Automate when the email failed to send                           |
 
+

@@ -15,7 +15,7 @@ It will report for all volumes where VSS storage is enabled; if not enabled to a
 
 ## Sample Run
 
-![Sample Run](5078775/docs/10728929/images/14920432)
+![Sample Run](..\..\..\static\img\Vssadmin-List-Storage-Audit\image_1.png)
 
 ## Dependencies
 
@@ -42,5 +42,6 @@ Ex:
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
+
 
 

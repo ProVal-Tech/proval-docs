@@ -31,3 +31,4 @@ Displays potential Log4J/Log4Shell vulnerabilities based on this list: [https://
 | Status        | The status of the application as of last run of [SEC - Endpoint Protection - Script - Import Log4Shell Table](https://proval.itglue.com/DOC-5078775-8855626) |
 | Links         | Links to information about the affected application.                                                    |
 
+

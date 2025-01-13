@@ -27,3 +27,4 @@ This dataview shows detailed security information about Automate users.
 | Assigned Groups           | Name of the assigned groups                               |
 | Assigned Clients          | Name of the assigned Clients                              |
 
+

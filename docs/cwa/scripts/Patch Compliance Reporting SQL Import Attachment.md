@@ -16,7 +16,8 @@ Please download the 'PatchComplianceReports.SQL' attached to this document.
 ## Step 2
 Import the file using **System** → **General** → **Import** → **SQL File** (The SQL file is too large for a remote monitor).
 
-![Image](5078775/docs/17898232/images/27459651)
+![Image](..\..\..\static\img\Patch-Compliance-Reporting-SQL-Import-Attachment\image_1.png)
 
 **Note:** Import the SQL file only after importing the [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696) and running it once.
+
 

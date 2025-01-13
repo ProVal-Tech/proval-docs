@@ -14,11 +14,11 @@ This script will install Perch Log Shipper with either a user provided ClientTok
 
 ## Sample Run
 
-![Sample Run 1](5078775/docs/11599921/images/16198972)
+![Sample Run 1](..\..\..\static\img\Install-Perch-Log-Shipper\image_1.png)
 
 - Executing the script without setting a ClientToken will result in the script obtaining the token from the Client level EDF.
 
-![Sample Run 2](5078775/docs/11599921/images/16198991)
+![Sample Run 2](..\..\..\static\img\Install-Perch-Log-Shipper\image_2.png)
 
 - Executing the script with a ClientToken specified will utilize the ClientToken bypassing any currently set Client level EDF.
 
@@ -30,13 +30,13 @@ This script will install Perch Log Shipper with either a user provided ClientTok
 
 Perch tokens are set in the following location
 
-![Perch Token Location](5078775/docs/11599921/images/16217699)
+![Perch Token Location](..\..\..\static\img\Install-Perch-Log-Shipper\image_3.png)
 
 Exclusions are set at the following locations
 
-![Exclusion Location 1](5078775/docs/11599921/images/16217701)
+![Exclusion Location 1](..\..\..\static\img\Install-Perch-Log-Shipper\image_4.png)
 
-![Exclusion Location 2](5078775/docs/11599921/images/16217703)
+![Exclusion Location 2](..\..\..\static\img\Install-Perch-Log-Shipper\image_5.png)
 
 ## Variables
 
@@ -70,5 +70,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 

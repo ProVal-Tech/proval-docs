@@ -14,7 +14,7 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11896860/images/16684721)
+![Sample Run](..\..\..\static\img\Get-Installed-Browsers-Extensions-DV\image_1.png)
 
 ## Dependencies
 
@@ -38,4 +38,5 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 ## Output
 
 - Dataview
+
 

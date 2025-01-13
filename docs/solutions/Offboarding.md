@@ -33,7 +33,7 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
    - `△ Custom - Execute Script - Offboarding Wrapper`
 
 4. Reload the System Cache  
-   ![Reload Cache](5078775/docs/15395130/images/22427785)
+   ![Reload Cache](..\..\static\img\Offboarding\image_4.png)
 
 5. Configure the solution as follows:
    - Go to Automation → Scripts → View Scripts → 'ProVal\Client Specific' folder
@@ -51,4 +51,5 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
      - Offboard Client
      - Offboard Location
      - Offboard Computer
+
 

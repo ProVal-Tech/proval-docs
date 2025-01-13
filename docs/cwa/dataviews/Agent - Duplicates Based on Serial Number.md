@@ -27,3 +27,4 @@ Note: This dataview specifically references the biosver column in the computers 
 | Mac Addresses    | Displays the Mac address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
 
+

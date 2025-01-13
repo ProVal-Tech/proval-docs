@@ -16,7 +16,7 @@ This script can be used to completely remove/purge local accounts (including Use
 
 ## Sample Run
 
-![Sample Run](5078775/docs/7819397/images/11041734)
+![Sample Run](..\..\..\static\img\User-Management---Purge-Local-Account-and-Profile\image_1.png)
 
 ## Dependencies
 
@@ -54,5 +54,6 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+
 
 

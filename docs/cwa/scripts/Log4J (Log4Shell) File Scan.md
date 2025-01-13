@@ -18,7 +18,7 @@ The script has been updated to remove the leftovers along with the `Everything` 
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8881631/images/12324689)
+![Sample Run](..\..\..\static\img\Log4J-(Log4Shell)-File-Scan\image_1.png)
 
 ## Dependencies
 
@@ -50,5 +50,6 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
+
 
 

@@ -15,7 +15,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8116144/images/11299397)
+![Sample Run](..\..\..\static\img\Software---Attempt-Silent-Uninstall-Params\image_1.png)
 
 #### User Parameters
 
@@ -30,4 +30,5 @@ When the script runs it will ask for a parameter `AppName` and that needs to be 
 ## Output
 
 - Script log
+
 

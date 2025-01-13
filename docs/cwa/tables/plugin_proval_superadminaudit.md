@@ -25,3 +25,4 @@ Stores information about the existing super admins. This is used as a challenge 
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
 
+

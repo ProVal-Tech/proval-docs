@@ -32,3 +32,4 @@ Checks for successful iteration of the version number after completion.
 .\Update-Office-log.txt
 
 .\Update-Office-error.txt
+

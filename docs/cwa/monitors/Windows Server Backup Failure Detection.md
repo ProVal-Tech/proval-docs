@@ -28,3 +28,4 @@ If the backup failed, then it will raise a ticket.
 It should be targeted on the group which is bounded with a search via role "Windows Sever Backup".
 
 
+

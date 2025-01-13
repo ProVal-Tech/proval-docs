@@ -15,7 +15,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8060347/images/11219854)
+![Sample Run](..\..\..\static\img\SpeedTest---Ookla\image_1.png)
 
 ## Dependencies
 
@@ -43,5 +43,6 @@ This script will download the speed test zip file from Ookla and extract it. Aft
 - Script log
 - Script state
 - Dataview
+
 
 

@@ -18,9 +18,10 @@ Tickets will automatically close tickets for servers that have already been rebo
 
 It is recommended to schedule this client-script to run once per day for better results.
 
-![Sample Run](5078775/docs/14262862/images/20569260)
+![Sample Run](..\..\..\static\img\Reboot-Pending-Servers-per-client---Ticket-Management\image_1.png)
 
 ## Dependencies
 
 [CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](https://proval.itglue.com/DOC-5078775-13967831)
+
 

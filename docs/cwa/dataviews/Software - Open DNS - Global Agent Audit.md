@@ -27,3 +27,4 @@ Many MSPs set up OpenDNS on the LAN so all workstations connected via Ethernet (
 | Umbrella Agent  | Displays whether the machine has an umbrella agent installed |
 
 
+

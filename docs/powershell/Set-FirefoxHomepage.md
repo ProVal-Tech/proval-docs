@@ -35,3 +35,4 @@ This will set the homepage of Firefox to "https://duckduckgo.com" and set the br
 Location of output for log, result, and error files.
 
     .\Set-FirefoxHomepage-log.txt
+

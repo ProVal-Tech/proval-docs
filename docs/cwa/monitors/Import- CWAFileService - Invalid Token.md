@@ -80,7 +80,7 @@ WHERE m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` =
 
 - Before executing the query make sure to change the value of @Threshold and @FileServiceContentCheckInMinutes as per the client's requirement:
 
-![Image](5078775/docs/15398919/images/22453646)
+![Image](..\..\..\static\img\Import--CWAFileService---Invalid-Token\image_1.png)
 
 This sets the remote monitor to check the contents of the fileservice logs at the path 'C:\Windows\Temp\FileService.log' for error messages 'HttpRequest is missing or has invalid Authorization Token' of the last 15 minutes based on the value set at @FileServiceContentCheckInMinutes. It checks if the error message count is more than 20 based on the @Threshold set.
 
@@ -88,8 +88,9 @@ This sets the remote monitor to check the contents of the fileservice logs at th
 - Once the value is set you can execute this query to create the remote monitor.
 - After executing the remote monitor will look like this:
 
-![Image](5078775/docs/15398919/images/22392977)
+![Image](..\..\..\static\img\Import--CWAFileService---Invalid-Token\image_2.png)
 
 - Make sure to set the Alert Style to either Thrice or Fourth, so that it will raise a ticket only in case the monitor continues to fail after 4 attempts of service restart.
 - The suggested Alert Template for this monitor is 'Default - Create Automate Ticket'.
+
 

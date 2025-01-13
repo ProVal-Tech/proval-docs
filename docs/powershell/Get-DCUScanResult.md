@@ -30,3 +30,4 @@ Fetches the scan result from dcu-cli for Dell machines.
 .\Get-DCUScanResult-log.txt
 .\Get-DCUScanResult-error.txt
 .\DCUReport\DCUApplicableUpdates.xml
+

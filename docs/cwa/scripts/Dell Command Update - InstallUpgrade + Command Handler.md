@@ -22,19 +22,19 @@ Command line reference: [Dell Command | Update CLI Commands](https://www.dell.co
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11434138/images/27058688)
+![Sample Run](..\..\..\static\img\Dell-Command-Update---InstallUpgrade-+-Command-Handler\image_1.png)
 
 To execute the /scan command:  
-![Execute Scan Command](5078775/docs/11434138/images/27058694)
+![Execute Scan Command](..\..\..\static\img\Dell-Command-Update---InstallUpgrade-+-Command-Handler\image_2.png)
 
 To Install all the available Updates:  
-![Install All Updates](5078775/docs/11434138/images/27058697)
+![Install All Updates](..\..\..\static\img\Dell-Command-Update---InstallUpgrade-+-Command-Handler\image_3.png)
 
 To Install BIOS, and FIRMWARE Updates only:  
-![Install BIOS and Firmware Updates](5078775/docs/11434138/images/27058700)
+![Install BIOS and Firmware Updates](..\..\..\static\img\Dell-Command-Update---InstallUpgrade-+-Command-Handler\image_4.png)
 
 To Install BIOS updates Only:  
-![Install BIOS Updates Only](5078775/docs/11434138/images/27058704)
+![Install BIOS Updates Only](..\..\..\static\img\Dell-Command-Update---InstallUpgrade-+-Command-Handler\image_5.png)
 
 In the same way Driver Updates can be installed as well. Please refer to [Dell Command | Update Version 5.x Reference Guide | Dell US](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) for more supported commands.
 
@@ -59,5 +59,6 @@ In the same way Driver Updates can be installed as well. Please refer to [Dell C
 
 - Script State
 - Script Log
+
 
 

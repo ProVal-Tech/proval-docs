@@ -22,3 +22,4 @@ The role can be further used to create an Audit dataview if needed.
 | `{%-HKLM\System\currentcontrolset\services\kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
 
 
+

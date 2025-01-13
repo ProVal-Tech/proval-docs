@@ -24,3 +24,4 @@ The dataview helps to audit the internal monitors where their group mapping is b
 | Notes        | Displays the Notes mentioned about the group.      |
 | AlertAction  | Displays the ID of the applied alert template.     |
 
+

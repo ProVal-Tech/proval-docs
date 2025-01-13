@@ -42,17 +42,17 @@ The **client-level** password entry `iLO Automation Password` must be set proper
 **Notes:** `Please leave this field blank as any additional information may cause automation issues. The [EPM - Data Collection - Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559) script utilizes this field to store the last run date.`
 
 **Examples:**  
-![Example Image 1](5078775/docs/12879037/images/18367445)  
-![Example Image 2](5078775/docs/12879037/images/22215707)  
+![Example Image 1](..\..\..\static\img\Execute-Script---HP-iLO---Health-Report---Get\image_1.png)  
+![Example Image 2](..\..\..\static\img\Execute-Script---HP-iLO---Health-Report---Get\image_2.png)  
 Note: If the iLO IP is bound to a port, then it is mandatory to provide the IP with its port in the URL section of the password tab. This is valid for both options.  
 Please refer to the screenshot:  
-![Example Image 3](5078775/docs/12879037/images/26011842)
+![Example Image 3](..\..\..\static\img\Execute-Script---HP-iLO---Health-Report---Get\image_3.png)
 
 ## Modifications
 
 The monitor set is configured to execute the script once per day by default, thereby updating the data in the [EPM - Vendor Specific - Dataview - HP iLO Health Report](https://proval.itglue.com/DOC-5078775-10072561) dataview daily.  
 You can adjust the execution frequency of the script by updating the number of hours in the `additional Condition` field of the monitor set, as shown in the screenshot. Increasing or decreasing the number of hours in this field will accordingly adjust how often the script is executed, allowing for finer control over the update frequency.  
-![Execution Frequency](5078775/docs/12879037/images/22215733)
+![Execution Frequency](..\..\..\static\img\Execute-Script---HP-iLO---Health-Report---Get\image_4.png)
 
 ## Dependencies
 
@@ -71,5 +71,6 @@ The alert template should run [EPM - Data Collection - Script - HP iLO - Health 
 ## Additional Notes
 
 The ticketing feature of the [EPM - Data Collection - Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559) script can be enabled by setting the ticket category in the monitor set.  
-![Ticketing Feature](5078775/docs/12879037/images/22215711)
+![Ticketing Feature](..\..\..\static\img\Execute-Script---HP-iLO---Health-Report---Get\image_5.png)
+
 

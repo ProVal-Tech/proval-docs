@@ -15,7 +15,7 @@ The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Sample Run
 
-![Sample Run](5078775/docs/11167374/images/15608730)
+![Sample Run](..\..\..\static\img\Windows-Update---Repair\image_1.png)
 
 ## Dependencies
 
@@ -43,5 +43,6 @@ Executes the Agnostic script [Repair-WindowsUpdate](https://proval.itglue.com/DO
 ## Output
 
 - Script Logs
+
 
 

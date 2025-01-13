@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 3600     | ![Result](5078775/docs/13459830/images/19314214) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 3600     | ![Result](..\..\..\static\img\RSM---Active-Directory--New-Domain-Admin\image_1.png) |
 
 ## Dependencies
 
@@ -31,10 +31,10 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Domain Controllers  
-![Target](5078775/docs/13459830/images/19314296)
+![Target](..\..\..\static\img\RSM---Active-Directory--New-Domain-Admin\image_2.png)
 
 The monitor set should be limited to the `Distinct  Domain Controller Per Client` search.  
-![Search](5078775/docs/13459830/images/19315332)
+![Search](..\..\..\static\img\RSM---Active-Directory--New-Domain-Admin\image_3.png)
 
 This search will create the remote monitor on a single domain controller of each domain.
 
@@ -54,7 +54,8 @@ New Domain Admin(s) Detected at %domain% for %clientname%.
 ```
 
 **Example:**  
-![Example](5078775/docs/13459830/images/19601320)
+![Example](..\..\..\static\img\RSM---Active-Directory--New-Domain-Admin\image_4.png)
 
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
 

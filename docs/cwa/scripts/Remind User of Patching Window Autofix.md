@@ -16,11 +16,12 @@ This script will send a popup message to the logged-in user to leave their machi
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8157466/images/11364028)
+![Sample Run](..\..\..\static\img\Remind-User-of-Patching-Window-Autofix\image_1.png)
 
 ## Process
 
 - The script first verifies if the user is logged in or not. If not, exit out.
 - If a user is logged in, send a popup message to the user to leave their machine online.
+
 
 

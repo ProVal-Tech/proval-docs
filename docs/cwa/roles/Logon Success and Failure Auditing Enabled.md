@@ -19,3 +19,4 @@ Runs auditpol.exe and determines if logon success / failure auditing is enabled.
 | {%@auditpol.exe /get /subcategory:logon@%} | Contains   | Success and Failure | Windows AD Controller  |
 
 
+

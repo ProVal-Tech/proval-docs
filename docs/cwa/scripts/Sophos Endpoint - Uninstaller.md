@@ -18,7 +18,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8059001/images/11217823)
+![Sample Run](..\..\..\static\img\Sophos-Endpoint---Uninstaller\image_1.png)
 
 ## Dependencies
 
@@ -46,5 +46,6 @@ If the services are no longer present, then the script was successful and will e
 ## Output
 
 - Script log messages only
+
 
 

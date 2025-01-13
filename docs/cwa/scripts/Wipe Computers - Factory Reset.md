@@ -15,10 +15,10 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Sample Run
 
 - To ask the logged-in user before performing the factory reset:  
-  ![Image](5078775/docs/15217437/images/22072617)  
+  ![Image](..\..\..\static\img\Wipe-Computers---Factory-Reset\image_1.png)  
 
 - To forcefully perform the factory reset:  
-  ![Image](5078775/docs/15217437/images/22072618)  
+  ![Image](..\..\..\static\img\Wipe-Computers---Factory-Reset\image_2.png)  
 
 ## Variables
 
@@ -36,5 +36,6 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
+
 
 

@@ -14,7 +14,7 @@ Installs and populates a table in a MySQL with a list of potential Log4Shell aff
 
 ## Sample Run
 
-![Sample Run](5078775/docs/8855626/images/12288889)
+![Sample Run](..\..\..\static\img\Import-Log4Shell-Table\image_1.png)
 
 ## Dependencies
 
@@ -41,4 +41,5 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.it
 - Local file on computer
 - Dataview
 - Custom Table
+
 

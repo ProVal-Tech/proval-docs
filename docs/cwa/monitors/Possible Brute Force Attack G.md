@@ -39,7 +39,7 @@ Logon Type Reference Table:
 11: CachedInteractive  
 
 Sample Ticket:  
-![Sample Ticket](5078775/docs/8070540/images/15153711)
+![Sample Ticket](..\..\..\static\img\Possible-Brute-Force-Attack-G\image_1.png)
 
 ## Target
 
@@ -50,10 +50,11 @@ Servers - Domain Controllers
 Step 1: Import the monitor set.  
 Step 2: Import the Alert Template (~Custom - Ticket creation computer), if it's already not there.  
 Step 3: Replace '<agentid>' in the additional condition with the id of your monitor set.  
-![Implementation Step](5078775/docs/8070540/images/15152047)
+![Implementation Step](..\..\..\static\img\Possible-Brute-Force-Attack-G\image_2.png)
 
 ## Dependencies
 
 [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+
 
 
