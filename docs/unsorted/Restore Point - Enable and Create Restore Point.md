@@ -18,7 +18,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Restore-Point---Enable-and-Create-Restore-Point\image_1.png)
+![Sample Run](../../static/img/Restore-Point---Enable-and-Create-Restore-Point/image_1.png)
 
 ## Dependencies
 
@@ -67,6 +67,7 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
 
 
 

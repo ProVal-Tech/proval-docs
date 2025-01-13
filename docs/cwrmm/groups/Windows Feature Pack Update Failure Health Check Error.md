@@ -24,20 +24,21 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 ## Criteria
 
 - Select `OS Build Number` for the Criteria `Does Not Contain any` for comparator and type `19045` and `22631` in the condition box.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_1.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_2.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_3.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_4.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_1.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_2.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_3.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_4.png)  
 
 - Click the `Add Criteria` button to add another Criteria.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_5.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_5.png)  
 
 - Select `Feature Update Install Failure` custom field for criteria, `Equal` for comparator and type `Health Check Error` in the condition box.  
 
 ## Group
 
 Click the `Save` button to Save the Group.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_6.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Health-Check-Error\image_7.png)
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_6.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_7.png)
+
 
 

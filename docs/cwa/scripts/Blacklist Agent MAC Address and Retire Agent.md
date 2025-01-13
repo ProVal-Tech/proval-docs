@@ -18,7 +18,7 @@ This script will take the MAC Address of the target agent and add the MAC addres
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Blacklist-Agent-MAC-Address-and-Retire-Agent\image_1.png)
+![Sample Run](../../../static/img/Blacklist-Agent-MAC-Address-and-Retire-Agent/image_1.png)
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ Once the MAC Address has been added to the blacklist, the script will move the a
 
 - Script Log messages
 - Agent MAC Address Blacklist
+
 
 

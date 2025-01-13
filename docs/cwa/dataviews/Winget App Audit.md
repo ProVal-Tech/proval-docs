@@ -43,3 +43,4 @@ Displays the information of `Winget` supported applications fetched by the [Wing
 
 
 
+

@@ -21,10 +21,10 @@ The script installs `Huntress Agent` on both Windows and Macintosh machines. It 
 
 **First Execution:** Run the script against any online Windows computer with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.
 
-![First Execution](..\..\..\static\img\Deploy-Huntress-Agent-Windows,-Mac\image_1.png)
+![First Execution](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_1.png)
 
 **Regular Execution:**  
-![Regular Execution](..\..\..\static\img\Deploy-Huntress-Agent-Windows,-Mac\image_2.png)
+![Regular Execution](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_2.png)
 
 ## Dependencies
 
@@ -36,8 +36,8 @@ The script installs `Huntress Agent` on both Windows and Macintosh machines. It 
 | Name                    | Description                                               |
 |-------------------------|-----------------------------------------------------------|
 | projectName             | Invoke-HuntressAgentCommand                               |
-| workingDirectory        | C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand |
-| scriptPath (Windows)    | C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand\Invoke-HuntressAgentCommand.ps1 |
+| workingDirectory        | C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand |
+| scriptPath (Windows)    | C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand/Invoke-HuntressAgentCommand.ps1 |
 | scriptPath (Macintosh) | /tmp/HuntressMacInstall.sh                               |
 
 ## User Parameters
@@ -54,7 +54,7 @@ The script installs `Huntress Agent` on both Windows and Macintosh machines. It 
 | Huntress Agent - Account Key         | Text      | 1SA2345AASSSS234 | Security Tools  | True     | This is the Account Key that determines which Huntress Account an Agent should be associated with.                                                                         |
 | Huntress Agent - Org Key             | Text      | Development       | Security Tools  | False    | By default, Huntress Organization key is the name of the client. Set this EDF if it's different for the client.                                                             |
 
-![Client-Level EDF](..\..\..\static\img\Deploy-Huntress-Agent-Windows,-Mac\image_3.png)
+![Client-Level EDF](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_3.png)
 
 ## Location-Level EDF
 
@@ -93,11 +93,12 @@ Output of the installation command:
 ```
 
 **Ticket Category should be set in the [ProVal - Production - Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) monitor set to enable ticket creation feature from the script.**  
-![Ticketing](..\..\..\static\img\Deploy-Huntress-Agent-Windows,-Mac\image_4.png)
+![Ticketing](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_4.png)
 
 ## Output
 
 - Script log
 - Ticket (if enabled)
+
 
 

@@ -20,7 +20,7 @@ This script is designed to be monitor driven only and should never be manually r
 
 This script's only dependency is that the monitor that is triggering the script has the network deviceID reporting in as the fieldname. The script will gather all other information it needs.
 
-![Image](..\..\..\static\img\Ticket-Creation---ESXi-Bad-Sensor\image_1.png)
+![Image](../../../static/img/Ticket-Creation---ESXi-Bad-Sensor/image_1.png)
 
 ## Process
 
@@ -29,7 +29,7 @@ This script's only dependency is that the monitor that is triggering the script 
 
 ## Example Ticket
 
-> The ESXi Host named <ESXI HostName> at <Client>\<Location> is currently reporting 4 Bad Sensors  
+> The ESXi Host named <ESXI HostName> at <Client>/<Location> is currently reporting 4 Bad Sensors  
 >  
 > The ESXi Host information is outlined below:  
 > Host Name: <computername>  
@@ -45,5 +45,6 @@ This script's only dependency is that the monitor that is triggering the script 
 > Type: Storage - Error      Message: Disk 2 on HPSA1 : Port  Box 0 Bay 0 : 0GB : Unconfigured Disk : Disk Error  
 > Type: Storage - Error      Message: Disk 3 on HPSA1 : Port  Box 0 Bay 0 : 0GB : Unconfigured Disk : Disk Error  
 > Type: Storage - Error      Message: Disk 4 on HPSA1 : Port  Box 0 Bay 0 : 0GB : Unconfigured Disk : Disk Error  
+
 
 

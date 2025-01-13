@@ -33,3 +33,4 @@ This dataview tracks the progress of the [Workaround - Microsoft Support Diagnos
 | MS-MSDT Registry Key Role    | Whether the role is active, inactive, or if it's never detected. <br> Active: The registry key is currently present on the computer. <br> Inactive: The registry key was once present on the computer, but the script had removed that. <br> Not Detected: Either the registry key was not present on the computer from the very beginning or somehow the computer is not accepting the role. |
 
 
+

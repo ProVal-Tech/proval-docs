@@ -23,7 +23,7 @@ Ticketing is optional if global parameter is set to a ticket category above 0.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Chromium-Browser-Update\image_1.png)
+![Sample Run](../../../static/img/Chromium-Browser-Update/image_1.png)
 
 ## Dependencies
 
@@ -40,7 +40,7 @@ Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium 
 Gathers the current Max version for the noted browsers.
 
 Executes the same command as Windows Task Scheduler to update the browser.  
-ex. - *"C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /ua /installsource scheduler*
+ex. - *"C:/Program Files (x86)/Microsoft/EdgeUpdate/MicrosoftEdgeUpdate.exe" /ua /installsource scheduler*
 
 Resends software to Automate server and performs basic checking for new version number and optional ticketing for failures.
 
@@ -48,5 +48,6 @@ Resends software to Automate server and performs basic checking for new version 
 
 - Script log
 - Optional - Ticketing
+
 
 

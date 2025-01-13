@@ -16,12 +16,12 @@ This Monitor detects Windows machines missing Perch Log Shipper on them. To init
 
 - [SWM - Software Install - Script - Deploy PerchLogShipper](https://proval.itglue.com/DOC-5078775-14986108)  
 - Client-Level EDF's to select Perch Log Shipper Deployment and to populate the installation token  
-  ![image](..\..\..\static\img\Deploy-Perch-Log-Shipper\image_1.png)  
+  ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_1.png)  
 -   
 - Location-level EDF to Exclude a Location from Perch Log Shipper Deployment and to populate the installation token  
-  ![image](..\..\..\static\img\Deploy-Perch-Log-Shipper\image_2.png)  
+  ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_2.png)  
 - Computer-level EDF to Exclude a computer from Perch Log Shipper Deployment  
-  ![image](..\..\..\static\img\Deploy-Perch-Log-Shipper\image_3.png)  
+  ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_3.png)  
 
 ## Target
 
@@ -30,5 +30,6 @@ Windows Machines
 ## Alert Template
 
 - `△ Custom -  Execute Script - Deploy PerchLogShipper`
+
 
 

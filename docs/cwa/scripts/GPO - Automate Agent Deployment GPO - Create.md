@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\GPO---Automate-Agent-Deployment-GPO---Create\image_1.png)
+![Sample Run](../../../static/img/GPO---Automate-Agent-Deployment-GPO---Create/image_1.png)
 
 ## Dependencies
 
@@ -40,12 +40,13 @@ Time Saved by Automation: 5 Minutes
 - Verifies whether the PowerShell version on the machine is greater than 2.0
 - Retrieve the URL to download the location-specific silent EXE from the probe system
 - Download: GPO Backup, Exe, Startup script
-- Store the exe and backup in `C:\Windows\SYSVOL\domain\scripts\`
+- Store the exe and backup in `C:/Windows/SYSVOL/domain/scripts/`
 - Edit migration table for GPO
 - Import GPO using an edited migration table
 
 ## Output
 
 - Script log
+
 
 

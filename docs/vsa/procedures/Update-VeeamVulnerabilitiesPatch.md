@@ -28,16 +28,16 @@ Patches Veeam vulnerabilities in Versions 11 and 11a: [https://www.veeam.com/kb4
 Example:
 
 ```
-PS C:\> .\Update-VeeamVulnerabilitiesPatch.ps1
+PS C:/> ./Update-VeeamVulnerabilitiesPatch.ps1
 ```
 
 ## Output
 
 Does the content write to the RMM log, a data file, or the console? If so, what is the syntax?
 
-- `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-log.txt`
-- `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-error.txt`
-- `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-patchlog.txt`
+- `$env:Windir/temp/veeam/Update-VeeamVulnerabilitiesPatch-log.txt`
+- `$env:Windir/temp/veeam/Update-VeeamVulnerabilitiesPatch-error.txt`
+- `$env:Windir/temp/veeam/Update-VeeamVulnerabilitiesPatch-patchlog.txt`
 
 ## Locations
 
@@ -47,5 +47,6 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM        |                     |
 | Kaseya VSA            |                     |
 | Datto RMM             |                     |
+
 
 

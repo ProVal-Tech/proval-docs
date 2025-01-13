@@ -52,3 +52,4 @@ Displays the latest audited speed test information of the last script ran from t
 | UploadMbps      | The upload speed detected in Mbps.                               |
 
 
+

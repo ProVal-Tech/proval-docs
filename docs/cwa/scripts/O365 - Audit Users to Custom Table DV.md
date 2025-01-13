@@ -3,7 +3,7 @@ id: 'cwa-o365-user-audit'
 title: 'O365 User Audit Script'
 title_meta: 'O365 User Audit Script for Efficient User Management'
 keywords: ['o365', 'audit', 'users', 'reporting', 'dashboard']
-description: 'This document details a script that utilizes O365 admin credentials to connect to O365 and audit users into a custom table. It highlights the requirements, process, and output of the script, which is designed for integration with ProVal\'s Dashboard for enhanced reporting capabilities.'
+description: 'This document details a script that utilizes O365 admin credentials to connect to O365 and audit users into a custom table. It highlights the requirements, process, and output of the script, which is designed for integration with ProVal/'s Dashboard for enhanced reporting capabilities.'
 tags: ['windows', 'report', 'configuration', 'security', 'installation']
 draft: false
 unlisted: false
@@ -20,7 +20,7 @@ Windows OS and PowerShell 5.0 is required
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\O365---Audit-Users-to-Custom-Table-DV\image_1.png)
+![Sample Run](../../../static/img/O365---Audit-Users-to-Custom-Table-DV/image_1.png)
 
 ## Dependencies
 
@@ -51,5 +51,6 @@ Windows OS and PowerShell 5.0 is required
 ## Output
 
 Script Log
+
 
 

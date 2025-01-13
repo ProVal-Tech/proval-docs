@@ -24,3 +24,4 @@ This dataview shows the number of missing patches for each workstation patching 
 | MissingPatches | Displays the number of missing patches on the machine |
 
 
+

@@ -18,7 +18,7 @@ This procedure requires the following template be completed:
 
 This file is located in the attachments as well as the agent procedure.
 
-![Image](..\..\..\static\img\Set-PowerPlan\image_1.png)
+![Image](../../../static/img/Set-PowerPlan/image_1.png)
 
 The values that can be modified are the **Direct Power Settings** and **Battery Power Settings** within this template. The maximum and minimum values are shown for reference along with any other important information.
 
@@ -40,13 +40,13 @@ The values that can be modified are the **Direct Power Settings** and **Battery 
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings.
 
 ```
-.\PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
+./PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
 ```
 
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the `$Settings` hashtable.
 
 ```
-.\PS C:\> $setting = @{
+./PS C:/> $setting = @{
             Subgroup = @{
                 'Hard Disk' = @{
                     PowerSetting = @{
@@ -103,19 +103,19 @@ Configures a custom power plan named 'CustomPlan' with specified AC and DC power
             }
         }
 
-.\PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting $Settings
+./PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting $Settings
 ```
 
-Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' file located in the 'C:\Temp' directory.
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' file located in the 'C:/Temp' directory.
 
 ```
-PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'C:\temp\CustomPlanTemplate.csv'
+PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'C:/temp/CustomPlanTemplate.csv'
 ```
 
-Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https:\\file.provaltech.com\\CustomPlanTemplate.csv'.
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https://file.provaltech.com//CustomPlanTemplate.csv'.
 
 ```
-PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https:\\file.provaltech.com\\CustomPlanTemplate.csv'
+PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.provaltech.com//CustomPlanTemplate.csv'
 ```
 
 # Parameters
@@ -128,8 +128,9 @@ PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https:\\file.pr
 
 # Output
 ```
-.\Set-PowerPlan-log.txt
-.\Set-PowerPlan-Error.txt
+./Set-PowerPlan-log.txt
+./Set-PowerPlan-Error.txt
 ```
+
 
 

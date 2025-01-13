@@ -14,10 +14,10 @@ This script will enable or disable Modern authentication for Office 2013 per ins
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Office-2013-Modern-Auth---Command\image_1.png)  
+![Sample Run 1](../../../static/img/Office-2013-Modern-Auth---Command/image_1.png)  
 Entering nothing or anything other than Disable will enable modern auth.
 
-![Sample Run 2](..\..\..\static\img\Office-2013-Modern-Auth---Command\image_2.png)  
+![Sample Run 2](../../../static/img/Office-2013-Modern-Auth---Command/image_2.png)  
 Entering Disable will disable Modern Authentication.
 
 ## Variables
@@ -43,5 +43,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 

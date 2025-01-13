@@ -20,8 +20,9 @@ Windows 11 compatibility check suggests that the computer meets the requirements
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---Windows-11-Compatible\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---Windows-11-Compatible\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---Windows-11-Compatible/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---Windows-11-Compatible/image_2.png)
+
 
 
 

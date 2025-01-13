@@ -21,20 +21,20 @@ Installs ImmyBot on the endpoint using preconfigured variables.
 2. Import the procedure into the partner VSA.
 3. Import the managed file (Install-ImmyBot.ps1)
    - This can be exported from our VSA:  
-     VSASharedFiles\\Miscellaneous\\Install-Immybot.ps1
-4. Modify the Line 16 writeFile to point to the uploaded file, and make sure the destination shows `#directory#\\#ScriptName#.ps1`
+     VSASharedFiles//Miscellaneous//Install-Immybot.ps1
+4. Modify the Line 16 writeFile to point to the uploaded file, and make sure the destination shows `#directory#//#ScriptName#.ps1`
 
-![Image](..\..\..\static\img\Install-ImmyBot\image_1.png)
+![Image](../../../static/img/Install-ImmyBot/image_1.png)
 
 5. Create a managed variable for IMMYBOT_ID and IMMYBOT_KEY  
-   ![Image](..\..\..\static\img\Install-ImmyBot\image_2.png)
+   ![Image](../../../static/img/Install-ImmyBot/image_2.png)
 
 These values can be gathered from the ImmyBot portal. The PowerShell output contains a KEY and an ID.
 
-![Image](..\..\..\static\img\Install-ImmyBot\image_3.png)  
+![Image](../../../static/img/Install-ImmyBot/image_3.png)  
 6. Specify the subdomain in the agent procedure. The subdomain can be gathered from the same command copied earlier.  
 
-![Image](..\..\..\static\img\Install-ImmyBot\image_4.png)  
+![Image](../../../static/img/Install-ImmyBot/image_4.png)  
 
 The subdomain in this example of [https://proval.immy.bot](https://proval.immy.bot) would be **proval**  
 
@@ -42,17 +42,17 @@ The subdomain in this example of [https://proval.immy.bot](https://proval.immy.b
 
 **Ensure you use the URL copied from the partner's Immybot instance**  
 
-![Image](..\..\..\static\img\Install-ImmyBot\image_5.png)  
+![Image](../../../static/img/Install-ImmyBot/image_5.png)  
 
 # Payload Usage
 ```
-PS C:\> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKEY' 
+PS C:/> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKEY' 
 # Installs Immybot using the specified parameters.
 
-PS C:\> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKEY' -Upgrade
+PS C:/> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKEY' -Upgrade
 # Installs Immybot using the specified parameters and will upgrade an existing agent to the latest version.
 
-PS C:\> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKEY' -Upgrade -Force
+PS C:/> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKEY' -Upgrade -Force
 # Installs ImmyBot using the specified parameters and will upgrade an existing agent to the latest version. Will replace existing installation even if up to date.
 ```
 
@@ -69,8 +69,9 @@ PS C:\> Install-ImmyBot.ps1 -Subdomain 'yourSubdomain' -ID 'yourID' -KEY 'yourKE
 Location of output for log, result, and error files.
 ```
 Agent Procedure Log Entry
-%ProgramData%_automation\AgentProcedure\ImmyBotInstall\Install-ImmyBot-log.txt
-%ProgramData%_automation\AgentProcedure\ImmyBotInstall\Install-ImmyBot-error.txt
+%ProgramData%_automation/AgentProcedure/ImmyBotInstall/Install-ImmyBot-log.txt
+%ProgramData%_automation/AgentProcedure/ImmyBotInstall/Install-ImmyBot-error.txt
 ```
+
 
 

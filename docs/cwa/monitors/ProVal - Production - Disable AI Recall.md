@@ -23,7 +23,7 @@ For more details on this feature visit the below link:
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 1800     | ![Image](..\..\..\static\img\ProVal---Production---Disable-AI-Recall\image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 1800     | ![Image](../../../static/img/ProVal---Production---Disable-AI-Recall/image_1.png) |
 
 ## Target
 
@@ -33,10 +33,11 @@ Windows 11 machines only.
 
 **Subject**: Failed to Disable AI Recall on %COMPUTERNAME%  
 
-**Body**: Failed to Disable AI Recall on %COMPUTERNAME% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%  
+**Body**: Failed to Disable AI Recall on %COMPUTERNAME% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%  
 
 ## How To Import
 
 [Import - Remote Monitor - Disable AI Recall](https://proval.itglue.com/DOC-5078775-16388386)
+
 
 

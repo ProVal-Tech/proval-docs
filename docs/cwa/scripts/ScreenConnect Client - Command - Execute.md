@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\ScreenConnect-Client---Command---Execute\image_1.png)
+![Sample Run](../../../static/img/ScreenConnect-Client---Command---Execute/image_1.png)
 
 ## Dependencies
 
@@ -39,6 +39,7 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 
 

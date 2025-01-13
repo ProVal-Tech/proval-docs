@@ -20,7 +20,7 @@ Target: Windows Device
 
 Please see the user parameters section below for additional information!
 
-![Sample Run](..\..\..\static\img\Folder-Share---Create-or-Remove\image_1.png)
+![Sample Run](../../../static/img/Folder-Share---Create-or-Remove/image_1.png)
 
 ## Dependencies
 
@@ -42,9 +42,9 @@ None
 
 | Name        | Example                       | Required | Description                                                                                                                                                   |
 |-------------|-------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Path        | C:\Labtech\                   | True     | What the parameter represents. Please ensure there is a closing backslash like the example! This is required.                                               |
-| User        | "Domain\Username", "Username" | True     | Always wrap the username in double quotes: "username". If the user is a domain user please include the domain name before the username. This list can be a comma-separated list with a comma and space between the users. See example. |
-| Share       | \\MachineName\Share           | True     | The name for the folder share                                                                                                                               |
+| Path        | C:/Labtech/                   | True     | What the parameter represents. Please ensure there is a closing backslash like the example! This is required.                                               |
+| User        | "Domain/Username", "Username" | True     | Always wrap the username in double quotes: "username". If the user is a domain user please include the domain name before the username. This list can be a comma-separated list with a comma and space between the users. See example. |
+| Share       | //MachineName/Share           | True     | The name for the folder share                                                                                                                               |
 | RemoveShare | <BLANK> | 1                 | If left blank, this script will create the shared folder. If set to 1 the script will attempt to remove the share.                                         |
 | Permission   | 1                             | True     | 1=Full Control<br>2=Read and Change Access<br>3=Read Only<br>4=No Access                                                                                   |
 
@@ -55,6 +55,7 @@ The script will execute a PowerShell script passing the above parameters. The sc
 ## Output
 
 Script log messages
+
 
 
 

@@ -20,7 +20,7 @@ This script is designed to be monitor driven only and should never be manually r
 
 This script's only dependency is that the monitor that is triggering the script has the network deviceID reporting in as the fieldname. The script will gather all other information it needs.
 
-![Image](..\..\..\static\img\Ticket-Creation---ESXi-Storage--10%\image_1.png)
+![Image](../../../static/img/Ticket-Creation---ESXi-Storage--10%/image_1.png)
 
 ## Process
 
@@ -29,7 +29,7 @@ This script's only dependency is that the monitor that is triggering the script 
 
 ## Example Ticket
 
-> The ESXi Host named @ESXHostName@ at %CLIENTNAME%\%LocationName% is reporting low disk space.  
+> The ESXi Host named @ESXHostName@ at %CLIENTNAME%/%LocationName% is reporting low disk space.  
 >  
 > The ESXi Host information is outlined below:  
 > Host Name: <ESXi Host Name>  
@@ -43,5 +43,6 @@ This script's only dependency is that the monitor that is triggering the script 
 > <VM Name>  
 >  
 > <Datastores with low disk space listed here>  
+
 
 

@@ -15,11 +15,11 @@ The purpose of this script is to install the desired patch on the windows machin
 ## Sample Run
 
 Leave the Reboot parameter blank or set it to '0' to prevent the machine from rebooting.  
-![Image](..\..\..\static\img\Universal-KB-Installer\image_1.png)  
+![Image](../../../static/img/Universal-KB-Installer/image_1.png)  
 
 Set Reboot Parameter to '1' to reboot the machine  
 
-![Image](..\..\..\static\img\Universal-KB-Installer\image_2.png)  
+![Image](../../../static/img/Universal-KB-Installer/image_2.png)  
 
 #### User Parameters
 
@@ -31,5 +31,6 @@ Set Reboot Parameter to '1' to reboot the machine
 ## Output
 
 - Script Logs
+
 
 

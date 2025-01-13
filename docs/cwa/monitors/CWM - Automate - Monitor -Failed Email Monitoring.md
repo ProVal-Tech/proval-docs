@@ -40,7 +40,7 @@ Below is the information of all the emails that failed in the last 1 hour:
 
 For the on-prem partners, tickets will be generated for the Automate server.  
 For the hosted partners, it will be the minimum computerid of Clientid 1. If Clientid 1 is not the primary client for a hosted partner then the clientid should be updated in the following location:  
-![Image](..\..\..\static\img\CWM---Automate---Monitor--Failed-Email-Monitoring\image_1.png)
+![Image](../../../static/img/CWM---Automate---Monitor--Failed-Email-Monitoring/image_1.png)
 
 ## Dependencies
 
@@ -51,5 +51,6 @@ For the hosted partners, it will be the minimum computerid of Clientid 1. If Cli
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
 
 

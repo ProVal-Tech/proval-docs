@@ -15,7 +15,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Chrome---Remove-Extension\image_1.png)
+![Sample Run](../../../static/img/Chrome---Remove-Extension/image_1.png)
 
 ## Dependencies
 
@@ -30,13 +30,13 @@ This script is used to remove the enforcement of the installation of an extensio
 | ProjectName        | The name of the project and in this case it would be Unregister-EdgeExtension                  |
 | Parameters         | This will take the ExtensionIDs.                                                                |
 | BaseURL            | The base URL here will be [https://file.provaltech.com/repo](https://file.provaltech.com/repo) |
-| WorkingDirectory    | C:\ProgramData\provaltech\script\@ProjectName@                                                |
+| WorkingDirectory    | C:/ProgramData/provaltech/script/@ProjectName@                                                |
 | PS1URL             | @BaseURL@/script/@[ProjectName@.ps1](https://proval.itglue.com/5078775/docs/ProjectName@.ps1) |
-| PS1Path            | @WorkingDirectory@\@[ProjectName@.ps1](https://proval.itglue.com/5078775/docs/ProjectName@.ps1) |
-| PS1TempPath        | @WorkingDirectory@\@[ProjectName@-temp.ps1](mailto:ProjectName@-temp.ps1)                    |
-| PS1Log             | @WorkingDirectory@\@[ProjectName@-log.txt](mailto:ProjectName@-log.txt)                      |
-| PS1DataLog         | @WorkingDirectory@\@[ProjectName@-data.txt](mailto:ProjectName@-data.txt)                    |
-| PS1ErrorLog        | @WorkingDirectory@\@[ProjectName@-errors.txt](mailto:ProjectName@-errors.txt)                |
+| PS1Path            | @WorkingDirectory@/@[ProjectName@.ps1](https://proval.itglue.com/5078775/docs/ProjectName@.ps1) |
+| PS1TempPath        | @WorkingDirectory@/@[ProjectName@-temp.ps1](mailto:ProjectName@-temp.ps1)                    |
+| PS1Log             | @WorkingDirectory@/@[ProjectName@-log.txt](mailto:ProjectName@-log.txt)                      |
+| PS1DataLog         | @WorkingDirectory@/@[ProjectName@-data.txt](mailto:ProjectName@-data.txt)                    |
+| PS1ErrorLog        | @WorkingDirectory@/@[ProjectName@-errors.txt](mailto:ProjectName@-errors.txt)                |
 | LogContent         | @PS1Log@                                                                                       |
 | DataLogContent     | @PS1DataLog@                                                                                   |
 
@@ -62,7 +62,8 @@ The script takes a single parameter which is an array of Extension IDs to instal
 
 - Script log  
 ```
-.\Unregister-ChromeExtension-log.txt
+./Unregister-ChromeExtension-log.txt
 ```
+
 
 

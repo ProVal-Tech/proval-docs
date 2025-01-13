@@ -38,7 +38,8 @@ Note: Only if the Remote monitor (from dependencies) has executed/run at least o
 
 ## Sample Screenshot
 
-![Sample Screenshot](..\..\..\static\img\Security---TLS-Status\image_1.png)
+![Sample Screenshot](../../../static/img/Security---TLS-Status/image_1.png)
+
 
 
 

@@ -14,7 +14,7 @@ This script takes an action parameter of 'Install', 'Uninstall', or 'ReInstall' 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Huntress---Command\image_1.png)
+![Sample Run](../../../static/img/Huntress---Command/image_1.png)
 
 ## Variables
 
@@ -57,6 +57,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

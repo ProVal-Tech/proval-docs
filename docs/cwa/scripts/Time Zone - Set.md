@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Time-Zone---Set\image_1.png)
+![Sample Run](../../../static/img/Time-Zone---Set/image_1.png)
 
 ## Dependencies
 
@@ -186,6 +186,7 @@ UTC+13
 Tonga Standard Time  
 Samoa Standard Time  
 Line Islands Standard Time  
+
 
 
 

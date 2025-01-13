@@ -16,11 +16,11 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Symantec-Agent-Install\image_1.png)
+![Sample Run](../../../static/img/Symantec-Agent-Install/image_1.png)
 
 ## Dependencies
 
-- Symantec_Agent_setup.exe must exist in the LtShare\Transfer\Software\ folder on the Automate server.
+- Symantec_Agent_setup.exe must exist in the LtShare/Transfer/Software/ folder on the Automate server.
 
 ## Process
 
@@ -30,5 +30,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 

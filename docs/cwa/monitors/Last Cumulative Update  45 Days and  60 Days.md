@@ -32,3 +32,4 @@ Global
 The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](https://proval.itglue.com/DOC-5078775-14790498) script.
 
 
+

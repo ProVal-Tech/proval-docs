@@ -19,7 +19,7 @@ Copies Org CFs to Machines in the specified Org. Checks to ensure the Machine CF
 
 # Payload Usage
 ```
-.\Copy-VsaOrgToMachineCF -BaseURL https://vsa.provaltech.com -VsaUserName serviceApi -RestApiToken token -OrgField 'Monitoring' -MachineField 'xPVAL Monitoring Managed' -OrgName 'Proval Technologies' -AgentName fdev-win10-1
+./Copy-VsaOrgToMachineCF -BaseURL https://vsa.provaltech.com -VsaUserName serviceApi -RestApiToken token -OrgField 'Monitoring' -MachineField 'xPVAL Monitoring Managed' -OrgName 'Proval Technologies' -AgentName fdev-win10-1
 ```
 Sets 'xPVAL Monitoring Managed' to the org cf value from 'Monitoring' for the specified agent.
 
@@ -38,7 +38,8 @@ Sets 'xPVAL Monitoring Managed' to the org cf value from 'Monitoring' for the sp
 
 # Output
 ```
-.\UpdateVsaMonitoringFields-log.txt
+./UpdateVsaMonitoringFields-log.txt
 ```
+
 
 

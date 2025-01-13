@@ -34,7 +34,7 @@ For implementation in Automate, the [Volume Free Space - Monitor Creation](https
 
 The schedule should have required parameters passed to it and should be run daily. Ideally this schedule should be against Service Plan groups that require volume space monitoring.
 
-![Image](..\..\static\img\Volume-Space-Monitoring\image_1.png)
+![Image](../../static/img/Volume-Space-Monitoring/image_1.png)
 
 ## FAQ
 
@@ -171,5 +171,6 @@ The script has been running hourly on USER-PC for 60 days.
 The script has the DaysToLead parameter set to 30.
 
 The script determines that in another 70 days, the volume's space may be completely exhausted based on the linear regression. The script then returns the estimated remaining space 40 days from now (70 - DaysToLead). This estimated remaining space is then used as the threshold for the volume space remote monitor for that volume.
+
 
 

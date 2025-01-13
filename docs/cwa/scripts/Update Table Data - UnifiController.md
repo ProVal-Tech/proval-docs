@@ -22,7 +22,7 @@ This Script launches the Get-UnifiController.ps1 file from the registry, filters
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Update-Table-Data---UnifiController\image_1.png)
+![Sample Run](../../../static/img/Update-Table-Data---UnifiController/image_1.png)
 
 ## Dependencies
 
@@ -68,7 +68,7 @@ Describe the steps the script performs to accomplish the desired task. Note that
 
 1. Downloads / Executes / and formats the results of [EPM - Data Collection - Agnostic - Script - Get-UnifiController](https://proval.itglue.com/DOC-5078775-7291568) to accomplish the following:
    1. Create two files on the target machine MyUnifiController.json and MyUnifiControllerNetworks.json containing objects for the unifi controller tables.
-   2. Read the data and return to Automate the following variables \ values:
+   2. Read the data and return to Automate the following variables / values:
       - totalrowstowrite
         - The total amount of rows that need to be written to the insert statement to complete the file.
       - totalrowstolimit
@@ -105,5 +105,6 @@ Describe the steps the script performs to accomplish the desired task. Note that
 ## Output
 
 - Script log
+
 
 

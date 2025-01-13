@@ -16,9 +16,9 @@ Output Syntax: `Harddisk - <Model> (Drives: <Drive Letter(s)>): Health Status - 
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Disable-SMB1\image_2.png)
+![Sample Run 1](../../../static/img/Disable-SMB1/image_2.png)
 
-![Sample Run 2](..\..\..\static\img\Disable-SMB1\image_3.png)
+![Sample Run 2](../../../static/img/Disable-SMB1/image_3.png)
 
 ## Implementation
 
@@ -26,27 +26,27 @@ Output Syntax: `Harddisk - <Model> (Drives: <Drive Letter(s)>): Health Status - 
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Create Script](..\..\..\static\img\Disable-SMB1\image_4.png)
+![Create Script](../../../static/img/Disable-SMB1/image_4.png)
 
-![Create Script](..\..\..\static\img\Disable-SMB1\image_5.png)
+![Create Script](../../../static/img/Disable-SMB1/image_5.png)
 
 **Name:** Disable SMB1  
 **Description:** This script disables the SMB1 protocol on the target machine. For both below and above the version '6.3'.  
 **Category:** Security
 
-![Script](..\..\..\static\img\Disable-SMB1\image_6.png)
+![Script](../../../static/img/Disable-SMB1/image_6.png)
 
 ### Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Disable-SMB1\image_7.png)
+![Add Row](../../../static/img/Disable-SMB1/image_7.png)
 
 #### Row 1 Function: PowerShell Script
 
-![PowerShell Script](..\..\..\static\img\Disable-SMB1\image_8.png)
+![PowerShell Script](../../../static/img/Disable-SMB1/image_8.png)
 
-![PowerShell Script](..\..\..\static\img\Disable-SMB1\image_9.png)
+![PowerShell Script](../../../static/img/Disable-SMB1/image_9.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -66,11 +66,11 @@ Paste in the following PowerShell script and set the expected time of script exe
 > } 
 > else 
 > {
->     $s =  (Get-Item HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} ); 
+>     $s =  (Get-Item HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} ); 
 >     if ( ( -not $s ) -or ( $s -contains 1 )) 
 >     {  
->         Set-ItemProperty -Path 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Lanmanworkstation\\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
->         Set-ItemProperty -Path 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
+>         Set-ItemProperty -Path 'HKLM://SYSTEM//CurrentControlSet//Services//Lanmanworkstation//Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
+>         Set-ItemProperty -Path 'HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
 >     }  
 >     return 'SMB1 has been successfully disabled'
 >     else 
@@ -80,58 +80,58 @@ Paste in the following PowerShell script and set the expected time of script exe
 > }
 > ```
 
-![PowerShell Script](..\..\..\static\img\Disable-SMB1\image_10.png)
+![PowerShell Script](../../../static/img/Disable-SMB1/image_10.png)
 
 Save and move to the next row.
 
 #### Row 2 Function: Script Log
 
-![Script Log](..\..\..\static\img\Disable-SMB1\image_11.png)
+![Script Log](../../../static/img/Disable-SMB1/image_11.png)
 
 In the script log message, simply type `Output:%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log](..\..\..\static\img\Disable-SMB1\image_12.png)
+![Script Log](../../../static/img/Disable-SMB1/image_12.png)
 
 #### Row 3 Logic: If /Then/Else
 
-![If/Then/Else](..\..\..\static\img\Disable-SMB1\image_13.png)
+![If/Then/Else](../../../static/img/Disable-SMB1/image_13.png)
 
 There will be two sections: If part and Else part.
 
-![If/Then/Else](..\..\..\static\img\Disable-SMB1\image_14.png)
+![If/Then/Else](../../../static/img/Disable-SMB1/image_14.png)
 
 ##### Row 3a Condition: Output Contains
 
 In IF part, enter **Disabled** in the right box of the "Output Contains" Part.
 
-![Output Contains](..\..\..\static\img\Disable-SMB1\image_15.png)
+![Output Contains](../../../static/img/Disable-SMB1/image_15.png)
 
 ##### Row 3b Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](..\..\..\static\img\Disable-SMB1\image_16.png)
+![Add Row](../../../static/img/Disable-SMB1/image_16.png)
 
 In the script exit message, simply type `SMB1 has been successfully Disabled. exiting Script` so that the script will send a successful message on the Automation tab for the target device.
 
-![Script Exit](..\..\..\static\img\Disable-SMB1\image_17.png)
+![Script Exit](../../../static/img/Disable-SMB1/image_17.png)
 
-![Script Exit](..\..\..\static\img\Disable-SMB1\image_18.png)
+![Script Exit](../../../static/img/Disable-SMB1/image_18.png)
 
 ##### Row 3c Function: Script Exit
 
 Add a new row by clicking on the Add row button in the ELSE part and select Script Exit Function.
 
-![Script Exit](..\..\..\static\img\Disable-SMB1\image_17.png)
+![Script Exit](../../../static/img/Disable-SMB1/image_17.png)
 
 In the script exit message, type `failed to Disable SMB1 on the machine` so that the script will send a failure message on the Automation tab for the target device.
 
-![Script Exit](..\..\..\static\img\Disable-SMB1\image_19.png)
+![Script Exit](../../../static/img/Disable-SMB1/image_19.png)
 
 Once all items are added, please save the task.  
 The final task should look like the below screenshot.
 
-![Final Task](..\..\..\static\img\Disable-SMB1\image_20.png)
+![Final Task](../../../static/img/Disable-SMB1/image_20.png)
 
 ## Deployment
 
@@ -144,36 +144,37 @@ It is suggested to run the Task once per week against Windows computers.
 - Select the concerned task.
 - Click on `Schedule` button to schedule the task/script.
   
-  ![Schedule Task](..\..\..\static\img\Disable-SMB1\image_21.png)
+  ![Schedule Task](../../../static/img/Disable-SMB1/image_21.png)
 
 - This screen will appear.
   
-  ![Schedule Task](..\..\..\static\img\Disable-SMB1\image_22.png)
+  ![Schedule Task](../../../static/img/Disable-SMB1/image_22.png)
 
 - Select the relevant time to run the script and click the Does not repeat button.
   
-  ![Schedule Task](..\..\..\static\img\Disable-SMB1\image_23.png)
+  ![Schedule Task](../../../static/img/Disable-SMB1/image_23.png)
 
 - This pop-up box will appear.
 - Change the number of days to `7` and click `OK`.
   
-  ![Change Days](..\..\..\static\img\Disable-SMB1\image_24.png)
+  ![Change Days](../../../static/img/Disable-SMB1/image_24.png)
   
-  ![Change Days](..\..\..\static\img\Disable-SMB1\image_25.png)
+  ![Change Days](../../../static/img/Disable-SMB1/image_25.png)
 
 - Search for `windows` in the `Resources*` and select `Windows Desktops` and `Windows Servers` groups. You can search and select any relevant group you would like to schedule the task against.
   
-  ![Select Groups](..\..\..\static\img\Disable-SMB1\image_26.png)
+  ![Select Groups](../../../static/img/Disable-SMB1/image_26.png)
 
 - Now click the `Run` button to initiate the task.
   
-  ![Run Task](..\..\..\static\img\Disable-SMB1\image_27.png)
+  ![Run Task](../../../static/img/Disable-SMB1/image_27.png)
 
 - The task will start appearing in the Scheduled Tasks.
 
 ## Output
 
 - Script log
+
 
 
 

@@ -16,7 +16,7 @@ Collects information regarding any existing crash dump.
 
 - To collect data run the Get-CrashDump script on a target endpoint.
 
-![Sample Run Image](..\..\..\static\img\Get-CrashDump\image_1.png)
+![Sample Run Image](../../../static/img/Get-CrashDump/image_1.png)
 
 ### Expected Return Types
 
@@ -57,13 +57,13 @@ Collects information regarding any existing crash dump.
 
 ## Process
 
-1. If `C:\windows\minidump` does not exist exit as a bluescreen has not been logged or the registry value `CrashDumpEnabled` has not been set to a compatible value.
+1. If `C:/windows/minidump` does not exist exit as a bluescreen has not been logged or the registry value `CrashDumpEnabled` has not been set to a compatible value.
    - If you set `ConfigureLoggingRegistryValue` to 1 the script will set the registry value to a compatible value.
 2. Resend the software list and check for NirSoft BlueScreenView, if it exists skip to step 5.
 3. Set the Name variable to `NirSoft BlueScreenView`.
 4. Run the Winget - Install Script.
 5. Run the following steps in PowerShell on the target machine:
-   - Use BlueScreenView CLI to export an XML of the found dump to `c:\temp\dumphtml.xml`.
+   - Use BlueScreenView CLI to export an XML of the found dump to `c:/temp/dumphtml.xml`.
    - Read the XML and format the return.
    - Return the result.
 6. Split the `psout` variable.
@@ -85,15 +85,16 @@ Collects information regarding any existing crash dump.
 
 ### Ticket
 
-![Ticket Image](..\..\..\static\img\Get-CrashDump\image_2.png)
+![Ticket Image](../../../static/img/Get-CrashDump/image_2.png)
 
 ### Email
 
-![Email Image](..\..\..\static\img\Get-CrashDump\image_3.png)
+![Email Image](../../../static/img/Get-CrashDump/image_3.png)
 
 ### Custom Table
 
-![Custom Table Image](..\..\..\static\img\Get-CrashDump\image_4.png)
+![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
+
 
 
 

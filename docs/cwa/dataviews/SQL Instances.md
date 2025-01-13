@@ -27,3 +27,4 @@ Displays all installed SQL instances found on an endpoint
 | Versions-Editions   | The found versions and editions separated by a comma.                      |
 
 
+

@@ -14,7 +14,7 @@ An implementation of [SWM - Software Installation - Script - Winget - Install/Up
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Winget---InstallUpdate---Teams\image_1.png)
+![Sample Run](../../../static/img/Winget---InstallUpdate---Teams/image_1.png)
 
 #### Global Parameters
 
@@ -27,6 +27,7 @@ An implementation of [SWM - Software Installation - Script - Winget - Install/Up
 ## Output
 
 - Script Logs
+
 
 
 

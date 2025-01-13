@@ -17,7 +17,7 @@ The script will close tickets for servers that no longer have pending reboots an
 ## Sample Run
 
 It is a client script and is suggested to schedule it to run at regular intervals.  
-![Sample Run](..\..\..\static\img\Reboot-Pending-Servers-per-client---Ticket-Creation\image_1.png)
+![Sample Run](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_1.png)
 
 ## Dependencies
 
@@ -30,9 +30,10 @@ It is a client script and is suggested to schedule it to run at regular interval
 ## Sample Tickets
 
 **Client-Level ticket:**  
-![Client-Level Ticket](..\..\..\static\img\Reboot-Pending-Servers-per-client---Ticket-Creation\image_2.png)  
+![Client-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_2.png)  
 
 **Computer-Level ticket:**  
-![Computer-Level Ticket](..\..\..\static\img\Reboot-Pending-Servers-per-client---Ticket-Creation\image_3.png)
+![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
+
 
 

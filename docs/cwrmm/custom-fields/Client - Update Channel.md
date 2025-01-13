@@ -29,7 +29,8 @@ Available options are:
 |--------------------|---------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | Update Channel      | Company | Drop Down | None          | Select the Update Channel from the drop-down menu to set for the computer. Available options are: Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, Beta Channel, None. Computer Level EDF can be used to override the value set in the Client Level EDF.                                                                                 | Yes      |
 
-![Image](..\..\..\static\img\Client---Update-Channel\image_1.png)  
-![Image](..\..\..\static\img\Client---Update-Channel\image_2.png)  
+![Image](../../../static/img/Client---Update-Channel/image_1.png)  
+![Image](../../../static/img/Client---Update-Channel/image_2.png)  
+
 
 

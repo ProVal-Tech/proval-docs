@@ -22,9 +22,9 @@ This procedure removes Google Drive from the endpoint
 | 3:20:04 pm 26-Apr-23       | Google Drive - Uninstall                     | Version of Google Drive detected as: 73.0.4.0                                              | derek.joniak  |
 | 3:20:04 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System) | Success THEN                                                                                | derek.joniak  |
 | 3:20:04 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0016 | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server. | derek.joniak  |
-| 3:20:02 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "(Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6BBAE539-2232-434A-A4E5-9A33560C6283}).DisplayVersion" >"c:\kworking\psoutputtmp.txt" | derek.joniak  |
+| 3:20:02 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "(Get-ItemProperty HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/{6BBAE539-2232-434A-A4E5-9A33560C6283}).DisplayVersion" >"c:/kworking/psoutputtmp.txt" | derek.joniak  |
 | 3:20:02 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                          | derek.joniak  |
-| 3:20:02 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as (Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6BBAE539-2232-434A-A4E5-9A33560C6283}).DisplayVersion | derek.joniak  |
+| 3:20:02 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as (Get-ItemProperty HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/{6BBAE539-2232-434A-A4E5-9A33560C6283}).DisplayVersion | derek.joniak  |
 | 3:20:02 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                       | derek.joniak  |
 | 3:20:01 pm 26-Apr-23       | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                       | derek.joniak  |
 | 3:20:00 pm 26-Apr-23       | Google Drive - Uninstall                     | Google Drive Detected                                                                        | derek.joniak  |
@@ -33,5 +33,6 @@ This procedure removes Google Drive from the endpoint
 ## Output
 
 Agent Log
+
 
 

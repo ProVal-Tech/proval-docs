@@ -39,3 +39,4 @@ A C: drive monitor has been created for workstations.
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
 
 
+

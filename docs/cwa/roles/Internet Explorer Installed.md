@@ -16,7 +16,8 @@ The purpose of this role is to detect the machines where Internet Explorer featu
 
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
-| `{%@C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -Command "Get-WindowsOptionalFeature -Online -FeatureName Internet-Explorer* "@%}` | Contains   | Enable | Windows        |
+| `{%@C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -Command "Get-WindowsOptionalFeature -Online -FeatureName Internet-Explorer* "@%}` | Contains   | Enable | Windows        |
+
 
 
 

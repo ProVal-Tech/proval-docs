@@ -12,7 +12,7 @@ unlisted: false
 
 This Dataview displays a summary of all scripts run over the set script log retention days. It displays the total runs, failures, successes, and the scripts effectiveness. The Script log retention days can be seen at the automate location below:
 
-![Script Log Retention Days](..\..\..\static\img\Scripts-Effectiveness-Audit\image_1.png)
+![Script Log Retention Days](../../../static/img/Scripts-Effectiveness-Audit/image_1.png)
 
 ## Columns
 
@@ -28,6 +28,7 @@ This Dataview displays a summary of all scripts run over the set script log rete
 
 ## Example Screenshot
 
-![Example Screenshot](..\..\..\static\img\Scripts-Effectiveness-Audit\image_2.png)
+![Example Screenshot](../../../static/img/Scripts-Effectiveness-Audit/image_2.png)
+
 
 

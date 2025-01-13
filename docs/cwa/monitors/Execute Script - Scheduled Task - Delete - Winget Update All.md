@@ -31,3 +31,4 @@ The alert template executes the [Script - Scheduled Task - Delete - Winget Updat
 
 
 
+

@@ -20,19 +20,20 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 
 ### Criteria
 - Select `OS Build Number` for the Criteria `Does Not Contain any` for comparator and type `19045` and `22631` in the condition box.  
-![Image 1](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_1.png)  
-![Image 2](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_2.png)  
-![Image 3](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_3.png)  
-![Image 4](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_4.png)
+![Image 1](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_1.png)  
+![Image 2](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_2.png)  
+![Image 3](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_3.png)  
+![Image 4](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_4.png)
 
 - Click the `Add Criteria` button to add another Criteria.  
-![Image 5](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_5.png)
+![Image 5](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_5.png)
 
 - Select `Feature Update Install Failure` custom field for criteria, `Equal` for comparator and type `Installation Failure/Error` in the condition box.
 
 ### Group
 Click the `Save` button to Save the Group.  
-![Image 6](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_6.png)  
-![Image 7](..\..\..\static\img\Windows-Feature-Pack-Update-Failure-Installation-FailureError\image_7.png)
+![Image 6](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_6.png)  
+![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_7.png)
+
 
 

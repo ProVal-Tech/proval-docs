@@ -24,6 +24,7 @@ Set this custom flag to true to exclude an endpoint from sentinelone deployment.
 
 ## ScreenShot
 
-![ScreenShot](..\..\..\static\img\Flag---SentinelOne-Deployment-Exclusion\image_1.png)
+![ScreenShot](../../../static/img/Flag---SentinelOne-Deployment-Exclusion/image_1.png)
+
 
 

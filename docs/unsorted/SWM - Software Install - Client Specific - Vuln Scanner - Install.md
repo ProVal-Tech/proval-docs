@@ -14,7 +14,7 @@ This script installs the NESSUS vuln Scanner
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\SWM---Software-Install---Client-Specific---Vuln-Scanner---Install\image_1.png)
+![Sample Run](../../static/img/SWM---Software-Install---Client-Specific---Vuln-Scanner---Install/image_1.png)
 
 ## Variables
 
@@ -37,9 +37,9 @@ This script installs the NESSUS vuln Scanner
 ## Process
 
 1. Set up any variables.
-2. Check for the downloaded file (c:\temp folder item); if it exists, go to step 6.
+2. Check for the downloaded file (c:/temp folder item); if it exists, go to step 6.
 3. Download the msi installer.
-4. Check for the downloaded file (c:\temp folder item); if it exists, go to step 6.
+4. Check for the downloaded file (c:/temp folder item); if it exists, go to step 6.
 5. Log an error and exit with error.
 6. Run msiexec to install the application.
 7. Wait 5 seconds to complete.
@@ -47,6 +47,7 @@ This script installs the NESSUS vuln Scanner
 9. If Nessus Agent (x64) is a valid software in the software list, go to step 11.
 10. Log an error and exit with error.
 11. Log success and exit.
+
 
 
 

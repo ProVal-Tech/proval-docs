@@ -22,7 +22,7 @@ Gets a list of agents that meet the set criteria (offline for `$OfflineDays` day
 
 # Payload Usage
 ```
-.\Remove-VsaStagnantAgent.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiServiceAccount -RestApiToken abcd-efgh-ijkl-mnop -OfflineDays 30 -MachineGroupException proval.development -OsTypeException 11
+./Remove-VsaStagnantAgent.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiServiceAccount -RestApiToken abcd-efgh-ijkl-mnop -OfflineDays 30 -MachineGroupException proval.development -OsTypeException 11
 ```
 Removes agents offline for 30 days in all groups except `proval.development`. Does not remove any endpoint running Windows 11.
 
@@ -48,5 +48,6 @@ Location of output for log, result, and error files.
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
+
 
 

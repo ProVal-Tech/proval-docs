@@ -88,7 +88,7 @@ SELECT
     clients.name as `Client Name`,
     computers.domain as `Computer Domain`,
     computers.username as `Computer User`,
-    IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'windows\')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'darwin\') >0, 2, 3)) as `Computer.OS.Type`,
+    IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'windows/')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'darwin/') >0, 2, 3)) as `Computer.OS.Type`,
     IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0') as `Computer - Client - Extra Data Field - Security - Lockdown Browsers Password Manager`,
     IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0') as `Computer - Client - Extra Data Field - Security - Lockdown Browsers Credit Card Autofill`,
     IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0') as `Computer - Client - Extra Data Field - Security - Lockdown Browsers Address Autofill`
@@ -213,14 +213,14 @@ INSERT INTO groupagents
   'ProVal - Production - Lockdown Browsers Password Manager' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  'Browsers Password Manager Lockdown - Failed on %CLIENTNAME%\\\\%COMPUTERNAME%~~~Successfully Disabled the Password Manager for the Installed Browsers. !!!Browsers Password Manager Lockdown - Failed on %CLIENTNAME%\\\\%COMPUTERNAME%~~~Password Manager Lockdown failed on %CLIENTNAME%\\\\%COMPUTERNAME%. The script was unable to disable the Password Manager on the following browsers:<br>%RESULT%<br>Manual investigation is required.' as `AlertMessage`,
+  'Browsers Password Manager Lockdown - Failed on %CLIENTNAME%////%COMPUTERNAME%~~~Successfully Disabled the Password Manager for the Installed Browsers. !!!Browsers Password Manager Lockdown - Failed on %CLIENTNAME%////%COMPUTERNAME%~~~Password Manager Lockdown failed on %CLIENTNAME%////%COMPUTERNAME%. The script was unable to disable the Password Manager on the following browsers:<br>%RESULT%<br>Manual investigation is required.' as `AlertMessage`,
   '0' as `ContactID`,
   '604800' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command \"$erroractionpreference = \\'silentlycontinue\\'; $browsers = @{\\'Google Chrome\\' = \\'HKLM:\\\\Software\\\\Policies\\\\Google\\\\Chrome\\'; \\'Microsoft Edge\\' = \\'HKLM:\\\\SOFTWARE\\\\Policies\\\\Microsoft\\\\Edge\\'; Brave = \\'HKLM:\\\\SOFTWARE\\\\Policies\\\\BraveSoftware\\\\Brave\\'; \\'Mozilla Firefox\\' = \\'HKLM:\\\\Software\\\\Policies\\\\Mozilla\\\\Firefox\\'}; function find-application {Param([Parameter()][String]$Name); if (Get-ChildItem -Path HKLM:\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall, HKLM:\\\\SOFTWARE\\\\Wow6432Node\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match $name }) {return $true} else {return $false} }; function check-regvalue { Param([Parameter()][String]$path); (Get-ItemProperty -Path $path ).passwordmanagerenabled }; function set-regvalue { Param([Parameter()][String]$path) ;  if ( ( check-regvalue -path $path ) -ne \\'0\\' ) { if ( !( Test-Path $path ) ) { New-Item -Path $path -Force | Out-Null }; Set-ItemProperty -Path $path -Name PasswordManagerEnabled -Value 0 -Force } } ; $failed=@(); foreach ( $browser in $browsers.Keys ) { if ( find-application -Name $browser ) { set-regvalue -Path $browsers.($browser); if ( ( check-regvalue -path $browsers.($browser) ) -ne \\'0\\' ) { $failed += $browser } } }; if ( $failed ) { return \\\\\"Failed: $($failed)\\\\\" }\"' as `DataOut`,
+  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command /"$erroractionpreference = //'silentlycontinue//'; $browsers = @{//'Google Chrome//' = //'HKLM:////Software////Policies////Google////Chrome//'; //'Microsoft Edge//' = //'HKLM:////SOFTWARE////Policies////Microsoft////Edge//'; Brave = //'HKLM:////SOFTWARE////Policies////BraveSoftware////Brave//'; //'Mozilla Firefox//' = //'HKLM:////Software////Policies////Mozilla////Firefox//'}; function find-application {Param([Parameter()][String]$Name); if (Get-ChildItem -Path HKLM:////SOFTWARE////Microsoft////Windows////CurrentVersion////Uninstall, HKLM:////SOFTWARE////Wow6432Node////Microsoft////Windows////CurrentVersion////Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match $name }) {return $true} else {return $false} }; function check-regvalue { Param([Parameter()][String]$path); (Get-ItemProperty -Path $path ).passwordmanagerenabled }; function set-regvalue { Param([Parameter()][String]$path) ;  if ( ( check-regvalue -path $path ) -ne //'0//' ) { if ( !( Test-Path $path ) ) { New-Item -Path $path -Force | Out-Null }; Set-ItemProperty -Path $path -Name PasswordManagerEnabled -Value 0 -Force } } ; $failed=@(); foreach ( $browser in $browsers.Keys ) { if ( find-application -Name $browser ) { set-regvalue -Path $browsers.($browser); if ( ( check-regvalue -path $browsers.($browser) ) -ne //'0//' ) { $failed += $browser } } }; if ( $failed ) { return /////"Failed: $($failed)/////" }/"' as `DataOut`,
   '16' as `Comparor`,
-  '10|(^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)|11|(^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)%7C(Mozilla Firefox)))|10|(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))' as `DataIn`,
+  '10|(^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)|11|(^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)%7C(Mozilla Firefox)))|10|(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))' as `DataIn`,
   '' as `IDField`,
   '0' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -284,14 +284,14 @@ INSERT INTO groupagents
   'ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  'Chromium Browsers Credit Cards Autofill Lockdown - Failed on %CLIENTNAME%\\\\%COMPUTERNAME%~~~Successfully Disabled the Credit Cards Autofill for the Installed Browsers. !!!Chromium Browsers Credit Cards Autofill Lockdown - Failed on %CLIENTNAME%\\\\%COMPUTERNAME%~~~Credit Cards Autofill Lockdown Failed on %CLIENTNAME%\\\\%COMPUTERNAME%. The script was unable to disable the Autofill of Credit Cards on the following browsers:<br>%RESULT%<br>Manual investigation is required.' as `AlertMessage`,
+  'Chromium Browsers Credit Cards Autofill Lockdown - Failed on %CLIENTNAME%////%COMPUTERNAME%~~~Successfully Disabled the Credit Cards Autofill for the Installed Browsers. !!!Chromium Browsers Credit Cards Autofill Lockdown - Failed on %CLIENTNAME%////%COMPUTERNAME%~~~Credit Cards Autofill Lockdown Failed on %CLIENTNAME%////%COMPUTERNAME%. The script was unable to disable the Autofill of Credit Cards on the following browsers:<br>%RESULT%<br>Manual investigation is required.' as `AlertMessage`,
   '0' as `ContactID`,
   '604800' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErrorActionPreference = \\'SilentlyContinue\\';$browsers = @{\\'Google Chrome\\' = \\'HKLM:\\\\Software\\\\Policies\\\\Google\\\\Chrome\\';\\'Microsoft Edge\\' = \\'HKLM:\\\\SOFTWARE\\\\Policies\\\\Microsoft\\\\Edge\\';\\'Brave\\' = \\'HKLM:\\\\SOFTWARE\\\\Policies\\\\BraveSoftware\\\\Brave\\'}; Function Find-Application { Param([Parameter()][String]$Name); if ( Get-ChildItem -Path HKLM:\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall, HKLM:\\\\SOFTWARE\\\\Wow6432Node\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match \"$Name\" } ) { return $Name } else { return $false } }; Function Get-RegValue { Param([Parameter()][String]$path,$Reg); ( Get-ItemProperty -Path $path ).\"$Reg\" }; Function Set-RegValue { Param([Parameter()][String]$path,$Reg); if ( ( Get-RegValue -path $path -Reg $Reg ) -ne \\'0\\' ) { if ( !( Test-Path $path ) ) { New-Item -Path $path -Force | Out-Null }; Set-ItemProperty -Path $path -Name $Reg -Value 0 -Force } }; $failed = @(); foreach ( $browser in $browsers.Keys ) { if ( Find-Application -Name $browser ) { foreach ( $Reg in (\\'AutofillCreditCardEnabled\\', \\'PaymentMethodQueryEnabled\\') ) { Set-RegValue -Path $browsers.($browser) -Reg $Reg; if ( ( Get-RegValue -path $browsers.($browser) -Reg $Reg ) -ne \\'0\\' ) { $failed += $browser } } } }; if ( $failed ) { return \\\\\"Failed: $($failed)\\\\\" }\"' as `DataOut`,
+  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command /"$ErrorActionPreference = //'SilentlyContinue//';$browsers = @{//'Google Chrome//' = //'HKLM:////Software////Policies////Google////Chrome//';//'Microsoft Edge//' = //'HKLM:////SOFTWARE////Policies////Microsoft////Edge//';//'Brave//' = //'HKLM:////SOFTWARE////Policies////BraveSoftware////Brave//'}; Function Find-Application { Param([Parameter()][String]$Name); if ( Get-ChildItem -Path HKLM:////SOFTWARE////Microsoft////Windows////CurrentVersion////Uninstall, HKLM:////SOFTWARE////Wow6432Node////Microsoft////Windows////CurrentVersion////Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match /"$Name/" } ) { return $Name } else { return $false } }; Function Get-RegValue { Param([Parameter()][String]$path,$Reg); ( Get-ItemProperty -Path $path )./"$Reg/" }; Function Set-RegValue { Param([Parameter()][String]$path,$Reg); if ( ( Get-RegValue -path $path -Reg $Reg ) -ne //'0//' ) { if ( !( Test-Path $path ) ) { New-Item -Path $path -Force | Out-Null }; Set-ItemProperty -Path $path -Name $Reg -Value 0 -Force } }; $failed = @(); foreach ( $browser in $browsers.Keys ) { if ( Find-Application -Name $browser ) { foreach ( $Reg in (//'AutofillCreditCardEnabled//', //'PaymentMethodQueryEnabled//') ) { Set-RegValue -Path $browsers.($browser) -Reg $Reg; if ( ( Get-RegValue -path $browsers.($browser) -Reg $Reg ) -ne //'0//' ) { $failed += $browser } } } }; if ( $failed ) { return /////"Failed: $($failed)/////" }/"' as `DataOut`,
   '16' as `Comparor`,
-  '10|(^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)|11|(^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))|10|(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))' as `DataIn`,
+  '10|(^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)|11|(^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))|10|(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))' as `DataIn`,
   '' as `IDField`,
   '0' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -366,14 +366,14 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 7.
 Reload System Cache
 
-![Reload System Cache](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_1.png)
+![Reload System Cache](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_1.png)
 
 ## Step 8.
 Refresh Searches and Groups.
 
-![Refresh Searches and Groups](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_2.png)
+![Refresh Searches and Groups](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_2.png)
 
-![Refresh Searches and Groups](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_3.png)
+![Refresh Searches and Groups](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_3.png)
 
 ## Step 9.
 Confirm the presence of the following remote monitors on the `△ Lockdown Browsers Autofill` group:
@@ -382,8 +382,9 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
 
-![Confirm Remote Monitors](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_4.png)
+![Confirm Remote Monitors](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_4.png)
 
-![Confirm Remote Monitors](..\..\..\static\img\Implement---Group-Monitors---?-Lockdown-Browsers-Autofill\image_5.png)
+![Confirm Remote Monitors](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_5.png)
+
 
 

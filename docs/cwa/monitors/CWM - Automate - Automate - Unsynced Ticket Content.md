@@ -21,10 +21,11 @@ use the "△ Email RAWSQL Monitor set results to the Partner" alert template alo
 
 Note: The script will send an email to the alert template user/contact. This field must be modified manually after importing the template/while enabling the monitor. The alert template will default to the location contact and you must set the contact/user that you wish to receive the alerts.  
 
-![Image](..\..\..\static\img\CWM---Automate---Automate---Unsynced-Ticket-Content\image_1.png)
+![Image](../../../static/img/CWM---Automate---Automate---Unsynced-Ticket-Content/image_1.png)
 
 ## Target
 
 Global  
+
 
 

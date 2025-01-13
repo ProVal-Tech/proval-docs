@@ -14,7 +14,7 @@ Generates GPRESULT data and stores it in a custom table.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Group-Policy---Gather-GPResult-Data\image_1.png)
+![Sample Run](../../../static/img/Group-Policy---Gather-GPResult-Data/image_1.png)
 
 ## Dependencies
 
@@ -33,6 +33,7 @@ See [EPM - Windows Configuration - Agnostic - Get-GPResult](https://proval.itglu
 - Script log
 - Local file on computer
 - Dataview
+
 
 
 

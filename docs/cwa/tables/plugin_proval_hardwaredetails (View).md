@@ -118,3 +118,4 @@ Displays detailed hardware information about all applicable agents in an Automat
 | Printer Names                    | TEXT     | Comma-separated list of all connected printers to the machine.                                  |
 
 
+

@@ -19,9 +19,9 @@ SELECT
 'Select DISTINCT Computers.ComputerID, [Clients.Name](http://clients.Name) as `Client Name`, [Computers.Name](http://computers.Name) as `Computer Name`, Computers.Domain, Computers.UserName as `Username`, Computers.ComputerID
 From Computers, Clients
 Where Computers.ClientID = Clients.ClientID
- and ((Computers.ComputerID in (select DISTINCT c.computerid from computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = 'ProVal - Production - SMB1 Detection' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,'\r\n', '') =  'True')))',
+ and ((Computers.ComputerID in (select DISTINCT c.computerid from computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = 'ProVal - Production - SMB1 Detection' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,'/r/n', '') =  'True')))',
 '4', 
-'Computer ID||>=|*(select DISTINCT c.computerid from computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = 'ProVal - Production - SMB1 Detection' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,'\r\n', '') =  'True')|=||=|^Select|||||||^',
+'Computer ID||>=|*(select DISTINCT c.computerid from computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = 'ProVal - Production - SMB1 Detection' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,'/r/n', '') =  'True')|=||=|^Select|||||||^',
 '0', 
 'a3890b94-d878-4916-80b3-67b31a8695f4'
 FROM  (SELECT MIN(computerid) FROM computers) a
@@ -76,16 +76,16 @@ SELECT '' as `AgentID`,
 'SMB1 Traffic Detection' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic not detected.!!!SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic detected on %CLIENTNAME%\\%COMPUTERNAME% in the past 1 hour. 
+'SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic not detected.!!!SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic detected on %CLIENTNAME%//%COMPUTERNAME% in the past 1 hour. 
 Details: 
 %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "if ( !( (Get-SmbServerConfiguration).AuditSmb1Access ) ) { try { Set-SmbServerConfiguration –AuditSmb1Access $true -Force -confirm:$false -ErrorAction Stop } catch { return \"Failure Reason: $($Error[0].Exception.Message)\" } } else {function Get-SMB1AccessLogs { param([int[]]$Level,[int[]]$EventID,[int]$Hours); $filter = @{LogName = 'Microsoft-Windows-SMBServer*'; Level = $Level};if ($EventID) {$filter.ID = $EventID};if ($Hours) {$filter.StartTime = (Get-Date).AddHours(-$Hours)};try {Get-WinEvent -FilterHashtable $filter -ErrorAction Stop } catch { if ( $Error[0].Exception.Message -match 'No events were found' ) { return 'No events were found that match the specified selection criteria'} else { return \"Complete Failure: $($Error[0].Exception.Message)\" } } }; Get-SMB1AccessLogs -Level 4 -EventID 1001,3000 -Hours 1 | Format-List}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "if ( !( (Get-SmbServerConfiguration).AuditSmb1Access ) ) { try { Set-SmbServerConfiguration –AuditSmb1Access $true -Force -confirm:$false -ErrorAction Stop } catch { return /"Failure Reason: $($Error[0].Exception.Message)/" } } else {function Get-SMB1AccessLogs { param([int[]]$Level,[int[]]$EventID,[int]$Hours); $filter = @{LogName = 'Microsoft-Windows-SMBServer*'; Level = $Level};if ($EventID) {$filter.ID = $EventID};if ($Hours) {$filter.StartTime = (Get-Date).AddHours(-$Hours)};try {Get-WinEvent -FilterHashtable $filter -ErrorAction Stop } catch { if ( $Error[0].Exception.Message -match 'No events were found' ) { return 'No events were found that match the specified selection criteria'} else { return /"Complete Failure: $($Error[0].Exception.Message)/" } } }; Get-SMB1AccessLogs -Level 4 -EventID 1001,3000 -Hours 1 | Format-List}"' as `DataOut`,
 '16' as `Comparor`,
-'10|(^$)%7C^(\\r\\n%7C\\s%7COK)$%7C(No events were found)|11|(^$)%7C^(\\r\\n%7C\\s%7COK)$%7C(No events were found)%7C(Microsoft-Windows-SMBServer)|10|Microsoft-Windows-SMBServer' as `DataIn`,
+'10|(^$)%7C^(//r//n%7C//s%7COK)$%7C(No events were found)|11|(^$)%7C^(//r//n%7C//s%7COK)$%7C(No events were found)%7C(Microsoft-Windows-SMBServer)|10|Microsoft-Windows-SMBServer' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -145,8 +145,8 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 2.
 Perform `Refresh Searches` and `Do Group Refresh` from `MySQL Server Status` tool.
 
-![Image 1](..\..\..\static\img\Implement--SMB1-Traffic-Detection\image_1.png)
-![Image 2](..\..\..\static\img\Implement--SMB1-Traffic-Detection\image_2.png)
+![Image 1](../../../static/img/Implement--SMB1-Traffic-Detection/image_1.png)
+![Image 2](../../../static/img/Implement--SMB1-Traffic-Detection/image_2.png)
 
 ## Step 3.
 Reload System Cache after a couple of minutes.
@@ -157,9 +157,10 @@ Refresh Groups and Look for the `SMB1 Server Enabled [Remote Monitor]` group.
 ## Step 5.
 Validate the presence of the `SMB1 Traffic Detection` remote monitor on the group.
 
-![Image](..\..\..\static\img\Implement--SMB1-Traffic-Detection\image_3.png)
+![Image](../../../static/img/Implement--SMB1-Traffic-Detection/image_3.png)
 
 ## Step 6.
 Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854) script for errors/failures.
+
 
 

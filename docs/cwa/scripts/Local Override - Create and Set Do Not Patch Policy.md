@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Local-Override---Create-and-Set-Do-Not-Patch-Policy\image_1.png)
+![Sample Run](../../../static/img/Local-Override---Create-and-Set-Do-Not-Patch-Policy/image_1.png)
 
 ## Variables
 
@@ -32,5 +32,6 @@ Time Saved by Automation: 15 Minutes
 ## Output
 
 - Script log
+
 
 

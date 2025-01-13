@@ -14,11 +14,11 @@ Deploys the SentinelOne agent with an agent token set at either the Global, Clie
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\SentinelOne-Agent-Deployment\image_1.png)
+![Sample Run 1](../../../static/img/SentinelOne-Agent-Deployment/image_1.png)
 
 - Running in this manner with No token will result in the script attempting the client level token edf value, and if this is not set it will grab the System property token value to process the request.
 
-![Sample Run 2](..\..\..\static\img\SentinelOne-Agent-Deployment\image_2.png)
+![Sample Run 2](../../../static/img/SentinelOne-Agent-Deployment/image_2.png)
 
 - Adding a token to the Token parameter will trump all client level tokens and global property tokens, and use the provided token as the means to process the request.
 
@@ -42,13 +42,13 @@ Global Parameter Set instructions:
 
 Client level tokens can be set in the following client edf location:
 
-![Client EDF Location](..\..\..\static\img\SentinelOne-Agent-Deployment\image_3.png)
+![Client EDF Location](../../../static/img/SentinelOne-Agent-Deployment/image_3.png)
 
 Exclusions can be set in the following locations:
 
-![Exclusion Location 1](..\..\..\static\img\SentinelOne-Agent-Deployment\image_4.png)
+![Exclusion Location 1](../../../static/img/SentinelOne-Agent-Deployment/image_4.png)
 
-![Exclusion Location 2](..\..\..\static\img\SentinelOne-Agent-Deployment\image_5.png)
+![Exclusion Location 2](../../../static/img/SentinelOne-Agent-Deployment/image_5.png)
 
 ## Variables
 
@@ -73,7 +73,7 @@ Exclusions can be set in the following locations:
    3. If that is not set, then exit with error.
 3. Check for any computer level exclusion; if one exists, exit with error.
 4. Check for any location level exclusion; if one exists, exit with error.
-5. Download the installer to the `C:\Windows\ltsvc\SentinelOne` folder.
+5. Download the installer to the `C:/Windows/ltsvc/SentinelOne` folder.
 6. Verify the download; if not downloaded, exit with error.
 7. Install SentinelOne.
 8. Verify installation success; if not successful, then exit with error.
@@ -81,5 +81,6 @@ Exclusions can be set in the following locations:
 ## Output
 
 - Script log
+
 
 

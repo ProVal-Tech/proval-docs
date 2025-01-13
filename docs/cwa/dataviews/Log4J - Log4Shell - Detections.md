@@ -32,3 +32,4 @@ Displays information about the EDFs filled by [SEC - Endpoint Protection - Scrip
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
 
 
+

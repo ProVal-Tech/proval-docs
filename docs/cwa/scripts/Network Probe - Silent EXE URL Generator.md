@@ -16,7 +16,7 @@ This script is part of our GPO deployment script, but also can be run standalone
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Network-Probe---Silent-EXE-URL-Generator\image_1.png)
+![Sample Run](../../../static/img/Network-Probe---Silent-EXE-URL-Generator/image_1.png)
 
 ## Dependencies
 
@@ -40,5 +40,6 @@ This script is part of our GPO deployment script, but also can be run standalone
 ## Output
 
 - Script log -> Logs the silent install URL to the script logs.
+
 
 

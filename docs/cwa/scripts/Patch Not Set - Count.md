@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Patch-Not-Set---Count\image_1.png)
+![Sample Run](../../../static/img/Patch-Not-Set---Count/image_1.png)
 
 #### Global Parameters
 
@@ -31,5 +31,6 @@ This script runs a SQL query to check for the patches count which has not been a
 ## Output
 
 - Script log
+
 
 

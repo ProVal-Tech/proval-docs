@@ -24,6 +24,7 @@ Turning this Custom Field "Yes" will exclude all the machines under that Site fr
 
 ## ScreenShot
 
-![ScreenShot](..\..\..\static\img\Site---Exclude-Threatlocker\image_1.png)
+![ScreenShot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)
+
 
 

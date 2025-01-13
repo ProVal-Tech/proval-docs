@@ -14,7 +14,7 @@ This script obtains the current agent PowerShell version. The script is supporte
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\PowerShell-Version-Audit\image_1.png)
+![Sample Run](../../../static/img/PowerShell-Version-Audit/image_1.png)
 
 ## Dependencies
 
@@ -41,5 +41,6 @@ This script runs a PowerShell query that is supported by all Windows OS and coll
 - Script log
 - Script state
 - Dataview
+
 
 

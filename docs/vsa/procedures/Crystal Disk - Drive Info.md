@@ -18,11 +18,11 @@ Gathers data pulled from the CrystalDiskInfo application.
 # VSA Implementation
 1. Create a custom field "Smart status" as a string prior to running the agent procedure.
 
-![Screenshot](..\..\..\static\img\Crystal-Disk---Drive-Info\image_1.png)
+![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_1.png)
 
 2. Import the procedure and set the variables within the agent procedure. There are comments describing the purpose and usage of these lines within the agent procedure. A screenshot of the relevant portion of the procedure has been provided below.
 
-![Screenshot](..\..\..\static\img\Crystal-Disk---Drive-Info\image_2.png)
+![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_2.png)
 
 3. Run the agent procedure and verify you see the drive information in the agent procedure log as well as the custom field updated.
 
@@ -38,13 +38,13 @@ Gathers data pulled from the CrystalDiskInfo application.
 Executes the CrystalDiskInfo application and stores the basic information for all disks into a custom object.
 
 ```
-$GetDiskInfo = .\Get-CrystalDiskInfo.ps1
+$GetDiskInfo = ./Get-CrystalDiskInfo.ps1
 ```
 
 Run the CrystalDiskInfo application with a threshold of 50 reallocated sectors. This way, the tool will only flag the disk as `caution` if the HDD has more than 50 reallocated sectors. Additionally, store the basic information for all disks in a custom object.
 
 ```
-$GetDiskInfo = .\Get-CrystalDiskInfo.ps1 -ReallocatedSector 50
+$GetDiskInfo = ./Get-CrystalDiskInfo.ps1 -ReallocatedSector 50
 ```
 
 # Parameters
@@ -57,8 +57,9 @@ $GetDiskInfo = .\Get-CrystalDiskInfo.ps1 -ReallocatedSector 50
 Location of output for log, result, and error files.
 
 ```
-$env:ProgramData\_automation\AgentProcedure\GetCrystalDiskInfo\Get-CriticalDiskInfo-log.txt
-$env:ProgramData\_automation\AgentProcedure\GetCrystalDiskInfo\Get-CriticalDiskInfo-error.txt
+$env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-log.txt
+$env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-error.txt
 ```
+
 
 

@@ -24,6 +24,7 @@ Holds the count of accounts with Duplicate passwords
 
 ## ScreenShot
 
-![Screenshot](..\..\..\static\img\Company---Duplicate-Password-Count\image_1.png)
+![Screenshot](../../../static/img/Company---Duplicate-Password-Count/image_1.png)
+
 
 

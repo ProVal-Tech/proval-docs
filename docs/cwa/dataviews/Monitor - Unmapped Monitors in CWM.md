@@ -32,3 +32,4 @@ ConnectWise Manage Plugin must be installed and configured with imported service
 | Work Type       | The work type the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
 
 
+

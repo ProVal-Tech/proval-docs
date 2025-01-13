@@ -91,6 +91,7 @@ WHERE (
 
 ## Ticketing
 
-![Ticketing Image](..\..\..\static\img\Bitlocker---OS-Volume-Encryption-Disabled\image_1.png)
+![Ticketing Image](../../../static/img/Bitlocker---OS-Volume-Encryption-Disabled/image_1.png)
+
 
 

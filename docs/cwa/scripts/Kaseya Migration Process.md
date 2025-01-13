@@ -18,11 +18,11 @@ Time Saved by Automation: 10 Minutes
 ## Sample Run
 
 Target: Windows Agent  
-![Image](..\..\..\static\img\Kaseya-Migration-Process\image_1.png)
+![Image](../../../static/img/Kaseya-Migration-Process/image_1.png)
 
 ## Dependencies
 
-A generic installer file for the target Kaseya instance uploaded to Bitbucket and copied to the LTShare in the \Transfer\Software directory.  
+A generic installer file for the target Kaseya instance uploaded to Bitbucket and copied to the LTShare in the /Transfer/Software directory.  
 Note: Lines 6 and 8 are disabled to remind you to do this before implementing.  
 All Group IDs must be created in Kaseya before running the script.  
 `@vsa-clientname.exe`
@@ -38,5 +38,6 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 Outputs fail/success to the script log in Automate.
+
 
 

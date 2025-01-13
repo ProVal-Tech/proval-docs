@@ -41,3 +41,4 @@ The script, [Create View plugin_proval_auto_approval_status*](https://proval.itg
 | Examined Characteristics - CVSS >                | varchar | CVSS score above which auto-approval of patches is applied.                                              |
 
 
+

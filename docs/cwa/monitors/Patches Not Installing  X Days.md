@@ -18,7 +18,7 @@ Alerting Tab:
 
 Subject: LT - Patches Not Installing > X Days on %computername%
 
-Alert on Failure: The machine %computername% at %clientname%\%locationname% is currently reporting that it has not installed a recent Cumulative Update for over X days. Please look into why this machine is not getting patches. The last Cumulative Update for this machine was installed on %Result%.
+Alert on Failure: The machine %computername% at %clientname%/%locationname% is currently reporting that it has not installed a recent Cumulative Update for over X days. Please look into why this machine is not getting patches. The last Cumulative Update for this machine was installed on %Result%.
 
 %FieldName%
 
@@ -26,12 +26,12 @@ Alert on Success: The machine %Computername% is no longer reporting it has faile
 
 NOTES:
 1. Adjustment to the sql must be made at AgentID = 'TYPE YOUR MONITOR ID HERE' to make this functional.
-   ![Image](..\..\..\static\img\Patches-Not-Installing--X-Days\image_1.png)
+   ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_1.png)
 2. To overwrite the default threshold of 45 days, following changes should be made:
    1. 45 in the INTERVAL 45 DAY statement at the bottom of the additional condition of the monitor set should be changed to the preferred number/day.
-      ![Image](..\..\..\static\img\Patches-Not-Installing--X-Days\image_2.png)
+      ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_2.png)
    2. In the Alerting tab, replace 45 with the desired threshold/day.
-      ![Image](..\..\..\static\img\Patches-Not-Installing--X-Days\image_3.png)
+      ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_3.png)
 
 ## Dependencies
 
@@ -58,5 +58,6 @@ SQL is limiting it to the machines with Managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
+
 
 

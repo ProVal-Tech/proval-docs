@@ -10,7 +10,7 @@ Get a detailed list of patches that are installed or available on the local mach
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-Update-Report-DV\image_1.png)
+![Sample Run](../../../static/img/Windows-Update-Report-DV/image_1.png)
 
 ## Dependencies
 
@@ -41,5 +41,6 @@ Step 7: Logging the Failure.
 - Script Log
 - Custom Table
 - Dataview
+
 
 

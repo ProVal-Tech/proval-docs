@@ -29,23 +29,23 @@ In the VSA there are a couple variables for this script.
 
 Within the SET VARIABLES section (Lines 9-17) there are three areas which can be customized.
 
-You can specify the XML file on line 12 if using managed files. Ensure the destination is `#directory#\\config.xml` or that the step is disabled if not specifying an XML file. Not specifying an XML will cause the script to use the XML settings shown in Line 4.
+You can specify the XML file on line 12 if using managed files. Ensure the destination is `#directory#//config.xml` or that the step is disabled if not specifying an XML file. Not specifying an XML will cause the script to use the XML settings shown in Line 4.
 
-The XMLPath needs to be specified. If you've disabled step 12, change this from `#directory#\\config.xml` to `0`.
+The XMLPath needs to be specified. If you've disabled step 12, change this from `#directory#//config.xml` to `0`.
 
 The final variable is whether or not to restart the machine after installation. This can be set via Y/N.
 
-![Image](..\..\..\static\img\Install-Microsoft365\image_1.png)
+![Image](../../../static/img/Install-Microsoft365/image_1.png)
 
 # Payload Usage
 ```
-PS C:\> Install-Microsoft365.ps1 
+PS C:/> Install-Microsoft365.ps1 
 # Installs Microsoft 365 Apps for Business with default configuration.
 
-PS C:\> Install-Microsoft365.ps1 -XMLPath "C:\Path\To\config.xml"
+PS C:/> Install-Microsoft365.ps1 -XMLPath "C:/Path/To/config.xml"
 # Installs Microsoft 365 using the specified local XML configuration file.
 
-PS C:\> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Restart 
+PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Restart 
 # Installs Microsoft 365 using the specified local XML configuration file.
 ```
 
@@ -58,8 +58,9 @@ PS C:\> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 **Output**  
 Location of output for log, result, and error files.
 ```
-.\Install-Microsoft365-log.txt
-.\Install-Microsoft365-error.txt
+./Install-Microsoft365-log.txt
+./Install-Microsoft365-error.txt
 ```
+
 
 

@@ -33,8 +33,9 @@ The ConnectWise Automate autofix script, CWM - Control - Script - CW Control - R
 - Import [CWM - Control - Script - CW Control - Repair [RMM+, Autofix, Globals]](https://proval.itglue.com/DOC-5078775-8216334) script.
 - Import/create the `△ CUSTOM - Autofix Action - Repair CW Control` alert template.
 - Schedule the [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status*](https://proval.itglue.com/DOC-5078775-9912233) script to run twice per day, suggested is Labtech Server group for on-prem partners and against the Domain Controller of the primary client for hosted partners.  
-  ![Schedule](..\..\static\img\Repair---CW-Control-Client\image_1.png)  
+  ![Schedule](../../static/img/Repair---CW-Control-Client/image_1.png)  
 - Update the run time of the [CWM - Control - Monitor - Agent - CW Control Needs Repair](https://proval.itglue.com/DOC-5078775-7936293) monitor set to run after 20-30 minutes of the scheduled script run.  
-  ![Update Run Time](..\..\static\img\Repair---CW-Control-Client\image_2.png)  
+  ![Update Run Time](../../static/img/Repair---CW-Control-Client/image_2.png)  
+
 
 

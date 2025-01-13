@@ -37,12 +37,13 @@ It is a State based monitor and the WARNING state indicates the PowerShell failu
 ## Screenshots
 
 **Status Tab:**  
-![Status Tab](..\..\..\static\img\Incorrect-Drive-Inventory\image_1.png)
+![Status Tab](../../../static/img/Incorrect-Drive-Inventory/image_1.png)
 
 **Alerting Tab:**  
-![Alerting Tab](..\..\..\static\img\Incorrect-Drive-Inventory\image_2.png)
+![Alerting Tab](../../../static/img/Incorrect-Drive-Inventory/image_2.png)
 
 **Configuration Tab:**  
-![Configuration Tab](..\..\..\static\img\Incorrect-Drive-Inventory\image_3.png)
+![Configuration Tab](../../../static/img/Incorrect-Drive-Inventory/image_3.png)
+
 
 

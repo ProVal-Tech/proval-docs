@@ -14,7 +14,7 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Script---Uninstall-N-Able\image_1.png)
+![Sample Run](../../../static/img/Script---Uninstall-N-Able/image_1.png)
 
 ## Dependencies
 
@@ -24,8 +24,8 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 | Name             | Description                                                                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ProjectName      | This contains the agnostic ps1 name and sets that as a project and working directory to C:\ProgramData\_Automation\Script\@ProjectName@.                     |
-| WorkingDirectory  | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:\ProgramData\_Automation\Script\@ProjectName@".   |
+| ProjectName      | This contains the agnostic ps1 name and sets that as a project and working directory to C:/ProgramData/_Automation/Script/@ProjectName@.                     |
+| WorkingDirectory  | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:/ProgramData/_Automation/Script/@ProjectName@".   |
 | PS1Log           | This stores the PowerShell informational logs for validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-log.txt.           |
 | PS1ErrorLog      | This contains the PowerShell Error logs for the validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-error.txt.          |
 | ErrorLog         | This contains the content of the error log file i.e. @ProjectName@-error.txt.                                                                                 |
@@ -34,5 +34,6 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 - Script log
 - Local file on the computer
+
 
 

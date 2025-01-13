@@ -17,7 +17,7 @@ This dataview is intended to provide statistics regarding the Windows 10 - Featu
 1. The Script Windows 10 - Feature Update - Latest must be used to push the most recent feature update.
 2. The Group Windows 10 - Upgrade Pending Reports must have the remote monitor (Application - Event 6501 - Provider Update-Windows10-PS) configured with an autofix action calling the script (Windows 10 Update Stats - Retrieve) on error every day all day (See Below). This should be configured within one hour of running the Windows 10 - Feature Update - Latest script for the first time.
 
-![Image](..\..\..\static\img\Windows-10---Feature-Update---Latest---Stats\image_1.png)
+![Image](../../../static/img/Windows-10---Feature-Update---Latest---Stats/image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,6 @@ This dataview is intended to provide statistics regarding the Windows 10 - Featu
 | Success Count      | Displays the total times the Windows 10 Feature Update - Latest script was run and returned a Successful result for this version. |
 | Failure Count      | Displays the total times the Windows 10 Feature Update - Latest script was run and returned a failed result for this version. |
 | Total Attempts      | Displays the total times the Windows 10 Feature update attempted to push that Windows version on the specific computer. |
+
 
 

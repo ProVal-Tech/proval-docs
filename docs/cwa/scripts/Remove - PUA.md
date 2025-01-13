@@ -14,37 +14,37 @@ A CWA implementation of the agnostic script [Remove-PUA](https://proval.itglue.c
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_Automation\script\Remove-PUA\Manage-OverFlowedVariable.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Remove-PUA/Manage-OverFlowedVariable.ps1`  
 **File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
 **File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
-**File Path:** `C:\ProgramData\_Automation\script\Remove-PUA\Remove-PUA-AI.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Remove-PUA/Remove-PUA-AI.ps1`  
 **File Hash (Sha256):** `EAAB382CA77CA8FD229655E8D0D5C6886B7BA98E46B3061A9038BF06336C3B5F`  
 **File Hash (MD5):** `397F58E10753F16DB925B599A7AA9F09`  
 
-**File Path:** `C:\ProgramData\_Automation\script\Remove-PUA\Remove-PUA.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Remove-PUA/Remove-PUA.ps1`  
 **File Hash (Sha256):** `92BE1EB0A4480C2C6045F541539ABC7D58C114DE7DA186628632AE53C0D50E59`  
 **File Hash (MD5):** `7889293F23B73B76D95B8B533E1455DD`  
 
 ## Sample Run
 
 To fetch the list of installed Bloatware into the [Bloatware Audit](https://proval.itglue.com/DOC-5078775-17775281) dataview:  
-![Sample Run 1](..\..\..\static\img\Remove---PUA\image_1.png)
+![Sample Run 1](../../../static/img/Remove---PUA/image_1.png)
 
 To fetch the list of installed Bloatware and email it to the user running the script:  
-![Sample Run 2](..\..\..\static\img\Remove---PUA\image_2.png)
+![Sample Run 2](../../../static/img/Remove---PUA/image_2.png)
 
 To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
-![Sample Run 3](..\..\..\static\img\Remove---PUA\image_3.png)
+![Sample Run 3](../../../static/img/Remove---PUA/image_3.png)
 
 To remove all installed Bloatware supported by the script:  
-![Sample Run 4](..\..\..\static\img\Remove---PUA\image_4.png)
+![Sample Run 4](../../../static/img/Remove---PUA/image_4.png)
 
 To remove all xboxfeatureapps, except xboxGameOverlay:  
-![Sample Run 5](..\..\..\static\img\Remove---PUA\image_5.png)
+![Sample Run 5](../../../static/img/Remove---PUA/image_5.png)
 
 To remove all installed Bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
-![Sample Run 6](..\..\..\static\img\Remove---PUA\image_6.png)
+![Sample Run 6](../../../static/img/Remove---PUA/image_6.png)
 
 ## Dependencies
 
@@ -66,10 +66,10 @@ To remove all installed Bloatware supported by the script except `Microsoft.Bing
 The script is designed to send the list of installed Bloatware to the user running the script if the `ListBloatware` parameter is set to `2`.
 
 **Sample Email:**  
-![Sample Email](..\..\..\static\img\Remove---PUA\image_7.png)
+![Sample Email](../../../static/img/Remove---PUA/image_7.png)
 
 **Sample CSV File:**  
-**![Sample CSV](..\..\..\static\img\Remove---PUA\image_8.png)**
+**![Sample CSV](../../../static/img/Remove---PUA/image_8.png)**
 
 ## Output
 
@@ -117,5 +117,6 @@ The script is designed to send the list of installed Bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
+
 
 

@@ -14,7 +14,7 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Microsoft-OneDrive-Sync-Status-DV\image_1.png)
+![Sample Run](../../../static/img/Microsoft-OneDrive-Sync-Status-DV/image_1.png)
 
 ## Dependencies
 
@@ -25,20 +25,21 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 | Name      | Default                                             | Required | Description                                          |
 |-----------|----------------------------------------------------|----------|------------------------------------------------------|
-| ODFolder  | C:\Windows\LTSvc\Packages\ODFolder                 | True     | Path to write and execute the PowerShell script.    |
-| ODFile    | C:\Windows\LTSvc\Packages\ODFolder\ODFile.ps1     | True     | Full path of the PowerShell script.                  |
+| ODFolder  | C:/Windows/LTSvc/Packages/ODFolder                 | True     | Path to write and execute the PowerShell script.    |
+| ODFile    | C:/Windows/LTSvc/Packages/ODFolder/ODFile.ps1     | True     | Full path of the PowerShell script.                  |
 
 #### Script States
 
 | Name                          | Example                                                                                                                                                        | Description                                                             |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| OneDriveSyncStatus            | "Sync Status for "ramkishor" for "C:\Users\ramkishor\OneDrive\Desktop" is "Synced"; "Sync Status for "ramkishor" for "C:\Users\ramkishor\OneDrive\Documents" is "Synced"; "Sync Status for "ramkishor" for "C:\Users\ramkishor\OneDrive\Picture" is "Not Synced"; | Stores the result returned by the PowerShell script checking the OneDrive status on the endpoint. |
+| OneDriveSyncStatus            | "Sync Status for "ramkishor" for "C:/Users/ramkishor/OneDrive/Desktop" is "Synced"; "Sync Status for "ramkishor" for "C:/Users/ramkishor/OneDrive/Documents" is "Synced"; "Sync Status for "ramkishor" for "C:/Users/ramkishor/OneDrive/Picture" is "Not Synced"; | Stores the result returned by the PowerShell script checking the OneDrive status on the endpoint. |
 | OneDriveSyncStatusScriptruntime | 2023-10-26 11:51:02                                                                                                                                         | Stores the data collection time                                       |
 
 ## Output
 
 - Script log
 - Script states
+
 
 
 

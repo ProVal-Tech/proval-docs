@@ -35,3 +35,4 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 | datetime                     | datetime    | Data Collection Time from the endpoint                                                          |
 
 
+

@@ -27,26 +27,27 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_1.png)
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_2.png)  
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_2.png)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_3.png)
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_3.png)
 
 3. Set the group name to `DUO Auth for Windows Login Failed`  
    Description: `This group records the agents where the "DUO Install & Upgrade - Latest Version" failed to deploy the "DUO Auth for Windows Login" application.`  
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_4.png)
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_5.png)  
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_5.png)  
    This search box will appear.  
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_6.png)
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_6.png)
 
 5. - Search and select the `Duo Deployment Result` custom field from the search box.
    - Set `Failed` in the comparison condition.  
-   ![Image](..\..\..\static\img\DUO-Auth-for-Windows-Login-Failed\image_7.png)  
+   ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Failed`
+
 
 
 

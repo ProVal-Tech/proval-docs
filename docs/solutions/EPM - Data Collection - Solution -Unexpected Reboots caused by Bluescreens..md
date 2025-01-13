@@ -28,7 +28,7 @@ The Unexpected restart monitor creates a lot of noise as a lot of the time the s
 
 1. Look through your automate groups and find the id of the group you wish to monitor for bluescreens.
 2. Using any computer, Run the [EPM - Data Collection - Script - Remote Event Log Monitor - Create](https://proval.itglue.com/DOC-5078775-9742626) script with the groupId set to that ID, the logtype set to System, and the eventid set to 41,6008  
-   ![Image](..\..\static\img\EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens.\image_1.png)
+   ![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens./image_1.png)
 3. Import the [EPM - Data Collection - Script - Get-CrashDump](https://proval.itglue.com/DOC-5078775-11956458) script.
 
 ### Alert Template Setup
@@ -43,9 +43,9 @@ The Unexpected restart monitor creates a lot of noise as a lot of the time the s
 8. Hit Save.
 9. Hit Save and Close.
 
-![Image](..\..\static\img\EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens.\image_2.png)
+![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens./image_2.png)
 
-![Image](..\..\static\img\EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens.\image_3.png)
+![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens./image_3.png)
 
 ### Adding the alert to the monitor
 
@@ -55,9 +55,10 @@ The Unexpected restart monitor creates a lot of noise as a lot of the time the s
 4. Look for a monitor named System - Event 41,8006 click on it once.
 5. Modify the Alert template to be the template you created in the prior step.
 
-![Image](..\..\static\img\EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens.\image_4.png)
+![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens./image_4.png)
 
 ## FAQ
+
 
 
 

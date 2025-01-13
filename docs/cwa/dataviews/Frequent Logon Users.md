@@ -30,3 +30,4 @@ This dataview stores the logonusername, logonusercount, and script run date data
 | Script Ran Date               | Script last ran date to show when the last user was detected.                                                       |
 
 
+

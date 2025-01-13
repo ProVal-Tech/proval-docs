@@ -20,9 +20,9 @@ The group contains the Infrastructure Masters.
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Infrastructure-Master\image_1.png)
+![Screenshot 1](../../../static/img/Infrastructure-Master/image_1.png)
 
-![Screenshot 2](..\..\..\static\img\Infrastructure-Master\image_2.png)
+![Screenshot 2](../../../static/img/Infrastructure-Master/image_2.png)
 
 ## Group
 
@@ -30,5 +30,6 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure masters
 - Select `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator and type `Yes` in the condition box.
 - Click `Save` button at the top left to create the group.
+
 
 

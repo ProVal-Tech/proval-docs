@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Power-Management---No-Sleep-on-AC-Power\image_1.png)
+![Sample Run](../../../static/img/Power-Management---No-Sleep-on-AC-Power/image_1.png)
 
 ## Dependencies
 
@@ -28,12 +28,12 @@ Time Saved by Automation: 5 Minutes
 |-----------------------|-------------------------------------------------------------------------------------------------------|
 | ProjectName           | This represents the name of the executable and in this case, it will be NeverSleepAC.               |
 | BaseURL               | This represents the base URL and it will be [https://file.provaltech.com/repo](https://file.provaltech.com/repo) in this case. |
-| WorkingDirectory       | C:\ProgramData\provaltech\app\@ProjectName@                                                           |
+| WorkingDirectory       | C:/ProgramData/provaltech/app/@ProjectName@                                                           |
 | EXEURL                | @BaseURL@/app/@ProjectName@.exe                                                                      |
-| EXEPath               | @WorkingDirectory@\@ProjectName@.exe                                                                  |
-| EXETempPath           | @WorkingDirectory@\@ProjectName@-temp.exe                                                             |
-| EXELog                | @WorkingDirectory@\@ProjectName@-log.txt                                                              |
-| EXEErrorLog           | @WorkingDirectory@\@ProjectName@-errors.txt                                                           |
+| EXEPath               | @WorkingDirectory@/@ProjectName@.exe                                                                  |
+| EXETempPath           | @WorkingDirectory@/@ProjectName@-temp.exe                                                             |
+| EXELog                | @WorkingDirectory@/@ProjectName@-log.txt                                                              |
+| EXEErrorLog           | @WorkingDirectory@/@ProjectName@-errors.txt                                                           |
 | LogContent            | @EXELog@                                                                                              |
 
 ## Process
@@ -49,6 +49,7 @@ The script will download the EXE file and will execute it.
 ## Output
 
 - Script log
+
 
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Move-Agent-to-Retired-Assets-and-Create-Ticket\image_1.png)
+![Sample Run](../../../static/img/Move-Agent-to-Retired-Assets-and-Create-Ticket/image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 

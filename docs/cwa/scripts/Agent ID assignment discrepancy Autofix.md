@@ -14,10 +14,10 @@ This script will reinstall the Automate agent for the machines which are checkin
 
 Also, it will work reliably only for the customers where Mac Signup Matching is not enabled.
 
-![Image](..\..\..\static\img\Agent-ID-assignment-discrepancy-Autofix\image_1.png)
+![Image](../../../static/img/Agent-ID-assignment-discrepancy-Autofix/image_1.png)
 
 Sample Ticket:  
-![Image](..\..\..\static\img\Agent-ID-assignment-discrepancy-Autofix\image_2.png)
+![Image](../../../static/img/Agent-ID-assignment-discrepancy-Autofix/image_2.png)
 
 ## How To Use
 
@@ -62,5 +62,6 @@ Step 4: Create/comment ticket for failure and to finish any open ticket for succ
 
 - Ticket
 - Script logs
+
 
 

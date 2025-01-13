@@ -22,12 +22,12 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | **REDACTED**  | State Based | 3600     | ![Result Image](..\..\..\static\img\Mega-RAID-Errors\image_1.png) |
+| System       | 127.0.0.1      | Run File    | **REDACTED**  | State Based | 3600     | ![Result Image](../../../static/img/Mega-RAID-Errors/image_1.png) |
 
 ## Target
 
 Managed Windows Servers  
-![Target Image](..\..\..\static\img\Mega-RAID-Errors\image_2.png)
+![Target Image](../../../static/img/Mega-RAID-Errors/image_2.png)
 
 ## Implementation
 
@@ -35,14 +35,15 @@ Managed Windows Servers
 
 ## Ticketing
 
-**Subject:** `<code>Mega Raid Error Detected on %CLIENTNAME%\\%COMPUTERNAME%</code>`  
+**Subject:** `<code>Mega Raid Error Detected on %CLIENTNAME%//%COMPUTERNAME%</code>`  
 
 **Body:**  
-`Mega Raid Error Detected on %CLIENTNAME%\\%COMPUTERNAME%.`  
+`Mega Raid Error Detected on %CLIENTNAME%//%COMPUTERNAME%.`  
 `Details:`  
 `%RESULT%`  
 
 **Sample RESULT:**  
-![Sample Result Image](..\..\..\static\img\Mega-RAID-Errors\image_3.png)
+![Sample Result Image](../../../static/img/Mega-RAID-Errors/image_3.png)
+
 
 

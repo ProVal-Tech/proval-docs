@@ -15,17 +15,17 @@ Performs much of the Kaseya Onboarding Audit, outputs to an excel spreadsheet in
 # Requirements
 
 Requires an API User account with Both REST and DataWarehouse access configured in the VSA.  
-On-Prem Audit requires IP whitelisting to access. In lieu of whitelisting, the script can be run on the client's VSA server via the Agent Procedure "Shared\ProVal Content Repository\Vsa\Onboarding Audit." Implementation instructions for this procedure are located at [https://proval.itglue.com/5078775/docs/9739268](https://proval.itglue.com/5078775/docs/9739268).  
+On-Prem Audit requires IP whitelisting to access. In lieu of whitelisting, the script can be run on the client's VSA server via the Agent Procedure "Shared/ProVal Content Repository/Vsa/Onboarding Audit." Implementation instructions for this procedure are located at [https://proval.itglue.com/5078775/docs/9739268](https://proval.itglue.com/5078775/docs/9739268).  
 REST API requires a NATIVE VSA user. If 'UserName must be an email address' is enabled in System > Configuration > Default Settings, this must be temporarily disabled during API account creation.
 
 # Process
 
 Uses VSAAPI to perform the following REST API Requests and saves the results in CSV format in the 'CSVs' subfolder if data was returned.
-- System\Users
-- System\Roles
-- System\Scopes
-- Automation\AgentProcs
-- Assetmgmt\Agents
+- System/Users
+- System/Roles
+- System/Scopes
+- Automation/AgentProcs
+- Assetmgmt/Agents
 
 Uses VSAAPI to perform the following Data Warehouse API Requests and saves the results in CSV format in the 'CSVs' subfolder if data was returned.
 - DiscoveryActiveDirectoryDomainSummary
@@ -80,27 +80,28 @@ Requires all parameters. API Account must be configured in VSA prior to running,
 Location of output for log, result, and error files.
 
 ```
-.\Get-VSAAuditReports-log.txt
-.\Get-VSAAuditReports-error.txt
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\AuditResults.xlsx
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\AgentProcedures.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\Agents.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\discoveryDomainList.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\discoveryLanWatchNetworks.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\LanCacheAssignments.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\MachineGroups.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\MonitorEventSetAgentAssignments.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\MonitorSetAgentAssignments.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\MonitorSNMPSetAgentAssignments.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\PatchConfigurations.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\Patches.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\PatchPolicyMembers.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\Roles.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\Scopes.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\SoftwareManagementAlertProfiles.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\SoftwareManagementByAgentStats.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\SoftwareManagementDeploymentProfiles.csv
-$env:ProgramData\_automation\StackContent\$ClientName\Audit\CSVs\Users.csv
+./Get-VSAAuditReports-log.txt
+./Get-VSAAuditReports-error.txt
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/AuditResults.xlsx
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/AgentProcedures.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Agents.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/discoveryDomainList.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/discoveryLanWatchNetworks.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/LanCacheAssignments.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/MachineGroups.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/MonitorEventSetAgentAssignments.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/MonitorSetAgentAssignments.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/MonitorSNMPSetAgentAssignments.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/PatchConfigurations.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Patches.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/PatchPolicyMembers.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Roles.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Scopes.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementAlertProfiles.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementByAgentStats.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementDeploymentProfiles.csv
+$env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Users.csv
 ```
+
 
 

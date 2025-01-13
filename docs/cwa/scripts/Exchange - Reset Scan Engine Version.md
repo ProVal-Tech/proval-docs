@@ -14,7 +14,7 @@ This script resolves the stuck e-mail issue in Microsoft Exchange based on the f
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Exchange---Reset-Scan-Engine-Version\image_1.png)
+![Sample Run](../../../static/img/Exchange---Reset-Scan-Engine-Version/image_1.png)
 
 ## Dependencies
 
@@ -43,12 +43,12 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 **Remove existing engine and metadata**  
 1. Stop the Microsoft Filtering Management service. When prompted to also stop the Microsoft Exchange Transport service, click Yes.  
 2. Use Task Manager to ensure that `updateservice.exe` is not running.  
-3. Delete the following folder: `%ProgramFiles%\Microsoft\Exchange Server\V15\FIP-FS\Data\Engines\amd64\Microsoft.`  
-4. Remove all files from the following folder: `%ProgramFiles%\Microsoft\Exchange Server\V15\FIP-FS\Data\Engines\metadata.`
+3. Delete the following folder: `%ProgramFiles%/Microsoft/Exchange Server/V15/FIP-FS/Data/Engines/amd64/Microsoft.`  
+4. Remove all files from the following folder: `%ProgramFiles%/Microsoft/Exchange Server/V15/FIP-FS/Data/Engines/metadata.`
 
 **Update to latest engine**  
 1. Start the Microsoft Filtering Management service and the Microsoft Exchange Transport service.  
-2. Open the Exchange Management Shell, navigate to the Scripts folder (`%ProgramFiles%\Microsoft\Exchange Server\V15\Scripts`), and run *Update-MalwareFilteringServer.ps1 <server FQDN>*.
+2. Open the Exchange Management Shell, navigate to the Scripts folder (`%ProgramFiles%/Microsoft/Exchange Server/V15/Scripts`), and run *Update-MalwareFilteringServer.ps1 <server FQDN>*.
 
 **Verify engine update info**  
 1. In the Exchange Management Shell, run *Add-PSSnapin [Microsoft.Forefront.Filtering.Management](http://microsoft.Forefront.Filtering.Management).Powershell*.  
@@ -58,5 +58,6 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
+
 
 

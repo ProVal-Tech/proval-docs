@@ -35,3 +35,4 @@ This dataview stores the result of the threatlocker learning mode setting done v
 | LearningMode Log Record    | This stores the learning mode logs of success or failure.                                                 |
 
 
+

@@ -14,9 +14,9 @@ Removes the provided path(s) from the Environmental Path variable for a Path at 
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Remove-Path-Variable\image_1.png)  
-![Sample Run 2](..\..\..\static\img\Remove-Path-Variable\image_2.png)  
-![Sample Run 3](..\..\..\static\img\Remove-Path-Variable\image_3.png)  
+![Sample Run 1](../../../static/img/Remove-Path-Variable/image_1.png)  
+![Sample Run 2](../../../static/img/Remove-Path-Variable/image_2.png)  
+![Sample Run 3](../../../static/img/Remove-Path-Variable/image_3.png)  
 
 ## Dependencies
 
@@ -26,22 +26,22 @@ Removes the provided path(s) from the Environmental Path variable for a Path at 
 
 | Name  | Example                                                                 | Required | Type        | Description                                                                                                      |
 |-------|-------------------------------------------------------------------------|----------|-------------|------------------------------------------------------------------------------------------------------------------|
-| Path  | - 'C:\\Temp' <br>- 'C:\\Temp', 'C:\\Temp\\ProgramData', 'D:\\Text Files' | True     | Text String | Comma Separated list of the path(s) to add to the path variable.<br>**Requirement:** <br>- Each path should be enclosed between single quotes. <br>- Path should exist on the end machine. |
+| Path  | - 'C://Temp' <br>- 'C://Temp', 'C://Temp//ProgramData', 'D://Text Files' | True     | Text String | Comma Separated list of the path(s) to add to the path variable.<br>**Requirement:** <br>- Each path should be enclosed between single quotes. <br>- Path should exist on the end machine. |
 
-![User Parameters Image](..\..\..\static\img\Remove-Path-Variable\image_4.png)
+![User Parameters Image](../../../static/img/Remove-Path-Variable/image_4.png)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](..\..\..\static\img\Remove-Path-Variable\image_5.png)  
-![Task Creation Image 2](..\..\..\static\img\Remove-Path-Variable\image_6.png)  
+![Task Creation Image 1](../../../static/img/Remove-Path-Variable/image_5.png)  
+![Task Creation Image 2](../../../static/img/Remove-Path-Variable/image_6.png)  
 
 **Name:** `Remove Path Variable`  
 **Description:** `Removes the provided path(s) from the Environmental Path variable for a Path at the Machine scope.`  
 **Category:** `Custom`  
 
-![Task Creation Image 3](..\..\..\static\img\Remove-Path-Variable\image_7.png)  
+![Task Creation Image 3](../../../static/img/Remove-Path-Variable/image_7.png)  
 
 ## Parameters
 
@@ -49,43 +49,43 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](..\..\..\static\img\Remove-Path-Variable\image_8.png)  
+![Add Parameter Image](../../../static/img/Remove-Path-Variable/image_8.png)  
 
 This screen will appear.  
-![Parameter Screen Image](..\..\..\static\img\Remove-Path-Variable\image_9.png)  
+![Parameter Screen Image](../../../static/img/Remove-Path-Variable/image_9.png)  
 
 - Set `Path` in the `Parameter Name` field.
 - Enable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Parameter Setup Image](..\..\..\static\img\Remove-Path-Variable\image_10.png)  
+![Parameter Setup Image](../../../static/img/Remove-Path-Variable/image_10.png)  
 
 ## Task Creation
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](..\..\..\static\img\Remove-Path-Variable\image_11.png)  
+![Add Row Image](../../../static/img/Remove-Path-Variable/image_11.png)  
 
 A blank function will appear.  
-![Blank Function Image](..\..\..\static\img\Remove-Path-Variable\image_12.png)  
+![Blank Function Image](../../../static/img/Remove-Path-Variable/image_12.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![PowerShell Function Image 1](..\..\..\static\img\Remove-Path-Variable\image_13.png)  
-![PowerShell Function Image 2](..\..\..\static\img\Remove-Path-Variable\image_14.png)  
+![PowerShell Function Image 1](../../../static/img/Remove-Path-Variable/image_13.png)  
+![PowerShell Function Image 2](../../../static/img/Remove-Path-Variable/image_14.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Function Image 3](..\..\..\static\img\Remove-Path-Variable\image_15.png)  
+![PowerShell Function Image 3](../../../static/img/Remove-Path-Variable/image_15.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```
 #region parameters
 $Path = "@Path@"
-if ( $path -match ':\\' ) {
+if ( $path -match '://' ) {
     $Path = $($Path -split ',').Trim()
 } else {
     throw 'Invalid path.'
@@ -99,11 +99,11 @@ $ProjectName = 'Remove-PathVariable'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -137,34 +137,35 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Row 1 Function Image](..\..\..\static\img\Remove-Path-Variable\image_16.png)  
+![Row 1 Function Image](../../../static/img/Remove-Path-Variable/image_16.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Image 2](..\..\..\static\img\Remove-Path-Variable\image_17.png)  
+![Add Row Image 2](../../../static/img/Remove-Path-Variable/image_17.png)  
 
 A blank function will appear.  
-![Blank Function Image 2](..\..\..\static\img\Remove-Path-Variable\image_18.png)  
+![Blank Function Image 2](../../../static/img/Remove-Path-Variable/image_18.png)  
 
 Search and select the `Script Log` function.  
-![Script Log Function Image](..\..\..\static\img\Remove-Path-Variable\image_19.png)  
+![Script Log Function Image](../../../static/img/Remove-Path-Variable/image_19.png)  
 
 The following function will pop up on the screen:  
-![Script Log Function Image 2](..\..\..\static\img\Remove-Path-Variable\image_20.png)  
+![Script Log Function Image 2](../../../static/img/Remove-Path-Variable/image_20.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Save Script Log Image](..\..\..\static\img\Remove-Path-Variable\image_21.png)  
+![Save Script Log Image](../../../static/img/Remove-Path-Variable/image_21.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script Image](..\..\..\static\img\Remove-Path-Variable\image_22.png)  
+![Save Script Image](../../../static/img/Remove-Path-Variable/image_22.png)  
 
 ## Completed Task
 
-![Completed Task Image](..\..\..\static\img\Remove-Path-Variable\image_23.png)  
+![Completed Task Image](../../../static/img/Remove-Path-Variable/image_23.png)  
 
 ## Output
 
 - Script log
+
 
 

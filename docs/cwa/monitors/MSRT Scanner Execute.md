@@ -27,7 +27,7 @@ Windows 10, 11, 2016, 2019, and 2022 only where the client EDF 'MSRT Scanner Ena
 Microsoft Malicious Software Removal Tool ScanReport Audit Report of %computername%
 
 **Body**  
-MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%\\%locationname%. Refer to the below logs:  
+MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the below logs:  
 @ScanResult@
 
 OR
@@ -36,7 +36,8 @@ ScanResult couldn't able to generate properly.
 
 OR  
 
-MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%\\%locationname%. Refer to the below logs:  
+MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the below logs:  
 @ScanResult@. The Autofix extended scan of the computer and automatically cleans any infections that are found is scheduled.
+
 
 

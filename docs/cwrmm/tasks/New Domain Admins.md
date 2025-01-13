@@ -20,8 +20,8 @@ Task has been updated to create a ticket. Therefore, the `New Domain Admins` mon
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\New-Domain-Admins\image_16.png)  
-![Sample Run 2](..\..\..\static\img\New-Domain-Admins\image_17.png)  
+![Sample Run 1](../../../static/img/New-Domain-Admins/image_16.png)  
+![Sample Run 2](../../../static/img/New-Domain-Admins/image_17.png)  
 
 ## Dependencies
 
@@ -45,25 +45,25 @@ Create the Custom Field [CW RMM - Custom Field - New Domain Admins](https://prov
 
 Create a new "Script Editor" style script in the system to implement this Task.
 
-![Create Script](..\..\..\static\img\New-Domain-Admins\image_18.png)  
-![Script Editor](..\..\..\static\img\New-Domain-Admins\image_19.png)  
+![Create Script](../../../static/img/New-Domain-Admins/image_18.png)  
+![Script Editor](../../../static/img/New-Domain-Admins/image_19.png)  
 
 **Name:** New Domain Admins  
 **Description:** The task involves the execution of a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task.  
 **Category:** Custom  
 
-![Script Category](..\..\..\static\img\New-Domain-Admins\image_20.png)  
+![Script Category](../../../static/img/New-Domain-Admins/image_20.png)  
 
 ### Script
 
 Start by adding a row. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_21.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_21.png)  
 
 #### Row 1 Function: PowerShell Script
 
-![PowerShell Function](..\..\..\static\img\New-Domain-Admins\image_22.png)  
-![PowerShell Function 2](..\..\..\static\img\New-Domain-Admins\image_23.png)  
+![PowerShell Function](../../../static/img/New-Domain-Admins/image_22.png)  
+![PowerShell Function 2](../../../static/img/New-Domain-Admins/image_23.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. This PowerShell function will validate whether the endpoint is a domain controller or not.
 
@@ -78,45 +78,45 @@ if ( $check -in ( 4,5 ) ) {
 }
 ```
 
-![Validation](..\..\..\static\img\New-Domain-Admins\image_24.png)  
+![Validation](../../../static/img/New-Domain-Admins/image_24.png)  
 
 #### Row 2 Logic: If Then
 
-![If Then Logic](..\..\..\static\img\New-Domain-Admins\image_25.png)  
-![If Then Logic 2](..\..\..\static\img\New-Domain-Admins\image_26.png)  
+![If Then Logic](../../../static/img/New-Domain-Admins/image_25.png)  
+![If Then Logic 2](../../../static/img/New-Domain-Admins/image_26.png)  
 
 ##### Row 2a Condition: Output Does Not Contain
 
 Click the dropdown `Contains` and select `Does Not Contain` and enter `domain controller` in the text box.
 
-![Output Condition](..\..\..\static\img\New-Domain-Admins\image_27.png)  
+![Output Condition](../../../static/img/New-Domain-Admins/image_27.png)  
 
 ##### Row 2b Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_28.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_28.png)  
 
 Select `Script Exit` Function.
 
-![Script Exit](..\..\..\static\img\New-Domain-Admins\image_29.png)  
+![Script Exit](../../../static/img/New-Domain-Admins/image_29.png)  
 
 Add this message to the `Error Message` field that will appear after selecting the `Script Exit` function.
 
 **Error Message:** This script is designed to work for a domain controller only.
 
-![Error Message](..\..\..\static\img\New-Domain-Admins\image_30.png)  
-![Error Message 2](..\..\..\static\img\New-Domain-Admins\image_31.png)  
+![Error Message](../../../static/img/New-Domain-Admins/image_30.png)  
+![Error Message 2](../../../static/img/New-Domain-Admins/image_31.png)  
 
 #### Row 3 Function: PowerShell Script
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_28.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_28.png)  
 
 Select `PowerShell Script` function.
 
-![PowerShell Script](..\..\..\static\img\New-Domain-Admins\image_22.png)  
-![PowerShell Script 2](..\..\..\static\img\New-Domain-Admins\image_23.png)  
+![PowerShell Script](../../../static/img/New-Domain-Admins/image_22.png)  
+![PowerShell Script 2](../../../static/img/New-Domain-Admins/image_23.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -153,98 +153,98 @@ if (!$previousDomainAdmins) {
 $adminGroupMembers | Write-StoredObject -TableName $adminTableName -Clobber -WarningAction SilentlyContinue -Depth 2
 ```
 
-![Admin Table](..\..\..\static\img\New-Domain-Admins\image_32.png)  
+![Admin Table](../../../static/img/New-Domain-Admins/image_32.png)  
 
 #### Row 4 Function: Set Custom Field
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_28.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_28.png)  
 
 Select `Set Custom Field` Function.
 
-![Set Custom Field](..\..\..\static\img\New-Domain-Admins\image_33.png)  
+![Set Custom Field](../../../static/img/New-Domain-Admins/image_33.png)  
 
 When you select `set custom field`, that will open up a new window.
 
-![Custom Field Window](..\..\..\static\img\New-Domain-Admins\image_34.png)  
+![Custom Field Window](../../../static/img/New-Domain-Admins/image_34.png)  
 
 In this window, search for `New Domain Admins` field.
 
 **Custom Field:** Crystal Disk Info_Disk Health  
 **Value:** Virtual Machine - Crystal Disk Not Eligible  
 
-![Set Custom Field](..\..\..\static\img\New-Domain-Admins\image_35.png)  
+![Set Custom Field](../../../static/img/New-Domain-Admins/image_35.png)  
 
 #### Row 5 function: Script Log
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_28.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_28.png)  
 
 Select `Script Log` function.
 
-![Script Log](..\..\..\static\img\New-Domain-Admins\image_36.png)  
+![Script Log](../../../static/img/New-Domain-Admins/image_36.png)  
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Message](..\..\..\static\img\New-Domain-Admins\image_37.png)  
-![Script Log Message 2](..\..\..\static\img\New-Domain-Admins\image_38.png)  
+![Script Log Message](../../../static/img/New-Domain-Admins/image_37.png)  
+![Script Log Message 2](../../../static/img/New-Domain-Admins/image_38.png)  
 
 #### Row 6 Logic: If Then
 
-![If Then Logic](..\..\..\static\img\New-Domain-Admins\image_25.png)  
-![If Then Logic 2](..\..\..\static\img\New-Domain-Admins\image_26.png)  
+![If Then Logic](../../../static/img/New-Domain-Admins/image_25.png)  
+![If Then Logic 2](../../../static/img/New-Domain-Admins/image_26.png)  
 
 ##### Row 2a Condition: Output Contains
 
 Click the dropdown `Contains` and select `Contain` and enter `New Domain admin(s):` in the text box.
 
-![Output Condition](..\..\..\static\img\New-Domain-Admins\image_39.png)  
+![Output Condition](../../../static/img/New-Domain-Admins/image_39.png)  
 
 ##### Row 2b Function: Set Pre-defined Variable
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_40.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_40.png)  
 
 Select `Set Pre-defined Variable` Function.
 
-![Set Pre-defined Variable](..\..\..\static\img\New-Domain-Admins\image_41.png)  
+![Set Pre-defined Variable](../../../static/img/New-Domain-Admins/image_41.png)  
 
 This pop-up box will appear.
 
-![Pop-up Box](..\..\..\static\img\New-Domain-Admins\image_42.png)  
+![Pop-up Box](../../../static/img/New-Domain-Admins/image_42.png)  
 
 Select the `System Variable` button, set `Computer` for the `Variable Name` and `friendlyName` for the `System Variable`. `friendlyName` can be found in the `Asset` section. Click the `Save` button to save changes.  
 
-![Save Changes](..\..\..\static\img\New-Domain-Admins\image_43.png)  
-![Save Changes 2](..\..\..\static\img\New-Domain-Admins\image_44.png)  
+![Save Changes](../../../static/img/New-Domain-Admins/image_43.png)  
+![Save Changes 2](../../../static/img/New-Domain-Admins/image_44.png)  
 
 ##### Row 2c Function: Create Ticket
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](..\..\..\static\img\New-Domain-Admins\image_40.png)  
+![Add Row](../../../static/img/New-Domain-Admins/image_40.png)  
 
 Select the `Create Ticket` function.
 
-![Create Ticket](..\..\..\static\img\New-Domain-Admins\image_45.png)  
+![Create Ticket](../../../static/img/New-Domain-Admins/image_45.png)  
 
 This function will appear.
 
-![Create Ticket Function](..\..\..\static\img\New-Domain-Admins\image_46.png)  
+![Create Ticket Function](../../../static/img/New-Domain-Admins/image_46.png)  
 
 **Subject:** `New domain admin detected on @computer@ at %companyname%`  
 **Description:** `%Output%`  
 **Priority:** `Medium`  
 
-![Ticket Details](..\..\..\static\img\New-Domain-Admins\image_47.png)  
+![Ticket Details](../../../static/img/New-Domain-Admins/image_47.png)  
 
 Once all items are added, please save the task. The final task should look like the below screenshot.
 
-![Final Task](..\..\..\static\img\New-Domain-Admins\image_48.png)  
-![Final Task 2](..\..\..\static\img\New-Domain-Admins\image_49.png)  
+![Final Task](../../../static/img/New-Domain-Admins/image_48.png)  
+![Final Task 2](../../../static/img/New-Domain-Admins/image_49.png)  
 
 ## Deployment
 
@@ -254,45 +254,46 @@ It is suggested to run the Task once per hour against the primary domain control
 - Search for `New Domain Admins Task`.
 - Select the concerned task.
 - Click on `Schedule` button to schedule the task/script.  
-![Schedule Task](..\..\..\static\img\New-Domain-Admins\image_50.png)  
+![Schedule Task](../../../static/img/New-Domain-Admins/image_50.png)  
 
 This screen will appear.  
-![Schedule Screen](..\..\..\static\img\New-Domain-Admins\image_51.png)  
+![Schedule Screen](../../../static/img/New-Domain-Admins/image_51.png)  
 
 Click the `Does not repeat` button.  
-![Does Not Repeat](..\..\..\static\img\New-Domain-Admins\image_52.png)  
+![Does Not Repeat](../../../static/img/New-Domain-Admins/image_52.png)  
 
 This pop-up box will appear.  
-![Repeat Options](..\..\..\static\img\New-Domain-Admins\image_53.png)  
+![Repeat Options](../../../static/img/New-Domain-Admins/image_53.png)  
 
 Select `Hour(s)` option from the Repeat dropdown.  
-![Select Hour](..\..\..\static\img\New-Domain-Admins\image_54.png)  
-![Select Hour 2](..\..\..\static\img\New-Domain-Admins\image_55.png)  
+![Select Hour](../../../static/img/New-Domain-Admins/image_54.png)  
+![Select Hour 2](../../../static/img/New-Domain-Admins/image_55.png)  
 
 Search for `Infrastructure` in the `Resources*` and select `Infrastructure Master` group.  
-![Select Infrastructure Master](..\..\..\static\img\New-Domain-Admins\image_56.png)  
+![Select Infrastructure Master](../../../static/img/New-Domain-Admins/image_56.png)  
 
 Now click the `Run` button to initiate the task.  
-![Run Task](..\..\..\static\img\New-Domain-Admins\image_57.png)  
+![Run Task](../../../static/img/New-Domain-Admins/image_57.png)  
 
 The task will start appearing in the Scheduled Tasks.  
-![Scheduled Tasks](..\..\..\static\img\New-Domain-Admins\image_58.png)  
-![Scheduled Tasks 2](..\..\..\static\img\New-Domain-Admins\image_59.png)  
+![Scheduled Tasks](../../../static/img/New-Domain-Admins/image_58.png)  
+![Scheduled Tasks 2](../../../static/img/New-Domain-Admins/image_59.png)  
 
 ## Output
 
 - Script Log  
-![Script Log Output](..\..\..\static\img\New-Domain-Admins\image_60.png)  
-![Script Log Output 2](..\..\..\static\img\New-Domain-Admins\image_61.png)  
-![Script Log Output 3](..\..\..\static\img\New-Domain-Admins\image_62.png)  
+![Script Log Output](../../../static/img/New-Domain-Admins/image_60.png)  
+![Script Log Output 2](../../../static/img/New-Domain-Admins/image_61.png)  
+![Script Log Output 3](../../../static/img/New-Domain-Admins/image_62.png)  
 
 - Custom Field  
-![Custom Field Output](..\..\..\static\img\New-Domain-Admins\image_63.png)  
-![Custom Field Output 2](..\..\..\static\img\New-Domain-Admins\image_64.png)  
-![Custom Field Output 3](..\..\..\static\img\New-Domain-Admins\image_65.png)  
+![Custom Field Output](../../../static/img/New-Domain-Admins/image_63.png)  
+![Custom Field Output 2](../../../static/img/New-Domain-Admins/image_64.png)  
+![Custom Field Output 3](../../../static/img/New-Domain-Admins/image_65.png)  
 
 - Ticket  
-![Ticket Output](..\..\..\static\img\New-Domain-Admins\image_66.png)  
+![Ticket Output](../../../static/img/New-Domain-Admins/image_66.png)  
+
 
 
 

@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 
 | Check Value |
 |-------------|
-| C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe "$events = Get-EventLog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 4720;foreach($event in $events) {$messageArray = $($event.message -split \"`n\");$newAccountIndex = $null;for($i = 0; $i -lt $messageArray.length; $i++) {if($messageArray[$i] -match \"^New Account:\") {$newAccountIndex = $i}}$newAccountLine = $null;for($i = $newAccountIndex; $i -lt $messageArray.length; $i++) {if($messageArray[$i] -match \"Account Name:\") {$newAccountLine = $($messageArray[$i].Trim() -replace \"Account Name: *\",'');$result = $newAccountLine.Trim();break}}$result}" |
+| C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe "$events = Get-EventLog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 4720;foreach($event in $events) {$messageArray = $($event.message -split /"`n/");$newAccountIndex = $null;for($i = 0; $i -lt $messageArray.length; $i++) {if($messageArray[$i] -match /"^New Account:/") {$newAccountIndex = $i}}$newAccountLine = $null;for($i = $newAccountIndex; $i -lt $messageArray.length; $i++) {if($messageArray[$i] -match /"Account Name:/") {$newAccountLine = $($messageArray[$i].Trim() -replace /"Account Name: */",'');$result = $newAccountLine.Trim();break}}$result}" |
 
 ## Dependencies
 
@@ -37,6 +37,7 @@ The suggested target for the monitor: Service Plan(s) for Servers and Workstatio
 Examples:  
 Windows Servers - Should be run on all Windows-based servers.  
 Windows Workstations - Should be run on all Windows workstations (Optional).
+
 
 
 

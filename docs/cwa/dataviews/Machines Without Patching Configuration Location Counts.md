@@ -29,3 +29,4 @@ This dataview displays the count of machines per location where the Microsoft up
 | Attention                     | Calculates the difference between `NoPatchPolicyCount` and `NotOnboardedCount` and highlights those rows where the difference is greater than 0. |
 
 
+

@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Maintenance-Mode---Set\image_1.png)
+![Sample Run](../../../static/img/Maintenance-Mode---Set/image_1.png)
 
 #### User Parameters
 
@@ -31,6 +31,7 @@ Starts maintenance mode with a prompt for how long to set it for. Please set the
 ## Output
 
 - Script log
+
 
 
 

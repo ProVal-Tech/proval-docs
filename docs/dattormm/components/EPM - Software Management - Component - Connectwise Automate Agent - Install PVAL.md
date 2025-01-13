@@ -16,7 +16,7 @@ Import Connectwise Automate Agent - Install PVAL.cpt into the environment.
 
 This component does not require any modifications, but it does require three site variables in order to function. If these variables are not present, the component will error out and log the error.
 
-![Image](..\..\..\static\img\EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL\image_1.png)
+![Image](../../../static/img/EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL/image_1.png)
 
 # Datto Site Variables
 
@@ -26,7 +26,7 @@ This component does not require any modifications, but it does require three sit
 | `CWAToken`        | `4fe5d1e9fd571cedecaa8f988d75787d` | `True`   | `Use Token to install the Automate Agent directly to the appropriate client's location / site.`     |
 | `CWAServer`       | `cwa.provaltech.com`             | `True`   | `URL to the Automate server. Do not include https://`                                           |
 
-![Image](..\..\..\static\img\EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL\image_2.png)
+![Image](../../../static/img/EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL/image_2.png)
 
 These settings must be configured for every site required.
 
@@ -39,7 +39,7 @@ One or more of the Managed sites' existing variables can be modified or new vari
 
 > **NOTE:** Sites with OnDemand devices cannot be updated with variables.
 
-![Image](..\..\..\static\img\EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL\image_3.png)
+![Image](../../../static/img/EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL/image_3.png)
 
 Use the pre-populated CSV template from the partner's Datto RMM portal. This template contains every site in the Datto RMM account. The template is useful for quickly adding a single variable or for adding multiple variables at once to any number of sites. Complete the following steps to download, edit, and upload the site variables CSV template:
 
@@ -71,7 +71,7 @@ stdOut & stdError
 Example:
 ```
 .EXAMPLE
-Transcript started, output file is C:\WINDOWS\Temp\Automate_Deploy.txt
+Transcript started, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 Removing Existing Automate Agent...
 The Automate Agent Uninstalled Successfully
 Automate is NOT Installed
@@ -91,7 +91,8 @@ Service       : Running
 Online        : True
 LastStatus    : 7
 
-Transcript stopped, output file is C:\WINDOWS\Temp\Automate_Deploy.txt
+Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
+
 
 

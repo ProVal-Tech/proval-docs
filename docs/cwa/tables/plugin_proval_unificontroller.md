@@ -36,3 +36,4 @@ Holds requested Unifi Controller data specific to the controller only.
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
 
 
+

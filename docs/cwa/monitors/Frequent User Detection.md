@@ -14,7 +14,7 @@ This internal monitor is designed to detect the online Windows workstation agent
 
 You can change this day number on the monitor to set different script run frequencies and freely set it to any number as the dates are compared from the stored value of the EDF "LogonUserCheckDate".
 
-![Image](..\..\..\static\img\Frequent-User-Detection\image_1.png)
+![Image](../../../static/img/Frequent-User-Detection/image_1.png)
 
 ## Dependencies
 
@@ -23,5 +23,6 @@ You can change this day number on the monitor to set different script run freque
 ## Target
 
 Windows Workstations
+
 
 

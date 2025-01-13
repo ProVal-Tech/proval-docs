@@ -23,14 +23,14 @@ unlisted: false
    'ProVal - Production - Monitor OS Build' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'OS Build Number changed on %CLIENTNAME%\\%COMPUTERNAME%~~~%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!OS Build Number changed on %CLIENTNAME%\\%COMPUTERNAME%~~~Os Build number changed on %CLIENTNAME%\\%COMPUTERNAME%' as `AlertMessage`,
+   'OS Build Number changed on %CLIENTNAME%//%COMPUTERNAME%~~~%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!OS Build Number changed on %CLIENTNAME%//%COMPUTERNAME%~~~Os Build number changed on %CLIENTNAME%//%COMPUTERNAME%' as `AlertMessage`,
    '0' as `ContactID`,
    '3600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); if (!(Get-Module -Name Strapper -ListAvailable -ErrorAction SilentlyContinue)) {Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null; Set-PSRepository -Name PSGallery -InstallationPolicy Trusted; Install-Module -Name Strapper -Repository PSGallery}; Import-Module -Name Strapper; Set-StrapperEnvironment; $t = 'osbuild'; $pb = try {Get-StoredObject -TableName $t -WarningAction SilentlyContinue -ErrorAction Stop} catch {$null}; $cb = "$([System.Environment]::OSVersion.Version)"; if (!$pb) {} elseif ($pb -ne  $cb) {Write-Output 'Os Build Changed'};$cb | Write-StoredObject -TableName $t -Clobber -WarningAction SilentlyContinue -Depth 2"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); if (!(Get-Module -Name Strapper -ListAvailable -ErrorAction SilentlyContinue)) {Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null; Set-PSRepository -Name PSGallery -InstallationPolicy Trusted; Install-Module -Name Strapper -Repository PSGallery}; Import-Module -Name Strapper; Set-StrapperEnvironment; $t = 'osbuild'; $pb = try {Get-StoredObject -TableName $t -WarningAction SilentlyContinue -ErrorAction Stop} catch {$null}; $cb = "$([System.Environment]::OSVersion.Version)"; if (!$pb) {} elseif ($pb -ne  $cb) {Write-Output 'Os Build Changed'};$cb | Write-StoredObject -TableName $t -Clobber -WarningAction SilentlyContinue -Depth 2"' as `DataOut`,
    '16' as `Comparor`,
-   '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(^(()%7C %7C(OK)%7C(\\r\\n))$)%7C(Os Build Changed)|10|^(\\r\\n){0,}(Os Build Changed)(\\r\\n){0,}$' as `DataIn`,
+   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(Os Build Changed)|10|^(//r//n){0,}(Os Build Changed)(//r//n){0,}$' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -92,14 +92,14 @@ unlisted: false
    'ProVal - Production - Monitor OS Build' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'OS Build Number changed on %CLIENTNAME%\\%COMPUTERNAME%~~~%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!OS Build Number changed on %CLIENTNAME%\\%COMPUTERNAME%~~~Os Build number changed on %CLIENTNAME%\\%COMPUTERNAME%' as `AlertMessage`,
+   'OS Build Number changed on %CLIENTNAME%//%COMPUTERNAME%~~~%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!OS Build Number changed on %CLIENTNAME%//%COMPUTERNAME%~~~Os Build number changed on %CLIENTNAME%//%COMPUTERNAME%' as `AlertMessage`,
    '0' as `ContactID`,
    '3600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); if (!(Get-Module -Name Strapper -ListAvailable -ErrorAction SilentlyContinue)) {Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null; Set-PSRepository -Name PSGallery -InstallationPolicy Trusted; Install-Module -Name Strapper -Repository PSGallery}; Import-Module -Name Strapper; Set-StrapperEnvironment; $t = 'osbuild'; $pb = try {Get-StoredObject -TableName $t -WarningAction SilentlyContinue -ErrorAction Stop} catch {$null}; $cb = "$([System.Environment]::OSVersion.Version)"; if (!$pb) {} elseif ($pb -ne  $cb) {Write-Output 'Os Build Changed'};$cb | Write-StoredObject -TableName $t -Clobber -WarningAction SilentlyContinue -Depth 2"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); if (!(Get-Module -Name Strapper -ListAvailable -ErrorAction SilentlyContinue)) {Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null; Set-PSRepository -Name PSGallery -InstallationPolicy Trusted; Install-Module -Name Strapper -Repository PSGallery}; Import-Module -Name Strapper; Set-StrapperEnvironment; $t = 'osbuild'; $pb = try {Get-StoredObject -TableName $t -WarningAction SilentlyContinue -ErrorAction Stop} catch {$null}; $cb = "$([System.Environment]::OSVersion.Version)"; if (!$pb) {} elseif ($pb -ne  $cb) {Write-Output 'Os Build Changed'};$cb | Write-StoredObject -TableName $t -Clobber -WarningAction SilentlyContinue -Depth 2"' as `DataOut`,
    '16' as `Comparor`,
-   '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(^(()%7C %7C(OK)%7C(\\r\\n))$)%7C(Os Build Changed)|10|^(\\r\\n){0,}(Os Build Changed)(\\r\\n){0,}$' as `DataIn`,
+   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(Os Build Changed)|10|^(//r//n){0,}(Os Build Changed)(//r//n){0,}$' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -155,5 +155,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

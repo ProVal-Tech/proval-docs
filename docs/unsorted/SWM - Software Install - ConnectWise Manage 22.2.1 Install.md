@@ -14,7 +14,7 @@ Installs or upgrades the current Connectwise Manager Internet Client to version 
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\SWM---Software-Install---ConnectWise-Manage-22.2.1-Install\image_1.png)
+![Sample Run](../../static/img/SWM---Software-Install---ConnectWise-Manage-22.2.1-Install/image_1.png)
 
 ## Dependencies
 
@@ -46,6 +46,7 @@ Installs or upgrades the current Connectwise Manager Internet Client to version 
 - Check for ConnectWise Manage Client 64-bit. If not there, delete the temp file, log the state, and exit with error.
 - Delete the temp file.
 - Log success and exit.
+
 
 
 

@@ -16,16 +16,16 @@ Dataviews can now be filtered by client/location/computer.
 
 ## Sample Run
 
-1. ![Image](..\..\..\static\img\Dataview---Email-as-CSV-Param\image_1.png)  
+1. ![Image](../../../static/img/Dataview---Email-as-CSV-Param/image_1.png)  
    Each Dataviewids provided will be filtered out for each clientid in the Filter_ID variable, converted into a CSV report, and emailed out.  
 
-2. ![Image](..\..\..\static\img\Dataview---Email-as-CSV-Param\image_2.png)  
+2. ![Image](../../../static/img/Dataview---Email-as-CSV-Param/image_2.png)  
    Each Dataviewids provided will be filtered out for each Computerid in the Filter_ID variable, converted into a CSV report, and emailed out.  
 
-3. ![Image](..\..\..\static\img\Dataview---Email-as-CSV-Param\image_3.png)  
+3. ![Image](../../../static/img/Dataview---Email-as-CSV-Param/image_3.png)  
    4 reports will be generated here, one report each for the current client, reports will be filtered for the clientid of the computer that the script is running.
 
-4. ![Image](..\..\..\static\img\Dataview---Email-as-CSV-Param\image_4.png)  
+4. ![Image](../../../static/img/Dataview---Email-as-CSV-Param/image_4.png)  
    4 unfiltered reports will be sent to all provided Email addresses. Those csv files will contain all the data from the dataviews defined in the dataviewids.
 
 ## Variables
@@ -71,5 +71,6 @@ Dataviews can now be filtered by client/location/computer.
 ## Output
 
 Email with a `@DataviewName@.Csv` file attached.
+
 
 

@@ -16,7 +16,7 @@ An Activation Key is Necessary and it can be found on the Clients' IT Glue page 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Network-Glue-Collector---Install\image_1.png)
+![Sample Run](../../../static/img/Network-Glue-Collector---Install/image_1.png)
 
 #### User Parameters
 
@@ -46,8 +46,8 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 ## Output
 
 ```
-.\Install-NetworkGlueCollector-log.txt
-.\Install-NetworkGlueCollector-error.txt
+./Install-NetworkGlueCollector-log.txt
+./Install-NetworkGlueCollector-error.txt
 ```
 
 ## Ticketing
@@ -59,7 +59,8 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
   SW - Network Glue Collector failed to install on %computername%
 
 - **Body:**  
-  Network Glue Collector installation failed on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
+  Network Glue Collector installation failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
   @ErrorLog@.
+
 
 

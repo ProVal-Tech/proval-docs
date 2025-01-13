@@ -23,8 +23,8 @@ Checks compatibility requirements for ProVal content on Mac and PC. OS Requireme
 11:52:32 am 17-Nov-22   ProVal Script Compatibility Update-0002   5   provaltech.com/dan.hicks  
 11:52:32 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)   Success THEN   provaltech.com/dan.hicks  
 11:52:32 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0016   Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server.   provaltech.com/dan.hicks  
-11:52:32 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0016   Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\735959849026022\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 3.   provaltech.com/dan.hicks  
-11:52:28 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0011   Executing 32-bit Powershell command as System: "" -command " $PSVersionTable.PsVersion.Major" >"c:\provaltech\psoutputtmp.txt"   provaltech.com/dan.hicks  
+11:52:32 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0016   Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/735959849026022/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 3.   provaltech.com/dan.hicks  
+11:52:28 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0011   Executing 32-bit Powershell command as System: "" -command " $PSVersionTable.PsVersion.Major" >"c:/provaltech/psoutputtmp.txt"   provaltech.com/dan.hicks  
 11:52:28 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0013   Sending output to global variable.   provaltech.com/dan.hicks  
 11:52:28 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0008   Custom commands detected as $PSVersionTable.PsVersion.Major   provaltech.com/dan.hicks  
 11:52:28 am 17-Nov-22   Execute Powershell Command (32-bit, Run As System)-0003   No powershell file variable detected.   provaltech.com/dan.hicks  
@@ -32,9 +32,9 @@ Checks compatibility requirements for ProVal content on Mac and PC. OS Requireme
 11:52:26 am 17-Nov-22   ProVal Script Compatibility Update   Comment at THEN step 3   provaltech.com/dan.hicks  
 11:52:26 am 17-Nov-22   Execute Powershell Command   Success THEN   provaltech.com/dan.hicks  
 11:52:25 am 17-Nov-22   Execute Powershell Command-0012   Results returned to global variable #global:psresult# and saved in Documents tab of server.   provaltech.com/dan.hicks  
-11:52:25 am 17-Nov-22   Execute Powershell Command-0012   Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\735959849026022\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2.   provaltech.com/dan.hicks  
+11:52:25 am 17-Nov-22   Execute Powershell Command-0012   Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/735959849026022/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2.   provaltech.com/dan.hicks  
 11:52:25 am 17-Nov-22   Execute Powershell Command-0011   Powershell command completed!   provaltech.com/dan.hicks  
-11:52:22 am 17-Nov-22   Execute Powershell Command-0011   Executing powershell "" -Command "(Get-CIMInstance -Classname Win32_OperatingSystem).name" >"c:\provaltech\psoutput.txt"   provaltech.com/dan.hicks  
+11:52:22 am 17-Nov-22   Execute Powershell Command-0011   Executing powershell "" -Command "(Get-CIMInstance -Classname Win32_OperatingSystem).name" >"c:/provaltech/psoutput.txt"   provaltech.com/dan.hicks  
 11:52:22 am 17-Nov-22   Execute Powershell Command-0010   Sending output to global variable.   provaltech.com/dan.hicks  
 11:52:22 am 17-Nov-22   Execute Powershell Command-0008   New command variable is: -Command "(Get-CIMInstance -Classname Win32_OperatingSystem).name"   provaltech.com/dan.hicks  
 11:52:22 am 17-Nov-22   Execute Powershell Command-0008   Custom commands detected as (Get-CIMInstance -Classname Win32_OperatingSystem).name   provaltech.com/dan.hicks  
@@ -71,6 +71,7 @@ All Content listed in [EPM - Data Collection - Solution - VSA Proval Script Comp
 - Agent Procedure Log
 - PSResult
 - CMDResults
+
 
 
 

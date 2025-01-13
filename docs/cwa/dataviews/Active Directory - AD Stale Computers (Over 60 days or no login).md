@@ -30,3 +30,4 @@ The active directory plugin must be installed, configuring, and updating properl
 | Last Logon             | The last time the machine was seen online in Active Directory. If a machine has never logged into Active Directory Automate will display a default value. (Typically the year will be either 0001 or 1600) |
 
 
+

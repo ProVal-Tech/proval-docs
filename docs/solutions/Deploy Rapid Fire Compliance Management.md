@@ -28,12 +28,13 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
    - **Alert Template -** `△ Custom - Execute Script - Deploy Rapid Fire`
 
 2. Reload the system cache:
-   - ![Reload Cache](..\..\static\img\Deploy-Rapid-Fire-Compliance-Management\image_3.png)
+   - ![Reload Cache](../../static/img/Deploy-Rapid-Fire-Compliance-Management/image_3.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](https://proval.itglue.com/DOC-5078775-17069435)
        - Setup with "`△ Custom - Execute Script - Deploy Rapid Fire`" alert template.
        - Right-click and Run Now to start the monitor.
+
 
 

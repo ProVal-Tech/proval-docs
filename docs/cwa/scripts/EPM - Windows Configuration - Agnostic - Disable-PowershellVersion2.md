@@ -29,7 +29,7 @@ How does the content operate and accomplish the goal?
 ## Payload Usage
 
 ```
-.\Disable-PowershellVersion2.ps1
+./Disable-PowershellVersion2.ps1
 ```
 
 Checks for a version of PowerShell greater than v2, if there is one present disables the PowerShell V2 feature, if it's not present it attempts to install a newer PowerShell version so v2 can be disabled.
@@ -37,8 +37,8 @@ Checks for a version of PowerShell greater than v2, if there is one present disa
 ## Output
 
 ```
-    .\Disable-PowershellVersion2-log.txt
-    .\Disable-PowershellVersion2-error.txt
+    ./Disable-PowershellVersion2-log.txt
+    ./Disable-PowershellVersion2-error.txt
 ```
 
 ## Locations
@@ -49,6 +49,7 @@ Checks for a version of PowerShell greater than v2, if there is one present disa
 | ConnectWise RMM             |                                               |
 | Kaseya                      |                                               |
 | Datto RMM                   |                                               |
+
 
 
 

@@ -18,7 +18,7 @@ The purpose of this group is to filter Windows Infrastructure master where the R
 
 ## Summary
 
-![Image](..\..\..\static\img\Infrastructure-Master---Without-Recycle-Bin\image_1.png)
+![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_1.png)
 
 **Group Type:** Dynamic  
 **Group Name:** Infrastructure Master - Without Recycle Bin  
@@ -26,7 +26,7 @@ The purpose of this group is to filter Windows Infrastructure master where the R
 
 ### Criteria
 
-![Image](..\..\..\static\img\Infrastructure-Master---Without-Recycle-Bin\image_2.png)
+![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_2.png)
 
 - Is Primary Domain Controller should be equal to `Yes`
 - AD Recycle Bin Does not contain any of `Does not meet minimum Criteria`
@@ -38,8 +38,9 @@ The purpose of this group is to filter Windows Infrastructure master where the R
 ## Group
 
 Once adding the above criteria, click the Save button to Save the Group.  
-![Image](..\..\..\static\img\Infrastructure-Master---Without-Recycle-Bin\image_3.png)
+![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_3.png)
 
-![Image](..\..\..\static\img\Infrastructure-Master---Without-Recycle-Bin\image_4.png)
+![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_4.png)
+
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Run-gpupdate-force\image_1.png)
+![Sample Run](../../../static/img/Run-gpupdate-force/image_1.png)
 
 ## Process
 
@@ -25,6 +25,7 @@ This script runs `gpupdate /force` on the target Windows machine.
 ## Output
 
 - Script log
+
 
 
 

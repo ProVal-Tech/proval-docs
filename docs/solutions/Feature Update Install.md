@@ -66,3 +66,4 @@ Create the [CW RMM - Monitor - Feature Update Install Failure](https://proval.it
 **A:** Certainly, to confine the solution to Windows 10, the individual creating the solution should ensure that the associated groups are limited to Windows 10 only or exclude Windows 11 from the groups.
 
 
+

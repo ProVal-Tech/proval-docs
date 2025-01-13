@@ -27,15 +27,15 @@ Change this value from 10 to the desired value after importing the remote monito
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File   | REDACTED      | State Based | 3600     | <Shown Below> |
 
-![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_1.png)
+![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_1.png)
 
 **State Conditions:**
 
 | State  | Condition            | Comparator |
 |--------|----------------------|------------|
-| Normal | Regex Match          | ((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)|(^$)) |
-| Warning | Does Not Regex Match | ((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)|(^$))|(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})[0-9]{1,} failed logon event logs detected in the past [0-9]{1,} hour\\(s\\).) |
-| Error  | Regex Match          | ^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})[0-9]{1,} failed logon event logs detected in the past [0-9]{1,} hour\\(s\\). |
+| Normal | Regex Match          | ((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)|(^$)) |
+| Warning | Does Not Regex Match | ((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)|(^$))|(^((//r//n){0,}[//r//n]{0,}//s{0,})[0-9]{1,} failed logon event logs detected in the past [0-9]{1,} hour//(s//).) |
+| Error  | Regex Match          | ^((//r//n){0,}[//r//n]{0,}//s{0,})[0-9]{1,} failed logon event logs detected in the past [0-9]{1,} hour//(s//). |
 
 ## Dependencies
 
@@ -44,17 +44,17 @@ Change this value from 10 to the desired value after importing the remote monito
 ## Target
 
 Domain Controllers  
-![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_2.png)  
-![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_3.png)  
+![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_2.png)  
+![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_3.png)  
 
 ## Alerting
 
 **Subject:** `Possible Brute Force Attack on %COMPUTERNAME%`
 
-**Alert Message on Success:** `There are no potential brute force or logon failures. detected in the last hour on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%`
+**Alert Message on Success:** `There are no potential brute force or logon failures. detected in the last hour on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
 
 **Alert Message on Failure:**  
-A possible brute force attack has been detected on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%.  
+A possible brute force attack has been detected on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%.  
 Here is a breakdown of the logon attempts that failed over the past hour.  
 `%RESULT%`  
 
@@ -91,11 +91,12 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625 Documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)
 
 **Sample Ticket:**  
-![Image](..\..\..\static\img\SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack\image_4.png)
+![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_4.png)
 
 ## Implementation
 
 [Import - Remote Monitor - Security - Possible Brute Force Attack](https://proval.itglue.com/DOC-5078775-13832549)
+
 
 
 

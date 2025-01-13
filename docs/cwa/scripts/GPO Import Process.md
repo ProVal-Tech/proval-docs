@@ -16,14 +16,14 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\GPO-Import-Process\image_1.png)
+![Sample Run](../../../static/img/GPO-Import-Process/image_1.png)
 
 ## Dependencies
 
 - Target ZIP must be named identical to the GPO to be imported.  
   i.e. If making a backup of the GPO "Enable Auditing", the ZIP file should be named "Enabled [Auditing.zip](http://auditing.zip)".
 - Target ZIP file must be placed in the following directory in the LTShare:  
-  C:\LTShare\Transfer\GPOs\GPOName.zip
+  C:/LTShare/Transfer/GPOs/GPOName.zip
 - Target ZIP file must be in the following format:  
   [GPOName.zip](http://gponame.zip)
 
@@ -33,7 +33,7 @@ Time Saved by Automation: 10 Minutes
 
 | Name    | Example  | Required | Description                                                                                          |
 |---------|----------|----------|------------------------------------------------------------------------------------------------------|
-| TempDir | C:\temp  | True     | The top-level directory to store files for this process on the target machine. It will be created if it does not exist. |
+| TempDir | C:/temp  | True     | The top-level directory to store files for this process on the target machine. It will be created if it does not exist. |
 
 ### User Parameters
 
@@ -52,6 +52,7 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
 
 
 

@@ -14,7 +14,7 @@ This script deploys the Webroot to the agents using the "Webroot site keycode" c
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Install-Webroot-SecureAnyWhere-Autofix,-EDF\image_1.png)
+![Sample Run](../../../static/img/Install-Webroot-SecureAnyWhere-Autofix,-EDF/image_1.png)
 
 ## Dependencies
 
@@ -39,5 +39,6 @@ Please follow the below documents to get the Webroot Site Keycode and Webroot Gr
 ## Output
 
 - Script log
+
 
 

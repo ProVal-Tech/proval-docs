@@ -32,3 +32,4 @@ Displays potential Log4J/Log4Shell vulnerabilities based on this list: [https://
 | Links         | Links to information about the affected application.                                                    |
 
 
+

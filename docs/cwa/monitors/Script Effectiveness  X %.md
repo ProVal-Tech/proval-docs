@@ -14,35 +14,35 @@ The monitor will create a ticket for the scripts which have a success/effectiven
 
 The Script log retention days can be seen at the automate location below:
 
-![Script Log Retention Days](..\..\..\static\img\Script-Effectiveness--X-%\image_1.png)
+![Script Log Retention Days](../../../static/img/Script-Effectiveness--X-%/image_1.png)
 
 50% is the default Threshold. The value for the `@ThresholdPercent` in the extra condition of the monitor set can be adjusted to update the Threshold. If you set this number to 30, the monitor set will look for scripts for which the effectiveness is less than 30%.
 
-![Threshold Adjustment](..\..\..\static\img\Script-Effectiveness--X-%\image_2.png)
+![Threshold Adjustment](../../../static/img/Script-Effectiveness--X-%/image_2.png)
 
 And change this number in the Alert Message on Failure section under the alerting tab accordingly.
 
-![Alert Message Adjustment](..\..\..\static\img\Script-Effectiveness--X-%\image_3.png)
+![Alert Message Adjustment](../../../static/img/Script-Effectiveness--X-%/image_3.png)
 
 The monitor's default behavior is to detect all scripts, regardless of how many times they have been executed. Update the value for the `@ThresholdRuns` from 0 to the required number if you want the monitor set to catch scripts with a minimum number of executions. By setting this number to 10, the monitor set will only identify scripts that have run at least 10 times.
 
-![Threshold Runs Adjustment](..\..\..\static\img\Script-Effectiveness--X-%\image_4.png)
+![Threshold Runs Adjustment](../../../static/img/Script-Effectiveness--X-%/image_4.png)
 
 ### For On-Prem Partners
 
 Default nature of the monitor is to create all the tickets against the Automate server. If you would like to generate the tickets for another computer, then set a number for the `@ComptueridForTickets` variable.
 
-![On-Prem Ticket Generation](..\..\..\static\img\Script-Effectiveness--X-%\image_5.png)
+![On-Prem Ticket Generation](../../../static/img/Script-Effectiveness--X-%/image_5.png)
 
 ### For Hosted Partners
 
 Default nature of the monitor is to create all the tickets for the oldest computer of clientid 1. If you would like to generate the tickets for another computer, then set a number for the `@ComptueridForTickets` variable.
 
-![Hosted Ticket Generation](..\..\..\static\img\Script-Effectiveness--X-%\image_6.png)
+![Hosted Ticket Generation](../../../static/img/Script-Effectiveness--X-%/image_6.png)
 
 If you would like to generate the ticket for the minimum clientid of another client, then set another number/id for the `@HostedPartnersDefaultClientid` Variable.
 
-![Hosted Partners Default Client ID](..\..\..\static\img\Script-Effectiveness--X-%\image_7.png)
+![Hosted Partners Default Client ID](../../../static/img/Script-Effectiveness--X-%/image_7.png)
 
 Note: Do Not Remove the Semi-colons (;) while making changes.
 
@@ -60,11 +60,11 @@ Last Run Date: %LastRunDateofScript%.
 
 Sample Screenshot Ticket Subject:
 
-![Sample Ticket Subject](..\..\..\static\img\Script-Effectiveness--X-%\image_8.png)
+![Sample Ticket Subject](../../../static/img/Script-Effectiveness--X-%/image_8.png)
 
 Sample Screenshot Ticket Body:
 
-![Sample Ticket Body](..\..\..\static\img\Script-Effectiveness--X-%\image_9.png)
+![Sample Ticket Body](../../../static/img/Script-Effectiveness--X-%/image_9.png)
 
 **Above screenshot contains ticket body from three tickets.
 
@@ -73,5 +73,6 @@ Recommended Alert Template: Default Create Ticket
 ## Target
 
 Global
+
 
 

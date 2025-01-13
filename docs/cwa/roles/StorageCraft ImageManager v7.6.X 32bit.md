@@ -16,6 +16,7 @@ This role will detect if StorageCraft ImageManager v7.6.X 32bit is installed.
 
 | Detection String                                                                                       | Comparator    | Result  | Applicable OS |
 |--------------------------------------------------------------------------------------------------------|---------------|---------|----------------|
-| {%@powershell.exe "(Get-Item 'C:\\Program Files\\StorageCraft\\ImageManager\\ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion"@%}<br> | Regex Match   | ^7\\.6. | Windows        |
+| {%@powershell.exe "(Get-Item 'C://Program Files//StorageCraft//ImageManager//ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion"@%}<br> | Regex Match   | ^7//.6. | Windows        |
+
 
 

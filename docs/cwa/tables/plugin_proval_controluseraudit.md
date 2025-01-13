@@ -37,3 +37,4 @@ Stores information from the @CW Control - User Audit script about existing Conne
 | 2FAEnabled                | TINYINT   | 1 or 0 to determine if the audited CWC user has 2FA enabled.             |
 
 
+

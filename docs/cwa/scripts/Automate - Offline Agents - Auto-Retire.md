@@ -12,48 +12,48 @@ unlisted: false
 
 The purpose of this script is to retire the computers that are offline in Automate for more than the days defined in the system property `AutoRetireThreshold_Days`.
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_1.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_1.png)
 
 Following EDFs can be used to overwrite the Threshold Days defined in the System property `AutoRetireThreshold_Days`.
 
 Client-Level EDF: "AutoRetire Threshold Days"
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_2.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_2.png)
 
 Location-Level EDF: "AutoRetireThreshold_Days"
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_3.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_3.png)
 
 Following EDFs can be used to exclude a client/location/computer from retirement:
 
 Client-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_4.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_4.png)
 
 Location-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_5.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_5.png)
 
 Computer-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_6.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_6.png)
 
 ## Sample Run
 
 In order to create the system properties and EDFs utilized in the script, the 'Set_Environment' User Parameter should be set to 1 for its very first execution. The global property 'AutoRetireThreshold_Days' is set when the value in 'Set_Global_Threshold_Days' is set. If left empty, the global property will be set to '90'.
 
-1. Open the script up, found under ProVal\Automate\Automate - Offline Agents - Auto-Retire --> Hit Debug Script
-   ![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_7.png)
+1. Open the script up, found under ProVal/Automate/Automate - Offline Agents - Auto-Retire --> Hit Debug Script
+   ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_7.png)
 
 2. Select any client and make sure to set the 'Set_Environment' variable to 1. You can set the global threshold to whatever the partner is requesting as well. The default is 90 days if that is not selected.
-   ![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_8.png)
+   ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_8.png)
 
 3. Run this script with your custom settings.
    - **NOTE**: Setting a new threshold will NOT overwrite the existing threshold if this has been run before. You must manually modify the property if the threshold property is in the system presently.
 
 Scheduling the script to run at regular intervals is suggested to schedule weekly for better results. 
 
-![Image](..\..\..\static\img\Automate---Offline-Agents---Auto-Retire\image_9.png)
+![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_9.png)
 
 ## Implementation
 
@@ -111,7 +111,7 @@ Client Name: Development
 Location Name: Dev
 Operating System: Microsoft Windows 11 Pro x64
 Last Contact: 2022-09-20 15:46:02
-Last Logged In User: PROVALDEV\Test
+Last Logged In User: PROVALDEV/Test
 
 Computerid: 904
 Computer Name: DEV-WIN11-2
@@ -119,7 +119,7 @@ Client Name: Development
 Location Name: Dev
 Operating System: Microsoft Windows 11 Pro x64
 Last Contact: 2022-09-20 15:47:48
-Last Logged In User: DEV-WIN11-2\Test
+Last Logged In User: DEV-WIN11-2/Test
 
 Computerid: 912
 Computer Name: DEV-WIN11-1
@@ -127,7 +127,7 @@ Client Name: Development
 Location Name: Dev
 Operating System: Microsoft Windows 11 Pro x64
 Last Contact: 2022-09-20 13:04:05
-Last Logged In User: DEV-WIN11-1\Test
+Last Logged In User: DEV-WIN11-1/Test
 
 Computerid: 917
 Computer Name: DEV-WIN10-DCJOI
@@ -135,7 +135,8 @@ Client Name: Development
 Location Name: Dev
 Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
-Last Logged In User: DEV-WIN10-DCJOI\Test
+Last Logged In User: DEV-WIN10-DCJOI/Test
 ```
+
 
 

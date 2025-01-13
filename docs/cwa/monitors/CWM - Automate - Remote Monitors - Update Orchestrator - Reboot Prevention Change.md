@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The monitor set renames the reboot file at "C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot" in order to prevent rebooting the computer by the Windows update orchestrator service. It will also enable the `UsoSvc` service if it's disabled.
+The monitor set renames the reboot file at "C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot" in order to prevent rebooting the computer by the Windows update orchestrator service. It will also enable the `UsoSvc` service if it's disabled.
 
 <div style="text-align: center;">
 <img src="https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif" style="width: 110.99px; height: 125.99px; display: inline-block; float: left; margin-right: 1.2rem;"> 
@@ -20,7 +20,7 @@ The monitor set renames the reboot file at "C:\Windows\System32\Tasks\Microsoft\
 
 ### What will change?
 This monitor will rename the reboot file at  
-"C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot"  
+"C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot"  
 & Keep the Windows Update Orchestrator Service Enabled + Running
 
 *This action will happen regardless of what alert template is set against the monitor.*  
@@ -48,11 +48,12 @@ Managed Windows Servers and Workstations
 Windows update Orchestrator Monitor - Failed - %ComputerName%
 
 **Body:**  
-The reboot file at "C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.
+The reboot file at "C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.
 
 ## Implementation
 
 [Implement - Remote Monitor - Windows Update Orchestrator](https://proval.itglue.com/DOC-5078775-16291367)
+
 
 
 

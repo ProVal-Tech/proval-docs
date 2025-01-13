@@ -14,9 +14,9 @@ The script should be called by the monitor set [ProVal - Development - Unquoted 
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Unquoted-Service-Paths-Detection\image_1.png)
+![Sample Run 1](../../../static/img/Unquoted-Service-Paths-Detection/image_1.png)
 
-![Sample Run 2](..\..\..\static\img\Unquoted-Service-Paths-Detection\image_2.png)
+![Sample Run 2](../../../static/img/Unquoted-Service-Paths-Detection/image_2.png)
 
 ## Dependencies
 
@@ -29,6 +29,7 @@ It will fetch the new paths to be set for each unquoted service on the machine a
 ## Output
 
 Script log
+
 
 
 

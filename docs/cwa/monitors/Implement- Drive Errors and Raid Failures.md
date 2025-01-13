@@ -78,14 +78,14 @@ INSERT INTO groupagents
 'ProVal - Production - Drive Errors and Raid Failures' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Drive Error Detected on %CLIENTNAME%\\%COMPUTERNAME%~~~No drive errors have been detected in the last 60 minutes.!!!Drive Error Detected on %CLIENTNAME%\\%COMPUTERNAME%~~~Drive Error Detected on %CLIENTNAME%\\%COMPUTERNAME%. Details: %RESULT%' as `AlertMessage`,
+'Drive Error Detected on %CLIENTNAME%//%COMPUTERNAME%~~~No drive errors have been detected in the last 60 minutes.!!!Drive Error Detected on %CLIENTNAME%//%COMPUTERNAME%~~~Drive Error Detected on %CLIENTNAME%//%COMPUTERNAME%. Details: %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-CONCAT('C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}\"') as `DataOut`,
+CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}/"') as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences' as `DataIn`,
+'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -179,14 +179,14 @@ INSERT INTO groupagents
 'ProVal - Production - Drive Errors and Raid Failures' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Drive Error Detected on %CLIENTNAME%\\%COMPUTERNAME%~~~No drive errors have been detected in the last 60 minutes.!!!Drive Error Detected on %CLIENTNAME%\\%COMPUTERNAME%~~~Drive Error Detected on %CLIENTNAME%\\%COMPUTERNAME%. Details: %RESULT%' as `AlertMessage`,
+'Drive Error Detected on %CLIENTNAME%//%COMPUTERNAME%~~~No drive errors have been detected in the last 60 minutes.!!!Drive Error Detected on %CLIENTNAME%//%COMPUTERNAME%~~~Drive Error Detected on %CLIENTNAME%//%COMPUTERNAME%. Details: %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-CONCAT('C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}\"') as `DataOut`,
+CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}/"') as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences' as `DataIn`,
+'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -258,11 +258,12 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 **Limit to:** `Windows Machines Excluding Virtual`
 
-![image](..\..\..\static\img\Implement--Drive-Errors-and-Raid-Failures\image_1.png)
+![image](../../../static/img/Implement--Drive-Errors-and-Raid-Failures/image_1.png)
 
 ---
 
 ## Step 8
 Set the appropriate alert template.
+
 
 

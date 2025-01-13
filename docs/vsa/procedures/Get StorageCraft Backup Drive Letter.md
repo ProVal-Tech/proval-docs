@@ -27,7 +27,8 @@ Run procedure
 ## Output
 
 Agent Procedure Log  
-c:\kworking\System\Get-SCDrive-data.txt  
+c:/kworking/System/Get-SCDrive-data.txt  
+
 
 
 

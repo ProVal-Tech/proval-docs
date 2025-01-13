@@ -56,3 +56,4 @@ A: You'll have to ensure that necessary exclusions are defined in the AV/securit
 **Whitelisting the certificate will not overcome any restrictions/rules blocking/restricting the computers to communicate with [https://file.provaltech.com](https://file.provaltech.com)**.
 
 
+

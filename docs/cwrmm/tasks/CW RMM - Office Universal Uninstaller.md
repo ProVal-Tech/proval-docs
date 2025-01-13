@@ -14,7 +14,7 @@ This script downloads the offscrub files from the repo and then attempts to unin
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_1.png)
+![Sample Run](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_1.png)
 
 ## Dependencies
 
@@ -30,17 +30,17 @@ This script downloads the offscrub files from the repo and then attempts to unin
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Implementation](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_2.png)
+![Implementation](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_2.png)
 
 Name: Office Universal Uninstaller  
 Description: This task will download the offscrub files from the repo and then attempt to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can deal with machine or software corruption and completely removes Office app shortcuts for the version.  
 Category: Custom  
 
-![Implementation Category](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_3.png)
+![Implementation Category](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_3.png)
 
 ### Parameter
 
-![Parameter](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_4.png)
+![Parameter](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_4.png)
 
 Parameter Names: Arguments  
 Required Field: Selected  
@@ -51,15 +51,15 @@ Default Value: -All
 
 #### Row 1 Function: Script Log
 
-![Row 1 Function](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_5.png)
+![Row 1 Function](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_5.png)
 
 Input the following:
 
-![Input](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_6.png)
+![Input](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_6.png)
 
 #### Row 2 Function: PowerShell Script
 
-![Row 2 Function](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_7.png)
+![Row 2 Function](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_7.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -69,8 +69,8 @@ $ProjectName = 'Invoke-OffScrub'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 #endregion
 
 #region Setup - Folder Structure
@@ -94,19 +94,19 @@ if (!(Test-Path -Path $PS1Path)) {
 #endregion
 ```
 
-![Row 2 Function Output](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_8.png)
+![Row 2 Function Output](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_8.png)
 
 #### Row 3 Function: Script Log
 
-![Row 3 Function](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_9.png)
+![Row 3 Function](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_9.png)
 
 In the script log message, simply type %output% so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 3 Function Output](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_10.png)
+![Row 3 Function Output](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_10.png)
 
 The final task should look like the below screenshot.
 
-![Final Task Screenshot](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_11.png)
+![Final Task Screenshot](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_11.png)
 
 ### Script Deployment
 
@@ -116,11 +116,12 @@ Go to Automations > Tasks.
 Search for Office Universal Uninstaller.  
 Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
 
-![Script Deployment](..\..\..\static\img\CW-RMM---Office-Universal-Uninstaller\image_12.png)
+![Script Deployment](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_12.png)
 
 ## Output
 
 - Script log
+
 
 
 

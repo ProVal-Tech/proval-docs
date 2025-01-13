@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CW-Control---Uninstall-and-Remove-from-Control-Web-Portal\image_1.png)
+![Sample Run](../../../static/img/CW-Control---Uninstall-and-Remove-from-Control-Web-Portal/image_1.png)
 
 ## Dependencies
 
@@ -35,5 +35,6 @@ Time Saved by Automation: 10 Minutes
 
 - Script log
 - Ticket if failure found
+
 
 

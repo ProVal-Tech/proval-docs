@@ -20,10 +20,10 @@ This script offers customizable options for Pop-up displays from text size and c
 ## Sample Run
 
 1. Balloon messages  
-   ![Balloon message](..\..\..\static\img\User-Prompt---Show\image_1.png)  
+   ![Balloon message](../../../static/img/User-Prompt---Show/image_1.png)  
    
 2. Pop-Up Message  
-   ![Pop-up message](..\..\..\static\img\User-Prompt---Show\image_2.png)  
+   ![Pop-up message](../../../static/img/User-Prompt---Show/image_2.png)  
 
 ## Dependencies
 
@@ -93,6 +93,7 @@ Document the various variables in the script. Delete any section that is not rel
 - The selection made by the user will be stored in @UserSelection@ in the script.
   - If you select date/time selection it will return the selected date/time from the user
   - If you select yes-no button a yes or no will be returned.
+
 
 
 

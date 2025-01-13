@@ -16,9 +16,9 @@ CW RMM implementation of [Invoke-LSUClientUpdate](https://proval.itglue.com/DOC-
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_1.png)
+![Sample Run 1](../../../static/img/LSUClient---Install-Lenovo-Update/image_1.png)
 
-![Sample Run 2](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_2.png)
+![Sample Run 2](../../../static/img/LSUClient---Install-Lenovo-Update/image_2.png)
 
 ## Dependencies
 
@@ -28,9 +28,9 @@ CW RMM implementation of [Invoke-LSUClientUpdate](https://proval.itglue.com/DOC-
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_3.png)
+![Task Creation Image 1](../../../static/img/LSUClient---Install-Lenovo-Update/image_3.png)
 
-![Task Creation Image 2](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_4.png)
+![Task Creation Image 2](../../../static/img/LSUClient---Install-Lenovo-Update/image_4.png)
 
 **Name:** `LSUClient - Install Lenovo Update`
 
@@ -38,29 +38,29 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Category:** `Patching`
 
-![Task Creation Image 3](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_5.png)
+![Task Creation Image 3](../../../static/img/LSUClient---Install-Lenovo-Update/image_5.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_6.png)
+![Add Row Image](../../../static/img/LSUClient---Install-Lenovo-Update/image_6.png)
 
 A blank function will appear.
 
-![Blank Function Image](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_7.png)
+![Blank Function Image](../../../static/img/LSUClient---Install-Lenovo-Update/image_7.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Selection 1](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_8.png)
+![PowerShell Script Selection 1](../../../static/img/LSUClient---Install-Lenovo-Update/image_8.png)
 
-![PowerShell Script Selection 2](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_9.png)
+![PowerShell Script Selection 2](../../../static/img/LSUClient---Install-Lenovo-Update/image_9.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Function Popup](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_10.png)
+![PowerShell Function Popup](../../../static/img/LSUClient---Install-Lenovo-Update/image_10.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
@@ -70,11 +70,11 @@ $ProjectName = 'Invoke-LsuClientUpdate'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -108,40 +108,41 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Image](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_11.png)
+![PowerShell Script Image](../../../static/img/LSUClient---Install-Lenovo-Update/image_11.png)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row Image 2](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_12.png)
+![Add Row Image 2](../../../static/img/LSUClient---Install-Lenovo-Update/image_12.png)
 
 A blank function will appear.
 
-![Blank Function Image 2](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_13.png)
+![Blank Function Image 2](../../../static/img/LSUClient---Install-Lenovo-Update/image_13.png)
 
 Search and select the `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_14.png)
+![Script Log Selection](../../../static/img/LSUClient---Install-Lenovo-Update/image_14.png)
 
 The following function will pop up on the screen:
 
-![Script Log Popup](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_15.png)
+![Script Log Popup](../../../static/img/LSUClient---Install-Lenovo-Update/image_15.png)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_16.png)
+![Script Log Save](../../../static/img/LSUClient---Install-Lenovo-Update/image_16.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Button](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_17.png)
+![Save Button](../../../static/img/LSUClient---Install-Lenovo-Update/image_17.png)
 
 ## Completed Task
 
-![Completed Task Image](..\..\..\static\img\LSUClient---Install-Lenovo-Update\image_18.png)
+![Completed Task Image](../../../static/img/LSUClient---Install-Lenovo-Update/image_18.png)
 
 ## Output
 
 - Script log
+
 
 

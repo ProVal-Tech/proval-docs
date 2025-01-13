@@ -28,3 +28,4 @@ Globally (both on windows and MAC machines)
 The tickets will be created by the [CWM - Control - Script - Update Screenconnect Version](https://proval.itglue.com/DOC-5078775-13977865) script.
 
 
+

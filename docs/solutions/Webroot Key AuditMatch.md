@@ -27,7 +27,7 @@ This solution fetches the Webroot KeyCode audit and monitors to find any mismatc
 - Import: [Dataview - Webroot KeyCode Audit[Script]](https://proval.itglue.com/DOC-5078775-8105261)
 - Import: [Monitor - Proval - Production - AV - Wrong Webroot KeyCode Detected](https://proval.itglue.com/DOC-5078775-11417971).
 - Import the alert template "**△ CUSTOM - Execute Script - Webroot Hashed Key Retrieval**".
-- Schedule the [Script - Webroot Hashed Key Retrieval](https://proval.itglue.com/DOC-5078775-8223773) to the group "Antivirus Management\Webroot SecureAnyWhere" every week to perform the audit of the Key where the Webroot Antivirus is installed.
+- Schedule the [Script - Webroot Hashed Key Retrieval](https://proval.itglue.com/DOC-5078775-8223773) to the group "Antivirus Management/Webroot SecureAnyWhere" every week to perform the audit of the Key where the Webroot Antivirus is installed.
 - Set the [Monitor - Proval - Production - AV - Wrong Webroot KeyCode Detected](https://proval.itglue.com/DOC-5078775-11417971) to run daily and apply the alert template **△ CUSTOM - Execute Script - Webroot Hashed Key Retrieval** to perform a reaudit and alert if the key code mismatch.
 - Go through the documentation [SWM - Software Install - Solution - Webroot](https://proval.itglue.com/DOC-5078775-11665357) to understand how to set the Webroot site keycode in the plugin.
 
@@ -35,5 +35,6 @@ This solution fetches the Webroot KeyCode audit and monitors to find any mismatc
 
 - Will the ticket auto-close if the KeyCode matched for the agent where the KeyCode mismatch was detected?
 - Yes, the autofix has the auto-closure of the ticket feature added.
+
 
 

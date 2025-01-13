@@ -25,3 +25,4 @@ To present information about possible Log4Shell vulnerabilities and attacks on A
 | [CWM - Automate - Script - Log4J Remediation Residue Removal](https://proval.itglue.com/DOC-5078775-16162268) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631) script including the `Everything` service. |
 
 
+

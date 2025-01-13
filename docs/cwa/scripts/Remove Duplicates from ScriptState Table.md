@@ -16,7 +16,7 @@ It is a client script and can be scheduled to run once per day.
 ## Sample Run
 
 To be scheduled as a client script.  
-![Sample Run Image](..\..\..\static\img\Remove-Duplicates-from-ScriptState-Table\image_1.png)
+![Sample Run Image](../../../static/img/Remove-Duplicates-from-ScriptState-Table/image_1.png)
 
 ## Variables
 
@@ -38,6 +38,7 @@ Step 1: Fetches the total number of duplicate entries per scriptid per computeri
 Step 2: Exits, if the total number of results in the above step is zero.  
 
 Step 3: Runs a loop to delete all the duplicate entries for each Script state per computer per script.
+
 
 
 

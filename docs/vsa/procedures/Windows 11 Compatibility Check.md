@@ -20,7 +20,7 @@ There is no configuration required within the Agent Procedure, but a custom fiel
 
 Custom Field: xPVAL Win 11 Compatible
 
-![Image](..\..\..\static\img\Windows-11-Compatibility-Check\image_1.png)
+![Image](../../../static/img/Windows-11-Compatibility-Check/image_1.png)
 
 # Process
 The `HardwareReadiness.ps1` script is a PowerShell script designed to assess a Windows 10 machine's hardware compatibility with Windows 11. It verifies several system components, including storage, memory, TPM (Trusted Platform Module), processor details, and Secure Boot status. The script utilizes both PowerShell cmdlets and .NET interop to gather system information and evaluate compatibility based on predefined minimum requirements.
@@ -34,7 +34,7 @@ The `HardwareReadiness.ps1` script is a PowerShell script designed to assess a W
 
 # Payload Usage
 ```
-#ScriptName#.ps1 >> #Directory#\#ScriptName#-log.txt; $result = Get-Content -Path #Directory#\#ScriptName#-log.txt -Raw | ConvertFrom-Json; $simplifiedResult = switch ($result.returnCode) {0 {"'Yes'"} 1 {"'No'"} -1 {"'Hardware Check Failed'"} -2 {"'Script Error'"} default {"'UnknownReturnCode'"}}; Write-Host $simplifiedResult
+#ScriptName#.ps1 >> #Directory#/#ScriptName#-log.txt; $result = Get-Content -Path #Directory#/#ScriptName#-log.txt -Raw | ConvertFrom-Json; $simplifiedResult = switch ($result.returnCode) {0 {"'Yes'"} 1 {"'No'"} -1 {"'Hardware Check Failed'"} -2 {"'Script Error'"} default {"'UnknownReturnCode'"}}; Write-Host $simplifiedResult
 ```
 Runs the HardwareReadiness.ps1 script, outputting the results to a log file within the Agent Procedure folder. The returnCode is read, and modified to produce a value for the **xPVAL Win 11 Compatible** custom field.
 
@@ -54,7 +54,8 @@ The log indicates that while the system meets the necessary criteria for storage
 
 # Output
 ```
-$env:ProgramData\_automation\AgentProcedure\Windows11Compatibility\HardwareReadiness-log.txt
+$env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
+
 
 

@@ -13,7 +13,7 @@ unlisted: false
 This script satisfies the request of ticket T20221207.0097 - auto ad to autopilot
 
 Action items:
-- Create a script that checks for the specified registry value "Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot\EstablishedCorrelations" 
+- Create a script that checks for the specified registry value "Computer/HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Provisioning/Diagnostics/AutoPilot/EstablishedCorrelations" 
   Name: AADEnrollInfo 
   - If the value does not exist, then run the following command: 
     ```
@@ -28,10 +28,10 @@ Action items:
 ## Sample Run
 
 Set up the assigned Encrypted Client Level EDF Values  
-![Sample Run](..\..\..\static\img\Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)\image_1.png)
+![Sample Run](../../../static/img/Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)/image_1.png)
 
 Run the script on the target machine  
-![Run Script](..\..\..\static\img\Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)\image_2.png)
+![Run Script](../../../static/img/Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)/image_2.png)
 
 ## Dependencies
 
@@ -54,6 +54,7 @@ AppID, AppSecret, and Tenant ID EDFs must be set at the client level.
 - If the output does not contain All Devices synced, then the Get-Windowsautopilotinfo.ps1 failed and the script will fail.
 - If the FinishStatus of the script PowerShell Response - All Errors - Check is false, then the check for common environmental errors found a known issue and the script will fail.
 - The script log will hold any error type information.
+
 
 
 

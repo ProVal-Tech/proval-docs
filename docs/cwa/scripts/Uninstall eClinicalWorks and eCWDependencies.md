@@ -14,11 +14,12 @@ The script is designed to uninstall the eClinicalWorks Client and eCWDependencie
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-eClinicalWorks-and-eCWDependencies\image_1.png)
+![Sample Run](../../../static/img/Uninstall-eClinicalWorks-and-eCWDependencies/image_1.png)
 
 ## Output
 
 - Script log
 - Ticket
+
 
 

@@ -24,15 +24,15 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Execute Info | Check Value | Condition     | Interval | Result |
 |--------------|----------------|---------------|-------------|---------------|----------|--------|
-| System       | 127.0.0.1     | Run File      | **REDACTED**| State Based    | 3600     | ![Result](..\..\..\static\img\RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring\image_1.png) |
+| System       | 127.0.0.1     | Run File      | **REDACTED**| State Based    | 3600     | ![Result](../../../static/img/RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring/image_1.png) |
 
 ## Target
 
 **Group:** Domain Controllers  
-![Group Image](..\..\..\static\img\RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring\image_2.png)  
+![Group Image](../../../static/img/RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring/image_2.png)  
 
 **Search:** Server Role - AD - Infrastructure Master  
-![Search Image](..\..\..\static\img\RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring\image_3.png)  
+![Search Image](../../../static/img/RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring/image_3.png)  
 
 ## Ticketing
 
@@ -48,6 +48,7 @@ For a precise understanding of the error codes returned in the `LastError` prope
 ## Implementation
 
 [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646252)
+
 
 
 

@@ -16,17 +16,17 @@ CW RMM implementation of [Invoke-OfficeScrub](https://proval.itglue.com/DOC-5078
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-Microsoft-Office\image_1.png)
+![Sample Run](../../../static/img/Uninstall-Microsoft-Office/image_1.png)
 
 **To remove all installed versions:**
 
-![Remove All](..\..\..\static\img\Uninstall-Microsoft-Office\image_2.png)
+![Remove All](../../../static/img/Uninstall-Microsoft-Office/image_2.png)
 
 **To remove selected versions:**
 
-![Remove Selected 1](..\..\..\static\img\Uninstall-Microsoft-Office\image_3.png)
+![Remove Selected 1](../../../static/img/Uninstall-Microsoft-Office/image_3.png)
 
-![Remove Selected 2](..\..\..\static\img\Uninstall-Microsoft-Office\image_4.png)
+![Remove Selected 2](../../../static/img/Uninstall-Microsoft-Office/image_4.png)
 
 ## Dependencies
 
@@ -38,15 +38,15 @@ CW RMM implementation of [Invoke-OfficeScrub](https://proval.itglue.com/DOC-5078
 |---------|--------------------------------|-------------------------------------------------------------|----------|---------|---------------|-----------------------------------------------------------------------------------------------|
 | Version | - All                          | - 2003<br>- 2007<br>- 2010<br>- 2013<br>- 2016<br>- c2r<br>- All | True     | All     | Text String   | Office Version to remove. Leaving it blank is equivalent to `All`.                          |
 
-![User Parameters](..\..\..\static\img\Uninstall-Microsoft-Office\image_5.png)
+![User Parameters](../../../static/img/Uninstall-Microsoft-Office/image_5.png)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](..\..\..\static\img\Uninstall-Microsoft-Office\image_6.png)
+![Task Creation 1](../../../static/img/Uninstall-Microsoft-Office/image_6.png)
 
-![Task Creation 2](..\..\..\static\img\Uninstall-Microsoft-Office\image_7.png)
+![Task Creation 2](../../../static/img/Uninstall-Microsoft-Office/image_7.png)
 
 **Name:** `Uninstall Microsoft Office`
 
@@ -54,7 +54,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Category:** `Application`
 
-![Task Creation 3](..\..\..\static\img\Uninstall-Microsoft-Office\image_8.png)
+![Task Creation 3](../../../static/img/Uninstall-Microsoft-Office/image_8.png)
 
 ## Parameters
 
@@ -62,39 +62,39 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Uninstall-Microsoft-Office\image_9.png)
+![Add Parameter](../../../static/img/Uninstall-Microsoft-Office/image_9.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Uninstall-Microsoft-Office\image_10.png)
+![Parameter Screen](../../../static/img/Uninstall-Microsoft-Office/image_10.png)
 
 - Set `Version` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter](..\..\..\static\img\Uninstall-Microsoft-Office\image_11.png)
+![Save Parameter](../../../static/img/Uninstall-Microsoft-Office/image_11.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Uninstall-Microsoft-Office\image_12.png)
+![Add Row](../../../static/img/Uninstall-Microsoft-Office/image_12.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Uninstall-Microsoft-Office\image_13.png)
+![Blank Function](../../../static/img/Uninstall-Microsoft-Office/image_13.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell](..\..\..\static\img\Uninstall-Microsoft-Office\image_14.png)
+![Select PowerShell](../../../static/img/Uninstall-Microsoft-Office/image_14.png)
 
-![PowerShell Function](..\..\..\static\img\Uninstall-Microsoft-Office\image_15.png)
+![PowerShell Function](../../../static/img/Uninstall-Microsoft-Office/image_15.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Function Popup](..\..\..\static\img\Uninstall-Microsoft-Office\image_16.png)
+![PowerShell Function Popup](../../../static/img/Uninstall-Microsoft-Office/image_16.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
@@ -102,7 +102,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 #region parameters
 $version = '@version@'
 $parameters = @{}
-if ( ($version -match 'All|\\SVersion\\S') -or ([String]::IsNullOrWhiteSpace($version)) ) {
+if ( ($version -match 'All|//SVersion//S') -or ([String]::IsNullOrWhiteSpace($version)) ) {
     $parameters.Add('All', $true)
 } else {
     if ( $version -match '2003' ) {
@@ -133,11 +133,11 @@ $ProjectName = 'Invoke-OfficeScrub'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -171,40 +171,41 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Execution](..\..\..\static\img\Uninstall-Microsoft-Office\image_17.png)
+![Execution](../../../static/img/Uninstall-Microsoft-Office/image_17.png)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row 2](..\..\..\static\img\Uninstall-Microsoft-Office\image_18.png)
+![Add Row 2](../../../static/img/Uninstall-Microsoft-Office/image_18.png)
 
 A blank function will appear.
 
-![Blank Function 2](..\..\..\static\img\Uninstall-Microsoft-Office\image_19.png)
+![Blank Function 2](../../../static/img/Uninstall-Microsoft-Office/image_19.png)
 
 Search and select the `Script Log` function.
 
-![Select Script Log](..\..\..\static\img\Uninstall-Microsoft-Office\image_20.png)
+![Select Script Log](../../../static/img/Uninstall-Microsoft-Office/image_20.png)
 
 The following function will pop up on the screen:
 
-![Script Log Popup](..\..\..\static\img\Uninstall-Microsoft-Office\image_21.png)
+![Script Log Popup](../../../static/img/Uninstall-Microsoft-Office/image_21.png)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](..\..\..\static\img\Uninstall-Microsoft-Office\image_22.png)
+![Script Log Save](../../../static/img/Uninstall-Microsoft-Office/image_22.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](..\..\..\static\img\Uninstall-Microsoft-Office\image_23.png)
+![Save Script](../../../static/img/Uninstall-Microsoft-Office/image_23.png)
 
 ## Completed Script
 
-![Completed Script](..\..\..\static\img\Uninstall-Microsoft-Office\image_24.png)
+![Completed Script](../../../static/img/Uninstall-Microsoft-Office/image_24.png)
 
 ## Output
 
 - Script log
+
 
 

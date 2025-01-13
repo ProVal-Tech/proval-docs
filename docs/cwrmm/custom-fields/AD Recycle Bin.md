@@ -14,9 +14,9 @@ The [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-1534951
 
 # Create the Custom Field
 
-![Image](..\..\..\static\img\AD-Recycle-Bin\image_1.png)
+![Image](../../../static/img/AD-Recycle-Bin/image_1.png)
 
-![Image](..\..\..\static\img\AD-Recycle-Bin\image_2.png)
+![Image](../../../static/img/AD-Recycle-Bin/image_2.png)
 
 **Name:** AD Recycle Bin  
 **Type:** Text Box  
@@ -24,6 +24,7 @@ The [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-1534951
 **Default value:** 0  
 **Description:** This Custom field is being used by Enable Recycle Bin Task to store the Recycle bin status On AD Infrastructure Masters  
 **Editable:** Yes  
+
 
 
 

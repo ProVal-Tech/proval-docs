@@ -41,3 +41,4 @@ Shows the list of probe-detected machines with port 139 open that may be missing
 Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](https://proval.itglue.com/DOC-5078775-12944749) script to run every 12-24 hours to provide permission for `agentdeploymentreadinesscheck` Table for both Hosted as well as On-Prem Clients. Otherwise, the dataview will not provide any results.
 
 
+

@@ -37,6 +37,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 This script will add the following section to the log variable:
 
-![Output Image](..\..\..\static\img\Automate-Database-Maintenance---Patch-Manager\image_1.png)
+![Output Image](../../../static/img/Automate-Database-Maintenance---Patch-Manager/image_1.png)
+
 
 

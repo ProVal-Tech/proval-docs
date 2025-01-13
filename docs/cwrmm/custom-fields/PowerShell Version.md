@@ -14,9 +14,9 @@ This custom field is used to store Windows PowerShell version information about 
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\PowerShell-Version\image_1.png)
+![Image 1](../../../static/img/PowerShell-Version/image_1.png)
 
-![Image 2](..\..\..\static\img\PowerShell-Version\image_2.png)
+![Image 2](../../../static/img/PowerShell-Version/image_2.png)
 
 - **Name:** PowerShell Version
 - **Type:** Text Box
@@ -24,5 +24,6 @@ This custom field is used to store Windows PowerShell version information about 
 - **Level:** Endpoint
 - **Description:** Will provide the PS version on the machine
 - **Editable:** No
+
 
 

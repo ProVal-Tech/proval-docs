@@ -15,7 +15,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\LogMeIn-Uninstall\image_1.png)
+![Sample Run](../../../static/img/LogMeIn-Uninstall/image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

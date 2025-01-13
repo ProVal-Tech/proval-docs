@@ -40,3 +40,4 @@ Global
 Note: Ensure the presence of [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520) table and [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script in the environment before creating the monitor set and importing the alert template.
 
 
+

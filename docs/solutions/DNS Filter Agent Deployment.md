@@ -28,7 +28,7 @@ This solution is built to deploy the DNS filter to the agents automatically.
    - Alert Template - `△ Custom - Execute Script - DNS Filter Agent - Install`
 
 2. After importing the script please reload the system cache so the EDFs get loaded.  
-   ![Image](..\..\static\img\DNS-Filter-Agent-Deployment\image_1.png)
+   ![Image](../../static/img/DNS-Filter-Agent-Deployment/image_1.png)
 
 3. Navigate to Automation → Monitors → Find the monitor named 'ProVal - Production - Deploy DNS Filter Agent'  
    - Apply the alert template `△ Custom - Execute Script - DNS Filter Agent - Install` to the monitor
@@ -51,6 +51,7 @@ This solution is built to deploy the DNS filter to the agents automatically.
 
 5. Ticket Creation  
    For the ticket creation, it is required to set the Ticket Category at the monitor level to gather the ticket category ID and get the ticket created on the respective board via script [CWA - Script - DNS Filter Agent - Install](https://proval.itglue.com/DOC-5078775-15683983):  
-   ![Image](..\..\static\img\DNS-Filter-Agent-Deployment\image_2.png)
+   ![Image](../../static/img/DNS-Filter-Agent-Deployment/image_2.png)
+
 
 

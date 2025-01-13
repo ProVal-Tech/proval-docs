@@ -36,29 +36,30 @@ The below custom fields are used in the Reboot Prompter Solution.
 ## Steps to Create Custom Fields
 
 1. Go to Settings > Custom Fields  
-   ![Step 1](..\..\..\static\img\Reboot-Prompter\image_1.png)
+   ![Step 1](../../../static/img/Reboot-Prompter/image_1.png)
 
 2. Click Add option  
-   ![Step 2](..\..\..\static\img\Reboot-Prompter\image_2.png)
+   ![Step 2](../../../static/img/Reboot-Prompter/image_2.png)
 
 3. Create Custom Field  
    Provide Name: RebootForceTimeDelayMinutes  
    Select Level: Site  
-   ![Step 3](..\..\..\static\img\Reboot-Prompter\image_3.png)  
+   ![Step 3](../../../static/img/Reboot-Prompter/image_3.png)  
    Then check the Type option:  
    Type: Text Box  
-   ![Type Option](..\..\..\static\img\Reboot-Prompter\image_4.png)  
+   ![Type Option](../../../static/img/Reboot-Prompter/image_4.png)  
    Then Provide Default Value and Description:  
    Default: 5  
    Description: This indicates how many minutes you would like to delay the forced reboot from when the user gets the prompt.  
    Editable: Yes  
-   ![Default Value and Description](..\..\..\static\img\Reboot-Prompter\image_5.png)  
+   ![Default Value and Description](../../../static/img/Reboot-Prompter/image_5.png)  
    Note: Description is mandatory to be filled and it doesn't accept *'NEW LINE'.* Write everything in one phrase to describe the detail of the custom field.
 
 4. Click Save  
    Once all detail filled click Save, and the custom field will be created.  
-   ![Save](..\..\..\static\img\Reboot-Prompter\image_6.png)
+   ![Save](../../../static/img/Reboot-Prompter/image_6.png)
 
 5. Repeat the above 4 steps to create all other custom fields based on the Name, Level, Type, Default, Description, Editable provided in the table.
+
 
 

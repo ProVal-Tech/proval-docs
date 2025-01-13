@@ -28,7 +28,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|-------------|----------|----------------------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | <Screenshot Below>    |
 
-![Image](..\..\..\static\img\Windows-License-Status\image_1.png)
+![Image](../../../static/img/Windows-License-Status/image_1.png)
 
 ## Target
 
@@ -78,6 +78,7 @@ A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](https:
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
+
 
 
 

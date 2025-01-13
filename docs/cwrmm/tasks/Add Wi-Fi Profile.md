@@ -16,11 +16,11 @@ This is a CW RMM implementation of the agnostic script [Add-WifiProfile](https:/
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Add-Wi-Fi-Profile\image_1.png)
+![Sample Run 1](../../../static/img/Add-Wi-Fi-Profile/image_1.png)
 
-![Sample Run 2](..\..\..\static\img\Add-Wi-Fi-Profile\image_2.png)
+![Sample Run 2](../../../static/img/Add-Wi-Fi-Profile/image_2.png)
 
-![Sample Run 3](..\..\..\static\img\Add-Wi-Fi-Profile\image_3.png)
+![Sample Run 3](../../../static/img/Add-Wi-Fi-Profile/image_3.png)
 
 ## Dependencies
 
@@ -38,49 +38,49 @@ This is a CW RMM implementation of the agnostic script [Add-WifiProfile](https:/
 | `connectHiddenSSID`     | Unmarked              |                                                                                 | False    | $False  | Flag  | Whether to connect to the WiFi even if the SSID is hidden.|
 | `overwrite`             | Marked                |                                                                                 | False    | $True   | Flag  | Whether to overwrite the WiFi profile if it already exists.|
 
-![User Parameters](..\..\..\static\img\Add-Wi-Fi-Profile\image_4.png)
+![User Parameters](../../../static/img/Add-Wi-Fi-Profile/image_4.png)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Step 1](..\..\..\static\img\Add-Wi-Fi-Profile\image_5.png)
+![Task Creation Step 1](../../../static/img/Add-Wi-Fi-Profile/image_5.png)
 
-![Task Creation Step 2](..\..\..\static\img\Add-Wi-Fi-Profile\image_6.png)
+![Task Creation Step 2](../../../static/img/Add-Wi-Fi-Profile/image_6.png)
 
 **Name:** Add Wi-Fi Profile  
 **Description:** `The script can be used to manually add Wi-Fi profiles for Windows computers.`  
 `Requirement: PowerShell v5+`  
 **Category:** Custom
 
-![Task Creation Step 3](..\..\..\static\img\Add-Wi-Fi-Profile\image_7.png)
+![Task Creation Step 3](../../../static/img/Add-Wi-Fi-Profile/image_7.png)
 
 ## Parameters
 
 ### profileName:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `profileName` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Enable the `Required Field` button.
 - Click the `Save` button.
 
-![Profile Name Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_10.png)
+![Profile Name Save](../../../static/img/Add-Wi-Fi-Profile/image_10.png)
 
 ### connectionMode:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `connectionMode` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -88,16 +88,16 @@ This screen will appear.
 - Set `auto` in the `Value` field.
 - Click the `Save` button.
 
-![Connection Mode Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_11.png)
+![Connection Mode Save](../../../static/img/Add-Wi-Fi-Profile/image_11.png)
 
 ### authentication:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `authentication` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -105,16 +105,16 @@ This screen will appear.
 - Set `WPA2PSK` in the `Value` field.
 - Click the `Save` button.
 
-![Authentication Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_12.png)
+![Authentication Save](../../../static/img/Add-Wi-Fi-Profile/image_12.png)
 
 ### encryption:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `encryption` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -122,32 +122,32 @@ This screen will appear.
 - Set `AES` in the `Value` field.
 - Click the `Save` button.
 
-![Encryption Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_13.png)
+![Encryption Save](../../../static/img/Add-Wi-Fi-Profile/image_13.png)
 
 ### password:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `password` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Enable the `Required Field` button.
 - Click the `Save` button.
 
-![Password Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_14.png)
+![Password Save](../../../static/img/Add-Wi-Fi-Profile/image_14.png)
 
 ### connectHiddenSSID:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `connectHiddenSSID` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
@@ -155,16 +155,16 @@ This screen will appear.
 - Set `False` in the `Value` field.
 - Click the `Save` button.
 
-![Hidden SSID Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_15.png)
+![Hidden SSID Save](../../../static/img/Add-Wi-Fi-Profile/image_15.png)
 
 ### overwrite:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Add-Wi-Fi-Profile\image_8.png)
+![Add Parameter](../../../static/img/Add-Wi-Fi-Profile/image_8.png)
 
 This screen will appear.
 
-![Parameter Setup](..\..\..\static\img\Add-Wi-Fi-Profile\image_9.png)
+![Parameter Setup](../../../static/img/Add-Wi-Fi-Profile/image_9.png)
 
 - Set `overwrite` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
@@ -172,29 +172,29 @@ This screen will appear.
 - Set `True` in the `Value` field.
 - Click the `Save` button.
 
-![Overwrite Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_16.png)
+![Overwrite Save](../../../static/img/Add-Wi-Fi-Profile/image_16.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Add-Wi-Fi-Profile\image_17.png)
+![Add Row](../../../static/img/Add-Wi-Fi-Profile/image_17.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Add-Wi-Fi-Profile\image_18.png)
+![Blank Function](../../../static/img/Add-Wi-Fi-Profile/image_18.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Selection](..\..\..\static\img\Add-Wi-Fi-Profile\image_19.png)
+![PowerShell Script Selection](../../../static/img/Add-Wi-Fi-Profile/image_19.png)
 
-![PowerShell Script Selected](..\..\..\static\img\Add-Wi-Fi-Profile\image_20.png)
+![PowerShell Script Selected](../../../static/img/Add-Wi-Fi-Profile/image_20.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Function](..\..\..\static\img\Add-Wi-Fi-Profile\image_21.png)
+![PowerShell Script Function](../../../static/img/Add-Wi-Fi-Profile/image_21.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -245,11 +245,11 @@ $ProjectName = 'Add-WifiProfile'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -281,42 +281,43 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![PowerShell Script Execution](..\..\..\static\img\Add-Wi-Fi-Profile\image_22.png)
+![PowerShell Script Execution](../../../static/img/Add-Wi-Fi-Profile/image_22.png)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row](..\..\..\static\img\Add-Wi-Fi-Profile\image_23.png)
+![Add Row](../../../static/img/Add-Wi-Fi-Profile/image_23.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Add-Wi-Fi-Profile\image_24.png)
+![Blank Function](../../../static/img/Add-Wi-Fi-Profile/image_24.png)
 
 Search and select the `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\Add-Wi-Fi-Profile\image_25.png)
+![Script Log Selection](../../../static/img/Add-Wi-Fi-Profile/image_25.png)
 
-![Script Log Selected](..\..\..\static\img\Add-Wi-Fi-Profile\image_26.png)
+![Script Log Selected](../../../static/img/Add-Wi-Fi-Profile/image_26.png)
 
 The following function will pop up on the screen:
 
-![Script Log Function](..\..\..\static\img\Add-Wi-Fi-Profile\image_27.png)
+![Script Log Function](../../../static/img/Add-Wi-Fi-Profile/image_27.png)
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Script Log Save](..\..\..\static\img\Add-Wi-Fi-Profile\image_28.png)
+![Script Log Save](../../../static/img/Add-Wi-Fi-Profile/image_28.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](..\..\..\static\img\Add-Wi-Fi-Profile\image_29.png)
+![Save Script](../../../static/img/Add-Wi-Fi-Profile/image_29.png)
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Add-Wi-Fi-Profile\image_30.png)
+![Completed Task](../../../static/img/Add-Wi-Fi-Profile/image_30.png)
 
 ## Output
 
 - Script Log
 
 "
+

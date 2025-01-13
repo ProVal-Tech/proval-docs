@@ -48,3 +48,4 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
 
 
+

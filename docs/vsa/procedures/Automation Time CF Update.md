@@ -19,9 +19,9 @@ This is the main Procedure used by all others to perform the CF update logic.
 | 2:57:46 pm 18-Oct-22     | Automation Time Saved CF Update                | Success THEN                              | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
 | 2:57:46 pm 18-Oct-22     | Automation Time Saved CF Update                | dev-win11-danvm has now saved 60 Minutes This Month and 60 Overall. | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
 | 2:57:46 pm 18-Oct-22     | Execute Shell command - Get Results to Variable | Success THEN                              | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
-| 2:57:44 pm 18-Oct-22     | Execute Shell command - Get Results to Variable-0007 | Executing command in standard shell as user: set /a 0 + 60 >"c:\provaltech\commandresults-671888159.txt" 2>&1 | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
+| 2:57:44 pm 18-Oct-22     | Execute Shell command - Get Results to Variable-0007 | Executing command in standard shell as user: set /a 0 + 60 >"c:/provaltech/commandresults-671888159.txt" 2>&1 | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
 | 2:57:43 pm 18-Oct-22     | Execute Shell command - Get Results to Variable | Success THEN                              | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
-| 2:57:41 pm 18-Oct-22     | Execute Shell command - Get Results to Variable-0007 | Executing command in standard shell as user: set /a 0 + 60 >"c:\provaltech\commandresults-883386547.txt" 2>&1 | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
+| 2:57:41 pm 18-Oct-22     | Execute Shell command - Get Results to Variable-0007 | Executing command in standard shell as user: set /a 0 + 60 >"c:/provaltech/commandresults-883386547.txt" 2>&1 | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
 | 2:57:40 pm 18-Oct-22     | Automation Time Saved CF Update                | Adding 60 to the Automation Timer on agent dev-win11-danvm. | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
 | 2:57:40 pm 18-Oct-22     | Universal Variable - Read                      | Success THEN                              | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
 | 2:57:40 pm 18-Oct-22     | Universal Variable - Read-0002                 | Persisting variable data.                 | [provaltech.com/dan.hicks](https://provaltech.com/dan.hicks) |
@@ -44,6 +44,7 @@ This is the main Procedure used by all others to perform the CF update logic.
 
 Agent Procedure Logs  
 Solution CFs
+
 
 
 

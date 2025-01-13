@@ -14,7 +14,7 @@ This script installs WebEx from Webex Website
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Install---WebEX\image_1.png)
+![Sample Run](../../static/img/Install---WebEX/image_1.png)
 
 ## Dependencies
 
@@ -72,6 +72,7 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
 
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Software---Exclaimer-Install-(MAC-&-Windows)\image_1.png)
+![Sample Run](../../../static/img/Software---Exclaimer-Install-(MAC-&-Windows)/image_1.png)
 
 ## Dependencies
 
@@ -40,6 +40,7 @@ MAC Exclaimer Download link -- [https://outlookclient.exclaimer.net/csua/Exclaim
 ## Output
 
 - Script log
+
 
 
 

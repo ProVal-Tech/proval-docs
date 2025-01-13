@@ -22,10 +22,11 @@ The solution's purpose is to keep tabs on end users to determine how long they l
 
 ## Implementation
 
-- Place the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool in the `Utilities` folder at `LTShare\Transfer` on Automate Server/WebDav.
+- Place the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool in the `Utilities` folder at `LTShare/Transfer` on Automate Server/WebDav.
 - Import the script.
 - Import the dataview.
 - Schedule the script to run periodically against the concerned machines. It is suggested not to schedule the script against a bunch of computers as it needs to be executed frequently for proper output.
 - Ask the user to log off of their computer or wait for them to log off after the first execution of the script. The script/tool cannot collect data/samples unless the logged-in user re-logins after the installation of the tool.
+
 
 

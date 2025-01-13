@@ -13,16 +13,16 @@ unlisted: false
 This script is designed to establish a remote monitoring system for Windows computers, specifically focusing on tracking CPU temperature. The script utilizes the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) tool to monitor CPU temperatures and generate alerts if any sensor consistently records temperatures exceeding the permissible limit.
 
 **Tool Placement:**
-- Save the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file in the `LTShare` directory (or `Webdav` for hosted partners) under the path `Transfer\Tools\CPUTempMon\CPUTempMon.exe`.
+- Save the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file in the `LTShare` directory (or `Webdav` for hosted partners) under the path `Transfer/Tools/CPUTempMon/CPUTempMon.exe`.
 - Create the `CPUTempMon` folder, place the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file, Unblock the file if it's blocked, and execute an `iisreset` command after placing the file.
 
-![Image](..\..\..\static\img\CPU-Temperature-Monitor---Create\image_1.png)
+![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_1.png)
 
 **IIS Reload for Hosted Partners:**
 - Hosted partners can utilize the `IIS Reload` option under `Server Status` after completing the tool placement to ensure proper functionality.
 
-![Image](..\..\..\static\img\CPU-Temperature-Monitor---Create\image_2.png)  
-![Image](..\..\..\static\img\CPU-Temperature-Monitor---Create\image_3.png)
+![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_2.png)  
+![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_3.png)
 
 **Temperature Threshold Calculation:**
 - The permissible limit is determined by subtracting the defined `offset` in Automate. This `offset` can be set either in the system property or the client-level EDF.
@@ -38,24 +38,24 @@ This script is designed to establish a remote monitoring system for Windows comp
 
 **First run:** For the initial run, you must execute the script with the `Set_Environment` Parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.
 
-![Image](..\..\..\static\img\CPU-Temperature-Monitor---Create\image_4.png)
+![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_4.png)
 
 **Regular Execution:**  
-![Image](..\..\..\static\img\CPU-Temperature-Monitor---Create\image_5.png)
+![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_5.png)
 
 **With Force Parameter:** The script’s general function is to compare the monitor set currently installed on the machine with the configuration in the EDFs and system properties. If discrepancies are detected, the monitor will be re-created. However, the force switch can be used to forcefully re-create the monitor set.
 
-![Image](..\..\..\static\img\CPU-Temperature-Monitor---Create\image_6.png)
+![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_6.png)
 
 ## Variables
 
 | Name                    | Description                                               |
 |-------------------------|-----------------------------------------------------------|
 | ProjectName             | CPUTempMon                                               |
-| WorkingDirectory         | C:\PorgramData\_Automation\Script\CPUTempMon            |
+| WorkingDirectory         | C:/PorgramData/_Automation/Script/CPUTempMon            |
 | DownloadURL             | [https://%redirhostname%/labtech/transfer/Tools/CPUTempMon/CPUTempMon.exe](https://%redirhostname%/labtech/transfer/Tools/CPUTempMon/CPUTempMon.exe) |
-| ToolPath                | C:\PorgramData\_Automation\Script\CPUTempMon\CPUTempMon.exe |
-| ScriptPath              | C:\PorgramData\_Automation\Script\CPUTempMon\CPUTempMon.ps1 |
+| ToolPath                | C:/PorgramData/_Automation/Script/CPUTempMon/CPUTempMon.exe |
+| ScriptPath              | C:/PorgramData/_Automation/Script/CPUTempMon/CPUTempMon.ps1 |
 
 ## User Parameters
 
@@ -106,5 +106,6 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Script Logs
 - Files on Machine
 - Remote Monitor
+
 
 

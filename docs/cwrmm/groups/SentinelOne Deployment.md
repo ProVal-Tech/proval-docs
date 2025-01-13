@@ -20,7 +20,7 @@ The purpose of this group is to deploy SentinelOne agent on Windows, Linux and M
 
 ## Summary
 
-![Image](..\..\..\static\img\SentinelOne-Deployment\image_1.png)
+![Image](../../../static/img/SentinelOne-Deployment/image_1.png)
 
 **Group Type:** Dynamic  
 **Group Name:** SentinelOne Deployment  
@@ -28,7 +28,7 @@ The purpose of this group is to deploy SentinelOne agent on Windows, Linux and M
 
 ### Criteria
 
-![Image](..\..\..\static\img\SentinelOne-Deployment\image_2.png)
+![Image](../../../static/img/SentinelOne-Deployment/image_2.png)
 
 - Installed Software does not contain any of `Sentinel Agent,Sentinelone`
 - Endpoint type not equal to `Vmware-ESXi`
@@ -37,9 +37,9 @@ The purpose of this group is to deploy SentinelOne agent on Windows, Linux and M
 - Available should be True.
 - OS does not contain any of the out of support machines like `windows 7,8 and server 2003,2008,2012`  
   Click on the Dropdown --> expand Microsoft --> Click on 7, 8 Pro, 8.1  
-  ![Image](..\..\..\static\img\SentinelOne-Deployment\image_3.png)  
+  ![Image](../../../static/img/SentinelOne-Deployment/image_3.png)  
   Now Expand Server and click on 2003 R2 Service Pack 2, 2008 and 2012  
-  ![Image](..\..\..\static\img\SentinelOne-Deployment\image_4.png)  
+  ![Image](../../../static/img/SentinelOne-Deployment/image_4.png)  
 
 - SentinelOne Group Key should not equal to `NA`
 - SentinelOne Site Key should not equal to `NA`
@@ -47,8 +47,9 @@ The purpose of this group is to deploy SentinelOne agent on Windows, Linux and M
 ## Group
 
 Once adding the above criteria, click the Save button to save the Group.  
-![Image](..\..\..\static\img\SentinelOne-Deployment\image_5.png)  
+![Image](../../../static/img/SentinelOne-Deployment/image_5.png)  
 
-![Image](..\..\..\static\img\SentinelOne-Deployment\image_6.png)  
+![Image](../../../static/img/SentinelOne-Deployment/image_6.png)  
+
 
 

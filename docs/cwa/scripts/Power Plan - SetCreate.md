@@ -14,7 +14,7 @@ It is an Automate implementation of the agnostic script [Set-PowerPlan](https://
 
 The Settings for the Power Plan are required to create or modify the Power Plan. These settings can be provided to the script in two ways: through the `Settings` parameter as a hash table or from a CSV file. A template for the CSV file is attached to this ITGlue document. Details regarding the columns of the CSV file are explained later in this document.
 
-File Path: `C:\ProgramData\_Automation\script\Set-PowerPlan\Set-PowerPlan.ps1`  
+File Path: `C:/ProgramData/_Automation/script/Set-PowerPlan/Set-PowerPlan.ps1`  
 File Hash (Sha256): `28C5503857406511327E72114784F559799CEBFE96A6D323FAA2A25F56F8488C`  
 File Hash (MD5): `7882C5890DCDFA7CE81DD62AB093A1F8`  
 
@@ -22,7 +22,7 @@ File Hash (MD5): `7882C5890DCDFA7CE81DD62AB093A1F8`
 
 Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](https://proval.itglue.com/DOC-5078775-16980557) internal monitor.
 
-![Sample Run](..\..\..\static\img\Power-Plan---SetCreate\image_1.png)
+![Sample Run](../../../static/img/Power-Plan---SetCreate/image_1.png)
 
 ## Sample Run (Manual)
 
@@ -37,13 +37,13 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 - Refrain from modifying any columns other than the `Direct Power Setting (AC)` and `Direct Power Setting (DC)` columns.
 - Keep the first row of the CSV file unchanged.
   
-![CSV Example](..\..\..\static\img\Power-Plan---SetCreate\image_2.png)
+![CSV Example](../../../static/img/Power-Plan---SetCreate/image_2.png)
 
 - Rename the file to a name relevant to the PowerProfile you intend to create or edit.
 - In this example, I am renaming it to `Test_Power_Plan` as I will be creating a Power Plan named `Test Power Plan` on the machine.
-- Put the file in the `LTShare` (WebDav for hosted partners) within the `Transfer\PowerPlan` directory. If the `PowerPlan` directory doesn't exist under the `Transfer` directory, you may need to create it.
+- Put the file in the `LTShare` (WebDav for hosted partners) within the `Transfer/PowerPlan` directory. If the `PowerPlan` directory doesn't exist under the `Transfer` directory, you may need to create it.
 
-![Directory Example](..\..\..\static\img\Power-Plan---SetCreate\image_3.png)
+![Directory Example](../../../static/img/Power-Plan---SetCreate/image_3.png)
 
 - Alternatively, you can use the [ProVal_-_High_Performance.csv](https://proval.itglue.com/attachments/15784030) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
 - Run the script on the relevant machine(s) with the specified parameters to create the `Test Power Plan` with the power settings outlined in the CSV file `Test_Power_Plan`:
@@ -51,7 +51,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **PowerPlan:** Test Power Plan  
 **CSVPath:** Test_Power_Plan  
 
-![Run Example](..\..\..\static\img\Power-Plan---SetCreate\image_4.png)
+![Run Example](../../../static/img/Power-Plan---SetCreate/image_4.png)
 
 **Example 2:** Placing the CSV file in a downloadable location other than LTShare.
 
@@ -64,7 +64,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **PowerPlan:** Test Power Plan  
 **CSVPath:** [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv)  
 
-![Download Example](..\..\..\static\img\Power-Plan---SetCreate\image_5.png)
+![Download Example](../../../static/img/Power-Plan---SetCreate/image_5.png)
 
 **Example 3:** Using HashTable
 
@@ -103,25 +103,25 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
 ```
 
-![Run Configuration](..\..\..\static\img\Power-Plan---SetCreate\image_6.png)
+![Run Configuration](../../../static/img/Power-Plan---SetCreate/image_6.png)
 
 ## Automation
 
-- Edit and place the [configuration file](https://proval.itglue.com/attachments/14048399) in the `LTShare (WebDav for hosted partners)` within the `Transfer\PowerPlan` directory as described in the `Example 1` of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](https://proval.itglue.com/attachments/15784030) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
+- Edit and place the [configuration file](https://proval.itglue.com/attachments/14048399) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in the `Example 1` of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](https://proval.itglue.com/attachments/15784030) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
 
-![Automation Example](..\..\..\static\img\Power-Plan---SetCreate\image_7.png)
+![Automation Example](../../../static/img/Power-Plan---SetCreate/image_7.png)
 
 - Set the appropriate option in Client-Level EDF `PowerPlan Automation` to enable it for the client's machines. Leaving it blank is equivalent to setting it to `Not Enabled`.
 
-![Client-Level EDF](..\..\..\static\img\Power-Plan---SetCreate\image_8.png)
+![Client-Level EDF](../../../static/img/Power-Plan---SetCreate/image_8.png)
 
 - Set the Name of the csv file placed in the LTShare to the `PowerPlan Configuration File` EDF.
 
-![CSV Name Example](..\..\..\static\img\Power-Plan---SetCreate\image_9.png)
+![CSV Name Example](../../../static/img/Power-Plan---SetCreate/image_9.png)
 
 - Set the Name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and it can be anything.
 
-![PowerPlan Name Example](..\..\..\static\img\Power-Plan---SetCreate\image_10.png)
+![PowerPlan Name Example](../../../static/img/Power-Plan---SetCreate/image_10.png)
 
 **Note:**
 
@@ -163,7 +163,7 @@ Here's a breakdown of the columns in the CSV file:
 | Name              | Description                                |
 |-------------------|--------------------------------------------|
 | ProjectName       | Set-PowerPlan                              |
-| WorkingDirectory   | `C:\ProgramData\_Automation\Script\Set-PowerPlan` |
+| WorkingDirectory   | `C:/ProgramData/_Automation/Script/Set-PowerPlan` |
 
 ### User Parameters
 
@@ -171,7 +171,7 @@ Here's a breakdown of the columns in the CSV file:
 |-------------------|-------------------------------------------------------------------------|------------------|----------------------------------------------------------|
 | PowerPlan         | Test Power Plan                                                          | True             | Name of the Power Plan to modify or create.             |
 | Setting           | @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}} | Partially        | Hash Table of the Power Plan settings to Set.           |
-| CSVPath           | [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv) (if the CSV file of the settings is placed at a downloadable location) OR Test_Power_Plan (if the CSV file of the settings is placed in the LTShare (WebDav for the hosted partners) under the `Transfer\PowerPlan` directory) | Partially        | Download URL of the CSV file if the file is placed at a downloadable location. OR Name of the CSV file if the file is placed in the LTShare (WebDav for the hosted partners) under the `Transfer\PowerPlan` directory. |
+| CSVPath           | [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv) (if the CSV file of the settings is placed at a downloadable location) OR Test_Power_Plan (if the CSV file of the settings is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory) | Partially        | Download URL of the CSV file if the file is placed at a downloadable location. OR Name of the CSV file if the file is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory. |
 | Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](https://proval.itglue.com/DOC-5078775-16980557) internal monitor. |
 
 ## Client-Level EDF
@@ -182,7 +182,7 @@ Here's a breakdown of the columns in the CSV file:
 | PowerPlan Configuration File| ProVal_-_High_Performance | Text      | PowerPlan  | Set the Name of the csv file placed in the LTShare to the `PowerPlan Configuration File` EDF. |
 | PowerPlan Name             | ProVal High Performance | Text      | PowerPlan  | Set the Name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and it can be anything. |
 
-![Client-Level EDF Example](..\..\..\static\img\Power-Plan---SetCreate\image_11.png)
+![Client-Level EDF Example](../../../static/img/Power-Plan---SetCreate/image_11.png)
 
 ## Computer-Level EDF
 
@@ -194,5 +194,6 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
+
 
 

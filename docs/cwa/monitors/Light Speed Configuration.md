@@ -56,12 +56,12 @@ SELECT '' as `AgentID`,
 'ProVal - Client Specific - Light Speed Configuration' as `Name`,
 '6' as `CheckAction`,
 @AlertAction as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%\\\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'%NAME% %STATUS% on %CLIENTNAME%////%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%////%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command "if( !(Test-Path \\\\"$Env:ProgramData\\\\LightSpeedHelper\\\\LightSpeedEdgeSiteList.xml\\\\") ) {return \\'Absent\\'} else {return \\'Present\\'}"' as `DataOut`,
+'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "if( !(Test-Path ////"$Env:ProgramData////LightSpeedHelper////LightSpeedEdgeSiteList.xml////") ) {return //'Absent//'} else {return //'Present//'}"' as `DataOut`,
 '16' as `Comparor`,
 '10|Present|11|(Pre%7CAb)sent|10|Absent' as `DataIn`,
 '' as `IDField`,
@@ -179,12 +179,12 @@ SELECT '' as `AgentID`,
 'ProVal - Client Specific - Light Speed Configuration' as `Name`,
 '6' as `CheckAction`,
 @AlertAction as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%\\\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'%NAME% %STATUS% on %CLIENTNAME%////%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%////%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command "if( !(Test-Path \\\\"$Env:ProgramData\\\\LightSpeedHelper\\\\LightSpeedEdgeSiteList.xml\\\\") ) {return \\'Absent\\'} else {return \\'Present\\'}"' as `DataOut`,
+'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "if( !(Test-Path ////"$Env:ProgramData////LightSpeedHelper////LightSpeedEdgeSiteList.xml////") ) {return //'Absent//'} else {return //'Present//'}"' as `DataOut`,
 '16' as `Comparor`,
 '10|Present|11|(Pre%7CAb)sent|10|Absent' as `DataIn`,
 '' as `IDField`,
@@ -263,5 +263,6 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 
 - Now execute your query from a RAWSQL monitor set.
 - Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
+
 
 

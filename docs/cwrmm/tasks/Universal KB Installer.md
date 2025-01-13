@@ -14,15 +14,15 @@ The purpose of this task is to install the desired patch on the Windows machines
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Universal-KB-Installer\image_3.png)
+![Sample Run 1](../../../static/img/Universal-KB-Installer/image_3.png)
 
 Leave the Reboot parameter Untick to prevent the machine from rebooting.
 
-![Sample Run 2](..\..\..\static\img\Universal-KB-Installer\image_4.png)
+![Sample Run 2](../../../static/img/Universal-KB-Installer/image_4.png)
 
 Tick the Reboot parameter to reboot the machine.
 
-![Sample Run 3](..\..\..\static\img\Universal-KB-Installer\image_5.png)
+![Sample Run 3](../../../static/img/Universal-KB-Installer/image_5.png)
 
 ## User Parameters
 
@@ -35,40 +35,40 @@ Tick the Reboot parameter to reboot the machine.
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](..\..\..\static\img\Universal-KB-Installer\image_6.png)
+![Task Creation 1](../../../static/img/Universal-KB-Installer/image_6.png)
 
-![Task Creation 2](..\..\..\static\img\Universal-KB-Installer\image_7.png)
+![Task Creation 2](../../../static/img/Universal-KB-Installer/image_7.png)
 
 **Name:** Universal KB installer  
 **Description:** The purpose of this task is to install the desired patch on the Windows machines.  
 **Category:** Custom  
 
-![Task Creation 3](..\..\..\static\img\Universal-KB-Installer\image_8.png)
+![Task Creation 3](../../../static/img/Universal-KB-Installer/image_8.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameter Addition 1](..\..\..\static\img\Universal-KB-Installer\image_9.png)
+![Parameter Addition 1](../../../static/img/Universal-KB-Installer/image_9.png)
 
 This screen will appear.
 
-![Parameter Addition 2](..\..\..\static\img\Universal-KB-Installer\image_10.png)
+![Parameter Addition 2](../../../static/img/Universal-KB-Installer/image_10.png)
 
 - Set `KBNumber` in the `Parameter Name` field.
 - Select `String` from the `Parameter Type` dropdown menu.
 - Toggle Required Field.
 - Click the `Save` button.
 
-![Parameter Addition 3](..\..\..\static\img\Universal-KB-Installer\image_11.png)
+![Parameter Addition 3](../../../static/img/Universal-KB-Installer/image_11.png)
 
 It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
 
-![Parameter Confirmation](..\..\..\static\img\Universal-KB-Installer\image_12.png)
+![Parameter Confirmation](../../../static/img/Universal-KB-Installer/image_12.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameter Addition 4](..\..\..\static\img\Universal-KB-Installer\image_13.png)
+![Parameter Addition 4](../../../static/img/Universal-KB-Installer/image_13.png)
 
 - Set `Reboot` in the `Parameter Name` Field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
@@ -77,31 +77,31 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Click the `Save` button.
 - Click the `Confirm` button to create the parameter.
 
-![Parameter Confirmation 2](..\..\..\static\img\Universal-KB-Installer\image_14.png)
+![Parameter Confirmation 2](../../../static/img/Universal-KB-Installer/image_14.png)
 
 Parameters will look like as shown below:
 
-![Parameters Overview](..\..\..\static\img\Universal-KB-Installer\image_15.png)
+![Parameters Overview](../../../static/img/Universal-KB-Installer/image_15.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Universal-KB-Installer\image_16.png)
+![Add Row](../../../static/img/Universal-KB-Installer/image_16.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Universal-KB-Installer\image_17.png)
+![Blank Function](../../../static/img/Universal-KB-Installer/image_17.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Selection](..\..\..\static\img\Universal-KB-Installer\image_18.png)
+![PowerShell Script Selection](../../../static/img/Universal-KB-Installer/image_18.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Popup](..\..\..\static\img\Universal-KB-Installer\image_19.png)
+![PowerShell Script Popup](../../../static/img/Universal-KB-Installer/image_19.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -158,15 +158,16 @@ if ($Reboot -eq '1' -and $RebootRequired -eq 'True') {
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log](..\..\..\static\img\Universal-KB-Installer\image_20.png)
+![Script Log](../../../static/img/Universal-KB-Installer/image_20.png)
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Universal-KB-Installer\image_21.png)
+![Completed Task](../../../static/img/Universal-KB-Installer/image_21.png)
 
 ## Output
 
 - Script Log
+
 
 
 

@@ -16,20 +16,20 @@ This script uninstalls the Mac from the MAC agent.
 
 Please create a new "PowerShell" style script to implement this script.
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_1.png)  
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_2.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_1.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_2.png)  
 
 **Name:** Huntress Agent (Uninstall) - MAC  
 **Description:** This script uninstalls the Mac from the MAC agent.  
 **Category:** Custom  
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_3.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_3.png)  
 
 # Script
 
 ## Row 1 Function: Bash Script
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_4.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_4.png)  
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
@@ -53,7 +53,7 @@ else
 fi
 ```
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_5.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_5.png)  
 
 ## Step 2 Function: Script Log
 
@@ -65,20 +65,20 @@ fi
 %Output%
 ```
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_6.png)  
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_7.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_6.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_7.png)  
 
 ## Step 3 Logic: If/Then
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_8.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_8.png)  
 
 ## ROW 3a Condition: Output Contains
 
 - Type `Failed to uninstall Huntress` in the Value box.  
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_9.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_9.png)  
 
 ## ROW 3b Function: Script Exit
 
@@ -90,8 +90,8 @@ fi
 Huntress failed to uninstall. Refer to the logs: %Output%
 ```
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_10.png)  
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_11.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_10.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_11.png)  
 
 ## Step 4 Function: Script Exit
 
@@ -102,12 +102,12 @@ Huntress failed to uninstall. Refer to the logs: %Output%
 ```
 ```
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_10.png)  
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_12.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_10.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_12.png)  
 
 ## Step 5: Complete Script
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_13.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_13.png)  
 
 ## Script Deployment
 
@@ -116,10 +116,11 @@ Go to Automations > Tasks.
 Search for Huntress Agent (Uninstall) - MAC.  
 Then click on Schedule and provide the parameters detail as it is necessary for the script completion.  
 
-![Image](..\..\..\static\img\Huntress-Agent-(Uninstall)---MAC\image_14.png)  
+![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_14.png)  
 
 ## Output
 
 - Script log
+
 
 

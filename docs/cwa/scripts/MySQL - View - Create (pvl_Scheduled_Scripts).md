@@ -16,10 +16,11 @@ Run the script on any computer to create the views, and afterward, remove the sc
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\MySQL---View---Create-(pvl_Scheduled_Scripts)\image_1.png)
+![Sample Run](../../../static/img/MySQL---View---Create-(pvl_Scheduled_Scripts)/image_1.png)
 
 ## Output
 
 - Custom View
+
 
 

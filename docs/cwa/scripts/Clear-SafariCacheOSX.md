@@ -31,8 +31,8 @@ Clears all safari cache files and folders from osx devices
 ## Output
 
 ```
-    .\Clear-SafariCacheOSX-log.txt
-    .\Clear-SafariCacheOSX-error.txt
+    ./Clear-SafariCacheOSX-log.txt
+    ./Clear-SafariCacheOSX-error.txt
 ```
 
 ## Locations
@@ -43,5 +43,6 @@ Clears all safari cache files and folders from osx devices
 | ConnectWise RMM           |                                         |
 | Kaseya                    |                                         |
 | Datto RMM                 |                                         |
+
 
 

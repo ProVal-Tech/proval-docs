@@ -19,7 +19,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Shadow-Copy---Audit-Complete-Statistics-DV\image_1.png)
+![Sample Run](../../../static/img/Shadow-Copy---Audit-Complete-Statistics-DV/image_1.png)
 
 ## Dependencies
 
@@ -49,5 +49,6 @@ The script will run the SQL statement above against the Automate server to inser
 - Script logs.
 - Custom table [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668).
 - Dataview [Dataview - Windows - Shadow Copy State [Script]](https://proval.itglue.com/DOC-5078775-8105265).
+
 
 

@@ -16,13 +16,13 @@ This Autofix script is designed to initiate the installation of the latest avail
 
 This Autofix script is intended for implementation through the [CWM - Automate - Internal Monitor - Last Cumulative Update > 45 Days and < 60 Days](https://proval.itglue.com/DOC-5078775-16208970) monitor set, using the `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing` alert template. However, it can also be manually executed simultaneously.
 
-![Sample Run](..\..\..\static\img\Out-of-Date-Cumulative-Updates-Autofix-without-Ticketing\image_1.png)
+![Sample Run](../../../static/img/Out-of-Date-Cumulative-Updates-Autofix-without-Ticketing/image_1.png)
 
 ## Implementation
 
 - Import the script from the `ProSync Client` plugin.
 - During the initial execution, execute the script against a Windows computer with the script parameter `Set_Environment` configured as `1`. This action will import the necessary System Properties required for solution management.  
-  ![Initial Execution](..\..\..\static\img\Out-of-Date-Cumulative-Updates-Autofix-without-Ticketing\image_2.png)
+  ![Initial Execution](../../../static/img/Out-of-Date-Cumulative-Updates-Autofix-without-Ticketing/image_2.png)
 - Configure the necessary values within the system properties, as elaborated in the System Properties section of the document.
 
 ## Dependencies
@@ -47,5 +47,6 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 ## Output
 
 - Script Log
+
 
 

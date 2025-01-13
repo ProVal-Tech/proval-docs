@@ -24,7 +24,8 @@ Computer Level SentinelOne Management Server. Updated by [SentinelOne Management
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---Computer-Level-S1-Mgmt-Server\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---Computer-Level-S1-Mgmt-Server\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---Computer-Level-S1-Mgmt-Server/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---Computer-Level-S1-Mgmt-Server/image_2.png)
+
 
 

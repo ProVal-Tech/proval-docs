@@ -23,12 +23,12 @@ unlisted: false
    'ProVal - Production - Hyper-V - Integration Service Out of Date' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'Integration Service Out of Date on %CLIENTNAME%\\%COMPUTERNAME%~~~ %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!Integration Service Out of Date on %CLIENTNAME%\\%COMPUTERNAME%~~~%STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+   'Integration Service Out of Date on %CLIENTNAME%//%COMPUTERNAME%~~~ %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!Integration Service Out of Date on %CLIENTNAME%//%COMPUTERNAME%~~~%STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
    '0' as `ContactID`,
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\system32\\cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq \'Update required\')} | Foreach-Object {Write-Host \"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)\"}} catch {}"' as `DataOut`,
+   'C://Windows//system32//cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq /'Update required/')} | Foreach-Object {Write-Host /"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/"}} catch {}"' as `DataOut`,
    '9' as `Comparor`,
    'IntegrationServicesState:' as `DataIn`,
    '' as `IDField`,
@@ -92,12 +92,12 @@ unlisted: false
    'ProVal - Production - Hyper-V - Integration Service Out of Date' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'Integration Service Out of Date on %CLIENTNAME%\\%COMPUTERNAME%~~~ %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!Integration Service Out of Date on %CLIENTNAME%\\%COMPUTERNAME%~~~%STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+   'Integration Service Out of Date on %CLIENTNAME%//%COMPUTERNAME%~~~ %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!Integration Service Out of Date on %CLIENTNAME%//%COMPUTERNAME%~~~%STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
    '0' as `ContactID`,
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\system32\\cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq \'Update required\')} | Foreach-Object {Write-Host \"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)\"}} catch {}"' as `DataOut`,
+   'C://Windows//system32//cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq /'Update required/')} | Foreach-Object {Write-Host /"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/"}} catch {}"' as `DataOut`,
    '9' as `Comparor`,
    'IntegrationServicesState:' as `DataIn`,
    '' as `IDField`,
@@ -152,5 +152,6 @@ unlisted: false
    ```
 
 4. **Locate your remote monitor** by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

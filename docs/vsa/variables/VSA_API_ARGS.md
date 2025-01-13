@@ -3,7 +3,7 @@ id: 'vsa_vsa_api_args'
 title: 'VSA API Arguments for VSAToolbox'
 title_meta: 'VSA API Arguments for VSAToolbox'
 keywords: ['vsa', 'api', 'arguments', 'vsatoolbox', 'parameters']
-description: 'This document outlines the necessary parameters required for using VSAToolbox, a set of tools designed to interact with a Kaseya VSA server\'s API. It includes details on dependencies, example data, and the correct format for API arguments.'
+description: 'This document outlines the necessary parameters required for using VSAToolbox, a set of tools designed to interact with a Kaseya VSA server/'s API. It includes details on dependencies, example data, and the correct format for API arguments.'
 tags: ['configuration', 'networking', 'security', 'setup', 'software']
 draft: false
 unlisted: false
@@ -22,9 +22,9 @@ What VSA content relies on this Managed Variable?
 ## Example Data
 
 <div class='text-section scrollable'>
-### ![Image](..\..\..\static\img\VSA_API_ARGS\image_1.png)
+### ![Image](../../../static/img/VSA_API_ARGS/image_1.png)
 
-![Image](..\..\..\static\img\VSA_API_ARGS\image_2.png)  
+![Image](../../../static/img/VSA_API_ARGS/image_2.png)  
 
 Please note the arguments have changed in VSAToolbox from previously used procedures. Ensure the arguments have been updated to match those seen below. Verify there are two hyphen's -- before each argument.
 
@@ -41,5 +41,6 @@ The username to use for VSA API authentication.
 `--pat '00000000-0000-0000-0000-000000000000'`  
 The personal access token to use for VSA REST API authentication.
 </div>
+
 
 

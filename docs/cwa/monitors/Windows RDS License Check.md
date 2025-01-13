@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Comparator | Result | Interval |
 |--------------|----------------|-------------|------------|--------|----------|
-| System       | Default        | C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -Namespace 'Root/CIMV2/TerminalServices' -Class Win32_TerminalServiceSetting | Select-Object -ExpandProperty LicensingType" | Regex Match | 2|4 | Daily |
+| System       | Default        | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -Namespace 'Root/CIMV2/TerminalServices' -Class Win32_TerminalServiceSetting | Select-Object -ExpandProperty LicensingType" | Regex Match | 2|4 | Daily |
 
 ## Dependencies
 
@@ -41,6 +41,7 @@ Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licens
 **Failure:** We have detected Licensing issue with your RDS Licensing Server. Possibilities are either the License is configured or has expired. Please check.  
 
 **Success:** License issue is resolved now.
+
 
 
 

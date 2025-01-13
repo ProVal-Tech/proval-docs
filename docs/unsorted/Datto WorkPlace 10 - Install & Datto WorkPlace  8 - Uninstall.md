@@ -14,7 +14,7 @@ This script will install the Datto Workplace 10.3.0.281 and uninstall any Datto 
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Datto-WorkPlace-10---Install-&-Datto-WorkPlace--8---Uninstall\image_1.png)
+![Sample Run](../../static/img/Datto-WorkPlace-10---Install-&-Datto-WorkPlace--8---Uninstall/image_1.png)
 
 ## Dependencies
 
@@ -30,6 +30,7 @@ This script will install the Datto Workplace 10.3.0.281 and uninstall any Datto 
 ## Output
 
 - Script log
+
 
 
 

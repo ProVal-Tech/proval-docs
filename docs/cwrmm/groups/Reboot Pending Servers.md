@@ -26,11 +26,11 @@ This group contains the server endpoint where the reboot is pending. This group 
 
 ### 1. Create Dynamic Groups:
 
-![Create Dynamic Groups](..\..\..\static\img\Reboot-Pending-Servers\image_1.png)
+![Create Dynamic Groups](../../../static/img/Reboot-Pending-Servers/image_1.png)
 
 ### 2. Reboot Pending Servers
 
-![Reboot Pending Servers](..\..\..\static\img\Reboot-Pending-Servers\image_2.png)
+![Reboot Pending Servers](../../../static/img/Reboot-Pending-Servers/image_2.png)
 
 **Criteria:**
 
@@ -38,5 +38,6 @@ This group contains the server endpoint where the reboot is pending. This group 
 - The agent available equals to True.
 - The OS contains any of Windows 2016, Windows 2019, and Windows 2022.
 - The Exclude reboot custom field equals False.
+
 
 

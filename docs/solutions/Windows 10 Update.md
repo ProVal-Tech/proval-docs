@@ -53,7 +53,7 @@ For a manual run:
    - Please go to the "Windows 10 - Upgrade Pending Reports" group and ensure that an alert template to run the Windows 10 Update Stats - Retrieve script on alert is assigned to the monitor.
 
 2. I am not receiving the Pre or Post installation Pop-Up.
-   - Please ensure that the Prompt-User agnostic script is populating into the `programdata\_automation\script\Prompt-User` folder.
+   - Please ensure that the Prompt-User agnostic script is populating into the `programdata/_automation/script/Prompt-User` folder.
    - Please ensure that the automate script User-Show-PromptMessage is present in automate.
 
 3. The user was prompted for the reboot, but the computer never rebooted.
@@ -63,5 +63,6 @@ For a manual run:
 
 4. The Windows 10 - Feature Update - Install Latest script is failing at line 13.
    - Please add the Windows 10 - Update Stats - Retrieve script to your automate implementation.
+
 
 

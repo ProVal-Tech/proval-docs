@@ -14,7 +14,7 @@ This script will create the `plugin_proval_dns_extradata` table and populate tha
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Create-and-Populate-plugin_proval_dns_extradata\image_1.png)
+![Sample Run](../../../static/img/Create-and-Populate-plugin_proval_dns_extradata/image_1.png)
 
 ## Dependencies
 
@@ -53,5 +53,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 

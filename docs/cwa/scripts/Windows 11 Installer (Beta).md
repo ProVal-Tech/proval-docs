@@ -18,7 +18,7 @@ File Hash: 2BDFE75FFE305F4DD438E82811399BFE3AA8045CE38F5A5162E9832768765237
 ## Sample Run
 
 Install Windows 11 from the ProVal file repo, ignoring compatibility requirements.  
-![Image](..\..\..\static\img\Windows-11-Installer-(Beta)\image_1.png)
+![Image](../../../static/img/Windows-11-Installer-(Beta)/image_1.png)
 
 Install Windows 11 from a target HTTP multipart download ignoring reboot.  
 [https://my.repo.site/repo/Windows11.zip.001](https://my.repo.site/repo/Windows11.zip.001)  
@@ -26,7 +26,7 @@ Install Windows 11 from a target HTTP multipart download ignoring reboot.
 [https://my.repo.site/repo/Windows11.zip.003](https://my.repo.site/repo/Windows11.zip.003)  
 ...  
 [https://my.repo.site/repo/Windows11.zip.520](https://my.repo.site/repo/Windows11.zip.520)  
-![Image](..\..\..\static\img\Windows-11-Installer-(Beta)\image_2.png)
+![Image](../../../static/img/Windows-11-Installer-(Beta)/image_2.png)
 
 ## Dependencies
 
@@ -46,5 +46,6 @@ Install Windows 11 from a target HTTP multipart download ignoring reboot.
 ## Output
 
 - Script log
+
 
 

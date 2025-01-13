@@ -18,7 +18,7 @@ Alert Template: △ Custom - Ticket Creation - Computer
 
 To exclude the self-signed, Microsoft-generated, and any certificate with a GUID in Subject, uncomment the following lines in the Additional Condition. But before adding any exclusions, it is suggested to review the [EPM - Network - Dataview - SSL Certificate Audit](https://proval.itglue.com/5078775/docs/9382198) dataview to ensure that enabling these exclusions is not going to exclude any important certificate.
 
-![Image](..\..\..\static\img\Certificate-Expiration--30-Days\image_1.png)
+![Image](../../../static/img/Certificate-Expiration--30-Days/image_1.png)
 
 ## Dependencies
 
@@ -40,14 +40,14 @@ SSL Cert Expiration < 30 Days - %computername%
 
 **Message on Failure:**  
 ```
-The SSL Cert found on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% is currently approaching its expiration date and should be renewed. The SSL Certificate Information is listed below:
+The SSL Cert found on %CLIENTNAME%/%COMPUTERNAME% at %LOCATIONNAME% is currently approaching its expiration date and should be renewed. The SSL Certificate Information is listed below:
 
 %FIELDNAME%
 ```
 
 **Message on Success:**  
 ```
-The SSL Cert found on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% is no longer reporting any issues with Expiration. Closing ticket.
+The SSL Cert found on %CLIENTNAME%/%COMPUTERNAME% at %LOCATIONNAME% is no longer reporting any issues with Expiration. Closing ticket.
 ```
 
 **%FIELDNAME% Example:**  
@@ -58,6 +58,7 @@ Expiration: 2023-04-20 19:59:59
 
 ## Example Ticket
 
-![Image](..\..\..\static\img\Certificate-Expiration--30-Days\image_2.png)
+![Image](../../../static/img/Certificate-Expiration--30-Days/image_2.png)
+
 
 

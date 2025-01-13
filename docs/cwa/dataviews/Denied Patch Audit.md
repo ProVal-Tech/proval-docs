@@ -30,3 +30,4 @@ This dataview displays the list of denied patches in the environment.
 | Set Time          | Time of the patch denial                                         |
 
 
+

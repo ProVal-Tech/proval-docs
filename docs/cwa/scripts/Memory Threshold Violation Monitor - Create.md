@@ -18,23 +18,23 @@ The script creates remote monitors that trigger an alert when the Memory usage o
 
 ## Before you proceed
 
-The remote monitor created by this script employs the "\Memory\% Committed Bytes In Use" performance counter, while it should be noted that the default monitor set in Automate utilizes the "Memory\Available MBytes" performance counter.
+The remote monitor created by this script employs the "/Memory/% Committed Bytes In Use" performance counter, while it should be noted that the default monitor set in Automate utilizes the "Memory/Available MBytes" performance counter.
 
-The choice between "\Memory\Available MBytes" and "\Memory\% Committed Bytes In Use" as a performance counter for memory monitoring depends on your specific monitoring goals and what aspect of memory usage you want to track. Here's a brief explanation of both counters:
+The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In Use" as a performance counter for memory monitoring depends on your specific monitoring goals and what aspect of memory usage you want to track. Here's a brief explanation of both counters:
 
-1. **\Memory\Available MBytes**:
+1. **/Memory/Available MBytes**:
    - This counter measures the amount of physical memory (RAM) available, in megabytes, at a given moment. It represents the memory that the operating system can allocate to applications without causing excessive paging (swapping data to disk).
    - Useful when you want to monitor the immediate availability of free memory for applications to use.
    - Includes the memory allocated by idle processes as well that can be released to accommodate new processes.
 
-2. **\Memory\% Committed Bytes In Use**:
+2. **/Memory/% Committed Bytes In Use**:
    - This counter represents the percentage of the total virtual address space that is currently committed to physical memory. In simpler terms, it shows how much of the memory allocated for running processes is in use.
    - Useful when you want to monitor the overall system memory load and understand how much of the allocated memory is currently in use.
    - Monitoring this counter can help you gauge memory utilization across all running processes and detect potential memory bottlenecks.
    - Excludes the memory allocated by idle processes that can be released to accommodate new processes.
 
-- If you want to keep an eye on the available physical memory to ensure that your applications have enough memory to operate smoothly, "\Memory\Available MBytes" is a suitable choice.
-- If you're interested in understanding the overall memory utilization of your system and identifying situations where memory is being highly committed, then "\Memory\% Committed Bytes In Use" is more appropriate.
+- If you want to keep an eye on the available physical memory to ensure that your applications have enough memory to operate smoothly, "/Memory/Available MBytes" is a suitable choice.
+- If you're interested in understanding the overall memory utilization of your system and identifying situations where memory is being highly committed, then "/Memory/% Committed Bytes In Use" is more appropriate.
 
 ## Implementation
 
@@ -124,16 +124,17 @@ The choice between "\Memory\Available MBytes" and "\Memory\% Committed Bytes In 
 
 **Alert Message on Success:** `This is an automated update to inform you that the high Memory utilization issue reported earlier has now been resolved. The system has detected that the Memory usage has returned to normal and the performance has improved.`
 
-**Alert Message on Failure:** `The Memory usage on the machine %COMPUTERNAME% located at %CLIENTNAME%\%LOCATIONNAME% is currently reporting high Memory usage. Please investigate the issue and take appropriate actions to address the root cause. As per the severity of the issue, it is recommended to prioritize this ticket accordingly.`
+**Alert Message on Failure:** `The Memory usage on the machine %COMPUTERNAME% located at %CLIENTNAME%/%LOCATIONNAME% is currently reporting high Memory usage. Please investigate the issue and take appropriate actions to address the root cause. As per the severity of the issue, it is recommended to prioritize this ticket accordingly.`
 
 **Sample Ticket:** The ticket illustrated here was created by setting the upper threshold value to `30` and the lower threshold value to `20`. However, it's important to note that this example is purely for demonstration purposes. It does not advocate for or encourage the creation of Memory usage tickets for machines where the Memory usage exceeds `30%`.
 
 **Sample Remote Monitor:**
 
-![Sample Remote Monitor](..\..\..\static\img\Memory-Threshold-Violation-Monitor---Create\image_1.png)
+![Sample Remote Monitor](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image_1.png)
 
 ## Output
 
 - Remote Monitors
+
 
 

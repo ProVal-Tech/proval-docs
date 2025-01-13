@@ -14,8 +14,8 @@ Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM impleme
 
 ## Sample Run
 
-![Image 1](..\..\..\static\img\Update-Microsoft-365-Apps\image_1.png)  
-![Image 2](..\..\..\static\img\Update-Microsoft-365-Apps\image_2.png)  
+![Image 1](../../../static/img/Update-Microsoft-365-Apps/image_1.png)  
+![Image 2](../../../static/img/Update-Microsoft-365-Apps/image_2.png)  
 
 ## Dependencies
 
@@ -25,31 +25,31 @@ Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM impleme
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Image 3](..\..\..\static\img\Update-Microsoft-365-Apps\image_3.png)  
-![Image 4](..\..\..\static\img\Update-Microsoft-365-Apps\image_4.png)  
+![Image 3](../../../static/img/Update-Microsoft-365-Apps/image_3.png)  
+![Image 4](../../../static/img/Update-Microsoft-365-Apps/image_4.png)  
 
 **Name:** `Update Microsoft 365 Apps`  
 **Description:** `Runs the Office Click-to-Run client to update Microsoft 365 Apps.`  
 **Category:** `Application`  
-![Image 5](..\..\..\static\img\Update-Microsoft-365-Apps\image_5.png)  
+![Image 5](../../../static/img/Update-Microsoft-365-Apps/image_5.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image 6](..\..\..\static\img\Update-Microsoft-365-Apps\image_6.png)  
+![Image 6](../../../static/img/Update-Microsoft-365-Apps/image_6.png)  
 
 A blank function will appear.  
-![Image 7](..\..\..\static\img\Update-Microsoft-365-Apps\image_7.png)  
+![Image 7](../../../static/img/Update-Microsoft-365-Apps/image_7.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![Image 8](..\..\..\static\img\Update-Microsoft-365-Apps\image_8.png)  
-![Image 9](..\..\..\static\img\Update-Microsoft-365-Apps\image_9.png)  
+![Image 8](../../../static/img/Update-Microsoft-365-Apps/image_8.png)  
+![Image 9](../../../static/img/Update-Microsoft-365-Apps/image_9.png)  
 
 The following function will pop up on the screen:  
-![Image 10](..\..\..\static\img\Update-Microsoft-365-Apps\image_10.png)  
+![Image 10](../../../static/img/Update-Microsoft-365-Apps/image_10.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -59,11 +59,11 @@ $ProjectName = 'Update-Office'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -97,34 +97,35 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Image 11](..\..\..\static\img\Update-Microsoft-365-Apps\image_11.png)  
+![Image 11](../../../static/img/Update-Microsoft-365-Apps/image_11.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Image 12](..\..\..\static\img\Update-Microsoft-365-Apps\image_12.png)  
+![Image 12](../../../static/img/Update-Microsoft-365-Apps/image_12.png)  
 
 A blank function will appear.  
-![Image 13](..\..\..\static\img\Update-Microsoft-365-Apps\image_13.png)  
+![Image 13](../../../static/img/Update-Microsoft-365-Apps/image_13.png)  
 
 Search and select the `Script Log` function.  
-![Image 14](..\..\..\static\img\Update-Microsoft-365-Apps\image_14.png)  
+![Image 14](../../../static/img/Update-Microsoft-365-Apps/image_14.png)  
 
 The following function will pop up on the screen:  
-![Image 15](..\..\..\static\img\Update-Microsoft-365-Apps\image_15.png)  
+![Image 15](../../../static/img/Update-Microsoft-365-Apps/image_15.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Image 16](..\..\..\static\img\Update-Microsoft-365-Apps\image_16.png)  
+![Image 16](../../../static/img/Update-Microsoft-365-Apps/image_16.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Image 17](..\..\..\static\img\Update-Microsoft-365-Apps\image_17.png)  
+![Image 17](../../../static/img/Update-Microsoft-365-Apps/image_17.png)  
 
 ## Completed Task
 
-![Image 18](..\..\..\static\img\Update-Microsoft-365-Apps\image_18.png)  
+![Image 18](../../../static/img/Update-Microsoft-365-Apps/image_18.png)  
 
 ## Output
 
 - Script log
+
 
 

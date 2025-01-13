@@ -14,10 +14,10 @@ This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScal
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Set---DisplayScaling\image_1.png)
+![Sample Run](../../../static/img/Set---DisplayScaling/image_1.png)
 
 - In order to set display scale to 100%  
-![Set Display Scale](..\..\..\static\img\Set---DisplayScaling\image_2.png)
+![Set Display Scale](../../../static/img/Set---DisplayScaling/image_2.png)
 
 ## Dependencies
 
@@ -32,49 +32,49 @@ This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScal
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Create Script](..\..\..\static\img\Set---DisplayScaling\image_3.png)  
-![Script Creation](..\..\..\static\img\Set---DisplayScaling\image_4.png)
+![Create Script](../../../static/img/Set---DisplayScaling/image_3.png)  
+![Script Creation](../../../static/img/Set---DisplayScaling/image_4.png)
 
 **Name:** Set - DisplayScaling  
 **Description:** This task sets custom Display scaling on existing as well as new users for Windows machines.  
 **Category:** Custom  
-![Category](..\..\..\static\img\Set---DisplayScaling\image_5.png)
+![Category](../../../static/img/Set---DisplayScaling/image_5.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](..\..\..\static\img\Set---DisplayScaling\image_6.png)  
+![Add Parameter](../../../static/img/Set---DisplayScaling/image_6.png)  
 
 This screen will appear.  
-![Parameter Screen](..\..\..\static\img\Set---DisplayScaling\image_7.png)
+![Parameter Screen](../../../static/img/Set---DisplayScaling/image_7.png)
 
 - Set `ScalePercentage` in the `Parameter Name` field.
 - Toggle Required Field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Set---DisplayScaling\image_8.png)
+![Save Button](../../../static/img/Set---DisplayScaling/image_8.png)
 
 - It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Button](..\..\..\static\img\Set---DisplayScaling\image_9.png)
+![Confirm Button](../../../static/img/Set---DisplayScaling/image_9.png)
 
 Parameters will look like as shown below:  
-![Parameters Example](..\..\..\static\img\Set---DisplayScaling\image_10.png)
+![Parameters Example](../../../static/img/Set---DisplayScaling/image_10.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\Set---DisplayScaling\image_11.png)
+![Add Row](../../../static/img/Set---DisplayScaling/image_11.png)
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Set---DisplayScaling\image_12.png)
+![Blank Function](../../../static/img/Set---DisplayScaling/image_12.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Function](..\..\..\static\img\Set---DisplayScaling\image_13.png)
+![PowerShell Function](../../../static/img/Set---DisplayScaling/image_13.png)
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Set---DisplayScaling\image_14.png)
+![Function Popup](../../../static/img/Set---DisplayScaling/image_14.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
@@ -96,11 +96,11 @@ $ProjectName = 'Set-DisplayScaling'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -138,14 +138,15 @@ Get-Content -Path $LogPath
 ### Row 2: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](..\..\..\static\img\Set---DisplayScaling\image_15.png)
+![Script Log](../../../static/img/Set---DisplayScaling/image_15.png)
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Set---DisplayScaling\image_16.png)
+![Completed Task](../../../static/img/Set---DisplayScaling/image_16.png)
 
 ## Output
 
 - Script Log
+
 
 

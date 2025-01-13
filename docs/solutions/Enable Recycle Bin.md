@@ -35,7 +35,7 @@ Note: Once you enable the Active Directory Recycle Bin you cannot turn it off.
    - `△ Custom - Execute Script - AD - Enable AD Recycle Bin`
 
 4. Reload the System Cache
-   - ![Reload System Cache](..\..\static\img\Enable-Recycle-Bin\image_1.png)
+   - ![Reload System Cache](../../static/img/Enable-Recycle-Bin/image_1.png)
 
 5. Import the following [AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146) monitor in the steps shown below:
    - Open a RAWSQL monitor
@@ -44,6 +44,7 @@ Note: Once you enable the Active Directory Recycle Bin you cannot turn it off.
    - Import the monitor remote monitor [AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146) using the 04th step in the [Import - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-14764163) document. Run the provided SQL in the RAWSQL monitor.
    - [AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146) Monitor will be automatically created on "Domain Controllers" group limited to search "DC without Recycle Bin" and with alert template `△ Custom - Execute Script - AD - Enable AD Recycle Bin`
    - Ensure that the alert template is running the [AD - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-7937042) script.
+
 
 
 

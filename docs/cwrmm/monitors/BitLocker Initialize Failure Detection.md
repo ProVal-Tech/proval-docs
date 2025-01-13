@@ -21,17 +21,17 @@ This monitor creates a ticket if the BitLocker Initialize fails to enable the Bi
 Windows Workstations.  
 This should target the group 'Windows 10/11' as shown below:
 
-![Windows 10/11 Group](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_1.png)
+![Windows 10/11 Group](../../../static/img/BitLocker-Initialize-Failure-Detection/image_1.png)
 
 ## Implementation
 
 1. From the left bar select Alert Management -> Monitor  
    
-   ![Select Monitor](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_2.png)  
+   ![Select Monitor](../../../static/img/BitLocker-Initialize-Failure-Detection/image_2.png)  
    
    Then click 'Create Monitor'  
    
-   ![Create Monitor](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_3.png)
+   ![Create Monitor](../../../static/img/BitLocker-Initialize-Failure-Detection/image_3.png)
 
 2. Fill in the mandatory columns on the left side.  
    Name: Bitlocker Init Failure  
@@ -40,21 +40,21 @@ This should target the group 'Windows 10/11' as shown below:
    Severity: Critical Non-Impact Alerts  
    Family: Desktop Security  
 
-   ![Mandatory Fields](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_4.png)
+   ![Mandatory Fields](../../../static/img/BitLocker-Initialize-Failure-Detection/image_4.png)
 
 3. Fill in the condition on the right side.  
    Follow the screenshot:  
    
-   ![Condition Screenshot](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_5.png)
+   ![Condition Screenshot](../../../static/img/BitLocker-Initialize-Failure-Detection/image_5.png)
 
 4. Select the target.  
    Click on Select Target:  
    
-   ![Select Target](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_6.png)  
+   ![Select Target](../../../static/img/BitLocker-Initialize-Failure-Detection/image_6.png)  
    
    Then click on Device Group and then search for the word reboot, and then select the 'Windows 10/11' group as shown below:  
    
-   ![Windows 10/11 Group Selection](..\..\..\static\img\BitLocker-Initialize-Failure-Detection\image_1.png)
+   ![Windows 10/11 Group Selection](../../../static/img/BitLocker-Initialize-Failure-Detection/image_1.png)
 
 ## Ticketing
 
@@ -63,5 +63,6 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
 
 

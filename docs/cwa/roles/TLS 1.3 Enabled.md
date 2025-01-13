@@ -12,7 +12,7 @@ unlisted: false
 
 Checks registry for value if stored credentials flag is set.
 
-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client:Enabled
+HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled
 
 If it is set to 1 - enabled  
 If it is not set - disabled  
@@ -35,7 +35,8 @@ Related Dataview
 
 | Detection String                                             | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------|------------|--------|----------------|
-| {%-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client:Enabled-%} | Equals     | 1      | Windows        |
+| {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled-%} | Equals     | 1      | Windows        |
+
 
 
 

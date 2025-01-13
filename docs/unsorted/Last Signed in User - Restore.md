@@ -14,7 +14,7 @@ This script will restore the backup logon user to the login screen of the machin
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Last-Signed-in-User---Restore\image_1.png)
+![Sample Run](../../static/img/Last-Signed-in-User---Restore/image_1.png)
 
 ## Variables
 
@@ -26,11 +26,12 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Process
 
-This script will restore the backup logon user to the login screen of the machine. This first checks for the logonbackup file i.e. 'C:\Temp\Logonbackup\logonexport.reg'. If found then restore it on the machine and remove this backup after restore.
+This script will restore the backup logon user to the login screen of the machine. This first checks for the logonbackup file i.e. 'C:/Temp/Logonbackup/logonexport.reg'. If found then restore it on the machine and remove this backup after restore.
 
 ## Output
 
 - Script log
+
 
 
 

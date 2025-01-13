@@ -16,6 +16,7 @@ This role definition helps you track down machines where 365 updates are set on 
 
 | Detection String                                           | Comparator | Result                                                                                               | Applicable OS |
 |-----------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------|----------------|
-| {%-HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configura... | Contains   | [http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6](http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6) | Windows        |
+| {%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Contains   | [http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6](http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6) | Windows        |
+
 
 

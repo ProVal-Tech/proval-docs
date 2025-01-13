@@ -14,14 +14,14 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-Microsoft-Visual-C++-Redistributable\image_1.png)
+![Sample Run](../../../static/img/Uninstall-Microsoft-Visual-C++-Redistributable/image_1.png)
 
 ## Variables
 
 | Name              | Description                      |
 |-------------------|----------------------------------|
 | ProjectName       | Invoke-VCRedistModule            |
-| WorkingDirectory   | C:\ProgramData\_automation\script\Uninstall-VCRedist |
+| WorkingDirectory   | C:/ProgramData/_automation/script/Uninstall-VCRedist |
 
 #### User Parameters
 
@@ -33,5 +33,6 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 ## Output
 
 - Script Log
+
 
 

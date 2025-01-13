@@ -26,14 +26,14 @@ Intended Target: Windows Computers
 1. Import the Sysmon Install Script
 2. Set the optional config file as a user parameter, or leave blank if you do not have a specified config file.
 
-![Image](..\..\static\img\Sysmon\image_1.png) or ![Image](..\..\static\img\Sysmon\image_2.png)
+![Image](../../static/img/Sysmon/image_1.png) or ![Image](../../static/img/Sysmon/image_2.png)
 
 ## Uninstall Sysmon From an Endpoint (Sysmon - Uninstall)
 
 1. Import the Sysmon - Uninstall Script
 2. Run the Script
 
-![Image](..\..\static\img\Sysmon\image_3.png)
+![Image](../../static/img/Sysmon/image_3.png)
 
 ### Optional Script Enhancement Suggestions
 
@@ -47,11 +47,11 @@ Intended Target: Windows Computers
    4. Alert Template - Service - Restart autocorrect script template.
    5. Check Action: System
    6. Check Type: Run File
-   7. Execute Info: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "If ((Get-Service | Where-Object -Property Name -Match 'Sysmon').count -eq 0) {return } else { Get-Service | Where-Object -Property Name -Match 'Sysmon' | Foreach-Object { if ($_.status -ne 'Running') { return $_.DisplayName; } else { return } } }"`
+   7. Execute Info: `C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "If ((Get-Service | Where-Object -Property Name -Match 'Sysmon').count -eq 0) {return } else { Get-Service | Where-Object -Property Name -Match 'Sysmon' | Foreach-Object { if ($_.status -ne 'Running') { return $_.DisplayName; } else { return } } }"`
    8. Condition: Missing
    9. Interval: 300
 
-![Image](..\..\static\img\Sysmon\image_4.png) ![Image](..\..\static\img\Sysmon\image_5.png)
+![Image](../../static/img/Sysmon/image_4.png) ![Image](../../static/img/Sysmon/image_5.png)
 
 ## Variables
 
@@ -78,6 +78,7 @@ Intended Target: Windows Computers
 ## Output
 
 - Script log
+
 
 
 

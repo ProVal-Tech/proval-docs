@@ -19,7 +19,7 @@ Additionally, the script will send an email to [alerts@provaltech.com](mailto:al
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\ScreenConnect---Repair-RMM+,-Autofix,-Globals\image_1.png)
+![Sample Run](../../../static/img/ScreenConnect---Repair-RMM+,-Autofix,-Globals/image_1.png)
 
 ## Dependencies
 
@@ -39,11 +39,11 @@ Additionally, the script will send an email to [alerts@provaltech.com](mailto:al
 
 ## Ticketing
 
-**Subject:** `ScreenConnect - Failed - %ClientName%\\%ComputerName%`
+**Subject:** `ScreenConnect - Failed - %ClientName%//%ComputerName%`
 
 **Ticket Body for Session GUID issue:**  
 ```
-Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
+Autofix failed to fix ScreenConnect's issue for %ClientName%//%ComputerName%
 Reason: Script was unable to set the session GUID on the machine post installation.
 Please reinstall ScreenConnect Client Manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
@@ -51,7 +51,7 @@ Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 
 **Ticket Body for installation failure:**  
 ```
-Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
+Autofix failed to fix ScreenConnect's issue for %ClientName%//%ComputerName%
 Reason: Script was unable to Install ScreenConnect Client on the machine.
 Install Command Result: @InstallResult@
 Please reinstall the application manually.
@@ -60,7 +60,7 @@ Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 
 **Ticket Body for uninstallation failure:**  
 ```
-Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
+Autofix failed to fix ScreenConnect's issue for %ClientName%//%ComputerName%
 Reason: Automate has executed the autofix script 3 times over the last 7 days but the problem still persists.
 Please reinstall the ScreenConnect Client Manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
@@ -68,10 +68,11 @@ Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 
 **Ticket Body for more than 3 attempts in a week:**  
 ```
-Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
+Autofix failed to fix ScreenConnect's issue for %ClientName%//%ComputerName%
 Reason: Automate has executed the autofix script 3 times over the last 7 days but the problem still persists.
 Please reinstall the ScreenConnect Client Manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 ```
+
 
 

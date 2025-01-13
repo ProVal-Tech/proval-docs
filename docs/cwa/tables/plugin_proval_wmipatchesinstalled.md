@@ -29,3 +29,4 @@ Stores individual patch information per computer and their installation status f
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
 
 
+

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This solution will monitor the `C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the update orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM.
+This solution will monitor the `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the update orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM.
 
 *Note: Task + Device group will need to be created before the monitor can be created.*
 
@@ -19,18 +19,18 @@ This solution will monitor the `C:\Windows\System32\Tasks\Microsoft\Windows\Upda
 ### Monitor Creation
 Navigate to Automation > Monitors  
 Click "Add Monitor"  
-![Monitor Creation](..\..\..\static\img\Update-Orchestrator-Bouncer\image_1.png)
+![Monitor Creation](../../../static/img/Update-Orchestrator-Bouncer/image_1.png)
 
 ---
 
 ### Monitor Configuration:
 - **Name:** Update Orchestrator Bouncer
-- **Description:** This solution will monitor the `C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the update orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM.
+- **Description:** This solution will monitor the `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the update orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM.
 - **Type:** Script
 - **Family:** Patch Management
 - **Severity:** Other
 
-![Monitor Configuration](..\..\..\static\img\Update-Orchestrator-Bouncer\image_2.png)
+![Monitor Configuration](../../../static/img/Update-Orchestrator-Bouncer/image_2.png)
 
 ### Conditions:
 - **Run Script on:** Schedule
@@ -38,25 +38,25 @@ Click "Add Monitor"
 - **Script Language:** PowerShell
 - **Script:**
   ```
-  Test-Path 'C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\Reboot'
+  Test-Path 'C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot'
   ```
 - **Criteria:** Contains > AND > "True"
 - **Run Automated Task:** [Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460454#version=published&documentMode=view)
 
-![Conditions](..\..\..\static\img\Update-Orchestrator-Bouncer\image_3.png)
+![Conditions](../../../static/img/Update-Orchestrator-Bouncer/image_3.png)
 
 ### Ticket Resolution
 - **Automatically resolve:** Enabled
 - **Run same script as above**
 - **Criteria:** Contains > AND > "False"
 
-![Ticket Resolution](..\..\..\static\img\Update-Orchestrator-Bouncer\image_4.png)
+![Ticket Resolution](../../../static/img/Update-Orchestrator-Bouncer/image_4.png)
 
 ## Resources:
 *Note: Task + Device group will need to be created before the monitor can be created.*  
 This monitor is intentionally aimed at the Update Orchestrator group.
 
-![Resources](..\..\..\static\img\Update-Orchestrator-Bouncer\image_5.png)
+![Resources](../../../static/img/Update-Orchestrator-Bouncer/image_5.png)
 
 ## Dependencies
 - [CW RMM - Custom Field - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824368)
@@ -65,5 +65,6 @@ This monitor is intentionally aimed at the Update Orchestrator group.
 
 ## Ticketing
 This solution does technically make tickets, but the tickets are designed to autoclose as soon as the machine runs the task to update PowerShell.
+
 
 

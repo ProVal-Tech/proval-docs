@@ -30,3 +30,4 @@ Stores the data fetched by the [CWM - Automate - Script - Get Lastest Installed 
 | ReleaseDate    | Date        | Release date of the latest installed Cumulative Update |
 
 
+

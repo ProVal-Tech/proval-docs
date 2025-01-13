@@ -20,9 +20,9 @@ The task installs the latest version of `Dell Command | Update for Windows Unive
 
 ## Sample Run
 
-![Sample Run Image 1](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_1.png)  
-![Sample Run Image 2](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_2.png)  
-![Sample Run Image 3](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_3.png)
+![Sample Run Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_1.png)  
+![Sample Run Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_2.png)  
+![Sample Run Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_3.png)
 
 ## Dependencies
 
@@ -34,29 +34,29 @@ The task installs the latest version of `Dell Command | Update for Windows Unive
 |-----------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------|-------|----------|---------------------------------------------|
 | Argument  | - `/version`<br>- `/scan`<br>- `/scan -updateType=bios,firmware,driver`<br>- `/applyUpdates -updateType=bios,firmware -silent -reboot=disable`<br>- `/driverInstall -silent -reboot=disable` | [Supported commands/arguments reference](https://www.dell.com/support/manuals/en-us/command-update/dellcommandupdate_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) | /scan   | Text  | False    | Command to run with Dell Command | Update  |
 
-![User Parameter Image](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_4.png)
+![User Parameter Image](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_4.png)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_5.png)  
-![Task Creation Image 2](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_6.png)
+![Task Creation Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_5.png)  
+![Task Creation Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_6.png)
 
 **Name:** Dell Command Update - Install + Command Handler  
 **Description:** The task installs the latest version of `Dell Command | Update for Windows Universal` from `Winget` if it's missing or outdated. The `Argument` parameter can be used to run the specified command or argument. If the parameter is left blank, the '/scan' command will be executed.  
 **Category:** Application  
 
-![Task Creation Image 3](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_7.png)
+![Task Creation Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_7.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameters Image 1](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_8.png)
+![Parameters Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_8.png)
 
 This screen will appear.  
-![Parameters Image 2](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_9.png)
+![Parameters Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_9.png)
 
 - Set `Argument` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -64,29 +64,29 @@ This screen will appear.
 - Set `/scan` in the `Default Value` field.
 - Click the `Save` button.
 
-![Parameters Image 3](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_10.png)
+![Parameters Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_10.png)
 
 Click the `Confirm` button to save the parameter.  
-![Parameters Image 4](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_11.png)
+![Parameters Image 4](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_11.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Task Image 1](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_12.png)
+![Task Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_12.png)
 
 A blank function will appear.  
-![Task Image 2](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_13.png)
+![Task Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_13.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![Task Image 3](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_14.png)  
-![Task Image 4](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_15.png)
+![Task Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_14.png)  
+![Task Image 4](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_15.png)
 
 The following function will pop up on the screen:  
-![Task Image 5](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_16.png)
+![Task Image 5](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_16.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `3600` seconds. Click the `Save` button.
 
@@ -108,7 +108,7 @@ if ( (Get-CimInstance -ClassName Win32_OperatingSystem).Name -notmatch 'Windows 
 }
 
 $argument = '@Argument@'
-if ( $argument -match '\SArgument\S' -or ( $null -eq $argument ) ) {
+if ( $argument -match '/SArgument/S' -or ( $null -eq $argument ) ) {
     $argument = '/Scan'
 } elseif ( $argument.length -lt 2 ) {
     $argument = '/Scan'
@@ -123,27 +123,27 @@ $ProgressPreference = 'SilentlyContinue'
 ### Latest Available Version ###
 $iwr = (Invoke-WebRequest 'https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandUpdate/Universal' -UseBasicParsing).content
 $iwr = $iwr -split ('{') -split ('}')
-$iwr = $iwr -match 'manifests\\/d\\/Dell\\/CommandUpdate\\/'
-$iwr = $iwr -split ('\"')
-$iwr = $iwr -match '^[0-9\\.]{1,}$'
-$iwr = $iwr -match '[1-9][0-9]{0,}\\.[0-9]{1,}\\.[0-9]{1,}'
+$iwr = $iwr -match 'manifests///d///Dell///CommandUpdate///'
+$iwr = $iwr -split ('/"')
+$iwr = $iwr -match '^[0-9//.]{1,}$'
+$iwr = $iwr -match '[1-9][0-9]{0,}//.[0-9]{1,}//.[0-9]{1,}'
 $versions = $iwr | ForEach-Object { [version]$_ }
 $maxVersion = $versions | Sort-Object | Select-Object -Last 1
 Write-Information "Latest Available Version: $maxVersion" -InformationAction Continue
 
 ### Installed Version ###
-$version = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match [regex]::Escape('Dell Command | Update') }).DisplayVersion | Sort-Object | Select-Object -Last 1
+$version = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match [regex]::Escape('Dell Command | Update') }).DisplayVersion | Sort-Object | Select-Object -Last 1
 
 ### Install Function ###
 function Install-DCU {
     ## Variables ##
     $projectName = 'Invoke-WingetProcessor'
-    $workingDirectory = "C:\\ProgramData\\_Automation\\Script\\$projectName"
-    $logPath = "$workingDirectory\\$projectName-log.txt"
-    $errorLogPath = "$workingDirectory\\$projectName-error.txt"
+    $workingDirectory = "C://ProgramData//_Automation//Script//$projectName"
+    $logPath = "$workingDirectory//$projectName-log.txt"
+    $errorLogPath = "$workingDirectory//$projectName-error.txt"
     $BaseURL = 'https://file.provaltech.com/repo'
     $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-    $PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+    $PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 
     ## Directory ##
     if ( !(Test-Path $WorkingDirectory) ) {
@@ -279,7 +279,7 @@ function Invoke-Argument {
 
     ## Variables ##
     $projectName = 'DCU-CLI'
-    $workingDirectory = "C:\\ProgramData\\_Automation\\Script\\$projectName"
+    $workingDirectory = "C://ProgramData//_Automation//Script//$projectName"
 
     ## Directory ##
     if ( !(Test-Path $WorkingDirectory) ) {
@@ -298,10 +298,10 @@ function Invoke-Argument {
     }
 
     ## Exe Path ##
-    if ( Test-Path -Path 'C:\\Program Files (x86)\\Dell\\CommandUpdate\\dcu-cli.exe' ) {
-        $exePath = 'C:\\Program Files (x86)\\Dell\\CommandUpdate\\dcu-cli.exe'
-    } elseif ( Test-Path -Path 'C:\\Program Files\\Dell\\CommandUpdate\\dcu-cli.exe' ) {
-        $exePath = 'C:\\Program Files\\Dell\\CommandUpdate\\dcu-cli.exe'
+    if ( Test-Path -Path 'C://Program Files (x86)//Dell//CommandUpdate//dcu-cli.exe' ) {
+        $exePath = 'C://Program Files (x86)//Dell//CommandUpdate//dcu-cli.exe'
+    } elseif ( Test-Path -Path 'C://Program Files//Dell//CommandUpdate//dcu-cli.exe' ) {
+        $exePath = 'C://Program Files//Dell//CommandUpdate//dcu-cli.exe'
     } else {
         throw 'Executable for the Dell Command Update is missing.'
     }
@@ -345,37 +345,38 @@ if ( !$Version ) {
 Invoke-Argument -argument $argument
 ```
 
-![Task Image 6](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_17.png)
+![Task Image 6](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_17.png)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Task Image 7](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_18.png)
+![Task Image 7](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_18.png)
 
 A blank function will appear.  
-![Task Image 8](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_13.png)
+![Task Image 8](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_13.png)
 
 Search and select the `Script Log` function.  
-![Task Image 9](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_19.png)
+![Task Image 9](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_19.png)
 
-![Task Image 10](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_20.png)
+![Task Image 10](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_20.png)
 
 The following function will pop up on the screen:  
-![Task Image 11](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_21.png)
+![Task Image 11](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_21.png)
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Task Image 12](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_22.png)
+![Task Image 12](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_22.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Task Image 13](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_23.png)
+![Task Image 13](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_23.png)
 
 ## Completed Task
 
-![Completed Task Image](..\..\..\static\img\Dell-Command-Update---Install-+-Command-Handler\image_24.png)
+![Completed Task Image](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_24.png)
 
 ## Output
 
 - Script log
+
 
 
 

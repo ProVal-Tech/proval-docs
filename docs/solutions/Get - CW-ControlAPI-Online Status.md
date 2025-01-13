@@ -21,3 +21,4 @@ This solution provides a way to compare ConnectWise Automate online devices with
 | [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](https://proval.itglue.com/DOC-5078775-9915631) | Dataview      | Displays the data from the custom table compared to state in automate. |
 
 
+

@@ -23,7 +23,7 @@ This remote monitor is configured to detect when the domain admin account is loc
 | System       | 127.0.0.1     | Run File   | **REDACTED**| State Based | 900      |
 
 **State Conditions:**  
-![State Conditions](..\..\..\static\img\Domain-Admin-Account-Lockout\image_1.png)
+![State Conditions](../../../static/img/Domain-Admin-Account-Lockout/image_1.png)
 
 ## Dependencies
 
@@ -33,10 +33,10 @@ This remote monitor is configured to detect when the domain admin account is loc
 ## Target
 
 Domain Controllers  
-![Target Image](..\..\..\static\img\Domain-Admin-Account-Lockout\image_2.png)  
-![Target Image](..\..\..\static\img\Domain-Admin-Account-Lockout\image_3.png)  
+![Target Image](../../../static/img/Domain-Admin-Account-Lockout/image_2.png)  
+![Target Image](../../../static/img/Domain-Admin-Account-Lockout/image_3.png)  
 
-The monitor set should be limited to the `Server Roles\Server Role - AD - Infrastructure Master` search.
+The monitor set should be limited to the `Server Roles/Server Role - AD - Infrastructure Master` search.
 
 ## Ticketing
 
@@ -47,12 +47,13 @@ Domain Admin Locked Account Detected on %computername%
 Domain Admin Locked Account Detected on %computername%. Refer to the below detail:  
 %RESULT%.  
 **Reference Ticket:**  
-![Reference Ticket](..\..\..\static\img\Domain-Admin-Account-Lockout\image_4.png)
+![Reference Ticket](../../../static/img/Domain-Admin-Account-Lockout/image_4.png)
 
 ## Implementation
 
 Please follow the below implementation document to install this content:
 
 - [Implement - Remote Monitor - Domain Admin Account Lockout](https://proval.itglue.com/DOC-5078775-16951789)
+
 
 

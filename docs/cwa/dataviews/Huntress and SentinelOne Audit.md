@@ -31,3 +31,4 @@ This dataview will show Sentinel One and Huntress installation status (allowed o
 | SentinelOne Missing Count   | SentinelOne missing count on agents of each location     |
 
 
+

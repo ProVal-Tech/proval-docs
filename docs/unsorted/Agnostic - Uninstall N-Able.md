@@ -26,15 +26,16 @@ If yes, then it performs the complete removal of the Windows Agent (N-Able).
 Uninstall N-Able
 
 ```
-.\Uninstall-N-Able.ps1
+./Uninstall-N-Able.ps1
 ```
 
 ## Output
 
 ```
-.\Uninstall-N-Able-log.txt
-.\Uninstall-N-Able-error.txt
+./Uninstall-N-Able-log.txt
+./Uninstall-N-Able-error.txt
 ```
+
 
 
 

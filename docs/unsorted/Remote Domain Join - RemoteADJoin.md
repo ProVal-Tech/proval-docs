@@ -54,9 +54,9 @@ Once no files are needed to be made it cleans up its managed files (the files it
 ## Output
 
 Output files for endpoint are located in the same directory as the exe:  
-`.\\{YOURAGENTGUID}-EndpointCompName.txt - local file for dc to make djoin file`  
-`.\\RemoteADJoin_CreateDJOINFile-log.txt - log file for endpoint`  
-`.\\{YOURAGENTGUID}Z-DJoinPayload.txt - the djoin file`
+`.//{YOURAGENTGUID}-EndpointCompName.txt - local file for dc to make djoin file`  
+`.//RemoteADJoin_CreateDJOINFile-log.txt - log file for endpoint`  
+`.//{YOURAGENTGUID}Z-DJoinPayload.txt - the djoin file`
 
 ## Locations
 
@@ -64,8 +64,9 @@ Output files for endpoint are located in the same directory as the exe:
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [https://file.provaltech.com/repo/app/RemoteADJoin-CreateDJOINFileAPI.exe](https://file.provaltech.com/repo/app/MySQLConnectionPing.exe) | [https://file.provaltech.com/repo/app/RemoteADJoin-GetDCKaseyaNameAPI.exe](https://file.provaltech.com/repo/app/MySQLConnectionPing.exe) |
 | Automate                                                                                               | N/A                                                                                                    |
-| Kaseya endpoint procedure                                                                               | Shared \ PVAL Stack \ Tool Set - Global \ Remote Domain Join                                          |
-| Kaseya DC procedure                                                                                   | Shared \ PVAL Stack \ Tool Set - Global \ Remote Domain Join                                          |
+| Kaseya endpoint procedure                                                                               | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
+| Kaseya DC procedure                                                                                   | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
+
 
 
 

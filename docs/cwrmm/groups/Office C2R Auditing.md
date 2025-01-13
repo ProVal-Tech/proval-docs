@@ -15,35 +15,36 @@ Computers with Microsoft 365 installed.
 ## Group Creation
 
 1. Navigate to `Endpoints` > `Groups`.
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_1.png)
+   ![Image](../../../static/img/Office-C2R-Auditing/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_2.png)  
+   ![Image](../../../static/img/Office-C2R-Auditing/image_2.png)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_3.png)
+   ![Image](../../../static/img/Office-C2R-Auditing/image_3.png)
 
 3. Set the group name to `Office C2R Auditing`.  
    Description: `Computers with Microsoft 365 installed`  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_4.png)
+   ![Image](../../../static/img/Office-C2R-Auditing/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_5.png)  
+   ![Image](../../../static/img/Office-C2R-Auditing/image_5.png)  
    This search box will appear.  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_6.png)
+   ![Image](../../../static/img/Office-C2R-Auditing/image_6.png)
 
 5. Search and select the `Installed Software Name` custom field from the search box.  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_7.png)  
+   ![Image](../../../static/img/Office-C2R-Auditing/image_7.png)  
    Set operator to `Contains any of` and `Microsoft 365` in the comparison condition.  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_8.png)  
+   ![Image](../../../static/img/Office-C2R-Auditing/image_8.png)  
    **Condition:** `Installed Software Name` `Contains any of` `Microsoft 365`
 
 6. Click the `Save` button to save/create the group.  
-   ![Image](..\..\..\static\img\Office-C2R-Auditing\image_9.png)
+   ![Image](../../../static/img/Office-C2R-Auditing/image_9.png)
 
 ## Completed Group
 
-![Image](..\..\..\static\img\Office-C2R-Auditing\image_10.png)  
-![Image](..\..\..\static\img\Office-C2R-Auditing\image_11.png)
+![Image](../../../static/img/Office-C2R-Auditing/image_10.png)  
+![Image](../../../static/img/Office-C2R-Auditing/image_11.png)
+
 
 
 

@@ -27,3 +27,4 @@ Stores information about gathered WiFi profiles from [WiFi Profile - Get](https:
 | xml      | BLOB    | The configuration information of the WiFi profile.|
 
 
+

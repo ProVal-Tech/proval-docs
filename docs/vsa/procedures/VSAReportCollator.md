@@ -21,3 +21,4 @@ Collate CSV Report Parts from Kaseya GetFiles Then Send As Attachment
 - **days**: Optional. Purge report parts older than X days before run  
 
 
+

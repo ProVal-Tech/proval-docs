@@ -18,7 +18,7 @@ Note: This is a maintenance flagged script and is allowed to run while machines 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\SFC-Scan-and-Ticket\image_1.png)
+![Sample Run](../../../static/img/SFC-Scan-and-Ticket/image_1.png)
 
 ## Dependencies
 
@@ -44,6 +44,7 @@ This script will stop the Windows update service and clear some folders to ensur
 
 - Script Log messages
 - Tickets
+
 
 
 

@@ -16,7 +16,7 @@ This script will fetch the uninstallation string from the database for the defin
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Software---Attempt-Silent-Uninstall-Using-String-Params\image_1.png)
+![Sample Run](../../../static/img/Software---Attempt-Silent-Uninstall-Using-String-Params/image_1.png)
 
 ### User Parameters
 
@@ -31,5 +31,6 @@ When the script runs, it will ask for a parameter `AppName` that needs to be fil
 ## Output
 
 - Script log
+
 
 

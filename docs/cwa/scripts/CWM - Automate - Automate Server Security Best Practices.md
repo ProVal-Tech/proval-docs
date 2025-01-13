@@ -18,7 +18,7 @@ The main execution is all PowerShell; however, due to the inclusion of API integ
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CWM---Automate---Automate-Server-Security-Best-Practices\image_1.png)
+![Sample Run](../../../static/img/CWM---Automate---Automate-Server-Security-Best-Practices/image_1.png)
 
 ## Variables
 
@@ -57,7 +57,7 @@ Target Machine: CW-AUTOMATE(294)
 -------------------------------------------------------------------------
 
 Writing the powershell file to:
-%LTSVCDir%\\Packages\\AutomateServerHardener.ps1
+%LTSVCDir%//Packages//AutomateServerHardener.ps1
 
 -------------------------------------------------------------------------
 
@@ -73,80 +73,80 @@ Registry setting results:
 -------------------------------------------------------------------------
 
 restrictanonymous : 1
-PSPath            : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Syst
-                   em\\CurrentControlSet\\Control\\Lsa
-PSParentPath      : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Syst
-                   em\\CurrentControlSet\\Control
+PSPath            : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Syst
+                   em//CurrentControlSet//Control//Lsa
+PSParentPath      : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Syst
+                   em//CurrentControlSet//Control
 PSChildName       : Lsa
 PSDrive           : HKLM
-PSProvider        : Microsoft.PowerShell.Core\\Registry
+PSProvider        : Microsoft.PowerShell.Core//Registry
 
 restrictanonymoussam : 1
-PSPath               : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\S
-                      ystem\\CurrentControlSet\\Control\\Lsa
-PSParentPath         : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\S
-                      ystem\\CurrentControlSet\\Control
+PSPath               : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//S
+                      ystem//CurrentControlSet//Control//Lsa
+PSParentPath         : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//S
+                      ystem//CurrentControlSet//Control
 PSChildName          : Lsa
 PSDrive              : HKLM
-PSProvider           : Microsoft.PowerShell.Core\\Registry
+PSProvider           : Microsoft.PowerShell.Core//Registry
 
 NoAutoplatfornonVolume : 1
-PSPath                : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE
-                      \\Software\\Policies\\Microsoft\\Windows\\Explore
-PSParentPath          : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE
-                      \\Software\\Policies\\Microsoft\\Windows
+PSPath                : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE
+                      //Software//Policies//Microsoft//Windows//Explore
+PSParentPath          : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE
+                      //Software//Policies//Microsoft//Windows
 PSChildName           : Explore
 PSDrive               : HKLM
-PSProvider            : Microsoft.PowerShell.Core\\Registry
+PSProvider            : Microsoft.PowerShell.Core//Registry
 
 NoAutorun          : 1
-PSPath            : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\
-                   Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer
-PSParentPath      : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\
-                   Microsoft\\Windows\\CurrentVersion\\Policies
+PSPath            : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Software//
+                   Microsoft//Windows//CurrentVersion//Policies//Explorer
+PSParentPath      : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Software//
+                   Microsoft//Windows//CurrentVersion//Policies
 PSChildName       : Explorer
 PSDrive           : HKLM
-PSProvider        : Microsoft.PowerShell.Core\\Registry
+PSProvider        : Microsoft.PowerShell.Core//Registry
 
 NoDriveTypeAutoRun : 255
-PSPath              : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Sof
-                     tware\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explore
-PSParentPath        : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Sof
-                     tware\\Microsoft\\Windows\\CurrentVersion\\Policies
+PSPath              : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Sof
+                     tware//Microsoft//Windows//CurrentVersion//Policies//Explore
+PSParentPath        : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Sof
+                     tware//Microsoft//Windows//CurrentVersion//Policies
 PSChildName         : Explore
 PSDrive             : HKLM
-PSProvider          : Microsoft.PowerShell.Core\\Registry
+PSProvider          : Microsoft.PowerShell.Core//Registry
 
 AlwaysInstallElevated : 1
-PSPath                : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\
-                      Software\\Policies\\Microsoft\\Windows\\Installer
-PSParentPath          : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\
-                      Software\\Policies\\Microsoft\\Windows
+PSPath                : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//
+                      Software//Policies//Microsoft//Windows//Installer
+PSParentPath          : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//
+                      Software//Policies//Microsoft//Windows
 PSChildName           : Installer
 PSDrive               : HKLM
-PSProvider            : Microsoft.PowerShell.Core\\Registry
+PSProvider            : Microsoft.PowerShell.Core//Registry
 
 DisabledByDefault : 1
-PSPath              : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.0\\Server
-PSParentPath        : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.0
+PSPath              : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.0//Server
+PSParentPath        : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.0
 PSChildName         : Server
 PSDrive             : HKLM
-PSProvider          : Microsoft.PowerShell.Core\\Registry
+PSProvider          : Microsoft.PowerShell.Core//Registry
 
 DisabledByDefault : 1
-PSPath              : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.1\\Server
-PSParentPath        : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.1
+PSPath              : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.1//Server
+PSParentPath        : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.1
 PSChildName         : Server
 PSDrive             : HKLM
-PSProvider          : Microsoft.PowerShell.Core\\Registry
+PSProvider          : Microsoft.PowerShell.Core//Registry
 
 -------------------------------------------------------------------------
 
@@ -175,10 +175,10 @@ SMB Share results:
 AccountName               AccessRight
 -----------               -----------
 Everyone                    Read
-IIS APPPOOL\\LabTech       Change
-IIS APPPOOL\\LabTech WebCC Change
-IIS APPPOOL\\CwaRestApi    Change
-NT AUTHORITY\\SYSTEM        Full
+IIS APPPOOL//LabTech       Change
+IIS APPPOOL//LabTech WebCC Change
+IIS APPPOOL//CwaRestApi    Change
+NT AUTHORITY//SYSTEM        Full
 
 -------------------------------------------------------------------------
 
@@ -196,7 +196,7 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 
 ## Ticket Example
 
-![Ticket Example](..\..\..\static\img\CWM---Automate---Automate-Server-Security-Best-Practices\image_2.png)
+![Ticket Example](../../../static/img/CWM---Automate---Automate-Server-Security-Best-Practices/image_2.png)
 
 Full output of request
 ```
@@ -208,7 +208,7 @@ Target Machine: CW-AUTOMATE(294)
 -------------------------------------------------------------------------
 
 Writing the powershell file to:
-%LTSVCDir%\\Packages\\AutomateServerHardener.ps1
+%LTSVCDir%//Packages//AutomateServerHardener.ps1
 
 -------------------------------------------------------------------------
 
@@ -224,80 +224,80 @@ Registry setting results:
 -------------------------------------------------------------------------
 
 restrictanonymous : 1
-PSPath            : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Syst
-                   em\\CurrentControlSet\\Control\\Lsa
-PSParentPath      : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Syst
-                   em\\CurrentControlSet\\Control
+PSPath            : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Syst
+                   em//CurrentControlSet//Control//Lsa
+PSParentPath      : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Syst
+                   em//CurrentControlSet//Control
 PSChildName       : Lsa
 PSDrive           : HKLM
-PSProvider        : Microsoft.PowerShell.Core\\Registry
+PSProvider        : Microsoft.PowerShell.Core//Registry
 
 restrictanonymoussam : 1
-PSPath               : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\S
-                      ystem\\CurrentControlSet\\Control\\Lsa
-PSParentPath         : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\S
-                      ystem\\CurrentControlSet\\Control
+PSPath               : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//S
+                      ystem//CurrentControlSet//Control//Lsa
+PSParentPath         : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//S
+                      ystem//CurrentControlSet//Control
 PSChildName          : Lsa
 PSDrive              : HKLM
-PSProvider           : Microsoft.PowerShell.Core\\Registry
+PSProvider           : Microsoft.PowerShell.Core//Registry
 
 NoAutoplatfornonVolume : 1
-PSPath                : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE
-                      \\Software\\Policies\\Microsoft\\Windows\\Explore
-PSParentPath          : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE
-                      \\Software\\Policies\\Microsoft\\Windows
+PSPath                : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE
+                      //Software//Policies//Microsoft//Windows//Explore
+PSParentPath          : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE
+                      //Software//Policies//Microsoft//Windows
 PSChildName           : Explore
 PSDrive               : HKLM
-PSProvider            : Microsoft.PowerShell.Core\\Registry
+PSProvider            : Microsoft.PowerShell.Core//Registry
 
 NoAutorun          : 1
-PSPath            : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\
-                   Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer
-PSParentPath      : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\
-                   Microsoft\\Windows\\CurrentVersion\\Policies
+PSPath            : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Software//
+                   Microsoft//Windows//CurrentVersion//Policies//Explorer
+PSParentPath      : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Software//
+                   Microsoft//Windows//CurrentVersion//Policies
 PSChildName       : Explorer
 PSDrive           : HKLM
-PSProvider        : Microsoft.PowerShell.Core\\Registry
+PSProvider        : Microsoft.PowerShell.Core//Registry
 
 NoDriveTypeAutoRun : 255
-PSPath              : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Sof
-                     tware\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explore
-PSParentPath        : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Sof
-                     tware\\Microsoft\\Windows\\CurrentVersion\\Policies
+PSPath              : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Sof
+                     tware//Microsoft//Windows//CurrentVersion//Policies//Explore
+PSParentPath        : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//Sof
+                     tware//Microsoft//Windows//CurrentVersion//Policies
 PSChildName         : Explore
 PSDrive             : HKLM
-PSProvider          : Microsoft.PowerShell.Core\\Registry
+PSProvider          : Microsoft.PowerShell.Core//Registry
 
 AlwaysInstallElevated : 1
-PSPath                : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\
-                      Software\\Policies\\Microsoft\\Windows\\Installer
-PSParentPath          : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\
-                      Software\\Policies\\Microsoft\\Windows
+PSPath                : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//
+                      Software//Policies//Microsoft//Windows//Installer
+PSParentPath          : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//
+                      Software//Policies//Microsoft//Windows
 PSChildName           : Installer
 PSDrive               : HKLM
-PSProvider            : Microsoft.PowerShell.Core\\Registry
+PSProvider            : Microsoft.PowerShell.Core//Registry
 
 DisabledByDefault : 1
-PSPath              : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.0\\Server
-PSParentPath        : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.0
+PSPath              : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.0//Server
+PSParentPath        : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.0
 PSChildName         : Server
 PSDrive             : HKLM
-PSProvider          : Microsoft.PowerShell.Core\\Registry
+PSProvider          : Microsoft.PowerShell.Core//Registry
 
 DisabledByDefault : 1
-PSPath              : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.1\\Server
-PSParentPath        : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYST
-                     EM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Pro
-                     tocols\\TLS 1.1
+PSPath              : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.1//Server
+PSParentPath        : Microsoft.PowerShell.Core//Registry::HKEY_LOCAL_MACHINE//SYST
+                     EM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Pro
+                     tocols//TLS 1.1
 PSChildName         : Server
 PSDrive             : HKLM
-PSProvider          : Microsoft.PowerShell.Core\\Registry
+PSProvider          : Microsoft.PowerShell.Core//Registry
 
 -------------------------------------------------------------------------
 
@@ -326,10 +326,10 @@ SMB Share results:
 AccountName               AccessRight
 -----------               -----------
 Everyone                    Read
-IIS APPPOOL\\LabTech       Change
-IIS APPPOOL\\LabTech WebCC Change
-IIS APPPOOL\\CwaRestApi    Change
-NT AUTHORITY\\SYSTEM        Full
+IIS APPPOOL//LabTech       Change
+IIS APPPOOL//LabTech WebCC Change
+IIS APPPOOL//CwaRestApi    Change
+NT AUTHORITY//SYSTEM        Full
 
 -------------------------------------------------------------------------
 
@@ -347,6 +347,7 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 
 Reading View
 
-![Reading View](..\..\..\static\img\CWM---Automate---Automate-Server-Security-Best-Practices\image_3.png)
+![Reading View](../../../static/img/CWM---Automate---Automate-Server-Security-Best-Practices/image_3.png)
+
 
 

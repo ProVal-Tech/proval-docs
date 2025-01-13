@@ -160,8 +160,9 @@ unlisted: false
 
 2. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
 
-   ![Image 1](..\..\..\static\img\Import---Remote-Monitor---SMB-Signing-Detection\image_1.png)
+   ![Image 1](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_1.png)
 
-   ![Image 2](..\..\..\static\img\Import---Remote-Monitor---SMB-Signing-Detection\image_2.png)
+   ![Image 2](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_2.png)
+
 
 

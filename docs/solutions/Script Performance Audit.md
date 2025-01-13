@@ -34,11 +34,12 @@ The solution comprises three dataviews designed to showcase the performance, his
    - [Dataview - Script Run Time Historical Audit](https://proval.itglue.com/DOC-5078775-15408476)
 
 3. Reload the System Cache  
-   ![System Cache](..\..\static\img\Script-Performance-Audit\image_1.png)
+   ![System Cache](../../static/img/Script-Performance-Audit/image_1.png)
 
 ## FAQ
 
 **Q:** Is it feasible to consolidate these dataviews into a single dataview?  
 **A:** While it is technically possible to merge these dataviews into one, it's important to note that the resulting dataview will not function reliably due to the complexity of calculations and the volume of data processed to generate these views.
+
 
 

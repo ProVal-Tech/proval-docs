@@ -24,3 +24,4 @@ This custom RAWSQL monitor will check for the custom table privileges for a user
 Global
 
 
+

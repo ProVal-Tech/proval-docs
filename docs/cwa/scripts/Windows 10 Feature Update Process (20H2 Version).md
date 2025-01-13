@@ -16,7 +16,7 @@ Time Saved by Automation: 120 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-10-Feature-Update-Process-(20H2-Version)\image_1.png)
+![Sample Run](../../../static/img/Windows-10-Feature-Update-Process-(20H2-Version)/image_1.png)
 
 ## Variables
 
@@ -28,7 +28,7 @@ Time Saved by Automation: 120 Minutes
 
 | Name                    | Example                                                        | Required     | Description                                                                                           |
 |-------------------------|----------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------|
-| tempdir                 | C:\temp                                                       | True         | This is a path where 20H2 iso will be downloaded.                                                    |
+| tempdir                 | C:/temp                                                       | True         | This is a path where 20H2 iso will be downloaded.                                                    |
 | ZIPURL                  | [http://your.url.here/path/to/20H2.zip](http://your.url.here/path/to/20H2.zip) | True         | This is the link from client site to download the 20H2 zip (It should be ours 20H2 zip to be placed in their location). |
 | HoursToWait             | 1                                                              | True         | This sets script to check for upgrade happened or not to target build after process runs in mentioned hour. |
 | TargetHash              | 53,5,109,134,124,170,48,240,142,252,3,4,118,182,102,25      | True         | This ensures the files copy, it will only let script work if 20H2 zip file is copied from our site. |
@@ -53,6 +53,7 @@ Time Saved by Automation: 120 Minutes
 ## Output
 
 - Script log
+
 
 
 

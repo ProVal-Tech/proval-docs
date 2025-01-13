@@ -20,40 +20,41 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 ## Package Creation
 
 1. Navigate to `Endpoints` > `Packages`.
-   ![](..\..\..\static\img\Install-Windows-11\image_2.png)
+   ![](../../../static/img/Install-Windows-11/image_2.png)
 
 2. Go to `Policy Groups` and select the `OS Patching Desktop` group.
-   ![](..\..\..\static\img\Install-Windows-11\image_3.png)
+   ![](../../../static/img/Install-Windows-11/image_3.png)
 
 3. Click the `Add Existing Device Group` button.
-   ![](..\..\..\static\img\Install-Windows-11\image_4.png)
+   ![](../../../static/img/Install-Windows-11/image_4.png)
 
 4. This screen will appear.
-   ![](..\..\..\static\img\Install-Windows-11\image_5.png)
+   ![](../../../static/img/Install-Windows-11/image_5.png)
 
 5. **Policy Group Name:** `Install Windows 11`  
    **Description:** `Enable Windows 11 installation for compatible Windows 10 computers.`  
-   ![](..\..\..\static\img\Install-Windows-11\image_6.png)
+   ![](../../../static/img/Install-Windows-11/image_6.png)
 
 6. Search and select the [Upgrade Enabled Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835385) Device group.
-   ![](..\..\..\static\img\Install-Windows-11\image_7.png)
+   ![](../../../static/img/Install-Windows-11/image_7.png)
 
 7. Click the `Assign` button.
-   ![](..\..\..\static\img\Install-Windows-11\image_8.png)
+   ![](../../../static/img/Install-Windows-11/image_8.png)
 
 8. This screen will appear.
-   ![](..\..\..\static\img\Install-Windows-11\image_9.png)
+   ![](../../../static/img/Install-Windows-11/image_9.png)
 
 9. Select the [Install Windows 11](https://proval.itglue.com/DOC-5078775-18002003) policy and click the `Assign` button.
-   ![](..\..\..\static\img\Install-Windows-11\image_10.png)
+   ![](../../../static/img/Install-Windows-11/image_10.png)
 
-10. ![](..\..\..\static\img\Install-Windows-11\image_11.png)
+10. ![](../../../static/img/Install-Windows-11/image_11.png)
 
 11. Click the `Save` button to save the `Policy Group`.
-   ![](..\..\..\static\img\Install-Windows-11\image_12.png)
+   ![](../../../static/img/Install-Windows-11/image_12.png)
 
 ## Completed Policy Group
 
-![](..\..\..\static\img\Install-Windows-11\image_13.png)
+![](../../../static/img/Install-Windows-11/image_13.png)
+
 
 

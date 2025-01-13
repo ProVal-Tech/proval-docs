@@ -39,7 +39,8 @@ Minimum Requirement: MySQL 5.7.7
 
 You can check the Database version from the `Server Status` in Control Center.  
 
-![Image1](..\..\static\img\Patching-Metrics\image_1.png)  
-![Image2](..\..\static\img\Patching-Metrics\image_2.png)
+![Image1](../../static/img/Patching-Metrics/image_1.png)  
+![Image2](../../static/img/Patching-Metrics/image_2.png)
+
 
 

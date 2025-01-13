@@ -20,14 +20,14 @@ Attempts to uninstall the Huntress agent on the Windows machine if the Huntress 
 
 To implement this script, please create a new "PowerShell" style script.
 
-![Image 1](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_1.png)  
-![Image 2](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_2.png)  
+![Image 1](../../../static/img/Huntress-Agent-(UNINSTALL)/image_1.png)  
+![Image 2](../../../static/img/Huntress-Agent-(UNINSTALL)/image_2.png)  
 
 **Name:** Huntress Agent (UNINSTALL)  
 **Description:** This task will uninstall Huntress agent if it is installed on the machine  
 **Category:** Custom  
 
-![Image 3](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_3.png)  
+![Image 3](../../../static/img/Huntress-Agent-(UNINSTALL)/image_3.png)  
 
 # Script
 
@@ -35,18 +35,18 @@ To implement this script, please create a new "PowerShell" style script.
 
 Click on Add Row and select the Powershell Script function.
 
-![Image 4](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_4.png)  
+![Image 4](../../../static/img/Huntress-Agent-(UNINSTALL)/image_4.png)  
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
 ```
-$installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+$installed = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
 if ($installed -match 'Huntress') {
     Write-Output 'Huntress agent is installed. Proceeding for the UnInstallation'
     #region Setup - Variables
     $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
+    $WorkingDirectory = 'C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand'
+    $PS1Path = "$WorkingDirectory/Invoke-HuntressAgentCommand.ps1"
     #endregion
     
     #region Setup - Folder Structure
@@ -83,7 +83,7 @@ if ($installed -match 'Huntress') {
     #endregion
     
     Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+    $installed = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
     if ($installed -match 'Huntress') {
         Write-Output 'Huntress agent failed to Uninstall.'
     } else {
@@ -94,7 +94,7 @@ if ($installed -match 'Huntress') {
 }
 ```
 
-![Image 5](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_5.png)  
+![Image 5](../../../static/img/Huntress-Agent-(UNINSTALL)/image_5.png)  
 
 ## Step 2 Logic: If Then Else
 
@@ -102,14 +102,14 @@ if ($installed -match 'Huntress') {
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
-![Image 6](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_6.png)  
+![Image 6](../../../static/img/Huntress-Agent-(UNINSTALL)/image_6.png)  
 
 ### ROW 2a Condition: Output Contains
 
 - Type `Huntress agent is not installed` in the Value box.
 - Select another condition with OR operation and type `Huntress agent successfully Uninstalled` in the value box.
 
-![Image 7](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_7.png)  
+![Image 7](../../../static/img/Huntress-Agent-(UNINSTALL)/image_7.png)  
 
 ### ROW 2b Function: Script Log
 
@@ -121,7 +121,7 @@ if ($installed -match 'Huntress') {
 Huntress agent is successfully uninstalled.
 ```
 
-![Image 8](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_8.png)  
+![Image 8](../../../static/img/Huntress-Agent-(UNINSTALL)/image_8.png)  
 
 ### Step 2c Function: Script Exit
 
@@ -129,9 +129,9 @@ Huntress agent is successfully uninstalled.
 - Search and select the `Script Exit` function.
 - Leave it blank.
 
-![Image 9](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_9.png)  
+![Image 9](../../../static/img/Huntress-Agent-(UNINSTALL)/image_9.png)  
 
-![Image 10](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_10.png)  
+![Image 10](../../../static/img/Huntress-Agent-(UNINSTALL)/image_10.png)  
 
 ### Step 2d Function: Script Exit
 
@@ -144,13 +144,13 @@ Failed to uninstall Huntress Agent. Below is the uninstallation result:
 %output%
 ```
 
-![Image 11](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_11.png)  
+![Image 11](../../../static/img/Huntress-Agent-(UNINSTALL)/image_11.png)  
 
-![Image 12](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_12.png)  
+![Image 12](../../../static/img/Huntress-Agent-(UNINSTALL)/image_12.png)  
 
 The final task should look like the below screenshot.
 
-![Final Task Image](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_13.png)  
+![Final Task Image](../../../static/img/Huntress-Agent-(UNINSTALL)/image_13.png)  
 
 ## Script Deployment
 
@@ -160,11 +160,12 @@ Go to Automations > Tasks.
 Search for Huntress Agent Install.  
 Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
 
-![Image 13](..\..\..\static\img\Huntress-Agent-(UNINSTALL)\image_14.png)  
+![Image 13](../../../static/img/Huntress-Agent-(UNINSTALL)/image_14.png)  
 
 ## Output
 
 - Script log
+
 
 
 

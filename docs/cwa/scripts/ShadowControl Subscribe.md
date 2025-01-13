@@ -18,7 +18,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\ShadowControl-Subscribe\image_1.png)
+![Sample Run](../../../static/img/ShadowControl-Subscribe/image_1.png)
 
 ## Dependencies
 
@@ -35,5 +35,6 @@ The script will run a command-line argument against the stccmd application on th
 ## Output
 
 Script log messages only
+
 
 

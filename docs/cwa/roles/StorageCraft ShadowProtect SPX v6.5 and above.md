@@ -16,6 +16,7 @@ This role checks the StorageCraft installed version and if it matches 6.5 or bet
 
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
-| {%-HKLM\SOFTWARE\StorageCraft Technology Corporation\spx:InstalledVersion-%} | Regex Match | ^6\.. | Windows        |
+| {%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%} | Regex Match | ^6/.. | Windows        |
+
 
 

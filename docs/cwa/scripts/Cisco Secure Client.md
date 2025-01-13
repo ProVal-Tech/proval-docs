@@ -20,26 +20,26 @@ This script provides an option to install **different Cisco Secure Client module
 
 **For Windows:**
 
-Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` and place it in LTShare (WebDAV for hosted partners) at `LTShare\Transfer\Software\Cisco_Secure_Client` as `Cisco_Secure_Client.zip`.
+Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` and place it in LTShare (WebDAV for hosted partners) at `LTShare/Transfer/Software/Cisco_Secure_Client` as `Cisco_Secure_Client.zip`.
 
 **For MAC:**
 
-Download the `Cisco Secure Client Pre-Deployment Package (Mac OS)` and place it in LTShare (WebDAV for hosted partners) at `LTShare\Transfer\Software\Cisco_Secure_Client` as `Cisco_Secure_Client.dmg`.
+Download the `Cisco Secure Client Pre-Deployment Package (Mac OS)` and place it in LTShare (WebDAV for hosted partners) at `LTShare/Transfer/Software/Cisco_Secure_Client` as `Cisco_Secure_Client.dmg`.
 
 **NOTE**  
 To access/download these files, you will need a login to the Cisco portal. If you do not have a portal login, please create one and validate your access before attempting to download the files or you will get an error like this:  
-![Error Image](..\..\..\static\img\Cisco-Secure-Client\image_1.png)
+![Error Image](../../../static/img/Cisco-Secure-Client/image_1.png)
 
 The file can be downloaded from [https://software.cisco.com/download/home/286330811/type/282364313/release/5.1.7.80](https://software.cisco.com/download/home/286330811/type/282364313/release/5.1.7.80). Cisco changes this download URL for each release. Prefer downloading the latest stable version of the tool.
 
 Go to the latest release and download packages for Windows and MAC.
 
-![Image 1](..\..\..\static\img\Cisco-Secure-Client\image_2.png)  
-![Image 2](..\..\..\static\img\Cisco-Secure-Client\image_3.png)
+![Image 1](../../../static/img/Cisco-Secure-Client/image_2.png)  
+![Image 2](../../../static/img/Cisco-Secure-Client/image_3.png)
 
-If the `Cisco_Secure_Client` Directory does not exist in `LTShare\Transfer\Software`, then create the directory and place the downloaded zip file in the directory as `Cisco_Secure_Client.dmg`.  
+If the `Cisco_Secure_Client` Directory does not exist in `LTShare/Transfer/Software`, then create the directory and place the downloaded zip file in the directory as `Cisco_Secure_Client.dmg`.  
 
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_4.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_4.png)
 
 It is mandatory to place the file at the mentioned directory with the mentioned name to use the script.
 
@@ -48,13 +48,13 @@ It is mandatory to place the file at the mentioned directory with the mentioned 
 It has to be executed as an autofix script with [CWA - Internal Monitor - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763) but it can also be executed individually.
 
 - For the initial execution of the script, it is essential to set the user parameter `SetEnvironment` to 1. This step is necessary to create the mandatory EDFs (Extra Data Fields) required for the script's execution. It will also transfer the data from old EDFs to new EDFs. Some of the EDFs like Fingerprint, userid, etc have just been transferred to the 'Cisco Secure Client' Section.  
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_5.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_5.png)
 
 - To delete the Old EDFs  
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_6.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_6.png)
 
 - To deploy the application:  
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_7.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_7.png)
 
 ## Dependencies
 
@@ -98,7 +98,7 @@ It has to be executed as an autofix script with [CWA - Internal Monitor - Missin
 | Exclude from Cisco Secure Client    | Location | Checkbox | -                                             | Select it to exclude the location from Cisco Secure Client Deployment.                                                                                                                                                        |
 
 **Sample Screenshot:**  
-![Sample Screenshot](..\..\..\static\img\Cisco-Secure-Client\image_8.png)
+![Sample Screenshot](../../../static/img/Cisco-Secure-Client/image_8.png)
 
 *Note:*  
 - If you are setting any of these options for `Deploy Mac and Windows/Deploy Windows only/Deploy Mac Only` for `Secure Client - All Modules`, then the script will attempt to install all the available modules regardless of the selection for the individual module.
@@ -133,7 +133,7 @@ It has to be executed as an autofix script with [CWA - Internal Monitor - Missin
   `A security application or Antivirus Programme is restricting the script execution.`
 
 - **[For windows only] If DownloadURL is unreachable:**  
-  `Please ensure placing the Cisco Secure Client in your LTShare or WebDAV folder at LTShare\Transfer\software\cisco_secure_client as cisco_secure_client.zip. If the file is placed then ensure that there is no firewall rule or AV program restricting the computer to reach @DownloadURL@.`
+  `Please ensure placing the Cisco Secure Client in your LTShare or WebDAV folder at LTShare/Transfer/software/cisco_secure_client as cisco_secure_client.zip. If the file is placed then ensure that there is no firewall rule or AV program restricting the computer to reach @DownloadURL@.`
 
 - **[For MAC only] If Automate fails to write script on the machine:**  
   `Automate was unable to write the installation script on the computer.`
@@ -143,10 +143,10 @@ It has to be executed as an autofix script with [CWA - Internal Monitor - Missin
 The ticket category for the tickets generated by the script can be set at the following levels:
 
 - On global monitor set. The ticket category can be selected at the monitor set ([ProVal - Production - Agents - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-13582373)).  
-  ![Image](..\..\..\static\img\Cisco-Secure-Client\image_9.png)
+  ![Image](../../../static/img/Cisco-Secure-Client/image_9.png)
 
 - If ticket category is not set on the monitor, the ticket will be generated under the default ticket category.  
-  ![Image](..\..\..\static\img\Cisco-Secure-Client\image_10.png)
+  ![Image](../../../static/img/Cisco-Secure-Client/image_10.png)
 
 ## Module Definitions
 
@@ -156,32 +156,32 @@ The ticket category for the tickets generated by the script can be set at the fo
 - All modules require that Core-VPN be installed.
 - When only installing Core-VPN you can expect to see the following:
 
-![Image 1](..\..\..\static\img\Cisco-Secure-Client\image_11.png)  
-![Image 2](..\..\..\static\img\Cisco-Secure-Client\image_12.png)
+![Image 1](../../../static/img/Cisco-Secure-Client/image_11.png)  
+![Image 2](../../../static/img/Cisco-Secure-Client/image_12.png)
 
 ### Start Before Login
 
 - SBL stands for Start Before Login, it adds no direct user GUI, however it does add an entry into programs and features.
 - It enables the execution of the AnyConnect VPN prior to a user being logged in.
 
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_13.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_13.png)
 
 ### Diagnostic and Reporting Tool
 
 - DART stands for Diagnostics and Reporting Tool.
 - When installing this you can expect to see the following items.
 
-![Image 1](..\..\..\static\img\Cisco-Secure-Client\image_14.png)  
-![Image 2](..\..\..\static\img\Cisco-Secure-Client\image_15.png)  
-![Image 3](..\..\..\static\img\Cisco-Secure-Client\image_16.png)
+![Image 1](../../../static/img/Cisco-Secure-Client/image_14.png)  
+![Image 2](../../../static/img/Cisco-Secure-Client/image_15.png)  
+![Image 3](../../../static/img/Cisco-Secure-Client/image_16.png)
 
 ### Network Access Manager
 
 - NAM stands for Network Access Manager
 - When installing this module you can expect to see the following items.
 
-![Image 1](..\..\..\static\img\Cisco-Secure-Client\image_17.png)  
-![Image 2](..\..\..\static\img\Cisco-Secure-Client\image_18.png)
+![Image 1](../../../static/img/Cisco-Secure-Client/image_17.png)  
+![Image 2](../../../static/img/Cisco-Secure-Client/image_18.png)
 
 ### Network Visibility Module
 
@@ -189,29 +189,29 @@ The ticket category for the tickets generated by the script can be set at the fo
 - Network Visibility Manager does not include a GUI but does the following
 - Network Visibility Manager **helps you see user and endpoint behavior both on and off premises**. It collects standard flows from endpoints (laptops, for example) along with context like user, application, device, location, and destination information.
 
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_19.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_19.png)
 
 ### VPN Posture - HostScan Module
 
 - Posture provides the Cisco AnyConnect Secure Mobility Client with the ability to assess an endpoint's compliance for things like antivirus, antispyware, and firewall software installed on the host.
 - It does not provide a User GUI.
 
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_20.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_20.png)
 
 ### ISE Posture
 
 - ISE Posture provides the Cisco AnyConnect Secure Mobility Client with the ability to assess an endpoint's compliance for things like antivirus, antispyware, and firewall software installed on the host, with a user GUI interface.
 - When installing this module, you can expect to see the following:
 
-![Image 1](..\..\..\static\img\Cisco-Secure-Client\image_21.png)  
-![Image 2](..\..\..\static\img\Cisco-Secure-Client\image_22.png)
+![Image 1](../../../static/img/Cisco-Secure-Client/image_21.png)  
+![Image 2](../../../static/img/Cisco-Secure-Client/image_22.png)
 
 ### Umbrella
 
 - Umbrella installs the Cisco Umbrella module.
 - When installing this module you can expect to see the following:
 
-![Image](..\..\..\static\img\Cisco-Secure-Client\image_23.png)
+![Image](../../../static/img/Cisco-Secure-Client/image_23.png)
 
 ## Uninstalling
 
@@ -221,5 +221,6 @@ The ticket category for the tickets generated by the script can be set at the fo
 
 - Will this installation update older versions of Cisco AnyConnect?
   - Yes, each requested component will be updated if run against a machine that has that component already installed. Components that are not requested will not be updated.
+
 
 

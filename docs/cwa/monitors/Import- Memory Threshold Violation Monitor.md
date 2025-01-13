@@ -30,9 +30,9 @@ INSERT INTO groupagents
   '600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \'SilentlyContinue\';$tl = 75;$th = 90;$m = \"$env:TEMP\\memory_over_t\\\";$t = $( if (Test-Path $m) { $tl } else { $th } );sal gpc \'Get-Counter\';$c = gpc \'\\Memory\\% Committed Bytes In Use\' -SampleInterval 1 -MaxSamples 10;$cu = $c.CounterSamples.CookedValue | Measure -Average | Select -exp Average;if ($t -le $cu) {Write-Output \"Total Memory Usage: $([Math]::Round($cu,2))%`n`nTop 5 Processes utilizing Memory:\";$null > $m; $tm = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory; Get-process | Select Name, WorkingSet64 | Group Name | % {[PSCustomObject]@{ Process = $_.Name; MemoryUsage = $([Math]::Round(100 * (($_.Group | Measure -Property WorkingSet64 -Sum).Sum / $tm),2)) }} | Sort -property MemoryUsage -Descending | Select -First 5 } else { Remove-Item $m -Force -Confirm:$false}"' as `DataOut`,
+  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/';$tl = 75;$th = 90;$m = /"$env:TEMP//memory_over_t///";$t = $( if (Test-Path $m) { $tl } else { $th } );sal gpc /'Get-Counter/';$c = gpc /'//Memory//% Committed Bytes In Use/' -SampleInterval 1 -MaxSamples 10;$cu = $c.CounterSamples.CookedValue | Measure -Average | Select -exp Average;if ($t -le $cu) {Write-Output /"Total Memory Usage: $([Math]::Round($cu,2))%`n`nTop 5 Processes utilizing Memory:/";$null > $m; $tm = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory; Get-process | Select Name, WorkingSet64 | Group Name | % {[PSCustomObject]@{ Process = $_.Name; MemoryUsage = $([Math]::Round(100 * (($_.Group | Measure -Property WorkingSet64 -Sum).Sum / $tm),2)) }} | Sort -property MemoryUsage -Descending | Select -First 5 } else { Remove-Item $m -Force -Confirm:$false}"' as `DataOut`,
   '16' as `Comparor`,
-  '10|(^(\\r\\n%7COK)$)%7C(^$)|11|(Total Memory Usage: [0-9.]{1,6}%25)%7C(^(\\r\\n%7COK)$)%7C(^$)|10|Total Memory Usage: [0-9.]{1,6}%25' as `DataIn`,
+  '10|(^(//r//n%7COK)$)%7C(^$)|11|(Total Memory Usage: [0-9.]{1,6}%25)%7C(^(//r//n%7COK)$)%7C(^$)|10|Total Memory Usage: [0-9.]{1,6}%25' as `DataIn`,
   '0' as `IDField`,
   '1' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -127,9 +127,9 @@ INSERT INTO groupagents
   '600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \'SilentlyContinue\';$tl = 75;$th = 90;$m = \"$env:TEMP\\memory_over_t\\\";$t = $( if (Test-Path $m) { $tl } else { $th } );sal gpc \'Get-Counter\';$c = gpc \'\\Memory\\% Committed Bytes In Use\' -SampleInterval 1 -MaxSamples 10;$cu = $c.CounterSamples.CookedValue | Measure -Average | Select -exp Average;if ($t -le $cu) {Write-Output \"Total Memory Usage: $([Math]::Round($cu,2))%`n`nTop 5 Processes utilizing Memory:\";$null > $m; $tm = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory; Get-process | Select Name, WorkingSet64 | Group Name | % {[PSCustomObject]@{ Process = $_.Name; MemoryUsage = $([Math]::Round(100 * (($_.Group | Measure -Property WorkingSet64 -Sum).Sum / $tm),2)) }} | Sort -property MemoryUsage -Descending | Select -First 5 } else { Remove-Item $m -Force -Confirm:$false}"' as `DataOut`,
+  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/';$tl = 75;$th = 90;$m = /"$env:TEMP//memory_over_t///";$t = $( if (Test-Path $m) { $tl } else { $th } );sal gpc /'Get-Counter/';$c = gpc /'//Memory//% Committed Bytes In Use/' -SampleInterval 1 -MaxSamples 10;$cu = $c.CounterSamples.CookedValue | Measure -Average | Select -exp Average;if ($t -le $cu) {Write-Output /"Total Memory Usage: $([Math]::Round($cu,2))%`n`nTop 5 Processes utilizing Memory:/";$null > $m; $tm = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory; Get-process | Select Name, WorkingSet64 | Group Name | % {[PSCustomObject]@{ Process = $_.Name; MemoryUsage = $([Math]::Round(100 * (($_.Group | Measure -Property WorkingSet64 -Sum).Sum / $tm),2)) }} | Sort -property MemoryUsage -Descending | Select -First 5 } else { Remove-Item $m -Force -Confirm:$false}"' as `DataOut`,
   '16' as `Comparor`,
-  '10|(^(\\r\\n%7COK)$)%7C(^$)|11|(Total Memory Usage: [0-9.]{1,6}%25)%7C(^(\\r\\n%7COK)$)%7C(^$)|10|Total Memory Usage: [0-9.]{1,6}%25' as `DataIn`,
+  '10|(^(//r//n%7COK)$)%7C(^$)|11|(Total Memory Usage: [0-9.]{1,6}%25)%7C(^(//r//n%7COK)$)%7C(^$)|10|Total Memory Usage: [0-9.]{1,6}%25' as `DataIn`,
   '0' as `IDField`,
   '1' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -218,5 +218,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

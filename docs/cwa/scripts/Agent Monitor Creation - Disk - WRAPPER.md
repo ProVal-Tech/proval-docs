@@ -15,10 +15,10 @@ This script MUST be called by the Agent Monitor Creation script and/or the Remov
 On a default setup, change the Agent Monitor Creation Script - line 8ish to be the ProVal Disk Wrapper instead.
 
 **Before**  
-![Before](..\..\..\static\img\Agent-Monitor-Creation---Disk---WRAPPER\image_1.png)  
+![Before](../../../static/img/Agent-Monitor-Creation---Disk---WRAPPER/image_1.png)  
 
 **After**  
-![After](..\..\..\static\img\Agent-Monitor-Creation---Disk---WRAPPER\image_2.png)  
+![After](../../../static/img/Agent-Monitor-Creation---Disk---WRAPPER/image_2.png)  
 
 Time Saved by Automation: 10 Minutes
 
@@ -44,5 +44,6 @@ This script MUST be called by the Agent Monitor Creation script and the Remove a
 ## Output
 
 - Script log
+
 
 

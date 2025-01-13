@@ -14,14 +14,15 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](https://proval.itglue.com/DOC-5
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\Huntress-Deploy_Result\image_1.png)
+![Image 1](../../../static/img/Huntress-Deploy_Result/image_1.png)
 
-![Image 2](..\..\..\static\img\Huntress-Deploy_Result\image_2.png)
+![Image 2](../../../static/img/Huntress-Deploy_Result/image_2.png)
 
 **Name:** Huntress Deploy_Result  
 **Type:** Text Box  
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
+
 
 

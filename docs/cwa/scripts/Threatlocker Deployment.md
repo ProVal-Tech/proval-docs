@@ -15,17 +15,17 @@ This script will install the ThreatLocker application on both Windows and Mac op
 ## Sample Run
 
 You will need to enter your ThreatLocker group key here for Windows operating systems  
-![Image](..\..\..\static\img\Threatlocker-Deployment\image_1.png)
+![Image](../../../static/img/Threatlocker-Deployment/image_1.png)
 
 For Mac deployment, you will need to follow the following steps:
 
 - Follow the instructions to get the group key for the desired machine. [MAC Agent Group Key Location | ThreatLocker Help Center (kb.help)](https://threatlocker.kb.help/mac-agent-group-key-location/)
 - Copy that group key and set this EDF for the client  
 
-![Image](..\..\..\static\img\Threatlocker-Deployment\image_2.png)
+![Image](../../../static/img/Threatlocker-Deployment/image_2.png)
 
 Then run the script  
-![Image](..\..\..\static\img\Threatlocker-Deployment\image_3.png)
+![Image](../../../static/img/Threatlocker-Deployment/image_3.png)
 
 #### Global Parameters
 
@@ -36,5 +36,6 @@ Then run the script
 ## Output
 
 - Script log
+
 
 

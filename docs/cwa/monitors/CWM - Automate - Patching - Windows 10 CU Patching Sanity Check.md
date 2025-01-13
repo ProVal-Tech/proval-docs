@@ -11,13 +11,14 @@ unlisted: false
 ## Summary
 
 The purpose of this monitor is to find the Windows 10 machines that are experiencing patching discrepancies related to cumulative updates and Security Updates.  
-![Image](..\..\..\static\img\CWM---Automate---Patching---Windows-10-CU-Patching-Sanity-Check\image_1.png)
+![Image](../../../static/img/CWM---Automate---Patching---Windows-10-CU-Patching-Sanity-Check/image_1.png)
 
 Suggested Alert Template: Default - Create Automate Ticket
 
 ## Target
 
 SQL Query is limiting to the supported Windows 10 computers.
+
 
 
 

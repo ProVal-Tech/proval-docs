@@ -16,7 +16,7 @@ This script is a modification of the Webroot Plugin included installation script
 
 At a minimum, this script can be run on a single agent; however, please review the solution document [SWM - Software Install - Solution - Webroot](https://proval.itglue.com/DOC-5078775-11665357) for any necessary prerequisites.
 
-![Sample Run](..\..\..\static\img\?-Install-Webroot-SecureAnyWhere\image_1.png)
+![Sample Run](../../../static/img/?-Install-Webroot-SecureAnyWhere/image_1.png)
 
 *** Common Usage ***
 This script is typically set as an autofix on a monitor looking for the installed software. Please reference the solution document for more information. [SWM - Software Install - Solution - Webroot](https://proval.itglue.com/DOC-5078775-11665357)
@@ -60,5 +60,6 @@ Document the various variables in the script. Delete any section that is not rel
          - Install for Mac, Verify, then exit.
       2. Windows
          - Install for Windows, Verify, and exit.
+
 
 

@@ -14,8 +14,8 @@ Removes all McAfee products from an endpoint. CW RMM implementation of the agnos
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Remove-Mcafee-Software\image_1.png)  
-![Sample Run 2](..\..\..\static\img\Remove-Mcafee-Software\image_2.png)  
+![Sample Run 1](../../../static/img/Remove-Mcafee-Software/image_1.png)  
+![Sample Run 2](../../../static/img/Remove-Mcafee-Software/image_2.png)  
 
 ## Dependencies
 
@@ -24,30 +24,30 @@ Removes all McAfee products from an endpoint. CW RMM implementation of the agnos
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Image 1](..\..\..\static\img\Remove-Mcafee-Software\image_3.png)  
-![Task Creation Image 2](..\..\..\static\img\Remove-Mcafee-Software\image_4.png)  
+![Task Creation Image 1](../../../static/img/Remove-Mcafee-Software/image_3.png)  
+![Task Creation Image 2](../../../static/img/Remove-Mcafee-Software/image_4.png)  
 
 **Name:** `Remove Mcafee Software`  
 **Description:** `Removes all McAfee products from an endpoint.`  
 **Category:** `Application`  
-![Task Creation Image 3](..\..\..\static\img\Remove-Mcafee-Software\image_5.png)  
+![Task Creation Image 3](../../../static/img/Remove-Mcafee-Software/image_5.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row Image](..\..\..\static\img\Remove-Mcafee-Software\image_6.png)  
+![Add Row Image](../../../static/img/Remove-Mcafee-Software/image_6.png)  
 
 A blank function will appear.  
-![Blank Function Image](..\..\..\static\img\Remove-Mcafee-Software\image_7.png)  
+![Blank Function Image](../../../static/img/Remove-Mcafee-Software/image_7.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Selection 1](..\..\..\static\img\Remove-Mcafee-Software\image_8.png)  
-![PowerShell Script Selection 2](..\..\..\static\img\Remove-Mcafee-Software\image_9.png)  
+![PowerShell Script Selection 1](../../../static/img/Remove-Mcafee-Software/image_8.png)  
+![PowerShell Script Selection 2](../../../static/img/Remove-Mcafee-Software/image_9.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Function Pop Up](..\..\..\static\img\Remove-Mcafee-Software\image_10.png)  
+![PowerShell Function Pop Up](../../../static/img/Remove-Mcafee-Software/image_10.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
@@ -57,11 +57,11 @@ $ProjectName = 'Remove-McAfeeSoftware'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -95,34 +95,35 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Image](..\..\..\static\img\Remove-Mcafee-Software\image_11.png)  
+![PowerShell Script Image](../../../static/img/Remove-Mcafee-Software/image_11.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Image 2](..\..\..\static\img\Remove-Mcafee-Software\image_12.png)  
+![Add Row Image 2](../../../static/img/Remove-Mcafee-Software/image_12.png)  
 
 A blank function will appear.  
-![Blank Function Image 2](..\..\..\static\img\Remove-Mcafee-Software\image_13.png)  
+![Blank Function Image 2](../../../static/img/Remove-Mcafee-Software/image_13.png)  
 
 Search and select the `Script Log` function.  
-![Script Log Selection](..\..\..\static\img\Remove-Mcafee-Software\image_14.png)  
+![Script Log Selection](../../../static/img/Remove-Mcafee-Software/image_14.png)  
 
 The following function will pop up on the screen:  
-![Script Log Pop Up](..\..\..\static\img\Remove-Mcafee-Software\image_15.png)  
+![Script Log Pop Up](../../../static/img/Remove-Mcafee-Software/image_15.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Save Script Log](..\..\..\static\img\Remove-Mcafee-Software\image_16.png)  
+![Save Script Log](../../../static/img/Remove-Mcafee-Software/image_16.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script Button](..\..\..\static\img\Remove-Mcafee-Software\image_17.png)  
+![Save Script Button](../../../static/img/Remove-Mcafee-Software/image_17.png)  
 
 ## Completed Script
 
-![Completed Script](..\..\..\static\img\Remove-Mcafee-Software\image_18.png)  
+![Completed Script](../../../static/img/Remove-Mcafee-Software/image_18.png)  
 
 ## Output
 
 - Script log
+
 
 

@@ -33,3 +33,4 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](https://p
 | Username        | varchar  | Username                                        |
 
 
+

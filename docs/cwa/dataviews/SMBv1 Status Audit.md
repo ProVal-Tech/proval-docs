@@ -31,3 +31,4 @@ This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detec
 | SMBv1 Vulnerability State  | This shows whether the device is vulnerable or not vulnerable based on the script output detection |
 
 
+

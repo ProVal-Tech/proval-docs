@@ -38,3 +38,4 @@ Stores Battery Information for each target
 | LastScanTime              | DateTime  | The Last Scan Time for the report.                  |
 
 
+

@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\ShadowControl-Installer\image_1.png)
+![Sample Run](../../../static/img/ShadowControl-Installer/image_1.png)
 
 #### Global Parameters
 
@@ -33,5 +33,6 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 Script Log
+
 
 

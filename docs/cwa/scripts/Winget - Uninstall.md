@@ -14,7 +14,7 @@ This script will remove a Winget package.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Winget---Uninstall\image_1.png)
+![Sample Run](../../../static/img/Winget---Uninstall/image_1.png)
 
 ## Dependencies
 
@@ -39,6 +39,7 @@ Please reference the Agnostic Documentation for process.
 ## Output
 
 - Script log
+
 
 
 

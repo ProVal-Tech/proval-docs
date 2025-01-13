@@ -29,3 +29,4 @@ Displays detailed information about the GPO security filtering of each GPO from 
 | TrusteeType | VARCHAR  | The type of trustee (User, Group, WellKnownGroup, etc.)                   |
 
 
+

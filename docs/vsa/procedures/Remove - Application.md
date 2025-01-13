@@ -16,9 +16,9 @@ Removes an application or list of comma-separated applications either by normal 
 
 This agent procedure is designed as a template and meant to be exported.  
 **Name:** Remove - Application  
-![Image](..\..\..\static\img\Remove---Application\image_1.png)  
+![Image](../../../static/img/Remove---Application/image_1.png)  
 The agent procedure can be customized to fit the needs of various uninstalls. There are four variables within this agent procedure. See the usage for these below.  
-![Image](..\..\..\static\img\Remove---Application\image_2.png)
+![Image](../../../static/img/Remove---Application/image_2.png)
 
 ## Variables
 
@@ -84,11 +84,12 @@ For using custom switches for multiple application removals surround the switche
 
 ## Output
 
-`%ProgramData%\_automation\AgentProcedure\RemoveApplication\Remove-Application-error.txt`  
-`%ProgramData%\_automation\AgentProcedure\RemoveApplication\Remove-Application-log.txt`  
+`%ProgramData%/_automation/AgentProcedure/RemoveApplication/Remove-Application-error.txt`  
+`%ProgramData%/_automation/AgentProcedure/RemoveApplication/Remove-Application-log.txt`  
 Agent Procedure Log  
 
 Due to the way the VSA pulls in logs, the Agent Procedure log will typically not show much for `Remove-Application-log` as the VSA pulls the first lines of a file. This log is not cleared upon subsequent runs, and is too verbose to be captured in its entirety. `Remove-Application-error` is cleared upon every run and should contain relevant error messages. For the most detailed log refer to the `Remove-Application-log.txt` above.
+
 
 
 

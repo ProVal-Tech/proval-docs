@@ -14,7 +14,7 @@ This Script will update all Winget packages found on an endpoint.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Winget---Update-All\image_1.png)
+![Sample Run](../../../static/img/Winget---Update-All/image_1.png)
 
 ## Dependencies
 
@@ -33,6 +33,7 @@ Please reference the agnostic content for process.
 ## Output
 
 - Script log
+
 
 
 

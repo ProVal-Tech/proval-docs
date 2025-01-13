@@ -14,7 +14,7 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\HTML-Report---100-Largest-Files-and-Folders-Param\image_1.png)
+![Sample Run](../../../static/img/HTML-Report---100-Largest-Files-and-Folders-Param/image_1.png)
 
 ## Variables
 
@@ -27,7 +27,7 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 
 | Name        | Example                                | Required | Description                                     |
 |-------------|----------------------------------------|----------|-------------------------------------------------|
-| OutputPath  | C:\Temp\DiskSpaceConsumptionReport     | True     | Path to store the HTML report locally            |
+| OutputPath  | C:/Temp/DiskSpaceConsumptionReport     | True     | Path to store the HTML report locally            |
 
 #### User Parameters
 
@@ -42,11 +42,12 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 
 ## Sample Email
 
-![Sample Email](..\..\..\static\img\HTML-Report---100-Largest-Files-and-Folders-Param\image_2.png)
+![Sample Email](../../../static/img/HTML-Report---100-Largest-Files-and-Folders-Param/image_2.png)
 
 ## Sample Report
 
-![Sample Report](..\..\..\static\img\HTML-Report---100-Largest-Files-and-Folders-Param\image_3.png)
+![Sample Report](../../../static/img/HTML-Report---100-Largest-Files-and-Folders-Param/image_3.png)
+
 
 
 

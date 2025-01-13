@@ -18,7 +18,7 @@ This creates all the needed items in the Database to ensure the [Patch Complianc
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Create-Views-for-Patch-Compliance-Report\image_1.png)
+![Sample Run](../../../static/img/Create-Views-for-Patch-Compliance-Report/image_1.png)
 
 ## Dependencies
 
@@ -36,5 +36,6 @@ Other items depend on this script being run to function, which I have listed bel
 ## Output
 
 This is a one-time use script, used to install/create 3 views. After running once, this script can be removed from the environment.
+
 
 

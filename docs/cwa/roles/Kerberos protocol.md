@@ -19,7 +19,8 @@ The role can be further used to create an Audit dataview if needed.
 
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
-| `{%-HKLM\System\currentcontrolset\services\kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
+| `{%-HKLM/System/currentcontrolset/services/kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
+
 
 
 

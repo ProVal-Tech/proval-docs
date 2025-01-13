@@ -25,11 +25,11 @@ Notes:
 ## Implementation
 
 1. Debug/Run the script against any client with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
-   ![Image](..\..\..\static\img\Associate-Most-Active-Username-as-Contact-Workstations\image_1.png)  
-   ![Image](..\..\..\static\img\Associate-Most-Active-Username-as-Contact-Workstations\image_2.png)
+   ![Image](../../../static/img/Associate-Most-Active-Username-as-Contact-Workstations/image_1.png)  
+   ![Image](../../../static/img/Associate-Most-Active-Username-as-Contact-Workstations/image_2.png)
 
 2. Schedule the script to run once per day.  
-   ![Image](..\..\..\static\img\Associate-Most-Active-Username-as-Contact-Workstations\image_3.png)
+   ![Image](../../../static/img/Associate-Most-Active-Username-as-Contact-Workstations/image_3.png)
 
 ## Client-Level EDF
 
@@ -48,5 +48,6 @@ Notes:
 | Name                           | Type      | Example | Section | Required | Description                                                                                     |
 |--------------------------------|-----------|---------|---------|----------|-------------------------------------------------------------------------------------------------|
 | Auto Associate Contacts - Exclude | Check-Box | 0/1     | Default | True     | Mark this EDF to exclude the computer from the contact auto association.                       |
+
 
 

@@ -22,7 +22,7 @@ Note: All changes have to be done in [CWM - Automate - Template - Offboarding Sc
 
 ## Sample Run
 
-*![Sample Run Image](..\..\..\static\img\Offboarding-Wrapper\image_1.png)*
+*![Sample Run Image](../../../static/img/Offboarding-Wrapper/image_1.png)*
 
 ## System Properties
 
@@ -44,16 +44,16 @@ Note: All changes have to be done in [CWM - Automate - Template - Offboarding Sc
 | Offboard Computer     | Computer | CheckBox  | Check it to Offboard the machine.                                                                                                                                                                                            |
 
 - Select Failed Uninstall Process from "Failed Uninstall Process" EDF  
-  *![Failed Uninstall Process Image](..\..\..\static\img\Offboarding-Wrapper\image_2.png)*
+  *![Failed Uninstall Process Image](../../../static/img/Offboarding-Wrapper/image_2.png)*
 
 - Select "`Offboard Client`" EDF to select the whole client for offboarding  
-  *![Offboard Client Image](..\..\..\static\img\Offboarding-Wrapper\image_3.png)*
+  *![Offboard Client Image](../../../static/img/Offboarding-Wrapper/image_3.png)*
 
 - Select "Offboard Location" EDF to select the whole location for Offboarding  
-  *![Offboard Location Image](..\..\..\static\img\Offboarding-Wrapper\image_4.png)*
+  *![Offboard Location Image](../../../static/img/Offboarding-Wrapper/image_4.png)*
 
 - Select "Offboard Computer" EDF to select the machine for Offboarding  
-  *![Offboard Computer Image](..\..\..\static\img\Offboarding-Wrapper\image_5.png)*
+  *![Offboard Computer Image](../../../static/img/Offboarding-Wrapper/image_5.png)*
 
 ## Output
 
@@ -77,5 +77,6 @@ If any application fails to uninstall, it is likely that the machine needs to be
 **Location Level ticketing:**  
 **Subject:** `Offboarding initiated on location - %LocationName%`  
 **Ticket Body:** `It seems like "Offboard Location" EDF has been selected for %LocationName%.<br>%ScriptName% has been initiated to offboard all machines under this location.`
+
 
 

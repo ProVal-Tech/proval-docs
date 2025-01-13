@@ -16,7 +16,7 @@ The purpose of the script is to send the information of the event logs detected 
 
 This is an Autofix script and it is used within the "Automate Server - Event Log Monitoring [Autofix]" alert template.
 
-![Sample Run](..\..\..\static\img\Automate-Server---Event-Log-Monitoring-Autofix\image_1.png)
+![Sample Run](../../../static/img/Automate-Server---Event-Log-Monitoring-Autofix/image_1.png)
 
 ## Dependencies
 
@@ -39,5 +39,6 @@ Step 3: Emails the outcome of the command (%shellresult%) to [alerts@provaltech.
 ## Output
 
 - **Email**
+
 
 

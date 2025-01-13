@@ -28,26 +28,27 @@ It is built for auditing purposes.
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.  
-   ![Devices and Device Groups](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_1.png)
+   ![Devices and Device Groups](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Dynamic Group Button](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_2.png)  
+   ![Dynamic Group Button](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_2.png)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Dynamic Group Page](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_3.png)
+   ![Dynamic Group Page](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_3.png)
 
 3. Set the group name to `DUO Auth Proxy Deployment Failed`  
    Description: `This contains the devices where the "DUO Security Authentication Proxy" application deployment failed by the script "DUO Auth Proxy - Install/Update Latest Version".`  
-   ![Group Name and Description](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_4.png)
+   ![Group Name and Description](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Add Criteria](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_5.png)  
+   ![Add Criteria](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_5.png)  
    This search box will appear.  
-   ![Search Box](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_6.png)
+   ![Search Box](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_6.png)
 
 5. - Search and select the `Duo Auth Proxy Result` custom field from the search box.
    - Set `Failed` in the comparison condition.  
-   ![Search and Select Custom Field](..\..\..\static\img\DUO-Auth-Proxy-Deployment-Failed\image_7.png)  
+   ![Search and Select Custom Field](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_7.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
 
 
 

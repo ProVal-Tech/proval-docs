@@ -24,11 +24,12 @@ Two agent Procedures: ISO Mount Disable & ISO Mount Enable, to prevent or allow 
 
 ## Process
 
-Sets `SZ HKEY_CLASSES_ROOT\Windows.IsoFile\shell\mount\ProgrammaticAccessOnly` to remove Mount access, and removes the value to re-enable.
+Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` to remove Mount access, and removes the value to re-enable.
 
 ## Output
 
 Agent Procedure Log
+
 
 
 

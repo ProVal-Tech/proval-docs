@@ -17,12 +17,12 @@ This client script is exclusively built for our internal development environment
 ## Sample Run
 
 It is scheduled in our internal Automate environment to run twice per day.  
-![Sample Run](..\..\..\static\img\Internal-Environment-Sub-Script-Modification-Notification\image_1.png)
+![Sample Run](../../../static/img/Internal-Environment-Sub-Script-Modification-Notification/image_1.png)
 
 ## Output
 
 - Autotask ticket  
-![Output](..\..\..\static\img\Internal-Environment-Sub-Script-Modification-Notification\image_2.png)
+![Output](../../../static/img/Internal-Environment-Sub-Script-Modification-Notification/image_2.png)
 
 ## Ticketing
 
@@ -42,6 +42,7 @@ It is scheduled in our internal Automate environment to run twice per day.
 `@variableX@`  
 
 **Sample Ticket:**  
-![Sample Ticket](..\..\..\static\img\Internal-Environment-Sub-Script-Modification-Notification\image_3.png)
+![Sample Ticket](../../../static/img/Internal-Environment-Sub-Script-Modification-Notification/image_3.png)
+
 
 

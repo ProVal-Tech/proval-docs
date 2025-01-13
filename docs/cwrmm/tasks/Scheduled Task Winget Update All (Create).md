@@ -16,9 +16,9 @@ The task can only be executed against the companies where the company level cust
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_1.png)
+![Sample Run 1](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_1.png)
 
-![Sample Run 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_2.png)
+![Sample Run 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_2.png)
 
 ## Dependencies
 
@@ -43,9 +43,9 @@ The task can only be executed against the companies where the company level cust
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_3.png)
+![Task Creation 1](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_3.png)
 
-![Task Creation 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_4.png)
+![Task Creation 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_4.png)
 
 **Name:** Scheduled Task Winget Update All (Create)
 
@@ -53,25 +53,25 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Category:** Patching
 
-![Task Creation 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_5.png)
+![Task Creation 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_5.png)
 
 ## Task
 
 Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_6.png)
+![Add Row](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_6.png)
 
 This function will appear.
 
-![Function Appears](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_7.png)
+![Function Appears](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_7.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_8.png)
+![PowerShell Script Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_8.png)
 
-![PowerShell Script Selected](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_9.png)
+![PowerShell Script Selected](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_9.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -79,31 +79,31 @@ Paste in the following PowerShell script and set the expected time of script exe
 if ( (get-ciminstance -classname Win32_OperatingSystem).caption -match 'Windows 1[01]' ) { 'Supported' } else { 'Unsupported' }
 ```
 
-![PowerShell Script Pasted](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_10.png)
+![PowerShell Script Pasted](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_10.png)
 
 ### Row 2 Logic: If Then
 
-![Row 2 Logic](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_11.png)
+![Row 2 Logic](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_11.png)
 
-![Row 2 Logic 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_12.png)
+![Row 2 Logic 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_12.png)
 
 ### Row 2a Condition: Output Contains
 
 Type `Unsupported` in the `Input Value or Variable` field and press `Enter`.
 
-![Row 2a Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_13.png)
+![Row 2a Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_13.png)
 
 ### Row 2b Function: Script Log
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Log](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Log](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_15.png)
+![Script Log Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_15.png)
 
-![Script Log Selected](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_16.png)
+![Script Log Selected](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_16.png)
 
 Add the following log in the `Script Log Message` field and click the `Save` button:
 
@@ -119,53 +119,53 @@ Supported OS are Windows 10 and Windows 11
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Exit](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Exit](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Exit` function.
 
-![Script Exit Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_17.png)
+![Script Exit Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_17.png)
 
 **Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
 
 ### Row 3 Logic: If Then
 
-![Row 3 Logic](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_11.png)
+![Row 3 Logic](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_11.png)
 
-![Row 3 Logic 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_12.png)
+![Row 3 Logic 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_12.png)
 
 ### Row 3a Condition: Custom Field Equals
 
 Select the `Custom Field` option from the dropdown.
 
-![Row 3a Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_18.png)
+![Row 3a Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_18.png)
 
-![Row 3a Condition 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_19.png)
+![Row 3a Condition 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_19.png)
 
 Search and select the `WingetUpdateAll_Task_Result` custom field in the `Search` Field.
 
-![Row 3a Condition 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_20.png)
+![Row 3a Condition 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_20.png)
 
-![Row 3a Condition 4](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_21.png)
+![Row 3a Condition 4](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_21.png)
 
 Change the operator to `Equals` from `Contains`.
 
-![Row 3a Condition 5](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_22.png)
+![Row 3a Condition 5](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_22.png)
 
 Type `Task Created` in the comparator field and press `Enter`.
 
-![Row 3a Condition 6](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_23.png)
+![Row 3a Condition 6](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_23.png)
 
 ### Row 3b Function: Script Log
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Log](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Log](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_15.png)
+![Script Log Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_15.png)
 
-![Script Log Selected](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_16.png)
+![Script Log Selected](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_16.png)
 
 Add the following log in the `Script Log Message` field and click the `Save` button:
 
@@ -177,53 +177,53 @@ Task is already created on the computer.
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Exit](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Exit](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Exit` function.
 
-![Script Exit Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_17.png)
+![Script Exit Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_17.png)
 
 **Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
 
 ### Row 4 Logic: If Then
 
-![Row 4 Logic](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_11.png)
+![Row 4 Logic](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_11.png)
 
-![Row 4 Logic 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_12.png)
+![Row 4 Logic 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_12.png)
 
 ### Row 4a Condition: Custom Field Equals
 
 Select the `Custom Field` option from the dropdown.
 
-![Row 4a Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_18.png)
+![Row 4a Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_18.png)
 
-![Row 4a Condition 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_19.png)
+![Row 4a Condition 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_19.png)
 
 Search and select the `WingetUpdateAll_Task_Create` custom field in the `Search` Field.
 
-![Row 4a Condition 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_24.png)
+![Row 4a Condition 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_24.png)
 
-![Row 4a Condition 4](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_25.png)
+![Row 4a Condition 4](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_25.png)
 
 Change the operator to `Equals` from `Contains`.
 
-![Row 4a Condition 5](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_26.png)
+![Row 4a Condition 5](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_26.png)
 
 Keep the Comparator to `False`.
 
-![Row 4a Condition 6](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_27.png)
+![Row 4a Condition 6](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_27.png)
 
 ### Row 4b Function: Script Log
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Log](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Log](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_15.png)
+![Script Log Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_15.png)
 
-![Script Log Selected](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_16.png)
+![Script Log Selected](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_16.png)
 
 Add the following log in the `Script Log Message` field and click the `Save` button:
 
@@ -235,51 +235,51 @@ Winget Update All scheduled task creation is not enabled for the Company.
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Exit](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Exit](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Exit` function.
 
-![Script Exit Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_17.png)
+![Script Exit Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_17.png)
 
 **Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
 
 ### Row 5 Logic: If Then
 
-![Row 5 Logic](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_11.png)
+![Row 5 Logic](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_11.png)
 
-![Row 5 Logic 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_12.png)
+![Row 5 Logic 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_12.png)
 
 ### Row 5a Condition: Custom Field Equals
 
 Select the `Custom Field` option from the dropdown.
 
-![Row 5a Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_18.png)
+![Row 5a Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_18.png)
 
-![Row 5a Condition 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_19.png)
+![Row 5a Condition 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_19.png)
 
 Search and select the `wingetupdateall_task_Exclude` custom field in the `Search` Field.
 
-![Row 5a Condition 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_28.png)
+![Row 5a Condition 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_28.png)
 
 Change the operator to `Equals` from `Contains`.
 
-![Row 5a Condition 4](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_29.png)
+![Row 5a Condition 4](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_29.png)
 
 Change Comparator to `True` from `False`.
 
-![Row 5a Condition 5](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_30.png)
+![Row 5a Condition 5](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_30.png)
 
 ### Row 5b Function: Script Log
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Log](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Log](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_15.png)
+![Script Log Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_15.png)
 
-![Script Log Selected](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_16.png)
+![Script Log Selected](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_16.png)
 
 Add the following log in the `Script Log Message` field and click the `Save` button:
 
@@ -291,49 +291,49 @@ Computer is excluded from Winget Update All Scheduled Task Creation.
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Exit](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Exit](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Exit` function.
 
-![Script Exit Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_17.png)
+![Script Exit Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_17.png)
 
 **Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
 
 ### Row 6 Logic: If Then
 
-![Row 6 Logic](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_11.png)
+![Row 6 Logic](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_11.png)
 
-![Row 6 Logic 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_12.png)
+![Row 6 Logic 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_12.png)
 
 ### Row 6a Condition: Custom Field Equals
 
 Select the `Custom Field` option from the dropdown.
 
-![Row 6a Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_18.png)
+![Row 6a Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_18.png)
 
-![Row 6a Condition 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_19.png)
+![Row 6a Condition 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_19.png)
 
 Search and select the `wingetupdateall_task_Exclude` custom field in the `Search` Field. In this step select the Site-Level custom field.
 
 Change the operator to `Equals` from `Contains`.
 
-![Row 6a Condition 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_31.png)
+![Row 6a Condition 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_31.png)
 
 Change Comparator to `True` from `False`.
 
-![Row 6a Condition 4](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_30.png)
+![Row 6a Condition 4](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_30.png)
 
 ### Row 6b Function: Script Log
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Log](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Log](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Log` function.
 
-![Script Log Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_15.png)
+![Script Log Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_15.png)
 
-![Script Log Selected](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_16.png)
+![Script Log Selected](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_16.png)
 
 Add the following log in the `Script Log Message` field and click the `Save` button:
 
@@ -345,51 +345,51 @@ Site is excluded from Winget Update All Scheduled Task Creation.
 
 Add a new row by clicking on `Add row` button.
 
-![Add Row for Script Exit](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_14.png)
+![Add Row for Script Exit](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_14.png)
 
 Search and select `Script Exit` function.
 
-![Script Exit Selection](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_17.png)
+![Script Exit Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_17.png)
 
 **Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
 
 ### Row 7 Logic: If Then Else
 
-![Row 7 Logic](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_32.png)
+![Row 7 Logic](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_32.png)
 
-![Row 7 Logic 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_33.png)
+![Row 7 Logic 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_33.png)
 
 ### Row 7a Condition: Custom Field Equals
 
 Select the `Custom Field` option from the dropdown.
 
-![Row 7a Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_18.png)
+![Row 7a Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_18.png)
 
-![Row 7a Condition 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_19.png)
+![Row 7a Condition 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_19.png)
 
 Search and select the `WingetUpdateAll_UserTask_Disable` custom field in the `Search` Field. Select the `Company-Level Boolean` field.
 
-![Row 7a Condition 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_34.png)
+![Row 7a Condition 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_34.png)
 
 Change the operator to `Equals` from `Contains`.
 
-![Row 7a Condition 4](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_35.png)
+![Row 7a Condition 4](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_35.png)
 
 Change Comparator to `True` from `False`.
 
-![Row 7a Condition 5](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_36.png)
+![Row 7a Condition 5](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_36.png)
 
 Add another condition by clicking the `Add Condition` button.
 
-![Add Condition](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_37.png)
+![Add Condition](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_37.png)
 
 Change the logical operator to `Or` from `And`.
 
-![Change Logical Operator](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_38.png)
+![Change Logical Operator](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_38.png)
 
 Select the `Custom Field` option from the dropdown.
 
-![Row 7a Condition 6](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_39.png)
+![Row 7a Condition 6](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_39.png)
 
 Search and select the `WingetUpdateAll_UserTask_Disable` custom field in the `Search` Field. Select the `Site-Level Boolean` field.
 
@@ -433,8 +433,8 @@ Paste in the following PowerShell script and set the expected time of script exe
 $DisableUserTask = if ( '@UserTask@' -eq 0 ) { $True } else { $False }
 $Force = 1
 $ProjectName = 'Invoke-WingetProcessor'
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$FilePath = "$WorkingDirectory\\Winget-UpdateAll.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$FilePath = "$WorkingDirectory//Winget-UpdateAll.ps1"
 
 #region Setup - Folder Structure
 if ( $Force ) {
@@ -460,10 +460,10 @@ $FileContent = @"
 `$ProjectName = 'Invoke-WingetProcessor'
 `$BaseURL = 'https://file.provaltech.com/repo'
 `$PS1URL = "`$BaseURL/script/`$ProjectName.ps1"
-`$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\`$ProjectName"
-`$PS1Path = "`$WorkingDirectory\\`$ProjectName.ps1"
-`$LogPath = "`$WorkingDirectory\\`$ProjectName-log.txt"
-`$OldLogPath = "`$WorkingDirectory\\`$ProjectName-log-old.txt"
+`$WorkingDirectory = "C://ProgramData//_automation//script//`$ProjectName"
+`$PS1Path = "`$WorkingDirectory//`$ProjectName.ps1"
+`$LogPath = "`$WorkingDirectory//`$ProjectName-log.txt"
+`$OldLogPath = "`$WorkingDirectory//`$ProjectName-log-old.txt"
 #endregion
 "@
 
@@ -523,15 +523,15 @@ Script Result:
 
 ## Completed Script
 
-![Completed Script 1](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_40.png)
+![Completed Script 1](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_40.png)
 
-![Completed Script 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_41.png)
+![Completed Script 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_41.png)
 
-![Completed Script 3](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_42.png)
+![Completed Script 3](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_42.png)
 
 Click the `Save` button at the top right corner of the screen to save the script.
 
-![Save Script](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_43.png)
+![Save Script](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_43.png)
 
 ## Deployment
 
@@ -542,44 +542,45 @@ It is suggested to run the Task once per day against the [Winget Update All (Tas
 - Select the concerned task.
 - Click on `Schedule button` to schedule the task.
 
-![Schedule Task](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_44.png)
+![Schedule Task](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_44.png)
 
 This screen will appear.
 
-![Schedule Confirmation](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_45.png)
+![Schedule Confirmation](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_45.png)
 
 Click the `Does not repeat` button.
 
-![Change Schedule](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_46.png)
+![Change Schedule](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_46.png)
 
 This pop-up box will appear.
 
 Click the `OK` button to save the schedule. Recurrence will be changed to `Every day`.
 
-![Save Schedule](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_47.png)
+![Save Schedule](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_47.png)
 
 Select the `Device Groups` option in the `Targeted Resources` section.
 
-![Select Device Groups](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_48.png)
+![Select Device Groups](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_48.png)
 
 Search and Select the [Winget Update All (Task Create)](https://proval.itglue.com/DOC-5078775-15702935) device group.
 
-![Select Device Group](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_49.png)
+![Select Device Group](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_49.png)
 
 Now click the `Run button` to initiate the task.
 
-![Run Task](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_50.png)
+![Run Task](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_50.png)
 
 The task will start appearing in the Scheduled Tasks.
 
-![Scheduled Tasks](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_51.png)
+![Scheduled Tasks](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_51.png)
 
-![Scheduled Tasks 2](..\..\..\static\img\Scheduled-Task-Winget-Update-All-(Create)\image_52.png)
+![Scheduled Tasks 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_52.png)
 
 ## Output
 
 - Custom Field
 - Script Log
+
 
 
 

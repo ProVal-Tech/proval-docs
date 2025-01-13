@@ -30,9 +30,9 @@ SELECT '' AS `AgentID`,
 '900' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-itemproperty -Path HKLM:\\SYSTEM\\CurrentControlSet\\control\\Lsa,HKLM:\\SYSTEM\\CurrentControlSet\\services\\Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return \'Enabled\'}}} else {return \'Enabled\'}"' AS `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-itemproperty -Path HKLM://SYSTEM//CurrentControlSet//control//Lsa,HKLM://SYSTEM//CurrentControlSet//services//Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return /'Enabled/'}}} else {return /'Enabled/'}"' AS `DataOut`,
 '16' AS `Comparor`,
-'10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(^(()%7C %7C(OK)%7C(\\r\\n))$)%7C(Enabled)|10|(Enabled)' AS `DataIn`,
+'10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(Enabled)|10|(Enabled)' AS `DataIn`,
 '' AS `IDField`,
 '1' AS `AlertStyle`,
 '0' AS `ScriptID`,
@@ -100,9 +100,9 @@ SELECT '' AS `AgentID`,
 '900' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-itemproperty -Path HKLM:\\SYSTEM\\CurrentControlSet\\control\\Lsa,HKLM:\\SYSTEM\\CurrentControlSet\\services\\Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return \'Enabled\'}}} else {return \'Enabled\'}"' AS `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-itemproperty -Path HKLM://SYSTEM//CurrentControlSet//control//Lsa,HKLM://SYSTEM//CurrentControlSet//services//Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return /'Enabled/'}}} else {return /'Enabled/'}"' AS `DataOut`,
 '16' AS `Comparor`,
-'10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(^(()%7C %7C(OK)%7C(\\r\\n))$)%7C(Enabled)|10|(Enabled)' AS `DataIn`,
+'10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(Enabled)|10|(Enabled)' AS `DataIn`,
 '' AS `IDField`,
 '1' AS `AlertStyle`,
 '0' AS `ScriptID`,
@@ -160,5 +160,6 @@ Now execute your query from a RAWSQL monitor set.
 ### 5.
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
+
 
 

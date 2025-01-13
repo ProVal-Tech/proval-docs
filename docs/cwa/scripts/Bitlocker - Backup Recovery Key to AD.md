@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Bitlocker---Backup-Recovery-Key-to-AD\image_1.png)
+![Sample Run](../../../static/img/Bitlocker---Backup-Recovery-Key-to-AD/image_1.png)
 
 ## Dependencies
 
@@ -44,6 +44,7 @@ Machine must be using Bitlocker for encryption.
 ## Output
 
 - Script log
+
 
 
 

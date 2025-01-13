@@ -29,7 +29,7 @@ Windows Machines - Should be run on all Windows machines
 `This is an automated update to inform you that the high CPU utilization issue reported earlier has now been resolved. The system has detected that the CPU usage has returned to normal and the performance has improved. We appreciate your prompt attention to this matter and thank you for taking the necessary actions to resolve the issue. If you require any further assistance or have any questions, please do not hesitate to contact us.`
 
 **Failure Body**  
-`The CPU usage on the machine %computername% located at %clientname%\%locationname% is currently reporting high CPU usage. Please investigate the issue and take appropriate actions to address the root cause. As per the severity of the issue, it is recommended to prioritize this ticket accordingly.`
+`The CPU usage on the machine %computername% located at %clientname%/%locationname% is currently reporting high CPU usage. Please investigate the issue and take appropriate actions to address the root cause. As per the severity of the issue, it is recommended to prioritize this ticket accordingly.`
 
 `%RESULT%`
 
@@ -48,19 +48,20 @@ idlemon                          5.5
 ```
 
 **Sample Ticket**  
-![Sample Ticket](..\..\..\static\img\CPU-Threshold-Violation-Monitor\image_1.png)
+![Sample Ticket](../../../static/img/CPU-Threshold-Violation-Monitor/image_1.png)
 
 ## Alert Template
 
 **Name:** △ Custom - Ticket Creation - Computer
 
-![Alert Template](..\..\..\static\img\CPU-Threshold-Violation-Monitor\image_2.png)
+![Alert Template](../../../static/img/CPU-Threshold-Violation-Monitor/image_2.png)
 
 **Note:** The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too.
 
 ## How to Import
 
 [Import - Remote Monitor - ProVal - Production - CPU Threshold Violation Monitor](https://proval.itglue.com/DOC-5078775-13277020)
+
 
 
 

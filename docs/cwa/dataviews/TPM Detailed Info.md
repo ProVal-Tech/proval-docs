@@ -35,3 +35,4 @@ Displays information about the TPM configuration on endpoints.
 | TPMVersion          | Displays the TPM version on the endpoint                     |
 
 
+

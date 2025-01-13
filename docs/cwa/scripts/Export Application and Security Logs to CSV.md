@@ -16,14 +16,14 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Export-Application-and-Security-Logs-to-CSV\image_1.png)
+![Sample Run](../../../static/img/Export-Application-and-Security-Logs-to-CSV/image_1.png)
 
 ## Variables
 
 | Name              | Description                                  |
 |-------------------|----------------------------------------------|
 | ProjectName       | Export-Eventlogs                             |
-| WorkingDirectory   | C:\ProgramData\_Automation\script\Export-Eventlogs |
+| WorkingDirectory   | C:/ProgramData/_Automation/script/Export-Eventlogs |
 | Param             | Parameter set for the powershell script      |
 
 #### User Parameters
@@ -32,7 +32,7 @@ The script checks the size of the generated CSV file. If the file size is less t
 |-------------|-----------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Level       | Critical,Error,Warning      | False    | Event Type to export. Supported options are `Critical, Error, and Warning`. Multiple levels can be separated by a comma (without space or quotations). The default value is `Critical`. |
 | Days        | 180                         | False    | Number of days to select event logs from. Only integer values are supported. The default value is `30`.                                                          |
-| ExportPath  | C:\Temp                     | False    | Folder path for the exported CSV file. The default value is `C:\Windows\Temp`.                                                                                   |
+| ExportPath  | C:/Temp                     | False    | Folder path for the exported CSV file. The default value is `C:/Windows/Temp`.                                                                                   |
 
 **Quotations, (both single and double) and Spaces are not supported.**
 
@@ -40,6 +40,7 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 - Script Logs
 - File Upload
+
 
 
 

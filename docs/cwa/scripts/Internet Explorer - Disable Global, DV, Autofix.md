@@ -14,7 +14,7 @@ This script disables Internet Explorer from a Windows machine.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Internet-Explorer---Disable-Global,-DV,-Autofix\image_1.png)
+![Sample Run](../../../static/img/Internet-Explorer---Disable-Global,-DV,-Autofix/image_1.png)
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ This script disables Internet Explorer from a Windows machine.
 | Name        | Example     | Required | Description                                                                                      |
 |-------------|-------------|----------|--------------------------------------------------------------------------------------------------|
 | Reboot      | 0 or 1     | False    | 0 - Reboot Immediately<br>1 - No Reboot                                                         |
-| PromptUser  | 0, 1 or 2  | True     | 0 - Never Prompt<br>1 - Always Prompt when user click IE (Default)<br>2 - Once per user prompt<br> ![Prompt Screenshot](..\..\..\static\img\Internet-Explorer---Disable-Global,-DV,-Autofix\image_2.png) |
+| PromptUser  | 0, 1 or 2  | True     | 0 - Never Prompt<br>1 - Always Prompt when user click IE (Default)<br>2 - Once per user prompt<br> ![Prompt Screenshot](../../../static/img/Internet-Explorer---Disable-Global,-DV,-Autofix/image_2.png) |
 
 ## Process
 
@@ -51,6 +51,7 @@ Step 5: For success, it will check whether reboot is enabled or not within the G
 - Script log
 - EDF
 - Dataview
+
 
 
 

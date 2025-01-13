@@ -20,27 +20,27 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 ## Automate-Deploy GPO
 
-![Automate-Deploy GPO Image 1](..\..\..\static\img\Agent-Deployment---GPO\image_1.png)
+![Automate-Deploy GPO Image 1](../../../static/img/Agent-Deployment---GPO/image_1.png)
 
-![Automate-Deploy GPO Image 2](..\..\..\static\img\Agent-Deployment---GPO\image_2.png)
+![Automate-Deploy GPO Image 2](../../../static/img/Agent-Deployment---GPO/image_2.png)
 
 ## Automate-Deploy Scheduled Task GPO
 
-![Automate-Deploy Scheduled Task GPO Image 1](..\..\..\static\img\Agent-Deployment---GPO\image_3.png)
+![Automate-Deploy Scheduled Task GPO Image 1](../../../static/img/Agent-Deployment---GPO/image_3.png)
 
-![Automate-Deploy Scheduled Task GPO Image 2](..\..\..\static\img\Agent-Deployment---GPO\image_4.png)
+![Automate-Deploy Scheduled Task GPO Image 2](../../../static/img/Agent-Deployment---GPO/image_4.png)
 
-![Automate-Deploy Scheduled Task GPO Image 3](..\..\..\static\img\Agent-Deployment---GPO\image_5.png)
+![Automate-Deploy Scheduled Task GPO Image 3](../../../static/img/Agent-Deployment---GPO/image_5.png)
 
 ## Sample Run
 
 **To Create a Startup Script GPO:**
 
-![Create Startup Script GPO](..\..\..\static\img\Agent-Deployment---GPO\image_6.png)
+![Create Startup Script GPO](../../../static/img/Agent-Deployment---GPO/image_6.png)
 
 **To Create a Scheduled Task GPO:**
 
-![Create Scheduled Task GPO](..\..\..\static\img\Agent-Deployment---GPO\image_7.png)
+![Create Scheduled Task GPO](../../../static/img/Agent-Deployment---GPO/image_7.png)
 
 ## Implementation
 
@@ -71,5 +71,6 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 **Q.** Does installing the Scheduled task GPO remove the existing Startup script GPO?  
 **A.** No, both `Automate-Deploy` and `Automate-Deploy Scheduled Task` are individual GPOs and do not remove/update the other while creating.
+
 
 

@@ -33,57 +33,58 @@ Classify Windows 10 and 11 computers that are already using the latest build ver
 - Select `OS Build Number` for the Criteria
   - Contains any of `19045` and `22631` in the condition box.
   
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_1.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_1.png)
   
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_2.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_2.png)
 
 - Click the `Add Criteria` button to add another Criteria.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_3.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_3.png)
 
 - Select `OS` for the Criteria
   - Contains any of `Microsoft Windows 10 and 11` for the condition.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_4.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_4.png)
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_5.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_5.png)
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_6.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_6.png)
 
 - Add an Outer Block by clicking the `Add Outer Block` button.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_7.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_7.png)
 
 - The main outer block should be using AND and not OR.
 
 - In the `Outer Block`, Select `Feature Update Install Failure` custom field for criteria, 
   - Contains any of `Error` in the condition box.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_8.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_8.png)
 
 - Select `Feature Update Reboot Pending` custom field for criteria, `Equal` for comparator and type `True` in the condition box.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_9.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_9.png)
 
 - Add another criteria by clicking the `Add Criteria` button inside the outer block.
 
 - Choose the `WinFeatUpgradeAttempts` custom field for criteria, 
   - Contains any of integers from 1 to 15 in the condition field. Enter each number individually, pressing Enter after each one: 1,2,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_10.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_10.png)
 
 - Now, change the comparators from `AND` to `OR` inside the outer block.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_11.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_11.png)
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_12.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_12.png)
 
 ## Group
 
 Click the Save button to Save the Group.
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_13.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_13.png)
 
-![Image](..\..\..\static\img\Feature-Pack-Update---Updated-Computers\image_14.png)
+![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_14.png)
+
 
 

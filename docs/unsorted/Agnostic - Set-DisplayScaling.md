@@ -27,7 +27,7 @@ Windows OS, Powershell 5
 Set Custom Display Scaling for Windows Machines
 
 ```
-.\Set-DisplayScaling.ps1 -Scale '150'
+./Set-DisplayScaling.ps1 -Scale '150'
 ```
 
 ## Parameters
@@ -39,9 +39,10 @@ Set Custom Display Scaling for Windows Machines
 ## Output
 
 ```
-.\Set-DisplayScaling-log.txt
-.\Set-DisplayScaling-Error.txt
+./Set-DisplayScaling-log.txt
+./Set-DisplayScaling-Error.txt
 ```
+
 
 
 

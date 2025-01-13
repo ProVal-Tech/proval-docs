@@ -14,21 +14,22 @@ This script is used to store the last signed-in user so PRONOC users can run thi
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Last-Signed-in-User---Backup\image_1.png)
+![Sample Run](../../../static/img/Last-Signed-in-User---Backup/image_1.png)
 
 ## Variables
 
 | Name          | Description                                                                                       |
 |---------------|---------------------------------------------------------------------------------------------------|
-| LogonBackup   | Collects information about backup taken successfully or not. The reg backup at path: C:\Temp\Logonbackup\logonexport.reg |
+| LogonBackup   | Collects information about backup taken successfully or not. The reg backup at path: C:/Temp/Logonbackup/logonexport.reg |
 
 ## Process
 
-This script stores the last sign-in user info from the registry as a registry backup to the local computer. It stores the last logged in user data to the file "C:\Temp\Logonbackup\logonexport.reg". It then queries the results of the returned script for errors and sends this to the script log.
+This script stores the last sign-in user info from the registry as a registry backup to the local computer. It stores the last logged in user data to the file "C:/Temp/Logonbackup/logonexport.reg". It then queries the results of the returned script for errors and sends this to the script log.
 
 ## Output
 
 - Script log
+
 
 
 

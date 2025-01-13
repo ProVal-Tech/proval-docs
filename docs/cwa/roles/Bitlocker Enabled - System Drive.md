@@ -21,3 +21,4 @@ This data is visible in the Bitlocker dataviews or the roles tab in Automate.
 | `{%@manage-bde -status C: | find "Protection Status"@%}` | Contains   | Protection On | Windows OS     |
 
 
+

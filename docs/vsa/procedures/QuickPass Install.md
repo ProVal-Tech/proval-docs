@@ -10,13 +10,14 @@ unlisted: false
 ---
 <div class='text-section scrollable'>
 
-![Image](..\..\..\static\img\QuickPass-Install\image_1.png)
+![Image](../../../static/img/QuickPass-Install/image_1.png)
 
 </div>
 
 <div class='text-section scrollable'>
 
 </div>
+
 
 
 

@@ -28,7 +28,7 @@ Global
 **Body:**
 
 ```
-The OneDrive Audit script found an issue with %Clientname%\%computername%.
+The OneDrive Audit script found an issue with %Clientname%/%computername%.
 ```
 
 ```
@@ -46,7 +46,7 @@ Reported Issue:
 **Example:**
 
 ```
-The OneDrive Audit script found an issue with ABC Inc.\TEST-COMPUTER
+The OneDrive Audit script found an issue with ABC Inc./TEST-COMPUTER
 ```
 
 ```
@@ -58,14 +58,14 @@ Reported Issue:
 ```
 
 ```
-UserName: AzAD\User1
-Folder Path: C:\Users\User1\OneDrive - Investigations
+UserName: AzAD/User1
+Folder Path: C:/Users/User1/OneDrive - Investigations
 Sync Status: Error
 ```
 
 ```
-UserName: AzAD\User2
-Folder Path: C:\Users\User2\OneDrive - Investigations
+UserName: AzAD/User2
+Folder Path: C:/Users/User2/OneDrive - Investigations
 Sync Status: Error
 ```
 
@@ -74,5 +74,6 @@ Sync Status: Error
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
 
 

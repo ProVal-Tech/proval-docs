@@ -28,7 +28,7 @@ Example: `'wuauserv', 'bits', 'cryptsvc', 'VaultSvc', 'dtestv'`
 Please have the following file hash whitelisted in your security environment to prevent blocking:
 
 **File Path:**  
-`C:\ProgramData\_automation\script\SVC-SetStartType\SVC-SetStartType.ps1`  
+`C:/ProgramData/_automation/script/SVC-SetStartType/SVC-SetStartType.ps1`  
 **File Hash (SHA256):**  
 `16C105FE35406D9980177C52EB0D68FDE07A5CE3948A2949761C7359C1AC0AB`  
 **File Hash (MD5):**  
@@ -61,5 +61,6 @@ Please have the following file hash whitelisted in your security environment to 
 ## Output
 - Script log
 - Ticket
+
 
 

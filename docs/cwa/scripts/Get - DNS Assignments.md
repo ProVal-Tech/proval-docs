@@ -14,7 +14,7 @@ The script retrieves details about accessible network adapters from a Windows co
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Get---DNS-Assignments\image_1.png)
+![Sample Run](../../../static/img/Get---DNS-Assignments/image_1.png)
 
 ## Variables
 
@@ -22,15 +22,16 @@ The script retrieves details about accessible network adapters from a Windows co
 |-----------------|-------------------------------------------------------------------------------------------------|
 | TableName       | [pvl_network_Adapter](https://proval.itglue.com/5078775/docs/14378279)                       |
 | ProjectName     | Get-DNSAssignments                                                                              |
-| WorkingDirectory | C:\ProgramData\_Automation\Script\Get-DNSAssignments                                          |
-| FilePath        | C:\ProgramData\_Automation\Script\Get-DNSAssignments\Get-DNSAssignments.ps1                   |
-| JsonPath        | C:\ProgramData\_Automation\Script\Get-DNSAssignments\Get-DNSAssignments.json                   |
+| WorkingDirectory | C:/ProgramData/_Automation/Script/Get-DNSAssignments                                          |
+| FilePath        | C:/ProgramData/_Automation/Script/Get-DNSAssignments/Get-DNSAssignments.ps1                   |
+| JsonPath        | C:/ProgramData/_Automation/Script/Get-DNSAssignments/Get-DNSAssignments.json                   |
 
 ## Output
 
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

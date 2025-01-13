@@ -20,7 +20,7 @@ Alert Message on Success: There are no potential brute force or logon failures d
 
 Alert Message on Failure:
 
-A possible brute force attack has been detected on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%. 
+A possible brute force attack has been detected on %CLIENTNAME%/%COMPUTERNAME% at %LOCATIONNAME%. 
 
 Here is a breakdown of the logon attempts that failed over the past hour.
 Total Number of Logon Failures: @RESULT@
@@ -39,7 +39,7 @@ Logon Type Reference Table:
 11: CachedInteractive  
 
 Sample Ticket:  
-![Sample Ticket](..\..\..\static\img\Possible-Brute-Force-Attack-G\image_1.png)
+![Sample Ticket](../../../static/img/Possible-Brute-Force-Attack-G/image_1.png)
 
 ## Target
 
@@ -50,11 +50,12 @@ Servers - Domain Controllers
 Step 1: Import the monitor set.  
 Step 2: Import the Alert Template (~Custom - Ticket creation computer), if it's already not there.  
 Step 3: Replace '<agentid>' in the additional condition with the id of your monitor set.  
-![Implementation Step](..\..\..\static\img\Possible-Brute-Force-Attack-G\image_2.png)
+![Implementation Step](../../../static/img/Possible-Brute-Force-Attack-G/image_2.png)
 
 ## Dependencies
 
 [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+
 
 
 

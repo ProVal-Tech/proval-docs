@@ -24,12 +24,13 @@ This custom field is used to store and display the results of the [CW RMM - Task
 
 ## ScreenShot
 
-![Screenshot](..\..\..\static\img\Crystal-Disk-Info_Disk-Health\image_1.png)
+![Screenshot](../../../static/img/Crystal-Disk-Info_Disk-Health/image_1.png)
 
-![Screenshot](..\..\..\static\img\Crystal-Disk-Info_Disk-Health\image_2.png)
+![Screenshot](../../../static/img/Crystal-Disk-Info_Disk-Health/image_2.png)
 
 ## Sample Value
 
-![Sample Value](..\..\..\static\img\Crystal-Disk-Info_Disk-Health\image_3.png)
+![Sample Value](../../../static/img/Crystal-Disk-Info_Disk-Health/image_3.png)
+
 
 

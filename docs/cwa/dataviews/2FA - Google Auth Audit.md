@@ -20,3 +20,4 @@ This Dataview shows if the Google Authentication is enabled on Automate users or
 | Google Auth Enabled     | Displays if the Google Auth is enabled on the user or not       |
 
 
+

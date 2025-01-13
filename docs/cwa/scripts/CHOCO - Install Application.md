@@ -16,7 +16,7 @@ Time Saved by Automation: 8 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CHOCO---Install-Application\image_1.png)
+![Sample Run](../../../static/img/CHOCO---Install-Application/image_1.png)
 
 ## Dependencies
 
@@ -45,6 +45,7 @@ Time Saved by Automation: 8 Minutes
 ## Output
 
 - Script log
+
 
 
 

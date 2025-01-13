@@ -14,7 +14,7 @@ The script will perform a fresh installation, or a removal and reinstallation of
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CW-Control-Install---Mac\image_1.png)
+![Sample Run](../../../static/img/CW-Control-Install---Mac/image_1.png)
 
 ## Variables
 
@@ -40,5 +40,6 @@ The script will perform a fresh installation, or a removal and reinstallation of
 ## Output
 
 - Script Logs
+
 
 

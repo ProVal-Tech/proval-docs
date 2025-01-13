@@ -25,7 +25,7 @@ This script sends emails to two different addresses:
 
 It's an Autofix script and is attached to the "△ Custom - Email RAWSQL Monitor set results to ProVal" alert template for now.
 
-![Sample Run](..\..\..\static\img\Email-Creation---Computer-Failure-Only\image_1.png)
+![Sample Run](../../../static/img/Email-Creation---Computer-Failure-Only/image_1.png)
 
 ## System Property
 
@@ -65,5 +65,6 @@ It's an Autofix script and is attached to the "△ Custom - Email RAWSQL Monitor
 ## Output
 
 Email
+
 
 

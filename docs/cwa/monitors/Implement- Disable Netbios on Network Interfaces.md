@@ -23,12 +23,12 @@ unlisted: false
    'ProVal - Dev - Disable Netbios on Network Interfaces' as `Name`,
    '6' as `CheckAction`,
    '172' as `AlertAction`,
-   'Failed to Disable NetBios on on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%~~~Netbios has been disabled on all Network Interfaces!!!Failed to Disable NetBios on on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%~~~Failed to Set Netbios on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+   'Failed to Disable NetBios on on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%~~~Netbios has been disabled on all Network Interfaces!!!Failed to Disable NetBios on on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%~~~Failed to Set Netbios on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
    '0' as `ContactID`,
    '21600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command ";$path = \'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\netbt\\Parameters\\interfaces\'; $Paths = Get-ChildItem $path -ErrorAction SilentlyContinue; if ( $paths ) {$paths | ForEach-Object {try{ Set-ItemProperty -Path "\\$path\\$_.pschildname\\" -name NetBiosOptions -value 2 -ErrorAction Stop} catch {Write-Output "Failed to Set \'$path\\$_.pschildname\'. Reason: $($Error[0].Exception.Message)"}}} "' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command ";$path = /'HKLM://SYSTEM//CurrentControlSet//Services//netbt//Parameters//interfaces/'; $Paths = Get-ChildItem $path -ErrorAction SilentlyContinue; if ( $paths ) {$paths | ForEach-Object {try{ Set-ItemProperty -Path "//$path//$_.pschildname//" -name NetBiosOptions -value 2 -ErrorAction Stop} catch {Write-Output "Failed to Set /'$path//$_.pschildname/'. Reason: $($Error[0].Exception.Message)"}}} "' as `DataOut`,
    '9' as `Comparor`,
    'Failed to Set' as `DataIn`,
    '' as `IDField`,
@@ -93,12 +93,12 @@ unlisted: false
    'ProVal - Dev - Disable Netbios on Network Interfaces' as `Name`,
    '6' as `CheckAction`,
    '172' as `AlertAction`,
-   'Failed to Disable NetBios on on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%~~~Netbios has been disabled on all Network Interfaces!!!Failed to Disable NetBios on on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%~~~Failed to Set Netbios on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+   'Failed to Disable NetBios on on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%~~~Netbios has been disabled on all Network Interfaces!!!Failed to Disable NetBios on on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%~~~Failed to Set Netbios on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
    '0' as `ContactID`,
    '21600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command ";$path = \'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\netbt\\Parameters\\interfaces\'; $Paths = Get-ChildItem $path -ErrorAction SilentlyContinue; if ( $paths ) {$paths | ForEach-Object {try{ Set-ItemProperty -Path "\\$path\\$_.pschildname\\" -name NetBiosOptions -value 2 -ErrorAction Stop} catch {Write-Output "Failed to Set \'$path\\$_.pschildname\'. Reason: $($Error[0].Exception.Message)"}}} "' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command ";$path = /'HKLM://SYSTEM//CurrentControlSet//Services//netbt//Parameters//interfaces/'; $Paths = Get-ChildItem $path -ErrorAction SilentlyContinue; if ( $paths ) {$paths | ForEach-Object {try{ Set-ItemProperty -Path "//$path//$_.pschildname//" -name NetBiosOptions -value 2 -ErrorAction Stop} catch {Write-Output "Failed to Set /'$path//$_.pschildname/'. Reason: $($Error[0].Exception.Message)"}}} "' as `DataOut`,
    '9' as `Comparor`,
    'Failed to Set' as `DataIn`,
    '' as `IDField`,
@@ -156,5 +156,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

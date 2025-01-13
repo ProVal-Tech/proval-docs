@@ -33,3 +33,4 @@ This Automate custom table stores the information gathered by the [Get Chromium 
 | ScriptRunTime        | datetime    | Time when the data was fetched in Automate                      |
 
 
+

@@ -14,7 +14,7 @@ This script will schedule a script to run on a computer the next time it checks 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Queue-Script\image_1.png)
+![Sample Run](../../../static/img/Queue-Script/image_1.png)
 
 ## Dependencies
 
@@ -67,5 +67,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 

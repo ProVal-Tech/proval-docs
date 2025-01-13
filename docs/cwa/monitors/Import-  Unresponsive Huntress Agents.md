@@ -64,12 +64,12 @@ INSERT INTO groupagents
 'ProVal - Production - Unresponsive Huntress Agents' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~Huntress Agent is not orphaned anymore.!!!Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~The machine %computername% located at %clientname%\\%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.' as `AlertMessage`,
+'Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~Huntress Agent is not orphaned anymore.!!!Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~The machine %computername% located at %clientname%//%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -Command "if (Test-Path \'C:\\Program Files\\Huntress\\HuntressAgent.log\') {$Path = \'C:\\Program Files\\Huntress\\HuntressAgent.log\'} elseif (Test-Path \'C:\\Program Files (x86)\\Huntress\\HuntressAgent.log\') {$Path = \'C:\\Program Files (x86)\\Huntress\\HuntressAgent.log\'} else {$Path = \'Huntress Log File Missing\'}; if ($Path -notmatch \'HuntressAgent.log\') {Write-Output $Path} else {$Log = Get-Content $Path | ForEach-Object { if ($_ -match \'(?<time>\\d+-\\d+-\\d+T\\d+:\\d+:\\d+-\\d+:\\d+).+(?<level>(?<=level=)\\w+).+(?<msg>(?<=msg=).*)\\') {$Matches.Remove(0); [PSCustomObject]$Matches}} | Where-Object {$_.level -match \'error\' -and $_.msg -match \'status code:401\'}; if ($Log.count -ge 1) {Write-Output \'Huntress Agent is orphaned\'} else {Write-Output \'Huntress Agent is not Orphaned\'}}" as `DataOut`,
+'%SystemRoot%//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy ByPass -Command "if (Test-Path /'C://Program Files//Huntress//HuntressAgent.log/') {$Path = /'C://Program Files//Huntress//HuntressAgent.log/'} elseif (Test-Path /'C://Program Files (x86)//Huntress//HuntressAgent.log/') {$Path = /'C://Program Files (x86)//Huntress//HuntressAgent.log/'} else {$Path = /'Huntress Log File Missing/'}; if ($Path -notmatch /'HuntressAgent.log/') {Write-Output $Path} else {$Log = Get-Content $Path | ForEach-Object { if ($_ -match /'(?<time>//d+-//d+-//d+T//d+://d+://d+-//d+://d+).+(?<level>(?<=level=)//w+).+(?<msg>(?<=msg=).*)//') {$Matches.Remove(0); [PSCustomObject]$Matches}} | Where-Object {$_.level -match /'error/' -and $_.msg -match /'status code:401/'}; if ($Log.count -ge 1) {Write-Output /'Huntress Agent is orphaned/'} else {Write-Output /'Huntress Agent is not Orphaned/'}}" as `DataOut`,
 '16' as `Comparor`,
 '10|Huntress Agent is not Orphaned|11|Huntress Log File Missing%7CHuntress Agent is orphaned%7CHuntress Agent is not Orphaned|10|Huntress Log File Missing%7CHuntress Agent is orphaned' as `DataIn`,
 '' as `IDField`,
@@ -171,12 +171,12 @@ INSERT INTO groupagents
 'ProVal - Production - Unresponsive Huntress Agents' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~Huntress Agent is not orphaned anymore.!!!Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~The machine %computername% located at %clientname%\\%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.' as `AlertMessage`,
+'Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~Huntress Agent is not orphaned anymore.!!!Unresponsive Huntress Agent Detected on %COMPUTERNAME%~~~The machine %computername% located at %clientname%//%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -Command "if (Test-Path \'C:\\Program Files\\Huntress\\HuntressAgent.log\') {$Path = \'C:\\Program Files\\Huntress\\HuntressAgent.log\'} elseif (Test-Path \'C:\\Program Files (x86)\\Huntress\\HuntressAgent.log\') {$Path = \'C:\\Program Files (x86)\\Huntress\\HuntressAgent.log\'} else {$Path = \'Huntress Log File Missing\'}; if ($Path -notmatch \'HuntressAgent.log\') {Write-Output $Path} else {$Log = Get-Content $Path | ForEach-Object { if ($_ -match \'(?<time>\\d+-\\d+-\\d+T\\d+:\\d+:\\d+-\\d+:\\d+).+(?<level>(?<=level=)\\w+).+(?<msg>(?<=msg=).*)\\') {$Matches.Remove(0); [PSCustomObject]$Matches}} | Where-Object {$_.level -match \'error\' -and $_.msg -match \'status code:401\'}; if ($Log.count -ge 1) {Write-Output \'Huntress Agent is orphaned\'} else {Write-Output \'Huntress Agent is not Orphaned\'}}" as `DataOut`,
+'%SystemRoot%//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy ByPass -Command "if (Test-Path /'C://Program Files//Huntress//HuntressAgent.log/') {$Path = /'C://Program Files//Huntress//HuntressAgent.log/'} elseif (Test-Path /'C://Program Files (x86)//Huntress//HuntressAgent.log/') {$Path = /'C://Program Files (x86)//Huntress//HuntressAgent.log/'} else {$Path = /'Huntress Log File Missing/'}; if ($Path -notmatch /'HuntressAgent.log/') {Write-Output $Path} else {$Log = Get-Content $Path | ForEach-Object { if ($_ -match /'(?<time>//d+-//d+-//d+T//d+://d+://d+-//d+://d+).+(?<level>(?<=level=)//w+).+(?<msg>(?<=msg=).*)//') {$Matches.Remove(0); [PSCustomObject]$Matches}} | Where-Object {$_.level -match /'error/' -and $_.msg -match /'status code:401/'}; if ($Log.count -ge 1) {Write-Output /'Huntress Agent is orphaned/'} else {Write-Output /'Huntress Agent is not Orphaned/'}}" as `DataOut`,
 '16' as `Comparor`,
 '10|Huntress Agent is not Orphaned|11|Huntress Log File Missing%7CHuntress Agent is orphaned%7CHuntress Agent is not Orphaned|10|Huntress Log File Missing%7CHuntress Agent is orphaned' as `DataIn`,
 '' as `IDField`,
@@ -252,9 +252,10 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Check the concerned groups, ensure the monitor set is created and configured with the correct search.  
 **Limit to:**  ` Machines with Huntress Agent`
 
-![Image](..\..\..\static\img\Import---Unresponsive-Huntress-Agents\image_1.png)
+![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_1.png)
 
 ## Step 7
-Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor ![Image](..\..\..\static\img\Import---Unresponsive-Huntress-Agents\image_2.png)
+Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor ![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_2.png)
+
 
 

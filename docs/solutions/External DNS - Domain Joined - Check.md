@@ -24,3 +24,4 @@ Checks endpoints to see if they're domain joined, and then reports on if externa
 Agent Procedure requires Custom Field to be created prior.
 
 
+

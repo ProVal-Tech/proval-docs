@@ -33,13 +33,14 @@ This implementation will initiate a feature upgrade on the target endpoint, and 
 
 # Implementation
 1. Create the Machine Custom Field: xPVAL Windows Feature Upgrade Status
-2. Create Agent Procedure Folder: Shared\PVAL Stack\Tool Set\Windows\Windows 10 Feature Upgrades\
-3. Import Windows 10 Feature Upgrade.xml and place it in Shared\PVAL Stack\Tool Set\Windows\Windows 10 Feature Upgrades\
-4. Import Windows 10 Feature Upgrade (No Reboot).xml and place it in Shared\PVAL Stack\Tool Set\Windows\Windows 10 Feature Upgrades\
-5. Import Registry Check.xml and place it in Shared\PVAL Stack\Tool Set\Windows\Windows 10 Feature Upgrades\
+2. Create Agent Procedure Folder: Shared/PVAL Stack/Tool Set/Windows/Windows 10 Feature Upgrades/
+3. Import Windows 10 Feature Upgrade.xml and place it in Shared/PVAL Stack/Tool Set/Windows/Windows 10 Feature Upgrades/
+4. Import Windows 10 Feature Upgrade (No Reboot).xml and place it in Shared/PVAL Stack/Tool Set/Windows/Windows 10 Feature Upgrades/
+5. Import Registry Check.xml and place it in Shared/PVAL Stack/Tool Set/Windows/Windows 10 Feature Upgrades/
 6. Import xPVAL_Windows_Feature_Upgrade_Event.xml and apply it to all workstations in the environment.
 7. Import xPVAL_Feature_Upgrade_Views.xml and ensure the Advanced Filters are correct according to documentation in this solution.
-8. Import Windows_10_Feature_Upgrade_Reattempt_On_Fail and place it in the Policies\PVAL Stack folder. Ensure that view and assigned AP is correct in the policy. Notify the client of implementation and availability during the next Admin Call. Be sure to mention the 30-minute forced reboot.
+8. Import Windows_10_Feature_Upgrade_Reattempt_On_Fail and place it in the Policies/PVAL Stack folder. Ensure that view and assigned AP is correct in the policy. Notify the client of implementation and availability during the next Admin Call. Be sure to mention the 30-minute forced reboot.
+
 
 
 

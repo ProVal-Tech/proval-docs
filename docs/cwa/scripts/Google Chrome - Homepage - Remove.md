@@ -14,7 +14,7 @@ It is an Automate implementation of the [SWM - Software Configuration - Remove-C
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Google-Chrome---Homepage---Remove\image_1.png)
+![Sample Run](../../../static/img/Google-Chrome---Homepage---Remove/image_1.png)
 
 ## Dependencies
 
@@ -23,5 +23,6 @@ It is an Automate implementation of the [SWM - Software Configuration - Remove-C
 ## Output
 
 - Script Logs
+
 
 

@@ -16,11 +16,12 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Remove-Missing-Drives\image_1.png)
+![Sample Run](../../../static/img/Remove-Missing-Drives/image_1.png)
 
 ## Process
 
 - The script runs SQL query against the database to delete the drives from the machines that are still listed but no longer detected on them.
+
 
 
 

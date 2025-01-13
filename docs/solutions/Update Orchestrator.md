@@ -3,7 +3,7 @@ id: 'rmm-managing-update-orchestrator'
 title: 'Managing Update Orchestrator'
 title_meta: 'Managing Update Orchestrator'
 keywords: ['update', 'orchestrator', 'management', 'deployment', 'monitoring']
-description: 'This document outlines a solution for managing and deploying ProVal\'s Update Orchestrator to prevent unintended patching and rebooting of machines. It details the use of a custom task, device group, and monitor to ensure controlled updates.'
+description: 'This document outlines a solution for managing and deploying ProVal/'s Update Orchestrator to prevent unintended patching and rebooting of machines. It details the use of a custom task, device group, and monitor to ensure controlled updates.'
 tags: ['device-group', 'task', 'monitor', 'management', 'deployment', 'windows']
 draft: false
 unlisted: false
@@ -18,7 +18,7 @@ This solution uses a custom task, a device group, and a custom monitor to manage
 |--------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [CW RMM - Device Groups - Update Orchestrator](https://proval.itglue.com/5078775/docs/13460376#version=published&documentMode=view) | Device Group | The device group is designed to slowly deploy the update orchestrator in the environment.                                                                                                                                                                        |
 | [CW RMM - Task - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460454#version=published&documentMode=view) | Task         | Will attempt to "neuter" the update orchestrator solution on endpoints by renaming/removing a directory.                                                                                                                                                        |
-| [CW RMM - Custom Monitor - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460540#version=published&documentMode=edit) | Monitor      | This solution will monitor the `C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the update orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM. |
+| [CW RMM - Custom Monitor - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460540#version=published&documentMode=edit) | Monitor      | This solution will monitor the `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the update orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM. |
 
 ## Implementation
 
@@ -34,6 +34,7 @@ This solution uses a custom task, a device group, and a custom monitor to manage
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
+
 
 
 

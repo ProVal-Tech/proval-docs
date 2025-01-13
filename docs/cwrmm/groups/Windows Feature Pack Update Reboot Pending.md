@@ -20,7 +20,7 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 
 ## Summary
 
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_1.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_1.png)  
 **Group Type:** Dynamic  
 **Group Name:** Windows Feature Pack Update: Reboot Pending  
 **Description:** Categorize the Windows 10 and 11 Computers where the `Feature Update Install with Tracking` script is completed but a reboot is pending.
@@ -28,22 +28,23 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 ## Criteria
 
 - Select `OS Build Number` for the Criteria `Does Not Contain any` for comparator and type `19045` and `22631` in the condition box.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_2.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_3.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_4.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_5.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_2.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_3.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_4.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_5.png)  
 
 - Click the `Add Criteria` button to add another Criteria.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_6.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_6.png)  
 
 - Select `Feature Update Reboot Pending` custom field for criteria, `Equal` for comparator and type `True` in the condition box.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_7.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_8.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_7.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_8.png)  
 
 ## Group
 
 Click the Save button to Save the Group.  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_9.png)  
-![Image](..\..\..\static\img\Windows-Feature-Pack-Update-Reboot-Pending\image_10.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_9.png)  
+![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_10.png)  
+
 
 

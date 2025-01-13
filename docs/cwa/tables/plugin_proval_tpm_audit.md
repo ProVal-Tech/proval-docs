@@ -46,3 +46,4 @@ It holds all data from the Get-TPM command.
 
 
 
+

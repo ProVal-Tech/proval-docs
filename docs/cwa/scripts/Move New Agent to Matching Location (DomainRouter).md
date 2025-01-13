@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Move-New-Agent-to-Matching-Location-(DomainRouter)\image_1.png)
+![Sample Run](../../../static/img/Move-New-Agent-to-Matching-Location-(DomainRouter)/image_1.png)
 
 ## Variables
 
@@ -38,5 +38,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script Log.
+
 
 

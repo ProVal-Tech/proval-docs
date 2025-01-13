@@ -12,19 +12,19 @@ unlisted: false
 
 This script will uninstall or install Cisco AnyConnect depending on the user parameter provided. This script will work on Windows machines, Mac Machines, and Potentially Linux Machines (Untested).
 
-This script requires the download of the Windows / Mac / and Linux installation media from the client portal. Please avoid renaming the downloaded files, as it may break things with the Linux implementation. Once those files are obtained, place them in `Ltshare\transfer\installers\360UW\Cisco-AnyConnect\` folder. Then open the script and change the static variables to match your downloaded files, paying specific attention to the designated operating system for the variable.
+This script requires the download of the Windows / Mac / and Linux installation media from the client portal. Please avoid renaming the downloaded files, as it may break things with the Linux implementation. Once those files are obtained, place them in `Ltshare/transfer/installers/360UW/Cisco-AnyConnect/` folder. Then open the script and change the static variables to match your downloaded files, paying specific attention to the designated operating system for the variable.
 
-![Image](..\..\..\static\img\Cisco-AnyConnect---Command\image_1.png)
+![Image](../../../static/img/Cisco-AnyConnect---Command/image_1.png)
 
 Save the script.
 
 ## Sample Run
 
-![Image](..\..\..\static\img\Cisco-AnyConnect---Command\image_2.png)
+![Image](../../../static/img/Cisco-AnyConnect---Command/image_2.png)
 
 The Default action of this script is to Install Cisco AnyConnect.
 
-![Image](..\..\..\static\img\Cisco-AnyConnect---Command\image_3.png)
+![Image](../../../static/img/Cisco-AnyConnect---Command/image_3.png)
 
 Only Providing UnInstall in the Action Parameter will trigger the uninstall.
 
@@ -34,7 +34,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name            | Description                                                                                                                                                                        |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CACFileName     | This is a Static Variable Set in the Static Variables section of the script. These files must be set to the machine type filenames you placed in the `Ltshare\transfer\installers\360UW\Cisco-AnyConnect\` folder for each operating system. Lines 3, 4, and 5 in the script. |
+| CACFileName     | This is a Static Variable Set in the Static Variables section of the script. These files must be set to the machine type filenames you placed in the `Ltshare/transfer/installers/360UW/Cisco-AnyConnect/` folder for each operating system. Lines 3, 4, and 5 in the script. |
 | CACFileNoGz     | This removes the .gz from the CACFileName so we can drive into the folder to install the package.                                                                               |
 | MountedName      | This is the Mounted name of the drive when installing on Mac devices.                                                                                                          |
 | UnmountedName    | This is the Unmounted name of the drive when installing on Mac devices.                                                                                                        |
@@ -76,5 +76,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
   - There is extensive script logging in this script in both the install and uninstall processes.
+
 
 

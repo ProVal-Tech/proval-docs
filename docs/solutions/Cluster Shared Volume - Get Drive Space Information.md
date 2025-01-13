@@ -28,3 +28,4 @@ Displays detailed information on [Cluster Shared Volumes](https://www.minitool.c
 - Set up a group for all the servers running 2012 R2 and later that have the "Windows Cluster Services" role installed, then schedule the script to execute against that group once per day.
 
 
+

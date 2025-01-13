@@ -20,11 +20,11 @@ This component will run the Office Scrub utility and remove all or specified Mic
 
 Export the component from ProVal's Datto RMM instance  
 **Name:** Microsoft Office - Uninstall  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall\image_1.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_1.png)  
 The export will download the necessary component (cpt) file.  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall\image_2.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_2.png)  
 Import this component file into the partner's Datto RMM instance  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall\image_3.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_3.png)  
 
 Proval Plug & Play: This component requires no configuration once imported.
 
@@ -32,12 +32,12 @@ Proval Plug & Play: This component requires no configuration once imported.
 
 The component will prompt with several options during a job.  
 Select the versions you wish to uninstall.  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall\image_4.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_4.png)  
 
 ## Output
 
 A job status of Success is expected.  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall\image_5.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_5.png)  
 
 A job status of expired may also occur. If expired is displayed, verification will be required to determine if the uninstall was successful.  
 
@@ -46,5 +46,6 @@ StdOut is not expected
 
 **StdErr**  
 StdErr is not expected  
+
 
 

@@ -15,7 +15,7 @@ This script joins the target machine to a domain.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Domain---Join\image_1.png)
+![Sample Run](../../../static/img/Domain---Join/image_1.png)
 
 #### User Parameters
 
@@ -31,6 +31,7 @@ This script joins the target machine to a domain based on its current client and
 ## Output
 
 - Script log
+
 
 
 

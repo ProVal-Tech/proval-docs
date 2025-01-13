@@ -26,18 +26,18 @@ All required parameters are prompted and explained at script runtime.
 | 5:35:12 pm 13-Dec-22     | Bitlocker Volume Initialization - TPM protector                  | Raw PS1 Data: 1                                                                                                      | provaltech.com/dan.hicks           |
 | 5:35:12 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)              | Success THEN                                                                                                           | provaltech.com/dan.hicks           |
 | 5:35:11 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0016         | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server. | provaltech.com/dan.hicks           |
-| 5:35:11 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0016         | Informational: GetFile command overwrote the server file C:\\Kaseya\\UserProfiles\\229175768944442\\GetFiles\\..\\docs\\psoutput.txt with the new contents from c:\\provaltech\\psoutput.txt in THEN step 3. | provaltech.com/dan.hicks           |
-| 5:35:00 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0011         | Executing 64-bit Powershell command as System: "" -command "%ProgramData%\\_automation\\AgentProcedure\\BitlockerVolumeInit\\Initialize-BitlockerVolume.ps1 -TpmProtector -MountPoint C: -EncryptionMethod Aes128 -AllowRestart -AllowTpmInit" >"c:\\provaltech\\psoutputtmp.txt" | provaltech.com/dan.hicks           |
+| 5:35:11 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0016         | Informational: GetFile command overwrote the server file C://Kaseya//UserProfiles//229175768944442//GetFiles//..//docs//psoutput.txt with the new contents from c://provaltech//psoutput.txt in THEN step 3. | provaltech.com/dan.hicks           |
+| 5:35:00 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0011         | Executing 64-bit Powershell command as System: "" -command "%ProgramData%//_automation//AgentProcedure//BitlockerVolumeInit//Initialize-BitlockerVolume.ps1 -TpmProtector -MountPoint C: -EncryptionMethod Aes128 -AllowRestart -AllowTpmInit" >"c://provaltech//psoutputtmp.txt" | provaltech.com/dan.hicks           |
 | 5:35:00 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0013         | Sending output to global variable.                                                                                   | provaltech.com/dan.hicks           |
-| 5:35:00 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0008         | Custom commands detected as %ProgramData%\\_automation\\AgentProcedure\\BitlockerVolumeInit\\Initialize-BitlockerVolume.ps1 -TpmProtector -MountPoint C: -EncryptionMethod Aes128 -AllowRestart -AllowTpmInit | provaltech.com/dan.hicks           |
+| 5:35:00 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0008         | Custom commands detected as %ProgramData%//_automation//AgentProcedure//BitlockerVolumeInit//Initialize-BitlockerVolume.ps1 -TpmProtector -MountPoint C: -EncryptionMethod Aes128 -AllowRestart -AllowTpmInit | provaltech.com/dan.hicks           |
 | 5:35:00 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0003         | No powershell file variable detected.                                                                                 | provaltech.com/dan.hicks           |
 | 5:34:56 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0002         | Powershell is present.                                                                                                 | provaltech.com/dan.hicks           |
 | 5:34:52 pm 13-Dec-22     | Execute Powershell Command                                          | Success THEN                                                                                                           | provaltech.com/dan.hicks           |
 | 5:34:51 pm 13-Dec-22     | Execute Powershell Command-0011                                   | Powershell command completed!                                                                                         | provaltech.com/dan.hicks           |
-| 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0011                                   | Executing powershell "" -Command "New-Item -Type Directory -Path $env:ProgramData\\_automation\\AgentProcedure -name BitlockerVolumeInit" "" | provaltech.com/dan.hicks           |
+| 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0011                                   | Executing powershell "" -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name BitlockerVolumeInit" "" | provaltech.com/dan.hicks           |
 | 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0010                                   | Not sending output to variable.                                                                                       | provaltech.com/dan.hicks           |
-| 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0008                                   | New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData\\_automation\\AgentProcedure -name BitlockerVolumeInit" | provaltech.com/dan.hicks           |
-| 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0008                                   | Custom commands detected as New-Item -Type Directory -Path $env:ProgramData\\_automation\\AgentProcedure -name BitlockerVolumeInit | provaltech.com/dan.hicks           |
+| 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0008                                   | New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name BitlockerVolumeInit" | provaltech.com/dan.hicks           |
+| 5:34:47 pm 13-Dec-22     | Execute Powershell Command-0008                                   | Custom commands detected as New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name BitlockerVolumeInit | provaltech.com/dan.hicks           |
 | 5:34:43 pm 13-Dec-22     | Execute Powershell Command-0002                                   | Powershell is present.                                                                                                 | provaltech.com/dan.hicks           |
 | 5:34:32 pm 13-Dec-22     | Run Now - Bitlocker Volume Initialization - TPM protector         | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Bitlocker Volume Initialization - TPM protector to run at Dec 13 2022 5:34PM |                                     |
 
@@ -75,11 +75,12 @@ All required parameters are prompted and explained at script runtime.
 ## Output
 
 ```
-    .\Initialize-BitLockerVolume-log.txt
-    .\Initialize-BitLockerVolume-data.txt
-    .\Initialize-BitLockerVolume-error.txt
+    ./Initialize-BitLockerVolume-log.txt
+    ./Initialize-BitLockerVolume-data.txt
+    ./Initialize-BitLockerVolume-error.txt
     Agent Procedure Log
 ```
+
 
 
 

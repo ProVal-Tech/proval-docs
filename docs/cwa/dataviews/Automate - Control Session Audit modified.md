@@ -27,3 +27,4 @@ This dataview helps you audit control sessions. It helps you track details like 
 | Duration          | Displays the total duration of the connected session.      |
 
 
+

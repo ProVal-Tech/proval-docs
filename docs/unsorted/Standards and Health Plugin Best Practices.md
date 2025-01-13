@@ -10,7 +10,7 @@ unlisted: true
 ---
 <div class='text-section scrollable'>
 
-![Image](..\..\static\img\Standards-and-Health-Plugin-Best-Practices\image_1.png)
+![Image](../../static/img/Standards-and-Health-Plugin-Best-Practices/image_1.png)
 
 </div>
 
@@ -21,6 +21,7 @@ unlisted: true
 Searches need to be all custom ones, and have a unique name.
 
 </div>
+
 
 
 

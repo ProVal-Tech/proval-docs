@@ -71,6 +71,7 @@ AND (
 
 ## Ticketing
 
-![Ticketing Image](..\..\..\static\img\Bitlocker---Encryption-Type-Incorrect\image_1.png)
+![Ticketing Image](../../../static/img/Bitlocker---Encryption-Type-Incorrect/image_1.png)
+
 
 

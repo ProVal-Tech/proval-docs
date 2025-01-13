@@ -28,7 +28,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|------------|----------|--------------------------|
 | System       | Default        | Run File   | REDACTED      | State Based| 900      | <Screenshot Below>       |
 
-![Screenshot](..\..\..\static\img\Security-event-logs-cleareddeleted\image_1.png)
+![Screenshot](../../../static/img/Security-event-logs-cleareddeleted/image_1.png)
 
 ## Dependencies
 
@@ -40,13 +40,14 @@ Windows Computers
 
 ## Ticketing
 
-| Subject         | Security Event Log Cleared on %CLIENTNAME%\\%COMPUTERNAME% |
+| Subject         | Security Event Log Cleared on %CLIENTNAME%//%COMPUTERNAME% |
 |------------------|--------------------------------------------------------------|
-| Ticket Summary    | Security Event logs cleared/deleted for %CLIENTNAME%\\%COMPUTERNAME%: %Result% |
+| Ticket Summary    | Security Event logs cleared/deleted for %CLIENTNAME%//%COMPUTERNAME%: %Result% |
 
 ## Implementation
 
 [Import - Remote Monitor - Security event logs cleared/deleted](https://proval.itglue.com/DOC-5078775-14946240)
+
 
 
 

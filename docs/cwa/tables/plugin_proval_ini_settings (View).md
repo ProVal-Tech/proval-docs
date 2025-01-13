@@ -24,7 +24,7 @@ Displays the current and ProVal recommended INI settings for CWA.
 
 | Variable_name                     | Variable_Value                  | Recomended_Value               |
 |-----------------------------------|---------------------------------|--------------------------------|
-| datadir                           | C:\\ProgramData\\MySQL\\MySQL Server 5.7\\Data\\ | NA                             |
+| datadir                           | C://ProgramData//MySQL//MySQL Server 5.7//Data// | NA                             |
 | innodb_autoinc_lock_mode         | 1                               | 2                              |
 | innodb_buffer_pool_instances      | 8                               | 8                              |
 | innodb_buffer_pool_size           | 3221225472                      | 2                              |
@@ -57,5 +57,6 @@ Displays the current and ProVal recommended INI settings for CWA.
 | thread_cache_size                 | 38                              | 100                            |
 | tmp_table_size                    | 100663296                       | 100663296                      |
 | wait_timeout                      | 28800                           | 900                            |
+
 
 

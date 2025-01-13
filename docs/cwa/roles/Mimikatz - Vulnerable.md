@@ -16,7 +16,8 @@ The role uses a registry to track any Mimikatz vulnerable devices.
 
 | Detection String                                          | Comparator | Result | Applicable OS |
 |----------------------------------------------------------|------------|--------|----------------|
-| {%-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredential-%} | Equals     | 0      | Windows        |
+| {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 0      | Windows        |
+
 
 
 

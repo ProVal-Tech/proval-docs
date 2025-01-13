@@ -33,33 +33,33 @@ Before configuring Domain Watch Discovery, ensure the following prerequisites ar
 1. From the list, select the organization for which Domain Watch is to be configured.
 2. From the probe deployment, select the machine which will act as a probe (prefer DCs).
 3. Click on Install, enter the Domain Admin username and credentials.
-   ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_1.png)
+   ![Image](../../../static/img/Domain-Watch-Configuration/image_1.png)
 4. Click on Verify and set credentials.
 5. After the credentials verification has been done, proceed with the Install button.
-   ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_2.png)
+   ![Image](../../../static/img/Domain-Watch-Configuration/image_2.png)
 6. Wait for the discovery to complete; meanwhile, we will proceed to configure Agent Deployment.
 7. Go to the Agent deployment section and click on Edit.
 8. Select the option "Automatically install Agents when computer is discovered" and change Default package to the Agent package for that specific organization.
-   ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_3.png)
+   ![Image](../../../static/img/Domain-Watch-Configuration/image_3.png)
 9. If the discovery has been done, there will be some policies created in the Policies section, so we will head over to the OU/Containers section under Policies.
 10. Select the policies one by one if there are machines present in multiple policies and click on "Computers Policy" button.
-    ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_4.png)
+    ![Image](../../../static/img/Domain-Watch-Configuration/image_4.png)
 11. Check whether the policy is for workstations or servers.
 12. Select "Include New Computer" option.
 13. Change the Machine Group with the Workstation or Server subgroup respectively (or as per the requirement from the client's end).
 14. Select all the machines (or select few if specified) and click on save.
-    ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_5.png)
+    ![Image](../../../static/img/Domain-Watch-Configuration/image_5.png)
 15. Repeat Steps 11-14 for all the policies as per the requirement.
 16. Move over to the Schedule and Status option.
 17. Schedule Full Synchronization to run daily or as per the requirement.
-    ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_6.png)
+    ![Image](../../../static/img/Domain-Watch-Configuration/image_6.png)
 18. Go to Probe Deployment and select the machine on which we had installed the probe earlier.
 19. Click on Activate.
-    ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_7.png)
+    ![Image](../../../static/img/Domain-Watch-Configuration/image_7.png)
 20. Check the status of the Domain Discovery; it should show as Active and Green.
-    ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_8.png)
+    ![Image](../../../static/img/Domain-Watch-Configuration/image_8.png)
 21. If the status is not green or active, review the configuration and click on Apply Changes under Policies > OU/Containers.
-    ![Image](..\..\..\static\img\Domain-Watch-Configuration\image_9.png)
+    ![Image](../../../static/img/Domain-Watch-Configuration/image_9.png)
 
 ### Step 3: Verify Configuration
 
@@ -73,5 +73,6 @@ Before configuring Domain Watch Discovery, ensure the following prerequisites ar
 ## Conclusion
 
 By following these steps, you will configure Domain Watch Discovery in VSA 9.5 successfully. Regular monitoring and adjustment of settings based on discovery results will ensure optimal performance and coverage of your domain environment.
+
 
 

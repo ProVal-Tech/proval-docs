@@ -17,7 +17,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CW-Control---User-Audit\image_1.png)
+![Sample Run](../../../static/img/CW-Control---User-Audit/image_1.png)
 
 ## Dependencies
 
@@ -38,5 +38,6 @@ Time Saved by Automation: 15 Minutes
 
 - Script log
 - Dataview @CW Control - User Audit
+
 
 

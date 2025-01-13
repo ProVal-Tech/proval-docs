@@ -60,3 +60,4 @@ Stores the data grabbed by [CWM - Automate - Script - Windows Update Report [DV]
 | ScriptRunTime                | varchar(50)    | Script Run Time                                   |
 
 
+

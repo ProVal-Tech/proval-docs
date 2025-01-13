@@ -25,7 +25,7 @@ HP servers
 
 ## Ticketing
 
-**Subject:** `HP Event Log Errors: %CLIENTNAME%\%COMPUTERNAME%`
+**Subject:** `HP Event Log Errors: %CLIENTNAME%/%COMPUTERNAME%`
 
 **Ticket Body:**  
 `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:`  
@@ -57,6 +57,7 @@ Event Type: Error
 Message: <Event Message>
 TimeGen: <Time of Generation>
 ```
+
 
 
 

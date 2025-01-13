@@ -14,7 +14,7 @@ This client script creates a ticket for each client with the computer count wher
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\SMBv1-Enable-Detection-Ticketing---Per-Client\image_1.png)
+![Sample Run](../../../static/img/SMBv1-Enable-Detection-Ticketing---Per-Client/image_1.png)
 
 ## Dependencies
 
@@ -47,5 +47,6 @@ This client script creates a ticket for each client with the computer count wher
 
    The SMBv1 Enable status audit detected on @VulnerableagentCount@ computers of client "@sqlname@".  
    Please review the dataview for the computer list.
+
 
 

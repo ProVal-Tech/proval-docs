@@ -48,3 +48,4 @@ The SQL query filters the results for the Patch Managed computers only, removing
 
 
 
+

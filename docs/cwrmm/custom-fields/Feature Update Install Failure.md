@@ -14,9 +14,9 @@ The `Feature Update Install With Tracking` task utilizes this custom field to st
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\Feature-Update-Install-Failure\image_1.png)
+![Image 1](../../../static/img/Feature-Update-Install-Failure/image_1.png)
 
-![Image 2](..\..\..\static\img\Feature-Update-Install-Failure\image_2.png)
+![Image 2](../../../static/img/Feature-Update-Install-Failure/image_2.png)
 
 **Name:** Feature Update Install Failure  
 
@@ -27,6 +27,7 @@ The `Feature Update Install With Tracking` task utilizes this custom field to st
 **Description:** Feature Update Install Failure Reason for Windows 10/11  
 
 **Editable:** Yes  
+
 
 
 

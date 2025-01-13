@@ -16,7 +16,7 @@ This script runs as an autofix to deploy the BitLocker initialization to the age
 
 Run it with `SetEnvironment = 1`, to set the EDFs required for this script once after importing the script.
 
-![Sample Run](..\..\..\static\img\Bitlocker---Volume---Initialize-Autofix,Param---Wrapper\image_1.png)
+![Sample Run](../../../static/img/Bitlocker---Volume---Initialize-Autofix,Param---Wrapper/image_1.png)
 
 ## Dependencies
 
@@ -47,5 +47,6 @@ Run it with `SetEnvironment = 1`, to set the EDFs required for this script once 
 
 - Script log
 - Dataview
+
 
 

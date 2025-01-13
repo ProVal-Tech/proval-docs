@@ -24,7 +24,7 @@ This remote monitor is designed to detect the fast boot enabled via registry che
 
 This monitor looks to see if Windows Fast Boot is enabled, then will disable it.
 
-HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power\HiberbootEnabled (Set to 0)
+HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power/HiberbootEnabled (Set to 0)
 
 > This action will happen regardless of what alert template is set against the monitor.
 
@@ -36,7 +36,7 @@ HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power\HiberbootEnabled (S
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|--------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return 'Failed'} else {return 'Success'}} else {return 'Success'}} else {return 'Success'}" | Does Not Contain | 86400 | Failed |
+| System       | 127.0.0.1      | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = 'HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return 'Failed'} else {return 'Success'}} else {return 'Success'}} else {return 'Success'}" | Does Not Contain | 86400 | Failed |
 
 ## Target
 
@@ -53,12 +53,13 @@ FastBoot Failed to Disable at %computername%
 FastBoot is successfully disabled.  
 
 <u><strong>Failure:</strong></u>  
-%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.
+%NAME% %STATUS% on %CLIENTNAME%/%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.
 
 ## Implementation
 
 Please follow the below document for the implementation step:  
 [Import - Remote Monitor - Windows Fast Boot disable](https://proval.itglue.com/DOC-5078775-15429553)  
+
 
 
 

@@ -26,11 +26,11 @@ Set the System Property `Agent_Repair_Re_Install_Enabled` to `0` to disable the 
 
 The script must be run with the `Set Environment = 1` setting for the first time after the update. This will create the system properties used by the script.
 
-![Sample Run 1](..\..\..\static\img\Automate-Agent---Auto-Repair\image_1.png)
+![Sample Run 1](../../../static/img/Automate-Agent---Auto-Repair/image_1.png)
 
 For Regular Execution:
 
-![Sample Run 2](..\..\..\static\img\Automate-Agent---Auto-Repair\image_2.png)
+![Sample Run 2](../../../static/img/Automate-Agent---Auto-Repair/image_2.png)
 
 By default, the script will be called by the **[Monitor - No Checkin for More Than 30 Days*](https://proval.itglue.com/DOC-5078775-8041387)**
 
@@ -59,7 +59,7 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 | **RetireStatement**        | SQL Query used to retire the computers.                                                              |
 | **Online**                 | Online status of the computer in ScreenConnect Portal returned by the **[Script - ScreenConnect Client - Connectivity - Audit*](https://proval.itglue.com/DOC-5078775-8143436)**. 1: Online; 0: Offline; -2: Undetermined (RMM+ Solution is not configured properly.), -3: Machine Error (Plugin results contain error type message), -4: Incorrect Agent Guid. |
 | **AgentOnline**            | Status of the agent in ConnectWise Automate after attempting to fix the problem.                     |
-| **Subject**                | Subject of the ticket to create on Script Failure. `Agent Reinstall Failed/Broken Agent - %clientname%\\%computername%` |
+| **Subject**                | Subject of the ticket to create on Script Failure. `Agent Reinstall Failed/Broken Agent - %clientname%//%computername%` |
 | **Body**                   | Information to add to the ticket for script failure.                                                 |
 | **Tickid**                 | ID of an existing new/open ticket to comment.                                                        |
 | **ParsedLogs**             | The last 20 lines of the LTerrors.txt file to add to the ticket.                                    |
@@ -102,19 +102,19 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 To enable ticketing on failure, the ticket category must be set in the alerting tab of the monitor set calling the script, or at the group level if the monitor set is enabled on the group. Also, the script will not create any tickets for manual executions.
 
 From Monitor Set:  
-![Monitor Set](..\..\..\static\img\Automate-Agent---Auto-Repair\image_3.png)
+![Monitor Set](../../../static/img/Automate-Agent---Auto-Repair/image_3.png)
 
 From Group:  
-![Group 1](..\..\..\static\img\Automate-Agent---Auto-Repair\image_4.png)  
-![Group 2](..\..\..\static\img\Automate-Agent---Auto-Repair\image_5.png)
+![Group 1](../../../static/img/Automate-Agent---Auto-Repair/image_4.png)  
+![Group 2](../../../static/img/Automate-Agent---Auto-Repair/image_5.png)
 
-**Ticket Subject:** `Agent Reinstall Failed/Broken Agent - <clientname>\\<computername>`
+**Ticket Subject:** `Agent Reinstall Failed/Broken Agent - <clientname>//<computername>`
 
 **Ticket Body (Windows OS):**  
 ```
 The agent <computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent, however the Computer ID %computerid% is still not checking in. The last user according to Automate was <lastuser>. If this variable is blank then Automate was unable to determine the last logged in user.
 
-Manual remediation is required. If you can access the machine, please download the lterrors.txt file typically located in the root Windows directory in the LTSvc folder. (Typical path is C:\Windows\LTSvc\lterrors.txt) This log file may help troubleshoot why the agent isn't able to check in. Most common errors are related to .NET or TLS issues.
+Manual remediation is required. If you can access the machine, please download the lterrors.txt file typically located in the root Windows directory in the LTSvc folder. (Typical path is C:/Windows/LTSvc/lterrors.txt) This log file may help troubleshoot why the agent isn't able to check in. Most common errors are related to .NET or TLS issues.
 
 The last 20 lines from the log file are as follow:
 <ParsedLogs>
@@ -150,6 +150,7 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
+
 
 
 

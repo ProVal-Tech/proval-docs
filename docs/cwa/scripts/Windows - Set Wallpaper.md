@@ -17,27 +17,28 @@ Time Saved by Automation: 10 Minutes
 ## Sample Run
 
 Set Mode:
-![Set Mode](..\..\..\static\img\Windows---Set-Wallpaper\image_1.png)
+![Set Mode](../../../static/img/Windows---Set-Wallpaper/image_1.png)
 
 Enforcement mode:
-![Enforcement mode](..\..\..\static\img\Windows---Set-Wallpaper\image_2.png)
+![Enforcement mode](../../../static/img/Windows---Set-Wallpaper/image_2.png)
 
 Reset Mode:
-![Reset Mode](..\..\..\static\img\Windows---Set-Wallpaper\image_3.png)
+![Reset Mode](../../../static/img/Windows---Set-Wallpaper/image_3.png)
 
 #### User Parameters
 
 | Name      | Example                                             | Required | Description                                                                                                   |
 |-----------|-----------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------|
-| Path      | C:\user\myuser\Pictures\CoolWallpaper.png          | Semi     | Either a path to a local image or URL.                                                                        |
+| Path      | C:/user/myuser/Pictures/CoolWallpaper.png          | Semi     | Either a path to a local image or URL.                                                                        |
 | AllUsers  | True                                               | False    | Set this to "True" to enforce the wallpaper for all users on login.                                          |
 | Reset     | True                                               | Semi     | Set only this parameter to "True" to remove all enforcement and reset all users' wallpapers back to their previous one. If they do not have a previous wallpaper, the default Windows wallpaper will be used. |
 
 ## Output
 
 ```
-C:\ProgramData\_automation\script\Set-Wallpaper\Set-Wallpaper-log.txt
+C:/ProgramData/_automation/script/Set-Wallpaper/Set-Wallpaper-log.txt
 ```
+
 
 
 

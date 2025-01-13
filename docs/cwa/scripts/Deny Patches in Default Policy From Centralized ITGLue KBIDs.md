@@ -16,7 +16,7 @@ Time saved by automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs\image_1.png)
+![Sample Run](../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs/image_1.png)
 
 ## Dependencies
 
@@ -30,7 +30,7 @@ Time saved by automation: 20 Minutes
 ## Process
 
 Step 1: Add the KBID of the patches to be denied after the "Patches_To_DENY:" string under the URL [https://proval.itglue.com/5078775/docs/8524500](https://proval.itglue.com/5078775/docs/8524500). KBIDs should be comma separated and there shouldn't be a space in between or after the ids. As mentioned in the attached screenshots:  
-![Step 1 Screenshot](..\..\..\static\img\Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs\image_2.png)
+![Step 1 Screenshot](../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs/image_2.png)
 
 Step 2: A PowerShell query will fetch those KBIDs to the script and will store those KBIDs under the `@KBID@` variable.
 
@@ -41,6 +41,7 @@ Step 4: The script will fetch the hotfix ID for each KBID and will deny those ho
 ## Output
 
 Output can be checked from the Approval section of the patch manager.
+
 
 
 

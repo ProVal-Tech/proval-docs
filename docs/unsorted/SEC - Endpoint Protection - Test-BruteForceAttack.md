@@ -34,7 +34,7 @@ Test-BruteForceAttack.ps1 -Threshold 25
 Queries the event log from the last time it ran to the current time, counts the instances of failed logins and alerts if over 25.
 
 ```
-Test-BruteForceAttack.ps1 -Threshold 25 -outfile "C:\temp\test.csv"
+Test-BruteForceAttack.ps1 -Threshold 25 -outfile "C:/temp/test.csv"
 ```
 Queries the event log from the last time it ran to the current time, counts the instances of failed logins and alerts if over 25, and outputs the found events to a csv.
 
@@ -49,7 +49,7 @@ Queries the event log from the last time it ran to the current time, counts the 
 
 If `-Outfile` is not provided - Boolean  
 If `-Outfile` is provided - Boolean and file.  
-`.\\Test-BruteForceAttack.ps1-log.txt`
+`.//Test-BruteForceAttack.ps1-log.txt`
 
 ## Locations
 
@@ -59,6 +59,7 @@ If `-Outfile` is provided - Boolean and file.
 | ConnectWise RMM              |                                          |
 | Kaseya                       |                                          |
 | Datto RMM                    |                                          |
+
 
 
 

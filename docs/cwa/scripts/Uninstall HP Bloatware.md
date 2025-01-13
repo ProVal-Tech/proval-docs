@@ -16,7 +16,7 @@ Note* If the 'ticketcreationcategory' under the globals of the script is set to 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-HP-Bloatware\image_1.png)
+![Sample Run](../../../static/img/Uninstall-HP-Bloatware/image_1.png)
 
 ## Global Variables
 
@@ -48,6 +48,7 @@ If Script fails in uninstalling some of the HP Bloatware from the machine but un
 
 The script has successfully removed all unnecessary HP bloatware, leaving only the following software components:  
 `@RemainingUninstalledSoftwares@`
+
 
 
 

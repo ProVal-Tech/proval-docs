@@ -14,7 +14,7 @@ Installs Adobe Acrobat 2022
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Adobe-Acrobat-2022-Install\image_1.png)
+![Sample Run](../../../static/img/Adobe-Acrobat-2022-Install/image_1.png)
 
 ## Dependencies
 
@@ -29,6 +29,7 @@ Downloads installer from vendor, performs quiet norestart installation of MSI, c
 ## Output
 
 none
+
 
 
 

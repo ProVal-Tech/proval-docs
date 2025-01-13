@@ -22,12 +22,12 @@ Detects the computers where the Windows 11 Installer (Beta) task failed.
 ## Monitor
 
 1. Navigate to `Alert Management` > `Monitors`  
-   ![Step 1 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_1.png)
+   ![Step 1 Image](../../../static/img/Windows-11-Installation-Failed/image_1.png)
 
 2. Click the `Create Monitor` button at the top-right corner of the screen.  
-   ![Step 2 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_2.png)  
+   ![Step 2 Image](../../../static/img/Windows-11-Installation-Failed/image_2.png)  
    It will take you to this screen.  
-   ![Step 2 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_3.png)
+   ![Step 2 Image](../../../static/img/Windows-11-Installation-Failed/image_3.png)
 
 3. Fill in the following details:  
    **Name:** Windows 11 Installation Failed  
@@ -35,28 +35,29 @@ Detects the computers where the Windows 11 Installer (Beta) task failed.
    **Type:** Custom Field  
    **Severity:** Others  
    **Family:** Patch Management  
-   ![Step 3 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_4.png)  
+   ![Step 3 Image](../../../static/img/Windows-11-Installation-Failed/image_4.png)  
    The right half of the screen will be changed to this after setting the `Type` to `Custom Field`.  
-   ![Step 3 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_5.png)
+   ![Step 3 Image](../../../static/img/Windows-11-Installation-Failed/image_5.png)
 
 4. **Conditions**  
    - Change the `Custom Field Type` to `Text Box`.
    - Find and select the `Windows 11 Upgrade Failed` custom field in the `Custom Field Name` field.  
    - Set the comparator to `Contains`
    - Type `Failed` in the `Enter Value` field and press `Enter`.  
-   ![Step 4 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_6.png)
+   ![Step 4 Image](../../../static/img/Windows-11-Installation-Failed/image_6.png)
 
 5. **Ticket Resolution**  
    - Turn off the `Automatically resolve` button.  
-   ![Step 5 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_7.png)
+   ![Step 5 Image](../../../static/img/Windows-11-Installation-Failed/image_7.png)
 
 6. **Targeted Resources**  
    - Click the `Select Targets` button.  
-   ![Step 6 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_8.png)  
+   ![Step 6 Image](../../../static/img/Windows-11-Installation-Failed/image_8.png)  
    - Select all companies and click the `Save Selection` button.  
-   ![Step 6 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_9.png)
+   ![Step 6 Image](../../../static/img/Windows-11-Installation-Failed/image_9.png)
 
 7. Click the `Save` button at the top-right corner of the screen to create the monitor set.  
-   ![Step 7 Image](..\..\..\static\img\Windows-11-Installation-Failed\image_10.png)
+   ![Step 7 Image](../../../static/img/Windows-11-Installation-Failed/image_10.png)
+
 
 

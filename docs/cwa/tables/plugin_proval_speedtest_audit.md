@@ -50,3 +50,4 @@ Stores results from speedtests run by the script [EPM - Network - Script - Inter
 
 
 
+

@@ -34,7 +34,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](..\..\..\static\img\Drive-Errors-and-Raid-Failures\image_1.png) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](../../../static/img/Drive-Errors-and-Raid-Failures/image_1.png) |
 
 ## Dependencies
 
@@ -44,7 +44,7 @@ Insert the details of the monitor in the below table.
 
 Managed Windows Computer (Excluding Virtual Machines)
 
-![Target](..\..\..\static\img\Drive-Errors-and-Raid-Failures\image_2.png)  
+![Target](../../../static/img/Drive-Errors-and-Raid-Failures/image_2.png)  
 
 The monitor set should be limited to the `Windows Machines Excluding Virtual` search.
 
@@ -55,16 +55,17 @@ The monitor set should be limited to the `Windows Machines Excluding Virtual` se
 ## Ticketing
 
 **Subject:**  
-`Drive Error Detected on %CLIENTNAME%\%COMPUTERNAME%`
+`Drive Error Detected on %CLIENTNAME%/%COMPUTERNAME%`
 
 **Body:**  
 ```
-Drive Error Detected on %CLIENTNAME%\%COMPUTERNAME%.
+Drive Error Detected on %CLIENTNAME%/%COMPUTERNAME%.
 
 Details:  
 
 %RESULT%
 ```
+
 
 
 

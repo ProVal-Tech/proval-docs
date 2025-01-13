@@ -22,14 +22,14 @@ unlisted: false
    'ProVal - Production - DNS Service Monitoring' as `Name`,
    '6' as `CheckAction`,
    @Alertaction as `AlertAction`,
-   'DNS Service Not Running on %ComputerName%~~~Service is running now.!!!DNS Service Not Running on %ComputerName%~~~\\'DNS\\' service is stopped on %ComputerName%. Automate attempted to start the service but failed.' as `AlertMessage`,
+   'DNS Service Not Running on %ComputerName%~~~Service is running now.!!!DNS Service Not Running on %ComputerName%~~~//'DNS//' service is stopped on %ComputerName%. Automate attempted to start the service but failed.' as `AlertMessage`,
    '0' as `ContactID`,
    '600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command "$service = (Get-Service -Name \\'DNS\\' -ErrorAction SilentlyContinue); if ( $Service ) { if ( $Service.Status -ne \\'Running\\' ) { try { Restart-Service -Name \\'DNS\\' -Force -WarningAction SilentlyContinue -ErrorAction Stop } catch { return \\\\\"Failed to start the \\'DNS\\' service. Reason: $($Error[0].Exception.Message)\\\\\" } } }"' as `DataOut`,
+   'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "$service = (Get-Service -Name //'DNS//' -ErrorAction SilentlyContinue); if ( $Service ) { if ( $Service.Status -ne //'Running//' ) { try { Restart-Service -Name //'DNS//' -Force -WarningAction SilentlyContinue -ErrorAction Stop } catch { return /////"Failed to start the //'DNS//' service. Reason: $($Error[0].Exception.Message)/////" } } }"' as `DataOut`,
    '16' as `Comparor`,
-   '10|((^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(^$))%7C(^((\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})Failed to start the)|10|^((\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})Failed to start the' as `DataIn`,
+   '10|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))|11|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))%7C(^((////r////n){0,}[////r////n]{0,}////s{0,})Failed to start the)|10|^((////r////n){0,}[////r////n]{0,}////s{0,})Failed to start the' as `DataIn`,
    '0' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -83,9 +83,10 @@ unlisted: false
    ```
 
 2. Open the `Windows DNS Servers` group  
-   ![Windows DNS Servers](..\..\..\static\img\DNS-Service-Monitoring\image_1.png)
+   ![Windows DNS Servers](../../../static/img/DNS-Service-Monitoring/image_1.png)
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
-   ![Check Remote Monitor](..\..\..\static\img\DNS-Service-Monitoring\image_2.png)
+   ![Check Remote Monitor](../../../static/img/DNS-Service-Monitoring/image_2.png)
+
 
 

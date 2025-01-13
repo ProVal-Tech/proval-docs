@@ -23,11 +23,11 @@ The script aims to facilitate the installation of Windows updates on computers u
 
 To install windows updates only:
 
-![Install Windows Updates](..\..\..\static\img\Deep-Freeze-Automation---Install-Windows-Update\image_1.png)
+![Install Windows Updates](../../../static/img/Deep-Freeze-Automation---Install-Windows-Update/image_1.png)
 
 To attempt to update the installed applications after installing the Windows updates:
 
-![Update Installed Applications](..\..\..\static\img\Deep-Freeze-Automation---Install-Windows-Update\image_2.png)
+![Update Installed Applications](../../../static/img/Deep-Freeze-Automation---Install-Windows-Update/image_2.png)
 
 ## Requirements
 
@@ -36,7 +36,7 @@ Reference: [Faronics Documentation](https://www.faronics.com/webhelp/DFE/840/EN/
 
 Before executing the script, save the password with the **`Deep Freeze Command Line Password`** title at the client-level Passwords tab. Since this password will be used by the script to execute Deep Freeze Commands on the machines.
 
-![Deep Freeze Command Line Password](..\..\..\static\img\Deep-Freeze-Automation---Install-Windows-Update\image_3.png)
+![Deep Freeze Command Line Password](../../../static/img/Deep-Freeze-Automation---Install-Windows-Update/image_3.png)
 
 ## User Parameters
 
@@ -54,6 +54,7 @@ Before executing the script, save the password with the **`Deep Freeze Command L
 ## Output
 
 - Script Logs
+
 
 
 

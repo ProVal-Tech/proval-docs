@@ -20,8 +20,9 @@ Stores the run time of the Windows 11 Compatibility Validation task.
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---Windows-11-Upgrade-RunTime\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---Windows-11-Upgrade-RunTime\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-RunTime/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-RunTime/image_2.png)
+
 
 
 

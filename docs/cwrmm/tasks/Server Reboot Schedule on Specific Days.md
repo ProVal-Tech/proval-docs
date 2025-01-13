@@ -16,15 +16,15 @@ This schedules the force reboot of the server on the scheduled days based on the
 
 Select the device and search 'Workstation Re' in the search box and click.
 
-![Sample Run Step 1](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_1.png)
+![Sample Run Step 1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_1.png)
 
 Provide the user parameter value as per the requirement and then click 'Continue to scheduling'.
 
-![Sample Run Step 2](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_2.png)
+![Sample Run Step 2](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_2.png)
 
 Click Run task to schedule the task immediately.
 
-![Sample Run Step 3](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_3.png)
+![Sample Run Step 3](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_3.png)
 
 ## User Parameter
 
@@ -44,33 +44,33 @@ Click Run task to schedule the task immediately.
 
 Server Reboot Schedule on Specific Days: To implement this script, please create a new "Script Editor" style script in the system.
 
-![Create Task](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_4.png)
+![Create Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_4.png)
 
 - Name: Server Reboot Schedule on Specific Days
 - Description: This schedules the force reboot of the server on the scheduled days based on the approved window check
 - Category: Maintenance
 
-![Create Task Details](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_5.png)
+![Create Task Details](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_5.png)
 
 ### Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_6.png)
+![Add Row](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_6.png)
 
 ### Row 1: Function: Script Log
 
-![Row 1](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_7.png)
+![Row 1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_7.png)
 
 Paste the highlighted text: `Checking OS`
 
-![Row 1 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_8.png)
+![Row 1 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_8.png)
 
 ### Row 2: Function: PowerShell Script
 
-![Row 2](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_9.png)
+![Row 2](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_9.png)
 
-![Row 2 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_10.png)
+![Row 2 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_10.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to **600 seconds**.
 
@@ -87,63 +87,63 @@ if ($os.ProductType -eq 1) {
 
 ### Row 3: Function: Script Log
 
-![Row 3](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 3](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 3 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_12.png)
+![Row 3 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_12.png)
 
 ### Row 4: Logic: If/Then
 
-![Row 4](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_13.png)
+![Row 4](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_13.png)
 
 ### Row 4a: Condition: Output Contains
 
 In the IF part, enter `Server` in the right box of the "Output Does Not Contain" Part.
 
-![Row 4a](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_14.png)
+![Row 4a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_14.png)
 
 ### Row 4b: Function: Script Log
 
-![Row 4b](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 4b](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `The OS detected is confirmed not a Server. Please try the script 'Force Reboot Workstation with Reboot Windows Verification'. Exiting script without any action.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 4b Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_15.png)
+![Row 4b Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_15.png)
 
 ### Row 4c: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Row 4c](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_16.png)
+![Row 4c](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
 In the script exit message, leave it blank.
 
-![Row 4c Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_17.png)
+![Row 4c Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_17.png)
 
 ### Row 5: Logic: If/Then
 
-![Row 5](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_13.png)
+![Row 5](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_13.png)
 
 ### Row 5a: Condition: Custom Field Equals
 
 In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
 
-![Row 5a](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_18.png)
+![Row 5a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_18.png)
 
 ### Row 5b: Function: Script Log
 
-![Row 5b](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 5b](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `Force Reboot is approved on the endpoint via Reboot Scripts. Proceeding for reboot schedule without reboot window validation.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5b Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_19.png)
+![Row 5b Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_19.png)
 
 ### Row 5c: Function: PowerShell Script
 
-![Row 5c](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_9.png)
+![Row 5c](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_9.png)
 
-![Row 5c Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_20.png)
+![Row 5c Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_20.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
@@ -201,113 +201,113 @@ Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute 
 
 ### Row 5d: Function: Script Log
 
-![Row 5d](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 5d](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5d Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_12.png)
+![Row 5d Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_12.png)
 
 ### Row 5e: Logic: If/Then
 
-![Row 5e](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_13.png)
+![Row 5e](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_13.png)
 
 ### Row 5e.1: Condition: Output Does Not Contain
 
 In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not Contain" Part.
 
-![Row 5e.1](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_21.png)
+![Row 5e.1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_21.png)
 
 ### Row 5e.2: Function: Script Exit
 
-![Row 5e.2](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_22.png)
+![Row 5e.2](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_22.png)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device. This will end the task with failure.
 
-![Row 5e.2 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_23.png)
+![Row 5e.2 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_23.png)
 
 ### Row 5f: Function: Script Log
 
-![Row 5f](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 5f](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `Reboot successfully scheduled on %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5f Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_24.png)
+![Row 5f Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_24.png)
 
 ### Row 5g: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Row 5g](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_16.png)
+![Row 5g](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
 In the script exit message, leave it blank.
 
-![Row 5g Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_17.png)
+![Row 5g Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_17.png)
 
 ### Row 6: Function: Set Pre-defined Variable
 
-![Row 6](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_25.png)
+![Row 6](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_25.png)
 
 Select the custom field 'ServerRebootWindowStart' and set the variable 'RebootWindowStart'.
 
-![Row 6 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_26.png)
+![Row 6 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_26.png)
 
 ### Row 7: Function: Set Pre-defined Variable
 
-![Row 7](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_27.png)
+![Row 7](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_27.png)
 
 Select the custom field 'ServerRebootWindowEnd' and set the variable 'RebootWindowEnd'.
 
-![Row 7 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_28.png)
+![Row 7 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_28.png)
 
 ### Row 8: Function: Set Pre-defined Variable
 
-![Row 8](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_29.png)
+![Row 8](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_29.png)
 
 Select the custom field 'ServerRebootWindowDay' and set the variable 'RebootWindowDay'.
 
-![Row 8 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_30.png)
+![Row 8 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_30.png)
 
 ### Row 9: Logic: If/Then
 
-![Row 9](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_13.png)
+![Row 9](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_13.png)
 
 ### Row 9a: Condition: Custom Field Equals
 
 In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
 
-![Row 9a](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_31.png)
+![Row 9a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_31.png)
 
 ### Row 9b: Function: Script Log
 
-![Row 9b](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 9b](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `This endpoint has 'Exclude Reboot' flag checked. Exiting script without any action.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 9b Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_32.png)
+![Row 9b Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_32.png)
 
 ### Row 9c: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Row 9c](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_16.png)
+![Row 9c](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
 In the script exit message, leave it blank.
 
-![Row 9c Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_17.png)
+![Row 9c Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_17.png)
 
 ### Row 10: Function: Script Log
 
-![Row 10](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 10](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `Verifying that machine is in approved window between @RebootWindowStart@ and @RebootWindowEnd@ (Note: 0=12:00 AM, 23=11:00 PM) and Day @RebootWindowDay@.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 10 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_33.png)
+![Row 10 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_33.png)
 
 ### Row 11: Function: PowerShell Script
 
-![Row 11](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_9.png)
+![Row 11](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_9.png)
 
-![Row 11 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_34.png)
+![Row 11 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_34.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to **600 seconds**.
 
@@ -330,35 +330,35 @@ if ($Day -contains $currentDay) {
 
 ### Row 12: Function: Script Log
 
-![Row 12](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 12](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 12 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_12.png)
+![Row 12 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_12.png)
 
 ### Row 13: Logic: If/Then
 
-![Row 13](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_13.png)
+![Row 13](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_13.png)
 
 ### Row 13a: Condition: Output Contains
 
 In the IF part, enter `Machine is in reboot window` in the right box of the "Output Does Not Contain" Part.
 
-![Row 13a](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_35.png)
+![Row 13a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_35.png)
 
 ### Row 13b: Function: Script Log
 
-![Row 13b](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 13b](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `Scheduling the reboot as the reboot schedule falls under the reboot window set on the company level.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 13b Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_36.png)
+![Row 13b Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_36.png)
 
 ### Row 13c: Function: PowerShell Script
 
-![Row 13c](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_9.png)
+![Row 13c](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_9.png)
 
-![Row 13c Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_20.png)
+![Row 13c Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_20.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
@@ -416,59 +416,59 @@ Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute 
 
 ### Row 13d: Function: Script Log
 
-![Row 13d](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 13d](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 13d Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_12.png)
+![Row 13d Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_12.png)
 
 ### Row 13e: Function: Script Log
 
-![Row 13e](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_13.png)
+![Row 13e](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_13.png)
 
-![Row 13e Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_37.png)
+![Row 13e Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_37.png)
 
 ### Row 13e.1: Condition: Output Contain
 
 In the IF part, enter `RebootDateTime` in the right box of the "Output Contains" Part.
 
-![Row 13e.1](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_38.png)
+![Row 13e.1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_38.png)
 
 ### Row 13e.2: Function: Script Log
 
-![Row 13e.2](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_11.png)
+![Row 13e.2](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_11.png)
 
 In the script log message, type `Reboot successfully scheduled on %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 13e.2 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_24.png)
+![Row 13e.2 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_24.png)
 
 ### Row 13e.3: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Row 13e.3](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_16.png)
+![Row 13e.3](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
 In the script exit message, leave it blank.
 
-![Row 13e.3 Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_17.png)
+![Row 13e.3 Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_17.png)
 
 ### Row 13f: Function: Script Exit
 
-![Row 13f](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_22.png)
+![Row 13f](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_22.png)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device. This will end the task with failure.
 
-![Row 13f Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_23.png)
+![Row 13f Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_23.png)
 
 ### Row 14: Complete
 
-![Row 14](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_39.png)
+![Row 14](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_39.png)
 
-![Row 14 Detail 1](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_40.png)
+![Row 14 Detail 1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_40.png)
 
-![Row 14 Detail 2](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_41.png)
+![Row 14 Detail 2](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_41.png)
 
-![Row 14 Detail 3](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_42.png)
+![Row 14 Detail 3](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_42.png)
 
 ## Deployment
 
@@ -481,28 +481,29 @@ This task can be run manually or in a group. It will only reboot endpoints if th
 - Select the concerned task.
 - Click on `Schedule` button to schedule the task/script.
 
-![Schedule Task](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_5.png)
+![Schedule Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_5.png)
 
 This screen will appear.
 
-![Schedule Task Screen](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_43.png)
+![Schedule Task Screen](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_43.png)
 
 - Select the relevant time to run the script and click the 'Does not repeat' button.
 
-![Select Time](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_44.png)
+![Select Time](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_44.png)
 
-![Select Time Detail](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_45.png)
+![Select Time Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_45.png)
 
 - Select the target to schedule the 'Server Reboot Schedule on Specific Days'.
 
 For example:
 
-![Select Target](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_46.png)
+![Select Target](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_46.png)
 
 - Now click the `Run` button once all customization is set to initiate the task.
 
-![Run Task](..\..\..\static\img\Server-Reboot-Schedule-on-Specific-Days\image_47.png)
+![Run Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_47.png)
 
 - The task will start appearing in the Scheduled Tasks.
+
 
 

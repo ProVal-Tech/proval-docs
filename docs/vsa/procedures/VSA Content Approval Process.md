@@ -50,9 +50,10 @@ You will receive an approval ticket in your Autotask queue when a piece of conte
    Move the content to the appropriate directory. Client-Specific content should be moved to the relevant client folder, and VSA-wide content should be categorized per the Document Title.
 
 2. Next, move the ITGlue Document to the appropriate location.  
-   - Client-Specific Content should be moved to the Client Organization\Content directory.
-   - VSA-Wide or Stack content should be categorized appropriately within Documents\Content Library\_RMM - Kaseya\
+   - Client-Specific Content should be moved to the Client Organization/Content directory.
+   - VSA-Wide or Stack content should be categorized appropriately within Documents/Content Library/_RMM - Kaseya/
 
 3. Finally, add the content you've approved to the content tracker for the month: [Content Tracker](https://proval.itglue.com/5078775/documents/folder/3021357) so that we can discuss all created content in a monthly meeting.
+
 
 

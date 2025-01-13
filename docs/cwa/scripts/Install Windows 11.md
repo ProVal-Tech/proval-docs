@@ -14,7 +14,7 @@ Process to download and install Windows 11 from a URL.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Install-Windows-11\image_1.png)
+![Sample Run](../../../static/img/Install-Windows-11/image_1.png)
 
 ## Dependencies
 
@@ -40,6 +40,7 @@ See [SEC - Windows Patching - Agnostic - Install-Windows11](https://proval.itglu
 
 - Script log
 - Local file on computer
+
 
 
 

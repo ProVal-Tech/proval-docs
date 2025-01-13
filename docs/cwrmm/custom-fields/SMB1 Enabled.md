@@ -24,10 +24,11 @@ This custom field is used to store and display the results of the task [CW RMM -
 
 ## ScreenShot
 
-![Screenshot](..\..\..\static\img\SMB1-Enabled\image_1.png)
+![Screenshot](../../../static/img/SMB1-Enabled/image_1.png)
 
 ## Sample Value
 
-![Sample Value](..\..\..\static\img\SMB1-Enabled\image_2.png)
+![Sample Value](../../../static/img/SMB1-Enabled/image_2.png)
+
 
 

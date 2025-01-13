@@ -64,7 +64,7 @@ Import the following alert templates from the `ProSync` plugin:
 ### 5.
 Reload the System Cache.
 
-![Reload the System Cache](..\..\static\img\Latest-Installed-Cumulative-Update\image_2.png)
+![Reload the System Cache](../../static/img/Latest-Installed-Cumulative-Update/image_2.png)
 
 ### 6.
 Execute the [Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script against a couple of online Windows 10/11 computers and validate the data in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849510) dataview.
@@ -81,7 +81,7 @@ Configure the Auditing section of the solution as follows:
 ### 1.
 - Execute the [Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498) script against a Windows computer with the script parameter `Set_Environment` configured as `1`. This action will import the necessary System Properties required for solution management.
 
-![Execute Autofix Script](..\..\static\img\Latest-Installed-Cumulative-Update\image_3.png)
+![Execute Autofix Script](../../static/img/Latest-Installed-Cumulative-Update/image_3.png)
 
 - Configure the necessary values within the system properties.
   - `Out_of_Date_CU-EmailAlerts`: Configure this system property to 1 to activate Email Alerts in conjunction with the tickets.
@@ -108,5 +108,6 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is setup to run only against machines that are not EOL or recently EOL (Within 30 days). If the machine is not EOL currently, check to make sure the monitor is setup to run against the group that machine is in.
+
 
 

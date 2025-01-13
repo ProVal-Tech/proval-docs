@@ -11,7 +11,8 @@ unlisted: false
 Disables BitLocker on all drives.  
 Content Located in Shared > PVAL Content Source > BitLocker > Disable Bitlocker
 
-![Image](..\..\..\static\img\Disable-BitLocker\image_1.png)
+![Image](../../../static/img/Disable-BitLocker/image_1.png)
+
 
 
 

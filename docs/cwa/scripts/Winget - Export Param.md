@@ -19,24 +19,24 @@ When the `Email_Report` parameter is set to 1, the script will send out the gene
 If both `Export_CSV` and `Email_Report` parameters are enabled, the script will send two separate emails, each attaching the corresponding report. This is because multiple files cannot be attached to the same email from Automate.
 
 Path to the reports on local machine:
-- C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json
-- C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.csv
+- C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json
+- C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.csv
 
 **Requirement:** PowerShell v5+
 
 ## Sample Run
 
-**Example 1:** Export and place the `Softwarelist.json` file at `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json` on end machine.
+**Example 1:** Export and place the `Softwarelist.json` file at `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json` on end machine.
 
-![Example 1](..\..\..\static\img\Winget---Export-Param\image_1.png)
+![Example 1](../../../static/img/Winget---Export-Param/image_1.png)
 
-**Example 2:** Export and place both `software.json` and `software.csv` files respectively at `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json` and `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.csv` on end machine. Send out the reports to the user running the script via separate emails.
+**Example 2:** Export and place both `software.json` and `software.csv` files respectively at `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json` and `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.csv` on end machine. Send out the reports to the user running the script via separate emails.
 
-![Example 2](..\..\..\static\img\Winget---Export-Param\image_2.png)
+![Example 2](../../../static/img/Winget---Export-Param/image_2.png)
 
-**Example 3:** Export and place both `software.json` and `software.csv` files respectively at `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.json` and `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Softwarelist.csv` on end machine. Send out the reports to [support@provaltech.com](mailto:support@provaltech.com) via separate emails.
+**Example 3:** Export and place both `software.json` and `software.csv` files respectively at `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json` and `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.csv` on end machine. Send out the reports to [support@provaltech.com](mailto:support@provaltech.com) via separate emails.
 
-![Example 3](..\..\..\static\img\Winget---Export-Param\image_3.png)
+![Example 3](../../../static/img/Winget---Export-Param/image_3.png)
 
 ### User Parameters
 
@@ -50,6 +50,7 @@ Path to the reports on local machine:
 
 - Script logs
 - Email(s) (if enabled)
+
 
 
 

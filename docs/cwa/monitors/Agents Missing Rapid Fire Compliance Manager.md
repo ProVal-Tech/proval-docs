@@ -24,6 +24,7 @@ Global
 
 *To create a ticket please set the ticket category in the alerting section of the monitor*
 
-![Image](..\..\..\static\img\Agents-Missing-Rapid-Fire-Compliance-Manager\image_1.png)
+![Image](../../../static/img/Agents-Missing-Rapid-Fire-Compliance-Manager/image_1.png)
+
 
 

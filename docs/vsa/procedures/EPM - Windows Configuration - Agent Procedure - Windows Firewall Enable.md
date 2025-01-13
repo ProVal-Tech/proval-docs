@@ -18,26 +18,26 @@ This agent procedure is used to enable Windows Firewall in endpoint.
 |---------------------|-------------------------------------------------|-------------------------------------------|----------------------------------|
 | 8:55:45 am 2-Nov-22 | Windows Firewall Enable                         | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:55:45 am 2-Nov-22 | Windows Firewall Enable -0003                   | Windows Firewall Successfully Enabled.    | provaltech.com/surender.kumar   |
-| 8:55:45 am 2-Nov-22 | Windows Firewall Enable                         | Comparing files C:\PROVALTECH\pvtfw.txt and C:\PROVALTECH\PBLFW.TXT FC: no differences encountered | provaltech.com/surender.kumar   |
+| 8:55:45 am 2-Nov-22 | Windows Firewall Enable                         | Comparing files C:/PROVALTECH/pvtfw.txt and C:/PROVALTECH/PBLFW.TXT FC: no differences encountered | provaltech.com/surender.kumar   |
 | 8:55:45 am 2-Nov-22 | Execute Shell command - Get Results to Variable | Success THEN                             | provaltech.com/surender.kumar   |
-| 8:55:43 am 2-Nov-22 | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: fc C:\provaltech\pvtfw.txt C:\provaltech\pblfw.txt >"c:\provaltech\commandresults-1804840338.txt" 2>&1 | provaltech.com/surender.kumar   |
+| 8:55:43 am 2-Nov-22 | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: fc C:/provaltech/pvtfw.txt C:/provaltech/pblfw.txt >"c:/provaltech/commandresults-1804840338.txt" 2>&1 | provaltech.com/surender.kumar   |
 | 8:55:42 am 2-Nov-22 | Execute Powershell Command                      | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:55:42 am 2-Nov-22 | Execute Powershell Command-0012                 | Results returned to global variable #global:psresult# and saved in Documents tab of server. | provaltech.com/surender.kumar   |
-| 8:55:42 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\382358830087781\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
+| 8:55:42 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/382358830087781/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
 | 8:55:41 am 2-Nov-22 | Execute Powershell Command-0011                 | Powershell command completed!            | provaltech.com/surender.kumar   |
-| 8:55:35 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt" >"c:\provaltech\psoutput.txt" | provaltech.com/surender.kumar   |
+| 8:55:35 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt" >"c:/provaltech/psoutput.txt" | provaltech.com/surender.kumar   |
 | 8:55:35 am 2-Nov-22 | Execute Powershell Command-0010                 | Sending output to global variable.       | provaltech.com/surender.kumar   |
-| 8:55:35 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt" | provaltech.com/surender.kumar   |
-| 8:55:35 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt | provaltech.com/surender.kumar   |
+| 8:55:35 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt" | provaltech.com/surender.kumar   |
+| 8:55:35 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt | provaltech.com/surender.kumar   |
 | 8:55:32 am 2-Nov-22 | Execute Powershell Command-0002                 | Powershell is present.                   | provaltech.com/surender.kumar   |
 | 8:55:30 am 2-Nov-22 | Execute Powershell Command                       | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:55:30 am 2-Nov-22 | Execute Powershell Command-0012                 | Results returned to global variable #global:psresult# and saved in Documents tab of server. | provaltech.com/surender.kumar   |
-| 8:55:30 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\382358830087781\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
+| 8:55:30 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/382358830087781/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
 | 8:55:30 am 2-Nov-22 | Execute Powershell Command-0011                 | Powershell command completed!            | provaltech.com/surender.kumar   |
-| 8:55:23 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:\provaltech\pvtfw.txt" >"c:\provaltech\psoutput.txt" | provaltech.com/surender.kumar   |
+| 8:55:23 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt" >"c:/provaltech/psoutput.txt" | provaltech.com/surender.kumar   |
 | 8:55:23 am 2-Nov-22 | Execute Powershell Command-0010                 | Sending output to global variable.       | provaltech.com/surender.kumar   |
-| 8:55:23 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:\provaltech\pvtfw.txt" | provaltech.com/surender.kumar   |
-| 8:55:23 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:\provaltech\pvtfw.txt | provaltech.com/surender.kumar   |
+| 8:55:23 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt" | provaltech.com/surender.kumar   |
+| 8:55:23 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt | provaltech.com/surender.kumar   |
 | 8:55:19 am 2-Nov-22 | Execute Powershell Command-0002                 | Powershell is present.                   | provaltech.com/surender.kumar   |
 | 8:55:18 am 2-Nov-22 | Execute Powershell Command (64-bit, Run As System) | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:55:17 am 2-Nov-22 | Execute Powershell Command (64-bit, Run As System)-0014 | Powershell command completed!            | provaltech.com/surender.kumar   |
@@ -49,12 +49,12 @@ This agent procedure is used to enable Windows Firewall in endpoint.
 | 8:55:11 am 2-Nov-22 | Windows Firewall Enable -0002                   | Public Firewall is OFF                   | provaltech.com/surender.kumar   |
 | 8:55:11 am 2-Nov-22 | Execute Powershell Command                       | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:55:11 am 2-Nov-22 | Execute Powershell Command-0012                 | Results returned to global variable #global:psresult# and saved in Documents tab of server. | provaltech.com/surender.kumar   |
-| 8:55:11 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\382358830087781\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
+| 8:55:11 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/382358830087781/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
 | 8:55:10 am 2-Nov-22 | Execute Powershell Command-0011                 | Powershell command completed!            | provaltech.com/surender.kumar   |
-| 8:55:04 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt" >"c:\provaltech\psoutput.txt" | provaltech.com/surender.kumar   |
+| 8:55:04 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt" >"c:/provaltech/psoutput.txt" | provaltech.com/surender.kumar   |
 | 8:55:04 am 2-Nov-22 | Execute Powershell Command-0010                 | Sending output to global variable.       | provaltech.com/surender.kumar   |
-| 8:55:03 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt" | provaltech.com/surender.kumar   |
-| 8:55:03 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt | provaltech.com/surender.kumar   |
+| 8:55:03 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt" | provaltech.com/surender.kumar   |
+| 8:55:03 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt | provaltech.com/surender.kumar   |
 | 8:55:00 am 2-Nov-22 | Execute Powershell Command-0002                 | Powershell is present.                   | provaltech.com/surender.kumar   |
 | 8:54:59 am 2-Nov-22 | Execute Powershell Command (64-bit, Run As System) | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:54:59 am 2-Nov-22 | Execute Powershell Command (64-bit, Run As System)-0014 | Powershell command completed!            | provaltech.com/surender.kumar   |
@@ -66,12 +66,12 @@ This agent procedure is used to enable Windows Firewall in endpoint.
 | 8:54:52 am 2-Nov-22 | Windows Firewall Enable -0001                   | Private Firewall is OFF                  | provaltech.com/surender.kumar   |
 | 8:54:52 am 2-Nov-22 | Execute Powershell Command                       | Success THEN                             | provaltech.com/surender.kumar   |
 | 8:54:52 am 2-Nov-22 | Execute Powershell Command-0012                 | Results returned to global variable #global:psresult# and saved in Documents tab of server. | provaltech.com/surender.kumar   |
-| 8:54:52 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\382358830087781\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
+| 8:54:52 am 2-Nov-22 | Execute Powershell Command-0012                 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/382358830087781/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/surender.kumar   |
 | 8:54:51 am 2-Nov-22 | Execute Powershell Command-0011                 | Powershell command completed!            | provaltech.com/surender.kumar   |
-| 8:54:44 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:\provaltech\pvtfw.txt" >"c:\provaltech\psoutput.txt" | provaltech.com/surender.kumar   |
+| 8:54:44 am 2-Nov-22 | Execute Powershell Command-0011                 | Executing powershell "" -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt" >"c:/provaltech/psoutput.txt" | provaltech.com/surender.kumar   |
 | 8:54:44 am 2-Nov-22 | Execute Powershell Command-0010                 | Sending output to global variable.       | provaltech.com/surender.kumar   |
-| 8:54:44 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:\provaltech\pvtfw.txt" | provaltech.com/surender.kumar   |
-| 8:54:44 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:\provaltech\pvtfw.txt | provaltech.com/surender.kumar   |
+| 8:54:44 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt" | provaltech.com/surender.kumar   |
+| 8:54:44 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt | provaltech.com/surender.kumar   |
 | 8:54:41 am 2-Nov-22 | Execute Powershell Command-0002                 | Powershell is present.                   | provaltech.com/surender.kumar   |
 | 8:54:32 am 2-Nov-22 | Run Now - Windows Firewall Enable                | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Windows Firewall Enable to run at Nov 2 2022 8:54AM | provaltech.com/surender.kumar   |
 
@@ -86,5 +86,6 @@ The agent procedure checks whether the machine has firewall enabled or not. If n
 ## Output
 
 Procedure Logs
+
 
 

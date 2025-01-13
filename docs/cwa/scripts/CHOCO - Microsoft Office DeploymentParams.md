@@ -16,7 +16,7 @@ This script can be used to install the different versions of Microsoft Office us
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CHOCO---Microsoft-Office-DeploymentParams\image_1.png)
+![Sample Run](../../../static/img/CHOCO---Microsoft-Office-DeploymentParams/image_1.png)
 
 ## Dependencies
 
@@ -36,6 +36,7 @@ This script can be used to install the different versions of Microsoft Office us
 ## Output
 
 - Script log
+
 
 
 

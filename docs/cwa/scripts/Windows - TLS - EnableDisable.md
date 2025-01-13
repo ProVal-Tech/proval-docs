@@ -14,7 +14,7 @@ The script will be used to enable or disable any versions of TLS (v1.0, v1.1, v1
 
 [Learn more about enabling TLS 1.2](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-tls-enforcement#enable-tls-12)
 
-**File Path**: `C:\ProgramData\_Automation\Script\Set-TLS\Set-TLS.ps1`
+**File Path**: `C:/ProgramData/_Automation/Script/Set-TLS/Set-TLS.ps1`
 
 **File Hash**:  
 - **SHA256**: `F23026F65794709EBF98E4E78653D0605FAF577943524DED7423654CBA8227E5`  
@@ -24,7 +24,7 @@ The script will be used to enable or disable any versions of TLS (v1.0, v1.1, v1
 
 To disable TLS 1.0, and TLS 1.1 and to enable TLS 1.2, and TLS 1.3 along with the strong crypto for .Net.  
 
-![Sample Run](..\..\..\static\img\Windows---TLS---EnableDisable\image_1.png)
+![Sample Run](../../../static/img/Windows---TLS---EnableDisable/image_1.png)
 
 #### User Parameters
 
@@ -39,6 +39,7 @@ To disable TLS 1.0, and TLS 1.1 and to enable TLS 1.2, and TLS 1.3 along with th
 ## Output
 
 - Script log
+
 
 
 

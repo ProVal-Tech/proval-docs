@@ -14,11 +14,11 @@ The purpose of the monitor set is to detect the computers that are placed in the
 
 Sample screenshot for the multiple Router Addresses:
 
-![Sample screenshot for multiple Router Addresses](..\..\..\static\img\Agent-Checking-in-with-Wrong-Location\image_1.png)
+![Sample screenshot for multiple Router Addresses](../../../static/img/Agent-Checking-in-with-Wrong-Location/image_1.png)
 
 Sample screenshot for the single Router Address:
 
-![Sample screenshot for single Router Address](..\..\..\static\img\Agent-Checking-in-with-Wrong-Location\image_2.png)
+![Sample screenshot for single Router Address](../../../static/img/Agent-Checking-in-with-Wrong-Location/image_2.png)
 
 However, there's an option available in Monitor set to use router address without quotes, but in that case, you would not be able to use multiple router addresses for any of the locations. 
 
@@ -26,10 +26,11 @@ In order to use a single router address without quotes, you can un-comment "#ON 
 
 Sample Screenshot for single unquoted router address:
 
-![Sample Screenshot for single unquoted router address](..\..\..\static\img\Agent-Checking-in-with-Wrong-Location\image_3.png)
+![Sample Screenshot for single unquoted router address](../../../static/img/Agent-Checking-in-with-Wrong-Location/image_3.png)
 
 ## Target
 
 Global
+
 
 

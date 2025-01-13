@@ -16,15 +16,15 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 
 1. Navigate to `Endpoints` > `Alerts` > `Monitors`
    
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_1.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_1.png)
 
 2. Click the `Create Monitor` button.
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_2.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_2.png)
 
 3. This screen will appear.
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_3.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_3.png)
 
 4. **Name:** Time Sync Compliance  
    **Description:** This monitor will sync machines time with us.pool.ntp.org.  
@@ -32,19 +32,19 @@ This monitor will sync the machine's time with us.pool.ntp.org.
    **Family:** Desktop Operating System  
    **Severity:** Others  
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_4.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_4.png)
 
 5. The `Conditions` tab will start looking like this: 
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_5.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_5.png)
 
 6. Set the `Repeat every` to `24` Hours:
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_6.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_6.png)
 
 7. Disable the `Ticket Resolution` section by clicking the `Automatically resolve` button.
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_7.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_7.png)
 
 8. Paste this PowerShell script in the `Script` box.
 
@@ -76,23 +76,24 @@ This monitor will sync the machine's time with us.pool.ntp.org.
    }
    ```
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_8.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_8.png)
 
 9. Set `Failed` to the `Script Output` box.
 
-   ![Image](..\..\..\static\img\Time-Sync-Compliance\image_9.png)
+   ![Image](../../../static/img/Time-Sync-Compliance/image_9.png)
 
 10. Select the required client or group to target from the `Select Targets` button.
 
-    ![Image](..\..\..\static\img\Time-Sync-Compliance\image_10.png)  
-    ![Image](..\..\..\static\img\Time-Sync-Compliance\image_11.png)
+    ![Image](../../../static/img/Time-Sync-Compliance/image_10.png)  
+    ![Image](../../../static/img/Time-Sync-Compliance/image_11.png)
 
 11. Monitors Final Look
 
-    ![Image](..\..\..\static\img\Time-Sync-Compliance\image_12.png)
+    ![Image](../../../static/img/Time-Sync-Compliance/image_12.png)
 
 12. Click the `Save` button to save the monitor set.
 
-    ![Image](..\..\..\static\img\Time-Sync-Compliance\image_13.png)
+    ![Image](../../../static/img/Time-Sync-Compliance/image_13.png)
+
 
 

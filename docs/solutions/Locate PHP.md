@@ -32,10 +32,10 @@ The goal of the solution is to identify the computers that have the PHP.exe file
    - Alert Template - △ Custom - Execute Script - Find PHP.exe
 
 2. Reload the system cache:
-   ![Reload Cache](..\..\static\img\Locate-PHP\image_1.png)
+   ![Reload Cache](../../static/img/Locate-PHP/image_1.png)
 
 3. Run the script with the `Set_Environment` parameter set to `1` after to create the [custom table](https://proval.itglue.com/DOC-5078775-16245130) and the EDF being used by the script.
-   ![Run Script](..\..\static\img\Locate-PHP\image_2.png)
+   ![Run Script](../../static/img/Locate-PHP/image_2.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -44,6 +44,7 @@ The goal of the solution is to identify the computers that have the PHP.exe file
        - Right-click and Run Now to start the monitor
 
 5. Mark the `Find PHP.exe` EDF on the clients you would like to audit the information on.
-   ![Mark EDF](..\..\static\img\Locate-PHP\image_3.png)
+   ![Mark EDF](../../static/img/Locate-PHP/image_3.png)
+
 
 

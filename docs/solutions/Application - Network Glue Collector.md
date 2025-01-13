@@ -30,12 +30,13 @@ This solution contains the Network Glue Deployment/uninstallation articles.
    - △ Custom - Execute Script - Network Glue Collector - install  
 
 2. **Reload the system cache:**
-   ![Reload Cache](..\..\static\img\Application---Network-Glue-Collector\image_1.png)
+   ![Reload Cache](../../static/img/Application---Network-Glue-Collector/image_1.png)
 
 3. **Configure the solution as outlined below:**
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
      - [Internal Monitor - ProVal Production - Network Glue - Deployment](https://proval.itglue.com/DOC-5078775-17492944)  
        - Setup with "△ Custom - Execute Script - Network Glue Collector - install" Alert Template
        - Right-click and Run Now to start the monitor.
+
 
 

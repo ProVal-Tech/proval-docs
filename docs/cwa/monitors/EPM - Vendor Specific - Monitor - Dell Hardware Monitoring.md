@@ -16,10 +16,11 @@ This internal monitor detects critical and error Dell event logs via the "Server
 
 Replace <Your AgentID Goes Here> with the ID of the monitor set before enabling it. 
 
-![Image](..\..\..\static\img\EPM---Vendor-Specific---Monitor---Dell-Hardware-Monitoring\image_1.png)
+![Image](../../../static/img/EPM---Vendor-Specific---Monitor---Dell-Hardware-Monitoring/image_1.png)
 
 ## Target
 
 Dell Servers
+
 
 

@@ -14,7 +14,7 @@ This script will uninstall the CrowdStrike Application.
 
 ## Requirements
 
-1. The file CSUninstallTool.exe must be placed in the 'LTShare' directory in Software\Crowdstrike
+1. The file CSUninstallTool.exe must be placed in the 'LTShare' directory in Software/Crowdstrike
 
 This file is required to be downloaded from the Falcon site. Refer to the below link:
 
@@ -22,7 +22,7 @@ This file is required to be downloaded from the Falcon site. Refer to the below 
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Crowdstrike-Uninstall\image_1.png)
+![Sample Run](../../static/img/Crowdstrike-Uninstall/image_1.png)
 
 ## Dependencies
 
@@ -45,6 +45,7 @@ CsUninstallTool.exe -- File
 ## Output
 
 - Script log
+
 
 
 

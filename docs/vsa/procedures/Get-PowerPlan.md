@@ -29,12 +29,13 @@ This agent procedure does not accept any parameters or require configuration onc
 Retrieves information about available power plans, subgroups, and power settings.
 
 ```
-.\Get-PowerPlan.ps1
+./Get-PowerPlan.ps1
 ```
 
 # Output
-$env:ProgramData\_automation\AgentProcedure\GetPowerPlan\Get-PowerPlan-log.txt
+$env:ProgramData/_automation/AgentProcedure/GetPowerPlan/Get-PowerPlan-log.txt
 
 Agent Procedure Log
+
 
 

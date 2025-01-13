@@ -14,7 +14,7 @@ This script is an Automate Wrapper to run the Agnostic Update-Office script.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\SWM---Software-Configuration---Script---Microsoft-Office-365---Update\image_1.png)  
+![Sample Run](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_1.png)  
 Set force to 1 to force Microsoft office applications to close during the update process.
 
 ## Dependencies
@@ -59,6 +59,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Ticketing
 
-![Ticketing](..\..\..\static\img\SWM---Software-Configuration---Script---Microsoft-Office-365---Update\image_2.png)
+![Ticketing](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_2.png)
+
 
 

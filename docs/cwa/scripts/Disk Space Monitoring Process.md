@@ -18,7 +18,7 @@ Disk cleanup will only run against Windows machines. When run as an auto-fix fro
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Disk-Space-Monitoring-Process\image_1.png)
+![Sample Run](../../../static/img/Disk-Space-Monitoring-Process/image_1.png)
 
 ## Dependencies
 
@@ -52,7 +52,7 @@ The following steps are performed:
 1. Determine if the context of the script run was from a monitor or not, and set the `@driveletter@` variable as necessary.
 2. Creates the threshold Properties if they do not exist, and sets the variables `@threshold16-100@`, `@threshold100-1024@`, and `@threshold1024+@` from the content of the Properties.
 3. Using the script state `TicketNumber@DriveLetter@`, determines if the script has been run against this machine previously and already created a ticket. If there is an existing ticket, and it is currently open, jumps to the `:TicketOpen` label. Otherwise, starts the initial check of the drive. (Note: The `:TicketOpen` label follows the same process as step 5, but instead comments the existing ticket or closes it if the threshold is not exceeded.)
-4. Gathers information about the total size of the drive and the current free space of the drive. If `@driveletter@` is the system drive (`@windowsdirectory@ == @driveletter@:\Windows`), then the subscript `Windows Disk Cleanup` will be run.
+4. Gathers information about the total size of the drive and the current free space of the drive. If `@driveletter@` is the system drive (`@windowsdirectory@ == @driveletter@:/Windows`), then the subscript `Windows Disk Cleanup` will be run.
 5. Checks if the current disk space (after cleanup) is below the threshold for the respective drive size. If so, a PowerShell script will fetch the information on the largest 25 files, user profiles, and folders and comment on the ticket. If the space is not below the threshold, then the script will exit.
 
 ## Output
@@ -67,5 +67,6 @@ The following steps are performed:
 <video width="100%" height="Auto" controls="">
   <source src="https://proval.itglue.com/attachments/11261624" type="video/webm">
 </video>
+
 
 

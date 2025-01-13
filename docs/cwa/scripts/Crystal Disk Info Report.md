@@ -18,7 +18,7 @@ Note: The script will not work for virtual machines as the tool only supports ph
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Crystal-Disk-Info-Report\image_2.png)
+![Sample Run](../../../static/img/Crystal-Disk-Info-Report/image_2.png)
 
 The primary usage of the script is to be executed by the [EPM - Disk - Internal Monitor - Execute Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960044) monitor set.
 
@@ -34,8 +34,8 @@ The primary usage of the script is to be executed by the [EPM - Disk - Internal 
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ProjectName            | Get-CrystalDiskInfo                                                                                      |
 | TableName              | [pvl_crystal_disk_info](https://proval.itglue.com/DOC-5078775-12960038)                                 |
-| WorkingDirectory        | C:\ProgramData\_automation\script\Get-CrystalDiskInfo                                                   |
-| PS1ErrorLog            | C:\ProgramData\_automation\script\Get-CrystalDiskInfo\Get-CrystalDiskInfo-error.txt                    |
+| WorkingDirectory        | C:/ProgramData/_automation/script/Get-CrystalDiskInfo                                                   |
+| PS1ErrorLog            | C:/ProgramData/_automation/script/Get-CrystalDiskInfo/Get-CrystalDiskInfo-error.txt                    |
 | SQLDeleteStatement      | Stores SQL query to remove stale data from the database                                                   |
 | SQLStartStatement       | Stores the SQL query to be used to insert fresh data into the database                                    |
 | DataPointNames          | Data Points to be passed to [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) script |
@@ -67,7 +67,7 @@ The primary usage of the script is to be executed by the [EPM - Disk - Internal 
 | Disks to Exclude From Disk Health Alerting       | Computer | Text  | 50026B73801F2CBB,50026B73801F2CBC               | Comma Separated list of the Serial Number of the Disk(s) to exclude from alerting.                                                                                                                                           |
 | Crystal Disk - Reallocated Sectors               | Computer | Text  | 70                                              | Threshold for the number of reallocated sectors to mark an HDD as `caution` (not applicable to SSDs). This EDF can be used to overwrite the value stored in the Global Variable `ReallocatedSector`. The default threshold is 50. |
 
-![Extra Data Fields](..\..\..\static\img\Crystal-Disk-Info-Report\image_3.png)
+![Extra Data Fields](../../../static/img/Crystal-Disk-Info-Report/image_3.png)
 
 ## System Properties
 
@@ -188,13 +188,13 @@ To exclude this disk from disk health alerting: Open the computer in Automate, n
 **Sample Ticket:**
 
 **Ticket Summary and Subject:**  
-![Sample Ticket Summary](..\..\..\static\img\Crystal-Disk-Info-Report\image_4.png)
+![Sample Ticket Summary](../../../static/img/Crystal-Disk-Info-Report/image_4.png)
 
 **Internal Notes/Comment:**  
-![Sample Internal Notes](..\..\..\static\img\Crystal-Disk-Info-Report\image_5.png)
+![Sample Internal Notes](../../../static/img/Crystal-Disk-Info-Report/image_5.png)
 
 Attached **`DiskInfo.txt`** File:  
-![Attached DiskInfo.txt](..\..\..\static\img\Crystal-Disk-Info-Report\image_6.png)
+![Attached DiskInfo.txt](../../../static/img/Crystal-Disk-Info-Report/image_6.png)
 
 ## Excluding Disk(s) from alerting
 
@@ -202,6 +202,7 @@ Attached **`DiskInfo.txt`** File:
 - Add the serial number to the computer level EDF `Disks to Exclude From Disk Health Alerting`. Multiple Serial numbers can be separated by a comma. Do not add a space after comma.  
 
 e.g.,  
-![Example Exclusion](..\..\..\static\img\Crystal-Disk-Info-Report\image_7.png)
+![Example Exclusion](../../../static/img/Crystal-Disk-Info-Report/image_7.png)
+
 
 

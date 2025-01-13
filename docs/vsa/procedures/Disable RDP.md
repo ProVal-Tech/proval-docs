@@ -21,22 +21,22 @@ The script is used to check whether the RDP is enabled on the machine. If the RD
 | 4:11:59 pm 20-Sep-22     | Disable RDP-0001               | 1                                                                                                         | provaltech.com/ovais.rashid   |
 | 4:11:59 pm 20-Sep-22     | Execute Powershell Command      | Success THEN                                                                                               | provaltech.com/ovais.rashid   |
 | 4:11:59 pm 20-Sep-22     | Execute Powershell Command-0012 | Results returned to global variable #global:psresult# and saved in Documents tab of server.               | provaltech.com/ovais.rashid   |
-| 4:11:59 pm 20-Sep-22     | Execute Powershell Command-0012 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\162522262609191\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/ovais.rashid   |
+| 4:11:59 pm 20-Sep-22     | Execute Powershell Command-0012 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/162522262609191/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/ovais.rashid   |
 | 4:11:59 pm 20-Sep-22     | Execute Powershell Command-0011 | Powershell command completed!                                                                               | provaltech.com/ovais.rashid   |
-| 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0011 | Executing powershell "" -Command "(Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections" >"c:\provaltech\psoutput.txt" | provaltech.com/ovais.rashid   |
+| 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0011 | Executing powershell "" -Command "(Get-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server').fDenyTSConnections" >"c:/provaltech/psoutput.txt" | provaltech.com/ovais.rashid   |
 | 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0010 | Sending output to global variable.                                                                          | provaltech.com/ovais.rashid   |
-| 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0008 | New command variable is: -Command "(Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections" | provaltech.com/ovais.rashid   |
-| 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0008 | Custom commands detected as (Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections | provaltech.com/ovais.rashid   |
+| 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0008 | New command variable is: -Command "(Get-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server').fDenyTSConnections" | provaltech.com/ovais.rashid   |
+| 4:11:51 pm 20-Sep-22     | Execute Powershell Command-0008 | Custom commands detected as (Get-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server').fDenyTSConnections | provaltech.com/ovais.rashid   |
 | 4:11:42 pm 20-Sep-22     | Execute Powershell Command-0002 | Powershell is present.                                                                                     | provaltech.com/ovais.rashid   |
 | 4:11:39 pm 20-Sep-22     | Disable RDP                    | 0                                                                                                         | provaltech.com/ovais.rashid   |
 | 4:11:39 pm 20-Sep-22     | Execute Powershell Command      | Success THEN                                                                                               | provaltech.com/ovais.rashid   |
 | 4:11:39 pm 20-Sep-22     | Execute Powershell Command-0012 | Results returned to global variable #global:psresult# and saved in Documents tab of server.               | provaltech.com/ovais.rashid   |
-| 4:11:39 pm 20-Sep-22     | Execute Powershell Command-0012 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\162522262609191\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/ovais.rashid   |
+| 4:11:39 pm 20-Sep-22     | Execute Powershell Command-0012 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/162522262609191/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/ovais.rashid   |
 | 4:11:38 pm 20-Sep-22     | Execute Powershell Command-0011 | Powershell command completed!                                                                               | provaltech.com/ovais.rashid   |
-| 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0011 | Executing powershell "" -Command "(Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections" >"c:\provaltech\psoutput.txt" | provaltech.com/ovais.rashid   |
+| 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0011 | Executing powershell "" -Command "(Get-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server').fDenyTSConnections" >"c:/provaltech/psoutput.txt" | provaltech.com/ovais.rashid   |
 | 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0010 | Sending output to global variable.                                                                          | provaltech.com/ovais.rashid   |
-| 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0008 | New command variable is: -Command "(Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections" | provaltech.com/ovais.rashid   |
-| 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0008 | Custom commands detected as (Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections | provaltech.com/ovais.rashid   |
+| 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0008 | New command variable is: -Command "(Get-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server').fDenyTSConnections" | provaltech.com/ovais.rashid   |
+| 4:11:31 pm 20-Sep-22     | Execute Powershell Command-0008 | Custom commands detected as (Get-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server').fDenyTSConnections | provaltech.com/ovais.rashid   |
 | 4:11:24 pm 20-Sep-22     | Execute Powershell Command-0002 | Powershell is present.                                                                                     | provaltech.com/ovais.rashid   |
 | 4:11:15 pm 20-Sep-22     | Run Now - Disable RDP          | Admin provaltech.com/ovais.rashid scheduled procedure Run Now - Disable RDP to run at Sep 20 2022 4:11PM | provaltech.com/ovais.rashid   |
 
@@ -55,5 +55,6 @@ Script Logs
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
 
 

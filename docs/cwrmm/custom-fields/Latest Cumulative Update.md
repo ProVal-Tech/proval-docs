@@ -26,13 +26,14 @@ This custom field is used to store and display the results of the [CW RMM - Task
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Latest-Cumulative-Update\image_1.png)
-![Screenshot 2](..\..\..\static\img\Latest-Cumulative-Update\image_2.png)
+![Screenshot 1](../../../static/img/Latest-Cumulative-Update/image_1.png)
+![Screenshot 2](../../../static/img/Latest-Cumulative-Update/image_2.png)
 
 Description: Will contain the results of the Cumulative Update Audit task. This task checks the cumulative update version of an endpoint and reports the details back to this field.
 
 ## Sample Value
 
-![Sample Value](..\..\..\static\img\Latest-Cumulative-Update\image_3.png)
+![Sample Value](../../../static/img/Latest-Cumulative-Update/image_3.png)
+
 
 

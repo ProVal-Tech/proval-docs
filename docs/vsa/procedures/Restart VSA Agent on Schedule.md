@@ -24,3 +24,4 @@ Allows VSA Agents to come back online after a service failure on their own, with
 Import both XMLs into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](https://proval.itglue.com/DOC-5078775-9791995) to point to the proper VSA service name. Use the getVariable `#serviceName#` for this. Schedule / deploy procedures.
 
 
+

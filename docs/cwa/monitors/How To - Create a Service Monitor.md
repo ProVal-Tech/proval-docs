@@ -11,10 +11,10 @@ unlisted: false
 ## How To - Individual Monitor (Non - Group Based)
 
 1. Navigate to the computer that you would like to create a monitor for --> Right-Click on the Monitor icon and select Services  
-   ![Image](..\..\..\static\img\How-To---Create-a-Service-Monitor\image_1.png)
+   ![Image](../../../static/img/How-To---Create-a-Service-Monitor/image_1.png)
    
 2. Right-Click on the service you would like to monitor and select 'Create Monitor'  
-   ![Image](..\..\..\static\img\How-To---Create-a-Service-Monitor\image_2.png) ![Image](..\..\..\static\img\How-To---Create-a-Service-Monitor\image_3.png)
+   ![Image](../../../static/img/How-To---Create-a-Service-Monitor/image_2.png) ![Image](../../../static/img/How-To---Create-a-Service-Monitor/image_3.png)
    
 3. Navigate to the Alerting Tab of that monitor we just created and select the alert template 'Custom - Autofix - Restart Service' (Import if it does not exist)
 
@@ -62,5 +62,6 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**  
 
 **Body**  
+
 
 

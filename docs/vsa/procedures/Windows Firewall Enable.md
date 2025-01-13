@@ -20,9 +20,9 @@ Provides the option to enable Windows Firewall for both Public and Private Netwo
 | 10:14:17 am 2-Nov-22  | Windows Firewall Enable -0004            | Public Firewall is ON                                                                                | provaltech.com/dan.hicks      |
 | 10:14:17 am 2-Nov-22  | Execute Powershell Command               | Success THEN                                                                                         | provaltech.com/dan.hicks      |
 | 10:14:17 am 2-Nov-22  | Execute Powershell Command-0012          | Results returned to global variable #global:psresult# and saved in Documents tab of server.        | provaltech.com/dan.hicks      |
-| 10:14:17 am 2-Nov-22  | Execute Powershell Command-0012          | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\735959849026022\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/dan.hicks      |
+| 10:14:17 am 2-Nov-22  | Execute Powershell Command-0012          | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/735959849026022/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/dan.hicks      |
 | 10:14:16 am 2-Nov-22  | Execute Powershell Command-0011          | Powershell command completed!                                                                        | provaltech.com/dan.hicks      |
-| 10:14:13 am 2-Nov-22  | Execute Powershell Command-0011          | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled" >"c:\provaltech\psoutput.txt" | provaltech.com/dan.hicks      |
+| 10:14:13 am 2-Nov-22  | Execute Powershell Command-0011          | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled" >"c:/provaltech/psoutput.txt" | provaltech.com/dan.hicks      |
 | 10:14:13 am 2-Nov-22  | Execute Powershell Command-0010          | Sending output to global variable.                                                                    | provaltech.com/dan.hicks      |
 | 10:14:12 am 2-Nov-22  | Execute Powershell Command-0008          | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled" | provaltech.com/dan.hicks      |
 | 10:14:12 am 2-Nov-22  | Execute Powershell Command-0008          | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled | provaltech.com/dan.hicks      |
@@ -37,19 +37,19 @@ Provides the option to enable Windows Firewall for both Public and Private Netwo
 | 10:14:03 am 2-Nov-22  | Windows Firewall Enable -0003            | Public Firewall is OFF, Enabling.                                                                    | provaltech.com/dan.hicks      |
 | 10:14:03 am 2-Nov-22  | Execute Powershell Command               | Success THEN                                                                                         | provaltech.com/dan.hicks      |
 | 10:14:03 am 2-Nov-22  | Execute Powershell Command-0012          | Results returned to global variable #global:psresult# and saved in Documents tab of server.        | provaltech.com/dan.hicks      |
-| 10:14:03 am 2-Nov-22  | Execute Powershell Command-0012          | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\735959849026022\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/dan.hicks      |
+| 10:14:03 am 2-Nov-22  | Execute Powershell Command-0012          | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/735959849026022/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/dan.hicks      |
 | 10:14:02 am 2-Nov-22  | Execute Powershell Command-0011          | Powershell command completed!                                                                        | provaltech.com/dan.hicks      |
-| 10:13:58 am 2-Nov-22  | Execute Powershell Command-0011          | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt" >"c:\provaltech\psoutput.txt" | provaltech.com/dan.hicks      |
+| 10:13:58 am 2-Nov-22  | Execute Powershell Command-0011          | Executing powershell "" -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt" >"c:/provaltech/psoutput.txt" | provaltech.com/dan.hicks      |
 | 10:13:58 am 2-Nov-22  | Execute Powershell Command-0010          | Sending output to global variable.                                                                    | provaltech.com/dan.hicks      |
-| 10:13:58 am 2-Nov-22  | Execute Powershell Command-0008          | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt" | provaltech.com/dan.hicks      |
-| 10:13:58 am 2-Nov-22  | Execute Powershell Command-0008          | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:\provaltech\pblfw.txt | provaltech.com/dan.hicks      |
+| 10:13:58 am 2-Nov-22  | Execute Powershell Command-0008          | New command variable is: -Command "Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt" | provaltech.com/dan.hicks      |
+| 10:13:58 am 2-Nov-22  | Execute Powershell Command-0008          | Custom commands detected as Get-NetFirewallProfile -Name Public | Select-Object -ExpandProperty Enabled >C:/provaltech/pblfw.txt | provaltech.com/dan.hicks      |
 | 10:13:56 am 2-Nov-22  | Execute Powershell Command-0002          | Powershell is present.                                                                                | provaltech.com/dan.hicks      |
 | 10:13:55 am 2-Nov-22  | Windows Firewall Enable -0001            | Private Firewall is ON                                                                                | provaltech.com/dan.hicks      |
 | 10:13:55 am 2-Nov-22  | Execute Powershell Command               | Success THEN                                                                                         | provaltech.com/dan.hicks      |
 | 10:13:55 am 2-Nov-22  | Execute Powershell Command-0012          | Results returned to global variable #global:psresult# and saved in Documents tab of server.        | provaltech.com/dan.hicks      |
-| 10:13:55 am 2-Nov-22  | Execute Powershell Command-0012          | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\735959849026022\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/dan.hicks      |
+| 10:13:55 am 2-Nov-22  | Execute Powershell Command-0012          | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/735959849026022/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/dan.hicks      |
 | 10:13:54 am 2-Nov-22  | Execute Powershell Command-0011          | Powershell command completed!                                                                        | provaltech.com/dan.hicks      |
-| 10:13:50 am 2-Nov-22  | Execute Powershell Command-0011          | Executing powershell "" -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled" >"c:\provaltech\psoutput.txt" | provaltech.com/dan.hicks      |
+| 10:13:50 am 2-Nov-22  | Execute Powershell Command-0011          | Executing powershell "" -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled" >"c:/provaltech/psoutput.txt" | provaltech.com/dan.hicks      |
 | 10:13:50 am 2-Nov-22  | Execute Powershell Command-0010          | Sending output to global variable.                                                                    | provaltech.com/dan.hicks      |
 | 10:13:50 am 2-Nov-22  | Execute Powershell Command-0008          | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled" | provaltech.com/dan.hicks      |
 | 10:13:50 am 2-Nov-22  | Execute Powershell Command-0008          | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled | provaltech.com/dan.hicks      |
@@ -63,6 +63,7 @@ If EnablePublicFirewall is set to 1, Windows Firewall will be enabled for Public
 ## Output
 
 AP Log
+
 
 
 

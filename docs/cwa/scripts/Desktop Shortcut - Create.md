@@ -14,12 +14,12 @@ Creates a desktop shortcut for all users.
 
 ## Sample Run
 
-![Image 1](..\..\..\static\img\Desktop-Shortcut---Create\image_1.png)  
-![Image 2](..\..\..\static\img\Desktop-Shortcut---Create\image_2.png)  
+![Image 1](../../../static/img/Desktop-Shortcut---Create/image_1.png)  
+![Image 2](../../../static/img/Desktop-Shortcut---Create/image_2.png)  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-![Image 3](..\..\..\static\img\Desktop-Shortcut---Create\image_3.png)  
-![Image 4](..\..\..\static\img\Desktop-Shortcut---Create\image_4.png)  
-![Image 5](..\..\..\static\img\Desktop-Shortcut---Create\image_5.png)  
+![Image 3](../../../static/img/Desktop-Shortcut---Create/image_3.png)  
+![Image 4](../../../static/img/Desktop-Shortcut---Create/image_4.png)  
+![Image 5](../../../static/img/Desktop-Shortcut---Create/image_5.png)  
 
 ## Dependencies
 
@@ -29,13 +29,14 @@ Creates a desktop shortcut for all users.
 
 | Name        | Example                                                                                   | Required | Description                                                       |
 |-------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| TargetUri   | [Https://www.google.com](Https://www.google.com) or C:\Somedirectory\somefile.someextension | True     | The shortcut target.                                             |
+| TargetUri   | [Https://www.google.com](Https://www.google.com) or C:/Somedirectory/somefile.someextension | True     | The shortcut target.                                             |
 | ShortcutName| SomethingIWantToCallThis                                                                  | False    | The name of the shortcut as seen on the desktop.                |
 | IconURL     | [https://www.google.com/favicon.ico](https://www.google.com/favicon.ico)                 | False    | Download URL to download the *.ico file to set as the shortcut's icon. |
 
 ## Process
 
 Please reference the agnostic documentation for process.
+
 
 
 

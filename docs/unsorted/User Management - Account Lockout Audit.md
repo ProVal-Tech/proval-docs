@@ -14,7 +14,7 @@ This script audits the locked account and stores it in the table.
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\User-Management---Account-Lockout-Audit\image_1.png)
+![Sample Run](../../static/img/User-Management---Account-Lockout-Audit/image_1.png)
 
 ## Dependencies
 
@@ -51,6 +51,7 @@ Ex:
 - Script log
 - plugin_proval_account_lock
 - Dataview
+
 
 
 

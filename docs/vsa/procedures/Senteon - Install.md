@@ -29,8 +29,8 @@ Downloads and runs the installer for Senteon Agent on the endpoint. Updates the 
 
 Export the agent procedure from the ProVal VSA, and import into the partner VSA.  
 Name: Senteon - Install  
-![Image](..\..\..\static\img\Senteon---Install\image_1.png)  
-![Image](..\..\..\static\img\Senteon---Install\image_2.png)  
+![Image](../../../static/img/Senteon---Install/image_1.png)  
+![Image](../../../static/img/Senteon---Install/image_2.png)  
 
 ProVal Plug & Play: No agent procedure configuration is required. Ensure dependencies exist prior to usage.  
 
@@ -39,9 +39,10 @@ ProVal Plug & Play: No agent procedure configuration is required. Ensure depende
 Agent Procedure Log Entry  
 
 Successful Install  
-![Image](..\..\..\static\img\Senteon---Install\image_3.png)  
+![Image](../../../static/img/Senteon---Install/image_3.png)  
 
 Existing Install  
-![Image](..\..\..\static\img\Senteon---Install\image_4.png)  
+![Image](../../../static/img/Senteon---Install/image_4.png)  
+
 
 

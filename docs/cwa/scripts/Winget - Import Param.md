@@ -24,11 +24,11 @@ Requirements: PowerShell 5+
 
 2. Run the [Winget - Export [Param]](https://proval.itglue.com/DOC-5078775-15494298) on the preferred computer to export the list of installed applications. Ensure to set the parameter `Email_Report` to `1`. This will send the list of installed applications to your email address, saved as `SoftwareList.Json`.
 
-   ![](..\..\..\static\img\Winget---Import-Param\image_1.png)
+   ![](../../../static/img/Winget---Import-Param/image_1.png)
 
-3. Place the `SoftwareList.json` file in LTShare (WebDav for the hosted partners) under the `Transfer\Tools\Winget` directory. Create the `Winget` directory if it's missing.
+3. Place the `SoftwareList.json` file in LTShare (WebDav for the hosted partners) under the `Transfer/Tools/Winget` directory. Create the `Winget` directory if it's missing.
 
-   ![](..\..\..\static\img\Winget---Import-Param\image_2.png)
+   ![](../../../static/img/Winget---Import-Param/image_2.png)
 
 4. To enable the creation of failure tickets from the script, create a system property named `TicketCreationCategory_Winget_Import` in Automate. Assign the ID of the ticket category you want to use for creating these tickets.
 
@@ -36,11 +36,11 @@ Requirements: PowerShell 5+
 
 After placing the software list as `softwarelist.json` in LTShare at the path explained in the `Implementation` section of the document:
 
-![](..\..\..\static\img\Winget---Import-Param\image_3.png)
+![](../../../static/img/Winget---Import-Param/image_3.png)
 
 Name of the file without the extension should be set to the user parameter after placing the software list with a different name in LTShare at the path explained in the `Implementation` section of the document:
 
-![](..\..\..\static\img\Winget---Import-Param\image_4.png)
+![](../../../static/img/Winget---Import-Param/image_4.png)
 
 ## Dependencies
 
@@ -72,6 +72,7 @@ Name of the file without the extension should be set to the user parameter after
 `<List of the failed applications>`
 
 **Example:**  
-![](..\..\..\static\img\Winget---Import-Param\image_5.png)
+![](../../../static/img/Winget---Import-Param/image_5.png)
+
 
 

@@ -30,12 +30,12 @@ The groups below are created to deploy the [Task - Clear/Audit - Browser Saved P
 
 Create Dynamic Groups:
 
-![Create Dynamic Groups](..\..\..\static\img\Browser-Saved-Password\image_1.png)
+![Create Dynamic Groups](../../../static/img/Browser-Saved-Password/image_1.png)
 
 ### 1. Browser Saved Password Audit Group
 
-![Browser Saved Password Audit Group](..\..\..\static\img\Browser-Saved-Password\image_2.png)
-![Browser Saved Password Audit Group](..\..\..\static\img\Browser-Saved-Password\image_3.png)
+![Browser Saved Password Audit Group](../../../static/img/Browser-Saved-Password/image_2.png)
+![Browser Saved Password Audit Group](../../../static/img/Browser-Saved-Password/image_3.png)
 
 Criteria:
 
@@ -49,8 +49,8 @@ Criteria:
 
 ### 2. Clear Browser Saved Password endpoints
 
-![Clear Browser Saved Password endpoints](..\..\..\static\img\Browser-Saved-Password\image_4.png)
-![Clear Browser Saved Password endpoints](..\..\..\static\img\Browser-Saved-Password\image_5.png)
+![Clear Browser Saved Password endpoints](../../../static/img/Browser-Saved-Password/image_4.png)
+![Clear Browser Saved Password endpoints](../../../static/img/Browser-Saved-Password/image_5.png)
 
 Criteria:
 
@@ -64,11 +64,12 @@ Criteria:
 
 ### 3. Browser Saved Password Failure
 
-![Browser Saved Password Failure](..\..\..\static\img\Browser-Saved-Password\image_6.png)
+![Browser Saved Password Failure](../../../static/img/Browser-Saved-Password/image_6.png)
 
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
+
 
 
 

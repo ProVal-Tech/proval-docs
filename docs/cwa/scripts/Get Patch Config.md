@@ -12,11 +12,11 @@ unlisted: false
 
 This Automate implementation of the [Get-PatchConfig](https://proval.itglue.com/DOC-5078775-16362101) agnostic script effectively retrieves and stores the essential data needed to validate the changes made by the [WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script into a custom table.
 
-**File Path:** `C:\ProgramData\_Automation\script\Get-PatchConfig\Get-PatchConfig.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Get-PatchConfig/Get-PatchConfig.ps1`  
 **File Hash (Sha256):** `0273E2B1D4A623A6AFD274B7E861D75225D8A5464FE51A5971ED331C7D7861E2`  
 **File Hash (MD5):** `589E54907484FC449A129BEB2C47D246`  
 
-**File Path:** `C:\ProgramData\_Automation\script\Get-PatchConfig\Get-PatchConfigAI.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Get-PatchConfig/Get-PatchConfigAI.ps1`  
 **File Hash (Sha256):** `2854B758DBF02E43657BF9EC6C12048A931F422F101BD1F16CA30E3B5852B5DD`  
 **File Hash (MD5):** `E37E8AB0FCF3DCCBBD17E43BF34FB8E8`  
 
@@ -27,16 +27,16 @@ Reference: [https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policie
 
 Execute the script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will add the newly introduced column `upgradeRestricted` to the [pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975) table which is necessary for the solution.  
 
-![Image](..\..\..\static\img\Get-Patch-Config\image_1.png)
+![Image](../../../static/img/Get-Patch-Config/image_1.png)
 
 ## Sample Run
 
 **First Execution:** Execute the script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will create the [pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975) table which is necessary for the solution.  
 
-![Image](..\..\..\static\img\Get-Patch-Config\image_1.png)
+![Image](../../../static/img/Get-Patch-Config/image_1.png)
 
 **Regular Execution:**  
-![Image](..\..\..\static\img\Get-Patch-Config\image_2.png)
+![Image](../../../static/img/Get-Patch-Config/image_2.png)
 
 ## Dependencies
 
@@ -48,7 +48,7 @@ Execute the script against any online Windows computer with the `Set_Environment
 |-------------------|-----------------------------------|
 | TableName         | pvl_patch_config                  |
 | ProjectName       | Get-PatchConfig                   |
-| WorkingDirectory   | C:\ProgramData\_Automation\Script\Get-PatchConfig |
+| WorkingDirectory   | C:/ProgramData/_Automation/Script/Get-PatchConfig |
 
 ## User Parameters
 
@@ -62,5 +62,6 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Local file on computer
 - Custom Table
 - Dataview
+
 
 

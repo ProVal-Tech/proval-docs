@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Reboot---Schedule-on-Specific-Days\image_1.png)
+![Sample Run](../../../static/img/Reboot---Schedule-on-Specific-Days/image_1.png)
 
 ## Dependencies
 
@@ -47,6 +47,7 @@ This script schedules a reboot for the next applicable day at the specified time
 
 - Script log messages
 - Ticket (For Hyper-V hosts only)
+
 
 
 

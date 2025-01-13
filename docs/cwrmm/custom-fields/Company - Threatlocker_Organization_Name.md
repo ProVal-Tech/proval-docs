@@ -24,6 +24,7 @@ Organization Name to be used for Threatlocker deployment. If deploying to an exi
 
 ## ScreenShot
 
-![ScreenShot](..\..\..\static\img\Company---Threatlocker_Organization_Name\image_1.png)
+![ScreenShot](../../../static/img/Company---Threatlocker_Organization_Name/image_1.png)
+
 
 

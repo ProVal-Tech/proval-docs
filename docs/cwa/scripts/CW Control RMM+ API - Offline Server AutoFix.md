@@ -44,14 +44,15 @@ This script is dependent on the following items:
 
 The script is designed to consistently update the ticket with new information as it does its troubleshooting. Below are a few examples of ticket data getting added as troubleshooting is occurring.
 
-![Image 1](..\..\..\static\img\CW-Control-RMM+-API---Offline-Server-AutoFix\image_1.png)
+![Image 1](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_1.png)
 
-![Image 2](..\..\..\static\img\CW-Control-RMM+-API---Offline-Server-AutoFix\image_2.png)
+![Image 2](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_2.png)
 
-![Image 3](..\..\..\static\img\CW-Control-RMM+-API---Offline-Server-AutoFix\image_3.png)
+![Image 3](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_3.png)
 
-![Image 4](..\..\..\static\img\CW-Control-RMM+-API---Offline-Server-AutoFix\image_4.png)
+![Image 4](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_4.png)
 
-![Image 5](..\..\..\static\img\CW-Control-RMM+-API---Offline-Server-AutoFix\image_5.png)
+![Image 5](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_5.png)
+
 
 

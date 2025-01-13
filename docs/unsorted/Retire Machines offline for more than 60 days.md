@@ -25,7 +25,7 @@ Monitor set details:
 
 Please use the below configuration or modify it as per client requirement:
 
-![Monitor Set Configuration](..\..\static\img\Retire-Machines-offline-for-more-than-60-days\image_1.png)
+![Monitor Set Configuration](../../static/img/Retire-Machines-offline-for-more-than-60-days/image_1.png)
 
 Verify by clicking on the build and view query to see these machines.
 </div>
@@ -40,11 +40,11 @@ The Autofix script to remove the machines should have 2 parts:
 
 The 1st script can be as follows:
 
-![Autofix Script 1](..\..\static\img\Retire-Machines-offline-for-more-than-60-days\image_2.png)
+![Autofix Script 1](../../static/img/Retire-Machines-offline-for-more-than-60-days/image_2.png)
 
 The 2nd can be as follows:
 
-![Autofix Script 2](..\..\static\img\Retire-Machines-offline-for-more-than-60-days\image_3.png)
+![Autofix Script 2](../../static/img/Retire-Machines-offline-for-more-than-60-days/image_3.png)
 
 SQL:
 
@@ -66,6 +66,7 @@ Script 2: "Move Agent to Retired Assets [Autofix]*"
 
 Folder - ".Monitor Autofixes"
 </div>
+
 
 
 

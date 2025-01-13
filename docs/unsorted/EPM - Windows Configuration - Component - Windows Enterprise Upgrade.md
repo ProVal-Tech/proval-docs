@@ -23,15 +23,15 @@ Refer the partner to [How to create a KMS Host](https://learn.microsoft.com/en-u
 Export the component from ProVal's Datto RMM instance  
 **Name:** Windows Enterprise Upgrade  
 
-![Component Export](..\..\static\img\EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade\image_1.png)  
+![Component Export](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_1.png)  
 
 The export will download the necessary component (cpt) file.  
 
-![Import Component](..\..\static\img\EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade\image_2.png)  
+![Import Component](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_2.png)  
 
 Import this component file into the partner's Datto RMM instance  
 
-![Component Import](..\..\static\img\EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade\image_3.png)  
+![Component Import](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_3.png)  
 
 Proval Plug & Play: This component requires no configuration once imported.
 
@@ -39,15 +39,16 @@ Proval Plug & Play: This component requires no configuration once imported.
 
 A job status of Success is expected.  
 
-![Job Status](..\..\static\img\EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade\image_4.png)  
+![Job Status](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_4.png)  
 
 **StdOut**  
-![StdOut](..\..\static\img\EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade\image_5.png)  
+![StdOut](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_5.png)  
 
-![StdOut](..\..\static\img\EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade\image_6.png)  
+![StdOut](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_6.png)  
 
 **StdErr**  
 StdErr is not expected.
+
 
 
 

@@ -36,3 +36,4 @@ This table is used in the [SSL Certificate Audit Solution](https://proval.itglue
 | DateUpdated   | DATETIME                                  | When did the script actually add the information into the DB       |
 
 
+

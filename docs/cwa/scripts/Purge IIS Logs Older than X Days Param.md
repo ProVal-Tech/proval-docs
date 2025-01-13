@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script will remove IIS log files older than (Global Variable, *Days*) days only if the size of the "c:\inetpub\logs\logfiles\w3svc" folder is greater than (Global Variable *Size*) MB.  
+This script will remove IIS log files older than (Global Variable, *Days*) days only if the size of the "c:/inetpub/logs/logfiles/w3svc" folder is greater than (Global Variable *Size*) MB.  
 The recommended schedule for this script is:  
 **Target:** "Labtech Server" Group  
 **Occurrence:** run once per week  
@@ -21,10 +21,10 @@ Also, the script can be used for on-prem partners only.
 
 ## Sample Run
 
-![Sample Run Image](..\..\..\static\img\Purge-IIS-Logs-Older-than-X-Days-Param\image_1.png)  
+![Sample Run Image](../../../static/img/Purge-IIS-Logs-Older-than-X-Days-Param/image_1.png)  
 
 Preferred is to schedule the script against the "Labtech Server" to run once per week:  
-![Schedule Image](..\..\..\static\img\Purge-IIS-Logs-Older-than-X-Days-Param\image_2.png)  
+![Schedule Image](../../../static/img/Purge-IIS-Logs-Older-than-X-Days-Param/image_2.png)  
 
 ## Variables
 
@@ -38,7 +38,7 @@ Preferred is to schedule the script against the "Labtech Server" to run once per
 |-------|---------|----------|-------------------------------------------------------------------------------------------------|
 | days  | 30      | True     | Days to Keep the logs. Default is 30                                                           |
 | Size  | 1024    | True     | Threshold in MB to initiate the Purging. Script will only remove the IIS Logs older, if the size of the logs directory goes above this size. Default is 1024 |
-| path  | c:\inetpub\logs\logfiles\w3svc*\*.log | True     | Path to the IIS logs                                                                             |
+| path  | c:/inetpub/logs/logfiles/w3svc*/*.log | True     | Path to the IIS logs                                                                             |
 
 ## Process
 
@@ -48,6 +48,7 @@ Step 2: Generates the logs as per the PS script's outcome and exits.
 ## Output
 
 - Script Log
+
 
 
 

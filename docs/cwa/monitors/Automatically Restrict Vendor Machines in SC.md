@@ -17,13 +17,13 @@ The purpose of this monitor is to ensure that when the EDFs "Restrict Vendor Acc
 Below EDFs must be created before importing the monitor:
 
 - Select Client EDF "Restrict Vendor Access" to select Whole client for Vendor Restriction  
-  ![Image](..\..\..\static\img\Automatically-Restrict-Vendor-Machines-in-SC\image_1.png)
+  ![Image](../../../static/img/Automatically-Restrict-Vendor-Machines-in-SC/image_1.png)
 
 - Select Location EDF "Restrict Vendor Access" to select the Whole location for Vendor Restriction  
-  ![Image](..\..\..\static\img\Automatically-Restrict-Vendor-Machines-in-SC\image_2.png)
+  ![Image](../../../static/img/Automatically-Restrict-Vendor-Machines-in-SC/image_2.png)
 
 - Select Computer EDF "Restrict Vendor Access" to select a machine for Vendor Restriction  
-  ![Image](..\..\..\static\img\Automatically-Restrict-Vendor-Machines-in-SC\image_3.png)
+  ![Image](../../../static/img/Automatically-Restrict-Vendor-Machines-in-SC/image_3.png)
 
 ## Target
 
@@ -32,5 +32,6 @@ All Operating Systems
 ## Alert Template
 
 - `△ Custom - Execute Script - Update Vendor Restricted Property`
+
 
 

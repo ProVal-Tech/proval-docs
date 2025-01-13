@@ -14,7 +14,7 @@ This Dataview summarises all scripts run over the set script log retention days.
 
 The Script log retention days can be seen at the automate location below:
 
-![Script Log Retention Days](..\..\..\static\img\Script-Effectiveness-Performance-Audit\image_1.png)
+![Script Log Retention Days](../../../static/img/Script-Effectiveness-Performance-Audit/image_1.png)
 
 ## Columns
 
@@ -46,6 +46,7 @@ The Script log retention days can be seen at the automate location below:
 
 ## Example Screenshot
 
-![Example Screenshot](..\..\..\static\img\Script-Effectiveness-Performance-Audit\image_2.png)
+![Example Screenshot](../../../static/img/Script-Effectiveness-Performance-Audit/image_2.png)
+
 
 

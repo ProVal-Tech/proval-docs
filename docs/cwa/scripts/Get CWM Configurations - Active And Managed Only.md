@@ -14,7 +14,7 @@ The script fetches the basic information of ConnectWise Manage configurations an
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Get-CWM-Configurations---Active-And-Managed-Only\image_1.png)
+![Sample Run](../../../static/img/Get-CWM-Configurations---Active-And-Managed-Only/image_1.png)
 
 ## Sub-Script
 
@@ -25,7 +25,7 @@ The script fetches the basic information of ConnectWise Manage configurations an
 | Name                | Description                                                                                      |
 |---------------------|--------------------------------------------------------------------------------------------------|
 | ProjectName         | Get-CWMConfiguration                                                                             |
-| WorkingDirectory     | C:\ProgramData\_automation\Script\Get-CWMConfiguration                                          |
+| WorkingDirectory     | C:/ProgramData/_automation/Script/Get-CWMConfiguration                                          |
 | JsonFileName        | Get-CWMConfiguration.Json                                                                        |
 | TableName           | [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881)                      |
 | SQLDeleteStatement   | Stores SQL query to remove the stale data from [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881) table |
@@ -36,7 +36,7 @@ The script fetches the basic information of ConnectWise Manage configurations an
 | Name          | Example                                         | Required | Description                                                                                      |
 |---------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------------|
 | serverurl     | [stage.cwmanage.com](http://stage.cwmanage.com) | True     | ConnectWise Manage Instance URL without http or https.                                          |
-| CompanyID     | CWManage                                       | True     | CompanyID used to access CW Manage instance. ![CompanyID](..\..\..\static\img\Get-CWM-Configurations---Active-And-Managed-Only\image_2.png) |
+| CompanyID     | CWManage                                       | True     | CompanyID used to access CW Manage instance. ![CompanyID](../../../static/img/Get-CWM-Configurations---Active-And-Managed-Only/image_2.png) |
 | PublicKey     | abC1dEFg23HIjk45L                             | True     | Public API Key                                                                                   |
 | PrivateKey    | L54kjIH32gFEd1ae87                            | True     | Private API Key                                                                                  |
 | CWMClientid   | 97e76471-52b5-43c9-a5ec-0153ec905881         | True     | ClientID provided by ConnectWise for API development                                             |
@@ -50,5 +50,6 @@ How to get clientID: [https://connectwise20.my.site.com/serviceandsupport/s/arti
 - Script Log
 - Custom Table
 - Dataview
+
 
 

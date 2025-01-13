@@ -14,7 +14,7 @@ Installs Extension on Mozilla Firefox Browser.
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_1.png) ![Sample Run 2](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_2.png) ![Sample Run 3](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_3.png)
+![Sample Run 1](../../../static/img/Mozilla-Firefox---Extension---Install/image_1.png) ![Sample Run 2](../../../static/img/Mozilla-Firefox---Extension---Install/image_2.png) ![Sample Run 3](../../../static/img/Mozilla-Firefox---Extension---Install/image_3.png)
 
 ## Dependencies
 
@@ -30,60 +30,60 @@ Installs Extension on Mozilla Firefox Browser.
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Step 1](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_4.png)  
-![Task Creation Step 2](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_5.png)  
+![Task Creation Step 1](../../../static/img/Mozilla-Firefox---Extension---Install/image_4.png)  
+![Task Creation Step 2](../../../static/img/Mozilla-Firefox---Extension---Install/image_5.png)  
 
 **Name:** Mozilla Firefox - Extension - Install  
 **Description:** Installs Extension on Mozilla Firefox Browser.  
 **Category:** Application  
-![Task Creation Image](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_6.png)  
+![Task Creation Image](../../../static/img/Mozilla-Firefox---Extension---Install/image_6.png)  
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_7.png)  
+![Add Parameter](../../../static/img/Mozilla-Firefox---Extension---Install/image_7.png)  
 
 This screen will appear.  
-![Parameter Screen](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_8.png)  
+![Parameter Screen](../../../static/img/Mozilla-Firefox---Extension---Install/image_8.png)  
 
 - Set `ExtensionName` in the `Parameter Name` field.
 - Enable the `Required Field` option.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_9.png)  
+![Save Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_9.png)  
 - It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Button](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_10.png)  
+![Confirm Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_10.png)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_7.png)  
+![Add Parameter](../../../static/img/Mozilla-Firefox---Extension---Install/image_7.png)  
 
 This screen will appear.  
-![Parameter Screen](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_8.png)  
+![Parameter Screen](../../../static/img/Mozilla-Firefox---Extension---Install/image_8.png)  
 
 - Set `Mandate` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_11.png)  
+![Save Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_11.png)  
 - It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Button](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_10.png)  
+![Confirm Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_10.png)  
 
-![Parameter Image](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_12.png)  
+![Parameter Image](../../../static/img/Mozilla-Firefox---Extension---Install/image_12.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_13.png)  
+![Add Row](../../../static/img/Mozilla-Firefox---Extension---Install/image_13.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_14.png)  
+![Blank Function](../../../static/img/Mozilla-Firefox---Extension---Install/image_14.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Function](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_15.png) ![PowerShell Function Selection](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_16.png)  
+![PowerShell Function](../../../static/img/Mozilla-Firefox---Extension---Install/image_15.png) ![PowerShell Function Selection](../../../static/img/Mozilla-Firefox---Extension---Install/image_16.png)  
 
 The following function will pop up on the screen:  
-![Function Pop Up](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_17.png)  
+![Function Pop Up](../../../static/img/Mozilla-Firefox---Extension---Install/image_17.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.  
 
@@ -91,12 +91,12 @@ Paste in the following PowerShell script and set the expected time of script exe
 $ExtensionName = "@ExtensionName@"
 $Mandate = '@Mandate@'
 $ProjectName = 'Register-FirefoxExtension'
-$WorkingDirectory = "C:\ProgramData\_Automation\Script\$ProjectName"
-$ScriptPath = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_Automation/Script/$ProjectName"
+$ScriptPath = "$WorkingDirectory/$ProjectName.ps1"
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/Script/$ProjectName.ps1"
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 Remove-Item $WorkingDirectory -Force -Recurse -ErrorAction SilentlyContinue | Out-Null
@@ -121,18 +121,19 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![Save Script](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_18.png)  
+![Save Script](../../../static/img/Mozilla-Firefox---Extension---Install/image_18.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Button](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_19.png)  
+![Save Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_19.png)  
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Mozilla-Firefox---Extension---Install\image_20.png)  
+![Completed Task](../../../static/img/Mozilla-Firefox---Extension---Install/image_20.png)  
 
 ## Output
 
 - Script Log
+
 
 
 

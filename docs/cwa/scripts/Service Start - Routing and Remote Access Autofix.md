@@ -18,11 +18,12 @@ This should be called by the monitor [CWM - Automate -Remote Monitor - ProVal - 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Service-Start---Routing-and-Remote-Access-Autofix\image_1.png)
+![Sample Run](../../../static/img/Service-Start---Routing-and-Remote-Access-Autofix/image_1.png)
 
 ## Output
 
 Startup Type = Automatic  
 Status = Running
+
 
 

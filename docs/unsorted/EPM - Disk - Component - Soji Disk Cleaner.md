@@ -25,7 +25,8 @@ Import the attached component into Datto RMM
 
 stdOut  
 stdError  
-ProgramData\_automation\app\soji\sojilogs\
+ProgramData/_automation/app/soji/sojilogs/
+
 
 
 

@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator    | Interval | Result |
 |--------------|----------------|-------------|---------------|----------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based     | 3600     | ![Image](..\..\..\static\img\Uninstall-Anydesk\image_1.png) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based     | 3600     | ![Image](../../../static/img/Uninstall-Anydesk/image_1.png) |
 
 ## Target
 
@@ -30,13 +30,14 @@ Windows OS
 
 ## Ticketing
 
-**Subject**: - `Anydesk Removal Failed on %CLIENTNAME%\%COMPUTERNAME%`  
+**Subject**: - `Anydesk Removal Failed on %CLIENTNAME%/%COMPUTERNAME%`  
 
-**Ticket Body**: - `Failed to remove Anydesk on %CLIENTNAME%\%COMPUTERNAME%`
+**Ticket Body**: - `Failed to remove Anydesk on %CLIENTNAME%/%COMPUTERNAME%`
 
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall Anydesk](https://proval.itglue.com/DOC-5078775-14007940)
+
 
 
 

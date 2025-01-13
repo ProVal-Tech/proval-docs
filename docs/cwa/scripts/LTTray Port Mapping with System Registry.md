@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\LTTray-Port-Mapping-with-System-Registry\image_1.png)
+![Sample Run](../../../static/img/LTTray-Port-Mapping-with-System-Registry/image_1.png)
 
 ## Dependencies
 
@@ -47,5 +47,6 @@ Time Saved by Automation: 10 Minutes
 
 - Script log
 - Scriptstate
+
 
 

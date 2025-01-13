@@ -14,8 +14,8 @@ This custom field is used to display the results of the [CW RMM - Task - BitLock
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\BitLocker-Key-Backup-Status\image_1.png)  
-![Image 2](..\..\..\static\img\BitLocker-Key-Backup-Status\image_2.png)  
+![Image 1](../../../static/img/BitLocker-Key-Backup-Status/image_1.png)  
+![Image 2](../../../static/img/BitLocker-Key-Backup-Status/image_2.png)  
 
 **Name:** BitLocker Key Backup Status  
 **Type:** Text Box  
@@ -23,5 +23,6 @@ This custom field is used to display the results of the [CW RMM - Task - BitLock
 **Level:** Endpoint  
 **Description:** Will display the most recent result after pushing the BitLocker recovery keys into AD/AzureAD.  
 **Editable:** Yes  
+
 
 

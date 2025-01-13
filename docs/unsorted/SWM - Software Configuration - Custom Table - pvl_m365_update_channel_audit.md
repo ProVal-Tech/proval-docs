@@ -31,3 +31,4 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](htt
 
 
 
+

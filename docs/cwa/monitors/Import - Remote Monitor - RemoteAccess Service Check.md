@@ -23,12 +23,12 @@ unlisted: false
    'ProVal - Development - RemoteAccess Service Check' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   '%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+   '%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
    '0' as `ContactID`,
    '300' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = \'SilentlyContinue\';$result = Get-Service -Name \'RemoteAccess\' | Select-Object -ExpandProperty Status; if($result -eq \'Running\'){return \'Service Running\' } else {Set-Service -Name \'RemoteAccess\' -StartupType Automatic; $result = Get-Service -Name \'RemoteAccess\' | Select-Object -ExpandProperty Starttype; if($result -eq \'Automatic\'){Start-Service -Name \'RemoteAccess\'; $result = Get-Service -Name \'RemoteAccess\' | Select-Object -ExpandProperty Status;if($result -eq \'Running\'){return \'Service Running\'} else{return \'Service not Starting\'}} else {return \'Service Not Starting\'} }"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = /'SilentlyContinue/';$result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status; if($result -eq /'Running/'){return /'Service Running/' } else {Set-Service -Name /'RemoteAccess/' -StartupType Automatic; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Starttype; if($result -eq /'Automatic/'){Start-Service -Name /'RemoteAccess/'; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status;if($result -eq /'Running/'){return /'Service Running/'} else{return /'Service not Starting/'}} else {return /'Service Not Starting/'} }"' as `DataOut`,
    '1' as `Comparor`,
    'Service Running' as `DataIn`,
    '' as `IDField`,
@@ -93,12 +93,12 @@ unlisted: false
    'ProVal - Development - RemoteAccess Service Check' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   '%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+   '%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
    '0' as `ContactID`,
    '300' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = \'SilentlyContinue\';$result = Get-Service -Name \'RemoteAccess\' | Select-Object -ExpandProperty Status; if($result -eq \'Running\'){return \'Service Running\' } else {Set-Service -Name \'RemoteAccess\' -StartupType Automatic; $result = Get-Service -Name \'RemoteAccess\' | Select-Object -ExpandProperty Starttype; if($result -eq \'Automatic\'){Start-Service -Name \'RemoteAccess\'; $result = Get-Service -Name \'RemoteAccess\' | Select-Object -ExpandProperty Status;if($result -eq \'Running\'){return \'Service Running\'} else{return \'Service not Starting\'}} else {return \'Service Not Starting\'} }"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = /'SilentlyContinue/';$result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status; if($result -eq /'Running/'){return /'Service Running/' } else {Set-Service -Name /'RemoteAccess/' -StartupType Automatic; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Starttype; if($result -eq /'Automatic/'){Start-Service -Name /'RemoteAccess/'; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status;if($result -eq /'Running/'){return /'Service Running/'} else{return /'Service not Starting/'}} else {return /'Service Not Starting/'} }"' as `DataOut`,
    '1' as `Comparor`,
    'Service Running' as `DataIn`,
    '' as `IDField`,
@@ -156,5 +156,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

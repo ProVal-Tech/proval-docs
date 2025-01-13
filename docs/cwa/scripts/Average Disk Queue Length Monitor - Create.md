@@ -19,16 +19,16 @@ The script creates remote monitors that trigger an alert when the Average of **X
 ## Update Notice: 18-Sept-2024
 
 A new Computer-Level EDF `ADQL - Physical Disk Count` has been introduced. Update the script from the Prosync plugin and execute or debug it against any client with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  
-![Image 1](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_1.png)  
-![Image 2](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_2.png)
+![Image 1](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_1.png)  
+![Image 2](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_2.png)
 
 ## Before you proceed
 
-The remote monitor created by this script utilizes [Get-AvgDiskQueueLength](https://proval.itglue.com/DOC-5078775-16245028) agnostic script, which is using the `\\PhysicalDisk(_total)\\Avg. Disk Queue Length` performance counter for data collection.
+The remote monitor created by this script utilizes [Get-AvgDiskQueueLength](https://proval.itglue.com/DOC-5078775-16245028) agnostic script, which is using the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
 
 ### Overview
 
-`\\Local Disk\\Average Disk Queue Length` is the average number of both read (Avg. Disk *Read* Queue Length) and write (Avg. Disk *Write* Queue Length) requests that were queued for the selected disk during the performance data interval. Unlike Current Disk Queue Length, Avg. Disk Queue Length is a derived value and not a direct measurement.
+`//Local Disk//Average Disk Queue Length` is the average number of both read (Avg. Disk *Read* Queue Length) and write (Avg. Disk *Write* Queue Length) requests that were queued for the selected disk during the performance data interval. Unlike Current Disk Queue Length, Avg. Disk Queue Length is a derived value and not a direct measurement.
 
 If the Avg. Disk Queue Length is greater than 2 per hard disk for a prolonged period of time, it may produce a bottlenecked system. If you have a RAID system with 8 disks, the Avg. Disk Queue Length should not exceed 16.
 
@@ -44,22 +44,22 @@ However, this may be time-consuming and not the root issue. If your disk perform
 
 2. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  
-   ![Image 1](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_1.png)  
-   ![Image 2](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_2.png)
+   ![Image 1](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_1.png)  
+   ![Image 2](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_2.png)
 
 3. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.  
-   ![Image](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_3.png)
+   ![Image](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_3.png)
 
 4. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard --> Config --> Configurations --> Properties**.
    - Find the properties beginning with `ADQL_Monitoring`.  
-   ![Image](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_4.png)  
+   ![Image](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_4.png)  
    - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 5. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.  
-   ![Image](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_5.png)
+   ![Image](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_5.png)
 
 ## Dependencies
 
@@ -122,23 +122,24 @@ However, this may be time-consuming and not the root issue. If your disk perform
 
 **Alert Message on Failure:** `This is an automated update to inform you that the high "Average Disk Queue Length" issue reported earlier has now been resolved.`  
 
-**Alert Message on Success:** `The "Average Disk Queue Length" is high on %COMPUTERNAME% located at %CLIENTNAME%\\%LOCATIONNAME%.  
+**Alert Message on Success:** `The "Average Disk Queue Length" is high on %COMPUTERNAME% located at %CLIENTNAME%//%LOCATIONNAME%.  
 If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolonged period of time, it may produce a bottlenecked system. If you have a RAID system with 8 disks, the Avg. Disk Queue Length should not exceed 16. Please investigate the issue and take appropriate actions to address the root cause.  
 %RESULT%`  
 
 **Sample Ticket:** The ticket illustrated here was created by setting the samples to '2' and the Allowed value for average disk queue length per disk to '0'. However, it's important to note that this example is purely for demonstration purposes.  
-![Sample Ticket 1](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_6.png)  
-![Sample Ticket 2](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_7.png)  
+![Sample Ticket 1](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_6.png)  
+![Sample Ticket 2](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_7.png)  
 
 **Sample Remote Monitor:**  
-![Remote Monitor 1](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_8.png)  
-![Remote Monitor 2](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_9.png)  
-![Remote Monitor 3](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_10.png)  
-![Remote Monitor 4](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_11.png)  
-![Remote Monitor 5](..\..\..\static\img\Average-Disk-Queue-Length-Monitor---Create\image_12.png)  
+![Remote Monitor 1](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_8.png)  
+![Remote Monitor 2](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_9.png)  
+![Remote Monitor 3](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_10.png)  
+![Remote Monitor 4](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_11.png)  
+![Remote Monitor 5](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_12.png)  
 
 ## Output
 
 - Remote Monitors
+
 
 

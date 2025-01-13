@@ -18,7 +18,7 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows---Admin-Account-Password-Rotation-Notification\image_1.png)
+![Sample Run](../../../static/img/Windows---Admin-Account-Password-Rotation-Notification/image_1.png)
 
 ## Dependencies
 
@@ -50,5 +50,6 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
   ------------------------------------------------------------------------------------------------------------------------  
 
   Here, @sqlName@, @sqlUserName@, @sqlclientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@, contains the detail of the Client Name, User Name for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password was changed information stored respectively.
+
 
 

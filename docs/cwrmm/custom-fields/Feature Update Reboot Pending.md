@@ -14,9 +14,9 @@ The `Feature Update Install With Tracking` script flags this custom field if the
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\Feature-Update-Reboot-Pending\image_1.png)
+![Image 1](../../../static/img/Feature-Update-Reboot-Pending/image_1.png)
 
-![Image 2](..\..\..\static\img\Feature-Update-Reboot-Pending\image_2.png)
+![Image 2](../../../static/img/Feature-Update-Reboot-Pending/image_2.png)
 
 ---
 
@@ -26,6 +26,7 @@ The `Feature Update Install With Tracking` script flags this custom field if the
 **Default Value:** No  
 **Description:** Will be checked only if the machine has not rebooted since running the Feature Update Install task where the Reboot parameter was not set to reboot.  
 **Editable:** Yes  
+
 
 
 

@@ -14,8 +14,8 @@ This task will disable the Windows optional automatic updates.
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_1.png)  
-![Sample Run 2](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_2.png)  
+![Sample Run 1](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_1.png)  
+![Sample Run 2](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_2.png)  
 
 ## Dependencies
 
@@ -26,36 +26,36 @@ This task will disable the Windows optional automatic updates.
 ### Create Task
 
 To implement this script, please create a new "PowerShell" style script in the system.  
-![Create Task](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_3.png)  
+![Create Task](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_3.png)  
 
 **Name:** Disable Windows Optional/Automatic Updates  
 **Description:** This task will disable the Windows optional automatic updates.  
 **Category:** Patching  
-![Task Details](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_4.png)  
+![Task Details](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_4.png)  
 
 ## Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_5.png)  
+![Add Row](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_5.png)  
 
 ### Row 1: Function: Script Log
 
-![Script Log](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_6.png)  
+![Script Log](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_6.png)  
 
 In the script log message, type `Running the PowerShell to set NoAutoUpdates and Hide Automatic Updates Options.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Log Message](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_7.png)  
+![Log Message](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_7.png)  
 
 ### Row 2: Function: PowerShell Script
 
-![PowerShell Script](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_8.png)  
-![PowerShell Script 2](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_9.png)  
+![PowerShell Script](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_8.png)  
+![PowerShell Script 2](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_9.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
 ```powershell
 # Define the registry paths
-$mainRegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU"
-$auOptionsRegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions"
+$mainRegPath = "HKLM:/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU"
+$auOptionsRegPath = "HKLM:/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU/AUOptions"
 
 # Check if the main registry key exists
 if (-not(Test-Path -Path $mainRegPath)) {
@@ -90,28 +90,28 @@ if ((Get-ItemProperty -Path $mainRegPath).NoAutoUpdate -eq 1) {
 
 ### Output
 
-![Output](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_6.png)  
+![Output](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_6.png)  
 
 In the script log message, type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Output Message](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_10.png)  
+![Output Message](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_10.png)  
 
 ### Row 4: Logic: If/Then
 
-![If/Then Logic 1](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_11.png)  
-![If/Then Logic 2](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_12.png)  
+![If/Then Logic 1](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_11.png)  
+![If/Then Logic 2](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_12.png)  
 
 ### Row 4a: Condition: Output Contains
 
 In the IF part, enter `Failed to set registry` in the right box of the "Output Contains" part.  
-![Output Contains](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_13.png)  
+![Output Contains](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_13.png)  
 
 ### Row 4b: Condition: Script Exit
 
 Add a new row by clicking on the Add row button.  
-![Add Row Exit](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_14.png)  
+![Add Row Exit](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_14.png)  
 
-In the script exit message, simply type `Failed to set the registry HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU -Name NoAutoUpdate -Value 1. Exiting script with error.`  
-![Exit Message](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_15.png)  
+In the script exit message, simply type `Failed to set the registry HKLM:/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU -Name NoAutoUpdate -Value 1. Exiting script with error.`  
+![Exit Message](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_15.png)  
 
 ### Row 5: Function: Set Custom Field
 
@@ -121,10 +121,11 @@ In this window, search for the `Windows Optional Update Disabled` field.
 
 **Custom Field:** Windows Optional Update Disabled  
 **Value:** `Disabled`  
-![Set Custom Field](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_16.png)  
+![Set Custom Field](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_16.png)  
 
 ### Row 6: Complete
 
-![Complete](..\..\..\static\img\Disable-Windows-OptionalAutomatic-Updates\image_17.png)  
+![Complete](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_17.png)  
+
 
 

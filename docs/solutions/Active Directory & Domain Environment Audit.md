@@ -76,8 +76,8 @@ This article encompasses multiple components and contents. Please import and imp
 
 1. The solutions presented in this section rely on the functionality provided by the **`Active Directory`** plugin. Therefore, it is imperative to verify that both the **`Active Directory`** and **`Active Directory Remote`** plugins are correctly installed and operational within the environment.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_1.png)
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_2.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_1.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_2.png)
 
 2. ### Active Directory Reporting Solution
 
@@ -97,7 +97,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Ensure that the RMM+ Plugin is correctly configured and operational within the environment, as this solution relies on the proper configuration of the [CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217).
    - Assign the **`△ Custom - Autofix - AD Plugin Sync Out of Date`** alert template to the [CWM - Automate - Internal Monitor - Active Directory - Sync Out of Date](https://proval.itglue.com/DOC-5078775-10093123) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_3.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_3.png)
 
 4. ### Active Directory - New User Account
 
@@ -107,7 +107,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - New User Account Created](https://proval.itglue.com/DOC-5078775-7936290) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_4.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_4.png)
 
 5. ### Active Directory - Password Expires This Week
 
@@ -118,7 +118,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Go through the [script's](https://proval.itglue.com/DOC-6075716-11713518) document and perform the customization if necessary.
    - Assign the **`△ Custom - Password Expiration Notification`** alert template to the [RSM - Active Directory - Monitor - Password Expires This Week [G]](https://proval.itglue.com/DOC-5078775-8041377) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_5.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_5.png)
 
 6. ### Active Directory - Enabled Test Accounts
 
@@ -128,7 +128,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - Enabled Test Accounts](https://proval.itglue.com/DOC-5078775-7936283) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_6.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_6.png)
 
 7. ### Active Directory - Account Disabled
 
@@ -138,7 +138,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Account Disabled](https://proval.itglue.com/DOC-5078775-7980035) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_7.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_7.png)
 
 8. ### Active Directory - User Last Logon > X Days
 
@@ -148,7 +148,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - User Last Logon > X Days](https://proval.itglue.com/DOC-5078775-10813367) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_8.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_8.png)
 
 9. ### Active Directory - Domain Computers Missing Automate Agent
 
@@ -158,7 +158,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Client`** alert template to the [CWM - Automate - Internal Monitor - Domain Computers Missing Automate Agent](https://proval.itglue.com/DOC-5078775-15186683) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_9.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_9.png)
 
 10. ### Active Directory - ADPluginUser - Create/Update
 
@@ -167,7 +167,7 @@ This article encompasses multiple components and contents. Please import and imp
     - Import the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template from the `ProSync` plugin, if it's already not present in the environment.
     - Assign the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template to the [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](https://proval.itglue.com/DOC-5078775-11420016) monitor set.
 
-    ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_10.png)
+    ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_10.png)
 
 11. ### Active Directory - AD Users
 
@@ -197,7 +197,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Script - Group Policy - Audit](https://proval.itglue.com/DOC-5078775-15193954) monitor set.
 
-   ![](..\..\static\img\Active-Directory-&-Domain-Environment-Audit\image_11.png)
+   ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_11.png)
 
 3. ### Reset AD Users Password Age
 
@@ -238,5 +238,6 @@ This article encompasses multiple components and contents. Please import and imp
    - Import the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646049) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646252) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646049) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
+
 
 

@@ -38,13 +38,13 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Sample Ping Monitor
 
 **Status Tab:**  
-![Status Tab](..\..\..\static\img\Email-Creation---Ping-Monitor\image_1.png)
+![Status Tab](../../../static/img/Email-Creation---Ping-Monitor/image_1.png)
 
 **Location Tab:**  
-![Location Tab](..\..\..\static\img\Email-Creation---Ping-Monitor\image_2.png)
+![Location Tab](../../../static/img/Email-Creation---Ping-Monitor/image_2.png)
 
 **Alerting Tab:**  
-![Alerting Tab](..\..\..\static\img\Email-Creation---Ping-Monitor\image_3.png)
+![Alerting Tab](../../../static/img/Email-Creation---Ping-Monitor/image_3.png)
 
 **Subject:** `NTW - Ping Failure - %WHERE%`
 
@@ -58,13 +58,14 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 **%LocalAddress%:** `This variable returns the private address of the local computer where the monitor set is executed.`
 
 **Configuration Tab:**  
-![Configuration Tab](..\..\..\static\img\Email-Creation---Ping-Monitor\image_4.png)
+![Configuration Tab](../../../static/img/Email-Creation---Ping-Monitor/image_4.png)
 
 **History Tab:**  
-![History Tab](..\..\..\static\img\Email-Creation---Ping-Monitor\image_5.png)
+![History Tab](../../../static/img/Email-Creation---Ping-Monitor/image_5.png)
 
 ## Output
 
 - Email
+
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Agent-Monitor-Creation---Disk-Servers-5-GB\image_1.png)
+![Sample Run](../../../static/img/Agent-Monitor-Creation---Disk-Servers-5-GB/image_1.png)
 
 ## Dependencies
 
@@ -46,5 +46,6 @@ This script runs some SQL commands to create remote monitors for detected hard d
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a server.
+
 
 

@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | `REDACTED`    | State Based| 86400    | ![Result](..\..\..\static\img\SWM---Software-Install--Deploy-Teams\image_1.png) |
+| System       | 127.0.0.1     | Run File   | `REDACTED`    | State Based| 86400    | ![Result](../../../static/img/SWM---Software-Install--Deploy-Teams/image_1.png) |
 
 ## Dependencies
 
@@ -42,5 +42,6 @@ Managed Windows Workstations
 
 Follow the steps provided in this private document to implement the solution:  
 [**Implement - Remote Monitor - Deploy Teams**](https://proval.itglue.com/DOC-5078775-13497993)  
+
 
 

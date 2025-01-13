@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\HP-Support-Assistant---Install\image_1.png)
+![Sample Run](../../../static/img/HP-Support-Assistant---Install/image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,6 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 

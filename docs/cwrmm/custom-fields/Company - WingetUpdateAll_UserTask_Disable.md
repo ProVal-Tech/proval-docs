@@ -22,8 +22,9 @@ Set this custom field to "No" to enable the user-level scheduled task `Winget Up
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\Company---WingetUpdateAll_UserTask_Disable\image_1.png)
+![Screenshot 1](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_1.png)
 
-![Screenshot 2](..\..\..\static\img\Company---WingetUpdateAll_UserTask_Disable\image_2.png)
+![Screenshot 2](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_2.png)
+
 
 

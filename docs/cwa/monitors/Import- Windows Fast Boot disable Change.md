@@ -23,7 +23,7 @@ INSERT INTO `sensorchecks`
 SELECT 
 '' as `SensID`,
 'Windows 10/11 Machines'  as `Name`, 
-'SELECT \r\n   computers.computerid as `Computer Id`,\r\n   computers.name as `Computer Name`,\r\n   clients.name as `Client Name`,\r\n   computers.domain as `Computer Domain`,\r\n   computers.username as `Computer User`,\r\n   inv_operatingsystem.name as `Computer.OS.Name`\r\nFROM Computers \r\nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)\r\nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)\r\nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)\r\n WHERE \r\n((((inv_operatingsystem.name like '%Windows 10%') OR (inv_operatingsystem.name like '%Windows 11%'))))\r\n' as `SQL`,
+'SELECT /r/n   computers.computerid as `Computer Id`,/r/n   computers.name as `Computer Name`,/r/n   clients.name as `Client Name`,/r/n   computers.domain as `Computer Domain`,/r/n   computers.username as `Computer User`,/r/n   inv_operatingsystem.name as `Computer.OS.Name`/r/nFROM Computers /r/nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)/r/nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)/r/nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)/r/n WHERE /r/n((((inv_operatingsystem.name like '%Windows 10%') OR (inv_operatingsystem.name like '%Windows 11%'))))/r/n' as `SQL`,
 '4' as `QueryType`,
 'Select|||||||^' as `ListData`,
 '0' as `FolderID`,
@@ -47,12 +47,12 @@ INSERT INTO groupagents
 'Windows Fast Boot Disable [Change]' as `Name`,
 '6' as `CheckAction`,
 @DefaultCreateTicket as `AlertAction`,
-'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
+'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = \'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power\';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return \'Failed\'} else {return \'Success\'}} else {return \'Success\'}} else {return \'Success\'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed' as `DataIn`,
 '' as `IDField`,
@@ -117,7 +117,7 @@ INSERT INTO `sensorchecks`
 SELECT 
 '' as `SensID`,
 'Windows 10/11 Machines'  as `Name`, 
-'SELECT \r\n   computers.computerid as `Computer Id`,\r\n   computers.name as `Computer Name`,\r\n   clients.name as `Client Name`,\r\n   computers.domain as `Computer Domain`,\r\n   computers.username as `Computer User`,\r\n   inv_operatingsystem.name as `Computer.OS.Name`\r\nFROM Computers \r\nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)\r\nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)\r\nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)\r\n WHERE \r\n((((inv_operatingsystem.name like '%Windows 10%') OR (inv_operatingsystem.name like '%Windows 11%'))))\r\n' as `SQL`,
+'SELECT /r/n   computers.computerid as `Computer Id`,/r/n   computers.name as `Computer Name`,/r/n   clients.name as `Client Name`,/r/n   computers.domain as `Computer Domain`,/r/n   computers.username as `Computer User`,/r/n   inv_operatingsystem.name as `Computer.OS.Name`/r/nFROM Computers /r/nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)/r/nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)/r/nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)/r/n WHERE /r/n((((inv_operatingsystem.name like '%Windows 10%') OR (inv_operatingsystem.name like '%Windows 11%'))))/r/n' as `SQL`,
 '4' as `QueryType`,
 'Select|||||||^' as `ListData`,
 '0' as `FolderID`,
@@ -141,12 +141,12 @@ INSERT INTO groupagents
 'Windows Fast Boot Disable [Change]' as `Name`,
 '6' as `CheckAction`,
 @DefaultCreateTicket as `AlertAction`,
-'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
+'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = \'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power\';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return \'Failed\'} else {return \'Success\'}} else {return \'Success\'}} else {return \'Success\'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed' as `DataIn`,
 '' as `IDField`,
@@ -204,14 +204,15 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'W
 ### Step 4.
 Now execute your query from an RAWSQL monitor set. Once the query is executed, relaunch the control center.
 
-![Control Center](..\..\..\static\img\Import--Windows-Fast-Boot-disable-Change\image_1.png)
+![Control Center](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_1.png)
 
 Then re-open the group where the monitor is created. The monitor will come up with the search 'Windows 10/11 Machines' added to the LIMIT.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
 
-![Remote Monitor Tab 1](..\..\..\static\img\Import--Windows-Fast-Boot-disable-Change\image_2.png)  
-![Remote Monitor Tab 2](..\..\..\static\img\Import--Windows-Fast-Boot-disable-Change\image_3.png)
+![Remote Monitor Tab 1](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_2.png)  
+![Remote Monitor Tab 2](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_3.png)
+
 
 

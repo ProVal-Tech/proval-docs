@@ -17,15 +17,15 @@ For a complete installation or Umbrella installation, the OrgID, UserID, and Fin
 # Process
 There are a few configurations required for this agent procedure.
 
-This procedure can use a URL or managed files for the installer. If using managed files, ensure line 7 is not disabled, has the location of the ZIP file, and the destination shows **#directory#\\CiscoSecureClient.zip**.
+This procedure can use a URL or managed files for the installer. If using managed files, ensure line 7 is not disabled, has the location of the ZIP file, and the destination shows **#directory#//CiscoSecureClient.zip**.
 
 If using a URL, enter in the URL on line 8.
 
-![Image](..\..\..\static\img\Cisco-Secure-Client---Install\image_1.png)
+![Image](../../../static/img/Cisco-Secure-Client---Install/image_1.png)
 
 If Umbrella is required, the organizationID, fingerprint, and userID are required. These values can be pulled from the client portal, or from the JSON file itself. Enter these values into the variables on lines 10, 11, and 13 and ensure the line is not disabled. If there are multiple sites/orgIDs, these variables can be filled with managed variables.
 
-![Image](..\..\..\static\img\Cisco-Secure-Client---Install\image_2.png)
+![Image](../../../static/img/Cisco-Secure-Client---Install/image_2.png)
 
 > Due to a bug within VSA, a variable cannot contain "OrgID" so "Organization" is used on line 13 instead. This results in a difference between the PowerShell command and the variable. -OrgId #Organization#
 
@@ -75,8 +75,9 @@ This will install all Modules, including Umbrella, which require the UserID, Fin
 
 # Output
 ```
-.\Install-CiscoSecureClient-log.txt
-.\Install-CiscoSecureClient-error.txt
+./Install-CiscoSecureClient-log.txt
+./Install-CiscoSecureClient-error.txt
 ```
+
 
 

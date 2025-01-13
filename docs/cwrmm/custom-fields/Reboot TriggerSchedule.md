@@ -34,31 +34,32 @@ The below custom fields are used in the Reboot Schedule Solution.
 ## Steps to Create Custom Fields
 
 1. Go to Settings > Custom Fields  
-   ![Step 1 Image](..\..\..\static\img\Reboot-TriggerSchedule\image_1.png)
+   ![Step 1 Image](../../../static/img/Reboot-TriggerSchedule/image_1.png)
 
 2. Click Add option  
-   ![Step 2 Image](..\..\..\static\img\Reboot-TriggerSchedule\image_2.png)
+   ![Step 2 Image](../../../static/img/Reboot-TriggerSchedule/image_2.png)
 
 3. Create Custom Field  
    Provide Name: `ServerRebootWindowEnd`  
    Select Level: `Company`  
-   ![Step 3 Image](..\..\..\static\img\Reboot-TriggerSchedule\image_3.png)  
+   ![Step 3 Image](../../../static/img/Reboot-TriggerSchedule/image_3.png)  
    Then check the Type option:  
    Type: `Text Box`  
-   ![Step 3 Image](..\..\..\static\img\Reboot-TriggerSchedule\image_4.png)  
+   ![Step 3 Image](../../../static/img/Reboot-TriggerSchedule/image_4.png)  
    Then Provide Default Value and Description:  
    Default: `5`  
    Description: This sets the maximum time till the reboot can end. Set the numeric value in 24-hour format. For Examples: 0 = Midnight, 1 = 1:00 AM, 5 = 5:00 AM, 11 = 11:00 AM, 23 = 11:00 PM.  
    Editable: `Yes`  
-   ![Step 3 Image](..\..\..\static\img\Reboot-TriggerSchedule\image_5.png)  
+   ![Step 3 Image](../../../static/img/Reboot-TriggerSchedule/image_5.png)  
    **Note:** Description is mandatory to be filled and it doesn't accept **'NEW LINE'.** Write everything in one phrase to describe the detail of the custom field.
 
 4. Click Save  
    Once all detail filled click Save, and the custom field will be created.  
-   ![Step 4 Image](..\..\..\static\img\Reboot-TriggerSchedule\image_6.png)
+   ![Step 4 Image](../../../static/img/Reboot-TriggerSchedule/image_6.png)
 
 5. Repeat the above 4 steps to create all other custom fields based on the Name, Level, Type, Default, Description, Editable provided in the table.  
    **NOTE:** To exclude this client from the solution, please enter 'Exclude' in the field. That will cause the script to exit and not take any actions on the target device.
+
 
 
 

@@ -42,11 +42,11 @@ The purpose of this solution is to change the status of the ticket in CW Manage 
    For more information on system properties, see the document for script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609).
 
 3. Reload the System Cache  
-   ![Reload the System Cache](..\..\static\img\Online-Status-Alerting\image_1.png)
+   ![Reload the System Cache](../../static/img/Online-Status-Alerting/image_1.png)
 
 4. Navigate to the System Dashboard → Config → Configurations → Properties and validate the settings that you specified have been set correctly:  
-   ![Settings Validation](..\..\static\img\Online-Status-Alerting\image_2.png)  
-   ![Settings Validation](..\..\static\img\Online-Status-Alerting\image_3.png)  
+   ![Settings Validation](../../static/img/Online-Status-Alerting/image_2.png)  
+   ![Settings Validation](../../static/img/Online-Status-Alerting/image_3.png)  
    **If they are different from what you specified, update them now.** The SetEnvironment process does not overwrite any existing properties if they exist, so this must be double-checked.
 
 5. Navigate to Automation → Monitors → Internal Monitors
@@ -58,5 +58,6 @@ The purpose of this solution is to change the status of the ticket in CW Manage 
      - Apply the alert template `△ Custom - Autofix - Online Status Alerting`  
        - Make sure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609)  
      - Right-click and Run Now on the monitor
+
 
 

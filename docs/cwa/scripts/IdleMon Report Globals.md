@@ -14,19 +14,19 @@ The script collects the idle time of the user(s) logged on to a Windows machine.
 
 It is using [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool to fetch the data.
 
-The tool must be placed in the `Utilities` folder at `LTShare\\Transfer` on Automate Server/WebDav.
+The tool must be placed in the `Utilities` folder at `LTShare//Transfer` on Automate Server/WebDav.
 
 The logged-in user must re-login after installing the tool. The script will install the tool in the first run and then the user must re-login; otherwise, it will not be able to collect data.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\IdleMon-Report-Globals\image_1.png)
+![Sample Run](../../../static/img/IdleMon-Report-Globals/image_1.png)
 
 Schedule the script to run periodically against the computer to monitor.
 
 ## Dependencies
 
-The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be placed in the `Utilities` folder at `LTShare\\Transfer` on Automate Server/WebDav.
+The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be placed in the `Utilities` folder at `LTShare//Transfer` on Automate Server/WebDav.
 
 ## Variables
 
@@ -34,7 +34,7 @@ The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be place
 |-------------------|------------------------------------------------------------------|
 | TableName         | pvl_report_idlemon                                              |
 | ProjectName       | IdleMon                                                         |
-| WorkingDirectory   | C:\ProgramData\_automation\Application\IdleMon                  |
+| WorkingDirectory   | C:/ProgramData/_automation/Application/IdleMon                  |
 | returnstring      | Output returned by the script                                    |
 | DeleteStatement   | SQL query to execute to remove stale data from the custom table |
 | InsertStatement   | SQL query to execute to insert the data gathered by the script to the custom table |
@@ -49,5 +49,6 @@ The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be place
 
 - Script log
 - Dataview
+
 
 

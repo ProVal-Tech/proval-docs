@@ -93,3 +93,4 @@ This solution will update Duo Authentication Proxy application to the latest ver
 - Assign the alert template to the monitor.
 
 
+

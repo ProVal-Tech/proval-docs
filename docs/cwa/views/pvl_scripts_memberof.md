@@ -31,3 +31,4 @@ Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](ht
 | Affected Agents      | Number of computers in the group/Number of agents detected in the search if limited to search.                   |
 
 
+

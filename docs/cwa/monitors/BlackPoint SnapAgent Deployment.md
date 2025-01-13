@@ -31,6 +31,7 @@ Global
 - The ticket is controlled by the script "SnapAgent Installer".
 - To enable the ticketing feature it is mandatory to set the ticket category at the monitor level as shown below:
 
-![Ticket Category](..\..\..\static\img\BlackPoint-SnapAgent-Deployment\image_1.png)
+![Ticket Category](../../../static/img/BlackPoint-SnapAgent-Deployment/image_1.png)
+
 
 

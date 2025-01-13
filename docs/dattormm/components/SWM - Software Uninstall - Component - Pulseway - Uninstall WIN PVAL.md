@@ -16,23 +16,24 @@ Performs an automated uninstallation of Pulseway, with additional cleanup steps.
 
 Export the component from ProVal's Datto RMM instance  
 **Name:** Pulseway - Uninstall [WIN] [PVAL]  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL\image_1.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL/image_1.png)  
 The export will download the necessary component (cpt) file.  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL\image_2.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL/image_2.png)  
 Import this component file into the partner's Datto RMM instance  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL\image_3.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL/image_3.png)  
 
 Proval Plug & Play: This component requires no configuration once imported.
 
 ## Output
 
 A job status of Success is expected.  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL\image_4.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL/image_4.png)  
 
 **StdOut**  
-![Image](..\..\..\static\img\SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL\image_5.png)  
+![Image](../../../static/img/SWM---Software-Uninstall---Component---Pulseway---Uninstall-WIN-PVAL/image_5.png)  
 
 **StdErr**  
 StdErr is not expected.
+
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-Restore-Point-Automation\image_1.png)
+![Sample Run](../../../static/img/Windows-Restore-Point-Automation/image_1.png)
 
 ## Dependencies
 
@@ -35,5 +35,6 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 ## Output
 
 - Script log
+
 
 

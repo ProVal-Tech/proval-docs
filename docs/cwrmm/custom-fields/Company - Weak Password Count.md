@@ -24,6 +24,7 @@ Holds the count of accounts with weak passwords
 
 ## ScreenShot
 
-![Screenshot](..\..\..\static\img\Company---Weak-Password-Count\image_1.png)
+![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
+
 
 

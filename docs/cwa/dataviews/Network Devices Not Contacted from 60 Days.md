@@ -34,3 +34,4 @@ This Dataview works as part of the solution to remove the network devices that h
 | LastDate           | Displays the last contact date of the device in Automate |
 
 
+

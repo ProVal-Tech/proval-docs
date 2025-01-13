@@ -16,12 +16,13 @@ Get SQL Data and Send as Report
 
 - **credtype**: Required. [sql] or [windows]  
 - **sqlserver**: Required. The name or IP of the SQL server  
-- **sqlfile**: Required. The path to query file to run. Example: `c:\\kworking\\sqlquery.sql`  
+- **sqlfile**: Required. The path to query file to run. Example: `c://kworking//sqlquery.sql`  
 - **msgto**: Required. The target email address  
 - **msgsubject**: Required. The email subject line  
 - **filename**: Required. The filename of the csv  
 - **sqluser**: Required if sql credtype. The username to logon to the SQL server  
 - **sqlpassword**: Required if sql credtype. The password to logon to the SQL server  
+
 
 
 

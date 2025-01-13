@@ -24,7 +24,7 @@ After importing the script it should either be debugged or run against any compu
 
 **NOTE:** The user parameters `Email_Connector_email_Address` and `Status_To_Change_To` are required to be filled only by running the script for the first time after importing it. This sets the system properties on its first run.
 
-![Image](..\..\..\static\img\Online-Status-Alerting---Autofix---Update-Ticket-+-Email-EDF\image_1.png)
+![Image](../../../static/img/Online-Status-Alerting---Autofix---Update-Ticket-+-Email-EDF/image_1.png)
 
 ## Dependencies
 
@@ -66,5 +66,6 @@ After importing the script it should either be debugged or run against any compu
 
 - Email
 - Ticket Status change to desired status as per configuration done in system property "Status_To_Change_To".
+
 
 

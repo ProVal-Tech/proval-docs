@@ -14,7 +14,7 @@ This script is used to perform the audit of the login/logout of the users.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Activity-Logging-Reporting-DV,-Global\image_1.png)
+![Sample Run](../../../static/img/Activity-Logging-Reporting-DV,-Global/image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Dataview
+
 
 

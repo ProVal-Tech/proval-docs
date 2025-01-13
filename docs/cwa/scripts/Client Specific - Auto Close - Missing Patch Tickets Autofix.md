@@ -12,11 +12,11 @@ unlisted: false
 
 The purpose of the script is to finish the new/open tickets created by the Missing Patches detection solution for the machines missing less than three or not missing any patches.
 
-Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%\\%ComputerName%`
+Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%ComputerName%`
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Client-Specific---Auto-Close---Missing-Patch-Tickets-Autofix\image_1.png)
+![Sample Run](../../../static/img/Client-Specific---Auto-Close---Missing-Patch-Tickets-Autofix/image_1.png)
 
 ## Dependencies
 
@@ -29,5 +29,6 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%\\%Computer
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
 | SQLTicketid | Ticketid to finish/close                         |
+
 
 

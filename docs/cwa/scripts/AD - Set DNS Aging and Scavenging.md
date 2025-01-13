@@ -17,7 +17,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\AD---Set-DNS-Aging-and-Scavenging\image_1.png)
+![Sample Run](../../../static/img/AD---Set-DNS-Aging-and-Scavenging/image_1.png)
 
 ## Dependencies
 
@@ -46,6 +46,7 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 
 - Script log
 - Local file on computer
+
 
 
 

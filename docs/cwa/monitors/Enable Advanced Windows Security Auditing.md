@@ -14,7 +14,7 @@ Advanced Windows Security Auditing is a feature in Microsoft Windows that allows
 
 The remote monitor will periodically check the system's security settings and trigger on an endpoint if Advanced Windows Security Auditing is not fully enabled.
 
-![Fully enabled Advanced Windows Security Auditing](..\..\..\static\img\Enable-Advanced-Windows-Security-Auditing\image_1.png)
+![Fully enabled Advanced Windows Security Auditing](../../../static/img/Enable-Advanced-Windows-Security-Auditing/image_1.png)
 
 ## Details
 
@@ -33,7 +33,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| system       | 127.0.0.1      | Run File   | C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';$Auditing = (auditpol /get /category:'Logon/Logoff')[4..30];$psout = @(); foreach ($Audit in $Auditing) {if($Audit -NotMatch 'Success and Failure|^\s*$') { $psout += $Audit}}; return $psout" | Regex Match | 86400 | ^OK$|^$ |
+| system       | 127.0.0.1      | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';$Auditing = (auditpol /get /category:'Logon/Logoff')[4..30];$psout = @(); foreach ($Audit in $Auditing) {if($Audit -NotMatch 'Success and Failure|^/s*$') { $psout += $Audit}}; return $psout" | Regex Match | 86400 | ^OK$|^$ |
 
 ## Dependencies
 
@@ -42,6 +42,7 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Managed Windows Servers and Workstations
+
 
 
 

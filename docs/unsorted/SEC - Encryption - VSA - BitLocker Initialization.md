@@ -27,7 +27,7 @@ PowerShell v5
 
 ## Agent Procedure Descriptions
 
-![Image](..\..\static\img\SEC---Encryption---VSA---BitLocker-Initialization\image_1.png)
+![Image](../../static/img/SEC---Encryption---VSA---BitLocker-Initialization/image_1.png)
 
 1. **Bitlocker Volume Initialization - AD Account or Group protector:** Encrypts the target volume using an Active Directory Account or Group as a key protector.
 2. **Bitlocker Volume Initialization - Password protector:** Encrypts the target volume using a custom password as a key protector.
@@ -43,7 +43,7 @@ PowerShell v5
 
 In the Agent Procedure parameters, you can customize settings such as the target volume, encryption method, and key protector-related settings. Modify these parameters to meet your organization's security policies and requirements. Depending on the agent procedure selected, different options will be presented. The full list of parameters is listed below for reference, but only the options needed for the procedure selected will be presented when run.
 
-![Image](..\..\static\img\SEC---Encryption---VSA---BitLocker-Initialization\image_2.png)
+![Image](../../static/img/SEC---Encryption---VSA---BitLocker-Initialization/image_2.png)
 
 *(Reference Image: **Bitlocker Volume Initialization - AD Account or Group protector parameters**)*
 
@@ -100,17 +100,17 @@ Examples are shown below of how the agent procedure passes the parameters to the
 
 Encrypts the E: volume with a password protector using Aes128. Will initialize TPM if needed and reboot the computer after completion.
 ```
-.\Initialize-BitLockerVolume.ps1 -MountPoint E: -EncryptionMethod Aes128 -PasswordProtector -Password (ConvertTo-SecureString -String 'P@$sw0rD!' -AsPlainText -Force) -AllowTPMInit -AllowRestart
+./Initialize-BitLockerVolume.ps1 -MountPoint E: -EncryptionMethod Aes128 -PasswordProtector -Password (ConvertTo-SecureString -String 'P@$sw0rD!' -AsPlainText -Force) -AllowTPMInit -AllowRestart
 ```
 
 Encrypts the `$env:SystemDrive` volume with a Tpm protector using Aes256. If TPM is not initialized, the script will exit. Will reboot the computer after completion.
 ```
-.\Initialize-BitLockerVolume.ps1 -Tpm -AllowRestart
+./Initialize-BitLockerVolume.ps1 -Tpm -AllowRestart
 ```
 
-Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256 to E:\Recovery. Will initialize TPM if needed. Will reboot the computer after completion.
+Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256 to E:/Recovery. Will initialize TPM if needed. Will reboot the computer after completion.
 ```
-.\Initialize-BitLockerVolume.ps1 -StartupKeyProtector -Path E:\Recovery -AllowTPMInit -AllowRestart
+./Initialize-BitLockerVolume.ps1 -StartupKeyProtector -Path E:/Recovery -AllowTPMInit -AllowRestart
 ```
 
 ## Logs
@@ -118,10 +118,11 @@ Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256
 The following logs are created when the agent procedure is run.
 
 ```
-.\Initialize-BitLockerVolume-log.txt
-.\Initialize-BitLockerVolume-data.txt
-.\Initialize-BitLockerVolume-error.txt
+./Initialize-BitLockerVolume-log.txt
+./Initialize-BitLockerVolume-data.txt
+./Initialize-BitLockerVolume-error.txt
 ```
+
 
 
 

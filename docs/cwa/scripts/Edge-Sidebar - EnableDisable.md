@@ -12,15 +12,15 @@ unlisted: false
 
 Enable or disable the Edge Sidebar on a target machine.
 
-![Microsoft Edge sidebar](..\..\..\static\img\Edge-Sidebar---EnableDisable\image_1.png)
+![Microsoft Edge sidebar](../../../static/img/Edge-Sidebar---EnableDisable/image_1.png)
 
 ## Sample Run
 
 If no action is passed, then `Disable` will be selected by default.
 
-![Sample Run 1](..\..\..\static\img\Edge-Sidebar---EnableDisable\image_2.png)
+![Sample Run 1](../../../static/img/Edge-Sidebar---EnableDisable/image_2.png)
 
-![Sample Run 2](..\..\..\static\img\Edge-Sidebar---EnableDisable\image_3.png)
+![Sample Run 2](../../../static/img/Edge-Sidebar---EnableDisable/image_3.png)
 
 ## Variables
 
@@ -37,7 +37,7 @@ If no action is passed, then `Disable` will be selected by default.
 | Name                     | Example                                        | Required | Description                                                                                          |
 |--------------------------|------------------------------------------------|----------|------------------------------------------------------------------------------------------------------|
 | ProjectName              | Control-EdgeSidebar                           | True     | Designates the name of the created ps1 file to be called by the script.                            |
-| ExpectedReturn           | Hive: HKEY_LOCAL_MACHINE\Software\Policies\Microsoft | True     | Designates the expected return of the ps1 file.                                                    |
+| ExpectedReturn           | Hive: HKEY_LOCAL_MACHINE/Software/Policies/Microsoft | True     | Designates the expected return of the ps1 file.                                                    |
 | TicketCreateSubject      | Edge-Sidebar - Command Result for %ComputerName% | True     | Designates the desired subject line for a ticket created by this script.                            |
 | TicketCreationCategory    | 1                                            | True     | Designates the desired ticket creation category for a ticket created by this script.                |
 | TicketFinishUserID      | 1                                            | True     | Designates the desired userId for finishing or commenting a ticket created by this script.          |
@@ -63,10 +63,10 @@ Target : DEV-WIN11-2(885)
 Existing Ticket ID: 77459
 -------------------------------------------------------------------------
 Writing PS1 to file on DEV-WIN11-2 
-File Location: %ltsvcdir%\Packages
+File Location: %ltsvcdir%/Packages
 File Name: Remove-EdgeSidebar.ps1
 -------------------------------------------------------------------------
-Executing file: %ltsvcdir%\Packages\Remove-EdgeSidebar.ps1
+Executing file: %ltsvcdir%/Packages/Remove-EdgeSidebar.ps1
 -------------------------------------------------------------------------
 Command Results: 
 OK
@@ -87,7 +87,8 @@ Finishing ticket 77459
 
 ## Ticket Example
 
-![Ticket Example](..\..\..\static\img\Edge-Sidebar---EnableDisable\image_4.png)
+![Ticket Example](../../../static/img/Edge-Sidebar---EnableDisable/image_4.png)
+
 
 
 

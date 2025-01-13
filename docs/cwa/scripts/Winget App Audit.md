@@ -14,21 +14,21 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_Automation\script\Get-WingetReport\Get-WingetReport.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Get-WingetReport/Get-WingetReport.ps1`  
 **File Hash (Sha256):** `C1FF0B60EADF1DDA382493A4841F57F2F25CC8517BE9E496AE4DA5B4B2ADF1DF`  
 **File Hash (MD5):** `719B8BAC2066247536A5AE4DD27F9C0F`  
 
-**File Path:** `C:\ProgramData\_Automation\script\Get-WingetReport\Manage-OverFlowedVariable.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Get-WingetReport/Manage-OverFlowedVariable.ps1`  
 **File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
 **File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
 ## Sample Run
 
 First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) table used by the solution.  
-![First Run](..\..\..\static\img\Winget-App-Audit\image_1.png)
+![First Run](../../../static/img/Winget-App-Audit/image_1.png)
 
 Regular execution:  
-![Regular Execution](..\..\..\static\img\Winget-App-Audit\image_2.png)
+![Regular Execution](../../../static/img/Winget-App-Audit/image_2.png)
 
 ## Dependencies
 
@@ -40,9 +40,9 @@ Regular execution:
 | Name              | Description                       |
 |-------------------|-----------------------------------|
 | projectName       | Get-WingetReport                  |
-| workingDirectory   | C:\ProgramData\_automation\script\Get-WingetReport |
-| scriptPath        | C:\ProgramData\_automation\script\Get-WingetReport\Get-WingetReport.ps1 |
-| jsonPath          | C:\ProgramData\_automation\script\Get-WingetReport\Get-WingetReport.json |
+| workingDirectory   | C:/ProgramData/_automation/script/Get-WingetReport |
+| scriptPath        | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.ps1 |
+| jsonPath          | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.json |
 | tableName         | [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) |
 
 ## User Parameters
@@ -56,6 +56,7 @@ Regular execution:
 - Script log
 - Custom table
 - Dataview
+
 
 
 

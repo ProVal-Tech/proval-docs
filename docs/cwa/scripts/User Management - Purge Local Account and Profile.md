@@ -16,7 +16,7 @@ This script can be used to completely remove/purge local accounts (including Use
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\User-Management---Purge-Local-Account-and-Profile\image_1.png)
+![Sample Run](../../../static/img/User-Management---Purge-Local-Account-and-Profile/image_1.png)
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ This script can be used to completely remove/purge local accounts (including Use
 
 | Name      | Example                               | Required | Description                                         |
 |-----------|---------------------------------------|----------|-----------------------------------------------------|
-| LogPath   | C:\temp\Remove-LocalUserProfile.log  | True     | This path stores the logging of completed script.   |
+| LogPath   | C:/temp/Remove-LocalUserProfile.log  | True     | This path stores the logging of completed script.   |
 | AutoPurge | False                                 | True     | False -- Auto Purge is off, Usernames required<br>True -- Auto Purge is ON, Usernames not required |
 
 #### User Parameters
@@ -54,6 +54,7 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+
 
 
 

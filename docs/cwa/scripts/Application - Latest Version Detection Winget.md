@@ -14,7 +14,7 @@ This script is designed to gather the latest version of applications supported b
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Application---Latest-Version-Detection-Winget\image_1.png)
+![Sample Run](../../../static/img/Application---Latest-Version-Detection-Winget/image_1.png)
 
 ## Variables
 
@@ -39,6 +39,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

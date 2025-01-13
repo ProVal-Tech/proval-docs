@@ -15,17 +15,17 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Sample Run
 
 - To ask the logged-in user before performing the factory reset:  
-  ![Image](..\..\..\static\img\Wipe-Computers---Factory-Reset\image_1.png)  
+  ![Image](../../../static/img/Wipe-Computers---Factory-Reset/image_1.png)  
 
 - To forcefully perform the factory reset:  
-  ![Image](..\..\..\static\img\Wipe-Computers---Factory-Reset\image_2.png)  
+  ![Image](../../../static/img/Wipe-Computers---Factory-Reset/image_2.png)  
 
 ## Variables
 
 | Name              | Description                                     |
 |-------------------|-------------------------------------------------|
 | ProjectName       | FactoryReset                                    |
-| WorkingDirectory   | C:\ProgramData\_Automation\FactoryReset        |
+| WorkingDirectory   | C:/ProgramData/_Automation/FactoryReset        |
 
 #### User Parameters
 
@@ -36,6 +36,7 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
+
 
 
 

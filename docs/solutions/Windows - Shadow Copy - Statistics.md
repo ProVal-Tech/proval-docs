@@ -12,8 +12,8 @@ unlisted: false
 
 This solution is designed to audit the complete Shadow Copy statistics and size information on all machines set to audit. The data is populated into a dataview and can be reviewed manually. There is no alerting presently for this solution, but it can easily be added if requested.
 
-![Image 1](..\..\static\img\Windows---Shadow-Copy---Statistics\image_1.png)
-![Image 2](..\..\static\img\Windows---Shadow-Copy---Statistics\image_2.png)
+![Image 1](../../static/img/Windows---Shadow-Copy---Statistics/image_1.png)
+![Image 2](../../static/img/Windows---Shadow-Copy---Statistics/image_2.png)
 
 ## Associated Content
 
@@ -33,7 +33,7 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
    - [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](https://proval.itglue.com/DOC-5078775-8057145)
 
 2. Reload the system cache:
-   ![Image](..\..\static\img\Windows---Shadow-Copy---Statistics\image_3.png)
+   ![Image](../../static/img/Windows---Shadow-Copy---Statistics/image_3.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -49,5 +49,6 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
 
 **Q:** What to do if information for an endpoint is not present in the dataview?  
 **A:** Run the "[Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)" against the Windows machine and re-check the dataview after the successful completion of the script.
+
 
 

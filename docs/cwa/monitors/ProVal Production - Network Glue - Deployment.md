@@ -32,7 +32,8 @@ Windows Machines
 ## Ticketing
 
 **_To enable ticketing please set the ticket category in the monitor_**  
-![Image](..\..\..\static\img\ProVal-Production---Network-Glue---Deployment\image_1.png)  
+![Image](../../../static/img/ProVal-Production---Network-Glue---Deployment/image_1.png)  
 **_The Script will then handle the ticket creation_** [ - Network Glue Connector - Install](https://proval.itglue.com/DOC-5078775-9360868)
+
 
 

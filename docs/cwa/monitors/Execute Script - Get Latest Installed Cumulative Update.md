@@ -29,3 +29,4 @@ The SQL Query is limiting the monitor set to the patch-managed supported Windows
 - The alert template should run the [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script.
 
 
+

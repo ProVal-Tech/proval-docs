@@ -34,3 +34,4 @@ Stores information about existing user profiles on computers. Data filled by @Us
 | UserProfile   | VARCHAR  | The path to the user folder for the target profile. |
 
 
+

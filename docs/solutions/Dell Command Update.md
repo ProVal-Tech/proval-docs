@@ -30,7 +30,7 @@ Execute the [Dell Command | Update CLI commands](https://www.dell.com/support/ma
    - Alert Template - `△ Custom - Execute Script - Dell Command Update Handler [Scan]`
 
 2. Reload System Cache  
-   ![Reload System Cache](..\..\static\img\Dell-Command-Update\image_1.png)
+   ![Reload System Cache](../../static/img/Dell-Command-Update/image_1.png)
 
 3. Setup the [Internal Monitor - ProVal - Production - Dell Command Update Handler - Run Scan Command](https://proval.itglue.com/DOC-5078775-11434139) with the following Alert Template:
    - `△ Custom - Execute Script - Dell Command Update Handler [Scan]`
@@ -38,5 +38,6 @@ Execute the [Dell Command | Update CLI commands](https://www.dell.com/support/ma
 
 **Note:** The systems must be compatible with the installation of Dell Command Update. For further details on compatible systems, please visit the compatible systems section of the below link:  
 [Dell Command | Update Windows Universal Application | Driver Details | Dell US](https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=0XNVX)
+
 
 

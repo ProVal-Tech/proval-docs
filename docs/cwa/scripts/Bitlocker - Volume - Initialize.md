@@ -18,11 +18,11 @@ Encrypts a drive with Bitlocker disk encryption.
 
 Encrypts the system drive of the target system with a RecoveryPassword, allowing TPM to be initialized if needed and rebooting if needed.
 
-![Image](..\..\..\static\img\Bitlocker---Volume---Initialize\image_1.png)
+![Image](../../../static/img/Bitlocker---Volume---Initialize/image_1.png)
 
 Encrypts the E: volume of the target system with a TPM+PIN combination, allowing a reboot if needed.
 
-![Image](..\..\..\static\img\Bitlocker---Volume---Initialize\image_2.png)
+![Image](../../../static/img/Bitlocker---Volume---Initialize/image_2.png)
 
 ## Dependencies
 
@@ -62,9 +62,9 @@ Encrypts the E: volume of the target system with a TPM+PIN combination, allowing
 | PIN/Password         | - 123456                        | Semi     | Option for the PIN or Password needed for specific key protector types.                                             |
 |                     | - Pa$sw0rD!                    |          |                                                                                                                      |
 |                     | - 123456-654321-123456-654321-123456-654321 |          |                                                                                                                      |
-| Path/ADAccount       | - F:\Recovery                   | Semi     | Option for the Path or AD Account needed for specific key protector types.                                          |
-|                     | - CONTOSO\ContosoUser          |          |                                                                                                                      |
-|                     | - CONTOSO\ContosoGroup         |          |                                                                                                                      |
+| Path/ADAccount       | - F:/Recovery                   | Semi     | Option for the Path or AD Account needed for specific key protector types.                                          |
+|                     | - CONTOSO/ContosoUser          |          |                                                                                                                      |
+|                     | - CONTOSO/ContosoGroup         |          |                                                                                                                      |
 
 ## Process
 
@@ -88,6 +88,7 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
+
 
 
 

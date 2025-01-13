@@ -27,3 +27,4 @@ Windows Machines excluding DC servers
 The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496) script.
 
 
+

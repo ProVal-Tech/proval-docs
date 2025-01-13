@@ -16,9 +16,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run Image 1](..\..\..\static\img\Windows---Rename-Machine\image_1.png)
+![Sample Run Image 1](../../../static/img/Windows---Rename-Machine/image_1.png)
 
-![Sample Run Image 2](..\..\..\static\img\Windows---Rename-Machine\image_2.png)
+![Sample Run Image 2](../../../static/img/Windows---Rename-Machine/image_2.png)
 
 ## Dependencies
 
@@ -45,20 +45,21 @@ See [Rename-Machine](https://proval.itglue.com/DOC-5078775-8175161) document for
 Outputs logs to the standard output location:
 
 ```
-.\Rename-Machine-log.txt
+./Rename-Machine-log.txt
 ```
 
 If the script is successful, then the following file will have output:
 
 ```
-.\Rename-Machine-data.txt
+./Rename-Machine-data.txt
 ```
 
 If there are errors in the run of the script, an error file will be generated:
 
 ```
-.\Rename-Machine-error.txt
+./Rename-Machine-error.txt
 ```
+
 
 
 

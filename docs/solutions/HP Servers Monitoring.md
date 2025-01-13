@@ -35,7 +35,7 @@ The purpose of the solution is to monitor the hardware alerts generated on an HP
      - Set the alert template of the monitor to `△ Custom - Ticket Creation - Computer`
 
 5. Reload the System Cache.
-   ![Reload the System Cache](..\..\static\img\HP-Servers-Monitoring\image_1.png)
+   ![Reload the System Cache](../../static/img/HP-Servers-Monitoring/image_1.png)
 
 6. Configure the solution as follows: 
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -59,5 +59,6 @@ The purpose of the solution is to monitor the hardware alerts generated on an HP
       Delete from groupagents where `Name` = 'ProVal - Production - HP Hardware Monitoring';
       Delete from agents where `Name` = 'ProVal - Production - HP Hardware Monitoring' and computerid > 0;
       ```
+
 
 

@@ -15,7 +15,7 @@ This script is intended to email [alerts@provaltech.com](mailto:alerts@provaltec
 ## Sample Run
 
 It is a client script that should be scheduled to run once a week.  
-![Sample Run](..\..\..\static\img\ConnectWise-Manage-Plugin-SyncMapping-Audit\image_1.png)
+![Sample Run](../../../static/img/ConnectWise-Manage-Plugin-SyncMapping-Audit/image_1.png)
 
 ## Dependencies
 
@@ -38,5 +38,6 @@ Step 2: It will not trigger, if everything is fine. Otherwise will generate a ti
 ## Output
 
 - Email
+
 
 

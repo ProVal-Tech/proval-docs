@@ -16,7 +16,7 @@ Time Saved by Automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Microsoft-Office---Uninstall\image_1.png)
+![Sample Run](../../../static/img/Microsoft-Office---Uninstall/image_1.png)
 
 See parameters in the below "User Parameters" section
 
@@ -48,5 +48,6 @@ Based on the version input by the technician, the script will jump to the approp
 
 - Script log
 - Local file on computer
+
 
 

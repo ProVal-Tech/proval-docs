@@ -15,13 +15,13 @@ Presents information related to Network Probes (Gen1 and Gen2). Also, it will su
 Information from the following tabs of a Network probe setting page is displayed in the Dataview:
 
 ### Subnet
-![Subnet](..\..\..\static\img\Network-Probes\image_1.png)
+![Subnet](../../../static/img/Network-Probes/image_1.png)
 
 ### Scan
-![Scan](..\..\..\static\img\Network-Probes\image_2.png)
+![Scan](../../../static/img/Network-Probes/image_2.png)
 
 ### Deployment
-![Deployment](..\..\..\static\img\Network-Probes\image_3.png)
+![Deployment](../../../static/img/Network-Probes/image_3.png)
 
 ## Dependencies
 
@@ -53,5 +53,6 @@ Information from the following tabs of a Network probe setting page is displayed
 | Updated By                      | Last user to make any changes to the probe                                                     |
 | Creation Date                   | Date of creation                                                                                 |
 | Last Update Date                | Last Update date for the network probe                                                          |
+
 
 

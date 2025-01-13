@@ -14,7 +14,7 @@ This client script will update the client EDFs value from the Webroot plugin onl
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Webroot-Solution---Copy-Plugin-Data-to-EDFs\image_1.png)
+![Sample Run](../../../static/img/Webroot-Solution---Copy-Plugin-Data-to-EDFs/image_1.png)
 
 ## Dependencies
 
@@ -31,5 +31,6 @@ This client script will update the client EDFs value from the Webroot plugin onl
 ## Output
 
 - EDF
+
 
 

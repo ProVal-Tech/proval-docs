@@ -14,10 +14,11 @@ The script is designed to uninstall Sophos Endpoint Protection from both Mac and
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-Sophos-Endpoint-Mac,-Windows\image_1.png)
+![Sample Run](../../../static/img/Uninstall-Sophos-Endpoint-Mac,-Windows/image_1.png)
 
 ## Output
 
 - Script logs
+
 
 

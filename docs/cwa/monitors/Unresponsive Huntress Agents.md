@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 1270.0.1      | Run File   | **REDACTED**  | State Based | 86400    | <Screenshot Below> |
 
-![Screenshot](..\..\..\static\img\Unresponsive-Huntress-Agents\image_1.png)
+![Screenshot](../../../static/img/Unresponsive-Huntress-Agents/image_1.png)
 
 ## Target
 
@@ -38,6 +38,7 @@ Windows Machines limiting to machines with Huntress Agents only.
 
 **Subject:** `Unresponsive Huntress Agent Detected on %COMPUTERNAME%`  
 
-**Body:** `The machine %computername% located at %clientname%\\%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.`
+**Body:** `The machine %computername% located at %clientname%//%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.`
+
 
 

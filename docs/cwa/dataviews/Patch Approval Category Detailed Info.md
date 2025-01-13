@@ -26,3 +26,4 @@ Detailed information of the patches that are auto approved or denied or ignored 
 | Auto Policy               | The policy that is applied on that Patch Category for that Approval Policy. Like Approved, Denied or Ignored.       |
 
 
+

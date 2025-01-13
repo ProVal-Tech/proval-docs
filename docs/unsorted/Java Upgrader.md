@@ -14,7 +14,7 @@ This script upgrades Java to the latest Java 8
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Java-Upgrader\image_1.png)
+![Sample Run](../../static/img/Java-Upgrader/image_1.png)
 
 ## Script State
 
@@ -31,6 +31,7 @@ Stores old Java in Script State just in case.
 ## Output
 
 - Script log
+
 
 
 

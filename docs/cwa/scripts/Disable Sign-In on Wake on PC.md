@@ -14,10 +14,11 @@ This script disables the Sign-IN option for all user accounts. It disables the r
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Disable-Sign-In-on-Wake-on-PC\image_1.png)
+![Sample Run](../../../static/img/Disable-Sign-In-on-Wake-on-PC/image_1.png)
 
 ## Output
 
 - Script log
+
 
 

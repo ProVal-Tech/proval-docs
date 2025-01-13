@@ -39,3 +39,4 @@ This Custom table holds the detailed analysis of script failures over the past 3
 | Data Collection Time      | DATETIME | Data Collection Time                                                                                |
 
 
+

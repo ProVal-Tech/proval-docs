@@ -18,9 +18,9 @@ The purpose of this monitor is to detect the Windows machines with Duo installed
 
 | Name                    | Level    | Type     | Section     | Description                                                                                           |
 |-------------------------|----------|----------|-------------|-------------------------------------------------------------------------------------------------------|
-| DUO Agent Exclusion     | Client   | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the Client.<br>![Image](..\..\..\static\img\Uninstall-DUO\image_1.png) |
-| DUO Agent Exclusion     | Location | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the location.<br>![Image](..\..\..\static\img\Uninstall-DUO\image_2.png) |
-| DUO Agent Exclusion     | Computer | Checkbox | Exclusions  | Select this EDF to remove DUO from the selected machine only.<br>![Image](..\..\..\static\img\Uninstall-DUO\image_3.png) |
+| DUO Agent Exclusion     | Client   | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the Client.<br>![Image](../../../static/img/Uninstall-DUO/image_1.png) |
+| DUO Agent Exclusion     | Location | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the location.<br>![Image](../../../static/img/Uninstall-DUO/image_2.png) |
+| DUO Agent Exclusion     | Computer | Checkbox | Exclusions  | Select this EDF to remove DUO from the selected machine only.<br>![Image](../../../static/img/Uninstall-DUO/image_3.png) |
 
 ## Target
 
@@ -29,5 +29,6 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Uninstall DUO
+
 
 

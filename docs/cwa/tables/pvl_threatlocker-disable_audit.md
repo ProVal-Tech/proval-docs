@@ -32,3 +32,4 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | LogRecord            | VARCHAR  | This stores the logs of script success or failure.                                                                |
 
 
+

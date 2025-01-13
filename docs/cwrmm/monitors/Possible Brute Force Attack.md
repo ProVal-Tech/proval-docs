@@ -27,14 +27,14 @@ Change this value from 10 to the desired value after creating the monitor.
 ## Target
 
 [Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)  
-![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_1.png)
+![Image](../../../static/img/Possible-Brute-Force-Attack/image_1.png)
 
 ## Implementation
 
 1. From the left bar, select Endpoints → Alerts → Monitors  
-   ![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_2.png)  
+   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_2.png)  
    Then Click 'Create Monitor'  
-   ![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_3.png)
+   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_3.png)
 
 2. Fill in the mandatory columns on the left side
    - Name: Possible Brute Force Attack
@@ -42,9 +42,9 @@ Change this value from 10 to the desired value after creating the monitor.
    - Type: Script
    - Severity: Critical Impact Alerts
    - Family: Active Directory  
-   ![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_4.png)
+   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_4.png)
 
-   ![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_5.png)  
+   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_5.png)  
    
    **Conditions:**
    - **Run script on:** Schedule
@@ -58,10 +58,10 @@ Change this value from 10 to the desired value after creating the monitor.
      $StartTime = (Get-Date).Addhours(-$hours)
      $filter = @{LogName = 'Security'; ID = 4625; StartTime = $StartTime}
      $events = Get-WinEvent -FilterHashtable $filter
-     $filteredEvents = $events | Where-Object { $_.Message -notmatch 'Logon Type:\\s+4' -and $_.Message -notmatch 'Logon Type:\\s+5' }
+     $filteredEvents = $events | Where-Object { $_.Message -notmatch 'Logon Type://s+4' -and $_.Message -notmatch 'Logon Type://s+5' }
      $total = ($filteredEvents | Measure-Object).count
      if ($total -ge $th) {
-         $groupedEvents = $filteredEvents | Where-Object { $_.Properties.Value -match '\\S' } | Group-Object  @{ Expression = { $_.Properties.Value } }, @{ Expression = { $_.Properties.Value } }
+         $groupedEvents = $filteredEvents | Where-Object { $_.Properties.Value -match '//S' } | Group-Object  @{ Expression = { $_.Properties.Value } }, @{ Expression = { $_.Properties.Value } }
          $output = @()
          foreach ($group in $groupedEvents) {
              $ex = ([xml]$groupedEvents.Group[-1].ToXml()).Event
@@ -108,14 +108,14 @@ Change this value from 10 to the desired value after creating the monitor.
 
 3. Select the target endpoints:
    - Click on Select Target:  
-   ![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_6.png)
+   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_6.png)
 
    - Then click on Device Group and then search for the word '[Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)', and then select the group as shown below:  
-   ![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_7.png)
+   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_7.png)
 
 ## Completed Monitor
 
-![Image](..\..\..\static\img\Possible-Brute-Force-Attack\image_8.png)
+![Image](../../../static/img/Possible-Brute-Force-Attack/image_8.png)
 
 ## Ticketing
 
@@ -147,7 +147,7 @@ SourceIpPort: 0
 FailureStatus: 0xc000006d  
 FailureSubStatus: 0xc000006a  
 callerProcessId: 2088  
-CallerProcessName: C:\Windows\System32\svchost.exe  
+CallerProcessName: C:/Windows/System32/svchost.exe  
 CallerProcessStatus: Running  
 LogonProcess: User32  
 AuthenticationPackage: Negotiate  
@@ -185,5 +185,6 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)  
 
 Action: Please get the issue reviewed by a technician.
+
 
 

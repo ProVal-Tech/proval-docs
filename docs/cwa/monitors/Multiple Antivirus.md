@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------|------------|----------|--------|
-| System       | Default        | Run File `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-CimInstance -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct).count -gt 1) { return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender' ).count } else { return }"` | Less Than | 2 |  |  |
+| System       | Default        | Run File `C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-CimInstance -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct).count -gt 1) { return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender' ).count } else { return }"` | Less Than | 2 |  |  |
 
 ## Requirements
 
@@ -42,7 +42,7 @@ The intended target of this monitor are Windows-based machines that have had at 
 ## FAQ
 
 **Q.** This is reporting multiple Antivirus's but I don't see any in the software list.  
-**A.** The nature of this script is to report on how many Antivirus products are currently registered in the 'root\SecurityCenter2' Namespace as an AntiVirusProduct. That being said, there are two reasons why this can occur:
+**A.** The nature of this script is to report on how many Antivirus products are currently registered in the 'root/SecurityCenter2' Namespace as an AntiVirusProduct. That being said, there are two reasons why this can occur:
 1. The antivirus in question used to exist on the machine; however, the uninstallation of the product did not complete properly, and the product is still registered.
 2. The antivirus software in question is in fact installed; however, the uninstallation registry key for WindowsComponent is set to 1, which is hiding the software from the add/remove programs list as well as the automated software list.
 
@@ -50,8 +50,9 @@ The intended target of this monitor are Windows-based machines that have had at 
 **A.** Running the following PowerShell command will display the name of every found item.
 
 ```
-return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
+return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
+
 
 
 

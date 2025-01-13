@@ -12,41 +12,41 @@ unlisted: false
 
 The script functions by adding the site(s) specified in the `Sites` parameter to the 'local intranet zone' on the Windows computer.
 
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_1.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_1.png)
 
 ## Sample Run
 
 **Input:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_2.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_2.png)
 
 **Result:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_3.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_3.png)
 
 **Input:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_4.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_4.png)
 
 **Result:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_5.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_5.png)
 
 **Input:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_6.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_6.png)
 
 **Result:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_7.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_7.png)
 
 **Input:**  
-**![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_8.png)**
+**![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_8.png)**
 
 **Result:**  
-![Image](..\..\..\static\img\Add-Sites-to-Local-Intranet\image_9.png)
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_9.png)
 
 ## Variables
 
 | Name              | Description                                      |
 |-------------------|--------------------------------------------------|
 | ProjectName       | Add-LocalIntranetSites                           |
-| WorkingDirectory   | C:\ProgramData\_Automation\Script\Add-LocalIntranetSites |
-| ScriptPath        | C:\ProgramData\_Automation\Script\Add-LocalIntranetSites\Add-LocalIntranetSites.ps1 |
+| WorkingDirectory   | C:/ProgramData/_Automation/Script/Add-LocalIntranetSites |
+| ScriptPath        | C:/ProgramData/_Automation/Script/Add-LocalIntranetSites/Add-LocalIntranetSites.ps1 |
 
 #### User Parameters
 
@@ -58,6 +58,7 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
+
 
 
 

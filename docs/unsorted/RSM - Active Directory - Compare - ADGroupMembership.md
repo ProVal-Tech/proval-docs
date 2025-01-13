@@ -44,9 +44,9 @@ Compares the users found in the last run of Compare-ADGroupMembers.ps1 with the 
 
 ```
     System Object
-    .\Compare-ADGroupMembers-log.txt
-    .\Compare-ADGroupMembers-data.txt
-    .\Compare-ADGroupMembers-error.txt
+    ./Compare-ADGroupMembers-log.txt
+    ./Compare-ADGroupMembers-data.txt
+    ./Compare-ADGroupMembers-error.txt
 ```
 
 ## Locations
@@ -54,6 +54,7 @@ Compares the users found in the last run of Compare-ADGroupMembers.ps1 with the 
 | Payload                                  |
 |------------------------------------------|
 | /repo/scripts/Compare-ADGroupMembers.ps1 |
+
 
 
 

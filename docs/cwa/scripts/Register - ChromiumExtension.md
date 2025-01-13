@@ -22,7 +22,7 @@ Note: Microsoft Edge may ignore policy settings with devices that are not manage
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Register---ChromiumExtension\image_1.png)
+![Sample Run](../../../static/img/Register---ChromiumExtension/image_1.png)
 
 Installs N-Able Passportal extension for the Chrome browser.  
 When selecting multiple browsers use 'Chrome', 'Edge', 'Brave'...  
@@ -42,5 +42,6 @@ If Setting all available browsers leave Target Blank.
 ## Output
 
 - Script log
+
 
 

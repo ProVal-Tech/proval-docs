@@ -22,12 +22,13 @@ Check [Script's](https://proval.itglue.com/DOC-5078775-8223774) document for mor
 
 Domain Controllers belonging to clients that have the `1a. Enable Domain Admin Process` EDF marked.
 
-![Image](..\..\..\static\img\Windows-Domain-Admin-Account-Process\image_1.png)
+![Image](../../../static/img/Windows-Domain-Admin-Account-Process/image_1.png)
 
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script on the machines detected by the monitor set.
+
 
 

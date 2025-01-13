@@ -25,7 +25,7 @@ Perfoms an on-demand update for a Click2Run Office installation on an endpoint u
 | 9:22:33 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0016 | Informational: GetFile command overwrote the server file ...                               | provaltech.com/dan.hicks    |
 | 9:22:28 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: ...                                         | provaltech.com/dan.hicks    |
 | 9:22:28 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                           | provaltech.com/dan.hicks    |
-| 9:22:28 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as %ProgramData%\\_automation\\AgentProcedure\\OfficeUpdate\\Update-Office.ps1 | provaltech.com/dan.hicks    |
+| 9:22:28 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as %ProgramData%//_automation//AgentProcedure//OfficeUpdate//Update-Office.ps1 | provaltech.com/dan.hicks    |
 | 9:22:28 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                        | provaltech.com/dan.hicks    |
 | 9:22:27 am 21-Feb-23   | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                        | provaltech.com/dan.hicks    |
 | 9:22:25 am 21-Feb-23   | Execute Powershell Command                           | Success THEN                                                                                  | provaltech.com/dan.hicks    |
@@ -44,6 +44,7 @@ Does this Procedure depend on other VSA content? Link the ITGlue Article for the
 ## Output
 
 Procedure Logfiles and other outputs
+
 
 
 

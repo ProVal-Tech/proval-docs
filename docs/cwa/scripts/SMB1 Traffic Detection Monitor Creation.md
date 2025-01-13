@@ -20,19 +20,19 @@ Remote monitors will be set up on computers where the [SMB1 Detection](https://p
 
 1. **Gather existing ticket category and alert template id:**
    - Look for the `SMB1 Server Enabled [Remote Monitor]` group. Skip this step if the group does not exist.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_1.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_1.png)
    - Double click to open the group.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_2.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_2.png)
    - Navigate to `Computers` > `Remote Monitors`.
    - Select the `SMB1 Traffic Detection` remote monitor.
    - Take a note of Alert Template and Ticket Category applied to it.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_3.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_3.png)
 
 2. **Import the** [**`SMB1 Traffic Detection Monitor Creation`**](https://proval.itglue.com/5078775/docs/17454586#version=draft&documentMode=edit) **script from the** `ProSync` **plugin.**
 
 3. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_4.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_4.png)
      Additionally, it will remove the following:
      - Group Remote Monitor: `SMB1 Traffic Detection`
      - Search: `SMB1 Server Enabled [Remote Monitor]`
@@ -40,17 +40,17 @@ Remote monitors will be set up on computers where the [SMB1 Detection](https://p
 
 4. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_5.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_5.png)
 
 5. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard --> Config --> Configurations --> Properties**.
    - Set the appropriate alert template and ticket category in their respective system properties for the monitor set.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_6.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_6.png)
    - Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 6. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.
-     ![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_7.png)
+     ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_7.png)
 
 ## Dependencies
 
@@ -82,17 +82,18 @@ Remote monitors will be set up on computers where the [SMB1 Detection](https://p
 
 **Ticket Subject:** `SMB1 Traffic Detected on %COMPUTERNAME%`
 
-**Alert Message on Failure:** `SMB1 Traffic detected on %CLIENTNAME%\%COMPUTERNAME% in the past 1 hour. Details:`
+**Alert Message on Failure:** `SMB1 Traffic detected on %CLIENTNAME%/%COMPUTERNAME% in the past 1 hour. Details:`
 `%RESULT%`
 
 **Sample Remote Monitor:**
-![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_8.png)
-![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_9.png)
-![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_10.png)
-![Image](..\..\..\static\img\SMB1-Traffic-Detection-Monitor-Creation\image_11.png)
+![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_8.png)
+![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_9.png)
+![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_10.png)
+![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_11.png)
 
 ## Output
 
 - Remote Monitors
+
 
 

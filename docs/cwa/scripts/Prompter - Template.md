@@ -59,3 +59,4 @@ These variables are used in the prompter script. They should be set in any scrip
 | userResponse       | Input/Feedback provided by the user in the User Input Field.                                            |
 
 
+

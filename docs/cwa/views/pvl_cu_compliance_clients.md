@@ -44,3 +44,4 @@ The data is grouped by client.
 | Data Missing                    | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. |
 
 
+

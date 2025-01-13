@@ -16,7 +16,7 @@ This Script uninstalls the Check Point Endpoint Security from Windows machines. 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Check-Point-Endpoint-Security-Removal\image_1.png)
+![Sample Run](../../../static/img/Check-Point-Endpoint-Security-Removal/image_1.png)
 
 ### Global Parameters
 
@@ -55,5 +55,6 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@  
+
 
 

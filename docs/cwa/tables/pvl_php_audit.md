@@ -32,3 +32,4 @@ Stores the data collected by the [Locate PHP.exe](https://proval.itglue.com/DOC-
 | ScriptRunTime   | datetime            | Data Collection Time            |
 
 
+

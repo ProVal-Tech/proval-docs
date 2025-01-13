@@ -14,9 +14,9 @@ Deletes a user profile and removes the user account if local. CW RMM implementat
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Remove-User-Profile\image_1.png)  
-![Sample Run 2](..\..\..\static\img\Remove-User-Profile\image_2.png)  
-![Sample Run 3](..\..\..\static\img\Remove-User-Profile\image_3.png)  
+![Sample Run 1](../../../static/img/Remove-User-Profile/image_1.png)  
+![Sample Run 2](../../../static/img/Remove-User-Profile/image_2.png)  
+![Sample Run 3](../../../static/img/Remove-User-Profile/image_3.png)  
 
 ## Dependencies
 
@@ -26,67 +26,67 @@ Deletes a user profile and removes the user account if local. CW RMM implementat
 
 | Name          | Example    | Required | Type        | Description                                                                                                                                                                                                                   |
 |---------------|------------|----------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UserName      | TestAdmin  | True     | Text String | The username of the user to remove the profile for. Validated by the following regex: `^(((\.\\)|(\\w|\\-|\\.)+\\)|)(\\w|\\.|\\-)+$` Valid entries for this parameter are: <ul><li>username</li><li>.\\username</li><li>domain\\username</li></ul> |
+| UserName      | TestAdmin  | True     | Text String | The username of the user to remove the profile for. Validated by the following regex: `^(((/.//)|(//w|//-|//.)+//)|)(//w|//.|//-)+$` Valid entries for this parameter are: <ul><li>username</li><li>.//username</li><li>domain//username</li></ul> |
 | PreserveUser  | 0/1        | False    | Flag        | Use this switch to preserve the user account after profile deletion.                                                                                                                                                       |
 
-![User Parameters Image](..\..\..\static\img\Remove-User-Profile\image_4.png)
+![User Parameters Image](../../../static/img/Remove-User-Profile/image_4.png)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Image 1](..\..\..\static\img\Remove-User-Profile\image_5.png)  
-![Task Creation Image 2](..\..\..\static\img\Remove-User-Profile\image_6.png)  
+![Task Creation Image 1](../../../static/img/Remove-User-Profile/image_5.png)  
+![Task Creation Image 2](../../../static/img/Remove-User-Profile/image_6.png)  
 
 **Name:** `Remove User Profile`  
 **Description:** `Remove the installed font from the Windows machines. Accepts the '*' wildcard to remove multiple matching fonts.`  
 **Category:** `Custom`  
-![Task Creation Image 3](..\..\..\static\img\Remove-User-Profile\image_7.png)  
+![Task Creation Image 3](../../../static/img/Remove-User-Profile/image_7.png)  
 
 ## Parameters
 
 ### Username:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Username Parameter Image](..\..\..\static\img\Remove-User-Profile\image_8.png)  
+![Add Username Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
-![Username Parameter Screen](..\..\..\static\img\Remove-User-Profile\image_9.png)  
+![Username Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
 - Set `Username` in the `Parameter Name` field.
 - Enable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Username Parameter Image](..\..\..\static\img\Remove-User-Profile\image_10.png)  
+![Username Parameter Image](../../../static/img/Remove-User-Profile/image_10.png)  
 
 ### Preserveuser:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Preserveuser Parameter Image](..\..\..\static\img\Remove-User-Profile\image_8.png)  
+![Add Preserveuser Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
-![Preserveuser Parameter Screen](..\..\..\static\img\Remove-User-Profile\image_9.png)  
+![Preserveuser Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
 - Set `Preserveuser` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Preserveuser Parameter Image](..\..\..\static\img\Remove-User-Profile\image_11.png)  
+![Preserveuser Parameter Image](../../../static/img/Remove-User-Profile/image_11.png)  
 
 ## Task Creation
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row Image](..\..\..\static\img\Remove-User-Profile\image_12.png)  
+![Add Row Image](../../../static/img/Remove-User-Profile/image_12.png)  
 
 A blank function will appear.  
-![Blank Function Image](..\..\..\static\img\Remove-User-Profile\image_13.png)  
+![Blank Function Image](../../../static/img/Remove-User-Profile/image_13.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Selection Image 1](..\..\..\static\img\Remove-User-Profile\image_14.png)  
-![PowerShell Script Selection Image 2](..\..\..\static\img\Remove-User-Profile\image_15.png)  
+![PowerShell Script Selection Image 1](../../../static/img/Remove-User-Profile/image_14.png)  
+![PowerShell Script Selection Image 2](../../../static/img/Remove-User-Profile/image_15.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Script Function Image](..\..\..\static\img\Remove-User-Profile\image_16.png)  
+![PowerShell Script Function Image](../../../static/img/Remove-User-Profile/image_16.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -106,11 +106,11 @@ $ProjectName = 'Remove-UserProfile'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -144,34 +144,35 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Image](..\..\..\static\img\Remove-User-Profile\image_17.png)  
+![PowerShell Script Image](../../../static/img/Remove-User-Profile/image_17.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Script Log Row Image](..\..\..\static\img\Remove-User-Profile\image_18.png)  
+![Add Script Log Row Image](../../../static/img/Remove-User-Profile/image_18.png)  
 
 A blank function will appear.  
-![Blank Function Image](..\..\..\static\img\Remove-User-Profile\image_19.png)  
+![Blank Function Image](../../../static/img/Remove-User-Profile/image_19.png)  
 
 Search and select the `Script Log` function.  
-![Script Log Selection Image](..\..\..\static\img\Remove-User-Profile\image_20.png)  
+![Script Log Selection Image](../../../static/img/Remove-User-Profile/image_20.png)  
 
 The following function will pop up on the screen:  
-![Script Log Function Image](..\..\..\static\img\Remove-User-Profile\image_21.png)  
+![Script Log Function Image](../../../static/img/Remove-User-Profile/image_21.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Save Script Log Image](..\..\..\static\img\Remove-User-Profile\image_22.png)  
+![Save Script Log Image](../../../static/img/Remove-User-Profile/image_22.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script Image](..\..\..\static\img\Remove-User-Profile\image_23.png)  
+![Save Script Image](../../../static/img/Remove-User-Profile/image_23.png)  
 
 ## Completed Task
 
-![Completed Task Image](..\..\..\static\img\Remove-User-Profile\image_24.png)  
+![Completed Task Image](../../../static/img/Remove-User-Profile/image_24.png)  
 
 ## Output
 
 - Script log
+
 
 

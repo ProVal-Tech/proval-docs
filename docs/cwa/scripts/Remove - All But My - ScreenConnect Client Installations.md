@@ -34,27 +34,27 @@ This script removes all instances of ScreenConnect from the machine except the o
 
 1. Download the script XML
 
-   ![Download XML](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_1.png)
+   ![Download XML](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_1.png)
 
 2. Login to your Automate thick client
 3. Navigate to: System, General, Import, XML Expansion
 4. Browse to the XML downloaded from this Document
 
-   ![Browse XML](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_2.png)
+   ![Browse XML](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_2.png)
 
 5. Click YES to the import warning
 
-   ![Import Warning](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_3.png)
+   ![Import Warning](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_3.png)
 
 6. Use CTRL-R or the Reload System Cache drop down
 
-   ![Reload System Cache](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_4.png)
+   ![Reload System Cache](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_4.png)
 
 7. Script will be located in: Automation, Scripts, ProVal, Connectwise Control folder
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_5.png)
+![Sample Run](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_5.png)
 
 ## Client Level EDF
 
@@ -63,7 +63,7 @@ This script removes all instances of ScreenConnect from the machine except the o
 | Other Permitted SC Instances    | TextBox   | False        | 6ef67d57664499m5|0di7fd57637401k5 | ScreenConnect      | Mention the Instance IDs other than the Default one, which you would not like to remove from the client's machines. Remember to separate the instance IDs by Pipeline (|) if you are mentioning multiple instances and there should be no spacing in them. Like shown below: `@instanceid1@|@instanceid2@` |
 | Remove Additional SC Clients    | CheckBox  | True         |                                  | ScreenConnect      | Mark the EDF to enable the Auto-Removal automation for the client.                                                                                                                                           |
 
-![Client Level EDF](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_6.png)
+![Client Level EDF](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_6.png)
 
 ## Location Level EDF
 
@@ -71,7 +71,7 @@ This script removes all instances of ScreenConnect from the machine except the o
 |---------------------------------|------------|--------------|-------------|-------------|---------------------------------------------------------------------------------------------------------------|
 | Exclude - Additional SC Removal | Check-Box | False        |             | Exclusions   | Mark the EDF to exclude the location from the Auto-Removal Automation.                                       |
 
-![Location Level EDF](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_7.png)
+![Location Level EDF](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_7.png)
 
 ## Computer Level EDF
 
@@ -79,10 +79,11 @@ This script removes all instances of ScreenConnect from the machine except the o
 |---------------------------------|------------|--------------|-------------|-------------|---------------------------------------------------------------------------------------------------------------|
 | Exclude - Additional SC Removal | Check-Box | False        |             | Exclusions   | Mark the EDF to exclude the computer from the Auto-Removal Automation.                                       |
 
-![Computer Level EDF](..\..\..\static\img\Remove---All-But-My---ScreenConnect-Client-Installations\image_8.png)
+![Computer Level EDF](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_8.png)
 
 ## Output
 
 - Script Logs
+
 
 

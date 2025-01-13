@@ -14,7 +14,7 @@ This group filters out windows machines with huntress agent installed on them.
 
 ## Summary
 
-![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_1.png)
+![Image](../../../static/img/Machines-with-Huntress-Agent/image_1.png)
 
 **Group Type:** Dynamic  
 **Group Name:** Machines With Huntress Agent  
@@ -22,7 +22,7 @@ This group filters out windows machines with huntress agent installed on them.
 
 ## Criteria
 
-![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_2.png)
+![Image](../../../static/img/Machines-with-Huntress-Agent/image_2.png)
 
 - Installed Software contains any of `Huntress Agent`
 - OS Product Contains of `Windows`
@@ -31,9 +31,10 @@ This group filters out windows machines with huntress agent installed on them.
 ## Group
 
 Once adding the above criteria, click the Save button to Save the Group.  
-![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_3.png)
+![Image](../../../static/img/Machines-with-Huntress-Agent/image_3.png)
 
-![Image](..\..\..\static\img\Machines-with-Huntress-Agent\image_4.png)
+![Image](../../../static/img/Machines-with-Huntress-Agent/image_4.png)
+
 
 
 

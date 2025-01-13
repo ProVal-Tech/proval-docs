@@ -22,7 +22,7 @@ This Group contains the machines which are eligible for threatlocker deployment 
 |---------------------------|-----------------------------------------|-----------------------------------------------------------------------------|
 | Deploy Threatlocker       | Dynamic Group                          | This Group contains the machines which are eligible for threatlocker deployment and doesn't have threatlocker on them |
 
-![Image](..\..\..\static\img\Deploy-Threatlocker\image_1.png)
+![Image](../../../static/img/Deploy-Threatlocker/image_1.png)
 
 ## Criteria
 
@@ -38,7 +38,7 @@ This group is divided into two blocks to work for both Mac and Windows machines:
 - ThreatLockerAuthKey should not be equal to "NA"
 - OS should be all Windows machines except EOS machines like Windows 7, 8, XP, 2008 Server, etc.
 
-![Image](..\..\..\static\img\Deploy-Threatlocker\image_2.png)
+![Image](../../../static/img/Deploy-Threatlocker/image_2.png)
 
 **For the Second block:**  
 Add another block joining with OR and set the criteria as follows:
@@ -50,14 +50,15 @@ Add another block joining with OR and set the criteria as follows:
 - ThreatLockerMacGroupKey should not be equal to "NA"
 - OS should be MAC machines.
 
-![Image](..\..\..\static\img\Deploy-Threatlocker\image_3.png)
+![Image](../../../static/img/Deploy-Threatlocker/image_3.png)
 
 ## Group
 
 Once the above criteria, click the Save button to Save the Group.
 
-![Image](..\..\..\static\img\Deploy-Threatlocker\image_4.png)
+![Image](../../../static/img/Deploy-Threatlocker/image_4.png)
 
-![Image](..\..\..\static\img\Deploy-Threatlocker\image_5.png)
+![Image](../../../static/img/Deploy-Threatlocker/image_5.png)
+
 
 

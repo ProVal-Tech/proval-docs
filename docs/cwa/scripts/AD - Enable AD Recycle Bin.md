@@ -17,7 +17,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\AD---Enable-AD-Recycle-Bin\image_1.png)
+![Sample Run](../../../static/img/AD---Enable-AD-Recycle-Bin/image_1.png)
 
 ## Dependencies
 
@@ -66,6 +66,7 @@ Not Supported
 Outdated  
 
 `The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. Minimum version required is above 3.0 and the current version is @PSVersion@.`  
+
 
 
 

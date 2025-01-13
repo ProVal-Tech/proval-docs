@@ -18,19 +18,19 @@ Intended Target: Domain Controllers with Automate agent deployment GPO
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals\image_1.png)
+![Sample Run](../../../static/img/CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals/image_1.png)
 
 ## Implementation
 
 Step 1: Create a computer-level EDF "Automate Agent Deployment GPO Enabled".
 
-![Step 1](..\..\..\static\img\CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals\image_2.png)
+![Step 1](../../../static/img/CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals/image_2.png)
 
 Step 2: Create an Auto-Join Group for the machines where the EDF is checked. 
 
 Step 3: Schedule the script to run once per day against the group. 
 
-![Step 3](..\..\..\static\img\CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals\image_3.png)
+![Step 3](../../../static/img/CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals/image_3.png)
 
 Step 4: Now mark the EDF of the Domain Controllers where you would like to create the Agent Deployment GPO.
 
@@ -51,7 +51,7 @@ Step 4: Now mark the EDF of the Domain Controllers where you would like to creat
 
 | Name        | Example                                   | Required | Description                       |
 |-------------|-------------------------------------------|----------|-----------------------------------|
-| Directory   | C:\ProgramData\_Automation\Automate Agent | True     | Path to create the .ps1 script    |
+| Directory   | C:/ProgramData/_Automation/Automate Agent | True     | Path to create the .ps1 script    |
 | FileName    | Redo-Agent.ps1                           | True     | Name of the .ps1 script           |
 
 #### Script States
@@ -75,10 +75,11 @@ Step 4: Now mark the EDF of the Domain Controllers where you would like to creat
 
 - Script State
 - Script Log
-- Local File on the computer (C:\ProgamData\_Automation\Automate Agent\Redo-Agent.ps1)
+- Local File on the computer (C:/ProgamData/_Automation/Automate Agent/Redo-Agent.ps1)
 
 ## Creating Automate Agent Deployment GPO
 
 <iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0"></iframe>
+
 
 

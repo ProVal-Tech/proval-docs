@@ -26,10 +26,11 @@ The internal monitor should be explicitly limited to the following groups:
 - Service Plans.Windows Servers.Server Roles.Windows Database Servers
 - Service Plans.Windows Servers.Server Roles.MSP Specific Servers
 
-![Image](..\..\..\static\img\Local-Machine-Certificate-Audit\image_1.png)
+![Image](../../../static/img/Local-Machine-Certificate-Audit/image_1.png)
 
 ## Alert Template
 
 **Name:**  △ Custom - Local Machine Certificate Audit
+
 
 

@@ -19,10 +19,10 @@ Agent procedure updates/installs the Egnyte software. It kills all Office applic
 | 7:09:06 pm 2-May-23    | Egnyte - Install            | Success THEN                                                                                         | derek.joniak  |
 | 7:08:10 pm 2-May-23    | Egnyte - Install-0003      | Cleanup performed                                                                                    | derek.joniak  |
 | 7:08:10 pm 2-May-23    | Delete Folder               | Success THEN                                                                                         | derek.joniak  |
-| 7:08:10 pm 2-May-23    | Delete Folder-0019         | Success! %ProgramData%\_automation\AgentProcedure\EgnyteInstall folder has been removed.           | derek.joniak  |
-| 7:08:08 pm 2-May-23    | Delete Folder-0013         | Directory %ProgramData%\_automation\AgentProcedure\EgnyteInstall is not empty but recursive delete is enabled - removing... | derek.joniak  |
-| 7:08:07 pm 2-May-23    | Delete Folder-0009         | %ProgramData%\_automation\AgentProcedure\EgnyteInstall folder exists.                              | derek.joniak  |
-| 7:08:06 pm 2-May-23    | Delete Folder-0004         | Directory contains a \. This should be a Windows folder.                                           | derek.joniak  |
+| 7:08:10 pm 2-May-23    | Delete Folder-0019         | Success! %ProgramData%/_automation/AgentProcedure/EgnyteInstall folder has been removed.           | derek.joniak  |
+| 7:08:08 pm 2-May-23    | Delete Folder-0013         | Directory %ProgramData%/_automation/AgentProcedure/EgnyteInstall is not empty but recursive delete is enabled - removing... | derek.joniak  |
+| 7:08:07 pm 2-May-23    | Delete Folder-0009         | %ProgramData%/_automation/AgentProcedure/EgnyteInstall folder exists.                              | derek.joniak  |
+| 7:08:06 pm 2-May-23    | Delete Folder-0004         | Directory contains a /. This should be a Windows folder.                                           | derek.joniak  |
 | 7:03:06 pm 2-May-23    | Egnyte - Install-0003      | Egnyte installed, waiting 5 minutes to prompt for reboot                                           | derek.joniak  |
 | 7:02:47 pm 2-May-23    | Egnyte - Install-0003      | File Copied. Starting Installation.                                                                 | derek.joniak  |
 | 7:02:10 pm 2-May-23    | Execute Powershell Command  | Success THEN                                                                                         | derek.joniak  |
@@ -42,5 +42,6 @@ Procedure requires the custom field to run: [https://proval.itglue.com/DOC-50787
 ## Output
 
 Agent Logs
+
 
 

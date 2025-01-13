@@ -36,3 +36,4 @@ The active directory plugin must be installed and configured properly to detect 
 | Last logon               | Displays the Last Login date and time               |
 
 
+

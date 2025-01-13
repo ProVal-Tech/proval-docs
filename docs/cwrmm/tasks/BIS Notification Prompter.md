@@ -13,13 +13,13 @@ unlisted: false
 This script utilizes the BISNotification.exe from the ProVal file repo and sends a custom message to the user's machine once to the logged-in user if detected.  
 Note: The user parameters are not mandatory. If the user parameters are not set, then a default pop-up is set for the logged-in user. It is as shown below:
 
-![Default Pop-up](..\..\..\static\img\BIS-Notification-Prompter\image_1.png)
+![Default Pop-up](../../../static/img/BIS-Notification-Prompter/image_1.png)
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\BIS-Notification-Prompter\image_2.png)  
-![Sample Run 2](..\..\..\static\img\BIS-Notification-Prompter\image_3.png)  
-![Sample Run 3](..\..\..\static\img\BIS-Notification-Prompter\image_4.png)
+![Sample Run 1](../../../static/img/BIS-Notification-Prompter/image_2.png)  
+![Sample Run 2](../../../static/img/BIS-Notification-Prompter/image_3.png)  
+![Sample Run 3](../../../static/img/BIS-Notification-Prompter/image_4.png)
 
 ## User Parameters
 
@@ -32,35 +32,35 @@ Note: The user parameters are not mandatory. If the user parameters are not set,
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Step 1](..\..\..\static\img\BIS-Notification-Prompter\image_5.png)  
-![Task Creation Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_6.png)  
+![Task Creation Step 1](../../../static/img/BIS-Notification-Prompter/image_5.png)  
+![Task Creation Step 2](../../../static/img/BIS-Notification-Prompter/image_6.png)  
 
 **Name:** BIS Notification Prompter  
 **Description:** This script utilizes the BISNotification.exe from the ProVal file repo and sends a custom message to the user's machine once to the logged-in user if detected.  
 **Category:** Maintenance  
-![Task Creation Step 3](..\..\..\static\img\BIS-Notification-Prompter\image_7.png)  
+![Task Creation Step 3](../../../static/img/BIS-Notification-Prompter/image_7.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\BIS-Notification-Prompter\image_8.png)  
+![Add Row](../../../static/img/BIS-Notification-Prompter/image_8.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\BIS-Notification-Prompter\image_9.png)  
+![Blank Function](../../../static/img/BIS-Notification-Prompter/image_9.png)  
 
 ## Row 1 Function: PowerShell Script
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_10.png)  
+![Add Row Step 2](../../../static/img/BIS-Notification-Prompter/image_10.png)  
 
 A blank function will appear.  
-![Blank Function Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_11.png)  
+![Blank Function Step 2](../../../static/img/BIS-Notification-Prompter/image_11.png)  
 
 Search and select the `PowerShell Script` function.  
-![Select PowerShell Script](..\..\..\static\img\BIS-Notification-Prompter\image_12.png)  
+![Select PowerShell Script](../../../static/img/BIS-Notification-Prompter/image_12.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Function](..\..\..\static\img\BIS-Notification-Prompter\image_13.png)  
+![PowerShell Function](../../../static/img/BIS-Notification-Prompter/image_13.png)  
 
 Paste in the following PowerShell script and leave the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -68,8 +68,8 @@ Paste in the following PowerShell script and leave the expected time of script e
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 #region Setup - Variables
 $URL = 'https://file.provaltech.com/repo/app/BISNotification.exe'
-$WorkingDirectory = 'C:\\ProgramData\\_automation\\app\\BISNotification'
-$EXEPath = "$WorkingDirectory\\BISNotification.exe"
+$WorkingDirectory = 'C://ProgramData//_automation//app//BISNotification'
+$EXEPath = "$WorkingDirectory//BISNotification.exe"
 #endregion
 
 #region Setup - Folder Structure
@@ -110,8 +110,8 @@ if ($Phone -match '[0-9]') {
 $TaskName = 'BIS Notification'
 $Description = 'Running BIS Notification app to send the prompt'
 $ProjectName = 'BISNotification'
-$WorkingDirectory = "C:\\ProgramData\\_automation\\app\\$ProjectName"
-$TaskFile = "$WorkingDirectory\\$ProjectName.exe"
+$WorkingDirectory = "C://ProgramData//_automation//app//$ProjectName"
+$TaskFile = "$WorkingDirectory//$ProjectName.exe"
 $TaskCheck = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
 
 if ($TaskCheck) {
@@ -138,46 +138,46 @@ try {
 }
 ```
 
-![PowerShell Function Step 3](..\..\..\static\img\BIS-Notification-Prompter\image_14.png)  
+![PowerShell Function Step 3](../../../static/img/BIS-Notification-Prompter/image_14.png)  
 
 Limit this PowerShell function to run on `Windows` machines only.
 
 ## Row 2 Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](..\..\..\static\img\BIS-Notification-Prompter\image_15.png)  
-![Script Log Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_16.png)  
+![Script Log](../../../static/img/BIS-Notification-Prompter/image_15.png)  
+![Script Log Step 2](../../../static/img/BIS-Notification-Prompter/image_16.png)  
 
 ## Row 3 Logic: If/Then
 
-![If/Then Logic 1](..\..\..\static\img\BIS-Notification-Prompter\image_17.png)  
-![If/Then Logic 2](..\..\..\static\img\BIS-Notification-Prompter\image_18.png)  
+![If/Then Logic 1](../../../static/img/BIS-Notification-Prompter/image_17.png)  
+![If/Then Logic 2](../../../static/img/BIS-Notification-Prompter/image_18.png)  
 
 ## Row 3a Condition: Output Contains
 
 In the IF part, enter `An error occurred and the script was unable to be downloaded` in the right box of the "OutPut Contains" Part.  
 Add another condition with the Or operator and enter `Failed to create task` in the right box of the "OutPut Contains" Part.  
-![Output Contains Condition](..\..\..\static\img\BIS-Notification-Prompter\image_19.png)  
+![Output Contains Condition](../../../static/img/BIS-Notification-Prompter/image_19.png)  
 
 ## Row 3b Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
-![Add Row Step 3](..\..\..\static\img\BIS-Notification-Prompter\image_20.png)  
+![Add Row Step 3](../../../static/img/BIS-Notification-Prompter/image_20.png)  
 
 In the script exit message, simply type `%Output%`.  
-![Script Exit](..\..\..\static\img\BIS-Notification-Prompter\image_21.png)  
+![Script Exit](../../../static/img/BIS-Notification-Prompter/image_21.png)  
 
 ## Row 4 Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
-![Add Row Step 4](..\..\..\static\img\BIS-Notification-Prompter\image_20.png)  
+![Add Row Step 4](../../../static/img/BIS-Notification-Prompter/image_20.png)  
 
 In the script exit message, leave it empty.  
-![Script Exit Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_22.png)  
+![Script Exit Step 2](../../../static/img/BIS-Notification-Prompter/image_22.png)  
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\BIS-Notification-Prompter\image_23.png)  
+![Completed Task](../../../static/img/BIS-Notification-Prompter/image_23.png)  
 
 ## Implementation
 
@@ -187,30 +187,31 @@ This task can be scheduled manually on-demand to any agent or to a certain group
 2. Search for `BIS Notification Prompter` Task.
 3. Select the concerned task.
 4. Click on `Schedule` the button to schedule the task/script.  
-   ![Schedule Task](..\..\..\static\img\BIS-Notification-Prompter\image_24.png)
+   ![Schedule Task](../../../static/img/BIS-Notification-Prompter/image_24.png)
 5. This screen will appear.  
-   ![Schedule Task Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_25.png)  
+   ![Schedule Task Step 2](../../../static/img/BIS-Notification-Prompter/image_25.png)  
    Please set the parameters as required to customize the notification:  
-   ![Schedule Task Step 3](..\..\..\static\img\BIS-Notification-Prompter\image_26.png)
+   ![Schedule Task Step 3](../../../static/img/BIS-Notification-Prompter/image_26.png)
 6. Select the `Schedule` button and click the calendar looking button present in front of the `Recurrence` option.  
-   ![Recurrence Option](..\..\..\static\img\BIS-Notification-Prompter\image_27.png)
+   ![Recurrence Option](../../../static/img/BIS-Notification-Prompter/image_27.png)
 7. Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.  
-   ![Save Schedule](..\..\..\static\img\BIS-Notification-Prompter\image_28.png)
+   ![Save Schedule](../../../static/img/BIS-Notification-Prompter/image_28.png)
 8. Click the `Select Targets` button to select the concerned target.  
-   ![Select Targets](..\..\..\static\img\BIS-Notification-Prompter\image_29.png)
+   ![Select Targets](../../../static/img/BIS-Notification-Prompter/image_29.png)
 9. Search and select the Sites, Device Groups, or Devices for the target.  
-   ![Select Devices](..\..\..\static\img\BIS-Notification-Prompter\image_30.png)
+   ![Select Devices](../../../static/img/BIS-Notification-Prompter/image_30.png)
 10. Click the `Run` button to initiate the schedule.  
-    ![Run Task](..\..\..\static\img\BIS-Notification-Prompter\image_31.png)
+    ![Run Task](../../../static/img/BIS-Notification-Prompter/image_31.png)
 
 ## Output
 
 - Script log  
   To view the logs follow the below steps:  
   Navigate to the Endpoints -> Devices  
-  ![Devices](..\..\..\static\img\BIS-Notification-Prompter\image_32.png)  
+  ![Devices](../../../static/img/BIS-Notification-Prompter/image_32.png)  
   Navigate to the right side of the screen and click on the three bars as shown below:  
-  ![Three Bars](..\..\..\static\img\BIS-Notification-Prompter\image_33.png)  
-  ![Three Bars Step 2](..\..\..\static\img\BIS-Notification-Prompter\image_34.png)  
+  ![Three Bars](../../../static/img/BIS-Notification-Prompter/image_33.png)  
+  ![Three Bars Step 2](../../../static/img/BIS-Notification-Prompter/image_34.png)  
+
 
 

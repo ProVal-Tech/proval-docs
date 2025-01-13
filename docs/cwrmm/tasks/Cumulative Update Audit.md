@@ -14,8 +14,8 @@ Executes a PowerShell script to validate the full version of the OS and compares
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Cumulative-Update-Audit\image_12.png)
-![Sample Run 2](..\..\..\static\img\Cumulative-Update-Audit\image_13.png)
+![Sample Run 1](../../../static/img/Cumulative-Update-Audit/image_12.png)
+![Sample Run 2](../../../static/img/Cumulative-Update-Audit/image_13.png)
 
 ## Dependencies
 
@@ -40,27 +40,27 @@ Create a new `Script Editor` style script in the system to implement this Task.
 **Description:** Will run a PowerShell script to validate the full version of the OS and compare that with Microsoft's database of Windows 10/11 Cumulative Updates to validate which cumulative the device has.  
 **Category:** Custom  
 
-![Script Editor](..\..\..\static\img\Cumulative-Update-Audit\image_14.png)
+![Script Editor](../../../static/img/Cumulative-Update-Audit/image_14.png)
 
 ### Script
 
 Start by adding a row. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Cumulative-Update-Audit\image_15.png)
+![Add Row](../../../static/img/Cumulative-Update-Audit/image_15.png)
 
 #### Row 1 Function: Set User Variable
 
-![Set User Variable](..\..\..\static\img\Cumulative-Update-Audit\image_16.png)
+![Set User Variable](../../../static/img/Cumulative-Update-Audit/image_16.png)
 
 Type `Threshold_Days` for Variable Name and `75` for the value. The value is the number of days to consider the latest installed Cumulative Update as obsolete. This threshold can be modified as needed.
 
 The script will return `Failed` in the Custom Field if the most recently installed Cumulative Update on the computer is older than the days stored in this variable.
 
-![Threshold Days](..\..\..\static\img\Cumulative-Update-Audit\image_17.png)
+![Threshold Days](../../../static/img/Cumulative-Update-Audit/image_17.png)
 
 #### Row 2 Function: PowerShell Script
 
-![PowerShell Script](..\..\..\static\img\Cumulative-Update-Audit\image_18.png) ![PowerShell Script 2](..\..\..\static\img\Cumulative-Update-Audit\image_19.png)
+![PowerShell Script](../../../static/img/Cumulative-Update-Audit/image_18.png) ![PowerShell Script 2](../../../static/img/Cumulative-Update-Audit/image_19.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
 
@@ -73,7 +73,7 @@ $ThresholdDays = if ( -not ($ThresholdDays -match '^[0-9]{1,}$') ) { '75' } else
 $url = 'https://proval.itglue.com/DOC-5078775-15739309'
 $iwr = Invoke-WebRequest -Uri $url -UseBasicParsing
 $json = $($iwr.content -split '&lt;code&gt;' -split '&lt;/code&gt;' ) -match 'plugin_proval_windows_os_support'
-$json = $json -replace '&lt;br&gt;', "`n" -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
+$json = $json -replace '&lt;br&gt;', "`n" -replace '//', '//' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
 $rows = ( $json | ConvertFrom-Json ).rows
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
 if ( !( $osinfo.caption -match '(Windows 1[01])|(Server 20(1[69]|22))' ) ) {
@@ -122,14 +122,14 @@ $comparisionurl = if ( $osinfo.Name -Match '(Windows 10)|(Server 201[69])' ) {
 if ( $comparisionurl -eq 'Unsupported Operating System' ) {
     throw $comparisionurl
 }
-$UBR = (Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' -ErrorAction SilentlyContinue).UBR
+$UBR = (Get-ItemProperty 'HKLM://SOFTWARE//Microsoft//Windows NT//CurrentVersion' -ErrorAction SilentlyContinue).UBR
 $Build = "$($osinfo.buildnumber).$($UBR)"
 $OSBuild = "$((($osinfo).Version).$($UBR))"
-if (!($Build -match '[0-9]{5}\\.[0-9]{3,5}')) {
+if (!($Build -match '[0-9]{5}//.[0-9]{3,5}')) {
     $OSBuild = (cmd.exe /c ver)
-    $OSBuild = ($OSBuild -replace '[\\[\\]A-z\\s]', '')[1]
-    $Build = ($OsBuild -split '\\.')[2, 3] -join '.'
-    if (!($build -match '[0-9]{5}\\.[0-9]{3,5}')) {
+    $OSBuild = ($OSBuild -replace '[//[//]A-z//s]', '')[1]
+    $Build = ($OsBuild -split '//.')[2, 3] -join '.'
+    if (!($build -match '[0-9]{5}//.[0-9]{3,5}')) {
         throw 'Failed to gather build number'
     }
 }
@@ -141,8 +141,8 @@ if ( !( $osinfo.Name -Match 'Server 2022' ) ) {
         $ReleaseDate = $($($Kbhtml -split '&lt;td&gt;' -split '&lt;/td&gt;') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $KBid = ''
     } else {
-        $KBid = $($($KBhtml -split '\"&gt;' -split '&lt;/a') -Match 'KB[0-9]{7}').Trim()
-        $SupportURL = $($($Kbhtml -Split '=\"' -split '\"') -match 'https').Trim()
+        $KBid = $($($KBhtml -split '/"&gt;' -split '&lt;/a') -Match 'KB[0-9]{7}').Trim()
+        $SupportURL = $($($Kbhtml -Split '=/"' -split '/"') -match 'https').Trim()
         $ReleaseDate = $($($Kbhtml -split '&lt;td&gt;' -split '&lt;/td&gt;') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $PatchInfoHTML = (Invoke-WebRequest -Uri $SupportUrl -UseBasicParsing).Links.OuterHTML
         $PatchInfoHTML = ($PatchInfoHTML -Match $KBid)[0]
@@ -159,7 +159,7 @@ if ( !( $osinfo.Name -Match 'Server 2022' ) ) {
 $Month = $([datetime]$releasedate).Tostring('MMMM')
 $CUString = "$ReleaseDate $KBid $Month Cumulative Update$(if($patchInfoString -Match 'Preview') {' Preview'})"
 $CUInfo = [PSCustomObject]@{
-    LastInstalledCU = if ( $kbid -notmatch '[0-9]') { $null } else { $CUString -replace '\\\\', '\\\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'" };
+    LastInstalledCU = if ( $kbid -notmatch '[0-9]') { $null } else { $CUString -replace '////', '////' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" };
     OSBuild = $OSBuild
     ReleaseDate = $ReleaseDate
     KBid = $KBid
@@ -179,36 +179,36 @@ Save and move to the next row.
 
 #### Row 3 function: Script Log
 
-![Script Log](..\..\..\static\img\Cumulative-Update-Audit\image_20.png)
+![Script Log](../../../static/img/Cumulative-Update-Audit/image_20.png)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Output](..\..\..\static\img\Cumulative-Update-Audit\image_21.png)
+![Script Log Output](../../../static/img/Cumulative-Update-Audit/image_21.png)
 
 #### Row 4 Function: Set Custom Field
 
 Add a new row by clicking on Add row button.
 
-![Set Custom Field](..\..\..\static\img\Cumulative-Update-Audit\image_22.png)
+![Set Custom Field](../../../static/img/Cumulative-Update-Audit/image_22.png)
 
 Select `Set Custom Field` Function.
 
-![Select Custom Field](..\..\..\static\img\Cumulative-Update-Audit\image_23.png)
+![Select Custom Field](../../../static/img/Cumulative-Update-Audit/image_23.png)
 
 When you select `set custom field`, that will open up a new window.
 
-![Custom Field Window](..\..\..\static\img\Cumulative-Update-Audit\image_24.png)
+![Custom Field Window](../../../static/img/Cumulative-Update-Audit/image_24.png)
 
 In this window, search for `Latest Cumulative Update` field.
 
 **Custom Field:** Latest Cumulative Update  
 **Value:** %Output%
 
-![Custom Field Value](..\..\..\static\img\Cumulative-Update-Audit\image_25.png)
+![Custom Field Value](../../../static/img/Cumulative-Update-Audit/image_25.png)
 
 Once all items are added, please save the task. The final task should look like the below screenshot.
 
-![Final Task](..\..\..\static\img\Cumulative-Update-Audit\image_26.png)
+![Final Task](../../../static/img/Cumulative-Update-Audit/image_26.png)
 
 ## Deployment
 
@@ -219,42 +219,43 @@ It is suggested to run the Task once per month against Windows computers.
 - Select the concerned task.
 - Click on `Schedule` button to schedule the task/script.
 
-![Schedule Task](..\..\..\static\img\Cumulative-Update-Audit\image_27.png)
+![Schedule Task](../../../static/img/Cumulative-Update-Audit/image_27.png)
 
 This screen will appear.
 
-![Schedule Screen](..\..\..\static\img\Cumulative-Update-Audit\image_28.png)
+![Schedule Screen](../../../static/img/Cumulative-Update-Audit/image_28.png)
 
 Select the relevant time to run the script and click the Does not repeat button.
 
-![Select Time](..\..\..\static\img\Cumulative-Update-Audit\image_29.png)
+![Select Time](../../../static/img/Cumulative-Update-Audit/image_29.png)
 
 This pop-up box will appear.
 
-![Repeat Interval](..\..\..\static\img\Cumulative-Update-Audit\image_30.png)
+![Repeat Interval](../../../static/img/Cumulative-Update-Audit/image_30.png)
 
 Change the Repeat interval to once per Month. Here, I am selecting 15th of every month, since Microsoft releases the patches on the second Tuesday of every month.
 
-![Repeat Interval Selection](..\..\..\static\img\Cumulative-Update-Audit\image_31.png) ![Repeat Interval Confirmation](..\..\..\static\img\Cumulative-Update-Audit\image_32.png)
+![Repeat Interval Selection](../../../static/img/Cumulative-Update-Audit/image_31.png) ![Repeat Interval Confirmation](../../../static/img/Cumulative-Update-Audit/image_32.png)
 
 Search for `windows` in the `Resources*` and select `Windows Desktops` and `Windows Servers` groups. You can search and select any relevant group you would like to schedule the task against.
 
-![Select Resources](..\..\..\static\img\Cumulative-Update-Audit\image_33.png)
+![Select Resources](../../../static/img/Cumulative-Update-Audit/image_33.png)
 
 Now click the `Run` button to initiate the task.
 
-![Run Task](..\..\..\static\img\Cumulative-Update-Audit\image_34.png)
+![Run Task](../../../static/img/Cumulative-Update-Audit/image_34.png)
 
 The task will start appearing in the Scheduled Tasks.
 
-![Scheduled Tasks](..\..\..\static\img\Cumulative-Update-Audit\image_35.png) ![Scheduled Tasks 2](..\..\..\static\img\Cumulative-Update-Audit\image_36.png)
+![Scheduled Tasks](../../../static/img/Cumulative-Update-Audit/image_35.png) ![Scheduled Tasks 2](../../../static/img/Cumulative-Update-Audit/image_36.png)
 
 ## Output
 
 - Script log
-![Script Log Output](..\..\..\static\img\Cumulative-Update-Audit\image_37.png)
+![Script Log Output](../../../static/img/Cumulative-Update-Audit/image_37.png)
 
 - Custom Field
-![Custom Field Output](..\..\..\static\img\Cumulative-Update-Audit\image_38.png)
+![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
+
 
 

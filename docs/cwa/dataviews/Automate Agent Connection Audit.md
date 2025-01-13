@@ -61,3 +61,4 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 | Days since Data Collection       | Number of days the current calculations displayed in the dataview is based upon. It may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. It is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`. |
 
 
+

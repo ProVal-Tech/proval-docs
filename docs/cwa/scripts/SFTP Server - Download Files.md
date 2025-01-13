@@ -23,19 +23,19 @@ Setting the required details to execute the script into a client-level password 
 - **URL:** Store the hostname of the SFTP server in the URL field.
 
 - **Password:** The password should belong to the user stored in the `User Name` field.  
-  ![Password Entry](..\..\..\static\img\SFTP-Server---Download-Files\image_1.png)
+  ![Password Entry](../../../static/img/SFTP-Server---Download-Files/image_1.png)
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\SFTP-Server---Download-Files\image_2.png)
+![Sample Run](../../../static/img/SFTP-Server---Download-Files/image_2.png)
 
 ## Variables
 
 | Name              | Description                                         |
 |-------------------|-----------------------------------------------------|
 | ProjectName       | Get-SFTPFile                                       |
-| WorkingDirectory   | C:\ProgramData\_Automation\Script\Get-SFTPFile    |
-| ScriptPath        | C:\ProgramData\_Automation\Script\Get-SFTPFile\Get-SFTPFile.ps1 |
+| WorkingDirectory   | C:/ProgramData/_Automation/Script/Get-SFTPFile    |
+| ScriptPath        | C:/ProgramData/_Automation/Script/Get-SFTPFile/Get-SFTPFile.ps1 |
 
 ## User Parameters
 
@@ -43,10 +43,11 @@ Setting the required details to execute the script into a client-level password 
 |------------------------|-----------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
 | SFTP_Password_Title    | SFTP Creds - Win11 Download       | True     | Title of the Password Stored at the client's Password tab to download the required file from the SFTP server.         |
 | File_Path              | Win11_23H2_Enterprise.iso         | True     | Full path to download from the SFTP Server. If the file is placed at the root level in the SFTP server then use the file's name as illustrated in the sample run. |
-| Destination_Path       | C:\Windows\LTSvc\Packages\Win11ISO | False    | Full path of the directory on the end machine to store the downloaded file. By default, the script will download the file into the `C:\temp` if this parameter is not set. |
+| Destination_Path       | C:/Windows/LTSvc/Packages/Win11ISO | False    | Full path of the directory on the end machine to store the downloaded file. By default, the script will download the file into the `C:/temp` if this parameter is not set. |
 
 ## Output
 
 - Script Logs
+
 
 

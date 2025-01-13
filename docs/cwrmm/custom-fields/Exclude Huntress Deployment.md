@@ -14,14 +14,15 @@ Select this custom Field to exclude a machine from Huntress Deployment. It is be
 
 # Create the Custom Field
 
-![Image](..\..\..\static\img\Exclude-Huntress-Deployment\image_1.png)
+![Image](../../../static/img/Exclude-Huntress-Deployment/image_1.png)
 
-![Image](..\..\..\static\img\Exclude-Huntress-Deployment\image_2.png)
+![Image](../../../static/img/Exclude-Huntress-Deployment/image_2.png)
 
 **Name:** Exclude Huntress  
 **Type:** Flag  
 **Level:** Endpoint  
 **Description:** Select to Exclude Endpoint from Huntress Deployment  
 **Editable:** Yes  
+
 
 

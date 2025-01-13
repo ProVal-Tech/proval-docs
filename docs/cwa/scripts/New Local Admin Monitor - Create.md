@@ -12,11 +12,11 @@ unlisted: false
 
 This document describes the process for creating remote monitors to identify new or elevated local administrators on Windows machines. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
 
-The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN\Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
+The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
 
 The generated remote monitors `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](https://proval.itglue.com/DOC-5078775-14068833) agnostic script to perform the monitoring.
 
-**File Path:** `C:\ProgramData\_Automation\Script\Get-NewLocalAdmin\Get-NewLocalAdmin.ps1`
+**File Path:** `C:/ProgramData/_Automation/Script/Get-NewLocalAdmin/Get-NewLocalAdmin.ps1`
 
 **File Hash:** `D841B4464A5CE301454990B53896118EC57427935335AEDD116024559BA89FFC`
 
@@ -36,7 +36,7 @@ The `ProVal - Production - New Local Admin Monitor` remote monitor will not be c
 
 The solution's Extra Data Fields have been modified. Update the script from the `Prosync` plugin and run/debug against any client with `Set_Environment` as `1` to implement the changes.
 
-![Update Notice](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_1.png)
+![Update Notice](../../../static/img/New-Local-Admin-Monitor---Create/image_1.png)
 
 ## Implementation
 
@@ -47,13 +47,13 @@ The solution's Extra Data Fields have been modified. Update the script from the 
     `Delete From Groupagents where Name = 'ProVal - Production - New Local Admin'`
   
 - Open the 'Server Status' tool by navigating to `Help > Server Status.`  
-  ![Server Status](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_2.png)
+  ![Server Status](../../../static/img/New-Local-Admin-Monitor---Create/image_2.png)
 
 - Click the 'Do Group Refresh' button to refresh and apply the changes made.  
-  ![Do Group Refresh](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_3.png)
+  ![Do Group Refresh](../../../static/img/New-Local-Admin-Monitor---Create/image_3.png)
 
 - Click 'OK' to the popup message and wait for a minute to allow the changes to take effect.  
-  ![OK Popup](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_4.png)
+  ![OK Popup](../../../static/img/New-Local-Admin-Monitor---Create/image_4.png)
 
 1. Import the `△ Custom - Ticket Creation - Computer - Failures Only` alert template from the `ProSync` plugin if it's missing in the environment.
 
@@ -61,22 +61,22 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 
 3. **Run/Debug the Script**  
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  
-   ![Run/Debug Script](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_5.png)  
-   ![Run/Debug Script](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_1.png)
+   ![Run/Debug Script](../../../static/img/New-Local-Admin-Monitor---Create/image_5.png)  
+   ![Run/Debug Script](../../../static/img/New-Local-Admin-Monitor---Create/image_1.png)
 
 4. **Reload System Cache**  
    - Refresh the system cache to ensure all changes are updated.  
-   ![Reload System Cache](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_6.png)
+   ![Reload System Cache](../../../static/img/New-Local-Admin-Monitor---Create/image_6.png)
 
 5. **Configure System Properties and EDFs**  
    - Navigate to the **System Dashboard -> Config -> Configurations -> Properties**.
    - Find the properties beginning with `NLA_Monitoring`.  
-   ![Configure Properties](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_7.png)  
+   ![Configure Properties](../../../static/img/New-Local-Admin-Monitor---Create/image_7.png)  
      The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 6. **Schedule the Script**  
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.  
-   ![Schedule Script](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_8.png)
+   ![Schedule Script](../../../static/img/New-Local-Admin-Monitor---Create/image_8.png)
 
 ## Dependencies
 
@@ -112,13 +112,13 @@ The solution's Extra Data Fields have been modified. Update the script from the 
        - Enabled for Servers and Workstations  
    - Default Option: Enabled for Servers and Workstations  
    - Leaving this EDF blank is equivalent to enabling for both servers and workstations.  
-   ![Client-Level EDF](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_9.png)
+   ![Client-Level EDF](../../../static/img/New-Local-Admin-Monitor---Create/image_9.png)
 
 8. **Excluded_Users**  
    - This EDF stores the usernames to exclude from generating the new local admin-detected tickets.  
    - The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NLA_Monitoring_Excluded_Users` system property.  
    - The username stored in the `1c. UserName` EDF will be excluded from the remote monitor if the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution is enabled on the machine and it is using the username stored in the EDF.  
-   ![Excluded Users EDF](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_10.png)
+   ![Excluded Users EDF](../../../static/img/New-Local-Admin-Monitor---Create/image_10.png)
 
 ## Computer-Level EDF
 
@@ -138,13 +138,13 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 `<Newly Created Local Admin(s)>`
 
 **Sample Ticket:**  
-![Sample Ticket](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_11.png)  
+![Sample Ticket](../../../static/img/New-Local-Admin-Monitor---Create/image_11.png)  
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
 
 **Sample Remote Monitor:**  
-![Sample Remote Monitor](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_12.png)  
-![Sample Remote Monitor](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_13.png)  
-![Sample Remote Monitor](..\..\..\static\img\New-Local-Admin-Monitor---Create\image_14.png)
+![Sample Remote Monitor](../../../static/img/New-Local-Admin-Monitor---Create/image_12.png)  
+![Sample Remote Monitor](../../../static/img/New-Local-Admin-Monitor---Create/image_13.png)  
+![Sample Remote Monitor](../../../static/img/New-Local-Admin-Monitor---Create/image_14.png)
 
 ## Output
 
@@ -163,5 +163,6 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 - **5:** **Primary Domain Controller (PDC)** — The computer is a Primary Domain Controller (PDC) in the domain. It handles user logins and manages the domain.
 
 So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meaning that it continues if the machine is **not** a domain controller.
+
 
 

@@ -38,19 +38,19 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 
 2. **Reload the system cache:**
 
-   ![Reload System Cache](..\..\static\img\Updating-the-WinRE-Partition\image_1.png)
+   ![Reload System Cache](../../static/img/Updating-the-WinRE-Partition/image_1.png)
 
 3. **Enable Solution:**
 
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:  
      [Internal Monitor - Update WinRE Partition Detection](https://proval.itglue.com/DOC-5078775-15725325)  
-     ![Setup Internal Monitor](..\..\static\img\Updating-the-WinRE-Partition\image_2.png)  
+     ![Setup Internal Monitor](../../static/img/Updating-the-WinRE-Partition/image_2.png)  
 
    - Setup with **△ Custom - Execute Script - WinRE Partition Updating** alert template.  
-     ![Setup Custom Alert Template](..\..\static\img\Updating-the-WinRE-Partition\image_3.png)  
+     ![Setup Custom Alert Template](../../static/img/Updating-the-WinRE-Partition/image_3.png)  
 
    - Right-click and Run Now to start the monitor  
-     ![Run Now](..\..\static\img\Updating-the-WinRE-Partition\image_4.png)  
+     ![Run Now](../../static/img/Updating-the-WinRE-Partition/image_4.png)  
 
    - The automation will automatically update the WinRE partition to all the supported OS.
 
@@ -62,13 +62,14 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 5. **Ticket/Email Creation:**
 
    - The script has a feature to enable ticketing or sending emails. To set ticketing, it is required to set the ticket category in the monitor itself:  
-     ![Set Ticket Category](..\..\static\img\Updating-the-WinRE-Partition\image_5.png)  
+     ![Set Ticket Category](../../static/img/Updating-the-WinRE-Partition/image_5.png)  
 
    - Once the ticket category is set, set the global parameter value to 1 in the script for EnableTicketing:  
-     ![Set Enable Ticketing](..\..\static\img\Updating-the-WinRE-Partition\image_6.png)  
+     ![Set Enable Ticketing](../../static/img/Updating-the-WinRE-Partition/image_6.png)  
 
    - To send emails, it is mandatory to set the Email address. Multiple email addresses can be set with a semicolon-separated  
      e.g., [abc@def.com](mailto:abc@def.com); [ghi@jkl.com](http://%3Bghi@jkl.com); [mno@pqr.com](http://%3Bmno@pqr.com)  
      Once the email address is set, you can set the value to 1 for the failureemail if you need an email only on the failure case, set 1 for successemail if you want an email for the success case, set 1 on both for both success and failure emails.
+
 
 

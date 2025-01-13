@@ -15,7 +15,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Set-NUMA-VM-Status\image_1.png)
+![Sample Run](../../../static/img/Set-NUMA-VM-Status/image_1.png)
 
 #### Script States
 
@@ -30,6 +30,7 @@ The script runs a Powershell script to get the NumaStatus. The Powershell then h
 ## Output
 
 - Script state
+
 
 
 

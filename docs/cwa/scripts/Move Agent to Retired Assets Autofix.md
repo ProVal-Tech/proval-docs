@@ -18,10 +18,11 @@ Note: This should not be ran manually, it should only be ran through the monitor
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Move-Agent-to-Retired-Assets-Autofix\image_1.png)
+![Sample Run](../../../static/img/Move-Agent-to-Retired-Assets-Autofix/image_1.png)
 
 ## Process
 
 This script runs a SQL query against the machine to retire it.
+
 
 

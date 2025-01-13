@@ -22,8 +22,9 @@ Marking this custom field will automatically add the machines to [CW RMM - Machi
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\Company---WingetUpdateAll_Task_Delete\image_1.png)
+![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Delete/image_1.png)
 
-![Screenshot 2](..\..\..\static\img\Company---WingetUpdateAll_Task_Delete\image_2.png)
+![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Delete/image_2.png)
+
 
 

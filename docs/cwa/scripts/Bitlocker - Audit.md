@@ -12,11 +12,11 @@ unlisted: false
 
 Gathers Bitlocker information from the target endpoint and stores it in the custom table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520). Creates a tpm table named `plugin_proval_tpm_audit` and populates that table with TPM data. Creates a backup text document with the recovery password in the ltshare for the target machine.
 
-**File Path:** `C:\ProgramData\_Automation\Script\Bitlocker_Audit\Bitlocker_Audit.ps1`  
+**File Path:** `C:/ProgramData/_Automation/Script/Bitlocker_Audit/Bitlocker_Audit.ps1`  
 **File Hash (SHA256):** `4C4E524791404130BA61E50C287681010F4D9161766945C36411AEAD23588CFF`  
 **File Hash (MD5):** `C8373016D05CE365885AF644F8C9773B`  
 
-**File Path:** `C:\ProgramData\_Automation\Script\Bitlocker_Audit\TPM_Audit.ps1`  
+**File Path:** `C:/ProgramData/_Automation/Script/Bitlocker_Audit/TPM_Audit.ps1`  
 **File Hash (SHA256):** `36BDC7BDE052953BE5DB9324F6E00730C2E0494BC74121BE690CD16117FFF058`  
 **File Hash (MD5):** `B332B23E8155ACC256D9737322A7ADF1`  
 
@@ -25,10 +25,10 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 ## Sample Run
 
 **First Run:** Run the script against any online windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution.  
-![First Run](..\..\..\static\img\Bitlocker---Audit\image_1.png)
+![First Run](../../../static/img/Bitlocker---Audit/image_1.png)
 
 **Regular Execution:**  
-![Regular Execution](..\..\..\static\img\Bitlocker---Audit\image_2.png)
+![Regular Execution](../../../static/img/Bitlocker---Audit/image_2.png)
 
 ## Dependencies
 
@@ -54,19 +54,20 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 | Name                | Description                                                  |
 |---------------------|--------------------------------------------------------------|
 | ProjectName         | Bitlocker_Audit                                             |
-| WorkingDirectory     | `C:\ProgramData\_automation\script\Bitlocker_Audit`        |
+| WorkingDirectory     | `C:/ProgramData/_automation/script/Bitlocker_Audit`        |
 | PsOutBitlocker      | Output of the PowerShell script performing Bitlocker Audit  |
 | PsOutTPM            | Output of the PowerShell script performing TPM Audit        |
 | Count               | Iteration used for the loop generating Recovery Key Backup File for each drive |
 | DriveLetter         | Drive letter with ":" removed from the end                  |
-| FilePath            | `C:\ProgramData\_automation\script\Bitlocker_Audit\Bitlocker_Recovery_Key_@DriveLetter@.txt` |
+| FilePath            | `C:/ProgramData/_automation/script/Bitlocker_Audit/Bitlocker_Recovery_Key_@DriveLetter@.txt` |
 | Content             | The content of the created backup file                       |
 
 ## Output
 
 - Custom table
 - Dataview
-- Backup file under LTshare at "LTShare\Uploads\<ClientName>\<ComputerName (Computerid)>"
+- Backup file under LTshare at "LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>"
+
 
 
 

@@ -71,9 +71,10 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://
 
 ## Output
 
-- .\Remove-Sophos-Log.txt
-- .\Remove-Sophos-Error.txt
+- ./Remove-Sophos-Log.txt
+- ./Remove-Sophos-Error.txt
 - Agent Procedure Log
+
 
 
 

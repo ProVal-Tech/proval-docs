@@ -14,7 +14,7 @@ This script audits the scheduled task to see what user account tasks are running
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Scheduled-Task-Audit\image_1.png)
+![Sample Run](../../static/img/Scheduled-Task-Audit/image_1.png)
 
 ## Variables
 
@@ -35,7 +35,7 @@ This script audits the scheduled task to see what user account tasks are running
 
 ## Process
 
-This script creates a table named "plugin_proval_scheduled_tasks" to store the scheduled task details in it. It then creates a ps1 file on the agent to the path "C:\ProgramData\_automation\script\@ProjectName@\ScheduledTaskAudit.ps1". It executes the ps1 using shell and stores the data into the JSON file. The JSON file is converted and then pushed into the table.
+This script creates a table named "plugin_proval_scheduled_tasks" to store the scheduled task details in it. It then creates a ps1 file on the agent to the path "C:/ProgramData/_automation/script/@ProjectName@/ScheduledTaskAudit.ps1". It executes the ps1 using shell and stores the data into the JSON file. The JSON file is converted and then pushed into the table.
 
 ## Output
 
@@ -43,6 +43,7 @@ This script creates a table named "plugin_proval_scheduled_tasks" to store the s
 - plugin_proval_scheduled_tasks
 - Dataview
 - etc.
+
 
 
 

@@ -33,7 +33,7 @@ The service will be stopped and marked 'Disabled'.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------|-------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue';$ServiceName = 'UsoSvc';$service = Get-Service -Name $ServiceName;if ($service.Status -eq 'Running') {Stop-Service -Name $ServiceName -Force;$service = Get-Service -Name $ServiceName;if ($service.Status -eq 'Running') {return 'Running'}else {Set-Service -Name $ServiceName -StartupType Disabled -Confirm:$false;$service = Get-Service -Name $ServiceName;if ($service.StartType -eq 'Disabled') { return 'Disabled and Stopped'}else {return 'Stopped'}}}" | Does Not Contain | 300 | Running |
+| System       | 127.0.0.1      | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue';$ServiceName = 'UsoSvc';$service = Get-Service -Name $ServiceName;if ($service.Status -eq 'Running') {Stop-Service -Name $ServiceName -Force;$service = Get-Service -Name $ServiceName;if ($service.Status -eq 'Running') {return 'Running'}else {Set-Service -Name $ServiceName -StartupType Disabled -Confirm:$false;$service = Get-Service -Name $ServiceName;if ($service.StartType -eq 'Disabled') { return 'Disabled and Stopped'}else {return 'Stopped'}}}" | Does Not Contain | 300 | Running |
 
 ## Target
 
@@ -51,14 +51,14 @@ Update Orchestrator Service Failed to Disable at %computername%
 ---
 
 **Body**  
-Update Orchestrator Service Failed to Disable on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% with result service is: %RESULT%.  
+Update Orchestrator Service Failed to Disable on %CLIENTNAME%/%COMPUTERNAME% at %LOCATIONNAME% with result service is: %RESULT%.  
 
 ---
 
 **Success:**  
 
 **Body**  
-Update Orchestrator Service successfully %Result% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%.  
+Update Orchestrator Service successfully %Result% on %CLIENTNAME%/%COMPUTERNAME% at %LOCATIONNAME%.  
 
 ## Implementation
 
@@ -74,6 +74,7 @@ A) Yes, The **Windows Update service (wuauserv)** is essential for Windows Updat
 
 **Q. Will stopping the Update Orchestrator service impact Automate patch management?**  
 A) No, Automate's patch management relies solely on the Windows Update service and UI mode (Check for Updates), so stopping the Update Orchestrator won't affect it.
+
 
 
 

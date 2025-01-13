@@ -20,11 +20,12 @@ So, if your system locale is English (United States) and your input locale is Fr
 
 | Detection String                                                                                                                                               | Comparator | Result                           | Applicable OS |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------------------------------|----------------|
-| {@%C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$locale = (systeminfo | findstr /B /C:'Input Locale') -replace 'Input Locale:',''; $locale.trim()"@%} | Exists     | en-us;English (United States)   | Windows        |
+| {@%C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$locale = (systeminfo | findstr /B /C:'Input Locale') -replace 'Input Locale:',''; $locale.trim()"@%} | Exists     | en-us;English (United States)   | Windows        |
 
 ## Sample
 
-![Sample Image](..\..\static\img\Dynamic-Input-Language-Role\image_1.png)
+![Sample Image](../../static/img/Dynamic-Input-Language-Role/image_1.png)
+
 
 
 

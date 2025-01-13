@@ -19,44 +19,45 @@ Windows 10 computers which are compatible with Windows 11 upgrade.
 ## Group Creation 
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_1.png)
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_2.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_2.png)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_3.png)
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_3.png)
 
 3. Set the group name to `Windows 11 Compatible Machines`.  
    Description: `Windows 10 computers which are compatible with Windows 11 upgrade.`  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_4.png)
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_5.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_5.png)  
    This search box will appear.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_6.png)
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_6.png)
 
 5. Search and select the `Windows 11 compatible` custom field from the search box.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_7.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_7.png)  
    Set `Yes` in the comparison condition.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_8.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_8.png)  
    **Condition:** `Enable Windows 11 Compatible` `Contains any of` `Yes`
 
 6. Click the `+ Add Criteria` button.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_9.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_9.png)  
    A new search box will appear.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_10.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_10.png)  
    Search and select the `OS` criteria.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_11.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_11.png)  
    Select `Microsoft Windows 10` in the comparison condition.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_12.png)  
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_12.png)  
    **Condition:** `OS` `Contains any of` `Microsoft Windows 10`
 
 7. Click the `Save` button to save/create the group.  
-   ![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_13.png)
+   ![Image](../../../static/img/Windows-11-Compatible-Machines/image_13.png)
 
 ## Completed Group 
 
-![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_14.png)  
-![Image](..\..\..\static\img\Windows-11-Compatible-Machines\image_15.png)
+![Image](../../../static/img/Windows-11-Compatible-Machines/image_14.png)  
+![Image](../../../static/img/Windows-11-Compatible-Machines/image_15.png)
+
 
 

@@ -22,7 +22,7 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result                                             |
 |--------------|----------------|------------|---------------|--------------|----------|---------------------------------------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 21600    | ![Result](..\..\..\static\img\Reset-System-Restore-Disk-Space-Usage\image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 21600    | ![Result](../../../static/img/Reset-System-Restore-Disk-Space-Usage/image_1.png) |
 
 ## Target
 
@@ -31,6 +31,7 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Reset System Restore Disk Space Usage](https://proval.itglue.com/DOC-5078775-13977211)
+
 
 
 

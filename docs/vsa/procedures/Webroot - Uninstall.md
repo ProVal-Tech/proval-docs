@@ -16,9 +16,9 @@ Uninstalls the Webroot application on the endpoint.
 
 Export the agent procedure from the ProVal VSA, and import into the partner VSA.  
 **Name:** Webroot - Uninstall  
-![Webroot Uninstall](..\..\..\static\img\Webroot---Uninstall\image_1.png)  
+![Webroot Uninstall](../../../static/img/Webroot---Uninstall/image_1.png)  
 
-![Image](..\..\..\static\img\Webroot---Uninstall\image_2.png)  
+![Image](../../../static/img/Webroot---Uninstall/image_2.png)  
 
 Proval Plug & Play Procedure: The agent procedure requires no configuration.
 
@@ -34,8 +34,9 @@ Vendor Uninstaller ([Download](http://anywhere.webrootcloudav.com/zerol/wsasme.m
 
 Agent Procedure Log Entry  
 **Success**  
-![Success Log](..\..\..\static\img\Webroot---Uninstall\image_3.png)  
+![Success Log](../../../static/img/Webroot---Uninstall/image_3.png)  
 **Failure**  
-![Failure Log](..\..\..\static\img\Webroot---Uninstall\image_4.png)
+![Failure Log](../../../static/img/Webroot---Uninstall/image_4.png)
+
 
 

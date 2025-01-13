@@ -16,7 +16,7 @@ This script is created to run the detection/remediation for SMBv1 Enabled based 
 
 It is required to execute this script after importing with setting the SetEnvironment = 1.
 
-![Sample Run](..\..\..\static\img\SMBv1-Status-AuditAutofix-DV,Param\image_1.png)
+![Sample Run](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_1.png)
 
 ## Dependencies
 
@@ -41,9 +41,9 @@ It is required to execute this script after importing with setting the SetEnviro
 | SMBv1 Logging                             | Computer  | Text     | @SMB1DisableOutput@       | This stores the script PowerShell execution output for logging.                                        |
 | SMBv1 Detection Date                      | Computer  | Text     | 2024-05-01 00:00:00      | This stores the date and time when the last SMBv1 status was detected via the script.                  |
 | SMBv1 Vulnerability                        | Computer  | Text     | Not Vulnerable            | This shows whether the device is vulnerable or not vulnerable based on the script output detection.     |
-| SMB1 Vulnerability                         | Client    | Dropdown | Audit Only                | This is a drop-down EDF with available options as ![Options](..\..\..\static\img\SMBv1-Status-AuditAutofix-DV,Param\image_2.png). If it is set to Audit, and location and computer level are not set to Disabled, then the Audit action or autofix will be performed on the agents of the clients. |
-| SMB1 Vulnerability                         | Location  | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](..\..\..\static\img\SMBv1-Status-AuditAutofix-DV,Param\image_2.png). If it is set to Audit, and the computer level is not set to Disabled whereas the client level EDF is not set to any Audit option, then the Audit action or autofix will be performed on the agents of the location. |
-| SMB1 Vulnerability                         | Computer  | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](..\..\..\static\img\SMBv1-Status-AuditAutofix-DV,Param\image_2.png). If it is set to Audit, and location and computer level are not set to any Audit options, then the Audit action or autofix will be performed on the endpoint. |
+| SMB1 Vulnerability                         | Client    | Dropdown | Audit Only                | This is a drop-down EDF with available options as ![Options](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_2.png). If it is set to Audit, and location and computer level are not set to Disabled, then the Audit action or autofix will be performed on the agents of the clients. |
+| SMB1 Vulnerability                         | Location  | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_2.png). If it is set to Audit, and the computer level is not set to Disabled whereas the client level EDF is not set to any Audit option, then the Audit action or autofix will be performed on the agents of the location. |
+| SMB1 Vulnerability                         | Computer  | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_2.png). If it is set to Audit, and location and computer level are not set to any Audit options, then the Audit action or autofix will be performed on the endpoint. |
 
 ## Output
 
@@ -54,7 +54,7 @@ It is required to execute this script after importing with setting the SetEnviro
 
 1. **How to Enable Ticket:**
    - Navigate to the group 'Vulnerability Management' > Open group > Go to Computers > Remote Monitors.
-   - Select the [Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874) and check the ticket category ![Ticket Category](..\..\..\static\img\SMBv1-Status-AuditAutofix-DV,Param\image_3.png).
+   - Select the [Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874) and check the ticket category ![Ticket Category](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_3.png).
 
    If this ticket category is set, then only the script will be able to create a ticket for the remediation step.
 
@@ -74,5 +74,6 @@ It is required to execute this script after importing with setting the SetEnviro
    - **Body:**  
      The vulnerability has been remediated successfully. Refer to the below log information:  
      @SMB1DisableOutput@
+
 
 

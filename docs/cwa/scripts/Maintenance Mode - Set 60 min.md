@@ -16,10 +16,11 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Maintenance-Mode---Set-60-min\image_1.png)
+![Sample Run](../../../static/img/Maintenance-Mode---Set-60-min/image_1.png)
 
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
+
 
 

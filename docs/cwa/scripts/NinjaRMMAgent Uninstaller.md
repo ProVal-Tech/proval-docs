@@ -14,7 +14,7 @@ The script tries to uninstall NinjaRMMAgent from the machine. If the global vari
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\NinjaRMMAgent-Uninstaller\image_1.png)
+![Sample Run](../../../static/img/NinjaRMMAgent-Uninstaller/image_1.png)
 
 #### Global Parameters
 
@@ -26,5 +26,6 @@ The script tries to uninstall NinjaRMMAgent from the machine. If the global vari
 
 - Script Log
 - Ticket
+
 
 

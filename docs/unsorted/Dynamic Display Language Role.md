@@ -16,7 +16,7 @@ This role shows the language used when displaying text in programs that do not s
 
 | Detection String                                                                                                                                                                            | Comparator | Result                             | Applicable OS |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------|----------------|
-| {%@C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$locale = (systeminfo | findstr /B /C:'System Locale') -replace 'System Locale:',''; $locale.trim()"@%} | Exists     | en-us;English (United States)      | Windows        |
+| {%@C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$locale = (systeminfo | findstr /B /C:'System Locale') -replace 'System Locale:',''; $locale.trim()"@%} | Exists     | en-us;English (United States)      | Windows        |
 
 ## Uses
 
@@ -24,7 +24,8 @@ This is helpful to be used in a solution that has dependencies on the system out
 
 ## Sample
 
-![Sample Image](..\..\static\img\Dynamic-Display-Language-Role\image_1.png)
+![Sample Image](../../static/img/Dynamic-Display-Language-Role/image_1.png)
+
 
 
 

@@ -45,3 +45,4 @@ Unsupported for MySQL version < 5.7
 | Build                               | varchar(60)     | Build Number for the concerned releaseid. e.g, 10.0.19044, 10.0.19043. It will Show 'Windows 10' for the Summary Row.                                                                                                               |
 
 
+

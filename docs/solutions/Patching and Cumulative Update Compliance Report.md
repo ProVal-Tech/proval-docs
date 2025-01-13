@@ -45,7 +45,7 @@ The purpose of the dataviews included in this solution is to present the patchin
 3. Follow the implementation step provided in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) solution's document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
 
 4. Reload the System Cache  
-   ![Reload the System Cache](..\..\static\img\Patching-and-Cumulative-Update-Compliance-Report\image_1.png)
+   ![Reload the System Cache](../../static/img/Patching-and-Cumulative-Update-Compliance-Report/image_1.png)
 
 5. Execute the [MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131) script against any computer to create/update the [plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) custom table if it is not available in the environment.
 
@@ -60,5 +60,6 @@ The purpose of the dataviews included in this solution is to present the patchin
 8. Remove/delete the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
    - [MySQL - View - Create (pvl_patch_cu_compliance)](https://proval.itglue.com/DOC-5078775-15392208)
+
 
 

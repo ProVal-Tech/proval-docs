@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Firefox---Install-Extension\image_1.png)
+![Sample Run](../../../static/img/Firefox---Install-Extension/image_1.png)
 
 ## Dependencies
 
@@ -40,14 +40,14 @@ Time Saved by Automation: 5 Minutes
 
 The script first confirms that Firefox is installed in one of two locations:
 
-- `$env:ProgramFiles\Mozilla Firefox`
-- `${env:ProgramFiles(x86)}\Mozilla Firefox`
+- `$env:ProgramFiles/Mozilla Firefox`
+- `${env:ProgramFiles(x86)}/Mozilla Firefox`
 
 If `firefox.exe` is not found in either location, the script will exit.
 
 The script then makes a call to the Firefox Add-ons API to determine the GUID of the addon. This will be either a standard GUID format or an e-mail address. If the GUID is unable to be parsed, the script will exit.
 
-The script will then create the `$env:ProgramFiles\Mozilla Firefox\distribution` folder if it does not exist.
+The script will then create the `$env:ProgramFiles/Mozilla Firefox/distribution` folder if it does not exist.
 
 The script then checks if a `policies.json` file already exists in the distribution folder. If it does not, then a new file is created with the proper deployment settings based on the parameters and the script exits. If the file does exist, then multiple sub-level checks occur to ensure that no existing data is removed, and the new settings are merged with the existing settings in a new `policies.json` file.
 
@@ -55,6 +55,7 @@ The script then checks if a `policies.json` file already exists in the distribut
 
 - Script log
 - Local file on computer
+
 
 
 

@@ -16,7 +16,7 @@ This script helps to get all restore point information of a workstation and stor
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-Restore-Point-Automation---Gather-Only\image_1.png)
+![Sample Run](../../../static/img/Windows-Restore-Point-Automation---Gather-Only/image_1.png)
 
 ## Dependencies
 
@@ -31,6 +31,7 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 
 - Script log
 - Dataview
+
 
 
 

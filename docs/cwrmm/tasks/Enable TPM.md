@@ -14,9 +14,9 @@ Initializes TPM as a part of the provisioning process for a Trusted Platform Mod
 
 ## Sample Run
 
-![Sample Run Image 1](..\..\..\static\img\Enable-TPM\image_1.png)  
-![Sample Run Image 2](..\..\..\static\img\Enable-TPM\image_2.png)  
-![Sample Run Image 3](..\..\..\static\img\Enable-TPM\image_3.png)  
+![Sample Run Image 1](../../../static/img/Enable-TPM/image_1.png)  
+![Sample Run Image 2](../../../static/img/Enable-TPM/image_2.png)  
+![Sample Run Image 3](../../../static/img/Enable-TPM/image_3.png)  
 
 ## Dependencies
 
@@ -30,76 +30,76 @@ Initializes TPM as a part of the provisioning process for a Trusted Platform Mod
 | `AllowPhysicalPresence`   | 0/1     | False    | Flag | Indicates that the provisioning process may send physical presence commands that require a user to be present in order to continue. |
 | `AllowRestart`            | 0/1     | False    | Flag | Allow the script to automatically restart or shutdown the machine. This can happen on initialization of TPM. |
 
-![User Parameters Image](..\..\..\static\img\Enable-TPM\image_4.png)  
+![User Parameters Image](../../../static/img/Enable-TPM/image_4.png)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Image 1](..\..\..\static\img\Enable-TPM\image_5.png)  
-![Task Creation Image 2](..\..\..\static\img\Enable-TPM\image_6.png)  
+![Task Creation Image 1](../../../static/img/Enable-TPM/image_5.png)  
+![Task Creation Image 2](../../../static/img/Enable-TPM/image_6.png)  
 
 **Name:** `Enable TPM`  
 **Description:** `Initializes TPM as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used.`  
 **Category:** `Setup`  
-![Task Creation Image 3](..\..\..\static\img\Enable-TPM\image_7.png)  
+![Task Creation Image 3](../../../static/img/Enable-TPM/image_7.png)  
 
 ## Parameters
 
 ### AllowClear:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![AllowClear Image 1](..\..\..\static\img\Enable-TPM\image_8.png)  
+![AllowClear Image 1](../../../static/img/Enable-TPM/image_8.png)  
 
 This screen will appear.  
-![AllowClear Image 2](..\..\..\static\img\Enable-TPM\image_9.png)  
+![AllowClear Image 2](../../../static/img/Enable-TPM/image_9.png)  
 
 - Set `AllowClear` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![AllowClear Image 3](..\..\..\static\img\Enable-TPM\image_10.png)  
+![AllowClear Image 3](../../../static/img/Enable-TPM/image_10.png)  
 
 ### AllowPhysicalPresence:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![AllowPhysicalPresence Image 1](..\..\..\static\img\Enable-TPM\image_8.png)  
+![AllowPhysicalPresence Image 1](../../../static/img/Enable-TPM/image_8.png)  
 
 This screen will appear.  
-![AllowPhysicalPresence Image 2](..\..\..\static\img\Enable-TPM\image_9.png)  
+![AllowPhysicalPresence Image 2](../../../static/img/Enable-TPM/image_9.png)  
 
 - Set `AllowPhysicalPresence` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![AllowPhysicalPresence Image 3](..\..\..\static\img\Enable-TPM\image_11.png)  
+![AllowPhysicalPresence Image 3](../../../static/img/Enable-TPM/image_11.png)  
 
 ### AllowRestart:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![AllowRestart Image 1](..\..\..\static\img\Enable-TPM\image_8.png)  
+![AllowRestart Image 1](../../../static/img/Enable-TPM/image_8.png)  
 
 This screen will appear.  
-![AllowRestart Image 2](..\..\..\static\img\Enable-TPM\image_9.png)  
+![AllowRestart Image 2](../../../static/img/Enable-TPM/image_9.png)  
 
 - Set `AllowRestart` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![AllowRestart Image 3](..\..\..\static\img\Enable-TPM\image_12.png)  
+![AllowRestart Image 3](../../../static/img/Enable-TPM/image_12.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Task Image 1](..\..\..\static\img\Enable-TPM\image_13.png)  
+![Task Image 1](../../../static/img/Enable-TPM/image_13.png)  
 
 A blank function will appear.  
-![Task Image 2](..\..\..\static\img\Enable-TPM\image_14.png)  
+![Task Image 2](../../../static/img/Enable-TPM/image_14.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![Row 1 Function Image 1](..\..\..\static\img\Enable-TPM\image_15.png)  
-![Row 1 Function Image 2](..\..\..\static\img\Enable-TPM\image_16.png)  
+![Row 1 Function Image 1](../../../static/img/Enable-TPM/image_15.png)  
+![Row 1 Function Image 2](../../../static/img/Enable-TPM/image_16.png)  
 
 The following function will pop up on the screen:  
-![Row 1 Function Image 3](..\..\..\static\img\Enable-TPM\image_17.png)  
+![Row 1 Function Image 3](../../../static/img/Enable-TPM/image_17.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -126,11 +126,11 @@ $ProjectName = 'Enable-TPM'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -165,35 +165,36 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![Row 1 Function Image 4](..\..\..\static\img\Enable-TPM\image_18.png)  
+![Row 1 Function Image 4](../../../static/img/Enable-TPM/image_18.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Row 2 Function Image 1](..\..\..\static\img\Enable-TPM\image_19.png)  
+![Row 2 Function Image 1](../../../static/img/Enable-TPM/image_19.png)  
 
 A blank function will appear.  
-![Row 2 Function Image 2](..\..\..\static\img\Enable-TPM\image_20.png)  
+![Row 2 Function Image 2](../../../static/img/Enable-TPM/image_20.png)  
 
 Search and select the `Script Log` function.  
-![Row 2 Function Image 3](..\..\..\static\img\Enable-TPM\image_21.png)  
+![Row 2 Function Image 3](../../../static/img/Enable-TPM/image_21.png)  
 
 The following function will pop up on the screen:  
-![Row 2 Function Image 4](..\..\..\static\img\Enable-TPM\image_22.png)  
+![Row 2 Function Image 4](../../../static/img/Enable-TPM/image_22.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Row 2 Function Image 5](..\..\..\static\img\Enable-TPM\image_23.png)  
+![Row 2 Function Image 5](../../../static/img/Enable-TPM/image_23.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Row 2 Function Image 6](..\..\..\static\img\Enable-TPM\image_24.png)  
+![Row 2 Function Image 6](../../../static/img/Enable-TPM/image_24.png)  
 
 ## Completed Script
 
-![Completed Script Image](..\..\..\static\img\Enable-TPM\image_25.png)  
+![Completed Script Image](../../../static/img/Enable-TPM/image_25.png)  
 
 ## Output
 
 - Script Log  
-![Output Image](..\..\..\static\img\Enable-TPM\image_26.png)  
+![Output Image](../../../static/img/Enable-TPM/image_26.png)  
+
 
 

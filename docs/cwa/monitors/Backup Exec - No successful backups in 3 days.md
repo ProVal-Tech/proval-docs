@@ -28,10 +28,10 @@ Insert the details of the monitor in the below table.
 
 Backup Management > Backup Exec  
 
-![Image](..\..\..\static\img\Backup-Exec---No-successful-backups-in-3-days\image_1.png)  
+![Image](../../../static/img/Backup-Exec---No-successful-backups-in-3-days/image_1.png)  
 
 **Auto Join Search for the group:** Backup - Backup Exec  
-![Image](..\..\..\static\img\Backup-Exec---No-successful-backups-in-3-days\image_2.png)  
+![Image](../../../static/img/Backup-Exec---No-successful-backups-in-3-days/image_2.png)  
 
 ## Ticketing
 
@@ -42,5 +42,6 @@ Backup Management > Backup Exec
 ## How to Import
 
 [Import - Remote Monitor - Backup Exec - No successful backups in 3 days](https://proval.itglue.com/DOC-5078775-13244086)  
+
 
 

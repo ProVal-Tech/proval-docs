@@ -29,7 +29,8 @@ Select the Out of Date Cumulative Update Autofix setting for the site. Available
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\Site---Out_of_Date_CU_Autofix\image_1.png)
-![Screenshot 2](..\..\..\static\img\Site---Out_of_Date_CU_Autofix\image_2.png)
+![Screenshot 1](../../../static/img/Site---Out_of_Date_CU_Autofix/image_1.png)
+![Screenshot 2](../../../static/img/Site---Out_of_Date_CU_Autofix/image_2.png)
+
 
 

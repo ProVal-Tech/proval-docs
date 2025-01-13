@@ -19,7 +19,7 @@ This monitor will detect the status of the custom field PS Version and if the PS
 ### Monitor Creation
 Navigate to Automation > Monitors  
 Click "Add Monitor"  
-![Monitor Creation Image](..\..\..\static\img\PowerShell-Version\image_11.png)
+![Monitor Creation Image](../../../static/img/PowerShell-Version/image_11.png)
 
 ---
 
@@ -30,7 +30,7 @@ Click "Add Monitor"
 - **Family:** Windows Services
 - **Severity:** Other
 
-![Monitor Configuration Image](..\..\..\static\img\PowerShell-Version\image_12.png)
+![Monitor Configuration Image](../../../static/img/PowerShell-Version/image_12.png)
 
 ### Conditions:
 - **Custom Field Type:** Text Box.
@@ -46,7 +46,7 @@ Click "Add Monitor"
 ### Resources:
 *Note: The custom field + Device groups will need to be created before the monitor can be created.*  
 This monitor is intentionally aimed at the PowerShell Version < 5 device group.  
-![Resources Image](..\..\..\static\img\PowerShell-Version\image_13.png)
+![Resources Image](../../../static/img/PowerShell-Version/image_13.png)
 
 ## Dependencies
 - [CW RMM - Custom Field - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824368)  
@@ -55,6 +55,7 @@ This monitor is intentionally aimed at the PowerShell Version < 5 device group.
 
 ## Ticketing
 This solution does technically make tickets, but the tickets are designed to Autoclose as soon as the machine runs the task to update PowerShell.
+
 
 
 

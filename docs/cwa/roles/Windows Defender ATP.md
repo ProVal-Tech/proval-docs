@@ -16,7 +16,8 @@ This role will determine if the device has Windows Defender ATP (Advanced Threat
 
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
-| `{%-HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status:OnboardingState-%}` | Equals     | 1      | Windows OS     |
+| `{%-HKLM/SOFTWARE/Microsoft/Windows Advanced Threat Protection/Status:OnboardingState-%}` | Equals     | 1      | Windows OS     |
+
 
 
 

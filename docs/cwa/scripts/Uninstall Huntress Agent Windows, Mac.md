@@ -21,7 +21,7 @@ This script can be used to uninstall Huntress Agent from both Windows and Macint
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-Huntress-Agent-Windows,-Mac\image_1.png)
+![Sample Run](../../../static/img/Uninstall-Huntress-Agent-Windows,-Mac/image_1.png)
 
 ## Dependencies
 
@@ -32,11 +32,12 @@ This script can be used to uninstall Huntress Agent from both Windows and Macint
 | Name                | Description                                                       |
 |---------------------|-------------------------------------------------------------------|
 | projectName         | Invoke-HuntressAgentCommand                                       |
-| workingDirectory     | C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand    |
-| scriptPath          | C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand\Invoke-HuntressAgentCommand.ps1 |
+| workingDirectory     | C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand    |
+| scriptPath          | C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand/Invoke-HuntressAgentCommand.ps1 |
 
 ## Output
 
 - Script log
+
 
 

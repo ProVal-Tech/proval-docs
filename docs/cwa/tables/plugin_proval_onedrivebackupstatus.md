@@ -33,3 +33,4 @@ Stores information about redirection of Desktop, Documents, and Pictures to OneD
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
 
 
+

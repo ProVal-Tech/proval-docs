@@ -16,11 +16,11 @@ This script utilizes the Crystal Disk Info hard drive testing program to automat
 - Hard Drive reporting predictive failure. Last Run: [<Date/Time>]
 - Hard Drive reporting Bad. Imminent failure possible. Last Run: [<Date/Time>]
 
-![Image](..\..\..\static\img\Crystal-Disk-Info---Audit-Disk-Health\image_1.png)
+![Image](../../../static/img/Crystal-Disk-Info---Audit-Disk-Health/image_1.png)
 
 ## Sample Run
 
-![Image](..\..\..\static\img\Crystal-Disk-Info---Audit-Disk-Health\image_2.png)
+![Image](../../../static/img/Crystal-Disk-Info---Audit-Disk-Health/image_2.png)
 
 ## Dependencies
 
@@ -51,7 +51,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Process
 
-1. Download Crystal Disk Info to C:\Windows\LTSvc\CrystalDiskInfo and unzip the download.
+1. Download Crystal Disk Info to C:/Windows/LTSvc/CrystalDiskInfo and unzip the download.
 2. Set Non-SSD thresholds to 50 if there are any present Non-SSD drives on the machine.
 3. Run the tool silently.
 4. Parse the DiskInfo.txt log and look for key words (Such as Caution or Bad).
@@ -70,5 +70,6 @@ The status information gets updated to the following places:
 
 - Script Log
 - Hard Drive Status EDF
+
 
 

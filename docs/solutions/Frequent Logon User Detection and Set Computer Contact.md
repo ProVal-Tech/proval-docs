@@ -30,12 +30,13 @@ This solution is designed to gather the frequent domain logon user on the Window
    - **△ Custom - Execute Script - Frequent Logon Users**
 
 2. Reload the system cache:
-   - ![Reload Cache](..\..\static\img\Frequent-Logon-User-Detection-and-Set-Computer-Contact\image_1.png)
+   - ![Reload Cache](../../static/img/Frequent-Logon-User-Detection-and-Set-Computer-Contact/image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
      - [Monitor - Frequent User Detection](https://proval.itglue.com/DOC-5078775-16300890)
        - Setup with "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
+
 
 

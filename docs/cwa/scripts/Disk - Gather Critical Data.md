@@ -18,7 +18,7 @@ Appends data from that agnostic script to that created table.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Disk---Gather-Critical-Data\image_1.png)
+![Sample Run](../../../static/img/Disk---Gather-Critical-Data/image_1.png)
 
 ## Dependencies
 
@@ -37,7 +37,7 @@ Appends data from that agnostic script to that created table.
 1. Executes the agnostic script and saves the System object, waits one minute and does it again as another variable.
 2. For each provided drive
    1. Creates Drive objects [params]
-      - Calculated RAWValue formula: \[D2 - D1\] / \[T2 - T1\] * 1000
+      - Calculated RAWValue formula: /[D2 - D1/] / /[T2 - T1/] * 1000
       - ID
         - The id of the drive
       - Model
@@ -75,7 +75,7 @@ Appends data from that agnostic script to that created table.
         - totalWriteQueue is calculated as the average write queue over the one minute this script ran times the total amount of seconds that the machine has elapsed as on.
         - This result may vary, it is dependent on the computer use load over a one minute period, during periods of inactivity this result may be 0
       - Temperature
-        - = if($null -ne $disk.StorageReliabilityCounter.Temperature){'unsupported on virtual machines'}else {\"$($disk.StorageReliabilityCounter.Temperature) C ($(((9 / 5 *$disk.StorageReliabilityCounter.Temperature) + 32)) F)\"} (For Virtual Machine drives that do not report temperature.)
+        - = if($null -ne $disk.StorageReliabilityCounter.Temperature){'unsupported on virtual machines'}else {/"$($disk.StorageReliabilityCounter.Temperature) C ($(((9 / 5 *$disk.StorageReliabilityCounter.Temperature) + 32)) F)/"} (For Virtual Machine drives that do not report temperature.)
         - The current drive temperature
       - HealthStatus
         - The health status of the drive
@@ -89,14 +89,14 @@ Appends data from that agnostic script to that created table.
         - = if($null -eq ($Disk.StorageReliabilityCounter.ReadErrorsUncorrected + $disk.StorageReliabilityCounter.WriteErrorsUncorrected)){0}else{$Disk.StorageReliabilityCounter.ReadErrorsUncorrected + $disk.StorageReliabilityCounter.WriteErrorsUncorrected}
         - The total amount of uncorrected errors either read or write on the drive.
       - CompositeTemperature
-        - = if([math]::Round((((Get-CimInstance -Namespace Root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction silentlyContinue).CurrentTemperature) /10),2)-273.15 -lt 0){'Not Supported on virtual machines'}else{\"$(([math]::Round((((Get-CimInstance -Namespace Root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction silentlyContinue).CurrentTemperature) /10),2) -273.15)) C ($((9/5 * ([math]::Round((((Get-CimInstance -Namespace Root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction silentlyContinue).CurrentTemperature) /10),2) -273.15) +32)) F)\"} (For Virtual machine correction)
+        - = if([math]::Round((((Get-CimInstance -Namespace Root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction silentlyContinue).CurrentTemperature) /10),2)-273.15 -lt 0){'Not Supported on virtual machines'}else{/"$(([math]::Round((((Get-CimInstance -Namespace Root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction silentlyContinue).CurrentTemperature) /10),2) -273.15)) C ($((9/5 * ([math]::Round((((Get-CimInstance -Namespace Root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction silentlyContinue).CurrentTemperature) /10),2) -273.15) +32)) F)/"} (For Virtual machine correction)
         - This is the current machine chassis temperature
       - AvailableSpare
         - At this time Available spare information is unavailable.
       - SpareThreshold
         - At this time spare thresholds are unavailable.
       - PercentageUsed
-        - = \"$(($disk.DiskPartition.partition.size | Measure-Object -sum).sum / $disk.DiskDrive.Size * 100) %\"
+        - = /"$(($disk.DiskPartition.partition.size | Measure-Object -sum).sum / $disk.DiskDrive.Size * 100) %/"
         - This is important, there is a difference between a logical disk and a physical disk, this report is displaying physical drive percentages ie. How much of drive 0 is taken up by x partitions.
       - DataUnitsWritten
         - = $disk.RawPerformanceData.Timestamp_Sys100NS / 1000000000 * $totalDiskWriteBytesPersec
@@ -143,5 +143,6 @@ Appends data from that agnostic script to that created table.
    - This script is reporting on the state of the physical hard disk, not the logical drive, the percentage used is the percentage of the physical disk that is utilized by all designated partitions and those partition sizes reflect the total physical disk usage.
 4. I updated this script to its newest version and now the script fails every time
    - Please set refresh table to 'Yes' on the first run after a version upgrade of this script.
+
 
 

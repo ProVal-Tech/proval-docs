@@ -16,11 +16,11 @@ Will remove a requested windows path from the environmental path variable for th
 
 - To remove a user scoped environmental path variable item.
 
-![Sample Run 1](..\..\..\static\img\Remove-Environmental-Path-Variable\image_1.png)
+![Sample Run 1](../../../static/img/Remove-Environmental-Path-Variable/image_1.png)
 
 - To remove multiple machine scoped environmental path variable items.
 
-![Sample Run 2](..\..\..\static\img\Remove-Environmental-Path-Variable\image_2.png)
+![Sample Run 2](../../../static/img/Remove-Environmental-Path-Variable/image_2.png)
 
 NOTE: Scope is not mandatory and if left blank the scope will default to the machine scoped variable.
 
@@ -36,7 +36,7 @@ Standard agnostic template variables apply.
 
 | Name  | Example                  | Required | Description                                                                                     |
 |-------|--------------------------|----------|-------------------------------------------------------------------------------------------------|
-| Path  | C:\windows, C:\temp...  | True     | The paths that must be removed from the scoped environmental path variable.                    |
+| Path  | C:/windows, C:/temp...  | True     | The paths that must be removed from the scoped environmental path variable.                    |
 | Scope | User<br>Machine          | False    | The scope of the environmental path variable you wish to target.<br>This is defaulted to 'Machine' |
 
 ## Process
@@ -46,6 +46,7 @@ Please see agnostic content document [EPM - Windows Configuration - Agnostic - R
 ## Output
 
 - Script log
+
 
 
 

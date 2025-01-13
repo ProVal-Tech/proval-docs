@@ -17,7 +17,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\WiFi-Profile---Get\image_1.png)
+![Sample Run](../../../static/img/WiFi-Profile---Get/image_1.png)
 
 ## Variables
 
@@ -33,11 +33,12 @@ Time Saved by Automation: 5 Minutes
 
 - Creates the plugin_proval_wifi_profiles table if it does not exist.
 - Runs the command to export the WiFi profile from the target machine.
-- Exports the profile to %ltsvcdir%\Wifiprofiles and writes the information to the database.
+- Exports the profile to %ltsvcdir%/Wifiprofiles and writes the information to the database.
 
 ## Output
 
 - Script log
 - Table plugin_proval_wifi_profiles
+
 
 

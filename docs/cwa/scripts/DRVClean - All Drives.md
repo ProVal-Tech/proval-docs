@@ -15,7 +15,7 @@ Time Saved by Automation: 20 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\DRVClean---All-Drives\image_1.png)
+![Sample Run](../../../static/img/DRVClean---All-Drives/image_1.png)
 
 ## Dependencies
 
@@ -40,5 +40,6 @@ Requirements: Need to run on Windows machine.
 ## Output
 
 - Script log
+
 
 

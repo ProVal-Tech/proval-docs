@@ -23,21 +23,21 @@ The script is designed to standardize the permissions of the Built-In scripts in
 
 Apart from this, two ProVal defined user classes `~Tier 1 Tech` and `~Tier 2 Tech` will be imported.
 
-![Image 1](..\..\..\static\img\Script-Permission-Alignment-Beta\image_1.png)
+![Image 1](../../../static/img/Script-Permission-Alignment-Beta/image_1.png)
 
-![Image 2](..\..\..\static\img\Script-Permission-Alignment-Beta\image_2.png)
+![Image 2](../../../static/img/Script-Permission-Alignment-Beta/image_2.png)
 
 ## Schedule
 
 It is suggested to schedule the script to run once per day. 
 
-![Schedule Image](..\..\..\static\img\Script-Permission-Alignment-Beta\image_3.png)
+![Schedule Image](../../../static/img/Script-Permission-Alignment-Beta/image_3.png)
 
 ## Revert
 
 The initial permissions of the scripts are stored in the custom table during the first execution of the script with the `Set_Environment` variable. By running the script against any client with the `Revert` parameter set to `1`, the permission of the scripts will be restored to the original.
 
-![Revert Image](..\..\..\static\img\Script-Permission-Alignment-Beta\image_4.png)
+![Revert Image](../../../static/img/Script-Permission-Alignment-Beta/image_4.png)
 
 ## Dependencies
 
@@ -57,12 +57,13 @@ The initial permissions of the scripts are stored in the custom table during the
 | Tier1_UserClasses | ~Tier 1 Tech, Admin      | True     | Comma Separated List of the Tier1 User Classes. <br>Default Value: `~Tier 1 Tech`                             |
 | Tier2_UserClasses | ~Tier 2 Tech, NocUsers    | True     | Comma Separated List of the Tier3 User Classes.<br>Default Value: `~Tier 2 Tech`                             |
 
-![System Properties Image](..\..\..\static\img\Script-Permission-Alignment-Beta\image_5.png)
+![System Properties Image](../../../static/img/Script-Permission-Alignment-Beta/image_5.png)
 
 ## Output
 
 - Custom Table
 - Script level permission  
-![Output Image](..\..\..\static\img\Script-Permission-Alignment-Beta\image_6.png)
+![Output Image](../../../static/img/Script-Permission-Alignment-Beta/image_6.png)
+
 
 

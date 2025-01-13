@@ -20,7 +20,7 @@ This is a remote PowerShell monitor which detects whether the AD Recycle Bin is 
 
 | Check Action | Server Address | Check Type | Comparator   | Interval | Result |
 |--------------|----------------|-------------|--------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | state based   | 86400    | ![](..\..\..\static\img\AD-Recycle-Bin-State-Check\image_1.png) |
+| System       | 127.0.0.1      | Run File    | state based   | 86400    | ![](../../../static/img/AD-Recycle-Bin-State-Check/image_1.png) |
 
 ## Dependencies
 
@@ -34,6 +34,7 @@ Domain Controllers only
 ## Implementation
 
 [Import - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-14764163)  
+
 
 
 

@@ -41,7 +41,7 @@ The purpose of the content is to monitor the disk health of the physical machine
 - Apply the alert template to the monitor set and ensure that the solution is working as desired.
 - Set the required values for the system properties `Crystal_Disk_Info_Disable_Caution_Tickets` and `Crystal_Disk_Info_Disable_Tickets`. Refer to the [Script's](https://proval.itglue.com/DOC-5078775-12960045) document for more information on the system properties.
 
-![Image](..\..\static\img\Crystal-Disk-Info\image_1.png)
+![Image](../../static/img/Crystal-Disk-Info/image_1.png)
 
 ## FAQ
 
@@ -53,5 +53,6 @@ The purpose of the content is to monitor the disk health of the physical machine
 - `CrystalDiskInfo does not support RAID disks and IDE (Parallel ATA) and Serial ATA disks connected external ATA controller.`
 
 Reference: [Crystal Disk Info FAQ](https://crystalmark.info/en/software/crystaldiskinfo/crystaldiskinfo-faq/)
+
 
 

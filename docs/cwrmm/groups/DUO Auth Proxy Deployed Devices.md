@@ -28,20 +28,21 @@ It is built for auditing purposes.
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.  
-   ![Image](..\..\..\static\img\DUO-Auth-Proxy-Deployed-Devices\image_1.png)
+   ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](..\..\..\static\img\DUO-Auth-Proxy-Deployed-Devices\image_2.png)  
+   ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_2.png)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Image](..\..\..\static\img\DUO-Auth-Proxy-Deployed-Devices\image_3.png)
+   ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_3.png)
 
 3. Set the group name to `DUO Auth Proxy Deployed Devices`.  
    Description: `This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version".`  
-   ![Image](..\..\..\static\img\DUO-Auth-Proxy-Deployed-Devices\image_4.png)
+   ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_4.png)
 
 4. Search and select the `Duo Auth Proxy Result` custom field from the search box.  
    Set `Success` in the comparison condition.  
-   ![Image](..\..\..\static\img\DUO-Auth-Proxy-Deployed-Devices\image_5.png)  
+   ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_5.png)  
    **Condition:** `Duo Auth Proxy Result` `Contain any of` `Success`
+
 
 

@@ -52,3 +52,4 @@ The purpose of the solution is to find out and remove the malicious/suspicious W
 - Apply the `△ CUSTOM - Execute Script - Get - Wifi Profiles` alert template on the monitor set.
 
 
+

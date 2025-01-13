@@ -23,14 +23,14 @@ INSERT INTO groupagents
  'Proval - Production - Security event logs cleared/deleted' as `Name`,
  '6' as `CheckAction`,
  '1' as `AlertAction`,
- 'Security Event Log Cleared on %CLIENTNAME%\\%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%\\%COMPUTERNAME%: %Result%!!!Security Event Log Cleared on %CLIENTNAME%\\%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%\\%COMPUTERNAME%: %Result%' as `AlertMessage`,
+ 'Security Event Log Cleared on %CLIENTNAME%//%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%//%COMPUTERNAME%: %Result%!!!Security Event Log Cleared on %CLIENTNAME%//%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%//%COMPUTERNAME%: %Result%' as `AlertMessage`,
  '0' as `ContactID`,
  '900' as `interval`,
  '127.0.0.1' as `Where`,
  '7' as `What`,
- 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split \'Additional Information:\'|select -first 1)-split \'Account Name:\'|select-object -last 1}); if ($op) { write-output \"`nEventid 1102 detected in the last 15 Minutes:`n\"; $op}"' as `DataOut`,
+ 'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split /'Additional Information:/'|select -first 1)-split /'Account Name:/'|select-object -last 1}); if ($op) { write-output /"`nEventid 1102 detected in the last 15 Minutes:`n/"; $op}"' as `DataOut`,
  '16' as `Comparor`,
- '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:' as `DataIn`,
+ '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Eventid 1102 detected in the last 15 Minutes:)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Eventid 1102 detected in the last 15 Minutes:' as `DataIn`,
  '' as `IDField`,
  '0' as `AlertStyle`,
  '0' as `ScriptID`,
@@ -94,14 +94,14 @@ INSERT INTO groupagents
  'Proval - Production - Security event logs cleared/deleted' as `Name`,
  '6' as `CheckAction`,
  '1' as `AlertAction`,
- 'Security Event Log Cleared on %CLIENTNAME%\\%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%\\%COMPUTERNAME%: %Result%!!!Security Event Log Cleared on %CLIENTNAME%\\%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%\\%COMPUTERNAME%: %Result%' as `AlertMessage`,
+ 'Security Event Log Cleared on %CLIENTNAME%//%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%//%COMPUTERNAME%: %Result%!!!Security Event Log Cleared on %CLIENTNAME%//%COMPUTERNAME%~~~Security Event logs cleared/deleted for %CLIENTNAME%//%COMPUTERNAME%: %Result%' as `AlertMessage`,
  '0' as `ContactID`,
  '900' as `interval`,
  '127.0.0.1' as `Where`,
  '7' as `What`,
- 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split \'Additional Information:\'|select -first 1)-split \'Account Name:\'|select-object -last 1}); if ($op) { write-output \"`nEventid 1102 detected in the last 15 Minutes:`n\"; $op}"' as `DataOut`,
+ 'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split /'Additional Information:/'|select -first 1)-split /'Account Name:/'|select-object -last 1}); if ($op) { write-output /"`nEventid 1102 detected in the last 15 Minutes:`n/"; $op}"' as `DataOut`,
  '16' as `Comparor`,
- '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:' as `DataIn`,
+ '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Eventid 1102 detected in the last 15 Minutes:)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Eventid 1102 detected in the last 15 Minutes:' as `DataIn`,
  '' as `IDField`,
  '0' as `AlertStyle`,
  '0' as `ScriptID`,
@@ -164,5 +164,6 @@ Limit the remote monitor to a search, if necessary.
 
 ## Step 7.
 Apply the appropriate alert template to the remote monitors.
+
 
 

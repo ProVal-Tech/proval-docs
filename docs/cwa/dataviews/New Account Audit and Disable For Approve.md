@@ -41,3 +41,4 @@ This dataview shows newly created accounts. It can be used in auditing of accoun
 | New Account Approved Date    | It shows when the account is approved to get enabled.                      |
 
 
+

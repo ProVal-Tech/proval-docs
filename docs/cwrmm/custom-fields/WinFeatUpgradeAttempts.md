@@ -14,9 +14,9 @@ It will keep a record of how many times a Windows 10/11 device has tried to inst
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\WinFeatUpgradeAttempts\image_1.png)
+![Image 1](../../../static/img/WinFeatUpgradeAttempts/image_1.png)
 
-![Image 2](..\..\..\static\img\WinFeatUpgradeAttempts\image_2.png)
+![Image 2](../../../static/img/WinFeatUpgradeAttempts/image_2.png)
 
 ---
 
@@ -26,5 +26,6 @@ It will keep a record of how many times a Windows 10/11 device has tried to inst
 **Level:** Endpoint  
 **Description:** It will keep a record of how many times a Windows 10/11 device has tried to install the Feature upgrade using the `Feature Update Install With Tracking` task, with the default value set to 0.  
 **Editable:** Yes  
+
 
 

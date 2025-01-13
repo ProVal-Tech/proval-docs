@@ -12,9 +12,9 @@ unlisted: false
 
 This script displays the results of selecting 'Find Script', except displays it for all scripts
 
-![Image 1](..\..\..\static\img\Scripts---MemberOf\image_1.png)
+![Image 1](../../../static/img/Scripts---MemberOf/image_1.png)
 
-![Image 2](..\..\..\static\img\Scripts---MemberOf\image_2.png)
+![Image 2](../../../static/img/Scripts---MemberOf/image_2.png)
 
 ## Dependencies
 
@@ -39,5 +39,6 @@ This script displays the results of selecting 'Find Script', except displays it 
 | Object description  | Full Path of the Group/Whether the alert template is applied on a computer-level remote monitor group remote monitor or an internal monitor. |
 | Limited to         | Whether the scheduled group script/remote monitor is limited to a search/internal monitor is limited to any group. |
 | Affected Agents    | Number of computers in the group/Number of agents detected in the search if limited to search.         |
+
 
 

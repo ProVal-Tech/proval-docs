@@ -27,6 +27,7 @@ The purpose of this script is to create the [pvl_Script_Assesment](https://prova
 ## Sample Run
 
 Schedule the script to run once per day sometimes around midnight.  
-![Sample Run](..\..\..\static\img\Script-Failure-Analysis---30-Day-Retention\image_1.png)
+![Sample Run](../../../static/img/Script-Failure-Analysis---30-Day-Retention/image_1.png)
+
 
 

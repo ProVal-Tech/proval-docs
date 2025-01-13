@@ -52,9 +52,9 @@ unlisted: false
   '3600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-NewDomainAdmin'; $WorkingDirectory = 'C:\\ProgramData\\_Automation\\Script\\$ProjectName\\'; $scriptpath = '$($WorkingDirectory)$($ProjectName).ps1'; $scripturl = 'https://file.provaltech.com/repo/script/Get-NewDomainAdmin.ps1'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); & $scriptpath"' as `DataOut`,
+  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-NewDomainAdmin'; $WorkingDirectory = 'C://ProgramData//_Automation//Script//$ProjectName//'; $scriptpath = '$($WorkingDirectory)$($ProjectName).ps1'; $scripturl = 'https://file.provaltech.com/repo/script/Get-NewDomainAdmin.ps1'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); & $scriptpath"' as `DataOut`,
   '16' as `Comparor`,
-  '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(^(()%7C %7C(OK)%7C(\\r\\n))$)%7C(distinguishedName)|10|distinguishedName' as `DataIn`,
+  '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(distinguishedName)|10|distinguishedName' as `DataIn`,
   '0' as `IDField`,
   '0' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -114,10 +114,11 @@ unlisted: false
 - Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search and alert template.  
   Limit To: Distinct Domain Controller Per Client  
   Alert Template: △ Custom - Ticket Creation Computer - Failures Only  
-  ![Image](..\..\..\static\img\New-Domain-Admin\image_1.png)
+  ![Image](../../../static/img/New-Domain-Admin/image_1.png)
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
-  ![Image](..\..\..\static\img\New-Domain-Admin\image_2.png)  
+  ![Image](../../../static/img/New-Domain-Admin/image_2.png)  
   
+
 
 

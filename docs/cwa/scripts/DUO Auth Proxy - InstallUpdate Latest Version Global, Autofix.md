@@ -14,7 +14,7 @@ The script installs or updates the DUO Authentication Proxy application to the l
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\DUO-Auth-Proxy---InstallUpdate-Latest-Version-Global,-Autofix\image_1.png)
+![Sample Run](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version-Global,-Autofix/image_1.png)
 
 ## Dependencies
 
@@ -26,8 +26,8 @@ The script installs or updates the DUO Authentication Proxy application to the l
 |--------------------|-------------------------------------------------------------------------|
 | STATUS             | Status returned by the internal monitor (SUCCESS/FAILED)                |
 | ProjectName        | Duo_Auth_Proxy                                                          |
-| WorkingDirectory    | C:\ProgramData\_automation\app\Duo_Auth_Proxy                          |
-| EXEPath            | C:\ProgramData\_automation\app\Duo_Auth_Proxy\Duo_Auth_Proxy.exe      |
+| WorkingDirectory    | C:/ProgramData/_automation/app/Duo_Auth_Proxy                          |
+| EXEPath            | C:/ProgramData/_automation/app/Duo_Auth_Proxy/Duo_Auth_Proxy.exe      |
 | LatestVersion      | Latest Version of the application                                        |
 | Subject            | Ticket Subject                                                          |
 | Body               | Ticket Body                                                             |
@@ -61,5 +61,6 @@ The quick script to update DUO Security Authentication Proxy has failed - please
 Script Logs -
 %PowerShellResult%
 ```
+
 
 

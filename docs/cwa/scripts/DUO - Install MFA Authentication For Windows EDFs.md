@@ -14,15 +14,15 @@ Uses Client and Agent Level EDFs and an Internal monitor to ensure DUO software 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\DUO---Install-MFA-Authentication-For-Windows-EDFs\image_1.png)
+![Sample Run](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_1.png)
 
 ## Dependencies
 
 - Client EDF  
-![Client EDF](..\..\..\static\img\DUO---Install-MFA-Authentication-For-Windows-EDFs\image_2.png)
+![Client EDF](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_2.png)
 
 - Agent EDF for exclusion (Will prevent monitor from picking up agent / forcing DUO install)  
-![Agent EDF](..\..\..\static\img\DUO---Install-MFA-Authentication-For-Windows-EDFs\image_3.png)
+![Agent EDF](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_3.png)
 
 ## Variables
 
@@ -46,6 +46,7 @@ Sets all variables from EDFs and Script Globals. Will exit if required variables
 
 - Script Log
 - Ticket - Optional
+
 
 
 

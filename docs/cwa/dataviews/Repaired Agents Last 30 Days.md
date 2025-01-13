@@ -37,3 +37,4 @@ The dataview displays the information of the agents repaired by the [Script - Au
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
 
 
+

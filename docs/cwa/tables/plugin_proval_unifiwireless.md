@@ -38,3 +38,4 @@ Holds network data for each controller listed in [EPM - Data Collection - Soluti
 | WPAMode       | String | The WPA mode being used by the network.                                                            |
 
 
+

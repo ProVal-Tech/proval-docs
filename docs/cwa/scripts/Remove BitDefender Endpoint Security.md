@@ -14,7 +14,7 @@ This is an automate implementation of the agnostic Remove-BitdefenderEndpointSec
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Remove-BitDefender-Endpoint-Security\image_1.png)  
+![Sample Run](../../../static/img/Remove-BitDefender-Endpoint-Security/image_1.png)  
 Running this will remove Bitdefender Endpoint Security from the target.
 
 ## Dependencies
@@ -28,5 +28,6 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
+
 
 

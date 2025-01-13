@@ -20,8 +20,9 @@ Stores the result returned by the [Windows 11 Compatibility Validation](https://
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---Windows-11-incompatibility-Base\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---Windows-11-incompatibility-Base\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_2.png)
+
 
 
 

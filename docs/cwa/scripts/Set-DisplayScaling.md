@@ -14,7 +14,7 @@ This script sets custom Display scaling on existing as well as new users for win
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Set-DisplayScaling\image_1.png)
+![Sample Run](../../../static/img/Set-DisplayScaling/image_1.png)
 
 ## Dependencies
 
@@ -34,5 +34,6 @@ This script sets custom Display scaling on existing as well as new users for win
 ## Output
 
 - Script log
+
 
 

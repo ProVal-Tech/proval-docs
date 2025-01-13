@@ -15,11 +15,11 @@ Runs an internet speed test via the Ookla SpeedTest CLI application.
 ## Sample Run
 
 Save the result to the database only.  
-![Sample Run Image 1](..\..\..\static\img\Internet-Speed---Audit\image_1.png)  
+![Sample Run Image 1](../../../static/img/Internet-Speed---Audit/image_1.png)  
 Save the result/output to the database and email it to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com)  
-![Sample Run Image 2](..\..\..\static\img\Internet-Speed---Audit\image_2.png)  
+![Sample Run Image 2](../../../static/img/Internet-Speed---Audit/image_2.png)  
 Save the result to the database and email it to both [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com)  
-![Sample Run Image 3](..\..\..\static\img\Internet-Speed---Audit\image_3.png)  
+![Sample Run Image 3](../../../static/img/Internet-Speed---Audit/image_3.png)  
 
 ## Dependencies
 
@@ -52,7 +52,8 @@ See [EPM - Network - Agnostic - Test-InternetSpeed](https://proval.itglue.com/DO
 
 ## Sample Email
 
-![Sample Email Image](..\..\..\static\img\Internet-Speed---Audit\image_4.png)
+![Sample Email Image](../../../static/img/Internet-Speed---Audit/image_4.png)
+
 
 
 

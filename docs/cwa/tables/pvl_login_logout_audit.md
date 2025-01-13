@@ -31,3 +31,4 @@ This table stores the User login/logout data.
 | ScriptRanDate                                                          | DATETIME| This shows the script date about when script last ran                                          |
 
 
+

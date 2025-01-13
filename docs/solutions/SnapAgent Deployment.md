@@ -34,7 +34,7 @@ This solution is created to deploy the SnapAgent on Windows machines using the A
    - **Alert Template - △ Custom - Execute Script - BlackPoint SnapAgent Install**
 
 2. Reload the system cache:
-   - ![Reload Cache](..\..\static\img\SnapAgent-Deployment\image_1.png)
+   - ![Reload Cache](../../static/img/SnapAgent-Deployment/image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation --> Monitors within the CWA Control Center and set up the following:
@@ -46,5 +46,6 @@ This solution is created to deploy the SnapAgent on Windows machines using the A
    Make sure to get the below hash whitelisted for the environment where the security software is installed:  
    9E7043C03F84F49B34AA4C0D86687705 --> Hash of script Install-SnapAgentAI.ps1  
    D6A7CA1C9B7A71648470B189831FA276 --> Hash of script Install-SnapAgent.ps1  
+
 
 

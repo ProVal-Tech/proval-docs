@@ -18,7 +18,7 @@ It will then set the location settings to use the new LTCache settings.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Setup-Probe-LTCache-Share\image_1.png)
+![Sample Run](../../../static/img/Setup-Probe-LTCache-Share/image_1.png)
 
 ## Dependencies
 
@@ -30,7 +30,7 @@ Location must have a probe enabled, otherwise script will exit with error.
 - `@Computerid@` - Probe computerid
 - `@DiskSpaceCheck@` - Result in percent of free space available on Drive
 - `@ProbeHostName@` - Computer Name of ProbeID
-- `@LTChachePath@` = `@ProbeHostName@\LTCache`
+- `@LTChachePath@` = `@ProbeHostName@/LTCache`
 - `@LTChachePassword@` - Randomly Generated password / stored in the passwords table
 
 ## Process
@@ -45,5 +45,6 @@ Location must have a probe enabled, otherwise script will exit with error.
 ## Output
 
 Script log
+
 
 

@@ -31,6 +31,7 @@ Automate must generate tickets.
 
 ## Example
 
-![Example Image](..\..\..\static\img\Admin---Ticket-Volume-Metrics\image_1.png)
+![Example Image](../../../static/img/Admin---Ticket-Volume-Metrics/image_1.png)
+
 
 

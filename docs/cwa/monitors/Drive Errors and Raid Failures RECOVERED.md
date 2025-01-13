@@ -25,8 +25,8 @@ SELECT
     eventlogs.`TimeGen`,  
     ': ',  
     REPLACE(
-      REPLACE(eventlogs.`message`, '\\'', ''),  
-      '\\n',  
+      REPLACE(eventlogs.`message`, '//'', ''),  
+      '//n',  
       ''  
     ),  
     ' (',  
@@ -61,26 +61,27 @@ WHERE
 GROUP BY  
   eventlogs.computerid,  
   eventlogs.message 
-  #HAVING `TestValue` NOT REGEXP 'controller error on.*\\\\(([1-9]|1[0-9]|20) events* found\\\\)'  
+  #HAVING `TestValue` NOT REGEXP 'controller error on.*////(([1-9]|1[0-9]|20) events* found////)'  
 HAVING  
-  `TestValue` NOT REGEXP 'has a bad block.*\\\\([1-9] events{0,1} found\\\\)'  
+  `TestValue` NOT REGEXP 'has a bad block.*////([1-9] events{0,1} found////)'  
 ```
 
 ## FAQ
 
 **Q: How do I ignore certain error types or only alert on a number of events?**  
 **A:** At the end of the query there is a commented-out (by default) line for this behavior.  
-![Image](..\..\..\static\img\Drive-Errors-and-Raid-Failures-RECOVERED\image_1.png)
+![Image](../../../static/img/Drive-Errors-and-Raid-Failures-RECOVERED/image_1.png)
 
 Remove the `#` from this line and that will allow this line to go into production. In this example, we want to ignore controller errors if there are less than 20 of them on a specific drive. The portion:  
-![Image](..\..\..\static\img\Drive-Errors-and-Raid-Failures-RECOVERED\image_2.png)  
+![Image](../../../static/img/Drive-Errors-and-Raid-Failures-RECOVERED/image_2.png)  
 is the subject line of the event log that we want to exclude unless there are X results. The portion here:  
-![Image](..\..\..\static\img\Drive-Errors-and-Raid-Failures-RECOVERED\image_3.png)  
+![Image](../../../static/img/Drive-Errors-and-Raid-Failures-RECOVERED/image_3.png)  
 is the number of events.
 
 Translated from programming to human, this essentially says "Do not tell me about controller errors unless there are more than 20 of them". 
 
 This could work for Paging Errors or Bad Blocks or really anything you can match.
+
 
 
 

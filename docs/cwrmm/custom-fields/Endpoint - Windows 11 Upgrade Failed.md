@@ -20,7 +20,8 @@ Stores whether Windows 11 Upgrade Failed after running the Windows 11 Installer 
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---Windows-11-Upgrade-Failed\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---Windows-11-Upgrade-Failed\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_2.png)
+
 
 

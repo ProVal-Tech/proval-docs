@@ -14,7 +14,7 @@ This process is used to upgrade a Windows operating system to a specific Feature
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-10-Feature-Update-Process\image_1.png)
+![Sample Run](../../../static/img/Windows-10-Feature-Update-Process/image_1.png)
 
 ## Dependencies
 
@@ -35,8 +35,8 @@ The payload of this script is a ZIP file which contains the contents of the ISO 
 $zipURL = "https://your.url.here/path/to/file/1909.zip"
 [byte[]]$targetHash = "146,151,139,92,58,82,93,198,226,27,177,213,41,217,199,194" -split ','
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-$dir = "C:\\temp"
-$zip = "$($dir)\\1909.zip"
+$dir = "C://temp"
+$zip = "$($dir)//1909.zip"
 mkdir -Path $dir -ErrorAction SilentlyContinue
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($zipURL,$zip)
@@ -64,8 +64,8 @@ if(-not $(Test-Path -Path $zip)) {
 $zipURL = "https://your.url.here/path/to/file/2004.zip"
 [byte[]]$targetHash = "50,89,227,156,100,0,144,217,240,87,169,198,11,8,195,245" -split ','
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-$dir = "C:\\temp"
-$zip = "$($dir)\\2004.zip"
+$dir = "C://temp"
+$zip = "$($dir)//2004.zip"
 mkdir -Path $dir -ErrorAction SilentlyContinue
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($zipURL,$zip)
@@ -97,7 +97,7 @@ This process will fail if the target machine does not have a United States versi
 
 | Name               | Example                                              | Required | Description                                                                                     |
 |--------------------|------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------|
-| tempdir            | C:\temp                                             | True     | The temporary directory to download and extract files to.                                     |
+| tempdir            | C:/temp                                             | True     | The temporary directory to download and extract files to.                                     |
 | ZIPURL             | [https://file.provaltech.com/zips/21H1.zip](https://file.provaltech.com/zips/21H1.zip) | True     | The URL to the target ZIP payload.                                                             |
 | HoursToWait        | 1                                                    | True     | The maximum number of hours to wait for the update to complete.                               |
 | TargetHash         | 17,168,89,196,67,52,23,188,144,143,158,145,94,203,64,70 | True     | The known good MD5 hash of the target ZIP payload.                                            |
@@ -119,7 +119,7 @@ The step-by-step process of this script is as follows:
    3. If the file is not found after the download is completed, an error is thrown, and the download portion exits.
    4. If the file is found, an MD5 hash validation is performed. If the file fails the validation, an error is thrown, the malformed file is deleted, and the script exits.
 4. The ZIP file is extracted to a directory of the same name.
-   - i.e. C:\temp\1909.zip is extracted to C:\temp\1909
+   - i.e. C:/temp/1909.zip is extracted to C:/temp/1909
 5. If setup.exe is not found in the extracted directory, then the script will exit on error.
 6. The upgrade is started.
 7. The script will then wait the specified number of hours in the HoursToWait parameter, in 15-minute increments. (i.e. if HoursToWait is 2, then the update will check for success 8 times every 15 minutes before failing)
@@ -143,12 +143,13 @@ The step-by-step process of this script is as follows:
 ## Hash Creation Process
 
 ```
-$zip = "C:\\path\\to\\zipfile.zip"
+$zip = "C://path//to//zipfile.zip"
 $md5 = [System.Security.Cryptography.MD5]::Create()
 $fileStream = [System.IO.File]::OpenRead($zip)
 $hash = $md5.ComputeHash($fileStream)
 $hash -join ','
 ```
+
 
 
 

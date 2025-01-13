@@ -35,3 +35,4 @@ This dataview shows you how a computer is domain joined (or not domain joined) t
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
 
 
+

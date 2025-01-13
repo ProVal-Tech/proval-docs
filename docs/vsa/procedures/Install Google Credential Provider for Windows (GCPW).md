@@ -30,11 +30,11 @@ This agent procedure automates the installation and configuration of Google Cred
 
 Procedure Name: Google Credential Provider for Windows (GCPW) - Install
 
-![Image](..\..\..\static\img\Install-Google-Credential-Provider-for-Windows-(GCPW)\image_1.png)
+![Image](../../../static/img/Install-Google-Credential-Provider-for-Windows-(GCPW)/image_1.png)
 
 This procedure uses two variables.
 
-![Image](..\..\..\static\img\Install-Google-Credential-Provider-for-Windows-(GCPW)\image_2.png)
+![Image](../../../static/img/Install-Google-Credential-Provider-for-Windows-(GCPW)/image_2.png)
 
 | Variable          | Required | Default | Description                                                                                     |
 |-------------------|----------|---------|-------------------------------------------------------------------------------------------------|
@@ -55,8 +55,9 @@ Location of output for log, result, and error files.
 
 ```
 Agent Procedure Log
-%ProgramData%\_automation\AgentProcedure\InstallGCPW\Install-GCPW-log.txt
-%ProgramData%\_automation\AgentProcedure\InstallGCPW\Install-GCPW-error.txt
+%ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-log.txt
+%ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-error.txt
 ```
+
 
 

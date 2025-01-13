@@ -24,23 +24,24 @@ Global
 
 ## Ticketing
 
-**Subject:** `OneDrive Error Detected on %Clientname%\\%computername%`
+**Subject:** `OneDrive Error Detected on %Clientname%//%computername%`
 
 **Body:**  
-`The OneDrive Audit script found an issue with %Clientname%\\%computername%.`  
+`The OneDrive Audit script found an issue with %Clientname%//%computername%.`  
 `Data Collection Time: %FIELDNAME%`  
 `Reported Issue:`  
 `%RESULT%`  
 
 **Example:**  
-`The OneDrive Audit script found an issue with ABC Inc.\\TEST-COMPUTER`  
+`The OneDrive Audit script found an issue with ABC Inc.//TEST-COMPUTER`  
 `Data Collection Time: 3/14/2024 1:11:45 PM`  
 `Reported Issue:`  
-`Sync Status for "someone" for "C:\\Users\\someone\\OneDriveCloudTemp" is "<ERROR>Status not found for type [OneDriveCloudTemp]";`  
-`Sync Status for "someone" for "C:\\Users\\someone\\OneDrive - Some Inc" is "Up to date";`
+`Sync Status for "someone" for "C://Users//someone//OneDriveCloudTemp" is "<ERROR>Status not found for type [OneDriveCloudTemp]";`  
+`Sync Status for "someone" for "C://Users//someone//OneDrive - Some Inc" is "Up to date";`
 
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+
 
 

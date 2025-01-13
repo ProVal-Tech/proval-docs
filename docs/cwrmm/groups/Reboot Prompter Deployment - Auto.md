@@ -28,11 +28,11 @@ Auto_RebootPendingCheck --> Custom field (Endpoint)
 
 1. **Create Dynamic Groups:**
 
-   ![Dynamic Groups](..\..\..\static\img\Reboot-Prompter-Deployment---Auto\image_1.png)
+   ![Dynamic Groups](../../../static/img/Reboot-Prompter-Deployment---Auto/image_1.png)
 
 2. **Reboot Prompter Deployment - Auto**
 
-   ![Reboot Prompter Deployment](..\..\..\static\img\Reboot-Prompter-Deployment---Auto\image_2.png)
+   ![Reboot Prompter Deployment](../../../static/img/Reboot-Prompter-Deployment---Auto/image_2.png)
 
    **Criteria:**
 
@@ -41,5 +41,6 @@ Auto_RebootPendingCheck --> Custom field (Endpoint)
    - The agent available is equals True.
    - The OS contains any of Windows 10 and Windows 11.
    - Exclude Reboot custom field equals False.
+
 
 

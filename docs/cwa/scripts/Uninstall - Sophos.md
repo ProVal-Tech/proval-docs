@@ -20,7 +20,7 @@ Runs the Agnostic Remove-Sophos.ps1 script on a target Automate managed device.
 ### *It is recommended that you run this script with the NoSafeMode global parameter set to 0, it removes the application cleaner and results in less application remnants. Please consider running this in safe mode if possible.*
 
 This setup will skip the removal of the Sophos Zap platform.  
-![image](..\..\..\static\img\Uninstall---Sophos\image_1.png)
+![image](../../../static/img/Uninstall---Sophos/image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ No non-template variables in script.
 
 - There are a lot of leftover files on the target computer.
   - The cleanest method of removal is to set the Arguments parameter to -force, remembering that you should be using -SkipZap if Zap is not installed with the NoSafeMode set to 0.
+
 
 

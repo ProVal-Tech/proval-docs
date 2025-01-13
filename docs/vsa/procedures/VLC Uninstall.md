@@ -22,11 +22,12 @@ this procedure silently removes VLC
 
 ## Process
 
-Program Files\VideoLAN\VLC\uninstall.exe /S /V/qn
+Program Files/VideoLAN/VLC/uninstall.exe /S /V/qn
 
 ## Output
 
 AP Log
+
 
 
 

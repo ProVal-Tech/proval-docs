@@ -30,3 +30,4 @@ This dataview shows which machines are associated to specific Contacts in Automa
 | Wake On Lan          | Check whether contact has Wake On Lan permission or not.                |
 
 
+

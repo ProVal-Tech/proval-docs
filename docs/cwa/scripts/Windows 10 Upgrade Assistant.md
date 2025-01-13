@@ -16,7 +16,7 @@ Time Saved by Automation: 120 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-10-Upgrade-Assistant\image_1.png)
+![Sample Run](../../../static/img/Windows-10-Upgrade-Assistant/image_1.png)
 
 ## Dependencies
 
@@ -37,6 +37,7 @@ If the process for the Windows 10 app exists, the script will exit successfully 
 ## Output
 
 - Script log messages only
+
 
 
 

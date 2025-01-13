@@ -14,8 +14,8 @@ Updates all installed VS versions automatically. CW RMM implementation of the ag
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Update-Visual-Studio\image_1.png)
-![Sample Run 2](..\..\..\static\img\Update-Visual-Studio\image_2.png)
+![Sample Run 1](../../../static/img/Update-Visual-Studio/image_1.png)
+![Sample Run 2](../../../static/img/Update-Visual-Studio/image_2.png)
 
 ## Dependencies
 
@@ -25,34 +25,34 @@ Updates all installed VS versions automatically. CW RMM implementation of the ag
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Step 1](..\..\..\static\img\Update-Visual-Studio\image_3.png)
-![Task Creation Step 2](..\..\..\static\img\Update-Visual-Studio\image_4.png)
+![Task Creation Step 1](../../../static/img/Update-Visual-Studio/image_3.png)
+![Task Creation Step 2](../../../static/img/Update-Visual-Studio/image_4.png)
 
 **Name:** `Update Visual Studio`  
 **Description:** `Updates all installed VS versions automatically`  
 **Category:** `Application`  
-![Task Creation Step 3](..\..\..\static\img\Update-Visual-Studio\image_5.png)
+![Task Creation Step 3](../../../static/img/Update-Visual-Studio/image_5.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Update-Visual-Studio\image_6.png)
+![Add Row](../../../static/img/Update-Visual-Studio/image_6.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Update-Visual-Studio\image_7.png)
+![Blank Function](../../../static/img/Update-Visual-Studio/image_7.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell Script](..\..\..\static\img\Update-Visual-Studio\image_8.png)
-![PowerShell Script Function](..\..\..\static\img\Update-Visual-Studio\image_9.png)
+![Select PowerShell Script](../../../static/img/Update-Visual-Studio/image_8.png)
+![PowerShell Script Function](../../../static/img/Update-Visual-Studio/image_9.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Pop Up](..\..\..\static\img\Update-Visual-Studio\image_10.png)
+![PowerShell Script Pop Up](../../../static/img/Update-Visual-Studio/image_10.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
@@ -62,11 +62,11 @@ $ProjectName = 'Update-VisualStudio'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -100,40 +100,41 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Example](..\..\..\static\img\Update-Visual-Studio\image_11.png)
+![PowerShell Script Example](../../../static/img/Update-Visual-Studio/image_11.png)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row for Script Log](..\..\..\static\img\Update-Visual-Studio\image_12.png)
+![Add Row for Script Log](../../../static/img/Update-Visual-Studio/image_12.png)
 
 A blank function will appear.
 
-![Blank Function for Script Log](..\..\..\static\img\Update-Visual-Studio\image_13.png)
+![Blank Function for Script Log](../../../static/img/Update-Visual-Studio/image_13.png)
 
 Search and select the `Script Log` function.
 
-![Select Script Log](..\..\..\static\img\Update-Visual-Studio\image_14.png)
+![Select Script Log](../../../static/img/Update-Visual-Studio/image_14.png)
 
 The following function will pop up on the screen:
 
-![Script Log Pop Up](..\..\..\static\img\Update-Visual-Studio\image_15.png)
+![Script Log Pop Up](../../../static/img/Update-Visual-Studio/image_15.png)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](..\..\..\static\img\Update-Visual-Studio\image_16.png)
+![Script Log Save](../../../static/img/Update-Visual-Studio/image_16.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Final Save](..\..\..\static\img\Update-Visual-Studio\image_17.png)
+![Final Save](../../../static/img/Update-Visual-Studio/image_17.png)
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Update-Visual-Studio\image_18.png)
+![Completed Task](../../../static/img/Update-Visual-Studio/image_18.png)
 
 ## Output
 
 - Script log
+
 
 

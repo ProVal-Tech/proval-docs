@@ -19,7 +19,7 @@ Uses VSAAPI module to interface with client environment, setting new CustomField
 
 # Payload Usage
 ```
-.\Initialize-VsaAgentFields.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiServiceAccount -RestApiToken abcd-efgh-ijkl-mnop
+./Initialize-VsaAgentFields.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiServiceAccount -RestApiToken abcd-efgh-ijkl-mnop
 ```
 
 # Parameters
@@ -34,5 +34,6 @@ Uses VSAAPI module to interface with client environment, setting new CustomField
 Initialize-VsaAgentFields-Log.txt Initialize-VsaAgentFields-error.txt
 
 **NOTE:** Can be run from VSA 9.5 by running the Agent Procedure: Shared > Vsa Automation > Stack CF Initialization
+
 
 

@@ -16,7 +16,7 @@ Flag the Computer-Level EDF `Exclude From HPE ILO Monitoring` to exclude a compu
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\HP-iLO-Credential-Missing-Detection\image_1.png)
+![Sample Run](../../../static/img/HP-iLO-Credential-Missing-Detection/image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,6 @@ Computer-Level EDF - Exclude From HPE ILO Monitoring
 
 - Script log
 - Ticket
+
 
 

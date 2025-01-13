@@ -27,12 +27,12 @@ Insert the details of the monitor in the below table.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 1270.0.1      | Run File   | **REDACTED**  | State Based | 3600     | ![Result](..\..\..\static\img\EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring\image_1.png) |
+| System       | 1270.0.1      | Run File   | **REDACTED**  | State Based | 3600     | ![Result](../../../static/img/EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring/image_1.png) |
 
 ## Target
 
 Managed Servers (HP Servers only)  
-![Target](..\..\..\static\img\EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring\image_2.png)  
+![Target](../../../static/img/EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring/image_2.png)  
 The monitor set should be limited to the `HP Servers` search.
 
 ## Implementation
@@ -41,9 +41,10 @@ The monitor set should be limited to the `HP Servers` search.
 
 ## Ticketing
 
-**Subject:** `HP Event Log Errors Detected on %CLIENTNAME%\%COMPUTERNAME%`  
+**Subject:** `HP Event Log Errors Detected on %CLIENTNAME%/%COMPUTERNAME%`  
 
 **Body:** `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%`
+
 
 

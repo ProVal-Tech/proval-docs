@@ -14,12 +14,12 @@ This script is created to install and update the application whose package is av
 Please find the application package from below URL:  
 [https://winget.run/search](https://winget.run/search)  
 
-Script Path: C:\ProgramData\_automation\script\Invoke-WingetProcessor\Invoke-WingetProcessor.ps1  
+Script Path: C:/ProgramData/_automation/script/Invoke-WingetProcessor/Invoke-WingetProcessor.ps1  
 File Hash: 606FC62A7E6AD61143B93A6426BAD11F99C05AAD01BDFA0963F6AC83D6935C73  
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Script---Winget---InstallUpdate-Autofix,Param\image_1.png)  
+![Sample Run](../../../static/img/Script---Winget---InstallUpdate-Autofix,Param/image_1.png)  
 
 ## Variables
 
@@ -46,6 +46,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

@@ -12,7 +12,7 @@ unlisted: false
 
 This script will make changes in the registry to set the update channel for Microsoft 365 products to the value set in the Client or Computer level EDF `Update Channel`.
 
-**File Path:** `C:\ProgramData\_Automation\Script\Get-M365UpdateChannel\Get-M365UpdateChannel.ps1`
+**File Path:** `C:/ProgramData/_Automation/Script/Get-M365UpdateChannel/Get-M365UpdateChannel.ps1`
 
 **File Hash (SHA256):** `1CAED911E914A8F8C9EBA29D244459F4DA2B09780EB8ED720FB55F2519E06D19`
 
@@ -20,7 +20,7 @@ This script will make changes in the registry to set the update channel for Micr
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Microsoft-365---Click-to-Run---Set-Update-Channel\image_1.png)
+![Sample Run](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_1.png)
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ This script will make changes in the registry to set the update channel for Micr
 |-----------------|------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Update Channel   | Current Channel  | DropDown  | Microsoft 365 | Select the Update Channel from the drop-down menu to set for the client's computers. Available options are:  - Current Channel  - Monthly Enterprise Channel  - Semi-Annual Enterprise Channel  - Beta Channel  - None  Leave it blank or set it to `None` to disable the Automation for the client. |
 
-![Client Level EDF](..\..\..\static\img\Microsoft-365---Click-to-Run---Set-Update-Channel\image_2.png)
+![Client Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_2.png)
 
 ## Computer Level EDF
 
@@ -40,12 +40,13 @@ This script will make changes in the registry to set the update channel for Micr
 |-----------------|------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Update Channel   | Current Channel  | DropDown  | Microsoft 365 | Select the Update Channel from the drop-down menu to set for the computer. Available options are:  - Current Channel  - Monthly Enterprise Channel  - Semi-Annual Enterprise Channel  - Beta Channel  - None  Set it to `None` to disable the Automation for the computer. Computer Level EDF can be used to override the value set in the Client Level EDF. |
 
-![Computer Level EDF](..\..\..\static\img\Microsoft-365---Click-to-Run---Set-Update-Channel\image_3.png)
+![Computer Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_3.png)
 
 ## Output
 
 - Script Log
 - Custom Table
 - Dataview
+
 
 

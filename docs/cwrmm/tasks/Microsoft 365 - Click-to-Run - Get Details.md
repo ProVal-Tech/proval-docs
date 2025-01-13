@@ -14,8 +14,8 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_5.png)  
-![Sample Run 2](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_6.png)  
+![Sample Run 1](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_5.png)  
+![Sample Run 2](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_6.png)  
 
 ## Dependencies
 
@@ -29,35 +29,35 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Script Editor](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_7.png)  
-![Script Editor 2](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_8.png)  
+![Script Editor](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_7.png)  
+![Script Editor 2](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_8.png)  
 
 **Name:** `Microsoft 365 - Click-to-Run - Get Details`  
 **Description:** `This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel.`  
 **Category:** Application  
-![Category Image](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_9.png)  
+![Category Image](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_9.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_10.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_10.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_11.png)  
+![Blank Function](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_11.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_12.png)  
-![PowerShell Script 2](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_13.png)  
+![PowerShell Script](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_12.png)  
+![PowerShell Script 2](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_13.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_14.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_14.png)  
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
-$C2RInfo = Get-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration' -ErrorAction SilentlyContinue
+$C2RInfo = Get-ItemProperty -Path 'HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration' -ErrorAction SilentlyContinue
 if ( $C2RInfo ) {
     $version = $C2rInfo.ClientVersionToReport
     $autoUpdate = if ($C2RInfo.CDNBaseUrl) {
@@ -108,103 +108,103 @@ if ( $C2RInfo ) {
 }
 ```
 
-![Next Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_15.png)  
+![Next Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_15.png)  
 
 ### Row 2 Function: Set User Variable
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and Select the `Set User Variable` function.  
-![Set User Variable](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_17.png)  
+![Set User Variable](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_17.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_18.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_18.png)  
 
 - Set `psout` in the `Variable Name` field.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_19.png)  
+![Save Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_19.png)  
 
-![Next Step](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_20.png)  
+![Next Step](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_20.png)  
 
 ### Row 3 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_21.png)  
+![Blank Function](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_21.png)  
 
 Search and select the `Script Log` function.  
-![Script Log](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_22.png)  
+![Script Log](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_22.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_23.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_23.png)  
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Save Log](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_24.png)  
+![Save Log](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_24.png)  
 
 ### Row 4 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_25.png)  
+![PowerShell Script](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_25.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_26.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_26.png)  
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
 $output = '@psout@'
 if ( $output -match 'Version=') {
-    return $($($output -split '\|')[0] -split '=')[1]
+    return $($($output -split '/|')[0] -split '=')[1]
 } else {
     return ''
 }
 ```
 
-![Next Step](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_27.png)  
+![Next Step](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_27.png)  
 
 ### Row 5 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and Select the `Set Custom Field` function.  
-![Set Custom Field](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_28.png)  
+![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_29.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_29.png)  
 
 - Search and select the Computer-Level Custom Field `C2R Office Version` from the Custom Field dropdown menu.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_30.png)  
+![Save Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_30.png)  
 
 Flag the `Continue on Failure` field.  
-![Continue on Failure](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_31.png)  
+![Continue on Failure](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_31.png)  
 
 ### Row 6 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_25.png)  
+![PowerShell Script](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_25.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_26.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_26.png)  
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
 $output = '@psout@'
 if ( $output -match 'AutoUpdate=') {
-    if ($($($output -split '\|')[1] -split '=')[1] -eq 1) {
+    if ($($($output -split '/|')[1] -split '=')[1] -eq 1) {
         return 'Enabled'
     } else {
         return 'Disabled'
@@ -214,120 +214,120 @@ if ( $output -match 'AutoUpdate=') {
 }
 ```
 
-![Next Step](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_32.png)  
+![Next Step](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_32.png)  
 
 ### Row 7 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and Select the `Set Custom Field` function.  
-![Set Custom Field](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_28.png)  
+![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_29.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_29.png)  
 
 - Search and select the Computer-Level Custom Field `C2R Auto Update` from the Custom Field dropdown menu.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_33.png)  
+![Save Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_33.png)  
 
 Flag the `Continue on Failure` field.  
-![Continue on Failure](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_34.png)  
+![Continue on Failure](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_34.png)  
 
 ### Row 8 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_25.png)  
+![PowerShell Script](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_25.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_26.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_26.png)  
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
 $output = '@psout@'
 if ( $output -match 'UpdateChannel=') {
-    return $($($output -split '\|')[2] -split '=')[1]
+    return $($($output -split '/|')[2] -split '=')[1]
 } else {
     return ''
 }
 ```
 
-![Next Step](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_35.png)  
+![Next Step](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_35.png)  
 
 ### Row 9 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and Select the `Set Custom Field` function.  
-![Set Custom Field](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_28.png)  
+![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_29.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_29.png)  
 
 - Search and select the Computer-Level Custom Field `C2R Update Channel` from the Custom Field dropdown menu.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_36.png)  
+![Save Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_36.png)  
 
 Flag the `Continue on Failure` field.  
-![Continue on Failure](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_37.png)  
+![Continue on Failure](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_37.png)  
 
 ### Row 10 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_25.png)  
+![PowerShell Script](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_25.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_26.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_26.png)  
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
 $output = '@psout@'
 if ( $output -match 'DataCollectionDate=') {
-    return $($($output -split '\|')[3] -split '=')[1]
+    return $($($output -split '/|')[3] -split '=')[1]
 } else {
     return "$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))"
 }
 ```
 
-![Next Step](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_38.png)  
+![Next Step](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_38.png)  
 
 ### Row 11 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_16.png)  
+![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
 Search and Select the `Set Custom Field` function.  
-![Set Custom Field](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_28.png)  
+![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
-![Function Popup](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_29.png)  
+![Function Popup](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_29.png)  
 
 - Search and select the Computer-Level Custom Field `C2R Data Collection Time` from the Custom Field dropdown menu.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.  
-![Save Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_39.png)  
+![Save Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_39.png)  
 
 Flag the `Continue on Failure` field.  
-![Continue on Failure](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_40.png)  
+![Continue on Failure](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_40.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Final Save](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_41.png)  
+![Final Save](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_41.png)  
 
 ## Completed Task
 
-![Completed Task 1](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_42.png)  
-![Completed Task 2](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_43.png)  
+![Completed Task 1](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_42.png)  
+![Completed Task 2](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_43.png)  
 
 ## Implementation
 
@@ -337,32 +337,33 @@ It is suggested to run the Task once per month against the computers with the `M
 - Search for [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/5078775/docs/17917390#version=draft&documentMode=edit) Task.
 - Select the concerned task.
 - Click on `Schedule` button to schedule the task/script.  
-![Schedule Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_44.png)  
+![Schedule Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_44.png)  
 
 This screen will appear.  
-![Schedule Screen](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_45.png)  
+![Schedule Screen](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_45.png)  
 
 Select the `Schedule` button and click the calendar-looking button present in front of the `Recurrence` option.  
-![Recurrence Option](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_46.png)  
+![Recurrence Option](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_46.png)  
 
 Select the `Days(s)` for the `Repeat`, `14` and click the `OK` button to save the schedule.  
-![Save Schedule](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_47.png)  
+![Save Schedule](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_47.png)  
 
 Click the `Select Targets` button to select the concerned target.  
-![Select Targets](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_48.png)  
+![Select Targets](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_48.png)  
 
 Search and select the `Office C2R Auditing` Device Group for the target.  
-![Device Group](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_49.png)  
+![Device Group](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_49.png)  
 
 Click the `Run` button to initiate the schedule.  
-![Run Button](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_50.png)  
+![Run Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_50.png)  
 
 ## Output
 
 - Script log  
-![Script Log](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_51.png)  
+![Script Log](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_51.png)  
 
 - Custom Fields  
-![Custom Fields](..\..\..\static\img\Microsoft-365---Click-to-Run---Get-Details\image_52.png)  
+![Custom Fields](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_52.png)  
+
 
 

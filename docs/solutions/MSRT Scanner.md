@@ -30,7 +30,7 @@ This solution performs the MSRT scanning, auto-fixes detect infection as an opti
    - **△ Custom - Execute Script - MSRT Scanner**
 
 2. Reload the system cache:
-   ![Reload Cache](..\..\static\img\MSRT-Scanner\image_1.png)
+   ![Reload Cache](../../static/img/MSRT-Scanner/image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -42,5 +42,6 @@ This solution performs the MSRT scanning, auto-fixes detect infection as an opti
      ED06AECD5686944B0A5E5D76C1E7A9EA
      C8759C7E4979819C0BB39DAF4DC64124
      ```
+
 
 

@@ -18,11 +18,11 @@ These steps must be followed after importing/updating the script after September
 
 **Step 1:** Run the script on any online Windows computer. This will create the necessary system properties.
 
-![System Properties](..\..\..\static\img\Service---Restart\image_1.png)
+![System Properties](../../../static/img/Service---Restart/image_1.png)
 
 System Properties:
 
-![System Properties](..\..\..\static\img\Service---Restart\image_2.png)
+![System Properties](../../../static/img/Service---Restart/image_2.png)
 
 **Step 2:** Set the System properties for alerting. Check the **`System Properties`** section of the document for more information on the properties.
 
@@ -30,7 +30,7 @@ System Properties:
 
 **Manual Execution:**
 
-![Manual Execution](..\..\..\static\img\Service---Restart\image_3.png)
+![Manual Execution](../../../static/img/Service---Restart/image_3.png)
 
 ## Dependencies
 
@@ -71,16 +71,17 @@ System Properties:
 Script will fetch the ticket category from the monitor set running the script.
 
 From individual machine:  
-![Individual Machine](..\..\..\static\img\Service---Restart\image_4.png)
+![Individual Machine](../../../static/img/Service---Restart/image_4.png)
 
 From Group Monitor:  
-![Group Monitor](..\..\..\static\img\Service---Restart\image_5.png)
+![Group Monitor](../../../static/img/Service---Restart/image_5.png)
 
 ## Output
 
 - Script log (for detailed information on individual results)
 - Tickets (if enabled)
 - Emails (if enabled)
+
 
 
 

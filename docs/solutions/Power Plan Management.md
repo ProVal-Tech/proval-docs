@@ -16,12 +16,12 @@ This solution automates the deployment of a standard power plan to Windows machi
 
 | File Path                                                                 | File Hash (SHA256)                                                                                       | File Hash (MD5)          | Script                                                                                     |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------------------------|
-| C:\ProgramData\_Automation\script\Get-PowerPlan\Manage-OverFlowedVariable.ps1 | 79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674 | 12B41CDBC04010E638D3FFB8A4BDB1D6 | [Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) |
-| C:\ProgramData\_Automation\script\Get-PowerPlan\Get-PowerPlan.ps1         | DDE3ACC4A91AB8C7E8971A673AC07B8F4B3B34FA8DAD5849E156C5E6A80DFDF8 | AE0FAF82228693C611F4578564FE353C | [Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) |
-| C:\ProgramData\_Automation\script\Get-PowerPlan\Get-PowerPlanAI.ps1      | C7CD78CEAC21FF393A913B266CB5C0EC12CEA8E364FA0AD346C287C272463992 | 3AFF43D2532BA4AA1D6DB604F613C8EE | [Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) |
-| C:\ProgramData\_Automation\script\Set-PowerPlan\Set-PowerPlan.ps1        | 28C5503857406511327E72114784F559799CEBFE96A6D323FAA2A25F56F8488C | 7882C5890DCDFA7CE81DD62AB093A1F8 | [Script - Power Plan - Set/Create](https://proval.itglue.com/DOC-5078775-15053772) |
-| C:\ProgramData\_Automation\script\Enable-PowerPlan\Enable-PowerPlan.ps1  | 13F38A3CB96BE9C19B38ED09A1175852B33713DE43368B84867A7999D202F6F3 | 59BB9E9FB16FD5E53EB657D0F02ED9A8 | [Script - Power Plan - Enable](https://proval.itglue.com/DOC-5078775-15053777) |
-| C:\ProgramData\_Automation\script\Remove-PowerPlan\Remove-PowerPlan.ps1  | 5CA9E22892E872DE4020E41E6BB4840CD47BBDBBFB4002D6D622E7828D63E64F | D1A1BB2B61D2507BF59E10CB23D140E8 | [Script - Power Plan - Remove](https://proval.itglue.com/DOC-5078775-15053778) |
+| C:/ProgramData/_Automation/script/Get-PowerPlan/Manage-OverFlowedVariable.ps1 | 79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674 | 12B41CDBC04010E638D3FFB8A4BDB1D6 | [Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) |
+| C:/ProgramData/_Automation/script/Get-PowerPlan/Get-PowerPlan.ps1         | DDE3ACC4A91AB8C7E8971A673AC07B8F4B3B34FA8DAD5849E156C5E6A80DFDF8 | AE0FAF82228693C611F4578564FE353C | [Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) |
+| C:/ProgramData/_Automation/script/Get-PowerPlan/Get-PowerPlanAI.ps1      | C7CD78CEAC21FF393A913B266CB5C0EC12CEA8E364FA0AD346C287C272463992 | 3AFF43D2532BA4AA1D6DB604F613C8EE | [Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) |
+| C:/ProgramData/_Automation/script/Set-PowerPlan/Set-PowerPlan.ps1        | 28C5503857406511327E72114784F559799CEBFE96A6D323FAA2A25F56F8488C | 7882C5890DCDFA7CE81DD62AB093A1F8 | [Script - Power Plan - Set/Create](https://proval.itglue.com/DOC-5078775-15053772) |
+| C:/ProgramData/_Automation/script/Enable-PowerPlan/Enable-PowerPlan.ps1  | 13F38A3CB96BE9C19B38ED09A1175852B33713DE43368B84867A7999D202F6F3 | 59BB9E9FB16FD5E53EB657D0F02ED9A8 | [Script - Power Plan - Enable](https://proval.itglue.com/DOC-5078775-15053777) |
+| C:/ProgramData/_Automation/script/Remove-PowerPlan/Remove-PowerPlan.ps1  | 5CA9E22892E872DE4020E41E6BB4840CD47BBDBBFB4002D6D622E7828D63E64F | D1A1BB2B61D2507BF59E10CB23D140E8 | [Script - Power Plan - Remove](https://proval.itglue.com/DOC-5078775-15053778) |
 
 ## Associated Content
 
@@ -72,10 +72,10 @@ This solution automates the deployment of a standard power plan to Windows machi
    - `△ Custom - PowerPlan Automation`
 
 2. Reload the System Cache  
-   ![Image](..\..\static\img\Power-Plan-Management\image_1.png)
+   ![Image](../../static/img/Power-Plan-Management/image_1.png)
 
 3. Run the [Script - Power Plan - Set/Create](https://proval.itglue.com/DOC-5078775-15053772) with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](https://proval.itglue.com/DOC-5078775-16980557) internal monitor.  
-   ![Image](..\..\static\img\Power-Plan-Management\image_2.png)
+   ![Image](../../static/img/Power-Plan-Management/image_2.png)
 
 4. Configure the solution as follows:  
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -86,17 +86,17 @@ This solution automates the deployment of a standard power plan to Windows machi
 #### Standardize
 
 1. **Follow these steps only if instructed to do so**: More details are provided in the **`Automation`** section of the [Power Plan - Set/Create](https://proval.itglue.com/DOC-5078775-15053772) script's document.  
-   You can start by downloading the `ProVal_-_High_Performance.csv` found on the linked document above and placing it on the LTShare under the folder `\\LTShare\\Transfer\\PowerPlan`.  
-   ![Image](..\..\static\img\Power-Plan-Management\image_3.png)
+   You can start by downloading the `ProVal_-_High_Performance.csv` found on the linked document above and placing it on the LTShare under the folder `//LTShare//Transfer//PowerPlan`.  
+   ![Image](../../static/img/Power-Plan-Management/image_3.png)
 
 2. Next navigate to the System Dashboard → Config → Additional Field Defaults → Clients → PowerPlan
    - Fill out the PowerPlan Configuration File to show 'ProVal_-_High_Performance'
    - Enter the PowerPlan Name specified by the consultant (**If it has not been specified, stop and reach out to them and ask**) - This is the display name that the power plan will show up as within Windows and what the client will see. This will likely be `<Client Abbreviation> Standard`. Like 'ProVal Standard' for example.
    - **IMPORTANT** **Do NOT fill out the PowerPlan Automation EDF**. That will need to be filled out by the partner on a per-client basis.  
-   ![Image](..\..\static\img\Power-Plan-Management\image_4.png)
+   ![Image](../../static/img/Power-Plan-Management/image_4.png)
 
 3. Reach out to the consultant to let them know the standardization steps have been followed and the client can issue the PowerPlan automation by selecting the following EDF:  
-   ![Image](..\..\static\img\Power-Plan-Management\image_5.png)
+   ![Image](../../static/img/Power-Plan-Management/image_5.png)
 
 ### Optional Auditing
 
@@ -122,5 +122,6 @@ This solution automates the deployment of a standard power plan to Windows machi
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
+
 
 

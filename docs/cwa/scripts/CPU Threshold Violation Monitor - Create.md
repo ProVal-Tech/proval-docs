@@ -23,32 +23,32 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
    - Execute this SQL query from an RAWSQL monitor set to get rid of the existing monitors:  
      `Delete From Groupagents where Name = 'ProVal - Production - CPU Threshold Violation Monitor'`
    - Open the `Server Status` tool by navigating to `Help` > `Server Status`.  
-     ![Server Status Tool](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_1.png)
+     ![Server Status Tool](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_1.png)
    - Click the `Do Group Refresh` button to refresh and apply the changes made.  
-     ![Do Group Refresh](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_2.png)
+     ![Do Group Refresh](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_2.png)
    - Click `OK` to the popup message and wait for a minute to allow the changes to take effect.  
-     ![Click OK](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_3.png)
+     ![Click OK](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_3.png)
 
 2. **Import the `CPU Threshold Violation Monitor - Create` script from the `ProSync` plugin.**
 
 3. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  
-     ![Run Debug Script](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_4.png)  
-     ![Run Debug Script](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_5.png)
+     ![Run Debug Script](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_4.png)  
+     ![Run Debug Script](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_5.png)
 
 4. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.  
-     ![Reload System Cache](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_6.png)
+     ![Reload System Cache](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_6.png)
 
 5. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard --> Config --> Configurations --> Properties**.
    - Find the properties beginning with `CPU_Monitoring`.  
-     ![Find Properties](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_7.png)
+     ![Find Properties](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_7.png)
    - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 6. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.  
-     ![Schedule Script](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_8.png)
+     ![Schedule Script](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_8.png)
 
 ## User Parameters
 
@@ -108,25 +108,26 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 
 **Alert Message on Failure:** `This is an automated update to inform you that the high CPU utilization issue reported earlier has now been resolved. The system has detected that the CPU usage has returned to normal and the performance has improved.`
 
-**Alert Message on Success:** `The CPU usage on the machine %COMPUTERNAME% located at %CLIENTNAME%\%LOCATIONNAME% is currently reporting high CPU usage. Please investigate the issue and take appropriate actions to address the root cause. As per the severity of the issue, it is recommended to prioritize this ticket accordingly.`
+**Alert Message on Success:** `The CPU usage on the machine %COMPUTERNAME% located at %CLIENTNAME%/%LOCATIONNAME% is currently reporting high CPU usage. Please investigate the issue and take appropriate actions to address the root cause. As per the severity of the issue, it is recommended to prioritize this ticket accordingly.`
 
 `%RESULT%`
 
 **Sample Ticket:** The ticket illustrated here was created by setting the upper threshold value to `2` and the lower threshold value to `1`. However, it's important to note that this example is purely for demonstration purposes. It does not advocate for or encourage the creation of CPU usage tickets for machines where the CPU usage exceeds `2%`.
 
-![Sample Ticket](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_9.png)  
-![Sample Ticket](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_10.png)
+![Sample Ticket](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_9.png)  
+![Sample Ticket](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_10.png)
 
 **Sample Remote Monitor:**
 
-![Sample Remote Monitor](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_11.png)  
-![Sample Remote Monitor](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_12.png)  
-![Sample Remote Monitor](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_13.png)  
-![Sample Remote Monitor](..\..\..\static\img\CPU-Threshold-Violation-Monitor---Create\image_14.png)
+![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_11.png)  
+![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_12.png)  
+![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_13.png)  
+![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_14.png)
 
 ## Output
 
 - Remote Monitors
+
 
 
 

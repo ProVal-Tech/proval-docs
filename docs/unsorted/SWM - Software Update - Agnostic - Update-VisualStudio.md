@@ -32,16 +32,17 @@ This script first checks if any of the above Visual applications are found. If f
 Update Visual Studio.
 
 ```
-.\Update-VisualStudio.ps1
+./Update-VisualStudio.ps1
 ```
 
 ## Output
 
 ```
-.\Update-VisualStudio-log.txt
-.\Update-VisualStudio-data.txt
-.\Update-VisualStudio-error.txt
+./Update-VisualStudio-log.txt
+./Update-VisualStudio-data.txt
+./Update-VisualStudio-error.txt
 ```
+
 
 
 

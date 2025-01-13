@@ -48,11 +48,11 @@ Import the optional content using the ProSync Plugin if needed:
 
 ### 3.
 Execute the [Deploy Huntress Agent [Windows, Mac]](https://proval.itglue.com/DOC-5078775-16803042) script against any online machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
-![Image](..\..\static\img\Huntress-Agent-Management\image_1.png)
+![Image](../../static/img/Huntress-Agent-Management/image_1.png)
 
 ### 4.
 Reload the system cache:  
-![Image](..\..\static\img\Huntress-Agent-Management\image_2.png)
+![Image](../../static/img/Huntress-Agent-Management/image_2.png)
 
 ### 5.
 Configure the solution as outlined below:
@@ -63,6 +63,7 @@ Configure the solution as outlined below:
 
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) internal monitor.  
-![Image](..\..\static\img\Huntress-Agent-Management\image_3.png)
+![Image](../../static/img/Huntress-Agent-Management/image_3.png)
+
 
 

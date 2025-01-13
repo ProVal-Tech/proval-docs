@@ -18,7 +18,7 @@ This script can be used to re-register Huntress Agent for the Windows machines.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Re-Register-Huntress-Agent-Windows\image_1.png)
+![Sample Run](../../../static/img/Re-Register-Huntress-Agent-Windows/image_1.png)
 
 ## Dependencies
 
@@ -30,8 +30,8 @@ This script can be used to re-register Huntress Agent for the Windows machines.
 | Name               | Description                                                  |
 |--------------------|--------------------------------------------------------------|
 | projectName        | Invoke-HuntressAgentCommand                                  |
-| workingDirectory    | C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand |
-| scriptPath         | C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand\Invoke-HuntressAgentCommand.ps1 |
+| workingDirectory    | C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand |
+| scriptPath         | C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand/Invoke-HuntressAgentCommand.ps1 |
 
 ## Client-Level EDF
 
@@ -53,5 +53,6 @@ This script can be used to re-register Huntress Agent for the Windows machines.
 ## Output
 
 - Script log
+
 
 

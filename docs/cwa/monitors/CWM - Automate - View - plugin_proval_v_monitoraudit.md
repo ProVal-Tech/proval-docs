@@ -39,3 +39,4 @@ Stores data about monitors and their configuration.
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
 
 
+

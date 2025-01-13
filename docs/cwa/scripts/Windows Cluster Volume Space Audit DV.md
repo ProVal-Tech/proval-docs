@@ -14,11 +14,11 @@ This script is created to perform the audit of the Cluster group devices to main
 
 ## Sample Run
 
-![Sample Run Image](..\..\..\static\img\Windows-Cluster-Volume-Space-Audit-DV\image_1.png)
+![Sample Run Image](../../../static/img/Windows-Cluster-Volume-Space-Audit-DV/image_1.png)
 
-Set the value of `Set_Environment` to 1, to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation\Cluster Detected" group.
+Set the value of `Set_Environment` to 1, to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation/Cluster Detected" group.
 
-![Sample Run Image](..\..\..\static\img\Windows-Cluster-Volume-Space-Audit-DV\image_2.png)
+![Sample Run Image](../../../static/img/Windows-Cluster-Volume-Space-Audit-DV/image_2.png)
 
 ## Dependencies
 
@@ -34,11 +34,12 @@ Set the value of `Set_Environment` to 1, to create the table and schedule the sc
 
 | Name             | Example | Required | Description                                                                                                         |
 |------------------|---------|----------|---------------------------------------------------------------------------------------------------------------------|
-| Set_Environment   | 1       | False    | Set to 1, to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation\Cluster Detected" group. |
+| Set_Environment   | 1       | False    | Set to 1, to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation/Cluster Detected" group. |
 
 ## Output
 
 - Script log
 - Dataview
+
 
 

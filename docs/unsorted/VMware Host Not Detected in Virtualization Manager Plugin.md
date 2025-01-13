@@ -23,40 +23,40 @@ The document will help in finding the incorrect configuration that can cause the
 
 &nbsp;
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_9.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_9.png)  
 
 3. Confirm that the VMware host's IP address appears under the **Network Devices** under the client in the **Control Center**.  
 
 &nbsp;
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_10.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_10.png)  
 
 4. If it does not, correct the IP range being scanned by the probe from the **Network Probe** tile > **Settings**. Once these settings have been modified, click **Save** and then click **Rescan Network**.  
 
 &nbsp;
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_11.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_11.png)  
 
 ### Credential Configuration
 
 5. Confirm that you have configured the proper credentials for the VMware host. This can be done from the **Global Settings**.  
    The Global Credentials are for if you have an ESXi Password that you share between multiple clients (Not Recommended).
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_12.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_12.png)  
 
 The other option (Recommended), is to manually set the credentials through the Local Credentials section and select the proper password from the client or location:
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_13.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_13.png)  
 
 If you do not have credentials saved at the client or location, you can add them with a quick shortcut when you hit the dropdown and select new credential:
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_14.png) ![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_15.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_14.png) ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_15.png)  
 
 If the above steps are fine please check the below steps:
 
 &nbsp;
 
-1. From the Control Center, open the Computer Management Screen of the Probe agent and open the File Explorer and look for the *C:\Windows\LTSVC\Plugin_VM.txt* log file on the probe machine.
+1. From the Control Center, open the Computer Management Screen of the Probe agent and open the File Explorer and look for the *C:/Windows/LTSVC/Plugin_VM.txt* log file on the probe machine.
 2. Verify that the VMware host is being scanned. If the IP address does not appear in the log, refer to the above section on **Probe Configuration**.
 3. Check for an error message similar to the one below associated with the IP address of your VMware host:  
    *The underlying connection was closed: An unexpected error occurred on a send.....InnerException: Authentication failed because the remote party has closed the transport stream. This indicates that you must modify the ciphers allowed on the VMware host.*  
@@ -66,15 +66,16 @@ If the above steps are fine please check the below steps:
 
 4. Try to manually apply the credentials to the network device itself and run a test through the network device.  
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_16.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_16.png)  
 
-![Image](..\..\static\img\VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin\image_17.png)  
+![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_17.png)  
 
 If none of the above steps help, please reach out to us at [Support@provaltech.com](mailto:Support@provaltech.com)  
 
 &nbsp;
 
 </div>
+
 
 
 

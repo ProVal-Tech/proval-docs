@@ -24,3 +24,4 @@ This role is detected on machines that are not joined to a domain.
 
 
 
+

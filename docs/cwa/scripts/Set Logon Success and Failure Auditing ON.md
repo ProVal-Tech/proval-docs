@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Set-Logon-Success-and-Failure-Auditing-ON\image_1.png)
+![Sample Run](../../../static/img/Set-Logon-Success-and-Failure-Auditing-ON/image_1.png)
 
 ## Variables
 
@@ -32,6 +32,7 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 
 

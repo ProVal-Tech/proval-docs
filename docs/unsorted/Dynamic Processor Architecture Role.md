@@ -30,11 +30,12 @@ default { Unknown architecture }
 
 | Detection String                                                                                                                                                               | Comparator | Result      | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------------|----------------|
-| {@%C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -ClassName Win32_Processor | Select-Object -ExpandProperty Architecture"@%} | Exists     | 0,9,12, etc. | Windows        |
+| {@%C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -ClassName Win32_Processor | Select-Object -ExpandProperty Architecture"@%} | Exists     | 0,9,12, etc. | Windows        |
 
 ## Sample
 
-![Sample Image](..\..\static\img\Dynamic-Processor-Architecture-Role\image_1.png)
+![Sample Image](../../static/img/Dynamic-Processor-Architecture-Role/image_1.png)
+
 
 
 

@@ -3,7 +3,7 @@ id: 'cwa-create-ticket-backup-failure'
 title: 'Create Ticket for ConnectWise Automate Backup Failure'
 title_meta: 'Create Ticket for ConnectWise Automate Backup Failure'
 keywords: ['ticket', 'backup', 'failure', 'connectwise', 'automate', 'email', 'notification']
-description: 'This document describes a script that creates a ticket in ProValtech\'s Autotask Portal when the ConnectWise Automate nightly backup fails. It details the process, variables, and system properties involved in the script, ensuring timely notifications for backup issues.'
+description: 'This document describes a script that creates a ticket in ProValtech/'s Autotask Portal when the ConnectWise Automate nightly backup fails. It details the process, variables, and system properties involved in the script, ensuring timely notifications for backup issues.'
 tags: ['backup', 'notification', 'connectwise', 'email', 'database', 'alert']
 draft: false
 unlisted: false
@@ -16,7 +16,7 @@ This script will create a ticket in our (ProValtech's) Autotask Portal if the Co
 
 It is a client script and should be scheduled in the Dashboard's Offline Computer
 
-![Sample Run](..\..\..\static\img\Nightly-Database-Backup-Monitoring\image_1.png)
+![Sample Run](../../../static/img/Nightly-Database-Backup-Monitoring/image_1.png)
 
 ## Variables
 
@@ -32,7 +32,7 @@ It is a client script and should be scheduled in the Dashboard's Offline Compute
 |----------------------------------|-------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ProVal_Alerts_Email_Address       | [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | True     | By default, the system property `ProVal_Alerts_Email_Address` will get set to [alerts@provaltech.com](mailto:alerts@provaltech.com). This can be changed in the event these alerts should be going somewhere else. |
 
-![System Properties](..\..\..\static\img\Nightly-Database-Backup-Monitoring\image_2.png)
+![System Properties](../../../static/img/Nightly-Database-Backup-Monitoring/image_2.png)
 
 ## Process
 
@@ -52,5 +52,6 @@ A MySQL backup for ConnectWise Automate was generated last night but it is lower
 ## Output
 
 - Email
+
 
 

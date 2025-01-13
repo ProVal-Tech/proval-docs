@@ -32,3 +32,4 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 | ScriptRunTime | DateTime     | Data Collection time                        |
 
 
+

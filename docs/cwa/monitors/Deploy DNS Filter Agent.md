@@ -24,17 +24,18 @@ Windows Workstations & Macintosh
 
 **Subject:**
 
-DNS Filter Agent Installation Failure - %ClientName%\\%ComputerName%
+DNS Filter Agent Installation Failure - %ClientName%//%ComputerName%
 
 **Body:**
 
-Failed to install DNSFilter Agent for %ClientName%\\%ComputerName%.  
+Failed to install DNSFilter Agent for %ClientName%//%ComputerName%.  
 Reason: No Secret Key Found.  
 Please add a client/location/computer key at client-level EDF (DNSFilter Site Key), location-level EDF (DNSFilter Location Key), or computer-level EDF (DNSFilter Computer Key) and re-run the script.
 
 OR
 
-Failed to install DNSFilter Agent for %ClientName%\\%ComputerName%.  
+Failed to install DNSFilter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
+
 
 

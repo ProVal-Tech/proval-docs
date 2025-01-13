@@ -29,6 +29,7 @@ Just need to import this monitor and set the alert template which has been used 
 
 Just make sure [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](https://proval.itglue.com/DOC-5078775-12033151) should have been using the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](https://proval.itglue.com/DOC-5078775-12182106) at line 54. Otherwise, both monitors will not be able to detect the tickets.
 
-![Image](..\..\..\static\img\Enhanced-Drive-Space-Monitor-Ticket-Management\image_1.png)
+![Image](../../../static/img/Enhanced-Drive-Space-Monitor-Ticket-Management/image_1.png)
+
 
 

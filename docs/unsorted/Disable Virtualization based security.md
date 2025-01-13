@@ -16,7 +16,7 @@ Once the registry is set, it will set the machine to reboot using the prompter s
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Disable-Virtualization-based-security\image_1.png)
+![Sample Run](../../static/img/Disable-Virtualization-based-security/image_1.png)
 
 ## Dependencies
 
@@ -31,6 +31,7 @@ Once the registry is set, it will set the machine to reboot using the prompter s
 ## Output
 
 - Script log
+
 
 
 

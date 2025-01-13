@@ -14,28 +14,28 @@ The task will generate a ConnectWise RMM Agent Deployment Group Policy Object (G
 
 The established GPO will execute a PowerShell script on the terminal device at startup or after the computer reboots. This script will attempt to install the ConnectWise RMM Agent on the Windows computers within the domain that do not currently have the CW RMM agent installed.
 
-The results of the script execution will be stored on the endpoint in either the `Install-RMMAgent-log.txt` or `Install-RMMAgent-Error.txt` files. These files can be found in the `C:\ProgramData\_automation\script\Install-RMMAgent` directory.
+The results of the script execution will be stored on the endpoint in either the `Install-RMMAgent-log.txt` or `Install-RMMAgent-Error.txt` files. These files can be found in the `C:/ProgramData/_automation/script/Install-RMMAgent` directory.
 
 ## GPO
 
 **Scope:** The GPO will be linked with the domain.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_1.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_1.png)
 
 **Details:**  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_2.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_2.png)
 
 **Settings:**  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_3.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_4.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_3.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_4.png)
 
 **Delegation:**  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_5.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_5.png)
 
 ## Sample Run
 
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_6.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_7.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_8.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_6.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_7.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_8.png)
 
 #### User Parameters
 
@@ -47,31 +47,31 @@ The results of the script execution will be stored on the endpoint in either the
 
 1. Go to **Devices** > **Computers**. Once the page loads, you will be able to see a **Manage** option in the Action Bar, at the top-left of the page.
 2. Click **Manage** open the Menu Item. In the Menu, click **Download Agent.**  
-   ![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_9.png)
+   ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_9.png)
 3. A new window will launch from where you can generate the agent installer token.  
-   ![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_10.png)
+   ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_10.png)
 4. In the Download Agent window, select your site from the list of sites provided in the dropdown. You can also type to search for your site and select it.
 5. After selecting the site, the `Agent Token` will be displayed. You can copy the token by clicking on the `Copy token to clipboard` button.  
-   ![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_11.png)
+   ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_11.png)
 
 ## Create Script
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_12.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_13.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_12.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_13.png)
 
 **Name:** `Create CW RMM Agent Deployment GPO`  
 **Description:** `The task will generate a ConnectWise RMM Agent Deployment Group Policy Object (GPO) on the domain controller where it is run. It is recommended to execute the script on the Primary Domain Controller.`  
 **Category:** `Setup`  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_14.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_14.png)
 
 ### Parameters
 
 Click the `Add Parameter` button.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_15.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_15.png)
 
 The `Add New Script Parameter` box will appear.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_16.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_16.png)
 
 In the box fill in the following details and select `Save` to create the `Token` parameter.
 
@@ -79,19 +79,19 @@ In the box fill in the following details and select `Save` to create the `Token`
 - **Required Field:** `True`
 - **Parameter Type:** `Text String`
 - **Default Value:** `False`  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_17.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_17.png)
 
 ### Script
 
 Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_18.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_18.png)
 
 #### Row 1 Function: PowerShell Script
 
 Select `PowerShell Script` function.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_19.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_20.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_21.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_19.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_20.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_21.png)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
 
@@ -114,9 +114,9 @@ Set-StrapperEnvironment
 
 #Working Directory
 $ProjectName = 'Install-RMMAgentGPO'
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$StrapperSession.LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$StrapperSession.ErrorPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$StrapperSession.LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$StrapperSession.ErrorPath = "$WorkingDirectory/$ProjectName-Error.txt"
 
 if ( !(Test-Path $WorkingDirectory) ) {
     try {
@@ -162,10 +162,10 @@ Function New-ScriptFile {
     #endregion
     
     `$ProjectName = 'Install-RMMAgent'
-    `$WorkingDirectory = "C:\ProgramData\_automation\script\`$ProjectName"
-    `$StrapperSession.LogPath = "`$WorkingDirectory\`$ProjectName-log.txt"
-    `$StrapperSession.ErrorPath = "`$WorkingDirectory\`$ProjectName-Error.txt"
-    `$Installer = "`$WorkingDirectory\Agent_TKN$($Token).msi"
+    `$WorkingDirectory = "C:/ProgramData/_automation/script/`$ProjectName"
+    `$StrapperSession.LogPath = "`$WorkingDirectory/`$ProjectName-log.txt"
+    `$StrapperSession.ErrorPath = "`$WorkingDirectory/`$ProjectName-Error.txt"
+    `$Installer = "`$WorkingDirectory/Agent_TKN$($Token).msi"
     
     if ( !(Test-Path `$WorkingDirectory) ) {
         try {
@@ -182,8 +182,8 @@ Function New-ScriptFile {
         Set-Acl  `$WorkingDirectory `$Acl
     }
     
-    `$DesktopURL = "<a href=\"https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup\">https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup</a>"
-    `$ServerURL = "<a href=\"https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup\">https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup</a>"
+    `$DesktopURL = "<a href=/"https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup/">https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup</a>"
+    `$ServerURL = "<a href=/"https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup/">https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup</a>"
     
     `$url = if ( ( Get-Ciminstance -Class Win32_OperatingSystem ).Caption -match 'Server' ) { `$ServerURL } else { `$DesktopURL }
     
@@ -195,7 +195,7 @@ Function New-ScriptFile {
         Write-Log -Level Error -Text "Failed to download the installer. Reason: `$(`$Error[0].exception.Message)"
     }
     
-    `$ExitCode = (Start-Process 'C:\Windows\System32\msiexec.exe' -ArgumentList "/i ""`$(`$installer)"" /qn" -Wait -PassThru).ExitCode
+    `$ExitCode = (Start-Process 'C:/Windows/System32/msiexec.exe' -ArgumentList "/i ""`$(`$installer)"" /qn" -Wait -PassThru).ExitCode
     
     do {
         try {`$connection = test-connection 8.8.8.8 -Erroraction Stop} catch {`$connection = 'down'}
@@ -220,7 +220,7 @@ Function New-ScriptFile {
     }
 "@
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
-    [System.IO.File]::WriteAllLines("$($WorkingDirectory)\$($ProjectName).ps1", $ScriptText, $Utf8NoBomEncoding)
+    [System.IO.File]::WriteAllLines("$($WorkingDirectory)/$($ProjectName).ps1", $ScriptText, $Utf8NoBomEncoding)
 }
 
 Import-Module GroupPolicy
@@ -236,8 +236,8 @@ If ( !$ExistingGPO ) {
     Write-Log -Level Information -Text "Group Policy Created: $guid"
     $Target = $forest.Split('.')
     $GPO | New-GPLink -Target "dc=$($Target[0]),dc=$($Target[1])" -LinkEnabled Yes
-    mkdir "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\Startup" -Force | Out-Null
-    Copy-Item "$($WorkingDirectory)\$($ProjectName).ps1" "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\Startup" -Force
+    mkdir "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force | Out-Null
+    Copy-Item "$($WorkingDirectory)/$($ProjectName).ps1" "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force
 
     $pshellscript = @"
 [Startup]
@@ -245,7 +245,7 @@ If ( !$ExistingGPO ) {
 0Parameters=
 "@
     
-    $psfilename = "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\psscripts.ini"
+    $psfilename = "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/psscripts.ini"
     $pshellscript | Out-File $psfilename -Encoding unicode
     $psfile = Get-Item $psfilename -Force
     $psfile.attributes = 'Hidden'
@@ -256,7 +256,7 @@ Version=2
 displayName=New Group Policy Object
 '@
 
-    $gptinifilename = "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\GPT.ini"
+    $gptinifilename = "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/GPT.ini"
     $gptini | Out-File $gptinifilename -Encoding utf8
     $gPCMachineExtensionNames = '[{42B5FAAE-6536-11D2-AE5A-0000F87571E3}{40B6664F-4972-11D1-A7CA-0000F87571E3}]'
     $adgpo = ([adsisearcher]"(&amp;(objectCategory=groupPolicyContainer)(name={$guid}))").FindAll().Item(0)
@@ -268,77 +268,78 @@ displayName=New Group Policy Object
     Write-Log -Level Information -Text 'CW RMM Agent Deployment Group Policy Object exists'
     Write-Log -Level Information -Text $ExistingGPO
     $Guid = $ExistingGPO.ID.ToString().ToUpper()
-    $oldscript = Get-Content -Path "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$Guid}\Machine\Scripts\Startup\$ProjectName.ps1" -ErrorAction SilentlyContinue
+    $oldscript = Get-Content -Path "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$Guid}/Machine/Scripts/Startup/$ProjectName.ps1" -ErrorAction SilentlyContinue
     if ($oldscript -match $token) {
         Write-Log -Level Information -Text 'Token matches'
         return
     } else {
         Write-Log -Level Information -Text 'token doesnt match, applying new token'
         New-ScriptFile -Token $Token
-        Copy-Item "$($WorkingDirectory)\$($ProjectName).ps1" "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\Startup" -Force
+        Copy-Item "$($WorkingDirectory)/$($ProjectName).ps1" "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force
     }
 }
 ```
 
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_22.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_23.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_22.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_23.png)
 
 #### Row 2 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_24.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
 
 Select `Script Log` function.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_25.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_26.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_25.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_26.png)
 
 Paste this line in the `Script Log Message` box and Click the `Save` button.  
 `PowerShell Output: <br>%Output%`  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_27.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_28.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_27.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_28.png)
 
 #### Row 3 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_24.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
 
 Select `PowerShell Script` function.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_19.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_20.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_21.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_19.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_20.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_21.png)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
 
 ```
-Get-Content -Path "C:\ProgramData\_automation\script\Install-RMMAgentGPO\Install-RMMAgentGPO-Log.txt" -ErrorAction SilentlyContinue
+Get-Content -Path "C:/ProgramData/_automation/script/Install-RMMAgentGPO/Install-RMMAgentGPO-Log.txt" -ErrorAction SilentlyContinue
 ```
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_29.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_23.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_29.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_23.png)
 
 #### Row 2 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_24.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
 
 Select `Script Log` function.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_25.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_26.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_25.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_26.png)
 
 Paste this line in the `Script Log Message` box and Click the `Save` button.  
 `Script Logs: <br>%Output%`  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_30.png)  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_28.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_30.png)  
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_28.png)
 
 Click the `Save` button to save the Task.  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_31.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_31.png)
 
 ## Completed Script
 
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_32.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_32.png)
 
 ## Output
 
 - Script Log  
-![Image](..\..\..\static\img\Create-CW-RMM-Agent-Deployment-GPO\image_33.png)
+![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_33.png)
+
 
 

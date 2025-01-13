@@ -14,18 +14,18 @@ This monitor will detect the online Windows agent where the outdated DUO Authent
 
 Client EDFs:
 
-![Client EDFs](..\..\..\static\img\DUO-Authentication---InstallUpdate\image_1.png)
+![Client EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_1.png)
 
 Client Exclusion EDF:  
-**<u>![Client Exclusion EDF](..\..\..\static\img\DUO-Authentication---InstallUpdate\image_2.png)</u>**  
+**<u>![Client Exclusion EDF](../../../static/img/DUO-Authentication---InstallUpdate/image_2.png)</u>**  
 
 Location Exclusion EDFs:
 
-![Location Exclusion EDFs](..\..\..\static\img\DUO-Authentication---InstallUpdate\image_3.png)
+![Location Exclusion EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_3.png)
 
 Computer Exclusion EDFs:
 
-![Computer Exclusion EDFs](..\..\..\static\img\DUO-Authentication---InstallUpdate\image_4.png)
+![Computer Exclusion EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_4.png)
 
 ## Dependencies
 
@@ -51,6 +51,7 @@ Failed to Install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When Argument Missing**  
 Arguments required to install DUO Authentication for Windows Login is not set.
+
 
 
 

@@ -20,13 +20,13 @@ This monitor will create tickets if [Task - Enable AD Recycle Bin](https://prova
 ## Monitor
 
 1. Go to Alert Management > Monitors.  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_1.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_1.png)  
 
 2. Click the `Create Monitor` button.  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_2.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_2.png)  
 
 3. This screen will appear.  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_3.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_3.png)  
 
 4. Fill in the following details.  
    **Name:** Enable AD Recycle Bin - Failure  
@@ -34,20 +34,21 @@ This monitor will create tickets if [Task - Enable AD Recycle Bin](https://prova
    **Type:** Custom Fields  
    **Severity:** Critical Non-Impact Alerts  
    **Family:** Windows Server  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_4.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_4.png)  
 
 5. Select `Text Box` in the Custom Field Type  
    Select `AD Recycle Bin` from Custom Field Name Drop Down  
    Add `failed more than 3 times` in the Value  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_5.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_5.png)  
 
 6. Click the `Select Targets` button to select the clients to monitor.  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_6.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_6.png)  
 
 7. Select all companies and click the `Save Selection` button.  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_7.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_7.png)  
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
-   ![Image](..\..\..\static\img\Enable-AD-Recycle-Bin---Failure\image_8.png)  
+   ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
+
 
 

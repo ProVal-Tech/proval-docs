@@ -29,3 +29,4 @@ Stores the GUID and the set of user class(es) for Built-In scripts.
 | InitialEditPermission | varchar | Existing Edit Permission of the script.                                                           |
 
 
+

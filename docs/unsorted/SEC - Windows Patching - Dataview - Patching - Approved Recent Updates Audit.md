@@ -62,9 +62,10 @@ FROM
     ON clients.ClientID = computers.ClientID
     LEFT JOIN v_setpatches
     ON v_setpatches.HotfixID = Patchjobpatches.PatchID
-WHERE v_setpatches.approvalPolicyID = 6 AND v_setpatches.settime >= now() - INTERVAL 2 MONTH AND v_setpatches.approvalsetting != '4' and NOT v_setpatches.Title REGEXP '\\W*(Microsoft Defender)\\W*|\\W*(Malicious Software Removal)\\W*'
+WHERE v_setpatches.approvalPolicyID = 6 AND v_setpatches.settime >= now() - INTERVAL 2 MONTH AND v_setpatches.approvalsetting != '4' and NOT v_setpatches.Title REGEXP '//W*(Microsoft Defender)//W*|//W*(Malicious Software Removal)//W*'
 GROUP BY computerid
 ```
+
 
 
 

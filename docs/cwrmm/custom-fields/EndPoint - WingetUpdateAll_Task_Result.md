@@ -27,8 +27,9 @@ Possible values:
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\EndPoint---WingetUpdateAll_Task_Result\image_1.png)
+![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_1.png)
 
-![Screenshot 2](..\..\..\static\img\EndPoint---WingetUpdateAll_Task_Result\image_2.png)
+![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_2.png)
+
 
 

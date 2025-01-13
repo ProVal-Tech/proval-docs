@@ -23,3 +23,4 @@ Global - Should be run without explicitly defined targets.
 This monitor is dependent on the properties with the name of PackageID to be created. So, before enabling it you need to implement the monitor "ProVal - Production - <Application> - Latest Version Detection" with an alert template "△ Custom - Execute Script - Application Latest Version".
 
 
+

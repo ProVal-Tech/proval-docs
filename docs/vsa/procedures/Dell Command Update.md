@@ -14,7 +14,7 @@ Downloads and runs DellCMDUpdate from ProVal App Repo
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Dell-Command-Update\image_2.png)
+![Sample Run](../../../static/img/Dell-Command-Update/image_2.png)
 
 ## Dependencies
 
@@ -30,7 +30,8 @@ Run Procedure
 
 ## Output
 
-workingdir\System\DellCMDUpdate-log.txt
+workingdir/System/DellCMDUpdate-log.txt
+
 
 
 

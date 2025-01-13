@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|-----------|----------|--------|
 | System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based| 3600     | <Screenshot Below> |
 
-![Screenshot](..\..\..\static\img\Unexpected-Shutdown\image_1.png)
+![Screenshot](../../../static/img/Unexpected-Shutdown/image_1.png)
 
 ## Dependencies
 
@@ -141,6 +141,7 @@ The user pressed the power button.
 ## Implementation
 
 [Import - Remote Monitor - Unexpected Shutdown](https://proval.itglue.com/DOC-5078775-14936355)
+
 
 
 

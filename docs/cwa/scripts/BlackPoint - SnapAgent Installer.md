@@ -14,7 +14,7 @@ This script is designed to install the SnapAgent to the machine.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\BlackPoint---SnapAgent-Installer\image_1.png)
+![Sample Run](../../../static/img/BlackPoint---SnapAgent-Installer/image_1.png)
 
 ## Dependencies
 
@@ -35,9 +35,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name               | Description                                                                                                                                                                                                                     |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @ProjectName@      | This contains the agnostic ps1 name and sets that as a project and working directory to C:\ProgramData\_Automation\Script\@ProjectName@.                                                                                     |
+| @ProjectName@      | This contains the agnostic ps1 name and sets that as a project and working directory to C:/ProgramData/_Automation/Script/@ProjectName@.                                                                                     |
 | @URL@              | This contains the value of the URL from the client-level EDF "BlackPoint SNAP URL".                                                                                                                                           |
-| @WorkingDirectory@ | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:\ProgramData\_Automation\Script\@ProjectName@".                                                                   |
+| @WorkingDirectory@ | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:/ProgramData/_Automation/Script/@ProjectName@".                                                                   |
 | @PS1Log@           | This stores the PowerShell informational logs for validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-log.txt.                                                                           |
 | @PS1ErrorLog@      | This contains the PowerShell Error logs for the validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-error.txt.                                                                          |
 | @ErrorLog@         | This contains the content of the error log file i.e. @ProjectName@-error.txt.                                                                                                                                               |
@@ -46,18 +46,19 @@ Document the various variables in the script. Delete any section that is not rel
 
 - To enable the ticketing feature it is mandatory to set the ticket category at the monitor level as shown below:
 
-![Ticketing Category](..\..\..\static\img\BlackPoint---SnapAgent-Installer\image_2.png)
+![Ticketing Category](../../../static/img/BlackPoint---SnapAgent-Installer/image_2.png)
 
 - **Subject:**  
-  SnapAgent Installation Failed on %computername% of %clientname%\%locationname%
+  SnapAgent Installation Failed on %computername% of %clientname%/%locationname%
 
 - **Body:**  
-  SnapAgent Installation Failed on %computername% of %clientname%\%locationname%. Refer to the below logs:  
+  SnapAgent Installation Failed on %computername% of %clientname%/%locationname%. Refer to the below logs:  
   @ErrorLog@.
 
 ## Output
 
 - Script log
 - Local files on the computer
+
 
 

@@ -40,3 +40,4 @@ The solution aims to find the computers where the installed SentinelOne Manageme
    - [SentinelOne Management Console Validation](https://proval.itglue.com/DOC-5078775-17312729)  
 
 
+

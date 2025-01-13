@@ -21,10 +21,10 @@ Allows to clear a patch from Failed Patches with help of SQL.
 ## Implementation
 
 1. Take Backup of VSA DataBase.  
-   ![](..\..\..\static\img\SQL\image_1.png)
+   ![](../../../static/img/SQL/image_1.png)
 
 2. Update the Kb Number in the SQL Query Below.  
-   ![](..\..\..\static\img\SQL\image_2.png)  
+   ![](../../../static/img/SQL/image_2.png)  
    ```sql
    -- clears "failed" patches on all agents for a specific KB article ID
    DECLARE @kbArticleId AS VARCHAR(10) = '5034441', -- enter KB article ID here
@@ -56,6 +56,7 @@ Allows to clear a patch from Failed Patches with help of SQL.
    ```
 
 3. Run this Query on KSubscribers on SQL Server.  
-   ![](..\..\..\static\img\SQL\image_3.png)
+   ![](../../../static/img/SQL/image_3.png)
+
 
 

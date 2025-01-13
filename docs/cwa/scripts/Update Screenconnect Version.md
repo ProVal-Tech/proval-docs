@@ -39,12 +39,13 @@ The script is intended to run as an auto-fix with the internal monitor [CWC - In
 
 To enable the ticketing on failure, the ticket category must be set in the global parameter of the script. The TicketCreationCategory parameter should not be equal to '0'.
 
-**Ticket Subject:** `CW Control Agent Update - Failed - %ClientName%\%ComputerName%`
+**Ticket Subject:** `CW Control Agent Update - Failed - %ClientName%/%ComputerName%`
 
 **Ticket Body:**  `Script failed to update the screenconnect version on the machine....!!`
 
 If screen connect service fails to start after running the installation:
 
 `The script tried to run the installer but could not find the screen connect service on the machine anymore. Run the CW control repair script to resolve the issue.`
+
 
 

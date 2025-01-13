@@ -29,3 +29,4 @@ Table:
 | Number of Different Apps      | Total count of applications that are different from global settings|
 
 
+

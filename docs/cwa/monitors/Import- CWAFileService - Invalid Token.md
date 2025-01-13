@@ -24,14 +24,14 @@ INSERT INTO groupagents
   'ProVal - Production - CWAFileService - Invalid Token' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  'CWA - Invalid Authorization Token - %Computername%~~~The occurrence\'s of a Invalid Token Authorization error within the logs C:\\Windows\\Temp\\FileService.log is fixed after restarting the CWAFileService.!!!CWA - Invalid Authorization Token - %Computername%~~~The %computername% (Automate) Server is currently reporting an Invalid Token Authorization error within the logs C:\\Windows\\Temp\\FileService.log. The occurance\'s are %RESULT% Typically restarting the CWAFileService resolves this, but we have attempted to restart the service 4 times and the errors persist after every restart.' as `AlertMessage`,
+  'CWA - Invalid Authorization Token - %Computername%~~~The occurrence/'s of a Invalid Token Authorization error within the logs C://Windows//Temp//FileService.log is fixed after restarting the CWAFileService.!!!CWA - Invalid Authorization Token - %Computername%~~~The %computername% (Automate) Server is currently reporting an Invalid Token Authorization error within the logs C://Windows//Temp//FileService.log. The occurance/'s are %RESULT% Typically restarting the CWAFileService resolves this, but we have attempted to restart the service 4 times and the errors persist after every restart.' as `AlertMessage`,
   '0' as `ContactID`,
   '900' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  CONCAT('C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$threshold = ', @Threshold, ';$path = \'C:\\Windows\\Temp\\FileService.log\' ;if ( Test-Path $path ) { $content = foreach ( $line in $(Get-Content -path $path | Where-Object { $_ -match \'HttpRequest is missing or has invalid Authorization Token\' } ) ) { $line };$problems = foreach ($err in $content ) { if ( $err -match \' - (([0-9]{1,2}/){2}[0-9]{4} ([0-9]{1,2}:){2}[0-9]{1,2} [AP]M) -\' ){ if ([DateTime]$matches[1] -ge (Get-Date).AddMinutes(-', @FileServiceContentCheckInMinutes, ')) {$err} } }if ( $problems.count -ge $threshold ) { Restart-Service -Name \'CWAFileService\' -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue; return $problems.count}}\"') as `DataOut`,
+  CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$threshold = ', @Threshold, ';$path = /'C://Windows//Temp//FileService.log/' ;if ( Test-Path $path ) { $content = foreach ( $line in $(Get-Content -path $path | Where-Object { $_ -match /'HttpRequest is missing or has invalid Authorization Token/' } ) ) { $line };$problems = foreach ($err in $content ) { if ( $err -match /' - (([0-9]{1,2}/){2}[0-9]{4} ([0-9]{1,2}:){2}[0-9]{1,2} [AP]M) -/' ){ if ([DateTime]$matches[1] -ge (Get-Date).AddMinutes(-', @FileServiceContentCheckInMinutes, ')) {$err} } }if ( $problems.count -ge $threshold ) { Restart-Service -Name /'CWAFileService/' -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue; return $problems.count}}/"') as `DataOut`,
   '16' as `Comparor`,
-  '10|(^$)%7C(^OK$)%7C(^\\r\\n$)%7C(^\\s$)|11|^[0-9]+$%7C(^$)%7C(^OK$)%7C(^\\r\\n$)%7C(^\\s$)|10|^[0-9]+$' as `DataIn`,
+  '10|(^$)%7C(^OK$)%7C(^//r//n$)%7C(^//s$)|11|^[0-9]+$%7C(^$)%7C(^OK$)%7C(^//r//n$)%7C(^//s$)|10|^[0-9]+$' as `DataIn`,
   '' as `IDField`,
   '4' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -80,17 +80,18 @@ WHERE m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` =
 
 - Before executing the query make sure to change the value of @Threshold and @FileServiceContentCheckInMinutes as per the client's requirement:
 
-![Image](..\..\..\static\img\Import--CWAFileService---Invalid-Token\image_1.png)
+![Image](../../../static/img/Import--CWAFileService---Invalid-Token/image_1.png)
 
-This sets the remote monitor to check the contents of the fileservice logs at the path 'C:\Windows\Temp\FileService.log' for error messages 'HttpRequest is missing or has invalid Authorization Token' of the last 15 minutes based on the value set at @FileServiceContentCheckInMinutes. It checks if the error message count is more than 20 based on the @Threshold set.
+This sets the remote monitor to check the contents of the fileservice logs at the path 'C:/Windows/Temp/FileService.log' for error messages 'HttpRequest is missing or has invalid Authorization Token' of the last 15 minutes based on the value set at @FileServiceContentCheckInMinutes. It checks if the error message count is more than 20 based on the @Threshold set.
 
 - You can set the ticketcategory in the Set query too.
 - Once the value is set you can execute this query to create the remote monitor.
 - After executing the remote monitor will look like this:
 
-![Image](..\..\..\static\img\Import--CWAFileService---Invalid-Token\image_2.png)
+![Image](../../../static/img/Import--CWAFileService---Invalid-Token/image_2.png)
 
 - Make sure to set the Alert Style to either Thrice or Fourth, so that it will raise a ticket only in case the monitor continues to fail after 4 attempts of service restart.
 - The suggested Alert Template for this monitor is 'Default - Create Automate Ticket'.
+
 
 

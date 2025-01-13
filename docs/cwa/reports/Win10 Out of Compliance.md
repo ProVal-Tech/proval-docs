@@ -73,9 +73,10 @@ List the report parts used. If custom report parts were designed during report c
 header, footer
 
 ### Sample Report
-![Sample Report](..\..\..\static\img\Win10-Out-of-Compliance\image_1.png)
+![Sample Report](../../../static/img/Win10-Out-of-Compliance/image_1.png)
 
 ### Export Attachment
 Attach the export XML of the report to this document.
+
 
 

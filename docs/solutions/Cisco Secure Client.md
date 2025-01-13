@@ -28,12 +28,13 @@ The purpose of this solution is to provide an option to install different Cisco 
    - Alert Template - `△ Custom - Execute Script - Cisco Secure Client - Package Installation`
 
 2. Reload the system cache:
-   ![Reload Cache](..\..\static\img\Cisco-Secure-Client\image_24.png)
+   ![Reload Cache](../../static/img/Cisco-Secure-Client/image_24.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
      - [CWA - Internal Monitor - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763)
        - Setup with "`△ Custom - Execute Script - Cisco Secure Client - Package Installation`" alert template.
        - Right-click and Run Now to start the monitor.
+
 
 

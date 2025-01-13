@@ -38,3 +38,4 @@ The purpose of the custom table is to store the WiFi Profiles information for ea
 | scriptruntime       | datetime     | Data Collection Time                                     |
 
 
+

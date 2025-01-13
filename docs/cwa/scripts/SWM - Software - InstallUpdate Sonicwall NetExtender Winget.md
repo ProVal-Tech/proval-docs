@@ -14,7 +14,7 @@ This script will attempt to install/update the SonicWall NetExtender application
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\SWM---Software---InstallUpdate-Sonicwall-NetExtender-Winget\image_1.png)
+![Sample Run](../../../static/img/SWM---Software---InstallUpdate-Sonicwall-NetExtender-Winget/image_1.png)
 
 ## Variables
 
@@ -34,6 +34,7 @@ Note: This script needed to be scheduled on at least one machine permanently, so
 ## Output
 
 - Script Log
+
 
 
 

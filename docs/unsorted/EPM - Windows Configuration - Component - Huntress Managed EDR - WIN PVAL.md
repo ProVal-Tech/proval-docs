@@ -22,21 +22,21 @@ This component is used to manage the Huntress EDR agent, and includes options to
 
 Export the component from ProVal's Datto RMM instance  
 Name: Huntress Managed EDR - [WIN] [PVAL]  
-![Export Component](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_1.png)  
+![Export Component](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_1.png)  
 The export will download the necessary component (cpt) file.  
-![Component Download](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_2.png)  
+![Component Download](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_2.png)  
 Import this component file into the partner's Datto RMM instance  
-![Import Component](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_3.png)  
+![Import Component](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_3.png)  
 
 Proval Plug & Play: This component requires no configuration once imported.
 
 ## Usage
 
 The component will prompt for several variables during a job.  
-![Job Prompt](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_4.png)  
+![Job Prompt](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_4.png)  
 **acctkey:** Enter your account secret key (from your Huntress portal's "download agent" section)  
 This can pre-filled for the partner by providing a default value for the variable within the component within the partner's RMM.  
-![Account Key](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_5.png)  
+![Account Key](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_5.png)  
 
 **tags:** Optional: Applies tags to the installed endpoint. (e.g. "production,US West")  
 **reregister:** Force the agent to re-register (useful if previously deployed with the incorrect account key, orphaned agent, or performing a full repair)  
@@ -47,16 +47,17 @@ This can pre-filled for the partner by providing a default value for the variabl
 ## Output
 
 A job status of Success is expected.  
-![Job Status](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_6.png)  
+![Job Status](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_6.png)  
 
 **StdOut**  
-![StdOut](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_7.png)  
-![StdOut Log](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_8.png)  
+![StdOut](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_7.png)  
+![StdOut Log](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_8.png)  
 StdOut may require you to scroll to view the complete log, you can alternatively download the txt  
-![Download Log](..\..\static\img\EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL\image_9.png)  
+![Download Log](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_9.png)  
 
 **StdErr**  
 StdErr is not expected
+
 
 
 

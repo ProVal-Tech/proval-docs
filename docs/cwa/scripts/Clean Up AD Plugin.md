@@ -33,3 +33,4 @@ Removes all rows with ObjectType 1 or 2 from plugin_ad_entries.
 2. Schedule the client script to run
 
 
+

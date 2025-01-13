@@ -14,7 +14,7 @@ This script collects the Adobe license key and stores it in the custom EDF "Adob
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Adobe-License-Detail\image_1.png)
+![Sample Run](../../static/img/Adobe-License-Detail/image_1.png)
 
 ## Dependencies
 
@@ -36,6 +36,7 @@ This script can run on any Windows agent. It first checks whether the agent has 
 - Script log
 - EDF
 - Dataview
+
 
 
 

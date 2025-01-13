@@ -19,14 +19,14 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Hyper-V---Checkpoint-Create-Param\image_1.png)
+![Sample Run](../../../static/img/Hyper-V---Checkpoint-Create-Param/image_1.png)
 
 ## Variables
 
 | Name             | Description                                           |
 |------------------|-------------------------------------------------------|
 | ProjectName      | HyperV_Checkpoint                                    |
-| WorkingDirectory  | C:\ProgramData\_automation\script\HyperV_Checkpoint  |
+| WorkingDirectory  | C:/ProgramData/_automation/script/HyperV_Checkpoint  |
 | ShellResult      | Output of the PowerShell script creating the CheckPoint |
 
 #### User Parameters
@@ -38,6 +38,7 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 ## Output
 
 - Script logs
+
 
 
 

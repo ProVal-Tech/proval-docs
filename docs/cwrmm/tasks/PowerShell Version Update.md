@@ -24,18 +24,18 @@ None. This script can be run against any Windows device.
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Image 1](..\..\..\static\img\PowerShell-Version-Update\image_1.png)
-![Image 2](..\..\..\static\img\PowerShell-Version-Update\image_2.png)
+![Image 1](../../../static/img/PowerShell-Version-Update/image_1.png)
+![Image 2](../../../static/img/PowerShell-Version-Update/image_2.png)
 
 **Name:** PowerShell Update  
 **Description:** This task will update the PS version to PowerShell 5 if the PowerShell version is not already updated.  
 **Category:** Updates  
 
-![Image 3](..\..\..\static\img\PowerShell-Version-Update\image_3.png)
+![Image 3](../../../static/img/PowerShell-Version-Update/image_3.png)
 
 ### Script
 
-![Image 4](..\..\..\static\img\PowerShell-Version-Update\image_4.png)
+![Image 4](../../../static/img/PowerShell-Version-Update/image_4.png)
 
 Paste the below PowerShell script directly into the "Script" field.
 
@@ -44,7 +44,7 @@ Paste the below PowerShell script directly into the "Script" field.
 .SYNOPSIS
     Updates PowerShellV2 to PowerShellV5
 .EXAMPLE
-    PS C:\> Update-PowerShellV2.ps1
+    PS C:/> Update-PowerShellV2.ps1
     Updates the machine PowerShell version from PS2.0 to PS5.1
 .NOTES
     This Script Will not update if any of the following Conditions are true.
@@ -80,8 +80,8 @@ $osversionLookup = @{
 }
 
 $osversion = (Get-WmiObject -Class win32_operatingsystem).version
-$ProductName = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'ProductName').ProductName
-$EditionId = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'EditionID').EditionId
+$ProductName = (Get-ItemProperty -Path 'HKLM:/SOFTWARE/Microsoft/Windows NT/CurrentVersion' -Name 'ProductName').ProductName
+$EditionId = (Get-ItemProperty -Path 'HKLM:/SOFTWARE/Microsoft/Windows NT/CurrentVersion' -Name 'EditionID').EditionId
 
 Write-Host "Running on: $ProductName, ($EditionId), Windows Version: $osVersion"
 
@@ -114,7 +114,7 @@ switch ($osversionLookup[$osVersion]) {
         Return 'Windows 10+ / Server 2016+ has WMF/PowerShell 5 pre-installed which is maintained by Windows Updates.'
     }
     'Win7 SP1/2008R2 SP1' {
-        if ((Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Release -ErrorAction SilentlyContinue) -lt 378389) {
+        if ((Get-ItemProperty 'HKLM:/SOFTWARE/Microsoft/NET Framework Setup/NDP/v4/Full' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Release -ErrorAction SilentlyContinue) -lt 378389) {
             throw '.NET Framework 4.5.2 or later required. Please install .NET Framework 4.5.2 or above and re-run.'
         } elseif ((Get-WmiObject win32_operatingsystem | Select-Object osarchitecture -ExpandProperty osarchitecture) -match '64') {
             $url = $urlWin2k8R2andWin7x64
@@ -132,15 +132,15 @@ if ((Get-Service wuauserv).StartType -eq 'Disabled') {
 
 Write-Host "Target download URL: $url"
 $downloadFileName = $url -split '/' | Select-Object -Last 1
-$downloadFilePath = "$env:TEMP\$downloadFileName"
-$pathToMSU = "$env:TEMP\$downloadFileName"
+$downloadFilePath = "$env:TEMP/$downloadFileName"
+$pathToMSU = "$env:TEMP/$downloadFileName"
 (New-Object Net.WebClient).DownloadFile($url, $downloadFilePath)
 if ($url -match '.zip') {
     $filename = $downloadFileName -replace '.zip', '.msu'
     $zipfile = (New-Object -Com Shell.Application).NameSpace($downloadFilePath)
     $destination = (New-Object -Com Shell.Application).NameSpace($env:TEMP)
     $destination.CopyHere($zipfile.Items())
-    $pathToMSU = "$env:TEMP\$filename"
+    $pathToMSU = "$env:TEMP/$filename"
 } else {
     $pathToMSU = $downloadFilePath
 }
@@ -163,6 +163,7 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
+
 
 
 

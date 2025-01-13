@@ -17,21 +17,21 @@ Installs the SentinelOne application on the endpoint.
 Export the agent procedure.  
 **Name:** SentinelOne - Install - (Windows)
 
-![Image 1](..\..\..\static\img\SentinelOne---Install\image_1.png)
+![Image 1](../../../static/img/SentinelOne---Install/image_1.png)
 
-![Image 2](..\..\..\static\img\SentinelOne---Install\image_2.png)
+![Image 2](../../../static/img/SentinelOne---Install/image_2.png)
 
 The agent procedure requires a ZIP file with the backgrounds.  
 The ZIP can contain multiple images.  
 The following images are supported: ('jpeg', 'jpg', 'png', 'bmp')
 
-![Image 3](..\..\..\static\img\SentinelOne---Install\image_3.png)
+![Image 3](../../../static/img/SentinelOne---Install/image_3.png)
 
 If the file selected is "[background.zip](http://background.zip)", no further changes are required.  
 If a different file has been specified, update the filename in the PowerShell execution.  
 Modify **[background.zip](http://background.zip)** to the name of the ZIP you've selected in the previous step.
 
-![Image 4](..\..\..\static\img\SentinelOne---Install\image_4.png)
+![Image 4](../../../static/img/SentinelOne---Install/image_4.png)
 
 ## Dependencies
 
@@ -55,5 +55,6 @@ Modify **[background.zip](http://background.zip)** to the name of the ZIP you've
 ## Output
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
+
 
 

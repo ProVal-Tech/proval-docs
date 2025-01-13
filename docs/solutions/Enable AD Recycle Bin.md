@@ -31,3 +31,4 @@ The purpose of this solution is to Enable AD Recycle Bin on AD Infrastructure Ma
 - Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](https://proval.itglue.com/DOC-5078775-15414582) if the partner wants tickets if [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable AD recycle Bin.
 
 
+

@@ -27,13 +27,13 @@ Automates the installation and configuration of Google Credential Provider for W
 Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domains:
 
 ```
-.\Install-GCPW.ps1 -DomainsAllowed "solarmora.com","altostrat.com"
+./Install-GCPW.ps1 -DomainsAllowed "solarmora.com","altostrat.com"
 ```
 
 Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domain, and applies the enrollment token:
 
 ```
-.\Install-GCPW.ps1 -DomainsAllowed "solarmora.com" -enrollmentToken "your_enrollment_token"
+./Install-GCPW.ps1 -DomainsAllowed "solarmora.com" -enrollmentToken "your_enrollment_token"
 ```
 
 # Parameters
@@ -47,8 +47,8 @@ Installs Google Chrome (if missing), GCPW (if missing), and configures it for th
 Location of output for log, result, and error files.
 
 ```
-.\Install-GCPW-log.txt
-.\Install-GCPW-error.txt
+./Install-GCPW-log.txt
+./Install-GCPW-error.txt
 ```
 
 # Locations
@@ -59,6 +59,7 @@ Location of output for log, result, and error files.
 | ConnectWise RMM                               |                                                  |
 | Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](https://proval.itglue.com/DOC-5078775-15595857) |
 | Datto RMM                                     |                                                  |
+
 
 
 

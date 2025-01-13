@@ -18,9 +18,9 @@ This task can be executed manually against the computers present in the [Windows
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Windows-11-Installer-(Beta)\image_3.png)  
-![Sample Run 2](..\..\..\static\img\Windows-11-Installer-(Beta)\image_4.png)  
-![Sample Run 3](..\..\..\static\img\Windows-11-Installer-(Beta)\image_5.png)  
+![Sample Run 1](../../../static/img/Windows-11-Installer-(Beta)/image_3.png)  
+![Sample Run 2](../../../static/img/Windows-11-Installer-(Beta)/image_4.png)  
+![Sample Run 3](../../../static/img/Windows-11-Installer-(Beta)/image_5.png)  
 
 ## Dependencies
 
@@ -43,86 +43,86 @@ This task can be executed manually against the computers present in the [Windows
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](..\..\..\static\img\Windows-11-Installer-(Beta)\image_6.png)  
-![Task Creation 2](..\..\..\static\img\Windows-11-Installer-(Beta)\image_7.png)  
+![Task Creation 1](../../../static/img/Windows-11-Installer-(Beta)/image_6.png)  
+![Task Creation 2](../../../static/img/Windows-11-Installer-(Beta)/image_7.png)  
 
 **Name:** Windows 11 Installer (Beta)  
 **Description:** Install Windows 11 on a compatible Windows 10 computer.  
 **Category:** Patching  
 
-![Task Creation 3](..\..\..\static\img\Windows-11-Installer-(Beta)\image_8.png)  
+![Task Creation 3](../../../static/img/Windows-11-Installer-(Beta)/image_8.png)  
 
 ### Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Windows-11-Installer-(Beta)\image_9.png)  
+![Add Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_9.png)  
 
 This screen will appear.  
-![Parameter Screen](..\..\..\static\img\Windows-11-Installer-(Beta)\image_10.png)  
+![Parameter Screen](../../../static/img/Windows-11-Installer-(Beta)/image_10.png)  
 
 - Set `NoReboot` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Enable the `Default Value` option.
 - Select `False` from the `Value` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](..\..\..\static\img\Windows-11-Installer-(Beta)\image_11.png)  
+![Save Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_11.png)  
 - It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](..\..\..\static\img\Windows-11-Installer-(Beta)\image_12.png)  
+![Confirm Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_12.png)  
 
 ### Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\Windows-11-Installer-(Beta)\image_13.png)  
+![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_13.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Windows-11-Installer-(Beta)\image_14.png)  
+![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
 
 #### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![Select PowerShell Script](..\..\..\static\img\Windows-11-Installer-(Beta)\image_15.png)  
-![PowerShell Script Selected](..\..\..\static\img\Windows-11-Installer-(Beta)\image_16.png)  
+![Select PowerShell Script](../../../static/img/Windows-11-Installer-(Beta)/image_15.png)  
+![PowerShell Script Selected](../../../static/img/Windows-11-Installer-(Beta)/image_16.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Function](..\..\..\static\img\Windows-11-Installer-(Beta)\image_17.png)  
+![PowerShell Function](../../../static/img/Windows-11-Installer-(Beta)/image_17.png)  
 
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.  
 
 ```powershell
 ( Get-Date ).ToString('yyyy-MM-dd HH:mm:ss')
 ```
-![PowerShell Script Save](..\..\..\static\img\Windows-11-Installer-(Beta)\image_18.png)  
+![PowerShell Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_18.png)  
 
 #### Row 2 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Windows-11-Installer-(Beta)\image_19.png)  
+![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_19.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Windows-11-Installer-(Beta)\image_14.png)  
+![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
 
 Search and select the `Set Custom Field` function.  
-![Select Set Custom Field](..\..\..\static\img\Windows-11-Installer-(Beta)\image_20.png)  
+![Select Set Custom Field](../../../static/img/Windows-11-Installer-(Beta)/image_20.png)  
 
 Search and select `Windows 11 Upgrade RunTime` in the `Search Custom Field` field and set `%Output%` in the `Value` field and click the `Save` button.  
-![Set Custom Field](..\..\..\static\img\Windows-11-Installer-(Beta)\image_21.png)  
-![Set Custom Field 2](..\..\..\static\img\Windows-11-Installer-(Beta)\image_22.png)  
+![Set Custom Field](../../../static/img/Windows-11-Installer-(Beta)/image_21.png)  
+![Set Custom Field 2](../../../static/img/Windows-11-Installer-(Beta)/image_22.png)  
 
 #### Row 3 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](..\..\..\static\img\Windows-11-Installer-(Beta)\image_19.png)  
+![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_19.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Windows-11-Installer-(Beta)\image_14.png)  
+![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
 
 Search and select the `PowerShell Script` function.  
-![Select PowerShell Script](..\..\..\static\img\Windows-11-Installer-(Beta)\image_15.png)  
-![PowerShell Script Selected](..\..\..\static\img\Windows-11-Installer-(Beta)\image_16.png)  
+![Select PowerShell Script](../../../static/img/Windows-11-Installer-(Beta)/image_15.png)  
+![PowerShell Script Selected](../../../static/img/Windows-11-Installer-(Beta)/image_16.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Function](..\..\..\static\img\Windows-11-Installer-(Beta)\image_17.png)  
+![PowerShell Function](../../../static/img/Windows-11-Installer-(Beta)/image_17.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
@@ -136,8 +136,8 @@ For more information: https://learn.microsoft.com/en-us/troubleshoot/windows-cli
 "@
 }
 $appName = 'windows-upgrader'
-$workingDirectory = "C:\ProgramData\_Automation\App\$appName"
-$filePath = "$workingDirectory\$appName.exe"
+$workingDirectory = "C:/ProgramData/_Automation/App/$appName"
+$filePath = "$workingDirectory/$appName.exe"
 $url = 'https://file.provaltech.com/repo/app/windows-upgrader.exe'
 New-Item -Path $workingDirectory -Force -ItemType Directory -Confirm:$false -ErrorAction SilentlyContinue | Out-Null
 try {
@@ -154,13 +154,13 @@ if ( '@NoReboot@' -match '1|Yes|True' ) {
 }
 ```
 
-![PowerShell Script Save](..\..\..\static\img\Windows-11-Installer-(Beta)\image_23.png)  
+![PowerShell Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_23.png)  
 
 Click the `Save` button at the top right corner of the screen to save the task.
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Windows-11-Installer-(Beta)\image_24.png)  
+![Completed Task](../../../static/img/Windows-11-Installer-(Beta)/image_24.png)  
 
 ## Deployment
 
@@ -170,6 +170,7 @@ It is suggested to run this task manually for the time being.
 
 - Script Log
 - Custom Field
+
 
 
 

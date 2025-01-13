@@ -12,7 +12,7 @@ unlisted: false
 
 This script is designed to gather the frequent logged-in domain users on the workstations and set the associate contact to the computer in Automate.
 
-It detects the users present at the **path C:\Windows\System32\lsass.exe** refers to a crucial system file in Microsoft Windows operating systems. Here’s what it does:
+It detects the users present at the **path C:/Windows/System32/lsass.exe** refers to a crucial system file in Microsoft Windows operating systems. Here’s what it does:
 
 lsass.exe stands for Local Security Authority Subsystem Service.  
 This file is a critical component of Microsoft Windows security policies, authority domain authentication, and Active Directory management on your computer.  
@@ -22,7 +22,7 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user an
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Detect-Frequent-Logon-User-(Set-Computer-Contact)\image_1.png)
+![Sample Run](../../../static/img/Detect-Frequent-Logon-User-(Set-Computer-Contact)/image_1.png)
 
 ## Variables
 
@@ -53,5 +53,6 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user an
 - Script log
 - EDFs
 - Dataview
+
 
 

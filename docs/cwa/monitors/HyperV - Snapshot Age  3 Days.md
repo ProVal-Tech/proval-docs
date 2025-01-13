@@ -15,7 +15,7 @@ This Remote monitor will provide alerting on HyperV host snapshots that have tur
 ## Details
 
 **Suggested "Limit to"**: Hyper-V Hosts  
-**Suggested Group**: `Service Plans\Windows Servers\Server Roles\Windows Servers Core Services\Windows Hyper-V Host`  
+**Suggested Group**: `Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows Hyper-V Host`  
 **Suggested Alert Style**: `Once`  
 **Suggested Alert Template**: `△ Custom - Ticket Creation - Computer`  
 
@@ -23,11 +23,11 @@ This Remote monitor will provide alerting on HyperV host snapshots that have tur
 |--------------|----------------|------------|-------------|------------|----------|--------|
 | System       | Default        | Run File   | **REDACTED**| State Based | 3600     | Screenshot attached below |
 
-![Screenshot](..\..\..\static\img\HyperV---Snapshot-Age--3-Days\image_1.png)
+![Screenshot](../../../static/img/HyperV---Snapshot-Age--3-Days/image_1.png)
 
 ## Target
 
-Service Plans\Windows Servers\Server Roles\Windows Servers Core Services\Windows Hyper-V Host Group.
+Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows Hyper-V Host Group.
 
 ## Ticketing
 
@@ -52,6 +52,7 @@ CreationTime: 7/16/2024 2:02 PM
 ## Implementation
 
 [Implementation Guide](https://proval.itglue.com/5078775/docs/15601843)
+
 
 
 

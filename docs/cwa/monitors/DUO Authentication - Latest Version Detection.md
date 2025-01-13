@@ -27,3 +27,4 @@ This script is only targeted to one machine to fetch the Application's latest ve
 1. Import the monitor using the ProSync Plugin.
 
 
+

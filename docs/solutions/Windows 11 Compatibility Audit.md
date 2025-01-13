@@ -33,7 +33,7 @@ Additionally, it can be used to detect Windows 11 computers that do not meet the
    - Alert Template - △ Custom - Execute Script - Windows 11 Compatibility Check
 
 2. Reload the system cache:  
-   ![System Cache Reload](..\..\static\img\Windows-11-Compatibility-Audit\image_1.png)
+   ![System Cache Reload](../../static/img/Windows-11-Compatibility-Audit/image_1.png)
 
 3. Execute the [Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-8355447) script against an online Windows 10 computer to create the [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448) custom table.
 
@@ -42,5 +42,6 @@ Additionally, it can be used to detect Windows 11 computers that do not meet the
      - [Monitor - Execute Script - Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-11364499)  
        - △ Custom - Execute Script - Windows 11 Compatibility Check  
        - Right-click and Run Now to start the monitor
+
 
 

@@ -14,14 +14,15 @@ This Custom field is to be filled with Huntress Account Key by the partner. It i
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\Huntress-Acct_Key\image_1.png)
+![Image 1](../../../static/img/Huntress-Acct_Key/image_1.png)
 
-![Image 2](..\..\..\static\img\Huntress-Acct_Key\image_2.png)
+![Image 2](../../../static/img/Huntress-Acct_Key/image_2.png)
 
 **Name:** Huntress Acct_Key  
 **Type:** Text Box  
 **Level:** Company  
 **Description:** Huntress Account key  
 **Editable:** Yes  
+
 
 

@@ -16,9 +16,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run Image 1](..\..\..\static\img\Hyper-V---Guest-VMs---StartStop\image_1.png)
+![Sample Run Image 1](../../../static/img/Hyper-V---Guest-VMs---StartStop/image_1.png)
 
-![Sample Run Image 2](..\..\..\static\img\Hyper-V---Guest-VMs---StartStop\image_2.png)
+![Sample Run Image 2](../../../static/img/Hyper-V---Guest-VMs---StartStop/image_2.png)
 
 ## Dependencies
 
@@ -40,6 +40,7 @@ Please see [Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870) for 
 
 - Outputs logs to the script log
 - Outputs logs to log/data files in the script directory.
+
 
 
 

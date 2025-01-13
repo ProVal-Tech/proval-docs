@@ -36,3 +36,4 @@ To implement a monitor that identifies machines with SMB1 enabled and subsequent
 2. Create the task: [CW RMM - Task - Disable SMB1](https://proval.itglue.com/DOC-5078775-14393334)
 
 
+

@@ -16,7 +16,7 @@ This script runs a PowerShell command to pull what custom entries exist in the c
 
 This script can be run on a single agent or scheduled on a batch of computers on a recurring basis to keep data inside of Automate up to date. There are no variables needed for this script.
 
-![Sample Run](..\..\..\static\img\Hosts-File---Audit\image_1.png)
+![Sample Run](../../../static/img/Hosts-File---Audit/image_1.png)
 
 ## Process
 
@@ -26,6 +26,7 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Output
 
 This script outputs information into the Host File Contents EDF and can be outputted to a Dataview and monitored upon if desired.
+
 
 
 

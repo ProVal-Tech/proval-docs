@@ -16,8 +16,8 @@ The purpose of this script is to facilitate the upgrade of a Windows 10 computer
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Install-Windows-11\image_24.png)  
-![Sample Run 2](..\..\..\static\img\Install-Windows-11\image_25.png)  
+![Sample Run 1](../../../static/img/Install-Windows-11/image_24.png)  
+![Sample Run 2](../../../static/img/Install-Windows-11/image_25.png)  
 
 ## Variables
 
@@ -31,8 +31,8 @@ The purpose of this script is to facilitate the upgrade of a Windows 10 computer
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Create Script](..\..\..\static\img\Install-Windows-11\image_26.png)  
-![Script Editor](..\..\..\static\img\Install-Windows-11\image_27.png)  
+![Create Script](../../../static/img/Install-Windows-11/image_26.png)  
+![Script Editor](../../../static/img/Install-Windows-11/image_27.png)  
 
 **Name:** Install Windows 11  
 **Description:** This script facilitates a Windows 10 to Windows 11 upgrade utilizing a Windows update agent. The process may involve multiple computer restarts and is estimated to span up to 2 hours.  
@@ -42,78 +42,78 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 Start by adding a row. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Install-Windows-11\image_28.png)  
+![Add Row](../../../static/img/Install-Windows-11/image_28.png)  
 
 #### Row 1 Function: Set Pre-defined Variable
 
 Select `Set Pre-defined Variable` Function.  
-![Set Pre-defined Variable](..\..\..\static\img\Install-Windows-11\image_29.png)  
-![Set Variable](..\..\..\static\img\Install-Windows-11\image_30.png)  
+![Set Pre-defined Variable](../../../static/img/Install-Windows-11/image_29.png)  
+![Set Variable](../../../static/img/Install-Windows-11/image_30.png)  
 
 Set `os` for both `Variable Name`.  
 
 A dropdown menu will appear after clicking the `System Variable` text box.  
-![System Variable Dropdown](..\..\..\static\img\Install-Windows-11\image_31.png)  
+![System Variable Dropdown](../../../static/img/Install-Windows-11/image_31.png)  
 
 Click the dropdown menu and scroll down till you find the `Os` menu.  
-![Select Os](..\..\..\static\img\Install-Windows-11\image_32.png)  
+![Select Os](../../../static/img/Install-Windows-11/image_32.png)  
 
 Click the `Os` menu dropdown button and scroll down till you find the `Product` option. Select the Product option and click the Save button to save the variable.  
-![Select Product](..\..\..\static\img\Install-Windows-11\image_33.png)  
-![Save Variable](..\..\..\static\img\Install-Windows-11\image_34.png)  
+![Select Product](../../../static/img/Install-Windows-11/image_33.png)  
+![Save Variable](../../../static/img/Install-Windows-11/image_34.png)  
 
 #### Row 2 Logic: If Then
 
 Add an `If/Then` logic by clicking on the `Add Logic` button.  
-![Add Logic](..\..\..\static\img\Install-Windows-11\image_35.png)  
-![If Then Logic](..\..\..\static\img\Install-Windows-11\image_36.png)  
+![Add Logic](../../../static/img/Install-Windows-11/image_35.png)  
+![If Then Logic](../../../static/img/Install-Windows-11/image_36.png)  
 
 ##### Row 2a Condition: Value Does Not Contain
 
 Click the dropdown at the `output` button, select `Value` and choose the `Does Not Contain` operator.  
-![Value Does Not Contain](..\..\..\static\img\Install-Windows-11\image_37.png)  
+![Value Does Not Contain](../../../static/img/Install-Windows-11/image_37.png)  
 
 Enter `@os@` in the left box and `Windows 10` in the right box.  
-![Input Condition](..\..\..\static\img\Install-Windows-11\image_38.png)  
+![Input Condition](../../../static/img/Install-Windows-11/image_38.png)  
 
 ##### Row 2b Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
-![Add Row for Script Exit](..\..\..\static\img\Install-Windows-11\image_39.png)  
+![Add Row for Script Exit](../../../static/img/Install-Windows-11/image_39.png)  
 
 Select `Script Exit Function`.  
-![Script Exit Function](..\..\..\static\img\Install-Windows-11\image_40.png)  
+![Script Exit Function](../../../static/img/Install-Windows-11/image_40.png)  
 
 This `Error Message` field will appear after Selecting the `Script Exit` Function.  
-![Error Message Field](..\..\..\static\img\Install-Windows-11\image_41.png)  
+![Error Message Field](../../../static/img/Install-Windows-11/image_41.png)  
 
 Enter the `"The script is only compatible with Windows 10 machines."` message in the `Error Message field` and click on the `Save` button.  
-![Save Error Message](..\..\..\static\img\Install-Windows-11\image_42.png)  
-![Confirmation](..\..\..\static\img\Install-Windows-11\image_43.png)  
+![Save Error Message](../../../static/img/Install-Windows-11/image_42.png)  
+![Confirmation](../../../static/img/Install-Windows-11/image_43.png)  
 
 #### Row 3 function: Script Log
 
 Add a new row by clicking on the Add row button.  
-![Add Row for Script Log](..\..\..\static\img\Install-Windows-11\image_44.png)  
+![Add Row for Script Log](../../../static/img/Install-Windows-11/image_44.png)  
 
 Select `Script Log Function`.  
-![Script Log Function](..\..\..\static\img\Install-Windows-11\image_45.png)  
+![Script Log Function](../../../static/img/Install-Windows-11/image_45.png)  
 
 In the `Script Log Message` field, simply type this message and click on the `Save` button.  
 `"Windows 10 computer detected initiating the upgrade. The computer can be restarted multiple times during the upgrade process."`  
-![Script Log Message](..\..\..\static\img\Install-Windows-11\image_46.png)  
-![Confirmation](..\..\..\static\img\Install-Windows-11\image_47.png)  
+![Script Log Message](../../../static/img/Install-Windows-11/image_46.png)  
+![Confirmation](../../../static/img/Install-Windows-11/image_47.png)  
 
 #### Row 4 Function: PowerShell Script
 
 Add a new row by clicking on the Add row button.  
-![Add Row for PowerShell Script](..\..\..\static\img\Install-Windows-11\image_44.png)  
+![Add Row for PowerShell Script](../../../static/img/Install-Windows-11/image_44.png)  
 
 Select `PowerShell Script Function`.  
-![PowerShell Script Function](..\..\..\static\img\Install-Windows-11\image_48.png)  
+![PowerShell Script Function](../../../static/img/Install-Windows-11/image_48.png)  
 
 The `PowerShell Script Editor` will appear on Selecting the `PowerShell Script` Function.  
-![PowerShell Script Editor](..\..\..\static\img\Install-Windows-11\image_49.png)  
+![PowerShell Script Editor](../../../static/img/Install-Windows-11/image_49.png)  
 
 Paste in the following `PowerShell script`, set the expected time of script execution to `7200` seconds and click on the `Save` button.
 
@@ -142,7 +142,7 @@ Write-Information "`nBeginning pre-install validations." -InformationAction Cont
 
 Function CompatibilityCheck {
     $DownloadUrl = 'https://download.microsoft.com/download/e/1/e/e1e682c2-a2ee-46c7-ad1e-d0e38714a795/HardwareReadiness.ps1'
-    $ScriptPath = "$Env:Temp\HardwareReadiness.ps1"
+    $ScriptPath = "$Env:Temp/HardwareReadiness.ps1"
     Invoke-WebRequest -Uri $DownloadUrl -UseBasicParsing -OutFile $ScriptPath
     if (!(Test-Path -Path $ScriptPath)) {
         return "`nAn error occurred and the script was unable to be downloaded. Exiting."
@@ -176,9 +176,9 @@ For more information: https://learn.microsoft.com/en-us/troubleshoot/windows-cli
 }
 
 # Check Windows Update health
-$wudTroubleshootingPath = "$env:temp\WUDResult"
-Get-TroubleshootingPack -Path "$env:windir\Diagnostics\system\WindowsUpdate" | Invoke-TroubleshootingPack -Unattended -Result $wudTroubleshootingPath
-[xml]$wudResult = Get-Content -Path "$wudTroubleshootingPath\ResultReport.xml"
+$wudTroubleshootingPath = "$env:temp/WUDResult"
+Get-TroubleshootingPack -Path "$env:windir/Diagnostics/system/WindowsUpdate" | Invoke-TroubleshootingPack -Unattended -Result $wudTroubleshootingPath
+[xml]$wudResult = Get-Content -Path "$wudTroubleshootingPath/ResultReport.xml"
 if ($wudResultDetection = $wudResult.ResultReport.Package.Problem.DetectionInformation.DetailedInformation.Detail.Name | Where-Object { $_ -match 'RC_PendingRestart|RC_DataStore|RC_GENWUError|RC_DateTime' }) {
     $wudResultExplanation = ($wudResult.ResultReport.Package.Problem.RootCauseInformation.RootCause | Where-Object { $_.id -match $wudResultDetection }).ResolutionInformation.Resolution.Data.InnerText[0]
     return @"
@@ -214,7 +214,7 @@ try {
     return "`nFailed to download $targetDownloadUri.Reason: $($Error[0].Exception.Message)"
 }
 
-$installAssistantLogPath = Join-Path -Path ${env:ProgramFiles(x86)} -ChildPath 'WindowsInstallationAssistant\Logs'
+$installAssistantLogPath = Join-Path -Path ${env:ProgramFiles(x86)} -ChildPath 'WindowsInstallationAssistant/Logs'
 Write-Information "`nInstall Assistant Log Path: $installAssistantLogPath" -InformationAction Continue
 Write-Information "`nRemoving old WUA logs." -InformationAction Continue
 Remove-Item -Path $installAssistantLogPath -Recurse -Force -ErrorAction SilentlyContinue
@@ -229,7 +229,7 @@ if ($upgraderProcess = Get-Process -Name 'Windows*UpgraderApp') {
     Write-Information "`n$($upgraderProcess.Name) process not yet detected." -InformationAction Continue
 }
 
-if (!(Test-Path "$installAssistantLogPath\UpdateAssistantDwnldr.001.etl")) {
+if (!(Test-Path "$installAssistantLogPath/UpdateAssistantDwnldr.001.etl")) {
     Write-Information "`nThe Upgrade Assistant has not progressed within $UPDATER_STARTUP_WAIT_SECONDS seconds. Skipping to running setup diagnostics." -InformationAction Continue
     if (!$updaterProcess.HasExited -or ($upgraderProcess -and !$upgraderProcess.HasExited)) {
         Write-Information "`nThe Upgrade Assistant is still running. Attempting stop." -InformationAction Continue
@@ -276,10 +276,10 @@ Write-Information "`nWaiting for the associated processes to finish." -Informati
 Start-Sleep -Seconds 300
 
 Write-Information "`nBeginning setup diagnostics." -InformationAction Continue
-$setupDiagPath = "$env:SystemDrive\$Windows.~bt\Sources\SetupDiag.exe"
-$setupDiagJsonPath = "$env:temp\SetupDiagResult.json"
+$setupDiagPath = "$env:SystemDrive/$Windows.~bt/Sources/SetupDiag.exe"
+$setupDiagJsonPath = "$env:temp/SetupDiagResult.json"
 if (!(Test-Path -Path $setupDiagPath)) {
-    $setupDiagPath = "$env:temp\SetupDiag.exe"
+    $setupDiagPath = "$env:temp/SetupDiag.exe"
     try {
         Get-WebFile -Uri $SETUP_DIAG_URI -Path $setupDiagPath -Clobber
     } catch {
@@ -331,31 +331,31 @@ Write-Information "`nBeginning restart of system." -InformationAction Continue
 Restart-Computer -Force
 ```
 
-![Final Script](..\..\..\static\img\Install-Windows-11\image_50.png)  
-![Final Confirmation](..\..\..\static\img\Install-Windows-11\image_51.png)  
+![Final Script](../../../static/img/Install-Windows-11/image_50.png)  
+![Final Confirmation](../../../static/img/Install-Windows-11/image_51.png)  
 
 ### Row 5 function: Script Log
 
 Add a new row by clicking on the Add row button.  
-![Add Row for Script Log](..\..\..\static\img\Install-Windows-11\image_44.png)  
+![Add Row for Script Log](../../../static/img/Install-Windows-11/image_44.png)  
 
 Select `Script Log Function`.  
-![Script Log Function](..\..\..\static\img\Install-Windows-11\image_45.png)  
+![Script Log Function](../../../static/img/Install-Windows-11/image_45.png)  
 
 In the `Script Log Message` field, simply type '%output%' so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device and click on the `Save` button.  
-![Output Log Message](..\..\..\static\img\Install-Windows-11\image_52.png)  
-![Confirmation](..\..\..\static\img\Install-Windows-11\image_47.png)  
+![Output Log Message](../../../static/img/Install-Windows-11/image_52.png)  
+![Confirmation](../../../static/img/Install-Windows-11/image_47.png)  
 
 ### Row 6 Function: PowerShell Script
 
 Add a new row by clicking on the Add row button.  
-![Add Row for PowerShell Script](..\..\..\static\img\Install-Windows-11\image_44.png)  
+![Add Row for PowerShell Script](../../../static/img/Install-Windows-11/image_44.png)  
 
 Select `PowerShell Script Function`.  
-![PowerShell Script Function](..\..\..\static\img\Install-Windows-11\image_48.png)  
+![PowerShell Script Function](../../../static/img/Install-Windows-11/image_48.png)  
 
 The `PowerShell Script Editor` will appear on Selecting the `PowerShell Script` Function.  
-![PowerShell Script Editor](..\..\..\static\img\Install-Windows-11\image_49.png)  
+![PowerShell Script Editor](../../../static/img/Install-Windows-11/image_49.png)  
 
 Paste in the following `PowerShell command`, set the expected time of script execution to `305` seconds and click on the `Save` button. We are simply pausing the script here for `5` minutes to give RMM enough time to fetch the computer's information post-reboot.
 
@@ -363,83 +363,84 @@ Paste in the following `PowerShell command`, set the expected time of script exe
 Start-Sleep -Seconds 300
 ```
 
-![Pause Command](..\..\..\static\img\Install-Windows-11\image_53.png)  
-![Confirmation](..\..\..\static\img\Install-Windows-11\image_51.png)  
+![Pause Command](../../../static/img/Install-Windows-11/image_53.png)  
+![Confirmation](../../../static/img/Install-Windows-11/image_51.png)  
 
 ### Row 7 Function: Set Pre-defined Variable
 
 Add a new row by clicking on the Add row button.  
-![Add Row for Pre-defined Variable](..\..\..\static\img\Install-Windows-11\image_44.png)  
+![Add Row for Pre-defined Variable](../../../static/img/Install-Windows-11/image_44.png)  
 
 Select `Set Pre-defined Variable Function`.  
-![Set Pre-defined Variable Function](..\..\..\static\img\Install-Windows-11\image_29.png)  
-![Set Variable](..\..\..\static\img\Install-Windows-11\image_30.png)  
+![Set Pre-defined Variable Function](../../../static/img/Install-Windows-11/image_29.png)  
+![Set Variable](../../../static/img/Install-Windows-11/image_30.png)  
 
 Set `os` for both `Variable Name`.  
 
 A dropdown menu will appear after clicking the `System Variable` text box.  
-![System Variable Dropdown](..\..\..\static\img\Install-Windows-11\image_31.png)  
+![System Variable Dropdown](../../../static/img/Install-Windows-11/image_31.png)  
 
 Click the dropdown menu and scroll down till you find the `Os` menu.  
-![Select Os](..\..\..\static\img\Install-Windows-11\image_32.png)  
+![Select Os](../../../static/img/Install-Windows-11/image_32.png)  
 
 Click the `Os` menu dropdown button and scroll down till you find the `Product` option. Select the Product option and click the Save button to save the variable.  
-![Select Product](..\..\..\static\img\Install-Windows-11\image_33.png)  
-![Save Variable](..\..\..\static\img\Install-Windows-11\image_34.png)  
+![Select Product](../../../static/img/Install-Windows-11/image_33.png)  
+![Save Variable](../../../static/img/Install-Windows-11/image_34.png)  
 
 ### Row 8 Logic: If Then
 
 Add an `If/Then` logic by clicking on the `Add Logic` button.  
-![Add Logic](..\..\..\static\img\Install-Windows-11\image_35.png)  
-![If Then Logic](..\..\..\static\img\Install-Windows-11\image_36.png)  
+![Add Logic](../../../static/img/Install-Windows-11/image_35.png)  
+![If Then Logic](../../../static/img/Install-Windows-11/image_36.png)  
 
 #### Row 8a Condition: Value Does Not Contain
 
 Click the dropdown at the `output` button, select `Value` and choose the `Does Not Contain` operator.  
-![Value Does Not Contain](..\..\..\static\img\Install-Windows-11\image_37.png)  
+![Value Does Not Contain](../../../static/img/Install-Windows-11/image_37.png)  
 
 Enter `@os@` in the left box and `Windows 11` in the right box.  
-![Input Condition](..\..\..\static\img\Install-Windows-11\image_54.png)  
+![Input Condition](../../../static/img/Install-Windows-11/image_54.png)  
 
 #### Row 8b Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
-![Add Row for Script Exit](..\..\..\static\img\Install-Windows-11\image_39.png)  
+![Add Row for Script Exit](../../../static/img/Install-Windows-11/image_39.png)  
 
 Select `Script Exit Function`.  
-![Script Exit Function](..\..\..\static\img\Install-Windows-11\image_40.png)  
+![Script Exit Function](../../../static/img/Install-Windows-11/image_40.png)  
 
 This `Error Message` field will appear after Selecting the `Script Exit` Function.  
-![Error Message Field](..\..\..\static\img\Install-Windows-11\image_41.png)  
+![Error Message Field](../../../static/img/Install-Windows-11/image_41.png)  
 
 Enter the `"Script failed to upgrade the machine to windows 11."` message in the `Error Message field` and click on the `Save` button.  
-![Save Error Message](..\..\..\static\img\Install-Windows-11\image_55.png)  
-![Confirmation](..\..\..\static\img\Install-Windows-11\image_56.png)  
+![Save Error Message](../../../static/img/Install-Windows-11/image_55.png)  
+![Confirmation](../../../static/img/Install-Windows-11/image_56.png)  
 
 ### Row 9 function: Script Log
 
 Add a new row by clicking on the Add row button.  
-![Add Row for Script Log](..\..\..\static\img\Install-Windows-11\image_44.png)  
+![Add Row for Script Log](../../../static/img/Install-Windows-11/image_44.png)  
 
 Select `Script Log Function`.  
-![Script Log Function](..\..\..\static\img\Install-Windows-11\image_45.png)  
+![Script Log Function](../../../static/img/Install-Windows-11/image_45.png)  
 
 In the `Script Log Message` field, simply type this message and click on the `Save` button.  
 `"Successfully upgraded the computer to Windows 11."`  
-![Script Log Message](..\..\..\static\img\Install-Windows-11\image_57.png)  
-![Confirmation](..\..\..\static\img\Install-Windows-11\image_47.png)  
+![Script Log Message](../../../static/img/Install-Windows-11/image_57.png)  
+![Confirmation](../../../static/img/Install-Windows-11/image_47.png)  
 
 Once all items are added, please `save` the task by clicking the `Save` button.  
-![Save Task](..\..\..\static\img\Install-Windows-11\image_58.png)  
+![Save Task](../../../static/img/Install-Windows-11/image_58.png)  
 
 The final task should look like the below screenshot.  
-![Final Task](..\..\..\static\img\Install-Windows-11\image_59.png)  
+![Final Task](../../../static/img/Install-Windows-11/image_59.png)  
 
 ## Output
 
 - Script logs  
-![Script Logs](..\..\..\static\img\Install-Windows-11\image_60.png)  
+![Script Logs](../../../static/img/Install-Windows-11/image_60.png)  
 (**This output is from an Incompatible Windows 10 computer.)**
+
 
 
 

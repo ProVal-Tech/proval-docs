@@ -16,7 +16,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Automate-Server-Best-Practice-Ticket\image_1.png)
+![Sample Run](../../../static/img/Automate-Server-Best-Practice-Ticket/image_1.png)
 
 ## Variables
 
@@ -51,5 +51,6 @@ Time Saved by Automation: 30 Minutes
 
 - Ticket
 - Script Log
+
 
 

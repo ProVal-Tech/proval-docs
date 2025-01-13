@@ -21,7 +21,7 @@ Gathers CF Data from xPVAL Azure AD Connect Version and displays all endpoints t
 
 # Layout
 List the report parts used. If custom report parts were designed during report creation, list their properties and attributes
-- Template Used: Audit \ Machine Summary
+- Template Used: Audit / Machine Summary
 - Data Type (Pie, Bar, Grid, etc): Grid
 - Columns: Computer Name, xPVAL Azure AD Connect Version (Alias: Azure AD Connect Version)
 - Ordering and Grouping
@@ -33,6 +33,7 @@ List the report parts used. If custom report parts were designed during report c
   - Advanced Filters (Field, Operator, Value):
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
+
 
 
 

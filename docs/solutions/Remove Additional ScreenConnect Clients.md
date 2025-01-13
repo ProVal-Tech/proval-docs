@@ -28,7 +28,7 @@ The objective of this solution is to remove any additional and unwanted ScreenCo
    - Alert Template: △ Custom - Remove Additional ScreenConnect Clients
 
 2. **Reload the system cache.**  
-   ![Reload Cache](..\..\static\img\Remove-Additional-ScreenConnect-Clients\image_1.png)
+   ![Reload Cache](../../static/img/Remove-Additional-ScreenConnect-Clients/image_1.png)
 
 3. **Configure the Extra Data Fields as explained in the [script's](https://proval.itglue.com/DOC-5078775-14767921) document.**  
    - Auto removal for a client can be enabled by flagging the Client-Level EDF `Remove Additional SC Clients`.
@@ -51,5 +51,6 @@ left join clients on clients.clientid=c.clientid
 where software.name like '%screenconnect%' 
 group by software.name
 ```
+
 
 

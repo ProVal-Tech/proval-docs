@@ -24,13 +24,14 @@ Disables Windows Update using Registry.
 
 ## Process
 
-Sets HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate to 1 (DWORD)  
-Deletes HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions if it exists.  
+Sets HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU/NoAutoUpdate to 1 (DWORD)  
+Deletes HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU/AUOptions if it exists.  
 Checks for success after changes.  
 
 ## Output
 
 Agent Procedure Log  
+
 
 
 

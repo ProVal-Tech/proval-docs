@@ -37,3 +37,4 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 | Examined Characteristics - CVSS >              | CVSS score above which auto-approval of patches is applied.                                                                                                          |
 
 
+

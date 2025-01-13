@@ -40,10 +40,11 @@ List the report parts used. If custom report parts were designed during report c
 Defaults
 
 ### Sample Report
-![Sample Report](..\..\..\static\img\Azure-AD-Connect-Version-Audit\image_1.png)
+![Sample Report](../../../static/img/Azure-AD-Connect-Version-Audit/image_1.png)
 
 ### Export Attachment
 Attach the export XML of the report to this document.
+
 
 
 

@@ -14,7 +14,7 @@ Identifies computers that have not installed a Cumulative Update in the last 75 
 
 If requested, the monitor can easily be adjusted to a lower or higher number of days since the last cumulative update was installed before a ticket was generated.
 
-![Image](..\..\..\static\img\Last-Cumulative-Update--75-Days-ago\image_1.png)
+![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_1.png)
 
 The monitor set will not keep detecting the computers where a ticket is already generated if it's using the suggested alert template `△ Custom - Autofix - Out of Date Cumulative Updates`.
 
@@ -22,11 +22,11 @@ This monitor has direct dependencies on the [Script - Get Latest Installed Cumul
 
 The p.Scriptruntime days in the monitor need to be set with one increment day to the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) schedule as shown below:
 
-![Image](..\..\..\static\img\Last-Cumulative-Update--75-Days-ago\image_2.png)
+![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_2.png)
 
 Please review monitor [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849458) and get the value from it from the hs.dateissued days and set it with one day addition in the monitor p.scriptruntime value.
 
-![Image](..\..\..\static\img\Last-Cumulative-Update--75-Days-ago\image_3.png)
+![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_3.png)
 
 ## Dependencies
 
@@ -51,5 +51,6 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **Q1)** What happens if the machine hasn't logged in for several days or the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different than the lastruntime check from the table "[Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)"?
 
 **Ans)** This monitor will ignore the agents whose last contact date is older than 7 days from monitoring and also exclude the agents where the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) has not run from the scheduled days period which should be matched to the p.scriptruntime set in the monitor.
+
 
 

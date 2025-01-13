@@ -17,7 +17,7 @@ The Monitor has all of the following conditions that must be met before it kicks
 1. Computers OS is Windows
    - The OS does not contain 'Server' or 'CE'
 2. The computer's uptime is greater than [Property - proval_RebootPromptUptimeDays] # of days
-   - OR the ![EDF is checked at the machine level](..\..\..\static\img\Reboot-Pending-Prompt\image_1.png)
+   - OR the ![EDF is checked at the machine level](../../../static/img/Reboot-Pending-Prompt/image_1.png)
 3. The computer is online
 4. The computer has an idle time of less than 5 minutes (User is Active on the machine)
 5. It has been at least `[System Property: RebootPromptDurBetween]` hours since the last time the user was prompted (Default of 4 hours)
@@ -46,5 +46,6 @@ Windows Workstations - Should be run on non-servers and must be running Windows.
 | Disable Reboot Prompt  | CheckBox | Exclusions  | Client    | Flag this EDF to exclude the client from the solution.                |
 | Disable Reboot Prompt  | CheckBox | Exclusions  | Location  | Flag this EDF to exclude the location from the solution.              |
 | Disable Reboot Prompt  | CheckBox | Exclusions  | Computer  | Flag this EDF to exclude the computer from the solution.              |
+
 
 

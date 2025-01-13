@@ -24,7 +24,7 @@ Alert Template - △ Custom - Ticket Creation - Computer
 
 Managed Service Plan Groups for Windows Workstations
 
-![Image](..\..\..\static\img\Windows-1011-Build-Upgrades-EOL-Based--Ticketing\image_1.png)
+![Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based--Ticketing/image_1.png)
 
 ## Ticketing
 
@@ -33,9 +33,10 @@ Managed Service Plan Groups for Windows Workstations
 
 **Body:**  
 - **Failure Message:**  
-  The machine %COMPUTERNAME% located at %CLIENTNAME%\\%LOCATIONNAME% has been reported to be on the %result% build and needs to be looked at manually. Typically, if this ticket generates, it means the machine has not been online during the nightly maintenance and requires manual scheduling or, occasionally, problems can occur with the automation that require the upgrade to be manually troubleshot on the machine physically. Please look into why this agent does not appear to be getting the build upgrade.
+  The machine %COMPUTERNAME% located at %CLIENTNAME%//%LOCATIONNAME% has been reported to be on the %result% build and needs to be looked at manually. Typically, if this ticket generates, it means the machine has not been online during the nightly maintenance and requires manual scheduling or, occasionally, problems can occur with the automation that require the upgrade to be manually troubleshot on the machine physically. Please look into why this agent does not appear to be getting the build upgrade.
 
 - **Success Message:**  
-  The machine %COMPUTERNAME% located at %CLIENTNAME%\\%LOCATIONNAME% is no longer reported to be on a EoL build or has been offline for greater than 7 days since the ticket was generated. Closing ticket.
+  The machine %COMPUTERNAME% located at %CLIENTNAME%//%LOCATIONNAME% is no longer reported to be on a EoL build or has been offline for greater than 7 days since the ticket was generated. Closing ticket.
+
 
 

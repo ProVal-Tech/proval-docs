@@ -53,7 +53,7 @@ Import the [Dataview - Microsoft OneDrive Sync Status [Script]](https://proval.i
 
 ### 5.
 Reload the system cache.  
-![System Cache Reload](..\..\static\img\Microsoft-OneDrive-Sync-Status\image_1.png)
+![System Cache Reload](../../static/img/Microsoft-OneDrive-Sync-Status/image_1.png)
 
 ### 6.
 Implement the Auditing solution as follows:
@@ -71,5 +71,6 @@ Implement the Alerting solution as follows:
 
 **Q:** Why does the script occasionally throw an error and fail to retrieve data from the computer?  
 **A:** The script relies on the functionality of the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module to fetch the necessary data. However, it's important to note that the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module is not entirely infallible, which can result in occasional errors during data retrieval. Additionally, it's crucial to ensure that no security application is impeding the functionality of this module, as it needs to operate without restrictions to retrieve data successfully.
+
 
 

@@ -12,13 +12,13 @@ unlisted: false
 
 This script uninstalls `Microsoft Teams Classic` from Windows machines.
 
-**File Path:** `C:\ProgramData\_Automation\Script\Uninstall-ClassicTeams\Uninstall-ClassicTeams.ps1`  
+**File Path:** `C:/ProgramData/_Automation/Script/Uninstall-ClassicTeams/Uninstall-ClassicTeams.ps1`  
 **File Hash (SHA256):** `3CAF5B7B6E5EC3EB4ADF596CE9729D7C36202298610E2DFA3085C172B4C13ACD`  
 **File Hash (MD5):** `C258358FD0B50A6DFAB39AFE289A2380`  
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-Teams-Classic\image_1.png)
+![Sample Run](../../../static/img/Uninstall-Teams-Classic/image_1.png)
 
 ## Global Parameters
 
@@ -44,5 +44,6 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@  
+
 
 

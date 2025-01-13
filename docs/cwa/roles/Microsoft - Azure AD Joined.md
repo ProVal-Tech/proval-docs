@@ -20,3 +20,4 @@ This role is detected on machines that are Azure AD joined.
 
 
 
+

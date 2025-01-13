@@ -16,7 +16,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows-Firewall-Notifications---Disable\image_1.png)
+![Sample Run](../../../static/img/Windows-Firewall-Notifications---Disable/image_1.png)
 
 ## Process
 
@@ -27,6 +27,7 @@ Time Saved by Automation: 15 Minutes
 ## Output
 
 - Script logs
+
 
 
 

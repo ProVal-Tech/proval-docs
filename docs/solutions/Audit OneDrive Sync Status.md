@@ -53,11 +53,11 @@ The solution aims to retrieve and display the OneDrive Sync Status using the [Ge
 
 ### 3.
 Reload the system cache:  
-![Reload Cache](..\..\static\img\Audit-OneDrive-Sync-Status\image_1.png)
+![Reload Cache](../../static/img/Audit-OneDrive-Sync-Status/image_1.png)
 
 ### 4.
 Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](https://proval.itglue.com/DOC-5078775-16007815).  
-![Run Script](..\..\static\img\Audit-OneDrive-Sync-Status\image_2.png)
+![Run Script](../../static/img/Audit-OneDrive-Sync-Status/image_2.png)
 
 ### 5.
 Configure the solution as outlined below:
@@ -78,7 +78,7 @@ The following steps to import and implement the Alerting section should only be 
 
 ### 2.
 Reload the system cache:  
-![Reload Cache](..\..\static\img\Audit-OneDrive-Sync-Status\image_1.png)
+![Reload Cache](../../static/img/Audit-OneDrive-Sync-Status/image_1.png)
 
 ### 3.
 Configure the solution as outlined below:
@@ -86,5 +86,6 @@ Configure the solution as outlined below:
   - [Internal Monitor - ProVal - Production - OneDrive Sync Failures](https://proval.itglue.com/DOC-5078775-16111359)  
     - Alert Template: `△ Custom - Ticket Creation - Computer`
     - Right-click and Run Now to start the monitor
+
 
 

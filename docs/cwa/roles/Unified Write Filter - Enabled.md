@@ -16,7 +16,8 @@ This role denotes if an agent has the Unified Writer Filter enabled.
 
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
-| {@%powershell.exe -command "Get-WmiObject -Namespace "root\standardcimv2\embedded" -Class UWF_Filter | select -ExpandProperty CurrentEnabled"@%} | Equals     | True   | Windows        |
+| {@%powershell.exe -command "Get-WmiObject -Namespace "root/standardcimv2/embedded" -Class UWF_Filter | select -ExpandProperty CurrentEnabled"@%} | Equals     | True   | Windows        |
+
 
 
 

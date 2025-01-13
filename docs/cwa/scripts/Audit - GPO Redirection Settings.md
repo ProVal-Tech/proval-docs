@@ -14,7 +14,7 @@ This script will audit the registry settings associated with any group policy re
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Audit---GPO-Redirection-Settings\image_1.png)
+![Sample Run](../../../static/img/Audit---GPO-Redirection-Settings/image_1.png)
 
 ## Dependencies
 
@@ -51,5 +51,6 @@ This script will audit the registry settings associated with any group policy re
 ## Output
 
 - Script log
+
 
 

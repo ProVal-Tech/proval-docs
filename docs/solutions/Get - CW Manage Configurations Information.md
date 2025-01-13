@@ -30,3 +30,4 @@ The purpose of the solution is to fetch basic information about the computer fro
 - Schedule the script to run once per day/week against the Automate server or an online server in the partner's internal environment to keep the dataview up-to-date.
 
 
+

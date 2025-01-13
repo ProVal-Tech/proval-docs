@@ -23,14 +23,14 @@ unlisted: false
    'ProVal - Production - Uninstall TeamViewer' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'TeamViewer Removal Failed on %CLIENTNAME%\\%COMPUTERNAME%~~~TeamViewer has been successfully uninstalled!!!TeamViewer Removal Failed on %CLIENTNAME%\\%COMPUTERNAME%~~~Failed to remove TeamViewer on %CLIENTNAME%\\%COMPUTERNAME%' as `AlertMessage`,
+   'TeamViewer Removal Failed on %CLIENTNAME%//%COMPUTERNAME%~~~TeamViewer has been successfully uninstalled!!!TeamViewer Removal Failed on %CLIENTNAME%//%COMPUTERNAME%~~~Failed to remove TeamViewer on %CLIENTNAME%//%COMPUTERNAME%' as `AlertMessage`,
    '0' as `ContactID`,
    '3600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match \'TeamViewer\' }).UninstallString;if($US) { foreach ($U in $US) {try{cmd.exe /c $U /S /V /qn} catch {return \'Failed to remove\'} }}"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'TeamViewer/' }).UninstallString;if($US) { foreach ($U in $US) {try{cmd.exe /c $U /S /V /qn} catch {return /'Failed to remove/'} }}"' as `DataOut`,
    '16' as `Comparor`,
-   '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(Failed to remove)%7C(^(()%7C %7C(OK)%7C(\\r\\n))$)|10|(Failed to remove)' as `DataIn`,
+   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(Failed to remove)%7C(^(()%7C %7C(OK)%7C(//r//n))$)|10|(Failed to remove)' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -92,14 +92,14 @@ unlisted: false
    'ProVal - Production - Uninstall TeamViewer' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'TeamViewer Removal Failed on %CLIENTNAME%\\%COMPUTERNAME%~~~TeamViewer has been successfully uninstalled!!!TeamViewer Removal Failed on %CLIENTNAME%\\%COMPUTERNAME%~~~Failed to remove TeamViewer on %CLIENTNAME%\\%COMPUTERNAME%' as `AlertMessage`,
+   'TeamViewer Removal Failed on %CLIENTNAME%//%COMPUTERNAME%~~~TeamViewer has been successfully uninstalled!!!TeamViewer Removal Failed on %CLIENTNAME%//%COMPUTERNAME%~~~Failed to remove TeamViewer on %CLIENTNAME%//%COMPUTERNAME%' as `AlertMessage`,
    '0' as `ContactID`,
    '3600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match \'TeamViewer\' }).UninstallString;if($US) { foreach ($U in $US) {try{cmd.exe /c $U /S /V /qn} catch {return \'Failed to remove\'} }}"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'TeamViewer/' }).UninstallString;if($US) { foreach ($U in $US) {try{cmd.exe /c $U /S /V /qn} catch {return /'Failed to remove/'} }}"' as `DataOut`,
    '16' as `Comparor`,
-   '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|(Failed to remove)%7C(^(()%7C %7C(OK)%7C(\\r\\n))$)|10|(Failed to remove)' as `DataIn`,
+   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(Failed to remove)%7C(^(()%7C %7C(OK)%7C(//r//n))$)|10|(Failed to remove)' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -154,5 +154,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

@@ -19,7 +19,7 @@ This script will install the Logitech Unifying Software.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Logitech---Unifying-Software---Deploy\image_1.png)
+![Sample Run](../../../static/img/Logitech---Unifying-Software---Deploy/image_1.png)
 
 ## Global Parameter
 
@@ -41,5 +41,6 @@ It has error handling to ensure the application installation is done successfull
 ## Output
 
 - Script log
+
 
 

@@ -20,7 +20,7 @@ Reference: [https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policie
 
 Execute the [Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976) script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will add the newly introduced column `upgradeRestricted` to the [pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975) table which is necessary for the solution.
 
-![Image](..\..\static\img\Patch-Config-Audit\image_1.png)
+![Image](../../static/img/Patch-Config-Audit/image_1.png)
 
 ## Associated Content
 
@@ -59,11 +59,11 @@ Import the following automation content using the ProSync Plugin:
 
 ### 3.
 Reload the system cache:  
-![Image](..\..\static\img\Patch-Config-Audit\image_2.png)
+![Image](../../static/img/Patch-Config-Audit/image_2.png)
 
 ### 4.
 Execute the [Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976) script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will create the [pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975) table which is necessary for the solution.  
-![Image](..\..\static\img\Patch-Config-Audit\image_3.png)
+![Image](../../static/img/Patch-Config-Audit/image_3.png)
 
 ### 5.
 Configure the auditing solution as outlined below:
@@ -85,5 +85,6 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script.
+
 
 

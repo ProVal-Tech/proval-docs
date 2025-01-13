@@ -30,7 +30,7 @@ This solution aims to acquire the Click-to-Run Configuration on a Windows machin
 
 Update the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script from the `Prosync` plugin and execute it against any online Windows machine with the `Set_Environment` parameter set to `1` to create the newly introduced custom table and EDFs used by the solution.
 
-![Image](..\..\static\img\C2R-Update-Channel\image_1.png)
+![Image](../../static/img/C2R-Update-Channel/image_1.png)
 
 ## Associated Content
 
@@ -63,10 +63,10 @@ Update the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.co
    - Alert Template - `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
 
 2. Reload the system cache:
-   ![Image](..\..\static\img\C2R-Update-Channel\image_2.png)
+   ![Image](../../static/img/C2R-Update-Channel/image_2.png)
 
 3. Execute the script [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table and EDFs used by the solution.
-   ![Image](..\..\static\img\C2R-Update-Channel\image_1.png)
+   ![Image](../../static/img/C2R-Update-Channel/image_1.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -84,7 +84,7 @@ Confirm with consultant before enabling the Automation.
    - `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
 
 2. Reload the system cache:
-   ![Image](..\..\static\img\C2R-Update-Channel\image_3.png)
+   ![Image](../../static/img/C2R-Update-Channel/image_3.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -102,5 +102,6 @@ Confirm with consultant before enabling the Automation.
 - **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](https://proval.itglue.com/DOC-5078775-14568325)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
+
 
 

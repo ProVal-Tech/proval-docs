@@ -16,7 +16,7 @@ This script is a function script and is the enhanced version of the default "Pat
 
 This script is called by the default script "Client Scheduled Patch Accounting Wrapper" which just runs this script. This wrapper script should be scheduled to run on Labtech Server once every 24hrs after the patch install window.
 
-![Sample Run Image](..\..\..\static\img\Patch-Accounting\image_1.png)
+![Sample Run Image](../../../static/img/Patch-Accounting/image_1.png)
 
 ## Variables
 
@@ -29,6 +29,7 @@ This script is called by the default script "Client Scheduled Patch Accounting W
 
 This script will add the time to the ticket created.
 
-![Output Image](..\..\..\static\img\Patch-Accounting\image_2.png)
+![Output Image](../../../static/img/Patch-Accounting/image_2.png)
+
 
 

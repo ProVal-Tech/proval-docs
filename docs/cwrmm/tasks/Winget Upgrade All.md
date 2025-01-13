@@ -20,17 +20,17 @@ None. This script can be run against any Windows device.
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Image 1](..\..\..\static\img\Winget-Upgrade-All\image_1.png)  
-![Image 2](..\..\..\static\img\Winget-Upgrade-All\image_2.png)  
+![Image 1](../../../static/img/Winget-Upgrade-All/image_1.png)  
+![Image 2](../../../static/img/Winget-Upgrade-All/image_2.png)  
 
 Name: Winget Upgrade All  
 Description: Uses Winget to attempt an upgrade for all available packages on an endpoint.  
 Category: Custom  
-![Image 3](..\..\..\static\img\Winget-Upgrade-All\image_3.png)  
+![Image 3](../../../static/img/Winget-Upgrade-All/image_3.png)  
 
 ### Script
 
-![Image 4](..\..\..\static\img\Winget-Upgrade-All\image_4.png)  
+![Image 4](../../../static/img/Winget-Upgrade-All/image_4.png)  
 
 Paste the below PowerShell script directly into the "Script" field.
 
@@ -68,15 +68,15 @@ if (!(Get-Module '7ZipArchiveDsc' -ErrorAction SilentlyContinue)) {
     Install-Module -Name 7ZipArchiveDsc
 }
 Import-Module 7ZipArchiveDsc
-$wingetWorkingPath = "$env:ProgramData\_automation\winget"
+$wingetWorkingPath = "$env:ProgramData/_automation/winget"
 New-Item -Type Directory -Path $wingetWorkingPath -ErrorAction SilentlyContinue
 Expand-7ZipArchive -Path $wingetMsixPath -Destination $wingetWorkingPath
-$wingetParentPath = "$wingetWorkingPath\app"
-$wingetPath = "$wingetParentPath\winget.exe"
+$wingetParentPath = "$wingetWorkingPath/app"
+$wingetPath = "$wingetParentPath/winget.exe"
 if ([Environment]::Is64BitOperatingSystem) {
-    Expand-7ZipArchive -Path "$wingetWorkingPath\AppInstaller_x64.msix" -Destination $wingetParentPath
+    Expand-7ZipArchive -Path "$wingetWorkingPath/AppInstaller_x64.msix" -Destination $wingetParentPath
 } else {
-    Expand-7ZipArchive -Path "$wingetWorkingPath\AppInstaller_x86.msix" -Destination $wingetParentPath
+    Expand-7ZipArchive -Path "$wingetWorkingPath/AppInstaller_x86.msix" -Destination $wingetParentPath
 }
 
 # Install VCLibs if required
@@ -92,8 +92,8 @@ if (!(Get-ProvisionedAppPackage -Online | Where-Object { $_.DisplayName -match '
 $Visual2019 = 'Microsoft Visual C++ 2015-2019 Redistributable*'
 $Visual2022 = 'Microsoft Visual C++ 2015-2022 Redistributable*'
 $path = Get-Item @(
-    'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
-    'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
+    'HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/*',
+    'HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall/*'
 ) | Where-Object { $_.GetValue('DisplayName') -like $Visual2019 -or $_.GetValue('DisplayName') -like $Visual2022 }
 if (!($path)) {
     try {
@@ -105,10 +105,10 @@ if (!($path)) {
         Write-Log -Text "Downloading $VCRedistTarget..." -Type Log
         $SourceURL = "https://aka.ms/vs/17/release/$VCRedistTarget"
         $ProgressPreference = 'SilentlyContinue'
-        Invoke-WebRequest $SourceURL -OutFile "$env:TEMP\$VCRedistTarget"
+        Invoke-WebRequest $SourceURL -OutFile "$env:TEMP/$VCRedistTarget"
         Write-Log -Text "Installing $VCRedistTarget..." -Type LOG
-        Start-Process -FilePath "$env:TEMP\$VCRedistTarget" -Args '/quiet /norestart' -Wait
-        Remove-Item "$env:TEMP\$VCRedistTarget" -ErrorAction SilentlyContinue
+        Start-Process -FilePath "$env:TEMP/$VCRedistTarget" -Args '/quiet /norestart' -Wait
+        Remove-Item "$env:TEMP/$VCRedistTarget" -ErrorAction SilentlyContinue
         Write-Log -Text 'MS Visual C++ 2015-2022 installed successfully' -Type LOG
     } catch {
         Write-Log -Text 'MS Visual C++ 2015-2022 installation failed.' -Type LOG
@@ -141,6 +141,7 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
+
 
 
 

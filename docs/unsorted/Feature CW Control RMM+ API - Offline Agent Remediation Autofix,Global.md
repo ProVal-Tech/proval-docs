@@ -22,7 +22,7 @@ It is suggested to set the ticket category in the Global Variables before settin
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Feature-CW-Control-RMM+-API---Offline-Agent-Remediation-Autofix,Global\image_1.png)
+![Sample Run](../../static/img/Feature-CW-Control-RMM+-API---Offline-Agent-Remediation-Autofix,Global/image_1.png)
 
 ## Dependencies
 
@@ -96,6 +96,7 @@ It will clear the Agent status script state and will finish any open offline Ser
 - Script Log
 - Script State
 - Ticket
+
 
 
 

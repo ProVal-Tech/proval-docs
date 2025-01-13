@@ -79,20 +79,21 @@ This document details the procedure for setting up Remote Monitors for Location 
 
 **Name:** `NTW - Ping Monitor <Client Name> - <Location Name>`
 
-**Ticket Subject:** `NTW - Ping Failure - <Client Name>\<Location Name> (<Public Address>)`
+**Ticket Subject:** `NTW - Ping Failure - <Client Name>/<Location Name> (<Public Address>)`
 
-**Alert Message on Failure:** `Failed to reach/ping <Public Address> from <Client Name of the Computer trying to Ping the Address>\<Name of the computer trying to ping the Address> (<Local Address of the computer trying to ping the address>)`
+**Alert Message on Failure:** `Failed to reach/ping <Public Address> from <Client Name of the Computer trying to Ping the Address>/<Name of the computer trying to ping the Address> (<Local Address of the computer trying to ping the address>)`
 
 `Result: %RESULT%`
 
 **Sample Remote Monitor:**
-![Sample Remote Monitor](..\..\..\static\img\Location-Ping-Monitors---Create\image_1.png)
-![Sample Remote Monitor](..\..\..\static\img\Location-Ping-Monitors---Create\image_2.png)
-![Sample Remote Monitor](..\..\..\static\img\Location-Ping-Monitors---Create\image_3.png)
-![Sample Remote Monitor](..\..\..\static\img\Location-Ping-Monitors---Create\image_4.png)
+![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_1.png)
+![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_2.png)
+![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_3.png)
+![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_4.png)
 
 ## Output
 
 - Remote Monitors
+
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Bitlocker---Key-Retrieval\image_1.png)
+![Sample Run](../../../static/img/Bitlocker---Key-Retrieval/image_1.png)
 
 ## Dependencies
 
@@ -43,5 +43,6 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Role
 - Dataview
+
 
 

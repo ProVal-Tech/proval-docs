@@ -29,3 +29,4 @@ This dataview displays all AD machines from the AD plugin and gives details abou
 | LastLogon                          | Last logon detail of agent in AD                    |
 
 
+

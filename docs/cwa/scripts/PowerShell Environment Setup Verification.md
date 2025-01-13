@@ -32,7 +32,7 @@ Although this script can be run to determine minimum requirements or environment
 | Log Var                    | A running log of what is being checked and its state.                                                                                                                                                                        |
 | Violation                  | The result of the question does the target machine's current state satisfy the necessary requirement of the calling script.                                                                                                |
 | Violations                 | A running list of anything found with a violation of true.                                                                                                                                                                   |
-| AdminApprovalModeViolations | Will be true if the local security policy object 'MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin' is set to either 1 or 3. These settings mean that an admin account, when running an elevated command, will be prompted for credentials to continue. |
+| AdminApprovalModeViolations | Will be true if the local security policy object 'MACHINE/Software/Microsoft/Windows/CurrentVersion/Policies/System/ConsentPromptBehaviorAdmin' is set to either 1 or 3. These settings mean that an admin account, when running an elevated command, will be prompted for credentials to continue. |
 | LUA Enabled                | Will be 1 or 0, 1 for enabled, 0 for disabled, and reflects the UAC setting on the computer. A failure here may not always prevent a script from running but very well could if the command requires elevation, and the Admin Approval Mode is set to a high enough level. Depending on the script we may want to verify this, so it is added and will reflect a failure if UAC is turned on. |
 | Scope                      | This is a required variable for the [EPM - Windows Configuration - Script - Set-Environmental Path Variable](https://proval.itglue.com/DOC-5078775-11976251) script and is used to add any required path variables to the target. Note: this script will not fail if the required path variable is not present, it will add it if it's not present. |
 | Path                       | This is a required variable for the [EPM - Windows Configuration - Script - Set-Environmental Path Variable](https://proval.itglue.com/DOC-5078775-11976251) script and is used to add any required path variables to the target. It is equal to the global parameter RequiredPathVar, which can be set in this global parameter or, in any parent script calling this script. |
@@ -43,7 +43,7 @@ Although this script can be run to determine minimum requirements or environment
 | Name               | Example                            | Required | Description                                                                                                                                                                                                                                                                                                                                                   |
 |--------------------|------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PsMinimumVersion    | 5.0                               | True     | This is a global PowerShell minimum version that this script when called will default to, at present it is defaulted to 5.0, however as time goes on and we move to newer versions we can change this to match the minimum PowerShell version we require moving forward. When calling this script If you set a script variable as PsMinimumVersion with a value other than the defaulted, the calling scripts variable will trump the global variable, so we can write scripts with higher or lower PowerShell versions setting that variable to whatever the desired version is, and the script will adjust to that new value. |
-| RequiredPathVar     | C:\Windows\System32\WindowsPowerShell\v1.0 | True     | This is a global environmental path variable path; it is defaulted to 'C:\Windows\System32\WindowsPowerShell\v1.0' as the most common issue when calling powershell.exe is the fact that this particular path is not present in the systems environmental path variable. When calling this script If you set a script variable as RequiredPathVar with a value other than the defaulted, the calling scripts variable will trump the global variable, so we can write scripts with different required paths, and this script will add them as necessary. |
+| RequiredPathVar     | C:/Windows/System32/WindowsPowerShell/v1.0 | True     | This is a global environmental path variable path; it is defaulted to 'C:/Windows/System32/WindowsPowerShell/v1.0' as the most common issue when calling powershell.exe is the fact that this particular path is not present in the systems environmental path variable. When calling this script If you set a script variable as RequiredPathVar with a value other than the defaulted, the calling scripts variable will trump the global variable, so we can write scripts with different required paths, and this script will add them as necessary. |
 | Skip AAM            | 1, 0                              | False    | Setting this to 1 will skip the Admin Approval Mode check.                                                                                                                                                                                                                                                                                                   |
 | Skip UAC            | 1, 0                              | False    | Setting this to 1 will skip the UAC check.                                                                                                                                                                                                                                                                                                                   |
 | Skip EPV            | 1, 0                              | False    | Setting this to 1 will skip the Setting of the Environmental Path variable.                                                                                                                                                                                                                                                                                 |
@@ -77,12 +77,12 @@ UAC state is: 1
 UAC state is considered a violation as it is active.
 _______________________________________________
 
-Environmental Path check for Path : C:\Windows\System32\WindowsPowerShell\v1.0
+Environmental Path check for Path : C:/Windows/System32/WindowsPowerShell/v1.0
 If the path does not exist it will be added to the machine scope environmental variable
 The machine wide environmental path variable is as follows
 
-C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;
-C:\Windows\System32\WindowsPowerShell\v1.0
+C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Windows/System32/OpenSSH/;C:/Program Files/dotnet/;
+C:/Windows/System32/WindowsPowerShell/v1.0
  
 _______________________________________________
 
@@ -95,6 +95,7 @@ Environmental tests failed for the following issues -
 
 UAC Status
 ```
+
 
 
 

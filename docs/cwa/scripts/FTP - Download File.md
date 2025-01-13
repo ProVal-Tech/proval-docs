@@ -16,7 +16,7 @@ Time Saved by Automation: 10-20 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\FTP---Download-File\image_1.png)
+![Sample Run](../../../static/img/FTP---Download-File/image_1.png)
 
 ## Variables
 
@@ -32,7 +32,7 @@ Time Saved by Automation: 10-20 Minutes
 | FTP_Username       | test_user                               | True     | It asks about the FTP username to access the ftp site       |
 | FTP_Password       | testing@123                             | True     | It asks about the FTP password to access the ftp site       |
 | FTP_Filename       | Filename.zip                            | True     | Provide filename with extension to download from ftp site   |
-| Download_to_Path   | C:\Windows\Temp\Folder                  | True     | Local destination path on agent                               |
+| Download_to_Path   | C:/Windows/Temp/Folder                  | True     | Local destination path on agent                               |
 
 ## Process
 
@@ -43,6 +43,7 @@ Time Saved by Automation: 10-20 Minutes
 ## Output
 
 - Script log
+
 
 
 

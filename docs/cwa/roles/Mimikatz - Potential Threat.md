@@ -12,7 +12,7 @@ unlisted: false
 
 Checks registry for value if stored credentials flag is set.
 
-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredential
+HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential
 
 If it is set - potential threat is using it.
 
@@ -22,7 +22,8 @@ If it is not set but exists - system is vulnerable - see [Mimikatz - Vulnerable]
 
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
-| {%-HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredential-%} | Equals     | 1      | Windows        |
+| {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 1      | Windows        |
+
 
 
 

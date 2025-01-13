@@ -37,3 +37,4 @@ This dataview will display the Windows Shadow Copy state for endpoints with Shad
 | Maximum Space Provided to Shadow Copy (GB)| Maximum space provided to the Shadow Copy in GB                       |
 
 
+

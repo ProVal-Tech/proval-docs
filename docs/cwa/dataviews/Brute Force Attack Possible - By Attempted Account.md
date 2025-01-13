@@ -37,3 +37,4 @@ NetworkInfo will not display unless advanced logon/logoff activity is being trac
 | Time Generated     | The time recorded in Automate for the most recent event log instance                                             |
 
 
+

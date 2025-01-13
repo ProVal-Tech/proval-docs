@@ -28,3 +28,4 @@ This dataview gathers the Windows Product Key from the [Role - Windows Product K
 | Windows Product Key  | Windows product key info of the agent               |
 
 
+

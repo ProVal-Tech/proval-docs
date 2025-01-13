@@ -18,7 +18,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Point-and-Print-Nightmare-Check\image_1.png)
+![Sample Run](../../../static/img/Point-and-Print-Nightmare-Check/image_1.png)
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- This script will check for `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint\NoWarningNoElevationOnInstall` and `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint\UpdatePromptSettings`.
+- This script will check for `HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows NT/Printers/PointAndPrint/NoWarningNoElevationOnInstall` and `HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows NT/Printers/PointAndPrint/UpdatePromptSettings`.
 - If any found then check for the value.
 - If value is not set or 0 then safe, else record as PrintAndPoint Detected.
 
@@ -41,6 +41,7 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 
 

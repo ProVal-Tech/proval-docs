@@ -16,7 +16,7 @@ This script will insert a registry key to hide the weather widget from the taskb
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Hide-Weather-Widget-from-Taskbar\image_1.png)
+![Sample Run](../../../static/img/Hide-Weather-Widget-from-Taskbar/image_1.png)
 
 ## Variables
 
@@ -30,6 +30,7 @@ This script will insert a registry key to hide the weather widget from the taskb
 ## Output
 
 - Script log
+
 
 
 

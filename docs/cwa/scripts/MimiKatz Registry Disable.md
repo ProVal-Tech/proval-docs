@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\MimiKatz-Registry-Disable\image_1.png)
+![Sample Run](../../../static/img/MimiKatz-Registry-Disable/image_1.png)
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- Set the registry value for "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest\UseLogonCredential" to 0
+- Set the registry value for "HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest/UseLogonCredential" to 0
 - Verifies if the changes are successfully made
 - By default ticketing is enabled so sends success or failure tickets for attention.
 
@@ -39,5 +39,6 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Ticket
+
 
 

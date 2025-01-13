@@ -36,3 +36,4 @@ This dataview will display metrics on how scripts are running in the environment
 | Average Daily Time Minutes               | This is the average time per day, in minutes, and is not converted to a duration column. This provided for validation and easy manipulation of the data.                                                                                                   |
 
 
+

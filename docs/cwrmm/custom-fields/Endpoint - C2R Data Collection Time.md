@@ -20,9 +20,10 @@ The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version cu
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---C2R-Data-Collection-Time\image_1.png)
+![Screenshot 1](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_1.png)
 
-![Screenshot 2](..\..\..\static\img\Endpoint---C2R-Data-Collection-Time\image_2.png)
+![Screenshot 2](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_2.png)
+
 
 
 

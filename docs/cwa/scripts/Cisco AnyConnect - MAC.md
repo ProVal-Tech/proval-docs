@@ -16,11 +16,11 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Cisco-AnyConnect---MAC\image_1.png)
+![Sample Run](../../../static/img/Cisco-AnyConnect---MAC/image_1.png)
 
 ## Variables
 
-`installers\360UW\Cisco-AnyConnect\anyconnect-macos-4-7-04056-predeploy-k9.dmg` -- This script requires this file to be on LTshare.
+`installers/360UW/Cisco-AnyConnect/anyconnect-macos-4-7-04056-predeploy-k9.dmg` -- This script requires this file to be on LTshare.
 
 | Variable       | Description                                                                 |
 |----------------|-----------------------------------------------------------------------------|
@@ -29,12 +29,13 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- Downloads the dmg package from the LTShare. (The ltshare should have the file at Labtech\Transfer\installers\360UW\Cisco-AnyConnect\anyconnect-macos-4-7-04056-predeploy-k9.dmg).
+- Downloads the dmg package from the LTShare. (The ltshare should have the file at Labtech/Transfer/installers/360UW/Cisco-AnyConnect/anyconnect-macos-4-7-04056-predeploy-k9.dmg).
 - Once the download runs successfully, the script will attempt to install it on MAC agent.
 - It will set the Mount and Unmount name for the application and copy and detach application respectively based on Mount/Unmount Name.
 
 ## Output
 
 - Script log
+
 
 

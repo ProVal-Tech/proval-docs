@@ -65,10 +65,10 @@ The purpose of this solution is to pull certificate information that is meaningf
    - Alert Template - △ Custom - Ticket Creation - Computer
 
 2. Reload the system cache:  
-   ![Reload Cache](..\..\static\img\Certificate-Audit-Solution\image_1.png)
+   ![Reload Cache](../../static/img/Certificate-Audit-Solution/image_1.png)
 
 3. Execute the [Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) script against any online Windows computer to create the [plugin_proval_certs](https://proval.itglue.com/DOC-5078775-9262931) custom table.  
-   ![Execute Script](..\..\static\img\Certificate-Audit-Solution\image_2.png)
+   ![Execute Script](../../static/img/Certificate-Audit-Solution/image_2.png)
 
 4. Skip this step for new implementation.  
    Run this SQL query from a RAWSQL monitor set to remove the script's schedule:  
@@ -86,7 +86,7 @@ The purpose of this solution is to pull certificate information that is meaningf
        - Service Plans.Windows Servers.Server Roles.Windows Web/Proxy Servers
        - Service Plans.Windows Servers.Server Roles.Windows Database Servers
        - Service Plans.Windows Servers.Server Roles.MSP Specific Servers  
-       ![Target Groups](..\..\static\img\Certificate-Audit-Solution\image_3.png)
+       ![Target Groups](../../static/img/Certificate-Audit-Solution/image_3.png)
      - Right-click and Run Now to start the monitor
 
 ### If Requested
@@ -97,5 +97,6 @@ The purpose of this solution is to pull certificate information that is meaningf
    - [Internal Monitor - Certificate Expiration < 30 Days](https://proval.itglue.com/DOC-5078775-9256567)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and Run Now to start the monitor
+
 
 

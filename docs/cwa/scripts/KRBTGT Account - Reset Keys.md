@@ -22,7 +22,7 @@ Due to this, results are not guaranteed, and if at all possible should always be
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\KRBTGT-Account---Reset-Keys\image_1.png)
+![Sample Run](../../../static/img/KRBTGT-Account---Reset-Keys/image_1.png)
 
 ## Dependencies
 
@@ -36,6 +36,7 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](https://proval.itglue
 
 - Script log
 - Local file on computer
+
 
 
 

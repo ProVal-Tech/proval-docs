@@ -33,16 +33,17 @@ Global
 
 **Subject**
 
-Manual Script Execution Status on %CLIENTNAME%\%COMPUTERNAME%
+Manual Script Execution Status on %CLIENTNAME%/%COMPUTERNAME%
 
 **Body**
 
-Manual Script Execution Status of %RESULT% on %CLIENTNAME%\%COMPUTERNAME%
+Manual Script Execution Status of %RESULT% on %CLIENTNAME%/%COMPUTERNAME%
 
-Here, %Result% contains the Script Name: "Scriptname" ran on computer "Computername" by user/email "LTUserName/Email address of the ltuser" with a result "Script Result" during "When script executed" on clientname\computername.
+Here, %Result% contains the Script Name: "Scriptname" ran on computer "Computername" by user/email "LTUserName/Email address of the ltuser" with a result "Script Result" during "When script executed" on clientname/computername.
 
 **Email Example:**
 
-![Email Example](..\..\..\static\img\Manual-Script-Schedule---Status-Email\image_1.png)
+![Email Example](../../../static/img/Manual-Script-Schedule---Status-Email/image_1.png)
+
 
 

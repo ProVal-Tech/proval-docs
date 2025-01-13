@@ -16,7 +16,8 @@ Gathers all sql instances installed on an endpoint.
 
 | Detection String                                                                                                                                                                                                                      | Comparator | Result                                                   | Applicable OS |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------|----------------|
-| `%{@powershell -c "$rp = 'HKLM:\\SOFTWARE\\Microsoft\\Microsoft SQL Server';$sb = [scriptblock]::Create('$in = gp -ErrorAction SilentlyContinue \\\"$rp\\Instance Names\\SQL\\\"; \\\"$((gp -erroraction silentlycontinue \\\"$rp\\$($in.$_)\\Setup\\\").Version) - $((gp -erroraction silentlycontinue \\\"$rp\\$($in.$_)\\Setup\\\").Edition)\\\"'); (((gp -erroraction silentlycontinue $rp).InstalledInstances) | foreach -Process $sb) -join ', '"@% | Regex      | `^\d{2,}.\d{1,}.\d{4,}.\d{1,}\s-\s\w*\s` | Windows        |
+| `%{@powershell -c "$rp = 'HKLM://SOFTWARE//Microsoft//Microsoft SQL Server';$sb = [scriptblock]::Create('$in = gp -ErrorAction SilentlyContinue ///"$rp//Instance Names//SQL///"; ///"$((gp -erroraction silentlycontinue ///"$rp//$($in.$_)//Setup///").Version) - $((gp -erroraction silentlycontinue ///"$rp//$($in.$_)//Setup///").Edition)///"'); (((gp -erroraction silentlycontinue $rp).InstalledInstances) | foreach -Process $sb) -join ', '"@% | Regex      | `^/d{2,}./d{1,}./d{4,}./d{1,}/s-/s/w*/s` | Windows        |
+
 
 
 

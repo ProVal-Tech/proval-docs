@@ -38,11 +38,12 @@ This solution is designed to retrieve the file path and size details of OST and 
    - Alert Template - `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
 
 2. Reload System Cache:  
-   ![Reload System Cache](..\..\static\img\Microsoft-Outlook---OSTPST-Audit\image_1.png)
+   ![Reload System Cache](../../static/img/Microsoft-Outlook---OSTPST-Audit/image_1.png)
 
 3. Configure the solution as follows:
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-15490756)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
+
 
 

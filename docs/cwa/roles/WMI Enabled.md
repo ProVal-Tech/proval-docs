@@ -20,3 +20,4 @@ This role is detected on machines on which WMI is enabled.
 
 
 
+

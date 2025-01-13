@@ -14,7 +14,7 @@ Will Register a given extension for the Firefox browser.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Register---Firefox-Extension\image_1.png)  
+![Sample Run](../../../static/img/Register---Firefox-Extension/image_1.png)  
 This will install the N-Able Passportal extension and make that extension protected from deletion.  
 Leaving Mandate Blank will not protect the extension from deletion.  
 Obtain your extension name from the Firefox extension store.
@@ -39,5 +39,6 @@ Please Review the agnostic content for specifics on the process.
 ## Output
 
 - Script log
+
 
 

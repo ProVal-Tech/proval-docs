@@ -28,14 +28,15 @@ Windows OS
 
 ## Ticketing
 
-**Subject:** `Failed to Disable NetBios on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME%`
+**Subject:** `Failed to Disable NetBios on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
 
 **Success Body**: `Netbios has been disabled on all Network Interfaces`  
 
-**Failure Body:** `Failed to Set Netbios on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.`
+**Failure Body:** `Failed to Set Netbios on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.`
 
 ## How To Import
 
 [Implement - Remote Monitor - Disable Netbios on Network Interfaces](https://proval.itglue.com/DOC-5078775-13837769)
+
 
 

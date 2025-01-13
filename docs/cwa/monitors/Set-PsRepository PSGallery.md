@@ -28,9 +28,9 @@ unlisted: false
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); try { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } catch { try { Remove-Item \"$env:localappdata\\Microsoft\\Windows\\PowerShell\\PowerShellGet\\PSRepositories.xml\" -Force -ErrorAction Stop; Register-PSRepository -Default -ErrorAction Stop; if ( (Get-PSRepository -Name \'PsGallery\' -ErrorAction SilentlyContinue).InstallationPolicy -ne \'Trusted\' ) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } } catch { return \"Failed to set PSGallery as trusted repository. Reason: $($Error[0].Exception.Message)\" }}"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); try { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } catch { try { Remove-Item /"$env:localappdata//Microsoft//Windows//PowerShell//PowerShellGet//PSRepositories.xml/" -Force -ErrorAction Stop; Register-PSRepository -Default -ErrorAction Stop; if ( (Get-PSRepository -Name /'PsGallery/' -ErrorAction SilentlyContinue).InstallationPolicy -ne /'Trusted/' ) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } } catch { return /"Failed to set PSGallery as trusted repository. Reason: $($Error[0].Exception.Message)/" }}"' as `DataOut`,
    '16' as `Comparor`,
-   '10|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))|11|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))%7C(^((\r\n){0,}[\r\n]{0,}\s{0,})Failed to set PSGallery)|10|^((\r\n){0,}[\r\n]{0,}\s{0,})Failed to set PSGallery' as `DataIn`,
+   '10|((^((OK){0,}(/r/n){0,}[/r/n]{0,}/s{0,})$)%7C(^$))|11|((^((OK){0,}(/r/n){0,}[/r/n]{0,}/s{0,})$)%7C(^$))%7C(^((/r/n){0,}[/r/n]{0,}/s{0,})Failed to set PSGallery)|10|^((/r/n){0,}[/r/n]{0,}/s{0,})Failed to set PSGallery' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -97,9 +97,9 @@ unlisted: false
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); try { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } catch { try { Remove-Item \"$env:localappdata\\Microsoft\\Windows\\PowerShell\\PowerShellGet\\PSRepositories.xml\" -Force -ErrorAction Stop; Register-PSRepository -Default -ErrorAction Stop; if ( (Get-PSRepository -Name \'PsGallery\' -ErrorAction SilentlyContinue).InstallationPolicy -ne \'Trusted\' ) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } } catch { return \"Failed to set PSGallery as trusted repository. Reason: $($Error[0].Exception.Message)\" }}"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); try { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } catch { try { Remove-Item /"$env:localappdata//Microsoft//Windows//PowerShell//PowerShellGet//PSRepositories.xml/" -Force -ErrorAction Stop; Register-PSRepository -Default -ErrorAction Stop; if ( (Get-PSRepository -Name /'PsGallery/' -ErrorAction SilentlyContinue).InstallationPolicy -ne /'Trusted/' ) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction Stop } } catch { return /"Failed to set PSGallery as trusted repository. Reason: $($Error[0].Exception.Message)/" }}"' as `DataOut`,
    '16' as `Comparor`,
-   '10|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))|11|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))%7C(^((\r\n){0,}[\r\n]{0,}\s{0,})Failed to set PSGallery)|10|^((\r\n){0,}[\r\n]{0,}\s{0,})Failed to set PSGallery' as `DataIn`,
+   '10|((^((OK){0,}(/r/n){0,}[/r/n]{0,}/s{0,})$)%7C(^$))|11|((^((OK){0,}(/r/n){0,}[/r/n]{0,}/s{0,})$)%7C(^$))%7C(^((/r/n){0,}[/r/n]{0,}/s{0,})Failed to set PSGallery)|10|^((/r/n){0,}[/r/n]{0,}/s{0,})Failed to set PSGallery' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -152,9 +152,10 @@ unlisted: false
    ```
 
 4. Now execute your query using an RAWSQL monitor set. Once the query is executed, relaunch the control center.  
-   ![Image](..\..\..\static\img\Set-PsRepository-PSGallery\image_1.png)  
+   ![Image](../../../static/img/Set-PsRepository-PSGallery/image_1.png)  
    Then re-open the group where the monitor is created.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

@@ -16,7 +16,7 @@ The purpose of the solution is to manage the members in the local admin group fo
 
 The solution's Extra Data Fields have been modified. Update the [Local Admin Group Cleanup - Add/Remove](https://proval.itglue.com/DOC-5078775-16783511) script from the `Prosync` plugin and run/debug against an online Windows machine with `Set_Environment` as `1` to implement the changes.
 
-![Image](..\..\static\img\Local-Admin-Group-Cleanup\image_1.png)
+![Image](../../static/img/Local-Admin-Group-Cleanup/image_1.png)
 
 ## Associated Content
 
@@ -34,10 +34,10 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
    - Alert Template - △ Custom - Local Admin Group Cleanup
 
 2. Reload the system cache:  
-   ![Image](..\..\static\img\Local-Admin-Group-Cleanup\image_2.png)
+   ![Image](../../static/img/Local-Admin-Group-Cleanup/image_2.png)
 
 3. **First Execution:** Run the script against any online Windows computer with the `Set_Environment` parameter set to `1` to create the system properties and the EDFs used by the solution.  
-   ![Image](..\..\static\img\Local-Admin-Group-Cleanup\image_1.png)
+   ![Image](../../static/img/Local-Admin-Group-Cleanup/image_1.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
@@ -46,8 +46,9 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
        - Right-click and Run Now to start the monitor
 
 5. Confirm with the consultant before enabling ticketing by setting a ticket category for the [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515) internal monitor.  
-   ![Image](..\..\static\img\Local-Admin-Group-Cleanup\image_3.png)
+   ![Image](../../static/img/Local-Admin-Group-Cleanup/image_3.png)
 
 6. Set the appropriate values for the system properties and EDFs defined in the [script's](https://proval.itglue.com/DOC-5078775-16783511) document, which should be provided by the consultant.
+
 
 

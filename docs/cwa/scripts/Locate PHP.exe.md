@@ -15,23 +15,23 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 ## Sample Run
 
 **First Run**: Run the script with the `Set_Environment` parameter set to `1` after importing it to create the [custom table](https://proval.itglue.com/DOC-5078775-16245130) and the EDF being used by the script.  
-![First Run](..\..\..\static\img\Locate-PHP.exe\image_1.png)
+![First Run](../../../static/img/Locate-PHP.exe/image_1.png)
 
 **Regular Execution**:  
-![Regular Execution](..\..\..\static\img\Locate-PHP.exe\image_2.png)
+![Regular Execution](../../../static/img/Locate-PHP.exe/image_2.png)
 
 ## Variables
 
 | Name                | Description                     |
 |---------------------|---------------------------------|
 | ProjectName         | Get-EverythingSearch            |
-| WorkingDirectory@   | C:\ProgramData\_Automation\Script\Get-EverythingSearch |
+| WorkingDirectory@   | C:/ProgramData/_Automation/Script/Get-EverythingSearch |
 
 ## Global Parameters
 
 | Name         | Value         | Required | Description                                        |
 |--------------|---------------|----------|----------------------------------------------------|
-| SearchString | ^PHP\.exe$    | True     | Regular expression of the file name to look for.  |
+| SearchString | ^PHP/.exe$    | True     | Regular expression of the file name to look for.  |
 
 ## User Parameters
 
@@ -49,6 +49,7 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 
 - Script Log
 - Dataview
+
 
 
 

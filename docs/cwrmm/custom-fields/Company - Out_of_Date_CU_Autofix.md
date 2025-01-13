@@ -28,8 +28,9 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\Company---Out_of_Date_CU_Autofix\image_1.png)
+![Screenshot 1](../../../static/img/Company---Out_of_Date_CU_Autofix/image_1.png)
 
-![Screenshot 2](..\..\..\static\img\Company---Out_of_Date_CU_Autofix\image_2.png)
+![Screenshot 2](../../../static/img/Company---Out_of_Date_CU_Autofix/image_2.png)
+
 
 

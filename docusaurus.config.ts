@@ -38,7 +38,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           tags: 'tags.yml',
-          onInlineTags: 'throw',
+          onInlineTags: 'warn',
           editUrl:
             'https://github.com/proval-tech/docs/tree/main/packages/create-docusaurus/templates/shared/',
         },

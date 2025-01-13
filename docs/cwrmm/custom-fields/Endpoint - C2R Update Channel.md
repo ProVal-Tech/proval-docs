@@ -20,8 +20,9 @@ Update Channel of the office installed on the machine gathered by the [Microsoft
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---C2R-Update-Channel\image_1.png)
-![Screenshot 2](..\..\..\static\img\Endpoint---C2R-Update-Channel\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---C2R-Update-Channel/image_1.png)
+![Screenshot 2](../../../static/img/Endpoint---C2R-Update-Channel/image_2.png)
+
 
 
 

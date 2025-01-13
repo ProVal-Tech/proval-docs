@@ -20,7 +20,7 @@ This script is designed to be monitor driven only and should never be manually r
 
 This script's only dependency is that the monitor that is triggering the script has the network deviceID reporting in as the fieldname. The script will gather all other information it needs.
 
-![Image](..\..\..\static\img\Ticket-Creation---ESXi-Not-Communicating\image_1.png)
+![Image](../../../static/img/Ticket-Creation---ESXi-Not-Communicating/image_1.png)
 
 ## Process
 
@@ -29,7 +29,7 @@ This script's only dependency is that the monitor that is triggering the script 
 
 ## Example Ticket
 
-> The ESXi Host named <ESXi Host Name> at <Client>\<Location> has not checked into Automate for over 3 days. Please make sure the probe is correctly installed at the location <Location> and that the server is still online and in use. If the server is no longer active, deleting the network device associated with the ESXi server will remove it from monitoring.
+> The ESXi Host named <ESXi Host Name> at <Client>/<Location> has not checked into Automate for over 3 days. Please make sure the probe is correctly installed at the location <Location> and that the server is still online and in use. If the server is no longer active, deleting the network device associated with the ESXi server will remove it from monitoring.
 >
 > The ESXi Host information is outlined below:  
 > Host Name: <ESXi Host Name>  
@@ -41,5 +41,6 @@ This script's only dependency is that the monitor that is triggering the script 
 >
 > There is 1 reported VM running on this host. It has been displayed below:  
 > <VM Name>
+
 
 

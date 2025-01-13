@@ -36,3 +36,4 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](https
 | Data Collection Time      | Data Collection Time                                 |
 
 
+

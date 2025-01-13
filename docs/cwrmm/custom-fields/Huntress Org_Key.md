@@ -14,14 +14,15 @@ This Custom field is to be filled with Huntress Organization Key. It is being ut
 
 # Create the Custom Field
 
-![Image 1](..\..\..\static\img\Huntress-Org_Key\image_1.png)
+![Image 1](../../../static/img/Huntress-Org_Key/image_1.png)
 
-![Image 2](..\..\..\static\img\Huntress-Org_Key\image_2.png)
+![Image 2](../../../static/img/Huntress-Org_Key/image_2.png)
 
 **Name:** Huntress Org_Key  
 **Type:** Text Box  
 **Level:** Company  
 **Description:** Huntress Organization Key. Organization Keys are used to associate a Huntress Agent into a grouping called Huntress Organizationz. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
 **Editable:** Yes  
+
 
 

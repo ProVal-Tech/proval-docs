@@ -47,6 +47,7 @@ Generates a CSV report for the end client to show cumulative and monthly time sa
 
 ## Output
 
-`$env:ProgramData\_automation\AgentProcedure\StackContent\TimeSavedByAutomation_$timestamp.csv`
+`$env:ProgramData/_automation/AgentProcedure/StackContent/TimeSavedByAutomation_$timestamp.csv`
+
 
 

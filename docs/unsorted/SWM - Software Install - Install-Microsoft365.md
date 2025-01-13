@@ -32,13 +32,13 @@ Enables the installation of Microsoft 365 Apps for Business or any Microsoft 365
 Example:
 
 ```
-PS C:\> Install-Microsoft365.ps1 
+PS C:/> Install-Microsoft365.ps1 
 # Installs Microsoft 365 Apps for Business with default configuration.
 
-PS C:\> Install-Microsoft365.ps1 -XMLPath "C:\Path\To\config.xml"
+PS C:/> Install-Microsoft365.ps1 -XMLPath "C:/Path/To/config.xml"
 # Installs Microsoft 365 using the specified local XML configuration file.
 
-PS C:\> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Restart 
+PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Restart 
 # Installs Microsoft 365 using the specified local XML configuration file.
 ```
 
@@ -52,8 +52,8 @@ PS C:\> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 ## Output
 
 ```
-.\Install-Microsoft365-log.txt
-.\Install-Microsoft365-error.txt
+./Install-Microsoft365-log.txt
+./Install-Microsoft365-error.txt
 ```
 
 ## Locations
@@ -62,6 +62,7 @@ PS C:\> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 |--------------------------------|------------------------------------|
 | Automate                       |                                    |
 | Kaseya                        | [Kaseya](https://proval.itglue.com/5078775/docs/15402741) |
+
 
 
 

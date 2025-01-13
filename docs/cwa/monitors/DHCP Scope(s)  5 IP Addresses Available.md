@@ -30,7 +30,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.01       | Run File   | REDACTED      | Regex Match | 3600     | <Screenshot below> |
 
-![Monitor Screenshot](..\..\..\static\img\DHCP-Scope(s)--5-IP-Addresses-Available\image_1.png)
+![Monitor Screenshot](../../../static/img/DHCP-Scope(s)--5-IP-Addresses-Available/image_1.png)
 
 ## Dependencies
 
@@ -40,7 +40,7 @@ Insert the details of the monitor in the below table.
 
 Service Plans.Windows Servers.Server Roles.Windows Servers Core Services.Windows DHCP Servers
 
-![Target Screenshot](..\..\..\static\img\DHCP-Scope(s)--5-IP-Addresses-Available\image_2.png)
+![Target Screenshot](../../../static/img/DHCP-Scope(s)--5-IP-Addresses-Available/image_2.png)
 
 ## Ticketing
 
@@ -82,16 +82,17 @@ Reserved   : 4
 
 The monitor set is available for import in our (ProVal's) Development environment within the `ProVal - Remote Monitors` Group.
 
-![Note Screenshot](..\..\..\static\img\DHCP-Scope(s)--5-IP-Addresses-Available\image_3.png)
+![Note Screenshot](../../../static/img/DHCP-Scope(s)--5-IP-Addresses-Available/image_3.png)
 
 ## Monitor's Screenshot
 
-![Monitor Screenshot 1](..\..\..\static\img\DHCP-Scope(s)--5-IP-Addresses-Available\image_4.png)  
-![Monitor Screenshot 2](..\..\..\static\img\DHCP-Scope(s)--5-IP-Addresses-Available\image_5.png)
+![Monitor Screenshot 1](../../../static/img/DHCP-Scope(s)--5-IP-Addresses-Available/image_4.png)  
+![Monitor Screenshot 2](../../../static/img/DHCP-Scope(s)--5-IP-Addresses-Available/image_5.png)
 
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) < 5 IP Addresses Available](https://proval.itglue.com/DOC-5078775-13206534).
+
 
 
 

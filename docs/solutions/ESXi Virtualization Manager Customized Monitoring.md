@@ -68,7 +68,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
    - [Script - Email Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-13747854)
 
 6. Reload the System Cache  
-   ![Reload System Cache](..\..\static\img\ESXi-Virtualization-Manager-Customized-Monitoring\image_1.png)
+   ![Reload System Cache](../../static/img/ESXi-Virtualization-Manager-Customized-Monitoring/image_1.png)
 
 7. Configure the solution as follows:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -100,5 +100,6 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 **Q:** My VMWare ESXi host is not showing up in the Virtualization Manager, what can I do to troubleshoot?  
 **A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](https://proval.itglue.com/DOC-5078775-11901041)
+
 
 

@@ -18,9 +18,10 @@ Import to Automate environment
 
 Import the file using System → General → Import → SQL File (The SQL file is too large for a remote monitor).
 
-![Image](..\..\static\img\Active-Directory-Reporting-SQL-Import-Attachment\image_1.png)
+![Image](../../static/img/Active-Directory-Reporting-SQL-Import-Attachment/image_1.png)
 
 Note: Import the SQL file only after importing the Script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) and executing the script [AD - Create Views/Table/Schedule for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882).
+
 
 
 

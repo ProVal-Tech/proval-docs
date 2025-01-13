@@ -28,7 +28,7 @@ This monitor is used to generate a ticket whenever the trust relationship betwee
 
 ## Target
 
-![Target Image](..\..\..\static\img\Domain-Trust-Relationship-Check\image_1.png)
+![Target Image](../../../static/img/Domain-Trust-Relationship-Check/image_1.png)
 
 ## Ticketing
 
@@ -46,7 +46,7 @@ The trust relationship between this workstation and the primary domain failed fo
 Domain trust relationship failure detected.
 Reason:
 Flags: b0 HAS_IP  HAS_TIMESERV 
-Trusted DC Name \\DEV-Server2019DC.provaldev.local 
+Trusted DC Name //DEV-Server2019DC.provaldev.local 
 Trusted DC Connection Status Status = 0 0x0 NERR_Success
 Trust Verification Status = 1 0x1 NERR_Failed
 The command was completed with a failure
@@ -55,5 +55,6 @@ The command was completed with a failure
 ## Implementation
 
 [https://proval.itglue.com/5078775/docs/17975723](https://proval.itglue.com/5078775/docs/17975723)
+
 
 

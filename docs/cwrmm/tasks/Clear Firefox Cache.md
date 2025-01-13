@@ -14,8 +14,8 @@ Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-Ge
 
 ## Sample Run
 
-![Sample Run Image 1](..\..\..\static\img\Clear-Firefox-Cache\image_1.png)  
-![Sample Run Image 2](..\..\..\static\img\Clear-Firefox-Cache\image_2.png)  
+![Sample Run Image 1](../../../static/img/Clear-Firefox-Cache/image_1.png)  
+![Sample Run Image 2](../../../static/img/Clear-Firefox-Cache/image_2.png)  
 
 ## Dependencies
 
@@ -24,30 +24,30 @@ Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-Ge
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Image 1](..\..\..\static\img\Clear-Firefox-Cache\image_3.png)  
-![Task Creation Image 2](..\..\..\static\img\Clear-Firefox-Cache\image_4.png)  
+![Task Creation Image 1](../../../static/img/Clear-Firefox-Cache/image_3.png)  
+![Task Creation Image 2](../../../static/img/Clear-Firefox-Cache/image_4.png)  
 
 **Name:** `Clear Firefox Cache`  
 **Description:** `Clears Gecko engine (Firefox) browser caches`  
 **Category:** `Application`  
-![Task Creation Image 3](..\..\..\static\img\Clear-Firefox-Cache\image_5.png)  
+![Task Creation Image 3](../../../static/img/Clear-Firefox-Cache/image_5.png)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Task Image 1](..\..\..\static\img\Clear-Firefox-Cache\image_6.png)  
+![Task Image 1](../../../static/img/Clear-Firefox-Cache/image_6.png)  
 
 A blank function will appear.  
-![Task Image 2](..\..\..\static\img\Clear-Firefox-Cache\image_7.png)  
+![Task Image 2](../../../static/img/Clear-Firefox-Cache/image_7.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![Task Image 3](..\..\..\static\img\Clear-Firefox-Cache\image_8.png)  
-![Task Image 4](..\..\..\static\img\Clear-Firefox-Cache\image_9.png)  
+![Task Image 3](../../../static/img/Clear-Firefox-Cache/image_8.png)  
+![Task Image 4](../../../static/img/Clear-Firefox-Cache/image_9.png)  
 
 The following function will pop up on the screen:  
-![Task Image 5](..\..\..\static\img\Clear-Firefox-Cache\image_10.png)  
+![Task Image 5](../../../static/img/Clear-Firefox-Cache/image_10.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -56,11 +56,11 @@ $ProjectName = 'Clear-GeckoCache'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -94,35 +94,36 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![Task Image 6](..\..\..\static\img\Clear-Firefox-Cache\image_11.png)  
+![Task Image 6](../../../static/img/Clear-Firefox-Cache/image_11.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Task Image 7](..\..\..\static\img\Clear-Firefox-Cache\image_12.png)  
+![Task Image 7](../../../static/img/Clear-Firefox-Cache/image_12.png)  
 
 A blank function will appear.  
-![Task Image 8](..\..\..\static\img\Clear-Firefox-Cache\image_13.png)  
+![Task Image 8](../../../static/img/Clear-Firefox-Cache/image_13.png)  
 
 Search and select the `Script Log` function.  
-![Task Image 9](..\..\..\static\img\Clear-Firefox-Cache\image_14.png)  
+![Task Image 9](../../../static/img/Clear-Firefox-Cache/image_14.png)  
 
 The following function will pop up on the screen:  
-![Task Image 10](..\..\..\static\img\Clear-Firefox-Cache\image_15.png)  
+![Task Image 10](../../../static/img/Clear-Firefox-Cache/image_15.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Task Image 11](..\..\..\static\img\Clear-Firefox-Cache\image_16.png)  
+![Task Image 11](../../../static/img/Clear-Firefox-Cache/image_16.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Task Image 12](..\..\..\static\img\Clear-Firefox-Cache\image_17.png)  
+![Task Image 12](../../../static/img/Clear-Firefox-Cache/image_17.png)  
 
 ## Completed Script
 
-![Completed Script](..\..\..\static\img\Clear-Firefox-Cache\image_18.png)  
+![Completed Script](../../../static/img/Clear-Firefox-Cache/image_18.png)  
 
 ## Output
 
 - Script Log  
-![Output Image](..\..\..\static\img\Clear-Firefox-Cache\image_19.png)  
+![Output Image](../../../static/img/Clear-Firefox-Cache/image_19.png)  
+
 
 

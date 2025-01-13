@@ -14,7 +14,7 @@ This client script will create a ticket for all the cluster hosts where the curr
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Cluster-Server-Patch-Audit-Ticket\image_1.png)
+![Sample Run](../../../static/img/Cluster-Server-Patch-Audit-Ticket/image_1.png)
 
 ## Dependencies
 
@@ -36,5 +36,6 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank You!
+
 
 

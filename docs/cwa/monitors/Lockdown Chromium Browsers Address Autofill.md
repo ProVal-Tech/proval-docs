@@ -3,7 +3,7 @@ id: 'cwa-lockdown-browsers-autofill'
 title: 'Lockdown Browsers Autofill'
 title_meta: 'Lockdown Browsers Autofill - Disable Autofilling in Chromium-based Browsers'
 keywords: ['chromium', 'browsers', 'autofill', 'registry', 'monitor']
-description: 'This document explains how to disable the Autofilling feature for addresses in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave by modifying the computer\'s registry settings. It includes details on affected settings, dependencies, and implementation steps.'
+description: 'This document explains how to disable the Autofilling feature for addresses in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave by modifying the computer/'s registry settings. It includes details on affected settings, dependencies, and implementation steps.'
 tags: ['configuration', 'security', 'windows', 'chrome', 'edge', 'brave', 'monitoring']
 draft: false
 unlisted: false
@@ -13,13 +13,13 @@ unlisted: false
 The remote monitor attempts to disable the Autofilling feature for addresses in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave. This solution entails modifying the computer's registry settings.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_1.png)
+![Google Chrome Setting](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_1.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_2.png)
+![Microsoft Edge Setting](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_2.png)
 
 **Affected Setting for Brave:**  
-![Brave Setting](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_3.png)
+![Brave Setting](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_3.png)
 
 **Note:**
 - The changes will only happen once the browser is restarted if it's currently open.
@@ -37,7 +37,7 @@ Using any alert templates is not recommended unless the partner specifically des
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based| 604800 (Weekly) | Screenshot attached below. |
 
-![Screenshot](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_4.png)
+![Screenshot](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_4.png)
 
 ## Dependencies
 
@@ -49,10 +49,11 @@ Using any alert templates is not recommended unless the partner specifically des
 ## Target
 
 **Group:** △ Lockdown Browsers Autofill  
-![Target Group](..\..\..\static\img\Lockdown-Chromium-Browsers-Address-Autofill\image_5.png)
+![Target Group](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_5.png)
 
 ## Implementation
 
 [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)
+
 
 

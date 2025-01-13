@@ -23,14 +23,14 @@ unlisted: false
    'ProVal - Production - Reset System Restore Disk Space Usage' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%\\%COMPUTERNAME%~~~System Restore Disk Space Usage has been successfully updated.!!!Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%\\%COMPUTERNAME%~~~Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%\\%COMPUTERNAME%' as `AlertMessage`,
+   'Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%//%COMPUTERNAME%~~~System Restore Disk Space Usage has been successfully updated.!!!Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%//%COMPUTERNAME%~~~Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%//%COMPUTERNAME%' as `AlertMessage`,
    '0' as `ContactID`,
    '21600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \'SilentlyContinue\';$SysDrv=$env:SystemDrive;$allocatedSpace = (vssadmin list shadowstorage /on=$SysDrv | Select-String \'Maximum Shadow Copy\');if($allocatedSpace -match \'(\d+(\.\d+)?)%\'){$allocatedSpacePercentage = [float]$matches[1]};if ($allocatedSpacePercentage -gt 25) {try{ & cmd /c \"vssadmin resize shadowstorage /for=$SysDrv /on=$SysDrv /maxsize=5%\"} catch {Write-Host \'Failed to reset\'} }"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/';$SysDrv=$env:SystemDrive;$allocatedSpace = (vssadmin list shadowstorage /on=$SysDrv | Select-String /'Maximum Shadow Copy/');if($allocatedSpace -match /'(/d+(/./d+)?)%/'){$allocatedSpacePercentage = [float]$matches[1]};if ($allocatedSpacePercentage -gt 25) {try{ & cmd /c /"vssadmin resize shadowstorage /for=$SysDrv /on=$SysDrv /maxsize=5%/"} catch {Write-Host /'Failed to reset/'} }"' as `DataOut`,
    '16' as `Comparor`,
-   '10|^(()%7C %7C(OK)%7C(\r\n))$|11|(Failed to Reset)%7C(^(()%7C %7C(OK)%7C(\r\n))$)|0|(Failed to Reset)' as `DataIn`,
+   '10|^(()%7C %7C(OK)%7C(/r/n))$|11|(Failed to Reset)%7C(^(()%7C %7C(OK)%7C(/r/n))$)|0|(Failed to Reset)' as `DataIn`,
    '' as `IDField`,
    '0' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -92,14 +92,14 @@ unlisted: false
    'ProVal - Production - Reset System Restore Disk Space Usage' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%\\%COMPUTERNAME%~~~System Restore Disk Space Usage has been successfully updated.!!!Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%\\%COMPUTERNAME%~~~Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%\\%COMPUTERNAME%' as `AlertMessage`,
+   'Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%//%COMPUTERNAME%~~~System Restore Disk Space Usage has been successfully updated.!!!Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%//%COMPUTERNAME%~~~Failed to Reset System Restore Disk Space Usage on %CLIENTNAME%//%COMPUTERNAME%' as `AlertMessage`,
    '0' as `ContactID`,
    '21600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \'SilentlyContinue\';$SysDrv=$env:SystemDrive;$allocatedSpace = (vssadmin list shadowstorage /on=$SysDrv | Select-String \'Maximum Shadow Copy\');if($allocatedSpace -match \'(\d+(\.\d+)?)%\'){$allocatedSpacePercentage = [float]$matches[1]};if ($allocatedSpacePercentage -gt 25) {try{ & cmd /c \"vssadmin resize shadowstorage /for=$SysDrv /on=$SysDrv /maxsize=5%\"} catch {Write-Host \'Failed to reset\'} }"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/';$SysDrv=$env:SystemDrive;$allocatedSpace = (vssadmin list shadowstorage /on=$SysDrv | Select-String /'Maximum Shadow Copy/');if($allocatedSpace -match /'(/d+(/./d+)?)%/'){$allocatedSpacePercentage = [float]$matches[1]};if ($allocatedSpacePercentage -gt 25) {try{ & cmd /c /"vssadmin resize shadowstorage /for=$SysDrv /on=$SysDrv /maxsize=5%/"} catch {Write-Host /'Failed to reset/'} }"' as `DataOut`,
    '16' as `Comparor`,
-   '10|^(()%7C %7C(OK)%7C(\r\n))$|11|(Failed to Reset)%7C(^(()%7C %7C(OK)%7C(\r\n))$)|0|(Failed to Reset)' as `DataIn`,
+   '10|^(()%7C %7C(OK)%7C(/r/n))$|11|(Failed to Reset)%7C(^(()%7C %7C(OK)%7C(/r/n))$)|0|(Failed to Reset)' as `DataIn`,
    '' as `IDField`,
    '0' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -155,5 +155,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

@@ -15,7 +15,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Audit-Diskpart-to-Custom-DV\image_1.png)
+![Sample Run](../../../static/img/Audit-Diskpart-to-Custom-DV/image_1.png)
 
 ## Dependencies
 
@@ -31,6 +31,7 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Dataview
+
 
 
 

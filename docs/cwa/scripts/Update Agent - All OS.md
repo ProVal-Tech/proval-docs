@@ -16,11 +16,12 @@ Time Saved by Automation: 2 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Update-Agent---All-OS\image_1.png)
+![Sample Run](../../../static/img/Update-Agent---All-OS/image_1.png)
 
 ## Process
 
 - The script will run some SQL to pull the highest agent version in the environment and will attempt to update the agent using those parameters.
 - The script is intended to be used with ProVal – Production – Agent – Out of Date
+
 
 

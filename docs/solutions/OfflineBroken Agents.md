@@ -77,3 +77,4 @@ The purpose of the solution is to detect machines that have been offline in Auto
        - Right-click and Run Now to start the monitor.
 
 
+

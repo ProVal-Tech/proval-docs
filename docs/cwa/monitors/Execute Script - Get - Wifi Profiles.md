@@ -28,3 +28,4 @@ Managed Windows Workstations
 **Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](https://proval.itglue.com/DOC-5078775-12979854) script.
 
 
+

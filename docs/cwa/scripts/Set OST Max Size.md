@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This script helps to set each user's registry Software\Microsoft\Office\OfficeVersion\Outlook\PST: MaxLargeFileSize and WarnLargeFileSize to custom as per user param or by default it sets MaxLargeFileSize to 100000 and WarnLargeFileSize to 95000.
+This script helps to set each user's registry Software/Microsoft/Office/OfficeVersion/Outlook/PST: MaxLargeFileSize and WarnLargeFileSize to custom as per user param or by default it sets MaxLargeFileSize to 100000 and WarnLargeFileSize to 95000.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Set-OST-Max-Size\image_1.png)
+![Sample Run](../../../static/img/Set-OST-Max-Size/image_1.png)
 
 ## Dependency
 
@@ -30,6 +30,7 @@ Strapper Module
 ## Output
 
 - Script log
+
 
 
 

@@ -62,3 +62,4 @@ This solution provides information on a workstation's battery state.
        - Right-click and Run Now to start the monitor.
 
 
+

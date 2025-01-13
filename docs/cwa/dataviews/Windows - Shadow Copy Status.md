@@ -27,3 +27,4 @@ This picks the data from the custom table "plugin_proval_shadowcopystats" and ad
 | Shadow Copy Enabled     | Enabled/Disabled status of Shadow Copy on the machine    |
 
 
+

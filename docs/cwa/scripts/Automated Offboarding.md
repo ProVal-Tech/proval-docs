@@ -16,7 +16,7 @@ Will check if agent is online or offline, if online will attempt removal of prod
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Automated-Offboarding\image_1.png)
+![Sample Run](../../../static/img/Automated-Offboarding/image_1.png)
 
 #### Global Parameters
 
@@ -47,5 +47,6 @@ Ticketing is optional.
 
 Script Log  
 Ticketing on failure if enabled.
+
 
 

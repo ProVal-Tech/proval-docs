@@ -21,38 +21,39 @@ This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser]
 
 - Clears the last logged-in user's information from the login screen. The computer must be restarted manually afterwards to implement the changes.
   
-  ![Sample Run 1](..\..\..\static\img\Set-Last-Logged-In-User\image_1.png)
+  ![Sample Run 1](../../../static/img/Set-Last-Logged-In-User/image_1.png)
 
 - Clears the last logged-in user's information from the login screen and forcefully restarts the computer.
   
-  ![Sample Run 2](..\..\..\static\img\Set-Last-Logged-In-User\image_2.png)
+  ![Sample Run 2](../../../static/img/Set-Last-Logged-In-User/image_2.png)
 
 - Sets the specified local user as the last logged-in user. The computer must be restarted manually afterwards to implement the changes.
   
-  ![Sample Run 3](..\..\..\static\img\Set-Last-Logged-In-User\image_3.png)
+  ![Sample Run 3](../../../static/img/Set-Last-Logged-In-User/image_3.png)
 
 - Sets the specified domain user as the last logged-in user and forcefully restarts the computer.
   
-  ![Sample Run 4](..\..\..\static\img\Set-Last-Logged-In-User\image_4.png)
+  ![Sample Run 4](../../../static/img/Set-Last-Logged-In-User/image_4.png)
 
 ## Variables
 
 | Name             | Description                                         |
 |------------------|-----------------------------------------------------|
 | ProjectName      | Set-LastLoggedOnUser                               |
-| WorkingDirectory  | C:\ProgramData\_Automation\Script\Set-LastLoggedOnUser |
+| WorkingDirectory  | C:/ProgramData/_Automation/Script/Set-LastLoggedOnUser |
 
 #### User Parameters
 
 | Name         | Example              | Required | Description                                                                                     |
 |--------------|----------------------|----------|-------------------------------------------------------------------------------------------------|
 | Clear        | 1                    | True     | Clears the last logged-in user's information from the login screen.                           |
-| UserName     | Domain\UserName      | True     | Sets the specified username as the last logged-in user. The username should be in the format 'Domain\User' or 'User'. |
+| UserName     | Domain/UserName      | True     | Sets the specified username as the last logged-in user. The username should be in the format 'Domain/User' or 'User'. |
 | DisplayName  | User Name            | False    | Optionally specifies the display name to set for the last logged-in user. If not provided, it defaults to the username. |
 | Reboot       | 1                    | False    | Optionally restarts the computer to apply the changes immediately.                             |
 
 ## Output
 
 - Script log
+
 
 

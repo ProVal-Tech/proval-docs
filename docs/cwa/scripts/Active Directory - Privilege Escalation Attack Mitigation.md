@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-The script is created to verify the installation of all the necessary patches in order to mitigate and detect Active Directory privilege escalation attacks. Apart from this, it is looking for computer accounts with non-compliant sAMAccountName and is also ensuring the presence of the `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Kdc\PacRequestorEnforcement` registry key with value 1.
+The script is created to verify the installation of all the necessary patches in order to mitigate and detect Active Directory privilege escalation attacks. Apart from this, it is looking for computer accounts with non-compliant sAMAccountName and is also ensuring the presence of the `HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/Kdc/PacRequestorEnforcement` registry key with value 1.
 
 **Intended Target:** Domain Controllers  
 **Time Saved by Automation:** 30 Minutes.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Active-Directory---Privilege-Escalation-Attack-Mitigation\image_1.png)
+![Sample Run](../../../static/img/Active-Directory---Privilege-Escalation-Attack-Mitigation/image_1.png)
 
 ## Dependencies
 
@@ -47,7 +47,7 @@ With the release of a superseded version of each patch, we may need to keep upda
 
 **Step 2:** It will add the KBID of the compulsory and missing updates to the "Missing Patches" EDF of the concerned computer.
 
-**Step 3:** Then it will check for the status of the `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Kdc\PacRequestorEnforcement` registry key and will add/update the registry key if the value is already not set to 1 or 2.
+**Step 3:** Then it will check for the status of the `HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/Kdc/PacRequestorEnforcement` registry key and will add/update the registry key if the value is already not set to 1 or 2.
 
 **Step 4:** In the end, it will check for the potentially vulnerable Computer Accounts and update those names in the EDFs.
 
@@ -67,6 +67,7 @@ These EDFs are also presented in the dataview [Workaround - Active Directory pri
 
 - Extra Data Fields
 - Dataview
+
 
 
 

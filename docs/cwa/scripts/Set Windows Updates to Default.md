@@ -14,10 +14,11 @@ This script removes any registry entries that may be preventing Windows updates 
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Set-Windows-Updates-to-Default\image_1.png)
+![Sample Run](../../../static/img/Set-Windows-Updates-to-Default/image_1.png)
 
 ## Output
 
 - Script log
+
 
 

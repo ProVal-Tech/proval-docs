@@ -29,9 +29,9 @@ unlisted: false
    '3600' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference = ''SilentlyContinue'';$diskStatuses = @();Get-ClusterSharedVolume | ForEach-Object {$freeSpacePercent = [math]::Round((($_.SharedVolumeInfo.Partition.FreeSpace) / ($_.SharedVolumeInfo.Partition.Size) * 100), 2);if ($freeSpacePercent -lt 10) {$diskStatuses += ''Failed''} elseif ($freeSpacePercent -ge 10 -and $freeSpacePercent -le 20) {$diskStatuses += ''Warning''} else {$diskStatuses += ''Success''}};if ($diskStatuses -contains ''Failed'') {''Failed''} elseif ($diskStatuses -contains ''Warning'') {''Warning''} else {''Success''}"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference = ''SilentlyContinue'';$diskStatuses = @();Get-ClusterSharedVolume | ForEach-Object {$freeSpacePercent = [math]::Round((($_.SharedVolumeInfo.Partition.FreeSpace) / ($_.SharedVolumeInfo.Partition.Size) * 100), 2);if ($freeSpacePercent -lt 10) {$diskStatuses += ''Failed''} elseif ($freeSpacePercent -ge 10 -and $freeSpacePercent -le 20) {$diskStatuses += ''Warning''} else {$diskStatuses += ''Success''}};if ($diskStatuses -contains ''Failed'') {''Failed''} elseif ($diskStatuses -contains ''Warning'') {''Warning''} else {''Success''}"' as `DataOut`,
    '16' as `Comparor`,
-   '10|(^(\\r\\n%7COK%7CSuccess))|5|Warning|5|Failed' as `DataIn`,
+   '10|(^(//r//n%7COK%7CSuccess))|5|Warning|5|Failed' as `DataIn`,
    '' as `IDField`,
    '1' as `AlertStyle`,
    '0' as `ScriptID`,
@@ -86,10 +86,11 @@ unlisted: false
 
 3. Now execute your query from an RAWSQL monitor set.
    - Once the query is executed, reload the system cache
-     - ![Image](..\..\..\static\img\Windows-Cluster-Shared-Volume-Detection\image_1.png)
+     - ![Image](../../../static/img/Windows-Cluster-Shared-Volume-Detection/image_1.png)
 
 4. Re-open the group where the monitor is created (It should be the `Cluster Detected` group)
    - Validate that the monitor is limited to the search 'Windows 10/11 Machines'
    - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`
+
 
 

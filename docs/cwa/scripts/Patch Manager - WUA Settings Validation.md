@@ -12,7 +12,7 @@ unlisted: false
 
 Sometimes settings that the Patch Manager is supposed to set via policy don't actually get set and it causes some issues with patching on some machines. This script will check all of the necessary settings, validate they are correct and if they are not, it will set Windows Update registry keys to their correct values and, if needed, restart the windows update services and set them to auto-start. This script only has steps in it that will run on Windows 10, 11, Server 2016, 2019 and 2022. Any other OS will instantly complete the script without doing anything.
 
-**File Path:** `C:\ProgramData\_Automation\script\Validate-WUASetting\Validate-WUASetting.ps1`  
+**File Path:** `C:/ProgramData/_Automation/script/Validate-WUASetting/Validate-WUASetting.ps1`  
 **File Hash (Sha256):** `6D629DB410C331B41CA11AE68099AC53A366EA1F7A2EA9D1F44907E8F78FCF38`  
 **File Hash (MD5):** `A54248A8166D4815ADD0568A895795F6`
 
@@ -20,11 +20,11 @@ Sometimes settings that the Patch Manager is supposed to set via policy don't ac
 
 It can also serve as a pre-patching script. When using this script in that context, do not mark the `Fail patch job if script fails or times out` checkbox.
 
-![Additional Context Image](..\..\..\static\img\Patch-Manager---WUA-Settings-Validation\image_1.png)
+![Additional Context Image](../../../static/img/Patch-Manager---WUA-Settings-Validation/image_1.png)
 
 ## Sample Run
 
-![Sample Run Image](..\..\..\static\img\Patch-Manager---WUA-Settings-Validation\image_2.png)
+![Sample Run Image](../../../static/img/Patch-Manager---WUA-Settings-Validation/image_2.png)
 
 ## Global Variables
 
@@ -47,6 +47,7 @@ If you modify the Active Hours from their default, keep in mind the **Max** wind
 ## Output
 
 All output for the PowerShell file result is output to the Script Log and to the Script State 'PatchSettingCheck'.
+
 
 
 

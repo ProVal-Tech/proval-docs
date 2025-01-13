@@ -32,7 +32,7 @@ Specifically, for each group that needs an exception within an org, list the gro
 Passes the parameters to VSAAPI for use in the API call
 
 ```
-.\Update-VsaPatchingSchedule.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName dantestapi -RestApiToken 8a8e0cf0-bac1-4faa-ae2e-3cfa04e3938c
+./Update-VsaPatchingSchedule.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName dantestapi -RestApiToken 8a8e0cf0-bac1-4faa-ae2e-3cfa04e3938c
 ```
 
 # Parameters
@@ -44,6 +44,7 @@ Passes the parameters to VSAAPI for use in the API call
 | `RestApiToken`   |       | True     |         | String | Rest Api Token for User    |
 
 # Output
-.\Update-VsaPatchingSchedule-log.txt
+./Update-VsaPatchingSchedule-log.txt
+
 
 

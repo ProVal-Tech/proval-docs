@@ -12,7 +12,7 @@ unlisted: false
 
 The purpose of the script is to create a formatted ticket for an offline/unreachable network device. It will create a ticket for the concerned Network Device, so for the ticket to sync with CW Manage, the Network Device should be synced beforehand.
 
-![Image](..\..\..\static\img\Ticket-Creation---Offline-Network-Devices\image_1.png)
+![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_1.png)
 
 **Note:** Both script and the monitoring can only be used if the network probe of the device's location is online.
 
@@ -22,9 +22,9 @@ This is an autofix script for network devices and will not function for manual e
 
 The `Send Alert when Unit is Down` checkbox on a network device is required for the script to run from an alert template.
 
-![Image](..\..\..\static\img\Ticket-Creation---Offline-Network-Devices\image_2.png)
+![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_2.png)
 
-![Image](..\..\..\static\img\Ticket-Creation---Offline-Network-Devices\image_3.png)
+![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_3.png)
 
 ## Dependencies
 
@@ -76,9 +76,10 @@ Device Type: <Network Device Type>
 **Ticket Category:**  
 To create this ticket to a specific service board in manage then provide the category ID to the property "NetworkDeviceTicketCategory" else it will create the ticket to the default service board.
 
-![Image](..\..\..\static\img\Ticket-Creation---Offline-Network-Devices\image_4.png)
+![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_4.png)
 
 **Example Ticket:**  
-![Image](..\..\..\static\img\Ticket-Creation---Offline-Network-Devices\image_5.png)
+![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
+
 
 

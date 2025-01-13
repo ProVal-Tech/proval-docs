@@ -29,3 +29,4 @@ The custom table stores the data gathered by the [Script - Get MSSQL Database Ve
 | ScriptRunTime | DateTime | Data Collection Time                 |
 
 
+

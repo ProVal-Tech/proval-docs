@@ -14,14 +14,15 @@ This script is a copy of [CWM - Automate - Script - Dataview - Email as CSV [Par
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Dataview---Save-as-CSV-Custom-Location\image_1.png)
+![Sample Run](../../../static/img/Dataview---Save-as-CSV-Custom-Location/image_1.png)
 
 #### Additional User Parameter
 
 | FoName           | Example                               | Required | Description                                                                                   |
 |------------------|---------------------------------------|----------|-----------------------------------------------------------------------------------------------|
-| Folder Location   | C:\ProgramData\_automation\script     | True     | Provide the folder location where you would like to preserve the Dataview File on the machine |
+| Folder Location   | C:/ProgramData/_automation/script     | True     | Provide the folder location where you would like to preserve the Dataview File on the machine |
 
 Rest all parameters are the same as [CWM - Automate - Script - Dataview - Email as CSV [Param]](https://proval.itglue.com/DOC-5078775-8856158)
+
 
 

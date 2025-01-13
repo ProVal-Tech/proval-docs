@@ -29,18 +29,19 @@ Windows Machines - It can be run on all Windows machines.
 
 ## Screenshots/Detail Info
 
-![Screenshot 1](..\..\..\static\img\Add-Auto-Lockout-Policy\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Add-Auto-Lockout-Policy\image_2.png)  
+![Screenshot 1](../../../static/img/Add-Auto-Lockout-Policy/image_1.png)  
+![Screenshot 2](../../../static/img/Add-Auto-Lockout-Policy/image_2.png)  
 
 PowerShell code:
 
 ```
-C:\\Windows\\system32\\cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Command "$path = 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System'; $key = 'InactivityTimeoutSecs'; $value = '600' ; if ( (Get-ItemProperty -Path $Path ).$Key -eq $Value ) { return 'Set'} else { if (-not $bootstrapLoaded) { [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://file.provaltech.com/repo/script/Bootstrap.ps1'); Set-Environment } else { Write-Log -Text 'Bootstrap already loaded.' -Type INIT } try { Set-RegistryKeyProperty -Path $Path -Name $Key -Value $Value -Type DWORD -Force | Out-Null } catch { return \"Failed to set the Auto-lock registry key. Reason: $($error[0].Exception.Message)\" }}"
+C://Windows//system32//cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Command "$path = 'HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Policies//System'; $key = 'InactivityTimeoutSecs'; $value = '600' ; if ( (Get-ItemProperty -Path $Path ).$Key -eq $Value ) { return 'Set'} else { if (-not $bootstrapLoaded) { [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072); Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://file.provaltech.com/repo/script/Bootstrap.ps1'); Set-Environment } else { Write-Log -Text 'Bootstrap already loaded.' -Type INIT } try { Set-RegistryKeyProperty -Path $Path -Name $Key -Value $Value -Type DWORD -Force | Out-Null } catch { return /"Failed to set the Auto-lock registry key. Reason: $($error[0].Exception.Message)/" }}"
 ```
 
 ### Note:
 
 This is expected to NOT work on any EOL systems. The PowerShell will error out.
+
 
 
 

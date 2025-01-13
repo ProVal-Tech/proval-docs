@@ -12,13 +12,13 @@ unlisted: false
 
 This script utilizes the agnostic script [Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592) to test the hashed credentials in AD against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`.  
 
-**File Path:** `C:\ProgramData\_automation\script\Test-WeakCredentials\Test-WeakCredentials.ps1`
+**File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentials.ps1`
 
 **File Hash (SHA256):** `9D8F297FC48A28E71AE6AFAEE1907FD920976DB38C22A89C479332595E57547A`
 
 **File Hash (MD5):** `977CA8E428D75CBE74971F49EB9E13FC`
 
-**File Path:** `C:\ProgramData\_automation\script\Test-WeakCredentials\Test-WeakCredentialsAI.ps1`
+**File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentialsAI.ps1`
 
 **File Hash (SHA256):** `DFC8DDA4C2AF403421A38D7AB2992730BCC84EE49B8F3D7A743162F2F8CD4662`
 
@@ -26,7 +26,7 @@ This script utilizes the agnostic script [Test-WeakCredentials](https://proval.i
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Weak-Passwords---AD-Test\image_1.png)
+![Sample Run](../../../static/img/Weak-Passwords---AD-Test/image_1.png)
 
 ## Dependencies
 
@@ -57,6 +57,7 @@ This script utilizes the agnostic script [Test-WeakCredentials](https://proval.i
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
+
 
 
 

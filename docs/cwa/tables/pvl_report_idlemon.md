@@ -32,3 +32,4 @@ Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Global
 | ScriptRunTime      | datetime      | Data Collection Time                                            |
 
 
+

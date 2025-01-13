@@ -25,7 +25,7 @@ Uses API calls in the VSAAPI module to get the Organization name from the Agent 
 Passes the parameters to VSAAPI for use in the API call
 
 ```
-.\Update-VsaOrgNameCustomField.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiservice -RestApiToken abcd-1234-efgh-5678
+./Update-VsaOrgNameCustomField.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiservice -RestApiToken abcd-1234-efgh-5678
 ```
 
 # Parameters
@@ -41,7 +41,8 @@ Passes the parameters to VSAAPI for use in the API call
 Location of output for log, result, and error files.
 
 ```
-.\Update-VsaOrgNameCustomField-log.txt
+./Update-VsaOrgNameCustomField-log.txt
 ```
+
 
 

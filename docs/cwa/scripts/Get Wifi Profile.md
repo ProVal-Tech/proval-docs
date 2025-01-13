@@ -15,19 +15,19 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 ## Sample Run
 
 - For the first execution of the script, the value of the user parameter `Set_Environment` should be set to `1`. This will create the EDF, System property, and [custom table](https://proval.itglue.com/5078775/docs/12979849) used by the [Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111352) solution:  
-  ![Sample Run Image 1](..\..\..\static\img\Get-Wifi-Profile\image_1.png)  
+  ![Sample Run Image 1](../../../static/img/Get-Wifi-Profile/image_1.png)  
 
 - Regular execution:  
-  ![Sample Run Image 2](..\..\..\static\img\Get-Wifi-Profile\image_2.png)  
+  ![Sample Run Image 2](../../../static/img/Get-Wifi-Profile/image_2.png)  
 
 ## Variables
 
 | Name               | Description                                          |
 |--------------------|------------------------------------------------------|
 | ProjectName        | Get-WifiProfile                                      |
-| WorkingDirectory    | C:\ProgramData\_Automation\Script\Get-WifiProfile   |
-| PS1Log             | C:\ProgramData\_Automation\Script\Get-WifiProfile-Log.txt |
-| PS1ErrorLog        | C:\ProgramData\_Automation\Script\Get-WifiProfile-Error.txt |
+| WorkingDirectory    | C:/ProgramData/_Automation/Script/Get-WifiProfile   |
+| PS1Log             | C:/ProgramData/_Automation/Script/Get-WifiProfile-Log.txt |
+| PS1ErrorLog        | C:/ProgramData/_Automation/Script/Get-WifiProfile-Error.txt |
 | TableName          | [pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849) |
 
 #### User Parameters
@@ -40,5 +40,6 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+
 
 

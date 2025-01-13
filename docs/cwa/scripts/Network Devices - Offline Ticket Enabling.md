@@ -12,11 +12,11 @@ unlisted: false
 
 This client script aims to set the alert template "△ Custom - Ticket Creation - Offline Network Devices" on the network devices in bulk and also checks the `Send Alert when Unit is Down` EDF based on a global system property specifying what network device manufacturer(s) are requested.
 
-![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_1.png)
+![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_1.png)
 
 ## Sample Run
 
-![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_2.png)
+![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_2.png)
 
 ## User Parameter
 
@@ -51,14 +51,14 @@ This client script aims to set the alert template "△ Custom - Ticket Creation 
 | Automate Offline Network Device Ticketing Enabled | NetworkDevice-EDF | Flag  | 0       | Yes      | This EDF was checked via a script after performing the offline ticket enabling and the alert template set to "△ Custom - Ticket Creation - Offline Network Devices". |
 
 Client-Level EDF:  
-![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_3.png)  
+![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_3.png)  
 
 Location-Level EDF:  
-![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_4.png)  
+![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_4.png)  
 
 Device-Level EDFs:  
-![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_5.png)  
-![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_6.png)  
+![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_5.png)  
+![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_6.png)  
 
 ## Implementation
 
@@ -68,7 +68,7 @@ Device-Level EDFs:
    - Script - Network Devices - Offline Ticket Enabling [Param]
 
 2. Reload the system cache  
-   ![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_7.png)  
+   ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_7.png)  
 
 3. Configure the solution as follows:  
    - Navigate to Automation --> Scripts within the CWA Control Center.  
@@ -78,20 +78,21 @@ Device-Level EDFs:
      - Fill in the `NetworkDevice_Manufacturer` system property as per partner requirements.  
      - **Important:** Do not proceed with implementing this script unless the consultant provides the type of network devices the partner wants to sync. Contact the consultant to obtain this information.  
      - By default, it remains empty  
-       ![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_8.png)  
+       ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_8.png)  
      - If Partner wants to set offline ticketing for all devices, put "ALL" in the `NetworkDevice_Manufacturer` system property as shown below:  
-       ![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_9.png)  
+       ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_9.png)  
      - If Partner wants to set offline ticketing for a particular manufacturer type of network device like Meraki, Ubiquiti, etc., fill in the system property as shown below. Separate each type with a pipeline (|)  
-       ![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_10.png)  
+       ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_10.png)  
      - If the partner wants to remove the offline ticketing the device script synced earlier, put "Disable" in the system property as shown below:  
-       ![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_11.png)  
+       ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_11.png)  
    - Navigate to system dashboard --> Management --> Scheduled Client Scripts  
      - Schedule the [Script - Network Devices - Offline Ticket Enabling](https://proval.itglue.com/DOC-5078775-16290414) to run daily.  
-       ![Image](..\..\..\static\img\Network-Devices---Offline-Ticket-Enabling\image_2.png)  
+       ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_2.png)  
    - If the partner wants to exclude any particular device, location, or client from external Sync, select the `Exclude from Offline Network Device Ticketing` EDF respectively on that device, location, or client.  
 
 ## Output
 
 - Script log
+
 
 

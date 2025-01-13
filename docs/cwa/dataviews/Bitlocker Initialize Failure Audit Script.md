@@ -28,3 +28,4 @@ This dataview contains the computer record where the BitLocker initialization fa
 | Number of Failed Attempts  | The BitLocker initialization failed attempts count    |
 
 
+

@@ -16,7 +16,7 @@ This script is designed to create URL for operating systems like Windows MSI, MA
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Agent-Deploy---Generate-Installers-with-Tokens\image_1.png)
+![Sample Run](../../../static/img/Agent-Deploy---Generate-Installers-with-Tokens/image_1.png)
 
 #### User Parameters
 
@@ -33,8 +33,8 @@ This script is designed to create URL for operating systems like Windows MSI, MA
 
 ## Sample Email:
 
-![Sample Email 1](..\..\..\static\img\Agent-Deploy---Generate-Installers-with-Tokens\image_2.png)
-![Sample Email 2](..\..\..\static\img\Agent-Deploy---Generate-Installers-with-Tokens\image_3.png)
+![Sample Email 1](../../../static/img/Agent-Deploy---Generate-Installers-with-Tokens/image_2.png)
+![Sample Email 2](../../../static/img/Agent-Deploy---Generate-Installers-with-Tokens/image_3.png)
 
 ## How to use the installation commands
 
@@ -60,7 +60,7 @@ The email will contain MSI, Linux and MAC installer URLs along with the detail o
 4. To install Agent through ScreenConnect:
    - This option can be used only in the case when the machine is Online in ScreenConnect portal.
    - Search for the machine and navigate to the Commands tab as shown in below screenshot:
-     ![ScreenConnect Commands](..\..\..\static\img\Agent-Deploy---Generate-Installers-with-Tokens\image_4.png)
+     ![ScreenConnect Commands](../../../static/img/Agent-Deploy---Generate-Installers-with-Tokens/image_4.png)
    - Copy the command mentioned under headline "ScreenConnect" (Command mentioned in Box 4) from the email you received.
    - Click on the "Run Command" icon. The deployment process will start. Wait for the command to finish.
    - You will receive a message saying: The Automate Agent Has Been Successfully Installed.
@@ -70,5 +70,6 @@ The email will contain MSI, Linux and MAC installer URLs along with the detail o
    - Copy the command mentioned under headline "Deployment PowerShell (Run-as-Admin)" (Command mentioned in Box 5) from the email you received.
    - Press enter. The deployment process will start. Wait for the command to finish.
    - You will receive a message saying: The Automate Agent Has Been Successfully Installed.
+
 
 

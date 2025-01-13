@@ -37,11 +37,12 @@ This dataview shows all custom internal monitors with detailed implementation st
 
 Color Coding is applied to the columns "Monitor Nature", "Monitor Status", "Script Nature", and "Synced/Updated" as shown below:
 
-![Color Coding](..\..\..\static\img\All-Internal-Monitor-Detailed-Report\image_1.png)
+![Color Coding](../../../static/img/All-Internal-Monitor-Detailed-Report/image_1.png)
 
 - **Monitor Nature**: The "ProVal Monitor" is highlighted in Green to show the ProVal internal monitors among all monitors.
 - **Monitor Status**: The "Disabled" font in bold/Italic is highlighted in Red to catch the eye to show the disabled monitor.
 - **Script Nature**: Here, the "ProVal Script" is highlighted in Green to catch the eye of where the "ProVal" scripts are used as an autofix.
 - **Synced/Updated**: It has "Yes" highlighted in Green, "No" highlighted in Red, and "N/A" highlighted in Grey to catch the eye easily and show whether the monitor is properly synced/updated from the ProVal plugin.
+
 
 

@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Windows---Run-Service-as-Specified-User\image_1.png)
+![Sample Run](../../../static/img/Windows---Run-Service-as-Specified-User/image_1.png)
 
 #### User Parameters
 
@@ -33,6 +33,7 @@ This script will start a specified Service with a specific user account. This wi
 ## Output
 
 - Script log
+
 
 
 

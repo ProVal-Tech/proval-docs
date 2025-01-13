@@ -20,9 +20,9 @@ Moreover, it only applies to PCs that are patch-managed and using Automate's def
 
 Replace the word `<MonitorID>` in the additional condition with the actual monitorid.
 
-![Image 1](..\..\..\static\img\Agent-Not-Patched--45-Days---Patch-History\image_1.png)
+![Image 1](../../../static/img/Agent-Not-Patched--45-Days---Patch-History/image_1.png)
 
-![Image 2](..\..\..\static\img\Agent-Not-Patched--45-Days---Patch-History\image_2.png)
+![Image 2](../../../static/img/Agent-Not-Patched--45-Days---Patch-History/image_2.png)
 
 ## Dependencies
 
@@ -35,12 +35,12 @@ SQL is limiting the results to the patch-managed supported windows machines.
 
 ## Ticketing
 
-**Subject:** `UPDATES - 45+ Days Since Last Patch Installed on %CLIENTNAME%\%COMPUTERNAME%`
+**Subject:** `UPDATES - 45+ Days Since Last Patch Installed on %CLIENTNAME%/%COMPUTERNAME%`
 
 **Failure Body:** 
 
 ```
-We are currently reporting that it has been 45+ Days since the machine %CLIENTNAME%\%COMPUTERNAME% has installed a patch. Sometimes Automate fails to update the patch history table correctly so please verify if patching is actually having an issue or not.
+We are currently reporting that it has been 45+ Days since the machine %CLIENTNAME%/%COMPUTERNAME% has installed a patch. Sometimes Automate fails to update the patch history table correctly so please verify if patching is actually having an issue or not.
 
 The last update(s) seen to have been installed are shown below:
 %FIELDNAME%
@@ -61,5 +61,6 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
 
 

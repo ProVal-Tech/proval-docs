@@ -24,7 +24,8 @@ This custom field must be marked on the company level to run [CW RMM - Task - Sc
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Company---WingetUpdateAll_Task_Create\image_1.png)
-![Screenshot 2](..\..\..\static\img\Company---WingetUpdateAll_Task_Create\image_2.png)
+![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Create/image_1.png)
+![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Create/image_2.png)
+
 
 

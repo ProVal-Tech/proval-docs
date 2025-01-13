@@ -14,9 +14,9 @@ This Task is used to install the fonts from a particular directory or file.
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Install-Font\image_2.png)  
-![Sample Run 2](..\..\..\static\img\Install-Font\image_3.png)  
-![Sample Run 3](..\..\..\static\img\Install-Font\image_4.png)  
+![Sample Run 1](../../../static/img/Install-Font/image_2.png)  
+![Sample Run 2](../../../static/img/Install-Font/image_3.png)  
+![Sample Run 3](../../../static/img/Install-Font/image_4.png)  
 
 ## Dependencies
 
@@ -26,9 +26,9 @@ This Task is used to install the fonts from a particular directory or file.
 
 | Name  | Example                        | Required  | Description                                                              |
 |-------|--------------------------------|-----------|--------------------------------------------------------------------------|
-| Path  | - C:\Fonts\times.ttf          | Mandatory | This will contain the file path or a folder where multiple files are located. <br> - C:\Fonts |
+| Path  | - C:/Fonts/times.ttf          | Mandatory | This will contain the file path or a folder where multiple files are located. <br> - C:/Fonts |
 
-![User Parameters](..\..\..\static\img\Install-Font\image_5.png)
+![User Parameters](../../../static/img/Install-Font/image_5.png)
 
 **Note:**  
 - If parameter is set to NULL, the script will throw an error.
@@ -37,8 +37,8 @@ This Task is used to install the fonts from a particular directory or file.
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](..\..\..\static\img\Install-Font\image_6.png)  
-![Task Creation 2](..\..\..\static\img\Install-Font\image_7.png)  
+![Task Creation 1](../../../static/img/Install-Font/image_6.png)  
+![Task Creation 2](../../../static/img/Install-Font/image_7.png)  
 
 **Name:** Install Font  
 **Description:** This script is used to install the fonts from a particular directory or file.  
@@ -48,42 +48,42 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Install-Font\image_8.png)  
+![Add Parameter](../../../static/img/Install-Font/image_8.png)  
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Install-Font\image_9.png)  
+![Parameter Screen](../../../static/img/Install-Font/image_9.png)  
 
 - Set `Path` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter](..\..\..\static\img\Install-Font\image_10.png)  
+![Save Parameter](../../../static/img/Install-Font/image_10.png)  
 
 Click the `Confirm` button to save the parameter.
 
-![Confirm Parameter](..\..\..\static\img\Install-Font\image_11.png)  
+![Confirm Parameter](../../../static/img/Install-Font/image_11.png)  
 
 ### Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Install-Font\image_12.png)  
+![Add Row](../../../static/img/Install-Font/image_12.png)  
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Install-Font\image_13.png)  
+![Blank Function](../../../static/img/Install-Font/image_13.png)  
 
 #### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell Script](..\..\..\static\img\Install-Font\image_14.png)  
-![PowerShell Script Function](..\..\..\static\img\Install-Font\image_15.png)  
+![Select PowerShell Script](../../../static/img/Install-Font/image_14.png)  
+![PowerShell Script Function](../../../static/img/Install-Font/image_15.png)  
 
 The following function will pop up on the screen:
 
-![PowerShell Function](..\..\..\static\img\Install-Font\image_16.png)  
+![PowerShell Function](../../../static/img/Install-Font/image_16.png)  
 
 ```powershell
 # Parameters and Globals
@@ -91,7 +91,7 @@ The following function will pop up on the screen:
 $Path = '@Path@'
 $Parameters = @{}
 
-if ($Path -notmatch ":\") {
+if ($Path -notmatch ":/") {
     throw "Invalid Path."
 } else {
     $Parameters["Path"] = $Path
@@ -102,11 +102,11 @@ $ProjectName = 'Install-Font'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -143,43 +143,44 @@ if (Test-Path $ErrorLogPath) {
 Get-Content -Path $LogPath
 ```
 
-![Row Function](..\..\..\static\img\Install-Font\image_17.png)  
+![Row Function](../../../static/img/Install-Font/image_17.png)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row](..\..\..\static\img\Install-Font\image_18.png)  
+![Add Row](../../../static/img/Install-Font/image_18.png)  
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Install-Font\image_13.png)  
+![Blank Function](../../../static/img/Install-Font/image_13.png)  
 
 Search and select the `Script Log` function.
 
-![Select Script Log](..\..\..\static\img\Install-Font\image_19.png)  
+![Select Script Log](../../../static/img/Install-Font/image_19.png)  
 
-![Script Log Function](..\..\..\static\img\Install-Font\image_20.png)  
+![Script Log Function](../../../static/img/Install-Font/image_20.png)  
 
 The following function will pop up on the screen:
 
-![Script Log Pop Up](..\..\..\static\img\Install-Font\image_21.png)  
+![Script Log Pop Up](../../../static/img/Install-Font/image_21.png)  
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Save Script Log](..\..\..\static\img\Install-Font\image_22.png)  
+![Save Script Log](../../../static/img/Install-Font/image_22.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](..\..\..\static\img\Install-Font\image_23.png)  
+![Save Script](../../../static/img/Install-Font/image_23.png)  
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Install-Font\image_24.png)  
+![Completed Task](../../../static/img/Install-Font/image_24.png)  
 
 ## Output
 
 - Script log
+
 
 
 

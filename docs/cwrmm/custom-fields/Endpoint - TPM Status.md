@@ -24,7 +24,8 @@ Stores TPM Status of the machine. Updated by [Get TPM Status](https://proval.itg
 
 ## ScreenShot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---TPM-Status\image_1.png)
-![Screenshot 2](..\..\..\static\img\Endpoint---TPM-Status\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---TPM-Status/image_1.png)
+![Screenshot 2](../../../static/img/Endpoint---TPM-Status/image_2.png)
+
 
 

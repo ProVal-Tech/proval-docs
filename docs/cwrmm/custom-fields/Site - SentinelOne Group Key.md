@@ -24,6 +24,7 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 
 ## Screenshot
 
-![Screenshot](..\..\..\static\img\Site---SentinelOne-Group-Key\image_1.png)
+![Screenshot](../../../static/img/Site---SentinelOne-Group-Key/image_1.png)
+
 
 

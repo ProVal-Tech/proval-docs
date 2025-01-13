@@ -16,7 +16,8 @@ This role is detected on any agent where RDP is enabled on it.
 
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
-| {%@powershell "(Get-ItemProperty -Path 'HKLM:\\System\\CurrentControlSet\\Control\\Terminal Server' -name 'fDenyTSConnections').fDenyTSConnections"@%} | Equals     | 0      | Windows        |
+| {%@powershell "(Get-ItemProperty -Path 'HKLM://System//CurrentControlSet//Control//Terminal Server' -name 'fDenyTSConnections').fDenyTSConnections"@%} | Equals     | 0      | Windows        |
+
 
 
 

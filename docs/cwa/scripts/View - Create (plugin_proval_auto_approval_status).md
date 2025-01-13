@@ -14,7 +14,7 @@ Creates the [plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\View---Create-(plugin_proval_auto_approval_status)\image_1.png)
+![Sample Run](../../../static/img/View---Create-(plugin_proval_auto_approval_status)/image_1.png)
 
 ## Process
 
@@ -25,5 +25,6 @@ Step 3: Calls the [CWM - Automate - Script - Update User Permissions for ProVal 
 ## Output
 
 [plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5078775-8988282)
+
 
 

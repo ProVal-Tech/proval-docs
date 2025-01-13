@@ -49,7 +49,7 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
 4. Import the [Dataview - Wi-Fi Profile - Audit [Script]](https://proval.itglue.com/DOC-5078775-12979850) dataview using the Prosync plugin.
 
 5. Reload the system cache:
-   ![Reload System Cache](..\..\static\img\Implement-Wifi-Profile\image_15.png)
+   ![Reload System Cache](../../static/img/Implement-Wifi-Profile/image_15.png)
 
 6. Configure the solution as outlined below:
    - Enable the desired monitors in the Workstation Service Plan groups.
@@ -60,5 +60,6 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
      - [Internal Monitor - Wifi Profiles - Add](https://proval.itglue.com/DOC-5078775-16111358)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+
 
 

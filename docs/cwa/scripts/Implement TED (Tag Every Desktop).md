@@ -17,17 +17,17 @@ Requirement: PowerShell v5.1+
 
 Without Arguments:
 
-![Without Arguments](..\..\..\static\img\Implement-TED-(Tag-Every-Desktop)\image_1.png)  
+![Without Arguments](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_1.png)  
 The result on End Machine:  
-![Result on End Machine 1](..\..\..\static\img\Implement-TED-(Tag-Every-Desktop)\image_2.png)  
-![Result on End Machine 2](..\..\..\static\img\Implement-TED-(Tag-Every-Desktop)\image_3.png)  
+![Result on End Machine 1](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_2.png)  
+![Result on End Machine 2](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_3.png)  
 
 With Arguments:  
-![With Arguments](..\..\..\static\img\Implement-TED-(Tag-Every-Desktop)\image_4.png)  
+![With Arguments](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_4.png)  
 Arguments used: [ ](-di "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -li "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -f Arial -fs 14 -ls 5 -hp 10 -vp 10 -line "Hello, @userName" -line "Computer Name: @machineName" -line "OS: @osName" -line "OS Version: @osVersion")  
 The result on End Machine:  
-![Result on End Machine 3](..\..\..\static\img\Implement-TED-(Tag-Every-Desktop)\image_5.png)  
-![Result on End Machine 4](..\..\..\static\img\Implement-TED-(Tag-Every-Desktop)\image_6.png)  
+![Result on End Machine 3](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_5.png)  
+![Result on End Machine 4](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_6.png)  
 
 **Note:**  
 - The tool will utilize white text for computers using the Dark Theme and black text for computers using the Light Theme.
@@ -40,7 +40,7 @@ The result on End Machine:
 |-----------------------|--------------------------------------|
 | AppName               | TED                                  |
 | ProjectName           | Implement-TED                        |
-| WorkingDirectory      | C:\ProgramData\_Automation\Application\TED |
+| WorkingDirectory      | C:/ProgramData/_Automation/Application/TED |
 | ScheduledTaskName     | Implement TED (Tag Every Desktop)    |
 
 #### User Parameters
@@ -52,6 +52,7 @@ The result on End Machine:
 ## Output
 
 - Script Log
+
 
 
 

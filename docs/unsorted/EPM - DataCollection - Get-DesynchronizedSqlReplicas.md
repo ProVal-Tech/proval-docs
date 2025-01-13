@@ -36,7 +36,7 @@ Returns a list of all Sql replication instances that are not synchronized or syn
 
 ```
     System Object
-    .\Get-DesynchronizedSqlReplicas-log.txt
+    ./Get-DesynchronizedSqlReplicas-log.txt
 ```
 
 ## Locations
@@ -47,6 +47,7 @@ Returns a list of all Sql replication instances that are not synchronized or syn
 | ConnectWise RMM                   |                                                 |
 | Kaseya                            |                                                 |
 | Datto RMM                         |                                                 |
+
 
 
 

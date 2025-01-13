@@ -32,6 +32,7 @@ This solution contains the dataviews that are used for the Detailed auditing of 
    - [Dataview - All Remote Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-18034240)
 
 2. Reload the system cache:  
-   ![Reload Cache](..\..\static\img\Detailed-ScriptInternalRemote-Monitor-Report\image_1.png)
+   ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
+
 
 

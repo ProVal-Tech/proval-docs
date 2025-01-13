@@ -14,7 +14,7 @@ This script is designed to deliver a one-time, customized message to the partner
 
 ## Sample Run
 
-![Sample Image](..\..\..\static\img\Simple-Notification-Application\image_1.png)
+![Sample Image](../../../static/img/Simple-Notification-Application/image_1.png)
 
 The message parameter is mandatory to display the message to the user. All other parameters are optional; however, if no image is specified, then it will just be a blank popup with the message and likely will cause trust issues with users.
 
@@ -42,26 +42,26 @@ Note: The message parameter is mandatory to create a prompt using the applicatio
 Example: Running the application with only the message parameter which is mandatory to be specified:
 
 ```
-C:\Windows\System32> C:\users\user\Desktop\SimpleNotification.exe
+C:/Windows/System32> C:/users/user/Desktop/SimpleNotification.exe
 ```
 
-![Example Image](..\..\..\static\img\Simple-Notification-Application\image_2.png)
+![Example Image](../../../static/img/Simple-Notification-Application/image_2.png)
 
 Example: Running the application with all parameters specified and mixing full names and aliases:
 
 ```
-C:\Windows\System32> C:\users\user\Desktop\SimpleNotification.exe -m "This is a test message." --ImageURL "http://p.favim.com/orig/2018/08/24/cute-beautiful-couple-avatar-Favim.com-6224738.jpg" -e "someone@testing.com" --Phone "000-000-0000"
+C:/Windows/System32> C:/users/user/Desktop/SimpleNotification.exe -m "This is a test message." --ImageURL "http://p.favim.com/orig/2018/08/24/cute-beautiful-couple-avatar-Favim.com-6224738.jpg" -e "someone@testing.com" --Phone "000-000-0000"
 ```
 
-![Example Image](..\..\..\static\img\Simple-Notification-Application\image_3.png)
+![Example Image](../../../static/img/Simple-Notification-Application/image_3.png)
 
 Example: Running the application with only some parameters specified:
 
 ```
-C:\Windows\System32> C:\users\user\Desktop\SimpleNotification.exe -m "This is a test message." --i "https://proval.com/images/uploads/site-assets/facebook-icon.png" -e "support@provaltech.com"
+C:/Windows/System32> C:/users/user/Desktop/SimpleNotification.exe -m "This is a test message." --i "https://proval.com/images/uploads/site-assets/facebook-icon.png" -e "support@provaltech.com"
 ```
 
-![Example Image](..\..\..\static\img\Simple-Notification-Application\image_4.png)
+![Example Image](../../../static/img/Simple-Notification-Application/image_4.png)
 
 | Parameter      | Alias | Required | Type   | Description                               |
 |----------------|-------|----------|--------|-------------------------------------------|
@@ -78,5 +78,6 @@ MD5 : E6B792C00D46F2E867194CC79B13885D
 ## Output
 
 - Script Log
+
 
 

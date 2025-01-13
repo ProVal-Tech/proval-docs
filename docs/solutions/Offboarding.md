@@ -33,13 +33,13 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
    - `△ Custom - Execute Script - Offboarding Wrapper`
 
 4. Reload the System Cache  
-   ![Reload Cache](..\..\static\img\Offboarding\image_4.png)
+   ![Reload Cache](../../static/img/Offboarding/image_4.png)
 
 5. Configure the solution as follows:
-   - Go to Automation → Scripts → View Scripts → 'ProVal\Client Specific' folder
+   - Go to Automation → Scripts → View Scripts → 'ProVal/Client Specific' folder
      - Duplicate [Script - Offboarding Scripts - Partner [Template]](https://proval.itglue.com/DOC-5078775-15281996)
        - Update the duplicated script as per clients requirement as defined in [Template - Offboarding Scripts - Partner](https://proval.itglue.com/DOC-5078775-15281996)
-     - Under 'ProVal\Automate' - Open the [Script - Offboarding Wrapper](https://proval.itglue.com/DOC-5078775-15050093)
+     - Under 'ProVal/Automate' - Open the [Script - Offboarding Wrapper](https://proval.itglue.com/DOC-5078775-15050093)
      - Update the script to use this updated Script instead of the template one.
    - Ask consultant if client would like to set up a 'Failed Uninstall Process'.
      - If yes, select the required process from Dropdown EDF `"Failed Uninstall Process"`. For more details on this EDF visit [CWM - Automate - Script - Offboarding Wrapper](https://proval.itglue.com/DOC-5078775-15050093).
@@ -51,5 +51,6 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
      - Offboard Client
      - Offboard Location
      - Offboard Computer
+
 
 

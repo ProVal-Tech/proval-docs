@@ -49,8 +49,9 @@ Only upgrade everything in library except a list of packages and add a list of p
 
 -install : Required. [yes] or [no] Install the app if it doesn't exist? No = upgrade only  
 -packages : Pipe separated list of packages. If install=no use [<pkg>,<displayname>|<pkg>,<displayname>]  
--exception : Pipe separated list of library packages not to install\\upgrade  
+-exception : Pipe separated list of library packages not to install//upgrade  
 -custom : Pipe separated list of packages to add to library packages. If install=no use [<pkg>,<displayname>]  
+
 
 
 

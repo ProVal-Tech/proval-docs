@@ -14,8 +14,8 @@ The group contains the Domain Controllers.
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Domain-Controllers\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Domain-Controllers\image_2.png)  
+![Screenshot 1](../../../static/img/Domain-Controllers/image_1.png)  
+![Screenshot 2](../../../static/img/Domain-Controllers/image_2.png)  
 
 ## Group
 
@@ -24,6 +24,7 @@ The group contains the Domain Controllers.
 - **Description:** Contains Domain Controllers  
 - Select `Service Display Name` for the criteria, `Equal` for the comparator and type `Active Directory Domain Services` in the condition box.  
 - Click `Save` button at the top left to create the group.  
+
 
 
 

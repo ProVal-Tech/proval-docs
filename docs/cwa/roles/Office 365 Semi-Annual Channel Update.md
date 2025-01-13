@@ -16,6 +16,7 @@ This role will help to verify if Office 365 Update Channel is set to Semi-Annual
 
 | Detection String                                                        | Comparator | Result                                                                                                   | Applicable OS |
 |-------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------|---------------|
-| `{%-HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuraion:CDNBaseUrl-%}` | Contains   | [http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114](http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114) | Windows       |
+| `{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configuraion:CDNBaseUrl-%}` | Contains   | [http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114](http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114) | Windows       |
+
 
 

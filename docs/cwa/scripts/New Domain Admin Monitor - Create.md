@@ -16,7 +16,7 @@ The script generates remote monitors that trigger an alert when a user or group 
 
 The generated remote monitors `ProVal - Production - New Domain Admin` will use the [Get-NewDomainAdmin](https://proval.itglue.com/DOC-5078775-13410720) agnostic script to perform the monitoring. The monitor set will be created for one domain controller per domain to avoid any duplicate alerts/tickets from multiple domain controllers for the same user.
 
-**File Path:** `C:\ProgramData\_Automation\Script\Get-NewDomainAdmin\Get-NewDomainadmin.ps1`  
+**File Path:** `C:/ProgramData/_Automation/Script/Get-NewDomainAdmin/Get-NewDomainadmin.ps1`  
 **File Hash:** `934A0A3CD8A38BE3EA8B39C8440D8DBB7FB0833B914E197BDE6A4C9C8C27711D`  
 
 **Note of Caution:** The remote monitors created by this script use PowerShell for monitoring. Therefore, their functionality is not guaranteed on computers running a version of PowerShell older than 5. Please ensure that your systems are updated to at least PowerShell version 5 for optimal performance.
@@ -25,7 +25,7 @@ The generated remote monitors `ProVal - Production - New Domain Admin` will use 
 
 The solution's Extra Data Fields have been renamed. Update the script from the `Prosync` plugin and run/debug against any client with `Set_Environment` as `1` to implement the changes.
 
-![Update Notice](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_1.png)
+![Update Notice](../../../static/img/New-Domain-Admin-Monitor---Create/image_1.png)
 
 ## Implementation
 
@@ -37,13 +37,13 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
        ```
 
    - Open the `Server Status` tool by navigating to `Help` > `Server Status`.
-   ![Server Status](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_2.png)
+   ![Server Status](../../../static/img/New-Domain-Admin-Monitor---Create/image_2.png)
 
    - Click the `Do Group Refresh` button to refresh and apply the changes made.
-   ![Do Group Refresh](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_3.png)
+   ![Do Group Refresh](../../../static/img/New-Domain-Admin-Monitor---Create/image_3.png)
 
    - Click `OK` to the popup message and wait for a minute to allow the changes to take effect.
-   ![OK Popup](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_4.png)
+   ![OK Popup](../../../static/img/New-Domain-Admin-Monitor---Create/image_4.png)
 
 2. Import the `△ Custom - Ticket Creation - Computer - Failures Only` alert template from the `ProSync` plugin if it's missing in the environment.
 
@@ -51,22 +51,22 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 4. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-   ![Run Debug Script](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_5.png)
-   ![Run Debug Script](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_1.png)
+   ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_5.png)
+   ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_1.png)
 
 5. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.
-   ![Reload System Cache](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_6.png)
+   ![Reload System Cache](../../../static/img/New-Domain-Admin-Monitor---Create/image_6.png)
 
 6. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard -> Config -> Configurations -> Properties**.
    - Find the properties beginning with `NDA_Monitoring`.
-   ![System Properties](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_7.png)
+   ![System Properties](../../../static/img/New-Domain-Admin-Monitor---Create/image_7.png)
      - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 7. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.
-   ![Schedule Script](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_8.png)
+   ![Schedule Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_8.png)
 
 ## Dependencies
 
@@ -114,16 +114,17 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 `<Newly Created Domain Admin(s)>`
 
 **Sample Ticket:**  
-![Sample Ticket](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_9.png)  
+![Sample Ticket](../../../static/img/New-Domain-Admin-Monitor---Create/image_9.png)  
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
 
 **Sample Remote Monitor:**  
-![Sample Remote Monitor](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_10.png)  
-![Sample Remote Monitor](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_11.png)  
-![Sample Remote Monitor](..\..\..\static\img\New-Domain-Admin-Monitor---Create\image_12.png)  
+![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_10.png)  
+![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_11.png)  
+![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_12.png)  
 
 ## Output
 
 - Remote Monitors
+
 
 

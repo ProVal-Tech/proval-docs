@@ -28,7 +28,7 @@ INSERT INTO `sensorchecks`
 SELECT
 '' as `SensID`,
 'Windows Machines Excluding Virtual' as `Name`,
-'SELECT \\r\\n   computers.computerid as `Computer Id`,\\r\\n   computers.name as `Computer Name`,\\r\\n   clients.name as `Client Name`,\\r\\n   computers.domain as `Computer Domain`,\\r\\n   computers.username as `Computer User`,\\r\\n   IF((Computers.flags & 2048) &lt;&gt; 0, 1, 0) as `Computer.Hardware.IsVirtual`,\\r\\n   IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \\'windows\\')&gt;0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \\'darwin\\') &gt;0, 2, 3)) as `Computer.OS.Type`\\r\\nFROM Computers \\r\\nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)\\r\\nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)\\r\\nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)\\r\\n WHERE \\r\\n((((IF((Computers.flags & 2048) &lt;&gt; 0, 1, 0)=0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \\'windows\\')&gt;0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \\'darwin\\') &gt;0, 2, 3)) = \\'1\\'))))\\r\\n' as `SQL`,
+'SELECT //r//n   computers.computerid as `Computer Id`,//r//n   computers.name as `Computer Name`,//r//n   clients.name as `Client Name`,//r//n   computers.domain as `Computer Domain`,//r//n   computers.username as `Computer User`,//r//n   IF((Computers.flags & 2048) &lt;&gt; 0, 1, 0) as `Computer.Hardware.IsVirtual`,//r//n   IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'windows//')&gt;0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'darwin//') &gt;0, 2, 3)) as `Computer.OS.Type`//r//nFROM Computers //r//nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)//r//nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)//r//nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)//r//n WHERE //r//n((((IF((Computers.flags & 2048) &lt;&gt; 0, 1, 0)=0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'windows//')&gt;0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'darwin//') &gt;0, 2, 3)) = //'1//'))))//r//n' as `SQL`,
 '4' as `QueryType`,
 'Select||=||=||=|^Select|||||||^' as `ListData`,
 '3' as `FolderID`,
@@ -59,14 +59,14 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Mega Raid Errors' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Mega Raid Error Detected on %CLIENTNAME%\\\\%COMPUTERNAME%~~~No mega raid errors have been detected in the last 60 minutes.!!!Mega Raid Error Detected on %CLIENTNAME%\\\\%COMPUTERNAME%~~~Mega Raid Error Detected on %CLIENTNAME%\\\\%COMPUTERNAME%.' as `AlertMessage`,
+'Mega Raid Error Detected on %CLIENTNAME%////%COMPUTERNAME%~~~No mega raid errors have been detected in the last 60 minutes.!!!Mega Raid Error Detected on %CLIENTNAME%////%COMPUTERNAME%~~~Mega Raid Error Detected on %CLIENTNAME%////%COMPUTERNAME%.' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \\'SilentlyContinue\\'; $startTime = (Get-Date).AddMinutes(-60); Get-WinEvent -FilterHashtable @{LogName = \\'Application\\'; StartTime = $starttime; Level = 1,2; ProviderName = \\'MR_MONITOR\\'} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
+'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= //'SilentlyContinue//'; $startTime = (Get-Date).AddMinutes(-60); Get-WinEvent -FilterHashtable @{LogName = //'Application//'; StartTime = $starttime; Level = 1,2; ProviderName = //'MR_MONITOR//'} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(^$))%7C(^((\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})Occurrences)|10|^((\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})Occurrences' as `DataIn`,
+'10|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))|11|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))%7C(^((////r////n){0,}[////r////n]{0,}////s{0,})Occurrences)|10|^((////r////n){0,}[////r////n]{0,}////s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -132,14 +132,14 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Mega Raid Errors' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Mega Raid Error Detected on %CLIENTNAME%\\\\%COMPUTERNAME%~~~No mega raid errors have been detected in the last 60 minutes.!!!Mega Raid Error Detected on %CLIENTNAME%\\\\%COMPUTERNAME%~~~Mega Raid Error Detected on %CLIENTNAME%\\\\%COMPUTERNAME%.' as `AlertMessage`,
+'Mega Raid Error Detected on %CLIENTNAME%////%COMPUTERNAME%~~~No mega raid errors have been detected in the last 60 minutes.!!!Mega Raid Error Detected on %CLIENTNAME%////%COMPUTERNAME%~~~Mega Raid Error Detected on %CLIENTNAME%////%COMPUTERNAME%.' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \\'SilentlyContinue\\'; $startTime = (Get-Date).AddMinutes(-60); Get-WinEvent -FilterHashtable @{LogName = \\'Application\\'; StartTime = $starttime; Level = 1,2; ProviderName = \\'MR_MONITOR\\'} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
+'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= //'SilentlyContinue//'; $startTime = (Get-Date).AddMinutes(-60); Get-WinEvent -FilterHashtable @{LogName = //'Application//'; StartTime = $starttime; Level = 1,2; ProviderName = //'MR_MONITOR//'} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})$)%7C(^$))%7C(^((\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})Occurrences)|10|^((\\\\r\\\\n){0,}[\\\\r\\\\n]{0,}\\\\s{0,})Occurrences' as `DataIn`,
+'10|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))|11|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))%7C(^((////r////n){0,}[////r////n]{0,}////s{0,})Occurrences)|10|^((////r////n){0,}[////r////n]{0,}////s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -199,11 +199,12 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 **Limit to:** `Windows Machines Excluding Virtual`
 
-![Image](..\..\..\static\img\Implement---Remote-Monitor---Mega-RAID-Errors\image_1.png)
+![Image](../../../static/img/Implement---Remote-Monitor---Mega-RAID-Errors/image_1.png)
 
 ---
 
 ### 8.
 Set the appropriate alert template.
+
 
 

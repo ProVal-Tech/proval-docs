@@ -21,7 +21,7 @@ polls for physical, non-removable drives with capacity > 10GB and places the ava
 | 3:15:59 pm 1-Sep-22    | Execute Powershell Command  | Success THEN                                                                                       | provaltech.com/dan.hicks  |
 | 3:15:59 pm 1-Sep-22    | Execute Powershell Command-0012 | Results returned to global variable #global:psresult# and saved in Documents tab of server.      | provaltech.com/dan.hicks  |
 | 3:15:59 pm 1-Sep-22    | Execute Powershell Command-0011 | Powershell command completed!                                                                       | provaltech.com/dan.hicks  |
-| 3:15:51 pm 1-Sep-22    | Execute Powershell Command-0011 | Executing powershell "" -Command "((Get-Partition | Where-Object {($_.DriveLetter -and $_.Size -gt 10000000000) -and ($_.diskpath -notmatch 'usb')} | Select-Object -expandProperty DriveLetter) -join ': ')+':'" >"c:\provaltech\psoutput.txt" | provaltech.com/dan.hicks  |
+| 3:15:51 pm 1-Sep-22    | Execute Powershell Command-0011 | Executing powershell "" -Command "((Get-Partition | Where-Object {($_.DriveLetter -and $_.Size -gt 10000000000) -and ($_.diskpath -notmatch 'usb')} | Select-Object -expandProperty DriveLetter) -join ': ')+':'" >"c:/provaltech/psoutput.txt" | provaltech.com/dan.hicks  |
 | 3:15:51 pm 1-Sep-22    | Execute Powershell Command-0010 | Sending output to global variable.                                                                  | provaltech.com/dan.hicks  |
 | 3:15:51 pm 1-Sep-22    | Execute Powershell Command-0008 | New command variable is: -Command "((Get-Partition | Where-Object {($_.DriveLetter -and $_.Size -gt 10000000000) -and ($_.diskpath -notmatch 'usb')} | Select-Object -expandProperty DriveLetter) -join ': ')+':'" | provaltech.com/dan.hicks  |
 | 3:15:51 pm 1-Sep-22    | Execute Powershell Command-0008 | Custom commands detected as ((Get-Partition | Where-Object {($_.DriveLetter -and $_.Size -gt 10000000000) -and ($_.diskpath -notmatch 'usb')} | Select-Object -expandProperty DriveLetter) -join ': ')+':' | provaltech.com/dan.hicks  |
@@ -36,6 +36,7 @@ Queries the endpoint for Physical, non-removable drives over 10GB
 
 Agent Procedure Log  
 [EPM - Disk - Custom Field - xPVAL Drive List](https://proval.itglue.com/DOC-5078775-10793262)
+
 
 
 

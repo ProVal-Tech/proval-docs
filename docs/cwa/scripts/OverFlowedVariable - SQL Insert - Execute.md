@@ -12,7 +12,7 @@ unlisted: false
 
 On occasion a returned SQL insert string may exceed the 65500 character limit. The intention of this script is to take in a collection of data (From a json file stored in the working directory), determine the most efficient amount of rows to select for the insert statement and populate that result, execute the insert statement, then continue that process until all items in that file are inserted into the table.
 
-**File Path** : `C:\ProgramData\_Automation\script\Get-PowerPlan\Manage-OverFlowedVariable.ps1`  
+**File Path** : `C:/ProgramData/_Automation/script/Get-PowerPlan/Manage-OverFlowedVariable.ps1`  
 **File Hash (Sha256)** : `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
 **File Hash (MD5)** : `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
@@ -37,26 +37,26 @@ This is a function script and should not be run manually.
 
 1. In any script where you expect that a variable overflow is likely.
    1. Add a variable named `JsonFileName`, Set it to the name of the Temporary .Json file you wish to create.
-      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_1.png)
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_1.png)
    2. Add a variable named `SQLStartStatement`, Set it to the SQL Insert Statement from "Insert Into" to "Values".
-      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_2.png)
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_2.png)
       Note the space between "Values" and the trailing quotation.
    3. Add a variable named `SQLTailString`, set it to the SQL Insert Statement from "On Duplicate" to the end of the string.
-      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_3.png)
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_3.png)
       Note the space between the leading quotation and "ON".
    4. Add a variable named `DataPointNames` and set it to a comma separated list of the Individual saved object Names.
-      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_4.png)
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_4.png)
       You will use these here, the notice the similar naming in the class.
-      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_5.png)
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_5.png)
    5. Modify the PowerShell script and store results in : `@psout@`
       1. Create a class
-         ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_5.png)
+         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_5.png)
       2. Populate your class with items.
-         ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_6.png)
+         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_6.png)
       3. Export your data to Json
-         ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_7.png)
+         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_7.png)
    6. Call the Parse - OverflowedVariable script after the PowerShell run.
-      ![Image](..\..\..\static\img\OverFlowedVariable---SQL-Insert---Execute\image_8.png)
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_8.png)
 
 ## Powershell Procedure
 
@@ -79,6 +79,7 @@ This is a function script and should not be run manually.
    - `Totalrowstolimit`
    - `Sqlinsert`
 10. Return that object.
+
 
 
 

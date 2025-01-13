@@ -22,9 +22,9 @@ This agent procedure is used to enable 'SNMP' Windows Optional feature in endpoi
 | 12:07:27 pm 3-Oct-22 | SNMP & Community Configuration-0001       | Installed                                      | provaltech.com/surender.kumar    |
 | 12:07:27 pm 3-Oct-22 | Execute Powershell Command                 | Success THEN                                   | provaltech.com/surender.kumar    |
 | 12:07:27 pm 3-Oct-22 | Execute Powershell Command-0012           | Results returned to global variable #global:psresult# and saved in Documents tab of server. | provaltech.com/surender.kumar    |
-| 12:07:27 pm 3-Oct-22 | Execute Powershell Command-0012           | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\746610212782388\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/surender.kumar    |
+| 12:07:27 pm 3-Oct-22 | Execute Powershell Command-0012           | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/746610212782388/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/surender.kumar    |
 | 12:07:26 pm 3-Oct-22 | Execute Powershell Command-0011           | Powershell command completed!                  | provaltech.com/surender.kumar    |
-| 12:07:21 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "(Get-WindowsCapability -name SNMP* -online).State" >"c:\provaltech\psoutput.txt" | provaltech.com/surender.kumar    |
+| 12:07:21 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "(Get-WindowsCapability -name SNMP* -online).State" >"c:/provaltech/psoutput.txt" | provaltech.com/surender.kumar    |
 | 12:07:21 pm 3-Oct-22 | Execute Powershell Command-0010           | Sending output to global variable.             | provaltech.com/surender.kumar    |
 | 12:07:21 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "(Get-WindowsCapability -name SNMP* -online).State" | provaltech.com/surender.kumar    |
 | 12:07:21 pm 3-Oct-22 | Execute Powershell Command-0008           | Custom commands detected as (Get-WindowsCapability -name SNMP* -online).State | provaltech.com/surender.kumar    |
@@ -46,9 +46,9 @@ This agent procedure is used to enable 'SNMP' Windows Optional feature in endpoi
 | 12:04:06 pm 3-Oct-22 | SNMP & Community Configuration             | NotPresent                                     | provaltech.com/surender.kumar    |
 | 12:04:06 pm 3-Oct-22 | Execute Powershell Command                 | Success THEN                                   | provaltech.com/surender.kumar    |
 | 12:04:06 pm 3-Oct-22 | Execute Powershell Command-0012           | Results returned to global variable #global:psresult# and saved in Documents tab of server. | provaltech.com/surender.kumar    |
-| 12:04:06 pm 3-Oct-22 | Execute Powershell Command-0012           | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\746610212782388\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 2. | provaltech.com/surender.kumar    |
+| 12:04:06 pm 3-Oct-22 | Execute Powershell Command-0012           | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/746610212782388/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 2. | provaltech.com/surender.kumar    |
 | 12:04:05 pm 3-Oct-22 | Execute Powershell Command-0011           | Powershell command completed!                  | provaltech.com/surender.kumar    |
-| 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "(Get-WindowsCapability -name SNMP* -online).State" >"c:\provaltech\psoutput.txt" | provaltech.com/surender.kumar    |
+| 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "(Get-WindowsCapability -name SNMP* -online).State" >"c:/provaltech/psoutput.txt" | provaltech.com/surender.kumar    |
 | 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0010           | Sending output to global variable.             | provaltech.com/surender.kumar    |
 | 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "(Get-WindowsCapability -name SNMP* -online).State" | provaltech.com/surender.kumar    |
 | 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0008           | Custom commands detected as (Get-WindowsCapability -name SNMP* -online).State | provaltech.com/surender.kumar    |
@@ -66,5 +66,6 @@ The agent procedure checks whether the machine has the SNMP feature enabled or n
 ## Output
 
 Procedure Logs
+
 
 

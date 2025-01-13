@@ -14,9 +14,9 @@ Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_1.png)  
-![Sample Run 2](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_2.png)  
-![Sample Run 3](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_3.png)  
+![Sample Run 1](../../../static/img/Update-Adobe-Creative-Cloud/image_1.png)  
+![Sample Run 2](../../../static/img/Update-Adobe-Creative-Cloud/image_2.png)  
+![Sample Run 3](../../../static/img/Update-Adobe-Creative-Cloud/image_3.png)  
 
 ## Dependencies
 
@@ -28,49 +28,49 @@ Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the
 |-------|---------|----------|-------|------------------------------------------|
 | List  | 0/1     | False    | Flag  | Lists the available updates for Adobe CC. |
 
-![User Parameters](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_4.png)  
+![User Parameters](../../../static/img/Update-Adobe-Creative-Cloud/image_4.png)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation Step 1](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_5.png)  
-![Task Creation Step 2](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_6.png)  
+![Task Creation Step 1](../../../static/img/Update-Adobe-Creative-Cloud/image_5.png)  
+![Task Creation Step 2](../../../static/img/Update-Adobe-Creative-Cloud/image_6.png)  
 
 **Name:** `Update Adobe Creative Cloud`  
 **Description:** `Lists or updates products for Adobe Creative Cloud.`  
 **Category:** `Application`  
-![Task Creation Step 3](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_7.png)  
+![Task Creation Step 3](../../../static/img/Update-Adobe-Creative-Cloud/image_7.png)  
 
 ## Parameters
 
 ### List:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_8.png)  
+![Add Parameter](../../../static/img/Update-Adobe-Creative-Cloud/image_8.png)  
 
 This screen will appear.  
-![Parameter Screen](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_9.png)  
+![Parameter Screen](../../../static/img/Update-Adobe-Creative-Cloud/image_9.png)  
 
 - Set `List` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 
-![Parameter Example](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_10.png)  
+![Parameter Example](../../../static/img/Update-Adobe-Creative-Cloud/image_10.png)  
 
 ## Task Creation
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_11.png)  
+![Add Row](../../../static/img/Update-Adobe-Creative-Cloud/image_11.png)  
 
 A blank function will appear.  
-![Blank Function](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_12.png)  
+![Blank Function](../../../static/img/Update-Adobe-Creative-Cloud/image_12.png)  
 
 ### Row 1 Function: PowerShell Script
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Step 1](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_13.png)  
-![PowerShell Script Step 2](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_14.png)  
+![PowerShell Script Step 1](../../../static/img/Update-Adobe-Creative-Cloud/image_13.png)  
+![PowerShell Script Step 2](../../../static/img/Update-Adobe-Creative-Cloud/image_14.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Script Popup](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_15.png)  
+![PowerShell Script Popup](../../../static/img/Update-Adobe-Creative-Cloud/image_15.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
@@ -91,11 +91,11 @@ $ProjectName = 'Update-AdobeCC'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -129,34 +129,35 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Execution](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_16.png)  
+![PowerShell Script Execution](../../../static/img/Update-Adobe-Creative-Cloud/image_16.png)  
 
 ### Row 2 Function: Script Log
 Add a new row by clicking the `Add Row` button.  
-![Add Row for Script Log](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_17.png)  
+![Add Row for Script Log](../../../static/img/Update-Adobe-Creative-Cloud/image_17.png)  
 
 A blank function will appear.  
-![Blank Function for Script Log](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_18.png)  
+![Blank Function for Script Log](../../../static/img/Update-Adobe-Creative-Cloud/image_18.png)  
 
 Search and select the `Script Log` function.  
-![Select Script Log](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_19.png)  
+![Select Script Log](../../../static/img/Update-Adobe-Creative-Cloud/image_19.png)  
 
 The following function will pop up on the screen:  
-![Script Log Popup](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_20.png)  
+![Script Log Popup](../../../static/img/Update-Adobe-Creative-Cloud/image_20.png)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Script Log Save](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_21.png)  
+![Script Log Save](../../../static/img/Update-Adobe-Creative-Cloud/image_21.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_22.png)  
+![Save Script](../../../static/img/Update-Adobe-Creative-Cloud/image_22.png)  
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Update-Adobe-Creative-Cloud\image_23.png)  
+![Completed Task](../../../static/img/Update-Adobe-Creative-Cloud/image_23.png)  
 
 ## Output
 
 - Script log  
+
 
 
 

@@ -12,7 +12,7 @@ unlisted: false
 
 The dataview presents a detailed analysis of script failures over the past 'X' days, based on the script history logs. It counts the number of failures at each step and highlights the steps where scripts are most frequently failing across all machines. The retention period for the logs, represented by 'X', is user-defined.
 
-![Image](..\..\..\static\img\Script-Failure-Assessment\image_1.png)
+![Image](../../../static/img/Script-Failure-Assessment/image_1.png)
 
 ## Columns
 
@@ -36,6 +36,7 @@ The dataview presents a detailed analysis of script failures over the past 'X' d
 | Kill Command Issued %     | Percentage of failures because the Kill Command was issued                                       |
 | First Failure Date        | First Failure Date                                                                                |
 | Last Failure Date         | Last Failure Date                                                                                 |
+
 
 
 

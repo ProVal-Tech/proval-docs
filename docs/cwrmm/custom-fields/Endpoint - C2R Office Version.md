@@ -20,8 +20,9 @@ C2R office version installed on the machine gathered by the [Microsoft 365 - Cli
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---C2R-Office-Version\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---C2R-Office-Version\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---C2R-Office-Version/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---C2R-Office-Version/image_2.png)
+
 
 
 

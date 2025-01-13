@@ -23,22 +23,23 @@ The data returned by the monitor set is displayed by the [Volume Exhaustion Esti
 
 #### Status
 
-![Status](..\..\..\static\img\EPM---Disk---Remote-Monitor---Volume-Space-Sampling\image_1.png)
+![Status](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_1.png)
 
 #### Location
 
-![Location](..\..\..\static\img\EPM---Disk---Remote-Monitor---Volume-Space-Sampling\image_2.png)
+![Location](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_2.png)
 
 #### Alerting
 
-![Alerting](..\..\..\static\img\EPM---Disk---Remote-Monitor---Volume-Space-Sampling\image_3.png)
+![Alerting](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_3.png)
 
 #### Configuration
 
-![Configuration](..\..\..\static\img\EPM---Disk---Remote-Monitor---Volume-Space-Sampling\image_4.png)
+![Configuration](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_4.png)
 
-**Executable/Arguments:** `C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$WarningPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-VolumeExhaustionEstimate'; $WorkingDirectory = \"C:\\ProgramData\\_Automation\\Script\\$ProjectName\\\"; $scriptpath = \"$($WorkingDirectory)\\$($ProjectName).ps1\"; $scripturl = '<a href=\"https://file.provaltech.com/repo/script/Get-VolumeExhaustionEstimate.ps1';\">https://file.provaltech.com/repo/script/Get-VolumeExhaustionEstimate.ps1';</a> if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); $op = & $scriptpath -MinimumSamples 30 -Path $WorkingDirectory -DaysToReport 14 -DaysToLead 7 -Quiet -Force; $exDate = ($op | Where-Object { $_.DriveLetter -eq 'C' }).ExhaustionEstimationDate; if ($exDate) { ($exdate).ToString( 'yyyy-MM-dd HH:mm:ss' ) } "` 
+**Executable/Arguments:** `C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$WarningPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-VolumeExhaustionEstimate'; $WorkingDirectory = /"C://ProgramData//_Automation//Script//$ProjectName///"; $scriptpath = /"$($WorkingDirectory)//$($ProjectName).ps1/"; $scripturl = '<a href=/"https://file.provaltech.com/repo/script/Get-VolumeExhaustionEstimate.ps1';/">https://file.provaltech.com/repo/script/Get-VolumeExhaustionEstimate.ps1';</a> if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); $op = & $scriptpath -MinimumSamples 30 -Path $WorkingDirectory -DaysToReport 14 -DaysToLead 7 -Quiet -Force; $exDate = ($op | Where-Object { $_.DriveLetter -eq 'C' }).ExhaustionEstimationDate; if ($exDate) { ($exdate).ToString( 'yyyy-MM-dd HH:mm:ss' ) } "` 
 
 The parameter values highlighted in the provided example are regulated by the system properties and the Extra Data Fields (EDFs).
+
 
 

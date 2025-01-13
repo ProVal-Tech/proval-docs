@@ -68,7 +68,7 @@ This script is an autofix to a monitor and should not be manually run.
       2. Set the script state to Offline for computer ###
       3. Exit script
    3. Log agent is online
-   4. Sets the registry key `DisableRootAutoUpdate` = 0 at the path `HKLM:\\SOFTWARE\\Policies\\Microsoft\\SystemCertificates\\AuthRoot`.
+   4. Sets the registry key `DisableRootAutoUpdate` = 0 at the path `HKLM://SOFTWARE//Policies//Microsoft//SystemCertificates//AuthRoot`.
    5. Push agent service restart command to ConnectWise control via rmm+
    6. While contact attempt is less than three
       1. Sleep 5 minutes
@@ -119,6 +119,7 @@ This script is an autofix to a monitor and should not be manually run.
 ## Change Log
 
 01-2023: Added functionality to handle registry key entry preventing repair.
+
 
 
 

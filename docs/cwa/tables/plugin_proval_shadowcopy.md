@@ -32,3 +32,4 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy E
 | LatestShadowCopy  | VARCHAR | It contains the most recent available Shadow Copy date                                           |
 
 
+

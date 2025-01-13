@@ -16,9 +16,9 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Adobe-Creative-Cloud---Update\image_1.png)
+![Sample Run 1](../../../static/img/Adobe-Creative-Cloud---Update/image_1.png)
 
-![Sample Run 2](..\..\..\static\img\Adobe-Creative-Cloud---Update\image_2.png)
+![Sample Run 2](../../../static/img/Adobe-Creative-Cloud---Update/image_2.png)
 
 ## Dependencies
 
@@ -42,5 +42,6 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 - Script log
 - Local log files
+
 
 

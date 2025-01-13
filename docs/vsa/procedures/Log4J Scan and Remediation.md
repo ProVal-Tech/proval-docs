@@ -16,7 +16,8 @@ Email must be specified on script line 7.
 
 Email will be sent in the case that vulnerabilities or attack traces are found. No notification if no threat exists.
 
-![Image](..\..\..\static\img\Log4J-Scan-and-Remediation\image_1.png)
+![Image](../../../static/img/Log4J-Scan-and-Remediation/image_1.png)
+
 
 
 

@@ -3,7 +3,7 @@ id: 'cwa-machine-back-online-notification'
 title: 'ConnectWise Automate Machine Back Online Notification'
 title_meta: 'ConnectWise Automate Machine Back Online Notification'
 keywords: ['connectwise', 'notification', 'email', 'machine', 'check-in']
-description: 'This document provides a comprehensive solution for notifying contacts about a machine\'s online check-in status in ConnectWise Automate. It includes associated content, implementation steps, and FAQs to ensure effective setup and usage.'
+description: 'This document provides a comprehensive solution for notifying contacts about a machine/'s online check-in status in ConnectWise Automate. It includes associated content, implementation steps, and FAQs to ensure effective setup and usage.'
 tags: ['alert', 'email', 'monitor', 'setup', 'template', 'automate']
 draft: false
 unlisted: false
@@ -56,9 +56,9 @@ WHERE (SELECT COUNT(*) FROM alerttemplates WHERE GUID = '7245e028-bbee-4fff-9df6
 Set the Email addresses at the computer-level EDF `Online Alert E-mail` placed under the `Default` EDF section for the concerned computers. To set multiple email addresses, each address must be separated by a semi-colon (;).  
 e.g.,  
 Multiple E-mail Addresses:  
-![Multiple E-mail Addresses](..\..\static\img\Email---Machine-Back-Online\image_1.png)  
+![Multiple E-mail Addresses](../../static/img/Email---Machine-Back-Online/image_1.png)  
 Single E-mail Address:  
-![Single E-mail Address](..\..\static\img\Email---Machine-Back-Online\image_2.png)  
+![Single E-mail Address](../../static/img/Email---Machine-Back-Online/image_2.png)  
 
 ## FAQ
 
@@ -67,10 +67,11 @@ Q: How to stop receiving the E-Mails after getting the work done?
 
 A: Remove the E-Mail address(es) from the EDF. 
 ```
-![FAQ Image](..\..\static\img\Email---Machine-Back-Online\image_3.png)
+![FAQ Image](../../static/img/Email---Machine-Back-Online/image_3.png)
 
 ## Sample E-Mail
 
-![Sample E-Mail](..\..\static\img\Email---Machine-Back-Online\image_4.png)
+![Sample E-Mail](../../static/img/Email---Machine-Back-Online/image_4.png)
+
 
 

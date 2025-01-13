@@ -30,15 +30,16 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
    - `△ Custom - Execute Script - Get-AutopilotHash`
 
 2. Reload the system cache:
-   ![Image](..\..\static\img\Get-Autopilot-Hash\image_1.png)
+   ![Image](../../static/img/Get-Autopilot-Hash/image_1.png)
 
 3. Run the [Script - Get-AutopilotHash](https://proval.itglue.com/DOC-5078775-17245317) against any machine with the Set_Environment parameter set to '1':
-   ![Image](..\..\static\img\Get-Autopilot-Hash\image_2.png)
+   ![Image](../../static/img/Get-Autopilot-Hash/image_2.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
      - [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](https://proval.itglue.com/DOC-5078775-17245349)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
+
 
 

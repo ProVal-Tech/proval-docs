@@ -23,7 +23,7 @@ Disables fast boot in the registry
 ## Process
 
 Performs the following command:  
-`REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f`
+`REG ADD "HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Session Manager/Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f`
 
 ## Output
 
@@ -32,5 +32,6 @@ Performs the following command:
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
 
 

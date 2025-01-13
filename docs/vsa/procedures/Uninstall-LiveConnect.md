@@ -38,9 +38,9 @@ No Parameters
 
 Does the content write to the RMM log, a data file, or the console? If so, what is the syntax?
 ```
-.\Uninstall-LiveConnect-log.txt
-.\Uninstall-LiveConnect-data.txt
-.\Uninstall-LiveConnect-error.txt
+./Uninstall-LiveConnect-log.txt
+./Uninstall-LiveConnect-data.txt
+./Uninstall-LiveConnect-error.txt
 ```
 
 ## Locations
@@ -51,5 +51,6 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM               |                                          |
 | Kaseya VSA                    |                                          |
 | Datto RMM                     |                                          |
+
 
 

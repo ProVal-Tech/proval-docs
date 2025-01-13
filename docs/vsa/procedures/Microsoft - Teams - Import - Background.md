@@ -17,20 +17,20 @@ Imports custom backgrounds to Microsoft Teams using a provided ZIP file.
 Export the agent procedure.  
 **Name:** Microsoft - Teams - Import - Background
 
-![Image 1](..\..\..\static\img\Microsoft---Teams---Import---Background\image_1.png)  
-![Image 2](..\..\..\static\img\Microsoft---Teams---Import---Background\image_2.png)  
+![Image 1](../../../static/img/Microsoft---Teams---Import---Background/image_1.png)  
+![Image 2](../../../static/img/Microsoft---Teams---Import---Background/image_2.png)  
 
 The agent procedure requires a ZIP file with the backgrounds.  
 The ZIP can contain multiple images.  
 The following images are supported: **('jpeg', 'jpg', 'png', 'bmp')**
 
-![Image 3](..\..\..\static\img\Microsoft---Teams---Import---Background\image_3.png)  
+![Image 3](../../../static/img/Microsoft---Teams---Import---Background/image_3.png)  
 
 If the file selected is "background.zip" no further changes are required.  
 If a different file has been specified, update the filename in the PowerShell execution.  
 Modify **background.zip** to the name of the ZIP you've selected in the previous step.  
 
-![Image 4](..\..\..\static\img\Microsoft---Teams---Import---Background\image_4.png)  
+![Image 4](../../../static/img/Microsoft---Teams---Import---Background/image_4.png)  
 
 ## Dependencies
 
@@ -54,5 +54,6 @@ Modify **background.zip** to the name of the ZIP you've selected in the previous
 ## Output
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
+
 
 

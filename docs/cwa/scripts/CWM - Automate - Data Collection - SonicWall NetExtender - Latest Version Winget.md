@@ -14,7 +14,7 @@ This script is designed to store the SonicWall NetExtender latest version to the
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\CWM---Automate---Data-Collection---SonicWall-NetExtender---Latest-Version-Winget\image_1.png)
+![Sample Run](../../../static/img/CWM---Automate---Data-Collection---SonicWall-NetExtender---Latest-Version-Winget/image_1.png)
 
 #### System Properties
 
@@ -25,5 +25,6 @@ This script is designed to store the SonicWall NetExtender latest version to the
 ## Output
 
 - Script log
+
 
 

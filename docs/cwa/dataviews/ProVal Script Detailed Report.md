@@ -47,7 +47,7 @@ This dataview shows all custom scripts built by ProVal with its detailed impleme
 
 Color Coding is applied to the columns "# Internal monitor", "# Remote monitor", "Script Nature", "Group Scheduled", "Scheduled in past 6 months", and "Synced/Updated" as shown below:
 
-![Color Coding](..\..\..\static\img\ProVal-Script-Detailed-Report\image_1.png)
+![Color Coding](../../../static/img/ProVal-Script-Detailed-Report/image_1.png)
 
 - **# Internal monitor:** The highlights the Count greater than 0, to catch the eye to show the script was applied to how many Internal monitors.
 - **# Remote monitor:** The highlights the Count greater than 0, to catch the eye to show the script was applied to how many Remote monitors.
@@ -55,5 +55,6 @@ Color Coding is applied to the columns "# Internal monitor", "# Remote monitor",
 - **Synced/Updated:** It has "Yes" highlighted in Green, "No" highlighted in Orange, "Client-Specific" highlighted in Grey, and "Deprecated" highlighted in Red to catch the eye easily and show whether the script is a deprecated, client-specific or if a nonstack then it is properly synced/updated from the ProVal plugin or not.
 - **Group Scheduled:** This highlights the Group full name in Green to catch the eye to show where the script is scheduled.
 - **Scheduled in past 6 months:** It has "Recently Added" highlighted in Green to show which script was either run by the Group or manually in the past 6 months or if the script was running as an autofix via monitors. If any condition is met then it is marked as "Recently Added".
+
 
 

@@ -25,7 +25,7 @@ The purpose of this solution is to present a detailed analysis of script failure
 - Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
 - Remove the schedule of the old script if it is scheduled (It may be named the same since it was just updated, but the interval needs to get updated).
 - Schedule the `Script Failure Analysis - 30 Day Retention` to run once per day, sometimes around midnight.  
-  ![Image](..\..\static\img\Script-Failure-Assessment---Last-30-Days\image_1.png)
+  ![Image](../../static/img/Script-Failure-Assessment---Last-30-Days/image_1.png)
 
 ## Associated Content
 
@@ -49,7 +49,7 @@ The purpose of this solution is to present a detailed analysis of script failure
    - [Dataview - Script Failure Assessment - Last 30 Days](https://proval.itglue.com/DOC-5078775-16804876)
 
 2. Reload the system cache:  
-   ![Image](..\..\static\img\Script-Failure-Assessment---Last-30-Days\image_2.png)
+   ![Image](../../static/img/Script-Failure-Assessment---Last-30-Days/image_2.png)
 
 3. Execute the [Script - Script Failure Analysis - 30 Day Retention](https://proval.itglue.com/DOC-5078775-16804995) against any client to create the [pvl_Script_Assesment](https://proval.itglue.com/DOC-5078775-16804952) custom Table. This script will automatically provide the necessary table permissions.
 
@@ -59,6 +59,7 @@ The purpose of this solution is to present a detailed analysis of script failure
    1. Go to System > Configuration > Dashboard > Management > Scheduled Client Script.
    2. Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
    3. Schedule the [Script Failure Analysis - 30 Day Retention](https://proval.itglue.com/5078775/docs/16804995) to run once per day, sometimes around midnight, as demonstrated in the `Sample Run` section of the document.  
-      ![Image](..\..\static\img\Script-Failure-Assessment---Last-30-Days\image_3.png)
+      ![Image](../../static/img/Script-Failure-Assessment---Last-30-Days/image_3.png)
+
 
 

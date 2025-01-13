@@ -35,3 +35,4 @@ These tables are filled by the Events `ProvalUptime` and `ProvalUptimeDays`. The
 | SampleDate    | DATE     | The date of the measurements used to calculate the PercentOnline. |
 
 
+

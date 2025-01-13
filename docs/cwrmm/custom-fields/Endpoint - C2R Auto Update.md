@@ -20,8 +20,9 @@ If C2R office Auto update is enabled or not on the machine gathered by the [Micr
 
 ## Screenshot
 
-![Screenshot 1](..\..\..\static\img\Endpoint---C2R-Auto-Update\image_1.png)  
-![Screenshot 2](..\..\..\static\img\Endpoint---C2R-Auto-Update\image_2.png)
+![Screenshot 1](../../../static/img/Endpoint---C2R-Auto-Update/image_1.png)  
+![Screenshot 2](../../../static/img/Endpoint---C2R-Auto-Update/image_2.png)
+
 
 
 

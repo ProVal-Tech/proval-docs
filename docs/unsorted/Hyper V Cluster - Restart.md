@@ -28,17 +28,17 @@ PowerShell V5
 8. Continue to the next node.
 
 ```
-.\Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30
+./Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30
 ```
 Will cycle through all nodes of ClusterName and attempt to drain the nodes stopping if the attempt to drain takes longer than 30 seconds.
 
 ```
-.\Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30 -Continue
+./Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30 -Continue
 ```
 Will cycle through all nodes of ClusterName and attempt to drain the nodes stopping if the attempt to drain takes longer than 30 seconds, skipping any already offline nodes.
 
 ```
-.\Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30 -Continue -Passthru
+./Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30 -Continue -Passthru
 ```
 Will cycle through all nodes of ClusterName and attempt to drain the nodes stopping if the attempt to drain takes longer than 30 seconds, skipping any already offline nodes, and returning the Cluster Object.
 
@@ -54,9 +54,10 @@ Will cycle through all nodes of ClusterName and attempt to drain the nodes stopp
 ## Output
 
 ```
-.\Restart-HyperVCluster-log.txt
-.\Restart-HyperVCluster-error.txt
+./Restart-HyperVCluster-log.txt
+./Restart-HyperVCluster-error.txt
 ```
+
 
 
 

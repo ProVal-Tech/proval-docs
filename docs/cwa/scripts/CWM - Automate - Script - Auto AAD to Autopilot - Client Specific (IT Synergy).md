@@ -16,7 +16,7 @@ This script will run the Optimize-Volume PowerShell command to defragment a driv
 
 < This should be a screenshot of a manual run of the script >
 
-![Screenshot](..\..\..\static\img\CWM---Automate---Script---Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)\image_1.png)
+![Screenshot](../../../static/img/CWM---Automate---Script---Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)/image_1.png)
 
 ## Dependencies
 
@@ -74,5 +74,6 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
 
 

@@ -14,7 +14,7 @@ This script will set the Windows explorer view to List View.
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\EPM---Windows-Configuration---Windows-Explorer-View---List\image_1.png)
+![Sample Run](../../../static/img/EPM---Windows-Configuration---Windows-Explorer-View---List/image_1.png)
 
 ## Variables
 
@@ -28,13 +28,14 @@ This script will set the Windows explorer view to List View.
 ## Process
 
 This script performs below action:
-- HKCU:\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU for all users.
-- HKCU:\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags
-  - It creates 'Mode' -Value 3 and 'LogicalViewMode' -Value 4 at the HKLM:\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\TopView, then guid.
+- HKCU:/Software/Classes/Local Settings/Software/Microsoft/Windows/Shell/BagMRU for all users.
+- HKCU:/Software/Classes/Local Settings/Software/Microsoft/Windows/Shell/Bags
+  - It creates 'Mode' -Value 3 and 'LogicalViewMode' -Value 4 at the HKLM:/SOFTWARE/Microsoft/Windows/Shell/Bags/AllFolders/Shell/SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/FolderTypes/TopView, then guid.
 
 ## Output
 
 - Script log
+
 
 
 

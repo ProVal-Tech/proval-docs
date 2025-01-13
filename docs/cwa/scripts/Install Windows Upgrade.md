@@ -14,7 +14,7 @@ Installs the latest feature update on a Windows 10+ machine and comes with an op
 
 **Note:** Script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category.
 
-File Path: `C:\ProgramData\_automation\script\Install-FeatureUpdate\Install-FeatureUpdateAI.ps1`
+File Path: `C:/ProgramData/_automation/script/Install-FeatureUpdate/Install-FeatureUpdateAI.ps1`
 
 **File Hash:**
 - **SHA256:** `FDC149710B3ABB35D5F61218AB658C9C8881FAEB18CC223E0F1666D8E0120CF9`
@@ -23,13 +23,13 @@ File Path: `C:\ProgramData\_automation\script\Install-FeatureUpdate\Install-Feat
 ## Sample Run
 
 To upgrade a computer from Windows 10 to Windows 11, forcefully reboot it, skipping Free Drive Space Check and with a custom image/icon in the user's prompt:  
-![Upgrade Prompt](..\..\..\static\img\Install-Windows-Upgrade\image_1.png)
+![Upgrade Prompt](../../../static/img/Install-Windows-Upgrade/image_1.png)
 
 To install the latest available feature pack on a Windows 10+ machine, without restarting and with the default image/icon in the user's prompt:  
-![Install Prompt](..\..\..\static\img\Install-Windows-Upgrade\image_2.png)
+![Install Prompt](../../../static/img/Install-Windows-Upgrade/image_2.png)
 
 ### Example Prompt
-![Example Prompt](..\..\..\static\img\Install-Windows-Upgrade\image_3.png)
+![Example Prompt](../../../static/img/Install-Windows-Upgrade/image_3.png)
 
 ## Dependencies
 
@@ -155,6 +155,7 @@ Error Log
 Setup Diag Result  
 ----------------  
 `<Outcome of the SetupDiagTool verifying the upgrade process>`
+
 
 
 

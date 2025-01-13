@@ -23,7 +23,7 @@ The purpose of this group is to filter Windows machines where Huntress agent is 
 
 ## Summary
 
-![Image](..\..\..\static\img\Deploy-Huntress\image_1.png)
+![Image](../../../static/img/Deploy-Huntress/image_1.png)
 
 **Group Type:** Dynamic  
 **Group Name:** Deploy Huntress  
@@ -31,7 +31,7 @@ The purpose of this group is to filter Windows machines where Huntress agent is 
 
 ### Criteria
 
-![Image](..\..\..\static\img\Deploy-Huntress\image_2.png)
+![Image](../../../static/img/Deploy-Huntress/image_2.png)
 
 - Installed Software does not contain any of `Huntress Agent`
 - Huntress Acct_Key should not be blank
@@ -46,8 +46,9 @@ The purpose of this group is to filter Windows machines where Huntress agent is 
 
 Once adding the above criteria, click the Save button to save the group.
 
-![Image](..\..\..\static\img\Deploy-Huntress\image_3.png)
+![Image](../../../static/img/Deploy-Huntress/image_3.png)
 
-![Image](..\..\..\static\img\Deploy-Huntress\image_4.png)
+![Image](../../../static/img/Deploy-Huntress/image_4.png)
+
 
 

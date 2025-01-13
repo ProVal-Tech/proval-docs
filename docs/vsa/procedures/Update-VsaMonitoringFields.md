@@ -19,17 +19,17 @@ Automation will be used to write the Org CF to the machines daily, using `-SetMa
 
 # Payload Usage
 ```
-.\UpdateVsaMonitoringFields.ps1 <API Auth Params> -ExcludeAll
+./UpdateVsaMonitoringFields.ps1 <API Auth Params> -ExcludeAll
 ```
 Writes 'Yes' to 'xPVAL Exclude From Monitoring' for every Agent in the environment. `-IncludeAll` can be used instead to write 'No'.
 
 ```
-.\UpdateVsaMonitoringFields.ps1 <API Auth Params> -Exclude -OrgName 'ProVal Technologies'
+./UpdateVsaMonitoringFields.ps1 <API Auth Params> -Exclude -OrgName 'ProVal Technologies'
 ```
 Writes 'Yes' to 'xPVAL Exclude From Monitoring' for every Agent in the organization 'ProVal Technologies'. GroupName and AgentName can also be provided. OrgName accepts both name and OrgRef (shortname).
 
 ```
-.\UpdateVsaMonitoringFields.ps1 <API Auth Params> -SetManagedValues
+./UpdateVsaMonitoringFields.ps1 <API Auth Params> -SetManagedValues
 ```
 Writes contents of Org CF 'Managed' to 'xPVAL Monitoring Managed' on every endpoint.
 
@@ -51,7 +51,8 @@ Writes contents of Org CF 'Managed' to 'xPVAL Monitoring Managed' on every endpo
 
 # Output
 ```
-.\UpdateVsaMonitoringFields-log.txt
+./UpdateVsaMonitoringFields-log.txt
 ```
+
 
 

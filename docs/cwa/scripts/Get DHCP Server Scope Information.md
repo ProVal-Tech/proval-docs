@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Get-DHCP-Server-Scope-Information\image_1.png)
+![Sample Run](../../../static/img/Get-DHCP-Server-Scope-Information/image_1.png)
 
 ## Process
 
@@ -26,6 +26,7 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Table plugin_proval_dhcp_statistics
+
 
 
 

@@ -3,7 +3,7 @@ id: 'cwa-threatlocker-learning-mode-script'
 title: 'ThreatLocker Learning Mode Script'
 title_meta: 'ThreatLocker Learning Mode Script'
 keywords: ['threatlocker', 'api', 'learning', 'mode', 'script', 'authentication']
-description: 'This document outlines a script that retrieves API keys from the client\'s password tab to enable learning mode for ThreatLocker. It includes details on dependencies, variables, parameters, and instructions for use, ensuring secure handling of API keys.'
+description: 'This document outlines a script that retrieves API keys from the client/'s password tab to enable learning mode for ThreatLocker. It includes details on dependencies, variables, parameters, and instructions for use, ensuring secure handling of API keys.'
 tags: ['api', 'learning', 'script', 'authentication', 'configuration', 'security', 'windows', 'software']
 draft: false
 unlisted: false
@@ -15,7 +15,7 @@ This script retrieves API keys from the client's password tab and uses them secu
 Please refer to the instructions/FAQ section for creating a new application or using an existing application policy to get the application ID. Ensure to whitelist the file hash for the corresponding application ID rule.
 
 ## Sample Run
-![Sample Run](..\..\..\static\img\Threatlocker---Set-Learning-Mode\image_1.png)
+![Sample Run](../../../static/img/Threatlocker---Set-Learning-Mode/image_1.png)
 
 ## Dependencies
 - ThreatLocker Authentication keys (must be requested from ThreatLocker support)
@@ -93,7 +93,7 @@ A: Login to [https://portal.threatlocker.com/](https://portal.threatlocker.com/)
 ![Set Application ID](https://proval.itglue.com/5078775/docs/16557697/images/25890388)
 
 - Enter it in **System → Dashboard → Config → Configurations → Properties** in Automate.  
-![Enter in Automate](..\..\..\static\img\Threatlocker---Set-Learning-Mode\image_2.png)
+![Enter in Automate](../../../static/img/Threatlocker---Set-Learning-Mode/image_2.png)
 
 **Q: What are the script dependencies, and what errors can it report?**  
 A: Dependencies and errors are as follows:
@@ -102,5 +102,6 @@ A: Dependencies and errors are as follows:
 
 - For `POST /MaintenanceMode`: MaintenanceMode AuthKey, ComputerId, ApplicationId, and Method must be set appropriately.  
 ![POST /MaintenanceMode Dependencies](https://proval.itglue.com/5078775/docs/16557697/images/25594739)
+
 
 

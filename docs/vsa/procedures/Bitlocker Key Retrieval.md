@@ -20,7 +20,7 @@ Retrieves any available bitlocker recovery key and saves it to xPVAL Bitlocker K
 | 4:07:36 pm 13-Dec-22     | Bitlocker Key Retrieval-0001                 | No Recovery Key found on endpoint.       | provaltech.com/dan.hicks      |
 | 4:07:36 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System) | Success THEN                             | provaltech.com/dan.hicks      |
 | 4:07:36 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0016 | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server. | provaltech.com/dan.hicks      |
-| 4:07:22 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "$result = Get-BitLockerVolume | ForEach-Object {"$([string]($_.KeyProtector).RecoveryPassword) $RecoveryKey"}; if (!($result)){"Drive $result"}" >"c:\\provaltech\\psoutputtmp.txt" | provaltech.com/dan.hicks      |
+| 4:07:22 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "$result = Get-BitLockerVolume | ForEach-Object {"$([string]($_.KeyProtector).RecoveryPassword) $RecoveryKey"}; if (!($result)){"Drive $result"}" >"c://provaltech//psoutputtmp.txt" | provaltech.com/dan.hicks      |
 | 4:07:22 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.       | provaltech.com/dan.hicks      |
 | 4:07:22 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as $result = Get-BitLockerVolume | ForEach-Object {"$([string]($_.KeyProtector).RecoveryPassword) $RecoveryKey"}; if (!($result)){"Drive $result"} | provaltech.com/dan.hicks      |
 | 4:07:22 pm 13-Dec-22     | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.    | provaltech.com/dan.hicks      |
@@ -38,6 +38,7 @@ Gets bitlocker recovery keys on endpoint and prints any that exist to the CF.
 ## Output
 
 CF, AP Log
+
 
 
 

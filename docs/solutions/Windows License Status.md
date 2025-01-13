@@ -32,10 +32,11 @@ The purpose of this solution is to pull the Windows License Status from the comp
   - This should be placed on the groups you wish to audit or ticket if the license is not correct.
 
 **3.** Reload the system cache:  
-- ![Reload Cache](..\..\static\img\Windows-License-Status\image_19.png)
+- ![Reload Cache](../../static/img/Windows-License-Status/image_19.png)
 
 **4.** If ticketing is desired for when a machine has an issue with their Windows license: (The consultant should specify this)  
 - Apply the following alert template to the remote monitor:  
   - `△ Custom - Ticket Creation Computer - Warning and Failed`  
+
 
 

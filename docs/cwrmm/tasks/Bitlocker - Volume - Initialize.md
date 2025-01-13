@@ -16,11 +16,11 @@ This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolu
 
 ## Sample Run
 
-![Sample Run 1](..\..\..\static\img\Bitlocker---Volume---Initialize\image_3.png)
+![Sample Run 1](../../../static/img/Bitlocker---Volume---Initialize/image_3.png)
 
-![Sample Run 2](..\..\..\static\img\Bitlocker---Volume---Initialize\image_4.png)
+![Sample Run 2](../../../static/img/Bitlocker---Volume---Initialize/image_4.png)
 
-![Sample Run 3](..\..\..\static\img\Bitlocker---Volume---Initialize\image_5.png)
+![Sample Run 3](../../../static/img/Bitlocker---Volume---Initialize/image_5.png)
 
 ## Dependencies
 
@@ -34,11 +34,11 @@ This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolu
 | Allow TPM/Reboot      | 3                             | 0,1,2,3                                                                                                                                         | False    | 0       | Number | Options for allowing TPM initialization and rebooting.<br>0 = Do not allow<br>1 = Allow TPM Initialization<br>2 = Allow Reboot<br>3 = Allow TPM Initialization and Reboot |
 | Key Protector Type     | RecoveryPassword              | Tpm, TpmStartup, TpmPinStartup, Password, Startup, RecoveryKey, RecoveryPassword, AdAccount                                                    | True     |         | Text   | Options for which type of protector to use for BitLocker: Tpm, TpmPin (Requires PIN/Password parameter), TpmStartup (Requires Path/ADAccount parameter), TpmPinStartup (Requires PIN/Password and Path/ADAccount parameters), Password (Requires PIN/Password parameter), Startup (Requires Path/ADAccount parameter), RecoveryKey (Requires Path/ADAccount parameter), RecoveryPassword, AdAccount (Requires Path/ADAccount parameter) |
 | PIN/Password          | - 123456<br>- Pa$sw0rD!<br>- 123456-654321-123456-654321-123456-654321 |                                                                                                                                                  | Semi     |         | Text   | Option for the PIN or Password needed for specific key protector types.                            |
-| Path/ADAccount        | - F:\\Recovery<br>- CONTOSO\\ContosoUser<br>- CONTOSO\\ContosoGroup |                                                                                                                                                  | Semi     |         | Text   | Option for the Path or AD Account needed for specific key protector types.                         |
+| Path/ADAccount        | - F://Recovery<br>- CONTOSO//ContosoUser<br>- CONTOSO//ContosoGroup |                                                                                                                                                  | Semi     |         | Text   | Option for the Path or AD Account needed for specific key protector types.                         |
 | SkipHardwareTest      | Checked                       |                                                                                                                                                  | False    | Checked  | Flag   | Mark this checkbox to enable BitLocker without forcefully validating the hardware.                  |
 | EncryptionMethod      | XtsAes256                    | Aes128, Aes256, XtsAes128, XtsAes256                                                                                                           | True     | XtsAes256 | Text   | The encryption method that will be used to protect the target volume. Valid options are: Aes128, Aes256, XtsAes128, XtsAes256 |
 
-![User Parameters](..\..\..\static\img\Bitlocker---Volume---Initialize\image_6.png)
+![User Parameters](../../../static/img/Bitlocker---Volume---Initialize/image_6.png)
 
 ## Key Protector Types
 
@@ -58,41 +58,41 @@ This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolu
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](..\..\..\static\img\Bitlocker---Volume---Initialize\image_7.png)
+![Task Creation 1](../../../static/img/Bitlocker---Volume---Initialize/image_7.png)
 
-![Task Creation 2](..\..\..\static\img\Bitlocker---Volume---Initialize\image_8.png)
+![Task Creation 2](../../../static/img/Bitlocker---Volume---Initialize/image_8.png)
 
 **Name:** Bitlocker - Volume - Initialize  
 **Description:** `Encrypts a drive with BitLocker disk encryption.`  
 **Category:** Security  
 
-![Task Creation 3](..\..\..\static\img\Bitlocker---Volume---Initialize\image_9.png)
+![Task Creation 3](../../../static/img/Bitlocker---Volume---Initialize/image_9.png)
 
 ## Parameters
 
 ### MountPoint:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `MountPoint` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![MountPoint Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_12.png)
+![MountPoint Save](../../../static/img/Bitlocker---Volume---Initialize/image_12.png)
 
 ### AllowTPM/Reboot:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `AllowTPM/Reboot` in the `Parameter Name` field.
 - Select `Number Value` from the `Parameter Type` dropdown menu.
@@ -100,62 +100,62 @@ This screen will appear.
 - Set `0` in the `Value` field.
 - Click the `Save` button.
 
-![AllowTPM/Reboot Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_13.png)
+![AllowTPM/Reboot Save](../../../static/img/Bitlocker---Volume---Initialize/image_13.png)
 
 ### KeyProtectorType:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `KeyProtectorType` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Enable the `Required Field` button.
 - Click the `Save` button.
 
-![KeyProtectorType Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_14.png)
+![KeyProtectorType Save](../../../static/img/Bitlocker---Volume---Initialize/image_14.png)
 
 ### PIN/Password:
 Add a new parameter by clicking the `Add Parameter` button present in the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `PIN/Password` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![PIN/Password Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_15.png)
+![PIN/Password Save](../../../static/img/Bitlocker---Volume---Initialize/image_15.png)
 
 ### Path/ADAccount:
 Add a new parameter by clicking the `Add Parameter` button present in the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `Path/ADAccount` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Path/ADAccount Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_16.png)
+![Path/ADAccount Save](../../../static/img/Bitlocker---Volume---Initialize/image_16.png)
 
 ### SkipHardwareTest:
 Add a new parameter by clicking the `Add Parameter` button present in the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `SkipHardwareTest` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
@@ -163,16 +163,16 @@ This screen will appear.
 - Set `True` in the `Value` field.
 - Click the `Save` button.
 
-![SkipHardwareTest Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_17.png)
+![SkipHardwareTest Save](../../../static/img/Bitlocker---Volume---Initialize/image_17.png)
 
 ### EncryptionMethod:
 Add a new parameter by clicking the `Add Parameter` button present in the top-right corner of the screen.
 
-![Add Parameter](..\..\..\static\img\Bitlocker---Volume---Initialize\image_10.png)
+![Add Parameter](../../../static/img/Bitlocker---Volume---Initialize/image_10.png)
 
 This screen will appear.
 
-![Parameter Screen](..\..\..\static\img\Bitlocker---Volume---Initialize\image_11.png)
+![Parameter Screen](../../../static/img/Bitlocker---Volume---Initialize/image_11.png)
 
 - Set `EncryptionMethod` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -181,27 +181,27 @@ This screen will appear.
 - Set `XtsAes256` in the `Value` field.
 - Click the `Save` button.
 
-![EncryptionMethod Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_18.png)
+![EncryptionMethod Save](../../../static/img/Bitlocker---Volume---Initialize/image_18.png)
 
 ## Task
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](..\..\..\static\img\Bitlocker---Volume---Initialize\image_19.png)
+![Add Row](../../../static/img/Bitlocker---Volume---Initialize/image_19.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Bitlocker---Volume---Initialize\image_20.png)
+![Blank Function](../../../static/img/Bitlocker---Volume---Initialize/image_20.png)
 
 ### Row 1 Function: PowerShell Script
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script](..\..\..\static\img\Bitlocker---Volume---Initialize\image_21.png)
+![PowerShell Script](../../../static/img/Bitlocker---Volume---Initialize/image_21.png)
 
-![PowerShell Script Selected](..\..\..\static\img\Bitlocker---Volume---Initialize\image_22.png)
+![PowerShell Script Selected](../../../static/img/Bitlocker---Volume---Initialize/image_22.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Function](..\..\..\static\img\Bitlocker---Volume---Initialize\image_23.png)
+![PowerShell Function](../../../static/img/Bitlocker---Volume---Initialize/image_23.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
@@ -339,11 +339,11 @@ $ProjectName = 'Initialize-BitLockerVolume'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -378,39 +378,40 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![Row 1 Function Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_24.png)
+![Row 1 Function Save](../../../static/img/Bitlocker---Volume---Initialize/image_24.png)
 
 ### Row 2 Function: Script Log
 Add a new row by clicking the `Add Row` button.
 
-![Add Row](..\..\..\static\img\Bitlocker---Volume---Initialize\image_25.png)
+![Add Row](../../../static/img/Bitlocker---Volume---Initialize/image_25.png)
 
 A blank function will appear.
 
-![Blank Function](..\..\..\static\img\Bitlocker---Volume---Initialize\image_26.png)
+![Blank Function](../../../static/img/Bitlocker---Volume---Initialize/image_26.png)
 
 Search and select the `Script Log` function.
 
-![Script Log](..\..\..\static\img\Bitlocker---Volume---Initialize\image_27.png)
+![Script Log](../../../static/img/Bitlocker---Volume---Initialize/image_27.png)
 
 The following function will pop up on the screen:
 
-![Script Log Function](..\..\..\static\img\Bitlocker---Volume---Initialize\image_28.png)
+![Script Log Function](../../../static/img/Bitlocker---Volume---Initialize/image_28.png)
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Script Log Save](..\..\..\static\img\Bitlocker---Volume---Initialize\image_29.png)
+![Script Log Save](../../../static/img/Bitlocker---Volume---Initialize/image_29.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](..\..\..\static\img\Bitlocker---Volume---Initialize\image_30.png)
+![Save Script](../../../static/img/Bitlocker---Volume---Initialize/image_30.png)
 
 ## Completed Task
 
-![Completed Task](..\..\..\static\img\Bitlocker---Volume---Initialize\image_31.png)
+![Completed Task](../../../static/img/Bitlocker---Volume---Initialize/image_31.png)
 
 ## Output
 
 - Script log
+
 
 

@@ -15,7 +15,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Shared-Folder-Audit\image_1.png)
+![Sample Run](../../../static/img/Shared-Folder-Audit/image_1.png)
 
 ## Dependencies
 
@@ -47,6 +47,7 @@ The script will run a PowerShell script to gather the data from the endpoint. Th
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
+
 
 
 

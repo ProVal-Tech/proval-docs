@@ -16,7 +16,7 @@ This Script gets the Hardware Hash for Autopilot device registration. It collect
 
 It is intended to run as an autofix Script with [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](https://proval.itglue.com/DOC-5078775-17245349) but could also be run independently.
 
-![Sample Run](..\..\..\static\img\Get-AutopilotHash\image_1.png)
+![Sample Run](../../../static/img/Get-AutopilotHash/image_1.png)
 
 ## EDFs
 
@@ -33,5 +33,6 @@ It is intended to run as an autofix Script with [CWA - Internal Monitor - ProVal
 ## Output
 
 - Script Logs
+
 
 

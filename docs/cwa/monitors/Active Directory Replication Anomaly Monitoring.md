@@ -65,9 +65,9 @@ For a precise understanding of the error codes returned in the `LastError` prope
            '3600' AS `interval`,
            '127.0.0.1' AS `Where`,
            '7' AS `What`,
-           'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$LRS=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationSuccess -Descending | Select-Object -First 1).LastReplicationSuccess;$LRA=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationAttempt -Descending | Select-Object -First 1).LastReplicationAttempt;if (($LRS -lt $LRA) -and ($LRA -ge $((Get-Date).AddHours(-1)))){(Get-ADReplicationFailure -Target $((Get-ADdomainController).Domain) -Scope Domain -Erroraction SilentlyContinue| Where-Object {$_.FirstFailureTime -ge $((Get-Date).AddHours(-1)) })}"' AS `DataOut`,
+           'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$LRS=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationSuccess -Descending | Select-Object -First 1).LastReplicationSuccess;$LRA=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationAttempt -Descending | Select-Object -First 1).LastReplicationAttempt;if (($LRS -lt $LRA) -and ($LRA -ge $((Get-Date).AddHours(-1)))){(Get-ADReplicationFailure -Target $((Get-ADdomainController).Domain) -Scope Domain -Erroraction SilentlyContinue| Where-Object {$_.FirstFailureTime -ge $((Get-Date).AddHours(-1)) })}"' AS `DataOut`,
            '16' AS `Comparor`,
-           '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(PartnerGuid)|10|PartnerGuid' AS `DataIn`,
+           '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(PartnerGuid)|10|PartnerGuid' AS `DataIn`,
            '' AS `IDField`,
            '0' AS `AlertStyle`,
            '0' AS `ScriptID`,
@@ -119,22 +119,23 @@ For a precise understanding of the error codes returned in the `LastError` prope
 ## Step 3
 Perform `Refresh Searches` and `Do Group Refresh` from `MySQL Server Status` tool.
 
-![Image 1](..\..\..\static\img\Active-Directory-Replication-Anomaly-Monitoring\image_1.png)  
-![Image 2](..\..\..\static\img\Active-Directory-Replication-Anomaly-Monitoring\image_2.png)
+![Image 1](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_1.png)  
+![Image 2](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_2.png)
 
 ## Step 4
 Validate the presence of the `ProVal - Production - Active Directory Replication Anomaly Monitoring` Remote monitor on the group `Domain Controllers`. The remote monitor should be limited to the `Server Role - AD - Infrastructure Master` search.
 
 **Group:**  
-![Group Image](..\..\..\static\img\Active-Directory-Replication-Anomaly-Monitoring\image_3.png)
+![Group Image](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_3.png)
 
 **Search:**  
-![Search Image](..\..\..\static\img\Active-Directory-Replication-Anomaly-Monitoring\image_4.png)
+![Search Image](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_4.png)
 
 **Remote Monitor:**  
-![Remote Monitor Image](..\..\..\static\img\Active-Directory-Replication-Anomaly-Monitoring\image_5.png)
+![Remote Monitor Image](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_5.png)
 
 ## Step 5
 Apply the relevant Alert template and Ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+
 
 

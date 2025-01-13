@@ -14,7 +14,7 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Get-Chromium-Browsers-Extensions\image_1.png)
+![Sample Run](../../../static/img/Get-Chromium-Browsers-Extensions/image_1.png)
 
 ## Dependencies
 
@@ -35,5 +35,6 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Script Log
 - Custom Table
 - Dataview
+
 
 

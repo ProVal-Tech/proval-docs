@@ -20,6 +20,7 @@ References:
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\MySQL---Table---Create-(plugin_proval_windows_os_support)\image_1.png)
+![Sample Run](../../../static/img/MySQL---Table---Create-(plugin_proval_windows_os_support)/image_1.png)
+
 
 

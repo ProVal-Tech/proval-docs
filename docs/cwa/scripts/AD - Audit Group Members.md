@@ -16,7 +16,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\AD---Audit-Group-Members\image_1.png)
+![Sample Run](../../../static/img/AD---Audit-Group-Members/image_1.png)
 
 ## Dependencies
 
@@ -47,6 +47,7 @@ If [Compare-ADGroupMembers](https://proval.itglue.com/DOC-5078775-7184686) retur
 - Script Log
 - Log Files
 - Ticketing
+
 
 
 

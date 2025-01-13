@@ -14,7 +14,7 @@ This script collects device current location detail.
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\IPGeolocation-Audit\image_1.png)
+![Sample Run](../../static/img/IPGeolocation-Audit/image_1.png)
 
 ## Dependencies
 
@@ -37,6 +37,7 @@ This script scans the device to collect information for its current location. It
 - Script log
 - Dataview
 - Custom table plugin_proval_ipinfo
+
 
 
 

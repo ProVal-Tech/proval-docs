@@ -55,10 +55,10 @@ The ultimate objective of the solution is to establish and oversee two scheduled
    - △ CUSTOM - Execute Script - Scheduled Task - Delete - Winget Update All
 
 4. Reload the system cache.
-   ![Image](..\..\static\img\Scheduled-Tasks---Winget-Update-All\image_1.png)
+   ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_1.png)
 
 5. Execute the [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195) against any online Windows 10 or Windows 11 computer with the `SetEnvironment` parameter to `1` to create the system property and the EDFs.
-   ![Image](..\..\static\img\Scheduled-Tasks---Winget-Update-All\image_2.png)
+   ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_2.png)
 
 6. Configure the Extra Data Fields to initiate the solution as described in this document: [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195).
    
@@ -82,12 +82,12 @@ The ultimate objective of the solution is to establish and oversee two scheduled
 **A:**
 - For Environment-Level Changes
   - Set the `Winget_Disable_User_Level_Scheduled_Task` system property to `1`.  
-  ![Image](..\..\static\img\Scheduled-Tasks---Winget-Update-All\image_3.png)
+  ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_3.png)
   - Follow the steps described in the [Reset - Extra Data Field - Winget_update_all_task_created](https://proval.itglue.com/DOC-5078775-14825940) article for the **Environment Level Changes**.
 
 - For Client-Level Changes
   - Flag the Client-Level EDF `Winget User Level Task - Disable`.  
-  ![Image](..\..\static\img\Scheduled-Tasks---Winget-Update-All\image_4.png)
+  ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_4.png)
   - Follow the steps described in the [Reset - Extra Data Field - Winget_update_all_task_created](https://proval.itglue.com/DOC-5078775-14825940) article for the **Client Level Changes**.
 
 **Q:** How to recreate the tasks on all Windows 10 and 11 computers in the environment?  
@@ -104,5 +104,6 @@ The ultimate objective of the solution is to establish and oversee two scheduled
 
 **Q:** How to remove the tasks from all machines of a client?  
 **A:** Upon Un-marking the Client-Level EDF `Winget Update All Task - Create`, the [Execute Script - Scheduled Task - Delete - Winget Update All](https://proval.itglue.com/DOC-5078775-15226948) internal monitor executes the [Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949) script to remove the tasks from all Windows 10 and 11 machines of the client.
+
 
 

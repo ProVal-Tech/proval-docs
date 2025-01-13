@@ -16,7 +16,7 @@ Run the script on any computer to create the views, and afterward, remove the sc
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\MySQL---View---Create-(pvl_cu_compliance)\image_1.png)
+![Sample Run](../../../static/img/MySQL---View---Create-(pvl_cu_compliance)/image_1.png)
 
 ## Dependencies
 
@@ -26,5 +26,6 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
+
 
 

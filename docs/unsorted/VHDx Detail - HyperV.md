@@ -14,7 +14,7 @@ This script collects information on all vhdx type disk on a Hyper-V server, and 
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\VHDx-Detail---HyperV\image_1.png)
+![Sample Run](../../static/img/VHDx-Detail---HyperV/image_1.png)
 
 ## Dependencies
 
@@ -41,6 +41,7 @@ This script runs only on Hyper-V servers. It collects all vhdx information and s
 - Script log
 - Script state
 - Dataview
+
 
 
 

@@ -25,3 +25,4 @@ Lists all firefox extensions installed on the endpoint
 
 
 
+

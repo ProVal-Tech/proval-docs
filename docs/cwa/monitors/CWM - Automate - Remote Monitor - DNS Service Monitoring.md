@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|-------------|-------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File    | REDACTED    | State Based | 600      | <Screenshot Below> |
 
-![Screenshot](..\..\..\static\img\CWM---Automate---Remote-Monitor---DNS-Service-Monitoring\image_1.png)
+![Screenshot](../../../static/img/CWM---Automate---Remote-Monitor---DNS-Service-Monitoring/image_1.png)
 
 ## Dependencies
 
@@ -33,7 +33,7 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Windows DNS Servers  
-![Target Image](..\..\..\static\img\CWM---Automate---Remote-Monitor---DNS-Service-Monitoring\image_2.png)
+![Target Image](../../../static/img/CWM---Automate---Remote-Monitor---DNS-Service-Monitoring/image_2.png)
 
 ## Ticketing
 
@@ -47,5 +47,6 @@ Windows DNS Servers
 ## Implementation
 
 [Import - Remote Monitor - DNS Service Monitoring](https://proval.itglue.com/DOC-5078775-13604735)
+
 
 

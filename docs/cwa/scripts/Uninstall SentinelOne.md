@@ -14,7 +14,7 @@ This script is designed to uninstall the SentinelOne agent from Windows machines
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Uninstall-SentinelOne\image_1.png)
+![Sample Run](../../../static/img/Uninstall-SentinelOne/image_1.png)
 
 ## Global Variables
 
@@ -25,6 +25,7 @@ This script is designed to uninstall the SentinelOne agent from Windows machines
 ## Output
 
 - Script log
+
 
 
 

@@ -17,15 +17,15 @@ It creates the Primary partition with the size increase and a label 'Windows RE 
 
 ## Caution
 
-![Image 1](..\..\..\static\img\Resize-partition-to-install-the-WinRE-update-(KB5034441)\image_1.png)
+![Image 1](../../../static/img/Resize-partition-to-install-the-WinRE-update-(KB5034441)/image_1.png)
 
-![Image 2](..\..\..\static\img\Resize-partition-to-install-the-WinRE-update-(KB5034441)\image_2.png)
+![Image 2](../../../static/img/Resize-partition-to-install-the-WinRE-update-(KB5034441)/image_2.png)
 
-![Image 3](..\..\..\static\img\Resize-partition-to-install-the-WinRE-update-(KB5034441)\image_3.png)
+![Image 3](../../../static/img/Resize-partition-to-install-the-WinRE-update-(KB5034441)/image_3.png)
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Resize-partition-to-install-the-WinRE-update-(KB5034441)\image_4.png)
+![Sample Run](../../../static/img/Resize-partition-to-install-the-WinRE-update-(KB5034441)/image_4.png)
 
 ## Variables
 
@@ -47,5 +47,6 @@ It creates the Primary partition with the size increase and a label 'Windows RE 
 ## Output
 
 - Script log
+
 
 

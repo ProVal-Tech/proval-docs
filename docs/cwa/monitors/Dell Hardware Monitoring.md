@@ -24,7 +24,7 @@ Insert the details of the monitor in the below table.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File   | **REDACTED**  | State-Based | 3600     | Screenshot attached Below |
 
-![Screenshot](..\..\..\static\img\Dell-Hardware-Monitoring\image_1.png)
+![Screenshot](../../../static/img/Dell-Hardware-Monitoring/image_1.png)
 
 ## Dependencies
 
@@ -34,11 +34,11 @@ Insert the details of the monitor in the below table.
 
 The remote monitor should be limited to the `Computers - Dell Servers` search on the **Managed Servers** service plan group(s).
 
-![Target Image](..\..\..\static\img\Dell-Hardware-Monitoring\image_2.png)
+![Target Image](../../../static/img/Dell-Hardware-Monitoring/image_2.png)
 
 ## Ticketing
 
-**Subject:** Dell OMSA Alert for: %CLIENTNAME%\%COMPUTERNAME%
+**Subject:** Dell OMSA Alert for: %CLIENTNAME%/%COMPUTERNAME%
 
 **Failure Body:** Dell Open Manage has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%
@@ -48,5 +48,6 @@ The remote monitor should be limited to the `Computers - Dell Servers` search on
 ## Implementation
 
 [Implement - Remote Monitor - Dell Hardware Monitoring](https://proval.itglue.com/DOC-5078775-15248345)
+
 
 

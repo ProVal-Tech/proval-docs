@@ -14,6 +14,7 @@ This is a wrapper script that executes the [Script - Cisco Secure Client - Packa
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\Cisco-Secure-Client---Package-Installation-Wrapper\image_1.png)
+![Sample Run](../../../static/img/Cisco-Secure-Client---Package-Installation-Wrapper/image_1.png)
+
 
 

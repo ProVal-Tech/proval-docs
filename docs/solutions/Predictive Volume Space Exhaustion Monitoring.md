@@ -29,16 +29,16 @@ The goal of the solution is to monitor the trend of drive space utilization and 
    - [Dataview - Volume Exhaustion Estimations [Remote Monitor]](https://proval.itglue.com/DOC-5078775-16284179)
 
 2. Reload the system cache:
-   ![Reload Cache](..\..\static\img\Predictive-Volume-Space-Exhaustion-Monitoring\image_1.png)
+   ![Reload Cache](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_1.png)
 
 3. Debug the [Predictive Volume Exhaustion Monitor Creation](https://proval.itglue.com/DOC-5078775-16284178) script against any random client with the `Set_Environment` parameter set to `1` to create the system properties and the extra data fields used by the script. It will also remove the deprecated version of the solution from the environment.
-   ![Debugging](..\..\static\img\Predictive-Volume-Space-Exhaustion-Monitoring\image_2.png)
+   ![Debugging](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_2.png)
 
 4. Set the `System Properties` and `EDFs` as required.
 
 5. Navigate to System > Configuration > Dashboard > Management > Scheduled Scripts
    - Schedule the [Predictive Volume Exhaustion Monitor Creation](https://proval.itglue.com/DOC-5078775-16284178) script to run once per day during afterhours.
-   ![Schedule Script](..\..\static\img\Predictive-Volume-Space-Exhaustion-Monitoring\image_3.png)
+   ![Schedule Script](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_3.png)
 
 ## Notes
 
@@ -59,5 +59,6 @@ The goal of the solution is to monitor the trend of drive space utilization and 
 - PVE_Monitoring_Workstation_AuditOnly
 
 Setting the `_AuditOnly` properties will enable the [Volume Space Sampling](https://proval.itglue.com/DOC-5078775-16290380) monitors instead of [Volume Space Prediction](https://proval.itglue.com/DOC-5078775-16290374). The audited data is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](https://proval.itglue.com/DOC-5078775-16284179) dataview.
+
 
 

@@ -19,7 +19,7 @@ unlisted: false
   SELECT 
   '' as `SensID`,
   'All Computers Excluding Domain Controllers' as `Name`,
-  'SELECT \r\n computers.computerid as `Computer Id`,\r\n computers.name as `Computer Name`,\r\n clients.name as `Client Name`,\r\n computers.domain as `Computer Domain`,\r\n computers.username as `Computer User`,\r\n Computers.Domain as `Computer.Network.Domain`,\r\n IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'windows\')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'darwin\') >0, 2, 3)) as `Computer.OS.Type`\r\nFROM Computers \r\nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)\r\nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)\r\nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)\r\n WHERE \r\n((((NOT ((Computers.Domain like \'DC:%\'))) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'windows\')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'darwin\') >0, 2, 3)) = \'1\'))))\r\n' as `SQL`,
+  'SELECT /r/n computers.computerid as `Computer Id`,/r/n computers.name as `Computer Name`,/r/n clients.name as `Client Name`,/r/n computers.domain as `Computer Domain`,/r/n computers.username as `Computer User`,/r/n Computers.Domain as `Computer.Network.Domain`,/r/n IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'windows/')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'darwin/') >0, 2, 3)) as `Computer.OS.Type`/r/nFROM Computers /r/nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)/r/nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)/r/nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)/r/n WHERE /r/n((((NOT ((Computers.Domain like /'DC:%/'))) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'windows/')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'darwin/') >0, 2, 3)) = /'1/'))))/r/n' as `SQL`,
   '4' as `QueryType`,
   'Select||=||=||=|^Select|||||||^' as `ListData`,
   '3' as `FolderID`,
@@ -48,9 +48,9 @@ unlisted: false
     '3600' as `interval`,
     '127.0.0.1' as `Where`,
     '7' as `What`,
-    'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$domaincheck = ( Get-Ciminstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).domainrole -notin (4,5); $psversion = $psversiontable.psversion.Major -ge 5; if ( $domaincheck -and $psversion ) {[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = \'Get-NewLocalAdmin\'; $WorkingDirectory = "C:\\ProgramData\\_Automation\\Script\\$ProjectName\\"; $scriptpath = "$($WorkingDirectory)\\$($ProjectName).ps1\\"; $scripturl = \'https://file.provaltech.com/repo/script/Get-NewLocalAdmin.ps1\'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath);$op= & $scriptpath; $op | Select-Object -Property Name, Sid, ProfileImagePath | Where-Object { $_.Name -Match \'[A-z0-9\\._]\' } | Format-List} else {return \'Unsupported\'}"' as `DataOut`,
+    'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$domaincheck = ( Get-Ciminstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).domainrole -notin (4,5); $psversion = $psversiontable.psversion.Major -ge 5; if ( $domaincheck -and $psversion ) {[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = /'Get-NewLocalAdmin/'; $WorkingDirectory = "C://ProgramData//_Automation//Script//$ProjectName//"; $scriptpath = "$($WorkingDirectory)//$($ProjectName).ps1//"; $scripturl = /'https://file.provaltech.com/repo/script/Get-NewLocalAdmin.ps1/'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath);$op= & $scriptpath; $op | Select-Object -Property Name, Sid, ProfileImagePath | Where-Object { $_.Name -Match /'[A-z0-9//._]/' } | Format-List} else {return /'Unsupported/'}"' as `DataOut`,
     '16' as `Comparor`,
-    '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Name)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Name' as `DataIn`,
+    '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Name)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Name' as `DataIn`,
     '' as `IDField`,
     '0' as `AlertStyle`,
     '0' as `ScriptID`,
@@ -123,9 +123,9 @@ unlisted: false
     '3600' as `interval`,
     '127.0.0.1' as `Where`,
     '7' as `What`,
-    'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$domaincheck = ( Get-Ciminstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).domainrole -notin (4,5); $psversion = $psversiontable.psversion.Major -ge 5; if ( $domaincheck -and $psversion ) {[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = \'Get-NewLocalAdmin\'; $WorkingDirectory = "C:\\ProgramData\\_Automation\\Script\\$ProjectName\\"; $scriptpath = "$($WorkingDirectory)\\$($ProjectName).ps1\\"; $scripturl = \'https://file.provaltech.com/repo/script/Get-NewLocalAdmin.ps1\'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath);$op= & $scriptpath; $op | Select-Object -Property Name, Sid, ProfileImagePath | Where-Object { $_.Name -Match \'[A-z0-9\\._]\' } | Format-List} else {return \'Unsupported\'}"' as `DataOut`,
+    'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$domaincheck = ( Get-Ciminstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).domainrole -notin (4,5); $psversion = $psversiontable.psversion.Major -ge 5; if ( $domaincheck -and $psversion ) {[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = /'Get-NewLocalAdmin/'; $WorkingDirectory = "C://ProgramData//_Automation//Script//$ProjectName//"; $scriptpath = "$($WorkingDirectory)//$($ProjectName).ps1//"; $scripturl = /'https://file.provaltech.com/repo/script/Get-NewLocalAdmin.ps1/'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath);$op= & $scriptpath; $op | Select-Object -Property Name, Sid, ProfileImagePath | Where-Object { $_.Name -Match /'[A-z0-9//._]/' } | Format-List} else {return /'Unsupported/'}"' as `DataOut`,
     '16' as `Comparor`,
-    '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Name)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Name' as `DataIn`,
+    '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Name)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Name' as `DataIn`,
     '' as `IDField`,
     '0' as `AlertStyle`,
     '0' as `ScriptID`,
@@ -195,9 +195,10 @@ unlisted: false
 - Check the concerned groups, ensure the monitor set is created and configured with the correct search, and apply the appropriate alert template.  
   **Limit To:** `All Computers Excluding Domain Controllers`  
   **Alert Template:** `△ Custom - Ticket Creation Computer - Failures Only`  
-  ![Image](..\..\..\static\img\Implement--New-Local-Admin\image_1.png)
+  ![Image](../../../static/img/Implement--New-Local-Admin/image_1.png)
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
-  ![Image](..\..\..\static\img\Implement--New-Local-Admin\image_2.png)
+  ![Image](../../../static/img/Implement--New-Local-Admin/image_2.png)
+
 
 

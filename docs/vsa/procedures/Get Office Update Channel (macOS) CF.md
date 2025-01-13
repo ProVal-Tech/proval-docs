@@ -29,25 +29,26 @@ The data this procedure gathers does not exist by default on macOS. To populate 
 
 Export the agent procedure from ProVal's VSA RMM instance  
 Name: Get Office Update Channel (macOS) [CF]  
-![Export Image 1](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_1.png)  
+![Export Image 1](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_1.png)  
 The export will download the necessary XML file.  
-![Export Image 2](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_2.png)  
+![Export Image 2](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_2.png)  
 Import this XML file into the partner's VSA RMM instance  
-![Import Image](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_3.png)  
+![Import Image](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_3.png)  
 
 Once imported, create a custom field in the partner environment  
 Name: cPVAL Office Update Channel  
 Custom Field Type: String  
-![Custom Field Image](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_4.png)  
+![Custom Field Image](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_4.png)  
 
 ## Output
 
 Last Exec Status of success is expected.  
-![Output Image 1](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_5.png)  
+![Output Image 1](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_5.png)  
 Agent Procedure Log  
-![Output Image 2](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_6.png)  
+![Output Image 2](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_6.png)  
 
 Custom Field  
-![Custom Field Image 2](..\..\..\static\img\Get-Office-Update-Channel-(macOS)-CF\image_7.png)  
+![Custom Field Image 2](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_7.png)  
+
 
 

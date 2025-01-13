@@ -14,7 +14,7 @@ This script will create or modify the registry for multiple keys/names/values/ty
 
 ## Sample Run
 
-![Sample Run](..\..\static\img\Generic-Registry-Editor\image_1.png)
+![Sample Run](../../static/img/Generic-Registry-Editor/image_1.png)
 
 ## Variables
 
@@ -26,7 +26,7 @@ This script will create or modify the registry for multiple keys/names/values/ty
 
 | Name                | Example                                                   | Required | Description                                                                                                                                                 |
 |---------------------|-----------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Keys                | 'HKLM:\\SYSTEM\\CurrentControlSet\\Control','HKLM:\\SOFTWARE\\Policies\\Microsoft' | True     | The registry keys list that needs to be created or modified. It is required to put registry keys inside a single quote and separated by commas.          |
+| Keys                | 'HKLM://SYSTEM//CurrentControlSet//Control','HKLM://SOFTWARE//Policies//Microsoft' | True     | The registry keys list that needs to be created or modified. It is required to put registry keys inside a single quote and separated by commas.          |
 | Names               | 'LsaCfgFlags','LsaCfgFlags'                              | True     | The names list that needs to be created or modified. It is required to put names inside a single quote and separated by commas.                          |
 | Values              | '0','0'                                                 | True     | The values list that needs to be created or modified. It is required to put values inside a single quote and separated by commas.                        |
 | Types               | 'DWORD','STRING'                                       | True     | The Types list that needs to be created or modified. It is required to put Types inside a single quote and separated by commas. The various keys are: String, ExpandString, Binary, DWord, MultiString, QWord |
@@ -50,6 +50,7 @@ This script will create or modify the registry for multiple keys/names/values/ty
 2. Does the length of the parameters required to be the same for getting it to work?  
    Yes, the parameter needed to be of the same length.  
    For example: If you have put two keys for modifications, you have to provide two names, two values, and two types irrespective of whether any of the parameters have the same value or not.
+
 
 
 

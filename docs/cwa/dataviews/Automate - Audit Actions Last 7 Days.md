@@ -22,3 +22,4 @@ This Dataview provides the audit activities of the users in Automate for the las
 | HistoryDate  | Displays the date of the action taken by the user |
 
 
+

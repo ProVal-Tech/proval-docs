@@ -14,7 +14,7 @@ This script is customized for a particular client and aims to fulfill the reques
 
 ## Sample Run
 
-![Sample Run](..\..\..\static\img\DNS-Filter-Agent---Install-Global\image_1.png)
+![Sample Run](../../../static/img/DNS-Filter-Agent---Install-Global/image_1.png)
 
 ## Variables
 
@@ -41,5 +41,6 @@ This script is customized for a particular client and aims to fulfill the reques
 
 - Script Log
 - Ticket
+
 
 

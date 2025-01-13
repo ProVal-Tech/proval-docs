@@ -31,3 +31,4 @@ Stores information from [https://github.com/NCSC-NL/log4shell/blob/main/software
 | Links    | VARCHAR | Links about the application's vulnerability.      |
 
 
+

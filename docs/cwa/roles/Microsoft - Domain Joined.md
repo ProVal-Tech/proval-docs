@@ -20,3 +20,4 @@ This role definition helps you track machines which are domain joined.
 
 
 
+
