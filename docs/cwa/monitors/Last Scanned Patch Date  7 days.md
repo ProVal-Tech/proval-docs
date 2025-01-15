@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-autofix-script'
+id: '43acf895-0eee-4e39-ac9d-cabc5f23e9a1'
 title: 'Monitor Autofix Script for Patch Inventory'
 title_meta: 'Monitor Autofix Script for Patch Inventory'
 keywords: ['monitor', 'autofix', 'patch', 'inventory', 'script']
@@ -19,6 +19,9 @@ The monitor set will look for the machines where patch inventory is older than 7
 ## Target
 
 Global - Should be run without explicitly defined targets. The SQL will target machines with patching policies automatically.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hp-server-event-monitor'
+id: '403cec59-3602-4630-afc8-674d1887046d'
 title: 'HP Server Event Monitor'
 title_meta: 'HP Server Event Monitor'
 keywords: ['hp', 'monitor', 'event', 'server', 'management']
@@ -45,6 +45,9 @@ The monitor set should be limited to the `HP Servers` search.
 
 **Body:** `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%`
+
+
+
 
 
 

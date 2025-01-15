@@ -1,5 +1,5 @@
 ---
-id: 'cwa_proval_uptime_measurement'
+id: 'b3a711f5-7e0f-4b8a-948c-19cf5721539e'
 title: 'Proval Uptime Measurement in ConnectWise Automate'
 title_meta: 'Proval Uptime Measurement in ConnectWise Automate'
 keywords: ['connectwise', 'uptime', 'measurement', 'database', 'events']
@@ -33,6 +33,9 @@ These tables are filled by the Events `ProvalUptime` and `ProvalUptimeDays`. The
 | ComputerID    | INT      | The ComputerID of the measured agent.                 |
 | PercentOnline  | DOUBLE   | The percentage of time that the agent was online on the specified SampleDate. |
 | SampleDate    | DATE     | The date of the measurements used to calculate the PercentOnline. |
+
+
+
 
 
 

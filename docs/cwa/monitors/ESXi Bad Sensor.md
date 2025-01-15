@@ -1,5 +1,5 @@
 ---
-id: 'cwa-esxi-host-bad-sensor-monitor'
+id: '2f8424d7-00aa-4cee-a4fb-56cbc412108b'
 title: 'ESXi Host Bad Sensor Monitor'
 title_meta: 'ESXi Host Bad Sensor Monitor'
 keywords: ['esxi', 'monitor', 'alert', 'sensor', 'vmware', 'virtualization']
@@ -24,6 +24,9 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group, however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
+
+
+
 
 
 

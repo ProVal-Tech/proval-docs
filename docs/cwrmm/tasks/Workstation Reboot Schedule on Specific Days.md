@@ -1,5 +1,5 @@
 ---
-id: 'rmm-workstation-reboot-schedule'
+id: '0957012a-a6da-4e1b-abec-936a0a467e6a'
 title: 'Workstation Reboot Schedule on Specific Days'
 title_meta: 'Workstation Reboot Schedule on Specific Days'
 keywords: ['reboot', 'schedule', 'workstation', 'automation', 'script']
@@ -427,6 +427,9 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
+
+
+
 
 
 

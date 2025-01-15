@@ -1,5 +1,5 @@
 ---
-id: 'cwa-manual-script-status-email'
+id: 'aff3413b-574f-4399-8f4b-85e04d388c5a'
 title: 'Manual Script Schedule - Status Email'
 title_meta: 'Manual Script Schedule - Status Email'
 keywords: ['email', 'monitor', 'script', 'status']
@@ -24,6 +24,9 @@ This script should be utilized as an autofix to monitor [Manual Script Schedule 
 
 - Email
 - Script Log
+
+
+
 
 
 

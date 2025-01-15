@@ -31,3 +31,6 @@ Note: The removal parameters are not currently documented, so it is currently un
     .\Remove-McAfeeSoftware-log.txt
     .\Remove-McAfeeSoftware-error.txt
 
+
+
+

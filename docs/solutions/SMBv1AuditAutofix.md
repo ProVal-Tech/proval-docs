@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smbv1-audit-autofix'
+id: '343654e4-9263-4fec-87c1-3c3401a94e95'
 title: 'SMBv1 Audit and Autofix Solution'
 title_meta: 'SMBv1 Audit and Autofix Solution'
 keywords: ['smbv1', 'audit', 'autofix', 'monitor', 'ticketing']
@@ -101,6 +101,9 @@ Optionally, if the client wants, we can enable ticketing to monitor the SMB1 tra
 ![Traffic Detection Ticketing](../../static/img/SMBv1AuditAutofix/image_4.png)
 
 Note: This should only be implemented if the consultant approves it.
+
+
+
 
 
 

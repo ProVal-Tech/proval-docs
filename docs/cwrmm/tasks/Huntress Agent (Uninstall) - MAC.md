@@ -1,5 +1,5 @@
 ---
-id: 'cwa-huntress-agent-uninstall-mac'
+id: 'd21f56f3-43d8-4080-a7f0-ae57c27465e2'
 title: 'Huntress Agent (Uninstall) - MAC'
 title_meta: 'Huntress Agent (Uninstall) - MAC'
 keywords: ['uninstall', 'huntress', 'mac', 'agent', 'script']
@@ -121,6 +121,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-profile-info'
+id: 'da3a0d43-7bdd-4408-99ce-138337eecb43'
 title: 'Windows User Profile Information'
 title_meta: 'Windows User Profile Information'
 keywords: ['windows', 'user', 'profile', 'information', 'computer', 'account', 'local', 'admin', 'sid', 'lastlogon']
@@ -34,6 +34,9 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | IsAdmin        | Shows if the user is a local admin.                                                                      |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
+
+
+
 
 
 

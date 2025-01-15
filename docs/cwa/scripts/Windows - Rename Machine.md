@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rename-windows-machine'
+id: 'f88eab26-01ca-479c-9918-25c6c020d240'
 title: 'Rename a Windows Machine'
 title_meta: 'Rename a Windows Machine - Efficiently Change Computer Names'
 keywords: ['windows', 'rename', 'machine', 'automation', 'configuration']
@@ -59,6 +59,9 @@ If there are errors in the run of the script, an error file will be generated:
 ```
 ./Rename-Machine-error.txt
 ```
+
+
+
 
 
 

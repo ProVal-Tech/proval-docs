@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-client-edf'
+id: '7ea5c70f-f33b-4cf5-88ca-80e66fa68535'
 title: 'Update Client EDF from Webroot Plugin'
 title_meta: 'Update Client EDF from Webroot Plugin'
 keywords: ['client', 'edf', 'webroot', 'plugin', 'autodeploy']
@@ -31,6 +31,9 @@ This client script will update the client EDFs value from the Webroot plugin onl
 ## Output
 
 - EDF
+
+
+
 
 
 

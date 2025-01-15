@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-latest-version-monitor'
+id: 'f5315643-b01b-48e6-ae4c-b89e5c0f20d6'
 title: 'Winget Latest Version Monitor'
 title_meta: 'Winget Latest Version Monitor'
 keywords: ['monitor', 'winget', 'application', 'upgrade', 'version']
@@ -26,6 +26,9 @@ This script is only targeted to one machine to fetch the Application's latest ve
 
 1. Import the monitor.  
    Create a duplicate of the monitor and remove the imported monitor so there is no confusion.  
+
+
+
 
 
 

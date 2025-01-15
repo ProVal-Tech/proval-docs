@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-user-db-permissions'
+id: '0b0783d1-3438-4983-b212-bf5d1e3ae26c'
 title: 'Update User DB Permissions for ProVal Tables'
 title_meta: 'Update User DB Permissions for ProVal Tables'
 keywords: ['permissions', 'proval', 'database', 'monitor', 'tables']
@@ -28,6 +28,9 @@ Tables:
 ## Target
 
 - Global - Should be run without explicitly defined targets.
+
+
+
 
 
 

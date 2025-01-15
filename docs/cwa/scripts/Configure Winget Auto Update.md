@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-autoupdate-configuration'
+id: '1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55'
 title: 'Winget AutoUpdate Configuration'
 title_meta: 'Winget AutoUpdate Configuration'
 keywords: ['winget', 'autoupdate', 'configuration', 'monitor', 'script']
@@ -147,6 +147,9 @@ Script's default nature is to compare the existing configuration before running 
   - Winget-AutoUpdate-Notify
   - Winget-AutoUpdate-Policies
   - Winget-AutoUpdate-UserContext
+
+
+
 
 
 

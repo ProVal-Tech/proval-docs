@@ -1,12 +1,12 @@
 ---
-id: 'cwa-install-connectwise-manager-client'
+id: '9f2510e4-8cc1-40d6-a7bc-a5098073159c'
 title: 'Install or Upgrade ConnectWise Manager Internet Client to Version 22.2.1'
 title_meta: 'Install or Upgrade ConnectWise Manager Internet Client to Version 22.2.1'
 keywords: ['connectwise', 'installer', 'upgrade', 'client', 'version', '22.2.1']
 description: 'This document provides a detailed guide on installing or upgrading the ConnectWise Manager Internet Client to version 22.2.1, including dependencies, variables, and the process to follow for successful installation.'
 tags: ['installation', 'update', 'software', 'connectwise']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -46,6 +46,9 @@ Installs or upgrades the current Connectwise Manager Internet Client to version 
 - Check for ConnectWise Manage Client 64-bit. If not there, delete the temp file, log the state, and exit with error.
 - Delete the temp file.
 - Log success and exit.
+
+
+
 
 
 

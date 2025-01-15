@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-updates-monitor'
+id: '6cfe8a08-851e-42fe-8999-c4526007f572'
 title: 'Windows Updates Monitor for ConnectWise Automate'
 title_meta: 'Windows Updates Monitor for ConnectWise Automate'
 keywords: ['windows', 'updates', 'monitor', 'patch', 'security']
@@ -61,6 +61,9 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
+
+
 
 
 

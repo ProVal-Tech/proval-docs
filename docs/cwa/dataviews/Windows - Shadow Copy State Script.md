@@ -1,5 +1,5 @@
 ---
-id: 'cwa-shadow-copy-audit'
+id: '69110f54-d14f-4691-a68f-56bbc88b5fb3'
 title: 'Shadow Copy Audit DataView'
 title_meta: 'Shadow Copy Audit DataView for Windows Endpoints'
 keywords: ['shadow', 'copy', 'audit', 'dataview', 'windows', 'statistics']
@@ -35,6 +35,9 @@ This dataview will display the Windows Shadow Copy state for endpoints with Shad
 | Used Space by Shadow Copy (GB)          | Used space size by the Shadow Copy in GB                               |
 | Allocated Size of Shadow Copy (GB)      | Allocated space size for the Shadow Copy in GB                         |
 | Maximum Space Provided to Shadow Copy (GB)| Maximum space provided to the Shadow Copy in GB                       |
+
+
+
 
 
 

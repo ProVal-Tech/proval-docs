@@ -1,5 +1,5 @@
 ---
-id: 'cwa-steps-to-apply-remote-monitor'
+id: '9bf4d628-655e-4568-bea6-dfd0544a1a56'
 title: 'Steps to Apply Remote Monitor'
 title_meta: 'Steps to Apply Remote Monitor'
 keywords: ['remote', 'monitor', 'groupid', 'query', 'alert', 'template']
@@ -209,6 +209,9 @@ Limit the remote monitor to a search, if necessary.
 
 ### 7.
 Apply the appropriate alert template to the remote monitors.
+
+
+
 
 
 

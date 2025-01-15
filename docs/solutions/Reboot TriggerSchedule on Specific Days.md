@@ -1,5 +1,5 @@
 ---
-id: 'rmm-reboot-scheduling-solution'
+id: '86fee99f-6e26-440b-b6a4-6c0eb32fd240'
 title: 'Reboot Scheduling Solution'
 title_meta: 'Reboot Scheduling Solution for Target Machines'
 keywords: ['reboot', 'schedule', 'customfields', 'workstation', 'server', 'implementation']
@@ -29,6 +29,9 @@ This solution helps to allow users to trigger the reboot immediately or schedule
 - Create the [Force Reboot Server With Reboot Windows Verification](https://proval.itglue.com/DOC-5078775-15505510) and follow the deployment instructions.
 - Create the [Server Reboot Schedule on Specific Days](https://proval.itglue.com/DOC-5078775-15503048) and follow the deployment instructions.
 - Create the [Workstation Reboot Schedule on Specific Days](https://proval.itglue.com/DOC-5078775-15505168) and follow the deployment instructions.
+
+
+
 
 
 

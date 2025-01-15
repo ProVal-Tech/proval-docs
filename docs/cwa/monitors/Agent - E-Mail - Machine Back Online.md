@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-online-alert-email'
+id: '82c2d005-f115-4481-8c59-82b22526eafa'
 title: 'Monitor for Online Alert E-mail in ConnectWise Automate'
 title_meta: 'Monitor for Online Alert E-mail in ConnectWise Automate'
 keywords: ['monitor', 'alert', 'connectwise', 'email', 'computer']
@@ -23,6 +23,9 @@ Alert Template: △ Custom - E-Mail - Machine Back Online
 ## Target
 
 Global
+
+
+
 
 
 

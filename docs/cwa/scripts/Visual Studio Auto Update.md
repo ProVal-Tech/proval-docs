@@ -1,5 +1,5 @@
 ---
-id: 'ps-visual-studio-auto-updates'
+id: '611414aa-ae0b-46f3-92e4-4a99a42e6719'
 title: 'Visual Studio Auto Updates Script'
 title_meta: 'Visual Studio Auto Updates Script'
 keywords: ['visualstudio', 'updates', 'script', 'automation', 'enterprise', 'community']
@@ -42,6 +42,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ltredirsrv-monitoring'
+id: '33120745-9fa1-4864-aff6-b97d083e3fd5'
 title: 'LTRedirSVC Monitoring for Automate Server'
 title_meta: 'LTRedirSVC Monitoring for Automate Server'
 keywords: ['automate', 'monitoring', 'service', 'alert', 'ticket']
@@ -29,6 +29,9 @@ It should be created against the "Labtech Server" group for the on-prem partners
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers.Server Roles.MSP Specific Servers.Labtech Server
+
+
+
 
 
 

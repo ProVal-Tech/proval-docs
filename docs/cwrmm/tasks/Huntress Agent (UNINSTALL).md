@@ -1,5 +1,5 @@
 ---
-id: 'rmm-huntress-agent-uninstall'
+id: '12b83efc-afab-463a-a26e-d94e9e963d96'
 title: 'Uninstalling the Huntress Agent on Windows'
 title_meta: 'Uninstalling the Huntress Agent on Windows'
 keywords: ['uninstall', 'huntress', 'windows', 'agent', 'script']
@@ -165,6 +165,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

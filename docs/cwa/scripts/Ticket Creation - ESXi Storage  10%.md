@@ -1,5 +1,5 @@
 ---
-id: 'cwa_ticket_creation_esxi_low_storage'
+id: '61158e8d-5349-418a-9cd8-81685d622846'
 title: 'ESXi Low Storage Space Ticket Creation'
 title_meta: 'ESXi Low Storage Space Ticket Creation'
 keywords: ['esxi', 'ticket', 'monitor', 'storage', 'low', 'vmware']
@@ -43,6 +43,9 @@ This script's only dependency is that the monitor that is triggering the script 
 > <VM Name>  
 >  
 > <Datastores with low disk space listed here>  
+
+
+
 
 
 

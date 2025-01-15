@@ -1,5 +1,5 @@
 ---
-id: 'cwa_disk_cleanup_mac'
+id: '08cd231a-c14d-4d61-a774-eba3f69e91bf'
 title: 'Disk Cleanup Script for MAC Devices'
 title_meta: 'Disk Cleanup Script for MAC Devices'
 keywords: ['cleanup', 'mac', 'disk', 'script', 'maintenance']
@@ -30,6 +30,9 @@ This script performs a disk cleanup on a MAC device.
 ## Output
 
 - Script Logs
+
+
+
 
 
 

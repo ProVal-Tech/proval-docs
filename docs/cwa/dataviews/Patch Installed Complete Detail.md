@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-information'
+id: '0f445886-adfb-4eb2-844f-f945264bebd7'
 title: 'Detailed Patching Information on Agents'
 title_meta: 'Detailed Patching Information on Agents'
 keywords: ['patching', 'agents', 'installation', 'update', 'computer', 'status']
@@ -25,6 +25,9 @@ This dataview contains detailed information about patching on the agent. (Date i
 | Patching Operation   | Patching operation to show whether patch is installing, uninstalling, or stuck on rollback     |
 | Patching Result     | State of patch whether successfully installed, running or failed                                |
 | Operating System    | Operating system of the agent                                                                   |
+
+
+
 
 
 

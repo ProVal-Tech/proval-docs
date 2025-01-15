@@ -1,5 +1,5 @@
 ---
-id: 'cwa_install-update-duo'
+id: '99a31695-f399-4982-989b-5fbc3aada8c6'
 title: 'Install or Update DUO Authentication for Windows'
 title_meta: 'Install or Update DUO Authentication for Windows'
 keywords: ['duo', 'authentication', 'windows', 'installer', 'update']
@@ -100,6 +100,9 @@ duo-win-login-latest.exe /S /V"/qn IKEY=/"Your_IKEY/" SKEY=/"Your_SKEY/" HOST=/"
 ## Output
 
 - Script log
+
+
+
 
 
 

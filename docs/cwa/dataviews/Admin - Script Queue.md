@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-queued-running-scripts'
+id: '48349316-f40f-4dd7-a36c-c5121232e9fe'
 title: 'Audit Queued and Running Scripts in Automate'
 title_meta: 'Audit Queued and Running Scripts in Automate'
 keywords: ['audit', 'scripts', 'automate', 'running', 'queued']
@@ -21,6 +21,9 @@ This dataview helps you audit the queued and running scripts in Automate.
 | ScriptID          | Display the script ID.                               |
 | TotalCount        | Displays the total number of times the script is executed. |
 | RunningPercentage  | Displays the script running percentage.              |
+
+
+
 
 
 

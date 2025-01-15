@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cu-compliance-metrics-clients'
+id: '965bd890-074b-4217-bba2-e9ddb4a3109d'
 title: 'CU Compliance Metrics - Clients'
 title_meta: 'CU Compliance Metrics - Clients'
 keywords: ['compliance', 'clients', 'sql', 'cumulative', 'updates', 'windows', 'patching']
@@ -42,6 +42,9 @@ The data is grouped by client.
 | Eol %                           | Proportion of Outdated Machines Ineligible for Cumulative Updates.                             |
 | Total Eligible Computers - CU   | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. |
 | Data Missing                    | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. |
+
+
+
 
 
 

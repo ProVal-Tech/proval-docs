@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agent-checkin-status'
+id: '72e598df-0fcf-471d-9ee8-030986141642'
 title: 'Agent Check-In Status Overview in CWA'
 title_meta: 'Agent Check-In Status Overview in CWA'
 keywords: ['agent', 'checkin', 'status', 'remediation', 'script']
@@ -34,6 +34,9 @@ This dataview will provide information about an agent's check-in status in CWA a
 | Clientid                     | Clientid (Hidden)                                                                                                   |
 | Locationid                   | Locationid (Hidden)                                                                                                 |
 | Computerid                   | Computerid (Hidden)                                                                                                 |
+
+
+
 
 
 

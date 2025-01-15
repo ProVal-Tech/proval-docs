@@ -1,5 +1,5 @@
 ---
-id: 'rmm-audit-bitlocker-endpoint'
+id: '58ddde1a-dfdd-4eb8-9024-608e7c57ad4f'
 title: 'Audit BitLocker Endpoint'
 title_meta: 'Audit BitLocker Endpoint'
 keywords: ['bitlocker', 'encryption', 'endpoint', 'audit', 'recovery']
@@ -42,6 +42,9 @@ Sample Output:
 - Bitlocker Encryption in Progress on Drive X:
 - Bitlocker enabled on Drive X, No recovery key available
 - Drive X: recovery key: dm9ij30d-k4i30jf0-moqiw4oid-oijqwoeij-0qiwjeoqiwj
+
+
+
 
 
 

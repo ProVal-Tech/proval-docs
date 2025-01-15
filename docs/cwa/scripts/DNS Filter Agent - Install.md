@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-dns-filter-agent'
+id: 'f281c866-d1a8-44fd-9412-388b5f06200b'
 title: 'Install DNS Filter Agent'
 title_meta: 'Install DNS Filter Agent for Macintosh and Windows Workstations'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
@@ -47,6 +47,9 @@ This script installs the DNS Filter agent to the machines. It is compatible with
 
 - Script Log
 - Ticket
+
+
+
 
 
 

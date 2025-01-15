@@ -1,5 +1,5 @@
 ---
-id: 'rmm-huntress-agent-repair'
+id: 'ebe382f4-d3cb-47be-84e1-c82009fd745a'
 title: 'Huntress Agent Repair Script'
 title_meta: 'Huntress Agent Repair Script'
 keywords: ['huntress', 'agent', 'repair', 'script', 'automation']
@@ -243,6 +243,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

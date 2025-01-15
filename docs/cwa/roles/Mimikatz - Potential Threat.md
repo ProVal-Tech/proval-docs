@@ -1,5 +1,5 @@
 ---
-id: 'cwa-checks-registry-for-credential-flag'
+id: 'd4cae7e3-3abd-44b5-a9d9-7a0668834050'
 title: 'Checks Registry for Credential Flag'
 title_meta: 'Checks Registry for Credential Flag'
 keywords: ['registry', 'credentials', 'security', 'vulnerability', 'threat']
@@ -23,6 +23,9 @@ If it is not set but exists - system is vulnerable - see [Mimikatz - Vulnerable]
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 1      | Windows        |
+
+
+
 
 
 

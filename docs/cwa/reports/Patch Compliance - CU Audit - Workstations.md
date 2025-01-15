@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-compliance-cu-audit-workstations'
+id: 'bbeeb6dd-3c9b-49f0-ae6d-ef6f543d2174'
 title: 'Patch Compliance - CU Audit - Workstations'
 title_meta: 'Patch Compliance - CU Audit - Workstations'
 keywords: ['patch', 'compliance', 'audit', 'workstations', 'report']
@@ -25,6 +25,9 @@ This report is dependent on the following items:
 [![Report Center - Workstations](thumbnail/2024-11-26_15_26_20-Report_Center_-_Workstations.png)](large/2024-11-26_15_26_20-Report_Center_-_Workstations.png)
 [![Report Center - EOL - Workstations](thumbnail/2024-11-26_15_32_07-Report_Center_-_EOL_-_Workstations.png)](large/2024-11-26_15_32_07-Report_Center_-_EOL_-_Workstations.png)
 [![Report Center - No Audit Info](thumbnail/2024-11-26_15_31_29-Report_Center_-_No_Audit_Info.png)](large/2024-11-26_15_31_29-Report_Center_-_No_Audit_Info.png)
+
+
+
 
 
 

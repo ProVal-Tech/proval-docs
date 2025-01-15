@@ -1,5 +1,5 @@
 ---
-id: 'cwa-overview-of-searches-in-automate'
+id: 'b896cc1a-061f-454a-acf6-0eb9b2563d6e'
 title: 'Overview of Searches in Automate'
 title_meta: 'Overview of Searches in Automate'
 keywords: ['search', 'automate', 'object', 'group', 'monitor']
@@ -21,6 +21,9 @@ Overview of the searches that are used in Automate at various locations.
 | Object Type  | Type of the object against which a search is applied (e.g., Group, Remote Monitor)            |
 | Object Name  | Name of the object against which the search is applied (e.g., Name of the Group, Name of the Remote Monitor) |
 | Group Path   | Full Path to the group over where the search is being used/applied.                           |
+
+
+
 
 
 

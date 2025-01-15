@@ -1,5 +1,5 @@
 ---
-id: 'cwa-out-of-date-cumulative-updates'
+id: '6a68b349-fa31-41d0-9a6c-80eef1a13fdb'
 title: 'Out Of Date Cumulative Updates Monitor'
 title_meta: 'Out Of Date Cumulative Updates Monitor'
 keywords: ['cumulative', 'update', 'monitor', 'alert', 'ticketing']
@@ -30,6 +30,9 @@ Global
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
 The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](https://proval.itglue.com/DOC-5078775-14790498) script.
+
+
+
 
 
 

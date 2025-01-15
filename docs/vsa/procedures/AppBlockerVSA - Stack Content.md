@@ -1,5 +1,5 @@
 ---
-id: 'vsa-controls-kaseya-app-blocker'
+id: 'd818696a-9347-40bb-9de8-bd7fad7fa782'
 title: 'Controls Kaseya App Blocker'
 title_meta: 'Controls Kaseya App Blocker'
 keywords: ['kaseya', 'app', 'blocker', 'ini', 'file', 'update']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Controls Kaseya App Blocker (updates kasyea ini file)
+
+
+
 
 
 

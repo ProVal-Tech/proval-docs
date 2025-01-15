@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-windows-firewall'
+id: '620de40a-ad15-4449-8022-4af75e319db7'
 title: 'Enable Windows Firewall for All Profiles'
 title_meta: 'Enable Windows Firewall for All Profiles'
 keywords: ['windows', 'firewall', 'profiles', 'security']
@@ -26,6 +26,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

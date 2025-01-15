@@ -1,5 +1,5 @@
 ---
-id: 'cwa_proval_ini_settings'
+id: '3ebaee48-b9a2-4d7b-b0ba-5b3003c97633'
 title: 'ProVal Recommended INI Settings for CWA'
 title_meta: 'ProVal Recommended INI Settings for CWA'
 keywords: ['ini', 'settings', 'cwa', 'proval', 'database']
@@ -57,6 +57,9 @@ Displays the current and ProVal recommended INI settings for CWA.
 | thread_cache_size                 | 38                              | 100                            |
 | tmp_table_size                    | 100663296                       | 100663296                      |
 | wait_timeout                      | 28800                           | 900                            |
+
+
+
 
 
 

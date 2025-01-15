@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-script-for-patch-monitoring'
+id: '05f60b47-188b-4383-9e9c-98780ba6e488'
 title: 'Autofix Script for Patch Monitoring'
 title_meta: 'Autofix Script for Patch Monitoring'
 keywords: ['autofix', 'monitor', 'patch', 'scan', 'service']
@@ -53,6 +53,9 @@ This autofix script is called by the monitor [ProVal - Development - Last scanne
 
 - Script log messages only
 - Please reach out to [support@provaltech.com](mailto:support@provaltech.com) if you would like this solution to begin ticketing.
+
+
+
 
 
 

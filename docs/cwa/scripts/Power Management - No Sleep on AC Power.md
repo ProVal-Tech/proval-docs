@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sets-computer-to-not-sleep-when-plugged-in'
+id: '150f9b38-2ff8-457d-9293-943a2d038d04'
 title: 'Sets the Computer to Not Sleep When Plugged In'
 title_meta: 'Sets the Computer to Not Sleep When Plugged In'
 keywords: ['sleep', 'powercfg', 'never', 'exe', 'ac']
@@ -49,6 +49,9 @@ The script will download the EXE file and will execute it.
 ## Output
 
 - Script log
+
+
+
 
 
 

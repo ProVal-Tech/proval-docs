@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-intel-vulnerabilities'
+id: 'e49f2098-c95e-49d6-9626-fecbe89f9306'
 title: 'Remove Intel L1TF and Meltdown Vulnerabilities from Automate Environment'
 title_meta: 'Remove Intel L1TF and Meltdown Vulnerabilities from Automate Environment'
 keywords: ['intel', 'l1tf', 'meltdown', 'vulnerabilities', 'automate']
@@ -30,6 +30,9 @@ The script will remove the Intel L1TF and Intel Meltdown Solution from the Autom
 ## Output
 
 Script Log
+
+
+
 
 
 

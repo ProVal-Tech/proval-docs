@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-fastboot-monitor'
+id: '1325f458-9c0e-4021-b107-26df4360bbed'
 title: 'Remote Monitor to Disable Windows Fast Boot'
 title_meta: 'Remote Monitor to Disable Windows Fast Boot'
 keywords: ['monitor', 'fastboot', 'windows', 'registry', 'disable']
@@ -59,6 +59,9 @@ FastBoot is successfully disabled.
 
 Please follow the below document for the implementation step:  
 [Import - Remote Monitor - Windows Fast Boot disable](https://proval.itglue.com/DOC-5078775-15429553)  
+
+
+
 
 
 

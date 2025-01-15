@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unresponsive-huntress-agents-monitor'
+id: '6c4f37b4-d460-464b-bc03-fd1d46be2b0a'
 title: 'Setting Up Monitor for Unresponsive Huntress Agents'
 title_meta: 'Setting Up Monitor for Unresponsive Huntress Agents'
 keywords: ['huntress', 'monitor', 'sql', 'alert', 'setup']
@@ -256,6 +256,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ## Step 7
 Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor ![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_2.png)
+
+
+
 
 
 

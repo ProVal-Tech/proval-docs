@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-tls-ssl-settings'
+id: '0cbc05b7-cba3-4dd8-a8e9-9a369237362b'
 title: 'Audit TLS and SSL Settings in Internet Explorer'
 title_meta: 'Audit TLS and SSL Settings in Internet Explorer'
 keywords: ['tls', 'ssl', 'internet', 'explorer', 'audit', 'settings', 'security']
@@ -28,6 +28,9 @@ This dataview is a reflection of the audit script, to show which versions of TLS
 | Contact                     | Computer's assigned Contact (if any)              |
 | Contact Email               | Computer's assigned Contact Email (if any)       |
 | IE Advanced Security Status  | Lists out which versions of TLS and SSL are enabled |
+
+
+
 
 
 

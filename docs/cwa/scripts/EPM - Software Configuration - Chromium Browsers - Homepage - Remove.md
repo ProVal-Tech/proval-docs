@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-chromium-homepage'
+id: '8d741266-521f-4bdf-b921-9fe0c28a0648'
 title: 'Remove Chromium Homepage Configuration'
 title_meta: 'Remove Chromium Homepage Configuration'
 keywords: ['chromium', 'homepage', 'registry', 'browser', 'configuration']
@@ -38,6 +38,9 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
+
+
+
 
 
 

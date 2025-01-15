@@ -1,5 +1,5 @@
 ---
-id: 'rmm-local-admin-group-cleanup'
+id: 'd49db584-9380-486d-a179-c014352f8be1'
 title: 'Local Admin Group Cleanup Monitoring'
 title_meta: 'Local Admin Group Cleanup Monitoring - Detect Unexecuted Cleanup Processes'
 keywords: ['monitoring', 'cleanup', 'admin', 'windows', 'script']
@@ -23,6 +23,9 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Local Admin Group Cleanup`
+
+
+
 
 
 

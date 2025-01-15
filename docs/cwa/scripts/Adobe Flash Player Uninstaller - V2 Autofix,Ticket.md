@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-adobe-flash-player'
+id: 'a6c32cd9-8472-45cc-9260-3aa09510ce20'
 title: 'Uninstall Adobe Flash Player'
 title_meta: 'Uninstall Adobe Flash Player - Autofix Script'
 keywords: ['uninstall', 'adobe', 'flash', 'player', 'script']
@@ -37,6 +37,9 @@ If failed then it will try to uninstall using the Uninstaller Software script us
 ## Output
 
 - Script log
+
+
+
 
 
 

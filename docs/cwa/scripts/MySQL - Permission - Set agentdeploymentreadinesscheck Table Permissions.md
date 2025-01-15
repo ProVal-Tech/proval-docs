@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agentdeploymentreadinesscheck-permissions'
+id: '417bc415-aa42-401f-b748-0f2715e4a239'
 title: 'Agent Deployment Readiness Check Permissions Script'
 title_meta: 'Agent Deployment Readiness Check Permissions Script'
 keywords: ['permissions', 'database', 'users', 'hosted', 'on-prem', 'automation']
@@ -25,6 +25,9 @@ It's converted to a client script and should be scheduled to run every 12-24 hou
 | Name            | Description                                                                                             |
 |-----------------|---------------------------------------------------------------------------------------------------------|
 | UpdateStatements | The variable will store the SQL result which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
+
+
+
 
 
 

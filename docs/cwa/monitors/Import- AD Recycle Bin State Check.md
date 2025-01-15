@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-enable-recycle-bin'
+id: '7f37dfc1-5f0a-4f7d-bf9f-631ea653a74d'
 title: 'Enable AD Recycle Bin in ConnectWise Automate'
 title_meta: 'Enable AD Recycle Bin in ConnectWise Automate'
 keywords: ['ad', 'recycle', 'bin', 'connectwise', 'automate', 'sql', 'monitor']
@@ -123,6 +123,9 @@ WHERE
     m.groupid= @Groupid
     AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - AD Recycle Bin State Check')
 ```
+
+
+
 
 
 

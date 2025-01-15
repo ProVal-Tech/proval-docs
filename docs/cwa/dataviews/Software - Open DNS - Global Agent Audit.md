@@ -1,5 +1,5 @@
 ---
-id: 'cwa-global-dataview-windows-machines'
+id: 'ee9ae5d4-3ab4-462b-8d90-63a5604a18a4'
 title: 'Global Dataview for Windows Machines'
 title_meta: 'Global Dataview for Windows Machines'
 keywords: ['windows', 'dns', 'umbrella', 'msp', 'licensing']
@@ -25,6 +25,9 @@ Many MSPs set up OpenDNS on the LAN so all workstations connected via Ethernet (
 | Machine Type    | Displays whether the machine is a workstation or a server |
 | Wireless Card    | Displays whether the machine has a wireless card installed or not |
 | Umbrella Agent  | Displays whether the machine has an umbrella agent installed |
+
+
+
 
 
 

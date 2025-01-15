@@ -1,5 +1,5 @@
 ---
-id: 'vsa-firefox-extensions-audit'
+id: '6b79ea40-3f5f-451f-8b03-b6d93c4b099d'
 title: 'Firefox Extensions Audit'
 title_meta: 'Firefox Extensions Audit'
 keywords: ['firefox', 'extensions', 'audit', 'endpoint', 'inventory']
@@ -48,6 +48,9 @@ Runs the agnostic script to collect firefox extensions installed on an endpoint
 
 - Agent Procedure Log
 - Custom Field: xPVAL Firefox Extensions Installed
+
+
+
 
 
 

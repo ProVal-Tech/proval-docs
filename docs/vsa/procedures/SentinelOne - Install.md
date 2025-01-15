@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sentinelone-install-windows'
+id: 'e51e1f76-4cc2-4ad5-bc6d-74678c0109a3'
 title: 'SentinelOne Installation on Windows'
 title_meta: 'SentinelOne Installation on Windows'
 keywords: ['sentinelone', 'installation', 'windows', 'endpoint', 'background', 'teams']
@@ -55,6 +55,9 @@ Modify **[background.zip](http://background.zip)** to the name of the ZIP you've
 ## Output
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-infrastructure-masters'
+id: 'c2c2d22b-f735-4ec5-91a6-a014ab2e84a8'
 title: 'Infrastructure Masters Group'
 title_meta: 'Infrastructure Masters Group Overview'
 keywords: ['infrastructure', 'masters', 'domain', 'controllers', 'group']
@@ -30,6 +30,9 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure masters
 - Select `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator and type `Yes` in the condition box.
 - Click `Save` button at the top left to create the group.
+
+
+
 
 
 

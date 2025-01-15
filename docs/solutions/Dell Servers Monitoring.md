@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-dell-servers'
+id: '55ebada8-b333-4109-a97f-4f352a947662'
 title: 'Proactive Monitoring of Dell Servers using Dell OMSA'
 title_meta: 'Proactive Monitoring of Dell Servers using Dell OMSA'
 keywords: ['dell', 'servers', 'monitoring', 'omsa', 'alert', 'ticket', 'event', 'cache']
@@ -39,6 +39,9 @@ The purpose of the solution is to proactively monitor the issues with the Dell S
        - **IMPORTANT:** View the results of the monitor before enabling. If there are more than 20 results, confirm with the consultant if they would like it enabled.
          - Configure with the alert template: `<code>△ Custom - Ticket Creation - Computer</code>`
          - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

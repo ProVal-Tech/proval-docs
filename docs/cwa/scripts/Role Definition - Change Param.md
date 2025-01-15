@@ -1,5 +1,5 @@
 ---
-id: 'cwa-apply-ignore-role-script'
+id: '5c2faf09-3e8f-4dd0-978c-5863b443a3b9'
 title: 'Apply or Ignore Role Script'
 title_meta: 'Apply or Ignore Role Script for Environment Management'
 keywords: ['role', 'monitor', 'agent', 'sql', 'windows']
@@ -55,6 +55,9 @@ An SQL query is executed against the Automate DB to apply or ignore the role on 
 - **Action Missing** - Action not provided in Parameter
   
 - **Exit with Error** - Script failed to execute properly
+
+
+
 
 
 

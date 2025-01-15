@@ -1,5 +1,5 @@
 ---
-id: 'cwa-auditing-windows-updates'
+id: '991e926f-dcd2-4be3-9f3a-ea7ee9842da2'
 title: 'Auditing Windows 10 and 11 Cumulative Updates'
 title_meta: 'Auditing Windows 10 and 11 Cumulative Updates'
 keywords: ['windows', 'updates', 'cumulative', 'audit', 'autofix']
@@ -108,6 +108,9 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is setup to run only against machines that are not EOL or recently EOL (Within 30 days). If the machine is not EOL currently, check to make sure the monitor is setup to run against the group that machine is in.
+
+
+
 
 
 

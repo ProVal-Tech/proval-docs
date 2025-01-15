@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-modern-authentication-office-2013'
+id: 'b6a6f79c-ee8a-43f8-8965-98b1ce40a9a0'
 title: 'Enable or Disable Modern Authentication for Office 2013'
 title_meta: 'Enable or Disable Modern Authentication for Office 2013'
 keywords: ['modern', 'authentication', 'office', '2013', 'enable', 'disable']
@@ -43,6 +43,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

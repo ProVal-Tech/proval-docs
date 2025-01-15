@@ -1,5 +1,5 @@
 ---
-id: 'vsa-create-user-mac'
+id: 'ce59ba9b-4b3d-43ff-a009-c6d77e87ea83'
 title: 'Create a New User on Mac and Add to Local Admin Group'
 title_meta: 'Create a New User on Mac and Add to Local Admin Group'
 keywords: ['user', 'mac', 'admin', 'local', 'group']
@@ -18,6 +18,9 @@ Creates a new user on the mac and adds it to the local admin group.
 - creates the user structure
 - adds the password
 - adds the user to the local admin group
+
+
+
 
 
 

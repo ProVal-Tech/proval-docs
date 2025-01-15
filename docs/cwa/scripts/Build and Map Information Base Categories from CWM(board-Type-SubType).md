@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-info-base-categories'
+id: 'f68801e5-ac94-4219-900c-15f9d2fb92d4'
 title: 'Create Information Base Categories for Manage Boards'
 title_meta: 'Create Information Base Categories for Manage Boards'
 keywords: ['script', 'manage', 'categories', 'ticket', 'automation']
@@ -42,6 +42,9 @@ This script will create information base categories (ticket categories) for ever
 ## Output
 
 CW Manage Plugin
+
+
+
 
 
 

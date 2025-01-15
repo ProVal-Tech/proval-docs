@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-level-patch-count'
+id: 'ab16db00-9f6e-4ea8-974f-8756b3bd2881'
 title: 'Client-Level Patch Count Dataview'
 title_meta: 'Client-Level Patch Count Dataview'
 keywords: ['dataview', 'patch', 'client', 'machines', 'status']
@@ -26,6 +26,9 @@ This solution provides a dataview of the Client-Level breakdown of machines miss
 - Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](https://proval.itglue.com/DOC-5078775-11867771) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
+
+
+
 
 
 

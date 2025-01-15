@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sonicwall-netextender-monitor'
+id: '62ad1299-3e65-4bf7-a415-307fdf9a162c'
 title: 'SonicWall NetExtender Version Monitor'
 title_meta: 'SonicWall NetExtender Version Monitor'
 keywords: ['sonicwall', 'netextender', 'monitor', 'version', 'update']
@@ -19,6 +19,9 @@ This monitor schedules the script [SonicWall NetExtender - Latest Version [Winge
 ## Target
 
 Workstations - Only one workstation is needed for this monitor because it is just needed to fetch the latest version.
+
+
+
 
 
 

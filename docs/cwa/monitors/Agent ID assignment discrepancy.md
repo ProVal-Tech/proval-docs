@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-set-agent-discrepancy'
+id: '9e0a1ae1-c888-496b-b161-c154fc48466e'
 title: 'Monitor Set for Agent Discrepancy in ConnectWise Automate'
 title_meta: 'Monitor Set for Agent Discrepancy in ConnectWise Automate'
 keywords: ['monitor', 'agent', 'discrepancy', 'ticket', 'automate', 'remediation']
@@ -43,6 +43,9 @@ PCs Affected: PC-2,PC-19,PC-3
 ## Target
 
 Global
+
+
+
 
 
 

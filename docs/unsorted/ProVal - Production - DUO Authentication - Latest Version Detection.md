@@ -1,12 +1,12 @@
 ---
-id: 'cwa-duo-authentication-monitor'
+id: '00d98e8b-1261-4f49-b5c0-6555a12afee8'
 title: 'Duo Authentication Version Monitor'
 title_meta: 'Duo Authentication Version Monitor'
 keywords: ['duo', 'authentication', 'version', 'monitor', 'windows']
 description: 'This document outlines the implementation of a monitor designed to fetch the latest version of the DUO Authentication application for Windows. It updates a system property with the latest version available through WinGet, ensuring that systems can identify outdated installations. The monitor is set to update monthly and is intended for global deployment.'
 tags: ['update', 'monitor', 'windows', 'software']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -25,6 +25,9 @@ This script is only targeted to one machine to fetch the Application's latest ve
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
+
+
+
 
 
 

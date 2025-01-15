@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-init-failure-monitor'
+id: '9475b189-47c5-4682-b278-de406761113b'
 title: 'BitLocker Initialization Failure Monitor'
 title_meta: 'BitLocker Initialization Failure Monitor'
 keywords: ['bitlocker', 'monitor', 'ticket', 'failure', 'windows']
@@ -63,6 +63,9 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+
+
 
 
 

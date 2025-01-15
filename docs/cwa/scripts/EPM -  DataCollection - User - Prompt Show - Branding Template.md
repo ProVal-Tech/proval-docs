@@ -1,5 +1,5 @@
 ---
-id: 'cwa-branding-script-user-prompt'
+id: '044f0c44-45f3-4326-8ee2-6406da1b6bc8'
 title: 'Branding Script for User Prompt - Show'
 title_meta: 'Branding Script for User Prompt - Show'
 keywords: ['branding', 'client', 'popup', 'variables', 'theme']
@@ -58,6 +58,9 @@ This script simply assigns values to variables for use in the User Prompt - Show
 ## Output
 
 This script outputs standard variable settings to the calling script to be used by User Prompt - Show to produce a standard branded pop-up theme.
+
+
+
 
 
 

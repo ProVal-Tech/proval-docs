@@ -1,5 +1,5 @@
 ---
-id: 'rmm-office-universal-uninstaller'
+id: '88ebc856-6e02-41d2-a6b5-af8cbd37e2c6'
 title: 'Office Universal Uninstaller'
 title_meta: 'Office Universal Uninstaller'
 keywords: ['office', 'uninstaller', 'microsoft', 'corruption', 'script']
@@ -121,6 +121,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

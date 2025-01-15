@@ -1,5 +1,5 @@
 ---
-id: 'rmm-install-threatlocker'
+id: '0298665b-0c3d-41de-83ee-bbf3b9d5cd8e'
 title: 'Install ThreatLocker Application'
 title_meta: 'Install ThreatLocker Application for Windows and Mac'
 keywords: ['threatlocker', 'installation', 'windows', 'mac', 'groupkey']
@@ -36,6 +36,9 @@ Then run the script
 ## Output
 
 - Script log
+
+
+
 
 
 

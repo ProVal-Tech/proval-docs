@@ -1,5 +1,5 @@
 ---
-id: 'cwa-idlemon-report'
+id: 'a9dabf31-db77-49f9-9403-22f1a259678e'
 title: 'IdleMon Report Overview'
 title_meta: 'IdleMon Report Overview'
 keywords: ['dataview', 'historical', 'idletime', 'threshold', 'globals', 'dependencies', 'columns', 'screenshot']
@@ -39,6 +39,9 @@ The purpose of the dataview is to display the historical data of the user's idle
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/IdleMon-Report/image_1.png)
+
+
+
 
 
 

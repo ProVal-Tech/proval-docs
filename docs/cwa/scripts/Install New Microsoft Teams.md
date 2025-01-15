@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-new-microsoft-teams'
+id: '4def3c77-d37b-456a-b3c7-cec341a797b5'
 title: 'Install New Microsoft Teams on Windows and Mac'
 title_meta: 'Install New Microsoft Teams on Windows and Mac'
 keywords: ['teams', 'installation', 'windows', 'mac', 'uninstallation', 'software']
@@ -19,6 +19,9 @@ The script installs the New Microsoft Teams on both Windows and Mac computers. U
 ## Output
 
 - Script Log
+
+
+
 
 
 

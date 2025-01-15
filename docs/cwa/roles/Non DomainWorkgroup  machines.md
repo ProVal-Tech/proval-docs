@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-domain-join-status'
+id: '00bd8c59-9411-4767-8ac7-348b9115fff5'
 title: 'Detect Machines Not Joined to a Domain'
 title_meta: 'Detect Machines Not Joined to a Domain'
 keywords: ['detection', 'domain', 'windows', 'status', 'machine']
@@ -21,6 +21,9 @@ This role will detect machines that are not joined to a domain.
 ```
 {%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]/"@%}
 ```
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-local-admin-members'
+id: 'cafa4a5e-2f79-4527-b888-402ecdbf0790'
 title: 'Audit Local Admin Members'
 title_meta: 'Audit Local Admin Members for Local Group Management'
 keywords: ['audit', 'local', 'admin', 'members', 'group', 'management']
@@ -23,6 +23,9 @@ The dataview helps you audit local admin members with the help of a script @Get 
 | Client                     | Displays the name of the client           |
 | Computer Name              | Displays the name of the computer         |
 | Local Admin Group Members   | Displays the local admin group members     |
+
+
+
 
 
 

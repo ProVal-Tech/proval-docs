@@ -1,5 +1,5 @@
 ---
-id: 'cwa-domain-joined-machines-excluding-domain-controllers'
+id: 'e2fc5d7b-d202-4511-8807-8ac000d104a1'
 title: 'Domain Joined Machines Excluding Domain Controllers'
 title_meta: 'Domain Joined Machines Excluding Domain Controllers'
 keywords: ['domain', 'machines', 'controllers', 'sql', 'monitor', 'check', 'groupid']
@@ -205,6 +205,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ## Step 6.
 Set the appropriate alert template.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-microsoft-365-click-to-run-get-details'
+id: 'f5099dd5-8e47-468f-a623-a245c342eb19'
 title: 'Microsoft 365 - Click-to-Run - Get Details'
 title_meta: 'Microsoft 365 - Click-to-Run - Get Details'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
@@ -364,6 +364,9 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_52.png)  
+
+
+
 
 
 

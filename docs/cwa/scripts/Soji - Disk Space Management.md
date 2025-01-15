@@ -1,5 +1,5 @@
 ---
-id: 'cwa-soji-execution-script'
+id: '47f53d1e-f609-46f8-b407-ccdf11eeede4'
 title: 'Soji Execution Script for ConnectWise Automate'
 title_meta: 'Soji Execution Script for ConnectWise Automate'
 keywords: ['soji', 'script', 'automate', 'execution', 'logging']
@@ -40,6 +40,9 @@ Please Reference the Soji documentation for Argument options.
 - Script log
 - Desired file output to the soji directory ie. json etc.
 - On Labtech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %Computerid%/SojiLogs.zip`
+
+
+
 
 
 

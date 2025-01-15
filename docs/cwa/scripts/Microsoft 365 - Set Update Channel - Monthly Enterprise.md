@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-365-monthly-update'
+id: 'a7234fd9-615c-4862-ae0a-b93fd84f7af6'
 title: 'Microsoft 365 Monthly Update Script'
 title_meta: 'Microsoft 365 Monthly Update Script for Registry Changes'
 keywords: ['microsoft', '365', 'update', 'registry', 'automation']
@@ -34,6 +34,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

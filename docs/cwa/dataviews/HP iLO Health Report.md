@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ilo-health-report'
+id: '163aca22-cc56-45ee-9732-3873c6117e60'
 title: 'iLO Health Report Display'
 title_meta: 'iLO Health Report Display - ConnectWise Automate'
 keywords: ['ilo', 'health', 'report', 'client', 'status', 'device', 'firmware', 'network', 'memory', 'storage']
@@ -50,6 +50,9 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 | Status                  | Overall status of the iLO device.                                                                         |
 | StatusInfo              | Additional information about the overall iLO status.                                                     |
 | ScriptRunTIme          | Last Run time of the Script to gather data                                                                |
+
+
+
 
 
 

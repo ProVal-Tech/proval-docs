@@ -1,5 +1,5 @@
 ---
-id: 'cwa_create_rdp_shortcut'
+id: '1575f234-039a-4d1c-a4e5-ce0656e82c4f'
 title: 'Create RDP Shortcut on Desktop'
 title_meta: 'Create RDP Shortcut on Desktop for Windows Users'
 keywords: ['rdp', 'shortcut', 'desktop', 'windows', 'users']
@@ -29,6 +29,9 @@ The script creates an RDP shortcut on the desktop of each user on a Windows comp
 - RDP shortcut on user's desktop:
   ![Shortcut Image 1](../../../static/img/Desktop-Shortcut---Create---RDP/image_2.png)
   ![Shortcut Image 2](../../../static/img/Desktop-Shortcut---Create---RDP/image_3.png)
+
+
+
 
 
 

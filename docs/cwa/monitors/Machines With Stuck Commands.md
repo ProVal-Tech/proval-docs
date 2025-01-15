@@ -1,5 +1,5 @@
 ---
-id: 'cwa-identifying-stuck-commands'
+id: '5630a369-2912-485b-a5f9-0c25b28eb432'
 title: 'Identifying Stuck Commands in ConnectWise Automate'
 title_meta: 'Identifying Stuck Commands in ConnectWise Automate'
 keywords: ['connectwise', 'agent', 'commands', 'scripts', 'processing']
@@ -21,6 +21,9 @@ Suggest restarting the agent, services, and/or Automate Server and investigate r
 ## Target
 
 - Global
+
+
+
 
 
 

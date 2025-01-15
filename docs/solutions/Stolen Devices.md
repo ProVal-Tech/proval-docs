@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lockdown-stolen-systems'
+id: '7284d09c-ce9b-4916-847b-b61688aff7f0'
 title: 'Locking Down Stolen Systems in ConnectWise Automate'
 title_meta: 'Locking Down Stolen Systems in ConnectWise Automate'
 keywords: ['lockdown', 'stolen', 'monitor', 'script', 'security']
@@ -36,6 +36,9 @@ The purpose of the solution is to detect and lockdown the machines that are mark
 - Assign the alert template to the monitor set.
 - Mark the `Mark System As Stolen` EDF on the concerned computers. Marking `System Lockdown` EDF will enable the script's feature to bitlocker and shutdown this computer.  
   ![Mark System As Stolen](../../static/img/Stolen-Devices/image_4.png)
+
+
+
 
 
 

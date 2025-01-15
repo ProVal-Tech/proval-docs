@@ -1,12 +1,12 @@
 ---
-id: 'ps-computer-description-audit'
+id: '065ba00b-a1d0-4c99-9d2f-e606e60867d8'
 title: 'Computer Description Audit'
 title_meta: 'Computer Description Audit - Retrieve and Store Computer Description Information'
 keywords: ['computer', 'description', 'audit', 'agent', 'dataview']
 description: 'This document outlines a script designed to retrieve computer description information from agents and store it in a dependent dataview. The script enhances efficiency by saving approximately 10 minutes of manual effort. It includes sample output, dependencies, and detailed processing steps.'
 tags: ['audit', 'dataview', 'information', 'script', 'state', 'log', 'process']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -38,6 +38,9 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

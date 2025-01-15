@@ -1,5 +1,5 @@
 ---
-id: 'cwa-log4shell-vulnerabilities'
+id: 'a341f9a4-e07e-4417-84fb-06162d7fb52b'
 title: 'Log4Shell Vulnerabilities in Automate Agents'
 title_meta: 'Log4Shell Vulnerabilities in Automate Agents'
 keywords: ['log4shell', 'vulnerabilities', 'automate', 'agents', 'security']
@@ -23,6 +23,9 @@ To present information about possible Log4Shell vulnerabilities and attacks on A
 | [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631) | Script       | This script is used to scan for possible vulnerabilities in a target system, saving information to EDFs for reporting. |
 | [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](https://proval.itglue.com/DOC-5078775-8886309) | Dataview    | Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit. |
 | [CWM - Automate - Script - Log4J Remediation Residue Removal](https://proval.itglue.com/DOC-5078775-16162268) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631) script including the `Everything` service. |
+
+
+
 
 
 

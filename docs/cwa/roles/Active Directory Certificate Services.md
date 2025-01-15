@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-adcs-servers'
+id: '72e7fd5f-827f-4b49-86c2-a894036cd4a3'
 title: 'Detect ADCS Role Installed on Servers'
 title_meta: 'Detect ADCS Role Installed on Servers'
 keywords: ['adcs', 'servers', 'detection', 'windows', 'feature']
@@ -18,4 +18,7 @@ To detect the servers with ADCS role installed.
 | Detection String                                                                                                                                          | Comparator | Result   | Applicable OS |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|---------------|
 | {%@powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'AD-Certificate' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains   | Installed | Windows       |
+
+
+
 

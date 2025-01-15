@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-internet-explorer'
+id: '60cf67bf-fc28-4461-a2ad-7a32b2461652'
 title: 'Disable Internet Explorer on Windows'
 title_meta: 'Disable Internet Explorer on Windows'
 keywords: ['internet', 'explorer', 'disable', 'windows', 'script']
@@ -51,6 +51,9 @@ Step 5: For success, it will check whether reboot is enabled or not within the G
 - Script log
 - EDF
 - Dataview
+
+
+
 
 
 

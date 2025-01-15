@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-tls-version-check'
+id: 'b0639ecd-38cd-4afd-a764-bcce13fd8ac7'
 title: 'Remote Monitor for TLS Client Version Check'
 title_meta: 'Remote Monitor for TLS Client Version Check'
 keywords: ['tls', 'monitor', 'windows', 'security', 'version']
@@ -35,6 +35,9 @@ Managed windows Servers and Workstations
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Client](https://proval.itglue.com/DOC-5078775-13218119)
+
+
+
 
 
 

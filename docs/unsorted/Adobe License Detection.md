@@ -1,12 +1,12 @@
 ---
-id: 'cwa-adobe-license-information'
+id: 'cf0c479b-fce8-4af8-9ae2-24fd7fc2a7ed'
 title: 'Adobe License Information Dataview'
 title_meta: 'Adobe License Information Dataview'
 keywords: ['adobe', 'license', 'rmm', 'dataview', 'sql']
 description: 'This document provides a detailed overview of the Adobe License information dataview, including its dependencies, columns, and SQL representation for retrieving the relevant data from the database.'
 tags: ['database', 'report', 'software', 'configuration']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -78,6 +78,9 @@ FROM
       c.computerid
   ) AS t
 ```
+
+
+
 
 
 

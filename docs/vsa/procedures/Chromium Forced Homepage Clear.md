@@ -1,5 +1,5 @@
 ---
-id: 'vsa-clear-chromium-homepage'
+id: 'd56a82d5-2ac2-4edd-b80b-41ccdb885fd7'
 title: 'Clear Chromium Homepage'
 title_meta: 'Clear Chromium Homepage'
 keywords: ['chromium', 'homepage', 'registry', 'browser', 'clear']
@@ -45,6 +45,9 @@ Clears enforced homepage in Chromium-based browsers. Implementation of agnostic 
 
 - Agnostic content logs
 - Agent Procedure Log
+
+
+
 
 
 

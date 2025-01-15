@@ -1,5 +1,5 @@
 ---
-id: 'rmm-protect-screen-lock'
+id: 'a2e5e9e8-7601-42a9-9941-88a5142ee69a'
 title: 'Protect Screen Lock'
 title_meta: 'Protect Screen Lock - Set Default Screensaver and Manage Lockscreen Timeout'
 keywords: ['screensaver', 'timeout', 'domain', 'security', 'configuration']
@@ -189,6 +189,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

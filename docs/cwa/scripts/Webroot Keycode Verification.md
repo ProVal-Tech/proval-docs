@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-keycode-verification'
+id: '4d3b24f2-a55a-4f57-8cad-1345d1e85060'
 title: 'Webroot Keycode Verification Script'
 title_meta: 'Webroot Keycode Verification Script'
 keywords: ['webroot', 'keycode', 'verification', 'audit', 'monitor']
@@ -33,6 +33,9 @@ Webroot SecureAnyWhere with Utility Plugin
 - Script log
 - EDF
 - Dataview
+
+
+
 
 
 

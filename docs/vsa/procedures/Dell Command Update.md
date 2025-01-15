@@ -1,5 +1,5 @@
 ---
-id: 'vsa-dellcmdupdate'
+id: '0867f403-5d79-4284-b471-8df8ac269dfa'
 title: 'DellCMDUpdate Procedure'
 title_meta: 'DellCMDUpdate Procedure for Dell Endpoints'
 keywords: ['dell', 'cmdupdate', 'procedure', 'endpoint']
@@ -31,6 +31,9 @@ Run Procedure
 ## Output
 
 workingdir/System/DellCMDUpdate-log.txt
+
+
+
 
 
 

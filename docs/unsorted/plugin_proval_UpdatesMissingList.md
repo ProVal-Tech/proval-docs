@@ -1,12 +1,12 @@
 ---
-id: 'ps_missing-patches-audit'
+id: '7e520489-d8bc-4282-b147-d0c33f5a7130'
 title: 'Missing Patches Audit'
 title_meta: 'Missing Patches Audit - Detailed Overview'
 keywords: ['patches', 'audit', 'updates', 'database', 'sql', 'agent', 'proval']
 description: 'This document provides a detailed overview of the Missing Patches Audit, including the structure of the missing patches details table, its dependencies, and the SQL command to create the necessary table for tracking missing patches directly from the agent using the PSWindowsUpdate module.'
 tags: ['database', 'update', 'report', 'software']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Purpose
 
@@ -46,6 +46,9 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_UpdatesMissingList` (
   CONSTRAINT `plugin_proval_UpdatesMissingList_ibfk_1` FOREIGN KEY (`Computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
 ```
+
+
+
 
 
 

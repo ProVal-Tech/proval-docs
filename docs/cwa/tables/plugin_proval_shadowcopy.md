@@ -1,5 +1,5 @@
 ---
-id: 'vsa-shadow-copy-audit-statistics'
+id: '3003a8ec-6b99-4b7d-ae31-438371e3b4f3'
 title: 'Windows Shadow Copy Audit Statistics'
 title_meta: 'Windows Shadow Copy Audit Statistics'
 keywords: ['windows', 'shadowcopy', 'audit', 'statistics', 'endpoint', 'data']
@@ -30,6 +30,9 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy E
 | ShadowCopyCount   | INT     | It collects the number of Shadow Copies on the machine                                          |
 | OldestShadowCopy  | VARCHAR | It contains the oldest available Shadow Copy date                                               |
 | LatestShadowCopy  | VARCHAR | It contains the most recent available Shadow Copy date                                           |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-solution-purpose-and-implementation'
+id: '71a7f4d9-7446-4172-806a-e7001e469e0b'
 title: 'Purpose and Implementation of the Solution'
 title_meta: 'Purpose and Implementation of the Solution'
 keywords: ['goal', 'implementation', 'configuration', 'documentation', 'faq']
@@ -23,6 +23,9 @@ What is the end goal of this solution?
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+
+
 
 
 

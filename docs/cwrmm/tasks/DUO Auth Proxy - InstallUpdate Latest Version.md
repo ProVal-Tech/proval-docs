@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-install-upgrade-latest-version'
+id: 'bfcc2aec-a83b-49ac-bfbe-274cbf112a6e'
 title: 'DUO Install & Upgrade - Latest Version'
 title_meta: 'DUO Install & Upgrade - Latest Version'
 keywords: ['duo', 'install', 'upgrade', 'authentication', 'proxy', 'script']
@@ -298,6 +298,9 @@ Script log
 Custom field  
 
 ![Output](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_37.png)  
+
+
+
 
 
 

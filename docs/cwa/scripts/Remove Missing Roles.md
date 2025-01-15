@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-roles-not-detected'
+id: '14815596-a4d5-4c53-95b8-149c6a043c58'
 title: 'Remove Roles Not Detected on Machines'
 title_meta: 'Remove Roles Not Detected on Machines - ConnectWise Automate'
 keywords: ['roles', 'machines', 'sql', 'database', 'automation']
@@ -21,6 +21,9 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - The script runs SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.
+
+
+
 
 
 

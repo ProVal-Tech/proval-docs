@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-windows-hello'
+id: '64fb8fa3-20f6-4167-8ec1-be322b3d6c07'
 title: 'Disable Windows Hello for Business'
 title_meta: 'Disable Windows Hello for Business - Automation Script'
 keywords: ['windows', 'hello', 'business', 'registry', 'disable']
@@ -24,6 +24,9 @@ This script disables Windows Hello for Business by adding in the registry key `H
 ## Output
 
 - Script log  
+
+
+
 
 
 

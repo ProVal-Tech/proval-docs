@@ -1,5 +1,5 @@
 ---
-id: 'cwa-egnyte-installation'
+id: 'ddd45f6e-2b41-4b83-a81e-ff3639b462a5'
 title: 'Egnyte Installation Procedure'
 title_meta: 'Egnyte Installation Procedure'
 keywords: ['egnyte', 'installation', 'endpoint', 'update', 'procedure']
@@ -22,6 +22,9 @@ This solution installs Egnyte on an endpoint. It will update a custom field if a
 ## Implementation
 
 Ensure the custom field is added prior to running the agent procedure. Ensure the installer is added into managed files.
+
+
+
 
 
 

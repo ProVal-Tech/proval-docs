@@ -1,5 +1,5 @@
 ---
-id: 'cwa-scheduled-script-filters'
+id: '1eb426fd-ee56-4e81-9d3e-116e8c4698b4'
 title: 'Scheduled Script Filters for Technicians'
 title_meta: 'Scheduled Script Filters for Technicians - ConnectWise Automate'
 keywords: ['script', 'schedules', 'technician', 'recurring', 'frequency', 'machines', 'environment']
@@ -45,6 +45,9 @@ This Dataview filters the script schedules where it is Scheduled by a technician
 | Targeted Servers Count       | Total Servers getting targeted in the schedule              |
 | Targeted workstations Count   | Total workstations getting targeted in the schedule         |
 | % Machines Targeted          | percent of the machines getting targeted in the schedule    |
+
+
+
 
 
 

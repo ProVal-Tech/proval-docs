@@ -1,5 +1,5 @@
 ---
-id: 'cwa-mssql-database-version'
+id: 'eb2798dd-20c1-4c57-96c7-56349f2867f1'
 title: 'MSSQL Database Version and Patch Level Overview'
 title_meta: 'MSSQL Database Version and Patch Level Overview'
 keywords: ['mssql', 'database', 'version', 'patch', 'monitoring']
@@ -35,6 +35,9 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 | MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
 | MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
 | Data Collection Time  | Data Collection Time                                              |
+
+
+
 
 
 

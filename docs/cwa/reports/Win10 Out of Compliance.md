@@ -1,5 +1,5 @@
 ---
-id: 'rmm-out-of-compliance-report'
+id: '4203838c-6e42-42a4-9a35-d6e1e9ea41b7'
 title: 'Out of Compliance Machine and OS Build Report'
 title_meta: 'Out of Compliance Machine and OS Build Report'
 keywords: ['compliance', 'report', 'windows', 'audit', 'count']
@@ -77,6 +77,9 @@ header, footer
 
 ### Export Attachment
 Attach the export XML of the report to this document.
+
+
+
 
 
 

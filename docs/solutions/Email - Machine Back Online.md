@@ -1,5 +1,5 @@
 ---
-id: 'cwa-machine-back-online-notification'
+id: '1973f30a-c6dc-4725-90f7-ba081cebf2d7'
 title: 'ConnectWise Automate Machine Back Online Notification'
 title_meta: 'ConnectWise Automate Machine Back Online Notification'
 keywords: ['connectwise', 'notification', 'email', 'machine', 'check-in']
@@ -72,6 +72,9 @@ A: Remove the E-Mail address(es) from the EDF.
 ## Sample E-Mail
 
 ![Sample E-Mail](../../static/img/Email---Machine-Back-Online/image_4.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-current-agent-powershell-version'
+id: 'da7e6b68-3ac3-4d15-9969-ca843a187d2d'
 title: 'Current Agent PowerShell Version'
 title_meta: 'Current Agent PowerShell Version'
 keywords: ['powershell', 'agent', 'version', 'script', 'query']
@@ -41,6 +41,9 @@ This script runs a PowerShell query that is supported by all Windows OS and coll
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

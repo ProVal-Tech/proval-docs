@@ -6,7 +6,7 @@ keywords: ['speedtest', 'restart', 'download', 'files']
 description: 'Documentation for the BackupTeamTool command to assist the Backup Team with various tasks.'
 tags: []
 draft: false
-unlisted: true
+unlisted: false
 ---
 
 ## Description
@@ -55,4 +55,7 @@ By organizing the script into functions and menus, the content operates in a mod
 ## Output
     BackupTeamTool-log.txt
     BackupTeamTool-Error.txt
+
+
+
 

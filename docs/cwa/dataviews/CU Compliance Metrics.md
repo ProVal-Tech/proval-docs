@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cumulative-update-compliance'
+id: 'c1551907-b8c1-458d-949d-a627ca7d1e44'
 title: 'Cumulative Update Compliance Overview'
 title_meta: 'Cumulative Update Compliance Overview'
 keywords: ['cumulative', 'update', 'compliance', 'windows', 'patch', 'management', 'automate']
@@ -41,6 +41,9 @@ The dataview is designed to display the Cumulative Update compliance score for t
 | Compliant Clients - CU %         | Percentage of the compliant client based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                                                                                                                                                                                                                                                                                                           |
 | Data Missing                     | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. (Hidden)                                                                                                                                                                                                                                                                                   |
 | Validation                       | This is a hidden column which displays the concatenated data for the whole environment in the following format: `<code>Total Wks: X | Total Svrs: X | Wks Online > 30d: X | Online Patch Managed Wks: X | Patch Managed Wks: X | Patch Managed Svrs: X | Wks in CU Table: X | Svrs in CU Table: X | Unsupported Svrs: X | Unsupported Wks: X</code>` <br> <br> **Total Wks** - Total number of workstations unfiltered. <br> **Total Svrs** - Total number of servers unfiltered. <br> **Wks Online > 30 days** - Workstations that have been online in the past 30 days, including non-patch-managed and EOL systems. <br> **Online Patch Managed Wks** - Workstations that have been online in the past 30 days and are patch-managed, including EOL systems. <br> **Patch Managed Wks** - Workstations that are patch managed, including offline agents and EOL systems. <br> **Patch Managed Svrs** - Servers that are patch managed, including offline agents and EOL systems. <br> **Wks in CU table** - Workstations that are in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. <br> **Svrs in CU table** - Servers that are in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. <br> **Unsupported Svrs** - Servers that are EOL. <br> **Unsupported Wks** - Workstations that are EOL. <br> <br> This column is independent of the [pvl_cu_compliance](https://proval.itglue.com/DOC-5078775-16192886) table and displays the count of all machines regardless of them being supported or end of life. |
+
+
+
 
 
 

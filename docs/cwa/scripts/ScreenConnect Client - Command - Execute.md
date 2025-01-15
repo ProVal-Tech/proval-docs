@@ -1,5 +1,5 @@
 ---
-id: 'cwa-execute-command-via-control'
+id: 'b713bbc8-a1d9-4e08-ac77-d02b634569f6'
 title: 'Execute Command via Control'
 title_meta: 'Execute Command via Control'
 keywords: ['command', 'automation', 'control', 'rmm', 'script']
@@ -39,6 +39,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

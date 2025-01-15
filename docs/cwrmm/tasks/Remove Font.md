@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-font'
+id: 'c563d6fc-13b1-4cc5-9461-745e2a25b49d'
 title: 'Remove Font from Windows Machines'
 title_meta: 'Remove Font from Windows Machines'
 keywords: ['remove', 'font', 'windows', 'script', 'uninstall']
@@ -173,6 +173,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

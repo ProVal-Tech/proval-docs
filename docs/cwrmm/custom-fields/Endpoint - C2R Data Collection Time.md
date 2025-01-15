@@ -1,5 +1,5 @@
 ---
-id: 'rmm-c2r-update-channel-details'
+id: 'd6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0'
 title: 'C2R Update Channel Details'
 title_meta: 'C2R Update Channel Details'
 keywords: ['c2r', 'update', 'channel', 'custom', 'fields']
@@ -23,6 +23,9 @@ The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version cu
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_2.png)
+
+
+
 
 
 

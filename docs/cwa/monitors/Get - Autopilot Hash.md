@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autopilot-hash-monitor'
+id: '3add591b-445e-440d-a7b3-cc85b2ea0674'
 title: 'Autopilot Hash Monitor for Windows Machines'
 title_meta: 'Autopilot Hash Monitor for Windows Machines'
 keywords: ['autopilot', 'hash', 'monitor', 'windows', 'edf', 'client', 'computer']
@@ -35,6 +35,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Get-AutopilotHash`
+
+
+
 
 
 

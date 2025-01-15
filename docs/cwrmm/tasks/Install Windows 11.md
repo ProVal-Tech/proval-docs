@@ -1,5 +1,5 @@
 ---
-id: 'rmm-install-windows-11-upgrade'
+id: '50d6c9a0-11d6-4d2f-bbc3-47411502448e'
 title: 'Install Windows 11 Upgrade'
 title_meta: 'Install Windows 11 Upgrade'
 keywords: ['windows', 'upgrade', 'installation', 'script', 'update']
@@ -440,6 +440,9 @@ The final task should look like the below screenshot.
 - Script logs  
 ![Script Logs](../../../static/img/Install-Windows-11/image_60.png)  
 (**This output is from an Incompatible Windows 10 computer.)**
+
+
+
 
 
 

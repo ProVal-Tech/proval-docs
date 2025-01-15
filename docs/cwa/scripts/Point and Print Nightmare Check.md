@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-registry-point-and-print'
+id: 'd65da81c-76ee-429a-a007-9ef788f2ee51'
 title: 'Check Registry for Point And Print Detection'
 title_meta: 'Check Registry for Point And Print Detection'
 keywords: ['registry', 'point', 'print', 'detection', 'safety']
@@ -41,6 +41,9 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

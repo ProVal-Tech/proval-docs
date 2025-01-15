@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unexpected-shutdown-monitor'
+id: '80e10bf1-9e98-427a-a5bf-dd8ffb208ce8'
 title: 'Unexpected Shutdown Monitor for Windows Machines'
 title_meta: 'Unexpected Shutdown Monitor for Windows Machines'
 keywords: ['shutdown', 'monitor', 'windows', 'power', 'event']
@@ -141,6 +141,9 @@ The user pressed the power button.
 ## Implementation
 
 [Import - Remote Monitor - Unexpected Shutdown](https://proval.itglue.com/DOC-5078775-14936355)
+
+
+
 
 
 

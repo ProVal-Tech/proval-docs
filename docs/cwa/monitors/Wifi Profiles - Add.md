@@ -1,5 +1,5 @@
 ---
-id: 'cwa_monitor_set_wifi_profiles'
+id: '3a1d1f7d-a655-40bf-a048-5e861aee00ae'
 title: 'Monitor Set for Wi-Fi Profiles Management'
 title_meta: 'Monitor Set for Wi-Fi Profiles Management'
 keywords: ['wifi', 'monitor', 'profiles', 'audit', 'script']
@@ -27,6 +27,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Implement Wifi Profile`
+
+
+
 
 
 

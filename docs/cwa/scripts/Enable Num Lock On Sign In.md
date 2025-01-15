@@ -1,5 +1,5 @@
 ---
-id: 'cwa-turn-on-num-lock'
+id: '57399293-811f-46b8-8672-992c200a4804'
 title: 'Turn On Num-Lock at Log-On Screen'
 title_meta: 'Turn On Num-Lock at Log-On Screen'
 keywords: ['num-lock', 'windows', 'logon', 'script']
@@ -19,6 +19,9 @@ The script turns on Num-Lock at the log-on screen for Windows machines.
 ## Output
 
 - Script Log
+
+
+
 
 
 

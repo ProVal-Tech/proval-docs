@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-view'
+id: 'b210a5c3-0c35-4a40-9c04-51fbadd59e8a'
 title: 'Azure AD Joined and Registered Machines View'
 title_meta: 'Azure AD Joined and Registered Machines View'
 keywords: ['azure', 'ad', 'view', 'machines', 'custom', 'field']
@@ -27,6 +27,9 @@ List all filters applied to this view
 |----------------------------------|------------------|--------------|
 | cPVAL Azure AD Joined            | Y                | *TRUE*      |
 | cPVAL Azure AD Registered        | Y                | *TRUE*      |
+
+
+
 
 
 

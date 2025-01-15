@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-winget-packages'
+id: 'c65fa38e-ae23-409b-85b5-c232c3b1fbfa'
 title: 'Update Winget Packages Script'
 title_meta: 'Update Winget Packages Script'
 keywords: ['winget', 'packages', 'update', 'script', 'endpoint']
@@ -33,6 +33,9 @@ Please reference the agnostic content for process.
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-agents-dataview'
+id: '2d758af9-c045-4154-b0c9-63eeb7743004'
 title: 'Audit Agents Dataview'
 title_meta: 'Audit Agents Dataview'
 keywords: ['audit', 'agents', 'environment', 'dataview', 'client', 'location', 'computerid', 'agent', 'operating', 'system', 'manufacturer', 'antivirus', 'bios', 'contact', 'heartbeat', 'username', 'ad', 'logon']
@@ -33,6 +33,9 @@ The dataview can be used to audit the agents in the environment.
 | LastUsername                   | The last logged-in user on the computer.           |
 | Last AD Logon                  | The last AD login date.                            |
 | Days Since AD Logon            | The number of days since the last AD login.       |
+
+
+
 
 
 

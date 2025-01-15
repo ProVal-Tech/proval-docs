@@ -1,5 +1,5 @@
 ---
-id: 'cwa_enable-advanced-windows-security-auditing'
+id: '3c74153d-7575-485c-bd6d-c5e002384cbd'
 title: 'Enable Advanced Windows Security Auditing'
 title_meta: 'Enable Advanced Windows Security Auditing'
 keywords: ['security', 'auditing', 'windows', 'monitor', 'ticket']
@@ -46,6 +46,9 @@ In addition to attempting to enable Advanced Windows Security Auditing, the scri
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Enable-Advanced-Windows-Security-Auditing-Globals,-Autofix/image_3.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-liongard-agent-installation'
+id: '01472480-e16e-4733-86db-382a6a406479'
 title: 'Liongard Agent Installation Script'
 title_meta: 'Liongard Agent Installation Script'
 keywords: ['liongard', 'agent', 'installation', 'upgrade', 'service']
@@ -83,6 +83,9 @@ The script will work as long as this download URL is active:
 ## Output
 
 - Script Logs
+
+
+
 
 
 

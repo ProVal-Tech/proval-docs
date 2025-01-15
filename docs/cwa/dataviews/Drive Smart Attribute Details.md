@@ -1,5 +1,5 @@
 ---
-id: 'cwa-drive-attributes-report'
+id: '301488c5-1c0a-4c73-a295-09e0556513d5'
 title: 'Drive Attributes Report'
 title_meta: 'Drive Attributes Report'
 keywords: ['drive', 'attributes', 'report', 'client', 'machine', 'location', 'os', 'value', 'threshold']
@@ -31,6 +31,9 @@ Presents information about drive attributes like Power Cycle Count, temperature,
 | Threshold          | Threshold set for the attribute              |
 | Last User Name     | Last user name on the machine                |
 | LastContact        | Last Contact for computer with the Automate. |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-status-audit'
+id: '9682b5a8-d821-43f6-9b77-59d43b6ef015'
 title: 'BitLocker Status And Recovery Key Audit'
 title_meta: 'BitLocker Status And Recovery Key Audit'
 keywords: ['bitlocker', 'encryption', 'audit', 'recovery', 'key', 'status', 'windows']
@@ -122,6 +122,9 @@ This script can also run manually against any Windows-based device at anytime to
 
 - Script log
 - Custom Field
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-failure-analysis-30-day-retention'
+id: '9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5'
 title: 'Script Failure Analysis - 30 Day Retention'
 title_meta: 'Script Failure Analysis - 30 Day Retention'
 keywords: ['script', 'failure', 'analysis', 'retention', 'data', 'update']
@@ -60,6 +60,9 @@ The purpose of this solution is to present a detailed analysis of script failure
    2. Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
    3. Schedule the [Script Failure Analysis - 30 Day Retention](https://proval.itglue.com/5078775/docs/16804995) to run once per day, sometimes around midnight, as demonstrated in the `Sample Run` section of the document.  
       ![Image](../../static/img/Script-Failure-Assessment---Last-30-Days/image_3.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-winget-package-management'
+id: '5a44d7ca-14a4-4a51-baaf-7697be8836dc'
 title: 'WinGet Package Management Procedures'
 title_meta: 'WinGet Package Management Procedures for Endpoint Management'
 keywords: ['winget', 'packages', 'management', 'install', 'uninstall', 'update', 'export', 'import']
@@ -84,6 +84,9 @@ Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-Winge
 - Agent Procedure Log
 - Log Files Exported to GetFiles
 - Export JSON Exported to GetFiles and present on endpoint in %ProgramData%/_automation/AgentProcedure/wingetprocessor
+
+
+
 
 
 

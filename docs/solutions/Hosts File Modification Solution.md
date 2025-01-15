@@ -1,5 +1,5 @@
 ---
-id: 'cwa-modify-windows-host-file'
+id: '6fd1f1cb-f487-47cf-89b2-8568ef4bc292'
 title: 'Modify Windows Host File'
 title_meta: 'Modify Windows Host File'
 keywords: ['windows', 'host', 'file', 'modify', 'audit', 'add', 'reset', 'dns']
@@ -29,6 +29,9 @@ The purpose of this solution is to provide a quick and easy way to modify the wi
    3. [EPM - Windows Configuration - Script - Hosts File - Reset](https://proval.itglue.com/DOC-5078775-9107163)  
 2. Import the Dataview [CWM - Automate - Dataview - Hosts File - Audit [Script]](https://proval.itglue.com/DOC-5078775-10894199)  
 3. Schedule the Script [EPM - Windows Configuration - Script - Hosts File - Audit](https://proval.itglue.com/DOC-5078775-9106329) to run against the desired computers at a regular interval to keep the dataview up to date.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cu-compliance-metrics-view'
+id: 'fbd4b655-562a-4ff1-aea7-be27b9a77421'
 title: 'CU Compliance Metrics Dataview'
 title_meta: 'CU Compliance Metrics Dataview for Windows Computers'
 keywords: ['compliance', 'dataview', 'sql', 'windows', 'patching', 'cumulative', 'update']
@@ -42,6 +42,9 @@ The view is designed to store and execute the SQL query utilized by the 'CU Comp
 | Non-Compliant Clients - CU    | Total number of individual clients where `CU Score %` is less than 75.                                                          |
 | Compliant Clients - CU %     | Percentage of the compliant client based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`) |
 | Data Missing                 | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. |
+
+
+
 
 
 

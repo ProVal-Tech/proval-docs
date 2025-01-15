@@ -1,5 +1,5 @@
 ---
-id: 'cwa-configure-homepage-browsers'
+id: '770946a6-9399-4001-adc6-9d1eb9f203da'
 title: 'Configure Homepage for Chrome, Edge, and Firefox'
 title_meta: 'Configure Homepage for Chrome, Edge, and Firefox'
 keywords: ['homepage', 'browsers', 'configuration', 'set', 'remove', 'replace']
@@ -101,6 +101,9 @@ Example: Configuring Google Chrome and Microsoft Edge to open [https://www.prova
 ## Output
 
 - Script logs
+
+
+
 
 
 

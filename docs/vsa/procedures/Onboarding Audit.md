@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-vsaauditreports'
+id: 'd68f1d82-f773-47f2-8c80-994614244646'
 title: 'Get VSA Audit Reports'
 title_meta: 'Get VSA Audit Reports - Kaseya VSA Documentation'
 keywords: ['vsa', 'audit', 'reports', 'kaseya', 'automation']
@@ -49,6 +49,9 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](https://proval.itglue.com/D
 
 - AP Log
 - getFiles: StackContent/Audits/#ClientName#/AuditReport.xslx
+
+
+
 
 
 

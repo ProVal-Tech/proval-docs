@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hyperv-maintenance-mode'
+id: 'a05e9615-3a00-4b03-96d8-775acd8c2ac1'
 title: 'Hyper-V Maintenance Mode Script'
 title_meta: 'Hyper-V Maintenance Mode Script for Virtual Machines'
 keywords: ['hyper-v', 'maintenance', 'virtualization', 'alerts', 'script']
@@ -19,6 +19,9 @@ The script will place the virtual machines hosted on a Hyper-V Host into Mainten
 What will get set on all VMs running with an Automate Agent on the host:
 
 ![Image](../../../static/img/VM-Host---Maint-Mode-Dependent-Machines/image_2.png)
+
+
+
 
 
 

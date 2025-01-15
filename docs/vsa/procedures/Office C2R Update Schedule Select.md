@@ -1,5 +1,5 @@
 ---
-id: 'vsa-set-office-update-schedule'
+id: 'd401a54a-5bff-4d37-8fdf-001220f73fb5'
 title: 'Set Office Update Channel for Click2Run Installation'
 title_meta: 'Set Office Update Channel for Click2Run Installation'
 keywords: ['microsoft', 'update', 'click2run', 'office', 'installation']
@@ -40,6 +40,9 @@ Sets the Microsoft Update Channel for a Click2Run Office installation on an endp
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

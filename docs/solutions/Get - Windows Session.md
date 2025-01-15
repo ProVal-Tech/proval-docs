@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-sessions-query'
+id: 'bf5badbb-1b64-42af-bf84-1ea597926e9c'
 title: 'Gather and Display Windows Sessions'
 title_meta: 'Gather and Display Windows Sessions'
 keywords: ['gather', 'display', 'windows', 'sessions', 'query']
@@ -26,6 +26,9 @@ This solution will gather, store and display the result of the `query session` c
 - Import the [CWM - Automate - Dataview - Windows Sessions [Script]](https://proval.itglue.com/DOC-5078775-12366483) dataview.
 - Execute the script against any computer to create the [CWM - Automate - Custom Table - pvl_windows_sessions](https://proval.itglue.com/DOC-5078775-12366490) table.
 - Reference the dataview for results.
+
+
+
 
 
 

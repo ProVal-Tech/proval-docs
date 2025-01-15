@@ -1,5 +1,5 @@
 ---
-id: 'cwa-test-weak-credentials'
+id: 'cf22292d-e874-47ee-9bd1-5ec79c5f3724'
 title: 'Test Weak Credentials in Active Directory'
 title_meta: 'Test Weak Credentials in Active Directory'
 keywords: ['active-directory', 'credentials', 'security', 'audit', 'reporting']
@@ -57,6 +57,9 @@ This script utilizes the agnostic script [Test-WeakCredentials](https://proval.i
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
+
+
+
 
 
 

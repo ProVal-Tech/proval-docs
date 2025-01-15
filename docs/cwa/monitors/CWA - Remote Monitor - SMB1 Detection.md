@@ -1,5 +1,5 @@
 ---
-id: 'rmm-smb1-detection'
+id: '8b1cd8a8-6684-4896-ae30-a39b3bdb485e'
 title: 'SMB1 Detection on End Machines'
 title_meta: 'SMB1 Detection on End Machines'
 keywords: ['smb1', 'detection', 'vulnerability', 'windows', 'server']
@@ -25,6 +25,9 @@ Check whether the SMB1 is enabled on the end machine or not. It runs the OS vers
 ## How to Import
 
 [Import - Remote Monitor - SMB1 Detection Query](https://proval.itglue.com/DOC-5078775-13242522)
+
+
+
 
 
 

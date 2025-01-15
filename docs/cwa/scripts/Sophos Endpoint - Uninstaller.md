@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-sophos-endpoint'
+id: 'd560e8b6-9195-4bc3-a89a-6939c984d47a'
 title: 'Uninstall Sophos Endpoint'
 title_meta: 'Uninstall Sophos Endpoint Script'
 keywords: ['sophos', 'uninstall', 'endpoint', 'tamper', 'protection', 'windows']
@@ -46,6 +46,9 @@ If the services are no longer present, then the script was successful and will e
 ## Output
 
 - Script log messages only
+
+
+
 
 
 

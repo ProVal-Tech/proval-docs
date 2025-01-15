@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-installation'
+id: 'adc83d4e-f34e-4b3c-b8c9-3975a6efb285'
 title: 'Winget Installation Script for Software Deployment'
 title_meta: 'Winget Installation Script for Software Deployment'
 keywords: ['winget', 'installation', 'ticketing', 'json', 'deployment', 'software']
@@ -73,6 +73,9 @@ Name of the file without the extension should be set to the user parameter after
 
 **Example:**  
 ![](../../../static/img/Winget---Import-Param/image_5.png)
+
+
+
 
 
 

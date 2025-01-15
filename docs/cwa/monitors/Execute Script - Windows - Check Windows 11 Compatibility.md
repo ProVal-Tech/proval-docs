@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-11-compatibility-check'
+id: '8aa2542c-c61f-43b8-a7ec-ec33558319e4'
 title: 'Windows 11 Compatibility Check Monitor Set'
 title_meta: 'Windows 11 Compatibility Check Monitor Set'
 keywords: ['windows', 'monitor', 'compatibility', 'check', 'script']
@@ -26,6 +26,9 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Windows 11 Compatibility Check
+
+
+
 
 
 

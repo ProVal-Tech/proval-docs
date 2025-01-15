@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-connect-version-audit'
+id: 'c4e6e974-94df-4a7f-940e-6ba95d49d4cd'
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'audit', 'version', 'scan', 'policy']
@@ -37,6 +37,9 @@ Policy Objects Active:
 ### Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

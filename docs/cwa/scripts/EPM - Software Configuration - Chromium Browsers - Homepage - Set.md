@@ -1,5 +1,5 @@
 ---
-id: 'cwa-swm-software-configuration-set-chromiumhomepage'
+id: 'e5c01410-3731-4b1c-b166-235d637c44bb'
 title: 'SWM - Software Configuration - Set-ChromiumHomepage'
 title_meta: 'SWM - Software Configuration - Set-ChromiumHomepage'
 keywords: ['chromium', 'homepage', 'browser', 'configuration', 'edge', 'chrome']
@@ -41,6 +41,9 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-determine-krbtgtfullpacsignature'
+id: '90d70d69-4264-4ff6-9cd3-d895b838a687'
 title: 'Determine the Value of KrbtgtFullPacSignature Registry Key'
 title_meta: 'Determine the Value of KrbtgtFullPacSignature Registry Key for Domain Controllers'
 keywords: ['krbtgt', 'registry', 'domain', 'controllers', 'kerberos']
@@ -20,6 +20,9 @@ The role can be further used to create an Audit dataview if needed.
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/System/currentcontrolset/services/kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
+
+
+
 
 
 

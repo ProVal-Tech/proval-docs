@@ -1,5 +1,5 @@
 ---
-id: 'cwa-installed-web-browsers-status'
+id: '779be395-aeeb-44f8-9a99-2bea8a253a86'
 title: 'Installed Web Browsers Status'
 title_meta: 'Installed Web Browsers Status'
 keywords: ['browsers', 'firefox', 'chrome', 'vivaldi', 'waterfox', 'librewolf', 'opera', 'brave', 'iceweasel', 'tor', 'pale', 'moon', 'safari', 'chromium', 'ie', 'audit']
@@ -22,6 +22,9 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Last Contact        | Last contact with RMM of the agent          |
 | Web Browser Name    | Web browsers detected on the agent.         |
 | IE Audit            | Status of IE disabled or not                |
+
+
+
 
 
 

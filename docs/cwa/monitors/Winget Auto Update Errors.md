@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-auto-update-errors'
+id: '68a14948-368f-4064-97a3-d1928e122013'
 title: 'Winget Auto Update Errors Monitor'
 title_meta: 'Winget Auto Update Errors Monitor'
 keywords: ['winget', 'monitor', 'errors', 'ticket', 'update']
@@ -42,6 +42,9 @@ Local Machine
 **Body**:  
 `Winget Auto Update Errors detected on %ComputerName%. Failure details:`  
 `<Failure Reason>`
+
+
+
 
 
 

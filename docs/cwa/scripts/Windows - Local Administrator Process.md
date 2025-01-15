@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-set-local-admin-password'
+id: '1346f6e0-a1cc-42fd-85f2-a43785eee53e'
 title: 'Create and Set Local Administrator Password'
 title_meta: 'Create and Set Local Administrator Password'
 keywords: ['local', 'administrator', 'password', 'script', 'client']
@@ -46,6 +46,9 @@ The script will start by checking if the password entry already exists for the c
 ## Output
 
 - Script log
+
+
+
 
 
 

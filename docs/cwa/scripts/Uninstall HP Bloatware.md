@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-hp-bloatware'
+id: '0ac0139f-9c8e-4ef2-94df-5cf3b1569ecf'
 title: 'Uninstall HP Bloatware from Windows Workstations'
 title_meta: 'Uninstall HP Bloatware from Windows Workstations'
 keywords: ['uninstall', 'hp', 'bloatware', 'windows', 'software']
@@ -48,6 +48,9 @@ If Script fails in uninstalling some of the HP Bloatware from the machine but un
 
 The script has successfully removed all unnecessary HP bloatware, leaving only the following software components:  
 `@RemainingUninstalledSoftwares@`
+
+
+
 
 
 

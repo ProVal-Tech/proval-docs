@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-ie-mode-for-site'
+id: '186ae433-e9bc-46d1-9056-71924879ae6e'
 title: 'Enable IE Mode for a Specific Site in Edge'
 title_meta: 'Enable IE Mode for a Specific Site in Edge'
 keywords: ['ie', 'edge', 'integration', 'site', 'mode']
@@ -38,6 +38,9 @@ Once the setting is done it checks the computer EDFs for the logging in the data
 ## Output
 
 - Script log
+
+
+
 
 
 

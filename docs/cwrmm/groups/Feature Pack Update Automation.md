@@ -1,5 +1,5 @@
 ---
-id: 'rmm-feature-pack-update-automation'
+id: 'b9c9e1fe-57af-4816-befb-f2701ba009ba'
 title: 'Feature Pack Update Automation'
 title_meta: 'Feature Pack Update Automation'
 keywords: ['windows', 'build', 'update', 'group', 'criteria', 'dynamic', 'automation']
@@ -58,6 +58,9 @@ Click the Save button to Save the Group.
 ![Image](../../../static/img/Feature-Pack-Update-Automation/image_12.png)
 
 ![Image](../../../static/img/Feature-Pack-Update-Automation/image_13.png)
+
+
+
 
 
 

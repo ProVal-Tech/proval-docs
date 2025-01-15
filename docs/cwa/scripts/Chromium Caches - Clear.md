@@ -1,5 +1,5 @@
 ---
-id: 'cwa-swm-software-configuration-clear-chromiumcache'
+id: '1edcec5e-4e2d-4edf-b670-1bb81643b4e3'
 title: 'SWM - Software Configuration - Clear Chromium Cache'
 title_meta: 'SWM - Software Configuration - Clear Chromium Cache'
 keywords: ['automate', 'chromium', 'cache', 'configuration', 'script']
@@ -25,6 +25,9 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
+
+
+
 
 
 

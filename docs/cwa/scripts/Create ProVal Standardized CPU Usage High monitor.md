@@ -1,5 +1,5 @@
 ---
-id: 'cwa-proval-standardized-cpu-usage-high'
+id: '6ddadabd-4b0f-45b0-92d5-51a58eba15a4'
 title: 'Proval Standardized CPU Usage High Remote Monitoring'
 title_meta: 'Proval Standardized CPU Usage High Remote Monitoring'
 keywords: ['cpu', 'monitoring', 'alerting', 'configuration', 'performance', 'group', 'threshold']
@@ -48,6 +48,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_4.png)
+
+
+
 
 
 

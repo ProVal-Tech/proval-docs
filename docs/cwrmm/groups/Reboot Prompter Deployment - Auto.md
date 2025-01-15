@@ -1,5 +1,5 @@
 ---
-id: 'rmm-reboot-prompter-deployment'
+id: '93faad94-8731-4fd5-afd0-0ae2a669fc05'
 title: 'Reboot Prompter Deployment - Auto'
 title_meta: 'Reboot Prompter Deployment - Auto'
 keywords: ['dynamic', 'group', 'check', 'agent', 'custom', 'field', 'windows', 'reboot']
@@ -41,6 +41,9 @@ Auto_RebootPendingCheck --> Custom field (Endpoint)
    - The agent available is equals True.
    - The OS contains any of Windows 10 and Windows 11.
    - Exclude Reboot custom field equals False.
+
+
+
 
 
 

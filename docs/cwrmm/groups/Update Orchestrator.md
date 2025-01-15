@@ -1,5 +1,5 @@
 ---
-id: 'rmm-create-device-group-update-orchestrator'
+id: 'dc9cd56d-9a0c-4e40-8205-2da48893d825'
 title: 'Create Device Group for Update Orchestrator'
 title_meta: 'Create Device Group for Update Orchestrator'
 keywords: ['device', 'group', 'update', 'orchestrator', 'solution', 'windows']
@@ -46,6 +46,9 @@ Contains any of: "Windows"
 AND
 
 Site > Contains any of > "Select the sites you want this to target".
+
+
+
 
 
 

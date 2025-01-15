@@ -37,3 +37,6 @@ Clears browser caches for Chromium-based browsers.
 ## Output
     .\Clear-ChromiumCache-log.txt
 
+
+
+

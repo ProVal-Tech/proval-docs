@@ -1,5 +1,5 @@
 ---
-id: 'rmm-smb1-traffic-detection-remote-monitors'
+id: 'ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9'
 title: 'Creating Remote Monitors for SMB1 Traffic Detection'
 title_meta: 'Creating Remote Monitors for SMB1 Traffic Detection'
 keywords: ['smb1', 'monitor', 'traffic', 'detection', 'remote', 'properties', 'edf', 'alert', 'template', 'category']
@@ -94,6 +94,9 @@ Remote monitors will be set up on computers where the [SMB1 Detection](https://p
 ## Output
 
 - Remote Monitors
+
+
+
 
 
 

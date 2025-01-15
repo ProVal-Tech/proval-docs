@@ -1,5 +1,5 @@
 ---
-id: 'cwa_retired-machines-summary'
+id: '231e029c-9c15-4a70-ac35-399e73d0d7bb'
 title: 'Retired Machines Summary'
 title_meta: 'Retired Machines Summary'
 keywords: ['retired', 'machines', 'summary', 'comments', 'dataview']
@@ -28,6 +28,9 @@ None
 | LocalAddress    | Internal IP address of the machine            |
 | RetiredDate     | Date when the machine was retired             |
 | RetireComments   | This is the comment when the computer was retired |
+
+
+
 
 
 

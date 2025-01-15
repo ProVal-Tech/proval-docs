@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-excluded-patching'
+id: 'af3ad410-f40b-4245-8473-057ae6814a0e'
 title: 'Audit Excluded Patching in Automate'
 title_meta: 'Audit Excluded Patching in Automate'
 keywords: ['audit', 'patching', 'machines', 'excluded', 'automate']
@@ -28,6 +28,9 @@ None
 | Last Contact           | The last check-in time of the detected machine              |
 | Install Policy         | The Install policy that is applied on the machine           |
 | Onboarding Completed    | The status of onboarding, whether the machine has completed onboarding or not |
+
+
+
 
 
 

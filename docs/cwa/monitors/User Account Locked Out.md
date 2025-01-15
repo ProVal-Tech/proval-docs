@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-automate-user-lockout'
+id: 'c02990b4-9809-497b-9655-d161c1091142'
 title: 'Monitor Automate User Lockout'
 title_meta: 'Monitor Automate User Lockout'
 keywords: ['automate', 'monitor', 'user', 'lockout']
@@ -15,6 +15,9 @@ This monitor detects Automate users that have been locked out of logging in.
 ## Target
 
 Global
+
+
+
 
 
 

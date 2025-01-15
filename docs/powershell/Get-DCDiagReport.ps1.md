@@ -1,5 +1,5 @@
 ---
-id: 'ps-rebuild-wmi-repository'
+id: '3c0d8537-9331-4623-90a0-8d2f724d19af'
 title: 'Rebuild WMI Repository Script'
 title_meta: 'Rebuild WMI Repository Script for Windows'
 keywords: ['wmi', 'repository', 'windows', 'repair', 'service']
@@ -148,5 +148,8 @@ This bypasses all initial checks and forces the intermediate repair regardless o
 | ConnectWise RMM                  |                                      |
 | Kaseya                           |                                      |
 | Datto RMM                        |                                      |
+
+
+
 
 

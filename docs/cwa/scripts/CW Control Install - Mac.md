@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cw-control-agent-installation'
+id: '6bbf6e1c-3721-488d-b807-9c4b4fc78259'
 title: 'CW Control Agent Installation on Mac'
 title_meta: 'CW Control Agent Installation on Mac'
 keywords: ['cw', 'control', 'agent', 'mac', 'installation', 'removal', 'reinstallation']
@@ -40,6 +40,9 @@ The script will perform a fresh installation, or a removal and reinstallation of
 ## Output
 
 - Script Logs
+
+
+
 
 
 

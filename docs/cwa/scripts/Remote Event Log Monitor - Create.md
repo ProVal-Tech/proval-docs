@@ -1,5 +1,5 @@
 ---
-id: 'cwa-event-log-monitor-creation'
+id: '144d7d52-8764-4aa4-bcce-205c756f6203'
 title: 'Event Log Monitor Creation in ConnectWise Automate'
 title_meta: 'Event Log Monitor Creation in ConnectWise Automate'
 keywords: ['event', 'monitor', 'log', 'connectwise', 'automate', 'alert', 'configuration', 'remote', 'script']
@@ -130,6 +130,9 @@ TimeCreated                            Id LevelDisplayName Message
 4/18/2023 9:06:48 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 4/18/2023 9:01:58 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 ```
+
+
+
 
 
 

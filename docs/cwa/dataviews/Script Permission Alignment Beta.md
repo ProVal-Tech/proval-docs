@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-permission-alignment'
+id: 'c7532677-9914-419a-b6cc-da381393c68c'
 title: 'Script Permission Alignment Overview'
 title_meta: 'Script Permission Alignment Overview'
 keywords: ['dataview', 'user', 'classes', 'permissions', 'scripts']
@@ -26,6 +26,9 @@ The dataview will display the user classes which will be assigned to the stock s
 | Script Path               | Full Path to the Script                              |
 | Access                    | Set of user classes who have permission to access this script |
 | User Class                | Name of the User Class(es) with access to this script |
+
+
+
 
 
 

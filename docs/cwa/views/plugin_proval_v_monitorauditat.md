@@ -1,5 +1,5 @@
 ---
-id: 'cwa_monitor_audit_view_creation'
+id: '7f064a98-679c-4e7c-a8da-499c269b551f'
 title: 'Monitor Audit View Creation for AutoTask Plugins'
 title_meta: 'Monitor Audit View Creation for AutoTask Plugins'
 keywords: ['monitor', 'autotask', 'view', 'sql', 'audit']
@@ -410,6 +410,9 @@ WHERE
     AND (`a`.`ComputerID` < 1)
   )
 ```
+
+
+
 
 
 

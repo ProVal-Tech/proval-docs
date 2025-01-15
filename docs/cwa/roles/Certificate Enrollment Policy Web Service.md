@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-certificate-enrollment-policy'
+id: '466473be-93fc-494f-82ef-b62deadb0622'
 title: 'Detect Certificate Enrollment Policy Web Service Feature'
 title_meta: 'Detect Certificate Enrollment Policy Web Service Feature'
 keywords: ['certificate', 'enrollment', 'web', 'service', 'feature', 'detection', 'windows']
@@ -17,6 +17,9 @@ Role used to detect the servers with Certificate Enrollment Policy Web Service F
 | Detection String                                                                                     | Comparator | Result   | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|----------|---------------|
 | {%@powershell.exe -nologo -noprofile -command "Get-windoewsFeature -Name 'ADCS-Enroll-Web-Pol' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains   | Installed | Windows       |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-set-local-admin-check'
+id: '3ff4b4be-2bca-4ef2-80d6-8761cebaeb15'
 title: 'Monitor Set for Local Admin Account Verification'
 title_meta: 'Monitor Set for Local Admin Account Verification'
 keywords: ['monitor', 'local', 'admin', 'account', 'verification', 'password', 'age', 'parameters']
@@ -29,6 +29,9 @@ With the exception of Domain Controllers, only Windows machines belonging to cli
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script on the machines detected by the monitor set.
+
+
+
 
 
 

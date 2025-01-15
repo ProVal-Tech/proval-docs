@@ -1,5 +1,5 @@
 ---
-id: 'vsa-remove-sophos-endpoint-agent'
+id: '986e2bee-68f3-456a-afd3-8634c26b877f'
 title: 'Remove Sophos Endpoint Agent'
 title_meta: 'Remove Sophos Endpoint Agent'
 keywords: ['sophos', 'endpoint', 'uninstall', 'zap', 'agent']
@@ -74,6 +74,9 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://
 - ./Remove-Sophos-Log.txt
 - ./Remove-Sophos-Error.txt
 - Agent Procedure Log
+
+
+
 
 
 

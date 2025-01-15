@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-windows-10-v1909-prompt'
+id: 'cf05b28e-65d3-4d7b-b0e7-be1fe2427e26'
 title: 'Disable Windows 10 v1909 Deprecation Prompt'
 title_meta: 'Disable Windows 10 v1909 Deprecation Prompt'
 keywords: ['windows', 'deprecation', 'prompt', 'script', 'notification']
@@ -25,6 +25,9 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
+
+
+
 
 
 

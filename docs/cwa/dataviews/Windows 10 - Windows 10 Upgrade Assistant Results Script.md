@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-upgrade-data'
+id: '7d204393-b187-49fe-ba22-17a2e0eb8e3c'
 title: 'Windows 10 Upgrade Data Overview'
 title_meta: 'Windows 10 Upgrade Data Overview'
 keywords: ['upgrade', 'windows', 'data', 'script', 'client', 'location', 'computer', 'version', 'status', 'date']
@@ -24,6 +24,9 @@ unlisted: false
 ## Dependencies
 
 This data is populated by the Windows 10 - Upgrade Assistant script as well as a secondary Windows 10 - Upgrade Assistant Follow Up script. Without these scripts, this dataview will not be able to effectively display the data.
+
+
+
 
 
 

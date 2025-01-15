@@ -1,5 +1,5 @@
 ---
-id: 'cwa-folder-redirection-audit'
+id: 'e7d25f05-6d80-4baa-94b8-517f81abc4a5'
 title: 'Folder Redirection Audit'
 title_meta: 'Folder Redirection Audit'
 keywords: ['folder', 'redirection', 'audit', 'data', 'endpoint', 'backup']
@@ -32,6 +32,9 @@ This datatview will display basic information related to folder redirection on e
 | PicturesEnabled           | True|False - Will display if the users "Pictures" folder is being redirected                   |
 | Pictures Redirected Path  | If PicturesEnabled is True, this will display the full path to the user's pictures folder    |
 | TimeStamp                 | The last time this data was gathered                                                          |
+
+
+
 
 
 

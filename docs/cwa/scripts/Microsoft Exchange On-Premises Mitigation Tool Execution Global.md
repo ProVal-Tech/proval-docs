@@ -1,5 +1,5 @@
 ---
-id: 'cwa-exchange-mitigation-tool'
+id: 'f43caad6-43d9-4313-83ae-f0607ac15c6c'
 title: 'Exchange On-Premise Mitigation Tool for Hafnium CVE'
 title_meta: 'Exchange On-Premise Mitigation Tool for Hafnium CVE'
 keywords: ['exchange', 'mitigation', 'cve', 'hafnium', 'script', 'ticket', 'scan']
@@ -32,6 +32,9 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Logfile named as msert.log
+
+
+
 
 
 

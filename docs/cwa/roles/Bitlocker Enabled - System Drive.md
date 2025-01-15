@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-status-check'
+id: '65d800d5-0bb9-4101-a6e9-289ab737557e'
 title: 'Bitlocker Status Check for C: Drive'
 title_meta: 'Bitlocker Status Check for C: Drive'
 keywords: ['bitlocker', 'endpoint', 'status', 'protection', 'windows']
@@ -19,6 +19,9 @@ This data is visible in the Bitlocker dataviews or the roles tab in Automate.
 | Detection String                                     | Comparator | Result        | Applicable OS |
 |-----------------------------------------------------|------------|---------------|----------------|
 | `{%@manage-bde -status C: | find "Protection Status"@%}` | Contains   | Protection On | Windows OS     |
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'vsa-remove-vsa-stagnant-agent'
+id: '27e27b0e-f21e-4bb0-84e2-518eac8662b1'
 title: 'Remove Stagnant VSA Agents'
 title_meta: 'Remove Stagnant VSA Agents from the Environment'
 keywords: ['vsa', 'agents', 'offline', 'removal', 'api']
 description: 'This document provides an overview of a script that removes VSA agents from the environment that have been offline for a specified number of days. It details the requirements, process, payload usage, parameters, and output location for logs, results, and errors.'
 tags: ['vsa', 'offline', 'removal', 'api', 'configuration']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Overview
 
@@ -45,6 +45,9 @@ Location of output for log, result, and error files.
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
+
+
+
 
 
 

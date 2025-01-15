@@ -1,5 +1,5 @@
 "---
-id: 'rmm-add-wifi-profile'
+id: 'ce5e9466-a5c3-487a-a9b7-5d204093e73e'
 title: 'Add Wi-Fi Profile'
 title_meta: 'Add Wi-Fi Profile for Windows Computers'
 keywords: ['wifi', 'profile', 'windows', 'script', 'connectwise']
@@ -320,4 +320,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 - Script Log
 
 "
+
+
+
 

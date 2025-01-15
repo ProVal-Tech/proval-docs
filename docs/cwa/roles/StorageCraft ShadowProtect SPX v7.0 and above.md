@@ -1,5 +1,5 @@
 ---
-id: 'cwa-shadowprotect-version-check'
+id: '8157d6e9-cac2-4def-a4f5-6ae6be897713'
 title: 'ShadowProtect SPX Version Check'
 title_meta: 'ShadowProtect SPX Version Check'
 keywords: ['shadowprotect', 'backup', 'version', 'management', 'endpoint']
@@ -17,6 +17,9 @@ This role will determine if the primary build number for ShadowProtect SPX is ve
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%}` | Regex Match   | ^7/..  | Windows OS     |
+
+
+
 
 
 

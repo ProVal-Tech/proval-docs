@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-additional-screenconnect-clients'
+id: '237065e9-8db3-4932-9ba8-1588cc6a7d3c'
 title: 'Remove Additional ScreenConnect Clients'
 title_meta: 'Remove Additional ScreenConnect Clients'
 keywords: ['screenconnect', 'clients', 'remove', 'windows', 'solution']
@@ -51,6 +51,9 @@ left join clients on clients.clientid=c.clientid
 where software.name like '%screenconnect%' 
 group by software.name
 ```
+
+
+
 
 
 

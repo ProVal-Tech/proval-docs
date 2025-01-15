@@ -1,5 +1,5 @@
 ---
-id: 'rmm-c2r-office-version-details'
+id: '9229f1df-c80a-4333-8184-2c54954b4996'
 title: 'C2R Office Version Details'
 title_meta: 'C2R Office Version Details'
 keywords: ['c2r', 'office', 'version', 'details', 'microsoft', 'endpoint']
@@ -22,6 +22,9 @@ C2R office version installed on the machine gathered by the [Microsoft 365 - Cli
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Office-Version/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Office-Version/image_2.png)
+
+
+
 
 
 

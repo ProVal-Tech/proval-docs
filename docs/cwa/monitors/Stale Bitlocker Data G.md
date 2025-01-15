@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-bitlocker-key-retrieval'
+id: '8484cc0a-dc70-40e7-86d2-bd5f3c7ac0a9'
 title: 'Monitor for Bitlocker Key Retrieval Date'
 title_meta: 'Monitor for Bitlocker Key Retrieval Date'
 keywords: ['bitlocker', 'monitor', 'key', 'retrieval', 'date']
@@ -20,6 +20,9 @@ The monitor runs on Bitlocker Enabled Machines and checks if the key retrieval d
 ## Target
 
 Global
+
+
+
 
 
 

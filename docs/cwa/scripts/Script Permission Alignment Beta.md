@@ -1,5 +1,5 @@
 ---
-id: 'cwa-standardize-script-permissions'
+id: '46412261-f40b-456f-92db-500d166c41ca'
 title: 'Standardize Permissions for Built-In Scripts in ConnectWise Automate'
 title_meta: 'Standardize Permissions for Built-In Scripts in ConnectWise Automate'
 keywords: ['permissions', 'scripts', 'connectwise', 'automate', 'tier', 'tech', 'access', 'custom', 'table']
@@ -64,6 +64,9 @@ The initial permissions of the scripts are stored in the custom table during the
 - Custom Table
 - Script level permission  
 ![Output Image](../../../static/img/Script-Permission-Alignment-Beta/image_6.png)
+
+
+
 
 
 

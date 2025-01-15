@@ -1,5 +1,5 @@
 ---
-id: 'cwa-teamviewer-uninstallation'
+id: '01a3e5aa-d3fd-42a2-9b9f-5f1ca662164c'
 title: 'TeamViewer Uninstallation via Remote Monitor'
 title_meta: 'TeamViewer Uninstallation via Remote Monitor'
 keywords: ['teamviewer', 'uninstallation', 'remote', 'monitor', 'query']
@@ -154,6 +154,9 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-bitlocker-key-retrieval'
+id: '999eecab-38a7-41e1-b132-bc4b343e9b65'
 title: 'Bitlocker Key Retrieval'
 title_meta: 'Bitlocker Key Retrieval'
 keywords: ['bitlocker', 'recovery', 'key', 'endpoint', 'cf']
@@ -38,6 +38,9 @@ Gets bitlocker recovery keys on endpoint and prints any that exist to the CF.
 ## Output
 
 CF, AP Log
+
+
+
 
 
 

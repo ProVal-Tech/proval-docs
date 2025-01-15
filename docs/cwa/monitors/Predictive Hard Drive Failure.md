@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-disk-internal-monitor-predictive-hard-drive-failure'
+id: 'fbd607cd-0450-4fca-9f2c-2567a2af58d3'
 title: 'EPM - Disk - Internal Monitor - Predictive Hard Drive Failure'
 title_meta: 'EPM - Disk - Internal Monitor - Predictive Hard Drive Failure'
 keywords: ['monitor', 'harddrive', 'failure', 'alert', 'maintenance', 'data', 'system']
@@ -56,6 +56,9 @@ Disk Interface: <Disk Interface>
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
+
+
 
 
 

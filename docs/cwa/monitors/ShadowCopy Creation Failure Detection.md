@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-event-log-check'
+id: 'a7bcd631-f96c-4443-ae87-e7739407e283'
 title: 'Remote Monitor for Event Log Check'
 title_meta: 'Remote Monitor for Event Log Check'
 keywords: ['monitor', 'event', 'log', 'check', 'windows', 'server', 'workstation']
@@ -35,6 +35,9 @@ The suggested target for the monitor: Service Plan(s) for Servers and Workstatio
 Examples:  
 Windows Servers - Should be run on all Windows-based servers.  
 Windows Workstations - Should be run on all Windows workstations (Optional)
+
+
+
 
 
 

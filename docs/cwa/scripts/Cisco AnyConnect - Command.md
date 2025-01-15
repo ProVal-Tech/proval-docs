@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cisco-anyconnect-install-uninstall'
+id: 'a408ca7c-208e-4ecb-bd2f-574a25a95d7c'
 title: 'Cisco AnyConnect Install/Uninstall Script'
 title_meta: 'Cisco AnyConnect Install/Uninstall Script'
 keywords: ['cisco', 'anyconnect', 'install', 'uninstall', 'script', 'windows', 'mac', 'linux']
@@ -76,6 +76,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
   - There is extensive script logging in this script in both the install and uninstall processes.
+
+
+
 
 
 

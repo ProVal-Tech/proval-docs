@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-esxi-monitoring-script'
+id: '642f7615-925c-481f-b4bf-8d6b2c9ad6de'
 title: 'Autofix Script for ESXi Monitoring'
 title_meta: 'Autofix Script for ESXi Monitoring'
 keywords: ['esxi', 'monitoring', 'alert', 'email', 'notification']
@@ -50,6 +50,9 @@ It is being used with the `△ Custom - Email Creation - VMWare ESXi Monitoring`
 
 - Script Log
 - Email
+
+
+
 
 
 

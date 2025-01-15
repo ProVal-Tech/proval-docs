@@ -1,5 +1,5 @@
 ---
-id: 'cwa-compliance-management-monitor'
+id: 'c9e3891e-1588-4dbc-85eb-dc39a861a433'
 title: 'Compliance Management Monitor'
 title_meta: 'Compliance Management Monitor - Detecting Agent Deployment'
 keywords: ['monitor', 'agent', 'compliance', 'deployment', 'alerting']
@@ -25,6 +25,9 @@ Global
 *To create a ticket please set the ticket category in the alerting section of the monitor*
 
 ![Image](../../../static/img/Agents-Missing-Rapid-Fire-Compliance-Manager/image_1.png)
+
+
+
 
 
 

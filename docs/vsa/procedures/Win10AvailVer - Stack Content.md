@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-latest-win10-version-status'
+id: '21df19c2-15d2-40da-8810-ef3aa8307784'
 title: 'Gets Latest Available Windows 10 Version Status'
 title_meta: 'Gets Latest Available Windows 10 Version Status'
 keywords: ['windows', 'update', 'status', 'version']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Gets Latest Avail Win10 Version Status
+
+
+
 
 
 

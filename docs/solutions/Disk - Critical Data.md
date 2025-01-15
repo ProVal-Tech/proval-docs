@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disk-critical-data-gathering'
+id: '7907bbc0-a161-47b4-bd24-64aa3ccca910'
 title: 'Disk Critical Data Gathering Solution'
 title_meta: 'Disk Critical Data Gathering Solution'
 keywords: ['disk', 'data', 'gathering', 'monitor', 'performance', 'failure']
@@ -33,6 +33,9 @@ The solution summary focuses on gathering hard drive failure data from target ma
 - Implement the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-12662477) Internal Monitor, check the monitor's document for implementation and alert template.
 - Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) Internal Monitor.
 - Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) Internal Monitor, check the monitor's document for implementation and alert template.
+
+
+
 
 
 

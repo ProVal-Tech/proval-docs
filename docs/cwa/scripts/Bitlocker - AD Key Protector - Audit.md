@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-backup-bitlocker-keys'
+id: 'd533538b-8b00-425e-849f-434518296b2d'
 title: 'Audit Existing Backup BitLocker Key Protectors'
 title_meta: 'Audit Existing Backup BitLocker Key Protectors from Active Directory'
 keywords: ['audit', 'bitlocker', 'key', 'protectors', 'active', 'directory']
@@ -93,6 +93,9 @@ For additional information about the underlying logic, please see [SEC - Encrypt
 9. Go to the “Operating System Drives” node and turn on the similar policy “**Choose how BitLocker-protected operating system drives can be recovered**“. Afterwards, go to the “Removable Data Drives” node and enable the policy “**Choose how BitLocker-protected removable drives can be recovered**“.  
 
 10. When any client PC retrieves the policy changes, BitLocker recovery information will be automatically and silently backed up to AD DS when BitLocker is turned on for fixed drives, OS drives, or removable drives.
+
+
+
 
 
 

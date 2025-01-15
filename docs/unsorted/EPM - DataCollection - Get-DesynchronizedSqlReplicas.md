@@ -1,12 +1,12 @@
 ---
-id: 'ps-desynchronized-sql-replicas'
+id: '4f479c3c-88e1-434c-a66b-5683fe8fbc5f'
 title: 'Get Desynchronized SQL Replicas'
 title_meta: 'Get Desynchronized SQL Replicas'
 keywords: ['sql', 'replication', 'desynchronized', 'database', 'status']
 description: 'This document provides a guide on how to return a list of all desynchronized SQL replicas. It includes requirements, process steps, usage, and output details for executing the script on an SQL server.'
 tags: ['database', 'sql', 'configuration', 'report', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -47,6 +47,9 @@ Returns a list of all Sql replication instances that are not synchronized or syn
 | ConnectWise RMM                   |                                                 |
 | Kaseya                            |                                                 |
 | Datto RMM                         |                                                 |
+
+
+
 
 
 

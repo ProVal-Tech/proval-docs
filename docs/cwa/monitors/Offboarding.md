@@ -1,5 +1,5 @@
 ---
-id: 'cwa-offboarding-monitor'
+id: '5721d83a-3303-4dc2-97ca-118683da0690'
 title: 'Offboarding Monitor for Client, Location, and Computer'
 title_meta: 'Offboarding Monitor for Client, Location, and Computer'
 keywords: ['offboarding', 'monitor', 'edf', 'client', 'location', 'computer']
@@ -32,6 +32,9 @@ All Operating Systems
 ## Alert Template
 
 - **`△ Custom - Execute Script - Offboarding Wrapper`**
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-enable-windows-firewall'
+id: '2b875e4d-de3a-40ad-a63d-508a97d20ad9'
 title: 'Enable Windows Firewall for Public and Private Networks'
 title_meta: 'Enable Windows Firewall for Public and Private Networks'
 keywords: ['windows', 'firewall', 'public', 'private', 'enable', 'network']
@@ -63,6 +63,9 @@ If EnablePublicFirewall is set to 1, Windows Firewall will be enabled for Public
 ## Output
 
 AP Log
+
+
+
 
 
 

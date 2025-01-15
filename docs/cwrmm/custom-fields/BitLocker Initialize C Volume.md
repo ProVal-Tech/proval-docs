@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-initialize-volume-custom-fields'
+id: '25f75989-92a9-49f9-b99b-a241b9f7d6ef'
 title: 'Bitlocker Initialize Volume Custom Fields'
 title_meta: 'Bitlocker Initialize Volume Custom Fields'
 keywords: ['bitlocker', 'custom', 'fields', 'encryption', 'monitoring']
@@ -22,6 +22,9 @@ This doc contains the custom field details linked to the Bitlocker Initialize Vo
 | Bitlocker Monitoring         | Flag | Company  | No            | Yes      | This custom field sets the Bitlocker initialization of the system volume of the agent with the Encryption method 'AES256'.                                   |
 | Bitlocker XTSAES 256        | Flag | Company  | No            | Yes      | This custom field needs the 'Bitlocker Monitoring' company custom field to be checked first. If this is also checked, then the BitLocker setting would be done of system volume with the encryption method 'XtsAes256'. |
 | ACP BitLocker Init Result    | Text | Endpoint |               | No       | This custom field stores the output of the Bitlocker script. It stores 'Failure' when the script generates the error log file or misses the log file generation, Else store 'Success'. |
+
+
+
 
 
 

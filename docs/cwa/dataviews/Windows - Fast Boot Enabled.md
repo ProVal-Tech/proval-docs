@@ -1,5 +1,5 @@
 ---
-id: 'cwa-fast-boot-status'
+id: '445b29bc-7665-4f85-a6b9-dfb68e75d70f'
 title: 'Fast Boot Status Report'
 title_meta: 'Fast Boot Status Report'
 keywords: ['fastboot', 'report', 'status', 'client', 'computer', 'os']
@@ -24,6 +24,9 @@ This dataview pulls from the role detection of Fast Boot. This shows all machine
 | Computer Name   | Computer Name                                                                             |
 | OS              | OS installed on the machine                                                               |
 | FastBoot status | Shows FastBoot Enabled if the role is detected, or 'Not Detected' if FastBoot is disabled |
+
+
+
 
 
 

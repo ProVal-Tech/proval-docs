@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-classicteams'
+id: '0bcdb6d5-adc1-4122-923c-1bc121f1a146'
 title: 'Uninstall Microsoft Teams Classic'
 title_meta: 'Uninstall Microsoft Teams Classic from Windows Machines'
 keywords: ['uninstall', 'microsoft', 'teams', 'windows', 'script']
@@ -44,6 +44,9 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@  
+
+
+
 
 
 

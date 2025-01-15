@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-disable-admin-account'
+id: '5c6739bc-45a2-4011-99e1-f90581fa15ac'
 title: 'Enable/Disable Administrator Account Script'
 title_meta: 'Enable/Disable Administrator Account Script for Windows Machines'
 keywords: ['administrator', 'account', 'enable', 'disable', 'password', 'script', 'client']
@@ -92,6 +92,9 @@ Password Complexity Failed: If the password did not meet the target device's com
 ## Output
 
 Script log messages
+
+
+
 
 
 

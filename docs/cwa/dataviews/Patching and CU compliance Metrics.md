@@ -1,5 +1,5 @@
 ---
-id: 'cwa_patch_cumulative_update_compliance'
+id: '478c4a27-9722-4175-819d-fd4ed1f481f2'
 title: 'Patch and Cumulative Update Compliance Overview'
 title_meta: 'Patch and Cumulative Update Compliance Overview'
 keywords: ['patch', 'compliance', 'update', 'windows', 'cumulative', 'score']
@@ -63,6 +63,9 @@ The dataview is designed to display the patch and Cumulative Update compliance s
 | CU Score %                           | Green  | greater than or equal to 75         |
 | Compliant Clients - CU %             | Red    | less than 75                         |
 | Compliant Clients - CU %             | Green  | greater than or equal to 75         |
+
+
+
 
 
 

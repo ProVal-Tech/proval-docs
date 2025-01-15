@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winget-update-all'
+id: '8c8bc8b0-817e-4903-bd09-90df4c25ab9e'
 title: 'Enable User-Level Scheduled Task for Winget Update'
 title_meta: 'Enable User-Level Scheduled Task for Winget Update'
 keywords: ['winget', 'scheduled', 'task', 'windows', 'update']
@@ -25,6 +25,9 @@ Set this custom field to "No" to enable the user-level scheduled task `Winget Up
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_2.png)
+
+
+
 
 
 

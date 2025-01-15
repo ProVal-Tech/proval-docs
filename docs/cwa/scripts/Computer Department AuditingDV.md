@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-users-department-info'
+id: 'f3c63891-aac1-49f9-a05d-552886c5b6da'
 title: 'Collecting AD Users Department Information'
 title_meta: 'Collecting AD Users Department Information'
 keywords: ['ad', 'users', 'department', 'information', 'collection']
@@ -33,6 +33,9 @@ It will store the information to the table `plugin_proval_computer_department` a
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
+
+
+
 
 
 

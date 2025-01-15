@@ -1,5 +1,5 @@
 ---
-id: 'cwa-deploy-huntress-agent'
+id: 'ec2b3583-4c06-40c2-8f2d-55f46f7aeed1'
 title: 'Deploy and Manage the Huntress Agent'
 title_meta: 'Deploy and Manage the Huntress Agent on Windows and macOS'
 keywords: ['huntress', 'agent', 'deployment', 'management', 'windows', 'macos']
@@ -64,6 +64,9 @@ Configure the solution as outlined below:
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) internal monitor.  
 ![Image](../../static/img/Huntress-Agent-Management/image_3.png)
+
+
+
 
 
 

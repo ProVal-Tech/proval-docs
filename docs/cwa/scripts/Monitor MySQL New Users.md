@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-mysql-users'
+id: '5ca4395e-3e6f-476c-a75e-87751957751f'
 title: 'Check MySQL Users Script'
 title_meta: 'Check MySQL Users Script'
 keywords: ['mysql', 'email', 'script', 'users', 'notification']
@@ -42,6 +42,9 @@ Step 3: If the script state doesn't exist or is empty, fill it.
 ## Output
 
 Email
+
+
+
 
 
 

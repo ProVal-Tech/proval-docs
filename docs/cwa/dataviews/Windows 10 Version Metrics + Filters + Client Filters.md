@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-version-metrics'
+id: '13b8b937-0d9f-44b7-a7e5-5abf38ab9cda'
 title: 'Windows 10 Version Metrics Dataview'
 title_meta: 'Windows 10 Version Metrics Dataview'
 keywords: ['windows', 'metrics', 'dataview', 'build', 'client', 'machines', 'releaseid', 'patch']
@@ -43,6 +43,9 @@ Sample Screenshot:
 | % Supported Machines              | varchar(27)     | Either 100 or 0 for the releaseid row depending upon whether the concerned releaseid is supported till today or not. For the Summary row, it's the percentage of the supported windows 10 out of all the available windows 10 machines. |
 | % Unsupported Machines            | varchar(31)     | Either 0 or 100 for the releaseid row depending upon whether the concerned releaseid is supported till today or not. For the Summary row, it's the percentage of the unsupported windows 10 out of all the available windows 10 machines. |
 | Build                             | varchar(60)     | Build Number for the concerned releaseid. e.g, 10.0.19044, 10.0.19043. It will Show 'Windows 10' for the Summary Row.                                                                                     |
+
+
+
 
 
 

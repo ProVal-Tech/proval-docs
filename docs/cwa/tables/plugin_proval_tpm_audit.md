@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-audit'
+id: '82144ad7-4cff-4883-8389-1180052ab156'
 title: 'Bitlocker TPM Audit Table'
 title_meta: 'Bitlocker TPM Audit Table'
 keywords: ['bitlocker', 'tpm', 'audit', 'encryption', 'security']
@@ -43,6 +43,9 @@ It holds all data from the Get-TPM command.
 | TpmOwned               | VARCHAR | Holds the value of the TpmOwned property of Get-TPM                |
 | TpmPresent             | VARCHAR | Holds the value of the TpmPresent property of Get-TPM              |
 | TpmReady               | VARCHAR | Holds the value of the TpmReady property of Get-TPM                |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-onedrive-folder-redirection-detection'
+id: 'd96b3af4-f2c4-4bc9-a014-0d63833330c9'
 title: 'OneDrive Folder Redirection Detection'
 title_meta: 'OneDrive Folder Redirection Detection'
 keywords: ['onedrive', 'folder', 'redirection', 'detection', 'policy']
@@ -17,6 +17,9 @@ This role will be detected on an agent where OneDrive folder redirection is enab
 | Detection String                                                                                   | Comparator | Result           | Applicable OS |
 |----------------------------------------------------------------------------------------------------|------------|------------------|---------------|
 | {%@reg query "HKLM/SOFTWARE/Policies/Microsoft/OneDrive" /v KFMSilentOptIn | find "KFMSilentOptIn"@%} | Contains   | KFMSilentOptIn | Windows       |
+
+
+
 
 
 

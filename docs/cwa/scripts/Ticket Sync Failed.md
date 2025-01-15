@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-ticket-sync'
+id: 'f490325a-023c-430d-876d-e4d311ff3e89'
 title: 'Autofix for Ticket Sync Issues'
 title_meta: 'Autofix for Ticket Sync Issues'
 keywords: ['ticket', 'sync', 'email', 'monitor', 'automate']
@@ -41,6 +41,9 @@ The monitor will trigger this script and pass parameters to the script. The para
 ## Output
 
 The only output for this script is an email to the configured email address. If this email fails to send, the data would be visible in the "Failed Emails" section of the system dashboard.
+
+
+
 
 
 

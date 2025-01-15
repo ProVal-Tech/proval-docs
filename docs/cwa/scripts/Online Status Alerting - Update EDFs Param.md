@@ -1,5 +1,5 @@
 ---
-id: 'cwa-online-alert-notification'
+id: '79f11a31-7ae1-4e12-a9d7-581e809aaa2e'
 title: 'Online Alert Notification Script'
 title_meta: 'Online Alert Notification Script for ConnectWise Automate'
 keywords: ['alert', 'notification', 'ticket', 'email', 'script', 'machine', 'status', 'offline', 'online']
@@ -45,6 +45,9 @@ The parameters provided will be filled into their respective EDF values:
 | Email           | Online Alert E-mail        |
 | ScriptIDs       | Online Alert Scripts       |
 | AfterNextReboot | Online Alert Restarted Machine |
+
+
+
 
 
 

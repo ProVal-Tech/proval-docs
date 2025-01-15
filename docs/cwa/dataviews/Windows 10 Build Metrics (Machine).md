@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-patch-status'
+id: '58e136de-46a7-4af2-9b84-0fb71405bbe4'
 title: 'Windows 10 Patch Policy Status Overview'
 title_meta: 'Windows 10 Patch Policy Status Overview'
 keywords: ['windows', 'patch', 'policy', 'status', 'build', 'agent', 'last', 'contact']
@@ -34,6 +34,9 @@ This dataview shows the Windows 10 machines with build and patch policy status c
 | Online Last 30 Days           | It denotes whether the agent logged in within 30 days or not|
 | Has Patch Policy              | This describe whether the Windows 10 agent has patch policy enabled or not |
 | LastPatched                   | This provide the date when the agent was last patched       |
+
+
+
 
 
 

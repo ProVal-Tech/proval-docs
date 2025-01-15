@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-10-upgrade-assistance'
+id: '1b2c0555-1eea-4816-bbfc-bca1e29c9d5c'
 title: 'Creating Device Groups for Windows 10 Upgrade Assistance'
 title_meta: 'Creating Device Groups for Windows 10 Upgrade Assistance'
 keywords: ['windows', 'device', 'group', 'upgrade', 'assistance']
@@ -71,6 +71,9 @@ OS Product
 Contains any of: Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
+
+
+
 
 
 

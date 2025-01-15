@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-bloatware-list'
+id: '80011568-0974-4dee-b011-f6cd58384061'
 title: 'Bloatware List Display'
 title_meta: 'Bloatware List Display'
 keywords: ['bloatware', 'client', 'computer', 'location', 'operating', 'system']
@@ -34,6 +34,9 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](https
 | Bloatware                 | Name of the Bloatware                               |
 | Category                  | Category of the Bloatware                           |
 | Data Collection Time      | Data Collection Time                                 |
+
+
+
 
 
 

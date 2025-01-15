@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-enabling-endpoints'
+id: 'd0046b61-191d-4974-89f5-4afb3f0e4824'
 title: 'BitLocker Enabling on Endpoints'
 title_meta: 'BitLocker Enabling on Endpoints'
 keywords: ['bitlocker', 'encryption', 'tpm', 'reboot', 'monitoring']
@@ -27,6 +27,9 @@ This solution performs the BitLocker enabling on the endpoints. It has a feature
 - Create the [Machine Group - BitLocker Initialize](https://proval.itglue.com/DOC-5078775-15833951)
 - Create the [Script - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829737) and follow the deployment instructions
 - Create the [Monitor - BitLocker Initialize Failure Detection](https://proval.itglue.com/DOC-5078775-15829735) and follow the deployment instructions.
+
+
+
 
 
 

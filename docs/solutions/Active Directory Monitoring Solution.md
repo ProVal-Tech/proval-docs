@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-monitoring'
+id: '4ec048e3-de36-477a-ad95-31cb5aa83cde'
 title: 'Active Directory Monitoring Solutions'
 title_meta: 'Active Directory Monitoring Solutions'
 keywords: ['active-directory', 'monitoring', 'automate', 'plugin', 'reports']
@@ -315,6 +315,9 @@ The solutions presented in this section do not rely on any plugin.
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
+
+
+
 
 
 

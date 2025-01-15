@@ -1,5 +1,5 @@
 ---
-id: 'cwa-restore-point-audit-workstations'
+id: '7f52c871-523c-44ae-9289-814326207896'
 title: 'Restore Point Audit for Workstations'
 title_meta: 'Restore Point Audit for Workstations - Detailed Guide'
 keywords: ['restore', 'point', 'audit', 'workstation', 'dataview']
@@ -31,6 +31,9 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 
 - Script log
 - Dataview
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-primary-domain-controller'
+id: '6e117467-8d11-4ad3-83a3-69ee61aaca85'
 title: 'Get Primary Domain Controller'
 title_meta: 'Get Primary Domain Controller'
 keywords: ['domain', 'controller', 'primary', 'active', 'directory']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Get Primary Domain Controller  
+
+
+
 
 
 

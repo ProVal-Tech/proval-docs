@@ -1,5 +1,5 @@
 ---
-id: 'cwa-track-domain-joined-machines'
+id: '8708cf1b-fdf5-4128-a8f9-4e864052b8ae'
 title: 'Track Domain Joined Machines'
 title_meta: 'Track Domain Joined Machines'
 keywords: ['domain', 'joined', 'machines', 'tracking', 'status']
@@ -17,6 +17,9 @@ This role definition helps you track machines which are domain joined.
 | Detection String                                                                                                                                                                     | Comparator | Result | Applicable OS |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `%{powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : YES*')]"@%}` | Equals     | True   | Windows        |
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'ps-remove-offline-address-books'
+id: 'a0367fce-be4b-474d-8ea1-259d81a33858'
 title: 'Remove and Reset Offline Address Books for All Users'
 title_meta: 'Remove and Reset Offline Address Books for All Users'
 keywords: ['offline', 'address', 'books', 'reset', 'remove', 'users']
 description: 'This document provides a script that removes and resets the Offline Address Books folder for all users in a Windows environment, detailing the process and variables involved.'
 tags: ['configuration', 'windows', 'setup', 'performance', 'notification']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -29,6 +29,9 @@ The script will remove and reset the 'Offline Address Books' folder which is und
 ## Output
 
 - Script log
+
+
+
 
 
 

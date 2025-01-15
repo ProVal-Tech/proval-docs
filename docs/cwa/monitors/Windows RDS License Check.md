@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-rds-licensing-check'
+id: '2ad8091c-4bbb-4524-abc0-b0f0016ef4a5'
 title: 'Windows RDS Licensing Check'
 title_meta: 'Windows RDS Licensing Check'
 keywords: ['rds', 'licensing', 'monitor', 'server', 'windows']
@@ -41,6 +41,9 @@ Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licens
 **Failure:** We have detected Licensing issue with your RDS Licensing Server. Possibilities are either the License is configured or has expired. Please check.  
 
 **Success:** License issue is resolved now.
+
+
+
 
 
 

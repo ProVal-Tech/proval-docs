@@ -1,5 +1,5 @@
 ---
-id: 'cwa-new-domain-user-monitor'
+id: 'e04e673a-5340-47af-9536-28788ffd37ae'
 title: 'New Domain User Account Monitor'
 title_meta: 'New Domain User Account Monitor'
 keywords: ['domain', 'user', 'account', 'monitor', 'ticket']
@@ -19,6 +19,9 @@ This monitor looks for new domain user accounts that have a creation date within
 ## Target
 
 Global
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-deploy-dns-filter-agent'
+id: '07996c53-6e1b-4696-aa08-bdb70710c2c7'
 title: 'Deploy DNS Filter Agent Automatically'
 title_meta: 'Deploy DNS Filter Agent Automatically'
 keywords: ['dns', 'filter', 'agent', 'deployment', 'monitor']
@@ -52,6 +52,9 @@ This solution is built to deploy the DNS filter to the agents automatically.
 5. Ticket Creation  
    For the ticket creation, it is required to set the Ticket Category at the monitor level to gather the ticket category ID and get the ticket created on the respective board via script [CWA - Script - DNS Filter Agent - Install](https://proval.itglue.com/DOC-5078775-15683983):  
    ![Image](../../static/img/DNS-Filter-Agent-Deployment/image_2.png)
+
+
+
 
 
 

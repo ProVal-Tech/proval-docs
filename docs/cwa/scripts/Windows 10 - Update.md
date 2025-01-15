@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-windows-10'
+id: '3f819775-4c68-4511-ad44-d97a37ca3869'
 title: 'Update Windows 10 with Reboot Options'
 title_meta: 'Update Windows 10 with Reboot Options'
 keywords: ['windows', 'update', 'reboot', 'notification', 'log']
@@ -52,6 +52,9 @@ Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows
 ## Output
 
 - Script log
+
+
+
 
 
 

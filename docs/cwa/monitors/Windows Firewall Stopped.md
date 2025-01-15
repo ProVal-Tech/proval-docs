@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-firewall-service'
+id: 'c0e90b21-943c-4ec9-94c6-68902358fa0d'
 title: 'Check Firewall Service Status'
 title_meta: 'Check Firewall Service Status'
 keywords: ['firewall', 'service', 'status', 'monitor', 'online', 'computers']
@@ -17,6 +17,9 @@ Checks if the Firewall service (mpssvc) is running for online computers.
 The suggested target for the monitor.
 
 Server & Workstation Service Plans
+
+
+
 
 
 

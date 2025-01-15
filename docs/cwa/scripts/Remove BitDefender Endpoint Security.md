@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-bitdefender-endpoint-security'
+id: '43a09503-3ebd-440e-a113-8ecd3aaafd39'
 title: 'Remove Bitdefender Endpoint Security'
 title_meta: 'Remove Bitdefender Endpoint Security - Automate Implementation'
 keywords: ['bitdefender', 'uninstall', 'endpoint', 'security']
@@ -28,6 +28,9 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-screenconnect'
+id: 'b04bc7eb-65ce-4684-b787-3b248fcd44f6'
 title: 'Update Screenconnect Versions'
 title_meta: 'Update Screenconnect Versions'
 keywords: ['screenconnect', 'update', 'script', 'connectwise', 'agent']
@@ -46,6 +46,9 @@ To enable the ticketing on failure, the ticket category must be set in the globa
 If screen connect service fails to start after running the installation:
 
 `The script tried to run the installer but could not find the screen connect service on the machine anymore. Run the CW control repair script to resolve the issue.`
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-chocolatey-app'
+id: '65f8712b-9f2b-48e3-b719-8561453d9ea0'
 title: 'Install Chocolatey Application'
 title_meta: 'Install Chocolatey Application - Script Overview'
 keywords: ['chocolatey', 'installer', 'upgrade', 'application', 'automation']
@@ -45,6 +45,9 @@ Time Saved by Automation: 8 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

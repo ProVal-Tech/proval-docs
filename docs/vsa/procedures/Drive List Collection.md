@@ -1,5 +1,5 @@
 ---
-id: 'vsa-physical-drives-collection'
+id: '2b8f8910-5e27-4f1e-8921-65bbe93fb09f'
 title: 'Physical Drives Collection Script'
 title_meta: 'Physical Drives Collection Script for Non-Removable Drives'
 keywords: ['drives', 'collection', 'physical', 'non-removable', 'capacity', 'disk']
@@ -36,6 +36,9 @@ Queries the endpoint for Physical, non-removable drives over 10GB
 
 Agent Procedure Log  
 [EPM - Disk - Custom Field - xPVAL Drive List](https://proval.itglue.com/DOC-5078775-10793262)
+
+
+
 
 
 

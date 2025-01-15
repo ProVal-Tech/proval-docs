@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-firewall-public-setting'
+id: '984edd72-ce3d-4817-9628-74100ef83865'
 title: 'Check Windows Firewall Public Setting'
 title_meta: 'Check Windows Firewall Public Setting'
 keywords: ['firewall', 'windows', 'public', 'security']
@@ -17,6 +17,9 @@ This role will determine if the Windows Firewall is enabled to the "public" sett
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
 | `{%@netsh advfirewall show publicprofile state| find "State"@%}` | Contains   | ON     | Windows OS     |
+
+
+
 
 
 

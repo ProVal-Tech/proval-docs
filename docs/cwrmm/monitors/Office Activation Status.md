@@ -1,5 +1,5 @@
 ---
-id: 'rmm-office-activation-status-alert'
+id: 'a4b90ce5-21c6-40c4-9158-ff60bd08a53f'
 title: 'Office Activation Status Alert'
 title_meta: 'Office Activation Status Alert'
 keywords: ['office', 'activation', 'alert', 'unlicensed', 'endpoint']
@@ -86,6 +86,9 @@ Generates alert for any unlicensed Office products on the endpoint.
 
 13. Click the `Save` button to save the monitor set.  
     ![Save Monitor Set](../../../static/img/Office-Activation-Status/image_14.png)
+
+
+
 
 
 

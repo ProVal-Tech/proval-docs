@@ -1,5 +1,5 @@
 ---
-id: 'cwa-deploy-automate-agent-gpo'
+id: '843cb902-2299-4d91-90b9-62bd7788ea6a'
 title: 'Deploy Automate Agent GPO'
 title_meta: 'Deploy Automate Agent GPO'
 keywords: ['gpo', 'automate', 'deployment', 'network', 'agent', 'domain', 'probe']
@@ -47,6 +47,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-ticket-creation-computer-failures-only'
+id: '2549fcf6-30b5-497b-b44d-7329334bb32c'
 title: 'Custom Ticket Creation for Computer Failures Only'
 title_meta: 'Custom Ticket Creation for Computer Failures Only'
 keywords: ['alert', 'template', 'monitor', 'sql', 'ticket', 'creation', 'failures', 'detection', 'domain', 'controllers']
@@ -106,6 +106,9 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
+
+
+
 
 
 

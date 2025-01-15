@@ -1,5 +1,5 @@
 ---
-id: 'cwa-printer-driver-inventory'
+id: '485b0ab5-8ce4-400c-9ba6-dff7967988aa'
 title: 'Printer Driver Inventory in Automate'
 title_meta: 'Printer Driver Inventory in Automate'
 keywords: ['printer', 'driver', 'inventory', 'automate', 'script']
@@ -31,6 +31,9 @@ This Solution will pull installed print driver version information into Automate
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most probably because of the permissions, try running [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](https://proval.itglue.com/DOC-5078775-8056027) script.
+
+
+
 
 
 

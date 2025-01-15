@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-status-check'
+id: 'ee5b1d9e-eabf-4be4-ad8c-6192b5223cbb'
 title: 'Azure AD Status Check Procedure'
 title_meta: 'Azure AD Status Check Procedure'
 keywords: ['azure', 'ad', 'status', 'check', 'procedure', 'machine']
@@ -45,6 +45,9 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](https://proval.itglue
 ## Output
 
 Procedure Logfiles and custom fields
+
+
+
 
 
 

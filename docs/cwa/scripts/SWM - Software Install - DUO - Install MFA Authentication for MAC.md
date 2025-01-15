@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-duo-2fa-mac'
+id: '854ffbbf-6756-48c6-8dc1-85dea08333e8'
 title: 'Install DUO 2FA Authentication for MAC'
 title_meta: 'Install DUO 2FA Authentication for MAC - Step-by-Step Guide'
 keywords: ['duo', '2fa', 'mac', 'authentication', 'installation']
@@ -68,6 +68,9 @@ Call v_Extradatarefresh(3,'Clients');
 ## Output
 
 - Script Logs
+
+
+
 
 
 

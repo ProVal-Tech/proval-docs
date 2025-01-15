@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-remote-monitors-for-hard-drives'
+id: '5e473149-73a6-4e38-b61e-fd200d9af020'
 title: 'Create Remote Monitors for Detected Hard Drives'
 title_meta: 'Create Remote Monitors for Detected Hard Drives'
 keywords: ['remote', 'monitors', 'hard', 'drives', 'disk', 'space', 'alerts']
@@ -61,6 +61,9 @@ The script runs as a subscript inside the "Agent Monitor Creation - Disk* - WRAP
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a workstation.
+
+
+
 
 
 

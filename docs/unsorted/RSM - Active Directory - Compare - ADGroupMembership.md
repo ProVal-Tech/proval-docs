@@ -1,12 +1,12 @@
 ---
-id: 'ps-compare-ad-group-members'
+id: '619512d1-a535-44c5-9095-b7b310c7d171'
 title: 'Compare Active Directory Group Members'
 title_meta: 'Compare Active Directory Group Members'
 keywords: ['active-directory', 'membership', 'comparison', 'registry', 'logging']
 description: 'This document provides an overview of a script that compares the membership of an Active Directory group by analyzing previous runs and logging any changes detected. It is intended to be run on an Active Directory Domain Controller and details the process, parameters, and output of the script.'
 tags: ['active-directory', 'logging', 'comparison', 'registry', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -54,6 +54,9 @@ Compares the users found in the last run of Compare-ADGroupMembers.ps1 with the 
 | Payload                                  |
 |------------------------------------------|
 | /repo/scripts/Compare-ADGroupMembers.ps1 |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-urgent-ticket-monitoring'
+id: '88dfd269-1df7-4c57-a898-9445dec162b5'
 title: 'Urgent Ticket Monitoring for Automate Server'
 title_meta: 'Urgent Ticket Monitoring for Automate Server - ProVal'
 keywords: ['ticket', 'monitoring', 'automate', 'event', 'error', 'critical']
@@ -33,6 +33,9 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers.Server Roles.MSP Specific Servers.Labtech Server
+
+
+
 
 
 

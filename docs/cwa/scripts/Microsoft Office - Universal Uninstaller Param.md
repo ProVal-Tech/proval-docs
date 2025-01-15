@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-office-scrub'
+id: 'fc97a0b8-b73a-4de0-be9a-c735ece7f43f'
 title: 'Uninstall Microsoft Office Versions with Offscrub'
 title_meta: 'Uninstall Microsoft Office Versions with Offscrub'
 keywords: ['uninstall', 'microsoft', 'office', 'scrub', 'software']
@@ -42,6 +42,9 @@ This script can be run anytime as it is completely silent and no restart is requ
 
 - Script log  
 - Local file on computer
+
+
+
 
 
 

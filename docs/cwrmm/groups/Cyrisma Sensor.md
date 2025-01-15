@@ -1,5 +1,5 @@
 ---
-id: 'rmm-cyrisma-sensor-deployment'
+id: 'bdea3d9e-acca-4b87-96a6-632c488fef1f'
 title: 'Cyrisma Sensor Deployment and Audit Groups'
 title_meta: 'Cyrisma Sensor Deployment and Audit Groups'
 keywords: ['cyrisma', 'sensor', 'deployment', 'audit', 'monitor', 'dynamic', 'groups']
@@ -55,6 +55,9 @@ Create Dynamic Groups:
 
    Criteria:
    - Installed Software Contains any of 'CYRISMA'
+
+
+
 
 
 

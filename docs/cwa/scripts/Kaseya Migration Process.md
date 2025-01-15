@@ -1,5 +1,5 @@
 ---
-id: 'cwa-migrate-agent-to-kaseya'
+id: 'de4bfced-9152-46ca-ae22-853f9aa756f8'
 title: 'Migrate Automate Agent to Kaseya Group ID'
 title_meta: 'Migrate Automate Agent to Kaseya Group ID'
 keywords: ['migrate', 'agent', 'kaseya', 'automate', 'migration']
@@ -38,6 +38,9 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 Outputs fail/success to the script log in Automate.
+
+
+
 
 
 

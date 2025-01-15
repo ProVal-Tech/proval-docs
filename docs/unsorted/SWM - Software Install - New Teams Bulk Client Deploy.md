@@ -1,12 +1,12 @@
 ---
-id: 'ps-install-new-teams-client'
+id: 'e19128db-d2f6-428f-bd78-d833ec4aa952'
 title: 'Install New Teams Client Using TeamsBootStrapper'
 title_meta: 'Install New Teams Client Using TeamsBootStrapper'
 keywords: ['teams', 'client', 'upgrade', 'installation', 'powershell']
 description: 'This document provides a detailed guide on how to install the new Microsoft Teams client using the TeamsBootStrapper executable. It includes the necessary PowerShell command, dependencies, output locations, and configuration options for updating the application without user intervention.'
 tags: ['installation', 'update', 'software', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -46,6 +46,9 @@ $updates = Get-LSUpdate -All
 
 Github: [https://jantari.github.io/LSUClient-docs/](https://jantari.github.io/LSUClient-docs/)  
 [https://github.com/jantari/LSUClient](https://github.com/jantari/LSUClient)
+
+
+
 
 
 

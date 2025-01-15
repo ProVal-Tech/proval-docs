@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-windows-update-notification'
+id: 'ae80d21c-908e-413f-97f1-1a4e370553ae'
 title: 'Disable Windows Update Notification Tray Icon'
 title_meta: 'Disable Windows Update Notification Tray Icon'
 keywords: ['windows', 'update', 'notification', 'tray', 'icon', 'script', 'disable']
@@ -23,6 +23,9 @@ Time Saved by Automation: 5 Minutes
 - The first script will verify if the Windows Update Notification (Tray Icon) setting is already disabled; if it is, the script will exit.
 - If the setting is not disabled, the script will run a PowerShell command to disable it.
 - After that, the script will call a subscript to flag the machine as reboot pending.
+
+
+
 
 
 

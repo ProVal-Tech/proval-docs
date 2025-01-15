@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-audit-snapshots-esxi'
+id: '4afe3dcb-4326-4833-a87a-77a14a882c81'
 title: 'Dataview Audit Snapshots for Virtual Machines on ESXi'
 title_meta: 'Dataview Audit Snapshots for Virtual Machines on ESXi'
 keywords: ['dataview', 'audit', 'virtual', 'machines', 'esxi', 'snapshot']
@@ -46,6 +46,9 @@ This dataview audit snapshots for virtual machines hosted on the ESXI
 | Estimated Disk Max Usage      | Displays the Max disk usage by the snapshot           |
 | Snapshot Description           | Displays the description of the snapshot              |
 | Is Current Snapshot           | Displays whether the snapshot is current or not       |
+
+
+
 
 
 

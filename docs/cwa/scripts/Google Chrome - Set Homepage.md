@@ -1,5 +1,5 @@
 ---
-id: 'cwa_set_chrome_homepage'
+id: '11d49195-0e8a-41a9-b08d-a7c41f1e5357'
 title: 'Set Google Chrome Homepage'
 title_meta: 'Set Google Chrome Homepage - Registry Policy Script'
 keywords: ['chrome', 'homepage', 'registry', 'policy', 'enforce']
@@ -45,6 +45,9 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

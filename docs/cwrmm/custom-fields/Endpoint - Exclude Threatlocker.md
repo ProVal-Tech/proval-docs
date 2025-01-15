@@ -1,5 +1,5 @@
 ---
-id: 'rmm-threatlocker-exclusion'
+id: 'c18a4b16-772a-42f3-9d1e-ec136d643d43'
 title: 'Exclude Machine from Threatlocker Deployment'
 title_meta: 'Exclude Machine from Threatlocker Deployment'
 keywords: ['threatlocker', 'deployment', 'exclude', 'custom', 'field']
@@ -25,6 +25,9 @@ Turning this Custom Field "Yes" will exclude the machine from Threatlocker Deplo
 ## ScreenShot
 
 ![ScreenShot](../../../static/img/Endpoint---Exclude-Threatlocker/image_1.png)
+
+
+
 
 
 

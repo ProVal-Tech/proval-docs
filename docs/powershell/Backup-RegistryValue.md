@@ -1,5 +1,5 @@
 ---
-id: 'ps-backup-registry-value'
+id: '2e38bff4-a727-4c7e-8c3b-ccf8eee85891'
 title: 'Backup Registry Value Script'
 title_meta: 'Backup Registry Value Script for Windows Registry Management'
 keywords: ['backup', 'registry', 'windows', 'administration', 'copy']
@@ -60,5 +60,8 @@ Creates a copy of the key HKLM:\Software\Microsoft\DataAccess and all its subkey
 | ConnectWise RMM                   |                                          |
 | Kaseya                            |                                          |
 | Datto RMM                         |                                          |
+
+
+
 
 

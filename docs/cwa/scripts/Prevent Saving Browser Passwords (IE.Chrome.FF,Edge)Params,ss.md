@@ -1,5 +1,5 @@
 ---
-id: 'cwa-software-configuration-prevent-saving-passwords'
+id: '5c889aef-ed96-405b-b44f-511436105f2c'
 title: 'SWM - Software Configuration - Prevent Saving Browser Passwords'
 title_meta: 'SWM - Software Configuration - Prevent Saving Browser Passwords'
 keywords: ['browser', 'passwords', 'registry', 'security', 'configuration']
@@ -55,6 +55,9 @@ In the above screenshot, Password Saving Feature for the Browsers will be disabl
 
 - Script Log
 - Script State
+
+
+
 
 
 

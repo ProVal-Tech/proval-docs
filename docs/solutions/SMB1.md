@@ -1,5 +1,5 @@
 ---
-id: 'rmm-monitor-disable-smb1'
+id: 'e0515cd5-5dab-444c-a7c4-47f1fa80bff4'
 title: 'Monitor and Disable SMB1'
 title_meta: 'Monitor and Disable SMB1'
 keywords: ['smb1', 'monitor', 'disable', 'task', 'custom', 'field']
@@ -34,6 +34,9 @@ To implement a monitor that identifies machines with SMB1 enabled and subsequent
 
 1. Create the Monitor: [CW RMM - Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-14394593)
 2. Create the task: [CW RMM - Task - Disable SMB1](https://proval.itglue.com/DOC-5078775-14393334)
+
+
+
 
 
 

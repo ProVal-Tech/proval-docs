@@ -1,12 +1,12 @@
 ---
-id: 'cwa-install-webex'
+id: 'f1e0d2c9-7afb-4932-b369-be5a631c2c9c'
 title: 'Install WebEx from Webex Website'
 title_meta: 'Install WebEx from Webex Website'
 keywords: ['webex', 'installation', 'script', 'itglue']
 description: 'This document provides a detailed guide on how to install WebEx from the Webex website using a script. It includes dependencies, variable documentation, global and user parameters, system properties, script states, and the process involved in the installation.'
 tags: ['installation', 'script', 'itglue', 'webex']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -72,6 +72,9 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
+
+
 
 
 

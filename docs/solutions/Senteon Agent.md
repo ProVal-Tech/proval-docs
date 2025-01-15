@@ -1,5 +1,5 @@
 ---
-id: 'vsa-senteon-agent-install-uninstall'
+id: '5cc5165d-4314-499b-9357-299f3b04f402'
 title: 'Senteon Agent Install and Uninstall'
 title_meta: 'Senteon Agent Install and Uninstall'
 keywords: ['senteon', 'agent', 'install', 'uninstall', 'endpoint']
@@ -36,6 +36,9 @@ Allows for the install and uninstall of the Senteon Agent application, and displ
    - [Agent Procedure - Senteon - Install](https://proval.itglue.com/DOC-5078775-16541419)  
    - [Agent Procedure - Senteon - Uninstall](https://proval.itglue.com/DOC-5078775-16541845)  
    - [Agent Procedure - Check Senteon Installed CF](https://proval.itglue.com/DOC-5078775-16541925)  
+
+
+
 
 
 

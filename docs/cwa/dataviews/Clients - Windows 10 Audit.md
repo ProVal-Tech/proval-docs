@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-patching-summary'
+id: 'b3dea728-9b29-4d6c-81ee-bf88b38602b7'
 title: 'Windows 10 Patching Summary'
 title_meta: 'Windows 10 Patching Summary'
 keywords: ['windows', 'patching', 'compliance', 'support', 'computers', 'clients', 'plugins']
@@ -34,6 +34,9 @@ A thorough examination of Windows 10 computers and their patching for each clien
 | #Missing patches Windows 10        | Total Number of the missing patches for Windows 10 computers.                                   |
 | #Failed patches Windows 10         | Total Number of the Failed patches for Windows 10 computers.                                    |
 | Windows 10 Patch Compliance         | Avg patch compliance for all the Windows 10 computers.                                         |
+
+
+
 
 
 

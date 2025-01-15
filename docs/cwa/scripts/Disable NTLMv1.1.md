@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-ntlmv1.1'
+id: '2be0669b-3c87-4594-81f4-112c7411f513'
 title: 'Disable NTLMv1.1 Protocol'
 title_meta: 'Disable NTLMv1.1 Protocol on Windows Machines'
 keywords: ['ntlm', 'protocol', 'windows', 'security', 'domain']
@@ -23,6 +23,9 @@ Domain Controllers
 ## Output
 
 - Script log
+
+
+
 
 
 

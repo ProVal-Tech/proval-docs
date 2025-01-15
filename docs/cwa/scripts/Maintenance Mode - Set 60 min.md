@@ -1,5 +1,5 @@
 ---
-id: 'cwa_set-maintenance-mode'
+id: '5ee3b278-2443-42b9-beab-f5c58f360881'
 title: 'Set Maintenance Mode for Agent'
 title_meta: 'Set Maintenance Mode for Agent in ConnectWise Automate'
 keywords: ['maintenance', 'agent', 'automate', 'connectwise', 'script']
@@ -21,6 +21,9 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
+
+
+
 
 
 

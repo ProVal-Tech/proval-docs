@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-11-upgrade'
+id: 'ff998a72-b705-497c-a96b-15116f62b2a8'
 title: 'Windows 10 to Windows 11 Upgrade Solution'
 title_meta: 'Windows 10 to Windows 11 Upgrade Solution'
 keywords: ['windows', 'upgrade', 'installation', 'compatibility', 'customfield', 'policy', 'task']
@@ -105,6 +105,9 @@ The solution has been updated to use policy for Windows 10 to Windows 11 upgrade
    - This policy group document is just for reference.
    - Use the existing policy in conjunction with the policy group if you have not created a new one.
    - The end goal here is to apply a `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835385) group.
+
+
+
 
 
 

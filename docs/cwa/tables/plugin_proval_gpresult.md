@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpresult-data-storage'
+id: 'aa42a0b1-19e4-411c-860f-ec05f0d1bf7d'
 title: 'GPResult Data Storage'
 title_meta: 'GPResult Data Storage'
 keywords: ['gpresult', 'gpo', 'active-directory', 'management', 'database']
@@ -33,6 +33,9 @@ Stores gpresult information from the script [EPM - Windows Configuration - Scrip
 | IsValid       | TINYINT   | Shows if the GPO is valid in the current context.                                              |
 | AccessDenied   | TINYINT   | Shows if access was denied to apply the GPO.                                                   |
 | SecurityFilter | VARCHAR   | Shows the security filters that were applied that led to the GPO application.                  |
+
+
+
 
 
 

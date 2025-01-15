@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-firefox-extension'
+id: 'ef0eede8-0b3c-4307-8d17-b99e4b80332a'
 title: 'Install and Enforce Firefox Extension'
 title_meta: 'Install and Enforce Firefox Extension'
 keywords: ['firefox', 'extension', 'installation', 'configuration', 'setup']
@@ -55,6 +55,9 @@ The script then checks if a `policies.json` file already exists in the distribut
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-uninstall-adobe-flash'
+id: 'eb1db969-6aef-4e3d-b0fd-b72aaba89084'
 title: 'Uninstall Adobe Flash'
 title_meta: 'Uninstall Adobe Flash from Endpoint'
 keywords: ['uninstall', 'flash', 'adobe', 'utility', 'endpoint']
@@ -81,6 +81,9 @@ Flash is detected by gci on all known flash directories. If detected, the uninst
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

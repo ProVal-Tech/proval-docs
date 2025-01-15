@@ -1,5 +1,5 @@
 ---
-id: 'vsa-reboot-endpoint-safe-mode'
+id: 'c4d65870-8eb5-4320-8bbd-ceeb423cb2e3'
 title: 'Reboot Endpoint from Safe Mode'
 title_meta: 'Reboot Endpoint from Safe Mode'
 keywords: ['reboot', 'endpoint', 'safe', 'mode', 'normal']
@@ -24,6 +24,9 @@ Reboots an endpoint out of safe mode into normal mode.
 ## Process
 
 Reboots an endpoint out of safe mode into normal mode.
+
+
+
 
 
 

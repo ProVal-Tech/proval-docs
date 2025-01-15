@@ -1,5 +1,5 @@
 ---
-id: 'vsa-install-windows-11'
+id: 'a4668ce4-9788-47a9-bb3b-1997367803ad'
 title: 'Install Windows 11 from ZIP or ISO'
 title_meta: 'Install Windows 11 from ZIP or ISO'
 keywords: ['windows', 'install', 'upgrade', 'zip', 'iso', 'file', 'repository']
@@ -46,6 +46,9 @@ Install Windows 11 from a target HTTP multipart download ignoring reboot.
 ## Output
 
 - Script log
+
+
+
 
 
 

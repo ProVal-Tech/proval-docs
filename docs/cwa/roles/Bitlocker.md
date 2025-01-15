@@ -1,5 +1,5 @@
 ---
-id: 'ps-windows-server-bitlocker-roles'
+id: '1650f6a6-2a4b-4c8c-9818-3f91ffe1805f'
 title: 'Windows Server Bitlocker Roles'
 title_meta: 'Windows Server Bitlocker Roles'
 keywords: ['windows', 'server', 'bitlocker', 'roles', 'security']
@@ -29,6 +29,9 @@ insert into `roledefinitions` (`RoleName`, `RoleType`, `RoleSubType`, `Detection
 insert into `roledefinitions` (`RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `RoleDetectionGuid`, `IsRemote`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `OsType`) values('Windows Server Bitlocker-Utilities','PowerShell','Role','%@powershell.exe -nologo -noprofile -command /"(Get-WindowsOptionalFeature -Online -FeatureName Bitlocker-Utilities).state/"@%','eq','Enabled','','','618da03f-a2ba-11ef-8f2a-8600008a66b7','1','0','0','','1');
 insert into `roledefinitions` (`RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `RoleDetectionGuid`, `IsRemote`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `OsType`) values('Windows Server BitLocker-RemoteAdminTool','PowerShell','Role','%@powershell.exe -nologo -noprofile -command /"(Get-WindowsOptionalFeature -Online -FeatureName BitLocker-RemoteAdminTool).state/"@%','eq','Enabled','','','8be25675-a2ba-11ef-8f2a-8600008a66b7','1','0','0','','1');
 ```
+
+
+
 
 
 

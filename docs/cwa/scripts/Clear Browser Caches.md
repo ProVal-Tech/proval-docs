@@ -1,5 +1,5 @@
 ---
-id: 'cwa-clear-browser-caches'
+id: 'f162bdc7-8df2-41b7-b473-b98a85cea39e'
 title: 'Clear Browser Caches Script'
 title_meta: 'Clear Browser Caches Script - Efficient Cache Management for Multiple Browsers'
 keywords: ['cache', 'browsers', 'chrome', 'edge', 'brave', 'firefox', 'cleanup']
@@ -38,6 +38,9 @@ Note: This is strictly for the browser cache and will not remove the browser his
 ## Output
 
 - Script log
+
+
+
 
 
 

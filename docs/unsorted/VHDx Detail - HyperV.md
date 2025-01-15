@@ -1,12 +1,12 @@
 ---
-id: 'vsa-hyperv-vhdx-audit'
+id: '6b829669-89a3-4d68-aec7-c7fba9ad8450'
 title: 'Hyper-V VHDX Audit Script'
 title_meta: 'Hyper-V VHDX Audit Script for Disk Information Collection'
 keywords: ['hyper-v', 'vhdx', 'audit', 'disk', 'information']
 description: 'This document provides an overview of a script designed to collect and store information about all vhdx type disks on a Hyper-V server. It details the script's process, variables, and output, making it a useful resource for administrators managing Hyper-V environments.'
 tags: ['hyper-v', 'disk', 'audit', 'information', 'script', 'server']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -41,6 +41,9 @@ This script runs only on Hyper-V servers. It collects all vhdx information and s
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

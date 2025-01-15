@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unsynced-ticket-comments-monitor'
+id: '6a855fe6-df02-4668-81c3-8cd392595c31'
 title: 'Unsynced Ticket Comments Monitor for CW Manage'
 title_meta: 'Unsynced Ticket Comments Monitor for CW Manage'
 keywords: ['monitor', 'tickets', 'alerts', 'synchronization', 'cwmanage']
@@ -26,6 +26,9 @@ Note: The script will send an email to the alert template user/contact. This fie
 ## Target
 
 Global  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-scdrive-data'
+id: 'b026c73a-6538-4a44-8720-35ecf9b6d2f5'
 title: 'Get StorageCraft Drive Information'
 title_meta: 'Get StorageCraft Drive Information'
 keywords: ['storagecraft', 'drive', 'information', 'agent', 'procedure']
@@ -28,6 +28,9 @@ Run procedure
 
 Agent Procedure Log  
 c:/kworking/System/Get-SCDrive-data.txt  
+
+
+
 
 
 

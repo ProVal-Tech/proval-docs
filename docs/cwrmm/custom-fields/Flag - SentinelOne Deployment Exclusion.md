@@ -1,5 +1,5 @@
 ---
-id: 'rmm-sentinelone-deployment-exclusion'
+id: 'a2967009-ef20-4ce5-823e-8b80349325a0'
 title: 'SentinelOne Deployment Exclusion Flag'
 title_meta: 'SentinelOne Deployment Exclusion Flag'
 keywords: ['endpoint', 'deployment', 'exclusion', 'sentinelone', 'flag']
@@ -25,6 +25,9 @@ Set this custom flag to true to exclude an endpoint from sentinelone deployment.
 ## ScreenShot
 
 ![ScreenShot](../../../static/img/Flag---SentinelOne-Deployment-Exclusion/image_1.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-user-folder-sizes'
+id: 'e47be58e-d72d-4396-aa0c-edef63f056e8'
 title: 'Get User Folder Sizes'
 title_meta: 'Get User Folder Sizes - Script Overview'
 keywords: ['user', 'folder', 'size', 'information', 'script']
@@ -25,6 +25,9 @@ Stores user folder size information from the script @Get User Folder Sizes (Scri
 | ComputerID    | INT     | The audited agent's computer ID.     |
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'cwa-install-cw-control-agent'
+id: '74015094-9d3e-49e8-9add-06dfe9c42b5f'
 title: 'Install CW Control Agent Using Client Level EDF'
 title_meta: 'Install CW Control Agent Using Client Level EDF'
 keywords: ['install', 'cw', 'control', 'agent', 'edf', 'client', 'msi']
 description: 'This document provides a detailed guide on using client level EDFs to download and install a ConnectWise Control agent on a system. It includes sample runs, dependencies, variables, and the process involved in the installation along with logging output.'
 tags: ['installation', 'client', 'msi', 'connectwise', 'agent']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -45,6 +45,9 @@ Then uses the client EDF to verify the correct GUID was installed.
 ## Output
 
 Script Log
+
+
+
 
 
 

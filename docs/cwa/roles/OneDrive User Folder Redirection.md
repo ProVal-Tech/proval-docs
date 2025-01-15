@@ -1,5 +1,5 @@
 ---
-id: 'cwa-onedrive-user-folder-redirection'
+id: 'b412647a-447b-4fd3-a179-87885cdd06f5'
 title: 'OneDrive User Folder Redirection Detection'
 title_meta: 'OneDrive User Folder Redirection Detection'
 keywords: ['onedrive', 'redirection', 'detection', 'user', 'folder']
@@ -17,6 +17,9 @@ This role is detected on machines on which OneDrive User Folder redirection is e
 | Detection String                          | Comparator | Result | Applicable OS |
 |-------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptIn-%}` | Exists     |        | Windows        |
+
+
+
 
 
 

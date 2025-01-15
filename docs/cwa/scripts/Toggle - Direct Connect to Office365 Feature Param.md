@@ -1,5 +1,5 @@
 ---
-id: 'cwa-direct-connect-office365-feature'
+id: '28df6729-15d1-4784-9583-a1a223abb566'
 title: 'Direct Connect to Office365 Feature'
 title_meta: 'Direct Connect to Office365 Feature Overview'
 keywords: ['office365', 'outlook', 'autodiscover', 'migration', 'registry']
@@ -51,6 +51,9 @@ Please make sure the "ExcludeExplicitO365Endpoint" parameter has the right value
 ## Output
 
 Script Log
+
+
+
 
 
 

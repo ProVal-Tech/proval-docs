@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-office-updates'
+id: '62b1555c-706c-433c-a053-329a63db0dd0'
 title: 'Enable Office Updates via PowerShell'
 title_meta: 'Enable Office Updates via PowerShell'
 keywords: ['office', 'updates', 'registry', 'configuration', 'clicktorun']
@@ -21,6 +21,9 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - Disables office update by running a PowerShell command which updates a registry value “HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration” and setting the UpdateEnabled to True.
+
+
+
 
 
 

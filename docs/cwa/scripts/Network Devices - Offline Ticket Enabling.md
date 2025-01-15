@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-alert-template-offline-network-devices'
+id: 'c630e0b8-da8d-4188-aa83-4c4c7e421d92'
 title: 'Set Alert Template for Offline Network Devices'
 title_meta: 'Set Alert Template for Offline Network Devices'
 keywords: ['alert', 'template', 'offline', 'network', 'devices', 'ticket', 'creation']
@@ -93,6 +93,9 @@ Device-Level EDFs:
 ## Output
 
 - Script log
+
+
+
 
 
 

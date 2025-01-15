@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-stage-view'
+id: '46775a5d-7e55-4aec-ad17-aeb43e63b202'
 title: 'Patching Stage Data View'
 title_meta: 'Patching Stage Data View'
 keywords: ['patching', 'data', 'view', 'endpoint', 'client', 'location']
@@ -24,6 +24,9 @@ None
 | Location name    | The name of the location                            |
 | Machine name     | The name of the endpoint                            |
 | Patching Stage   | The patching stage of the endpoint. (Production|Pilot|Test) |
+
+
+
 
 
 

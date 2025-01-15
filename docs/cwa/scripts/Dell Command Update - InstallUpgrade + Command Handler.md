@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dell-command-update'
+id: '91cc7f02-1c0d-4303-81f2-91fd0d275747'
 title: 'Dell Command | Update Script for Dell Workstations'
 title_meta: 'Dell Command | Update Script for Dell Workstations'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
@@ -59,6 +59,9 @@ In the same way Driver Updates can be installed as well. Please refer to [Dell C
 
 - Script State
 - Script Log
+
+
+
 
 
 

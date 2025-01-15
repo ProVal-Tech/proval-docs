@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-support-diagnostic-tool-vulnerability-monitor'
+id: 'e711d3f6-7a23-42da-8d60-400318c8b725'
 title: 'Microsoft Support Diagnostic Tool Vulnerability Monitor'
 title_meta: 'Microsoft Support Diagnostic Tool Vulnerability Monitor'
 keywords: ['vulnerability', 'monitor', 'windows', 'security', 'diagnostic']
@@ -21,6 +21,9 @@ This monitor will trigger the [Workaround - Microsoft Support Diagnostic Tool Vu
 ## Target
 
 Windows computers
+
+
+
 
 
 

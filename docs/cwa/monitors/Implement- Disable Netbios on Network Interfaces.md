@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implement-disable-netbios'
+id: '8b17d0e6-9d6d-44b5-96c0-5c5c0e68bf89'
 title: 'Implementation Steps for Disabling NetBIOS on Network Interfaces'
 title_meta: 'Implementation Steps for Disabling NetBIOS on Network Interfaces'
 keywords: ['netbios', 'monitor', 'query', 'database', 'network']
@@ -156,6 +156,9 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

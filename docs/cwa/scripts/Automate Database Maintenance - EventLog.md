@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-database-maintenance'
+id: 'a961622e-18fd-4e0d-9f43-8c1b9f6beea3'
 title: 'Automate Database Maintenance Cleanup Script'
 title_meta: 'Automate Database Maintenance Cleanup Script'
 keywords: ['cleanup', 'database', 'eventlogs', 'maintenance', 'script']
@@ -33,6 +33,9 @@ This script will add the following section to the log variable
 ![Output](../../../static/img/Automate-Database-Maintenance---EventLog/image_1.png)  
 
 or results if not skipped
+
+
+
 
 
 

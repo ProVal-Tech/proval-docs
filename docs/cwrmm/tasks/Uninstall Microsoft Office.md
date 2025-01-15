@@ -1,5 +1,5 @@
 ---
-id: 'rmm-uninstall-microsoft-office'
+id: '3ebba7bf-e121-40d0-b06e-2090ebdb9780'
 title: 'Uninstall Microsoft Office'
 title_meta: 'Uninstall Microsoft Office'
 keywords: ['uninstall', 'microsoft', 'office', 'software', 'script']
@@ -206,6 +206,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-pnpdevices-storage'
+id: 'd0d38e82-7faf-4e0f-86b3-81b01a9f18fb'
 title: 'PNP Devices Storage Script'
 title_meta: 'PNP Devices Storage Script for ConnectWise Automate'
 keywords: ['pnpdevices', 'storage', 'script', 'connectwise', 'inventory']
@@ -29,6 +29,9 @@ Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](h
 | Status        | varchar(1000) | Current Status of the PnpDevice     |
 | Class         | Varchar(1000) | Class of the PnpDevice               |
 | Date          | datetime     | Script Run Time                      |
+
+
+
 
 
 

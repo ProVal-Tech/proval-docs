@@ -1,5 +1,5 @@
 ---
-id: 'cwa-huntress-agent-installation'
+id: '523b8882-2c51-4f70-ad7d-cb2b4baf7bbf'
 title: 'Huntress Agent Installation Script'
 title_meta: 'Huntress Agent Installation Script'
 keywords: ['huntress', 'agent', 'installation', 'windows', 'macintosh', 'ticketing']
@@ -99,6 +99,9 @@ Output of the installation command:
 
 - Script log
 - Ticket (if enabled)
+
+
+
 
 
 

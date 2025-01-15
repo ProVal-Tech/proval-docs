@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpo-audit-dataview'
+id: '45a9f461-fac0-4e5c-9a5f-819786e8ad21'
 title: 'GPO Audit Dataview'
 title_meta: 'GPO Audit Dataview - Overview of Group Policy Objects'
 keywords: ['gpo', 'audit', 'policy', 'link', 'dc', 'client', 'location', 'enabled', 'enforced', 'computer', 'user', 'created', 'modified', 'read']
@@ -37,6 +37,9 @@ This dataview shows information about GPOs, their applied policies, and where th
 | Created Time    | GPO created date and time information.           |
 | Modified Time   | GPO last modified date and time.                 |
 | Read Time       | GPO last check time.                              |
+
+
+
 
 
 

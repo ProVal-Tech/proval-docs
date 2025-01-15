@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-broken-cwcontrol'
+id: 'b06ee4ed-7da2-41cd-88f0-e9ddba25e6f7'
 title: 'Monitor Broken CWControl Installations'
 title_meta: 'Monitor Broken CWControl Installations'
 keywords: ['monitor', 'cwcontrol', 'installations', 'agents', 'autofix']
@@ -19,6 +19,9 @@ This monitor will locate broken CWControl installations on agents. Optionally ru
 ## Target
 
 All Agents - Should be run on all machines.
+
+
+
 
 
 

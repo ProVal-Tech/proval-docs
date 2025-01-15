@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-windows-workstation-agent'
+id: '925ec2d0-a4f0-4bff-8482-f0f4137885ce'
 title: 'Internal Monitor for Windows Workstation Agent'
 title_meta: 'Internal Monitor for Windows Workstation Agent'
 keywords: ['monitor', 'windows', 'workstation', 'agent', 'user', 'detection']
@@ -23,6 +23,9 @@ You can change this day number on the monitor to set different script run freque
 ## Target
 
 Windows Workstations
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-remove-windows-update-blockers'
+id: '1be24785-d0c7-401c-8e47-833ab82d6c85'
 title: 'Remove Windows Update Blockers'
 title_meta: 'Remove Windows Update Blockers'
 keywords: ['registry', 'windows', 'updates', 'settings', 'default']
@@ -19,6 +19,9 @@ This script removes any registry entries that may be preventing Windows updates 
 ## Output
 
 - Script log
+
+
+
 
 
 

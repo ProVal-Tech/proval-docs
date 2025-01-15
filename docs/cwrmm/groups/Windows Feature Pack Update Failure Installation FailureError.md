@@ -1,5 +1,5 @@
 ---
-id: 'rmm-categorize-windows-failure'
+id: '998b5859-608f-4c0c-abd2-75356b272102'
 title: 'Categorize Windows 10 and 11 Computers with Feature Update Install Failures'
 title_meta: 'Categorize Windows 10 and 11 Computers with Feature Update Install Failures'
 keywords: ['windows', 'feature', 'update', 'failure', 'tracking', 'os', 'build', 'criteria', 'group']
@@ -34,6 +34,9 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 Click the `Save` button to Save the Group.  
 ![Image 6](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_6.png)  
 ![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_7.png)
+
+
+
 
 
 

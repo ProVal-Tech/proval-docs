@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-failed-patches'
+id: '54992d2f-f374-41bb-9f61-e4d2fcc93478'
 title: 'Monitor for Failed Microsoft Patch Jobs'
 title_meta: 'Monitor for Failed Microsoft Patch Jobs'
 keywords: ['monitor', 'patch', 'failed', 'microsoft', 'jobs']
@@ -20,6 +20,9 @@ This monitor will detect servers that have had five failed patches in a row for 
 ## Target
 
 SQL query targets strictly the servers in a patching group.
+
+
+
 
 
 

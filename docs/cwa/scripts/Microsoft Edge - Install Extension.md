@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enforce-edge-extensions'
+id: '86453c18-b4e1-44ae-ba29-75c55dca7fb9'
 title: 'Enforce Installation of Edge Extensions'
 title_meta: 'Enforce Installation of Edge Extensions'
 keywords: ['edge', 'extensions', 'chromium', 'installation', 'registry', 'mdm']
@@ -49,6 +49,9 @@ The script takes a single parameter which is an array of ExtensionIDs to install
 ## Output
 
 - Script log
+
+
+
 
 
 

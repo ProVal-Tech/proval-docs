@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-server-backup-report'
+id: '070f3e8b-1365-4347-9fcb-43aad1d09d41'
 title: 'Windows Server Backup Report'
 title_meta: 'Windows Server Backup Report - Comprehensive Overview'
 keywords: ['windows', 'backup', 'report', 'sql', 'audit', 'performance']
@@ -80,6 +80,9 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
+
+
+
 
 
 

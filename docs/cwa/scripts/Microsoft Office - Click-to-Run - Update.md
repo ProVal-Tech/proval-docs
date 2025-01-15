@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-microsoft-365-apps'
+id: '8086f53d-c2db-40df-aa54-ea8590800fd3'
 title: 'Update Microsoft 365 Apps'
 title_meta: 'Update Microsoft 365 Apps to Latest Version'
 keywords: ['microsoft', 'update', 'apps', 'office365', 'software']
@@ -18,6 +18,9 @@ Update Microsoft 365 Apps to their latest version.
 
 - Script log
 - /ProgramData/_automation/script/Update-Office/Update-Office-log.txt
+
+
+
 
 
 

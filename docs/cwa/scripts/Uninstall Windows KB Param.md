@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-windows-update'
+id: 'fd611b68-7cd6-4a6a-bee1-3d772ecd9a27'
 title: 'Uninstall Windows Update Script'
 title_meta: 'Uninstall Windows Update Script for Windows Systems'
 keywords: ['uninstall', 'windows', 'update', 'kbid', 'reboot']
@@ -35,6 +35,9 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
+
+
+
 
 
 

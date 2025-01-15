@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-recovery-keys'
+id: '678aae65-bd97-4ec6-812f-47b57018ec21'
 title: 'Bitlocker Recovery Keys Dataview'
 title_meta: 'Bitlocker Recovery Keys Dataview'
 keywords: ['bitlocker', 'recovery', 'keys', 'dataview', 'endpoint']
@@ -26,6 +26,9 @@ This dataview will display Bitlocker recovery keys that have been collected by t
 | Drive Letter  | The drive letter that has been encrypted with Bitlocker                                         |
 | Recovery Key  | The recovery key for Bitlocker                                                                   |
 | Last Updated  | The last time that script was run to gather the data. Old LastUpdated dates may indicate outdated information. |
+
+
+
 
 
 

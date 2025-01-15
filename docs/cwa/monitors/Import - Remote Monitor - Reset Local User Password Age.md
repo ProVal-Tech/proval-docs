@@ -1,5 +1,5 @@
 ---
-id: 'cwa-steps-to-set-up-remote-monitor'
+id: 'adc49b4c-24dc-4bb5-bd88-abddae4a4739'
 title: 'Steps to Set Up Remote Monitor'
 title_meta: 'Steps to Set Up Remote Monitor'
 keywords: ['setup', 'remote', 'monitor', 'sql', 'query', 'groupid']
@@ -229,6 +229,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

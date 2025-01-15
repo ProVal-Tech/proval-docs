@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enforce-chrome-extension-installation'
+id: '894e4ce0-9034-4191-bb3b-7065c23754bc'
 title: 'Enforce Chrome Extension Installation'
 title_meta: 'Enforce Chrome Extension Installation - Automate Chrome Extensions'
 keywords: ['chrome', 'extension', 'installation', 'script', 'automation']
@@ -44,6 +44,9 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

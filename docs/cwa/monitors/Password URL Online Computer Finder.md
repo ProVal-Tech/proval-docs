@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-online-computer'
+id: '87d846e1-3f32-4e3d-b4f9-4c17d2d2830f'
 title: 'Monitor for Online Computer Matching Location Password'
 title_meta: 'Monitor for Online Computer Matching Location Password'
 keywords: ['monitor', 'online', 'computer', 'location', 'password', 'unifi', 'health', 'check']
@@ -54,6 +54,9 @@ AND Computers.LastContact > DATE_ADD(NOW(),INTERVAL -15 MINUTE)
 AND computers.os LIKE '%Windows%'
 GROUP BY computers.locationid
 ```
+
+
+
 
 
 

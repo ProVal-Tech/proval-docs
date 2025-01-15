@@ -1,5 +1,5 @@
 ---
-id: 'cwa-restrict-vendor-access-monitor'
+id: '4a4b5a11-8087-4e0a-b2b1-629d07326dd2'
 title: 'Restrict Vendor Access Monitor in ConnectWise Automate'
 title_meta: 'Restrict Vendor Access Monitor in ConnectWise Automate'
 keywords: ['monitor', 'vendor', 'access', 'restriction', 'automate']
@@ -32,6 +32,9 @@ All Operating Systems
 ## Alert Template
 
 - `△ Custom - Execute Script - Update Vendor Restricted Property`
+
+
+
 
 
 

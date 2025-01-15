@@ -1,12 +1,12 @@
 ---
-id: 'vsa-upgrade-java-8'
+id: '0104499d-5a31-465b-b195-db0331b29859'
 title: 'Upgrade Java to Latest Java 8'
 title_meta: 'Upgrade Java to Latest Java 8'
 keywords: ['java', 'upgrade', 'latest', 'version', 'script']
 description: 'This document outlines a script designed to upgrade Java to the latest version of Java 8, detailing the process, expected outputs, and handling of old Java installations.'
 tags: ['update', 'software', 'windows', 'configuration']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -31,6 +31,9 @@ Stores old Java in Script State just in case.
 ## Output
 
 - Script log
+
+
+
 
 
 

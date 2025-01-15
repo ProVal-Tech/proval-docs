@@ -1,5 +1,5 @@
 ---
-id: 'cwa-join-domain-script'
+id: '3c802520-f292-46e2-bd0e-0dbca86ed0ed'
 title: 'Join Machine to Domain Script'
 title_meta: 'Join Machine to Domain Script'
 keywords: ['domain', 'machine', 'join', 'ou', 'restart', 'client', 'location', 'sql', 'credentials']
@@ -31,6 +31,9 @@ This script joins the target machine to a domain based on its current client and
 ## Output
 
 - Script log
+
+
+
 
 
 

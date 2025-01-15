@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-huntress-agent'
+id: '8888ddb9-ea31-48cb-a88e-56ff970b0e6c'
 title: 'Internal Monitor for Huntress Agent Deployment'
 title_meta: 'Internal Monitor for Huntress Agent Deployment'
 keywords: ['monitor', 'huntress', 'agent', 'deployment', 'windows', 'macintosh']
@@ -41,6 +41,9 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Deploy Huntress Agent`
+
+
+
 
 
 

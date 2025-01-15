@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-ticket-offline-network-device'
+id: '1634ea10-264c-44df-abd1-ff68edc23391'
 title: 'Create Ticket for Offline Network Device'
 title_meta: 'Create Ticket for Offline Network Device'
 keywords: ['ticket', 'offline', 'network', 'device', 'alert']
@@ -80,6 +80,9 @@ To create this ticket to a specific service board in manage then provide the cat
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-agent-location'
+id: '717bf852-d462-48c7-829b-12a7eabc1bdd'
 title: 'Internal Monitor for Agent Location Detection'
 title_meta: 'Internal Monitor for Agent Location Detection'
 keywords: ['monitor', 'agent', 'location', 'detection', 'internal']
@@ -15,6 +15,9 @@ This is an internal monitor that detects if an agent was moved to a different lo
 ## Target
 
 Global
+
+
+
 
 
 

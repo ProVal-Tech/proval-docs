@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sec-windows-patching-custom-table'
+id: '09d6c579-dbce-4876-81aa-0ab7cf5432b1'
 title: 'Insert Latest Version of SEC - Windows Patching - Custom Table'
 title_meta: 'Insert Latest Version of SEC - Windows Patching - Custom Table'
 keywords: ['windows', 'patching', 'custom', 'table', 'plugin']
@@ -21,6 +21,9 @@ References:
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---Table---Create-(plugin_proval_windows_os_support)/image_1.png)
+
+
+
 
 
 

@@ -53,3 +53,6 @@ Get the installed extensions for the Mozilla Firefox browser.
     UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
 ```
 
+
+
+

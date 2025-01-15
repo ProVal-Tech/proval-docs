@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-sql-spy-for-all-users'
+id: '112e8169-fca1-4295-bbb4-94ea6e190a4e'
 title: 'Disable SQL Spy for All Users'
 title_meta: 'Disable SQL Spy for All Users - ConnectWise Automate'
 keywords: ['sql', 'spy', 'users', 'disable', 'automate']
@@ -21,6 +21,9 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 The script will execute a query against the Automate server to disable SQL Spy for all users in the environment. The change will go into effect next time the user logs in. The script will take whatever the "windows" value is in the users_extend table and remove the binary value of 524288 from it. This is the switch used to display SQL Spy.
+
+
+
 
 
 

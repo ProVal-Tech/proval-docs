@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-session-audit'
+id: 'c5fe6ff8-9c52-4cfd-8b0b-fffc9df61acf'
 title: 'User Session Audit for Windows Machines'
 title_meta: 'User Session Audit for Windows Machines'
 keywords: ['active', 'session', 'audit', 'windows', 'data']
@@ -28,6 +28,9 @@ Stores data about active user sessions on Windows machines.
 | LogonDate     | DATETIME | The date and time that the session was started.  |
 | SessionLength  | INT      | The length in minutes of the audited session.    |
 | Timestamp     | DATETIME | The date and time that the audit was run.        |
+
+
+
 
 
 

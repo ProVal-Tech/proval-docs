@@ -1,5 +1,5 @@
 ---
-id: 'cwa-execute-script-user-profile-get-information'
+id: '36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1'
 title: 'Execute Script for User Profile Information on Windows Machines'
 title_meta: 'Execute Script for User Profile Information on Windows Machines'
 keywords: ['execute', 'script', 'user', 'profile', 'information', 'windows']
@@ -25,6 +25,9 @@ Windows Machines excluding DC servers
 **Name:** `△ Custom - Execute Script - Windows - User Profile - Get Information`  
 
 The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496) script.
+
+
+
 
 
 

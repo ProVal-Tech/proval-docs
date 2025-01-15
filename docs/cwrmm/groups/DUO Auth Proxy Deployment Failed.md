@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-auth-proxy-deployment-failed'
+id: '2212752f-e9e3-4a12-af3f-f12972cf9fb4'
 title: 'DUO Auth Proxy Deployment Failed'
 title_meta: 'DUO Auth Proxy Deployment Failed'
 keywords: ['duo', 'deployment', 'failed', 'audit', 'devices']
@@ -48,6 +48,9 @@ It is built for auditing purposes.
    - Set `Failed` in the comparison condition.  
    ![Search and Select Custom Field](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_7.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
+
+
 
 
 

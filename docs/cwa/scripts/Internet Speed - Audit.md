@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internet-speed-test-cli'
+id: '54ed691f-e7be-4709-8967-72a4c9c782f6'
 title: 'Internet Speed Test via Ookla CLI'
 title_meta: 'Internet Speed Test via Ookla CLI'
 keywords: ['internet', 'speed', 'test', 'ookla', 'cli', 'database', 'email']
@@ -53,6 +53,9 @@ See [EPM - Network - Agnostic - Test-InternetSpeed](https://proval.itglue.com/DO
 ## Sample Email
 
 ![Sample Email Image](../../../static/img/Internet-Speed---Audit/image_4.png)
+
+
+
 
 
 

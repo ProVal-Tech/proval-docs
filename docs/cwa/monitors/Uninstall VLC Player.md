@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-vlc-player'
+id: 'fbb859fd-ac3c-4cab-9460-6d5260edf65e'
 title: 'Uninstall VLC Player via ConnectWise Automate'
 title_meta: 'Uninstall VLC Player via ConnectWise Automate'
 keywords: ['uninstall', 'vlc', 'connectwise', 'monitor', 'ticket']
@@ -164,6 +164,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
+
+
 
 
 

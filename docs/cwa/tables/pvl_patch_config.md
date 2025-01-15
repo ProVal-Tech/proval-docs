@@ -1,5 +1,5 @@
 ---
-id: 'rmm_patch_config'
+id: 'c9891eb9-3731-4b0d-9882-dcb4a73229eb'
 title: 'Patch Configuration Data Table'
 title_meta: 'Patch Configuration Data Table for Windows Update Settings'
 keywords: ['patch', 'configuration', 'windows', 'update', 'registry']
@@ -39,6 +39,9 @@ The table stores the patch configuration data fetched by the [Get Patch Config](
 | WindowsUpdateDeferQualityUpdatesPeriodInDays| Int       | Number of days to defer quality updates.<br>Data is gathered from the registry.<br>**Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate`<br>**Name:** `DeferQualityUpdatesPeriodInDays`<br>**Possible values:** `0-365(days)`<br>**Example:** `0` |
 | upgradeRestricted                            | Int       | Indicates whether Windows upgrades or feature updates are restricted from the registry key for Windows 10 and 11.<br>Data is gathered from the registry.<br>**Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate`<br>**Name:** `DisableOSUpgrade`<br>**Possible values:** `0 (upgrade not disabled), 1 (upgrade disabled)`<br>**Example:** `0`<br>**Name:** `TargetReleaseVersion`<br>**Possible values:** `0 (Feature update not restricted), 1 (Feature update disabled)`<br>**Example:** `1`<br>**Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate`<br>**Name:** `TargetReleaseVersionInfo`<br>**Possible values:** `22H2, 23H2, 24H2, etc.`<br>**Example:** `22H2` |
 | DataCollectionTime                          | DateTime  | Data Collection Time                                                                                  |
+
+
+
 
 
 

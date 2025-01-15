@@ -1,5 +1,5 @@
 ---
-id: 'cwa-network-device-status'
+id: '10f4f3f9-dfba-4eee-93b7-0fd1c896206b'
 title: 'Network Device Status Overview'
 title_meta: 'Network Device Status Overview'
 keywords: ['network', 'device', 'status', 'probe', 'ip', 'mac', 'uptime', 'sync']
@@ -25,6 +25,9 @@ The dataview provides the status of the Network devices in the environment.
 | Device uptime                      | Displays uptime of the network device.                                   |
 | Device Type                        | Displays the type of the Network device.                                 |
 | External Sync                      | This displays if the external sync is disabled or enabled on the network device. |
+
+
+
 
 
 

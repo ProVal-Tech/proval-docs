@@ -1,5 +1,5 @@
 ---
-id: 'cwa-threatlocker-learning-mode-dataview'
+id: '33f561fb-e60a-4240-a4e7-03542a45b347'
 title: 'Threatlocker Learning Mode Dataview'
 title_meta: 'Threatlocker Learning Mode Dataview'
 keywords: ['threatlocker', 'dataview', 'learning', 'mode', 'script', 'audit']
@@ -33,6 +33,9 @@ This dataview stores the result of the threatlocker learning mode setting done v
 | LearningModeDuration (Hours) | This shows the learning mode duration in hours                                                          |
 | LearningMode Set Status    | This stores the learning mode status whether successfully set or failed.                                   |
 | LearningMode Log Record    | This stores the learning mode logs of success or failure.                                                 |
+
+
+
 
 
 

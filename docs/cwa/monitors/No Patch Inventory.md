@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-patch-inventory'
+id: '953e9fae-c095-4143-bc9b-b02392a04c09'
 title: 'Internal Monitor for Patch Inventory'
 title_meta: 'Internal Monitor for Patch Inventory'
 keywords: ['monitor', 'patch', 'inventory', 'detection']
@@ -15,6 +15,9 @@ This Internal Monitor detects machines where patch inventory shows 0 available p
 ## Target
 
 Global
+
+
+
 
 
 

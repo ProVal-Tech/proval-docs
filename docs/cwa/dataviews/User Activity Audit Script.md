@@ -1,5 +1,5 @@
 ---
-id: 'cwa_login_logout_audit'
+id: '11c4193c-786a-4477-ae73-9992ff55ea16'
 title: 'User Login/Logout Audit DataView'
 title_meta: 'User Login/Logout Audit DataView'
 keywords: ['audit', 'login', 'logout', 'user', 'activity', 'reporting']
@@ -32,6 +32,9 @@ The dataview shows the login/logout audit of the users.
 | ConnectionType    | The connection to show whether the connection was remote, network, or interactive, etc. |
 | Logon Type        | This shows whether the user detected for login or logout |
 | ScriptRanDate     | This shows the script last ran date and time         |
+
+
+
 
 
 

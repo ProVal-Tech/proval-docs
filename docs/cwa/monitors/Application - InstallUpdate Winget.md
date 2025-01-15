@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-update-application'
+id: '9b40d1cd-7886-416f-b56e-11ab3a44befb'
 title: 'Monitor to Update Application Based on PackageID'
 title_meta: 'Monitor to Update Application Based on PackageID'
 keywords: ['monitor', 'update', 'application', 'packageid', 'source', 'dependencies']
@@ -21,6 +21,9 @@ This monitor is designed to update the application based on the PackageID, Sourc
 Global - Should be run without explicitly defined targets.
 
 This monitor is dependent on the properties with the name of PackageID to be created. So, before enabling it you need to implement the monitor "ProVal - Production - <Application> - Latest Version Detection" with an alert template "△ Custom - Execute Script - Application Latest Version".
+
+
+
 
 
 

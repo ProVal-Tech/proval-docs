@@ -1,5 +1,5 @@
 ---
-id: 'cwa-failed-to-add-rsat-features'
+id: '7c336dbd-72cb-4099-8be1-19c78f54cabb'
 title: 'Failed to Add RSAT Features'
 title_meta: 'Failed to Add RSAT Features'
 keywords: ['rsat', 'windows', 'monitor', 'ticket', 'automation']
@@ -47,6 +47,9 @@ Required Group of Machines
 ## Implementation
 
 [Implement - Remote Monitor - Add Windows Capability - RSAT](https://proval.itglue.com/DOC-5078775-14230457)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-firefox-homepage'
+id: 'c09afc4e-2ed0-4e85-9beb-e8b54082568e'
 title: 'Remove Enforced Homepage in Mozilla Firefox'
 title_meta: 'Remove Enforced Homepage in Mozilla Firefox'
 keywords: ['firefox', 'homepage', 'policy', 'configuration', 'software']
@@ -23,6 +23,9 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Logs
+
+
+
 
 
 

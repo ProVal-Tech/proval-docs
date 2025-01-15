@@ -1,5 +1,5 @@
 ---
-id: 'cwa-duo-authentication-monitor'
+id: 'c4083ace-8763-4fdd-8d0c-b7fd93e30401'
 title: 'DUO Authentication Version Monitor'
 title_meta: 'DUO Authentication Version Monitor for Windows'
 keywords: ['duo', 'authentication', 'version', 'monitor', 'windows', 'winget']
@@ -25,6 +25,9 @@ This script is only targeted to one machine to fetch the Application's latest ve
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
+
+
+
 
 
 

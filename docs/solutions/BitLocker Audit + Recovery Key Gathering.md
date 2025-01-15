@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-audit'
+id: '337848a2-3757-45c9-8142-17abf004a78e'
 title: 'BitLocker Audit and Recovery Key Management'
 title_meta: 'BitLocker Audit and Recovery Key Management'
 keywords: ['bitlocker', 'audit', 'recovery', 'key', 'management', 'device', 'groups', 'custom', 'tasks']
@@ -35,6 +35,9 @@ This solution uses custom tasks and device groups to audit and gather the inform
    **Please ensure that the task is run manually!**
 
 ## FAQ
+
+
+
 
 
 

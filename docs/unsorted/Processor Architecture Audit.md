@@ -1,12 +1,12 @@
 ---
-id: 'rmm-processor-architecture-detail'
+id: 'a11ec2f8-d40c-45ee-952f-aff04c9cf593'
 title: 'Processor Architecture Detail'
 title_meta: 'Processor Architecture Detail'
 keywords: ['processor', 'architecture', 'x86', 'mips', 'alpha', 'powerpc', 'arm', 'itanium', 'amd64', 'arm64']
 description: 'This document provides a detailed overview of various processor architectures, including x86, MIPS, Alpha, PowerPC, ARM, Itanium, AMD64, and ARM64. It also includes information on dependencies and a structured dataview for better understanding.'
 tags: ['architecture', 'client', 'location', 'computer', 'operating-system', 'lastcontact', 'report']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -38,6 +38,9 @@ The output is:
 | Operating System    | Operating System name of the agent               |
 | LastContact         | Last contact of an agent with the RMM           |
 | Processor Architecture | Processor Architecture name                    |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-outlook-ost-pst-audit'
+id: 'cefde8db-a69d-4d25-a5b2-dda08f468fb4'
 title: 'Microsoft Outlook OST/PST Audit'
 title_meta: 'Microsoft Outlook OST/PST Audit'
 keywords: ['microsoft', 'outlook', 'ost', 'pst', 'audit', 'dataview', 'monitor']
@@ -44,6 +44,9 @@ This solution is designed to retrieve the file path and size details of OST and 
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-15490756)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

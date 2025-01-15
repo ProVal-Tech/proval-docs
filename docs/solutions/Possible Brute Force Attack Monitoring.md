@@ -1,5 +1,5 @@
 ---
-id: 'rmm-monitor-brute-force-attack'
+id: '1b773da4-e288-4874-9d6b-2e765ddcf248'
 title: 'Monitor for Possible Brute Force Attack on Domain Controller'
 title_meta: 'Monitor for Possible Brute Force Attack on Domain Controller'
 keywords: ['brute', 'force', 'attack', 'domain', 'controller', 'monitoring', 'security']
@@ -55,6 +55,9 @@ The solution monitors the domain controller for excessive logon failures within 
 
 4. Create and enable the following monitor:
    - [Possible Brute Force Attack](https://proval.itglue.com/DOC-5078775-18075486)
+
+
+
 
 
 

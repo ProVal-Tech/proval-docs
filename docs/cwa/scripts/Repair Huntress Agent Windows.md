@@ -1,5 +1,5 @@
 ---
-id: 'cwa-repair-huntress-agent'
+id: '6489855d-0391-444d-a207-dfbd76152948'
 title: 'Repair Huntress Agent for Windows Machines'
 title_meta: 'Repair Huntress Agent for Windows Machines'
 keywords: ['huntress', 'agent', 'repair', 'windows', 'script']
@@ -53,6 +53,9 @@ This script can be used to repair Huntress Agent for the Windows machines.
 ## Output
 
 - Script log
+
+
+
 
 
 

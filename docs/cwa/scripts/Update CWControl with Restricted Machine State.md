@@ -1,5 +1,5 @@
 ---
-id: 'cwa-transfer-restricted-machines'
+id: '4edbd7bf-3815-4745-9c40-42cef872a4f4'
 title: 'Transfer Restricted Machines to ConnectWise Control'
 title_meta: 'Transfer Restricted Machines to ConnectWise Control'
 keywords: ['connectwise', 'control', 'restricted', 'machines', 'permissions', 'script']
@@ -72,6 +72,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

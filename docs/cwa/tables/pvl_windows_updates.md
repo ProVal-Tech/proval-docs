@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-history'
+id: 'd1791eba-107c-4be0-8048-a1d716dae301'
 title: 'Windows Update History for Agents'
 title_meta: 'Windows Update History for Agents'
 keywords: ['windows', 'update', 'history', 'agents', 'audit']
@@ -55,6 +55,9 @@ Populating script: [EPM - Script - Windows Update History Audit](https://proval.
 | BrowseOnly                      | TINYINT   |                                                                                                 |
 | PerUser                         | TINYINT   |                                                                                                 |
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
+
+
+
 
 
 

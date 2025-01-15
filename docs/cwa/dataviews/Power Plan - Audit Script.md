@@ -1,5 +1,5 @@
 ---
-id: 'ps-power-plan-audit'
+id: '3c11e893-b78e-4dc9-a8c2-c80060da203b'
 title: 'Power Plan Audit Data View'
 title_meta: 'Power Plan Audit Data View'
 keywords: ['power', 'plan', 'audit', 'data', 'view', 'settings', 'collection']
@@ -46,6 +46,9 @@ The dataview displays the power plan settings gathered by the [EPM - Data Collec
 ## Sample Screenshot
 
 <div><iframe src="https://proval.itglue.com/attachments/14048242?preview=1" width="100%" height="1000px" frameborder="0"></iframe></div>
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-duo-authentication-proxy-update'
+id: '775e0b37-b55c-47fb-bec6-a01314ac123f'
 title: 'DUO Authentication Proxy Update Script'
 title_meta: 'DUO Authentication Proxy Update Script'
 keywords: ['duo', 'authentication', 'proxy', 'update', 'script']
@@ -61,6 +61,9 @@ The quick script to update DUO Security Authentication Proxy has failed - please
 Script Logs -
 %PowerShellResult%
 ```
+
+
+
 
 
 

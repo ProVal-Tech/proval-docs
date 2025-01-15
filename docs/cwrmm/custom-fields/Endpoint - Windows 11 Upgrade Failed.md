@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-11-upgrade-failed'
+id: 'eb332e7e-77ae-4cc0-82b1-c4f42cc05fac'
 title: 'Windows 11 Upgrade Failed Status'
 title_meta: 'Windows 11 Upgrade Failed Status'
 keywords: ['windows', 'upgrade', 'failed', 'installer', 'task']
@@ -22,6 +22,9 @@ Stores whether Windows 11 Upgrade Failed after running the Windows 11 Installer 
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_2.png)
+
+
+
 
 
 

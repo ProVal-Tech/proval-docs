@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-ntlmv1.1-status'
+id: '8e107867-6d8d-4b6c-aa10-20f8da59fdca'
 title: 'Check NTLMv1.1 Status on Managed Windows Computers'
 title_meta: 'Check NTLMv1.1 Status on Managed Windows Computers'
 keywords: ['ntlm', 'status', 'windows', 'monitor', 'security']
@@ -35,6 +35,9 @@ Managed Windows Computers
 ## How to Import
 
 [Import - Remote Monitor - NTLMv1.1 Detection](https://proval.itglue.com/DOC-5078775-14448845)
+
+
+
 
 
 

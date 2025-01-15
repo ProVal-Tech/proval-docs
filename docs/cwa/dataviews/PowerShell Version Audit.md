@@ -1,5 +1,5 @@
 ---
-id: 'ps-current-agent-powershell-versions'
+id: '388b4b61-34b7-4d40-b4de-507032df83d7'
 title: 'Current Agent PowerShell Versions'
 title_meta: 'Current Agent PowerShell Versions'
 keywords: ['agent', 'powershell', 'version', 'audit', 'rmm']
@@ -64,6 +64,9 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gather-browser-extensions'
+id: 'f0a2db8c-92b6-4584-a70c-209263d46511'
 title: 'Gather Browser Extensions'
 title_meta: 'Gather Browser Extensions for Chrome, Edge, Brave, and Firefox'
 keywords: ['extensions', 'chrome', 'edge', 'brave', 'firefox', 'inventory']
@@ -38,6 +38,9 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 ## Output
 
 - Dataview
+
+
+
 
 
 

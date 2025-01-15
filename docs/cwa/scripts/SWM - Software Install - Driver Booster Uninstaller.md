@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-driver-booster'
+id: '9f3efadf-4775-454b-8e56-6b8c5e73ee07'
 title: 'Uninstall Driver Booster Script'
 title_meta: 'Uninstall Driver Booster Script for ConnectWise Automate'
 keywords: ['uninstall', 'driver', 'booster', 'script', 'windows']
@@ -26,6 +26,9 @@ The purpose of the script is to uninstall any version of Driver Booster from the
 ## Output
 
 - Script Logs
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-duo-for-edfs'
+id: '2fae0a5f-761c-40ac-ab74-6b994f9ee265'
 title: 'Install DUO for Clients with EDFs Enabled'
 title_meta: 'Install DUO for Clients with EDFs Enabled'
 keywords: ['duo', 'edfs', 'clients', 'installation', 'mfa']
@@ -19,6 +19,9 @@ Targets clients with EDFs enabled to install DUO. Will exclude agents that have 
 ## Target
 
 Global - Uses EDFs to scope agents / clients
+
+
+
 
 
 

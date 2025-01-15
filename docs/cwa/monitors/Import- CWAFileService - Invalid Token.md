@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementing-remote-monitor-for-cwa-file-service'
+id: 'c7d4a134-33d0-4598-add3-f41bd187331d'
 title: 'Implementing Remote Monitor for CWA File Service'
 title_meta: 'Implementing Remote Monitor for CWA File Service'
 keywords: ['mysql', 'remote', 'monitor', 'cwa', 'file', 'service', 'authorization', 'token']
@@ -92,6 +92,9 @@ This sets the remote monitor to check the contents of the fileservice logs at th
 
 - Make sure to set the Alert Style to either Thrice or Fourth, so that it will raise a ticket only in case the monitor continues to fail after 4 attempts of service restart.
 - The suggested Alert Template for this monitor is 'Default - Create Automate Ticket'.
+
+
+
 
 
 

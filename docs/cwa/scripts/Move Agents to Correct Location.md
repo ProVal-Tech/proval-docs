@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agent-checking-wrong-location'
+id: 'f01cab64-00bf-4f94-92ea-280c87cf06ca'
 title: 'Agent Checking in with Wrong Location Autofix Script'
 title_meta: 'Agent Checking in with Wrong Location Autofix Script'
 keywords: ['autofix', 'monitor', 'location', 'computer', 'agent']
@@ -35,6 +35,9 @@ Monitor set will call the script. The script will move the computer to the new l
 ## Output
 
 Removal of agents from the Monitor set's detection.
+
+
+
 
 
 

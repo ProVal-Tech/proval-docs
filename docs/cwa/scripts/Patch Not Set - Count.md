@@ -1,5 +1,5 @@
 ---
-id: 'cwa-count-not-actioned-patches'
+id: '73399399-1acc-444b-bf16-73f6b534a35b'
 title: 'Count Not Actioned Patches'
 title_meta: 'Count Not Actioned Patches in ConnectWise Automate'
 keywords: ['patches', 'approval', 'policy', 'client', 'automation', 'sql', 'tickets']
@@ -31,6 +31,9 @@ This script runs a SQL query to check for the patches count which has not been a
 ## Output
 
 - Script log
+
+
+
 
 
 

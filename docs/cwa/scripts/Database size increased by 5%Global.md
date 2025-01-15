@@ -1,5 +1,5 @@
 ---
-id: 'cwa-labtech-database-size-alert'
+id: '1e7111ed-fd09-4b58-bc4b-becb2dc3c8e0'
 title: 'Labtech Database Size Alert Script'
 title_meta: 'Labtech Database Size Alert Script'
 keywords: ['labtech', 'database', 'alert', 'ticket', 'autotask']
@@ -78,6 +78,9 @@ Here's the list of 10 largest tables:
 
 - Script States
 - Email
+
+
+
 
 
 

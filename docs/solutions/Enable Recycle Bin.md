@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-ad-recycle-bin'
+id: '7fe38bc2-2ca2-444e-899b-15f41201ed06'
 title: 'Enable AD Recycle Bin on Domain Controllers'
 title_meta: 'Enable AD Recycle Bin on Domain Controllers'
 keywords: ['active-directory', 'recycle', 'bin', 'domain', 'controllers', 'monitor', 'script']
@@ -44,6 +44,9 @@ Note: Once you enable the Active Directory Recycle Bin you cannot turn it off.
    - Import the monitor remote monitor [AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146) using the 04th step in the [Import - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-14764163) document. Run the provided SQL in the RAWSQL monitor.
    - [AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146) Monitor will be automatically created on "Domain Controllers" group limited to search "DC without Recycle Bin" and with alert template `△ Custom - Execute Script - AD - Enable AD Recycle Bin`
    - Ensure that the alert template is running the [AD - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-7937042) script.
+
+
+
 
 
 

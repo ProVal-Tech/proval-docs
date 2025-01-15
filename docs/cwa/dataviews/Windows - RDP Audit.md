@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rdp-status-report'
+id: '6925218d-aa6b-4919-a873-262691c16b9e'
 title: 'RDP Status Report for Agents'
 title_meta: 'RDP Status Report for Agents - Check RDP Enablement'
 keywords: ['rdp', 'agents', 'status', 'report', 'windows']
@@ -28,6 +28,9 @@ Note: This dataview is a role dependent dataview so it will not reflect changed 
 | Operating System    | Operating System of an agent                |
 | Agent Status        | Agent status whether offline or online      |
 | RDP Status          | RDP status whether enabled or disabled      |
+
+
+
 
 
 

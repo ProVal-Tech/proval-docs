@@ -1,5 +1,5 @@
 ---
-id: 'cwa-deny-patches-default-policy'
+id: 'bfef669b-5475-4293-b6e8-77c8f20b3d5f'
 title: 'Deny Patches in Default Approval Policy'
 title_meta: 'Deny Patches in Default Approval Policy'
 keywords: ['deny', 'patches', 'approval', 'policy', 'automate']
@@ -44,6 +44,9 @@ Note: I have mentioned this time here because the [Fetch Denied Patch List From 
 
 **Q:** Can we exclude an OS for a KB? eg, deny a KBID for Windows 10 version 1809 but let it be approved for Windows Server 2019.  
 **A:** No.
+
+
+
 
 
 

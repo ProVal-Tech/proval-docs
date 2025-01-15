@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-script-hp-server-ilo-ticketing'
+id: '4d27ff0e-704d-47dd-8c07-3008b7fbfafb'
 title: 'Client Script for HP Server iLO Ticketing'
 title_meta: 'Client Script for HP Server iLO Ticketing'
 keywords: ['client', 'script', 'hp', 'ilo', 'ticketing']
@@ -33,6 +33,9 @@ Computer-Level EDF - Exclude From HPE ILO Monitoring
 
 - Script log
 - Ticket
+
+
+
 
 
 

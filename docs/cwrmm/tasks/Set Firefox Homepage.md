@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-firefox-homepage'
+id: '708255d7-3abc-4e10-b9f5-3f943f435695'
 title: 'Set Firefox Homepage'
 title_meta: 'Set Firefox Homepage'
 keywords: ['firefox', 'homepage', 'script', 'rmm', 'configuration']
@@ -179,6 +179,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Log](../../../static/img/Set-Firefox-Homepage/image_25.png)  
+
+
+
 
 
 

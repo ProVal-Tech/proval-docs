@@ -1,5 +1,5 @@
 ---
-id: 'cwa-google-drive-uninstall'
+id: '9979a839-d375-462c-ae0c-d28038fe5239'
 title: 'Google Drive Uninstallation Procedure'
 title_meta: 'Google Drive Uninstallation Procedure'
 keywords: ['google', 'drive', 'uninstall', 'endpoint', 'procedure']
@@ -33,6 +33,9 @@ This procedure removes Google Drive from the endpoint
 ## Output
 
 Agent Log
+
+
+
 
 
 

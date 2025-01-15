@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-restore-point'
+id: '93829155-7945-440a-bf26-775f090df083'
 title: 'Check if Restore Point is Enabled'
 title_meta: 'Check if Restore Point is Enabled in ConnectWise Automate'
 keywords: ['restore', 'point', 'enabled', 'registry', 'machine']
@@ -17,6 +17,9 @@ This role checks the registry if Restore point is enabled or not, if so it appli
 | Detection String                                             | Comparator | Result | Applicable OS |
 |------------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SOFTWARE/Microsoft/Windows NT/CurrentVersion/SystemRestore:RPSessionInterval-%} | Equals     | 1      | Windows        |
+
+
+
 
 
 

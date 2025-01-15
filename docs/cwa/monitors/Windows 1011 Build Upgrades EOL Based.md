@@ -1,5 +1,5 @@
 ---
-id: 'cwa-eol-monitoring-windows-upgrade'
+id: '03e04bb6-5087-4e71-9d2f-a3596e9c291f'
 title: 'EOL Monitoring for Windows Upgrade'
 title_meta: 'EOL Monitoring for Windows Upgrade'
 keywords: ['eol', 'windows', 'upgrade', 'monitor', 'alert', 'custom', 'service', 'ticket']
@@ -32,6 +32,9 @@ Managed Service Plan Groups for Windows Workstations
 The [EPM - Windows Configuration - Script - Install Windows Upgrade](https://proval.itglue.com/DOC-5078775-12028460) script will only create a ticket for failures on the detected machine if a ticket category is selected in the Alerting tab of the monitor set.
 
 ![Ticketing Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based/image_2.png)
+
+
+
 
 
 

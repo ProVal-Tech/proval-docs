@@ -1,5 +1,5 @@
 ---
-id: 'cwa-server-drives-free-space'
+id: '9d50d408-076d-4ed3-9a70-c2ff4f9c980b'
 title: 'Server Drives with Low Free Space'
 title_meta: 'Server Drives with Low Free Space'
 keywords: ['server', 'drives', 'free', 'space', 'monitoring']
@@ -50,6 +50,9 @@ None
 | DriveID                | The numerical DB value for the drive                                        |
 | Locationid             | The numerical DB value for the location                                     |
 | Operating System       | The name of the operating system on the computer                            |
+
+
+
 
 
 

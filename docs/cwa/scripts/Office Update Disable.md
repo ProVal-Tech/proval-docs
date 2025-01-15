@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-office-updates'
+id: 'e868b055-6f03-438c-a4d3-33a100317fb5'
 title: 'Disable Office Updates'
 title_meta: 'Disable Office Updates Using PowerShell'
 keywords: ['office', 'updates', 'registry', 'configuration', 'clicktorun']
@@ -21,6 +21,9 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - Disables office update by running a PowerShell command which updates a registry value “HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration” and setting the UpdateEnabled to False.
+
+
+
 
 
 

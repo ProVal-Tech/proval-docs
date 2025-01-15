@@ -1,5 +1,5 @@
 ---
-id: 'ps-get-power-plan'
+id: '510f8406-d2d0-4ada-a92d-6837c134f43b'
 title: 'Get Power Plan Information'
 title_meta: 'Get Power Plan Information'
 keywords: ['power', 'plan', 'settings', 'subgroup', 'configuration']
@@ -36,6 +36,9 @@ Retrieves information about available power plans, subgroups, and power settings
 $env:ProgramData/_automation/AgentProcedure/GetPowerPlan/Get-PowerPlan-log.txt
 
 Agent Procedure Log
+
+
+
 
 
 

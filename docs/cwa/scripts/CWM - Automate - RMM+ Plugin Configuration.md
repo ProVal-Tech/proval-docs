@@ -1,5 +1,5 @@
 ---
-id: 'cwa_configuring_rmm_plus_plugin'
+id: 'f99ddaae-0cb3-4941-b2aa-dc93671dd246'
 title: 'Configuring the RMM+ Plugin'
 title_meta: 'Configuring the RMM+ Plugin for Efficient Session Management'
 keywords: ['rmm', 'plugin', 'session', 'machines', 'checkin']
@@ -69,6 +69,9 @@ Create a session group in the ScreenConnect portal for machines that have not ch
   Change the number of days in `$30DAYSAGO` as your requirement.  
   ![Image](../../../static/img/CWM---Automate---RMM+-Plugin-Configuration/image_9.png)
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
+
+
+
 
 
 

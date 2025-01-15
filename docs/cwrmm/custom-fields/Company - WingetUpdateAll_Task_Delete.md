@@ -1,5 +1,5 @@
 ---
-id: 'rmm-delete-winget-update-all'
+id: 'a398be5b-5709-4ab5-ac33-7feca8fbc00a'
 title: 'Delete Winget Update All Tasks for Windows 10 and 11'
 title_meta: 'Delete Winget Update All Tasks for Windows 10 and 11'
 keywords: ['winget', 'delete', 'tasks', 'windows', 'custom', 'field']
@@ -25,6 +25,9 @@ Marking this custom field will automatically add the machines to [CW RMM - Machi
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Delete/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Delete/image_2.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-reinstall-huntress-agent'
+id: '161f5696-0f6b-46af-ad25-fe942745f099'
 title: 'Reinstall Huntress Agent for Windows'
 title_meta: 'Reinstall Huntress Agent for Windows'
 keywords: ['huntress', 'agent', 'windows', 'reinstall', 'script']
@@ -53,6 +53,9 @@ This script can be used to reinstall Huntress Agent for the Windows machines.
 ## Output
 
 - Script log
+
+
+
 
 
 

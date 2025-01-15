@@ -1,5 +1,5 @@
 ---
-id: 'cwa-adobe-cc-update-script'
+id: 'dd8dbfbe-f8eb-4909-9cbf-8662cafb4fd4'
 title: 'Adobe CC Update Script'
 title_meta: 'Adobe CC Update Script'
 keywords: ['adobe', 'update', 'script', 'apps', 'automation']
@@ -42,6 +42,9 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 - Script log
 - Local log files
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-local-admin-users'
+id: '20a1ca42-d99d-4bdc-8ca1-ec75b1e2f2dc'
 title: 'Remove Unapproved Users from Local Admin Group'
 title_meta: 'Remove Unapproved Users from Local Admin Group'
 keywords: ['local', 'admin', 'users', 'approved', 'group', 'windows', 'script']
@@ -76,6 +76,9 @@ To enable the ticketing on failure, the ticket category must be set in the globa
 
 `Please look into why this automation failed to complete.`  
 `Thank you`
+
+
+
 
 
 

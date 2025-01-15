@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disk-space-check-and-cleanup'
+id: '8eb03817-eae4-4ac4-b1c6-d7a629d32ecf'
 title: 'Disk Space Check and Cleanup Script'
 title_meta: 'Disk Space Check and Cleanup Script for ConnectWise Automate'
 keywords: ['disk', 'cleanup', 'threshold', 'ticket', 'monitor']
@@ -58,6 +58,9 @@ The following steps are performed:
 ## Output
 
 The script logs all messages to the script log.
+
+
+
 
 
 

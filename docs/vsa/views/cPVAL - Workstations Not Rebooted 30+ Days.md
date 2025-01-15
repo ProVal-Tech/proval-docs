@@ -1,5 +1,5 @@
 ---
-id: 'vsa-workstation-reboot-report'
+id: 'e241665b-e0d2-4af4-af8b-d13f754c9cc1'
 title: 'Workstation Reboot Report'
 title_meta: 'Workstation Reboot Report'
 keywords: ['workstation', 'reboot', 'report', 'view', 'filter']
@@ -29,6 +29,9 @@ List all filters applied to this view
 ### Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_vssadmin-storage-details'
+id: '165f6290-8932-459b-9bfe-18c86f7a61d6'
 title: 'VSSAdmin Storage Details'
 title_meta: 'VSSAdmin Storage Details'
 keywords: ['vssadmin', 'storage', 'shadowcopy', 'audit', 'database']
@@ -45,6 +45,9 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_vssadminstorage` (
   CONSTRAINT `plugin_proval_vssadminstorage_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
+
+
+
 
 
 

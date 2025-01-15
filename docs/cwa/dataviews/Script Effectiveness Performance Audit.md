@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-log-summary'
+id: '5606850a-c68e-4b15-b183-399cded6e601'
 title: 'Script Log Summary'
 title_meta: 'Script Log Summary'
 keywords: ['script', 'log', 'summary', 'retention', 'performance']
@@ -47,6 +47,9 @@ The Script log retention days can be seen at the automate location below:
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-Effectiveness-Performance-Audit/image_2.png)
+
+
+
 
 
 

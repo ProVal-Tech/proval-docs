@@ -1,5 +1,5 @@
 ---
-id: 'vsa-office-uninstall'
+id: '29949711-0cb3-49fb-b31a-9dbe0ce6b9f6'
 title: 'Silent Uninstallation of Microsoft Office'
 title_meta: 'Silent Uninstallation of Microsoft Office'
 keywords: ['uninstall', 'office', 'silent', 'procedure', 'agent']
@@ -67,6 +67,9 @@ Procedure uses Invoke-OffScrub
 ## Output
 
 AP Log
+
+
+
 
 
 

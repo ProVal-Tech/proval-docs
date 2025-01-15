@@ -1,5 +1,5 @@
 ---
-id: 'cwa-local-admin-group-cleanup'
+id: 'f65e32ea-dd71-436e-bb50-5607d23b8adb'
 title: 'Local Admin Group Cleanup Implementation'
 title_meta: 'Local Admin Group Cleanup Implementation'
 keywords: ['local', 'admin', 'cleanup', 'windows', 'monitor']
@@ -49,6 +49,9 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
    ![Image](../../static/img/Local-Admin-Group-Cleanup/image_3.png)
 
 6. Set the appropriate values for the system properties and EDFs defined in the [script's](https://proval.itglue.com/DOC-5078775-16783511) document, which should be provided by the consultant.
+
+
+
 
 
 

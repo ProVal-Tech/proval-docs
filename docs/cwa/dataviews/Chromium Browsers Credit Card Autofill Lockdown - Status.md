@@ -1,5 +1,5 @@
 ---
-id: 'cwa_credit-cards-autofill-lockdown-status'
+id: 'cf2a1fb5-3667-4c4a-b0c8-2a600f191980'
 title: 'Credit Cards Autofill Lockdown Status'
 title_meta: 'Credit Cards Autofill Lockdown Status'
 keywords: ['credit', 'autofill', 'lockdown', 'browsers', 'status']
@@ -33,6 +33,9 @@ The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the comput
 | Last Contact                    | Last Contact with RMM                                                                                                    |
 | Last Logged In User             | Last Logged In User                                                                                                      |
 | Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the Autofilling feature for credit cards for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-ad-recycle-bin'
+id: 'bb53445d-532a-4ec4-b4c5-3f8d0610d6f7'
 title: 'Enable AD Recycle Bin on AD Infrastructure Masters'
 title_meta: 'Enable AD Recycle Bin on AD Infrastructure Masters'
 keywords: ['ad', 'recycle', 'bin', 'infrastructure', 'masters']
@@ -365,6 +365,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

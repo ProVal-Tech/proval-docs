@@ -1,5 +1,5 @@
 ---
-id: 'cwa-time-saved-by-automation'
+id: '4b30f415-b15b-4dd5-b2cf-13a69dbeb538'
 title: 'Time Saved by Automation Report'
 title_meta: 'Time Saved by Automation Report'
 keywords: ['automation', 'report', 'mysql', 'scripting', 'efficiency']
@@ -26,6 +26,9 @@ Displays the accumulated "Time Saved by Automation" for each script that has the
 | Average Weekly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
 | Average Monthly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
 | Average Yearly Minutes Saved      | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
+
+
+
 
 
 

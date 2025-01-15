@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-user-last-logon-monitor'
+id: '2a260035-6023-4b23-ad58-4dbc38d9c819'
 title: 'Active Directory User Last Logon Monitor'
 title_meta: 'Active Directory User Last Logon Monitor'
 keywords: ['active-directory', 'monitor', 'lastlogon', 'ticket', 'alert']
@@ -37,6 +37,9 @@ User1 (Enabled/disabled) - Last Login: 6/10/2022
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-weak-passwords-audit'
+id: '1a75efd1-8457-4b11-b9a8-0f7fe1a39db6'
 title: 'Weak Passwords Audit'
 title_meta: 'Weak Passwords Audit - Count of Accounts with Weak Passwords'
 keywords: ['weak', 'passwords', 'audit', 'count', 'accounts', 'domain']
@@ -25,6 +25,9 @@ Holds the count of accounts with weak passwords
 ## ScreenShot
 
 ![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
+
+
+
 
 
 

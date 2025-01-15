@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-auth-proxy-deployment'
+id: 'a940aac1-4586-4e35-90f6-749ec3b2e1d7'
 title: 'DUO Auth Proxy Deployment Overview'
 title_meta: 'DUO Auth Proxy Deployment Overview'
 keywords: ['duo', 'security', 'authentication', 'proxy', 'deployment', 'audit']
@@ -43,6 +43,9 @@ It is built for auditing purposes.
    Set `Success` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_5.png)  
    **Condition:** `Duo Auth Proxy Result` `Contain any of` `Success`
+
+
+
 
 
 

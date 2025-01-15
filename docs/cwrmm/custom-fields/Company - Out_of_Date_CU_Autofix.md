@@ -1,5 +1,5 @@
 ---
-id: 'rmm-drop-down-custom-field-autofix'
+id: '00c4b9c6-ded8-4cde-ba74-47437724d206'
 title: 'Drop-down Custom Field for Autofix Management'
 title_meta: 'Drop-down Custom Field for Autofix Management'
 keywords: ['customfield', 'autofix', 'cumulativeupdate', 'management', 'connectwise']
@@ -31,6 +31,9 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 ![Screenshot 1](../../../static/img/Company---Out_of_Date_CU_Autofix/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---Out_of_Date_CU_Autofix/image_2.png)
+
+
+
 
 
 

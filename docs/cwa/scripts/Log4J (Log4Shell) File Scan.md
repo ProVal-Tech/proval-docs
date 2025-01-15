@@ -1,5 +1,5 @@
 ---
-id: 'cwa-log4shell-vulnerability-scan'
+id: 'a8eab72d-3794-4808-9009-b01bf3c9bcba'
 title: 'Log4Shell Vulnerability Scan Script'
 title_meta: 'Log4Shell Vulnerability Scan Script for Datto RMM'
 keywords: ['vulnerability', 'scan', 'log4shell', 'edf', 'reporting']
@@ -50,6 +50,9 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
+
+
+
 
 
 

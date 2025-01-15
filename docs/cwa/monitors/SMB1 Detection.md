@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smb1-status-check'
+id: 'de67816f-e6ff-4fed-92e1-26fd5ae5359d'
 title: 'SMB1 Status Check'
 title_meta: 'SMB1 Status Check'
 keywords: ['smb1', 'monitor', 'windows', 'status', 'check']
@@ -33,6 +33,9 @@ Managed Windows Service Plan Groups
 ## How to Import
 
 [Import - Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-13242522)
+
+
+
 
 
 

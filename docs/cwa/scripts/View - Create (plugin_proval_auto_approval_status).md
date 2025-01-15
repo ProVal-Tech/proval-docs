@@ -1,5 +1,5 @@
 ---
-id: 'cwa_plugin_proval_auto_approval_status'
+id: '2f451b19-e8af-4a24-9032-17d65ba2b40d'
 title: 'Creating the plugin_proval_auto_approval_status View'
 title_meta: 'Creating the plugin_proval_auto_approval_status View'
 keywords: ['view', 'proval', 'automate', 'permissions', 'script']
@@ -25,6 +25,9 @@ Step 3: Calls the [CWM - Automate - Script - Update User Permissions for ProVal 
 ## Output
 
 [plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5078775-8988282)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-crystaldiskinfo'
+id: '36f1569a-d2a1-4638-a304-3b267d9308d9'
 title: 'CrystalDiskInfo Data Gathering'
 title_meta: 'CrystalDiskInfo Data Gathering - Overview and Implementation'
 keywords: ['crystaldiskinfo', 'data', 'gathering', 'disk', 'information', 'custom', 'field']
@@ -60,6 +60,9 @@ Location of output for log, result, and error files.
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-log.txt
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-error.txt
 ```
+
+
+
 
 
 

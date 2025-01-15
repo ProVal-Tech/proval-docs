@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-ac-options'
+id: '54425c6a-e77c-4c65-ab46-810e6abbb71d'
 title: 'Remote Monitor for AC Options in Windows Workstations'
 title_meta: 'Remote Monitor for AC Options in Windows Workstations'
 keywords: ['monitor', 'windows', 'workstation', 'sleep', 'hibernate', 'alert']
@@ -31,6 +31,9 @@ None
 ## Target
 
 - Managed 24x7 | 8x5 Workstations
+
+
+
 
 
 

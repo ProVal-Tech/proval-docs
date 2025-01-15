@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-history-audit'
+id: '8c1f89c7-4858-412a-8845-9b063981f3c5'
 title: 'Windows Update History Audit'
 title_meta: 'Windows Update History Audit'
 keywords: ['windows', 'update', 'audit', 'history', 'endpoint']
@@ -27,6 +27,9 @@ Gather and present data about Windows Updates that have been installed on an end
 The script [Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093) should be scheduled against all compliant Windows endpoints on a weekly basis.
 
 If required, implement the [Patches Not Installing > X Days](https://proval.itglue.com/DOC-5078775-10946278) monitor via the instructions in the documentation.
+
+
+
 
 
 

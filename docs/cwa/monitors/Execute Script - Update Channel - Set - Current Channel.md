@@ -1,5 +1,5 @@
 ---
-id: 'cwa-software-configuration-microsoft-365-update-channel'
+id: 'b53066d5-a2f8-4455-b43c-766a927c52f4'
 title: 'Software Configuration for Microsoft 365 Update Channel'
 title_meta: 'Software Configuration for Microsoft 365 Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'software', 'configuration']
@@ -32,6 +32,9 @@ Windows Machines
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](https://proval.itglue.com/DOC-5078775-8181470) script.
+
+
+
 
 
 

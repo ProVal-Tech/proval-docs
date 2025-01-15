@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rdp-enabled-detection'
+id: '2aa464bf-472c-48db-a3a8-f8fc1aa11091'
 title: 'RDP Enabled Detection on Agents'
 title_meta: 'RDP Enabled Detection on Agents'
 keywords: ['rdp', 'detection', 'agent', 'windows']
@@ -17,6 +17,9 @@ This role is detected on any agent where RDP is enabled on it.
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | {%@powershell "(Get-ItemProperty -Path 'HKLM://System//CurrentControlSet//Control//Terminal Server' -name 'fDenyTSConnections').fDenyTSConnections"@%} | Equals     | 0      | Windows        |
+
+
+
 
 
 

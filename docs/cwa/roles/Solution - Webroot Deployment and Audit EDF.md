@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-keycode-deployment'
+id: 'a13e2f1a-70b3-4957-bf21-c528c1b5932c'
 title: 'Webroot Keycode Deployment and Auditing Solution'
 title_meta: 'Webroot Keycode Deployment and Auditing Solution'
 keywords: ['webroot', 'keycode', 'deployment', 'auditing', 'monitoring']
@@ -74,6 +74,9 @@ This solution will be used for partners where the webroot plugin is broken which
 
    **Note:**
    Please read the complete EDF detailing in the script before implementing the solution: [Install Webroot SecureAnyWhere [EDF]](https://proval.itglue.com/DOC-5078775-14989293). Also, follow the Other Content ([Webroot Site KeyCode](https://proval.itglue.com/DOC-5078775-14989313) and [Webroot GroupCode and GroupName Fetching](https://proval.itglue.com/DOC-5078775-14989323)) to get the steps on how to get the Site keycode and Group Code from the Webroot Portal.
+
+
+
 
 
 

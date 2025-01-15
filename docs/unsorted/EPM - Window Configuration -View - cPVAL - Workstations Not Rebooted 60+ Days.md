@@ -1,12 +1,12 @@
 ---
-id: 'rmm-workstations-not-rebooted-60-days'
+id: '0f5d99f1-46bb-42f4-8cdd-006f00cbffd9'
 title: 'Workstations Not Rebooted in 60 Days'
 title_meta: 'Workstations Not Rebooted in 60 Days'
 keywords: ['workstations', 'reboot', 'filter', 'policy']
 description: 'This document provides a summary of a view that displays workstations that have not been rebooted in the last 60 days. It includes details on dependencies and the specific filters applied to this view, ensuring users can effectively monitor workstation status.'
 tags: ['windows', 'filter', 'performance', 'report']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Summary
 
@@ -26,6 +26,9 @@ List all filters applied to this view
 | Machine Status                  | Y                | Machines that have not rebooted in last 60 days            |
 | Operating System                 | Y                | Not *mac* AND NOT *linux*                                   |
 | cPVAL All Policy Removal         | Y                | NOT *1*                                                    |
+
+
+
 
 
 

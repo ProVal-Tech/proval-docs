@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cisco-secure-client-package-installation'
+id: '2936aa3a-b372-4681-8957-e23d5a2631db'
 title: 'Cisco Secure Client - Package Installation Monitor'
 title_meta: 'Cisco Secure Client - Package Installation Monitor'
 keywords: ['cisco', 'client', 'installation', 'monitor', 'modules']
@@ -25,6 +25,9 @@ It's a Global monitor targeting both Windows and MAC machines.
 ## Alert Template
 
 `△ Custom - Execute Script - Cisco Secure Client - Package Installation [Wrapper]`
+
+
+
 
 
 

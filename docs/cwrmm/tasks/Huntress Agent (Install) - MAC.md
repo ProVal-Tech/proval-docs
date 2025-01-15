@@ -1,5 +1,5 @@
 ---
-id: 'ps-huntress-agent-install-mac'
+id: '3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2'
 title: 'Huntress Agent (Install) - MAC'
 title_meta: 'Huntress Agent Installation Script for MAC'
 keywords: ['huntress', 'mac', 'installation', 'agent', 'deploy']
@@ -185,6 +185,9 @@ Once selected, Click on Run to schedule the script as per requirement.
 ## Output
 
 - Script log
+
+
+
 
 
 

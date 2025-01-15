@@ -1,5 +1,5 @@
 ---
-id: 'cwa-customizable-popup-message'
+id: 'd4406d51-fc3a-46e1-8e25-31a5f43b05e2'
 title: 'Customizable Pop-up and Balloon Message Script'
 title_meta: 'Customizable Pop-up and Balloon Message Script'
 keywords: ['popup', 'balloon', 'message', 'customizable', 'user']
@@ -93,6 +93,9 @@ Document the various variables in the script. Delete any section that is not rel
 - The selection made by the user will be stored in @UserSelection@ in the script.
   - If you select date/time selection it will return the selected date/time from the user
   - If you select yes-no button a yes or no will be returned.
+
+
+
 
 
 

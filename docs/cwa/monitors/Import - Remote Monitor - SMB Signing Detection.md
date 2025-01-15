@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cve-2016-2115-implementation'
+id: '8283d8a6-8866-47c2-a6a3-a5bf288664f2'
 title: 'Implementation of CVE-2016-2115 Detection and Remediation'
 title_meta: 'Implementation of CVE-2016-2115 Detection and Remediation'
 keywords: ['cve', 'vulnerability', 'detection', 'remediation', 'database', 'sql']
@@ -163,6 +163,9 @@ unlisted: false
    ![Image 1](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_1.png)
 
    ![Image 2](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_2.png)
+
+
+
 
 
 

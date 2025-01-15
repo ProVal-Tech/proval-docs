@@ -1,5 +1,5 @@
 ---
-id: 'vsa-export-log4j-scan-mitigation'
+id: '51b44e54-600e-470f-bf7e-8181511052e6'
 title: 'Export the Log4J Scan & Mitigation Procedure'
 title_meta: 'Export the Log4J Scan & Mitigation Procedure'
 keywords: ['log4j', 'scan', 'mitigation', 'procedure', 'client', 'email', 'tracker']
@@ -16,6 +16,9 @@ For each client, edit the procedure and change the Email global variable to the 
 
 Save the Procedure.  
 Log the deployment in the tracker located here: [https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG](https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG)
+
+
+
 
 
 

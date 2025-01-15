@@ -1,5 +1,5 @@
 ---
-id: 'cwa_unsynced_ticket_email_notification'
+id: 'eb434aae-87c4-4315-bf73-202a41ff3a96'
 title: 'Unsynced Ticket Email Notification'
 title_meta: 'Unsynced Ticket Email Notification'
 keywords: ['email', 'ticket', 'sync', 'notification', 'automate']
@@ -82,6 +82,9 @@ Ticket Body: <Ticket Body>
 
 **Sample Screenshot:**
 ![Sample Screenshot](../../../static/img/Unsynced-Tickets/image_5.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-install-chocolatey-application'
+id: '8a84e955-77a3-47b7-bd37-9adffb0ee995'
 title: 'Install Chocolatey Application Using Foil'
 title_meta: 'Install Chocolatey Application Using Foil'
 keywords: ['chocolatey', 'foil', 'installation', 'application', 'package']
@@ -38,6 +38,9 @@ Utilizes the Foil wrapper for chocolatey to install an application. [https://git
 4. Installs NuGet if not already installed.
 5. Installs / Updates the Foil Module
 6. Installs the application using Foil
+
+
+
 
 
 

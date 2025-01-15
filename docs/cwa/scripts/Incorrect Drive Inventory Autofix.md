@@ -1,5 +1,5 @@
 ---
-id: 'cwa-upgrade-swap-agents-hard-drives-ssd'
+id: '59079938-6d59-48d6-aa45-b8c003456bc6'
 title: 'Upgrade/Swap Agents Hard-Drives or SSDs with Imaged Drives'
 title_meta: 'Upgrade/Swap Agents Hard-Drives or SSDs with Imaged Drives in ConnectWise Automate'
 keywords: ['upgrade', 'swap', 'agents', 'hard-drives', 'ssds', 'imaged', 'inventory']
@@ -26,6 +26,9 @@ This is an Autofix script and will provide better results when executed by the [
 | Name   | Description                                        |
 |--------|----------------------------------------------------|
 | Drives | Drive id stored in the database for the computer   |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agents-heartbeat-status'
+id: '43bfc9e1-0fd7-4afb-b66b-5b17c80abfaa'
 title: 'Agents Heartbeat Status Dataview'
 title_meta: 'Agents Heartbeat Status Dataview'
 keywords: ['agents', 'heartbeat', 'status', 'automate', 'data']
@@ -24,6 +24,9 @@ This Dataview shows all the agents with their HeartBeat data and status.
 | Last Heartbeat Time       | Display the agent's last heartbeat time received in automate.  |
 | Heartbeat Status          | Display the agent heartbeat status. Whether it's found or Missing. |
 | Days Since Last Heartbeat  | Display the days count since the Last Heartbeat was received.  |
+
+
+
 
 
 

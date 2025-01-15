@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-metrics-overview'
+id: 'e8b825c2-919d-4b92-a94a-8d9e01d48428'
 title: 'Patching Metrics Overview for Windows Computers'
 title_meta: 'Patching Metrics Overview for Windows Computers'
 keywords: ['patching', 'windows', 'clients', 'approval', 'metrics']
@@ -46,6 +46,9 @@ The SQL query filters the results for the Patch Managed computers only, removing
 ## Sample Screenshot
 
 [![Patching Metrics Overview - Client Filter Data Summary](thumbnail/2023-01-21_01_13_14-Patching_Metrics_Overview_-_Client_Filter_Data_Summary.png)](large/2023-01-21_01_13_14-Patching_Metrics_Overview_-_Client_Filter_Data_Summary.png)
+
+
+
 
 
 

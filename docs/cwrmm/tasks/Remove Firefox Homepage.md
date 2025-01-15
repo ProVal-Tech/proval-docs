@@ -1,4 +1,4 @@
-id: 'rmm-script-example'  
+id: '321f9e4b-75f6-4951-9848-03d5940cc257'  
 title: 'Example PowerShell Script for System Configuration'  
 title_meta: 'Example PowerShell Script for System Configuration'  
 keywords: ['powershell', 'configuration', 'system', 'scripting', 'automation']  
@@ -6,6 +6,9 @@ description: 'This document provides an example of a PowerShell script designed 
 tags: ['configuration', 'windows', 'scripting', 'software']  
 draft: false  
 unlisted: false  
+
+
+
 
 
 

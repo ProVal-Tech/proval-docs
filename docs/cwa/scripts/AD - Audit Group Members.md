@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-ad-group-changes'
+id: '20f500f3-77da-48a8-aeb2-4661f1865421'
 title: 'Audit Active Directory Group Changes'
 title_meta: 'Audit Active Directory Group Changes'
 keywords: ['active-directory', 'audit', 'changes', 'ticketing', 'log']
@@ -47,6 +47,9 @@ If [Compare-ADGroupMembers](https://proval.itglue.com/DOC-5078775-7184686) retur
 - Script Log
 - Log Files
 - Ticketing
+
+
+
 
 
 

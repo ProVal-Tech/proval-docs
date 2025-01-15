@@ -1,5 +1,5 @@
 ---
-id: 'cwa-auto-lock-registry-key'
+id: '65644f6f-922e-40e5-91fe-6063c5de2018'
 title: 'Auto-Lock Registry Key Monitor for Windows Machines'
 title_meta: 'Auto-Lock Registry Key Monitor for Windows Machines'
 keywords: ['monitor', 'registry', 'auto-lock', 'windows', 'idle']
@@ -41,6 +41,9 @@ C://Windows//system32//cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Comman
 ### Note:
 
 This is expected to NOT work on any EOL systems. The PowerShell will error out.
+
+
+
 
 
 

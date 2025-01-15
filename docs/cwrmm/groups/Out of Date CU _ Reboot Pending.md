@@ -1,5 +1,5 @@
 ---
-id: 'rmm-out-of-date-cu-reboot-pending'
+id: '87d623c4-d8e2-4c25-b838-f9c0dee5043d'
 title: 'Out of Date CU - Reboot Pending Group Creation'
 title_meta: 'Out of Date CU - Reboot Pending Group Creation'
 keywords: ['cumulative', 'update', 'reboot', 'pending', 'group', 'creation', 'criteria', 'windows']
@@ -72,6 +72,9 @@ Groups computers where Cumulative Update was installed by the Out of Date Cumula
 
 ![Completed Group 1](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_20.png)  
 ![Completed Group 2](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_21.png)
+
+
+
 
 
 

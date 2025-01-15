@@ -1,5 +1,5 @@
 ---
-id: 'cwa-shared-folder-audit'
+id: '1f703da4-d3a2-4a39-9549-58c280665eeb'
 title: 'Shared Folder Audit'
 title_meta: 'Shared Folder Audit'
 keywords: ['audit', 'permissions', 'shares', 'access', 'resource']
@@ -29,6 +29,9 @@ This dataview pulls from the script information regarding file shares and permis
 | User Having Access     | Group or Users that have access to this share    |
 | Permission Type        | Either Allow or Deny                             |
 | Permission Right       | Full, Read, Change or No Access                  |
+
+
+
 
 
 

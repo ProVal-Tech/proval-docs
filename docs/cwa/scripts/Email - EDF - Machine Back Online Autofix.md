@@ -1,5 +1,5 @@
 ---
-id: 'cwa-email-machine-back-online'
+id: 'c32c5921-0bd1-4e4a-b605-baa0e958fbc0'
 title: 'CWM - Automate - Internal Monitor - Email Notification for Machine Back Online'
 title_meta: 'CWM - Automate - Internal Monitor - Email Notification for Machine Back Online'
 keywords: ['email', 'alert', 'monitor', 'notification', 'machine']
@@ -39,6 +39,9 @@ To be executed as an Autofix script only. The `△ Custom - E-Mail - Machine Bac
 - Email  
   Sample Email:  
   ![Sample Email](../../../static/img/Email---EDF---Machine-Back-Online-Autofix/image_1.png)
+
+
+
 
 
 

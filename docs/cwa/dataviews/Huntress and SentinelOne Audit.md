@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sentinel-huntress-status-report'
+id: 'ac16bf53-5607-4ea9-8a5f-1f44f732ca1b'
 title: 'Sentinel One and Huntress Installation Status Report'
 title_meta: 'Sentinel One and Huntress Installation Status Report'
 keywords: ['sentinelone', 'huntress', 'installation', 'status', 'report', 'agents']
@@ -29,6 +29,9 @@ This dataview will show Sentinel One and Huntress installation status (allowed o
 | Huntress Missing Count      | Huntress agent missing count on each location            |
 | SentinelOne Install Count   | SentinelOne install count on agents of each location     |
 | SentinelOne Missing Count   | SentinelOne missing count on agents of each location     |
+
+
+
 
 
 

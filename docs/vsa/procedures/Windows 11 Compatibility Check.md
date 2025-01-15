@@ -1,5 +1,5 @@
 ---
-id: 'vsa-hardware-readiness-windows-11'
+id: '170fedb5-2280-406a-9187-7c353a3cde31'
 title: 'Hardware Readiness for Windows 11'
 title_meta: 'Hardware Readiness for Windows 11'
 keywords: ['hardware', 'windows', 'compatibility', 'tpm', 'secureboot', 'processor', 'memory', 'storage']
@@ -56,6 +56,9 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
+
+
+
 
 
 

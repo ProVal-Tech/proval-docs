@@ -1,5 +1,5 @@
 ---
-id: 'cwa-huntress-agent-installation'
+id: 'da4215c4-8b16-4749-bdf8-61b6dfd393c1'
 title: 'Huntress Agent Installation Script'
 title_meta: 'Huntress Agent Installation Script for Windows'
 keywords: ['huntress', 'agent', 'installation', 'windows', 'silent']
@@ -35,6 +35,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

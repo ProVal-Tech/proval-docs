@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-office-update-channel-macos'
+id: 'db1a41df-d87a-4a48-adbd-187b7c082834'
 title: 'Get Office Update Channel (macOS) [CF]'
 title_meta: 'Get Office Update Channel (macOS) [CF]'
 keywords: ['office', 'update', 'channel', 'macos', 'customfield']
@@ -49,6 +49,9 @@ Agent Procedure Log
 
 Custom Field  
 ![Custom Field Image 2](../../../static/img/Get-Office-Update-Channel-(macOS)-CF/image_7.png)  
+
+
+
 
 
 

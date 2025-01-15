@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-dns-server-scavenging-settings'
+id: '90969a29-db33-4332-babb-c2f5be128a3e'
 title: 'Set DNS Server Scavenging Settings'
 title_meta: 'Set DNS Server Scavenging Settings - Efficient DNS Management'
 keywords: ['dns', 'scavenging', 'windows', 'server', 'cmdlets', 'management']
@@ -46,6 +46,9 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

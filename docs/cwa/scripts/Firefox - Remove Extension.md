@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-firefox-extension'
+id: 'dcffd758-d8cc-46a4-b7d7-cd34b7fd4953'
 title: 'Remove and Block Firefox Extension'
 title_meta: 'Remove and Block Firefox Extension'
 keywords: ['firefox', 'extension', 'remove', 'block', 'addons', 'policies']
@@ -54,6 +54,9 @@ The script then checks if a `policies.json` file already exists in the distribut
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

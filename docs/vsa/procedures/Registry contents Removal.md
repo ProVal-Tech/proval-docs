@@ -1,5 +1,5 @@
 ---
-id: 'ps-delete-pending-file-rename-operations'
+id: 'a6e179d1-ac12-482b-b315-f0fae1b83353'
 title: 'Delete PendingFileRenameOperations Registry Contents'
 title_meta: 'Delete PendingFileRenameOperations Registry Contents'
 keywords: ['registry', 'delete', 'pending', 'operations', 'cleanup']
@@ -52,6 +52,9 @@ No
 - Agent Procedure Log
 
 Procedure_PendingFileRenameOperations_-_Registry_contents_Removal.xml
+
+
+
 
 
 

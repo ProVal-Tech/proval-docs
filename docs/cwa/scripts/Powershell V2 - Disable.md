@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-powershellversion2'
+id: '9e2ff280-a904-48c5-b2de-017c77881147'
 title: 'Disable PowerShell Version 2 Implementation'
 title_meta: 'Disable PowerShell Version 2 Implementation'
 keywords: ['automate', 'implementation', 'powershell', 'script']
@@ -23,6 +23,9 @@ This is an automate implementation of the Disable-PowershellVersion2 agnostic sc
 ## Process
 
 Please review the agnostic content document for complete process.
+
+
+
 
 
 

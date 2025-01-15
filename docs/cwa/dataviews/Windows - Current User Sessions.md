@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-session-audit'
+id: 'ea5d1545-a2d7-4c9e-a61e-b89e43da2b9c'
 title: 'User Session Audit Dataview'
 title_meta: 'User Session Audit Dataview'
 keywords: ['user', 'session', 'audit', 'dataview', 'agent', 'computer', 'status', 'location', 'client', 'logon']
@@ -45,6 +45,9 @@ The information that this dataview displays is populated into the custom table `
 | Location (All Possible Column) | This dataview has all possible location details such as location address, location phone number etc. |
 | Client (All Possible Column) | It contains all possible client details such as client city, client phone etc.              |
 | Computer (All Possible Column)| It contains all possible computer details such as Computer OS Build, Type, Manufacturer etc. |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-11-compatibility-check'
+id: '99719e54-ce8f-4b76-93f4-cc832a3b88cf'
 title: 'Windows 11 Compatibility Check'
 title_meta: 'Windows 11 Compatibility Check'
 keywords: ['windows', 'compatibility', 'check', 'requirement', 'install']
@@ -22,6 +22,9 @@ Windows 11 compatibility check suggests that the computer meets the requirements
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Compatible/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Compatible/image_2.png)
+
+
+
 
 
 

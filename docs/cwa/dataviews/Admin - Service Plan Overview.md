@@ -1,5 +1,5 @@
 ---
-id: 'cwa-service-plan-status'
+id: '50405d6a-03a8-48b5-9299-13584b818829'
 title: 'Service Plan Status Overview'
 title_meta: 'Service Plan Status Overview for Locations'
 keywords: ['service', 'plan', 'status', 'onboarding', 'patching', 'location', 'client']
@@ -27,6 +27,9 @@ This Dataview shows the status of the Service plan, Onboarding, patching, and ot
 | Workstations Patching      | Display the workstations patching status. [Enabled/Disabled]                                        |
 | Administrator Credentials  | Display the status of Admin creds set in Deployment & default tab on Locations.                      |
 | Cache Drive                | Display the status of the Location cache drive.                                                     |
+
+
+
 
 
 

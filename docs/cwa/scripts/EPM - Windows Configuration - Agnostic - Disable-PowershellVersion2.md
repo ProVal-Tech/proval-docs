@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-powershell-v2'
+id: '1691cc51-ef36-451d-9086-ca69c6ef85d8'
 title: 'Disable Windows PowerShell v2 Feature'
 title_meta: 'Disable Windows PowerShell v2 Feature'
 keywords: ['disable', 'powershell', 'windows', 'feature', 'installation']
@@ -49,6 +49,9 @@ Checks for a version of PowerShell greater than v2, if there is one present disa
 | ConnectWise RMM             |                                               |
 | Kaseya                      |                                               |
 | Datto RMM                   |                                               |
+
+
+
 
 
 

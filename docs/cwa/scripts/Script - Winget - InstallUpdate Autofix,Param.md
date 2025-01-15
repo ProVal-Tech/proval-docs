@@ -1,5 +1,5 @@
 ---
-id: 'cwa-invoke-wingetprocessor'
+id: '3a2f4004-624d-47c4-a5d0-c3c43e103e25'
 title: 'Invoke Winget Processor'
 title_meta: 'Invoke Winget Processor - Install and Update Applications'
 keywords: ['winget', 'install', 'update', 'application', 'script']
@@ -46,6 +46,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

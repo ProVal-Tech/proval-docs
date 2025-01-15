@@ -1,5 +1,5 @@
 ---
-id: 'cwa-idlemon-report-data-storage'
+id: '44909a53-c1ca-4d2d-994a-40fba5a139fa'
 title: 'IdleMon Report Data Storage'
 title_meta: 'IdleMon Report Data Storage'
 keywords: ['idlemon', 'report', 'data', 'storage', 'globals']
@@ -30,6 +30,9 @@ Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Global
 | IsDomainAdmin      | varchar(5)   | IsDomainAdmin? (True/False)                                   |
 | IsEnterpriseAdmin   | varchar(5)   | IsEnterpriseAdmin? (True/False)                               |
 | ScriptRunTime      | datetime      | Data Collection Time                                            |
+
+
+
 
 
 

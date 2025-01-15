@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-outlook-hyperlinks'
+id: '3cc9953c-254c-4d50-9520-cbdb7e6ef23c'
 title: 'Update Outlook Hyperlink Behaviour'
 title_meta: 'Update Outlook Hyperlink Behaviour'
 keywords: ['outlook', 'hyperlink', 'browser', 'registry', 'windows']
@@ -31,6 +31,9 @@ To achieve this, the script likely modifies specific values in the Windows regis
 ## Output
 
 - Script Logs
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-email-filterable-dataviews'
+id: '4b15de07-233d-462b-91ce-3ee060457e65'
 title: 'Email Filterable Content of Dataviews'
 title_meta: 'Email Filterable Content of Dataviews'
 keywords: ['email', 'dataview', 'csv', 'report', 'filter', 'client', 'location', 'computer']
@@ -71,6 +71,9 @@ Dataviews can now be filtered by client/location/computer.
 ## Output
 
 Email with a `@DataviewName@.Csv` file attached.
+
+
+
 
 
 

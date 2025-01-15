@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-management-reports'
+id: '6dd7be85-8983-413b-8f56-1426446f25da'
 title: 'Professional Patch Management Reports'
 title_meta: 'Professional Patch Management Reports for Clients'
 keywords: ['patch', 'management', 'reports', 'compliance', 'audit', 'cumulative', 'update']
@@ -101,6 +101,9 @@ A: The cumulative update data gets audited from the [Solution - Latest Installed
 
 If you see the following error when opening one of the reports, it means at least one of the View's or the custom table is missing and is unable to reference it. If they are all there, verify you have full permissions to the table and Views.
 ![Potential Problems](../../static/img/Patch-Compliance-Reporting-Solution/image_4.png)
+
+
+
 
 
 

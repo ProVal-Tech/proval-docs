@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winget-update-scheduled-tasks'
+id: 'ba9e49ca-2f53-42ca-94a7-373fd4098527'
 title: 'Winget Update Scheduled Tasks for Windows 10 and 11'
 title_meta: 'Winget Update Scheduled Tasks for Windows 10 and 11'
 keywords: ['winget', 'update', 'scheduled', 'tasks', 'windows', '10', '11']
@@ -74,6 +74,9 @@ Create the following device groups:
 Create and deploy the following tasks:  
 - [Scheduled Task Winget Update All (Create)](https://proval.itglue.com/DOC-5078775-15702931)  
 - [Scheduled Task Winget Update All (Delete)](https://proval.itglue.com/DOC-5078775-15702855)  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-plugin_proval_v_windows_10_version_metrics'
+id: 'ac098d84-7d28-4b69-933f-74ab861d2b89'
 title: 'Creating the plugin_proval_v_windows_10_version_metrics View'
 title_meta: 'Creating the plugin_proval_v_windows_10_version_metrics View for Data Metrics'
 keywords: ['view', 'metrics', 'windows', 'dataview', 'sql']
@@ -25,6 +25,9 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 ## Process
 
 Executes the SQL query to create the plugin_proval_v_windows_10_Version_metrics view.
+
+
+
 
 
 

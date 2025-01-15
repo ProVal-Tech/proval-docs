@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-new-domain-admin-check'
+id: '32b7ca28-a941-40d1-925f-e6088bad8ca3'
 title: 'Check for New Domain Admin Users'
 title_meta: 'Check for New Domain Admin Users in Active Directory'
 keywords: ['active-directory', 'domain', 'admin', 'user', 'security']
@@ -15,6 +15,9 @@ Uses the AD_Plugin tables to determine if a new Domain admin user has recently b
 ## Target
 
 Servers - Domain Controllers
+
+
+
 
 
 

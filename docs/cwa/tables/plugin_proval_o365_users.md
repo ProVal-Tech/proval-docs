@@ -1,5 +1,5 @@
 ---
-id: 'cwa-o365-audit-users'
+id: 'b6256c5a-da00-4a11-91b1-819bc770349a'
 title: 'O365 - Audit Users to Custom Table'
 title_meta: 'O365 - Audit Users to Custom Table'
 keywords: ['o365', 'audit', 'users', 'custom', 'table', 'information', 'baseline']
@@ -28,6 +28,9 @@ Stores baseline information about Office 365 users gathered by the script [O365 
 | IsLicensed   | CHAR | True or False depending on if the user is licensed or not.     |
 | 2FAStatus   | CHAR | String denoting the type of 2FA set up on the account.         |
 | ContactID   | INT  | The ContactID associated with the O365 user. Will be NULL if a match cannot be found. |
+
+
+
 
 
 

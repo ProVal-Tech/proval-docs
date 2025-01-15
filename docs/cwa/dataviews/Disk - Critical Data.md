@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disk-information-display'
+id: '8a8b76b2-aa25-419c-b193-aa98f54ef274'
 title: 'Disk Information Display'
 title_meta: 'Disk Information Display for Critical Disk Data'
 keywords: ['disk', 'information', 'critical', 'data', 'gather', 'client', 'computer', 'drive', 'manufacturer', 'health']
@@ -57,6 +57,9 @@ This Dataview displays the Disk information gathered from [EPM - Disk - Agnostic
 | IntegrityErrors      | The amount of integrity errors logged on the drive                      |
 | InformationalLogEntries | The amount of informational log entries logged on the drive           |
 | DateUpdated          | The Date that this information was gathered                             |
+
+
+
 
 
 

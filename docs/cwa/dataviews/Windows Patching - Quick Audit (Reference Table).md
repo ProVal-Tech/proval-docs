@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-patching-audit'
+id: 'bfe883fc-125c-44fc-b2d6-beb27efefd8a'
 title: 'Windows Patching - Quick Audit'
 title_meta: 'Windows Patching - Quick Audit'
 keywords: ['patching', 'windows', 'audit', 'dataview', 'troubleshooting']
@@ -55,6 +55,9 @@ Step 2: Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](http
 ![Step 2](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_3.png)  
 
 Once you get the CSV in your Email, you can easily apply the required filters.
+
+
+
 
 
 

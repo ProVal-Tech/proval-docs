@@ -1,12 +1,12 @@
 ---
-id: 'cwa-locked-out-user-account-audit'
+id: '11fad349-3b51-4bfd-8f45-d07db1827543'
 title: 'Locked Out User Account Audit'
 title_meta: 'Locked Out User Account Audit'
 keywords: ['lockout', 'audit', 'user', 'account', 'management']
 description: 'This document outlines the process of auditing locked out user accounts, detailing the necessary dependencies, table structures, and SQL commands required to manage and retrieve information on both domain and local user accounts that have been locked out.'
 tags: ['account', 'database', 'security', 'report', 'setup']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Purpose
 
@@ -51,6 +51,9 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_account_lock` (
   CONSTRAINT `plugin_proval_account_lock_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8
 ```
+
+
+
 
 
 

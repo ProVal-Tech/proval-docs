@@ -1,5 +1,5 @@
 ---
-id: 'rmm-cumulative-update-audit'
+id: '685b1f1d-527a-4d66-acb2-d1329ee8a368'
 title: 'Cumulative Update Audit Monitor Setup'
 title_meta: 'Cumulative Update Audit Monitor Setup'
 keywords: ['monitor', 'alert', 'cumulative', 'update', 'audit']
@@ -55,6 +55,9 @@ The monitor set will generate an alert for computers in which the custom field [
 
 - [CW RMM - Custom Field - Latest Cumulative Update](https://proval.itglue.com/DOC-5078775-14029450)
 - [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
+
+
+
 
 
 

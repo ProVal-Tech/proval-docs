@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-ad-keyprotectors'
+id: '23777e5f-2cdd-414c-9938-2293223df3ac'
 title: 'Bitlocker Key Protectors Backup to Active Directory'
 title_meta: 'Bitlocker Key Protectors Backup to Active Directory'
 keywords: ['bitlocker', 'active', 'directory', 'key', 'protectors', 'backup', 'audit']
@@ -33,6 +33,9 @@ Stores information about Bitlocker key protectors backed up to Active Directory.
 | ParentDistinguishedName | TEXT     | The full DN of the parent of the key protector object in AD (generally a computer object).           |
 | ParentSID               | VARCHAR  | The SID of the parent of the key protector object in AD (generally a computer object).               |
 | Timestamp               | DATETIME | The date and time that the audit was last ran.                                                       |
+
+
+
 
 
 

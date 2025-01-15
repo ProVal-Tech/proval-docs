@@ -1,5 +1,5 @@
 ---
-id: 'cwa_onedrive_sync_status'
+id: 'e7a826db-104c-4ebb-877f-b44e138067f9'
 title: 'OneDrive Sync Status Information Storage'
 title_meta: 'OneDrive Sync Status Information Storage'
 keywords: ['onedrive', 'sync', 'status', 'storage', 'information']
@@ -31,6 +31,9 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](https://p
 | TotalQuota      | float    | Total Size of the Available Quota (GB)         |
 | UsedQuota       | float    | Amount of used Quota (GB)                       |
 | Username        | varchar  | Username                                        |
+
+
+
 
 
 

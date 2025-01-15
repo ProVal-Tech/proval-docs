@@ -1,5 +1,5 @@
 ---
-id: 'cwa-add-windows-path-variable'
+id: '838d8f61-038e-4569-aaf1-c72a1072670a'
 title: 'Add Windows Path Variable'
 title_meta: 'Add Windows Path Variable'
 keywords: ['windows', 'path', 'variable', 'environment', 'scope']
@@ -46,6 +46,9 @@ Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](htt
 ## Output
 
 - Script log
+
+
+
 
 
 

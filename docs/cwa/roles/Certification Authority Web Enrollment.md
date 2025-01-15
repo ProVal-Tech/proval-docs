@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-ca-web-enrollment'
+id: 'a60cfd5b-baf3-4a51-9ac8-82bcf58d11ad'
 title: 'Detect Servers with Certification Authority Web Enrollment Feature'
 title_meta: 'Detect Servers with Certification Authority Web Enrollment Feature'
 keywords: ['servers', 'certification', 'authority', 'web', 'enrollment']
@@ -17,6 +17,9 @@ Role used to detect the servers with Certification Authority Web Enrollment Feat
 | Detection String                                                                                     | Comparator | Result    | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|-----------|----------------|
 | {%@powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Web-Enrollment' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains    | Installed | Windows        |
+
+
+
 
 
 

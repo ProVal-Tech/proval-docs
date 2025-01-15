@@ -1,5 +1,5 @@
 ---
-id: 'cwa_optimize_ticket_routing'
+id: '5028b9c1-b787-4e98-801f-efc670c0d662'
 title: 'Optimize Ticket Routing in ConnectWise Automate'
 title_meta: 'Optimize Ticket Routing in ConnectWise Automate'
 keywords: ['ticket', 'routing', 'automate', 'categories', 'sql']
@@ -54,6 +54,9 @@ This script runs only SQL against the database. It is set up to dynamically atte
 ## Output
 
 CW Manage Plugin
+
+
+
 
 
 

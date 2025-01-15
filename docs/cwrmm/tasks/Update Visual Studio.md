@@ -1,5 +1,5 @@
 ---
-id: 'rmm-update-visual-studio'
+id: '04ffcb6e-be50-4582-9b9b-050c39518811'
 title: 'Update Visual Studio'
 title_meta: 'Update Visual Studio - Automate Updates for Installed Versions'
 keywords: ['visualstudio', 'updates', 'automation', 'script', 'software']
@@ -135,6 +135,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

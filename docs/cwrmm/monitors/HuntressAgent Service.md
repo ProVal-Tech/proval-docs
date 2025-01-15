@@ -1,5 +1,5 @@
 ---
-id: 'rmm-huntressagent-monitor'
+id: '57b02fcd-0a4e-4c90-93d8-f81caa4c0835'
 title: 'HuntressAgent Service Monitoring Setup'
 title_meta: 'HuntressAgent Service Monitoring Setup'
 keywords: ['huntress', 'service', 'monitoring', 'alerts', 'rmm']
@@ -49,6 +49,9 @@ Alerts on the machines if HuntressAgent Service is stopped and fails to restart.
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
    ![](../../../static/img/HuntressAgent-Service/image_9.png)  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-add-remove-wifi-profile'
+id: 'cffbdce7-7390-4b11-9300-6a34799b7d82'
 title: 'Add and Remove Wi-Fi Profiles Script'
 title_meta: 'Add and Remove Wi-Fi Profiles Script for Automate'
 keywords: ['wifi', 'profiles', 'script', 'automate', 'network']
@@ -101,6 +101,9 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
+
+
+
 
 
 

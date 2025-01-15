@@ -1,12 +1,12 @@
 ---
-id: 'ps-create-modify-registry-keys'
+id: '2e06791d-4084-4dc3-a524-7b54695c6fc9'
 title: 'Create or Modify Registry Keys'
 title_meta: 'Create or Modify Registry Keys'
 keywords: ['registry', 'keys', 'modify', 'create', 'windows']
 description: 'This document provides a detailed overview of a script that enables users to create or modify multiple registry keys, including their names, values, and types. It includes sample runs, user parameters, output details, and frequently asked questions regarding registry properties.'
 tags: ['configuration', 'windows', 'setup', 'update', 'security']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -50,6 +50,9 @@ This script will create or modify the registry for multiple keys/names/values/ty
 2. Does the length of the parameters required to be the same for getting it to work?  
    Yes, the parameter needed to be of the same length.  
    For example: If you have put two keys for modifications, you have to provide two names, two values, and two types irrespective of whether any of the parameters have the same value or not.
+
+
+
 
 
 

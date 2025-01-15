@@ -1,5 +1,5 @@
 ---
-id: 'rmm-cumulative-update-audit'
+id: '8f2741e6-ef04-4a1e-804d-f481469e8beb'
 title: 'Cumulative Update Audit'
 title_meta: 'Cumulative Update Audit'
 keywords: ['cumulative', 'update', 'audit', 'microsoft', 'compliance']
@@ -27,6 +27,9 @@ The solution grabs the computer's build number and compares it with Microsoft's 
 - Create the task: [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029444)
+
+
+
 
 
 

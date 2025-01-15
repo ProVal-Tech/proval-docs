@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-cisco-secure-client-modules'
+id: 'f469f77e-cf0c-4967-b51a-41918567fa53'
 title: 'Install Cisco Secure Client Modules on Windows and MAC'
 title_meta: 'Install Cisco Secure Client Modules on Windows and MAC'
 keywords: ['cisco', 'client', 'installation', 'windows', 'mac']
@@ -35,6 +35,9 @@ The purpose of this solution is to provide an option to install different Cisco 
      - [CWA - Internal Monitor - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763)
        - Setup with "`△ Custom - Execute Script - Cisco Secure Client - Package Installation`" alert template.
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

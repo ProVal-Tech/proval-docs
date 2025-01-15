@@ -1,5 +1,5 @@
 ---
-id: 'vsa-chocolatey-application-uninstall'
+id: '184aa8f9-0119-4f8f-b05e-0f8f74c5bb80'
 title: 'Chocolatey Application Uninstall'
 title_meta: 'Chocolatey Application Uninstall'
 keywords: ['chocolatey', 'uninstall', 'application', 'foil', 'package']
@@ -44,6 +44,9 @@ Utilizes the Foil wrapper for chocolatey to uninstall an application. [https://g
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

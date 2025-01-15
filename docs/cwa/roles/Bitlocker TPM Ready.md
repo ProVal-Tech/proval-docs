@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-tpm-status'
+id: 'e5234598-aaa5-412c-8425-f9d1c95c00b5'
 title: 'Check TPM Status for Machines'
 title_meta: 'Check TPM Status for Machines in ConnectWise Automate'
 keywords: ['tpm', 'machine', 'connectwise', 'database', 'role']
@@ -17,6 +17,9 @@ This role checks the machine if the machine TPM is ready to use, if so this role
 | Detection String                                                                                           | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | {@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |
+
+
+
 
 
 

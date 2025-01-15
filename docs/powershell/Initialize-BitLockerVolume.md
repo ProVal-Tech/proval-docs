@@ -78,3 +78,6 @@ Encrypts the $env:SystemDrive volume with a Startup key protector using Aes256 t
     .\Initialize-BitLockerVolume-data.txt
     .\Initialize-BitLockerVolume-error.txt
 
+
+
+

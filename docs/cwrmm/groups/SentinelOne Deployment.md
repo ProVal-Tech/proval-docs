@@ -1,5 +1,5 @@
 ---
-id: 'rmm-sentinelone-deployment'
+id: 'e7b258e9-436c-499c-8532-3ba7b3d8e6e3'
 title: 'SentinelOne Deployment Group Configuration'
 title_meta: 'SentinelOne Deployment Group Configuration'
 keywords: ['sentinelone', 'deployment', 'windows', 'linux', 'mac', 'group', 'criteria']
@@ -50,6 +50,9 @@ Once adding the above criteria, click the Save button to save the Group.
 ![Image](../../../static/img/SentinelOne-Deployment/image_5.png)  
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_6.png)  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-domain-controllers-group'
+id: 'eeeb4ee0-d683-44fd-81cf-7f8872b71c68'
 title: 'Domain Controllers Group Setup'
 title_meta: 'Domain Controllers Group Setup'
 keywords: ['domain', 'controllers', 'group', 'active', 'directory']
@@ -24,6 +24,9 @@ The group contains the Domain Controllers.
 - **Description:** Contains Domain Controllers  
 - Select `Service Display Name` for the criteria, `Equal` for the comparator and type `Active Directory Domain Services` in the condition box.  
 - Click `Save` button at the top left to create the group.  
+
+
+
 
 
 

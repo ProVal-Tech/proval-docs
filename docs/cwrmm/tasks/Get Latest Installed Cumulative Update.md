@@ -1,5 +1,5 @@
 ---
-id: 'rmm-get-latest-installed-cumulative-update'
+id: '1f9c0a54-177b-46a1-8a8d-7817b3997036'
 title: 'Get Latest Installed Cumulative Update'
 title_meta: 'Get Latest Installed Cumulative Update'
 keywords: ['windows', 'update', 'cumulative', 'build', 'script']
@@ -108,6 +108,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
+
 
 
 

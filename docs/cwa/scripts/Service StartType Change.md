@@ -1,5 +1,5 @@
 ---
-id: 'ps-configure-service-start-type'
+id: '21ae27d2-c179-4f26-92cf-15760af6791a'
 title: 'Configure Service Start Type'
 title_meta: 'Configure Service Start Type'
 keywords: ['services', 'starttype', 'configuration', 'windows', 'automation']
@@ -61,6 +61,9 @@ Please have the following file hash whitelisted in your security environment to 
 ## Output
 - Script log
 - Ticket
+
+
+
 
 
 

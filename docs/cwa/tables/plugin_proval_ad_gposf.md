@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpo-security-filtering'
+id: '8fa8c78e-04a4-4495-8cfe-44aef7b48035'
 title: 'GPO Security Filtering Audit'
 title_meta: 'GPO Security Filtering Audit'
 keywords: ['gpo', 'security', 'filtering', 'audit', 'trustee']
@@ -27,6 +27,9 @@ Displays detailed information about the GPO security filtering of each GPO from 
 | ComputerID  | INT      | The Automate ComputerID of the supplying domain controller.                |
 | Trustee     | VARCHAR  | The name of the user or group that the security filter is applying to.     |
 | TrusteeType | VARCHAR  | The type of trustee (User, Group, WellKnownGroup, etc.)                   |
+
+
+
 
 
 

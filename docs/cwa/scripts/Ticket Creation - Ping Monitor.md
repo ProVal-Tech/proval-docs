@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-creation-ping-monitor'
+id: '7cd1193a-c796-4545-b707-758e1b651c22'
 title: 'Ticket Creation for Ping Monitor'
 title_meta: 'Ticket Creation for Ping Monitor - Custom Alert Template'
 keywords: ['ticket', 'monitor', 'ping', 'alert', 'client']
@@ -66,6 +66,9 @@ The script will generate the tickets utilizing the subject and message stored in
 ## Output
 
 - Ticket
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-set-chromium-homepage'
+id: '6ebd1a73-94e8-46ba-bc58-3cfb794c7ab0'
 title: 'Set Chromium Homepage'
 title_meta: 'Set Chromium Homepage for Chromium Based Browsers'
 keywords: ['chromium', 'homepage', 'browser', 'configuration', 'endpoint']
@@ -45,6 +45,9 @@ Uses [SWM - Software Configuration - Set-ChromiumHomepage](https://proval.itglue
 ## Output
 
 Agent procedure log
+
+
+
 
 
 

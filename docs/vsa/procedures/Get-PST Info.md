@@ -1,5 +1,5 @@
 ---
-id: 'ps-get-pst-info'
+id: '5783728e-e3c6-46f2-b8ae-ea3df5c980ec'
 title: 'Get PST Information'
 title_meta: 'Get PST Information'
 keywords: ['pst', 'files', 'log', 'location', 'size']
@@ -69,6 +69,9 @@ This procedure gathers the name, location, and size of all the PST files on a ma
 ## Output
 
 Procedure Logfiles and computer log
+
+
+
 
 
 

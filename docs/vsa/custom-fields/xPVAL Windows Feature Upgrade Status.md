@@ -1,5 +1,5 @@
 ---
-id: 'vsa-windows-10-feature-upgrade-status'
+id: '1b448856-c7d6-4aed-8080-474f5650a070'
 title: 'Windows 10 Feature Upgrade Status Codes'
 title_meta: 'Windows 10 Feature Upgrade Status Codes'
 keywords: ['windows', 'upgrade', 'status', 'feature', 'script']
@@ -18,6 +18,9 @@ unlisted: false
 | Failure               | Set when installState = 2                                   |
 | Success               | Set when installState = 3                                   |
 | Reboot Pending        | Set when installState = 1 and lastReboot is less than installDate. |
+
+
+
 
 
 

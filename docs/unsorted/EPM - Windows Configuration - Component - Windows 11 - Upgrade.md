@@ -1,12 +1,12 @@
 ---
-id: 'rmm-windows-evaluation-license-rearm'
+id: '8e25f0d8-8a04-4f5b-853a-282b9f005d9c'
 title: 'Windows Evaluation License (Rearm)'
 title_meta: 'Windows Evaluation License (Rearm)'
 keywords: ['windows', 'rearm', 'license', 'evaluation', 'datto', 'component']
 description: 'This document outlines the process for checking whether a machine is an evaluation copy of Windows. It details the steps to export and import the necessary component in Datto RMM, along with the variables for performing a re-arm and restarting the endpoint if required.'
 tags: ['windows', 'rearm', 'datto', 'configuration', 'setup']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -44,6 +44,9 @@ A job status of Success is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-security-info-automate-users'
+id: '794662a0-87d9-4744-be1b-2b72eca8019b'
 title: 'Detailed Security Information About Automate Users'
 title_meta: 'Detailed Security Information About Automate Users'
 keywords: ['automate', 'security', 'users', 'permissions', 'audit']
@@ -26,6 +26,9 @@ This dataview shows detailed security information about Automate users.
 | Email                     | Email Address of User                                     |
 | Assigned Groups           | Name of the assigned groups                               |
 | Assigned Clients          | Name of the assigned Clients                              |
+
+
+
 
 
 

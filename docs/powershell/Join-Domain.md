@@ -56,3 +56,6 @@ Joins a domain using online method or offline method.
     .\Join-Domain-log.txt
     .\Join-Domain-error.txt
 
+
+
+

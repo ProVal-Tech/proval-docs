@@ -1,5 +1,5 @@
 ---
-id: 'cwa-clear-disk-monitors'
+id: '3af8bbf0-532f-43c5-a2ea-980be9031730'
 title: 'Clear and Reinstall Disk Monitors'
 title_meta: 'Clear and Reinstall Disk Monitors for ConnectWise Automate'
 keywords: ['disk', 'monitor', 'agent', 'deployment', 'script']
@@ -32,6 +32,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

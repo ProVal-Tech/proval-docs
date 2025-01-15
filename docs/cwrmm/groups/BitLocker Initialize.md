@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-10-11-agents'
+id: 'e52d302e-56a7-4438-8c4d-e53e5a16f751'
 title: 'Windows 10 and Windows 11 Agents Group'
 title_meta: 'Windows 10 and Windows 11 Agents Group'
 keywords: ['windows', 'agents', 'group', 'dynamic']
@@ -33,6 +33,9 @@ This group contains the Windows 10 and Windows 11 agents only.
    - OS contains any of Windows 10 and Windows 11  
    
      ![Criteria](../../../static/img/BitLocker-Initialize/image_3.png)
+
+
+
 
 
 

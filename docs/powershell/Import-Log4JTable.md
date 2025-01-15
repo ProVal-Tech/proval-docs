@@ -45,3 +45,6 @@ $cred = New-Object System.Management.Automation.PSCredential("MyUsername", (Conv
     .\Import-Log4JTable-error.txt
     .\log4jquery.sql
 
+
+
+

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-chocolatey-application-management'
+id: 'e91935f1-0952-4a1c-a1cb-807be572ed30'
 title: 'Chocolatey Application Management'
 title_meta: 'Chocolatey Application Management - Reliable Application Management Solution'
 keywords: ['chocolatey', 'application', 'management', 'install', 'uninstall']
@@ -22,6 +22,9 @@ Provide a reliable and accessible solution for application management via Chocol
 ## Implementation
 
 Import both Agent Procedures.
+
+
+
 
 
 

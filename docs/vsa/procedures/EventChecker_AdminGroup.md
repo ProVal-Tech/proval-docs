@@ -1,5 +1,5 @@
 ---
-id: 'vsa-checks-security-events-for-admin-memberships'
+id: '0df8be67-9e2d-4277-8004-a1bebe1790e9'
 title: 'Checks Security Events for Admin Memberships'
 title_meta: 'Checks Security Events for Admin Memberships'
 keywords: ['security', 'events', 'admin', 'memberships']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Checks Security Events for Admin Memberships
+
+
+
 
 
 

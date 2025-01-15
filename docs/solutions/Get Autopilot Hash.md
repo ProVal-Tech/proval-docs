@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hardware-hash-autopilot-registration'
+id: '0af1bff2-a32a-442b-9322-a8a260d150ff'
 title: 'Collecting Hardware Hash for Autopilot Device Registration'
 title_meta: 'Collecting Hardware Hash for Autopilot Device Registration'
 keywords: ['hardware', 'autopilot', 'registration', 'device', 'monitor', 'script', 'dataview']
@@ -40,6 +40,9 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
      - [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](https://proval.itglue.com/DOC-5078775-17245349)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

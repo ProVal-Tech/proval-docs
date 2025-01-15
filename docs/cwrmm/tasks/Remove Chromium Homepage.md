@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-chromium-homepage'
+id: 'c1459ee7-e52f-4f03-8bdc-7ddba542a6fb'
 title: 'Remove Chromium Homepage'
 title_meta: 'Remove Chromium Homepage'
 keywords: ['chromium', 'homepage', 'browsers', 'edge', 'chrome', 'brave', 'rmm']
@@ -190,6 +190,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script log  
 ![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  
+
+
+
 
 
 

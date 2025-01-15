@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-11-compatibility-check'
+id: 'f0bb3ffc-60cb-484c-b7fa-27a386ac664c'
 title: 'Windows 11 Compatibility Check for Windows 10 Machines'
 title_meta: 'Windows 11 Compatibility Check for Windows 10 Machines'
 keywords: ['windows', 'compatibility', 'installation', 'upgrade', 'monitor']
@@ -42,6 +42,9 @@ Additionally, it can be used to detect Windows 11 computers that do not meet the
      - [Monitor - Execute Script - Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-11364499)  
        - △ Custom - Execute Script - Windows 11 Compatibility Check  
        - Right-click and Run Now to start the monitor
+
+
+
 
 
 

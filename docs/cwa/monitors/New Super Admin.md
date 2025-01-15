@@ -1,5 +1,5 @@
 ---
-id: 'cwa-super-admin-permission-monitor'
+id: '32773ed7-c2cc-4be0-ac81-8a3fce722557'
 title: 'Super Admin Permission Monitor'
 title_meta: 'Super Admin Permission Monitor'
 keywords: ['monitor', 'permission', 'admin', 'audit', 'user']
@@ -19,6 +19,9 @@ This internal monitor detects when a new Super Admin permission is provisioned t
 ## Target
 
 Global
+
+
+
 
 
 

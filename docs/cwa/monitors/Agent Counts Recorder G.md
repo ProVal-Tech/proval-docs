@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rawsql-monitor-agent-count'
+id: '62a3e31e-a993-42f9-befe-d6649cea5df6'
 title: 'RAWSQL Monitor for Agent Count'
 title_meta: 'RAWSQL Monitor for Agent Count - Track Agent Count Efficiently'
 keywords: ['monitor', 'agent', 'count', 'history', 'custom', 'table']
@@ -19,6 +19,9 @@ The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom ta
 ## Target
 
 Global
+
+
+
 
 
 

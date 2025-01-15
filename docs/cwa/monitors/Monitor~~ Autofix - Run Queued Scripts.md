@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-queued-scripts'
+id: '41b393a9-cb59-4418-8536-9fe911cb4c9d'
 title: 'Monitor for Machines with Queued Scripts'
 title_meta: 'Monitor for Machines with Queued Scripts'
 keywords: ['monitor', 'queued', 'scripts', 'computers', 'alert']
@@ -69,6 +69,9 @@ WHERE
       Tcomp
   )
 ```
+
+
+
 
 
 

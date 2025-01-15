@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reinstall-automate-agent'
+id: 'fc20710b-81b8-4383-a3ad-42ebef9dd930'
 title: 'Reinstall Automate Agent Script'
 title_meta: 'Reinstall Automate Agent Script for Agent ID Discrepancies'
 keywords: ['automate', 'agent', 'ticket', 'reinstall', 'discrepancy']
@@ -62,6 +62,9 @@ Step 4: Create/comment ticket for failure and to finish any open ticket for succ
 
 - Ticket
 - Script logs
+
+
+
 
 
 

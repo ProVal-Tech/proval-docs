@@ -1,12 +1,12 @@
 ---
-id: 'ps-disable-windows-defender-credential-guard'
+id: '6b28c2d7-01b5-4d5d-aefa-0df7fa1b5718'
 title: 'Disable Windows Defender Credential Guard'
 title_meta: 'Disable Windows Defender Credential Guard'
 keywords: ['registry', 'windows', 'defender', 'credential', 'guard', 'reboot']
 description: 'This document provides a script to disable Windows Defender Credential Guard by modifying the registry settings as outlined in a referenced article. It includes a sample run, dependencies, and variable descriptions, ensuring a comprehensive understanding of the script operation and its output.'
 tags: ['configuration', 'windows', 'reboot', 'security']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -31,6 +31,9 @@ Once the registry is set, it will set the machine to reboot using the prompter s
 ## Output
 
 - Script log
+
+
+
 
 
 

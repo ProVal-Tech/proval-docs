@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-dell-supportassist'
+id: 'c8dbc87a-084e-479d-a790-4b29041b0ba4'
 title: 'Uninstall Dell SupportAssist'
 title_meta: 'Uninstall Dell SupportAssist from Windows Machines'
 keywords: ['dell', 'supportassist', 'uninstall', 'windows', 'software']
@@ -25,6 +25,9 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
+
+
+
 
 
 

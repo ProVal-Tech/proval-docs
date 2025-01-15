@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hybrid-ad-joined-machines'
+id: '39e9d048-14cc-4614-b47b-c74e0dd18440'
 title: 'Detect Hybrid AD Joined Machines'
 title_meta: 'Detect Hybrid AD Joined Machines'
 keywords: ['hybrid', 'ad', 'joined', 'machines', 'detection']
@@ -17,6 +17,9 @@ The role detects Hybrid AD Joined Machines.
 | Detection String                                                                                                                                                                              | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : YES*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : YES*')]"}%` | Equals     | True   | Windows        |
+
+
+
 
 
 

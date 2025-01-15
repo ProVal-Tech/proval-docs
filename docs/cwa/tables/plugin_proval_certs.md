@@ -1,5 +1,5 @@
 ---
-id: 'cwa_ssl-certificate-audit'
+id: '44048760-bd04-451d-82ea-b6eee6a03552'
 title: 'SSL Certificate Audit Solution'
 title_meta: 'SSL Certificate Audit Solution for Monitoring and Auditing SSL Certificates'
 keywords: ['ssl', 'certificate', 'audit', 'monitoring', 'data']
@@ -34,6 +34,9 @@ This table is used in the [SSL Certificate Audit Solution](https://proval.itglue
 | CertAdded     | DATETIME                                  | When was the certificate added to the system                        |
 | Expiration    | DATETIME                                  | What is the expiration date of the SSL certificate                  |
 | DateUpdated   | DATETIME                                  | When did the script actually add the information into the DB       |
+
+
+
 
 
 

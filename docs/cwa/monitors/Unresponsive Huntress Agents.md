@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unresponsive-huntress-agent-monitor'
+id: '3c75f8e7-6237-4349-97bb-462fe8d70b54'
 title: 'Unresponsive Huntress Agent Monitor'
 title_meta: 'Unresponsive Huntress Agent Monitor'
 keywords: ['monitor', 'huntress', 'agent', 'orphaned', 'security']
@@ -39,6 +39,9 @@ Windows Machines limiting to machines with Huntress Agents only.
 **Subject:** `Unresponsive Huntress Agent Detected on %COMPUTERNAME%`  
 
 **Body:** `The machine %computername% located at %clientname%//%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.`
+
+
+
 
 
 

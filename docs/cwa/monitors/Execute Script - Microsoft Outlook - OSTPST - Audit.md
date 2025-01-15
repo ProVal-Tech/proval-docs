@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitors-outlook-audit'
+id: 'd801eb05-05a3-4271-aa8c-a8ea4941f4eb'
 title: 'Internal Monitors for Microsoft Outlook OST/PST Audit'
 title_meta: 'Internal Monitors for Microsoft Outlook OST/PST Audit'
 keywords: ['monitoring', 'outlook', 'audit', 'windows', 'script']
@@ -23,6 +23,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
+
+
+
 
 
 

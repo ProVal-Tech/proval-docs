@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-netbios-remote-monitor'
+id: '7cd56a9d-67d5-4d67-a8bf-f61497a93059'
 title: 'Disable NetBIOS on All Network Interfaces'
 title_meta: 'Disable NetBIOS on All Network Interfaces'
 keywords: ['netbios', 'remote', 'monitor', 'windows', 'network']
@@ -37,6 +37,9 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Disable Netbios on Network Interfaces](https://proval.itglue.com/DOC-5078775-13837769)
+
+
+
 
 
 

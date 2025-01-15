@@ -1,5 +1,5 @@
 ---
-id: 'ps-reboot-prompter'
+id: '1aae141d-3854-4dde-b35f-69db58204fed'
 title: 'Reboot Prompter'
 title_meta: 'Reboot Prompter - A PowerShell Script for User Reboot Notifications'
 keywords: ['reboot', 'prompter', 'notification', 'windows', 'script']
@@ -717,6 +717,9 @@ Once all items are added, please save the task. The final task should look like 
 ![Final Task 2](../../../static/img/Reboot-Prompter-(Deprecated)/image_54.png)
 
 ![Final Task 3](../../../static/img/Reboot-Prompter-(Deprecated)/image_55.png)
+
+
+
 
 
 

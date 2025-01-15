@@ -1,5 +1,5 @@
 ---
-id: 'cwa-drive-scan-output'
+id: 'fc919069-1895-4842-9b1e-d13d3f53227b'
 title: 'Drive Scan Output Script'
 title_meta: 'Drive Scan Output Script for Windows and Linux'
 keywords: ['drive', 'scan', 'output', 'script', 'ticket']
@@ -59,6 +59,9 @@ If the script failed and has not gathered the data appropriately it will exit wi
 ## Example Output
 
 ![Example Output](../../../static/img/Space-Auditing-Script/image_2.png)
+
+
+
 
 
 

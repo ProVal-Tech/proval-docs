@@ -1,5 +1,5 @@
 ---
-id: 'cwa_clear_duplicate_entries_scriptstate'
+id: '62c75166-da9a-4b8a-ae44-1be7a7076401'
 title: 'Clear Duplicate Entries from Scriptstate Table'
 title_meta: 'Clear Duplicate Entries from Scriptstate Table'
 keywords: ['duplicate', 'scriptstate', 'sql', 'cleanup', 'database']
@@ -38,6 +38,9 @@ Step 1: Fetches the total number of duplicate entries per scriptid per computeri
 Step 2: Exits, if the total number of results in the above step is zero.  
 
 Step 3: Runs a loop to delete all the duplicate entries for each Script state per computer per script.
+
+
+
 
 
 

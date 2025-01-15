@@ -1,5 +1,5 @@
 ---
-id: 'vsa-import-procedure-xml'
+id: '65e85bb2-14cc-4c52-bf87-453dc1784bbd'
 title: 'Import the Procedure XML'
 title_meta: 'Import the Procedure XML for ProVal Automation'
 keywords: ['xml', 'procedure', 'import', 'proval', 'managedfiles']
@@ -11,6 +11,9 @@ unlisted: false
 Import the Procedure XML  
 Import the PS1 to Managedfiles/Shared/ProValAutomation  
 Add Machine CF **xPVAL Windows 10 Build Result**  
+
+
+
 
 
 

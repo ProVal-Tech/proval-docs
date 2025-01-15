@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-update-policy-report'
+id: 'dd58d567-cc2a-4d71-831b-32f4079c2534'
 title: 'Microsoft Update Policy Report'
 title_meta: 'Microsoft Update Policy Report'
 keywords: ['microsoft', 'update', 'policy', 'report', 'machines']
@@ -30,6 +30,9 @@ This dataview displays any machines where the Microsoft update policy is not set
 | Patch Exclusion Checkbox           | Displays whether the `Disable Automated Patch Install` EDF is `Checked` or `Unchecked`         |
 | Cluster Role Detected              | Displays whether the cluster role detected is True                                             |
 | LastUserName                       | Displays the Last username of the machine                                                      |
+
+
+
 
 
 

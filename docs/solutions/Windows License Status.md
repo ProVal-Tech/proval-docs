@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-license-status'
+id: '3020781e-8710-4582-b4f5-83f963523536'
 title: 'Windows License Status Monitoring Solution'
 title_meta: 'Windows License Status Monitoring Solution'
 keywords: ['windows', 'license', 'monitor', 'status', 'ticket']
@@ -37,6 +37,9 @@ The purpose of this solution is to pull the Windows License Status from the comp
 **4.** If ticketing is desired for when a machine has an issue with their Windows license: (The consultant should specify this)  
 - Apply the following alert template to the remote monitor:  
   - `△ Custom - Ticket Creation Computer - Warning and Failed`  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-creation-client'
+id: 'eb53c8e9-ec2f-4efe-a36c-eeb3f8487981'
 title: 'Client-Level Ticket Creation Script'
 title_meta: 'Client-Level Ticket Creation Script for ConnectWise Automate'
 keywords: ['ticket', 'client', 'creation', 'alert', 'monitor']
@@ -22,6 +22,9 @@ It is imperative to incorporate the `Clientid` in the SQL query of a RAWSQL moni
 
 - Script Log
 - Client-level Ticket
+
+
+
 
 
 

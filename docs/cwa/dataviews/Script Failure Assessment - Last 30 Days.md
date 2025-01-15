@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-failure-analysis-30-day'
+id: '4a4d8ffa-760b-4e17-a377-df522ff0ba34'
 title: 'Script Failure Analysis - 30 Day Retention'
 title_meta: 'Script Failure Analysis - 30 Day Retention'
 keywords: ['script', 'failure', 'analysis', 'retention', 'dataview']
@@ -40,6 +40,9 @@ This Dataview is similar to the [Script Failure Assessment](https://proval.itglu
 | First Failure Date           | First Failure Date                                                                                 |
 | Last Failure Date            | Last Failure Date                                                                                  |
 | Time Period Days             | Number of days since the data collection started                                                   |
+
+
+
 
 
 

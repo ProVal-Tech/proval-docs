@@ -1,5 +1,5 @@
 ---
-id: 'rmm-out-of-date-cu-autofix'
+id: '044210c4-14ae-4996-ab9f-009290bf05e4'
 title: 'Out of Date Cumulative Update Autofix'
 title_meta: 'Out of Date Cumulative Update Autofix'
 keywords: ['cumulative', 'update', 'install', 'date', 'task']
@@ -22,6 +22,9 @@ Stores the install date of the latest CU performed by the Out of Date Cumulative
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Date/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Date/image_2.png)  
+
+
+
 
 
 

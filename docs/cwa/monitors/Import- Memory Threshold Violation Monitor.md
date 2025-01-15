@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-setup'
+id: 'b630e3e4-3268-42ae-a8e6-c9228968f5cc'
 title: 'Remote Monitor Setup for Memory Threshold Violation'
 title_meta: 'Remote Monitor Setup for Memory Threshold Violation'
 keywords: ['monitor', 'memory', 'threshold', 'violation', 'setup', 'query']
@@ -218,6 +218,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

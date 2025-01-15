@@ -1,5 +1,5 @@
 ---
-id: 'cwa-simple-notification-app'
+id: '165a2ce7-105e-41f5-a4b1-48f362515b31'
 title: 'Simple Notification App [Param]'
 title_meta: 'Simple Notification App [Param]'
 keywords: ['notification', 'branding', 'message', 'custom', 'image', 'script', 'automation']
@@ -387,6 +387,9 @@ Click the `Run` button to initiate the schedule.
 ## Output
 
 - Script log
+
+
+
 
 
 

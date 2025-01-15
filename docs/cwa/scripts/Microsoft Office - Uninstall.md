@@ -1,5 +1,5 @@
 ---
-id: 'cwa-office-scrub-utility'
+id: 'dd794f2d-7327-4d84-bda5-7d005b68a039'
 title: 'Office Scrub Utility for Microsoft Products'
 title_meta: 'Office Scrub Utility for Microsoft Products'
 keywords: ['office', 'uninstall', 'utility', 'microsoft', 'script', 'automation']
@@ -48,6 +48,9 @@ Based on the version input by the technician, the script will jump to the approp
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

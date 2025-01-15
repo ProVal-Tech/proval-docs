@@ -1,5 +1,5 @@
 ---
-id: 'rmm-detect-smb1'
+id: 'f5a58819-dcc7-4905-a3b5-52ff73751e21'
 title: 'Detect SMB1 on Windows Machines'
 title_meta: 'Detect SMB1 on Windows Machines'
 keywords: ['smb1', 'windows', 'custom', 'field', 'script', 'task']
@@ -156,6 +156,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - custom field - [CW RMM - Custom Field - SMB1 Enabled](https://proval.itglue.com/DOC-5078775-14419753)
+
+
+
 
 
 

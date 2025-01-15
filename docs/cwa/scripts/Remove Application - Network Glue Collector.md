@@ -1,5 +1,5 @@
 ---
-id: 'cwa-network-glue-collector-uninstallation'
+id: '201f46d7-6511-4e5f-a002-ff7f4b27c8be'
 title: 'Network Glue Collector Uninstallation Script'
 title_meta: 'Network Glue Collector Uninstallation Script'
 keywords: ['uninstallation', 'network', 'collector', 'script', 'automation']
@@ -63,6 +63,9 @@ This script is built to perform the Network Glue Collector uninstallation on dem
 
 **Example:**  
 ![Example](../../../static/img/Remove-Application---Network-Glue-Collector/image_2.png)
+
+
+
 
 
 

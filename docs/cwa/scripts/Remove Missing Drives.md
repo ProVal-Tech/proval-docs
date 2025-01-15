@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-drives-script'
+id: '2bd7d0b7-7bcb-41aa-be70-2f3ebc2cea6a'
 title: 'Remove Drives Script'
 title_meta: 'Remove Drives Script for Unlisted Machines'
 keywords: ['drives', 'sql', 'database', 'cleanup', 'detection']
@@ -21,6 +21,9 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - The script runs SQL query against the database to delete the drives from the machines that are still listed but no longer detected on them.
+
+
+
 
 
 

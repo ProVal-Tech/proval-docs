@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dell-hp-server-management-software'
+id: 'd2d35bf1-52bc-41da-9802-76699c5d29bd'
 title: 'Dell and HP Server Management Software Dataview'
 title_meta: 'Dell and HP Server Management Software Dataview'
 keywords: ['dell', 'hp', 'servers', 'management', 'software', 'dataview']
@@ -30,6 +30,9 @@ None
 | DateInstalled     | Shows when the software was installed                                        |
 | Size              | Shows the total size of the installed application                             |
 | Version           | Shows the version of the management software installed on the machine        |
+
+
+
 
 
 

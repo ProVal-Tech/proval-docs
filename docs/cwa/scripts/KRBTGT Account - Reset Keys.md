@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reset-krbtgt-account'
+id: 'a6e7a255-6d3e-4c00-bea0-636533914cbc'
 title: 'Reset KRBTGT Active Directory Account'
 title_meta: 'Reset KRBTGT Active Directory Account'
 keywords: ['active-directory', 'reset', 'krbtgt', 'account', 'script']
@@ -36,6 +36,9 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](https://proval.itglue
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

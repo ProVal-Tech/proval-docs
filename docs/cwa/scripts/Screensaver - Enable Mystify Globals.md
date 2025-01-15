@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-screensaver-scheduled-task'
+id: 'a94dc919-d39c-4787-a585-ae2dc9456d12'
 title: 'Enable Screensaver Scheduled Task'
 title_meta: 'Enable Screensaver Scheduled Task'
 keywords: ['screensaver', 'scheduled', 'task', 'login', 'timeout']
@@ -32,6 +32,9 @@ The script will run a PowerShell script to create a scheduled task that will ena
 ## Output
 
 - Script log
+
+
+
 
 
 

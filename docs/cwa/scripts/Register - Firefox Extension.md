@@ -1,5 +1,5 @@
 ---
-id: 'cwa-register-firefox-extension'
+id: '9e2b2dfa-acae-49a0-9f71-0df914c81a8b'
 title: 'Register Firefox Extension'
 title_meta: 'Register Firefox Extension for N-Able Passportal'
 keywords: ['firefox', 'extension', 'n-able', 'installation', 'protection']
@@ -39,6 +39,9 @@ Please Review the agnostic content for specifics on the process.
 ## Output
 
 - Script log
+
+
+
 
 
 

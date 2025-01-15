@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-status-and-key'
+id: 'a7785954-5a6d-4003-9d0e-c919e1a96b0c'
 title: 'BitLocker Status and Key Custom Field'
 title_meta: 'BitLocker Status and Key Custom Field'
 keywords: ['bitlocker', 'encryption', 'custom', 'field', 'status', 'key']
@@ -24,6 +24,9 @@ This custom field is used to display the BitLocker encryption status of drives b
 - **Level:** Endpoint
 - **Description:** This will show drives that are encrypted with BitLocker and will display the recovery key if available.
 - **Editable:** Yes
+
+
+
 
 
 

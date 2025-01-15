@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-ntlmv1.1'
+id: 'e1e20509-bc51-4b66-8653-d3ab91baad47'
 title: 'Disable NTLMv1.1 Detection and Remediation'
 title_meta: 'Disable NTLMv1.1 Detection and Remediation'
 keywords: ['ntlm', 'detection', 'remediation', 'security', 'protocol']
@@ -30,6 +30,9 @@ The goal of this solution is to detect and disable NTLMv1.1.
 - Import - [Script - Disable NTLMv1.1](https://proval.itglue.com/DOC-5078775-14448793).
   - This script can be used as an auto fix with the [Remote Monitor - NTLMv1.1 Detection](https://proval.itglue.com/DOC-5078775-14448809) or can also be executed manually.
   - If the auto fix is needed, import the alert template: `△ Custom - Autofix - Disable NTLMv1.1`.
+
+
+
 
 
 

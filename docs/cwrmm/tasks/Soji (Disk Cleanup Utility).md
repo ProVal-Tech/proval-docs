@@ -1,5 +1,5 @@
 ---
-id: 'rmm-soji-disk-cleanup-utility'
+id: 'a1d8f066-b016-4654-b855-891518d1f1da'
 title: 'Soji Disk Cleanup Utility for CW RMM'
 title_meta: 'Soji Disk Cleanup Utility for CW RMM'
 keywords: ['disk', 'cleanup', 'utility', 'windows', 'rmm']
@@ -249,6 +249,9 @@ Click the `Save` button to save the Task.
 - Script Log
 
 ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
+
+
+
 
 
 

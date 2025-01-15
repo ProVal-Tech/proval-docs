@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-cw-control'
+id: 'd69c20e1-e605-4cf9-bf35-bbe4c74f134f'
 title: 'Uninstall CW Control'
 title_meta: 'Uninstall CW Control Script'
 keywords: ['uninstall', 'cw', 'control', 'rmm', 'script']
@@ -35,6 +35,9 @@ Time Saved by Automation: 10 Minutes
 
 - Script log
 - Ticket if failure found
+
+
+
 
 
 

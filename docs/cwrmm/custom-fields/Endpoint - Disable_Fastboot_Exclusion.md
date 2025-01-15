@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-fastboot-exclusion'
+id: 'b17237cc-d3cf-42a9-84fe-eda8d00bdd19'
 title: 'Disable Fastboot Exclusion'
 title_meta: 'Disable Fastboot Exclusion'
 keywords: ['fastboot', 'exclusion', 'endpoint', 'solution']
@@ -22,6 +22,9 @@ Check this box to exclude the computer from the solution that disables fastboot.
 
 ![Screenshot 1](../../../static/img/Endpoint---Disable_Fastboot_Exclusion/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---Disable_Fastboot_Exclusion/image_2.png)
+
+
+
 
 
 

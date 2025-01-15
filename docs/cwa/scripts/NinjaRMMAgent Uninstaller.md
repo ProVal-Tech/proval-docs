@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-ninjarmagent'
+id: '52254d14-bc24-4f32-bb3c-7447756ec15f'
 title: 'Uninstall NinjaRMMAgent Script'
 title_meta: 'Uninstall NinjaRMMAgent Script - ConnectWise Automate'
 keywords: ['uninstall', 'ninjarmagent', 'script', 'ticketing', 'failure']
@@ -26,6 +26,9 @@ The script tries to uninstall NinjaRMMAgent from the machine. If the global vari
 
 - Script Log
 - Ticket
+
+
+
 
 
 

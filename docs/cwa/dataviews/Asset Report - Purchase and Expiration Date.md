@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-cwm-configurations'
+id: '931fbe83-9616-4ae2-b7ae-128538a5fa73'
 title: 'Dataview for CWM Configurations'
 title_meta: 'Dataview for CWM Configurations'
 keywords: ['dataview', 'cwm', 'configurations', 'managed', 'active']
@@ -37,6 +37,9 @@ Dataview displays the information gathered by [CWM - Automate - Script - Get CWM
 | Model Number             | Computer's Model (From CW Manage)                       |
 | Serial Number            | Serial Number of computer (Hidden)                      |
 | Data Collection Time     | Data Collection Time                                     |
+
+
+
 
 
 

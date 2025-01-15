@@ -6,7 +6,7 @@ keywords: ['vsa', 'customfields', 'client', 'environment']
 description: 'Documentation for the Initialize-VsaAgentFields command to write the ProVal Stack Machine Custom Fields to a new client environment.'
 tags: []
 draft: false
-unlisted: true
+unlisted: false
 ---
 ## Description
 Writes the ProVal Stack Machine Custom Fields to a new client environment
@@ -34,4 +34,7 @@ Uses VSAAPI module to interface with client environment, setting new CustomField
    
 Initialize-VsaAgentFields-Log.txt
 Initialize-VsaAgentFields-error.txt
+
+
+
 

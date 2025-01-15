@@ -1,5 +1,5 @@
 ---
-id: 'cwa-nordpass-install-update'
+id: '3a6c9e09-ddf8-4ae4-a909-0125ee8f21a2'
 title: 'NordPass Installation and Update Script'
 title_meta: 'NordPass Installation and Update Script'
 keywords: ['nordpass', 'installation', 'update', 'script', 'ticketing']
@@ -82,6 +82,9 @@ S/N OF PC: @biosver@
 If the update fails, you can try manually installing NordPass on your machine by following the instructions provided in the link below:  
 [Installing NordPass on Windows](https://support.nordpass.com/hc/en-us/articles/360004799257-Installing-NordPass-on-Windows)  
 This guide will walk you through the steps to install NordPass on your Windows system.
+
+
+
 
 
 

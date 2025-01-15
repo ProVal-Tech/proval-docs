@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-certificate-script'
+id: '57e85773-11e3-46db-97f1-5aae835cfd62'
 title: 'Install Certificate Script for Windows and MAC'
 title_meta: 'Install Certificate Script for Windows and MAC'
 keywords: ['certificate', 'windows', 'mac', 'install', 'root', 'trusted', 'keychain', 'location']
@@ -36,6 +36,9 @@ Provide the direct download URL for the Certificate in the User parameter and it
 
 *The download URL should be something like*  
 *[https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer](https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer)*
+
+
+
 
 
 

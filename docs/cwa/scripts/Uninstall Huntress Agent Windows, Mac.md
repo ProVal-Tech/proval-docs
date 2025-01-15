@@ -1,5 +1,5 @@
 ---
-id: 'ps-uninstall-huntress-agent'
+id: '12c94448-10eb-4523-85e6-6c4cde84a33c'
 title: 'Uninstall Huntress Agent Script'
 title_meta: 'Uninstall Huntress Agent Script'
 keywords: ['uninstall', 'huntress', 'agent', 'windows', 'macintosh']
@@ -38,6 +38,9 @@ This script can be used to uninstall Huntress Agent from both Windows and Macint
 ## Output
 
 - Script log
+
+
+
 
 
 

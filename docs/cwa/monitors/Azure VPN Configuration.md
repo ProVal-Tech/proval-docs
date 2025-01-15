@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-azure-vpn-configuration'
+id: '3411cd85-0769-4241-93b3-8df35af3d9f6'
 title: 'Check Azure VPN Configuration'
 title_meta: 'Check Azure VPN Configuration for Compassus Workstations'
 keywords: ['azure', 'vpn', 'configuration', 'monitor', 'compassus']
@@ -27,6 +27,9 @@ If using this Remote monitor, we should have an autofix action set up to run the
 ## Target
 
 The targeted group will be explicitly chosen by the client but should be limited to Compassus.
+
+
+
 
 
 

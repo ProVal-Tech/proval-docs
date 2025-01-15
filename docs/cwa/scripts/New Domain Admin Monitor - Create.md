@@ -1,5 +1,5 @@
 ---
-id: 'cwa-creating-remote-monitors-for-domain-admins'
+id: '73adabc6-03cb-4979-9c62-97acc98308da'
 title: 'Creating Remote Monitors for New Domain Administrators'
 title_meta: 'Creating Remote Monitors for New Domain Administrators'
 keywords: ['remote', 'monitors', 'domain', 'administrators', 'windows', 'alerts']
@@ -125,6 +125,9 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
+
+
+
 
 
 

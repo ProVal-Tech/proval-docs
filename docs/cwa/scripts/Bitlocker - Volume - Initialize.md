@@ -1,5 +1,5 @@
 ---
-id: 'cwa-encrypt-drive-with-bitlocker'
+id: '759a5a88-17ef-42e0-9145-4760aff7a3c9'
 title: 'Encrypt Drive with Bitlocker'
 title_meta: 'Encrypt Drive with Bitlocker'
 keywords: ['bitlocker', 'encryption', 'drive', 'tpm', 'recovery']
@@ -88,6 +88,9 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

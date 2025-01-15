@@ -1,5 +1,5 @@
 ---
-id: 'rmm-upgrade-enabled-windows-11-compatible-machines'
+id: '9c422249-e949-4bcd-83ea-2c91b8365a96'
 title: 'Upgrade Enabled Windows 11 Compatible Machines'
 title_meta: 'Upgrade Enabled Windows 11 Compatible Machines'
 keywords: ['windows', 'upgrade', 'group', 'installation', 'compatible']
@@ -97,6 +97,9 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
 
 ![Completed Group 1](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_23.png)  
 ![Completed Group 2](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_24.png)
+
+
+
 
 
 

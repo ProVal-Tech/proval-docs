@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-disk-critical-info'
+id: '7a224177-45ff-4f2e-a8fe-a734a642a539'
 title: 'EPM Disk Critical Information'
 title_meta: 'EPM Disk Critical Information'
 keywords: ['disk', 'critical', 'info', 'data', 'monitoring']
@@ -58,6 +58,9 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](https://proval.
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the Date of the last check                 |
+
+
+
 
 
 

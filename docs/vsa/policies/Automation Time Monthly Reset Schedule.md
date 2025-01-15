@@ -1,5 +1,5 @@
 ---
-id: 'vsa-automation-time-monthly-reset-schedule'
+id: 'a49d1e3f-e2d8-444d-a4fc-fd91bccea30c'
 title: 'Automation Time Monthly Reset Schedule'
 title_meta: 'Automation Time Monthly Reset Schedule'
 keywords: ['schedule', 'reset', 'cf', 'field', 'monthly', 'automation', 'policy']
@@ -28,6 +28,9 @@ Schedules the Monthly CF Field Reset AP.
   - **Policy Object Settings**:
     - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](https://proval.itglue.com/DOC-5078775-11143679)
       - **Policy Object Member Settings**: Monthly, 1st day, midnight, do not SiO
+
+
+
 
 
 

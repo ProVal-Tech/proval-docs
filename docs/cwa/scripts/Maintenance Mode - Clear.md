@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bulk-clear-maintenance-mode'
+id: 'd7f09bd1-6c13-49a4-af0e-87d9ab3f279b'
 title: 'Bulk Clear Maintenance Mode Script'
 title_meta: 'Bulk Clear Maintenance Mode Script for ConnectWise Automate'
 keywords: ['bulk', 'clear', 'maintenance', 'mode', 'script']
@@ -29,6 +29,9 @@ The script will run the command to remove Maintenance mode from the target machi
 ## Output
 
 - Script log
+
+
+
 
 
 

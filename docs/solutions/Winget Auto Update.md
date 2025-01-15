@@ -1,5 +1,5 @@
 ---
-id: 'cwa_winget_auto_update_implementation'
+id: '92b2ccf2-534f-46b6-b1d1-dd77dea47ba8'
 title: 'Winget Auto Update Implementation Guide'
 title_meta: 'Winget Auto Update Implementation Guide'
 keywords: ['winget', 'auto', 'update', 'audit', 'monitor']
@@ -77,6 +77,9 @@ The solution aims to keep the winget supported updated and report the current st
      - [Internal Monitor - Execute Script - Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973898)  
        - Alert Template - `△ Custom - Execute Script - Configure Winget Auto Update`
        - Right-click and Run Now to start the monitor
+
+
+
 
 
 

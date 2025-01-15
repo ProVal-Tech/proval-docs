@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-audit-activities'
+id: '7b4c5967-f117-4305-a230-cc88bc5061e2'
 title: 'User Audit Activities in Automate'
 title_meta: 'User Audit Activities in Automate - Last 7 Days Overview'
 keywords: ['audit', 'activities', 'users', 'automate', 'dataview']
@@ -20,6 +20,9 @@ This Dataview provides the audit activities of the users in Automate for the las
 | Audit Action | Displays the action performed by the user      |
 | Message      | Displays the exact message what was done       |
 | HistoryDate  | Displays the date of the action taken by the user |
+
+
+
 
 
 

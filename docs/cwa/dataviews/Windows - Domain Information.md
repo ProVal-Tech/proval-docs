@@ -1,5 +1,5 @@
 ---
-id: 'cwa-domain-joined-status'
+id: '18505efc-1e3d-4d75-97d9-6c10e5de540f'
 title: 'Domain Joined Status Overview'
 title_meta: 'Domain Joined Status Overview'
 keywords: ['domain', 'azure', 'hybrid', 'drs', 'on-prem', 'status']
@@ -33,6 +33,9 @@ This dataview shows you how a computer is domain joined (or not domain joined) t
 | Microsoft - Hybrid AD Joined       | Joined | Not Joined if the machine is Hybrid AD joined                 |
 | Microsoft - On-premises DRS Joined | Joined | Not Joined if the machine is Device Registration Service (DRS) AD joined |
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
+
+
+
 
 
 

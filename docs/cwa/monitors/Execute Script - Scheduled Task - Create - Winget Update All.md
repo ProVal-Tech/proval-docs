@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-update-all-autofix'
+id: '2f324c74-1e32-4c48-b567-abbeebdabe6d'
 title: 'Scheduled Task Creation for Winget Update All'
 title_meta: 'Scheduled Task Creation for Winget Update All'
 keywords: ['scheduled', 'task', 'winget', 'update', 'windows']
@@ -30,6 +30,9 @@ Managed Windows Workstations
 **Name**: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
 
 The alert template executes the [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195)
+
+
+
 
 
 

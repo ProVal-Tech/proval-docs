@@ -1,5 +1,5 @@
 ---
-id: 'ps-dell-command-update-deploy'
+id: '1653896a-517c-4f19-ad8a-affffd6e0bee'
 title: 'Deploying Dell Command | Update to Endpoint'
 title_meta: 'Deploying Dell Command | Update to Endpoint'
 keywords: ['dell', 'update', 'deploy', 'endpoint', 'procedure']
@@ -85,6 +85,9 @@ Dell Command Update Logs: C:/ProgramData/Dell/Logs
 
 - scan.log
 - applyupdates.log
+
+
+
 
 
 

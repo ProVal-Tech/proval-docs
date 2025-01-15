@@ -1,5 +1,5 @@
 ---
-id: 'cwa-restart-cwafileservice-invalid-token'
+id: '3ccd3348-558b-41c3-8a81-c65fae2cf04e'
 title: 'Restart CWAFileService on Invalid Authorization Token'
 title_meta: 'Restart CWAFileService on Invalid Authorization Token'
 keywords: ['restart', 'service', 'authorization', 'token', 'monitor']
@@ -41,6 +41,9 @@ The %computername% (Automate) Server is currently reporting %result% occurrence'
 
 Follow the below article:  
 - [Import - Remote Monitors - CWAFileService - Invalid Token](https://proval.itglue.com/DOC-5078775-15398919)
+
+
+
 
 
 

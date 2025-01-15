@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-symantec-agent'
+id: '47db6b3a-66e5-4ede-bc9f-7dfd3015608c'
 title: 'Install Symantec Agent on Windows'
 title_meta: 'Install Symantec Agent on Windows'
 keywords: ['symantec', 'agent', 'windows', 'installation', 'software']
@@ -30,6 +30,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

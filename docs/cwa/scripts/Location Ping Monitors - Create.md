@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remote-monitors-location-ping'
+id: 'c9c8a58e-fd25-4596-822c-b6847c782e9c'
 title: 'Setting Up Remote Monitors for Location Ping'
 title_meta: 'Setting Up Remote Monitors for Location Ping'
 keywords: ['remote', 'monitors', 'location', 'ping', 'setup', 'alert']
@@ -94,6 +94,9 @@ This document details the procedure for setting up Remote Monitors for Location 
 ## Output
 
 - Remote Monitors
+
+
+
 
 
 

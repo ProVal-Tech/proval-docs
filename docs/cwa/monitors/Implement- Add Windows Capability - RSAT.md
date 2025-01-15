@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementation-steps-for-rsat'
+id: 'b927b474-abad-4e84-8f39-8995d5ace913'
 title: 'Implementation Steps for RSAT'
 title_meta: 'Implementation Steps for RSAT'
 keywords: ['rsat', 'groupid', 'query', 'monitor', 'alert', 'automation']
@@ -101,6 +101,9 @@ Now execute your query from a RAWSQL monitor set.
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.  
 While assigning the alert template ensure that it's not performing any actions for WARNINGS unless you want to be notified for the PowerShell errors as well.
+
+
+
 
 
 

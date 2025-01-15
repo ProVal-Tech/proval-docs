@@ -1,5 +1,5 @@
 ---
-id: 'rmm-out-of-date-cu-autofix-required'
+id: '7ef49988-2b75-441e-9373-bda734a03ea1'
 title: 'Out of Date CU - Autofix Required'
 title_meta: 'Out of Date CU - Autofix Required'
 keywords: ['cumulative', 'update', 'autofix', 'group', 'criteria']
@@ -213,6 +213,9 @@ Click the `Save` button to save/create the group.
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_46.png)
 
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_47.png)
+
+
+
 
 
 

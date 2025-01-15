@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hp-ilo-health-report'
+id: 'd6e5e2a7-ecb8-4262-92a1-cc322b4af3b6'
 title: 'HP iLO Health Report Table'
 title_meta: 'HP iLO Health Report Table Documentation'
 keywords: ['hp', 'ilo', 'health', 'report', 'device', 'status']
@@ -50,6 +50,9 @@ This table stores health information about HP iLO devices. It is filled by the s
 | StatusInfo                   | VARCHAR  | Additional information about the overall iLO status.  |
 | LastRun                      | DATETIME | The last time the Script was run.                     |
 | Computerid                   | INT      | Computerid                                           |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-details-overview'
+id: 'c5c0f740-2981-4557-9fcc-dd2f863a1240'
 title: 'Script Details Overview'
 title_meta: 'Script Details Overview'
 keywords: ['scripts', 'details', 'permissions', 'guid', 'automation', 'maintenance', 'function', 'client', 'update']
@@ -33,6 +33,9 @@ This dataview will list all scripts in the environment with details about their 
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-List/image_4.png)
+
+
+
 
 
 

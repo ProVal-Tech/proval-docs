@@ -1,5 +1,5 @@
 ---
-id: 'cwa-logoff-users'
+id: '35c948fc-300e-437b-8338-69175b6a4afa'
 title: 'Log Off User Script'
 title_meta: 'Log Off User Script'
 keywords: ['logoff', 'users', 'script', 'automation', 'windows']
@@ -32,6 +32,9 @@ Setting the user parameter to All will log off all users.
 
 Determine the scope  
 Log off the desired user or users.
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'cwa-install-update-office-365'
+id: '079df125-ee1f-46d0-a660-b16fca648ac9'
 title: 'Install or Update Microsoft Office 365'
 title_meta: 'Install or Update Microsoft Office 365 on the Current Channel'
 keywords: ['install', 'update', 'microsoft', 'office', 'configuration', 'xml', 'drrm', 'deployment']
 description: 'This document provides a comprehensive guide on installing or updating Microsoft Office 365 using a preconfigured DRRMConfig.xml file. It outlines the requirements, process, and implementation steps necessary to ensure a successful installation on Windows environments.'
 tags: ['configuration', 'software', 'windows', 'update']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Overview
 
@@ -77,6 +77,9 @@ Location of output for log, result, and error files.
 ```
 StdERR / StdOut
 ```
+
+
+
 
 
 

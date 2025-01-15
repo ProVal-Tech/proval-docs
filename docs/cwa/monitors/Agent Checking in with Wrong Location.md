@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-set-location-detection'
+id: 'b8313365-d95d-41bd-b2fc-e3e77f4fdcf7'
 title: 'Monitor Set for Location Detection'
 title_meta: 'Monitor Set for Location Detection'
 keywords: ['monitor', 'location', 'router', 'ip', 'address', 'detection']
@@ -31,6 +31,9 @@ Sample Screenshot for single unquoted router address:
 ## Target
 
 Global
+
+
+
 
 
 

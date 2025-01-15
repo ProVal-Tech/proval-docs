@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-system-restore'
+id: '5263a1ab-49c0-49f0-a5b5-9f9062229b86'
 title: 'Enable System Restore on Windows Workstations'
 title_meta: 'Enable System Restore on Windows Workstations'
 keywords: ['system', 'restore', 'windows', 'workstations', 'script']
@@ -40,6 +40,9 @@ The script will run a PowerShell command that will enable System Restore on the 
 ## Output
 
 - Script log message only
+
+
+
 
 
 

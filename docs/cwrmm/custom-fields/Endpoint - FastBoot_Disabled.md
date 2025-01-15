@@ -1,5 +1,5 @@
 ---
-id: 'rmm-fastboot-disabled-indicator'
+id: '3c87c303-e892-4f6b-889f-acde66928978'
 title: 'FastBoot Disabled Indicator'
 title_meta: 'FastBoot Disabled Indicator'
 keywords: ['fastboot', 'disabled', 'endpoint', 'flag']
@@ -22,6 +22,9 @@ Indicates that FastBoot has been disabled on the computer.
 
 ![Screenshot 1](../../../static/img/Endpoint---FastBoot_Disabled/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---FastBoot_Disabled/image_2.png)
+
+
+
 
 
 

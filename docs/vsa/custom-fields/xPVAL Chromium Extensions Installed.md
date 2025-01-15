@@ -1,5 +1,5 @@
 ---
-id: 'vsa-chromium-extensions-audit'
+id: 'a53c455b-5dc1-4719-ab77-8df0982a73a8'
 title: 'Chromium Extensions Audit'
 title_meta: 'Chromium Extensions Audit'
 keywords: ['chromium', 'extensions', 'audit', 'endpoint', 'installed']
@@ -22,6 +22,9 @@ Lists all Chromium extensions installed on the endpoint
 | Field Name                           | Type of Field (Machine or Organization) | Description                                   |
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
 | xPVAL Chromium Extensions Installed   | Mach                                    | Lists all Chromium extensions installed on the endpoint |
+
+
+
 
 
 

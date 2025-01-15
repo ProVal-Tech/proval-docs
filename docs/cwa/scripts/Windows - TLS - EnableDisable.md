@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-disable-tls'
+id: '30fcf92d-cb2b-4fc6-bc7a-c43d393ce33d'
 title: 'Enable or Disable TLS Versions'
 title_meta: 'Enable or Disable TLS Versions in Windows'
 keywords: ['tls', 'registry', 'encryption', 'crypto', 'windows']
@@ -39,6 +39,9 @@ To disable TLS 1.0, and TLS 1.1 and to enable TLS 1.2, and TLS 1.3 along with th
 ## Output
 
 - Script log
+
+
+
 
 
 

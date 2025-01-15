@@ -1,5 +1,5 @@
 ---
-id: 'rmm-cyrisma-custom-fields'
+id: '2d448750-129b-4cff-aaf1-e73d2a296418'
 title: 'Cyrisma Custom Fields for Deployment and Audit'
 title_meta: 'Cyrisma Custom Fields for Deployment and Audit'
 keywords: ['cyrisma', 'deployment', 'audit', 'custom', 'fields']
@@ -23,6 +23,9 @@ The below custom fields are used in the Cyrisma deployment and audit.
 | Cryisma_Status      | Endpoint                                | It stores the [CW RMM - CRI Agent Deployment](https://proval.itglue.com/DOC-5078775-15298955) task execution status |
 | CryismaAgnent_Key   | Site                                    | This stores the site key for the Cyrisma Deployment                        |
 | CryismaAgent_URL    | Site                                    | This stores the unique site URL for the Cyrisma Deployment                 |
+
+
+
 
 
 

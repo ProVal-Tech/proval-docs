@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dell-command-update-monitor-set'
+id: 'cbdea50e-32ca-413e-863d-bbf15836cb1b'
 title: 'Dell Command Update Monitor Set'
 title_meta: 'Dell Command Update Monitor Set for Weekly Execution on Dell Workstations'
 keywords: ['dell', 'monitor', 'update', 'workstation', 'windows']
@@ -21,6 +21,9 @@ Alert Template: Dell Command Update - Run Scan Command
 ## Target
 
 The SQL query is limiting it to Dell Workstations running Windows 10 or Windows 11.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-display-scaling'
+id: '8b3db9bc-3acc-40fb-96e3-9f6c271a2591'
 title: 'Set Display Scaling for Windows Machines'
 title_meta: 'Set Display Scaling for Windows Machines'
 keywords: ['display', 'scaling', 'windows', 'custom', 'script']
@@ -147,6 +147,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
+
 
 
 

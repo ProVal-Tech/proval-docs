@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-cluster-shared-volume-detection'
+id: '2fee5750-3a75-4256-b1b6-fcf2b81dccd6'
 title: 'Windows Cluster Shared Volume Detection'
 title_meta: 'Windows Cluster Shared Volume Detection'
 keywords: ['windows', 'cluster', 'shared', 'volume', 'detection', 'monitoring']
@@ -91,6 +91,9 @@ unlisted: false
 4. Re-open the group where the monitor is created (It should be the `Cluster Detected` group)
    - Validate that the monitor is limited to the search 'Windows 10/11 Machines'
    - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`
+
+
+
 
 
 

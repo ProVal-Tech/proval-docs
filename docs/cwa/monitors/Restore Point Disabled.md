@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rawsql-monitor-restore-point-disabled'
+id: 'fab83c9f-6972-4f29-bf35-175422395d00'
 title: 'RAWSQL Monitor for Disabled Restore Points'
 title_meta: 'RAWSQL Monitor for Disabled Restore Points'
 keywords: ['monitor', 'restore', 'point', 'disabled', 'workstations']
@@ -20,6 +20,9 @@ This is a RAWSQL monitor that detects machines where the restore point is curren
 ## Target
 
 Workstations
+
+
+
 
 
 

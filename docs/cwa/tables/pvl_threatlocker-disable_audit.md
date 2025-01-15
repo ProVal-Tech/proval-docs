@@ -1,5 +1,5 @@
 ---
-id: 'cwa-threatlocker-set-learning-mode'
+id: '7367ea61-b4bf-4449-b7dd-a68569dc7b75'
 title: 'Threatlocker - Set Learning Mode Data Table'
 title_meta: 'Threatlocker - Set Learning Mode Data Table'
 keywords: ['threatlocker', 'learning', 'data', 'audit', 'logs']
@@ -30,6 +30,9 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | LearningModeDuration  | INT      | This stores the number of hours for which the threatlocker learning mode is set.                                 |
 | Status               | VARCHAR  | This stores either "Success" or "Failed" for the learning mode set result.                                      |
 | LogRecord            | VARCHAR  | This stores the logs of script success or failure.                                                                |
+
+
+
 
 
 

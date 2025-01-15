@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-license-status'
+id: 'a7c4b9ab-0216-4d04-8480-9e9eac8c4c07'
 title: 'Windows License Status Monitoring'
 title_meta: 'Windows License Status Monitoring'
 keywords: ['windows', 'license', 'monitoring', 'status', 'client', 'location', 'computer', 'operating', 'contact', 'data', 'collection']
@@ -30,6 +30,9 @@ This will display the status of the Windows License fetched by the remote monito
 | Last Contact           | Last Contact of the computer                                      |
 | Data Collection Time    | The time when the Windows License Status was fetched             |
 | Windows License Status  | The status of the windows license if it is got expired or about to expired or is licensed. |
+
+
+
 
 
 

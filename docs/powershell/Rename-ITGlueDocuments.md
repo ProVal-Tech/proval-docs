@@ -6,7 +6,7 @@ keywords: ['rename', 'itglue', 'documents', 'bulk']
 description: 'Documentation for the Rename-ITGlueDocuments command to bulk rename ITGlue documents after conversion.'
 tags: []
 draft: false
-unlisted: true
+unlisted: false
 ---
 
 ## Description
@@ -21,4 +21,7 @@ Parses through CSV exports from the conversion and directly from ITGlue to renam
 ## Output
     .\editeddocs.csv
     .\skippeddocs.csv
+
+
+
 

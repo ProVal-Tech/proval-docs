@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-auth-proxy-deployment-solution'
+id: '94f21e35-d184-4fb5-9215-898bb367a0e9'
 title: 'DUO Auth Proxy Deployment Solution'
 title_meta: 'DUO Auth Proxy Deployment Solution'
 keywords: ['duo', 'deployment', 'custom', 'fields', 'proxy', 'authentication', 'solution']
@@ -45,6 +45,9 @@ The below custom fields are used in the DUO Auth Proxy Deployment Solution.
    Note: Description is mandatory to be filled and it doesn't accept **'NEW LINE'**. Write everything in one phrase to describe the detail of the custom field.
 
 4. Please follow the same step to create other custom fields.
+
+
+
 
 
 

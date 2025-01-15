@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-rawsql-password-expiration-monitor'
+id: 'd002ff1b-cb8c-45db-af82-096e7912db2b'
 title: 'Custom RAWSQL Monitor for Password Expiration Notification'
 title_meta: 'Custom RAWSQL Monitor for Password Expiration Notification'
 keywords: ['custom', 'rawsql', 'monitor', 'password', 'expiration', 'notification', 'active', 'directory']
@@ -22,6 +22,9 @@ Alert Template: △ Custom - Password Expiration Notification
 ## Target
 
 Global
+
+
+
 
 
 

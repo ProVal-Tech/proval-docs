@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-pnp-devices'
+id: 'f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da'
 title: 'Get PnP Devices in Automate'
 title_meta: 'Get PnP Devices in Automate'
 keywords: ['pnp', 'devices', 'automate', 'information', 'script', 'dataview']
@@ -31,6 +31,9 @@ Displays detailed information on [PnP Devices](https://docs.microsoft.com/en-us/
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most probably because of the permissions, try running [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](https://proval.itglue.com/DOC-5078775-8056027) script.
+
+
+
 
 
 

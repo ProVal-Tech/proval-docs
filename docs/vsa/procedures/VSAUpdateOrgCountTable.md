@@ -1,5 +1,5 @@
 ---
-id: 'vsa-update-pvalorgagentcounts-table'
+id: '7985c324-e441-4a65-b739-cebc0b1fb647'
 title: 'Update the PVALOrgAgentCounts Table for Reporting'
 title_meta: 'Update the PVALOrgAgentCounts Table for Reporting'
 keywords: ['sqlserver', 'reporting', 'database', 'update', 'table']
@@ -17,6 +17,9 @@ Update the PVALOrgAgentCounts Table for Reporting
 - **sqlserver**: Server address we plan to access  
 - **sqluser**: username for sql access  
 - **sqlpassword**: password for sql access  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-winget-auto-update'
+id: '5f061160-176f-443f-b090-edc43989b5ef'
 title: 'Winget Auto Update Procedure'
 title_meta: 'Winget Auto Update Procedure for Third Party Applications'
 keywords: ['winget', 'update', 'automation', 'applications', 'procedure']
@@ -105,6 +105,9 @@ The following example has been saved in our VSA:
 **File Path:** `C:/ProgramData/_Automation/script/Winget-AutoUpdate/Winget-AutoUpdate.ps1`  
 **File Hash (Sha256):** `DCC8DF84B0145829B31B89BA047A786C42189C4598C4C458E7D575D7DC1985EF`  
 **File Hash (MD5):** `07DFAD0A66AA5A4B40C946DF727BE3D8`  
+
+
+
 
 
 

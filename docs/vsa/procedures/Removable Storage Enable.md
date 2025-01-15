@@ -1,5 +1,5 @@
 ---
-id: 'vsa-enable-removable-storage'
+id: 'e6349f40-ad92-422c-88d9-654b9bb87b49'
 title: 'Enable Removable Storage Devices on Endpoint'
 title_meta: 'Enable Removable Storage Devices on Endpoint'
 keywords: ['removable', 'storage', 'endpoint', 'enable', 'devices']
@@ -34,6 +34,9 @@ Sets HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//Den
 ## Output
 
 AP Log
+
+
+
 
 
 

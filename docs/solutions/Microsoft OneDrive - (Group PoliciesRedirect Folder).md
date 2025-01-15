@@ -1,5 +1,5 @@
 ---
-id: 'vsa-redirect-windows-known-folders-onedrive'
+id: '42fcda71-e3ed-40e2-92e0-c0eb80e42e2d'
 title: 'Redirect Windows Known Folders to OneDrive Using Group Policies'
 title_meta: 'Redirect Windows Known Folders to OneDrive Using Group Policies'
 keywords: ['onedrive', 'group', 'policies', 'windows', 'folders', 'redirect', 'configuration']
@@ -26,6 +26,9 @@ Implements options for group policies to redirect Windows known folders (Desktop
 
 2. Export the following content from ProVal's VSA, and follow the necessary implementation steps within each document:  
    - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](https://proval.itglue.com/DOC-5078775-16749544)
+
+
+
 
 
 

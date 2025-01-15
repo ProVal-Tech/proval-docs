@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-disable-ssl-tls'
+id: '1adb82ca-d3cb-4319-9319-5d22b569ed6f'
 title: 'Enable or Disable SSL and TLS Protocols'
 title_meta: 'Enable or Disable SSL and TLS Protocols'
 keywords: ['ssl', 'tls', 'internet-explorer', 'security', 'registry']
@@ -85,6 +85,9 @@ Various options are:
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

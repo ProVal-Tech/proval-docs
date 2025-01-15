@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remote-monitors-memory-usage'
+id: '28530e35-7416-48c4-b56d-897c7d4727f6'
 title: 'Creating Remote Monitors for Memory Usage on Windows Machines'
 title_meta: 'Creating Remote Monitors for Memory Usage on Windows Machines'
 keywords: ['remote', 'monitors', 'memory', 'usage', 'windows']
@@ -135,6 +135,9 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 ## Output
 
 - Remote Monitors
+
+
+
 
 
 

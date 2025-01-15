@@ -1,5 +1,5 @@
 ---
-id: 'ps-media-player-state-audit-report'
+id: 'f5668e2a-a631-4d79-aa44-54ad3c9ed4c6'
 title: 'Media Player State Audit Report'
 title_meta: 'Media Player State Audit Report'
 keywords: ['media', 'player', 'audit', 'report', 'state', 'feature']
@@ -106,6 +106,9 @@ FROM
 WHERE 
   ss.variable = 'MediaPlayerCheck'
 ```
+
+
+
 
 
 

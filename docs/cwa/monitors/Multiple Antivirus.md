@@ -1,5 +1,5 @@
 ---
-id: 'cwa-multiple-antivirus-alert-monitor'
+id: '6b8a4b4e-4df8-4f97-af11-ee8702e8ccbd'
 title: 'Multiple Antivirus Alert Monitor'
 title_meta: 'Multiple Antivirus Alert Monitor'
 keywords: ['antivirus', 'monitor', 'windows', 'alert', 'security']
@@ -52,6 +52,9 @@ The intended target of this monitor are Windows-based machines that have had at 
 ```
 return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
+
+
+
 
 
 

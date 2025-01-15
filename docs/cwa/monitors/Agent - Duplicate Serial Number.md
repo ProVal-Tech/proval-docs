@@ -1,5 +1,5 @@
 ---
-id: 'cwa-duplicate-serial-number-monitor'
+id: 'faf8c4c7-0b45-4a4b-956d-8eafdaa758c5'
 title: 'Duplicate Serial Number Monitor'
 title_meta: 'Duplicate Serial Number Monitor for Identifying Duplicate Agents'
 keywords: ['monitor', 'duplicate', 'serial', 'agents', 'database']
@@ -28,6 +28,9 @@ Sample Ticket:
 Global - Should be run without explicitly defined targets.
 
 Note: Not all machines have proper serial numbers. The SQL below attempts to filter out as many bad results as possible. For example, some SuperMicro PC's all use the same serial number "1234567890". This can lead to false positives. Please review the data for each device before taking action.
+
+
+
 
 
 

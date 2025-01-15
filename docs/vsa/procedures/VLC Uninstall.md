@@ -1,5 +1,5 @@
 ---
-id: 'vsa-vlc-uninstall'
+id: '8edbbe65-d1fd-4b22-b80d-da2dc12a01ba'
 title: 'Silent Uninstallation of VLC'
 title_meta: 'Silent Uninstallation of VLC'
 keywords: ['vlc', 'uninstall', 'silent', 'procedure', 'agent']
@@ -27,6 +27,9 @@ Program Files/VideoLAN/VLC/uninstall.exe /S /V/qn
 ## Output
 
 AP Log
+
+
+
 
 
 

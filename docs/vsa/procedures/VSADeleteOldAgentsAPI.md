@@ -1,5 +1,5 @@
 ---
-id: 'vsa-purge-all-kaseya-agents-over-x-days'
+id: '88e19290-f68b-45c9-990c-212b39a8cc3c'
 title: 'Purge All Kaseya Agents Over X Days via API'
 title_meta: 'Purge All Kaseya Agents Over X Days via API'
 keywords: ['kaseya', 'api', 'agents', 'purge', 'delete']
@@ -19,6 +19,9 @@ Purge All Kaseya Agents Over X Days over API
 - url : URL of VSA  
 - days : Days old to delete  
 - exception : Exceptions to rule
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-quickpass-agent'
+id: '65d0dbb6-29c1-4242-841c-1da9b92edab6'
 title: 'Installing the QuickPass Agent on Windows Machines'
 title_meta: 'Installing the QuickPass Agent on Windows Machines'
 keywords: ['quickpass', 'agent', 'windows', 'install', 'monitor']
@@ -46,6 +46,9 @@ The purpose of this solution is to install the QuickPass agent on Windows machin
      - Client EDF - QuicPass
      - Client EDF - QuickPass Agent ID
      - System Property - QuickpassInstallToken
+
+
+
 
 
 

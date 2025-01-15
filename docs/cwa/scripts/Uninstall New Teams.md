@@ -1,5 +1,5 @@
 ---
-id: 'ps-uninstall-new-teams'
+id: 'dad7ec2a-4998-47f9-bcb2-c886d3bea833'
 title: 'Uninstall New Teams from Windows Machines'
 title_meta: 'Uninstall New Teams from Windows Machines'
 keywords: ['uninstall', 'teams', 'windows', 'script', 'software']
@@ -46,6 +46,9 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
+
+
 
 
 

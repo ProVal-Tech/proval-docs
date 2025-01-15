@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-usage-dataview'
+id: 'ad731eb0-1e15-41dc-b23b-10876dd22543'
 title: 'Script Usage Dataview for RMM'
 title_meta: 'Script Usage Dataview for RMM'
 keywords: ['dataview', 'scripts', 'usage', 'rmm', 'monitoring']
@@ -25,6 +25,9 @@ None
 | ScriptID      | The numerical value of the script                                                                 |
 | Times Run     | A count of the number of times the script was run by this user in the last 30 days              |
 | Last Run      | The last time the script was ran by the user                                                    |
+
+
+
 
 
 

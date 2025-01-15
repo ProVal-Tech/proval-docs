@@ -1,5 +1,5 @@
 ---
-id: 'cwa-upgrade-swap-agents-hard-drives'
+id: '97e53493-0cd3-4b69-91b1-1e3f70111f5f'
 title: 'Upgrade/Swap Agents Hard-Drives or SSDs in ConnectWise Automate'
 title_meta: 'Upgrade/Swap Agents Hard-Drives or SSDs in ConnectWise Automate'
 keywords: ['upgrade', 'swap', 'agents', 'hard-drives', 'ssd', 'connectwise', 'automate', 'monitoring']
@@ -44,6 +44,9 @@ It is a State based monitor and the WARNING state indicates the PowerShell failu
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Incorrect-Drive-Inventory/image_3.png)
+
+
+
 
 
 

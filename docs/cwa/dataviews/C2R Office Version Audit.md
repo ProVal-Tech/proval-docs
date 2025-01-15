@@ -1,5 +1,5 @@
 ---
-id: 'cwa-click-to-run-office-audit'
+id: 'd48f4966-b281-4aaa-8bf0-5059221b7ff3'
 title: 'Click-to-Run Office Audit'
 title_meta: 'Click-to-Run Office Audit'
 keywords: ['office', 'update', 'audit', 'status', 'version', 'channel']
@@ -36,6 +36,9 @@ This dataview populates the Click-to-Run Office version, auto-update status and 
 | Auto Update               | If office Auto update is enabled or not on the machine           |
 | Update Channel            | Update Channel for office installed on the machine                |
 | Script Run Time           | Last time [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine |
+
+
+
 
 
 

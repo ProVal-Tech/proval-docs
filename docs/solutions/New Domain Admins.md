@@ -1,5 +1,5 @@
 ---
-id: 'rmm-new-domain-admins-alert'
+id: '35a03717-5ade-46fb-b396-10a277043788'
 title: 'New Domain Admins Alert'
 title_meta: 'New Domain Admins Alert'
 keywords: ['domain', 'admin', 'alert', 'monitoring', 'security']
@@ -34,6 +34,9 @@ The purpose of the solution is to look for the newly created/promoted domain adm
 - Create the Machine Group: [Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)
 - Create the task: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424)
 - Create the deployment schedule as described in this document: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424)
+
+
+
 
 
 

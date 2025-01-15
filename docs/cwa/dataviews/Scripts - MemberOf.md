@@ -1,5 +1,5 @@
 ---
-id: 'cwa-find-script-all'
+id: '83b99c1b-d471-41f1-9755-af3a2ab1abf0'
 title: 'Find Script for All Scripts'
 title_meta: 'Find Script for All Scripts - ConnectWise Automate'
 keywords: ['script', 'connectwise', 'dataview', 'mysql', 'implementation']
@@ -39,6 +39,9 @@ This script displays the results of selecting 'Find Script', except displays it 
 | Object description  | Full Path of the Group/Whether the alert template is applied on a computer-level remote monitor group remote monitor or an internal monitor. |
 | Limited to         | Whether the scheduled group script/remote monitor is limited to a search/internal monitor is limited to any group. |
 | Affected Agents    | Number of computers in the group/Number of agents detected in the search if limited to search.         |
+
+
+
 
 
 

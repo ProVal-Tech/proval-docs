@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-windows-updates-deep-freeze'
+id: '8a2e73e9-819c-44db-a1b1-72b15a7812c2'
 title: 'Installing Windows Updates with Deep Freeze'
 title_meta: 'Installing Windows Updates with Deep Freeze'
 keywords: ['windows', 'updates', 'deepfreeze', 'installation', 'security']
@@ -54,6 +54,9 @@ Before executing the script, save the password with the **`Deep Freeze Command L
 ## Output
 
 - Script Logs
+
+
+
 
 
 

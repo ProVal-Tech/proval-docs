@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-recycle-bin-monitor'
+id: '5041d497-ae6c-4209-a338-60f1da396106'
 title: 'Remote PowerShell Monitor for AD Recycle Bin Status'
 title_meta: 'Remote PowerShell Monitor for AD Recycle Bin Status'
 keywords: ['active-directory', 'monitor', 'recycle-bin', 'windows', 'dc']
@@ -34,6 +34,9 @@ Domain Controllers only
 ## Implementation
 
 [Import - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-14764163)  
+
+
+
 
 
 

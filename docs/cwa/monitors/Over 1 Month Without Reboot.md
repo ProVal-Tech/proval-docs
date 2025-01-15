@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-system-uptime-alert'
+id: 'c3b60a6c-fa81-475f-8c96-6b167e32a0f9'
 title: 'Internal Monitor for System Uptime Alert'
 title_meta: 'Internal Monitor for System Uptime Alert'
 keywords: ['monitor', 'uptime', 'alert', 'system', 'machines']
@@ -22,6 +22,9 @@ Optional Targets:
 - Global - Should be run without explicitly defined targets.
 - Managed 24x7 | 8x5 Servers
 - Managed 24x7 | 8x5 Workstations
+
+
+
 
 
 

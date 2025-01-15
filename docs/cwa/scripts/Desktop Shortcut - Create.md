@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-desktop-shortcut-for-all-users'
+id: 'de971be6-bd0c-432c-a0de-94119ee0da2b'
 title: 'Create Desktop Shortcut for All Users'
 title_meta: 'Create Desktop Shortcut for All Users'
 keywords: ['desktop', 'shortcut', 'uri', 'icon', 'windows']
@@ -36,6 +36,9 @@ Creates a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for process.
+
+
+
 
 
 

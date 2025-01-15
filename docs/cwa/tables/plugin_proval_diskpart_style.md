@@ -1,5 +1,5 @@
 ---
-id: 'cwa-diskpart-information-storage'
+id: 'c8745cde-e56d-4ea5-b4ae-2e213c4e21d2'
 title: 'Disk Information Storage from Diskpart'
 title_meta: 'Disk Information Storage from Diskpart'
 keywords: ['disk', 'information', 'storage', 'diskpart', 'audit']
@@ -31,6 +31,9 @@ Stores information about disks gathered from diskpart.
 | PartitionStyle    | VARCHAR | The partition style of the audited disk (RAW, GPT, MBR, etc.) |
 | OperationalStatus  | VARCHAR | Shows if the disk is offline/online/disconnected.      |
 | HealthStatus      | VARCHAR | Shows the reported health of the audited disk.         |
+
+
+
 
 
 

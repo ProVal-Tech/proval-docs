@@ -1,5 +1,5 @@
 ---
-id: 'cwa-idrac-version-dell-servers'
+id: 'd2168fe5-e9f2-4265-ad4d-ce98ee14cf26'
 title: 'iDRAC Version Overview for Dell Servers'
 title_meta: 'iDRAC Version Overview for Dell Servers'
 keywords: ['idrac', 'dell', 'servers', 'version', 'rmm']
@@ -27,6 +27,9 @@ This dataview shows the version of iDRAC on Dell Servers. The script [Get iDRAC 
 | Operating System   | Shows the OS for the concern server.                       |
 | iDRAC Version     | Shows the iDRAC Version for the concern server.            |
 | Last Contact      | Shows the last contact of concern server with RMM.         |
+
+
+
 
 
 

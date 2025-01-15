@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sfc-scan-ticket-creation'
+id: 'b13054b0-07b2-4416-ba6d-fbe285f89605'
 title: 'SFC Scan and Ticket Creation'
 title_meta: 'SFC Scan and Ticket Creation for Windows Devices'
 keywords: ['sfc', 'scan', 'ticket', 'windows', 'maintenance']
@@ -44,6 +44,9 @@ This script will stop the Windows update service and clear some folders to ensur
 
 - Script Log messages
 - Tickets
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-light-speed-xml-configuration'
+id: '1bf99632-84ea-4fc1-8cb4-39bd98621a91'
 title: 'Light Speed XML Configuration Implementation'
 title_meta: 'Light Speed XML Configuration Implementation Steps'
 keywords: ['configuration', 'alert', 'monitor', 'sql', 'group', 'agent']
@@ -263,6 +263,9 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 
 - Now execute your query from a RAWSQL monitor set.
 - Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
+
+
+
 
 
 

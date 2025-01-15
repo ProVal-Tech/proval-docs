@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reset-ad-password-age'
+id: 'da1f5a89-eab2-4fae-8e49-e98c269cf103'
 title: 'Reset AD Users Password Age'
 title_meta: 'Reset AD Users Password Age'
 keywords: ['ad', 'users', 'password', 'reset', 'monitor']
@@ -182,6 +182,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

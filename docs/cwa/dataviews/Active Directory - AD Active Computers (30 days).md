@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-computers-ad'
+id: '57536cce-bb4f-4ece-a29f-cdad67f4a870'
 title: 'Active Computers in Active Directory'
 title_meta: 'Active Computers in Active Directory - Dataview Summary'
 keywords: ['active', 'computers', 'directory', 'ad', 'last', 'logged', 'days']
@@ -28,6 +28,9 @@ The Active directory plugin must be installed and configured properly to detect 
 | OS                        | Display the OS installed on the machine                |
 | Last Contact With RMM      | Displays the Description of the machine if anything is there |
 | Last logon                | Displays the Last Login date and time                  |
+
+
+
 
 
 

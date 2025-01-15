@@ -1,5 +1,5 @@
 ---
-id: 'rmm-bitlocker-drive-encryption-auditing'
+id: '38b92368-f583-426c-b8f1-5f3b6d56b410'
 title: 'BitLocker Drive Encryption Auditing Solution'
 title_meta: 'BitLocker Drive Encryption Auditing Solution'
 keywords: ['bitlocker', 'encryption', 'auditing', 'device', 'group', 'status', 'recovery', 'key']
@@ -120,6 +120,9 @@ This group holds all devices that have been audited for BitLocker and check thei
 This is the scheduled recurrence of the [CW RMM - Task - BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878983) Task.
 
 ![Image](../../../static/img/BitLocker-Auditing/image_11.png)
+
+
+
 
 
 

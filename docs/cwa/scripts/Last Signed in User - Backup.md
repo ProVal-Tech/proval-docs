@@ -1,5 +1,5 @@
 ---
-id: 'cwa-store-last-signed-in-user'
+id: 'a4434526-0106-4df4-832c-752519597f82'
 title: 'Store Last Signed-In User'
 title_meta: 'Store Last Signed-In User'
 keywords: ['backup', 'logon', 'user', 'registry', 'computer']
@@ -29,6 +29,9 @@ This script stores the last sign-in user info from the registry as a registry ba
 ## Output
 
 - Script log
+
+
+
 
 
 

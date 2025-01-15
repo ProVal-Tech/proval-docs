@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unknown-user-profiles-detection'
+id: 'ba7bb64b-e12b-4d21-a86f-572ce95b78d7'
 title: 'Unknown User Profiles Detection'
 title_meta: 'Unknown User Profiles Detection'
 keywords: ['monitor', 'profiles', 'user', 'detection', 'ticketing']
@@ -59,6 +59,9 @@ UserProfile: C:/Users/user2
 ProfileSizeMB: 1237
 UserSid: S-1-5-21-1327865892-1327865892-1327865892-1758
 ```
+
+
+
 
 
 

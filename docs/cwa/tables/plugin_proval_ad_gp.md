@@ -1,5 +1,5 @@
 ---
-id: 'cwa-group-policy-audit'
+id: '0e873ec4-0fcc-4131-bf33-1f74f8b28c80'
 title: 'Group Policy Audit Overview'
 title_meta: 'Group Policy Audit Overview'
 keywords: ['audit', 'gpo', 'group', 'policy', 'configuration']
@@ -29,6 +29,9 @@ Displays the list of audited group policies from the script @Group Policy Audit.
 | Extension    | VARCHAR  | The parent extension type of the group policy.                                               |
 | Property     | VARCHAR  | The extension property that is being set by the group policy.                                |
 | PropertyData | TEXT     | The additional configuration data relating to the target group policy extension property.     |
+
+
+
 
 
 

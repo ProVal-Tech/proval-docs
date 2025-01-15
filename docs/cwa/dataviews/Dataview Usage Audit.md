@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-audit'
+id: '99dfcda4-d0ce-49db-baac-bbe2d41c9e85'
 title: 'Dataview Audit'
 title_meta: 'Dataview Audit - Track User Access'
 keywords: ['dataview', 'audit', 'tracking', 'users', 'access']
@@ -24,6 +24,9 @@ This Dataview audits the Dataviews most frequently accessed by users. It can be 
 | Recently Opened On           | Most recent date when Dataview was accessed                                                         |
 | Duration Since Initial Opening(Days) | Number of Days when dataview was opened for the first time in last (History Retention) Days |
 | History Retention(Days)      | It shows how many days old the data is that is displayed in Dataview (it totally depends on the data shown in the h_users table) |
+
+
+
 
 
 

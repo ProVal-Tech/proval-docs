@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-latest-installed-cu'
+id: '0c224e91-ca6e-49b5-b2e6-3a8fee076690'
 title: 'Get Latest Installed Cumulative Update Data View'
 title_meta: 'Get Latest Installed Cumulative Update Data View'
 keywords: ['cumulative', 'update', 'data', 'view', 'installed', 'machine', 'report']
@@ -43,6 +43,9 @@ Displays the data fetched by the [CWM - Automate - Script - Get Lastest Installe
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Latest-Installed-Cumulative-Update/image_1.png)
+
+
+
 
 
 

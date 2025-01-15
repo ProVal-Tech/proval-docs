@@ -1,5 +1,5 @@
 ---
-id: 'cwa-backup-bitlocker-recovery'
+id: 'cd4cedee-cd92-4198-83d6-e7c596a6a01b'
 title: 'Backup BitLocker Recovery Keys to Active Directory'
 title_meta: 'Backup BitLocker Recovery Keys to Active Directory'
 keywords: ['bitlocker', 'active', 'directory', 'backup', 'encryption']
@@ -67,6 +67,9 @@ This Automate script executes the Backup-BitlockerRecoveryPW.ps1 agnostic script
 9. Go to the “Operating System Drives” node and turn on the similar policy “**Choose how BitLocker-protected operating system drives can be recovered**“. Afterwards, go to the “Removable Data Drives” node and enable the policy “**Choose how BitLocker-protected removable drives can be recovered**“.
 
 10. When any client PC retrieves the policy changes, BitLocker recovery information will be automatically and silently backed up to AD DS when BitLocker is turned on for fixed drives, OS drives or removable drives.
+
+
+
 
 
 

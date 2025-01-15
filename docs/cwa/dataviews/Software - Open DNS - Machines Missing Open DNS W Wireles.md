@@ -1,5 +1,5 @@
 ---
-id: 'cwa-open-dns-dataview'
+id: 'f943b29e-998e-48be-8327-c03ee9c0818e'
 title: 'Open DNS Dataview for Endpoint Management'
 title_meta: 'Open DNS Dataview for Endpoint Management'
 keywords: ['open', 'dns', 'dataview', 'endpoint', 'management']
@@ -27,6 +27,9 @@ None
 | Machine Type  | The type of machine. Server|Workstation|Mac|Linux                                              |
 | Wireless card  | Will look to see if any of the cards connected to the endpoint are wireless compatible        |
 | Umbrella Agent | If the Open DNS/Umbrella Agent is installed on the endpoint                                   |
+
+
+
 
 
 

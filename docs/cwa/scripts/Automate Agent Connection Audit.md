@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-tables-connection-audit'
+id: 'ef69cef8-da15-46b7-94a4-697431a87929'
 title: 'Custom Tables for Connection Audit'
 title_meta: 'Custom Tables for Connection Audit'
 keywords: ['custom', 'tables', 'audit', 'connection', 'daily', 'online', 'offline']
@@ -21,6 +21,9 @@ The script generates two custom tables: [pvl_automate_connection_audit](https://
 ## Output
 
 - Script Log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-msrt-scanner-status'
+id: '3b6465a0-54e7-45ce-94b2-000ac55c6a26'
 title: 'MSRT Scanner Status Dataview'
 title_meta: 'MSRT Scanner Status Dataview'
 keywords: ['msrt', 'scanner', 'status', 'dataview', 'rmm']
@@ -27,6 +27,9 @@ This dataview stores the status of the MSRT scanner result from the script [Mali
 | LastContact            | The last contact of the agent with the RMM          |
 | MSRT Scanner Result    | MSRT tool scanner result conclusion recorded         |
 | MSRT Scanner Date      | MSRT's last scanner date                             |
+
+
+
 
 
 

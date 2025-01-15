@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-offline-ticket'
+id: 'cbc62993-0c72-4826-bdfa-bf0aa498891f'
 title: 'Create Client-Level Ticket for Offline Machines'
 title_meta: 'Create Client-Level Ticket for Offline Machines'
 keywords: ['ticketing', 'offline', 'machines', 'client', 'monitoring']
@@ -143,6 +143,9 @@ PC Model: Virtual Machine
 OS: Microsoft Windows 10 Enterprise x64
 S/N OF PC: 8204-9944-0772-5397-0764-9709-12
 ```
+
+
+
 
 
 

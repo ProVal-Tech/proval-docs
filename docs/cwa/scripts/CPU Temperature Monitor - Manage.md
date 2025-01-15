@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-script-cpu-temperature-monitor'
+id: '56c1260c-a689-45e9-a226-49bf31444750'
 title: 'Client Script for CPU Temperature Monitor Management'
 title_meta: 'Client Script for CPU Temperature Monitor Management'
 keywords: ['client', 'script', 'cpu', 'temperature', 'monitor', 'management']
@@ -28,6 +28,9 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 
 - [EPM - Sensors - Script - CPU Temperature Monitor - Create](https://proval.itglue.com/DOC-5078775-14323116)
 - [EPM - Sensors - Remote Monitor - CPU Temperature Monitoring Process](https://proval.itglue.com/DOC-5078775-14323119)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-data-collection-solution-update-table-data-unificontroller'
+id: '317fccab-60e6-4af7-8866-1b4d862d973e'
 title: 'EPM - Data Collection - Solution - Update Table Data - UnifiController'
 title_meta: 'EPM - Data Collection - Solution - Update Table Data - UnifiController'
 keywords: ['unifi', 'data', 'collection', 'update', 'table']
@@ -34,6 +34,9 @@ Holds requested Unifi Controller data specific to the controller only.
 | Port         | Int    | The Port that the Controller communicates on.                             |
 | UserName     | String | The User name for the admin user on the Unifi Controller.                 |
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
+
+
+
 
 
 

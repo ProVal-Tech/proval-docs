@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-keycode-check'
+id: '2e7517b7-3d3c-47b0-a885-bb8293c55263'
 title: 'Webroot Keycode Check Script'
 title_meta: 'Webroot Keycode Check Script for License Verification'
 keywords: ['webroot', 'keycode', 'license', 'monitor', 'edf']
@@ -33,6 +33,9 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 - Script log
 - EDF
 - Dataview
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-compliance-reporting-solution'
+id: '7174f88a-38fc-4e5a-83cc-1f48a6c29526'
 title: 'Patch Compliance Reporting Solution Setup'
 title_meta: 'Patch Compliance Reporting Solution Setup for Database Items'
 keywords: ['patch', 'compliance', 'reporting', 'database', 'views']
@@ -36,6 +36,9 @@ Other items depend on this script being run to function, which I have listed bel
 ## Output
 
 This is a one-time use script, used to install/create 3 views. After running once, this script can be removed from the environment.
+
+
+
 
 
 

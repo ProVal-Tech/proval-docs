@@ -1,5 +1,5 @@
 ---
-id: 'cwa-wifi-configuration-script'
+id: '52b6b460-b6bd-48cf-aab1-8484149578f0'
 title: 'WiFi Configuration Script'
 title_meta: 'WiFi Configuration Script'
 keywords: ['wifi', 'configuration', 'ssid', 'profile', 'automation']
@@ -39,6 +39,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

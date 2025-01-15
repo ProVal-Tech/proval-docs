@@ -1,5 +1,5 @@
 ---
-id: 'cwa-network-connections-summary'
+id: 'a3d15808-2cfc-4703-b1bc-21e9579d90c5'
 title: 'Network Connections Summary'
 title_meta: 'Network Connections Summary'
 keywords: ['network', 'connections', 'status', 'adapter', 'speed', 'uptime', 'client', 'location']
@@ -29,6 +29,9 @@ The dataview displays the detailed information of the Network connections.
 | DNS Address                | This displays the DNS information of the machine.           |
 | Domain Name                | The domain information of the machine.                      |
 | DHCP State                 | The DHCP state (Static/Dynamic) of the Network.            |
+
+
+
 
 
 

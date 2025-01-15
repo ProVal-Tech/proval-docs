@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-reboot-prompt-removal'
+id: '79256871-2745-4096-8892-c4554926ed18'
 title: 'Internal Monitor for Reboot Prompt Removal'
 title_meta: 'Internal Monitor for Reboot Prompt Removal'
 keywords: ['monitor', 'reboot', 'windows', 'edf', 'automation']
@@ -21,6 +21,9 @@ This internal monitor is designed to detect the agents whose reboot was done by 
 This monitor is an automation-driven reboot prompt removal monitor. This should only be applied to Windows Workstations.
 
 Windows Workstations - Should be run on non-servers and must be running Windows.
+
+
+
 
 
 

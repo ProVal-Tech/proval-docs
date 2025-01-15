@@ -1,5 +1,5 @@
 ---
-id: 'cwa-add-registry-policy-edge-homepage'
+id: 'ea27a6a7-8b06-4120-b827-745121614aa8'
 title: 'Add Registry Policy for Enforced Homepage in Microsoft Edge'
 title_meta: 'Add Registry Policy for Enforced Homepage in Microsoft Edge'
 keywords: ['registry', 'homepage', 'microsoft', 'edge', 'chromium', 'policy', 'enforcement']
@@ -45,6 +45,9 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

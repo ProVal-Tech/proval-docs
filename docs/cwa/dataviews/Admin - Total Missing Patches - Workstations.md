@@ -1,5 +1,5 @@
 ---
-id: 'cwa-missing-patch-report'
+id: '50b9eb5a-6ef2-4e07-a8a5-93a43b4d038b'
 title: 'Missing Patch Report for Workstations'
 title_meta: 'Missing Patch Report for Workstations'
 keywords: ['patches', 'workstations', 'report', 'automate', 'missing']
@@ -22,6 +22,9 @@ This dataview shows the number of missing patches for each workstation patching 
 | OS             | Displays the operation system of the machine     |
 | AgentType      | Displays the agent type                          |
 | MissingPatches | Displays the number of missing patches on the machine |
+
+
+
 
 
 

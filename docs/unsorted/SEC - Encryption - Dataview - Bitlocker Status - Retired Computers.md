@@ -1,12 +1,12 @@
 ---
-id: 'cwa-bitlocker-audit-dataview'
+id: '2a93ccc8-7de0-4107-9251-747b55905734'
 title: 'Bitlocker Audit Dataview for Retired Computers'
 title_meta: 'Bitlocker Audit Dataview for Retired Computers'
 keywords: ['bitlocker', 'audit', 'retired', 'computers', 'encryption', 'tpm', 'active-directory']
 description: 'This document provides a comprehensive overview of the Bitlocker information displayed in the dataview for all retired computers that have executed the Bitlocker Audit script. It details the Bitlocker status of machine drives, key protectors, TPM status, and backup status in Active Directory, along with the necessary dependencies and column explanations.'
 tags: ['encryption', 'audit', 'active-directory', 'tpm', 'backup', 'security', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -57,6 +57,9 @@ This dataview displays the Bitlocker information on all retired computers that h
 | TPM Version              | It contains the TPM Version number.                                                                                                                                       |
 | TPMOwned                 | The TPM Owned state of the target.                                                                                                                                       |
 | TPMActivated             | The activation state of the TPM on the target.                                                                                                                           |
+
+
+
 
 
 

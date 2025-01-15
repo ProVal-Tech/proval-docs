@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-disable-edge-sidebar'
+id: 'f1cc450a-82dd-49f9-b720-22983f7b696c'
 title: 'Enable or Disable Edge Sidebar'
 title_meta: 'Enable or Disable Edge Sidebar'
 keywords: ['edge', 'sidebar', 'enable', 'disable', 'ticket', 'script']
@@ -88,6 +88,9 @@ Finishing ticket 77459
 ## Ticket Example
 
 ![Ticket Example](../../../static/img/Edge-Sidebar---EnableDisable/image_4.png)
+
+
+
 
 
 

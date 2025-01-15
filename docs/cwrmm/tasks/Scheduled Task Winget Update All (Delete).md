@@ -1,5 +1,5 @@
 ---
-id: 'rmm-scheduled-task-winget-update-all-delete'
+id: 'aca364ec-208f-47e8-a838-11b8ee0c9f95'
 title: 'Scheduled Task Winget Update All (Delete)'
 title_meta: 'Scheduled Task Winget Update All (Delete)'
 keywords: ['scheduled', 'winget', 'update', 'delete', 'task', 'rmm']
@@ -168,6 +168,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 - Script Log
+
+
+
 
 
 

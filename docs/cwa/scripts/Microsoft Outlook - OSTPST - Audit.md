@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-outlookdb'
+id: '2029ecbe-c5f8-431e-9643-7aed63bec6d8'
 title: 'Audit Outlook OST/PST File Collection'
 title_meta: 'Audit Outlook OST/PST File Collection'
 keywords: ['ost', 'pst', 'audit', 'collection', 'windows', 'script']
@@ -27,6 +27,9 @@ File Hash: B5689044612005060B790DFC5560C8E28E44B82BDE107D971AA146B91F147881
 
 - Script log
 - Dataview
+
+
+
 
 
 

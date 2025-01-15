@@ -1,5 +1,5 @@
 ---
-id: 'cwa-tpm-configuration-info'
+id: '3210ea64-6a5d-416d-aea8-8e5399c0e62c'
 title: 'TPM Configuration Information'
 title_meta: 'TPM Configuration Information'
 keywords: ['tpm', 'configuration', 'endpoints', 'security', 'client', 'location', 'computer', 'operating', 'system', 'lastcontact', 'managedauthlevel', 'ownerauth', 'autoprovisioning', 'lockedout', 'version']
@@ -33,6 +33,9 @@ Displays information about the TPM configuration on endpoints.
 | AutoProvisioning     | Displays whether auto-provisioning is enabled or not         |
 | LockedOut           | Displays whether TPM locked or not                            |
 | TPMVersion          | Displays the TPM version on the endpoint                     |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-os-monitoring'
+id: '857bac8a-a3f1-408d-9b1f-73b0e5ec6e07'
 title: 'Windows OS Monitoring for Supported Versions'
 title_meta: 'Windows OS Monitoring for Supported Versions'
 keywords: ['monitoring', 'windows', 'os', 'version', 'cve']
@@ -51,6 +51,9 @@ BiosVer (Manufacturer)
 
 Also, ticketing is enabled under the script.  
 Refer to the script document of how to enable it under Global Parameter.
+
+
+
 
 
 

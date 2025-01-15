@@ -1,5 +1,5 @@
 ---
-id: 'cwa-stuck-service-detection'
+id: 'bb8f2562-4744-4349-a661-62f64f0d05b2'
 title: 'Stuck Service Detection Script'
 title_meta: 'Stuck Service Detection Script'
 keywords: ['service', 'detection', 'script', 'automation', 'process']
@@ -52,6 +52,9 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Ticket
+
+
+
 
 
 

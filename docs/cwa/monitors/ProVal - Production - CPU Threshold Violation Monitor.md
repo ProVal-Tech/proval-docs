@@ -1,5 +1,5 @@
 ---
-id: 'cwa-apply-remote-monitor-cpu-threshold'
+id: '662b2faa-c7f5-4c96-bbbe-f1878ddb8aa3'
 title: 'Applying Remote Monitor for CPU Threshold'
 title_meta: 'Applying Remote Monitor for CPU Threshold'
 keywords: ['remote', 'monitor', 'cpu', 'threshold', 'alert']
@@ -173,6 +173,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

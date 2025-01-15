@@ -1,5 +1,5 @@
 ---
-id: 'cwa-export-installed-applications'
+id: 'f9b8a027-e797-49c6-848d-7cb667a16ce0'
 title: 'Export Installed Applications with Winget'
 title_meta: 'Export Installed Applications with Winget - JSON and CSV Formats'
 keywords: ['export', 'applications', 'winget', 'report', 'json', 'csv', 'email']
@@ -50,6 +50,9 @@ Path to the reports on local machine:
 
 - Script logs
 - Email(s) (if enabled)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gather-latest-application-versions'
+id: 'ffb77c6c-8dd7-4ca5-82a2-327b1658cbde'
 title: 'Gather Latest Application Versions with Winget'
 title_meta: 'Gather Latest Application Versions with Winget'
 keywords: ['winget', 'application', 'version', 'packageid', 'script']
@@ -39,6 +39,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

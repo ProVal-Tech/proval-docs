@@ -1,5 +1,5 @@
 ---
-id: 'cwa-os-install-date'
+id: '0fbf0989-b499-4d26-8cec-29e3d32d0ada'
 title: 'OS Install Date Field Update'
 title_meta: 'OS Install Date Field Update'
 keywords: ['endpoint', 'install', 'agent', 'procedure', 'date']
@@ -21,6 +21,9 @@ Agent Procedure is required to populate this field: [https://proval.itglue.com/D
 | Field Name               | Type of Field (Machine or Organization) | Description                          |
 |--------------------------|-----------------------------------------|--------------------------------------|
 | xPVAL OS Install Date    | Machine                                 | Displays the initial install date of the OS |
+
+
+
 
 
 

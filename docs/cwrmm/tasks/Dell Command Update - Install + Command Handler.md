@@ -1,5 +1,5 @@
 ---
-id: 'rmm-dell-command-update-install-command-handler'
+id: 'c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a'
 title: 'Dell Command Update - Install + Command Handler'
 title_meta: 'Dell Command Update - Install + Command Handler'
 keywords: ['dell', 'command', 'update', 'install', 'handler', 'winget']
@@ -376,6 +376,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gather-dhcp-info'
+id: '918c1a66-54b8-4468-9e4b-5b7db918b77c'
 title: 'Gather DHCP Information from Target Server'
 title_meta: 'Gather DHCP Information from Target Server'
 keywords: ['dhcp', 'server', 'database', 'report', 'information']
@@ -26,6 +26,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Table plugin_proval_dhcp_statistics
+
+
+
 
 
 

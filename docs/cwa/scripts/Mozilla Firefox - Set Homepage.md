@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enforced-homepage-firefox'
+id: '64cddf50-a662-4745-b9d3-79f625be4ce1'
 title: 'Enforced Homepage in Mozilla Firefox'
 title_meta: 'Enforced Homepage in Mozilla Firefox'
 keywords: ['firefox', 'homepage', 'registry', 'policy', 'windows']
@@ -44,6 +44,9 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

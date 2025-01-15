@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smb-signing-detection'
+id: '4ae6f939-e049-499e-8651-e452e0d5ba24'
 title: 'SMB Signing Detection Remote Monitor'
 title_meta: 'SMB Signing Detection Remote Monitor'
 keywords: ['smb', 'monitor', 'detection', 'security', 'vulnerability']
@@ -39,6 +39,9 @@ Refer to the script documentation [CWA Script - CVE-2016-2115 - SMB Signing](htt
 
 Please follow the below implementation document to install this content:
 - [Import - Remote Monitor - SMB Signing Detection](https://proval.itglue.com/DOC-5078775-15775362)
+
+
+
 
 
 

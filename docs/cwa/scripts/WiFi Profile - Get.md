@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gather-wifi-profile'
+id: '95ecf8ed-f2ac-46fa-ad7a-05894d0743be'
 title: 'Gather WiFi Profile'
 title_meta: 'Gather WiFi Profile for SSID Management'
 keywords: ['wifi', 'profile', 'ssid', 'export', 'database']
@@ -39,6 +39,9 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Table plugin_proval_wifi_profiles
+
+
+
 
 
 

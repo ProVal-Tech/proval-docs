@@ -1,5 +1,5 @@
 ---
-id: 'cwa-tls-version-check-setup'
+id: 'b08343d9-9d4b-4edd-92e2-5941c23d8e43'
 title: 'TLS Version Check - Remote Monitor Setup'
 title_meta: 'TLS Version Check - Remote Monitor Setup'
 keywords: ['tls', 'monitor', 'setup', 'database', 'query']
@@ -167,6 +167,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-monitoring'
+id: '663a6cf8-f3da-4a44-9725-73aae8d4d954'
 title: 'Cumulative Patch Monitoring for Machines'
 title_meta: 'Cumulative Patch Monitoring for Machines'
 keywords: ['cumulative', 'patch', 'monitoring', 'updates', 'alerting']
@@ -58,6 +58,9 @@ SQL is limiting it to the machines with Managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
+
+
+
 
 
 

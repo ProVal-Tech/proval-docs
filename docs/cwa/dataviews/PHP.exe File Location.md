@@ -1,5 +1,5 @@
 ---
-id: 'cwa-locate-php-info'
+id: '142bb69a-42f3-469a-ac3f-a8b9007c73f0'
 title: 'Locate PHP.exe Information Display'
 title_meta: 'Locate PHP.exe Information Display'
 keywords: ['php', 'file', 'audit', 'data', 'collection', 'monitor']
@@ -39,6 +39,9 @@ Displays the information of PHP.exe file fetched by the [Locate PHP.exe](https:/
 | Last Write Time        | File Modification Time                                                                            |
 | Attributes             | File's Attributes                                                                                 |
 | Script Run Time        | Data Collection Time                                                                              |
+
+
+
 
 
 

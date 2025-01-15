@@ -1,5 +1,5 @@
 ---
-id: 'cwa-msrt-scanner-monitor'
+id: '52caa288-ae6c-4047-a2d1-6d34b806d673'
 title: 'MSRT Scanner Monitor'
 title_meta: 'MSRT Scanner Monitor for Windows Agents'
 keywords: ['monitor', 'msrt', 'scanner', 'windows', 'agents', 'audit']
@@ -38,6 +38,9 @@ OR
 
 MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the below logs:  
 @ScanResult@. The Autofix extended scan of the computer and automatically cleans any infections that are found is scheduled.
+
+
+
 
 
 

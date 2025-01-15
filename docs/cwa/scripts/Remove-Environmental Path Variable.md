@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-environmental-path-variable'
+id: '6d78f2c5-5a2d-4806-8d48-ac821935f681'
 title: 'Remove Environmental Path Variable'
 title_meta: 'Remove Environmental Path Variable'
 keywords: ['windows', 'environment', 'path', 'variable', 'remove', 'scope']
@@ -46,6 +46,9 @@ Please see agnostic content document [EPM - Windows Configuration - Agnostic - R
 ## Output
 
 - Script log
+
+
+
 
 
 

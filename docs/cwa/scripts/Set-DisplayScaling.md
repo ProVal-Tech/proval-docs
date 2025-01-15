@@ -1,5 +1,5 @@
 ---
-id: 'ps-set-display-scaling'
+id: 'dc98b12a-e57d-4d58-b8c9-9976d33b2a10'
 title: 'Set Custom Display Scaling for Windows Users'
 title_meta: 'Set Custom Display Scaling for Windows Users'
 keywords: ['display', 'scaling', 'windows', 'users', 'script']
@@ -34,6 +34,9 @@ This script sets custom Display scaling on existing as well as new users for win
 ## Output
 
 - Script log
+
+
+
 
 
 

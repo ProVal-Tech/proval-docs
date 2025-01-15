@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-rds-virtualization-host'
+id: '7fc4ec09-7e32-4fb7-8f5e-6db2c32567dc'
 title: 'Detecting Remote Desktop Virtualization Host Feature'
 title_meta: 'Detecting Remote Desktop Virtualization Host Feature'
 keywords: ['remote', 'desktop', 'virtualization', 'host', 'feature']
@@ -17,6 +17,9 @@ The role detects the agents on which the Remote Desktop Virtualization Host feat
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell "(Get-WindowsFeature RDS-Virtualization).Installed"@%}` | Equals     | True   | Windows        |
+
+
+
 
 
 

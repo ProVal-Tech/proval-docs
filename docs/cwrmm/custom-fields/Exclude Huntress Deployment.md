@@ -1,5 +1,5 @@
 ---
-id: 'rmm-exclude-huntress'
+id: 'caedfebd-73ec-43cb-a978-02283622f430'
 title: 'Exclude Machine from Huntress Deployment'
 title_meta: 'Exclude Machine from Huntress Deployment'
 keywords: ['huntress', 'deployment', 'custom', 'field', 'endpoint']
@@ -23,6 +23,9 @@ Select this custom Field to exclude a machine from Huntress Deployment. It is be
 **Level:** Endpoint  
 **Description:** Select to Exclude Endpoint from Huntress Deployment  
 **Editable:** Yes  
+
+
+
 
 
 

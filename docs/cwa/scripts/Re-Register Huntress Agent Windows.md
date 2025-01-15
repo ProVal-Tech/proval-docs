@@ -1,5 +1,5 @@
 ---
-id: 'ps-re-register-huntress-agent'
+id: '6cf7ba91-b78d-4368-91a2-43095fad952b'
 title: 'Re-register Huntress Agent for Windows Machines'
 title_meta: 'Re-register Huntress Agent for Windows Machines'
 keywords: ['huntress', 'agent', 'windows', 'script', 'deployment']
@@ -53,6 +53,9 @@ This script can be used to re-register Huntress Agent for the Windows machines.
 ## Output
 
 - Script log
+
+
+
 
 
 

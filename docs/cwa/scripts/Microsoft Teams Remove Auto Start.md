@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-ms-teams-autostart'
+id: 'c09ed894-03d7-40e3-8cb0-2223bbeec648'
 title: 'Remove MS Teams Autostart Entry for All Users'
 title_meta: 'Remove MS Teams Autostart Entry for All Users'
 keywords: ['ms-teams', 'autostart', 'registry', 'login', 'users']
@@ -25,6 +25,9 @@ Time Saved by Automation: 15 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

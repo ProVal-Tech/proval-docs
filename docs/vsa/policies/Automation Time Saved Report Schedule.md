@@ -1,5 +1,5 @@
 ---
-id: 'vsa-automation-time-saved-report'
+id: 'a85247d0-7fe8-4221-8f25-6f3841297f38'
 title: 'Automation Time Saved Report Scheduling'
 title_meta: 'Automation Time Saved Report Scheduling'
 keywords: ['report', 'schedule', 'vsa', 'automation', 'policy']
@@ -27,6 +27,9 @@ Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation
   - **Policy Object Name**: Agent Procedures
     - **Policy Object Members**: Automation Time Saved Reports
       - **Policy Object Member Settings**: Monthly, Last Day, Midnight, Do not skip if offline
+
+
+
 
 
 

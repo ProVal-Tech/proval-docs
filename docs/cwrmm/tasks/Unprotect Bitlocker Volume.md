@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-bitlocker'
+id: '904664df-741e-4c18-9667-6bf351b4754c'
 title: 'Disable Bitlocker Protection on Volumes'
 title_meta: 'Disable Bitlocker Protection on Volumes'
 keywords: ['bitlocker', 'protection', 'disable', 'volumes', 'security']
@@ -197,6 +197,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-stuck-commands'
+id: 'c9ae6663-8100-457c-abb8-d210f9fd8f87'
 title: 'Autofix for Stuck Commands in ProVal Monitor'
 title_meta: 'Autofix for Stuck Commands in ProVal Monitor'
 keywords: ['autofix', 'stuck', 'commands', 'monitor', 'database']
@@ -35,6 +35,9 @@ This script will execute with the monitor and will delete all the executable com
 ## Output
 
 - Script log
+
+
+
 
 
 

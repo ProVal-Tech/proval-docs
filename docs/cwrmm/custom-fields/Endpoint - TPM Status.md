@@ -1,5 +1,5 @@
 ---
-id: 'rmm-tpm-status-storage'
+id: '55cb2f37-6e43-4ae5-bc96-a94b5f2d4144'
 title: 'TPM Status Storage'
 title_meta: 'TPM Status Storage'
 keywords: ['tpm', 'status', 'machine', 'storage', 'endpoint']
@@ -26,6 +26,9 @@ Stores TPM Status of the machine. Updated by [Get TPM Status](https://proval.itg
 
 ![Screenshot 1](../../../static/img/Endpoint---TPM-Status/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---TPM-Status/image_2.png)
+
+
+
 
 
 

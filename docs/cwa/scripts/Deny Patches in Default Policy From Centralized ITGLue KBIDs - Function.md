@@ -1,5 +1,5 @@
 ---
-id: 'cwa-deny-patches-default-policy'
+id: 'c9cac2f1-7647-41fb-bf13-13f23244ae37'
 title: 'Deny Patches in Default Policy from Centralized ITGLue KBIDs'
 title_meta: 'Deny Patches in Default Policy from Centralized ITGLue KBIDs'
 keywords: ['patches', 'policy', 'itglue', 'kbids', 'denied']
@@ -40,6 +40,9 @@ Step 2: Runs a loop to deny that KBID for all applicable operating systems.
 ## Output
 
 Denied Patches can be checked from the default approval policy.
+
+
+
 
 
 

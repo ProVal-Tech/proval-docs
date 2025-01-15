@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dhcp-scope-information'
+id: '489fe175-9ac6-420c-be2e-e5faceb956fd'
 title: 'DHCP Scope Information Storage'
 title_meta: 'DHCP Scope Information Storage'
 keywords: ['dhcp', 'scope', 'statistics', 'ip', 'lease', 'address', 'computer', 'client']
@@ -35,6 +35,9 @@ Stores information about DHCP scopes on the target machine gathered by the scrip
 | UsedIPCount       | INT     | The number of used IP addresses in the DHCP scope.      |
 | ReservedIPCount    | INT     | The number of reserved IP addresses in the DHCP scope.  |
 | PercentUsed       | INT     | The percentage of used IP addresses in the DHCP scope.  |
+
+
+
 
 
 

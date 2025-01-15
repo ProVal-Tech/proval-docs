@@ -1,5 +1,5 @@
 ---
-id: 'rmm-lsuclient-install-lenovo-update'
+id: '6e98d927-5337-44d1-ac5d-f92e2cad1ec7'
 title: 'LSUClient - Install Lenovo Update'
 title_meta: 'LSUClient - Install Lenovo Update'
 keywords: ['lenovo', 'update', 'install', 'script', 'rmm']
@@ -143,6 +143,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

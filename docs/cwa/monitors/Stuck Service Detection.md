@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-powershell-monitor-stuck-services'
+id: 'be3ca430-f53d-4198-9360-52894e5e6a6a'
 title: 'Remote PowerShell Monitor for Stuck Services'
 title_meta: 'Remote PowerShell Monitor for Stuck Services'
 keywords: ['remote', 'powershell', 'monitor', 'stuck', 'services', 'windows']
@@ -31,6 +31,9 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Windows Machine
+
+
+
 
 
 

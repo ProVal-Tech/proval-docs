@@ -1,5 +1,5 @@
 ---
-id: 'cwa_custom_table_repaired_computers'
+id: '1258c674-8d60-446d-a3c6-f3295ee682cf'
 title: 'Custom Table for Repaired Computers'
 title_meta: 'Custom Table for Repaired Computers'
 keywords: ['custom', 'table', 'repaired', 'computers', 'tracking']
@@ -30,6 +30,9 @@ The custom table stores the information of the repaired computers.
 | location     | varchar  | Location Name       |
 | computer     | varchar  | Computer Name       |
 | RepairTime   | datetime | Agent Repair Time   |
+
+
+
 
 
 

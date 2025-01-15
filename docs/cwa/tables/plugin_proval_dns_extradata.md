@@ -1,5 +1,5 @@
 ---
-id: 'cwa_dns_data_storage'
+id: 'cd3368d8-d0b0-4ca4-972e-4adc8c1cfcfa'
 title: 'DNS Data Storage for Target Machines'
 title_meta: 'DNS Data Storage for Target Machines'
 keywords: ['dns', 'data', 'storage', 'computer', 'interface', 'settings', 'table']
@@ -41,6 +41,9 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
+
+
+
 
 
 

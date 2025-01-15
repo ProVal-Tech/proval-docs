@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cpu-temperature-monitor'
+id: 'd1cd1622-27ec-4bbd-9297-1b4b7b2d65b2'
 title: 'CPU Temperature Monitor Setup'
 title_meta: 'CPU Temperature Monitor Setup for Windows Machines'
 keywords: ['cpu', 'temperature', 'monitor', 'windows', 'sensors']
@@ -28,6 +28,9 @@ Global
 
 ![Image 1](../../../static/img/Create/image_1.png)  
 ![Image 2](../../../static/img/Create/image_2.png)
+
+
+
 
 
 

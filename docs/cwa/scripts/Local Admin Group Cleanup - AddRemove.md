@@ -1,5 +1,5 @@
 ---
-id: 'ps-local-admin-group-cleanup'
+id: 'e228540f-e4f4-4e67-801f-cdff876f955f'
 title: 'Local Admin Group Cleanup Script'
 title_meta: 'Local Admin Group Cleanup Script for Managing Local Admins'
 keywords: ['local', 'admin', 'cleanup', 'script', 'windows']
@@ -113,6 +113,9 @@ The script attempted to make sure the approved users/groups (@Approved_Members@)
 
 **Note:** Set a Ticket Category to the [ProVal - Production - Local Admin Group Cleanup](https://proval.itglue.com/5078775/docs/16783515) monitor set to enable the ticket creation feature of the script.  
 ![Ticketing Note](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_12.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-onedrive-sync-status'
+id: 'ed03ad47-d4f8-4917-8ecc-0505b6172ece'
 title: 'OneDrive Sync Status Retrieval'
 title_meta: 'OneDrive Sync Status Retrieval'
 keywords: ['onedrive', 'sync', 'status', 'quota', 'script', 'custom', 'table']
@@ -43,6 +43,9 @@ Regular Execution:
    Ans: Yes, you just need to whitelist the below hashes:  
    C:/ProgramData/_Automation/Script/ODSync/ODSyncUtility.ps1: -> **A5EBD70394BA53B0D3A093FB47C94985**  
    C:/ProgramData/_Automation/Script/ODSyncUtil/ODSyncFetch.ps1: -> **4626F936E0BABCE79F350E096671A19F**  
+
+
+
 
 
 

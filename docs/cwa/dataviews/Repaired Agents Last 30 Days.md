@@ -1,5 +1,5 @@
 ---
-id: 'cwa-repaired-agents-dataview'
+id: 'cafd4aba-ae71-4098-bde5-52173cdc0427'
 title: 'Repaired Agents Dataview'
 title_meta: 'Repaired Agents Dataview'
 keywords: ['dataview', 'agents', 'repair', 'automate', 'information']
@@ -35,6 +35,9 @@ The dataview displays the information of the agents repaired by the [Script - Au
 | Last Logged In User      | Last Logged In User                                                                                    |
 | Last Contact with RMM    | Last Contact with RMM                                                                                 |
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
+
+
+
 
 
 

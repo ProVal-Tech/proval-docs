@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-kaseya-agent-live-connect'
+id: '3d96450d-5de8-4157-9ec8-d468e446f51a'
 title: 'Remove Kaseya Agent and Live Connect Applications'
 title_meta: 'Remove Kaseya Agent and Live Connect Applications'
 keywords: ['kaseya', 'agent', 'live', 'connect', 'windows', 'uninstallation']
@@ -25,6 +25,9 @@ The purpose of the script is to remove `Kaseya Agent` and `Live Connect` applica
 ## Output
 
 - Script Log
+
+
+
 
 
 

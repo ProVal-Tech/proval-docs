@@ -1,5 +1,5 @@
 ---
-id: 'cwa-veeambackupservice-monitor-setup'
+id: 'dce82a22-77ba-4133-90d9-78a0a1b88412'
 title: 'Veeam Backup Service Monitor Setup'
 title_meta: 'Veeam Backup Service Monitor Setup'
 keywords: ['veeam', 'monitor', 'service', 'setup', 'sql', 'alert']
@@ -271,6 +271,9 @@ The monitor will come up with the search '`VeeamBackupSvc`' added to the LIMIT.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

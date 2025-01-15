@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reset-vssadmin-size'
+id: '0600e89c-06a5-42da-9ed8-41e43d9cfd7d'
 title: 'Reset VSSAdmin Size'
 title_meta: 'Reset VSSAdmin Size - PowerShell Script'
 keywords: ['vssadmin', 'resize', 'storage', 'script', 'parameter']
@@ -47,6 +47,9 @@ The script validates scope and resize success.
 - Script log
 - Table
 - Dataview
+
+
+
 
 
 

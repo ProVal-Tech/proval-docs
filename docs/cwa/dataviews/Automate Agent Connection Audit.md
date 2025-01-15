@@ -1,5 +1,5 @@
 ---
-id: 'cwa-computer-online-offline-status'
+id: '1c5558e1-70a3-4b38-bdc0-e3eb8cf29d43'
 title: 'Computer Online vs Offline Status Overview'
 title_meta: 'Computer Online vs Offline Status Overview'
 keywords: ['status', 'online', 'offline', 'computer', 'audit', 'data', 'report']
@@ -59,6 +59,9 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 | Online Percentage - 30 Days     | Percentage of time the computer was online in the past 30 days                                      |
 | Offline Percentage - 30 Days    | Percentage of time the computer was offline in the past 30 days                                     |
 | Days since Data Collection       | Number of days the current calculations displayed in the dataview is based upon. It may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. It is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`. |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smbv1-detection-remediation'
+id: '4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b'
 title: 'SMBv1 Detection and Remediation Script'
 title_meta: 'SMBv1 Detection and Remediation Script'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability', 'monitoring']
@@ -74,6 +74,9 @@ It is required to execute this script after importing with setting the SetEnviro
    - **Body:**  
      The vulnerability has been remediated successfully. Refer to the below log information:  
      @SMB1DisableOutput@
+
+
+
 
 
 

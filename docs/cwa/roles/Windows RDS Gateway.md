@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rds-gateway-detection'
+id: '06dec980-1779-4612-a0cf-83587c6f2157'
 title: 'RDS Gateway Server Detection'
 title_meta: 'RDS Gateway Server Detection'
 keywords: ['rds', 'gateway', 'server', 'detection', 'windows']
@@ -17,6 +17,9 @@ This role determines if the agent is acting as an RDS Gateway server.
 | Detection String                                   | Comparator | Result | Applicable OS |
 |----------------------------------------------------|------------|--------|----------------|
 | {%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
+
+
+
 
 
 

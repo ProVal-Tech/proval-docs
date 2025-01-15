@@ -32,3 +32,6 @@ This will remove all homepage policies for the Google Chrome and Brave browsers.
 
     .\Remove-ChromiumHomepage-log.txt
 
+
+
+

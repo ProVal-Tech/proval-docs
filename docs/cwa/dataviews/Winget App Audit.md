@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-app-audit-summary'
+id: '399a36e3-da83-4437-914b-71e9b844c0d2'
 title: 'Winget App Audit Summary'
 title_meta: 'Winget App Audit Summary'
 keywords: ['winget', 'audit', 'applications', 'software', 'update']
@@ -40,6 +40,9 @@ Displays the information of `Winget` supported applications fetched by the [Wing
 | App Level                 | Installation level of the application (System/User).                                                    |
 | Auto Update Enabled       | Is the Auto Update Enabled for the application?(0/1). Refer the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script's document for detailed instructions on enabling Auto update. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
+
+
+
 
 
 

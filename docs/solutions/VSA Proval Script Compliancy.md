@@ -1,5 +1,5 @@
 ---
-id: 'vsa-check-endpoint-compatibility'
+id: '9ec556eb-e7b8-410d-8f03-0dcb0a8b549b'
 title: 'Check Endpoint Compatibility for ProVal Support'
 title_meta: 'Check Endpoint Compatibility for ProVal Support'
 keywords: ['endpoint', 'compatibility', 'proval', 'windows', 'customfield', 'agent', 'view']
@@ -29,6 +29,9 @@ Checks that an endpoint OS and Powerpoint version (for Windows) is ProVal suppor
 - Ensure AP has the appropriate CF assigned to updateSystemInfo()
 - Run AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
+
+
+
 
 
 

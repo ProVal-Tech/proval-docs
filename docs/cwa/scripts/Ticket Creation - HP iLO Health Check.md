@@ -1,5 +1,5 @@
 ---
-id: 'cwa-auto-fix-hp-ilo-health-check'
+id: '5c6b4bbb-732d-4d97-af38-f10d51a8a96c'
 title: 'Auto-Fix Script for HP iLO Health Check'
 title_meta: 'Auto-Fix Script for HP iLO Health Check'
 keywords: ['automation', 'ticketing', 'monitoring', 'client', 'server']
@@ -26,6 +26,9 @@ Should be executed from the `△ Custom - Ticket Creation - HP iLO Health Check`
 
 - Script Log
 - Ticket
+
+
+
 
 
 

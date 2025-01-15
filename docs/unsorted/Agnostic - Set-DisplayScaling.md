@@ -1,12 +1,12 @@
 ---
-id: 'ps-set-custom-display-scaling'
+id: 'ee4d2c2e-9944-4dcc-aaac-ab3c60bb15f6'
 title: 'Set Custom Display Scaling for Windows Machines'
 title_meta: 'Set Custom Display Scaling for Windows Machines'
 keywords: ['windows', 'scaling', 'display', 'dpi', 'registry']
 description: 'This document provides a step-by-step guide on how to set custom display scaling for Windows machines using PowerShell. It covers the necessary requirements, the process to modify registry keys for DPI scaling, and details on how to use the provided script with examples of parameters and expected output.'
 tags: ['windows', 'configuration', 'performance', 'setup']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -42,6 +42,9 @@ Set Custom Display Scaling for Windows Machines
 ./Set-DisplayScaling-log.txt
 ./Set-DisplayScaling-Error.txt
 ```
+
+
+
 
 
 

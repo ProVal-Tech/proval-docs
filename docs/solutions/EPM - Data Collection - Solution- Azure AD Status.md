@@ -1,5 +1,5 @@
 ---
-id: 'vsa-check-azure-ad-status'
+id: 'c852661d-3253-466e-ae17-ee2753885920'
 title: 'Check Azure AD Status of a Machine'
 title_meta: 'Check Azure AD Status of a Machine'
 keywords: ['azure', 'ad', 'status', 'machine', 'agent', 'procedure', 'custom', 'field']
@@ -25,6 +25,9 @@ This solution is used to check the Azure AD status of a machine. An agent proced
 - View needs to be created
 - Custom Field needs to be created
 - Agent Procedure needs to be run once these are created
+
+
+
 
 
 

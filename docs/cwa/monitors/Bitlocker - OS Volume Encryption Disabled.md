@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-monitoring-check'
+id: '369dac26-3df5-4591-8d51-47fc1cd7204c'
 title: 'Bitlocker Monitoring Check for Target Machines'
 title_meta: 'Bitlocker Monitoring Check for Target Machines'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'compliance']
@@ -92,6 +92,9 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---OS-Volume-Encryption-Disabled/image_1.png)
+
+
+
 
 
 

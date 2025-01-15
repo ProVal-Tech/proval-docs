@@ -1,5 +1,5 @@
 ---
-id: 'cwa-tls-1.0-agent-check'
+id: '9eaa6337-abd3-42ee-afc3-556723ce25da'
 title: 'Check if Agent has TLS 1.0 Enabled'
 title_meta: 'Check if Agent has TLS 1.0 Enabled'
 keywords: ['tls', 'agent', 'security', 'windows']
@@ -17,6 +17,9 @@ This role shows if an agent has TLS 1.0 Enabled.
 | Detection String                                                                 | Comparator | Result | Applicable OS |
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.0/Client:Enabled-%} | Equals     | 1      | Windows        |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-orchestrator-monitor'
+id: 'b0d63a21-0540-43a1-9269-079d3bfaa48d'
 title: 'Windows Update Orchestrator Monitor'
 title_meta: 'Windows Update Orchestrator Monitor'
 keywords: ['monitor', 'windows', 'update', 'orchestrator', 'service']
@@ -53,6 +53,9 @@ The reboot file at "C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrat
 ## Implementation
 
 [Implement - Remote Monitor - Windows Update Orchestrator](https://proval.itglue.com/DOC-5078775-16291367)
+
+
+
 
 
 

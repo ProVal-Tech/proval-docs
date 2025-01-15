@@ -1,5 +1,5 @@
 ---
-id: 'ps-resize-partition-winre-update'
+id: '25717003-b658-47c5-abdf-978f9c2b5d5c'
 title: 'Resize Partition to Install the WinRE Update'
 title_meta: 'Resize Partition to Install the WinRE Update'
 keywords: ['partition', 'winre', 'update', 'resize', 'windows']
@@ -47,6 +47,9 @@ It creates the Primary partition with the size increase and a label 'Windows RE 
 ## Output
 
 - Script log
+
+
+
 
 
 

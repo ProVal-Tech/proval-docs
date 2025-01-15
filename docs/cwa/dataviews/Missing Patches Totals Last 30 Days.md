@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-information-dataview'
+id: '2f00a1ec-90be-4572-9479-facb7c12cb5c'
 title: 'Patching Information Dataview'
 title_meta: 'Patching Information Dataview'
 keywords: ['patching', 'dataview', 'devices', 'servers', 'workstations', 'missing', 'total', 'reviewed']
@@ -24,6 +24,9 @@ This Dataview provides patching information for devices online within the last 3
 | TotalPerMachine                   | Displays the number of patches per machine that have been online in the last 30 days                 |
 | TotalMissingUnfiltered             | Displays the number of patches that are unfiltered                                                   |
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
+
+
+
 
 
 

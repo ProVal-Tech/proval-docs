@@ -1,5 +1,5 @@
 ---
-id: 'cwa-backup-exec-no-successful-backups'
+id: 'abddfc3a-9f1b-4356-a62c-3475cdb32c96'
 title: 'Backup Exec - No Successful Backups in 3 Days'
 title_meta: 'Backup Exec - No Successful Backups in 3 Days'
 keywords: ['backup', 'exec', 'alert', 'monitoring', 'ticketing']
@@ -42,6 +42,9 @@ Backup Management > Backup Exec
 ## How to Import
 
 [Import - Remote Monitor - Backup Exec - No successful backups in 3 days](https://proval.itglue.com/DOC-5078775-13244086)  
+
+
+
 
 
 

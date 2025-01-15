@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-ad-recycle-bin-monitor'
+id: '2d98b419-3d5d-4278-a4ce-f2cacba569c5'
 title: 'Enable AD Recycle Bin Monitor'
 title_meta: 'Enable AD Recycle Bin Monitor'
 keywords: ['monitor', 'ad', 'recycle', 'bin', 'tickets', 'alerts']
@@ -49,6 +49,9 @@ This monitor will create tickets if [Task - Enable AD Recycle Bin](https://prova
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
    ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
+
+
+
 
 
 

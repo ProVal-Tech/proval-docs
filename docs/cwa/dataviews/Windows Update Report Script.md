@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-report-dataview'
+id: '88f63da5-1a24-4545-b322-f6a3dfbc79cf'
 title: 'Windows Update Report Dataview'
 title_meta: 'Windows Update Report Dataview'
 keywords: ['patches', 'windows', 'report', 'dataview', 'update', 'installed', 'available']
@@ -57,6 +57,9 @@ This dataview was required to display a detailed list of patches that are instal
 | Recommended Memory              | Recommended Memory to Install the Patch              |
 
 Note: Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
+
+
+
 
 
 

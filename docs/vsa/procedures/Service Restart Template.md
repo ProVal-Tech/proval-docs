@@ -1,5 +1,5 @@
 ---
-id: 'vsa-windows-update-service-restart'
+id: '3718e4a9-a415-450a-ba5f-f68d7bb63277'
 title: 'Windows Update Service Restart'
 title_meta: 'Windows Update Service Restart'
 keywords: ['service', 'restart', 'windows', 'update', 'endpoint']
@@ -58,6 +58,9 @@ Calls the agnostic content to force a service restart on the endpoint. Performs 
 %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-log.txt  
 %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-UNIXDATE-log.txt (archive of previous log)  
 Agent Procedure Log
+
+
+
 
 
 

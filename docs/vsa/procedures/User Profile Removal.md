@@ -1,5 +1,5 @@
 ---
-id: 'ps-user-profile-removal'
+id: 'c7103d81-4170-443a-b460-7522ac99e279'
 title: 'User Profile Removal'
 title_meta: 'User Profile Removal'
 keywords: ['user', 'profile', 'removal', 'endpoint', 'script']
@@ -45,6 +45,9 @@ Cannot remove the user profile of a currently logged in user. (See Agent Procedu
 ## Output
 
 AP Log
+
+
+
 
 
 

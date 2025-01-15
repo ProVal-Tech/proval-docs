@@ -1,12 +1,12 @@
 ---
-id: 'ps-windows-input-language-settings'
+id: '6d8e0943-716a-4ebd-b878-1e648a2ddc56'
 title: 'Windows Input Language Settings'
 title_meta: 'Windows Input Language Settings'
 keywords: ['windows', 'input', 'language', 'settings', 'keyboard', 'locale']
 description: 'This document explains how to determine the input language settings on Windows systems, highlighting the differences between system locale and input locale, and how they affect keyboard layouts for multilingual users.'
 tags: ['configuration', 'windows', 'keyboard', 'locale']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -25,6 +25,9 @@ So, if your system locale is English (United States) and your input locale is Fr
 ## Sample
 
 ![Sample Image](../../static/img/Dynamic-Input-Language-Role/image_1.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm_duo-auth-windows-login-failed'
+id: 'beaa71b6-62a3-4800-9c24-da92d4566965'
 title: 'DUO Auth for Windows Login Failed Deployment Group'
 title_meta: 'DUO Auth for Windows Login Failed Deployment Group'
 keywords: ['duo', 'deployment', 'failed', 'windows', 'login', 'group', 'audit']
@@ -47,6 +47,9 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Failed`
+
+
+
 
 
 

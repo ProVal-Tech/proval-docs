@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-local-accounts'
+id: '45074a99-85a8-4e7f-bda4-775697504bad'
 title: 'Remove Local Accounts Script'
 title_meta: 'Remove Local Accounts Script for User Management'
 keywords: ['remove', 'local', 'accounts', 'purge', 'user', 'management']
@@ -54,6 +54,9 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+
+
+
 
 
 

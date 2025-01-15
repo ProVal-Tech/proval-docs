@@ -1,5 +1,5 @@
 ---
-id: 'cwa-printnightmare-vulnerability'
+id: 'f016ea11-da3b-4834-a5f0-3a55e3e3ad53'
 title: 'PrintNightMare Vulnerability Overview'
 title_meta: 'PrintNightMare Vulnerability Overview'
 keywords: ['printnightmare', 'vulnerability', 'cve-2021-1675', 'mitigation', 'status']
@@ -30,6 +30,9 @@ This dataview will collectively show all required information about the PrintNig
 | Point And Print Status    | Point And Print Registry check         |
 | CVE-2021-34527 Patch      | CVE Patch install status               |
 | Mitigation Status         | It confirms whether mitigation applied or not. |
+
+
+
 
 
 

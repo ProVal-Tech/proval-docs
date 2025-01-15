@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-inventory-alert'
+id: 'cb58d7c6-a83c-4459-b3b1-53871b63d078'
 title: 'Internal Monitor for Inventory Alert'
 title_meta: 'Internal Monitor for Inventory Alert'
 keywords: ['monitor', 'inventory', 'alert', 'virtualization', 'host']
@@ -19,6 +19,9 @@ Internal monitor that will alert if a host has not gathered inventory in more th
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+
+
 
 
 

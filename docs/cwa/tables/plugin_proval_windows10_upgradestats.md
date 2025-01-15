@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-feature-update-install-latest'
+id: '75c18bf0-9ebc-43c7-a5a3-03510d131af5'
 title: 'Windows 10 - Feature Update - Install Latest Script Success and Failures'
 title_meta: 'Windows 10 - Feature Update - Install Latest Script Success and Failures'
 keywords: ['windows', 'update', 'installation', 'success', 'failures', 'statistics']
@@ -30,6 +30,9 @@ Contains data regarding the Windows 10 - Feature Update - Install Latest script 
 | Successes          | TinyInt   | The Count of Successful installations for this version.                                        |
 | Failures           | TinyInt   | The Count of Failed attempts to install this version.                                          |
 | TotalAttempts      | INT       | The Total attempts it took to upgrade to this version.                                         |
+
+
+
 
 
 

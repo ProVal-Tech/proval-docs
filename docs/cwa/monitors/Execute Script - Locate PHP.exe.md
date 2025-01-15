@@ -1,5 +1,5 @@
 ---
-id: 'cwa-locate-php-exe-weekly-execution'
+id: '20be21ac-550d-478e-b486-34d2879725e0'
 title: 'Locate PHP.exe Weekly Execution'
 title_meta: 'Locate PHP.exe Weekly Execution'
 keywords: ['php', 'execution', 'script', 'windows', 'computers']
@@ -24,6 +24,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Find PHP.exe`
+
+
+
 
 
 

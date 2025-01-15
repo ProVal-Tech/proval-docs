@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dhcp-scopes-ip-monitor'
+id: '90ad5d20-a081-4027-b8e2-238cbdbe64d3'
 title: 'DHCP Scope(s) with Insufficient IP Addresses Monitor'
 title_meta: 'DHCP Scope(s) with Insufficient IP Addresses Monitor'
 keywords: ['dhcp', 'monitor', 'ip', 'addresses', 'network', 'alert', 'server']
@@ -92,6 +92,9 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) < 5 IP Addresses Available](https://proval.itglue.com/DOC-5078775-13206534).
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-clean-lt-caching-folder'
+id: 'e0706097-bc34-4648-b117-8fa1706a21e5'
 title: 'Clean LT Caching Folder Script'
 title_meta: 'Clean LT Caching Folder Script'
 keywords: ['cleanup', 'caching', 'script', 'lt', 'folder', 'automation']
@@ -33,6 +33,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

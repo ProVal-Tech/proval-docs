@@ -31,3 +31,6 @@ Removes enforced homepages in Chrome and Edge. After running, user configuration
 ## Output
     .\Set-ChromiumHomepage-log.txt
 
+
+
+

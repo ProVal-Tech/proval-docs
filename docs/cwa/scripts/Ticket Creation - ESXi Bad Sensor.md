@@ -1,5 +1,5 @@
 ---
-id: 'vsa-esxi-bad-sensor-monitor-script'
+id: '26780ede-b390-4f16-9d5a-de876ab180ee'
 title: 'ESXi Bad Sensor Monitor Ticket Creation Script'
 title_meta: 'ESXi Bad Sensor Monitor Ticket Creation Script'
 keywords: ['esxi', 'monitor', 'ticket', 'sensor', 'automation']
@@ -45,6 +45,9 @@ This script's only dependency is that the monitor that is triggering the script 
 > Type: Storage - Error      Message: Disk 2 on HPSA1 : Port  Box 0 Bay 0 : 0GB : Unconfigured Disk : Disk Error  
 > Type: Storage - Error      Message: Disk 3 on HPSA1 : Port  Box 0 Bay 0 : 0GB : Unconfigured Disk : Disk Error  
 > Type: Storage - Error      Message: Disk 4 on HPSA1 : Port  Box 0 Bay 0 : 0GB : Unconfigured Disk : Disk Error  
+
+
+
 
 
 

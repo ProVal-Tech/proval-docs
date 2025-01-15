@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disk-space-monitoring'
+id: '60098f78-b790-4010-a675-c85b54613e08'
 title: 'Disk Space Monitoring Implementation'
 title_meta: 'Disk Space Monitoring Implementation'
 keywords: ['disk', 'monitoring', 'space', 'agent', 'check']
@@ -23,6 +23,9 @@ unlisted: false
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+
+
 
 
 

@@ -38,3 +38,6 @@ This will remove uBlock Origin from the policy, uninstall it, and prevent its re
 
     .\Unregister-FirefoxExtension-log.txt
 
+
+
+

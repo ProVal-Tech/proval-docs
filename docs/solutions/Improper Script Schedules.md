@@ -1,5 +1,5 @@
 ---
-id: 'cwa-improper-scheduled-scripts'
+id: 'fbd5de2a-f562-4f02-8eff-365942bc908c'
 title: 'Improperly Scheduled Scripts Overview'
 title_meta: 'Improperly Scheduled Scripts Overview'
 keywords: ['scheduling', 'scripts', 'dataview', 'mysql', 'permissions']
@@ -49,6 +49,9 @@ Validate the presence of data in the [CWM - Automate - Dataview - Improper Scrip
 
 ### 6.
 Remove the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](https://proval.itglue.com/DOC-5078775-16504517) script.
+
+
+
 
 
 

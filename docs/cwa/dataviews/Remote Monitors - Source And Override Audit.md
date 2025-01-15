@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-source-override-status'
+id: 'a8d876f8-5972-43ff-8318-26930e6f5300'
 title: 'Remote Monitor Source and Override Status'
 title_meta: 'Remote Monitor Source and Override Status Overview'
 keywords: ['remote', 'monitor', 'override', 'status', 'client', 'location', 'computer', 'os', 'alert', 'template']
@@ -25,6 +25,9 @@ This dataview shows all the Remote monitor Source and their Override status.
 | Monitor Source           | Display the source of the monitor, whether it's coming from a group or Ignite or Local or Override. |
 | Monitor Override Status   | Display the Monitor Override status. Override or Normal.                  |
 | Alert Template           | Display the name of the Alert template applied on the monitor set.        |
+
+
+
 
 
 

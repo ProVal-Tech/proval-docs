@@ -1,5 +1,5 @@
 ---
-id: 'cwa-latest-windows-rollup-update'
+id: '70484928-22c8-4aed-a32b-861646feaaaf'
 title: 'Latest Windows Rollup Update Information'
 title_meta: 'Latest Windows Rollup Update Information'
 keywords: ['windows', 'update', 'rollup', 'patch', 'client', 'location', 'computer', 'agent', 'os', 'version', 'kb', 'contact']
@@ -30,6 +30,9 @@ This dataview displays information about the latest Windows rollup update that h
 | Latest Rollup   | Latest Rollup patch installed detail                      |
 | KB              | Latest rollup KB installed detail                         |
 | LastContact     | Agent Last Contact with the Automate                      |
+
+
+
 
 
 

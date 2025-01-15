@@ -1,5 +1,5 @@
 ---
-id: 'cwa-offline-agent-remediation'
+id: '4bc06cc4-3b78-452a-b602-063e57221234'
 title: 'Offline Agent Remediation'
 title_meta: 'Offline Agent Remediation'
 keywords: ['monitor', 'machines', 'contact', 'action', 'agent', 'ticket', 'maintenance', 'template']
@@ -23,6 +23,9 @@ Global
 **Name:** △ Custom - Autofix - Offline Agent Remediation (RMM+)
 
 **Note:** The alert template should be executing the [Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441)
+
+
+
 
 
 

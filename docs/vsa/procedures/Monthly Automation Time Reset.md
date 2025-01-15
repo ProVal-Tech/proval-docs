@@ -1,5 +1,5 @@
 ---
-id: 'vsa-monthly-cf-reset'
+id: '1552dec9-04ae-484f-b217-922542928af3'
 title: 'Monthly CF Reset Procedure'
 title_meta: 'Monthly CF Reset Procedure for ConnectWise Automate'
 keywords: ['monthly', 'cf', 'reset', 'automation', 'procedure']
@@ -30,6 +30,9 @@ Sets the Monthly CF to 0
 ## Output
 
 None
+
+
+
 
 
 

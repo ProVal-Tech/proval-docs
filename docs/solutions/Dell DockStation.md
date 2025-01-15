@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-dell-dockstation'
+id: '2e4ec512-945a-4b3d-ba18-53553b08f4ca'
 title: 'Detect Dell Dockstation on Dell Workstations'
 title_meta: 'Detect Dell Dockstation on Dell Workstations'
 keywords: ['dell', 'dockstation', 'workstation', 'inventory', 'monitor']
@@ -36,6 +36,9 @@ The purpose of this solution is to detect Dell Dockstation on Dell workstations.
      - [Internal Monitor - Execute Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073356)
        - `△ Custom - Execute Script - Get-DellDockStation`
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

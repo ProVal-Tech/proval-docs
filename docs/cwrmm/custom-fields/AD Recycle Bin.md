@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-ad-recycle-bin'
+id: 'e4801a6f-1945-4aee-bd39-1601a185b9eb'
 title: 'Enable AD Recycle Bin'
 title_meta: 'Enable AD Recycle Bin'
 keywords: ['active-directory', 'recycle', 'custom', 'field', 'status']
@@ -24,6 +24,9 @@ The [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-1534951
 **Default value:** 0  
 **Description:** This Custom field is being used by Enable Recycle Bin Task to store the Recycle bin status On AD Infrastructure Masters  
 **Editable:** Yes  
+
+
+
 
 
 

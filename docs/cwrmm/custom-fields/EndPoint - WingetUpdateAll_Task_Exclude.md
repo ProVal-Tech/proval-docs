@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winget-update-exclusion'
+id: '91965ea0-f912-4f5d-8e42-c9ee546293a9'
 title: 'Winget Update Exclusion for Computers'
 title_meta: 'Winget Update Exclusion for Computers'
 keywords: ['winget', 'update', 'exclusion', 'task', 'computer']
@@ -23,6 +23,9 @@ Marking this custom field will exclude the machine from [CW RMM - Machine Group 
 ## ScreenShot
 
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_1.png) ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_2.png)
+
+
+
 
 
 

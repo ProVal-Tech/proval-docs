@@ -1,5 +1,5 @@
 ---
-id: 'cwa-deploy-perch-log-shipper'
+id: '0b20cd24-d35c-47c9-a35d-cd1f2a5ac2e8'
 title: 'Deploying Perch Log Shipper on Windows Machines'
 title_meta: 'Deploying Perch Log Shipper on Windows Machines'
 keywords: ['perch', 'log', 'shipper', 'windows', 'deployment', 'monitor']
@@ -38,6 +38,9 @@ Read the associated documents carefully.
 - Make sure [Script - Deploy Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986108) script is bonded to the `△ Custom -  Execute Script - Deploy Perch Log Shipper` Alert template.
 - Make sure `△ Custom -  Execute Script - Deploy PerchLogShipper` Alert template is being used with [Internal Monitor - Agents Missing Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986404)
 - Right-Click + Run Now to Enable [Internal Monitor - Agents Missing Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986404) to start deploying Perch Log Shipper on required machines.
+
+
+
 
 
 

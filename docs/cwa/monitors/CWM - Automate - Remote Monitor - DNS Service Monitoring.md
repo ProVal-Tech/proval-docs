@@ -1,5 +1,5 @@
 ---
-id: 'ps-remote-monitor-dns-service'
+id: '3dd42a74-e25a-44df-8d49-89e6b57139ce'
 title: 'Remote Monitor for DNS Service'
 title_meta: 'Remote Monitor for DNS Service'
 keywords: ['dns', 'monitor', 'service', 'windows', 'ticketing']
@@ -47,6 +47,9 @@ Windows DNS Servers
 ## Implementation
 
 [Import - Remote Monitor - DNS Service Monitoring](https://proval.itglue.com/DOC-5078775-13604735)
+
+
+
 
 
 

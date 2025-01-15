@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-advanced-windows-security-auditing'
+id: '0a012cf5-0ead-442a-bc82-f5c5fe0b13f8'
 title: 'Enable Advanced Windows Security Auditing'
 title_meta: 'Enable Advanced Windows Security Auditing'
 keywords: ['windows', 'security', 'auditing', 'monitoring', 'event']
@@ -42,6 +42,9 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Managed Windows Servers and Workstations
+
+
+
 
 
 

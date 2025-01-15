@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-jobs-summary'
+id: '28461e0d-185e-4c6f-8f34-4b9124abf400'
 title: 'Patching Jobs Summary per Client'
 title_meta: 'Patching Jobs Summary per Client'
 keywords: ['patching', 'jobs', 'client', 'summary', 'hours']
@@ -22,6 +22,9 @@ This dataview represents the number of patching jobs and total patching hours pe
 | Number of Patch Jobs last 30 days  | Number of Patch Jobs per Client in the last 30 days      |
 | Sum of Patching hours last 30 days | Sum of Patching hours per Client in the last 30 days     |
 | Total Patch Duration               | Total Patch Duration per Client in the last 30 days      |
+
+
+
 
 
 

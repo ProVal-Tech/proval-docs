@@ -1,5 +1,5 @@
 ---
-id: 'cwa-join-machine-to-domain-offline'
+id: '6a427581-70ba-456b-8985-f16d9b051c35'
 title: 'Join a Machine to a Domain Offline'
 title_meta: 'Join a Machine to a Domain Offline'
 keywords: ['domain', 'join', 'offline', 'dc', 'network']
@@ -37,6 +37,9 @@ The target is then checked for success in the offline domain join.
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-out-of-date-cu-install-failure'
+id: '12423bcf-17d9-417e-ad6e-b862dd04f184'
 title: 'Out of Date CU Installation Failure Detection'
 title_meta: 'Out of Date CU Installation Failure Detection'
 keywords: ['cumulative', 'update', 'failure', 'detection', 'windows']
@@ -60,6 +60,9 @@ The group will detect the computers where the Latest Cumulative Update installat
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_15.png)
 
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_16.png)
+
+
+
 
 
 

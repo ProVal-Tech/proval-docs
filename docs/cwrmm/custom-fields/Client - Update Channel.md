@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-update-channel'
+id: '656f037b-8dba-4e59-b135-33dcd5b0b7dc'
 title: 'Set Update Channel for Microsoft 365 Clients'
 title_meta: 'Set Update Channel for Microsoft 365 Clients'
 keywords: ['update', 'channel', 'microsoft365', 'client', 'computer']
@@ -31,6 +31,9 @@ Available options are:
 
 ![Image](../../../static/img/Client---Update-Channel/image_1.png)  
 ![Image](../../../static/img/Client---Update-Channel/image_2.png)  
+
+
+
 
 
 

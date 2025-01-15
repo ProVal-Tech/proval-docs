@@ -1,5 +1,5 @@
 ---
-id: 'vsa-office-update-schedule-select-macos'
+id: 'bf426f89-7da1-4f4b-88b7-03983136458c'
 title: 'Office Update Schedule Select for macOS'
 title_meta: 'Office Update Schedule Select for macOS'
 keywords: ['office', 'macos', 'update', 'channel', 'procedure']
@@ -39,6 +39,9 @@ Two log entries are expected. The procedure will first check the existing channe
 ![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_5.png)  
 Custom Field  
 ![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_6.png)
+
+
+
 
 
 

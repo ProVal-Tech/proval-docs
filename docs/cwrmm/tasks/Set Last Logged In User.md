@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-last-logged-in-user'
+id: 'a998bb96-b12c-40d9-b117-3225c621341a'
 title: 'Set Last Logged In User'
 title_meta: 'Set Last Logged In User - Manage Windows Login Information'
 keywords: ['last', 'logged', 'user', 'windows', 'login', 'script', 'management']
@@ -194,6 +194,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
+
 
 
 

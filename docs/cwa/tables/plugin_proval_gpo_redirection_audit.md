@@ -1,5 +1,5 @@
 ---
-id: 'cwa-redirection-audit-dataview'
+id: '025887c2-41a2-4e85-b706-dc0841a104d9'
 title: 'Redirection Audit Dataview Setup'
 title_meta: 'Redirection Audit Dataview Setup for GPO Redirection Settings'
 keywords: ['gpo', 'audit', 'dataview', 'redirection', 'settings']
@@ -43,6 +43,9 @@ CREATE TABLE IF NOT EXISTS `@TableName@` (
 )
 COLLATE='utf8_general_ci';
 ```
+
+
+
 
 
 

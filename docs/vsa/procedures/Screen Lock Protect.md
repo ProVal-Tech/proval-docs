@@ -1,5 +1,5 @@
 ---
-id: 'vsa-set-screen-lock-timeout'
+id: '7321634c-9259-454e-b7f4-c0ce205a3d8a'
 title: 'Set Screen Lock Timeout on Endpoint'
 title_meta: 'Set Screen Lock Timeout on Endpoint'
 keywords: ['screen', 'lock', 'timeout', 'endpoint', 'configuration']
@@ -48,6 +48,9 @@ Uses the ProVal Agnostic Protect-ScreeenLock script to set a configurable timeou
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

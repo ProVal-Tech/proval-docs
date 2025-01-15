@@ -1,5 +1,5 @@
 ---
-id: 'cwa-download-file-sftp'
+id: 'f583b03a-3b9c-4630-b104-5f32fb5c55b9'
 title: 'Download File from SFTP Servers'
 title_meta: 'Download File from SFTP Servers'
 keywords: ['sftp', 'download', 'file', 'client', 'password', 'entry']
@@ -48,6 +48,9 @@ Setting the required details to execute the script into a client-level password 
 ## Output
 
 - Script Logs
+
+
+
 
 
 

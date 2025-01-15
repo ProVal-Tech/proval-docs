@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-summary'
+id: 'afe8b7a5-442c-415e-9a9a-32a10702c189'
 title: 'Script Summary DataView'
 title_meta: 'Script Summary DataView for ConnectWise Automate'
 keywords: ['script', 'summary', 'dataview', 'logs', 'permissions', 'performance']
@@ -42,6 +42,9 @@ The Script log retention days can be seen at the automate location below:
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Automate---Script-List/image_2.png)
+
+
+
 
 
 

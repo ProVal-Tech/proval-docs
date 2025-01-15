@@ -1,5 +1,5 @@
 ---
-id: 'cwa-managing-bitlocker-protection'
+id: 'f41e4d71-7074-4c28-8246-b8e3036c1212'
 title: 'Managing Bitlocker Protection on Endpoints'
 title_meta: 'Managing Bitlocker Protection on Endpoints'
 keywords: ['bitlocker', 'encryption', 'security', 'audit', 'monitoring']
@@ -143,6 +143,9 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](https://proval.itglue.com/DOC-5078775-13808694).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

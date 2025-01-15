@@ -1,5 +1,5 @@
 ---
-id: 'cwa-auditing-hardening-rules'
+id: '76867be6-fe44-441a-92ce-e3d1124c361d'
 title: 'Auditing and Hardening Rules for CW Control Servers'
 title_meta: 'Auditing and Hardening Rules for CW Control Servers'
 keywords: ['auditing', 'hardening', 'gpo', 'security', 'windows', 'iis', 'tls', 'ports', 'automation']
@@ -46,6 +46,9 @@ Time Saved by Automation: 30 Minutes
 ## Output
 
 Ticket
+
+
+
 
 
 

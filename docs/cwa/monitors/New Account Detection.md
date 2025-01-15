@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-new-user-account'
+id: '75f8c13f-04d5-45fd-b650-3b010353a8c0'
 title: 'Remote Monitor for New User Account Creation'
 title_meta: 'Remote Monitor for New User Account Creation'
 keywords: ['monitor', 'user', 'account', 'event', 'log', 'windows', 'server', 'workstation']
@@ -37,6 +37,9 @@ The suggested target for the monitor: Service Plan(s) for Servers and Workstatio
 Examples:  
 Windows Servers - Should be run on all Windows-based servers.  
 Windows Workstations - Should be run on all Windows workstations (Optional).
+
+
+
 
 
 

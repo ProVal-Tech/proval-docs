@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-bitlocker-execution'
+id: 'b6bf288a-a1f5-4d76-9973-1ecfca5521a5'
 title: 'Detect BitLocker Script Execution'
 title_meta: 'Detect BitLocker Script Execution'
 keywords: ['bitlocker', 'audit', 'monitor', 'encryption', 'script']
@@ -38,6 +38,9 @@ Global
 *Available for import within the ProSync Plugin.*
 
 Note: Ensure the presence of [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520) table and [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script in the environment before creating the monitor set and importing the alert template.
+
+
+
 
 
 

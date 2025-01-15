@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-cu-compliance-metrics'
+id: '198f0265-3e5b-4828-9e86-dfe727bc2d1c'
 title: 'Patching and CU Compliance Metrics'
 title_meta: 'Patching and CU Compliance Metrics'
 keywords: ['patching', 'compliance', 'windows', 'dataview', 'metrics']
@@ -60,6 +60,9 @@ The purpose of the dataviews included in this solution is to present the patchin
 8. Remove/delete the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
    - [MySQL - View - Create (pvl_patch_cu_compliance)](https://proval.itglue.com/DOC-5078775-15392208)
+
+
+
 
 
 

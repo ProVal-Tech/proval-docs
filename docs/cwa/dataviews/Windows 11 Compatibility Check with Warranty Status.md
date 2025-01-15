@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows11-compatibility-check'
+id: '8f914719-a7f7-4ed8-99fb-667c8c26237d'
 title: 'Windows 11 Compatibility Check'
 title_meta: 'Windows 11 Compatibility Check'
 keywords: ['windows', 'upgrade', 'compatibility', 'check', 'machine', 'status', 'client', 'location']
@@ -39,6 +39,9 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 | Purchase Date              | Purchase Date of the Device.                                                                        |
 | Expiry Date                | Warranty Expiry Date of the Device.                                                                 |
 | Warranty Status            | Warranty Status of the Device (Expired/Expiring Soon/In Warranty).                                 |
+
+
+
 
 
 

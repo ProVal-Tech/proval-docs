@@ -1,5 +1,5 @@
 ---
-id: 'vsa-firefox-extensions-audit'
+id: '12fe20c3-a531-4f0c-803c-2cd523342e8b'
 title: 'Firefox Extensions Audit'
 title_meta: 'Firefox Extensions Audit'
 keywords: ['firefox', 'extensions', 'audit', 'endpoint', 'data']
@@ -22,6 +22,9 @@ Lists all firefox extensions installed on the endpoint
 | Field Name                       | Type of Field (Machine or Organization) | Description                                        |
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
 | xPVAL Firefox Extensions Installed | Mach                                    | Lists all firefox extensions installed on the endpoint |
+
+
+
 
 
 

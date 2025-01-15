@@ -1,5 +1,5 @@
 ---
-id: 'ps-enable-authenticode-verification'
+id: '847585fe-5c51-4479-9562-9524ab687330'
 title: 'Enable Authenticode Verification on Windows'
 title_meta: 'Enable Authenticode Verification on Windows'
 keywords: ['authenticode', 'verification', 'windows', 'script', 'reboot']
@@ -42,6 +42,9 @@ This script is used to Enable the Authenticode Verification on the Windows machi
 ## Output
 
 Agent procedure log.
+
+
+
 
 
 

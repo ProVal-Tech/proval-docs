@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-m365updatechannel'
+id: '77f0982f-1be7-49a7-871e-cfc88705775e'
 title: 'Get M365 Update Channel'
 title_meta: 'Get M365 Update Channel - Configure Microsoft 365 Update Channel via Registry'
 keywords: ['microsoft', 'update', 'channel', 'registry', 'client', 'computer', 'edf']
@@ -47,6 +47,9 @@ This script will make changes in the registry to set the update channel for Micr
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unexpected-restart-monitor'
+id: '64476262-ad0f-474e-aebb-70ec1e0ccd97'
 title: 'Unexpected Restart Monitor Setup'
 title_meta: 'Unexpected Restart Monitor Setup for ConnectWise Automate'
 keywords: ['restart', 'monitor', 'shutdown', 'event', 'alert', 'template', 'bluescreen', 'power']
@@ -58,6 +58,9 @@ The Unexpected restart monitor creates a lot of noise as a lot of the time the s
 ![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens./image_4.png)
 
 ## FAQ
+
+
+
 
 
 

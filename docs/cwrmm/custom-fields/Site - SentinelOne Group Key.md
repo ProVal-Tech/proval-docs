@@ -1,5 +1,5 @@
 ---
-id: 'rmm-sentinelone-group-key'
+id: 'ecb78b4e-fa63-4bd0-b59a-e0e0412b6cd5'
 title: 'SentinelOne Group Key Management'
 title_meta: 'SentinelOne Group Key Management'
 keywords: ['sentinelone', 'group', 'key', 'management', 'endpoints']
@@ -25,6 +25,9 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---SentinelOne-Group-Key/image_1.png)
+
+
+
 
 
 

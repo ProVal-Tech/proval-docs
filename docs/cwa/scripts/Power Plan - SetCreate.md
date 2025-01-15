@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-powerplan'
+id: '8d2a9b84-38b6-460f-9e9e-3992ea6fd448'
 title: 'Set Power Plan Automation in ConnectWise Automate'
 title_meta: 'Set Power Plan Automation in ConnectWise Automate'
 keywords: ['connectwise', 'powerplan', 'automation', 'script', 'edf']
@@ -194,6 +194,9 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
+
+
+
 
 
 

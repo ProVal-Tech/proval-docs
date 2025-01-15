@@ -1,5 +1,5 @@
 ---
-id: 'cwa_update-agent-all-os'
+id: 'e0471432-a947-47c6-8453-c2554bacc96f'
 title: 'Update Agent - All OS'
 title_meta: 'Update Agent - All OS'
 keywords: ['automate', 'agent', 'update', 'version', 'monitor']
@@ -19,6 +19,9 @@ None
 ## Target
 
 All Agents - Should be run on all machines.
+
+
+
 
 
 

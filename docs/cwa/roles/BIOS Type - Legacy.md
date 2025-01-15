@@ -1,5 +1,5 @@
 ---
-id: 'cwa-track-legacy-bios'
+id: 'e880c334-1062-405f-97ba-e80c2752fb28'
 title: 'Track Legacy BIOS Machines'
 title_meta: 'Track Legacy BIOS Machines'
 keywords: ['legacy', 'bios', 'tracking', 'windows', 'detection']
@@ -17,6 +17,9 @@ This role definition helps you track down machines with legacy BIOS type.
 | Detection String                     | Comparator     | Result | Applicable OS |
 |--------------------------------------|----------------|--------|----------------|
 | {%@bcdedit | find /i "path"@%}     | Regex Match    | .exe   | Windows        |
+
+
+
 
 
 

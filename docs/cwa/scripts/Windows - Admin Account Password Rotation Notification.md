@@ -1,5 +1,5 @@
 ---
-id: 'cwa-admin-account-password-notification'
+id: '1adeca30-5b12-4218-98c2-ff2806eae27e'
 title: 'Admin Account Password Change Notification'
 title_meta: 'Admin Account Password Change Notification'
 keywords: ['ticket', 'notification', 'password', 'update', 'client']
@@ -50,6 +50,9 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
   ------------------------------------------------------------------------------------------------------------------------  
 
   Here, @sqlName@, @sqlUserName@, @sqlclientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@, contains the detail of the Client Name, User Name for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password was changed information stored respectively.
+
+
+
 
 
 

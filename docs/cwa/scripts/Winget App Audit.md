@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-winget-report'
+id: 'd5ea54f9-07c9-443b-acc2-411401cfbe91'
 title: 'Get Winget Report'
 title_meta: 'Get Winget Report'
 keywords: ['audit', 'winget', 'applications', 'report', 'script']
@@ -56,6 +56,9 @@ Regular execution:
 - Script log
 - Custom table
 - Dataview
+
+
+
 
 
 

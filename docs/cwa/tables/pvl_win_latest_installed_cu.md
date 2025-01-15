@@ -1,5 +1,5 @@
 ---
-id: 'cwa-store-latest-installed-cu'
+id: 'c03e4def-7efe-4a8b-99e9-d99ac2c65f5a'
 title: 'Store Latest Installed Cumulative Update Data'
 title_meta: 'Store Latest Installed Cumulative Update Data'
 keywords: ['cumulative', 'update', 'data', 'installed', 'script']
@@ -28,6 +28,9 @@ Stores the data fetched by the [CWM - Automate - Script - Get Lastest Installed 
 | ScriptRunTime  | datetime    | Last run time of the script                       |
 | KBid           | varchar(128)| KBID of the latest installed Cumulative Update    |
 | ReleaseDate    | Date        | Release date of the latest installed Cumulative Update |
+
+
+
 
 
 

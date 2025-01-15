@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-skype'
+id: '8ada9bce-67c7-4493-b40f-5412933cc16e'
 title: 'Uninstall Skype Script'
 title_meta: 'Uninstall Skype Script for Efficient Removal'
 keywords: ['uninstall', 'skype', 'script', 'automation', 'software']
@@ -31,6 +31,9 @@ If Skype is removed successfully, the script will exit with a successful log mes
 ## Output
 
 Script log messages
+
+
+
 
 
 

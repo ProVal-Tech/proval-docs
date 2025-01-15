@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-firewall-configuration'
+id: '328695bc-c79f-4f18-a679-7c451c8cc272'
 title: 'Windows Firewall Configuration Dataview'
 title_meta: 'Windows Firewall Configuration Dataview'
 keywords: ['firewall', 'windows', 'configuration', 'endpoints', 'status']
@@ -29,6 +29,9 @@ Roles:
 | Domain Firewall Status     | The status (Enabled|Disabled) for the "Domain" network firewall             |
 | Private Firewall Status    | The status (Enabled|Disabled) for the "Private" network firewall            |
 | Public Firewall Status     | The status (Enabled|Disabled) for the "Public" network firewall             |
+
+
+
 
 
 

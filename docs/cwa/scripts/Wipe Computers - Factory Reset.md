@@ -1,5 +1,5 @@
 ---
-id: 'cwa-factory-reset-script'
+id: '18401e53-6ea1-4d94-a715-c2fc8767383e'
 title: 'Factory Reset Script'
 title_meta: 'Factory Reset Script for Windows'
 keywords: ['factory', 'reset', 'script', 'windows', 'user']
@@ -36,6 +36,9 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
+
+
+
 
 
 

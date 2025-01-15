@@ -1,5 +1,5 @@
 ---
-id: 'cwa-memory-threshold-violation-monitor'
+id: '7649d20e-e830-4c93-a478-15e52146b372'
 title: 'Memory Threshold Violation Monitor'
 title_meta: 'Memory Threshold Violation Monitor'
 keywords: ['memory', 'monitor', 'threshold', 'windows', 'performance']
@@ -88,6 +88,9 @@ chrome                 4.55
 ## How to Import
 
 [Import - Remote Monitor - Memory Threshold Violation Monitor](https://proval.itglue.com/DOC-5078775-13276991)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-authentication-windows-login'
+id: '076d4f1d-6b33-449a-9bf1-d0f8cb42b3de'
 title: 'DUO Authentication for Windows Login Installation and Update Automation'
 title_meta: 'DUO Authentication for Windows Login Installation and Update Automation'
 keywords: ['duo', 'authentication', 'windows', 'login', 'installation', 'update', 'automation', 'auditing']
@@ -50,6 +50,9 @@ Create the following device groups:
 ### Step 3.
 Create and deploy the following tasks:  
 [CW RMM - Task - DUO Install & Upgrade - Latest Version](https://proval.itglue.com/DOC-5078775-17914131)  
+
+
+
 
 
 

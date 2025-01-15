@@ -1,5 +1,5 @@
 ---
-id: 'rmm-setup-remote-monitor'
+id: 'c9ef3af9-ea83-467d-a5b7-e34248ab65c5'
 title: 'Steps to Set Up Remote Monitor'
 title_meta: 'Steps to Set Up Remote Monitor'
 keywords: ['setup', 'monitor', 'sql', 'remote', 'windows', 'groupid', 'alert']
@@ -252,6 +252,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

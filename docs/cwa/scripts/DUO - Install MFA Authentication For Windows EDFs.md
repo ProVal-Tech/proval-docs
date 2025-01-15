@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-agent-edfs-duo-installation'
+id: '0bc76dfc-6e84-459d-83a8-306fe625c835'
 title: 'Client and Agent Level EDFs for DUO Installation'
 title_meta: 'Client and Agent Level EDFs for DUO Installation'
 keywords: ['duo', 'installation', 'edf', 'monitor', 'agent', 'client']
@@ -46,6 +46,9 @@ Sets all variables from EDFs and Script Globals. Will exit if required variables
 
 - Script Log
 - Ticket - Optional
+
+
+
 
 
 

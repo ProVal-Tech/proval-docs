@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-build-info'
+id: 'f459645f-0d19-4a73-ad4c-8ddcb3ce4b13'
 title: 'Windows 10 Build Information and Patch Policies'
 title_meta: 'Windows 10 Build Information and Patch Policies'
 keywords: ['windows', 'patch', 'policy', 'build', 'support', 'rmm']
@@ -33,6 +33,9 @@ This dataview contains information about Windows 10 build information and patch 
 | Days Since Last Patched   | Days Since Last Contact With RMM                    |
 | Supported Till            | Support End Date                                    |
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disk-monitor-creation'
+id: '3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe'
 title: 'Disk Monitor Creation Script'
 title_meta: 'Disk Monitor Creation Script for Efficient Monitoring'
 keywords: ['disk', 'monitor', 'creation', 'automation', 'agent', 'exclude']
@@ -44,6 +44,9 @@ This script MUST be called by the Agent Monitor Creation script and the Remove a
 ## Output
 
 - Script log
+
+
+
 
 
 

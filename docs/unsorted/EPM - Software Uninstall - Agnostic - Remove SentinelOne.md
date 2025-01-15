@@ -1,12 +1,12 @@
 ---
-id: 'ps-uninstall-sentinelone-agent'
+id: 'd11e39f7-7b6e-426c-87b4-99e263bac943'
 title: 'Uninstalling the SentinelOne Agent from Windows'
 title_meta: 'Uninstalling the SentinelOne Agent from Windows'
 keywords: ['uninstall', 'sentinelone', 'agent', 'windows', 'security']
 description: 'This document provides a comprehensive guide on how to uninstall the SentinelOne agent from a Windows system, including requirements, process steps, and usage examples. It also addresses the need for a passphrase if Anti-Tamper is enabled during the uninstallation.'
 tags: ['windows', 'security', 'uninstallation']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Overview
 This script is designed to uninstall the SentinelOne agent from a Windows system. If Anti-Tamper is enabled, a passphrase must be provided.
@@ -44,6 +44,9 @@ Location of output for log, result, and error files.
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
+
+
+
 
 
 

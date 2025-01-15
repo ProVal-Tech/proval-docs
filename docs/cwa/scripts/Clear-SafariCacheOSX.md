@@ -1,5 +1,5 @@
 ---
-id: 'ps-clear-safari-cache-osx'
+id: '11e2bd71-314c-497f-a22a-814ff2af0d4d'
 title: 'Clear Safari Cache on OSX Devices'
 title_meta: 'Clear Safari Cache on OSX Devices'
 keywords: ['safari', 'cache', 'osx', 'clear', 'files', 'folders', 'logs', 'errors']
@@ -43,6 +43,9 @@ Clears all safari cache files and folders from osx devices
 | ConnectWise RMM           |                                         |
 | Kaseya                    |                                         |
 | Datto RMM                 |                                         |
+
+
+
 
 
 

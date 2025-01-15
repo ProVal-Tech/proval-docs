@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-compliance-cu-audit-all-machines'
+id: '7be1d6f2-7b75-4740-a42b-8e6f66377d15'
 title: 'Patch Compliance - CU Audit - All Machines'
 title_meta: 'Patch Compliance - CU Audit - All Machines'
 keywords: ['report', 'compliance', 'patch', 'audit', 'machines', 'status', 'client']
@@ -25,6 +25,9 @@ This report is dependent on the following items:
 [![Report Center - All Machines](thumbnail/2024-11-26_15_23_05-Report_Center_-_All_Machines.png)](large/2024-11-26_15_23_05-Report_Center_-_All_Machines.png)
 [![Report Center - EOL - All machines](thumbnail/2024-11-26_15_30_23-Report_Center_-_EOL_-_All_machines.png)](large/2024-11-26_15_30_23-Report_Center_-_EOL_-_All_machines.png)
 [![Report Center - No Audit Info](thumbnail/2024-11-26_15_31_29-Report_Center_-_No_Audit_Info.png)](large/2024-11-26_15_31_29-Report_Center_-_No_Audit_Info.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-swm-software-install-agnostic-deploy-teams'
+id: 'b0ea3249-67c2-4ac6-b0f7-3d9ee333701d'
 title: 'SWM - Software Install - Agnostic - Deploy-Teams'
 title_meta: 'SWM - Software Install - Agnostic - Deploy-Teams'
 keywords: ['software', 'install', 'deploy', 'teams', 'script']
@@ -19,6 +19,9 @@ An implementation of the agnostic script [SWM - Software Install - Agnostic - De
 ## Output
 
 - Script logs
+
+
+
 
 
 

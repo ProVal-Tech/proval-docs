@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-screenconnect-version-check'
+id: 'f3fa89f2-9c7a-44ab-a6d9-14a37b205e7d'
 title: 'Monitor for ScreenConnect Agent Version'
 title_meta: 'Monitor for ScreenConnect Agent Version'
 keywords: ['screenconnect', 'monitor', 'version', 'agent', 'update']
@@ -26,6 +26,9 @@ Globally (both on windows and MAC machines)
 ## Ticketing
 
 The tickets will be created by the [CWM - Control - Script - Update Screenconnect Version](https://proval.itglue.com/DOC-5078775-13977865) script.
+
+
+
 
 
 

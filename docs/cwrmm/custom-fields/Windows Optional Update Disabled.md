@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-optional-update-disabled'
+id: 'a2035a6f-bcbc-41a2-ace1-fc08b7ad2511'
 title: 'Windows Optional Update Disabled Status'
 title_meta: 'Windows Optional Update Disabled Status'
 keywords: ['windows', 'update', 'disabled', 'endpoint', 'task']
@@ -21,6 +21,9 @@ This stores Disabled if the Windows optional Update is disabled by the Disable W
 | Field Name                        | Level      | Type  | Default | Editable | Description                                                                                  |
 |-----------------------------------|------------|-------|---------|----------|----------------------------------------------------------------------------------------------|
 | Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This stores Disabled if the Windows optional Update is disabled by the Disable Windows Optional/Automatic Updates task. |
+
+
+
 
 
 

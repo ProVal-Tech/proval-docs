@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-365-update-registry'
+id: '68e362d9-521f-417b-93e3-81adc169b559'
 title: 'Microsoft 365 Update Registry Script'
 title_meta: 'Microsoft 365 Update Registry Script'
 keywords: ['microsoft', '365', 'update', 'registry', 'channel']
@@ -27,6 +27,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

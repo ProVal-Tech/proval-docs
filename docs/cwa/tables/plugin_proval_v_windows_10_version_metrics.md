@@ -1,5 +1,5 @@
 ---
-id: 'cwa-auditing-windows-10-versions'
+id: 'e7ef3c95-960a-430c-803e-665b1d7f677c'
 title: 'Auditing Windows 10 Versions'
 title_meta: 'Auditing Windows 10 Versions for ClientID and ReleaseID'
 keywords: ['auditing', 'windows', 'clientid', 'releaseid', 'metrics']
@@ -33,6 +33,9 @@ Data used for auditing Windows 10 versions. Displays information grouped by Clie
 | Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version with a patching policy. |
 | % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version with a patching policy. |
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
+
+
+
 
 
 

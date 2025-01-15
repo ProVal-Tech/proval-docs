@@ -24,3 +24,6 @@ Clears Gecko engine (Firefox) browser caches.
 ## Output
     .\Clear-GeckoCache-log.txt
 
+
+
+

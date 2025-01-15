@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-sync-failed-monitor'
+id: '1fa27f5d-ca9d-4bff-8776-569a15f772d3'
 title: 'Ticket Sync Failed Monitor'
 title_meta: 'Ticket Sync Failed Monitor'
 keywords: ['ticket', 'sync', 'monitor', 'psa', 'automate']
@@ -21,6 +21,9 @@ Looks for tickets within Automate that failed to sync successfully to the PSA.
 ## Target
 
 Global
+
+
+
 
 
 

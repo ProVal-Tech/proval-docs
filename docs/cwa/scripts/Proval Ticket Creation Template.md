@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-creation-standard'
+id: '9385b560-6005-4a7e-b7f3-de9a9baa5d8a'
 title: 'New Ticket Creation Standard for Clients'
 title_meta: 'New Ticket Creation Standard for Clients'
 keywords: ['ticket', 'creation', 'standard', 'clients', 'script']
@@ -50,6 +50,9 @@ This will be a new standard to create tickets for our clients.
 ## Output
 
 - Adds to a variable `VarLog` to be displayed in a parent ticket.
+
+
+
 
 
 

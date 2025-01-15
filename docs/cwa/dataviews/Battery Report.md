@@ -1,5 +1,5 @@
 ---
-id: 'cwa-battery-report'
+id: 'f79eac19-1ead-42bb-903b-8f3bc7dc4bd1'
 title: 'Battery Report Information'
 title_meta: 'Battery Report Information'
 keywords: ['battery', 'report', 'health', 'capacity', 'cycle', 'manufacturer', 'client', 'location']
@@ -42,6 +42,9 @@ Displays the battery report information
 | ClientID             | Not displayed but used.                                                                                                                                       |
 | LocationID           | Not displayed but used.                                                                                                                                       |
 | ThresholdViolation    | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
+
+
+
 
 
 

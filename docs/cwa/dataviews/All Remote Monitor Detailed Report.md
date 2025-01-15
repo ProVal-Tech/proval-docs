@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-remote-monitors'
+id: '180f6e36-1fc1-4d28-a4ca-409f7dd9b9c5'
 title: 'Custom Remote Monitors Implementation Status'
 title_meta: 'Custom Remote Monitors Implementation Status'
 keywords: ['remote', 'monitor', 'implementation', 'status', 'alert', 'template']
@@ -38,6 +38,9 @@ Color coding was applied to the columns "Monitor Nature", "Affected Computers", 
 Monitor Nature: The "ProVal Monitor" is highlighted in Green to catch the eye to show the ProVal remote monitors in the environment.  
 Script Nature: Here, the "ProVal Script" is highlighted in Green to catch the eye of where the "ProVal" scripts are used as an autofix.  
 Affected Computers: Here, the "0" is written in bold/Italic font using Red color to show the remote monitors that are not applied to any computers.
+
+
+
 
 
 

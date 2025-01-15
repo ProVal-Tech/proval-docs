@@ -1,5 +1,5 @@
 ---
-id: 'cwa-huntress-managed-edr-uninstall'
+id: '3d5b37dc-7ea4-4d06-a83d-7acdf91b8e1c'
 title: 'Huntress - Managed EDR - Uninstall'
 title_meta: 'Huntress - Managed EDR - Uninstall'
 keywords: ['uninstall', 'huntress', 'edr', 'agent', 'procedure']
@@ -43,6 +43,9 @@ The agent procedure requires no customization.
 `%SystemRoot%/temp/HuntressPoShInstaller.log`  
 `%TEMP%/HuntressPoShInstaller.log`  
 Agent Procedure Log
+
+
+
 
 
 

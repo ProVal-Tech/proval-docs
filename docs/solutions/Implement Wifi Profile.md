@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-unapproved-wifi-profiles'
+id: '1b38dbb7-848f-4605-b8c9-80e7ebf069d3'
 title: 'Removing Unapproved Wi-Fi Profiles from Windows Machines'
 title_meta: 'Removing Unapproved Wi-Fi Profiles from Windows Machines'
 keywords: ['wifi', 'profiles', 'windows', 'monitor', 'script', 'implementation', 'automation']
@@ -60,6 +60,9 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
      - [Internal Monitor - Wifi Profiles - Add](https://proval.itglue.com/DOC-5078775-16111358)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+
+
+
 
 
 

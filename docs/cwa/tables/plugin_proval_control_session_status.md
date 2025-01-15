@@ -1,5 +1,5 @@
 ---
-id: 'cwa-connectwise-control-agent-status'
+id: 'd468b194-6df4-46b0-8dbc-657b623209ff'
 title: 'ConnectWise Control Agent Online Status'
 title_meta: 'ConnectWise Control Agent Online Status'
 keywords: ['connectwise', 'agent', 'status', 'online', 'portal']
@@ -28,6 +28,9 @@ This will hold the current ConnectWise Control agent online status for each agen
 | Online              | TINYINT(1)   | Holds the online status of the computer in ConnectWise Control agent.                         |
 | LastConnectedDate   | DATETIME     | Holds the last connected date of the ConnectWise Control agent.                               |
 | SCName              | VARCHAR(50)  | Holds the computer name as displayed in the ConnectWise Control portal for that agent.       |
+
+
+
 
 
 

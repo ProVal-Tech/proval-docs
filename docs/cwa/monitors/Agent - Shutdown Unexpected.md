@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unexpected-shutdown-monitor'
+id: '749e13b3-d289-4622-87fa-5f1bae94b00d'
 title: 'Unexpected Shutdown Monitor for Windows Machines'
 title_meta: 'Unexpected Shutdown Monitor for Windows Machines'
 keywords: ['monitor', 'shutdown', 'windows', 'event', 'server']
@@ -22,6 +22,9 @@ Automate must be gathering event logs into the database for this internal monito
 Primarily this monitor target is servers, but it will work properly for workstations if this data is of value to the MSP.  
 **Servers** - Should be run on servers  
 **Windows Machines** - Should be run on all Windows machines  
+
+
+
 
 
 

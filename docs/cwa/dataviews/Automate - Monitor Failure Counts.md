@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-failure-count'
+id: 'cc6575e1-f95a-495a-ab89-65e165e1c85f'
 title: 'Monitor Failure Count Dataview'
 title_meta: 'Monitor Failure Count Dataview'
 keywords: ['monitor', 'failure', 'count', 'tickets', 'dataview']
@@ -26,6 +26,9 @@ None
 | Client Name     | Client name                                                         |
 | Type            | Shows 'Internal' or 'Remote' depending on the type of monitor      |
 | Times Failed    | Shows the cumulative number of failures in the last 3 days         |
+
+
+
 
 
 

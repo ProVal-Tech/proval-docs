@@ -1,5 +1,5 @@
 ---
-id: 'vsa-bitlocker-volume-initialization'
+id: '292daf43-dff9-418f-982f-56f08ac8d016'
 title: 'Bitlocker Volume Initialization Procedures'
 title_meta: 'Bitlocker Volume Initialization Procedures'
 keywords: ['bitlocker', 'encryption', 'tpm', 'protector', 'security']
@@ -80,6 +80,9 @@ All required parameters are prompted and explained at script runtime.
     ./Initialize-BitLockerVolume-error.txt
     Agent Procedure Log
 ```
+
+
+
 
 
 

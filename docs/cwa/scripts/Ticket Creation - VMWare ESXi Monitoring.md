@@ -1,5 +1,5 @@
 ---
-id: 'cwa-esxi-hosts-ticket-creation'
+id: '7fbdffc1-7472-4276-914d-1e5b845dcd3c'
 title: 'ESXi Hosts Ticket Creation Script'
 title_meta: 'ESXi Hosts Ticket Creation Script'
 keywords: ['esxi', 'ticket', 'monitor', 'alert', 'automation', 'script']
@@ -45,6 +45,9 @@ The only difference is that this script will write the ESXi hosts' information t
 
 - Script Log
 - Ticket
+
+
+
 
 
 

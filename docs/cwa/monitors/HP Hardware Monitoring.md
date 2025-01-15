@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hp-event-log-monitoring'
+id: 'd6b85a77-e6bc-4ff1-9279-9d17487655ba'
 title: 'HP Event Log Monitoring for Servers'
 title_meta: 'HP Event Log Monitoring for Servers'
 keywords: ['hp', 'event', 'monitoring', 'servers', 'ticketing']
@@ -57,6 +57,9 @@ Event Type: Error
 Message: <Event Message>
 TimeGen: <Time of Generation>
 ```
+
+
+
 
 
 

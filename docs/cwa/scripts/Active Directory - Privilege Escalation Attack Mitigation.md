@@ -1,5 +1,5 @@
 ---
-id: 'cwa-verify-active-directory-patches'
+id: '18fbde09-500a-41a4-bad0-c37b85429926'
 title: 'Verify Active Directory Patches'
 title_meta: 'Verify Active Directory Patches for Security Compliance'
 keywords: ['active-directory', 'patches', 'security', 'registry', 'compliance']
@@ -67,6 +67,9 @@ These EDFs are also presented in the dataview [Workaround - Active Directory pri
 
 - Extra Data Fields
 - Dataview
+
+
+
 
 
 

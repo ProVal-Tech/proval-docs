@@ -1,12 +1,12 @@
 ---
-id: 'cwa-install-clickshare'
+id: 'f8b7444f-398c-42a5-8ed8-f83c3491818e'
 title: 'Install ClickShare'
 title_meta: 'Install ClickShare - A Guide to Installation'
 keywords: ['clickshare', 'installation', 'script', 'agent', 'taskschedular']
 description: 'This document provides a comprehensive guide on how to install ClickShare using a script. It covers the installation options for all users or the logged-in user, along with dependencies and global parameters.'
 tags: ['installation', 'software', 'setup']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -33,6 +33,9 @@ This script helps to install the Click Share on the agent. It can install the ap
 ## Output
 
 - Script log
+
+
+
 
 
 

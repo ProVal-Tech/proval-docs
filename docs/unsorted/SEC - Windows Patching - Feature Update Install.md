@@ -1,12 +1,12 @@
 ---
-id: 'ps-install-feature-update'
+id: 'ef761e33-36e7-47d1-aa96-7bed8d18b3ca'
 title: 'Install Windows Feature Update'
 title_meta: 'Install Windows Feature Update on Endpoint'
 keywords: ['windows', 'update', 'feature', 'install', 'script']
 description: 'This document outlines the process for running the Install-FeatureUpdate script to install the latest Windows Feature Update on an endpoint. It includes sample runs, dependencies, and detailed documentation of variables, parameters, and output methods.'
 tags: ['windows', 'update', 'configuration', 'script', 'security']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -70,6 +70,9 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-creation-script'
+id: 'b53b8338-0d17-4308-b495-d075d520fd13'
 title: 'Complete Ticket Creation Script for Missing Patches'
 title_meta: 'Complete Ticket Creation Script for Missing Patches'
 keywords: ['ticket', 'patches', 'monitor', 'automation', 'windows']
@@ -51,6 +51,9 @@ This script's only dependency is that the monitor that is triggering the script 
 > Microsoft .NET Framework 4.8 for Windows Server 2012 R2 for x64 (KB4486105)  
 > 2022-05 Servicing Stack Update for Windows Server 2012 R2 for x64-based Systems (KB5014025)  
 > 2022-05 Security and Quality Rollup for .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8 for Windows Server 2012 R2 for x64 (KB5013872)  
+
+
+
 
 
 

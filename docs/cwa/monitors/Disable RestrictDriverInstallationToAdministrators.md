@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-restrict-driver-installation'
+id: 'e79a2422-0089-451b-9522-a6110976c2f5'
 title: 'Disable Restrict Driver Installation to Administrators'
 title_meta: 'Disable Restrict Driver Installation to Administrators'
 keywords: ['restrict', 'driver', 'installation', 'administrators', 'ticket', 'creation', 'monitor']
@@ -164,6 +164,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.
+
+
+
 
 
 

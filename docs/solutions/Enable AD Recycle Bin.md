@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-ad-recycle-bin'
+id: 'b2d7d16d-ecc3-4c23-b1ce-f05027098fc1'
 title: 'Enable AD Recycle Bin on AD Infrastructure Masters'
 title_meta: 'Enable AD Recycle Bin on AD Infrastructure Masters'
 keywords: ['ad', 'recycle', 'bin', 'infrastructure', 'masters']
@@ -29,6 +29,9 @@ The purpose of this solution is to Enable AD Recycle Bin on AD Infrastructure Ma
 - Create the [Device Group - Infrastructure Master - Without Recycle Bin](https://proval.itglue.com/DOC-5078775-15348975).
 - Create the deployment schedule as described in this document: [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513).
 - Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](https://proval.itglue.com/DOC-5078775-15414582) if the partner wants tickets if [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable AD recycle Bin.
+
+
+
 
 
 

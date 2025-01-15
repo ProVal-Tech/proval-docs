@@ -1,5 +1,5 @@
 ---
-id: 'rmm-deploy-perch-log-shipper'
+id: 'bc410117-b7b7-4345-967c-965f15acdf07'
 title: 'Deploy Perch Log Shipper Monitor'
 title_meta: 'Deploy Perch Log Shipper Monitor for Windows Machines'
 keywords: ['monitor', 'perch', 'log', 'shipper', 'deployment', 'windows']
@@ -30,6 +30,9 @@ Windows Machines
 ## Alert Template
 
 - `△ Custom -  Execute Script - Deploy PerchLogShipper`
+
+
+
 
 
 

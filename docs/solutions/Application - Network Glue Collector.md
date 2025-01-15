@@ -1,5 +1,5 @@
 ---
-id: 'cwa-network-glue-deployment'
+id: '2aceee46-2a96-465d-929d-85de69811a3a'
 title: 'Network Glue Deployment and Uninstallation'
 title_meta: 'Network Glue Deployment and Uninstallation'
 keywords: ['network', 'glue', 'deployment', 'uninstallation', 'monitor', 'script']
@@ -37,6 +37,9 @@ This solution contains the Network Glue Deployment/uninstallation articles.
      - [Internal Monitor - ProVal Production - Network Glue - Deployment](https://proval.itglue.com/DOC-5078775-17492944)  
        - Setup with "△ Custom - Execute Script - Network Glue Collector - install" Alert Template
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

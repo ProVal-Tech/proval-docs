@@ -1,5 +1,5 @@
 ---
-id: 'cwa_patch-compliance-cu-audit-servers'
+id: 'f2a584ea-6b77-4b95-917a-a658da7a6785'
 title: 'Patch Compliance - CU Audit - Servers'
 title_meta: 'Patch Compliance - CU Audit - Servers Report Overview'
 keywords: ['patch', 'compliance', 'audit', 'servers', 'report', 'cumulative', 'update']
@@ -25,6 +25,9 @@ This report is dependent on the following items:
 [![Report Center - Servers](thumbnail/2024-11-26_15_27_40-Report_Center_-_Servers.png)](large/2024-11-26_15_27_40-Report_Center_-_Servers.png)
 [![Report Center - EOL Servers](thumbnail/2024-11-26_15_29_37-Report_Center_-_EOL_Servers.png)](large/2024-11-26_15_29_37-Report_Center_-_EOL_Servers.png)
 [![Report Center - No Audit Info](thumbnail/2024-11-26_15_31_29-Report_Center_-_No_Audit_Info.png)](large/2024-11-26_15_31_29-Report_Center_-_No_Audit_Info.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_win_installer_properties'
+id: '14ac705d-21c7-4320-b958-3ed5281c43d6'
 title: 'Windows Installer Properties SQL Custom Table'
 title_meta: 'Windows Installer Properties SQL Custom Table for CWM Automate'
 keywords: ['sql', 'custom', 'table', 'installer', 'properties', 'windows', 'application']
@@ -33,6 +33,9 @@ The "pvl_win_installer_properties" is an SQL custom table that is used in conjun
 | InstallLocation   | varchar(512) | Path to the installed location of the application on local machine |
 | ScriptRunTime    | datetime     | Data Collection Time                                |
 | SerialNumber     | int          | Auto_Incremental Column to be used as primary key   |
+
+
+
 
 
 

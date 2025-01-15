@@ -1,5 +1,5 @@
 ---
-id: 'cwa-invoke-vcredistmodule-uninstall'
+id: '13cfc2e0-c088-424a-a1ab-5769b288a3a2'
 title: 'Invoke-VcRedistModule Uninstall Script for Microsoft Visual C++ Redistributable'
 title_meta: 'Invoke-VcRedistModule Uninstall Script for Microsoft Visual C++ Redistributable'
 keywords: ['automate', 'uninstall', 'visual', 'redistributable', 'microsoft', 'script']
@@ -33,6 +33,9 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 ## Output
 
 - Script Log
+
+
+
 
 
 

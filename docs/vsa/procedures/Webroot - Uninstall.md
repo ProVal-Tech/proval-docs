@@ -1,5 +1,5 @@
 ---
-id: 'vsa-webroot-uninstall'
+id: '728ba6ee-7886-4a56-98c6-40ca55dceeba'
 title: 'Webroot Uninstallation Procedure'
 title_meta: 'Webroot Uninstallation Procedure for Kaseya VSA'
 keywords: ['webroot', 'uninstall', 'endpoint', 'procedure', 'agent']
@@ -37,6 +37,9 @@ Agent Procedure Log Entry
 ![Success Log](../../../static/img/Webroot---Uninstall/image_3.png)  
 **Failure**  
 ![Failure Log](../../../static/img/Webroot---Uninstall/image_4.png)
+
+
+
 
 
 

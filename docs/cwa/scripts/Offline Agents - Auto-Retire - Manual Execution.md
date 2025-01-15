@@ -1,5 +1,5 @@
 ---
-id: 'cwa-retire-offline-agents'
+id: '90249a1b-07b1-4ac5-8e3e-3b910d4d7b9a'
 title: 'Retire Offline Agents in ConnectWise Automate'
 title_meta: 'Retire Offline Agents in ConnectWise Automate'
 keywords: ['retire', 'offline', 'agents', 'automate', 'client']
@@ -93,6 +93,9 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
    - Debug the script against any client with the `Set_Environment` parameter set to 1 and `Set_Global_Threshold_Days` set to the number of days for global property `AutoRetireThreshold_Days`.
      - Validate the system property was set correctly by navigating to System --> Configuration --> Dashboard --> Config --> Configurations --> Properties --> Check the property 'AutoRetireThreshold_Days'
    - Run the script against the desired client.
+
+
+
 
 
 

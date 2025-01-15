@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-wifi-profile-monitor-set'
+id: 'ab5fe07a-d644-4011-96bf-67aa8019216f'
 title: 'Get Wifi Profile Monitor Set'
 title_meta: 'Get Wifi Profile Monitor Set'
 keywords: ['wifi', 'monitor', 'windows', 'audit', 'script']
@@ -26,6 +26,9 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
+
+
+
 
 
 

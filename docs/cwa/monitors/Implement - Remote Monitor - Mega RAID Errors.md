@@ -1,5 +1,5 @@
 ---
-id: 'cwa-steps-to-configure-alerts-and-monitors'
+id: '94acea25-1d14-4ccd-8991-045331d05fde'
 title: 'Steps to Configure Alerts and Monitors'
 title_meta: 'Steps to Configure Alerts and Monitors'
 keywords: ['configure', 'alerts', 'monitors', 'sql', 'setup']
@@ -205,6 +205,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ### 8.
 Set the appropriate alert template.
+
+
+
 
 
 

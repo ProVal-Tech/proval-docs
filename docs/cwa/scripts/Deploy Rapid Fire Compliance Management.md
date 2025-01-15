@@ -1,5 +1,5 @@
 ---
-id: 'cwa-rapid-fire-compliance-management-deployment'
+id: '3f080b6a-ea0b-43de-a4b0-0595629b7a9c'
 title: 'Rapid Fire Compliance Management Deployment'
 title_meta: 'Rapid Fire Compliance Management Deployment'
 keywords: ['deployment', 'compliance', 'management', 'script', 'installation', 'netframework', 'ticketing']
@@ -61,6 +61,9 @@ Failed to Install Compliance Management Agent on %computername% at %clientname%.
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -49,3 +49,6 @@ Downloads the image from the remote server and sets it as the current wallpaper 
 
 Returns the registry settings edited by the script.
 
+
+
+

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-new-domain-admins'
+id: 'a96db8f9-87fc-4e02-a1b3-2ed60913fc82'
 title: 'New Domain Admins Task Implementation'
 title_meta: 'New Domain Admins Task Implementation'
 keywords: ['domain', 'admin', 'task', 'monitoring', 'auditing']
@@ -293,6 +293,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - Ticket  
 ![Ticket Output](../../../static/img/New-Domain-Admins/image_66.png)  
+
+
+
 
 
 

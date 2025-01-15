@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sec-encryption-agnostic-enable-tpm'
+id: 'aa0c7575-d9f1-4c41-98bb-50eab8aa1ade'
 title: 'SEC - Encryption - Agnostic - Enable-TPM Implementation'
 title_meta: 'SEC - Encryption - Agnostic - Enable-TPM Implementation'
 keywords: ['tpm', 'encryption', 'provisioning', 'script', 'implementation']
@@ -35,6 +35,9 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 ## Output
 
 - Script Logs
+
+
+
 
 
 

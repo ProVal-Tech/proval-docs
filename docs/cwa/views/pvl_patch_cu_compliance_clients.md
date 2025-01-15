@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-cu-compliance-metrics'
+id: '2edcd22b-ef08-4877-b5aa-9c9b30c2bcb6'
 title: 'Patching and CU Compliance Metrics - Clients'
 title_meta: 'Patching and CU Compliance Metrics - Clients Overview'
 keywords: ['patching', 'compliance', 'windows', 'metrics', 'clients', 'cumulative', 'update']
@@ -46,6 +46,9 @@ The data is grouped by client.
 | CU Age - 91-135 %             | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
 | CU Age - 136+ %               | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. ( `CU Age - 136+` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
 | Total Eligible Computers - CU  | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. |
+
+
+
 
 
 

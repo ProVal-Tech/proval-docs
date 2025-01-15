@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitdefender-endpoint-security-install'
+id: 'caaedea1-c322-4a36-833a-62e421c95e2a'
 title: 'BitDefender Endpoint Security Installation'
 title_meta: 'BitDefender Endpoint Security Installation'
 keywords: ['bitdefender', 'endpoint', 'security', 'installation', 'msi']
@@ -44,6 +44,9 @@ Installs BitDefender Endpoint Security Tools on the endpoint.
 ## Output
 
 Agent procedure Log
+
+
+
 
 
 

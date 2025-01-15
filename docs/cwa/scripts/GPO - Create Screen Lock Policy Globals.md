@@ -1,5 +1,5 @@
 ---
-id: 'cwa-configure-screen-lock-timeout'
+id: '0a1033eb-6797-40d4-8049-9e9e4bf0d637'
 title: 'Configure Screen Lock Timeout for Domain Controllers'
 title_meta: 'Configure Screen Lock Timeout for Domain Controllers'
 keywords: ['screen', 'lock', 'timeout', 'domain', 'controllers']
@@ -41,6 +41,9 @@ This script uses global variables to configure the number of seconds before a sc
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -5,7 +5,7 @@ title_meta: Script Name
 keywords: []
 description: A description of the script.
 tags: []
-draft: true
+draft: false
 unlisted: false
 ---
 
@@ -33,3 +33,6 @@ Describe how the script is executed and if it requires any parameters. Delete th
 
 ## Output
 Describe the output of the content. Delete if not needed.
+
+
+

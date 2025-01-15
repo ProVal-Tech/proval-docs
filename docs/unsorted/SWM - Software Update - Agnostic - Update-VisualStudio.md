@@ -1,12 +1,12 @@
 ---
-id: 'vsa-update-visual-studio'
+id: 'ef41c491-27c6-41d4-a478-eb66ca809399'
 title: 'Update Visual Studio'
 title_meta: 'Update Visual Studio - Automatic Updates for Installed Versions'
 keywords: ['update', 'visualstudio', 'upgrade', 'enterprise', 'community']
 description: 'This document provides an overview of the script that automatically updates all installed versions of Visual Studio, including VS 2022, 2019, and 2017 for both Enterprise and Community editions. It details the process of checking for installed applications, downloading updates, performing upgrades, and logging the results.'
 tags: ['update', 'software', 'windows', 'installation', 'report']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -42,6 +42,9 @@ Update Visual Studio.
 ./Update-VisualStudio-data.txt
 ./Update-VisualStudio-error.txt
 ```
+
+
+
 
 
 

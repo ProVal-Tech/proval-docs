@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-remote-monitors-disk-space'
+id: '9ce297f7-cc65-4fd8-b05b-b25e6088c6fe'
 title: 'Create Remote Monitors for Disk Space'
 title_meta: 'Create Remote Monitors for Disk Space'
 keywords: ['remote', 'monitors', 'disk', 'space', 'agent', 'sensor']
@@ -46,6 +46,9 @@ This script runs some SQL commands to create remote monitors for detected hard d
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a server.
+
+
+
 
 
 

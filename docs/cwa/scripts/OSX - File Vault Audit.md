@@ -1,5 +1,5 @@
 ---
-id: 'cwa-file-vault-status-audit'
+id: '6c8b7535-ef72-4635-a968-60261dea67de'
 title: 'File Vault Status Audit for Mac Machines'
 title_meta: 'File Vault Status Audit for Mac Machines'
 keywords: ['file', 'vault', 'status', 'mac', 'audit', 'edf']
@@ -31,6 +31,9 @@ Suggested is to schedule the script to run daily against the MAC machines to kee
 ## Output
 
 - EDF
+
+
+
 
 
 

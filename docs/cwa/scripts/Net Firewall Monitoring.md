@@ -1,5 +1,5 @@
 ---
-id: 'cwa_network_firewall_setup'
+id: 'f2fbf2cf-e131-46c6-88ae-0e18ee587dc8'
 title: 'Network Firewall Setup and Monitoring'
 title_meta: 'Network Firewall Setup and Monitoring'
 keywords: ['firewall', 'monitoring', 'network', 'security', 'compliance']
@@ -149,6 +149,9 @@ Ticketing is formatted and should not autoclose but every 10 days (a limitation 
 3. This reflects the status of that monitor on the target
 4. This reflects the target of the monitor
 5. This is the returned data from the target when running the monitor. This will tell you why the target failed, in this case it is showing that the monitor failed because the public Net firewall is disabled.
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'cwa-uninstall-crowdstrike'
+id: 'd6f905af-3e99-4be4-a6eb-d1aa78410375'
 title: 'Uninstalling the CrowdStrike Application'
 title_meta: 'Uninstalling the CrowdStrike Application'
 keywords: ['uninstall', 'crowdstrike', 'application', 'tool', 'removal']
 description: 'This document provides a detailed guide on how to uninstall the CrowdStrike Application using the CSUninstallTool.exe. It includes requirements, dependencies, process steps, and output information to ensure a successful uninstallation.'
 tags: ['uninstallation', 'software', 'windows', 'security']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -45,6 +45,9 @@ CsUninstallTool.exe -- File
 ## Output
 
 - Script log
+
+
+
 
 
 

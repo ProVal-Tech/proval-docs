@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementation-steps-for-alert-template'
+id: '3aeba30b-19d4-49e6-9275-d82842ced15b'
 title: 'Implementation Steps for Alert Template'
 title_meta: 'Implementation Steps for Alert Template'
 keywords: ['alert', 'template', 'monitor', 'sql', 'configuration', 'group', 'agent']
@@ -199,6 +199,9 @@ unlisted: false
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
   ![Image](../../../static/img/Implement--New-Local-Admin/image_2.png)
+
+
+
 
 
 

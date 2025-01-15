@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-initialization-failure'
+id: '3c6d0ec7-4954-4116-b8ba-329c13cd2143'
 title: 'BitLocker Initialization Failure Records'
 title_meta: 'BitLocker Initialization Failure Records'
 keywords: ['bitlocker', 'failure', 'records', 'autofix', 'script']
@@ -26,6 +26,9 @@ This dataview contains the computer record where the BitLocker initialization fa
 | Operating System          | Operating system name of the agent                    |
 | LastContact               | Last contact of the agent with the CW Automate       |
 | Number of Failed Attempts  | The BitLocker initialization failed attempts count    |
+
+
+
 
 
 

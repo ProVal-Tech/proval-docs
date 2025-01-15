@@ -1,5 +1,5 @@
 ---
-id: 'vsa-disable-windows-update'
+id: '23ff7552-2521-43f5-9b6a-bb090a2b5ae6'
 title: 'Disable Windows Update using Registry'
 title_meta: 'Disable Windows Update using Registry'
 keywords: ['windows', 'update', 'registry', 'disable', 'configuration']
@@ -31,6 +31,9 @@ Checks for success after changes.
 ## Output
 
 Agent Procedure Log  
+
+
+
 
 
 

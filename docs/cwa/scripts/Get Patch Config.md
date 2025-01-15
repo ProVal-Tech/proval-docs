@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-patchconfig'
+id: 'c1b906ec-7aea-41f3-8241-358d3d644900'
 title: 'Get-PatchConfig Implementation for Automate'
 title_meta: 'Get-PatchConfig Implementation for Automate'
 keywords: ['patch', 'config', 'windows', 'update', 'script', 'automation']
@@ -62,6 +62,9 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Local file on computer
 - Custom Table
 - Dataview
+
+
+
 
 
 

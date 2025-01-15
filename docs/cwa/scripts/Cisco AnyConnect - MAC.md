@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-cisco-anyconnect-mac'
+id: '9d906bff-cc45-4a2b-b0c5-8e9f97c396a2'
 title: 'Install Cisco Anyconnect on Mac Agents'
 title_meta: 'Install Cisco Anyconnect on Mac Agents'
 keywords: ['cisco', 'anyconnect', 'mac', 'install', 'application']
@@ -36,6 +36,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

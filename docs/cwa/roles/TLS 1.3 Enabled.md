@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-registry-tls-1-3'
+id: '5eb171c1-2c40-4283-b8dc-090faf1b2757'
 title: 'Check Registry for TLS 1.3 Client Settings'
 title_meta: 'Check Registry for TLS 1.3 Client Settings'
 keywords: ['registry', 'tls', 'client', 'security', 'enabled', 'windows']
@@ -36,6 +36,9 @@ Related Dataview
 | Detection String                                             | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled-%} | Equals     | 1      | Windows        |
+
+
+
 
 
 

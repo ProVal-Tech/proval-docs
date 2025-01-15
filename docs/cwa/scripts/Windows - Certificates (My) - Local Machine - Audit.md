@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-local-certs'
+id: '7d13a122-8d62-4c50-b19f-922e6bb37a13'
 title: 'Get Local Certificates Script'
 title_meta: 'Get Local Certificates Script for Monitoring Certificate Repositories'
 keywords: ['certificates', 'monitoring', 'script', 'repository', 'servers']
@@ -31,6 +31,9 @@ This script is designed to run a PowerShell script and pull any and all certific
 - Script log
 - Custom Table
 - Dataview
+
+
+
 
 
 

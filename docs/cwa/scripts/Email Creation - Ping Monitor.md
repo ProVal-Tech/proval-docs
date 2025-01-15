@@ -1,5 +1,5 @@
 ---
-id: 'cwa-email-ping-monitor-management'
+id: '2750b9e3-6916-4dbc-85a8-2c840d636b32'
 title: 'Email Management for Ping Monitors'
 title_meta: 'Email Management for Ping Monitors'
 keywords: ['email', 'ping', 'monitor', 'alert', 'ticket']
@@ -66,6 +66,9 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Output
 
 - Email
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-firefox-homepage'
+id: '21929424-6cad-41b0-b039-ee798fc38ff7'
 title: 'Remove Firefox Homepage Enforcement'
 title_meta: 'Remove Firefox Homepage Enforcement'
 keywords: ['firefox', 'homepage', 'policy', 'script', 'windows']
@@ -37,6 +37,9 @@ The script will scan for and remove all homepage policies from the Firefox polic
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

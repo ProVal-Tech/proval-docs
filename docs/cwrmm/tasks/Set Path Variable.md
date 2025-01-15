@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-path-variable'
+id: '017a7a32-e501-46df-ba3c-6d1ce48d8c5a'
 title: 'Set Path Variable'
 title_meta: 'Set Path Variable'
 keywords: ['environment', 'variable', 'path', 'machine', 'script']
@@ -179,6 +179,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

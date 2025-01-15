@@ -1,5 +1,5 @@
 ---
-id: 'vsa-disable-removable-storage'
+id: 'b50eaaf9-9ec6-412b-85a6-44e6e82c43f9'
 title: 'Disable Removable Storage Devices on Endpoint'
 title_meta: 'Disable Removable Storage Devices on Endpoint'
 keywords: ['removable', 'storage', 'disable', 'endpoint', 'security']
@@ -38,6 +38,9 @@ Sets HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//Den
 ## Output
 
 AP Log
+
+
+
 
 
 

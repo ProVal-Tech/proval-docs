@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticketing-monitor-windows-upgrade'
+id: 'f9d7bc4e-9cee-4bd6-a471-7910c3068e3d'
 title: 'Windows Upgrade Ticketing Monitor'
 title_meta: 'Windows Upgrade Ticketing Monitor'
 keywords: ['monitor', 'ticketing', 'windows', 'upgrade', 'failure']
@@ -37,6 +37,9 @@ Managed Service Plan Groups for Windows Workstations
 
 - **Success Message:**  
   The machine %COMPUTERNAME% located at %CLIENTNAME%//%LOCATIONNAME% is no longer reported to be on a EoL build or has been offline for greater than 7 days since the ticket was generated. Closing ticket.
+
+
+
 
 
 

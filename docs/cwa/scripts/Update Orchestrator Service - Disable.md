@@ -1,5 +1,5 @@
 ---
-id: 'cwa-stop-update-orchestrator-service'
+id: 'eb9d46c0-757b-4630-b6c5-709f708ceec5'
 title: 'Stop and Disable Update Orchestrator Service'
 title_meta: 'Stop and Disable Update Orchestrator Service'
 keywords: ['update', 'service', 'disable', 'orchestrator', 'stop']
@@ -31,6 +31,9 @@ It will run as an autofix with dependent monitor.
 ## Output
 
 - Script log
+
+
+
 
 
 

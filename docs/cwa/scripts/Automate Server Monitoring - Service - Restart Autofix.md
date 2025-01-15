@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-server-monitoring-email-notification'
+id: '870dc2c7-95ea-494e-aefd-05609925545b'
 title: 'Automate Server Monitoring Email Notification Script'
 title_meta: 'Automate Server Monitoring Email Notification Script'
 keywords: ['automate', 'monitoring', 'email', 'notification', 'service']
@@ -72,6 +72,9 @@ Please reference agnostic content documentation for Service Restart Process.
 
 - Script Log
 - Email
+
+
+
 
 
 

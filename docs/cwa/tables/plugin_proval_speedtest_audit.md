@@ -1,5 +1,5 @@
 ---
-id: 'cwa-speedtest-audit'
+id: '38fbe617-1c50-443b-b69b-07eae7135652'
 title: 'Internet Speed Audit Results Storage'
 title_meta: 'Internet Speed Audit Results Storage'
 keywords: ['speedtest', 'audit', 'bandwidth', 'latency', 'jitter', 'packetloss', 'vpn', 'isp']
@@ -47,6 +47,9 @@ Stores results from speedtests run by the script [EPM - Network - Script - Inter
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-snapagent-monitor'
+id: '8dad86ab-7d59-43ef-b148-f4ab7df0b8f0'
 title: 'SnapAgent Installation Monitor'
 title_meta: 'SnapAgent Installation Monitor'
 keywords: ['monitor', 'snapagent', 'installation', 'deployment', 'windows']
@@ -32,6 +32,9 @@ Global
 - To enable the ticketing feature it is mandatory to set the ticket category at the monitor level as shown below:
 
 ![Ticket Category](../../../static/img/BlackPoint-SnapAgent-Deployment/image_1.png)
+
+
+
 
 
 

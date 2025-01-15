@@ -1,5 +1,5 @@
 ---
-id: 'rmm-alert-multiple-antivirus-detection'
+id: 'c9183b6d-95a8-409a-9d04-e85611bf04d2'
 title: 'Alert for Multiple Antivirus Detection'
 title_meta: 'Alert for Multiple Antivirus Detection'
 keywords: ['alert', 'antivirus', 'monitor', 'detection', 'windows']
@@ -52,6 +52,9 @@ The intended target of this monitor are Windows-based machines that have had at 
 ```
 return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender' )
 ```
+
+
+
 
 
 

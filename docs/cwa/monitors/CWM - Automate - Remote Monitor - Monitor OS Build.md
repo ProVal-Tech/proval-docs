@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-os-build'
+id: 'd8ec2315-c425-41f0-a4a9-3f8aa3e61fc4'
 title: 'Remote Monitor for OS Build Changes'
 title_meta: 'Remote Monitor for OS Build Changes'
 keywords: ['monitor', 'os', 'build', 'update', 'windows']
@@ -31,6 +31,9 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Monitor OS Build](https://proval.itglue.com/DOC-5078775-13799403)
+
+
+
 
 
 

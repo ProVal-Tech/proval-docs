@@ -1,5 +1,5 @@
 ---
-id: 'vsa-mac-screen-lock-timer'
+id: 'b0101ab1-481a-437c-aec0-26e616a66270'
 title: 'MAC Screen Lock Timer'
 title_meta: 'MAC Screen Lock Timer'
 keywords: ['mac', 'screensaver', 'display', 'timer', 'settings']
@@ -45,6 +45,9 @@ Agent Procedure modifies two settings on the Mac machine via `executeShellComman
 Note: While the pmset command actively updates the GUI to reflect the setting (number 2 in image), modifying the .plist does not update the GUI (number 1 in image). The setting actively takes effect but does not have its GUI updated to reflect the change. pmset cannot change the screen saver so the .plist file is modified to achieve this.
 
 ![Image](../../../static/img/MAC-Screen-Lock-Timer/image_1.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-bios-updates-lenovo'
+id: '3405233d-ead9-4997-b685-c4a90432df3c'
 title: 'Install BIOS Updates for Lenovo Machines'
 title_meta: 'Install BIOS Updates for Lenovo Machines'
 keywords: ['bios', 'lenovo', 'updates', 'firmware', 'driver']
@@ -62,6 +62,9 @@ PowerShell Version 5+
 ## Output
 
 - Script logs
+
+
+
 
 
 

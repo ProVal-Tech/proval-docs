@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-network-adapter-settings'
+id: '8e53a0ed-4b8a-4aec-9d92-99423964f53c'
 title: 'Active Network Adapter Settings Display'
 title_meta: 'Active Network Adapter Settings Display'
 keywords: ['network', 'adapter', 'settings', 'dns', 'ipaddress', 'gateway', 'status']
@@ -43,6 +43,9 @@ Gives a display of a devices active network adapter and its associated settings.
 | MTU             | The found MTU for the adapter.                      |
 | Bytes Sent      | The number of bytes Sent as seen on the adapter.    |
 | Bytes Rec       | The number of bytes received on the adapter.        |
+
+
+
 
 
 

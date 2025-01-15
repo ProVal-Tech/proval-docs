@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-10-machines-group-creation'
+id: '8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a'
 title: 'Creating a Dynamic Group for Windows 10 Machines'
 title_meta: 'Creating a Dynamic Group for Windows 10 Machines'
 keywords: ['windows', 'group', 'dynamic', 'machines', 'criteria']
@@ -45,6 +45,9 @@ Windows 10 Machines
 
 ![Image](../../../static/img/Windows-10-Machines/image_11.png)  
 ![Image](../../../static/img/Windows-10-Machines/image_12.png)
+
+
+
 
 
 

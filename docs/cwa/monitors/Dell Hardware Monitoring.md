@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dell-omsa-monitoring'
+id: '77a9ff77-6e7a-474e-8796-d44f2066ff16'
 title: 'Dell OMSA Monitoring for Dell Servers'
 title_meta: 'Dell OMSA Monitoring for Dell Servers'
 keywords: ['dell', 'servers', 'monitoring', 'event', 'logs', 'alert', 'ticket', 'failure', 'success']
@@ -48,6 +48,9 @@ The remote monitor should be limited to the `Computers - Dell Servers` search on
 ## Implementation
 
 [Implement - Remote Monitor - Dell Hardware Monitoring](https://proval.itglue.com/DOC-5078775-15248345)
+
+
+
 
 
 

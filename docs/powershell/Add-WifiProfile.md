@@ -41,3 +41,6 @@ Create a new WiFi profile named 'MyWiFi' with the password 'MyPassword' with the
     
     .\Add-WifiProfile-error.txt
 
+
+
+

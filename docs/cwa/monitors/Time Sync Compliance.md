@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-time-sync-compliance'
+id: '021f4d58-3458-4536-96e7-b618960a1e0b'
 title: 'Remote Monitor: Time Sync Compliance'
 title_meta: 'Remote Monitor: Time Sync Compliance'
 keywords: ['windows', 'monitor', 'sync', 'time', 'compliance']
@@ -43,6 +43,9 @@ Insert the details of the monitor in the below table.
 ## How to Import
 
 [Import - Remote Monitor - Time Sync Compliance](https://proval.itglue.com/DOC-5078775-13498164)
+
+
+
 
 
 

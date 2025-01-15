@@ -1,5 +1,5 @@
 ---
-id: 'cwa-auto-close-missing-patch-tickets'
+id: '7310b9b3-8209-4067-8b83-81ab9345e2f4'
 title: 'Auto Close Missing Patch Tickets Monitor'
 title_meta: 'Auto Close Missing Patch Tickets Monitor'
 keywords: ['monitor', 'tickets', 'patches', 'automation', 'alert']
@@ -90,6 +90,9 @@ WHERE
 ```
 
 **Note:** Ensure that the [CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]*](https://proval.itglue.com/DOC-5078775-12589458) script is imported before creating the alert template.
+
+
+
 
 
 

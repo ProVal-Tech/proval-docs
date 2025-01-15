@@ -1,5 +1,5 @@
 ---
-id: 'cwa-restore-points-automation'
+id: 'd4cc7412-0bcc-4d9a-933c-da29275f6add'
 title: 'Restore Points Automation Script'
 title_meta: 'Restore Points Automation Script for Efficient System Recovery'
 keywords: ['restore', 'points', 'automation', 'system', 'recovery']
@@ -35,6 +35,9 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 ## Output
 
 - Script log
+
+
+
 
 
 

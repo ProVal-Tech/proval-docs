@@ -1,12 +1,12 @@
 ---
-id: 'cwa-configure-winget-auto-update'
+id: 'be117f3c-0af2-4edb-8fcc-06da1a4db062'
 title: 'Configure Winget Auto Update Configuration Storage'
 title_meta: 'Configure Winget Auto Update Configuration Storage'
 keywords: ['configuration', 'whitelist', 'blacklist', 'notification', 'updateinterval', 'updatetime', 'windows']
 description: 'This document outlines the purpose and structure of the custom table used for storing the configuration settings related to the Winget Auto Update feature. It details the dependencies, the table structure, and the significance of each column in managing the auto-update settings for client computers.'
 tags: ['configuration', 'whitelist', 'blacklist', 'notification', 'updateinterval', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Purpose
 
@@ -33,6 +33,9 @@ Stores the current configuration set for the computer from the client-level EDFs
 | updatesatlogon          | tinyint   | Are the updates enabled at user login too? (0/1)                                                    |
 | donotrunafterinstallation| tinyint   | Is the WAU allowed to run after installation? (0/1)                                                 |
 | remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](https://proval.itglue.com/DOC-5078775-17973900) remote monitor creation enabled? (0/1) |
+
+
+
 
 
 

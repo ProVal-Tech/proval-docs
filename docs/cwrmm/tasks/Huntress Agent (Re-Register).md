@@ -1,5 +1,5 @@
 ---
-id: 'ps-huntress-agent-re-register'
+id: '91408668-745e-49f8-8ed3-020c68faf754'
 title: 'Huntress Agent (Re-Register)'
 title_meta: 'Huntress Agent (Re-Register)'
 keywords: ['huntress', 'agent', 're-register', 'script', 'endpoint']
@@ -242,6 +242,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

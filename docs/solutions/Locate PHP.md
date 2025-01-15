@@ -1,5 +1,5 @@
 ---
-id: 'cwa-locate-php-exe'
+id: '991b3c58-48a1-44f0-96c6-c9babc049b53'
 title: 'Locate PHP.exe on Computers'
 title_meta: 'Locate PHP.exe on Computers'
 keywords: ['php', 'file', 'monitor', 'audit', 'script', 'data']
@@ -45,6 +45,9 @@ The goal of the solution is to identify the computers that have the PHP.exe file
 
 5. Mark the `Find PHP.exe` EDF on the clients you would like to audit the information on.
    ![Mark EDF](../../static/img/Locate-PHP/image_3.png)
+
+
+
 
 
 

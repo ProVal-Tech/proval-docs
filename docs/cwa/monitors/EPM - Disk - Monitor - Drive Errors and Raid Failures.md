@@ -1,5 +1,5 @@
 ---
-id: 'cwa_drive-monitoring'
+id: '62b34638-cf57-4261-8245-20689ac52ce6'
 title: 'Drive Monitoring and RAID Failure Detection'
 title_meta: 'Drive Monitoring and RAID Failure Detection'
 keywords: ['monitoring', 'raid', 'errors', 'windows', 'event', 'logs']
@@ -34,6 +34,9 @@ Remove the # from this line and that will allow this line to go into production.
 Translated from programming to human this essentially says "Do not tell me about controller errors unless there are more than 20 of them".  
 
 This could work for Paging Errors or Bad Blocks or really anything you can match.
+
+
+
 
 
 

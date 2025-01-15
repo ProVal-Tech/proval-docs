@@ -1,5 +1,5 @@
 ---
-id: 'rmm-sentinelone-deployment-monitor'
+id: '9e16691c-a81f-4a59-865c-ac38530ae29f'
 title: 'SentinelOne Deployment Failure Monitor'
 title_meta: 'SentinelOne Deployment Failure Monitor'
 keywords: ['monitor', 'sentinelone', 'deployment', 'failure', 'tickets']
@@ -56,6 +56,9 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](htt
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_9.png)  
+
+
+
 
 
 

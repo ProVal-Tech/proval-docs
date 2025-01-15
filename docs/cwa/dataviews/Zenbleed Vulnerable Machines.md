@@ -1,5 +1,5 @@
 ---
-id: 'cwa-zenbleed-vulnerability-report'
+id: '1d53f921-ce2e-4ce6-9857-d48984b0d231'
 title: 'Zenbleed Vulnerability Report'
 title_meta: 'Zenbleed Vulnerability Report - AMD Ryzen Systems'
 keywords: ['zenbleed', 'amd', 'vulnerability', 'ryzen', 'epyc', 'cpu', 'data-theft']
@@ -29,6 +29,9 @@ This dataview compiles a list of machines that are anticipated to be vulnerable 
 | Processor Cache Size      | Cache Size of the Processor                   |
 | Processor manufacturer     | Manufacturer of the Processor                 |
 | Processor Serial          | Serial Number of the Processor                |
+
+
+
 
 
 

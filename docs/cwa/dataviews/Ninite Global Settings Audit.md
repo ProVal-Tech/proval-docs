@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-ninite-configurations'
+id: '33deee73-0939-4830-b0a8-4bc0d547cdb8'
 title: 'Audit of Ninite Plugin Configurations'
 title_meta: 'Audit of Ninite Plugin Configurations'
 keywords: ['audit', 'ninite', 'plugin', 'configurations', 'settings', 'applications']
@@ -27,6 +27,9 @@ Table:
 | Client Name                  | Name of the Client                                              |
 | Different App Configurations  | Applications that are different from global settings in Ninite   |
 | Number of Different Apps      | Total count of applications that are different from global settings|
+
+
+
 
 
 

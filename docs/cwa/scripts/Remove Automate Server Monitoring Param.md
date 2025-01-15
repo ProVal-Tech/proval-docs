@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-automate-server-monitoring'
+id: 'a43c5b5e-2a85-4090-9bf1-ec4e3ec974bc'
 title: 'Remove Automate Server Monitoring'
 title_meta: 'Remove Automate Server Monitoring'
 keywords: ['automate', 'monitoring', 'script', 'removal', 'client']
@@ -37,6 +37,9 @@ A client script can either be debugged or can be executed against any client. Th
 - Remove the contents of [Automate Server Monitoring](https://proval.itglue.com/5078775/docs/10390988) from the environment, if `AreYouSure?` parameter is set to 1, otherwise, exit.  
 - Remove prosyncclient plugin from the environment, if `ProSyncClientToo?` parameter is set to 1, otherwise, exit.  
 - Removes itself from the environment, if `ProSyncClientToo?` parameter is set to 1, otherwise, exit.  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-private-firewall'
+id: '372dfa84-9e1d-4e86-9a1b-8c8904d3a489'
 title: 'Detect Private Firewall Status'
 title_meta: 'Detect Private Firewall Status in ConnectWise Automate'
 keywords: ['firewall', 'detection', 'private', 'security', 'windows']
@@ -17,6 +17,9 @@ This role is detecting if the 'Private' firewall is enabled on the machine, if s
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
 | {%@netsh advfirewall show privateprofile state| find "State"@%} | Contains   | ON     | Windows        |
+
+
+
 
 
 

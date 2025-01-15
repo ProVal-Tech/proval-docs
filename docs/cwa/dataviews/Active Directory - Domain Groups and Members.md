@@ -1,5 +1,5 @@
 ---
-id: 'cwa-summary-of-domains-and-groups'
+id: 'becaa382-47f6-414c-8d49-57b8c67b03b5'
 title: 'Summary of Domains and Groups'
 title_meta: 'Summary of Domains and Groups'
 keywords: ['domains', 'groups', 'members', 'active-directory']
@@ -28,6 +28,9 @@ AD Plugin needs to be installed, enabled, and configured with credentials to pul
 | Group GUID    | Displays the group GUID            |
 | Members       | Displays the members of the group   |
 | Domain Name   | Displays the Domain Name           |
+
+
+
 
 
 

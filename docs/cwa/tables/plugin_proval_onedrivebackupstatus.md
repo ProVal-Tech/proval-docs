@@ -1,5 +1,5 @@
 ---
-id: 'cwa_onedrive_redirection_info'
+id: 'e8a689d5-5075-416d-a38c-c0bb09487825'
 title: 'OneDrive Redirection Information'
 title_meta: 'OneDrive Redirection Information'
 keywords: ['onedrive', 'redirection', 'backup', 'user', 'audit']
@@ -31,6 +31,9 @@ Stores information about redirection of Desktop, Documents, and Pictures to OneD
 | PicturesEnabled    | TINYINT  | 1 or 0 if Pictures redirection is enabled or disabled. |
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
+
+
+
 
 
 

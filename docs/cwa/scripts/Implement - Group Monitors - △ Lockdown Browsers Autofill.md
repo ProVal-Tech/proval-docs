@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lockdown-browsers-configuration'
+id: '0fd5ce6e-ad48-4198-a69f-55dc16865b05'
 title: 'Lockdown Browsers Configuration Guide'
 title_meta: 'Lockdown Browsers Configuration Guide'
 keywords: ['lockdown', 'browsers', 'configuration', 'edfs', 'remote', 'monitors']
@@ -385,6 +385,9 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 ![Confirm Remote Monitors](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_4.png)
 
 ![Confirm Remote Monitors](../../../static/img/Implement---Group-Monitors---?-Lockdown-Browsers-Autofill/image_5.png)
+
+
+
 
 
 

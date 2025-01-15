@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-portal-setup'
+id: '4f44f833-a625-46b6-bae7-c74512ff22da'
 title: 'Webroot Portal Setup Guide'
 title_meta: 'Webroot Portal Setup Guide'
 keywords: ['webroot', 'portal', 'setup', 'custom', 'group', 'code']
@@ -17,6 +17,9 @@ Go to Manage → Entities → Sites & Groups → Select the Group whose code and
 ![Image](../../../static/img/Webroot-GroupCode-and-GroupName-Fetching/image_1.png)
 
 We can create a custom group here and get the code to push installed Webroot agents there.
+
+
+
 
 
 

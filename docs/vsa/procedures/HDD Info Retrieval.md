@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-disk-info'
+id: 'f64826a7-f9c0-45c5-9d1f-136657fbd875'
 title: 'Get Disk Drive Information and Save to CSV'
 title_meta: 'Get Disk Drive Information and Save to CSV'
 keywords: ['disk', 'drive', 'csv', 'information', 'reporting']
@@ -47,6 +47,9 @@ Runs Get-DiskInfo and creates a CSV with popularly requested values.
 
 GetFile: StackContent/DiskReport.csv  
 Endpoint: %programData/_automation/StackContent/DiskReport/DiskReport.csv
+
+
+
 
 
 

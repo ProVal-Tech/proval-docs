@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-internet-explorer'
+id: 'c48b8ff6-9189-49b2-bd2a-442fb26e7bbe'
 title: 'Detecting Internet Explorer Installation and Features'
 title_meta: 'Detecting Internet Explorer Installation and Features'
 keywords: ['internet', 'explorer', 'detection', 'feature', 'windows']
@@ -17,6 +17,9 @@ The purpose of this role is to detect the machines where Internet Explorer featu
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%@C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -Command "Get-WindowsOptionalFeature -Online -FeatureName Internet-Explorer* "@%}` | Contains   | Enable | Windows        |
+
+
+
 
 
 

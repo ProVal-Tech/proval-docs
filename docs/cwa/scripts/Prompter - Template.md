@@ -1,5 +1,5 @@
 ---
-id: 'cwa-prompter-template'
+id: 'e6f6f344-5f75-4794-84d9-86b110206089'
 title: 'Prompter - Template for Client Use'
 title_meta: 'Prompter - Template for Client Use'
 keywords: ['template', 'prompter', 'script', 'message', 'client']
@@ -57,6 +57,9 @@ These variables are used in the prompter script. They should be set in any scrip
 | selectedButton     | Button Selected by the user.                                                                             |
 | dateTimeSelection   | Date Time selected by the user.                                                                          |
 | userResponse       | Input/Feedback provided by the user in the User Input Field.                                            |
+
+
+
 
 
 

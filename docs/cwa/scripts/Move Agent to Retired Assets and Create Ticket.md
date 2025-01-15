@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-ticket-retire-agent'
+id: 'b091a26a-23d5-43cc-a00b-0075e2940ad2'
 title: 'Create Ticket and Retire Agent'
 title_meta: 'Create Ticket and Retire Agent - ConnectWise Automate'
 keywords: ['ticket', 'retire', 'agent', 'automation', 'connectwise']
@@ -25,6 +25,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

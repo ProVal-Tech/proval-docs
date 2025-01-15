@@ -1,5 +1,5 @@
 ---
-id: 'rmm-security-event-monitor'
+id: '0f6e6262-6a9f-4edf-ab23-1522543de7e2'
 title: 'Remote Monitor for Security Event Log Clearance'
 title_meta: 'Remote Monitor for Security Event Log Clearance'
 keywords: ['security', 'event', 'monitor', 'alert', 'windows']
@@ -47,6 +47,9 @@ Windows Computers
 ## Implementation
 
 [Import - Remote Monitor - Security event logs cleared/deleted](https://proval.itglue.com/DOC-5078775-14946240)
+
+
+
 
 
 

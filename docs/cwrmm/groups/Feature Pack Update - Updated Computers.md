@@ -1,5 +1,5 @@
 ---
-id: 'rmm-feature-pack-update-updated-computers'
+id: '72490aca-9d0d-47b9-88a9-437279e21d7a'
 title: 'Feature Pack Update - Updated Computers'
 title_meta: 'Feature Pack Update - Updated Computers'
 keywords: ['windows', 'update', 'group', 'criteria', 'custom', 'field', 'install', 'failure', 'reboot', 'pending']
@@ -85,6 +85,9 @@ Click the Save button to Save the Group.
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_13.png)
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_14.png)
+
+
+
 
 
 

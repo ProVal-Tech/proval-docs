@@ -1,5 +1,5 @@
 ---
-id: 'cwa_move_agent_to_retired_assets'
+id: '960ebb92-13ba-4d19-9b02-5e0ce55db592'
 title: 'Move Agent to Retired Assets'
 title_meta: 'Move Agent to Retired Assets - Automate Agent Management'
 keywords: ['agent', 'retired', 'assets', 'sql', 'monitor']
@@ -23,6 +23,9 @@ Note: This should not be ran manually, it should only be ran through the monitor
 ## Process
 
 This script runs a SQL query against the machine to retire it.
+
+
+
 
 
 

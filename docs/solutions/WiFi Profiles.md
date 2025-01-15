@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-remove-add-wifi-profiles'
+id: 'd0357bdb-80ab-4106-aee0-21a064150986'
 title: 'Get/Remove/Add Wifi Profiles'
 title_meta: 'Get/Remove/Add Wifi Profiles - Manage Wi-Fi Profiles Effectively'
 keywords: ['wifi', 'profiles', 'malicious', 'suspicious', 'monitor', 'script', 'audit']
@@ -50,6 +50,9 @@ The purpose of the solution is to find out and remove the malicious/suspicious W
 - Check the data fetched from these primary computers in the [CWM - Automate - Dataview - Wi-Fi Profiles](https://proval.itglue.com/DOC-5078775-12979850) dataview.
 - Set the EDFs defined in the [script's](https://proval.itglue.com/DOC-5078775-12979854) document as per the data available in the [dataview](https://proval.itglue.com/DOC-5078775-12979850).
 - Apply the `△ CUSTOM - Execute Script - Get - Wifi Profiles` alert template on the monitor set.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reboot-window-check'
+id: 'eb54bf63-7c3d-4db0-a76d-d421eb07a243'
 title: 'Reboot Machine Within Configured Time Window'
 title_meta: 'Reboot Machine Within Configured Time Window'
 keywords: ['reboot', 'time', 'window', 'script', 'check']
@@ -49,6 +49,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

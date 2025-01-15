@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sentinel-agent-verification'
+id: '561f24a4-36c7-4329-949f-046762abdcbd'
 title: 'Sentinel Agent Verification Process'
 title_meta: 'Sentinel Agent Verification Process'
 keywords: ['sentinel', 'agent', 'verification', 'monitor', 'script']
@@ -34,6 +34,9 @@ The purpose of this solution is to identify instances where computers are utiliz
   ![Image](../../static/img/Sentinel-One-Settings-Verification/image_8.png)  
 - Execute the script against a few random machines with Sentinel One Installed and ensure that it's delivering as expected.
 - Implement the alert template to the internal monitor.
+
+
+
 
 
 

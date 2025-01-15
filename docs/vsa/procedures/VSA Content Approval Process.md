@@ -1,5 +1,5 @@
 ---
-id: 'vsa-getting-the-approval-request'
+id: '183a6a77-39ff-4a42-95ac-1929e053630d'
 title: 'Getting the Approval Request'
 title_meta: 'Getting the Approval Request'
 keywords: ['approval', 'content', 'documentation', 'review', 'production']
@@ -54,6 +54,9 @@ You will receive an approval ticket in your Autotask queue when a piece of conte
    - VSA-Wide or Stack content should be categorized appropriately within Documents/Content Library/_RMM - Kaseya/
 
 3. Finally, add the content you've approved to the content tracker for the month: [Content Tracker](https://proval.itglue.com/5078775/documents/folder/3021357) so that we can discuss all created content in a monthly meeting.
+
+
+
 
 
 

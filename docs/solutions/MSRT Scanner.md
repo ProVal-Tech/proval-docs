@@ -1,5 +1,5 @@
 ---
-id: 'cwa-msrt-scanner-solution'
+id: '20e5cbc7-4882-496d-a818-348e42f644db'
 title: 'Malicious Software Removal Tool Scanner Solution'
 title_meta: 'Malicious Software Removal Tool Scanner Solution'
 keywords: ['msrt', 'scanner', 'malware', 'audit', 'monitor']
@@ -42,6 +42,9 @@ This solution performs the MSRT scanning, auto-fixes detect infection as an opti
      ED06AECD5686944B0A5E5D76C1E7A9EA
      C8759C7E4979819C0BB39DAF4DC64124
      ```
+
+
+
 
 
 

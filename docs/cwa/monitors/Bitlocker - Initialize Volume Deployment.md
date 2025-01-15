@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-encryption-monitor'
+id: '925adfc5-e119-4c56-937a-a31c3e171371'
 title: 'BitLocker Encryption Monitor'
 title_meta: 'BitLocker Encryption Monitor'
 keywords: ['bitlocker', 'encryption', 'monitor', 'windows', 'workstation']
@@ -20,6 +20,9 @@ This internal monitor detects the online supported Windows workstation OS (Windo
 ## Target
 
 Global
+
+
+
 
 
 

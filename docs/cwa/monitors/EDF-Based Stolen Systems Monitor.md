@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lock-stolen-system'
+id: 'c528df82-8309-4fc8-898e-db75e13a594d'
 title: 'Lock Stolen System Script Execution'
 title_meta: 'Lock Stolen System Script Execution'
 keywords: ['encryption', 'security', 'automate', 'monitoring', 'system']
@@ -21,6 +21,9 @@ Executes the [SEC - Encryption - Script - Lock Stolen System](https://proval.itg
 `Marked as Stolen` Group
 
 ![Image](../../../static/img/EDF-Based-Stolen-Systems-Monitor/image_1.png)
+
+
+
 
 
 

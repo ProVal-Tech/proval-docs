@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-windows-update-access'
+id: '9907b8d6-17a4-41cd-b687-dea1e5744485'
 title: 'Enable Windows Update Access'
 title_meta: 'Enable Windows Update Access'
 keywords: ['windows', 'update', 'registry', 'access', 'disable']
@@ -158,6 +158,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

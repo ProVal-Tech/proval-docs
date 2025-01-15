@@ -1,5 +1,5 @@
 ---
-id: 'vsa-uses-revised-datto-scrip'
+id: '860118db-b386-45bd-8dfc-580742b1f467'
 title: 'Uses revised Datto Scrip'
 title_meta: 'Uses revised Datto Scrip for Endpoint Security Scanning'
 keywords: ['datto', 'endpoint', 'security', 'vulnerabilities', 'scan']
@@ -17,6 +17,9 @@ Email must be specified on script line 7.
 Email will be sent in the case that vulnerabilities or attack traces are found. No notification if no threat exists.
 
 ![Image](../../../static/img/Log4J-Scan-and-Remediation/image_1.png)
+
+
+
 
 
 

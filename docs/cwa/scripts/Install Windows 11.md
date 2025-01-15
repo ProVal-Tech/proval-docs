@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-windows-11'
+id: '11c5b7d5-108d-4068-b3ea-68af8100aae4'
 title: 'Process to Download and Install Windows 11'
 title_meta: 'Process to Download and Install Windows 11'
 keywords: ['windows', 'installation', 'iso', 'download', 'ftp', 'patching']
@@ -40,6 +40,9 @@ See [SEC - Windows Patching - Agnostic - Install-Windows11](https://proval.itglu
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

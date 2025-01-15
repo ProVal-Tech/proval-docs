@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-report'
+id: '41141ff5-ef57-4900-93d4-642b4a9d254f'
 title: 'Windows Update Report'
 title_meta: 'Windows Update Report'
 keywords: ['patches', 'report', 'windows', 'update', 'table']
@@ -41,6 +41,9 @@ Step 7: Logging the Failure.
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

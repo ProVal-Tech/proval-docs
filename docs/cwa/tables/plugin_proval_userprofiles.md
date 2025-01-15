@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-profile-information'
+id: '7a87abf3-b410-491b-bbc1-534092e61f55'
 title: 'User Profile Information Storage'
 title_meta: 'User Profile Information Storage'
 keywords: ['windows', 'user', 'profile', 'data', 'audit', 'computer', 'local', 'admin']
@@ -32,6 +32,9 @@ Stores Windows user profile information. Data is filled by [EPM - Accounts - Scr
 | TimeStamp   | DATETIME | The date and time of the audit.                           |
 | UserProfile | VARCHAR  | The path to the user profile folder.                      |
 | Enabled     | VARCHAR  | True or False on if the local account is enabled. If not a local user, then field is set to Remote. |
+
+
+
 
 
 

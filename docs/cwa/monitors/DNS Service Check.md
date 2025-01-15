@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dns-service-autofix'
+id: '200c48e8-a828-43da-8ae5-f31a3280893b'
 title: 'DNS Service Autofix Solution'
 title_meta: 'DNS Service Autofix Solution'
 keywords: ['dns', 'monitor', 'alert', 'script', 'service']
@@ -24,6 +24,9 @@ This solution contains a remote monitor, a search, an alert template, and a scri
 
 - Follow the below document for import and implementation steps:  
   [Import - Remote Monitor - ProVal - Production - DNS Service Check](https://proval.itglue.com/DOC-5078775-13604735)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-repair-windows-update'
+id: 'aaa3f8da-cfd3-454a-808b-d4501f9c2608'
 title: 'Repair and Reset Windows Update Settings'
 title_meta: 'Repair and Reset Windows Update Settings'
 keywords: ['repair', 'windows', 'update', 'settings', 'script']
@@ -43,6 +43,9 @@ Executes the Agnostic script [Repair-WindowsUpdate](https://proval.itglue.com/DO
 ## Output
 
 - Script Logs
+
+
+
 
 
 

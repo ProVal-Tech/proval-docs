@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-set-patching-schedule'
+id: '7fde3cde-75d6-4db5-9e4e-ee8fbce1081b'
 title: 'Monitor Set for Patching Schedule'
 title_meta: 'Monitor Set for Patching Schedule'
 keywords: ['monitor', 'patching', 'schedule', 'windows', 'automate']
@@ -21,6 +21,9 @@ The monitor set is used to identify computers whose patching schedule ended with
 Windows Machines with active Automate Patching policies.
 
 ## Translated SQL
+
+
+
 
 
 

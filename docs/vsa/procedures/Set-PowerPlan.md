@@ -1,5 +1,5 @@
 ---
-id: 'ps-configure-power-plan-settings'
+id: '9aa93802-fded-4dc8-9c58-761410b5755d'
 title: 'Configure Power Plan Settings Using CSV'
 title_meta: 'Configure Power Plan Settings Using CSV'
 keywords: ['power', 'plan', 'csv', 'settings', 'configuration']
@@ -131,6 +131,9 @@ PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.pr
 ./Set-PowerPlan-log.txt
 ./Set-PowerPlan-Error.txt
 ```
+
+
+
 
 
 

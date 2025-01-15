@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uncategorized-monitors-report'
+id: 'b1c9c471-676c-4bd6-a2a0-c1417a5b4169'
 title: 'Uncategorized Monitors Report in ConnectWise'
 title_meta: 'Uncategorized Monitors Report in ConnectWise'
 keywords: ['monitors', 'tickets', 'connectwise', 'report', 'serviceboard']
@@ -30,6 +30,9 @@ ConnectWise Manage Plugin must be installed and configured with imported service
 | Sub Type        | The sub-type ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
 | Item            | The item the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
 | Work Type       | The work type the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
+
+
+
 
 
 

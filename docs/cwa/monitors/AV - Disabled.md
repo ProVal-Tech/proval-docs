@@ -1,5 +1,5 @@
 ---
-id: 'cwa_monitor-av-disabled'
+id: 'd4d89a22-e41b-4ad6-b0ba-ba78f4968adb'
 title: 'Monitor for Disabled Antivirus'
 title_meta: 'Monitor for Disabled Antivirus - ConnectWise'
 keywords: ['monitor', 'antivirus', 'disabled', 'autofix', 'service', 'status']
@@ -23,6 +23,9 @@ None.
 All Machines with AntiVirus installed and/or the managed service plans. 
 
 This monitor will work for all operating systems, but the available auto-fix will only run on Windows devices!
+
+
+
 
 
 

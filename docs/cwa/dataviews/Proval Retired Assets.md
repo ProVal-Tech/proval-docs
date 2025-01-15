@@ -1,5 +1,5 @@
 ---
-id: 'cwa-retired-assets-dataview'
+id: 'e02bed1f-3f3d-46bb-8522-2dbfafa9138e'
 title: 'Retired Assets Dataview with Comments'
 title_meta: 'Retired Assets Dataview with Comments'
 keywords: ['dataview', 'retired', 'assets', 'comment']
@@ -19,6 +19,9 @@ All Columns are exactly the same as the stock retired assets dataview with the a
 | Column  | Description                                             |
 |---------|---------------------------------------------------------|
 | Comment | The Comment associated with the retirement of the agent.|
+
+
+
 
 
 

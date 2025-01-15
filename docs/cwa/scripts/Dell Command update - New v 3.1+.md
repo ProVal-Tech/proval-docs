@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-dell-command-update'
+id: '6b58263a-cc4f-45d1-bf29-2e777f0cf644'
 title: 'Install Dell Command Update'
 title_meta: 'Install Dell Command Update'
 keywords: ['dell', 'command', 'update', 'installation', 'scan']
@@ -39,6 +39,9 @@ This script installs Dell Command Update if not present, updates it to 3.1.2 if 
 ## Output
 
 - Script log  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-ad-recycle-bin'
+id: 'e80d5873-304e-4b12-b52c-b608a7715a9f'
 title: 'Enable AD Recycle Bin Script'
 title_meta: 'Enable AD Recycle Bin Script'
 keywords: ['active-directory', 'recycle-bin', 'windows', 'script', 'logging']
@@ -66,6 +66,9 @@ Not Supported
 Outdated  
 
 `The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. Minimum version required is above 3.0 and the current version is @PSVersion@.`  
+
+
+
 
 
 

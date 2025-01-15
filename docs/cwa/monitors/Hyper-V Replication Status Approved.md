@@ -1,5 +1,5 @@
 ---
-id: 'vsa-hyper-v-replication-status'
+id: 'f201b6f8-2844-484b-b3f8-79e1fd76e819'
 title: 'Hyper-V Replication Status Monitoring'
 title_meta: 'Hyper-V Replication Status Monitoring'
 keywords: ['hyper-v', 'replication', 'monitoring', 'alerts', 'troubleshooting']
@@ -152,6 +152,9 @@ unlisted: false
    ```
 
 3. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

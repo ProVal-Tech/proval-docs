@@ -1,5 +1,5 @@
 ---
-id: 'rmm-internet-speed-test'
+id: '296c457d-66d6-4de8-af91-4667c2321e12'
 title: 'Internet Speed Test via Ookla SpeedTest CLI'
 title_meta: 'Internet Speed Test via Ookla SpeedTest CLI'
 keywords: ['internet', 'speed', 'test', 'ookla', 'cli']
@@ -129,6 +129,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
+
 
 
 

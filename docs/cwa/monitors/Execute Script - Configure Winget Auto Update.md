@@ -1,5 +1,5 @@
 ---
-id: 'cwa-configure-winget-auto-update-monitor'
+id: 'a2fa065f-6f76-4442-a0e0-a64365f6c331'
 title: 'Configure Winget Auto Update Monitor'
 title_meta: 'Configure Winget Auto Update Monitor'
 keywords: ['winget', 'update', 'monitor', 'script', 'windows']
@@ -24,6 +24,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Configure Winget Auto Update`
+
+
+
 
 
 

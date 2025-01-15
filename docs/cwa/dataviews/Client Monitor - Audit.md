@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-list-client-level'
+id: '1f9f9053-1a02-4115-a7c7-70af370a9655'
 title: 'Client Level Monitor List'
 title_meta: 'Client Level Monitor List - Overview of Monitors for Each Client'
 keywords: ['monitor', 'client', 'agents', 'alert', 'template', 'category']
@@ -21,6 +21,9 @@ This dataview provides a monitor list based on a client level, it shows a list o
 | Monitor Type         | The type of monitor applied.                        |
 | Alert Template Name   | Alert template attached to the monitor.            |
 | Ticket Category      | Ticket category to show applied to the monitor.    |
+
+
+
 
 
 

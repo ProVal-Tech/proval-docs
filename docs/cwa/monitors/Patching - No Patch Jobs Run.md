@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-patching-status'
+id: '6d42adc8-2e3d-4642-9471-327ef96bae1f'
 title: 'Monitor Patching Status in ConnectWise Automate'
 title_meta: 'Monitor Patching Status in ConnectWise Automate'
 keywords: ['patching', 'monitor', 'connectwise', 'automate', 'status']
@@ -19,6 +19,9 @@ Automate must be upgraded to the "new" patch manager.
 ## Target
 
 Global - Should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by CW Automate.
+
+
+
 
 
 

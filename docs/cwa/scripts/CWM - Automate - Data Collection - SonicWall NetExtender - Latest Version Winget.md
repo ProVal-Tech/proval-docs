@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sonicwall-netextender-version'
+id: '5eca56c8-7035-41f7-b5d0-ef8d58bf532a'
 title: 'SonicWall NetExtender Version Storage Script'
 title_meta: 'SonicWall NetExtender Version Storage Script'
 keywords: ['sonicwall', 'netextender', 'version', 'system', 'properties']
@@ -25,6 +25,9 @@ This script is designed to store the SonicWall NetExtender latest version to the
 ## Output
 
 - Script log
+
+
+
 
 
 

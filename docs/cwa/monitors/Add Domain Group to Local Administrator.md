@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-creation-computer'
+id: '1e8cbc91-0ac5-4b80-b2bd-0b876528148e'
 title: 'ConnectWise Automate - Ticket Creation for Computers'
 title_meta: 'ConnectWise Automate - Ticket Creation for Computers'
 keywords: ['connectwise', 'ticket', 'creation', 'computer', 'groupid', 'alert', 'template', 'monitor']
@@ -172,6 +172,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
+
+
 
 
 

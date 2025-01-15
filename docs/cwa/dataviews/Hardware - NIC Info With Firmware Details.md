@@ -1,5 +1,5 @@
 ---
-id: 'cwa-network-adapter-info'
+id: '058e4fab-a293-4f8e-b737-7ac47e0fd227'
 title: 'Network Adapter Information Dataview'
 title_meta: 'Network Adapter Information Dataview'
 keywords: ['network', 'adapter', 'information', 'dataview', 'networking']
@@ -23,6 +23,9 @@ This Dataview will show information about existing network adapters.
 | NIC Name        | Display the Network adapter name.       |
 | Driver Name     | Display the Network adapter driver name.|
 | Driver Version  | Display the Network adapter driver version.|
+
+
+
 
 
 

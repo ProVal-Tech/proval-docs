@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-open-dns-machines'
+id: '9bb7d6a2-5e10-47d7-98cc-78b8e5cdd10c'
 title: 'Audit Open DNS Machines without Wireless Card'
 title_meta: 'Audit Open DNS Machines without Wireless Card'
 keywords: ['audit', 'opendns', 'agent', 'wireless', 'msp']
@@ -25,6 +25,9 @@ Many MSPs set up OpenDNS on the LAN so all workstations connected via Ethernet (
 | Machine Type    | Displays whether it's a server or a workstation |
 | Wireless card    | Displays the wireless card status              |
 | Umbrella Agent  | Displays the Umbrella agent status              |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-change-printer-ip'
+id: '631186de-253a-4bd7-8197-958cb1ed7b68'
 title: 'Change Printer IP Address'
 title_meta: 'Change Printer IP Address'
 keywords: ['printer', 'ip', 'change', 'networking']
@@ -40,6 +40,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

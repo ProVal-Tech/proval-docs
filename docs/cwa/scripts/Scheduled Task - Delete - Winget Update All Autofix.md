@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-winget-tasks'
+id: '23d4e4bf-1a80-4db0-983b-99da88e8ba34'
 title: 'Remove Winget Update Tasks'
 title_meta: 'Remove Winget Update Tasks from Windows Machines'
 keywords: ['winget', 'tasks', 'windows', 'script', 'scheduled', 'uninstall']
@@ -31,6 +31,9 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
+
+
+
 
 
 

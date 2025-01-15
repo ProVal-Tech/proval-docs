@@ -1,5 +1,5 @@
 ---
-id: 'cwa-empty-html-document'
+id: '1a188004-4007-40dc-8c44-d64d3c0d2bb8'
 title: 'Empty HTML Document Handling'
 title_meta: 'Empty HTML Document Handling'
 keywords: ['html', 'markdown', 'conversion', 'content', 'empty']
@@ -9,6 +9,9 @@ draft: false
 unlisted: false
 ---
 It appears that you have provided an empty HTML document. If you have specific HTML content that you would like to convert to Markdown, please provide that content, and I will be happy to assist you with the conversion!
+
+
+
 
 
 

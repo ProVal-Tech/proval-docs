@@ -1,5 +1,5 @@
 ---
-id: 'cwa-folder-redirection-notifications'
+id: '8de9befe-2917-47b3-97e6-23d737a05dfa'
 title: 'Folder Redirection Notifications for OneDrive'
 title_meta: 'Folder Redirection Notifications for OneDrive'
 keywords: ['onedrive', 'notifications', 'folder', 'redirection', 'endpoint']
@@ -17,6 +17,9 @@ This role will determine if the folder redirection notifications are enabled for
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptInWithNotification-%}` | Equals     | 1      | Windows OS     |
+
+
+
 
 
 

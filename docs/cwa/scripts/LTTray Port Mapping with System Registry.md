@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lttray-port-mapping'
+id: 'cc09c16e-c62b-4001-9226-1b92097a6507'
 title: 'LTTray Port Mapping Script'
 title_meta: 'LTTray Port Mapping Script for Resolving Intermittent Issues'
 keywords: ['lttray', 'port', 'netstat', 'registry', 'automation']
@@ -47,6 +47,9 @@ Time Saved by Automation: 10 Minutes
 
 - Script log
 - Scriptstate
+
+
+
 
 
 

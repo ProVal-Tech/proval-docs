@@ -1,5 +1,5 @@
 ---
-id: 'cwa_check-point-endpoint-uninstallation'
+id: '670407ad-49d7-407a-bf5c-4bf727dc103b'
 title: 'Check Point Endpoint Security Uninstallation Script'
 title_meta: 'Check Point Endpoint Security Uninstallation Script'
 keywords: ['uninstallation', 'checkpoint', 'security', 'windows', 'reboot']
@@ -55,6 +55,9 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@  
+
+
+
 
 
 

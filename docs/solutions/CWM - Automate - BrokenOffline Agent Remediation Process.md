@@ -1,5 +1,5 @@
 ---
-id: 'cwa-restore-connectwise-automate-agents'
+id: '809aa131-6fd4-4016-88d9-795124823603'
 title: 'Restoring ConnectWise Automate Agents Functionality'
 title_meta: 'Restoring ConnectWise Automate Agents Functionality'
 keywords: ['connectwise', 'agents', 'remediation', 'report', 'plugin']
@@ -26,6 +26,9 @@ It is essential to note that this solution is reliant on the CW RMM+ plugin and 
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+
+
 
 
 

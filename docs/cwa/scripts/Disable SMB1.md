@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-smb1-protocol'
+id: '70c7fa58-20bf-47b1-bbeb-aae491390406'
 title: 'Disable SMB1 Protocol on Windows'
 title_meta: 'Disable SMB1 Protocol on Windows'
 keywords: ['smb1', 'windows', 'protocol', 'disable', 'security']
@@ -23,6 +23,9 @@ Windows OS
 ## Output
 
 - Script log
+
+
+
 
 
 

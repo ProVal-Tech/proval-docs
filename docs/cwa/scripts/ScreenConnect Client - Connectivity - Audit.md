@@ -1,5 +1,5 @@
 ---
-id: 'cwa-incorrect-rmm-plus-configuration'
+id: '18562eaa-d162-4362-98d3-4bbaa2922458'
 title: 'Incorrect RMM_Plus Configuration'
 title_meta: 'Incorrect RMM_Plus Configuration'
 keywords: ['rmm', 'configuration', 'email', 'alerts', 'monitoring']
@@ -56,6 +56,9 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - script state
 - E-Mail
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_connection_audit_daily'
+id: 'da608773-1677-4247-a161-ea62b3b3ba23'
 title: 'Daily Connection Audit Table for Automate'
 title_meta: 'Daily Connection Audit Table for Automate'
 keywords: ['connection', 'audit', 'table', 'automate', 'offline', 'online', 'data', 'collection']
@@ -30,6 +30,9 @@ The script will start adding data to this table 24 hours after adding the first 
 | online              | int      | number of minutes it was online in the last 24 hours |
 | offline             | int      | number of minutes it was offline in the last 24 hours |
 | datacollectiontime  | datetime | data collection time for the respective entry        |
+
+
+
 
 
 

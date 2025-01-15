@@ -1,12 +1,12 @@
 ---
-id: 'rmm-retire-machines-offline'
+id: 'b29a19e6-c991-4dc3-8b87-81191273eb2c'
 title: 'Retire Machines Offline for More Than 60 Days'
 title_meta: 'Retire Machines Offline for More Than 60 Days'
 keywords: ['monitor', 'retire', 'machines', 'offline', 'autofix', 'sql']
 description: 'This document outlines the process for creating a monitor to retire machines that have been offline for more than 60 days, including necessary prerequisites, configurations, and autofix scripts to ensure proper removal of agents from the environment.'
 tags: ['monitoring', 'configuration', 'database', 'script', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 <div class='text-section scrollable'>
 **Important :**
@@ -66,6 +66,9 @@ Script 2: "Move Agent to Retired Assets [Autofix]*"
 
 Folder - ".Monitor Autofixes"
 </div>
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-upgrade-assistant'
+id: 'b4c2b307-41af-4ebf-8132-9f883351b09b'
 title: 'Windows 10 Upgrade Assistant Script'
 title_meta: 'Windows 10 Upgrade Assistant Script for Efficient Upgrades'
 keywords: ['windows', 'upgrade', 'assistant', 'installation', 'automation']
@@ -37,6 +37,9 @@ If the process for the Windows 10 app exists, the script will exit successfully 
 ## Output
 
 - Script log messages only
+
+
+
 
 
 

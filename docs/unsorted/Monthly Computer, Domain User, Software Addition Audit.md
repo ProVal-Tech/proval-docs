@@ -1,12 +1,12 @@
 ---
-id: 'cwa-audit-summary-new-computers-software-domain-users'
+id: '7823e025-efaf-42ab-9fa4-23b0a91190f2'
 title: 'Audit Summary of New Computers, Software, and Domain Users'
 title_meta: 'Audit Summary of New Computers, Software, and Domain Users'
 keywords: ['audit', 'computers', 'software', 'domain', 'users', 'client', 'environment']
 description: 'This document provides a comprehensive audit summary of newly added computers, software installations, and domain user additions within the client environment for the last month. It includes detailed information about the client and agent status, as well as specific counts and dates for each category.'
 tags: ['client', 'environment', 'installation', 'software', 'update', 'windows']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -31,6 +31,9 @@ Column description:
 | Newly Added Domain User         | Domain users list of last month added                                      |
 | Newly Added Account Count       | Domain users count of last month added                                     |
 | Domain Account Creation Date     | Domain Account Creation Date of last month                                  |
+
+
+
 
 
 

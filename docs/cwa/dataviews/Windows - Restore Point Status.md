@@ -1,5 +1,5 @@
 ---
-id: 'cwa-restore-point-status'
+id: 'd32a3e6a-318d-4335-a980-39906cea8d12'
 title: 'Restore Point Status for Workstations'
 title_meta: 'Restore Point Status for Workstations'
 keywords: ['restore', 'workstations', 'status', 'enabled', 'disabled']
@@ -25,6 +25,9 @@ The dataview displays the status of the Restore point for workstations.
 | Computer Name       | Computer name.                                            |
 | OS                  | Displays the operating system of the agents.               |
 | Restore Point Status | Displays if the Restore point is Enabled or Disabled on the computers. |
+
+
+
 
 
 

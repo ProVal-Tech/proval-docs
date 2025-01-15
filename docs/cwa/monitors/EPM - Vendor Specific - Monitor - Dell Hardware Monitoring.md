@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dell-event-log-monitor'
+id: '5be9ccc8-0317-42e4-ba36-5fa203e9582e'
 title: 'Dell Event Log Monitor'
 title_meta: 'Dell Event Log Monitor for Critical and Error Detection'
 keywords: ['dell', 'event', 'monitor', 'logs', 'server']
@@ -21,6 +21,9 @@ Replace <Your AgentID Goes Here> with the ID of the monitor set before enabling 
 ## Target
 
 Dell Servers
+
+
+
 
 
 

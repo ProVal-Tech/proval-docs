@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-maintenance-mode'
+id: '8ea82e33-879c-47d6-93a2-e33801126e54'
 title: 'Set Maintenance Mode for Reboot'
 title_meta: 'Set Maintenance Mode for Reboot'
 keywords: ['maintenance', 'reboot', 'windows', 'script', 'parameter']
@@ -47,6 +47,9 @@ The script will then issue a Windows CLI command to restart the device and then 
 ## Output
 
 Script log messages
+
+
+
 
 
 

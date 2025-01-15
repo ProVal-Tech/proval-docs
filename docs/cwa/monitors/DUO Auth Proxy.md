@@ -1,5 +1,5 @@
 ---
-id: 'cwa-duo-authentication-proxy-monitor'
+id: '588520f3-c262-4b80-8c56-0b9411ab0bdc'
 title: 'DUO Authentication Proxy Version Monitor'
 title_meta: 'DUO Authentication Proxy Version Monitor'
 keywords: ['duo', 'monitor', 'version', 'authentication', 'proxy', 'windows']
@@ -27,6 +27,9 @@ Insert the details of the monitor in the below table.
 ## Target
 
 - Group of windows machines having 'DUO Security Authentication Proxy' application installed
+
+
+
 
 
 

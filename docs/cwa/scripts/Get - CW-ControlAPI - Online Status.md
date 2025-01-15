@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-data-collection-script-get-cw-controlapi-online-status'
+id: '71ac312f-e490-4126-bc2d-f9c07f5582cf'
 title: 'EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status'
 title_meta: 'EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status'
 keywords: ['connectwise', 'control', 'status', 'script', 'automation']
@@ -40,6 +40,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Custom Table
+
+
+
 
 
 

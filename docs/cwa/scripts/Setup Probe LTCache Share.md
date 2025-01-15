@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-ltcache'
+id: '06ceeffc-d91b-4936-9889-101e02b683ca'
 title: 'Remove LTCache on Probe'
 title_meta: 'Remove LTCache on Probe'
 keywords: ['ltcache', 'probe', 'credentials', 'location', 'settings', 'diskspace', 'folder', 'share', 'local', 'account']
@@ -45,6 +45,9 @@ Location must have a probe enabled, otherwise script will exit with error.
 ## Output
 
 Script log
+
+
+
 
 
 

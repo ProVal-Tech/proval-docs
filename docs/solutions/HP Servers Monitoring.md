@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-hp-hardware-alerts'
+id: '4cb2968c-ade3-48d6-ad2a-96d04735095b'
 title: 'Monitoring HP Hardware Alerts'
 title_meta: 'Monitoring HP Hardware Alerts'
 keywords: ['hp', 'hardware', 'alerts', 'monitoring', 'hpeilo', 'insight', 'management', 'agents']
@@ -59,6 +59,9 @@ The purpose of the solution is to monitor the hardware alerts generated on an HP
       Delete from groupagents where `Name` = 'ProVal - Production - HP Hardware Monitoring';
       Delete from agents where `Name` = 'ProVal - Production - HP Hardware Monitoring' and computerid > 0;
       ```
+
+
+
 
 
 

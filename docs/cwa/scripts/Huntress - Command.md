@@ -1,5 +1,5 @@
 ---
-id: 'cwa-huntress-install-uninstall'
+id: '134f8e46-d2b2-4d92-9c3c-d1f8f921bf5d'
 title: 'Huntress Installation and Uninstallation Script'
 title_meta: 'Huntress Installation and Uninstallation Script'
 keywords: ['huntress', 'install', 'uninstall', 'reinstall', 'script']
@@ -57,6 +57,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

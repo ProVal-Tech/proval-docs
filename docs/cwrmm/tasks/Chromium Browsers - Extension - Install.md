@@ -1,5 +1,5 @@
 ---
-id: 'rmm-chromium-browsers-extension-install'
+id: '36fa496a-be60-416f-87a6-f725a1241540'
 title: 'Install Extensions on Popular Chromium Browsers'
 title_meta: 'Install Extensions on Popular Chromium Browsers'
 keywords: ['extensions', 'chromium', 'chrome', 'edge', 'brave', 'vivaldi']
@@ -134,6 +134,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
+
 
 
 

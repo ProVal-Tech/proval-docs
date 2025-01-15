@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unregister-edge-extension'
+id: 'a89ef3e3-2a5e-4b46-9286-1a2cf054011a'
 title: 'Unregister Edge Extension'
 title_meta: 'Unregister Edge Extension - Remove Extension Enforcement in Microsoft Edge'
 keywords: ['edge', 'extension', 'unregister', 'chromium', 'windows']
@@ -67,6 +67,9 @@ Example:
 ```
 ./Unregister-EdgeExtension-log.txt
 ```
+
+
+
 
 
 

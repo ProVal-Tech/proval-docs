@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sonicwall-netextender-install-update'
+id: 'd7f9015f-0d7c-4bfb-b624-4600f4774b65'
 title: 'SonicWall NetExtender Install/Update Script'
 title_meta: 'SonicWall NetExtender Install/Update Script'
 keywords: ['sonicwall', 'netextender', 'winget', 'install', 'update']
@@ -34,6 +34,9 @@ Note: This script needed to be scheduled on at least one machine permanently, so
 ## Output
 
 - Script Log
+
+
+
 
 
 

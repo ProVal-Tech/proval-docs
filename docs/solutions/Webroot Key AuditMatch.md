@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-keycode-audit'
+id: 'a30a59de-9f71-446c-825c-f85ebceb4517'
 title: 'Webroot KeyCode Audit and Mismatch Monitoring'
 title_meta: 'Webroot KeyCode Audit and Mismatch Monitoring'
 keywords: ['webroot', 'keycode', 'audit', 'monitoring', 'security']
@@ -35,6 +35,9 @@ This solution fetches the Webroot KeyCode audit and monitors to find any mismatc
 
 - Will the ticket auto-close if the KeyCode matched for the agent where the KeyCode mismatch was detected?
 - Yes, the autofix has the auto-closure of the ticket feature added.
+
+
+
 
 
 

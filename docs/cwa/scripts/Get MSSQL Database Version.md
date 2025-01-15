@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-mssql-db-version'
+id: '03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee'
 title: 'Get MSSQL Database Version'
 title_meta: 'Get MSSQL Database Version'
 keywords: ['mssql', 'database', 'version', 'patch', 'custom', 'table']
@@ -47,6 +47,9 @@ Execute the script against the online `MSSQL` servers to gather the version.
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

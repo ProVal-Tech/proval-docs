@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-rdp'
+id: '5c93252c-c3d9-48d7-bc9b-4073c9e49638'
 title: 'Disable RDP on Windows Machines'
 title_meta: 'Disable RDP on Windows Machines'
 keywords: ['rdp', 'windows', 'registry', 'disable', 'script']
@@ -55,6 +55,9 @@ Script Logs
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

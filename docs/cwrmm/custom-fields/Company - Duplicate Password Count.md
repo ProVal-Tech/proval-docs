@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duplicate-password-count'
+id: '98a07020-b4e1-4787-a829-9176de0a8b52'
 title: 'Duplicate Password Count'
 title_meta: 'Duplicate Password Count - ConnectWise RMM'
 keywords: ['duplicate', 'password', 'count', 'accounts', 'security']
@@ -25,6 +25,9 @@ Holds the count of accounts with Duplicate passwords
 ## ScreenShot
 
 ![Screenshot](../../../static/img/Company---Duplicate-Password-Count/image_1.png)
+
+
+
 
 
 

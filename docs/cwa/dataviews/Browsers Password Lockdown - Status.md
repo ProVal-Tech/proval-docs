@@ -1,5 +1,5 @@
 ---
-id: 'cwa-password-manager-lockdown-status'
+id: '6f3ffa7f-a21e-416d-ba2f-7450a95f3ad7'
 title: 'Password Manager Lockdown Status'
 title_meta: 'Password Manager Lockdown Status'
 keywords: ['lockdown', 'browsers', 'password', 'manager', 'remote', 'monitor', 'status']
@@ -33,6 +33,9 @@ The dataview exhibits the `Password Manager Lockdown Status` for the computer ob
 | Last Contact                 | Last Contact with RMM                                                                                                       |
 | Last Logged In User          | Last Logged In User                                                                                                         |
 | Password Manager Lockdown Status | Indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
+
+
+
 
 
 

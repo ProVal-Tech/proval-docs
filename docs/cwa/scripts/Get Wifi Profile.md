@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-wifi-profile'
+id: 'd97282c0-4d81-46f9-b821-d553c2d8a596'
 title: 'Get Wi-Fi Profile Script for ConnectWise Automate'
 title_meta: 'Get Wi-Fi Profile Script for ConnectWise Automate'
 keywords: ['wifi', 'profiles', 'automate', 'script', 'edf']
@@ -40,6 +40,9 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_user_login_logout_data'
+id: 'c62e7bbf-226d-4269-9d12-536e43af5589'
 title: 'User Login/Logout Data Table'
 title_meta: 'User Login/Logout Data Table'
 keywords: ['user', 'login', 'logout', 'data', 'audit']
@@ -29,6 +29,9 @@ This table stores the User login/logout data.
 | ConnectionType                                                         | INT     | This stores the integer value of the user connection type to show whether the user was remote, network, or no interaction type etc |
 | Action                                                                 | INT     | This shows whether the user trace found for login or logout                                     |
 | ScriptRanDate                                                          | DATETIME| This shows the script date about when script last ran                                          |
+
+
+
 
 
 

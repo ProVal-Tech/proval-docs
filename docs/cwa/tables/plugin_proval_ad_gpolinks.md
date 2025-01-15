@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpo-links-info'
+id: '85f52c7c-84bc-488f-a4de-d3122fec1f42'
 title: 'GPO Links Information'
 title_meta: 'GPO Links Information'
 keywords: ['gpo', 'links', 'audit', 'information', 'proval']
@@ -28,6 +28,9 @@ Displays detailed information about the GPO links per GPO from the script @Group
 | Path         | VARCHAR | The OU path of the link.                                          |
 | Enforced      | VARCHAR | True or False depending on if the link is being enforced.        |
 | LinkEnabled   | VARCHAR | True or False depending on if the link is enabled.               |
+
+
+
 
 
 

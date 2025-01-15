@@ -1,5 +1,5 @@
 ---
-id: 'cwa_generate_views_compliance'
+id: 'c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33'
 title: 'Generate Compliance Views and Grant Access'
 title_meta: 'Generate Compliance Views and Grant Access in ConnectWise Automate'
 keywords: ['compliance', 'views', 'access', 'automate', 'permissions']
@@ -26,6 +26,9 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'cwa-department-detail-last-logged-in-user'
+id: '3f87f890-c2b4-4f01-b9e2-c1828cc164c9'
 title: 'Department Detail of Last Logged In User'
 title_meta: 'Department Detail of Last Logged In User'
 keywords: ['department', 'user', 'computer', 'client', 'location', 'os', 'memory', 'cpu', 'drive', 'sql']
 description: 'This document provides a detailed view of the department information for the last logged in user on each machine within the client environment. It includes dependencies, column descriptions, and an SQL representation to help retrieve the relevant data efficiently.'
 tags: ['database', 'configuration', 'report', 'performance', 'windows', 'security']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -96,6 +96,9 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
+
+
+
 
 
 

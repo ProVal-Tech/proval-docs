@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reboot-safe-mode-sophos-tamper-protection'
+id: 'f7d7af7b-0b1e-463a-bda5-e9d30901e0b6'
 title: 'Reboot into Safe Mode and Disable Sophos Tamper Protection'
 title_meta: 'Reboot into Safe Mode and Disable Sophos Tamper Protection'
 keywords: ['sophos', 'tamper', 'protection', 'reboot', 'safe', 'mode', 'registry']
@@ -34,6 +34,9 @@ The script will first verify that the target device has Sophos installed. The sc
 ## Output
 
 Script log messages only.
+
+
+
 
 
 

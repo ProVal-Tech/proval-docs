@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-orchestrator-service-disable'
+id: 'f4687be0-4269-4cec-8e7b-685f56178f27'
 title: 'Update Orchestrator Service Disable Monitor'
 title_meta: 'Update Orchestrator Service Disable Monitor'
 keywords: ['monitor', 'service', 'disable', 'windows', 'update', 'orchestrator']
@@ -74,6 +74,9 @@ A) Yes, The **Windows Update service (wuauserv)** is essential for Windows Updat
 
 **Q. Will stopping the Update Orchestrator service impact Automate patch management?**  
 A) No, Automate's patch management relies solely on the Windows Update service and UI mode (Check for Updates), so stopping the Update Orchestrator won't affect it.
+
+
+
 
 
 

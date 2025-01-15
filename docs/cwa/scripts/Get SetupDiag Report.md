@@ -1,5 +1,5 @@
 ---
-id: 'cwa-setupdiag-execution'
+id: '6042c7c0-dd54-4eda-8889-ef2ff879e5a2'
 title: 'SetupDiag Execution and Reporting'
 title_meta: 'SetupDiag Execution and Reporting'
 keywords: ['setupdiag', 'execution', 'reporting', 'email', 'results']
@@ -37,6 +37,9 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 Outputs to a variable (@SetupDiagResult@) that can be referenced in parent scripts.
 
 See [Invoke-SetupDiag](https://proval.itglue.com/DOC-5078775-12024896) for additional output information.
+
+
+
 
 
 

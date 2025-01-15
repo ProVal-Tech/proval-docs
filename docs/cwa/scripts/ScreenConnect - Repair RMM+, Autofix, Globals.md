@@ -1,5 +1,5 @@
 ---
-id: 'cwa-repair-screenconnect-client'
+id: '43225bbe-98a0-4352-8fb2-79e7431dea10'
 title: 'Repair Non-Functional ScreenConnect Client'
 title_meta: 'Repair Non-Functional ScreenConnect Client'
 keywords: ['screenconnect', 'repair', 'client', 'automate', 'rmm']
@@ -73,6 +73,9 @@ Reason: Automate has executed the autofix script 3 times over the last 7 days bu
 Please reinstall the ScreenConnect Client Manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 ```
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-configure-bginfo-script'
+id: '5cc62311-8109-43b8-af64-e0aac4292d19'
 title: 'Configure BGInfo Script Implementation'
 title_meta: 'Guide to Implementing BGInfo Script in ConnectWise Automate'
 keywords: ['bginfo', 'script', 'connectwise', 'monitoring', 'alert']
@@ -1021,6 +1021,9 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*
+
+
+
 
 
 

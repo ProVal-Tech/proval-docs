@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-missing-agents'
+id: '68f531ba-4488-4fe6-9652-06b749aa196a'
 title: 'Active Directory Machines Missing Automate Agents'
 title_meta: 'Active Directory Machines Missing Automate Agents'
 keywords: ['active-directory', 'automate', 'dataview', 'onboarding', 'clients', 'machines']
@@ -34,6 +34,9 @@ The active directory plugin must be installed and configured properly to detect 
 | Description               | Displays the Description of the machine if anything is there |
 | Created                   | Displays the creation date and time                 |
 | Last logon               | Displays the Last Login date and time               |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-computer-exclusion-monitoring'
+id: '3bf6b511-2d50-48cc-b199-979bd39c8dca'
 title: 'Computer Exclusion Monitoring in ConnectWise Automate'
 title_meta: 'Computer Exclusion Monitoring in ConnectWise Automate'
 keywords: ['monitoring', 'exclusion', 'computers', 'automate', 'detection', 'autofix']
@@ -32,6 +32,9 @@ You can find this information in Automate in the areas displayed below.
 | Operating System    | Operating System                  |
 | Last Contact        | Last Contact                      |
 | Days Since Last Contact | Days Since Last Contact        |
+
+
+
 
 
 

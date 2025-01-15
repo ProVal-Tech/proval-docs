@@ -1,5 +1,5 @@
 ---
-id: 'cwa-checks-current-automate-license-availability'
+id: 'b3d41d1c-e687-4e39-811a-83d6fb99c14d'
 title: 'Checks Current Automate License Availability'
 title_meta: 'Checks Current Automate License Availability'
 keywords: ['automate', 'license', 'monitor', 'alert', 'tickets']
@@ -23,6 +23,9 @@ For the hosted partners, it will be the minimum computerid of Clientid 1. If Cli
 
 The suggested target for the monitor.  
 Global - Should be run without explicitly defined targets.
+
+
+
 
 
 

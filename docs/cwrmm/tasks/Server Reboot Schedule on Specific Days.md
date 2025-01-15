@@ -1,5 +1,5 @@
 ---
-id: 'rmm-server-reboot-schedule'
+id: '26d390ba-1542-4524-b9ff-7a420004cb73'
 title: 'Server Reboot Schedule on Specific Days'
 title_meta: 'Server Reboot Schedule on Specific Days'
 keywords: ['reboot', 'schedule', 'server', 'automation', 'task']
@@ -504,6 +504,9 @@ For example:
 ![Run Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_47.png)
 
 - The task will start appearing in the Scheduled Tasks.
+
+
+
 
 
 

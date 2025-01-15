@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agent-checkin-summary'
+id: 'be7bf652-a9eb-46c0-ae71-ffebd38c24b2'
 title: 'Agent Check-In Summary for RMM'
 title_meta: 'Agent Check-In Summary for RMM'
 keywords: ['agents', 'checkin', 'rmm', 'status', 'os', 'location', 'client', 'contact']
@@ -28,6 +28,9 @@ This dataview shows information about agents that have not checked in for 45 day
 | All Location Detail     | This dataview has complete location detail including address, city detail, router address etc. |
 | All Client Detail       | This dataview has detail of client brief description about city, state, country, geo time etc. |
 | All Contact Detail      | Dataview contains all the contact detail of the agent such as email address, phone number, full name etc. |
+
+
+
 
 
 

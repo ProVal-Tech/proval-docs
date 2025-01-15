@@ -1,5 +1,5 @@
 ---
-id: 'cwa-esxi-hosts-dataview'
+id: '556a609f-b0e6-401b-afc0-17932fde35c7'
 title: 'ESXi Hosts Dataview'
 title_meta: 'ESXi Hosts Dataview'
 keywords: ['esxi', 'dataview', 'virtualization', 'hosts', 'infrastructure']
@@ -39,6 +39,9 @@ This dataview shows useful information about ESXi hosts.
 | IsSSD                           | Display's whether the attached Storage Device is SSD or not.   |
 | StorageLastUpdate               | Display the last time the Storage information of the host is updated in Automate. |
 | LastUpdate                      | Display the last time the Host's information was updated in Automate. |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-filevault-status'
+id: '1e483bae-ad35-437e-a963-fb7fab9f27e1'
 title: 'FileVault Status Check for Mac Agents'
 title_meta: 'FileVault Status Check for Mac Agents'
 keywords: ['filevault', 'mac', 'status', 'check', 'security']
@@ -17,6 +17,9 @@ The role is used to view the status of the FileVault on the Mac agents.
 | Detection String         | Comparator | Result               | Applicable OS |
 |-------------------------|------------|----------------------|----------------|
 | {%@fdesetup status@%}  | Contains   | FileVault is On      | Mac            |
+
+
+
 
 
 

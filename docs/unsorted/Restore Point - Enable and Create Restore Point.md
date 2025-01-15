@@ -1,12 +1,12 @@
 ---
-id: 'ps-check-system-restore'
+id: '9c77bd8d-5ede-4c26-a9dd-41a5328916a2'
 title: 'Check System Restore Status and Create Restore Points'
 title_meta: 'Check System Restore Status and Create Restore Points'
 keywords: ['system', 'restore', 'storage', 'point', 'ticket']
 description: 'This script checks if system restore is enabled on the system drive and enables it if not. It sets the maximum storage space for system restore to 5% and verifies if a restore point has been created within the last 30 days. If no restore point exists, it creates one and can generate a ticket if the creation fails, based on the global parameters.'
 tags: ['backup', 'windows', 'security', 'configuration', 'performance']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -67,6 +67,9 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
+
+
 
 
 

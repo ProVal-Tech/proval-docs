@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unregister-chrome-extension'
+id: 'd1d1297e-d50a-47bb-90af-5c70dd32c1d9'
 title: 'Unregister Chrome Extension'
 title_meta: 'Unregister Chrome Extension'
 keywords: ['chrome', 'extension', 'unregister', 'management', 'registry']
@@ -64,6 +64,9 @@ The script takes a single parameter which is an array of Extension IDs to instal
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
+
+
+
 
 
 

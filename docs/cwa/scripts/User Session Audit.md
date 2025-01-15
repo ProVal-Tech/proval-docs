@@ -1,5 +1,5 @@
 ---
-id: 'cwa_create_sql_table_audit_sessions'
+id: 'fffa01c1-5e44-4239-a69d-623e4a77e789'
 title: 'Create SQL Table and Audit User Sessions'
 title_meta: 'Create SQL Table and Audit User Sessions'
 keywords: ['sql', 'table', 'audit', 'sessions', 'power', 'shell', 'users']
@@ -36,6 +36,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

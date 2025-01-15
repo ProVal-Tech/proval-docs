@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-office-scrub'
+id: '1935d4ab-345b-46a0-ad2a-167c9a86532c'
 title: 'Uninstall Microsoft Office Versions'
 title_meta: 'Uninstall Microsoft Office Versions from 2007 to 2016 & O365'
 keywords: ['uninstall', 'microsoft', 'office', 'corruption', 'shortcut']
@@ -31,6 +31,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

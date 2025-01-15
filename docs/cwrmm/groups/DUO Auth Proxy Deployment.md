@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-auth-proxy-deployment'
+id: '64da30ad-04ef-486e-b152-855b51be5896'
 title: 'DUO Auth Proxy Deployment Group Setup'
 title_meta: 'DUO Auth Proxy Deployment Group Setup'
 keywords: ['duo', 'proxy', 'deployment', 'group', 'authentication']
@@ -61,6 +61,9 @@ The agent gets added if the company custom field "DUO Proxy Deployment" is check
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_15.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-scripts-overview'
+id: 'd40bdcb8-dd08-460d-9be8-d9773ac32e93'
 title: 'Custom Scripts Overview for ProVal'
 title_meta: 'Custom Scripts Overview for ProVal - Detailed Implementation Status'
 keywords: ['custom', 'scripts', 'proval', 'implementation', 'status']
@@ -55,6 +55,9 @@ Color Coding is applied to the columns "# Internal monitor", "# Remote monitor",
 - **Synced/Updated:** It has "Yes" highlighted in Green, "No" highlighted in Orange, "Client-Specific" highlighted in Grey, and "Deprecated" highlighted in Red to catch the eye easily and show whether the script is a deprecated, client-specific or if a nonstack then it is properly synced/updated from the ProVal plugin or not.
 - **Group Scheduled:** This highlights the Group full name in Green to catch the eye to show where the script is scheduled.
 - **Scheduled in past 6 months:** It has "Recently Added" highlighted in Green to show which script was either run by the Group or manually in the past 6 months or if the script was running as an autofix via monitors. If any condition is met then it is marked as "Recently Added".
+
+
+
 
 
 

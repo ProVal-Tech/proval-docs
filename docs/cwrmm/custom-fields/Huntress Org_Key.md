@@ -1,5 +1,5 @@
 ---
-id: 'rmm-huntress-organization-key'
+id: '00d66215-fe07-4bae-b6cb-d96a73486694'
 title: 'Huntress Organization Key Custom Field'
 title_meta: 'Huntress Organization Key Custom Field'
 keywords: ['huntress', 'custom', 'field', 'key', 'organization']
@@ -23,6 +23,9 @@ This Custom field is to be filled with Huntress Organization Key. It is being ut
 **Level:** Company  
 **Description:** Huntress Organization Key. Organization Keys are used to associate a Huntress Agent into a grouping called Huntress Organizationz. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
 **Editable:** Yes  
+
+
+
 
 
 

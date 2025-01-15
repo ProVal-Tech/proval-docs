@@ -1,5 +1,5 @@
 ---
-id: 'cwa-execute-dell-dock-station'
+id: '131057f0-24aa-418c-90f7-b0f316a5b9a8'
 title: 'Execute Dell Dock Station Script Monitor'
 title_meta: 'Execute Dell Dock Station Script Monitor for Windows 10 and 11'
 keywords: ['dell', 'monitor', 'windows', 'script', 'execution']
@@ -25,6 +25,9 @@ Windows 10, 11 machines.
 **Name:** `△ Custom - Execute Script - Get-DellDockStation`
 
 The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374) script.
+
+
+
 
 
 

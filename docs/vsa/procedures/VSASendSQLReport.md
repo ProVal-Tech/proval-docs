@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-sql-data-report'
+id: '147ab797-98c3-410d-ab22-e29627e7582a'
 title: 'Get SQL Data and Send as Report'
 title_meta: 'Get SQL Data and Send as Report'
 keywords: ['sql', 'report', 'email', 'csv', 'server']
@@ -22,6 +22,9 @@ Get SQL Data and Send as Report
 - **filename**: Required. The filename of the csv  
 - **sqluser**: Required if sql credtype. The username to logon to the SQL server  
 - **sqlpassword**: Required if sql credtype. The password to logon to the SQL server  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-base-table-for-dataview-scripts-memberof'
+id: '5b888c11-49da-4fea-9bda-9bffdfbb286d'
 title: 'Base Table for CWM - Automate - Dataview - Scripts - MemberOf'
 title_meta: 'Base Table for CWM - Automate - Dataview - Scripts - MemberOf'
 keywords: ['dataview', 'scripts', 'automate', 'mysql', 'table']
@@ -29,6 +29,9 @@ Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](ht
 | Object description    | Full Path of the Group/Whether the alert template is applied on a computer-level remote monitor group remote monitor or an internal monitor. |
 | Limited to          | Whether the scheduled group script/remote monitor is limited to a search/internal monitor is limited to any group. |
 | Affected Agents      | Number of computers in the group/Number of agents detected in the search if limited to search.                   |
+
+
+
 
 
 

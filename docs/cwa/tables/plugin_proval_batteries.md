@@ -1,5 +1,5 @@
 ---
-id: 'cwa-battery-information-storage'
+id: '5507c4d8-9cfc-4d67-9c84-7cbad5a37de1'
 title: 'Battery Information Storage for Targets'
 title_meta: 'Battery Information Storage for Targets'
 keywords: ['battery', 'information', 'storage', 'report', 'health']
@@ -36,6 +36,9 @@ Stores Battery Information for each target
 | RelativeCapacity          | VarChar   | The Battery Relative Capacity.                       |
 | SerialNumber              | VarChar   | The Battery SerialNumber.                           |
 | LastScanTime              | DateTime  | The Last Scan Time for the report.                  |
+
+
+
 
 
 

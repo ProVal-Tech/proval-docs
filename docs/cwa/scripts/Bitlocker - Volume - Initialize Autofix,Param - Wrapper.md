@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-initialization-deployment'
+id: '85513764-8240-40fb-be86-7be910ea62cf'
 title: 'BitLocker Initialization Deployment Script'
 title_meta: 'BitLocker Initialization Deployment Script'
 keywords: ['bitlocker', 'encryption', 'deployment', 'monitor', 'script']
@@ -47,6 +47,9 @@ Run it with `SetEnvironment = 1`, to set the EDFs required for this script once 
 
 - Script log
 - Dataview
+
+
+
 
 
 

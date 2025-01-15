@@ -1,5 +1,5 @@
 ---
-id: 'ps-set-psrepository-psgallery'
+id: '5cb1373f-6cdc-4576-8b3e-e8bfc4d664de'
 title: 'Set PSGallery as Trusted Repository'
 title_meta: 'Set PSGallery as Trusted Repository in ConnectWise'
 keywords: ['psgallery', 'repository', 'trusted', 'connectwise', 'monitor']
@@ -156,6 +156,9 @@ unlisted: false
    Then re-open the group where the monitor is created.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

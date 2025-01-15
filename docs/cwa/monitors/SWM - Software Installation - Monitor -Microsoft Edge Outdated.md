@@ -1,5 +1,5 @@
 ---
-id: 'cwa-outdated-edge-monitor'
+id: 'ed2dfe8b-99d5-4dac-9f52-77c3f4e0b217'
 title: 'Outdated Microsoft Edge Monitor'
 title_meta: 'Outdated Microsoft Edge Monitor'
 keywords: ['microsoft', 'edge', 'monitor', 'windows', 'version']
@@ -15,6 +15,9 @@ This internal monitor detects machines with outdated Microsoft Edge versions.
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
+
+
 
 
 

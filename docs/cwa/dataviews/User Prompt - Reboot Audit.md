@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-prompt-for-reboot'
+id: '4ad38519-386a-4645-8cea-a498e0cd0e25'
 title: 'User Prompt for Reboot Tracking'
 title_meta: 'User Prompt for Reboot Tracking - Overview and Dependencies'
 keywords: ['reboot', 'tracking', 'user', 'prompt', 'dependencies', 'computer', 'system', 'property']
@@ -42,6 +42,9 @@ The dataview tracks the working of the [User Prompt for Reboot](https://proval.i
 | Global Uptime Days to Send Prompts    | Uptime in days set in the `proval_RebootPromptUptimeDays` system property to automatically send the prompt. (0 --> Disabled) |
 | Global Prompt for Reboot Pending      | Is prompting enabled for the computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
 | Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 05 times and issue is still not resolved. |
+
+
+
 
 
 

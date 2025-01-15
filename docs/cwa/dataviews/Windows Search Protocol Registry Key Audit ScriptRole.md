@@ -1,5 +1,5 @@
 ---
-id: 'cwa-workaround-windows-search-protocol-vulnerability'
+id: '838ecfa5-0526-4c5d-845a-be4f21898c86'
 title: 'Workaround for Windows Search Protocol Vulnerability'
 title_meta: 'Workaround for Windows Search Protocol Vulnerability'
 keywords: ['workaround', 'vulnerability', 'windows', 'search', 'protocol', 'monitor', 'script', 'tracking']
@@ -31,6 +31,9 @@ This dataview tracks the progress of the [Workaround - Windows Search Protocol V
 | lastcontact                   | lastcontact                                                                                          |
 | Search-MS Registry Status      | Value of the script state, Search-MS Registry Status                                                |
 | Search-MS Registry Key Role    | Whether the role is active, inactive, or it's never been detected. <br> Active: The registry key is currently present on the computer. <br> Inactive: The registry key was once present on the computer, but the script had removed that. <br> Not Detected: Either the registry key was not present on the computer from the very beginning or somehow the computer is not accepting the role. |
+
+
+
 
 
 

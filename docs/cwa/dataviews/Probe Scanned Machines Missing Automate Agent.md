@@ -1,5 +1,5 @@
 ---
-id: 'cwa-probe-detected-machines-port-139'
+id: '54531eb6-553a-4730-8afc-558adbab450d'
 title: 'Probe Detected Machines with Port 139 Open'
 title_meta: 'Probe Detected Machines with Port 139 Open - Automate Agent Readiness'
 keywords: ['probe', 'machines', 'port', 'open', 'agent', 'readiness', 'network', 'device']
@@ -39,6 +39,9 @@ Shows the list of probe-detected machines with port 139 open that may be missing
 ## Dependency
 
 Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](https://proval.itglue.com/DOC-5078775-12944749) script to run every 12-24 hours to provide permission for `agentdeploymentreadinesscheck` Table for both Hosted as well as On-Prem Clients. Otherwise, the dataview will not provide any results.
+
+
+
 
 
 

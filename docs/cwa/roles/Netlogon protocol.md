@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-dataview-domain-controllers'
+id: '02eea95a-1eb2-496e-ac6c-e8263befe663'
 title: 'Audit Dataview for Domain Controllers'
 title_meta: 'Audit Dataview for Domain Controllers'
 keywords: ['audit', 'dataview', 'domain', 'controllers', 'netlogon', 'requireseal', 'registry']
@@ -19,6 +19,9 @@ The registry key's value will be stored in the `Serial Number` column.
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SYSTEM/CurrentControlSet/Services/Netlogon/Parameters:RequireSeal-%} | Exists     |        | Windows        |
+
+
+
 
 
 

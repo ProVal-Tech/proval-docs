@@ -1,5 +1,5 @@
 ---
-id: 'cwa-encryption-status-endpoints'
+id: '3a127207-3453-4b55-8e2d-cb179c255cdb'
 title: 'Encryption Status of Endpoints in Automate'
 title_meta: 'Encryption Status of Endpoints in Automate'
 keywords: ['encryption', 'bitlocker', 'filevault', 'endpoints', 'status', 'automate']
@@ -29,6 +29,9 @@ This dataview will show the encryption status of endpoints in Automate. Specific
 | Bitlocker Status - System Drive  | The Bitlocker status of the system drive for Windows devices                                    |
 | FileVault Status                 | The FileVault status for Mac devices                                                             |
 | Last logon User                  | The last user that logged into the device based on information gathered by Automate             |
+
+
+
 
 
 

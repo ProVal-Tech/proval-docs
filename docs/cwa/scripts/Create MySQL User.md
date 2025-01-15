@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-mysql-user'
+id: 'd96342ec-c42e-424b-85b6-d7009a3163d0'
 title: 'Create New MYSQL User with Read-only Permissions'
 title_meta: 'Create New MYSQL User with Read-only Permissions'
 keywords: ['mysql', 'user', 'permissions', 'read-only', 'database']
@@ -28,6 +28,9 @@ Requirement: CW Automate Version 22 Patch 10 +
 ## Process
 
 This script runs a SQL query and creates a new MYSQL user with Full permissions for `Labtech` database.
+
+
+
 
 
 

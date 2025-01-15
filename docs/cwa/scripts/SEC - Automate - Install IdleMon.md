@@ -1,5 +1,5 @@
 ---
-id: 'cwa-idlemon-install'
+id: 'dc431e4b-f1c9-4e63-9653-653a40b22278'
 title: 'IdleMon Service Installation'
 title_meta: 'IdleMon Service Installation'
 keywords: ['installation', 'service', 'idlemon']
@@ -15,6 +15,9 @@ Installs the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) service.
 ## Output
 
 - Script log
+
+
+
 
 
 

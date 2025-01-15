@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-machines-overview'
+id: '64736396-2e06-407f-b83d-2618df0cdd13'
 title: 'Active Directory Machines Overview in ConnectWise Automate'
 title_meta: 'Active Directory Machines Overview in ConnectWise Automate'
 keywords: ['active-directory', 'automate', 'machines', 'agent', 'details']
@@ -27,6 +27,9 @@ This dataview displays all AD machines from the AD plugin and gives details abou
 | When Changed                       | When agent was last changed in AD plugin            |
 | When Created                       | When agent was created in AD                        |
 | LastLogon                          | Last logon detail of agent in AD                    |
+
+
+
 
 
 

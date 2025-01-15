@@ -1,12 +1,12 @@
 ---
-id: 'vsa-windows-enterprise-upgrade'
+id: 'e6c76294-af5e-465d-9824-2e5a58734451'
 title: 'Windows Enterprise Upgrade for Workstations'
 title_meta: 'Windows Enterprise Upgrade for Workstations'
 keywords: ['windows', 'enterprise', 'upgrade', 'kms', 'component']
 description: 'This document outlines the steps to update the Windows edition for Windows 10/11 workstations to Enterprise. It includes dependencies on KMS host setup, implementation details for exporting and importing components in Datto RMM, and expected output upon successful execution.'
 tags: ['upgrade', 'windows', 'configuration', 'software', 'installation']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -48,6 +48,9 @@ A job status of Success is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+
+
 
 
 

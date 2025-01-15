@@ -1,5 +1,5 @@
 ---
-id: 'cwa-fetch-cwm-configurations'
+id: '0b46811b-be88-407b-aa61-6c63a73ff848'
 title: 'Fetch ConnectWise Manage Configurations'
 title_meta: 'Fetch ConnectWise Manage Configurations'
 keywords: ['connectwise', 'configurations', 'database', 'custom', 'table', 'dataview', 'sql', 'api']
@@ -50,6 +50,9 @@ How to get clientID: [https://connectwise20.my.site.com/serviceandsupport/s/arti
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

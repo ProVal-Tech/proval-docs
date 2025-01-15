@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-script-mimikatz'
+id: '9b06cea7-e39b-46f2-ac30-3d8b5fc6339b'
 title: 'Autofix Script for MimiKatz Vulnerable Systems'
 title_meta: 'Autofix Script for MimiKatz Vulnerable Systems'
 keywords: ['autofix', 'mimikatz', 'vulnerability', 'registry', 'monitor', 'ticketing']
@@ -39,6 +39,9 @@ Time Saved by Automation: 5 Minutes
 
 - Script log
 - Ticket
+
+
+
 
 
 

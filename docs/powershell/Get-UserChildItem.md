@@ -66,3 +66,6 @@ Gets all files in the Documents folder and all its subfolder's files for all use
     .\Get-UserChildItem-log.txt
     
 
+
+
+

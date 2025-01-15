@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enforce-screen-saver-settings'
+id: '952db509-c813-4225-a53f-7423d174ef24'
 title: 'Enforce Screen Saver Settings'
 title_meta: 'Enforce Screen Saver Settings'
 keywords: ['screen', 'saver', 'timeout', 'ticketing', 'domain', 'configuration']
@@ -50,6 +50,9 @@ See [Protect-ScreenLock](https://proval.itglue.com/DOC-5078775-8381648)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
+
+
+
 
 
 

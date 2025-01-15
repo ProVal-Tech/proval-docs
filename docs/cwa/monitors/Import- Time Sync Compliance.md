@@ -1,5 +1,5 @@
 ---
-id: 'cwa-steps-for-ticket-creation'
+id: 'd0b9c0fa-fe52-412b-a4b9-dee96f9ff58b'
 title: 'Steps for Ticket Creation'
 title_meta: 'Steps for Ticket Creation'
 keywords: ['ticket', 'creation', 'monitor', 'query', 'alert', 'template']
@@ -174,6 +174,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
+
+
 
 
 

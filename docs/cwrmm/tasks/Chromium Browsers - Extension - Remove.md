@@ -1,5 +1,5 @@
 ---
-id: 'rmm-chromium-browsers-extension-remove'
+id: '3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6'
 title: 'Remove Extensions from Chromium Browsers'
 title_meta: 'Remove Extensions from Chromium Browsers'
 keywords: ['chromium', 'extensions', 'remove', 'chrome', 'edge', 'brave', 'vivaldi']
@@ -134,6 +134,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
+
 
 
 

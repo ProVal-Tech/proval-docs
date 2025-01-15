@@ -1,5 +1,5 @@
 ---
-id: 'cwa-failedemails-dataview'
+id: '525e89d1-335a-4664-920b-0428b827a7ad'
 title: 'Failed Emails DataView in ConnectWise Automate'
 title_meta: 'Failed Emails DataView in ConnectWise Automate'
 keywords: ['failed', 'emails', 'dataview', 'automate', 'error']
@@ -27,6 +27,9 @@ None
 | Body      | The body of the email                                                                           |
 | FailDate  | The date the email failed to send                                                               |
 | ErrorMsg  | The error message gathered by Automate when the email failed to send                           |
+
+
+
 
 
 

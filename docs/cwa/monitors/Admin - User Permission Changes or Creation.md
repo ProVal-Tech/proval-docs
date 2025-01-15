@@ -1,5 +1,5 @@
 ---
-id: 'cwa_monitor-user-activity'
+id: '5462a5dd-ba08-475c-b397-a1fb656649ae'
 title: 'User Activity and Permissions Monitor'
 title_meta: 'User Activity and Permissions Monitor'
 keywords: ['monitor', 'user', 'activity', 'permissions', 'alert']
@@ -35,6 +35,9 @@ Details of the change are as follows:
 Thank you,  
 
 ![Image](../../../static/img/Admin---User-Permission-Changes-or-Creation/image_1.png)  
+
+
+
 
 
 

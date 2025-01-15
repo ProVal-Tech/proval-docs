@@ -1,12 +1,12 @@
 ---
-id: 'cwa-workstation-patch-policy'
+id: '18a04fc3-7659-44d6-8a9b-cd080cda4d08'
 title: 'Workstation Patch Policy Overview'
 title_meta: 'Workstation Patch Policy Overview'
 keywords: ['patch', 'workstation', 'policy', 'maintenance', 'reboot']
 description: 'This document outlines the organization-level patch policy for workstations, detailing the procedures for patch management, including scheduling maintenance reminders, disabling Windows Automatic Updates, and managing reboot actions based on user activity.'
 tags: ['patch', 'management', 'maintenance', 'windows', 'reminder']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Summary
 We have created an organization-level patch policy for Workstations and its purpose is to Patch & reboot the Workstations. Windows Automatic Update is disabled and this policy will also give the maintenance reminder prior to patching.
@@ -32,6 +32,9 @@ Provide the configuration of the profile, using the following templates based on
 - Patch windows automatic update: Workstations: Every Week on Tuesday at 10:00 PM as per the machine time zone with Skip if offline and the distribution hours is 2 hours.
 - Patch reboot action as below: If user logged in ask permission. Do nothing if no response in 60 minutes. Reboot if user not logged in.
 - Patch Windows Automatic Update is disabled.
+
+
+
 
 
 

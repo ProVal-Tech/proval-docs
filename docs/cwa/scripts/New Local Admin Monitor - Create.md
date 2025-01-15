@@ -1,5 +1,5 @@
 ---
-id: 'cwa-creating-remote-monitors-for-local-admins'
+id: 'c3e994ea-ed6d-4ae8-a4dc-0200d87208d5'
 title: 'Creating Remote Monitors for Local Administrators on Windows Machines'
 title_meta: 'Creating Remote Monitors for Local Administrators on Windows Machines'
 keywords: ['remote', 'monitor', 'local', 'administrators', 'windows', 'alerts', 'exclusions']
@@ -163,6 +163,9 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 - **5:** **Primary Domain Controller (PDC)** — The computer is a Primary Domain Controller (PDC) in the domain. It handles user logins and manages the domain.
 
 So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meaning that it continues if the machine is **not** a domain controller.
+
+
+
 
 
 

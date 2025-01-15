@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-host-file-entries'
+id: '19d3cc45-e5bd-4705-b82d-c0657b2e6195'
 title: 'Custom Host File Entries Script'
 title_meta: 'Custom Host File Entries Script for PowerShell'
 keywords: ['custom', 'host', 'file', 'entries', 'script']
@@ -26,6 +26,9 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Output
 
 This script outputs information into the Host File Contents EDF and can be outputted to a Dataview and monitored upon if desired.
+
+
+
 
 
 

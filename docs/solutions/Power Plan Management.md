@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-power-plan-deployment'
+id: 'e7911ff5-d709-4ba0-b847-16969445c19b'
 title: 'Automated Power Plan Deployment and Auditing for Windows'
 title_meta: 'Automated Power Plan Deployment and Auditing for Windows'
 keywords: ['automation', 'windows', 'powerplan', 'audit', 'deployment']
@@ -122,6 +122,9 @@ This solution automates the deployment of a standard power plan to Windows machi
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
+
+
+
 
 
 

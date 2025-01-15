@@ -1,5 +1,5 @@
 ---
-id: 'cwa-stale-users-report'
+id: 'f29999e0-121c-4037-92f5-1cce798daa2e'
 title: 'Stale Users Report in Active Directory'
 title_meta: 'Stale Users Report in Active Directory'
 keywords: ['active-directory', 'users', 'report', 'login', 'expiration']
@@ -36,6 +36,9 @@ This dataview displays all the stale users of domain that are over 90 days or no
 | Domain                           | Will show the domain setup on the domain controller                                                                                                                                                      |
 | Password Expires                 | This is very similar to the Password Expiration Date column however it doesn't list the date. It just displays whether or not the password expires with no date                                          |
 | Account Expiration               | Will show whether the account is set to expire in Active Directory                                                                                                                                      |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winfeatupgradeattempts'
+id: '58b312bd-f26c-4b05-ab92-c184520d05de'
 title: 'Tracking Windows 10/11 Feature Upgrade Attempts'
 title_meta: 'Tracking Windows 10/11 Feature Upgrade Attempts'
 keywords: ['windows', 'upgrade', 'tracking', 'feature', 'endpoint']
@@ -26,6 +26,9 @@ It will keep a record of how many times a Windows 10/11 device has tried to inst
 **Level:** Endpoint  
 **Description:** It will keep a record of how many times a Windows 10/11 device has tried to install the Feature upgrade using the `Feature Update Install With Tracking` task, with the default value set to 0.  
 **Editable:** Yes  
+
+
+
 
 
 

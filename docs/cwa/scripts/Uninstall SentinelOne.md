@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-sentinelone-agent'
+id: '46264239-1ea0-467d-a36b-8be9fe5eece8'
 title: 'Uninstalling SentinelOne Agent from Windows'
 title_meta: 'Uninstalling SentinelOne Agent from Windows'
 keywords: ['sentinelone', 'uninstall', 'windows', 'agent', 'reboot']
@@ -25,6 +25,9 @@ This script is designed to uninstall the SentinelOne agent from Windows machines
 ## Output
 
 - Script log
+
+
+
 
 
 

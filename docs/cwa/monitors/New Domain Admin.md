@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementation-steps'
+id: '226dd436-7d87-428c-a9ca-5309f5ad6c2f'
 title: 'Implementation Steps'
 title_meta: 'Implementation Steps for Alert Template and SQL Queries'
 keywords: ['alert', 'sql', 'monitor', 'template', 'configuration', 'domain', 'controller']
@@ -119,6 +119,9 @@ unlisted: false
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
   ![Image](../../../static/img/New-Domain-Admin/image_2.png)  
   
+
+
+
 
 
 

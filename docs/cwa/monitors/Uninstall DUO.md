@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-duo-agent-exclusion-monitor'
+id: '0c3523a9-e392-40f6-bc59-173a21001f0d'
 title: 'Windows Duo Agent Exclusion Monitor'
 title_meta: 'Windows Duo Agent Exclusion Monitor'
 keywords: ['duo', 'monitor', 'windows', 'exclusion', 'agent']
@@ -29,6 +29,9 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Uninstall DUO
+
+
+
 
 
 

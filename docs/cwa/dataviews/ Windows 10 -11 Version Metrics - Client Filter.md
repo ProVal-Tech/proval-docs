@@ -1,10 +1,10 @@
 ---
-id: 'cwa-windows-version-metrics'
-title: 'Windows Version Metrics Dataview'
-title_meta: 'Windows Version Metrics Dataview for Windows 10 and Windows 11 Machines'
-keywords: ['windows', 'metrics', 'version', 'dataview', 'build', 'support', 'client']
-description: 'This document details a dataview that displays the number of Windows 10 and Windows 11 machines categorized by their build number (ReleaseID), along with calculated percentages of machines on each version against the total number of Windows devices for each client. It includes filters and summarized rows for better insights into Windows OS support status.'
-tags: ['windows', 'report', 'performance', 'security', 'update']
+id: "cwa-windows-version-metrics"
+title: "Windows Version Metrics Dataview"
+title_meta: "Windows Version Metrics Dataview for Windows 10 and Windows 11 Machines"
+keywords: ["windows", "metrics", "version", "dataview", "build", "support", "client"]
+description: "This document details a dataview that displays the number of Windows 10 and Windows 11 machines categorized by their build number (ReleaseID), along with calculated percentages of machines on each version against the total number of Windows devices for each client. It includes filters and summarized rows for better insights into Windows OS support status."
+tags: ["windows", "report", "performance", "security", "update"]
 draft: false
 unlisted: false
 ---
@@ -49,7 +49,3 @@ There are three summarized rows in this dataview, one for all windows 10, one fo
 | **Client Name**                     | Client Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Clientid**                        | Clientid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Is Supported**                    | Yes/No (Used for Conditional Formatting)                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-
-
-
-

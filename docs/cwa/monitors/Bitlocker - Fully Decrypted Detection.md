@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-fullydecrypted-monitor'
+id: 'd4cbb2a9-7658-4a6c-924d-208827e4e961'
 title: 'Bitlocker Fully Decrypted Monitor'
 title_meta: 'Bitlocker Fully Decrypted Monitor'
 keywords: ['bitlocker', 'monitor', 'windows', 'agent']
@@ -19,6 +19,9 @@ This internal monitor detects the agent where the "Bitlocker FullyDecrypted - Sy
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
+
+
 
 
 

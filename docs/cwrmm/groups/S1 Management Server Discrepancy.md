@@ -1,5 +1,5 @@
 ---
-id: 'rmm-s1-management-server-discrepancy'
+id: '820319b1-66c6-43b0-be35-136ac4c82ccd'
 title: 'S1 Management Server Discrepancy'
 title_meta: 'S1 Management Server Discrepancy'
 keywords: ['sentinelone', 'management', 'server', 'discrepancy', 'group']
@@ -51,6 +51,9 @@ The group contains computers with the different SentinelOne management server as
 
 ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_10.png)  
 ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_11.png)
+
+
+
 
 
 

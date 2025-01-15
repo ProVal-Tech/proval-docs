@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autologon-script'
+id: '0e4d033e-85f3-4ca6-bbad-17a7848fb42a'
 title: 'Autologon Script for Automatic User Login'
 title_meta: 'Autologon Script for Automatic User Login'
 keywords: ['autologon', 'login', 'script', 'sysinternals', 'windows']
@@ -37,6 +37,9 @@ This script will download the Autologon.exe from Microsoft to the LTSvc folder. 
 ## Output
 
 - Script log messages
+
+
+
 
 
 

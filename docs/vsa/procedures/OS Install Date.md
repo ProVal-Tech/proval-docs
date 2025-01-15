@@ -1,5 +1,5 @@
 ---
-id: 'ps-os-install-date'
+id: '8beb5e09-23af-40e8-8810-ec1a030c600b'
 title: 'Determine OS Install Date'
 title_meta: 'Determine the Initial Install Date of the Operating System'
 keywords: ['os', 'install', 'date', 'powershell', 'agent', 'procedure']
@@ -37,6 +37,9 @@ Agent procedure requires the custom field to be created in order to successfully
 ## Output
 
 Agent procedure updates the custom field.
+
+
+
 
 
 

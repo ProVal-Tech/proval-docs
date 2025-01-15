@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-database-maintenance'
+id: '09db9e10-3f2c-46f8-8071-3c6e5c09b04d'
 title: 'Automate Database Maintenance Script'
 title_meta: 'Automate Database Maintenance Script'
 keywords: ['cleanup', 'networkdevices', 'log', 'variables', 'maintenance']
@@ -32,6 +32,9 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Network-Devices/image_1.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-eligibility-status'
+id: 'adcd54bb-9909-42c5-8da9-913718f2650f'
 title: 'Bitlocker Eligibility Status Dataview'
 title_meta: 'Bitlocker Eligibility Status Dataview'
 keywords: ['bitlocker', 'eligibility', 'status', 'tpm', 'encryption']
@@ -30,6 +30,9 @@ This dataview displays information about the eligibility status of a machine for
 | TPM Ready                       | 1 - Bitlocker TPM Ready<br>0 - Bitlocker TPM Ready Not Set                                                                                   |
 | TPM Present                     | 1 - Bitlocker TPM Present<br>0 - Bitlocker TPM Present Not Set                                                                               |
 | Support Device Encryption        | If system has Bitlocker TPM Ready, Bitlocker TPM Present and UEFI Supported then it is set to 1 as Support Device Encryption else 0 means do not support device encryption. |
+
+
+
 
 
 

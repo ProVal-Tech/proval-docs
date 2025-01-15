@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reboot-prompt-script'
+id: '1789b867-61db-436d-ac0b-07d5aac3f4b8'
 title: 'Reboot Prompt Script for Windows Configuration'
 title_meta: 'Reboot Prompt Script for Windows Configuration'
 keywords: ['reboot', 'prompt', 'edf', 'monitor', 'windows', 'configuration']
@@ -65,6 +65,9 @@ The following items depend on this script to function correctly:
 ## Output
 
 The EDF's outlined above get updated as the script gets triggered. The monitor looks at the EDFs to confirm it is following the 'proval_RebootPromptDurBetweenPrompt' System Property.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ssl-tls-settings-ie'
+id: 'bdc0cb0d-5b88-448b-9568-268d27fdc17d'
 title: 'SSL and TLS Settings for Internet Explorer'
 title_meta: 'SSL and TLS Settings for Internet Explorer'
 keywords: ['ssl', 'tls', 'internet', 'explorer', 'settings', 'security']
@@ -28,6 +28,9 @@ This contains the SSL and TLS info being set by the dependent script for the IE 
 | Contact                      | Last user name                                                |
 | Contact Email                | User email                                                    |
 | IE Advanced Security Status   | Detail information of what TLS and SSL are set for Internet Explorer |
+
+
+
 
 
 

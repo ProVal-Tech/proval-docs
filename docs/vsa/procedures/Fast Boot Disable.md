@@ -1,5 +1,5 @@
 ---
-id: 'vsa-disable-fast-boot'
+id: 'd0e2ff26-8148-47fc-a482-af212c9659db'
 title: 'Disable Fast Boot in Windows'
 title_meta: 'Disable Fast Boot in Windows'
 keywords: ['fast', 'boot', 'disable', 'windows', 'registry']
@@ -32,6 +32,9 @@ Performs the following command:
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

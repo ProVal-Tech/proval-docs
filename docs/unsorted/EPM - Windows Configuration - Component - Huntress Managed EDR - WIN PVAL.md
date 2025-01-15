@@ -1,12 +1,12 @@
 ---
-id: 'rmm-huntress-managed-edr'
+id: '37781bee-b7cd-448e-9d45-53e789a455b8'
 title: 'Huntress Managed EDR Component for Datto RMM'
 title_meta: 'Huntress Managed EDR Component for Datto RMM - Installation and Management'
 keywords: ['huntress', 'edr', 'datto', 'component', 'management']
 description: 'This document outlines the management of the Huntress EDR agent, detailing installation, uninstallation, repair, and reinstallation processes within the Datto RMM environment. It includes necessary dependencies, implementation steps, usage instructions, and expected output for successful job execution.'
 tags: ['edr', 'installation', 'uninstallation', 'repair', 'management', 'datto', 'component']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -57,6 +57,9 @@ StdOut may require you to scroll to view the complete log, you can alternatively
 
 **StdErr**  
 StdErr is not expected
+
+
+
 
 
 

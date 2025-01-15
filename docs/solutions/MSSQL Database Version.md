@@ -1,5 +1,5 @@
 ---
-id: 'cwa-mssql-database-version-retrieval'
+id: 'a13ca3c7-a75d-4549-9056-dd0b79e4caeb'
 title: 'MSSQL Database Version Retrieval Solution'
 title_meta: 'MSSQL Database Version Retrieval Solution'
 keywords: ['mssql', 'database', 'version', 'audit', 'monitor', 'script', 'dataview']
@@ -48,6 +48,9 @@ The objective of the solution is to centralize the retrieval of MSSQL server ver
      - [Internal Monitor - Execute Script - Get MSSQL Database](https://proval.itglue.com/DOC-5078775-15161763)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

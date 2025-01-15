@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-chromium-homepage'
+id: 'e5ed994d-5538-4f5f-ad3c-96a6ae542d0f'
 title: 'Remove Chromium Homepage Configuration'
 title_meta: 'Remove Chromium Homepage Configuration - Automate Implementation'
 keywords: ['chromium', 'homepage', 'registry', 'microsoft', 'edge']
@@ -23,6 +23,9 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Log
+
+
+
 
 
 

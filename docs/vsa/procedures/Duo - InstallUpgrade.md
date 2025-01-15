@@ -1,5 +1,5 @@
 ---
-id: 'ps-duo-install-upgrade'
+id: '278125a7-9a86-4e03-aae5-3025efaf1737'
 title: 'Duo Installation and Upgrade Procedure for Windows'
 title_meta: 'Duo Installation and Upgrade Procedure for Windows'
 keywords: ['duo', 'installation', 'upgrade', 'windows', 'procedure']
@@ -75,6 +75,9 @@ This procedure installs and upgrades Duo for Windows.
 ## Output
 
 Procedure Logfiles
+
+
+
 
 
 

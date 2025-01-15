@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-set-domain-controllers'
+id: '6270f7b1-3cf6-433f-b6e9-b1300b545896'
 title: 'Monitor Set for Domain Controllers'
 title_meta: 'Monitor Set for Domain Controllers'
 keywords: ['domain', 'controllers', 'admin', 'account', 'password', 'monitor']
@@ -29,6 +29,9 @@ Domain Controllers belonging to clients that have the `1a. Enable Domain Admin P
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script on the machines detected by the monitor set.
+
+
+
 
 
 

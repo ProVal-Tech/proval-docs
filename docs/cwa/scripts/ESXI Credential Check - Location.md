@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-client-ticket-for-vm-without-host'
+id: '48e22d95-37d4-453d-a7a4-d816bd9950f9'
 title: 'Create Client Ticket for VM Without Host'
 title_meta: 'Create Client Ticket for VM Without Host'
 keywords: ['client', 'ticket', 'virtual', 'machine', 'host', 'manager']
@@ -39,6 +39,9 @@ Document the various variables in the script. Delete any section that is not rel
 ![Image](../../../static/img/ESXI-Credential-Check---Location/image_2.png)
 
 ![Image](../../../static/img/ESXI-Credential-Check---Location/image_3.png)
+
+
+
 
 
 

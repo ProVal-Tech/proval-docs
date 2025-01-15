@@ -1,5 +1,5 @@
 ---
-id: 'cwa-threatlocker-auth-key'
+id: '5ffed5a2-c8d9-4e43-964a-54f1ac563268'
 title: 'ThreatLocker Authorization Key Configuration'
 title_meta: 'ThreatLocker Authorization Key Configuration'
 keywords: ['threatlocker', 'authorization', 'key', 'windows', 'company']
@@ -26,6 +26,9 @@ This Custom field at company level stores the threatlocker Authorization key for
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerAuthKey/image_1.png)
+
+
+
 
 
 

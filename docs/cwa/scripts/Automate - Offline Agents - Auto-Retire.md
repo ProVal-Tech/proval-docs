@@ -1,5 +1,5 @@
 ---
-id: 'cwa-offline-agents-auto-retire'
+id: 'a17ec084-ba3c-4a89-9d7a-52e4260af6e1'
 title: 'Offline Agents Auto-Retire Script'
 title_meta: 'Offline Agents Auto-Retire Script for ConnectWise Automate'
 keywords: ['offline', 'agents', 'auto-retire', 'script', 'automate', 'threshold', 'exclusions']
@@ -137,6 +137,9 @@ Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
 Last Logged In User: DEV-WIN10-DCJOI/Test
 ```
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-field-user-status'
+id: 'f13ed34c-e9e0-4480-a3b5-86160707a8bc'
 title: 'Custom Field for User Status on Machines'
 title_meta: 'Custom Field for User Status on Machines'
 keywords: ['custom', 'field', 'user', 'status', 'machines']
@@ -22,6 +22,9 @@ The custom field contains the User status on the machines.
 | Field Name           | Type of Field (Machine or Organization) | Description                                                     |
 |----------------------|-----------------------------------------|-----------------------------------------------------------------|
 | cPVAL User Status    | Machine                                 | It will show the status of the User on the machines. "Pccomp is present/ Not- Present" |
+
+
+
 
 
 

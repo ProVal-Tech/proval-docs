@@ -1,5 +1,5 @@
 ---
-id: 'cwa-import-windows-patching-mysql-view'
+id: 'baeb3063-b28b-4eae-975d-e55af60c0466'
 title: 'Import SEC - Windows Patching - MySQL View'
 title_meta: 'Import SEC - Windows Patching - MySQL View'
 keywords: ['import', 'mysql', 'windows', 'patching', 'view']
@@ -20,6 +20,9 @@ This script can be used to import [SEC - Windows Patching - MySQL View - pvl_v_w
 
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)  
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)  
+
+
+
 
 
 

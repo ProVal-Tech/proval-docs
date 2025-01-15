@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-365-click-to-run-update-channel'
+id: '545750d5-274a-46d9-bf8a-8ad677293458'
 title: 'Microsoft 365 - Click-to-Run - Update Channel Configuration'
 title_meta: 'Microsoft 365 - Click-to-Run - Update Channel Configuration'
 keywords: ['microsoft', 'click-to-run', 'update', 'channel', 'configuration', 'windows', 'audit', 'automation']
@@ -102,6 +102,9 @@ Confirm with consultant before enabling the Automation.
 - **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](https://proval.itglue.com/DOC-5078775-14568325)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
+
+
+
 
 
 

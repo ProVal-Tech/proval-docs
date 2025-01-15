@@ -1,5 +1,5 @@
 ---
-id: 'cwa-collect-device-info'
+id: 'b390d527-f85c-4f74-af2e-3a639bff8a51'
 title: 'Collect Device Information Script'
 title_meta: 'Collect Device Information Script for Windows Agents'
 keywords: ['device', 'version', 'windows', 'sql', 'automation']
@@ -48,6 +48,9 @@ This script collects information of device name and version as provided for the 
 ## Output
 
 - Dataview
+
+
+
 
 
 

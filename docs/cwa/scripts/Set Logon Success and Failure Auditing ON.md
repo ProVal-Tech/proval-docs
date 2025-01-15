@@ -1,5 +1,5 @@
 ---
-id: 'cwa-configure-logon-auditing'
+id: 'f499a42f-9194-4109-88c4-6ae61fcfbb93'
 title: 'Configure Logon Auditing with Auditpol'
 title_meta: 'Configure Logon Auditing with Auditpol'
 keywords: ['audit', 'logon', 'success', 'failure', 'dc']
@@ -32,6 +32,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

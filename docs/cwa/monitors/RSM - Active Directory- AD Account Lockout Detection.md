@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-account-lockout-detection'
+id: 'de574ff4-5a24-4ccd-83d3-499b1b274893'
 title: 'AD Account LockOut Detection'
 title_meta: 'AD Account LockOut Detection'
 keywords: ['monitoring', 'alert', 'eventid', 'domaincontroller', 'ticketing']
@@ -61,6 +61,9 @@ Endpoint    :    DEV-Win11DomainJoined
 Domain      :    provaltestdomain.local
 DC          :    DEV-SERVER-2019$
 ```
+
+
+
 
 
 

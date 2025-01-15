@@ -1,5 +1,5 @@
 ---
-id: 'ps-identify-ipv6-machines'
+id: 'bfeadced-7753-468a-9119-b2b7f4499cf2'
 title: 'Identify Machines with IPv6 Enabled'
 title_meta: 'Identify Machines with IPv6 Enabled'
 keywords: ['ipv6', 'network', 'adapter', 'windows', 'detection']
@@ -22,6 +22,9 @@ The purpose of this role is to identify the machines where IPv6 is enabled on an
 
 Use the following document as a guide to implement this role:  
 [https://proval.itglue.com/5078775/docs/17883447](https://proval.itglue.com/5078775/docs/17883447)
+
+
+
 
 
 

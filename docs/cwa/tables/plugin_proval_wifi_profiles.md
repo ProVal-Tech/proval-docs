@@ -1,5 +1,5 @@
 ---
-id: 'cwa-wifi-profile-storage'
+id: '561c4377-7634-4596-9d06-7101e2ef7b65'
 title: 'WiFi Profile Storage for Later Application'
 title_meta: 'WiFi Profile Storage for Later Application'
 keywords: ['wifi', 'profile', 'storage', 'configuration', 'clientid', 'ssid']
@@ -25,6 +25,9 @@ Stores information about gathered WiFi profiles from [WiFi Profile - Get](https:
 | clientid | INT     | The ClientID associated with the WiFi profile.   |
 | ssid     | VARCHAR | The SSID of the WiFi profile.                    |
 | xml      | BLOB    | The configuration information of the WiFi profile.|
+
+
+
 
 
 

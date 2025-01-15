@@ -1,5 +1,5 @@
 ---
-id: 'cwa-duplicate-machines-dataview'
+id: 'a36b0952-ad48-4891-b535-c70d0b2e235b'
 title: 'Dataview for Identifying Duplicate Machines in ConnectWise Automate'
 title_meta: 'Dataview for Identifying Duplicate Machines in ConnectWise Automate'
 keywords: ['duplicate', 'machines', 'automate', 'dataview', 'licensing']
@@ -26,6 +26,9 @@ Note: This dataview specifically references the biosver column in the computers 
 | Serial Numbers    | Displays the serial number of the duplicate machines  |
 | Mac Addresses    | Displays the Mac address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
+
+
+
 
 
 

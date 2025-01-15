@@ -31,3 +31,6 @@ If the script has not been run previously, then the user data is saved to the ta
     Get-NewLocalUser_log
     Get-NewLocalUser_users
 
+
+
+

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-drive-list-for-monitoring'
+id: '8a943756-f1fc-4815-a30a-984351284103'
 title: 'Get Drive List for RMM Monitoring'
 title_meta: 'Get Drive List for RMM Monitoring'
 keywords: ['drive', 'monitoring', 'rmm', 'size']
@@ -15,6 +15,9 @@ Get Drive List for RMM Monitoring
 ## Parameters:
 
 - **-skipsize**: Optional. The minimum drive size in GB to count. Default is 10.
+
+
+
 
 
 

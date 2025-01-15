@@ -1,5 +1,5 @@
 ---
-id: 'vsa-detect-get-sql-info'
+id: 'cc9eea15-c829-44a4-b507-23efeb8dcaff'
 title: 'Detect and Get Information About Installed SQL (Reg key)'
 title_meta: 'Detect and Get Information About Installed SQL (Reg key)'
 keywords: ['sql', 'registry', 'information', 'installed', 'detection']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Detect and Get Information About Installed SQL (Reg key)  
+
+
+
 
 
 

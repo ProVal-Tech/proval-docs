@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-connect-version-audit'
+id: 'c5607e81-8d80-4096-a9d8-76b39ba71db3'
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'audit', 'connect', 'version', 'endpoint']
@@ -34,6 +34,9 @@ List all filters applied to this view
 ### Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

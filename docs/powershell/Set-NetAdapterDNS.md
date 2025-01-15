@@ -36,3 +36,6 @@ Appends the DNS address 1.1.1.1 to the end of all active, physical network adapt
     .\Set-NetAdapterDNS-log.txt
     .\Set-NetAdapterDNS-data.txt
 
+
+
+

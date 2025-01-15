@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-version-metrics'
+id: '0aa84005-5627-496f-9f09-496ef916cff5'
 title: 'Windows Version Metrics Solution'
 title_meta: 'Windows Version Metrics Solution'
 keywords: ['windows', 'metrics', 'dataview', 'support', 'patching']
@@ -38,6 +38,9 @@ This solution displays a well-calculated version metrics with multiple filters.
 **A:** Open a RAWSQL monitor set and execute the following queries one after another and you will find your answer:  
 - `SELECT * From [pvl_v_windows_version_metrics](https://proval.itglue.com/DOC-5078775-11564063);`  
 - `SELECT * From [plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690);`
+
+
+
 
 
 

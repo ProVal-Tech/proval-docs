@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-cert-auth-servers'
+id: '7cef0364-5793-4623-b5bc-5e446448cb70'
 title: 'Detect Servers with Certification Authority Feature'
 title_meta: 'Detect Servers with Certification Authority Feature'
 keywords: ['certification', 'servers', 'feature', 'windows', 'detection']
@@ -17,6 +17,9 @@ Role used to detect the servers with Certification Authority Feature installed.
 | Detection String                                                                                      | Comparator | Result   | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|----------|---------------|
 | {@%powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Cert-Authority' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains   | Installed | Windows       |
+
+
+
 
 
 

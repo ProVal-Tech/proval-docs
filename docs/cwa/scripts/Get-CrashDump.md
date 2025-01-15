@@ -1,5 +1,5 @@
 ---
-id: 'cwa-collect-crash-dump-info'
+id: 'dde000a0-373a-4023-a594-04e532b5ad57'
 title: 'Collect Crash Dump Information'
 title_meta: 'Collect Crash Dump Information'
 keywords: ['crash', 'dump', 'information', 'data', 'ticket', 'email', 'custom', 'table']
@@ -94,6 +94,9 @@ Collects information regarding any existing crash dump.
 ### Custom Table
 
 ![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
+
+
+
 
 
 

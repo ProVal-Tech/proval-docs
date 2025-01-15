@@ -1,5 +1,5 @@
 ---
-id: 'rmm-update-microsoft-365-apps'
+id: 'cad2f0a6-69fb-41df-9fdf-8014b31f7b47'
 title: 'Update Microsoft 365 Apps'
 title_meta: 'Update Microsoft 365 Apps'
 keywords: ['update', 'microsoft', '365', 'apps', 'office', 'click-to-run']
@@ -126,6 +126,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

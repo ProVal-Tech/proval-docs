@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unwanted-event-logs-monitoring-script'
+id: 'f36b7367-99c7-478b-abc9-6802182431e4'
 title: 'Unwanted Event Logs Monitoring Script'
 title_meta: 'Unwanted Event Logs Monitoring Script'
 keywords: ['event', 'logs', 'monitoring', 'alert', 'script']
@@ -39,6 +39,9 @@ Step 3: Emails the outcome of the command (%shellresult%) to [alerts@provaltech.
 ## Output
 
 - **Email**
+
+
+
 
 
 

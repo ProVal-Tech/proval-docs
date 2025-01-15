@@ -1,5 +1,5 @@
 ---
-id: 'cwa-possible-brute-force-attacks-dataview'
+id: 'dab4d9d4-0e2c-40ae-8c95-12e00762c496'
 title: 'Possible Brute Force Attacks Dataview'
 title_meta: 'Possible Brute Force Attacks Dataview'
 keywords: ['brute', 'force', 'attacks', 'dataview', 'event', 'logs', 'login', 'windows']
@@ -35,6 +35,9 @@ NetworkInfo will not display unless advanced logon/logoff activity is being trac
 | AccountName        | The account name associated with the failed login attempt                                                        |
 | NetworkInfo        | This information will not display unless advanced logon/logoff is enabled on the endpoint or domain. This column will attempt to show the network address and source port used to attempt the latest logon. It is highly recommended to review the logs as there may be several different network addresses attempting to log in. |
 | Time Generated     | The time recorded in Automate for the most recent event log instance                                             |
+
+
+
 
 
 

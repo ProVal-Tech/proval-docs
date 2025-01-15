@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-email-csv-param-copy'
+id: 'ef644f47-8268-43fd-9e8a-ab32f64ec617'
 title: 'Dataview Email as CSV Copy Script'
 title_meta: 'Dataview Email as CSV Copy Script for ConnectWise Automate'
 keywords: ['dataview', 'csv', 'copy', 'script', 'connectwise']
@@ -23,6 +23,9 @@ This script is a copy of [CWM - Automate - Script - Dataview - Email as CSV [Par
 | Folder Location   | C:/ProgramData/_automation/script     | True     | Provide the folder location where you would like to preserve the Dataview File on the machine |
 
 Rest all parameters are the same as [CWM - Automate - Script - Dataview - Email as CSV [Param]](https://proval.itglue.com/DOC-5078775-8856158)
+
+
+
 
 
 

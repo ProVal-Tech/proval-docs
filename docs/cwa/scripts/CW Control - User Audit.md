@@ -1,5 +1,5 @@
 ---
-id: 'cwa-connectwise-control-user-audit'
+id: 'e7e6a0f4-6d21-4046-89ee-1e9dd5827221'
 title: 'ConnectWise Control User Audit Script'
 title_meta: 'ConnectWise Control User Audit Script'
 keywords: ['connectwise', 'audit', 'user', 'control', 'script']
@@ -38,6 +38,9 @@ Time Saved by Automation: 15 Minutes
 
 - Script log
 - Dataview @CW Control - User Audit
+
+
+
 
 
 

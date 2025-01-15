@@ -1,5 +1,5 @@
 ---
-id: 'cwa-log4shell-mysql-installation'
+id: 'c3342117-53c8-48de-9831-27cd7da77c00'
 title: 'Log4Shell Affected Software MySQL Installation'
 title_meta: 'Log4Shell Affected Software MySQL Installation'
 keywords: ['log4shell', 'mysql', 'software', 'installation', 'database']
@@ -41,6 +41,9 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.it
 - Local file on computer
 - Dataview
 - Custom Table
+
+
+
 
 
 

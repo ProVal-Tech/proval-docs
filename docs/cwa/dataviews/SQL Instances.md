@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sql-instances-report'
+id: 'e470f3e6-0e69-4cd4-89c0-1d9f2bd93e00'
 title: 'SQL Instances Report'
 title_meta: 'SQL Instances Report'
 keywords: ['sql', 'instances', 'report', 'client', 'computer']
@@ -25,6 +25,9 @@ Displays all installed SQL instances found on an endpoint
 | ComputerName        | The name of the computer.                                                  |
 | CurrentlyDetected    | 0 if no SQL instances are detected, 1 if SQL instances are detected.       |
 | Versions-Editions   | The found versions and editions separated by a comma.                      |
+
+
+
 
 
 

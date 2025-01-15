@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-setup'
+id: '5e1d98fb-913a-4384-9674-653c57bf610b'
 title: 'Remote Monitor Setup for Security Event Logs'
 title_meta: 'Remote Monitor Setup for Security Event Logs'
 keywords: ['remote', 'monitor', 'security', 'event', 'logs', 'setup']
@@ -164,6 +164,9 @@ Limit the remote monitor to a search, if necessary.
 
 ## Step 7.
 Apply the appropriate alert template to the remote monitors.
+
+
+
 
 
 

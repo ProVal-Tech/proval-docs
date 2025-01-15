@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-notification'
+id: 'cc311e32-be16-4133-ae95-fca238aea891'
 title: 'Internal Monitor Notification for ConnectWise Manage Plugin'
 title_meta: 'Internal Monitor Notification for ConnectWise Manage Plugin'
 keywords: ['monitor', 'notification', 'connectwise', 'alerts', 'plugin', 'error']
@@ -22,6 +22,9 @@ Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template 
 ## Target
 
 Global
+
+
+
 
 
 

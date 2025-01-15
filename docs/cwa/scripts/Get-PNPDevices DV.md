@@ -1,5 +1,5 @@
 ---
-id: 'cwa-collect-pnp-devices'
+id: '9d2c62e4-37a5-4d37-867c-c0cda13bdef9'
 title: 'Collect PnP Devices Information'
 title_meta: 'Collect PnP Devices Information'
 keywords: ['pnp', 'devices', 'windows', 'inventory', 'script']
@@ -43,6 +43,9 @@ Intended Target: Windows Computers
 
 - Script Log
 - Dataview
+
+
+
 
 
 

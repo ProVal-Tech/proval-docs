@@ -1,5 +1,5 @@
 ---
-id: 'rmm-validate-primary-domain-controller'
+id: 'b6a7c804-693c-4cf5-a60e-61dcb10ddcae'
 title: 'Validate Primary Domain Controller'
 title_meta: 'Validate Primary Domain Controller'
 keywords: ['validate', 'primary', 'domain', 'controller', 'machine', 'group']
@@ -35,6 +35,9 @@ Description: To validate whether the computer is a primary domain controller or 
 ## Sample Value
 
 ![Sample Value](../../../static/img/Is-Primary-Domain-Controller/image_3.png)
+
+
+
 
 
 

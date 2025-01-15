@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-critical-machine-offline'
+id: 'c53aa0aa-4c52-4cd7-9971-f99662b4cbec'
 title: 'Autofix for Critical Machine Offline in ConnectWise Automate'
 title_meta: 'Autofix for Critical Machine Offline in ConnectWise Automate'
 keywords: ['autofix', 'offline', 'server', 'agent', 'connectwise', 'monitor']
@@ -77,6 +77,9 @@ Note: For working of this solution, it is mandatory to have the RMM+ configured 
        - 'Critical Workstation'
        - 'Server'
      - It is recommended that you use this alert template only if you are confident that the scripting engine should not get overloaded based on your current configuration OR if you are OK with accepting the potential risk if the scripting engine has a problem during an offline server issue.
+
+
+
 
 
 

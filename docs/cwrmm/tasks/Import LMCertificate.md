@@ -1,5 +1,5 @@
 ---
-id: 'rmm-import-lmcertificate'
+id: '0f400020-d1ec-40a1-8581-b7f20aacef5d'
 title: 'Import Certificate to Local Machine Stores'
 title_meta: 'Import Certificate to Local Machine Stores'
 keywords: ['certificate', 'import', 'local', 'machine', 'self-signed']
@@ -368,6 +368,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Script Log Output](../../../static/img/Import-LMCertificate/image_17.png)
+
+
+
 
 
 

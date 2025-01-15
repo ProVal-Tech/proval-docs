@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-remove-add-wifi-profiles'
+id: '47e125c4-26df-4b47-811b-b856f3395290'
 title: 'Get/Remove/Add Wi-Fi Profiles'
 title_meta: 'Get/Remove/Add Wi-Fi Profiles - Manage Wi-Fi Profiles Efficiently'
 keywords: ['wifi', 'profiles', 'management', 'audit', 'removal', 'addition']
@@ -111,6 +111,9 @@ Location-Level EDFs can be used to override the Client-Level EDFs. Syntax used t
 
 - Script Log
 - Dataview
+
+
+
 
 
 

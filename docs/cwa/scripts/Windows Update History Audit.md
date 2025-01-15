@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gather-windows-update-data'
+id: 'd0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6'
 title: 'Gather Windows Update Data'
 title_meta: 'Gather Windows Update Data for EPM Custom Table'
 keywords: ['windows', 'update', 'data', 'epm', 'report']
@@ -37,6 +37,9 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 
 - Script Log
 - [pvl_windows_updates](https://proval.itglue.com/DOC-5078775-12275091)
+
+
+
 
 
 

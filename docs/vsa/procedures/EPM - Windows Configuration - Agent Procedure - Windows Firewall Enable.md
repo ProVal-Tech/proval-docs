@@ -1,5 +1,5 @@
 ---
-id: 'ps-enable-windows-firewall'
+id: '1d629150-fa76-46b9-ade9-875dcc74d5ab'
 title: 'Enable Windows Firewall on Endpoint'
 title_meta: 'Enable Windows Firewall on Endpoint'
 keywords: ['windows', 'firewall', 'enable', 'endpoint', 'procedure']
@@ -86,6 +86,9 @@ The agent procedure checks whether the machine has firewall enabled or not. If n
 ## Output
 
 Procedure Logs
+
+
+
 
 
 

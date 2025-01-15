@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reboot-machine-time-window'
+id: 'c0d649f3-0de3-4928-9f15-19fbfb3f625e'
 title: 'Reboot Machine Within Time Window'
 title_meta: 'Reboot Machine Within Time Window'
 keywords: ['reboot', 'machine', 'time', 'window', 'script']
@@ -38,6 +38,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-update-channel-microsoft-365'
+id: 'b605b808-7016-4911-8c37-6b950de40919'
 title: 'Set Update Channel for Microsoft 365 Products'
 title_meta: 'Set Update Channel for Microsoft 365 Products'
 keywords: ['microsoft', 'update', 'channel', 'custom', 'field', 'task']
@@ -28,6 +28,9 @@ Create the following Custom Fields:
 
 Create and schedule this task:
 - [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17430050)
+
+
+
 
 
 

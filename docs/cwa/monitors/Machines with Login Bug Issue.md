@@ -1,5 +1,5 @@
 ---
-id: 'cwa-login-bug-monitor'
+id: '9c3ebf70-921b-46e4-bdab-409e06e17a5f'
 title: 'Login Bug Monitor for EPM'
 title_meta: 'Login Bug Monitor for EPM'
 keywords: ['monitor', 'login', 'issue', 'reboot', 'agent']
@@ -29,6 +29,9 @@ This Monitor is a Global Monitor.
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-machines-with-huntress-agent'
+id: '7fc0874b-154c-49c0-aed4-a89be18798f4'
 title: 'Machines With Huntress Agent'
 title_meta: 'Machines With Huntress Agent - Dynamic Group Configuration'
 keywords: ['huntress', 'windows', 'dynamic', 'group', 'criteria']
@@ -34,6 +34,9 @@ Once adding the above criteria, click the Save button to Save the Group.
 ![Image](../../../static/img/Machines-with-Huntress-Agent/image_3.png)
 
 ![Image](../../../static/img/Machines-with-Huntress-Agent/image_4.png)
+
+
+
 
 
 

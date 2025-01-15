@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-application'
+id: '9f850e35-aca9-4255-b692-4b31d33f7ab1'
 title: 'Remove Application Script for CW RMM'
 title_meta: 'Remove Application Script for CW RMM'
 keywords: ['uninstall', 'application', 'cw', 'rmm', 'script']
@@ -284,6 +284,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - Task log
 - Custom field 'Remove Application Result'
+
+
+
 
 
 

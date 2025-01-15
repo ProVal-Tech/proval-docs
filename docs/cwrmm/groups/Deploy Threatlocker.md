@@ -1,5 +1,5 @@
 ---
-id: 'rmm-deploy-threatlocker'
+id: '8645a522-a9e3-4755-a498-32c2904e51c6'
 title: 'Deploy Threatlocker Group'
 title_meta: 'Deploy Threatlocker Group for Eligible Machines'
 keywords: ['threatlocker', 'deployment', 'machines', 'group', 'criteria']
@@ -59,6 +59,9 @@ Once the above criteria, click the Save button to Save the Group.
 ![Image](../../../static/img/Deploy-Threatlocker/image_4.png)
 
 ![Image](../../../static/img/Deploy-Threatlocker/image_5.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reinstall-automate-agents'
+id: 'ab3118dc-bc06-4443-9af0-78ccfb594844'
 title: 'Reinstall Automate Agents Using RMM+'
 title_meta: 'Reinstall Automate Agents Using RMM+'
 keywords: ['automate', 'agents', 'rmm', 'ticket', 'service', 'monitoring', 'offline', 'control']
@@ -89,6 +89,9 @@ It will clear the Agent status script state and will finish any open offline Ser
 - Script Log
 - Script State
 - Ticket
+
+
+
 
 
 

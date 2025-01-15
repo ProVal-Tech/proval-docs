@@ -1,5 +1,5 @@
 ---
-id: 'cwa-email-alerts-for-unsynced-components'
+id: '474cb433-c577-450c-b214-e7fc6a1c73f3'
 title: 'Email Alerts for Unsynced Components in CW Manage Plugin'
 title_meta: 'Email Alerts for Unsynced Components in CW Manage Plugin'
 keywords: ['email', 'alerts', 'cwmanage', 'unsynced', 'components']
@@ -38,6 +38,9 @@ Step 2: It will not trigger, if everything is fine. Otherwise will generate a ti
 ## Output
 
 - Email
+
+
+
 
 
 

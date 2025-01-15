@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-winget-package'
+id: 'a7948b43-d26f-4f00-a2d8-346b9d445153'
 title: 'Remove Winget Package Script'
 title_meta: 'Remove Winget Package Script'
 keywords: ['winget', 'package', 'remove', 'script', 'software']
@@ -39,6 +39,9 @@ Please reference the Agnostic Documentation for process.
 ## Output
 
 - Script log
+
+
+
 
 
 

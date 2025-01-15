@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-improper-script-schedules'
+id: '5c02ccad-5b51-46a5-8423-59286adc37ea'
 title: 'CWM - Automate - Dataview - Improper Script Schedules'
 title_meta: 'CWM - Automate - Dataview - Improper Script Schedules'
 keywords: ['sql', 'dataview', 'schedules', 'scripts', 'automation']
@@ -45,6 +45,9 @@ The view is designed to store and execute the SQL query utilized by the [CWM - A
 | Total Servers          | Total Servers getting targeted in the schedule                          |
 | Total workstations      | Total workstations getting targeted in the schedule                     |
 | Percent Targeted       | percent of the machines getting targeted in the schedule                |
+
+
+
 
 
 

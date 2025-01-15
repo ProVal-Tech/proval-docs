@@ -1,5 +1,5 @@
 ---
-id: 'cwa-idrac-version-fetch'
+id: '4545d115-22d7-451c-935b-fe8ca67f17e7'
 title: 'Fetch iDRAC Version from Dell Servers'
 title_meta: 'Fetch iDRAC Version from Dell Servers'
 keywords: ['idrac', 'dell', 'version', 'fetch', 'server']
@@ -42,6 +42,9 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

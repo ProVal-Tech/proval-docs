@@ -1,5 +1,5 @@
 ---
-id: 'rmm-repair-print-spooler'
+id: 'ee16e74b-f20e-4917-b025-b565c6556807'
 title: 'Repair Print Spooler'
 title_meta: 'Repair Print Spooler'
 keywords: ['print', 'spooler', 'service', 'reset', 'troubleshoot']
@@ -159,6 +159,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

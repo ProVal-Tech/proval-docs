@@ -1,5 +1,5 @@
 ---
-id: 'rmm-exclude-threatlocker'
+id: 'de2e1944-e0cc-4b5a-8b87-4f09cfafe4a9'
 title: 'Exclude Threatlocker Deployment for Site'
 title_meta: 'Exclude Threatlocker Deployment for Site'
 keywords: ['threatlocker', 'deployment', 'custom', 'field', 'site']
@@ -25,6 +25,9 @@ Turning this Custom Field "Yes" will exclude all the machines under that Site fr
 ## ScreenShot
 
 ![ScreenShot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)
+
+
+
 
 
 

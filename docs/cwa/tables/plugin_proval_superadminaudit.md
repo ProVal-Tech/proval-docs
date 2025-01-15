@@ -1,5 +1,5 @@
 ---
-id: 'cwa-super-admin-audit'
+id: 'db1adf1f-7ff0-4b43-af21-6dc3d64bd3a9'
 title: 'Super Admin Audit Information'
 title_meta: 'Super Admin Audit Information for Monitoring Changes'
 keywords: ['superadmin', 'audit', 'monitoring', 'information', 'comparison']
@@ -24,6 +24,9 @@ Stores information about the existing super admins. This is used as a challenge 
 |-----------|----------|-----------------------------------------------|
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
+
+
+
 
 
 

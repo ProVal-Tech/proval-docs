@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agent-licenses-overview'
+id: 'a108637e-9628-4074-95d3-bb6abfdd9e4a'
 title: 'Agent Licenses Overview in Automate'
 title_meta: 'Agent Licenses Overview in Automate'
 keywords: ['licenses', 'automate', 'computers', 'online', 'total']
@@ -20,6 +20,9 @@ This dataview provides information about available agent licenses in Automate.
 | Total Computers                | Displays the total number of machines in Automate                          |
 | Online Computers (30 Days)     | Displays the number of machines that have the last contact in the last 30 days |
 | Percentage online              | Displays the percentage of machines that have the last contact in the last 30 days |
+
+
+
 
 
 

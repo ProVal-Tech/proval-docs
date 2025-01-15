@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-access-service-check-setup'
+id: 'dd99f8a5-83f7-48a5-b8a9-ac68224e543a'
 title: 'Remote Access Service Check Setup'
 title_meta: 'Remote Access Service Check Setup'
 keywords: ['remote', 'access', 'service', 'check', 'setup', 'monitor']
@@ -156,6 +156,9 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

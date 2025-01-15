@@ -1,5 +1,5 @@
 ---
-id: 'cwa-winget-app-audit-weekly-execution'
+id: 'af67ed08-40af-4899-ae8f-5e64f9bfb851'
 title: 'Weekly Execution of Winget App Audit'
 title_meta: 'Weekly Execution of Winget App Audit'
 keywords: ['winget', 'audit', 'windows', 'script', 'software']
@@ -24,6 +24,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Winget App Audit`  
+
+
+
 
 
 

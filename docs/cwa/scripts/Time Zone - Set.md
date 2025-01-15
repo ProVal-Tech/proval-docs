@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-time-zone'
+id: '89fafb58-91d4-48de-a65d-dafa185bc63b'
 title: 'Set Time Zone Script'
 title_meta: 'Set Time Zone Script'
 keywords: ['time', 'zone', 'script', 'windows', 'configuration']
@@ -186,6 +186,9 @@ UTC+13
 Tonga Standard Time  
 Samoa Standard Time  
 Line Islands Standard Time  
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-download-install-shadowcontrol-client'
+id: '13e225e3-ebab-45f8-ac25-f1a15eb4ac80'
 title: 'Download and Install ShadowControl Client'
 title_meta: 'Download and Install ShadowControl Client'
 keywords: ['shadowcontrol', 'client', 'install', 'download', 'subscription']
@@ -33,6 +33,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 Script Log
+
+
+
 
 
 

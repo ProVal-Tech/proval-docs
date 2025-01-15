@@ -1,5 +1,5 @@
 ---
-id: 'cwa-map-categories-to-manage'
+id: 'f840d208-1cd4-409a-bf46-b6492790a184'
 title: 'Mapping Categories from Automate to Manage'
 title_meta: 'Mapping Categories from Automate to Manage'
 keywords: ['mapping', 'categories', 'automate', 'manage', 'query']
@@ -62,6 +62,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Q:** What Happens if I set both Subtype and Item to 1?  
 **A:** The script checks for Item first, as it trumps Subtype, and adds both the subtype and the item mapping.
+
+
+
 
 
 

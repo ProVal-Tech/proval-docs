@@ -1,5 +1,5 @@
 ---
-id: 'rmm-sentinelone-installed-group'
+id: '9bed886f-fa13-4389-932e-47c62482db0d'
 title: 'Creating a Dynamic Group for SentinelOne Installed Machines'
 title_meta: 'Creating a Dynamic Group for SentinelOne Installed Machines'
 keywords: ['sentinelone', 'windows', 'group', 'dynamic', 'agent']
@@ -44,6 +44,9 @@ The group contains the Windows machines where Sentinel Agent is installed.
 
 ![Image](../../../static/img/SentinelOne-Installed/image_10.png)  
 ![Image](../../../static/img/SentinelOne-Installed/image_11.png)
+
+
+
 
 
 

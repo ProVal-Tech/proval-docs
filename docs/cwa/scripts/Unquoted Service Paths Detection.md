@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unquoted-service-paths-detection'
+id: '2dd77709-9172-4cbe-94cc-b5f664f2f2ce'
 title: 'Unquoted Service Paths Detection and Fix'
 title_meta: 'Unquoted Service Paths Detection and Fix'
 keywords: ['unquoted', 'service', 'paths', 'detection', 'fix']
@@ -29,6 +29,9 @@ It will fetch the new paths to be set for each unquoted service on the machine a
 ## Output
 
 Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-logitech-unifying-software-installation'
+id: 'b86b8355-39ee-4f0c-8f54-33a21ed603f3'
 title: 'Logitech Unifying Software Installation'
 title_meta: 'Logitech Unifying Software Installation'
 keywords: ['logitech', 'software', 'installation', 'unifying', 'driver']
@@ -41,6 +41,9 @@ It has error handling to ensure the application installation is done successfull
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_printer_driver_inventory'
+id: '92357c7e-dc65-400a-9d61-4d3243a334d4'
 title: 'Printer Driver Inventory Collection'
 title_meta: 'Printer Driver Inventory Collection'
 keywords: ['printer', 'drivers', 'inventory', 'windows', 'collection']
@@ -44,6 +44,9 @@ Intended Target: Windows Computers
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

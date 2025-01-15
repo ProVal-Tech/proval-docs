@@ -1,5 +1,5 @@
 ---
-id: 'cwa-possible-brute-force-attack'
+id: 'a520b645-036d-45ce-8ca6-8f3d31ee30cc'
 title: 'Possible Brute Force Attack Detection'
 title_meta: 'Possible Brute Force Attack Detection'
 keywords: ['brute', 'force', 'attack', 'eventlog', 'security', 'monitor', 'alert']
@@ -55,6 +55,9 @@ Step 3: Replace '<agentid>' in the additional condition with the id of your moni
 ## Dependencies
 
 [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+
+
+
 
 
 

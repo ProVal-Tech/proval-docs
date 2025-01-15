@@ -1,5 +1,5 @@
 ---
-id: 'cwa-kb5005394-installation'
+id: '19cf3c3f-14e2-40a0-86c3-735b614a9331'
 title: 'Install KB5005394 - Out of Band Patch'
 title_meta: 'Install KB5005394 - Out of Band Patch'
 keywords: ['kb5005394', 'patch', 'windows', 'update', 'installation']
@@ -47,6 +47,9 @@ The script will install KB5005394 - Out of Band Patch only if it is not installe
 
 - Script log
 - Script state
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-report'
+id: 'affc0b47-f0fe-43f9-95f6-0e0d1205b4d6'
 title: 'Windows Update Report for Automate'
 title_meta: 'Windows Update Report for Automate'
 keywords: ['windows', 'update', 'report', 'patches', 'monitoring', 'auditing']
@@ -54,6 +54,9 @@ A: It's most probably because of the permissions, try running [CWM - Automate - 
 **Q: Even after executing the script, I am unable to find my computer in the dataview, and it shows 'Information Not Available' in the monitor set?**  
 A: You'll have to ensure that necessary exclusions are defined in the AV/security products. [AV Exclusions - ProVal Standard](https://proval.itglue.com/DOC-5078775-10955006). Alternatively, a whitelist object can be defined/added in the AV/security product's portal using the certificate attached to the email to run this particular script.  
 **Whitelisting the certificate will not overcome any restrictions/rules blocking/restricting the computers to communicate with [https://file.provaltech.com](https://file.provaltech.com)**.
+
+
+
 
 
 

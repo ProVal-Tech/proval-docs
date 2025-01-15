@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-report-storage'
+id: '845fe569-12ec-48e3-86f4-34377aba03ec'
 title: 'Windows Update Report Storage for ConnectWise Automate'
 title_meta: 'Windows Update Report Storage for ConnectWise Automate'
 keywords: ['connectwise', 'windows', 'update', 'report', 'storage', 'script']
@@ -58,6 +58,9 @@ Stores the data grabbed by [CWM - Automate - Script - Windows Update Report [DV]
 | BrowseOnly                   | varchar(10)    | True | False                                     |
 | PerUser                      | varchar(10)    | True | False                                     |
 | ScriptRunTime                | varchar(50)    | Script Run Time                                   |
+
+
+
 
 
 

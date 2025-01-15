@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cpu-threshold-monitor'
+id: '5fc58c71-2d9b-4e5c-8fe4-7e31e1a7ef31'
 title: 'CPU Threshold Violation Monitor'
 title_meta: 'CPU Threshold Violation Monitor'
 keywords: ['cpu', 'monitor', 'threshold', 'ticket', 'alert']
@@ -61,6 +61,9 @@ idlemon                          5.5
 ## How to Import
 
 [Import - Remote Monitor - ProVal - Production - CPU Threshold Violation Monitor](https://proval.itglue.com/DOC-5078775-13277020)
+
+
+
 
 
 

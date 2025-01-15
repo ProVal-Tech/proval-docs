@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-windows-11-installation'
+id: '2567ed9c-49da-40f2-b566-9d6e8d2f87b8'
 title: 'Enable Windows 11 Installation for Windows 10 Machines'
 title_meta: 'Enable Windows 11 Installation for Windows 10 Machines'
 keywords: ['windows', 'installation', 'custom', 'field', 'company']
@@ -22,6 +22,9 @@ Mark this custom field to enable Windows 11 installation for the company's Windo
 
 ![Image 1](../../../static/img/Company---Enable-Windows-11-Installation/image_1.png)  
 ![Image 2](../../../static/img/Company---Enable-Windows-11-Installation/image_2.png)
+
+
+
 
 
 

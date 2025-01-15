@@ -1,5 +1,5 @@
 ---
-id: 'cwa-server-offline-ticketing'
+id: '0004bd17-6820-4def-b5bf-96686276b7ae'
 title: 'Server Offline Ticketing Automation'
 title_meta: 'Server Offline Ticketing Automation'
 keywords: ['ticketing', 'automation', 'monitoring', 'troubleshooting', 'offline']
@@ -53,6 +53,9 @@ The script is designed to consistently update the ticket with new information as
 ![Image 4](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_4.png)
 
 ![Image 5](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_5.png)
+
+
+
 
 
 

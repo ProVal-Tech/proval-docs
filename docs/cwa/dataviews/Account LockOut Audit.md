@@ -1,5 +1,5 @@
 ---
-id: 'rmm_account_lock_details'
+id: '40cf6430-7ec1-496c-8e6e-b92a499120e6'
 title: 'Account Lock Details for Local and Domain Users'
 title_meta: 'Account Lock Details for Local and Domain Users'
 keywords: ['account', 'lock', 'user', 'details', 'local', 'domain']
@@ -60,6 +60,9 @@ FROM
   JOIN locations l ON l.`LocationID` = c.`LocationID` 
   JOIN plugin_proval_account_lock p ON p.computerid = c.`ComputerID`
 ```
+
+
+
 
 
 

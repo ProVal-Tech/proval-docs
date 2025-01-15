@@ -1,5 +1,5 @@
 ---
-id: 'cwa-tpm-configuration-info'
+id: '459746c4-f070-40bf-a630-0650e08a2490'
 title: 'TPM Configuration Information Script'
 title_meta: 'TPM Configuration Information Script'
 keywords: ['tpm', 'configuration', 'endpoint', 'security', 'management']
@@ -52,6 +52,9 @@ Time Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-drive-ssd-or-mech'
+id: 'f2b32fe9-5a6f-4608-a002-fddf020d526d'
 title: 'Get Drive SSD or Mech'
 title_meta: 'Get Drive SSD or Mech'
 keywords: ['drive', 'ssd', 'mechanical', 'storage', 'disk']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Get Drive SSD or Mech  
+
+
+
 
 
 

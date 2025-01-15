@@ -1,12 +1,12 @@
 ---
-id: 'vsa-restart-hyperv-cluster'
+id: 'c9f79a60-a081-47e9-923e-5a00bd36f01f'
 title: 'Restart Hyper-V Cluster'
 title_meta: 'Restart Hyper-V Cluster'
 keywords: ['hyper-v', 'cluster', 'reboot', 'drain', 'timeout']
 description: 'This document provides a detailed overview of a PowerShell script designed to reboot all nodes of a Hyper-V cluster sequentially, ensuring each node is fully operational before proceeding to the next. It includes requirements, process steps, parameters, and output logs for monitoring the script execution.'
 tags: ['hyper-v', 'cluster', 'reboot', 'timeout', 'performance']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -57,6 +57,9 @@ Will cycle through all nodes of ClusterName and attempt to drain the nodes stopp
 ./Restart-HyperVCluster-log.txt
 ./Restart-HyperVCluster-error.txt
 ```
+
+
+
 
 
 

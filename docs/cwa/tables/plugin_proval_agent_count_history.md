@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agent-counts-recorder'
+id: '8cfec2f2-cf2b-41f6-8a2e-2983f66f579f'
 title: 'Agent Counts Recorder Data Storage'
 title_meta: 'Agent Counts Recorder Data Storage'
 keywords: ['data', 'monitor', 'agent', 'counts', 'recorder', 'servers', 'computers', 'clients']
@@ -27,6 +27,9 @@ Stores data from the monitor @Agent Counts Recorder about the number of servers,
 | servers  | INT  | The number of servers measured for the associated client.     |
 | computers| INT  | The number of non-servers measured for the associated client. |
 | over90   | INT  | The number of machines that have checked in within 90 days.  |
+
+
+
 
 
 

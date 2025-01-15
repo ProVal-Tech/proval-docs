@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-dns-assignments'
+id: '3bf7ea38-4bea-426b-bc6d-f480ba0b895d'
 title: 'Get DNS Assignments'
 title_meta: 'Get DNS Assignments - Retrieve Network Adapter DNS Configurations'
 keywords: ['dns', 'network', 'adapters', 'windows', 'configuration']
@@ -31,6 +31,9 @@ The script retrieves details about accessible network adapters from a Windows co
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

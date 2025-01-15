@@ -1,5 +1,5 @@
 ---
-id: 'cwa-install-cisco-secure-client'
+id: '2db72420-9739-43e1-9166-9d2bba9f50d8'
 title: 'Install Cisco Secure Client'
 title_meta: 'Install Cisco Secure Client - Comprehensive Guide'
 keywords: ['cisco', 'secure', 'client', 'installation', 'vpn']
@@ -78,6 +78,9 @@ This will install all Modules, including Umbrella, which require the UserID, Fin
 ./Install-CiscoSecureClient-log.txt
 ./Install-CiscoSecureClient-error.txt
 ```
+
+
+
 
 
 

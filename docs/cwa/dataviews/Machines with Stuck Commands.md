@@ -1,5 +1,5 @@
 ---
-id: 'cwa-stuck-command-report'
+id: '60b06d7b-2357-4fbd-a13c-92288169adf5'
 title: 'Stuck Command Report for Machines'
 title_meta: 'Stuck Command Report for Machines'
 keywords: ['machines', 'command', 'execution', 'report', 'status']
@@ -30,6 +30,9 @@ The dataview displays information about machines where a specific command has be
 | Command Parameter        | Parameter of the Stuck Command        |
 | Date Updated             | Start time of the command            |
 | Stuck Since (Hours)     | Stuck Since (Hours)                  |
+
+
+
 
 
 

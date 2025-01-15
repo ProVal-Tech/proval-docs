@@ -1,5 +1,5 @@
 ---
-id: 'rmm-enable-windows-11-installation'
+id: '9d9148ad-26f7-45c6-ab6a-37e85dc259e8'
 title: 'Enable Windows 11 Installation for Compatible Windows 10 Computers'
 title_meta: 'Enable Windows 11 Installation for Compatible Windows 10 Computers'
 keywords: ['windows', 'installation', 'upgrade', 'policy', 'device', 'group']
@@ -55,6 +55,9 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 ## Completed Policy Group
 
 ![](../../../static/img/Install-Windows-11/image_13.png)
+
+
+
 
 
 

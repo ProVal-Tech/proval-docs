@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-firewall-notifications'
+id: '9b906a5c-919c-4799-85db-c43359bd6a15'
 title: 'Disable Firewall Notifications for All Users on Windows'
 title_meta: 'Disable Firewall Notifications for All Users on Windows'
 keywords: ['firewall', 'notifications', 'windows', 'script', 'disable']
@@ -27,6 +27,9 @@ Time Saved by Automation: 15 Minutes
 ## Output
 
 - Script logs
+
+
+
 
 
 

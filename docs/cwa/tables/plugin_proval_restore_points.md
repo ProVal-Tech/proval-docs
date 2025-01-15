@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-restore-points'
+id: 'ebb1d05a-bb80-45e7-a4be-9cc73b8f308d'
 title: 'Windows Restore Points Information'
 title_meta: 'Windows Restore Points Information'
 keywords: ['windows', 'restore', 'points', 'information', 'audit']
@@ -27,6 +27,9 @@ Stores information about Windows restore points.
 | RestorePointDate     | DATETIME| The date that the audited restore point was taken.         |
 | RestorePointDescription | VARCHAR | The description of the audited restore point.              |
 | SequenceNumber       | INT     | The number of previous sequences that this restore point has been through. |
+
+
+
 
 
 

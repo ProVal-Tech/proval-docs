@@ -1,5 +1,5 @@
 ---
-id: 'cwa-mimikatz-vulnerability-tracking'
+id: '58ebf02f-0bcc-458d-bc99-7ee5cc89a6d2'
 title: 'Mimikatz Vulnerability Tracking'
 title_meta: 'Mimikatz Vulnerability Tracking'
 keywords: ['mimikatz', 'vulnerability', 'tracking', 'registry', 'devices']
@@ -17,6 +17,9 @@ The role uses a registry to track any Mimikatz vulnerable devices.
 | Detection String                                          | Comparator | Result | Applicable OS |
 |----------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 0      | Windows        |
+
+
+
 
 
 

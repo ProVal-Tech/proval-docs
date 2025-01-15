@@ -1,12 +1,12 @@
 ---
-id: 'cwa-adobe-license-key-collection'
+id: '7a5a36e2-53b5-4a14-aa2b-0b214ac40767'
 title: 'Adobe License Key Collection'
 title_meta: 'Adobe License Key Collection'
 keywords: ['adobe', 'license', 'edf', 'windows', 'sqlite3']
 description: 'This document outlines a script designed to collect the Adobe license key from Windows agents and store it in a custom EDF named "Adobe License Key". It details the script's dependencies, variables, process, and expected output, including logs and dataviews.'
 tags: ['adobe', 'edf', 'windows', 'script', 'license']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -36,6 +36,9 @@ This script can run on any Windows agent. It first checks whether the agent has 
 - Script log
 - EDF
 - Dataview
+
+
+
 
 
 

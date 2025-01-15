@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-machines-summary'
+id: 'd49af856-de88-46fc-963a-8c7bc0e129ff'
 title: 'Windows 10 Machines Summary'
 title_meta: 'Windows 10 Machines Summary'
 keywords: ['windows', 'machines', 'versions', 'patching', 'information']
@@ -34,6 +34,9 @@ None
 | Reboot Pending   | Shows the reboot pending flag if a reboot pending is detected |
 | Last Contact     | Last time the machine checked into Automate              |
 | Uptime          | Time in seconds since the machine has restarted the kernel |
+
+
+
 
 
 

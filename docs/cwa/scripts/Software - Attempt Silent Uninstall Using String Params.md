@@ -1,5 +1,5 @@
 ---
-id: 'ps-uninstall-application-script'
+id: '6f37a14e-64e0-4bf1-a840-806cdf2ab2b4'
 title: 'Uninstall Application Script'
 title_meta: 'Uninstall Application Script'
 keywords: ['uninstall', 'application', 'script', 'database', 'silent']
@@ -31,6 +31,9 @@ When the script runs, it will ask for a parameter `AppName` that needs to be fil
 ## Output
 
 - Script log
+
+
+
 
 
 

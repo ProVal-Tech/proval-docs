@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-registry-values'
+id: '5e361c08-9ccf-4495-ad7f-fc4caeafcd2d'
 title: 'Remove Registry Values for Windows Update Configuration'
 title_meta: 'Remove Registry Values for Windows Update Configuration'
 keywords: ['registry', 'windowsupdate', 'patching', 'reboot', 'system']
@@ -34,6 +34,9 @@ Furthermore, the script will make sure that patching access is not disabled for 
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-enable-chromium-extensions'
+id: '905d7834-84e6-474a-9dc4-0e34a2e8408a'
 title: 'Enable Chromium Extensions for Multiple Browsers'
 title_meta: 'Enable Chromium Extensions for Multiple Browsers'
 keywords: ['chromium', 'chrome', 'edge', 'brave', 'vivaldi', 'extensions', 'policy']
@@ -42,6 +42,9 @@ If Setting all available browsers leave Target Blank.
 ## Output
 
 - Script log
+
+
+
 
 
 

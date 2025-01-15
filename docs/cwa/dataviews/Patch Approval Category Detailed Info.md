@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-approval-policy-summary'
+id: '43b35510-f264-429f-a06e-e0ea7822cfc1'
 title: 'Patch Approval Policy Summary'
 title_meta: 'Patch Approval Policy Summary'
 keywords: ['patches', 'approval', 'policy', 'audit', 'category']
@@ -24,6 +24,9 @@ Detailed information of the patches that are auto approved or denied or ignored 
 | Category                  | Category of the patch. Like, Updates, Upgrades, Exchange, Office 365, Bing, Drivers, etc.                          |
 | Category Approval Status   | The auto policy mentioned in the next column is disabled or enabled. Like Approval is enabled or disabled, deny is enabled or disabled or is ignored or nothing set against that category for that Approval Policy. |
 | Auto Policy               | The policy that is applied on that Patch Category for that Approval Policy. Like Approved, Denied or Ignored.       |
+
+
+
 
 
 

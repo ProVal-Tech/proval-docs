@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ethernet-speed-monitor'
+id: '69ce4eef-6126-486a-9b28-8626f847754e'
 title: 'Ethernet Speed Monitor'
 title_meta: 'Ethernet Speed Monitor for Network Performance'
 keywords: ['ethernet', 'monitor', 'network', 'performance', 'ticket']
@@ -24,6 +24,9 @@ There are no dependencies that are required for this monitor to work.
 ## Suggested Alert Template
 
 Apply the `△ Custom - Ticket Creation Computer` alert template unless otherwise specified.
+
+
+
 
 
 

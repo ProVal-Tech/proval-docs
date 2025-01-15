@@ -1,5 +1,5 @@
 ---
-id: 'cwa-local-machine-certificate-audit'
+id: '1045cfa0-257d-41a2-9a3f-a15837939b4f'
 title: 'Local Machine Certificate Audit'
 title_meta: 'Local Machine Certificate Audit'
 keywords: ['certificate', 'audit', 'monitoring', 'ssl', 'expiration', 'alert', 'dataview']
@@ -97,6 +97,9 @@ The purpose of this solution is to pull certificate information that is meaningf
    - [Internal Monitor - Certificate Expiration < 30 Days](https://proval.itglue.com/DOC-5078775-9256567)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and Run Now to start the monitor
+
+
+
 
 
 

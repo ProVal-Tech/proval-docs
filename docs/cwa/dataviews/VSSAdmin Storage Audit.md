@@ -1,5 +1,5 @@
 ---
-id: 'cwa-vss-admin-storage-detail'
+id: '7f7e7d3b-047d-41dc-acc2-5083adcaaf39'
 title: 'VSS Admin Storage Detail for All Volumes'
 title_meta: 'VSS Admin Storage Detail for All Volumes'
 keywords: ['vss', 'storage', 'volume', 'audit', 'agent']
@@ -32,6 +32,9 @@ This dataview stores the detail of VSS admin storage for all volumes.
 | VSS Allocated Storage   | Vss storage allocated on the disk             |
 | VSS Max Storage         | VSS max storage provided                      |
 | Script Ran Date         | Script last ran date on the agent            |
+
+
+
 
 
 

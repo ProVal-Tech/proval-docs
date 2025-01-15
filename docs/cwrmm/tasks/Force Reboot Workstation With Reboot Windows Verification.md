@@ -1,5 +1,5 @@
 ---
-id: 'rmm-force-workstation-reboot'
+id: 'd2983497-492e-4812-ba6c-09ac8998c7b3'
 title: 'Force Workstation Reboot With Reboot Windows Verification'
 title_meta: 'Force Workstation Reboot With Reboot Windows Verification'
 keywords: ['reboot', 'workstation', 'windows', 'automation', 'script']
@@ -333,6 +333,9 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
+
+
+
 
 
 

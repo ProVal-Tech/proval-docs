@@ -1,5 +1,5 @@
 ---
-id: 'cwa-group-policy-audit'
+id: '337526eb-1aa7-48a3-beab-ab66d2b7aea8'
 title: 'Group Policy Audit in Active Directory'
 title_meta: 'Group Policy Audit in Active Directory'
 keywords: ['active-directory', 'gpo', 'security', 'audit', 'policy']
@@ -39,6 +39,9 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | CreatedTime    | When the GPO was created                                                                        |
 | ModifiedTime   | The last time this GPO was modified                                                             |
 | ReadTime       | Last time this GPO was read.                                                                    |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-kb-impact-summary'
+id: 'b084a7f4-6dfa-4ca0-8170-4ab3af73efbd'
 title: 'KB Impact Summary'
 title_meta: 'KB Impact Summary'
 keywords: ['kb', 'patch', 'os', 'approval', 'policy', 'severity', 'category']
@@ -30,6 +30,9 @@ None
 | SetBy           | The User or 'Auto' that set the patch                    |
 | ApprovalSetting | Approved, Deny, or Ignore or Not Set                      |
 | Impact          | Number of policies where this patch is being set         |
+
+
+
 
 
 

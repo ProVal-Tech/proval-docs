@@ -1,5 +1,5 @@
 ---
-id: 'cwa-password-expiration-notification'
+id: 'bd386818-0b93-4bf2-a094-ab09aa030ea5'
 title: 'Password Expiration Notification for Domain Users'
 title_meta: 'Password Expiration Notification for Domain Users'
 keywords: ['alert', 'domain', 'expiration', 'notification', 'password', 'user']
@@ -40,6 +40,9 @@ Alerts the domain user if their domain password is set to expire within the next
 
 **Q: Users are not receiving emails?**  
 A: Ensure that the user has an email address set for their active directory account, Script's global variables are set correctly, and lastly the emails are not failing from Automate.
+
+
+
 
 
 

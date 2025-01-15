@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-windows-optional-updates'
+id: '1ce60c7e-e23d-4313-bb00-7e89ae031d7f'
 title: 'Disable Windows Optional Automatic Updates'
 title_meta: 'Disable Windows Optional Automatic Updates'
 keywords: ['windows', 'updates', 'registry', 'automation', 'patching']
@@ -126,6 +126,9 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### Row 6: Complete
 
 ![Complete](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_17.png)  
+
+
+
 
 
 

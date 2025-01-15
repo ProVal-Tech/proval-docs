@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-11-compatibility-validation'
+id: '007d88ec-68b1-45fa-8d95-9c279218ac3c'
 title: 'Windows 11 Compatibility Validation'
 title_meta: 'Windows 11 Compatibility Validation'
 keywords: ['windows', 'compatibility', 'validation', 'upgrade', 'task']
@@ -207,6 +207,9 @@ It is suggested to run the Task once per month against [Windows 10 Machines](htt
 
 - Script Log
 - Custom Field
+
+
+
 
 
 

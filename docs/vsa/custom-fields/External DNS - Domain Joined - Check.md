@@ -1,5 +1,5 @@
 ---
-id: 'ps-external-dns-domain-joined-check'
+id: '34694743-10f7-4bfa-8a38-79ccf5c68c90'
 title: 'External DNS - Domain Joined - Check'
 title_meta: 'External DNS - Domain Joined - Check'
 keywords: ['dns', 'domain', 'check', 'settings', 'machine', 'log']
@@ -68,6 +68,9 @@ This procedure checks to see if a machine is domain-joined or not and then check
 ## Output
 
 Procedure Logfiles and other outputs
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ad-weak-passwords-report'
+id: '56d0b15a-c899-4bc3-9da5-feeb8c061423'
 title: 'Active Directory Weak Passwords Report'
 title_meta: 'Active Directory Weak Passwords Report'
 keywords: ['active-directory', 'report', 'weak', 'passwords', 'audit']
@@ -41,6 +41,9 @@ Put the SQL to create the custom table here:
 ```
 CREATE TABLE table_name ...
 ```
+
+
+
 
 
 

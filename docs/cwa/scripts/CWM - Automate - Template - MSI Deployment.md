@@ -1,5 +1,5 @@
 ---
-id: 'cwa-template-msi-deployment'
+id: '58020b8e-e16f-433c-8dad-e10b59e2d8d7'
 title: 'Template - MSI Deployment'
 title_meta: 'Template - MSI Deployment'
 keywords: ['msi', 'deployment', 'script', 'installation', 'software']
@@ -73,6 +73,9 @@ With this information at hand, we are now equipped to deploy the application. So
 6. Save the script and test it.
 
 7. After the script is prepared, please verify with the partner or consultant whether they would like the script to also generate a ticket in case of failure. If needed, assign the appropriate ticket category ID to the `ticketcreationcategory` variable.
+
+
+
 
 
 

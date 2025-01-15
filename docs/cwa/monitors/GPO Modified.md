@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpo-modification-monitor'
+id: '25040f3b-ef1d-4ebb-af45-e0df3d12ebae'
 title: 'GPO Modification Monitor'
 title_meta: 'GPO Modification Monitor'
 keywords: ['gpo', 'monitor', 'domain', 'controller', 'alert']
@@ -51,6 +51,9 @@ Details:
 
 **Sample Ticket:**  
 ![Sample Ticket Image](../../../static/img/GPO-Modified/image_4.png)  
+
+
+
 
 
 

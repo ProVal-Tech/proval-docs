@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-m365updatechannel'
+id: 'ce16526d-84b5-4e58-928b-13a29195056e'
 title: 'Get Microsoft 365 Update Channel'
 title_meta: 'Get Microsoft 365 Update Channel - Script Overview'
 keywords: ['microsoft', 'office', 'update', 'channel', 'automation', 'edf']
@@ -51,6 +51,9 @@ File Hash (MD5): `E58115561CA743E1D9BCF56CAF13C839`
 - Script log
 - Custom Table
 - Dataview
+
+
+
 
 
 

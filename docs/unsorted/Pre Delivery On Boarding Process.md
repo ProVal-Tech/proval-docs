@@ -1,12 +1,12 @@
 ---
-id: 'cwa-provals-predelivery-process'
+id: 'c4dd571c-4519-48ab-9d86-3fc1680847b5'
 title: 'ProVal's Predelivery Process'
 title_meta: 'ProVal's Predelivery Process'
 keywords: ['onboarding', 'configuration', 'checklist', 'implementation', 'client']
 description: 'This document outlines the ProVal's Predelivery Process, detailing the pre-installation and configuration changes necessary for the new onboarding agent in client environments, including essential pre-check and post-check procedures to ensure proper implementation.'
 tags: ['configuration', 'checklist', 'implementation', 'client', 'software']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Introduction
 
@@ -17,6 +17,9 @@ It has a pre-check and post-check box EDFs to ensure the changes or implementati
 
 The ProVal's Predelivery Process includes the below solutions ready:  
 - 
+
+
+
 
 
 

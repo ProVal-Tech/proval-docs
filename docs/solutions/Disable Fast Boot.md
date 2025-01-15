@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-fast-boot'
+id: '1c1eacb7-dd9c-410e-b68a-604622260d6b'
 title: 'Disable Fast Boot for Windows Workstations'
 title_meta: 'Disable Fast Boot for Windows Workstations'
 keywords: ['disable', 'fastboot', 'windows', 'workstations', 'registry']
@@ -48,6 +48,9 @@ The purpose of the solution is to disable the Fast Boot feature for Windows Work
 
 3. Create the Task and deploy it against the device group:  
    - [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)  
+
+
+
 
 
 

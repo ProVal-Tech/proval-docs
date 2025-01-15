@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-suppress-reboot-alert'
+id: '3cdacc81-3702-454d-b8db-7a1bd6cf5bd9'
 title: 'Monitor for Suppress Reboot and Alert Behavior'
 title_meta: 'Monitor for Suppress Reboot and Alert Behavior'
 keywords: ['ticket', 'reboot', 'patch', 'server', 'alert']
@@ -35,6 +35,9 @@ The server %computername% is currently reporting that it is pending a reboot. Pl
 
 **Success:**  
 Server %COMPUTERNAME% is no longer reporting it is pending a reboot. Closing the ticket.
+
+
+
 
 
 

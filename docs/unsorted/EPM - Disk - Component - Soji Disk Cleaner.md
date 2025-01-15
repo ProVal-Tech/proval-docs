@@ -1,12 +1,12 @@
 ---
-id: 'rmm-soji-disk-cleaner'
+id: '3e424fbe-30e1-444b-a7c3-cc29793226a6'
 title: 'Soji Disk Cleaner Implementation'
 title_meta: 'Soji Disk Cleaner Implementation for Datto RMM'
 keywords: ['disk', 'cleaner', 'soji', 'endpoint', 'rmm']
 description: 'This document outlines the implementation process for running the Soji Disk Cleaner on selected endpoints within Datto RMM. It includes dependencies, implementation steps, and output details to ensure successful execution.'
 tags: ['disk-cleanup', 'implementation', 'datto', 'cleanup', 'software']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -26,6 +26,9 @@ Import the attached component into Datto RMM
 stdOut  
 stdError  
 ProgramData/_automation/app/soji/sojilogs/
+
+
+
 
 
 

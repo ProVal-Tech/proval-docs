@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ringcentral-install-mac'
+id: '11eb5fe8-c4ce-43cf-81ff-0021b5cb3bbd'
 title: 'RingCentral Phone Installation Script for Mac'
 title_meta: 'RingCentral Phone Installation Script for Mac'
 keywords: ['ringcentral', 'installation', 'mac', 'dmg', 'application']
@@ -35,6 +35,9 @@ The script will put the machine into Fast Talk as that makes the script run more
 ## Output
 
 Script log messages
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-reboot-pending-servers'
+id: 'd6235892-7f62-4a75-83ef-c6c01cc43898'
 title: 'Reboot Pending Servers Group'
 title_meta: 'Reboot Pending Servers Group'
 keywords: ['reboot', 'servers', 'windows', 'dynamic', 'group', 'endpoint']
@@ -38,6 +38,9 @@ This group contains the server endpoint where the reboot is pending. This group 
 - The agent available equals to True.
 - The OS contains any of Windows 2016, Windows 2019, and Windows 2022.
 - The Exclude reboot custom field equals False.
+
+
+
 
 
 

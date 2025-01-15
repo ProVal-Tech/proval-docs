@@ -1,5 +1,5 @@
 ---
-id: 'cwa-security-event-monitor'
+id: '5c3fa8f7-2d12-40db-a282-0147525c60b9'
 title: 'Security Event Monitor for Deleted Logs'
 title_meta: 'Security Event Monitor for Deleted Logs'
 keywords: ['security', 'event', 'monitor', 'logs', 'alert']
@@ -47,6 +47,9 @@ Windows Computers
 ## Implementation
 
 [Import - Remote Monitor - Security event logs cleared/deleted](https://proval.itglue.com/DOC-5078775-14946240)
+
+
+
 
 
 

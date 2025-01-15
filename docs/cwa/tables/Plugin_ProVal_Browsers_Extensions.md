@@ -1,5 +1,5 @@
 ---
-id: 'cwa-installed-browsers-extensions'
+id: '0a6370b4-7944-4483-86d5-ecbfd58f5376'
 title: 'Installed Browsers Extensions'
 title_meta: 'Installed Browsers Extensions'
 keywords: ['browsers', 'extensions', 'chromium', 'firefox', 'data', 'automation']
@@ -31,6 +31,9 @@ This Automate custom table stores the information gathered by the [Get Chromium 
 | ExtensionVersion     | varchar(32) | Version of the Extension                                        |
 | ExtensionInstallTime  | datetime    | Installation time of the Extension                               |
 | ScriptRunTime        | datetime    | Time when the data was fetched in Automate                      |
+
+
+
 
 
 

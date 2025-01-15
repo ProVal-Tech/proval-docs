@@ -1,5 +1,5 @@
 ---
-id: 'vsa_iso-mount-control'
+id: 'ce389f31-cb77-495f-9b20-18003303ae30'
 title: 'ISO Mount Control Procedures'
 title_meta: 'ISO Mount Control Procedures for Windows'
 keywords: ['iso', 'mount', 'control', 'windows', 'access']
@@ -29,6 +29,9 @@ Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` t
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

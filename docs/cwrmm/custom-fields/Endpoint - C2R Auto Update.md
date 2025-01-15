@@ -1,5 +1,5 @@
 ---
-id: 'rmm-c2r-office-auto-update-status'
+id: '3fbd3eec-1a64-44d4-a812-fc2ac0e359e0'
 title: 'C2R Office Auto Update Status'
 title_meta: 'C2R Office Auto Update Status'
 keywords: ['c2r', 'office', 'auto', 'update', 'status']
@@ -22,6 +22,9 @@ If C2R office Auto update is enabled or not on the machine gathered by the [Micr
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Auto-Update/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Auto-Update/image_2.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_custom_table_wifi_profiles'
+id: 'f317da6e-0ea2-4c1e-bad9-4d0ad25684d3'
 title: 'Custom Table for WiFi Profiles'
 title_meta: 'Custom Table for WiFi Profiles'
 keywords: ['wifi', 'profiles', 'database', 'configuration', 'encryption', 'authentication']
@@ -36,6 +36,9 @@ The purpose of the custom table is to store the WiFi Profiles information for ea
 | IsConnected         | tinyint(4)   | Is the Computer actively using it? (0/1)                |
 | Password            | blob         | Password of the Wifi Profile stored in encrypted format  |
 | scriptruntime       | datetime     | Data Collection Time                                     |
+
+
+
 
 
 

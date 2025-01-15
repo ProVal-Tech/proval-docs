@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpo-redirection-audit'
+id: 'aa50a67f-a0b6-4b97-8e89-18b0155265cc'
 title: 'Group Policy Redirection Audit Script'
 title_meta: 'Group Policy Redirection Audit Script for Effective Data Collection'
 keywords: ['audit', 'gpo', 'redirection', 'json', 'sql', 'variables', 'power', 'settings']
@@ -51,6 +51,9 @@ This script will audit the registry settings associated with any group policy re
 ## Output
 
 - Script log
+
+
+
 
 
 

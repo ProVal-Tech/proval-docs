@@ -1,5 +1,5 @@
 ---
-id: 'vsa-agent-restart-automation'
+id: 'e028ad3f-fecc-4701-83b8-0537db4e8494'
 title: 'VSA Agent Restart Automation'
 title_meta: 'VSA Agent Restart Automation'
 keywords: ['vsa', 'agent', 'restart', 'service', 'failure']
@@ -22,6 +22,9 @@ Allows VSA Agents to come back online after a service failure on their own, with
 ## Implementation
 
 Import both XMLs into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](https://proval.itglue.com/DOC-5078775-9791995) to point to the proper VSA service name. Use the getVariable `#serviceName#` for this. Schedule / deploy procedures.
+
+
+
 
 
 

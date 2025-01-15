@@ -1,5 +1,5 @@
 ---
-id: 'cwa_lansweeper-agent-installation'
+id: '49b92505-90cb-4c10-9d25-6ec311341f65'
 title: 'Installs the LanSweeper Agent'
 title_meta: 'Installs the LanSweeper Agent for Scanning'
 keywords: ['lansweeper', 'agent', 'installation', 'scanning', 'server']
@@ -40,6 +40,9 @@ Once the value provided during script execution, the LsAgent will be successfull
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-install-snapagent'
+id: 'f05a636f-889c-4d3a-9eaa-039e0166cb51'
 title: 'Install BlackPoint SnapAgent'
 title_meta: 'Install BlackPoint SnapAgent - ConnectWise RMM Implementation'
 keywords: ['blackpoint', 'snapagent', 'installer', 'script', 'connectwise']
@@ -159,6 +159,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

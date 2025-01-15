@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hyperv-disk-space-record'
+id: '0b6f4746-2fac-46c7-bfb2-db23e734c9fc'
 title: 'Hyper-V Disk Space Record'
 title_meta: 'Hyper-V Disk Space Record'
 keywords: ['hyper-v', 'disk', 'space', 'record', 'drive', 'data']
@@ -32,6 +32,9 @@ This table stores the drive's data of the Hyper-Vs at different schedules of the
 | Missing       | TINYINT  | Drive status whether detected in Automate or not |
 | Internal      | TINYINT  | Drive checks whether internal or external/removable |
 | SSD           | TINYINT  | Disk checks whether SSD or not                   |
+
+
+
 
 
 

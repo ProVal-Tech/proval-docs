@@ -1,5 +1,5 @@
 ---
-id: 'rmm-hp-ilo-health-report-check'
+id: 'e5e4ea6b-1d75-49c9-9569-26a213006bc7'
 title: 'HP iLO - Health Report - Check'
 title_meta: 'HP iLO - Health Report - Check'
 keywords: ['hp', 'ilo', 'health', 'report', 'check', 'rmm']
@@ -243,6 +243,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

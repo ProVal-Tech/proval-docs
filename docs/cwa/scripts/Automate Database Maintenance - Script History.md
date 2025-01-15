@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-database-maintenance'
+id: 'c4cc9f04-c64f-4a39-a92c-3a3a480b3300'
 title: 'Automate Database Maintenance Script'
 title_meta: 'Automate Database Maintenance Script'
 keywords: ['cleanup', 'database', 'maintenance', 'script', 'log']
@@ -32,6 +32,9 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Script-History/image_1.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-esxi-invalid-license-key-monitor'
+id: 'e413063b-7bce-4a4e-99ce-daea264d6ac6'
 title: 'ESXi Invalid License Key Monitoring'
 title_meta: 'ESXi Invalid License Key Monitoring'
 keywords: ['esxi', 'monitoring', 'license', 'ticketing', 'alert']
@@ -33,6 +33,9 @@ Global
 **Name:** `△ Custom - Ticket Creation - ESXi Monitoring`
 
 **The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-10689215) **script on failure.**
+
+
+
 
 
 

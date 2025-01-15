@@ -1,5 +1,5 @@
 ---
-id: 'cwa-crystal-disk-info-report'
+id: '89182385-f98c-4e8b-ab62-1df0c73bbb1c'
 title: 'Crystal Disk Info Report Table Structure'
 title_meta: 'Crystal Disk Info Report Table Structure'
 keywords: ['disk', 'info', 'report', 'database', 'structure']
@@ -49,6 +49,9 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
+
+
+
 
 
 

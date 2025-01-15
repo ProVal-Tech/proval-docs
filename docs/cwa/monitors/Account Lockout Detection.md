@@ -1,5 +1,5 @@
 ---
-id: 'rmm_monitor_account_lockout'
+id: '52fca59d-2cc0-46b2-ae1e-13d46bd36615'
 title: 'Monitor for Account Lockout Detection'
 title_meta: 'Monitor for Account Lockout Detection'
 keywords: ['monitor', 'lockout', 'account', 'detection', 'windows']
@@ -28,6 +28,9 @@ WIndows Machines
 ## Target
 
 Windows OS
+
+
+
 
 
 

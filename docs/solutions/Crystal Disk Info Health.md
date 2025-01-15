@@ -1,5 +1,5 @@
 ---
-id: 'rmm-crystal-disk-info-monitoring'
+id: 'd8e1d743-88d6-4acb-b149-7fc27c2e1738'
 title: 'Monitoring Disk Health with Crystal Disk Info'
 title_meta: 'Monitoring Disk Health with Crystal Disk Info'
 keywords: ['disk', 'health', 'monitoring', 'crystal', 'info']
@@ -27,6 +27,9 @@ The purpose of the content is to monitor the disk health of the physical machine
 - Create the task: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](https://proval.itglue.com/DOC-5078775-13549879)
 - Create the deployment schedule as described in this document: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](https://proval.itglue.com/DOC-5078775-13549879)
 - Create the monitor if necessary: [CW RMM - Monitor - Crystal Disk Info Health Status](https://proval.itglue.com/DOC-5078775-14029148)
+
+
+
 
 
 

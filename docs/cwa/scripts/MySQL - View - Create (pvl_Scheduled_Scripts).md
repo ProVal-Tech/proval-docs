@@ -1,5 +1,5 @@
 ---
-id: 'cwa_generate_view_scheduled_scripts'
+id: '494c2d2c-2f37-45b7-9eb0-130ff3aac45c'
 title: 'Generate View for Scheduled Scripts'
 title_meta: 'Generate View for Scheduled Scripts - ConnectWise Automate'
 keywords: ['view', 'scripts', 'permissions', 'automate', 'users']
@@ -21,6 +21,9 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom View
+
+
+
 
 
 

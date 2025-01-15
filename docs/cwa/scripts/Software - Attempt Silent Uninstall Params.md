@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-application'
+id: 'd6d1444e-6802-41d1-ae96-cd48c71e2e8b'
 title: 'Uninstall Application Script'
 title_meta: 'Uninstall Application Script for ConnectWise Automate'
 keywords: ['uninstall', 'application', 'script', 'database', 'automation']
@@ -30,6 +30,9 @@ When the script runs it will ask for a parameter `AppName` and that needs to be 
 ## Output
 
 - Script log
+
+
+
 
 
 

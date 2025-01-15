@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winget-uninstall-application'
+id: '70ce6b79-5bfe-4160-95d9-77622b7fce89'
 title: 'Winget UnInstall Application'
 title_meta: 'Winget UnInstall Application'
 keywords: ['winget', 'uninstall', 'application', 'windows', 'script']
@@ -178,6 +178,9 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
+
+
+
 
 
 

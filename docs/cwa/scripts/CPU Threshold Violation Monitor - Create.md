@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitors-cpu-usage'
+id: '20b0f192-7315-42d9-a575-9e088c15d79c'
 title: 'Creating Remote Monitors for CPU Usage on Windows Machines'
 title_meta: 'Creating Remote Monitors for CPU Usage on Windows Machines'
 keywords: ['cpu', 'monitoring', 'windows', 'alerts', 'thresholds', 'performance']
@@ -127,6 +127,9 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 ## Output
 
 - Remote Monitors
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-server-backup-data'
+id: '02ccf50f-d283-43a0-9130-1b3e23b56180'
 title: 'Windows Server Backup Data Storage'
 title_meta: 'Windows Server Backup Data Storage'
 keywords: ['windows', 'backup', 'server', 'data', 'storage', 'audit']
@@ -38,6 +38,9 @@ The table is built to store the complete Windows Server Backup data
 | SystemState Backup                         | VARCHAR  | It contains the critical system components, including the registry, Active Directory, and system files required for system recovery |
 | Overwrite Old Format VHD                   | VARCHAR  | If enabled the old VHD files will be overwritten during subsequent backups                             |
 | ScriptRanDate                              | DATETIME | Script last run time                                                                                   |
+
+
+
 
 
 

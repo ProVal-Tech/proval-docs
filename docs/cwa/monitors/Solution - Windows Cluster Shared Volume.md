@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-cluster-volume-monitoring'
+id: '1530b61c-9bba-406b-9451-0b998c9e8d54'
 title: 'Windows Cluster Volume Monitoring and Auditing'
 title_meta: 'Windows Cluster Volume Monitoring and Auditing'
 keywords: ['monitoring', 'auditing', 'cluster', 'volume', 'hyperv', 'disk', 'space', 'alert', 'ticket']
@@ -81,6 +81,9 @@ This solution is built to monitor the Windows Cluster Shared volume, create tick
      - Set up with alert template `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
 
 > Note: The autofix [Script - Windows Cluster Shared Volume [Autofix,Ticket]](https://proval.itglue.com/DOC-5078775-15952795) also calls the [Script - Windows Cluster Volume Space Audit [DV]](https://proval.itglue.com/DOC-5078775-15952791) whenever the cluster volume space is detected below 20% as a warning or below 10% as an error. So, this maintains the fresh audit report for the ones we need to keep an eye on.
+
+
+
 
 
 

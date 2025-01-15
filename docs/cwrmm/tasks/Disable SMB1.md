@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-smb1'
+id: '10055a68-f513-4580-bdc1-73272516866f'
 title: 'Disable SMB1 Protocol on Target Machine'
 title_meta: 'Disable SMB1 Protocol on Target Machine'
 keywords: ['smb1', 'protocol', 'disable', 'windows', 'security']
@@ -174,6 +174,9 @@ It is suggested to run the Task once per week against Windows computers.
 ## Output
 
 - Script log
+
+
+
 
 
 

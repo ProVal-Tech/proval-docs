@@ -1,5 +1,5 @@
 ---
-id: 'cwa-display-machines-low-drive-space'
+id: 'bef71b31-db27-419c-aa73-3431b77959f2'
 title: 'Display Machines with Low Drive Space'
 title_meta: 'Display Machines with Low Drive Space'
 keywords: ['machines', 'drive', 'space', 'low', 'monitoring']
@@ -30,6 +30,9 @@ None
 | Drive Type                | Type of drive (virtual Drive, Physical)         |
 | Operating System          | OS of the machine                                |
 | Agent Last Contact Date   | Last time the agent checked into Automate        |
+
+
+
 
 
 

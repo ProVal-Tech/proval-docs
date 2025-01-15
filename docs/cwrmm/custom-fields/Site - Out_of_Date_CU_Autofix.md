@@ -1,5 +1,5 @@
 ---
-id: 'rmm-out-of-date-cumulative-update-autofix'
+id: '7eb4d98b-4199-4f59-a28f-bfdf50f3e36a'
 title: 'Out of Date Cumulative Update Autofix Settings'
 title_meta: 'Out of Date Cumulative Update Autofix Settings for ConnectWise RMM'
 keywords: ['cumulative', 'update', 'autofix', 'site', 'servers']
@@ -31,6 +31,9 @@ Select the Out of Date Cumulative Update Autofix setting for the site. Available
 
 ![Screenshot 1](../../../static/img/Site---Out_of_Date_CU_Autofix/image_1.png)
 ![Screenshot 2](../../../static/img/Site---Out_of_Date_CU_Autofix/image_2.png)
+
+
+
 
 
 

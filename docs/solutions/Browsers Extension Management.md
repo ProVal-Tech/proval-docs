@@ -1,5 +1,5 @@
 ---
-id: 'rmm-browser-extensions-management'
+id: 'f6fe205d-abf5-49ac-a73d-3cc55b758f61'
 title: 'Browser Extensions Management'
 title_meta: 'Browser Extensions Management for Popular Browsers'
 keywords: ['extensions', 'browsers', 'install', 'remove', 'chrome', 'firefox', 'edge', 'brave', 'vivaldi', 'chromium']
@@ -30,6 +30,9 @@ Create the following tasks:
 - [Chromium Browsers - Extension - Remove](https://proval.itglue.com/DOC-5078775-16432584)  
 - [Mozilla Firefox - Extension - Install](https://proval.itglue.com/DOC-5078775-16432580)  
 - [Mozilla Firefox - Extension - Remove](https://proval.itglue.com/DOC-5078775-16432579)  
+
+
+
 
 
 

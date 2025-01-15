@@ -1,12 +1,12 @@
 ---
-id: 'rmm_latest-approved-patches'
+id: '927ed9c8-98d6-4efa-b22f-a516458ef19c'
 title: 'Latest Approved Patches and Their Release Date'
 title_meta: 'Latest Approved Patches and Their Release Date'
 keywords: ['patches', 'updates', 'computers', 'review', 'status']
 description: 'This document provides a detailed overview of the dataview that displays the latest approved patches along with their release dates. It outlines the criteria for filtering patches, the columns included in the dataview, and the SQL representation for querying the relevant data. It highlights the importance of reviewing computers that are overdue for updates or have encountered failed patch installations.'
 tags: ['update', 'review', 'status', 'database', 'report']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -65,6 +65,9 @@ FROM
 WHERE v_setpatches.approvalPolicyID = 6 AND v_setpatches.settime >= now() - INTERVAL 2 MONTH AND v_setpatches.approvalsetting != '4' and NOT v_setpatches.Title REGEXP '//W*(Microsoft Defender)//W*|//W*(Malicious Software Removal)//W*'
 GROUP BY computerid
 ```
+
+
+
 
 
 

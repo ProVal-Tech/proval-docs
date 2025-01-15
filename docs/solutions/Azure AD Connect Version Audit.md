@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-connect-version-audit'
+id: '9030d8fa-886a-4f26-beb3-971afa475eb2'
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'ad', 'connect', 'version', 'audit']
@@ -30,6 +30,9 @@ To provide the most information possible as to what servers have Azure AD Connec
 - Import the Procedure Azure AD Connect Version Audit
 - Import the Policy Azure AD Connect Version Audit
 - Import the Report Azure AD Connect Version Audit
+
+
+
 
 
 

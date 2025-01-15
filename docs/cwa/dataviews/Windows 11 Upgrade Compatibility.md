@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-11-compatibility-check'
+id: '36ca4c95-af9e-443b-8fe5-33e910107650'
 title: 'Windows 11 Compatibility Check'
 title_meta: 'Windows 11 Compatibility Check'
 keywords: ['windows', 'upgrade', 'compatibility', 'check', 'machine']
@@ -44,6 +44,9 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 | Compatibility Check  | Equals   | Not Capable    | Red    |
 | Compatibility Check  | Equals   | Undetermined    | Orange |
 | Compatibility Check  | Equals   | Capable        | Green  |
+
+
+
 
 
 

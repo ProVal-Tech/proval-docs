@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-internet-explorer-monitor'
+id: '1c9a68c5-62c9-4454-a6da-0a7c5fb8089d'
 title: 'Disable Internet Explorer Monitor'
 title_meta: 'Disable Internet Explorer Monitor for Online Machines'
 keywords: ['monitor', 'internet', 'explorer', 'disable', 'alert']
@@ -49,6 +49,9 @@ WHERE
   AND c.lastcontact > NOW() - Interval 15 Minute
   Group By C.Computerid
 ```
+
+
+
 
 
 

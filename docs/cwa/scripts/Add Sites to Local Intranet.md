@@ -1,5 +1,5 @@
 ---
-id: 'cwa-add-local-intranet-sites'
+id: 'df72be26-16b1-452a-b4e7-67e1bf48a86b'
 title: 'Add Local Intranet Sites'
 title_meta: 'Add Local Intranet Sites'
 keywords: ['intranet', 'windows', 'configuration', 'sites', 'local']
@@ -58,6 +58,9 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
+
+
+
 
 
 

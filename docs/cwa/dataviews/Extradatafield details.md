@@ -1,5 +1,5 @@
 ---
-id: 'cwa-extradatafields-overview'
+id: 'f6186972-e38b-4e2a-952f-b87204915278'
 title: 'Extradatafields Overview'
 title_meta: 'Extradatafields Overview'
 keywords: ['extradatafields', 'edf', 'value', 'details', 'usage']
@@ -39,6 +39,9 @@ The purpose of this Dataview is to represent all the Extradatafields details and
 | IsEditable                | Represents whether EDF is Editable or not                                                       |
 | IsRestricted              | Represents whether EDF is restricted or not                                                     |
 | (Masked/Password)         | Represents whether EDF is Masked or has a password                                              |
+
+
+
 
 
 

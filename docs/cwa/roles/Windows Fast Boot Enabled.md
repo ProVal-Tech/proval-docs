@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-fast-boot-check'
+id: '2929d042-dfa6-4721-b60d-9fd78269b942'
 title: 'Windows Fast Boot Check'
 title_meta: 'Windows Fast Boot Check'
 keywords: ['windows', 'fast-boot', 'shutdown', 'system', 'uptime']
@@ -19,6 +19,9 @@ Fast boot is a Win10 feature that puts the system into a deep sleep rather than 
 | Detection String                                        | Comparator | Result | Applicable OS |
 |--------------------------------------------------------|------------|--------|----------------|
 | {%-HKLM/SYSTEM/CurrentControlSet/Control/Session Manager/Power:HiberbootEnabled-%} | Equals     | 1      | Windows        |
+
+
+
 
 
 

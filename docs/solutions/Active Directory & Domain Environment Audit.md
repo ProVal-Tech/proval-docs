@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-monitoring-implementation'
+id: 'dd914cae-33e3-4ac2-8904-c9ef1f4814a3'
 title: 'Active Directory Monitoring Implementation'
 title_meta: 'Active Directory Monitoring Implementation'
 keywords: ['active-directory', 'monitoring', 'implementation', 'alerts', 'reports']
@@ -238,6 +238,9 @@ This article encompasses multiple components and contents. Please import and imp
    - Import the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646049) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646252) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646049) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
+
+
+
 
 
 

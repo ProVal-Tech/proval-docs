@@ -1,5 +1,5 @@
 ---
-id: 'vsa-custom-fields-update'
+id: '322cb1d2-e61e-4bee-ba33-6196639335b6'
 title: 'Custom Fields Update for Kaseya VSA'
 title_meta: 'Custom Fields Update for Kaseya VSA'
 keywords: ['custom', 'fields', 'update', 'kaseya', 'machine']
@@ -20,6 +20,9 @@ Updates machine records for Patching, AV, Monitoring, and third party fields.
 - **user**: required. username to log into the kaseya server  
 - **password**: required. password/PAT to log into the kaseya server  
 - **monfilter**: optional. group or org names to not monitor  
+
+
+
 
 
 

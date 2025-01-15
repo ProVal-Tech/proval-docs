@@ -1,5 +1,5 @@
 ---
-id: 'cwa-msp-automation-metrics'
+id: '518eca1b-77be-4a26-bdb5-01d4440cad34'
 title: 'MSP Automation Metrics'
 title_meta: 'MSP Automation Metrics for Client Environment'
 keywords: ['msp', 'metrics', 'automation', 'data', 'client']
@@ -26,6 +26,9 @@ This solution is intended to provide important MSP data relating to the clients 
 - Import the [CWM - Automate - Dataview - MSP Automation Metrics](https://proval.itglue.com/DOC-5078775-12013496) dataview.
 - Debug the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](https://proval.itglue.com/DOC-5078775-12013482) script against any client and verify the presence of data in the dataview.
 - Schedule the script to run at the 1st of each month.
+
+
+
 
 
 

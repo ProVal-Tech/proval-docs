@@ -1,5 +1,5 @@
 ---
-id: 'cwa-shared-folder-audit'
+id: 'dc9e4596-2cce-49b2-9f64-d6dfd46ac1ec'
 title: 'Shared Folder Audit Script'
 title_meta: 'Shared Folder Audit Script for Access Permissions'
 keywords: ['shared', 'folder', 'audit', 'permissions', 'access']
@@ -47,6 +47,9 @@ The script will run a PowerShell script to gather the data from the endpoint. Th
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
+
+
+
 
 
 

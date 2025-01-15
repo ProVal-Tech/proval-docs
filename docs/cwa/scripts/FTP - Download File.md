@@ -1,5 +1,5 @@
 ---
-id: 'cwa-download-file-from-ftp'
+id: '264d107c-e4be-4915-8df1-7be61f8e6f07'
 title: 'Download File from FTP Server'
 title_meta: 'Download File from FTP Server'
 keywords: ['ftp', 'download', 'file', 'script', 'automation']
@@ -43,6 +43,9 @@ Time Saved by Automation: 10-20 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

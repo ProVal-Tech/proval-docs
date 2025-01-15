@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hp-support-assistant-installation'
+id: 'f65ad1a0-8f26-40f7-8d72-0e753243c01e'
 title: 'HP Support Assistant Installation Script'
 title_meta: 'HP Support Assistant Installation Script for ConnectWise Automate'
 keywords: ['hp', 'support', 'assistant', 'installation', 'script']
@@ -33,6 +33,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

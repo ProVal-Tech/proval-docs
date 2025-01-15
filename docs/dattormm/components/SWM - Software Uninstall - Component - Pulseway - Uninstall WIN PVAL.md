@@ -1,5 +1,5 @@
 ---
-id: 'cwa-pulseway-uninstall'
+id: 'f375aa2e-d7cd-4974-a8bb-986e95bb47d7'
 title: 'Automated Uninstallation of Pulseway'
 title_meta: 'Automated Uninstallation of Pulseway'
 keywords: ['uninstallation', 'pulseway', 'cleanup', 'datto', 'rmm']
@@ -34,6 +34,9 @@ A job status of Success is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+
+
 
 
 

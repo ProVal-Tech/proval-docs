@@ -1,5 +1,5 @@
 ---
-id: 'rmm-cyrisma-sensor-deployment'
+id: 'f54508ce-319d-48dc-a178-7d3cd35cb021'
 title: 'Cyrisma Sensor Deployment and Monitoring'
 title_meta: 'Cyrisma Sensor Deployment and Monitoring'
 keywords: ['cyrisma', 'sensor', 'deployment', 'monitoring', 'audit']
@@ -30,6 +30,9 @@ Follow the below steps for the implementation:
 - Create Task [CW RMM - CRI Agent Deployment](https://proval.itglue.com/DOC-5078775-15298955)
 - Create Monitor [CW RMM - Monitor - CRI Agent Deployment Status Check](https://proval.itglue.com/DOC-5078775-15298956)  
   Follow the Monitor and Task implementation to implement the solution.
+
+
+
 
 
 

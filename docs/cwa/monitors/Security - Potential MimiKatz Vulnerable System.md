@@ -1,5 +1,5 @@
 ---
-id: 'cwa-mimikatz-threat-monitor'
+id: '1f0cc77f-4d58-4486-a99a-0c276e40b117'
 title: 'MimiKatz Threat Detection Monitor'
 title_meta: 'MimiKatz Threat Detection Monitor'
 keywords: ['mimikatz', 'threat', 'monitor', 'agent', 'detection']
@@ -20,6 +20,9 @@ This monitor detects the agent where MimiKatz potential threat detected dependen
 ## Target
 
 Windows Agent
+
+
+
 
 
 

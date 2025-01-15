@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-sessions-output'
+id: 'a5bff446-3e21-42cf-8208-d0de57f497ee'
 title: 'Windows Sessions Output Storage'
 title_meta: 'Windows Sessions Output Storage'
 keywords: ['windows', 'sessions', 'storage', 'output', 'database']
@@ -30,6 +30,9 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 | Type          | varchar(64)  | Type of the session                         |
 | Device        | varchar(64)  | Device of the Session                       |
 | ScriptRunTime | DateTime     | Data Collection time                        |
+
+
+
 
 
 

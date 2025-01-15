@@ -1,5 +1,5 @@
 ---
-id: 'vsa-chromium-extensions-audit'
+id: '7981530c-3eaa-4030-8382-4f4d812f3d01'
 title: 'Chromium Extensions Audit'
 title_meta: 'Chromium Extensions Audit'
 keywords: ['chromium', 'extensions', 'audit', 'endpoint', 'inventory']
@@ -46,6 +46,9 @@ Runs the agnostic script to collect chromium extensions installed on an endpoint
 
 Agent Procedure Log  
 Custom Field: xPVAL Chromium Extensions Installed
+
+
+
 
 
 

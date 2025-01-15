@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-user-pccomp'
+id: 'aa19f899-568a-489c-be3c-854cc4198667'
 title: 'Check User - pccomp'
 title_meta: 'Check User - pccomp'
 keywords: ['user', 'cf', 'presence', 'script', 'view']
@@ -36,6 +36,9 @@ The script checks whether the desired user is present on the machine and updates
 Moreover, a corresponding script to delete the user is also created.
 
 ## FAQ
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-determining-max-software-version-for-browsers'
+id: '432cea29-e0c2-4a8d-b728-08af9446534b'
 title: 'Determining Max Software Version for Browsers'
 title_meta: 'Determining Max Software Version for Browsers'
 keywords: ['browsers', 'chrome', 'edge', 'brave', 'opera', 'monitor', 'update']
@@ -28,6 +28,9 @@ Suggested Autofix - [CWM - Automate - Script - Chromium Browser Update](https://
 The suggested target for the monitor. This will be partially generalized as group names can vary between Automate systems. Examples:
 
 - Global - Should be run without explicitly defined targets.
+
+
+
 
 
 

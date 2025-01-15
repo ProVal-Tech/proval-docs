@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automated-internal-monitor-hp-ilo-health-report'
+id: 'a8f66140-8915-41fa-805b-64fafbf002fc'
 title: 'Automated Internal Monitor for HP iLO Health Report'
 title_meta: 'Automated Internal Monitor for HP iLO Health Report'
 keywords: ['hp', 'ilo', 'monitor', 'health', 'report', 'automation']
@@ -72,6 +72,9 @@ The alert template should run [EPM - Data Collection - Script - HP iLO - Health 
 
 The ticketing feature of the [EPM - Data Collection - Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559) script can be enabled by setting the ticket category in the monitor set.  
 ![Ticketing Feature](../../../static/img/Execute-Script---HP-iLO---Health-Report---Get/image_5.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-remove-screenconnect'
+id: 'b29e07cd-596c-427e-82b5-50d271cea679'
 title: 'Remove ScreenConnect from Endpoints'
 title_meta: 'Remove ScreenConnect from Endpoints'
 keywords: ['uninstall', 'screenconnect', 'endpoint', 'wmic', 'agent']
@@ -49,6 +49,9 @@ Remove-ScreenConnect-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

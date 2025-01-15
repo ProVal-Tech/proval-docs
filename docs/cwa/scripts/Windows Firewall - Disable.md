@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-windows-firewall'
+id: '475fcc0b-08a9-4118-9436-1bbc4a0c9f2f'
 title: 'Disable Windows Firewall for All Profiles'
 title_meta: 'Disable Windows Firewall for All Profiles'
 keywords: ['windows', 'firewall', 'disable', 'security', 'script']
@@ -23,6 +23,9 @@ The script will run if the Windows Firewall is enabled on the machine. The scrip
 ## Output
 
 - Script log
+
+
+
 
 
 

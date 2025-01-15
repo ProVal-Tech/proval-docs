@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-joined-field'
+id: 'ecddbc88-fbef-4678-b02b-2cc19b219fdc'
 title: 'Azure AD Joined Custom Field'
 title_meta: 'Azure AD Joined Custom Field'
 keywords: ['azure', 'ad', 'custom', 'field', 'machine']
@@ -23,6 +23,9 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](https://proval.itglue
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
+
+
+
 
 
 

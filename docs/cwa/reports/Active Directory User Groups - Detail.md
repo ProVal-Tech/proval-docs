@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-user-groups-detail-report'
+id: 'e76e5bf4-d80e-4a53-ab39-a116c157e008'
 title: 'Active Directory User Groups - Detail Report'
 title_meta: 'Active Directory User Groups - Detail Report'
 keywords: ['active-directory', 'report', 'users', 'groups', 'overview']
@@ -22,6 +22,9 @@ This report is dependent on the following items:
 
 [![AD User Groups - Graph Example Page](thumbnail/AD_User_Groups_-_Graph_Example_Page.png)](large/AD_User_Groups_-_Graph_Example_Page.png)
 [![AD User Groups - Group List Example Page](thumbnail/AD_User_Groups_-_Group_List_Example_Page.png)](large/AD_User_Groups_-_Group_List_Example_Page.png)
+
+
+
 
 
 

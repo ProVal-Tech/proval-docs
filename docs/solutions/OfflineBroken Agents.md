@@ -1,5 +1,5 @@
 ---
-id: 'cwa-offline-agent-remediation'
+id: 'ab580d76-42be-4b34-b38b-3a7e9336c13e'
 title: 'Offline Agent Remediation in ConnectWise Automate'
 title_meta: 'Offline Agent Remediation in ConnectWise Automate'
 keywords: ['offline', 'agent', 'remediation', 'automate', 'connectwise']
@@ -75,6 +75,9 @@ The purpose of the solution is to detect machines that have been offline in Auto
        - Configure with the alert template: `△ CUSTOM - Autofix - Offline Agent Remediation (RMM+)`
        - Set the required ticket category (To Alert on broken agents).
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

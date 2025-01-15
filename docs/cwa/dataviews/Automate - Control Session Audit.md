@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-control-sessions'
+id: '4694ab80-7dd2-4997-89d5-cf535e570705'
 title: 'Audit Control Sessions Dataview'
 title_meta: 'Audit Control Sessions Dataview'
 keywords: ['audit', 'sessions', 'control', 'tracking', 'participants']
@@ -25,6 +25,9 @@ This dataview helps you audit control sessions. It helps you track details like 
 | Disconnected Time  | Displays the time when the participant disconnected        |
 | Computer ID      | Displays the ID of the connected computer                  |
 | Duration          | Displays the duration of connection                         |
+
+
+
 
 
 

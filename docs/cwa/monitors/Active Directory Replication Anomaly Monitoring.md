@@ -1,5 +1,5 @@
 ---
-id: 'cwa-proval-production-active-directory-replication-anomaly-monitoring'
+id: 'c02b447f-36ba-4a88-b40f-a47cf08fb690'
 title: 'ProVal - Production - Active Directory Replication Anomaly Monitoring'
 title_meta: 'ProVal - Production - Active Directory Replication Anomaly Monitoring'
 keywords: ['active-directory', 'monitoring', 'replication', 'anomaly', 'sql', 'alert', 'ticket']
@@ -136,6 +136,9 @@ Validate the presence of the `ProVal - Production - Active Directory Replication
 
 ## Step 5
 Apply the relevant Alert template and Ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+
+
+
 
 
 

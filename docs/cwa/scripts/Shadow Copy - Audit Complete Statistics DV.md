@@ -1,5 +1,5 @@
 ---
-id: 'cwa-shadow-copy-data-collection'
+id: '9d69d33c-688e-4c02-adfe-cef7c8ecd766'
 title: 'Shadow Copy Data Collection Script'
 title_meta: 'Shadow Copy Data Collection Script for Windows Systems'
 keywords: ['shadowcopy', 'data', 'collection', 'windows', 'script']
@@ -49,6 +49,9 @@ The script will run the SQL statement above against the Automate server to inser
 - Script logs.
 - Custom table [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668).
 - Dataview [Dataview - Windows - Shadow Copy State [Script]](https://proval.itglue.com/DOC-5078775-8105265).
+
+
+
 
 
 

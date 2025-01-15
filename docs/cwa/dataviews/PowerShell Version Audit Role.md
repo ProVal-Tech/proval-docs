@@ -1,5 +1,5 @@
 ---
-id: 'cwa-powershell-version-collection'
+id: '9da26821-e8e6-44b4-9310-2495aebd0396'
 title: 'PowerShell Version Collection by Role'
 title_meta: 'PowerShell Version Collection by Role'
 keywords: ['powershell', 'version', 'role', 'rmm', 'agent']
@@ -26,6 +26,9 @@ This dataview collects the information of PowerShell Version based on role.
 | Operating System    | Operating System of the agent             |
 | LastContact         | Last Contact of agent with the RMM       |
 | PowerShell Version   | PowerShell Version of the agent           |
+
+
+
 
 
 

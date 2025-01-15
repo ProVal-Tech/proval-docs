@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-audit'
+id: 'd7d933e3-9668-4de9-9f44-7452198ab85a'
 title: 'Bitlocker Audit Script'
 title_meta: 'Bitlocker Audit Script for Gathering Encryption Information'
 keywords: ['bitlocker', 'encryption', 'tpm', 'audit', 'recovery']
@@ -67,6 +67,9 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 - Custom table
 - Dataview
 - Backup file under LTshare at "LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>"
+
+
+
 
 
 

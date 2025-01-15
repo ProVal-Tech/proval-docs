@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smbv1-detection-remediation'
+id: '27c68799-35d0-4034-b0b5-b8a7736288df'
 title: 'SMBv1 Enabled Detection & Remediation Dataview'
 title_meta: 'SMBv1 Enabled Detection & Remediation Dataview'
 keywords: ['smbv1', 'detection', 'remediation', 'dataview', 'agent']
@@ -29,6 +29,9 @@ This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detec
 | SMBv1 Logging             | This stores the script PowerShell execution output for logging                                 |
 | SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522) |
 | SMBv1 Vulnerability State  | This shows whether the device is vulnerable or not vulnerable based on the script output detection |
+
+
+
 
 
 

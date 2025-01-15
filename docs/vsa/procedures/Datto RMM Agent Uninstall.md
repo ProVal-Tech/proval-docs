@@ -1,5 +1,5 @@
 ---
-id: 'vsa-remove-datto-rmm'
+id: '06094f2c-6867-48d7-9a94-1d4b9ad08ec0'
 title: 'Remove Datto RMM from Mac or Windows Endpoint'
 title_meta: 'Remove Datto RMM from Mac or Windows Endpoint'
 keywords: ['datto', 'rmm', 'uninstall', 'windows', 'mac', 'endpoint']
@@ -48,6 +48,9 @@ Runs [sudo bash /Applications/AEM/ Agent.app/Contents/Resources/uninstall.sh](ht
 ## Output
 
 Agent procedure Log
+
+
+
 
 
 

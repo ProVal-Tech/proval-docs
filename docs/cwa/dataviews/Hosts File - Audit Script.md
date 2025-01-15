@@ -1,5 +1,5 @@
 ---
-id: 'cwa-host-file-audit'
+id: 'cfa8fd80-7dc0-4d6b-9861-0467d7e4af94'
 title: 'Host File Audit Dataview'
 title_meta: 'Host File Audit Dataview'
 keywords: ['audit', 'hostfile', 'uncommented', 'rmm', 'windows']
@@ -29,6 +29,9 @@ The purpose of this dataview is to show the Uncommented comment of the Host file
 | Last Contact              | Last Contact with RMM                         |
 | Days Since Last Contact   | Days Since Last Contact with RMM              |
 | Last Logged In User       | Last Logged In User                           |
+
+
+
 
 
 

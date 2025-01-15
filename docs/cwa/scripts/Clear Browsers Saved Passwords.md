@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-saved-passwords'
+id: '35167ba2-2d75-496c-99f0-facc98a07fbb'
 title: 'Remove Saved Passwords from Browsers'
 title_meta: 'Remove Saved Passwords from Browsers - A Comprehensive Guide'
 keywords: ['browsers', 'passwords', 'chrome', 'edge', 'brave', 'firefox', 'security']
@@ -31,6 +31,9 @@ Run with a parameter set to 1, to wipe out the Microsoft Edge Wallet passwords a
 ## Output
 
 - Script Log
+
+
+
 
 
 

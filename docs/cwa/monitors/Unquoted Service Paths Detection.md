@@ -1,5 +1,5 @@
 ---
-id: 'cwa-unquoted-service-paths-detection'
+id: 'ab811d99-365c-4ad7-84dd-3ff8575d5b15'
 title: 'Unquoted Service Paths Detection'
 title_meta: 'Unquoted Service Paths Detection'
 keywords: ['service', 'path', 'windows', 'monitor', 'autofix']
@@ -15,6 +15,9 @@ The monitor set will identify any service that has a space in the path but is no
 ## Target
 
 Windows Machines: The SQL used in the monitor set is limiting it to the Windows Machines only.
+
+
+
 
 
 

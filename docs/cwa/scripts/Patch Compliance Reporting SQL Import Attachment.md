@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patchcompliance-reports'
+id: 'd031272f-71dd-46c3-af06-327cac5c648a'
 title: 'Patch Compliance Reports Import Guide'
 title_meta: 'Patch Compliance Reports Import Guide'
 keywords: ['patch', 'compliance', 'reports', 'sql', 'import']
@@ -19,6 +19,9 @@ Import the file using **System** → **General** → **Import** → **SQL File**
 ![Image](../../../static/img/Patch-Compliance-Reporting-SQL-Import-Attachment/image_1.png)
 
 **Note:** Import the SQL file only after importing the [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696) and running it once.
+
+
+
 
 
 

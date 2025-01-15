@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hyperv-vm-audit'
+id: 'a86e30e2-ac59-4c00-957a-f49575ff6027'
 title: 'Hyper-V Virtual Machine Audit'
 title_meta: 'Hyper-V Virtual Machine Audit Information'
 keywords: ['hyper-v', 'audit', 'virtual', 'machine', 'information']
@@ -30,6 +30,9 @@ This dataview displays auditing information about Hyper-V virtual machines.
 | Automatic Start Action     | Display the status of the automatic start action of the Virtual machine. |
 | Automatic Stop Action      | Display the status of the automatic stop action of the Virtual machine.  |
 | Automatic Start Delay      | Display the automatic start delay time of the Virtual machine.    |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-child-of-solution'
+id: '7a09c023-231a-4574-a367-ef8009537e23'
 title: 'Child of Solution'
 title_meta: 'Child of Solution - Data Collection for Unifi Controller'
 keywords: ['unifi', 'data', 'collection', 'automate', 'script']
@@ -105,6 +105,9 @@ Describe the steps the script performs to accomplish the desired task. Note that
 ## Output
 
 - Script log
+
+
+
 
 
 

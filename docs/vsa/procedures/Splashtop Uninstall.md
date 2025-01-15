@@ -1,5 +1,5 @@
 ---
-id: 'vsa-remove-splashtop'
+id: '39a825db-06ff-4ac3-9dce-30b6f72f3eb0'
 title: 'Remove Splashtop'
 title_meta: 'Remove Splashtop'
 keywords: ['uninstall', 'splashtop', 'wmi', 'agent', 'procedure']
@@ -48,6 +48,9 @@ Agent Procedure Log, Remove-Splashtop-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

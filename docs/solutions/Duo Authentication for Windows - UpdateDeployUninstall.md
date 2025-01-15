@@ -1,5 +1,5 @@
 ---
-id: 'cwa-duo-install-update-solution'
+id: '34f77d1b-342e-49bd-bc31-39894850c7c1'
 title: 'DUO Install and Update Solution'
 title_meta: 'DUO Install and Update Solution for Consistent Application Management'
 keywords: ['duo', 'update', 'install', 'monitor', 'automation']
@@ -75,6 +75,9 @@ Configure the solution as outlined below:
     - Make Sure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) bonded to it.
     - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

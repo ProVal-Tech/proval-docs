@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-metrics-overview'
+id: '7cf32e9b-c86b-4a97-ba5a-f97139cddf0e'
 title: 'Patching Metrics Overview for Windows Computers'
 title_meta: 'Patching Metrics Overview for Windows Computers'
 keywords: ['patching', 'windows', 'statistics', 'approval', 'metrics']
@@ -58,6 +58,9 @@ The approval age is divided into five categories:
 ## Sample Screenshot
 
 [![Sample Screenshot](thumbnail/2023-01-21_00_44_23-Patching_Metrics_Overview_-_Computer_Filter_Data_Summary.png)](large/2023-01-21_00_44_23-Patching_Metrics_Overview_-_Computer_Filter_Data_Summary.png)
+
+
+
 
 
 

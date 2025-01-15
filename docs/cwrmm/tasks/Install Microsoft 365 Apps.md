@@ -1,5 +1,5 @@
 ---
-id: 'rmm-install-microsoft-365-apps'
+id: 'b96a76bc-3659-4c6c-b66b-6ae465252c61'
 title: 'Install Microsoft 365 Apps'
 title_meta: 'Install Microsoft 365 Apps for Business with XML Configuration'
 keywords: ['microsoft', '365', 'install', 'xml', 'configuration']
@@ -177,6 +177,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

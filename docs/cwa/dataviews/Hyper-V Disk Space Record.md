@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hyper-v-disk-report'
+id: 'cc5a2747-6286-4783-b3f6-862aaa19a1c1'
 title: 'Hyper-V Disk Report'
 title_meta: 'Hyper-V Disk Report'
 keywords: ['hyper-v', 'disk', 'report', 'client', 'location', 'computer', 'os', 'lastcontact', 'volume', 'size', 'filesystem', 'model', 'status', 'internal', 'ssd']
@@ -34,6 +34,9 @@ This dataview shows the report of the Hyper-Vs disk record from the custom table
 | Missing          | Drive status whether detected in Automate or not        |
 | Internal         | Drive check whether internal or external/removable      |
 | SSD              | Disk check whether SSD or not                           |
+
+
+
 
 
 

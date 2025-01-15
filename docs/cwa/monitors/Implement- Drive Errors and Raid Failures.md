@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-creation-computer-failures-only'
+id: '4b69a692-f9b1-4df7-b802-0dc265fd32da'
 title: 'Ticket Creation for Computer Failures Only'
 title_meta: 'Ticket Creation for Computer Failures Only'
 keywords: ['ticket', 'creation', 'computer', 'failures', 'monitor', 'alert', 'sql']
@@ -264,6 +264,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ## Step 8
 Set the appropriate alert template.
+
+
+
 
 
 

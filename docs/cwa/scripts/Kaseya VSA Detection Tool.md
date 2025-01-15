@@ -1,5 +1,5 @@
 ---
-id: 'cwa-vulnerability-scan'
+id: '765eb6aa-cc3a-471e-b11e-d7d8e1972e11'
 title: 'VSA Vulnerability Scan Script'
 title_meta: 'VSA Vulnerability Scan Script'
 keywords: ['vulnerability', 'scan', 'vsa', 'server', 'audit']
@@ -38,6 +38,9 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
+
+
 
 
 

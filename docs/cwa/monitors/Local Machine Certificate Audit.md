@@ -1,5 +1,5 @@
 ---
-id: 'ps-internal-monitor-windows-certificates-audit'
+id: '48737f29-accd-41ac-a35d-047d7e266e6f'
 title: 'Internal Monitor for Windows Certificates Audit'
 title_meta: 'Internal Monitor for Windows Certificates Audit'
 keywords: ['monitor', 'windows', 'certificates', 'audit', 'servers']
@@ -31,6 +31,9 @@ The internal monitor should be explicitly limited to the following groups:
 ## Alert Template
 
 **Name:**  △ Custom - Local Machine Certificate Audit
+
+
+
 
 
 

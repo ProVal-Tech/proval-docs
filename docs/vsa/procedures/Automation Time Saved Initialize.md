@@ -1,5 +1,5 @@
 ---
-id: 'vsa-sets-both-cfs-to-0'
+id: '813b9d8d-8c30-4595-a700-740fd65b3942'
 title: 'Sets Both CFs to 0'
 title_meta: 'Sets Both CFs to 0'
 keywords: ['customfields', 'automation', 'database', 'implementation', 'tracking']
@@ -30,6 +30,9 @@ Sets both CFs to 0. This is for ease of implementation, as empty Custom Fields c
 ## Output
 
 Custom Fields
+
+
+
 
 
 

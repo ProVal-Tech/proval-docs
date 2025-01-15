@@ -1,5 +1,5 @@
 ---
-id: 'rmm-autofix-endpoint-settings'
+id: 'a9e84f5a-0afa-44ef-98b7-c5a70f6a25ea'
 title: 'Autofix Endpoint Settings'
 title_meta: 'Autofix Endpoint Settings - Configure and Manage'
 keywords: ['autofix', 'endpoint', 'settings', 'dropdown', 'enable', 'disable']
@@ -29,6 +29,9 @@ Use the dropdown menu to enable or disable the autofix on the endpoint. This set
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_2.png)  
+
+
+
 
 
 

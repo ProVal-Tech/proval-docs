@@ -1,5 +1,5 @@
 ---
-id: 'vsa-repair-office-click2run-update'
+id: 'c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c'
 title: 'Repair Office Click2Run Automatic Update'
 title_meta: 'Repair Office Click2Run Automatic Update'
 keywords: ['office', 'update', 'repair', 'automatic', 'click2run']
@@ -40,6 +40,9 @@ Repairs the Office Click2Run Automatic Update process on an endpoint, using the 
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-rawsql-monitor'
+id: '53e47a1a-7a3d-42f4-8837-4419827f322c'
 title: 'Custom RAWSQL Monitor for User Privileges'
 title_meta: 'Custom RAWSQL Monitor for User Privileges'
 keywords: ['custom', 'rawsql', 'monitor', 'privileges', 'database']
@@ -22,6 +22,9 @@ This custom RAWSQL monitor will check for the custom table privileges for a user
 ## Target
 
 Global
+
+
+
 
 
 

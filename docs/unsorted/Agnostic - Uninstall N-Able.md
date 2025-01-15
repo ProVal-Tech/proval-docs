@@ -1,12 +1,12 @@
 ---
-id: 'n-able-uninstallation'
+id: '929401cd-6977-4389-97fe-29e544dc6b9b'
 title: 'Uninstalling N-Able (Windows Agent)'
 title_meta: 'Uninstalling N-Able (Windows Agent)'
 keywords: ['nable', 'uninstallation', 'windows', 'agent', 'removal']
 description: 'This document provides a comprehensive guide on how to uninstall the N-Able Windows Agent using a PowerShell script. It details the requirements, process, and expected output files for successful uninstallation.'
 tags: ['uninstallation', 'windows', 'software', 'report']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -35,6 +35,9 @@ Uninstall N-Able
 ./Uninstall-N-Able-log.txt
 ./Uninstall-N-Able-error.txt
 ```
+
+
+
 
 
 

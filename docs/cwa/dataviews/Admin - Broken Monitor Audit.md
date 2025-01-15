@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-audit'
+id: 'f1a8a745-3c9f-4505-b17e-778e3399d7aa'
 title: 'Internal Monitor Audit'
 title_meta: 'Internal Monitor Audit'
 keywords: ['audit', 'monitor', 'group', 'sql', 'alert']
@@ -23,6 +23,9 @@ The dataview helps to audit the internal monitors where their group mapping is b
 | Group Applied | Displays the group name on which the monitor is applied. |
 | Notes        | Displays the Notes mentioned about the group.      |
 | AlertAction  | Displays the ID of the applied alert template.     |
+
+
+
 
 
 

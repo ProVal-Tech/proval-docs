@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-offline-files'
+id: 'e6b2deb3-b9d1-4881-9c1b-192eced5ded7'
 title: 'Detect Offline Files in Windows'
 title_meta: 'Detect Offline Files in Windows'
 keywords: ['offline', 'files', 'windows', 'detection']
@@ -17,6 +17,9 @@ This role will detect if offline files are enabled in Windows.
 | Detection String                                                                                       | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|--------|---------------|
 | {%@powershell.exe "Get-WmiObject -Class win32_OfflineFilesCache -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled"@%} | Equals     | True   | Windows       |
+
+
+
 
 
 

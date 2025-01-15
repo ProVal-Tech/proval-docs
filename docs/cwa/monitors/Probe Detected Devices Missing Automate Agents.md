@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-device-readiness'
+id: '02f3c288-d5e4-4b45-9020-e47f41a254af'
 title: 'Monitor Device Readiness for Automate Agent Deployment'
 title_meta: 'Monitor Device Readiness for Automate Agent Deployment'
 keywords: ['device', 'monitor', 'automate', 'agent', 'deployment', 'readiness', 'network', 'probe']
@@ -51,6 +51,9 @@ Global
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
+
+
 
 
 

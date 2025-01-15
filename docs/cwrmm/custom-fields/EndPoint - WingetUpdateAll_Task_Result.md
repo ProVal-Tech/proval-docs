@@ -1,5 +1,5 @@
 ---
-id: 'rmm-scheduled-task-winget-update-all-result'
+id: 'a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f'
 title: 'Scheduled Task Winget Update All Result'
 title_meta: 'Scheduled Task Winget Update All Result'
 keywords: ['winget', 'task', 'result', 'scheduled', 'update']
@@ -30,6 +30,9 @@ Possible values:
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_1.png)
 
 ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_2.png)
+
+
+
 
 
 

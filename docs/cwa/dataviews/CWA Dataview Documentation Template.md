@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-summary-and-dependencies'
+id: '30298aaf-ef66-4fd2-b5af-25f138e55b71'
 title: 'Dataview Summary and Dependencies'
 title_meta: 'Dataview Summary and Dependencies Overview'
 keywords: ['dataview', 'dependencies', 'columns', 'itglue', 'documentation']
@@ -26,6 +26,9 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 | Column                                        | Description                                   |
 |-----------------------------------------------|-----------------------------------------------|
 | The display name of the column in the dataview. | Information about what this column is displaying. |
+
+
+
 
 
 

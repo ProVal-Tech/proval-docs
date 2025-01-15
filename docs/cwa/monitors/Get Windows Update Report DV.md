@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-report-monitor'
+id: 'fa9b4535-5711-4cde-ac58-cb9759dbd65a'
 title: 'Windows Update Report Monitor Set'
 title_meta: 'Windows Update Report Monitor Set'
 keywords: ['monitor', 'windows', 'update', 'report', 'patching']
@@ -22,6 +22,9 @@ Alert Template: ~Fetch Windows Update Report
 ## Target
 
 Limited to the Windows Machines with Managed Patch Policy via SQL query.
+
+
+
 
 
 

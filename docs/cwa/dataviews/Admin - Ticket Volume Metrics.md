@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-metrics-calculation'
+id: 'c5f66e4b-17d7-4ccb-bc27-d992e6031650'
 title: 'Ticket Metrics Calculation in ConnectWise Automate'
 title_meta: 'Ticket Metrics Calculation in ConnectWise Automate'
 keywords: ['metrics', 'tickets', 'calculation', 'database', 'automate']
@@ -32,6 +32,9 @@ Automate must generate tickets.
 ## Example
 
 ![Example Image](../../../static/img/Admin---Ticket-Volume-Metrics/image_1.png)
+
+
+
 
 
 

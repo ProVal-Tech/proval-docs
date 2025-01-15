@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-numa-resources'
+id: '75173959-6166-4520-838a-f960ab0070ea'
 title: 'Check NUMA Resource Limits on Hyper-V Machines'
 title_meta: 'Check NUMA Resource Limits on Hyper-V Machines'
 keywords: ['numa', 'hyper-v', 'resources', 'limits', 'performance']
@@ -30,6 +30,9 @@ The script runs a Powershell script to get the NumaStatus. The Powershell then h
 ## Output
 
 - Script state
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-printer-driver-inventory'
+id: '21b8a07c-6756-415e-93c0-97e7eca8dbae'
 title: 'Printer Driver Inventory Storage'
 title_meta: 'Printer Driver Inventory Storage for ConnectWise Automate'
 keywords: ['printer', 'inventory', 'data', 'driver', 'connectwise']
@@ -41,6 +41,9 @@ To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inv
 | InfPath            | varchar(256)  | Physical path to the Driver's inf file                     |
 | DriverVersion      | varchar(32)   | Driver Version                                            |
 | ScriptRunTime      | varchar(25)   | Script Run Time                                           |
+
+
+
 
 
 

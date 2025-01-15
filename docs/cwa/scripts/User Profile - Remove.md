@@ -1,5 +1,5 @@
 ---
-id: 'cwa-delete-user-profile'
+id: '765d906e-33c3-4615-9cd6-9c01a9eeaebb'
 title: 'Delete User Profile and Account'
 title_meta: 'Delete User Profile and Account - Destructive Script'
 keywords: ['user', 'profile', 'delete', 'account', 'local']
@@ -35,6 +35,9 @@ See [EPM - Accounts - Agnostic - Remove-UserProfile](https://proval.itglue.com/D
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

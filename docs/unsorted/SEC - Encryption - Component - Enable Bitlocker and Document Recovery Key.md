@@ -1,12 +1,12 @@
 ---
-id: 'ps-enable-bitlocker'
+id: 'c402434e-1d52-49aa-a797-99b0d2b41f1a'
 title: 'Enable BitLocker on Endpoint'
 title_meta: 'Enable BitLocker on Endpoint'
 keywords: ['bitlocker', 'encryption', 'recovery', 'endpoint', 'security']
 description: 'This document provides a guide on enabling BitLocker on endpoints, including saving the recovery key and BitLocker status to User Defined Fields (UDF) in Datto RMM. It outlines the implementation steps required to import the component and modify UDF parameters for proper configuration.'
 tags: ['encryption', 'security', 'configuration', 'recovery', 'datto']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -21,6 +21,9 @@ Enables BitLocker on the endpoint and saves the recovery key and bitlocker statu
 
 - stdOut
 - stdErr
+
+
+
 
 
 

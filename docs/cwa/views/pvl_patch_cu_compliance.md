@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-cu-compliance-metrics'
+id: '8a713392-a671-4af3-8cbe-ff04199e2f3b'
 title: 'Patching and CU Compliance Metrics'
 title_meta: 'Patching and CU Compliance Metrics'
 keywords: ['patching', 'compliance', 'windows', 'cumulative', 'update', 'metrics']
@@ -50,6 +50,9 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 | Compliant Clients - CU                   | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                                                                                                                     |
 | Non-Compliant Clients - CU               | Total number of individual clients where `CU Score %` is less than 75.                                                                                                                                                    |
 | Compliant Clients - CU %                 | Percentage of the compliant client based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                          |
+
+
+
 
 
 

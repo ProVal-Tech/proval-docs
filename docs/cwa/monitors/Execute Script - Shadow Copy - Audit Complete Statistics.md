@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-rawsql-monitor-shadow-copy-audit'
+id: 'ef826863-c354-4a97-9ba8-8ad2a3c65e40'
 title: 'Custom RAWSQL Monitor for Shadow Copy Audit'
 title_meta: 'Custom RAWSQL Monitor for Shadow Copy Audit'
 keywords: ['monitor', 'shadow', 'copy', 'audit', 'statistics', 'custom', 'rawsql', 'windows']
@@ -19,6 +19,9 @@ This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Au
 ## Target
 
 Windows Group
+
+
+
 
 
 

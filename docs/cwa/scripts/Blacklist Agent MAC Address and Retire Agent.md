@@ -1,5 +1,5 @@
 ---
-id: 'cwa-blacklist-agent-mac-address'
+id: '66f60e72-55f5-4c49-938c-8ae4a4cf55b0'
 title: 'Blacklist Agent MAC Address and Retire Agent'
 title_meta: 'Blacklist Agent MAC Address and Retire Agent in ConnectWise Automate'
 keywords: ['blacklist', 'mac', 'agent', 'retire', 'automate']
@@ -49,6 +49,9 @@ Once the MAC Address has been added to the blacklist, the script will move the a
 
 - Script Log messages
 - Agent MAC Address Blacklist
+
+
+
 
 
 

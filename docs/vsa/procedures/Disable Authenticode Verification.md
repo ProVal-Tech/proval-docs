@@ -1,5 +1,5 @@
 ---
-id: 'ps-disable-authenticode-verification'
+id: 'c2cf8ecb-a36e-4180-8503-e3be4d03f9c5'
 title: 'Disable Authenticode Verification on Windows Machines'
 title_meta: 'Disable Authenticode Verification on Windows Machines'
 keywords: ['authenticode', 'windows', 'verification', 'disable', 'reboot']
@@ -42,6 +42,9 @@ This script is used to Disable the Authenticode Verification on the Windows mach
 ## Output
 
 Agent procedure log.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-redirection-registry-settings'
+id: '85f4745d-0f15-425d-a6a0-d11bc27ce0f7'
 title: 'Redirection Registry Settings Overview'
 title_meta: 'Redirection Registry Settings Overview'
 keywords: ['redirection', 'registry', 'settings', 'audit', 'gpo']
@@ -64,6 +64,9 @@ LEFT JOIN computers c ON (c.ComputerID = GRA.ComputerID)
 LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)  
 LEFT JOIN locations l ON (l.LocationID = c.LocationID)
 ```
+
+
+
 
 
 

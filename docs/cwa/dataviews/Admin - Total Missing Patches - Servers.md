@@ -1,5 +1,5 @@
 ---
-id: 'cwa-missing-patches-report'
+id: '1072321a-dd60-4eb8-b212-f626a3f51eed'
 title: 'Missing Patches Report for Servers'
 title_meta: 'Missing Patches Report for Servers'
 keywords: ['patches', 'servers', 'report', 'automate', 'missing']
@@ -22,6 +22,9 @@ This dataview shows the number of missing patches for each server patching throu
 | OS              | Displays the operation system of the machine     |
 | AgentType       | Displays the agent type                          |
 | MissingPatches  | Displays the number of missing patches on the machine |
+
+
+
 
 
 

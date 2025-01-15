@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-update-monitor'
+id: '4a1b21f7-1b25-4640-9405-8c07277c54f0'
 title: 'Windows Update Monitor for CWM Automate'
 title_meta: 'Windows Update Monitor for CWM Automate'
 keywords: ['monitor', 'windows', 'update', 'report', 'ticket']
@@ -104,6 +104,9 @@ WHERE
     'Yes'
   ) <> 'Yes'
 ```
+
+
+
 
 
 

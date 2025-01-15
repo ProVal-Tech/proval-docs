@@ -1,5 +1,5 @@
 ---
-id: 'rmm-update-channel-office'
+id: '371c0aa5-4230-4952-b341-f5c58b0b46ad'
 title: 'Update Channel of Office Installed on Machine'
 title_meta: 'Update Channel of Office Installed on Machine'
 keywords: ['office', 'update', 'channel', 'microsoft', 'click-to-run']
@@ -22,6 +22,9 @@ Update Channel of the office installed on the machine gathered by the [Microsoft
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Update-Channel/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Update-Channel/image_2.png)
+
+
+
 
 
 

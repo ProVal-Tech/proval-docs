@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-xbox-packages'
+id: '244750a4-5402-42e9-8436-641adbd91f8c'
 title: 'Remove Xbox Packages from System'
 title_meta: 'Remove Xbox Packages from System'
 keywords: ['xbox', 'packages', 'removal', 'script', 'system']
@@ -26,6 +26,9 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

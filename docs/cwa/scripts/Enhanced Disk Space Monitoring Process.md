@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-disk-internal-monitor-autofix'
+id: '8efd9cc2-b054-4dda-a690-bbe1d4bd16b3'
 title: 'EPM Disk Internal Monitor Autofix Script'
 title_meta: 'EPM Disk Internal Monitor Autofix Script'
 keywords: ['disk', 'monitor', 'autofix', 'cleanup', 'ticket', 'threshold']
@@ -172,6 +172,9 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
 
 ![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
+
+
+
 
 
 

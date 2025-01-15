@@ -1,5 +1,5 @@
 ---
-id: 'rmm-dns-aging-and-scavenging-configuration'
+id: '34f898bc-50ac-4808-bf0c-46286eb27e60'
 title: 'DNS - Aging and Scavenging - Configure Intervals'
 title_meta: 'DNS - Aging and Scavenging - Configure Intervals'
 keywords: ['dns', 'scavenging', 'intervals', 'configuration', 'automation']
@@ -171,6 +171,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
+
 
 
 

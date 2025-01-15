@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gather-kbids-deny-patches'
+id: '3e12ac9e-d141-4011-8ae3-bd0cebe53fc6'
 title: 'Gather KBIDs and Deny Patches'
 title_meta: 'Gather KBIDs and Deny Patches'
 keywords: ['kbids', 'patches', 'deny', 'automation', 'approval', 'hotfix']
@@ -41,6 +41,9 @@ Step 4: The script will fetch the hotfix ID for each KBID and will deny those ho
 ## Output
 
 Output can be checked from the Approval section of the patch manager.
+
+
+
 
 
 

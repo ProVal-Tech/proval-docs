@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-lastloggedonuser'
+id: 'd8fcfe10-81c9-42d9-b56b-a4021601f842'
 title: 'Set Last Logged On User Implementation'
 title_meta: 'Set Last Logged On User Implementation for ConnectWise Automate'
 keywords: ['automate', 'windows', 'login', 'user', 'management']
@@ -54,6 +54,9 @@ This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser]
 ## Output
 
 - Script log
+
+
+
 
 
 

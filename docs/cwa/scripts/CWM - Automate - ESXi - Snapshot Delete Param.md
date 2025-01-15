@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-esxi-snapshot'
+id: '830beb63-113a-406e-aef2-046403de9cb9'
 title: 'Remove ESXi Snapshot Script'
 title_meta: 'Remove ESXi Snapshot Script'
 keywords: ['esxi', 'snapshot', 'delete', 'virtualmachine', 'automation']
@@ -87,6 +87,9 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate Failed to delete the Snapshot @SnapShotName@ from the Virtual machine @VMName@. Please review manually.
 PowerShell script Result: @psout@
 ```
+
+
+
 
 
 

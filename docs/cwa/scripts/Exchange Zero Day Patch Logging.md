@@ -1,5 +1,5 @@
 ---
-id: 'cwa-exchange-zero-day-vulnerability-check'
+id: '2cc1d72d-5d5b-4017-8114-ad5f722b10f5'
 title: 'Exchange Zero Day Vulnerability Detection Script'
 title_meta: 'Exchange Zero Day Vulnerability Detection Script'
 keywords: ['exchange', 'vulnerability', 'cve', 'patch', 'ticketing']
@@ -58,6 +58,9 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVE-
 
 - Script log
 - Ticketing if enabled in Globals
+
+
+
 
 
 

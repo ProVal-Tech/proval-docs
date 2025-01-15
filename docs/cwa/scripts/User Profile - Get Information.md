@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-userprofiles'
+id: '91d80bf6-68c8-4025-b285-d07390b860c8'
 title: 'Get User Profiles'
 title_meta: 'Get User Profiles - Gather Information About User Profiles'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
@@ -38,6 +38,9 @@ Gathers information about user profiles. Data is stored into the custom table [p
 - Script log
 - Local file on computer
 - Dataview
+
+
+
 
 
 

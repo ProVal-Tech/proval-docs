@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-inactive-devices'
+id: '7668ab71-a969-42d2-bf54-6b3cc21e8cda'
 title: 'Remove Inactive Network Devices'
 title_meta: 'Remove Inactive Network Devices - Autofix Script'
 keywords: ['network', 'devices', 'inactive', 'sql', 'autofix']
@@ -26,6 +26,9 @@ The script runs a SQL query to delete network devices that have not been online 
 ## Output
 
 - Script log
+
+
+
 
 
 

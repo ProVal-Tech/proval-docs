@@ -1,5 +1,5 @@
 ---
-id: 'cwa-fetch-latest-installed-cu'
+id: 'bd99d6b2-2d31-4611-9682-3c8518c53998'
 title: 'Fetch Latest Installed Cumulative Update'
 title_meta: 'Fetch Latest Installed Cumulative Update'
 keywords: ['cumulative', 'update', 'windows', 'installed', 'build']
@@ -37,6 +37,9 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 
 - Custom Table
 - Dataview
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-server-dataview'
+id: '099fdbf2-75c5-4c33-958c-9760e51539d4'
 title: 'Windows Server Dataview with DNS Information'
 title_meta: 'Windows Server Dataview with DNS Information'
 keywords: ['windows', 'server', 'dns', 'environment', 'information']
@@ -22,6 +22,9 @@ This dataview displays the information for all the Windows servers present in th
 | DNS_Settings       | DNS Addresses.                     |
 | Operating_System    | OS information of the server.      |
 | Last Contact       | Last Contact with RMM.             |
+
+
+
 
 
 

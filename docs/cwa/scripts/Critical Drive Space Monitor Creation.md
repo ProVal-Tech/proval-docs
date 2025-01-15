@@ -1,5 +1,5 @@
 ---
-id: 'cwa-critical-drive-space-monitoring'
+id: '80abd1fa-a278-4e08-a6aa-0dc8840ad103'
 title: 'Critical Drive Space Monitoring for Windows Machines'
 title_meta: 'Critical Drive Space Monitoring for Windows Machines'
 keywords: ['remote', 'monitor', 'drive', 'space', 'windows', 'critical']
@@ -218,6 +218,9 @@ This document outlines the process for creating Remote Monitors for Critical Dri
 42. Navigate to the 'Scheduled Scripts' section from the 'Computers' tab and verify that the duplicated script (`Agent Maintenance - Contract [Modified]*`) is appearing here.  
     ![Image](../../../static/img/Critical-Drive-Space-Monitor-Creation/image_80.png)
 43. For each group identified in the screenshot from Step 33, navigate to the 'Scheduled Scripts' section from the 'Computers' tab and verify that the duplicated script (`Agent Maintenance - Contract [Modified]*`) is appearing. Repeat this process for all relevant groups.
+
+
+
 
 
 

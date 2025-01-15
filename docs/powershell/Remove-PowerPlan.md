@@ -39,3 +39,6 @@ Removes the `Balanced` Power Plan from the computer.
     .\Remove-PowerPlan-log.txt
     .\Remove-PowerPlan-Error.txt
 
+
+
+

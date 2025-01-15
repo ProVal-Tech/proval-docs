@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpupdate-force-script'
+id: '3957a669-2951-43ed-bdaf-1c25cf88ff14'
 title: 'Run GPUpdate /Force on Windows Machine'
 title_meta: 'Run GPUpdate /Force on Windows Machine'
 keywords: ['gpupdate', 'windows', 'script', 'update', 'force']
@@ -25,6 +25,9 @@ This script runs `gpupdate /force` on the target Windows machine.
 ## Output
 
 - Script log
+
+
+
 
 
 

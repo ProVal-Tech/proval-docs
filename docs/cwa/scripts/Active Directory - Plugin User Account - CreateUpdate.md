@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-update-domain-admin-account'
+id: 'ea1aca74-77ee-4387-91f2-57adb5822737'
 title: 'Create/Update Domain Admin Account for AD Plugin'
 title_meta: 'Create/Update Domain Admin Account for AD Plugin'
 keywords: ['domain', 'admin', 'account', 'active', 'directory', 'plugin']
@@ -128,6 +128,9 @@ Intended Target: Domain Controllers detected in `Active Directory Domains` plugi
 ## Output
 
 - Script Logs
+
+
+
 
 
 

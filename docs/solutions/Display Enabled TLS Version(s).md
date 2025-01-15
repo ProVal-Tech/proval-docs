@@ -1,5 +1,5 @@
 ---
-id: 'cwa-tls-version-check'
+id: '9e4ece73-9d18-410d-9df9-6a9ebf4389c4'
 title: 'TLS Version Check for Managed Windows Computers'
 title_meta: 'TLS Version Check for Managed Windows Computers'
 keywords: ['tls', 'windows', 'monitor', 'security', 'configuration']
@@ -27,6 +27,9 @@ The purpose of the solution is to display the Enabled Client and Server (if appl
 - Import both remote monitors to the applicable groups. (Follow the private articles linked to the remote monitor's documents).
 - Import the dataview.
 - Do group Refresh or wait for 30 minutes and ensure that the dataview starts displaying the expected data.
+
+
+
 
 
 

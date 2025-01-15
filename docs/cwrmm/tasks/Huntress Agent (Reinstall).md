@@ -1,5 +1,5 @@
 ---
-id: 'ps-huntress-agent-reinstall'
+id: 'cdcd950b-9843-4fed-bea8-7a4092c7eadc'
 title: 'Huntress Agent Reinstallation'
 title_meta: 'Huntress Agent Reinstallation'
 keywords: ['huntress', 'agent', 'reinstall', 'script', 'powershell']
@@ -241,6 +241,9 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
+
+
 
 
 

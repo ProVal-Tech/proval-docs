@@ -1,5 +1,5 @@
 ---
-id: 'rmm-duo-auth-windows-login-deployment'
+id: 'c598c18f-25a9-43fd-a7b6-86e8f186c38b'
 title: 'DUO Auth for Windows Login Deployment'
 title_meta: 'DUO Auth for Windows Login Deployment'
 keywords: ['duo', 'deployment', 'windows', 'group', 'authentication']
@@ -62,6 +62,9 @@ This group adds the member where the DUO Deployment is enabled. The agent gets a
    - Set `Failed` in the comparison condition.  
    ![Step 8](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_10.png)  
    **Condition:** `Duo Deployment Result` `Does Not Contain any of` `Failed`
+
+
+
 
 
 

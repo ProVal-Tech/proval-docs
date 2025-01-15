@@ -1,5 +1,5 @@
 ---
-id: 'cwa-offboarding-agent-removal'
+id: '712b2067-1340-4be0-bf62-54283f15d319'
 title: 'Offboarding Agent Removal Script'
 title_meta: 'Offboarding Agent Removal Script for ConnectWise Automate'
 keywords: ['offboarding', 'agent', 'removal', 'script', 'connectwise']
@@ -47,6 +47,9 @@ Ticketing is optional.
 
 Script Log  
 Ticketing on failure if enabled.
+
+
+
 
 
 

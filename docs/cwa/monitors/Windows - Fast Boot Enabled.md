@@ -1,5 +1,5 @@
 ---
-id: 'cwa-fast-boot-monitor'
+id: '0598c4eb-e1c8-4b3a-8e49-7f654622f459'
 title: 'Windows Fast Boot Monitor'
 title_meta: 'Windows Fast Boot Monitor'
 keywords: ['monitor', 'fast', 'boot', 'windows', 'disable']
@@ -19,6 +19,9 @@ Using a role definition this monitor detects machines where windows fast boot is
 ## Target
 
 Workstations - Should be run on non-servers.
+
+
+
 
 
 

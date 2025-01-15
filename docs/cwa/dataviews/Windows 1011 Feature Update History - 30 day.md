@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-upgrade-report'
+id: '1983e46a-da70-4f9a-88f5-1ab908d46893'
 title: 'Windows Upgrade Report for Workstations'
 title_meta: 'Windows Upgrade Report for Workstations - Recent Upgrades Overview'
 keywords: ['windows', 'upgrade', 'report', 'workstation', 'version', 'build']
@@ -24,6 +24,9 @@ The dataview displays the Windows workstations that got upgraded to the new Win1
 | Old OS Version    | Displays OS version before upgrade.              |
 | New OS Version    | Displays OS version after the upgrade.           |
 | Build Version     | Displays the new build versions such as 22H2, 22H3, etc. |
+
+
+
 
 
 

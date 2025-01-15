@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dell-hardware-monitoring-setup'
+id: '2be5ccc9-2700-4f5d-9b77-30567de4cfdf'
 title: 'Dell Hardware Monitoring Setup'
 title_meta: 'Dell Hardware Monitoring Setup'
 keywords: ['dell', 'monitoring', 'alert', 'sql', 'setup', 'configuration']
@@ -244,6 +244,9 @@ Limit to: `Computers - Dell Servers`
 
 ### 8.
 Set the appropriate alert template.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-steps-to-follow'
+id: 'b582b836-52e5-4908-b154-791e0f95f7db'
 title: 'Steps to Follow'
 title_meta: 'Steps to Follow'
 keywords: ['alert', 'template', 'sql', 'monitor', 'domain', 'controllers', 'configuration']
@@ -62,6 +62,9 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### 5.
 Assign the required alert template. It is suggested to use '`△ Custom - Ticket Creation Computer - Failures Only`' for the best results.
+
+
+
 
 
 

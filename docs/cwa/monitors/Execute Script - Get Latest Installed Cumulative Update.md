@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-execute-script'
+id: '4d2a667d-ba87-4148-ba5d-d6da484acccf'
 title: 'Internal Monitor to Execute Script for Latest Installed Cumulative Update'
 title_meta: 'Internal Monitor to Execute Script for Latest Installed Cumulative Update'
 keywords: ['monitor', 'cumulative', 'update', 'script', 'windows']
@@ -27,6 +27,9 @@ The SQL Query is limiting the monitor set to the patch-managed supported Windows
 **Name:** △ Custom - Execute Script - Get Latest Installed Cumulative Update
 
 - The alert template should run the [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script.
+
+
+
 
 
 

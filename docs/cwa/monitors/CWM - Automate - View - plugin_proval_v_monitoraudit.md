@@ -1,5 +1,5 @@
 ---
-id: 'cwa_monitor_audit_data'
+id: 'b15d4142-5fc8-4352-8a5c-b039cde54b86'
 title: 'Monitor Audit Data Storage'
 title_meta: 'Monitor Audit Data Storage for Configuration Management'
 keywords: ['monitor', 'audit', 'configuration', 'data', 'alert', 'ticket', 'service', 'frequency']
@@ -37,6 +37,9 @@ Stores data about monitors and their configuration.
 | Category Name           | VARCHAR     | The category assigned to the alert.              |
 | Service Board           | VARCHAR     | The service board that the alert will post to.  |
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
+
+
+
 
 
 

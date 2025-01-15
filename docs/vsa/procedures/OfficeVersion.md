@@ -1,5 +1,5 @@
 ---
-id: 'vsa-get-default-office-version'
+id: '2045a948-fc2d-42a4-ba22-17ea4bcc99c0'
 title: 'Get Default Office Version, Bit, CTR, and 2019'
 title_meta: 'Get Default Office Version, Bit, CTR, and 2019'
 keywords: ['office', 'version', 'bit', 'ctr', '2019']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery
 
 Get Default Office Version, Bit, CTR, and 2019  
+
+
+
 
 
 

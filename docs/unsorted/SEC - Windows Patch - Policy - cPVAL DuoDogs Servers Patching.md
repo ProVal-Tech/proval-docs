@@ -1,12 +1,12 @@
 ---
-id: 'cwa-organization-level-patch-policy-for-servers'
+id: 'e1f17f96-4dad-40d5-8801-c0d132456ce8'
 title: 'Organization Level Patch Policy for Servers'
 title_meta: 'Organization Level Patch Policy for Servers'
 keywords: ['patch', 'policy', 'servers', 'management', 'windows', 'reboot']
 description: 'This document outlines the organization-level patch policy for servers, detailing the configuration for patch management, including the scheduling of updates and reboot actions. It emphasizes the disabling of Windows Automatic Update and the conditions under which server reboots occur.'
 tags: ['patch', 'management', 'windows', 'reboot', 'configuration']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Summary
 
@@ -35,6 +35,9 @@ Provide the configuration of the profile, using the following templates based on
 - Patch windows automatic update: Servers: Every Week on Saturday at 10:30 PM as per the machine time zone with Skip if offline and the distribution hours is 1 hour.
 - Patch reboot action as below: If user logged in ask permission. Do nothing if no response in 15 minutes. Reboot if user not logged in.
 - Patch Windows Automatic Update is disabled.
+
+
+
 
 
 

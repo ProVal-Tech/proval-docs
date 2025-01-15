@@ -1,5 +1,5 @@
 ---
-id: 'ps-disable-onedrive'
+id: '55e5e8ed-f8a3-40d3-bc9c-8ca5f0059306'
 title: 'Disallow OneDrive from Use in Local Security Policy'
 title_meta: 'Disallow OneDrive from Use in Local Security Policy'
 keywords: ['onedrive', 'security', 'policy', 'disable', 'windows']
@@ -54,6 +54,9 @@ else{
 - Agent Procedure Log
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

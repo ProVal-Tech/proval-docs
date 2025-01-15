@@ -1,5 +1,5 @@
 ---
-id: 'rmm-smb1-vulnerability-monitor'
+id: 'cb1ab987-657f-4503-a3e1-f4f6345b6fdf'
 title: 'SMB1 Vulnerability Monitor'
 title_meta: 'SMB1 Vulnerability Monitor'
 keywords: ['smb1', 'monitor', 'autofix', 'windows', 'agents']
@@ -28,6 +28,9 @@ Global
 ![Ticket Category Setup](../../../static/img/SMB1-Autofix/image_1.png)
 
 Once the ticket category is set, the Autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](https://proval.itglue.com/DOC-5078775-15811522) will automatically create a ticket to the service board using the ticket category set.
+
+
+
 
 
 

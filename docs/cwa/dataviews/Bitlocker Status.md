@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-audit-dataview'
+id: '6442955a-0264-44ce-aad1-9e2f973e40ec'
 title: 'Bitlocker Audit Dataview Information'
 title_meta: 'Bitlocker Audit Dataview Information'
 keywords: ['bitlocker', 'audit', 'encryption', 'tpm', 'active-directory']
@@ -57,6 +57,9 @@ This dataview displays the Bitlocker information on all computers that have run 
 | TPM Version            | It contains the TPM Version number.                                                                                 |
 | TPMOwned               | The TPM Owned state of the target.                                                                                  |
 | TPMActivated           | The activation state of the TPM on the target.                                                                      |
+
+
+
 
 
 

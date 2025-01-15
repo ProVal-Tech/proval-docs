@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-connectwise-automate'
+id: '2b4f5b7f-0275-4114-8686-0084c1741c9d'
 title: 'Webroot Software Management with ConnectWise Automate'
 title_meta: 'Webroot Software Management with ConnectWise Automate'
 keywords: ['webroot', 'antivirus', 'endpoint', 'protection', 'installation', 'removal', 'plugin', 'configuration', 'audit', 'deployment']
@@ -91,6 +91,9 @@ The Webroot Plugin provides a way to automatically deploy Webroot by setting the
 #### Implementation Setup
 
 Import the Script [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](https://proval.itglue.com/DOC-5078775-8223773) and run it.
+
+
+
 
 
 

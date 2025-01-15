@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-new-domain-admin'
+id: 'a6c25db7-fd79-4ed6-9f84-765cd2d10362'
 title: 'Remote Monitor for Newly Created Domain Admins'
 title_meta: 'Remote Monitor for Newly Created Domain Admins'
 keywords: ['monitor', 'domain', 'admin', 'ticket', 'automation']
@@ -57,6 +57,9 @@ New Domain Admin(s) Detected at %domain% for %clientname%.
 ![Example](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_4.png)
 
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
+
+
 
 
 

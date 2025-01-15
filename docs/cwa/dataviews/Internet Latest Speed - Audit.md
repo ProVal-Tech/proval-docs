@@ -1,5 +1,5 @@
 ---
-id: 'cwa-speed-test-audit'
+id: '9cd465c4-1fed-40fb-8ac2-0b170c9c50b4'
 title: 'Speed Test Audit Summary'
 title_meta: 'Speed Test Audit Summary'
 keywords: ['speed', 'audit', 'network', 'bandwidth', 'performance', 'latency', 'jitter', 'packetloss', 'isp']
@@ -50,6 +50,9 @@ Displays the latest audited speed test information of the last script ran from t
 | ResultURL       | The URL of the speed test result.                                |
 | DownloadMbps    | The download speed detected in Mbps.                             |
 | UploadMbps      | The upload speed detected in Mbps.                               |
+
+
+
 
 
 

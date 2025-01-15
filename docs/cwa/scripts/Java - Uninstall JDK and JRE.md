@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-java-script'
+id: '46e361b5-3657-4e5b-800a-858f331b3b8b'
 title: 'Java Uninstallation Script'
 title_meta: 'Java Uninstallation Script for Efficient Removal of Java Versions'
 keywords: ['java', 'uninstall', 'script', 'windows', 'software']
@@ -39,6 +39,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

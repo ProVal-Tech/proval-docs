@@ -1,5 +1,5 @@
 ---
-id: 'cwa_uninstall_onedrive'
+id: '86b3fe11-be22-4721-8626-ba34a5bf4419'
 title: 'Uninstall Onedrive from Windows Machines'
 title_meta: 'Uninstall Onedrive from Windows Machines'
 keywords: ['uninstall', 'onedrive', 'windows', 'ticketing', 'script']
@@ -40,6 +40,9 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
+
+
 
 
 

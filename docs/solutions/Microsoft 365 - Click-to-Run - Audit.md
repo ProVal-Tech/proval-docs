@@ -1,5 +1,5 @@
 ---
-id: 'rmm-audit-click-to-run-microsoft-365'
+id: '1b9044f2-b871-42c4-8f3f-8a4710299018'
 title: 'Audit Click-to-Run Version of Microsoft 365'
 title_meta: 'Audit Click-to-Run Version of Microsoft 365'
 keywords: ['microsoft', 'click-to-run', 'audit', 'office', 'version', 'update', 'channel', 'auto-update']
@@ -36,6 +36,9 @@ The solution aims to audit the basic information of installed Click-to-Run versi
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390)
+
+
+
 
 
 

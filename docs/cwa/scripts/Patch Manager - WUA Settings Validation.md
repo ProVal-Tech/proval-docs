@@ -1,5 +1,5 @@
 ---
-id: 'cwa-validate-wua-setting'
+id: '1f78325c-968a-4a73-ba85-2a18c061063e'
 title: 'Validate Windows Update Settings'
 title_meta: 'Validate Windows Update Settings'
 keywords: ['windows', 'update', 'registry', 'patching', 'service']
@@ -47,6 +47,9 @@ If you modify the Active Hours from their default, keep in mind the **Max** wind
 ## Output
 
 All output for the PowerShell file result is output to the Script Log and to the Script State 'PatchSettingCheck'.
+
+
+
 
 
 

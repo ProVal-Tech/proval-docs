@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-10-patching-monitor'
+id: 'bb1b76fb-8c0e-4e73-80b6-f7b445c962a1'
 title: 'Windows 10 Patching Monitor'
 title_meta: 'Windows 10 Patching Monitor for Cumulative and Security Updates'
 keywords: ['windows', 'patching', 'updates', 'monitor', 'sql']
@@ -18,6 +18,9 @@ Suggested Alert Template: Default - Create Automate Ticket
 ## Target
 
 SQL Query is limiting to the supported Windows 10 computers.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reset-windows-update-components'
+id: '02e56369-332e-4f57-a325-2df8585b0c2c'
 title: 'Reset Windows Update Components'
 title_meta: 'Reset Windows Update Components'
 keywords: ['windows', 'update', 'reset', 'services', 'network', 'backup']
@@ -47,6 +47,9 @@ Reboot the computer.
 ## Output
 
 **Script logs**
+
+
+
 
 
 

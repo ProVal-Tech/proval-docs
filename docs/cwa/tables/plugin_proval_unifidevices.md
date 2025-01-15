@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-data-collection-solution-update-table-data-unificontroller'
+id: '048bcde3-a1b4-45a9-a86c-ba19c0a40933'
 title: 'EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController'
 title_meta: 'EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController'
 keywords: ['data', 'collection', 'unifi', 'controller', 'table', 'update']
@@ -36,6 +36,9 @@ Holds device data for each controller listed in [EPM - Data Collection - Solutio
 | Disabled      | String | True if Disabled, False if not.                                                              |
 | Model         | String | The Model of the device.                                                                     |
 | Type          | String | The Type of Unifi Device.                                                                    |
+
+
+
 
 
 

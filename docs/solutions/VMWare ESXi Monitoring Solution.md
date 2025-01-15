@@ -1,5 +1,5 @@
 ---
-id: 'cwa-esxi-monitoring-solution'
+id: 'b1695ddc-ae81-4cd0-8622-c036d75fc7ad'
 title: 'Customizable Monitoring for ESXi Servers'
 title_meta: 'Customizable Monitoring for ESXi Servers'
 keywords: ['esxi', 'monitoring', 'alerts', 'datastores', 'communication']
@@ -31,6 +31,9 @@ The goal of this solution is to provide very good and customizable monitoring fo
 4. Import the Ticket Creation Scripts outlined above
 5. Assign the Ticket Creation Scripts as Alert Templates for each monitor (These should be importable via the Plugin)
 6. Enable the monitors
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementation-steps-dns-monitoring'
+id: '88f2c503-bd4b-4bb5-83d0-72f5fb6a0137'
 title: 'Implementation Steps for DNS Service Monitoring'
 title_meta: 'Implementation Steps for DNS Service Monitoring'
 keywords: ['dns', 'monitoring', 'sql', 'alert', 'service']
@@ -87,6 +87,9 @@ unlisted: false
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
    ![Check Remote Monitor](../../../static/img/DNS-Service-Monitoring/image_2.png)
+
+
+
 
 
 

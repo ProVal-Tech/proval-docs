@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-ticket-creation-without-details'
+id: '730449e6-1c73-46ca-a93d-d7b9526e1ef9'
 title: 'Custom Ticket Creation without Computer Details'
 title_meta: 'Custom Ticket Creation without Computer Details'
 keywords: ['ticket', 'creation', 'monitor', 'alert', 'sql']
@@ -48,6 +48,9 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
+
+
+
 
 
 

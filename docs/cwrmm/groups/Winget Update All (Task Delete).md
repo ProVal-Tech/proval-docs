@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winget-update-all-task-delete'
+id: 'a8ce29e2-502c-4bb8-a959-c7eb59e38808'
 title: 'Winget Update All Task Deletion for Windows 10 and 11'
 title_meta: 'Winget Update All Task Deletion for Windows 10 and 11'
 keywords: ['winget', 'task', 'windows', 'deletion', 'group']
@@ -106,6 +106,9 @@ This group identifies Windows 10 and 11 computers with the presence of Winget Up
 
 ![Completed Group 1](../../../static/img/Winget-Update-All-(Task-Delete)/image_28.png)  
 ![Completed Group 2](../../../static/img/Winget-Update-All-(Task-Delete)/image_29.png)
+
+
+
 
 
 

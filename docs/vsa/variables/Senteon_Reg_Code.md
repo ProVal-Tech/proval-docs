@@ -1,5 +1,5 @@
 ---
-id: 'cwa-senteon-registration-code'
+id: '2c7e719e-7654-47e6-9ff0-d5261ae67eb8'
 title: 'Senteon Registration Code Management'
 title_meta: 'Senteon Registration Code Management for Agents'
 keywords: ['senteon', 'registration', 'code', 'managed', 'variable']
@@ -24,6 +24,9 @@ The value for this must be provided by the partner. The partner can get the data
 | Managed Variable Name | Managed Variable Type | Description                                              |
 |-----------------------|-----------------------|----------------------------------------------------------|
 | Senteon_Reg_Code      | Public                | Used by the agent procedure to specify the registration code during install |
+
+
+
 
 
 

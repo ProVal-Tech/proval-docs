@@ -1,5 +1,5 @@
 ---
-id: 'rmm-huntress-agent-deployment'
+id: '0c1599a5-7c64-41a2-8900-9eba22b1b0c1'
 title: 'Huntress Agent Deployment and Management in CW RMM'
 title_meta: 'Huntress Agent Deployment and Management in CW RMM'
 keywords: ['huntress', 'agent', 'deployment', 'management', 'cw', 'rmm']
@@ -52,6 +52,9 @@ Deploy, Repair, Reinstall, Re-register, and Remove the Huntress Agent in CW RMM.
 - Create the deployment schedule for MAC agents as described in this document: [Task - Huntress Agent (Install) - MAC](https://proval.itglue.com/DOC-5078775-17718604)
 - Create the Group: [Machines with Huntress Agent](https://proval.itglue.com/DOC-5078775-15303347)
 - Create the monitor: [Monitor - HuntressAgent Service](https://proval.itglue.com/DOC-5078775-15303190)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-install-windows-11-policy'
+id: '4664a942-cb4f-425a-ae16-4615d2b14cae'
 title: 'Policy to Enable Windows 11 Installation for Windows 10 Machines'
 title_meta: 'Policy to Enable Windows 11 Installation for Windows 10 Machines'
 keywords: ['windows', 'installation', 'policy', 'upgrade', 'patching']
@@ -44,6 +44,9 @@ Policy to enable Windows 11 installation for Windows 10 machines.
 ![Image](../../../static/img/Install-Windows-11/image_23.png)
 
 ## Completed Policy
+
+
+
 
 
 

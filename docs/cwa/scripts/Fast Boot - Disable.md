@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-windows-fast-boot'
+id: '663e3658-c389-4ab6-b7a2-8486f9e237c1'
 title: 'Disable Windows Fast Boot'
 title_meta: 'Disable Windows Fast Boot - Registry Adjustment Script'
 keywords: ['windows', 'registry', 'fast', 'boot', 'shutdown']
@@ -44,6 +44,9 @@ If the value did not change in the registry, the script will exit as a failure w
 ## Output
 
 Script log messages only.
+
+
+
 
 
 

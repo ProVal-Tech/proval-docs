@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-summary'
+id: '30dde7e3-b96b-4e24-bbc5-cfa041aa5648'
 title: 'Monitor Summary and Dependencies'
 title_meta: 'Monitor Summary and Dependencies for ConnectWise Automate'
 keywords: ['monitor', 'dependencies', 'ticketing', 'target', 'itglue']
@@ -44,6 +44,9 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**
 
 **Body**
+
+
+
 
 
 

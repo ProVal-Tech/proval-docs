@@ -1,5 +1,5 @@
 ---
-id: 'cwa-schedule-reboot-script'
+id: 'f1ad69eb-ffe8-4396-a3f4-d380d155b120'
 title: 'Schedule Reboot Script for Hyper-V Hosts'
 title_meta: 'Schedule Reboot Script for Hyper-V Hosts'
 keywords: ['reboot', 'hyper-v', 'maintenance', 'ticket', 'schedule']
@@ -47,6 +47,9 @@ This script schedules a reboot for the next applicable day at the specified time
 
 - Script log messages
 - Ticket (For Hyper-V hosts only)
+
+
+
 
 
 

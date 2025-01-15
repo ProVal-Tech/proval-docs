@@ -1,5 +1,5 @@
 ---
-id: 'vsa-remove-sentinelone'
+id: 'b89a175e-0664-4001-b1d2-2827d74b0c71'
 title: 'Uninstalling the SentinelOne Agent from Windows'
 title_meta: 'Uninstalling the SentinelOne Agent from Windows'
 keywords: ['sentinelone', 'uninstall', 'windows', 'antitamper', 'agent']
@@ -60,6 +60,9 @@ Location of output for log, result, and error files.
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
+
+
+
 
 
 

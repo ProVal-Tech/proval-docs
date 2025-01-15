@@ -1,5 +1,5 @@
 ---
-id: 'cwa-add-recovery-password-bitlocker'
+id: 'c2c817db-9667-4e18-864c-11ef0775282c'
 title: 'Add Recovery Password to BitLocker Drive'
 title_meta: 'Add Recovery Password to BitLocker Drive'
 keywords: ['bitlocker', 'recovery', 'tpm', 'encryption', 'monitor']
@@ -41,6 +41,9 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
+
+
+
 
 
 

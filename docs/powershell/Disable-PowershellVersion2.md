@@ -36,3 +36,6 @@ The removal of the .Net 3.0 feature requires a reboot.
     .\Disable-PowershellVersion2-log.txt
     .\Disable-PowershellVersion2-error.txt
 
+
+
+

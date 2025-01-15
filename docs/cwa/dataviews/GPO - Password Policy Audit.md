@@ -1,5 +1,5 @@
 ---
-id: 'cwa-default-password-policy'
+id: '28ff3938-c093-47c6-8495-498f407740a7'
 title: 'Default Password Policy Audit'
 title_meta: 'Default Password Policy Audit in Domain'
 keywords: ['password', 'policy', 'audit', 'domain', 'security']
@@ -35,6 +35,9 @@ Table: @custom_proval_gp_audit
 | Reverse Encryption Enabled           | Yes|No - Will display if reverse encryption is enabled on the domain                                           |
 
 (Reference documentation: [Password Policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-policy))
+
+
+
 
 
 

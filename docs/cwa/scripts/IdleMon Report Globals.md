@@ -1,5 +1,5 @@
 ---
-id: 'cwa_idle_time_collection'
+id: 'c6ea69e0-823f-4090-9894-2faf81ba8c46'
 title: 'Idle Time Collection Script for Windows'
 title_meta: 'Idle Time Collection Script for Windows'
 keywords: ['idle', 'time', 'collection', 'windows', 'script', 'monitor']
@@ -49,6 +49,9 @@ The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be place
 
 - Script log
 - Dataview
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
-id: 'cwa-custom-searches'
+id: '68729023-fc85-4894-b5b5-d021942bc2a6'
 title: 'Custom Searches in ConnectWise Automate'
 title_meta: 'Custom Searches in ConnectWise Automate'
 keywords: ['searches', 'custom', 'unique', 'connectwise', 'automate']
 description: 'This document provides an overview of how to create custom searches in ConnectWise Automate, emphasizing the importance of unique naming conventions for each search to ensure clarity and organization.'
 tags: ['configuration', 'connectwise', 'software']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 <div class='text-section scrollable'>
 
@@ -21,6 +21,9 @@ unlisted: true
 Searches need to be all custom ones, and have a unique name.
 
 </div>
+
+
+
 
 
 

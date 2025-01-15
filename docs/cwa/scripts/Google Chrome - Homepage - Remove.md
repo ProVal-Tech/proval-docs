@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-chromium-homepage'
+id: '7fc15e41-8b1d-485d-808f-518893b41686'
 title: 'Remove Chromium Homepage Configuration'
 title_meta: 'Remove Chromium Homepage Configuration in ConnectWise Automate'
 keywords: ['automate', 'chrome', 'configuration', 'registry', 'homepage']
@@ -23,6 +23,9 @@ It is an Automate implementation of the [SWM - Software Configuration - Remove-C
 ## Output
 
 - Script Logs
+
+
+
 
 
 

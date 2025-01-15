@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-log4j-residuals'
+id: 'c18e0a86-ade5-405a-9fc4-46908a340cf8'
 title: 'Remove Log4J Residuals'
 title_meta: 'Remove Log4J Residuals'
 keywords: ['log4j', 'residuals', 'cleanup', 'script']
@@ -19,6 +19,9 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](https
 ## Dependencies
 
 [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631)
+
+
+
 
 
 

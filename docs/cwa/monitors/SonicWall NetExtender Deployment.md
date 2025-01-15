@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sonicwall-netextender-monitor'
+id: 'b0ca57d2-351c-4f1d-9d98-954c1d77777e'
 title: 'SonicWall NetExtender Monitor Setup'
 title_meta: 'SonicWall NetExtender Monitor Setup'
 keywords: ['sonicwall', 'netextender', 'monitor', 'upgrade', 'deployment', 'edf', 'version']
@@ -23,6 +23,9 @@ This monitor is also set up to grab the latest version of SonicWall NetExtender 
 ## Target
 
 Global
+
+
+
 
 
 

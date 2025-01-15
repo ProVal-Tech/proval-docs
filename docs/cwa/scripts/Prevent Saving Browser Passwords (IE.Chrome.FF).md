@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lock-browsers-password-saving-feature'
+id: '5e0e3054-ce35-494b-bdde-c8b0c56305d0'
 title: 'Lock Browsers Password Saving Feature'
 title_meta: 'Lock Browsers Password Saving Feature'
 keywords: ['browsers', 'passwords', 'registry', 'security', 'automation']
@@ -55,6 +55,9 @@ In the above screenshot, Password Saving Feature for the Browsers will be disabl
 
 - Script log
 - Script State
+
+
+
 
 
 

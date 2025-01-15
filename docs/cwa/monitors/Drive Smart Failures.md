@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smart-failure-monitor'
+id: 'db63efa5-209c-4a2a-ad03-aafeada034bb'
 title: 'SMART Failure Monitor for Windows'
 title_meta: 'SMART Failure Monitor for Windows'
 keywords: ['smart', 'failure', 'monitor', 'windows', 'drive']
@@ -15,6 +15,9 @@ This monitor will look for any "Smart Failure" on a drive that exceeds the manuf
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
+
+
+
 
 
 

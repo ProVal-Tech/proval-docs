@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-inactive-patch-config'
+id: 'b6843bcc-c5e6-4af4-b604-e6d1c5871a44'
 title: 'Detect Inactive Patch Config Execution'
 title_meta: 'Detect Inactive Patch Config Execution'
 keywords: ['patch', 'config', 'execution', 'windows', 'script']
@@ -26,6 +26,9 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get Patch Config`
+
+
+
 
 
 

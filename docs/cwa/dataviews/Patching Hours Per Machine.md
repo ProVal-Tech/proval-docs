@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-report-summary'
+id: '53052ccf-a9de-4036-b000-3b0ad267233e'
 title: 'Patch Report Summary'
 title_meta: 'Patch Report Summary for Patching Jobs and Hours'
 keywords: ['patching', 'jobs', 'hours', 'report', 'machine']
@@ -24,6 +24,9 @@ This dataview represents the number of patching jobs and total patching hours pe
 | Number of Patch Jobs last 30 days       | Number of Patch Jobs per machine in the last 30 days|
 | Sum of Patching hours last 30 days      | Sum of Patching hours per machine in the last 30 days|
 | Total Patch Duration                     | Total Patch Duration per machine in the last 30 days|
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-online-status-alerting'
+id: 'a8e69e42-afde-4300-9665-9c1148c8f85e'
 title: 'Online Status Alerting for Offline Machines'
 title_meta: 'Online Status Alerting for Offline Machines'
 keywords: ['ticket', 'status', 'offline', 'online', 'monitor', 'alert', 'automate']
@@ -58,6 +58,9 @@ The purpose of this solution is to change the status of the ticket in CW Manage 
      - Apply the alert template `△ Custom - Autofix - Online Status Alerting`  
        - Make sure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609)  
      - Right-click and Run Now on the monitor
+
+
+
 
 
 

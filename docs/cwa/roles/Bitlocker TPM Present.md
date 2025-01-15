@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-tpm-check'
+id: '4fd4e60a-c79a-48b1-bd25-016d26e8d28c'
 title: 'Bitlocker TPM Presence Check'
 title_meta: 'Bitlocker TPM Presence Check'
 keywords: ['bitlocker', 'tpm', 'windows', 'agent', 'security']
@@ -17,6 +17,9 @@ This role denotes if the agent has Bitlocker TPM Present.
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | {%@C:/WINDOWS/system32/WindowsPowerShell/v1.0/powershell.exe -command "Get-Tpm|select -ExpandProperty TPMPresent"@%} | Contains   | True   | Windows        |
+
+
+
 
 
 

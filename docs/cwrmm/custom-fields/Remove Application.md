@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-application-result'
+id: 'c893b839-b951-4b0c-b1d0-879361818839'
 title: 'Remove Application Result Custom Field'
 title_meta: 'Remove Application Result Custom Field'
 keywords: ['customfield', 'application', 'result', 'status']
@@ -45,6 +45,9 @@ The below custom field is used in the "Remove Application" script to gather the 
 
    Note: Description is mandatory to be filled and it doesn't accept **'NEW LINE'.**  
    Write everything in one phrase to describe the detail of the custom field.
+
+
+
 
 
 

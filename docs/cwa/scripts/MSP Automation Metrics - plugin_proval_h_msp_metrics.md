@@ -1,5 +1,5 @@
 ---
-id: 'cwa_create_and_populate_custom_table'
+id: '408bb0fc-cfe0-4ea3-8e77-af13c41e054e'
 title: 'Create and Populate Custom Table for MSP Metrics'
 title_meta: 'Create and Populate Custom Table for MSP Metrics'
 keywords: ['custom', 'metrics', 'data', 'table', 'script', 'agents', 'servers', 'workstations', 'tickets', 'automation']
@@ -47,6 +47,9 @@ Please schedule the script to run on the second Monday of each month. This is a 
 
 - Custom Table
 - Dataview
+
+
+
 
 
 

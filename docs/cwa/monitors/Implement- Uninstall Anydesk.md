@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementation-steps-uninstall-anydesk'
+id: '8b658a17-cb91-457a-9efc-4b8f676b0fb0'
 title: 'Implementation Steps for Uninstalling Anydesk'
 title_meta: 'Implementation Steps for Uninstalling Anydesk'
 keywords: ['uninstall', 'anydesk', 'monitor', 'groupid', 'query']
@@ -155,6 +155,9 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
+
 
 
 

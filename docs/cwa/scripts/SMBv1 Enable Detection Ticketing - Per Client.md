@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smb1-enable-audit'
+id: 'a518732d-b53b-4f7a-9aa1-1b478f68288f'
 title: 'SMB1 Enable Audit Ticket Creation'
 title_meta: 'SMB1 Enable Audit Ticket Creation'
 keywords: ['ticket', 'audit', 'remediation', 'client', 'smbv1']
@@ -47,6 +47,9 @@ This client script creates a ticket for each client with the computer count wher
 
    The SMBv1 Enable status audit detected on @VulnerableagentCount@ computers of client "@sqlname@".  
    Please review the dataview for the computer list.
+
+
+
 
 
 

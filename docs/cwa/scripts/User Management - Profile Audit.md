@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-profile-information'
+id: '6eace5fa-3c7d-45ae-a52c-66aa854ddde7'
 title: 'User Profile Information Retrieval Script'
 title_meta: 'User Profile Information Retrieval Script'
 keywords: ['user', 'profile', 'information', 'local', 'domain', 'admin', 'password', 'size', 'logon', 'audit']
@@ -46,6 +46,9 @@ Time Saved by Automation: 15 Minutes
 - Script log
 - [custom_proval_computer_accounts](https://proval.itglue.com/DOC-5078775-7966268)
 - @Windows – Local Account Audit (Dataview)
+
+
+
 
 
 

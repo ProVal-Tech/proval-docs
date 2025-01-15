@@ -1,5 +1,5 @@
 ---
-id: 'cwa-attached-network-drives'
+id: 'fae65619-a5a4-44ec-923a-69d1f20726ff'
 title: 'Attached Network Drives for Automate Agents'
 title_meta: 'Attached Network Drives for Automate Agents'
 keywords: ['automate', 'network', 'drives', 'clients', 'computers']
@@ -24,6 +24,9 @@ Presents information about attached network drives for Automate agents.
 | Shared_Path          | Shared Path of the attached network drive            |
 | Current_Drive_user   | Current user utilizing the network drive             |
 | Last_Contact         | Last Contact for computer with the Automate.        |
+
+
+
 
 
 

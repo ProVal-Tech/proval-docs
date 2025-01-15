@@ -1,5 +1,5 @@
 ---
-id: 'cwa-tls-version-audit'
+id: 'aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f'
 title: 'TLS Version Audit for Endpoints'
 title_meta: 'TLS Version Audit for Endpoints'
 keywords: ['tls', 'audit', 'endpoint', 'version', 'security']
@@ -39,6 +39,9 @@ Note: Only if the Remote monitor (from dependencies) has executed/run at least o
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Security---TLS-Status/image_1.png)
+
+
+
 
 
 

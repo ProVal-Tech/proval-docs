@@ -1,5 +1,5 @@
 ---
-id: 'cwa-webroot-uninstall-script'
+id: '175431c0-b3d2-436a-bf40-e72710a17c36'
 title: 'Webroot Uninstallation Script in Safe Mode'
 title_meta: 'Webroot Uninstallation Script in Safe Mode'
 keywords: ['webroot', 'uninstallation', 'safe-mode', 'wipe', 'script']
@@ -25,6 +25,9 @@ This script first checks if the Webroot service is running on the machine or not
 ## Output
 
 - Script log
+
+
+
 
 
 

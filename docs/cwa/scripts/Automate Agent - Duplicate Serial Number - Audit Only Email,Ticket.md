@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-agent-duplicate-serial-number-audit'
+id: '44296eb1-9cdc-4833-ac40-7f390eac3a7f'
 title: 'Automate Agent - Duplicate Serial Number - Audit'
 title_meta: 'Automate Agent - Duplicate Serial Number - Audit'
 keywords: ['automate', 'agent', 'duplicate', 'serial', 'audit', 'email', 'ticketing']
@@ -66,6 +66,9 @@ Duplicate Agents are listed below:
 In case there is no duplicate serial number:
 
 `No duplicate Machines identified based on Serial Number.`
+
+
+
 
 
 

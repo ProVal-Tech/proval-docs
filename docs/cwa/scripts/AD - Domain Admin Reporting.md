@@ -1,5 +1,5 @@
 ---
-id: 'cwa-admin-group-audit'
+id: 'c25262f7-50fa-49f1-9d3e-a6b37001f43c'
 title: 'Admin Group Audit for Active Directory'
 title_meta: 'Admin Group Audit for Active Directory'
 keywords: ['audit', 'active-directory', 'admin', 'group', 'changes']
@@ -55,6 +55,9 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Script state
 - Ticket (optionally)
+
+
+
 
 
 

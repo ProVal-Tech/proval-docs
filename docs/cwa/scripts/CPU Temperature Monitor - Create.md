@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cputempmon'
+id: '7519f655-224b-4c95-b716-773f59cb7314'
 title: 'CPU Temperature Monitoring Script for Windows'
 title_meta: 'CPU Temperature Monitoring Script for Windows'
 keywords: ['cpu', 'temperature', 'monitoring', 'windows', 'alerts', 'edfs']
@@ -106,6 +106,9 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Script Logs
 - Files on Machine
 - Remote Monitor
+
+
+
 
 
 

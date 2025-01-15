@@ -1,5 +1,5 @@
 ---
-id: 'rmm-create-cw-rmm-agent-deployment-gpo'
+id: '337fc103-461c-4e79-b2fd-db151a4bb628'
 title: 'Create CW RMM Agent Deployment GPO'
 title_meta: 'Create CW RMM Agent Deployment GPO'
 keywords: ['connectwise', 'gpo', 'deployment', 'agent', 'windows', 'domain']
@@ -340,6 +340,9 @@ Click the `Save` button to save the Task.
 
 - Script Log  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_33.png)
+
+
+
 
 
 

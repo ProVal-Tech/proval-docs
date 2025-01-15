@@ -1,5 +1,5 @@
 ---
-id: 'rmm-smb1-detection-monitor'
+id: 'a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b'
 title: 'SMB1 Detection Monitor Setup'
 title_meta: 'SMB1 Detection Monitor Setup'
 keywords: ['smb1', 'monitor', 'detection', 'scripting', 'rmm']
@@ -66,6 +66,9 @@ This monitor checks whether the SMB1 is enabled on the end machine or not. It ru
    **![Image 9](../../../static/img/-SMB1-Detection/image_9.png)**  
 
 8. Click the `Save` button to save the monitor set.
+
+
+
 
 
 

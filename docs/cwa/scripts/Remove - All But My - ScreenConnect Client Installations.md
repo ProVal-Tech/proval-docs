@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-screenconnect'
+id: '50779f68-4329-4d15-b069-c50fcba00614'
 title: 'Remove Additional ScreenConnect Clients'
 title_meta: 'Remove Additional ScreenConnect Clients'
 keywords: ['screenconnect', 'automate', 'script', 'removal', 'edf']
@@ -84,6 +84,9 @@ This script removes all instances of ScreenConnect from the machine except the o
 ## Output
 
 - Script Logs
+
+
+
 
 
 

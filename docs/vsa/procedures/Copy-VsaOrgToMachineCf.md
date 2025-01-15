@@ -1,5 +1,5 @@
 ---
-id: 'vsa-copy-org-cfs-to-machines'
+id: '2b97ee5d-c457-4f9d-a61f-6531f7351cf9'
 title: 'Copy Org CFs to Machines'
 title_meta: 'Copy Org CFs to Machines in Kaseya VSA'
 keywords: ['kaseya', 'cf', 'machines', 'copy', 'org', 'fields']
@@ -40,6 +40,9 @@ Sets 'xPVAL Monitoring Managed' to the org cf value from 'Monitoring' for the sp
 ```
 ./UpdateVsaMonitoringFields-log.txt
 ```
+
+
+
 
 
 

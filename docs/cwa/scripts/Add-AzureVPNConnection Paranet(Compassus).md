@@ -1,5 +1,5 @@
 ---
-id: 'cwa-setup-compassus-azure-vpn-connection'
+id: '7d8df295-577a-4c61-934b-341fcbb37784'
 title: 'Setup Compassus Azure VPN Connection'
 title_meta: 'Setup Compassus Azure VPN Connection'
 keywords: ['vpn', 'azure', 'compassus', 'configuration', 'logging', 'error', 'parameters', 'process']
@@ -57,6 +57,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - File in LTSVC/Logs (optional)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-users-report'
+id: '6dc3dd3b-a90b-4841-9923-f458ee8fc65c'
 title: 'Active Users Report in Active Directory'
 title_meta: 'Active Users Report in Active Directory'
 keywords: ['active', 'directory', 'report', 'users', 'logon', 'password', 'expiration', 'status']
@@ -33,6 +33,9 @@ Shows all the active users within the last 30 days using the Active directory pl
 | Password Expiration Date      | Shows the date of the next password expiration for the user |
 | Password Last Set             | Shows the last time the password was setup for this user |
 | Days Since Last Password Change| Total number of days since the last password set date.  |
+
+
+
 
 
 

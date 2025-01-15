@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cwafileservice-monitor'
+id: '5ae52dd7-e476-49dd-823f-582cbf6de17e'
 title: 'CWAFileService Monitor for Automate'
 title_meta: 'CWAFileService Monitor for Automate'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'status']
@@ -25,6 +25,9 @@ CWAFileService is one of the important services for the Automate server, this mo
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
+
+
+
 
 
 

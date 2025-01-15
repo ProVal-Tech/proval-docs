@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-windows-update-registry-values'
+id: 'bd00b8d9-5f7f-449a-bf03-90a0ee610d3a'
 title: 'Set Windows Update Registry Values'
 title_meta: 'Set Windows Update Registry Values'
 keywords: ['registry', 'windows', 'update', 'patching', 'system', 'access']
@@ -145,6 +145,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

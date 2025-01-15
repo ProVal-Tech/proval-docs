@@ -1,12 +1,12 @@
 ---
-id: 'vsa-managed-variable-data'
+id: '0026e64a-84c3-4f40-a2c8-07a05359b475'
 title: 'Managed Variable Data in Kaseya VSA'
 title_meta: 'Managed Variable Data in Kaseya VSA'
 keywords: ['data', 'managed', 'variable', 'vsa']
 description: 'This document provides an overview of the data held by Managed Variables in Kaseya VSA, including dependencies on other content and examples of the data format and syntax used.'
 tags: ['variable', 'dependencies', 'example', 'content']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 <div class='text-section scrollable'>
 What data does this Managed Variable hold?
@@ -23,6 +23,9 @@ What VSA content relies on this Managed Variable?
 <div class='text-section scrollable'>
 Provide an example of the data contained within the variable, including any required syntax.  
 </div>
+
+
+
 
 
 

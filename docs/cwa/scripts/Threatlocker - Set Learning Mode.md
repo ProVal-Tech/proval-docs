@@ -1,5 +1,5 @@
 ---
-id: 'cwa-threatlocker-learning-mode-script'
+id: '7dedea46-a8d7-4901-93c5-f2bb4c876f83'
 title: 'ThreatLocker Learning Mode Script'
 title_meta: 'ThreatLocker Learning Mode Script'
 keywords: ['threatlocker', 'api', 'learning', 'mode', 'script', 'authentication']
@@ -102,6 +102,9 @@ A: Dependencies and errors are as follows:
 
 - For `POST /MaintenanceMode`: MaintenanceMode AuthKey, ComputerId, ApplicationId, and Method must be set appropriately.  
 ![POST /MaintenanceMode Dependencies](https://proval.itglue.com/5078775/docs/16557697/images/25594739)
+
+
+
 
 
 

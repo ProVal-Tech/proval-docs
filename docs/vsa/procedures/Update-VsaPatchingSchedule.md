@@ -1,5 +1,5 @@
 ---
-id: 'vsa-updating-machine-cfs-with-org-cf-patching-schedule'
+id: 'cc16fc4b-276f-4416-a994-e917421add17'
 title: 'Updating Machine CFs with Org CF Patching Schedule'
 title_meta: 'Updating Machine CFs with Org CF Patching Schedule'
 keywords: ['vsa', 'patching', 'configuration', 'scheduling', 'api']
@@ -45,6 +45,9 @@ Passes the parameters to VSAAPI for use in the API call
 
 # Output
 ./Update-VsaPatchingSchedule-log.txt
+
+
+
 
 
 

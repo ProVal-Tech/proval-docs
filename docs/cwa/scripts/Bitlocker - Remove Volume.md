@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-bitlocker'
+id: '710777f0-5c3f-4582-96e9-3beacaf085eb'
 title: 'Disable BitLocker on Volumes'
 title_meta: 'Disable BitLocker on Volumes - A Guide'
 keywords: ['bitlocker', 'encryption', 'volume', 'disable', 'unprotect']
@@ -38,6 +38,9 @@ See process information in the document for [SEC - Encryption - Agnostic - Unpro
 
 - Script log
 - Local file on computer
+
+
+
 
 
 

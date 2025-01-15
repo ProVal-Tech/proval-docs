@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-build-listing'
+id: '282be91b-f8ee-4ed8-9a1c-1cf9510678f2'
 title: 'Windows 10/11 Complete Listing with Build Versions'
 title_meta: 'Windows 10/11 Complete Listing with Build Versions'
 keywords: ['windows', 'build', 'version', 'listing', 'support', 'eol']
@@ -43,6 +43,9 @@ This dataview shows the Windows 10/11 complete listing with their build version 
 |--------|------------|-------|--------|
 | EOL    | Equals     | Yes   | **<span style="color: rgb(178, 34, 34);"><span style="background-color: rgb(0, 0, 0);">Red</span></span>** |
 | EOL    | Equals     | No    | **<span style="color: rgb(0, 128, 0);">Green</span>** |
+
+
+
 
 
 

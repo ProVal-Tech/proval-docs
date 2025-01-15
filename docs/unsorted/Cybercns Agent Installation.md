@@ -1,12 +1,12 @@
 ---
-id: 'cwa-install-cybercns-agent'
+id: '15ecac3c-fe43-4d04-9e6c-82099bfa356b'
 title: 'Install CyberCNS Agent'
 title_meta: 'Install CyberCNS Agent for Client Management'
 keywords: ['cybercns', 'agent', 'installation', 'client', 'edf']
 description: 'This document provides a comprehensive guide on installing the CyberCNS agent on a computer, detailing the requirements, variables, global parameters, and the process involved in the installation.'
 tags: ['installation', 'client', 'software', 'edf']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -52,6 +52,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-veeam-service-monitor'
+id: 'fd0bef13-23d6-40e3-8883-367e0fa6d166'
 title: 'Veeam Service Monitor'
 title_meta: 'Veeam Service Monitor'
 keywords: ['veeam', 'monitor', 'service', 'restart', 'alert']
@@ -48,6 +48,9 @@ Managed Computers with `VeeamBackupSvc` service.
 ## Implementation
 
 [Implement - Remote Monitor - Veeam Service Monitor](https://proval.itglue.com/DOC-5078775-16366763)
+
+
+
 
 
 

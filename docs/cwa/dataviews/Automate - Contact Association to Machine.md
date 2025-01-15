@@ -1,5 +1,5 @@
 ---
-id: 'cwa-contact-machines-association'
+id: '9d741648-dc5c-4ff8-884c-99c4072d9f34'
 title: 'Contact Machines Association Dataview in ConnectWise Automate'
 title_meta: 'Contact Machines Association Dataview in ConnectWise Automate'
 keywords: ['contact', 'machines', 'association', 'dataview', 'automate']
@@ -28,6 +28,9 @@ This dataview shows which machines are associated to specific Contacts in Automa
 | Reboot               | Check whether contact has reboot permission or not                      |
 | Shutdown             | Check whether contact has shutdown permission or not                    |
 | Wake On Lan          | Check whether contact has Wake On Lan permission or not.                |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-battery-report'
+id: '43fcbb27-0955-4270-9460-33c5e8ccceef'
 title: 'Monitor Battery Report for Computers'
 title_meta: 'Monitor Battery Report for Computers - Automate Script'
 keywords: ['monitor', 'battery', 'report', 'computers', 'script']
@@ -28,6 +28,9 @@ The nature of the monitor is to select all computers which have returned a valid
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
 The Alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978) script.
+
+
+
 
 
 

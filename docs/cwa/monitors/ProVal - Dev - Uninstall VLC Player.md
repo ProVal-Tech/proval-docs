@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-vlc-media-player'
+id: '5e887154-c307-4ac7-9b75-0a85c516dbad'
 title: 'Remote Monitor for VLC Media Player Uninstallation'
 title_meta: 'Remote Monitor for VLC Media Player Uninstallation'
 keywords: ['remote', 'monitor', 'vlc', 'uninstallation', 'windows', 'workstations']
@@ -41,6 +41,9 @@ Windows Workstations
 ## How to Import
 
 [Import - Remote Monitor - Uninstall VLC Player](https://proval.itglue.com/DOC-5078775-13498134)
+
+
+
 
 
 

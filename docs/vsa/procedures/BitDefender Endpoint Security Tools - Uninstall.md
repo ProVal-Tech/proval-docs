@@ -1,5 +1,5 @@
 ---
-id: 'vsa-remove-bitdefender-endpoint-security'
+id: '96b91b8c-3c8a-485e-8f33-9a77cf4d190c'
 title: 'Remove BitDefender Endpoint Security Tools'
 title_meta: 'Remove BitDefender Endpoint Security Tools'
 keywords: ['bitdefender', 'uninstall', 'endpoint', 'security', 'tools', 'procedure']
@@ -50,6 +50,9 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 ## Output
 
 Agent Procedure Log Entry & %ProgramData%/_automation/AgentProcedure/RemoveBitdefender
+
+
+
 
 
 

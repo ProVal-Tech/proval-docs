@@ -1,5 +1,5 @@
 ---
-id: 'cwa-send-popup-reboot-reminder'
+id: '72c57df5-f535-4d8e-9c04-6acde4c93aef'
 title: 'Send Popup Reboot Reminder'
 title_meta: 'Send Popup Reboot Reminder'
 keywords: ['popup', 'reminder', 'reboot', 'user', 'notification']
@@ -23,6 +23,9 @@ This script can only be used as autofix for monitors that check for the machine 
 
 - The script first verifies if the user is logged in or not. If not, exit out.
 - If the user is logged in, send a popup message to the user to reboot their machine online.
+
+
+
 
 
 

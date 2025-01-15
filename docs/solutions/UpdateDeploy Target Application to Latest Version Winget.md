@@ -1,5 +1,5 @@
 ---
-id: 'cwa-application-upgrade-winget'
+id: '2487a1f4-6f85-42f3-91d0-4aab8c875021'
 title: 'Application Upgrade with Winget'
 title_meta: 'Application Upgrade with Winget - Guide'
 keywords: ['upgrade', 'winget', 'application', 'monitor', 'script']
@@ -35,6 +35,9 @@ This solution is designed to achieve the appropriate application upgrade to the 
   ![Image](../../static/img/UpdateDeploy-Target-Application-to-Latest-Version-Winget/image_3.png)  
 - Apply the alert template "**△ Custom - Execute Script - Application Latest Version**" with monitor [ProVal - Production - - Latest Version Detection](https://proval.itglue.com/DOC-5078775-14466240) very first and run it once before implementing the other monitor so that the system property gets created.
 - Apply the alert template "**△ CUSTOM - Application Install/Update - Winget**" with monitor [ProVal - Production - - Install/Update [Winget]](https://proval.itglue.com/DOC-5078775-14466241) and make the adjustment as mentioned in the screenshot.
+
+
+
 
 
 

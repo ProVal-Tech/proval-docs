@@ -1,5 +1,5 @@
 ---
-id: 'rmm-sentinelone-deployment'
+id: 'e0abdce8-a697-43b1-a404-18168a616627'
 title: 'SentinelOne Deployment Guide'
 title_meta: 'SentinelOne Deployment Guide'
 keywords: ['sentinelone', 'deployment', 'windows', 'linux', 'mac']
@@ -35,6 +35,9 @@ The purpose of this solution is to deploy SentinelOne agent on Windows, Linux, a
 - Create [Device Group - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15808853)
 - Create the deployment schedule as described in this document: [CW RMM - Task - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15806354)
 - Create [Monitor - SentinelOne Deployment Failure](https://proval.itglue.com/DOC-5078775-15822005)
+
+
+
 
 
 

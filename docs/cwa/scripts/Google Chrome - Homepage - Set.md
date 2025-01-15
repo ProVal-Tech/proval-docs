@@ -1,5 +1,5 @@
 ---
-id: 'cwa-swm-software-configuration-set-chromiumhomepage'
+id: 'eebf8239-a9d5-462b-a7cf-72d9a50e1f14'
 title: 'SWM - Software Configuration - Set-ChromiumHomepage'
 title_meta: 'SWM - Software Configuration - Set-ChromiumHomepage'
 keywords: ['automate', 'chromium', 'homepage', 'configuration', 'browser']
@@ -31,6 +31,9 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Logs
+
+
+
 
 
 

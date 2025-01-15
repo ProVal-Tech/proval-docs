@@ -1,5 +1,5 @@
 ---
-id: 'cwa-all-in-one-ticket-creation-script'
+id: '63beba3c-f4a6-41a5-98e2-d4e4ce885035'
 title: 'All-in-One Ticket Creation Script for Monitors'
 title_meta: 'All-in-One Ticket Creation Script for Monitors'
 keywords: ['ticket', 'monitor', 'alert', 'logging', 'status', 'client', 'location', 'computer']
@@ -52,6 +52,9 @@ This script outputs logging information into the script log in the scripting tab
 What the Alerting Tab Looks like:
 
 ![Alerting Tab Example](../../../static/img/Ticket-Creation---Computer/image_4.png)
+
+
+
 
 
 

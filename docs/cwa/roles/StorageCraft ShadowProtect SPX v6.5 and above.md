@@ -1,5 +1,5 @@
 ---
-id: 'cwa-storagecraft-version-check'
+id: '7710c476-c3a8-4432-883c-873c5fd2c4a9'
 title: 'StorageCraft Version Check Role'
 title_meta: 'StorageCraft Version Check Role for Automate'
 keywords: ['storagecraft', 'version', 'check', 'automate', 'database']
@@ -17,6 +17,9 @@ This role checks the StorageCraft installed version and if it matches 6.5 or bet
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | {%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%} | Regex Match | ^6/.. | Windows        |
+
+
+
 
 
 

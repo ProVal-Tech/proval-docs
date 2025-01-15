@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-new-local-admin'
+id: 'cce172ca-7bb4-44ff-ada3-77ffd6fc216e'
 title: 'Remote Monitor for New Local Admin Detection'
 title_meta: 'Remote Monitor for New Local Admin Detection'
 keywords: ['monitor', 'local', 'admin', 'ticket', 'detection', 'windows', 'computers']
@@ -55,6 +55,9 @@ Please follow the instructions provided in the implementation article to impleme
 ![Example Image](../../../static/img/New-Local-Admin/image_3.png)
 
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
+
+
 
 
 

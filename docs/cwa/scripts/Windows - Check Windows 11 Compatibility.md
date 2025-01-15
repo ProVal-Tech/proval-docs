@@ -1,5 +1,5 @@
 ---
-id: 'cwa_create_plugin_proval_windows11_readiness_table'
+id: '318a9cfd-251b-4b47-8d18-aabc3af6b41c'
 title: 'Create Plugin Proval Windows 11 Readiness Table'
 title_meta: 'Create Plugin Proval Windows 11 Readiness Table'
 keywords: ['windows', 'readiness', 'plugin', 'compatibility', 'upgrade']
@@ -29,6 +29,9 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 Dataview: [Windows 11 Upgrade Compatibility](https://proval.itglue.com/DOC-5078775-8355449)  
 Custom table: [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448)
+
+
+
 
 
 

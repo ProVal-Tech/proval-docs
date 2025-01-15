@@ -1,5 +1,5 @@
 ---
-id: 'cwa-comparative-online-status-dataview'
+id: '36dec374-8bc6-4fda-a273-4e4a1af2f6f7'
 title: 'Comparative Online Status Dataview for Automate and Control'
 title_meta: 'Comparative Online Status Dataview for Automate and Control'
 keywords: ['dataview', 'connectwise', 'agents', 'status', 'online', 'control', 'repair', 'reinstall']
@@ -50,6 +50,9 @@ FROM
   LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
   LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
 ```
+
+
+
 
 
 

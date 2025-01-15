@@ -1,5 +1,5 @@
 ---
-id: 'vsa-keep-iis-online-service'
+id: 'e46458e5-7a3d-4346-a3c6-1adb56b61880'
 title: 'Keep IIS Websites Online Service'
 title_meta: 'Keep IIS Websites Online Service'
 keywords: ['iis', 'service', 'restart', 'alerting', 'monitoring']
@@ -11,6 +11,9 @@ unlisted: false
 ## Summery:
 
 a service (needs to be installed) that keeps IIS websites online, restarts the message queue when one goes down, and calls event id's for alerting.
+
+
+
 
 
 

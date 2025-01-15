@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patching-report'
+id: '663fd322-b49a-49b9-aeb8-2bb621c36388'
 title: 'Comprehensive Patching Report Dataview'
 title_meta: 'Comprehensive Patching Report Dataview'
 keywords: ['patching', 'report', 'compliance', 'status', 'override', 'policy', 'approval', 'installed', 'missing', 'last', 'agent']
@@ -45,6 +45,9 @@ This Dataview is very descriptive and reflects all the relevant information for 
 | Days Since Last Patch Scan             | Days Since Last Patch Scan                                               |
 | Days Since Last Agent Contact          | Days Since Last Agent Contact                                            |
 | Days Since Last Agent Inventory        | Days Since Last Agent Inventory                                          |
+
+
+
 
 
 

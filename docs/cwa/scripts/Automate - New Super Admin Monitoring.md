@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-super-admins'
+id: 'acc57018-b868-4129-b4a5-0f1052dcc1ae'
 title: 'Monitor for New Super Admins'
 title_meta: 'Monitor for New Super Admins - Script Overview'
 keywords: ['monitor', 'super', 'admins', 'alert', 'ticket']
@@ -39,6 +39,9 @@ A temporary custom table is referenced to determine the previous state of the su
 
 - Ticket
 - Script Log
+
+
+
 
 
 

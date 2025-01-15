@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hp-ilo-health-monitoring'
+id: '7bd9dad1-d463-468b-a3b1-2eef8e060352'
 title: 'HP iLO Health Monitoring'
 title_meta: 'HP iLO Health Monitoring'
 keywords: ['hp', 'ilo', 'monitoring', 'health', 'audit']
@@ -91,6 +91,9 @@ Gather information about and monitor the health status of HP iLO devices.
     - Navigate to System > Configuration > Dashboard > Management > Scheduled Client Scripts
       - Schedule the [HP iLO Credential Missing Detection](https://proval.itglue.com/DOC-5078775-13814638) script to run once per week.  
       ![Schedule Script](../../static/img/HP-iLO-Health-Check/image_3.png)
+
+
+
 
 
 

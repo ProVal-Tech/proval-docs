@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disable-network-probe'
+id: '0cf62bc5-b926-499c-9f40-57824d293dff'
 title: 'Disable Network Probe on Automate Agent'
 title_meta: 'Disable Network Probe on Automate Agent'
 keywords: ['automate', 'network', 'probe', 'agent', 'disable']
@@ -20,6 +20,9 @@ This script will disable the Network probe on an Automate agent.
 ## Process
 
 - This script runs an LT Command to disable the Network probe on the Automate agent.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-approval-policy-auto-approve-ignore-deny'
+id: 'ae8ce64f-816a-4e84-8052-f8e131dde389'
 title: 'Approval Policy - Auto Approve/Ignore/Deny Audit'
 title_meta: 'Approval Policy - Auto Approve/Ignore/Deny Audit'
 keywords: ['approval', 'audit', 'policy', 'dataview', 'mysql']
@@ -39,6 +39,9 @@ The script, [Create View plugin_proval_auto_approval_status*](https://proval.itg
 | Examined Characteristics - By Titles             | text    | List of the titles that are either approved, denied or ignored.                                          |
 | Examined Characteristics - CVSS Status           | varchar | Whether the patches are approved on the basis of CVSS score or not.                                      |
 | Examined Characteristics - CVSS >                | varchar | CVSS score above which auto-approval of patches is applied.                                              |
+
+
+
 
 
 

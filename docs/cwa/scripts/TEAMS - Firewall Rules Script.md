@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-teams-firewall-rules'
+id: '12806812-6720-41bc-9b7c-632fe1620db8'
 title: 'Set Teams Firewall Rules for Users'
 title_meta: 'Set Teams Firewall Rules for Users'
 keywords: ['teams', 'firewall', 'users', 'rules', 'automation']
@@ -38,6 +38,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-frequent-logged-in-users'
+id: 'bef87782-0d9d-40f0-96c5-d30b589b57b4'
 title: 'Frequent Logged-In Domain Users Script'
 title_meta: 'Frequent Logged-In Domain Users Script - Automate Integration'
 keywords: ['loggedin', 'domain', 'users', 'automate', 'contact', 'windows', 'security']
@@ -53,6 +53,9 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user an
 - Script log
 - EDFs
 - Dataview
+
+
+
 
 
 

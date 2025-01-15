@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internet-speed-audit-monitor'
+id: '863ba816-8f4f-47e1-aa66-420b428b7188'
 title: 'Internet Speed Audit Monitor'
 title_meta: 'Internet Speed Audit Monitor'
 keywords: ['monitor', 'internet', 'speed', 'audit', 'windows']
@@ -25,6 +25,9 @@ This internal monitor detects the Windows agent where the script [EPM - Network 
 ## Target
 
 This monitor can be enabled for all service plan groups, Servers only, Infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is built for only Windows.
+
+
+
 
 
 

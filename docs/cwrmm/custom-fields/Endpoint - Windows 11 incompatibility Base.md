@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-11-compatibility-validation'
+id: '7894870c-b7e8-44e0-806c-c948f151fc49'
 title: 'Windows 11 Compatibility Validation Result Storage'
 title_meta: 'Windows 11 Compatibility Validation Result Storage'
 keywords: ['windows', 'incompatibility', 'validation', 'storage', 'endpoint']
@@ -22,6 +22,9 @@ Stores the result returned by the [Windows 11 Compatibility Validation](https://
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_2.png)
+
+
+
 
 
 

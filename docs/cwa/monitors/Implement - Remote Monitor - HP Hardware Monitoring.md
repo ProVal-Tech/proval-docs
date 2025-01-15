@@ -1,5 +1,5 @@
 ---
-id: 'cwa-steps-to-setup-hp-hardware-monitoring'
+id: '4e3fc053-3ccd-4262-b8e8-662222500e06'
 title: 'Steps to Setup HP Hardware Monitoring'
 title_meta: 'Steps to Setup HP Hardware Monitoring'
 keywords: ['setup', 'monitoring', 'hp', 'hardware', 'alerts']
@@ -217,6 +217,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ### 8.
 Set the appropriate alert template.
+
+
+
 
 
 

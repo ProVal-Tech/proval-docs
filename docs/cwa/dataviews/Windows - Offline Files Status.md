@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dataview-local-caching-detection'
+id: '2688bbd1-7e0c-4bc9-9bb9-a2c3977f3239'
 title: 'Dataview for Local Caching Detection'
 title_meta: 'Dataview for Local Caching Detection'
 keywords: ['dataview', 'caching', 'offline', 'files', 'detection']
@@ -25,6 +25,9 @@ This dataview detects if the machine allows local caching of files for offline a
 | Computer             | Computer Name                                               |
 | OS                   | OS installed on the agent                                   |
 | Offline Files Status  | Enabled / Disabled for offline file status (based on role detection) |
+
+
+
 
 
 

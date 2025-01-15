@@ -1,5 +1,5 @@
 ---
-id: 'cwa-network-glue-collector-deployment'
+id: '4e0f7314-bf88-44de-a162-139c191e6e09'
 title: 'Network Glue Collector Auto Deployment'
 title_meta: 'Network Glue Collector Auto Deployment'
 keywords: ['monitor', 'deployment', 'network', 'glue', 'collector', 'windows']
@@ -34,6 +34,9 @@ Windows Machines
 **_To enable ticketing please set the ticket category in the monitor_**  
 ![Image](../../../static/img/ProVal-Production---Network-Glue---Deployment/image_1.png)  
 **_The Script will then handle the ticket creation_** [ - Network Glue Connector - Install](https://proval.itglue.com/DOC-5078775-9360868)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-set-wifi-profiles'
+id: '237fb012-73a7-498d-a76c-304367fee659'
 title: 'Monitor Set for Wifi Profile Management'
 title_meta: 'Monitor Set for Wifi Profile Management'
 keywords: ['wifi', 'profiles', 'audit', 'windows', 'workstations', 'management']
@@ -26,6 +26,9 @@ Managed Windows Workstations
 **Name:** `△ CUSTOM - Execute Script - Get - Wifi Profiles`
 
 **Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](https://proval.itglue.com/DOC-5078775-12979854) script.
+
+
+
 
 
 

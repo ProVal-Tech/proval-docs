@@ -1,5 +1,5 @@
 ---
-id: 'cwa-threatlocker-mac-group-key'
+id: 'a9d8b61d-304f-442b-b7e3-54efe8ae150e'
 title: 'ThreatLocker Group Key for Macintosh Machines'
 title_meta: 'ThreatLocker Group Key for Macintosh Machines'
 keywords: ['threatlocker', 'macintosh', 'group', 'key', 'company']
@@ -25,6 +25,9 @@ This Custom field at company level stores the threatlocker Group key for Macinto
 ## ScreenShot
 
 ![ScreenShot](../../../static/img/Company---ThreatLockerMacGroupKey/image_1.png)
+
+
+
 
 
 

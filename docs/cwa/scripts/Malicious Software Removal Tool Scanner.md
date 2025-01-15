@@ -1,5 +1,5 @@
 ---
-id: 'ps-download-msrt-tool'
+id: '18a8b802-bc6a-42a8-859b-89c93fed4257'
 title: 'Download and Run Microsoft Malicious Software Removal Tool'
 title_meta: 'Download and Run Microsoft Malicious Software Removal Tool'
 keywords: ['download', 'microsoft', 'malicious', 'software', 'removal', 'tool', 'scanner', 'log', 'email', 'autofix']
@@ -60,6 +60,9 @@ After the SetEnvironment is set, please refer to the sample execution.
 
 - Script log
 - Local file on the computer `C:/WINDOWS/debug/mrt.log`
+
+
+
 
 
 

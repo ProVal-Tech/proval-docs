@@ -1,5 +1,5 @@
 ---
-id: 'vsa-install-adobe-acrobat-2022'
+id: '7d2e9576-a6f6-4f3c-9db5-21d6af89adf4'
 title: 'Installs Adobe Acrobat 2022'
 title_meta: 'Installs Adobe Acrobat 2022'
 keywords: ['adobe', 'installation', 'software']
@@ -29,6 +29,9 @@ Downloads installer from vendor, performs quiet norestart installation of MSI, c
 ## Output
 
 none
+
+
+
 
 
 

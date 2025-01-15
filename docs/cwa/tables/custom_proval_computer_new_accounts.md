@@ -1,5 +1,5 @@
 ---
-id: 'cwa_custom_proval_computer_new_accounts'
+id: '64d9813f-2eba-4448-8d78-c9a001979ee9'
 title: 'Custom ProVal Computer New Accounts Table'
 title_meta: 'Custom ProVal Computer New Accounts Table'
 keywords: ['proval', 'accounts', 'audit', 'database', 'user']
@@ -42,6 +42,9 @@ It is being created by a script named as: "User Management - New Local Account A
 | Disable Status           | TINYINT  | It denotes whether the newly created account is disabled. (0-New Account Approved, 1- Disabled, 2 - No Action). Here, 2 means the script which creates this table did not choose to disable the newly created account, only meant for auditing the new account. |
 | Approve Status           | TINYINT  | It denotes whether the account is approved to get enabled. (0- Not Approved, 1-Approved and Enabled, 2- No Action). |
 | Approve Date Status      | DATETIME | It represents when the newly created account was approved to get enabled. (If date is 1970-01-01 00:00:00 it means, Not Approved). |
+
+
+
 
 
 

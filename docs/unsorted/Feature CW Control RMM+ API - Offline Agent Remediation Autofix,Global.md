@@ -1,12 +1,12 @@
 ---
-id: 'cwa-autofix-offline-server-monitoring'
+id: 'c793b2af-4369-4c31-8a56-db1a1728d12d'
 title: 'Autofix Script for Offline Server Monitoring'
 title_meta: 'Autofix Script for Offline Server Monitoring'
 keywords: ['offline', 'server', 'monitoring', 'ticket', 'agent', 'remediation']
 description: 'This document provides details about an updated autofix script designed for monitoring offline servers. The script checks the status of agents in both Automate and Control, attempts to restart offline agents, and can create tickets for offline servers and broken agents. It includes setup instructions, dependencies, and global variables required for optimal functionality.'
 tags: ['agent', 'ticket', 'monitoring', 'offline', 'remediation', 'status']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Summary
 
@@ -96,6 +96,9 @@ It will clear the Agent status script state and will finish any open offline Ser
 - Script Log
 - Script State
 - Ticket
+
+
+
 
 
 

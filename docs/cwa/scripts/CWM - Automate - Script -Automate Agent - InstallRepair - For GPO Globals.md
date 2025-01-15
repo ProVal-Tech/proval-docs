@@ -1,5 +1,5 @@
 ---
-id: 'ps-create-automate-agent-deployment-gpo-script'
+id: 'ba82a707-a466-4960-95a9-856d5b67b8ed'
 title: 'Create Automate Agent Deployment GPO Script'
 title_meta: 'Create Automate Agent Deployment GPO Script'
 keywords: ['automate', 'gpo', 'agent', 'installation', 'deployment', 'token', 'script']
@@ -80,6 +80,9 @@ Step 4: Now mark the EDF of the Domain Controllers where you would like to creat
 ## Creating Automate Agent Deployment GPO
 
 <iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0"></iframe>
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-key-monitor'
+id: '14ecb842-00fc-40c3-a2b4-01a8939e38c5'
 title: 'Bitlocker Key Monitoring for Windows Agents'
 title_meta: 'Bitlocker Key Monitoring for Windows Agents'
 keywords: ['bitlocker', 'monitoring', 'windows', 'encryption', 'security']
@@ -22,6 +22,9 @@ This script should be run as an autofix.
 ## Target
 
 Windows Machine
+
+
+
 
 
 

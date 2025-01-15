@@ -1,5 +1,5 @@
 ---
-id: 'ps-set-psrepository-trust'
+id: '5e33196d-a1ce-4a8d-bc78-825c45ce8329'
 title: 'Set PSGallery as Trusted PowerShell Repository'
 title_meta: 'Set PSGallery as Trusted PowerShell Repository'
 keywords: ['psgallery', 'repository', 'monitor', 'windows', 'trust']
@@ -44,6 +44,9 @@ Managed Windows Machines
 ## Implementation
 
 [Import - Remote Monitor - Set-PsRepository PSGallery](https://proval.itglue.com/DOC-5078775-17886214)
+
+
+
 
 
 

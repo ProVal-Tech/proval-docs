@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-windows-powershell-version-detection'
+id: 'abc5e9cd-9e2c-4df0-b129-be342008e554'
 title: 'Monitor Windows Machines for PowerShell Version'
 title_meta: 'Monitor Windows Machines for PowerShell Version'
 keywords: ['windows', 'monitor', 'powershell', 'version', 'detection']
@@ -22,6 +22,9 @@ The monitor set will detect the windows machines where PowerShell Version is old
 ## Target
 
 Managed Windows Workstations and Servers
+
+
+
 
 
 

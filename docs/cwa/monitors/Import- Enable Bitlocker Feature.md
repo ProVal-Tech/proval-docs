@@ -1,5 +1,5 @@
 ---
-id: 'cwa-enable-bitlocker-feature'
+id: '183d5388-764f-4e39-9ddc-2e4212b579e4'
 title: 'Enable Bitlocker Feature for Groups'
 title_meta: 'Enable Bitlocker Feature for Groups'
 keywords: ['bitlocker', 'groupid', 'monitor', 'sql', 'feature']
@@ -160,6 +160,9 @@ Now execute your query from a RAWSQL monitor set.
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** Apply any alert template to this monitor set.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hp-support-assist-deployment'
+id: 'bc4737bd-eeb2-4211-b33b-a40c5e416d73'
 title: 'Deploying HP Support Assist'
 title_meta: 'Deploying HP Support Assist to Endpoints'
 keywords: ['hp', 'support', 'assist', 'deployment', 'software']
@@ -48,6 +48,9 @@ Procedure requires the shared file "HPSupportAssist.ps1" to run.
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa_drive_space_monitor'
+id: '6d2587d3-3839-4f53-92a7-89890936958d'
 title: 'Drive Space Monitoring for Endpoints'
 title_meta: 'Drive Space Monitoring for Endpoints'
 keywords: ['monitoring', 'drive', 'space', 'endpoints', 'alert', 'thresholds']
@@ -35,6 +35,9 @@ This monitor is primarily designed for server drive space monitoring. It will wo
 The monitor filters out the following drive file systems: 'CDFS', 'UNKFS', 'DVDFS', 'FAT', 'FAT32', and 'NetFS'. 
 
 It also filters out drives where the SmartStatus is like USB, to attempt to filter out USB drives.
+
+
+
 
 
 

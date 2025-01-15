@@ -1,5 +1,5 @@
 ---
-id: 'cwa-get-dcdiagreport-wrapper'
+id: 'a9e0b7ac-4ce2-4376-ac97-8cdee2d122dc'
 title: 'Automate Wrapper for Get-DCDiagReport'
 title_meta: 'Automate Wrapper for Get-DCDiagReport'
 keywords: ['automate', 'wrapper', 'ticket', 'diagnostic', 'report']
@@ -61,6 +61,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 ![Ticketing](../../../static/img/Get-DCDiagReport/image_3.png)  
 **Script will not close/finish any ticket.**
+
+
+
 
 
 

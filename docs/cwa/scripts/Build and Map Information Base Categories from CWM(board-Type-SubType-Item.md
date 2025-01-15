@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-info-base-categories'
+id: 'ff2075a4-f6a2-4ac1-b548-286276aa35d8'
 title: 'Create Information Base Categories for Manage Boards'
 title_meta: 'Create Information Base Categories for Manage Boards'
 keywords: ['categories', 'manage', 'ticket', 'database', 'insert', 'cw', 'service', 'plugin']
@@ -41,6 +41,9 @@ Maps those new info base categories in the CW Manage plugin tables.
 ## Output
 
 No script output, reload cache and view info base categories in system dashboard & review the CW Manage plugin Ticket category area.
+
+
+
 
 
 

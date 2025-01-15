@@ -1,12 +1,12 @@
 ---
-id: 'ps-install-gcpw'
+id: '98a818ba-3aa3-4ff2-af0f-576dde96c488'
 title: 'Install Google Credential Provider for Windows (GCPW)'
 title_meta: 'Install Google Credential Provider for Windows (GCPW)'
 keywords: ['gcpw', 'google', 'credential', 'provider', 'windows', 'installation', 'configuration', 'enrollment', 'token']
 description: 'This document outlines the automated process for installing and configuring the Google Credential Provider for Windows (GCPW). It details the requirements, process steps, and parameters for setting allowed domains and enrollment tokens, ensuring a smooth setup for users.'
 tags: ['google', 'credential', 'provider', 'windows', 'installation', 'configuration', 'enrollment']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 # Overview
 Automates the installation and configuration of Google Credential Provider for Windows (GCPW). Sets the domains allowed to login, and optionally configures an enrollment token. Enrollment tokens are in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings
@@ -59,6 +59,9 @@ Location of output for log, result, and error files.
 | ConnectWise RMM                               |                                                  |
 | Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](https://proval.itglue.com/DOC-5078775-15595857) |
 | Datto RMM                                     |                                                  |
+
+
+
 
 
 

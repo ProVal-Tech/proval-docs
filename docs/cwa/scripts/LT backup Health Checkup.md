@@ -1,5 +1,5 @@
 ---
-id: 'cwa_lt-backup-health-check'
+id: '7b0a4072-a682-473a-a708-0b8eecc6d83b'
 title: 'LT Backup Health Check'
 title_meta: 'LT Backup Health Check'
 keywords: ['backup', 'alert', 'ticket', 'monitoring', 'proval']
@@ -48,6 +48,9 @@ This script detects whether the LT backup ran successfully or not by observing t
 
 - Script log
 - Email
+
+
+
 
 
 

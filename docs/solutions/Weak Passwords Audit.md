@@ -1,5 +1,5 @@
 ---
-id: 'cwa-weak-passwords-detection'
+id: '67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11'
 title: 'Weak Passwords Detection in ConnectWise RMM'
 title_meta: 'Weak Passwords Detection in ConnectWise RMM'
 keywords: ['weak', 'passwords', 'detection', 'connectwise', 'rmm']
@@ -55,6 +55,9 @@ This solution gathers information on users with potentially compromised password
 
 4. Create and deploy the following tasks:
    - [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)
+
+
+
 
 
 

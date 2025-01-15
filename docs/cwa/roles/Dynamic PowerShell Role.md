@@ -1,5 +1,5 @@
 ---
-id: 'cwa-power-shell-version-in-serial-key'
+id: '6c30a69a-90c5-4e2d-ba5f-f2a663adbd81'
 title: 'PowerShell Version in Serial Key'
 title_meta: 'PowerShell Version in Serial Key'
 keywords: ['powershell', 'serial', 'version', 'key', 'detection']
@@ -17,6 +17,9 @@ This role contains the PowerShell version in its serial key.
 | Detection String                                                                                                                                                                          | Comparator | Result                      | Applicable OS |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------------------|----------------|
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference =  'SilentlyContinue'; Write-Host /"$(Get-host).Version.Major).$((Get-Host).Version.Minor).$((Get-Host).version.Build).$((Get-Host).Version.Revision)/" -NoNewLine"@%}` | Exist      | PowerShell Version in SerialKey | Windows        |
+
+
+
 
 
 

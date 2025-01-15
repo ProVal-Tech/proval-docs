@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-domain-sync'
+id: '6ea8ee6a-72d6-4284-84f8-2a48810446c9'
 title: 'Check for Unsynced Active Directory Domains'
 title_meta: 'Check for Unsynced Active Directory Domains'
 keywords: ['active-directory', 'sync', 'domains', 'plugin', 'monitoring']
@@ -15,6 +15,9 @@ Looks for domains that have not synced with the Active Directory plugin within t
 ## Target
 
 Global
+
+
+
 
 
 

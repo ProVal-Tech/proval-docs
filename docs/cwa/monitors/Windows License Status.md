@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-license-status-monitor'
+id: '7c6678ef-12c5-4e21-a2d2-9fd84a21191e'
 title: 'Windows License Status Monitor'
 title_meta: 'Windows License Status Monitor'
 keywords: ['windows', 'license', 'status', 'monitor', 'ciminstance', 'alert', 'ticketing']
@@ -78,6 +78,9 @@ A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](https:
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
+
+
+
 
 
 

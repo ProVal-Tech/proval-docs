@@ -1,5 +1,5 @@
 ---
-id: 'cwa-svc-auto-services-stopped-proval'
+id: '29f53c95-c885-42ef-a24f-8030efc1830f'
 title: 'ProVal Version of SVC - Auto Services Stopped Monitor'
 title_meta: 'ProVal Version of SVC - Auto Services Stopped Monitor'
 keywords: ['monitor', 'services', 'blacklist', 'wildcard', 'windows']
@@ -26,6 +26,9 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
+
+
+
 
 
 

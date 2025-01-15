@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-shadowcontrol'
+id: 'b5ffbe82-a523-4104-8e8f-c60cfa2f8419'
 title: 'Uninstall ShadowControl Script'
 title_meta: 'Uninstall ShadowControl Script'
 keywords: ['uninstall', 'shadowcontrol', 'script', 'server', 'agent']
@@ -33,6 +33,9 @@ Time Saved by Automation: # Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

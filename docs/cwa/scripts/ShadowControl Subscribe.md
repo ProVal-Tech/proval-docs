@@ -1,5 +1,5 @@
 ---
-id: 'cwa-shadowcontrol-client-installation'
+id: '6427c251-f3e5-422a-9d40-7b6254d7d8ae'
 title: 'ShadowControl Client Installation'
 title_meta: 'ShadowControl Client Installation'
 keywords: ['shadowcontrol', 'client', 'installation', 'subscribe', 'proval']
@@ -35,6 +35,9 @@ The script will run a command-line argument against the stccmd application on th
 ## Output
 
 Script log messages only
+
+
+
 
 
 

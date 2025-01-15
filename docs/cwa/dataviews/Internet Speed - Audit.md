@@ -1,5 +1,5 @@
 ---
-id: 'cwa-speed-test-audit'
+id: '706c1dcb-998c-4d1e-a046-ab7538429aa7'
 title: 'Speed Test Audit Information'
 title_meta: 'Speed Test Audit Information'
 keywords: ['speed', 'audit', 'network', 'performance', 'bandwidth', 'latency', 'jitter', 'packetloss', 'isp']
@@ -50,6 +50,9 @@ Displays audited speed test information from the custom table [EPM - Network - C
 | ResultURL        | The URL of the speed test result.                                                           |
 | DownloadMbps     | The download speed detected in Mbps.                                                        |
 | UploadMbps       | The upload speed detected in Mbps.                                                          |
+
+
+
 
 
 

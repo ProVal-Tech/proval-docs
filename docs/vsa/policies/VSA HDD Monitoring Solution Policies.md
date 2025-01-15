@@ -1,5 +1,5 @@
 ---
-id: 'vsa-server-hdd-monitoring'
+id: 'b39fe35b-74b3-442d-a977-daef64294297'
 title: 'Server HDD Monitoring Policies'
 title_meta: 'Server HDD Monitoring Policies'
 keywords: ['monitoring', 'storage', 'remediation', 'drive', 'policy']
@@ -37,6 +37,9 @@ A C: drive monitor has been created for workstations.
   - **Policy Object Settings**:
     - **Policy Object Members**: [EPM - Disk - Monitor Set - Vsa HDD Monitoring Solution Monitor Sets](https://proval.itglue.com/DOC-5078775-10793257)
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
+
+
+
 
 
 

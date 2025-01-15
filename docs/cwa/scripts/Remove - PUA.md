@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-pua-implementation'
+id: 'dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf'
 title: 'CWA Implementation of Remove-PUA'
 title_meta: 'CWA Implementation of Remove-PUA'
 keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit']
@@ -117,6 +117,9 @@ The script is designed to send the list of installed Bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
+
+
+
 
 
 

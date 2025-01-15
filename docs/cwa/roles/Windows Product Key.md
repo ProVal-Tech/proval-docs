@@ -1,5 +1,5 @@
 ---
-id: 'ps-fetch-windows-product-key'
+id: 'ce712ea7-ef0f-447a-b60b-a2c5891d7585'
 title: 'Fetch Windows Product Key'
 title_meta: 'Fetch Windows Product Key'
 keywords: ['windows', 'product', 'key', 'fetch', 'regex']
@@ -17,6 +17,9 @@ This role runs a PowerShell to fetch the Windows Product key and matches to ensu
 | Detection String                                                                                   | Comparator    | Result                                        | Applicable OS |
 |----------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------|----------------|
 | `%@C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "(Get-CimInstance -Query 'select * from SoftwareLicensingService').OA3xOriginalProductKey"@%` | Regex Match   | [A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5} | Windows        |
+
+
+
 
 
 

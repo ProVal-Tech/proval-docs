@@ -1,5 +1,5 @@
 ---
-id: 'cwa-office365-update-channel-verification'
+id: '4be73d27-2026-4380-9d00-de9e825dd5e1'
 title: 'Office 365 Update Channel Verification'
 title_meta: 'Office 365 Update Channel Verification'
 keywords: ['office365', 'update', 'verification', 'channel', 'semi-annual']
@@ -17,6 +17,9 @@ This role will help to verify if Office 365 Update Channel is set to Semi-Annual
 | Detection String                                                        | Comparator | Result                                                                                                   | Applicable OS |
 |-------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------|---------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configuraion:CDNBaseUrl-%}` | Contains   | [http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114](http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114) | Windows       |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reboot-pending-prompt-monitor'
+id: '4e8aa00e-8e4d-413d-86d6-6798790c6235'
 title: 'Reboot Pending Prompt Monitor'
 title_meta: 'Reboot Pending Prompt Monitor'
 keywords: ['reboot', 'monitor', 'windows', 'uptime', 'script']
@@ -46,6 +46,9 @@ Windows Workstations - Should be run on non-servers and must be running Windows.
 | Disable Reboot Prompt  | CheckBox | Exclusions  | Client    | Flag this EDF to exclude the client from the solution.                |
 | Disable Reboot Prompt  | CheckBox | Exclusions  | Location  | Flag this EDF to exclude the location from the solution.              |
 | Disable Reboot Prompt  | CheckBox | Exclusions  | Computer  | Flag this EDF to exclude the computer from the solution.              |
+
+
+
 
 
 

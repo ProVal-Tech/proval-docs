@@ -1,5 +1,5 @@
 ---
-id: 'cwa-gpresult-data-storage'
+id: '53bcdcef-8942-4602-bc24-7db1b2cf29ae'
 title: 'GPRESULT Data Storage'
 title_meta: 'GPRESULT Data Storage - Generate and Store GPRESULT Data'
 keywords: ['gpresult', 'data', 'storage', 'table', 'windows']
@@ -33,6 +33,9 @@ See [EPM - Windows Configuration - Agnostic - Get-GPResult](https://proval.itglu
 - Script log
 - Local file on computer
 - Dataview
+
+
+
 
 
 

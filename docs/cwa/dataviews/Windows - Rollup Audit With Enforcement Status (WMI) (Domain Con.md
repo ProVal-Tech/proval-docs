@@ -1,5 +1,5 @@
 ---
-id: 'cwa-latest-rollup-installation-details'
+id: '090c6eaa-06b0-4062-a3e1-e00a76fd750c'
 title: 'Latest Rollup Installation Details on Domain Controllers'
 title_meta: 'Latest Rollup Installation Details on Domain Controllers'
 keywords: ['rollup', 'installation', 'domain', 'controllers', 'patch', 'audit']
@@ -33,6 +33,9 @@ This dataview collects latest rollup installation detail on domain controllers.
 | KB                | Latest rollup KB installed detail                      |
 | LastContact       | Agent Last Contact with the Automate                   |
 | Enforcement Status | Confirms if Enforcement enabled or not. This is outdated info as it has been fixed with Dec 2020 rollup release. |
+
+
+
 
 
 

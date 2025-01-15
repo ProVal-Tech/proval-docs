@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-key-retrieval'
+id: 'dfddb88b-37c2-4d42-b8a0-bb7ebe4da6d0'
 title: 'BitLocker Recovery Key Storage'
 title_meta: 'BitLocker Recovery Key Storage'
 keywords: ['bitlocker', 'recovery', 'key', 'storage', 'audit']
@@ -25,6 +25,9 @@ Stores the recovery key from the script [Bitlocker - Key Retrieval](https://prov
 | DriveID      | INT     | The associated drive of the recovery key.          |
 | RecoveryKey  | CHAR    | The BitLocker recovery key.                         |
 | LastUpdated  | DATETIME| The last time the agent recovery key was audited.  |
+
+
+
 
 
 

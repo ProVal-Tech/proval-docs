@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-mcafee'
+id: '561ad1ae-cf4c-49cf-83ea-c41148e66de8'
 title: 'Remove McAfee Software from Windows Machines'
 title_meta: 'Remove McAfee Software from Windows Machines'
 keywords: ['mcafee', 'uninstall', 'windows', 'software', 'removal']
@@ -29,6 +29,9 @@ This script is an Automate Implementation of the agnostic solution [SWM - Softwa
 ## Output
 
 - Script Log
+
+
+
 
 
 

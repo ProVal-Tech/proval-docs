@@ -1,5 +1,5 @@
 ---
-id: 'cwa-disk-gather-critical-info'
+id: '687261c3-e6d7-46bc-84f6-506007d47142'
 title: 'Disk - Gather Critical Info'
 title_meta: 'Disk - Gather Critical Info'
 keywords: ['disk', 'critical', 'info', 'data', 'failure', 'custom', 'table']
@@ -143,6 +143,9 @@ Appends data from that agnostic script to that created table.
    - This script is reporting on the state of the physical hard disk, not the logical drive, the percentage used is the percentage of the physical disk that is utilized by all designated partitions and those partition sizes reflect the total physical disk usage.
 4. I updated this script to its newest version and now the script fails every time
    - Please set refresh table to 'Yes' on the first run after a version upgrade of this script.
+
+
+
 
 
 

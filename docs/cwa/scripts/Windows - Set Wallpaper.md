@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-desktop-wallpaper'
+id: 'bd6b7507-eccf-4fce-a4e4-62b9b7c97a08'
 title: 'Set Active Desktop Wallpaper for All Users'
 title_meta: 'Set Active Desktop Wallpaper for All Users'
 keywords: ['desktop', 'wallpaper', 'enforcement', 'login', 'users', 'local', 'url']
@@ -38,6 +38,9 @@ Reset Mode:
 ```
 C:/ProgramData/_automation/script/Set-Wallpaper/Set-Wallpaper-log.txt
 ```
+
+
+
 
 
 

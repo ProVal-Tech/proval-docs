@@ -1,12 +1,12 @@
 ---
-id: 'cwa-ad-sync-troubleshooting'
+id: 'b6225f93-5cce-4939-bc95-1e36ca370e8f'
 title: 'AD Sync out of date troubleshooting'
 title_meta: 'AD Sync out of date troubleshooting'
 keywords: ['ad', 'sync', 'troubleshooting', 'credentials', 'plugin']
 description: 'This document provides a step-by-step guide to troubleshoot issues related to Active Directory Sync being out of date in ConnectWise Automate. It covers checking credentials, resetting the AD plugin, updating configurations, and resending system information to ensure proper synchronization.'
 tags: ['active-directory', 'configuration', 'update', 'security', 'software']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## AD Sync out of date troubleshooting
 
@@ -41,6 +41,9 @@ unlisted: true
 
 6. Return to the AD Domains plugin – reselect the correct credentials.
    - Refresh plugin and it should show success after a few minutes.
+
+
+
 
 
 

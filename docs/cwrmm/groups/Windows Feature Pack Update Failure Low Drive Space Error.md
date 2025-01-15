@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-feature-pack-update-failure-low-drive-space-error'
+id: 'f7cf60a6-9107-4188-9993-41ed9ed243d1'
 title: 'Windows Feature Pack Update Failure: Low Drive Space Error'
 title_meta: 'Windows Feature Pack Update Failure: Low Drive Space Error'
 keywords: ['windows', 'feature', 'update', 'drive', 'space', 'error']
@@ -46,6 +46,9 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 Click the `Save` button to Save the Group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_9.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_10.png)  
+
+
+
 
 
 

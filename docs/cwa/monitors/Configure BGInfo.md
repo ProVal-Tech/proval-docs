@@ -1,5 +1,5 @@
 ---
-id: 'cwa-implementing-winget-install-update-teams'
+id: '91b463bf-7bb2-4c79-98ca-ef556ea093b0'
 title: 'Implementing Winget Install/Update for Teams'
 title_meta: 'Implementing Winget Install/Update for Teams'
 keywords: ['winget', 'teams', 'install', 'update', 'monitor']
@@ -192,6 +192,9 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 
 - Now execute your query from a RAWSQL monitor set.
 - Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
+
+
+
 
 
 

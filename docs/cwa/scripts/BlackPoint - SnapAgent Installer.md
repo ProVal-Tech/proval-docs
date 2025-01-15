@@ -1,5 +1,5 @@
 ---
-id: 'cwa-snapagent-installation'
+id: '202e2dde-5865-4035-8410-37dc6cb92a60'
 title: 'SnapAgent Installation Script'
 title_meta: 'SnapAgent Installation Script for Efficient Deployment'
 keywords: ['snapagent', 'installation', 'monitor', 'edf', 'deployment']
@@ -59,6 +59,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Local files on the computer
+
+
+
 
 
 

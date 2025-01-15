@@ -1,5 +1,5 @@
 ---
-id: 'ps-restore-registry-value'
+id: '1f1d7e57-764e-4888-bda1-fc0ea45f85c0'
 title: 'Restore Registry Value'
 title_meta: 'Restore Registry Value - Detailed Guide'
 keywords: ['registry', 'restore', 'backup', 'windows', 'administration']
@@ -61,5 +61,8 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM                      |                                          |
 | Kaseya                               |                                          |
 | Datto RMM                            |                                          |
+
+
+
 
 

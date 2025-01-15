@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bios-boot-type'
+id: '9939d4b0-3332-4990-badc-03d5e7f43e25'
 title: 'BIOS Boot Type Dataview'
 title_meta: 'BIOS Boot Type Dataview'
 keywords: ['bios', 'boot', 'uefi', 'legacy', 'client', 'location', 'computer', 'manufacturer', 'version']
@@ -27,6 +27,9 @@ This dataview will show the BIOS boot type for machines, whether they are UEFI o
 | BIOS Name            | The name of the BIOS. This may display the model of the machine as well                        |
 | BIOS Version         | The BIOS version detected by Automate                                                           |
 | BIOS Type            | Using the [BIOS Type - Legacy](https://proval.itglue.com/DOC-5078775-7899860) role, this will determine if the machine has the legacy or UEFI boot type |
+
+
+
 
 
 

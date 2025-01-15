@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-remove-shared-folders'
+id: 'a58ee59c-988e-4c12-a97b-c5e97f22905e'
 title: 'Create or Remove Shared Folders'
 title_meta: 'Create or Remove Shared Folders'
 keywords: ['shared', 'folders', 'windows', 'script', 'permissions']
@@ -55,6 +55,9 @@ The script will execute a PowerShell script passing the above parameters. The sc
 ## Output
 
 Script log messages
+
+
+
 
 
 

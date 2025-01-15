@@ -1,5 +1,5 @@
 ---
-id: 'cwa-backup-bitlocker-recovery-key'
+id: '5f31f0b4-b682-4444-bd51-3182a8a2bd39'
 title: 'Backup Bitlocker Recovery Key to AD Domain'
 title_meta: 'Backup Bitlocker Recovery Key to Active Directory Domain'
 keywords: ['bitlocker', 'backup', 'recovery', 'ad', 'encryption', 'script']
@@ -44,6 +44,9 @@ Machine must be using Bitlocker for encryption.
 ## Output
 
 - Script log
+
+
+
 
 
 

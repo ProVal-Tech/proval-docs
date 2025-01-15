@@ -1,5 +1,5 @@
 ---
-id: 'cwa-user-profile-sizes'
+id: '991ac24f-7c21-48c9-a649-43d17da6a515'
 title: 'User Profile Sizes on Windows Machine'
 title_meta: 'User Profile Sizes on Windows Machine'
 keywords: ['user', 'profile', 'sizes', 'windows', 'machine', 'folder', 'size', 'os']
@@ -27,6 +27,9 @@ This dataview displays all the available User Profile sizes on the windows machi
 | Profile Path     | Display the user profile folder path.            |
 | Profile Size (MB)| Display the user profile folder size in MB.     |
 | OS               | Display the computer operating system.           |
+
+
+
 
 
 

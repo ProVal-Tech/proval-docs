@@ -1,5 +1,5 @@
 ---
-id: 'cwa-fetch-cwm-info'
+id: '07374a48-b25b-47d0-884c-14306a91d0bb'
 title: 'Fetch Basic Information from CW Manage'
 title_meta: 'Fetch Basic Information from CW Manage'
 keywords: ['fetch', 'cwm', 'info', 'dataview', 'automate']
@@ -28,6 +28,9 @@ The purpose of the solution is to fetch basic information about the computer fro
 - Set the relevant values to the script's global variables. Refer to the script's document for more information.
 - Run the script against the Automate server or an online server in the partner's internal environment.
 - Schedule the script to run once per day/week against the Automate server or an online server in the partner's internal environment to keep the dataview up-to-date.
+
+
+
 
 
 

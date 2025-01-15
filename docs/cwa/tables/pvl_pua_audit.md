@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-data-removal'
+id: '2c4a0323-9532-4145-8fca-d9151c20773c'
 title: 'Audit Data for PUA Removal'
 title_meta: 'Audit Data for PUA Removal'
 keywords: ['audit', 'pua', 'data', 'removal', 'script']
@@ -26,6 +26,9 @@ Holds audit data from [CWM - Automate - Script - Remove - PUA](https://proval.it
 | Name                | VARCHAR  | Primary Key, the name of the bloatware. |
 | Category            | VARCHAR  | The Category that the pua belongs to.   |
 | DataCollectionTime  | DateTime | Data Collection Time                     |
+
+
+
 
 
 

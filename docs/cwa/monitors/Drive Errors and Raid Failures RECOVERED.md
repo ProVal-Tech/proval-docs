@@ -1,5 +1,5 @@
 ---
-id: 'cwa-drive-errors-monitor'
+id: 'fc982478-9b78-470f-b9c0-35d21761c7ef'
 title: 'Drive Errors and RAID Failures Monitor'
 title_meta: 'Drive Errors and RAID Failures Monitor'
 keywords: ['drive', 'raid', 'errors', 'monitor', 'windows', 'eventlogs']
@@ -81,6 +81,9 @@ is the number of events.
 Translated from programming to human, this essentially says "Do not tell me about controller errors unless there are more than 20 of them". 
 
 This could work for Paging Errors or Bad Blocks or really anything you can match.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-offboarding-process'
+id: 'cb9ba98d-9a64-4003-b7d5-a7a18192f161'
 title: 'Offboarding Process Implementation'
 title_meta: 'Offboarding Process Implementation for Client Requirements'
 keywords: ['offboarding', 'monitor', 'scripts', 'automation', 'configuration']
@@ -51,6 +51,9 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
      - Offboard Client
      - Offboard Location
      - Offboard Computer
+
+
+
 
 
 

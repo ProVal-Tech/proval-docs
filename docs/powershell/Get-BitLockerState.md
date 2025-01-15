@@ -59,3 +59,6 @@ The script generates the following output files in the same directory where it i
 - Administrative rights are required to access BitLocker status information.
 - The script does not modify any system settings or BitLocker configurations.
 
+
+
+

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-teams-installer'
+id: '3f036a74-e39e-4802-86a3-7087b1f0f7cb'
 title: 'Detect Missing Teams Machine-Wide Installer'
 title_meta: 'Detect Missing Teams Machine-Wide Installer'
 keywords: ['teams', 'installer', 'monitor', 'windows', 'workstations']
@@ -42,6 +42,9 @@ Managed Windows Workstations
 
 Follow the steps provided in this private document to implement the solution:  
 [**Implement - Remote Monitor - Deploy Teams**](https://proval.itglue.com/DOC-5078775-13497993)  
+
+
+
 
 
 

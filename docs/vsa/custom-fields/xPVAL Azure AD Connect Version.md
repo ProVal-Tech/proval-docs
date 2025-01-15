@@ -1,5 +1,5 @@
 ---
-id: 'vsa-azure-ad-connect-version-audit'
+id: 'cce3e0b2-3fe2-43d2-ba22-ca7885d4729a'
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'ad', 'connect', 'version', 'audit']
@@ -26,6 +26,9 @@ Contains Azure AD Connect Version installed on the endpoint
 | Field Name                          | Type of Field (Machine or Organization) | Description              |
 |-------------------------------------|-----------------------------------------|--------------------------|
 | xPVAL Azure AD Connect Version      | Machine CF                             | Azure AD Connect Version  |
+
+
+
 
 
 

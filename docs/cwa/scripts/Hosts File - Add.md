@@ -1,5 +1,5 @@
 ---
-id: 'cwa-host-file-modification-script'
+id: '3067b867-c1d4-4f7b-9a21-5344c7078931'
 title: 'Host File Modification Script'
 title_meta: 'Host File Modification Script for DNS Management'
 keywords: ['dns', 'host', 'ip', 'script', 'configuration']
@@ -43,6 +43,9 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents (Extra Data Field)
   - ![Output 1](../../../static/img/Hosts-File---Add/image_2.png) OR ![Output 2](../../../static/img/Hosts-File---Add/image_3.png)
+
+
+
 
 
 

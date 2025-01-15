@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-endpoints-domain-joined'
+id: '324645f2-c11e-4ca8-80b4-4ba1f53bd602'
 title: 'Check Endpoints for Domain Join Status and External DNS Detection'
 title_meta: 'Check Endpoints for Domain Join Status and External DNS Detection'
 keywords: ['endpoints', 'domain', 'dns', 'report', 'custom', 'agent', 'procedure']
@@ -22,6 +22,9 @@ Checks endpoints to see if they're domain joined, and then reports on if externa
 ## Implementation
 
 Agent Procedure requires Custom Field to be created prior.
+
+
+
 
 
 

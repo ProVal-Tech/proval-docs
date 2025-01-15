@@ -1,5 +1,5 @@
 ---
-id: 'cwa_cleanup_old_data_script'
+id: '21a017d1-11e9-40ea-817f-d5503da5bfc8'
 title: 'Cleanup Old Data Script for ConnectWise Automate'
 title_meta: 'Cleanup Old Data Script for ConnectWise Automate'
 keywords: ['cleanup', 'automate', 'database', 'tickets', 'history', 'network', 'roles', 'contacts', 'events', 'patch']
@@ -53,6 +53,9 @@ This script cleans up lots of tables in the database, in order of operation:
 10. Network Device Cleanup
 11. Inactive Ticket Status Cleanup
 12. Patch Manager History Cleanup
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-identifying-computers-with-outdated-cumulative-updates'
+id: 'a835c448-fd00-4807-a3b2-8f1066e1a682'
 title: 'Identifying Computers with Outdated Cumulative Updates'
 title_meta: 'Identifying Computers with Outdated Cumulative Updates'
 keywords: ['computers', 'cumulative', 'updates', 'monitor', 'ticket', 'alert', 'dependencies']
@@ -51,6 +51,9 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **Q1)** What happens if the machine hasn't logged in for several days or the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different than the lastruntime check from the table "[Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)"?
 
 **Ans)** This monitor will ignore the agents whose last contact date is older than 7 days from monitoring and also exclude the agents where the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) has not run from the scheduled days period which should be matched to the p.scriptruntime set in the monitor.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'ps-winsat-scores'
+id: 'f716df74-c208-45fd-bff8-2865399e446b'
 title: 'WinSAT Scores Collection Procedure'
 title_meta: 'WinSAT Scores Collection Procedure'
 keywords: ['winsat', 'scores', 'procedure', 'endpoint', 'performance']
@@ -63,6 +63,9 @@ The procedure utilizes WinSAT and custom fields to store the scores of the machi
 ## Output
 
 Agent Procedure Log
+
+
+
 
 
 

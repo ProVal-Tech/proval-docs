@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lockdown-browsers-password-manager'
+id: 'b78c363d-7a4b-4d10-b4ab-38b348dd81f5'
 title: 'Lockdown Browsers Password Manager Implementation'
 title_meta: 'Lockdown Browsers Password Manager Implementation'
 keywords: ['lockdown', 'browsers', 'password', 'manager', 'implementation']
@@ -166,6 +166,9 @@ Refresh Searches and Groups.
 Confirm the presence of the `ProVal - Production - Lockdown Chromium Browsers Credit Cards and Addresses Autofill` remote monitor on the `△ Lockdown Browsers Password Manager` group.
 
 ![Image](../../../static/img/Lockdown-Chromium-Browsers-Credit-Cards-and-Addresses-Autofill/image_3.png)
+
+
+
 
 
 

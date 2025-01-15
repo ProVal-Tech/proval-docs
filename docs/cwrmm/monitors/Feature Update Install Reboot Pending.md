@@ -1,5 +1,5 @@
 ---
-id: 'rmm-feature-update-install-reboot-pending'
+id: '94a786f8-dfa2-416c-aa3b-e57acbba1cb2'
 title: 'Feature Update Install Reboot Pending Notifications'
 title_meta: 'Feature Update Install Reboot Pending Notifications'
 keywords: ['notifications', 'feature', 'update', 'install', 'reboot', 'pending', 'monitor']
@@ -50,6 +50,9 @@ Notifications for the computer where the `Feature Update Install with Tracking` 
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Reboot-Pending/image_10.png)
+
+
+
 
 
 

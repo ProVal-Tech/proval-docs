@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-11-compatibility-runtime'
+id: 'ffce7cd6-7757-4918-bce0-461cf9dce0b4'
 title: 'Windows 11 Compatibility Validation Runtime'
 title_meta: 'Windows 11 Compatibility Validation Runtime'
 keywords: ['windows', 'validation', 'runtime', 'upgrade', 'endpoint']
@@ -22,6 +22,9 @@ Stores the run time of the Windows 11 Compatibility Validation task.
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-RunTime/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-RunTime/image_2.png)
+
+
+
 
 
 

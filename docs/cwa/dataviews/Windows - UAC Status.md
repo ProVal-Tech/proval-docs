@@ -1,5 +1,5 @@
 ---
-id: 'cwa-audit-uac-status'
+id: '335758e3-0273-4554-8af0-8106150d8281'
 title: 'Audit UAC Status on Machines'
 title_meta: 'Audit UAC Status on Machines'
 keywords: ['uac', 'audit', 'status', 'machines', 'script']
@@ -24,6 +24,9 @@ This dataview helps you audit UAC status on machines with the help of a script @
 | Machine Name          | Displays the name of the machine            |
 | Location Name         | Displays the name of the location           |
 | User Account Control   | Displays the status of UAC on machines      |
+
+
+
 
 
 

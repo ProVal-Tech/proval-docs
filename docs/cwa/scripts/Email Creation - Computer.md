@@ -1,5 +1,5 @@
 ---
-id: 'cwa-email-notification-script'
+id: 'f63c0791-3057-4e90-888e-ae6f2ada558a'
 title: 'Email Notification Script for Monitors'
 title_meta: 'Email Notification Script for Monitors'
 keywords: ['email', 'monitor', 'alerts', 'notification', 'sql']
@@ -58,6 +58,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
+
+
+
 
 
 

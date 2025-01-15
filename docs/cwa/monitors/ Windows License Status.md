@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-license-status-monitor-setup'
+id: 'c4f16671-88c6-4a14-929b-ad3f47b967a0'
 title: 'Setting Up a Windows License Status Monitor'
 title_meta: 'Setting Up a Windows License Status Monitor'
 keywords: ['windows', 'monitor', 'license', 'status', 'setup']
@@ -264,6 +264,9 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 Set the alert template to `△ Custom - Ticket Creation Computer - Warning and Failed` on the monitor.
 
 ![Image](../../../static/img/-Windows-License-Status/image_2.png)
+
+
+
 
 
 

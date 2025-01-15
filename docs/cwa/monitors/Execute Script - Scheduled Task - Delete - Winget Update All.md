@@ -1,5 +1,5 @@
 ---
-id: 'cwa-internal-monitor-winget-update'
+id: 'dc75761e-6b11-40be-973e-e01290c8c134'
 title: 'Internal Monitor for Winget Update Tasks'
 title_meta: 'Internal Monitor for Winget Update Tasks'
 keywords: ['windows', 'monitor', 'task', 'winget', 'update', 'client']
@@ -28,6 +28,9 @@ Global
 **Name:** △ Custom - Execute Script - Scheduled Task - Delete - Winget Update All
 
 The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949) against the detected machines.
+
+
+
 
 
 

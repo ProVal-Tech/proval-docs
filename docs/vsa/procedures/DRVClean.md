@@ -1,5 +1,5 @@
 ---
-id: 'vsa-drive-cleaning-script'
+id: 'c0e6e1fb-4ff3-465f-9af7-83984cb6b0bf'
 title: 'Drive Cleaning Script for VSA and LT'
 title_meta: 'Drive Cleaning Script for VSA and LT'
 keywords: ['drive', 'cleaning', 'script', 'wmi', 'vsa', 'lt']
@@ -15,6 +15,9 @@ Drive cleaning script both VSA and LT use (WMI)
 ## Parameters:
 
 - **-drive**: Optional. The target drive. If not defined then all drives are processed.
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-symantec-endpoint-protection'
+id: '7940894c-700c-442d-b0ba-0f197548a8fd'
 title: 'Uninstall Symantec Endpoint Protection'
 title_meta: 'Uninstall Symantec Endpoint Protection using PowerShell'
 keywords: ['uninstall', 'symantec', 'endpoint', 'protection', 'script']
@@ -37,6 +37,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

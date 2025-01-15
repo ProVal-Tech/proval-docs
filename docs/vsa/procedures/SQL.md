@@ -1,5 +1,5 @@
 ---
-id: 'vsa-clear-failed-patches-sql'
+id: 'd0694f70-303e-4518-b47c-a796ca73d905'
 title: 'Clear Failed Patches Using SQL'
 title_meta: 'Clear Failed Patches Using SQL - Kaseya VSA Guide'
 keywords: ['patch', 'sql', 'kb', 'database', 'vsa']
@@ -57,6 +57,9 @@ Allows to clear a patch from Failed Patches with help of SQL.
 
 3. Run this Query on KSubscribers on SQL Server.  
    ![](../../../static/img/SQL/image_3.png)
+
+
+
 
 
 

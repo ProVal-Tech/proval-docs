@@ -1,5 +1,5 @@
 ---
-id: 'cwa_shadow_copy_monitor'
+id: '403139ff-70e7-440d-9683-be915f4ce16f'
 title: 'Shadow Copy Monitor for Windows Machines'
 title_meta: 'Shadow Copy Monitor for Windows Machines'
 keywords: ['monitor', 'shadow', 'copy', 'windows', 'agents']
@@ -22,6 +22,9 @@ This monitor will detect agents where shadow copies are not present or older tha
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-effectiveness-monitor'
+id: '8c184241-699a-4722-9eca-65221ae35c55'
 title: 'Script Effectiveness Monitor Configuration'
 title_meta: 'Script Effectiveness Monitor Configuration'
 keywords: ['monitor', 'scripts', 'effectiveness', 'tickets', 'threshold', 'alerting']
@@ -73,6 +73,9 @@ Recommended Alert Template: Default Create Ticket
 ## Target
 
 Global
+
+
+
 
 
 

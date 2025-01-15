@@ -1,5 +1,5 @@
 ---
-id: 'cwa_installs_connectwise_automate_agent'
+id: 'bb088b81-eed8-45bb-861b-2349d3e798fa'
 title: 'Installs the Connectwise Automate Agent'
 title_meta: 'Installs the Connectwise Automate Agent with Site Variables'
 keywords: ['connectwise', 'automate', 'agent', 'installation', 'variables', 'bulk', 'import']
@@ -93,6 +93,9 @@ LastStatus    : 7
 
 Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
+
+
+
 
 
 

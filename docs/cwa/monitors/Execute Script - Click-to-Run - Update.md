@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-office-click-to-run-update'
+id: '2ed11d29-387b-4b8e-8a8b-b77891fe2b87'
 title: 'Microsoft Office Click-to-Run Update Monitor'
 title_meta: 'Microsoft Office Click-to-Run Update Monitor'
 keywords: ['office365', 'update', 'monitor', 'script', 'execution']
@@ -27,6 +27,9 @@ Windows Workstations
 **Name:** `△ Custom - Execute Script - Microsoft office - Click-to-Run - Update (ScriptState)`
 
 The alert template should execute the "Microsoft Office - Click-to-Run - Update (ScriptState)" script.
+
+
+
 
 
 

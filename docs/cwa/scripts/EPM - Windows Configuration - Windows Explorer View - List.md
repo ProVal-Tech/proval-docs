@@ -1,5 +1,5 @@
 ---
-id: 'cwa-set-windows-explorer-list-view'
+id: '6eddbb86-86a9-4812-8a5e-3302933800c9'
 title: 'Set Windows Explorer to List View'
 title_meta: 'Set Windows Explorer to List View'
 keywords: ['windows', 'explorer', 'list', 'view', 'shell', 'registry']
@@ -35,6 +35,9 @@ This script performs below action:
 ## Output
 
 - Script log
+
+
+
 
 
 

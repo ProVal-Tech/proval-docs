@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-internal-monitors'
+id: 'ad298109-c6b4-4af4-8ef1-37ba43db737f'
 title: 'Custom Internal Monitors Overview'
 title_meta: 'Custom Internal Monitors Overview'
 keywords: ['monitors', 'status', 'alert', 'template', 'script', 'failure', 'scan', 'group']
@@ -44,6 +44,9 @@ Color Coding is applied to the columns "Monitor Status", "Script Nature", and "M
 **Script Nature:** Here, the "ProVal Script" is highlighted in Green to catch the eye of where the "ProVal" scripts are used as an autofix.
 
 **Monitor Synced/Updated:** It has "Yes" highlighted in Green, "No" highlighted in Red, and "N/A" highlighted in Grey to catch the eye easily and show whether the monitor is properly synced/updated from the ProVal plugin.
+
+
+
 
 
 

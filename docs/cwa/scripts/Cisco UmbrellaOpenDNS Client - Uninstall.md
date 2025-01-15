@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-opendns-umbrella-client'
+id: '98d2c1fc-cac4-41a6-b0e4-29f7eb813197'
 title: 'Remove OpenDNS Umbrella Roaming Client'
 title_meta: 'Remove OpenDNS Umbrella Roaming Client'
 keywords: ['opendns', 'umbrella', 'client', 'uninstall', 'ticket']
@@ -31,6 +31,9 @@ This Script can be used for removing OpenDNS Umbrella Roaming Client silently.
 
 - Script log
 - Ticket
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-user-profile'
+id: '97ff1c2c-6782-4bd1-a169-d2aa908c89b4'
 title: 'Remove User Profile'
 title_meta: 'Remove User Profile'
 keywords: ['user', 'profile', 'remove', 'account', 'local']
@@ -173,6 +173,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

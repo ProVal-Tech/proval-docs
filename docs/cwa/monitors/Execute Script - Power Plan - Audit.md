@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-data-collection-script-power-plan-audit'
+id: 'fdbe1912-b216-4876-b64b-db83eee691a1'
 title: 'EPM Data Collection Script Power Plan Audit'
 title_meta: 'EPM Data Collection Script Power Plan Audit'
 keywords: ['epm', 'script', 'audit', 'power', 'plan', 'collection']
@@ -32,6 +32,9 @@ Managed Workstations
 The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) script.  
 
 ![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_3.png)  
+
+
+
 
 
 

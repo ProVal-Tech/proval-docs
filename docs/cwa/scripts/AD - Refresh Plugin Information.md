@@ -1,5 +1,5 @@
 ---
-id: 'cwa-reset-ad-plugin'
+id: '17153d23-676f-47b8-bc1c-f32fb10049c0'
 title: 'Reset AD Plugin for Domain Controller'
 title_meta: 'Reset AD Plugin for Domain Controller'
 keywords: ['active-directory', 'plugin', 'synchronize', 'labtech', 'command']
@@ -22,6 +22,9 @@ Time Saved by Automation: 5 Minutes
 
 - Runs LabTech Command 13 to reset the AD plugin on the DC
 - Run another LabTech command "update plugins" to synchronize plugin data on the agent.
+
+
+
 
 
 

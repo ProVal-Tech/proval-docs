@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hardware-hash-details'
+id: 'd7da7b86-19e7-4bad-9936-8687800cee66'
 title: 'Hardware Hash Details of Windows Agents'
 title_meta: 'Hardware Hash Details of Windows Agents'
 keywords: ['windows', 'agents', 'hash', 'client', 'location', 'operating', 'system', 'make', 'model', 'serial', 'autopilot']
@@ -29,6 +29,9 @@ Displays the Hardware Hash details of Windows agents.
 | Model             | Model of the agent within the Automate                   |
 | Serial Number     | Serial Number of the agent within the Automate           |
 | Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](https://proval.itglue.com/DOC-5078775-17245317) |
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-hide-unhide-hidden-files'
+id: 'be2a3cab-5528-4b53-a636-713198b10fa1'
 title: 'Hide/Unhide Hidden Files Script'
 title_meta: 'Hide/Unhide Hidden Files Script'
 keywords: ['hidden', 'files', 'script', 'automation', 'parameter']
@@ -35,6 +35,9 @@ Time Saved by Automation: 2 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

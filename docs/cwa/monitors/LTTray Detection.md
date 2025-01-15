@@ -1,5 +1,5 @@
 ---
-id: 'cwa-lttray-port-check'
+id: '28ddee2c-510a-4557-941a-168d155eacdc'
 title: 'LTTray Port Check for Windows Machines'
 title_meta: 'LTTray Port Check for Windows Machines'
 keywords: ['lttray', 'port', 'registry', 'monitor', 'windows']
@@ -29,6 +29,9 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 ## Target
 
 Windows machine
+
+
+
 
 
 

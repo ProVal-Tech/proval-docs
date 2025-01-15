@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-access-software-list'
+id: 'ff05755d-c0eb-4617-82fd-33e74e95b34c'
 title: 'Installed Remote Access Software Overview'
 title_meta: 'Installed Remote Access Software Overview'
 keywords: ['remote', 'access', 'software', 'installed', 'list']
@@ -59,6 +59,9 @@ Will detect the following remote software:
 | Location           | Location Name                           |
 | Computer           | Computer Name                           |
 | Remote Software    | List of Remote software installed.      |
+
+
+
 
 
 

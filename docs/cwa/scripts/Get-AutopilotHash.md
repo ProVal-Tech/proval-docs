@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autopilot-hash'
+id: '9171549a-070a-4346-be90-393416713806'
 title: 'Get Autopilot Hash for Device Registration'
 title_meta: 'Get Autopilot Hash for Device Registration'
 keywords: ['autopilot', 'hash', 'device', 'registration', 'edf']
@@ -33,6 +33,9 @@ It is intended to run as an autofix Script with [CWA - Internal Monitor - ProVal
 ## Output
 
 - Script Logs
+
+
+
 
 
 

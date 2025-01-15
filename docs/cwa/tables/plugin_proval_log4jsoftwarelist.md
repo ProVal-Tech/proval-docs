@@ -1,5 +1,5 @@
 ---
-id: 'cwa-log4j-affected-applications'
+id: 'f78c8a37-448e-4a52-b475-412b0625edde'
 title: 'Log4J Affected Applications Information'
 title_meta: 'Log4J Affected Applications Information'
 keywords: ['log4j', 'applications', 'vulnerability', 'software', 'security']
@@ -29,6 +29,9 @@ Stores information from [https://github.com/NCSC-NL/log4shell/blob/main/software
 | Status   | VARCHAR | The current vulnerable status of the application. |
 | Notes    | VARCHAR | Any notes about the application                   |
 | Links    | VARCHAR | Links about the application's vulnerability.      |
+
+
+
 
 
 

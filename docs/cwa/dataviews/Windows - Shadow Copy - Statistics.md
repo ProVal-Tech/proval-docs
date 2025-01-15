@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-shadow-copy-statistics'
+id: '1de94554-1057-4e13-99ff-4d9dba02a180'
 title: 'Windows Shadow Copy Statistics Dataview'
 title_meta: 'Windows Shadow Copy Statistics Dataview'
 keywords: ['shadow', 'copy', 'statistics', 'windows', 'dataview']
@@ -32,6 +32,9 @@ Custom table: [EPM - Windows Configuration - Custom Table - plugin_proval_shadow
 | ShadowCopyCount    | The number of Shadow Copies on the machine                          |
 | OldestShadowCopy   | The oldest available Shadow Copy date                               |
 | LatestShadowCopy   | The most recent available Shadow Copy date                          |
+
+
+
 
 
 

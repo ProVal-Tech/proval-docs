@@ -1,5 +1,5 @@
 ---
-id: 'cwa-esxi-storage-monitor'
+id: '9b1477b3-6d88-4a1c-b313-50c638bb84ee'
 title: 'ESXi Storage Monitor'
 title_meta: 'ESXi Storage Monitor for VMWare Monitoring'
 keywords: ['esxi', 'monitor', 'storage', 'vmware', 'alert']
@@ -24,6 +24,9 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
+
+
+
 
 
 

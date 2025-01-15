@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-domain-admin-lockout'
+id: 'a24b00c5-49d4-4a2b-9090-a2716b56cf47'
 title: 'Remote Monitor for Domain Admin Account Lockout'
 title_meta: 'Remote Monitor for Domain Admin Account Lockout'
 keywords: ['monitor', 'domain', 'admin', 'lockout', 'ticket', 'alert']
@@ -54,6 +54,9 @@ Domain Admin Locked Account Detected on %computername%. Refer to the below detai
 Please follow the below implementation document to install this content:
 
 - [Implement - Remote Monitor - Domain Admin Account Lockout](https://proval.itglue.com/DOC-5078775-16951789)
+
+
+
 
 
 

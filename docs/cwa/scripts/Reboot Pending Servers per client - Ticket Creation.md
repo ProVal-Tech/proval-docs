@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-ticket-reboot-management'
+id: '9be930d0-0f3e-40c2-8135-3a77e59a1e9e'
 title: 'Client-Level Ticket Management for Pending Server Reboots'
 title_meta: 'Client-Level Ticket Management for Pending Server Reboots'
 keywords: ['ticket', 'server', 'reboot', 'client', 'management', 'pending', 'automation']
@@ -34,6 +34,9 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 **Computer-Level ticket:**  
 ![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
+
+
+
 
 
 

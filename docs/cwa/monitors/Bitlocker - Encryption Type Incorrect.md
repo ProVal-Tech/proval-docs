@@ -1,5 +1,5 @@
 ---
-id: 'cwa-bitlocker-monitoring'
+id: '561f5be7-feb7-4c6a-b7b3-5ca93b39a40c'
 title: 'Bitlocker Monitoring Script Overview'
 title_meta: 'Bitlocker Monitoring Script Overview'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'compliance']
@@ -72,6 +72,9 @@ AND (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Encryption-Type-Incorrect/image_1.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'rmm-office-c2r-auditing'
+id: '4611eb6b-e00e-4e38-9935-531f71852e8c'
 title: 'Office C2R Auditing Group Creation'
 title_meta: 'Office C2R Auditing Group Creation'
 keywords: ['microsoft', 'group', 'auditing', 'software', 'dynamic']
@@ -44,6 +44,9 @@ Computers with Microsoft 365 installed.
 
 ![Image](../../../static/img/Office-C2R-Auditing/image_10.png)  
 ![Image](../../../static/img/Office-C2R-Auditing/image_11.png)
+
+
+
 
 
 

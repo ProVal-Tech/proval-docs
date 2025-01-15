@@ -1,5 +1,5 @@
 ---
-id: 'cwa-edf-log4j-vulnerability-report'
+id: '59595d20-d1f8-4406-b574-58a4d32b0384'
 title: 'EDF Log4J Vulnerability Report'
 title_meta: 'EDF Log4J Vulnerability Report'
 keywords: ['edf', 'log4j', 'vulnerability', 'scan', 'security']
@@ -30,6 +30,9 @@ Displays information about the EDFs filled by [SEC - Endpoint Protection - Scrip
 | Log Location                 | The location on the computer of the script log file.               |
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
+
+
+
 
 
 

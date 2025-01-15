@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cwamessagequeue-monitoring'
+id: 'a1fb4b3c-b08f-4090-9df7-66e7d80ca93d'
 title: 'CWA Message Queue Monitoring'
 title_meta: 'CWA Message Queue Monitoring'
 keywords: ['cwa', 'monitoring', 'service', 'alert', 'ticket']
@@ -26,6 +26,9 @@ It should be created against the "Labtech Server" group for the on-prem partners
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers.Server Roles.MSP Specific Servers.Labtech Server  
+
+
+
 
 
 

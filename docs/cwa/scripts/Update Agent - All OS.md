@@ -1,5 +1,5 @@
 ---
-id: 'cwa-update-agent-script'
+id: '803b51b1-d17f-429c-835d-55712c49e75e'
 title: 'Update Outdated Agents in ConnectWise Automate'
 title_meta: 'Update Outdated Agents in ConnectWise Automate'
 keywords: ['agent', 'update', 'environment', 'sql', 'version']
@@ -22,6 +22,9 @@ Time Saved by Automation: 2 Minutes
 
 - The script will run some SQL to pull the highest agent version in the environment and will attempt to update the agent using those parameters.
 - The script is intended to be used with ProVal – Production – Agent – Out of Date
+
+
+
 
 
 

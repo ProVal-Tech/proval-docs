@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cluster-server-patching'
+id: '35bce608-7df7-4cc3-bd10-8037198f5025'
 title: 'Cluster Server Patching Script'
 title_meta: 'Cluster Server Patching Script for Automate'
 keywords: ['ticket', 'update', 'cluster', 'patching', 'cumulative', 'automation']
@@ -36,6 +36,9 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank You!
+
+
+
 
 
 

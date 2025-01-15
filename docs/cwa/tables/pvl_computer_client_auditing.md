@@ -1,5 +1,5 @@
 ---
-id: 'cwa-agents-migration-monitoring'
+id: '0030148b-608a-449a-9d52-ff1678fa79c0'
 title: 'Agents Migration Monitoring - Client-Level'
 title_meta: 'Agents Migration Monitoring - Client-Level'
 keywords: ['migration', 'monitoring', 'clients', 'temporary', 'table']
@@ -25,6 +25,9 @@ It's a temporary table created by [CWM - Automate - Script - Agents Migration Mo
 | Computerid  | int(8)  | Computerid     |
 | Clientid    | int(8)  | Clientid       |
 | Timestamp   | datetime | Script Run Time |
+
+
+
 
 
 

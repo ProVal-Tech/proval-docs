@@ -1,5 +1,5 @@
 ---
-id: 'cwa-built-in-scripts-permissions'
+id: '22dabcfc-b55c-4eae-81df-96c01446c3b7'
 title: 'Built-In Scripts Permissions'
 title_meta: 'Built-In Scripts Permissions'
 keywords: ['guid', 'permissions', 'userclass', 'scripts', 'access']
@@ -27,6 +27,9 @@ Stores the GUID and the set of user class(es) for Built-In scripts.
 | Developer            | varchar | Creator of the script (Stock or ProVal). The beta version of the solution is limited to the stock scripts. |
 | InitialPermission     | varchar | Existing view permission of the script.                                                          |
 | InitialEditPermission | varchar | Existing Edit Permission of the script.                                                           |
+
+
+
 
 
 

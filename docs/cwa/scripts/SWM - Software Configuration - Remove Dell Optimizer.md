@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-dell-optimizer'
+id: 'b9420698-4c50-42f5-8a9e-6834d03a9ebf'
 title: 'Remove Dell Optimizer Application'
 title_meta: 'Remove Dell Optimizer Application'
 keywords: ['dell', 'optimizer', 'uninstall', 'reboot']
@@ -31,6 +31,9 @@ Leave the parameter blank to restart the computer manually.
 ## Output
 
 - Script Log
+
+
+
 
 
 

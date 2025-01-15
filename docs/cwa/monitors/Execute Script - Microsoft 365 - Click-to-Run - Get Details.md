@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-365-click-to-run-monitor'
+id: '66fedeee-80d2-482b-9520-5fdfcab42406'
 title: 'Microsoft 365 Click-to-Run Monitor'
 title_meta: 'Microsoft 365 Click-to-Run Monitor'
 keywords: ['microsoft', 'office', 'monitor', 'click-to-run', 'script']
@@ -26,6 +26,9 @@ Managed Windows Computers
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
+
+
+
 
 
 

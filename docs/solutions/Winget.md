@@ -1,5 +1,5 @@
 ---
-id: 'rmm-winget-software-management'
+id: 'dafd3948-55e4-4c52-8113-5eae1bbac98c'
 title: 'Uninstall/Install/Update Software via Winget'
 title_meta: 'Uninstall/Install/Update Software via Winget'
 keywords: ['winget', 'software', 'install', 'update', 'uninstall']
@@ -21,6 +21,9 @@ This solution is designed to Uninstall/Install/Update software via Winget
 | [CW RMM - Task - Winget Upgrade All](https://proval.itglue.com/5078775/docs/13473030#version=published&amp;documentMode=view) | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint. Attempts to install an application via Winget |
 
 ## FAQ
+
+
+
 
 
 

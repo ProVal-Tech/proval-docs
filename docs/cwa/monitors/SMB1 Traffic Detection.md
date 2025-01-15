@@ -1,5 +1,5 @@
 ---
-id: 'cwa-smb1-server-auditing'
+id: '7665cb82-1340-4f76-ba0e-e7c277c40f73'
 title: 'SMB1 Server Auditing Remote Monitor'
 title_meta: 'SMB1 Server Auditing Remote Monitor'
 keywords: ['smb1', 'monitor', 'server', 'auditing', 'event', 'logs']
@@ -49,6 +49,9 @@ Details: `
 ## Implementation
 
 [Implement - Remote Monitor - SMB1 Traffic Detection](https://proval.itglue.com/DOC-5078775-14461257)
+
+
+
 
 
 

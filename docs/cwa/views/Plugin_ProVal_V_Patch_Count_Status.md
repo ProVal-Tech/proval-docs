@@ -1,5 +1,5 @@
 ---
-id: 'cwa-client-level-patch-breakdown'
+id: 'c1fad1cd-7320-472e-b20e-3d8fa620f0db'
 title: 'Client-Level Breakdown of Machines Missing Patches'
 title_meta: 'Client-Level Breakdown of Machines Missing Patches'
 keywords: ['patches', 'client', 'machines', 'breakdown', 'count', 'status']
@@ -29,6 +29,9 @@ Sample data:
 | os            | varchar(11) | Operating System (Workstation | Server)                                                      |
 | category      | varchar(18) | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)       |
 | Machine Count | int(5)    | Number of machines falling under the concerned category for the client.                      |
+
+
+
 
 
 

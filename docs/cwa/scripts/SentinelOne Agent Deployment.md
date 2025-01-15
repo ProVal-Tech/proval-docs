@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sentinelone-agent-deployment'
+id: 'eacca668-9959-4317-81d7-ee037837139c'
 title: 'SentinelOne Agent Deployment'
 title_meta: 'SentinelOne Agent Deployment'
 keywords: ['sentinelone', 'agent', 'deployment', 'token', 'installation']
@@ -81,6 +81,9 @@ Exclusions can be set in the following locations:
 ## Output
 
 - Script log
+
+
+
 
 
 

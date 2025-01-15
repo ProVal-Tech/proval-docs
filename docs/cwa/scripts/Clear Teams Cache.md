@@ -1,5 +1,5 @@
 ---
-id: 'ps-clear-teams-cache'
+id: 'dd89ea33-2c7f-4e0b-9985-0f59c8b0ba41'
 title: 'Clear Cache for Microsoft Teams on Windows'
 title_meta: 'Clear Cache for Microsoft Teams on Windows'
 keywords: ['microsoft', 'teams', 'cache', 'windows', 'script']
@@ -21,6 +21,9 @@ The script clears the Cache for installed Microsoft Teams on the Windows Machine
 ## Output
 
 - Script log
+
+
+
 
 
 

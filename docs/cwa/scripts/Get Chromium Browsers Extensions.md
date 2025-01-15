@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-data-collection-chromium-extensions'
+id: 'ff2827dd-bd64-4437-8783-4b576e6cfb81'
 title: 'EPM - Data Collection - Chromium Extensions'
 title_meta: 'EPM - Data Collection - Chromium Extensions'
 keywords: ['data', 'collection', 'chromium', 'extensions', 'json', 'sql', 'logging']
@@ -35,6 +35,9 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Script Log
 - Custom Table
 - Dataview
+
+
+
 
 
 

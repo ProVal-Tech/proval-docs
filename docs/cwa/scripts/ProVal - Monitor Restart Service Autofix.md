@@ -1,5 +1,5 @@
 ---
-id: 'cwa-autofix-kill-stuck-service'
+id: '30356d75-6212-4a23-b373-d08aa8f548e0'
 title: 'Autofix Kill Stuck Service and Restart'
 title_meta: 'Autofix Kill Stuck Service and Restart'
 keywords: ['service', 'restart', 'autofix', 'monitor', 'labtech']
@@ -36,6 +36,9 @@ This script is intended to be called by the "~Autofix Kill stuck service and res
 ## Output
 
 - Script log
+
+
+
 
 
 

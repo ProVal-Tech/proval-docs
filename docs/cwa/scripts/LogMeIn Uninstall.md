@@ -1,5 +1,5 @@
 ---
-id: 'cwa-uninstall-logmein'
+id: 'f7074631-615e-4b66-80ab-10b9c3a0f8fa'
 title: 'Uninstall LogMeIn from Target Machine'
 title_meta: 'Uninstall LogMeIn from Target Machine - Step-by-Step Guide'
 keywords: ['uninstall', 'logmein', 'script', 'automation', 'client']
@@ -25,6 +25,9 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
+
+
 
 
 

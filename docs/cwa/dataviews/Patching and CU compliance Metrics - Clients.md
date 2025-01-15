@@ -1,5 +1,5 @@
 ---
-id: 'cwa_patch_compliance_overview'
+id: 'd7c2fb39-45e1-482f-b58d-5397cbbec1da'
 title: 'Patch Compliance Overview for Windows Environment'
 title_meta: 'Patch Compliance Overview for Windows Environment'
 keywords: ['patch', 'compliance', 'windows', 'update', 'cumulative']
@@ -56,6 +56,9 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | greater than or equal to 75      |
 | CU Score %                 | Red    | less than 75                     |
 | CU Score %                 | Green  | greater than or equal to 75      |
+
+
+
 
 
 

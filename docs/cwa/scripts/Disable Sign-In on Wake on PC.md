@@ -1,5 +1,5 @@
 ---
-id: 'ps-disable-signin-option'
+id: '9272a9b1-8715-461a-9638-99b4c5967a03'
 title: 'Disable Sign-IN Option for User Accounts'
 title_meta: 'Disable Sign-IN Option for User Accounts - Script Overview'
 keywords: ['signin', 'user', 'accounts', 'disable', 'security']
@@ -19,6 +19,9 @@ This script disables the Sign-IN option for all user accounts. It disables the r
 ## Output
 
 - Script log
+
+
+
 
 
 

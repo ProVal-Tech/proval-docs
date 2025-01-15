@@ -1,5 +1,5 @@
 ---
-id: 'cwa_dataview_network_devices_inactive'
+id: 'a54c73f8-ca6b-4adb-988c-705818e804f7'
 title: 'Dataview for Inactive Network Devices in Automate'
 title_meta: 'Dataview for Inactive Network Devices in Automate'
 keywords: ['dataview', 'network', 'devices', 'inactive', 'automate', 'monitoring']
@@ -32,6 +32,9 @@ This Dataview works as part of the solution to remove the network devices that h
 | ManufacturerName   | Displays the name of the manufacturer                |
 | Alert Template      | Displays if an alert template is applied            |
 | LastDate           | Displays the last contact date of the device in Automate |
+
+
+
 
 
 

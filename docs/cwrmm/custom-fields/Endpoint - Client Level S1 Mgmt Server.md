@@ -1,5 +1,5 @@
 ---
-id: 'rmm-client-level-sentinelone-management-server'
+id: 'c92218fb-8d9d-45a7-a15b-107ada8141b8'
 title: 'Client Level SentinelOne Management Server'
 title_meta: 'Client Level SentinelOne Management Server'
 keywords: ['sentinelone', 'management', 'server', 'client', 'endpoint']
@@ -27,6 +27,9 @@ Client Level SentinelOne Management Server. Updated by [SentinelOne Management C
 ![Screenshot 1](../../../static/img/Endpoint---Client-Level-S1-Mgmt-Server/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---Client-Level-S1-Mgmt-Server/image_2.png)
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-windows10-upgrade-assistant'
+id: 'c1f915c9-34cb-4ea1-88fb-5a32ecc66eca'
 title: 'Remove Windows 10 Upgrade Assistant'
 title_meta: 'Remove Windows 10 Upgrade Assistant'
 keywords: ['windows', 'upgrade', 'assistant', 'uninstall', 'software']
@@ -33,6 +33,9 @@ The script will first check and see if the Windows 10 Upgrade Assistant is insta
 ## Output
 
 - Script log messages only
+
+
+
 
 
 

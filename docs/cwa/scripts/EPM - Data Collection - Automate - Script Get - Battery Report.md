@@ -1,5 +1,5 @@
 ---
-id: 'cwa-epm-data-collection-battery-report'
+id: '59738aa7-5495-4e4d-a36a-cc8af2643865'
 title: 'EPM - Data Collection - Battery Report'
 title_meta: 'EPM - Data Collection - Battery Report'
 keywords: ['data', 'collection', 'battery', 'report', 'sql', 'insert']
@@ -38,6 +38,9 @@ The intention of this script is to be an autofix on an internal monitor named Pr
 2. Set up variables for [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355).
 3. Run Agnostic process ([EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)).
 4. Run Automate script process ([CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)).
+
+
+
 
 
 

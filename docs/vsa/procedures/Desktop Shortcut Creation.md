@@ -1,5 +1,5 @@
 ---
-id: 'vsa-create-desktop-shortcut'
+id: '183aecf1-4d22-4373-89b4-14f9dcedef13'
 title: 'Create a Desktop Shortcut'
 title_meta: 'Create a Desktop Shortcut for Quick Access'
 keywords: ['shortcut', 'desktop', 'link', 'uri', 'windows']
@@ -50,6 +50,9 @@ Custom Icon will need to be uploaded to managed files. Once uploaded, point the 
 - New-DesktopUriShortcut-log.txt
 - New-DesktopUriShortcut-error.txt
 - Agent Procedure Log
+
+
+
 
 
 

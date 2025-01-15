@@ -1,5 +1,5 @@
 ---
-id: 'rmm-infrastructure-master-without-recycle-bin'
+id: '24509826-3f15-4594-8bb2-4f801709720b'
 title: 'Infrastructure Master - Without Recycle Bin'
 title_meta: 'Infrastructure Master - Without Recycle Bin'
 keywords: ['windows', 'infrastructure', 'recycle', 'bin', 'ad', 'group', 'criteria']
@@ -41,6 +41,9 @@ Once adding the above criteria, click the Save button to Save the Group.
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_3.png)
 
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_4.png)
+
+
+
 
 
 

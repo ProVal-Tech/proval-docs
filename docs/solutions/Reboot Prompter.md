@@ -1,5 +1,5 @@
 ---
-id: 'rmm-reboot-prompter-solution'
+id: '5b376f62-e977-4feb-b523-b133d2ef5722'
 title: 'Reboot Prompter Solution'
 title_meta: 'Reboot Prompter Solution'
 keywords: ['reboot', 'prompt', 'automation', 'ticket', 'monitoring', 'dynamic', 'group']
@@ -54,6 +54,9 @@ Afterward, it sends a force reboot prompt as shown below:
 Note: The 5 minutes depends on the value provided in the custom field 'RebootForceTimeDelayMinutes'.
 
 ![Screenshot](../../static/img/Reboot-Prompter/image_69.png)
+
+
+
 
 
 

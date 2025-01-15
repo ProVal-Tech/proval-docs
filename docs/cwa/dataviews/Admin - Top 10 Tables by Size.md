@@ -1,5 +1,5 @@
 ---
-id: 'cwa-top-10-tables-in-db'
+id: '6b4ee8af-28cc-4d59-bf95-be1e2191344b'
 title: 'Top 10 Tables in Database'
 title_meta: 'Top 10 Tables in Database - Overview and Details'
 keywords: ['database', 'auditing', 'tables', 'size', 'rows']
@@ -20,6 +20,9 @@ This Dataview shows the list and details of the top 10 tables in DB. This Datavi
 | rows        | Displays the number of rows of the table|
 | data        | Displays the amount of data/size in the table |
 | total_size  | Displays the total size of the table    |
+
+
+
 
 
 

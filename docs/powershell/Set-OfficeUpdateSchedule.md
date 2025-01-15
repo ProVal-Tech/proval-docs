@@ -41,3 +41,6 @@ Sets registry key HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\Updat
 
 .\Set-OfficeUpdateSchedule-error.txt
 
+
+
+

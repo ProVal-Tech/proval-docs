@@ -1,5 +1,5 @@
 ---
-id: 'cwa-active-directory-dataview'
+id: '03c01cc8-d3e1-4fcb-b816-3c4292cb747e'
 title: 'Active Directory Dataview for Automate'
 title_meta: 'Active Directory Dataview for Automate'
 keywords: ['active-directory', 'automate', 'dataview', 'integration', 'agent']
@@ -29,6 +29,9 @@ This Dataview displays any machines found within the Active Directory integratio
 | ParentDN                | Displays if the ParentDN is enabled or disabled     |
 | ObjectClasses            | Displays the object class of the machine            |
 | ObjectType               | Displays the object type of the machine             |
+
+
+
 
 
 

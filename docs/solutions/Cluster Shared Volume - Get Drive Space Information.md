@@ -1,5 +1,5 @@
 ---
-id: 'cwa-cluster-shared-volumes-audit'
+id: '957a288b-c81e-48a5-aa41-ed071e755fb5'
 title: 'Cluster Shared Volume Audit in Automate'
 title_meta: 'Cluster Shared Volume Audit in Automate'
 keywords: ['cluster', 'volume', 'audit', 'dataview', 'script']
@@ -26,6 +26,9 @@ Displays detailed information on [Cluster Shared Volumes](https://www.minitool.c
 - Import the [CWM - Automate - Dataview - Cluster Volume Disk Space Audit [Script]](https://proval.itglue.com/DOC-5078775-10390967) dataview.
 - Run the script against a computer with "Windows Cluster Services" role installed in order to create the custom table.
 - Set up a group for all the servers running 2012 R2 and later that have the "Windows Cluster Services" role installed, then schedule the script to execute against that group once per day.
+
+
+
 
 
 

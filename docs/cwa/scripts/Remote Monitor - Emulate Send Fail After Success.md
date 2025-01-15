@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remote-monitor-autofix'
+id: '70f5868c-7006-4393-afed-156fbae86ab5'
 title: 'Remote Monitor Autofix for Ticket Management'
 title_meta: 'Remote Monitor Autofix for Ticket Management'
 keywords: ['remote', 'monitor', 'ticket', 'management', 'autofix', 'status']
@@ -49,6 +49,9 @@ If the script determines the monitor is in a "success" state, then the script wi
 Script log messages
 
 The script will create a ticket if necessary.
+
+
+
 
 
 

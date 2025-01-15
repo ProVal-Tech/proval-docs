@@ -1,5 +1,5 @@
 ---
-id: 'rmm-remove-mcafee-software'
+id: '87a2b5ad-872c-431c-83a4-618434f03c9a'
 title: 'Remove McAfee Software'
 title_meta: 'Remove McAfee Software'
 keywords: ['mcafee', 'uninstall', 'script', 'endpoint', 'software']
@@ -124,6 +124,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'vsa-hpe-insight-management-agent-installation'
+id: 'cb0d8de7-88e2-4406-b2fb-7a7ee338ce37'
 title: 'HPE Insight Management Agent Installation'
 title_meta: 'HPE Insight Management Agent Installation'
 keywords: ['hpe', 'management', 'agent', 'installation', 'windows']
@@ -50,6 +50,9 @@ Last Login: %lastuser%
 PC model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
+
+
 
 
 

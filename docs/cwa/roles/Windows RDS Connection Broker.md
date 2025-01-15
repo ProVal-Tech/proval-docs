@@ -1,5 +1,5 @@
 ---
-id: 'cwa-confirm-rds-connection-broker'
+id: 'b3b5abcf-1f0b-440b-89e1-fe37c9ec18eb'
 title: 'Confirm RDS Connection Broker Installation'
 title_meta: 'Confirm RDS Connection Broker Installation'
 keywords: ['rds', 'connection', 'broker', 'installation', 'windows']
@@ -17,6 +17,9 @@ Uses powershell to confirm if the RDS Connection broker server role is installed
 | Detection String                                        | Comparator | Result | Applicable OS |
 |--------------------------------------------------------|------------|--------|----------------|
 | {%@powershell "(Get-WindowsFeature RDS-Connection-Broker).Installed"@%} | Equals     | True   | Windows        |
+
+
+
 
 
 

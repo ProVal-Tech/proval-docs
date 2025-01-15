@@ -1,5 +1,5 @@
 ---
-id: 'cwa-public-ip-address-view'
+id: '8e08584e-985e-4c83-a81b-dc842844e5d0'
 title: 'Public IP Address Dataview'
 title_meta: 'Public IP Address Dataview'
 keywords: ['ip', 'router', 'public', 'location', 'client', 'agents']
@@ -21,6 +21,9 @@ This dataview shows the public IP address of the location's router.
 | Router Address               | Router Public IP Address.                           |
 | Router Access Count          | Number of agents connected with the Router Public IP.|
 | Agent Name Using Router      | Name of the agents that are connected to the Router Public IP.|
+
+
+
 
 
 

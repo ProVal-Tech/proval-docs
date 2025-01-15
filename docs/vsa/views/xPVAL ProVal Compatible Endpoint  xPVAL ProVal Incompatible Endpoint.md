@@ -1,5 +1,5 @@
 ---
-id: 'vsa-proval-compatibility'
+id: '2e0182e6-a723-4b9d-a64b-93fbad74b870'
 title: 'ProVal Compatibility Views for Agents'
 title_meta: 'ProVal Compatibility Views for Agents'
 keywords: ['proval', 'endpoint', 'compatibility', 'filter', 'vsa']
@@ -29,6 +29,9 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliancy]
 | Filter Name                       | Advanced Filter? | Filter Value   |
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Compatible Endpoint   | Y                | NOT "Compatible" |
+
+
+
 
 
 

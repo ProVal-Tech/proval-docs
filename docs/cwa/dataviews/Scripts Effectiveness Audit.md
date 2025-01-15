@@ -1,5 +1,5 @@
 ---
-id: 'cwa-script-summary'
+id: '71cf5ece-22b7-4b19-b4e8-6a048b2c2ecc'
 title: 'Script Summary Dataview'
 title_meta: 'Script Summary Dataview'
 keywords: ['dataview', 'scripts', 'summary', 'log', 'retention']
@@ -29,6 +29,9 @@ This Dataview displays a summary of all scripts run over the set script log rete
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Scripts-Effectiveness-Audit/image_2.png)
+
+
+
 
 
 

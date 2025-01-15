@@ -1,5 +1,5 @@
 ---
-id: 'rmm-windows-feature-update-reboot-pending'
+id: '72a7b834-70a2-4b4f-becb-bb77fa83a28d'
 title: 'Categorizing Windows 10 and 11 Computers with Reboot Pending'
 title_meta: 'Categorizing Windows 10 and 11 Computers with Reboot Pending'
 keywords: ['windows', 'reboot', 'feature', 'update', 'pending', 'dynamic', 'group']
@@ -45,6 +45,9 @@ Categorize the Windows 10 and 11 Computers where the `Feature Update Install wit
 Click the Save button to Save the Group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_9.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_10.png)  
+
+
+
 
 
 

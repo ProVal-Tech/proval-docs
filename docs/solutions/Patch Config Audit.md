@@ -1,5 +1,5 @@
 ---
-id: 'cwa-patch-configuration'
+id: '6d50548e-014d-4bca-aab6-2941f36045e2'
 title: 'Patch Configuration for Windows Computers'
 title_meta: 'Patch Configuration for Windows Computers'
 keywords: ['patch', 'configuration', 'windows', 'audit', 'monitor']
@@ -85,6 +85,9 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script.
+
+
+
 
 
 

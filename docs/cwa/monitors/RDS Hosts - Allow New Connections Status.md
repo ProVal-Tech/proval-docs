@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-rds-session-host-implementation'
+id: '18fd9d3f-f0cd-4040-b89f-ec059c405609'
 title: 'Implementation Steps for Windows RDS Session Host'
 title_meta: 'Implementation Steps for Windows RDS Session Host'
 keywords: ['sql', 'rds', 'monitor', 'alert', 'template', 'servers', 'group', 'connections']
@@ -45,6 +45,9 @@ INSERT IGNORE INTO `groupagents` (`AgentID`, `GroupID`, `SearchID`, `Name`, `Che
 ![Image](../../../static/img/RDS-Hosts---Allow-New-Connections-Status/image_1.png)
 
 - This needs to be changed to the "Default - Create Automate Ticket" or any other template that the client needs like emailing or ticket creation.
+
+
+
 
 
 

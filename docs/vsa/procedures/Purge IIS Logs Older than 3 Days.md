@@ -1,5 +1,5 @@
 ---
-id: 'ps-iis-log-files-purge'
+id: '43cfcc23-05a8-4411-a901-65a819894164'
 title: 'IIS Log Files Purge'
 title_meta: 'IIS Log Files Purge'
 keywords: ['iis', 'log', 'purge', 'files', 'cleanup', 'script', 'powershell']
@@ -101,6 +101,9 @@ None
 ## Output
 
 Script Logs
+
+
+
 
 
 

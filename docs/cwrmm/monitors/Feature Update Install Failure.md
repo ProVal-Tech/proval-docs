@@ -1,5 +1,5 @@
 ---
-id: 'rmm-feature-update-install-failure'
+id: '67eaa7f5-bf6c-4680-982b-8b64fc27a76f'
 title: 'Feature Update Install Failure Alerts'
 title_meta: 'Feature Update Install Failure Alerts'
 keywords: ['alerts', 'monitor', 'failure', 'update', 'tracking']
@@ -50,6 +50,9 @@ Alerts on the computer where the `Feature Update Install with Tracking` script f
    
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Failure/image_12.png)
+
+
+
 
 
 

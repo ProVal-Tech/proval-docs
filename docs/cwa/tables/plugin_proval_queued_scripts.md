@@ -1,5 +1,5 @@
 ---
-id: 'cwa-custom-table-queued-scripts'
+id: 'a20befa8-ecca-4cf9-9d18-c4140f87aafc'
 title: 'Custom Table for Queued Scripts in ConnectWise Automate'
 title_meta: 'Custom Table for Queued Scripts in ConnectWise Automate'
 keywords: ['custom', 'table', 'queued', 'scripts', 'connectwise', 'automate']
@@ -27,6 +27,9 @@ This custom table holds the target computer id, the script Id of a script you wi
 | ComputerID        | INT  | The target computer of the queued script.                |
 | ScriptID          | INT  | The target script to be executed on the computer.        |
 | ScriptParameters   | Text | Any parameters necessary for the successful run of the script being targeted. |
+
+
+
 
 
 

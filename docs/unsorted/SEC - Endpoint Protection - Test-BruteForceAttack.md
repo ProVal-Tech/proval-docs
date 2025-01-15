@@ -1,12 +1,12 @@
 ---
-id: 'ps-basic-detection-brute-force-attack'
+id: 'bcf49d08-bfdc-49d1-9c92-52ce8d878be1'
 title: 'Basic Detection of a Brute Force Attack on an Endpoint'
 title_meta: 'Basic Detection of a Brute Force Attack on an Endpoint'
 keywords: ['brute', 'force', 'attack', 'endpoint', 'security', 'log', 'failures', 'threshold', 'events']
 description: 'This document outlines a script designed to detect brute force attacks on an endpoint by monitoring login failures in the security log. The script can be scheduled to run periodically, checking for failed login attempts and alerting if the count exceeds a specified threshold. It also supports outputting the results to a file in various formats.'
 tags: ['security', 'configuration', 'windows', 'report', 'notification']
-draft: true
-unlisted: true
+draft: false
+unlisted: false
 ---
 ## Overview
 
@@ -59,6 +59,9 @@ If `-Outfile` is provided - Boolean and file.
 | ConnectWise RMM              |                                          |
 | Kaseya                       |                                          |
 | Datto RMM                    |                                          |
+
+
+
 
 
 

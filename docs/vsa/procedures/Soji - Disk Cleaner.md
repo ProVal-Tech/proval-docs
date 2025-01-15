@@ -1,5 +1,5 @@
 ---
-id: 'vsa-soji-disk-cleaner'
+id: '016b09a7-6d4c-41bf-a4ec-befc678a5259'
 title: 'Soji - Windows Disk Cleaner'
 title_meta: 'Soji - Windows Disk Cleaner'
 keywords: ['windows', 'disk', 'cleaner', 'log', 'csv', 'report']
@@ -40,6 +40,9 @@ Soji - A Windows disk cleaner. Will log to the agent procedure log and upload CS
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
+
 
 
 

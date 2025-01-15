@@ -1,5 +1,5 @@
 ---
-id: 'cwa-microsoft-teams-import-backgrounds'
+id: 'bf20a303-f1b6-427a-a5cc-371de6104e98'
 title: 'Import Custom Backgrounds to Microsoft Teams'
 title_meta: 'Import Custom Backgrounds to Microsoft Teams'
 keywords: ['microsoft', 'teams', 'backgrounds', 'zip', 'images']
@@ -54,6 +54,9 @@ Modify **background.zip** to the name of the ZIP you've selected in the previous
 ## Output
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
+
+
+
 
 
 

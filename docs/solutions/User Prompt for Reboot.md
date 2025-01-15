@@ -1,5 +1,5 @@
 ---
-id: 'cwa-automate-reboot-prompt'
+id: '32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a'
 title: 'Automate User Reboot Prompt Solution'
 title_meta: 'Automate User Reboot Prompt Solution'
 keywords: ['automate', 'reboot', 'prompt', 'user', 'monitor', 'script']
@@ -160,6 +160,9 @@ Then this will popup, explaining the reboot.
 | Disable Reboot Prompt | CheckBox | Exclusions | Client | Flag this EDF to exclude the client from the solution. |
 | Disable Reboot Prompt | CheckBox | Exclusions | Location | Flag this EDF to exclude the location from the solution. |
 | Disable Reboot Prompt | CheckBox | Exclusions | Computer | Flag this EDF to exclude the computer from the solution. |
+
+
+
 
 
 

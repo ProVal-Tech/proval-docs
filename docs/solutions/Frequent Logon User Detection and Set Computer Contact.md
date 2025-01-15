@@ -1,5 +1,5 @@
 ---
-id: 'cwa-stitching-frequent-logon-user'
+id: '3579d837-d1a4-4186-ba92-4323a27bc367'
 title: 'Stitching Frequent Logon User'
 title_meta: 'Stitching Frequent Logon User - Automate Integration'
 keywords: ['frequent', 'logon', 'user', 'contact', 'workstation']
@@ -37,6 +37,9 @@ This solution is designed to gather the frequent domain logon user on the Window
      - [Monitor - Frequent User Detection](https://proval.itglue.com/DOC-5078775-16300890)
        - Setup with "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
+
+
+
 
 
 

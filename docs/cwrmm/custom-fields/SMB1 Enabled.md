@@ -1,5 +1,5 @@
 ---
-id: 'rmm-cw-rmm-task-detect-smb1-custom-field'
+id: '67da04f5-4170-402a-93b3-7e6236937263'
 title: 'CW RMM - Custom Field for SMB1 Detection Results'
 title_meta: 'CW RMM - Custom Field for SMB1 Detection Results'
 keywords: ['cw', 'rmm', 'smb1', 'custom', 'field', 'detection']
@@ -29,6 +29,9 @@ This custom field is used to store and display the results of the task [CW RMM -
 ## Sample Value
 
 ![Sample Value](../../../static/img/SMB1-Enabled/image_2.png)
+
+
+
 
 
 

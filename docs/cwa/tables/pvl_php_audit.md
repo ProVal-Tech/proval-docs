@@ -1,5 +1,5 @@
 ---
-id: 'cwa_store-data-collection'
+id: '10712956-11f1-47f6-ab0a-d063d2ca67d1'
 title: 'Store Data Collected by Locate PHP.exe Script'
 title_meta: 'Store Data Collected by Locate PHP.exe Script'
 keywords: ['data', 'collection', 'script', 'php', 'audit']
@@ -30,6 +30,9 @@ Stores the data collected by the [Locate PHP.exe](https://proval.itglue.com/DOC-
 | LastWriteTime   | datetime            | File Modification date          |
 | Attributes      | varchar             | File's attributes               |
 | ScriptRunTime   | datetime            | Data Collection Time            |
+
+
+
 
 
 

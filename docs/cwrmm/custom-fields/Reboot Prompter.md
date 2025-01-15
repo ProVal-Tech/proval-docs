@@ -1,5 +1,5 @@
 ---
-id: 'rmm-reboot-prompter-custom-fields'
+id: '7876f32c-a5ec-4b58-9f7e-b60b710e19d5'
 title: 'Reboot Prompter Custom Fields'
 title_meta: 'Reboot Prompter Custom Fields'
 keywords: ['custom', 'fields', 'reboot', 'prompter', 'solution']
@@ -60,6 +60,9 @@ The below custom fields are used in the Reboot Prompter Solution.
    ![Save](../../../static/img/Reboot-Prompter/image_6.png)
 
 5. Repeat the above 4 steps to create all other custom fields based on the Name, Level, Type, Default, Description, Editable provided in the table.
+
+
+
 
 
 

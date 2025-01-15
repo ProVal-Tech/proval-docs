@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-upgrade-monitor'
+id: 'f1ac2b23-59a0-4dcd-86a2-61901dd551b6'
 title: 'Windows Upgrade Monitor'
 title_meta: 'Windows Upgrade Monitor for Outdated Machines'
 keywords: ['monitor', 'upgrade', 'windows', 'build', 'machines']
@@ -38,6 +38,9 @@ AND computers.version < '10.0.19044'
 AND computers.computerid in(select computerid from computerpatchpolicies where installpolicy IN(SELECT ID FROM installsoftwarepolicies WHERE updatemode IN(5,6)))
 LIMIT 10
 ```
+
+
+
 
 
 

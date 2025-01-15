@@ -1,5 +1,5 @@
 ---
-id: 'cwa-software-configuration-set-firefoxhomepage'
+id: 'd86f7be6-b88d-4829-8f0e-9b2d6b9dc645'
 title: 'SWM - Software Configuration - Set Firefox Homepage'
 title_meta: 'SWM - Software Configuration - Set Firefox Homepage'
 keywords: ['firefox', 'homepage', 'configuration', 'software', 'browser']
@@ -30,6 +30,9 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Logs
+
+
+
 
 
 

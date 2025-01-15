@@ -1,5 +1,5 @@
 ---
-id: 'cwa-detect-offline-servers'
+id: 'f0a04369-c67b-49e1-a042-8ca3a343881f'
 title: 'Detect Offline Servers'
 title_meta: 'Detect Offline Servers'
 keywords: ['monitor', 'offline', 'servers', 'heartbeat', 'contact']
@@ -25,6 +25,9 @@ This internal monitor detects offline servers based on the last contact and last
 ## Target
 
 Windows Server
+
+
+
 
 
 

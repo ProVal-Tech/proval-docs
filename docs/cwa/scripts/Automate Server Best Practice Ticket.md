@@ -1,5 +1,5 @@
 ---
-id: 'cwa-harden-automate-servers'
+id: 'd56f260f-2d8c-4cb0-aa97-ea05b1f4755a'
 title: 'Hardening Automate Servers'
 title_meta: 'Hardening Automate Servers'
 keywords: ['hardening', 'security', 'automation', 'gpo', 'firewall', 'permissions', 'tls', 'audit']
@@ -51,6 +51,9 @@ Time Saved by Automation: 30 Minutes
 
 - Ticket
 - Script Log
+
+
+
 
 
 

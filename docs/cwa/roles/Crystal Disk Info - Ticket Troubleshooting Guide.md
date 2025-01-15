@@ -1,5 +1,5 @@
 ---
-id: 'cwa-ticket-example'
+id: '1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9'
 title: 'Ticket Example'
 title_meta: 'Ticket Example'
 keywords: ['ticket', 'troubleshooting', 'ssd', 'spinning', 'disk', 'replacement']
@@ -127,6 +127,9 @@ Click the section (On the left navigation section of this document) where your t
 
 4. If the **machine had just recently expired with its warranty**, a replacement drive quote should be sent to the client for them to approve.
    - **NOTE**: Always recommend an SSD as the replacement. Spinning disks may be cheaper but they are much slower and not worth the headache.
+
+
+
 
 
 

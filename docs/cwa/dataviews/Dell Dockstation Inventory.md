@@ -1,5 +1,5 @@
 ---
-id: 'cwa-dockstations-inventory'
+id: '8551929f-3af4-45ac-9edf-00f733193d56'
 title: 'Dockstations Inventory for Dell Workstations'
 title_meta: 'Dockstations Inventory for Dell Workstations'
 keywords: ['dockstations', 'inventory', 'dell', 'workstations', 'monitoring']
@@ -38,6 +38,9 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Manufacture Date    | Manufacture Date of DockStation                    |
 | Dock Name           | Name of Dockstation                                |
 | Script Last Ran     | Last Time the [CWM - Automate - Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374) executed on the machine |
+
+
+
 
 
 

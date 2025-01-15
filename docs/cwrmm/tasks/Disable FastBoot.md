@@ -1,5 +1,5 @@
 ---
-id: 'rmm-disable-fastboot'
+id: 'f52aada4-6207-4766-9b7c-24d022812e3c'
 title: 'Disable FastBoot Script for Windows Workstations'
 title_meta: 'Disable FastBoot Script for Windows Workstations'
 keywords: ['disable', 'fastboot', 'windows', 'registry', 'script']
@@ -167,6 +167,9 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 
 - Script Log
 - Custom Field
+
+
+
 
 
 

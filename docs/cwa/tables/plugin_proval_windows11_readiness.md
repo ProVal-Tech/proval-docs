@@ -1,5 +1,5 @@
 ---
-id: 'cwa-windows-11-compatibility-check'
+id: '74cca89e-effd-4af7-a73a-53a30b91c8a7'
 title: 'Windows 11 Compatibility Check'
 title_meta: 'Windows 11 Compatibility Check'
 keywords: ['windows', 'upgrade', 'compatibility', 'secureboot', 'memory', 'cpu', 'osdisk', 'tpm']
@@ -30,6 +30,9 @@ The custom table stores the data gathered by the [Windows - Check Windows 11 Com
 | OSDisk      | TINYINT  | Drive Size of OS drive is compatible with the windows 11 upgrade or not. 0 = failed and 1 = pass. |
 | TPM         | TINYINT  | TPM version is compatible with the windows 11 upgrade or not. 0 = failed and 1 = pass.      |
 | LastRan     | DATETIME | Timestamp for the collected data.                                                               |
+
+
+
 
 
 

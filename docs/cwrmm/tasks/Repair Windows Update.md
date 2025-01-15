@@ -1,5 +1,5 @@
 ---
-id: 'rmm-repair-windows-update'
+id: '7c19c014-844e-40b8-951e-bf3609052d92'
 title: 'Repair Windows Update'
 title_meta: 'Repair Windows Update - Script to Reset Windows Update Settings'
 keywords: ['windows', 'update', 'repair', 'script', 'settings']
@@ -175,6 +175,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
+
 
 
 

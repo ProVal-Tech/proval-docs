@@ -1,5 +1,5 @@
 ---
-id: 'cwa-add-cipher-suites'
+id: 'e65f81b3-f50a-491e-9f87-bf82b9f26329'
 title: 'Add Cipher Suites for Automate Agent'
 title_meta: 'Add Cipher Suites for Automate Agent - Configuration Guide'
 keywords: ['cipher', 'tls', 'automate', 'agent', 'configuration']
@@ -38,6 +38,9 @@ The script's goal is to add the [Cipher Suites](https://docs.connectwise.com/Con
 ## Output
 
 Script Log
+
+
+
 
 
 

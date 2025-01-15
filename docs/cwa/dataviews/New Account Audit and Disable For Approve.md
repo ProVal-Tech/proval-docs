@@ -1,5 +1,5 @@
 ---
-id: 'cwa-new-account-audit'
+id: 'fac82ae1-8f32-40b3-b9b2-a38f1a71e633'
 title: 'New Account Audit Dataview'
 title_meta: 'New Account Audit Dataview for Account Creation Monitoring'
 keywords: ['audit', 'accounts', 'creation', 'detection', 'management', 'local', 'admin', 'status', 'verification']
@@ -39,6 +39,9 @@ This dataview shows newly created accounts. It can be used in auditing of accoun
 | New Account Disable Status    | It shows whether new account is disabled or not. (No Action Taken - if this feature not chosen in the script) |
 | New Account Approved         | It shows whether new account is approved after verification (No Action Require - Since disable not enabled then it will show approval not required too) |
 | New Account Approved Date    | It shows when the account is approved to get enabled.                      |
+
+
+
 
 
 

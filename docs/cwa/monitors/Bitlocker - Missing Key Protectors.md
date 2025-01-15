@@ -1,5 +1,5 @@
 ---
-id: 'cwa-monitor-bitlocker-key-protectors'
+id: '2609502c-8a9d-4e8d-98cb-e1b6f7fb2fdb'
 title: 'Monitor for Bitlocker Key Protectors'
 title_meta: 'Monitor for Bitlocker Key Protectors'
 keywords: ['bitlocker', 'encryption', 'monitor', 'key', 'protectors']
@@ -30,6 +30,9 @@ Global
 **Name:** `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
 
 The script [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](https://proval.itglue.com/DOC-5078775-13808694) should be imported before creating/importing the alert template as the alert template should run this.
+
+
+
 
 
 

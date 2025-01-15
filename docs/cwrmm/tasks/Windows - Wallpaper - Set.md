@@ -1,5 +1,5 @@
 ---
-id: 'rmm-set-wallpaper'
+id: '886b7749-ea21-4a48-b4c9-06589fb09a7a'
 title: 'Set Desktop Wallpaper for All Users'
 title_meta: 'Set Desktop Wallpaper for All Users'
 keywords: ['wallpaper', 'desktop', 'users', 'enforcement', 'login']
@@ -168,6 +168,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-create-url-for-agent-installer'
+id: 'cf4fb3ae-3228-4621-be94-467b16f97090'
 title: 'Create URL for Automate Agent Installer with Tokens'
 title_meta: 'Create URL for Automate Agent Installer with Tokens'
 keywords: ['url', 'automate', 'installer', 'tokens', 'email', 'windows', 'mac', 'linux']
@@ -70,6 +70,9 @@ The email will contain MSI, Linux and MAC installer URLs along with the detail o
    - Copy the command mentioned under headline "Deployment PowerShell (Run-as-Admin)" (Command mentioned in Box 5) from the email you received.
    - Press enter. The deployment process will start. Wait for the command to finish.
    - You will receive a message saying: The Automate Agent Has Been Successfully Installed.
+
+
+
 
 
 

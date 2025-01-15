@@ -1,5 +1,5 @@
 ---
-id: 'cwa-sfc-scan-repair'
+id: '876cdd82-d35f-4112-91d1-806bb5215d19'
 title: 'SFC Scan and Repair Script'
 title_meta: 'SFC Scan and Repair Script for Windows'
 keywords: ['sfc', 'repair', 'dism', 'logs', 'windows', 'ticket']
@@ -93,6 +93,9 @@ Document the various variables in the script. Delete any section that is not rel
 - C:/Temp/SFC.Log
 - Application Event log entry 7395 from 'Proval_Script_Monthly_SFC_Scan'
 - Ticket with all related information.
+
+
+
 
 
 

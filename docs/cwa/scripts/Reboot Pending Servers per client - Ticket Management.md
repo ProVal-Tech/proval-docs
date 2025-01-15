@@ -1,5 +1,5 @@
 ---
-id: 'cwa-close-reboot-pending-tickets'
+id: '0d5f27c6-fa65-4a98-b32d-61426505aa1c'
 title: 'Close Reboot Pending Tickets'
 title_meta: 'Close Reboot Pending Tickets'
 keywords: ['client', 'script', 'tickets', 'reboot', 'pending', 'servers']
@@ -23,6 +23,9 @@ It is recommended to schedule this client-script to run once per day for better 
 ## Dependencies
 
 [CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](https://proval.itglue.com/DOC-5078775-13967831)
+
+
+
 
 
 

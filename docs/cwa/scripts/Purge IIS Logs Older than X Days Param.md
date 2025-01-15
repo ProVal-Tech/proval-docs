@@ -1,5 +1,5 @@
 ---
-id: 'cwa-remove-iis-logs'
+id: 'a7a7e04e-384d-4018-87c5-6abf2d2b2fb2'
 title: 'Remove IIS Log Files Older Than Specified Days'
 title_meta: 'Remove IIS Log Files Older Than Specified Days'
 keywords: ['iis', 'logs', 'purge', 'cleanup', 'directory']
@@ -48,6 +48,9 @@ Step 2: Generates the logs as per the PS script's outcome and exits.
 ## Output
 
 - Script Log
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-id: 'cwa-check-event-id-4625'
+id: 'd9b666b4-e0b0-4736-94c1-06b430581bad'
 title: 'Check Security Event Log for Failed Logon Attempts'
 title_meta: 'Check Security Event Log for Failed Logon Attempts'
 keywords: ['security', 'event', 'logon', 'failed', 'monitor']
@@ -96,6 +96,9 @@ For more detailed information: [Event 4625 Documentation](https://learn.microsof
 ## Implementation
 
 [Import - Remote Monitor - Security - Possible Brute Force Attack](https://proval.itglue.com/DOC-5078775-13832549)
+
+
+
 
 
 
