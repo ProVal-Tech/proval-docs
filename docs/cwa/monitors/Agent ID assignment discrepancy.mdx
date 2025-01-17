@@ -1,0 +1,57 @@
+---
+id: '9e0a1ae1-c888-496b-b161-c154fc48466e'
+title: 'Monitor Set for Agent Discrepancy in ConnectWise Automate'
+title_meta: 'Monitor Set for Agent Discrepancy in ConnectWise Automate'
+keywords: ['monitor', 'agent', 'discrepancy', 'ticket', 'automate', 'remediation']
+description: 'This document outlines a monitoring set that creates a ticket in ConnectWise Automate whenever two or more machines report to a single agent, indicating potential discrepancies in machine identity. It includes details on how to address the issue through command execution and provides necessary SQL results for tracking changes.'
+tags: ['configuration', 'ticket', 'automation', 'connectwise', 'monitoring']
+draft: false
+unlisted: false
+---
+## Summary
+
+The monitor set will create a ticket whenever 2 or more machines are checking into a single Automate agent. It is looking for the number of times the name for the agentid had changed more than 2 times in the last 7 days.
+
+Subject: LT - Agent Discrepancy Found with %computername% (%computerID%)
+
+Alert on Failure: The agent with the ID of %ComputerID% is currently reporting it has had its computer name changed %Result% times within the past 7 days.  
+%FieldName%  
+
+To remediate this issue, please login to ConnectWise Control --> Find one of the PCs affected (Shown Above) --> Run the following command on one of the agents through the Command Tab:  
+```
+#!ps
+#maxlength=10000
+#timeout=100000
+[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+(new-object Net.WebClient).DownloadString('https://raw.githubusercontent.com/LabtechConsulting/LabTech-Powershell-Module/master/LabTech.psm1') | iex; Reset-LTService
+```
+If you would like to run it within PowerShell, outside of Control, simply remove any lines with # in front of it.
+
+Alert on Success: There is no longer any indication of a discrepancy with the machine %Computername%. Closing ticket.
+
+Alert Template: ~Custom - Ticket Creation - Computer  
+
+SQL Result (TestValue): This should output the physical number of PC Name Changes that has happened in the past 7 days.  
+
+SQL FieldName (IdentityField): This should simply show the PCs affected like the below example:  
+PCs Affected: PC-2,PC-19,PC-3  
+
+## Dependencies
+
+[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)  
+
+## Target
+
+Global
+
+
+
+
+
+
+
+
+
+
+
+

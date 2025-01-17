@@ -1,0 +1,52 @@
+---
+id: 'f1ac2b23-59a0-4dcd-86a2-61901dd551b6'
+title: 'Windows Upgrade Monitor'
+title_meta: 'Windows Upgrade Monitor for Outdated Machines'
+keywords: ['monitor', 'upgrade', 'windows', 'build', 'machines']
+description: 'This document outlines a monitoring solution designed to identify machines running below the latest Windows build and trigger an upgrade script. It is recommended to schedule this monitor daily during off-hours to minimize user productivity loss.'
+tags: ['windows', 'upgrade', 'monitor', 'performance', 'setup']
+draft: false
+unlisted: false
+---
+## Summary
+
+This monitor will look for the machines that are running below the latest build of windows and trigger the script to upgrade the machine. We recommend scheduling this monitor for daily during off-hours in order to avoid any loss of productivity of the user.
+
+## Dependencies
+
+@Windows 10 Upgrade Assistant
+
+## Target
+
+Global - Should be run without explicitly defined targets.
+
+## Translated SQL
+
+```
+SELECT 
+computers.version AS 'testvalue',
+computers.name AS 'identityfield',
+computers.computerid,
+acd.uptimestart,
+acd.uptimeend,
+acd.noalerts
+FROM computers
+LEFT JOIN agentcomputerdata acd ON acd.computerid=computers.computerid
+WHERE computers.lastcontact > now() - interval 15 minute 
+AND computers.os LIKE '%windows 10%' 
+AND computers.version \< '10.0.19044' 
+AND computers.computerid in(select computerid from computerpatchpolicies where installpolicy IN(SELECT ID FROM installsoftwarepolicies WHERE updatemode IN(5,6)))
+LIMIT 10
+```
+
+
+
+
+
+
+
+
+
+
+
+

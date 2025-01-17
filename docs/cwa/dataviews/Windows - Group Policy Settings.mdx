@@ -1,0 +1,47 @@
+---
+id: 'ea24f672-d2cd-41bc-8b62-2dcd20085d29'
+title: 'GPO Audit Dataview'
+title_meta: 'GPO Audit Dataview for Group Policy Information'
+keywords: ['gpo', 'audit', 'policy', 'settings', 'active-directory']
+description: 'This document provides a comprehensive overview of the GPO Audit Dataview, detailing the information about Group Policy Objects (GPOs), their applied policies, and settings. It includes dependencies and a breakdown of the data columns for better understanding and utilization.'
+tags: ['active-directory', 'gpo', 'audit', 'policy', 'settings']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview shows information about GPOs, their applied policies, and settings.
+
+## Dependencies
+
+- [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
+- [plugin_proval_ad_gp](https://proval.itglue.com/DOC-5078775-7948461)
+- [plugin_proval_ad_gpo](https://proval.itglue.com/DOC-5078775-7948720)
+- [RSM - Active Directory - Script - Group Policy - Audit](https://proval.itglue.com/DOC-5078775-15193954)
+
+## Columns
+
+| Column       | Description                                       |
+|--------------|---------------------------------------------------|
+| Client       | Client name.                                     |
+| Location     | Location name.                                   |
+| Source DC    | DC Server Name.                                  |
+| Domain       | Domain joined detail of DC.                      |
+| GPO          | Applied GPO policy.                              |
+| GPO GUID     | GPO GUID information.                            |
+| Setting Type | Displays Computer or User settings.              |
+| Extension    | Display GPO extensions.                          |
+| Property     | Displays properties of the Group policies.       |
+| PropertyData | Displays detailed information for the GPO settings.|
+
+
+
+
+
+
+
+
+
+
+
+

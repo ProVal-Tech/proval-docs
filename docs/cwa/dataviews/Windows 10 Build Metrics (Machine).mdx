@@ -1,0 +1,49 @@
+---
+id: '58e136de-46a7-4af2-9b84-0fb71405bbe4'
+title: 'Windows 10 Patch Policy Status Overview'
+title_meta: 'Windows 10 Patch Policy Status Overview'
+keywords: ['windows', 'patch', 'policy', 'status', 'build', 'agent', 'last', 'contact']
+description: 'This document provides an overview of Windows 10 machines, detailing their build and patch policy status, including whether patch policies are enabled or disabled, along with the latest patch information and agent contact details.'
+tags: ['windows', 'patch', 'status', 'build', 'agent', 'report']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview shows the Windows 10 machines with build and patch policy status check whether enabled or disabled with the last patch info.
+
+## Dependencies
+
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+
+## Columns
+
+| Column                        | Description                                                 |
+|-------------------------------|-------------------------------------------------------------|
+| Client                        | Client name of the agent                                    |
+| Location                      | Location name of the agent                                  |
+| Computer                      | Computer name of the agent                                  |
+| Operating System              | Operating system of the agent                               |
+| Last Logged In User           | Last logged in user detail on the agent                    |
+| ReleaseID                    | Release id of the Windows 10 build                         |
+| Build Number                  | Build number of the Windows 10 agent                        |
+| Days Since Last Contact       | The number of days since agent not logged in                |
+| Is EOL                        | It confirms whether the Windows 10 build license ends or not|
+| Supported Till                | It provides the date when the agent last supported till     |
+| Last Contact                  | Last contact date of the agent with RMM                    |
+| Online Last 30 Days           | It denotes whether the agent logged in within 30 days or not|
+| Has Patch Policy              | This describe whether the Windows 10 agent has patch policy enabled or not |
+| LastPatched                   | This provide the date when the agent was last patched       |
+
+
+
+
+
+
+
+
+
+
+
+
+

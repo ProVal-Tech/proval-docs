@@ -38,7 +38,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           tags: 'tags.yml',
-          onInlineTags: 'warn',
+          onInlineTags: 'ignore',
           editUrl:
             'https://github.com/proval-tech/docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -49,6 +49,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
 
   themeConfig: {
     // Replace with your project's social card

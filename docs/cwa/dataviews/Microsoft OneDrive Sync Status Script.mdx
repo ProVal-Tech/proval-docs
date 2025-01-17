@@ -1,0 +1,47 @@
+---
+id: '5b97dae1-f82c-4ae4-9e21-a5c4e3b1480c'
+title: 'OneDrive Sync Status Data View'
+title_meta: 'OneDrive Sync Status Data View'
+keywords: ['onedrive', 'sync', 'status', 'data', 'collection']
+description: 'This document provides an overview of the OneDrive Sync Status data view, detailing the information gathered by the EPM script designed for monitoring OneDrive synchronization across devices. It includes dependencies and a breakdown of the columns presented in the data view.'
+tags: ['data', 'monitoring', 'status', 'collection', 'windows']
+draft: false
+unlisted: false
+---
+## Summary
+
+The dataview displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-14227796) script.
+
+## Dependencies
+
+- [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-14227796)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](https://proval.itglue.com/DOC-5078775-14241947)
+
+## Columns
+
+| Column                  | Description                                           |
+|------------------------|-------------------------------------------------------|
+| Clientid               | Clientid (Hidden)                                    |
+| Locationid             | Locationid (Hidden)                                  |
+| Computerid             | Computerid (Hidden)                                  |
+| Client_Name            | Client Name                                          |
+| Location_Name          | Location Name                                        |
+| Computer_Name          | Computer Name                                        |
+| Operating_System       | Operating System                                     |
+| Last_Contact           | Last Contact time of the computer with Automate      |
+| Sync Enabled           | Is OneDrive Sync Enabled?                            |
+| Sync Status            | OneDrive Sync Status                                 |
+| One_Drive_Sync_Status  | Detailed Sync Status fetched by the script           |
+| Script_Run_Time        | Data Collection Time                                  |
+
+
+
+
+
+
+
+
+
+
+
+

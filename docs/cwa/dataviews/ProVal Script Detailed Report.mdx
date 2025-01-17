@@ -1,0 +1,69 @@
+---
+id: 'd40bdcb8-dd08-460d-9be8-d9773ac32e93'
+title: 'Custom Scripts Overview for ProVal'
+title_meta: 'Custom Scripts Overview for ProVal - Detailed Implementation Status'
+keywords: ['custom', 'scripts', 'proval', 'implementation', 'status']
+description: 'This document provides a comprehensive overview of all custom scripts built by ProVal, detailing their implementation status and various attributes, including execution counts, scheduling information, and color coding for easy identification of script characteristics.'
+tags: ['script', 'implementation', 'monitor', 'alert', 'status', 'overview']
+draft: false
+unlisted: false
+---
+## Summary
+
+This dataview shows all custom scripts built by ProVal with its detailed implementation status information.
+
+## Columns
+
+| Column                    | Description                                                                                                                                                        |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ScriptName               | Script name                                                                                                                                                       |
+| Script Nature            | It shows the script is "ProVal Client Specific", "ProVal Deprecated" or a ProVal nonstack script.                                                               |
+| ScriptType               | It shows the type of script whether a Computer or a Client script.                                                                                              |
+| Script Notes             | It contains the script notes to show a brief overview of the script.                                                                                            |
+| FunctionScript           | It shows whether the script is a function script that can be only called by automation or can't be run manually.0 - Not a function script1 - Function script. |
+| ScheduledScript          | It shows whether the script is scheduled or not.1 - Scheduled0 - not Scheduled.                                                                          |
+| Scheduled By             | This shows the name of the Automate user who scheduled the script.                                                                                              |
+| Total Runs               | The total script runs count overall.It depends on the script retention set in the environment.                                                              |
+| Run Last 30 Days         | It contains the script execution counts in the last 30 days overall.                                                                                            |
+| First Run Date           | It contains info on the script's first run date.                                                                                                              |
+| Last Run Date            | It contains details of when the script was last executed.                                                                                                       |
+| Last Scheduled Run       | It contains info on the last scheduled run date of the script either manually or via a group.                                                                    |
+| Next Scheduled Run       | It shows the next upcoming script execution date.                                                                                                              |
+| Total Scheduled Run      | It shows the number of the schedule set of the script in the environment.                                                                                       |
+| Average Run Time         | This shows the average run time of the script in seconds.                                                                                                       |
+| Group Scheduled           | It denotes the name of the group where the script is scheduled.                                                                                                |
+| Group Path               | It shows the group's full path where the script is scheduled.                                                                                                   |
+| Limit Search             | It shows if the script is bound to a search or not.1 - Limited to search2 - Applied to all members of the group                                          |
+| Search Name              | It shows the search name to which the script is limited to applied.                                                                                             |
+| # Remote Monitor         | This shows the sum of the total remote monitor where the script is used as an autofix.                                                                          |
+| # Internal Monitor       | This shows the sum of the total internal monitor where the script is used as an autofix.                                                                        |
+| Applied to AlertTemplate  | It shows whether the script is bound to an alert template or not.1 - Yes0 - No                                                                          |
+| Alert Template           | It contains the alert template name to which the script is bound to run.                                                                                       |
+| Machines Affected        | It shows the count of computers to which the script is scheduled.                                                                                               |
+| In Use                   | This column should look at whether it has been run within the past 6 months, Actively Scheduled, or Applied to any remote or internal monitors.It just marks Yes or No if the above conditions are met. |
+| Scheduled in past 6 months | It shows which script was either run by the Group or manually in the past 6 months or if the script was running as an autofix via monitors. If any condition is met then it is marked as "Recently Added". |
+
+## Color Coding
+
+Color Coding is applied to the columns "# Internal monitor", "# Remote monitor", "Script Nature", "Group Scheduled", "Scheduled in past 6 months", and "Synced/Updated" as shown below:
+
+![Color Coding](../../../static/img/ProVal-Script-Detailed-Report/image_1.png)
+
+- **# Internal monitor:** The highlights the Count greater than 0, to catch the eye to show the script was applied to how many Internal monitors.
+- **# Remote monitor:** The highlights the Count greater than 0, to catch the eye to show the script was applied to how many Remote monitors.
+- **Script Nature:** Here, the "Deprecated ProVal Script" is highlighted in Red, and "Client-Specific ProVal Script" is highlighted in Red to catch the eye of where the "ProVal" scripts are non-stack ProVal scripts.
+- **Synced/Updated:** It has "Yes" highlighted in Green, "No" highlighted in Orange, "Client-Specific" highlighted in Grey, and "Deprecated" highlighted in Red to catch the eye easily and show whether the script is a deprecated, client-specific or if a nonstack then it is properly synced/updated from the ProVal plugin or not.
+- **Group Scheduled:** This highlights the Group full name in Green to catch the eye to show where the script is scheduled.
+- **Scheduled in past 6 months:** It has "Recently Added" highlighted in Green to show which script was either run by the Group or manually in the past 6 months or if the script was running as an autofix via monitors. If any condition is met then it is marked as "Recently Added".
+
+
+
+
+
+
+
+
+
+
+
+

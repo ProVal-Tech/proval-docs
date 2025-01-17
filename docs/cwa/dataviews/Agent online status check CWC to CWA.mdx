@@ -1,0 +1,64 @@
+---
+id: '36dec374-8bc6-4fda-a273-4e4a1af2f6f7'
+title: 'Comparative Online Status Dataview for Automate and Control'
+title_meta: 'Comparative Online Status Dataview for Automate and Control'
+keywords: ['dataview', 'connectwise', 'agents', 'status', 'online', 'control', 'repair', 'reinstall']
+description: 'This document provides a comprehensive overview of a Dataview designed to display comparative results of the online status of agents in ConnectWise Automate and Control. It includes details on dependencies, column descriptions, and SQL representation to facilitate the monitoring and management of agent statuses.'
+tags: ['connectwise', 'agents', 'status', 'database', 'report']
+draft: false
+unlisted: false
+---
+## Summary
+
+This Dataview is meant to display comparative results of the online status of agents in Automate as they pertain to the online status of that same machine in Control. As a result, this dataview can be used to determine if Control agents need to be repaired or reinstalled as well as Automate agents in that same regard.
+
+## Dependencies
+
+- [EPM - Data Collection - Solution - Get - CW-ControlAPI-Online Status](https://proval.itglue.com/DOC-5078775-9004336)
+- [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](https://proval.itglue.com/DOC-5078775-9912233)
+- [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](https://proval.itglue.com/DOC-5078775-9912293)
+
+## Columns
+
+| Column            | Description                                                                                  |
+|-------------------|----------------------------------------------------------------------------------------------|
+| Client            | The client the agent belongs to in ConnectWise Automate.                                    |
+| Location          | The location the agent belongs to in ConnectWise Automate.                                  |
+| CWAName           | The name given to the agent in the ConnectWise Automate Platform.                           |
+| CWCName           | The name given to the agent in the ConnectWise Control Platform.                            |
+| CWCOnlineStatus    | The status of the connection of the agent in ConnectWise Control (Online or Offline).      |
+| CWAOnlineStatus    | The status of the connection of the agent in ConnectWise Automate (Online or Offline).     |
+| LastConnected     | The last time the agent connected within the ConnectWise Control Platform.                   |
+| CWCGUID           | The GUID given to the agent for its ConnectWise Control session.                            |
+
+## SQL Representation
+
+```
+SELECT 
+  clients.Name AS 'Client', 
+  locations.Name AS 'Location', 
+  computers.Name AS 'CWAName', 
+  plugin_proval_control_session_status.SCName AS 'CWCName', 
+  CASE WHEN plugin_proval_control_session_status.Online = 0 THEN 'Offline' WHEN plugin_proval_control_session_status.Online = 1 THEN 'Online' END AS 'CWCOnlineStatus', 
+  CASE WHEN computers.UpTime \\<= 0 THEN 'Offline' WHEN computers.UpTime > 0 THEN 'Online' END AS 'CWAOnlineStatus', 
+  plugin_proval_control_session_status.LastConnectedDate AS 'LastConnected', 
+  plugin_proval_control_session_status.GUID AS 'CWCGUID' 
+FROM 
+  computers 
+  LEFT JOIN clients ON clients.ClientID = computers.ClientID 
+  LEFT JOIN locations ON locations.LocationID = computers.LocationID 
+  LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
+  LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
+```
+
+
+
+
+
+
+
+
+
+
+
+

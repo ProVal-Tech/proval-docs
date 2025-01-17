@@ -1,0 +1,53 @@
+---
+id: '54531eb6-553a-4730-8afc-558adbab450d'
+title: 'Probe Detected Machines with Port 139 Open'
+title_meta: 'Probe Detected Machines with Port 139 Open - Automate Agent Readiness'
+keywords: ['probe', 'machines', 'port', 'open', 'agent', 'readiness', 'network', 'device']
+description: 'This document provides a detailed overview of the dataview that lists probe-detected machines with port 139 open, which may be missing the Automate agent. It includes information on the columns available, their descriptions, and the necessary dependencies for accurate data retrieval.'
+tags: ['networking', 'security', 'report', 'setup', 'performance']
+draft: false
+unlisted: false
+---
+## Summary
+
+Shows the list of probe-detected machines with port 139 open that may be missing the Automate agent. This dataview looks for agent readiness as well.
+
+## Columns
+
+| Column                   | Description                                                                                               |
+|--------------------------|-----------------------------------------------------------------------------------------------------------|
+| clientid                 | Client ID of the Probe which runs the scan.                                                              |
+| Client Name              | Client Name of the Probe which runs the scan.                                                            |
+| Location Name            | Location Name of the Probe which runs the scan.                                                          |
+| LocationID               | Location ID of the Probe which runs the scan.                                                            |
+| computerid               | ComputerID of the Probe                                                                                  |
+| DeviceID                 | Device ID of the network device detected by probe.                                                       |
+| Device Name              | Network Device name which has been scanned by Probe.                                                    |
+| Device Type              | Type of the Network Device                                                                                 |
+| Open Ports               | The port through which scanned computers communicating with the Probe.                                    |
+| Manufacturer Name        | Name of the network Device Manufacturer                                                                    |
+| IPAddress                | IP address of the scanned computer                                                                          |
+| MacAddress               | MAC address of the scanned computer                                                                         |
+| MAC Check                | 'No Match' if MAC Address of the Network device doesn't match with any of the machine from computers table.|
+| LastContact              | Last contact of the scanned computer with the Probe                                                       |
+| Device LastContact       | Cross-check of scanned computer MAC addresses with matching MAC addresses at the same location. Machines indicating "Matching MAC" may already be deployed in the environment. |
+| Readiness Status         | Status from the Probe's last Readiness attempted on the network device                                    |
+| Last Checked for Readiness| Last Date When Probe checked the Network Device Readiness                                                 |
+| Last Deployment Attempt   | Last Deployment Attempted on the Network device. 'NA' means No data available                             |
+| Total Attempt Count      | Number of attempts to install Automate agent on network Device 'NA' means No data available               |
+
+## Dependency
+
+Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](https://proval.itglue.com/DOC-5078775-12944749) script to run every 12-24 hours to provide permission for `agentdeploymentreadinesscheck` Table for both Hosted as well as On-Prem Clients. Otherwise, the dataview will not provide any results.
+
+
+
+
+
+
+
+
+
+
+
+

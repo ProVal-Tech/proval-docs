@@ -1,0 +1,45 @@
+---
+id: '09db9e10-3f2c-46f8-8071-3c6e5c09b04d'
+title: 'Automate Database Maintenance Script'
+title_meta: 'Automate Database Maintenance Script'
+keywords: ['cleanup', 'networkdevices', 'log', 'variables', 'maintenance']
+description: 'This document details a script used for maintaining the Automate database, specifically for cleaning up network devices. It includes information on required variables, sample runs, and the expected output in the logging system.'
+tags: ['cleanup', 'database', 'log', 'maintenance', 'script']
+draft: false
+unlisted: false
+---
+## Summary
+
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293).
+
+This script handles cleanup of the following table(s):
+
+- Networkdevices - requires [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293) NetWorkDevice_Cleanup_days global variable set to something other than 0.
+
+## Sample Run
+
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293).
+
+## Variables
+
+| Name        | Description                                                                                                                                                                  |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Verify      | This variable verified both the starting count of targeted data, as well as the after action count of targeted data. We expect the starting count will be a value bigger than 0, and an after action value of 0. |
+| LogMessage  | This is the running Log holding variable. Please note this variable is always set the same everywhere it's used in the solution. `@logMessage@ = @LogMessage@[Linebreak]%when% : [Category] Cleanup [Stage] - Result`. Please continue to utilize this standard with this running log file. |
+
+## Output
+
+This script will add the following section to the log variable:
+
+![Output](../../../static/img/Automate-Database-Maintenance---Network-Devices/image_1.png)
+
+
+
+
+
+
+
+
+
+
+
