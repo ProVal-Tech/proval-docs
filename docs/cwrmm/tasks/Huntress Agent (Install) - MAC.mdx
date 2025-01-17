@@ -4,7 +4,7 @@ title: 'Huntress Agent (Install) - MAC'
 title_meta: 'Huntress Agent Installation Script for MAC'
 keywords: ['huntress', 'mac', 'installation', 'agent', 'deploy']
 description: 'This document provides a detailed guide on creating a script to check for the installation of the Huntress agent on MAC machines. If the agent is not installed, the script will attempt to download and install it while logging the results of the operation.'
-tags: ['installation', 'mac', 'script', 'logging', 'custom']
+tags: ['installation', 'logging']
 draft: false
 unlisted: false
 ---
@@ -37,7 +37,7 @@ The script will detect the Huntress Agent and if the agent is not found then it 
 ```
 acct_key : @acct_key@  
 org_key: @ORG_Key@  
-Tags: @Tags@
+tags: ['installation', 'logging']
 ```
 Attempting to download the file using acct_key from the Huntress website as below:  
 [https://huntress.io/script/darwin/@acctKey](https://huntress.io/script/darwin/@acctKey), and once downloaded the agent will be attempted to install.

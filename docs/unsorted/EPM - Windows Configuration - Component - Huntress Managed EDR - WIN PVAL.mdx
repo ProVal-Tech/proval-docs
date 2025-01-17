@@ -4,7 +4,7 @@ title: 'Huntress Managed EDR Component for Datto RMM'
 title_meta: 'Huntress Managed EDR Component for Datto RMM - Installation and Management'
 keywords: ['huntress', 'edr', 'datto', 'component', 'management']
 description: 'This document outlines the management of the Huntress EDR agent, detailing installation, uninstallation, repair, and reinstallation processes within the Datto RMM environment. It includes necessary dependencies, implementation steps, usage instructions, and expected output for successful job execution.'
-tags: ['edr', 'installation', 'uninstallation', 'repair', 'management', 'datto', 'component']
+tags: ['datto', 'installation', 'uninstallation']
 draft: true
 unlisted: false
 ---
@@ -38,7 +38,7 @@ The component will prompt for several variables during a job.
 This can pre-filled for the partner by providing a default value for the variable within the component within the partner's RMM.  
 ![Account Key](../../static/img/EPM---Windows-Configuration---Component---Huntress-Managed-EDR---WIN-PVAL/image_5.png)  
 
-**tags:** Optional: Applies tags to the installed endpoint. (e.g. "production,US West")  
+**tags: ['datto', 'installation', 'uninstallation']
 **reregister:** Force the agent to re-register (useful if previously deployed with the incorrect account key, orphaned agent, or performing a full repair)  
 **reinstall:** Re-install the agent (useful for a quick repair of an agent)  
 **uninstall:** Uninstall the agent aggressively (useful for agents struggling to uninstall normally)  
