@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-GeckoCache](https://proval.itglue.com/DOC-5078775-10371997).
+Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>).
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-Ge
 
 ## Dependencies
 
-[SWM - Software Configuration - Script - Clear-GeckoCache](https://proval.itglue.com/DOC-5078775-10371997)
+[SWM - Software Configuration - Script - Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>)
 
 ## Task Creation
 
@@ -124,6 +124,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Clear-Firefox-Cache/image_19.png)  
+
 
 
 

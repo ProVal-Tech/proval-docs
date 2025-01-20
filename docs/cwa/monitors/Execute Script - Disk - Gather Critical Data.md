@@ -27,9 +27,9 @@ The EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data
 
 ## Dependencies
 
-- [EPM - Disk - Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-10677468)  
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714)  
-- [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)  
+- [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>)  
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)  
+- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)  
 
 ## Target
 
@@ -39,7 +39,8 @@ Managed Windows Workstations
 
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
-Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-10677468) script.
+Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>) script.
+
 
 
 

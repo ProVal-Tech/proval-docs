@@ -11,7 +11,7 @@ unlisted: false
 ## Summary
 
 Configurable Removal of Potentially Unwanted Applications  
-Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove-PUA](https://proval.itglue.com/DOC-5078775-9434539)
+Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove-PUA](<../../powershell/Remove-PUA.md>)
 
 ## Sample Run
 
@@ -48,7 +48,7 @@ Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove
 
 ## Process
 
-Runs the agnostic script [SWM - Software Uninstall - Agnostic - Remove-PUA](https://proval.itglue.com/DOC-5078775-9434539) with the defined parameters.
+Runs the agnostic script [SWM - Software Uninstall - Agnostic - Remove-PUA](<../../powershell/Remove-PUA.md>) with the defined parameters.
 
 ## Output
 
@@ -57,6 +57,7 @@ AP Log
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
 
 
 

@@ -14,9 +14,9 @@ The purpose of this group is to deploy SentinelOne agent on Windows, Linux and M
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Flag - SentinelOne Deployment Exclusion](https://proval.itglue.com/DOC-5078775-15805740)  
-- [CW RMM - Custom Field - Site - SentinelOne Site Key](https://proval.itglue.com/DOC-5078775-15805088)  
-- [CW RMM - Custom Field - Site - SentinelOne Group Key](https://proval.itglue.com/DOC-5078775-15805085)  
+- [CW RMM - Custom Field - Flag - SentinelOne Deployment Exclusion](<../custom-fields/Flag - SentinelOne Deployment Exclusion.md>)  
+- [CW RMM - Custom Field - Site - SentinelOne Site Key](<../custom-fields/Company - SentinelOne Site Key.md>)  
+- [CW RMM - Custom Field - Site - SentinelOne Group Key](<../custom-fields/Site - SentinelOne Group Key.md>)  
 
 ## Summary
 
@@ -50,6 +50,7 @@ Once adding the above criteria, click the Save button to save the Group.
 ![Image](../../../static/img/SentinelOne-Deployment/image_5.png)  
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_6.png)  
+
 
 
 

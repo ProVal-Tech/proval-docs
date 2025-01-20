@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293).
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
 
 This script handles cleanup of the following table(s):
-- h_agenthistory - requires [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293) MonitorHistory_Cleanup global variable set to 1
+- h_agenthistory - requires [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) MonitorHistory_Cleanup global variable set to 1
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
 
 ## Variables
 
@@ -31,6 +31,7 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Log Output](../../../static/img/Automate-Database-Maintenance---Monitors/image_1.png)
+
 
 
 

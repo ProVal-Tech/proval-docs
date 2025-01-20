@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-To validate whether the computer is a primary domain controller or not. The check is performed by the [CW RMM - Task - Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218) task.
+To validate whether the computer is a primary domain controller or not. The check is performed by the [CW RMM - Task - Validate Primary Domain Controller](<../tasks/Validate Primary Domain Controller.md>) task.
 
-This Custom Field is then used to create the [CW RMM - Machine Group - Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455) group.
+This Custom Field is then used to create the [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>) group.
 
 ## Dependencies
 
-[CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)  
-[CW RMM - Task - Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218)
+[CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)  
+[CW RMM - Task - Validate Primary Domain Controller](<../tasks/Validate Primary Domain Controller.md>)
 
 ## Details
 
@@ -35,6 +35,7 @@ Description: To validate whether the computer is a primary domain controller or 
 ## Sample Value
 
 ![Sample Value](../../../static/img/Is-Primary-Domain-Controller/image_3.png)
+
 
 
 

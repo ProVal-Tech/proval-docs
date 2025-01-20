@@ -15,7 +15,7 @@ There are three device groups related to the PowerShell version auditing solutio
 ## Dependencies
 
 - [CW RMM - Custom Field - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824368)  
-- [CW RMM - Task - PowerShell Version Information](https://proval.itglue.com/DOC-5078775-12824367)  
+- [CW RMM - Task - PowerShell Version Information](<../tasks/PowerShell Version Information.md>)  
 
 ## Create Device Groups
 
@@ -70,6 +70,7 @@ When adding criteria, please search for the PowerShell Version custom field.
 - **Condition:** "Success"  
 
 This group holds all devices that are on PowerShell version 5 or above.
+
 
 
 

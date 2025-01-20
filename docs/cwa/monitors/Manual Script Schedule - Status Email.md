@@ -19,7 +19,7 @@ It has a couple of restrictions.
 
 ## Dependencies
 
-[Email Creation - Computer - LTRunByUser](https://proval.itglue.com/DOC-5078775-15475751)
+[Email Creation - Computer - LTRunByUser](<../scripts/Email Creation - Computer LTRunByUser.md>)
 
 ## Target
 
@@ -44,6 +44,7 @@ Here, %Result% contains the Script Name: "Scriptname" ran on computer "Computern
 **Email Example:**
 
 ![Email Example](../../../static/img/Manual-Script-Schedule---Status-Email/image_1.png)
+
 
 
 

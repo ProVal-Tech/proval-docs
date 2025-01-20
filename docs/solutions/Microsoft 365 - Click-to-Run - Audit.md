@@ -16,26 +16,27 @@ The solution aims to audit the basic information of installed Click-to-Run versi
 
 | Content                                                                                     | Type          | Function                                                                                                      |
 |---------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------|
-| [Endpoint - C2R Office Version](https://proval.itglue.com/DOC-5078775-17917395)           | Custom Field  | Stores the C2R office version installed on the machine.                                                    |
-| [Endpoint - C2R Auto Update](https://proval.itglue.com/DOC-5078775-17917401)             | Custom Field  | Stores whether the C2R office Auto update is enabled or disabled.                                          |
-| [Endpoint - C2R Update Channel](https://proval.itglue.com/DOC-5078775-17917393)          | Custom Field  | Stores the Update Channel of the office installed on the machine.                                          |
-| [Endpoint - C2R Data Collection Time](https://proval.itglue.com/DOC-5078775-17917394)    | Custom Field  | Stores the time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. |
-| [Device Group - Office C2R Auditing](https://proval.itglue.com/DOC-5078775-17917403)     | Device Group  | A group of computers with Microsoft 365 installed.                                                         |
+| [Endpoint - C2R Office Version](<../cwrmm/custom-fields/Endpoint - C2R Office Version.md>)           | Custom Field  | Stores the C2R office version installed on the machine.                                                    |
+| [Endpoint - C2R Auto Update](<../cwrmm/custom-fields/Endpoint - C2R Auto Update.md>)             | Custom Field  | Stores whether the C2R office Auto update is enabled or disabled.                                          |
+| [Endpoint - C2R Update Channel](<../cwrmm/custom-fields/Endpoint - C2R Update Channel.md>)          | Custom Field  | Stores the Update Channel of the office installed on the machine.                                          |
+| [Endpoint - C2R Data Collection Time](<../cwrmm/custom-fields/Endpoint - C2R Data Collection Time.md>)    | Custom Field  | Stores the time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. |
+| [Device Group - Office C2R Auditing](<../cwrmm/groups/Office C2R Auditing.md>)     | Device Group  | A group of computers with Microsoft 365 installed.                                                         |
 | [Task - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) | Task          | Retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel. |
 
 ## Implementation
 
 1. Create the following Custom Fields:
-   - [C2R Office Version](https://proval.itglue.com/DOC-5078775-17917395)
-   - [C2R Auto Update](https://proval.itglue.com/DOC-5078775-17917401)
-   - [C2R Update Channel](https://proval.itglue.com/DOC-5078775-17917393)
-   - [C2R Data Collection](https://proval.itglue.com/DOC-5078775-17917394)
+   - [C2R Office Version](<../cwrmm/custom-fields/Endpoint - C2R Office Version.md>)
+   - [C2R Auto Update](<../cwrmm/custom-fields/Endpoint - C2R Auto Update.md>)
+   - [C2R Update Channel](<../cwrmm/custom-fields/Endpoint - C2R Update Channel.md>)
+   - [C2R Data Collection](<../cwrmm/custom-fields/Endpoint - C2R Data Collection Time.md>)
 
 2. Create this device group:
-   - [Device Group - Office C2R Auditing](https://proval.itglue.com/DOC-5078775-17917403)
+   - [Device Group - Office C2R Auditing](<../cwrmm/groups/Office C2R Auditing.md>)
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390)
+
 
 
 

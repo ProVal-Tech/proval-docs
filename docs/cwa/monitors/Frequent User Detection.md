@@ -18,11 +18,12 @@ You can change this day number on the monitor to set different script run freque
 
 ## Dependencies
 
-[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](https://proval.itglue.com/DOC-5078775-16300164)
+[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>)
 
 ## Target
 
 Windows Workstations
+
 
 
 

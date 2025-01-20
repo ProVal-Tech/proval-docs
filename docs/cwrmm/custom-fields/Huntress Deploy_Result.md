@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The [`CW RMM - Task - Huntress Agent (INSTALL)`](https://proval.itglue.com/DOC-5078775-13684933) task utilizes this custom field to store the number of times the task failed to install Huntress on the machine. This can further be utilized to create tickets for Huntress failure as per partners' requirements.
+The [`CW RMM - Task - Huntress Agent (INSTALL)`](<../tasks/Huntress Agent (INSTALL).md>) task utilizes this custom field to store the number of times the task failed to install Huntress on the machine. This can further be utilized to create tickets for Huntress failure as per partners' requirements.
 
 # Create the Custom Field
 
@@ -23,6 +23,7 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](https://proval.itglue.com/DOC-5
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
+
 
 
 

@@ -11,7 +11,7 @@ unlisted: false
 ## Summary
 
 Creates a shortcut in the Public Desktop.  
-Implementation of [EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](https://proval.itglue.com/DOC-5078775-11676992)  
+Implementation of [EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](<../../powershell/New-DesktopUriShortcut.md>)  
 
 ## Example Agent Procedure Log
 
@@ -39,7 +39,7 @@ Implementation of [EPM - Windows Configuration - Agnostic - New-DesktopUriShortc
 
 ## Process
 
-Runs the agnostic script [EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](https://proval.itglue.com/DOC-5078775-11676992).  
+Runs the agnostic script [EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](<../../powershell/New-DesktopUriShortcut.md>).  
 Prompts for Shortcut path, shortcut target, and an optional custom icon.  
 Custom Icon will need to be uploaded to managed files. Once uploaded, point the writeFile function on line 8 to the icon. The file on the endpoint should always be **_#directory#/icon.ico_**.
 
@@ -50,6 +50,7 @@ Custom Icon will need to be uploaded to managed files. Once uploaded, point the 
 - New-DesktopUriShortcut-log.txt
 - New-DesktopUriShortcut-error.txt
 - Agent Procedure Log
+
 
 
 

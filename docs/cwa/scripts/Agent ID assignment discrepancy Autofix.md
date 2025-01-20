@@ -29,9 +29,9 @@ Sample Ticket:
 ## Dependencies
 
 - [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](https://proval.itglue.com/DOC-5078775-10829954)
-- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](https://proval.itglue.com/DOC-5078775-8143436)
-- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](https://proval.itglue.com/DOC-5078775-8141008)
-- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](https://proval.itglue.com/DOC-5078775-7761438)
+- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>)
+- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
+- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](<./Automate Agent - Reinstall.md>)
 - LTPoSH Community Module ([https://bit.ly/LTPoSH](https://bit.ly/LTPoSH))
 - RMM+ Plugin Configured in CW Control portal
 
@@ -62,6 +62,7 @@ Step 4: Create/comment ticket for failure and to finish any open ticket for succ
 
 - Ticket
 - Script logs
+
 
 
 

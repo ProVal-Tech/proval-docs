@@ -14,8 +14,8 @@ Gives a display of a devices active network adapter and its associated settings.
 
 ## Dependencies
 
-- [EPM - Network - Custom Table - plugin_proval_dns_extradata](https://proval.itglue.com/DOC-5078775-11960296)
-- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](https://proval.itglue.com/DOC-5078775-12033156)
+- [EPM - Network - Custom Table - plugin_proval_dns_extradata](<../tables/plugin_proval_dns_extradata.md>)
+- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](<../scripts/Create and Populate plugin_proval_dns_extradata.md>)
 
 ## Columns
 
@@ -43,6 +43,7 @@ Gives a display of a devices active network adapter and its associated settings.
 | MTU             | The found MTU for the adapter.                      |
 | Bytes Sent      | The number of bytes Sent as seen on the adapter.    |
 | Bytes Rec       | The number of bytes received on the adapter.        |
+
 
 
 

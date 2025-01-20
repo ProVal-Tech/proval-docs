@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Purpose
 
-This Table will be populated by the [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script.  
+This Table will be populated by the [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script.  
 It holds all data from the Get-TPM command.
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)
+[SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>)
 
 ## Tables
 
@@ -43,6 +43,7 @@ It holds all data from the Get-TPM command.
 | TpmOwned               | VARCHAR | Holds the value of the TpmOwned property of Get-TPM                |
 | TpmPresent             | VARCHAR | Holds the value of the TpmPresent property of Get-TPM              |
 | TpmReady               | VARCHAR | Holds the value of the TpmReady property of Get-TPM                |
+
 
 
 

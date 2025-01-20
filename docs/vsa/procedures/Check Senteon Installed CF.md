@@ -14,11 +14,11 @@ This agent procedure is used to check for the presence of the Senteon Agent on t
 
 ## Dependencies
 
-Custom Field: [cPVAL Senteon Installed](https://proval.itglue.com/DOC-5078775-16540467)
+Custom Field: [cPVAL Senteon Installed](<../../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>)
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](https://proval.itglue.com/DOC-5078775-16541168)
+[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
 
 ## Implementation
 
@@ -44,6 +44,7 @@ Agent Procedure Log Entry & Custom Field - **Not_Running**
 
 Agent Procedure Log Entry & Custom Field - **Not_Present**  
 ![Image 6](../../../static/img/Check-Senteon-Installed-CF/image_6.png)  
+
 
 
 

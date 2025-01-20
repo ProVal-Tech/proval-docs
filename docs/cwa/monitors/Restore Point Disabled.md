@@ -14,12 +14,13 @@ This is a RAWSQL monitor that detects machines where the restore point is curren
 
 ## Dependencies
 
-- [Restore Point - Enabled](https://proval.itglue.com/DOC-5078775-7970528)  
+- [Restore Point - Enabled](<../roles/Restore Point - Enabled.md>)  
 - @System Restore - Enable [Autofix,Params] (Script)
 
 ## Target
 
 Workstations
+
 
 
 

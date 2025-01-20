@@ -24,11 +24,12 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 
 ## Dependencies
 
-[LTTray Port Mapping with System Registry](https://proval.itglue.com/DOC-5078775-7836230)
+[LTTray Port Mapping with System Registry](<../scripts/LTTray Port Mapping with System Registry.md>)
 
 ## Target
 
 Windows machine
+
 
 
 

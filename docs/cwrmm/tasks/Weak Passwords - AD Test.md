@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This task utilizes the agnostic script [Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592) to test the hashed credentials in AD against a known compromised or weak list.
+This task utilizes the agnostic script [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) to test the hashed credentials in AD against a known compromised or weak list.
 
 ## Sample Run
 
@@ -20,8 +20,8 @@ This task utilizes the agnostic script [Test-WeakCredentials](https://proval.itg
 
 ## Dependencies
 
-- [Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592)  
-- [CW RMM - Solution - Weak Passwords Audit](https://proval.itglue.com/DOC-5078775-17872310)
+- [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)  
+- [CW RMM - Solution - Weak Passwords Audit](<../../solutions/Weak Passwords Audit.md>)
 
 ## User Parameters
 
@@ -271,7 +271,7 @@ Add a new row by clicking on the Add row button in the ELSE part. Set Custom Fie
 
 ## Implementation
 
-This task has to be scheduled on [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214) group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group for auto deployment. Script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Weak Passwords - AD Test  
@@ -282,6 +282,7 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script Log
+
 
 
 

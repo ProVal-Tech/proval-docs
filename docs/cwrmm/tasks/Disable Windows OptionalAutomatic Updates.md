@@ -19,7 +19,7 @@ This task will disable the Windows optional automatic updates.
 
 ## Dependencies
 
-[CW RMM Custom Field - Windows Optional Update Disabled](https://proval.itglue.com/DOC-5078775-16372419)
+[CW RMM Custom Field - Windows Optional Update Disabled](<../custom-fields/Windows Optional Update Disabled.md>)
 
 ## Implementation
 
@@ -126,6 +126,7 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### Row 6: Complete
 
 ![Complete](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_17.png)  
+
 
 
 

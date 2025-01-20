@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This dataview will display Bitlocker recovery keys that have been collected by the [Bitlocker - Key Retrieval](https://proval.itglue.com/DOC-5078775-8009806) script.
+This dataview will display Bitlocker recovery keys that have been collected by the [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>) script.
 
 ## Dependencies
 
-[Bitlocker - Key Retrieval](https://proval.itglue.com/DOC-5078775-8009806)
+[Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>)
 
 ## Columns
 
@@ -26,6 +26,7 @@ This dataview will display Bitlocker recovery keys that have been collected by t
 | Drive Letter  | The drive letter that has been encrypted with Bitlocker                                         |
 | Recovery Key  | The recovery key for Bitlocker                                                                   |
 | Last Updated  | The last time that script was run to gather the data. Old LastUpdated dates may indicate outdated information. |
+
 
 
 

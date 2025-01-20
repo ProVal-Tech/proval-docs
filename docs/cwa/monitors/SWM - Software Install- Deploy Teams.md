@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[**EPM - Software Install - Script - Winget - Install/Update - Teams**](https://proval.itglue.com/DOC-5078775-13496687)  
+[**EPM - Software Install - Script - Winget - Install/Update - Teams**](<../scripts/Winget - InstallUpdate - Teams.md>)  
 
 ## Target
 
@@ -36,12 +36,13 @@ Managed Windows Workstations
 
 **Name**: `△ Custom - Execute Script - Winget - Install/Update - Teams`  
 
-**Note**: The [**EPM - Software Install - Script - Winget - Install/Update - Teams**](https://proval.itglue.com/DOC-5078775-13496687) script should be imported prior to creating/importing the alert template; since the alert template should run this script on failures.  
+**Note**: The [**EPM - Software Install - Script - Winget - Install/Update - Teams**](<../scripts/Winget - InstallUpdate - Teams.md>) script should be imported prior to creating/importing the alert template; since the alert template should run this script on failures.  
 
 ## Implementation
 
 Follow the steps provided in this private document to implement the solution:  
-[**Implement - Remote Monitor - Deploy Teams**](https://proval.itglue.com/DOC-5078775-13497993)  
+[**Implement - Remote Monitor - Deploy Teams**](<./Deploy Teams.md>)  
+
 
 
 

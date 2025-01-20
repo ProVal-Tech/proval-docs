@@ -10,15 +10,15 @@ unlisted: false
 ---
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293). This script handles cleanup of the following table(s): 
-- requires [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293) ScriptHistory_Cleanup global variable to be set to 1
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>). This script handles cleanup of the following table(s): 
+- requires [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) ScriptHistory_Cleanup global variable to be set to 1
 - h_script
 - h_scripts
 - stale script states
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
 
 ## Variables
 
@@ -32,6 +32,7 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Script-History/image_1.png)
+
 
 
 

@@ -14,7 +14,7 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 
 ## Dependencies
 
-[EPM - Windows Configuration - Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-13177312)
+[EPM - Windows Configuration - Remote Monitor - SMB1 Detection](<../monitors/SMB1 Detection.md>)
 
 ## Columns
 
@@ -37,6 +37,7 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 
 - Apply and import the remote monitors to the Managed Service Plan groups' Windows machines.
 - Import the dataview.
+
 
 
 

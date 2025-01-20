@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Purpose
 
-The table records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) custom table. It saves one entry per machine daily, maintaining this data for 30 days. The table is updated once per day by the [Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745) script.
+The table records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](<./pvl_automate_connection_audit.md>) custom table. It saves one entry per machine daily, maintaining this data for 30 days. The table is updated once per day by the [Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745) script.
 
-The script will start adding data to this table 24 hours after adding the first entry to the [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) table.
+The script will start adding data to this table 24 hours after adding the first entry to the [pvl_automate_connection_audit](<./pvl_automate_connection_audit.md>) table.
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744)
-- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178743)
+- [CWM - Automate - Custom Table - pvl_automate_connection_audit](<./pvl_automate_connection_audit.md>)
+- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](<../monitors/Update Table - pvl_automate_connection_audit.md>)
 - [CWM - Automate - script - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745)
 
 ## Tables
@@ -30,6 +30,7 @@ The script will start adding data to this table 24 hours after adding the first 
 | online              | int      | number of minutes it was online in the last 24 hours |
 | offline             | int      | number of minutes it was offline in the last 24 hours |
 | datacollectiontime  | datetime | data collection time for the respective entry        |
+
 
 
 

@@ -14,7 +14,7 @@ Windows 10 computers which are not compatible for Windows 11.
 
 ## Dependencies
 
-[CW RMM - Custom Field - Endpoint - Windows 11 Compatible](https://proval.itglue.com/DOC-5078775-15835398)
+[CW RMM - Custom Field - Endpoint - Windows 11 Compatible](<../custom-fields/Endpoint - Windows 11 Compatible.md>)
 
 ## Group Creation
 
@@ -86,6 +86,7 @@ Click the `Save` button to save/create the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_15.png)  
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_16.png)
+
 
 
 

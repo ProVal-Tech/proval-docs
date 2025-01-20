@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Stores the result returned by the [Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244) task for the incompatible machines.
+Stores the result returned by the [Windows 11 Compatibility Validation](<../tasks/Windows 11 Compatibility Validation.md>) task for the incompatible machines.
 
 ## Details
 
@@ -22,6 +22,7 @@ Stores the result returned by the [Windows 11 Compatibility Validation](https://
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_2.png)
+
 
 
 

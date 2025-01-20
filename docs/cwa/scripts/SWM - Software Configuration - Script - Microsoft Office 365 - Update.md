@@ -19,7 +19,7 @@ Set force to 1 to force Microsoft office applications to close during the update
 
 ## Dependencies
 
-- [SWM - Software Configuration - Agnostic - Update-Office](https://proval.itglue.com/DOC-5078775-12083647)
+- [SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
 
 ## Variables
 
@@ -60,6 +60,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_2.png)
+
 
 
 

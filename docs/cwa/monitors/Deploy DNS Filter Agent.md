@@ -14,7 +14,7 @@ The internal monitor executes the `DNS Filter Agent - Install` script hourly on 
 
 ## Dependencies
 
-[CWA - Script - DNS Filter Agent - Install](https://proval.itglue.com/DOC-5078775-15683983)
+[CWA - Script - DNS Filter Agent - Install](<../scripts/DNS Filter Agent - Install.md>)
 
 ## Target
 
@@ -36,6 +36,7 @@ OR
 
 Failed to install DNSFilter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
+
 
 
 

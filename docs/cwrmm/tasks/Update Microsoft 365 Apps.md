@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM implementation of the agnostic script [Update-Office](https://proval.itglue.com/DOC-5078775-12083647).
+Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM implementation of the agnostic script [Update-Office](<../../powershell/Update-Office.md>).
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM impleme
 
 ## Dependencies
 
-[SWM - Software Configuration - Agnostic - Update-Office](https://proval.itglue.com/DOC-5078775-12083647)
+[SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
 
 ## Task Creation
 
@@ -126,6 +126,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

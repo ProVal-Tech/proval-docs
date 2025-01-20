@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script will execute scripts to the Dell Command Configure application. The application must be installed before this script will function properly. This can be accomplished via manual install or with the ProVal Script - [Dell Command Configure - Installation](https://proval.itglue.com/DOC-5078775-8071330).
+This script will execute scripts to the Dell Command Configure application. The application must be installed before this script will function properly. This can be accomplished via manual install or with the ProVal Script - [Dell Command Configure - Installation](<./Dell Command Configure - Installation.md>).
 
 Time Saved by Automation: 5 Minutes
 
@@ -26,7 +26,7 @@ For clear syntax, please review this article from Dell: [Command Line Option Del
 
 ## Dependencies
 
-[Dell Command Configure - Installation](https://proval.itglue.com/DOC-5078775-8071330) (Or the software may be installed manually.)
+[Dell Command Configure - Installation](<./Dell Command Configure - Installation.md>) (Or the software may be installed manually.)
 
 Please note: This script will ONLY run on Dell machines with Dell Command Configure installed properly.
 
@@ -49,6 +49,7 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
+
 
 
 

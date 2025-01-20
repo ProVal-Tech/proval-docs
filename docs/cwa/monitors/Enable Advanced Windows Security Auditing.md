@@ -37,11 +37,12 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Enable Advanced Windows Security Auditing [Globals, Autofix]](https://proval.itglue.com/DOC-5078775-12413447)
+[CWM - Automate - Script - Enable Advanced Windows Security Auditing [Globals, Autofix]](<../scripts/Enable Advanced Windows Security Auditing Globals, Autofix.md>)
 
 ## Target
 
 Managed Windows Servers and Workstations
+
 
 
 

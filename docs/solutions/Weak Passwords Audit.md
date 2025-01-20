@@ -18,43 +18,44 @@ This solution gathers information on users with potentially compromised password
 
 | Content                                                                                                    | Type  | Level    | Function                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Custom Field - Company - Weak Password Count](https://proval.itglue.com/DOC-5078775-17872284)  | Text  | Endpoint | Holds the count of accounts with weak passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) |
-| [CW RMM - Custom Field - Company - Duplicate Password Count](https://proval.itglue.com/DOC-5078775-17872282) | Text  | Endpoint | Holds the count of accounts with duplicate passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) |
+| [CW RMM - Custom Field - Company - Weak Password Count](<../cwrmm/custom-fields/Company - Weak Password Count.md>)  | Text  | Endpoint | Holds the count of accounts with weak passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) |
+| [CW RMM - Custom Field - Company - Duplicate Password Count](<../cwrmm/custom-fields/Company - Duplicate Password Count.md>) | Text  | Endpoint | Holds the count of accounts with duplicate passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) |
 
 #### Device Groups
 
 | Content                                                                                                        | Type    | Description                          |
 |----------------------------------------------------------------------------------------------------------------|---------|--------------------------------------|
-| [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)                | Dynamic | This group contains the Domain Controllers. |
+| [CW RMM - Machine Group - Domain Controllers](<../cwrmm/groups/Domain Controllers.md>)                | Dynamic | This group contains the Domain Controllers. |
 
 #### Monitors
 
 | Content                                                                                                     | Type          | Description                                                                                         |
 |-------------------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------|
-| [CW RMM - Monitor - Weak Passwords Detected](https://proval.itglue.com/DOC-5078775-17872291)              | Custom Field  | It creates a ticket if accounts with weak passwords are detected on a domain controller.           |
-| [CW RMM - Monitor - Duplicate Password detected](https://proval.itglue.com/DOC-5078775-17898333)         | Custom Field  | It creates a ticket if accounts with duplicate passwords are detected on a domain controller.       |
+| [CW RMM - Monitor - Weak Passwords Detected](<../cwrmm/monitors/Weak Passwords Detected.md>)              | Custom Field  | It creates a ticket if accounts with weak passwords are detected on a domain controller.           |
+| [CW RMM - Monitor - Duplicate Password detected](<../cwrmm/monitors/Duplicate Password detected.md>)         | Custom Field  | It creates a ticket if accounts with duplicate passwords are detected on a domain controller.       |
 
 #### Tasks
 
 | Content                                                                                                   | Description                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)              | This task utilizes the agnostic script [Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592) to test the hashed credentials in AD against a known compromised or weak list. |
+| [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)              | This task utilizes the agnostic script [Test-WeakCredentials](<../powershell/Test-WeakCredentials.md>) to test the hashed credentials in AD against a known compromised or weak list. |
 
 ## Implementation
 
 1. Create the following custom fields:
-   - [CW RMM - Custom Field - Company - Weak Password Count](https://proval.itglue.com/DOC-5078775-17872284)
-   - [CW RMM - Custom Field - Company - Duplicate Password Count](https://proval.itglue.com/DOC-5078775-17872282)
+   - [CW RMM - Custom Field - Company - Weak Password Count](<../cwrmm/custom-fields/Company - Weak Password Count.md>)
+   - [CW RMM - Custom Field - Company - Duplicate Password Count](<../cwrmm/custom-fields/Company - Duplicate Password Count.md>)
 
 2. Create the following device group:
-   - [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)
+   - [CW RMM - Machine Group - Domain Controllers](<../cwrmm/groups/Domain Controllers.md>)
 
 3. Create the following monitors:
-   - [CW RMM - Custom Field - Company - Weak Password Count](https://proval.itglue.com/DOC-5078775-17872284)
-   - [CW RMM - Monitor - Duplicate Password detected](https://proval.itglue.com/DOC-5078775-17898333)
+   - [CW RMM - Custom Field - Company - Weak Password Count](<../cwrmm/custom-fields/Company - Weak Password Count.md>)
+   - [CW RMM - Monitor - Duplicate Password detected](<../cwrmm/monitors/Duplicate Password detected.md>)
 
 4. Create and deploy the following tasks:
    - [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)
+
 
 
 

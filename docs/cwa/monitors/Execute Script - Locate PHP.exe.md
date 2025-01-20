@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-Executes the [Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245023) once per week against the online windows computers.
+Executes the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) once per week against the online windows computers.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245023)
-- [EPM - Data Collection - Custom Table - pvl_php_audit](https://proval.itglue.com/DOC-5078775-16245130)
+- [EPM - Data Collection - Script - Locate PHP.exe](<../scripts/Locate PHP.exe.md>)
+- [EPM - Data Collection - Custom Table - pvl_php_audit](<../tables/pvl_php_audit.md>)
 
 ## Target
 
@@ -24,6 +24,7 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Find PHP.exe`
+
 
 
 

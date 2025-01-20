@@ -16,14 +16,15 @@ This solution contains a remote monitor, a search, an alert template, and a scri
 
 | Content                                                                                      | Type          | Function                                                                                                                                                                                                                                         |
 |----------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Service - Restart](https://proval.itglue.com/DOC-5078775-11032265)               | Script        | This Script will restart one or more services with proper error handling. This script can also be imported and triggered using the Alert Template **'△ Custom - Autofix - Restart Service'**                                                 |
-| [SVC - DNS Monitor+ Fix](https://proval.itglue.com/DOC-5078775-13598575)                   | Remote Monitor| This Powershell remote monitor checks for whether the DNS service is running or not. If not running then it itself attempts to restart it and then again checks, if it still fails then it executes the script [EPM - Windows Configuration - Script - Service - Restart](https://proval.itglue.com/DOC-5078775-11032265) using the alert template **'△ Custom - Autofix - Restart Service'** |
-| **△ Custom - Autofix - Restart Service**                                                    | Alert Template| This alert template should run with the remote monitor [SVC - DNS Monitor+ Fix](https://proval.itglue.com/DOC-5078775-13598575) to run the script [EPM - Windows Configuration - Script - Service - Restart](https://proval.itglue.com/DOC-5078775-11032265) to fix the DNS service start issues. |
+| [Script - Service - Restart](<../scripts/Service - Restart.md>)               | Script        | This Script will restart one or more services with proper error handling. This script can also be imported and triggered using the Alert Template **'△ Custom - Autofix - Restart Service'**                                                 |
+| [SVC - DNS Monitor+ Fix](<./CWM - Automate - Remote Monitor - DNS Service Monitoring.md>)                   | Remote Monitor| This Powershell remote monitor checks for whether the DNS service is running or not. If not running then it itself attempts to restart it and then again checks, if it still fails then it executes the script [EPM - Windows Configuration - Script - Service - Restart](<../scripts/Service - Restart.md>) using the alert template **'△ Custom - Autofix - Restart Service'** |
+| **△ Custom - Autofix - Restart Service**                                                    | Alert Template| This alert template should run with the remote monitor [SVC - DNS Monitor+ Fix](<./CWM - Automate - Remote Monitor - DNS Service Monitoring.md>) to run the script [EPM - Windows Configuration - Script - Service - Restart](<../scripts/Service - Restart.md>) to fix the DNS service start issues. |
 
 ## How To Import
 
 - Follow the below document for import and implementation steps:  
-  [Import - Remote Monitor - ProVal - Production - DNS Service Check](https://proval.itglue.com/DOC-5078775-13604735)
+  [Import - Remote Monitor - ProVal - Production - DNS Service Check](<./DNS Service Monitoring.md>)
+
 
 
 

@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-Detects the computers where the [Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976) script has not been executed within the past 7 days.
+Detects the computers where the [Get Patch Config](<../scripts/Get Patch Config.md>) script has not been executed within the past 7 days.
 
 Limited to: `Windows 10, 11, Server 2016, 2019, and 2022`
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976)
-- [EPM - Data Collection - Custom Table - pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975)
+- [EPM - Data Collection - Script - Get Patch Config](<../scripts/Get Patch Config.md>)
+- [EPM - Data Collection - Custom Table - pvl_patch_config](<../tables/pvl_patch_config.md>)
 
 ## Target
 
@@ -26,6 +26,7 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get Patch Config`
+
 
 
 

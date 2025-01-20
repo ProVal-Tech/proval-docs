@@ -26,13 +26,14 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 |----------------------------------------|----------|----------|------------------------------------------------------------------------------------------------------------------|
 | Webroot Encrypted KeyCode              | Computer | True     | Stores keycode grabbed from computer                                                                             |
 | Webroot KeyCode Status                 | Computer | True     | It stores the keycode's status as either `KeyCode Matched` or `KeyCode Not Matched`                           |
-| Webroot Site KeyCode                   | Client   | True     | This stores the site keycode which is available at the portal. Follow the below document on how to get the keycode: [Webroot Site KeyCode](https://proval.itglue.com/DOC-5078775-14989313) |
+| Webroot Site KeyCode                   | Client   | True     | This stores the site keycode which is available at the portal. Follow the below document on how to get the keycode: [Webroot Site KeyCode](<./Webroot Site KeyCode.md>) |
 
 ## Output
 
 - Script log
 - EDF
 - Dataview
+
 
 
 

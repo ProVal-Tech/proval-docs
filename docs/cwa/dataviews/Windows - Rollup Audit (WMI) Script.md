@@ -15,7 +15,7 @@ This dataview displays information about the latest Windows rollup update that h
 ## Dependencies
 
 - @ plugin_proval_ wmipatchesinstalled
-- [EPM - Data Collection - Script - Audit WMI Patch History](https://proval.itglue.com/DOC-5078775-8143435)
+- [EPM - Data Collection - Script - Audit WMI Patch History](<../scripts/Audit WMI Patch History.md>)
 
 ## Columns
 
@@ -30,6 +30,7 @@ This dataview displays information about the latest Windows rollup update that h
 | Latest Rollup   | Latest Rollup patch installed detail                      |
 | KB              | Latest rollup KB installed detail                         |
 | LastContact     | Agent Last Contact with the Automate                      |
+
 
 
 

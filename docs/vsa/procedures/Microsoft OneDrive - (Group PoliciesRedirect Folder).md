@@ -14,7 +14,7 @@ Implements group policies to redirect Windows known folders (Desktop, Documents,
 
 ## Dependencies
 
-- [Managed Variable - M365TenantId](https://proval.itglue.com/DOC-5078775-16749907)
+- [Managed Variable - M365TenantId](<../variables/M365TenantId.md>)
 
 ## Associated Content
 
@@ -35,7 +35,7 @@ Import this procedure into the partner's VSA instance
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_3.png)  
 
-Ensure the [Managed Variable - M365TenantId](https://proval.itglue.com/DOC-5078775-16749907) is created prior to usage if folder redirection is desired.
+Ensure the [Managed Variable - M365TenantId](<../variables/M365TenantId.md>) is created prior to usage if folder redirection is desired.
 
 ## Usage
 
@@ -69,6 +69,7 @@ A status of Success is expected.
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_6.png)  
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_7.png)  
+
 
 
 

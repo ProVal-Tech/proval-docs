@@ -19,7 +19,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[Computer Description Audit](https://proval.itglue.com/DOC-5078775-7998430)
+[Computer Description Audit](<./Computer Description Audit.md>)
 
 ## ScriptState
 
@@ -38,6 +38,7 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 
 

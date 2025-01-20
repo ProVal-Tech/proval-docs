@@ -37,7 +37,7 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 ## Dependencies
 
-- [SEC - WindowsPatching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713)
+- [SEC - WindowsPatching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>)
 
 ### User Parameters
 
@@ -47,11 +47,12 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 ## Process
 
-Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713).
+Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>).
 
 ## Output
 
 - Script log
+
 
 
 

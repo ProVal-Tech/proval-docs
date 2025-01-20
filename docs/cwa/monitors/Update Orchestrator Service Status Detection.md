@@ -25,11 +25,12 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-- [Update Orchestrator Service - Disable](https://proval.itglue.com/DOC-5078775-7909078)
+- [Update Orchestrator Service - Disable](<../scripts/Update Orchestrator Service - Disable.md>)
 
 ## Target
 
 Windows Machine
+
 
 
 

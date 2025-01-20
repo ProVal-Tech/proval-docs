@@ -23,8 +23,8 @@ Additionally, the script will send an email to [alerts@provaltech.com](mailto:al
 
 ## Dependencies
 
-- [CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217)  
-- [Manual Troubleshooting - ScreenConnect Orange Icon](https://proval.itglue.com/DOC-5078775-13282507)  
+- [CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)  
+- [Manual Troubleshooting - ScreenConnect Orange Icon](<./Manual Troubleshooting - ScreenConnect Orange Icon.md>)  
 
 ## Global Parameters
 
@@ -73,6 +73,7 @@ Reason: Automate has executed the autofix script 3 times over the last 7 days bu
 Please reinstall the ScreenConnect Client Manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 ```
+
 
 
 

@@ -14,10 +14,10 @@ The group contains the computers where the solution to disable FastBoot is enabl
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Disable_FastBoot](https://proval.itglue.com/DOC-5078775-16020399)
-- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](https://proval.itglue.com/DOC-5078775-16020673)
-- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](https://proval.itglue.com/DOC-5078775-16020404)
-- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](https://proval.itglue.com/DOC-5078775-16020405)
+- [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field  - Company - Disable_FastBoot.md>)
+- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](<../custom-fields/Endpoint - FastBoot_Disabled.md>)
+- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](<../custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>)
+- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](<../custom-fields/Site - Disable_Fastboot_Exclusion.md>)
 
 ## Group Creation
 
@@ -74,6 +74,7 @@ The group contains the computers where the solution to disable FastBoot is enabl
 
 ![Completed Group 1](../../../static/img/Disable-FastBoot/image_12.png)  
 ![Completed Group 2](../../../static/img/Disable-FastBoot/image_13.png)
+
 
 
 

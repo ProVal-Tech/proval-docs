@@ -48,7 +48,8 @@ Managed Windows Servers and Workstations
 
 ## Implementation
 
-[Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 [Change]](https://proval.itglue.com/DOC-5078775-16732160)
+[Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 [Change]](<./Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 Change.md>)
+
 
 
 

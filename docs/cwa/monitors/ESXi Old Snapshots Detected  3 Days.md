@@ -14,7 +14,7 @@ This Monitor identifies the ESXi host servers that contain one or more snapshots
 
 Default Alerting contains the information of all the virtual machines and the older snapshots grouped by ESXi host. It will generate a ticket against the Network Probe of the concerned ESXi host with the information of all the snapshots older than 3 days.
 
-This is intended to be used with the [Script - Ticket Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-10689215) as the auto-fix.
+This is intended to be used with the [Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) as the auto-fix.
 
 Alert Template: △ Custom - Ticket Creation - ESXi Monitoring
 
@@ -24,7 +24,8 @@ Limited by the SQL to the Network Probes detecting any ESXi host
 
 ## Dependencies
 
-[Script - Ticket Creation - VMWare ESXi Monitoring](https://proval.itglue.com/DOC-5078775-10689215)
+[Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>)
+
 
 
 

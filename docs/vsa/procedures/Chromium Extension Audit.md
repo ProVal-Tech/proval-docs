@@ -36,7 +36,7 @@ Gets Chromium extensions installed on an endpoint
 
 ## Dependencies
 
-[EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](https://proval.itglue.com/DOC-5078775-11791153)
+[EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>)
 
 ## Process
 
@@ -46,6 +46,7 @@ Runs the agnostic script to collect chromium extensions installed on an endpoint
 
 Agent Procedure Log  
 Custom Field: xPVAL Chromium Extensions Installed
+
 
 
 

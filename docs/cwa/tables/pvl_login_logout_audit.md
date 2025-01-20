@@ -14,7 +14,7 @@ This table stores the User login/logout data.
 
 ## Dependencies
 
-[Activity Logging Reporting](https://proval.itglue.com/DOC-5078775-13392962)
+[Activity Logging Reporting](<../scripts/Activity Logging Reporting DV, Global.md>)
 
 ## Tables
 
@@ -29,6 +29,7 @@ This table stores the User login/logout data.
 | ConnectionType                                                         | INT     | This stores the integer value of the user connection type to show whether the user was remote, network, or no interaction type etc |
 | Action                                                                 | INT     | This shows whether the user trace found for login or logout                                     |
 | ScriptRanDate                                                          | DATETIME| This shows the script date about when script last ran                                          |
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-The internal monitors run the [Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634) script on a weekly basis for Windows workstations with Outlook installed.
+The internal monitors run the [Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>) script on a weekly basis for Windows workstations with Outlook installed.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634)
+[EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>)
 
 ## Target
 
@@ -23,6 +23,7 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
+
 
 
 

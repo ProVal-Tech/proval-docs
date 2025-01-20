@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The dataview will display whether the supported versions of Click To Run `Microsoft 365 Apps / Microsoft Office` are updated to their latest released build or not. Additionally, it displays the recent execution of [SWM - Script - Microsoft Office - Click-to-Run - Update](https://proval.itglue.com/DOC-5078775-8141293) script against the machine.
+The dataview will display whether the supported versions of Click To Run `Microsoft 365 Apps / Microsoft Office` are updated to their latest released build or not. Additionally, it displays the recent execution of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script against the machine.
 
 ## Dependencies
 
-- [SWM - Script - Microsoft Office - Click-to-Run - Update](https://proval.itglue.com/DOC-5078775-8141293)  
-- [CWA Monitor - CVE-2023-23397 Detection](https://proval.itglue.com/DOC-5078775-12401051)  
+- [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>)  
+- [CWA Monitor - CVE-2023-23397 Detection](<../monitors/CVE-2023-23397 Detection.md>)  
 
 ## Columns
 
@@ -34,7 +34,8 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Current Version      | Current Installed version of the application           |
 | Required Version     | Required Version to install                             |
 | Update Status        | Updated/Out Of Date                                    |
-| Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](https://proval.itglue.com/DOC-5078775-8141293) script |
+| Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script |
+
 
 
 

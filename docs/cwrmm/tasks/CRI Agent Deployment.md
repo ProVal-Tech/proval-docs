@@ -45,7 +45,7 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 
 ![Row 1 Image 2](../../../static/img/CRI-Agent-Deployment/image_7.png)
 
-This sets the variable `CryismaAgent_URL` with the value of a custom field 'CryismaAgent_URL' [CW RMM - Cyrisma Custom Fields](https://proval.itglue.com/DOC-5078775-15298953).
+This sets the variable `CryismaAgent_URL` with the value of a custom field 'CryismaAgent_URL' [CW RMM - Cyrisma Custom Fields](<../custom-fields/CW RMM - Cyrisma Custom Fields.md>).
 
 ### Row 2: Function: Set Pre-defined Variable
 
@@ -53,7 +53,7 @@ This sets the variable `CryismaAgent_URL` with the value of a custom field 'Cryi
 
 ![Row 2 Image 2](../../../static/img/CRI-Agent-Deployment/image_9.png)
 
-This sets the variable `CryismaAgent_Key` with the value of a custom field 'CryismaAgent_Key' [CW RMM - Cyrisma Custom Fields](https://proval.itglue.com/DOC-5078775-15298953).
+This sets the variable `CryismaAgent_Key` with the value of a custom field 'CryismaAgent_Key' [CW RMM - Cyrisma Custom Fields](<../custom-fields/CW RMM - Cyrisma Custom Fields.md>).
 
 ### Row 3: Function: PowerShell script
 
@@ -182,6 +182,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field
+
 
 
 

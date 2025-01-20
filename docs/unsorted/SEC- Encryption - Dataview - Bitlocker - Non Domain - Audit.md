@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-Displays information from the table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520) filled by [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478). Additionally displays information about the Active Directory backup status of each key protector.
+Displays information from the table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) filled by [SEC - Encryption - Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). Additionally displays information about the Active Directory backup status of each key protector.
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520)
-- [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](https://proval.itglue.com/DOC-5078775-9045330)
-- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](https://proval.itglue.com/DOC-5078775-9045331)
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>)
+- [SEC - Encryption - Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>)
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../cwa/tables/plugin_proval_ad_bitlocker_keyprotectors.md>)
+- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>)
 
 ## Columns
 
@@ -116,6 +116,7 @@ FROM (
         JOIN clients cl ON c.ClientID = cl.ClientID
 ) dt
 ```
+
 
 
 

@@ -16,7 +16,7 @@ The browser list which is under auditing is (Mozilla Firefox | Google Chrome | V
 
 ## Dependencies
 
-[Internet Explorer - Disable](https://proval.itglue.com/DOC-5078775-10220659)
+[Internet Explorer - Disable](<../cwa/scripts/Internet Explorer - Disable Global, DV, Autofix.md>)
 
 ## Columns
 
@@ -86,6 +86,7 @@ FROM
       c.computerid
   ) AS t
 ```
+
 
 
 

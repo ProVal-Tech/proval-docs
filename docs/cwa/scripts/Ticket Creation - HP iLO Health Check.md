@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is an auto-fix script used by the [EPM - Vendor Specific - Solution - HP iLO Health Check](https://proval.itglue.com/DOC-5078775-10073297) monitor set to manage ticketing.
+This is an auto-fix script used by the [EPM - Vendor Specific - Solution - HP iLO Health Check](<../../solutions/HP iLO Health Check.md>) monitor set to manage ticketing.
 
 The script's primary function is to automatically generate a computer-level ticket when the device or server is detected in Automate. By comparing the name set in the 'iLO Automation Password' password entry with the available client computers, it swiftly identifies matches and initiates ticket creation for the corresponding computer. In cases where no match is found, it seamlessly generates a client-level ticket.
 
@@ -20,12 +20,13 @@ Should be executed from the `△ Custom - Ticket Creation - HP iLO Health Check`
 
 ## Dependencies
 
-[EPM - Vendor Specific - Solution - HP iLO Health Check](https://proval.itglue.com/DOC-5078775-10073297)
+[EPM - Vendor Specific - Solution - HP iLO Health Check](<../../solutions/HP iLO Health Check.md>)
 
 ## Output
 
 - Script Log
 - Ticket
+
 
 
 

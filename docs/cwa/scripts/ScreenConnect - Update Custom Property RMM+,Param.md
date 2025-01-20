@@ -26,7 +26,7 @@ User property for the Custom Property Index and the Property Value needs to be s
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217)  
+[CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)  
 
 #### Variables
 
@@ -58,6 +58,7 @@ User property for the Custom Property Index and the Property Value needs to be s
 ## Output
 
 Script log messages only.
+
 
 
 

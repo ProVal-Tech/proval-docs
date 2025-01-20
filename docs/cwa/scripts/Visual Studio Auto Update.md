@@ -25,7 +25,7 @@ It is compatible with the below applications only:
 
 ## Dependencies
 
-[Agnostic - Visual Studio Auto Update](https://proval.itglue.com/DOC-5078775-16390578)  
+[Agnostic - Visual Studio Auto Update](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>)  
 
 ## Variables
 
@@ -42,6 +42,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

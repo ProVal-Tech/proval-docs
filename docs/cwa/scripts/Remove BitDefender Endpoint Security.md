@@ -19,7 +19,7 @@ Running this will remove Bitdefender Endpoint Security from the target.
 
 ## Dependencies
 
-- [SWM - Software Uninstall - Agnostic - Remove-BitdefenderEndpointSecurity](https://proval.itglue.com/DOC-5078775-11524980)
+- [SWM - Software Uninstall - Agnostic - Remove-BitdefenderEndpointSecurity](<../../powershell/Remove-BitDefenderEndpointSecurity.md>)
 
 ## Process
 
@@ -28,6 +28,7 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
+
 
 
 

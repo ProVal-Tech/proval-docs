@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-The dataview exhibits the `Password Manager Lockdown Status` for the computer obtained from the [Lockdown Browsers Password Manager](https://proval.itglue.com/DOC-5078775-15018079) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the name of the specific browsers where the disabling process failed.
+The dataview exhibits the `Password Manager Lockdown Status` for the computer obtained from the [Lockdown Browsers Password Manager](<../monitors/Lockdown Browsers Password Manager.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the name of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
 **Search:** `Lockdown Browsers Password Manager`  
 **Search:** `Lockdown Browsers Autofill`  
 **Group:** `△ Lockdown Browsers Autofill`  
-**Remote Monitor:** [EPM - Software Configuration - Remote Monitor - Lockdown Browsers Password Manager](https://proval.itglue.com/DOC-5078775-15018079)
+**Remote Monitor:** [EPM - Software Configuration - Remote Monitor - Lockdown Browsers Password Manager](<../monitors/Lockdown Browsers Password Manager.md>)
 
 ## Columns
 
@@ -33,6 +33,7 @@ The dataview exhibits the `Password Manager Lockdown Status` for the computer ob
 | Last Contact                 | Last Contact with RMM                                                                                                       |
 | Last Logged In User          | Last Logged In User                                                                                                         |
 | Password Manager Lockdown Status | Indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
+
 
 
 

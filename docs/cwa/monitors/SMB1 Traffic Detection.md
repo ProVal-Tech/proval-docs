@@ -30,8 +30,8 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854)
-- [EPM - Windows Configuration - Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-13177312)
+- [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
+- [EPM - Windows Configuration - Remote Monitor - SMB1 Detection](<./SMB1 Detection.md>)
 
 ## Target
 
@@ -48,7 +48,8 @@ Details: `
 
 ## Implementation
 
-[Implement - Remote Monitor - SMB1 Traffic Detection](https://proval.itglue.com/DOC-5078775-14461257)
+[Implement - Remote Monitor - SMB1 Traffic Detection](<./SMB1 Traffic Detection.md>)
+
 
 
 

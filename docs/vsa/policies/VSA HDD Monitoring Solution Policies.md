@@ -18,7 +18,7 @@ A C: drive monitor has been created for workstations.
 
 - **Policy Name**: Server Core HDD Monitor Drive {LETTER}
 - **Policy Description**: Monitors Server drive {LETTER}.
-- **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](https://proval.itglue.com/DOC-5078775-10793262)
+- **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
 - **Policy Objects Active**:
@@ -29,7 +29,7 @@ A C: drive monitor has been created for workstations.
 
 - **Policy Name**: Workstation Core HDD Monitor Drive C:
 - **Policy Description**: Monitors Workstation drive C:.
-- **Applied View**: [xPVAL Drive C](https://proval.itglue.com/DOC-5078775-10793262)
+- **Applied View**: [xPVAL Drive C](<../custom-fields/xPVAL Drive List.md>)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
 - **Policy Objects Active**:
@@ -37,6 +37,7 @@ A C: drive monitor has been created for workstations.
   - **Policy Object Settings**:
     - **Policy Object Members**: [EPM - Disk - Monitor Set - Vsa HDD Monitoring Solution Monitor Sets](https://proval.itglue.com/DOC-5078775-10793257)
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
+
 
 
 

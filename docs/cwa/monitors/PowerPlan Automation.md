@@ -14,7 +14,7 @@ The internal monitor will detect machines where the Power Plan set in the Client
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Power Plan - Set/Create](https://proval.itglue.com/DOC-5078775-15053772)
+[EPM - Windows Configuration - Script - Power Plan - Set/Create](<../scripts/Power Plan - SetCreate.md>)
 
 ## Target
 
@@ -23,6 +23,7 @@ Global
 ## Alert Template
 
 Name: `△ Custom - PowerPlan Automation`
+
 
 
 

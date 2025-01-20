@@ -22,7 +22,7 @@ Time Saved by Automation: 10 Minutes
 
 - Windows 10 1703+
 - Mozilla Firefox installed
-- [Set-FirefoxHomepage](https://proval.itglue.com/DOC-5078775-7348110)
+- [Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>)
 
 ## Variables
 
@@ -44,6 +44,7 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on computer
+
 
 
 

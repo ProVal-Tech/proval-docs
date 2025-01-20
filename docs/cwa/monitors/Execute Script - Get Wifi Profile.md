@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the monitor set is to execute [Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355) script in Audit only mode once per month against physical windows workstations excluding windows XP, 7, 8, and 8.1. 
+The purpose of the monitor set is to execute [Get Wifi Profile](<../scripts/Get Wifi Profile.md>) script in Audit only mode once per month against physical windows workstations excluding windows XP, 7, 8, and 8.1. 
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355)
-- [CWM - Automate - Custom Table - pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849)
+- [EPM - Windows Configuration - Script - Get Wifi Profile](<../scripts/Get Wifi Profile.md>)
+- [CWM - Automate - Custom Table - pvl_wifi_profiles](<../tables/pvl_wifi_profiles.md>)
 
 ## Target
 
@@ -26,6 +26,7 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
+
 
 
 

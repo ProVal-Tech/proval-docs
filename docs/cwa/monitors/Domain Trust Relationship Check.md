@@ -24,7 +24,7 @@ This monitor is used to generate a ticket whenever the trust relationship betwee
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -55,6 +55,7 @@ The command was completed with a failure
 ## Implementation
 
 [https://proval.itglue.com/5078775/docs/17975723](https://proval.itglue.com/5078775/docs/17975723)
+
 
 
 

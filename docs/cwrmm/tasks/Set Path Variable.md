@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Sets the provided path(s) to the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Set-PathVariable](https://proval.itglue.com/DOC-5078775-11976265).
+Sets the provided path(s) to the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Set-PathVariable](<../../powershell/Set-PathVariable.md>).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ Sets the provided path(s) to the Environmental Path variable for a Path at the M
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Set-PathVariable](https://proval.itglue.com/DOC-5078775-11976265)
+[EPM - Windows Configuration - Agnostic - Set-PathVariable](<../../powershell/Set-PathVariable.md>)
 
 ## User Parameters
 
@@ -179,6 +179,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

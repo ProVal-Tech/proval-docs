@@ -14,8 +14,8 @@ The Dataview audits the Monitors in an environment.
 
 ## Dependencies
 
-- [plugin_proval_v_monitoraudit](https://proval.itglue.com/DOC-5078775-8158184)
-- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit*](https://proval.itglue.com/DOC-5078775-11931049)
+- [plugin_proval_v_monitoraudit](<../monitors/CWM - Automate - View - plugin_proval_v_monitoraudit.md>)
+- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit*](<../scripts/MySQL - View - Create - plugin_proval_v_monitoraudit.md>)
 
 ## Columns
 
@@ -35,6 +35,7 @@ The Dataview audits the Monitors in an environment.
 | Category Name           | The category assigned to the alert.                          |
 | Service Board           | The service board that the alert will post to.              |
 | Monitor Run Frequency    | Running interval of the monitor set.                         |
+
 
 
 

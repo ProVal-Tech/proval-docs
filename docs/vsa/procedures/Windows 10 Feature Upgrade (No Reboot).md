@@ -12,7 +12,7 @@ unlisted: false
 
 Initiates a feature upgrade on the target endpoint without forcing a reboot.  
 **WARNING:** all data modified in `$WinDir%` will be lost between the upgrade completion and reboot.  
-This procedure is also initiated by [SEC - Windows Patching - Policy - Windows 10 Feature Upgrade Reattempt on Fail](https://proval.itglue.com/DOC-5078775-10784807).
+This procedure is also initiated by [SEC - Windows Patching - Policy - Windows 10 Feature Upgrade Reattempt on Fail](<../policies/Windows 10 Feature Upgrade Reattempt on Fail.md>).
 
 ## Sample Run
 
@@ -39,14 +39,15 @@ This procedure is also initiated by [SEC - Windows Patching - Policy - Windows 1
 
 ## Process
 
-Starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713) on the machine with no reboot.  
-Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](https://proval.itglue.com/DOC-5078775-10784808) to [REBOOT PENDING].
+Starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>) on the machine with no reboot.  
+Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) to [REBOOT PENDING].
 
 ## Output
 
 AP Log  
-[SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](https://proval.itglue.com/DOC-5078775-10784808)  
+[SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
 PSOutput Document
+
 
 
 

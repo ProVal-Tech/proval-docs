@@ -37,7 +37,8 @@ Windows 11 machines only.
 
 ## How To Import
 
-[Import - Remote Monitor - Disable AI Recall](https://proval.itglue.com/DOC-5078775-16388386)
+[Import - Remote Monitor - Disable AI Recall](<./Disable AI Recall.md>)
+
 
 
 

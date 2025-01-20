@@ -19,11 +19,11 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Endpoint - C2R Office Version](https://proval.itglue.com/DOC-5078775-17917395)
-- [CW RMM - Custom Field - Endpoint - C2R Auto Update](https://proval.itglue.com/DOC-5078775-17917401)
-- [CW RMM - Custom Field - Endpoint - C2R Update Channel](https://proval.itglue.com/DOC-5078775-17917393)
-- [CW RMM - Custom Field - Endpoint - C2R Data Collection Time](https://proval.itglue.com/DOC-5078775-17917394)
-- [CW RMM - Device Group - Office C2R Auditing](https://proval.itglue.com/DOC-5078775-17917403)
+- [CW RMM - Custom Field - Endpoint - C2R Office Version](<../custom-fields/Endpoint - C2R Office Version.md>)
+- [CW RMM - Custom Field - Endpoint - C2R Auto Update](<../custom-fields/Endpoint - C2R Auto Update.md>)
+- [CW RMM - Custom Field - Endpoint - C2R Update Channel](<../custom-fields/Endpoint - C2R Update Channel.md>)
+- [CW RMM - Custom Field - Endpoint - C2R Data Collection Time](<../custom-fields/Endpoint - C2R Data Collection Time.md>)
+- [CW RMM - Device Group - Office C2R Auditing](<../groups/Office C2R Auditing.md>)
 
 ## Task Creation
 
@@ -364,6 +364,7 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_52.png)  
+
 
 
 

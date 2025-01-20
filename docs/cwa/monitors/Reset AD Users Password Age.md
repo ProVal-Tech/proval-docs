@@ -39,7 +39,8 @@ Domain Controllers
 
 ## How to Import
 
-[Import - Remote Monitor - Reset AD Users Password Age](https://proval.itglue.com/DOC-5078775-13667960)  
+[Import - Remote Monitor - Reset AD Users Password Age](<./Import - Remote Monitor - Reset AD Users Password Age.md>)  
+
 
 
 

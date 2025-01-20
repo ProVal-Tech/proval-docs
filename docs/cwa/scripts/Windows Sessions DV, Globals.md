@@ -18,7 +18,7 @@ Executes the `query session` command and stores the result in a custom table.
 
 ## Dependencies
 
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
 
@@ -36,6 +36,7 @@ Executes the `query session` command and stores the result in a custom table.
 
 - Dataview
 - Custom Table
+
 
 
 

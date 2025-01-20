@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Removes the provided path(s) from the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Remove-PathVariable](https://proval.itglue.com/DOC-5078775-11976271).
+Removes the provided path(s) from the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Remove-PathVariable](<../../powershell/Remove-PathVariable.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Removes the provided path(s) from the Environmental Path variable for a Path at 
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Remove-PathVariable](https://proval.itglue.com/DOC-5078775-11976271)
+[EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>)
 
 ## User Parameters
 
@@ -166,6 +166,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

@@ -19,7 +19,7 @@ The purpose of the internal monitor is to execute [EPM - Disk - Script - Crystal
 ## Dependencies
 
 - [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045)  
-- [EPM - Disk - Custom Table - pvl_crystal_disk_info](https://proval.itglue.com/DOC-5078775-12960038)  
+- [EPM - Disk - Custom Table - pvl_crystal_disk_info](<../tables/pvl_crystal_disk_info.md>)  
 
 ## Target
 
@@ -45,6 +45,7 @@ Managed Windows Computers
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_5.png)  
   - If ticket category is set from none of the above mentioned places, then ticket will be generated under the default ticket category.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_6.png)  
+
 
 
 

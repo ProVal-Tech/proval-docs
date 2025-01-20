@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' is not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](https://proval.itglue.com/DOC-5078775-16445571) ran in the past 7 days.
+This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' is not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>) ran in the past 7 days.
 
 ## Dependencies
 
-[Malicious Software Removal Tool Scanner](https://proval.itglue.com/DOC-5078775-16445571)  
+[Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>)  
 **△ Custom - Execute Script - MSRT Scanner**
 
 ## Target
@@ -38,6 +38,7 @@ OR
 
 MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the below logs:  
 @ScanResult@. The Autofix extended scan of the computer and automatically cleans any infections that are found is scheduled.
+
 
 
 

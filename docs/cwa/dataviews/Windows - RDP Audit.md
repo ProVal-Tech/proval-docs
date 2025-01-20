@@ -16,7 +16,7 @@ Note: This dataview is a role dependent dataview so it will not reflect changed 
 
 ## Dependencies
 
-[Windows - RDP Enabled](https://proval.itglue.com/DOC-5078775-8061217)
+[Windows - RDP Enabled](<../roles/Windows - RDP Enabled.md>)
 
 ## Columns
 
@@ -28,6 +28,7 @@ Note: This dataview is a role dependent dataview so it will not reflect changed 
 | Operating System    | Operating System of an agent                |
 | Agent Status        | Agent status whether offline or online      |
 | RDP Status          | RDP status whether enabled or disabled      |
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Used to hold the results of the [RSM - Active Directory - Agnostic - Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592) script run by the [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) Automate Script, for reporting purposes.
+Used to hold the results of the [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) script run by the [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) Automate Script, for reporting purposes.
 
 ## Dependencies
 
-- [RSM - Active Directory - Agnostic - Test-WeakCredentials](https://proval.itglue.com/DOC-5078775-9622592)
+- [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)
 - [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)
 
 ## Tables
@@ -41,6 +41,7 @@ Put the SQL to create the custom table here:
 ```
 CREATE TABLE table_name ...
 ```
+
 
 
 

@@ -26,11 +26,11 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](https://proval.itglue.com/DOC-5078775-7900054)
+[RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](<../roles/Windows RDS Licensing Server.md>)
 
 ## Target
 
-Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](https://proval.itglue.com/DOC-5078775-7900054) role installed
+Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](<../roles/Windows RDS Licensing Server.md>) role installed
 
 ## Ticketing
 
@@ -41,6 +41,7 @@ Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licens
 **Failure:** We have detected Licensing issue with your RDS Licensing Server. Possibilities are either the License is configured or has expired. Please check.  
 
 **Success:** License issue is resolved now.
+
 
 
 

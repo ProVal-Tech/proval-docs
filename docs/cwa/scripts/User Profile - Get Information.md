@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Gathers information about user profiles. Data is stored into the custom table [plugin_proval_userprofiles](https://proval.itglue.com/DOC-5078775-8476498).
+Gathers information about user profiles. Data is stored into the custom table [plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>).
 
 **Not supported on Windows Domain Controllers or deprecated versions of Windows. An error will be thrown if run against one.**
 
@@ -30,7 +30,7 @@ Gathers information about user profiles. Data is stored into the custom table [p
 
 ## Dependencies
 
-- [EPM - Accounts - Agnostic - Get-UserProfiles](https://proval.itglue.com/DOC-5078775-8475169)
+- [EPM - Accounts - Agnostic - Get-UserProfiles](<../../powershell/Get-UserProfiles.md>)
 - PowerShell v5
 
 ## Output
@@ -38,6 +38,7 @@ Gathers information about user profiles. Data is stored into the custom table [p
 - Script log
 - Local file on computer
 - Dataview
+
 
 
 

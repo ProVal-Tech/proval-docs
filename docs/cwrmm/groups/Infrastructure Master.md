@@ -14,9 +14,9 @@ The group contains the Infrastructure Masters.
 
 ## Dependencies
 
-- [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)
-- [CW RMM - Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215)
-- [CW RMM - Task - Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218)
+- [CW RMM - Machine Group - Domain Controllers](<./Domain Controllers.md>)
+- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
+- [CW RMM - Task - Validate Primary Domain Controller](<../tasks/Validate Primary Domain Controller.md>)
 
 ## Screenshot
 
@@ -30,6 +30,7 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure masters
 - Select `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator and type `Yes` in the condition box.
 - Click `Save` button at the top left to create the group.
+
 
 
 

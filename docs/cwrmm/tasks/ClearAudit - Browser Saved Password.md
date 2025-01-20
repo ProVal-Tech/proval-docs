@@ -325,7 +325,7 @@ In the script Exit, leave it empty and save.
 ## Deployment
 
 It is suggested to run the Task daily or weekly on the groups "Clear Browser Saved Password endpoints" And "Browser Saved Password Audit Group".  
-Refer to the Group documentation: [Dynamic Groups - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17312581) on how to create it.
+Refer to the Group documentation: [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>) on how to create it.
 
 - Goto `Automation` > `Tasks.`
 - Search for `Clear/Audit - Browser Saved Password` Task.
@@ -361,6 +361,7 @@ This screen will appear.
 
 - Script log
 - Custom field
+
 
 
 

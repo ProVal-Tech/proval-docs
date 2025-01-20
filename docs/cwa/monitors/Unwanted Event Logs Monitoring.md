@@ -28,11 +28,12 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[Automate Server - Event Log Monitoring [Autofix]](https://proval.itglue.com/DOC-5078775-10390937)
+[Automate Server - Event Log Monitoring [Autofix]](<../scripts/Automate Server - Event Log Monitoring Autofix.md>)
 
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers.Server Roles.MSP Specific Servers.Labtech Server
+
 
 
 

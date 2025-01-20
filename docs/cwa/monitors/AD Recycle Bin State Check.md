@@ -24,8 +24,8 @@ This is a remote PowerShell monitor which detects whether the AD Recycle Bin is 
 
 ## Dependencies
 
-[AD - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-7937042)  
-[RSM - Active Directory - Role - AD Domain Recycle Bin Feature](https://proval.itglue.com/DOC-5078775-8012918)  
+[AD - Enable AD Recycle Bin](<../scripts/AD - Enable AD Recycle Bin.md>)  
+[RSM - Active Directory - Role - AD Domain Recycle Bin Feature](<../roles/AD Domain Recycle Bin Feature.md>)  
 
 ## Target
 
@@ -33,7 +33,8 @@ Domain Controllers only
 
 ## Implementation
 
-[Import - Remote Monitor - AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-14764163)  
+[Import - Remote Monitor - AD Recycle Bin State Check](<./AD Recycle Bin State Check.md>)  
+
 
 
 

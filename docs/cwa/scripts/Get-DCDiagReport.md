@@ -22,7 +22,7 @@ A set of specific test names can be passed to the `Excluded_TestNames` parameter
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Get-DCDiagReport.ps1](https://proval.itglue.com/DOC-5078775-12528541)
+- [EPM - Data Collection - Agnostic - Get-DCDiagReport.ps1](<../../powershell/Get-DCDiagReport.ps1.md>)
 
 ## Variables
 
@@ -61,6 +61,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 ![Ticketing](../../../static/img/Get-DCDiagReport/image_3.png)  
 **Script will not close/finish any ticket.**
+
 
 
 

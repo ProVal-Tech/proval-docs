@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The dataview displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-14227796) script.
+The dataview displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-14227796)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](https://proval.itglue.com/DOC-5078775-14241947)
+- [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../monitors/Execute Script - Microsoft OneDrive Sync Status.md>)
 
 ## Columns
 
@@ -33,6 +33,7 @@ The dataview displays the OneDrive Sync Status gathered by the [EPM - Data Colle
 | Sync Status            | OneDrive Sync Status                                 |
 | One_Drive_Sync_Status  | Detailed Sync Status fetched by the script           |
 | Script_Run_Time        | Data Collection Time                                  |
+
 
 
 

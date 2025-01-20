@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This internal monitor is a part of [EPM - Windows Configuration - Solution - User Prompt for Reboot](https://proval.itglue.com/DOC-5078775-9088563) and is designed to detect the agents with Login Bug Issues. It has been more than 07 days since its detection, and the machine has still not been rebooted.
+This internal monitor is a part of [EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) and is designed to detect the agents with Login Bug Issues. It has been more than 07 days since its detection, and the machine has still not been rebooted.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Solution - User Prompt for Reboot](https://proval.itglue.com/DOC-5078775-9088563)
+[EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>)
 
 ## Target
 
@@ -29,6 +29,7 @@ This Monitor is a Global Monitor.
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+
 
 
 

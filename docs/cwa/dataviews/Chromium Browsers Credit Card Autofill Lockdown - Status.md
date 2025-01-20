@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Credit Card Autofill](https://proval.itglue.com/DOC-5078775-15124293) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the Autofilling feature for credit cards for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed.
+The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Credit Card Autofill](<../monitors/Lockdown Chromium Browsers Credit Card Autofill.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the Autofilling feature for credit cards for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
 - **Search:** `Lockdown Browsers Credit Card Autofill`
 - **Search:** `Lockdown Browsers Autofill`
 - **Group:** `△ Lockdown Browsers Autofill`
-- **Remote Monitor:** [EPM - Remote Monitor - Lockdown Chromium Browsers Credit Card Autofill](https://proval.itglue.com/DOC-5078775-15124293)
+- **Remote Monitor:** [EPM - Remote Monitor - Lockdown Chromium Browsers Credit Card Autofill](<../monitors/Lockdown Chromium Browsers Credit Card Autofill.md>)
 
 ## Columns
 
@@ -33,6 +33,7 @@ The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the comput
 | Last Contact                    | Last Contact with RMM                                                                                                    |
 | Last Logged In User             | Last Logged In User                                                                                                      |
 | Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the Autofilling feature for credit cards for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
+
 
 
 

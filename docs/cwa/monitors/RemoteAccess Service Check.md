@@ -37,7 +37,8 @@ Limited to Windows machines only.
 ## How To Import
 
 - Follow the below document for import and implementation steps:  
-  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](https://proval.itglue.com/DOC-5078775-13941537)  
+  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](<./RemoteAccess Service Check.md>)  
+
 
 
 

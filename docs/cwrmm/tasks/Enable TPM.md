@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Initializes TPM as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used. CW RMM implementation of [Enable TPM](https://proval.itglue.com/DOC-5078775-11410958).
+Initializes TPM as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used. CW RMM implementation of [Enable TPM](<../../cwa/scripts/Bitlocker - Enable TPM.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Initializes TPM as a part of the provisioning process for a Trusted Platform Mod
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Enable TPM](https://proval.itglue.com/DOC-5078775-11410958)
+[SEC - Encryption - Script - Bitlocker - Enable TPM](<../../cwa/scripts/Bitlocker - Enable TPM.md>)
 
 ## User Parameters
 
@@ -195,6 +195,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Enable-TPM/image_26.png)  
+
 
 
 

@@ -14,7 +14,7 @@ Displays information about Windows Update history for agents.
 
 ## Dependencies
 
-- [EPM - Custom Table - pvl_windows_updates](https://proval.itglue.com/DOC-5078775-12275091)
+- [EPM - Custom Table - pvl_windows_updates](<../cwa/tables/pvl_windows_updates.md>)
 - [EPM - Script - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093)
 
 ## Columns
@@ -52,6 +52,7 @@ Displays information about Windows Update history for agents.
 | Recommended CPU Speed           | Recommended CPU Speed to install the Patch        |
 | Recommended Hard Disk Space     | Recommended Hard Disk Space to Install the Patch  |
 | Recommended Memory              | Recommended Memory to Install the Patch           |
+
 
 
 

@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-This dataview will display the Windows Shadow Copy state for endpoints with Shadow Copy Enabled and that have run the script [Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337) to gather the information.
+This dataview will display the Windows Shadow Copy state for endpoints with Shadow Copy Enabled and that have run the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) to gather the information.
 
 ## Dependencies
 
-- [Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)
-- [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668)
+- [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)
+- [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)
 
 ## Columns
 
@@ -35,6 +35,7 @@ This dataview will display the Windows Shadow Copy state for endpoints with Shad
 | Used Space by Shadow Copy (GB)          | Used space size by the Shadow Copy in GB                               |
 | Allocated Size of Shadow Copy (GB)      | Allocated space size for the Shadow Copy in GB                         |
 | Maximum Space Provided to Shadow Copy (GB)| Maximum space provided to the Shadow Copy in GB                       |
+
 
 
 

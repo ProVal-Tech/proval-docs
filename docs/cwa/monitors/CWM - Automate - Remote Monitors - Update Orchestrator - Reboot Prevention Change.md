@@ -46,7 +46,8 @@ The reboot file at "C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrat
 
 ## Implementation
 
-[Implement - Remote Monitor - Windows Update Orchestrator](https://proval.itglue.com/DOC-5078775-16291367)
+[Implement - Remote Monitor - Windows Update Orchestrator](<./Windows Update Orchestrator.md>)
+
 
 
 

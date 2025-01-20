@@ -17,7 +17,7 @@ It also ensures to run the script once on the agent.
 
 ## Dependencies
 
-[KB5034957 - CVE-2024-20666 - Updating the WinRE partition](https://proval.itglue.com/DOC-5078775-15721390) 
+[KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) 
 
 ## Target
 
@@ -51,6 +51,7 @@ BiosVer (Manufacturer)
 
 Also, ticketing is enabled under the script.  
 Refer to the script document of how to enable it under Global Parameter.
+
 
 
 

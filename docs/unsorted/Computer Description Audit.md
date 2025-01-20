@@ -14,7 +14,7 @@ This dataview will show the computer description message set on the agent.
 
 ## Dependencies
 
-[Computer Description Data Report](https://proval.itglue.com/DOC-5078775-7998420)
+[Computer Description Data Report](<./Computer Description Data Report.md>)
 
 ## Columns
 
@@ -50,6 +50,7 @@ LEFT JOIN locations l ON l.locationid=c.locationid)
 
 WHERE ss.variable = 'ComputerDescriptionReport'
 ```
+
 
 
 

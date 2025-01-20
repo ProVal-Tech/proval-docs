@@ -20,7 +20,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Dependencies
 
-[Internet Explorer Advanced SSL and TLS Settings [Script]](https://proval.itglue.com/DOC-5078775-7772468)
+[Internet Explorer Advanced SSL and TLS Settings [Script]](<../roles/Internet Explorer Advanced SSL and TLS Settings Script.md>)
 
 ## Variables
 
@@ -85,6 +85,7 @@ Various options are:
 - Script log
 - Script state
 - Dataview
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Imports the [plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163) view into the database.
+Imports the [plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>) view into the database.
 
 ## Sample Run
 
@@ -18,13 +18,14 @@ Imports the [plugin_proval_v_patching_metrics_overview](https://proval.itglue.co
 
 ## Process
 
-- Drops the view [plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163) if it already exists.
-- Create the view [plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163).
+- Drops the view [plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>) if it already exists.
+- Create the view [plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>).
 - Assigns permission of the view to all the Automate users.
 
 ## Output
 
 - View
+
 
 
 

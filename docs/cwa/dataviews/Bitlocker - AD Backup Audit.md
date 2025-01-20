@@ -14,8 +14,8 @@ Displays Bitlocker key protectors backed up to Active Directory.
 
 ## Dependencies
 
-- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](https://proval.itglue.com/DOC-5078775-9045331)  
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](https://proval.itglue.com/DOC-5078775-9045330)  
+- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](<../scripts/Bitlocker - AD Key Protector - Audit.md>)  
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../tables/plugin_proval_ad_bitlocker_keyprotectors.md>)  
 
 ## Columns
 
@@ -34,6 +34,7 @@ Displays Bitlocker key protectors backed up to Active Directory.
 | ParentDN           | The full DN of the parent of the key protector object in AD (generally a computer object). |
 | ParentSID          | The SID of the parent of the key protector object in AD (generally a computer object). |
 | LastScan           | The date and time that the audit was last ran.                             |
+
 
 
 

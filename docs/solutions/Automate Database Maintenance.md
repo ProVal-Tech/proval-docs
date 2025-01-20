@@ -16,27 +16,28 @@ This Solution Provides an easy way to maintain and log any desired database main
 
 | Content                                                                                                                                               | Type   | Function                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------|
-| [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293)                               | Script | This is a wrapper script that calls all database maintenance subscripts and creates the log file. |
-| [CWM - Automate - Script - Automate Database Maintenance - Commands](https://proval.itglue.com/DOC-5078775-11623969)                               | Script | Cleans up old Commands                              |
-| [CWM - Automate - Script - Automate Database Maintenance - Drives](https://proval.itglue.com/DOC-5078775-11639125)                                 | Script | Cleans up missing Drives                            |
-| [CWM - Automate - Script - Automate Database Maintenance - EventLog](https://proval.itglue.com/DOC-5078775-11639531)                              | Script | Cleans up old event logs                            |
-| [CWM - Automate - Script - Automate Database Maintenance - Monitors](https://proval.itglue.com/DOC-5078775-11639537)                               | Script | Cleans up old monitors                              |
-| [CWM - Automate - Script - Automate Database Maintenance - Network Devices](https://proval.itglue.com/DOC-5078775-11639539)                        | Script | Cleans up old network devices                       |
-| [CWM - Automate - Script - Automate Database Maintenance - Roles](https://proval.itglue.com/DOC-5078775-11640024)                                  | Script | Cleans up old roles                                 |
-| [CWM - Automate - Script - Automate Database Maintenance - Script History](https://proval.itglue.com/DOC-5078775-11640489)                          | Script | Cleans up script history                            |
-| [CWM - Automate - Script - Automate Database Maintenance - Tickets](https://proval.itglue.com/DOC-5078775-11640491)                                 | Script | Cleans up ticket related data                       |
-| [CWM - Automate - Script - Automate Database Maintenance - UserCentric](https://proval.itglue.com/DOC-5078775-11640839)                            | Script | Forces contacts to managed for user centric        |
-| [CWM - Automate - Script - Automate Database Maintenance - User Class Permission Sync](https://proval.itglue.com/DOC-5078775-13605741)             | Script | Forces Default User Class Permissions to all clients |
+| [CWM - Automate - Script - Automate Database Maintenance Solution](<../cwa/scripts/Automate Database Maintenance Solution.md>)                               | Script | This is a wrapper script that calls all database maintenance subscripts and creates the log file. |
+| [CWM - Automate - Script - Automate Database Maintenance - Commands](<../cwa/scripts/Automate Database Maintenance - Commands.md>)                               | Script | Cleans up old Commands                              |
+| [CWM - Automate - Script - Automate Database Maintenance - Drives](<../cwa/scripts/Automate Database Maintenance - Drives.md>)                                 | Script | Cleans up missing Drives                            |
+| [CWM - Automate - Script - Automate Database Maintenance - EventLog](<../cwa/scripts/Automate Database Maintenance - EventLog.md>)                              | Script | Cleans up old event logs                            |
+| [CWM - Automate - Script - Automate Database Maintenance - Monitors](<../cwa/scripts/Automate Database Maintenance - Monitors.md>)                               | Script | Cleans up old monitors                              |
+| [CWM - Automate - Script - Automate Database Maintenance - Network Devices](<../cwa/scripts/Automate Database Maintenance - Network Devices.md>)                        | Script | Cleans up old network devices                       |
+| [CWM - Automate - Script - Automate Database Maintenance - Roles](<../cwa/scripts/Automate Database Maintenance - Roles.md>)                                  | Script | Cleans up old roles                                 |
+| [CWM - Automate - Script - Automate Database Maintenance - Script History](<../cwa/scripts/Automate Database Maintenance - Script History.md>)                          | Script | Cleans up script history                            |
+| [CWM - Automate - Script - Automate Database Maintenance - Tickets](<../cwa/scripts/Automate Database Maintenance - Tickets.md>)                                 | Script | Cleans up ticket related data                       |
+| [CWM - Automate - Script - Automate Database Maintenance - UserCentric](<../cwa/scripts/Automate Database Maintenance - UserCentric.md>)                            | Script | Forces contacts to managed for user centric        |
+| [CWM - Automate - Script - Automate Database Maintenance - User Class Permission Sync](<../cwa/scripts/Automate Database Maintenance - User Class Permission Sync.md>)             | Script | Forces Default User Class Permissions to all clients |
 
 ## Implementation
 
 **NOTE:** This solution deprecates Proval Maintenance[Globals] (6794)
 
-1. Import the [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293) script.
+1. Import the [CWM - Automate - Script - Automate Database Maintenance Solution](<../cwa/scripts/Automate Database Maintenance Solution.md>) script.
 2. Make sure the other scripts are also synced and fully up to date. (The main script should import them, but syncing them will make sure we know when they are out of date)
-3. Schedule the client script [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293) to run weekly, every Monday at 5:30 AM.
+3. Schedule the client script [CWM - Automate - Script - Automate Database Maintenance Solution](<../cwa/scripts/Automate Database Maintenance Solution.md>) to run weekly, every Monday at 5:30 AM.
 
 ## FAQ
+
 
 
 

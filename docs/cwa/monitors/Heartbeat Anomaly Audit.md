@@ -14,7 +14,7 @@ This monitor is intended to create a ticket to our (ProVal's) AutoTask Portal if
 
 ## Dependencies
 
-[Email RAWSQL Monitor Set Failures* [Autofix]](https://proval.itglue.com/DOC-5078775-10390936)  
+[Email RAWSQL Monitor Set Failures* [Autofix]](<../scripts/Email Creation - Computer Failure Only.md>)  
 "△ Custom - Email RAWSQL Monitor set results to ProVal" Alert template should be applied.
 
 ## Target
@@ -34,6 +34,7 @@ This typically indicates one of three issues:
 1. The Windows Firewall on your Automate Server has UDP port 75 blocked.
 2. Your Router/Firewall is not forwarding UDP port 75.
 3. Something is obstructing traffic on UDP port 75 (such as an AV/Security Appliance).
+
 
 
 

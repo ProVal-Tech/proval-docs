@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script will fetch the version of iDRAC from Dell servers. The script output will be stored in a script state which is used by the dataview [iDRAC Version - Dell Servers](https://proval.itglue.com/DOC-5078775-7854512).
+The script will fetch the version of iDRAC from Dell servers. The script output will be stored in a script state which is used by the dataview [iDRAC Version - Dell Servers](<../dataviews/iDRAC Version - Dell Servers.md>).
 
 Time Saved by Automation: 5 Minutes
 
@@ -42,6 +42,7 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 
 

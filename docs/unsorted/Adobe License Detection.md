@@ -14,7 +14,7 @@ This dataview displays Adobe License information.
 
 ## Dependencies
 
-[Adobe License Detail](https://proval.itglue.com/DOC-5078775-10218281)
+[Adobe License Detail](<./Adobe License Detail.md>)
 
 ## Columns
 
@@ -78,6 +78,7 @@ FROM
       c.computerid
   ) AS t
 ```
+
 
 
 

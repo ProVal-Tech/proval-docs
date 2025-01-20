@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Purpose
 
-Stores gpresult information from the script [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](https://proval.itglue.com/DOC-5078775-8528236)
+Stores gpresult information from the script [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](<../scripts/Group Policy - Gather GPResult Data.md>)
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](https://proval.itglue.com/DOC-5078775-8528236)
-- [EPM - Windows Configuration - Agnostic - Get-GPResult](https://proval.itglue.com/DOC-5078775-8498353)
+- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](<../scripts/Group Policy - Gather GPResult Data.md>)
+- [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>)
 
 ## Tables
 
@@ -33,6 +33,7 @@ Stores gpresult information from the script [EPM - Windows Configuration - Scrip
 | IsValid       | TINYINT   | Shows if the GPO is valid in the current context.                                              |
 | AccessDenied   | TINYINT   | Shows if access was denied to apply the GPO.                                                   |
 | SecurityFilter | VARCHAR   | Shows the security filters that were applied that led to the GPO application.                  |
+
 
 
 

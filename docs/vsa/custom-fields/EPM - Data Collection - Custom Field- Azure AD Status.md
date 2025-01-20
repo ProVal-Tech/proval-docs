@@ -15,7 +15,7 @@ This custom field is used to display whether or not a machine is Azure AD joined
 ## Dependencies
 
 This custom field is populated by the agent procedure.  
-Solution: [https://proval.itglue.com/DOC-5078775-12540674](https://proval.itglue.com/DOC-5078775-12540674)
+Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM - Data Collection - Solution- Azure AD Status.md>)
 
 ## Details
 
@@ -23,6 +23,7 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](https://proval.itglue
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
+
 
 
 

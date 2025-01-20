@@ -11,7 +11,7 @@ unlisted: false
 ## Summary
 
 Perfoms an on-demand update for a Click2Run Office installation on an endpoint using agnostic solution  
-[SWM - Software Configuration - Agnostic - Update-Office](https://proval.itglue.com/DOC-5078775-12083647) 
+[SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>) 
 
 ## Example Agent Procedure Log
 
@@ -44,6 +44,7 @@ Does this Procedure depend on other VSA content? Link the ITGlue Article for the
 ## Output
 
 Procedure Logfiles and other outputs
+
 
 
 

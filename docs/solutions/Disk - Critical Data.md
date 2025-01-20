@@ -16,23 +16,24 @@ The solution summary focuses on gathering hard drive failure data from target ma
 
 | Content                                                                 | Type            | Function                                                        |
 |-------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------|
-| [EPM - Disk - Agnostic - Get-DiskInfo](https://proval.itglue.com/DOC-5078775-10677479) | Agnostic script | PowerShell script to gather the data from the computer         |
-| [EPM - Disk - Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-10677468) | Automate Script  | To execute the agnostic script and to fetch the data into Automate |
-| [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714) | Custom Table    | To store the data gathered by the script                        |
+| [EPM - Disk - Agnostic - Get-DiskInfo](<../powershell/Get-DiskInfo.md>) | Agnostic script | PowerShell script to gather the data from the computer         |
+| [EPM - Disk - Script - Disk - Gather Critical Data](<../cwa/scripts/Disk - Gather Critical Data.md>) | Automate Script  | To execute the agnostic script and to fetch the data into Automate |
+| [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../cwa/tables/plugin_proval_cdi_data.md>) | Custom Table    | To store the data gathered by the script                        |
 | [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639) | Dataview        | To display the data present in the custom table for all the machines at a single place |
-| [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-12662477) | Internal Monitor | To execute the Automate script at a regular interval           |
-| [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) | Internal Monitor | To generate an alert for the machines where the Automate script had detected issues |
+| [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) | Internal Monitor | To execute the Automate script at a regular interval           |
+| [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) | Internal Monitor | To generate an alert for the machines where the Automate script had detected issues |
 
 ## Implementation
 
-- Import the [EPM - Disk - Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-10677468) script.
+- Import the [EPM - Disk - Script - Disk - Gather Critical Data](<../cwa/scripts/Disk - Gather Critical Data.md>) script.
 - Import the [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639) dataview.
-- Execute the script against any online Non-Virtual Windows Workstation to generate the [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714) table.
+- Execute the script against any online Non-Virtual Windows Workstation to generate the [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../cwa/tables/plugin_proval_cdi_data.md>) table.
 - Ensure the data for the machine is displayed in the dataview.
-- Import the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-12662477) Internal Monitor.
-- Implement the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-12662477) Internal Monitor, check the monitor's document for implementation and alert template.
-- Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) Internal Monitor.
-- Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](https://proval.itglue.com/DOC-5078775-12662475) Internal Monitor, check the monitor's document for implementation and alert template.
+- Import the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) Internal Monitor.
+- Implement the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) Internal Monitor, check the monitor's document for implementation and alert template.
+- Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor.
+- Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor, check the monitor's document for implementation and alert template.
+
 
 
 

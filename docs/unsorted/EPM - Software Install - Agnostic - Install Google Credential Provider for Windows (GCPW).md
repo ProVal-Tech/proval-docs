@@ -57,8 +57,9 @@ Location of output for log, result, and error files.
 |-----------------------------------------------|--------------------------------------------------|
 | Automate                                      |                                                  |
 | ConnectWise RMM                               |                                                  |
-| Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](https://proval.itglue.com/DOC-5078775-15595857) |
+| Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](<../vsa/procedures/Install Google Credential Provider for Windows (GCPW).md>) |
 | Datto RMM                                     |                                                  |
+
 
 
 

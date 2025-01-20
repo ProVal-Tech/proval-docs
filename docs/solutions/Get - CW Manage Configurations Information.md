@@ -16,18 +16,19 @@ The purpose of the solution is to fetch basic information about the computer fro
 
 | Content                                                                                                                                         | Type         | Function            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------|
-| [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](https://proval.itglue.com/DOC-5078775-13403824)                  | Script       | Fetches the data.   |
-| [CWM - Automate - Custom Table - pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881)                                   | Custom Table | Stores the data.    |
-| [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](https://proval.itglue.com/DOC-5078775-13403823)                    | Dataview     | Displays the data.   |
+| [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../cwa/scripts/Get CWM Configurations - Active And Managed Only.md>)                  | Script       | Fetches the data.   |
+| [CWM - Automate - Custom Table - pvl_cwm_configurations](<../cwa/tables/pvl_cwm_configurations.md>)                                   | Custom Table | Stores the data.    |
+| [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](<../cwa/dataviews/Asset Report - Purchase and Expiration Date.md>)                    | Dataview     | Displays the data.   |
 
 ## Implementation
 
 - Read the solution-related documents carefully.
-- Import the [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](https://proval.itglue.com/DOC-5078775-13403824) script.
-- Import the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](https://proval.itglue.com/DOC-5078775-13403823) dataview.
+- Import the [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../cwa/scripts/Get CWM Configurations - Active And Managed Only.md>) script.
+- Import the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](<../cwa/dataviews/Asset Report - Purchase and Expiration Date.md>) dataview.
 - Set the relevant values to the script's global variables. Refer to the script's document for more information.
 - Run the script against the Automate server or an online server in the partner's internal environment.
 - Schedule the script to run once per day/week against the Automate server or an online server in the partner's internal environment to keep the dataview up-to-date.
+
 
 
 

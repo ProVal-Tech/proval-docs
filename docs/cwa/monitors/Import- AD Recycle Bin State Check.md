@@ -11,7 +11,7 @@ unlisted: false
 ## Step 1
 Import the Alert Template '△ Custom - Execute Script - AD - Enable AD Recycle Bin'
 
-- Validate that the [AD - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-7937042) script was imported as well.
+- Validate that the [AD - Enable AD Recycle Bin](<../scripts/AD - Enable AD Recycle Bin.md>) script was imported as well.
 
 ## Step 2
 Run the SQL Query to import 'AD Domain Recycle Bin Feature' role if it's already not available in the environment
@@ -123,6 +123,7 @@ WHERE
     m.groupid= @Groupid
     AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - AD Recycle Bin State Check')
 ```
+
 
 
 

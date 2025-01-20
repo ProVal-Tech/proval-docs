@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This creates all of the needed items in the Database to ensure the [Active Directory Reporting Solution](https://proval.itglue.com/DOC-5078775-9331097) functions correctly. This script will create the following items:
+This creates all of the needed items in the Database to ensure the [Active Directory Reporting Solution](<../reports/Active Directory Reporting Solution.md>) functions correctly. This script will create the following items:
 
 1. Table: `plugin_proval_ad_pwd_audit`
 2. View: `plugin_proval_ad`
@@ -32,13 +32,14 @@ There are two things that need to be installed for this script to function corre
 
 Other items depend on this script being run to function, which I have listed below:
 
-1. [Report - Active Directory User Assessment](https://proval.itglue.com/DOC-5078775-9493611)
+1. [Report - Active Directory User Assessment](<../reports/Active Directory User Assessment.md>)
 2. [Report - Active Directory User Groups - Detail](https://proval.itglue.com/DOC-5078775-9493130)
 3. Report - Computers in Active Directory - No Agent
 
 ## Output
 
 This is a one-time use script, used to install/create a table, 4 views, and schedule a script. After running once, this script can be removed from the environment.
+
 
 
 

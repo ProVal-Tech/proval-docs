@@ -18,7 +18,7 @@ This script sets custom Display scaling on existing as well as new users for win
 
 ## Dependencies
 
-[Agnostic - Set-DisplayScaling](https://proval.itglue.com/DOC-5078775-16343605)
+[Agnostic - Set-DisplayScaling](<../../unsorted/Agnostic - Set-DisplayScaling.md>)
 
 ## User Parameters
 
@@ -34,6 +34,7 @@ This script sets custom Display scaling on existing as well as new users for win
 ## Output
 
 - Script log
+
 
 
 

@@ -18,9 +18,9 @@ This script will reset the vssadmin size and also update the table with the late
 
 ## Dependencies
 
-- [VSSAdmin Storage Audit](https://proval.itglue.com/DOC-5078775-10728930) 
-- [Vssadmin List Storage Audit](https://proval.itglue.com/DOC-5078775-10728929) 
-- [plugin_proval_vssadminstorage](https://proval.itglue.com/DOC-5078775-10728928) 
+- [VSSAdmin Storage Audit](<../dataviews/VSSAdmin Storage Audit.md>) 
+- [Vssadmin List Storage Audit](<./Vssadmin List Storage Audit.md>) 
+- [plugin_proval_vssadminstorage](<../tables/plugin_proval_vssadminstorage.md>) 
 
 ## Variables
 
@@ -47,6 +47,7 @@ The script validates scope and resize success.
 - Script log
 - Table
 - Dataview
+
 
 
 

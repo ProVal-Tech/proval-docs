@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522) and depicts the status of SMB Enabled on the agent where it is deployed.
+This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) and depicts the status of SMB Enabled on the agent where it is deployed.
 
 ## Dependencies
 
-[CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522)
+[CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>)
 
 ## Columns
 
@@ -27,8 +27,9 @@ This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detec
 | LastContact               | The last contact info of agent with the Automate                                              |
 | SMBv1 Status              | This stores the status of SMBv1 status after script execution                                 |
 | SMBv1 Logging             | This stores the script PowerShell execution output for logging                                 |
-| SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](https://proval.itglue.com/DOC-5078775-15811522) |
+| SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) |
 | SMBv1 Vulnerability State  | This shows whether the device is vulnerable or not vulnerable based on the script output detection |
+
 
 
 

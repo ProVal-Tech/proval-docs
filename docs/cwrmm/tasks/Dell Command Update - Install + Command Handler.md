@@ -26,7 +26,7 @@ The task installs the latest version of `Dell Command | Update for Windows Unive
 
 ## Dependencies
 
-[SWM - Software Management - agnostic - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973)
+[SWM - Software Management - agnostic - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
 
 ## User Parameters
 
@@ -376,6 +376,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

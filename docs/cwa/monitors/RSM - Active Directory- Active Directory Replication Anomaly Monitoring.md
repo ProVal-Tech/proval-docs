@@ -47,7 +47,8 @@ For a precise understanding of the error codes returned in the `LastError` prope
 
 ## Implementation
 
-[Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](https://proval.itglue.com/DOC-5078775-14646252)
+[Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<./Active Directory Replication Anomaly Monitoring.md>)
+
 
 
 

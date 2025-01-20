@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The internal monitor executes the [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) script once per week against the physical Windows Workstations.
+The internal monitor executes the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script once per week against the physical Windows Workstations.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771)
-- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](https://proval.itglue.com/DOC-5078775-15054015)
+- [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>)
+- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](<../tables/pvl_powerplan_audit.md>)
 
 ## Target
 
@@ -29,9 +29,10 @@ Managed Workstations
 
 ![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_2.png)  
 
-The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) script.  
+The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script.  
 
 ![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_3.png)  
+
 
 
 

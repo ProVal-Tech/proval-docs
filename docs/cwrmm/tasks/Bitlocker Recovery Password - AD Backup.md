@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is a CW RMM implementation of the agnostic script [Backup-BitlockerRecoveryPW](https://proval.itglue.com/DOC-5078775-10673018). This script will backup Bitlocker Recovery Passwords to the associated Active Directory instance.
+This is a CW RMM implementation of the agnostic script [Backup-BitlockerRecoveryPW](<../../powershell/Backup-BitlockerRecoveryPW.md>). This script will backup Bitlocker Recovery Passwords to the associated Active Directory instance.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ This is a CW RMM implementation of the agnostic script [Backup-BitlockerRecovery
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Backup-BitlockerRecoveryPW](https://proval.itglue.com/DOC-5078775-10673018)
+[SEC - Encryption - Agnostic - Backup-BitlockerRecoveryPW](<../../powershell/Backup-BitlockerRecoveryPW.md>)
 
 ## Task Creation
 
@@ -164,6 +164,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 9. Go to the “Operating System Drives” node and turn on the similar policy “**Choose how BitLocker-protected operating system drives can be recovered**“. Afterwards, go to the “Removable Data Drives” node and enable the policy “**Choose how BitLocker-protected removable drives can be recovered**“.  
 
 10. When any client PC retrieves the policy changes, BitLocker recovery information will be automatically and silently backed up to AD DS when BitLocker is turned on for fixed drives, OS drives or removable drives.
+
 
 
 

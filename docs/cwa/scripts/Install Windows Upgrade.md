@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Installs the latest feature update on a Windows 10+ machine and comes with an option to upgrade from Windows 10 to Windows 11. The script can either be executed from [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](https://proval.itglue.com/DOC-5078775-11563441) monitor set or can be executed manually.
+Installs the latest feature update on a Windows 10+ machine and comes with an option to upgrade from Windows 10 to Windows 11. The script can either be executed from [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](<../monitors/Windows 1011 Build Upgrades EOL Based.md>) monitor set or can be executed manually.
 
 **Note:** Script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category.
 
@@ -33,11 +33,11 @@ To install the latest available feature pack on a Windows 10+ machine, without r
 
 ## Dependencies
 
-- [Install-FeatureUpdate](https://proval.itglue.com/DOC-5078775-12024905)
-- [Get SetupDiag Report](https://proval.itglue.com/DOC-5078775-12028459)
-- [CWM - Automate - Script - Prompter](https://proval.itglue.com/DOC-5078775-10243074)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
-- [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](https://proval.itglue.com/DOC-5078775-11563441)
+- [Install-FeatureUpdate](<../../powershell/Install-FeatureUpdate.md>)
+- [Get SetupDiag Report](<./Get SetupDiag Report.md>)
+- [CWM - Automate - Script - Prompter](<./Prompter.md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](<../monitors/Windows 1011 Build Upgrades EOL Based.md>)
 
 #### User Parameters
 
@@ -155,6 +155,7 @@ Error Log
 Setup Diag Result  
 ----------------  
 `\<Outcome of the SetupDiagTool verifying the upgrade process>`
+
 
 
 

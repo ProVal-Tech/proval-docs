@@ -16,7 +16,7 @@ This solution aims to acquire the Click-to-Run Configuration on a Windows machin
 
 **New Content:**
 
-- **Custom Table:** [pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846)
+- **Custom Table:** [pvl_m365_update_channel_audit](<../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>)
 - **Script:** [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164646)
 - **Internal Monitor:** [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734)
 - **Alert Template:** `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
@@ -24,9 +24,9 @@ This solution aims to acquire the Click-to-Run Configuration on a Windows machin
 **Modified Content:**
 
 - **Script:** [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
-- **Internal Monitor:** [Execute Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-14568059)
+- **Internal Monitor:** [Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
-- **Dataview:** [C2R Office Version Audit](https://proval.itglue.com/DOC-5078775-13932548)
+- **Dataview:** [C2R Office Version Audit](<../cwa/dataviews/C2R Office Version Audit.md>)
 
 Update the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script from the `Prosync` plugin and execute it against any online Windows machine with the `Set_Environment` parameter set to `1` to create the newly introduced custom table and EDFs used by the solution.
 
@@ -39,10 +39,10 @@ Update the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.co
 | Content                                                                 | Type            | Function                                                                                                                                                      |
 |-------------------------------------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) | Script          | This script retrieves the installed Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel.   |
-| [Execute Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-14568059) | Internal Monitor | Executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script once per 14 days against the agents with Managed Mode |
-| `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details` | Alert Template   | Executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) against the agents detected by [Execute Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-14568059) |
-| [C2R Office Version Audit](https://proval.itglue.com/DOC-5078775-13932548) | Dataview        | Displays the Click-to-Run Office version, auto-update status, and Update channel obtained by [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) |
-| [pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846) | Custom Table    | Stores the data fetched by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script                         |
+| [Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>) | Internal Monitor | Executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script once per 14 days against the agents with Managed Mode |
+| `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details` | Alert Template   | Executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) against the agents detected by [Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>) |
+| [C2R Office Version Audit](<../cwa/dataviews/C2R Office Version Audit.md>) | Dataview        | Displays the Click-to-Run Office version, auto-update status, and Update channel obtained by [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) |
+| [pvl_m365_update_channel_audit](<../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>) | Custom Table    | Stores the data fetched by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script                         |
 
 ### Automation
 
@@ -58,8 +58,8 @@ Update the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.co
 
 1. Import the following content from the `ProSync` plugin:
    - [Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
-   - [Internal Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-14568059)
-   - [Dataview - C2R Office Version Audit](https://proval.itglue.com/DOC-5078775-13932548)
+   - [Internal Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>)
+   - [Dataview - C2R Office Version Audit](<../cwa/dataviews/C2R Office Version Audit.md>)
    - Alert Template - `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
 
 2. Reload the system cache:
@@ -70,7 +70,7 @@ Update the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.co
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-     - [Internal Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-14568059)
+     - [Internal Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>)
        - Right-click and Run Now to start the monitor
        - Setup with `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details` Alert Template
 
@@ -96,12 +96,13 @@ Confirm with consultant before enabling the Automation.
 
 ## Deprecated Content
 
-- **Script:** [Microsoft 365 - Update Channel - Set - Current](https://proval.itglue.com/DOC-5078775-8181470)
-- **Script:** [Microsoft 365 - Update Channel - Set - Monthly Enterprise](https://proval.itglue.com/DOC-5078775-8009392)
-- **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Current Channel](https://proval.itglue.com/DOC-5078775-16471652)
-- **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](https://proval.itglue.com/DOC-5078775-14568325)
+- **Script:** [Microsoft 365 - Update Channel - Set - Current](<../cwa/scripts/Microsoft 365 - Set Update Channel - Current.md>)
+- **Script:** [Microsoft 365 - Update Channel - Set - Monthly Enterprise](<../cwa/scripts/Microsoft 365 - Set Update Channel - Monthly Enterprise.md>)
+- **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Current Channel](<../cwa/monitors/Execute Script - Update Channel - Set - Current Channel.md>)
+- **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](<../cwa/monitors/Execute Script - Update Channel - Set - Monthly Enterprise.md>)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
+
 
 
 

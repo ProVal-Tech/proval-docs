@@ -14,7 +14,7 @@ This remote monitor Checks and Returns Windows License Status via CIMInstance.
 
 ## Dependencies
 
-[Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+[Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Details
 
@@ -74,10 +74,11 @@ NonGenuineGrace: This means that the Windows installation is in the Non-Genuine 
 A: Exclude the End of Life machines from monitoring.  
 
 **Q: Not receiving alerts for warnings?**  
-A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script is up-to-date.  
+A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script is up-to-date.  
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
+
 
 
 

@@ -26,7 +26,7 @@ The output is:
 
 ## Dependencies
 
-[Dynamic Processor Architecture Role](https://proval.itglue.com/DOC-5078775-15148161)
+[Dynamic Processor Architecture Role](<./Dynamic Processor Architecture Role.md>)
 
 ## Columns
 
@@ -38,6 +38,7 @@ The output is:
 | Operating System    | Operating System name of the agent               |
 | LastContact         | Last contact of an agent with the RMM           |
 | Processor Architecture | Processor Architecture name                    |
+
 
 
 

@@ -49,13 +49,14 @@ Time Saved by Automation: 10 Minutes
 
 | Name                             | Example                   | Description                                                                                                                                                                                                         |
 |----------------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OnlineInScreenConnectSinceMinutes | session not found, 12234, -1213 | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of [CWM - Automate - Dataview - Agent - Agent Check-in Health](https://proval.itglue.com/DOC-5078775-7963731) dataview. |
+| OnlineInScreenConnectSinceMinutes | session not found, 12234, -1213 | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of [CWM - Automate - Dataview - Agent - Agent Check-in Health](<../dataviews/Agent - Agent Check-in Health.md>) dataview. |
 
 ## Output
 
 - Script log
 - script state
 - E-Mail
+
 
 
 

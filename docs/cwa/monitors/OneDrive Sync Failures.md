@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Get OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-16007800) script.
+The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-16007800)
-- [EPM - Data Collection - Custom Table - pvl_odsync_status](https://proval.itglue.com/DOC-5078775-16007815)
+- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>)
+- [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>)
 
 ## Target
 
@@ -74,6 +74,7 @@ Sync Status: Error
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
 
 
 

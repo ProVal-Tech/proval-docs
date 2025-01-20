@@ -23,10 +23,10 @@ This script is an autofix to a monitor and should not be manually run.
 ## Dependencies
 
 - Agent Install - Generate Location URL
-- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](https://proval.itglue.com/DOC-5078775-8143436)
-- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](https://proval.itglue.com/DOC-5078775-8141008)
-- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](https://proval.itglue.com/DOC-5078775-7761438)
-- [CWM - Automate - Monitor - No Checkin for More Than 30 Days*](https://proval.itglue.com/DOC-5078775-8041387)
+- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>)
+- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
+- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](<./Automate Agent - Reinstall.md>)
+- [CWM - Automate - Monitor - No Checkin for More Than 30 Days*](<../monitors/No Checkin for More Than 30 Days.md>)
 - LTPoSH Community Module ([https://bit.ly/LTPoSH](https://bit.ly/LTPoSH))
 - RMM+ Plugin Configured in CW Control portal
 - System Properties (See below)
@@ -119,6 +119,7 @@ This script is an autofix to a monitor and should not be manually run.
 ## Change Log
 
 01-2023: Added functionality to handle registry key entry preventing repair.
+
 
 
 

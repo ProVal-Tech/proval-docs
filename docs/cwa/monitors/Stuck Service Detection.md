@@ -26,11 +26,12 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[Stuck Service Action](https://proval.itglue.com/DOC-5078775-7815145)
+[Stuck Service Action](<../scripts/Stuck Service Action.md>)
 
 ## Target
 
 Windows Machine
+
 
 
 

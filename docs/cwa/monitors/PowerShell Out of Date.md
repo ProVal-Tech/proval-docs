@@ -16,12 +16,13 @@ The monitor set will detect the windows machines where PowerShell Version is old
 
 ## Dependencies
 
-- [Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872)
+- [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>)
 - [SWM - Software Installation - Script - Update PowerShell](https://proval.itglue.com/DOC-5078775-11313612)
 
 ## Target
 
 Managed Windows Workstations and Servers
+
 
 
 

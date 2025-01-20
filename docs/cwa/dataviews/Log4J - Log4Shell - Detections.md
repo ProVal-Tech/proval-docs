@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit.
+Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../scripts/Log4J (Log4Shell) File Scan.md>). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit.
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631)
+- [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../scripts/Log4J (Log4Shell) File Scan.md>)
 
 ## Columns
 
@@ -30,6 +30,7 @@ Displays information about the EDFs filled by [SEC - Endpoint Protection - Scrip
 | Log Location                 | The location on the computer of the script log file.               |
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
+
 
 
 

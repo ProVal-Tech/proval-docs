@@ -26,7 +26,7 @@ NOTE: Scope is not mandatory and if left blank the scope will default to the mac
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Remove-PathVariable](https://proval.itglue.com/DOC-5078775-11976271)
+- [EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>)
 
 ## Variables
 
@@ -41,11 +41,12 @@ Standard agnostic template variables apply.
 
 ## Process
 
-Please see agnostic content document [EPM - Windows Configuration - Agnostic - Remove-PathVariable](https://proval.itglue.com/DOC-5078775-11976271) for process information.
+Please see agnostic content document [EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>) for process information.
 
 ## Output
 
 - Script log
+
 
 
 

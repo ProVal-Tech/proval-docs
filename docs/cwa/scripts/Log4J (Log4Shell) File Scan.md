@@ -38,7 +38,7 @@ The script will save information to the following EDFs based on the output of th
 - Log4J_Log4Shell YARA Log Location
 - Log4J_Log4Shell Last Scan
 
-These EDFs are also presented in the dataview [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](https://proval.itglue.com/DOC-5078775-8886309).
+These EDFs are also presented in the dataview [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](<../dataviews/Log4J - Log4Shell - Detections.md>).
 
 The script will also upload the log files to the LTShare, which can be found in the Computer Management screen. Below is a brief video detailing the solution and how to use it.
 
@@ -50,6 +50,7 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
+
 
 
 

@@ -34,7 +34,8 @@ Windows Servers
 
 ## How to Import
 
-[Import - Remote Monitor - Enable Bitlocker Feature](https://proval.itglue.com/DOC-5078775-14612313)
+[Import - Remote Monitor - Enable Bitlocker Feature](<./Enable Bitlocker Feature.md>)
+
 
 
 

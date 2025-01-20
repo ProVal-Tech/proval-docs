@@ -23,9 +23,9 @@ To exclude the self-signed, Microsoft-generated, and any certificate with a GUID
 ## Dependencies
 
 This monitor is dependent on the following items:
-- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568)  
-- [EPM - Network - Custom Table - plugin_proval_certs](https://proval.itglue.com/DOC-5078775-9262931)  
-- [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) (Not needed, but creates more detailed tickets)
+- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)  
+- [EPM - Network - Custom Table - plugin_proval_certs](<../tables/plugin_proval_certs.md>)  
+- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) (Not needed, but creates more detailed tickets)
 
 ## Target
 
@@ -59,6 +59,7 @@ Expiration: 2023-04-20 19:59:59
 ## Example Ticket
 
 ![Image](../../../static/img/Certificate-Expiration--30-Days/image_2.png)
+
 
 
 

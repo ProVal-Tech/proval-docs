@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the monitor set is to execute [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](https://proval.itglue.com/DOC-5078775-12979854) script in Audit only mode once per month against physical windows workstations excluding windows 7 and XP.
+The purpose of the monitor set is to execute [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script in Audit only mode once per month against physical windows workstations excluding windows 7 and XP.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](https://proval.itglue.com/DOC-5078775-12979854)
-- [CWM - Automate - Custom Table - pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849)
+- [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>)
+- [CWM - Automate - Custom Table - pvl_wifi_profiles](<../tables/pvl_wifi_profiles.md>)
 
 ## Target
 
@@ -25,7 +25,8 @@ Managed Windows Workstations
 
 **Name:** `△ CUSTOM - Execute Script - Get - Wifi Profiles`
 
-**Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](https://proval.itglue.com/DOC-5078775-12979854) script.
+**Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script.
+
 
 
 

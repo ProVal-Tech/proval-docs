@@ -14,7 +14,7 @@ Stores Battery Information for each target
 
 ## Dependencies
 
-[EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978)  Creates this table.
+[EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)  Creates this table.
 
 ## Tables
 
@@ -36,6 +36,7 @@ Stores Battery Information for each target
 | RelativeCapacity          | VarChar   | The Battery Relative Capacity.                       |
 | SerialNumber              | VarChar   | The Battery SerialNumber.                           |
 | LastScanTime              | DateTime  | The Last Scan Time for the report.                  |
+
 
 
 

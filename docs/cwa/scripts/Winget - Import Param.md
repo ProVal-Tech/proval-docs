@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script offers the functionality to install the list of applications using winget from the `softwarelist.json` file exported by the [SWM - Data Collection - Script - Winget - Export [Param]](https://proval.itglue.com/DOC-5078775-15494298) script.
+The script offers the functionality to install the list of applications using winget from the `softwarelist.json` file exported by the [SWM - Data Collection - Script - Winget - Export [Param]](<./Winget - Export Param.md>) script.
 
 Additionally, it includes an option to create a ticket with the list of the applications it failed to deploy on the computer from the `softwarelist.json` list.
 
@@ -19,10 +19,10 @@ Requirements: PowerShell 5+
 ## Implementation
 
 1. Import the following scripts from the `ProSync` plugin:  
-   - [Winget - Export [Param]](https://proval.itglue.com/DOC-5078775-15494298)  
+   - [Winget - Export [Param]](<./Winget - Export Param.md>)  
    - [Winget - Import [Param]](https://proval.itglue.com/5078775/docs/15522130)  
 
-2. Run the [Winget - Export [Param]](https://proval.itglue.com/DOC-5078775-15494298) on the preferred computer to export the list of installed applications. Ensure to set the parameter `Email_Report` to `1`. This will send the list of installed applications to your email address, saved as `SoftwareList.Json`.
+2. Run the [Winget - Export [Param]](<./Winget - Export Param.md>) on the preferred computer to export the list of installed applications. Ensure to set the parameter `Email_Report` to `1`. This will send the list of installed applications to your email address, saved as `SoftwareList.Json`.
 
    ![](../../../static/img/Winget---Import-Param/image_1.png)
 
@@ -44,7 +44,7 @@ Name of the file without the extension should be set to the user parameter after
 
 ## Dependencies
 
-[SWM - Data Collection - Script - Winget - Export [Param]](https://proval.itglue.com/DOC-5078775-15494298)
+[SWM - Data Collection - Script - Winget - Export [Param]](<./Winget - Export Param.md>)
 
 ### User Parameters
 
@@ -73,6 +73,7 @@ Name of the file without the extension should be set to the user parameter after
 
 **Example:**  
 ![](../../../static/img/Winget---Import-Param/image_5.png)
+
 
 
 

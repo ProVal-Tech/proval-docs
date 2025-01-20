@@ -20,7 +20,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[Kaseya Vulnerability Audit](https://proval.itglue.com/DOC-5078775-7836236)
+[Kaseya Vulnerability Audit](<../dataviews/Kaseya Vulnerability Audit.md>)
 
 #### Script States
 
@@ -38,6 +38,7 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 
 

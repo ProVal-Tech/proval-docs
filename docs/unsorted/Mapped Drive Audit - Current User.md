@@ -14,8 +14,8 @@ This dataview gathers a detail of the mapped network drives for the current user
 
 ## Dependencies
 
-- [Mapped Drive Audit - Current User](https://proval.itglue.com/DOC-5078775-10923271) 
-- [plugin_proval_Mapped_Drive_CurrentUser](https://proval.itglue.com/DOC-5078775-10923270) 
+- [Mapped Drive Audit - Current User](<./Mapped Drive Audit - Current User.md>) 
+- [plugin_proval_Mapped_Drive_CurrentUser](<./plugin_proval_Mapped_Drive_CurrentUser.md>) 
 
 ## Columns
 
@@ -51,6 +51,7 @@ FROM
   JOIN clients cl ON cl.ClientID = c.ClientID 
   JOIN plugin_proval_Mapped_Drive_CurrentUser ppc ON ppc.computerid = c.ComputerID
 ```
+
 
 
 

@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-Displays the latest audited speed test information of the last script ran from the custom table [EPM - Network - Custom Table - plugin_proval_speedtest_audit](https://proval.itglue.com/DOC-5078775-9166228).
+Displays the latest audited speed test information of the last script ran from the custom table [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
 
 ## Dependencies
 
-- [EPM - Network - Agnostic - Test-InternetSpeed](https://proval.itglue.com/DOC-5078775-9099825)
+- [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>)
 - [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226)
-- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](https://proval.itglue.com/DOC-5078775-9166228)
+- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>)
 
 ## Columns
 
@@ -50,6 +50,7 @@ Displays the latest audited speed test information of the last script ran from t
 | ResultURL       | The URL of the speed test result.                                |
 | DownloadMbps    | The download speed detected in Mbps.                             |
 | UploadMbps      | The upload speed detected in Mbps.                               |
+
 
 
 

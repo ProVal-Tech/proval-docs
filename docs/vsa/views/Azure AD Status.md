@@ -17,7 +17,7 @@ This view displays machines that are Azure AD joined or registered based on a cu
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this View depends.
 
 - The view relies upon the custom field, and the agent procedure.  
-  - Solution Doc: [https://proval.itglue.com/DOC-5078775-12540674](https://proval.itglue.com/DOC-5078775-12540674)
+  - Solution Doc: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM - Data Collection - Solution- Azure AD Status.md>)
 
 # View Filters
 
@@ -27,6 +27,7 @@ List all filters applied to this view
 |----------------------------------|------------------|--------------|
 | cPVAL Azure AD Joined            | Y                | *TRUE*      |
 | cPVAL Azure AD Registered        | Y                | *TRUE*      |
+
 
 
 

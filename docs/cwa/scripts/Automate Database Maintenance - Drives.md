@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-This script is called from **[CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293)**. 
+This script is called from **[CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>)**. 
 
 This script handles cleanup of the following table(s):  
-Drives - Requires **[CWM - Automate - Solution - Automate Database Maintenance](https://proval.itglue.com/DOC-5078775-11637295)** MissingDrives_Cleanup Global Variable set to 1.
+Drives - Requires **[CWM - Automate - Solution - Automate Database Maintenance](<../../solutions/Automate Database Maintenance.md>)** MissingDrives_Cleanup Global Variable set to 1.
 
 ## Sample Run
 
-This script is a function script called from **[CWM - Automate - Solution - Automate Database Maintenance](https://proval.itglue.com/DOC-5078775-11637295)**.
+This script is a function script called from **[CWM - Automate - Solution - Automate Database Maintenance](<../../solutions/Automate Database Maintenance.md>)**.
 
 ## Variables
 
@@ -31,6 +31,7 @@ This script is a function script called from **[CWM - Automate - Solution - Auto
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Drives/image_1.png)
+
 
 
 

@@ -19,14 +19,14 @@ Change this value from 10 to the desired value after creating the monitor.
 
 ## Dependencies
 
-- [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)
-- [CW RMM - Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215)
-- [CW RMM - Task - Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218)
-- [CW RMM - Machine Group - Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)
+- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
+- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
+- [CW RMM - Task - Validate Primary Domain Controller](<../tasks/Validate Primary Domain Controller.md>)
+- [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>)
 
 ## Target
 
-[Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)  
+[Infrastructure Master](<../groups/Infrastructure Master.md>)  
 ![Image](../../../static/img/Possible-Brute-Force-Attack/image_1.png)
 
 ## Implementation
@@ -110,7 +110,7 @@ Change this value from 10 to the desired value after creating the monitor.
    - Click on Select Target:  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_6.png)
 
-   - Then click on Device Group and then search for the word '[Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)', and then select the group as shown below:  
+   - Then click on Device Group and then search for the word '[Infrastructure Master](<../groups/Infrastructure Master.md>)', and then select the group as shown below:  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_7.png)
 
 ## Completed Monitor
@@ -185,6 +185,7 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)  
 
 Action: Please get the issue reviewed by a technician.
+
 
 
 

@@ -16,7 +16,8 @@ The Active Directory User Groups - Detail report displays a comprehensive list o
 
 This report is dependent on the following items:
 - The Active Directory Plugin needs to be installed and configured.
-- [AD - Create Views/Tables/Schedules for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882)
+- [AD - Create Views/Tables/Schedules for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
+
 
 
 

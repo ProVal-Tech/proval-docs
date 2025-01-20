@@ -20,7 +20,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-[Compare-ADGroupMembers](https://proval.itglue.com/DOC-5078775-7184686)
+[Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>)
 
 ## Variables
 
@@ -38,15 +38,16 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-See [Compare-ADGroupMembers](https://proval.itglue.com/DOC-5078775-7184686) for details on the underlying script logic.
+See [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) for details on the underlying script logic.
 
-If [Compare-ADGroupMembers](https://proval.itglue.com/DOC-5078775-7184686) returns `1` in the `@datalogcontent@` variable, then a ticket will be created if the `@TicketCreationCategory@` variable is set.
+If [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) returns `1` in the `@datalogcontent@` variable, then a ticket will be created if the `@TicketCreationCategory@` variable is set.
 
 ## Output
 
 - Script Log
 - Log Files
 - Ticketing
+
 
 
 

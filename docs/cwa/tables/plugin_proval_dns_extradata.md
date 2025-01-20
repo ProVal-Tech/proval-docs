@@ -14,7 +14,7 @@ This table stores the dns data for a target machine. This data includes the comp
 
 ## Dependencies
 
-- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](https://proval.itglue.com/DOC-5078775-12033156)
+- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](<../scripts/Create and Populate plugin_proval_dns_extradata.md>)
 
 ## Tables
 
@@ -41,6 +41,7 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
+
 
 
 

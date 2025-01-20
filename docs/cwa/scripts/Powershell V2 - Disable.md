@@ -18,11 +18,12 @@ This is an automate implementation of the Disable-PowershellVersion2 agnostic sc
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2](https://proval.itglue.com/DOC-5078775-11134107)
+- [EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2](<./EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2.md>)
 
 ## Process
 
 Please review the agnostic content document for complete process.
+
 
 
 

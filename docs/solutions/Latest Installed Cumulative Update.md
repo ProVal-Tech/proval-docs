@@ -20,37 +20,37 @@ The solution conducts audits on Windows 10 and 11 computers to check for the lat
 |-------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------|
 | [Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)  | Script        | Fetches the data from the machine.                               |
 | [Dataview - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849510)  | Dataview     | Displays the data fetched by the script.                         |
-| [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849458)  | Internal Monitor | Detects machines where the script hasn't been executed within the last 7 days. |
+| [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<../cwa/monitors/Execute Script - Get Latest Installed Cumulative Update.md>)  | Internal Monitor | Detects machines where the script hasn't been executed within the last 7 days. |
 | △ Custom - Execute Script - Get Latest Installed Cumulative Update                      | Alert Template | Executes the script upon the machines detected by the internal monitor. |
 
 #### Automation
 
 | Content                                                                                   | Type          | Function                                                         |
 |-------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------|
-| [Internal Monitor - Last Cumulative Update > 75 Days ago](https://proval.itglue.com/DOC-5078775-13582373)  | Internal Monitor | Detects computers that haven't received a Cumulative Update installation within the past 75 days, excluding End-of-Life (EOL) machines. |
-| [Script - Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498)  | Autofix Script | Initiates the installation of the latest available Cumulative Update. |
+| [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update  75 Days ago.md>)  | Internal Monitor | Detects computers that haven't received a Cumulative Update installation within the past 75 days, excluding End-of-Life (EOL) machines. |
+| [Script - Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>)  | Autofix Script | Initiates the installation of the latest available Cumulative Update. |
 | △ Custom - Autofix - Out of Date Cumulative Updates                                      | Alert Template | Executes the Autofix script upon the machines detected by the internal monitor. |
 
 #### Other
 
 | Content                                                                                   | Type          | Function                                                         |
 |-------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------|
-| [Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)  | Custom Table  | Stores the data fetched by the [Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script. |
-| [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)  | Script        | Inserts the latest version of the [plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) custom table. |
-| [Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)  | Custom Table  | Stores windows operating systems support end date, build number, and their respective Released if any.The table should be updated to the latest version to use this solution at its full potential. The custom table can be updated by the [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131) script. |
+| [Custom Table - pvl_win_latest_installed_cu](<../cwa/tables/pvl_win_latest_installed_cu.md>)  | Custom Table  | Stores the data fetched by the [Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script. |
+| [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)  | Script        | Inserts the latest version of the [plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) custom table. |
+| [Custom Table - plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>)  | Custom Table  | Stores windows operating systems support end date, build number, and their respective Released if any.The table should be updated to the latest version to use this solution at its full potential. The custom table can be updated by the [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) script. |
 
 ## Implementation
 
 ### 1.
 Import the following scripts from the `ProSync` plugin:
 - [Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
-- [Script - Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498)
-- [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
+- [Script - Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>)
+- [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 
 ### 2.
 Import the following internal monitors from the `ProSync` plugin:
-- [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849458)
-- [Internal Monitor - Last Cumulative Update > 75 Days ago](https://proval.itglue.com/DOC-5078775-13582373)
+- [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<../cwa/monitors/Execute Script - Get Latest Installed Cumulative Update.md>)
+- [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update  75 Days ago.md>)
 
 ### 3.
 Import the [Dataview - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849510) dataview from the `ProSync` plugin.
@@ -72,14 +72,14 @@ Execute the [Get Lastest Installed Cumulative Update](https://proval.itglue.com/
 ### 7.
 Configure the Auditing section of the solution as follows:
 - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-  - [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849458)
+  - [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<../cwa/monitors/Execute Script - Get Latest Installed Cumulative Update.md>)
     - Configure with the alert template: `△ Custom - Execute Script - Get Latest Installed Cumulative Update`
     - Right-click and Run Now to start the monitor
 
 #### Autofix
 
 ### 1.
-- Execute the [Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498) script against a Windows computer with the script parameter `Set_Environment` configured as `1`. This action will import the necessary System Properties required for solution management.
+- Execute the [Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>) script against a Windows computer with the script parameter `Set_Environment` configured as `1`. This action will import the necessary System Properties required for solution management.
 
 ![Execute Autofix Script](../../static/img/Latest-Installed-Cumulative-Update/image_3.png)
 
@@ -90,9 +90,9 @@ Configure the Auditing section of the solution as follows:
 ### 2.
 Configure the Autofix section of the solution as follows:
 - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-  - [Internal Monitor - Last Cumulative Update > 75 Days ago](https://proval.itglue.com/DOC-5078775-13582373)
+  - [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update  75 Days ago.md>)
     - Configure with the alert template: `△ Custom - Autofix - Out of Date Cumulative Updates`
-    - Set the required ticket category as explained in the **Ticket Category** section of the [Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498) script's document.
+    - Set the required ticket category as explained in the **Ticket Category** section of the [Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>) script's document.
     - Right-click and Run Now to start the monitor
 
 #### Ticket Only
@@ -100,7 +100,7 @@ Configure the Autofix section of the solution as follows:
 ### 1.
 Configure the Autofix section of the solution as follows:
 - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-  - [Internal Monitor - Last Cumulative Update > 75 Days ago](https://proval.itglue.com/DOC-5078775-13582373)
+  - [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update  75 Days ago.md>)
     - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
     - Right-click and Run Now to start the monitor
 
@@ -108,6 +108,7 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is setup to run only against machines that are not EOL or recently EOL (Within 30 days). If the machine is not EOL currently, check to make sure the monitor is setup to run against the group that machine is in.
+
 
 
 

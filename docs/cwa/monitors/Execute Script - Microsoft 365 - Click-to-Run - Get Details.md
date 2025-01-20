@@ -15,7 +15,7 @@ This internal monitor executes the [Microsoft 365 - Click-to-Run - Get Details](
 ## Dependencies
 
 - [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
-- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846)
+- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](<../../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>)
 
 ## Target
 
@@ -26,6 +26,7 @@ Managed Windows Computers
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
+
 
 
 

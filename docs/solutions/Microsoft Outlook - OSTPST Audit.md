@@ -18,32 +18,33 @@ This solution is designed to retrieve the file path and size details of OST and 
 
 | Content                                                                 | Type          | Function               |
 |-------------------------------------------------------------------------|---------------|------------------------|
-| [Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634)   | Script        | Fetch the data.        |
+| [Script - Microsoft Outlook - OST/PST - Audit](<../cwa/scripts/Microsoft Outlook - OSTPST - Audit.md>)   | Script        | Fetch the data.        |
 | [Dataview - Microsoft Outlook - OST/PST Audit](https://proval.itglue.com/DOC-5078775-8023119)   | Dataview      | Display the data.      |
-| [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-15490756) | Internal Monitor | Detects the machines.  |
+| [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>) | Internal Monitor | Detects the machines.  |
 | △ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit       | Alert Template | Executes the script.   |
 
 #### Other
 
 | Content                                                                 | Type          | Function                       |
 |-------------------------------------------------------------------------|---------------|--------------------------------|
-| [Custom Table - pvl_outlook_pst_ost_audit](https://proval.itglue.com/DOC-5078775-15595946) | Custom Table  | Stores data gathered by the script. |
+| [Custom Table - pvl_outlook_pst_ost_audit](<../cwa/tables/pvl_outlook_pst_ost_audit.md>) | Custom Table  | Stores data gathered by the script. |
 
 ## Implementation
 
 1. Import the following content from the `ProSync` plugin:
-   - [Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634)
+   - [Script - Microsoft Outlook - OST/PST - Audit](<../cwa/scripts/Microsoft Outlook - OSTPST - Audit.md>)
    - [Dataview - Microsoft Outlook - OST/PST Audit](https://proval.itglue.com/DOC-5078775-8023119)
-   - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-15490756)
+   - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
    - Alert Template - `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
 
 2. Reload System Cache:  
    ![Reload System Cache](../../static/img/Microsoft-Outlook---OSTPST-Audit/image_1.png)
 
 3. Configure the solution as follows:
-   - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-15490756)
+   - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
+
 
 
 

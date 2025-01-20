@@ -14,9 +14,9 @@ Displays potential Log4J/Log4Shell vulnerabilities based on this list: [https://
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.itglue.com/DOC-5078775-8854610)
-- [SEC - Endpoint Protection - Script - Import Log4Shell Table](https://proval.itglue.com/DOC-5078775-8855626)
-- [SEC - Endpoint Protection - Custom Table - plugin_proval_log4jsoftwarelist](https://proval.itglue.com/DOC-5078775-8856668)
+- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>)
+- [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import Log4Shell Table.md>)
+- [SEC - Endpoint Protection - Custom Table - plugin_proval_log4jsoftwarelist](<../tables/plugin_proval_log4jsoftwarelist.md>)
 
 ## Columns
 
@@ -28,8 +28,9 @@ Displays potential Log4J/Log4Shell vulnerabilities based on this list: [https://
 | InstalledName | The name of the possibly affected application as it appears in the Automate database.                    |
 | Supplier      | The supplier of the possibly affected application as it appears in the GitHub table.                     |
 | Product       | The name of the possibly affected application as it appears in the GitHub table.                         |
-| Status        | The status of the application as of last run of [SEC - Endpoint Protection - Script - Import Log4Shell Table](https://proval.itglue.com/DOC-5078775-8855626) |
+| Status        | The status of the application as of last run of [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import Log4Shell Table.md>) |
 | Links         | Links to information about the affected application.                                                    |
+
 
 
 

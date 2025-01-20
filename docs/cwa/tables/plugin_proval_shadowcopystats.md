@@ -14,7 +14,7 @@ Stores information about Windows shadow copies.
 
 ## Dependencies
 
-[Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)
+[Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)
 
 ## Table
 
@@ -32,6 +32,7 @@ Stores information about Windows shadow copies.
 | AllocatedSpace | FLOAT   | Allocated space size for the Shadow Copy in GB.                                                 |
 | UsedSpace     | FLOAT   | Used space size by the Shadow Copy in GB.                                                       |
 | MaxSpace      | FLOAT   | Maximum space provided to the Shadow Copy in GB.                                               |
+
 
 
 

@@ -16,21 +16,21 @@ The objective of this solution is to remove any additional and unwanted ScreenCo
 
 | Content                                                                                             | Type          | Function                                                             |
 |-----------------------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------------|
-| [Script - Remove - All But My - ScreenConnect Client Installations](https://proval.itglue.com/DOC-5078775-14767921) | Script        | Remove Additional ScreenConnect installations from the machines.     |
+| [Script - Remove - All But My - ScreenConnect Client Installations](<../cwa/scripts/Remove - All But My - ScreenConnect Client Installations.md>) | Script        | Remove Additional ScreenConnect installations from the machines.     |
 | [Internal Monitor - Remove Additional ScreenConnect Clients](https://proval.itglue.com/DOC-5078775-15274649) | Internal Monitor | Detects the computers with Additional ScreenConnect clients; where Auto-Removal is enabled. |
 | △ Custom - Remove Additional ScreenConnect Clients                                                   | Alert Template | Executes the Script against the computers detected by the internal monitor. |
 
 ## Implementation
 
 1. **Import the following content from the `ProSync` plugin:**
-   - Script: [Script - Remove - All But My - ScreenConnect Client Installations](https://proval.itglue.com/DOC-5078775-14767921)
+   - Script: [Script - Remove - All But My - ScreenConnect Client Installations](<../cwa/scripts/Remove - All But My - ScreenConnect Client Installations.md>)
    - Internal Monitor: [Internal Monitor - Remove Additional ScreenConnect Clients](https://proval.itglue.com/DOC-5078775-15274649)
    - Alert Template: △ Custom - Remove Additional ScreenConnect Clients
 
 2. **Reload the system cache.**  
    ![Reload Cache](../../static/img/Remove-Additional-ScreenConnect-Clients/image_1.png)
 
-3. **Configure the Extra Data Fields as explained in the [script's](https://proval.itglue.com/DOC-5078775-14767921) document.**  
+3. **Configure the Extra Data Fields as explained in the [script's](<../cwa/scripts/Remove - All But My - ScreenConnect Client Installations.md>) document.**  
    - Auto removal for a client can be enabled by flagging the Client-Level EDF `Remove Additional SC Clients`.
    - A location and computer can be excluded from the Auto-Removal by marking the location-level and computer-level EDF `Exclude - Additional SC Removal` respectively.
 
@@ -51,6 +51,7 @@ left join clients on clients.clientid=c.clientid
 where software.name like '%screenconnect%' 
 group by software.name
 ```
+
 
 
 

@@ -14,7 +14,7 @@ A thorough examination of Windows 10 computers and their patching for each clien
 
 ## Requirements
 
-1. [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) must be present in order to make this dataview to work.
+1. [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) must be present in order to make this dataview to work.
 
 ## Columns
 
@@ -34,6 +34,7 @@ A thorough examination of Windows 10 computers and their patching for each clien
 | #Missing patches Windows 10        | Total Number of the missing patches for Windows 10 computers.                                   |
 | #Failed patches Windows 10         | Total Number of the Failed patches for Windows 10 computers.                                    |
 | Windows 10 Patch Compliance         | Avg patch compliance for all the Windows 10 computers.                                         |
+
 
 
 

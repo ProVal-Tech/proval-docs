@@ -14,7 +14,7 @@ Stores individual patch information per computer and their installation status f
 
 ## Dependencies
 
-[Audit WMI Patch History](https://proval.itglue.com/DOC-5078775-8143435)
+[Audit WMI Patch History](<../scripts/Audit WMI Patch History.md>)
 
 ## Table
 
@@ -27,6 +27,7 @@ Stores individual patch information per computer and their installation status f
 | Title       | VARCHAR  | The title of the audited patch.                      |
 | Result      | VARCHAR  | The current installation status of the audited patch.|
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
+
 
 
 

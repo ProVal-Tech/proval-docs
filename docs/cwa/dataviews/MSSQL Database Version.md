@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760).
+The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>).
 
 ## Dependencies
 
-- [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760)
-- [Custom Table - pvl_mssql_db_version](https://proval.itglue.com/DOC-5078775-15161868)
-- [Internal Monitor - Execute Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161763)
+- [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>)
+- [Custom Table - pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>)
+- [Internal Monitor - Execute Script - Get MSSQL Database Version](<../monitors/Execute Script - Get MSSQL Database Version.md>)
 
 ## Columns
 
@@ -35,6 +35,7 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 | MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
 | MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
 | Data Collection Time  | Data Collection Time                                              |
+
 
 
 

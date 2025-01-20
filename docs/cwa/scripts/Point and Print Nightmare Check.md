@@ -22,7 +22,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[PrintNightMare Detection](https://proval.itglue.com/DOC-5078775-7854017) 
+[PrintNightMare Detection](<../dataviews/PrintNightMare Detection.md>) 
 
 #### Script States
 
@@ -41,6 +41,7 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Dataview
+
 
 
 

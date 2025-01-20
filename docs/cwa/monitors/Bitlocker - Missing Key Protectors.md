@@ -12,14 +12,14 @@ unlisted: false
 
 The monitor set detects the computer where Bitlocker is enabled, and the drive is fully encrypted but does not have any key protectors.
 
-It works based on the data gathered by the [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script. So the [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script should be running regularly in the partner’s environment.
+It works based on the data gathered by the [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script. So the [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script should be running regularly in the partner’s environment.
 
-Either the script can be scheduled from a group or it can be scheduled from the [CWM - Automate - Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](https://proval.itglue.com/DOC-5078775-12589046) monitor set.
+Either the script can be scheduled from a group or it can be scheduled from the [CWM - Automate - Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<./Security - Stale Bitlocker Data.md>) monitor set.
 
 ## Dependencies
 
-- [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)
-- [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](https://proval.itglue.com/DOC-5078775-13808694)
+- [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>)
+- [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](<../scripts/Bitlocker - Volume - Add Recovery Password Autofix.md>)
 
 ## Target
 
@@ -29,7 +29,8 @@ Global
 
 **Name:** `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
 
-The script [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](https://proval.itglue.com/DOC-5078775-13808694) should be imported before creating/importing the alert template as the alert template should run this.
+The script [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](<../scripts/Bitlocker - Volume - Add Recovery Password Autofix.md>) should be imported before creating/importing the alert template as the alert template should run this.
+
 
 
 

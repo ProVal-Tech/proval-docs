@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is a CW RMM implementation of the agnostic script [Add-WifiProfile](https://proval.itglue.com/DOC-5078775-16088530). The script can be used to manually add Wi-Fi profiles for Windows computers.
+This is a CW RMM implementation of the agnostic script [Add-WifiProfile](<../../powershell/Add-WifiProfile.md>). The script can be used to manually add Wi-Fi profiles for Windows computers.
 
 **Requirement:** PowerShell v5+
 
@@ -24,7 +24,7 @@ This is a CW RMM implementation of the agnostic script [Add-WifiProfile](https:/
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic Script - Add-WifiProfile](https://proval.itglue.com/DOC-5078775-16088530)
+[EPM - Windows Configuration - Agnostic Script - Add-WifiProfile](<../../powershell/Add-WifiProfile.md>)
 
 ## User Parameters
 
@@ -320,6 +320,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 - Script Log
 
 "
+
 
 
 

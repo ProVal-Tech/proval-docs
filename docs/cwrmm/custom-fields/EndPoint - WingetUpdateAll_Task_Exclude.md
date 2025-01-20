@@ -12,7 +12,7 @@ unlisted: false
 
 Mark this custom field to exclude the computer from Winget Update All Task creation and remove the created tasks for the machine.
 
-Marking this custom field will exclude the machine from [CW RMM - Machine Group - Winget Update All (Task Delete)](https://proval.itglue.com/DOC-5078775-15702936) group. The [CW RMM - Task - Scheduled Task Winget Update All (Create)](https://proval.itglue.com/DOC-5078775-15702931) task will not run on the computer with this custom field marked.
+Marking this custom field will exclude the machine from [CW RMM - Machine Group - Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) group. The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task will not run on the computer with this custom field marked.
 
 ## Details
 
@@ -23,6 +23,7 @@ Marking this custom field will exclude the machine from [CW RMM - Machine Group 
 ## ScreenShot
 
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_1.png) ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_2.png)
+
 
 
 

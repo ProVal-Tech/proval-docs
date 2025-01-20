@@ -19,23 +19,24 @@ If it is not set - disabled
 
 Related Roles  
 
-- [TLS 1.0 Enabled](https://proval.itglue.com/DOC-5078775-8030367)  
-- [TLS 1.1 Enabled](https://proval.itglue.com/DOC-5078775-8015101)  
-- [TLS 1.2 Enabled](https://proval.itglue.com/DOC-5078775-7920668)  
+- [TLS 1.0 Enabled](<./TLS 1.0 Enabled.md>)  
+- [TLS 1.1 Enabled](<./TLS 1.1 Enabled.md>)  
+- [TLS 1.2 Enabled](<./TLS 1.2 Enabled.md>)  
 
 Related Script  
 
-- [Internet Explorer Advanced SSL and TLS Settings [Script]](https://proval.itglue.com/DOC-5078775-7772468)  
+- [Internet Explorer Advanced SSL and TLS Settings [Script]](<./Internet Explorer Advanced SSL and TLS Settings Script.md>)  
 
 Related Dataview  
 
-- [Internet Explorer Advanced SSL and TLS Settings](https://proval.itglue.com/DOC-5078775-7770039)  
+- [Internet Explorer Advanced SSL and TLS Settings](<../scripts/Internet Explorer Advanced SSL and TLS Settings.md>)  
 
 ## Settings
 
 | Detection String                                             | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled-%} | Equals     | 1      | Windows        |
+
 
 
 

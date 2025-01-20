@@ -14,7 +14,7 @@ This internal monitor detects offline servers based on the last contact and last
 
 ## Dependencies
 
-[CWM - Automate - Script - Agent - Remote Repair - RMM +](https://proval.itglue.com/DOC-5078775-12439587)
+[CWM - Automate - Script - Agent - Remote Repair - RMM +](<../scripts/Agent - Remote Repair - RMM +.md>)
 
 ## Properties
 
@@ -25,6 +25,7 @@ This internal monitor detects offline servers based on the last contact and last
 ## Target
 
 Windows Server
+
 
 
 

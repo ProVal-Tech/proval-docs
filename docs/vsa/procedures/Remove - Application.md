@@ -50,8 +50,8 @@ For using custom switches for multiple application removals surround the switche
 ## Dependencies
 
 - [SWM - Software Uninstall - Agnostic - Remove-Application](https://proval.itglue.com/5078775/docs/10677467)
-- [EPM - Endpoint Management - Agent Procedure - Safe Mode Reboot](https://proval.itglue.com/DOC-5078775-11260329)
-- [EPM - Endpoint Management - Agent Procedure - Leave Safe Mode](https://proval.itglue.com/DOC-5078775-11260331)
+- [EPM - Endpoint Management - Agent Procedure - Safe Mode Reboot](<./Safe Mode Reboot.md>)
+- [EPM - Endpoint Management - Agent Procedure - Leave Safe Mode](<./Leave Safe Mode.md>)
 
 ## Process
 
@@ -89,6 +89,7 @@ For using custom switches for multiple application removals surround the switche
 Agent Procedure Log  
 
 Due to the way the VSA pulls in logs, the Agent Procedure log will typically not show much for `Remove-Application-log` as the VSA pulls the first lines of a file. This log is not cleared upon subsequent runs, and is too verbose to be captured in its entirety. `Remove-Application-error` is cleared upon every run and should contain relevant error messages. For the most detailed log refer to the `Remove-Application-log.txt` above.
+
 
 
 

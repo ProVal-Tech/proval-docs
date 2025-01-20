@@ -14,7 +14,7 @@ The purpose of this table is to store the audit report of the cluster disk space
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Volume Space Audit](https://proval.itglue.com/DOC-5078775-15952791)
+[CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>)
 
 ## Tables
 
@@ -29,7 +29,8 @@ The purpose of this table is to store the audit report of the cluster disk space
 | FreeSpace     | INT      | The cluster disk free space available on the hyperV cluster server                              |
 | UsedSpace     | INT      | The cluster disk used space on the hyperV cluster server                                        |
 | PercentFree   | INT      | The cluster disk available space in percent on the hyperV cluster server                        |
-| ScriptRunTime | DATETIME | The script's last run date to show when the latest audit was done via the script [CWA Script - Windows Cluster Volume Space Audit](https://proval.itglue.com/DOC-5078775-15952791) |
+| ScriptRunTime | DATETIME | The script's last run date to show when the latest audit was done via the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) |
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScaling](https://proval.itglue.com/DOC-5078775-16343605) to set custom Display scaling on existing as well as new users for windows machines.
+This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScaling](<../../unsorted/Agnostic - Set-DisplayScaling.md>) to set custom Display scaling on existing as well as new users for windows machines.
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScal
 
 ## Dependencies
 
-[Agnostic - Set-DisplayScaling](https://proval.itglue.com/DOC-5078775-16343605)
+[Agnostic - Set-DisplayScaling](<../../unsorted/Agnostic - Set-DisplayScaling.md>)
 
 ## User Parameters
 
@@ -147,6 +147,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
 
 
 

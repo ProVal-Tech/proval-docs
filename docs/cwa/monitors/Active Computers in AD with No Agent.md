@@ -36,7 +36,7 @@ CALL v_ExtraDataRefresh(3, 'Clients');
 
 ## Dependencies
 
-[CWM - Automate - Ticket Creation - Client](https://proval.itglue.com/DOC-5078775-14282558)
+[CWM - Automate - Ticket Creation - Client](<../scripts/CWM - Automate - Ticket Creation - Client.md>)
 
 ## Target
 
@@ -64,6 +64,7 @@ Last Logon: \\<Last Logon Date>
 
 Note: The list of machine names, separated by commas, can be configured within the client-level Extra Data Field (EDF) labeled "Excluded Missing Agent Computers" to exclude those machines from this monitoring process.
 ```
+
 
 
 

@@ -16,23 +16,24 @@ This solution contains the dataviews that are used for the Detailed auditing of 
 
 | Content                                                                                                  | Type     | Function                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
-| [Dataview - ProVal Script Detailed Report](https://proval.itglue.com/DOC-5078775-17169704)             | Dataview | This dataview shows all custom scripts built by ProVal with its detailed implementation status information.            |
-| [Dataview - ProVal Internal Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-17169706) | Dataview | This dataview shows all custom internal monitors built by ProVal with its detailed implementation status information.   |
-| [Dataview - ProVal Remote Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-17169724)   | Dataview | This dataview shows all custom remote monitors built by ProVal with its detailed implementation status information.     |
-| [Dataview - All Internal Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-18034239)     | Dataview | This dataview shows all custom internal monitors with detailed implementation status information.                       |
-| [Dataview - All Remote Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-18034240)       | Dataview | This dataview shows all custom remote monitors with detailed implementation status information.                        |
+| [Dataview - ProVal Script Detailed Report](<../cwa/dataviews/ProVal Script Detailed Report.md>)             | Dataview | This dataview shows all custom scripts built by ProVal with its detailed implementation status information.            |
+| [Dataview - ProVal Internal Monitor Detailed Report](<../cwa/dataviews/ProVal Internal Monitor Detailed Report.md>) | Dataview | This dataview shows all custom internal monitors built by ProVal with its detailed implementation status information.   |
+| [Dataview - ProVal Remote Monitor Detailed Report](<../cwa/dataviews/ProVal Remote Monitor Detailed Report.md>)   | Dataview | This dataview shows all custom remote monitors built by ProVal with its detailed implementation status information.     |
+| [Dataview - All Internal Monitor Detailed Report](<../cwa/dataviews/All Internal Monitor Detailed Report.md>)     | Dataview | This dataview shows all custom internal monitors with detailed implementation status information.                       |
+| [Dataview - All Remote Monitor Detailed Report](<../cwa/dataviews/All Remote Monitor Detailed Report.md>)       | Dataview | This dataview shows all custom remote monitors with detailed implementation status information.                        |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Dataview - ProVal Script Detailed Report](https://proval.itglue.com/DOC-5078775-17169704)
-   - [Dataview - ProVal Internal Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-17169706)
-   - [Dataview - ProVal Remote Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-17169724)
-   - [Dataview - All Internal Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-18034239)
-   - [Dataview - All Remote Monitor Detailed Report](https://proval.itglue.com/DOC-5078775-18034240)
+   - [Dataview - ProVal Script Detailed Report](<../cwa/dataviews/ProVal Script Detailed Report.md>)
+   - [Dataview - ProVal Internal Monitor Detailed Report](<../cwa/dataviews/ProVal Internal Monitor Detailed Report.md>)
+   - [Dataview - ProVal Remote Monitor Detailed Report](<../cwa/dataviews/ProVal Remote Monitor Detailed Report.md>)
+   - [Dataview - All Internal Monitor Detailed Report](<../cwa/dataviews/All Internal Monitor Detailed Report.md>)
+   - [Dataview - All Remote Monitor Detailed Report](<../cwa/dataviews/All Remote Monitor Detailed Report.md>)
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
+
 
 
 

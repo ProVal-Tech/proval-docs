@@ -14,8 +14,8 @@ Enables AD Recycle Bin on AD Infrastructure Masters
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15348941)
-- [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](https://proval.itglue.com/DOC-5078775-15348975)
+- [CW RMM - Custom Fields - AD Recycle Bin](<../custom-fields/AD Recycle Bin.md>)
+- [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](<../groups/Infrastructure Master - Without Recycle Bin.md>)
 
 ## Create Script
 
@@ -354,7 +354,7 @@ The final task should look like the below screenshot.
 
 ## Script Deployment
 
-This task has to be scheduled on [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](https://proval.itglue.com/DOC-5078775-15348975) group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](<../groups/Infrastructure Master - Without Recycle Bin.md>) group for auto deployment. Script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Enable AD Recycle Bin.  
@@ -365,6 +365,7 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 - Script log
+
 
 
 

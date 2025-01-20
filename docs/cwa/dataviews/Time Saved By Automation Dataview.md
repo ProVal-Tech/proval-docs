@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-Displays the accumulated "Time Saved by Automation" for each script that has the setting set based on triggers and custom tables created by [Time Saved By Automation MySQL](https://proval.itglue.com/DOC-5078775-7142807).
+Displays the accumulated "Time Saved by Automation" for each script that has the setting set based on triggers and custom tables created by [Time Saved By Automation MySQL](<../tables/plugin_proval_scripttimesaved_.md>).
 
 ## Dependencies
 
-[Time Saved By Automation MySQL](https://proval.itglue.com/DOC-5078775-7142807)
+[Time Saved By Automation MySQL](<../tables/plugin_proval_scripttimesaved_.md>)
 
 ## Columns
 
@@ -26,6 +26,7 @@ Displays the accumulated "Time Saved by Automation" for each script that has the
 | Average Weekly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
 | Average Monthly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
 | Average Yearly Minutes Saved      | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
+
 
 
 

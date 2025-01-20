@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-This table stores the Windows Shadow Copy state for endpoints with Shadow Copy Enabled collected from the script [Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337) result.
+This table stores the Windows Shadow Copy state for endpoints with Shadow Copy Enabled collected from the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) result.
 
 ## Dependencies
 
-[Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)
+[Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy E
 | ShadowCopyCount   | INT     | It collects the number of Shadow Copies on the machine                                          |
 | OldestShadowCopy  | VARCHAR | It contains the oldest available Shadow Copy date                                               |
 | LatestShadowCopy  | VARCHAR | It contains the most recent available Shadow Copy date                                           |
+
 
 
 

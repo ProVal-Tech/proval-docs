@@ -18,7 +18,7 @@ This script disables Internet Explorer from a Windows machine.
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - ProVal - Development - Internet Explorer Detected [Role]](https://proval.itglue.com/DOC-5078775-10731230)
+[CWM - Automate - Internal Monitor - ProVal - Development - Internet Explorer Detected [Role]](<../monitors/Internet Explorer Detected Role.md>)
 
 ## Variables
 
@@ -51,6 +51,7 @@ Step 5: For success, it will check whether reboot is enabled or not within the G
 - Script log
 - EDF
 - Dataview
+
 
 
 

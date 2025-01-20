@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This document should replace [EPM - Disk - Script - Disk - Gather Critical Info](https://proval.itglue.com/DOC-5078775-9371128).
+This document should replace [EPM - Disk - Script - Disk - Gather Critical Info](<./Disk - Gather Critical Info - Deprecated and replaced.md>).
 
 Automate Script designed to retrieve data related to hard drive failures.  
 Creates a Custom Table called `plugin_proval_cdi_data`.  
@@ -22,8 +22,8 @@ Appends data from that agnostic script to that created table.
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-DiskInfo](https://proval.itglue.com/DOC-5078775-10677479)
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714)
+- [EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>)
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)
 - [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639)
 
 #### User Parameters
@@ -143,6 +143,7 @@ Appends data from that agnostic script to that created table.
    - This script is reporting on the state of the physical hard disk, not the logical drive, the percentage used is the percentage of the physical disk that is utilized by all designated partitions and those partition sizes reflect the total physical disk usage.
 4. I updated this script to its newest version and now the script fails every time
    - Please set refresh table to 'Yes' on the first run after a version upgrade of this script.
+
 
 
 

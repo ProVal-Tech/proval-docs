@@ -11,7 +11,7 @@ unlisted: false
 ## Implementation Steps
 
 - Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only`
-  - Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854) script was imported as well.
+  - Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well.
   
 - Run this SQL query from a RAWSQL monitor set to import the required search.
   ```
@@ -197,8 +197,9 @@ unlisted: false
   **Alert Template:** `△ Custom - Ticket Creation Computer - Failures Only`  
   ![Image](../../../static/img/Implement--New-Local-Admin/image_1.png)
 
-- Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
+- Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)  
   ![Image](../../../static/img/Implement--New-Local-Admin/image_2.png)
+
 
 
 

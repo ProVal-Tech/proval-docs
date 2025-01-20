@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-This is a client-specific copy of [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](https://proval.itglue.com/DOC-5078775-12033151) script with an additional feature to send email notifications. It fetches the email address from the default system property `_sysTicketDefaultEmail` if the script's global variable `EmailAddress` is not set.
+This is a client-specific copy of [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<./Enhanced Disk Space Monitoring Process.md>) script with an additional feature to send email notifications. It fetches the email address from the default system property `_sysTicketDefaultEmail` if the script's global variable `EmailAddress` is not set.
 
 **Email address should be stored in one place either in the script's global variable or in the system property.**
 
 ## Dependencies
 
-[EPM - Disk - Solution - Enhanced Drive Space Monitoring](https://proval.itglue.com/DOC-5078775-11637304)
+[EPM - Disk - Solution - Enhanced Drive Space Monitoring](<../../solutions/Enhanced Drive Space Monitoring.md>)
 
 #### Global Parameters
 
@@ -29,6 +29,7 @@ This is a client-specific copy of [EPM - Disk - Script - Enhanced Disk Space Mon
 | Name                     | Example                                                                                         | Required   | Description                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _sysTicketDefaultEmail   | [support@provaltech.com](mailto:support@provaltech.com)[Support@provaltech.com](mailto:Support@provaltech.com); [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | Partially  | Email Address to send an alert on failures. Multiple email addresses can be stored by separating them with a semicolon. If the Global variable `EmailAddress` is not set then the script will fall back to this system property. |
+
 
 
 

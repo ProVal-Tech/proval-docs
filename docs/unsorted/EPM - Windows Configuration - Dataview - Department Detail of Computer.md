@@ -14,8 +14,8 @@ This dataview will store the department detail of the last logged in user on eac
 
 ## Dependencies
 
-- [plugin_proval_computer_department](https://proval.itglue.com/DOC-5078775-7969931)
-- [Computer Department Auditing[DV]](https://proval.itglue.com/DOC-5078775-9004334)
+- [plugin_proval_computer_department](<./plugin_proval_computer_department.md>)
+- [Computer Department Auditing[DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
 
 ## Columns
 
@@ -96,6 +96,7 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
+
 
 
 

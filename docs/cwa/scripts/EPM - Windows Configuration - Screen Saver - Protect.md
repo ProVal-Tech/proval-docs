@@ -18,7 +18,7 @@ Ensures that the screen saver settings are enabled and set to the specified time
 
 ## Dependencies
 
-[Protect-ScreenLock](https://proval.itglue.com/DOC-5078775-8381648)
+[Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
 
 ## Variables
 
@@ -39,7 +39,7 @@ Ensures that the screen saver settings are enabled and set to the specified time
 
 ## Process
 
-See [Protect-ScreenLock](https://proval.itglue.com/DOC-5078775-8381648)
+See [Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
 
 ## Output
 
@@ -50,6 +50,7 @@ See [Protect-ScreenLock](https://proval.itglue.com/DOC-5078775-8381648)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
+
 
 
 

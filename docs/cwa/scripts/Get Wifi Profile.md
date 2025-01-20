@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script is an Automate implementation of the agnostic script [Get-WifiProfile](https://proval.itglue.com/DOC-5078775-16088529). It retrieves details about Wi-Fi profiles stored on designated end-user machines.
+The script is an Automate implementation of the agnostic script [Get-WifiProfile](<../../powershell/Get-WifiProfile.md>). It retrieves details about Wi-Fi profiles stored on designated end-user machines.
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 | WorkingDirectory    | C:/ProgramData/_Automation/Script/Get-WifiProfile   |
 | PS1Log             | C:/ProgramData/_Automation/Script/Get-WifiProfile-Log.txt |
 | PS1ErrorLog        | C:/ProgramData/_Automation/Script/Get-WifiProfile-Error.txt |
-| TableName          | [pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849) |
+| TableName          | [pvl_wifi_profiles](<../tables/pvl_wifi_profiles.md>) |
 
 #### User Parameters
 
@@ -40,6 +40,7 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+
 
 
 

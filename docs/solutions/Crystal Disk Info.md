@@ -18,11 +18,11 @@ The purpose of the content is to monitor the disk health of the physical machine
 
 | Content                                                                                 | Type                | Function                                                                                          |
 |-----------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------------------------------------|
-| [Agnostic - Get-CrystalDiskInfo](https://proval.itglue.com/DOC-5078775-12918412)      | Agnostic Scripts     | Executes the tool on the end machine and returns the result into an object.                     |
+| [Agnostic - Get-CrystalDiskInfo](<../powershell/Get-CrystalDiskInfo.md>)      | Agnostic Scripts     | Executes the tool on the end machine and returns the result into an object.                     |
 | [Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045)   | Script               | Executes the agnostic script on the end machines and fetches the data into Automate. Also creates a ticket for computers with unhealthy disks. |
-| [Custom Table - pvl_crystal_disk_info](https://proval.itglue.com/DOC-5078775-12960038)| Custom Table        | Stores the data fetched by the script.                                                            |
+| [Custom Table - pvl_crystal_disk_info](<../cwa/tables/pvl_crystal_disk_info.md>)| Custom Table        | Stores the data fetched by the script.                                                            |
 | [Dataview - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960042) | Dataview            | Displays the data stored in the Custom Table.                                                   |
-| [Internal Monitor - Execute Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960044) | Internal Monitor     | Executes the script once per week against the supported Windows machines.                        |
+| [Internal Monitor - Execute Script - Crystal Disk Info Report](<../cwa/monitors/Execute Script - Crystal Disk Info Report.md>) | Internal Monitor     | Executes the script once per week against the supported Windows machines.                        |
 | △ CUSTOM - Execute Script - Crystal Disk Info Report                                    | Alert Template      | Executes the script against the machines detected by the alert template.                        |
 
 ## Implementation
@@ -30,11 +30,11 @@ The purpose of the content is to monitor the disk health of the physical machine
 - Read all the associated/related documents carefully to fully understand the working of the solution.
 - **Before moving forward, rip out all the contents related to the [EPM - Disk - Solution - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-12662585) solution from the environment.**
 - Import the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script.
-- Execute the script against an online physical Windows machine with PowerShell v5 to create the [EPM - Disk - Custom Table - pvl_crystal_disk_info](https://proval.itglue.com/DOC-5078775-12960038) table.
+- Execute the script against an online physical Windows machine with PowerShell v5 to create the [EPM - Disk - Custom Table - pvl_crystal_disk_info](<../cwa/tables/pvl_crystal_disk_info.md>) table.
 - Execute the script "[MySQL - Permission - Set Custom Table Permissions](https://proval.itglue.com/5078775/docs/8056027)" (Make sure this script is updated).
 - Import the [EPM - Disk - Dataview - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960042) dataview.
 - Ensure that the dataview is displaying the data for the computer you just executed the script upon.
-- Import the [EPM - Disk - Internal Monitor - Execute Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960044) internal monitor.
+- Import the [EPM - Disk - Internal Monitor - Execute Script - Crystal Disk Info Report](<../cwa/monitors/Execute Script - Crystal Disk Info Report.md>) internal monitor.
 - Create/Import the `△ CUSTOM - Execute Script - Crystal Disk Info Report` alert template.
 - Ensure that the template is executing the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script on failure.
 - Set the monitor set to the concerned groups.
@@ -53,6 +53,7 @@ The purpose of the content is to monitor the disk health of the physical machine
 - `CrystalDiskInfo does not support RAID disks and IDE (Parallel ATA) and Serial ATA disks connected external ATA controller.`
 
 Reference: [Crystal Disk Info FAQ](https://crystalmark.info/en/software/crystaldiskinfo/crystaldiskinfo-faq/)
+
 
 
 

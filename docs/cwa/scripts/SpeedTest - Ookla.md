@@ -19,7 +19,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Dependencies
 
-[Speedtest Record (Script)](https://proval.itglue.com/DOC-5078775-8023156)
+[Speedtest Record (Script)](<../dataviews/Speedtest Record Script.md>)
 
 ## Variables
 
@@ -43,6 +43,7 @@ This script will download the speed test zip file from Ookla and extract it. Aft
 - Script log
 - Script state
 - Dataview
+
 
 
 

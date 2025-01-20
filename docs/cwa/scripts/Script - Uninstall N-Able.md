@@ -18,7 +18,7 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 ## Dependencies
 
-[Agnostic - Uninstall N-Able](https://proval.itglue.com/DOC-5078775-17069437)
+[Agnostic - Uninstall N-Able](<../../unsorted/Agnostic - Uninstall N-Able.md>)
 
 ## Variables
 
@@ -34,6 +34,7 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 - Script log
 - Local file on the computer
+
 
 
 

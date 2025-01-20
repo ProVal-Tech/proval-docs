@@ -48,11 +48,11 @@ Device-level EDF
 ## Implementation
 
 1. Import the script using the ProSync plugin:
-   - [CWM - Automate - Script - Network Devices - Enable External Sync](https://proval.itglue.com/DOC-5078775-15025185)
+   - [CWM - Automate - Script - Network Devices - Enable External Sync](<./Network Devices - Enable External Sync.md>)
 
 2. Configure the solution as follows:
    - Navigate to Automation → Scripts within the CWA Control Center.
-     - Debug Script [CWM - Automate - Script - Network Devices - Enable External Sync](https://proval.itglue.com/DOC-5078775-15025185) on any online machine with User Parameter 'Set_environment' = 1
+     - Debug Script [CWM - Automate - Script - Network Devices - Enable External Sync](<./Network Devices - Enable External Sync.md>) on any online machine with User Parameter 'Set_environment' = 1
      - It will create the System property required for the script.
    - Navigate to system dashboard → Config → Properties
      - Fill in the `External_Sync_DeviceType` system property as per Partners Requirements.
@@ -64,7 +64,7 @@ Device-level EDF
      - If partner wants to unsync the device script synced earlier, put "Disable" in the system property as shown below:  
        ![Unsync device](../../../static/img/Network-Devices---Enable-External-Sync/image_6.png)
    - Navigate to system dashboard → Management → Scheduled Client Scripts
-     - Schedule the script [CWM - Automate - Script - Network Devices - Enable External Sync](https://proval.itglue.com/DOC-5078775-15025185) to run daily.  
+     - Schedule the script [CWM - Automate - Script - Network Devices - Enable External Sync](<./Network Devices - Enable External Sync.md>) to run daily.  
        ![Schedule daily](../../../static/img/Network-Devices---Enable-External-Sync/image_7.png)
    - If partner wants to exclude any particular device, location, or client from external Sync, select the `Exclude from Automatic Network Device Sync` EDF respectively on that device, location, or client.
 
@@ -75,6 +75,7 @@ Device-level EDF
 ## Output
 
 - Script log
+
 
 
 

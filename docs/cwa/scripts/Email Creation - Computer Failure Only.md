@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script; however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the email address provided in the system property.
+This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the email address provided in the system property.
 
 This script sends emails to two different addresses:
 
@@ -65,6 +65,7 @@ It's an Autofix script and is attached to the "△ Custom - Email RAWSQL Monitor
 ## Output
 
 Email
+
 
 
 

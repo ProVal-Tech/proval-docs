@@ -10,17 +10,17 @@ unlisted: false
 ---
 ## Summary
 
-The internal monitor identifies machines that have unknown user profiles. The data is collected by the [User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496) script.
+The internal monitor identifies machines that have unknown user profiles. The data is collected by the [User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script.
 
 ![Image](../../../static/img/Unknown-User-Profiles-Detection/image_1.png)
 
-**Note:** The internal monitor does not depend on the [Domain Trust Relationship Check](https://proval.itglue.com/DOC-5078775-17974580) remote monitor. However, it will not detect the machines identified by the [Domain Trust Relationship Check](https://proval.itglue.com/DOC-5078775-17974580) remote monitor to prevent identifying machines that have a broken trust relationship with the domain. Since the [User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496) script cannot properly retrieve accounts for these machines, it will add '(Inferred)' to the remote user names.
+**Note:** The internal monitor does not depend on the [Domain Trust Relationship Check](<./Domain Trust Relationship Check.md>) remote monitor. However, it will not detect the machines identified by the [Domain Trust Relationship Check](<./Domain Trust Relationship Check.md>) remote monitor to prevent identifying machines that have a broken trust relationship with the domain. Since the [User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script cannot properly retrieve accounts for these machines, it will add '(Inferred)' to the remote user names.
 
 ## Dependencies
 
-- [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496)
-- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](https://proval.itglue.com/DOC-5078775-8476498)
-- [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+- [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
+- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>)
+- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -59,6 +59,7 @@ UserProfile: C:/Users/user2
 ProfileSizeMB: 1237
 UserSid: S-1-5-21-1327865892-1327865892-1327865892-1758
 ```
+
 
 
 

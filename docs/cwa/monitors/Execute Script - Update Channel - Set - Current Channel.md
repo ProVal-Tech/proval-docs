@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This internal monitor executes the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](https://proval.itglue.com/DOC-5078775-8181470) script on online machines with Microsoft Office 365 installed on them. It will execute the script on the machines that meet the below criteria of the script states whose data is being stored by the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script.
+This internal monitor executes the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script on online machines with Microsoft Office 365 installed on them. It will execute the script on the machines that meet the below criteria of the script states whose data is being stored by the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script.
 
 - Update Channel should not be equal to "Current Channel"  
 OR
@@ -21,7 +21,7 @@ AND
 ## Dependencies
 
 - [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
-- [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](https://proval.itglue.com/DOC-5078775-8181470)
+- [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>)
 
 ## Target
 
@@ -31,7 +31,8 @@ Windows Machines
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
-The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](https://proval.itglue.com/DOC-5078775-8181470) script.
+The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script.
+
 
 
 

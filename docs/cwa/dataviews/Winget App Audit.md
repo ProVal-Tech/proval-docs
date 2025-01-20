@@ -15,7 +15,7 @@ Displays the information of `Winget` supported applications fetched by the [Wing
 ## Dependencies
 
 - [SWM - Software Update - Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895)
-- [SWM - Software Update - Custom Table - pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960)
+- [SWM - Software Update - Custom Table - pvl_winget_audit](<../tables/pvl_winget_audit.md>)
 
 ## Columns
 
@@ -40,6 +40,7 @@ Displays the information of `Winget` supported applications fetched by the [Wing
 | App Level                 | Installation level of the application (System/User).                                                    |
 | Auto Update Enabled       | Is the Auto Update Enabled for the application?(0/1). Refer the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script's document for detailed instructions on enabling Auto update. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
+
 
 
 

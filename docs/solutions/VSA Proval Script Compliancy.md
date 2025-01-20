@@ -16,9 +16,9 @@ Checks that an endpoint OS and Powerpoint version (for Windows) is ProVal suppor
 
 | Content                                                                                                                                                                             | Type | Function                                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------------------------------------------|
-| [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](https://proval.itglue.com/DOC-5078775-11409312)                                                         | CF   | Contains compatibility data per endpoint         |
-| [EPM - Data Collection - View - xPVAL ProVal Compatible Endpoint | xPVAL ProVal Incompatible Endpoint](https://proval.itglue.com/DOC-5078775-11409320)                               | View | Views to display compatible / incompatible agents in the VSA |
-| [EPM - Data Collection - Agent Procedure - VSA Proval Script Compliancy Update](https://proval.itglue.com/DOC-5078775-11409316)                                                 | AP   | Adds compatibility data to the CF                |
+| [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](<../vsa/custom-fields/xPVAL ProVal Compatible Endpoint.md>)                                                         | CF   | Contains compatibility data per endpoint         |
+| [EPM - Data Collection - View - xPVAL ProVal Compatible Endpoint xPVAL ProVal Incompatible Endpoint](<../vsa/views/xPVAL ProVal Compatible Endpoint  xPVAL ProVal Incompatible Endpoint.md>)                               | View | Views to display compatible / incompatible agents in the VSA |
+| [EPM - Data Collection - Agent Procedure - VSA Proval Script Compliancy Update](<../vsa/procedures/VSA Proval Script Compliancy Update.md>)                                                 | AP   | Adds compatibility data to the CF                |
 
 ## Implementation
 
@@ -29,6 +29,7 @@ Checks that an endpoint OS and Powerpoint version (for Windows) is ProVal suppor
 - Ensure AP has the appropriate CF assigned to updateSystemInfo()
 - Run AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
+
 
 
 

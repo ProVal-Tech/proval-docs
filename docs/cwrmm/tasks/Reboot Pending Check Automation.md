@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This task is designed to detect the reboot pending on the endpoints automatically and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](https://proval.itglue.com/DOC-5078775-15317821).
+This task is designed to detect the reboot pending on the endpoints automatically and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>).
 
 ## Dependencies
 
@@ -216,6 +216,7 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
+
 
 
 

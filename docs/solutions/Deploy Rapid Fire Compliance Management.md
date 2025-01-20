@@ -17,14 +17,14 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
 | Content                                                                                               | Type          | Function                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Script - Deploy Rapid Fire Compliance Management](https://proval.itglue.com/DOC-5078775-17700231)   | Script        | This script deploys the Rapid Fire compliance management application. It first validates the .NET Framework 4.8 is installed; if installed, then only the deployment is possible.                                        |
-| [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](https://proval.itglue.com/DOC-5078775-17069435) | Internal Monitor | This monitor detects the agent where the location of the agent contains the "Compliance Management Installer Key" and the deployment is enabled. Excluded computers and locations will not show up in the monitor. |
-| **△ Custom - Execute Script - Deploy Rapid Fire**                                                   | Alert Template | It runs as an autofix with the [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](https://proval.itglue.com/DOC-5078775-17069435) and schedules the [Script - Deploy Rapid Fire Compliance Management](https://proval.itglue.com/DOC-5078775-17700231) to the detected endpoints where deployment is set based on the EDFs. |
+| [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>) | Internal Monitor | This monitor detects the agent where the location of the agent contains the "Compliance Management Installer Key" and the deployment is enabled. Excluded computers and locations will not show up in the monitor. |
+| **△ Custom - Execute Script - Deploy Rapid Fire**                                                   | Alert Template | It runs as an autofix with the [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>) and schedules the [Script - Deploy Rapid Fire Compliance Management](https://proval.itglue.com/DOC-5078775-17700231) to the detected endpoints where deployment is set based on the EDFs. |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
    - [Script - Deploy Rapid Fire Compliance Management](https://proval.itglue.com/DOC-5078775-17700231)
-   - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](https://proval.itglue.com/DOC-5078775-17069435)
+   - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>)
    - **Alert Template -** `△ Custom - Execute Script - Deploy Rapid Fire`
 
 2. Reload the system cache:
@@ -32,9 +32,10 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](https://proval.itglue.com/DOC-5078775-17069435)
+     - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>)
        - Setup with "`△ Custom - Execute Script - Deploy Rapid Fire`" alert template.
        - Right-click and Run Now to start the monitor.
+
 
 
 

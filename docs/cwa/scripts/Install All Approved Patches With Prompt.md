@@ -26,7 +26,7 @@ While the script can be executed from Automate, it is recommended to utilize it 
 
 ## Dependencies
 
-[CWM - Automate - Script - Prompter](https://proval.itglue.com/DOC-5078775-10243074)
+[CWM - Automate - Script - Prompter](<./Prompter.md>)
 
 ## Prompts
 
@@ -71,6 +71,7 @@ A pop-up message will appear at the bottom right corner of the screen to remind 
 
 - Script Log
 - Prompt on End Machine
+
 
 
 

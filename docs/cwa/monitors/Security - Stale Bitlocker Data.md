@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Detects the Windows computer where [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script has not executed even once a month and executes it.  
+Detects the Windows computer where [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script has not executed even once a month and executes it.  
 
 *Note:* *For Windows servers, to be eligible for bitlocker, below roles must be enabled on the server.*
 
@@ -23,9 +23,9 @@ Detects the Windows computer where [SEC - Encryption - Script - Bitlocker - Audi
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520)  
-- [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)  
-- [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](https://proval.itglue.com/DOC-5078775-12589046)  
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>)  
+- [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>)  
+- [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<./Security - Stale Bitlocker Data.md>)  
 
 ## Target
 
@@ -37,7 +37,8 @@ Global
 
 *Available for import within the ProSync Plugin.*
 
-Note: Ensure the presence of [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520) table and [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478) script in the environment before creating the monitor set and importing the alert template.
+Note: Ensure the presence of [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>) table and [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script in the environment before creating the monitor set and importing the alert template.
+
 
 
 

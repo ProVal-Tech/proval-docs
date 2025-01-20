@@ -14,9 +14,9 @@ This dataview shows the complete Windows Server Backup report and it is useful t
 
 ## Dependencies
 
-- [plugin_proval_windows_server_backup](https://proval.itglue.com/DOC-5078775-12183969)
-- [Windows Server Backup Audit](https://proval.itglue.com/DOC-5078775-12941262)
-- [Windows Server Backup](https://proval.itglue.com/DOC-5078775-13083383)
+- [plugin_proval_windows_server_backup](<../tables/plugin_proval_windows_server_backup.md>)
+- [Windows Server Backup Audit](<./Windows Server Backup Audit.md>)
+- [Windows Server Backup](<../roles/Windows Server Backup.md>)
 
 ## Columns
 
@@ -80,6 +80,7 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
+
 
 
 

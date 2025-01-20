@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-Executes the [Get OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-16007800) script once weekly against the Windows workstations with the OneDrive process.
+Executes the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script once weekly against the Windows workstations with the OneDrive process.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-16007800)
+[EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>)
 
 ## Target
 
@@ -23,6 +23,7 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get OneDrive Sync Status [DV]`
+
 
 
 

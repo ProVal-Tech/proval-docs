@@ -20,7 +20,7 @@ References:
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
+[CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 
 ## Table
 
@@ -39,7 +39,7 @@ References:
 ## FAQ
 
 Q. I need to add more versions to this list how do I do that?  
-A. Open the [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131) script and modify line 1 to add the new item.
+A. Open the [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) script and modify line 1 to add the new item.
 
 ## For CW RMM
 
@@ -116,6 +116,7 @@ Please follow these instructions carefully to update the information stored in t
 
 20. Scroll to the top of the document and click the `Publish` button to save the changes.  
    ![](../../../static/img/plugin_proval_windows_os_support/image_17.png)  
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Runs [Install-FeatureUpdate](https://proval.itglue.com/DOC-5078775-12024905) on the endpoint to install the latest Windows Feature Update
+Runs [Install-FeatureUpdate](<../powershell/Install-FeatureUpdate.md>) on the endpoint to install the latest Windows Feature Update
 
 ## Dependencies
 
@@ -64,6 +64,7 @@ Ex:
 - Local file on computer
 - Dataview
 - etc.
+
 
 
 

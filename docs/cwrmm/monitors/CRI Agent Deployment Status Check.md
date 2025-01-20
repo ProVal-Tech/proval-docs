@@ -31,11 +31,12 @@ This monitor is designed to create a ticket for the CRI Agent deployment failure
 - Set Target as shown below:  
   ![Image 5](../../../static/img/CRI-Agent-Deployment-Status-Check/image_5.png)  
 
-- Once all is done, click Save, the monitor will be created and the ticket creation will be set for the [CW RMM - Task - CRI Agent Deployment](https://proval.itglue.com/DOC-5078775-15298955) status check.
+- Once all is done, click Save, the monitor will be created and the ticket creation will be set for the [CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) status check.
 
 ## Target
 
 Dynamic Group: Cyrisma Deployment Failure Check
+
 
 
 

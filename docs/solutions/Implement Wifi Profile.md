@@ -18,35 +18,35 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
 
 | Content                                                                 | Type            | Function                                                                                               |
 |-------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - Execute Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16116790) | Internal Monitor | Executes the [Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355) script weekly against Windows 10 and 11 machines. |
-| [Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355) | Script          | Fetches data                                                                                          |
-| [Custom Table - pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849) | Custom Table    | Stores data                                                                                           |
-| [Dataview - Wi-Fi Profile - Audit [Script]](https://proval.itglue.com/DOC-5078775-12979850) | Dataview        | Displays data                                                                                         |
-| △ Custom - Execute Script - Get Wifi Profile                            | Alert Template   | Executes the script against the machines detected by the [Execute Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16116790) monitor set. |
+| [Internal Monitor - Execute Script - Get Wifi Profile](<../cwa/monitors/Execute Script - Get Wifi Profile.md>) | Internal Monitor | Executes the [Get Wifi Profile](<../cwa/scripts/Get Wifi Profile.md>) script weekly against Windows 10 and 11 machines. |
+| [Script - Get Wifi Profile](<../cwa/scripts/Get Wifi Profile.md>) | Script          | Fetches data                                                                                          |
+| [Custom Table - pvl_wifi_profiles](<../cwa/tables/pvl_wifi_profiles.md>) | Custom Table    | Stores data                                                                                           |
+| [Dataview - Wi-Fi Profile - Audit [Script]](<../cwa/dataviews/WiFi Profile - Audit Script.md>) | Dataview        | Displays data                                                                                         |
+| △ Custom - Execute Script - Get Wifi Profile                            | Alert Template   | Executes the script against the machines detected by the [Execute Script - Get Wifi Profile](<../cwa/monitors/Execute Script - Get Wifi Profile.md>) monitor set. |
 
 ## Automation
 
 | Content                                                                  | Type            | Function                                                                                               |
 |--------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - Wifi Profiles - Add](https://proval.itglue.com/DOC-5078775-16111358) | Internal Monitor | Detects the machines where approved Wifi profiles are not available.                                   |
+| [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) | Internal Monitor | Detects the machines where approved Wifi profiles are not available.                                   |
 | [Script - Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111356) | Script          | Adds and removes the Wifi profiles.                                                                    |
-| △ Custom - Execute Script - Implement Wifi Profile                       | Alert Template   | Executes the script against the machines detected by the [Wifi Profiles - Add](https://proval.itglue.com/DOC-5078775-16111358) monitor set. |
+| △ Custom - Execute Script - Implement Wifi Profile                       | Alert Template   | Executes the script against the machines detected by the [Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) monitor set. |
 
 ## Implementation
 
 1. Import the following scripts using the Prosync plugin:
-   - [Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355)
+   - [Script - Get Wifi Profile](<../cwa/scripts/Get Wifi Profile.md>)
    - [Script - Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111356)
 
 2. Import the following internal monitors using the Prosync plugin:
-   - [Internal Monitor - Execute Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16116790)
-   - [Internal Monitor - Wifi Profiles - Add](https://proval.itglue.com/DOC-5078775-16111358)
+   - [Internal Monitor - Execute Script - Get Wifi Profile](<../cwa/monitors/Execute Script - Get Wifi Profile.md>)
+   - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
 
 3. Import the following Alert Templates using the Prosync plugin:
    - △ Custom - Execute Script - Get Wifi Profile
    - △ Custom - Execute Script - Implement Wifi Profile
 
-4. Import the [Dataview - Wi-Fi Profile - Audit [Script]](https://proval.itglue.com/DOC-5078775-12979850) dataview using the Prosync plugin.
+4. Import the [Dataview - Wi-Fi Profile - Audit [Script]](<../cwa/dataviews/WiFi Profile - Audit Script.md>) dataview using the Prosync plugin.
 
 5. Reload the system cache:
    ![Reload System Cache](../../static/img/Implement-Wifi-Profile/image_15.png)
@@ -54,12 +54,13 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
 6. Configure the solution as outlined below:
    - Enable the desired monitors in the Workstation Service Plan groups.
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Execute Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16116790)
+     - [Internal Monitor - Execute Script - Get Wifi Profile](<../cwa/monitors/Execute Script - Get Wifi Profile.md>)
        - Alert Template: △ Custom - Execute Script - Get Wifi Profile
        - Right-click and Run Now to start the monitor
-     - [Internal Monitor - Wifi Profiles - Add](https://proval.itglue.com/DOC-5078775-16111358)
+     - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+
 
 
 

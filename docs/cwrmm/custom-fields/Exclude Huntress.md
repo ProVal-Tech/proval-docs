@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Select this custom Field to exclude a site from Huntress Deployment. It is being utilized by '[CW RMM - Device Group - Deploy Huntress](https://proval.itglue.com/DOC-5078775-15302736)' group.
+Select this custom Field to exclude a site from Huntress Deployment. It is being utilized by '[CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>)' group.
 
 # Create the Custom Field
 
@@ -23,6 +23,7 @@ Select this custom Field to exclude a site from Huntress Deployment. It is being
 **Level:** Site  
 **Description:** Select to Exclude Site from Huntress Deployment  
 **Editable:** Yes  
+
 
 
 

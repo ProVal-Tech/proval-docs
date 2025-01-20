@@ -12,7 +12,7 @@ unlisted: false
 
 Import a certificate to one or more local machine stores. The target certificate can be a .CER file, a .CRT file, or a self-signed cert that will be created.
 
-CW RMM implementation of [Import-LMCertificate](https://proval.itglue.com/DOC-5078775-10363458) agnostic script.
+CW RMM implementation of [Import-LMCertificate](<../../powershell/Import-LMCertificate.md>) agnostic script.
 
 ## Sample Run
 
@@ -27,7 +27,7 @@ To import a certificate placed in local folder:
 
 ## Dependencies
 
-[EPM - Windows Configuration - Import-LMCertificate](https://proval.itglue.com/DOC-5078775-10363458)
+[EPM - Windows Configuration - Import-LMCertificate](<../../powershell/Import-LMCertificate.md>)
 
 ## User Parameters
 
@@ -368,6 +368,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Script Log Output](../../../static/img/Import-LMCertificate/image_17.png)
+
 
 
 

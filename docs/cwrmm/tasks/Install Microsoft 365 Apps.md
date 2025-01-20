@@ -12,7 +12,7 @@ unlisted: false
 
 Installs Microsoft 365 Apps for Business or any Microsoft 365 install with XML config. You can use [https://config.office.com/](https://config.office.com/) to help build the config file. If no XML is provided Microsoft 365 Apps for business will install and be configured. XML Settings: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA.
 
-CW RMM Implementation of [Install-Microsoft365](https://proval.itglue.com/DOC-5078775-15393869)
+CW RMM Implementation of [Install-Microsoft365](<../../unsorted/SWM - Software Install - Install-Microsoft365.md>)
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ CW RMM Implementation of [Install-Microsoft365](https://proval.itglue.com/DOC-50
 
 ## Dependencies
 
-[SWM - Software Install - Install-Microsoft365](https://proval.itglue.com/DOC-5078775-15393869)
+[SWM - Software Install - Install-Microsoft365](<../../unsorted/SWM - Software Install - Install-Microsoft365.md>)
 
 ## User Parameters
 
@@ -177,6 +177,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

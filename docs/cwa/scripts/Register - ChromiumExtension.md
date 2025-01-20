@@ -30,7 +30,7 @@ If Setting all available browsers leave Target Blank.
 
 ## Dependencies
 
-- [SWM - Software Configuration - Register-ChromiumExtension](https://proval.itglue.com/DOC-5078775-10372099)
+- [SWM - Software Configuration - Register-ChromiumExtension](<../../powershell/Register-ChromiumExtension.md>)
 
 #### User Parameters
 
@@ -42,6 +42,7 @@ If Setting all available browsers leave Target Blank.
 ## Output
 
 - Script log
+
 
 
 

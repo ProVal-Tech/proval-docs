@@ -14,7 +14,7 @@ Displays all installed SQL instances found on an endpoint
 
 ## Dependencies
 
-- [CWM - Automate - Role - SQL_Instances](https://proval.itglue.com/DOC-5078775-12325244)
+- [CWM - Automate - Role - SQL_Instances](<../roles/SQL_Instances.md>)
 
 ## Columns
 
@@ -25,6 +25,7 @@ Displays all installed SQL instances found on an endpoint
 | ComputerName        | The name of the computer.                                                  |
 | CurrentlyDetected    | 0 if no SQL instances are detected, 1 if SQL instances are detected.       |
 | Versions-Editions   | The found versions and editions separated by a comma.                      |
+
 
 
 

@@ -14,7 +14,7 @@ unlisted: false
 Import the Alert Template ' `△ Custom - Ticket Creation Computer - Failures Only` '
 
 ### 2.
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854) script was imported as well and the alert template is executing this script for failures only.
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well and the alert template is executing this script for failures only.
 
 ### 3.
 Run this SQL query from a RAWSQL monitor set to create and set the remote monitor on the Domain Controllers group and limit to the server role - AD Infrastructure Master.
@@ -62,6 +62,7 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### 5.
 Assign the required alert template. It is suggested to use '`△ Custom - Ticket Creation Computer - Failures Only`' for the best results.
+
 
 
 

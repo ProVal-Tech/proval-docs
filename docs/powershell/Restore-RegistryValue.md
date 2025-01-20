@@ -14,7 +14,7 @@ Restores a backed up registry key property or registry key recursively when back
 
 ## Requirements
 
-1. [EPM - Windows Configuration - Agnostic - Script - Backup-RegistryValue](https://proval.itglue.com/DOC-5078775-10441514) must have been used to back up that value.
+1. [EPM - Windows Configuration - Agnostic - Script - Backup-RegistryValue](<./Backup-RegistryValue.md>) must have been used to back up that value.
 2. Must be run with Admin Rights.
 
 ## Process
@@ -61,6 +61,7 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM                      |                                          |
 | Kaseya                               |                                          |
 | Datto RMM                            |                                          |
+
 
 
 

@@ -20,7 +20,7 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 
 ## Dependencies
 
-[CWM - Internal Monitor - ProVal - Client Specific - Auto Close - Missing Patch Tickets](https://proval.itglue.com/DOC-5078775-12589460)
+[CWM - Internal Monitor - ProVal - Client Specific - Auto Close - Missing Patch Tickets](<../monitors/Missing Patch Tickets.md>)
 
 ## Variables
 
@@ -29,6 +29,7 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
 | SQLTicketid | Ticketid to finish/close                         |
+
 
 
 

@@ -14,9 +14,9 @@ This Dataview is meant to display comparative results of the online status of ag
 
 ## Dependencies
 
-- [EPM - Data Collection - Solution - Get - CW-ControlAPI-Online Status](https://proval.itglue.com/DOC-5078775-9004336)
-- [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](https://proval.itglue.com/DOC-5078775-9912233)
-- [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](https://proval.itglue.com/DOC-5078775-9912293)
+- [EPM - Data Collection - Solution - Get - CW-ControlAPI-Online Status](<../../solutions/Get - CW-ControlAPI-Online Status.md>)
+- [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](<../scripts/Get - CW-ControlAPI - Online Status.md>)
+- [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](<../tables/plugin_proval_control_session_status.md>)
 
 ## Columns
 
@@ -50,6 +50,7 @@ FROM
   LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
   LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
 ```
+
 
 
 

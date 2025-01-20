@@ -22,9 +22,9 @@ Target: Any machine with CW Control installed for setting up the properties.
 
 ## Dependencies
 
-- [CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217)
+- [CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
 - [Restrict Vendor Access to Clients](https://proval.itglue.com/DOC-5078775-8324532)
-- [CWM - Automate - Internal Monitor - Automatically Restrict Vendor Machines in SC](https://proval.itglue.com/DOC-5078775-15436510)
+- [CWM - Automate - Internal Monitor - Automatically Restrict Vendor Machines in SC](<../monitors/Automatically Restrict Vendor Machines in SC.md>)
 
 #### Variables
 
@@ -58,6 +58,7 @@ Target: Any machine with CW Control installed for setting up the properties.
 ## Output
 
 Script log messages only.
+
 
 
 

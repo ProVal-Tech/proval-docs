@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-The internal monitor detects Windows computers where the local admin group cleanup process is enabled, but the [Local Admin Group Cleanup - Add/Remove](https://proval.itglue.com/DOC-5078775-16783511) script has not been executed in the past 7 days.
+The internal monitor detects Windows computers where the local admin group cleanup process is enabled, but the [Local Admin Group Cleanup - Add/Remove](<../scripts/Local Admin Group Cleanup - AddRemove.md>) script has not been executed in the past 7 days.
 
 ## Dependencies
 
-[EPM - User Management - Script - Local Admin Group Cleanup - Add/Remove](https://proval.itglue.com/DOC-5078775-16783511)
+[EPM - User Management - Script - Local Admin Group Cleanup - Add/Remove](<../scripts/Local Admin Group Cleanup - AddRemove.md>)
 
 ## Target
 
@@ -23,6 +23,7 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Local Admin Group Cleanup`
+
 
 
 

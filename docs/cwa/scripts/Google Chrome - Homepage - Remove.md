@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-It is an Automate implementation of the [SWM - Software Configuration - Remove-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372205) agnostic script to remove the registry policy for an enforced homepage in Google Chrome.
+It is an Automate implementation of the [SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>) agnostic script to remove the registry policy for an enforced homepage in Google Chrome.
 
 ## Sample Run
 
@@ -18,11 +18,12 @@ It is an Automate implementation of the [SWM - Software Configuration - Remove-C
 
 ## Dependencies
 
-[SWM - Software Configuration - Remove-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372205)
+[SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>)
 
 ## Output
 
 - Script Logs
+
 
 
 

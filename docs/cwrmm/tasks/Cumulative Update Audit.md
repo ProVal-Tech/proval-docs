@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Executes a PowerShell script to validate the full version of the OS and compares that with Microsoft's database of Windows 10/11 Cumulative Updates to validate which cumulative the device has. The data is then formatted and stored in [CW RMM - Custom Field - Latest Cumulative Update](https://proval.itglue.com/DOC-5078775-14029450) Custom Field for further auditing and monitoring purposes.
+Executes a PowerShell script to validate the full version of the OS and compares that with Microsoft's database of Windows 10/11 Cumulative Updates to validate which cumulative the device has. The data is then formatted and stored in [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>) Custom Field for further auditing and monitoring purposes.
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ Executes a PowerShell script to validate the full version of the OS and compares
 
 ## Dependencies
 
-[CW RMM - Custom Field - Latest Cumulative Update](https://proval.itglue.com/DOC-5078775-14029450)
+[CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
 
 ## Variables
 
@@ -30,7 +30,7 @@ Executes a PowerShell script to validate the full version of the OS and compares
 
 ## Implementation
 
-Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](https://proval.itglue.com/DOC-5078775-14029450)
+Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
 
 ### Create Script
 
@@ -256,6 +256,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 ![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
+
 
 
 

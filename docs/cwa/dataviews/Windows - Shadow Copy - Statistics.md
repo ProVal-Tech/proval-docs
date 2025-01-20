@@ -14,8 +14,8 @@ This dataview will display Windows Shadow Copy statistics for endpoints with Sha
 
 ## Dependencies
 
-Script: [Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)  
-Custom table: [EPM - Windows Configuration - Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668)  
+Script: [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)  
+Custom table: [EPM - Windows Configuration - Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)  
 
 ## Columns
 
@@ -32,6 +32,7 @@ Custom table: [EPM - Windows Configuration - Custom Table - plugin_proval_shadow
 | ShadowCopyCount    | The number of Shadow Copies on the machine                          |
 | OldestShadowCopy   | The oldest available Shadow Copy date                               |
 | LatestShadowCopy   | The most recent available Shadow Copy date                          |
+
 
 
 

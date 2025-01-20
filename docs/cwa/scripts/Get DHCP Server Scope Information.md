@@ -21,11 +21,12 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - Runs PowerShell command to gather DHCP information from a target server
-- Creates the [plugin_proval_dhcp_statistics](https://proval.itglue.com/DOC-5078775-8038845) table if it does not exist.
+- Creates the [plugin_proval_dhcp_statistics](<../tables/plugin_proval_dhcp_statistics.md>) table if it does not exist.
 
 ## Output
 
 - Table plugin_proval_dhcp_statistics
+
 
 
 

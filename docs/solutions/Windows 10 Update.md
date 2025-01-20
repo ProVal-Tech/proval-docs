@@ -21,15 +21,15 @@ This solution handles the process of updating a Windows 10 machine to the latest
 
 | Content                                                                                                                                              | Type              | Function                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](https://proval.itglue.com/DOC-5078775-9746809)                             | Custom Table      | For reporting on update statuses.                                                                  |
+| [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](<../cwa/tables/plugin_proval_windows10_upgradestats.md>)                             | Custom Table      | For reporting on update statuses.                                                                  |
 | [EPM - Agnostic - Prompt-User](https://proval.itglue.com/DOC-5078775-9580402)                                                                    | Agnostic Script    | For producing pop up messages.                                                                     |
-| [EPM - Data Collection - Script - User-Show-PromptMessage](https://proval.itglue.com/DOC-5078775-9739032)                                        | CWA Script        | For implementing Prompt-User agnostic script.                                                    |
-| [SEC - Windows Patching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713)                                            | Agnostic Script    | For updating windows.                                                                              |
+| [EPM - Data Collection - Script - User-Show-PromptMessage](<../cwa/scripts/User Prompt - Show.md>)                                        | CWA Script        | For implementing Prompt-User agnostic script.                                                    |
+| [SEC - Windows Patching - Agnostic - Update-Windows10](<../powershell/Update-Windows10.md>)                                            | Agnostic Script    | For updating windows.                                                                              |
 | [SEC - Windows Patching - Script - Windows 10 - Feature Update - Install Latest](https://proval.itglue.com/DOC-5078775-9744053)                 | CWA Script        | For implementing the update-windows10 agnostic script, setting up tables, creating groups, adding machines to that group, and implementing the CWA user-show-promptmessage script. |
-| [EPM - Data Collection - Script - Remote Event Log Monitor - Create](https://proval.itglue.com/DOC-5078775-9742626)                               | CWA Script        | For setting up a monitor on a group of computers who have received the update-windows10 script.   |
-| [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](https://proval.itglue.com/DOC-5078775-9747193)                             | CWA Autofix Action Script | For importing data to the custom table and removing machines from created group.                  |
-| [CWM - Automate - Script - Prompter](https://proval.itglue.com/DOC-5078775-10243074)                                                             | CWA Script        | Used when using Prompter prompting option.                                                         |
-| [Prompter](https://proval.itglue.com/DOC-5078775-10224100)                                                                                       | Agnostic application | Prompter application.                                                                              |
+| [EPM - Data Collection - Script - Remote Event Log Monitor - Create](<../cwa/scripts/Remote Event Log Monitor - Create.md>)                               | CWA Script        | For setting up a monitor on a group of computers who have received the update-windows10 script.   |
+| [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](<../cwa/scripts/Windows 10 Update Stats - Retrieve.md>)                             | CWA Autofix Action Script | For importing data to the custom table and removing machines from created group.                  |
+| [CWM - Automate - Script - Prompter](<../cwa/scripts/Prompter.md>)                                                             | CWA Script        | Used when using Prompter prompting option.                                                         |
+| [Prompter](<../cwa/scripts/Prompter.md>)                                                                                       | Agnostic application | Prompter application.                                                                              |
 | - Alert Template:\<ul>\<li>Name : △ Autofix - Start Windows 10 Build upgrade\</li>\</ul>                                                            | Alert Template    | Created to call Windows 10 - Feature Update - Install Latest between 1 and 3 am daily            |
 
 ## Implementation
@@ -63,6 +63,7 @@ For a manual run:
 
 4. The Windows 10 - Feature Update - Install Latest script is failing at line 13.
    - Please add the Windows 10 - Update Stats - Retrieve script to your automate implementation.
+
 
 
 

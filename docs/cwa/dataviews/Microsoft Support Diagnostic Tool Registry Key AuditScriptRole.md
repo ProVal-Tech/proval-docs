@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-This dataview tracks the progress of the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](https://proval.itglue.com/DOC-5078775-10072208) script and [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](https://proval.itglue.com/DOC-5078775-10072205) monitor set.
+This dataview tracks the progress of the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script and [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<../monitors/Microsoft Support Diagnostic Tool Vulnerability G.md>) monitor set.
 
 ## Dependencies
 
-- [MS-MSDT Registry Key](https://proval.itglue.com/DOC-5078775-10072204)
-- [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](https://proval.itglue.com/DOC-5078775-10072205)
-- [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](https://proval.itglue.com/DOC-5078775-10072208)
-- [CVE-2022-30190 MSDT - Workarounds](https://proval.itglue.com/DOC-5078775-10073331)
+- [MS-MSDT Registry Key](<../roles/MS-MSDT Registry Key.md>)
+- [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<../monitors/Microsoft Support Diagnostic Tool Vulnerability G.md>)
+- [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>)
+- [CVE-2022-30190 MSDT - Workarounds](<../../solutions/CVE-2022-30190 MSDT Vulnerability - Workarounds.md>)
 
 ## Columns
 
@@ -31,6 +31,7 @@ This dataview tracks the progress of the [Workaround - Microsoft Support Diagnos
 | lastcontact                  | lastcontact                                                                                              |
 | MS-MSDT Registry Status      | Value of the script state, MS-MSDT Registry Status                                                     |
 | MS-MSDT Registry Key Role    | Whether the role is active, inactive, or if it's never detected.  Active: The registry key is currently present on the computer.  Inactive: The registry key was once present on the computer, but the script had removed that.  Not Detected: Either the registry key was not present on the computer from the very beginning or somehow the computer is not accepting the role. |
+
 
 
 

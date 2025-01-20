@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script conducts an audit of the computer for applications supported by Winget and stores the information in a custom table called [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960). It retrieves data for both system-level and user-level applications. However, user-level application data will not be retrieved if there are no logged-in users on the computer.
+The script conducts an audit of the computer for applications supported by Winget and stores the information in a custom table called [pvl_winget_audit](<../tables/pvl_winget_audit.md>). It retrieves data for both system-level and user-level applications. However, user-level application data will not be retrieved if there are no logged-in users on the computer.
 
 ## File Hash
 
@@ -24,7 +24,7 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## Sample Run
 
-First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) table used by the solution.  
+First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table used by the solution.  
 ![First Run](../../../static/img/Winget-App-Audit/image_1.png)
 
 Regular execution:  
@@ -32,8 +32,8 @@ Regular execution:
 
 ## Dependencies
 
-- [SWM - Software Update - Internal Monitor - Execute Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973897)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+- [SWM - Software Update - Internal Monitor - Execute Script - Winget App Audit](<../monitors/Execute Script - Winget App Audit.md>)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
 
@@ -43,19 +43,20 @@ Regular execution:
 | workingDirectory   | C:/ProgramData/_automation/script/Get-WingetReport |
 | scriptPath        | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.ps1 |
 | jsonPath          | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.json |
-| tableName         | [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) |
+| tableName         | [pvl_winget_audit](<../tables/pvl_winget_audit.md>) |
 
 ## User Parameters
 
 | Name              | Example | Required                      | Description                                                                                          |
 |-------------------|---------|-------------------------------|------------------------------------------------------------------------------------------------------|
-| Set_Environment    | 1       | True (for first execution)    | Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960) table used by the solution. |
+| Set_Environment    | 1       | True (for first execution)    | Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table used by the solution. |
 
 ## Output
 
 - Script log
 - Custom table
 - Dataview
+
 
 
 

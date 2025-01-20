@@ -14,7 +14,7 @@ Two views to contain agents that are or are not compatible with ProVal content.
 
 # Dependencies
 
-All content in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](https://proval.itglue.com/DOC-5078775-11409315)
+All content in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>)
 
 # View Filters
 
@@ -29,6 +29,7 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliancy]
 | Filter Name                       | Advanced Filter? | Filter Value   |
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Compatible Endpoint   | Y                | NOT "Compatible" |
+
 
 
 

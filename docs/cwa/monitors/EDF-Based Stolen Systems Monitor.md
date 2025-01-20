@@ -10,17 +10,18 @@ unlisted: false
 ---
 ## Summary
 
-Executes the [SEC - Encryption - Script - Lock Stolen System](https://proval.itglue.com/DOC-5078775-7798917) script against the machines where the `Mark System As Stolen` EDF is marked and starts checking back with Automate.
+Executes the [SEC - Encryption - Script - Lock Stolen System](<../scripts/Lock Stolen System.md>) script against the machines where the `Mark System As Stolen` EDF is marked and starts checking back with Automate.
 
 ## Dependencies
 
-[SEC - Encryption - Script - Lock Stolen System](https://proval.itglue.com/DOC-5078775-7798917)
+[SEC - Encryption - Script - Lock Stolen System](<../scripts/Lock Stolen System.md>)
 
 ## Target
 
 `Marked as Stolen` Group
 
 ![Image](../../../static/img/EDF-Based-Stolen-Systems-Monitor/image_1.png)
+
 
 
 

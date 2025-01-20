@@ -10,7 +10,7 @@ unlisted: false
 ---
 # Summary
 
-Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](https://proval.itglue.com/DOC-5078775-11262292)
+Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../procedures/Automation Time Saved Reports.md>)
 
 # Dependencies
 
@@ -19,7 +19,7 @@ Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation
 # Details
 
 - **Policy Name**: Automation Time Saved Report (VSA Server, API Call)
-- **Policy Description**: Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](https://proval.itglue.com/DOC-5078775-11262292)
+- **Policy Description**: Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../procedures/Automation Time Saved Reports.md>)
 - **Applied View**: xPVAL VSA Server
 - **Assigned Organizations / Machine Groups**: NA
 - **Assigned Machines**: NA
@@ -27,6 +27,7 @@ Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation
   - **Policy Object Name**: Agent Procedures
     - **Policy Object Members**: Automation Time Saved Reports
       - **Policy Object Member Settings**: Monthly, Last Day, Midnight, Do not skip if offline
+
 
 
 

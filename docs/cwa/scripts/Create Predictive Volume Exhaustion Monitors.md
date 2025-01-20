@@ -18,8 +18,8 @@ This script is used to generate volume space monitors on the target machine for 
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-VolumeExhaustionEstimate](https://proval.itglue.com/DOC-5078775-9652826)
-- [EPM - Disk - Agnostic - Get-VolumeThresholds](https://proval.itglue.com/DOC-5078775-9647494)
+- [EPM - Disk - Agnostic - Get-VolumeExhaustionEstimate](<../../powershell/Get-VolumeExhaustionEstimate.md>)
+- [EPM - Disk - Agnostic - Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>)
 - PowerShell v5
 
 ## Variables
@@ -57,9 +57,9 @@ This script is used to generate volume space monitors on the target machine for 
 The script writes and passes the required variables to the Execute Script step. The following processes occur in the Execute Script step:
 
 1. Variables are validated and written to a hashtable.
-2. The script [Get-VolumeThresholds](https://proval.itglue.com/DOC-5078775-9647494) is downloaded.
+2. The script [Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>) is downloaded.
    - If the script fails to download and an existing copy does not exist then a failure is logged.
-3. The script [Get-VolumeThresholds](https://proval.itglue.com/DOC-5078775-9647494) is executed with the parameter hashtable [splatted](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7.2) in.
+3. The script [Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>) is executed with the parameter hashtable [splatted](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7.2) in.
 4. The return object is looped through to create INSERT or UPDATE statements based on the ExistingMonitors variable.
    - If the script would produce an INSERT statement for a monitor that has the same name as an existing monitor, then an UPDATE statement is produced instead.
 5. The set of SQL queries is returned back out to the Automate script.
@@ -70,6 +70,7 @@ The script writes and passes the required variables to the Execute Script step. 
 
 - Script log
 - Local file on computer
+
 
 
 

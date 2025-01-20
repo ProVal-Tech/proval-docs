@@ -30,11 +30,12 @@ Managed Windows Computers
 
 ## Dependencies
 
-[EPM - Windows Configuration - Dataview - NTLMv1.1 Status [Remote Monitor]](https://proval.itglue.com/DOC-5078775-14448790)
+[EPM - Windows Configuration - Dataview - NTLMv1.1 Status [Remote Monitor]](<../dataviews/NTLMv1.1 Status Remote Monitor.md>)
 
 ## How to Import
 
-[Import - Remote Monitor - NTLMv1.1 Detection](https://proval.itglue.com/DOC-5078775-14448845)
+[Import - Remote Monitor - NTLMv1.1 Detection](<./NTLMv1.1 Detection.md>)
+
 
 
 

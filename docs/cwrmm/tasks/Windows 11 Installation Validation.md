@@ -19,9 +19,9 @@ Check and confirm the Windows 11 installation status after running the Windows 1
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](https://proval.itglue.com/DOC-5078775-15835393)
-- [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](https://proval.itglue.com/DOC-5078775-15835400)
-- [CW RMM - Device Group - Windows 11 Upgrade Validation](https://proval.itglue.com/DOC-5078775-15835385)
+- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](<../custom-fields/Endpoint - Windows 11 Upgrade RunTime.md>)
+- [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](<../custom-fields/Endpoint - Windows 11 Upgrade Failed.md>)
+- [CW RMM - Device Group - Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
 - [CW RMM - Task - Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365)
 
 ## Variables
@@ -132,7 +132,7 @@ Click the `Save` button at the top-right corner of the screen to save the task.
 
 ## Deployment
 
-The task should be scheduled to run once per day against the [Windows 11 Upgrade Validation](https://proval.itglue.com/DOC-5078775-15835385) device group.
+The task should be scheduled to run once per day against the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.
 
 - Go to `Automation` > `Tasks`.
 - Search for `Windows 11 Installation Validation` Task.
@@ -151,7 +151,7 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 ![Every Day Recurrence](../../../static/img/Windows-11-Installation-Validation/image_27.png)  
 - Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Windows-11-Installation-Validation/image_28.png)  
-- Search and Select the [Windows 11 Upgrade Validation](https://proval.itglue.com/DOC-5078775-15835385) device group.  
+- Search and Select the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.  
 ![Select Device Group](../../../static/img/Windows-11-Installation-Validation/image_29.png)  
 - Now click the `Run` button to initiate the task.  
 ![Run Button](../../../static/img/Windows-11-Installation-Validation/image_30.png)  
@@ -163,6 +163,7 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 
 - Script Log
 - Custom Field
+
 
 
 

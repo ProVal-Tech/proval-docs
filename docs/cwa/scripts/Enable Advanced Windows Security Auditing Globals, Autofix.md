@@ -22,7 +22,7 @@ In addition to attempting to enable Advanced Windows Security Auditing, the scri
 
 ## Dependencies
 
-[CWM - Automate - Remote Monitor - Enable Advanced Windows Security Auditing](https://proval.itglue.com/DOC-5078775-12413446)
+[CWM - Automate - Remote Monitor - Enable Advanced Windows Security Auditing](<../monitors/Enable Advanced Windows Security Auditing.md>)
 
 ## Variables
 
@@ -46,6 +46,7 @@ In addition to attempting to enable Advanced Windows Security Auditing, the scri
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Enable-Advanced-Windows-Security-Auditing-Globals,-Autofix/image_3.png)
+
 
 
 

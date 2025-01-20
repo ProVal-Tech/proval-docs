@@ -16,11 +16,12 @@ Suggest restarting the agent, services, and/or Automate Server and investigate r
 
 ## Dependency
 
-[Agent - Command - Delete Running](https://proval.itglue.com/DOC-5078775-11623783)
+[Agent - Command - Delete Running](<../scripts/CWM - Automate - Agent - Command - Delete Running.md>)
 
 ## Target
 
 - Global
+
 
 
 

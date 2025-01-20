@@ -18,7 +18,7 @@ Both Windows and MAC machines
 
 ## Sample Run
 
-The script is intended to run as an auto-fix with the internal monitor [CWC - Internal Monitor - Outdated Screenconnect Version](https://proval.itglue.com/DOC-5078775-13978385) so the agent gets updated automatically.
+The script is intended to run as an auto-fix with the internal monitor [CWC - Internal Monitor - Outdated Screenconnect Version](<../monitors/Outdated Screenconnect Version.md>) so the agent gets updated automatically.
 
 ## Global Parameters
 
@@ -28,7 +28,7 @@ The script is intended to run as an auto-fix with the internal monitor [CWC - In
 
 ## Dependencies
 
-[CWC - Internal Monitor - Outdated Screenconnect Version](https://proval.itglue.com/DOC-5078775-13978385)
+[CWC - Internal Monitor - Outdated Screenconnect Version](<../monitors/Outdated Screenconnect Version.md>)
 
 ## Output
 
@@ -46,6 +46,7 @@ To enable the ticketing on failure, the ticket category must be set in the globa
 If screen connect service fails to start after running the installation:
 
 `The script tried to run the installer but could not find the screen connect service on the machine anymore. Run the CW control repair script to resolve the issue.`
+
 
 
 

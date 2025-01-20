@@ -38,11 +38,12 @@ PCs Affected: PC-2,PC-19,PC-3
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)  
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)  
 
 ## Target
 
 Global
+
 
 
 

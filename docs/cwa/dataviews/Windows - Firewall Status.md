@@ -15,9 +15,9 @@ This dataview will display information related to Windows firewall configuration
 ## Dependencies
 
 Roles:  
-- [Windows Firewall Public](https://proval.itglue.com/DOC-5078775-7920828)  
-- [Windows Firewall Domain](https://proval.itglue.com/DOC-5078775-8014764)  
-- [Windows Firewall Private](https://proval.itglue.com/DOC-5078775-7970600)  
+- [Windows Firewall Public](<../roles/Windows Firewall Public.md>)  
+- [Windows Firewall Domain](<../roles/Windows Firewall Domain.md>)  
+- [Windows Firewall Private](<../roles/Windows Firewall Private.md>)  
 
 ## Columns
 
@@ -29,6 +29,7 @@ Roles:
 | Domain Firewall Status     | The status (Enabled|Disabled) for the "Domain" network firewall             |
 | Private Firewall Status    | The status (Enabled|Disabled) for the "Private" network firewall            |
 | Public Firewall Status     | The status (Enabled|Disabled) for the "Public" network firewall             |
+
 
 
 

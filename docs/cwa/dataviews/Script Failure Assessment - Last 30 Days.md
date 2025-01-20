@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-This Dataview is similar to the [Script Failure Assessment](https://proval.itglue.com/DOC-5078775-16132491) with the key difference being that it provides a detailed analysis of script failures over the past 30 days. In contrast, the [Script Failure Assessment](https://proval.itglue.com/DOC-5078775-16132491) relies on the retention period specified in the `Scripts` property on the dashboard. This Dataview was created to address the limitation of the `Scripts` property retention, which is often set to just `7` days, making it challenging to assess script failures over a month.
+This Dataview is similar to the [Script Failure Assessment](<./Script Failure Assessment.md>) with the key difference being that it provides a detailed analysis of script failures over the past 30 days. In contrast, the [Script Failure Assessment](<./Script Failure Assessment.md>) relies on the retention period specified in the `Scripts` property on the dashboard. This Dataview was created to address the limitation of the `Scripts` property retention, which is often set to just `7` days, making it challenging to assess script failures over a month.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](https://proval.itglue.com/DOC-5078775-16804995)
-- [CWM - Automate - Custom Table - pvl_Script_Assesment](https://proval.itglue.com/DOC-5078775-16804952)
+- [CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](<../scripts/Script Failure Analysis - 30 Day Retention.md>)
+- [CWM - Automate - Custom Table - pvl_Script_Assesment](<../tables/pvl_Script_Assesment.md>)
 
 ## Columns
 
@@ -40,6 +40,7 @@ This Dataview is similar to the [Script Failure Assessment](https://proval.itglu
 | First Failure Date           | First Failure Date                                                                                 |
 | Last Failure Date            | Last Failure Date                                                                                  |
 | Time Period Days             | Number of days since the data collection started                                                   |
+
 
 
 

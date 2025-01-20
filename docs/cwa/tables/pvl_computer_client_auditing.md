@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-It's a temporary table created by [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](https://proval.itglue.com/DOC-5078775-12597806) script to keep the tag of the machines jumping from one client to another.
+It's a temporary table created by [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>) script to keep the tag of the machines jumping from one client to another.
 
 ## Dependencies
 
-[CWM - Automate - Script - Agents Migration Monitoring - Client-Level](https://proval.itglue.com/DOC-5078775-12597806)
+[CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>)
 
 ## Tables
 
@@ -25,6 +25,7 @@ It's a temporary table created by [CWM - Automate - Script - Agents Migration Mo
 | Computerid  | int(8)  | Computerid     |
 | Clientid    | int(8)  | Clientid       |
 | Timestamp   | datetime | Script Run Time |
+
 
 
 

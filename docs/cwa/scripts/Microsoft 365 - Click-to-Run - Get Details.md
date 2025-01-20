@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel. It then stores this information in the custom table [pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846).
+This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel. It then stores this information in the custom table [pvl_m365_update_channel_audit](<../../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>).
 
 File Path: `C:/ProgramData/_Automation/Script/Get-M365UpdateChannel/Get-M365UpdateChannel.ps1`  
 File Hash (SHA256): `1CAED911E914A8F8C9EBA29D244459F4DA2B09780EB8ED720FB55F2519E06D19`  
@@ -34,7 +34,7 @@ File Hash (MD5): `E58115561CA743E1D9BCF56CAF13C839`
 
 ![Client Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_3.png)
 
-**Note:** The EDF is used by [Microsoft 365 - Set Update Channel - Current](https://proval.itglue.com/DOC-5078775-8181470) script and [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734) internal monitor.
+**Note:** The EDF is used by [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734) internal monitor.
 
 ## Computer Level EDF
 
@@ -44,13 +44,14 @@ File Hash (MD5): `E58115561CA743E1D9BCF56CAF13C839`
 
 ![Computer Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_4.png)
 
-**Note:** The EDF is used by [Microsoft 365 - Set Update Channel - Current](https://proval.itglue.com/DOC-5078775-8181470) script and [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734) internal monitor.
+**Note:** The EDF is used by [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734) internal monitor.
 
 ## Output
 
 - Script log
 - Custom Table
 - Dataview
+
 
 
 

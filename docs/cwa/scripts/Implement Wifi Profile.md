@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-This script is an Automate implementation of the [Add-WifiProfile](https://proval.itglue.com/DOC-5078775-16088530) and [Remove-WifiProfile](https://proval.itglue.com/DOC-5078775-16088533) agnostic scripts.
+This script is an Automate implementation of the [Add-WifiProfile](<../../powershell/Add-WifiProfile.md>) and [Remove-WifiProfile](<../../powershell/Remove-WifiProfile.md>) agnostic scripts.
 
 The script can both remove and add Wi-Fi profiles on the targeted machines. To initiate removal, the names of the desired Wi-Fi profiles are to be supplied to the script parameter named `Profiles_To_Remove`. Conversely, for adding profiles, the respective profile names should be provided to the `Profiles_To_Add` parameter.
 
 It is important to note that the addition of profiles can also be managed through the Client/Location level EDFs, as further elucidated in this document.
 
-**Note:** Run the [Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355) script with the `Set_Environment` set to `1` to create the system properties and EDFs used by this script.
+**Note:** Run the [Get Wifi Profile](<./Get Wifi Profile.md>) script with the `Set_Environment` set to `1` to create the system properties and EDFs used by this script.
 
 ![Image](../../../static/img/Implement-Wifi-Profile/image_1.png)
 
@@ -41,7 +41,7 @@ It is important to note that the addition of profiles can also be managed throug
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355)
+[EPM - Windows Configuration - Script - Get Wifi Profile](<./Get Wifi Profile.md>)
 
 ## Variables
 
@@ -93,7 +93,7 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 | Name                | Example                                          | Required | Description                                                                                                                                                                                                                                               |
 |---------------------|--------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Exclude From Wifi Profile Addition | Check Box                                   | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](https://proval.itglue.com/DOC-5078775-14020258) monitor set detections.                              |
+| Exclude From Wifi Profile Addition | Check Box                                   | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](<../monitors/Add - Wifi Profiles.md>) monitor set detections.                              |
 
 ![Image](../../../static/img/Implement-Wifi-Profile/image_14.png)
 
@@ -101,6 +101,7 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
+
 
 
 

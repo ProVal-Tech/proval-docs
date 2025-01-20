@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script collects the Webroot hashed keycode from the machine and further matches it with the keycode setup in the Webroot plugin and the keycode present on the machine. We can either review the results in the [Dataview - Webroot KeyCode Audit [Script]](https://proval.itglue.com/DOC-5078775-8105261), or this also creates a ticket for a keycode mismatch with the [Monitor - Execute Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-14989291), when the monitor has a ticket category set.
+This script collects the Webroot hashed keycode from the machine and further matches it with the keycode setup in the Webroot plugin and the keycode present on the machine. We can either review the results in the [Dataview - Webroot KeyCode Audit [Script]](<../dataviews/Webroot KeyCode AuditScript.md>), or this also creates a ticket for a keycode mismatch with the [Monitor - Execute Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-14989291), when the monitor has a ticket category set.
 
 ## Sample Run
 
@@ -33,6 +33,7 @@ Webroot SecureAnyWhere with Utility Plugin
 - Script log
 - EDF
 - Dataview
+
 
 
 

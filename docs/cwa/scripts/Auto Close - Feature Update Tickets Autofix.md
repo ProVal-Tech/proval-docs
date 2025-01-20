@@ -23,7 +23,7 @@ Affected ticket subjects:
 
 ## Dependencies
 
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 - [CWM - Automate - Internal Monitor - ProVal - Client Specific - Auto Close - Feature Update Tickets](https://proval.itglue.com/DOC-5078775-12579658)
 
 ## Variables
@@ -33,6 +33,7 @@ Affected ticket subjects:
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticketid to finish/close                       |
+
 
 
 

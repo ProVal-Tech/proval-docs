@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script will gather the KBIDs from [New Patch Deny Process](https://proval.itglue.com/DOC-5078775-8524500) and deny the patches listed.
+The script will gather the KBIDs from [New Patch Deny Process](<../../unsorted/New Patch Deny Process.md>) and deny the patches listed.
 
 Time saved by automation: 20 Minutes
 
@@ -41,6 +41,7 @@ Step 4: The script will fetch the hotfix ID for each KBID and will deny those ho
 ## Output
 
 Output can be checked from the Approval section of the patch manager.
+
 
 
 

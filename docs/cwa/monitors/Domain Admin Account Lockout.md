@@ -27,7 +27,7 @@ This remote monitor is configured to detect when the domain admin account is loc
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)  
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)  
 `△ Custom - Ticket Creation Computer - Failures Only`
 
 ## Target
@@ -53,7 +53,8 @@ Domain Admin Locked Account Detected on %computername%. Refer to the below detai
 
 Please follow the below implementation document to install this content:
 
-- [Implement - Remote Monitor - Domain Admin Account Lockout](https://proval.itglue.com/DOC-5078775-16951789)
+- [Implement - Remote Monitor - Domain Admin Account Lockout](<./Implement - Remote Monitor - Domain Admin Account Lockout.md>)
+
 
 
 

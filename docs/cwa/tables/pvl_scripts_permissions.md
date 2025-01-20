@@ -14,7 +14,7 @@ Stores the GUID and the set of user class(es) for Built-In scripts.
 
 ## Dependencies
 
-[CWM - Automate - Solution - Script Permission Standardization [Beta]](https://proval.itglue.com/DOC-5078775-16760863)
+[CWM - Automate - Solution - Script Permission Standardization [Beta]](<../../solutions/Script Permission Standardization Beta.md>)
 
 ## Tables
 
@@ -27,6 +27,7 @@ Stores the GUID and the set of user class(es) for Built-In scripts.
 | Developer            | varchar | Creator of the script (Stock or ProVal). The beta version of the solution is limited to the stock scripts. |
 | InitialPermission     | varchar | Existing view permission of the script.                                                          |
 | InitialEditPermission | varchar | Existing Edit Permission of the script.                                                           |
+
 
 
 

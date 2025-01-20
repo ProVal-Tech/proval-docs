@@ -18,9 +18,9 @@ Sample Screenshot:
 
 ![Sample Screenshot](../../../static/img/Windows-10-Version-Metrics-+-Filters-+-Client-Filters/image_1.png)
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)  
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)  
 [CWM - Automate - View - plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/DOC-5078775-9373661)  
-[Create View plugin_proval_v_windows_10_version_metrics*](https://proval.itglue.com/DOC-5078775-10101234)
+[Create View plugin_proval_v_windows_10_version_metrics*](<../scripts/Create View plugin_proval_v_windows_10_version_metrics.md>)
 
 ## Columns
 
@@ -43,6 +43,7 @@ Sample Screenshot:
 | % Supported Machines              | varchar(27)     | Either 100 or 0 for the releaseid row depending upon whether the concerned releaseid is supported till today or not. For the Summary row, it's the percentage of the supported windows 10 out of all the available windows 10 machines. |
 | % Unsupported Machines            | varchar(31)     | Either 0 or 100 for the releaseid row depending upon whether the concerned releaseid is supported till today or not. For the Summary row, it's the percentage of the unsupported windows 10 out of all the available windows 10 machines. |
 | Build                             | varchar(60)     | Build Number for the concerned releaseid. e.g, 10.0.19044, 10.0.19043. It will Show 'Windows 10' for the Summary Row.                                                                                     |
+
 
 
 

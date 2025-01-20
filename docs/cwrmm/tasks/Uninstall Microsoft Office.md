@@ -12,7 +12,7 @@ unlisted: false
 
 Allows the uninstallation of Microsoft Office products via OffScrub. Accepted Versions: All, 2003, 2007, 2010, 2013, 2016, and C2R. Leaving the parameter blank will remove all installed versions.
 
-CW RMM implementation of [Invoke-OfficeScrub](https://proval.itglue.com/DOC-5078775-7593306) agnostic script.
+CW RMM implementation of [Invoke-OfficeScrub](<../../powershell/Invoke-OfficeScrub.md>) agnostic script.
 
 ## Sample Run
 
@@ -30,7 +30,7 @@ CW RMM implementation of [Invoke-OfficeScrub](https://proval.itglue.com/DOC-5078
 
 ## Dependencies
 
-[SWM - Software Uninstall - Invoke-OfficeScrub](https://proval.itglue.com/DOC-5078775-7593306)
+[SWM - Software Uninstall - Invoke-OfficeScrub](<../../powershell/Invoke-OfficeScrub.md>)
 
 ## User Parameters
 
@@ -206,6 +206,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

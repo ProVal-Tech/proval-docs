@@ -15,7 +15,7 @@ Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk In
 ## Dependencies
 
 - [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045)  
-- [EPM - Disk - Custom Table - pvl_crystal_disk_info](https://proval.itglue.com/DOC-5078775-12960038)  
+- [EPM - Disk - Custom Table - pvl_crystal_disk_info](<../tables/pvl_crystal_disk_info.md>)  
 
 ## Columns
 
@@ -60,6 +60,7 @@ Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk In
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Crystal-Disk-Info-Report/image_1.png)
+
 
 
 

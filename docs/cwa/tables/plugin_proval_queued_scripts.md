@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Purpose
 
-This custom table holds the target computer id, the script Id of a script you wish to queue, and any parameters you wish to pass that script. The custom table is created by [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199). The custom table is added to by [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199) when you schedule a task on an offline machine. The custom table is read by [CWM - Automate - Script - Run Queued Scripts](https://proval.itglue.com/DOC-5078775-10606200). The custom table is cleaned by [CWM - Automate - Script - Run Queued Scripts](https://proval.itglue.com/DOC-5078775-10606200) after executing the script on the target computer.
+This custom table holds the target computer id, the script Id of a script you wish to queue, and any parameters you wish to pass that script. The custom table is created by [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>). The custom table is added to by [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>) when you schedule a task on an offline machine. The custom table is read by [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>). The custom table is cleaned by [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>) after executing the script on the target computer.
 
 ## Dependencies
 
-- [CWM - Automate - Solution - Queue Script Next Checkin](https://proval.itglue.com/DOC-5078775-10606186)
-- [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199)
-- [CWM - Automate - Script - Run Queued Scripts](https://proval.itglue.com/DOC-5078775-10606200)
+- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
+- [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>)
+- [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>)
 
 ## Tables
 
@@ -27,6 +27,7 @@ This custom table holds the target computer id, the script Id of a script you wi
 | ComputerID        | INT  | The target computer of the queued script.                |
 | ScriptID          | INT  | The target script to be executed on the computer.        |
 | ScriptParameters   | Text | Any parameters necessary for the successful run of the script being targeted. |
+
 
 
 

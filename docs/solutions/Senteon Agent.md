@@ -16,26 +16,27 @@ Allows for the install and uninstall of the Senteon Agent application, and displ
 
 | Content | Type | Function |
 |---------|------|----------|
-| [cPVAL Senteon Installed](https://proval.itglue.com/DOC-5078775-16540467) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint or not. |
-| [Senteon_Org](https://proval.itglue.com/DOC-5078775-16540933) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's Organization. |
-| [Senteon_Tenant](https://proval.itglue.com/DOC-5078775-16541049) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to. |
-| [Senteon_Reg_Code](https://proval.itglue.com/DOC-5078775-16541285) | Managed Variable | This managed variable is used to store the Senteon registration code of the Tenant the partner wishes to register the agent/endpoint to. |
-| [Senteon - Install](https://proval.itglue.com/DOC-5078775-16541419) | Agent Procedure | This agent procedure is used to install the Senteon Agent application on the endpoint. |
-| [Senteon - Uninstall](https://proval.itglue.com/DOC-5078775-16541845) | Agent Procedure | This agent procedure is used to uninstall the Senteon Agent application on the endpoint. |
-| [Check Senteon Installed CF](https://proval.itglue.com/DOC-5078775-16541925) | Agent Procedure | This agent procedure is used to check for the presence of Senteon on the endpoint and update a custom field with the status. |
+| [cPVAL Senteon Installed](<../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint or not. |
+| [Senteon_Org](<../vsa/variables/Senteon_Org.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's Organization. |
+| [Senteon_Tenant](<../vsa/variables/Senteon_Tenant.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to. |
+| [Senteon_Reg_Code](<../vsa/variables/Senteon_Reg_Code.md>) | Managed Variable | This managed variable is used to store the Senteon registration code of the Tenant the partner wishes to register the agent/endpoint to. |
+| [Senteon - Install](<../vsa/procedures/Senteon - Install.md>) | Agent Procedure | This agent procedure is used to install the Senteon Agent application on the endpoint. |
+| [Senteon - Uninstall](<../vsa/procedures/Senteon - Uninstall.md>) | Agent Procedure | This agent procedure is used to uninstall the Senteon Agent application on the endpoint. |
+| [Check Senteon Installed CF](<../vsa/procedures/Check Senteon Installed CF.md>) | Agent Procedure | This agent procedure is used to check for the presence of Senteon on the endpoint and update a custom field with the status. |
 
 ## Implementation
 
 1. Create the following dependencies in the partner's VSA:  
-   - [Custom Field - cPVAL Senteon Installed](https://proval.itglue.com/DOC-5078775-16540467)  
-   - [Managed Variable - Senteon_Org](https://proval.itglue.com/DOC-5078775-16540933)  
-   - [Managed Variable - Senteon_Tenant](https://proval.itglue.com/DOC-5078775-16541049)  
-   - [Managed Variable - Senteon_Reg_Code](https://proval.itglue.com/DOC-5078775-16541285)  
+   - [Custom Field - cPVAL Senteon Installed](<../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>)  
+   - [Managed Variable - Senteon_Org](<../vsa/variables/Senteon_Org.md>)  
+   - [Managed Variable - Senteon_Tenant](<../vsa/variables/Senteon_Tenant.md>)  
+   - [Managed Variable - Senteon_Reg_Code](<../vsa/variables/Senteon_Reg_Code.md>)  
 
 2. Export the following content from ProVal's VSA, and follow the necessary implementation steps within each document:  
-   - [Agent Procedure - Senteon - Install](https://proval.itglue.com/DOC-5078775-16541419)  
-   - [Agent Procedure - Senteon - Uninstall](https://proval.itglue.com/DOC-5078775-16541845)  
-   - [Agent Procedure - Check Senteon Installed CF](https://proval.itglue.com/DOC-5078775-16541925)  
+   - [Agent Procedure - Senteon - Install](<../vsa/procedures/Senteon - Install.md>)  
+   - [Agent Procedure - Senteon - Uninstall](<../vsa/procedures/Senteon - Uninstall.md>)  
+   - [Agent Procedure - Check Senteon Installed CF](<../vsa/procedures/Check Senteon Installed CF.md>)  
+
 
 
 

@@ -11,7 +11,7 @@ unlisted: false
 ## Steps for Ticket Creation
 
 ### 1.
-Ensure the presence of [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script and `△ Custom - Ticket Creation - Computer` alert template.
+Ensure the presence of [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and `△ Custom - Ticket Creation - Computer` alert template.
 
 ---
 
@@ -174,6 +174,7 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
 
 
 

@@ -14,11 +14,12 @@ Targets clients with EDFs enabled to install DUO. Will exclude agents that have 
 
 ## Dependencies
 
-[DUO - Install MFA Authentication For Windows EDFs](https://proval.itglue.com/DOC-5078775-8311963) (Can be used as an Autofix Script)
+[DUO - Install MFA Authentication For Windows EDFs](<../scripts/DUO - Install MFA Authentication For Windows EDFs.md>) (Can be used as an Autofix Script)
 
 ## Target
 
 Global - Uses EDFs to scope agents / clients
+
 
 
 

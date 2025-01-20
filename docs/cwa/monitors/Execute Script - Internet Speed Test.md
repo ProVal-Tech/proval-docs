@@ -14,17 +14,18 @@ This internal monitor detects the Windows agent where the script [EPM - Network 
 
 **Important**
 - The monitor target should be applied to a group, otherwise, it will not function.
-- Import the [Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872) in the client environment.
+- Import the [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>) in the client environment.
 
 ## Dependencies
 
 - [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226)
-- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](https://proval.itglue.com/DOC-5078775-9166228)
-- [Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872)
+- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>)
+- [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>)
 
 ## Target
 
 This monitor can be enabled for all service plan groups, Servers only, Infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is built for only Windows.
+
 
 
 

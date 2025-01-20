@@ -18,7 +18,7 @@ This script collects the Adobe license key and stores it in the custom EDF "Adob
 
 ## Dependencies
 
-[Adobe License Detection](https://proval.itglue.com/DOC-5078775-10218266)
+[Adobe License Detection](<./Adobe License Detection.md>)
 
 ## Variables
 
@@ -36,6 +36,7 @@ This script can run on any Windows agent. It first checks whether the agent has 
 - Script log
 - EDF
 - Dataview
+
 
 
 

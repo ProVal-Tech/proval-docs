@@ -20,9 +20,9 @@ This script is a function script and it only runs with the dependent remote moni
 
 ## Dependencies
 
-- [New Account Audit and Disable For Approve [Script]](https://proval.itglue.com/DOC-5078775-7771663)
+- [New Account Audit and Disable For Approve [Script]](<../cwa/dataviews/New Account Audit and Disable For Approve.md>)
 - [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)
-- [New User Account Audit Table](https://proval.itglue.com/DOC-5078775-7771654)
+- [New User Account Audit Table](<../cwa/tables/custom_proval_computer_new_accounts.md>)
 
 #### Global Parameters
 
@@ -37,13 +37,14 @@ This script is a function script and it only runs with the dependent remote moni
 - The "new account created" message is filtered out to log who created the account and information about the new account.
   - It also registers information about when the account was created, whether it is an admin, domain or non-domain account, if the password is set or not, and the last logon of both the creator and created user.
 - It also gives the option to disable the newly created user depending on the global parameter "DisableLocalUser".
-- All information is logged to the custom table [custom_proval_computer_new_accounts](https://proval.itglue.com/DOC-5078775-7771654).
+- All information is logged to the custom table [custom_proval_computer_new_accounts](<../cwa/tables/custom_proval_computer_new_accounts.md>).
 
 ## Output
 
 - Script log
 - Custom table
 - Dataview
+
 
 
 

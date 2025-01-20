@@ -14,7 +14,7 @@ This monitor will trigger a script to resolve any new or existing tickets genera
 
 ## Dependencies
 
-[CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]*](https://proval.itglue.com/DOC-5078775-12589458)
+[CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]*](<../scripts/Client Specific - Auto Close - Missing Patch Tickets Autofix.md>)
 
 ## Target
 
@@ -89,7 +89,8 @@ WHERE
   ) = '0';
 ```
 
-**Note:** Ensure that the [CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]*](https://proval.itglue.com/DOC-5078775-12589458) script is imported before creating the alert template.
+**Note:** Ensure that the [CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]*](<../scripts/Client Specific - Auto Close - Missing Patch Tickets Autofix.md>) script is imported before creating the alert template.
+
 
 
 

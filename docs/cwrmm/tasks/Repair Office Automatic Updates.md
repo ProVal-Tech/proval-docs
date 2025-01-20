@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Checks common failure points in Office automatic updates and automatically resolves them. CW RMM implementation of the agnostic script [Repair-OfficeAutomaticUpdate](https://proval.itglue.com/DOC-5078775-12083860).
+Checks common failure points in Office automatic updates and automatically resolves them. CW RMM implementation of the agnostic script [Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Checks common failure points in Office automatic updates and automatically resol
 
 ## Dependencies
 
-[SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](https://proval.itglue.com/DOC-5078775-12083860)
+[SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>)
 
 ## Task Creation
 
@@ -139,6 +139,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
 
 
 

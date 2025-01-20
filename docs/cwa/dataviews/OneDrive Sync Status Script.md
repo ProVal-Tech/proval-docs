@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The dataview presents the OneDrive Sync Status data stored in the [EPM - Data Collection - Custom Table - pvl_odsync_status](https://proval.itglue.com/DOC-5078775-16007815) custom table along with the basic information.
+The dataview presents the OneDrive Sync Status data stored in the [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>) custom table along with the basic information.
 
 ## Dependencies
 
-- [EPM - Data Collection - Custom Table - pvl_odsync_status](https://proval.itglue.com/DOC-5078775-16007815)
-- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-16007800)
+- [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>)
+- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>)
 
 ## Columns
 
@@ -38,6 +38,7 @@ The dataview presents the OneDrive Sync Status data stored in the [EPM - Data Co
 | Last Contact           | Last Contact with Automate                          |
 | Operating System       | Operating System                                    |
 | Form Factor            | Form Factor of the machine                          |
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-The custom table stores the data gathered by the [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634) script.
+The custom table stores the data gathered by the [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>) script.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634)
+[EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>)
 
 ## Tables
 
@@ -27,6 +27,7 @@ The custom table stores the data gathered by the [EPM - Data Collection - Script
 | Size                | Double   | Size of the file in MegaBytes              |
 | ModificationTime    | DateTime | Most recent modification time of the file   |
 | DataCollectionTime  | DateTime | Data Collection Time                        |
+
 
 
 

@@ -20,7 +20,7 @@ It also depends on the EDFs:
 
 ## Dependencies
 
-[CWA - Script - SnapAgent Installer](https://proval.itglue.com/DOC-5078775-16179606)
+[CWA - Script - SnapAgent Installer](<../scripts/BlackPoint - SnapAgent Installer.md>)
 
 ## Target
 
@@ -32,6 +32,7 @@ Global
 - To enable the ticketing feature it is mandatory to set the ticket category at the monitor level as shown below:
 
 ![Ticket Category](../../../static/img/BlackPoint-SnapAgent-Deployment/image_1.png)
+
 
 
 

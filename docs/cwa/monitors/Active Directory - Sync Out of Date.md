@@ -16,12 +16,13 @@ This monitor looks for the AD server that has been onboarded for more than 30 da
 
 This monitor is dependent on the following items:
 
-- [CWM - Automate - Script - ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date [Ticket]*](https://proval.itglue.com/DOC-5078775-10093113)  
-- [CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217)  
+- [CWM - Automate - Script - ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date [Ticket]*](<../scripts/ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket.md>)  
+- [CWM - Automate - RMM+ Plugin Configuration](<../scripts/CWM - Automate - RMM+ Plugin Configuration.md>)  
 
 ## Target
 
 The monitor set is explicitly limited to the domain controllers detected in the `Active Directory` plugin.
+
 
 
 

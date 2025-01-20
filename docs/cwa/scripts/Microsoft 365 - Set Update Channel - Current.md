@@ -12,7 +12,7 @@ unlisted: false
 
 This script will make changes in the registry and allow Microsoft 365 products to update on regular basis as per current channel updates.
 
-It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) at the end of a successful run to update the information in the [Dataview - C2R Office Version Audit](https://proval.itglue.com/DOC-5078775-13932548).
+It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) at the end of a successful run to update the information in the [Dataview - C2R Office Version Audit](<../dataviews/C2R Office Version Audit.md>).
 
 Time Saved by Automation: 5 Minutes
 
@@ -27,6 +27,7 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 
 

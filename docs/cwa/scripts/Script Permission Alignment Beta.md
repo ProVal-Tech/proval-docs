@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script is designed to standardize the permissions of the Built-In scripts in ConnectWise Automate. Access to the stock scripts is manually defined in the [pvl_scripts_permissions](https://proval.itglue.com/DOC-5078775-16760865) custom table. The script then sets the permissions of each script according to the access set in the table.
+The script is designed to standardize the permissions of the Built-In scripts in ConnectWise Automate. Access to the stock scripts is manually defined in the [pvl_scripts_permissions](<../tables/pvl_scripts_permissions.md>) custom table. The script then sets the permissions of each script according to the access set in the table.
 
 **Permission Assignment:**
 - Tier 1 Techs get access to Tier 1 scripts,
@@ -41,7 +41,7 @@ The initial permissions of the scripts are stored in the custom table during the
 
 ## Dependencies
 
-[CWM - Automate - Custom Table - pvl_scripts_permissions](https://proval.itglue.com/DOC-5078775-16760865)
+[CWM - Automate - Custom Table - pvl_scripts_permissions](<../tables/pvl_scripts_permissions.md>)
 
 ## User Parameters
 
@@ -64,6 +64,7 @@ The initial permissions of the scripts are stored in the custom table during the
 - Custom Table
 - Script level permission  
 ![Output Image](../../../static/img/Script-Permission-Alignment-Beta/image_6.png)
+
 
 
 

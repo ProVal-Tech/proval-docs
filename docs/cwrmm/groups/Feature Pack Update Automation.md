@@ -14,9 +14,9 @@ Organize computers operating on older build versions of Windows 10 and 11. The g
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845)
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](https://proval.itglue.com/DOC-5078775-12949095)
-- [CW RMM - Custom Field - Feature Update Reboot Pending](https://proval.itglue.com/DOC-5078775-14592255)
+- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
+- [CW RMM - Custom Field - WinFeatUpgradeAttempts](<../custom-fields/WinFeatUpgradeAttempts.md>)
+- [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)
 
 ## Summary
 
@@ -58,6 +58,7 @@ Click the Save button to Save the Group.
 ![Image](../../../static/img/Feature-Pack-Update-Automation/image_12.png)
 
 ![Image](../../../static/img/Feature-Pack-Update-Automation/image_13.png)
+
 
 
 

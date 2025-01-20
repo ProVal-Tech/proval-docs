@@ -30,7 +30,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -42,7 +42,7 @@ The monitor set should be limited to the `\<Server Role - AD - Infrastructure Ma
 ## Implementation
 
 Please follow the instructions provided in the implementation article to implement the solution:  
-[Implement - Remote Monitor - AD Account LockOut Detection](https://proval.itglue.com/DOC-5078775-14952901)
+[Implement - Remote Monitor - AD Account LockOut Detection](<./AD Account LockOut Detection.md>)
 
 ## Ticketing
 
@@ -61,6 +61,7 @@ Endpoint    :    DEV-Win11DomainJoined
 Domain      :    provaltestdomain.local
 DC          :    DEV-SERVER-2019$
 ```
+
 
 
 

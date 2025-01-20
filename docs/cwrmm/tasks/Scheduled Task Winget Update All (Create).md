@@ -12,7 +12,7 @@ unlisted: false
 
 The ultimate objective of the task is to establish and oversee two scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) designed to update installed applications utilizing Winget on Windows 10 and 11.
 
-The task can only be executed against the companies where the company level custom field [WingetUpdateAll_Task_Create](https://proval.itglue.com/DOC-5078775-15702768) is marked.
+The task can only be executed against the companies where the company level custom field [WingetUpdateAll_Task_Create](<../custom-fields/Company - WingetUpdateAll_Task_Create.md>) is marked.
 
 ## Sample Run
 
@@ -22,15 +22,15 @@ The task can only be executed against the companies where the company level cust
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](https://proval.itglue.com/DOC-5078775-15702768)
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](https://proval.itglue.com/DOC-5078775-15702769)
-- [CW RMM - Custom Field - Company - WingetUpdateAll_UserTask_Disable](https://proval.itglue.com/DOC-5078775-15702781)
-- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](https://proval.itglue.com/DOC-5078775-15702824)
-- [CW RMM - Custom Field - Site - WingetUpdateAll_UserTask_Disable](https://proval.itglue.com/DOC-5078775-15702793)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](https://proval.itglue.com/DOC-5078775-15702825)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](https://proval.itglue.com/DOC-5078775-15702796)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_UserTask_Disable](https://proval.itglue.com/DOC-5078775-15702780)
-- [CW RMM - Device Group - Winget Update All (Task Create)](https://proval.itglue.com/DOC-5078775-15702935)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](<../custom-fields/Company - WingetUpdateAll_Task_Create.md>)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](<../custom-fields/Company - WingetUpdateAll_Task_Delete.md>)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_UserTask_Disable](<../custom-fields/Company - WingetUpdateAll_UserTask_Disable.md>)
+- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](<../custom-fields/Site - WingetUpdateAll_Task_Exclude.md>)
+- [CW RMM - Custom Field - Site - WingetUpdateAll_UserTask_Disable](<../custom-fields/Site - WingetUpdateAll_UserTask_Disable.md>)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](<../custom-fields/EndPoint - WingetUpdateAll_Task_Exclude.md>)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](<../custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_UserTask_Disable](<../custom-fields/EndPoint - WingetUpdateAll_UserTask_Disable.md>)
+- [CW RMM - Device Group - Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>)
 
 ## Variables
 
@@ -535,7 +535,7 @@ Click the `Save` button at the top right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per day against the [Winget Update All (Task Create)](https://proval.itglue.com/DOC-5078775-15702935) device group.
+It is suggested to run the Task once per day against the [Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Scheduled Task Winget Update All (Create) Task.`
@@ -562,7 +562,7 @@ Select the `Device Groups` option in the `Targeted Resources` section.
 
 ![Select Device Groups](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_48.png)
 
-Search and Select the [Winget Update All (Task Create)](https://proval.itglue.com/DOC-5078775-15702935) device group.
+Search and Select the [Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) device group.
 
 ![Select Device Group](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_49.png)
 
@@ -580,6 +580,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 - Script Log
+
 
 
 

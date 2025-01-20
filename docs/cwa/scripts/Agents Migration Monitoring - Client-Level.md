@@ -20,13 +20,13 @@ It is a client script that has to be set up to run on a regular basis, either da
 
 ## Dependencies
 
-[CWM - Automate - Custom Table - pvl_computer_client_auditing](https://proval.itglue.com/DOC-5078775-12597798)
+[CWM - Automate - Custom Table - pvl_computer_client_auditing](<../tables/pvl_computer_client_auditing.md>)
 
 ## Variables
 
 | Name               | Description                                                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------------------------|
-| Table_Name         | [pvl_computer_client_auditing](https://proval.itglue.com/DOC-5078775-12597798)                            |
+| Table_Name         | [pvl_computer_client_auditing](<../tables/pvl_computer_client_auditing.md>)                            |
 | Count              | Number of detected computers                                                                                 |
 | sqlNew_Clientid    | New clientid of detected computer                                                                            |
 | sqlcmpid           | computerid of detected computer                                                                               |
@@ -48,6 +48,7 @@ It is a client script that has to be set up to run on a regular basis, either da
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Agents-Migration-Monitoring---Client-Level/image_2.png)
+
 
 
 

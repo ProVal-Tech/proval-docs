@@ -18,10 +18,10 @@ This script audits the locked account and stores it in the table.
 
 ## Dependencies
 
-- [Account LockOut Audit](https://proval.itglue.com/DOC-5078775-10218265)
-- [AD Account Lockout Detection](https://proval.itglue.com/DOC-5078775-10220558)
-- [plugin_proval_account_lock](https://proval.itglue.com/DOC-5078775-10220562)
-- [User Management - Account Lock Detail](https://proval.itglue.com/DOC-5078775-10220563)
+- [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>)
+- [AD Account Lockout Detection](<../cwa/monitors/Account Lockout Detection.md>)
+- [plugin_proval_account_lock](<./plugin_proval_account_lock.md>)
+- [User Management - Account Lock Detail](<./User Management - Account Lock Detail.md>)
 
 ## Variables
 
@@ -51,6 +51,7 @@ Ex:
 - Script log
 - plugin_proval_account_lock
 - Dataview
+
 
 
 

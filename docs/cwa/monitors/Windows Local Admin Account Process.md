@@ -12,11 +12,11 @@ unlisted: false
 
 The purpose of the monitor set is to identify machines that do not have the designated local admin account and machines where the password for the account has not been updated within the specified password age limit. The UserName and Password age parameters are configured in the system properties and client-level Extra Data Fields (EDFs), allowing for customization and adaptability to specific requirements.
 
-Check [Script's](https://proval.itglue.com/DOC-5078775-8223774) document for more information on EDFs, Script State, and System Properties used in the monitor set.
+Check [Script's](<../scripts/Windows - Admin Account - CreateUpdate.md>) document for more information on EDFs, Script State, and System Properties used in the monitor set.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774)
+[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>)
 
 ## Target
 
@@ -28,7 +28,8 @@ With the exception of Domain Controllers, only Windows machines belonging to cli
 
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
-The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script on the machines detected by the monitor set.
+The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>) script on the machines detected by the monitor set.
+
 
 
 

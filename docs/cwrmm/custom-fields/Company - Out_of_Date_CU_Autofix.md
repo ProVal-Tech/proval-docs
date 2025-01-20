@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solution - Latest Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029448) solution. Select Enable from the drop-down to allow installation of the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. Selecting Servers as well will enable Autofix for the servers too.
+A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solution - Latest Cumulative Update Audit](<../../solutions/Latest Cumulative Update Audit.md>) solution. Select Enable from the drop-down to allow installation of the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. Selecting Servers as well will enable Autofix for the servers too.
 
 ## Details
 
@@ -31,6 +31,7 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 ![Screenshot 1](../../../static/img/Company---Out_of_Date_CU_Autofix/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---Out_of_Date_CU_Autofix/image_2.png)
+
 
 
 

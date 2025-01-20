@@ -14,14 +14,15 @@ This custom RAWSQL monitor will check for the custom table privileges for a user
 
 ## Dependencies
 
-[plugin_proval_ad_gp](https://proval.itglue.com/DOC-5078775-7948461)  
-[plugin_proval_bitlocker](https://proval.itglue.com/DOC-5078775-8038616)  
+[plugin_proval_ad_gp](<../tables/plugin_proval_ad_gp.md>)  
+[plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)  
 @ plugin_proval_gpo_audit  
 @ plugin_proval_outlook_pst  
 
 ## Target
 
 Global
+
 
 
 

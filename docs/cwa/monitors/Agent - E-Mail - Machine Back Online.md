@@ -18,11 +18,12 @@ Alert Template: △ Custom - E-Mail - Machine Back Online
 
 ## Dependencies
 
-[CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156)
+[CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](<../scripts/Email - EDF - Machine Back Online Autofix.md>)
 
 ## Target
 
 Global
+
 
 
 

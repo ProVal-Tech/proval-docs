@@ -20,7 +20,7 @@ It is required to execute this script after importing with setting the SetEnviro
 
 ## Dependencies
 
-[Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874)
+[Remote Monitor - SMB1 Detection](<../monitors/CWA - Remote Monitor - SMB1 Detection.md>)
 
 ## Variables
 
@@ -31,7 +31,7 @@ It is required to execute this script after importing with setting the SetEnviro
 | SMB1DisableOutput         | This contains the SMBv1-enabled remediation status of the agent.                                                                                                                                                              |
 | RemediationStatusCheck     | This contains a report on whether the remediation was successful or not.                                                                                                                                                      |
 | SMB1StateDetection        | This contains the SMBv1-enabled detection audit status of the agent.                                                                                                                                                          |
-| TicketCreation            | It contains the ticket categoryID applied on the [Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874). If the category is set, then only the ticket will be created.                            |
+| TicketCreation            | It contains the ticket categoryID applied on the [Remote Monitor - SMB1 Detection](<../monitors/CWA - Remote Monitor - SMB1 Detection.md>). If the category is set, then only the ticket will be created.                            |
 
 ### EDFs
 
@@ -54,7 +54,7 @@ It is required to execute this script after importing with setting the SetEnviro
 
 1. **How to Enable Ticket:**
    - Navigate to the group 'Vulnerability Management' > Open group > Go to Computers > Remote Monitors.
-   - Select the [Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874) and check the ticket category ![Ticket Category](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_3.png).
+   - Select the [Remote Monitor - SMB1 Detection](<../monitors/CWA - Remote Monitor - SMB1 Detection.md>) and check the ticket category ![Ticket Category](../../../static/img/SMBv1-Status-AuditAutofix-DV,Param/image_3.png).
 
    If this ticket category is set, then only the script will be able to create a ticket for the remediation step.
 
@@ -74,6 +74,7 @@ It is required to execute this script after importing with setting the SetEnviro
    - **Body:**  
      The vulnerability has been remediated successfully. Refer to the below log information:  
      @SMB1DisableOutput@
+
 
 
 

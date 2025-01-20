@@ -33,7 +33,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 ## Update Notice: 1-Aug-2024
 
 - Added a new system property `Backup_Bitlocker_Audit_Data`.
-- Setting this property to `1` will enable the backup of the [Bitlocker Status](https://proval.itglue.com/DOC-5078775-8946167) dataview.
+- Setting this property to `1` will enable the backup of the [Bitlocker Status](<../dataviews/Bitlocker Status.md>) dataview.
 - Run the script once against any client with the user parameter `Set_Envionment` set to `1` to create the newly introduced system property.
 
 ## Implementations
@@ -53,7 +53,7 @@ Step 5: Schedule the script to run at regular intervals.
 
 ## Dependencies
 
-[CWA - Script - Dataview - Save as CSV [Custom Location]](https://proval.itglue.com/DOC-5078775-14764552)  
+[CWA - Script - Dataview - Save as CSV [Custom Location]](<./Dataview - Save as CSV Custom Location.md>)  
 
 ## User Parameters
 
@@ -79,6 +79,7 @@ Creates a bunch of script states to keep track of each customization. One script
 
 - Script Log
 - Files on Local Computer
+
 
 
 

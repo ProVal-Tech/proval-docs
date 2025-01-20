@@ -20,15 +20,15 @@ This script is intended to run from a monitor and will not function if ran manua
 
 This script depends on the following items to function as intended:
 
-- [CWA Internal Monitor - Active Directory - Sync Out of Date [RMM+ Autofix]](https://proval.itglue.com/DOC-5078775-10093123)
-- [CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217)
+- [CWA Internal Monitor - Active Directory - Sync Out of Date [RMM+ Autofix]](<../monitors/Active Directory - Sync Out of Date.md>)
+- [CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
 
 ## Process
 
 This script follows the following process:
 
 1. Monitor alerts and triggers script
-2. Check if the FieldName = Failed, it will verify if the password title used in AD Plugin matches with the expected password title mentioned in System properties. If yes, it will run the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](https://proval.itglue.com/DOC-5078775-11419940) to reset the password. Otherwise will run the RMM+ fix to rebuild the ActiveDirectory.db file.
+2. Check if the FieldName = Failed, it will verify if the password title used in AD Plugin matches with the expected password title mentioned in System properties. If yes, it will run the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](<./Active Directory - Plugin User Account - CreateUpdate.md>) to reset the password. Otherwise will run the RMM+ fix to rebuild the ActiveDirectory.db file.
 3. Verifies if machine is online in Control and automate, if offline will create a ticket
 4. Run this command through CWC:
    - `taskkill /F /IM ltsvc.exe /T & taskkill /F /IM lttray.exe /T & ping -n 3 127.0.0.1 > nul & del C:/Windows/LTSvc/ActiveDirectory/ActiveDirectory.bak & ren C:/Windows/LTSvc/ActiveDirectory/ActiveDirectory.db ActiveDirectory.bak & net start ltservice`
@@ -98,6 +98,7 @@ PC model: @biosname@
 OS: %os%
 S/N OF PC: @biosver@
 ```
+
 
 
 

@@ -18,7 +18,7 @@ This script is an Automate Wrapper to run the Agnostic Update-Office script.
 
 ## Dependencies
 
-- [SWM - Software Configuration - Agnostic - Update-Office](https://proval.itglue.com/DOC-5078775-12083647)
+- [SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
 
 ## Variables
 
@@ -53,6 +53,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/Microsoft-Office-365---Update/image_2.png)
+
 
 
 

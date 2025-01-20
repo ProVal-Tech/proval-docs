@@ -16,9 +16,9 @@ The purpose of the solution is to display the Enabled Client and Server (if appl
 
 | Content                                                                                                           | Type          | Function                                                       |
 |-------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------|
-| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](https://proval.itglue.com/DOC-5078775-13217933) | Remote Monitor | Gather Comma Separated List of enabled TLS Client Versions    |
-| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](https://proval.itglue.com/DOC-5078775-13217931) | Remote Monitor | Gather Comma Separated List of enabled TLS Server Versions    |
-| [EPM - Windows Configuration - Dataview - Security - TLS Status](https://proval.itglue.com/DOC-5078775-7974498) | Dataview      | Display the data gathered by the remote monitors in human-readable format. |
+| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](<../cwa/monitors/TLS Version Check - Client.md>) | Remote Monitor | Gather Comma Separated List of enabled TLS Client Versions    |
+| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](<../cwa/monitors/TLS Version Check - Server.md>) | Remote Monitor | Gather Comma Separated List of enabled TLS Server Versions    |
+| [EPM - Windows Configuration - Dataview - Security - TLS Status](<../cwa/dataviews/Security - TLS Status.md>) | Dataview      | Display the data gathered by the remote monitors in human-readable format. |
 
 ## Implementation
 
@@ -27,6 +27,7 @@ The purpose of the solution is to display the Enabled Client and Server (if appl
 - Import both remote monitors to the applicable groups. (Follow the private articles linked to the remote monitor's documents).
 - Import the dataview.
 - Do group Refresh or wait for 30 minutes and ensure that the dataview starts displaying the expected data.
+
 
 
 

@@ -16,9 +16,9 @@ To provide clients with a professional looking Patch Management reports that the
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Report - Patch Compliance - CU Audit - All Machines](https://proval.itglue.com/DOC-5078775-17897871) | Report | Displays a comprehensive summary of all machines at a specific client and their perspective patch status. |
-| [Report - Patch Compliance - CU Audit - Servers](https://proval.itglue.com/DOC-5078775-17897892) | Report | Displays a comprehensive summary of all servers at a specific client and their perspective patch status. |
-| [Report - Patch Compliance - CU Audit - Workstations](https://proval.itglue.com/DOC-5078775-17897893) | Report | Displays a comprehensive summary of all workstations at a specific client and their perspective patch status. |
+| [Report - Patch Compliance - CU Audit - All Machines](<../cwa/reports/Patch Compliance - CU Audit - All Machines.md>) | Report | Displays a comprehensive summary of all machines at a specific client and their perspective patch status. |
+| [Report - Patch Compliance - CU Audit - Servers](<../cwa/reports/Patch Compliance - CU Audit - Servers.md>) | Report | Displays a comprehensive summary of all servers at a specific client and their perspective patch status. |
+| [Report - Patch Compliance - CU Audit - Workstations](<../cwa/reports/Patch Compliance - CU Audit - Workstations.md>) | Report | Displays a comprehensive summary of all workstations at a specific client and their perspective patch status. |
 
 ## Associated Content
 
@@ -75,7 +75,7 @@ At the end, all the machines are added up and averaged out to get the main perce
 **Q: I am seeing one of my machines reporting a very high age since the last cumulative update has been installed. Where should I start troubleshooting?**  
 A: I have outlined some steps that can be taken to troubleshoot why you may be seeing out of date machines:
 1. Open the Computer Management screen of the affected device --> Navigate to the Patching screen --> Look for the latest month's cumulative update
-   - If you cannot find the latest cumulative update, try running the [Script - Patch Manager - WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) and try scanning for patches again. If that does not work, then further troubleshooting will need to happen manually on the machine. 
+   - If you cannot find the latest cumulative update, try running the [Script - Patch Manager - WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) and try scanning for patches again. If that does not work, then further troubleshooting will need to happen manually on the machine. 
 2. If the latest cumulative update is visible, look for any failure messages on that main screen or when selecting the Patch Job tab.
    - If there are no job logs, there likely is a configuration issue with the assigned patch policy. That must be investigated.
    - If you see a failure during the maintenance window, investigate the mentioned error code.
@@ -95,6 +95,7 @@ A: The cumulative update data gets audited from the [Solution - Latest Installed
 
 If you see the following error when opening one of the reports, it means at least one of the View's or the custom table is missing and is unable to reference it. If they are all there, verify you have full permissions to the table and Views.
 ![Potential Problems](../../static/img/Patch-Compliance-Reporting-Solution/image_4.png)
+
 
 
 

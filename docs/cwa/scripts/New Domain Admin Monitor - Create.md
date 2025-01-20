@@ -12,9 +12,9 @@ unlisted: false
 
 This document describes the process for creating remote monitors to identify new or elevated domain administrators on a Windows domain controllers. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
 
-The script generates remote monitors that trigger an alert when a user or group of users are promoted as domain administrator on a Windows domain controller. By default, it excludes the domain administrators created by the [Windows Domain Admin Process](https://proval.itglue.com/DOC-5078775-13280371) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
+The script generates remote monitors that trigger an alert when a user or group of users are promoted as domain administrator on a Windows domain controller. By default, it excludes the domain administrators created by the [Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
 
-The generated remote monitors `ProVal - Production - New Domain Admin` will use the [Get-NewDomainAdmin](https://proval.itglue.com/DOC-5078775-13410720) agnostic script to perform the monitoring. The monitor set will be created for one domain controller per domain to avoid any duplicate alerts/tickets from multiple domain controllers for the same user.
+The generated remote monitors `ProVal - Production - New Domain Admin` will use the [Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>) agnostic script to perform the monitoring. The monitor set will be created for one domain controller per domain to avoid any duplicate alerts/tickets from multiple domain controllers for the same user.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-NewDomainAdmin/Get-NewDomainadmin.ps1`  
 **File Hash:** `934A0A3CD8A38BE3EA8B39C8440D8DBB7FB0833B914E197BDE6A4C9C8C27711D`  
@@ -70,7 +70,7 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Get-NewDomainAdmin](https://proval.itglue.com/DOC-5078775-13410720)
+[EPM - User Management - Agnostic - Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>)
 
 ## User Parameters
 
@@ -125,6 +125,7 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
+
 
 
 

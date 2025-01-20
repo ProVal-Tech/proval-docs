@@ -18,12 +18,12 @@ This script displays the results of selecting 'Find Script', except displays it 
 
 ## Dependencies
 
-- [CWM - Automate - Custom View - pvl_scripts_memberof](https://proval.itglue.com/DOC-5078775-13700065) 
-- [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](https://proval.itglue.com/DOC-5078775-13700067) 
+- [CWM - Automate - Custom View - pvl_scripts_memberof](<../views/pvl_scripts_memberof.md>) 
+- [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>) 
 
 ## Implementation
 
-- Import the [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](https://proval.itglue.com/DOC-5078775-13700067) script.
+- Import the [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>) script.
 - Import the dataview.
 - Execute/Debug the script against any computer and ensure the presence of data in the dataview.
 - Remove the script.
@@ -39,6 +39,7 @@ This script displays the results of selecting 'Find Script', except displays it 
 | Object description  | Full Path of the Group/Whether the alert template is applied on a computer-level remote monitor group remote monitor or an internal monitor. |
 | Limited to         | Whether the scheduled group script/remote monitor is limited to a search/internal monitor is limited to any group. |
 | Affected Agents    | Number of computers in the group/Number of agents detected in the search if limited to search.         |
+
 
 
 

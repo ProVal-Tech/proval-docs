@@ -18,7 +18,7 @@ This script downloads the offscrub files from the repo and then attempts to unin
 
 ## Dependencies
 
-[SWM - Software Uninstall - Invoke-OfficeScrub](https://proval.itglue.com/DOC-5078775-7593306)
+[SWM - Software Uninstall - Invoke-OfficeScrub](<../../powershell/Invoke-OfficeScrub.md>)
 
 ## Variables
 
@@ -42,6 +42,7 @@ This script can be run anytime as it is completely silent and no restart is requ
 
 - Script log  
 - Local file on computer
+
 
 
 

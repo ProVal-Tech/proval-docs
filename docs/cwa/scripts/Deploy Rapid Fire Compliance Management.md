@@ -24,7 +24,7 @@ It first validates the .NET Framework 4.8 is installed, if installed then only t
 ## Dependencies
 
 Prerequisite -> .Net Framework 4.8 should be installed  
-[CWA Script - .NET 4.8 Framework installation](https://proval.itglue.com/DOC-5078775-17531201)
+[CWA Script - .NET 4.8 Framework installation](<.NET 4.8 Framework installation.md>)
 
 ## Variables
 
@@ -48,7 +48,7 @@ Prerequisite -> .Net Framework 4.8 should be installed
 
 ## Ticketing
 
-To enable ticketing please set the ticket category at the monitor level [CWA Internal Monitor - Agents Missing Rapid Fire Compliance Manager](https://proval.itglue.com/DOC-5078775-17069435).  
+To enable ticketing please set the ticket category at the monitor level [CWA Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../monitors/Agents Missing Rapid Fire Compliance Manager.md>).  
 
 ![Ticketing](../../../static/img/Deploy-Rapid-Fire-Compliance-Management/image_2.png)
 
@@ -61,6 +61,7 @@ Failed to Install Compliance Management Agent on %computername% at %clientname%.
 ## Output
 
 - Script log
+
 
 
 

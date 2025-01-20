@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](https://proval.itglue.com/DOC-5078775-16445571).
+This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>).
 
 ## Dependencies
 
-[Malicious Software Removal Tool Scanner](https://proval.itglue.com/DOC-5078775-16445571)
+[Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>)
 
 ## Columns
 
@@ -27,6 +27,7 @@ This dataview stores the status of the MSRT scanner result from the script [Mali
 | LastContact            | The last contact of the agent with the RMM          |
 | MSRT Scanner Result    | MSRT tool scanner result conclusion recorded         |
 | MSRT Scanner Date      | MSRT's last scanner date                             |
+
 
 
 

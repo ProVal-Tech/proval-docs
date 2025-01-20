@@ -43,7 +43,7 @@ Checks compatibility requirements for ProVal content on Mac and PC. OS Requireme
 
 ## Dependencies
 
-All Content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](https://proval.itglue.com/DOC-5078775-11409315) 
+All Content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>) 
 
 ## Process
 
@@ -67,10 +67,11 @@ All Content listed in [EPM - Data Collection - Solution - VSA Proval Script Comp
 
 ## Output
 
-- [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](https://proval.itglue.com/DOC-5078775-11409312) 
+- [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](<../custom-fields/xPVAL ProVal Compatible Endpoint.md>) 
 - Agent Procedure Log
 - PSResult
 - CMDResults
+
 
 
 

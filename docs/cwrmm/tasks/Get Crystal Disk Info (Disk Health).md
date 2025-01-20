@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script runs the Crystal Disk Info tool on the end machines and fetches the Disk Health. The data is then formatted and stored in [CW RMM - Custom Field - Crystal Disk Info_Disk Health](https://proval.itglue.com/DOC-5078775-13549899) Custom Field for further auditing and monitoring purposes.
+The script runs the Crystal Disk Info tool on the end machines and fetches the Disk Health. The data is then formatted and stored in [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>) Custom Field for further auditing and monitoring purposes.
 
 Output Syntax: `Harddisk - \<Model> (Drives: \<Drive Letter(s)>): Health Status - \<Status>`
 
@@ -22,8 +22,8 @@ Output Syntax: `Harddisk - \<Model> (Drives: \<Drive Letter(s)>): Health Status 
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Crystal Disk Info_Disk Health](https://proval.itglue.com/DOC-5078775-13549899)  
-- [EPM - Disk - Agnostic - Get-CrystalDiskInfo](https://proval.itglue.com/DOC-5078775-12918412)  
+- [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>)  
+- [EPM - Disk - Agnostic - Get-CrystalDiskInfo](<../../powershell/Get-CrystalDiskInfo.md>)  
 
 ## Parameters
 
@@ -235,6 +235,7 @@ This pop-up box will appear.
 ![Script Log Output](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_39.png)  
 - Custom Field  
 ![Custom Field Output](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_40.png)  
+
 
 
 

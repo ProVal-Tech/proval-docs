@@ -20,7 +20,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Dependencies
 
-[plugin_proval_restore_points](https://proval.itglue.com/DOC-5078775-8157483)
+[plugin_proval_restore_points](<../tables/plugin_proval_restore_points.md>)
 
 ## Variables
 
@@ -35,6 +35,7 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 ## Output
 
 - Script log
+
 
 
 

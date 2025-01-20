@@ -14,7 +14,7 @@ This script will create/update a domain admin account to be used with the AD plu
 
 Also, there's an option available in the script to set the password as Deployment and default password for the location. This option can be controlled by the system property `AD_Plugin_Set_Location_Default_Password`.
 
-Intended Target: Domain Controllers detected in `Active Directory Domains` plugin. The script is being called by [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](https://proval.itglue.com/DOC-5078775-11420016) monitor as an autofix.
+Intended Target: Domain Controllers detected in `Active Directory Domains` plugin. The script is being called by [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../monitors/Active Directory - ADPluginUser - CreateUpdate.md>) monitor as an autofix.
 
 ### Notes
 - This script will no longer function on any end-of-life systems, including 2003 Servers, 2008 Servers, 2011 SBS Servers, and 2012 Servers (both regular and R2 editions). Manual management of AD Plugin User Accounts will be necessary for these machines.
@@ -39,7 +39,7 @@ Intended Target: Domain Controllers detected in `Active Directory Domains` plugi
 ![Update Step](../../../static/img/Active-Directory---Plugin-User-Account---CreateUpdate/image_2.png)
 
 - Import the replacement Monitor, Script, and alert template using the ProSync plugin.
-  - [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](https://proval.itglue.com/DOC-5078775-11420016) 
+  - [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../monitors/Active Directory - ADPluginUser - CreateUpdate.md>) 
   - `△ Custom - Autofix - AD Plugin User - Create/Update`
   - This script 'should' get imported after importing the alert template. Verify it is in the system.
 
@@ -53,7 +53,7 @@ Intended Target: Domain Controllers detected in `Active Directory Domains` plugi
 
 **For new implementation:**
 - Import the New Monitor, Script, and alert template using the ProSync plugin.
-  - [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](https://proval.itglue.com/DOC-5078775-11420016) 
+  - [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../monitors/Active Directory - ADPluginUser - CreateUpdate.md>) 
   - `△ Custom - Autofix - AD Plugin User - Create/Update`
   - This script 'should' get imported after importing the alert template. Verify it is in the system.
 
@@ -64,7 +64,7 @@ Intended Target: Domain Controllers detected in `Active Directory Domains` plugi
 
 **Notes:**
 - The user parameters are required for the **first run only** (First run of the updated script).
-- The Values set to the user parameters will be used to create System Properties used by the script and [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](https://proval.itglue.com/DOC-5078775-11420016) monitor set.
+- The Values set to the user parameters will be used to create System Properties used by the script and [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../monitors/Active Directory - ADPluginUser - CreateUpdate.md>) monitor set.
 - **If Values are not provided** to the user parameters for the first run of the script, the script and the monitor set will then use the default values.
   - Default Password Title: ADPluginUser
   - Default Username: AdPluginUser
@@ -128,6 +128,7 @@ Intended Target: Domain Controllers detected in `Active Directory Domains` plugi
 ## Output
 
 - Script Logs
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The only purpose of this script is to insert the latest version of [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) table.
+The only purpose of this script is to insert the latest version of [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) table.
 
 References:
 - [Microsoft Windows | endoflife.date](https://endoflife.date/windows)
@@ -21,6 +21,7 @@ References:
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---Table---Create-(plugin_proval_windows_os_support)/image_1.png)
+
 
 
 

@@ -14,10 +14,10 @@ The EPM - Disk - Internal Monitor - Predictive Hard Drive Failure is an internal
 
 ## Dependencies
 
-- [EPM - Disk - Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-10677468)
-- [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](https://proval.itglue.com/DOC-5078775-12662477)
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714)
-- [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+- [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>)
+- [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<./Execute Script - Disk - Gather Critical Data.md>)
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)
+- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Implementation
 
@@ -29,7 +29,7 @@ The EPM - Disk - Internal Monitor - Predictive Hard Drive Failure is an internal
 
 ## Target
 
-Global as the monitor set is limited to the machines detected within the [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714) table.
+Global as the monitor set is limited to the machines detected within the [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>) table.
 
 ## Ticketing
 
@@ -56,6 +56,7 @@ Disk Interface: \<Disk Interface>
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
 
 
 

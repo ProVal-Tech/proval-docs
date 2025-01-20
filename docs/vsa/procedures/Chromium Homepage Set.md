@@ -40,11 +40,12 @@ Summarize the Procedure.
 
 ## Process
 
-Uses [SWM - Software Configuration - Set-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372109) to set homepages in Chromium based browsers on an endpoint. Uses the same parameters as the agnostic script.
+Uses [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>) to set homepages in Chromium based browsers on an endpoint. Uses the same parameters as the agnostic script.
 
 ## Output
 
 Agent procedure log
+
 
 
 

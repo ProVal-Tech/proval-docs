@@ -12,10 +12,10 @@ unlisted: false
 
 This script serves as a wrapper for configuring the homepage of three browsers: Google Chrome, Microsoft Edge, and Mozilla Firefox. It leverages the following scripts:
 
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](https://proval.itglue.com/DOC-5078775-14985330)
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](https://proval.itglue.com/DOC-5078775-14985325)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](https://proval.itglue.com/DOC-5078775-14894150)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](https://proval.itglue.com/DOC-5078775-14894153)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](<./EPM - Software Configuration - Chromium Browsers - Homepage - Set.md>)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](<./EPM - Software Configuration - Chromium Browsers - Homepage - Remove.md>)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](<./Mozilla Firefox - Homepage - Set.md>)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](<./Mozilla Firefox - Homepage - Remove.md>)
 
 The 'Action' parameter can be used to specify the desired action (Set/Remove/Replace), and the 'Browser' parameter to indicate the target browser for the operation. If the 'Browser' parameter is left unspecified, the script will perform the specified action on all three browsers.
 
@@ -23,10 +23,10 @@ The 'Action' parameter can be used to specify the desired action (Set/Remove/Rep
 
 Importing this script will import the following scripts too:
 
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](https://proval.itglue.com/DOC-5078775-14985330)
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](https://proval.itglue.com/DOC-5078775-14985325)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](https://proval.itglue.com/DOC-5078775-14894150)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](https://proval.itglue.com/DOC-5078775-14894153)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](<./EPM - Software Configuration - Chromium Browsers - Homepage - Set.md>)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](<./EPM - Software Configuration - Chromium Browsers - Homepage - Remove.md>)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](<./Mozilla Firefox - Homepage - Set.md>)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](<./Mozilla Firefox - Homepage - Remove.md>)
 
 ## User Parameters
 
@@ -101,6 +101,7 @@ Example: Configuring Google Chrome and Microsoft Edge to open [https://www.prova
 ## Output
 
 - Script logs
+
 
 
 

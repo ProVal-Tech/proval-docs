@@ -16,26 +16,27 @@ The purpose of the solution is to detect and lockdown the machines that are mark
 
 | Content                                                                                                                                              | Type          | Function                                                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------|
-| [SEC - Encryption - Script - Lock Stolen System](https://proval.itglue.com/DOC-5078775-7798917)                                                  | Script        | Tracks and lock down stolen systems.                               |
-| [SEC - Security - Internal Monitor - EDF-Based Stolen Systems Monitor](https://proval.itglue.com/DOC-5078775-12991040)                          | Internal Monitor | Detects the online machines where `Mark As Stolen` EDF is marked. |
+| [SEC - Encryption - Script - Lock Stolen System](<../cwa/scripts/Lock Stolen System.md>)                                                  | Script        | Tracks and lock down stolen systems.                               |
+| [SEC - Security - Internal Monitor - EDF-Based Stolen Systems Monitor](<../cwa/monitors/EDF-Based Stolen Systems Monitor.md>)                          | Internal Monitor | Detects the online machines where `Mark As Stolen` EDF is marked. |
 | △ CUSTOM - Execute Script - Lock Stolen System                                                                                                     | Alert Template | Executes the script against the computers detected by the internal monitor. |
 
 ## Implementation
 
 - Read the solution-related documents carefully.
-- Import the script [SEC - Encryption - Script - Lock Stolen System](https://proval.itglue.com/DOC-5078775-7798917).
+- Import the script [SEC - Encryption - Script - Lock Stolen System](<../cwa/scripts/Lock Stolen System.md>).
 - Reload the system cache and ensure that the EDFs mentioned in the script's document are properly imported.
 - Create/import the `Marked as Stolen` search, it should be looking for the machines where the `Mark System As Stolen` EDF is marked.  
   ![Marked as Stolen Search](../../static/img/Stolen-Devices/image_1.png)
 - Create/import the `Marked as Stolen` group, it should be using the `Marked as Stolen` search as an Autojoin search.  
   ![Marked as Stolen Group](../../static/img/Stolen-Devices/image_2.png)
-- Import the internal Monitor [SEC - Security - Internal Monitor - EDF-Based Stolen Systems Monitor](https://proval.itglue.com/DOC-5078775-12991040).
+- Import the internal Monitor [SEC - Security - Internal Monitor - EDF-Based Stolen Systems Monitor](<../cwa/monitors/EDF-Based Stolen Systems Monitor.md>).
 - Limit the monitor set to the `Marked as Stolen` group.  
   ![Limit Monitor Set](../../static/img/Stolen-Devices/image_3.png)
-- Import/Create the `△ CUSTOM - Execute Script - Lock Stolen System` alert template. It should be running the [SEC - Encryption - Script - Lock Stolen System](https://proval.itglue.com/DOC-5078775-7798917) script on failure.
+- Import/Create the `△ CUSTOM - Execute Script - Lock Stolen System` alert template. It should be running the [SEC - Encryption - Script - Lock Stolen System](<../cwa/scripts/Lock Stolen System.md>) script on failure.
 - Assign the alert template to the monitor set.
 - Mark the `Mark System As Stolen` EDF on the concerned computers. Marking `System Lockdown` EDF will enable the script's feature to bitlocker and shutdown this computer.  
   ![Mark System As Stolen](../../static/img/Stolen-Devices/image_4.png)
+
 
 
 

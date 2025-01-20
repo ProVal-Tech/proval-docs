@@ -14,7 +14,7 @@ Displays the Hardware Hash details of Windows agents.
 
 ## Dependencies
 
-[CWA - Script - Get-AutopilotHash](https://proval.itglue.com/DOC-5078775-17245317)
+[CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>)
 
 ## Columns
 
@@ -28,7 +28,8 @@ Displays the Hardware Hash details of Windows agents.
 | Make              | Make of the agent within the Automate                    |
 | Model             | Model of the agent within the Automate                   |
 | Serial Number     | Serial Number of the agent within the Automate           |
-| Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](https://proval.itglue.com/DOC-5078775-17245317) |
+| Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) |
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script installs `Huntress Agent` on both Windows and Macintosh machines. It can create a ticket for failure if it's enabled from the [Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) monitor set.
+The script installs `Huntress Agent` on both Windows and Macintosh machines. It can create a ticket for failure if it's enabled from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set.
 
 **File Hash:**
 
@@ -29,7 +29,7 @@ The script installs `Huntress Agent` on both Windows and Macintosh machines. It 
 ## Dependencies
 
 - [raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
-- [SEC - Windows Protection - Internal Monitor - Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099)
+- [SEC - Windows Protection - Internal Monitor - Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>)
 
 ## Variables
 
@@ -50,7 +50,7 @@ The script installs `Huntress Agent` on both Windows and Macintosh machines. It 
 
 | Name                                 | Type      | Example         | Section        | Required | Description                                                                                                                                                                 |
 |--------------------------------------|-----------|------------------|-----------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Huntress Agent Install - Enable      | Check-Box | 0/1              | Security Tools  | False    | Mark this EDF to enable Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) monitor set.             |
+| Huntress Agent Install - Enable      | Check-Box | 0/1              | Security Tools  | False    | Mark this EDF to enable Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set.             |
 | Huntress Agent - Account Key         | Text      | 1SA2345AASSSS234 | Security Tools  | True     | This is the Account Key that determines which Huntress Account an Agent should be associated with.                                                                         |
 | Huntress Agent - Org Key             | Text      | Development       | Security Tools  | False    | By default, Huntress Organization key is the name of the client. Set this EDF if it's different for the client.                                                             |
 
@@ -60,14 +60,14 @@ The script installs `Huntress Agent` on both Windows and Macintosh machines. It 
 
 | Name                                 | Type      | Example         | Section        | Required | Description                                                                                                                                                                 |
 |--------------------------------------|-----------|------------------|-----------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Huntress Agent Install - Exclude     | Check-Box | 0/1              | Security Tools  | False    | Mark this EDF to exclude the location from the Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) monitor set. |
+| Huntress Agent Install - Exclude     | Check-Box | 0/1              | Security Tools  | False    | Mark this EDF to exclude the location from the Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set. |
 | Huntress Agent - Tags                | Text      | Main             | Security Tools  | False    | By default, Huntress Tags is the name of the location. Set this EDF if it's different for the location.                                                                    |
 
 ## Computer-Level EDF
 
 | Name                                 | Type      | Example         | Section        | Required | Description                                                                                                                                                                 |
 |--------------------------------------|-----------|------------------|-----------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Huntress Agent Install - Exclude     | Check-Box | 0/1              | Security Tools  | False    | Mark this EDF to exclude the computer from the Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) monitor set. |
+| Huntress Agent Install - Exclude     | Check-Box | 0/1              | Security Tools  | False    | Mark this EDF to exclude the computer from the Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set. |
 
 ## Ticketing
 
@@ -92,13 +92,14 @@ Output of the installation command:
 @commandResult@
 ```
 
-**Ticket Category should be set in the [ProVal - Production - Deploy Huntress Agent](https://proval.itglue.com/DOC-5078775-16803099) monitor set to enable ticket creation feature from the script.**  
+**Ticket Category should be set in the [ProVal - Production - Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set to enable ticket creation feature from the script.**  
 ![Ticketing](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_4.png)
 
 ## Output
 
 - Script log
 - Ticket (if enabled)
+
 
 
 

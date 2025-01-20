@@ -12,13 +12,13 @@ unlisted: false
 
 **This script is destructive and should only be used after fully understanding the implications.**
 
-Deletes a user profile and removes the user account if local. Runs [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496) after successful deletion.
+Deletes a user profile and removes the user account if local. Runs [EPM - Accounts - Script - User Profile - Get Information](<./User Profile - Get Information.md>) after successful deletion.
 
 ## Sample Run
 
 ## Dependencies
 
-- [EPM - Accounts - Agnostic - Remove-UserProfile](https://proval.itglue.com/DOC-5078775-8475171)
+- [EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-UserProfile.md>)
 
 ### User Parameters
 
@@ -29,12 +29,13 @@ Deletes a user profile and removes the user account if local. Runs [EPM - Accoun
 
 ## Process
 
-See [EPM - Accounts - Agnostic - Remove-UserProfile](https://proval.itglue.com/DOC-5078775-8475171) for process information.
+See [EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-UserProfile.md>) for process information.
 
 ## Output
 
 - Script log
 - Local file on computer
+
 
 
 

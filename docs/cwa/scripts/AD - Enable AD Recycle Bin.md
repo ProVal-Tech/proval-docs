@@ -21,7 +21,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[AD Recycle Bin State Check](https://proval.itglue.com/DOC-5078775-7815146)
+[AD Recycle Bin State Check](<../monitors/AD Recycle Bin State Check.md>)
 
 ## Process
 
@@ -66,6 +66,7 @@ Not Supported
 Outdated  
 
 `The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. Minimum version required is above 3.0 and the current version is @PSVersion@.`  
+
 
 
 

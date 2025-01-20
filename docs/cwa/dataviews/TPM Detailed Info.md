@@ -14,7 +14,7 @@ Displays information about the TPM configuration on endpoints.
 
 ## Dependencies
 
-[TPM Detail Auditing](https://proval.itglue.com/DOC-5078775-8304569)
+[TPM Detail Auditing](<../scripts/TPM Detail Auditing.md>)
 
 ## Columns
 
@@ -33,6 +33,7 @@ Displays information about the TPM configuration on endpoints.
 | AutoProvisioning     | Displays whether auto-provisioning is enabled or not         |
 | LockedOut           | Displays whether TPM locked or not                            |
 | TPMVersion          | Displays the TPM version on the endpoint                     |
+
 
 
 

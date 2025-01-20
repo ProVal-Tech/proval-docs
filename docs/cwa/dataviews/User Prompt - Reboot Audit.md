@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The dataview tracks the working of the [User Prompt for Reboot](https://proval.itglue.com/DOC-5078775-9088563) solution.
+The dataview tracks the working of the [User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) solution.
 
 ## Dependencies
 
@@ -42,6 +42,7 @@ The dataview tracks the working of the [User Prompt for Reboot](https://proval.i
 | Global Uptime Days to Send Prompts    | Uptime in days set in the `proval_RebootPromptUptimeDays` system property to automatically send the prompt. (0 --> Disabled) |
 | Global Prompt for Reboot Pending      | Is prompting enabled for the computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
 | Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 05 times and issue is still not resolved. |
+
 
 
 

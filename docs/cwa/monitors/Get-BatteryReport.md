@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-This monitor will check two times a day targeting only computers where the last battery report scan is greater than 24 hours ago, and the last battery report returned data, and run the [EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978) script.
+This monitor will check two times a day targeting only computers where the last battery report scan is greater than 24 hours ago, and the last battery report returned data, and run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978)
-- [EPM - Data Collection - Custom Table - plugin_proval_batteries](https://proval.itglue.com/DOC-5078775-11420540)
-- [CWM - Automate - Script - Property - Set](https://proval.itglue.com/DOC-5078775-11420461)
+- [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)
+- [EPM - Data Collection - Custom Table - plugin_proval_batteries](<../tables/plugin_proval_batteries.md>)
+- [CWM - Automate - Script - Property - Set](<../scripts/Property - Set.md>)
 - [EPM - Data Collection - Solution - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11149927)
 
 ## Target
@@ -27,7 +27,8 @@ The nature of the monitor is to select all computers which have returned a valid
 
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
-The Alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978) script.
+The Alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
+
 
 
 

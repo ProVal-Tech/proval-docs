@@ -20,7 +20,7 @@ This monitor checks several tables that ProVal wrote, and updates permissions on
 
 Tables:
 - @custom_proval_computer_new_accounts
-- [plugin_proval_ad_gpo](https://proval.itglue.com/DOC-5078775-7948720) 
+- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>) 
 - @plugin_proval_bitlocker
 - @plugin_proval_gpo_audit
 - @plugin_proval_outlook_pst
@@ -28,6 +28,7 @@ Tables:
 ## Target
 
 - Global - Should be run without explicitly defined targets.
+
 
 
 

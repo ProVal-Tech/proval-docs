@@ -19,11 +19,11 @@ The script clears the related custom fields on machines where the Feature Update
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845)
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](https://proval.itglue.com/DOC-5078775-12949095)
+- [CW RMM - Task - Feature Update Install With Tracking](<./Feature Update Install With Tracking.md>)
+- [CW RMM - Custom Field - WinFeatUpgradeAttempts](<../custom-fields/WinFeatUpgradeAttempts.md>)
 - [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
-- [CW RMM - Custom Field - Feature Update Reboot Pending](https://proval.itglue.com/DOC-5078775-14592255)
-- [CW RMM - Device Group - Feature Pack Update - Updated Computers](https://proval.itglue.com/DOC-5078775-14592309)
+- [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)
+- [CW RMM - Device Group - Feature Pack Update - Updated Computers](<../groups/Feature Pack Update - Updated Computers.md>)
 
 ## Create Script
 
@@ -122,6 +122,7 @@ Click the `Save` button to save the Task.
 ## Output
 
 - Custom Field
+
 
 
 

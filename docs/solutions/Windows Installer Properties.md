@@ -24,17 +24,18 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 
 | Content                                                                                                 | Type         | Function                                                |
 |---------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------|
-| [CWM - Automate - Script - Windows Installer Properties [DV]](https://proval.itglue.com/DOC-5078775-12404266) | Script       | Obtains the data from the machine and stores it in a custom table. |
-| [CWM - Automate - Custom Table - pvl_win_installer_properties](https://proval.itglue.com/DOC-5078775-12404261) | Custom Table | Stores the data gathered by the script.                |
-| [CWM - Automate - Dataview - Windows Installer Properties [Script]](https://proval.itglue.com/DOC-5078775-12404269) | Dataview     | Displays the results of the script.                    |
+| [CWM - Automate - Script - Windows Installer Properties [DV]](<../cwa/scripts/Windows Installer Properties DV.md>) | Script       | Obtains the data from the machine and stores it in a custom table. |
+| [CWM - Automate - Custom Table - pvl_win_installer_properties](<../cwa/tables/pvl_win_installer_properties.md>) | Custom Table | Stores the data gathered by the script.                |
+| [CWM - Automate - Dataview - Windows Installer Properties [Script]](<../cwa/dataviews/Windows Installer Properties Script.md>) | Dataview     | Displays the results of the script.                    |
 
 ## Implementation
 
-- Import the script [CWM - Automate - Script - Windows Installer Properties [DV]](https://proval.itglue.com/DOC-5078775-12404266).
-- Import the dataview [CWM - Automate - Dataview - Windows Installer Properties [Script]](https://proval.itglue.com/DOC-5078775-12404269).
+- Import the script [CWM - Automate - Script - Windows Installer Properties [DV]](<../cwa/scripts/Windows Installer Properties DV.md>).
+- Import the dataview [CWM - Automate - Dataview - Windows Installer Properties [Script]](<../cwa/dataviews/Windows Installer Properties Script.md>).
 - Debug the script against an online windows machine to create the table.
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
+
 
 
 

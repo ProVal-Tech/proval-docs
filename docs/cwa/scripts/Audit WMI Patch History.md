@@ -22,7 +22,7 @@ Time Saved by Automation: 15 Minutes
 ## Dependencies
 
 - @plugin_proval_wmipatchesinstalled
-- [Windows - Rollup Audit (WMI) [Script]](https://proval.itglue.com/DOC-5078775-8122698)
+- [Windows - Rollup Audit (WMI) [Script]](<../dataviews/Windows - Rollup Audit (WMI) Script.md>)
 
 ## Process
 
@@ -31,6 +31,7 @@ This script audits the current patch history from .NET to a custom table (plugin
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
+
 
 
 

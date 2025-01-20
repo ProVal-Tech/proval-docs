@@ -40,11 +40,12 @@ Cannot remove the user profile of a currently logged in user. (See Agent Procedu
 
 ## Dependencies
 
-[EPM - Accounts - Agnostic - Remove-UserProfile](https://proval.itglue.com/DOC-5078775-8475171)
+[EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-UserProfile.md>)
 
 ## Output
 
 AP Log
+
 
 
 

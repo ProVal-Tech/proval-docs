@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This Custom field is to be filled with Huntress Tag. It is being utilized by [CW RMM - Task - Huntress Agent (INSTALL)](https://proval.itglue.com/DOC-5078775-13684933) task. Basically the Location Name.
+This Custom field is to be filled with Huntress Tag. It is being utilized by [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task. Basically the Location Name.
 
 # Create the Custom Field
 
@@ -23,6 +23,7 @@ This Custom field is to be filled with Huntress Tag. It is being utilized by [CW
 **Level:** Site  
 **Description:** Huntress Agent Tag. These could be simple keywords that could be used to group agents within Huntress Organization.  
 **Editable:** Yes  
+
 
 
 

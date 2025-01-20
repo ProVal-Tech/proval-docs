@@ -14,13 +14,14 @@ This stores Disabled if the Windows optional Update is disabled by the Disable W
 
 ## Dependencies
 
-[CW RMM - Task - Disable Windows Optional/Automatic Updates](https://proval.itglue.com/DOC-5078775-16372418)
+[CW RMM - Task - Disable Windows Optional/Automatic Updates](<../tasks/Disable Windows OptionalAutomatic Updates.md>)
 
 ## Details
 
 | Field Name                        | Level      | Type  | Default | Editable | Description                                                                                  |
 |-----------------------------------|------------|-------|---------|----------|----------------------------------------------------------------------------------------------|
 | Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This stores Disabled if the Windows optional Update is disabled by the Disable Windows Optional/Automatic Updates task. |
+
 
 
 

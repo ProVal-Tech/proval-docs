@@ -16,16 +16,17 @@ This solution is intended to provide important MSP data relating to the clients 
 
 | Content                                                                                                           | Type         | Function                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](https://proval.itglue.com/DOC-5078775-12013482) | Script       | Fetches and stores standardized automation metrics to a custom table.                                            |
-| [CWM - Automate - Custom Table - plugin_proval_h_msp_metrics](https://proval.itglue.com/DOC-5078775-12013503)   | Custom Table | Stores the `MSP Automation Metrics` for further use.                                                             |
-| [CWM - Automate - Dataview - MSP Automation Metrics](https://proval.itglue.com/DOC-5078775-12013496)             | Dataview     | Displays the standardized automation metrics gathered by [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](https://proval.itglue.com/DOC-5078775-12013482) script. |
+| [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../cwa/scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>) | Script       | Fetches and stores standardized automation metrics to a custom table.                                            |
+| [CWM - Automate - Custom Table - plugin_proval_h_msp_metrics](<../cwa/tables/plugin_proval_h_msp_metrics.md>)   | Custom Table | Stores the `MSP Automation Metrics` for further use.                                                             |
+| [CWM - Automate - Dataview - MSP Automation Metrics](<../cwa/dataviews/MSP Automation Metrics.md>)             | Dataview     | Displays the standardized automation metrics gathered by [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../cwa/scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>) script. |
 
 ## Implementation
 
-- Import the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](https://proval.itglue.com/DOC-5078775-12013482) script.
-- Import the [CWM - Automate - Dataview - MSP Automation Metrics](https://proval.itglue.com/DOC-5078775-12013496) dataview.
-- Debug the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](https://proval.itglue.com/DOC-5078775-12013482) script against any client and verify the presence of data in the dataview.
+- Import the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../cwa/scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>) script.
+- Import the [CWM - Automate - Dataview - MSP Automation Metrics](<../cwa/dataviews/MSP Automation Metrics.md>) dataview.
+- Debug the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../cwa/scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>) script against any client and verify the presence of data in the dataview.
 - Schedule the script to run at the 1st of each month.
+
 
 
 

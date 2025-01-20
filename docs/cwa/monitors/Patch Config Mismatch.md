@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-Detects the machines where the data returned by the [Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976) script does not match the settings defined by the [Patch Manager - WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script.
+Detects the machines where the data returned by the [Get Patch Config](<../scripts/Get Patch Config.md>) script does not match the settings defined by the [Patch Manager - WUA Settings Validation](<../scripts/Patch Manager - WUA Settings Validation.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976)
-- [CWM - Automate - Script - Patch Manager - WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620)
-- [EPM - Data Collection - Custom Table - pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975)
+- [EPM - Data Collection - Script - Get Patch Config](<../scripts/Get Patch Config.md>)
+- [CWM - Automate - Script - Patch Manager - WUA Settings Validation](<../scripts/Patch Manager - WUA Settings Validation.md>)
+- [EPM - Data Collection - Custom Table - pvl_patch_config](<../tables/pvl_patch_config.md>)
 
 ## Target
 
@@ -25,6 +25,7 @@ Global
 ## Alert Template
 
 **Name:**  `△ Custom - Patch Config Mismatch`
+
 
 
 

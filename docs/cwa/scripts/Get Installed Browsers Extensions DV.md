@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script gathers all the extensions installed on the Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox browsers. It's a wrapper script to execute the [Get Chromium Browsers Extensions](https://proval.itglue.com/DOC-5078775-11896849), and [Get Firefox Browser Extensions](https://proval.itglue.com/DOC-5078775-11896863) scripts.
+This script gathers all the extensions installed on the Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox browsers. It's a wrapper script to execute the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>), and [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) scripts.
 
 ## Sample Run
 
@@ -18,9 +18,9 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 
 ## Dependencies
 
-- [Get Chromium Browsers Extensions](https://proval.itglue.com/DOC-5078775-11896849)
-- [Get Firefox Browser Extensions](https://proval.itglue.com/DOC-5078775-11896863)
-- [CWM - Automate - Dataview - Installed Browsers Extensions [Script]](https://proval.itglue.com/DOC-5078775-11896883)
+- [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>)
+- [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>)
+- [CWM - Automate - Dataview - Installed Browsers Extensions [Script]](<../dataviews/Installed Browsers Extensions Script.md>)
 
 ## Variables
 
@@ -32,12 +32,13 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 
 - Refresh software inventory.
 - Look for the installed browsers.
-- Executes the [Get Chromium Browsers Extensions](https://proval.itglue.com/DOC-5078775-11896849) script if any of the `Google Chrome`, `Brave`, or `Microsoft Edge` browsers are installed.
-- Executes the [Get Firefox Browser Extensions](https://proval.itglue.com/DOC-5078775-11896863) script if the `Mozilla Firefox` browser is installed.
+- Executes the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>) script if any of the `Google Chrome`, `Brave`, or `Microsoft Edge` browsers are installed.
+- Executes the [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) script if the `Mozilla Firefox` browser is installed.
 
 ## Output
 
 - Dataview
+
 
 
 

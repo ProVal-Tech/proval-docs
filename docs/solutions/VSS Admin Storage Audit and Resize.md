@@ -23,9 +23,10 @@ This solution audits vssadmin shadow copies and if needed, will resize them.
 
 ## Implementation
 
-The [Vssadmin List Storage Audit](https://proval.itglue.com/DOC-5078775-10728929) script must be run to start the process. After that, the [VSS Resize](https://proval.itglue.com/DOC-5078775-10728931) script can be used to resize the vssadmin storage.
+The [Vssadmin List Storage Audit](<../cwa/scripts/Vssadmin List Storage Audit.md>) script must be run to start the process. After that, the [VSS Resize](<../cwa/scripts/VSS Resize.md>) script can be used to resize the vssadmin storage.
 
 ## FAQ
+
 
 
 

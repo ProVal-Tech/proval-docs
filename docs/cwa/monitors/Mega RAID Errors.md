@@ -31,7 +31,7 @@ Managed Windows Servers
 
 ## Implementation
 
-[Implement - Remote Monitor - Mega RAID Errors](https://proval.itglue.com/DOC-5078775-16770355)
+[Implement - Remote Monitor - Mega RAID Errors](<./Implement - Remote Monitor - Mega RAID Errors.md>)
 
 ## Ticketing
 
@@ -44,6 +44,7 @@ Managed Windows Servers
 
 **Sample RESULT:**  
 ![Sample Result Image](../../../static/img/Mega-RAID-Errors/image_3.png)
+
 
 
 

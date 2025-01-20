@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script collects the `Version` and `Patch Level` information of the MSSQL Server and then saves this data into a designated [Custom Table - pvl_mssql_db_version](https://proval.itglue.com/DOC-5078775-15161868).
+The script collects the `Version` and `Patch Level` information of the MSSQL Server and then saves this data into a designated [Custom Table - pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>).
 
 ## Sample Run
 
@@ -26,7 +26,7 @@ Execute the script against the online `MSSQL` servers to gather the version.
 
 ## Dependencies
 
-[Internal Monitor - Execute Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161763)
+[Internal Monitor - Execute Script - Get MSSQL Database Version](<../monitors/Execute Script - Get MSSQL Database Version.md>)
 
 ## Variables
 
@@ -34,7 +34,7 @@ Execute the script against the online `MSSQL` servers to gather the version.
 |-------------------|-------------------------------------------------------|
 | ProjectName       | Get-MSSQLDBVersion                                   |
 | WorkingDirectory   | C:/ProgramData/_automation/script/Get-MSSQLDBVersion |
-| TableName         | [pvl_mssql_db_version](https://proval.itglue.com/DOC-5078775-15161868) |
+| TableName         | [pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>) |
 
 ## User Parameter
 
@@ -47,6 +47,7 @@ Execute the script against the online `MSSQL` servers to gather the version.
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

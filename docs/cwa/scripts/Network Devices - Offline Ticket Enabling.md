@@ -26,7 +26,7 @@ This client script aims to set the alert template "△ Custom - Ticket Creation 
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Offline Network Devices](https://proval.itglue.com/DOC-5078775-13343875)  
+[CWM - Automate - Script - Ticket Creation - Offline Network Devices](<./Ticket Creation - Offline Network Devices.md>)  
 △ Custom - Ticket Creation - Offline Network Devices
 
 ## Variables
@@ -63,7 +63,7 @@ Device-Level EDFs:
 ## Implementation
 
 1. Import the contents  
-   - [Script - Ticket Creation - Offline Network Devices](https://proval.itglue.com/DOC-5078775-13343875) 
+   - [Script - Ticket Creation - Offline Network Devices](<./Ticket Creation - Offline Network Devices.md>) 
    - Alert Template: "**△ Custom - Ticket Creation - Offline Network Devices**" 
    - Script - Network Devices - Offline Ticket Enabling [Param]
 
@@ -72,7 +72,7 @@ Device-Level EDFs:
 
 3. Configure the solution as follows:  
    - Navigate to Automation --> Scripts within the CWA Control Center.  
-     - Debug the [Script - Network Devices - Offline Ticket Enabling](https://proval.itglue.com/DOC-5078775-16290414) on any client with User Parameter 'Set_environment' = 1  
+     - Debug the [Script - Network Devices - Offline Ticket Enabling](<./Network Devices - Offline Ticket Enabling.md>) on any client with User Parameter 'Set_environment' = 1  
      - It will create the System property required for the script.  
    - Navigate to system dashboard --> Config --> Properties  
      - Fill in the `NetworkDevice_Manufacturer` system property as per partner requirements.  
@@ -86,13 +86,14 @@ Device-Level EDFs:
      - If the partner wants to remove the offline ticketing the device script synced earlier, put "Disable" in the system property as shown below:  
        ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_11.png)  
    - Navigate to system dashboard --> Management --> Scheduled Client Scripts  
-     - Schedule the [Script - Network Devices - Offline Ticket Enabling](https://proval.itglue.com/DOC-5078775-16290414) to run daily.  
+     - Schedule the [Script - Network Devices - Offline Ticket Enabling](<./Network Devices - Offline Ticket Enabling.md>) to run daily.  
        ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_2.png)  
    - If the partner wants to exclude any particular device, location, or client from external Sync, select the `Exclude from Offline Network Device Ticketing` EDF respectively on that device, location, or client.  
 
 ## Output
 
 - Script log
+
 
 
 

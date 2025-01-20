@@ -14,7 +14,7 @@ Stores information about Bitlocker configuration on target machines.
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)
+[SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>)
 
 ## Tables
 
@@ -42,6 +42,7 @@ Stores information about Bitlocker configuration on target machines.
 | KeyCertificateType        | VARCHAR   | The certificate type of the key protector (if applicable).                                                                    |
 | Thumbprint                | VARCHAR   | The thumbprint of the key protector (if applicable).                                                                         |
 | LastUpdated               | DATETIME  | The last time the volume was audited.                                                                                         |
+
 
 
 

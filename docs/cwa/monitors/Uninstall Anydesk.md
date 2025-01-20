@@ -36,7 +36,8 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Uninstall Anydesk](https://proval.itglue.com/DOC-5078775-14007940)
+[Implement - Remote Monitor - Uninstall Anydesk](<./Uninstall Anydesk.md>)
+
 
 
 

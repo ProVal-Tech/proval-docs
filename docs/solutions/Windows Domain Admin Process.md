@@ -14,7 +14,7 @@ This solution aims to establish a centralized domain admin for each domain, ensu
 
 ## Update Notice: 30-August-2024
 
-The solution's Extra Data Fields have been renamed. Update the [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script from the `Prosync` plugin and run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` as `1` to implement the changes.
+The solution's Extra Data Fields have been renamed. Update the [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) script from the `Prosync` plugin and run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` as `1` to implement the changes.
 
 ![Image](../../static/img/Windows-Domain-Admin-Process/image_1.png)
 
@@ -22,19 +22,19 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 
 | Content                                                                                                         | Type            | Function                                               |
 |-----------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------------|
-| [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](https://proval.itglue.com/DOC-5078775-13280312) | Internal Monitor | Detects the domain controller with missing or outdated credentials. |
-| [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) | Script          | Create/Update the user.                               |
+| [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](<../cwa/monitors/Windows Domain Admin Account Process.md>) | Internal Monitor | Detects the domain controller with missing or outdated credentials. |
+| [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) | Script          | Create/Update the user.                               |
 | △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update                                           | Alert Template   | Execute the script against the machines detected by the internal monitor. |
 
 ## Implementation
 
 1. Read the solution-related documents carefully.
-2. Import the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script and run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` as 1. This will create the required EDFs and system properties.  
+2. Import the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) script and run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` as 1. This will create the required EDFs and system properties.  
    ![Image](../../static/img/Windows-Domain-Admin-Process/image_2.png)
 3. Reload the system cache.
 4. Modify the default values for the system properties (If desired).  
    ![Image](../../static/img/Windows-Domain-Admin-Process/image_3.png)
-5. Import the [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](https://proval.itglue.com/DOC-5078775-13280312) internal monitor.
+5. Import the [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](<../cwa/monitors/Windows Domain Admin Account Process.md>) internal monitor.
 6. Import the `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update` alert template.
 7. Apply the template to the internal monitor.
 8. Fill in the proper values under the client-level EDFs to enable the solution for the concerned clients.  
@@ -51,6 +51,7 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
+
 
 
 

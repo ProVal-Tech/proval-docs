@@ -21,7 +21,7 @@ The approval age is divided into five categories:
 
 ## Dependencies
 
-[plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163)
+[plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>)
 
 ## Columns
 
@@ -54,4 +54,5 @@ The approval age is divided into five categories:
 - computerpatchpolicies cpp   
 - InstallSoftwarePolicies isp   
 - rebootpolicies rp
+
 

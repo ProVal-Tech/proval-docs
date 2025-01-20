@@ -12,9 +12,9 @@ unlisted: false
 
 Mark this custom field to create Winget Update All (System And Logged on User) tasks for the company's Windows 10 and 11 computers. 
 
-Marking this custom field will automatically add the machines to [CW RMM - Machine Group - Winget Update All (Task Create)](https://proval.itglue.com/DOC-5078775-15702935) group.
+Marking this custom field will automatically add the machines to [CW RMM - Machine Group - Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) group.
 
-This custom field must be marked on the company level to run [CW RMM - Task - Scheduled Task Winget Update All (Create)](https://proval.itglue.com/DOC-5078775-15702931) task.
+This custom field must be marked on the company level to run [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task.
 
 ## Details
 
@@ -26,6 +26,7 @@ This custom field must be marked on the company level to run [CW RMM - Task - Sc
 
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Create/image_1.png)
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Create/image_2.png)
+
 
 
 

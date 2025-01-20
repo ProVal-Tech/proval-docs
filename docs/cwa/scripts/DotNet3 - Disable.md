@@ -18,11 +18,12 @@ This is an automate implementation of the Disable-DotNet3 agnostic script.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Disable-DotNet3](https://proval.itglue.com/DOC-5078775-11134105)
+- [EPM - Windows Configuration - Agnostic - Disable-DotNet3](<../../powershell/Disable-DotNet3.md>)
 
 ## Process
 
 Please review agnostic content documentation for process information.
+
 
 
 

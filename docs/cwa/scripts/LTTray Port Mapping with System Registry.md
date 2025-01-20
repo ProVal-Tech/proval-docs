@@ -20,7 +20,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[LTTray Detection](https://proval.itglue.com/DOC-5078775-7836397)
+[LTTray Detection](<../monitors/LTTray Detection.md>)
 
 #### Global Parameters
 
@@ -47,6 +47,7 @@ Time Saved by Automation: 10 Minutes
 
 - Script log
 - Scriptstate
+
 
 
 

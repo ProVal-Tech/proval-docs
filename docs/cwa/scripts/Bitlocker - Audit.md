@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Gathers Bitlocker information from the target endpoint and stores it in the custom table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520). Creates a tpm table named `plugin_proval_tpm_audit` and populates that table with TPM data. Creates a backup text document with the recovery password in the ltshare for the target machine.
+Gathers Bitlocker information from the target endpoint and stores it in the custom table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>). Creates a tpm table named `plugin_proval_tpm_audit` and populates that table with TPM data. Creates a backup text document with the recovery password in the ltshare for the target machine.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Bitlocker_Audit/Bitlocker_Audit.ps1`  
 **File Hash (SHA256):** `4C4E524791404130BA61E50C287681010F4D9161766945C36411AEAD23588CFF`  
@@ -67,6 +67,7 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 - Custom table
 - Dataview
 - Backup file under LTshare at "LTShare/Uploads/\<ClientName>/\<ComputerName (Computerid)>"
+
 
 
 

@@ -15,20 +15,20 @@ The purpose of this solution is to pull certificate information that is meaningf
 ## Update Notice 19-Sept-2024
 
 **New Content:**
-- Internal Monitor: [ProVal - Production - Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926)
+- Internal Monitor: [ProVal - Production - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>)
 - Alert Template: △ Custom - Local Machine Certificate Audit
 
 **Modified Content:**
-- Script: [Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568)
-- Dataview: [SSL Certificate Audit [Script]](https://proval.itglue.com/DOC-5078775-9382198)
-- Internal Monitor: [ProVal - Production - Certificate Expiration \< 30 Days](https://proval.itglue.com/DOC-5078775-9256567)
+- Script: [Windows - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
+- Dataview: [SSL Certificate Audit [Script]](<../cwa/dataviews/SSL Certificate Audit.md>)
+- Internal Monitor: [ProVal - Production - Certificate Expiration \< 30 Days](<../cwa/monitors/Certificate Expiration  30 Days.md>)
 
 **Modifications:**
-- The [Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) script is modified to use the Shell function instead of the `Execute PowerShell` function, as Threatlocker was flagging it.
-- With the introduction of the [ProVal - Production - Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926) internal monitor the [Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) script doesn't have to be scheduled against the group anymore.
+- The [Windows - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script is modified to use the Shell function instead of the `Execute PowerShell` function, as Threatlocker was flagging it.
+- With the introduction of the [ProVal - Production - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) internal monitor the [Windows - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script doesn't have to be scheduled against the group anymore.
 
 **Note:**
-- It is suggested to use the [Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926) internal monitor to execute the script instead of scheduling it against groups.
+- It is suggested to use the [Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) internal monitor to execute the script instead of scheduling it against groups.
 
 ## Associated Content
 
@@ -36,38 +36,38 @@ The purpose of this solution is to pull certificate information that is meaningf
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) | Script | Gathers/sorts/imports SSL Certificate information into a custom table in the DB. |
-| [plugin_proval_certs](https://proval.itglue.com/DOC-5078775-9262931) | Custom Table | Custom table made to hold the SSL Certificate information. |
-| [Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926) | Internal Monitor | Detects the computers where [Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) has not been executed in the past 7 days. |
-| △ Custom - Local Machine Certificate Audit | Alert Template | Execute [Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) script against the computers detected by the [Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926) internal monitor. |
-| [SSL Certificate Audit](https://proval.itglue.com/DOC-5078775-9382198) | Dataview | Displays a Comprehensive list of all certificates found with Expiration Status. |
+| [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) | Script | Gathers/sorts/imports SSL Certificate information into a custom table in the DB. |
+| [plugin_proval_certs](<../cwa/tables/plugin_proval_certs.md>) | Custom Table | Custom table made to hold the SSL Certificate information. |
+| [Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) | Internal Monitor | Detects the computers where [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) has not been executed in the past 7 days. |
+| △ Custom - Local Machine Certificate Audit | Alert Template | Execute [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script against the computers detected by the [Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) internal monitor. |
+| [SSL Certificate Audit](<../cwa/dataviews/SSL Certificate Audit.md>) | Dataview | Displays a Comprehensive list of all certificates found with Expiration Status. |
 
 ### Alerting
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Certificate Expiration \< 30 Days](https://proval.itglue.com/DOC-5078775-9256567) | Internal Monitor | This monitor looks at the [plugin_proval_certs](https://proval.itglue.com/DOC-5078775-9262931) table for any SSL certs that have an expiration date of less than 30 days. |
-| [Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) | Script | Creates a ticket using the alerting info in the monitor. Adds more detailed information to the ticket. |
-| △ Custom - Ticket Creation - Computer | Alert Template | Executes [Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script |
+| [Certificate Expiration \< 30 Days](<../cwa/monitors/Certificate Expiration  30 Days.md>) | Internal Monitor | This monitor looks at the [plugin_proval_certs](<../cwa/tables/plugin_proval_certs.md>) table for any SSL certs that have an expiration date of less than 30 days. |
+| [Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) | Script | Creates a ticket using the alerting info in the monitor. Adds more detailed information to the ticket. |
+| △ Custom - Ticket Creation - Computer | Alert Template | Executes [Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script |
 
 ## Implementation
 
 1. Import/Update the following content using the `Prosync` plugin:  
    **For Auditing Only:**
-   - [Script - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568)
-   - [Internal Monitor - Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926)
-   - [Dataview - SSL Certificate Audit](https://proval.itglue.com/DOC-5078775-9382198)
+   - [Script - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
+   - [Internal Monitor - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>)
+   - [Dataview - SSL Certificate Audit](<../cwa/dataviews/SSL Certificate Audit.md>)
    - Alert Template - △ Custom - Local Machine Certificate Audit
 
    **For Alerting:**
-   - [Internal Monitor - Certificate Expiration \< 30 Days](https://proval.itglue.com/DOC-5078775-9256567)
-   - [Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+   - [Internal Monitor - Certificate Expiration \< 30 Days](<../cwa/monitors/Certificate Expiration  30 Days.md>)
+   - [Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>)
    - Alert Template - △ Custom - Ticket Creation - Computer
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Certificate-Audit-Solution/image_1.png)
 
-3. Execute the [Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) script against any online Windows computer to create the [plugin_proval_certs](https://proval.itglue.com/DOC-5078775-9262931) custom table.  
+3. Execute the [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script against any online Windows computer to create the [plugin_proval_certs](<../cwa/tables/plugin_proval_certs.md>) custom table.  
    ![Execute Script](../../static/img/Certificate-Audit-Solution/image_2.png)
 
 4. Skip this step for new implementation.  
@@ -78,7 +78,7 @@ The purpose of this solution is to pull certificate information that is meaningf
 
 5. Configure the auditing solution as outlined below:  
    Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-   - [Internal Monitor - Local Machine Certificate Audit](https://proval.itglue.com/DOC-5078775-17232926)  
+   - [Internal Monitor - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>)  
      - `Alert Template: △ Custom - Local Machine Certificate Audit`
      - The monitor should be targeting the following groups:
        - Service Plans.Windows Servers.Server Roles.Windows Messaging Servers
@@ -94,9 +94,10 @@ The purpose of this solution is to pull certificate information that is meaningf
 6. Please ensure that the alerting solution is implemented only after the consultant has confirmed it.  
    Configure the alerting solution as outlined below:  
    Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-   - [Internal Monitor - Certificate Expiration \< 30 Days](https://proval.itglue.com/DOC-5078775-9256567)  
+   - [Internal Monitor - Certificate Expiration \< 30 Days](<../cwa/monitors/Certificate Expiration  30 Days.md>)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and Run Now to start the monitor
+
 
 
 

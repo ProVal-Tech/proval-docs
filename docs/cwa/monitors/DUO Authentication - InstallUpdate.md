@@ -29,7 +29,7 @@ Computer Exclusion EDFs:
 
 ## Dependencies
 
-[Script - DUO Install/Upgrade - Latest Version](https://proval.itglue.com/DOC-5078775-9713528)
+[Script - DUO Install/Upgrade - Latest Version](<../scripts/DUO InstallUpgrade - Latest Version.md>)
 
 ## Target
 
@@ -51,6 +51,7 @@ Failed to Install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When Argument Missing**  
 Arguments required to install DUO Authentication for Windows Login is not set.
+
 
 
 

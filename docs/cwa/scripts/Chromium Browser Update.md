@@ -27,7 +27,7 @@ Ticketing is optional if global parameter is set to a ticket category above 0.
 
 ## Dependencies
 
-Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium Browser Outdated [G]](https://proval.itglue.com/DOC-5078775-9595565)
+Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium Browser Outdated [G]](<../monitors/ProVal - Chromium Browser Outdated G.md>)
 
 #### Global Parameters
 
@@ -48,6 +48,7 @@ Resends software to Automate server and performs basic checking for new version 
 
 - Script log
 - Optional - Ticketing
+
 
 
 

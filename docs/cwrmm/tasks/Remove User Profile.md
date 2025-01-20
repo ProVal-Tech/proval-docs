@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Deletes a user profile and removes the user account if local. CW RMM implementation of the agnostic script [Remove-UserProfile](https://proval.itglue.com/DOC-5078775-8475171).
+Deletes a user profile and removes the user account if local. CW RMM implementation of the agnostic script [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Deletes a user profile and removes the user account if local. CW RMM implementat
 
 ## Dependencies
 
-[EPM - Accounts - Agnostic - Remove-UserProfile](https://proval.itglue.com/DOC-5078775-8475171)
+[EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-UserProfile.md>)
 
 ## User Parameters
 
@@ -173,6 +173,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

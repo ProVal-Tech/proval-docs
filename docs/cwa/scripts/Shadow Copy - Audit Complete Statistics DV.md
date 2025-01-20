@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script records data related to Shadow Copy for individual systems into a [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668).
+This script records data related to Shadow Copy for individual systems into a [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>).
 
 Note: Get the below MD5 file hash whitelisted for the script to work in the environment where threatlocker or any blocking application is installed.  
 MD5 FileHash: `E69A5AD2CDCF7B20C7205D4A7BEC08C4`  
@@ -23,20 +23,20 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-- [Dataview - Windows - Shadow Copy State [Script]](https://proval.itglue.com/DOC-5078775-8105265)  
-- [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668)
+- [Dataview - Windows - Shadow Copy State [Script]](<../dataviews/Windows - Shadow Copy State Script.md>)  
+- [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)
 
 ## System Property
 
 | Name                              | Example | Required | Default | Description                                                                                                                                                                   |
 |-----------------------------------|---------|----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Proval_ShadowCopyMaxAgeInDays     | 10      | True     | 10      | It is required to set so that the [Monitor - Missing Recent ShadowCopy [Autofix]](https://proval.itglue.com/DOC-5078775-8057145) can trigger this script to run as autofix to collect latest data. |
+| Proval_ShadowCopyMaxAgeInDays     | 10      | True     | 10      | It is required to set so that the [Monitor - Missing Recent ShadowCopy [Autofix]](<../monitors/Execute Script - Shadow Copy - Audit Complete Statistics.md>) can trigger this script to run as autofix to collect latest data. |
 
 ## Process
 
 This script will first verify that the target system is a Windows-based device, or it will exit the script.
 
-The script will verify that the [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668) custom table has been created, if it does not exist in the DB it will create it. 
+The script will verify that the [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>) custom table has been created, if it does not exist in the DB it will create it. 
 
 The script will then ensure that the data for the target machine is removed so it can be updated.
 
@@ -47,8 +47,9 @@ The script will run the SQL statement above against the Automate server to inser
 ## Output
 
 - Script logs.
-- Custom table [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668).
-- Dataview [Dataview - Windows - Shadow Copy State [Script]](https://proval.itglue.com/DOC-5078775-8105265).
+- Custom table [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>).
+- Dataview [Dataview - Windows - Shadow Copy State [Script]](<../dataviews/Windows - Shadow Copy State Script.md>).
+
 
 
 

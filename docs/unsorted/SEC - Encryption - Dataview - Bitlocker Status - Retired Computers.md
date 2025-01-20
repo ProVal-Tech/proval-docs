@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-This dataview displays the Bitlocker information on all retired computers that have run the [Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478). This Bitlocker information consists of the Bitlocker status of machine drives, information about key protectors, TPM status, and the backup status in Active Directory.
+This dataview displays the Bitlocker information on all retired computers that have run the [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). This Bitlocker information consists of the Bitlocker status of machine drives, information about key protectors, TPM status, and the backup status in Active Directory.
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520)
-- [CWM - Automate - Custom Table - plugin_proval_tpm_audit](https://proval.itglue.com/DOC-5078775-11140597)
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](https://proval.itglue.com/DOC-5078775-9045330)
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>)
+- [CWM - Automate - Custom Table - plugin_proval_tpm_audit](<../cwa/tables/plugin_proval_tpm_audit.md>)
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../cwa/tables/plugin_proval_ad_bitlocker_keyprotectors.md>)
 
 ## Columns
 
@@ -57,6 +57,7 @@ This dataview displays the Bitlocker information on all retired computers that h
 | TPM Version              | It contains the TPM Version number.                                                                                                                                       |
 | TPMOwned                 | The TPM Owned state of the target.                                                                                                                                       |
 | TPMActivated             | The activation state of the TPM on the target.                                                                                                                           |
+
 
 
 

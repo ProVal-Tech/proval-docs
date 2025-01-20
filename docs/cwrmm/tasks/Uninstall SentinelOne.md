@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal. CW RMM implementation of the agnostic script [Remove SentinelOne](https://proval.itglue.com/DOC-5078775-15292446).
+This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal. CW RMM implementation of the agnostic script [Remove SentinelOne](<../../unsorted/EPM - Software Uninstall - Agnostic - Remove SentinelOne.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This script identifies the installed version of the SentinelOne agent and attemp
 
 ## Dependencies
 
-[EPM - Software Uninstall - Agnostic - Remove SentinelOne](https://proval.itglue.com/DOC-5078775-15292446)
+[EPM - Software Uninstall - Agnostic - Remove SentinelOne](<../../unsorted/EPM - Software Uninstall - Agnostic - Remove SentinelOne.md>)
 
 ## User Parameters
 
@@ -168,6 +168,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

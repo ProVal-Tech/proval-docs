@@ -14,7 +14,7 @@ The groups below are created to deploy the [Task - Clear/Audit - Browser Saved P
 
 ## Dependencies
 
-[Custom Field - Clear/Audit Browsers Saved Password](https://proval.itglue.com/DOC-5078775-17312650)
+[Custom Field - Clear/Audit Browsers Saved Password](<../custom-fields/ClearAudit Browsers Saved Password.md>)
 
 ## Details
 
@@ -69,6 +69,7 @@ Criteria:
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
+
 
 
 

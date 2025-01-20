@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-Displays Windows user profile information gathered from the script [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496).
+Displays Windows user profile information gathered from the script [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>).
 
 ## Dependencies
 
-- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](https://proval.itglue.com/DOC-5078775-8476498)
-- [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496)
+- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>)
+- [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
 
 ## Columns
 
@@ -34,6 +34,7 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | IsAdmin        | Shows if the user is a local admin.                                                                      |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
+
 
 
 

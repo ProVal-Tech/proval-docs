@@ -15,13 +15,14 @@ This monitor will detect agents where shadow copies are not present or older tha
 ## Dependencies
 
 - @ProVal_ShadowCopyRemoveMaxInDays - System Property.
-- [Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)  
+- [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)  
   @ShadowCopy - Create [Global,Autofix] -- Autofix script
 - @plugin_proval_shadowcopystats - Custom Table
 
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
 
 
 

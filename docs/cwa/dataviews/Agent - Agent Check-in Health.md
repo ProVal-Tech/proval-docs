@@ -15,8 +15,8 @@ This dataview will provide information about an agent's check-in status in CWA a
 ## Dependencies
 
 - [CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
-- [Script - ScreenConnect Client - Connectivity - Audit*](https://proval.itglue.com/DOC-5078775-8143436)
-- [Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441)
+- [Script - ScreenConnect Client - Connectivity - Audit*](<../scripts/ScreenConnect Client - Connectivity - Audit.md>)
+- [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
 
 ## Columns
 
@@ -28,12 +28,13 @@ This dataview will provide information about an agent's check-in status in CWA a
 | Status                        | Status of whether the agent is offline in Automate.Offline - The computer is offline in Automate as well as in ScreenConnect.Broken - The script ran against the agent, but was not able to bring the Automate agent online.Undetermined - RMM+ Solution is not configured properly.Not Run Yet -- The script has not been run against this agent yet. |
 | Last Contact                  | Last contact of the agent with the Automate server.                                                                 |
 | Last Contact ScreenConnect     | Last Contact of the agent with the ScreenConnect Portal.                                                            |
-| Last Script Check             | Last run date of the [Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441) on the agent. |
+| Last Script Check             | Last run date of the [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>) on the agent. |
 | Operating System              | Operating System of the Computer.                                                                                    |
-| Command Output                | Output of the command ran by [Script - ScreenConnect Client - Connectivity - Audit*](https://proval.itglue.com/DOC-5078775-8143436) to verify the current status of the computer in ScreenConnect portal. |
+| Command Output                | Output of the command ran by [Script - ScreenConnect Client - Connectivity - Audit*](<../scripts/ScreenConnect Client - Connectivity - Audit.md>) to verify the current status of the computer in ScreenConnect portal. |
 | Clientid                     | Clientid (Hidden)                                                                                                   |
 | Locationid                   | Locationid (Hidden)                                                                                                 |
 | Computerid                   | Computerid (Hidden)                                                                                                 |
+
 
 
 

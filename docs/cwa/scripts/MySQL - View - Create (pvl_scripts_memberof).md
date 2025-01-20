@@ -10,11 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the script is to create the MySQL View [CWM - Automate - Custom View - pvl_scripts_memberof](https://proval.itglue.com/DOC-5078775-13700065) for [CWM - Automate - Dataview - Scripts - MemberOf](https://proval.itglue.com/DOC-5078775-10390968) dataview.
+The purpose of the script is to create the MySQL View [CWM - Automate - Custom View - pvl_scripts_memberof](<../views/pvl_scripts_memberof.md>) for [CWM - Automate - Dataview - Scripts - MemberOf](<../dataviews/Scripts - MemberOf.md>) dataview.
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---View---Create-(pvl_scripts_memberof)/image_1.png)
+
 
 
 

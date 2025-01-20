@@ -14,11 +14,11 @@ The group will detect the computers where the Latest Cumulative Update Custom Fi
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Latest Cumulative Update](https://proval.itglue.com/DOC-5078775-14029450)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](https://proval.itglue.com/DOC-5078775-15748265)
-- [CW RMM - Custom Field - Company - Out_of_Date_CU_Autofix](https://proval.itglue.com/DOC-5078775-15748259)
-- [CW RMM Custom Field - Site - Out_of_Date_CU_Autofix](https://proval.itglue.com/DOC-5078775-15748260)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix](https://proval.itglue.com/DOC-5078775-15748262)
+- [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
+- [CW RMM - Custom Field - Company - Out_of_Date_CU_Autofix](<../custom-fields/Company - Out_of_Date_CU_Autofix.md>)
+- [CW RMM Custom Field - Site - Out_of_Date_CU_Autofix](<../custom-fields/Site - Out_of_Date_CU_Autofix.md>)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix.md>)
 
 ## Group Creation
 
@@ -213,6 +213,7 @@ Click the `Save` button to save/create the group.
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_46.png)
 
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_47.png)
+
 
 
 

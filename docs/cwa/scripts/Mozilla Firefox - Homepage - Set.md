@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-It is an Automate implementation of the agnostic script [SWM - Software Configuration - Set-FirefoxHomepage](https://proval.itglue.com/DOC-5078775-7348110) to set the default homepage for the Mozilla Firefox browser.
+It is an Automate implementation of the agnostic script [SWM - Software Configuration - Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>) to set the default homepage for the Mozilla Firefox browser.
 
 ## Sample Run
 
@@ -18,7 +18,7 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-FirefoxHomepage](https://proval.itglue.com/DOC-5078775-7348110)
+[SWM - Software Configuration - Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>)
 
 #### User Parameters
 
@@ -30,6 +30,7 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Logs
+
 
 
 

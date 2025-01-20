@@ -14,8 +14,8 @@ The custom table stores the information of the repaired computers.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Track Repaired Agents](https://proval.itglue.com/DOC-5078775-15178447)
-- [CWM - Automate - Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441)
+- [CWM - Automate - Script - Track Repaired Agents](<../scripts/Track Repaired Agents.md>)
+- [CWM - Automate - Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ The custom table stores the information of the repaired computers.
 | location     | varchar  | Location Name       |
 | computer     | varchar  | Computer Name       |
 | RepairTime   | datetime | Agent Repair Time   |
+
 
 
 

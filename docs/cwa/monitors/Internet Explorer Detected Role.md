@@ -16,8 +16,8 @@ Alert Template: ~Autofix - Disable Internet Explorer
 
 ## Dependencies
 
-- [CWM - Automate - Script - Internet Explorer - Disable [Global, DV, Autofix]](https://proval.itglue.com/DOC-5078775-10220659)
-- [CWM - Automate - Role - Internet Explorer Installed](https://proval.itglue.com/DOC-5078775-10731232)
+- [CWM - Automate - Script - Internet Explorer - Disable [Global, DV, Autofix]](<../scripts/Internet Explorer - Disable Global, DV, Autofix.md>)
+- [CWM - Automate - Role - Internet Explorer Installed](<../roles/Internet Explorer Installed.md>)
 
 ## Target
 
@@ -49,6 +49,7 @@ WHERE
   AND c.lastcontact > NOW() - Interval 15 Minute
   Group By C.Computerid
 ```
+
 
 
 

@@ -16,19 +16,20 @@ The purpose of this solution is to provide a quick and easy way to modify the wi
 
 | Content                                                                                      | Type    | Function                                                                                                                      |
 |----------------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------|
-| [EPM - Windows Configuration - Script - Hosts File - Audit](https://proval.itglue.com/DOC-5078775-9106329) | Script  | This script gathers information on the contents of the windows host file and outputs them to the Host File Contents EDF.     |
-| [EPM - Windows Configuration - Script - Hosts File - Add](https://proval.itglue.com/DOC-5078775-9106955)   | Script  | This script takes user parameters set when running the script and adds a host file entry to the machines host file and runs a ipconfig /flushdns. |
-| [EPM - Windows Configuration - Script - Hosts File - Reset](https://proval.itglue.com/DOC-5078775-9107163)  | Script  | This script will reset the host file to defaults, removing any and all customizations and then run a ipconfig /flushdns.    |
-| [CWM - Automate - Dataview - Hosts File - Audit [Script]](https://proval.itglue.com/DOC-5078775-10894199)   | Dataview| It shows the Uncommented content of the Host File at a single place.                                                          |
+| [EPM - Windows Configuration - Script - Hosts File - Audit](<../cwa/scripts/Hosts File - Audit.md>) | Script  | This script gathers information on the contents of the windows host file and outputs them to the Host File Contents EDF.     |
+| [EPM - Windows Configuration - Script - Hosts File - Add](<../cwa/scripts/Hosts File - Add.md>)   | Script  | This script takes user parameters set when running the script and adds a host file entry to the machines host file and runs a ipconfig /flushdns. |
+| [EPM - Windows Configuration - Script - Hosts File - Reset](<../cwa/scripts/Hosts File - Reset.md>)  | Script  | This script will reset the host file to defaults, removing any and all customizations and then run a ipconfig /flushdns.    |
+| [CWM - Automate - Dataview - Hosts File - Audit [Script]](<../cwa/dataviews/Hosts File - Audit Script.md>)   | Dataview| It shows the Uncommented content of the Host File at a single place.                                                          |
 
 ## Implementation
 
 1. Import the following scripts
-   1. [EPM - Windows Configuration - Script - Hosts File - Audit](https://proval.itglue.com/DOC-5078775-9106329)  
-   2. [EPM - Windows Configuration - Script - Hosts File - Add](https://proval.itglue.com/DOC-5078775-9106955)  
-   3. [EPM - Windows Configuration - Script - Hosts File - Reset](https://proval.itglue.com/DOC-5078775-9107163)  
-2. Import the Dataview [CWM - Automate - Dataview - Hosts File - Audit [Script]](https://proval.itglue.com/DOC-5078775-10894199)  
-3. Schedule the Script [EPM - Windows Configuration - Script - Hosts File - Audit](https://proval.itglue.com/DOC-5078775-9106329) to run against the desired computers at a regular interval to keep the dataview up to date.
+   1. [EPM - Windows Configuration - Script - Hosts File - Audit](<../cwa/scripts/Hosts File - Audit.md>)  
+   2. [EPM - Windows Configuration - Script - Hosts File - Add](<../cwa/scripts/Hosts File - Add.md>)  
+   3. [EPM - Windows Configuration - Script - Hosts File - Reset](<../cwa/scripts/Hosts File - Reset.md>)  
+2. Import the Dataview [CWM - Automate - Dataview - Hosts File - Audit [Script]](<../cwa/dataviews/Hosts File - Audit Script.md>)  
+3. Schedule the Script [EPM - Windows Configuration - Script - Hosts File - Audit](<../cwa/scripts/Hosts File - Audit.md>) to run against the desired computers at a regular interval to keep the dataview up to date.
+
 
 
 

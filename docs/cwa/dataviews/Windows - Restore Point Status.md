@@ -14,7 +14,7 @@ The dataview displays the status of the Restore point for workstations.
 
 ## Dependencies
 
-- [Restore Point - Enabled](https://proval.itglue.com/DOC-5078775-7970528)
+- [Restore Point - Enabled](<../roles/Restore Point - Enabled.md>)
 
 ## Columns
 
@@ -25,6 +25,7 @@ The dataview displays the status of the Restore point for workstations.
 | Computer Name       | Computer name.                                            |
 | OS                  | Displays the operating system of the agents.               |
 | Restore Point Status | Displays if the Restore point is Enabled or Disabled on the computers. |
+
 
 
 

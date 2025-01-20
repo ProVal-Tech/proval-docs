@@ -58,7 +58,7 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-Application](https://proval.itglue.com/DOC-5078775-10677467)
+[SWM - Software Uninstall - Agnostic - Remove-Application](<../../powershell/Remove-Application.md>)
 
 ## Variables
 
@@ -103,6 +103,7 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 **Example:**  
 ![Ticketing Example](../../../static/img/Remove-Application/image_8.png)
+
 
 
 

@@ -16,19 +16,20 @@ This solution helps to allow users to trigger the reboot immediately or schedule
 
 | Content                                                                                      | Type          | Function                                                                                                      |
 |----------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------|
-| [Custom Fields - Reboot Trigger/Schedule](https://proval.itglue.com/DOC-5078775-15502216) | Custom Fields | The below custom fields are used in the Reboot Schedule Solution.                                            |
-| [Force Reboot Workstation With Reboot Windows Verification](https://proval.itglue.com/DOC-5078775-15505514) | Task          | This script is designed to reboot the workstations endpoints based on the customfield @WorkstationRebootWindowStart@, @WorkstationRebootWindowEnd@, and @WorkstationRebootWindowDay@. If the reboot time does not fall between the windows then the reboot will not trigger. |
-| [Force Reboot Server With Reboot Windows Verification](https://proval.itglue.com/DOC-5078775-15505510) | Task          | This script is designed to reboot the endpoints based on the customfield @ServerRebootWindowStart@, @ServerRebootWindowEnd@, and @ServerRebootWindowDay@. If the reboot time does not fall between the windows then reboot will not trigger. |
-| [Server Reboot Schedule on Specific Days](https://proval.itglue.com/DOC-5078775-15503048) | Task          | This schedules the force reboot of the server on the scheduled days based on the approved window check.      |
-| [Workstation Reboot Schedule on Specific Days](https://proval.itglue.com/DOC-5078775-15505168) | Task          | This schedules the force reboot of the workstation on the scheduled days based on the approved window check.  |
+| [Custom Fields - Reboot Trigger/Schedule](<../cwrmm/custom-fields/Reboot TriggerSchedule.md>) | Custom Fields | The below custom fields are used in the Reboot Schedule Solution.                                            |
+| [Force Reboot Workstation With Reboot Windows Verification](<../cwrmm/tasks/Force Reboot Workstation With Reboot Windows Verification.md>) | Task          | This script is designed to reboot the workstations endpoints based on the customfield @WorkstationRebootWindowStart@, @WorkstationRebootWindowEnd@, and @WorkstationRebootWindowDay@. If the reboot time does not fall between the windows then the reboot will not trigger. |
+| [Force Reboot Server With Reboot Windows Verification](<../cwrmm/tasks/Force Reboot Server With Reboot Windows Verification.md>) | Task          | This script is designed to reboot the endpoints based on the customfield @ServerRebootWindowStart@, @ServerRebootWindowEnd@, and @ServerRebootWindowDay@. If the reboot time does not fall between the windows then reboot will not trigger. |
+| [Server Reboot Schedule on Specific Days](<../cwrmm/tasks/Server Reboot Schedule on Specific Days.md>) | Task          | This schedules the force reboot of the server on the scheduled days based on the approved window check.      |
+| [Workstation Reboot Schedule on Specific Days](<../cwrmm/tasks/Workstation Reboot Schedule on Specific Days.md>) | Task          | This schedules the force reboot of the workstation on the scheduled days based on the approved window check.  |
 
 ## Implementation
 
-- Create the [Custom Fields - Reboot Trigger/Schedule](https://proval.itglue.com/DOC-5078775-15502216)
-- Create the [Force Reboot Workstation With Reboot Windows Verification](https://proval.itglue.com/DOC-5078775-15505514) and follow the deployment instructions.
-- Create the [Force Reboot Server With Reboot Windows Verification](https://proval.itglue.com/DOC-5078775-15505510) and follow the deployment instructions.
-- Create the [Server Reboot Schedule on Specific Days](https://proval.itglue.com/DOC-5078775-15503048) and follow the deployment instructions.
-- Create the [Workstation Reboot Schedule on Specific Days](https://proval.itglue.com/DOC-5078775-15505168) and follow the deployment instructions.
+- Create the [Custom Fields - Reboot Trigger/Schedule](<../cwrmm/custom-fields/Reboot TriggerSchedule.md>)
+- Create the [Force Reboot Workstation With Reboot Windows Verification](<../cwrmm/tasks/Force Reboot Workstation With Reboot Windows Verification.md>) and follow the deployment instructions.
+- Create the [Force Reboot Server With Reboot Windows Verification](<../cwrmm/tasks/Force Reboot Server With Reboot Windows Verification.md>) and follow the deployment instructions.
+- Create the [Server Reboot Schedule on Specific Days](<../cwrmm/tasks/Server Reboot Schedule on Specific Days.md>) and follow the deployment instructions.
+- Create the [Workstation Reboot Schedule on Specific Days](<../cwrmm/tasks/Workstation Reboot Schedule on Specific Days.md>) and follow the deployment instructions.
+
 
 
 

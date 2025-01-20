@@ -18,8 +18,8 @@ This script will create the `plugin_proval_dns_extradata` table and populate tha
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](https://proval.itglue.com/DOC-5078775-11976196)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+- [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](<./PowerShell Environment Setup Verification.md>)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
 
@@ -27,13 +27,13 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name               | Description                                                                                                                                       |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| finishstatus       | The finish status of the [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](https://proval.itglue.com/DOC-5078775-11976196) script. |
+| finishstatus       | The finish status of the [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](<./PowerShell Environment Setup Verification.md>) script. |
 | WorkingDirectory    | The directory to populate a .json file to be parsed and added to the table.                                                                    |
 | JsonFileName       | The name of the Json file to be created by the script.                                                                                          |
 | psout              | The results of a PowerShell command.                                                                                                            |
-| SQLStartStatement   | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)             |
-| SQLTailString      | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)             |
-| DataPointNames     | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)             |
+| SQLStartStatement   | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)             |
+| SQLTailString      | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)             |
+| DataPointNames     | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)             |
 
 #### Global Parameters
 
@@ -44,7 +44,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Process
 
-1. Utilize the new [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](https://proval.itglue.com/DOC-5078775-11976196) script to determine if this script will operate as expected.
+1. Utilize the new [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](<./PowerShell Environment Setup Verification.md>) script to determine if this script will operate as expected.
 2. Check for a failure to the verification script; if failed, log an error and exit with error.
 3. Create the table.
 4. Run a PowerShell command to obtain the DNS objects and necessary data and save it to a .json file.
@@ -53,6 +53,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This Script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](https://proval.itglue.com/DOC-5078775-11867749) view.
+This Script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../views/Plugin_ProVal_V_Patch_Count_Status.md>) view.
 
 ## Sample Run
 
@@ -24,6 +24,7 @@ This Script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Sta
 ## Output
 
 - View
+
 
 
 

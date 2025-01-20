@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is an RMM implementation of the agnostic script [EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](https://proval.itglue.com/DOC-5078775-16017466) to manage the last logged-in user's information displayed on the Windows login screen.
+This is an RMM implementation of the agnostic script [EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](<../../powershell/Set-LastLoggedOnUser.md>) to manage the last logged-in user's information displayed on the Windows login screen.
 
 ## Sample Run
 
@@ -31,7 +31,7 @@ This is an RMM implementation of the agnostic script [EPM - User Management - Ag
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](https://proval.itglue.com/DOC-5078775-16017466)
+[EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](<../../powershell/Set-LastLoggedOnUser.md>)
 
 ## User Parameters
 
@@ -194,6 +194,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
 
 
 

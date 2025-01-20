@@ -18,19 +18,19 @@ This document outlines the multiple solutions that can be used to manage local a
 
 | Content                                                                                           | Type           | Function                                                                                                    |
 |---------------------------------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------|
-| [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633)                   | Solution       | This solution aims to establish a centralized local admin user for each client or computer                 |
-| [Windows Local Admin Account Process](https://proval.itglue.com/DOC-5078775-13026629)            | Internal Monitor| Detects the machine with missing or outdated credentials.                                                  |
-| [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774)        | Script         | Create/Update the user.                                                                                    |
+| [Windows Local Admin Process](<./Windows Local Admin Process.md>)                   | Solution       | This solution aims to establish a centralized local admin user for each client or computer                 |
+| [Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>)            | Internal Monitor| Detects the machine with missing or outdated credentials.                                                  |
+| [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>)        | Script         | Create/Update the user.                                                                                    |
 | △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update                              | Alert Template | Execute the script against the machines detected by the internal monitor.                                  |
-| [Windows - Admin Account Password Rotation Notification](https://proval.itglue.com/DOC-5078775-14357326) | Client Script  | This script sets the Ticket Creation or email sent for the password update made by the script 'Windows - Admin Account - Create/Update' |
+| [Windows - Admin Account Password Rotation Notification](<../cwa/scripts/Windows - Admin Account Password Rotation Notification.md>) | Client Script  | This script sets the Ticket Creation or email sent for the password update made by the script 'Windows - Admin Account - Create/Update' |
 
 #### Windows Domain Admin Process
 
 | Content                                                                                           | Type           | Function                                                                                                    |
 |---------------------------------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------|
-| [Windows Domain Admin Process](https://proval.itglue.com/DOC-5078775-13280371)                  | Solution       | This solution aims to establish a centralized domain admin for each domain.                               |
-| [Windows Domain Admin Account Process](https://proval.itglue.com/DOC-5078775-13280312)          | Internal Monitor| Detects the domain controller with missing or outdated credentials.                                        |
-| [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774)        | Script         | Create/Update the user.                                                                                    |
+| [Windows Domain Admin Process](<./Windows Domain Admin Process.md>)                  | Solution       | This solution aims to establish a centralized domain admin for each domain.                               |
+| [Windows Domain Admin Account Process](<../cwa/monitors/Windows Domain Admin Account Process.md>)          | Internal Monitor| Detects the domain controller with missing or outdated credentials.                                        |
+| [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>)        | Script         | Create/Update the user.                                                                                    |
 | △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update                              | Alert Template | Execute the script against the machines detected by the internal monitor.                                  |
 
 #### Local Admin Group Cleanup
@@ -38,7 +38,7 @@ This document outlines the multiple solutions that can be used to manage local a
 | Content                                                                                           | Type           | Function                                                                                                    |
 |---------------------------------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------|
 | [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783557)                     | Solution       | The purpose of the solution is to manage the members in the local admin group for the Windows machines.    |
-| [Local Admin Group Cleanup - Add/Remove](https://proval.itglue.com/DOC-5078775-16783511)        | Script         | Manage the addition and removal of members from the local admin group.                                     |
+| [Local Admin Group Cleanup - Add/Remove](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>)        | Script         | Manage the addition and removal of members from the local admin group.                                     |
 | [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)                     | Internal Monitor| Detects Windows computers where the local admin group cleanup process is enabled, but the script has not been executed in the past 7 days. |
 | △ Custom - Local Admin Group Cleanup                                                              | Alert Template | Run the script against the computers detected by the internal monitor.                                     |
 
@@ -46,17 +46,18 @@ This document outlines the multiple solutions that can be used to manage local a
 
 | Content                                                                                           | Type   | Function                                                                                                    |
 |---------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------|
-| [New Local Admin Monitor - Create](https://proval.itglue.com/DOC-5078775-16548726)              | Script | The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. |
+| [New Local Admin Monitor - Create](<../cwa/scripts/New Local Admin Monitor - Create.md>)              | Script | The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. |
 
 #### New Domain Admin Monitor
 
 | Content                                                                                           | Type   | Function                                                                                                    |
 |---------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------|
-| [New Domain Admin Monitor - Create](https://proval.itglue.com/DOC-5078775-16548733)            | Script | The script generates remote monitors that trigger an alert when a user or group of users are promoted as domain administrator on a Windows domain controller. |
+| [New Domain Admin Monitor - Create](<../cwa/scripts/New Domain Admin Monitor - Create.md>)            | Script | The script generates remote monitors that trigger an alert when a user or group of users are promoted as domain administrator on a Windows domain controller. |
 
 ## Implementation
 
 1. Please carefully review the solution documents for importation before implementation.
+
 
 
 

@@ -11,7 +11,7 @@ unlisted: false
 ## Summary
 
 Removes Sophos Endpoint Agent from the endpoint.  
-Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://proval.itglue.com/DOC-5078775-11944799)
+Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
 
 ## Example Agent Procedure Log
 
@@ -61,7 +61,7 @@ Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://proval.itglue
 ## Dependencies
 
 [SophosZap](https://download.sophos.com/tools/SophosZap.exe) needs to be in the managed files and the AP needs to be modified to point to it. Otherwise, SkipZap MUST be enabled on run or the AP will fail.  
-Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://proval.itglue.com/DOC-5078775-11944799)
+Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
 
 ## Process
 
@@ -74,6 +74,7 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://
 - ./Remove-Sophos-Log.txt
 - ./Remove-Sophos-Error.txt
 - Agent Procedure Log
+
 
 
 

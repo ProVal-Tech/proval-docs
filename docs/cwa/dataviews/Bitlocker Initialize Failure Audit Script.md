@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This dataview contains the computer record where the BitLocker initialization failed twice by the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](https://proval.itglue.com/DOC-5078775-16716755)".
+This dataview contains the computer record where the BitLocker initialization failed twice by the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)".
 
 ## Dependencies
 
-[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](https://proval.itglue.com/DOC-5078775-16716755)
+[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)
 
 ## Columns
 
@@ -26,6 +26,7 @@ This dataview contains the computer record where the BitLocker initialization fa
 | Operating System          | Operating system name of the agent                    |
 | LastContact               | Last contact of the agent with the CW Automate       |
 | Number of Failed Attempts  | The BitLocker initialization failed attempts count    |
+
 
 
 

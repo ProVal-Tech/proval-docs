@@ -21,7 +21,7 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 ## Dependencies
 
-[CWM - Automate - Script - Reboot Pending Servers per client - Tickets Management](https://proval.itglue.com/DOC-5078775-14262862)
+[CWM - Automate - Script - Reboot Pending Servers per client - Tickets Management](<./Reboot Pending Servers per client - Ticket Management.md>)
 
 ## Output
 
@@ -34,6 +34,7 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 **Computer-Level ticket:**  
 ![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
+
 
 
 

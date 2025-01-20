@@ -32,11 +32,12 @@ This agent procedure runs PowerShell to determine the initial install date of th
 ## Dependencies
 
 Agent procedure requires the custom field to be created in order to successfully run:  
-[https://proval.itglue.com/DOC-5078775-12637112](https://proval.itglue.com/DOC-5078775-12637112)
+[https://proval.itglue.com/DOC-5078775-12637112](<../custom-fields/xPVAL OS Install Date.md>)
 
 ## Output
 
 Agent procedure updates the custom field.
+
 
 
 

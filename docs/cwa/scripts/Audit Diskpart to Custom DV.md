@@ -19,7 +19,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-- [plugin_proval_diskpart_style](https://proval.itglue.com/DOC-5078775-8038983)  
+- [plugin_proval_diskpart_style](<../tables/plugin_proval_diskpart_style.md>)  
 - @Audit Disk Partition Styles - DV
 
 ## Process
@@ -31,6 +31,7 @@ Time Saved by Automation: 10 Minutes
 ## Output
 
 - Dataview
+
 
 
 

@@ -20,7 +20,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[Stuck Service Detection](https://proval.itglue.com/DOC-5078775-7819333)
+[Stuck Service Detection](<../monitors/Stuck Service Detection.md>)
 
 ## Variables
 
@@ -52,6 +52,7 @@ Time Saved by Automation: 10 Minutes
 - Script log
 - Script state
 - Ticket
+
 
 
 

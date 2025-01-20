@@ -18,7 +18,7 @@ Client, Location, and Computer-Level Exclusion EDF `Disable Reboot Prompt` has b
 
 Steps to import the updates:
 - Update the [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) script from the Prosync plugin.
-- Update the [Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) internal monitor from the Prosync plugin.
+- Update the [Reboot Pending [Prompt]](<../cwa/monitors/Reboot Pending Prompt.md>) internal monitor from the Prosync plugin.
 - Run the script [Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) **once** on any machine with user parameter `SetEnvironment` set to 1.
   
 ![Image](../../static/img/User-Prompt-for-Reboot/image_1.png)
@@ -31,15 +31,15 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Monitor - Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) | Internal Monitor | To monitor for machines the client decides need to be rebooted and issues a script to prompt the user. |
+| [Monitor - Reboot Pending [Prompt]](<../cwa/monitors/Reboot Pending Prompt.md>) | Internal Monitor | To monitor for machines the client decides need to be rebooted and issues a script to prompt the user. |
 | [Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) | Script | To physically handle the reboot prompting and execution. |
 | [Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) | Script | To clear all flags indicating the machine needs a reboot so they can be set again later. |
 | [Monitor - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) | Internal Monitor | This internal monitor is designed to detect the agents whose reboot was done by the script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It detects the agents and triggers the script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) to clear the EDFs so they can be re-triggered at another time. |
-| [Monitor - Machines with Login Bug Issue](https://proval.itglue.com/DOC-5078775-16966380) | Internal Monitor | This internal monitor detects the agents with Login Bug Issues and it has been more than 07 days since its detection and the machine has still not been rebooted. |
-| △ Custom - Autofix - Prompt for Reboot with Forced Reboot | Alert Template | This template is used with monitor [Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) to schedule the autofix script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). |
+| [Monitor - Machines with Login Bug Issue](<../cwa/monitors/Machines with Login Bug Issue.md>) | Internal Monitor | This internal monitor detects the agents with Login Bug Issues and it has been more than 07 days since its detection and the machine has still not been rebooted. |
+| △ Custom - Autofix - Prompt for Reboot with Forced Reboot | Alert Template | This template is used with monitor [Reboot Pending [Prompt]](<../cwa/monitors/Reboot Pending Prompt.md>) to schedule the autofix script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). |
 | △ Custom - Autofix - Reset Reboot Pending EDFs | Alert Template | This template is used with the monitor [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) to schedule the autofix script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421). |
-| △ Custom - Ticket Creation - Computer | Alert Template | This template is used with the monitor [Machines with Login Bug Issue](https://proval.itglue.com/DOC-5078775-16966380). |
-| [Dataview - User Prompt - Reboot [Audit]](https://proval.itglue.com/DOC-5078775-16112792) | Dataview | This dataview is designed to track the working of the [User Prompt for the Reboot](https://proval.itglue.com/DOC-5078775-9088563) solution. |
+| △ Custom - Ticket Creation - Computer | Alert Template | This template is used with the monitor [Machines with Login Bug Issue](<../cwa/monitors/Machines with Login Bug Issue.md>). |
+| [Dataview - User Prompt - Reboot [Audit]](<../cwa/dataviews/User Prompt - Reboot Audit.md>) | Dataview | This dataview is designed to track the working of the [User Prompt for the Reboot](<./User Prompt for Reboot.md>) solution. |
 
 ## Implementation
 
@@ -151,7 +151,7 @@ Then this will popup, explaining the reboot.
 | System Property: proval_RebootPromptUptimeDays | Automatically sets the reboot prompt flag after X days of machine uptime | 0 (Disabled) |
 | System Property: proval_RebootPromptWhenPendingReboot | Toggles this solution on the windows embedded reboot flag | 0 (Disabled) |
 | System Property: proval_RebootForceTimeDelayMin | Adjusts the time delay on the forced reboot in minutes | 5 |
-| System Property: Proval_RebootPromptUsePrompter | Use [Prompter](https://proval.itglue.com/DOC-5078775-10243074) instead of Automate's default Prompts/messages | 0 (Disabled) |
+| System Property: Proval_RebootPromptUsePrompter | Use [Prompter](<../cwa/scripts/Prompter.md>) instead of Automate's default Prompts/messages | 0 (Disabled) |
 
 ## Exclusion EDFs
 
@@ -160,6 +160,7 @@ Then this will popup, explaining the reboot.
 | Disable Reboot Prompt | CheckBox | Exclusions | Client | Flag this EDF to exclude the client from the solution. |
 | Disable Reboot Prompt | CheckBox | Exclusions | Location | Flag this EDF to exclude the location from the solution. |
 | Disable Reboot Prompt | CheckBox | Exclusions | Computer | Flag this EDF to exclude the computer from the solution. |
+
 
 
 

@@ -19,7 +19,7 @@ This script simply renames the current host file to have OLD in the name and rep
 ## Dependencies
 
 This script is dependent on the following items:
-- [Update EDF with Existing Host File Entries](https://proval.itglue.com/DOC-5078775-9106329)
+- [Update EDF with Existing Host File Entries](<./Hosts File - Audit.md>)
 - Host File Contents (Extra Data Field)
 
 ## Process
@@ -35,6 +35,7 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
   - ![Host File Contents](../../../static/img/Hosts-File---Reset/image_2.png)
+
 
 
 

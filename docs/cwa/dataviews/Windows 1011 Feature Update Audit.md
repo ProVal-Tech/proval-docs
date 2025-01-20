@@ -14,7 +14,7 @@ This dataview shows the Windows 10/11 complete listing with their build version 
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 
 ## Columns
 
@@ -43,6 +43,7 @@ This dataview shows the Windows 10/11 complete listing with their build version 
 |--------|------------|-------|--------|
 | EOL    | Equals     | Yes   | **\\<span style="color: rgb(178, 34, 34);">\\<span style="background-color: rgb(0, 0, 0);">Red\\</span>\\</span>** |
 | EOL    | Equals     | No    | **\\<span style="color: rgb(0, 128, 0);">Green\\</span>** |
+
 
 
 

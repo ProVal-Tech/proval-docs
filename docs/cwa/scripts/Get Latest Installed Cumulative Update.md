@@ -14,9 +14,9 @@ The purpose of the script is to fetch the latest installed Cumulative Update and
 e.g.,  
 ![Image](../../../static/img/Get-Latest-Installed-Cumulative-Update/image_1.png)  
 
-The data is then stored in the custom table [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460).  
+The data is then stored in the custom table [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>).  
 
-It is an Automate implementation of the agnostic script [EPM - Windows Update - Agnostic - Get-LatestInstalledCU](https://proval.itglue.com/DOC-5078775-13046597).  
+It is an Automate implementation of the agnostic script [EPM - Windows Update - Agnostic - Get-LatestInstalledCU](<../../powershell/Get-LatestInstalledCU.md>).  
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ProjectName           | Get-LatestInstalledCU                                                                                                                                       |
 | WorkingDirectory       | C:/ProgramData/_automation/script/Get-LatestInstalledCU                                                                                                     |
-| TableName             | [pvl_win_lastest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)                                                                             |
+| TableName             | [pvl_win_lastest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)                                                                             |
 | SQLReplaceStatement   | `REPLACE` statement returned by the PowerShell script to update the data in the custom table                                                                 |
 | OSBuild               | Full OS Build of the computer                                                                                                                                 |
 | MaxReleaseDate        | Maximum CU release Date stored in the database for the [@OSBuild@.](http://@OSBuild@.) Used to verify whether if the computer's history had returned correct CU information or not. |
@@ -37,6 +37,7 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 
 - Custom Table
 - Dataview
+
 
 
 

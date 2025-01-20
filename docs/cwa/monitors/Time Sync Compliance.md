@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -43,6 +43,7 @@ Insert the details of the monitor in the below table.
 ## How to Import
 
 [Import - Remote Monitor - Time Sync Compliance](https://proval.itglue.com/DOC-5078775-13498164)
+
 
 
 

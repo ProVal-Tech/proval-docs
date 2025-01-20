@@ -87,7 +87,8 @@ chrome                 4.55
 
 ## How to Import
 
-[Import - Remote Monitor - Memory Threshold Violation Monitor](https://proval.itglue.com/DOC-5078775-13276991)
+[Import - Remote Monitor - Memory Threshold Violation Monitor](<./Memory Threshold Violation Monitor.md>)
+
 
 
 

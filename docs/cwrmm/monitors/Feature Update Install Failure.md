@@ -15,7 +15,7 @@ Alerts on the computer where the `Feature Update Install with Tracking` script f
 ## Dependencies
 
 - [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
-- [CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845)
+- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
 
 ## Monitor
 
@@ -50,6 +50,7 @@ Alerts on the computer where the `Feature Update Install with Tracking` script f
    
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Failure/image_12.png)
+
 
 
 

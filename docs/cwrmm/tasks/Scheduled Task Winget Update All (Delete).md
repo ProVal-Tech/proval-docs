@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](https://proval.itglue.com/DOC-5078775-15702931) task.
+The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](<./Scheduled Task Winget Update All (Create).md>) task.
 
 ## Sample Run
 
@@ -20,9 +20,9 @@ The ultimate objective of the task is to remove the scheduled tasks (Winget Upda
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](https://proval.itglue.com/DOC-5078775-15702769)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](https://proval.itglue.com/DOC-5078775-15702796)
-- [CW RMM - Device Group - Winget Update All (Task Delete)](https://proval.itglue.com/DOC-5078775-15702936)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](<../custom-fields/Company - WingetUpdateAll_Task_Delete.md>)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](<../custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>)
+- [CW RMM - Device Group - Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>)
 
 ## Variables
 
@@ -123,7 +123,7 @@ Click the `Save` button at the top right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per day against the [Winget Update All (Task Delete)](https://proval.itglue.com/DOC-5078775-15702936) device group.
+It is suggested to run the Task once per day against the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Scheduled Task Winget Update All (Delete) Task.`
@@ -152,7 +152,7 @@ Select the `Device Groups` option in the `Targeted Resources` section.
 
 ![Device Groups](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_23.png)
 
-Search and Select the [Winget Update All (Task Delete)](https://proval.itglue.com/DOC-5078775-15702936) device group.
+Search and Select the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
 
 ![Device Group Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_24.png)
 
@@ -168,6 +168,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 - Script Log
+
 
 
 

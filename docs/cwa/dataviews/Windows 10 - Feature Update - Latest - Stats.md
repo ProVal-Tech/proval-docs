@@ -22,7 +22,7 @@ This dataview is intended to provide statistics regarding the Windows 10 - Featu
 ## Dependencies
 
 - [SEC - Windows Patching - Script - Windows 10 - Feature Update - Install Latest](https://proval.itglue.com/DOC-5078775-9744053)
-- [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](https://proval.itglue.com/DOC-5078775-9747193)
+- [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](<../scripts/Windows 10 Update Stats - Retrieve.md>)
 
 ## Columns
 
@@ -37,6 +37,7 @@ This dataview is intended to provide statistics regarding the Windows 10 - Featu
 | Success Count      | Displays the total times the Windows 10 Feature Update - Latest script was run and returned a Successful result for this version. |
 | Failure Count      | Displays the total times the Windows 10 Feature Update - Latest script was run and returned a failed result for this version. |
 | Total Attempts      | Displays the total times the Windows 10 Feature update attempted to push that Windows version on the specific computer. |
+
 
 
 

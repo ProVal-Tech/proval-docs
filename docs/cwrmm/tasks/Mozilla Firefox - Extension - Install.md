@@ -18,7 +18,7 @@ Installs Extension on Mozilla Firefox Browser.
 
 ## Dependencies
 
-[SWM - Software Configuration - Register-FirefoxExtension](https://proval.itglue.com/DOC-5078775-10372105)
+[SWM - Software Configuration - Register-FirefoxExtension](<../../powershell/Register-FirefoxExtension.md>)
 
 ## User Parameters
 
@@ -133,6 +133,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This Monitor is created by the [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199) automate script. It returns failed if the computer is offline, and success when online.
+This Monitor is created by the [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>) automate script. It returns failed if the computer is offline, and success when online.
 
 Internal Monitor settings:
 - Interval - 5 minute
@@ -28,10 +28,10 @@ Group level configuration:
 
 ## Dependencies
 
-- [CWM - Automate - Script - Run Queued Scripts](https://proval.itglue.com/DOC-5078775-10606200)
-- [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199)
-- [CWM - Automate - Solution - Queue Script Next Checkin](https://proval.itglue.com/DOC-5078775-10606186)
-- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](https://proval.itglue.com/DOC-5078775-10606190)
+- [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>)
+- [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>)
+- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
+- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>)
 
 ## Target
 
@@ -69,6 +69,7 @@ WHERE
       Tcomp
   )
 ```
+
 
 
 

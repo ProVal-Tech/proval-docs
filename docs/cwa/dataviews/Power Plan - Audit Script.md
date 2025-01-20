@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-The dataview displays the power plan settings gathered by the [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771) script.
+The dataview displays the power plan settings gathered by the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771)  
-- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](https://proval.itglue.com/DOC-5078775-15054015)  
-- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](https://proval.itglue.com/DOC-5078775-15053780)  
+- [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>)  
+- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](<../tables/pvl_powerplan_audit.md>)  
+- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](<../monitors/Execute Script - Power Plan - Audit.md>)  
 
 ## Columns
 
@@ -46,6 +46,7 @@ The dataview displays the power plan settings gathered by the [EPM - Data Collec
 ## Sample Screenshot
 
 \\<iframe src="https://proval.itglue.com/attachments/14048242?preview=1" width="100%" height="1000px" frameborder="0">\\</iframe>
+
 
 
 

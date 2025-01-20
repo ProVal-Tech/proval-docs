@@ -19,10 +19,10 @@ The script will attempt to modify the registry keys to disable fastboot on the W
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Disable_FastBoot](https://proval.itglue.com/DOC-5078775-16020399) 
-- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](https://proval.itglue.com/DOC-5078775-16020673) 
-- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](https://proval.itglue.com/DOC-5078775-16020404) 
-- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](https://proval.itglue.com/DOC-5078775-16020405) 
+- [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field  - Company - Disable_FastBoot.md>) 
+- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](<../custom-fields/Endpoint - FastBoot_Disabled.md>) 
+- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](<../custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) 
+- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](<../custom-fields/Site - Disable_Fastboot_Exclusion.md>) 
 - [CW RMM - Device Group - Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) 
 
 ## Task Creation
@@ -167,6 +167,7 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 
 - Script Log
 - Custom Field
+
 
 
 

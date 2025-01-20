@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script; however, instead of creating a ticket, it is designed to send the email to the email address provided in the system property.
+This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket, it is designed to send the email to the email address provided in the system property.
 
 This script sends email to two different addresses:
 
@@ -58,6 +58,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
+
 
 
 

@@ -10,30 +10,30 @@ unlisted: false
 ---
 ## Purpose
 
-To deny the patches in the default approval policy from [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records). This information can be viewed from [ProVal's Denied Patches](https://proval.itglue.com/DOC-5078775-9563172) dataview.
+To deny the patches in the default approval policy from [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records). This information can be viewed from [ProVal's Denied Patches](<../cwa/dataviews/ProVal's Denied Patches.md>) dataview.
 
 ## Associated Content
 
 | Content                                                                                                       | Type   | Function                                                                                                                                                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Fetch Denied Patch List From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/DOC-5078775-9563113) | Script | This is the primary script that'll save the [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records) to the [DeniedPatchReplace.sql](https://file.provaltech.com/repo/config/DeniedPatchReplace.sql) file on PVL-EUR-FILE-01. This script must not be altered or ran against another computer. |
-| [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) | Script | This script has to be imported to the partner's Automate and have to be scheduled to run in sync of the [Fetch Denied Patch List From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/DOC-5078775-9563113) script either against the Automate server or a local server. It's responsible for denying those patches. Also, it stores the patches in [plugin_proval_denied_patches](https://proval.itglue.com/DOC-5078775-9563176) table. |
+| [Fetch Denied Patch List From Centralized ITGLue KBIDs - Flexible Asset](<../cwa/scripts/Fetch Denied Patch List From Centralized ITGLue KBIDs.md>) | Script | This is the primary script that'll save the [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records) to the [DeniedPatchReplace.sql](https://file.provaltech.com/repo/config/DeniedPatchReplace.sql) file on PVL-EUR-FILE-01. This script must not be altered or ran against another computer. |
+| [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) | Script | This script has to be imported to the partner's Automate and have to be scheduled to run in sync of the [Fetch Denied Patch List From Centralized ITGLue KBIDs - Flexible Asset](<../cwa/scripts/Fetch Denied Patch List From Centralized ITGLue KBIDs.md>) script either against the Automate server or a local server. It's responsible for denying those patches. Also, it stores the patches in [plugin_proval_denied_patches](<../cwa/tables/plugin_proval_denied_patches.md>) table. |
 | [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Function](https://proval.itglue.com/5078775/docs/9564856) | Script | This script is called by the [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) script to deny the patches for the default patching policy.                                                                                                                                            |
-| [plugin_proval_denied_patches](https://proval.itglue.com/DOC-5078775-9563176)                               | Custom Table | This table stores the information of the patches to deny or whatever in [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records) flexible asset.                                                                                                                                                                         |
-| [ProVal's Denied Patches](https://proval.itglue.com/DOC-5078775-9563172)                                   | Dataview | A dataview to let the partner's know of the patches denied by ProVal.                                                                                                                                                                                                                                                                                           |
+| [plugin_proval_denied_patches](<../cwa/tables/plugin_proval_denied_patches.md>)                               | Custom Table | This table stores the information of the patches to deny or whatever in [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records) flexible asset.                                                                                                                                                                         |
+| [ProVal's Denied Patches](<../cwa/dataviews/ProVal's Denied Patches.md>)                                   | Dataview | A dataview to let the partner's know of the patches denied by ProVal.                                                                                                                                                                                                                                                                                           |
 
 ## Implementation
 
 Step 1: Import the [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) script.  
 Step 2: Import the [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Function](https://proval.itglue.com/5078775/docs/9564856) script.  
-Step 3: Import the [ProVal's Denied Patches](https://proval.itglue.com/DOC-5078775-9563172) dataview.  
+Step 3: Import the [ProVal's Denied Patches](<../cwa/dataviews/ProVal's Denied Patches.md>) dataview.  
 Step 4: Schedule the [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) script to run twice per day at 2:10 AM and 2:10 PM against the Automate server or a local server.  
 
-Note: I have mentioned this time here because the [Fetch Denied Patch List From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/DOC-5078775-9563113) script is scheduled to run at 2:00 AM and 2:00 PM daily against PVL-EUR-FILE-01. 
+Note: I have mentioned this time here because the [Fetch Denied Patch List From Centralized ITGLue KBIDs - Flexible Asset](<../cwa/scripts/Fetch Denied Patch List From Centralized ITGLue KBIDs.md>) script is scheduled to run at 2:00 AM and 2:00 PM daily against PVL-EUR-FILE-01. 
 
 ## FAQ
 
-**Q:** Is there a way to not deny the patches but to get data in [ProVal's Denied Patches](https://proval.itglue.com/DOC-5078775-9563172) dataview?  
+**Q:** Is there a way to not deny the patches but to get data in [ProVal's Denied Patches](<../cwa/dataviews/ProVal's Denied Patches.md>) dataview?  
 **A:** No.
 
 **Q:** Can we exclude a patch from denial?  
@@ -44,6 +44,7 @@ Note: I have mentioned this time here because the [Fetch Denied Patch List From 
 
 **Q:** Can we exclude an OS for a KB? eg, deny a KBID for Windows 10 version 1809 but let it be approved for Windows Server 2019.  
 **A:** No.
+
 
 
 

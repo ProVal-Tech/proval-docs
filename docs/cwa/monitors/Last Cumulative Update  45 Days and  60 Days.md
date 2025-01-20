@@ -16,10 +16,10 @@ The monitor set will not keep detecting the computers where a ticket is already 
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460) 
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) 
 - [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) 
-- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix] [without Ticketing]](https://proval.itglue.com/DOC-5078775-16208967) 
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) 
+- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix] [without Ticketing]](<../scripts/Out of Date Cumulative Updates Autofix without Ticketing.md>) 
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) 
 
 ## Target
 
@@ -29,7 +29,8 @@ Global
 
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
-The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](https://proval.itglue.com/DOC-5078775-14790498) script.
+The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](<../scripts/Out of Date Cumulative Updates Autofix.md>) script.
+
 
 
 

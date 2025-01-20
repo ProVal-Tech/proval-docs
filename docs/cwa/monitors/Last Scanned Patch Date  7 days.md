@@ -14,11 +14,12 @@ The monitor set will look for the machines where patch inventory is older than 7
 
 ## Dependencies
 
-[SEC - Windows Patching - Script - Repair Failing Patch Scans](https://proval.itglue.com/DOC-5078775-8918403)
+[SEC - Windows Patching - Script - Repair Failing Patch Scans](<../scripts/Repair Failing Patch Scans.md>)
 
 ## Target
 
 Global - Should be run without explicitly defined targets. The SQL will target machines with patching policies automatically.
+
 
 
 

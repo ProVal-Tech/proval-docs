@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Purpose
 
-Holds populated data from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506)  
-Created from [EPM - Disk - Script - Disk - Gather Critical Info](https://proval.itglue.com/DOC-5078775-9371128)  
+Holds populated data from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
+Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)  
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506)  
-- [EPM - Disk - Script - Disk - Gather Critical Info](https://proval.itglue.com/DOC-5078775-9371128)  
+- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
+- [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)  
 - [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639)  
 
 ## Tables
@@ -58,6 +58,7 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](https://proval.
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the Date of the last check                 |
+
 
 
 

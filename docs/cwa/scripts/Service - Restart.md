@@ -34,7 +34,7 @@ System Properties:
 
 ## Dependencies
 
-- [EPM -Windows Configuration - Agnostic - Invoke-RestartService](https://proval.itglue.com/DOC-5078775-11032222)
+- [EPM -Windows Configuration - Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
 
 ### Variables
 
@@ -81,6 +81,7 @@ From Group Monitor:
 - Script log (for detailed information on individual results)
 - Tickets (if enabled)
 - Emails (if enabled)
+
 
 
 

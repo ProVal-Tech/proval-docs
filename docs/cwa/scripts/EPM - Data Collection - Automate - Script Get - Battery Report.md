@@ -19,7 +19,7 @@ The intention of this script is to be an autofix on an internal monitor named Pr
 ## Dependencies
 
 - [EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
 
@@ -35,9 +35,10 @@ The intention of this script is to be an autofix on an internal monitor named Pr
 ## Process
 
 1. Create the custom table if it doesn't exist.
-2. Set up variables for [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355).
+2. Set up variables for [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>).
 3. Run Agnostic process ([EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)).
-4. Run Automate script process ([CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)).
+4. Run Automate script process ([CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)).
+
 
 
 

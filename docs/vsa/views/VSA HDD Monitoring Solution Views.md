@@ -20,9 +20,10 @@ List all filters applied to this view
 | Filter Name                             | Advanced Filter? | Filter Value                                                                                           |
 |-----------------------------------------|------------------|--------------------------------------------------------------------------------------------------------|
 | OS Type                                 | N                | All Servers (This can be changed as needed for workstation monitoring by removing this filter.)        |
-| [xPVAL Drive List](https://proval.itglue.com/DOC-5078775-10793262) | Y                | *C:*Each view contains its independent drive letter in its advanced filter.                       |
+| [xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>) | Y                | *C:*Each view contains its independent drive letter in its advanced filter.                       |
 | xPVAL Monitoring Managed                | Y                | *Managed*                                                                                            |
 | xPVAL Exclude from Monitoring           | Y                | NOT *1* AND NOT *yes*                                                                                |
+
 
 
 

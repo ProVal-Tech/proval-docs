@@ -16,24 +16,24 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 
 | Content                                                                                                 | Type       | Function                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](https://proval.itglue.com/DOC-5078775-15721390) | Script     | This script automates the updating of WinRE images on supported Windows OS. It updates the WinRE partition on deployed devices to address security vulnerabilities in CVE-2024-20666. Refer to article: [link](https://support.microsoft.com/en-us/topic/kb5034957-updating-the-winre-partition-on-deployed-devices-to-address-security-vulnerabilities-in-cve-2024-20666-0190331b-1ca3-42d8-8a55-7fc406910c10) |
-| [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](https://proval.itglue.com/DOC-5078775-15237727) | Dataview   | This dataview contains the status of the WinRE update on the agent stored by the script [CWA Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](https://proval.itglue.com/DOC-5078775-15721390) at computer-EDF 'Update WinRE Partition KB5034957'. |
-| [Internal Monitor - Update WinRE Partition Detection](https://proval.itglue.com/DOC-5078775-15725325) | Internal Monitor | This monitor detects the online Windows machine whose OS falls under the supported OS criteria detection using the query (c.os NOT REGEXP 'Windows.* (XP|20(03|12)|8|7)' AND c.version REGEXP '22(621|631|000)|190(41|42|44|45)|20348'). It also ensures to run the script once on the agent. |
-| **△ Custom - Execute Script - WinRE Partition Updating**                                                | Alert Template | This executes the script [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](https://proval.itglue.com/DOC-5078775-15721390) on the detected device of monitor [Update WinRE Partition Detection](https://proval.itglue.com/DOC-5078775-15725325). |
+| [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) | Script     | This script automates the updating of WinRE images on supported Windows OS. It updates the WinRE partition on deployed devices to address security vulnerabilities in CVE-2024-20666. Refer to article: [link](https://support.microsoft.com/en-us/topic/kb5034957-updating-the-winre-partition-on-deployed-devices-to-address-security-vulnerabilities-in-cve-2024-20666-0190331b-1ca3-42d8-8a55-7fc406910c10) |
+| [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](<../cwa/dataviews/KB5034957 - CVE-2024-20666 - WinRE Partition Update Status.md>) | Dataview   | This dataview contains the status of the WinRE update on the agent stored by the script [CWA Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) at computer-EDF 'Update WinRE Partition KB5034957'. |
+| [Internal Monitor - Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>) | Internal Monitor | This monitor detects the online Windows machine whose OS falls under the supported OS criteria detection using the query (c.os NOT REGEXP 'Windows.* (XP|20(03|12)|8|7)' AND c.version REGEXP '22(621|631|000)|190(41|42|44|45)|20348'). It also ensures to run the script once on the agent. |
+| **△ Custom - Execute Script - WinRE Partition Updating**                                                | Alert Template | This executes the script [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) on the detected device of monitor [Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>). |
 
 ## Other Content
 
 | Content                                                                                                 | Type       | Function                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](https://proval.itglue.com/DOC-5078775-15721389) | Agnostic   | Download the required CAB file for the endpoint to patch WinRE for CVE-2024-20666.                                                                                                                                         |
+| [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) | Agnostic   | Download the required CAB file for the endpoint to patch WinRE for CVE-2024-20666.                                                                                                                                         |
 
 ## Implementation
 
 1. **Import Contents:**
 
-   - [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](https://proval.itglue.com/DOC-5078775-15721390)
-   - [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](https://proval.itglue.com/DOC-5078775-15237727)
-   - [Internal Monitor - Update WinRE Partition Detection](https://proval.itglue.com/DOC-5078775-15725325)
+   - [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>)
+   - [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](<../cwa/dataviews/KB5034957 - CVE-2024-20666 - WinRE Partition Update Status.md>)
+   - [Internal Monitor - Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>)
    - **△ Custom - Execute Script - WinRE Partition Updating**
 
 2. **Reload the system cache:**
@@ -43,7 +43,7 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 3. **Enable Solution:**
 
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:  
-     [Internal Monitor - Update WinRE Partition Detection](https://proval.itglue.com/DOC-5078775-15725325)  
+     [Internal Monitor - Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>)  
      ![Setup Internal Monitor](../../static/img/Updating-the-WinRE-Partition/image_2.png)  
 
    - Setup with **△ Custom - Execute Script - WinRE Partition Updating** alert template.  
@@ -57,7 +57,7 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 4. **Audit Data:**
 
    The Dataview is built to store the result of the status for the Update WinRE partition.  
-   [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](https://proval.itglue.com/DOC-5078775-15237727)
+   [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](<../cwa/dataviews/KB5034957 - CVE-2024-20666 - WinRE Partition Update Status.md>)
 
 5. **Ticket/Email Creation:**
 
@@ -70,6 +70,7 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
    - To send emails, it is mandatory to set the Email address. Multiple email addresses can be set with a semicolon-separated  
      e.g., [abc@def.com](mailto:abc@def.com); [ghi@jkl.com](http://%3Bghi@jkl.com); [mno@pqr.com](http://%3Bmno@pqr.com)  
      Once the email address is set, you can set the value to 1 for the failureemail if you need an email only on the failure case, set 1 for successemail if you want an email for the success case, set 1 on both for both success and failure emails.
+
 
 
 

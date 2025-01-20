@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.com/DOC-5078775-15662701) agnostic script to uninstall Microsoft Visual C++ Redistributable. By default, the script will uninstall the unsupported redistributable unless a user parameter is set.
+An Automate implementation of the [Invoke-VcRedistModule](<../../powershell/Invoke-VcRedistModule.md>) agnostic script to uninstall Microsoft Visual C++ Redistributable. By default, the script will uninstall the unsupported redistributable unless a user parameter is set.
 
 ## Sample Run
 
@@ -33,6 +33,7 @@ An Automate implementation of the [Invoke-VcRedistModule](https://proval.itglue.
 ## Output
 
 - Script Log
+
 
 
 

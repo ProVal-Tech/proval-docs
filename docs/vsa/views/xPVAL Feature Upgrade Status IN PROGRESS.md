@@ -18,7 +18,8 @@ List all filters applied to this view
 
 | Filter Name                                                                                                                                       | Advanced Filter? | Filter Value   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|----------------|
-| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](https://proval.itglue.com/DOC-5078775-10784808) | Y                | "In Progress"  |
+| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Y                | "In Progress"  |
+
 
 
 

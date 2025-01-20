@@ -30,7 +30,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -140,7 +140,8 @@ The user pressed the power button.
 
 ## Implementation
 
-[Import - Remote Monitor - Unexpected Shutdown](https://proval.itglue.com/DOC-5078775-14936355)
+[Import - Remote Monitor - Unexpected Shutdown](<./Unexpected Shutdown.md>)
+
 
 
 

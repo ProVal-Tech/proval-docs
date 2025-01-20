@@ -14,7 +14,7 @@ Stores information about Windows restore points.
 
 ## Dependencies
 
-[Windows Restore Point Automation - Gather Only](https://proval.itglue.com/DOC-5078775-8094219)  
+[Windows Restore Point Automation - Gather Only](<../scripts/Windows Restore Point Automation - Gather Only.md>)  
 @Windows Restore Point Automation (Script)
 
 ## Table
@@ -27,6 +27,7 @@ Stores information about Windows restore points.
 | RestorePointDate     | DATETIME| The date that the audited restore point was taken.         |
 | RestorePointDescription | VARCHAR | The description of the audited restore point.              |
 | SequenceNumber       | INT     | The number of previous sequences that this restore point has been through. |
+
 
 
 

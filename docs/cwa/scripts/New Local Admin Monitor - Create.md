@@ -12,9 +12,9 @@ unlisted: false
 
 This document describes the process for creating remote monitors to identify new or elevated local administrators on Windows machines. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
 
-The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
+The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
 
-The generated remote monitors `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](https://proval.itglue.com/DOC-5078775-14068833) agnostic script to perform the monitoring.
+The generated remote monitors `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>) agnostic script to perform the monitoring.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-NewLocalAdmin/Get-NewLocalAdmin.ps1`
 
@@ -80,7 +80,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Get-NewLocalAdmin](https://proval.itglue.com/DOC-5078775-14068833)
+[EPM - User Management - Agnostic - Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>)
 
 ## User Parameters
 
@@ -117,7 +117,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 8. **Excluded_Users**  
    - This EDF stores the usernames to exclude from generating the new local admin-detected tickets.  
    - The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NLA_Monitoring_Excluded_Users` system property.  
-   - The username stored in the `1c. UserName` EDF will be excluded from the remote monitor if the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution is enabled on the machine and it is using the username stored in the EDF.  
+   - The username stored in the `1c. UserName` EDF will be excluded from the remote monitor if the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution is enabled on the machine and it is using the username stored in the EDF.  
    ![Excluded Users EDF](../../../static/img/New-Local-Admin-Monitor---Create/image_10.png)
 
 ## Computer-Level EDF
@@ -163,6 +163,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 - **5:** **Primary Domain Controller (PDC)** — The computer is a Primary Domain Controller (PDC) in the domain. It handles user logins and manages the domain.
 
 So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meaning that it continues if the machine is **not** a domain controller.
+
 
 
 

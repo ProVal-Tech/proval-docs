@@ -16,7 +16,7 @@ This script can be used to set / reset global or computer level disk thresholds.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Property - Set](https://proval.itglue.com/DOC-5078775-11420461)
+- [CWM - Automate - Script - Property - Set](<./Property - Set.md>)
 
 ## Variables
 
@@ -40,6 +40,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

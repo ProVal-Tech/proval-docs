@@ -21,7 +21,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 - Windows 10 1703+
 - Google Chrome 86+
-- [Unregister-ChromeExtension](https://proval.itglue.com/DOC-5078775-7267405)
+- [Unregister-ChromeExtension](<../../powershell/Unregister-ChromiumExtension.md>)
 
 ## Variables
 
@@ -64,6 +64,7 @@ The script takes a single parameter which is an array of Extension IDs to instal
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
+
 
 
 

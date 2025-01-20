@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-The dataview presents information about iLO-enabled HP Servers where the password entry for `iLO Automation Password` is not stored in the client-level password tab. This data view assists in identifying clients/servers for which the [HP iLO Credential Missing Detection](https://proval.itglue.com/DOC-5078775-13814638) script will generate a ticket.
+The dataview presents information about iLO-enabled HP Servers where the password entry for `iLO Automation Password` is not stored in the client-level password tab. This data view assists in identifying clients/servers for which the [HP iLO Credential Missing Detection](<../scripts/HP iLO Credential Missing Detection.md>) script will generate a ticket.
 
 Flag the Computer-Level EDF `Exclude From HPE ILO Monitoring` to exclude a computer/server from the dataview.
 
 ## Dependencies
 
-[CWM - Automate - Client Script - HP iLO Credential Missing Detection](https://proval.itglue.com/DOC-5078775-13814638)
+[CWM - Automate - Client Script - HP iLO Credential Missing Detection](<../scripts/HP iLO Credential Missing Detection.md>)
 
 ## Columns
 
@@ -31,6 +31,7 @@ Flag the Computer-Level EDF `Exclude From HPE ILO Monitoring` to exclude a compu
 | Operating System| Operating System                 |
 | Manufacturer     | Manufacturer                     |
 | Last Contact    | Last Contact with RMM           |
+
 
 
 

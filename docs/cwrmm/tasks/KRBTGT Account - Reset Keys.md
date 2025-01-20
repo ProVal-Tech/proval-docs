@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is an RMM implementation of the agnostic script [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](https://proval.itglue.com/DOC-5078775-9324848). This task is used to reset the KRBTGT Active Directory account. Adapted from [https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
+This is an RMM implementation of the agnostic script [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>). This task is used to reset the KRBTGT Active Directory account. Adapted from [https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
 
 This script is provided "without warranty".
 
@@ -29,7 +29,7 @@ In order to run without DryRun, Do not select DryRun
 
 ## Dependencies
 
-[RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](https://proval.itglue.com/DOC-5078775-9324848)
+[RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>)
 
 ## User Parameters
 
@@ -148,6 +148,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
 
 
 

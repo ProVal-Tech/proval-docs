@@ -20,7 +20,7 @@ Disable Bitlocker protection on one (or all) volumes
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](https://proval.itglue.com/DOC-5078775-8952850)
+[SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](<../../powershell/Unprotect-BitLockerVolume.md>)
 
 ## User Parameters
 
@@ -197,6 +197,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

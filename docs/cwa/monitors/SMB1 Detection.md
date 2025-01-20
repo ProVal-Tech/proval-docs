@@ -12,7 +12,7 @@ unlisted: false
 
 Checks whether the SMB1 is enabled on the end machine or not. It runs the OS version [compatible command](https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3?tabs=server#how-to-detect-status-enable-and-disable-smb-protocols) to fetch the data.
 
-**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - SMB1 Status [Remote Monitor]](https://proval.itglue.com/DOC-5078775-8202422) dataview. This monitor set should not be used for alerting/ticketing purposes.
+**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - SMB1 Status [Remote Monitor]](<../dataviews/SMB1 Status Remote Monitor.md>) dataview. This monitor set should not be used for alerting/ticketing purposes.
 
 ## Details
 
@@ -32,7 +32,8 @@ Managed Windows Service Plan Groups
 
 ## How to Import
 
-[Import - Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-13242522)
+[Import - Remote Monitor - SMB1 Detection](<./SMB1 Detection Query.md>)
+
 
 
 

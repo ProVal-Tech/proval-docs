@@ -15,7 +15,7 @@ This agent procedure utilizes the [Remove - Application](https://proval.itglue.c
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](https://proval.itglue.com/DOC-5078775-16541168)
+[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
 
 ## Implementation
 
@@ -31,6 +31,7 @@ Proval Plug & Play Procedure: The agent procedure requires no configuration.
 Agent Procedure Log Entry  
 **Success**  
 ![Image](../../../static/img/Senteon---Uninstall/image_3.png)  
+
 
 
 

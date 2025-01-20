@@ -24,7 +24,7 @@ This setup will skip the removal of the Sophos Zap platform.
 
 ## Dependencies
 
-- [SWM - Software Uninstall - Agnostic - Remove-Sophos](https://proval.itglue.com/DOC-5078775-11944799)
+- [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
 
 ## Variables
 
@@ -55,6 +55,7 @@ No non-template variables in script.
 
 - There are a lot of leftover files on the target computer.
   - The cleanest method of removal is to set the Arguments parameter to -force, remembering that you should be using -SkipZap if Zap is not installed with the NoSafeMode set to 0.
+
 
 
 

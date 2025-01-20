@@ -16,13 +16,14 @@ HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredenti
 
 If it is set - potential threat is using it.
 
-If it is not set but exists - system is vulnerable - see [Mimikatz - Vulnerable](https://proval.itglue.com/DOC-5078775-8012520)
+If it is not set but exists - system is vulnerable - see [Mimikatz - Vulnerable](<./Mimikatz - Vulnerable.md>)
 
 ## Settings
 
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 1      | Windows        |
+
 
 
 

@@ -18,13 +18,13 @@ This function script should never be run manually.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Remote Event Monitor - Create](https://proval.itglue.com/DOC-5078775-9742626)
+- [EPM - Data Collection - Script - Remote Event Monitor - Create](<./Remote Event Log Monitor - Create.md>)
   - [https://app.myglue.com/help_center/documents/9742626](https://app.myglue.com/help_center/documents/9742626)
   
-- [SEC - Windows Patching - Solution - Windows 10 Update](https://proval.itglue.com/DOC-5078775-9560440)
+- [SEC - Windows Patching - Solution - Windows 10 Update](<../../solutions/Windows 10 Update.md>)
   - [https://app.myglue.com/help_center/documents/9560440](https://app.myglue.com/help_center/documents/9560440)
   
-- [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](https://proval.itglue.com/DOC-5078775-9746809)
+- [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](<../tables/plugin_proval_windows10_upgradestats.md>)
   - [https://app.myglue.com/help_center/documents/9746809](https://app.myglue.com/help_center/documents/9746809)
 
 ## Variables
@@ -53,7 +53,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Process
 
 1. Review the previous log, check for specific error and log or create a ticket depending on global variable set.
-2. Create the table [plugin_proval_windows10_upgradestats](https://proval.itglue.com/DOC-5078775-9746809) if it does not exist. ([https://app.myglue.com/help_center/documents/9746809](https://app.myglue.com/help_center/documents/9746809))
+2. Create the table [plugin_proval_windows10_upgradestats](<../tables/plugin_proval_windows10_upgradestats.md>) if it does not exist. ([https://app.myglue.com/help_center/documents/9746809](https://app.myglue.com/help_center/documents/9746809))
 3. Check the registry for the expected value, if it's not found log an error or create a ticket depending on global variable set.
 4. Retrieve all registry values from the target machine.
 5. Convert the retrieved date/time into a MySQL recognized date/time.
@@ -64,6 +64,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 This is intended to be an autofix on a monitor and should be used to populate data after a specific event is thrown on a computer.
+
 
 
 

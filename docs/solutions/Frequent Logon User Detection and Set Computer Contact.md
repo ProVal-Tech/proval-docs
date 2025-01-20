@@ -10,23 +10,23 @@ unlisted: false
 ---
 ## Purpose
 
-This solution is designed to gather the frequent domain logon user on the Windows workstations and set the associated contact to the computer from the database resembling the name of the logon user detected using script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](https://proval.itglue.com/DOC-5078775-16300164).
+This solution is designed to gather the frequent domain logon user on the Windows workstations and set the associated contact to the computer from the database resembling the name of the logon user detected using script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../cwa/scripts/Detect Frequent Logon User (Set Computer Contact).md>).
 
 ## Associated Content
 
 | Content                                                                                      | Type            | Function                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](https://proval.itglue.com/DOC-5078775-16300164) | Script          | This script is designed to gather the frequent logged-in domain users on the workstations and set the associate contact to the computer in Automate resembling the detected username.                                        |
-| [CWA - Monitor - Frequent User Detection](https://proval.itglue.com/DOC-5078775-16300890) | Internal Monitor | This internal monitor is designed to detect the online Windows workstation agent where frequent user detection has not been detected in the last 14 days by default.                                                            |
-| [CWA - Dataview - Frequent Logon Users](https://proval.itglue.com/DOC-5078775-16300163)   | Dataview        | This dataview stores the logonusername, logonusercount, and script run date data detected via script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](https://proval.itglue.com/DOC-5078775-16300164) of the Windows Workstations. |
-| **△ Custom - Execute Script - Frequent Logon Users**                                        | Alert Template   | This alert template schedules the script @[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](https://proval.itglue.com/DOC-5078775-16300164) to the detected agents of the monitor [CWA - Monitor - Frequent User Detection](https://proval.itglue.com/DOC-5078775-16300890). |
+| [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../cwa/scripts/Detect Frequent Logon User (Set Computer Contact).md>) | Script          | This script is designed to gather the frequent logged-in domain users on the workstations and set the associate contact to the computer in Automate resembling the detected username.                                        |
+| [CWA - Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>) | Internal Monitor | This internal monitor is designed to detect the online Windows workstation agent where frequent user detection has not been detected in the last 14 days by default.                                                            |
+| [CWA - Dataview - Frequent Logon Users](<../cwa/dataviews/Frequent Logon Users.md>)   | Dataview        | This dataview stores the logonusername, logonusercount, and script run date data detected via script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../cwa/scripts/Detect Frequent Logon User (Set Computer Contact).md>) of the Windows Workstations. |
+| **△ Custom - Execute Script - Frequent Logon Users**                                        | Alert Template   | This alert template schedules the script @[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../cwa/scripts/Detect Frequent Logon User (Set Computer Contact).md>) to the detected agents of the monitor [CWA - Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>). |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - Stitching Frequent Logon User (Set Computer Contact)](https://proval.itglue.com/DOC-5078775-16300164)
-   - [Monitor - Frequent User Detection](https://proval.itglue.com/DOC-5078775-16300890)
-   - [Dataview - Frequent Logon Users](https://proval.itglue.com/DOC-5078775-16300163)
+   - [Script - Stitching Frequent Logon User (Set Computer Contact)](<../cwa/scripts/Detect Frequent Logon User (Set Computer Contact).md>)
+   - [Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>)
+   - [Dataview - Frequent Logon Users](<../cwa/dataviews/Frequent Logon Users.md>)
    - **△ Custom - Execute Script - Frequent Logon Users**
 
 2. Reload the system cache:
@@ -34,9 +34,10 @@ This solution is designed to gather the frequent domain logon user on the Window
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-     - [Monitor - Frequent User Detection](https://proval.itglue.com/DOC-5078775-16300890)
+     - [Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>)
        - Setup with "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
+
 
 
 

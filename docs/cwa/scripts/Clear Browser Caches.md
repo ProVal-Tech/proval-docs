@@ -26,8 +26,8 @@ Note: This is strictly for the browser cache and will not remove the browser his
 
 ## Sub-Scripts
 
-- [SWM - Software Configuration - Automate - Script - Chromium Caches - Clear](https://proval.itglue.com/DOC-5078775-10733548)
-- [SWM - Software Configuration - Automate - Script - Gecko Cache - Clear](https://proval.itglue.com/DOC-5078775-11076442)
+- [SWM - Software Configuration - Automate - Script - Chromium Caches - Clear](<./Chromium Caches - Clear.md>)
+- [SWM - Software Configuration - Automate - Script - Gecko Cache - Clear](<./Gecko Cache - Clear.md>)
 
 #### User Parameters
 
@@ -38,6 +38,7 @@ Note: This is strictly for the browser cache and will not remove the browser his
 ## Output
 
 - Script log
+
 
 
 

@@ -14,9 +14,9 @@ The table collects the information of the Locked out user's (both domain/local) 
 
 ## Dependencies
 
-- [Account LockOut Audit](https://proval.itglue.com/DOC-5078775-10218265)
-- [User Management - Account Lockout Audit](https://proval.itglue.com/DOC-5078775-10219462)
-- [User Management - Account Lock Detail](https://proval.itglue.com/DOC-5078775-10220563)
+- [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>)
+- [User Management - Account Lockout Audit](<./User Management - Account Lockout Audit.md>)
+- [User Management - Account Lock Detail](<./User Management - Account Lock Detail.md>)
 
 ## Tables
 
@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_account_lock` (
   CONSTRAINT `plugin_proval_account_lock_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8
 ```
+
 
 
 

@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-Monitors for bad health conditions returned from the script [HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559) into the custom table [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560).
+Monitors for bad health conditions returned from the script [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) into the custom table [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>).
 
 ## Dependencies
 
-- [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560)
-- [HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559)
-- [Get-HPiLOHealthReport](https://proval.itglue.com/DOC-5078775-10072511)
-- [CWM - Automate - Script - Ticket Creation - HP iLO Health Check*](https://proval.itglue.com/DOC-5078775-15297925)
+- [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>)
+- [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
+- [Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
+- [CWM - Automate - Script - Ticket Creation - HP iLO Health Check*](<../scripts/Ticket Creation - HP iLO Health Check.md>)
 
 ## Target
 
@@ -27,7 +27,7 @@ Global - Should be run without explicitly defined targets.
 
 **Name:** `△ Custom - Ticket Creation - HP iLO Health Check`
 
-The alert template should execute the [CWM - Automate - Script - Ticket Creation - HP iLO Health Check*](https://proval.itglue.com/DOC-5078775-15297925) script.
+The alert template should execute the [CWM - Automate - Script - Ticket Creation - HP iLO Health Check*](<../scripts/Ticket Creation - HP iLO Health Check.md>) script.
 
 ## Ticket Category
 
@@ -55,6 +55,7 @@ See details in the iLO and the iLO Health Report dataview.
 ```
 
 **Note:** The ticket will be generated for the computer whose computerid is stored in the title of the password entry for the iLO device. If the computerid is not stored in the iLO password entry, then a client-level ticket will be created instead.
+
 
 
 

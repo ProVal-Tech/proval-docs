@@ -30,7 +30,8 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Reset System Restore Disk Space Usage](https://proval.itglue.com/DOC-5078775-13977211)
+[Implement - Remote Monitor - Reset System Restore Disk Space Usage](<./Reset System Restore Disk Space Usage.md>)
+
 
 
 

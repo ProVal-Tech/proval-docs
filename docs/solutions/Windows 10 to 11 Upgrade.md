@@ -30,26 +30,26 @@ The solution has been updated to use policy for Windows 10 to Windows 11 upgrade
 
 | Content | Type | Level | Function |
 | ------- | ---- | ----- | -------- |
-| [Enable Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835788) | Flag | Company | Mark this custom field to enable Windows 11 installation for the Windows 10 machines of the company. |
-| [Exclude Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835797) | Flag | Site | Mark this custom field to exclude the endpoints of this site from the Windows 10 to 11 |
-| [Exclude Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835791) | Flag | Endpoint | Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade process. |
-| [Windows 11 Compatible](https://proval.itglue.com/DOC-5078775-15835398) | Dropdown | Endpoint | `Yes`: Compatible.`No`: Incompatible`NA`: Not Checked yet.Updated by the [Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244) task. |
-| [Windows 11 incompatibility Base](https://proval.itglue.com/DOC-5078775-15835397) | Text Box | Endpoint | Stores the result returned by the [Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244) task for the incompatible machines. |
+| [Enable Windows 11 Installation](<../cwrmm/custom-fields/Company - Enable Windows 11 Installation.md>) | Flag | Company | Mark this custom field to enable Windows 11 installation for the Windows 10 machines of the company. |
+| [Exclude Windows 11 Installation](<../cwrmm/custom-fields/Site - Exclude Windows 11 Installation.md>) | Flag | Site | Mark this custom field to exclude the endpoints of this site from the Windows 10 to 11 |
+| [Exclude Windows 11 Installation](<../cwrmm/custom-fields/Endpoint - Exclude Windows 11 Installation.md>) | Flag | Endpoint | Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade process. |
+| [Windows 11 Compatible](<../cwrmm/custom-fields/Endpoint - Windows 11 Compatible.md>) | Dropdown | Endpoint | `Yes`: Compatible.`No`: Incompatible`NA`: Not Checked yet.Updated by the [Windows 11 Compatibility Validation](<../cwrmm/tasks/Windows 11 Compatibility Validation.md>) task. |
+| [Windows 11 incompatibility Base](<../cwrmm/custom-fields/Endpoint - Windows 11 incompatibility Base.md>) | Text Box | Endpoint | Stores the result returned by the [Windows 11 Compatibility Validation](<../cwrmm/tasks/Windows 11 Compatibility Validation.md>) task for the incompatible machines. |
 
 #### Device Group
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Windows 10 Machines](https://proval.itglue.com/DOC-5078775-15835802) | Dynamic | Windows 10 machines.[Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244) task will be scheduled against this group. |
-| [Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835387) | Dynamic | Houses the Windows 10 computers which are compatible with Windows 11 upgrade. It is a view only group. |
-| [Upgrade Enabled Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835385) | Dynamic | A group of Windows 10 machines that are compatible with Windows 11 installation and upgrade has been enabled through the custom fields. |
-| [Windows 11 incompatible machines](https://proval.itglue.com/DOC-5078775-15835389) | Dynamic | A group of windows 10 computers which are not compatible with Windows 11. |
+| [Windows 10 Machines](<../cwrmm/groups/Windows 10 Machines.md>) | Dynamic | Windows 10 machines.[Windows 11 Compatibility Validation](<../cwrmm/tasks/Windows 11 Compatibility Validation.md>) task will be scheduled against this group. |
+| [Windows 11 Compatible Machines](<../cwrmm/groups/Windows 11 Compatible Machines.md>) | Dynamic | Houses the Windows 10 computers which are compatible with Windows 11 upgrade. It is a view only group. |
+| [Upgrade Enabled Windows 11 Compatible Machines](<../cwrmm/groups/Upgrade Enabled Windows 11 Compatible Machines.md>) | Dynamic | A group of Windows 10 machines that are compatible with Windows 11 installation and upgrade has been enabled through the custom fields. |
+| [Windows 11 incompatible machines](<../cwrmm/groups/Windows 11 incompatible machines.md>) | Dynamic | A group of windows 10 computers which are not compatible with Windows 11. |
 
 #### Task
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244) | Script Editor | Verifies if a Windows 10 PC is compatible with Windows 11. Scheduled to run monthly against [Windows 10 Machines](https://proval.itglue.com/DOC-5078775-15835802). |
+| [Windows 11 Compatibility Validation](<../cwrmm/tasks/Windows 11 Compatibility Validation.md>) | Script Editor | Verifies if a Windows 10 PC is compatible with Windows 11. Scheduled to run monthly against [Windows 10 Machines](<../cwrmm/groups/Windows 10 Machines.md>). |
 
 #### Policy
 
@@ -72,20 +72,20 @@ The solution has been updated to use policy for Windows 10 to Windows 11 upgrade
 ## Implementation
 
 1. Create the following custom fields:
-   - [Enable Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835788)
-   - Site - [Exclude Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835797)
-   - Endpoint - [Exclude Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835791)
-   - [Windows 11 Compatible](https://proval.itglue.com/DOC-5078775-15835398)
-   - [Windows 11 incompatibility Base](https://proval.itglue.com/DOC-5078775-15835397)
+   - [Enable Windows 11 Installation](<../cwrmm/custom-fields/Company - Enable Windows 11 Installation.md>)
+   - Site - [Exclude Windows 11 Installation](<../cwrmm/custom-fields/Site - Exclude Windows 11 Installation.md>)
+   - Endpoint - [Exclude Windows 11 Installation](<../cwrmm/custom-fields/Endpoint - Exclude Windows 11 Installation.md>)
+   - [Windows 11 Compatible](<../cwrmm/custom-fields/Endpoint - Windows 11 Compatible.md>)
+   - [Windows 11 incompatibility Base](<../cwrmm/custom-fields/Endpoint - Windows 11 incompatibility Base.md>)
 
 2. Create the following device groups:
-   - [Windows 10 Machines](https://proval.itglue.com/DOC-5078775-15835802)
-   - [Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835387)
-   - [Upgrade Enabled Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835385)
-   - [Windows 11 incompatible machines](https://proval.itglue.com/DOC-5078775-15835389)
+   - [Windows 10 Machines](<../cwrmm/groups/Windows 10 Machines.md>)
+   - [Windows 11 Compatible Machines](<../cwrmm/groups/Windows 11 Compatible Machines.md>)
+   - [Upgrade Enabled Windows 11 Compatible Machines](<../cwrmm/groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
+   - [Windows 11 incompatible machines](<../cwrmm/groups/Windows 11 incompatible machines.md>)
 
 3. Create and deploy the following tasks:
-   - [Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244)
+   - [Windows 11 Compatibility Validation](<../cwrmm/tasks/Windows 11 Compatibility Validation.md>)
 
 4. Create the following task:
    - [Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365)
@@ -104,7 +104,8 @@ The solution has been updated to use policy for Windows 10 to Windows 11 upgrade
    **Note of Caution:**
    - This policy group document is just for reference.
    - Use the existing policy in conjunction with the policy group if you have not created a new one.
-   - The end goal here is to apply a `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835385) group.
+   - The end goal here is to apply a `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](<../cwrmm/groups/Upgrade Enabled Windows 11 Compatible Machines.md>) group.
+
 
 
 

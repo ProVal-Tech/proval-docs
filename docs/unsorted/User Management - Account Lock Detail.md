@@ -16,10 +16,10 @@ The user lockout account audit
 
 | Content                                                                 | Type      | Function                              |
 |-------------------------------------------------------------------------|-----------|---------------------------------------|
-| [User Management - Account Lockout Audit](https://proval.itglue.com/DOC-5078775-10219462) | Script    | Collects the account lockout detail   |
-| [Account LockOut Audit](https://proval.itglue.com/DOC-5078775-10218265) | Dataview  | Shows the detail of account lockout   |
-| [AD Account Lockout Detection](https://proval.itglue.com/DOC-5078775-10220558) | Remote Monitor | Monitor to detect the lockout account  |
-| [plugin_proval_account_lock](https://proval.itglue.com/DOC-5078775-10220562) | Table     | Collects the information of lockout account |
+| [User Management - Account Lockout Audit](<./User Management - Account Lockout Audit.md>) | Script    | Collects the account lockout detail   |
+| [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>) | Dataview  | Shows the detail of account lockout   |
+| [AD Account Lockout Detection](<../cwa/monitors/Account Lockout Detection.md>) | Remote Monitor | Monitor to detect the lockout account  |
+| [plugin_proval_account_lock](<./plugin_proval_account_lock.md>) | Table     | Collects the information of lockout account |
 
 ## Implementation
 
@@ -32,6 +32,7 @@ For all users account lock report (local user):
 Schedule to all Windows machines.
 
 ## FAQ
+
 
 
 

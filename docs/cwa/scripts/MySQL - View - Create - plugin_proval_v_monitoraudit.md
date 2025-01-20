@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script creates the [View - plugin_proval_v_monitoraudit](https://proval.itglue.com/DOC-5078775-7998832) View, which populates the data in the [CWM - Automate - Dataview - Automate - Monitor Audit [View]](https://proval.itglue.com/DOC-5078775-8212748) dataview.
+This script creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitorauditat.md>) View, which populates the data in the [CWM - Automate - Dataview - Automate - Monitor Audit [View]](<../dataviews/Automate - Monitor Audit View.md>) dataview.
 
 ## Sample Run
 
@@ -18,13 +18,14 @@ This script creates the [View - plugin_proval_v_monitoraudit](https://proval.itg
 
 ## Process
 
-- Drops the [View - plugin_proval_v_monitoraudit](https://proval.itglue.com/DOC-5078775-7998832) if it already exists.
-- Creates the [View - plugin_proval_v_monitoraudit](https://proval.itglue.com/DOC-5078775-7998832).
+- Drops the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitorauditat.md>) if it already exists.
+- Creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitorauditat.md>).
 - Assign View's permission to all users.
 
 ## Output
 
 - View
+
 
 
 

@@ -21,7 +21,7 @@ Time Saved by Automation: 5 Minutes
 ## Dependencies
 
 - @plugin_proval_usersessions (Table)
-- [Windows - Current User Sessions](https://proval.itglue.com/DOC-5078775-7963719)
+- [Windows - Current User Sessions](<../dataviews/Windows - Current User Sessions.md>)
 
 ## Variables
 
@@ -36,6 +36,7 @@ Time Saved by Automation: 5 Minutes
 ## Output
 
 - Script log
+
 
 
 

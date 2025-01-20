@@ -15,7 +15,7 @@ Executes the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) 
 ## Dependencies
 
 - [SWM - Software Update - Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895)  
-- [SWM - Software Update - Custom Table - pvl_winget_audit](https://proval.itglue.com/DOC-5078775-17973960)  
+- [SWM - Software Update - Custom Table - pvl_winget_audit](<../tables/pvl_winget_audit.md>)  
 
 ## Target
 
@@ -24,6 +24,7 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Winget App Audit`  
+
 
 
 

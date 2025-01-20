@@ -12,14 +12,14 @@ unlisted: false
 
 The purpose of this monitor set is to create an 'ADPluginUser' account for the domain controllers detected in AD Plugin. It will also initiate the script to force a password change every **X** days.
 
-**X** (Number of days) can be defined in the system property `AD_Plugin_Password_Update_Days`. Refer to the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](https://proval.itglue.com/DOC-5078775-11419940) script's document for more information on the system property.
+**X** (Number of days) can be defined in the system property `AD_Plugin_Password_Update_Days`. Refer to the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](<../scripts/Active Directory - Plugin User Account - CreateUpdate.md>) script's document for more information on the system property.
 
 **Note**  
 This monitor will no longer run on any EOL systems. This includes 2003 Servers, 2008 Servers, 2011 SBS Servers, and 2012 Servers (Both normal and R2). All management of the AD Plugin User Accounts will need to happen manually for these machines.
 
 ## Dependencies
 
-[CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](https://proval.itglue.com/DOC-5078775-11419940)
+[CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](<../scripts/Active Directory - Plugin User Account - CreateUpdate.md>)
 
 ## Target
 
@@ -29,7 +29,8 @@ Service Plans.Windows Servers.Server Roles.Windows Servers Core Services.Domain 
 
 **Name:**  `△ Custom - Autofix - AD Plugin User - Create/Update`
 
-- Import the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](https://proval.itglue.com/DOC-5078775-11419940) script before importing the alert template OR simply verify the script was imported correctly and fully up to date after importing the alert template.
+- Import the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](<../scripts/Active Directory - Plugin User Account - CreateUpdate.md>) script before importing the alert template OR simply verify the script was imported correctly and fully up to date after importing the alert template.
+
 
 
 

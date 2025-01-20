@@ -41,7 +41,8 @@ Backup Management > Backup Exec
 
 ## How to Import
 
-[Import - Remote Monitor - Backup Exec - No successful backups in 3 days](https://proval.itglue.com/DOC-5078775-13244086)  
+[Import - Remote Monitor - Backup Exec - No successful backups in 3 days](<./Backup Exec - No successful backups in 3 days.md>)  
+
 
 
 

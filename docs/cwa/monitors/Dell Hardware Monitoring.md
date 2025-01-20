@@ -28,7 +28,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)
+[Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -47,7 +47,8 @@ The remote monitor should be limited to the `Computers - Dell Servers` search on
 
 ## Implementation
 
-[Implement - Remote Monitor - Dell Hardware Monitoring](https://proval.itglue.com/DOC-5078775-15248345)
+[Implement - Remote Monitor - Dell Hardware Monitoring](<./Dell Hardware Monitoring.md>)
+
 
 
 

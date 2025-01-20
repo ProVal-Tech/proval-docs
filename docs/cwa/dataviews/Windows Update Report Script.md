@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-This dataview was required to display a detailed list of patches that are installed or available on the local machine. The data is being populated by the [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682) script.
+This dataview was required to display a detailed list of patches that are installed or available on the local machine. The data is being populated by the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Get-WindowsUpdateReport](https://proval.itglue.com/DOC-5078775-10372095)
+- [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
 - [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
-- [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682)
-- [CWM - Automate - Custom Table - plugin_proval_windows_update_report](https://proval.itglue.com/DOC-5078775-10861700)
+- [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
+- [CWM - Automate - Custom Table - plugin_proval_windows_update_report](<../tables/plugin_proval_windows_update_report.md>)
 
 ## Columns
 
@@ -57,6 +57,7 @@ This dataview was required to display a detailed list of patches that are instal
 | Recommended Memory              | Recommended Memory to Install the Patch              |
 
 Note: Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
+
 
 
 

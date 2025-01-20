@@ -10,16 +10,17 @@ unlisted: false
 ---
 ## Summary
 
-This internal monitor detects the online supported Windows workstation OS (Windows 10/11) which is not updated in the table `plugin_proval_bitlocker_audit` in the last 7 days and does not have the keyprotectorid and protectionstatus set. It also checks if the location-EDF 'BitLocker Encryption Automation - Enable [Wks]' is set to either "AllDrive" or "SystemDrive" from the dropdown option and the computer-EDF 'BitLocker Enable Exclude' is not checked. It ensures running the [Script - Bitlocker - Volume - Initialize [Autofix,Param] - Wrapper](https://proval.itglue.com/DOC-5078775-16716755) once every 7 days on the detected agents of the monitor to remove the reiterate attempts numerous times. It excludes agent where the script failed 2 times to initialize the bitlocker set up which was recorded to the script state = 'Bitlocker_Enable_Fail_Count'.
+This internal monitor detects the online supported Windows workstation OS (Windows 10/11) which is not updated in the table `plugin_proval_bitlocker_audit` in the last 7 days and does not have the keyprotectorid and protectionstatus set. It also checks if the location-EDF 'BitLocker Encryption Automation - Enable [Wks]' is set to either "AllDrive" or "SystemDrive" from the dropdown option and the computer-EDF 'BitLocker Enable Exclude' is not checked. It ensures running the [Script - Bitlocker - Volume - Initialize [Autofix,Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>) once every 7 days on the detected agents of the monitor to remove the reiterate attempts numerous times. It excludes agent where the script failed 2 times to initialize the bitlocker set up which was recorded to the script state = 'Bitlocker_Enable_Fail_Count'.
 
 ## Dependencies
 
-- [Script - Bitlocker - Volume - Initialize [Autofix,Param] - Wrapper](https://proval.itglue.com/DOC-5078775-16716755)  
+- [Script - Bitlocker - Volume - Initialize [Autofix,Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)  
 - △ Custom - Execute Script - Bitlocker - Volume - Initialize [Autofix] - Wrapper  
 
 ## Target
 
 Global
+
 
 
 

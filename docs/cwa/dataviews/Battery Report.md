@@ -14,9 +14,9 @@ Displays the battery report information
 
 ## Dependencies
 
-- [EPM - Data Collection - Automate - Script Get - Battery Report](https://proval.itglue.com/DOC-5078775-11216978)
-- [EPM - Data Collection - Custom Table - plugin_proval_batteries](https://proval.itglue.com/DOC-5078775-11420540)
-- [CWM - Automate - Script - Property - Set](https://proval.itglue.com/DOC-5078775-11420461)
+- [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)
+- [EPM - Data Collection - Custom Table - plugin_proval_batteries](<../tables/plugin_proval_batteries.md>)
+- [CWM - Automate - Script - Property - Set](<../scripts/Property - Set.md>)
 
 ## Columns
 
@@ -42,6 +42,7 @@ Displays the battery report information
 | ClientID             | Not displayed but used.                                                                                                                                       |
 | LocationID           | Not displayed but used.                                                                                                                                       |
 | ThresholdViolation    | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
+
 
 
 

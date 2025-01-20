@@ -10,16 +10,16 @@ unlisted: false
 ---
 ## Child of Solution
 
-[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-9913178)  
+[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](<../../solutions/CWA - Update Table Data - UnifiController.md>)  
 
 ## Purpose
 
-Holds device data for each controller listed in [EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-9913178) 
+Holds device data for each controller listed in [EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](<../../solutions/CWA - Update Table Data - UnifiController.md>) 
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](https://proval.itglue.com/DOC-5078775-7291568)
-- [CWM - Automate - Script - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-10243077)
+- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](<../../powershell/Get-UnifiController.md>)
+- [CWM - Automate - Script - Update Table Data - UnifiController](<../scripts/Update Table Data - UnifiController.md>)
 
 ## Tables
 
@@ -36,6 +36,7 @@ Holds device data for each controller listed in [EPM - Data Collection - Solutio
 | Disabled      | String | True if Disabled, False if not.                                                              |
 | Model         | String | The Model of the device.                                                                     |
 | Type          | String | The Type of Unifi Device.                                                                    |
+
 
 
 

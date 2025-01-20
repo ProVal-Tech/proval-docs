@@ -10,19 +10,19 @@ unlisted: false
 ---
 ## Summary
 
-This company-level custom field stores the parameter to install the Cisco Secure Client package using the [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](https://proval.itglue.com/DOC-5078775-15148224) task.
+This company-level custom field stores the parameter to install the Cisco Secure Client package using the [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](<../tasks/Cisco Secure Client Package Installation (Windows).md>) task.
 
-Parameters must be set in a manner consistent with the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](https://proval.itglue.com/DOC-5078775-11897620).
+Parameters must be set in a manner consistent with the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](<../../powershell/Install-CiscoSecureClient.md>).
 
 ## Dependencies
 
-[SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](https://proval.itglue.com/DOC-5078775-15148224)
+[SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](<../tasks/Cisco Secure Client Package Installation (Windows).md>)
 
 ## Details
 
 | Field Name                      | Type of Field | Description                                                                                                                                                     |
 |---------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](https://proval.itglue.com/DOC-5078775-11897620) |
+| Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](<../../powershell/Install-CiscoSecureClient.md>) |
 
 ## ScreenShot
 
@@ -114,6 +114,7 @@ Different installation Parameters can be created by using these parameters from 
 | ISEPosture     | False    |         | String | Custom                | Installs the ISE Posture module.                                                                  |
 | Umbrella       | False    |         | String | Custom                | Installs the Umbrella module. Requires Dynamic Params                                            |
 | DownloadURL    | True     |         | String | Core, All, Custom, Umbrella | URL to download the [CiscoSecureClient.zip](http://ciscosecureclient.zip/) file.                 |
+
 
 
 

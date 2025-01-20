@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-Stores TPM Status of the machine. Updated by [Get TPM Status](https://proval.itglue.com/DOC-5078775-17341914) task.
+Stores TPM Status of the machine. Updated by [Get TPM Status](<../tasks/Get TPM Status.md>) task.
 
 ## Dependencies
 
-[CW RMM - Task - Get TPM Status](https://proval.itglue.com/DOC-5078775-17341914)
+[CW RMM - Task - Get TPM Status](<../tasks/Get TPM Status.md>)
 
 ## Details
 
@@ -26,6 +26,7 @@ Stores TPM Status of the machine. Updated by [Get TPM Status](https://proval.itg
 
 ![Screenshot 1](../../../static/img/Endpoint---TPM-Status/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---TPM-Status/image_2.png)
+
 
 
 

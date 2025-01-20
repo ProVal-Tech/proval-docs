@@ -17,7 +17,7 @@ Sample Screenshot:
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)  
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)  
 **The updated version of this table must be imported to get better results out of the dataview.**  
 
 ## Columns
@@ -46,15 +46,16 @@ Sample Screenshot:
 ## FAQs
 
 **Q: Applying the filter is taking forever?**  
-**A:** It's because dataview is so complex and most likely because of the amount of data it is processing. There is no better way to overcome that, however, [CWM - Automate - Script - Dataview - Email as CSV [Param]](https://proval.itglue.com/DOC-5078775-8856158) script can be used to Email out the dataview and apply the filters in the csv rather than in the dataview.  
+**A:** It's because dataview is so complex and most likely because of the amount of data it is processing. There is no better way to overcome that, however, [CWM - Automate - Script - Dataview - Email as CSV [Param]](<../scripts/Dataview - Email as CSV Param.md>) script can be used to Email out the dataview and apply the filters in the csv rather than in the dataview.  
 
 Step 1: Find the ID of the `Windows Patching - Quick Audit (Reference Table)` dataview.  
 ![Step 1](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_2.png)  
 
-Step 2: Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](https://proval.itglue.com/DOC-5078775-8856158) script against any online windows machine with the correct parameters.  
+Step 2: Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](<../scripts/Dataview - Email as CSV Param.md>) script against any online windows machine with the correct parameters.  
 ![Step 2](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_3.png)  
 
 Once you get the CSV in your Email, you can easily apply the required filters.
+
 
 
 

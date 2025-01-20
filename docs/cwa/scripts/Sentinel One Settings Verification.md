@@ -71,7 +71,7 @@ Do not encrypt the EDF used in the Global Variable `Client_Level_Sentinel_One_To
 
 ### TicketCreationCategory 
 
-The script will use ticket creation category mentioned in the monitor [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924830)
+The script will use ticket creation category mentioned in the monitor [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](<../monitors/Execute Script - Sentinel One Settings Verification.md>)
 
 ![TicketCreationCategory](../../../static/img/Sentinel-One-Settings-Verification/image_4.png)
 
@@ -96,6 +96,7 @@ SentinelOne URL should be: \<URL>
 SentinelOne Site key should be: \<LicenseKey>
 To resolve a license key mismatch in Sentinel One, you must uninstall and then re-install the software using the correct license key.
 ```
+
 
 
 

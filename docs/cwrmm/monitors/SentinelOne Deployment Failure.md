@@ -15,7 +15,7 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](htt
 ## Dependencies
 
 - [CW RMM - Task - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15806354)
-- [CW RMM - Custom Field - Endpoint - SentinelOne Deployment Result](https://proval.itglue.com/DOC-5078775-15805737)
+- [CW RMM - Custom Field - Endpoint - SentinelOne Deployment Result](<../custom-fields/Endpoint - SentinelOne Deployment Result.md>)
 
 ## Monitor
 
@@ -56,6 +56,7 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](htt
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_9.png)  
+
 
 
 

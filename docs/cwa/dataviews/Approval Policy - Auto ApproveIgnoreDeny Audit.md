@@ -14,7 +14,7 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 
 ## Dependencies
 
-[plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5078775-8988282)
+[plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>)
 
 ## Columns
 
@@ -24,7 +24,7 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 | ID                                             | The ID of the Approval Policy.                                                                                                                                         |
 | Approval Policy                                | Name of the Approval Policy.                                                                                                                                           |
 | Examined Characteristics - Category Status      | Whether the Category filtering is enabled for that examined Characteristics. Like, approved by category, Ignore by category, or Deny by Category is turned on or not. |
-| Examined Characteristics - Categories           | Group_Concat list of the categories that are either approved, denied, or ignored. For detailed information on this, one can refer [Patch Approval Category Detailed info](https://proval.itglue.com/DOC-5078775-8988840) dataview. |
+| Examined Characteristics - Categories           | Group_Concat list of the categories that are either approved, denied, or ignored. For detailed information on this, one can refer [Patch Approval Category Detailed info](<./Patch Approval Category Detailed Info.md>) dataview. |
 | Examined Characteristics - Severity Status      | Whether the Severity filtering is enabled for that examined Characteristics. Like, approved by Severity, Ignore by Severity, or Deny by Severity is turned on or not. |
 | Unspecified Severity                           | Whether the patches with unspecified Severity are approved, ignored, or denied.                                                                                        |
 | Low Severity                                   | Whether the patches with Low Severity are approved, ignored, or denied.                                                                                               |
@@ -35,6 +35,7 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 | Examined Characteristics - By Titles           | Group_Concat list of the Titles that are either approved, denied, or ignored.                                                                                         |
 | Examined Characteristics - CVSS Status         | Whether the patches are approved on the basis of CVSS score or not.                                                                                                   |
 | Examined Characteristics - CVSS >              | CVSS score above which auto-approval of patches is applied.                                                                                                          |
+
 
 
 

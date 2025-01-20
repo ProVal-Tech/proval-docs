@@ -14,9 +14,9 @@ This solution aims to establish a centralized local admin user for each client o
 
 ## Update Notice: 06-November-2024
 
-A new system property and EDF has been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) script from the `Prosync` plugin.
+A new system property and EDF has been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) script from the `Prosync` plugin.
 
-Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` as `1` to implement the changes for the [Windows Local Admin Process](https://proval.itglue.com/DOC-5078775-13026633) solution.
+Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` as `1` to implement the changes for the [Windows Local Admin Process](<./Windows Local Admin Process.md>) solution.
 
 ![Image](../../static/img/Windows-Local-Admin-Process/image_1.png)
 
@@ -24,20 +24,20 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 
 | Content                                                                 | Type            | Function                                                        |
 |-------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------|
-| [Windows Local Admin Account Process](https://proval.itglue.com/DOC-5078775-13026629) | Internal Monitor | Detects the machine with missing or outdated credentials.       |
-| [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) | Script          | Create/Update the user.                                        |
+| [Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>) | Internal Monitor | Detects the machine with missing or outdated credentials.       |
+| [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) | Script          | Create/Update the user.                                        |
 | △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update    | Alert Template   | Execute the script against the machines detected by the internal monitor. |
-| [Windows - Admin Account Password Rotation Notification](https://proval.itglue.com/DOC-5078775-14357326) | Client Script    | This script sets the Ticket Creation or email sent for the password update made by the script 'Windows - Admin Account - Create/Update' |
+| [Windows - Admin Account Password Rotation Notification](<../cwa/scripts/Windows - Admin Account Password Rotation Notification.md>) | Client Script    | This script sets the Ticket Creation or email sent for the password update made by the script 'Windows - Admin Account - Create/Update' |
 
 ## Implementation
 
 1. Import/Update the following content from the ProSync Plugin:
-   - [Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774)
-   - [Internal Monitor - Windows Local Admin Account Process](https://proval.itglue.com/DOC-5078775-13026629)
+   - [Script - Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>)
+   - [Internal Monitor - Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>)
      - If this monitor shows as needing an update, please delete the monitor from the system and re-import it.
    - Alert Template - `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
-2. Run/debug the script [Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774) against an online Windows machine with `SetEnvironment_Local_Admin_Process` as `1`.
+2. Run/debug the script [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) against an online Windows machine with `SetEnvironment_Local_Admin_Process` as `1`.
 
    ![Image](../../static/img/Windows-Local-Admin-Process/image_1.png)
 
@@ -53,14 +53,14 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Windows Local Admin Account Process](https://proval.itglue.com/DOC-5078775-13026629)
+     - [Internal Monitor - Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>)
        - `Alert Template: △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
        - Right-click and Run Now to start the monitor.
 
 ### Optional
 
 1. This step should only be attempted if requested by the consultant:
-   - Import the script [Windows - Admin Account Password Rotation Notification](https://proval.itglue.com/DOC-5078775-14357326).
+   - Import the script [Windows - Admin Account Password Rotation Notification](<../cwa/scripts/Windows - Admin Account Password Rotation Notification.md>).
      - If the client requested the notification during a password change, then change the value of the system property 'Default_Local_Admin_Password_Change_Notification_Client' to `1` and if the client needs the email for notification then set the email address to the property 'Default_Local_Admin_Password_Change_Notification_Email'.
    - If this information is not provided and clear, reach out to the consultant for further clarification.
 
@@ -88,6 +88,7 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
+
 
 
 

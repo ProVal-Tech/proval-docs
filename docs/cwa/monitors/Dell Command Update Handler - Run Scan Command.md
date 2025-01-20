@@ -10,17 +10,18 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the monitor set is to execute the [Script - Dell Command Update - Install/Upgrade + Command Handler](https://proval.itglue.com/DOC-5078775-11434138) once per week against every Dell Workstation (Windows 10 and 11 only). Script is executed with the /scan command to populate the data in the [Dataview - Dell Command Update Handler - Audit [Script]](https://proval.itglue.com/DOC-5078775-11434140).
+The purpose of the monitor set is to execute the [Script - Dell Command Update - Install/Upgrade + Command Handler](<../scripts/Dell Command Update - InstallUpgrade + Command Handler.md>) once per week against every Dell Workstation (Windows 10 and 11 only). Script is executed with the /scan command to populate the data in the [Dataview - Dell Command Update Handler - Audit [Script]](<../dataviews/Dell Command Update Handler - Audit Script.md>).
 
 Alert Template: Dell Command Update - Run Scan Command
 
 ## Dependencies
 
-[Script - Dell Command Update - Install/Upgrade + Command Handler](https://proval.itglue.com/DOC-5078775-11434138)
+[Script - Dell Command Update - Install/Upgrade + Command Handler](<../scripts/Dell Command Update - InstallUpgrade + Command Handler.md>)
 
 ## Target
 
 The SQL query is limiting it to Dell Workstations running Windows 10 or Windows 11.
+
 
 
 

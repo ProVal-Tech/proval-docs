@@ -16,19 +16,19 @@ The Unexpected restart monitor creates a lot of noise as a lot of the time the s
 
 | Content                                                                                                   | Type     | Function                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------|
-| [EPM - Data Collection - Script - Remote Event Log Monitor - Create](https://proval.itglue.com/DOC-5078775-9742626) | Script   | You will use this script to create a remote monitor to look for System events with an id of 41 or 6008. |
-| [EPM - Data Collection - Script - Get-CrashDump](https://proval.itglue.com/DOC-5078775-11956458)          | Script   | Gathers the data from a dmp file that should have been created after a bluescreen issue.                |
-| [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973) | Agnostic | Used by Winget - Install to install winget packages.                                                    |
-| [SWM - Software Installation - Script - Winget - Install](https://proval.itglue.com/DOC-5078775-11956636) | Script   | Uses agnostic script to install bluescreenview.                                                         |
-| [EPM - Data Collection - Custom Table - plugin_proval_crash_dumps](https://proval.itglue.com/DOC-5078775-11960289) | Custom Table | Stores crash dump data, saves last 1 dump per computer.                                                |
+| [EPM - Data Collection - Script - Remote Event Log Monitor - Create](<../cwa/scripts/Remote Event Log Monitor - Create.md>) | Script   | You will use this script to create a remote monitor to look for System events with an id of 41 or 6008. |
+| [EPM - Data Collection - Script - Get-CrashDump](<../cwa/scripts/Get-CrashDump.md>)          | Script   | Gathers the data from a dmp file that should have been created after a bluescreen issue.                |
+| [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../powershell/Invoke-WingetProcessor.md>) | Agnostic | Used by Winget - Install to install winget packages.                                                    |
+| [SWM - Software Installation - Script - Winget - Install](<../cwa/scripts/Winget - InstallUpdate.md>) | Script   | Uses agnostic script to install bluescreenview.                                                         |
+| [EPM - Data Collection - Custom Table - plugin_proval_crash_dumps](<../cwa/tables/plugin_proval_crash_dumps.md>) | Custom Table | Stores crash dump data, saves last 1 dump per computer.                                                |
 
 ## Implementation
 
 ### Initial Monitor Setup
 
 1. Look through your automate groups and find the id of the group you wish to monitor for bluescreens.
-2. Using any computer, Run the [EPM - Data Collection - Script - Remote Event Log Monitor - Create](https://proval.itglue.com/DOC-5078775-9742626) script with the groupId set to that ID, the logtype set to System, and the eventid set to 41,6008
-3. Import the [EPM - Data Collection - Script - Get-CrashDump](https://proval.itglue.com/DOC-5078775-11956458) script.
+2. Using any computer, Run the [EPM - Data Collection - Script - Remote Event Log Monitor - Create](<../cwa/scripts/Remote Event Log Monitor - Create.md>) script with the groupId set to that ID, the logtype set to System, and the eventid set to 41,6008
+3. Import the [EPM - Data Collection - Script - Get-CrashDump](<../cwa/scripts/Get-CrashDump.md>) script.
 
 ### Alert Template Setup
 
@@ -57,6 +57,7 @@ The Unexpected restart monitor creates a lot of noise as a lot of the time the s
 ![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens/image_4.png)
 
 ## FAQ
+
 
 
 

@@ -63,9 +63,9 @@ Scheduling the script to run at regular intervals is suggested to schedule weekl
 
 ## Dependencies
 
-[CWM - Automate - Solution - Offline/Broken Agents](https://proval.itglue.com/DOC-5078775-13319030)
+[CWM - Automate - Solution - Offline/Broken Agents](<../../solutions/OfflineBroken Agents.md>)
 
-**Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441) script are excluded from retirement.**
+**Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair*](<./Automate Agent - Auto Repair.md>) script are excluded from retirement.**
 
 ## Variables
 
@@ -137,6 +137,7 @@ Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
 Last Logged In User: DEV-WIN10-DCJOI/Test
 ```
+
 
 
 

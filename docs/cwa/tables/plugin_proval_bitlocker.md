@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the recovery key from the script [Bitlocker - Key Retrieval](https://proval.itglue.com/DOC-5078775-8009806).
+Stores the recovery key from the script [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>).
 
 ## Dependencies
 
-[Bitlocker - Key Retrieval](https://proval.itglue.com/DOC-5078775-8009806)
+[Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>)
 
 ## Table
 
@@ -25,6 +25,7 @@ Stores the recovery key from the script [Bitlocker - Key Retrieval](https://prov
 | DriveID      | INT     | The associated drive of the recovery key.          |
 | RecoveryKey  | CHAR    | The BitLocker recovery key.                         |
 | LastUpdated  | DATETIME| The last time the agent recovery key was audited.  |
+
 
 
 

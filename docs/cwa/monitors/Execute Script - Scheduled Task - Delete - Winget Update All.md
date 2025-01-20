@@ -12,12 +12,12 @@ unlisted: false
 
 The internal monitor identifies Windows 10 and 11 computers where either the `Winget Update All [Logged on User]` or `Winget Update All [System]` tasks exist, but task creation is disabled either at the computer or the location level, or task creation is not enabled at the client level.
 
-Task creation settings are controlled by the Extra Data Fields outlined in the [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195) document.
+Task creation settings are controlled by the Extra Data Fields outlined in the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../scripts/Scheduled Task - Create - Winget Update All Autofix.md>) document.
 
 ## Dependencies
 
-- [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195)
-- [Script - Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949)
+- [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../scripts/Scheduled Task - Create - Winget Update All Autofix.md>)
+- [Script - Scheduled Task - Delete - Winget Update All [Autofix]](<../scripts/Scheduled Task - Delete - Winget Update All Autofix.md>)
 
 ## Target
 
@@ -27,7 +27,8 @@ Global
 
 **Name:** △ Custom - Execute Script - Scheduled Task - Delete - Winget Update All
 
-The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-15226949) against the detected machines.
+The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](<../scripts/Scheduled Task - Delete - Winget Update All Autofix.md>) against the detected machines.
+
 
 
 

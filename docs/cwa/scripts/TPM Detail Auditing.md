@@ -20,7 +20,7 @@ Time Automation: 10 Minutes
 
 ## Dependencies
 
-[TPM Detailed Info](https://proval.itglue.com/DOC-5078775-8304568)
+[TPM Detailed Info](<../dataviews/TPM Detailed Info.md>)
 
 ## Variables
 
@@ -45,13 +45,14 @@ Time Automation: 10 Minutes
 ## Process
 
 - PowerShell script will gather the relevant TPM details.
-- Stores the output of the PowerShell script to a scriptstate. This data is then visible in the [TPM Detailed Info](https://proval.itglue.com/DOC-5078775-8304568) dataview.
+- Stores the output of the PowerShell script to a scriptstate. This data is then visible in the [TPM Detailed Info](<../dataviews/TPM Detailed Info.md>) dataview.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
+
 
 
 

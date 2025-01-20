@@ -14,8 +14,8 @@ Stores information from [https://github.com/NCSC-NL/log4shell/blob/main/software
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Script - Import Log4Shell Table](https://proval.itglue.com/DOC-5078775-8855626)
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.itglue.com/DOC-5078775-8854610)
+- [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import Log4Shell Table.md>)
+- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>)
 
 ## Tables
 
@@ -29,6 +29,7 @@ Stores information from [https://github.com/NCSC-NL/log4shell/blob/main/software
 | Status   | VARCHAR | The current vulnerable status of the application. |
 | Notes    | VARCHAR | Any notes about the application                   |
 | Links    | VARCHAR | Links about the application's vulnerability.      |
+
 
 
 

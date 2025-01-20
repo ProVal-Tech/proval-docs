@@ -16,15 +16,15 @@ This solution will update Duo Authentication Proxy application to the latest ver
 
 | Content                                                                                                                                           | Type           | Function                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Remote Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](https://proval.itglue.com/DOC-5078775-12528305) | Remote Monitor  | Detects the machines with older version of the DUO Auth Proxy application.                       |
-| [CWM - Automate - Script - DUO Auth Proxy - Install/Update Latest Version [Global, Autofix]](https://proval.itglue.com/DOC-5078775-12520502)   | Autofix Script | Updates the application for the machines detected by the monitor set.                            |
+| [CWM - Automate - Remote Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](<../cwa/monitors/DUO Auth Proxy.md>) | Remote Monitor  | Detects the machines with older version of the DUO Auth Proxy application.                       |
+| [CWM - Automate - Script - DUO Auth Proxy - Install/Update Latest Version [Global, Autofix]](<../cwa/scripts/DUO Auth Proxy - InstallUpdate Latest Version Global, Autofix.md>)   | Autofix Script | Updates the application for the machines detected by the monitor set.                            |
 | △ Custom - Update - DUO Auth Proxy                                                                                                               | Alert Template  | Execute the Autofix Script on the machines detected by the monitor set.                          |
 
 ## Implementation
 
 - Create a search for the windows computers having 'DUO Security Authentication Proxy' application installed.
 - Create a group and limit it to the search created in the first step.
-- Import the [CWM - Automate - Script - DUO Auth Proxy - Install/Update Latest Version [Global, Autofix]](https://proval.itglue.com/DOC-5078775-12520502) script.
+- Import the [CWM - Automate - Script - DUO Auth Proxy - Install/Update Latest Version [Global, Autofix]](<../cwa/scripts/DUO Auth Proxy - InstallUpdate Latest Version Global, Autofix.md>) script.
 - Create/Import the `△ Custom - Update - DUO Auth Proxy` alert template.  
   ```sql
   INSERT INTO `alerttemplate` (
@@ -91,6 +91,7 @@ This solution will update Duo Authentication Proxy application to the latest ver
   ```
 - Create the [CWM - Automate - Internal Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](https://proval.itglue.com/DOC-5078775-12520505) remote monitor on the group created in the second step.
 - Assign the alert template to the monitor.
+
 
 
 

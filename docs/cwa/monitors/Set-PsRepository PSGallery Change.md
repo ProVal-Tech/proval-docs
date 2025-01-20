@@ -43,7 +43,8 @@ Managed Windows Machines
 
 ## Implementation
 
-[Import - Remote Monitor - Set-PsRepository PSGallery](https://proval.itglue.com/DOC-5078775-17886214)
+[Import - Remote Monitor - Set-PsRepository PSGallery](<./Set-PsRepository PSGallery.md>)
+
 
 
 

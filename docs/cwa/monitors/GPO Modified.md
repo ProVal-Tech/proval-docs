@@ -22,8 +22,8 @@ This Custom RAWSQL monitor shows GPO modified time on the computer if the GPO wa
 
 ## Dependencies
 
-- [plugin_proval_ad_gpo](https://proval.itglue.com/DOC-5078775-7948720)  
-- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](https://proval.itglue.com/DOC-5078775-8528236)  
+- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)  
+- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](<../scripts/Group Policy - Gather GPResult Data.md>)  
 
 ## Target
 
@@ -51,6 +51,7 @@ Details:
 
 **Sample Ticket:**  
 ![Sample Ticket Image](../../../static/img/GPO-Modified/image_4.png)  
+
 
 
 

@@ -14,11 +14,11 @@ Installs Huntress agent on the Windows machine if it's not already installed.
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Huntress Acct_Key](https://proval.itglue.com/DOC-5078775-15293648)  
-- [CW RMM - Custom Fields - Huntress Org_Key](https://proval.itglue.com/DOC-5078775-15293647)  
-- [CW RMM - Custom Fields - Huntress Tag](https://proval.itglue.com/DOC-5078775-15293470)  
-- [CW RMM - Custom Fields - Huntress Deploy_Result](https://proval.itglue.com/DOC-5078775-15294634)  
-- [CW RMM - Device Group - Deploy Huntress](https://proval.itglue.com/DOC-5078775-15302736)  
+- [CW RMM - Custom Fields - Huntress Acct_Key](<../custom-fields/Huntress Acct_Key.md>)  
+- [CW RMM - Custom Fields - Huntress Org_Key](<../custom-fields/Huntress Org_Key.md>)  
+- [CW RMM - Custom Fields - Huntress Tag](<../custom-fields/Huntress Tag.md>)  
+- [CW RMM - Custom Fields - Huntress Deploy_Result](<../custom-fields/Huntress Deploy_Result.md>)  
+- [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>)  
 
 ## Create Script
 
@@ -310,6 +310,7 @@ Rest other custom fields can be left blank.
 
 Note:  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields whereas the Huntress_Tags is the site-level custom field.
+
 
 
 

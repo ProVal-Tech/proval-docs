@@ -15,9 +15,9 @@ This dataview shows information about GPOs, their applied policies, and where th
 ## Dependencies
 
 - [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
-- [plugin_proval_ad_gpo](https://proval.itglue.com/DOC-5078775-7948720)
-- [plugin_proval_ad_gpolinks](https://proval.itglue.com/DOC-5078775-7950170)
-- [RSM - Active Directory - Script - Group Policy - Audit](https://proval.itglue.com/DOC-5078775-15193954)
+- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
+- [plugin_proval_ad_gpolinks](<../tables/plugin_proval_ad_gpolinks.md>)
+- [RSM - Active Directory - Script - Group Policy - Audit](<../scripts/Group Policy - Audit.md>)
 
 ## Columns
 
@@ -37,6 +37,7 @@ This dataview shows information about GPOs, their applied policies, and where th
 | Created Time    | GPO created date and time information.           |
 | Modified Time   | GPO last modified date and time.                 |
 | Read Time       | GPO last check time.                              |
+
 
 
 

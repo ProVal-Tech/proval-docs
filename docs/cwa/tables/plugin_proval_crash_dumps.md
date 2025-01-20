@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Purpose
 
-Optional container to hold data retrieved from [EPM - Data Collection - Script - Get-CrashDump](https://proval.itglue.com/DOC-5078775-11956458).
+Optional container to hold data retrieved from [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>).
 
 ## Dependencies
 
-Created by: [EPM - Data Collection - Script - Get-CrashDump](https://proval.itglue.com/DOC-5078775-11956458) if CreateTable is 1.  
-Modified by: [EPM - Data Collection - Script - Get-CrashDump](https://proval.itglue.com/DOC-5078775-11956458) if CreateTable is 1.
+Created by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>) if CreateTable is 1.  
+Modified by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>) if CreateTable is 1.
 
 ## Tables
 
@@ -48,6 +48,7 @@ Modified by: [EPM - Data Collection - Script - Get-CrashDump](https://proval.itg
 | Dump_File_Time        | VARCHAR | The dump file time.                           |
 | Computer_Name         | VARCHAR | The computer name, - sometimes not shown.     |
 | Processors_count      | INT     | The number of processors.                      |
+
 
 
 

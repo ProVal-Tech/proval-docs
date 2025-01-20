@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This script is scheduled to run every 3 days on the 'Machines With Queued Scripts' group by the [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199) script.
+This script is scheduled to run every 3 days on the 'Machines With Queued Scripts' group by the [CWM - Automate - Script - Queue Script](<./Queue Script.md>) script.
 
 This script is scheduled to requeue itself every 3 days to ensure that the script never enters the 'Fizzled' state. 
 
-This script is intended to retrieve stored data from the [CWM - Automate - Custom Table - plugin_proval_queued_scripts](https://proval.itglue.com/DOC-5078775-10606190) table, and execute the stored instances of scripts on the target machine.
+This script is intended to retrieve stored data from the [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>) table, and execute the stored instances of scripts on the target machine.
 
 ## Sample Run
 
@@ -22,9 +22,9 @@ This should not be run manually.
 
 ## Dependencies
 
-- [CWM - Automate - Solution - Queue Script Next Checkin](https://proval.itglue.com/DOC-5078775-10606186)
-- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](https://proval.itglue.com/DOC-5078775-10606190)
-- [CWM - Automate - Script - Queue Script](https://proval.itglue.com/DOC-5078775-10606199)
+- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
+- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>)
+- [CWM - Automate - Script - Queue Script](<./Queue Script.md>)
 - 'Machines With Queued Scripts' Group
 
 ## Variables
@@ -34,8 +34,8 @@ Document the various variables in the script. Delete any section that is not rel
 | Name               | Description                                                 |
 |--------------------|-------------------------------------------------------------|
 | TableName          | What the variable represents.                               |
-| sqlscriptId        | The script id gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](https://proval.itglue.com/DOC-5078775-10606190). |
-| sqlscriptparameters | The parameters for the script id to be called gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](https://proval.itglue.com/DOC-5078775-10606190). |
+| sqlscriptId        | The script id gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>). |
+| sqlscriptparameters | The parameters for the script id to be called gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>). |
 | GroupID            | The Group Id for the 'Machines With Queued Scripts' Group. |
 
 ## User Parameters
@@ -54,6 +54,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

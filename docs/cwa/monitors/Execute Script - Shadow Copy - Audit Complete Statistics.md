@@ -10,15 +10,16 @@ unlisted: false
 ---
 ## Summary
 
-This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337) didn't run in the last 7 days. It is also limited to trigger 50 agents at a time in an hour.
+This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) didn't run in the last 7 days. It is also limited to trigger 50 agents at a time in an hour.
 
 ## Dependencies
 
-[Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668)
+[Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)
 
 ## Target
 
 Windows Group
+
 
 
 

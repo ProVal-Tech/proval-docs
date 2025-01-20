@@ -16,24 +16,25 @@ The purpose of the solution is to look for the newly created/promoted domain adm
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214) | Group | Stores the Domain Controllers in a single place. |
-| [Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215) | Custom Field | Used to determine whether a Domain Controller is infrastructure master or not. |
-| [Task - Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218) | Task | Validate whether a computer is infrastructure master or not and update the custom field [Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215). |
-| [Machine Group - Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455) | Group | Stores all the available infrastructure masters in a single place. |
+| [Machine Group - Domain Controllers](<../cwrmm/groups/Domain Controllers.md>) | Group | Stores the Domain Controllers in a single place. |
+| [Custom Field - Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>) | Custom Field | Used to determine whether a Domain Controller is infrastructure master or not. |
+| [Task - Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>) | Task | Validate whether a computer is infrastructure master or not and update the custom field [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>). |
+| [Machine Group - Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>) | Group | Stores all the available infrastructure masters in a single place. |
 | [Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362) | Custom Field | Stores the information of the new domain admins returned by the [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424) task. |
 | [Task - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424) | Task | Check and return the newly detected domain admin(s) since the previous execution of the task. |
 
 ## Implementation
 
 - Read all the associated documents carefully.
-- Create the custom field: [Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215)
-- Create the Machine Group: [Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)
-- Create the task: [Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218)
-- Create the deployment schedule as described in this document: [Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218)
+- Create the custom field: [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>)
+- Create the Machine Group: [Domain Controllers](<../cwrmm/groups/Domain Controllers.md>)
+- Create the task: [Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>)
+- Create the deployment schedule as described in this document: [Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>)
 - Create the custom field: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362)
-- Create the Machine Group: [Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)
+- Create the Machine Group: [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>)
 - Create the task: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424)
 - Create the deployment schedule as described in this document: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424)
+
 
 
 

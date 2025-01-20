@@ -15,7 +15,7 @@ Displays the data fetched by the [CWM - Automate - Script - Get Lastest Installe
 ## Dependencies
 
 - [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 
 ## Columns
 
@@ -43,6 +43,7 @@ Displays the data fetched by the [CWM - Automate - Script - Get Lastest Installe
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Latest-Installed-Cumulative-Update/image_1.png)
+
 
 
 

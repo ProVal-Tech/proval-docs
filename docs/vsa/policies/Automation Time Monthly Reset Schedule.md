@@ -26,8 +26,9 @@ Schedules the Monthly CF Field Reset AP.
 - **Policy Objects Active**:
   - **Policy Object Name**: Agent Procedure
   - **Policy Object Settings**:
-    - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](https://proval.itglue.com/DOC-5078775-11143679)
+    - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](<../procedures/Monthly Automation Time Reset.md>)
       - **Policy Object Member Settings**: Monthly, 1st day, midnight, do not SiO
+
 
 
 

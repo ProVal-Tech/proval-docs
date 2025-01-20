@@ -14,11 +14,12 @@ This internal monitor detects the agent where the "Bitlocker FullyDecrypted - Sy
 
 ## Dependencies
 
-[Bitlocker FullyDecrypted - System Drive](https://proval.itglue.com/DOC-5078775-10222745)
+[Bitlocker FullyDecrypted - System Drive](<../../unsorted/Bitlocker FullyDecrypted - System Drive.md>)
 
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
 
 
 

@@ -16,14 +16,14 @@ This solution is intended to provide notification of a machine's ConnectWise Aut
 
 | Content                                                                                                                                                       | Type              | Function                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157)           | Internal Monitor   | Detects the machines the moment it starts checking in with Automate.                                                          |
-| [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156)                                   | Script            | Send an E-Mail to the E-Mail addresses mentioned in the computer-level EDF "Online Alert E-mail" for the machines detected by the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157) monitor. |
-| △ Custom - Machine Back Online                                                                                                                             | Alert Template    | To execute the [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156) script against the machines detected by the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157) monitor. |
+| [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](<../cwa/monitors/Agent - E-Mail - Machine Back Online.md>)           | Internal Monitor   | Detects the machines the moment it starts checking in with Automate.                                                          |
+| [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](<../cwa/scripts/Email - EDF - Machine Back Online Autofix.md>)                                   | Script            | Send an E-Mail to the E-Mail addresses mentioned in the computer-level EDF "Online Alert E-mail" for the machines detected by the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](<../cwa/monitors/Agent - E-Mail - Machine Back Online.md>) monitor. |
+| △ Custom - Machine Back Online                                                                                                                             | Alert Template    | To execute the [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](<../cwa/scripts/Email - EDF - Machine Back Online Autofix.md>) script against the machines detected by the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](<../cwa/monitors/Agent - E-Mail - Machine Back Online.md>) monitor. |
 
 ## Implementation
 
-Import the script [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](https://proval.itglue.com/DOC-5078775-11753156).  
-Import the monitor set [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](https://proval.itglue.com/DOC-5078775-11753157).  
+Import the script [CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](<../cwa/scripts/Email - EDF - Machine Back Online Autofix.md>).  
+Import the monitor set [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](<../cwa/monitors/Agent - E-Mail - Machine Back Online.md>).  
 Reload System Cache.  
 Create the alert template `△ Custom - Machine Back Online`.
 
@@ -72,6 +72,7 @@ A: Remove the E-Mail address(es) from the EDF.
 ## Sample E-Mail
 
 ![Sample E-Mail](../../static/img/Email---Machine-Back-Online/image_4.png)
+
 
 
 

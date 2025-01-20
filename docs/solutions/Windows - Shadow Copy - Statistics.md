@@ -19,25 +19,25 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
 
 | Content                                                                                                                    | Type      | Function                                                                                                                                                                                                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)                  | Script    | This script records data related to Shadow Copy for individual systems into a [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668).                                                                                               |
-| [Dataview - Windows - Shadow Copy State [Script]](https://proval.itglue.com/DOC-5078775-8105265)                        | Dataview  | This dataview will display an endpoint's Windows Shadow Copy information where the [Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337) ran to gather the data.                                                          |
-| [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](https://proval.itglue.com/DOC-5078775-8057145)     | Monitor   | This monitor detects machines, where the last Shadow Copy detected is older than the number of days set in the System Property Proval_ShadowCopyMaxAgeInDays.                                                                                                               |
-| [Custom Table - plugin_proval_shadowcopystats](https://proval.itglue.com/DOC-5078775-8157668)                            | Table     | It stores information about Windows shadow copies gathered by [Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337).                                                                                                     |
-| △ Custom - Execute Script - Shadow Copy - Audit                                                                             | Alert Template | This alert template is created to run with the [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](https://proval.itglue.com/DOC-5078775-8057145) and schedule [Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337) on the detected agents. |
+| [Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>)                  | Script    | This script records data related to Shadow Copy for individual systems into a [Custom Table - plugin_proval_shadowcopystats](<../cwa/tables/plugin_proval_shadowcopystats.md>).                                                                                               |
+| [Dataview - Windows - Shadow Copy State [Script]](<../cwa/dataviews/Windows - Shadow Copy State Script.md>)                        | Dataview  | This dataview will display an endpoint's Windows Shadow Copy information where the [Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>) ran to gather the data.                                                          |
+| [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](<../cwa/monitors/Execute Script - Shadow Copy - Audit Complete Statistics.md>)     | Monitor   | This monitor detects machines, where the last Shadow Copy detected is older than the number of days set in the System Property Proval_ShadowCopyMaxAgeInDays.                                                                                                               |
+| [Custom Table - plugin_proval_shadowcopystats](<../cwa/tables/plugin_proval_shadowcopystats.md>)                            | Table     | It stores information about Windows shadow copies gathered by [Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>).                                                                                                     |
+| △ Custom - Execute Script - Shadow Copy - Audit                                                                             | Alert Template | This alert template is created to run with the [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](<../cwa/monitors/Execute Script - Shadow Copy - Audit Complete Statistics.md>) and schedule [Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>) on the detected agents. |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)
-   - [Dataview - Windows - Shadow Copy State [Script]](https://proval.itglue.com/DOC-5078775-8105265)
-   - [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](https://proval.itglue.com/DOC-5078775-8057145)
+   - [Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>)
+   - [Dataview - Windows - Shadow Copy State [Script]](<../cwa/dataviews/Windows - Shadow Copy State Script.md>)
+   - [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](<../cwa/monitors/Execute Script - Shadow Copy - Audit Complete Statistics.md>)
 
 2. Reload the system cache:
    ![Image](../../static/img/Windows---Shadow-Copy---Statistics/image_3.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
-     - [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](https://proval.itglue.com/DOC-5078775-8057145)
+     - [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](<../cwa/monitors/Execute Script - Shadow Copy - Audit Complete Statistics.md>)
        - Setup with "△ Custom - Execute Script - Shadow Copy - Audit" Alert Template
        - Right-click and Run Now to start the monitor
 
@@ -48,7 +48,8 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
 ## FAQ
 
 **Q:** What to do if information for an endpoint is not present in the dataview?  
-**A:** Run the "[Script - Shadow Copy - Audit Complete Statistics [DV]](https://proval.itglue.com/DOC-5078775-7751337)" against the Windows machine and re-check the dataview after the successful completion of the script.
+**A:** Run the "[Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>)" against the Windows machine and re-check the dataview after the successful completion of the script.
+
 
 
 

@@ -206,7 +206,7 @@ Limit this step to `Mac OS` only.
 
 ## Implementation
 
-This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocker](https://proval.itglue.com/DOC-5078775-17730663)`** group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocker](<../groups/Deploy Threatlocker.md>)`** group for auto deployment. Script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Threatlocker Deployment  
@@ -216,6 +216,7 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 ## Output
 
 Script Log
+
 
 
 

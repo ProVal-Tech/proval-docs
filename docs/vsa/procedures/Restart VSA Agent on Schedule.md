@@ -16,12 +16,13 @@ Allows VSA Agents to come back online after a service failure on their own, with
 
 | Content                                                                                     | Type            | Function                      |
 |---------------------------------------------------------------------------------------------|-----------------|-------------------------------|
-| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](https://proval.itglue.com/DOC-5078775-9791995) | Agent Procedure  | Creates the scheduled task    |
-| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](https://proval.itglue.com/DOC-5078775-9792117) | Agent Procedure  | Removes the Scheduled task    |
+| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) | Agent Procedure  | Creates the scheduled task    |
+| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](<./Scheduled Task for Agent Restart - Remove.md>) | Agent Procedure  | Removes the Scheduled task    |
 
 ## Implementation
 
-Import both XMLs into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](https://proval.itglue.com/DOC-5078775-9791995) to point to the proper VSA service name. Use the getVariable `#serviceName#` for this. Schedule / deploy procedures.
+Import both XMLs into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) to point to the proper VSA service name. Use the getVariable `#serviceName#` for this. Schedule / deploy procedures.
+
 
 
 

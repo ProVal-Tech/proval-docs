@@ -14,7 +14,7 @@ This contains the SSL and TLS info being set by the dependent script for the IE 
 
 ## Dependencies
 
-[Internet Explorer Advanced SSL and TLS Settings [Param, DV]](https://proval.itglue.com/DOC-5078775-7770039)
+[Internet Explorer Advanced SSL and TLS Settings [Param, DV]](<../scripts/Internet Explorer Advanced SSL and TLS Settings.md>)
 
 ## Columns
 
@@ -28,6 +28,7 @@ This contains the SSL and TLS info being set by the dependent script for the IE 
 | Contact                      | Last user name                                                |
 | Contact Email                | User email                                                    |
 | IE Advanced Security Status   | Detail information of what TLS and SSL are set for Internet Explorer |
+
 
 
 

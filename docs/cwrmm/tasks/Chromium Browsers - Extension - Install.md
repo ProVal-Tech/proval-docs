@@ -20,7 +20,7 @@ Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Viv
 
 ## Dependencies
 
-[SWM - Software Configuration - Register-ChromiumExtension](https://proval.itglue.com/DOC-5078775-10372099)
+[SWM - Software Configuration - Register-ChromiumExtension](<../../powershell/Register-ChromiumExtension.md>)
 
 ## User Parameters
 
@@ -134,6 +134,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
 
 
 

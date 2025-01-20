@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This client script will create a ticket for all the cluster hosts where the currently installed Cumulative Update shows older than 60 days in the [Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648).
+This client script will create a ticket for all the cluster hosts where the currently installed Cumulative Update shows older than 60 days in the [Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>).
 
 ## Sample Run
 
@@ -18,7 +18,7 @@ This client script will create a ticket for all the cluster hosts where the curr
 
 ## Dependencies
 
-[Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648)
+[Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 
 ## Output
 
@@ -36,6 +36,7 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank You!
+
 
 
 

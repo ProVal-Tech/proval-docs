@@ -14,15 +14,16 @@ The below custom fields are used in the Cyrisma deployment and audit.
 
 ## Dependencies
 
-[CW RMM - Task - CRI Agent Deployment](https://proval.itglue.com/DOC-5078775-15298955)
+[CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>)
 
 ## Details
 
 | Field Name          | Type of Field (Machine or Organization) | Description                                                                 |
 |---------------------|-----------------------------------------|-----------------------------------------------------------------------------|
-| Cryisma_Status      | Endpoint                                | It stores the [CW RMM - CRI Agent Deployment](https://proval.itglue.com/DOC-5078775-15298955) task execution status |
+| Cryisma_Status      | Endpoint                                | It stores the [CW RMM - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) task execution status |
 | CryismaAgnent_Key   | Site                                    | This stores the site key for the Cyrisma Deployment                        |
 | CryismaAgent_URL    | Site                                    | This stores the unique site URL for the Cyrisma Deployment                 |
+
 
 
 

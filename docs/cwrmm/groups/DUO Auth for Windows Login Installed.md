@@ -14,7 +14,7 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
 
 ## Dependencies
 
-[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](https://proval.itglue.com/DOC-5078775-17914127)
+[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](<../custom-fields/Duo Authentication for Windows Logon Deployment.md>)
 
 ## Details
 
@@ -47,6 +47,7 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
    - Set `Success` in the comparison condition.  
    ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
+
 
 
 

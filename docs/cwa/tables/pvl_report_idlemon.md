@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Globals]](https://proval.itglue.com/DOC-5078775-12869569) script.
+Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - IdleMon Report [Globals]](https://proval.itglue.com/DOC-5078775-12869569)
+[CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Global
 | IsDomainAdmin      | varchar(5)   | IsDomainAdmin? (True/False)                                   |
 | IsEnterpriseAdmin   | varchar(5)   | IsEnterpriseAdmin? (True/False)                               |
 | ScriptRunTime      | datetime      | Data Collection Time                                            |
+
 
 
 

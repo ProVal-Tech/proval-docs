@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This dataview shows the version of iDRAC on Dell Servers. The script [Get iDRAC Version - Dell Servers [DV]](https://proval.itglue.com/DOC-5078775-7854396) should be scheduled to run daily on "Dell Servers" group to gather the corresponding data.
+This dataview shows the version of iDRAC on Dell Servers. The script [Get iDRAC Version - Dell Servers [DV]](<../scripts/Get iDRAC Version - Dell Servers DV.md>) should be scheduled to run daily on "Dell Servers" group to gather the corresponding data.
 
 ## Dependencies
 
-[Get iDRAC Version - Dell Servers [DV]](https://proval.itglue.com/DOC-5078775-7854396)
+[Get iDRAC Version - Dell Servers [DV]](<../scripts/Get iDRAC Version - Dell Servers DV.md>)
 
 ## Columns
 
@@ -27,6 +27,7 @@ This dataview shows the version of iDRAC on Dell Servers. The script [Get iDRAC 
 | Operating System   | Shows the OS for the concern server.                       |
 | iDRAC Version     | Shows the iDRAC Version for the concern server.            |
 | Last Contact      | Shows the last contact of concern server with RMM.         |
+
 
 
 

@@ -26,7 +26,7 @@ This will only work for a Windows-based target.
 
 The machine must have Sophos installed and Sophos Tamper Protection must be disabled.
 
-**NOTE:** The script will verify if Sophos Tamper Protection is enabled/disabled. If you need to disable tamper protection, please check the [Sophos - Disable Tamper Protection](https://proval.itglue.com/DOC-5078775-8058691) script.
+**NOTE:** The script will verify if Sophos Tamper Protection is enabled/disabled. If you need to disable tamper protection, please check the [Sophos - Disable Tamper Protection](<./Sophos - Disable Tamper Protection.md>) script.
 
 ## Variables
 
@@ -46,6 +46,7 @@ If the services are no longer present, then the script was successful and will e
 ## Output
 
 - Script log messages only
+
 
 
 

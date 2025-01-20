@@ -16,9 +16,9 @@ This solution is built to set ThreatLocker to learning mode using API. It also p
 
 | Content                                                                                           | Type            | Function                                                                                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697)     | Script          | This script gathers API keys from the client's EDF and securely uses them to set the machine to learning mode in ThreatLocker.   **User Parameters**   **LearningDuration**   Accepts a numerical value and sets the computer to learning mode in ThreatLocker for the specified number of hours.   **Reason**   This is required to provide a reason for setting the learning mode. |
-| [Dataview - ThreatLocker LearningMode Set Audit](https://proval.itglue.com/DOC-5078775-16557698) | Dataview        | This dataview stores the results of the ThreatLocker learning mode setting done via the script, "Script - ThreatLocker - Set Learning Mode."                                                                                      |
-| [Table - pvl_threatlocker-disable_audit](https://proval.itglue.com/DOC-5078775-16557699)         | Custom Table    | This table stores data from the script "Script - ThreatLocker - Set Learning Mode," including the computer ID, learning mode duration, start and end time, reason, the LT user who set the mode, status, and the complete log. |
+| [Script - Threatlocker - Set Learning Mode](<../cwa/scripts/Threatlocker - Set Learning Mode.md>)     | Script          | This script gathers API keys from the client's EDF and securely uses them to set the machine to learning mode in ThreatLocker.   **User Parameters**   **LearningDuration**   Accepts a numerical value and sets the computer to learning mode in ThreatLocker for the specified number of hours.   **Reason**   This is required to provide a reason for setting the learning mode. |
+| [Dataview - ThreatLocker LearningMode Set Audit](<../cwa/dataviews/ThreatLocker LearningMode Set Audit.md>) | Dataview        | This dataview stores the results of the ThreatLocker learning mode setting done via the script, "Script - ThreatLocker - Set Learning Mode."                                                                                      |
+| [Table - pvl_threatlocker-disable_audit](<../cwa/tables/pvl_threatlocker-disable_audit.md>)         | Custom Table    | This table stores data from the script "Script - ThreatLocker - Set Learning Mode," including the computer ID, learning mode duration, start and end time, reason, the LT user who set the mode, status, and the complete log. |
 
 ## Implementation
 
@@ -57,6 +57,7 @@ After setting the keys, it is necessary to whitelist the file hash `9FA61A436668
 **Answer:** Possible error messages include the following:
 
 ![Image](https://proval.itglue.com/5078775/docs/16557700/images/24294965)
+
 
 
 

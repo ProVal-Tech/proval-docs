@@ -14,8 +14,8 @@ It is designed to present a full list of all certificates found on machines and 
 
 ## Dependencies
 
-- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568)
-- [EPM - Network - Custom Table - plugin_proval_certs](https://proval.itglue.com/DOC-5078775-9262931)
+- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
+- [EPM - Network - Custom Table - plugin_proval_certs](<../tables/plugin_proval_certs.md>)
 
 ## Columns
 
@@ -36,6 +36,7 @@ It is designed to present a full list of all certificates found on machines and 
 | CertAdded            | When the certificate was added/installed to the machine.                                         |
 | Data Collection Date  | When the last certification scan was done.                                                       |
 | Status               | Certificate's current Status in text.                                                            |
+
 
 
 

@@ -44,13 +44,14 @@ For the hosted partners, it will be the minimum computerid of Clientid 1. If Cli
 
 ## Dependencies
 
-[Ticket Creation - Without Computer Information And Failures Only [Autofix]*](https://proval.itglue.com/DOC-5078775-10390934)
+[Ticket Creation - Without Computer Information And Failures Only [Autofix]*](<../scripts/Ticket Creation - Without Computer Information And Failures Only Autofix.md>)
 
 "△ Custom - Ticket Creation - Without Computer Details" Alert template should be applied to the monitor set.
 
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
 
 
 

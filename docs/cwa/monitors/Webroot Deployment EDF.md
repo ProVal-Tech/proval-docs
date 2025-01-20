@@ -14,7 +14,7 @@ This monitor checks the online agent where the client EDF "Enable Webroot Deploy
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Install Webroot SecureAnyWhere [EDF]](https://proval.itglue.com/DOC-5078775-14989293)
+[EPM - Data Collection - Script - Install Webroot SecureAnyWhere [EDF]](<../scripts/Install Webroot SecureAnyWhere Autofix, EDF.md>)
 
 - EDFs:
   - Enable Webroot Deployment - Client EDF
@@ -24,6 +24,7 @@ This monitor checks the online agent where the client EDF "Enable Webroot Deploy
 ## Target
 
 - Global
+
 
 
 

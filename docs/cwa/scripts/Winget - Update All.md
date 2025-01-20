@@ -18,7 +18,7 @@ This Script will update all Winget packages found on an endpoint.
 
 ## Dependencies
 
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973)
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
 
 #### Global Parameters
 
@@ -33,6 +33,7 @@ Please reference the agnostic content for process.
 ## Output
 
 - Script log
+
 
 
 

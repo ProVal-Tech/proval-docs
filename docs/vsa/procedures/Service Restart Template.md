@@ -47,7 +47,7 @@ Restarts a service on the endpoint
 
 ## Dependencies
 
-[EPM -Windows Configuration - Agnostic - Invoke-RestartService](https://proval.itglue.com/DOC-5078775-11032222)
+[EPM -Windows Configuration - Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
 
 ## Process
 
@@ -58,6 +58,7 @@ Calls the agnostic content to force a service restart on the endpoint. Performs 
 %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-log.txt  
 %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-UNIXDATE-log.txt (archive of previous log)  
 Agent Procedure Log
+
 
 
 

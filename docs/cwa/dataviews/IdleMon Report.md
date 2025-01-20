@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the dataview is to display the historical data of the user's idletime for a computer. The threshold of the data is defined in the global variable `ThresholdDays` of the [CWM - Automate - Script - IdleMon Report [Globals]](https://proval.itglue.com/DOC-5078775-12869569) script.
+The purpose of the dataview is to display the historical data of the user's idletime for a computer. The threshold of the data is defined in the global variable `ThresholdDays` of the [CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>) script.
 
 ## Dependencies
 
-- [CWM - Automate - Script - IdleMon Report [Globals]](https://proval.itglue.com/DOC-5078775-12869569)
-- [CWM - Automate - Custom Table - pvl_report_idlemon](https://proval.itglue.com/DOC-5078775-12869570)
+- [CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>)
+- [CWM - Automate - Custom Table - pvl_report_idlemon](<../tables/pvl_report_idlemon.md>)
 
 ## Columns
 
@@ -39,6 +39,7 @@ The purpose of the dataview is to display the historical data of the user's idle
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/IdleMon-Report/image_1.png)
+
 
 
 

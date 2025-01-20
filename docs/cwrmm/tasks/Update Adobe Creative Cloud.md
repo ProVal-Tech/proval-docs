@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the agnostic script [Update-AdobeCC](https://proval.itglue.com/DOC-5078775-7667368).
+Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the agnostic script [Update-AdobeCC](<../../powershell/Update-AdobeCC.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the
 
 ## Dependencies
 
-[Update-AdobeCC](https://proval.itglue.com/DOC-5078775-7667368)
+[Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
 
 ## User Parameters
 
@@ -157,6 +157,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log  
+
 
 
 

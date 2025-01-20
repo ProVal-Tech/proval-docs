@@ -24,7 +24,7 @@ A new Computer-Level EDF `ADQL - Physical Disk Count` has been introduced. Updat
 
 ## Before you proceed
 
-The remote monitor created by this script utilizes [Get-AvgDiskQueueLength](https://proval.itglue.com/DOC-5078775-16245028) agnostic script, which is using the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
+The remote monitor created by this script utilizes [Get-AvgDiskQueueLength](<../../powershell/Get-AvgDiskQueueLength.md>) agnostic script, which is using the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
 
 ### Overview
 
@@ -63,7 +63,7 @@ However, this may be time-consuming and not the root issue. If your disk perform
 
 ## Dependencies
 
-[EPM - Data Collection - Agnostic Script - Get-AvgDiskQueueLength](https://proval.itglue.com/DOC-5078775-16245028)
+[EPM - Data Collection - Agnostic Script - Get-AvgDiskQueueLength](<../../powershell/Get-AvgDiskQueueLength.md>)
 
 ### User Parameters
 
@@ -140,6 +140,7 @@ If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolong
 ## Output
 
 - Remote Monitors
+
 
 
 

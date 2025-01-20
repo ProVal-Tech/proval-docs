@@ -33,9 +33,9 @@ For getting a ticket, you must change the global parameter value for TicketCreat
 
 - Windows Exchange Server
 - Intended to be triggered from the following monitor(s):
-  - [ProVal - Production - CVE-2021-26858 Detection](https://proval.itglue.com/DOC-5078775-8060253)
-  - [ProVal - Production - CVE-2021-26857 Detection](https://proval.itglue.com/DOC-5078775-8027831)
-  - [ProVal - Production - CVE-2021-26858 Detection](https://proval.itglue.com/DOC-5078775-8060253)
+  - [ProVal - Production - CVE-2021-26858 Detection](<../monitors/CVE-2021-26858 Detection.md>)
+  - [ProVal - Production - CVE-2021-26857 Detection](<../monitors/CVE-2021-26857 Detection.md>)
+  - [ProVal - Production - CVE-2021-26858 Detection](<../monitors/CVE-2021-26858 Detection.md>)
 
 ## Variables
 
@@ -58,6 +58,7 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVE-
 
 - Script log
 - Ticketing if enabled in Globals
+
 
 
 

@@ -12,15 +12,15 @@ unlisted: false
 
 Baseline for the following dataviews:
 
-- [Patching Metrics Overview](https://proval.itglue.com/DOC-5078775-8023241)
-- [Patching Metrics Overview - Client Filter](https://proval.itglue.com/DOC-5078775-11915225)
-- [Patching Metrics Overview - Computer Filter](https://proval.itglue.com/DOC-5078775-11915195)
+- [Patching Metrics Overview](<../dataviews/Admin - Patching Metrics Overview.md>)
+- [Patching Metrics Overview - Client Filter](<../dataviews/Patching Metrics Overview - Client Filter.md>)
+- [Patching Metrics Overview - Computer Filter](<../dataviews/Patching Metrics Overview - Computer Filter.md>)
 
 Minimum Requirement: MySQL 5.7.7
 
 ## Dependencies
 
-- [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](https://proval.itglue.com/DOC-5078775-11915171)
+- [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](<../scripts/MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview.md>)
 
 ## Tables
 
@@ -36,3 +36,4 @@ Minimum Requirement: MySQL 5.7.7
 | Total Approved  | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
 | Total Missing   | decimal (23,0)| Number of approved patches that aren't installed                                             |
 | Patching Policy | varchar (9)  | Patching Policy (Managed | Unmanaged)                                                       |
+

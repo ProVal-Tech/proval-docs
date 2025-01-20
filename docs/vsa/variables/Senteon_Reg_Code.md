@@ -17,13 +17,14 @@ The value for this must be provided by the partner. The partner can get the data
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](https://proval.itglue.com/DOC-5078775-16541168)
+[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
 
 ## Details
 
 | Managed Variable Name | Managed Variable Type | Description                                              |
 |-----------------------|-----------------------|----------------------------------------------------------|
 | Senteon_Reg_Code      | Public                | Used by the agent procedure to specify the registration code during install |
+
 
 
 

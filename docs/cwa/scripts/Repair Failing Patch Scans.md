@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script is an Autofix script meant to be called from the monitor [ProVal - Development - Last scanned patch date > 7 days](https://proval.itglue.com/DOC-5078775-8918745).
+This script is an Autofix script meant to be called from the monitor [ProVal - Development - Last scanned patch date > 7 days](<../monitors/Last Scanned Patch Date  7 days.md>).
 
 ## Sample Run
 
@@ -32,7 +32,7 @@ This will allow the script to be run manually instead of called by the monitor.
 
 ## Dependencies
 
-This autofix script is called by the monitor [ProVal - Development - Last scanned patch date > 7 days](https://proval.itglue.com/DOC-5078775-8918745).
+This autofix script is called by the monitor [ProVal - Development - Last scanned patch date > 7 days](<../monitors/Last Scanned Patch Date  7 days.md>).
 
 ## Variables
 
@@ -53,6 +53,7 @@ This autofix script is called by the monitor [ProVal - Development - Last scanne
 
 - Script log messages only
 - Please reach out to [support@provaltech.com](mailto:support@provaltech.com) if you would like this solution to begin ticketing.
+
 
 
 

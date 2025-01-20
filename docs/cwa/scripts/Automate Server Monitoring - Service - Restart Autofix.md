@@ -22,7 +22,7 @@ Will not work manually, it can be used via the `△ Custom - Autofix - Restart S
 
 ## Dependencies
 
-- [Agnostic - Invoke-RestartService](https://proval.itglue.com/DOC-5078775-11032222)
+- [Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
 - [Solution - Automate server and CW Manage Plugin Monitoring](https://proval.itglue.com/5078775/docs/10390988)
 
 ## Variables
@@ -72,6 +72,7 @@ Please reference agnostic content documentation for Service Restart Process.
 
 - Script Log
 - Email
+
 
 
 

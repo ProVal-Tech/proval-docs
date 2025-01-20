@@ -18,30 +18,30 @@ The purpose of the solution is to collect and display the OneDrive sync status i
 
 | Content                                                                 | Type           | Function                                                   |
 |-------------------------------------------------------------------------|----------------|------------------------------------------------------------|
-| [Script - Microsoft OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-14227796) | Script         | Fetch the data.                                           |
-| [Dataview - Microsoft OneDrive Sync Status [Script]](https://proval.itglue.com/DOC-5078775-14227800) | Dataview       | Display the data.                                         |
-| [Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](https://proval.itglue.com/DOC-5078775-14241947) | Internal Monitor | Detect the relevant computers to execute the script.     |
+| [Script - Microsoft OneDrive Sync Status [DV]](<../cwa/scripts/Microsoft OneDrive Sync Status DV.md>) | Script         | Fetch the data.                                           |
+| [Dataview - Microsoft OneDrive Sync Status [Script]](<../cwa/dataviews/Microsoft OneDrive Sync Status Script.md>) | Dataview       | Display the data.                                         |
+| [Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../cwa/monitors/Execute Script - Microsoft OneDrive Sync Status.md>) | Internal Monitor | Detect the relevant computers to execute the script.     |
 | △ CUSTOM - Execute Script - Microsoft OneDrive Sync Status              | Alert Template | Executes the script against the computers detected by the Internal Monitor. |
 
 #### Alerting
 
 | Content                                                                 | Type           | Function                                                   |
 |-------------------------------------------------------------------------|----------------|------------------------------------------------------------|
-| [Internal Monitor - OneDrive Sync Status Issue](https://proval.itglue.com/DOC-5078775-15373743) | Internal Monitor | Detects the problematic machines.                          |
-| [Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) | Autofix Script | Manages ticketing.                                        |
+| [Internal Monitor - OneDrive Sync Status Issue](<../cwa/monitors/OneDrive Sync Status Issue.md>) | Internal Monitor | Detects the problematic machines.                          |
+| [Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) | Autofix Script | Manages ticketing.                                        |
 | △ Custom - Ticket Creation - Computer                                     | Alert Template | Executes the script against the computers detected by the Internal Monitor. |
 
 ## Implementation
 
 ### 1.
 Import/Update the following scripts from the `ProSync` plugin:
-- [Script - Microsoft OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-14227796)  
-- [Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)  
+- [Script - Microsoft OneDrive Sync Status [DV]](<../cwa/scripts/Microsoft OneDrive Sync Status DV.md>)  
+- [Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>)  
 
 ### 2.
 Import/Update the following internal monitors from the `ProSync` plugin:
-- [Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](https://proval.itglue.com/DOC-5078775-14241947)  
-- [Internal Monitor - OneDrive Sync Status Issue](https://proval.itglue.com/DOC-5078775-15373743)  
+- [Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../cwa/monitors/Execute Script - Microsoft OneDrive Sync Status.md>)  
+- [Internal Monitor - OneDrive Sync Status Issue](<../cwa/monitors/OneDrive Sync Status Issue.md>)  
 
 ### 3.
 Import/Update the following alert templates from the `ProSync` plugin:
@@ -49,7 +49,7 @@ Import/Update the following alert templates from the `ProSync` plugin:
 - △ Custom - Ticket Creation - Computer  
 
 ### 4.
-Import the [Dataview - Microsoft OneDrive Sync Status [Script]](https://proval.itglue.com/DOC-5078775-14227800) from the `ProSync` plugin.
+Import the [Dataview - Microsoft OneDrive Sync Status [Script]](<../cwa/dataviews/Microsoft OneDrive Sync Status Script.md>) from the `ProSync` plugin.
 
 ### 5.
 Reload the system cache.  
@@ -58,19 +58,20 @@ Reload the system cache.
 ### 6.
 Implement the Auditing solution as follows:
 - Navigate to Automation > Monitors > Internal Monitors
-  - [Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](https://proval.itglue.com/DOC-5078775-14241947)  
+  - [Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../cwa/monitors/Execute Script - Microsoft OneDrive Sync Status.md>)  
   - Alert Template: `△ CUSTOM - Execute Script - Microsoft OneDrive Sync Status`
 
 ### 7.
 Implement the Alerting solution as follows:
 - Navigate to Automation > Monitors > Internal Monitors
-  - [Internal Monitor - OneDrive Sync Status Issue](https://proval.itglue.com/DOC-5078775-15373743)  
+  - [Internal Monitor - OneDrive Sync Status Issue](<../cwa/monitors/OneDrive Sync Status Issue.md>)  
   - Alert Template: `△ Custom - Ticket Creation - Computer`
 
 ## FAQ
 
 **Q:** Why does the script occasionally throw an error and fail to retrieve data from the computer?  
 **A:** The script relies on the functionality of the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module to fetch the necessary data. However, it's important to note that the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module is not entirely infallible, which can result in occasional errors during data retrieval. Additionally, it's crucial to ensure that no security application is impeding the functionality of this module, as it needs to operate without restrictions to retrieve data successfully.
+
 
 
 

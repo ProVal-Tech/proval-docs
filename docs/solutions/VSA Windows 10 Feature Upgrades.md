@@ -18,18 +18,18 @@ This implementation will initiate a feature upgrade on the target endpoint, and 
 
 | Name                                                                                                                                                       | Content Type     | Description                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------------------------------------------------------------|
-| [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade](https://proval.itglue.com/DOC-5078775-10784821)                                 | Agent Procedure    | This procedure launches the upgrade process                          |
-| [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](https://proval.itglue.com/DOC-5078775-10784812)                     | Agent Procedure    | This Procedure will fire on machines that fail the first attempt. Can also be run manually |
-| [SEC - Windows Patching - Agent Procedure - Registry Check](https://proval.itglue.com/DOC-5078775-10784806)                                             | Agent Procedure    | Fired Hourly until the installation status shows success or failure. Updates the CF |
-| [SEC - Windows Patching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713)                                                  | PowerShell Script  | Agnostic Content to perform Windows 10 Feature Upgrades.            |
-| [SEC - Windows Patching - Policy - Windows 10 Feature Upgrade Reattempt on Fail](https://proval.itglue.com/DOC-5078775-10784807)                        | Policy             | Fires the No Reboot script on machines that failed the initial attempt |
+| [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade](<../vsa/procedures/Windows 10 Feature Upgrade.md>)                                 | Agent Procedure    | This procedure launches the upgrade process                          |
+| [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](<../vsa/procedures/Windows 10 Feature Upgrade (No Reboot).md>)                     | Agent Procedure    | This Procedure will fire on machines that fail the first attempt. Can also be run manually |
+| [SEC - Windows Patching - Agent Procedure - Registry Check](<../vsa/procedures/Registry Check.md>)                                             | Agent Procedure    | Fired Hourly until the installation status shows success or failure. Updates the CF |
+| [SEC - Windows Patching - Agnostic - Update-Windows10](<../powershell/Update-Windows10.md>)                                                  | PowerShell Script  | Agnostic Content to perform Windows 10 Feature Upgrades.            |
+| [SEC - Windows Patching - Policy - Windows 10 Feature Upgrade Reattempt on Fail](<../vsa/policies/Windows 10 Feature Upgrade Reattempt on Fail.md>)                        | Policy             | Fires the No Reboot script on machines that failed the initial attempt |
 | [SEC - Windows Patching - Event Set Monitor - xPVAL Windows Feature Upgrade Event](https://proval.itglue.com/DOC-5078775-10784805)                      | Event Set          | Monitors for the completion event and fires the registry check to force-update the CF |
 | [SEC - Windows Patching - Event Set Monitor - xPVAL Windows Feature Upgrade Event](https://proval.itglue.com/DOC-5078775-10784805)                      | Machine Custom Field | Contains the upgrade status                                         |
-| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [REBOOT PENDING]](https://proval.itglue.com/DOC-5078775-10784804)                        | View               | Endpoints that have run the noReboot script.                       |
-| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [FAILURE]](https://proval.itglue.com/DOC-5078775-10784835)                               | View               | Endpoints that have failed the upgrade process                      |
-| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [IN PROGRESS]](https://proval.itglue.com/DOC-5078775-10784819)                           | View               | Endpoints current running either AP                                  |
-| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [SUCCESS]](https://proval.itglue.com/DOC-5078775-10784811)                               | View               | Endpoints that have successfully upgraded                            |
-| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [ALL]](https://proval.itglue.com/DOC-5078775-10784846)                                   | View               | All Endpoints that have run either AP.                              |
+| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [REBOOT PENDING]](<../vsa/views/xPVAL Feature Upgrade Status REBOOT PENDING.md>)                        | View               | Endpoints that have run the noReboot script.                       |
+| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [FAILURE]](<../vsa/views/xPVAL Feature Upgrade Status FAILURE.md>)                               | View               | Endpoints that have failed the upgrade process                      |
+| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [IN PROGRESS]](<../vsa/views/xPVAL Feature Upgrade Status IN PROGRESS.md>)                           | View               | Endpoints current running either AP                                  |
+| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [SUCCESS]](<../vsa/views/xPVAL Feature Upgrade Status SUCCESS.md>)                               | View               | Endpoints that have successfully upgraded                            |
+| [SEC - Windows Patching - View - xPVAL Feature Upgrade Status [ALL]](<../vsa/views/xPVAL Feature Upgrade Status ALL.md>)                                   | View               | All Endpoints that have run either AP.                              |
 
 # Implementation
 1. Create the Machine Custom Field: xPVAL Windows Feature Upgrade Status
@@ -40,6 +40,7 @@ This implementation will initiate a feature upgrade on the target endpoint, and 
 6. Import xPVAL_Windows_Feature_Upgrade_Event.xml and apply it to all workstations in the environment.
 7. Import xPVAL_Feature_Upgrade_Views.xml and ensure the Advanced Filters are correct according to documentation in this solution.
 8. Import Windows_10_Feature_Upgrade_Reattempt_On_Fail and place it in the Policies/PVAL Stack folder. Ensure that view and assigned AP is correct in the policy. Notify the client of implementation and availability during the next Admin Call. Be sure to mention the 30-minute forced reboot.
+
 
 
 

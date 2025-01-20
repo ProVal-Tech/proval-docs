@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-The internal monitor executes the [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760) once per week against the MSSQL servers available in the environment.
+The internal monitor executes the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) once per week against the MSSQL servers available in the environment.
 
 ## Dependencies
 
-- [Custom Table - pvl_mssql_db_version](https://proval.itglue.com/DOC-5078775-15161868)
-- [Script - Get MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161760)
+- [Custom Table - pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>)
+- [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>)
 
 ## Target
 
@@ -24,6 +24,7 @@ The internal monitor is explicitly limited to the `MSSQL Servers` present in the
 ## Ticketing
 
 **Name:** `△ Custom - Execute Script - Get MSSQL Database Version`
+
 
 
 

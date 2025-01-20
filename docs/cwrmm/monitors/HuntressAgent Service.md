@@ -14,7 +14,7 @@ Alerts on the machines if HuntressAgent Service is stopped and fails to restart.
 
 ## Dependencies
 
-[CW RMM - Device Group - Machines with Huntress Agent](https://proval.itglue.com/DOC-5078775-15303347)
+[CW RMM - Device Group - Machines with Huntress Agent](<../groups/Machines with Huntress Agent.md>)
 
 ## Monitor
 
@@ -49,6 +49,7 @@ Alerts on the machines if HuntressAgent Service is stopped and fails to restart.
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
    ![](../../../static/img/HuntressAgent-Service/image_9.png)  
+
 
 
 

@@ -10,9 +10,10 @@ unlisted: false
 ---
 ## Summary
 
-It is an exact copy of the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script with the exception that it now refrains from executing actions for monitors with `SUCCESS` or `WARNING` statuses.
+It is an exact copy of the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script with the exception that it now refrains from executing actions for monitors with `SUCCESS` or `WARNING` statuses.
 
 Should be executed from an alert template only. Currently, it's implemented in the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+
 
 
 

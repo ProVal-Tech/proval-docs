@@ -14,12 +14,12 @@ The purpose of this group is to filter Windows machines where Huntress agent is 
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Huntress Acct_Key](https://proval.itglue.com/DOC-5078775-15293648)
-- [CW RMM - Custom Fields - Huntress Org_Key](https://proval.itglue.com/DOC-5078775-15293647)
-- [CW RMM - Custom Fields - Huntress Tag](https://proval.itglue.com/DOC-5078775-15293470)
-- [CW RMM - Custom Fields - Exclude Huntress](https://proval.itglue.com/DOC-5078775-15294130)
-- [CW RMM - Custom Fields - Exclude Huntress Deployment](https://proval.itglue.com/DOC-5078775-15294129)
-- [CW RMM - Task - Huntress Agent (INSTALL)](https://proval.itglue.com/DOC-5078775-13684933)
+- [CW RMM - Custom Fields - Huntress Acct_Key](<../custom-fields/Huntress Acct_Key.md>)
+- [CW RMM - Custom Fields - Huntress Org_Key](<../custom-fields/Huntress Org_Key.md>)
+- [CW RMM - Custom Fields - Huntress Tag](<../custom-fields/Huntress Tag.md>)
+- [CW RMM - Custom Fields - Exclude Huntress](<../custom-fields/Exclude Huntress.md>)
+- [CW RMM - Custom Fields - Exclude Huntress Deployment](<../custom-fields/Exclude Huntress Deployment.md>)
+- [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>)
 
 ## Summary
 
@@ -49,6 +49,7 @@ Once adding the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Huntress/image_3.png)
 
 ![Image](../../../static/img/Deploy-Huntress/image_4.png)
+
 
 
 

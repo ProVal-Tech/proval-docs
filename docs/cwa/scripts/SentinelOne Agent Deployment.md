@@ -32,8 +32,8 @@ Deploys the SentinelOne agent with an agent token set at either the Global, Clie
 
 Global Parameter Set instructions:
 
-1. Sync the following proval script [CWM - Automate - Script - Property - Set](https://proval.itglue.com/DOC-5078775-11420461).
-2. Run [CWM - Automate - Script - Property - Set](https://proval.itglue.com/DOC-5078775-11420461) with the following parameters:
+1. Sync the following proval script [CWM - Automate - Script - Property - Set](<./Property - Set.md>).
+2. Run [CWM - Automate - Script - Property - Set](<./Property - Set.md>) with the following parameters:
    - Name: SentinelOneDefaultToken
    - Type: Global
    - Value: [Your Default SentinelOne Token]
@@ -81,6 +81,7 @@ Exclusions can be set in the following locations:
 ## Output
 
 - Script log
+
 
 
 

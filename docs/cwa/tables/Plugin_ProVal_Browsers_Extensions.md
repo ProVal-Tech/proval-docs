@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Purpose
 
-This Automate custom table stores the information gathered by the [Get Chromium Browsers Extensions](https://proval.itglue.com/DOC-5078775-11896849) and [Get Chromium Browsers Extensions](https://proval.itglue.com/DOC-5078775-11896849) scripts and is used by the [Installed Browsers Extensions [Script]](https://proval.itglue.com/DOC-5078775-11896883) dataview.
+This Automate custom table stores the information gathered by the [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>) and [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>) scripts and is used by the [Installed Browsers Extensions [Script]](<../dataviews/Installed Browsers Extensions Script.md>) dataview.
 
 ## Dependencies
 
-- [Get Chromium Browsers Extensions](https://proval.itglue.com/DOC-5078775-11896849)
-- [Get Firefox Browser Extensions](https://proval.itglue.com/DOC-5078775-11896863)
+- [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>)
+- [Get Firefox Browser Extensions](<../scripts/Get Firefox Browser Extensions.md>)
 
 ## Tables
 
@@ -31,6 +31,7 @@ This Automate custom table stores the information gathered by the [Get Chromium 
 | ExtensionVersion     | varchar(32) | Version of the Extension                                        |
 | ExtensionInstallTime  | datetime    | Installation time of the Extension                               |
 | ScriptRunTime        | datetime    | Time when the data was fetched in Automate                      |
+
 
 
 

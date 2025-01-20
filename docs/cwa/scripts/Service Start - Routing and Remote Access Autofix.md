@@ -14,7 +14,7 @@ This will set the startup type to Automatic and will restart the RemoteAccess se
 
 Alert Template -  ~Autofix - Set RemoteAccess Startup Type to Auto
 
-This should be called by the monitor [CWM - Automate -Remote Monitor - ProVal - Development - RemoteAccess Service - Set StartType To Auto](https://proval.itglue.com/DOC-5078775-13808492)
+This should be called by the monitor [CWM - Automate -Remote Monitor - ProVal - Development - RemoteAccess Service - Set StartType To Auto](<../monitors/RemoteAccess Service Check.md>)
 
 ## Sample Run
 
@@ -24,6 +24,7 @@ This should be called by the monitor [CWM - Automate -Remote Monitor - ProVal - 
 
 Startup Type = Automatic  
 Status = Running
+
 
 
 

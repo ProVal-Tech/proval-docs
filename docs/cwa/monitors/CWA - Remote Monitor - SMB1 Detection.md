@@ -24,7 +24,8 @@ Check whether the SMB1 is enabled on the end machine or not. It runs the OS vers
 
 ## How to Import
 
-[Import - Remote Monitor - SMB1 Detection Query](https://proval.itglue.com/DOC-5078775-13242522)
+[Import - Remote Monitor - SMB1 Detection Query](<./SMB1 Detection Query.md>)
+
 
 
 

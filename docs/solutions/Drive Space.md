@@ -14,15 +14,16 @@ unlisted: false
 
 | Content                                                                                                           | Type    | Function |
 |-------------------------------------------------------------------------------------------------------------------|---------|----------|
-| [EPM - Disk - Monitor - Agent - Drive Space Check](https://proval.itglue.com/DOC-5078775-8059826)               | Monitor |          |
-| [EPM - Disk - Script - Disk Space Monitoring Process](https://proval.itglue.com/DOC-5078775-7540106)            | Script  |          |
-| [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](https://proval.itglue.com/DOC-5078775-8066337) | Script  |          |
+| [EPM - Disk - Monitor - Agent - Drive Space Check](<../cwa/monitors/Agent - Drive Space Check.md>)               | Monitor |          |
+| [EPM - Disk - Script - Disk Space Monitoring Process](<../cwa/scripts/Disk Space Monitoring Process.md>)            | Script  |          |
+| [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](<../cwa/scripts/Agent Monitor Creation - Disk - WRAPPER.md>) | Script  |          |
 
 ## Implementation
 
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
 
 
 

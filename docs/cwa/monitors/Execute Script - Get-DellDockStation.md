@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of this monitor is to execute the [Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374) on Windows 10, 11 Dell machines where it has not been executed in the last 2 days.
+The purpose of this monitor is to execute the [Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) on Windows 10, 11 Dell machines where it has not been executed in the last 2 days.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374)
+[CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>)
 
 ## Target
 
@@ -24,7 +24,8 @@ Windows 10, 11 machines.
 
 **Name:** `△ Custom - Execute Script - Get-DellDockStation`
 
-The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374) script.
+The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) script.
+
 
 
 

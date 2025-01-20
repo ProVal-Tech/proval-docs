@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script removes the residuals left by the [Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631) script including the `Everything` service.
+The script removes the residuals left by the [Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>) script including the `Everything` service.
 
 ## Sample Run
 
@@ -18,7 +18,8 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](https
 
 ## Dependencies
 
-[SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](https://proval.itglue.com/DOC-5078775-8881631)
+[SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>)
+
 
 
 

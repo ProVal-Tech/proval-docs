@@ -14,11 +14,11 @@ This monitor looks for any device that is detected by Network probe and on which
 
 ## Dependencies
 
-Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](https://proval.itglue.com/DOC-5078775-12944749) script to run every 12-24 hours as a client script in the dashboard. This will provide the needed permission for the `agentdeploymentreadinesscheck` Table for both Hosted as well as On-Prem Clients. Otherwise, the monitor will not provide any results.
+Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](<../scripts/MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions.md>) script to run every 12-24 hours as a client script in the dashboard. This will provide the needed permission for the `agentdeploymentreadinesscheck` Table for both Hosted as well as On-Prem Clients. Otherwise, the monitor will not provide any results.
 
 ## Implementation
 
-The monitor can be imported normally just make sure to schedule [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](https://proval.itglue.com/DOC-5078775-12944749) script every 12-24 hours. Otherwise, the monitor will not work.
+The monitor can be imported normally just make sure to schedule [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](<../scripts/MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions.md>) script every 12-24 hours. Otherwise, the monitor will not work.
 
 ## Target
 
@@ -51,6 +51,7 @@ Global
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
 
 
 

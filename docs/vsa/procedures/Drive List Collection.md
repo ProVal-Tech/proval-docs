@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-polls for physical, non-removable drives with capacity > 10GB and places the available drive letters in [EPM - Disk - Custom Field - xPVAL Drive List](https://proval.itglue.com/DOC-5078775-10793262)
+polls for physical, non-removable drives with capacity > 10GB and places the available drive letters in [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
 
 ## Sample Run
 
@@ -35,7 +35,8 @@ Queries the endpoint for Physical, non-removable drives over 10GB
 ## Output
 
 Agent Procedure Log  
-[EPM - Disk - Custom Field - xPVAL Drive List](https://proval.itglue.com/DOC-5078775-10793262)
+[EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
+
 
 
 

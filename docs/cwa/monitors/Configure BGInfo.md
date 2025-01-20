@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Implementation Steps
 
-- Import [EPM - Software Install - Script - Winget - Install/Update - Teams](https://proval.itglue.com/DOC-5078775-13496687) script.
+- Import [EPM - Software Install - Script - Winget - Install/Update - Teams](<../scripts/Winget - InstallUpdate - Teams.md>) script.
 - Run this SQL query from a RAWSQL monitor set to create the alert template.
 
 ```sql
@@ -192,6 +192,7 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 
 - Now execute your query from a RAWSQL monitor set.
 - Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
+
 
 
 

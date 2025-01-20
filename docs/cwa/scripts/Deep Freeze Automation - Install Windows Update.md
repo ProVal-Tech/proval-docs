@@ -42,7 +42,7 @@ Before executing the script, save the password with the **`Deep Freeze Command L
 
 | Name                   | Example | Required | Description                                                                                                                                                                                                                   |
 |------------------------|---------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Update_Applications     | 1       | False    | The [SWM - Software Configuration - Script - Winget - Update All](https://proval.itglue.com/DOC-5078775-12027191) script will be called before restarting the computer in the Frozen state after installing the Windows updates, if this parameter is set to 1 while running the script. |
+| Update_Applications     | 1       | False    | The [SWM - Software Configuration - Script - Winget - Update All](<./Winget - Update All.md>) script will be called before restarting the computer in the Frozen state after installing the Windows updates, if this parameter is set to 1 while running the script. |
 
 ### Global Variables
 
@@ -54,6 +54,7 @@ Before executing the script, save the password with the **`Deep Freeze Command L
 ## Output
 
 - Script Logs
+
 
 
 

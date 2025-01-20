@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-A Suite of 9 Agent Procedures which implement agnostic content [SEC - Encryption - Agnostic - Initialize-BitLockerVolume](https://proval.itglue.com/DOC-5078775-8931801)
+A Suite of 9 Agent Procedures which implement agnostic content [SEC - Encryption - Agnostic - Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>)
 
 All required parameters are prompted and explained at script runtime.
 
@@ -45,7 +45,7 @@ All required parameters are prompted and explained at script runtime.
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](https://proval.itglue.com/DOC-5078775-8931801)
+[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>)
 
 ---
 
@@ -80,6 +80,7 @@ All required parameters are prompted and explained at script runtime.
     ./Initialize-BitLockerVolume-error.txt
     Agent Procedure Log
 ```
+
 
 
 

@@ -14,8 +14,8 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 
 ## Dependencies
 
-- [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448)
-- [Windows 11 compatibility Check [DV]](https://proval.itglue.com/DOC-5078775-8355447)
+- [plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)
+- [Windows 11 compatibility Check [DV]](<../scripts/Windows - Check Windows 11 Compatibility.md>)
 - [Scalepad's Warranty Master Plugin](https://help.scalepad.com/en/articles/5899906-connectwise-automate-integration-instructions)
 
 ## Columns
@@ -39,6 +39,7 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 | Purchase Date              | Purchase Date of the Device.                                                                        |
 | Expiry Date                | Warranty Expiry Date of the Device.                                                                 |
 | Warranty Status            | Warranty Status of the Device (Expired/Expiring Soon/In Warranty).                                 |
+
 
 
 

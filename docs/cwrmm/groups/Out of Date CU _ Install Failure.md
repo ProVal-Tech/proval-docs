@@ -14,7 +14,7 @@ The group will detect the computers where the Latest Cumulative Update installat
 
 ## Dependencies
 
-[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](https://proval.itglue.com/DOC-5078775-15748265)
+[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
 
 ## Group Creation
 
@@ -60,6 +60,7 @@ The group will detect the computers where the Latest Cumulative Update installat
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_15.png)
 
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_16.png)
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script runs as an autofix to deploy the BitLocker initialization to the agents detected by the monitor [Internal Monitor - Bitlocker - Initialize Volume Deployment](https://proval.itglue.com/DOC-5078775-16773035).
+This script runs as an autofix to deploy the BitLocker initialization to the agents detected by the monitor [Internal Monitor - Bitlocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>).
 
 ## Sample Run
 
@@ -20,9 +20,9 @@ Run it with `SetEnvironment = 1`, to set the EDFs required for this script once 
 
 ## Dependencies
 
-- [Internal Monitor - Bitlocker - Initialize Volume Deployment](https://proval.itglue.com/DOC-5078775-16773035)
+- [Internal Monitor - Bitlocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>)
 - [SEC - Encryption - Script - Bitlocker - Volume - Initialize](https://proval.itglue.com/DOC-5078775-8934308)
-- [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)
+- [SEC - Encryption - Script - Bitlocker - Audit](<./Bitlocker - Audit.md>)
 
 #### EDFs
 
@@ -41,12 +41,13 @@ Run it with `SetEnvironment = 1`, to set the EDFs required for this script once 
 
 | Variable Name                     | Value    | Required | Description                                                                                                                                                                                                                     |
 |-----------------------------------|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bitlocker_Enable_Fail_Count       | 1 or 2  | True     | The script enters the count of failed attempts of the BitLocker initialization to this script state.If it fails twice (2) times, the computer will be excluded from the monitor [Internal Monitor - Bitlocker - Initialize Volume Deployment](https://proval.itglue.com/DOC-5078775-16773035). |
+| Bitlocker_Enable_Fail_Count       | 1 or 2  | True     | The script enters the count of failed attempts of the BitLocker initialization to this script state.If it fails twice (2) times, the computer will be excluded from the monitor [Internal Monitor - Bitlocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>). |
 
 ## Output
 
 - Script log
 - Dataview
+
 
 
 

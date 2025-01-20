@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](https://proval.itglue.com/DOC-5078775-11791153).
+This script is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>).
 
 ## Sample Run
 
@@ -18,16 +18,16 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 
 ## Dependencies
 
-- [Get Installed Browsers Extensions [DV]](https://proval.itglue.com/DOC-5078775-11896860)
-- [OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+- [Get Installed Browsers Extensions [DV]](<./Get Installed Browsers Extensions DV.md>)
+- [OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Process
 
-- Creates the [Plugin_ProVal_Browsers_Extensions](https://proval.itglue.com/DOC-5078775-11896865) script if it does not exist.
+- Creates the [Plugin_ProVal_Browsers_Extensions](<../tables/Plugin_ProVal_Browsers_Extensions.md>) script if it does not exist.
 - Defines the necessary variables.
-- Executes the agnostic script [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](https://proval.itglue.com/DOC-5078775-11791153) and stores the data into a JSON file.
+- Executes the agnostic script [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>) and stores the data into a JSON file.
 - Clears the stale data.
-- Executes the [OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) script to parse through the JSON file and insert the data into the [Plugin_ProVal_Browsers_Extensions](https://proval.itglue.com/DOC-5078775-11896865) table.
+- Executes the [OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) script to parse through the JSON file and insert the data into the [Plugin_ProVal_Browsers_Extensions](<../tables/Plugin_ProVal_Browsers_Extensions.md>) table.
 - Logs the Success/Failures.
 
 ## Output
@@ -35,6 +35,7 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

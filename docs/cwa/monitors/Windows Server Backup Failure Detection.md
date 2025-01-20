@@ -21,11 +21,12 @@ If the backup failed, then it will raise a ticket.
 
 ## Dependencies
 
-[Windows Server Backup](https://proval.itglue.com/DOC-5078775-13083383)
+[Windows Server Backup](<../roles/Windows Server Backup.md>)
 
 ## Target
 
 It should be targeted on the group which is bounded with a search via role "Windows Sever Backup".
+
 
 
 

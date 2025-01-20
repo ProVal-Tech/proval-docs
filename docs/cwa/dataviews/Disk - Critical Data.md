@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-This Dataview displays the Disk information gathered from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506). This is called from the [Disk - Gather Critical Info](https://proval.itglue.com/DOC-5078775-9371128) automate script and stores that data in the automate custom table [plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714).
+This Dataview displays the Disk information gathered from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>). This is called from the [Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>) automate script and stores that data in the automate custom table [plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>).
 
 ## Dependencies
 
-- [EPM - Disk - Script - Disk - Gather Critical Info](https://proval.itglue.com/DOC-5078775-9371128)
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](https://proval.itglue.com/DOC-5078775-9371714)
-- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506)
+- [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)
+- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)
 
 ## Columns
 
@@ -57,6 +57,7 @@ This Dataview displays the Disk information gathered from [EPM - Disk - Agnostic
 | IntegrityErrors      | The amount of integrity errors logged on the drive                      |
 | InformationalLogEntries | The amount of informational log entries logged on the drive           |
 | DateUpdated          | The Date that this information was gathered                             |
+
 
 
 

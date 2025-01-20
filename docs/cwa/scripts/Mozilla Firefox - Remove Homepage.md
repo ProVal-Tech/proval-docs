@@ -22,7 +22,7 @@ Time Saved by Automation: 5 Minutes
 
 - Windows 10 1703+
 - Mozilla Firefox
-- [Remove-FirefoxHomepage](https://proval.itglue.com/DOC-5078775-7348111)
+- [Remove-FirefoxHomepage](<../../powershell/Remove-FirefoxHomepage.md>)
 
 ## Variables
 
@@ -37,6 +37,7 @@ The script will scan for and remove all homepage policies from the Firefox polic
 
 - Script log
 - Local file on computer
+
 
 
 

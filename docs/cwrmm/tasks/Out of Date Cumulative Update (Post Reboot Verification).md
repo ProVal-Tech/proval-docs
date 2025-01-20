@@ -19,16 +19,16 @@ This task validates whether the Cumulative Update installed by the Out of Date C
 
 ## Dependencies
 
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](https://proval.itglue.com/DOC-5078775-15748265)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](https://proval.itglue.com/DOC-5078775-15748263)
-- [CW RMM - Device Group - Out of Date CU _ Reboot Pending](https://proval.itglue.com/DOC-5078775-15748267)
-- [CW RMM - Task - Out of Date Cumulative Update (Autofix)](https://proval.itglue.com/DOC-5078775-15748270)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)
+- [CW RMM - Device Group - Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>)
+- [CW RMM - Task - Out of Date Cumulative Update (Autofix)](<./Out of Date Cumulative Update (Autofix).md>)
 
 ## Variables
 
 | Name         | Description                                                                                                                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TaskRunTime  | Value stored in the [EndPoint - Out_of_Date_CU_Autofix_Date](https://proval.itglue.com/DOC-5078775-15748263) Custom Field.                                  |
+| TaskRunTime  | Value stored in the [EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>) Custom Field.                                  |
 | Output       | Output of the previously executed PowerShell script.                                                                                                            |
 
 ## Task Creation
@@ -246,7 +246,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per day against the [Out of Date CU _ Reboot Pending](https://proval.itglue.com/DOC-5078775-15748267) device group.
+It is suggested to run the Task once per day against the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Out of Date Cumulative Update (Post Reboot Verification)` Task.
@@ -272,7 +272,7 @@ Recurrence will be updated to `Every Day`.
 Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_54.png)  
 
-Search and Select the [Out of Date CU _ Reboot Pending](https://proval.itglue.com/DOC-5078775-15748267) device group.  
+Search and Select the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.  
 ![Device Group Selection](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_60.png)  
 
 Now click the `Run` button to initiate the task.  
@@ -286,6 +286,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script Log
 - Custom Field
+
 
 
 

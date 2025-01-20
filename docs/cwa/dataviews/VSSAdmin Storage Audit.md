@@ -14,9 +14,9 @@ This dataview stores the detail of VSS admin storage for all volumes.
 
 ## Dependencies
 
-- [VSS Resize](https://proval.itglue.com/DOC-5078775-10728931)
-- [Vssadmin List Storage Audit](https://proval.itglue.com/DOC-5078775-10728929)
-- [plugin_proval_vssadminstorage](https://proval.itglue.com/DOC-5078775-10728928)
+- [VSS Resize](<../scripts/VSS Resize.md>)
+- [Vssadmin List Storage Audit](<../scripts/Vssadmin List Storage Audit.md>)
+- [plugin_proval_vssadminstorage](<../tables/plugin_proval_vssadminstorage.md>)
 
 ## Columns
 
@@ -32,6 +32,7 @@ This dataview stores the detail of VSS admin storage for all volumes.
 | VSS Allocated Storage   | Vss storage allocated on the disk             |
 | VSS Max Storage         | VSS max storage provided                      |
 | Script Ran Date         | Script last ran date on the agent            |
+
 
 
 

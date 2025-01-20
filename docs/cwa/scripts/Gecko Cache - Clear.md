@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-GeckoCache](https://proval.itglue.com/DOC-5078775-10371997).
+This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>).
 
 ## Sample Run
 
@@ -19,6 +19,7 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
+
 
 
 

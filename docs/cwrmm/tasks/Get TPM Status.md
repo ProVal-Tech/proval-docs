@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Fetches the TPM Status of the machine and stores it in the [TPM Status](https://proval.itglue.com/DOC-5078775-17341922) custom field.
+Fetches the TPM Status of the machine and stores it in the [TPM Status](<../custom-fields/Endpoint - TPM Status.md>) custom field.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Fetches the TPM Status of the machine and stores it in the [TPM Status](https://
 
 ## Dependencies
 
-[CW RMM - Custom Field - Endpoint - TPM Status](https://proval.itglue.com/DOC-5078775-17341922)  
+[CW RMM - Custom Field - Endpoint - TPM Status](<../custom-fields/Endpoint - TPM Status.md>)  
 Create the dependent Custom Field before creating the task.
 
 ## Task Creation
@@ -136,6 +136,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 - Custom Field  
 ![Custom Field Output](../../../static/img/Get-TPM-Status/image_24.png)  
 Example: `TpmEnabled: True | TpmActivated: True | TpmReady: True | TpmPresent: True | RestartPending: False`
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Select this custom Field to exclude a machine from Huntress Deployment. It is being utilized by [CW RMM - Device Group - Deploy Huntress](https://proval.itglue.com/DOC-5078775-15302736) group.
+Select this custom Field to exclude a machine from Huntress Deployment. It is being utilized by [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>) group.
 
 # Create the Custom Field
 
@@ -23,6 +23,7 @@ Select this custom Field to exclude a machine from Huntress Deployment. It is be
 **Level:** Endpoint  
 **Description:** Select to Exclude Endpoint from Huntress Deployment  
 **Editable:** Yes  
+
 
 
 

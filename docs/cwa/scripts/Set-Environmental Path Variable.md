@@ -26,7 +26,7 @@ Will add a requested windows path to the environmental path variable for the des
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Set-PathVariable](https://proval.itglue.com/DOC-5078775-11976265)
+- [EPM - Windows Configuration - Agnostic - Set-PathVariable](<../../powershell/Set-PathVariable.md>)
 
 ## Variables
 
@@ -41,11 +41,12 @@ Standard agnostic template variables apply.
 
 ## Process
 
-Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](https://proval.itglue.com/DOC-5078775-11976265) for process information.
+Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](<../../powershell/Set-PathVariable.md>) for process information.
 
 ## Output
 
 - Script log
+
 
 
 

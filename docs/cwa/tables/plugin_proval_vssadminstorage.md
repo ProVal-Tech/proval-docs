@@ -14,9 +14,9 @@ This table contains the vssadmin storage details.
 
 ## Dependencies
 
-- [VSS Resize](https://proval.itglue.com/DOC-5078775-10728931)
-- [Vssadmin List Storage Audit](https://proval.itglue.com/DOC-5078775-10728929)
-- [VSSAdmin Storage Audit](https://proval.itglue.com/DOC-5078775-10728930)
+- [VSS Resize](<../scripts/VSS Resize.md>)
+- [Vssadmin List Storage Audit](<../scripts/Vssadmin List Storage Audit.md>)
+- [VSSAdmin Storage Audit](<../dataviews/VSSAdmin Storage Audit.md>)
 
 ## Tables
 
@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_vssadminstorage` (
   CONSTRAINT `plugin_proval_vssadminstorage_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
+
 
 
 

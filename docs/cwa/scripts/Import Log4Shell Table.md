@@ -18,7 +18,7 @@ Installs and populates a table in a MySQL with a list of potential Log4Shell aff
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.itglue.com/DOC-5078775-8854610)
+- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>)
 - Must be run on the Automate database server.
 - PowerShell v5
 - `mysql.exe` located in any subdirectory of `$env:ProgramFiles/MySQL`
@@ -33,7 +33,7 @@ Installs and populates a table in a MySQL with a list of potential Log4Shell aff
 
 ## Process
 
-See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.itglue.com/DOC-5078775-8854610) for process information.
+See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>) for process information.
 
 ## Output
 
@@ -41,6 +41,7 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](https://proval.it
 - Local file on computer
 - Dataview
 - Custom Table
+
 
 
 

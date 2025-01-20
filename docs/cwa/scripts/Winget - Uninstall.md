@@ -18,7 +18,7 @@ This script will remove a Winget package.
 
 ## Dependencies
 
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973)
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
 
 #### Global Parameters
 
@@ -39,6 +39,7 @@ Please reference the Agnostic Documentation for process.
 ## Output
 
 - Script log
+
 
 
 

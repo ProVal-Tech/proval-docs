@@ -24,9 +24,9 @@ The script compares the current operating system build with the latest available
 
 ## Dependencies
 
-[CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845)  
+[CW RMM - Task - Feature Update Install With Tracking](<./Feature Update Install With Tracking.md>)  
 [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)  
-[CW RMM - Custom Field - Feature Update Reboot Pending](https://proval.itglue.com/DOC-5078775-14592255)  
+[CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)  
 
 ## Create Script
 
@@ -317,6 +317,7 @@ Click the `Save` button to save the Task.
 ## Output
 
 - Custom Field
+
 
 
 

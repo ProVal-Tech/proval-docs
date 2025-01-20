@@ -14,8 +14,8 @@ This dataview stores the AD Users department information.
 
 ## Dependencies
 
-- [plugin_proval_computer_department](https://proval.itglue.com/DOC-5078775-7969931)
-- [Computer Department Auditing[DV]](https://proval.itglue.com/DOC-5078775-9004334)
+- [plugin_proval_computer_department](<./plugin_proval_computer_department.md>)
+- [Computer Department Auditing[DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
 
 ## Columns
 
@@ -44,6 +44,7 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_computer_department pp ON pp.computerid = c.computerid
 ```
+
 
 
 

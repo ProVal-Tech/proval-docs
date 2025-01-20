@@ -22,7 +22,7 @@ This script can be used to completely remove/purge local accounts (including Use
 
 - @custom_proval_computer_accounts (Table)
 - @User management - Profile Audit (Script)
-- [Local User Detection Not Logged In From 90 Days](https://proval.itglue.com/DOC-5078775-7819329)
+- [Local User Detection Not Logged In From 90 Days](<../monitors/Local User Detection Not Logged In From 90 Days.md>)
 
 ## Variables
 
@@ -54,6 +54,7 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+
 
 
 

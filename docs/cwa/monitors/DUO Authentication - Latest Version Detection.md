@@ -14,7 +14,7 @@ This monitor is created to fetch the latest version of the DUO Authentication, w
 
 ## Dependencies
 
-[Application - Latest Version Detection [Winget]](https://proval.itglue.com/DOC-5078775-14466237)
+[Application - Latest Version Detection [Winget]](<../scripts/Application - Latest Version Detection Winget.md>)
 
 ## Target
 
@@ -25,6 +25,7 @@ This script is only targeted to one machine to fetch the Application's latest ve
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
+
 
 
 

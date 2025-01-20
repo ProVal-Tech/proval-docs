@@ -12,7 +12,7 @@ unlisted: false
 
 This Automate Script will create a state-based event log monitor on the specifically requested group. It will by default set these monitors to the "Default - Do Nothing" alert template and needs to be modified to fit your desired result after creation.
 
-PowerShell-related issues are addressed in the WARNING state. It is suggested to use [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script for ERROR state alerting, as the remote monitor truncates the message while creating a default ticket using the alert template.
+PowerShell-related issues are addressed in the WARNING state. It is suggested to use [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script for ERROR state alerting, as the remote monitor truncates the message while creating a default ticket using the alert template.
 
 Note: You have to review the properties of the event log to monitor to determine the name.
 
@@ -49,7 +49,7 @@ The aforementioned monitor will be designed to scan for all events from the Appl
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-RecentEventLog](https://proval.itglue.com/DOC-5078775-9751473)  
+- [EPM - Data Collection - Agnostic - Script - Get-RecentEventLog](<../../powershell/Get-RecentEventLog.md>)  
   [Documentation Link](https://app.myglue.com/help_center/documents/9751473)
 
 ## Variables
@@ -130,6 +130,7 @@ TimeCreated                            Id LevelDisplayName Message
 4/18/2023 9:06:48 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 4/18/2023 9:01:58 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 ```
+
 
 
 

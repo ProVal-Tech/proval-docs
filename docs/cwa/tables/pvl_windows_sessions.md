@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the output of the `query session` command returned by the [CWM - Automate - Script - Windows Sessions [DV, Globals]](https://proval.itglue.com/DOC-5078775-12366454) script.
+Stores the output of the `query session` command returned by the [CWM - Automate - Script - Windows Sessions [DV, Globals]](<../scripts/Windows Sessions DV, Globals.md>) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Windows Sessions [DV, Globals]](https://proval.itglue.com/DOC-5078775-12366454)
+[CWM - Automate - Script - Windows Sessions [DV, Globals]](<../scripts/Windows Sessions DV, Globals.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 | Type          | varchar(64)  | Type of the session                         |
 | Device        | varchar(64)  | Device of the Session                       |
 | ScriptRunTime | DateTime     | Data Collection time                        |
+
 
 
 

@@ -16,23 +16,23 @@ Installs the Cisco Secure client and selected modules for both Windows and Macin
 
 | Content                                                                                                   | Type              | Function                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------|
-| [Agnostic - Install-CiscoSecureClient](https://proval.itglue.com/DOC-5078775-11897620)                  | Agnostic Script    | Installs the Cisco Secure client and selected modules.                                                    |
-| [Script - Cisco Secure Client - Package Installation [Wrapper]](https://proval.itglue.com/DOC-5078775-15949769) | Wrapper Script     | This is a wrapper script that executes the [Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604) for Windows machines and the [Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960) for Mac machines. It was designed to be used as an autofix with the [Internal Monitor - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763). |
-| [Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604) | Script            | It installs the Cisco Secure Client and selected modules on Windows machines.                             |
-| [Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960) | Script            | Provides an option to install different Cisco Secure Client modules on a Mac machine.                     |
-| [Internal Monitor - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763) | Internal Monitor   | The internal monitor executes the `Cisco Secure Client - Package Installation [Wrapper]` script hourly on online machines where Cisco Secure Client's EDFs (For Module Installation) are selected, but selected modules are not installed for Windows and Mac machines. |
-| `△ Custom - Execute Script - Cisco Secure Client - Package Installation [Wrapper]`                       | Alert Template     | This alert template executes [Script - Cisco Secure Client - Package Installation [Wrapper]](https://proval.itglue.com/DOC-5078775-15949769). |
+| [Agnostic - Install-CiscoSecureClient](<../powershell/Install-CiscoSecureClient.md>)                  | Agnostic Script    | Installs the Cisco Secure client and selected modules.                                                    |
+| [Script - Cisco Secure Client - Package Installation [Wrapper]](<../cwa/scripts/Cisco Secure Client - Package Installation Wrapper.md>) | Wrapper Script     | This is a wrapper script that executes the [Script - Cisco Secure Client - Package Installation [Windows]](<../cwa/scripts/Cisco Secure Client - Package Installation Windows.md>) for Windows machines and the [Script - Cisco Secure Client - Package Installation [Macintosh]](<../cwa/scripts/Cisco Secure Client - Package Installation Macintosh.md>) for Mac machines. It was designed to be used as an autofix with the [Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>). |
+| [Script - Cisco Secure Client - Package Installation [Windows]](<../cwa/scripts/Cisco Secure Client - Package Installation Windows.md>) | Script            | It installs the Cisco Secure Client and selected modules on Windows machines.                             |
+| [Script - Cisco Secure Client - Package Installation [Macintosh]](<../cwa/scripts/Cisco Secure Client - Package Installation Macintosh.md>) | Script            | Provides an option to install different Cisco Secure Client modules on a Mac machine.                     |
+| [Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>) | Internal Monitor   | The internal monitor executes the `Cisco Secure Client - Package Installation [Wrapper]` script hourly on online machines where Cisco Secure Client's EDFs (For Module Installation) are selected, but selected modules are not installed for Windows and Mac machines. |
+| `△ Custom - Execute Script - Cisco Secure Client - Package Installation [Wrapper]`                       | Alert Template     | This alert template executes [Script - Cisco Secure Client - Package Installation [Wrapper]](<../cwa/scripts/Cisco Secure Client - Package Installation Wrapper.md>). |
 
 ## Implementation
 
 1. Import the following script using the ProSync plugin:
-   - [Script - Cisco Secure Client - Package Installation [Wrapper]](https://proval.itglue.com/DOC-5078775-15949769) 
+   - [Script - Cisco Secure Client - Package Installation [Wrapper]](<../cwa/scripts/Cisco Secure Client - Package Installation Wrapper.md>) 
      - This will import both of the following scripts:
-       - [Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604)
-       - [Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960)
+       - [Script - Cisco Secure Client - Package Installation [Windows]](<../cwa/scripts/Cisco Secure Client - Package Installation Windows.md>)
+       - [Script - Cisco Secure Client - Package Installation [Macintosh]](<../cwa/scripts/Cisco Secure Client - Package Installation Macintosh.md>)
 
 2. Import the following monitor using the ProSync plugin:
-   - [Internal Monitor - Agent - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763)
+   - [Internal Monitor - Agent - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>)
 
 3. Import the following Alert Templates using the ProSync plugin:
    - `△ Custom - Execute Script - Cisco Secure Client - Package Installation [Wrapper]`
@@ -47,7 +47,7 @@ Installs the Cisco Secure client and selected modules for both Windows and Macin
      ![Cisco Secure Client Zip](../../static/img/Cisco-Secure-Client---Package-Installation/image_2.png)  
      ![Cisco Secure Client Zip](../../static/img/Cisco-Secure-Client---Package-Installation/image_3.png)
    - Navigate to Automation → Scripts to perform the below task:
-     - Open [SWM - Software Install - Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604) and debug it against any machine with "Set Environment" = 1 to create all the EDFs.
+     - Open [SWM - Software Install - Script - Cisco Secure Client - Package Installation [Windows]](<../cwa/scripts/Cisco Secure Client - Package Installation Windows.md>) and debug it against any machine with "Set Environment" = 1 to create all the EDFs.
 
 6. Configure the Macintosh Installation Script as outlined below:
    - Go to Ltshare (WebDAV for hosted partners) and create `LTShare/Transfer/Software/Cisco_Secure_Client` if it's not already created.
@@ -56,14 +56,15 @@ Installs the Cisco Secure client and selected modules for both Windows and Macin
      ![Cisco Secure Client DMG](../../static/img/Cisco-Secure-Client---Package-Installation/image_4.png)  
      ![Cisco Secure Client DMG](../../static/img/Cisco-Secure-Client---Package-Installation/image_5.png)
    - Navigate to Automation → Scripts to perform the below task:
-     - Open [SWM - Software Install - Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960) and debug it against any machine with "Set Environment" = 1 to create all EDFs.
+     - Open [SWM - Software Install - Script - Cisco Secure Client - Package Installation [Macintosh]](<../cwa/scripts/Cisco Secure Client - Package Installation Macintosh.md>) and debug it against any machine with "Set Environment" = 1 to create all EDFs.
 
 7. Navigate to Automation → Monitors within the CWA Control Center.
-   - [Internal Monitor - Missing Cisco Secure Client Modules](https://proval.itglue.com/DOC-5078775-15949763) 
+   - [Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>) 
      - Configure with the alert template: `△ Custom - Execute Script - Cisco Secure Client - Package Installation [Wrapper]`
      - Right-click and Run Now to start the monitor.
 
-8. Work with the partner on Cisco Secure Client modules they would like to install for both MAC and Windows. Set the Cisco Secure Client EDFs accordingly. For more information on these modules and EDFs, go to [Script - Cisco Secure Client - Package Installation [Macintosh]](https://proval.itglue.com/DOC-5078775-13393960) and [Script - Cisco Secure Client - Package Installation [Windows]](https://proval.itglue.com/DOC-5078775-13366604).
+8. Work with the partner on Cisco Secure Client modules they would like to install for both MAC and Windows. Set the Cisco Secure Client EDFs accordingly. For more information on these modules and EDFs, go to [Script - Cisco Secure Client - Package Installation [Macintosh]](<../cwa/scripts/Cisco Secure Client - Package Installation Macintosh.md>) and [Script - Cisco Secure Client - Package Installation [Windows]](<../cwa/scripts/Cisco Secure Client - Package Installation Windows.md>).
+
 
 
 

@@ -18,8 +18,8 @@ Additional Summarized row per Windows version, eg - Windows 10, Windows 11, Wind
 
 There are three summarized rows in this dataview, one for all windows 10, one for all windows 11, and the final one for the combined number of windows 10 and windows 11 in the environment. The red row represents that this ReleaseID is not supported by Microsoft anymore.
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)  
-[SEC - Windows Patching - MySQL View - pvl_v_windows_version_metrics](https://proval.itglue.com/DOC-5078775-11560437)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)  
+[SEC - Windows Patching - MySQL View - pvl_v_windows_version_metrics](<./SEC - Windows Patching - MySQL View - pvl_v_windows_version_metrics.md>)
 
 ## Columns
 
@@ -50,6 +50,7 @@ There are three summarized rows in this dataview, one for all windows 10, one fo
 | % Unsupported Machines - OS         | The percentage of Windows 10+ machines out of the same base OS that are on the ReleaseID and are outside their Microsoft support window.  Example: Windows 10/11 Total Machines: \\<strong>100\\</strong>Windows 10 Total Machines: 40 Windows 11 Total Machine: 60W10 - 1803 Unsupported Machines: 5W11 - 22H2 Unsupported Machines: 0\\<strong>W10 - 22H1 % Unsupported Machines - OS: 12.5%W11 - 22H2 % Unsupported Machines - OS: 0%\\</strong>  Summary Rows:  Windows 10 - The percentage of Windows 10 machines that are on Windows 10 and are outside their Microsoft support window.  Windows 11 - The percentage of Windows 11 machines that are on Windows 11 and are outside their Microsoft support window.  Windows 11 + 10 - The percentage of Windows 10+ machines that are outside their Microsoft support window.  Example: Windows 10/11 Total Machines: \\<strong>100\\</strong>Windows 10 Total Machines: 80Windows 11 Total Machines: 20Windows 10 Unsupported Machines: 8Windows 11 Unsupported Machines: 0Windows 10 + 11 Unsupported Machines: 8\\<strong>Windows 10 % Unsupported Machines - OS: 10.0%Windows 11 % Unsupported Machines - OS: 0%\\</strong>\\<strong>Windows 11 + 10 % Unsupported Machines - OS: 8.0%\\</strong> |
 | Client Name                        | Environmental Calculations  **(Hidden)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Is Supported                       | Yes/No (Used for Conditional Formatting)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Automate Script designed to handle Agnostic Script [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506)  
+Automate Script designed to handle Agnostic Script [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
 Creates a Custom Table called `plugin_proval_cdi_data`  
 Appends data from that agnostic script to that created table
 
@@ -20,12 +20,12 @@ Appends data from that agnostic script to that created table
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506)  
+- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
 - [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639)
 
 ## Process
 
-Reference Agnostic Script Process found [EPM - Disk - Agnostic - Get-CriticalDiskInfo](https://proval.itglue.com/DOC-5078775-9354506)
+Reference Agnostic Script Process found [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)
 
 ## Output
 
@@ -35,6 +35,7 @@ The location and method by which this script returns data.
 - Script state
 - Local file on computer
 - Dataview
+
 
 
 

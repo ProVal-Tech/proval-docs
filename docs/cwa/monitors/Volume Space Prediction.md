@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This monitor is dynamically generated from the script [Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775-9655085). It is used to alert on low space on a volume.
+This monitor is dynamically generated from the script [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>). It is used to alert on low space on a volume.
 
 ## Details
 
@@ -18,7 +18,7 @@ This monitor is dynamically generated from the script [Volume Free Space - Monit
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default - Create Automate Ticket  
 
-This monitor will have dynamic properties based on the result of the script [Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775-9655085).
+This monitor will have dynamic properties based on the result of the script [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
 
 ## Dependencies
 
@@ -27,6 +27,7 @@ N/A
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
 
 
 

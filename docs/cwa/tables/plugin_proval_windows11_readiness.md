@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-The custom table stores the data gathered by the [Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-8355447) script.
+The custom table stores the data gathered by the [Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>) script.
 
 ## Dependencies
 
-[SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-8355447)
+[SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ The custom table stores the data gathered by the [Windows - Check Windows 11 Com
 | OSDisk      | TINYINT  | Drive Size of OS drive is compatible with the windows 11 upgrade or not. 0 = failed and 1 = pass. |
 | TPM         | TINYINT  | TPM version is compatible with the windows 11 upgrade or not. 0 = failed and 1 = pass.      |
 | LastRan     | DATETIME | Timestamp for the collected data.                                                               |
+
 
 
 

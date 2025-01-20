@@ -25,7 +25,7 @@ unlisted: false
 
 **Suggested "Limit to"**: Selected Windows Workstations, or all windows machines as the monitor is smart enough not to trigger on items that do not satisfy the requirements.  
 **Suggested Alert Style**: Once  
-**Suggested Alert Template**: Create an alert template that on error runs the [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](https://proval.itglue.com/DOC-5078775-11617616)
+**Suggested Alert Template**: Create an alert template that on error runs the [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](<../scripts/Deploy OpenDNS Roaming Client Latest Version.md>)
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
@@ -33,11 +33,12 @@ unlisted: false
 
 ## Dependencies
 
-- [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](https://proval.itglue.com/DOC-5078775-11617616)
+- [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](<../scripts/Deploy OpenDNS Roaming Client Latest Version.md>)
 
 ## Target
 
 The only limiting factor will be ultimately windows operating system, the reason for this is that the monitor will filter out servers, and arm processors, and virtual machines, etc. That being said, even if you were to put a server in the list for this monitor that server would never trigger the autofix action.
+
 
 
 

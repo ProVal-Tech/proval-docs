@@ -14,8 +14,8 @@ List down the password entries for which the HP iLO Health Check automation is n
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559)
-- [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037)
+- [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
+- [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>)
 
 ## Columns
 
@@ -26,6 +26,7 @@ List down the password entries for which the HP iLO Health Check automation is n
 | iLO              | Title of the Password Entry                       |
 | PassLastRun      | Last time the check was performed if any         |
 | ConnectionStatus  | Connection Status during the previous execution    |
+
 
 
 

@@ -16,7 +16,7 @@ To activate the monitor set for a client, mark the client-level EDF `Remove Addi
 
 ## Dependencies
 
-[CWM - Automate - Script - Remove - All But My - ScreenConnect Client Installations](https://proval.itglue.com/DOC-5078775-14767921)
+[CWM - Automate - Script - Remove - All But My - ScreenConnect Client Installations](<../scripts/Remove - All But My - ScreenConnect Client Installations.md>)
 
 ## Target
 
@@ -25,6 +25,7 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Remove Additional ScreenConnect Clients`
+
 
 
 

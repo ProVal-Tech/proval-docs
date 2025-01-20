@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Purpose
 
-Stores information about Bitlocker key protectors backed up to Active Directory. Data gathered by [SEC - Encryption - Script - Bitlocker - AD Key Protector - Audit](https://proval.itglue.com/DOC-5078775-9045331)
+Stores information about Bitlocker key protectors backed up to Active Directory. Data gathered by [SEC - Encryption - Script - Bitlocker - AD Key Protector - Audit](<../scripts/Bitlocker - AD Key Protector - Audit.md>)
 
 ## Dependencies
 
@@ -33,6 +33,7 @@ Stores information about Bitlocker key protectors backed up to Active Directory.
 | ParentDistinguishedName | TEXT     | The full DN of the parent of the key protector object in AD (generally a computer object).           |
 | ParentSID               | VARCHAR  | The SID of the parent of the key protector object in AD (generally a computer object).               |
 | Timestamp               | DATETIME | The date and time that the audit was last ran.                                                       |
+
 
 
 

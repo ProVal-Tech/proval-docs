@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-Dataview displays the information gathered by [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](https://proval.itglue.com/DOC-5078775-13403824) script along with some basic information.
+Dataview displays the information gathered by [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>) script along with some basic information.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](https://proval.itglue.com/DOC-5078775-13403824)
-- [CWM - Automate - Custom Table - pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881)
+- [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>)
+- [CWM - Automate - Custom Table - pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>)
 
 ## Columns
 
@@ -37,6 +37,7 @@ Dataview displays the information gathered by [CWM - Automate - Script - Get CWM
 | Model Number             | Computer's Model (From CW Manage)                       |
 | Serial Number            | Serial Number of computer (Hidden)                      |
 | Data Collection Time     | Data Collection Time                                     |
+
 
 
 

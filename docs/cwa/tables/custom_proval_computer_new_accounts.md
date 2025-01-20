@@ -17,9 +17,9 @@ It is being created by a script named as: "User Management - New Local Account A
 ## Dependencies
 
 - [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)  
-- [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](https://proval.itglue.com/DOC-5078775-7771697)  
+- [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV,Autofix,Global.md>)  
 - [New Account Audit and Disable For Approve [Script]](https://proval.itglue.com/DOC-5078775-7695146)  
-- [User Management - Approved New User - Activate [DV,Param]](https://proval.itglue.com/DOC-5078775-7771978)  
+- [User Management - Approved New User - Activate [DV,Param]](<../scripts/User Management - Approved New User - Activate DV,Param.md>)  
 
 ## Table
 
@@ -42,6 +42,7 @@ It is being created by a script named as: "User Management - New Local Account A
 | Disable Status           | TINYINT  | It denotes whether the newly created account is disabled. (0-New Account Approved, 1- Disabled, 2 - No Action). Here, 2 means the script which creates this table did not choose to disable the newly created account, only meant for auditing the new account. |
 | Approve Status           | TINYINT  | It denotes whether the account is approved to get enabled. (0- Not Approved, 1-Approved and Enabled, 2- No Action). |
 | Approve Date Status      | DATETIME | It represents when the newly created account was approved to get enabled. (If date is 1970-01-01 00:00:00 it means, Not Approved). |
+
 
 
 

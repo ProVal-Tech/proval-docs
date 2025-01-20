@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script will run as an auto-fix for the [Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611) and [Online Status Alerting - Machine Restarted](https://proval.itglue.com/DOC-5078775-17543410) monitor sets. This uses system properties `Email_Connector_email_Address` and `Status_To_Change_To` for the email connector email address and the ticket status to which the client wants to change the status.
+This script will run as an auto-fix for the [Online Status Alerting - Machine Back Online](<../monitors/Online Status Alerting - Machine Back Online.md>) and [Online Status Alerting - Machine Restarted](<../monitors/Online Status Alerting - Machine Restarted.md>) monitor sets. This uses system properties `Email_Connector_email_Address` and `Status_To_Change_To` for the email connector email address and the ticket status to which the client wants to change the status.
 
 It will change the status of the ticket if the EDF "Online Alert Ticket ID" at the computer level is filled with Ticket ID or Email ID is filled in the EDF "Online Alert E-mail". It will change the status along with a message. One can also provide a reason why they want to be notified by filling in the reason in the EDF "Online Alert Reason".
 
@@ -18,7 +18,7 @@ Additionally, filling out the "Online Alert Scripts" will run a list of scripts 
 
 ## Sample Run
 
-The script is designed to run from the [Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611) and [Online Status Alerting - Machine Restarted](https://proval.itglue.com/DOC-5078775-17543410) monitor sets only and should not be executed manually against any machine except for the first time to set the environment.
+The script is designed to run from the [Online Status Alerting - Machine Back Online](<../monitors/Online Status Alerting - Machine Back Online.md>) and [Online Status Alerting - Machine Restarted](<../monitors/Online Status Alerting - Machine Restarted.md>) monitor sets only and should not be executed manually against any machine except for the first time to set the environment.
 
 After importing the script it should either be debugged or run against any computer in the environment with 1 in the user parameter `SetEnvironment` along with other user parameters `Email_Connector_email_Address` and `Status_To_Change_To`.
 
@@ -28,7 +28,7 @@ After importing the script it should either be debugged or run against any compu
 
 ## Dependencies
 
-- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](https://proval.itglue.com/DOC-5078775-13284610)
+- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](<./Online Status Alerting - Update EDFs Param.md>)
 
 ### System Properties
 
@@ -66,6 +66,7 @@ After importing the script it should either be debugged or run against any compu
 
 - Email
 - Ticket Status change to desired status as per configuration done in system property "Status_To_Change_To".
+
 
 
 

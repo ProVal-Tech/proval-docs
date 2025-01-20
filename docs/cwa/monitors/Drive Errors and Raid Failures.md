@@ -38,7 +38,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -50,7 +50,7 @@ The monitor set should be limited to the `Windows Machines Excluding Virtual` se
 
 ## Implementation
 
-[Implement - Remote Monitor - Drive Errors and Raid Failures](https://proval.itglue.com/DOC-5078775-14952900)
+[Implement - Remote Monitor - Drive Errors and Raid Failures](<./Drive Errors and Raid Failures.md>)
 
 ## Ticketing
 
@@ -65,6 +65,7 @@ Details:
 
 %RESULT%
 ```
+
 
 
 

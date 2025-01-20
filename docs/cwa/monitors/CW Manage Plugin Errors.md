@@ -14,7 +14,7 @@ This internal monitor is intended to notify [alerts@provaltech.com](mailto:alert
 
 ## Dependencies
 
-[Email RAWSQL Monitor Set Failures* [Autofix]](https://proval.itglue.com/DOC-5078775-10390936)  
+[Email RAWSQL Monitor Set Failures* [Autofix]](<../scripts/Email Creation - Computer Failure Only.md>)  
 CW Manage Plugin  
 
 Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template along with the monitor set.
@@ -22,6 +22,7 @@ Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template 
 ## Target
 
 Global
+
 
 
 

@@ -14,9 +14,9 @@ This monitor will return any target machine whose client has the 'Bitlocker Moni
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](https://proval.itglue.com/DOC-5078775-8943520)
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>)
 - [SEC - Encryption - Solution - Bitlocker](https://proval.itglue.com/DOC-5078775-8953721)
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](https://proval.itglue.com/DOC-5078775-9045330)
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../tables/plugin_proval_ad_bitlocker_keyprotectors.md>)
 
 ## Target
 
@@ -100,6 +100,7 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Recovery-Password-Automate-Backup-Missing/image_1.png)
+
 
 
 

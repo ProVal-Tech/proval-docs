@@ -14,12 +14,13 @@ The monitor runs on Bitlocker Enabled Machines and checks if the key retrieval d
 
 ## Dependencies
 
-- [Bitlocker - Key Retrieval](https://proval.itglue.com/DOC-5078775-8009806) - This needs to be tied as an Autofix with the Monitor.
-- [plugin_proval_bitlocker](https://proval.itglue.com/DOC-5078775-8038616)
+- [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>) - This needs to be tied as an Autofix with the Monitor.
+- [plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)
 
 ## Target
 
 Global
+
 
 
 

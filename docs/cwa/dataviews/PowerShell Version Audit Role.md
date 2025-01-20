@@ -14,7 +14,7 @@ This dataview collects the information of PowerShell Version based on role.
 
 ## Dependencies
 
-[Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872)
+[Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>)
 
 ## Columns
 
@@ -26,6 +26,7 @@ This dataview collects the information of PowerShell Version based on role.
 | Operating System    | Operating System of the agent             |
 | LastContact         | Last Contact of agent with the RMM       |
 | PowerShell Version   | PowerShell Version of the agent           |
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of this dataview is to show the Uncommented comment of the Host file. Data is being fetched by the [EPM - Windows Configuration - Script - Hosts File - Audit](https://proval.itglue.com/DOC-5078775-9106329) script.
+The purpose of this dataview is to show the Uncommented comment of the Host file. Data is being fetched by the [EPM - Windows Configuration - Script - Hosts File - Audit](<../scripts/Hosts File - Audit.md>) script.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Hosts File - Audit](https://proval.itglue.com/DOC-5078775-9106329)
+[EPM - Windows Configuration - Script - Hosts File - Audit](<../scripts/Hosts File - Audit.md>)
 
 ## Columns
 
@@ -29,6 +29,7 @@ The purpose of this dataview is to show the Uncommented comment of the Host file
 | Last Contact              | Last Contact with RMM                         |
 | Days Since Last Contact   | Days Since Last Contact with RMM              |
 | Last Logged In User       | Last Logged In User                           |
+
 
 
 

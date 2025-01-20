@@ -16,16 +16,17 @@ Implements options for group policies to redirect Windows known folders (Desktop
 
 | Content                                                                 | Type               | Function                                                                                                                |
 |-------------------------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [M365TenantId](https://proval.itglue.com/DOC-5078775-16749907)        | Managed Variable    | This managed variable is used to store the partner's Microsoft 365 TenantId.                                         |
+| [M365TenantId](<../vsa/variables/M365TenantId.md>)        | Managed Variable    | This managed variable is used to store the partner's Microsoft 365 TenantId.                                         |
 | [Microsoft OneDrive - (Group Policies/Redirect Folder)](https://proval.itglue.com/DOC-5078775-16749544) | Agent Procedure     | This agent procedure is used to implements group policies to redirect Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll) to Microsoft OneDrive. |
 
 ## Implementation
 
 1. Create the following dependencies in the partner's VSA:  
-   - [Managed Variable - M365TenantId](https://proval.itglue.com/DOC-5078775-16749907)
+   - [Managed Variable - M365TenantId](<../vsa/variables/M365TenantId.md>)
 
 2. Export the following content from ProVal's VSA, and follow the necessary implementation steps within each document:  
    - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](https://proval.itglue.com/DOC-5078775-16749544)
+
 
 
 

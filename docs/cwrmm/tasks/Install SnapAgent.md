@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Installs BlackPoint SnapAgent. CW RMM implementation of the agnostic script [Install-SnapAgent](https://proval.itglue.com/DOC-5078775-16179603).
+Installs BlackPoint SnapAgent. CW RMM implementation of the agnostic script [Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Installs BlackPoint SnapAgent. CW RMM implementation of the agnostic script [Ins
 
 ## Dependencies
 
-[Agnostic - Install-SnapAgent](https://proval.itglue.com/DOC-5078775-16179603)  
+[Agnostic - Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>)  
 
 ## User Parameters
 
@@ -159,6 +159,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

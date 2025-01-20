@@ -14,7 +14,7 @@ This group adds the member where the DUO Deployment is enabled. The agent gets a
 
 ## Dependencies
 
-[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](https://proval.itglue.com/DOC-5078775-17914127)
+[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](<../custom-fields/Duo Authentication for Windows Logon Deployment.md>)
 
 ## Details
 
@@ -62,6 +62,7 @@ This group adds the member where the DUO Deployment is enabled. The agent gets a
    - Set `Failed` in the comparison condition.  
    ![Step 8](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_10.png)  
    **Condition:** `Duo Deployment Result` `Does Not Contain any of` `Failed`
+
 
 
 

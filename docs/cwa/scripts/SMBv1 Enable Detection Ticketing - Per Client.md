@@ -18,7 +18,7 @@ This client script creates a ticket for each client with the computer count wher
 
 ## Dependencies
 
-[CWA Script - SMBv1 Status Audit/Autofix [DV,Param]](https://proval.itglue.com/DOC-5078775-15811522)
+[CWA Script - SMBv1 Status Audit/Autofix [DV,Param]](<./SMBv1 Status AuditAutofix DV,Param.md>)
 
 ## Variables
 
@@ -47,6 +47,7 @@ This client script creates a ticket for each client with the computer count wher
 
    The SMBv1 Enable status audit detected on @VulnerableagentCount@ computers of client "@sqlname@".  
    Please review the dataview for the computer list.
+
 
 
 

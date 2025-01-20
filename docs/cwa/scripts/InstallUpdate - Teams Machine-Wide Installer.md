@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-An implementation of the agnostic script [SWM - Software Install - Agnostic - Deploy-Teams](https://proval.itglue.com/DOC-5078775-13048957)
+An implementation of the agnostic script [SWM - Software Install - Agnostic - Deploy-Teams](<../../powershell/Deploy-Teams.md>)
 
 ## Sample Run
 
@@ -19,6 +19,7 @@ An implementation of the agnostic script [SWM - Software Install - Agnostic - De
 ## Output
 
 - Script logs
+
 
 
 

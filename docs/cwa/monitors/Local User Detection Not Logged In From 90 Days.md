@@ -15,12 +15,13 @@ This monitor will detect the local users not logged in from last 90 days.
 ## Dependencies
 
 - @custom_proval_computer_accounts
-- [User Management - Purge Local Account and Profile](https://proval.itglue.com/DOC-5078775-7819397)
+- [User Management - Purge Local Account and Profile](<../scripts/User Management - Purge Local Account and Profile.md>)
 - @User Management - Profile Audit
 
 ## Target
 
 Windows Servers
+
 
 
 

@@ -18,7 +18,7 @@ This script is used to perform the audit of the login/logout of the users.
 
 ## Dependencies
 
-[pvl_login_logout_audit](https://proval.itglue.com/DOC-5078775-13392964)
+[pvl_login_logout_audit](<../tables/pvl_login_logout_audit.md>)
 
 ## Variables
 
@@ -37,7 +37,7 @@ Document the various variables in the script. Delete any section that is not rel
 | Hours               | 24                          | True     | Required to trace the user activity of the past 1 hour.Note: Value can be changed and should correlate with the monitor interval to get appropriate data.                                                                                     |
 | Data_Deletion       | 1                           | False    | 1 - If set to 1, then the table pvl_login_logout_audit older data will start getting truncated based on the system property 'ProVal_UserLogIn_Out_Threshold_Days' value.0 - No data deletion will be performed.                            |
 | AuditEvent_Enable   | 1                           | False    | 1 - If set to 1, then the script will enable the Audit login/logout local policy on the agent for data collection in the event logs.0 - The Audit local policy will not be enabled by the script.Note: By default, the policy is not enabled in the agent. |
-| DataRetention_Threshold | 90                     | False    | The value is set in days.If the value provided and the Data_Deletion is set to 1, then the older data in the table [vl_login_logout_audit](https://proval.itglue.com/DOC-5078775-13392964) will be deleted by the provided value of this parameter.  |
+| DataRetention_Threshold | 90                     | False    | The value is set in days.If the value provided and the Data_Deletion is set to 1, then the older data in the table [vl_login_logout_audit](<../tables/pvl_login_logout_audit.md>) will be deleted by the provided value of this parameter.  |
 
 #### User Parameters
 
@@ -55,6 +55,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Dataview
+
 
 
 

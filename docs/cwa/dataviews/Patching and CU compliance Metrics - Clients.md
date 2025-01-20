@@ -16,13 +16,13 @@ The data is grouped by client.
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 - [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
 - [CWM - Automate - Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
-- [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
-- [CWM - Automate - View - pvl_patch_cu_compliance_clients](https://proval.itglue.com/DOC-5078775-15390696)
-- [CWM - Automate - Script - MySQL - View - Create (pvl_patch_cu_compliance)](https://proval.itglue.com/DOC-5078775-15392208)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
+- [CWM - Automate - View - pvl_patch_cu_compliance_clients](<../views/pvl_patch_cu_compliance_clients.md>)
+- [CWM - Automate - Script - MySQL - View - Create (pvl_patch_cu_compliance)](<../scripts/MySQL - View - Create (pvl_patch_cu_compliance).md>)
 
 ## Columns
 
@@ -45,8 +45,8 @@ The data is grouped by client.
 | CU Age - 46-90 %             | Percentage of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days. ( `CU Age - 46-90` divided by `Supported CU Eligible Computers` multiplied by `100`) |
 | CU Age - 91-135 %            | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`) |
 | CU Age - 136+ %              | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. ( `CU Age - 136+` divided by `Supported CU Eligible Computers` multiplied by `100`) |
-| Total Eligible Computers - CU | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table. |
-| Validation                   | This is a hidden column which displays the concatenated data for the client in the following format: `Total Wks: X | Total Svrs: X | Wks Online > 30d: X | Online Patch Managed Wks: X | Patch Managed Wks: X | Patch Managed Svrs: X | Wks in CU Table: X | Svrs in CU Table: X | Unsupported Svrs: X | Unsupported Wks: X`  **Total Wks** - Total number of workstations unfiltered.  **Total Svrs** - Total number of servers unfiltered.  **Wks Online > 30 days** - Workstations that have been online in the past 30 days, including non-patch-managed and EOL systems.  **Online Patch Managed Wks** - Workstations that have been online in the past 30 days and are patch-managed, including EOL systems.  **Patch Managed Wks** - Workstations that are patch managed, including offline agents and EOL systems.  **Patch Managed Svrs** - Servers that are patch managed, including offline agents and EOL systems.  **Wks in CU table** - Workstations that are in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table.  **Svrs in CU table** - Servers that are in the [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table.  **Unsupported Svrs** - Servers that are EOL.  **Unsupported Wks** - Workstations that are EOL.  This column is independent of the [pvl_patch_cu_compliance_clients](https://proval.itglue.com/DOC-5078775-15390696) table and displays the count of all machines regardless of them being supported or end of life. |
+| Total Eligible Computers - CU | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+| Validation                   | This is a hidden column which displays the concatenated data for the client in the following format: `Total Wks: X | Total Svrs: X | Wks Online > 30d: X | Online Patch Managed Wks: X | Patch Managed Wks: X | Patch Managed Svrs: X | Wks in CU Table: X | Svrs in CU Table: X | Unsupported Svrs: X | Unsupported Wks: X`  **Total Wks** - Total number of workstations unfiltered.  **Total Svrs** - Total number of servers unfiltered.  **Wks Online > 30 days** - Workstations that have been online in the past 30 days, including non-patch-managed and EOL systems.  **Online Patch Managed Wks** - Workstations that have been online in the past 30 days and are patch-managed, including EOL systems.  **Patch Managed Wks** - Workstations that are patch managed, including offline agents and EOL systems.  **Patch Managed Svrs** - Servers that are patch managed, including offline agents and EOL systems.  **Wks in CU table** - Workstations that are in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.  **Svrs in CU table** - Servers that are in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.  **Unsupported Svrs** - Servers that are EOL.  **Unsupported Wks** - Workstations that are EOL.  This column is independent of the [pvl_patch_cu_compliance_clients](<../views/pvl_patch_cu_compliance_clients.md>) table and displays the count of all machines regardless of them being supported or end of life. |
 
 ## Format Control
 
@@ -56,6 +56,7 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | greater than or equal to 75      |
 | CU Score %                 | Red    | less than 75                     |
 | CU Score %                 | Green  | greater than or equal to 75      |
+
 
 
 

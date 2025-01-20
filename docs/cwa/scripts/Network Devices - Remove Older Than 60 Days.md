@@ -16,7 +16,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[Network Devices Not Contacted from 60 Days](https://proval.itglue.com/DOC-5078775-8023573)  
+[Network Devices Not Contacted from 60 Days](<../dataviews/Network Devices Not Contacted from 60 Days.md>)  
 @Network Device Not Contacted From 60 Days Detection
 
 ## Process
@@ -26,6 +26,7 @@ The script runs a SQL query to delete network devices that have not been online 
 ## Output
 
 - Script log
+
 
 
 

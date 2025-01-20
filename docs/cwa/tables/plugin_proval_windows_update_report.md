@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the data grabbed by [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682) script in order to feed into the [CWM - Automate - Dataview - Windows Update Report [Script]](https://proval.itglue.com/DOC-5078775-10861701) dataview.
+Stores the data grabbed by [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script in order to feed into the [CWM - Automate - Dataview - Windows Update Report [Script]](<../dataviews/Windows Update Report Script.md>) dataview.
 
 ## Dependencies
 
-- [EPM - Data Collection - Get-WindowsUpdateReport](https://proval.itglue.com/DOC-5078775-10372095)
+- [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
 - [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
-- [CWM - Automate - Dataview - Windows Update Report [Script]](https://proval.itglue.com/DOC-5078775-10861701)
-- [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682)
+- [CWM - Automate - Dataview - Windows Update Report [Script]](<../dataviews/Windows Update Report Script.md>)
+- [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
 
 ## Tables
 
@@ -58,6 +58,7 @@ Stores the data grabbed by [CWM - Automate - Script - Windows Update Report [DV]
 | BrowseOnly                   | varchar(10)    | True | False                                     |
 | PerUser                      | varchar(10)    | True | False                                     |
 | ScriptRunTime                | varchar(50)    | Script Run Time                                   |
+
 
 
 

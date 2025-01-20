@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-Displays the information of PHP.exe file fetched by the [Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245023) script.
+Displays the information of PHP.exe file fetched by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Custom Table - pvl_php_audit](https://proval.itglue.com/DOC-5078775-16245130)
-- [EPM - Data Collection - Script - Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245023)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245108)
+- [EPM - Data Collection - Custom Table - pvl_php_audit](<../tables/pvl_php_audit.md>)
+- [EPM - Data Collection - Script - Locate PHP.exe](<../scripts/Locate PHP.exe.md>)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Locate PHP.exe](<../monitors/Execute Script - Locate PHP.exe.md>)
 
 ## Columns
 
@@ -39,6 +39,7 @@ Displays the information of PHP.exe file fetched by the [Locate PHP.exe](https:/
 | Last Write Time        | File Modification Time                                                                            |
 | Attributes             | File's Attributes                                                                                 |
 | Script Run Time        | Data Collection Time                                                                              |
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores information about DHCP scopes on the target machine gathered by the script [Get DHCP Server Scope Information](https://proval.itglue.com/DOC-5078775-8041475).
+Stores information about DHCP scopes on the target machine gathered by the script [Get DHCP Server Scope Information](<../scripts/Get DHCP Server Scope Information.md>).
 
 ## Dependencies
 
-[Get DHCP Server Scope Information](https://proval.itglue.com/DOC-5078775-8041475)
+[Get DHCP Server Scope Information](<../scripts/Get DHCP Server Scope Information.md>)
 
 ## Table
 
@@ -35,6 +35,7 @@ Stores information about DHCP scopes on the target machine gathered by the scrip
 | UsedIPCount       | INT     | The number of used IP addresses in the DHCP scope.      |
 | ReservedIPCount    | INT     | The number of reserved IP addresses in the DHCP scope.  |
 | PercentUsed       | INT     | The percentage of used IP addresses in the DHCP scope.  |
+
 
 
 

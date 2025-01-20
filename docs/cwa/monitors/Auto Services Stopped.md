@@ -14,7 +14,7 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 
 ## Dependencies
 
-[Script - Service - Restart](https://proval.itglue.com/DOC-5078775-11032265)
+[Script - Service - Restart](<../scripts/Service - Restart.md>)
 
 ## Target
 
@@ -26,6 +26,7 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
+
 
 
 

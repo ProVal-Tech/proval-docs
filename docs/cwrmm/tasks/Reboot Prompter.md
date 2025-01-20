@@ -15,7 +15,7 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 ## Dependencies
 
 - [CW RMM - Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)  
-- [CW RMM - Dynamic Group - Reboot Pending Deployment](https://proval.itglue.com/DOC-5078775-15298947)  
+- [CW RMM - Dynamic Group - Reboot Pending Deployment](<../groups/Reboot Prompter Deployment - Manual.md>)  
 
 ## Sample Run
 
@@ -561,7 +561,7 @@ Once all items are added, please save the task. The final task should look like 
 
 ## Deployment
 
-It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reboot Prompter Deployment - Manual](https://proval.itglue.com/DOC-5078775-15298947) and [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](https://proval.itglue.com/DOC-5078775-15317821) at certain intervals as per client requirement to send prompts at how many intervals.
+It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reboot Prompter Deployment - Manual](<../groups/Reboot Prompter Deployment - Manual.md>) and [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>) at certain intervals as per client requirement to send prompts at how many intervals.
 
 1. Go to `Automation` > `Tasks`.
 2. Search for `Reboot Prompter` Task.
@@ -599,6 +599,7 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 
 Task Log  
 Custom Field  
+
 
 
 

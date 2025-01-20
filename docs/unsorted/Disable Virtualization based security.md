@@ -20,7 +20,7 @@ Once the registry is set, it will set the machine to reboot using the prompter s
 
 ## Dependencies
 
-[EPM - Windows Configuration - Solution - User Prompt for Reboot](https://proval.itglue.com/DOC-5078775-9088563)
+[EPM - Windows Configuration - Solution - User Prompt for Reboot](<../solutions/User Prompt for Reboot.md>)
 
 ## Variables
 
@@ -31,6 +31,7 @@ Once the registry is set, it will set the machine to reboot using the prompter s
 ## Output
 
 - Script log
+
 
 
 

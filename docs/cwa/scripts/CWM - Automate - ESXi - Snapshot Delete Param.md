@@ -37,9 +37,9 @@ Note: The script must be executed from a machine reachable to the ESXi Host.
 
 ## Dependencies
 
-[CWM - Automate - Script - ESXi - Snapshot Create [Param]](https://proval.itglue.com/DOC-5078775-12549610)  
+[CWM - Automate - Script - ESXi - Snapshot Create [Param]](<./ESXi - Snapshot Create Param.md>)  
 
-Note: This script can be scheduled with proper parameters to remove the snapshot created by [CWM - Automate - Script - ESXi - Snapshot Create [Param]](https://proval.itglue.com/DOC-5078775-12549610) script after @Hours_To_Keep@ hours.
+Note: This script can be scheduled with proper parameters to remove the snapshot created by [CWM - Automate - Script - ESXi - Snapshot Create [Param]](<./ESXi - Snapshot Create Param.md>) script after @Hours_To_Keep@ hours.
 
 ## Variables
 
@@ -87,6 +87,7 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate Failed to delete the Snapshot @SnapShotName@ from the Virtual machine @VMName@. Please review manually.
 PowerShell script Result: @psout@
 ```
+
 
 
 

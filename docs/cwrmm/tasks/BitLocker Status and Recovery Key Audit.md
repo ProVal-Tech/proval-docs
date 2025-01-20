@@ -18,8 +18,8 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-- [CW RMM - Custom Field - BitLocker Key Backup Status](https://proval.itglue.com/DOC-5078775-12878969)
-- [CW RMM - Device Groups - BitLocker Auditing](https://proval.itglue.com/DOC-5078775-12878973) (BitLocker - Auditing, BitLocker - Regular Auditing)
+- [CW RMM - Custom Field - BitLocker Key Backup Status](<../custom-fields/BitLocker Key Backup Status.md>)
+- [CW RMM - Device Groups - BitLocker Auditing](<../groups/BitLocker Auditing.md>) (BitLocker - Auditing, BitLocker - Regular Auditing)
 
 ## Create Script
 
@@ -90,7 +90,7 @@ The final task should look like the below screenshot.
 
 The script is intended to run on a scheduled basis against two device groups.
 
-First is the [CW RMM - Device Groups - BitLocker Auditing](https://proval.itglue.com/DOC-5078775-12878973) (BitLocker - Auditing) device group as a scheduled task. As machines run the script they will exit the device group.
+First is the [CW RMM - Device Groups - BitLocker Auditing](<../groups/BitLocker Auditing.md>) (BitLocker - Auditing) device group as a scheduled task. As machines run the script they will exit the device group.
 
 The task should be scheduled to run hourly against the device group. Please see the example in the screenshot below.  
 ![Image](../../../static/img/BitLocker-Status-and-Recovery-Key-Audit/image_16.png)
@@ -100,11 +100,11 @@ The task should be scheduled to run hourly against the device group. Please see 
 **Trigger:** Time  
 **At:** 10:00 AM  
 **Recurrence:** Every Hour  
-**Resource:** [CW RMM - Device Groups - BitLocker Auditing](https://proval.itglue.com/DOC-5078775-12878973) (BitLocker - Auditing)
+**Resource:** [CW RMM - Device Groups - BitLocker Auditing](<../groups/BitLocker Auditing.md>) (BitLocker - Auditing)
 
 ---
 
-Second is the [CW RMM - Device Groups - BitLocker Auditing](https://proval.itglue.com/DOC-5078775-12878973) (BitLocker - Regular Auditing) device group as a scheduled task. As machines complete their audit, they will join the BitLocker - Regular Auditing group and the scheduled task will update the details every four (4) weeks.
+Second is the [CW RMM - Device Groups - BitLocker Auditing](<../groups/BitLocker Auditing.md>) (BitLocker - Regular Auditing) device group as a scheduled task. As machines complete their audit, they will join the BitLocker - Regular Auditing group and the scheduled task will update the details every four (4) weeks.
 
 The task should be scheduled to run every four (4) weeks against the BitLocker - Regular Auditing device group. Please see the example in the screenshot below.  
 ![Image](../../../static/img/BitLocker-Status-and-Recovery-Key-Audit/image_17.png)
@@ -114,7 +114,7 @@ The task should be scheduled to run every four (4) weeks against the BitLocker -
 **Trigger:** Time  
 **At:** 10:00 AM  
 **Recurrence:** Every 4 weeks on Wednesday  
-**Resource:** [CW RMM - Device Groups - BitLocker Auditing](https://proval.itglue.com/DOC-5078775-12878973) (BitLocker - Regular Auditing)
+**Resource:** [CW RMM - Device Groups - BitLocker Auditing](<../groups/BitLocker Auditing.md>) (BitLocker - Regular Auditing)
 
 This script can also run manually against any Windows-based device at anytime to update the details.
 
@@ -122,6 +122,7 @@ This script can also run manually against any Windows-based device at anytime to
 
 - Script log
 - Custom Field
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Child of Solution
 
-[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-9913178)  
+[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](<../../solutions/CWA - Update Table Data - UnifiController.md>)  
 
 ## Purpose
 
@@ -18,8 +18,8 @@ Holds requested Unifi Controller data specific to the controller only.
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](https://proval.itglue.com/DOC-5078775-7291568)
-- [CWM - Automate - Script - Update Table Data - UnifiController](https://proval.itglue.com/DOC-5078775-10243077)
+- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](<../../powershell/Get-UnifiController.md>)
+- [CWM - Automate - Script - Update Table Data - UnifiController](<../scripts/Update Table Data - UnifiController.md>)
 
 ## Tables
 
@@ -34,6 +34,7 @@ Holds requested Unifi Controller data specific to the controller only.
 | Port         | Int    | The Port that the Controller communicates on.                             |
 | UserName     | String | The User name for the admin user on the Unifi Controller.                 |
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
+
 
 
 

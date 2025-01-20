@@ -14,7 +14,7 @@ This Custom table holds the detailed analysis of script failures over the past 3
 
 ## Dependencies
 
-[CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](https://proval.itglue.com/DOC-5078775-16804995)
+[CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](<../scripts/Script Failure Analysis - 30 Day Retention.md>)
 
 ## Tables
 
@@ -37,6 +37,7 @@ This Custom table holds the detailed analysis of script failures over the past 3
 | First Failure Date        | DATETIME | First Failure Date                                                                                 |
 | Last Failure Date         | DATETIME | Last Failure Date                                                                                  |
 | Data Collection Time      | DATETIME | Data Collection Time                                                                                |
+
 
 
 

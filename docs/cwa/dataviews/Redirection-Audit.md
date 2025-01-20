@@ -14,8 +14,8 @@ This dataview displays all possible redirection registry settings globally and f
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Audit - GPO Redirection Settings](https://proval.itglue.com/DOC-5078775-11735434)
-- [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](https://proval.itglue.com/DOC-5078775-11736631)
+- [EPM - Data Collection - Script - Audit - GPO Redirection Settings](<../scripts/Audit - GPO Redirection Settings.md>)
+- [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](<../tables/plugin_proval_gpo_redirection_audit.md>)
 
 ## Columns
 
@@ -64,6 +64,7 @@ LEFT JOIN computers c ON (c.ComputerID = GRA.ComputerID)
 LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)  
 LEFT JOIN locations l ON (l.LocationID = c.LocationID)
 ```
+
 
 
 

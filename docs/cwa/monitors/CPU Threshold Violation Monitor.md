@@ -60,7 +60,8 @@ idlemon                          5.5
 
 ## How to Import
 
-[Import - Remote Monitor - ProVal - Production - CPU Threshold Violation Monitor](https://proval.itglue.com/DOC-5078775-13277020)
+[Import - Remote Monitor - ProVal - Production - CPU Threshold Violation Monitor](<./ProVal - Production - CPU Threshold Violation Monitor.md>)
+
 
 
 

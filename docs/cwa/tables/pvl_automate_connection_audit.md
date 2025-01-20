@@ -14,7 +14,7 @@ The custom table records the computer’s last contact time whenever its state c
 
 ## Dependencies
 
-- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178743)
+- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](<../monitors/Update Table - pvl_automate_connection_audit.md>)
 - [CWM - Automate - script - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745)
 
 ## Tables
@@ -27,6 +27,7 @@ The custom table records the computer’s last contact time whenever its state c
 | state             | tinyint  | whether the computer is offline or online (0/1)    |
 | lastcontact       | datetime | last contact time of the computer when the state changed |
 | datacollectiontime | datetime | data collection time for the respective entry       |
+
 
 
 

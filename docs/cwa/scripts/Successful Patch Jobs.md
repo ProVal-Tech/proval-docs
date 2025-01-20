@@ -14,13 +14,14 @@ This script is a function script and is the enhanced version of the default "Suc
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Patch Accounting](https://proval.itglue.com/DOC-5078775-13310732).
+This script is a function script called from [CWM - Automate - Script - Patch Accounting](<./Patch Accounting.md>).
 
 ## Dependencies
 
 | Property                   | Value |
 |---------------------------|-------|
 | _sysPatchAcctTimeToBill   | 1     |
+
 
 
 

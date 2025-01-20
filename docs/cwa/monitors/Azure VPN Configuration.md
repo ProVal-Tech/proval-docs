@@ -22,11 +22,12 @@ This monitor checks for the presence of the .pbk file for the azure VPN configur
 
 ## Dependencies
 
-If using this Remote monitor, we should have an autofix action set up to run the [EPM - Windows Configuration - Script - Add-AzureVPNConnection [Paranet(Compassus)]](https://proval.itglue.com/DOC-5078775-11698749) script.
+If using this Remote monitor, we should have an autofix action set up to run the [EPM - Windows Configuration - Script - Add-AzureVPNConnection [Paranet(Compassus)]](<../scripts/Add-AzureVPNConnection Paranet(Compassus).md>) script.
 
 ## Target
 
 The targeted group will be explicitly chosen by the client but should be limited to Compassus.
+
 
 
 

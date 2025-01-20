@@ -16,12 +16,12 @@ This solution assists in setting the latest DUO detection and updating the older
 
 | Content                                                                                                      | Type    | Function                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - DUO Authentication - Latest Version Detection](https://proval.itglue.com/DOC-5078775-15897258) | Monitor | This internal monitor is created to fetch the latest version of the application.                                   |
-| [Script - Application - Latest Version Detection [Winget]](https://proval.itglue.com/DOC-5078775-14466237) | Script  | This script is designed to gather the latest version of applications supported by Winget which is provided in the [Internal Monitor - DUO Authentication - Latest Version Detection](https://proval.itglue.com/DOC-5078775-15897258). |
-| [Internal Monitor - DUO Authentication - Install/Update](https://proval.itglue.com/DOC-5078775-15683993)   | Monitor | This monitor is designed to update the DUO Authentication on the computers where the outdated application is detected. |
-| [Script - DUO Install & Upgrade - Latest Version](https://proval.itglue.com/DOC-5078775-9713528)           | Script  | This script will install or update DUO if the currently installed instance is older than the latest released version. This script does match the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe). |
-| △ Custom - Execute Script - Application Latest Version                                                       | Alert Template | This alert template is designed to be used with the [Internal Monitor - DUO Authentication - Latest Version Detection](https://proval.itglue.com/DOC-5078775-15897258) to run the script [Application - Latest Version Detection [Winget]](https://proval.itglue.com/DOC-5078775-14466237). |
-| △ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version                                         | Alert Template | This alert template is designed to run the script [DUO Install/Upgrade - Latest Version](https://proval.itglue.com/DOC-5078775-9713528) with the [Monitor - DUO Authentication- Install/Update](https://proval.itglue.com/DOC-5078775-15683993). |
+| [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>) | Monitor | This internal monitor is created to fetch the latest version of the application.                                   |
+| [Script - Application - Latest Version Detection [Winget]](<../cwa/scripts/Application - Latest Version Detection Winget.md>) | Script  | This script is designed to gather the latest version of applications supported by Winget which is provided in the [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>). |
+| [Internal Monitor - DUO Authentication - Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)   | Monitor | This monitor is designed to update the DUO Authentication on the computers where the outdated application is detected. |
+| [Script - DUO Install & Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>)           | Script  | This script will install or update DUO if the currently installed instance is older than the latest released version. This script does match the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe). |
+| △ Custom - Execute Script - Application Latest Version                                                       | Alert Template | This alert template is designed to be used with the [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>) to run the script [Application - Latest Version Detection [Winget]](<../cwa/scripts/Application - Latest Version Detection Winget.md>). |
+| △ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version                                         | Alert Template | This alert template is designed to run the script [DUO Install/Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>) with the [Monitor - DUO Authentication- Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>). |
 
 ## Optional Content
 
@@ -35,11 +35,11 @@ This solution assists in setting the latest DUO detection and updating the older
 
 1. Import the following content using the ProSync Plugin:
    - Import scripts
-     - [Script - Application - Latest Version Detection [Winget]](https://proval.itglue.com/DOC-5078775-14466237)
-     - [Script - DUO Install/Upgrade - Latest Version](https://proval.itglue.com/DOC-5078775-9713528)
+     - [Script - Application - Latest Version Detection [Winget]](<../cwa/scripts/Application - Latest Version Detection Winget.md>)
+     - [Script - DUO Install/Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>)
    - Import monitors
-     - [Internal Monitor - DUO Authentication - Latest Version Detection](https://proval.itglue.com/DOC-5078775-15897258)
-     - [Internal Monitor - DUO Authentication - Install/Update](https://proval.itglue.com/DOC-5078775-15683993)
+     - [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>)
+     - [Internal Monitor - DUO Authentication - Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)
    - Import the Alert templates
      - `△ Custom - Execute Script - Application Latest Version`
      - `△ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version`
@@ -51,11 +51,11 @@ This solution assists in setting the latest DUO detection and updating the older
    ![Run Script](../../static/img/Duo-Authentication-for-Windows---UpdateDeployUninstall/image_2.png)
 
 3. Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-   - [Monitor - DUO Authentication - Latest Version Detection](https://proval.itglue.com/DOC-5078775-14466240)
+   - [Monitor - DUO Authentication - Latest Version Detection](<../cwa/monitors/Application - Latest Version Detection.md>)
      - Set up with the alert template `△ Custom - Execute Script - Application Latest Version`
      - Ensure the monitor is running monthly and not at a more frequent interval.
      - Right-click and Run Now and Reset Monitor after applying the alert template.
-   - [Monitor - DUO Authentication- Install/Update](https://proval.itglue.com/DOC-5078775-15683993)
+   - [Monitor - DUO Authentication- Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)
      - Apply the alert template `△ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version`
      - **NOTE**: Make sure to confirm the Latest Version Detection monitor has run and completed before enabling this monitor.
        - Right-click and Run Now after applying the alert template.
@@ -75,6 +75,7 @@ Configure the solution as outlined below:
     - Make Sure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) bonded to it.
     - Right-click and Run Now to start the monitor.
+
 
 
 

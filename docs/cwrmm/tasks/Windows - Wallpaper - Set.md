@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is an RMM implementation of the agnostic script [Set-Wallpaper](https://proval.itglue.com/DOC-5078775-7562729) to set the active desktop wallpaper for all users from a local path or a URL. Can optionally be switched to enforce the wallpaper for all users on login.
+This is an RMM implementation of the agnostic script [Set-Wallpaper](<../../powershell/Set-Wallpaper.md>) to set the active desktop wallpaper for all users from a local path or a URL. Can optionally be switched to enforce the wallpaper for all users on login.
 
 ## Sample Run
 
@@ -27,7 +27,7 @@ This is an RMM implementation of the agnostic script [Set-Wallpaper](https://pro
 
 ## Dependencies
 
-[Set-Wallpaper](https://proval.itglue.com/DOC-5078775-7562729)
+[Set-Wallpaper](<../../powershell/Set-Wallpaper.md>)
 
 ## User Parameters
 
@@ -168,6 +168,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
 
 
 

@@ -31,7 +31,7 @@ The remote monitor attempts to disable the Autofilling feature for credit cards 
 **Suggested Alert Style:** Continuous  
 **Suggested Alert Template:** Default - Do Nothing  
 
-Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Chromium Browsers Credit Card Lockdown - Status](https://proval.itglue.com/DOC-5078775-15124294) dataview.
+Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Chromium Browsers Credit Card Lockdown - Status](<../dataviews/Chromium Browsers Credit Card Autofill Lockdown - Status.md>) dataview.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
@@ -44,7 +44,7 @@ Using any alert templates is not recommended unless the partner specifically des
 **Search:** `Lockdown Browsers Credit Card Autofill`  
 **Search:** `Lockdown Browsers Autofill`  
 **Group:** `△ Lockdown Browsers Autofill`  
-**Dataview:** [EPM - Dataview - Chromium Browsers Credit Card Lockdown - Status](https://proval.itglue.com/DOC-5078775-15124294)
+**Dataview:** [EPM - Dataview - Chromium Browsers Credit Card Lockdown - Status](<../dataviews/Chromium Browsers Credit Card Autofill Lockdown - Status.md>)
 
 ## Target
 
@@ -54,6 +54,7 @@ Using any alert templates is not recommended unless the partner specifically des
 ## Implementation
 
 [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)
+
 
 
 

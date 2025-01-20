@@ -14,8 +14,8 @@ The dataview shows the login/logout audit of the users.
 
 ## Dependencies
 
-- [Activity Logging Reporting](https://proval.itglue.com/DOC-5078775-13392962)
-- [pvl_login_logout_audit](https://proval.itglue.com/DOC-5078775-13392964)
+- [Activity Logging Reporting](<../scripts/Activity Logging Reporting DV, Global.md>)
+- [pvl_login_logout_audit](<../tables/pvl_login_logout_audit.md>)
 
 ## Columns
 
@@ -32,6 +32,7 @@ The dataview shows the login/logout audit of the users.
 | ConnectionType    | The connection to show whether the connection was remote, network, or interactive, etc. |
 | Logon Type        | This shows whether the user detected for login or logout |
 | ScriptRanDate     | This shows the script last ran date and time         |
+
 
 
 

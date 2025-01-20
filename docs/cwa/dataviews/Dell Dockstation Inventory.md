@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-This dataview populates the available Dockstations Inventory for the Dell Workstations that has been gathered by the [Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374).
+This dataview populates the available Dockstations Inventory for the Dell Workstations that has been gathered by the [Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>).
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374)
-- [CWM - Automate - Internal Monitor - Execute Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073356)
+- [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>)
+- [CWM - Automate - Internal Monitor - Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>)
 
 ## Columns
 
@@ -37,7 +37,8 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Install Date        | Dockstation install date                           |
 | Manufacture Date    | Manufacture Date of DockStation                    |
 | Dock Name           | Name of Dockstation                                |
-| Script Last Ran     | Last Time the [CWM - Automate - Script - Get-DellDockStation](https://proval.itglue.com/DOC-5078775-15073374) executed on the machine |
+| Script Last Ran     | Last Time the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) executed on the machine |
+
 
 
 

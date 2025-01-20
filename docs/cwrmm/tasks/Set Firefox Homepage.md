@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](https://proval.itglue.com/DOC-5078775-7348110).
+Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](ht
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-FirefoxHomepage](https://proval.itglue.com/DOC-5078775-7348110)  
+[SWM - Software Configuration - Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>)  
 
 ## User Parameters
 
@@ -179,6 +179,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Log](../../../static/img/Set-Firefox-Homepage/image_25.png)  
+
 
 
 

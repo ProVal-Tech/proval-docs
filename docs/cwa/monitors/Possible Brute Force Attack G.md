@@ -54,7 +54,8 @@ Step 3: Replace '\<agentid>' in the additional condition with the id of your mon
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+
 
 
 

@@ -63,7 +63,7 @@ Update Orchestrator Service successfully %Result% on %CLIENTNAME%/%COMPUTERNAME%
 ## Implementation
 
 Import the remote monitor using the implementation document:  
-[Import - Remote Monitor - Update Orchestrator Service Disable](https://proval.itglue.com/DOC-5078775-15681822)
+[Import - Remote Monitor - Update Orchestrator Service Disable](<./Update Orchestrator Service Disable.md>)
 
 ## FAQ
 
@@ -74,6 +74,7 @@ A) Yes, The **Windows Update service (wuauserv)** is essential for Windows Updat
 
 **Q. Will stopping the Update Orchestrator service impact Automate patch management?**  
 A) No, Automate's patch management relies solely on the Windows Update service and UI mode (Check for Updates), so stopping the Update Orchestrator won't affect it.
+
 
 
 

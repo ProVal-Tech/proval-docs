@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is a new version of the [SWM - Software Configuration - Script - Prevent Saving Browser Passwords (IE.Chrome.FF)](https://proval.itglue.com/DOC-5078775-8014332) script. 
+This is a new version of the [SWM - Software Configuration - Script - Prevent Saving Browser Passwords (IE.Chrome.FF)](<./Prevent Saving Browser Passwords (IE.Chrome.FF).md>) script. 
 
 This script currently supports IE, Chrome, Firefox, and Edge and will lock those browsers from prompting for saving passwords by making changes in the registry.
 
@@ -55,6 +55,7 @@ In the above screenshot, Password Saving Feature for the Browsers will be disabl
 
 - Script Log
 - Script State
+
 
 
 

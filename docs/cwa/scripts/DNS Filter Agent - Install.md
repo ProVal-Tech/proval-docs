@@ -29,7 +29,7 @@ This script installs the DNS Filter agent to the machines. It is compatible with
 | CompSecretKey         | It checks if the computer's secret key is present.  Note: The computer secret key has the highest priority over the client/location secret key. |
 | LocSecretKey          | It checks if the location's secret key is present.  Note: The location secret key has the highest priority over the client secret key. |
 | ClientSecretKey       | It checks if the client's secret key is present.  Note: The client secret key would only be used if both the computer and location secret key are empty. |
-| TicketCreationCategory | It stores the ticket category ID from the monitor [CWA - Solution - DNS Filter Agent Deployment](https://proval.itglue.com/DOC-5078775-15669152) |
+| TicketCreationCategory | It stores the ticket category ID from the monitor [CWA - Solution - DNS Filter Agent Deployment](<../../solutions/DNS Filter Agent Deployment.md>) |
 | SecretKey             | It has the final secret key which is used for the installation                                           |
 
 ## EDFs
@@ -47,6 +47,7 @@ This script installs the DNS Filter agent to the machines. It is compatible with
 
 - Script Log
 - Ticket
+
 
 
 

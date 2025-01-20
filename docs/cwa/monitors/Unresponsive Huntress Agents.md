@@ -32,13 +32,14 @@ Windows Machines limiting to machines with Huntress Agents only.
 
 ## Implementation
 
-[Import - Remote Monitor - Unresponsive Huntress Agents](https://proval.itglue.com/DOC-5078775-16097655) 
+[Import - Remote Monitor - Unresponsive Huntress Agents](<./Unresponsive Huntress Agents.md>) 
 
 ## Ticketing
 
 **Subject:** `Unresponsive Huntress Agent Detected on %COMPUTERNAME%`  
 
 **Body:** `The machine %computername% located at %clientname%//%locationname% is currently reporting its huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days and its license key has been revoked by huntress and may no longer be performing security functions on the machine. Please validate the agent is communicating with Huntress and if it is not, re-install the application to resolve the issue.`
+
 
 
 

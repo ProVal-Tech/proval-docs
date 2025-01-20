@@ -38,7 +38,8 @@ Windows Machines
 
 ## How to Import
 
-[Import - Remote Monitor - Reset Local User Password Age](https://proval.itglue.com/DOC-5078775-13665374)
+[Import - Remote Monitor - Reset Local User Password Age](<./Import - Remote Monitor - Reset Local User Password Age.md>)
+
 
 
 

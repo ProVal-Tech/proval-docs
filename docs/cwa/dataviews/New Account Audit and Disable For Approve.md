@@ -16,8 +16,8 @@ This dataview shows newly created accounts. It can be used in auditing of accoun
 
 - [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)
 - [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](https://proval.itglue.com/DOC-5078775-7695148)
-- [New User Account Audit Table](https://proval.itglue.com/DOC-5078775-7771654)
-- [User Management - Approved New User - Activate [DV,Param]](https://proval.itglue.com/DOC-5078775-7771978)
+- [New User Account Audit Table](<../tables/custom_proval_computer_new_accounts.md>)
+- [User Management - Approved New User - Activate [DV,Param]](<../scripts/User Management - Approved New User - Activate DV,Param.md>)
 
 ## Columns
 
@@ -39,6 +39,7 @@ This dataview shows newly created accounts. It can be used in auditing of accoun
 | New Account Disable Status    | It shows whether new account is disabled or not. (No Action Taken - if this feature not chosen in the script) |
 | New Account Approved         | It shows whether new account is approved after verification (No Action Require - Since disable not enabled then it will show approval not required too) |
 | New Account Approved Date    | It shows when the account is approved to get enabled.                      |
+
 
 
 

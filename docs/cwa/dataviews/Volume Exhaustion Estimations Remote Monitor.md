@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-Displays volume information along with the estimated exhaustion date collected by the [Volume Space Sampling](https://proval.itglue.com/DOC-5078775-16290380) remote monitor.
+Displays volume information along with the estimated exhaustion date collected by the [Volume Space Sampling](<../monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) remote monitor.
 
 ## Dependencies
 
-- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](https://proval.itglue.com/DOC-5078775-16284178) 
-- [EPM - Disk - Remote Monitor - Volume Space Sampling](https://proval.itglue.com/DOC-5078775-16290380) 
+- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>) 
+- [EPM - Disk - Remote Monitor - Volume Space Sampling](<../monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) 
 
 ## Columns
 
@@ -36,6 +36,7 @@ Displays volume information along with the estimated exhaustion date collected b
 | Estimated Exhaustion      | The date and time that this volume is estimated to run out of space          |
 | Days Until Exhaustion     | Number of days left before the volume will run out of space                   |
 | Data Collection Time      | The last time data was gathered for this volume                               |
+
 
 
 

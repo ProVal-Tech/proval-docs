@@ -16,21 +16,22 @@ Displays detailed information on [PnP Devices](https://docs.microsoft.com/en-us/
 
 | Content                                                                                   | Type          | Function                                                                                                                                                                                                                                         |
 |-------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Script - Get-PNPDevices [DV]](https://proval.itglue.com/DOC-5078775-10861683) | Script        | This script will collect information about the installed [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) and stores it in the custom table [Plugin_ProVal_PnpDevices](https://proval.itglue.com/DOC-5078775-10861699). |
-| [CWM - Automate - Custom Table - plugin_proval_pnpdevices](https://proval.itglue.com/DOC-5078775-10861699) | Custom Table  | To store the data grabbed by [CWM - Automate - Script - Get-PNPDevices [DV]](https://proval.itglue.com/DOC-5078775-10861683) script in order to feed into the [CWM - Automate - Dataview - Get-PNPDevices [Script]](https://proval.itglue.com/DOC-5078775-10861702) dataview. |
-| [CWM - Automate - Dataview - Get-PNPDevices [Script]](https://proval.itglue.com/DOC-5078775-10861702) | Dataview      | This dataview was required to display [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) information. The data is being populated by the [CWM - Automate - Script - Get-PNPDevices [DV]](https://proval.itglue.com/DOC-5078775-10861683) script. |
+| [CWM - Automate - Script - Get-PNPDevices [DV]](<../cwa/scripts/Get-PNPDevices DV.md>) | Script        | This script will collect information about the installed [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) and stores it in the custom table [Plugin_ProVal_PnpDevices](<../cwa/tables/Plugin_ProVal_PNPDevices.md>). |
+| [CWM - Automate - Custom Table - plugin_proval_pnpdevices](<../cwa/tables/Plugin_ProVal_PNPDevices.md>) | Custom Table  | To store the data grabbed by [CWM - Automate - Script - Get-PNPDevices [DV]](<../cwa/scripts/Get-PNPDevices DV.md>) script in order to feed into the [CWM - Automate - Dataview - Get-PNPDevices [Script]](<../cwa/dataviews/Get-PNPDevices Script.md>) dataview. |
+| [CWM - Automate - Dataview - Get-PNPDevices [Script]](<../cwa/dataviews/Get-PNPDevices Script.md>) | Dataview      | This dataview was required to display [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) information. The data is being populated by the [CWM - Automate - Script - Get-PNPDevices [DV]](<../cwa/scripts/Get-PNPDevices DV.md>) script. |
 
 ## Implementation
 
-- Import the [CWM - Automate - Script - Get-PNPDevices [DV]](https://proval.itglue.com/DOC-5078775-10861683) script.
-- Import the [CWM - Automate - Dataview - Get-PNPDevices [Script]](https://proval.itglue.com/DOC-5078775-10861702) dataview.
+- Import the [CWM - Automate - Script - Get-PNPDevices [DV]](<../cwa/scripts/Get-PNPDevices DV.md>) script.
+- Import the [CWM - Automate - Dataview - Get-PNPDevices [Script]](<../cwa/dataviews/Get-PNPDevices Script.md>) dataview.
 - Run the script against an online windows computer to create the table.
 - Schedule the script to run at the regular frequency against the desired computers to keep the dataview up-to-date.
 
 ## FAQ
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
-**A:** It's most probably because of the permissions, try running [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](https://proval.itglue.com/DOC-5078775-8056027) script.
+**A:** It's most probably because of the permissions, try running [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) script.
+
 
 
 

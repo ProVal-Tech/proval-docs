@@ -20,7 +20,7 @@ Removes Extension from Mozilla Firefox Browser.
 
 ## Dependencies
 
-[SWM - Software Configuration - Unregister-FirefoxExtension](https://proval.itglue.com/DOC-5078775-7266188)
+[SWM - Software Configuration - Unregister-FirefoxExtension](<../../powershell/Unregister-FirefoxExtension.md>)
 
 ## User Parameters
 
@@ -135,6 +135,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
 
 
 

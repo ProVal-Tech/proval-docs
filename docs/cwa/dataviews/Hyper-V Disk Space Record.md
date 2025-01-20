@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-This dataview shows the report of the Hyper-Vs disk record from the custom table [pvl_disk_record](https://proval.itglue.com/DOC-5078775-13294756).
+This dataview shows the report of the Hyper-Vs disk record from the custom table [pvl_disk_record](<../tables/pvl_disk_record.md>).
 
 ## Dependencies
 
-- [pvl_disk_record](https://proval.itglue.com/DOC-5078775-13294756) 
-- [Hyper-V Disk Space Record](https://proval.itglue.com/DOC-5078775-13294757) 
+- [pvl_disk_record](<../tables/pvl_disk_record.md>) 
+- [Hyper-V Disk Space Record](<./Hyper-V Disk Space Record.md>) 
 
 ## Columns
 
@@ -34,6 +34,7 @@ This dataview shows the report of the Hyper-Vs disk record from the custom table
 | Missing          | Drive status whether detected in Automate or not        |
 | Internal         | Drive check whether internal or external/removable      |
 | SSD              | Disk check whether SSD or not                           |
+
 
 
 

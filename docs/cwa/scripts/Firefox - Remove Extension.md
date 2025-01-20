@@ -22,7 +22,7 @@ Time Saved by Automation: 5 Minutes
 
 - PowerShell v5
 - Mozilla Firefox
-- [Register-FirefoxExtension](https://proval.itglue.com/DOC-5078775-7247908)
+- [Register-FirefoxExtension](<../../powershell/Register-FirefoxExtension.md>)
 
 ## Variables
 
@@ -54,6 +54,7 @@ The script then checks if a `policies.json` file already exists in the distribut
 
 - Script log
 - Local file on computer
+
 
 
 

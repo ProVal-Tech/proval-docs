@@ -10,7 +10,7 @@ unlisted: false
 ---
 # Summary
 
-Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](https://proval.itglue.com/DOC-5078775-10784812)
+Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](<../procedures/Windows 10 Feature Upgrade (No Reboot).md>)
 
 # Details
 
@@ -20,8 +20,9 @@ Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedu
 - **Policy Objects Active**:
   - **Policy Object Name**: Agent Procedures
   - **Policy Object Settings**:  
-    - **Policy Object Members**: [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](https://proval.itglue.com/DOC-5078775-10784812)  
+    - **Policy Object Members**: [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](<../procedures/Windows 10 Feature Upgrade (No Reboot).md>)  
       - **Policy Object Member Settings**: Scheduled Monthly, 1st of the month, Do not skip if offline, at midnight.
+
 
 
 

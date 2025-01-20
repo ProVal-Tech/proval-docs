@@ -22,7 +22,8 @@ Global
 
 **Name:** △ Custom - Autofix - Offline Agent Remediation (RMM+)
 
-**Note:** The alert template should be executing the [Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441)
+**Note:** The alert template should be executing the [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
+
 
 
 

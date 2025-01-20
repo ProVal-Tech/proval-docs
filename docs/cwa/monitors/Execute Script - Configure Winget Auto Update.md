@@ -15,7 +15,7 @@ This internal monitor executes the **[Configure Winget Auto Update](https://prov
 ## Dependencies
 
 - **[SWM - Software Update - Script - Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896)**
-- **[SWM - Software Update - Custom Table - pvl_wau_config](https://proval.itglue.com/DOC-5078775-17973964)**
+- **[SWM - Software Update - Custom Table - pvl_wau_config](<../../unsorted/SWM - Software Update - Custom Table - pvl_wau_config.md>)**
 
 ## Target
 
@@ -24,6 +24,7 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Configure Winget Auto Update`
+
 
 
 

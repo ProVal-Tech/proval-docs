@@ -21,13 +21,14 @@ Time Saved by Automation: 10 Minutes
 ## Dependencies
 
 [OneDrive - Backup Status](https://proval.itglue.com/DOC-5078775-8028415)  
-[EPM - Windows Configuration - Custom Table - plugin_proval_onedrivebackupstatus](https://proval.itglue.com/DOC-5078775-8140132)
+[EPM - Windows Configuration - Custom Table - plugin_proval_onedrivebackupstatus](<../tables/plugin_proval_onedrivebackupstatus.md>)
 
 ## Output
 
 - Script log
 - custom table
 - Dataview
+
 
 
 

@@ -19,9 +19,9 @@ It will report for all volumes where VSS storage is enabled; if not enabled to a
 
 ## Dependencies
 
-- [VSS Resize](https://proval.itglue.com/DOC-5078775-10728931)  
-- [plugin_proval_vssadminstorage](https://proval.itglue.com/DOC-5078775-10728928)  
-- [VSSAdmin Storage Audit](https://proval.itglue.com/DOC-5078775-10728930)  
+- [VSS Resize](<./VSS Resize.md>)  
+- [plugin_proval_vssadminstorage](<../tables/plugin_proval_vssadminstorage.md>)  
+- [VSSAdmin Storage Audit](<../dataviews/VSSAdmin Storage Audit.md>)  
 
 ## Variables
 
@@ -42,6 +42,7 @@ Ex:
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
+
 
 
 

@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Purpose
 
-The view is created to present information related to Network Probe configurations in the environment. It will present the information for both Generation 1 and Generation 2 probes in one place. The view is used for the data displayed in the dataview [CWM - Automate - Dataview - Probe Deployment Audit Re-Defined [View]](https://proval.itglue.com/DOC-5078775-8288021).
+The view is created to present information related to Network Probe configurations in the environment. It will present the information for both Generation 1 and Generation 2 probes in one place. The view is used for the data displayed in the dataview [CWM - Automate - Dataview - Probe Deployment Audit Re-Defined [View]](<../dataviews/Network Probes.md>).
 
-This view was created to bypass the word count limit of 2500 for the "SQLBody" column in the Dataviews table. The view is created by the script, [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](https://proval.itglue.com/DOC-5078775-8288023).
+This view was created to bypass the word count limit of 2500 for the "SQLBody" column in the Dataviews table. The view is created by the script, [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](<../scripts/MySQL - View - Create (plugin_proval_probeconfig).md>).
 
 ## Dependencies
 
-- [CWM - Automate - Dataview - Probe Deployment Audit Re-Defined [View]](https://proval.itglue.com/DOC-5078775-8288021)
-- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](https://proval.itglue.com/DOC-5078775-8288023)
+- [CWM - Automate - Dataview - Probe Deployment Audit Re-Defined [View]](<../dataviews/Network Probes.md>)
+- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](<../scripts/MySQL - View - Create (plugin_proval_probeconfig).md>)
 
 ## Table
 
@@ -54,6 +54,7 @@ This view was created to bypass the word count limit of 2500 for the "SQLBody" c
 | Updated By                               | VARCHAR  | Last user to make any changes to the probe                          |
 | Creation Date                            | datetime | Date of creation                                                   |
 | Last Update Date                         | datetime | Last Update date for the network probe                              |
+
 
 
 

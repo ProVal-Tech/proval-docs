@@ -14,7 +14,7 @@ This dataview shows the Windows 10 machines with build and patch policy status c
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 
 ## Columns
 
@@ -34,6 +34,7 @@ This dataview shows the Windows 10 machines with build and patch policy status c
 | Online Last 30 Days           | It denotes whether the agent logged in within 30 days or not|
 | Has Patch Policy              | This describe whether the Windows 10 agent has patch policy enabled or not |
 | LastPatched                   | This provide the date when the agent was last patched       |
+
 
 
 

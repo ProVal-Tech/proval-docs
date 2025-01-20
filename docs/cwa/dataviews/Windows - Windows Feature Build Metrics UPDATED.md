@@ -19,7 +19,7 @@ Sample Screenshot:
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 
 ## Columns
 
@@ -34,6 +34,7 @@ Sample Screenshot:
 | % Total Online                  | The number of machines on each Windows 10 build with the above filter / the total number of Windows 10 machines with the same filter applied. (Available in column chooser)                                                                        |
 | Machines W/ Patch Policy        | The number of machines on each Windows 10 build with the following filter: The Windows 10 machine must have a patch policy with "Managed Mode" or "Managed Mode UI Disabled" as its patch install method. (Available in column chooser)           |
 | % Total W/ Patch Policy         | The number of machines on each Windows 10 build with the above filter / the total number of Windows 10 machines with the same filter applied. (Available in column chooser)                                                                        |
+
 
 
 

@@ -14,9 +14,9 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448)
-- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-8355447)
-- [CWM - Automate - Monitor - Execute Script - Windows - Check Windows 11 Compatibility](https://proval.itglue.com/DOC-5078775-11364499)
+- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)
+- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>)
+- [CWM - Automate - Monitor - Execute Script - Windows - Check Windows 11 Compatibility](<../monitors/Execute Script - Windows - Check Windows 11 Compatibility.md>)
 
 ## Columns
 
@@ -44,6 +44,7 @@ Shows which machines are eligible to upgrade to Windows 11 based on the PowerShe
 | Compatibility Check  | Equals   | Not Capable    | Red    |
 | Compatibility Check  | Equals   | Undetermined    | Orange |
 | Compatibility Check  | Equals   | Capable        | Green  |
+
 
 
 

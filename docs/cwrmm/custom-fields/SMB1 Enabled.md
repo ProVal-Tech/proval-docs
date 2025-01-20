@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This custom field is used to store and display the results of the task [CW RMM - Task - Detect SMB1](https://proval.itglue.com/DOC-5078775-14419758).
+This custom field is used to store and display the results of the task [CW RMM - Task - Detect SMB1](<../tasks/Detect SMB1.md>).
 
 ## Dependencies
 
-[CW RMM - Task - Detect SMB1](https://proval.itglue.com/DOC-5078775-14419758)
+[CW RMM - Task - Detect SMB1](<../tasks/Detect SMB1.md>)
 
 ## Details
 
@@ -29,6 +29,7 @@ This custom field is used to store and display the results of the task [CW RMM -
 ## Sample Value
 
 ![Sample Value](../../../static/img/SMB1-Enabled/image_2.png)
+
 
 
 

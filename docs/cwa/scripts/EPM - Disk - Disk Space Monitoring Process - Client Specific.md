@@ -22,7 +22,7 @@ Disk cleanup will only run against Windows machines. When run as an auto-fix fro
 
 ## Dependencies
 
-[Agent - Drive Space Check - Client Specific](https://proval.itglue.com/DOC-5078775-10731915)
+[Agent - Drive Space Check - Client Specific](<../../unsorted/EPM - Disk - Agent - Drive Space Check - Client Specific.md>)
 
 #### User Parameters
 
@@ -58,6 +58,7 @@ The following steps are performed:
 ## Output
 
 The script logs all messages to the script log.
+
 
 
 

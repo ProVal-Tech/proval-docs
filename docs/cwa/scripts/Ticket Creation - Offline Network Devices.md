@@ -28,7 +28,7 @@ The `Send Alert when Unit is Down` checkbox on a network device is required for 
 
 ## Dependencies
 
-[CWM - Automate - Script - Network Devices - Offline Ticket Enabling](https://proval.itglue.com/DOC-5078775-16290414)
+[CWM - Automate - Script - Network Devices - Offline Ticket Enabling](<./Network Devices - Offline Ticket Enabling.md>)
 
 ## Variables
 
@@ -80,6 +80,7 @@ To create this ticket to a specific service board in manage then provide the cat
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
+
 
 
 

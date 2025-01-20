@@ -16,7 +16,7 @@ This Dataview filters the script schedules where it is Scheduled by a technician
 
 ## Dependencies
 
-[CWM - Automate - View - pvl_Scheduled_Scripts](https://proval.itglue.com/DOC-5078775-16497225)
+[CWM - Automate - View - pvl_Scheduled_Scripts](<../views/pvl_Scheduled_Scripts.md>)
 
 ## Columns
 
@@ -45,6 +45,7 @@ This Dataview filters the script schedules where it is Scheduled by a technician
 | Targeted Servers Count       | Total Servers getting targeted in the schedule              |
 | Targeted workstations Count   | Total workstations getting targeted in the schedule         |
 | % Machines Targeted          | percent of the machines getting targeted in the schedule    |
+
 
 
 

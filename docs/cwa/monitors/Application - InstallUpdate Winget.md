@@ -14,13 +14,14 @@ This monitor is designed to update the application based on the PackageID, Sourc
 
 ## Dependencies
 
-[Winget - Install/Update [Autofix,Param]](https://proval.itglue.com/DOC-5078775-14466238)
+[Winget - Install/Update [Autofix,Param]](<../scripts/Script - Winget - InstallUpdate Autofix,Param.md>)
 
 ## Target
 
 Global - Should be run without explicitly defined targets.
 
 This monitor is dependent on the properties with the name of PackageID to be created. So, before enabling it you need to implement the monitor "ProVal - Production - \<Application\> - Latest Version Detection" with an alert template "△ Custom - Execute Script - Application Latest Version".
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](https://proval.itglue.com/DOC-5078775-13403824) script.
+Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](https://proval.itglue.com/DOC-5078775-13403824)
+[CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>)
 
 #### pvl_cwm_configurations
 
@@ -28,6 +28,7 @@ Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - 
 | PurchaseDate       | datetime | Purchase Date of the Computer/Configuration returned from CW Manage.                         |
 | ExpirationDate     | datetime | Warranty Expiration Date of the Computer/Configuration returned from CW Manage.              |
 | ScriptRunTime      | datetime | Data Collection Time.                                                                         |
+
 
 
 

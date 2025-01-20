@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script removes the `Winget Update All [System]` and `Winget Update All [Logged on User]` tasks created by the [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195) script from the windows 10 and 11 machines.
+The script removes the `Winget Update All [System]` and `Winget Update All [Logged on User]` tasks created by the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<./Scheduled Task - Create - Winget Update All Autofix.md>) script from the windows 10 and 11 machines.
 
 ## Sample Run
 
@@ -18,8 +18,8 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 ## Dependencies
 
-- [Script - Scheduled Task - Create - Winget Update All [Autofix]](https://proval.itglue.com/DOC-5078775-14825195)
-- [Internal Monitor - Execute Script - Scheduled Task - Delete - Winget Update All](https://proval.itglue.com/DOC-5078775-15226948)
+- [Script - Scheduled Task - Create - Winget Update All [Autofix]](<./Scheduled Task - Create - Winget Update All Autofix.md>)
+- [Internal Monitor - Execute Script - Scheduled Task - Delete - Winget Update All](<../monitors/Execute Script - Scheduled Task - Delete - Winget Update All.md>)
 
 ## Computer Level EDF
 
@@ -31,6 +31,7 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
+
 
 
 

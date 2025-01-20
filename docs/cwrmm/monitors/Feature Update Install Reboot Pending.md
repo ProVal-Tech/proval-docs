@@ -14,8 +14,8 @@ Notifications for the computer where the `Feature Update Install with Tracking` 
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Feature Update Reboot Pending](https://proval.itglue.com/DOC-5078775-14592255)
-- [CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845)
+- [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)
+- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
 
 ## Monitor
 
@@ -50,6 +50,7 @@ Notifications for the computer where the `Feature Update Install with Tracking` 
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Reboot-Pending/image_10.png)
+
 
 
 

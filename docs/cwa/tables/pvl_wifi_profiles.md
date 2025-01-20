@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-The purpose of the custom table is to store the WiFi Profiles information for each computer fetched by the [Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355) script.
+The purpose of the custom table is to store the WiFi Profiles information for each computer fetched by the [Get Wifi Profile](<../scripts/Get Wifi Profile.md>) script.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Get Wifi Profile](https://proval.itglue.com/DOC-5078775-16111355)
+[EPM - Windows Configuration - Script - Get Wifi Profile](<../scripts/Get Wifi Profile.md>)
 
 ## Tables
 
@@ -36,6 +36,7 @@ The purpose of the custom table is to store the WiFi Profiles information for ea
 | IsConnected         | tinyint(4)   | Is the Computer actively using it? (0/1)                |
 | Password            | blob         | Password of the Wifi Profile stored in encrypted format  |
 | scriptruntime       | datetime     | Data Collection Time                                     |
+
 
 
 

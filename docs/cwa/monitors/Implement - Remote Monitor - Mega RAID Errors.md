@@ -16,7 +16,7 @@ Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only
 ---
 
 ### 2.
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854) script was imported as well.
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well.
 
 ---
 
@@ -205,6 +205,7 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ### 8.
 Set the appropriate alert template.
+
 
 
 

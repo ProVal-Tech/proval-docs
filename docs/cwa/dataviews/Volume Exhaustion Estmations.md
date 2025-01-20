@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-Displays volume information gathered by [CWM - Automate - Script - Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775-9655085).
+Displays volume information gathered by [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
 
 ## Dependencies
 
-[CWM - Automate - Script - Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775-9655085)
+[CWM - Automate - Script - Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>)
 
 ## Columns
 
@@ -29,6 +29,7 @@ Displays volume information gathered by [CWM - Automate - Script - Volume Free S
 | Size Remaining (GB)       | The amount of space remaining in Gigabytes                          |
 | Estimated Exhaustion       | The date and time that this volume is estimated to run out of space. |
 | Timestamp                 | The last time data was gathered for this volume.                   |
+
 
 
 

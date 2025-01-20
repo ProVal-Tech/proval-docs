@@ -14,8 +14,8 @@ Groups computers where Cumulative Update was installed by the Out of Date Cumula
 
 ## Dependencies
 
-[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](https://proval.itglue.com/DOC-5078775-15748265)  
-[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](https://proval.itglue.com/DOC-5078775-15748263)  
+[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)  
+[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)  
 
 ## Group Creation
 
@@ -72,6 +72,7 @@ Groups computers where Cumulative Update was installed by the Out of Date Cumula
 
 ![Completed Group 1](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_20.png)  
 ![Completed Group 2](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_21.png)
+
 
 
 

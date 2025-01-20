@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores information about gathered WiFi profiles from [WiFi Profile - Get](https://proval.itglue.com/DOC-5078775-8041474) for later application by the script [WiFi Profile - Apply](https://proval.itglue.com/DOC-5078775-8140815).
+Stores information about gathered WiFi profiles from [WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>) for later application by the script [WiFi Profile - Apply](<../scripts/WiFi Profile - Apply.md>).
 
 ## Dependencies
 
-[WiFi Profile - Get](https://proval.itglue.com/DOC-5078775-8041474)
+[WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>)
 
 ## Table
 
@@ -25,6 +25,7 @@ Stores information about gathered WiFi profiles from [WiFi Profile - Get](https:
 | clientid | INT     | The ClientID associated with the WiFi profile.   |
 | ssid     | VARCHAR | The SSID of the WiFi profile.                    |
 | xml      | BLOB    | The configuration information of the WiFi profile.|
+
 
 
 

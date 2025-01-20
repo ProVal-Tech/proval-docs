@@ -20,10 +20,10 @@ It is important to note that the addition of profiles can also be managed throug
 
 - The script, formerly named `Get/Remove Wifi Profiles`, has been rebranded to `Get/Remove/Add Wifi Profiles.`
 - In this updated version, a new feature has been incorporated to enable the addition of Wi-Fi profiles in addition to removal. Two new user parameters, namely `Profiles_To_Add` and `Primary_Computerid`, have been introduced to facilitate this functionality.
-- To accommodate the storage of encrypted passwords, a new column has been added to the [pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849) table.
+- To accommodate the storage of encrypted passwords, a new column has been added to the [pvl_wifi_profiles](<../tables/pvl_wifi_profiles.md>) table.
 - Notably, the updated script will not function as intended unless executed with the `Set_Environment` user parameter set to `1` post-update.
-- Moreover, this update necessitates the removal of existing data within the [pvl_wifi_profiles](https://proval.itglue.com/DOC-5078775-12979849) table and the [Wi-Fi Profile - Audit [Script]](https://proval.itglue.com/DOC-5078775-12979850) dataview.
-- Client-Level and Location-Level EDFs `Primary ComputerID` and `Wifi Profiles To Add` are introduced. Setting both EDFs at either level will activate the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](https://proval.itglue.com/DOC-5078775-14020258) monitor set for the client or location respectively.
+- Moreover, this update necessitates the removal of existing data within the [pvl_wifi_profiles](<../tables/pvl_wifi_profiles.md>) table and the [Wi-Fi Profile - Audit [Script]](<../dataviews/WiFi Profile - Audit Script.md>) dataview.
+- Client-Level and Location-Level EDFs `Primary ComputerID` and `Wifi Profiles To Add` are introduced. Setting both EDFs at either level will activate the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](<../monitors/Add - Wifi Profiles.md>) monitor set for the client or location respectively.
 - Client-Level EDF `Safe Wifi Networks` is moved to the EDF section `Wifi Profiles` from `Security`.
 
 ## Sample Run
@@ -103,7 +103,7 @@ Location-Level EDFs can be used to override the Client-Level EDFs. Syntax used t
 
 | Name                               | Example      | Required | Description                                                                                                                                                                                                                                     |
 |------------------------------------|--------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Exclude From Wifi Profile Addition   | Check Box    | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](https://proval.itglue.com/DOC-5078775-14020258) monitor set detections.                     |
+| Exclude From Wifi Profile Addition   | Check Box    | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](<../monitors/Add - Wifi Profiles.md>) monitor set detections.                     |
 
 ![Computer-Level EDF](../../../static/img/GetRemoveAdd-Wifi-Profiles/image_10.png)
 
@@ -111,6 +111,7 @@ Location-Level EDFs can be used to override the Client-Level EDFs. Syntax used t
 
 - Script Log
 - Dataview
+
 
 
 

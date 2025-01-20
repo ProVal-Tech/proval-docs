@@ -14,9 +14,9 @@ This dataview will collectively show all required information about the PrintNig
 
 ## Dependencies
 
-- [CVE-2021-1675 - Set folder ACL (PrintNightmare)](https://proval.itglue.com/DOC-5078775-7798632)
-- [CVE-2021-1675 - Restore folder ACL Permission](https://proval.itglue.com/DOC-5078775-7836838)
-- [Point and Print Nightmare Check](https://proval.itglue.com/DOC-5078775-7854032)
+- [CVE-2021-1675 - Set folder ACL (PrintNightmare)](<../scripts/CVE-2021-1675 - Set folder ACL (PrintNightmare).md>)
+- [CVE-2021-1675 - Restore folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
+- [Point and Print Nightmare Check](<../scripts/Point and Print Nightmare Check.md>)
 
 ## Columns
 
@@ -30,6 +30,7 @@ This dataview will collectively show all required information about the PrintNig
 | Point And Print Status    | Point And Print Registry check         |
 | CVE-2021-34527 Patch      | CVE Patch install status               |
 | Mitigation Status         | It confirms whether mitigation applied or not. |
+
 
 
 

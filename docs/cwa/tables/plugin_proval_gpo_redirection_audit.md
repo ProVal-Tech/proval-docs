@@ -14,7 +14,7 @@ This table will store the data to be displayed in the Redirection-Audit Dataview
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Audit - GPO Redirection Settings](https://proval.itglue.com/DOC-5078775-11735434)
+[EPM - Data Collection - Script - Audit - GPO Redirection Settings](<../scripts/Audit - GPO Redirection Settings.md>)
 
 ## Tables
 
@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `@TableName@` (
 )
 COLLATE='utf8_general_ci';
 ```
+
 
 
 

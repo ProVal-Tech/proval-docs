@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the remote monitor is to detect the newly created/promoted domain admins and create a ticket. It uses the [EPM - User Management - Agnostic - Get-NewDomainAdmin](https://proval.itglue.com/DOC-5078775-13410720) agnostic script to perform the monitoring.
+The purpose of the remote monitor is to detect the newly created/promoted domain admins and create a ticket. It uses the [EPM - User Management - Agnostic - Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>) agnostic script to perform the monitoring.
 
 ## Details
 
@@ -26,7 +26,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -41,7 +41,7 @@ This search will create the remote monitor on a single domain controller of each
 ## Implementation
 
 Please follow the instructions provided in the implementation article to implement the solution:  
-[Implement - Remote Monitor - New Domain Admin](https://proval.itglue.com/DOC-5078775-13460543)
+[Implement - Remote Monitor - New Domain Admin](<./New Domain Admin.md>)
 
 ## Ticketing
 
@@ -57,6 +57,7 @@ New Domain Admin(s) Detected at %domain% for %clientname%.
 ![Example](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_4.png)
 
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
 
 
 

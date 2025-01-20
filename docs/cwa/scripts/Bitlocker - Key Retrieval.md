@@ -23,8 +23,8 @@ Time Saved by Automation: 5 Minutes
 - @plugin_proval_bitlocker (Table)
 - @Bitlocker Enabled (Role)
 - @Bitlocker TPM Enabled (Role)
-- [Bitlocker TPM Ready](https://proval.itglue.com/DOC-5078775-7970575)
-- [Windows - Bitlocker Eligibility](https://proval.itglue.com/DOC-5078775-7960717)
+- [Bitlocker TPM Ready](<../roles/Bitlocker TPM Ready.md>)
+- [Windows - Bitlocker Eligibility](<../dataviews/Windows - Bitlocker Eligibility.md>)
 
 ## Variables
 
@@ -43,6 +43,7 @@ Time Saved by Automation: 5 Minutes
 - Script log
 - Role
 - Dataview
+
 
 
 

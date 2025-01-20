@@ -17,14 +17,14 @@ The purpose of this solution is to pull the Windows License Status from the comp
 | Content                                                                                                    | Type          | Function                                                                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011) | Remote Monitor | This remote monitor Checks and Returns Windows License Status via CIMInstance. It will create ticket for the statuses other than Licensed.                                      |
-| [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)      | Script        | This will be used in the alert template `△ Custom - Ticket Creation Computer - Warning and Failed` and will create ticket for the statuses other than Licensed.                 |
+| [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>)      | Script        | This will be used in the alert template `△ Custom - Ticket Creation Computer - Warning and Failed` and will create ticket for the statuses other than Licensed.                 |
 | △ Custom - Ticket Creation Computer - Warning and Failed                                                    | Alert Template | To be applied to the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011)                            |
-| [EPM - Windows Configuration - Dataview - Windows License Status [Remote Monitor]](https://proval.itglue.com/DOC-5078775-15840982) | Dataview      | This will display the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011) |
+| [EPM - Windows Configuration - Dataview - Windows License Status [Remote Monitor]](<../cwa/dataviews/Windows License Status Remote Monitor.md>) | Dataview      | This will display the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011) |
 
 ## Implementation
 
 **1.** Import the following content using the ProSync Plugin:  
-- [Dataview - Windows License Status [Remote Monitor]](https://proval.itglue.com/DOC-5078775-15840982)  
+- [Dataview - Windows License Status [Remote Monitor]](<../cwa/dataviews/Windows License Status Remote Monitor.md>)  
 - Alert Template - `△ Custom - Ticket Creation Computer - Warning and Failed`  
 
 **2.** Import the following remote monitor using the instructions outlined within the document:  
@@ -37,6 +37,7 @@ The purpose of this solution is to pull the Windows License Status from the comp
 **4.** If ticketing is desired for when a machine has an issue with their Windows license: (The consultant should specify this)  
 - Apply the following alert template to the remote monitor:  
   - `△ Custom - Ticket Creation Computer - Warning and Failed`  
+
 
 
 

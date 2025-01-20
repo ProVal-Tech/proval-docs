@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-This table is used in the [SSL Certificate Audit Solution](https://proval.itglue.com/DOC-5078775-9256566) to gather data on SSL Certificates to be used for general Audit or active monitoring.
+This table is used in the [SSL Certificate Audit Solution](<../../solutions/Certificate Audit Solution.md>) to gather data on SSL Certificates to be used for general Audit or active monitoring.
 
 ## Dependencies
 
-[Link to EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568)
+[Link to EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
 
 ## Tables
 
@@ -34,6 +34,7 @@ This table is used in the [SSL Certificate Audit Solution](https://proval.itglue
 | CertAdded     | DATETIME                                  | When was the certificate added to the system                        |
 | Expiration    | DATETIME                                  | What is the expiration date of the SSL certificate                  |
 | DateUpdated   | DATETIME                                  | When did the script actually add the information into the DB       |
+
 
 
 

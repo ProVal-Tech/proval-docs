@@ -26,16 +26,17 @@ Due to this, results are not guaranteed, and if at all possible should always be
 
 ## Dependencies
 
-- [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](https://proval.itglue.com/DOC-5078775-9324848)
+- [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>)
 
 ## Process
 
-See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](https://proval.itglue.com/DOC-5078775-9324848) for process details.
+See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>) for process details.
 
 ## Output
 
 - Script log
 - Local file on computer
+
 
 
 

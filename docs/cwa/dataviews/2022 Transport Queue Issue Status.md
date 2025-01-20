@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-Displays agents where Email flow has been impacted and corrected by the script [RSM - Exchange - Script - Exchange - Reset Scan Engine Version](https://proval.itglue.com/DOC-5078775-9004743).
+Displays agents where Email flow has been impacted and corrected by the script [RSM - Exchange - Script - Exchange - Reset Scan Engine Version](<../scripts/Exchange - Reset Scan Engine Version.md>).
 
 Ref:  
 [https://techcommunity.microsoft.com/t5/exchange-team-blog/email-stuck-in-exchange-on-premises-transport-queues/ba-p/3049447](https://techcommunity.microsoft.com/t5/exchange-team-blog/email-stuck-in-exchange-on-premises-transport-queues/ba-p/3049447)
 
 ## Dependencies
 
-[RSM - Exchange - Script - Exchange - Reset Scan Engine Version](https://proval.itglue.com/DOC-5078775-9004743)
+[RSM - Exchange - Script - Exchange - Reset Scan Engine Version](<../scripts/Exchange - Reset Scan Engine Version.md>)
 
 ## Columns
 
@@ -29,3 +29,4 @@ Ref:
 | Operating System   | Operating system of the Exchange server               |
 | LastContact       | Last contact of server with RMM                       |
 | Email Status      | Script status return: fixed, not fixed or wasn't impacted |
+

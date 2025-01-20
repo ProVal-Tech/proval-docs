@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script is a variation of the [Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script, designed specifically for ticket management related to remote ping monitors. The key distinction of this script is that it excludes the addition of the computer's information to the ticket.
+This script is a variation of the [Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script, designed specifically for ticket management related to remote ping monitors. The key distinction of this script is that it excludes the addition of the computer's information to the ticket.
 
 The script automatically closes the ticket upon successful ping.
 
@@ -66,6 +66,7 @@ The script will generate the tickets utilizing the subject and message stored in
 ## Output
 
 - Ticket
+
 
 
 

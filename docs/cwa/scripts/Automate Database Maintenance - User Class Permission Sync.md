@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293). This script handles the user class permission for the clients: It requires the "UserClass_Enable_Default_Permission" system property value set to 1 to enable sync of userclass permissions from Default Client to all other clients.
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>). This script handles the user class permission for the clients: It requires the "UserClass_Enable_Default_Permission" system property value set to 1 to enable sync of userclass permissions from Default Client to all other clients.
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](https://proval.itglue.com/DOC-5078775-11637293).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
 
 ## Variables
 
@@ -37,6 +37,7 @@ This script is a function script called from [CWM - Automate - Script - Automate
 ## Output
 
 This script will add the logs to the log variable.
+
 
 
 

@@ -14,7 +14,7 @@ The purpose of this monitor is to detect the machines opted for offboarding. The
 
 ## Dependencies
 
-- [CWM - Automate - Script - Offboarding Wrapper](https://proval.itglue.com/DOC-5078775-15050093)
+- [CWM - Automate - Script - Offboarding Wrapper](<../scripts/Offboarding Wrapper.md>)
 
 - Select **`Offboard Client`** EDF to select the Whole client for offboarding  
   ![](../../../static/img/Offboarding/image_1.png)
@@ -32,6 +32,7 @@ All Operating Systems
 ## Alert Template
 
 - **`△ Custom - Execute Script - Offboarding Wrapper`**
+
 
 
 

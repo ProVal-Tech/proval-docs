@@ -38,7 +38,8 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Uninstall TeamViewer](https://proval.itglue.com/DOC-5078775-14007937)
+[Implement - Remote Monitor - Uninstall TeamViewer](<./Uninstall TeamViewer.md>)
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17312581) and used in the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).
+The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>) and used in the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).
 
 ## Dependencies
 
-- [Dynamic Groups - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17312581)
+- [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>)
 - [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286)
 
 ## Details
@@ -46,6 +46,7 @@ The custom fields described here are used in the creation of [Dynamic Groups - B
    Once the custom fields are created, please validate them by searching them in the search input text field option provided in the custom fields:  
    ![Search Custom Fields](../../../static/img/ClearAudit-Browsers-Saved-Password/image_4.png)  
    It will show you the custom fields created by you.
+
 
 
 

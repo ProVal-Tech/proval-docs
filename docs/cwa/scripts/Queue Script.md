@@ -18,9 +18,9 @@ This script will schedule a script to run on a computer the next time it checks 
 
 ## Dependencies
 
-- [CWM - Automate - Solution - Queue Script Next Checkin](https://proval.itglue.com/DOC-5078775-10606186)
-- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](https://proval.itglue.com/DOC-5078775-10606190)
-- [CWM - Automate - Script - Run Queued Scripts](https://proval.itglue.com/DOC-5078775-10606200)
+- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
+- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>)
+- [CWM - Automate - Script - Run Queued Scripts](<./Run Queued Scripts.md>)
 
 ## Variables
 
@@ -67,6 +67,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

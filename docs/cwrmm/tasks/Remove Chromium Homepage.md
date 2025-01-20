@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Removes homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave). CW RMM implementation of [Remove-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372205)
+Removes homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave). CW RMM implementation of [Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>)
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Removes homepage settings from popular Chromium-based browsers (Edge, Chrome, an
 
 ## Dependencies
 
-[SWM - Software Configuration - Remove-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372205)
+[SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>)
 
 ## User Parameters
 
@@ -190,6 +190,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script log  
 ![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  
+
 
 
 

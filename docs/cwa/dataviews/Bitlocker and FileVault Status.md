@@ -14,8 +14,8 @@ This dataview will show the encryption status of endpoints in Automate. Specific
 
 ## Dependencies
 
-- [Bitlocker Enabled - System Drive](https://proval.itglue.com/DOC-5078775-7920473) (Role)
-- [OS X FileVault](https://proval.itglue.com/DOC-5078775-8012797) (Role)
+- [Bitlocker Enabled - System Drive](<../roles/Bitlocker Enabled - System Drive.md>) (Role)
+- [OS X FileVault](<../roles/OS X FileVault.md>) (Role)
 
 ## Columns
 
@@ -29,6 +29,7 @@ This dataview will show the encryption status of endpoints in Automate. Specific
 | Bitlocker Status - System Drive  | The Bitlocker status of the system drive for Windows devices                                    |
 | FileVault Status                 | The FileVault status for Mac devices                                                             |
 | Last logon User                  | The last user that logged into the device based on information gathered by Automate             |
+
 
 
 

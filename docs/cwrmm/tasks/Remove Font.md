@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Remove the installed font from the Windows machines. Accepts the '*' wildcard to remove multiple matching fonts. CW RMM implementation of the agnostic script [Remove-Font](https://proval.itglue.com/DOC-5078775-10371921).
+Remove the installed font from the Windows machines. Accepts the '*' wildcard to remove multiple matching fonts. CW RMM implementation of the agnostic script [Remove-Font](<../../powershell/Remove-Font.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Remove the installed font from the Windows machines. Accepts the '*' wildcard to
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Script - Remove-Font](https://proval.itglue.com/DOC-5078775-10371921)
+[SWM - Software Uninstall - Agnostic - Script - Remove-Font](<../../powershell/Remove-Font.md>)
 
 ## User Parameters
 
@@ -173,6 +173,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

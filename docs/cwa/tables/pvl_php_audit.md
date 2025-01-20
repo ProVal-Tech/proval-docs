@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the data collected by the [Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245023) script.
+Stores the data collected by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Locate PHP.exe](https://proval.itglue.com/DOC-5078775-16245023)
+[EPM - Data Collection - Script - Locate PHP.exe](<../scripts/Locate PHP.exe.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ Stores the data collected by the [Locate PHP.exe](https://proval.itglue.com/DOC-
 | LastWriteTime   | datetime            | File Modification date          |
 | Attributes      | varchar             | File's attributes               |
 | ScriptRunTime   | datetime            | Data Collection Time            |
+
 
 
 

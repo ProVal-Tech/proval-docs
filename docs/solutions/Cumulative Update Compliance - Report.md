@@ -18,48 +18,49 @@ The purpose of the dataviews included in this solution is to present the cumulat
 
 | Content                                                                 | Type        | Function                                           |
 |-------------------------------------------------------------------------|-------------|----------------------------------------------------|
-| [Script - MySQL - View - Create (pvl_cu_compliance)](https://proval.itglue.com/DOC-5078775-16192865) | Script      | Imports the associated views.                       |
-| [View - pvl_cu_compliance](https://proval.itglue.com/DOC-5078775-16192886) | Custom View | Stores and execute the SQL query utilized by the 'CU Compliance Metrics' dataview. |
-| [View - pvl_cu_compliance_clients](https://proval.itglue.com/DOC-5078775-16192884) | Custom View | Stores and execute the SQL query utilized by the 'CU Compliance Metrics - Clients' dataview. |
-| [Dataview - CU Compliance Metrics](https://proval.itglue.com/DOC-5078775-16192871) | Dataview    | Display the global data.                           |
-| [Dataview - CU Compliance Metrics - Clients](https://proval.itglue.com/DOC-5078775-16192877) | Dataview    | Display the client filtered data.                  |
+| [Script - MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>) | Script      | Imports the associated views.                       |
+| [View - pvl_cu_compliance](<../cwa/views/pvl_cu_compliance.md>) | Custom View | Stores and execute the SQL query utilized by the 'CU Compliance Metrics' dataview. |
+| [View - pvl_cu_compliance_clients](<../cwa/views/pvl_cu_compliance_clients.md>) | Custom View | Stores and execute the SQL query utilized by the 'CU Compliance Metrics - Clients' dataview. |
+| [Dataview - CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>) | Dataview    | Display the global data.                           |
+| [Dataview - CU Compliance Metrics - Clients](<../cwa/dataviews/CU Compliance Metrics - Clients.md>) | Dataview    | Display the client filtered data.                  |
 
 ### Dependencies
 
 | Content                                                                 | Type        | Function                                           |
 |-------------------------------------------------------------------------|-------------|----------------------------------------------------|
-| [Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) | Custom Table | Stored the support date of different version of Operating System |
-| [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131) | Script      | Creates the 'Plugin_ProVal_Windows_OS_Support' table. |
+| [Custom Table - plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) | Custom Table | Stored the support date of different version of Operating System |
+| [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) | Script      | Creates the 'Plugin_ProVal_Windows_OS_Support' table. |
 | [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) | Solution    | Fetch and store the information of latest installed Cumulative Update on Windows 10 and 11 computers. |
 
 ## Implementation
 
 1. Import the following scripts from the `ProSync` plugin:
-   - [MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
-   - [MySQL - View - Create (pvl_cu_compliance)](https://proval.itglue.com/DOC-5078775-16192865)
+   - [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
+   - [MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>)
 
 2. Import the following dataviews from the `ProSync` plugin:
-   - [CU Compliance Metrics](https://proval.itglue.com/DOC-5078775-16192871)
-   - [CU Compliance Metrics - Clients](https://proval.itglue.com/DOC-5078775-16192877)
+   - [CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>)
+   - [CU Compliance Metrics - Clients](<../cwa/dataviews/CU Compliance Metrics - Clients.md>)
 
 3. Follow the implementation step provided in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) solution's document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
 
 4. Reload the System Cache  
    ![Reload the System Cache](../../static/img/Cumulative-Update-Compliance---Report/image_1.png)
 
-5. Execute the [MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131) script against any computer to create/update the [plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690) custom table if it is not available in the environment.
+5. Execute the [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) script against any computer to create/update the [plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) custom table if it is not available in the environment.
 
-6. Execute the [MySQL - View - Create (pvl_cu_compliance)](https://proval.itglue.com/DOC-5078775-16192865) script against any computer to create/update the following views:
-   - [pvl_cu_compliance](https://proval.itglue.com/DOC-5078775-16192886)
-   - [pvl_cu_compliance_clients](https://proval.itglue.com/DOC-5078775-16192884)
+6. Execute the [MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>) script against any computer to create/update the following views:
+   - [pvl_cu_compliance](<../cwa/views/pvl_cu_compliance.md>)
+   - [pvl_cu_compliance_clients](<../cwa/views/pvl_cu_compliance_clients.md>)
 
 7. Validate the presence of data in the following dataviews:
-   - [CU Compliance Metrics](https://proval.itglue.com/DOC-5078775-16192871)
-   - [Patching and CU compliance Metrics - Clients](https://proval.itglue.com/DOC-5078775-15390684)
+   - [CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>)
+   - [Patching and CU compliance Metrics - Clients](<../cwa/dataviews/Patching and CU compliance Metrics - Clients.md>)
 
 8. Remove the following scripts:
-   - [MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
-   - [MySQL - View - Create (pvl_cu_compliance)](https://proval.itglue.com/DOC-5078775-16192865)
+   - [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
+   - [MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>)
+
 
 
 

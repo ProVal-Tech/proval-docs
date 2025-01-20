@@ -14,7 +14,7 @@ Displays the list of audited group policy objects from the script @Group Policy 
 
 ## Dependencies
 
-- [RSM - Active Directory - Script - Group Policy - Audit](https://proval.itglue.com/DOC-5078775-15193954)
+- [RSM - Active Directory - Script - Group Policy - Audit](<../scripts/Group Policy - Audit.md>)
 - [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
 
 ## Table
@@ -33,6 +33,7 @@ Displays the list of audited group policy objects from the script @Group Policy 
 | ModifiedTime     | DATETIME  | Last time this GPO was modified.                                |
 | ReadTime         | DATETIME  | Last time this GPO was read.                                    |
 | LinksTo          | TEXT      | Comma-separated list of OUs that this GPO links to.            |
+
 
 
 

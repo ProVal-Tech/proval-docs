@@ -10,18 +10,19 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of this monitor set is to execute the [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682) script once per week against all the machines with the Managed Patching Policy. It will execute the script against 200 online machines at a time, and will execute this action every 15 minutes. The purpose of this is to reduce load on the script engine in larger environments.
+The purpose of this monitor set is to execute the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script once per week against all the machines with the Managed Patching Policy. It will execute the script against 200 online machines at a time, and will execute this action every 15 minutes. The purpose of this is to reduce load on the script engine in larger environments.
 
 Alert Template: ~Fetch Windows Update Report
 
 ## Dependencies
 
-- [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682)
+- [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
 - [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
 
 ## Target
 
 Limited to the Windows Machines with Managed Patch Policy via SQL query.
+
 
 
 

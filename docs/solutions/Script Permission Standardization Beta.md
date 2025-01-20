@@ -18,14 +18,14 @@ Set the standard permissions to the stock scripts in ConnectWise Automate.
 |-------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
 | [Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760857)    | Script      | Set the permissions defined in the custom table to the Built-In scripts in ConnectWise Automate.      |
 | [Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760859)    | Dataview    | Displays the user classes which will be assigned to the stock scripts after running the script.       |
-| [pvl_scripts_permissions](https://proval.itglue.com/DOC-5078775-16760865)              | Custom Table| Stores the GUID and the set of user class(es) for built-In scripts.                                   |
+| [pvl_scripts_permissions](<../cwa/tables/pvl_scripts_permissions.md>)              | Custom Table| Stores the GUID and the set of user class(es) for built-In scripts.                                   |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
    - [Script - Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760857)
    - [Dataview - Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760859)
-   - [Custom Table - pvl_scripts_permissions](https://proval.itglue.com/DOC-5078775-16760865)
+   - [Custom Table - pvl_scripts_permissions](<../cwa/tables/pvl_scripts_permissions.md>)
 
 2. Reload the system cache:
    ![Reload Cache](../../static/img/Script-Permission-Standardization-Beta/image_1.png)
@@ -46,6 +46,7 @@ Set the standard permissions to the stock scripts in ConnectWise Automate.
 
 **Q:** Can we use the solution to set permission for any script?  
 **A:** The solution allows setting permissions only for the scripts listed in the [Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760859) dataview, and these permissions cannot be customized. However, the user classes Tier 1 and Tier 2 can be defined in the system properties.
+
 
 
 

@@ -18,7 +18,7 @@ This monitor is dynamically generated from the script [Volume Free Space - Monit
 **Suggested Alert Style**: N/A  
 **Suggested Alert Template**: Default - Do Nothing  
 
-This monitor has no properties and will only run the script [Get-VolumeThresholds](https://proval.itglue.com/DOC-5078775-9647494) to generate data points.
+This monitor has no properties and will only run the script [Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>) to generate data points.
 
 ## Dependencies
 
@@ -27,6 +27,7 @@ N/A
 ## Target
 
 Windows Machines - Should be run on all Windows machines
+
 
 
 

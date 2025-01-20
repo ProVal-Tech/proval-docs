@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Creates the [plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5078775-8988282) view.
+Creates the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
 
 ## Sample Run
 
@@ -20,11 +20,12 @@ Creates the [plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5
 
 Step 1: Drop View if it exists.  
 Step 2: Create View if it exists.  
-Step 3: Calls the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](https://proval.itglue.com/DOC-5078775-8056027) script.
+Step 3: Calls the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<./MySQL - Permission - Set Custom Table Permissions.md>) script.
 
 ## Output
 
-[plugin_proval_auto_approval_status](https://proval.itglue.com/DOC-5078775-8988282)
+[plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>)
+
 
 
 

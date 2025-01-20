@@ -20,7 +20,7 @@ File Hash (MD5): `7882C5890DCDFA7CE81DD62AB093A1F8`
 
 ## Sample Run (Set Environment)
 
-Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](https://proval.itglue.com/DOC-5078775-16980557) internal monitor.
+Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor.
 
 ![Sample Run](../../../static/img/Power-Plan---SetCreate/image_1.png)
 
@@ -126,7 +126,7 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 **Note:**
 
 - In the example demonstrated above, the `ProVal High Performance` power plan will be set and enabled on all workstations of the `Development` client.
-- [PowerPlan Automation](https://proval.itglue.com/DOC-5078775-16980557) internal monitor should be running for the Automation to work.
+- [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor should be running for the Automation to work.
 
 ## PowerPlanSettingsTemplate.CSV
 
@@ -154,9 +154,9 @@ Here's a breakdown of the columns in the CSV file:
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](https://proval.itglue.com/DOC-5078775-15053771)
+- [EPM - Data Collection - Script - Power Plan - Audit [DV]](<./Power Plan - Audit DV.md>)
 - [EPM - Windows Configuration - Agnostic - Set-PowerPlan](https://proval.itglue.com/DOC-5078775-14903184)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
 
@@ -172,7 +172,7 @@ Here's a breakdown of the columns in the CSV file:
 | PowerPlan         | Test Power Plan                                                          | True             | Name of the Power Plan to modify or create.             |
 | Setting           | @\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}} | Partially        | Hash Table of the Power Plan settings to Set.           |
 | CSVPath           | [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv) (if the CSV file of the settings is placed at a downloadable location) OR Test_Power_Plan (if the CSV file of the settings is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory) | Partially        | Download URL of the CSV file if the file is placed at a downloadable location. OR Name of the CSV file if the file is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory. |
-| Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](https://proval.itglue.com/DOC-5078775-16980557) internal monitor. |
+| Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor. |
 
 ## Client-Level EDF
 
@@ -194,6 +194,7 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
+
 
 
 

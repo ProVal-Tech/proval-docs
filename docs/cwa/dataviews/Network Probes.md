@@ -25,8 +25,8 @@ Information from the following tabs of a Network probe setting page is displayed
 
 ## Dependencies
 
-- [CWM - Automate - Custom View - plugin_proval_probeconfig](https://proval.itglue.com/DOC-5078775-8288022)
-- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](https://proval.itglue.com/DOC-5078775-8288023)
+- [CWM - Automate - Custom View - plugin_proval_probeconfig](<../views/plugin_proval_probeconfig.md>)
+- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](<../scripts/MySQL - View - Create (plugin_proval_probeconfig).md>)
 
 ## Columns
 
@@ -53,6 +53,7 @@ Information from the following tabs of a Network probe setting page is displayed
 | Updated By                      | Last user to make any changes to the probe                                                     |
 | Creation Date                   | Date of creation                                                                                 |
 | Last Update Date                | Last Update date for the network probe                                                          |
+
 
 
 

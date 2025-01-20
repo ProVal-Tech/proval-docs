@@ -14,8 +14,8 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 ## Dependencies
 
-- [Import - Remote Monitor - NTLMv1.1 Detection](https://proval.itglue.com/DOC-5078775-14448845)
-- [EPM - Security - Script - Disable NTLMv1.1](https://proval.itglue.com/DOC-5078775-14448793)
+- [Import - Remote Monitor - NTLMv1.1 Detection](<../monitors/NTLMv1.1 Detection.md>)
+- [EPM - Security - Script - Disable NTLMv1.1](<../scripts/Disable NTLMv1.1.md>)
 
 ## Columns
 
@@ -37,6 +37,7 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 - Apply and import the remote monitors to the Managed Windows Computers group.
 - Import the dataview.
+
 
 
 

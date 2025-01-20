@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the internal monitor is to detect the concerned servers where the [Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568) script has not executed in the past 7 days.
+The purpose of the internal monitor is to detect the concerned servers where the [Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script has not executed in the past 7 days.
 
 ## Dependencies
 
-[EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](https://proval.itglue.com/DOC-5078775-9256568)
+[EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
 
 ## Target
 
@@ -31,6 +31,7 @@ The internal monitor should be explicitly limited to the following groups:
 ## Alert Template
 
 **Name:**  △ Custom - Local Machine Certificate Audit
+
 
 
 

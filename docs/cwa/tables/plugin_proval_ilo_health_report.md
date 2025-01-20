@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Purpose
 
-This table stores health information about HP iLO devices. It is filled by the script [HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559) and is used by the dataview [HP iLO Health Report](https://proval.itglue.com/DOC-5078775-10072561).
+This table stores health information about HP iLO devices. It is filled by the script [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) and is used by the dataview [HP iLO Health Report](<../dataviews/HP iLO Health Report.md>).
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559)
-- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](https://proval.itglue.com/DOC-5078775-10072511)
+- [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
+- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
 
 ## Tables
 
@@ -50,6 +50,7 @@ This table stores health information about HP iLO devices. It is filled by the s
 | StatusInfo                   | VARCHAR  | Additional information about the overall iLO status.  |
 | LastRun                      | DATETIME | The last time the Script was run.                     |
 | Computerid                   | INT      | Computerid                                           |
+
 
 
 

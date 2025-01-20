@@ -12,17 +12,18 @@ unlisted: false
 
 This internal monitor detects the online Windows agent where the SonicWall NetExtender is installed for the upgrade. It depends on the client-based EDF 'SonicWall NetExtender Deployment' to be checked for the SonicWall NetExtender Install/Update. It also depends on the location-based and computer-based EDF 'SonicWall NetExtender Exclude' to exclude particular locations/agents from the deployed clients.
 
-This monitor is also set up to grab the latest version of SonicWall NetExtender from the system property created from [SonicWall NetExtender - Latest Version [Winget]](https://proval.itglue.com/DOC-5078775-13816835). This monitor should be paired with the other internal monitor [SonicWall NetExtender - Latest Version Detection](https://proval.itglue.com/DOC-5078775-13813876).
+This monitor is also set up to grab the latest version of SonicWall NetExtender from the system property created from [SonicWall NetExtender - Latest Version [Winget]](<../scripts/CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget.md>). This monitor should be paired with the other internal monitor [SonicWall NetExtender - Latest Version Detection](<./SonicWall NetExtender - Latest Version Detection.md>).
 
 ## Dependencies
 
-- [SWM - Software - Install/Update Sonicwall NetExtender [Winget]](https://proval.itglue.com/DOC-5078775-8058617)
-- [SonicWall NetExtender - Latest Version [Winget]](https://proval.itglue.com/DOC-5078775-13816835)
-- [SonicWall NetExtender - Latest Version Detection](https://proval.itglue.com/DOC-5078775-13813876)
+- [SWM - Software - Install/Update Sonicwall NetExtender [Winget]](<../scripts/SWM - Software - InstallUpdate Sonicwall NetExtender Winget.md>)
+- [SonicWall NetExtender - Latest Version [Winget]](<../scripts/CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget.md>)
+- [SonicWall NetExtender - Latest Version Detection](<./SonicWall NetExtender - Latest Version Detection.md>)
 
 ## Target
 
 Global
+
 
 
 

@@ -38,13 +38,14 @@ The script is attached to the "~Custom - Ticket Creation ESXi Hosts" alert templ
 
 ## Process
 
-The script is an exact copy of the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script.  
+The script is an exact copy of the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script.  
 The only difference is that this script will write the ESXi hosts' information to the ticket instead of the Computer's.
 
 ## Output
 
 - Script Log
 - Ticket
+
 
 
 

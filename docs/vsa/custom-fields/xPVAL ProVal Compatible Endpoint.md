@@ -14,13 +14,14 @@ Custom Field containing either 'Compatible' or the reason for incompatibility
 
 ## Dependencies
 
-All content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](https://proval.itglue.com/DOC-5078775-11409315)
+All content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>)
 
 ## Details
 
 | Field Name                               | Type of Field (Machine or Organization) | Description / Syntax:                                                                                                   |
 |------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | xPVAL ProVal Compatible Endpoint         | Machine                                 | 'Compatible' OR  'Windows OS Out of Date.' OR 'Powershell Version Out of Date.' OR 'MacOS Out of Date.' OR 'Unable to get Data from the endpoint'  |
+
 
 
 

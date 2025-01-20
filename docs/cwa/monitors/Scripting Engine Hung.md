@@ -18,7 +18,7 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 ## Dependencies
 
-[Scripting Engine Hung - Troubleshooting](https://proval.itglue.com/DOC-5078775-16981877)  
+[Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)  
 **Alert Template:** `△ Custom - Email RAWSQL Monitor set results to ProVal`
 
 ## Target
@@ -44,7 +44,8 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 ## Troubleshooting
 
 Please follow the below article to perform the troubleshooting if this issue is raised.  
-[Scripting Engine Hung - Troubleshooting](https://proval.itglue.com/DOC-5078775-16981877)  
+[Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)  
+
 
 
 

@@ -36,7 +36,8 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Disable Netbios on Network Interfaces](https://proval.itglue.com/DOC-5078775-13837769)
+[Implement - Remote Monitor - Disable Netbios on Network Interfaces](<./Disable Netbios on Network Interfaces.md>)
+
 
 
 

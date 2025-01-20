@@ -17,7 +17,7 @@ Sample data:
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](https://proval.itglue.com/DOC-5078775-11867748)
+[CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](<../scripts/MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status.md>)
 
 ## Tables
 
@@ -29,6 +29,7 @@ Sample data:
 | os            | varchar(11) | Operating System (Workstation | Server)                                                      |
 | category      | varchar(18) | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)       |
 | Machine Count | int(5)    | Number of machines falling under the concerned category for the client.                      |
+
 
 
 

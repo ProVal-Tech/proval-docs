@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Updates all installed VS versions automatically. CW RMM implementation of the agnostic script [Update-VisualStudio](https://proval.itglue.com/DOC-5078775-16390578).
+Updates all installed VS versions automatically. CW RMM implementation of the agnostic script [Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>).
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ Updates all installed VS versions automatically. CW RMM implementation of the ag
 
 ## Dependencies
 
-[SWM - Software Update - Agnostic - Update-VisualStudio](https://proval.itglue.com/DOC-5078775-16390578)
+[SWM - Software Update - Agnostic - Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>)
 
 ## Task Creation
 
@@ -135,6 +135,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

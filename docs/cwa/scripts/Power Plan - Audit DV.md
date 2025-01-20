@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Get-PowerPlan](https://proval.itglue.com/DOC-5078775-14439244) to gather data and store it in the [EPM - Data Collection - Custom Table - pvl_powerplan_audit](https://proval.itglue.com/DOC-5078775-15054015) custom table. The data collected is subsequently displayed using the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](https://proval.itglue.com/DOC-5078775-15053779) dataview.
+This is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Get-PowerPlan](https://proval.itglue.com/DOC-5078775-14439244) to gather data and store it in the [EPM - Data Collection - Custom Table - pvl_powerplan_audit](<../tables/pvl_powerplan_audit.md>) custom table. The data collected is subsequently displayed using the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](<../dataviews/Power Plan - Audit Script.md>) dataview.
 
 File Path  : C:/ProgramData/_Automation/script/Get-PowerPlan/Get-PowerPlan.ps1  
 File Hash (Sha256) : DDE3ACC4A91AB8C7E8971A673AC07B8F4B3B34FA8DAD5849E156C5E6A80DFDF8  
@@ -27,8 +27,8 @@ File Hash (MD5)    : 3AFF43D2532BA4AA1D6DB604F613C8EE
 ## Dependencies
 
 - [EPM - Data Collection - Agnostic - Get-PowerPlan](https://proval.itglue.com/DOC-5078775-14439244)  
-- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](https://proval.itglue.com/DOC-5078775-15053780)  
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)  
+- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](<../monitors/Execute Script - Power Plan - Audit.md>)  
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)  
 
 ## Variables
 
@@ -44,6 +44,7 @@ File Hash (MD5)    : 3AFF43D2532BA4AA1D6DB604F613C8EE
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

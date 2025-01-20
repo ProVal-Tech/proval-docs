@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Superseded by [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496)  
+Superseded by [EPM - Accounts - Script - User Profile - Get Information](<./User Profile - Get Information.md>)  
 
 This script looks for user profile information at the machine level.  
 It provides information about whether a user is local/domain, admin or not, password set or not, profile size, last logon, and the timestamp of the audit.  
@@ -25,7 +25,7 @@ Time Saved by Automation: 15 Minutes
 
 - @Windows – Local Account Audit (script)
 - Requires Windows OS
-- [custom_proval_computer_accounts](https://proval.itglue.com/DOC-5078775-7966268)
+- [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>)
 
 ## Variables
 
@@ -34,7 +34,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Process
 
-1. This script creates the [custom_proval_computer_accounts](https://proval.itglue.com/DOC-5078775-7966268) table if it doesn't exist
+1. This script creates the [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>) table if it doesn't exist
 2. Runs a PowerShell script to gather the list of users, properties and sizes
 3. Logs the output in Automate's script logs
 4. Trims the PowerShell output via SQL and does a RegEx to verify data
@@ -44,8 +44,9 @@ Time Saved by Automation: 15 Minutes
 ## Output
 
 - Script log
-- [custom_proval_computer_accounts](https://proval.itglue.com/DOC-5078775-7966268)
+- [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>)
 - @Windows – Local Account Audit (Dataview)
+
 
 
 

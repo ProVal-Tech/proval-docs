@@ -14,8 +14,8 @@ The table stores the scheduled task data.
 
 ## Dependencies
 
-- [Scheduled Task Audit](https://proval.itglue.com/DOC-5078775-10923268)
-- [Scheduled Task Audit](https://proval.itglue.com/DOC-5078775-10923269)
+- [Scheduled Task Audit](<./Scheduled Task Audit.md>)
+- [Scheduled Task Audit](<./Scheduled Task Audit.md>)
 
 ## Tables
 
@@ -80,6 +80,7 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   CONSTRAINT `plugin_proval_scheduled_tasks_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
+
 
 
 

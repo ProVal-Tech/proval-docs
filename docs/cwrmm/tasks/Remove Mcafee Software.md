@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Removes all McAfee products from an endpoint. CW RMM implementation of the agnostic script [Remove-McAfeeSoftware](https://proval.itglue.com/DOC-5078775-11517603).
+Removes all McAfee products from an endpoint. CW RMM implementation of the agnostic script [Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>).
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ Removes all McAfee products from an endpoint. CW RMM implementation of the agnos
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](https://proval.itglue.com/DOC-5078775-11517603)
+[SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>)
 
 ## Task Creation
 
@@ -124,6 +124,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

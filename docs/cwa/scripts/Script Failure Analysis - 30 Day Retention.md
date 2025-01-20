@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of this script is to create the [pvl_Script_Assesment](https://proval.itglue.com/DOC-5078775-16804952) table. Populate data into it and remove any data older than 30 days from the table.
+The purpose of this script is to create the [pvl_Script_Assesment](<../tables/pvl_Script_Assesment.md>) table. Populate data into it and remove any data older than 30 days from the table.
 
 ## Update Notice: 29-November-2024
 
@@ -28,6 +28,7 @@ The purpose of this script is to create the [pvl_Script_Assesment](https://prova
 
 Schedule the script to run once per day sometimes around midnight.  
 ![Sample Run](../../../static/img/Script-Failure-Analysis---30-Day-Retention/image_1.png)
+
 
 
 

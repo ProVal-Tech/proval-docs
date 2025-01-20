@@ -14,7 +14,7 @@ The table is built to store the complete Windows Server Backup data
 
 ## Dependencies
 
-[Windows Server Backup Audit](https://proval.itglue.com/DOC-5078775-12941262)
+[Windows Server Backup Audit](<../dataviews/Windows Server Backup Audit.md>)
 
 ## Tables
 
@@ -38,6 +38,7 @@ The table is built to store the complete Windows Server Backup data
 | SystemState Backup                         | VARCHAR  | It contains the critical system components, including the registry, Active Directory, and system files required for system recovery |
 | Overwrite Old Format VHD                   | VARCHAR  | If enabled the old VHD files will be overwritten during subsequent backups                             |
 | ScriptRanDate                              | DATETIME | Script last run time                                                                                   |
+
 
 
 

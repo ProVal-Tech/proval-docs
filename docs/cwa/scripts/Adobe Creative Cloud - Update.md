@@ -24,7 +24,7 @@ Time Saved by Automation: 10 Minutes
 
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.
 
-- [Update-AdobeCC](https://proval.itglue.com/DOC-5078775-7667368)
+- [Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
 
 ## Variables
 
@@ -36,12 +36,13 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 ## Process
 
-[Update-AdobeCC](https://proval.itglue.com/DOC-5078775-7667368)
+[Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
 
 ## Output
 
 - Script log
 - Local log files
+
 
 
 

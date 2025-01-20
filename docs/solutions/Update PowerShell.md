@@ -16,15 +16,15 @@ The purpose of the solution is to update and audit the PowerShell version for th
 
 | Content                                                                                     | Type          | Function                                                                                                         |
 |---------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------|
-| [Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872)                 | Role          | Detect the current PowerShell version of the machine.                                                          |
+| [Dynamic PowerShell Role](<../cwa/roles/Dynamic PowerShell Role.md>)                 | Role          | Detect the current PowerShell version of the machine.                                                          |
 | [ProVal - Production - PowerShell Out of Date](https://proval.itglue.com/5078775/docs/11623739) | Internal Monitor | The monitor set will detect the windows machines where PowerShell Version is older than 5.0.                    |
-| [PowerShell Version Audit [Role]](https://proval.itglue.com/5078775/docs/10923267)       | Dataview      | This dataview collects the information of PowerShell Version based on [Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872). |
+| [PowerShell Version Audit [Role]](https://proval.itglue.com/5078775/docs/10923267)       | Dataview      | This dataview collects the information of PowerShell Version based on [Dynamic PowerShell Role](<../cwa/roles/Dynamic PowerShell Role.md>). |
 | [Update PowerShell](https://proval.itglue.com/5078775/docs/11313612)                     | Script        | Updates PowerShell Desktop to the latest version.                                                               |
 | △ Custom - Autofix - PowerShell Out of Date                                                | Alert Template | Execute the [Update PowerShell](https://proval.itglue.com/5078775/docs/11313612) script against the machines detected by [ProVal - Production - PowerShell Out of Date](https://proval.itglue.com/5078775/docs/11623739) monitor set. |
 
 ## Implementation
 
-Step 1: Import the [Dynamic PowerShell Role](https://proval.itglue.com/DOC-5078775-10926872) Role.
+Step 1: Import the [Dynamic PowerShell Role](<../cwa/roles/Dynamic PowerShell Role.md>) Role.
 
 Step 2: Execute Update Config command against All agents.
 
@@ -65,6 +65,7 @@ This Script Will not update if any of the following Conditions are true:
 3. Target OS is Windows 7 or Server 2008R2 but not SP2, because SP2 must be installed to install PowerShell V5.
 4. Target OS is Windows 8, because PowerShell V5 is not applicable to this operating system.
 5. Target OS is Windows 7 or Server 2008R2 SP2 but missing .NET Framework 4.5.2 or greater, because .NET 4.5.2 is required.
+
 
 
 

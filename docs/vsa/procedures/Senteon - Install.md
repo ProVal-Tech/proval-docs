@@ -16,14 +16,14 @@ Downloads and runs the installer for Senteon Agent on the endpoint. Updates the 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [cPVAL Senteon Installed](https://proval.itglue.com/DOC-5078775-16540467) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint or not. |
-| [Senteon_Org](https://proval.itglue.com/DOC-5078775-16540933) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's Organization. |
-| [Senteon_Tenant](https://proval.itglue.com/DOC-5078775-16541049) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to. |
-| [Senteon_Reg_Code](https://proval.itglue.com/DOC-5078775-16541285) | Managed Variable | This managed variable is used to store the Senteon registration code of the Tenant the partner wishes to register the agent/endpoint to. |
+| [cPVAL Senteon Installed](<../../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint or not. |
+| [Senteon_Org](<../variables/Senteon_Org.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's Organization. |
+| [Senteon_Tenant](<../variables/Senteon_Tenant.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to. |
+| [Senteon_Reg_Code](<../variables/Senteon_Reg_Code.md>) | Managed Variable | This managed variable is used to store the Senteon registration code of the Tenant the partner wishes to register the agent/endpoint to. |
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](https://proval.itglue.com/DOC-5078775-16541168)
+[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
 
 ## Implementation
 
@@ -43,6 +43,7 @@ Successful Install
 
 Existing Install  
 ![Image](../../../static/img/Senteon---Install/image_4.png)  
+
 
 
 

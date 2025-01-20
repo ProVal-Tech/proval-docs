@@ -14,11 +14,11 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Enable Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835788)
-- [CW RMM - Custom Field - Site - Exclude Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835797)
-- [CW RMM - Custom Field - Endpoint - Exclude Windows 11 Installation](https://proval.itglue.com/DOC-5078775-15835791)
-- [CW RMM - Custom Field - Endpoint - Windows 11 Compatible](https://proval.itglue.com/DOC-5078775-15835398)
-- [CW RMM - Task - Windows 11 Compatibility Validation](https://proval.itglue.com/DOC-5078775-15835244)
+- [CW RMM - Custom Field - Company - Enable Windows 11 Installation](<../custom-fields/Company - Enable Windows 11 Installation.md>)
+- [CW RMM - Custom Field - Site - Exclude Windows 11 Installation](<../custom-fields/Site - Exclude Windows 11 Installation.md>)
+- [CW RMM - Custom Field - Endpoint - Exclude Windows 11 Installation](<../custom-fields/Endpoint - Exclude Windows 11 Installation.md>)
+- [CW RMM - Custom Field - Endpoint - Windows 11 Compatible](<../custom-fields/Endpoint - Windows 11 Compatible.md>)
+- [CW RMM - Task - Windows 11 Compatibility Validation](<../tasks/Windows 11 Compatibility Validation.md>)
 
 ## Group Creation
 
@@ -97,6 +97,7 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
 
 ![Completed Group 1](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_23.png)  
 ![Completed Group 2](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_24.png)
+
 
 
 

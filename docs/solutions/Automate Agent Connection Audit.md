@@ -16,22 +16,22 @@ The solution is intended to monitor and display the duration machines were onlin
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745) | Script | Creates custom tables and keeps the [pvl_automate_connection_audit_daily](https://proval.itglue.com/DOC-5078775-18178747) table updated. |
-| [Update Table - pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178743) | Internal Monitor | Keeps the [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) table updated. |
+| [Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745) | Script | Creates custom tables and keeps the [pvl_automate_connection_audit_daily](<../cwa/tables/pvl_automate_connection_audit_daily.md>) table updated. |
+| [Update Table - pvl_automate_connection_audit](<../cwa/monitors/Update Table - pvl_automate_connection_audit.md>) | Internal Monitor | Keeps the [pvl_automate_connection_audit](<../cwa/tables/pvl_automate_connection_audit.md>) table updated. |
 | [Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178742) | Dataview | Displays the information. |
 
 ### Other Content
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) | Custom Table | Records the computer’s last contact time whenever its state changes. |
-| [pvl_automate_connection_audit_daily](https://proval.itglue.com/DOC-5078775-18178747) | Custom Table | Records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) custom table. |
+| [pvl_automate_connection_audit](<../cwa/tables/pvl_automate_connection_audit.md>) | Custom Table | Records the computer’s last contact time whenever its state changes. |
+| [pvl_automate_connection_audit_daily](<../cwa/tables/pvl_automate_connection_audit_daily.md>) | Custom Table | Records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](<../cwa/tables/pvl_automate_connection_audit.md>) custom table. |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
    - [Script - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745)
-   - [Internal Monitor - Update Table - pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178743)
+   - [Internal Monitor - Update Table - pvl_automate_connection_audit](<../cwa/monitors/Update Table - pvl_automate_connection_audit.md>)
    - [Dataview - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178742)
 
 2. Reload the system cache:
@@ -44,7 +44,7 @@ The solution is intended to monitor and display the duration machines were onlin
 
 5. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Update Table - pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178743)
+     - [Internal Monitor - Update Table - pvl_automate_connection_audit](<../cwa/monitors/Update Table - pvl_automate_connection_audit.md>)
        - Right-click and Run Now to start the monitor.
 
 ## FAQ
@@ -54,6 +54,7 @@ The solution is intended to monitor and display the duration machines were onlin
 
 **Q2: Why does the online or offline time sometimes appear greater than the total data collection time?**  
 **A2:** The `Days Since Data Collection` column may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. As a result, it is normal for the `Online - 30 Days` or other columns to display `6day 23hr 39min` while the `Days Since Data Collection` column shows `6 days`.
+
 
 
 

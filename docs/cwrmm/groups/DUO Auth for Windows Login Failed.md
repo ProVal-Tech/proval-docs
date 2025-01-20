@@ -14,7 +14,7 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
 
 ## Dependencies
 
-[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](https://proval.itglue.com/DOC-5078775-17914127)
+[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](<../custom-fields/Duo Authentication for Windows Logon Deployment.md>)
 
 ## Details
 
@@ -47,6 +47,7 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Failed`
+
 
 
 

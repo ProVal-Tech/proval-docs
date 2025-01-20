@@ -23,7 +23,7 @@ The SQL query filters the results for the Patch Managed computers only, removing
 
 ## Dependencies
 
-[plugin_proval_v_patching_metrics_overview](https://proval.itglue.com/DOC-5078775-11915163)
+[plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>)
 
 ## Columns
 
@@ -42,6 +42,7 @@ The SQL query filters the results for the Patch Managed computers only, removing
 | Patching Policy            | Patching Policy (Managed | UnManaged). (By Default the dataview will display the data for the Patch managed computers only)                                 |
 | Clientid                  | Clientid (Hidden)                                                                                                                                     |
 | sort                       | A custom column to sort the dataview in proper order (Hidden)                                                                                         |
+
 
 
 

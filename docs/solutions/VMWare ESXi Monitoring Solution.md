@@ -16,11 +16,11 @@ The goal of this solution is to provide very good and customizable monitoring fo
 
 | Content                                                                                     | Type            | Function                                         |
 |---------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------|
-| [CWA Internal Monitor - ProVal - Production - ESXi Bad Sensor](https://proval.itglue.com/DOC-5078775-10098675)         | Internal Monitor | Alerts based on Warnings/Alerts on ESXi Hosts   |
-| [CWA Internal Monitor - ESXi Host Not Communicating > 3 Days](https://proval.itglue.com/DOC-5078775-10098752)         | Internal Monitor | Alerts when ESXi hosts are not communicating     |
-| [CWA Internal Monitor - ESXi Storage Space \< 10%](https://proval.itglue.com/DOC-5078775-10098750)                     | Internal Monitor | Alerts when Datastores are running low on space.|
-| [CWM - Automate - Script - Ticket Creation - ESXi Bad Sensor](https://proval.itglue.com/DOC-5078775-10098303)         | Script          | Used for Alert Templates for the above monitors. |
-| [CWM - Automate - Script - Ticket Creation - ESXi Not Communicating](https://proval.itglue.com/DOC-5078775-10098499) | Script          | Used for Alert Templates for the above monitors. |
+| [CWA Internal Monitor - ProVal - Production - ESXi Bad Sensor](<../cwa/monitors/ESXi Bad Sensor.md>)         | Internal Monitor | Alerts based on Warnings/Alerts on ESXi Hosts   |
+| [CWA Internal Monitor - ESXi Host Not Communicating > 3 Days](<../cwa/monitors/ESXi Host Not Communicating  3 Days.md>)         | Internal Monitor | Alerts when ESXi hosts are not communicating     |
+| [CWA Internal Monitor - ESXi Storage Space \< 10%](<../cwa/monitors/ESXi Storage Space  10.md>)                     | Internal Monitor | Alerts when Datastores are running low on space.|
+| [CWM - Automate - Script - Ticket Creation - ESXi Bad Sensor](<../cwa/scripts/Ticket Creation - ESXi Bad Sensor.md>)         | Script          | Used for Alert Templates for the above monitors. |
+| [CWM - Automate - Script - Ticket Creation - ESXi Not Communicating](<../cwa/scripts/Ticket Creation - ESXi Not Communicating.md>) | Script          | Used for Alert Templates for the above monitors. |
 | [CWM - Automate - Script - Ticket Creation - ESXi Storage \< 10%](https://proval.itglue.com/DOC-5078775-10094519)     | Script          | Used for Alert Templates for the above monitors. |
 
 ## Implementation
@@ -31,6 +31,7 @@ The goal of this solution is to provide very good and customizable monitoring fo
 4. Import the Ticket Creation Scripts outlined above
 5. Assign the Ticket Creation Scripts as Alert Templates for each monitor (These should be importable via the Plugin)
 6. Enable the monitors
+
 
 
 

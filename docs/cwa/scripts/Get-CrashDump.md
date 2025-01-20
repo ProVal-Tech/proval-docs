@@ -26,9 +26,9 @@ Collects information regarding any existing crash dump.
 
 ## Dependencies
 
-- [SWM - Software Installation - Script - Winget - Install](https://proval.itglue.com/DOC-5078775-11956636)
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973)
-- [EPM - Data Collection - Custom Table - plugin_proval_crash_dumps](https://proval.itglue.com/DOC-5078775-11960289)
+- [SWM - Software Installation - Script - Winget - Install](<./Winget - InstallUpdate.md>)
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
+- [EPM - Data Collection - Custom Table - plugin_proval_crash_dumps](<../tables/plugin_proval_crash_dumps.md>)
 
 ## Variables
 
@@ -94,6 +94,7 @@ Collects information regarding any existing crash dump.
 ### Custom Table
 
 ![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
+
 
 
 

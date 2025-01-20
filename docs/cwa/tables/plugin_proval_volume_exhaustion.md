@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores volume exhaustion information from [Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775-9655085).
+Stores volume exhaustion information from [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
 
 ## Dependencies
 
-[Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775-9655085)
+[Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>)
 
 ## Tables
 
@@ -46,6 +46,7 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
+
 
 
 

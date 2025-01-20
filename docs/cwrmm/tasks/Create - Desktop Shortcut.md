@@ -26,7 +26,7 @@ Select `Run Now` and click on `Run Task`:
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](https://proval.itglue.com/DOC-5078775-11676992)
+[EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](<../../powershell/New-DesktopUriShortcut.md>)
 
 ## User Parameters
 
@@ -227,6 +227,7 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script is an email version of [CWM - Automate - Script - Ticket Creation - Ping Monitor](https://proval.itglue.com/DOC-5078775-15313843). It will manage emails related to remote ping monitors.
+This script is an email version of [CWM - Automate - Script - Ticket Creation - Ping Monitor](<./Ticket Creation - Ping Monitor.md>). It will manage emails related to remote ping monitors.
 
 ## Sample Run
 
@@ -66,6 +66,7 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Output
 
 - Email
+
 
 
 

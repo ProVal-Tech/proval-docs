@@ -20,13 +20,14 @@ Time Saved by Automation: 15 Minutes
 
 ## Process
 
-- Creates a custom table [plugin_proval_userfoldersizes](https://proval.itglue.com/DOC-5078775-8158070) in the Labtech Database if it doesn't already exist.
+- Creates a custom table [plugin_proval_userfoldersizes](<../tables/plugin_proval_userfoldersizes.md>) in the Labtech Database if it doesn't already exist.
 - Runs PowerShell script to fetch the folder size of every user profile.
 - Inserts the value in the above table.
 
 ## Output
 
 - Script log
+
 
 
 

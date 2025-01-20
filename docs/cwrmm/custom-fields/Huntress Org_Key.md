@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This Custom field is to be filled with Huntress Organization Key. It is being utilized by [CW RMM - Task - Huntress Agent (INSTALL)](https://proval.itglue.com/DOC-5078775-13684933) task. Basically the Client Name.
+This Custom field is to be filled with Huntress Organization Key. It is being utilized by [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task. Basically the Client Name.
 
 # Create the Custom Field
 
@@ -23,6 +23,7 @@ This Custom field is to be filled with Huntress Organization Key. It is being ut
 **Level:** Company  
 **Description:** Huntress Organization Key. Organization Keys are used to associate a Huntress Agent into a grouping called Huntress Organizationz. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
 **Editable:** Yes  
+
 
 
 

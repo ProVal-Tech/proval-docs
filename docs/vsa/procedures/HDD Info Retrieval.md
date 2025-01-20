@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Gets useful Disk drive information and saves it to a CSV on the endpoint for client ingestion. Agnostic Stack Implementation of [EPM - Disk - Agnostic - Get-DiskInfo](https://proval.itglue.com/DOC-5078775-10677479)
+Gets useful Disk drive information and saves it to a CSV on the endpoint for client ingestion. Agnostic Stack Implementation of [EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>)
 
 ## Example Agent Procedure Log
 
@@ -37,7 +37,7 @@ Gets useful Disk drive information and saves it to a CSV on the endpoint for cli
 
 ## Dependencies
 
-[EPM - Disk - Agnostic - Get-DiskInfo](https://proval.itglue.com/DOC-5078775-10677479)
+[EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>)
 
 ## Process
 
@@ -47,6 +47,7 @@ Runs Get-DiskInfo and creates a CSV with popularly requested values.
 
 GetFile: StackContent/DiskReport.csv  
 Endpoint: %programData/_automation/StackContent/DiskReport/DiskReport.csv
+
 
 
 

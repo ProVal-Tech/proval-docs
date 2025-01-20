@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This Custom field is to be filled with Huntress Account Key by the partner. It is being utilized by [CW RMM - Device Group - Deploy Huntress](https://proval.itglue.com/DOC-5078775-15302736) task.
+This Custom field is to be filled with Huntress Account Key by the partner. It is being utilized by [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>) task.
 
 # Create the Custom Field
 
@@ -23,6 +23,7 @@ This Custom field is to be filled with Huntress Account Key by the partner. It i
 **Level:** Company  
 **Description:** Huntress Account key  
 **Editable:** Yes  
+
 
 
 

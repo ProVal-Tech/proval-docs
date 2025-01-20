@@ -14,7 +14,7 @@ Windows 10 computers which are compatible with Windows 11 upgrade.
 
 ## Dependencies
 
-[CW RMM - Custom Field - Endpoint - Windows 11 Compatible](https://proval.itglue.com/DOC-5078775-15835398)
+[CW RMM - Custom Field - Endpoint - Windows 11 Compatible](<../custom-fields/Endpoint - Windows 11 Compatible.md>)
 
 ## Group Creation 
 
@@ -58,6 +58,7 @@ Windows 10 computers which are compatible with Windows 11 upgrade.
 
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_14.png)  
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_15.png)
+
 
 
 

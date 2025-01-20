@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Purpose
 
-To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806) script in order to feed into the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](https://proval.itglue.com/DOC-5078775-10854809) dataview.
+To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) script in order to feed into the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventoy Script.md>) dataview.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806)
-- [CWM - Automate - Solution - Get - Printer Driver Inventory](https://proval.itglue.com/DOC-5078775-10854823)
-- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](https://proval.itglue.com/DOC-5078775-10854809)
+- [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>)
+- [CWM - Automate - Solution - Get - Printer Driver Inventory](<../../solutions/Get - Printer Driver Inventory.md>)
+- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventoy Script.md>)
 
 ## Tables
 
@@ -41,6 +41,7 @@ To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inv
 | InfPath            | varchar(256)  | Physical path to the Driver's inf file                     |
 | DriverVersion      | varchar(32)   | Driver Version                                            |
 | ScriptRunTime      | varchar(25)   | Script Run Time                                           |
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script operates similarly to the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script; however, instead of creating a ticket with the Computer's Detail, it will create a ticket without including the computer's detail. Also, no actions are defined in the script for the SUCCESS status of the monitors.
+This script operates similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket with the Computer's Detail, it will create a ticket without including the computer's detail. Also, no actions are defined in the script for the SUCCESS status of the monitors.
 
 ## Sample Run
 
@@ -48,6 +48,7 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
+
 
 
 

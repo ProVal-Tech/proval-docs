@@ -15,8 +15,8 @@ This dataview populates the Click-to-Run Office version, auto-update status and 
 ## Dependencies
 
 - [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
-- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](https://proval.itglue.com/DOC-5078775-17164846)
-- [SWM - Data Collection - Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-14568059)
+- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](<../../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>)
+- [SWM - Data Collection - Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>)
 
 ## Columns
 
@@ -36,6 +36,7 @@ This dataview populates the Click-to-Run Office version, auto-update status and 
 | Auto Update               | If office Auto update is enabled or not on the machine           |
 | Update Channel            | Update Channel for office installed on the machine                |
 | Script Run Time           | Last time [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine |
+
 
 
 

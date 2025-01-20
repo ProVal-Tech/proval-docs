@@ -14,14 +14,15 @@ Lists all Chromium extensions installed on the endpoint
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](https://proval.itglue.com/DOC-5078775-11791153)
-- [EPM - Data Collection - Agent Procedure - Chromium Extension Audit](https://proval.itglue.com/DOC-5078775-11925167)
+- [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>)
+- [EPM - Data Collection - Agent Procedure - Chromium Extension Audit](<../procedures/Chromium Extension Audit.md>)
 
 ## Details
 
 | Field Name                           | Type of Field (Machine or Organization) | Description                                   |
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
 | xPVAL Chromium Extensions Installed   | Mach                                    | Lists all Chromium extensions installed on the endpoint |
+
 
 
 

@@ -10,14 +10,14 @@ unlisted: false
 ---
 ## Summary
 
-Displays the patch audit data stored in the [pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975) table.
+Displays the patch audit data stored in the [pvl_patch_config](<../tables/pvl_patch_config.md>) table.
 
-A red cell in the dataview indicates that the values available on that computer do not match the settings defined by the [Patch Manager - WUA Settings Validation](https://proval.itglue.com/DOC-5078775-9135620) script.
+A red cell in the dataview indicates that the values available on that computer do not match the settings defined by the [Patch Manager - WUA Settings Validation](<../scripts/Patch Manager - WUA Settings Validation.md>) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Get Patch Config](https://proval.itglue.com/DOC-5078775-16399976)
-- [EPM - Data Collection - Custom Table - pvl_patch_config](https://proval.itglue.com/DOC-5078775-16399975)
+- [EPM - Data Collection - Script - Get Patch Config](<../scripts/Get Patch Config.md>)
+- [EPM - Data Collection - Custom Table - pvl_patch_config](<../tables/pvl_patch_config.md>)
 
 ## Columns
 
@@ -70,6 +70,7 @@ A red cell in the dataview indicates that the values available on that computer 
 | WindowsUpdateDeferQualityUpdatesPeriodInDays | Not Equal | 0 | Red   |
 | UpgradeDisabled                    | Not Equal | 0         | Red   |
 | Needs Adjustment                   | Equals   | 1         | Red   |
+
 
 
 

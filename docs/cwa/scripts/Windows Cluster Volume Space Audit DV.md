@@ -22,7 +22,7 @@ Set the value of `Set_Environment` to 1, to create the table and schedule the sc
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Shared Volume](https://proval.itglue.com/DOC-5078775-15952795)
+[CWA Script - Windows Cluster Shared Volume](<./Windows Cluster Shared Volume Autofix,Ticket.md>)
 
 #### Global Parameters
 
@@ -40,6 +40,7 @@ Set the value of `Set_Environment` to 1, to create the table and schedule the sc
 
 - Script log
 - Dataview
+
 
 
 

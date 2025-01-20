@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the script is to send the information of the event logs detected by the ["ProVal - Development - Automate Server - Unwanted Event Logs Monitoring"](https://proval.itglue.com/DOC-5078775-10390990) monitor set. The result sometimes crosses the character limit of 100 characters and hence, the script was needed for the alerting purpose. Also, this is not designed to send any notifications for the Success status of the monitor set.
+The purpose of the script is to send the information of the event logs detected by the ["ProVal - Development - Automate Server - Unwanted Event Logs Monitoring"](<../monitors/Unwanted Event Logs Monitoring.md>) monitor set. The result sometimes crosses the character limit of 100 characters and hence, the script was needed for the alerting purpose. Also, this is not designed to send any notifications for the Success status of the monitor set.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This is an Autofix script and it is used within the "Automate Server - Event Log
 
 ## Dependencies
 
-["ProVal - Development - Automate Server - Unwanted Event Logs Monitoring"](https://proval.itglue.com/DOC-5078775-10390990)
+["ProVal - Development - Automate Server - Unwanted Event Logs Monitoring"](<../monitors/Unwanted Event Logs Monitoring.md>)
 
 ## Variables
 
@@ -33,12 +33,13 @@ This is an Autofix script and it is used within the "Automate Server - Event Log
 ## Process
 
 Step 1: Verifies the monitor status, exits for the Success and performs the following steps for the Failure.  
-Step 2: Runs the very same command used within the ["ProVal - Development - Automate Server - Unwanted Event Logs Monitoring"](https://proval.itglue.com/DOC-5078775-10390990) monitor set.  
+Step 2: Runs the very same command used within the ["ProVal - Development - Automate Server - Unwanted Event Logs Monitoring"](<../monitors/Unwanted Event Logs Monitoring.md>) monitor set.  
 Step 3: Emails the outcome of the command (%shellresult%) to [alerts@provaltech.com](mailto:alerts@provaltech.com) in order to generate an Urgent ticket in our (ProVal's) Autotask board.
 
 ## Output
 
 - **Email**
+
 
 
 

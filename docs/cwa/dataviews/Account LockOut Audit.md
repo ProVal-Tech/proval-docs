@@ -14,9 +14,9 @@ This dataview shows the account lock detailed information of both local or domai
 
 ## Dependencies
 
-- [User Management - Account Lockout Audit](https://proval.itglue.com/DOC-5078775-10219462)
-- [plugin_proval_account_lock](https://proval.itglue.com/DOC-5078775-10220562)
-- [User Management - Account Lock Detail](https://proval.itglue.com/DOC-5078775-10220563)
+- [User Management - Account Lockout Audit](<../../unsorted/User Management - Account Lockout Audit.md>)
+- [plugin_proval_account_lock](<../../unsorted/plugin_proval_account_lock.md>)
+- [User Management - Account Lock Detail](<../../unsorted/User Management - Account Lock Detail.md>)
 
 ## Columns
 
@@ -60,6 +60,7 @@ FROM
   JOIN locations l ON l.`LocationID` = c.`LocationID` 
   JOIN plugin_proval_account_lock p ON p.computerid = c.`ComputerID`
 ```
+
 
 
 

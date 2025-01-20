@@ -20,7 +20,7 @@ This should target the group as shown below:
 
 ## Dependencies
 
-[CW RMM - Dynamic Group - Reboot Pending Servers](https://proval.itglue.com/DOC-5078775-15488656)
+[CW RMM - Dynamic Group - Reboot Pending Servers](<../groups/Reboot Pending Servers.md>)
 
 ## Implementation
 
@@ -60,6 +60,7 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This script is designed to be put in place with the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642). The script's entire function is to clear the EDFs used in the monitor so it can be re-triggered at another time.
+This script is designed to be put in place with the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). The script's entire function is to clear the EDFs used in the monitor so it can be re-triggered at another time.
 
 ## Sample Run
 
-This script clears the EDFs used in the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642) and script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644).
+This script clears the EDFs used in the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>) and script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644).
 
 ![Sample Run Image](../../../static/img/Reset-Reboot-Pending-EDFs/image_1.png)
 
@@ -22,7 +22,7 @@ This script clears the EDFs used in the monitor [EPM - Windows Configuration - M
 
 The following items are dependent on this script:
 
-- [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](https://proval.itglue.com/DOC-5078775-9076642)
+- [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>)
 - [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644)
 
 ## Process
@@ -34,6 +34,7 @@ This script simply sets the following EDF's to 0 so the user prompting stops and
 ## Output
 
 No Logging is done with this script. It simply just zero's out required EDFs for the Dependencies.
+
 
 
 

@@ -41,15 +41,16 @@ Initiates a Windows Feature Upgrade with mandatory reboot
 
 ## Process
 
-Starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713) on the machine with no reboot.  
-Schedules [SEC - Windows Patching - Agent Procedure - Registry Check](https://proval.itglue.com/DOC-5078775-10784806) for 1 hour from run time.  
-Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](https://proval.itglue.com/DOC-5078775-10784808) to [In Progress].
+Starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>) on the machine with no reboot.  
+Schedules [SEC - Windows Patching - Agent Procedure - Registry Check](<./Registry Check.md>) for 1 hour from run time.  
+Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) to [In Progress].
 
 ## Output
 
 AP Log  
-[SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](https://proval.itglue.com/DOC-5078775-10784808)  
+[SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
 PSOutput Document
+
 
 
 

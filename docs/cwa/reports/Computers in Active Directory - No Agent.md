@@ -17,11 +17,12 @@ The Computers in Active Directory - No Agent report displays a comprehensive lis
 This report is dependent on the following items:
 
 - The Active Directory Plugin needs to be installed and configured.
-- [AD - Create Views/Tables/Schedules for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882)
+- [AD - Create Views/Tables/Schedules for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
 
 ## Report Example
 
 ![Report Example](../../../static/img/Computers-in-Active-Directory---No-Agent/image_1.png)
+
 
 
 

@@ -37,7 +37,7 @@ The monitor set should be limited to the `HP Servers` search.
 
 ## Implementation
 
-[Implement - Remote Monitor - HP Hardware Monitoring](https://proval.itglue.com/DOC-5078775-14979993)
+[Implement - Remote Monitor - HP Hardware Monitoring](<./Implement - Remote Monitor - HP Hardware Monitoring.md>)
 
 ## Ticketing
 
@@ -45,6 +45,7 @@ The monitor set should be limited to the `HP Servers` search.
 
 **Body:** `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%`
+
 
 
 

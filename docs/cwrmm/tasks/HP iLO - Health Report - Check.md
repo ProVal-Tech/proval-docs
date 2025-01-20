@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script will check and return the health status of the HP iLO Devices. Writes the Output in a Script Log. It is a CW RMM implementation of [Get-HPiLOHealthReport](https://proval.itglue.com/DOC-5078775-10072511) agnostic script.
+The script will check and return the health status of the HP iLO Devices. Writes the Output in a Script Log. It is a CW RMM implementation of [Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>) agnostic script.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ The script will check and return the health status of the HP iLO Devices. Writes
 
 ## Dependencies
 
-[EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](https://proval.itglue.com/DOC-5078775-10072511)
+[EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
 
 ## User Parameters
 
@@ -243,6 +243,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

@@ -27,11 +27,12 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - Runs a default script Agent Monitors - Disk - Remove to remove the existing disk monitors
-- Runs our Wrapper script [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](https://proval.itglue.com/DOC-5078775-8066337) to create new disk monitors on machines
+- Runs our Wrapper script [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](<./Agent Monitor Creation - Disk - WRAPPER.md>) to create new disk monitors on machines
 
 ## Output
 
 - Script log
+
 
 
 

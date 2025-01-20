@@ -14,11 +14,12 @@ This monitor will locate broken CWControl installations on agents. Optionally ru
 
 ## Dependencies
 
-[CWM - Control - Script - CW Control - Repair [RMM+, Autofix,Globals]](https://proval.itglue.com/DOC-5078775-8216334)
+[CWM - Control - Script - CW Control - Repair [RMM+, Autofix,Globals]](<../scripts/ScreenConnect - Repair RMM+, Autofix, Globals.md>)
 
 ## Target
 
 All Agents - Should be run on all machines.
+
 
 
 

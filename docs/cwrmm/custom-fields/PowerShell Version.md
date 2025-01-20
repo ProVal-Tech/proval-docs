@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This custom field is used to store Windows PowerShell version information about the endpoint. These details are gathered by the [CW RMM - PowerShell Version Information](https://proval.itglue.com/DOC-5078775-12824367) task.
+This custom field is used to store Windows PowerShell version information about the endpoint. These details are gathered by the [CW RMM - PowerShell Version Information](<../tasks/PowerShell Version Information.md>) task.
 
 # Create the Custom Field
 
@@ -24,6 +24,7 @@ This custom field is used to store Windows PowerShell version information about 
 - **Level:** Endpoint
 - **Description:** Will provide the PS version on the machine
 - **Editable:** No
+
 
 
 

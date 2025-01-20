@@ -24,7 +24,7 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 - [EPM - Agnostic - Prompt-User](https://proval.itglue.com/DOC-5078775-9580402)
 - [Guide - Prompt-User.Ps1](https://proval.itglue.com/DOC-5078775-9580488)
-- [EPM - Data Collection - Script - User Prompt - Show](https://proval.itglue.com/DOC-5078775-9739032)
+- [EPM - Data Collection - Script - User Prompt - Show](<./User Prompt - Show.md>)
 
 ## Variables
 
@@ -58,6 +58,7 @@ This script simply assigns values to variables for use in the User Prompt - Show
 ## Output
 
 This script outputs standard variable settings to the calling script to be used by User Prompt - Show to produce a standard branded pop-up theme.
+
 
 
 

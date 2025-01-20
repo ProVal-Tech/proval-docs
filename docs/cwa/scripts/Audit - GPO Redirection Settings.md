@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script will audit the registry settings associated with any group policy redirection settings populating [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](https://proval.itglue.com/DOC-5078775-11736631) with the returned data.
+This script will audit the registry settings associated with any group policy redirection settings populating [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](<../tables/plugin_proval_gpo_redirection_audit.md>) with the returned data.
 
 ## Sample Run
 
@@ -18,20 +18,20 @@ This script will audit the registry settings associated with any group policy re
 
 ## Dependencies
 
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
-- [CWM - Automate - Script - PowerShell Response - All Errors - Check](https://proval.itglue.com/DOC-5078775-11738521)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
+- [CWM - Automate - Script - PowerShell Response - All Errors - Check](<./PowerShell Response - All Errors - Check.md>)
 
 ## Variables
 
 | Name                | Description                                                                                                                                                                                                                              |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ProjectName         | Holds a project name and is used when creating a .json file for any potential overflowed variable. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) for more information. |
-| WorkingDirectory     | Holds a working directory to be combined with the project name as the directory to save the .json file. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) for more information. |
+| ProjectName         | Holds a project name and is used when creating a .json file for any potential overflowed variable. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) for more information. |
+| WorkingDirectory     | Holds a working directory to be combined with the project name as the directory to save the .json file. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) for more information. |
 | TableName           | Holds the name of the table to be updated or created.                                                                                                                                                                               |
-| JsonFileName        | The name of the json file to create. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) for more information.                                   |
-| SQLStartStatement    | The SQL start statement. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) for more information.                                                |
-| SQLTailString       | The SQL tail string. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) for more information.                                                    |
-| DataPointNames      | The names of the datapoints in the created .Json file. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355) for more information.                  |
+| JsonFileName        | The name of the json file to create. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) for more information.                                   |
+| SQLStartStatement    | The SQL start statement. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) for more information.                                                |
+| SQLTailString       | The SQL tail string. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) for more information.                                                    |
+| DataPointNames      | The names of the datapoints in the created .Json file. Please reference [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) for more information.                  |
 | psout               | The return from the powershell script to gather the redirected folder data.                                                                                                                                                          |
 
 ## Process
@@ -43,14 +43,15 @@ This script will audit the registry settings associated with any group policy re
    2. Cycle through the local machine settings populating myinfo with class information.
    3. Cycle through all Current user locations populating myinfo with class information.
    4. Create a .json file.
-4. Check the return from the target for any common PowerShell issues by running the [CWM - Automate - Script - PowerShell Response - All Errors - Check](https://proval.itglue.com/DOC-5078775-11738521) script.
+4. Check the return from the target for any common PowerShell issues by running the [CWM - Automate - Script - PowerShell Response - All Errors - Check](<./PowerShell Response - All Errors - Check.md>) script.
 5. If the finishstatus variable is set to false then log an error and exit with error.
-6. Insert the data to the table using [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355).
+6. Insert the data to the table using [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>).
 7. Log success and exit.
 
 ## Output
 
 - Script log
+
 
 
 

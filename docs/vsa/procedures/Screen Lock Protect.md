@@ -39,7 +39,7 @@ Sets the screen lock timeout on an endpoint
 
 ## Dependencies
 
-[Protect-ScreenLock](https://proval.itglue.com/DOC-5078775-8381648)
+[Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
 
 ## Process
 
@@ -48,6 +48,7 @@ Uses the ProVal Agnostic Protect-ScreeenLock script to set a configurable timeou
 ## Output
 
 Agent Procedure Log
+
 
 
 

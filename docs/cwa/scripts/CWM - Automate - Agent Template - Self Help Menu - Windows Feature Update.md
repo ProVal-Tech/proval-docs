@@ -13,15 +13,15 @@ unlisted: false
 This article outlines the process to add the `Windows Feature Update` option in the `Self Help` menu.  
 ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_1.png)  
 
-The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](https://proval.itglue.com/DOC-5078775-12028460) to install the latest available feature pack for the computer.
+The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](<./Install Windows Upgrade.md>) to install the latest available feature pack for the computer.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Install Windows Upgrade](https://proval.itglue.com/DOC-5078775-12028460)  
+[EPM - Windows Configuration - Script - Install Windows Upgrade](<./Install Windows Upgrade.md>)  
 
 ## Implementation
 
-1. Update/Import the [Install Windows Upgrade](https://proval.itglue.com/DOC-5078775-12028460) using the `Prosync` Plugin.
+1. Update/Import the [Install Windows Upgrade](<./Install Windows Upgrade.md>) using the `Prosync` Plugin.
 
 2. Reload System Cache:  
    ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_2.png)  
@@ -75,6 +75,7 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_17.png)  
 
 Configuration updates will take effect on devices after running the `Update Config` command.
+
 
 
 

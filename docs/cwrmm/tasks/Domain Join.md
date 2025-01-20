@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Joins a non-domain joined computer to a domain. The machine will be forcefully rebooted if required. CW RMM implementation of the agnostic script [Join-Domain](https://proval.itglue.com/DOC-5078775-11053455).
+Joins a non-domain joined computer to a domain. The machine will be forcefully rebooted if required. CW RMM implementation of the agnostic script [Join-Domain](<../../powershell/Join-Domain.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Joins a non-domain joined computer to a domain. The machine will be forcefully r
 
 ## Dependencies
 
-[RSM - Active Directory - Agnostic - Script - Join-Domain](https://proval.itglue.com/DOC-5078775-11053455)
+[RSM - Active Directory - Agnostic - Script - Join-Domain](<../../powershell/Join-Domain.md>)
 
 ## User Parameters
 
@@ -202,6 +202,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

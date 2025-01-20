@@ -29,9 +29,9 @@ This script audits the scheduled task to see what user account tasks are running
 
 ## Dependencies
 
-- [Scheduled Task Audit](https://proval.itglue.com/DOC-5078775-10923269)
-- [plugin_proval_scheduled_tasks](https://proval.itglue.com/DOC-5078775-10923266)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+- [Scheduled Task Audit](<./Scheduled Task Audit.md>)
+- [plugin_proval_scheduled_tasks](<./plugin_proval_scheduled_tasks.md>)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<../cwa/scripts/OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Process
 
@@ -43,6 +43,7 @@ This script creates a table named "plugin_proval_scheduled_tasks" to store the s
 - plugin_proval_scheduled_tasks
 - Dataview
 - etc.
+
 
 
 

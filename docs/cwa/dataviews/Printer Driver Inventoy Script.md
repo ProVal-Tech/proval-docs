@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-The Dataview displays the installed [Printer Driver](https://www.technipages.com/definition/printer-driver) information obtained by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806) script.
+The Dataview displays the installed [Printer Driver](https://www.technipages.com/definition/printer-driver) information obtained by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) script.
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](https://proval.itglue.com/DOC-5078775-10854819)
-- [CWM - Automate - Solution - Get - Printer Driver Inventory](https://proval.itglue.com/DOC-5078775-10854823)
-- [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806)
+- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>)
+- [CWM - Automate - Solution - Get - Printer Driver Inventory](<../../solutions/Get - Printer Driver Inventory.md>)
+- [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>)
 
 ## Columns
 
@@ -32,9 +32,10 @@ The Dataview displays the installed [Printer Driver](https://www.technipages.com
 | Printer Environment    | Printer Environment e.g., Windows x64 or Windows x86|
 | Manufacturer          | Printer Manufacturer                                  |
 | Driver Version        | Printer Driver Version                                |
-| Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](https://proval.itglue.com/DOC-5078775-10854806) |
+| Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) |
 | Last Contact          | Last Contact with RMM                                |
 | Days Since Last Contact| Days Since Last Contact with RMM                     |
+
 
 
 

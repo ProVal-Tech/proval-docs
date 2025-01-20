@@ -20,8 +20,8 @@ This script helps to get all restore point information of a workstation and stor
 
 ## Dependencies
 
-- [Restore Point Audit - Workstations](https://proval.itglue.com/DOC-5078775-7996534)
-- [plugin_proval_restore_points](https://proval.itglue.com/DOC-5078775-8157483)
+- [Restore Point Audit - Workstations](<../dataviews/Restore Point Audit - Workstations.md>)
+- [plugin_proval_restore_points](<../tables/plugin_proval_restore_points.md>)
 
 ## Process
 
@@ -31,6 +31,7 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 
 - Script log
 - Dataview
+
 
 
 

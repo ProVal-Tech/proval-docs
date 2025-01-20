@@ -21,12 +21,12 @@ Removes the Scheduled task that attempts to restart the VSA Agent every 15 minut
 
 ## Dependencies
 
-- [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](https://proval.itglue.com/DOC-5078775-9791995)
-- [Restart VSA Agent on Schedule](https://proval.itglue.com/DOC-5078775-9792122)
+- [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>)
+- [Restart VSA Agent on Schedule](<./Restart VSA Agent on Schedule.md>)
 
 ## Process
 
-Deletes the scheduled task created by [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](https://proval.itglue.com/DOC-5078775-9791995).
+Deletes the scheduled task created by [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>).
 
 ## Output
 
@@ -37,6 +37,7 @@ The location and method by which this script returns data.
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
 
 
 

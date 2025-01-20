@@ -14,9 +14,9 @@ This Dataview displays the result of the path and size of the OST and PST files 
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-8168634)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](https://proval.itglue.com/DOC-5078775-15490756)
-- [EPM - Data Collection - Custom Table - pvl_outlook_pst_ost_audit](https://proval.itglue.com/DOC-5078775-15595946)
+- [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
+- [EPM - Data Collection - Custom Table - pvl_outlook_pst_ost_audit](<../tables/pvl_outlook_pst_ost_audit.md>)
 
 ## Columns
 
@@ -38,6 +38,7 @@ This Dataview displays the result of the path and size of the OST and PST files 
 | Operating System          | Operating System                                            |
 | Last Contact              | Last Contact with RMM                                      |
 | Last Logged In User       | Last Logged In User                                        |
+
 
 
 

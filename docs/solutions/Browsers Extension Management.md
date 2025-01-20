@@ -18,18 +18,19 @@ Supported Browsers: Chrome, Edge, Brave, Vivaldi, Chromium, and Firefox
 
 | Content                                                                                     | Type | Function                                                                                          |
 |---------------------------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------|
-| [Chromium Browsers - Extension - Install](https://proval.itglue.com/DOC-5078775-16432583) | Task | Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium') |
-| [Chromium Browsers - Extension - Remove](https://proval.itglue.com/DOC-5078775-16432584)  | Task | Remove Extensions from the Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium'). |
-| [Mozilla Firefox - Extension - Install](https://proval.itglue.com/DOC-5078775-16432580)   | Task | Installs Extension on Mozilla Firefox Browser.                                                   |
-| [Mozilla Firefox - Extension - Remove](https://proval.itglue.com/DOC-5078775-16432579)    | Task | Removes Extension from Mozilla Firefox Browser.                                                  |
+| [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>) | Task | Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium') |
+| [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)  | Task | Remove Extensions from the Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium'). |
+| [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)   | Task | Installs Extension on Mozilla Firefox Browser.                                                   |
+| [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)    | Task | Removes Extension from Mozilla Firefox Browser.                                                  |
 
 ## Implementation
 
 Create the following tasks:  
-- [Chromium Browsers - Extension - Install](https://proval.itglue.com/DOC-5078775-16432583)  
-- [Chromium Browsers - Extension - Remove](https://proval.itglue.com/DOC-5078775-16432584)  
-- [Mozilla Firefox - Extension - Install](https://proval.itglue.com/DOC-5078775-16432580)  
-- [Mozilla Firefox - Extension - Remove](https://proval.itglue.com/DOC-5078775-16432579)  
+- [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>)  
+- [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)  
+- [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)  
+- [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)  
+
 
 
 

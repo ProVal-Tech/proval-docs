@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-It is an Automate implementation of the [SWM - Software Configuration - Remove-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372205) agnostic script to remove the registry policy for an enforced homepage in Chromium Browsers. Supported Browsers are `Google Chrome`, and `Microsoft Edge`.
+It is an Automate implementation of the [SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>) agnostic script to remove the registry policy for an enforced homepage in Chromium Browsers. Supported Browsers are `Google Chrome`, and `Microsoft Edge`.
 
 The `Browser` parameter can be used to specify the browser's name.
 
@@ -27,7 +27,7 @@ The `Browser` parameter can be used to specify the browser's name.
 
 ## Dependencies
 
-[SWM - Software Configuration - Remove-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-10372205)
+[SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>)
 
 #### User Parameters
 
@@ -38,6 +38,7 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
+
 
 
 

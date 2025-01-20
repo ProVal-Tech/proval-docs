@@ -39,7 +39,7 @@ Change this value from 10 to the desired value after importing the remote monito
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -95,7 +95,8 @@ For more detailed information: [Event 4625 Documentation](https://learn.microsof
 
 ## Implementation
 
-[Import - Remote Monitor - Security - Possible Brute Force Attack](https://proval.itglue.com/DOC-5078775-13832549)
+[Import - Remote Monitor - Security - Possible Brute Force Attack](<./Security - Possible Brute Force Attack.md>)
+
 
 
 

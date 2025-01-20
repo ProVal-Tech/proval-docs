@@ -10,17 +10,17 @@ unlisted: false
 ---
 ## Summary
 
-This custom field is used to store and display the results of the [CW RMM - Task - Get Crystal Disk Info (Disk Health)](https://proval.itglue.com/DOC-5078775-13549879) task.
+This custom field is used to store and display the results of the [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>) task.
 
 ## Dependencies
 
-[CW RMM - Task - Get Crystal Disk Info (Disk Health)](https://proval.itglue.com/DOC-5078775-13549879)
+[CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>)
 
 ## Details
 
 | Field Name                         | Type of Field (Machine or Organization) | Description                                                                                     |
 |------------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
-| Crystal Disk Info_Disk Health      | Machine                                 | Disk Health Status fetched by the [Get Crystal Disk Info (Disk Health)](https://proval.itglue.com/DOC-5078775-13549879) script. |
+| Crystal Disk Info_Disk Health      | Machine                                 | Disk Health Status fetched by the [Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>) script. |
 
 ## ScreenShot
 
@@ -31,6 +31,7 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/Crystal-Disk-Info_Disk-Health/image_3.png)
+
 
 
 

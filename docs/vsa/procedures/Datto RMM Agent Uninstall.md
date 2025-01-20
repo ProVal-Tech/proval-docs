@@ -37,7 +37,7 @@ Removes Datto RMM from a Mac or Windows endpoint.
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-DattoRmmAgent](https://proval.itglue.com/DOC-5078775-11970048)
+[SWM - Software Uninstall - Agnostic - Remove-DattoRmmAgent](<../../powershell/Remove-DattoRmmAgent.md>)
 
 ## Process
 
@@ -48,6 +48,7 @@ Runs [sudo bash /Applications/AEM/ Agent.app/Contents/Resources/uninstall.sh](ht
 ## Output
 
 Agent procedure Log
+
 
 
 

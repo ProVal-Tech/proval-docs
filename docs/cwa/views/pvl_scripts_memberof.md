@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](https://proval.itglue.com/DOC-5078775-10390968) dataview.
+Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](<../dataviews/Scripts - MemberOf.md>) dataview.
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](https://proval.itglue.com/DOC-5078775-13700067)
+[CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>)
 
 ## Tables
 
@@ -29,6 +29,7 @@ Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](ht
 | Object description    | Full Path of the Group/Whether the alert template is applied on a computer-level remote monitor group remote monitor or an internal monitor. |
 | Limited to          | Whether the scheduled group script/remote monitor is limited to a search/internal monitor is limited to any group. |
 | Affected Agents      | Number of computers in the group/Number of agents detected in the search if limited to search.                   |
+
 
 
 

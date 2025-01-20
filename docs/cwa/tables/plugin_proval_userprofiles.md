@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](https://proval.itglue.com/DOC-5078775-8476497).
+Stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](<../dataviews/Windows - User Profiles.md>).
 
 ## Dependencies
 
-[EPM - Accounts - Script - User Profile - Get Information](https://proval.itglue.com/DOC-5078775-8476496)
+[EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
 
 ## Tables
 
@@ -32,6 +32,7 @@ Stores Windows user profile information. Data is filled by [EPM - Accounts - Scr
 | TimeStamp   | DATETIME | The date and time of the audit.                           |
 | UserProfile | VARCHAR  | The path to the user profile folder.                      |
 | Enabled     | VARCHAR  | True or False on if the local account is enabled. If not a local user, then field is set to Remote. |
+
 
 
 

@@ -21,7 +21,7 @@ If SMB Signing is disabled on the agent then it detects it and applies the autof
 
 ## Dependencies
 
-[CWA Script - CVE-2016-2115 - SMB Signing](https://proval.itglue.com/DOC-5078775-15762068)  
+[CWA Script - CVE-2016-2115 - SMB Signing](<../scripts/CVE-2013-3900 WinVerifyTrust Signature Vulnerability.md>)  
 **△ Custom - Execute Script - CVE-2016-2115 - SMB Signing**
 
 ## Target
@@ -33,12 +33,13 @@ If SMB Signing is disabled on the agent then it detects it and applies the autof
 ## Ticketing
 
 **_The ticket part is handled by the script.  
-Refer to the script documentation [CWA Script - CVE-2016-2115 - SMB Signing](https://proval.itglue.com/DOC-5078775-15762068) on how the ticketing will be set up._**
+Refer to the script documentation [CWA Script - CVE-2016-2115 - SMB Signing](<../scripts/CVE-2013-3900 WinVerifyTrust Signature Vulnerability.md>) on how the ticketing will be set up._**
 
 ## Implementation
 
 Please follow the below implementation document to install this content:
-- [Import - Remote Monitor - SMB Signing Detection](https://proval.itglue.com/DOC-5078775-15775362)
+- [Import - Remote Monitor - SMB Signing Detection](<./Import - Remote Monitor - SMB Signing Detection.md>)
+
 
 
 

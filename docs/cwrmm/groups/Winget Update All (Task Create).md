@@ -14,11 +14,11 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](https://proval.itglue.com/DOC-5078775-15702768)
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](https://proval.itglue.com/DOC-5078775-15702769)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](https://proval.itglue.com/DOC-5078775-15702825)
-- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](https://proval.itglue.com/DOC-5078775-15702824)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](https://proval.itglue.com/DOC-5078775-15702796)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](<../custom-fields/Company - WingetUpdateAll_Task_Create.md>)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](<../custom-fields/Company - WingetUpdateAll_Task_Delete.md>)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](<../custom-fields/EndPoint - WingetUpdateAll_Task_Exclude.md>)
+- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](<../custom-fields/Site - WingetUpdateAll_Task_Exclude.md>)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](<../custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>)
 
 ## Group Creation
 
@@ -101,6 +101,7 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_27.png)  
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_28.png)
+
 
 
 

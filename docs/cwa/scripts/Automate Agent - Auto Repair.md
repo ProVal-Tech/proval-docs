@@ -32,19 +32,19 @@ For Regular Execution:
 
 ![Sample Run 2](../../../static/img/Automate-Agent---Auto-Repair/image_2.png)
 
-By default, the script will be called by the **[Monitor - No Checkin for More Than 30 Days*](https://proval.itglue.com/DOC-5078775-8041387)**
+By default, the script will be called by the **[Monitor - No Checkin for More Than 30 Days*](<../monitors/No Checkin for More Than 30 Days.md>)**
 
 ## Dependencies
 
-- **[Monitor - No Checkin for More Than 30 Days*](https://proval.itglue.com/DOC-5078775-8041387)**
+- **[Monitor - No Checkin for More Than 30 Days*](<../monitors/No Checkin for More Than 30 Days.md>)**
 - **[CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)**
 
 ## Sub Scripts
 
-- **[Script - ScreenConnect Client - Connectivity - Audit*](https://proval.itglue.com/DOC-5078775-8143436)**
-- **[Script - ScreenConnect Client - Command - Execute*](https://proval.itglue.com/DOC-5078775-8141008)**
-- **[Script - Automate Agent - Reinstall*](https://proval.itglue.com/DOC-5078775-7761438)**
-- **[Script - Track Repaired Agents](https://proval.itglue.com/DOC-5078775-15178447)**
+- **[Script - ScreenConnect Client - Connectivity - Audit*](<./ScreenConnect Client - Connectivity - Audit.md>)**
+- **[Script - ScreenConnect Client - Command - Execute*](<./ScreenConnect Client - Command - Execute.md>)**
+- **[Script - Automate Agent - Reinstall*](<./Automate Agent - Reinstall.md>)**
+- **[Script - Track Repaired Agents](<./Track Repaired Agents.md>)**
 - Agent - Generate Location Installer URL*
 
 ## Variables
@@ -57,13 +57,13 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 | **TicketCreationCategory**  | Ticket category value for this script to use when creating a ticket. The script will not create any ticket for manual execution. Ticket category can be set in the monitor set's alerting tab or from the groups where the monitor set is enabled. Refer to the `Ticket Creation` section of this article for further information. |
 | **SerialNumber**           | Serial Number of the computer.                                                                       |
 | **RetireStatement**        | SQL Query used to retire the computers.                                                              |
-| **Online**                 | Online status of the computer in ScreenConnect Portal returned by the **[Script - ScreenConnect Client - Connectivity - Audit*](https://proval.itglue.com/DOC-5078775-8143436)**. 1: Online; 0: Offline; -2: Undetermined (RMM+ Solution is not configured properly.), -3: Machine Error (Plugin results contain error type message), -4: Incorrect Agent Guid. |
+| **Online**                 | Online status of the computer in ScreenConnect Portal returned by the **[Script - ScreenConnect Client - Connectivity - Audit*](<./ScreenConnect Client - Connectivity - Audit.md>)**. 1: Online; 0: Offline; -2: Undetermined (RMM+ Solution is not configured properly.), -3: Machine Error (Plugin results contain error type message), -4: Incorrect Agent Guid. |
 | **AgentOnline**            | Status of the agent in ConnectWise Automate after attempting to fix the problem.                     |
 | **Subject**                | Subject of the ticket to create on Script Failure. `Agent Reinstall Failed/Broken Agent - %clientname%//%computername%` |
 | **Body**                   | Information to add to the ticket for script failure.                                                 |
 | **Tickid**                 | ID of an existing new/open ticket to comment.                                                        |
 | **ParsedLogs**             | The last 20 lines of the LTerrors.txt file to add to the ticket.                                    |
-| **Command**                | Command to be executed on the machine from the ScreenConnect portal using the **[Script - ScreenConnect Client - Command - Execute*](https://proval.itglue.com/DOC-5078775-8141008)**. |
+| **Command**                | Command to be executed on the machine from the ScreenConnect portal using the **[Script - ScreenConnect Client - Command - Execute*](<./ScreenConnect Client - Command - Execute.md>)**. |
 
 ## User Properties
 
@@ -86,9 +86,9 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 
 | Name                                   | Example                                   | Description                                                                                                   |
 |----------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| **AgentStatus**                        | Broken | Offline | Undetermined                | This script state is used for the **[Dataview - Agent - Agent Check-in Health](https://proval.itglue.com/DOC-5078775-7963731)** and will display the results of this autofix.  **Broken:** Indicates that the Computer is offline in Automate but online in ScreenConnect.  **OR**  If a computer remains offline in Automate for a duration two hours longer than in ScreenConnect, and it has connected to the ScreenConnect portal within the previous 14 days, it will be marked as **Broken**.  **Offline:** Indicates that the computer is offline in both Automate and ScreenConnect.  **Undetermined:** Indicates that the environment's RMM+ solution is either broken or not configured properly. |
-| **ScriptRunTime**                     | 2023-07-10 08:40:20                      | Run time of the script to be used by the **[Dataview - Agent - Agent Check-in Health](https://proval.itglue.com/DOC-5078775-7963731)**. |
-| **OnlineInScreenConnectSinceMinutes** | Session not found, 12234, -1213         | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of the **[Dataview - Agent - Agent Check-in Health](https://proval.itglue.com/DOC-5078775-7963731)**. |
+| **AgentStatus**                        | Broken | Offline | Undetermined                | This script state is used for the **[Dataview - Agent - Agent Check-in Health](<../dataviews/Agent - Agent Check-in Health.md>)** and will display the results of this autofix.  **Broken:** Indicates that the Computer is offline in Automate but online in ScreenConnect.  **OR**  If a computer remains offline in Automate for a duration two hours longer than in ScreenConnect, and it has connected to the ScreenConnect portal within the previous 14 days, it will be marked as **Broken**.  **Offline:** Indicates that the computer is offline in both Automate and ScreenConnect.  **Undetermined:** Indicates that the environment's RMM+ solution is either broken or not configured properly. |
+| **ScriptRunTime**                     | 2023-07-10 08:40:20                      | Run time of the script to be used by the **[Dataview - Agent - Agent Check-in Health](<../dataviews/Agent - Agent Check-in Health.md>)**. |
+| **OnlineInScreenConnectSinceMinutes** | Session not found, 12234, -1213         | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of the **[Dataview - Agent - Agent Check-in Health](<../dataviews/Agent - Agent Check-in Health.md>)**. |
 
 ## Output
 
@@ -150,6 +150,7 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
+
 
 
 

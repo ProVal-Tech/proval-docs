@@ -63,7 +63,7 @@ Regular execution of the script:
 
 | Name                               | Type      | Section     | Description                                                                                          |
 |------------------------------------|-----------|-------------|------------------------------------------------------------------------------------------------------|
-| Winget_update_all_task_created     | Check-Box | Default     | The EDF tracks the success of task creation on each computer. After successfully creating the tasks, the script sets a flag in this EDF. The [Internal Monitor - Execute Script - Scheduled Task - Create - Winget Update](https://proval.itglue.com/DOC-5078775-14825214) will not target machines where this EDF is flagged. Resetting this EDF, as described in the [Reset - Extra Data Field - Winget_update_all_task_created](https://proval.itglue.com/DOC-5078775-14825940) article, will prompt the internal monitor to execute the script again. This EDF should not be updated manually. |
+| Winget_update_all_task_created     | Check-Box | Default     | The EDF tracks the success of task creation on each computer. After successfully creating the tasks, the script sets a flag in this EDF. The [Internal Monitor - Execute Script - Scheduled Task - Create - Winget Update](<../monitors/Execute Script - Scheduled Task - Create - Winget Update All.md>) will not target machines where this EDF is flagged. Resetting this EDF, as described in the [Reset - Extra Data Field - Winget_update_all_task_created](<../monitors/Reset - Extra Data Field - Winget_update_all_task_created.md>) article, will prompt the internal monitor to execute the script again. This EDF should not be updated manually. |
 | Winget Update All Task - Exclude    | Check-Box | Exclusions  | Marking this EDF will exclude the computer from the Winget Update - All task creation solution.     |
 
 ## Additional Notes
@@ -76,6 +76,7 @@ When the `Winget Update All [Logged on User]` task is enabled, a command window 
 
 - Script log
 - Extra Data Field
+
 
 
 

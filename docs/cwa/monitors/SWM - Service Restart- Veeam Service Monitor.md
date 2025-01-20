@@ -24,7 +24,7 @@ This monitor will check the status of the `VeeamBackupSvc` service and restart i
 
 ## Dependencies
 
-[EPM -Windows Configuration - Agnostic - Invoke-RestartService](https://proval.itglue.com/DOC-5078775-11032222)
+[EPM -Windows Configuration - Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
 
 ## Target
 
@@ -47,7 +47,8 @@ Managed Computers with `VeeamBackupSvc` service.
 
 ## Implementation
 
-[Implement - Remote Monitor - Veeam Service Monitor](https://proval.itglue.com/DOC-5078775-16366763)
+[Implement - Remote Monitor - Veeam Service Monitor](<./Veeam Service Monitor.md>)
+
 
 
 

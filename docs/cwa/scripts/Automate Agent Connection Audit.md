@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script generates two custom tables: [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) and [pvl_automate_connection_audit_daily](https://proval.itglue.com/DOC-5078775-18178747). It calculates and records the daily online and offline times of all machines in the [pvl_automate_connection_audit_daily](https://proval.itglue.com/DOC-5078775-18178747) table, using the data stored in the [pvl_automate_connection_audit](https://proval.itglue.com/DOC-5078775-18178744) table.
+The script generates two custom tables: [pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>) and [pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>). It calculates and records the daily online and offline times of all machines in the [pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>) table, using the data stored in the [pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>) table.
 
 ## Sample Run
 
@@ -21,6 +21,7 @@ The script generates two custom tables: [pvl_automate_connection_audit](https://
 ## Output
 
 - Script Log
+
 
 
 

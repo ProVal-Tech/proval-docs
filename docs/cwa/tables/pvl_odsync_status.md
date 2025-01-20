@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the information returned by the [Get OneDrive Sync Status [DV]](https://proval.itglue.com/DOC-5078775-16007800) script.
+Stores the information returned by the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script.
 
 ## Dependencies
 
-[**EPM - Data Collection - Script - Get OneDrive Sync Status [DV]**](https://proval.itglue.com/DOC-5078775-16007800)
+[**EPM - Data Collection - Script - Get OneDrive Sync Status [DV]**](<../scripts/Get OneDrive Sync Status DV.md>)
 
 ## Tables
 
@@ -31,6 +31,7 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](https://p
 | TotalQuota      | float    | Total Size of the Available Quota (GB)         |
 | UsedQuota       | float    | Amount of used Quota (GB)                       |
 | Username        | varchar  | Username                                        |
+
 
 
 

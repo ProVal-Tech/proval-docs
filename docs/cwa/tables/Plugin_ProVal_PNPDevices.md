@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](https://proval.itglue.com/DOC-5078775-10861683) script.
+Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](<../scripts/Get-PNPDevices DV.md>) script.
 
 ## Dependencies
 
-- [CWM - Automate - Dataview - Get-PNPDevices [Script]](https://proval.itglue.com/DOC-5078775-10861702)
-- [CWM - Automate - Script - Get-PNPDevices [DV]](https://proval.itglue.com/DOC-5078775-10861683)
-- [CWM - Automate - Solution - Pnp Devices Inventory](https://proval.itglue.com/DOC-5078775-10861710)
+- [CWM - Automate - Dataview - Get-PNPDevices [Script]](<../dataviews/Get-PNPDevices Script.md>)
+- [CWM - Automate - Script - Get-PNPDevices [DV]](<../scripts/Get-PNPDevices DV.md>)
+- [CWM - Automate - Solution - Pnp Devices Inventory](<../../solutions/Pnp Devices Inventory.md>)
 
 ## Tables
 
@@ -29,6 +29,7 @@ Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](h
 | Status        | varchar(1000) | Current Status of the PnpDevice     |
 | Class         | Varchar(1000) | Class of the PnpDevice               |
 | Date          | datetime     | Script Run Time                      |
+
 
 
 

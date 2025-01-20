@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script will collect information about the printer drivers on the target and will store it in the [plugin_proval_Printer_driver](https://proval.itglue.com/DOC-5078775-10854819) Table.
+This script will collect information about the printer drivers on the target and will store it in the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) Table.
 
 Intended Target: Windows Computers
 
@@ -20,9 +20,9 @@ Intended Target: Windows Computers
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](https://proval.itglue.com/DOC-5078775-10854819)
-- [CWM - Automate - Solution - Get - Printer Driver Inventory](https://proval.itglue.com/DOC-5078775-10854823)
-- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](https://proval.itglue.com/DOC-5078775-10854809)
+- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>)
+- [CWM - Automate - Solution - Get - Printer Driver Inventory](<../../solutions/Get - Printer Driver Inventory.md>)
+- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventoy Script.md>)
 
 ## Variables
 
@@ -32,11 +32,11 @@ Intended Target: Windows Computers
 
 ## Process
 
-1. Create the [plugin_proval_Printer_driver](https://proval.itglue.com/DOC-5078775-10854819) table if it already does not exist.
+1. Create the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table if it already does not exist.
 2. Run the PowerShell script to retrieve information about installed Printer Drivers.
 3. Verify the Outcome.
 4. Parse the Outcome to ensure SQL compatibility.
-5. Insert the data to the [plugin_proval_Printer_driver](https://proval.itglue.com/DOC-5078775-10854819) Table.
+5. Insert the data to the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) Table.
 6. Log any Failures.
 
 ## Output
@@ -44,6 +44,7 @@ Intended Target: Windows Computers
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

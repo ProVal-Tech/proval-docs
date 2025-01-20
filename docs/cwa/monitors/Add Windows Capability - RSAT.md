@@ -28,7 +28,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -46,7 +46,8 @@ Required Group of Machines
 
 ## Implementation
 
-[Implement - Remote Monitor - Add Windows Capability - RSAT](https://proval.itglue.com/DOC-5078775-14230457)
+[Implement - Remote Monitor - Add Windows Capability - RSAT](<./Add Windows Capability - RSAT.md>)
+
 
 
 

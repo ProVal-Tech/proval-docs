@@ -11,7 +11,7 @@ unlisted: false
 ## Summary
 
 Sets the Microsoft Update Channel for a Click2Run Office installation on an endpoint, using agnostic solution:  
-[SWM - Software Configuration - Agnostic - Set-OfficeUpdateSchedule](https://proval.itglue.com/DOC-5078775-12083867)
+[SWM - Software Configuration - Agnostic - Set-OfficeUpdateSchedule](<../../powershell/Set-OfficeUpdateSchedule.md>)
 
 ## Example Agent Procedure Log
 
@@ -40,6 +40,7 @@ Sets the Microsoft Update Channel for a Click2Run Office installation on an endp
 ## Output
 
 Agent Procedure Log
+
 
 
 

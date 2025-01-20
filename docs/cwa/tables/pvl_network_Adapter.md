@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-The table stores the data gathered by the [EPM - Network - Script - Get - DNS Assignments](https://proval.itglue.com/DOC-5078775-14378277) script.
+The table stores the data gathered by the [EPM - Network - Script - Get - DNS Assignments](<../scripts/Get - DNS Assignments.md>) script.
 
 ## Dependencies
 
-[EPM - Network - Script - Get - DNS Assignments](https://proval.itglue.com/DOC-5078775-14378277)
+[EPM - Network - Script - Get - DNS Assignments](<../scripts/Get - DNS Assignments.md>)
 
 ## Tables
 
@@ -46,6 +46,7 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | MacAddress           | varchar(32)   | Mac Address of the network interface                           |
 | SettingID            | varchar(64)   | interface id of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
+
 
 
 

@@ -28,7 +28,7 @@ Utilizes the Foil wrapper for chocolatey to install an application. [https://git
 
 ## Dependencies
 
-[SWM - Software Management - Solution - VSA Chocolatey Application Management](https://proval.itglue.com/DOC-5078775-11453171)
+[SWM - Software Management - Solution - VSA Chocolatey Application Management](<../../solutions/VSA Chocolatey Application Management.md>)
 
 ## Process
 
@@ -38,6 +38,7 @@ Utilizes the Foil wrapper for chocolatey to install an application. [https://git
 4. Installs NuGet if not already installed.
 5. Installs / Updates the Foil Module
 6. Installs the application using Foil
+
 
 
 

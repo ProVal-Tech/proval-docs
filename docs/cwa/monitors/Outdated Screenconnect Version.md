@@ -16,7 +16,7 @@ This monitor will detect the online machines where the screenconnect agent is no
 
 ## Dependencies
 
-[CWM - Control - Script - Update Screenconnect Version](https://proval.itglue.com/DOC-5078775-13977865) (This script should be run as an autofix with the monitor)  
+[CWM - Control - Script - Update Screenconnect Version](<../scripts/Update Screenconnect Version.md>) (This script should be run as an autofix with the monitor)  
 Use alert template ~Autofix - Update Screenconnect Version with the monitor
 
 ## Target
@@ -25,7 +25,8 @@ Globally (both on windows and MAC machines)
 
 ## Ticketing
 
-The tickets will be created by the [CWM - Control - Script - Update Screenconnect Version](https://proval.itglue.com/DOC-5078775-13977865) script.
+The tickets will be created by the [CWM - Control - Script - Update Screenconnect Version](<../scripts/Update Screenconnect Version.md>) script.
+
 
 
 

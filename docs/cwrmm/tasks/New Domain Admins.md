@@ -26,10 +26,10 @@ Task has been updated to create a ticket. Therefore, the `New Domain Admins` mon
 ## Dependencies
 
 - [CW RMM - Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362)
-- [CW RMM - Machine Group - Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455)
-- [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)
-- [CW RMM - Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215)
-- [CW RMM - Task - Validate Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036218)
+- [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>)
+- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
+- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
+- [CW RMM - Task - Validate Primary Domain Controller](<./Validate Primary Domain Controller.md>)
 
 ## Variables
 
@@ -293,6 +293,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Ticket  
 ![Ticket Output](../../../static/img/New-Domain-Admins/image_66.png)  
+
 
 
 

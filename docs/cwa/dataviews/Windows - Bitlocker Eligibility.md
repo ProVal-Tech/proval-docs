@@ -14,7 +14,7 @@ This dataview displays information about the eligibility status of a machine for
 
 ## Dependencies
 
-- [Bitlocker Enabled - System Drive](https://proval.itglue.com/DOC-5078775-7920473) -- Role
+- [Bitlocker Enabled - System Drive](<../roles/Bitlocker Enabled - System Drive.md>) -- Role
 - @Bitlocker TPM Present -- Role
 - @Bitlocker TPM Ready -- Role
 
@@ -30,6 +30,7 @@ This dataview displays information about the eligibility status of a machine for
 | TPM Ready                       | 1 - Bitlocker TPM Ready0 - Bitlocker TPM Ready Not Set                                                                                   |
 | TPM Present                     | 1 - Bitlocker TPM Present0 - Bitlocker TPM Present Not Set                                                                               |
 | Support Device Encryption        | If system has Bitlocker TPM Ready, Bitlocker TPM Present and UEFI Supported then it is set to 1 as Support Device Encryption else 0 means do not support device encryption. |
+
 
 
 

@@ -22,12 +22,13 @@ WIndows Machines
 
 ## Dependencies
 
-[User Management - Account Lockout Audit](https://proval.itglue.com/DOC-5078775-10219462)  
-[User Management - Account Lock Detail](https://proval.itglue.com/DOC-5078775-10220563)  
+[User Management - Account Lockout Audit](<../../unsorted/User Management - Account Lockout Audit.md>)  
+[User Management - Account Lock Detail](<../../unsorted/User Management - Account Lock Detail.md>)  
 
 ## Target
 
 Windows OS
+
 
 
 

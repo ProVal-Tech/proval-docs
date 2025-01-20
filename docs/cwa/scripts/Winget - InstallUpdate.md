@@ -18,7 +18,7 @@ Installs a Winget package on a target endpoint.
 
 ## Dependencies
 
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973)
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
 
 #### Global Parameters
 
@@ -35,11 +35,12 @@ Installs a Winget package on a target endpoint.
 
 ## Process
 
-Please Reference [SWM - Software Management - Powershell - Invoke-WingetProcessor](https://proval.itglue.com/DOC-5078775-11310973) for process.
+Please Reference [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>) for process.
 
 ## Output
 
 - Script log
+
 
 
 

@@ -21,10 +21,10 @@ Time Saved by Automation: 15 Minutes
 
 ## Dependencies
 
-- [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](https://proval.itglue.com/DOC-5078775-7771697)  
+- [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV,Autofix,Global.md>)  
 - [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)  
-- [New Account Audit and Disable For Approve [Script]](https://proval.itglue.com/DOC-5078775-7771663)  
-- [New User Account Audit Table](https://proval.itglue.com/DOC-5078775-7771654)  
+- [New Account Audit and Disable For Approve [Script]](<../dataviews/New Account Audit and Disable For Approve.md>)  
+- [New User Account Audit Table](<../tables/custom_proval_computer_new_accounts.md>)  
 
 ## Variables
 
@@ -50,6 +50,7 @@ Ex:
 - Script log
 - Dataview
 - custom table
+
 
 
 

@@ -14,13 +14,14 @@ Alerts if a computer or computers have the wrong Webroot Keycode assigned.
 
 ## Dependencies
 
-- [SWM - Software Install - Solution - Webroot](https://proval.itglue.com/DOC-5078775-11665357)
-- [SEC - Endpoint Protection - Dataview - Webroot KeyCode Audit[Script]](https://proval.itglue.com/DOC-5078775-8105261)
-- [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](https://proval.itglue.com/DOC-5078775-8223773)
+- [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
+- [SEC - Endpoint Protection - Dataview - Webroot KeyCode Audit[Script]](<../dataviews/Webroot KeyCode AuditScript.md>)
+- [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](<../scripts/Webroot Keycode Verification.md>)
 
 ## Target
 
 Targets the Webroot Group created in the solution document in the Audit Process Setup Section.
+
 
 
 

@@ -20,14 +20,15 @@ Time Saved by Automation: 5
 
 ## Dependencies
 
-[CWM - Automate - Script - Create View "plugin_proval_probeconfig"](https://proval.itglue.com/DOC-5078775-8288023)  
-[CWM - Automate - Custom View - plugin_proval_probeconfig](https://proval.itglue.com/DOC-5078775-8288022)
+[CWM - Automate - Script - Create View "plugin_proval_probeconfig"](<./MySQL - View - Create (plugin_proval_probeconfig).md>)  
+[CWM - Automate - Custom View - plugin_proval_probeconfig](<../views/plugin_proval_probeconfig.md>)
 
 ## Process
 
-> Drop the view if exists [CWM - Automate - Custom View - plugin_proval_probeconfig](https://proval.itglue.com/DOC-5078775-8288022)  
-> Create the view [CWM - Automate - Custom View - plugin_proval_probeconfig](https://proval.itglue.com/DOC-5078775-8288022)  
+> Drop the view if exists [CWM - Automate - Custom View - plugin_proval_probeconfig](<../views/plugin_proval_probeconfig.md>)  
+> Create the view [CWM - Automate - Custom View - plugin_proval_probeconfig](<../views/plugin_proval_probeconfig.md>)  
 > Call the script CWM - Automate - Script - Update User Permissions for ProVal Custom Tables to assign the permissions to the Automate users for the Plugin_Proval... custom tables and views.
+
 
 
 

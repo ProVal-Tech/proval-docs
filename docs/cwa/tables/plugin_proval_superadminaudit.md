@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores information about the existing super admins. This is used as a challenge comparison to determine if a new super admin was added by the script [Automate - New Super Admin Monitoring](https://proval.itglue.com/DOC-5078775-7882704).
+Stores information about the existing super admins. This is used as a challenge comparison to determine if a new super admin was added by the script [Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>).
 
 ## Dependencies
 
-[Automate - New Super Admin Monitoring](https://proval.itglue.com/DOC-5078775-7882704)
+[Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>)
 
 ## Table
 
@@ -24,6 +24,7 @@ Stores information about the existing super admins. This is used as a challenge 
 |-----------|----------|-----------------------------------------------|
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
+
 
 
 

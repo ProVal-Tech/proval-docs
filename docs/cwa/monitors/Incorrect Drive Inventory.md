@@ -25,7 +25,7 @@ It is a State based monitor and the WARNING state indicates the PowerShell failu
 
 ## Dependencies
 
-[CWM - Automate - Script - Incorrect Drive Inventory [Autofix]](https://proval.itglue.com/DOC-5078775-11801993)
+[CWM - Automate - Script - Incorrect Drive Inventory [Autofix]](<../scripts/Incorrect Drive Inventory Autofix.md>)
 
 ## Target
 
@@ -44,6 +44,7 @@ It is a State based monitor and the WARNING state indicates the PowerShell failu
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Incorrect-Drive-Inventory/image_3.png)
+
 
 
 

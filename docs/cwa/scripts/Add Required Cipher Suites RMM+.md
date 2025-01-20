@@ -18,7 +18,7 @@ The script's goal is to add the [Cipher Suites](https://docs.connectwise.com/Con
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/DOC-5078775-9770217)
+[CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
 
 ## Variables
 
@@ -38,6 +38,7 @@ The script's goal is to add the [Cipher Suites](https://docs.connectwise.com/Con
 ## Output
 
 Script Log
+
 
 
 

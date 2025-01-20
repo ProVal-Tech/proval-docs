@@ -11,9 +11,9 @@ unlisted: false
 ## Summary
 
 > The task validates whether the SentinelOne Management Server detected at the computer is different or not as set for the Client in CW RMM. Information gathered by this task is stored in the following custom fields:
-- [Client Level S1 Mgmt Server](https://proval.itglue.com/DOC-5078775-17312748)
-- [Computer Level S1 Mgmt Server](https://proval.itglue.com/DOC-5078775-17312736)
-- [S1 Mgmt Server Discrepancy](https://proval.itglue.com/DOC-5078775-17312742)
+- [Client Level S1 Mgmt Server](<../custom-fields/Endpoint - Client Level S1 Mgmt Server.md>)
+- [Computer Level S1 Mgmt Server](<../custom-fields/Endpoint - Computer Level S1 Mgmt Server.md>)
+- [S1 Mgmt Server Discrepancy](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>)
 
 ## Sample Run
 
@@ -22,11 +22,11 @@ unlisted: false
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](https://proval.itglue.com/DOC-5078775-17312742)
-- [CW RMM - Custom Field - Endpoint - Computer Level S1 Mgmt Server](https://proval.itglue.com/DOC-5078775-17312736)
-- [CW RMM - Custom Field - Endpoint - Client Level S1 Mgmt Server](https://proval.itglue.com/DOC-5078775-17312748)
-- [CW RMM - Custom Field - Site - SentinelOne Site Key](https://proval.itglue.com/DOC-5078775-15805088)
-- [CW RMM - Dynamic Group - SentinelOne Installed](https://proval.itglue.com/DOC-5078775-17315786)
+- [CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>)
+- [CW RMM - Custom Field - Endpoint - Computer Level S1 Mgmt Server](<../custom-fields/Endpoint - Computer Level S1 Mgmt Server.md>)
+- [CW RMM - Custom Field - Endpoint - Client Level S1 Mgmt Server](<../custom-fields/Endpoint - Client Level S1 Mgmt Server.md>)
+- [CW RMM - Custom Field - Site - SentinelOne Site Key](<../custom-fields/Company - SentinelOne Site Key.md>)
+- [CW RMM - Dynamic Group - SentinelOne Installed](<../groups/SentinelOne Installed.md>)
 
 ## Task Creation
 
@@ -273,7 +273,7 @@ Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` butto
 Click the `Select Targets` button to select the concerned target.  
 ![Select Targets](../../../static/img/SentinelOne-Management-Console-Validation/image_38.png)  
 
-Search and select the [`SentinelOne Installed`](https://proval.itglue.com/DOC-5078775-17315786) Device Group for the target.
+Search and select the [`SentinelOne Installed`](<../groups/SentinelOne Installed.md>) Device Group for the target.
 - **If the partner uses a different group for the computers with the `Sentinel Agent` application installed than use that one.**  
 ![Device Group](../../../static/img/SentinelOne-Management-Console-Validation/image_39.png)  
 
@@ -284,6 +284,7 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/SentinelOne-Management-Console-Validation/image_41.png)  
+
 
 
 

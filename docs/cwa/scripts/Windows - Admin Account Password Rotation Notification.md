@@ -14,7 +14,7 @@ This script will automatically create a ticket or send an email notification if 
 
 ## UPDATE NOTIFICATION: 11-14-23
 
-Please be advised to promptly synchronize the script [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774). Notably, there have been updates in the `SetEnvironment_Local_Admin_Process` function of the script, focusing on property imports. Additionally, script notes have been adjusted to include the required date for optimal functionality. If updating, please re-run the `SetEnvironment_Local_Admin_Process` function of the script to make sure the system properties required for this script are imported.
+Please be advised to promptly synchronize the script [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>). Notably, there have been updates in the `SetEnvironment_Local_Admin_Process` function of the script, focusing on property imports. Additionally, script notes have been adjusted to include the required date for optimal functionality. If updating, please re-run the `SetEnvironment_Local_Admin_Process` function of the script to make sure the system properties required for this script are imported.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](https://proval.itglue.com/DOC-5078775-8223774)
+[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>)
 
 ## System Properties
 
@@ -50,6 +50,7 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
   ------------------------------------------------------------------------------------------------------------------------  
 
   Here, @sqlName@, @sqlUserName@, @sqlclientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@, contains the detail of the Client Name, User Name for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password was changed information stored respectively.
+
 
 
 

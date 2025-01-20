@@ -19,9 +19,9 @@ Verify if a Windows 10 PC is compatible with Windows 11.
 
 ## Dependencies
 
-- [CW RMM - Device Group - Upgrade Enabled Windows 11 Compatible Machines](https://proval.itglue.com/DOC-5078775-15835385)  
-- [CW RMM - Custom Field - Endpoint - Windows 11 incompatibility Base](https://proval.itglue.com/DOC-5078775-15835397)  
-- [CW RMM - Device Group - Windows 10 Machines](https://proval.itglue.com/DOC-5078775-15835802)  
+- [CW RMM - Device Group - Upgrade Enabled Windows 11 Compatible Machines](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)  
+- [CW RMM - Custom Field - Endpoint - Windows 11 incompatibility Base](<../custom-fields/Endpoint - Windows 11 incompatibility Base.md>)  
+- [CW RMM - Device Group - Windows 10 Machines](<../groups/Windows 10 Machines.md>)  
 
 ## Variables
 
@@ -183,7 +183,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per month against [Windows 10 Machines](https://proval.itglue.com/DOC-5078775-15835802).
+It is suggested to run the Task once per month against [Windows 10 Machines](<../groups/Windows 10 Machines.md>).
 
 - Goto `Automation` > `Tasks.`
 - Search for `Windows 10 Machines` Task.
@@ -198,7 +198,7 @@ It is suggested to run the Task once per month against [Windows 10 Machines](htt
 ![Save Schedule Image](../../../static/img/Windows-11-Compatibility-Validation/image_42.png)  
 - Click the `Select Targets` button to select the concerned target.  
 ![Select Targets Image](../../../static/img/Windows-11-Compatibility-Validation/image_43.png)  
-- Search and select the [Windows 10 Machines](https://proval.itglue.com/DOC-5078775-15835802) Device Group for the target.  
+- Search and select the [Windows 10 Machines](<../groups/Windows 10 Machines.md>) Device Group for the target.  
 ![Device Group Selection Image](../../../static/img/Windows-11-Compatibility-Validation/image_44.png)  
 - Click the `Run` button to initiate the schedule.  
 ![Run Task Image](../../../static/img/Windows-11-Compatibility-Validation/image_45.png)  
@@ -207,6 +207,7 @@ It is suggested to run the Task once per month against [Windows 10 Machines](htt
 
 - Script Log
 - Custom Field
+
 
 
 

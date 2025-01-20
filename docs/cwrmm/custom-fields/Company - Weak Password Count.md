@@ -14,7 +14,7 @@ Holds the count of accounts with weak passwords
 
 ## Dependencies
 
-[CW RMM - Solution - Weak Passwords Audit](https://proval.itglue.com/DOC-5078775-17872310)
+[CW RMM - Solution - Weak Passwords Audit](<../../solutions/Weak Passwords Audit.md>)
 
 ## Details
 
@@ -25,6 +25,7 @@ Holds the count of accounts with weak passwords
 ## ScreenShot
 
 ![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
+
 
 
 

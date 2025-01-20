@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script fetches the basic information of ConnectWise Manage configurations and stores it into a custom table [CWM - Automate - Custom Table - pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881), which is further displayed by the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](https://proval.itglue.com/DOC-5078775-13403823) dataview.
+The script fetches the basic information of ConnectWise Manage configurations and stores it into a custom table [CWM - Automate - Custom Table - pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>), which is further displayed by the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](<../dataviews/Asset Report - Purchase and Expiration Date.md>) dataview.
 
 ## Sample Run
 
@@ -18,7 +18,7 @@ The script fetches the basic information of ConnectWise Manage configurations an
 
 ## Sub-Script
 
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
 
@@ -27,9 +27,9 @@ The script fetches the basic information of ConnectWise Manage configurations an
 | ProjectName         | Get-CWMConfiguration                                                                             |
 | WorkingDirectory     | C:/ProgramData/_automation/Script/Get-CWMConfiguration                                          |
 | JsonFileName        | Get-CWMConfiguration.Json                                                                        |
-| TableName           | [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881)                      |
-| SQLDeleteStatement   | Stores SQL query to remove the stale data from [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881) table |
-| SQLStartStatement    | Stores SQL query to input the new data in [pvl_cwm_configurations](https://proval.itglue.com/DOC-5078775-13403881) table |
+| TableName           | [pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>)                      |
+| SQLDeleteStatement   | Stores SQL query to remove the stale data from [pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>) table |
+| SQLStartStatement    | Stores SQL query to input the new data in [pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>) table |
 
 #### Global Parameters
 
@@ -50,6 +50,7 @@ How to get clientID: [https://connectwise20.my.site.com/serviceandsupport/s/arti
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

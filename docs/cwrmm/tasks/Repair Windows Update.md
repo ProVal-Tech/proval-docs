@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Script used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings. CW RMM implementation of [Repair-WindowsUpdate](https://proval.itglue.com/DOC-5078775-11167373) agnostic script.
+Script used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings. CW RMM implementation of [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>) agnostic script.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ Script used to reset Windows update settings. It is not necessary that running t
 
 ## Dependencies
 
-[SEC - Windows Update - Agnostic - Repair-WindowsUpdate](https://proval.itglue.com/DOC-5078775-11167373)
+[SEC - Windows Update - Agnostic - Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>)
 
 ## User Parameters
 
@@ -175,6 +175,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

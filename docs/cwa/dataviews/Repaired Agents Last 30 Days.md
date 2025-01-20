@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-The dataview displays the information of the agents repaired by the [Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441).
+The dataview displays the information of the agents repaired by the [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>).
 
 ## Dependencies
 
-- [Script - Automate Agent - Auto Repair*](https://proval.itglue.com/DOC-5078775-7761441)
-- [Custom Table - pvl_repaired_agents](https://proval.itglue.com/DOC-5078775-15178457)
-- [Script - Track Repaired Agents](https://proval.itglue.com/DOC-5078775-15178447)
+- [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
+- [Custom Table - pvl_repaired_agents](<../tables/pvl_repaired_agents.md>)
+- [Script - Track Repaired Agents](<../scripts/Track Repaired Agents.md>)
 
 ## Columns
 
@@ -35,6 +35,7 @@ The dataview displays the information of the agents repaired by the [Script - Au
 | Last Logged In User      | Last Logged In User                                                                                    |
 | Last Contact with RMM    | Last Contact with RMM                                                                                 |
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
+
 
 
 

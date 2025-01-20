@@ -10,17 +10,18 @@ unlisted: false
 ---
 ## Summary
 
-The objective of this monitor is to run the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609) once a machine comes back online after restart and has either Ticket ID filled in the EDF "Online Alert Ticket ID" or Email ID filled in the EDF "Online Alert E-mail".
+The objective of this monitor is to run the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) once a machine comes back online after restart and has either Ticket ID filled in the EDF "Online Alert Ticket ID" or Email ID filled in the EDF "Online Alert E-mail".
 
 ## Dependencies
 
-- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](https://proval.itglue.com/DOC-5078775-13284610)
+- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](<../scripts/Online Status Alerting - Update EDFs Param.md>)
 - Alert Template: △ Custom - Autofix - Online Status Alerting
-- [CWM - Internal Monitor - Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611)
+- [CWM - Internal Monitor - Online Status Alerting - Machine Back Online](<./Online Status Alerting - Machine Back Online.md>)
 
 ## Target
 
 Global
+
 
 
 

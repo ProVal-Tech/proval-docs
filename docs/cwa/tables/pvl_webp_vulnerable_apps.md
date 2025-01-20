@@ -15,7 +15,7 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 ## Dependencies
 
 - [EPM - Security - Script - WebP Vulnerability Report](https://proval.itglue.com/DOC-5078775-14166219)
-- [EPM - Security - Internal Monitor - Execute Script - WebP Vulnerability Report](https://proval.itglue.com/DOC-5078775-14166231)
+- [EPM - Security - Internal Monitor - Execute Script - WebP Vulnerability Report](<../monitors/Execute Script - WebP Vulnerability Report.md>)
 
 ## Tables
 
@@ -33,6 +33,7 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 | vulnerable_cve_2023_4863     | varchar(32) | Vulnerable_CVE_2023_4863 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
 | vulnerable_cve_2023_5217     | varchar(32) | Vulnerable_CVE_2023_5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
 | datetime                     | datetime    | Data Collection Time from the endpoint                                                          |
+
 
 
 

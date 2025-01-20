@@ -16,8 +16,8 @@ Note: Only if the Remote monitor (from dependencies) has executed/run at least o
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](https://proval.itglue.com/DOC-5078775-13217933)
-- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](https://proval.itglue.com/DOC-5078775-13217931)
+- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](<../monitors/TLS Version Check - Client.md>)
+- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](<../monitors/TLS Version Check - Server.md>)
 
 ## Columns
 
@@ -39,6 +39,7 @@ Note: Only if the Remote monitor (from dependencies) has executed/run at least o
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Security---TLS-Status/image_1.png)
+
 
 
 

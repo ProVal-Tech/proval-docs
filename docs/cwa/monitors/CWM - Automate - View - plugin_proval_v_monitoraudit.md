@@ -14,8 +14,8 @@ Stores data about monitors and their configuration.
 
 ## Dependencies
 
-- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit*](https://proval.itglue.com/DOC-5078775-11931049)  
-- [CWM - Automate - Dataview - Automate - Monitor Audit [View]](https://proval.itglue.com/DOC-5078775-8212748)  
+- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit*](<../scripts/MySQL - View - Create - plugin_proval_v_monitoraudit.md>)  
+- [CWM - Automate - Dataview - Automate - Monitor Audit [View]](<../dataviews/Automate - Monitor Audit View.md>)  
 
 ## Table
 
@@ -37,6 +37,7 @@ Stores data about monitors and their configuration.
 | Category Name           | VARCHAR     | The category assigned to the alert.              |
 | Service Board           | VARCHAR     | The service board that the alert will post to.  |
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
+
 
 
 

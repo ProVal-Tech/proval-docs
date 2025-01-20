@@ -10,20 +10,21 @@ unlisted: false
 ---
 ## Summary
 
-This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](https://proval.itglue.com/DOC-5078775-15475750) to send emails to the user who ran the script manually during the completion.
+This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](<../monitors/Manual Script Schedule - Status Email.md>) to send emails to the user who ran the script manually during the completion.
 
 ## Sample Run
 
-This script should be utilized as an autofix to monitor [Manual Script Schedule - Status Email](https://proval.itglue.com/DOC-5078775-15475750).
+This script should be utilized as an autofix to monitor [Manual Script Schedule - Status Email](<../monitors/Manual Script Schedule - Status Email.md>).
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - Manual Script Schedule - Status Email](https://proval.itglue.com/DOC-5078775-15475750)
+[CWM - Automate - Internal Monitor - Manual Script Schedule - Status Email](<../monitors/Manual Script Schedule - Status Email.md>)
 
 ## Output
 
 - Email
 - Script Log
+
 
 
 

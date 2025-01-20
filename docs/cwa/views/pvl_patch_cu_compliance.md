@@ -14,11 +14,11 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 - [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
 - [CWM - Automate - Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
-- [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](https://proval.itglue.com/DOC-5078775-11564131)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 
 ## Tables
 
@@ -45,11 +45,12 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 | CU Age - 46-90 %                        | Percentage of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days. (`CU Age - 46-90` divided by `Total Eligible Computers - CU` multiplied by `100`)                          |
 | CU Age - 91-135 %                       | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. (`CU Age - 91-135` divided by `Total Eligible Computers - CU` multiplied by `100`)                        |
 | CU Age - 136+ %                         | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. (`CU Age - 136+` divided by `Total Eligible Computers - CU` multiplied by `100`)                        |
-| Total Eligible Computers - CU            | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table.                   |
-| Total Eligible Clients - CU              | Total number of clients with supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12929648) table.     |
+| Total Eligible Computers - CU            | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.                   |
+| Total Eligible Clients - CU              | Total number of clients with supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.     |
 | Compliant Clients - CU                   | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                                                                                                                     |
 | Non-Compliant Clients - CU               | Total number of individual clients where `CU Score %` is less than 75.                                                                                                                                                    |
 | Compliant Clients - CU %                 | Percentage of the compliant client based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                          |
+
 
 
 

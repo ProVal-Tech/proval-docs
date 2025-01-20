@@ -19,7 +19,7 @@ The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Dependencies
 
-[Repair-WindowsUpdate](https://proval.itglue.com/DOC-5078775-11167373)
+[Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>)
 
 ## Global Parameters
 
@@ -38,11 +38,12 @@ The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Process
 
-Executes the Agnostic script [Repair-WindowsUpdate](https://proval.itglue.com/DOC-5078775-11167373). Attempts to remove the SoftwareDistribution.old and catroot2.old directories, if new SoftwareDistribution and catroot2 directories are created. Logs the success and failures accordingly. If the script fails to repair the device it will verify the global variable settings and notify as configured.
+Executes the Agnostic script [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>). Attempts to remove the SoftwareDistribution.old and catroot2.old directories, if new SoftwareDistribution and catroot2 directories are created. Logs the success and failures accordingly. If the script fails to repair the device it will verify the global variable settings and notify as configured.
 
 ## Output
 
 - Script Logs
+
 
 
 

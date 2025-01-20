@@ -29,8 +29,8 @@ Recommended steps to use Prompter:
 
 ## Dependencies
 
-- [Prompter](https://proval.itglue.com/DOC-5078775-10224100)
-- [CWM - Automate - Script - Prompter](https://proval.itglue.com/DOC-5078775-10243074)
+- [Prompter](<./Prompter.md>)
+- [CWM - Automate - Script - Prompter](<./Prompter.md>)
 
 ## Variables
 
@@ -57,6 +57,7 @@ These variables are used in the prompter script. They should be set in any scrip
 | selectedButton     | Button Selected by the user.                                                                             |
 | dateTimeSelection   | Date Time selected by the user.                                                                          |
 | userResponse       | Input/Feedback provided by the user in the User Input Field.                                            |
+
 
 
 

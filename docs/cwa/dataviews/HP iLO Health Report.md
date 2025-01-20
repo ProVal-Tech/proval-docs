@@ -10,13 +10,13 @@ unlisted: false
 ---
 ## Summary
 
-Displays iLO health information from the table [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560).
+Displays iLO health information from the table [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>).
 
 ## Dependencies
 
-- [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560)
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-10072559)
-- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](https://proval.itglue.com/DOC-5078775-10072511)
+- [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>)
+- [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
+- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
 
 ## Columns
 
@@ -50,6 +50,7 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 | Status                  | Overall status of the iLO device.                                                                         |
 | StatusInfo              | Additional information about the overall iLO status.                                                     |
 | ScriptRunTIme          | Last Run time of the Script to gather data                                                                |
+
 
 
 

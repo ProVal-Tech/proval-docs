@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-This internal monitor detects online Windows agents and performs autofix on computers where the "Audit with Autofix" is set via client, location, or computer level EDF "SMB1 Vulnerability". The [Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874) shows failure, and the autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](https://proval.itglue.com/DOC-5078775-15811522) has not run in the past week.
+This internal monitor detects online Windows agents and performs autofix on computers where the "Audit with Autofix" is set via client, location, or computer level EDF "SMB1 Vulnerability". The [Remote Monitor - SMB1 Detection](<./CWA - Remote Monitor - SMB1 Detection.md>) shows failure, and the autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) has not run in the past week.
 
 ## Dependencies
 
-- [Remote Monitor - SMB1 Detection](https://proval.itglue.com/DOC-5078775-17241874)
-- [Script - SMBv1 Status Audit/Autofix [DV, Param]](https://proval.itglue.com/DOC-5078775-15811522)
+- [Remote Monitor - SMB1 Detection](<./CWA - Remote Monitor - SMB1 Detection.md>)
+- [Script - SMBv1 Status Audit/Autofix [DV, Param]](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>)
 
 ## Target
 
@@ -27,7 +27,8 @@ Global
 
 ![Ticket Category Setup](../../../static/img/SMB1-Autofix/image_1.png)
 
-Once the ticket category is set, the Autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](https://proval.itglue.com/DOC-5078775-15811522) will automatically create a ticket to the service board using the ticket category set.
+Once the ticket category is set, the Autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) will automatically create a ticket to the service board using the ticket category set.
+
 
 
 

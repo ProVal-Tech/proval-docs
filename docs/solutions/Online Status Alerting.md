@@ -16,22 +16,22 @@ The purpose of this solution is to change the status of the ticket in CW Manage 
 
 | Content                                                                                                         | Type            | Function                                                                                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Online Status Alerting - Update EDFs [Param]](https://proval.itglue.com/DOC-5078775-13284610)       | Script          | This script can be used to provide input to the computer EDFs "Online Alert Reason" "Online Alert E-mail" and "Online Alert Ticket ID".                                                                                                                                                                                                 |
-| [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609) | Auto-fix Script | This will run as an autofix to the [Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611) and [Online Status Alerting - Machine Restarted](https://proval.itglue.com/DOC-5078775-17543410) monitor sets to change the status of the CW manage ticket.                                                                                  |
-| [Internal Monitor - Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611) | Internal Monitor | This will look for the machines for which the EDF "Online Alert Ticket ID" is filled with Ticket ID and were offline and just came back online. It will then trigger the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609).                                                                                   |
-| [Internal Monitor - Online Status Alerting - Machine Restarted](https://proval.itglue.com/DOC-5078775-17543410) | Internal Monitor | Runs the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609) once a machine comes back online after restart and has either Ticket ID filled in the EDF "Online Alert Ticket ID" or Email ID filled in the EDF "Online Alert E-mail".                                                                 |
-| △ Custom - Autofix - Online Status Alerting                                                                     | Alert Template   | This will run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609).                                                                                                                                                                                                 |
+| [Script - Online Status Alerting - Update EDFs [Param]](<../cwa/scripts/Online Status Alerting - Update EDFs Param.md>)       | Script          | This script can be used to provide input to the computer EDFs "Online Alert Reason" "Online Alert E-mail" and "Online Alert Ticket ID".                                                                                                                                                                                                 |
+| [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) | Auto-fix Script | This will run as an autofix to the [Online Status Alerting - Machine Back Online](<../cwa/monitors/Online Status Alerting - Machine Back Online.md>) and [Online Status Alerting - Machine Restarted](<../cwa/monitors/Online Status Alerting - Machine Restarted.md>) monitor sets to change the status of the CW manage ticket.                                                                                  |
+| [Internal Monitor - Online Status Alerting - Machine Back Online](<../cwa/monitors/Online Status Alerting - Machine Back Online.md>) | Internal Monitor | This will look for the machines for which the EDF "Online Alert Ticket ID" is filled with Ticket ID and were offline and just came back online. It will then trigger the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>).                                                                                   |
+| [Internal Monitor - Online Status Alerting - Machine Restarted](<../cwa/monitors/Online Status Alerting - Machine Restarted.md>) | Internal Monitor | Runs the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) once a machine comes back online after restart and has either Ticket ID filled in the EDF "Online Alert Ticket ID" or Email ID filled in the EDF "Online Alert E-mail".                                                                 |
+| △ Custom - Autofix - Online Status Alerting                                                                     | Alert Template   | This will run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>).                                                                                                                                                                                                 |
 
 ## Implementation
 
 1. Import both scripts, the internal monitor, and the alert template.
-   - [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609)
-   - [Script - Online Status Alerting - Update EDFs [Param]](https://proval.itglue.com/DOC-5078775-13284610)
-   - [Internal Monitor - Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611)
-   - [Internal Monitor - Online Status Alerting - Machine Restarted](https://proval.itglue.com/DOC-5078775-17543410)
+   - [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>)
+   - [Script - Online Status Alerting - Update EDFs [Param]](<../cwa/scripts/Online Status Alerting - Update EDFs Param.md>)
+   - [Internal Monitor - Online Status Alerting - Machine Back Online](<../cwa/monitors/Online Status Alerting - Machine Back Online.md>)
+   - [Internal Monitor - Online Status Alerting - Machine Restarted](<../cwa/monitors/Online Status Alerting - Machine Restarted.md>)
    - `△ Custom - Autofix - Online Status Alerting`
 
-2. Run or debug the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609) against a random Windows computer with the following parameters filled out:
+2. Run or debug the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) against a random Windows computer with the following parameters filled out:
    - `SetEnvironment`  
      - Set this value to 1
    - `Email_Connector_email_Address`  
@@ -39,7 +39,7 @@ The purpose of this solution is to change the status of the ticket in CW Manage 
    - `Status_To_Change_To`  
      - Set this to what the status should change to when the machine comes online.
 
-   For more information on system properties, see the document for script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609).
+   For more information on system properties, see the document for script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>).
 
 3. Reload the System Cache  
    ![Reload the System Cache](../../static/img/Online-Status-Alerting/image_1.png)
@@ -50,14 +50,15 @@ The purpose of this solution is to change the status of the ticket in CW Manage 
    **If they are different from what you specified, update them now.** The SetEnvironment process does not overwrite any existing properties if they exist, so this must be double-checked.
 
 5. Navigate to Automation → Monitors → Internal Monitors
-   - Find the [Internal Monitor - Online Status Alerting - Machine Back Online](https://proval.itglue.com/DOC-5078775-13284611)  
+   - Find the [Internal Monitor - Online Status Alerting - Machine Back Online](<../cwa/monitors/Online Status Alerting - Machine Back Online.md>)  
      - Apply the alert template `△ Custom - Autofix - Online Status Alerting`  
-       - Make sure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609)  
+       - Make sure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>)  
      - Right-click and Run Now on the monitor
-   - Find the [Internal Monitor - Online Status Alerting - Machine Restarted](https://proval.itglue.com/DOC-5078775-17543410)  
+   - Find the [Internal Monitor - Online Status Alerting - Machine Restarted](<../cwa/monitors/Online Status Alerting - Machine Restarted.md>)  
      - Apply the alert template `△ Custom - Autofix - Online Status Alerting`  
-       - Make sure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](https://proval.itglue.com/DOC-5078775-13284609)  
+       - Make sure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>)  
      - Right-click and Run Now on the monitor
+
 
 
 

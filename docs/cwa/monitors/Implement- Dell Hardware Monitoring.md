@@ -14,7 +14,7 @@ unlisted: false
 Import the Alert Template `△ Custom - Ticket Creation Computer [Failures Only]`. The alert template should not be performing any action for the `Warning` state.
 
 ### 2.
-Validate that the [Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854) was imported as well.
+Validate that the [Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) was imported as well.
 
 ### 3.
 Run this SQL query from a RAWSQL monitor set to import the required search.
@@ -244,6 +244,7 @@ Limit to: `Computers - Dell Servers`
 
 ### 8.
 Set the appropriate alert template.
+
 
 
 

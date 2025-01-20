@@ -18,8 +18,8 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 ## Dependencies
 
-- [EPM - Data Collection - Dataview - Microsoft OneDrive Sync Status [Script]](https://proval.itglue.com/DOC-5078775-14227800)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](https://proval.itglue.com/DOC-5078775-14241947)
+- [EPM - Data Collection - Dataview - Microsoft OneDrive Sync Status [Script]](<../dataviews/Microsoft OneDrive Sync Status Script.md>)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../monitors/Execute Script - Microsoft OneDrive Sync Status.md>)
 
 #### Global Parameters
 
@@ -39,6 +39,7 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 - Script log
 - Script states
+
 
 
 

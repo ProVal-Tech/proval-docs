@@ -16,13 +16,14 @@ This solution provides a way to audit the scripts, internal monitors, and datavi
 
 | Content                                                                                      | Type     | Function                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Dataview - ProVal Script Audit](https://proval.itglue.com/DOC-5078775-12097784) | Dataview | Lists all the scripts which are in 'proval', 'Proval - client specific', 'Proval - development' folder. It depicts their sync status with ProSync plugin. Along with that, it helps to identify if script is being used in the environment or not. |
-| [CWM - Automate - Dataview - ProVal Internal Monitor Audit](https://proval.itglue.com/DOC-5078775-12097997) | Dataview | Lists all the internal monitors which contain 'proval' or 'custom' in their names. It depicts their sync status with ProSync plugin. It also details the last scan, fail count, and the groups id it is applied for the monitor.                       |
-| [CWM - Automate - Dataview - ProVal Dataview Audit](https://proval.itglue.com/DOC-5078775-12097873) | Dataview | Lists all the dataviews which are in 'proval' folder. It depicts their sync status with ProSync plugin.                                                                                               |
+| [CWM - Automate - Dataview - ProVal Script Audit](<../cwa/dataviews/ProVal Script Audit.md>) | Dataview | Lists all the scripts which are in 'proval', 'Proval - client specific', 'Proval - development' folder. It depicts their sync status with ProSync plugin. Along with that, it helps to identify if script is being used in the environment or not. |
+| [CWM - Automate - Dataview - ProVal Internal Monitor Audit](<../cwa/dataviews/ProVal Internal Monitor Audit.md>) | Dataview | Lists all the internal monitors which contain 'proval' or 'custom' in their names. It depicts their sync status with ProSync plugin. It also details the last scan, fail count, and the groups id it is applied for the monitor.                       |
+| [CWM - Automate - Dataview - ProVal Dataview Audit](<../cwa/dataviews/ProVal Dataview Audit.md>) | Dataview | Lists all the dataviews which are in 'proval' folder. It depicts their sync status with ProSync plugin.                                                                                               |
 
 ## Implementation
 
-Import the [CWM - Automate - Dataview - ProVal Internal Monitor Audit](https://proval.itglue.com/DOC-5078775-12097997), [CWM - Automate - Dataview - ProVal Dataview Audit](https://proval.itglue.com/DOC-5078775-12097873), and [CWM - Automate - Dataview - ProVal Script Audit](https://proval.itglue.com/DOC-5078775-12097784) dataviews to clients' environment. No additional setup required.
+Import the [CWM - Automate - Dataview - ProVal Internal Monitor Audit](<../cwa/dataviews/ProVal Internal Monitor Audit.md>), [CWM - Automate - Dataview - ProVal Dataview Audit](<../cwa/dataviews/ProVal Dataview Audit.md>), and [CWM - Automate - Dataview - ProVal Script Audit](<../cwa/dataviews/ProVal Script Audit.md>) dataviews to clients' environment. No additional setup required.
+
 
 
 

@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-This table stores the drive's data of the Hyper-Vs at different schedules of the script [Hyper-V Disk Space Record](https://proval.itglue.com/DOC-5078775-13294755).
+This table stores the drive's data of the Hyper-Vs at different schedules of the script [Hyper-V Disk Space Record](<../dataviews/Hyper-V Disk Space Record.md>).
 
 ## Dependencies
 
-[Hyper-V Disk Space Record](https://proval.itglue.com/DOC-5078775-13294757)
+[Hyper-V Disk Space Record](<../dataviews/Hyper-V Disk Space Record.md>)
 
 ## Tables
 
@@ -32,6 +32,7 @@ This table stores the drive's data of the Hyper-Vs at different schedules of the
 | Missing       | TINYINT  | Drive status whether detected in Automate or not |
 | Internal      | TINYINT  | Drive checks whether internal or external/removable |
 | SSD           | TINYINT  | Disk checks whether SSD or not                   |
+
 
 
 

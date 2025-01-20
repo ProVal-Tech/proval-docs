@@ -10,9 +10,9 @@ unlisted: false
 ---
 ## Summary
 
-This task validates whether the endpoint is a primary domain controller or not. It updates the value of [CW RMM - Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215) custom field, which is then used to create the [CW RMM - Machine Group - Infrastructure Master](https://proval.itglue.com/DOC-5078775-14029455) group.
+This task validates whether the endpoint is a primary domain controller or not. It updates the value of [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>) custom field, which is then used to create the [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>) group.
 
-This task should be scheduled to run once per week/month against the [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214) group.
+This task should be scheduled to run once per week/month against the [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group.
 
 ## Sample Run
 
@@ -22,14 +22,14 @@ This task should be scheduled to run once per week/month against the [CW RMM - M
 
 ## Dependencies
 
-- [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214)
-- [CW RMM - Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215)
+- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
+- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
 
 ## Implementation
 
-Create the group [CW RMM - Machine Group - Domain Controllers](https://proval.itglue.com/DOC-5078775-14036214).
+Create the group [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>).
 
-Create the Custom Field [CW RMM - Custom Field - Is Primary Domain Controller](https://proval.itglue.com/DOC-5078775-14036215).
+Create the Custom Field [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>).
 
 ### Create Script
 
@@ -150,6 +150,7 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Custom Field ![Custom Field Output](../../../static/img/Validate-Primary-Domain-Controller/image_30.png)
+
 
 
 

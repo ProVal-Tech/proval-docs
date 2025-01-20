@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_windows_updates](https://proval.itglue.com/DOC-5078775-12275091) table.
+Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_windows_updates](<../tables/pvl_windows_updates.md>) table.
 
 ## Sample Run
 
@@ -18,7 +18,7 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 
 ## Dependencies
 
-- [EPM - Data Collection - Get-WindowsUpdateReport](https://proval.itglue.com/DOC-5078775-10372095)
+- [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
 
 ## Variables
 
@@ -36,7 +36,8 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 ## Output
 
 - Script Log
-- [pvl_windows_updates](https://proval.itglue.com/DOC-5078775-12275091)
+- [pvl_windows_updates](<../tables/pvl_windows_updates.md>)
+
 
 
 

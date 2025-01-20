@@ -14,14 +14,15 @@ This monitor will look for agents where Bitlocker is enabled and data about the 
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Key Retrieval](https://proval.itglue.com/DOC-5078775-8009806)  
+[SEC - Encryption - Script - Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>)  
 This script should be run as an autofix.  
 
-[SEC - Encryption - Custom Table - plugin_proval_bitlocker](https://proval.itglue.com/DOC-5078775-8038616)  
+[SEC - Encryption - Custom Table - plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)  
 
 ## Target
 
 Windows Machine
+
 
 
 

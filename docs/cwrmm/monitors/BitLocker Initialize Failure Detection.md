@@ -14,7 +14,7 @@ This monitor creates a ticket if the BitLocker Initialize fails to enable the Bi
 
 ## Dependencies
 
-[CW RMM Script - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829737)
+[CW RMM Script - BitLocker Initialize C Volume](<../tasks/CW RMM Script - BitLocker Initialize C Volume.md>)
 
 ## Target
 
@@ -63,6 +63,7 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
 
 
 

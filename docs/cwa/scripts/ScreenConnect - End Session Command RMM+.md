@@ -26,7 +26,7 @@ This script will attempt to end a matching session in the CW Control portal usin
 - HTTP GET/POST Plugin in CW Automate
 - System properties
 
-**Note:** This script is a subscript of [CW Control - Uninstall and Remove from Control Web Portal](https://proval.itglue.com/DOC-5078775-7770031)
+**Note:** This script is a subscript of [CW Control - Uninstall and Remove from Control Web Portal](<./CW Control - Uninstall and Remove from Control Web Portal.md>)
 
 ### Variables
 
@@ -55,6 +55,7 @@ This script will populate several variables required for RMM+ to function proper
 ## Output
 
 **Script log messages only**
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Purpose
 
-Stores the current configuration set for the computer from the client-level EDFs defined in the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script document. The data stored in this custom table is used by the [Execute Script - Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973898) internal monitor to detect the computers after making any change to the associated EDFs.
+Stores the current configuration set for the computer from the client-level EDFs defined in the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script document. The data stored in this custom table is used by the [Execute Script - Configure Winget Auto Update](<../cwa/monitors/Execute Script - Configure Winget Auto Update.md>) internal monitor to detect the computers after making any change to the associated EDFs.
 
 ## Dependencies
 
@@ -32,7 +32,8 @@ Stores the current configuration set for the computer from the client-level EDFs
 | updatetime               | varchar   | Update time as set in the client-level EDF `WAU - UpdatesAtTime`.                                   |
 | updatesatlogon          | tinyint   | Are the updates enabled at user login too? (0/1)                                                    |
 | donotrunafterinstallation| tinyint   | Is the WAU allowed to run after installation? (0/1)                                                 |
-| remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](https://proval.itglue.com/DOC-5078775-17973900) remote monitor creation enabled? (0/1) |
+| remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](<../cwa/monitors/Winget Auto Update Errors.md>) remote monitor creation enabled? (0/1) |
+
 
 
 

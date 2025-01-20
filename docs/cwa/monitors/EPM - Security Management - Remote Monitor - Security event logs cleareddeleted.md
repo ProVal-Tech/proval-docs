@@ -32,7 +32,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -46,7 +46,8 @@ Windows Computers
 
 ## Implementation
 
-[Import - Remote Monitor - Security event logs cleared/deleted](https://proval.itglue.com/DOC-5078775-14946240)
+[Import - Remote Monitor - Security event logs cleared/deleted](<./Security event logs cleareddeleted.md>)
+
 
 
 

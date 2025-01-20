@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-Stores baseline information about Office 365 users gathered by the script [O365 - Audit Users to Custom Table [DV]](https://proval.itglue.com/DOC-5078775-8071511).
+Stores baseline information about Office 365 users gathered by the script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>).
 
 ## Dependencies
 
-[O365 - Audit Users to Custom Table [DV]](https://proval.itglue.com/DOC-5078775-8071511).
+[O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>).
 
 ## Table
 
@@ -28,6 +28,7 @@ Stores baseline information about Office 365 users gathered by the script [O365 
 | IsLicensed   | CHAR | True or False depending on if the user is licensed or not.     |
 | 2FAStatus   | CHAR | String denoting the type of 2FA set up on the account.         |
 | ContactID   | INT  | The ContactID associated with the O365 user. Will be NULL if a match cannot be found. |
+
 
 
 

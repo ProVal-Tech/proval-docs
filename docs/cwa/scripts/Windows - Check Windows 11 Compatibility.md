@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script will create the `plugin_proval_windows11_readiness` table if it's missing from the environment. Then will run a PowerShell script against the target Windows machine and will update the [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448) table with the relevant data. This data can be viewed in the [Windows 11 Upgrade Compatibility](https://proval.itglue.com/DOC-5078775-8355449) dataview.
+The script will create the `plugin_proval_windows11_readiness` table if it's missing from the environment. Then will run a PowerShell script against the target Windows machine and will update the [plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>) table with the relevant data. This data can be viewed in the [Windows 11 Upgrade Compatibility](<../dataviews/Windows 11 Upgrade Compatibility.md>) dataview.
 
 ## Sample Run
 
@@ -22,13 +22,14 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 |---------------------|--------------------------------------------------------------------------------------------------|
 | ProjectName         | Check-Windows11Compatibility                                                                     |
 | WorkingDirectory     | C:/ProgramData/_Automation/Scripts/Check-Windows11Compatibility                                 |
-| TableName           | [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448)             |
+| TableName           | [plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)             |
 | ScriptPath          | C:/ProgramData/_Automation/Scripts/Check-Windows11Compatibili/Check-Windows11Compatibility.ps1 |
 
 ## Output
 
-Dataview: [Windows 11 Upgrade Compatibility](https://proval.itglue.com/DOC-5078775-8355449)  
-Custom table: [plugin_proval_windows11_readiness](https://proval.itglue.com/DOC-5078775-8355448)
+Dataview: [Windows 11 Upgrade Compatibility](<../dataviews/Windows 11 Upgrade Compatibility.md>)  
+Custom table: [plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)
+
 
 
 

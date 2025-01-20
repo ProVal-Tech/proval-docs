@@ -20,7 +20,7 @@ It will run as an autofix with dependent monitor.
 
 ## Dependencies
 
-[Update Orchestrator Service Status Detection](https://proval.itglue.com/DOC-5078775-7909077)  
+[Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>)  
 
 ## Process
 
@@ -31,6 +31,7 @@ It will run as an autofix with dependent monitor.
 ## Output
 
 - Script log
+
 
 
 

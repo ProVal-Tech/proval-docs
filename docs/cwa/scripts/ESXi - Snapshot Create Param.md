@@ -23,7 +23,7 @@ Example:  CW-Automate-Temp-Snapshot_20230501_081958
 Notes: 
 
 - The script must be executed from a machine reachable to the ESXi Host.
-- [CWM - Automate - ESXi - Snapshot Delete [Param]](https://proval.itglue.com/DOC-5078775-12767506) will be called to remove the generated snapshot after the hours passed for the @Hours_To_Keep@ user parameter. The schedule depends on the computer's status in Automate. e.g., @Hours_To_Keep@ is set to 24, then Automate will schedule the deletion script to run on the very same machine after 24 hours, but the deletion script will not work if the machine will be offline after 24 hours.
+- [CWM - Automate - ESXi - Snapshot Delete [Param]](<./CWM - Automate - ESXi - Snapshot Delete Param.md>) will be called to remove the generated snapshot after the hours passed for the @Hours_To_Keep@ user parameter. The schedule depends on the computer's status in Automate. e.g., @Hours_To_Keep@ is set to 24, then Automate will schedule the deletion script to run on the very same machine after 24 hours, but the deletion script will not work if the machine will be offline after 24 hours.
 - So, it's suggested to execute the script against the servers that are mostly online.
 
 ## Prerequisite
@@ -51,7 +51,7 @@ Notes:
 
 ## Dependencies
 
-[CWM - Automate - ESXi - Snapshot Delete [Param]](https://proval.itglue.com/DOC-5078775-12767506)
+[CWM - Automate - ESXi - Snapshot Delete [Param]](<./CWM - Automate - ESXi - Snapshot Delete Param.md>)
 
 ## Variables
 
@@ -132,6 +132,7 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate Failed to create Snapshot for the Virtual machine @VMName@. Please review manually. 
 PowerShell script Result: @psout@
 ```
+
 
 
 

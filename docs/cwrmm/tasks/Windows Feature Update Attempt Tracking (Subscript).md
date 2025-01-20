@@ -14,12 +14,12 @@ This script is a subscript used for tracking the number of times the Windows Fea
 
 ## Sample Run
 
-The script is intended to be called from the task [CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845) and should not be executed manually.
+The script is intended to be called from the task [CW RMM - Task - Feature Update Install With Tracking](<./Feature Update Install With Tracking.md>) and should not be executed manually.
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](https://proval.itglue.com/DOC-5078775-12947845)
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](https://proval.itglue.com/DOC-5078775-12949095)
+- [CW RMM - Task - Feature Update Install With Tracking](<./Feature Update Install With Tracking.md>)
+- [CW RMM - Custom Field - WinFeatUpgradeAttempts](<../custom-fields/WinFeatUpgradeAttempts.md>)
 
 ## Create Script
 
@@ -245,6 +245,7 @@ Click the `Save` button to save the Task.
 
 - Script Log
 - Custom Field
+
 
 
 

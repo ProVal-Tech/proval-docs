@@ -14,7 +14,7 @@ The remote monitor is responsible for CPU temperature monitoring on physical Win
 
 The remote monitor verifies if the current temperature readings from the sensors exceed the permissible temperature for more than two consecutive executions of the monitor set. If this condition is met, it triggers a failure.
 
-The monitor set is established by the [EPM - Sensors - Script - CPU Temperature Monitor - Create](https://proval.itglue.com/DOC-5078775-14323116) script, and its configuration is dependent on the system properties and the EDFs, as detailed in the [script's](https://proval.itglue.com/DOC-5078775-14323116) documentation.
+The monitor set is established by the [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>) script, and its configuration is dependent on the system properties and the EDFs, as detailed in the [script's](<../scripts/CPU Temperature Monitor - Create.md>) documentation.
 
 ## Details
 
@@ -26,9 +26,9 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 ## Dependencies
 
-- [EPM - Sensors - Script - CPU Temperature Monitor - Create](https://proval.itglue.com/DOC-5078775-14323116)
-- [EPM - Sensors - Internal Monitor - Execute Script - CPU Temperature Monitor - Create](https://proval.itglue.com/DOC-5078775-14323118)
-- [EPM - Sensors - Script - CPU Temperature Monitor - Manage](https://proval.itglue.com/DOC-5078775-14323117)
+- [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>)
+- [EPM - Sensors - Internal Monitor - Execute Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>)
+- [EPM - Sensors - Script - CPU Temperature Monitor - Manage](<../scripts/CPU Temperature Monitor - Manage.md>)
 
 ## Ticketing
 
@@ -36,6 +36,7 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/CPU-Temperature-Monitoring-Process/image_1.png)
+
 
 
 

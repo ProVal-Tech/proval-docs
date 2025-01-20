@@ -24,17 +24,17 @@ The p.Scriptruntime days in the monitor need to be set with one increment day to
 
 ![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_2.png)
 
-Please review monitor [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849458) and get the value from it from the hs.dateissued days and set it with one day addition in the monitor p.scriptruntime value.
+Please review monitor [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<./Execute Script - Get Latest Installed Cumulative Update.md>) and get the value from it from the hs.dateissued days and set it with one day addition in the monitor p.scriptruntime value.
 
 ![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_3.png)
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 - [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
-- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
-- [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849458)
+- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]*](<../scripts/Out of Date Cumulative Updates Autofix.md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<./Execute Script - Get Latest Installed Cumulative Update.md>)
 
 ## Target
 
@@ -44,13 +44,14 @@ Global
 
 `△ Custom - Autofix - Out of Date Cumulative Updates`
 
-The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]*](https://proval.itglue.com/DOC-5078775-14790498) script.
+The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]*](<../scripts/Out of Date Cumulative Updates Autofix.md>) script.
 
 ## FAQ
 
-**Q1)** What happens if the machine hasn't logged in for several days or the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different than the lastruntime check from the table "[Custom Table - pvl_win_latest_installed_cu](https://proval.itglue.com/DOC-5078775-12849460)"?
+**Q1)** What happens if the machine hasn't logged in for several days or the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different than the lastruntime check from the table "[Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)"?
 
 **Ans)** This monitor will ignore the agents whose last contact date is older than 7 days from monitoring and also exclude the agents where the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) has not run from the scheduled days period which should be matched to the p.scriptruntime set in the monitor.
+
 
 
 

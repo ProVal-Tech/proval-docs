@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](https://proval.itglue.com/DOC-5078775-11262317) and places the CSV it generates into GetFiles for client and consultant access.
+Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into GetFiles for client and consultant access.
 
 ## Example Agent Procedure Log
 
@@ -50,11 +50,12 @@ Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](https://proval
 
 ## Process
 
-Downloads and Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](https://proval.itglue.com/DOC-5078775-11262317) and places the CSV it generates into GetFiles.
+Downloads and Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into GetFiles.
 
 ## Output
 
 Agent Procedure Log
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The Purpose of this monitor set is to detect the machines that do have not any Cumulative/Security Patches installed in the past X days. It will not detect any EOL machine, and will only detect the machines where [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682) script is executed even once over the past 7 days.
+The Purpose of this monitor set is to detect the machines that do have not any Cumulative/Security Patches installed in the past X days. It will not detect any EOL machine, and will only detect the machines where [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script is executed even once over the past 7 days.
 
 Suggested Alert Template: ~Custom - Ticket Creation Computer
 
@@ -36,8 +36,8 @@ NOTES:
 ## Dependencies
 
 - [EPM - Solution - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275092)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
-- [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -58,6 +58,7 @@ SQL is limiting it to the machines with Managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
+
 
 
 

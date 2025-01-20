@@ -160,7 +160,8 @@ Validate the presence of the `SMB1 Traffic Detection` remote monitor on the grou
 ![Image](../../../static/img/Implement--SMB1-Traffic-Detection/image_3.png)
 
 ## Step 6.
-Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](https://proval.itglue.com/DOC-5078775-13459854) script for errors/failures.
+Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) script for errors/failures.
+
 
 
 

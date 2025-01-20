@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-An Automate implementation of the agnostic script [SEC - Encryption - Agnostic - Enable-TPM](https://proval.itglue.com/DOC-5078775-11409203). Initializes Tpm as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used. A restart may be required to initialize TPM.
+An Automate implementation of the agnostic script [SEC - Encryption - Agnostic - Enable-TPM](<../../powershell/Enable-TPM.md>). Initializes Tpm as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used. A restart may be required to initialize TPM.
 
 ## Sample Run
 
@@ -18,7 +18,7 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 
 ## Dependencies
 
-- [SEC - Encryption - Agnostic - Enable-TPM](https://proval.itglue.com/DOC-5078775-11409203)
+- [SEC - Encryption - Agnostic - Enable-TPM](<../../powershell/Enable-TPM.md>)
 
 #### Global Parameters
 
@@ -35,6 +35,7 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 ## Output
 
 - Script Logs
+
 
 
 

@@ -15,11 +15,11 @@ This dataview displays information related to Group Policy Objects in Active Dir
 ## Dependencies
 
 **Custom tables**  
-- [plugin_proval_ad_gpo](https://proval.itglue.com/DOC-5078775-7948720)  
-- [plugin_proval_ad_gposf](https://proval.itglue.com/DOC-5078775-7950250)  
+- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)  
+- [plugin_proval_ad_gposf](<../tables/plugin_proval_ad_gposf.md>)  
 
 **Script**  
-- [RSM - Active Directory - Script - Group Policy - Audit](https://proval.itglue.com/DOC-5078775-15193954)  
+- [RSM - Active Directory - Script - Group Policy - Audit](<../scripts/Group Policy - Audit.md>)  
 - [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)  
 
 ## Columns
@@ -39,6 +39,7 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | CreatedTime    | When the GPO was created                                                                        |
 | ModifiedTime   | The last time this GPO was modified                                                             |
 | ReadTime       | Last time this GPO was read.                                                                    |
+
 
 
 

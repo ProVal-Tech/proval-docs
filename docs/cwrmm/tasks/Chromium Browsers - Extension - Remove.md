@@ -20,7 +20,7 @@ Remove Extensions from the Popular Chromium Browsers ('Chrome', 'Edge', 'Brave',
 
 ## Dependencies
 
-[SWM - Software Configuration - Unregister-ChromiumExtension](https://proval.itglue.com/DOC-5078775-7267405)
+[SWM - Software Configuration - Unregister-ChromiumExtension](<../../powershell/Unregister-ChromiumExtension.md>)
 
 ## User Parameters
 
@@ -134,6 +134,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
 
 
 

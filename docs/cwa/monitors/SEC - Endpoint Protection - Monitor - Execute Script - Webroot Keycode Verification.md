@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-8223773) has not run in the last 30 days and the agent has Webroot installed and the deployment enabled.
+This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification](<../scripts/Webroot Keycode Verification.md>) has not run in the last 30 days and the agent has Webroot installed and the deployment enabled.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-8223773)
+- [EPM - Data Collection - Script - Webroot Keycode Verification](<../scripts/Webroot Keycode Verification.md>)
 
 ## Ticketing
 
@@ -24,6 +24,7 @@ This monitor checks the online agent where the script [EPM - Data Collection - S
 ## Target
 
 - Global
+
 
 
 

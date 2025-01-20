@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script removes the specified Wifi profile from the system. A brief summary of what this script is used for and any important notes about how to run the script. CW RMM implementation of the agnostic script [Remove-WifiProfile](https://proval.itglue.com/DOC-5078775-16088533).
+This script removes the specified Wifi profile from the system. A brief summary of what this script is used for and any important notes about how to run the script. CW RMM implementation of the agnostic script [Remove-WifiProfile](<../../powershell/Remove-WifiProfile.md>).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This script removes the specified Wifi profile from the system. A brief summary 
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic Script - Remove-WifiProfile](https://proval.itglue.com/DOC-5078775-16088533)
+[EPM - Windows Configuration - Agnostic Script - Remove-WifiProfile](<../../powershell/Remove-WifiProfile.md>)
 
 ## User Parameters
 
@@ -173,6 +173,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

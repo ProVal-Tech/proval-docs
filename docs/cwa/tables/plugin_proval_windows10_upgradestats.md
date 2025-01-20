@@ -14,8 +14,8 @@ Contains data regarding the Windows 10 - Feature Update - Install Latest script 
 
 ## Dependencies
 
-- [SEC - Windows Patching - Agnostic - Update-Windows10](https://proval.itglue.com/DOC-5078775-9447713)
-- [SEC - Windows Patching - Windows 10 Update](https://proval.itglue.com/DOC-5078775-9560440)
+- [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>)
+- [SEC - Windows Patching - Windows 10 Update](<../../solutions/Windows 10 Update.md>)
 
 ## Tables
 
@@ -30,6 +30,7 @@ Contains data regarding the Windows 10 - Feature Update - Install Latest script 
 | Successes          | TinyInt   | The Count of Successful installations for this version.                                        |
 | Failures           | TinyInt   | The Count of Failed attempts to install this version.                                          |
 | TotalAttempts      | INT       | The Total attempts it took to upgrade to this version.                                         |
+
 
 
 

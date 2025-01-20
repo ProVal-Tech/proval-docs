@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script is a replication of the [CWM - Automate - Script - Ticket Creation - Computer](https://proval.itglue.com/DOC-5078775-9098338) script, with the key distinction being that it generates client-level tickets instead of computer-level tickets.
+This script is a replication of the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script, with the key distinction being that it generates client-level tickets instead of computer-level tickets.
 
 It is imperative to incorporate the `Clientid` in the SQL query of a RAWSQL monitor set when utilizing this script for alerting in conjunction with the monitor set. This ensures that the script functions correctly and aligns with the monitoring and alerting requirements.
 
@@ -22,6 +22,7 @@ It is imperative to incorporate the `Clientid` in the SQL query of a RAWSQL moni
 
 - Script Log
 - Client-level Ticket
+
 
 
 

@@ -22,8 +22,8 @@ Overall, the "CWM - Automate - Script - Windows Installer Properties [DV]" scrip
 
 ## Dependencies
 
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](https://proval.itglue.com/DOC-5078775-10546355)
-- [CWM - Automate - Script - PowerShell Response - All Errors - Check](https://proval.itglue.com/DOC-5078775-11738521)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
+- [CWM - Automate - Script - PowerShell Response - All Errors - Check](<./PowerShell Response - All Errors - Check.md>)
 
 ## Variables
 
@@ -38,6 +38,7 @@ Overall, the "CWM - Automate - Script - Windows Installer Properties [DV]" scrip
 - Custom Table
 - Dataview
 - Script Logs
+
 
 
 

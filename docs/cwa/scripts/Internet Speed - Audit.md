@@ -23,7 +23,7 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 
 ## Dependencies
 
-[EPM - Network - Agnostic - Test-InternetSpeed](https://proval.itglue.com/DOC-5078775-9099825)  
+[EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>)  
 
 ## User Parameter
 
@@ -40,7 +40,7 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 
 ## Process
 
-See [EPM - Network - Agnostic - Test-InternetSpeed](https://proval.itglue.com/DOC-5078775-9099825) for detailed information about the process. The script takes the output from this agnostic script and inserts it into a table: [EPM - Network - Custom Table - plugin_proval_speedtest_audit](https://proval.itglue.com/DOC-5078775-9166228).
+See [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>) for detailed information about the process. The script takes the output from this agnostic script and inserts it into a table: [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
 
 ## Output
 
@@ -53,6 +53,7 @@ See [EPM - Network - Agnostic - Test-InternetSpeed](https://proval.itglue.com/DO
 ## Sample Email
 
 ![Sample Email Image](../../../static/img/Internet-Speed---Audit/image_4.png)
+
 
 
 

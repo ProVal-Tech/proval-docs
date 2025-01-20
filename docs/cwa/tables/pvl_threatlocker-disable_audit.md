@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Purpose
 
-This table stores the data of the script [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697) where it shows the computerid, learning mode duration, start time of the learning mode, end time of the learning mode, the reason for learning mode, and which LT user set the learning mode, the status of the learning mode whether successfully set or failed and the complete log.
+This table stores the data of the script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>) where it shows the computerid, learning mode duration, start time of the learning mode, end time of the learning mode, the reason for learning mode, and which LT user set the learning mode, the status of the learning mode whether successfully set or failed and the complete log.
 
 ## Dependencies
 
-[Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697)
+[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)
 
 ## Tables
 
@@ -23,13 +23,14 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | Column               | Type     | Explanation                                                                                                         |
 |----------------------|----------|---------------------------------------------------------------------------------------------------------------------|
 | computerid           | INT      | computerid of the agent                                                                                            |
-| Username             | VARCHAR  | Stores the LT username who ran the script "[Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697)" to set threatlocker learning mode. |
+| Username             | VARCHAR  | Stores the LT username who ran the script "[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)" to set threatlocker learning mode. |
 | StartTime            | DATETIME | It stores the start time from which the learning mode disabled started.                                          |
 | EndTime              | DATETIME | It stores the end time when the threatlocker protection will resume.                                             |
-| Reason               | VARCHAR  | It stores the reason why the learning mode is set. This needed to be provided by the LT Run user who executes the script "[Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697)" manually. |
+| Reason               | VARCHAR  | It stores the reason why the learning mode is set. This needed to be provided by the LT Run user who executes the script "[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)" manually. |
 | LearningModeDuration  | INT      | This stores the number of hours for which the threatlocker learning mode is set.                                 |
 | Status               | VARCHAR  | This stores either "Success" or "Failed" for the learning mode set result.                                      |
 | LogRecord            | VARCHAR  | This stores the logs of script success or failure.                                                                |
+
 
 
 

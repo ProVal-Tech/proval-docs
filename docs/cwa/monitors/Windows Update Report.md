@@ -10,17 +10,17 @@ unlisted: false
 ---
 ## Summary
 
-This is an optional monitor set to keep an eye on the machines where [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682) script had executed at least twice in a month but failed to fetch any data.
+This is an optional monitor set to keep an eye on the machines where [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script had executed at least twice in a month but failed to fetch any data.
 
 By default it's a view-only monitor set but the `default - create automate ticket` alert template can be used to create tickets.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10861682)
-- [CWM - Automate - Internal Monitor - ProVal - Development - Fetch Windows Update Report [DV]](https://proval.itglue.com/DOC-5078775-10946276)
+- [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
+- [CWM - Automate - Internal Monitor - ProVal - Development - Fetch Windows Update Report [DV]](<./Get Windows Update Report DV.md>)
 - [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
-- [CWM - Automate - Custom Table - plugin_proval_windows_update_report](https://proval.itglue.com/DOC-5078775-10861700)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-7780690)
+- [CWM - Automate - Custom Table - plugin_proval_windows_update_report](<../tables/plugin_proval_windows_update_report.md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 
 ## Target
 
@@ -104,6 +104,7 @@ WHERE
     'Yes'
   ) \<> 'Yes'
 ```
+
 
 
 

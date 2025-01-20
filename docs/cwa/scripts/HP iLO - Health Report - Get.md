@@ -26,7 +26,7 @@ The `Title` for password entry saved for the iLO Device in the following format:
 
 - **iLO Automation Password - /\<iLO Device Name/>**
 
-  Example: `iLO Automation Password - DeviceName2`; While saving the password like this, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037) monitor set will execute the script against any random computer from the network of the IP Address stored in the `URL` field, to fetch the information for the iLO Device `DeviceName2`.
+  Example: `iLO Automation Password - DeviceName2`; While saving the password like this, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>) monitor set will execute the script against any random computer from the network of the IP Address stored in the `URL` field, to fetch the information for the iLO Device `DeviceName2`.
 
   It is recommended to utilize the first method for saving the password. The second method should be reserved for situations where unique networking configurations restrict other devices from accessing the iLO.
 
@@ -34,7 +34,7 @@ The `Title` for password entry saved for the iLO Device in the following format:
 
 - **iLO Automation Password - /\<iLO Device Name/> (/\<Computerid to Connect to the device/>)**
 
-  Example: `iLO Automation Password - DeviceName3 (670)`; While saving the password like this, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037) monitor set will execute the script against the computerid 670, to fetch the information for the iLO Device `DeviceName3` with the IP Address stored in the password's `URL` field.
+  Example: `iLO Automation Password - DeviceName3 (670)`; While saving the password like this, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>) monitor set will execute the script against the computerid 670, to fetch the information for the iLO Device `DeviceName3` with the IP Address stored in the password's `URL` field.
 
   ![Image](../../../static/img/HP-iLO---Health-Report---Get/image_2.png)
 
@@ -48,7 +48,7 @@ The `Title` for password entry saved for the iLO Device in the following format:
 
 ## Sample Run
 
-**RecreateTable:** Set the value to 1 to re-create the [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560) table. It is suggested to run the script for the first time with 1 for this parameter.
+**RecreateTable:** Set the value to 1 to re-create the [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>) table. It is suggested to run the script for the first time with 1 for this parameter.
 
 ![Image](../../../static/img/HP-iLO---Health-Report---Get/image_4.png)
 
@@ -60,7 +60,7 @@ The `Title` for password entry saved for the iLO Device in the following format:
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037)
+[CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>)
 
 ## Variables
 
@@ -77,14 +77,14 @@ The `Title` for password entry saved for the iLO Device in the following format:
 
 | Name          | Example                      | Required | Description                                                                                                           |
 |---------------|------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| PasswordTitle | iLO Automation Password       | True     | This title should not be changed as the internal monitor [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037) depends on it. Also, this password entry can be set either at the client or location level. |
+| PasswordTitle | iLO Automation Password       | True     | This title should not be changed as the internal monitor [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>) depends on it. Also, this password entry can be set either at the client or location level. |
 
 ## User Parameters
 
 | Name              | Example                     | Required | Description                                                                                                                                                                                           |
 |-------------------|-----------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ILO_Password_Title| HPILO Password - DeviceName | True     | To override the value of the global parameter `PasswordTitle`. If this parameter is set, then the script will instead utilize the password title supplied by this parameter rather than the one saved in the global parameter. This password entry can be saved either at the client level as the script target. |
-| Recreate Table     | 0 or 1                     | False    | Set the value to 1 to re-create the [plugin_proval_ilo_health_report](https://proval.itglue.com/DOC-5078775-10072560) table. It is suggested to run the script for the first time with 1 for this parameter.Recreating the table will remove the existing information from the table if it already exists. |
+| Recreate Table     | 0 or 1                     | False    | Set the value to 1 to re-create the [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>) table. It is suggested to run the script for the first time with 1 for this parameter.Recreating the table will remove the existing information from the table if it already exists. |
 
 ## Output
 
@@ -95,7 +95,7 @@ The `Title` for password entry saved for the iLO Device in the following format:
 
 ## Ticketing
 
-The script is capable of generating tickets for five distinct failures. However, it will only create tickets at the client level. Ticketing feature of the script can be enabled by setting the ticket category in the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](https://proval.itglue.com/DOC-5078775-12879037) monitor set.
+The script is capable of generating tickets for five distinct failures. However, it will only create tickets at the client level. Ticketing feature of the script can be enabled by setting the ticket category in the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>) monitor set.
 
 ![Image](../../../static/img/HP-iLO---Health-Report---Get/image_6.png)
 
@@ -120,6 +120,7 @@ The script is capable of generating tickets for five distinct failures. However,
    
 5. If the script is executed by the internal monitor and the computerid is not specified in the password entry or the monitor set cannot locate any online computer on the client's network, which matches the network of the IP address specified in the `URL` field of the password entry for the HP iLO device.  
    **Body:** Unable to find a computer online at %clientname% within the network(s) @Network@. Automate will not be able to gather details for the HPILO device(s) based on the provided password entry(ies) @Title@.
+
 
 
 

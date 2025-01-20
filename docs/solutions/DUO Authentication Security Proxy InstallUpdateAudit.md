@@ -25,14 +25,14 @@ The aim is to perform the DUO Authentication Security Proxy installation and upd
 | Content                                                                                             | Type         | Description                                                                                              |
 |-----------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------|
 | [CW RMM - Group - DUO Auth Proxy Deployment](https://proval.itglue.com/DOC-5078775-17914130)       | Dynamic Group | This group adds the agent to the group for the "DUO Security Authentication Proxy" deployment. The agent gets added if the company custom field "DUO Proxy Deployment" is checked. |
-| [CW RMM - Group - DUO Auth Proxy Deployed Devices](https://proval.itglue.com/DOC-5078775-17914500) | Dynamic Group | This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version". It is built for auditing purposes. |
-| [CW RMM - Group - DUO Auth Proxy Deployment Failed](https://proval.itglue.com/DOC-5078775-17914492) | Dynamic Group | This contains the devices where the "DUO Security Authentication Proxy" application deployment failed by the script "DUO Auth Proxy - Install/Update Latest Version". It is built for auditing purposes. |
+| [CW RMM - Group - DUO Auth Proxy Deployed Devices](<../cwrmm/groups/DUO Auth Proxy Deployed Devices.md>) | Dynamic Group | This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version". It is built for auditing purposes. |
+| [CW RMM - Group - DUO Auth Proxy Deployment Failed](<../cwrmm/groups/DUO Auth Proxy Deployment Failed.md>) | Dynamic Group | This contains the devices where the "DUO Security Authentication Proxy" application deployment failed by the script "DUO Auth Proxy - Install/Update Latest Version". It is built for auditing purposes. |
 
 ### Task
 
 | Content                                                                                             | Type   | Description                                                                                              |
 |-----------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------|
-| [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](https://proval.itglue.com/DOC-5078775-17914124) | Script | The script installs or updates the DUO Authentication Proxy application to the latest available version. |
+| [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](<../cwrmm/tasks/DUO Auth Proxy - InstallUpdate Latest Version.md>) | Script | The script installs or updates the DUO Authentication Proxy application to the latest available version. |
 
 ## Implementation
 
@@ -42,11 +42,12 @@ The aim is to perform the DUO Authentication Security Proxy installation and upd
 
 2. Create the following device groups:  
    [CW RMM - Group - DUO Auth Proxy Deployment](https://proval.itglue.com/DOC-5078775-17914130)  
-   [CW RMM - Group - DUO Auth Proxy Deployed Devices](https://proval.itglue.com/DOC-5078775-17914500)  
-   [CW RMM - Group - DUO Auth Proxy Deployment Failed](https://proval.itglue.com/DOC-5078775-17914492)  
+   [CW RMM - Group - DUO Auth Proxy Deployed Devices](<../cwrmm/groups/DUO Auth Proxy Deployed Devices.md>)  
+   [CW RMM - Group - DUO Auth Proxy Deployment Failed](<../cwrmm/groups/DUO Auth Proxy Deployment Failed.md>)  
 
 3. Create and deploy the following tasks:  
-   [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](https://proval.itglue.com/DOC-5078775-17914124)  
+   [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](<../cwrmm/tasks/DUO Auth Proxy - InstallUpdate Latest Version.md>)  
+
 
 
 

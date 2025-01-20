@@ -10,12 +10,12 @@ unlisted: false
 ---
 ## Summary
 
-This dataview stores the result of the threatlocker learning mode setting done via script [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697).
+This dataview stores the result of the threatlocker learning mode setting done via script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>).
 
 ## Dependencies
 
-- [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697)
-- [Custom Table - pvl_threatlocker-disable_audit](https://proval.itglue.com/DOC-5078775-16557699)
+- [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)
+- [Custom Table - pvl_threatlocker-disable_audit](<../tables/pvl_threatlocker-disable_audit.md>)
 
 ## Columns
 
@@ -26,13 +26,14 @@ This dataview stores the result of the threatlocker learning mode setting done v
 | Computer                  | Name of the agent                                                                                          |
 | Operating System          | This displays the OS name of the agent                                                                     |
 | LastContact               | It shows the agent's last contact with the Automate control center                                         |
-| LTUserName                | This stores the LT user name who scheduled the learning mode via executing script [Script - Threatlocker - Set Learning Mode](https://proval.itglue.com/DOC-5078775-16557697) |
+| LTUserName                | This stores the LT user name who scheduled the learning mode via executing script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>) |
 | LearningMode Reason       | This stores the learning mode reason set by the lt user.                                                  |
 | LearningMode StartTime    | This shows the learning mode start date and time                                                          |
 | LearningMode EndTime      | This shows the learning mode end date and time                                                            |
 | LearningModeDuration (Hours) | This shows the learning mode duration in hours                                                          |
 | LearningMode Set Status    | This stores the learning mode status whether successfully set or failed.                                   |
 | LearningMode Log Record    | This stores the learning mode logs of success or failure.                                                 |
+
 
 
 

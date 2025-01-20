@@ -11,7 +11,7 @@ unlisted: false
 ## Step 1
 Download attached file
 
-Please download the [Import_All_AD_Reports.SQL](https://proval.itglue.com/DOC-5078775-9331097) attached to this document for the EPM - Accounts - Report - Active Directory Reporting Solution.
+Please download the [Import_All_AD_Reports.SQL](<../cwa/reports/Active Directory Reporting Solution.md>) attached to this document for the EPM - Accounts - Report - Active Directory Reporting Solution.
 
 ## Step 2
 Import to Automate environment
@@ -20,7 +20,8 @@ Import the file using System → General → Import → SQL File (The SQL file i
 
 ![Image](../../static/img/Active-Directory-Reporting-SQL-Import-Attachment/image_1.png)
 
-Note: Import the SQL file only after importing the Script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) and executing the script [AD - Create Views/Table/Schedule for AD Reporting Solution](https://proval.itglue.com/DOC-5078775-9492882).
+Note: Import the SQL file only after importing the Script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) and executing the script [AD - Create Views/Table/Schedule for AD Reporting Solution](<../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>).
+
 
 
 

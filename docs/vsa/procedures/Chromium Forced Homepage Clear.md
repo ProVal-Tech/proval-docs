@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-Clears enforced homepage in Chromium-based browsers. Implementation of agnostic content: [SWM - Software Configuration - Clear-ChromiumHomepage](https://proval.itglue.com/DOC-5078775-11515448)
+Clears enforced homepage in Chromium-based browsers. Implementation of agnostic content: [SWM - Software Configuration - Clear-ChromiumHomepage](<../../powershell/Clear-ChromiumHomepage.md>)
 
 ## Example Agent Procedure Log
 
@@ -45,6 +45,7 @@ Clears enforced homepage in Chromium-based browsers. Implementation of agnostic 
 
 - Agnostic content logs
 - Agent Procedure Log
+
 
 
 

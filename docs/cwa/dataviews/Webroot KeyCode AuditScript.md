@@ -14,7 +14,7 @@ This dataview will show the Webroot hashed keycode present on the machine, the s
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-8223773)
+- [EPM - Data Collection - Script - Webroot Keycode Verification](<../scripts/Webroot Keycode Verification.md>)
 - [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420)
 
 ## Columns
@@ -27,6 +27,7 @@ This dataview will show the Webroot hashed keycode present on the machine, the s
 | OS                  | Display the Operating System.                                         |
 | Encrypted Keycode   | Display the currently present webroot Encrypted keycode.              |
 | KeyCode Status      | Display the keycode status, whether it matches the keycode setup under the webroot plugin. |
+
 
 
 

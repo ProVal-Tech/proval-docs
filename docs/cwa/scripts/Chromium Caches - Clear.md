@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-ChromiumCache](https://proval.itglue.com/DOC-5078775-10371996).
+This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-ChromiumCache](<../../powershell/Clear-ChromiumCache.md>).
 
 ## Sample Run
 
@@ -25,6 +25,7 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
+
 
 
 

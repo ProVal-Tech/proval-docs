@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The purpose of the remote monitor is to detect the newly created/promoted local admins and create a ticket. It uses the [EPM - User Management - Agnostic - Get-NewLocalAdmin](https://proval.itglue.com/DOC-5078775-14068833) agnostic script to perform the monitoring.
+The purpose of the remote monitor is to detect the newly created/promoted local admins and create a ticket. It uses the [EPM - User Management - Agnostic - Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>) agnostic script to perform the monitoring.
 
 ## Details
 
@@ -28,7 +28,7 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](https://proval.itglue.com/DOC-5078775-13459854)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
@@ -40,7 +40,7 @@ The monitor set should be limited to the `\<All Computers Excluding Domain Contr
 
 ## Implementation
 
-Please follow the instructions provided in the implementation article to implement the solution: [Implement - Remote Monitor - New Local Admin](https://proval.itglue.com/DOC-5078775-14069154)
+Please follow the instructions provided in the implementation article to implement the solution: [Implement - Remote Monitor - New Local Admin](<./New Local Admin.md>)
 
 ## Ticketing
 
@@ -55,6 +55,7 @@ Please follow the instructions provided in the implementation article to impleme
 ![Example Image](../../../static/img/New-Local-Admin/image_3.png)
 
 **Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
 
 
 

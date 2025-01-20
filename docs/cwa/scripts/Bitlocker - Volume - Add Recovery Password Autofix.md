@@ -12,9 +12,9 @@ unlisted: false
 
 The script is designed to add a recovery password to a drive where BitLocker is enabled but a key protector is not found. It is a copy of the [SEC - Encryption - Script - Bitlocker - Volume - Initialize](https://proval.itglue.com/DOC-5078775-8934308) script with a hardcoded parameter.
 
-It will disable the currently applied BitLocker protection using [SEC - Encryption - Script - Bitlocker - Remove Volume](https://proval.itglue.com/DOC-5078775-8953686) script before re-enabling it with Recovery Password protector.
+It will disable the currently applied BitLocker protection using [SEC - Encryption - Script - Bitlocker - Remove Volume](<./Bitlocker - Remove Volume.md>) script before re-enabling it with Recovery Password protector.
 
-The script will initialize the TPM if it is not already initialized, but it will not restart the computer. Please note that this script is not intended for manual execution. It is designed to be executed as an Autofix script from the [SEC - Encryption - Internal Monitor - Bitlocker - Missing Key Protectors](https://proval.itglue.com/DOC-5078775-13808695) monitor set.
+The script will initialize the TPM if it is not already initialized, but it will not restart the computer. Please note that this script is not intended for manual execution. It is designed to be executed as an Autofix script from the [SEC - Encryption - Internal Monitor - Bitlocker - Missing Key Protectors](<../monitors/Bitlocker - Missing Key Protectors.md>) monitor set.
 
 ## Sample Run
 
@@ -22,9 +22,9 @@ The script will initialize the TPM if it is not already initialized, but it will
 
 ## Dependencies
 
-- [SEC - Encryption - Internal Monitor - Bitlocker - Missing Key Protectors](https://proval.itglue.com/DOC-5078775-13808695)
-- [SEC - Encryption - Script - Bitlocker - Audit](https://proval.itglue.com/DOC-5078775-8943478)
-- [SEC - Encryption - Script - Bitlocker - Remove Volume](https://proval.itglue.com/DOC-5078775-8953686)
+- [SEC - Encryption - Internal Monitor - Bitlocker - Missing Key Protectors](<../monitors/Bitlocker - Missing Key Protectors.md>)
+- [SEC - Encryption - Script - Bitlocker - Audit](<./Bitlocker - Audit.md>)
+- [SEC - Encryption - Script - Bitlocker - Remove Volume](<./Bitlocker - Remove Volume.md>)
 
 ## Variables
 
@@ -41,6 +41,7 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
+
 
 
 

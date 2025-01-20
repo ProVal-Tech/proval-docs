@@ -18,7 +18,7 @@ Generates GPRESULT data and stores it in a custom table.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Get-GPResult](https://proval.itglue.com/DOC-5078775-8498353)
+- [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>)
 
 ## Variables
 
@@ -26,13 +26,14 @@ Generates GPRESULT data and stores it in a custom table.
 
 ## Process
 
-See [EPM - Windows Configuration - Agnostic - Get-GPResult](https://proval.itglue.com/DOC-5078775-8498353) for process information.
+See [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>) for process information.
 
 ## Output
 
 - Script log
 - Local file on computer
 - Dataview
+
 
 
 

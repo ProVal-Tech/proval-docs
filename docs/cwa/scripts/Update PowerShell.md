@@ -21,7 +21,7 @@ This will update the current PowerShell V2 to PowerShell V5.
 ## Dependencies
 
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.  
-- [EPM - Windows Configuration - Agnostic - Update-PowerShell](https://proval.itglue.com/DOC-5078775-11490070)
+- [EPM - Windows Configuration - Agnostic - Update-PowerShell](<../../powershell/Update-PowerShell.md>)
 
 ## Global Parameters
 
@@ -60,6 +60,7 @@ The script keeps failing on this machine, why?
   - Target OS is Windows 7 or Server 2008R2 but not SP2, Because SP2 must be installed to install PowerShell V5.
   - Target OS is Windows 8, Because PowerShell V5 is not applicable to this operating system.
   - Target OS is Windows 7 or Server 2008R2 SP2 but missing .NET Framework 4.5.2 or greater, because .Net 4.5.2 is required.
+
 
 
 

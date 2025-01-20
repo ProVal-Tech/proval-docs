@@ -18,7 +18,7 @@ This script resolves the stuck e-mail issue in Microsoft Exchange based on the f
 
 ## Dependencies
 
-[Email Stuck in Exchange On-prem Detection](https://proval.itglue.com/DOC-5078775-9004646)  
+[Email Stuck in Exchange On-prem Detection](<../dataviews/2022 Transport Queue Issue Status.md>)  
 [Email Stuck in Exchange On-Premises Transport Queues](https://techcommunity.microsoft.com/t5/exchange-team-blog/email-stuck-in-exchange-on-premises-transport-queues/ba-p/3049447)
 
 ## Variables
@@ -58,6 +58,7 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
+
 
 
 

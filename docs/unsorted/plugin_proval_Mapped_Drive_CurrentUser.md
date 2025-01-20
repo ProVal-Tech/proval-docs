@@ -14,8 +14,8 @@ This table stores the mapped drive details of the currently logged-in users.
 
 ## Dependencies
 
-- [Mapped Drive Audit - Current User](https://proval.itglue.com/DOC-5078775-10218252)
-- [Mapped Drive Audit - Current User](https://proval.itglue.com/DOC-5078775-10218252)
+- [Mapped Drive Audit - Current User](<./Mapped Drive Audit - Current User.md>)
+- [Mapped Drive Audit - Current User](<./Mapped Drive Audit - Current User.md>)
 
 ## Tables
 
@@ -39,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_Mapped_Drive_CurrentUser` (
   CONSTRAINT `plugin_proval_Mapped_Drive_CurrentUser_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
+
 
 
 

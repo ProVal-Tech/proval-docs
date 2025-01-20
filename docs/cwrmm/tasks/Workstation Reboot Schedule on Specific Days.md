@@ -36,7 +36,7 @@ Click Run task to schedule the task immediately.
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](https://proval.itglue.com/DOC-5078775-15502216)
+[CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
 
 ## Implementation
 
@@ -397,7 +397,7 @@ The complete script looks as shown below:
 
 This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided at the company-level custom fields.
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](https://proval.itglue.com/DOC-5078775-15502216)
+[CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
 
 - Go to `Automation` > `Tasks.`
 - Search for `Workstation Reboot Schedule on Specific Days` Task.
@@ -427,6 +427,7 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
+
 
 
 

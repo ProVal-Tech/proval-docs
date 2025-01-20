@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-This script runs on the control server and audits ConnectWise Control user information to a custom table [plugin_proval_controluseraudit](https://proval.itglue.com/DOC-5078775-8038700)  
+This script runs on the control server and audits ConnectWise Control user information to a custom table [plugin_proval_controluseraudit](<../tables/plugin_proval_controluseraudit.md>)  
 
 It displays information in the dataview @CW Control - User Audit  
 Time Saved by Automation: 15 Minutes
@@ -22,7 +22,7 @@ Time Saved by Automation: 15 Minutes
 ## Dependencies
 
 - Must be run on Control Server
-- [plugin_proval_controluseraudit](https://proval.itglue.com/DOC-5078775-8038700)
+- [plugin_proval_controluseraudit](<../tables/plugin_proval_controluseraudit.md>)
 
 ## Variables
 
@@ -38,6 +38,7 @@ Time Saved by Automation: 15 Minutes
 
 - Script log
 - Dataview @CW Control - User Audit
+
 
 
 

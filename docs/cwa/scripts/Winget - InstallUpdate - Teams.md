@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-An implementation of [SWM - Software Installation - Script - Winget - Install/Update](https://proval.itglue.com/DOC-5078775-11956636) script to deploy `Teams Machine-Wide Installer` application only.
+An implementation of [SWM - Software Installation - Script - Winget - Install/Update](<./Winget - InstallUpdate.md>) script to deploy `Teams Machine-Wide Installer` application only.
 
 ## Sample Run
 
@@ -27,6 +27,7 @@ An implementation of [SWM - Software Installation - Script - Winget - Install/Up
 ## Output
 
 - Script Logs
+
 
 
 

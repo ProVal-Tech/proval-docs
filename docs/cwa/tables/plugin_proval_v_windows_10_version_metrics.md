@@ -14,7 +14,7 @@ Data used for auditing Windows 10 versions. Displays information grouped by Clie
 
 ## Dependencies
 
-[Windows - Windows 10 Version Metrics + Filters](https://proval.itglue.com/DOC-5078775-7789750)
+[Windows - Windows 10 Version Metrics + Filters](<../dataviews/Windows - Windows Feature Build Metrics UPDATED.md>)
 
 ## Table
 
@@ -33,6 +33,7 @@ Data used for auditing Windows 10 versions. Displays information grouped by Clie
 | Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version with a patching policy. |
 | % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version with a patching policy. |
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
+
 
 
 

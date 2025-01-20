@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The monitor set will generate an alert for computers in which the custom field [CW RMM - Custom Field - Crystal Disk Info_Disk Health](https://proval.itglue.com/DOC-5078775-13549899) contains either 'Bad' or 'Caution.' Furthermore, it will automatically resolve the associated ticket if neither 'Bad' nor 'Caution' is present in the aforementioned custom field.
+The monitor set will generate an alert for computers in which the custom field [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>) contains either 'Bad' or 'Caution.' Furthermore, it will automatically resolve the associated ticket if neither 'Bad' nor 'Caution' is present in the aforementioned custom field.
 
 ## Monitor
 
@@ -51,8 +51,9 @@ The monitor set will generate an alert for computers in which the custom field [
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Crystal Disk Info_Disk Health](https://proval.itglue.com/DOC-5078775-13549899)  
-- [CW RMM - Task - Get Crystal Disk Info (Disk Health)](https://proval.itglue.com/DOC-5078775-13549879)
+- [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>)  
+- [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>)
+
 
 
 

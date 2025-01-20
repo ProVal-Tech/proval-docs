@@ -14,17 +14,18 @@ Alerts on targets where the Webroot Service is present and not running.
 
 ## Details
 
-Create By: Follow instructions in the Audit Section of the [SWM - Software Install - Solution - Webroot](https://proval.itglue.com/DOC-5078775-11665357) document
+Create By: Follow instructions in the Audit Section of the [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>) document
 
 ## Dependencies
 
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this monitor depends.
 
-- [SWM - Software Install - Solution - Webroot](https://proval.itglue.com/DOC-5078775-11665357)
+- [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
 
 ## Target
 
 ConnectWise Automate Group: Webroot
+
 
 
 

@@ -15,7 +15,7 @@ This monitor will create tickets if [Task - Enable AD Recycle Bin](https://prova
 ## Dependencies
 
 - [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513)
-- [CW RMM - Custom Fields - AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15348941)
+- [CW RMM - Custom Fields - AD Recycle Bin](<../custom-fields/AD Recycle Bin.md>)
 
 ## Monitor
 
@@ -49,6 +49,7 @@ This monitor will create tickets if [Task - Enable AD Recycle Bin](https://prova
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
    ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
+
 
 
 

@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script must be run as an Autofix script from [ProVal - Development - Agent Checking in with Wrong Location](https://proval.itglue.com/DOC-5078775-9421789) monitor set. It will set the Move the computer to New_Location detected in the monitor set.
+The script must be run as an Autofix script from [ProVal - Development - Agent Checking in with Wrong Location](<../monitors/Agent Checking in with Wrong Location.md>) monitor set. It will set the Move the computer to New_Location detected in the monitor set.
 
 ## Sample Run
 
@@ -18,7 +18,7 @@ Since `@FieldName@` and `@Result@` are compulsory variables to make the script w
 
 ## Dependencies
 
-[ProVal - Development - Agent Checking in with Wrong Location](https://proval.itglue.com/DOC-5078775-9421789)
+[ProVal - Development - Agent Checking in with Wrong Location](<../monitors/Agent Checking in with Wrong Location.md>)
 
 ## Variables
 
@@ -35,6 +35,7 @@ Monitor set will call the script. The script will move the computer to the new l
 ## Output
 
 Removal of agents from the Monitor set's detection.
+
 
 
 

@@ -18,7 +18,7 @@ This script collects the AD Users department information.
 
 ## Dependencies
 
-[plugin_proval_computer_department](https://proval.itglue.com/DOC-5078775-7969931)  
+[plugin_proval_computer_department](<../../unsorted/plugin_proval_computer_department.md>)  
 @Department Detail of AD Users [Script] -- Dataviews  
 @Department Detail of Computer [Script] -- Dataviews  
 
@@ -33,6 +33,7 @@ It will store the information to the table `plugin_proval_computer_department` a
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
+
 
 
 

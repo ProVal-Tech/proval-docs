@@ -10,7 +10,7 @@ unlisted: false
 ---
 ## Summary
 
-The script covers the alerting section of the [Password Expires This Week [G]](https://proval.itglue.com/DOC-5078775-8041377) monitor set. Various options for alerting can be configured from Global Variables.
+The script covers the alerting section of the [Password Expires This Week [G]](<../monitors/Password Expires This Week G.md>) monitor set. Various options for alerting can be configured from Global Variables.
 
 **Note:** The contact must be present in CW Manage to associate with the ticket.
 
@@ -79,7 +79,7 @@ It is an Autofix script to be executed via `△ Custom - Password Expiration Not
 
 ## Dependencies
 
-[RSM - Active Directory - Monitor - Password Expires This Week [G]](https://proval.itglue.com/DOC-5078775-8041377)
+[RSM - Active Directory - Monitor - Password Expires This Week [G]](<../monitors/Password Expires This Week G.md>)
 
 ## Variables
 
@@ -219,6 +219,7 @@ If you believe the password has already been changed or that this is a false ale
 
 Sample: 
 ![Default Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_10.png)
+
 
 
 

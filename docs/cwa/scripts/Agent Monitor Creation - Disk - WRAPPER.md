@@ -28,8 +28,8 @@ Cannot be run manually.
 
 ## Dependencies
 
-- [Agent Monitor Creation - Disk Workstations 5 GB*](https://proval.itglue.com/DOC-5078775-8165873)  
-- [Agent Monitor Creation - Disk Servers 5 GB*](https://proval.itglue.com/DOC-5078775-8143444)  
+- [Agent Monitor Creation - Disk Workstations 5 GB*](<./Agent Monitor Creation - Disk Workstations 5 GB.md>)  
+- [Agent Monitor Creation - Disk Servers 5 GB*](<./Agent Monitor Creation - Disk Servers 5 GB.md>)  
 
 #### Global Parameters
 
@@ -44,6 +44,7 @@ This script MUST be called by the Agent Monitor Creation script and the Remove a
 ## Output
 
 - Script log
+
 
 
 

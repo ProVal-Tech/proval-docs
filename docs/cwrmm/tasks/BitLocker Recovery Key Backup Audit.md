@@ -18,7 +18,7 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-[CW RMM - Custom Field - BitLocker Key Backup Status](https://proval.itglue.com/DOC-5078775-12878969) 
+[CW RMM - Custom Field - BitLocker Key Backup Status](<../custom-fields/BitLocker Key Backup Status.md>) 
 
 ## Create Script
 
@@ -110,6 +110,7 @@ The task should be scheduled to run once. Please see the example in the screensh
 
 - Script Log
 - Custom Field
+
 
 
 

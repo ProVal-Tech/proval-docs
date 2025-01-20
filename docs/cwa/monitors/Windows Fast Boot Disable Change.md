@@ -58,7 +58,8 @@ FastBoot is successfully disabled.
 ## Implementation
 
 Please follow the below document for the implementation step:  
-[Import - Remote Monitor - Windows Fast Boot disable](https://proval.itglue.com/DOC-5078775-15429553)  
+[Import - Remote Monitor - Windows Fast Boot disable](<./Windows Fast Boot Disable Change.md>)  
+
 
 
 

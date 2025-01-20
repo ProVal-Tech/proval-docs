@@ -16,12 +16,13 @@ Provide a reliable and accessible solution for application management via Chocol
 
 | Content                                                                                               | Type             | Function                                                      |
 |-------------------------------------------------------------------------------------------------------|------------------|---------------------------------------------------------------|
-| [SWM - Software Install - Agent Procedure - Chocolatey Application Install](https://proval.itglue.com/DOC-5078775-11453170) | Agent Procedure   | Utilizes the Foil wrapper for chocolatey to install an application. |
-| [SWM - Software Uninstall - Agent Procedure - Chocolatey Application Uninstall](https://proval.itglue.com/DOC-5078775-11453175) | Agent Procedure   | Utilizes the Foil wrapper for chocolatey to uninstall an application. |
+| [SWM - Software Install - Agent Procedure - Chocolatey Application Install](<../vsa/procedures/Chocolatey Application Install.md>) | Agent Procedure   | Utilizes the Foil wrapper for chocolatey to install an application. |
+| [SWM - Software Uninstall - Agent Procedure - Chocolatey Application Uninstall](<../vsa/procedures/Chocolatey Application Uninstall.md>) | Agent Procedure   | Utilizes the Foil wrapper for chocolatey to uninstall an application. |
 
 ## Implementation
 
 Import both Agent Procedures.
+
 
 
 

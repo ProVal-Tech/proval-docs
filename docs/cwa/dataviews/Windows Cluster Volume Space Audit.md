@@ -10,11 +10,11 @@ unlisted: false
 ---
 ## Summary
 
-This dataview is built to show the cluster disk space audit report fetched from the table "pvl_cluster_volumes" where the script [CWA Script - Windows Cluster Volume Space Audit](https://proval.itglue.com/DOC-5078775-15952791) performs the audit.
+This dataview is built to show the cluster disk space audit report fetched from the table "pvl_cluster_volumes" where the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) performs the audit.
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Volume Space Audit](https://proval.itglue.com/DOC-5078775-15952791)
+[CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>)
 
 ## Columns
 
@@ -32,6 +32,7 @@ This dataview is built to show the cluster disk space audit report fetched from 
 | Cluster Volume Used Space (GB)          | The cluster volume used size on the Hyper-V cluster server               |
 | Cluster Volume Free Percent              | The cluster volume available in percent of the Hyper-V cluster server    |
 | Script Last Run Time                     | Script last run time when the latest audit was done on the Hyper-V cluster server. |
+
 
 
 
