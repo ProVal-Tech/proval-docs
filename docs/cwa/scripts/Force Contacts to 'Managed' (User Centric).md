@@ -1,7 +1,7 @@
 ---
 id: '44840fd1-931c-45e1-aa69-2c52f30117a8'
-title: 'Force Contacts to 'Managed' (User Centric)'
-title_meta: 'Force Contacts to 'Managed' (User Centric)'
+title: "Force Contacts to 'Managed' (User Centric)"
+title_meta: "Force Contacts to 'Managed' (User Centric)"
 keywords: ['user', 'active-directory', 'integration', 'manage', 'plugin']
 description: 'This document outlines a script designed to integrate User-Centric with Active Directory, ensuring that users imported via the AD plugin are properly flagged as managed and activated to prevent them from appearing in the UserCentric plugin in Manage. The script is intended for use on the Automate Server and requires correct configuration of the Active Directory plugin.'
 tags: ['active-directory']
