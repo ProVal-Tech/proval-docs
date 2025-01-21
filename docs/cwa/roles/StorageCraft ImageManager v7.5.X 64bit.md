@@ -17,4 +17,6 @@ This role definition helps you track machines with StorageCraft ImageManager v7.
 
 | Detection String                                                                                          | Comparator    | Result   | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|---------------|----------|----------------|
-| `%\\{@powershell.exe \"(Get-Item 'C://Program Files (x86)//StorageCraft//ImageManager//ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion\"@%}` | Regex Match   | `^7\.5\.` | Windows        |
+| `%\\\{@powershell.exe \"(Get-Item 'C://Program Files (x86)//StorageCraft//ImageManager//ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion\"@%}` | Regex Match   | `^7\.5\.` | Windows        |
+
+

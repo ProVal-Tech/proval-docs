@@ -39,3 +39,4 @@ unlisted: false
 ## Target
 
 The only limiting factor will ultimately be the Windows operating system. The reason for this is that the monitor will filter out servers, ARM processors, virtual machines, etc. That being said, even if you were to include a server in the list for this monitor, that server would never trigger the autofix action.
+

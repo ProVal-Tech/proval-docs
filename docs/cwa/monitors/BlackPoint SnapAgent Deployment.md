@@ -33,3 +33,4 @@ Global
 - To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level, as shown below:
 
 ![Ticket Category](../../../static/img/BlackPoint-SnapAgent-Deployment/image_1.png)
+

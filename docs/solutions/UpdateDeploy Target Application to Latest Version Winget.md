@@ -36,3 +36,4 @@ This solution is designed to achieve the appropriate application upgrade to the 
   ![Image](../../static/img/UpdateDeploy-Target-Application-to-Latest-Version-Winget/image_3.png)  
 - Apply the alert template "**△ Custom - Execute Script - Application Latest Version**" with monitor [ProVal - Production - Latest Version Detection](<../cwa/monitors/Application - Latest Version Detection.md>) first and run it once before implementing the other monitor so that the system property gets created.
 - Apply the alert template "**△ CUSTOM - Application Install/Update - Winget**" with monitor [ProVal - Production - Install/Update [Winget]](<../cwa/monitors/Application - InstallUpdate Winget.md>) and make the adjustments as mentioned in the screenshot.
+

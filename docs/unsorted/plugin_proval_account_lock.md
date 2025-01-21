@@ -52,3 +52,4 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_account_lock` (
   CONSTRAINT `plugin_proval_account_lock_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8
 ```
+

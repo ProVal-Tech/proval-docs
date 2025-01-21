@@ -40,3 +40,4 @@ The script executes several SQL queries.
 ## Output
 
 There is no script output. Please reload the cache and view the info base categories in the system dashboard. Review the CW Manage plugin Ticket category area.
+

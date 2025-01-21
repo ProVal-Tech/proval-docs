@@ -87,3 +87,4 @@ Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-Winge
 - Agent Procedure Log
 - Log Files Exported to GetFiles
 - Export JSON Exported to GetFiles and present on endpoint in `%ProgramData%/_automation/AgentProcedure/wingetprocessor`
+

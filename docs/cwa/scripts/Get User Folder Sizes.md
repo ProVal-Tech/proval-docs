@@ -28,3 +28,4 @@ This script runs PowerShell to fetch the size (in MB) of every user folder found
 ## Output
 
 - Script log
+

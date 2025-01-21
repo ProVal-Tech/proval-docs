@@ -21,8 +21,10 @@ For instance, if your system locale is set to English (United States) and your i
 
 | Detection String                                                                                                                                               | Comparator | Result                           | Applicable OS |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------------------------------|----------------|
-| \\{@%C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command \"$locale = (systeminfo | findstr /B /C:'Input Locale') -replace 'Input Locale:',''; $locale.trim()\"@%} | Exists     | en-us;English (United States)   | Windows        |
+| \\\{@%C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command \"$locale = (systeminfo | findstr /B /C:'Input Locale') -replace 'Input Locale:',''; $locale.trim()\"@%} | Exists     | en-us;English (United States)   | Windows        |
 
 ## Sample
 
 ![Sample Image](../../static/img/Dynamic-Input-Language-Role/image_1.png)
+
+

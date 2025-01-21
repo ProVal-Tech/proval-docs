@@ -44,3 +44,4 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
    **Answer:** Yes, you just need to whitelist the following hashes:  
    - C:/ProgramData/_Automation/Script/ODSync/ODSyncUtility.ps1: **A5EBD70394BA53B0D3A093FB47C94985**  
    - C:/ProgramData/_Automation/Script/ODSyncUtil/ODSyncFetch.ps1: **4626F936E0BABCE79F350E096671A19F**  
+

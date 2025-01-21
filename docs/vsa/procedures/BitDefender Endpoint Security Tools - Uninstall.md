@@ -51,3 +51,4 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 ## Output
 
 Agent Procedure Log Entry & %ProgramData%/_automation/AgentProcedure/RemoveBitdefender
+

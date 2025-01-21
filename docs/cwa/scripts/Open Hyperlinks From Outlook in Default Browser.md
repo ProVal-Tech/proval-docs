@@ -32,3 +32,4 @@ To achieve this, the script likely modifies specific values in the Windows regis
 ## Output
 
 - Script Logs
+

@@ -441,3 +441,4 @@ The final task should look like the screenshot below.
 - Script logs  
 ![Script Logs](../../../static/img/Install-Windows-11/image_60.png)  
 (**This output is from an incompatible Windows 10 computer.**)
+

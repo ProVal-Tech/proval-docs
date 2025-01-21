@@ -32,3 +32,4 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](<../scrip
 | TotalQuota      | float    | Total size of the available quota (GB)         |
 | UsedQuota       | float    | Amount of used quota (GB)                       |
 | Username        | varchar  | Username                                        |
+

@@ -65,3 +65,4 @@ The initial permissions of the scripts are stored in the custom table during the
 - Custom Table
 - Script-level permissions  
 ![Output Image](../../../static/img/Script-Permission-Alignment-Beta/image_6.png)
+

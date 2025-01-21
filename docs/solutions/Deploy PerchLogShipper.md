@@ -39,3 +39,4 @@ Read the associated documents carefully.
 - Ensure the [Script - Deploy Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986108) script is bonded to the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template.
 - Ensure the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template is being used with [Internal Monitor - Agents Missing Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986404).
 - Right-click and select "Run Now" to enable [Internal Monitor - Agents Missing Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986404) to start deploying Perch Log Shipper on the required machines.
+

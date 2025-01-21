@@ -41,3 +41,4 @@ This Dataview is similar to the [Script Failure Assessment](<./Script Failure As
 | First Failure Date           | Date of the first failure                                                                            |
 | Last Failure Date            | Date of the last failure                                                                             |
 | Time Period Days             | Number of days since the data collection started                                                   |
+

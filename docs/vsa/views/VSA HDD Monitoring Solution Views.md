@@ -23,3 +23,4 @@ The table below lists all filters applied to this view:
 | [xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>) | Y                | *C:* Each view contains its independent drive letter in its advanced filter.                          |
 | xPVAL Monitoring Managed                | Y                | *Managed*                                                                                            |
 | xPVAL Exclude from Monitoring           | Y                | NOT *1* AND NOT *yes*                                                                                |
+

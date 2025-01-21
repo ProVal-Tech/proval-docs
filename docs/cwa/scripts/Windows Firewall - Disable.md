@@ -24,3 +24,4 @@ The script will execute if the Windows Firewall is enabled on the machine. It ru
 ## Output
 
 - Script log
+

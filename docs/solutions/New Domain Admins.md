@@ -35,3 +35,4 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 - Create the Machine Group: [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>).
 - Create the task: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424).
 - Create the deployment schedule as described in this document: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424).
+

@@ -43,3 +43,4 @@ This document shows the devices where the "DUO Security Authentication Proxy" ap
    Set `Success` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_5.png)  
    **Condition:** `Duo Auth Proxy Result` `Contain any of` `Success`
+

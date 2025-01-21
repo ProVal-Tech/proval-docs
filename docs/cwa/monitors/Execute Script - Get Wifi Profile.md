@@ -27,3 +27,4 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
+

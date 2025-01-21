@@ -49,3 +49,4 @@ The purpose of this document is to outline the solution to disable the Fast Boot
 
 3. Create the Task and deploy it against the device group:  
    - [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)  
+

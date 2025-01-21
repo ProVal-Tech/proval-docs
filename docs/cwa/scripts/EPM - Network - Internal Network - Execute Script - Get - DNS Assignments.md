@@ -25,3 +25,4 @@ Managed Windows Servers and Workstations
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get - DNS Assignments`
+

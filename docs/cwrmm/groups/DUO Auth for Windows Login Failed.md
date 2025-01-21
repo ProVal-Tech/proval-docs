@@ -46,3 +46,4 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-for-Windows-Login-Failed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Failed`
+

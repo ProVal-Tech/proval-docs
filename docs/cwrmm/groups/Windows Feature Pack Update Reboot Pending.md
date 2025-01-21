@@ -46,3 +46,4 @@ Categorize the Windows 10 and 11 computers where the `Feature Update Install wit
 Click the Save button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_9.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_10.png)  
+

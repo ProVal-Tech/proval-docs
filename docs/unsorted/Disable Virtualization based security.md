@@ -32,3 +32,4 @@ Once the registry is set, it will prompt the machine to reboot.
 ## Output
 
 - Script log
+

@@ -117,3 +117,4 @@ Displays detailed hardware information about all applicable agents in an Automat
 | UPS Last Updated                 | VARCHAR  | Information about when the UPS status was last updated.                                        |
 | UPS Replacement Status           | VARCHAR  | Information about if the UPS needs to be updated.                                              |
 | Printer Names                    | TEXT     | Comma-separated list of all connected printers to the machine.                                  |
+

@@ -28,3 +28,4 @@ It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](htt
 ## Output
 
 - Script log
+

@@ -37,7 +37,7 @@ Please see [Invoke-OffScrub](<../../powershell/Invoke-OfficeScrub.md>) to review
 
 | Name        | Example | Required | Description                                                                                       |
 |-------------|---------|----------|---------------------------------------------------------------------------------------------------|
-| `@Versions@`| All     | True     | This user parameter determines which versions of Office will be attempted to uninstall.  <br> **Parameters:**  <br> **All** - Will attempt to remove all Microsoft Office products.  <br> **2003** - Will attempt to remove Microsoft Office 2003.  <br> **2007** - Will attempt to remove Microsoft Office 2007.  <br> **2010** - Will attempt to remove Microsoft Office 2010.  <br> **2013** - Will attempt to remove Microsoft Office 2013.  <br> **2016** - Will attempt to remove Microsoft Office 2016.  <br> **365** - Will attempt to remove Microsoft Office 365. |
+| `@Versions@`| All     | True     | This user parameter determines which versions of Office will be attempted to uninstall.  <br/> **Parameters:**  <br/> **All** - Will attempt to remove all Microsoft Office products.  <br/> **2003** - Will attempt to remove Microsoft Office 2003.  <br/> **2007** - Will attempt to remove Microsoft Office 2007.  <br/> **2010** - Will attempt to remove Microsoft Office 2010.  <br/> **2013** - Will attempt to remove Microsoft Office 2013.  <br/> **2016** - Will attempt to remove Microsoft Office 2016.  <br/> **365** - Will attempt to remove Microsoft Office 365. |
 
 ## Process
 
@@ -49,3 +49,4 @@ Based on the version input by the technician, the script will jump to the approp
 
 - Script log
 - Local file on the computer
+

@@ -72,3 +72,4 @@ The script generates log, result, and error files at the following locations:
 
 - `.\\Update-Windows10-log.txt`
 - `.\\Update-Windows10-Error.txt`
+

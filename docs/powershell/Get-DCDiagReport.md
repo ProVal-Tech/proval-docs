@@ -44,3 +44,4 @@ Must be run on a domain controller.
 .\Get-DCDiagReport-error.txt
 \<Specified Log File Path and fileName>
 ```
+

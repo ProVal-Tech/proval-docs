@@ -31,3 +31,4 @@ To retrieve information about available power plans, subgroups, and power settin
 
 ## Output
 The output will be saved in `Get-PowerPlansInfo-log.txt`.
+

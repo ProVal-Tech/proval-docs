@@ -34,3 +34,4 @@ This script downloads and installs the HP Support Assistant if a user is logged 
 ## Output
 
 - Script log
+

@@ -36,3 +36,4 @@ default { Unknown architecture }
 ## Sample
 
 ![Sample Image](../../static/img/Dynamic-Processor-Architecture-Role/image_1.png)
+

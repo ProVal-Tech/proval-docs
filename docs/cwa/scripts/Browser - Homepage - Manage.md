@@ -102,3 +102,4 @@ Example: Configuring Google Chrome and Microsoft Edge to open [https://www.prova
 ## Output
 
 - Script logs
+

@@ -54,7 +54,7 @@ After customizing and running the Agent Procedure, the `Initialize-BitLockerVolu
 
 | Parameter                     | Required | Default                      | Type        | Description                                                                                                                                                                   |
 |-------------------------------|----------|------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `MountPoint`                  | False    | `$env:SystemDrive`           | String      | The target volume to enable BitLocker encryption against. Should be in the format '\\<driveletter>' or '\\<driveletter>:'. If a path is passed, the drive of that path will be attempted to be parsed. Defaults to `$env:SystemDrive`. |
+| `MountPoint`                  | False    | `$env:SystemDrive`           | String      | The target volume to enable BitLocker encryption against. Should be in the format `<driveletter>` or `<driveletter>:`. If a path is passed, the drive of that path will be attempted to be parsed. Defaults to `$env:SystemDrive`. |
 | `EncryptionMethod`            | False    | "Aes256"                     | String      | The method of encryption to use for BitLocker. Valid options are Aes128, Aes256, XtsAes128, or XtsAes256. Defaults to Aes256.                                             |
 | `AllowTPMInit`                | False    | False                        | Switch      | Allow the script to attempt initialization of TPM if necessary. Will require a reboot if TPM needs to be initialized.                                                      |
 | `AllowRestart`                | False    | False                        | Switch      | Allow the script to automatically restart or shut down the machine. This can happen on initialization of TPM or successful encryption of a volume.                          |
@@ -123,3 +123,5 @@ The following logs are created when the agent procedure is run.
 ./Initialize-BitLockerVolume-data.txt
 ./Initialize-BitLockerVolume-error.txt
 ```
+
+

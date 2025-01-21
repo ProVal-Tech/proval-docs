@@ -26,3 +26,4 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Schedu
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_2.png)
+

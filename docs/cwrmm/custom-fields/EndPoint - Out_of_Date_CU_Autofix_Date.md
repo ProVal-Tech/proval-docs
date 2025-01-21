@@ -23,3 +23,4 @@ Stores the install date of the latest CU performed by the Out of Date Cumulative
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Date/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Date/image_2.png)  
+

@@ -36,3 +36,4 @@ This dataview shows information about GPOs, their applied policies, where they a
 | Read Time       | GPO last check time                              |
 | OU Links        | Created OUs path                                 |
 
+

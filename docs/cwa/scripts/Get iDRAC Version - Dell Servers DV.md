@@ -43,3 +43,4 @@ The script will fetch the version of iDRAC from Dell servers. The script output 
 - Script log
 - Script state
 - Dataview
+

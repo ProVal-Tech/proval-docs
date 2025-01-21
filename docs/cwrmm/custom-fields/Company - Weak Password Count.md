@@ -26,3 +26,4 @@ This document holds the count of accounts with weak passwords.
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
+

@@ -37,3 +37,4 @@ Executes the `query session` command and stores the result in a custom table.
 
 - Dataview
 - Custom Table
+

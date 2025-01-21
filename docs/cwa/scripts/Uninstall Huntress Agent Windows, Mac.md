@@ -39,3 +39,4 @@ This script can be used to uninstall the Huntress Agent from both Windows and Ma
 ## Output
 
 - Script log
+

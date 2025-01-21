@@ -59,3 +59,4 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVEs
 
 - Script log
 - Ticketing if enabled in Globals
+

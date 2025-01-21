@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This script is a complete ticket creation script intended only for use with the ProVal - Production - ESXi Storage Space < 10% Monitor.
+This script is a complete ticket creation script intended only for use with the ProVal - Production - ESXi Storage Space \< 10% Monitor.
 
 ## Monitor Driven Only
 
@@ -33,14 +33,14 @@ The only dependency for this script is that the monitor triggering the script mu
 > The ESXi Host named @ESXHostName@ at %CLIENTNAME%/%LocationName% is reporting low disk space.  
 >
 > The ESXi Host information is outlined below:  
-> Host Name: <ESXi Host Name>  
+> Host Name: \<ESXi Host Name>  
 > ESXi Version: VMware ESXi 6.7.0  
 > Host Make/Model: HPE ProLiant DL380 Gen10  
-> S/N OF Host: <ESXi Serial Number>  
+> S/N OF Host: \<ESXi Serial Number>  
 > Last Check-In: 5/31/2022 11:33:54 AM  
-> Network Device ID: <Device ID>  
+> Network Device ID: \<Device ID>  
 >
 > There is 1 reported VM running on this host, displayed below:  
-> <VM Name>  
+> \<VM Name>  
 >
-> <Datastores with low disk space listed here>  
+> \<Datastores with low disk space listed here>

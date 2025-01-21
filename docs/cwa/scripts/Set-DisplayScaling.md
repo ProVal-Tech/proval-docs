@@ -35,3 +35,4 @@ This script sets custom display scaling on existing as well as new users for Win
 ## Output
 
 - Script log
+

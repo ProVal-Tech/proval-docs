@@ -27,7 +27,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue'; Get-VMReplication | Where-Object {($_.health -like 'Critical') -or ($_.health -like 'Warning')} | Foreach-Object {Write-Output \"$( $_.name) replication state: $( $_.health)\"}" | Does Not Contain | 3600 | replication state: |
+| System       | 127.0.0.1     | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue'; Get-VMReplication | Where-Object \{($_.health -like 'Critical') -or ($_.health -like 'Warning')} | Foreach-Object \{Write-Output \"$( $_.name) replication state: $( $_.health)\"}" | Does Not Contain | 3600 | replication state: |
 
 ## Target
 
@@ -63,3 +63,5 @@ TESTDNS01 replication state: Warning
 
 Please follow the article below for the implementation:  
 [Implementation Article](https://proval.itglue.com/5078775/docs/15601954)
+
+

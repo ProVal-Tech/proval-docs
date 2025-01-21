@@ -23,3 +23,4 @@ This document provides details about the C2R Office version installed on the mac
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Office-Version/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Office-Version/image_2.png)
+

@@ -24,9 +24,9 @@ This document initiates a feature upgrade on the target endpoint without forcing
 | 10:58:35 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System) | Success THEN                          | provaltech.com/dan.hicks     |
 | 10:58:35 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0016 | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of the server. | provaltech.com/dan.hicks     |
 | 10:58:35 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0016 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/946598527505563/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 3. | provaltech.com/dan.hicks     |
-| 10:58:23 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: \"\" -command \"Start-Job -ScriptBlock \\{ C:/ProgramData/_automation/AgentProcedure/UpdateWindows10/Update-Windows10.ps1 -Reboot None}\" >\"c:/provaltech/psoutputtmp.txt\" | provaltech.com/dan.hicks     |
+| 10:58:23 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: \"\" -command \"Start-Job -ScriptBlock \\\{ C:/ProgramData/_automation/AgentProcedure/UpdateWindows10/Update-Windows10.ps1 -Reboot None}\" >\"c:/provaltech/psoutputtmp.txt\" | provaltech.com/dan.hicks     |
 | 10:58:23 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.    | provaltech.com/dan.hicks     |
-| 10:58:22 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as Start-Job -ScriptBlock \\{ C:/ProgramData/_automation/AgentProcedure/UpdateWindows10/Update-Windows10.ps1 -Reboot None} | provaltech.com/dan.hicks     |
+| 10:58:22 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as Start-Job -ScriptBlock \\\{ C:/ProgramData/_automation/AgentProcedure/UpdateWindows10/Update-Windows10.ps1 -Reboot None} | provaltech.com/dan.hicks     |
 | 10:58:22 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected. | provaltech.com/dan.hicks     |
 | 10:58:21 am 1-Sep-22 | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                | provaltech.com/dan.hicks     |
 | 10:58:17 am 1-Sep-22 | Execute Powershell Command                           | Success THEN                          | provaltech.com/dan.hicks     |
@@ -47,3 +47,5 @@ This process starts a job running in the background to execute [SEC - Windows Pa
 - AP Log  
 - [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
 - PSOutput Document
+
+

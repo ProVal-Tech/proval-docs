@@ -32,3 +32,4 @@ This script will restore the backup logon user to the login screen of the machin
 ## Output
 
 - Script log
+

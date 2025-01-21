@@ -45,3 +45,4 @@ The purpose of this document is to outline the process for denying patches in th
 
 **Q:** Can we exclude an OS for a KB? For example, deny a KBID for Windows 10 version 1809 but allow it to be approved for Windows Server 2019.  
 **A:** No.
+

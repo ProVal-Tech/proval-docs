@@ -187,3 +187,4 @@ If the time zone is not accepted, the script will exit with an error message.
 - Tonga Standard Time  
 - Samoa Standard Time  
 - Line Islands Standard Time  
+

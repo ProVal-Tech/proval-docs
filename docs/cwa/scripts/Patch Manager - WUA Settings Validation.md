@@ -48,3 +48,4 @@ If you modify the Active Hours from their default, keep in mind that the **Max**
 ## Output
 
 All output for the PowerShell script results is directed to the Script Log and to the Script State 'PatchSettingCheck'.
+

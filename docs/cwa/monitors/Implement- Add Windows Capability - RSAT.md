@@ -102,3 +102,4 @@ Now execute your query from a RAWSQL monitor set.
 ### Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.  
 While assigning the alert template, ensure that it is not performing any actions for WARNINGS unless you want to be notified for the PowerShell errors as well.
+

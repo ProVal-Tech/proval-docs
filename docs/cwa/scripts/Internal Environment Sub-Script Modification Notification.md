@@ -44,3 +44,4 @@ It is scheduled in our internal Automate environment to run twice per day.
 
 **Sample Ticket:**  
 ![Sample Ticket](../../../static/img/Internal-Environment-Sub-Script-Modification-Notification/image_3.png)
+

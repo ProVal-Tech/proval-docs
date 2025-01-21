@@ -30,3 +30,4 @@ The purpose of this solution is to enable the AD Recycle Bin on AD Infrastructur
 - Create the [Device Group - Infrastructure Master - Without Recycle Bin](<../cwrmm/groups/Infrastructure Master - Without Recycle Bin.md>).
 - Create the deployment schedule as described in this document: [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513).
 - Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) if the partner wants tickets when the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable the AD Recycle Bin.
+

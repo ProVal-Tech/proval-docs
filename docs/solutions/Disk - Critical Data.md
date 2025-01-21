@@ -34,3 +34,4 @@ The solution summary focuses on gathering hard drive failure data from target ma
 - Implement the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) Internal Monitor; check the monitor's document for implementation and alert template.
 - Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor.
 - Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor; check the monitor's document for implementation and alert template.
+

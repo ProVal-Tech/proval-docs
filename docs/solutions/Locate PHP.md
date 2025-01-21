@@ -46,3 +46,4 @@ The goal of this solution is to identify the computers that have the PHP.exe fil
 
 5. Mark the `Find PHP.exe` EDF on the clients you would like to audit the information on.
    ![Mark EDF](../../static/img/Locate-PHP/image_3.png)
+

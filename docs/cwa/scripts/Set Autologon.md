@@ -38,3 +38,4 @@ This script downloads Autologon.exe from Microsoft to the LTSvc folder. It then 
 ## Output
 
 - Script log messages
+

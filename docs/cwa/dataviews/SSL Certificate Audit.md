@@ -37,3 +37,4 @@ This report is designed to present a complete list of all certificates found on 
 | CertAdded            | When the certificate was added/installed to the machine.                                         |
 | Data Collection Date  | When the last certification scan was performed.                                                  |
 | Status               | The certificate's current status in text.                                                        |
+

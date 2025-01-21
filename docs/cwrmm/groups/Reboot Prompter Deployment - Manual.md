@@ -37,3 +37,4 @@ Reboot_PendingReboot --> Custom field (Endpoint)
    - The agent available equals True.
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
+

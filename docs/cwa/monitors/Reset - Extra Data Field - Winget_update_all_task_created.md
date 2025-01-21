@@ -102,3 +102,4 @@ unlisted: false
 
 4. Reload the system cache to ensure all changes are updated.  
    ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_6.png)
+

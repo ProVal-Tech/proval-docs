@@ -44,3 +44,4 @@ This script downloads the speed test zip file from Ookla and extracts it. After 
 - Script log
 - Script state
 - Dataview
+

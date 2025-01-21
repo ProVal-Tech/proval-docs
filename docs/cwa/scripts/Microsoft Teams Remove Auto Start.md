@@ -26,3 +26,4 @@ This script will remove the autostart entry for MS Teams for all users.
 ## Output
 
 - Script log
+

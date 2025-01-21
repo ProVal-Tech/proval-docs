@@ -27,3 +27,4 @@ Stores the TPM status of the machine. Updated by the [Get TPM Status](<../tasks/
 
 ![Screenshot 1](../../../static/img/Endpoint---TPM-Status/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---TPM-Status/image_2.png)
+

@@ -55,3 +55,4 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+

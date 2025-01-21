@@ -53,3 +53,4 @@ This script outputs logging information into the script log in the scripting tab
 What the Alerting Tab looks like:
 
 ![Alerting Tab Example](../../../static/img/Ticket-Creation---Computer/image_4.png)
+

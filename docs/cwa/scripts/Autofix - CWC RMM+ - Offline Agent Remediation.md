@@ -120,3 +120,4 @@ This script is an autofix to a monitor and should not be manually run.
 ## Change Log
 
 01-2023: Added functionality to handle registry key entry preventing repair.
+

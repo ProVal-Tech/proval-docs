@@ -29,3 +29,4 @@ List all filters applied to this view.
 |---------------------------------|------------------|-----------------------------|
 | OS Info / OS Type               | N                | Server                      |
 | xPVAL Monitoring Managed        | Y                | NOT *1* OR NOT *yes*       |
+

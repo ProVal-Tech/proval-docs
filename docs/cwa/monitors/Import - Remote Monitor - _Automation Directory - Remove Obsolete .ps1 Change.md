@@ -163,3 +163,4 @@ Locate your remote monitor by opening the group(s) remote monitors tab.
 
 ## Step 6
 Do not apply any alert template to this remote monitor.
+

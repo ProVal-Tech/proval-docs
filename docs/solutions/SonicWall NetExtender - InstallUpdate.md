@@ -37,3 +37,4 @@ This solution ensures that the SonicWall NetExtender is installed or updated to 
 6. Run the [SonicWall NetExtender - Latest Version [Winget]](<../cwa/scripts/CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget.md>) script and ensure the script populates the system property.  
    ![Image](../../static/img/SonicWall-NetExtender---InstallUpdate/image_1.png)
 7. Enable the deployment monitor.
+

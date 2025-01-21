@@ -12,3 +12,4 @@ unlisted: false
 ## Summary
 
 Gets the latest available Windows 10 version status.
+

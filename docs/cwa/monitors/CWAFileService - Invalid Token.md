@@ -20,7 +20,7 @@ FileService v24.0 - 3/10/2024 3:08:12 PM - HttpRequest is missing or has invalid
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$threshold = 20;$path = 'C:/Windows/Temp/FileService.log' ;if ( Test-Path $path ) { $content = foreach ( $line in $(Get-Content -path $path | Where-Object { $_ -match 'HttpRequest is missing or has invalid Authorization Token' } ) ) { $line };$problems = foreach ($err in $content ) { if ( $err -match '- (([0-9]{1,2}///){2}[0-9]{4} ([0-9]{1,2}:){2}[0-9]{1,2} [AP]M) -' ){ if ([DateTime]$matches[1] -ge (Get-Date).AddMinutes(-15)) {$err} } }if ( $problems.count -ge $threshold ) { Restart-Service -Name 'CWAFileService' -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue; return $problems.count} }" | Missing | 900 |  |
+| System       | 127.0.0.1     | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$threshold = 20;$path = 'C:/Windows/Temp/FileService.log' ;if ( Test-Path $path ) \{ $content = foreach ( $line in $(Get-Content -path $path | Where-Object \{ $_ -match 'HttpRequest is missing or has invalid Authorization Token' } ) ) \{ $line };$problems = foreach ($err in $content ) \{ if ( $err -match '- (([0-9]\{1,2}///)\{2}[0-9]\{4} ([0-9]\{1,2}:)\{2}[0-9]\{1,2} [AP]M) -' )\{ if ([DateTime]$matches[1] -ge (Get-Date).AddMinutes(-15)) \{$err} } }if ( $problems.count -ge $threshold ) \{ Restart-Service -Name 'CWAFileService' -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue; return $problems.count} }" | Missing | 900 |  |
 
 ## Dependencies
 
@@ -42,3 +42,5 @@ The %computername% (Automate) Server is currently reporting %result% occurrences
 
 Follow the article below:  
 - [Import - Remote Monitors - CWAFileService - Invalid Token](<./CWAFileService - Invalid Token.md>)
+
+

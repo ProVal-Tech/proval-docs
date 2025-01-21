@@ -718,3 +718,4 @@ Once all items are added, please save the task. The final task should look like 
 ![Final Task 2](../../../static/img/Reboot-Prompter-(Deprecated)/image_54.png)
 
 ![Final Task 3](../../../static/img/Reboot-Prompter-(Deprecated)/image_55.png)
+

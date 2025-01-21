@@ -21,3 +21,4 @@ The monitor runs on BitLocker-enabled machines and checks if the key retrieval d
 ## Target
 
 Global
+

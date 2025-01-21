@@ -57,3 +57,4 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
+

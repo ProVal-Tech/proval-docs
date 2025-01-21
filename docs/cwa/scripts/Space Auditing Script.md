@@ -60,3 +60,4 @@ If the script fails to gather the data appropriately, it will exit with an error
 ## Example Output
 
 ![Example Output](../../../static/img/Space-Auditing-Script/image_2.png)
+

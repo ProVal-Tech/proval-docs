@@ -60,3 +60,4 @@ The purpose of this solution is to monitor the hardware alerts generated on HP s
       DELETE FROM groupagents WHERE `Name` = 'ProVal - Production - HP Hardware Monitoring';
       DELETE FROM agents WHERE `Name` = 'ProVal - Production - HP Hardware Monitoring' AND computerid > 0;
       ```
+

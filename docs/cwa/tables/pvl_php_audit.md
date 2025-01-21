@@ -31,3 +31,4 @@ This document stores the data collected by the [Locate PHP.exe](<../scripts/Loca
 | LastWriteTime   | datetime            | File modification date          |
 | Attributes      | varchar             | File's attributes               |
 | ScriptRunTime   | datetime            | Data collection time            |
+

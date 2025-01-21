@@ -60,3 +60,4 @@ Expiration: 2023-04-20 19:59:59
 ## Example Ticket
 
 ![Image](../../../static/img/Certificate-Expiration--30-Days/image_2.png)
+

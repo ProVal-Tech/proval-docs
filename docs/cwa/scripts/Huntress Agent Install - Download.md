@@ -36,3 +36,4 @@ The script downloads and installs the Huntress Agent silently on the Windows mac
 ## Output
 
 - Script log
+

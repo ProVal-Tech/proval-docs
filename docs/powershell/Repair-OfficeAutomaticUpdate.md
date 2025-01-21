@@ -33,3 +33,4 @@ Performs a check and repair of Office 365.
 ## Output
 - `.\Repair-OfficeAutomaticUpdate-log.txt`
 - `.\Repair-OfficeAutomaticUpdate-error.txt`
+

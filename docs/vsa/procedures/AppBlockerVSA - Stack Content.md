@@ -12,3 +12,4 @@ unlisted: false
 ## Summary
 
 Controls Kaseya App Blocker (updates Kaseya INI file)
+

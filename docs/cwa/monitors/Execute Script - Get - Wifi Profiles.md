@@ -27,3 +27,4 @@ Managed Windows Workstations
 **Name:** `△ CUSTOM - Execute Script - Get - Wifi Profiles`
 
 **Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script.
+

@@ -61,3 +61,4 @@ This solution provides information on a workstation's battery state.
      - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11417979)
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
+

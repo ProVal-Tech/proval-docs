@@ -21,7 +21,7 @@ The custom fields listed below are used in the DUO Auth Proxy Deployment Solutio
 |----------------------------|---------|------|----------|----------|-----------------|--------------------------------------------------------------------------------------------------------------------|
 | Duo Proxy Deployment       | Company | Flag | False    | Yes      | No              | This checkbox allows the deployment of the application "Duo Security Authentication Proxy" by adding the agents of the company to the deployment group. |
 | DUO Proxy Exclusion        | Endpoint| Flag | False    | Yes      | No              | This checkbox excludes the agent from the deployment of the application "Duo Security Authentication Proxy".      |
-| DUO Auth Proxy Result      | Company | Text | False    | No       | <Blank>         | This stores the success or failure result from the script "DUO Auth Proxy - Install/Update Latest Version".      |
+| DUO Auth Proxy Result      | Company | Text | False    | No       | \<Blank>         | This stores the success or failure result from the script "DUO Auth Proxy - Install/Update Latest Version".      |
 
 ## Steps to Create Custom Fields
 
@@ -46,3 +46,5 @@ The custom fields listed below are used in the DUO Auth Proxy Deployment Solutio
    **Note:** The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
 
 4. Please follow the same steps to create other custom fields.
+
+

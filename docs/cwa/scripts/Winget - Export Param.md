@@ -51,3 +51,4 @@ Path to the reports on the local machine:
 
 - Script logs
 - Email(s) (if enabled)
+

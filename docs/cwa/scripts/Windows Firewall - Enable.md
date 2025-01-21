@@ -27,3 +27,4 @@ The script enables the Windows firewall for all profiles, i.e., public, domain, 
 ## Output
 
 - Script log
+

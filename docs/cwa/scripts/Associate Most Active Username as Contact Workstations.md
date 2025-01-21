@@ -49,3 +49,4 @@ A contact will be linked to the computer if any of the following conditions are 
 | Name                           | Type      | Example | Section | Required | Description                                                                                     |
 |--------------------------------|-----------|---------|---------|----------|-------------------------------------------------------------------------------------------------|
 | Auto Associate Contacts - Exclude | Check-Box | 0/1     | Default | True     | Mark this EDF to exclude the computer from the contact auto association.                       |
+

@@ -60,3 +60,4 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 - **Body:**  
   Network Glue Collector installation failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
   @ErrorLog@.
+

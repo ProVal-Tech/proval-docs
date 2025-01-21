@@ -36,3 +36,4 @@ The purpose of this solution is to deploy the SentinelOne agent on Windows, Linu
 - Create [Device Group - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15808853)
 - Create the deployment schedule as described in this document: [CW RMM - Task - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15806354)
 - Create [Monitor - SentinelOne Deployment Failure](<../cwrmm/monitors/SentinelOne Deployment Failure.md>)
+

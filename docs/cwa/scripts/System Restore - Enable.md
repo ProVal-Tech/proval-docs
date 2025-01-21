@@ -41,3 +41,4 @@ The script will run a PowerShell command that enables System Restore on the targ
 ## Output
 
 - Script log message only
+

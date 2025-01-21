@@ -26,3 +26,4 @@ This document describes a temporary table created by the [CWM - Automate - Scrip
 | Computerid  | int(8)  | Unique identifier for the computer |
 | Clientid    | int(8)  | Unique identifier for the client   |
 | Timestamp   | datetime | The time when the script was run   |
+

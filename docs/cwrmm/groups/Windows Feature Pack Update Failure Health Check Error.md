@@ -36,3 +36,4 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_6.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_7.png)  
+

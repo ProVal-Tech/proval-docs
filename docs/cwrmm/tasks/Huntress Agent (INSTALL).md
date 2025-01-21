@@ -312,3 +312,4 @@ The other custom fields can be left blank.
 
 **Note:**  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.
+

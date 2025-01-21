@@ -20,3 +20,4 @@ This monitor schedules the script [SonicWall NetExtender - Latest Version [Winge
 ## Target
 
 Workstations - Only one workstation is needed for this monitor because it is only required to fetch the latest version.
+

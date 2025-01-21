@@ -33,3 +33,4 @@ Stores information about Windows shadow copies.
 | AllocatedSpace   | FLOAT   | Allocated space size for the Shadow Copy in GB.                                               |
 | UsedSpace       | FLOAT   | Used space size by the Shadow Copy in GB.                                                       |
 | MaxSpace        | FLOAT   | Maximum space provided to the Shadow Copy in GB.                                               |
+

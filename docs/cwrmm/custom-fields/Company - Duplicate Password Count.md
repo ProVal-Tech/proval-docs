@@ -26,3 +26,4 @@ This document holds the count of accounts with duplicate passwords.
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Duplicate-Password-Count/image_1.png)
+

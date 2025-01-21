@@ -61,3 +61,4 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+

@@ -26,3 +26,4 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 ## Process
 
 This section executes the SQL query to create the `plugin_proval_v_windows_10_version_metrics` view.
+

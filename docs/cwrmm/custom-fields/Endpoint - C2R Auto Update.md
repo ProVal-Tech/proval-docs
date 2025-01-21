@@ -23,3 +23,4 @@ This document outlines whether the C2R Office Auto Update feature is enabled on 
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Auto-Update/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Auto-Update/image_2.png)
+

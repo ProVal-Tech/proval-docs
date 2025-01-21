@@ -74,3 +74,4 @@ A pop-up message will appear at the bottom right corner of the screen to remind 
 
 - Script Log
 - Prompt on End Machine
+

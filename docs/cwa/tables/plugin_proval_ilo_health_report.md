@@ -51,3 +51,4 @@ This table stores health information about HP iLO devices. It is filled by the s
 | StatusInfo                   | VARCHAR  | Additional information about the overall iLO status.  |
 | LastRun                      | DATETIME | The last time the script was run.                     |
 | Computerid                   | INT      | Computer ID.                                          |
+

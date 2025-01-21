@@ -31,3 +31,4 @@ This script will install Datto Workplace 10.3.0.281 and uninstall any other vers
 ## Output
 
 - Script log
+

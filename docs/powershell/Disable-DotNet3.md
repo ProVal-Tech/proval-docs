@@ -33,3 +33,4 @@ This command will ensure that a new version of .NET is installed and disable the
 
 - `.\Disable-DotNet3-log.txt`
 - `.\Disable-DotNet3-error.txt`
+

@@ -30,3 +30,4 @@ Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` t
 ## Output
 
 Agent Procedure Log
+

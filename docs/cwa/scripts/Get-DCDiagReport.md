@@ -62,3 +62,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 ![Ticketing](../../../static/img/Get-DCDiagReport/image_3.png)  
 **The script will not close or finish any ticket.**
+

@@ -33,3 +33,4 @@ All operating systems
 ## Alert Template
 
 - `△ Custom - Execute Script - Update Vendor Restricted Property`
+

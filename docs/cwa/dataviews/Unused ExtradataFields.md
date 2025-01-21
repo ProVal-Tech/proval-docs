@@ -30,3 +30,4 @@ The purpose of this document is to represent the Extradatafields that have eithe
 | IsEditable                | Represents whether the EDF is editable or not                       |
 | IsRestricted              | Represents whether the EDF is restricted or not                     |
 | (Masked/Password)        | Represents whether the EDF is masked or has a password              |
+

@@ -40,7 +40,7 @@ HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power/HiberbootEnabled (S
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|--------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = 'HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return 'Failed'} else {return 'Success'}} else {return 'Success'}} else {return 'Success'}" | Does Not Contain | 86400 | Failed |
+| System       | 127.0.0.1      | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = 'HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power';if (Test-Path $registryPath) \{$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) \{Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) \{return 'Failed'} else \{return 'Success'}} else \{return 'Success'}} else \{return 'Success'}" | Does Not Contain | 86400 | Failed |
 
 ## Target
 
@@ -62,3 +62,5 @@ FastBoot is successfully disabled.
 
 Please follow the document below for the implementation steps:  
 [Import - Remote Monitor - Windows Fast Boot Disable](<./Windows Fast Boot Disable Change.md>)
+
+

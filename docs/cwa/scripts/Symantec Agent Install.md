@@ -31,3 +31,4 @@ The script installs the Symantec Agent on the Windows machine.
 ## Output
 
 - Script log
+

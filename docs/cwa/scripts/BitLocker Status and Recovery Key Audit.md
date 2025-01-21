@@ -43,3 +43,4 @@ Sample Output:
 - BitLocker Encryption in Progress on Drive X:
 - BitLocker enabled on Drive X, No recovery key available
 - Drive X: recovery key: dm9ij30d-k4i30jf0-moqiw4oid-oijqwoeij-0qiwjeoqiwj
+

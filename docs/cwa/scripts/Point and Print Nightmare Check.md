@@ -29,7 +29,7 @@ If the above conditions are not met, then the script will report Point And Print
 
 | Name              | Example          | Description                                                                                      |
 |-------------------|------------------|--------------------------------------------------------------------------------------------------|
-| PointAndPrint     | Powershell Output | Detected - Meant registry entry found and not equal to 0<br>No Action Required - Safe          |
+| PointAndPrint     | Powershell Output | Detected - Meant registry entry found and not equal to 0<br/>No Action Required - Safe          |
 
 ## Process
 
@@ -42,3 +42,4 @@ If the above conditions are not met, then the script will report Point And Print
 - Script log
 - Script state
 - Dataview
+

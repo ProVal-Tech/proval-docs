@@ -104,3 +104,4 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 **Example:**  
 ![Ticketing Example](../../../static/img/Remove-Application/image_8.png)
+

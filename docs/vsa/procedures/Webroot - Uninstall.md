@@ -39,3 +39,4 @@ This document describes the process for uninstalling the Webroot application on 
 
 - **Failure**  
   ![Failure Log](../../../static/img/Webroot---Uninstall/image_4.png)  
+

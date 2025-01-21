@@ -25,3 +25,4 @@ This monitor checks for online agents where the script [EPM - Data Collection - 
 ## Target
 
 - Global
+

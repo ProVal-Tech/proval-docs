@@ -267,3 +267,4 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
+

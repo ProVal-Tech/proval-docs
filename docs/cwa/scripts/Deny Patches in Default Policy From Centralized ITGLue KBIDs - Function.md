@@ -41,3 +41,4 @@ Step 2: Runs a loop to deny that KBID for all applicable operating systems.
 ## Output
 
 Denied patches can be checked from the default approval policy.
+

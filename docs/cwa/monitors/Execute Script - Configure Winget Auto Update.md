@@ -25,3 +25,4 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Configure Winget Auto Update`
+

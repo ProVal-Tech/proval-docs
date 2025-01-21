@@ -85,3 +85,4 @@ This monitor will identify computers where the license key is reported as inacti
 
 15. Click the `Save` button to save the monitor set.  
     ![Step 15](../../../static/img/Windows-License-Status/image_18.png)
+

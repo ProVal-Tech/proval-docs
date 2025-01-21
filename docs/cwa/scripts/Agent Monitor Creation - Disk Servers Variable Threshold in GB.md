@@ -37,7 +37,7 @@ This should be run only as a subscript to the `@Agent Monitor Creation - Disk* -
 - `@MinMBytesFreeGT1TB@` -> Sets the threshold for drives >1TB
 - `@MinMBytesFreeGT1TBSecThresh@` -> Sets the second threshold for drives >1TB
 - `@MinMBytesFreeGT100GB@` -> Sets the threshold for drives >100GB
-- `@MinMBytesFreeLT100GB@` -> Sets the threshold for drives <100GB
+- `@MinMBytesFreeLT100GB@` -> Sets the threshold for drives \<100GB
 - `@MinSizeMB@` -> Sets the threshold requirement for building the monitor
 - `@reportcategory@` -> Used for report center report generation
 - `@ticketcategory@` -> Sets the ticket category mapping
@@ -52,3 +52,5 @@ This script is run as a subscript from the Daily Maintenance of Automate's disk 
 ## Output
 
 - Script log
+
+

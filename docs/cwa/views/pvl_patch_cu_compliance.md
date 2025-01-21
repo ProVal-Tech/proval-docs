@@ -51,3 +51,4 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 | Compliant Clients - CU                   | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                                                                                                                     |
 | Non-Compliant Clients - CU               | Total number of individual clients where `CU Score %` is less than 75.                                                                                                                                                    |
 | Compliant Clients - CU %                 | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                          |
+

@@ -60,3 +60,4 @@ Once the above criteria are set, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Threatlocker/image_4.png)
 
 ![Image](../../../static/img/Deploy-Threatlocker/image_5.png)
+

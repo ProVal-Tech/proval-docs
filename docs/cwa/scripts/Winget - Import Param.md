@@ -74,3 +74,4 @@ The name of the file without the extension should be set to the user parameter a
 
 **Example:**  
 ![](../../../static/img/Winget---Import-Param/image_5.png)
+

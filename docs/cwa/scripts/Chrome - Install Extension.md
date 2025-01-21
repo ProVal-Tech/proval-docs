@@ -45,3 +45,4 @@ This script is used to enforce the installation of an extension or a list of ext
 
 - Script log
 - Local file on the computer
+

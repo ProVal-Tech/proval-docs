@@ -93,3 +93,4 @@ Document the various variables in the script. Delete any section that is not rel
 - The selection made by the user will be stored in the `UserSelection` variable in the script.
   - If you select date/time selection, it will return the selected date/time from the user.
   - If you select a yes-no button, a yes or no will be returned.
+

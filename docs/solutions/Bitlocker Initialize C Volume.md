@@ -28,3 +28,4 @@ This solution enables BitLocker on the endpoints. It features control over the e
 - Create the [Machine Group - BitLocker Initialize](<../cwrmm/groups/BitLocker Initialize.md>)
 - Create the [Script - BitLocker Initialize C Volume](<../cwrmm/tasks/CW RMM Script - BitLocker Initialize C Volume.md>) and follow the deployment instructions
 - Create the [Monitor - BitLocker Initialize Failure Detection](<../cwrmm/monitors/BitLocker Initialize Failure Detection.md>) and follow the deployment instructions.
+

@@ -180,3 +180,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Log](../../../static/img/Set-Firefox-Homepage/image_25.png)  
+

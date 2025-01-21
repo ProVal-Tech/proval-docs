@@ -20,3 +20,4 @@ An implementation of the agnostic script [SWM - Software Install - Agnostic - De
 ## Output
 
 - Script logs
+

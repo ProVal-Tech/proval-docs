@@ -77,3 +77,4 @@ To enable ticketing on failure, the ticket category must be set in the global pa
 
 `Please look into why this automation failed to complete.`  
 `Thank you`
+

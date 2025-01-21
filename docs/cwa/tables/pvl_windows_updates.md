@@ -56,3 +56,4 @@ Populating script: [EPM - Script - Windows Update History Audit](https://proval.
 | BrowseOnly                      | TINYINT   |                                                                                                 |
 | PerUser                         | TINYINT   |                                                                                                 |
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
+

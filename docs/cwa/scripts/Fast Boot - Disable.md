@@ -45,3 +45,4 @@ If the value did not change in the registry, the script will exit with a failure
 ## Output
 
 Script log messages only.
+

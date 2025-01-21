@@ -94,3 +94,4 @@ Will attempt to remove Google Chrome using the provided custom switch.
 
 - `.\Remove-Application-log.txt`
 - `.\Remove-Application-error.txt`
+

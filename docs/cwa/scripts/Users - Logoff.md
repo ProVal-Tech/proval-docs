@@ -33,3 +33,4 @@ Setting the User parameter to "All" will log off all users.
 
 1. Determine the scope.
 2. Log off the desired user or users.
+

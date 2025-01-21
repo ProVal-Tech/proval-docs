@@ -49,3 +49,4 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
      - [Internal Monitor - Execute Script - Get MSSQL Database](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
+

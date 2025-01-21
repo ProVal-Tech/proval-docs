@@ -75,3 +75,4 @@ Create the following device groups:
 Create and deploy the following tasks:  
 - [Scheduled Task Winget Update All (Create)](<../cwrmm/tasks/Scheduled Task Winget Update All (Create).md>)  
 - [Scheduled Task Winget Update All (Delete)](<../cwrmm/tasks/Scheduled Task Winget Update All (Delete).md>)  
+

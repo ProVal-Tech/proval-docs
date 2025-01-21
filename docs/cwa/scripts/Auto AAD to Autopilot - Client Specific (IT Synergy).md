@@ -55,3 +55,4 @@ AppID, AppSecret, and Tenant ID EDFs must be set at the client level.
 - If the output does not contain "All Devices synced," then `Get-WindowsAutoPilotInfo.ps1` failed, and the script will fail.
 - If the `FinishStatus` of the script PowerShell response - All Errors - Check is false, then the check for common environmental errors found a known issue, and the script will fail.
 - The script log will hold any error type information.
+

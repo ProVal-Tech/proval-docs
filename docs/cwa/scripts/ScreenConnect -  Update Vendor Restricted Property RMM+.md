@@ -59,3 +59,4 @@ The system property `PropertyIndex` needs to be set before running the script.
 ## Output
 
 Script log messages only.
+

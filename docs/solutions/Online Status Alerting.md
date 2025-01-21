@@ -59,3 +59,4 @@ The purpose of this solution is to change the status of the ticket in ConnectWis
      - Apply the alert template `△ Custom - Autofix - Online Status Alerting`  
        - Ensure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../cwa/scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>)  
      - Right-click and select Run Now on the monitor
+

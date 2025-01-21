@@ -61,3 +61,4 @@ Creates a copy of the key `HKLM:\Software\Microsoft\DataAccess` and all its subk
 | ConnectWise RMM                   |                                          |
 | Kaseya                            |                                          |
 | Datto RMM                         |                                          |
+

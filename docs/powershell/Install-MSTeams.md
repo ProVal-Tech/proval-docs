@@ -49,3 +49,4 @@ Uninstalls and deprovisions the existing Microsoft Teams installation before rei
 ## Output
 - `.\Install-MSTeams-log.txt`
 - `.\Install-MSTeams-error.txt`
+

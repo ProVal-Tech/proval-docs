@@ -56,3 +56,4 @@ In the above screenshot, the password saving feature for the browsers will be di
 
 - Script log
 - Script state
+

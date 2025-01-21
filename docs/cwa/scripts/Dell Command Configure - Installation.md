@@ -34,3 +34,4 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 ## Output
 
 **Script Log:** Success or Failure
+

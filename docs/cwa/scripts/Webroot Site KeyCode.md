@@ -21,3 +21,4 @@ You will set the code in the format `xxxx-xxxx-xxxx-xxxx-xxxx`.
 
 ## Step 3
 Copy the code and paste it into the client EDF 'Webroot Site KeyCode' for the solution to work.
+

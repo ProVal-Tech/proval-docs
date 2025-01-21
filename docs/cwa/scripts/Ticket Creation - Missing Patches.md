@@ -52,3 +52,4 @@ The only dependency for this script is that the monitor triggering it must repor
 > - Microsoft .NET Framework 4.8 for Windows Server 2012 R2 for x64 (KB4486105)  
 > - 2022-05 Servicing Stack Update for Windows Server 2012 R2 for x64-based Systems (KB5014025)  
 > - 2022-05 Security and Quality Rollup for .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8 for Windows Server 2012 R2 for x64 (KB5013872)  
+

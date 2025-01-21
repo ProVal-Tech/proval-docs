@@ -26,3 +26,4 @@ This document creates the [plugin_proval_auto_approval_status](<../views/plugin_
 ## Output
 
 The output is the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
+

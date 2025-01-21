@@ -36,3 +36,4 @@ The script will put the machine into Fast Talk mode, as this makes the script ru
 ## Output
 
 Script log messages
+

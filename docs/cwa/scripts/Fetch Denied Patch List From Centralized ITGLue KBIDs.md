@@ -56,3 +56,4 @@ This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provalt
 For failure:  
 - Script log  
 - Email  
+

@@ -37,7 +37,7 @@ If `-AllowRestart` was passed, then the computer will be rebooted to complete th
 
 Encrypts the E: volume with a password protector using Aes128. Will initialize TPM if needed and reboot the computer after completion.
 ```powershell
-.\\Initialize-BitLockerVolume.ps1 -MountPoint E: -EncryptionMethod Aes128 -PasswordProtector -Password (ConvertTo-SecureString -String 'P@$sw0rD!' -AsPlainText -Force) -AllowTPMInit -AllowRestart
+.\Initialize-BitLockerVolume.ps1 -MountPoint E: -EncryptionMethod Aes128 -PasswordProtector -Password (ConvertTo-SecureString -String 'P@$sw0rD!' -AsPlainText -Force) -AllowTPMInit -AllowRestart
 ```
 
 Encrypts the `$env:SystemDrive` volume with a TPM protector using Aes256. If TPM is not initialized, the script will exit. Will reboot the computer after completion.
@@ -45,15 +45,15 @@ Encrypts the `$env:SystemDrive` volume with a TPM protector using Aes256. If TPM
 .\\Initialize-BitLockerVolume.ps1 -Tpm -AllowRestart
 ```
 
-Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256 to E:\\Recovery. Will initialize TPM if needed. Will reboot the computer after completion.
+Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256 to `E:\Recovery`. Will initialize TPM if needed. Will reboot the computer after completion.
 ```powershell
-.\\Initialize-BitLockerVolume.ps1 -StartupKeyProtector -Path E:\\Recovery -AllowTPMInit -AllowRestart
+.\Initialize-BitLockerVolume.ps1 -StartupKeyProtector -Path E:\\Recovery -AllowTPMInit -AllowRestart
 ```
 
 ## Parameters
 | Parameter                         | Required  | Default            | Type         | Description                               |
 | --------------------------------- | --------- | ------------------ | ------------ | ----------------------------------------- |
-| `MountPoint`                      | False     | `$env:SystemDrive` | String       | The target volume to enable BitLocker encryption against. Should be in the format '\\<driveletter\\>' or '\\<driveletter\\>:'. If a path is passed, the drive of that path will be attempted to be parsed. Defaults to `$env:SystemDrive`. |
+| `MountPoint`                      | False     | `$env:SystemDrive` | String       | The target volume to enable BitLocker encryption against. Should be in the format '\<driveletter\>' or '\<driveletter\>:'. If a path is passed, the drive of that path will be attempted to be parsed. Defaults to `$env:SystemDrive`. |
 | `EncryptionMethod`                | False     | "Aes256"           | String       | The method of encryption to use for BitLocker. Valid options are Aes128, Aes256, XtsAes128, or XtsAes256. Defaults to Aes256. |
 | `AllowTPMInit`                    | False     | False              | Switch       | Allow the script to attempt initialization of TPM if necessary. Will require a reboot if TPM needs to be initialized. |
 | `AllowRestart`                    | False     | False              | Switch       | Allow the script to automatically restart or shutdown the machine. This can happen on initialization of TPM or successful encryption of a volume. |
@@ -77,3 +77,5 @@ Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256
 - .\\Initialize-BitLockerVolume-log.txt
 - .\\Initialize-BitLockerVolume-data.txt
 - .\\Initialize-BitLockerVolume-error.txt
+
+

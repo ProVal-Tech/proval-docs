@@ -26,3 +26,4 @@ Windows machines, excluding domain controller servers.
 **Name:** `△ Custom - Execute Script - Windows - User Profile - Get Information`  
 
 The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script.
+

@@ -42,3 +42,4 @@ The script will gather the KBIDs from the [New Patch Deny Process](<../../unsort
 ## Output
 
 The output can be checked from the Approval section of the patch manager.
+

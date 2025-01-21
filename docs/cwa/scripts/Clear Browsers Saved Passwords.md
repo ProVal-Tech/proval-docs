@@ -3,7 +3,7 @@ id: '35167ba2-2d75-496c-99f0-facc98a07fbb'
 title: 'Remove Saved Passwords from Browsers'
 title_meta: 'Remove Saved Passwords from Browsers - A Comprehensive Guide'
 keywords: ['browsers', 'passwords', 'chrome', 'edge', 'brave', 'firefox', 'security']
-description: 'This document provides a detailed overview of a script that removes saved passwords from various web browsers, including Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox. It highlights the script's functionality, sample runs, and the importance of closing browsers before execution.'
+description: "This document provides a detailed overview of a script that removes saved passwords from various web browsers, including Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox. It highlights the script's functionality, sample runs, and the importance of closing browsers before execution."
 tags: ['brave', 'browsers', 'chrome', 'edge', 'firefox', 'security', 'setup']
 draft: false
 unlisted: false
@@ -32,3 +32,4 @@ Run with a parameter set to 1 to wipe out the Microsoft Edge Wallet passwords an
 ## Output
 
 - Script Log
+

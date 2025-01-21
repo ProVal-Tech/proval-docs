@@ -100,3 +100,4 @@ Output of the installation command:
 
 - Script log
 - Ticket (if enabled)
+

@@ -22,3 +22,4 @@ This document executes the [SEC - Encryption - Script - Lock Stolen System](<../
 - `Marked as Stolen` Group
 
 ![Image](../../../static/img/EDF-Based-Stolen-Systems-Monitor/image_1.png)
+

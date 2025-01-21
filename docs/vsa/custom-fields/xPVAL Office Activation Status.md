@@ -18,3 +18,4 @@ This document tracks the activation status of any installed Office applications.
 | Field Name                     | Type of Field (Machine or Organization) | Description                                        |
 |--------------------------------|------------------------------------------|----------------------------------------------------|
 | xPVAL Office Activation Status  | Machine                                  | Tracks the activation status of any installed Office applications. |
+

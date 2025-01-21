@@ -33,7 +33,9 @@ Minimum Requirement: MySQL 5.7.7
 | Computerid      | int (11)      | Computer ID                                                                                  |
 | Locationid      | int (11)      | Location ID                                                                                  |
 | OS              | varchar (100) | Operating System                                                                              |
-| ApproVal Age    | varchar (5)   | Approval Age in days of the patch ('\\<= 7', '8-14', '15-22', '22-30', '> 30')               |
+| ApproVal Age    | varchar (5)   | Approval Age in days of the patch ('\<= 7', '8-14', '15-22', '22-30', '> 30')               |
 | Total Approved   | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
 | Total Missing    | decimal (23,0)| Number of approved patches that aren't installed                                             |
 | Patching Policy  | varchar (9)   | Patching Policy (Managed | Unmanaged)                                                       |
+
+

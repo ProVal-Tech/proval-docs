@@ -40,3 +40,4 @@ Displays the information of the PHP.exe file fetched by the [Locate PHP.exe](<..
 | Last Write Time        | File Modification Time                                                                            |
 | Attributes             | File's Attributes                                                                                 |
 | Script Run Time        | Data Collection Time                                                                              |
+

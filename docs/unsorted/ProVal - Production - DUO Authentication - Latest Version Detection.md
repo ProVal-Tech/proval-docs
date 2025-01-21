@@ -26,3 +26,4 @@ This script is specifically targeted to one machine to fetch the application's l
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
+

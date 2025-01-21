@@ -31,7 +31,7 @@ This solution handles the process of updating a Windows 10 machine to the latest
 | [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](<../cwa/scripts/Windows 10 Update Stats - Retrieve.md>)                             | CWA Autofix Action Script | For importing data to the custom table and removing machines from the created group.              |
 | [CWM - Automate - Script - Prompter](<../cwa/scripts/Prompter.md>)                                                             | CWA Script        | Used when using the Prompter prompting option.                                                     |
 | [Prompter](<../cwa/scripts/Prompter.md>)                                                                                       | Agnostic Application | Prompter application.                                                                              |
-| - Alert Template:<br><ul><li>Name: △ Autofix - Start Windows 10 Build upgrade</li></ul>                                                            | Alert Template    | Created to call Windows 10 - Feature Update - Install Latest between 1 and 3 AM daily            |
+| - Alert Template:<br/><ul><li>Name: △ Autofix - Start Windows 10 Build upgrade</li></ul>                                                            | Alert Template    | Created to call Windows 10 - Feature Update - Install Latest between 1 and 3 AM daily            |
 
 ## Implementation
 
@@ -64,3 +64,4 @@ For a manual run:
 
 4. **The Windows 10 - Feature Update - Install Latest script is failing at line 13.**
    - Please add the Windows 10 - Update Stats - Retrieve script to your automate implementation.
+

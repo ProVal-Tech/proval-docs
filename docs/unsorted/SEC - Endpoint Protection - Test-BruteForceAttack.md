@@ -60,3 +60,4 @@ This command queries the event log from the last time it ran to the current time
 | ConnectWise RMM              |                                          |
 | Kaseya                       |                                          |
 | Datto RMM                    |                                          |
+

@@ -31,3 +31,4 @@ Stores the data fetched by the [CWM - Automate - Script - Get Latest Installed C
 | ReleaseDate    | date        | Release date of the latest installed Cumulative Update |
 
 
+

@@ -83,3 +83,4 @@ S/N OF PC: @biosver@
 If the update fails, you can try manually installing NordPass on your machine by following the instructions provided in the link below:  
 [Installing NordPass on Windows](https://support.nordpass.com/hc/en-us/articles/360004799257-Installing-NordPass-on-Windows)  
 This guide will walk you through the steps to install NordPass on your Windows system.
+

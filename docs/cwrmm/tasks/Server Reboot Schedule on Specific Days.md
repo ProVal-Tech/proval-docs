@@ -505,3 +505,4 @@ For example:
 ![Run Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_47.png)
 
 - The task will start appearing in the Scheduled Tasks.
+

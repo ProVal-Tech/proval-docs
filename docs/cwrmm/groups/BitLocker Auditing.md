@@ -121,3 +121,4 @@ This group holds all devices that have been audited for BitLocker and checks the
 This is the scheduled recurrence of the [CW RMM - Task - BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878983) task.
 
 ![Image](../../../static/img/BitLocker-Auditing/image_11.png)
+

@@ -27,3 +27,4 @@ This script will remove all Xbox packages, including the Xbox Game Bar, from the
 ## Output
 
 - Script log
+

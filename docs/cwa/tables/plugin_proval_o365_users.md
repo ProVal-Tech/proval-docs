@@ -29,3 +29,4 @@ The script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Us
 | IsLicensed   | CHAR | Indicates whether the user is licensed (True or False).        |
 | 2FAStatus   | CHAR | A string denoting the type of 2FA set up on the account.       |
 | ContactID   | INT  | The ContactID associated with the O365 user. Will be NULL if a match cannot be found. |
+

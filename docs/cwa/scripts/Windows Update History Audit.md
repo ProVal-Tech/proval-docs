@@ -38,3 +38,4 @@ This document describes a script that gathers Windows update data and enters it 
 
 - Script Log
 - [pvl_windows_updates](<../tables/pvl_windows_updates.md>)
+

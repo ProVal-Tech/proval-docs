@@ -31,3 +31,4 @@ Global
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
 The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](<../scripts/Out of Date Cumulative Updates Autofix.md>) script.
+

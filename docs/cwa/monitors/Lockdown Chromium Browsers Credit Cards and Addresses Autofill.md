@@ -173,3 +173,4 @@ Refresh Searches and Groups.
 Confirm the presence of the `ProVal - Production - Lockdown Chromium Browsers Credit Cards and Addresses Autofill` remote monitor on the `△ Lockdown Browsers Password Manager` group.
 
 ![Image](../../../static/img/Lockdown-Chromium-Browsers-Credit-Cards-and-Addresses-Autofill/image_3.png)
+

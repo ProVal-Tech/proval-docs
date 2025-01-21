@@ -20,3 +20,4 @@ This monitor looks for new domain user accounts that have a creation date within
 ## Target
 
 Global
+

@@ -28,3 +28,4 @@ The purpose of this document is to gather and present data about Windows Updates
 The script [Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093) should be scheduled against all compliant Windows endpoints on a weekly basis.
 
 If required, implement the [Patches Not Installing > X Days](<../cwa/monitors/Patches Not Installing  X Days.md>) monitor following the instructions in the documentation.
+

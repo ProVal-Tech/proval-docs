@@ -46,3 +46,4 @@ The monitor set should be limited to the `HP Servers` search.
 
 **Body:** `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%`
+

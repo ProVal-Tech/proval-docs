@@ -37,3 +37,4 @@ The purpose of this solution is to detect Dell Dockstation on Dell workstations.
      - [Internal Monitor - Execute Script - Get-DellDockStation](<../cwa/monitors/Execute Script - Get-DellDockStation.md>)
        - `△ Custom - Execute Script - Get-DellDockStation`
        - Right-click and select "Run Now" to start the monitor.
+

@@ -22,3 +22,4 @@ Import the file using System → General → Import → SQL File (The SQL file i
 ![Image](../../static/img/Active-Directory-Reporting-SQL-Import-Attachment/image_1.png)
 
 **Note:** Import the SQL file only after importing the script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) and executing the script [AD - Create Views/Table/Schedule for AD Reporting Solution](<../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>).
+

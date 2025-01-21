@@ -141,29 +141,29 @@ Paste the following PowerShell script and leave the expected time of script exec
 
 ```powershell
 $os = ( Get-CimInstance -ClassName Win32_OperatingSystem ).Caption
-if ( '@EndPoint_Selection@' -eq 'Enable' ) {
+if ( '@EndPoint_Selection@' -eq 'Enable' ) \{
     'Enable'
-} elseif ( '@EndPoint_Selection@' -eq 'Disable' ) {
+} elseif ( '@EndPoint_Selection@' -eq 'Disable' ) \{
     'Disable'
-} elseif ( $os -match 'Server' ) {
-    if ( '@Site_Selection@' -eq 'Enable for Server' ) {
+} elseif ( $os -match 'Server' ) \{
+    if ( '@Site_Selection@' -eq 'Enable for Server' ) \{
         'Enable'
-    } elseif ( '@Site_Selection@' -eq 'Disable for Server' ) {
+    } elseif ( '@Site_Selection@' -eq 'Disable for Server' ) \{
         'Disable'
-    } elseif ( '@Company_Selection@' -eq 'Servers as well' ) {
+    } elseif ( '@Company_Selection@' -eq 'Servers as well' ) \{
         'Enable'
-    } else {
+    } else \{
         'Disable'
     }
-} elseif ( '@Site_Selection@' -eq 'Enable' ) {
+} elseif ( '@Site_Selection@' -eq 'Enable' ) \{
     'Enable'
-} elseif ( '@Site_Selection@' -eq 'Disable' ) {
+} elseif ( '@Site_Selection@' -eq 'Disable' ) \{
     'Disable'
-} elseif ( '@Company_Selection@' -eq 'Enable' ) {
+} elseif ( '@Company_Selection@' -eq 'Enable' ) \{
     'Enable'
-} elseif ( '@Company_Selection@' -eq 'Disable' ) {
+} elseif ( '@Company_Selection@' -eq 'Disable' ) \{
     'Disable'
-} else {
+} else \{
     'Disable'
 }
 ```
@@ -241,7 +241,7 @@ $json = $($iwr.content -split '' -split '' ) -match 'plugin_proval_windows_os_su
 $json = $json -replace '', "`n" -replace '//', '//' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
 $rows = ($json | ConvertFrom-Json).rows
 $os = Get-CimInstance -ClassName Win32_OperatingSystem
-if (!( $os.caption -match '(Windows 1[01])|(Server 20(1[69]|22))' )) {
+if (!( $os.caption -match '(Windows 1[01])|(Server 20(1[69]|22))' )) \{
     return 'Unsupported OS'
 }
 ```
@@ -340,7 +340,7 @@ Add a new `If/Then/Else` logic inside the `Else` section.
 ![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_49.png)  
 ![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_50.png)  
 
-### Row 7d(iv)\\<1> Condition: Output Does Not Contain
+### Row 7d(iv)\<1> Condition: Output Does Not Contain
 
 Change the comparator to `Does Not Contain`.  
 ![Change Comparator](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_51.png)  
@@ -348,7 +348,7 @@ Change the comparator to `Does Not Contain`.
 Type `Successfully installed the latest available Cumulative Update` in the `Input Value or Variable` field and press `Enter`.  
 ![Input Value](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_52.png)  
 
-### Row 7d(iv)\\<2> Function: Set Custom Field
+### Row 7d(iv)\<2> Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `If` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -361,7 +361,7 @@ Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` f
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_46.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_47.png)  
 
-### Row 7d(iv)\\<3> Function: Script Exit
+### Row 7d(iv)\<3> Function: Script Exit
 
 Click the `Add Row` button inside the `If` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -380,7 +380,7 @@ Output: %Output%
 ```
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
 
-### Row 7d(iv)\\<4> Function: Set Custom Field
+### Row 7d(iv)\<4> Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_57.png)  
@@ -396,7 +396,7 @@ Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` f
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_58.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_59.png)  
 
-### Row 7d(iv)\\<5> Function: PowerShell Script
+### Row 7d(iv)\<5> Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -418,7 +418,7 @@ Paste the following PowerShell script and leave the expected time of script exec
 ```
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_60.png)  
 
-### Row 7d(iv)\\<6> Function: Set Custom Field
+### Row 7d(iv)\<6> Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -434,7 +434,7 @@ Search and select `Out_of_Date_CU_Autofix_Date` in the `Search Custom Field` fie
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_61.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_62.png)  
 
-### Row 7d(iv)\\<7> Function: PowerShell Script
+### Row 7d(iv)\<7> Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -453,15 +453,15 @@ Paste the following PowerShell script and leave the expected time of script exec
 
 ```powershell
 $os = ( Get-CimInstance -ClassName Win32_OperatingSystem ).Caption; 
-if ( $os -match 'Server' ) { 
+if ( $os -match 'Server' ) \{ 
     'This is a Server Operating System. It should be restarted manually. Exiting the Script.' 
-} else { 
+} else \{ 
     'Initiating the reboot pending prompt solution on the machine.' 
 }
 ```
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_63.png)  
 
-### Row 7d(iv)\\<8> Function: Script Log
+### Row 7d(iv)\<8> Function: Script Log
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -519,3 +519,5 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 
 - Script Log
 - Custom Field
+
+

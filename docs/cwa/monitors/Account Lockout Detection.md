@@ -19,7 +19,7 @@ This monitor detects account lockouts.
 
 | Check Action | Server Address | Check Type | Check Value                                                                                                                                | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName='Security'; Id=4740} | Where-Object {$_.TimeCreated -gt (Get-Date).AddMinutes(-15)} | Select-Object -ExpandProperty TimeCreated" | Missing     | 15       |        |
+| System       | 127.0.0.1     | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @\{LogName='Security'; Id=4740} | Where-Object \{$_.TimeCreated -gt (Get-Date).AddMinutes(-15)} | Select-Object -ExpandProperty TimeCreated" | Missing     | 15       |        |
 
 ## Dependencies
 
@@ -29,3 +29,5 @@ This monitor detects account lockouts.
 ## Target
 
 Windows OS
+
+

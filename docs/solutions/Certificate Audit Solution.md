@@ -98,3 +98,4 @@ The purpose of this solution is to pull meaningful certificate information into 
    - [Internal Monitor - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and select "Run Now" to start the monitor.
+

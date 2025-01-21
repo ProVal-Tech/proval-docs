@@ -27,3 +27,4 @@ This dataview displays Bitlocker recovery keys that have been collected by the [
 | Drive Letter  | The drive letter that has been encrypted with Bitlocker                                         |
 | Recovery Key  | The recovery key for Bitlocker                                                                   |
 | Last Updated  | The last time that the script was run to gather the data. Old Last Updated dates may indicate outdated information. |
+

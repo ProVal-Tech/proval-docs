@@ -23,3 +23,4 @@ This script will send a popup message to the logged-in user to leave their machi
 
 - The script first verifies if the user is logged in. If not, it exits.
 - If a user is logged in, it sends a popup message to the user to leave their machine online.
+

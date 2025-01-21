@@ -34,3 +34,4 @@ This script helps to install ClickShare on the agent. It can install the applica
 ## Output
 
 - Script log
+

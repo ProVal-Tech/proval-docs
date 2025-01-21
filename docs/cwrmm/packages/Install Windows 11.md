@@ -56,3 +56,4 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 ## Completed Policy Group
 
 ![](../../../static/img/Install-Windows-11/image_13.png)
+

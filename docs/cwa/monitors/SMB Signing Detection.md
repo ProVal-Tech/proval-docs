@@ -40,3 +40,4 @@ Refer to the script documentation [CWA Script - CVE-2016-2115 - SMB Signing](<..
 
 Please follow the implementation document below to install this content:
 - [Import - Remote Monitor - SMB Signing Detection](<./Import - Remote Monitor - SMB Signing Detection.md>)
+

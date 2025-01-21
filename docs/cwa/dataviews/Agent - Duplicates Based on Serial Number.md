@@ -27,3 +27,4 @@ The purpose of the dataview is to locate duplicate machines within Automate. The
 | Serial Numbers   | Displays the serial number of the duplicate machines  |
 | Mac Addresses    | Displays the MAC address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
+

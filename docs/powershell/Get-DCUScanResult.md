@@ -28,3 +28,4 @@ After ensuring the fulfillment of the requirements, this command stores the resu
 - `.\Get-DCUScanResult-log.txt`
 - `.\Get-DCUScanResult-error.txt`
 - `.\DCUReport\DCUApplicableUpdates.xml`
+

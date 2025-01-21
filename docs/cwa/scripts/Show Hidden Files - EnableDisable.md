@@ -36,3 +36,4 @@ The script will hide or unhide hidden files based on the input parameter.
 ## Output
 
 - Script log
+

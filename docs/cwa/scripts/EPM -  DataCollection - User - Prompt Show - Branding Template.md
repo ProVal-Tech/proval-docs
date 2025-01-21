@@ -59,3 +59,4 @@ This script simply assigns values to variables for use in the User Prompt - Show
 ## Output
 
 This script outputs standard variable settings to the calling script to be used by User Prompt - Show to produce a standard branded pop-up theme.
+

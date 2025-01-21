@@ -30,3 +30,4 @@ This document stores the output of the Out of Date Cumulative Update (Autofix) t
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Result/image_1.png)
 
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Result/image_2.png)
+

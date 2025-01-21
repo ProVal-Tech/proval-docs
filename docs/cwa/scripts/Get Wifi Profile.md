@@ -41,3 +41,4 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+

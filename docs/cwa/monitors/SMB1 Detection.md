@@ -34,3 +34,4 @@ Managed Windows Service Plan Groups
 ## How to Import
 
 [Import - Remote Monitor - SMB1 Detection](<./SMB1 Detection Query.md>)
+

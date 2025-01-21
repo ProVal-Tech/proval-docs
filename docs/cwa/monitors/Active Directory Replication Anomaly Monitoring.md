@@ -131,3 +131,4 @@ Validate the presence of the `ProVal - Production - Active Directory Replication
 
 ## Step 5
 Apply the relevant alert template and ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+

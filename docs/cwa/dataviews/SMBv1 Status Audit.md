@@ -30,3 +30,4 @@ This dataview gathers data from the script [CWA Script - SMBv1 Enabled Detection
 | SMBv1 Logging             | This stores the PowerShell execution output of the script for logging                         |
 | SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) |
 | SMBv1 Vulnerability State  | This indicates whether the device is vulnerable or not based on the script output detection    |
+

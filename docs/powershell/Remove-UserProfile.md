@@ -78,3 +78,4 @@ Removes the user profile for the user 'domain\\testing123'. The user account wil
 - `./Remove-UserProfile-log.txt`
 - `./Remove-UserProfile-data.txt`
 - `./Remove-UserProfile-error.txt`
+

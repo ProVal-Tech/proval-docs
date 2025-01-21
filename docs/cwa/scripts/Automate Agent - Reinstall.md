@@ -41,3 +41,4 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 ## Output
 
 - Script log messages only.
+

@@ -50,3 +50,4 @@ The script takes a single parameter, which is an array of ExtensionIDs to instal
 ## Output
 
 - Script log
+

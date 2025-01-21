@@ -34,3 +34,4 @@ This script downloads and installs the ShadowControl client on the target machin
 ## Output
 
 **Script Log**
+

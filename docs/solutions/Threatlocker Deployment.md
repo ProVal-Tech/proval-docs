@@ -51,3 +51,4 @@ The purpose of this solution is to deploy the Threatlocker agent on Windows and 
 
 3. Create and deploy the following task:
    - [CW RMM - Task - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730645)
+

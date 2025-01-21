@@ -26,3 +26,4 @@ Setting this Custom Field to "Yes" will exclude the machine from Threatlocker De
 ## Screenshot
 
 ![Screenshot](../../../static/img/Endpoint---Exclude-Threatlocker/image_1.png)
+

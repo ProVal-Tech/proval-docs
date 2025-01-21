@@ -50,3 +50,4 @@ The files `Everything.exe` and `es.exe` will be downloaded from ProVal's File Se
 
 - Script Log
 - `@SearchResult@` holds the results.
+

@@ -44,3 +44,4 @@ This dataview provides a complete listing of Windows 10/11 systems along with th
 |--------|------------|-------|--------|
 | EOL    | Equals     | Yes   | **<span style="color: rgb(178, 34, 34);"><span style="background-color: rgb(0, 0, 0);">Red</span></span>** |
 | EOL    | Equals     | No    | **<span style="color: rgb(0, 128, 0);">Green</span>** |
+

@@ -76,3 +76,4 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_17.png)  
 
 Configuration updates will take effect on devices after running the `Update Config` command.
+

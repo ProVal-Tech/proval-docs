@@ -32,3 +32,4 @@ If Skype is removed successfully, the script will exit with a successful log mes
 ## Output
 
 Script log messages.
+

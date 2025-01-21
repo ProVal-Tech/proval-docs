@@ -34,8 +34,9 @@ Dataview displays the information gathered by the [CWM - Automate - Script - Get
 | Purchase Date            | Purchase Date (From CW Manage)                                                                               |
 | Expiration Date          | Warranty Expiration Date (From CW Manage)                                                                    |
 | Is Virtual               | Is Virtual? (Yes/No)                                                                                        |
-| Status                   | Warranty Status of the computer. Conditional formatting is applied to this column: <br> - Expired: Dark Red <br> - Expiring < 90 Days: Dark Orange <br> - In Warranty: Dark Green <br> - N/A: Virtual computers/Computers not having Warranty Date available |
+| Status                   | Warranty Status of the computer. Conditional formatting is applied to this column: <br/> - Expired: Dark Red <br/> - Expiring < 90 Days: Dark Orange <br/> - In Warranty: Dark Green <br/> - N/A: Virtual computers/Computers not having Warranty Date available |
 | Model Number             | Computer's Model (From CW Manage)                                                                           |
 | Serial Number            | Serial Number of computer (Hidden)                                                                          |
 | Data Collection Time     | Data Collection Time                                                                                         |
+
 

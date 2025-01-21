@@ -41,3 +41,4 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
      - [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../cwa/monitors/Get - Autopilot Hash.md>)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
+

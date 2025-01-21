@@ -34,3 +34,4 @@ This solution contains the dataviews that are used for the detailed auditing of 
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
+

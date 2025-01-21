@@ -36,3 +36,4 @@ Other items depend on this script being run to function, which are listed below:
 ## Output
 
 This is a one-time use script, used to install/create three views. After running it once, this script can be removed from the environment.
+

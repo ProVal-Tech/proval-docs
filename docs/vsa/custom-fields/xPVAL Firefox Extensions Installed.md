@@ -23,3 +23,4 @@ This document lists all Firefox extensions installed on the endpoint.
 | Field Name                       | Type of Field (Machine or Organization) | Description                                        |
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
 | xPVAL Firefox Extensions Installed | Machine                                 | Lists all Firefox extensions installed on the endpoint |
+

@@ -67,3 +67,4 @@ WHERE
     AND NOT v_setpatches.Title REGEXP '//W*(Microsoft Defender)//W*|//W*(Malicious Software Removal)//W*'
 GROUP BY ComputerID
 ```
+

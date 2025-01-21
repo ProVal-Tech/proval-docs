@@ -49,3 +49,4 @@ If the script fails to uninstall some of the HP bloatware from the machine but u
 
 The script has successfully removed all unnecessary HP bloatware, leaving only the following software components:  
 `@RemainingUninstalledSoftwares@`
+

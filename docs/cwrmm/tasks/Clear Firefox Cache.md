@@ -125,3 +125,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Clear-Firefox-Cache/image_19.png)  
+

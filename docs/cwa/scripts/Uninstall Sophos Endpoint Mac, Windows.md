@@ -20,3 +20,4 @@ The script is designed to uninstall Sophos Endpoint Protection from both Mac and
 ## Output
 
 - Script logs
+

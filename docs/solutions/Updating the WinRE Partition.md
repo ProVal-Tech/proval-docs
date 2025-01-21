@@ -72,3 +72,4 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
      e.g., [abc@def.com](mailto:abc@def.com); [ghi@jkl.com](mailto:ghi@jkl.com); [mno@pqr.com](mailto:mno@pqr.com)  
      Once the email address is set, you can set the value to 1 for the failure email if you need an email only on failure, set 1 for success email if you want an email for success, or set 1 for both for emails on both success and failure.
 
+

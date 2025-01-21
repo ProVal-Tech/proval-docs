@@ -32,3 +32,4 @@ This solution will pull installed print driver version information into Automate
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) script.
+

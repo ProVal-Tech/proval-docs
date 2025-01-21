@@ -16,3 +16,4 @@ Drive cleaning script for both VSA and LT using WMI.
 ## Parameters:
 
 - **-drive**: Optional. The target drive. If not defined, all drives are processed.
+

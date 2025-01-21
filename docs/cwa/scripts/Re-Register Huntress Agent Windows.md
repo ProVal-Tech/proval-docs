@@ -54,3 +54,4 @@ This script can be used to re-register the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
+

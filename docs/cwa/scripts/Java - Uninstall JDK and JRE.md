@@ -40,3 +40,4 @@ This script checks and uninstalls all installed versions of Java from the target
 ## Output
 
 - Script log
+

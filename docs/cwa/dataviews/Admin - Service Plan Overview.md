@@ -28,3 +28,4 @@ This document provides an overview of the service plan status, onboarding, patch
 | Workstations Patching      | Displays the workstations patching status. [Enabled/Disabled]                                        |
 | Administrator Credentials  | Displays the status of admin credentials set in the Deployment & Default tab on Locations.           |
 | Cache Drive                | Displays the status of the location cache drive.                                                     |
+

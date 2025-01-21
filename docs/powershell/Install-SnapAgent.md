@@ -43,3 +43,4 @@ Installs SnapAgent. A URL is necessary to install it.
 ## Output
 - `.\Install-SnapAgent-Log.txt`
 - `.\Install-SnapAgent-Error.txt`
+

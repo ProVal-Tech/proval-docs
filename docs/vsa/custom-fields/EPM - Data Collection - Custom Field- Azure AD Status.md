@@ -24,3 +24,4 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM 
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
+

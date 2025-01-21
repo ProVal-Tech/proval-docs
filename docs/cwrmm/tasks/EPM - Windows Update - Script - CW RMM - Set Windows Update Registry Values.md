@@ -35,3 +35,4 @@ Furthermore, the script will ensure that patching access is not disabled for the
 ## Output
 
 - Script log
+

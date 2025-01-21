@@ -133,3 +133,4 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to create a snapshot for the virtual machine @VMName@. Please review manually. 
 PowerShell script result: @psout@
 ```
+

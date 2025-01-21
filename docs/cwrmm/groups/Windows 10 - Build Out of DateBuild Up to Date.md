@@ -72,3 +72,4 @@ When adding criteria, please search for the **OS Version**.
 **Contains any of:** Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
+

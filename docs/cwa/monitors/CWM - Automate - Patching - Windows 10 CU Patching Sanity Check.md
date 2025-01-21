@@ -19,3 +19,4 @@ The purpose of this monitor is to identify Windows 10 machines that are experien
 ## Target
 
 The SQL query is limited to supported Windows 10 computers.
+

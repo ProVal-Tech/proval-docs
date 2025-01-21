@@ -33,9 +33,9 @@ The threshold can be modified by updating the value of the `$th` variable in the
 
 | State  | Condition            | Comparator |
 |--------|----------------------|------------|
-| Normal | Regex Match          | ((^((OK)\\{0,}(//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})$)|(^$)) |
-| Warning | Does Not Regex Match | ((^((OK)\\{0,}(//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})$)|(^$))|(^((//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})[0-9]\\{1,} failed logon event logs detected in the past [0-9]\\{1,} hour//(s//).) |
-| Error  | Regex Match          | ^((//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})[0-9]\\{1,} failed logon event logs detected in the past [0-9]\\{1,} hour//(s//). |
+| Normal | Regex Match          | ((^((OK)\\\{0,}(//r//n)\\\{0,}[//r//n]\\\{0,}//s\\\{0,})$)|(^$)) |
+| Warning | Does Not Regex Match | ((^((OK)\\\{0,}(//r//n)\\\{0,}[//r//n]\\\{0,}//s\\\{0,})$)|(^$))|(^((//r//n)\\\{0,}[//r//n]\\\{0,}//s\\\{0,})[0-9]\\\{1,} failed logon event logs detected in the past [0-9]\\\{1,} hour//(s//).) |
+| Error  | Regex Match          | ^((//r//n)\\\{0,}[//r//n]\\\{0,}//s\\\{0,})[0-9]\\\{1,} failed logon event logs detected in the past [0-9]\\\{1,} hour//(s//). |
 
 ## Dependencies
 
@@ -96,3 +96,5 @@ For more detailed information: [Event 4625 Documentation](https://learn.microsof
 ## Implementation
 
 [Import - Remote Monitor - Security - Possible Brute Force Attack](<./Security - Possible Brute Force Attack.md>)
+
+

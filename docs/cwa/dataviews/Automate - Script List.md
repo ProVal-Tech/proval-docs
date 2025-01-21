@@ -43,3 +43,4 @@ The script log retention days can be seen at the Automate location below:
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Automate---Script-List/image_2.png)
+

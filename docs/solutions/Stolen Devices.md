@@ -37,3 +37,4 @@ The purpose of this solution is to detect and lockdown machines that are marked 
 - Assign the alert template to the monitor set.
 - Mark the `Mark System As Stolen` EDF on the concerned computers. Marking the `System Lockdown` EDF will enable the script's feature to BitLocker and shutdown the computer.  
   ![Mark System As Stolen](../../static/img/Stolen-Devices/image_4.png)
+

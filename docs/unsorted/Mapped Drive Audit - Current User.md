@@ -52,3 +52,4 @@ FROM
   JOIN clients cl ON cl.ClientID = c.ClientID 
   JOIN plugin_proval_Mapped_Drive_CurrentUser ppc ON ppc.computerid = c.ComputerID
 ```
+

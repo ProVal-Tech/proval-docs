@@ -20,3 +20,4 @@ The script is converted to a client script and should be scheduled to run every 
 | Name             | Description                                                                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | UpdateStatements | This variable will store the SQL result, which will be further used as an update statement to grant permission to custom ProVal tables. |
+

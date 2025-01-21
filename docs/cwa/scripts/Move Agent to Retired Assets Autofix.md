@@ -24,3 +24,4 @@ This script will move the agent it is run against to retired assets. This can be
 ## Process
 
 This script runs a SQL query against the machine to retire it.
+

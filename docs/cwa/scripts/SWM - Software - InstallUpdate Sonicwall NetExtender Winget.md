@@ -35,3 +35,4 @@ This script performs the SonicWall NetExtender install/update using Winget. It c
 ## Output
 
 - Script Log
+

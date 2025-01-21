@@ -67,3 +67,4 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
    **![Image 9](../../../static/img/-SMB1-Detection/image_9.png)**  
 
 8. Click the `Save` button to save the monitor set.
+

@@ -42,3 +42,4 @@ This script runs only on Hyper-V servers. It collects all VHDX information and s
 - Script log
 - Script state
 - Data view
+

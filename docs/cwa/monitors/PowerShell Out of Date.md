@@ -23,3 +23,4 @@ The monitor set will detect Windows machines where the PowerShell version is old
 ## Target
 
 Managed Windows Workstations and Servers
+

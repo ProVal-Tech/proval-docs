@@ -48,3 +48,4 @@ This script installs the NESSUS vulnerability scanner.
 9. If "Nessus Agent (x64)" is a valid software in the software list, go to step 11.
 10. Log an error and exit with an error.
 11. Log success and exit.
+

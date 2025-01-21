@@ -244,3 +244,4 @@ Check the concerned groups and ensure the monitor set is created and configured 
 Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor 
 
 ![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_2.png)
+

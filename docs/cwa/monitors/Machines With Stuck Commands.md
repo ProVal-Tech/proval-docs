@@ -22,3 +22,4 @@ It suggests restarting the agent, services, and/or the Automate server as potent
 ## Target
 
 - Global
+

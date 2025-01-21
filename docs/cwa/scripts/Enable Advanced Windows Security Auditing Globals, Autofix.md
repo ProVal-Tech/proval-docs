@@ -47,3 +47,4 @@ In addition to enabling Advanced Windows Security Auditing, the script is also c
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Enable-Advanced-Windows-Security-Auditing-Globals,-Autofix/image_3.png)
+

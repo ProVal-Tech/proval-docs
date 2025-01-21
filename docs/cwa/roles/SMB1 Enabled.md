@@ -20,3 +20,4 @@ This data is viewable in the dataview: @Security - SMB1 Enabled Status Check [Ro
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell.exe \"(Get-SmbServerConfiguration).EnableSMB1Protocol\"@%}` | Contains   | True   | Windows OS     |
+

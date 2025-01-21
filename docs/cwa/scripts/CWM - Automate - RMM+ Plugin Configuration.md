@@ -70,3 +70,4 @@ Create a session group in the ScreenConnect portal for machines that have not ch
   Change the number of days in `$30DAYSAGO` as per your requirement.  
   ![Image](../../../static/img/CWM---Automate---RMM+-Plugin-Configuration/image_9.png)  
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
+

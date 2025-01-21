@@ -18,3 +18,4 @@ This document describes how the PowerShell version is incorporated into its seri
 | Detection String                                                                                                                                                                          | Comparator | Result                      | Applicable OS |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------------------|----------------|
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference = 'SilentlyContinue'; Write-Host /\"$(Get-host).Version.Major).$((Get-Host).Version.Minor).$((Get-Host).version.Build).$((Get-Host).Version.Revision)/\" -NoNewLine"@%}` | Exist      | PowerShell Version in Serial Key | Windows        |
+

@@ -132,7 +132,7 @@ Serial Number: \\<Serial Number>
 Refer to the troubleshooting guide at [https://proval.itglue.com/5078775/docs/14394330](https://proval.itglue.com/5078775/docs/14394330).  
 If you're logged into an ITGlue portal, open the URL in a Private Window.
 
-**\\<File Upload Comment>** can vary depending on the existence of the disk health report **`DiskInfo.txt`**
+**\<File Upload Comment>** can vary depending on the existence of the disk health report **`DiskInfo.txt`**
 
 If the script fails to find the file:  
 ```
@@ -183,7 +183,7 @@ Drive Letter: \\<Drive Letter(s)>
 
 Additional internal notes:  
 ```
-To exclude this disk from disk health alerting: Open the computer in Automate, navigate to Extra Data Fields, and under the "Exclusions" tab, find the "Disks to Exclude From Disk Health Alerting" field. Add the serial number for this disk to this field: {Drive Serial Number}. Click Save. You can add additional disk serial numbers separated by comma for a single computer to exclude multiple drives from disk health alerting.
+To exclude this disk from disk health alerting: Open the computer in Automate, navigate to Extra Data Fields, and under the "Exclusions" tab, find the "Disks to Exclude From Disk Health Alerting" field. Add the serial number for this disk to this field: \{Drive Serial Number}. Click Save. You can add additional disk serial numbers separated by comma for a single computer to exclude multiple drives from disk health alerting.
 ```
 
 **Sample Ticket:**
@@ -204,3 +204,5 @@ Attached **`DiskInfo.txt`** File:
 
 e.g.,  
 ![Example Exclusion](../../../static/img/Crystal-Disk-Info-Report/image_7.png)
+
+

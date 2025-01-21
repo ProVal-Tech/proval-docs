@@ -49,3 +49,4 @@ The procedure requires the shared file "HPSupportAssist.ps1" to run.
 ## Output
 
 Agent Procedure Log
+

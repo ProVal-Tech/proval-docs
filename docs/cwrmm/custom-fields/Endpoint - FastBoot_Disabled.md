@@ -23,3 +23,4 @@ Indicates that FastBoot has been disabled on the computer.
 
 ![Screenshot 1](../../../static/img/Endpoint---FastBoot_Disabled/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---FastBoot_Disabled/image_2.png)
+

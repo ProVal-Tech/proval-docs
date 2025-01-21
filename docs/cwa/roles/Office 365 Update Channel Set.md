@@ -17,4 +17,6 @@ This document outlines how to determine if an agent has an Office 365 Update Cha
 
 | Detection String                                          | Comparator | Result | Applicable OS  |
 |----------------------------------------------------------|------------|--------|-----------------|
-| \\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Exists     |        | Windows OS      |
+| \\\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Exists     |        | Windows OS      |
+
+

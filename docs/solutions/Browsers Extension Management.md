@@ -31,3 +31,4 @@ Create the following tasks:
 - [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)
 - [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)
 - [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)
+

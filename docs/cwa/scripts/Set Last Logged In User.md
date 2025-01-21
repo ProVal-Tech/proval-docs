@@ -55,3 +55,4 @@ This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser]
 ## Output
 
 - Script log
+

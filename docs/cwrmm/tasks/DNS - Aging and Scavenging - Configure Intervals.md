@@ -172,3 +172,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+

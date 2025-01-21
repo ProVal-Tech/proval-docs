@@ -22,3 +22,4 @@ This document outlines a process to remove roles that are still listed on machin
 ## Process
 
 - The script runs a SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.
+

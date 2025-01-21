@@ -29,3 +29,4 @@ This script will create a new MySQL user with Read-only permissions.
 ## Process
 
 This script runs a SQL query and creates a new MySQL user with Full permissions for the `Labtech` database.
+

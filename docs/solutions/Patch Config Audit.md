@@ -86,3 +86,4 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) script.
+

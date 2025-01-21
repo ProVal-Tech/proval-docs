@@ -106,3 +106,4 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - This policy group document is just for reference.
    - Use the existing policy in conjunction with the policy group if you have not created a new one.
    - The end goal here is to apply an `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](<../cwrmm/groups/Upgrade Enabled Windows 11 Compatible Machines.md>) group.
+

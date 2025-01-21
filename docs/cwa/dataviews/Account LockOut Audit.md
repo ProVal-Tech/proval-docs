@@ -61,3 +61,4 @@ FROM
   JOIN locations l ON l.`LocationID` = c.`LocationID` 
   JOIN plugin_proval_account_lock p ON p.computerid = c.`ComputerID`
 ```
+

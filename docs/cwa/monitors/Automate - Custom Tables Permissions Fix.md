@@ -23,3 +23,4 @@ This custom RAWSQL monitor checks the custom table privileges for a user in the 
 ## Target
 
 Global
+

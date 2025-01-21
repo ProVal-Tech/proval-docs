@@ -63,3 +63,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Q:** What happens if I set both Subtype and Item to 1?  
 **A:** The script checks for Item first, as it trumps Subtype, and adds both the subtype and the item mapping.
+

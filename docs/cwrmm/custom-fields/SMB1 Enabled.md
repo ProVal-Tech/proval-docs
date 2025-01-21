@@ -30,3 +30,4 @@ This custom field is used to store and display the results of the task [CW RMM -
 ## Sample Value
 
 ![Sample Value](../../../static/img/SMB1-Enabled/image_2.png)
+

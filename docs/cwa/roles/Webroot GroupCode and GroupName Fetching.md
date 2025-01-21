@@ -18,3 +18,4 @@ Go to **Manage → Entities → Sites & Groups** and select the group whose code
 ![Image](../../../static/img/Webroot-GroupCode-and-GroupName-Fetching/image_1.png)
 
 Here, you can create a custom group and obtain the code necessary to push installed Webroot agents to that group.
+

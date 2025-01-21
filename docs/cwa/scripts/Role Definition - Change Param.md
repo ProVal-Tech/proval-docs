@@ -56,3 +56,4 @@ An SQL query is executed against the Automate DB to apply or ignore the role on 
 - **Action Missing** - Action not provided in parameters
   
 - **Exit with Error** - Script failed to execute properly
+

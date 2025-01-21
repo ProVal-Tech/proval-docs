@@ -47,3 +47,4 @@ Removes all installed versions of Office.
 ## Output
 - .\Invoke-OfficeScrub-log.txt
 - .\Invoke-OfficeScrub-error.txt
+

@@ -34,3 +34,4 @@ The DataView shows the login/logout audit of the users.
 | Logon Type        | Indicates whether the user was detected for login or logout |
 | Script Ran Date   | This shows the script's last ran date and time       |
 
+

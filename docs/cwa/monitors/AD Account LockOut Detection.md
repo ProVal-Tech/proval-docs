@@ -107,3 +107,4 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
+

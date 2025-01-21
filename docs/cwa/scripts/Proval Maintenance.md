@@ -54,3 +54,4 @@ This script cleans up many tables in the database, in the following order of ope
 10. Network device cleanup
 11. Inactive ticket status cleanup
 12. Patch manager history cleanup
+

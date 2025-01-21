@@ -32,9 +32,11 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 | TableName             | [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)                                                                                 |
 | SQLReplaceStatement   | `REPLACE` statement returned by the PowerShell script to update the data in the custom table                                                                 |
 | OSBuild               | Full OS Build of the computer                                                                                                                                 |
-| MaxReleaseDate        | Maximum CU release date stored in the database for [@OSBuild@](http://@OSBuild@). Used to verify whether the computer's history has returned correct CU information or not. |
+| MaxReleaseDate        | Maximum CU release date stored in the database for `@OSBuild@`. Used to verify whether the computer's history has returned correct CU information or not. |
 
 ## Output
 
 - Custom Table
 - Dataview
+
+

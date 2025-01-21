@@ -26,3 +26,4 @@ The purpose of the script is to remove the `Kaseya Agent` and `Live Connect` app
 ## Output
 
 - Script Log
+

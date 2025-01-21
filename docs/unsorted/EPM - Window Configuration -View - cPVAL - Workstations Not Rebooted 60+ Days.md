@@ -27,3 +27,4 @@ The following filters are applied to this view:
 | Machine Status                  | Yes              | Machines that have not rebooted in the last 60 days        |
 | Operating System                 | Yes              | Not *mac* AND NOT *linux*                                   |
 | cPVAL All Policy Removal         | Yes              | NOT *1*                                                    |
+

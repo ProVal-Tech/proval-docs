@@ -32,3 +32,4 @@ When the script runs, it will prompt the user for the parameter `AppName`, which
 ## Output
 
 - Script log
+

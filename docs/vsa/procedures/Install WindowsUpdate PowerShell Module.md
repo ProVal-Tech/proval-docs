@@ -23,10 +23,10 @@ This procedure installs the Windows Update PowerShell module.
 | 4:48:26 pm 14-Jun-23    | Execute PowerShell Command-0012                                | Results returned to global variable #global:psresult# and saved in Documents tab of server. | derek.joniak  |
 | 4:48:26 pm 14-Jun-23    | Execute PowerShell Command-0012                                | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/910544681671025/GetFiles/../docs/psoutput.txt with the new contents from c:/kworking/psoutput.txt in THEN step 2. | derek.joniak  |
 | 4:48:26 pm 14-Jun-23    | Execute PowerShell Command-0011                                | PowerShell command completed!              | derek.joniak  |
-| 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0011                                | Executing PowerShell \"\" -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\{ Write-Output 'Not Installed' } else \\{ Write-Output 'Installed' }\" >\"c:/kworking/psoutput.txt\" | derek.joniak  |
+| 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0011                                | Executing PowerShell \"\" -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\\{ Write-Output 'Not Installed' } else \\\{ Write-Output 'Installed' }\" >\"c:/kworking/psoutput.txt\" | derek.joniak  |
 | 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0010                                | Sending output to global variable.         | derek.joniak  |
-| 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0008                                | New command variable is: -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\{ Write-Output 'Not Installed' } else \\{ Write-Output 'Installed' }\" | derek.joniak  |
-| 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0008                                | Custom commands detected as if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\{ Write-Output 'Not Installed' } else \\{ Write-Output 'Installed' } | derek.joniak  |
+| 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0008                                | New command variable is: -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\\{ Write-Output 'Not Installed' } else \\\{ Write-Output 'Installed' }\" | derek.joniak  |
+| 4:48:22 pm 14-Jun-23    | Execute PowerShell Command-0008                                | Custom commands detected as if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\\{ Write-Output 'Not Installed' } else \\\{ Write-Output 'Installed' } | derek.joniak  |
 | 4:48:20 pm 14-Jun-23    | Execute PowerShell Command-0002                                | PowerShell is present.                     | derek.joniak  |
 | 4:48:19 pm 14-Jun-23    | Windows Update PowerShell Module - Install-0001               | Module imported into PowerShell            | derek.joniak  |
 | 4:48:19 pm 14-Jun-23    | Execute PowerShell Command (64-bit, Run As System)            | Success THEN                               | derek.joniak  |
@@ -62,10 +62,10 @@ This procedure installs the Windows Update PowerShell module.
 | 4:48:00 pm 14-Jun-23    | Execute PowerShell Command-0012                                 | Results returned to global variable #global:psresult# and saved in Documents tab of server. | derek.joniak  |
 | 4:48:00 pm 14-Jun-23    | Execute PowerShell Command-0012                                 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/910544681671025/GetFiles/../docs/psoutput.txt with the new contents from c:/kworking/psoutput.txt in THEN step 2. | derek.joniak  |
 | 4:47:59 pm 14-Jun-23    | Execute PowerShell Command-0011                                 | PowerShell command completed!              | derek.joniak  |
-| 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0011                                 | Executing PowerShell \"\" -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\{ Write-Output 'Not Installed' } else \\{ Write-Output 'Installed' }\" >\"c:/kworking/psoutput.txt\" | derek.joniak  |
+| 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0011                                 | Executing PowerShell \"\" -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\\{ Write-Output 'Not Installed' } else \\\{ Write-Output 'Installed' }\" >\"c:/kworking/psoutput.txt\" | derek.joniak  |
 | 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0010                                 | Sending output to global variable.         | derek.joniak  |
-| 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0008                                 | New command variable is: -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\{ Write-Output 'Not Installed' } else \\{ Write-Output 'Installed' }\" | derek.joniak  |
-| 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0008                                 | Custom commands detected as if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\{ Write-Output 'Not Installed' } else \\{ Write-Output 'Installed' } | derek.joniak  |
+| 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0008                                 | New command variable is: -Command \"if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\\{ Write-Output 'Not Installed' } else \\\{ Write-Output 'Installed' }\" | derek.joniak  |
+| 4:47:57 pm 14-Jun-23    | Execute PowerShell Command-0008                                 | Custom commands detected as if (!(Get-Module -Name PSWindowsUpdate -ListAvailable -ErrorAction SilentlyContinue)) \\\{ Write-Output 'Not Installed' } else \\\{ Write-Output 'Installed' } | derek.joniak  |
 | 4:47:53 pm 14-Jun-23    | Execute PowerShell Command-0002                                 | PowerShell is present.                     | derek.joniak  |
 | 4:47:45 pm 14-Jun-23    | Run Now - Windows Update PowerShell Module - Install           | Admin derek.joniak scheduled procedure Run Now - Windows Update PowerShell Module - Install to run at Jun 14 2023 5:47 PM | derek.joniak  |
 
@@ -76,3 +76,5 @@ PowerShell: 5.1.0
 ## Output
 
 Agent Procedure Logs
+
+

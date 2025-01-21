@@ -50,3 +50,4 @@ This monitor will create tickets if the [Task - Enable AD Recycle Bin](https://p
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
+

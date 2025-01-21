@@ -168,3 +168,4 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+

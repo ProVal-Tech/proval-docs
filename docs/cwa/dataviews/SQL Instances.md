@@ -26,3 +26,4 @@ This document displays all installed SQL instances found on an endpoint.
 | ComputerName        | The name of the computer.                                                  |
 | CurrentlyDetected    | 0 if no SQL instances are detected, 1 if SQL instances are detected.       |
 | Versions-Editions   | The found versions and editions separated by a comma.                      |
+

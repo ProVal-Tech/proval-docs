@@ -58,3 +58,4 @@ This script will not update if any of the following conditions are true:
 3. Target OS is Windows 7 or Server 2008R2 but not SP2, because SP2 must be installed to install PowerShell V5.
 4. Target OS is Windows 8, because PowerShell V5 is not applicable to this operating system.
 5. Target OS is Windows 7 or Server 2008R2 SP2 but missing .NET Framework 4.5.2 or greater, because .NET 4.5.2 is required.
+

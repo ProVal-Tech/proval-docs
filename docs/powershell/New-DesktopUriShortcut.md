@@ -43,3 +43,4 @@ Creates a shortcut to a web link on the desktop.
 - `$env:PUBLIC\Pictures\icon.ico`
 - `New-DesktopUriShortcut-log.txt`
 - `New-DesktopUriShortcut-error.txt`
+

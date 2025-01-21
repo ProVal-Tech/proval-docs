@@ -21,3 +21,4 @@ This monitor detects potential threats from MimiKatz based on agent roles.
 ## Target
 
 Windows Agent
+

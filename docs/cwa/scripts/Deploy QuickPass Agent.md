@@ -91,3 +91,4 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+

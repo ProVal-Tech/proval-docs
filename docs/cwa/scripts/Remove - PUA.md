@@ -118,3 +118,4 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
+

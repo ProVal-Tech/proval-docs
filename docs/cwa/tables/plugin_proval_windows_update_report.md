@@ -59,3 +59,4 @@ Stores the data captured by the [CWM - Automate - Script - Windows Update Report
 | BrowseOnly                   | varchar(10)    | True | False                                     |
 | PerUser                      | varchar(10)    | True | False                                     |
 | ScriptRunTime                | varchar(50)    | Script run time                                   |
+

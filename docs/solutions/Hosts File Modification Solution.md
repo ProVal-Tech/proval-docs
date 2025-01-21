@@ -30,3 +30,4 @@ The purpose of this solution is to provide a quick and easy way to modify the Wi
    3. [EPM - Windows Configuration - Script - Hosts File - Reset](<../cwa/scripts/Hosts File - Reset.md>)  
 2. Import the Dataview [CWM - Automate - Dataview - Hosts File - Audit [Script]](<../cwa/dataviews/Hosts File - Audit Script.md>)  
 3. Schedule the script [EPM - Windows Configuration - Script - Hosts File - Audit](<../cwa/scripts/Hosts File - Audit.md>) to run against the desired computers at regular intervals to keep the dataview up to date.
+

@@ -37,3 +37,4 @@ Sets the `High Performance` Power Plan as the active Power Profile.
 ## Output
 - .\\Enable-PowerPlan-Log.txt
 - .\\Enable-PowerPlan-Error.txt
+

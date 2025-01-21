@@ -78,3 +78,4 @@ The `Exclude From Winget Auto Update` checkbox is available in the location and 
      - [Internal Monitor - Execute Script - Configure Winget Auto Update](<../cwa/monitors/Execute Script - Configure Winget Auto Update.md>)  
        - Alert Template - `△ Custom - Execute Script - Configure Winget Auto Update`
        - Right-click and Run Now to start the monitor
+

@@ -48,3 +48,4 @@ This client script creates a ticket for each client with the computer count wher
 
    The SMBv1 Enable status audit was detected on @VulnerableagentCount@ computer(s) of client "@sqlname@".  
    Please review the dataview for the computer list.
+

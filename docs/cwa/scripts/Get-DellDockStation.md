@@ -48,3 +48,4 @@ Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](<../moni
 
 **Subject:** Dell Command | Monitor Installation Failed  
 ![Ticket Example](../../../static/img/Get-DellDockStation/image_2.png)
+

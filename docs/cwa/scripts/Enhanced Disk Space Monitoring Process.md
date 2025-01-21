@@ -173,3 +173,4 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
 
 ![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
+

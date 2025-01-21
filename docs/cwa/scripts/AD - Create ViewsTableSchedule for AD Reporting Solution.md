@@ -40,3 +40,4 @@ Other items depend on this script being executed to function, which are listed b
 ## Output
 
 This is a one-time use script, used to install/create a table, four views, and schedule a script. After running it once, this script can be removed from the environment.
+

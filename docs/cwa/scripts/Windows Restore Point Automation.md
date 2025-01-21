@@ -36,3 +36,4 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 ## Output
 
 - Script log
+

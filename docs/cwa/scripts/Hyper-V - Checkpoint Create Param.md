@@ -39,3 +39,4 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 ## Output
 
 - Script logs
+

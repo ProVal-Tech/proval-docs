@@ -50,3 +50,4 @@ This script will reboot a machine, but only if it is within a preconfigured time
 ## Output
 
 - Script log
+

@@ -24,3 +24,4 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Install All Approved Patches [With Prompt]`
+

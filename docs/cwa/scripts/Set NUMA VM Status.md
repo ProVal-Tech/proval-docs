@@ -31,3 +31,4 @@ The script runs a PowerShell script to get the NumaStatus. The PowerShell then h
 ## Output
 
 - Script state
+

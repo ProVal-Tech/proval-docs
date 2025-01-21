@@ -24,3 +24,4 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](<../tasks/Huntress Agent (INSTA
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
+

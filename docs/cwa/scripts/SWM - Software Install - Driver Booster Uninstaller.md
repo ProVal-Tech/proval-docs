@@ -27,3 +27,4 @@ The purpose of the script is to uninstall any version of Driver Booster from the
 ## Output
 
 - Script Logs
+

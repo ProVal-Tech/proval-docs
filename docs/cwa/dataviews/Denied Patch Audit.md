@@ -29,3 +29,4 @@ This dataview displays the list of denied patches in the environment.
 | Affected Devices    | Number of devices on which this patch is denied                 |
 | SetBy              | Describes who set the patch to denied state                     |
 | Set Time           | Time of the patch denial                                        |
+

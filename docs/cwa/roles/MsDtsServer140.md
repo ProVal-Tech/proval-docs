@@ -28,3 +28,4 @@ SQL 2019          MsDtsServer150
 | Detection String                                         | Comparator | Result           | Applicable OS |
 |---------------------------------------------------------|------------|------------------|----------------|
 | \{%@sc queryex type= service | find /i "MsDtsServer140"@%} | Contains   | MsDtsServer140   | Windows        |
+

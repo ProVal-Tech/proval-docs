@@ -22,3 +22,4 @@ The script sets maintenance mode for 60 minutes on the agent.
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
+

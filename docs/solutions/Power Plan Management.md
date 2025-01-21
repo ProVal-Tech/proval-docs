@@ -123,3 +123,4 @@ This solution automates the deployment of a standard power plan to Windows machi
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
+

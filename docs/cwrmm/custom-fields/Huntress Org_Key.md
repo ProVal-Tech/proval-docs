@@ -24,3 +24,4 @@ This custom field is to be filled with the Huntress Organization Key. It is util
 **Level:** Company  
 **Description:** The Huntress Organization Key is used to associate a Huntress Agent with a grouping called Huntress Organizations. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
 **Editable:** Yes  
+

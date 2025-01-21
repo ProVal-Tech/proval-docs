@@ -33,3 +33,4 @@ This dataview will display basic information related to folder redirection on en
 | PicturesEnabled           | True/False - Indicates if the user's "Pictures" folder is being redirected                  |
 | Pictures Redirected Path   | If PicturesEnabled is True, this will display the full path to the user's pictures folder    |
 | TimeStamp                 | The last time this data was gathered                                                          |
+

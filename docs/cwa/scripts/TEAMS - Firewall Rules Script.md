@@ -39,3 +39,4 @@ This script executes PowerShell commands that set rules for Teams for all users 
 ## Output
 
 - Script log
+

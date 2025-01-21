@@ -53,3 +53,4 @@ LEFT JOIN locations l ON l.locationid = c.locationid)
 WHERE ss.variable = 'ComputerDescriptionReport'
 ```
 
+

@@ -50,3 +50,4 @@ Validate the presence of data in the [CWM - Automate - Dataview - Improper Scrip
 
 ### 6.
 Remove the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>) script.
+

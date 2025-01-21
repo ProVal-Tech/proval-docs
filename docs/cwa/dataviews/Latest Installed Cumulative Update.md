@@ -44,3 +44,4 @@ This document displays the data fetched by the [CWM - Automate - Script - Get La
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Latest-Installed-Cumulative-Update/image_1.png)
+

@@ -199,3 +199,4 @@ unlisted: false
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md)  
   ![Image](../../../static/img/Implement--New-Local-Admin/image_2.png)
+

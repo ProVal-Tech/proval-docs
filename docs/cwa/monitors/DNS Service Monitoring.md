@@ -88,3 +88,4 @@ unlisted: false
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
    ![Check Remote Monitor](../../../static/img/DNS-Service-Monitoring/image_2.png)
+

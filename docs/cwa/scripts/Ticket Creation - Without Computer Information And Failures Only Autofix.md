@@ -49,3 +49,4 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
+

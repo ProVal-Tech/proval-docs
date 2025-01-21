@@ -16,3 +16,4 @@ This monitor detects Automate users who have been locked out of logging in.
 ## Target
 
 Global
+

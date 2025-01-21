@@ -31,3 +31,4 @@ This script is called by the default script "Client Scheduled Patch Accounting W
 This script will add the time to the ticket created.
 
 ![Output Image](../../../static/img/Patch-Accounting/image_2.png)
+

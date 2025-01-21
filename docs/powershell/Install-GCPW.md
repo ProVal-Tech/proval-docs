@@ -44,3 +44,4 @@ Installs Google Chrome (if missing), GCPW (if missing), and configures it for th
 ## Output
 - `.\Install-GCPW-log.txt`
 - `.\Install-GCPW-error.txt`
+

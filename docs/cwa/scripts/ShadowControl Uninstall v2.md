@@ -34,3 +34,4 @@ This script will fetch the uninstall string from the database and attempt to uni
 ## Output
 
 - Script log
+

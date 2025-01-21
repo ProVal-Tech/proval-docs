@@ -32,3 +32,4 @@ This document describes how to download and run DellCMDUpdate from the ProVal Ap
 ## Output
 
 - The log file can be found at: `workingdir/System/DellCMDUpdate-log.txt`
+

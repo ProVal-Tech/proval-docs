@@ -26,3 +26,4 @@ This dataview helps you audit control sessions by tracking details such as parti
 | Disconnected Time | Displays the time when the participant disconnected        |
 | Computer ID       | Displays the ID of the connected computer                  |
 | Duration          | Displays the duration of the connection                     |
+

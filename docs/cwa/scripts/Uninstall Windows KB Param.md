@@ -37,3 +37,4 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
+

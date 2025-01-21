@@ -42,3 +42,4 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
+

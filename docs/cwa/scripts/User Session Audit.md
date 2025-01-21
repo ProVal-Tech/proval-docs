@@ -37,3 +37,4 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 ## Output
 
 - Script log
+

@@ -47,3 +47,4 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 
 - Script log
 - Local file on the computer
+

@@ -22,3 +22,4 @@ This script clears the cache for installed Microsoft Teams on Windows machines.
 ## Output
 
 - Script log
+

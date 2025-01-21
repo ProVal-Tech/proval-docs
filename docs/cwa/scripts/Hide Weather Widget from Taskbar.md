@@ -31,3 +31,4 @@ This script will insert a registry key to hide the weather widget from the taskb
 ## Output
 
 - Script log
+

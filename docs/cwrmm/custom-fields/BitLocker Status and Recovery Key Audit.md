@@ -25,3 +25,4 @@ This custom field is used to display the BitLocker encryption status of drives b
 - **Level:** Endpoint
 - **Description:** This will show drives that are encrypted with BitLocker and will display the recovery key if available.
 - **Editable:** Yes
+

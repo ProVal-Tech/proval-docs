@@ -74,3 +74,4 @@ Gathers and displays information about Windows user profiles.
        - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
        - Right-click and Run Now to start the monitor.
      - Use the mentioned [Remote Monitor](https://proval.itglue.com/5078775/docs/17975723) to exclude any domain trust relationship issues.
+

@@ -17,4 +17,6 @@ This document describes the role used to detect servers with the Network Device 
 
 | Detection String                                                                                   | Comparator | Result   | Applicable OS |
 |----------------------------------------------------------------------------------------------------|------------|----------|---------------|
-| `{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Device-Enrollment' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"%}` | Contains    | Installed | Windows       |
+| `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Device-Enrollment' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"%}` | Contains    | Installed | Windows       |
+
+

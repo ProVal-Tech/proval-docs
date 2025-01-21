@@ -30,3 +30,4 @@ Location of output for log, result, and error files:
 
 - .\Uninstall-N-Able-log.txt
 - .\Uninstall-N-Able-error.txt
+

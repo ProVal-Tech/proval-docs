@@ -42,3 +42,4 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_3.png)
 
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_4.png)
+

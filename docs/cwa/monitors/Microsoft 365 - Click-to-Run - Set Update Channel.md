@@ -26,3 +26,4 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
+

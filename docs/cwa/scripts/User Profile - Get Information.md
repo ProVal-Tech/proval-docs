@@ -39,3 +39,4 @@ This script gathers information about user profiles. The data is stored in the c
 - Script log
 - Local file on computer
 - Dataview
+

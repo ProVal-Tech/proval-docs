@@ -92,3 +92,4 @@ unlisted: false
 4. Reopen the group where the monitor is created (It should be the `Cluster Detected` group).
    - Validate that the monitor is limited to the search 'Windows 10/11 Machines'.
    - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
+

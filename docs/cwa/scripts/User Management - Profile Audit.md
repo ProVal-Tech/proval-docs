@@ -46,3 +46,4 @@ This script looks for user profile information at the machine level. It provides
 - Script log
 - [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>)
 - @Windows – Local Account Audit (Dataview)
+

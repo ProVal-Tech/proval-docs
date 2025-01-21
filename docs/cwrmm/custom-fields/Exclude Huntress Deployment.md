@@ -24,3 +24,4 @@ Select this custom field to exclude a machine from Huntress Deployment. It is ut
 **Level:** Endpoint  \
 **Description:** Select to Exclude Endpoint from Huntress Deployment  \
 **Editable:** Yes 
+

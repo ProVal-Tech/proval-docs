@@ -87,3 +87,4 @@ WebCamImage:
 
 The script is using the shutdown command, so the machine will become unusable without the BitLocker key.
 ```
+

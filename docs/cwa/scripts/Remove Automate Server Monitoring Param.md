@@ -37,3 +37,4 @@ A client script can either be debugged or executed against any client. The sugge
 - Remove the contents of [Automate Server Monitoring](https://proval.itglue.com/5078775/docs/10390988) from the environment if the `AreYouSure?` parameter is set to `Yes`; otherwise, exit.
 - Remove the ProSyncClient plugin from the environment if the `ProSyncClientToo?` parameter is set to `Yes`; otherwise, exit.
 - Remove itself from the environment if the `ThisScriptAsWell?` parameter is set to `Yes`; otherwise, exit.
+

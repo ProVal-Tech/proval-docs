@@ -18,3 +18,4 @@ This document uses PowerShell to confirm if the RDS Connection Broker server rol
 | Detection String                                        | Comparator | Result | Applicable OS |
 |--------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell "(Get-WindowsFeature RDS-Connection-Broker).Installed"@%}` | Equals     | True   | Windows        |
+

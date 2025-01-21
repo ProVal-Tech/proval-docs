@@ -50,3 +50,4 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
+

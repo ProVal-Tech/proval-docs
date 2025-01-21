@@ -20,3 +20,4 @@ Global - This method should be run without explicitly defined targets.
 ## Ticketing
 
 ![Image](../../static/img/Proval---Client-Specific---Network-detected-computers-without-MSP-specific-automate-instance/image_1.png)
+

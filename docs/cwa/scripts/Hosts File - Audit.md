@@ -27,3 +27,4 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Output
 
 This script outputs information into the Host File Contents EDF and can be displayed in a Dataview for monitoring if desired.
+

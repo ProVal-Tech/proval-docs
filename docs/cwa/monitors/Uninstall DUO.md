@@ -30,3 +30,4 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Uninstall DUO
+

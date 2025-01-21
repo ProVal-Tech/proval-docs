@@ -22,3 +22,4 @@ This document stores "Disabled" if the Windows optional update is disabled by th
 | Field Name                        | Level      | Type  | Default | Editable | Description                                                                                  |
 |-----------------------------------|------------|-------|---------|----------|----------------------------------------------------------------------------------------------|
 | Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This field stores "Disabled" if the Windows optional update is disabled by the Disable Windows Optional/Automatic Updates task. |
+

@@ -46,3 +46,4 @@ The [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/D
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_5.png)  
   - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_6.png)  
+

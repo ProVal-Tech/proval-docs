@@ -34,7 +34,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result     |
 |--------------|----------------|------------|---------------|------------|----------|------------|
-| system       | 127.0.0.1      | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';$Auditing = (auditpol /get /category:'Logon/Logoff')[4..30];$psout = @(); foreach ($Audit in $Auditing) {if($Audit -NotMatch 'Success and Failure|^/s*$') { $psout += $Audit}}; return $psout" | Regex Match | 86400 | ^OK$|^$ |
+| system       | 127.0.0.1      | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';$Auditing = (auditpol /get /category:'Logon/Logoff')[4..30];$psout = @(); foreach ($Audit in $Auditing) \{if($Audit -NotMatch 'Success and Failure|^/s*$') \{ $psout += $Audit}}; return $psout" | Regex Match | 86400 | ^OK$|^$ |
 
 ## Dependencies
 
@@ -43,3 +43,5 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Managed Windows Servers and Workstations
+
+

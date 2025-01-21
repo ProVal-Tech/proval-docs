@@ -36,3 +36,4 @@ The custom field is then used to create the [CW RMM - Machine Group - Infrastruc
 ## Sample Value
 
 ![Sample Value](../../../static/img/Is-Primary-Domain-Controller/image_3.png)
+

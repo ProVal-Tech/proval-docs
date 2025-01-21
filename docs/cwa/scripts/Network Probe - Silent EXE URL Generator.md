@@ -41,3 +41,4 @@ This script is part of our GPO deployment process but can also be run standalone
 ## Output
 
 - Script log -> Logs the silent install URL to the script logs.
+

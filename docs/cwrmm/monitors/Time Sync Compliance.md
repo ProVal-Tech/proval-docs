@@ -95,3 +95,4 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 12. Click the `Save` button to save the monitor set.
 
     ![Image](../../../static/img/Time-Sync-Compliance/image_13.png)
+

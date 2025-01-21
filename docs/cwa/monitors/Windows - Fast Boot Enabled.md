@@ -20,3 +20,4 @@ Using a role definition, this monitor detects machines where Windows Fast Boot i
 ## Target
 
 Workstations - should be run on non-servers.
+

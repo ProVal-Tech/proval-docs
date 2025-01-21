@@ -28,3 +28,4 @@ The solution retrieves the computer's build number and compares it with Microsof
 - Create the task: [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029444)
+

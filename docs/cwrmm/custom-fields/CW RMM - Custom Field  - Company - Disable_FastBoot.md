@@ -23,3 +23,4 @@ Check this box to enable the solution to disable fastboot on the client's Window
 
 ![Screenshot 1](../../../static/img/CW-RMM---Custom-Field----Company---Disable_FastBoot/image_1.png)  
 ![Screenshot 2](../../../static/img/CW-RMM---Custom-Field----Company---Disable_FastBoot/image_2.png)
+

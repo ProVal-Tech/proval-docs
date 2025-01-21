@@ -46,3 +46,4 @@ The only difference is that this script will write the ESXi hosts' information t
 
 - Script Log
 - Ticket
+

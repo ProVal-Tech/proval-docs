@@ -3,7 +3,7 @@ id: 'fc109cdb-9f88-448b-8c57-b866b2e3c7c2'
 title: 'Heartbeat Anomaly Monitor for AutoTask'
 title_meta: 'Heartbeat Anomaly Monitor for AutoTask'
 keywords: ['heartbeat', 'monitor', 'ticketing', 'anomaly', 'autotask']
-description: 'This document outlines the implementation of a monitor that creates a ticket in ProVal's AutoTask Portal when fewer heartbeats than expected are detected from machines checking in within the environment. It includes dependencies, target settings, and ticketing details for alerts.'
+description: "This document outlines the implementation of a monitor that creates a ticket in ProVal's AutoTask Portal when fewer heartbeats than expected are detected from machines checking in within the environment. It includes dependencies, target settings, and ticketing details for alerts."
 tags: ['networking', 'security', 'ticketing']
 draft: false
 unlisted: false
@@ -35,3 +35,4 @@ This typically indicates one of three issues:
 1. The Windows Firewall on your Automate Server has UDP port 75 blocked.
 2. Your Router/Firewall is not forwarding UDP port 75.
 3. Something is obstructing traffic on UDP port 75 (such as an AV/Security Appliance).
+

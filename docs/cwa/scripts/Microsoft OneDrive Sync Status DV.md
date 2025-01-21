@@ -40,3 +40,4 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 - Script log
 - Script states
+

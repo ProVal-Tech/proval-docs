@@ -41,3 +41,4 @@ Managed Windows Workstations
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
 Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>) script.
+

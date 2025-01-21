@@ -43,3 +43,4 @@ Additionally, it can be used to detect Windows 11 computers that do not meet Mic
      - [Monitor - Execute Script - Windows - Check Windows 11 Compatibility](<../cwa/monitors/Execute Script - Windows - Check Windows 11 Compatibility.md>)  
        - △ Custom - Execute Script - Windows 11 Compatibility Check  
        - Right-click and Run Now to start the monitor
+

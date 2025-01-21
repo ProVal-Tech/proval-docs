@@ -45,3 +45,4 @@ This document outlines the process for creating a dynamic group that includes Wi
 
 ![Image](../../../static/img/SentinelOne-Installed/image_10.png)  
 ![Image](../../../static/img/SentinelOne-Installed/image_11.png)
+

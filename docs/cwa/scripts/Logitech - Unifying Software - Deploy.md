@@ -39,3 +39,4 @@ This script will install a specified version of the Logitech Unifying Software b
 ## Output
 
 - Script log
+

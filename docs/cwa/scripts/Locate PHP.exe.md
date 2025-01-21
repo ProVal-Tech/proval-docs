@@ -50,3 +50,4 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 
 - Script Log
 - Dataview
+

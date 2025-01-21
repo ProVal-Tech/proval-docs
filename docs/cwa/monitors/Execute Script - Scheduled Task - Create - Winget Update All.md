@@ -31,3 +31,4 @@ Managed Windows Workstations
 **Name**: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
 
 The alert template executes the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../scripts/Scheduled Task - Create - Winget Update All Autofix.md>)
+

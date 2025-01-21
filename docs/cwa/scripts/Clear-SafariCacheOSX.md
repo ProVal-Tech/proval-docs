@@ -45,3 +45,4 @@ Clears all Safari cache files and folders from macOS devices.
 | ConnectWise RMM           |                                        |
 | Kaseya                    |                                        |
 | Datto RMM                 |                                        |
+

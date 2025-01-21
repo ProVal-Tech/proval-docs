@@ -58,3 +58,4 @@ This document allows you to clear a patch from the Failed Patches list with the 
 
 3. **Run this Query on KSubscribers on SQL Server.**  
    ![](../../../static/img/SQL/image_3.png)
+

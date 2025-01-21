@@ -30,3 +30,4 @@ The script will remove and reset the 'Offline Address Books' folder located at t
 ## Output
 
 - Script log
+

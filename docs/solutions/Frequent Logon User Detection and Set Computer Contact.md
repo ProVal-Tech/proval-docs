@@ -38,3 +38,4 @@ This solution is designed to gather the frequent domain logon user on Windows wo
      - [Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>)
        - Set up with the "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
+

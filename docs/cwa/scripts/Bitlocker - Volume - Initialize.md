@@ -89,3 +89,4 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
+

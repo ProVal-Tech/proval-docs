@@ -38,3 +38,4 @@ Managed Service Plan Groups for Windows Workstations
 
 - **Success Message:**  
   The machine %COMPUTERNAME% located at %CLIENTNAME%//%LOCATIONNAME% is no longer reported to be on an EoL build or has been offline for greater than 7 days since the ticket was generated. Closing ticket.
+

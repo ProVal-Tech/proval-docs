@@ -47,3 +47,4 @@ The script will then run two different SQL queries to remove the broken remote d
 ## Output
 
 Script log only.
+

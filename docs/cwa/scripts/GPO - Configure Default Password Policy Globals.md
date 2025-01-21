@@ -41,3 +41,4 @@ The script modifies the properties of the default password policy for a domain. 
 ## Output
 
 - Script log
+

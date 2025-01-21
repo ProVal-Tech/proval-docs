@@ -30,3 +30,4 @@ This monitor is a global monitor.
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+

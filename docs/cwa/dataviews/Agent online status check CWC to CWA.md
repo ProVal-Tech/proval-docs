@@ -53,3 +53,4 @@ FROM
   LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
   LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
 ```
+

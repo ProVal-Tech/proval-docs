@@ -40,3 +40,4 @@ To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with str
 ## Output
 
 - Script log
+

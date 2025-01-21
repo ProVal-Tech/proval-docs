@@ -28,3 +28,4 @@ List all filters applied to this view.
 |----------------------------------|------------------|--------------|
 | cPVAL Azure AD Joined            | Y                | *TRUE*      |
 | cPVAL Azure AD Registered        | Y                | *TRUE*      |
+

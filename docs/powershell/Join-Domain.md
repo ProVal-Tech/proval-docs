@@ -55,3 +55,4 @@ This command will use the provided `.txt` file to offline join the computer to t
 - Console: Domain join results, or nothing on error.
 - `.\\Join-Domain-log.txt`
 - `.\\Join-Domain-error.txt`
+

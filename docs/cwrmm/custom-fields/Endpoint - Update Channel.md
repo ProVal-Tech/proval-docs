@@ -34,3 +34,4 @@ Available options are:
 
 ![Screenshot 1](../../../static/img/Endpoint---Update-Channel/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Update-Channel/image_2.png)  
+

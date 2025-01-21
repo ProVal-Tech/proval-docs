@@ -71,3 +71,4 @@ The email will contain MSI, Linux, and MAC installer URLs along with the details
    - Copy the command mentioned under the headline "Deployment PowerShell (Run-as-Admin)" (Command mentioned in Box 5) from the email you received.
    - Press enter. The deployment process will start. Wait for the command to finish.
    - You will receive a message saying: "The Automate Agent Has Been Successfully Installed."
+

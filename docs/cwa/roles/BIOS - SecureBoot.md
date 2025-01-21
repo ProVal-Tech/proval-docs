@@ -19,4 +19,6 @@ Equals
 
 | Detection String                                                                 | Comparator                                   | Result | Applicable OS |
 |----------------------------------------------------------------------------------|----------------------------------------------|--------|---------------|
-| \\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Confirm-SecureBootUEFI"@%} | The expected result of the Detection String | True   | Windows       |
+| \\\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Confirm-SecureBootUEFI"@%} | The expected result of the Detection String | True   | Windows       |
+
+

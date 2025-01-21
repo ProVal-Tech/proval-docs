@@ -52,3 +52,4 @@ This script disables Internet Explorer on a Windows machine.
 - Script log
 - EDF
 - Dataview
+

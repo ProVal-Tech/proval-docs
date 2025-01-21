@@ -21,9 +21,9 @@ Enables removable storage devices on the endpoint.
 | 4:24:29 pm 1-Nov-22     | Removable Storage Enable                    | Removable Storage Devices have now been allowed on this endpoint. | provaltech.com/dan.hicks      |
 | 4:24:29 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System) | Success THEN                                   | provaltech.com/dan.hicks      |
 | 4:24:29 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0014 | Powershell command completed!                  | provaltech.com/dan.hicks      |
-| 4:24:28 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "$ItemPath = 'HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices';if (!(Test-Path -Path $ItemPath)) {New-Item -Path $ItemPath -Force};Set-ItemProperty -Path $ItemPath -Name 'Deny_All' -Value 0 -Force" "" | provaltech.com/dan.hicks      |
+| 4:24:28 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "$ItemPath = 'HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices';if (!(Test-Path -Path $ItemPath)) \{New-Item -Path $ItemPath -Force};Set-ItemProperty -Path $ItemPath -Name 'Deny_All' -Value 0 -Force" "" | provaltech.com/dan.hicks      |
 | 4:24:28 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0013 | Not sending output to variable.                | provaltech.com/dan.hicks      |
-| 4:24:28 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as $ItemPath = 'HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices';if (!(Test-Path -Path $ItemPath)) {New-Item -Path $ItemPath -Force};Set-ItemProperty -Path $ItemPath -Name 'Deny_All' -Value 0 -Force | provaltech.com/dan.hicks      |
+| 4:24:28 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as $ItemPath = 'HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices';if (!(Test-Path -Path $ItemPath)) \{New-Item -Path $ItemPath -Force};Set-ItemProperty -Path $ItemPath -Name 'Deny_All' -Value 0 -Force | provaltech.com/dan.hicks      |
 | 4:24:28 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0003 | No Powershell file variable detected.          | provaltech.com/dan.hicks      |
 | 4:24:27 pm 1-Nov-22     | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                         | provaltech.com/dan.hicks      |
 | 4:24:19 pm 1-Nov-22     | Run Now - Removable Storage Enable          | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Removable Storage Enable to run at Nov 1 2022 4:24 PM | provaltech.com/dan.hicks      |
@@ -35,5 +35,7 @@ Sets `HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//De
 ## Output
 
 AP Log
+
+
 
 

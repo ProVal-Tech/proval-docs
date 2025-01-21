@@ -36,3 +36,4 @@ The suggested target for the monitor is Service Plan(s) for Servers and Workstat
 **Examples**:  
 - **Windows Servers**: Should be run on all Windows-based servers.  
 - **Windows Workstations**: Should be run on all Windows workstations (Optional).
+

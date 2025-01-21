@@ -22,3 +22,4 @@ This internal monitor is designed to detect agents whose reboot was initiated by
 This monitor is an automation-driven reboot prompt removal tool. It should only be applied to Windows workstations.
 
 - **Windows Workstations**: This monitor should be run on non-server machines that are running Windows.
+

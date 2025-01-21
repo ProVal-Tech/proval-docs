@@ -25,3 +25,4 @@ This solution contains a remote monitor, a search, an alert template, and a scri
 
 - Follow the document below for import and implementation steps:  
   [Import - Remote Monitor - ProVal - Production - DNS Service Check](<./DNS Service Monitoring.md>)
+

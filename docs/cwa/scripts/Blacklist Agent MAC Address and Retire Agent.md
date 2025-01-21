@@ -52,3 +52,4 @@ Once the MAC address has been added to the blacklist, the script will move the a
 
 - Script log messages
 - Agent MAC address blacklist
+

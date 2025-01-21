@@ -38,3 +38,4 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 Outputs to a variable (`SetupDiagResult`) that can be referenced in parent scripts.
 
 See [Invoke-SetupDiag](<../../powershell/Invoke-SetupDiag.md>) for additional output information.
+

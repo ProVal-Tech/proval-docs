@@ -3,7 +3,7 @@ id: '0a1033eb-6797-40d4-8049-9e9e4bf0d637'
 title: 'Configure Screen Lock Timeout for Domain Controllers'
 title_meta: 'Configure Screen Lock Timeout for Domain Controllers'
 keywords: ['screen', 'lock', 'timeout', 'domain', 'controllers']
-description: 'This document details a script that configures the screen lock timeout for Windows Domain Controllers using global variables. By default, the timeout is set to 900 seconds, but it can be adjusted according to your organization's best practices. The script includes parameters for applying the settings to the entire domain and logs the output for review.'
+description: "This document details a script that configures the screen lock timeout for Windows Domain Controllers using global variables. By default, the timeout is set to 900 seconds, but it can be adjusted according to your organization's best practices. The script includes parameters for applying the settings to the entire domain and logs the output for review."
 tags: ['gpo', 'security', 'windows']
 draft: false
 unlisted: false
@@ -42,3 +42,4 @@ This script uses global variables to configure the number of seconds before a sc
 ## Output
 
 - Script log
+

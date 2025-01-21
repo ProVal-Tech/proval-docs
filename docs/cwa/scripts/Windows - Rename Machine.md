@@ -60,3 +60,4 @@ If there are errors during the execution of the script, an error file will be ge
 ```
 ./Rename-Machine-error.txt
 ```
+

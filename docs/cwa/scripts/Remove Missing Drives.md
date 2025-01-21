@@ -22,3 +22,4 @@ This script removes drives that are still listed on machines but are no longer d
 ## Process
 
 - The script runs an SQL query against the database to delete the drives from the machines that are still listed but no longer detected.
+

@@ -33,3 +33,4 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Log file named `msert.log`
+

@@ -37,3 +37,4 @@ Provide the direct download URL for the certificate in the User parameter, and i
 
 *The download URL should be something like:*  
 *[https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer](https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer)*
+

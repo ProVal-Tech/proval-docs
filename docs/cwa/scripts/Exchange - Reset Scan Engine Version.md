@@ -49,7 +49,7 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 **Update to latest engine**  
 1. Start the Microsoft Filtering Management service and the Microsoft Exchange Transport service.  
-2. Open the Exchange Management Shell, navigate to the Scripts folder (`%ProgramFiles%/Microsoft/Exchange Server/V15/Scripts`), and run *Update-MalwareFilteringServer.ps1 \\<server FQDN>*.
+2. Open the Exchange Management Shell, navigate to the Scripts folder (`%ProgramFiles%/Microsoft/Exchange Server/V15/Scripts`), and run *Update-MalwareFilteringServer.ps1 \<server FQDN>.
 
 **Verify engine update info**  
 1. In the Exchange Management Shell, run *Add-PSSnapin [Microsoft.Forefront.Filtering.Management](http://microsoft.Forefront.Filtering.Management).Powershell*.  
@@ -59,3 +59,5 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
+
+

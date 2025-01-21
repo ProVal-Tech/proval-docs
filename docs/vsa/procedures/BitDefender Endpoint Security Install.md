@@ -45,3 +45,4 @@ This document outlines the installation of BitDefender Endpoint Security Tools o
 ## Output
 
 Agent procedure log.
+

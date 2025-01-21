@@ -39,3 +39,4 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 ## Output
 
 - Dataview
+

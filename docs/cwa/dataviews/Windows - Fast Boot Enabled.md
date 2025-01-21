@@ -25,3 +25,4 @@ This document pulls data from the role detection of Fast Boot. It shows all mach
 | Computer Name   | Computer Name                                                                             |
 | OS              | Operating System installed on the machine                                                 |
 | Fast Boot Status| Shows "Fast Boot Enabled" if the role is detected, or "Not Detected" if Fast Boot is disabled |
+

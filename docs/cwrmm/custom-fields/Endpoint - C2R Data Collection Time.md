@@ -24,3 +24,4 @@ This document outlines the time when the C2R Update Channel, C2R Auto Update, an
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_2.png)
+

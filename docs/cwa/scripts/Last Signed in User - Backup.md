@@ -30,3 +30,4 @@ This script stores the last signed-in user information from the registry as a ba
 ## Output
 
 - Script log
+

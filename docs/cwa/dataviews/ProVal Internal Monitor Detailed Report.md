@@ -58,3 +58,4 @@ Color coding is applied to the columns "Monitor Status," "Script Nature," and "M
 **Script Nature:** The "ProVal Script" is highlighted in green to indicate where ProVal scripts are used as autofixes.
 
 **Monitor Synced/Updated:** "Yes" is highlighted in green, "No" in red, and "N/A" in grey to easily show whether the monitor is properly synced/updated from the ProVal plugin.
+

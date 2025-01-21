@@ -18,3 +18,4 @@ This document outlines how to determine if the agent is acting as an RDS Gateway
 | Detection String                                   | Comparator | Result | Applicable OS |
 |----------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
+

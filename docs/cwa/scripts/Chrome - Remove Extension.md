@@ -65,3 +65,4 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
+

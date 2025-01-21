@@ -49,3 +49,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_4.png)
+

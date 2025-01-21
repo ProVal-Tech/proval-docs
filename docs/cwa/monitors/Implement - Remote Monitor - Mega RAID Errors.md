@@ -206,3 +206,4 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ### 8.
 Set the appropriate alert template.
+

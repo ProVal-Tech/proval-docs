@@ -58,3 +58,4 @@ This script utilizes the agnostic script [Test-WeakCredentials](<../../powershel
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
+

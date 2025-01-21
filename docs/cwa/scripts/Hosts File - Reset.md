@@ -36,3 +36,4 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
   - ![Host File Contents](../../../static/img/Hosts-File---Reset/image_2.png)
+

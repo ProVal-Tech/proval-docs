@@ -42,3 +42,4 @@ You can check the database version from the `Server Status` in Control Center.
 
 ![Image1](../../static/img/Patching-Metrics/image_1.png)  
 ![Image2](../../static/img/Patching-Metrics/image_2.png)
+

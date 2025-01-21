@@ -34,3 +34,4 @@ This group contains only the Windows 10 and Windows 11 agents.
    - OS contains any of Windows 10 or Windows 11  
    
      ![Criteria](../../../static/img/BitLocker-Initialize/image_3.png)
+

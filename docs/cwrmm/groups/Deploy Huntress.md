@@ -50,3 +50,4 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Huntress/image_3.png)
 
 ![Image](../../../static/img/Deploy-Huntress/image_4.png)
+

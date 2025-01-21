@@ -29,3 +29,4 @@ Global
 
 ![Image 1](../../../static/img/Create/image_1.png)  
 ![Image 2](../../../static/img/Create/image_2.png)
+

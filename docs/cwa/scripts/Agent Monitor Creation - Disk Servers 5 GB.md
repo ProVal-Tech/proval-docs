@@ -47,3 +47,4 @@ This script runs some SQL commands to create remote monitors for detected hard d
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a server.
+

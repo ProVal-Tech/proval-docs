@@ -59,3 +59,4 @@ Click the Save button to save the group.
 ![Image](../../../static/img/Feature-Pack-Update-Automation/image_12.png)
 
 ![Image](../../../static/img/Feature-Pack-Update-Automation/image_13.png)
+

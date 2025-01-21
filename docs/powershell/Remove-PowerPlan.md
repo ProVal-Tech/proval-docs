@@ -38,3 +38,4 @@ PS C:\> .\Remove-PowerPlan.ps1 -Name 'Balanced'
 ## Output
 - .\Remove-PowerPlan-log.txt
 - .\Remove-PowerPlan-Error.txt
+

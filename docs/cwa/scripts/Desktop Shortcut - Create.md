@@ -36,3 +36,4 @@ This document explains how to create a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for the process.
+

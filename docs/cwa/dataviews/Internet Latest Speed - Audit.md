@@ -51,3 +51,4 @@ This document displays the latest audited speed test information from the last s
 | ResultURL       | The URL of the speed test result.                                |
 | DownloadMbps    | The download speed detected in Mbps.                             |
 | UploadMbps      | The upload speed detected in Mbps.                               |
+

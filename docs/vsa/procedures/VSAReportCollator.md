@@ -20,3 +20,4 @@ Collate CSV Report Parts from Kaseya GetFiles Then Send As Attachment
 - **msgsubject**: Required. The email subject line  
 - **msgattach**: Required. The email attachment file name  
 - **days**: Optional. Purge report parts older than X days before run  
+

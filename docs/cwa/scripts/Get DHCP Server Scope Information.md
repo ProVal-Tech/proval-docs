@@ -27,3 +27,4 @@ This script gathers DHCP information from a target server and saves it to the da
 ## Output
 
 - Table: `plugin_proval_dhcp_statistics`
+

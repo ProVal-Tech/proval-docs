@@ -32,3 +32,4 @@ Available options are:
 
 ![Image](../../../static/img/Client---Update-Channel/image_1.png)
 ![Image](../../../static/img/Client---Update-Channel/image_2.png)
+

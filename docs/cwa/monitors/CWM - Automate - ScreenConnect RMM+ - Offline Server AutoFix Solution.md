@@ -78,3 +78,4 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
        - 'Critical Workstation'
        - 'Server'
      - It is recommended that you use this alert template only if you are confident that the scripting engine should not get overloaded based on your current configuration OR if you are okay with accepting the potential risk if the scripting engine has a problem during an offline server issue.
+

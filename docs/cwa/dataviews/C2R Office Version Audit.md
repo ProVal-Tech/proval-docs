@@ -38,3 +38,4 @@ This dataview populates the Click-to-Run Office version, auto-update status, and
 | Update Channel            | Update Channel for Office installed on the machine                |
 | Script Run Time           | Last time [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine |
 
+

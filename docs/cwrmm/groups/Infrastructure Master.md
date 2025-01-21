@@ -31,3 +31,4 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure Masters
 - Select the `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator, and type `Yes` in the condition box.
 - Click the `Save` button at the top left to create the group.
+

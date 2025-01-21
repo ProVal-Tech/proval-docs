@@ -33,3 +33,4 @@ This document stores the audit data fetched by the [Winget App Audit](https://pr
 | Level                | varchar   | Installation level of the application (System/User).                                            |
 | AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script's document for detailed instructions on enabling Auto Update. |
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
+

@@ -77,3 +77,4 @@ I intend to remove all Microsoft-based bloatware except MSPaint and Windows Came
 ## Output
 - `.\Remove-PUA-log.txt`
 - `.\Remove-PUA-error.txt`
+

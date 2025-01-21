@@ -44,3 +44,4 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents (Extra Data Field)
   - ![Output 1](../../../static/img/Hosts-File---Add/image_2.png) OR ![Output 2](../../../static/img/Hosts-File---Add/image_3.png)
+

@@ -59,3 +59,4 @@ This document detects the computers where the Windows 11 Installer (Beta) task h
 
 7. Click the `Save` button at the top-right corner of the screen to create the monitor set.  
    ![Step 7 Image](../../../static/img/Windows-11-Installation-Failed/image_10.png)
+

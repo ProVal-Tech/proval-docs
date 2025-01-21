@@ -30,3 +30,4 @@ This document stores information from [NCSC-NL's GitHub repository](https://gith
 | Status   | VARCHAR | The current vulnerable status of the application. |
 | Notes    | VARCHAR | Any notes about the application.                  |
 | Links    | VARCHAR | Links regarding the application's vulnerability.  |
+

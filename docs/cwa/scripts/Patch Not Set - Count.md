@@ -32,3 +32,4 @@ This script runs a SQL query to check for the count of patches that have not bee
 ## Output
 
 - Script log
+

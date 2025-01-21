@@ -41,3 +41,4 @@ This script will install Exclaimer on both MAC and Windows.
 ## Output
 
 - Script log
+

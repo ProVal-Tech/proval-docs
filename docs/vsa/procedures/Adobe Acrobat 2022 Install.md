@@ -31,3 +31,4 @@ Downloads the installer from the vendor, performs a quiet no-restart installatio
 ## Output
 
 None
+

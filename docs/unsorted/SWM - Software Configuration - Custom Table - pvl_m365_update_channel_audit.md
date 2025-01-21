@@ -31,3 +31,4 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](htt
 | dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine. |
 
 
+

@@ -42,3 +42,4 @@ Please ensure that the message for the `@screensavermessage@` parameter does not
 ## Output
 
 - Script log
+

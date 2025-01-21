@@ -77,3 +77,4 @@ When the `Winget Update All [Logged on User]` task is enabled, a command window 
 
 - Script log
 - Extra Data Field
+

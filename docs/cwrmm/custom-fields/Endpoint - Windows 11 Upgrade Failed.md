@@ -23,3 +23,4 @@ This document stores whether the Windows 11 Upgrade failed after running the Win
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_2.png)
+

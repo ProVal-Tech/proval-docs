@@ -34,3 +34,4 @@ This dataview lists all scripts in the environment with details about their scri
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-List/image_4.png)
+

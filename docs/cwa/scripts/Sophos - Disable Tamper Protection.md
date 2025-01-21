@@ -35,3 +35,4 @@ The script will first verify that the target device has Sophos installed. It wil
 ## Output
 
 Script log messages only.
+

@@ -316,3 +316,4 @@ Check the concerned groups and ensure the monitor set is created and configured 
 Set the alert template to `△ Custom - Ticket Creation Computer - Warning and Failed` on the monitor.
 
 ![Image](../../../static/img/-Windows-License-Status/image_2.png)
+

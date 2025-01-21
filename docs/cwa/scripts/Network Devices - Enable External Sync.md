@@ -27,7 +27,7 @@ This script ensures that the `External Sync` EDF is checked on the network devic
 
 | Name                          | Example                                     | Required | Description                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------|---------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| External_Sync_DeviceType      | 'Network Switch|Network Device|Printer|Router' | False    | The type of devices the client would like to sync to manage. If it is left blank, the script will not proceed with enabling the external sync for any network device. <ul><li>Separate each type with a pipe (|)</li><li>Put "ALL" to sync all devices</li><li>Put "Disable" to unsync the device the script synced earlier.</li><li>If left blank, the script will not proceed with enabling the external sync for any network device.</li></ul> |
+| External_Sync_DeviceType      | 'Network Switch|Network Device|Printer|Router' | False    | The type of devices the client would like to sync to manage. If it is left blank, the script will not proceed with enabling the external sync for any network device. Separate each type with a pipe (|). Put "ALL" to sync all devices. Put "Disable" to unsync the device the script synced earlier. If left blank, the script will not proceed with enabling the external sync for any network device. |
 
 ## Extra Data Fields
 
@@ -77,3 +77,5 @@ Device-level EDF
 ## Output
 
 - Script log
+
+

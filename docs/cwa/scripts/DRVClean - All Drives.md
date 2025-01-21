@@ -41,3 +41,4 @@ This process cleans well-known directories of aging files and folders on all int
 ## Output
 
 - Script log
+

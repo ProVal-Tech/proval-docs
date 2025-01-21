@@ -31,3 +31,4 @@ When the script runs, it will ask for a parameter `AppName`, which needs to be f
 ## Output
 
 - Script log
+

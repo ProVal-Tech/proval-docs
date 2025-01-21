@@ -68,3 +68,4 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-EdgeExtension-log.txt
 ```
+

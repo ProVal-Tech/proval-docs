@@ -80,3 +80,4 @@ To create this ticket to a specific service board in manage, provide the categor
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
+

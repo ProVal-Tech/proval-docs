@@ -41,3 +41,4 @@ This document describes how to change the printer's IP address from `@OldIP@` to
 ## Output
 
 - Script log
+

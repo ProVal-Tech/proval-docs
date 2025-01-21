@@ -28,3 +28,4 @@ This custom table holds the target computer ID, the script ID of a script you wi
 | ComputerID         | INT  | The target computer of the queued script.                |
 | ScriptID           | INT  | The target script to be executed on the computer.        |
 | ScriptParameters    | Text | Any parameters necessary for the successful execution of the targeted script. |
+

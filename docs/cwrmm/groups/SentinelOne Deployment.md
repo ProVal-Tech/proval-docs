@@ -51,3 +51,4 @@ Once you have added the above criteria, click the Save button to save the Group.
 ![Image](../../../static/img/SentinelOne-Deployment/image_5.png)  
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_6.png)  
+

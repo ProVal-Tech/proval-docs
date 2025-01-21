@@ -33,3 +33,4 @@ This document stores information about existing user profiles on computers. Data
 | LastLogon    | DATETIME | The last time the profile was logged into.         |
 | TimeStamp    | DATETIME | The last time this profile information was gathered.|
 | UserProfile  | VARCHAR  | The path to the user folder for the target profile. |
+

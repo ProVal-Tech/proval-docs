@@ -63,3 +63,4 @@ Get events from the Windows event log that have triggered since the last run of 
 
 ## Output
 `System.Diagnostics.Eventing.Reader.EventLogRecord`
+

@@ -46,3 +46,4 @@ This script should always be called from a parent script.
 - Script log
 - `@failstatus@` variable state
 - `@EnvironmentalError@` variable
+

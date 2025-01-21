@@ -20,3 +20,4 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](<./Lo
 ## Dependencies
 
 [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>)
+

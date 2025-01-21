@@ -54,3 +54,4 @@ The script is designed to consistently update the ticket with new information as
 ![Image 4](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_4.png)
 
 ![Image 5](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_5.png)
+

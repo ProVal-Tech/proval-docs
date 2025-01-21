@@ -38,3 +38,4 @@ This solution contains the Network Glue deployment and uninstallation articles.
      - [Internal Monitor - ProVal Production - Network Glue - Deployment](<../cwa/monitors/ProVal Production - Network Glue - Deployment.md>)  
        - Set up with the "△ Custom - Execute Script - Network Glue Collector - Install" Alert Template
        - Right-click and select "Run Now" to start the monitor.
+

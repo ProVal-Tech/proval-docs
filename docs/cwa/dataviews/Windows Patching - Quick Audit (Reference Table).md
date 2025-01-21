@@ -56,3 +56,4 @@ Sample Screenshot:
 ![Step 2](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_3.png)  
 
 Once you receive the CSV in your email, you can easily apply the required filters.
+

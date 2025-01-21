@@ -250,3 +250,4 @@ Click the `Save` button to save the Task.
 - Script Log
 
 ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
+

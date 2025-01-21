@@ -24,3 +24,4 @@ It can only be used as an autofix for monitors that check for machines that have
 
 - The script first verifies if the user is logged in. If not, it exits.
 - If the user is logged in, it sends a popup message to remind them to reboot their machine.
+

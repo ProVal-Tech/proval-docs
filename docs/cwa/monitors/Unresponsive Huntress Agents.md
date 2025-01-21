@@ -40,3 +40,4 @@ Windows machines, limited to those with Huntress Agents only.
 **Subject:** `Unresponsive Huntress Agent Detected on %COMPUTERNAME%`  
 
 **Body:** `The machine %computername% located at %clientname%//%locationname% is currently reporting that its Huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days, and its license key has been revoked by Huntress, which may prevent it from performing security functions on the machine. Please validate that the agent is communicating with Huntress, and if it is not, re-install the application to resolve the issue.`
+

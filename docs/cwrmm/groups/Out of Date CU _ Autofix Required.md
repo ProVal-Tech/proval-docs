@@ -214,3 +214,4 @@ Click the `Save` button to save/create the group.
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_46.png)
 
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_47.png)
+

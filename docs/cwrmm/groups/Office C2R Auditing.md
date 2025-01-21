@@ -45,3 +45,4 @@ This document outlines the process for creating a dynamic group for computers wi
 
 ![Image](../../../static/img/Office-C2R-Auditing/image_10.png)  
 ![Image](../../../static/img/Office-C2R-Auditing/image_11.png)
+

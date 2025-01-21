@@ -92,3 +92,4 @@ WHERE
     'No', 
     'Yes') <> 'Yes'
 ```
+

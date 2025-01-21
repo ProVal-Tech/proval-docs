@@ -39,3 +39,4 @@ The solution aims to find the computers where the installed SentinelOne Manageme
 
 3. Create and schedule this task:  
    - [SentinelOne Management Console Validation](<../cwrmm/tasks/SentinelOne Management Console Validation.md>)  
+

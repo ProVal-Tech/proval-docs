@@ -23,3 +23,4 @@ This role will detect machines that are not joined to a domain.
 $ErrorActionPreference='SilentlyContinue'; $DSRegStatus = dsregcmd.exe /status; @('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]
 ```
 
+

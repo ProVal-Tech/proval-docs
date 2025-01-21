@@ -31,3 +31,4 @@ Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Global
 | IsDomainAdmin       | varchar(5)   | Is Domain Admin? (True/False)                                   |
 | IsEnterpriseAdmin    | varchar(5)   | Is Enterprise Admin? (True/False)                               |
 | ScriptRunTime       | datetime      | Data collection time                                            |
+

@@ -22,3 +22,4 @@ This script is a function script called from [CWM - Automate - Script - Patch Ac
 | Property                   | Value |
 |---------------------------|-------|
 | _sysPatchAcctTimeToBill   | 1     |
+

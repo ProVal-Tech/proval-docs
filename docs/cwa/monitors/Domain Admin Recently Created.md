@@ -16,3 +16,4 @@ This document uses the AD_Plugin tables to determine if a new Domain Admin user 
 ## Target
 
 **Servers:** Domain Controllers
+

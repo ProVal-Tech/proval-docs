@@ -36,3 +36,4 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Required Version     | Required Version to install                             |
 | Update Status        | Updated / Out Of Date                                  |
 | Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script |
+

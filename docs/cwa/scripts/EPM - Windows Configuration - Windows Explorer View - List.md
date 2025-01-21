@@ -36,3 +36,4 @@ This script performs the following actions:
 ## Output
 
 - Script log
+

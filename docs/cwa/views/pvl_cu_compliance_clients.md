@@ -43,3 +43,4 @@ The data is grouped by client.
 | EOL %                           | Proportion of outdated machines ineligible for cumulative updates.                             |
 | Total Eligible Computers - CU   | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
 | Data Missing                    | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+

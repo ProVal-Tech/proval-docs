@@ -46,3 +46,4 @@ The script will attempt to install Chocolatey and then install or upgrade the ap
 ## Output
 
 - Script log
+

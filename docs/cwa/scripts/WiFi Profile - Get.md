@@ -40,3 +40,4 @@ It is to be used before the @Apply WiFi Profile script against a machine with th
 
 - Script log
 - Table `plugin_proval_wifi_profiles`
+

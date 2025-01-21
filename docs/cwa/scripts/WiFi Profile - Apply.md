@@ -40,3 +40,4 @@ The script applies the WiFi configuration for the desired SSID.
 ## Output
 
 - Script log
+

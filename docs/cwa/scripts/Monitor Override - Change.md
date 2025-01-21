@@ -30,3 +30,4 @@ This script helps to override the monitor settings applied by a group, allowing 
 
 - Takes input of the Monitor Name and the Alert Template from the user.
 - Executes SQL queries to set the override and the alert template.
+

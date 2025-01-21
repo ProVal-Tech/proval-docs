@@ -12,3 +12,4 @@ unlisted: false
 ## Summary
 
 Detect and Get Information About Installed SQL (Reg key)
+

@@ -38,3 +38,4 @@ This dataview displays all the stale users in the domain who have not logged in 
 | Password Expires                 | Similar to the Password Expiration Date column; however, it does not list the date. It simply indicates whether or not the password expires without providing a date                                      |
 | Account Expiration               | Indicates whether the account is set to expire in Active Directory                                                                                                                                      |
 
+

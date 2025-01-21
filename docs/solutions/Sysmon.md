@@ -79,3 +79,4 @@ This solution handles the optional application Sysmon.
 ## Output
 
 - Script log
+

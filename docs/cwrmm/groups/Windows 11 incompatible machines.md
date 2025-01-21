@@ -93,3 +93,4 @@ Click the `Save` button to save/create the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_15.png)  
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_16.png)
+

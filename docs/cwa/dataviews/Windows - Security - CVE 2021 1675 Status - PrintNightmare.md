@@ -28,3 +28,4 @@ The script should be imported via the ProVal plugin to ensure the GUID does not 
 | Computer   | The computer associated with the results of the script                      |
 | Status     | This is the Script State "Result" column from the script                   |
 | Last Run   | This is the most recent date that the script was run against the target device |
+

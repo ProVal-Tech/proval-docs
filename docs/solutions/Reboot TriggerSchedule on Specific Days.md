@@ -30,3 +30,4 @@ This solution allows users to trigger an immediate reboot or schedule it for the
 - Create the [Force Reboot Server With Reboot Windows Verification](<../cwrmm/tasks/Force Reboot Server With Reboot Windows Verification.md>) and follow the deployment instructions.
 - Create the [Server Reboot Schedule on Specific Days](<../cwrmm/tasks/Server Reboot Schedule on Specific Days.md>) and follow the deployment instructions.
 - Create the [Workstation Reboot Schedule on Specific Days](<../cwrmm/tasks/Workstation Reboot Schedule on Specific Days.md>) and follow the deployment instructions.
+

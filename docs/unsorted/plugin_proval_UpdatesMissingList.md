@@ -47,3 +47,4 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_UpdatesMissingList` (
   CONSTRAINT `plugin_proval_UpdatesMissingList_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
 ```
+

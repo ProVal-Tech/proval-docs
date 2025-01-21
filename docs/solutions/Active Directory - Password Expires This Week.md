@@ -41,3 +41,4 @@ This document alerts domain users if their domain password is set to expire with
 
 **Q: Users are not receiving emails?**  
 A: Ensure that the user has an email address set for their Active Directory account, the script's global variables are set correctly, and lastly, check that the emails are not failing from Automate.
+

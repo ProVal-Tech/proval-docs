@@ -95,3 +95,4 @@ This document collects information regarding any existing crash dumps.
 ### Custom Table
 
 ![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
+

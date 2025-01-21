@@ -46,3 +46,4 @@ WHERE parentid
     IN(SELECT groupid FROM mastergroups WHERE fullname='Service Plans.Windows Servers') AND `Name` <> 'Server Roles')
 WHERE LtGuid='5ca92306-2d93-11e1-ac0f-3d76979114ae' AND ftype=2;
 ```
+

@@ -35,3 +35,4 @@ The dataview is created to verify the workaround applied and the installation of
 | Non-compliant UAC sAMAccountType   | To find computer accounts that have a non-compliant UAC sAMAccountType.                                                                        |
 | Information Update Time             | Run-time of the script.                                                                                                                         |
 | Last Contact                        | Last contact of the Computer.                                                                                                                   |
+

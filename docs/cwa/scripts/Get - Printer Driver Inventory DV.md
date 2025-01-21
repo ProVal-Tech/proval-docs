@@ -45,3 +45,4 @@ This script collects information about the printer drivers on the target system 
 - Script Log
 - Custom Table
 - Dataview
+

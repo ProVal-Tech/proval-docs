@@ -28,3 +28,4 @@ The purpose of this solution is to monitor end users to determine how long they 
 - Import the dataview.
 - Schedule the script to run periodically against the relevant machines. It is recommended not to schedule the script against a large number of computers simultaneously, as it needs to be executed frequently for optimal output.
 - Ask the user to log off their computer or wait for them to log off after the first execution of the script. The script/tool cannot collect data/samples unless the logged-in user re-logs in after the installation of the tool.
+

@@ -46,3 +46,4 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
    - Set `Success` in the comparison condition.  
    ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
+

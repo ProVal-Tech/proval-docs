@@ -87,3 +87,4 @@ This script removes all instances of ScreenConnect from the machine except the o
 - Script Logs
 
 </div>
+

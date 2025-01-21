@@ -33,3 +33,4 @@ Managed Service Plan Groups for Windows Workstations
 The [EPM - Windows Configuration - Script - Install Windows Upgrade](<../scripts/Install Windows Upgrade.md>) script will only create a ticket for failures on the detected machine if a ticket category is selected in the Alerting tab of the monitor set.
 
 ![Ticketing Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based/image_2.png)
+

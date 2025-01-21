@@ -26,3 +26,4 @@ This custom field at the company level stores the ThreatLocker Group key for Mac
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerMacGroupKey/image_1.png)
+

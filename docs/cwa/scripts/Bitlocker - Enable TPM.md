@@ -36,3 +36,4 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 ## Output
 
 - Script logs
+

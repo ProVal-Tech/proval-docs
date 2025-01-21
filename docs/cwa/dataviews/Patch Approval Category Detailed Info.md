@@ -25,3 +25,4 @@ The [Approval Policy - Auto Approve/Ignore/Deny Audit](<./Approval Policy - Auto
 | Category                  | Category of the patch, such as Updates, Upgrades, Exchange, Office 365, Bing, Drivers, etc.                       |
 | Category Approval Status   | Indicates whether the auto policy mentioned in the next column is disabled or enabled. This includes whether approval is enabled or disabled, denial is enabled or disabled, or if it is ignored, or if nothing is set against that category for that Approval Policy. |
 | Auto Policy               | The policy applied to that Patch Category for that Approval Policy, such as Approved, Denied, or Ignored.          |
+

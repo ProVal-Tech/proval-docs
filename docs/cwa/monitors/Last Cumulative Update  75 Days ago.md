@@ -52,3 +52,4 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **Q1)** What happens if the machine hasn't logged in for several days, or if the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different from the `lastruntime` check in the table "[Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)"?
 
 **Ans)** This monitor will ignore agents whose last contact date is older than 7 days from monitoring. It will also exclude agents where the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) has not run within the scheduled days period, which should match the `p.scriptruntime` set in the monitor.
+

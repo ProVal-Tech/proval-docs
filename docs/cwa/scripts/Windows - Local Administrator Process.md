@@ -47,3 +47,4 @@ The script will start by checking if the password entry already exists for the c
 ## Output
 
 - Script log
+

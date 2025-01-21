@@ -29,3 +29,4 @@ The purpose of this script is to create the [pvl_Script_Assessment](<../tables/p
 
 Schedule the script to run once per day, preferably around midnight.  
 ![Sample Run](../../../static/img/Script-Failure-Analysis---30-Day-Retention/image_1.png)
+

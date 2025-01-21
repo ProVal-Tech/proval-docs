@@ -220,3 +220,4 @@ If you believe the password has already been changed or that this is a false ale
 
 Sample:  
 ![Default Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_10.png)
+

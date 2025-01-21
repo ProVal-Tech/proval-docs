@@ -51,3 +51,4 @@ The script will download the EXE file and execute it.
 ## Output
 
 - Script log
+

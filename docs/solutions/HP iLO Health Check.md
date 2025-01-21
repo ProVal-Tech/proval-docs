@@ -92,3 +92,4 @@ To gather information about and monitor the health status of HP iLO devices.
     - Navigate to System > Configuration > Dashboard > Management > Scheduled Client Scripts
       - Schedule the [HP iLO Credential Missing Detection](<../cwa/scripts/HP iLO Credential Missing Detection.md>) script to run once per week.  
       ![Schedule Script](../../static/img/HP-iLO-Health-Check/image_3.png)
+

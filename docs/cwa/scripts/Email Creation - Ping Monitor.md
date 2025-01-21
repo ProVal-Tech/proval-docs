@@ -67,3 +67,4 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Output
 
 - Email
+

@@ -23,3 +23,4 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Last Contact        | Last contact with RMM of the agent          |
 | Web Browser Name    | Web browsers detected on the agent          |
 | IE Audit            | Status of IE disabled or not                |
+

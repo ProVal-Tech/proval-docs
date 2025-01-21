@@ -23,3 +23,4 @@ This monitor is dependent on the following items:
 ## Target
 
 The monitor set is explicitly limited to the domain controllers detected in the Active Directory plugin.
+

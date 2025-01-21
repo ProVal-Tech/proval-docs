@@ -20,3 +20,4 @@ This document describes an internal monitor that will alert users if a host has 
 ## Target
 
 Global - This monitor should be run without explicitly defined targets.
+

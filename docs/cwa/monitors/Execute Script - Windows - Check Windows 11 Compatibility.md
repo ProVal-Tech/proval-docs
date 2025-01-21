@@ -27,3 +27,4 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Windows 11 Compatibility Check
+

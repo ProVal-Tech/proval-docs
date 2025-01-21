@@ -32,3 +32,4 @@ The script retrieves details about accessible network adapters from a Windows co
 - Script Log
 - Custom Table
 - Dataview
+

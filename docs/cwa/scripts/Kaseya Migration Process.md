@@ -40,3 +40,4 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 The script logs the output status (fail/success) in Automate.
+

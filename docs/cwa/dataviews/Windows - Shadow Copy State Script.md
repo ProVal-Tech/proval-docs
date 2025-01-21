@@ -37,3 +37,4 @@ This DataView displays the Windows Shadow Copy state for endpoints with Shadow C
 | Allocated Size of Shadow Copy (GB)         | Allocated space size for the Shadow Copy in GB                         |
 | Maximum Space Provided to Shadow Copy (GB) | Maximum space provided to the Shadow Copy in GB                        |
 
+

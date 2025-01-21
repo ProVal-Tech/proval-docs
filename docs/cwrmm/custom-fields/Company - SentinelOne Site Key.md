@@ -26,3 +26,4 @@ This custom field at the company level stores the Sentinel Site Key. The Site Ke
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---SentinelOne-Site-Key/image_1.png)
+

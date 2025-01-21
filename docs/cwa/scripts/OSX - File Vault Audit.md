@@ -32,3 +32,4 @@ It is recommended to schedule the script to run daily against the Mac machines t
 ## Output
 
 - EDF
+

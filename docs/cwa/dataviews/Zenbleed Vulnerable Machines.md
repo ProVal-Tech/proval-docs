@@ -30,3 +30,4 @@ This data view compiles a list of machines that are anticipated to be vulnerable
 | Processor Cache Size      | Cache Size of the Processor                   |
 | Processor Manufacturer     | Manufacturer of the Processor                 |
 | Processor Serial          | Serial Number of the Processor                |
+

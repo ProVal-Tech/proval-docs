@@ -38,3 +38,4 @@ The script will scan for and remove all homepage policies from the Firefox polic
 
 - Script log
 - Local file on the computer
+

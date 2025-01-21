@@ -25,3 +25,4 @@ None
 | Computer ID    | The ID of the machine where software is detected     |
 | Software Name   | Name of the cloud drive software present on the machine |
 | Version        | Version of the cloud drive software                   |
+

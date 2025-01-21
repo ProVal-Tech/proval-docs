@@ -36,3 +36,4 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 - Script log
 - Ticket if failure found
+

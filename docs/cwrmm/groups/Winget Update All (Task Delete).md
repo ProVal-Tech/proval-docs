@@ -101,3 +101,4 @@ This document identifies Windows 10 and 11 computers with the presence of Winget
     **Condition:** `OS` `Contains any of` `Microsoft Windows 10 and 11`
 
 12. Click the `Save` button
+

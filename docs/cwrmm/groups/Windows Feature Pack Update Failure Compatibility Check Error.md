@@ -46,3 +46,4 @@ Click the `Save` button to save the group.
 Click the `Save` button to save the group.
 
 ![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_7.png)
+

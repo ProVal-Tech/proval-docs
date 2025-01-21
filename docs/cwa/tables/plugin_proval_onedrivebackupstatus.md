@@ -32,3 +32,4 @@ This document stores information about the redirection of Desktop, Documents, an
 | PicturesEnabled    | TINYINT  | 1 or 0 indicating if Pictures redirection is enabled or disabled. |
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
+

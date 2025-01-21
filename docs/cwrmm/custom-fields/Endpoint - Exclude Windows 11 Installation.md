@@ -23,3 +23,4 @@ Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade
 
 ![Screenshot 1](../../../static/img/Endpoint---Exclude-Windows-11-Installation/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Exclude-Windows-11-Installation/image_2.png)
+

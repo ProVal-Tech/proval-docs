@@ -17,4 +17,6 @@ This document will detect if the Domain profile of the Windows Firewall is enabl
 
 | Detection String                                             | Comparator | Result | Applicable OS |
 |------------------------------------------------------------|------------|--------|----------------|
-| {%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
+| \{%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
+
+

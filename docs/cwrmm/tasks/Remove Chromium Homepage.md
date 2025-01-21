@@ -191,3 +191,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script log  
 ![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  
+

@@ -24,3 +24,4 @@ Windows machines with active Automate Patching policies.
 ## Translated SQL
 
 
+

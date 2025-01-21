@@ -43,3 +43,4 @@ If setting all available browsers, leave the Target blank.
 ## Output
 
 - Script log
+

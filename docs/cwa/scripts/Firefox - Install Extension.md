@@ -56,3 +56,4 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on the computer
+

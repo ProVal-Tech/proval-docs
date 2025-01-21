@@ -20,3 +20,4 @@ This script will remove a Winget package.
 ## Dependencies
 
 - [SWM - Software Management - Powers
+

@@ -97,3 +97,4 @@ SentinelOne URL should be: \<URL>
 SentinelOne Site key should be: \<LicenseKey>
 To resolve a license key mismatch in SentinelOne, you must uninstall and then reinstall the software using the correct license key.
 ```
+

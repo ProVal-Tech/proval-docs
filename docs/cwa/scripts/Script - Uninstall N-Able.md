@@ -35,3 +35,4 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 - Script log
 - Local file on the computer
+

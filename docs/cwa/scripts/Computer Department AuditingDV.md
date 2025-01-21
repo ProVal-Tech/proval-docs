@@ -33,3 +33,4 @@ This script collects the department information of AD users. It stores the infor
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
+

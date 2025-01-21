@@ -20,3 +20,4 @@ This script removes any registry entries that may be preventing Windows updates 
 ## Output
 
 - Script log
+

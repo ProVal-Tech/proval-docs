@@ -51,3 +51,4 @@ Displays audited speed test information from the custom table [EPM - Network - C
 | ResultURL        | The URL of the speed test result.                                                           |
 | DownloadMbps     | The download speed detected in Mbps.                                                        |
 | UploadMbps       | The upload speed detected in Mbps.                                                          |
+

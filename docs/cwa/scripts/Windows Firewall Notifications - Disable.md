@@ -28,3 +28,4 @@ This script will disable the firewall notifications for all users on a Windows s
 ## Output
 
 - Script logs
+

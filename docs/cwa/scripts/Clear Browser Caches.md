@@ -39,3 +39,4 @@ This script will clear the caches for the following browsers:
 ## Output
 
 - Script log
+

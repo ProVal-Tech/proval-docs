@@ -27,3 +27,4 @@ Use the "△ Email RAWSQL Monitor set results to the Partner" alert template alo
 ## Target
 
 Global
+

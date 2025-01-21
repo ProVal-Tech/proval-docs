@@ -26,3 +26,4 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
+

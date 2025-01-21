@@ -94,3 +94,4 @@ Document the various variables in the script. Delete any section that is not rel
 - `C:/Temp/SFC.Log`
 - Application Event log entry 7395 from 'Proval_Script_Monthly_SFC_Scan'
 - Ticket with all related information.
+

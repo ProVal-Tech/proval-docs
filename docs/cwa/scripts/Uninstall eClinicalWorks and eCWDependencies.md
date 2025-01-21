@@ -21,3 +21,4 @@ This script is designed to uninstall the eClinicalWorks Client and eCWDependenci
 
 - Script log
 - Ticket
+

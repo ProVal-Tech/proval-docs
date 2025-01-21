@@ -46,3 +46,4 @@ The output files will be:
 ./Set-DisplayScaling-log.txt
 ./Set-DisplayScaling-Error.txt
 ```
+

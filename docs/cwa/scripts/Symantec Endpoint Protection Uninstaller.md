@@ -38,3 +38,4 @@ This script attempts to uninstall Symantec Endpoint Protection by running a Powe
 ## Output
 
 - Script log.
+

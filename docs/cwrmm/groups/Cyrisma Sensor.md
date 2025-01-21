@@ -58,3 +58,4 @@ Create Dynamic Groups:
    Criteria:
 
    - Installed Software contains any of 'CYRISMA'
+

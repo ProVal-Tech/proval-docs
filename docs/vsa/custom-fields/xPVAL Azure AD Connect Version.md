@@ -27,3 +27,4 @@ This document contains information about the Azure AD Connect version installed 
 | Field Name                          | Type of Field (Machine or Organization) | Description              |
 |-------------------------------------|-----------------------------------------|--------------------------|
 | xPVAL Azure AD Connect Version      | Machine CF                             | Azure AD Connect Version  |
+

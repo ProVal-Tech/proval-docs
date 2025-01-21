@@ -3,7 +3,7 @@ id: '1973f30a-c6dc-4725-90f7-ba081cebf2d7'
 title: 'ConnectWise Automate Machine Back Online Notification'
 title_meta: 'ConnectWise Automate Machine Back Online Notification'
 keywords: ['connectwise', 'notification', 'email', 'machine', 'check-in']
-description: 'This document provides a comprehensive solution for notifying contacts about a machine's online check-in status in ConnectWise Automate. It includes associated content, implementation steps, and FAQs to ensure effective setup and usage.'
+description: "This document provides a comprehensive solution for notifying contacts about a machine's online check-in status in ConnectWise Automate. It includes associated content, implementation steps, and FAQs to ensure effective setup and usage."
 tags: ['email', 'setup']
 draft: false
 unlisted: false
@@ -74,3 +74,4 @@ A: Remove the email address(es) from the EDF.
 ## Sample Email
 
 ![Sample Email](../../static/img/Email---Machine-Back-Online/image_4.png)
+

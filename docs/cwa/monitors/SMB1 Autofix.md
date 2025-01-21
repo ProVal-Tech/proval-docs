@@ -29,3 +29,4 @@ Global
 ![Ticket Category Setup](../../../static/img/SMB1-Autofix/image_1.png)
 
 Once the ticket category is set, the autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) will automatically create a ticket to the service board using the ticket category set.
+

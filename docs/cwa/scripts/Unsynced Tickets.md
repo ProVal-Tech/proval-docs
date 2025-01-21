@@ -83,3 +83,4 @@ Ticket Body: \<Ticket Body>
 
 **Sample Screenshot:**
 ![Sample Screenshot](../../../static/img/Unsynced-Tickets/image_5.png)
+

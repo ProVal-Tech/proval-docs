@@ -40,3 +40,4 @@ This script installs Dell Command Update if it is not present, updates it to ver
 ## Output
 
 - Script log
+

@@ -27,3 +27,4 @@ The script attempts to uninstall the NinjaRMMAgent from the machine. If the glob
 
 - Script Log
 - Ticket
+

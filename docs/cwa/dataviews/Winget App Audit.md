@@ -42,3 +42,4 @@ This document displays the information of `Winget` supported applications fetche
 | Auto Update Enabled       | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) document for detailed instructions on enabling Auto Update. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
 
+

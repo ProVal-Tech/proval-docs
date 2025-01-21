@@ -63,3 +63,4 @@ This monitor is intentionally aimed at the PowerShell Version \< 5 device group.
 ## Ticketing
 
 This solution does technically create tickets, but the tickets are designed to autoclose as soon as the machine runs the task to update PowerShell.
+

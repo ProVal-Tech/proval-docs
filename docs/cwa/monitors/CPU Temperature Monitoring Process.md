@@ -37,3 +37,4 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/CPU-Temperature-Monitoring-Process/image_1.png)
+

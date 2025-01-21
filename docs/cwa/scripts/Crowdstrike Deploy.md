@@ -41,3 +41,4 @@ This script will install Crowdstrike on an agent using the CID key provided in t
 ## Output
 
 - Script log
+

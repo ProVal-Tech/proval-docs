@@ -41,3 +41,4 @@ See [SEC - Windows Patching - Agnostic - Install-Windows11](https://proval.itglu
 
 - Script log
 - Local file on computer
+

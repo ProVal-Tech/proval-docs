@@ -148,3 +148,4 @@ The script's default nature is to compare the existing configuration before runn
   - Winget-AutoUpdate-Notify
   - Winget-AutoUpdate-Policies
   - Winget-AutoUpdate-UserContext
+

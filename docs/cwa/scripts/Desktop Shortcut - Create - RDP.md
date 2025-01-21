@@ -30,3 +30,4 @@ This document describes a script that creates an RDP shortcut on the desktop of 
 - RDP shortcut on the user's desktop:
   ![Shortcut Image 1](../../../static/img/Desktop-Shortcut---Create---RDP/image_2.png)
   ![Shortcut Image 2](../../../static/img/Desktop-Shortcut---Create---RDP/image_3.png)
+

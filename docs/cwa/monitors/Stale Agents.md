@@ -45,3 +45,4 @@ Last Seen by Automate: %RESULT%
 ```
 The computer %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
 ```
+

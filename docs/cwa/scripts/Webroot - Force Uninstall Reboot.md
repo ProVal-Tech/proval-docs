@@ -26,3 +26,4 @@ This script first checks if the Webroot service is running on the machine. If it
 ## Output
 
 - Script log
+

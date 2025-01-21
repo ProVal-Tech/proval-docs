@@ -16,3 +16,4 @@ This document looks for domains that have not synced with the Active Directory p
 ## Target
 
 Global
+

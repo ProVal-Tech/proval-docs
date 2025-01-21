@@ -214,3 +214,4 @@ This task can be scheduled manually on-demand to any agent or to a certain group
   Navigate to the right side of the screen and click on the three bars as shown below:  
   ![Three Bars](../../../static/img/BIS-Notification-Prompter/image_33.png)  
   ![Three Bars Step 2](../../../static/img/BIS-Notification-Prompter/image_34.png)  
+

@@ -64,3 +64,4 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 | Install Script                 | /repo/script/Install-Microsoft365  |
 | Automate                       |                                    |
 | Kaseya                        | [Kaseya](https://proval.itglue.com/5078775/docs/15402741) |
+

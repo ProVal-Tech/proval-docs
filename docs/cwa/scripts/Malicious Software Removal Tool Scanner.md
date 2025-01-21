@@ -61,3 +61,4 @@ After the `SetEnvironment` is set, please refer to the sample execution.
 
 - Script log
 - Local file on the computer: `C:/WINDOWS/debug/mrt.log`
+

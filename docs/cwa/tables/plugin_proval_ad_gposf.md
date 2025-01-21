@@ -28,3 +28,4 @@ This document displays detailed information about the GPO security filtering of 
 | ComputerID  | INT      | The Automate ComputerID of the supplying domain controller.                |
 | Trustee     | VARCHAR  | The name of the user or group that the security filter is applying to.     |
 | TrusteeType | VARCHAR  | The type of trustee (User, Group, WellKnownGroup, etc.)                   |
+

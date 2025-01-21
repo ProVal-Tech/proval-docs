@@ -32,3 +32,4 @@ The script will remove the Intel L1TF and Intel Meltdown solutions from the Auto
 
 Script Log
 
+

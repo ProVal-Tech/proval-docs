@@ -19,3 +19,4 @@ This Dataview shows whether Google Authentication is enabled for Automate users.
 |----------------------|---------------------------------------------------------------|
 | Username             | Displays the name of the Automate user                       |
 | Google Auth Enabled   | Indicates if Google Authentication is enabled for the user   |
+

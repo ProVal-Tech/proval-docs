@@ -25,3 +25,4 @@ The script is located in ProVal VSA at:
 `Shared > PVAL Content Source > BitLocker > Enable Bitlocker`
 
 ![Image](../../../static/img/Enable-Bitlocker/image_1.png)
+

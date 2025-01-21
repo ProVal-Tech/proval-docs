@@ -56,3 +56,4 @@ AND computers.LastContact > DATE_ADD(NOW(), INTERVAL -15 MINUTE)
 AND computers.os LIKE '%Windows%'
 GROUP BY computers.locationid
 ```
+

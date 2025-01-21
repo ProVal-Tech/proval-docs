@@ -59,3 +59,4 @@ This document describes how to identify Windows 10 computers that are compatible
 
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_14.png)  
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_15.png)
+

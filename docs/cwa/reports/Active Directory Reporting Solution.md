@@ -88,3 +88,4 @@ If all of your clients do not have any detected weak passwords, the auditing scr
 If no data is displayed at all in these reports, check to make sure your Active Directory Plugin is installed and configured for the client you are running it on.
 
 ![Plugin Example](../../../static/img/Active-Directory-Reporting-Solution/image_3.png)
+

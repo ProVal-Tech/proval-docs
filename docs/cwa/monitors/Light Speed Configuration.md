@@ -229,3 +229,4 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 
 - Now execute your query from a RAWSQL monitor set.
 - Locate the remote monitor on the group(s) and ensure that it is functioning as required.
+

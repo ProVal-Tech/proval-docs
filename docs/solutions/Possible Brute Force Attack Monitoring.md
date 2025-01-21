@@ -56,3 +56,4 @@ The solution monitors the domain controller for excessive logon failures within 
 
 4. Create and enable the following monitor:
    - [Possible Brute Force Attack](<../cwrmm/monitors/Possible Brute Force Attack.md>)
+

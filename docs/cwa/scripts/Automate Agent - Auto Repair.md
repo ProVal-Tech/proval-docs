@@ -128,7 +128,7 @@ The agent \\<computername> was found to be offline in Automate and online in Con
 Manual remediation is required.
 ```
 
-**Example \\<ParsedLogs>:**  
+**Example \<ParsedLogs>:**  
 ```
 LTService  v230.222   - 7/10/2023 10:04:22 AM   - Background Worker: AccomplishPostWindowsUpdateSettingRestart: Resetting registry value for Windows Update service start type.:::
 LTService  v230.222   - 7/10/2023 10:04:22 AM   - Background Worker: AccomplishPostWindowsUpdateSettingRestart: Trying to start the Windows Update service if it is not already running.:::
@@ -151,3 +151,5 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
+
+

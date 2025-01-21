@@ -77,3 +77,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
   - There is extensive script logging in this script for both the install and uninstall processes.
+

@@ -106,3 +106,4 @@ Data must be manually populated in the Managed Variables for the endpoint's grou
 
 - `$env:SystemDrive//Users//Public//Desktop//<VPN_NAME>.lnk`
 - Agent Procedure log
+

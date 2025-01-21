@@ -219,3 +219,4 @@ Locate your remote monitor by opening the group(s) remote monitors tab, then app
 
 ![Remote Monitor Tab 1](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_2.png)  
 ![Remote Monitor Tab 2](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_3.png)
+

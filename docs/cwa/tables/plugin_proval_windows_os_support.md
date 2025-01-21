@@ -118,3 +118,4 @@ Please follow these instructions carefully to update the information stored in t
 20. Scroll to the top of the document and click the `Publish` button to save the changes.  
    ![](../../../static/img/plugin_proval_windows_os_support/image_17.png)  
 
+

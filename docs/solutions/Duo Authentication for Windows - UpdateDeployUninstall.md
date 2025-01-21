@@ -76,3 +76,4 @@ Configure the solution as outlined below:
     - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) bonded to it.
     - Right-click and Run Now to start the monitor.
+

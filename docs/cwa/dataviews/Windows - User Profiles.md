@@ -35,3 +35,4 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | IsAdmin        | Indicates if the user is a local admin.                                                                  |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
+

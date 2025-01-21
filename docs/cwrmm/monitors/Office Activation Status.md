@@ -87,3 +87,4 @@ Generates an alert for any unlicensed Office products on the endpoint.
 
 13. Click the `Save` button to save the monitor set.  
     ![Save Monitor Set](../../../static/img/Office-Activation-Status/image_14.png)
+

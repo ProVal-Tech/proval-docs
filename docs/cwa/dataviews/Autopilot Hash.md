@@ -30,3 +30,4 @@ This document displays the Hardware Hash details of Windows agents.
 | Model             | Model of the agent within Automate                       |
 | Serial Number     | Serial Number of the agent within Automate               |
 | Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) |
+

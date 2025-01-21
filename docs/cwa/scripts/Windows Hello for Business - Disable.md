@@ -25,3 +25,4 @@ This script disables Windows Hello for Business by adding the registry key `HKLM
 ## Output
 
 - Script log  
+

@@ -43,3 +43,4 @@ This script is used to enable the Authenticode Verification on Windows machines.
 ## Output
 
 Agent procedure log.
+

@@ -40,3 +40,4 @@ Document the various variables in the script. Delete any section that is not rel
 ![Image](../../../static/img/ESXI-Credential-Check---Location/image_2.png)
 
 ![Image](../../../static/img/ESXI-Credential-Check---Location/image_3.png)
+

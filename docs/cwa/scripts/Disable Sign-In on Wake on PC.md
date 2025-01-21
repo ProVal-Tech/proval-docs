@@ -20,3 +20,4 @@ This script disables the Sign-In option for all user accounts. It removes the re
 ## Output
 
 - Script log
+

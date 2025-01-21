@@ -27,3 +27,4 @@ If the backup fails, it will raise a ticket.
 ## Target
 
 It should be targeted on the group that is bound with a search via the role "Windows Server Backup."
+

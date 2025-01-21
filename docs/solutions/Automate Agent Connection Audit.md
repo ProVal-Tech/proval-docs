@@ -55,3 +55,4 @@ The solution is intended to monitor and display the duration machines were onlin
 
 **Q2: Why does the online or offline time sometimes appear greater than the total data collection time?**  
 **A2:** The `Days Since Data Collection` column may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. As a result, it is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`.
+

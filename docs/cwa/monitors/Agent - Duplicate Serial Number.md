@@ -29,3 +29,4 @@ It will list all the duplicate instances of the machines that are offline in Aut
 Global - Should be run without explicitly defined targets.
 
 **Note:** Not all machines have proper serial numbers. The SQL below attempts to filter out as many bad results as possible. For example, some SuperMicro PCs all use the same serial number "1234567890." This can lead to false positives. Please review the data for each device before taking action.
+

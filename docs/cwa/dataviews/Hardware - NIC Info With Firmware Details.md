@@ -24,3 +24,4 @@ This Dataview shows information about existing network adapters.
 | NIC Name        | Displays the Network adapter name.               |
 | Driver Name     | Displays the Network adapter driver name.        |
 | Driver Version  | Displays the Network adapter driver version.     |
+

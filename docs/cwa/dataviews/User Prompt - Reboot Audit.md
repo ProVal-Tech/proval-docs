@@ -44,3 +44,4 @@ The dataview tracks the functioning of the [User Prompt for Reboot](<../../solut
 | Global Prompt for Reboot Pending      | Is prompting enabled for computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
 | Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 5 times and the issue is still not resolved. |
 
+

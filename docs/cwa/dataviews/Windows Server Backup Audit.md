@@ -81,3 +81,4 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
+

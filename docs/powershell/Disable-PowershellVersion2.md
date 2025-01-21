@@ -30,3 +30,4 @@ This command checks for a version of PowerShell greater than v2. If one is prese
 ## Output
 - .\Disable-PowerShellVersion2-log.txt
 - .\Disable-PowerShellVersion2-error.txt
+

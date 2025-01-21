@@ -49,3 +49,4 @@ Modified by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-Cr
 | Dump_File_Time        | VARCHAR | The dump file time.                           |
 | Computer_Name         | VARCHAR | The computer name; sometimes not shown.       |
 | Processors_count      | INT     | The number of processors.                      |
+

@@ -51,3 +51,4 @@ Notifications for computers where the `Feature Update Install with Tracking` scr
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Reboot-Pending/image_10.png)
+

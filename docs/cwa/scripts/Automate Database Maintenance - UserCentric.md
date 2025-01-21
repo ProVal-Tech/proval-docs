@@ -35,3 +35,4 @@ This script will add the following section to the log variable:
 ![Output Section](../../../static/img/Automate-Database-Maintenance---UserCentric/image_1.png)
 
 Or data if applicable.
+

@@ -3,7 +3,7 @@ id: 'b493b3e6-8bd3-4578-bb2a-4f7c34a3b6bf'
 title: 'Managing Update Orchestrator'
 title_meta: 'Managing Update Orchestrator'
 keywords: ['update', 'orchestrator', 'management', 'deployment', 'monitoring']
-description: 'This document outlines a solution for managing and deploying ProVal's Update Orchestrator to prevent unintended patching and rebooting of machines. It details the use of a custom task, device group, and monitor to ensure controlled updates.'
+description: "This document outlines a solution for managing and deploying ProVal's Update Orchestrator to prevent unintended patching and rebooting of machines. It details the use of a custom task, device group, and monitor to ensure controlled updates."
 tags: ['deployment', 'windows']
 draft: false
 unlisted: false
@@ -35,5 +35,6 @@ This solution uses a custom task, a device group, and a custom monitor to manage
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
+
 
 

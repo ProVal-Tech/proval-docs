@@ -25,3 +25,4 @@ Marking this custom field will exclude the machines from [CW RMM - Machine Group
 
 ![Screenshot 1](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_2.png)  
+

@@ -24,3 +24,4 @@ This custom field is to be filled with the Huntress Tag. It is utilized by the [
 **Level:** Site  
 **Description:** Huntress Agent Tag. These could be simple keywords that can be used to group agents within the Huntress Organization.  
 **Editable:** Yes  
+

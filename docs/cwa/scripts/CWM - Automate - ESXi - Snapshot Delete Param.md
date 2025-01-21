@@ -88,3 +88,4 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to delete the Snapshot @SnapShotName@ from the virtual machine @VMName@. Please review manually.
 PowerShell script result: @psout@
 ```
+

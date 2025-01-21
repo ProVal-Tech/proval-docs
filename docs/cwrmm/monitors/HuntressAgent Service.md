@@ -50,3 +50,4 @@ This document provides instructions to set up alerts on machines if the Huntress
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![](../../../static/img/HuntressAgent-Service/image_9.png)  
+

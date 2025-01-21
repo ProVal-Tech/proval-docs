@@ -38,3 +38,4 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
    - Auto_RebootPendingCheck custom field equal to False.
    - The agent available is equal to True.
    - The OS contains any of Windows 10, Windows 11, Windows 2016 Server, Windows 2019 Server, and Windows 2022 Server.
+

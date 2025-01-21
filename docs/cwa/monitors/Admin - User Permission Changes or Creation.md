@@ -36,3 +36,4 @@ Details of the change are as follows:
 Thank you,  
 
 ![Image](../../../static/img/Admin---User-Permission-Changes-or-Creation/image_1.png)
+

@@ -28,3 +28,4 @@ The purpose of this document is to monitor the disk health of physical machines 
 - Create the task: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../cwrmm/tasks/Get Crystal Disk Info (Disk Health).md>)
 - Create the deployment schedule as described in this document: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../cwrmm/tasks/Get Crystal Disk Info (Disk Health).md>)
 - Create the monitor if necessary: [CW RMM - Monitor - Crystal Disk Info Health Status](<../cwrmm/monitors/Crystal Disk Info Health Status.md>)
+

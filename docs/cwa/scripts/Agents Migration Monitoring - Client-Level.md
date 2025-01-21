@@ -49,3 +49,4 @@ It is a client script that has to be set up to run on a regular basis, either da
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Agents-Migration-Monitoring---Client-Level/image_2.png)
+

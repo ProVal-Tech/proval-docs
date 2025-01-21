@@ -101,3 +101,4 @@ Optionally, if the client wants, we can enable ticketing to monitor the SMB1 tra
 ![Traffic Detection Ticketing](../../static/img/SMBv1AuditAutofix/image_4.png)
 
 Note: This should only be implemented if the consultant approves it.
+

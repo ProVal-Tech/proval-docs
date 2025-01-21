@@ -102,3 +102,4 @@ It appends data from that agnostic script to the created table.
    
 4. **I updated this script to its newest version, and now the script fails every time.**
    - Please set the refresh table to 'Yes' on the first run after a version upgrade of this script.
+

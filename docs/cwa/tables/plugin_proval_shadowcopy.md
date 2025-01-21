@@ -31,3 +31,4 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy e
 | ShadowCopyCount   | INT     | Indicates the number of Shadow Copies on the machine.                                          |
 | OldestShadowCopy  | VARCHAR | Contains the oldest available Shadow Copy date.                                               |
 | LatestShadowCopy  | VARCHAR | Contains the most recent available Shadow Copy date.                                           |
+

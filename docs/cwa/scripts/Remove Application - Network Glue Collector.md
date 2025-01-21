@@ -64,3 +64,4 @@ This script is built to perform the uninstallation of the Network Glue Collector
 
 **Example:**  
 ![Example](../../../static/img/Remove-Application---Network-Glue-Collector/image_2.png)
+

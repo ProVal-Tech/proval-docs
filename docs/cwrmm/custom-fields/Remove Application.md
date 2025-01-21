@@ -19,7 +19,7 @@ The custom field described below is used in the "Remove Application" script to g
 
 | Name                        | Level    | Type  | Default | Editable | Description                                                                                   |
 |-----------------------------|----------|-------|---------|----------|-----------------------------------------------------------------------------------------------|
-| Remove Application Result    | Endpoint | Text  |         | No       | It stores either 'Success' or 'Failure'.<br>**Success**: It means the application was removed successfully.<br>**Failure**: It means the application failed to remove. |
+| Remove Application Result    | Endpoint | Text  |         | No       | It stores either 'Success' or 'Failure'.<br/>**Success**: It means the application was removed successfully.<br/>**Failure**: It means the application failed to remove. |
 
 ## Steps to Create Custom Fields
 
@@ -45,3 +45,4 @@ The custom field described below is used in the "Remove Application" script to g
    ![Default Value and Description](../../../static/img/Remove-Application/image_13.png)  
 
    **Note**: The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
+

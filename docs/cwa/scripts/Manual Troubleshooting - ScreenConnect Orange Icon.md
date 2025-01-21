@@ -118,3 +118,4 @@ This should turn the ScreenConnect icon green, thereby resolving the problem.
 ## Note
 
 If the above-mentioned steps fail to resolve the problem, then you will have to access the computer manually and ensure that it is able to reach the ScreenConnect Web Portal.
+

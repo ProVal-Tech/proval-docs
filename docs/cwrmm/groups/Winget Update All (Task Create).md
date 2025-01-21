@@ -102,3 +102,4 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_27.png)  
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_28.png)
+

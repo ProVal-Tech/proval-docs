@@ -62,3 +62,4 @@ Gets all files in the Documents folder and all its subfolders for all users.
 System Array - Including the exact outputs you would receive by running Get-ChildItem.
 
 Log file: `.\Get-UserChildItem-log.txt`
+

@@ -26,7 +26,7 @@ This dataview provides information about an agent's check-in status in CWA and w
 | Client                        | Client Name                                                                                                          |
 | Location                      | Location Name                                                                                                        |
 | Computer                      | Computer Name                                                                                                        |
-| Status                        | Status of whether the agent is offline in Automate. <br> - Offline: The computer is offline in Automate as well as in ScreenConnect. <br> - Broken: The script ran against the agent but was not able to bring the Automate agent online. <br> - Undetermined: RMM+ Solution is not configured properly. <br> - Not Run Yet: The script has not been run against this agent yet. |
+| Status                        | Status of whether the agent is offline in Automate. <br/> - Offline: The computer is offline in Automate as well as in ScreenConnect. <br/> - Broken: The script ran against the agent but was not able to bring the Automate agent online. <br/> - Undetermined: RMM+ Solution is not configured properly. <br/> - Not Run Yet: The script has not been run against this agent yet. |
 | Last Contact                  | Last contact of the agent with the Automate server.                                                                 |
 | Last Contact ScreenConnect     | Last contact of the agent with the ScreenConnect Portal.                                                            |
 | Last Script Check             | Last run date of the [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>) on the agent. |
@@ -35,3 +35,4 @@ This dataview provides information about an agent's check-in status in CWA and w
 | Clientid                     | Client ID (Hidden)                                                                                                   |
 | Locationid                   | Location ID (Hidden)                                                                                                 |
 | Computerid                   | Computer ID (Hidden)                                                                                                 |
+

@@ -23,3 +23,4 @@ This script will reset the AD plugin for the Domain Controller (DC) it runs on.
 
 - Runs LabTech Command 13 to reset the AD plugin on the DC.
 - Runs another LabTech command "update plugins" to synchronize plugin data on the agent.
+

@@ -20,3 +20,4 @@ The registry key's value will be stored in the `Serial Number` column.
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Services/Netlogon/Parameters:RequireSeal-%} | Exists     |        | Windows        |
+

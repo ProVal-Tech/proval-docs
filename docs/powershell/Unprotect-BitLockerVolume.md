@@ -38,3 +38,4 @@ Disables BitLocker protection on all volumes.
 - `.\Unprotect-BitLockerVolume-log.txt`
 - `.\Unprotect-BitLockerVolume-data.txt`
 - `.\Unprotect-BitLockerVolume-error.txt`
+

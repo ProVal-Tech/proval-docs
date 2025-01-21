@@ -56,3 +56,4 @@ Please follow the instructions provided in the implementation article to impleme
 ![Example Image](../../../static/img/New-Local-Admin/image_3.png)
 
 **Automate will never close the ticket; instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+

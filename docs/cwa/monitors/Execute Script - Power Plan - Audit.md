@@ -34,3 +34,4 @@ The alert template should execute the [EPM - Data Collection - Script - Power Pl
 
 ![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_3.png)  
 
+

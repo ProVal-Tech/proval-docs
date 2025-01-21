@@ -36,3 +36,4 @@ The purpose of this solution is to provide an option to install different Cisco 
      - [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>)
        - Set up with the alert template "`△ Custom - Execute Script - Cisco Secure Client - Package Installation`".
        - Right-click and select "Run Now" to start the monitor.
+

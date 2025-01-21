@@ -29,3 +29,4 @@ This document holds the current ConnectWise Control agent online status for each
 | Online              | TINYINT(1)   | Holds the online status of the computer in ConnectWise Control agent.                         |
 | LastConnectedDate   | DATETIME     | Holds the last connected date of the ConnectWise Control agent.                               |
 | SCName              | VARCHAR(50)  | Holds the computer name as displayed in the ConnectWise Control portal for that agent.       |
+

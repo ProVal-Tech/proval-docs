@@ -20,3 +20,4 @@ See the solution for full details: [https://proval.itglue.com/DOC-5078775-127544
 | Field Name                  | Type of Field (Machine or Organization) | Description                                                    |
 |-----------------------------|-----------------------------------------|----------------------------------------------------------------|
 | cPVALEgnyteReboot          | Machine                                 | Designates whether the machine needs to be rebooted following Egnyte installation. |
+

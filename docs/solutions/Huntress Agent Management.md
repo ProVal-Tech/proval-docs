@@ -65,3 +65,4 @@ Configure the solution as outlined below:
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](<../cwa/monitors/Deploy Huntress Agent.md>) internal monitor.  
 ![Image](../../static/img/Huntress-Agent-Management/image_3.png)
+

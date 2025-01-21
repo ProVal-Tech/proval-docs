@@ -18,3 +18,4 @@ An email must be specified on line 7 of the script.
 An email notification will be sent if vulnerabilities or attack traces are found. No notification will be sent if no threats exist.
 
 ![Image](../../../static/img/Log4J-Scan-and-Remediation/image_1.png)
+

@@ -20,3 +20,4 @@ This internal monitor detects the agent where the "Bitlocker Fully Decrypted - S
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
+

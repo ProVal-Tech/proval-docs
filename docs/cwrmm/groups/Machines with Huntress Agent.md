@@ -33,3 +33,4 @@ After adding the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Machines-with-Huntress-Agent/image_3.png)
 
 ![Image](../../../static/img/Machines-with-Huntress-Agent/image_4.png)
+

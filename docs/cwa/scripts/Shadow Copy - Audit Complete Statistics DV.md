@@ -50,3 +50,4 @@ Finally, the script will run the SQL statement against the Automate server to in
 - Script logs.
 - Custom table [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>).
 - Dataview [Dataview - Windows - Shadow Copy State [Script]](<../dataviews/Windows - Shadow Copy State Script.md>).
+

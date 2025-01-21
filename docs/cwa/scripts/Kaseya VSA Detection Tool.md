@@ -39,3 +39,4 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 - Script log
 - Script state
 - Dataview
+

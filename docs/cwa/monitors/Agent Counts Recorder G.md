@@ -20,3 +20,4 @@ The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom ta
 ## Target
 
 Global
+

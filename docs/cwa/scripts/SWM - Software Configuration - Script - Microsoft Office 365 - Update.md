@@ -61,3 +61,4 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_2.png)
+

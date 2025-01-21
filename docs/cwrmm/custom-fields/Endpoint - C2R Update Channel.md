@@ -23,3 +23,4 @@ This document explains how to update the channel of the Office installed on a ma
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Update-Channel/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Update-Channel/image_2.png)
+

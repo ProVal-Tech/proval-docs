@@ -33,7 +33,7 @@ Select `Run Now` and click on `Run Task`:
 
 | Name          | Example                                         | Required | Description                                                                                      |
 |---------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------------|
-| TargetUri     | [https://www.google.com/](https://www.google.com/) | True     | The target path of the shortcut. This can be a local or web URI. Must begin with '\\<DRIVE_LETTER>:/', 'Https://', or 'http://' |
+| TargetUri     | [https://www.google.com/](https://www.google.com/) | True     | The target path of the shortcut. This can be a local or web URI. Must begin with '\<DRIVE_LETTER>:/', 'Https://', or 'http://' |
 | ShortcutName  | Google                                          | False    | The optional name of the shortcut being set. If not provided, the file name or DnsSafeHost property will be used as the shortcut name. |
 | IconLocation   | --                                             | False    | Optionally set an *.ico file as the shortcut icon.                                            |
 
@@ -135,15 +135,15 @@ Copy the below PowerShell commands and paste them in the `PowerShell Script Edit
 $TargetUri = '@TargetUri@'
 $ShortcutName = '@ShortcutName@'
 $IconLocation = '@IconLocation@'
-$Parameters = @{}
+$Parameters = @\{}
 
-if (($IconLocation -match '//.ico$')) {
+if (($IconLocation -match '//.ico$')) \{
     $Parameters['IconLocation'] = $IconLocation
 }
 
-if ($TargetUri -match ':') {
+if ($TargetUri -match ':') \{
     $Parameters['TargetUri'] = $TargetUri
-} else {
+} else \{
     throw 'Invalid Target'
 }
 
@@ -164,29 +164,29 @@ $ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
+if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) \{
     throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
+} elseif ($response.StatusCode -eq 200) \{
     Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
 }
-if (!(Test-Path -Path $PS1Path)) {
+if (!(Test-Path -Path $PS1Path)) \{
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
 
 #region Execution
-if ($Parameters) {
+if ($Parameters) \{
     & $PS1Path @Parameters
-} else {
+} else \{
     & $PS1Path
 }
 #endregion
 
-if (!(Test-Path $LogPath)) {
+if (!(Test-Path $LogPath)) \{
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
+if (Test-Path $ErrorLogPath) \{
     $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
@@ -230,3 +230,5 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
+
+

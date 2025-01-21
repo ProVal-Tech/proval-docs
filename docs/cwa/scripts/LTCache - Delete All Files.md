@@ -34,3 +34,4 @@ This script will clean up the LT caching folder.
 ## Output
 
 - Script log
+

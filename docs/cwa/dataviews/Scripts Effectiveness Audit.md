@@ -30,3 +30,4 @@ This Dataview displays a summary of all scripts run over the set script log rete
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Scripts-Effectiveness-Audit/image_2.png)
+

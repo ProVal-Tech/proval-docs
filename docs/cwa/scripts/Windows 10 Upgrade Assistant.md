@@ -38,3 +38,4 @@ If the process for the Windows 10 app exists, the script will exit successfully,
 ## Output
 
 - Script log messages only
+

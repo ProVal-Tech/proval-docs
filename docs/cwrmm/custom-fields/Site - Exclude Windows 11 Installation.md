@@ -23,3 +23,4 @@ Mark this custom field to exclude the endpoints of this site from the Windows 10
 
 ![Screenshot 1](../../../static/img/Site---Exclude-Windows-11-Installation/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---Exclude-Windows-11-Installation/image_2.png)
+

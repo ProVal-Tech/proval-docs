@@ -23,3 +23,4 @@ The Windows 11 compatibility check indicates whether the computer meets the requ
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Compatible/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Compatible/image_2.png)
+

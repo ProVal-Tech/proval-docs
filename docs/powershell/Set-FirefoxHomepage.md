@@ -33,3 +33,4 @@ Location of output for log, result, and error files.
 ```
 .\Set-FirefoxHomepage-log.txt
 ```
+

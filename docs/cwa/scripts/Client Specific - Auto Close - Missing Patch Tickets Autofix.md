@@ -30,3 +30,4 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
 | SQLTicketid | Ticket ID to finish/close                         |
+

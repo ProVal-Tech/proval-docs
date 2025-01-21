@@ -40,3 +40,4 @@ The script, [Create View plugin_proval_auto_approval_status](<../scripts/View - 
 | Examined Characteristics - By Titles             | text     | List of the titles that are either approved, denied, or ignored.                                          |
 | Examined Characteristics - CVSS Status           | varchar  | Whether the patches are approved on the basis of CVSS score or not.                                      |
 | Examined Characteristics - CVSS >                | varchar  | CVSS score above which auto-approval of patches is applied.                                              |
+

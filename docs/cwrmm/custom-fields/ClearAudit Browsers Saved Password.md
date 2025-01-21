@@ -47,3 +47,4 @@ The custom fields described here are used in the creation of [Dynamic Groups - B
    Once the custom fields are created, please validate them by searching for them in the search input text field provided in the custom fields:  
    ![Search Custom Fields](../../../static/img/ClearAudit-Browsers-Saved-Password/image_4.png)  
    It will show you the custom fields you created.
+

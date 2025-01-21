@@ -57,3 +57,4 @@ The script conducts an audit of the computer for applications supported by Winge
 - Script log
 - Custom table
 - Dataview
+

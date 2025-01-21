@@ -28,3 +28,4 @@ This document stores individual patch information per computer and their install
 | Title       | VARCHAR  | The title of the audited patch.                      |
 | Result      | VARCHAR  | The current installation status of the audited patch.|
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
+

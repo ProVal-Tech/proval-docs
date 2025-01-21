@@ -114,3 +114,4 @@ The script attempted to ensure that the approved users/groups (@Approved_Members
 
 **Note:** Set a Ticket Category to the [ProVal - Production - Local Admin Group Cleanup](https://proval.itglue.com/5078775/docs/16783515) monitor set to enable the ticket creation feature of the script.  
 ![Ticketing Note](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_12.png)
+

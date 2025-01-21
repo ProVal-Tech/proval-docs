@@ -46,3 +46,4 @@ The script takes a string parameter to define the URL to set the homepage. The a
 
 - Script log
 - Local file on computer
+

@@ -23,3 +23,4 @@ This document provides an overview of patching jobs and the total patching hours
 | Number of Patch Jobs Last 30 Days  | Number of patch jobs per client in the last 30 days      |
 | Sum of Patching Hours Last 30 Days | Sum of patching hours per client in the last 30 days     |
 | Total Patch Duration               | Total patch duration per client in the last 30 days      |
+

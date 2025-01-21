@@ -24,3 +24,4 @@ Global
 ## Alert Template
 
 Name: `△ Custom - PowerPlan Automation`
+

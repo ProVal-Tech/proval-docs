@@ -34,3 +34,4 @@ The purpose of the script is to finish the new or open tickets created by the fe
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticket ID to finish/close                       |
+

@@ -31,3 +31,4 @@ The goal of this solution is to detect and disable NTLMv1.1.
 - Import - [Script - Disable NTLMv1.1](<../cwa/scripts/Disable NTLMv1.1.md>).
   - This script can be used as an auto-fix with the [Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>) or can also be executed manually.
   - If the auto-fix is needed, import the alert template: `△ Custom - Autofix - Disable NTLMv1.1`.
+

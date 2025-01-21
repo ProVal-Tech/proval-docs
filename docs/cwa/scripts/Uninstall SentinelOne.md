@@ -26,3 +26,4 @@ This document provides a script designed to uninstall the SentinelOne agent from
 ## Output
 
 - Script log
+

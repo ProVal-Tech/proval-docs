@@ -30,3 +30,4 @@ Use the dropdown menu to enable or disable the autofix on the endpoint. This set
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_2.png)  
+

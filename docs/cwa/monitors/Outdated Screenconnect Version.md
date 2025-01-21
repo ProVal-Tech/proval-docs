@@ -27,3 +27,4 @@ Globally (both on Windows and Mac machines)
 ## Ticketing
 
 The tickets will be created by the [CWM - Control - Script - Update ScreenConnect Version](<../scripts/Update Screenconnect Version.md>) script.
+

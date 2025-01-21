@@ -26,3 +26,4 @@ The script runs the appropriate PowerShell command to remove the "Automate Agent
 ## Output
 
 - Script log
+

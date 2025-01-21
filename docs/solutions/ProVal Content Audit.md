@@ -24,3 +24,4 @@ This solution provides a way to audit the scripts, internal monitors, and datavi
 ## Implementation
 
 Import the [CWM - Automate - Dataview - ProVal Internal Monitor Audit](<../cwa/dataviews/ProVal Internal Monitor Audit.md>), [CWM - Automate - Dataview - ProVal Dataview Audit](<../cwa/dataviews/ProVal Dataview Audit.md>), and [CWM - Automate - Dataview - ProVal Script Audit](<../cwa/dataviews/ProVal Script Audit.md>) dataviews into the client's environment. No additional setup is required.
+

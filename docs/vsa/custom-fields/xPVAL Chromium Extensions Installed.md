@@ -23,3 +23,4 @@ This document lists all Chromium extensions installed on the endpoint.
 | Field Name                           | Type of Field (Machine or Organization) | Description                                   |
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
 | xPVAL Chromium Extensions Installed   | Machine                                 | Lists all Chromium extensions installed on the endpoint |
+

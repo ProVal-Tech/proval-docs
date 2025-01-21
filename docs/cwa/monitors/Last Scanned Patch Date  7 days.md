@@ -20,3 +20,4 @@ The monitor set will look for machines where the patch inventory is older than 7
 ## Target
 
 Global - Should be run without explicitly defined targets. The SQL will target machines with patching policies automatically.
+

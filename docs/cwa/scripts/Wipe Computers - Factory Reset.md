@@ -37,3 +37,4 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
+

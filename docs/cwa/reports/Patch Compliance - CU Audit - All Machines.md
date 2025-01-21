@@ -20,3 +20,4 @@ This report is dependent on the following items:
 - Report Center being installed and configured
 - [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696)
 - [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104)
+

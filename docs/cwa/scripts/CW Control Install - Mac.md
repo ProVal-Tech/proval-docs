@@ -41,3 +41,4 @@ The script will perform a fresh installation or a removal and reinstallation of 
 ## Output
 
 - Script Logs
+

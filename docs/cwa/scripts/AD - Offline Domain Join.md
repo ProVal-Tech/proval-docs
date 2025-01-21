@@ -35,3 +35,4 @@ This script joins a machine to a domain while it is not connected to the same ne
 ## Output
 
 - Script log
+

@@ -29,3 +29,4 @@ This monitor checks several tables created by ProVal and updates permissions on 
 ## Target
 
 - Global - Should be run without explicitly defined targets.
+

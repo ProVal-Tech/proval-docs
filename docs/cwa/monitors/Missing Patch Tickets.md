@@ -91,3 +91,4 @@ WHERE
 ```
 
 **Note:** Ensure that the [CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]](../scripts/Client Specific - Auto Close - Missing Patch Tickets Autofix.md) script is imported before creating the alert template.
+

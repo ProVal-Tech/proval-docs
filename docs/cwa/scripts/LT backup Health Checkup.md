@@ -49,3 +49,4 @@ This script detects whether the LT backup ran successfully by checking the backu
 
 - Script log
 - Email
+

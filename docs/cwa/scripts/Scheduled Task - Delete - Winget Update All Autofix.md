@@ -32,3 +32,4 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
+

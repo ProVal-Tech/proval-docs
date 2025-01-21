@@ -35,3 +35,4 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 **Computer-Level Ticket:**  
 ![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
+

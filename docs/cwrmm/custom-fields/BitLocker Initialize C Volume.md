@@ -24,3 +24,4 @@ This document contains the custom field details linked to the Bitlocker Initiali
 | Bitlocker XTSAES 256        | Flag | Company  | No            | Yes      | This custom field requires the 'Bitlocker Monitoring' company custom field to be checked first. If this is also checked, then the BitLocker setting will be applied to the system volume with the encryption method 'XtsAes256'. |
 | ACP BitLocker Init Result    | Text | Endpoint |               | No       | This custom field stores the output of the Bitlocker script. It records 'Failure' when the script generates an error log file or fails to generate a log file; otherwise, it records 'Success'. |
 
+

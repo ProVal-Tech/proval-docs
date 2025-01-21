@@ -25,3 +25,4 @@ This custom field is used to store Windows PowerShell version information about 
 - **Level:** Endpoint
 - **Description:** Will provide the PS version on the machine
 - **Editable:** No
+

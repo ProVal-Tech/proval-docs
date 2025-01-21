@@ -22,3 +22,4 @@ The "△ Custom - Email RAWSQL Monitor set results to ProVal" alert template sho
 ## Target
 
 Global - This should be run without explicitly defined targets.
+

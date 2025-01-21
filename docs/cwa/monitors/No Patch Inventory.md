@@ -16,3 +16,4 @@ This Internal Monitor detects machines where the patch inventory shows zero avai
 ## Target
 
 Global
+

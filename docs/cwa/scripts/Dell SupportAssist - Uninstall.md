@@ -26,3 +26,4 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
+

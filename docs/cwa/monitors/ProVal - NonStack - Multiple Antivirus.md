@@ -23,7 +23,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------|------------|----------|--------|
-| System       | Default        | Run File `C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-CimInstance -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct).count -gt 1) { return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender' ).count } else { return }"` | Less Than | 2 |  |
+| System       | Default        | Run File `C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-CimInstance -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct).count -gt 1) \{ return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender' ).count } else \{ return }"` | Less Than | 2 |  |
 
 ## Requirements
 
@@ -53,3 +53,5 @@ The intended target of this monitor is Windows-based machines that have had at l
 ```
 return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
+
+

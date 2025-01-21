@@ -31,3 +31,4 @@ This document displays potential Log4J/Log4Shell vulnerabilities based on the fo
 | Product       | The name of the possibly affected application as it appears in the GitHub table.                         |
 | Status        | The status of the application as of the last run of [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import%20Log4Shell%20Table.md>) |
 | Links         | Links to information about the affected application.                                                    |
+

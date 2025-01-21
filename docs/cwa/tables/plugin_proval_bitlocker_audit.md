@@ -43,3 +43,4 @@ Stores information about BitLocker configuration on target machines.
 | KeyCertificateType        | VARCHAR   | The certificate type of the key protector (if applicable).                                                                    |
 | Thumbprint                | VARCHAR   | The thumbprint of the key protector (if applicable).                                                                         |
 | LastUpdated               | DATETIME  | The last time the volume was audited.                                                                                         |
+

@@ -37,3 +37,4 @@ This script will install the Cisco AnyConnect application on Mac agents.
 ## Output
 
 - Script log
+

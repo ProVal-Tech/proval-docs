@@ -22,3 +22,4 @@ The primary purpose of this script is to insert the latest version of the [SEC -
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---Table---Create-(plugin_proval_windows_os_support)/image_1.png)
+

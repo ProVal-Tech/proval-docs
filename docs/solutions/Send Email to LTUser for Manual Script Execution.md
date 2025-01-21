@@ -51,3 +51,4 @@ It is important to note that this solution will send an email for every script i
 
 Remove or comment out the last line in the additional condition of the monitor to disable receiving emails for successful script executions and limit the monitor sets to script failures only.  
 ![Customization Example](../../static/img/Send-Email-to-LTUser-for-Manual-Script-Execution/image_2.png)
+

@@ -28,3 +28,4 @@ The custom table stores the data gathered by the [Script - Get MSSQL Database Ve
 | Version       | Varchar  | Version of the Database Instance     |
 | PatchLevel    | Varchar  | Patch Level of the Database Instance |
 | ScriptRunTime | DateTime | Data Collection Time                 |
+

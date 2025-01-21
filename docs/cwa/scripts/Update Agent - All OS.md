@@ -23,3 +23,4 @@ The script pulls the highest agent version in the environment and attempts to up
 
 - The script runs SQL to pull the highest agent version in the environment and attempts to update the agent using those parameters.
 - The script is intended to be used with ProVal – Production – Agent – Out of Date.
+

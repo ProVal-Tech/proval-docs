@@ -37,3 +37,4 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank you!
+

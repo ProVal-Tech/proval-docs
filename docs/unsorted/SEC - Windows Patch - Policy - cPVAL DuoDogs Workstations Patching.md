@@ -33,3 +33,4 @@ Provide the configuration of the profile using the following templates based on 
 - Patch Windows Automatic Updates for workstations: Every week on Tuesday at 10:00 PM in the machine's time zone, with a skip if offline, and the distribution hours are 2 hours.
 - Patch reboot action is as follows: If the user is logged in, ask for permission. Do nothing if there is no response within 60 minutes. Reboot if the user is not logged in.
 - Windows Automatic Updates are disabled.
+

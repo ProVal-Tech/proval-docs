@@ -20,3 +20,4 @@ For each client, edit the procedure and change the **Email** global variable to 
 
 Save the procedure.  
 Log the deployment in the tracker located here: [Deployment Tracker](https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG)
+

@@ -46,3 +46,4 @@ INSERT IGNORE INTO `groupagents` (`AgentID`, `GroupID`, `SearchID`, `Name`, `Che
 ![Image](../../../static/img/RDS-Hosts---Allow-New-Connections-Status/image_1.png)
 
 - This needs to be changed to the "Default - Create Automate Ticket" or any other template that the client needs, such as emailing or ticket creation.
+

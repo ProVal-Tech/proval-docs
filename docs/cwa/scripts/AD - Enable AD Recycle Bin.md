@@ -67,3 +67,4 @@ The PC information is outlined below:
 ### Outdated
 
 `The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. The minimum version required is above 3.0, and the current version is @PSVersion@.`  
+

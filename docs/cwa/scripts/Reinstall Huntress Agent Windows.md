@@ -54,3 +54,4 @@ This script can be used to reinstall the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
+

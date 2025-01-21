@@ -94,3 +94,4 @@ Remote monitors will be set up on computers where the [SMB1 Detection](<../monit
 ## Output
 
 - Remote Monitors
+

@@ -51,3 +51,4 @@ This document outlines how to set up alerts for computers where the `Feature Upd
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Failure/image_12.png)
+

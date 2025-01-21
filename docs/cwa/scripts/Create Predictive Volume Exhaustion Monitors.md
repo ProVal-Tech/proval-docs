@@ -71,3 +71,4 @@ The script writes and passes the required variables to the Execute Script step. 
 
 - Script log
 - Local file on computer
+

@@ -51,3 +51,4 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
+

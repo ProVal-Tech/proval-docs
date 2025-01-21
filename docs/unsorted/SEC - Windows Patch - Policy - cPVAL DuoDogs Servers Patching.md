@@ -36,3 +36,4 @@ Provide the configuration of the profile using the following templates based on 
 - Patch Windows Automatic Update: Servers will be patched every week on Saturday at 10:30 PM according to the machine's time zone, with a "Skip if offline" option and a distribution window of 1 hour.
 - Patch reboot action: If a user is logged in, ask for permission. Do nothing if there is no response in 15 minutes. Reboot if the user is not logged in.
 - Windows Automatic Update is disabled.
+

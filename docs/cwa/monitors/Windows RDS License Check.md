@@ -42,3 +42,4 @@ Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Li
 **Failure:** We have detected a licensing issue with your RDS Licensing Server. The possibilities are that either the license is misconfigured or has expired. Please check.  
 
 **Success:** The license issue has been resolved.
+

@@ -219,3 +219,4 @@ This document outlines the process for creating Remote Monitors for Critical Dri
 42. Navigate to the 'Scheduled Scripts' section from the 'Computers' tab and verify that the duplicated script (`Agent Maintenance - Contract [Modified]*`) is appearing here.  
     ![Image](../../../static/img/Critical-Drive-Space-Monitor-Creation/image_80.png)
 43. For each group identified in the screenshot from Step 33, navigate to the 'Scheduled Scripts' section from the 'Computers' tab and verify that the duplicated script (`Agent Maintenance - Contract [Modified]*`) is appearing. Repeat this process for all relevant groups.
+

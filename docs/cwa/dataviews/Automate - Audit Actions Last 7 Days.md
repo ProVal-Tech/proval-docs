@@ -21,3 +21,4 @@ This Dataview provides the audit activities of the users in Automate for the las
 | Audit Action | Displays the action performed by the user      |
 | Message      | Displays the exact message of what was done    |
 | HistoryDate  | Displays the date of the action taken by the user |
+

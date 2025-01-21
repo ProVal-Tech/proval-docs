@@ -29,3 +29,4 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 
 - [EPM - Sensors - Script - CPU Temperature Monitor - Create](<./CPU Temperature Monitor - Create.md>)
 - [EPM - Sensors - Remote Monitor - CPU Temperature Monitoring Process](<../monitors/CPU Temperature Monitoring Process.md>)
+

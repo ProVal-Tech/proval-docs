@@ -73,3 +73,4 @@ This document groups computers where a Cumulative Update was installed by the Ou
 
 ![Completed Group 1](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_20.png)  
 ![Completed Group 2](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_21.png)
+

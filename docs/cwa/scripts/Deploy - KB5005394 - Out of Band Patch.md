@@ -48,3 +48,4 @@ The script will install KB5005394 - Out of Band Patch only if it is not already 
 
 - Script log
 - Script state
+

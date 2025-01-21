@@ -32,3 +32,4 @@ This script upgrades Java to the latest version of Java 8.
 ## Output
 
 - Script log
+

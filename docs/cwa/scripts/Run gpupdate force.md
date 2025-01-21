@@ -26,3 +26,4 @@ This script runs `gpupdate /force` on the target Windows machine.
 ## Output
 
 - Script log
+

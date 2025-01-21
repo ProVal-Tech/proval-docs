@@ -44,3 +44,4 @@ The agent procedure requires no customization.
 `%SystemRoot%/temp/HuntressPoShInstaller.log`  
 `%TEMP%/HuntressPoShInstaller.log`  
 Agent Procedure Log
+

@@ -27,3 +27,4 @@ This data view shows detailed security information about Automate users.
 | Email                     | Email address of the user                                 |
 | Assigned Groups           | Names of the assigned groups                              |
 | Assigned Clients          | Names of the assigned clients                             |
+

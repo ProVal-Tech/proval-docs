@@ -40,3 +40,4 @@ This dataview shows newly created accounts. It can be used for auditing accounts
 | New Account Disable Status    | Indicates whether the new account is disabled or not (No Action Taken - if this feature is not chosen in the script) |
 | New Account Approved         | Indicates whether the new account is approved after verification (No Action Required - Since disable is not enabled, it will show that approval is not required) |
 | New Account Approved Date    | Shows when the account was approved to be enabled.                          |
+

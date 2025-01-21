@@ -20,3 +20,4 @@ This internal monitor checks machines for any installed antivirus software, but 
 ## Target
 
 - Global — Should be run without explicitly defined targets.
+

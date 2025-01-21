@@ -75,3 +75,4 @@ The group contains the computers where the solution to disable FastBoot is enabl
 
 ![Completed Group 1](../../../static/img/Disable-FastBoot/image_12.png)  
 ![Completed Group 2](../../../static/img/Disable-FastBoot/image_13.png)
+

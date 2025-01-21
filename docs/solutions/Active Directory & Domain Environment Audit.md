@@ -239,3 +239,4 @@ This article encompasses multiple components and contents. Please import and imp
    - Import the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
+

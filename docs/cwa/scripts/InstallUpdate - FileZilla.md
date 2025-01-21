@@ -9,19 +9,12 @@ draft: false
 unlisted: false
 ---
 
-<div class='text-section scrollable'>
 This script will install and update the FileZilla Client to the latest version as per the configuration done in the `Globals and Parameters` tab.
 
 This does not support the update or installation of the Pro version of the app.
 
-## Sample Run 
-
-<div class='text-section scrollable'>
-<img src="5078775/docs/16947890/images/25986491" style="display: inline-block;">
-
 ## Global Parameters 
 
-<div class='text-section scrollable'>
 The values for `DownloadURL` and `LatestVersion` need to be changed in the document when a new value is saved in the script.
 
 | Name          | Default                                                                                                                                                         | Description                                         |
@@ -29,7 +22,3 @@ The values for `DownloadURL` and `LatestVersion` need to be changed in the docum
 | AppName       | FileZilla                                                                                                                                                      | Name of the application to be installed              |
 | DownloadURL   | [https://dl4.cdn.filezilla-project.org/client/FileZilla_3.67.1_win64-setup.exe?h=c_gyFJN0ps6LRwpPixt0Cg&amp;x=1725021044](https://dl4.cdn.filezilla-project.org/client/FileZilla_3.67.1_win64-setup.exe?h=c_gyFJN0ps6LRwpPixt0Cg&amp;x=1725021044) | Download URL of the application. This URL can be updated if FileZilla releases a new stable version of the application. This URL will download version 3.67.1. |
 | LatestVersion  | 3.67.1                                                                                                                                                         | The version that is going to be downloaded and installed. |
-
-<img src="5078775/docs/16947890/images/25986489" style="display: inline-block;">
-</div>
-</div>

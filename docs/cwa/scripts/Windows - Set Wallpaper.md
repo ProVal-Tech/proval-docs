@@ -39,3 +39,4 @@ This document outlines how to set the active desktop wallpaper for all users fro
 ```
 C:/ProgramData/_automation/script/Set-Wallpaper/Set-Wallpaper-log.txt
 ```
+

@@ -46,3 +46,4 @@ This document outlines the process for creating a dynamic group specifically for
 
 ![Image](../../../static/img/Windows-10-Machines/image_11.png)  
 ![Image](../../../static/img/Windows-10-Machines/image_12.png)
+

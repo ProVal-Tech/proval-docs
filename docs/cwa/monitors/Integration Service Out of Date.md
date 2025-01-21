@@ -27,7 +27,7 @@ Insert the details of the monitor in the table below.
 
 | **Execute Info**                                               |
 |---------------------------------------------------------------|
-| C:/Windows/system32/cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq 'Update required')} | Foreach-Object {Write-Host \"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)\"}} catch {}" |
+| C:/Windows/system32/cmd.exe /c powershell.exe "try\{ Get-VM | Where-Object \{($_.IntegrationServicesState -eq 'Update required')} | Foreach-Object \{Write-Host \"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)\"}} catch \{}" |
 
 ## Dependencies
 
@@ -41,3 +41,5 @@ Insert the details of the monitor in the table below.
 
 Please follow the article below for the implementation:  
 [Implementation Article](https://proval.itglue.com/5078775/docs/15601869)
+
+

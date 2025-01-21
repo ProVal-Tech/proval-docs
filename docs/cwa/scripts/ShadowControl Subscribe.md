@@ -36,3 +36,4 @@ The script will run a command-line argument against the `stccmd` application on 
 ## Output
 
 Script log messages only.
+

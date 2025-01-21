@@ -97,3 +97,4 @@ Consider scheduling the new client script to execute every two hours.
 ## Sample Ticket
 
 ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_18.png)
+

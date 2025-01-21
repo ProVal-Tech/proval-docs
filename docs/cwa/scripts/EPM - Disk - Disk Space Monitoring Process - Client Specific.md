@@ -59,3 +59,4 @@ The following steps are performed:
 ## Output
 
 The script logs all messages to the script log.
+

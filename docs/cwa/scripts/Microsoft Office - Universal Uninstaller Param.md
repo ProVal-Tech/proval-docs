@@ -41,3 +41,4 @@ This script is designed to run manually on Windows machines as per requirement. 
 
 - Script log  
 - Local file on computer
+

@@ -44,3 +44,4 @@ The system object will contain:
 ## Output
 - `.\Get-CWControlAgentSession-log.txt`
 - `.\Get-CWControlAgentSession-error.txt`
+

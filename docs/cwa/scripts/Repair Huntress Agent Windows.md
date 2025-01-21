@@ -54,3 +54,4 @@ This script can be used to repair the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
+

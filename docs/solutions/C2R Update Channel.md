@@ -103,3 +103,4 @@ Confirm with a consultant before enabling the Automation.
 - **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](<../cwa/monitors/Execute Script - Update Channel - Set - Monthly Enterprise.md>)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
+

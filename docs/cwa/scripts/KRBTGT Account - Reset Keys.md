@@ -37,3 +37,4 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Res
 
 - Script log
 - Local file on the computer
+

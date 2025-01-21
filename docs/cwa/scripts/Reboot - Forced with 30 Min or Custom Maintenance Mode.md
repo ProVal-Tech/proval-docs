@@ -48,3 +48,4 @@ The script will then issue a Windows CLI command to restart the device and exit 
 ## Output
 
 Script log messages
+

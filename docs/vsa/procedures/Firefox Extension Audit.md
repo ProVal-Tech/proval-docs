@@ -66,3 +66,4 @@ Runs the agnostic script to collect Firefox extensions installed on an endpoint.
 
 - Agent Procedure Log
 - Custom Field: xPVAL Firefox Extensions Installed
+

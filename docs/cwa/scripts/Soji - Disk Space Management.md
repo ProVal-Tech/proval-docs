@@ -41,3 +41,4 @@ Please refer to the Soji documentation for argument options.
 - Script log
 - Desired file output to the Soji directory, e.g., JSON, etc.
 - On LabTech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %ComputerId%/SojiLogs.zip`
+

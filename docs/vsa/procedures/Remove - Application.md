@@ -20,3 +20,4 @@ This agent procedure is designed as a template and is meant to be exported.
 ![Image](../../../static/img/Remove---Application/image_1.png)  
 The agent procedure can be customized to fit the needs of various uninstalls. There are four variables within this agent procedure. See the usage for these below.  
 
+

@@ -35,3 +35,4 @@ The purpose of this solution is to identify instances where computers are utiliz
   ![Image](../../static/img/Sentinel-One-Settings-Verification/image_8.png)  
 - Execute the script against a few random machines with Sentinel One installed and ensure that it's delivering as expected.
 - Implement the alert template to the internal monitor.
+
