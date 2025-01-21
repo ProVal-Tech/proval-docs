@@ -1,7 +1,7 @@
 ---
 id: 'd0046b61-191d-4974-89f5-4afb3f0e4824'
-title: 'BitLocker Enabling on Endpoints'
-title_meta: 'BitLocker Enabling on Endpoints'
+title: 'Bitlocker Initialize C Volume'
+title_meta: 'Bitlocker Initialize C Volume'
 keywords: ['bitlocker', 'encryption', 'tpm', 'reboot', 'monitoring']
 description: 'This document outlines a solution for enabling BitLocker on endpoints, including options for encryption methods and TPM control. It includes associated content such as scripts, custom fields, and monitors to ensure effective deployment and management of BitLocker encryption.'
 tags: ['encryption', 'security', 'setup', 'windows']
@@ -28,4 +28,6 @@ This solution enables BitLocker on the endpoints. It features control over the e
 - Create the [Machine Group - BitLocker Initialize](<../cwrmm/groups/BitLocker Initialize.md>)
 - Create the [Script - BitLocker Initialize C Volume](<../cwrmm/tasks/CW RMM Script - BitLocker Initialize C Volume.md>) and follow the deployment instructions
 - Create the [Monitor - BitLocker Initialize Failure Detection](<../cwrmm/monitors/BitLocker Initialize Failure Detection.md>) and follow the deployment instructions.
+
+
 

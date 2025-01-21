@@ -1,7 +1,7 @@
 ---
 id: 'ce5e9466-a5c3-487a-a9b7-5d204093e73e'
 title: 'Add Wi-Fi Profile'
-title_meta: 'Add Wi-Fi Profile for Windows Computers'
+title_meta: 'Add Wi-Fi Profile'
 keywords: ['wifi', 'profile', 'windows', 'script', 'connectwise']
 description: 'This document provides a detailed implementation guide for the Add-WifiProfile script in ConnectWise RMM, allowing users to manually add Wi-Fi profiles to Windows computers. It includes setup instructions, user parameters, task creation steps, and sample runs.'
 tags: ['networking', 'security', 'setup', 'windows']
@@ -319,4 +319,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 

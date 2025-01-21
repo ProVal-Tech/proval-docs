@@ -1,7 +1,7 @@
 ---
 id: 'e4a1a60d-1e35-4336-a1a3-28e2ffb12855'
-title: 'Child of Solution'
-title_meta: 'Child of Solution - Data Collection for Unifi Controller'
+title: 'plugin_proval_unifiwireless'
+title_meta: 'plugin_proval_unifiwireless'
 keywords: ['network', 'controller', 'data', 'unifi', 'site', 'security', 'wireless', 'passphrase']
 description: 'This document outlines the structure and purpose of the Child of Solution, which holds network data for each Unifi Controller. It includes essential dependencies and a detailed table of the data fields associated with the Unifi wireless networks.'
 tags: ['database', 'security', 'unifi', 'wireless']
@@ -37,4 +37,6 @@ This document holds network data for each controller listed in [EPM - Data Colle
 | IsGuest       | String | True if the network is a guest network; otherwise, false.                                          |
 | Security      | String | The security platform being used by the network.                                                  |
 | WPAMode       | String | The WPA mode being used by the network.                                                            |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5'
-title: 'Creating a Dynamic Group for Windows 11 Compatibility'
-title_meta: 'Creating a Dynamic Group for Windows 11 Compatibility'
+title: 'Windows 11 Compatible Machines'
+title_meta: 'Windows 11 Compatible Machines'
 keywords: ['windows', 'group', 'dynamic', 'compatibility', 'upgrade']
 description: 'This document outlines the steps to create a dynamic group in ConnectWise RMM for identifying Windows 10 computers that are compatible with the Windows 11 upgrade. It includes detailed instructions and screenshots for each step of the process.'
 tags: ['windows']
@@ -59,4 +59,6 @@ This document describes how to identify Windows 10 computers that are compatible
 
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_14.png)  
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_15.png)
+
+
 

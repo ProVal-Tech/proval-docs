@@ -1,7 +1,7 @@
 ---
 id: 'e79a2422-0089-451b-9522-a6110976c2f5'
-title: 'Disable Restrict Driver Installation to Administrators'
-title_meta: 'Disable Restrict Driver Installation to Administrators'
+title: 'Disable RestrictDriverInstallationToAdministrators'
+title_meta: 'Disable RestrictDriverInstallationToAdministrators'
 keywords: ['restrict', 'driver', 'installation', 'administrators', 'ticket', 'creation', 'monitor']
 description: 'This document provides a detailed guide on how to disable the Restrict Driver Installation to Administrators setting in a ConnectWise Automate environment. It includes steps for ensuring the script and alert template are in place, obtaining group IDs, and executing the necessary SQL query to apply the changes effectively.'
 tags: ['sql']
@@ -165,4 +165,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.
+
+
 

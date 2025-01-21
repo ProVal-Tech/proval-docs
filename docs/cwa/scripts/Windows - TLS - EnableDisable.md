@@ -1,7 +1,7 @@
 ---
 id: '30fcf92d-cb2b-4fc6-bc7a-c43d393ce33d'
-title: 'Enable or Disable TLS Versions'
-title_meta: 'Enable or Disable TLS Versions in Windows'
+title: 'Windows - TLS - EnableDisable'
+title_meta: 'Windows - TLS - EnableDisable'
 keywords: ['tls', 'registry', 'encryption', 'crypto', 'windows']
 description: 'This document describes a script that enables or disables various versions of TLS (v1.0, v1.1, v1.2, v1.3) by updating the Windows registry. It includes user parameters for configuration and a sample run demonstrating the script in action.'
 tags: ['security', 'update', 'windows']
@@ -40,4 +40,6 @@ To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with str
 ## Output
 
 - Script log
+
+
 

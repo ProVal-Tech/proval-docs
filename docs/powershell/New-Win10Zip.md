@@ -1,7 +1,7 @@
 ---
 id: ps-new-win10zip
 title: 'New-Win10Zip'
-title_meta: 'New-Win10Zip Command'
+title_meta: 'New-Win10Zip'
 keywords: ['windows', 'iso', 'zip', 'deployment']
 description: 'Documentation for the New-Win10Zip command to download an ISO and create a Windows 10 release ZIP file for automatic deployments.'
 tags: ['setup', 'windows']
@@ -47,4 +47,6 @@ Location of output for log, result, and error files.
 ```
 
 [mct]: https://github.com/AveYo/MediaCreationTool.bat
+
+
 

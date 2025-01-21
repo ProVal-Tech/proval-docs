@@ -1,7 +1,7 @@
 ---
 id: '2b64bf00-b8b2-499b-b9d2-70d218f18cfb'
-title: 'Implementing Exclusions in Thresholds for Targets'
-title_meta: 'Implementing Exclusions in Thresholds for Targets - A Comprehensive Guide'
+title: 'Property - Set'
+title_meta: 'Property - Set'
 keywords: ['exclusions', 'thresholds', 'parameters', 'computer', 'global', 'overwrite']
 description: 'This document provides a detailed overview of a script designed to manage exclusions in thresholds for targets within a ConnectWise Automate solution. It explains how to implement global and computer-level parameters, including the ability to overwrite existing values. Sample runs and user parameters are included for clarity.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -54,4 +54,6 @@ If Computer is selected:
     - Create the parameter for that target.  
   - If a value is present for that target:  
     - Check overwrite; if not 1, exit with an error; otherwise, overwrite the current target's parameter value.  
+
+
 

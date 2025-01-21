@@ -1,7 +1,7 @@
 ---
 id: 'ac098d84-7d28-4b69-933f-74ab861d2b89'
-title: 'Creating the plugin_proval_v_windows_10_version_metrics View'
-title_meta: 'Creating the plugin_proval_v_windows_10_version_metrics View for Data Metrics'
+title: 'Create View plugin_proval_v_windows_10_version_metrics'
+title_meta: 'Create View plugin_proval_v_windows_10_version_metrics'
 keywords: ['view', 'metrics', 'windows', 'dataview', 'sql']
 description: 'This document outlines the process of creating the view plugin_proval_v_windows_10_version_metrics, which is essential for the dataview related to Windows 10 version metrics and filters. It includes sample runs, dependencies, and the execution process for the SQL query.'
 tags: ['database', 'report', 'windows']
@@ -26,4 +26,6 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 ## Process
 
 This section executes the SQL query to create the `plugin_proval_v_windows_10_version_metrics` view.
+
+
 

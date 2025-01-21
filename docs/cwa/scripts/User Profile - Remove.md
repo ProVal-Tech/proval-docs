@@ -1,7 +1,7 @@
 ---
 id: '765d906e-33c3-4615-9cd6-9c01a9eeaebb'
-title: 'Delete User Profile and Account'
-title_meta: 'Delete User Profile and Account - Destructive Script'
+title: 'User Profile - Remove'
+title_meta: 'User Profile - Remove'
 keywords: ['user', 'profile', 'delete', 'account', 'local']
 description: 'This document describes a script that deletes a user profile and removes the local user account. It emphasizes the destructive nature of the script and provides information on the necessary parameters and dependencies for successful execution.'
 tags: ['security', 'uninstallation', 'windows']
@@ -36,4 +36,6 @@ See [EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-Us
 
 - Script log
 - Local file on computer
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f716df74-c208-45fd-bff8-2865399e446b'
-title: 'WinSAT Scores Collection Procedure'
-title_meta: 'WinSAT Scores Collection Procedure'
+title: 'WinSAT Scores'
+title_meta: 'WinSAT Scores'
 keywords: ['winsat', 'scores', 'procedure', 'endpoint', 'performance']
 description: 'This document outlines a procedure for collecting WinSAT scores on endpoints using custom fields and PowerShell commands. It includes detailed logs of actions taken and results obtained during the execution of the procedure, providing insights into the performance of system components such as CPU, memory, graphics, and disk.'
 tags: ['performance', 'security', 'setup', 'windows']
@@ -64,4 +64,6 @@ The procedure utilizes WinSAT and custom fields to store the scores of the machi
 ## Output
 
 Agent Procedure Log
+
+
 

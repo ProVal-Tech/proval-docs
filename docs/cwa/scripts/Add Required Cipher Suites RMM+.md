@@ -1,7 +1,7 @@
 ---
 id: 'e65f81b3-f50a-491e-9f87-bf82b9f26329'
-title: 'Add Cipher Suites for Automate Agent'
-title_meta: 'Add Cipher Suites for Automate Agent - Configuration Guide'
+title: 'Add Required Cipher Suites RMM+'
+title_meta: 'Add Required Cipher Suites RMM+'
 keywords: ['cipher', 'tls', 'automate', 'agent', 'configuration']
 description: 'This document provides a detailed guide on how to add the necessary Cipher Suites for an Automate agent to successfully sign up with ConnectWise Automate, including enabling TLS 1.2 and handling the required configurations.'
 tags: ['security', 'update', 'windows']
@@ -39,6 +39,8 @@ The goal of this script is to add the [Cipher Suites](https://docs.connectwise.c
 ## Output
 
 Script Log
+
+
 
 
 

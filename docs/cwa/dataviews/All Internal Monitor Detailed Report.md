@@ -1,7 +1,7 @@
 ---
 id: 'ed7fac53-e526-41d5-be5e-7c710b01aed2'
-title: 'Custom Internal Monitors Implementation Status'
-title_meta: 'Custom Internal Monitors Implementation Status'
+title: 'All Internal Monitor Detailed Report'
+title_meta: 'All Internal Monitor Detailed Report'
 keywords: ['monitors', 'implementation', 'status', 'alert', 'template', 'sync', 'script', 'failure', 'scan', 'group']
 description: 'This document provides a detailed overview of custom internal monitors, including their implementation status, alert styles, execution intervals, and color coding for easy identification of monitor nature and status. It serves as a comprehensive guide for managing and understanding internal monitoring processes.'
 tags: ['report']
@@ -44,4 +44,6 @@ Color coding is applied to the columns "Monitor Nature," "Monitor Status," "Scri
 - **Monitor Status**: The "Disabled" font is bold/italic and highlighted in red to draw attention to disabled monitors.
 - **Script Nature**: The "ProVal Script" is highlighted in green to indicate where "ProVal" scripts are used as autofixes.
 - **Synced/Updated**: "Yes" is highlighted in green, "No" in red, and "N/A" in grey to easily indicate whether the monitor is properly synced/updated from the ProVal plugin.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '10055a68-f513-4580-bdc1-73272516866f'
-title: 'Disable SMB1 Protocol on Target Machine'
-title_meta: 'Disable SMB1 Protocol on Target Machine'
+title: 'Disable SMB1'
+title_meta: 'Disable SMB1'
 keywords: ['smb1', 'protocol', 'disable', 'windows', 'security']
 description: 'This document outlines the process to disable the SMB1 protocol on a target machine, including script creation, implementation steps, and deployment instructions. It is crucial for enhancing security on Windows systems by preventing vulnerabilities associated with SMB1.'
 tags: ['security', 'setup', 'windows']
@@ -175,6 +175,8 @@ It is suggested to run the task once per week against Windows computers.
 ## Output
 
 - Script log
+
+
 
 
 

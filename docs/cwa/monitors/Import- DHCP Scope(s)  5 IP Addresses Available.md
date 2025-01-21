@@ -1,7 +1,7 @@
 ---
 id: '81c88531-4918-4d74-ac84-efbc2c3cfe51'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Import- DHCP Scope(s)  5 IP Addresses Available'
+title_meta: 'Import- DHCP Scope(s)  5 IP Addresses Available'
 keywords: ['remote', 'monitor', 'dhcp', 'groupid', 'alert', 'configuration']
 description: 'This document provides a detailed guide on how to apply a remote monitor to specific groups in ConnectWise Automate. It outlines the steps for obtaining group IDs, constructing SQL queries for inserting group agents, and executing those queries to ensure proper monitoring of DHCP scopes with insufficient IP addresses.'
 tags: ['database', 'networking']
@@ -202,4 +202,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate and Apply the Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

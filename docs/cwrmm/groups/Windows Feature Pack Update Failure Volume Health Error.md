@@ -1,7 +1,7 @@
 ---
 id: '891dd514-bfc7-4dba-b09c-7597145bb3e2'
-title: 'Categorize Windows Feature Pack Update Failures due to Volume Health Errors'
-title_meta: 'Categorize Windows Feature Pack Update Failures due to Volume Health Errors'
+title: 'Windows Feature Pack Update Failure Volume Health Error'
+title_meta: 'Windows Feature Pack Update Failure Volume Health Error'
 keywords: ['windows', 'feature', 'update', 'failure', 'volume', 'health', 'error']
 description: 'This document provides a comprehensive guide to categorizing Windows 10 and 11 computers where the Feature Update Install with Tracking script failed due to a Volume Health Error. It includes dependencies, criteria for grouping, and visual aids to assist in the process.'
 tags: []
@@ -48,4 +48,6 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_9.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_10.png)
+
+
 

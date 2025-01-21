@@ -1,7 +1,7 @@
 ---
 id: '67416ac2-2311-43c4-8fbf-c5b0c9a48e71'
-title: 'Cumulative Update Audit Custom Field'
-title_meta: 'Cumulative Update Audit Custom Field for CW RMM'
+title: 'Latest Cumulative Update'
+title_meta: 'Latest Cumulative Update'
 keywords: ['custom', 'field', 'audit', 'update', 'cumulative']
 description: 'This document provides details on the custom field used to store and display the results of the Cumulative Update Audit task in ConnectWise RMM. It includes information about the field type, dependencies, and sample values.'
 tags: ['report', 'software', 'windows']
@@ -33,4 +33,6 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/Latest-Cumulative-Update/image_3.png)
+
+
 

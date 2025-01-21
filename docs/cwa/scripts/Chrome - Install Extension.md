@@ -1,7 +1,7 @@
 ---
 id: '894e4ce0-9034-4191-bb3b-7065c23754bc'
-title: 'Enforce Chrome Extension Installation'
-title_meta: 'Enforce Chrome Extension Installation - Automate Chrome Extensions'
+title: 'Chrome - Install Extension'
+title_meta: 'Chrome - Install Extension'
 keywords: ['chrome', 'extension', 'installation', 'script', 'automation']
 description: 'This document outlines a script used to enforce the installation of specified extensions in Google Chrome, detailing the process, dependencies, and user parameters required for successful execution.'
 tags: ['chrome', 'installation']
@@ -45,4 +45,6 @@ This script is used to enforce the installation of an extension or a list of ext
 
 - Script log
 - Local file on the computer
+
+
 

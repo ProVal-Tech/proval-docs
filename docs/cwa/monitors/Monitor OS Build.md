@@ -1,7 +1,7 @@
 ---
 id: '4855070e-17d1-4caa-9ded-793fef9b330d'
-title: 'Implementation Steps for Remote Monitor'
-title_meta: 'Implementation Steps for Remote Monitor'
+title: 'Monitor OS Build'
+title_meta: 'Monitor OS Build'
 keywords: ['remote', 'monitor', 'groupid', 'alert', 'query']
 description: 'This document outlines the steps to implement a remote monitor in ConnectWise Automate, including obtaining group IDs, crafting SQL queries, and applying alert templates for monitoring OS build changes.'
 tags: ['database', 'setup']
@@ -156,4 +156,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

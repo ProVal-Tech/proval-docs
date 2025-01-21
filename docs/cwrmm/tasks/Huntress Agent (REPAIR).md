@@ -1,7 +1,7 @@
 ---
 id: 'ebe382f4-d3cb-47be-84e1-c82009fd745a'
-title: 'Huntress Agent Repair Script'
-title_meta: 'Huntress Agent Repair Script'
+title: 'Huntress Agent (REPAIR)'
+title_meta: 'Huntress Agent (REPAIR)'
 keywords: ['huntress', 'agent', 'repair', 'script', 'automation']
 description: 'This document outlines the process for creating a PowerShell script to repair the Huntress Agent. It includes detailed steps for setting up the necessary variables, downloading the repair script, and logging the output of the operation.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -244,4 +244,6 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 ## Output
 
 - Script log
+
+
 

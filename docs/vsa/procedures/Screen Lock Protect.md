@@ -1,7 +1,7 @@
 ---
 id: '7321634c-9259-454e-b7f4-c0ce205a3d8a'
-title: 'Set Screen Lock Timeout on Endpoint'
-title_meta: 'Set Screen Lock Timeout on Endpoint'
+title: 'Screen Lock Protect'
+title_meta: 'Screen Lock Protect'
 keywords: ['screen', 'lock', 'timeout', 'endpoint', 'configuration']
 description: 'This document details the procedure for setting the screen lock timeout on an endpoint using the ProVal Agnostic Protect-ScreenLock script. It includes example logs, dependencies, and the process of implementation, ensuring proper configuration and execution.'
 tags: ['security', 'setup', 'windows']
@@ -49,4 +49,6 @@ Uses the ProVal Agnostic Protect-ScreenLock script to set a configurable timeout
 ## Output
 
 Agent Procedure Log
+
+
 

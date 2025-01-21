@@ -1,7 +1,7 @@
 ---
 id: '8a8349f6-0f93-4e85-9a33-f6c7867f4bf5'
-title: 'Update Orchestrator Autofix Script'
-title_meta: 'Update Orchestrator Autofix Script for Service Status Detection'
+title: 'Windows Update Orchestrator Fix - Rename File to Reboot.Bak'
+title_meta: 'Windows Update Orchestrator Fix - Rename File to Reboot.Bak'
 keywords: ['autofix', 'update', 'orchestrator', 'service', 'status', 'detection', 'rename', 'patches']
 description: 'This document describes the Update Orchestrator Autofix Script, designed to prevent unauthorized reboots and patch installations on endpoints by renaming the reboot file. It operates as an autofix for the Update Orchestrator Service Status Detection monitor, ensuring that updates are managed with prior approval.'
 tags: ['software', 'update', 'windows']
@@ -34,4 +34,6 @@ The monitor will check for the condition, and this script will automatically exe
 ## Output
 
 Script log messages only.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '00c4b9c6-ded8-4cde-ba74-47437724d206'
-title: 'Drop-down Custom Field for Autofix Management'
-title_meta: 'Drop-down Custom Field for Autofix Management'
+title: 'Company - Out_of_Date_CU_Autofix'
+title_meta: 'Company - Out_of_Date_CU_Autofix'
 keywords: ['customfield', 'autofix', 'cumulativeupdate', 'management', 'connectwise']
 description: 'This document provides a detailed overview of a drop-down Custom Field designed to manage the Autofix section for the ConnectWise RMM solution. It explains the functionality of enabling the latest Cumulative Update installation on machines that have not received an update in the last 75 days, including options for server management.'
 tags: ['connectwise', 'update']
@@ -32,4 +32,6 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 ![Screenshot 1](../../../static/img/Company---Out_of_Date_CU_Autofix/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---Out_of_Date_CU_Autofix/image_2.png)
+
+
 

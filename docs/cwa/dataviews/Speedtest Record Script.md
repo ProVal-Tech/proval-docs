@@ -1,7 +1,7 @@
 ---
 id: 'a15c39f0-c19e-413a-8d21-7ea44529be05'
-title: 'Speed Test Dataview'
-title_meta: 'Speed Test Dataview'
+title: 'Speedtest Record Script'
+title_meta: 'Speedtest Record Script'
 keywords: ['speed', 'test', 'dataview', 'latency', 'upload', 'download', 'packet', 'loss', 'jitter', 'performance']
 description: 'This document provides an overview of the Speed Test Dataview, detailing how it displays key metrics such as upload speed, download speed, and latency. It also outlines the dependencies and columns included in the Dataview for enhanced performance monitoring.'
 tags: ['networking', 'performance', 'report', 'setup']
@@ -39,5 +39,7 @@ The information in this Dataview is populated by a script titled "SpeedTest - Oo
 | Upload Speed     | Displays the upload speed                                         |
 | Execute Date     | Displays the date the script was executed against the machine     |
 | Share URL        | Displays the Share URL                                            |
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: '408179bd-2008-48a0-9311-d037a4e670ba'
-title: 'User Login/Logout Activity Audit'
-title_meta: 'User Login/Logout Activity Audit'
+title: 'Solution - User Activity Tracing'
+title_meta: 'Solution - User Activity Tracing'
 keywords: ['audit', 'login', 'logout', 'user', 'activity']
 description: 'This document outlines a solution for auditing user login and logout activities, detailing the implementation steps and associated content for effective monitoring. The solution is designed to replace existing duplicates and should be scheduled at intervals shorter than 24 hours to ensure comprehensive data capture.'
 tags: ['report']
@@ -33,4 +33,6 @@ This solution performs the user login/logout activity audit. By default, the scr
 - Then, schedule the script on the Windows machines.
 
 **NOTE:** This script is not suitable for execution on the DC servers to avoid the noise of multiple user login/logout traces in the system event log as well as in the database table. The DC server is excluded from the script for execution.
+
+
 

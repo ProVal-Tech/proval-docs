@@ -1,7 +1,7 @@
 ---
 id: '29f53c95-c885-42ef-a24f-8030efc1830f'
-title: 'ProVal Version of SVC - Auto Services Stopped Monitor'
-title_meta: 'ProVal Version of SVC - Auto Services Stopped Monitor'
+title: 'Auto Services Stopped'
+title_meta: 'Auto Services Stopped'
 keywords: ['monitor', 'services', 'blacklist', 'wildcard', 'windows']
 description: 'This document details the ProVal version of the default monitor "SVC - Auto Services Stopped", which has been enhanced to support wildcards in the service blacklist. It monitors services set to start automatically with Windows, excluding those listed in the blacklist. Instructions for modifying the blacklist are provided.'
 tags: ['windows']
@@ -27,4 +27,6 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe'
-title: 'Disk Monitor Creation Script'
-title_meta: 'Disk Monitor Creation Script for Efficient Monitoring'
+title: 'Agent Monitor Creation - Disk - WRAPPER'
+title_meta: 'Agent Monitor Creation - Disk - WRAPPER'
 keywords: ['disk', 'monitor', 'creation', 'automation', 'agent', 'exclude']
 description: 'This document outlines the Disk Monitor Creation Script, which is essential for creating disk monitors for machines as part of the Agent Monitor Creation process. It includes setup instructions, dependencies, and global parameters for effective execution.'
 tags: ['setup']
@@ -45,4 +45,6 @@ This script **must** be called by the Agent Monitor Creation script and the Remo
 ## Output
 
 - Script log
+
+
 

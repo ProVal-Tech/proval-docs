@@ -1,7 +1,7 @@
 ---
 id: ps-show-prompt
 title: 'Show-Prompt'
-title_meta: 'Show-Prompt Command'
+title_meta: 'Show-Prompt'
 keywords: ['prompt', 'user', 'input', 'dialog']
 description: 'Documentation for the Show-Prompt command to display a user prompt for input.'
 tags: ['windows']
@@ -95,4 +95,6 @@ Display a pop-up with a purple filled title size 25 in yellow writing and a gree
 - As an interactive message, outputs from selected buttons are returned (future development).
 
 - `.\Show-Prompt-log.txt`
+
+
 

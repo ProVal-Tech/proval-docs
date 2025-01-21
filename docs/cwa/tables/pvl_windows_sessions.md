@@ -1,7 +1,7 @@
 ---
 id: 'a5bff446-3e21-42cf-8208-d0de57f497ee'
-title: 'Windows Sessions Output Storage'
-title_meta: 'Windows Sessions Output Storage'
+title: 'pvl_windows_sessions'
+title_meta: 'pvl_windows_sessions'
 keywords: ['windows', 'sessions', 'storage', 'output', 'database']
 description: 'This document outlines the purpose and dependencies of storing the output from the query session command, specifically focusing on the Windows Sessions data structure and its associated table schema. It also references the necessary script for retrieving session data.'
 tags: ['database', 'report', 'setup']
@@ -31,4 +31,6 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 | Type          | varchar(64)  | Type of the session                         |
 | Device        | varchar(64)  | Device of the session                       |
 | ScriptRunTime | DateTime     | Data collection time                        |
+
+
 

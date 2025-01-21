@@ -1,7 +1,7 @@
 ---
 id: 'f43caad6-43d9-4313-83ae-f0607ac15c6c'
-title: 'Exchange On-Premise Mitigation Tool for Hafnium CVE'
-title_meta: 'Exchange On-Premise Mitigation Tool for Hafnium CVE'
+title: 'Microsoft Exchange On-Premises Mitigation Tool Execution Global'
+title_meta: 'Microsoft Exchange On-Premises Mitigation Tool Execution Global'
 keywords: ['exchange', 'mitigation', 'cve', 'hafnium', 'script', 'ticket', 'scan']
 description: 'This document describes a script designed to run the Exchange on-premise mitigation tool provided by Microsoft Exchange. It detects the Hafnium CVE, creates a ticket if found, and executes a full scan to implement the necessary mitigation. The script is intended for use on Windows Exchange servers only, saving approximately 30 minutes of manual effort.'
 tags: ['cve', 'security', 'windows']
@@ -33,4 +33,6 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Log file named `msert.log`
+
+
 

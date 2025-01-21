@@ -1,7 +1,7 @@
 ---
 id: 'd40bdcb8-dd08-460d-9be8-d9773ac32e93'
-title: 'Custom Scripts Overview for ProVal'
-title_meta: 'Custom Scripts Overview for ProVal - Detailed Implementation Status'
+title: 'ProVal Script Detailed Report'
+title_meta: 'ProVal Script Detailed Report'
 keywords: ['custom', 'scripts', 'proval', 'implementation', 'status']
 description: 'This document provides a comprehensive overview of all custom scripts built by ProVal, detailing their implementation status and various attributes, including execution counts, scheduling information, and color coding for easy identification of script characteristics.'
 tags: []
@@ -56,4 +56,6 @@ Color coding is applied to the columns "# Internal Monitor," "# Remote Monitor,"
 - **Synced/Updated:** Highlights "Yes" in green, "No" in orange, "Client-Specific" in grey, and "Deprecated" in red to easily show whether the script is deprecated, client-specific, or if a non-stack script is properly synced/updated from the ProVal plugin.
 - **Group Scheduled:** Highlights the group full name in green to indicate where the script is scheduled.
 - **Scheduled in Past 6 Months:** Highlights "Recently Added" in green to show which script was either run by the group or manually in the past 6 months, or if the script was running as an autofix via monitors. If any condition is met, it is marked as "Recently Added."
+
+
 

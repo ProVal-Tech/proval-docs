@@ -1,7 +1,7 @@
 ---
 id: '59079938-6d59-48d6-aa45-b8c003456bc6'
-title: 'Upgrade/Swap Agents Hard Drives or SSDs with Imaged Drives'
-title_meta: 'Upgrade/Swap Agents Hard Drives or SSDs with Imaged Drives in ConnectWise Automate'
+title: 'Incorrect Drive Inventory Autofix'
+title_meta: 'Incorrect Drive Inventory Autofix'
 keywords: ['upgrade', 'swap', 'agents', 'hard-drives', 'ssds', 'imaged', 'inventory']
 description: 'This document outlines a script designed to address the issue of incorrect drive inventory in ConnectWise Automate when upgrading or swapping agents’ hard drives or SSDs. The script is intended to be executed through a specific remote monitor template for optimal results.'
 tags: ['setup', 'software', 'update']
@@ -27,4 +27,6 @@ This is an Autofix script and will provide better results when executed by the [
 | Name   | Description                                        |
 |--------|----------------------------------------------------|
 | Drives | Drive ID stored in the database for the computer   |
+
+
 

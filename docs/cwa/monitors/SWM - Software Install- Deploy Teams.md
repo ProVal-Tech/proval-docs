@@ -1,7 +1,7 @@
 ---
 id: '3f036a74-e39e-4802-86a3-7087b1f0f7cb'
-title: 'Detect Missing Teams Machine-Wide Installer'
-title_meta: 'Detect Missing Teams Machine-Wide Installer'
+title: 'SWM - Software Install- Deploy Teams'
+title_meta: 'SWM - Software Install- Deploy Teams'
 keywords: ['teams', 'installer', 'monitor', 'windows', 'workstations']
 description: 'This document outlines the process to detect computers that are missing the Teams Machine-Wide Installer application. It includes details on suggested limits, alert styles, and implementation steps for effective monitoring of Windows workstations.'
 tags: ['installation', 'software', 'windows']
@@ -43,4 +43,6 @@ Managed Windows Workstations
 
 Follow the steps provided in this private document to implement the solution:  
 [**Implement - Remote Monitor - Deploy Teams**](<./Deploy Teams.md>)  
+
+
 

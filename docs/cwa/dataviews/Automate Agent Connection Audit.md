@@ -1,7 +1,7 @@
 ---
 id: '1c5558e1-70a3-4b38-bdc0-e3eb8cf29d43'
-title: 'Computer Online vs Offline Status Overview'
-title_meta: 'Computer Online vs Offline Status Overview'
+title: 'Automate Agent Connection Audit'
+title_meta: 'Automate Agent Connection Audit'
 keywords: ['status', 'online', 'offline', 'computer', 'audit', 'data', 'report']
 description: 'This document provides a comprehensive overview of the online and offline status of computers over the past 30 days, including detailed insights for the last 7 days and 24 hours. It explains how data is collected and displayed, along with the dependencies and columns used in the dataview.'
 tags: ['database', 'performance', 'report']
@@ -60,4 +60,6 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 | Online Percentage - 30 Days     | Percentage of time the computer was online in the past 30 days                                      |
 | Offline Percentage - 30 Days    | Percentage of time the computer was offline in the past 30 days                                     |
 | Days Since Data Collection       | Number of days the current calculations displayed in the dataview are based upon. It may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. It is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`. |
+
+
 

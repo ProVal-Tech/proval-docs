@@ -1,7 +1,7 @@
 ---
 id: '566fcde7-b6ad-48d5-9909-dbb9cd4da1be'
-title: 'Start Service with User Account'
-title_meta: 'Start Service with User Account'
+title: 'Windows - Run Service as Specified User'
+title_meta: 'Windows - Run Service as Specified User'
 keywords: ['service', 'user', 'account', 'start', 'domain', 'local', 'authentication']
 description: 'This document describes a script that starts a specified service using a specific user account, applicable for both domain and local user accounts. It includes user parameters, process details, and output logs for effective service management.'
 tags: ['windows']
@@ -34,4 +34,6 @@ This script will start a specified service with a specific user account. It work
 ## Output
 
 - Script log
+
+
 

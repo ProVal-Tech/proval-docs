@@ -1,7 +1,7 @@
 ---
 id: '1530b61c-9bba-406b-9451-0b998c9e8d54'
-title: 'Windows Cluster Volume Monitoring and Auditing'
-title_meta: 'Windows Cluster Volume Monitoring and Auditing'
+title: 'Solution - Windows Cluster Shared Volume'
+title_meta: 'Solution - Windows Cluster Shared Volume'
 keywords: ['monitoring', 'auditing', 'cluster', 'volume', 'hyperv', 'disk', 'space', 'alert', 'ticket']
 description: 'This document provides a comprehensive solution for monitoring Windows Cluster Shared volumes, creating tickets when space falls below 10%, and auditing to maintain a report of cluster disk spaces on Hyper-V Cluster servers. It includes details on scripts, remote monitors, and implementation steps for effective management.'
 tags: ['cluster', 'disk', 'hyper-v', 'report']
@@ -82,4 +82,6 @@ This solution is designed to monitor the Windows Cluster Shared volume, create t
      - Set up with alert template `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
 
 > **Note:** The autofix [Script - Windows Cluster Shared Volume [Autofix,Ticket]](<../scripts/Windows Cluster Shared Volume Autofix,Ticket.md>) also calls the [Script - Windows Cluster Volume Space Audit [DV]](<../scripts/Windows Cluster Volume Space Audit DV.md>) whenever the cluster volume space is detected below 20% as a warning or below 10% as an error. This maintains the fresh audit report for the volumes we need to monitor closely.
+
+
 

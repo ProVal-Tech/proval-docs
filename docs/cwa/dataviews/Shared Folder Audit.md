@@ -31,3 +31,5 @@ This dataview pulls information regarding file shares and permissions from the s
 | Permission Type        | Either Allow or Deny                             |
 | Permission Right       | Full, Read, Change, or No Access                 |
 
+
+

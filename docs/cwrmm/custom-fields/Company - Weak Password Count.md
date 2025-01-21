@@ -1,7 +1,7 @@
 ---
 id: '1a75efd1-8457-4b11-b9a8-0f7fe1a39db6'
-title: 'Weak Passwords Audit'
-title_meta: 'Weak Passwords Audit - Count of Accounts with Weak Passwords'
+title: 'Company - Weak Password Count'
+title_meta: 'Company - Weak Password Count'
 keywords: ['weak', 'passwords', 'audit', 'count', 'accounts', 'domain']
 description: 'This document provides an overview of the Weak Passwords Audit solution within ConnectWise RMM, detailing the count of accounts with weak passwords on a domain. It includes dependencies, details about the fields used in the audit, and a screenshot for reference.'
 tags: ['report', 'security', 'windows']
@@ -26,4 +26,6 @@ This document holds the count of accounts with weak passwords.
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '00d66215-fe07-4bae-b6cb-d96a73486694'
-title: 'Huntress Organization Key Custom Field'
-title_meta: 'Huntress Organization Key Custom Field'
+title: 'Huntress Org_Key'
+title_meta: 'Huntress Org_Key'
 keywords: ['huntress', 'custom', 'field', 'key', 'organization']
 description: 'This document provides a detailed guide on creating a custom field for the Huntress Organization Key in ConnectWise RMM. It includes instructions on how to set up the field, its properties, and its importance in associating Huntress Agents with their respective organizations.'
 tags: ['setup', 'software', 'windows']
@@ -24,4 +24,6 @@ This custom field is to be filled with the Huntress Organization Key. It is util
 **Level:** Company  
 **Description:** The Huntress Organization Key is used to associate a Huntress Agent with a grouping called Huntress Organizations. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
 **Editable:** Yes  
+
+
 

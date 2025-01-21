@@ -1,7 +1,7 @@
 ---
 id: 'ad3966ca-92dd-45b6-880d-e665821bd6da'
-title: 'OneDrive Sync Status Monitoring for Non-SharePoint Linked Sites'
-title_meta: 'OneDrive Sync Status Monitoring for Non-SharePoint Linked Sites'
+title: 'Microsoft OneDrive Sync Status'
+title_meta: 'Microsoft OneDrive Sync Status'
 keywords: ['onedrive', 'sync', 'monitoring', 'automation', 'alerting', 'auditing']
 description: 'This document outlines the implementation of a solution to collect and display OneDrive sync status information from Windows machines, specifically for Non-SharePoint Linked Sites. It includes associated content for auditing and alerting, as well as a detailed implementation guide and FAQs regarding potential errors in data retrieval.'
 tags: ['alerting', 'auditing', 'ticketing', 'windows']
@@ -72,4 +72,6 @@ Implement the Alerting solution as follows:
 
 **Q:** Why does the script occasionally throw an error and fail to retrieve data from the computer?  
 **A:** The script relies on the functionality of the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module to fetch the necessary data. However, it's important to note that the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module is not entirely infallible, which can result in occasional errors during data retrieval. Additionally, it's crucial to ensure that no security applications are impeding the functionality of this module, as it needs to operate without restrictions to retrieve data successfully.
+
+
 

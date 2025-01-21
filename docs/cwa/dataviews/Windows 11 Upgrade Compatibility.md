@@ -1,7 +1,7 @@
 ---
 id: '36ca4c95-af9e-443b-8fe5-33e910107650'
-title: 'Windows 11 Compatibility Check'
-title_meta: 'Windows 11 Compatibility Check'
+title: 'Windows 11 Upgrade Compatibility'
+title_meta: 'Windows 11 Upgrade Compatibility'
 keywords: ['windows', 'upgrade', 'compatibility', 'check', 'machine']
 description: 'This document provides a detailed overview of a PowerShell script that checks which machines are eligible for an upgrade to Windows 11. It includes information on dependencies, column descriptions, and format control for compatibility checks.'
 tags: ['performance', 'windows']
@@ -45,4 +45,6 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Compatibility Check  | Equals   | Not Capable    | Red    |
 | Compatibility Check  | Equals   | Undetermined    | Orange |
 | Compatibility Check  | Equals   | Capable        | Green  |
+
+
 

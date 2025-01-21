@@ -1,7 +1,7 @@
 ---
 id: '8a2e73e9-819c-44db-a1b1-72b15a7812c2'
-title: 'Installing Windows Updates with Deep Freeze'
-title_meta: 'Installing Windows Updates with Deep Freeze'
+title: 'Deep Freeze Automation - Install Windows Update'
+title_meta: 'Deep Freeze Automation - Install Windows Update'
 keywords: ['windows', 'updates', 'deepfreeze', 'installation', 'security']
 description: 'This document outlines a script designed to facilitate the installation of Windows updates on computers using the Deep Freeze Tool. It verifies the system state, pushes updates, and manages the transition between THAWED and FROZEN states to ensure a seamless update process without disrupting user experience.'
 tags: ['installation', 'security', 'software', 'update', 'windows']
@@ -55,4 +55,6 @@ Before executing the script, save the password with the **`Deep Freeze Command L
 ## Output
 
 - Script Logs
+
+
 

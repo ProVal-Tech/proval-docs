@@ -1,7 +1,7 @@
 ---
 id: 'e0515cd5-5dab-444c-a7c4-47f1fa80bff4'
-title: 'Monitor and Disable SMB1'
-title_meta: 'Monitor and Disable SMB1'
+title: 'SMB1'
+title_meta: 'SMB1'
 keywords: ['smb1', 'monitor', 'disable', 'task', 'custom', 'field']
 description: 'This document outlines the process to monitor and disable SMB1, providing detailed steps for implementing associated tasks and monitors within the ConnectWise RMM platform. It includes links to custom fields and tasks that facilitate the detection and disabling of SMB1 on target machines.'
 tags: ['security']
@@ -35,4 +35,6 @@ To implement a monitor that identifies machines with SMB1 enabled and subsequent
 
 1. Create the monitor: [CW RMM - Monitor - SMB1 Detection](<../cwa/monitors/SMB1 Detection.md>)
 2. Create the task: [CW RMM - Task - Disable SMB1](https://proval.itglue.com/DOC-5078775-14393334)
+
+
 

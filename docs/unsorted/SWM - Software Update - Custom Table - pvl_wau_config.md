@@ -1,7 +1,7 @@
 ---
 id: 'be117f3c-0af2-4edb-8fcc-06da1a4db062'
-title: 'Configure Winget Auto Update Configuration Storage'
-title_meta: 'Configure Winget Auto Update Configuration Storage'
+title: 'SWM - Software Update - Custom Table - pvl_wau_config'
+title_meta: 'SWM - Software Update - Custom Table - pvl_wau_config'
 keywords: ['configuration', 'whitelist', 'blacklist', 'notification', 'updateinterval', 'updatetime', 'windows']
 description: 'This document outlines the purpose and structure of the custom table used for storing the configuration settings related to the Winget Auto Update feature. It details the dependencies, the table structure, and the significance of each column in managing the auto-update settings for client computers.'
 tags: ['windows']
@@ -34,4 +34,6 @@ This document stores the current configuration set for the computer from the cli
 | updatesatlogon         | tinyint   | Are the updates enabled at user login too? (0/1)                                                    |
 | donotrunafterinstallation| tinyint   | Is the WAU allowed to run after installation? (0/1)                                                 |
 | remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](<../cwa/monitors/Winget Auto Update Errors.md>) remote monitor creation enabled? (0/1) |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '112efa12-e6aa-4086-b235-23b17193e1e0'
-title: 'Senteon Agent Installation Procedure'
-title_meta: 'Senteon Agent Installation Procedure'
+title: 'Senteon - Install'
+title_meta: 'Senteon - Install'
 keywords: ['senteon', 'agent', 'install', 'endpoint', 'procedure']
 description: 'This document outlines the procedure for downloading and installing the Senteon Agent on endpoints. It includes details on dependencies, implementation steps, and expected output upon successful installation.'
 tags: ['installation', 'software']
@@ -44,4 +44,6 @@ Export the agent procedure from the ProVal VSA and import it into the partner VS
 
 **Existing Install**  
 ![Image](../../../static/img/Senteon---Install/image_4.png)  
+
+
 

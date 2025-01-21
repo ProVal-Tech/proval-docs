@@ -1,7 +1,7 @@
 ---
 id: 'bcf49d08-bfdc-49d1-9c92-52ce8d878be1'
-title: 'Basic Detection of a Brute Force Attack on an Endpoint'
-title_meta: 'Basic Detection of a Brute Force Attack on an Endpoint'
+title: 'SEC - Endpoint Protection - Test-BruteForceAttack'
+title_meta: 'SEC - Endpoint Protection - Test-BruteForceAttack'
 keywords: ['brute', 'force', 'attack', 'endpoint', 'security', 'log', 'failures', 'threshold', 'events']
 description: 'This document outlines a script designed to detect brute force attacks on an endpoint by monitoring login failures in the security log. The script can be scheduled to run periodically, checking for failed login attempts and alerting if the count exceeds a specified threshold. It also supports outputting the results to a file in various formats.'
 tags: ['report', 'security', 'windows']
@@ -60,4 +60,6 @@ This command queries the event log from the last time it ran to the current time
 | ConnectWise RMM              |                                          |
 | Kaseya                       |                                          |
 | Datto RMM                    |                                          |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-remove-dattormmagent
 title: 'Remove-DattoRmmAgent'
-title_meta: 'Remove-DattoRmmAgent Command'
+title_meta: 'Remove-DattoRmmAgent'
 keywords: ['remove', 'datto', 'rmm', 'cleanup']
 description: 'Documentation for the Remove-DattoRmmAgent command to fully remove Datto RMM from an endpoint.'
 tags: ['software', 'uninstallation']
@@ -23,4 +23,6 @@ Fully removes Datto RMM from an endpoint.
 
 ## Output
 .\Remove-DattoRmmAgent-log.txt
+
+
 

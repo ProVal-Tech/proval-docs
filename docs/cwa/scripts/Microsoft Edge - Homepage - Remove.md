@@ -1,7 +1,7 @@
 ---
 id: 'e5ed994d-5538-4f5f-ad3c-96a6ae542d0f'
-title: 'Remove Chromium Homepage Configuration'
-title_meta: 'Remove Chromium Homepage Configuration - Automate Implementation'
+title: 'Microsoft Edge - Homepage - Remove'
+title_meta: 'Microsoft Edge - Homepage - Remove'
 keywords: ['chromium', 'homepage', 'registry', 'microsoft', 'edge']
 description: 'This document details an Automate implementation of a script designed to remove the registry policy that enforces a specific homepage in Microsoft Edge (Chromium). It includes a summary of the script, a sample run, dependencies, and expected output.'
 tags: ['edge', 'software', 'uninstallation']
@@ -24,6 +24,8 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Log
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 id: '03c01cc8-d3e1-4fcb-b816-3c4292cb747e'
-title: 'Active Directory Dataview for Automate'
-title_meta: 'Active Directory Dataview for Automate'
+title: 'AD Agent List Report'
+title_meta: 'AD Agent List Report'
 keywords: ['active-directory', 'automate', 'dataview', 'integration', 'agent']
 description: 'This document provides a detailed overview of the Active Directory Dataview for Automate, including the columns displayed and the information retrieved from the Active Directory Plugin. It covers machine detection based on agent installation, last logon details, and more.'
 tags: ['active-directory', 'report', 'software']
@@ -30,4 +30,6 @@ This Dataview displays any machines found within the Active Directory integratio
 | Parent DN                | Displays whether the Parent DN is enabled or disabled |
 | Object Classes           | Displays the object class of the machine            |
 | Object Type              | Displays the object type of the machine             |
+
+
 

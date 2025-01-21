@@ -1,7 +1,7 @@
 ---
 id: '712b2067-1340-4be0-bf62-54283f15d319'
-title: 'Offboarding Agent Removal Script'
-title_meta: 'Offboarding Agent Removal Script for ConnectWise Automate'
+title: 'Automated Offboarding'
+title_meta: 'Automated Offboarding'
 keywords: ['offboarding', 'agent', 'removal', 'script', 'connectwise']
 description: 'This document provides a comprehensive guide on using the Offboarding Agent Removal Script in ConnectWise Automate. It details the global and user parameters, the process of checking agent status, and the removal of specified software products. The script is designed to facilitate the offboarding process by managing agent removal efficiently, including ticketing options for failures.'
 tags: ['connectwise', 'software', 'ticketing']
@@ -48,4 +48,6 @@ Ticketing is optional.
 
 - Script Log  
 - Ticketing on failure if enabled.
+
+
 

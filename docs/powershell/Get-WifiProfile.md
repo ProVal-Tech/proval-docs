@@ -1,7 +1,7 @@
 ---
 id: ps-get-wifiprofile
 title: 'Get-WifiProfile'
-title_meta: 'Get-WifiProfile Command'
+title_meta: 'Get-WifiProfile'
 keywords: ['retrieve', 'wifi', 'profile', 'network']
 description: 'Documentation for the Get-WifiProfile command to retrieve and return Wi-Fi profiles on the system.'
 tags: ['networking', 'wireless']
@@ -39,4 +39,6 @@ To retrieve Wi-Fi profiles with passwords in plain text:
 ## Output
 - .\Get-WifiProfiles-log.txt
 - .\Get-WifiProfiles-error.txt
+
+
 

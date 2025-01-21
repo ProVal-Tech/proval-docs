@@ -1,7 +1,7 @@
 ---
 id: 'f6186972-e38b-4e2a-952f-b87204915278'
-title: 'Extradatafields Overview'
-title_meta: 'Extradatafields Overview'
+title: 'Extradatafield details'
+title_meta: 'Extradatafield details'
 keywords: ['extradatafields', 'edf', 'value', 'details', 'usage']
 description: 'This document provides a comprehensive overview of the Extradatafields (EDF), including their details, usage, and values within the system. It lists various attributes of the EDFs, such as ID, name, type, level, and associated values, along with notes on their usage status.'
 tags: ['database', 'report', 'security', 'setup']
@@ -40,4 +40,6 @@ The purpose of this document is to represent all the details of the Extradatafie
 | Is Editable               | Represents whether the EDF is editable or not                                                   |
 | Is Restricted             | Represents whether the EDF is restricted or not                                                 |
 | (Masked/Password)         | Represents whether the EDF is masked or has a password                                          |
+
+
 

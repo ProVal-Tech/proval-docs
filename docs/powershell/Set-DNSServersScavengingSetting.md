@@ -1,7 +1,7 @@
 ---
 id: ps-set-dnsserversscavengingsetting
 title: 'Set-DNSServersScavengingSetting'
-title_meta: 'Set-DNSServersScavengingSetting Command'
+title_meta: 'Set-DNSServersScavengingSetting'
 keywords: ['dns', 'scavenging', 'configuration', 'networking']
 description: 'Documentation for the Set-DNSServersScavengingSetting command to enable DNS scavenging and set intervals for Scavenging, No-refresh, and Refresh.'
 tags: ['dns', 'networking']
@@ -48,4 +48,6 @@ Log Files:
 .\Set-DNSServerScavengingSettings-log.txt
 .\Set-DNSServerScavengingSettings-error.txt
 ```
+
+
 

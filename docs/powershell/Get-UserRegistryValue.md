@@ -1,7 +1,7 @@
 ---
 id: ps-get-userregistryvalue
 title: 'Get-UserRegistryValue'
-title_meta: 'Get-UserRegistryValue Command'
+title_meta: 'Get-UserRegistryValue'
 keywords: ['registry', 'user', 'key', 'value']
 description: 'Documentation for the Get-UserRegistryValue command to obtain specific registry values for all users.'
 tags: ['security', 'windows']
@@ -41,4 +41,6 @@ Location of output for log, result, and error files.
 ```
 .\Get-UserRegistryValue-log.txt
 ```
+
+
 

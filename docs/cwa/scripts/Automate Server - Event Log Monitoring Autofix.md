@@ -1,7 +1,7 @@
 ---
 id: 'f36b7367-99c7-478b-abc9-6802182431e4'
-title: 'Unwanted Event Logs Monitoring Script'
-title_meta: 'Unwanted Event Logs Monitoring Script'
+title: 'Automate Server - Event Log Monitoring Autofix'
+title_meta: 'Automate Server - Event Log Monitoring Autofix'
 keywords: ['event', 'logs', 'monitoring', 'alert', 'script']
 description: 'This document describes a script designed to monitor unwanted event logs in the Automate Server environment. It provides details on how the script functions, its dependencies, and the process it follows to alert users when unwanted logs are detected.'
 tags: ['email']
@@ -40,4 +40,6 @@ This is an Autofix script, and it is used within the "Automate Server - Event Lo
 ## Output
 
 - **Email**
+
+
 

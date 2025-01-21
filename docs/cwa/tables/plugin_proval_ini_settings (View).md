@@ -1,7 +1,7 @@
 ---
 id: '3ebaee48-b9a2-4d7b-b0ba-5b3003c97633'
-title: 'ProVal Recommended INI Settings for CWA'
-title_meta: 'ProVal Recommended INI Settings for CWA'
+title: 'plugin_proval_ini_settings (View)'
+title_meta: 'plugin_proval_ini_settings (View)'
 keywords: ['ini', 'settings', 'cwa', 'proval', 'database']
 description: 'This document provides a detailed overview of the current and ProVal recommended INI settings for ConnectWise Automate (CWA). It includes a table that outlines the variable names, their current values, and the recommended values as per ProVal guidelines, ensuring optimal configuration for database performance.'
 tags: ['database', 'performance']
@@ -58,4 +58,6 @@ Displays the current and ProVal recommended INI settings for CWA.
 | thread_cache_size                 | 38                              | 100                            |
 | tmp_table_size                    | 100663296                       | 100663296                      |
 | wait_timeout                      | 28800                           | 900                            |
+
+
 

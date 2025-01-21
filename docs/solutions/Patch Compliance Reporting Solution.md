@@ -1,7 +1,7 @@
 ---
 id: '6dd7be85-8983-413b-8f56-1426446f25da'
-title: 'Professional Patch Management Reports'
-title_meta: 'Professional Patch Management Reports for Clients'
+title: 'Patch Compliance Reporting Solution'
+title_meta: 'Patch Compliance Reporting Solution'
 keywords: ['patch', 'management', 'reports', 'compliance', 'audit', 'cumulative', 'update']
 description: 'This document provides a comprehensive guide on creating professional patch management reports that clients can trust. It covers the purpose, example reports, included reports, associated content, dependencies, implementation steps, FAQs, and potential problems related to patch compliance reporting based on cumulative updates.'
 tags: ['compliance', 'database', 'installation', 'report', 'security', 'windows']
@@ -96,4 +96,6 @@ A: The cumulative update data is audited from the [Solution - Latest Installed C
 
 If you see the following error when opening one of the reports, it means at least one of the views or the custom table is missing and cannot be referenced. If they are all present, verify that you have full permissions to the table and views.  
 ![Potential Problems](../../static/img/Patch-Compliance-Reporting-Solution/image_4.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '1d5d4aff-3a10-4bef-8e29-5e3234a1076b'
-title: 'Automate Database Maintenance Solution Cleanup Script'
-title_meta: 'Automate Database Maintenance Solution Cleanup Script'
+title: 'Automate Database Maintenance - Roles'
+title_meta: 'Automate Database Maintenance - Roles'
 keywords: ['cleanup', 'database', 'maintenance', 'automate', 'script']
 description: 'This document details a script designed for the Automate Database Maintenance Solution, focusing on the cleanup of specific database tables, particularly ComputerRoleDefinitions. It includes information on variable usage, expected outcomes, and logging procedures.'
 tags: ['cleanup', 'database', 'logging']
@@ -32,4 +32,6 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Roles/image_1.png)
+
+
 

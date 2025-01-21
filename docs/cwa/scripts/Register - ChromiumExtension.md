@@ -1,7 +1,7 @@
 ---
 id: '905d7834-84e6-474a-9dc4-0e34a2e8408a'
-title: 'Enable Chromium Extensions for Multiple Browsers'
-title_meta: 'Enable Chromium Extensions for Multiple Browsers'
+title: 'Register - ChromiumExtension'
+title_meta: 'Register - ChromiumExtension'
 keywords: ['chromium', 'chrome', 'edge', 'brave', 'vivaldi', 'extensions', 'policy']
 description: 'This script enables extensions for various Chromium-based browsers including Google Chrome, Microsoft Edge, Brave, and Vivaldi. It provides options for targeting specific browsers or all available browsers while considering policy settings and dependencies.'
 tags: ['extensions', 'software', 'windows']
@@ -43,4 +43,6 @@ If setting all available browsers, leave the Target blank.
 ## Output
 
 - Script log
+
+
 

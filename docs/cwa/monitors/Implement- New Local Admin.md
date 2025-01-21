@@ -1,7 +1,7 @@
 ---
 id: '3aeba30b-19d4-49e6-9275-d82842ced15b'
-title: 'Implementation Steps for Alert Template'
-title_meta: 'Implementation Steps for Alert Template'
+title: 'Implement- New Local Admin'
+title_meta: 'Implement- New Local Admin'
 keywords: ['alert', 'template', 'monitor', 'sql', 'configuration', 'group', 'agent']
 description: 'This document outlines the implementation steps required to set up an alert template for ticket creation in ConnectWise Automate. It includes SQL queries for configuring monitors, importing scripts, and applying alert templates to specific groups, ensuring the correct setup for effective monitoring.'
 tags: ['setup', 'sql']
@@ -199,4 +199,6 @@ unlisted: false
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md)  
   ![Image](../../../static/img/Implement--New-Local-Admin/image_2.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'd56f260f-2d8c-4cb0-aa97-ea05b1f4755a'
-title: 'Hardening Automate Servers'
-title_meta: 'Hardening Automate Servers'
+title: 'Automate Server Best Practice Ticket'
+title_meta: 'Automate Server Best Practice Ticket'
 keywords: ['hardening', 'security', 'automation', 'gpo', 'firewall', 'permissions', 'tls', 'audit']
 description: 'This document outlines the process of auditing and establishing hardening rules and policies for ConnectWise Automate servers based on the latest guidelines. It includes a detailed description of the variables involved, the processes executed, and the expected output, aimed at enhancing server security and compliance.'
 tags: ['firewall', 'gpo', 'permissions', 'security', 'tls']
@@ -59,4 +59,6 @@ This script goes through the process of auditing and setting up hardening rules 
 
 - Ticket
 - Script Log
+
+
 

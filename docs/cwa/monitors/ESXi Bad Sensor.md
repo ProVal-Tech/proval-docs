@@ -1,7 +1,7 @@
 ---
 id: '2f8424d7-00aa-4cee-a4fb-56cbc412108b'
-title: 'ESXi Host Bad Sensor Monitor'
-title_meta: 'ESXi Host Bad Sensor Monitor'
+title: 'ESXi Bad Sensor'
+title_meta: 'ESXi Bad Sensor'
 keywords: ['esxi', 'monitor', 'alert', 'sensor', 'vmware', 'virtualization']
 description: 'This document outlines a monitor designed to report any ESXi hosts that have reported a Bad Sensor within the VMware monitoring system. It is intended for use with a script for ticket creation related to VMware ESXi monitoring, providing a streamlined approach to alerting and issue resolution.'
 tags: ['virtualization', 'vmware']
@@ -25,4 +25,6 @@ This section should list the ITGlue documents found in the Related Items sidebar
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
+
+
 

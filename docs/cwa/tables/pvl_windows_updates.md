@@ -1,7 +1,7 @@
 ---
 id: 'd1791eba-107c-4be0-8048-a1d716dae301'
-title: 'Windows Update History for Agents'
-title_meta: 'Windows Update History for Agents'
+title: 'pvl_windows_updates'
+title_meta: 'pvl_windows_updates'
 keywords: ['windows', 'update', 'history', 'agents', 'audit']
 description: 'This document provides detailed information about the Windows Update history for agents, including the structure of the database table used to store update information and its dependencies on the populating script. It outlines the columns in the pvl_windows_updates table and their respective explanations.'
 tags: ['database', 'installation', 'report', 'update', 'windows']
@@ -56,4 +56,6 @@ Populating script: [EPM - Script - Windows Update History Audit](https://proval.
 | BrowseOnly                      | TINYINT   |                                                                                                 |
 | PerUser                         | TINYINT   |                                                                                                 |
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
+
+
 

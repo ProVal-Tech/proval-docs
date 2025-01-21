@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-setupdiag
 title: 'Invoke-SetupDiag'
-title_meta: 'Invoke-SetupDiag Command'
+title_meta: 'Invoke-SetupDiag'
 keywords: ['setupdiag', 'diagnostics', 'windows', 'troubleshoot']
 description: 'Documentation for the Invoke-SetupDiag command to download and execute SetupDiag.exe for diagnosing Windows setup issues.'
 tags: ['update', 'windows']
@@ -31,4 +31,6 @@ $setupDiagResults.ProfileName
 ### Tables
 - Invoke-SetupDiag_logs
 - Invoke-SetupDiag_data
+
+
 

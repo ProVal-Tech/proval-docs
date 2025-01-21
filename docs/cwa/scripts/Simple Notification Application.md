@@ -1,7 +1,7 @@
 ---
 id: '52ca1112-b256-46e7-9a76-7c6941d71d76'
-title: 'Custom Message Notification Script'
-title_meta: 'Custom Message Notification Script for Windows'
+title: 'Simple Notification Application'
+title_meta: 'Simple Notification Application'
 keywords: ['custom', 'notification', 'message', 'branding', 'windows']
 description: 'This document details a script designed to deliver a one-time, customized message to users, featuring optional branding through an image URL. It outlines the requirements, user parameters, process, and examples of usage.'
 tags: ['setup', 'software', 'windows']
@@ -80,4 +80,6 @@ MD5: E6B792C00D46F2E867194CC79B13885D
 ## Output
 
 - Script Log
+
+
 

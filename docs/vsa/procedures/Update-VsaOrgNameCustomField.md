@@ -1,7 +1,7 @@
 ---
 id: '293abe44-923c-4b2e-abf0-a2f35116996a'
-title: 'Update VSA Org Name Custom Field'
-title_meta: 'Update VSA Org Name Custom Field'
+title: 'Update-VsaOrgNameCustomField'
+title_meta: 'Update-VsaOrgNameCustomField'
 keywords: ['vsa', 'custom', 'field', 'organization', 'api']
 description: 'This document outlines the process to set the custom field value for "xPVAL Org Name" on machines based on the Parent Organization Name using the VSAAPI module. It details the requirements, process, parameters, and output for the script.'
 tags: ['api']
@@ -44,4 +44,6 @@ The location of output for log, result, and error files is as follows:
 ```
 ./Update-VsaOrgNameCustomField-log.txt
 ```
+
+
 

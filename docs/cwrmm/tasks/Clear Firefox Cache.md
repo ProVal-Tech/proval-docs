@@ -1,7 +1,7 @@
 ---
 id: 'b4921df9-1b7e-439a-80b9-28ca3d58f506'
 title: 'Clear Firefox Cache'
-title_meta: 'Clear Firefox Cache - Script Implementation'
+title_meta: 'Clear Firefox Cache'
 keywords: ['firefox', 'cache', 'gecko', 'script', 'rmm']
 description: 'This document provides a detailed guide on how to clear the Gecko engine (Firefox) browser caches using a script in ConnectWise RMM. It includes sample runs, task creation steps, and the complete script implementation.'
 tags: ['application', 'logging']
@@ -125,4 +125,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Clear-Firefox-Cache/image_19.png)  
+
+
 

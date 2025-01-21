@@ -1,7 +1,7 @@
 ---
 id: '84b2e461-c2a3-423f-8a2c-0ac4e8e62fb9'
-title: 'Managing and Upgrading PowerShell to Version 5 in RMM'
-title_meta: 'Managing and Upgrading PowerShell to Version 5 in RMM'
+title: 'PowerShell Version AuditUpdate'
+title_meta: 'PowerShell Version AuditUpdate'
 keywords: ['powershell', 'upgrade', 'rmm', 'windows', 'custom', 'monitor', 'tasks']
 description: 'This document provides a comprehensive guide on managing and upgrading PowerShell to version 5 for all Windows devices within the ConnectWise RMM platform, utilizing custom tasks, device groups, and monitors to ensure successful upgrades.'
 tags: ['windows']
@@ -43,6 +43,8 @@ This solution uses custom tasks, device groups, and a custom monitor to manage a
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
+
+
 
 
 

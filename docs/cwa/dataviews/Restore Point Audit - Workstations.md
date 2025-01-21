@@ -1,7 +1,7 @@
 ---
 id: '29f1dee2-174e-47e1-ae3a-f233fe55386c'
-title: 'Restore Point Audit Dataview'
-title_meta: 'Restore Point Audit Dataview for Workstations'
+title: 'Restore Point Audit - Workstations'
+title_meta: 'Restore Point Audit - Workstations'
 keywords: ['audit', 'restore', 'point', 'workstations', 'dataview']
 description: 'This document provides an overview of a dataview designed to audit restore point details on workstations using a specific script. It outlines the dependencies, columns included in the dataview, and their descriptions, enabling effective tracking and management of restore points.'
 tags: ['backup', 'performance', 'report', 'windows']
@@ -31,4 +31,6 @@ This dataview helps you audit restore point details on workstations with the hel
 | Restore Sequence        | Displays the sequence number of the restore point detected |
 | Restore Point Date      | Displays the date of the restore point detected           |
 | Restore Point Description| Displays the name of the restore point detected           |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '70c7fa58-20bf-47b1-bbeb-aae491390406'
-title: 'Disable SMB1 Protocol on Windows'
-title_meta: 'Disable SMB1 Protocol on Windows'
+title: 'Disable SMB1'
+title_meta: 'Disable SMB1'
 keywords: ['smb1', 'windows', 'protocol', 'disable', 'security']
 description: 'This document provides a PowerShell script to disable the SMB1 protocol on Windows operating systems, applicable for versions below and above 6.3. It includes sample run output and logging details.'
 tags: ['security', 'windows']
@@ -24,4 +24,6 @@ Windows OS
 ## Output
 
 - Script log
+
+
 

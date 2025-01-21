@@ -1,7 +1,7 @@
 ---
 id: 'b50eaaf9-9ec6-412b-85a6-44e6e82c43f9'
-title: 'Disable Removable Storage Devices on Endpoint'
-title_meta: 'Disable Removable Storage Devices on Endpoint'
+title: 'Removable Storage Disable'
+title_meta: 'Removable Storage Disable'
 keywords: ['removable', 'storage', 'disable', 'endpoint', 'security']
 description: 'This document details the procedure to disable removable storage devices on endpoints, ensuring enhanced security by preventing unauthorized access to removable media. It includes notes on reboot requirements, example agent procedure logs, and the registry modifications necessary for implementation.'
 tags: ['security', 'update', 'windows']
@@ -39,5 +39,7 @@ Sets HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//Den
 ## Output
 
 AP Log
+
+
 
 

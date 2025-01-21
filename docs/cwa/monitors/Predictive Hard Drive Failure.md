@@ -1,7 +1,7 @@
 ---
 id: 'fbd607cd-0450-4fca-9f2c-2567a2af58d3'
-title: 'EPM - Disk - Internal Monitor - Predictive Hard Drive Failure'
-title_meta: 'EPM - Disk - Internal Monitor - Predictive Hard Drive Failure'
+title: 'Predictive Hard Drive Failure'
+title_meta: 'Predictive Hard Drive Failure'
 keywords: ['monitor', 'hard drive', 'failure', 'alert', 'maintenance', 'data', 'system']
 description: 'The EPM - Disk - Internal Monitor - Predictive Hard Drive Failure component detects potential hard drive failures by alerting users about errors detected in the past week, enabling proactive maintenance to prevent data loss or system failure.'
 tags: []
@@ -57,4 +57,6 @@ Disk Interface: \\<Disk Interface>
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
+
 

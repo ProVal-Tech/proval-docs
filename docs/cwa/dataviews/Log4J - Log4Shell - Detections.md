@@ -1,7 +1,7 @@
 ---
 id: '59595d20-d1f8-4406-b574-58a4d32b0384'
-title: 'EDF Log4J Vulnerability Report'
-title_meta: 'EDF Log4J Vulnerability Report'
+title: 'Log4J - Log4Shell - Detections'
+title_meta: 'Log4J - Log4Shell - Detections'
 keywords: ['edf', 'log4j', 'vulnerability', 'scan', 'security']
 description: 'This document provides a comprehensive overview of the EDFs filled by the SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan, detailing vulnerability information related to the Log4J/Log4Shell exploit and the results of the scans conducted.'
 tags: ['report', 'security', 'vulnerability']
@@ -31,4 +31,6 @@ This document displays information about the EDFs filled by the [SEC - Endpoint 
 | Log Location                 | The location on the computer of the script log file.               |
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c1f915c9-34cb-4ea1-88fb-5a32ecc66eca'
-title: 'Remove Windows 10 Upgrade Assistant'
-title_meta: 'Remove Windows 10 Upgrade Assistant'
+title: 'Windows - Uninstall Win 10 Update Assistant'
+title_meta: 'Windows - Uninstall Win 10 Update Assistant'
 keywords: ['windows', 'upgrade', 'assistant', 'uninstall', 'software']
 description: 'This document outlines a script designed to remove the Windows 10 Upgrade Assistant application from a target machine, detailing the process, dependencies, and expected outcomes.'
 tags: ['performance', 'software', 'uninstallation', 'windows']
@@ -34,4 +34,6 @@ The script will first check if the Windows 10 Upgrade Assistant is installed. If
 ## Output
 
 - Script log messages only
+
+
 

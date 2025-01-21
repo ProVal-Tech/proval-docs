@@ -1,7 +1,7 @@
 ---
 id: '50d6c9a0-11d6-4d2f-bbc3-47411502448e'
-title: 'Install Windows 11 Upgrade'
-title_meta: 'Install Windows 11 Upgrade'
+title: 'Install Windows 11'
+title_meta: 'Install Windows 11'
 keywords: ['windows', 'upgrade', 'installation', 'script', 'update']
 description: 'This document outlines a PowerShell script designed to facilitate the upgrade of a Windows 10 computer to Windows 11 using the Windows Update Agent. It includes implementation details, sample runs, and necessary checks for compatibility and system health before proceeding with the upgrade process.'
 tags: ['installation', 'update', 'windows']
@@ -441,4 +441,6 @@ The final task should look like the screenshot below.
 - Script logs  
 ![Script Logs](../../../static/img/Install-Windows-11/image_60.png)  
 (**This output is from an incompatible Windows 10 computer.**)
+
+
 

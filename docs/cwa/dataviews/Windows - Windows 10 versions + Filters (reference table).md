@@ -1,7 +1,7 @@
 ---
 id: 'f459645f-0d19-4a73-ad4c-8ddcb3ce4b13'
-title: 'Windows 10 Build Information and Patch Policies'
-title_meta: 'Windows 10 Build Information and Patch Policies'
+title: 'Windows - Windows 10 versions + Filters (reference table)'
+title_meta: 'Windows - Windows 10 versions + Filters (reference table)'
 keywords: ['windows', 'patch', 'policy', 'build', 'support', 'rmm']
 description: 'This document provides a comprehensive overview of Windows 10 build information and patch policies, detailing the dependencies, columns, and key metrics related to the management and support of Windows 10 systems within an RMM environment.'
 tags: ['windows']
@@ -34,4 +34,6 @@ This document contains information about Windows 10 build information and patch 
 | Days Since Last Patched   | Days since last contact with RMM                    |
 | Supported Till            | Support End Date                                    |
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
+
+
 

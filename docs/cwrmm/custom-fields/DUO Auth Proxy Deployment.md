@@ -1,7 +1,7 @@
 ---
 id: '94f21e35-d184-4fb5-9215-898bb367a0e9'
-title: 'DUO Auth Proxy Deployment Solution'
-title_meta: 'DUO Auth Proxy Deployment Solution'
+title: 'DUO Auth Proxy Deployment'
+title_meta: 'DUO Auth Proxy Deployment'
 keywords: ['duo', 'deployment', 'custom', 'fields', 'proxy', 'authentication', 'solution']
 description: 'This document provides detailed information about the custom fields used in the DUO Auth Proxy Deployment Solution, including dependencies, field types, and step-by-step instructions for creating custom fields within the system.'
 tags: ['security', 'setup', 'software']
@@ -46,5 +46,7 @@ The custom fields listed below are used in the DUO Auth Proxy Deployment Solutio
    **Note:** The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
 
 4. Please follow the same steps to create other custom fields.
+
+
 
 

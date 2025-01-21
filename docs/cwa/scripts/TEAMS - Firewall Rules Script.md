@@ -1,7 +1,7 @@
 ---
 id: '12806812-6720-41bc-9b7c-632fe1620db8'
-title: 'Set Teams Firewall Rules for Users'
-title_meta: 'Set Teams Firewall Rules for Users'
+title: 'TEAMS - Firewall Rules Script'
+title_meta: 'TEAMS - Firewall Rules Script'
 keywords: ['teams', 'firewall', 'users', 'rules', 'automation']
 description: 'This document outlines a PowerShell script that sets firewall rules for Microsoft Teams users, excluding public users and specific administrative accounts. The script checks the PowerShell version, executes the necessary commands, and logs the results for review. It aims to streamline the process and save time in user management.'
 tags: ['security', 'setup', 'windows']
@@ -39,4 +39,6 @@ This script executes PowerShell commands that set rules for Teams for all users 
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '4ffcbf2c-6ba7-4373-a4f0-558f969557ca'
-title: 'Folder Redirection Audit'
-title_meta: 'Folder Redirection Audit'
+title: 'Audit-FolderRedirection'
+title_meta: 'Audit-FolderRedirection'
 keywords: ['folder', 'redirection', 'audit', 'gpo', 'data']
 description: 'This document outlines a solution for auditing folder redirection policies on target machines, allowing users to visualize effective policies, redirected folders, and their destinations. It includes associated content, implementation steps, and FAQs regarding the script and data collection.'
 tags: ['gpo', 'report', 'security', 'setup', 'windows']
@@ -35,4 +35,6 @@ It can be utilized to visually see users with an effective folder redirection po
 
 1. What happens if I run this on a schedule? Will the table bloat?
    1. Not necessarily. If the script is run multiple times on the same machine, it will update the 'value' column in the custom table only, using the `computerID`, the `User`, and the `PropertyName` as the primary keys. So, unless a new user is added, data will simply be changed rather than added. On average, one computer with one user will render about 16 KiB of data in the table.
+
+
 

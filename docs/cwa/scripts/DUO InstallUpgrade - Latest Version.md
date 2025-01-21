@@ -1,7 +1,7 @@
 ---
 id: '99a31695-f399-4982-989b-5fbc3aada8c6'
-title: 'Install or Update DUO Authentication for Windows'
-title_meta: 'Install or Update DUO Authentication for Windows'
+title: 'DUO InstallUpgrade - Latest Version'
+title_meta: 'DUO InstallUpgrade - Latest Version'
 keywords: ['duo', 'authentication', 'windows', 'installer', 'update']
 description: 'This document provides a comprehensive guide on installing or updating DUO Authentication for Windows. The script checks for the latest version, verifies the installer’s hash, and outlines the necessary configurations and parameters for successful deployment.'
 tags: ['update', 'windows']
@@ -101,4 +101,6 @@ duo-win-login-latest.exe /S /V"/qn IKEY=\"Your_IKEY\" SKEY=\"Your_SKEY\" HOST=\"
 ## Output
 
 - Script log
+
+
 

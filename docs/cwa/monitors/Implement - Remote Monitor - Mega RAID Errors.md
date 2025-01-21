@@ -1,7 +1,7 @@
 ---
 id: '94acea25-1d14-4ccd-8991-045331d05fde'
-title: 'Steps to Configure Alerts and Monitors'
-title_meta: 'Steps to Configure Alerts and Monitors'
+title: 'Implement - Remote Monitor - Mega RAID Errors'
+title_meta: 'Implement - Remote Monitor - Mega RAID Errors'
 keywords: ['configure', 'alerts', 'monitors', 'sql', 'setup']
 description: 'This document outlines the steps to configure alert templates and monitors in ConnectWise Automate, including SQL queries for monitoring Windows machines excluding virtual ones and setting up appropriate alert actions and templates.'
 tags: ['setup', 'windows']
@@ -206,4 +206,6 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ### 8.
 Set the appropriate alert template.
+
+
 

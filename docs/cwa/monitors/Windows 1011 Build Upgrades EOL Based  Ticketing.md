@@ -1,7 +1,7 @@
 ---
 id: 'f9d7bc4e-9cee-4bd6-a471-7910c3068e3d'
-title: 'Windows Upgrade Ticketing Monitor'
-title_meta: 'Windows Upgrade Ticketing Monitor'
+title: 'Windows 1011 Build Upgrades EOL Based  Ticketing'
+title_meta: 'Windows 1011 Build Upgrades EOL Based  Ticketing'
 keywords: ['monitor', 'ticketing', 'windows', 'upgrade', 'failure']
 description: 'This document describes a monitor designed for ticketing purposes related to Windows upgrades, specifically excluding machines with open failure tickets. It generates tickets for computers failing to upgrade due to various reasons, ensuring effective management and troubleshooting.'
 tags: ['ticketing', 'windows']
@@ -38,4 +38,6 @@ Managed Service Plan Groups for Windows Workstations
 
 - **Success Message:**  
   The machine %COMPUTERNAME% located at %CLIENTNAME%//%LOCATIONNAME% is no longer reported to be on an EoL build or has been offline for greater than 7 days since the ticket was generated. Closing ticket.
+
+
 

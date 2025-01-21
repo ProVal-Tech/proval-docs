@@ -1,7 +1,7 @@
 ---
 id: 'a05e9615-3a00-4b03-96d8-775acd8c2ac1'
-title: 'Hyper-V Maintenance Mode Script'
-title_meta: 'Hyper-V Maintenance Mode Script for Virtual Machines'
+title: 'VM Host - Maint Mode Dependent Machines'
+title_meta: 'VM Host - Maint Mode Dependent Machines'
 keywords: ['hyper-v', 'maintenance', 'virtualization', 'alerts', 'script']
 description: 'This document outlines a script designed to place virtual machines hosted on a Hyper-V Host into Maintenance mode for a duration of 60 minutes. During this period, alerts will be suppressed, and script execution will be limited on the affected virtual machines, ensuring a smooth maintenance process.'
 tags: ['hyper-v', 'security', 'virtualization']
@@ -20,4 +20,6 @@ The script will place the virtual machines hosted on a Hyper-V Host into Mainten
 What will be set on all VMs running with an Automate Agent on the host:
 
 ![Image](../../../static/img/VM-Host---Maint-Mode-Dependent-Machines/image_2.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-update-adobecc
 title: 'Update-AdobeCC'
-title_meta: 'Update-AdobeCC Command'
+title_meta: 'Update-AdobeCC'
 keywords: ['adobe', 'creativecloud', 'update', 'software']
 description: 'Documentation for the Update-AdobeCC command to list or update products for Adobe Creative Cloud.'
 tags: ['adobe', 'installation', 'software', 'update']
@@ -37,4 +37,6 @@ Update-AdobeCC.ps1 -Mode Update
 - .\Update-AdobeCC-log.txt
 - .\Update-AdobeCC-data.txt
 - .\Update-AdobeCC-error.txt
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '904989a6-fe21-4e40-adb6-17d1168c830e'
-title: 'Winget App Audit Data Storage'
-title_meta: 'Winget App Audit Data Storage'
+title: 'pvl_winget_audit'
+title_meta: 'pvl_winget_audit'
 keywords: ['audit', 'data', 'storage', 'winget', 'application']
 description: 'This document outlines the purpose and structure for storing audit data retrieved by the Winget App Audit script. It includes details about the dependencies, the specific database table used for storage, and descriptions of each column in the table.'
 tags: ['database', 'setup', 'software', 'windows']
@@ -33,4 +33,6 @@ This document stores the audit data fetched by the [Winget App Audit](https://pr
 | Level                | varchar   | Installation level of the application (System/User).                                            |
 | AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script's document for detailed instructions on enabling Auto Update. |
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
+
+
 

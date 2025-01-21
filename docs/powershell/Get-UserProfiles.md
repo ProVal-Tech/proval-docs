@@ -1,7 +1,7 @@
 ---
 id: ps-get-userprofiles
 title: 'Get-UserProfiles'
-title_meta: 'Get-UserProfiles Command'
+title_meta: 'Get-UserProfiles'
 keywords: ['user', 'profiles', 'local', 'admin']
 description: 'Documentation for the Get-UserProfiles command to gather information about user profiles on a Windows system.'
 tags: ['security', 'windows']
@@ -40,4 +40,6 @@ Gathers information about user profiles.
 
 ## Output
 - .\Get-UserProfiles-log.txt
+
+
 

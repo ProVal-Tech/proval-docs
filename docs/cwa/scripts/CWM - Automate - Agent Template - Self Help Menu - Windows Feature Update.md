@@ -1,7 +1,7 @@
 ---
 id: '0c25060b-1272-449f-af97-64169e636e95'
-title: 'Adding Windows Feature Update to Self Help Menu'
-title_meta: 'Adding Windows Feature Update to Self Help Menu'
+title: 'CWM - Automate - Agent Template - Self Help Menu - Windows Feature Update'
+title_meta: 'CWM - Automate - Agent Template - Self Help Menu - Windows Feature Update'
 keywords: ['windows', 'feature', 'update', 'self', 'help', 'menu', 'script']
 description: 'This article outlines the step-by-step process to add the Windows Feature Update option in the Self Help menu, enabling the installation of the latest feature pack for Windows 10 and 11 through a script.'
 tags: ['software', 'update', 'windows']
@@ -76,4 +76,6 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_17.png)  
 
 Configuration updates will take effect on devices after running the `Update Config` command.
+
+
 

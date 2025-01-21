@@ -1,7 +1,7 @@
 ---
 id: 'b025f2ba-7f7a-40f2-a742-908dc28d3962'
-title: 'Bitlocker Monitoring Script'
-title_meta: 'Bitlocker Monitoring Script for Client Machines'
+title: 'Bitlocker - Recovery Password Automate Backup Missing'
+title_meta: 'Bitlocker - Recovery Password Automate Backup Missing'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'audit']
 description: 'This document provides a comprehensive overview of a monitoring script designed to identify target machines with specific Bitlocker monitoring criteria. It includes dependencies, target recommendations, translated SQL queries, and a visual representation of ticketing processes.'
 tags: ['database', 'encryption', 'report', 'security']
@@ -101,4 +101,6 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Recovery-Password-Automate-Backup-Missing/image_1.png)
+
+
 

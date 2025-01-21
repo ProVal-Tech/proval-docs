@@ -1,7 +1,7 @@
 ---
 id: '27c68799-35d0-4034-b0b5-b8a7736288df'
-title: 'SMBv1 Enabled Detection & Remediation Dataview'
-title_meta: 'SMBv1 Enabled Detection & Remediation Dataview'
+title: 'SMBv1 Status Audit'
+title_meta: 'SMBv1 Status Audit'
 keywords: ['smbv1', 'detection', 'remediation', 'dataview', 'agent']
 description: 'This document provides a comprehensive overview of the dataview that gathers data from the SMBv1 Enabled Detection & Remediation script, detailing the status of SMB on agents where it is deployed, including client information, operating system, and vulnerability state.'
 tags: ['vulnerability']
@@ -30,4 +30,6 @@ This dataview gathers data from the script [CWA Script - SMBv1 Enabled Detection
 | SMBv1 Logging             | This stores the PowerShell execution output of the script for logging                         |
 | SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) |
 | SMBv1 Vulnerability State  | This indicates whether the device is vulnerable or not based on the script output detection    |
+
+
 

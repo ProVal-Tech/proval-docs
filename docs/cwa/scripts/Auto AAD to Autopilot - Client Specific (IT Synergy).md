@@ -1,7 +1,7 @@
 ---
 id: '8b128210-5b70-4155-ade6-83ab5365911c'
-title: 'Auto AD to Autopilot Script'
-title_meta: 'Auto AD to Autopilot Script'
+title: 'Auto AAD to Autopilot - Client Specific (IT Synergy)'
+title_meta: 'Auto AAD to Autopilot - Client Specific (IT Synergy)'
 keywords: ['script', 'autopilot', 'aad', 'registry', 'windows']
 description: 'This document outlines a PowerShell script designed to automate the addition of Active Directory to Windows Autopilot by checking specific registry values and executing necessary commands if conditions are met. It includes setup instructions, sample run outputs, dependencies, and detailed process steps.'
 tags: ['security', 'update', 'windows']
@@ -55,4 +55,6 @@ AppID, AppSecret, and Tenant ID EDFs must be set at the client level.
 - If the output does not contain "All Devices synced," then `Get-WindowsAutoPilotInfo.ps1` failed, and the script will fail.
 - If the `FinishStatus` of the script PowerShell response - All Errors - Check is false, then the check for common environmental errors found a known issue, and the script will fail.
 - The script log will hold any error type information.
+
+
 

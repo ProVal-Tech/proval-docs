@@ -1,7 +1,7 @@
 ---
 id: '4edbd7bf-3815-4745-9c40-42cef872a4f4'
-title: 'Transfer Restricted Machines to ConnectWise Control'
-title_meta: 'Transfer Restricted Machines to ConnectWise Control'
+title: 'Update CWControl with Restricted Machine State'
+title_meta: 'Update CWControl with Restricted Machine State'
 keywords: ['connectwise', 'control', 'restricted', 'machines', 'permissions', 'script']
 description: 'This document outlines a script designed to transfer members of the Restricted Machines group in ConnectWise Automate to an equivalent permission set in ConnectWise Control, including manual setup requirements and detailed variable documentation.'
 tags: ['connectwise', 'security', 'setup']
@@ -73,4 +73,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

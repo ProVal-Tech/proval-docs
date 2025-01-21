@@ -1,7 +1,7 @@
 ---
 id: 'b7936e96-423d-4c53-bd95-d10a6c4861f1'
-title: 'Internal Monitor for Microsoft OneDrive Sync Status'
-title_meta: 'Internal Monitor for Microsoft OneDrive Sync Status'
+title: 'Execute Script - Microsoft OneDrive Sync Status'
+title_meta: 'Execute Script - Microsoft OneDrive Sync Status'
 keywords: ['monitor', 'onedrive', 'script', 'execution', 'workstations']
 description: 'This document outlines the implementation of an internal monitor designed to execute a script that checks the Microsoft OneDrive sync status on Windows workstations. The monitor targets machines with active user sessions and limits execution to 200 machines per hour for optimal resource management.'
 tags: ['performance', 'windows']
@@ -24,4 +24,6 @@ Global
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Microsoft OneDrive Sync Status`
+
+
 

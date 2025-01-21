@@ -1,7 +1,7 @@
 ---
 id: ps-get-hpilohealthreport
 title: 'Get-HPiLOHealthReport'
-title_meta: 'Get-HPiLOHealthReport Command'
+title_meta: 'Get-HPiLOHealthReport'
 keywords: ['hp', 'ilo', 'health', 'report']
 description: 'Documentation for the Get-HPiLOHealthReport command to get a health report from the target HP iLO address.'
 tags: ['networking', 'performance']
@@ -149,4 +149,6 @@ UUID        Property   string UUID {get;set;}
 .\Get-HPiLOHealthReport-log.txt
 .\Get-HPiLOHealthReport-error.txt
 ```
+
+
 

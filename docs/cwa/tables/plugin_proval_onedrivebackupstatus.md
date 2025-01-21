@@ -1,7 +1,7 @@
 ---
 id: 'e8a689d5-5075-416d-a38c-c0bb09487825'
-title: 'OneDrive Redirection Information'
-title_meta: 'OneDrive Redirection Information'
+title: 'plugin_proval_onedrivebackupstatus'
+title_meta: 'plugin_proval_onedrivebackupstatus'
 keywords: ['onedrive', 'redirection', 'backup', 'user', 'audit']
 description: 'This document provides detailed information about the redirection of Desktop, Documents, and Pictures folders to OneDrive for individual users, including the status of each redirection and relevant audit data.'
 tags: ['backup', 'onedrive']
@@ -32,4 +32,6 @@ This document stores information about the redirection of Desktop, Documents, an
 | PicturesEnabled    | TINYINT  | 1 or 0 indicating if Pictures redirection is enabled or disabled. |
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
+
+
 

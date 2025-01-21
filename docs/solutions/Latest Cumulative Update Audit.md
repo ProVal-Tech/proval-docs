@@ -1,7 +1,7 @@
 ---
 id: '8f2741e6-ef04-4a1e-804d-f481469e8beb'
-title: 'Cumulative Update Audit'
-title_meta: 'Cumulative Update Audit'
+title: 'Latest Cumulative Update Audit'
+title_meta: 'Latest Cumulative Update Audit'
 keywords: ['cumulative', 'update', 'audit', 'microsoft', 'compliance']
 description: 'This document outlines a solution that retrieves the computer build number, compares it with Microsoft’s database to identify the installed Cumulative Update, and assesses its compliance status based on the update age.'
 tags: ['compliance', 'database', 'windows']
@@ -28,4 +28,6 @@ The solution retrieves the computer's build number and compares it with Microsof
 - Create the task: [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029444)
+
+
 

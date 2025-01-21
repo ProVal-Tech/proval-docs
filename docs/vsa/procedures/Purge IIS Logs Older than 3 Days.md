@@ -1,7 +1,7 @@
 ---
 id: '43cfcc23-05a8-4411-a901-65a819894164'
-title: 'IIS Log Files Purge'
-title_meta: 'IIS Log Files Purge'
+title: 'Purge IIS Logs Older than 3 Days'
+title_meta: 'Purge IIS Logs Older than 3 Days'
 keywords: ['iis', 'log', 'purge', 'files', 'cleanup', 'script', 'powershell']
 description: 'This document provides a detailed overview of a PowerShell script designed to remove IIS log files older than 3 days from a specified directory. The script logs actions taken, including successes and failures, and outlines the command execution process along with example agent procedure logs.'
 tags: ['cleanup', 'iis', 'windows']
@@ -102,4 +102,6 @@ None
 ## Output
 
 Script Logs
+
+
 

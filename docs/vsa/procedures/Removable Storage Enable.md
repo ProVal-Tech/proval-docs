@@ -1,7 +1,7 @@
 ---
 id: 'e6349f40-ad92-422c-88d9-654b9bb87b49'
-title: 'Enable Removable Storage Devices on Endpoint'
-title_meta: 'Enable Removable Storage Devices on Endpoint'
+title: 'Removable Storage Enable'
+title_meta: 'Removable Storage Enable'
 keywords: ['removable', 'storage', 'endpoint', 'enable', 'devices']
 description: 'This document outlines the procedure to enable removable storage devices on endpoints. It includes a detailed agent procedure log example, the process of modifying registry settings, and expected output after execution.'
 tags: ['security', 'setup', 'windows']
@@ -35,6 +35,8 @@ Sets `HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//De
 ## Output
 
 AP Log
+
+
 
 
 

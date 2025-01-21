@@ -1,7 +1,7 @@
 ---
 id: '16fd768b-b679-4ad4-92e3-e58e2fb1ed74'
-title: 'Patch Audit Data Overview'
-title_meta: 'Patch Audit Data Overview'
+title: 'Patch Config Audit'
+title_meta: 'Patch Config Audit'
 keywords: ['patch', 'audit', 'data', 'management', 'windows']
 description: 'This document provides an overview of the patch audit data stored in the pvl_patch_config table, including details on discrepancies between the values on computers and the defined settings in the Patch Manager - WUA Settings Validation script. It covers dependencies, column explanations, and format control for monitoring patch compliance.'
 tags: ['report', 'update', 'windows']
@@ -71,4 +71,6 @@ A red cell in the dataview indicates that the values available on that computer 
 | WindowsUpdateDeferQualityUpdatesPeriodInDays | Not Equal | 0 | Red   |
 | UpgradeDisabled                    | Not Equal | 0         | Red   |
 | Needs Adjustment                   | Equals   | 1         | Red   |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5ed671db-6295-42ed-9f44-cd0b4203c4e4'
-title: 'Webroot Keycode Verification Dataview'
-title_meta: 'Webroot Keycode Verification Dataview'
+title: 'Webroot KeyCode AuditScript'
+title_meta: 'Webroot KeyCode AuditScript'
 keywords: ['webroot', 'keycode', 'verification', 'dataview', 'status']
 description: 'This document provides a dataview that displays the Webroot hashed keycode present on a machine, its status, and whether it matches the keycode setup under the Webroot plugin or with the EDF "Webroot site Keycode". It includes dependencies and a detailed description of the columns available in the dataview.'
 tags: ['webroot']
@@ -28,4 +28,6 @@ This dataview shows the Webroot hashed keycode present on the machine, the statu
 | OS                  | Displays the operating system.                                        |
 | Encrypted Keycode   | Displays the currently present Webroot encrypted keycode.             |
 | KeyCode Status      | Displays the keycode status, indicating whether it matches the keycode setup under the Webroot plugin. |
+
+
 

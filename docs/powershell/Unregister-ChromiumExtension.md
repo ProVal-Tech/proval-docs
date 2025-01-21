@@ -1,7 +1,7 @@
 ---
 id: ps-unregister-chromiumextension
 title: 'Unregister-ChromiumExtension'
-title_meta: 'Unregister-ChromiumExtension Command'
+title_meta: 'Unregister-ChromiumExtension'
 keywords: ['unregister', 'chromium', 'extension', 'remove']
 description: 'Documentation for the Unregister-ChromiumExtension command to remove and block extensions in Chromium-based browsers.'
 tags: ['chrome', 'web-browser']
@@ -40,4 +40,6 @@ This will remove uBlock Origin and Zoom Meetings from the registered extensions 
 ```
 .\Unregister-ChromiumExtension-log.txt
 ```
+
+
 

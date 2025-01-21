@@ -1,7 +1,7 @@
 ---
 id: '5630a369-2912-485b-a5f9-0c25b28eb432'
-title: 'Identifying Stuck Commands in ConnectWise Automate'
-title_meta: 'Identifying Stuck Commands in ConnectWise Automate'
+title: 'Machines With Stuck Commands'
+title_meta: 'Machines With Stuck Commands'
 keywords: ['connectwise', 'agent', 'commands', 'scripts', 'processing']
 description: 'This document provides a method to identify machines where commands from ConnectWise Automate and scripts are not processing on the agent, particularly when the count of executing stuck commands exceeds five. It also suggests potential solutions such as restarting the agent, services, or the Automate server for resolution.'
 tags: ['connectwise', 'recovery', 'setup']
@@ -22,4 +22,6 @@ It suggests restarting the agent, services, and/or the Automate server as potent
 ## Target
 
 - Global
+
+
 

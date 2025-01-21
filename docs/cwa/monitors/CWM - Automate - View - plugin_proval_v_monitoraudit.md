@@ -1,7 +1,7 @@
 ---
 id: 'b15d4142-5fc8-4352-8a5c-b039cde54b86'
-title: 'Monitor Audit Data Storage'
-title_meta: 'Monitor Audit Data Storage for Configuration Management'
+title: 'CWM - Automate - View - plugin_proval_v_monitoraudit'
+title_meta: 'CWM - Automate - View - plugin_proval_v_monitoraudit'
 keywords: ['monitor', 'audit', 'configuration', 'data', 'alert', 'ticket', 'service', 'frequency']
 description: 'This document outlines the purpose and structure of storing data related to monitors and their configurations, including dependencies and the specific table schema for managing monitor audit data within the ConnectWise Automate platform.'
 tags: ['database']
@@ -38,4 +38,6 @@ This document stores data about monitors and their configuration.
 | Category Name           | VARCHAR     | The category assigned to the alert.              |
 | Service Board           | VARCHAR     | The service board that the alert will post to.  |
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
+
+
 

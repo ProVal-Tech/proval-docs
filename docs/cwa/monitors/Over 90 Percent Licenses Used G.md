@@ -1,7 +1,7 @@
 ---
 id: 'b3d41d1c-e687-4e39-811a-83d6fb99c14d'
-title: 'Checks Current Automate License Availability'
-title_meta: 'Checks Current Automate License Availability'
+title: 'Over 90 Percent Licenses Used G'
+title_meta: 'Over 90 Percent Licenses Used G'
 keywords: ['automate', 'license', 'monitor', 'alert', 'tickets']
 description: 'This document provides an overview of how to check the current availability of Automate licenses, including suggested monitor failure thresholds and alert templates for ticket generation. It also outlines important considerations for on-prem and hosted partners regarding ticket generation.'
 tags: ['usage']
@@ -24,4 +24,6 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 
 The suggested target for the monitor is as follows:  
 Global - Should be run without explicitly defined targets.
+
+
 

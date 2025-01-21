@@ -1,7 +1,7 @@
 ---
 id: '7c336dbd-72cb-4099-8be1-19c78f54cabb'
-title: 'Failed to Add RSAT Features'
-title_meta: 'Failed to Add RSAT Features'
+title: 'Add Windows Capability - RSAT'
+title_meta: 'Add Windows Capability - RSAT'
 keywords: ['rsat', 'windows', 'monitor', 'ticket', 'automation']
 description: 'This document outlines the process for monitoring Windows machines to ensure that the Remote Server Administration Tools (RSAT) feature is enabled. If the feature is not enabled, an Automate ticket will be created if the installation attempt fails. The document includes details on suggested alert styles, ticketing information, and implementation steps.'
 tags: ['ticketing', 'windows']
@@ -48,4 +48,6 @@ Required Group of Machines
 ## Implementation
 
 [Implement - Remote Monitor - Add Windows Capability - RSAT](<./Add Windows Capability - RSAT.md>)
+
+
 

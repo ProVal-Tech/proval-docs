@@ -1,7 +1,7 @@
 ---
 id: '04d18467-ad93-4ed2-8da9-52796031d41c'
-title: 'Egnyte Installation Procedure'
-title_meta: 'Egnyte Installation Procedure'
+title: 'Egnyte - Install'
+title_meta: 'Egnyte - Install'
 keywords: ['egnyte', 'installation', 'software', 'office', 'reboot']
 description: 'This document outlines the agent procedure for updating and installing the Egnyte software, including the steps taken to kill all Office applications prior to installation and prompting for a reboot afterward. The example agent procedure log provides detailed insights into the actions and results of the installation process.'
 tags: ['cleanup', 'installation', 'reboot', 'software', 'windows']
@@ -43,4 +43,6 @@ The procedure requires the custom field to run: [Custom Field - Egnyte - Install
 ## Output
 
 Agent Logs
+
+
 

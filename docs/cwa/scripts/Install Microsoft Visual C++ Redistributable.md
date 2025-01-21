@@ -1,7 +1,7 @@
 ---
 id: '3c808094-5ad4-4e14-9c57-0abc9fbc8ae2'
-title: 'Invoke-VcRedistModule for Automate'
-title_meta: 'Invoke-VcRedistModule for Automate - Install Microsoft Visual C++ Redistributable'
+title: 'Install Microsoft Visual C++ Redistributable'
+title_meta: 'Install Microsoft Visual C++ Redistributable'
 keywords: ['automate', 'vcredist', 'installation', 'redistributable', 'script']
 description: 'This document details an Automate implementation of the Invoke-VcRedistModule script, designed to install the Microsoft Visual C++ Redistributable. The script installs the supported redistributable by default but allows for user-defined parameters to customize the installation process.'
 tags: ['installation', 'software', 'windows']
@@ -30,5 +30,7 @@ An Automate implementation of the [Invoke-VcRedistModule](<../../powershell/Invo
 |----------|-----------------------|----------|-----------------------------------------------------------------------------------------------|
 | Release  | 20192012, 2013, 2022 | False    | Set the release id(s) of the Redistributable to install.                                   |
 | Purge    | 1                     | False    | Setting this parameter to 1 will remove the unsupported Redistributable and install the supported Redistributable. |
+
+
 
 

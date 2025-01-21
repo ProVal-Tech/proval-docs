@@ -1,7 +1,7 @@
 ---
 id: '7fbdffc1-7472-4276-914d-1e5b845dcd3c'
-title: 'ESXi Hosts Ticket Creation Script'
-title_meta: 'ESXi Hosts Ticket Creation Script'
+title: 'Ticket Creation - VMWare ESXi Monitoring'
+title_meta: 'Ticket Creation - VMWare ESXi Monitoring'
 keywords: ['esxi', 'ticket', 'monitor', 'alert', 'automation', 'script']
 description: 'This document outlines a script designed to automatically create tickets with information about ESXi hosts. The script is intended for use with internal monitoring systems, ensuring that critical data about ESXi hosts is captured and reported efficiently. It includes details on the required variables, sample run scenarios, and the process involved in utilizing the script effectively.'
 tags: ['esxi']
@@ -46,4 +46,6 @@ The only difference is that this script will write the ESXi hosts' information t
 
 - Script Log
 - Ticket
+
+
 

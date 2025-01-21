@@ -1,7 +1,7 @@
 ---
 id: '8f74652a-f8c3-4321-8fba-76921048c280'
-title: 'Webroot Stale Agents Detection'
-title_meta: 'Webroot Stale Agents Detection'
+title: 'Stale Agents'
+title_meta: 'Stale Agents'
 keywords: ['webroot', 'agents', 'monitor', 'detection', 'ticketing']
 description: 'This document outlines the process for detecting machines that are active in ConnectWise Automate but are not checking in with the Webroot portal for a specified number of days. It includes setup instructions, dependencies, and ticketing templates for alerting purposes.'
 tags: []
@@ -45,4 +45,6 @@ Last Seen by Automate: %RESULT%
 ```
 The computer %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
 ```
+
+
 

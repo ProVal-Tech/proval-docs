@@ -1,7 +1,7 @@
 ---
 id: ps-register-firefoxextension
 title: 'Register-FirefoxExtension'
-title_meta: 'Register-FirefoxExtension Command'
+title_meta: 'Register-FirefoxExtension'
 keywords: ['register', 'extension', 'firefox', 'browser']
 description: 'Documentation for the Register-FirefoxExtension command to add and mandate an extension in the Firefox browser.'
 tags: ['firefox', 'web-browser']
@@ -37,4 +37,6 @@ The output log can be found at:
 ```
 .\Register-FirefoxExtension-log.txt
 ```
+
+
 

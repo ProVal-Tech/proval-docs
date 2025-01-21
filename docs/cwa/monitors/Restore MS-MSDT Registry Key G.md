@@ -1,7 +1,7 @@
 ---
 id: 'e711d3f6-7a23-42da-8d60-400318c8b725'
-title: 'Microsoft Support Diagnostic Tool Vulnerability Monitor'
-title_meta: 'Microsoft Support Diagnostic Tool Vulnerability Monitor'
+title: 'Restore MS-MSDT Registry Key G'
+title_meta: 'Restore MS-MSDT Registry Key G'
 keywords: ['vulnerability', 'monitor', 'windows', 'security', 'diagnostic']
 description: 'This document outlines a monitor that triggers a script to restore the key on Windows computers where the required patches for the Microsoft Support Diagnostic Tool vulnerability are installed. It includes dependencies and target information for effective implementation.'
 tags: ['security', 'vulnerability', 'windows']
@@ -22,4 +22,6 @@ This monitor will trigger the [Workaround - Microsoft Support Diagnostic Tool Vu
 ## Target
 
 Windows computers
+
+
 

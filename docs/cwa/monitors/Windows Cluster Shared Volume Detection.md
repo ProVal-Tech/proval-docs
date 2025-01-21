@@ -93,3 +93,5 @@ unlisted: false
    - Validate that the monitor is limited to the search 'Windows 10/11 Machines'.
    - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
 
+
+

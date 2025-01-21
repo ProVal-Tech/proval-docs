@@ -1,7 +1,7 @@
 ---
 id: '487873f8-4b59-47bc-b938-c64903898d8a'
-title: 'RemoteAccess Service Check Monitor'
-title_meta: 'RemoteAccess Service Check Monitor'
+title: 'RemoteAccess Service Check'
+title_meta: 'RemoteAccess Service Check'
 keywords: ['remoteaccess', 'service', 'monitor', 'windows', 'ticketing']
 description: 'This document outlines the setup and functionality of a remote monitor that ensures the RemoteAccess service is running on Windows machines. It automatically sets the service to start type Automatic and attempts to restart it if it is stopped, creating a ticket if it fails to start.'
 tags: ['windows']
@@ -39,5 +39,7 @@ Limited to Windows machines only.
 
 - Follow the document below for import and implementation steps:  
   [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](<./RemoteAccess Service Check.md>)  
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: '3003a8ec-6b99-4b7d-ae31-438371e3b4f3'
-title: 'Windows Shadow Copy Audit Statistics'
-title_meta: 'Windows Shadow Copy Audit Statistics'
+title: 'plugin_proval_shadowcopy'
+title_meta: 'plugin_proval_shadowcopy'
 keywords: ['windows', 'shadowcopy', 'audit', 'statistics', 'endpoint', 'data']
 description: 'This document provides detailed information about the Windows Shadow Copy state for endpoints with Shadow Copy enabled. It includes a comprehensive table outlining the schema for storing shadow copy data collected from the specified script, along with dependencies and explanations for each column.'
 tags: ['database', 'performance', 'report', 'setup', 'windows']
@@ -31,4 +31,6 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy e
 | ShadowCopyCount   | INT     | Indicates the number of Shadow Copies on the machine.                                          |
 | OldestShadowCopy  | VARCHAR | Contains the oldest available Shadow Copy date.                                               |
 | LatestShadowCopy  | VARCHAR | Contains the most recent available Shadow Copy date.                                           |
+
+
 

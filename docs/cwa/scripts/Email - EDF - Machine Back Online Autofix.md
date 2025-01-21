@@ -1,7 +1,7 @@
 ---
 id: 'c32c5921-0bd1-4e4a-b605-baa0e958fbc0'
-title: 'CWM - Automate - Internal Monitor - Email Notification for Machine Back Online'
-title_meta: 'CWM - Automate - Internal Monitor - Email Notification for Machine Back Online'
+title: 'Email - EDF - Machine Back Online Autofix'
+title_meta: 'Email - EDF - Machine Back Online Autofix'
 keywords: ['email', 'alert', 'monitor', 'notification', 'machine']
 description: 'This document outlines the functionality of a script designed to send email notifications when a monitored machine comes back online. It integrates with the CWM - Automate - Internal Monitor for effective monitoring and alerting.'
 tags: ['email']
@@ -40,4 +40,6 @@ To be executed as an Autofix script only. The `△ Custom - E-Mail - Machine Bac
 - Email  
   Sample Email:  
   ![Sample Email](../../../static/img/Email---EDF---Machine-Back-Online-Autofix/image_1.png)
+
+
 

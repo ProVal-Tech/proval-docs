@@ -1,7 +1,7 @@
 ---
 id: '7eb4d98b-4199-4f59-a28f-bfdf50f3e36a'
-title: 'Out of Date Cumulative Update Autofix Settings'
-title_meta: 'Out of Date Cumulative Update Autofix Settings for ConnectWise RMM'
+title: 'Site - Out_of_Date_CU_Autofix'
+title_meta: 'Site - Out_of_Date_CU_Autofix'
 keywords: ['cumulative', 'update', 'autofix', 'site', 'servers']
 description: 'This document provides an overview of the Out of Date Cumulative Update Autofix settings available for sites in ConnectWise RMM. It details the options available, including Disable, Disable for Servers, Enable for Servers, and Enable, along with their implications and default behaviors.'
 tags: ['connectwise']
@@ -32,4 +32,6 @@ Select the Out of Date Cumulative Update Autofix setting for the site. Available
 
 ![Screenshot 1](../../../static/img/Site---Out_of_Date_CU_Autofix/image_1.png)
 ![Screenshot 2](../../../static/img/Site---Out_of_Date_CU_Autofix/image_2.png)
+
+
 

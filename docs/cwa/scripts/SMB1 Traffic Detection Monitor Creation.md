@@ -1,7 +1,7 @@
 ---
 id: 'ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9'
-title: 'Creating Remote Monitors for SMB1 Traffic Detection'
-title_meta: 'Creating Remote Monitors for SMB1 Traffic Detection'
+title: 'SMB1 Traffic Detection Monitor Creation'
+title_meta: 'SMB1 Traffic Detection Monitor Creation'
 keywords: ['smb1', 'monitor', 'traffic', 'detection', 'remote', 'properties', 'edf', 'alert', 'template', 'category']
 description: 'This document outlines the process for creating Remote Monitors for SMB1 Traffic Detection, detailing the necessary steps, dependencies, and configurations required for effective monitoring and alerting on SMB1 server status.'
 tags: []
@@ -94,4 +94,6 @@ Remote monitors will be set up on computers where the [SMB1 Detection](<../monit
 ## Output
 
 - Remote Monitors
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '231e029c-9c15-4a70-ac35-399e73d0d7bb'
-title: 'Retired Machines Summary'
-title_meta: 'Retired Machines Summary'
+title: 'Admin - Retired Assets Last 30 Days'
+title_meta: 'Admin - Retired Assets Last 30 Days'
 keywords: ['retired', 'machines', 'summary', 'comments', 'dataview']
 description: 'This document provides a summary of retired machines within the last 30 days, displaying relevant comments and details such as client name, location, machine name, operating system, manufacturer, internal IP address, and the date of retirement.'
 tags: ['networking', 'report', 'software', 'windows']
@@ -29,4 +29,6 @@ None
 | Local Address    | Internal IP address of the machine           |
 | Retired Date    | Date when the machine was retired            |
 | Retire Comments  | Comments associated with the retirement      |
+
+
 

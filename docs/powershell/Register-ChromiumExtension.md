@@ -1,7 +1,7 @@
 ---
 id: ps-register-chromiumextension
 title: 'Register-ChromiumExtension'
-title_meta: 'Register-ChromiumExtension Command'
+title_meta: 'Register-ChromiumExtension'
 keywords: ['register', 'extension', 'chromium', 'browser']
 description: 'Documentation for the Register-ChromiumExtension command to add and mandate extensions in Chromium-based browsers.'
 tags: ['chrome', 'web-browser']
@@ -41,4 +41,6 @@ The output will be logged in the following file:
 ```
 .\\Register-ChromiumExtension-log.txt
 ```
+
+
 

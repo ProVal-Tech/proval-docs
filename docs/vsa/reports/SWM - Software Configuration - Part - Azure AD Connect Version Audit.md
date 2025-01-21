@@ -1,7 +1,7 @@
 ---
 id: 'af56a1a9-743a-47ac-928a-8bddb0e616ca'
-title: 'Gathers CF Data from xPVAL Azure AD Connect Version'
-title_meta: 'Gathers CF Data from xPVAL Azure AD Connect Version'
+title: 'SWM - Software Configuration - Part - Azure AD Connect Version Audit'
+title_meta: 'SWM - Software Configuration - Part - Azure AD Connect Version Audit'
 keywords: ['cf', 'azure', 'ad', 'connect', 'version', 'audit']
 description: 'This document details the process of gathering configuration field data from the xPVAL Azure AD Connect Version and displays all endpoints that have a valid version. It outlines dependencies, layout specifications, and filtering criteria for effective reporting.'
 tags: ['report', 'software', 'windows']
@@ -34,4 +34,6 @@ List the report parts used. If custom report parts were designed during report c
   - **Advanced Filters (Field, Operator, Value):**
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
+
+
 

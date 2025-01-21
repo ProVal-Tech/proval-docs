@@ -1,7 +1,7 @@
 ---
 id: '6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d'
-title: 'Internal Monitor for Connection Audit'
-title_meta: 'Internal Monitor for Connection Audit'
+title: 'Update Table - pvl_automate_connection_audit'
+title_meta: 'Update Table - pvl_automate_connection_audit'
 keywords: ['monitor', 'audit', 'connection', 'database', 'update']
 description: 'This document explains the functionality of the internal monitor that runs every 5 minutes to update the pvl_automate_connection_audit table by logging entries for computers whose current state differs from their previously saved state. It serves as an efficient alternative to running client scripts at frequent intervals.'
 tags: ['database', 'report', 'update']
@@ -21,4 +21,6 @@ The internal monitor runs every 5 minutes and adds an entry to the [pvl_automate
 ## Target
 
 Global
+
+
 

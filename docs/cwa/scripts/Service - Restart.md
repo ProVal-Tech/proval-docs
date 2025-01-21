@@ -1,7 +1,7 @@
 ---
 id: 'e5e1f07f-f6ed-41bc-b0f1-b2cc86e059e1'
-title: 'Restart Services Script with Error Handling'
-title_meta: 'Restart Services Script with Error Handling'
+title: 'Service - Restart'
+title_meta: 'Service - Restart'
 keywords: ['restart', 'services', 'error', 'handling', 'windows']
 description: 'This document outlines a script designed to restart one or more services on Windows machines with comprehensive error handling. It includes implementation steps, dependencies, user parameters, and system properties necessary for successful execution. The script can be triggered through a custom alert template for automated service management.'
 tags: ['ticketing', 'windows']
@@ -82,4 +82,6 @@ From Group Monitor:
 - Script log (for detailed information on individual results)
 - Tickets (if enabled)
 - Emails (if enabled)
+
+
 

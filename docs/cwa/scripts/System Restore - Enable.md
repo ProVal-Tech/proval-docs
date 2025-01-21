@@ -1,7 +1,7 @@
 ---
 id: '5263a1ab-49c0-49f0-a5b5-9f9062229b86'
-title: 'Enable System Restore on Windows Workstations'
-title_meta: 'Enable System Restore on Windows Workstations'
+title: 'System Restore - Enable'
+title_meta: 'System Restore - Enable'
 keywords: ['system', 'restore', 'windows', 'workstations', 'script']
 description: 'This document provides a detailed guide on enabling System Restore on Windows workstations using a PowerShell script. It covers user parameters, dependencies, and the process involved in executing the script, along with the expected output.'
 tags: ['performance', 'recovery', 'setup', 'windows']
@@ -41,4 +41,6 @@ The script will run a PowerShell command that enables System Restore on the targ
 ## Output
 
 - Script log message only
+
+
 

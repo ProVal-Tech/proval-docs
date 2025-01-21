@@ -1,7 +1,7 @@
 ---
 id: '1bbb16d1-e01f-48c0-8957-1f8b1fc35a83'
-title: 'Run CHKDSK for All Internal Drives'
-title_meta: 'Run CHKDSK for All Internal Drives - Automated Disk Check'
+title: 'CHKDSK - Run (All Drives)'
+title_meta: 'CHKDSK - Run (All Drives)'
 keywords: ['chkdsk', 'internal', 'drives', 'script', 'automation']
 description: 'This document provides a detailed overview of a script designed to automate the CHKDSK process for all internal drives on a machine. It includes parameters for ticket creation and outlines the process for checking and fixing bad sectors, along with logging output.'
 tags: ['disk-encryption', 'security', 'ticketing', 'windows']
@@ -32,4 +32,6 @@ This script will run CHKDSK for all internal drives on a machine. It first check
 ## Output
 
 - Script log
+
+
 

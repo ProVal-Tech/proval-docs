@@ -1,7 +1,7 @@
 ---
 id: 'faf8b7d6-6685-43be-a223-0c6ce7195147'
-title: 'Hyper-V Snapshot Age Monitoring'
-title_meta: 'Hyper-V Snapshot Age Monitoring'
+title: 'VM Snapshot older than 3 days'
+title_meta: 'VM Snapshot older than 3 days'
 keywords: ['hyper-v', 'snapshot', 'monitoring', 'database', 'alert']
 description: 'This document outlines the implementation steps for monitoring Hyper-V snapshot age using a SQL query. It provides a detailed SQL command to insert monitoring agents and instructions for applying the alert template in the ConnectWise Automate environment.'
 tags: ['database', 'hyper-v']
@@ -84,4 +84,6 @@ unlisted: false
 2. **Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.**
 
    **Group Path:** `Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows Hyper-V Host Group.`
+
+
 

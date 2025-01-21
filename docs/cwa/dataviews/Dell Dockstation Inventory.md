@@ -1,7 +1,7 @@
 ---
 id: '8551929f-3af4-45ac-9edf-00f733193d56'
-title: 'Dockstations Inventory for Dell Workstations'
-title_meta: 'Dockstations Inventory for Dell Workstations'
+title: 'Dell Dockstation Inventory'
+title_meta: 'Dell Dockstation Inventory'
 keywords: ['dockstations', 'inventory', 'dell', 'workstations', 'monitoring']
 description: 'This document provides an overview of the available Dockstations Inventory for Dell Workstations, including details on dependencies, columns, and descriptions gathered by the Get-DellDockStation script.'
 tags: ['bios', 'dell', 'installation']
@@ -39,4 +39,6 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Manufacture Date    | Manufacture date of the dockstation                |
 | Dock Name           | Name of the dockstation                            |
 | Script Last Ran     | Last time the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) executed on the machine |
+
+
 

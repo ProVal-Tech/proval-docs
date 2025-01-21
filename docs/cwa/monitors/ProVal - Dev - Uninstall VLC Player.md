@@ -1,7 +1,7 @@
 ---
 id: '5e887154-c307-4ac7-9b75-0a85c516dbad'
-title: 'Remote Monitor for VLC Media Player Uninstallation'
-title_meta: 'Remote Monitor for VLC Media Player Uninstallation'
+title: 'ProVal - Dev - Uninstall VLC Player'
+title_meta: 'ProVal - Dev - Uninstall VLC Player'
 keywords: ['remote', 'monitor', 'vlc', 'uninstallation', 'windows', 'workstations']
 description: 'This document outlines the setup for a remote monitor designed to uninstall VLC Media Player from Windows workstations, including configuration details, ticketing information, and import instructions.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
@@ -42,4 +42,6 @@ Windows Workstations
 ## How to Import
 
 [Import - Remote Monitor - Uninstall VLC Player](<./Uninstall VLC Player.md>)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '7d8df295-577a-4c61-934b-341fcbb37784'
-title: 'Setup Compassus Azure VPN Connection'
-title_meta: 'Setup Compassus Azure VPN Connection'
+title: 'Add-AzureVPNConnection Paranet(Compassus)'
+title_meta: 'Add-AzureVPNConnection Paranet(Compassus)'
 keywords: ['vpn', 'azure', 'compassus', 'configuration', 'logging', 'error', 'parameters', 'process']
 description: 'This document provides a detailed guide on setting up the Compassus Azure VPN connection for all users, including sample runs, variable documentation, and the necessary steps to execute the script successfully.'
 tags: ['azure', 'logging', 'vpn']
@@ -58,4 +58,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - File in LTSVC/Logs (optional)
+
+
 

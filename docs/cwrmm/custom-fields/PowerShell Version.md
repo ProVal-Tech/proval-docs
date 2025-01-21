@@ -1,7 +1,7 @@
 ---
 id: '945d88e0-81a9-4253-8406-63fa7430d45a'
-title: 'Create a Custom Field for PowerShell Version Information'
-title_meta: 'Create a Custom Field for PowerShell Version Information'
+title: 'PowerShell Version'
+title_meta: 'PowerShell Version'
 keywords: ['custom', 'field', 'powershell', 'version', 'information']
 description: 'This document outlines the steps to create a custom field in ConnectWise RMM to store Windows PowerShell version information about endpoints. The details are collected using a specific task designed for this purpose.'
 tags: ['software', 'windows']
@@ -25,4 +25,6 @@ This custom field is used to store Windows PowerShell version information about 
 - **Level:** Endpoint
 - **Description:** Will provide the PS version on the machine
 - **Editable:** No
+
+
 

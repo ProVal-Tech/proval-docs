@@ -1,7 +1,7 @@
 ---
 id: 'fffa01c1-5e44-4239-a69d-623e4a77e789'
-title: 'Create SQL Table and Audit User Sessions'
-title_meta: 'Create SQL Table and Audit User Sessions'
+title: 'User Session Audit'
+title_meta: 'User Session Audit'
 keywords: ['sql', 'table', 'audit', 'sessions', 'power', 'shell', 'users']
 description: 'This document outlines a script that creates the SQL table “@plugin_proval_usersessions” if it does not exist, audits the current active sessions on a target machine using PowerShell, and updates the details in the custom table. It includes a summary, sample run, dependencies, variables, process steps, and output details.'
 tags: ['database', 'security', 'setup', 'windows']
@@ -37,4 +37,6 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 ## Output
 
 - Script log
+
+
 

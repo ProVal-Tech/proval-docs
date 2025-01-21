@@ -1,7 +1,7 @@
 ---
 id: '60cf67bf-fc28-4461-a2ad-7a32b2461652'
-title: 'Disable Internet Explorer on Windows'
-title_meta: 'Disable Internet Explorer on Windows'
+title: 'Internet Explorer - Disable Global, DV, Autofix'
+title_meta: 'Internet Explorer - Disable Global, DV, Autofix'
 keywords: ['internet', 'explorer', 'disable', 'windows', 'script']
 description: 'This document outlines a script that disables Internet Explorer on a Windows machine, detailing the process, dependencies, and variables involved in the execution. It includes information on user prompts, reboot options, and the expected outcomes of the script.'
 tags: ['security', 'setup', 'uninstallation', 'windows']
@@ -52,4 +52,6 @@ This script disables Internet Explorer on a Windows machine.
 - Script log
 - EDF
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '8645a522-a9e3-4755-a498-32c2904e51c6'
-title: 'Deploy Threatlocker Group'
-title_meta: 'Deploy Threatlocker Group for Eligible Machines'
+title: 'Deploy Threatlocker'
+title_meta: 'Deploy Threatlocker'
 keywords: ['threatlocker', 'deployment', 'machines', 'group', 'criteria']
 description: 'This document outlines the creation of a dynamic group for machines eligible for Threatlocker deployment that do not currently have Threatlocker installed. It details the criteria for both Windows and Mac systems, ensuring proper identification and grouping for deployment.'
 tags: ['deployment', 'security', 'windows']
@@ -60,4 +60,6 @@ Once the above criteria are set, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Threatlocker/image_4.png)
 
 ![Image](../../../static/img/Deploy-Threatlocker/image_5.png)
+
+
 

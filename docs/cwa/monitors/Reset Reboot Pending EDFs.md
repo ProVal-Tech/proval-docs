@@ -1,7 +1,7 @@
 ---
 id: '79256871-2745-4096-8892-c4554926ed18'
-title: 'Internal Monitor for Reboot Prompt Removal'
-title_meta: 'Internal Monitor for Reboot Prompt Removal'
+title: 'Reset Reboot Pending EDFs'
+title_meta: 'Reset Reboot Pending EDFs'
 keywords: ['monitor', 'reboot', 'windows', 'edf', 'automation']
 description: 'This document outlines an internal monitor designed to detect agents that have undergone a reboot through a specific script. It triggers another script to clear pending EDFs, allowing for re-triggering at a later time. This monitor is specifically intended for Windows workstations and is automation-driven.'
 tags: ['reboot', 'windows']
@@ -22,4 +22,6 @@ This internal monitor is designed to detect agents whose reboot was initiated by
 This monitor is an automation-driven reboot prompt removal tool. It should only be applied to Windows workstations.
 
 - **Windows Workstations**: This monitor should be run on non-server machines that are running Windows.
+
+
 

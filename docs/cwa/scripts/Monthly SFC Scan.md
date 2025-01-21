@@ -1,7 +1,7 @@
 ---
 id: '876cdd82-d35f-4112-91d1-806bb5215d19'
-title: 'SFC Scan and Repair Script'
-title_meta: 'SFC Scan and Repair Script for Windows'
+title: 'Monthly SFC Scan'
+title_meta: 'Monthly SFC Scan'
 keywords: ['sfc', 'repair', 'dism', 'logs', 'windows', 'ticket']
 description: 'This document provides a detailed overview of a script that performs an SFC scan on Windows systems, handles errors, and manages ticketing based on the scan results. It outlines the process of running the scan, logging results, and executing necessary repairs while maintaining communication through ticket updates.'
 tags: ['logging', 'windows']
@@ -94,4 +94,6 @@ Document the various variables in the script. Delete any section that is not rel
 - `C:/Temp/SFC.Log`
 - Application Event log entry 7395 from 'Proval_Script_Monthly_SFC_Scan'
 - Ticket with all related information.
+
+
 

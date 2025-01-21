@@ -1,7 +1,7 @@
 ---
 id: '3c0d8537-9331-4623-90a0-8d2f724d19af'
-title: 'Rebuild WMI Repository Script'
-title_meta: 'Rebuild WMI Repository Script for Windows'
+title: 'Get-DCDiagReport.ps1'
+title_meta: 'Get-DCDiagReport.ps1'
 keywords: ['wmi', 'repository', 'windows', 'repair', 'service']
 description: 'This document provides an overview of a PowerShell script designed to rebuild the WMI repository, including its requirements, process, usage, and parameters. The script ensures proper handling of user permissions and service states while attempting repairs on the WMI service.'
 tags: ['security', 'windows']
@@ -149,4 +149,6 @@ This bypasses all initial checks and forces the advanced repair regardless of se
 | ConnectWise RMM                  |                                      |
 | Kaseya                           |                                      |
 | Datto RMM                        |                                      |
+
+
 

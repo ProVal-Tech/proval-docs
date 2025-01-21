@@ -1,7 +1,7 @@
 ---
 id: '4d3b24f2-a55a-4f57-8cad-1345d1e85060'
-title: 'Webroot Keycode Verification Script'
-title_meta: 'Webroot Keycode Verification Script'
+title: 'Webroot Keycode Verification'
+title_meta: 'Webroot Keycode Verification'
 keywords: ['webroot', 'keycode', 'verification', 'audit', 'monitor']
 description: 'This document provides an overview of the Webroot Keycode Verification Script, which collects the hashed keycode from a machine and compares it with the keycode set up in the Webroot plugin. It details how to review results in Dataview and create tickets for keycode mismatches.'
 tags: ['webroot']
@@ -34,4 +34,6 @@ Webroot SecureAnywhere with Utility Plugin
 - Script log
 - EDF
 - Dataview
+
+
 

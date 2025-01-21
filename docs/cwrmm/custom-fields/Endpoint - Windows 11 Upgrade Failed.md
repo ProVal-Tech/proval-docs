@@ -1,7 +1,7 @@
 ---
 id: 'eb332e7e-77ae-4cc0-82b1-c4f42cc05fac'
-title: 'Windows 11 Upgrade Failed Status'
-title_meta: 'Windows 11 Upgrade Failed Status'
+title: 'Endpoint - Windows 11 Upgrade Failed'
+title_meta: 'Endpoint - Windows 11 Upgrade Failed'
 keywords: ['windows', 'upgrade', 'failed', 'installer', 'task']
 description: 'This document provides details on how to store the status of whether the Windows 11 Upgrade has failed after executing the Windows 11 Installer (Beta) task. It includes field definitions and screenshots for better understanding.'
 tags: ['setup', 'software']
@@ -23,4 +23,6 @@ This document stores whether the Windows 11 Upgrade failed after running the Win
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_2.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '12fe20c3-a531-4f0c-803c-2cd523342e8b'
-title: 'Firefox Extensions Audit'
-title_meta: 'Firefox Extensions Audit'
+title: 'xPVAL Firefox Extensions Installed'
+title_meta: 'xPVAL Firefox Extensions Installed'
 keywords: ['firefox', 'extensions', 'audit', 'endpoint', 'data']
 description: 'This document provides a comprehensive audit of all Firefox extensions installed on endpoints, detailing the necessary dependencies and the structure of the data collected.'
 tags: ['firefox', 'security']
@@ -23,4 +23,6 @@ This document lists all Firefox extensions installed on the endpoint.
 | Field Name                       | Type of Field (Machine or Organization) | Description                                        |
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
 | xPVAL Firefox Extensions Installed | Machine                                 | Lists all Firefox extensions installed on the endpoint |
+
+
 

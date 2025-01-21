@@ -1,7 +1,7 @@
 ---
 id: '31680e20-afa7-4b6b-9510-13a10193f6a1'
-title: 'Remove LTCache from Probe'
-title_meta: 'Remove LTCache from Probe'
+title: 'Remove Probe LTCache Share'
+title_meta: 'Remove Probe LTCache Share'
 keywords: ['ltcache', 'probe', 'cleanup', 'database', 'automation']
 description: 'This document outlines a script designed to remove the current LTCache on the Probe for a specified target location, providing a streamlined process that saves time and enhances efficiency in managing cache data.'
 tags: ['cleanup', 'database', 'performance', 'windows']
@@ -39,4 +39,6 @@ This script will remove the current LTCache on the Probe for the target's locati
 ## Output
 
 - Script log
+
+
 

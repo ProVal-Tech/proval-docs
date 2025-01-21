@@ -1,7 +1,7 @@
 ---
 id: '9d026118-1651-4000-a908-a31c44c4df09'
-title: 'Update OS Build Custom Field'
-title_meta: 'Update OS Build Custom Field for Kaseya VSA'
+title: 'Update-VsaOsBuildCustomField'
+title_meta: 'Update-VsaOsBuildCustomField'
 keywords: ['customfield', 'osbuild', 'vsa', 'api', 'audit']
 description: 'This document provides an overview of how to set the custom field value for the OS Build on machines using the VSAAPI module. It includes requirements, process details, parameters for the script, and output information.'
 tags: ['software', 'update', 'windows']
@@ -39,4 +39,6 @@ The output location for log, result, and error files is as follows:
 ```
 ./Update-OsBuildCustomField-log.txt
 ```
+
+
 

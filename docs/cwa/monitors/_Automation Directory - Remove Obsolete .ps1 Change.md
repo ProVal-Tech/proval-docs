@@ -1,7 +1,7 @@
 ---
 id: '38fc04ed-71ee-46f8-a1a6-d48c39a36402'
-title: 'Remote Monitor for Cleaning Up Old PowerShell Scripts'
-title_meta: 'Remote Monitor for Cleaning Up Old PowerShell Scripts'
+title: '_Automation Directory - Remove Obsolete .ps1 Change'
+title_meta: '_Automation Directory - Remove Obsolete .ps1 Change'
 keywords: ['monitor', 'cleanup', 'powershell', 'scripts', 'automation', 'files']
 description: 'This document outlines the functionality of a remote monitor designed to delete any PowerShell scripts older than one day from the C://ProgramData//_Automation directory. It emphasizes the importance of removing these files to enhance security and system performance.'
 tags: ['cleanup', 'security', 'windows']
@@ -49,4 +49,6 @@ Managed Windows Servers and Workstations
 ## Implementation
 
 [Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 [Change]](<./Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 Change.md>)
+
+
 

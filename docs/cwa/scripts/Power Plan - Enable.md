@@ -1,7 +1,7 @@
 ---
 id: 'a170b385-7464-478e-b1cc-d357a8840e45'
-title: 'Enable Power Plan Script'
-title_meta: 'Enable Power Plan Script for Automate'
+title: 'Power Plan - Enable'
+title_meta: 'Power Plan - Enable'
 keywords: ['automate', 'powerplan', 'script', 'configuration', 'windows']
 description: 'This document provides details on the Enable Power Plan script for ConnectWise Automate, including its implementation, usage, dependencies, and output. It allows users to mark an existing Power Plan as active on endpoints, ensuring proper configuration management.'
 tags: ['windows']
@@ -48,4 +48,6 @@ File Hash (MD5): `59BB9E9FB16FD5E53EB657D0F02ED9A8`
 
 - Script Log
 - Dataview
+
+
 

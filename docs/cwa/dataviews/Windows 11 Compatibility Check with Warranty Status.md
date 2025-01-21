@@ -1,7 +1,7 @@
 ---
 id: '8f914719-a7f7-4ed8-99fb-667c8c26237d'
-title: 'Windows 11 Compatibility Check'
-title_meta: 'Windows 11 Compatibility Check'
+title: 'Windows 11 Compatibility Check with Warranty Status'
+title_meta: 'Windows 11 Compatibility Check with Warranty Status'
 keywords: ['windows', 'upgrade', 'compatibility', 'check', 'machine', 'status', 'client', 'location']
 description: 'This document provides an overview of how to determine which machines are eligible for an upgrade to Windows 11 using a PowerShell script. It details dependencies, the columns of data returned, and the significance of each column in assessing compatibility.'
 tags: ['cpu', 'memory', 'secureboot', 'tpm', 'windows']
@@ -40,5 +40,7 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Purchase Date              | Purchase date of the device.                                                                        |
 | Expiry Date                | Warranty expiry date of the device.                                                                 |
 | Warranty Status            | Warranty status of the device (Expired/Expiring Soon/In Warranty).                                 |
+
+
 
 

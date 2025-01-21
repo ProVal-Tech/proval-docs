@@ -1,7 +1,7 @@
 ---
 id: 'ea24f672-d2cd-41bc-8b62-2dcd20085d29'
-title: 'GPO Audit Dataview'
-title_meta: 'GPO Audit Dataview for Group Policy Information'
+title: 'Windows - Group Policy Settings'
+title_meta: 'Windows - Group Policy Settings'
 keywords: ['gpo', 'audit', 'policy', 'settings', 'active-directory']
 description: 'This document provides a comprehensive overview of the GPO Audit Dataview, detailing the information about Group Policy Objects (GPOs), their applied policies, and settings. It includes dependencies and a breakdown of the data columns for better understanding and utilization.'
 tags: ['active-directory', 'gpo']
@@ -34,4 +34,6 @@ This dataview shows information about GPOs, their applied policies, and settings
 | Extension    | Displays GPO extensions.                          |
 | Property     | Displays properties of the Group policies.       |
 | PropertyData | Displays detailed information for the GPO settings. |
+
+
 

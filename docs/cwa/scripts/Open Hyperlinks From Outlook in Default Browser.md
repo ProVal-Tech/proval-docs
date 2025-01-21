@@ -1,7 +1,7 @@
 ---
 id: '3cc9953c-254c-4d50-9520-cbdb7e6ef23c'
-title: 'Update Outlook Hyperlink Behaviour'
-title_meta: 'Update Outlook Hyperlink Behaviour'
+title: 'Open Hyperlinks From Outlook in Default Browser'
+title_meta: 'Open Hyperlinks From Outlook in Default Browser'
 keywords: ['outlook', 'hyperlink', 'browser', 'registry', 'windows']
 description: 'This document describes a script that updates the Outlook options on a computer to open hyperlinks in the Default Browser. It modifies specific Windows registry values related to Outlook settings to ensure that hyperlinks within Outlook open using the Default Browser instead of Microsoft Edge.'
 tags: ['security', 'software', 'update', 'windows']
@@ -32,4 +32,6 @@ To achieve this, the script likely modifies specific values in the Windows regis
 ## Output
 
 - Script Logs
+
+
 

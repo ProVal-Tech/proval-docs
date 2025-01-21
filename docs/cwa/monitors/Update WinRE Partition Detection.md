@@ -1,7 +1,7 @@
 ---
 id: '857bac8a-a3f1-408d-9b1f-73b0e5ec6e07'
-title: 'Windows OS Monitoring for Supported Versions'
-title_meta: 'Windows OS Monitoring for Supported Versions'
+title: 'Update WinRE Partition Detection'
+title_meta: 'Update WinRE Partition Detection'
 keywords: ['monitoring', 'windows', 'os', 'version', 'cve']
 description: 'This document outlines a monitoring solution that detects online Windows machines based on specific operating system criteria. It ensures that only supported versions are monitored and provides details on ticketing for failures related to updating the WinRE partition.'
 tags: ['security', 'ticketing', 'update', 'windows']
@@ -50,4 +50,6 @@ Note: Here, `@psout@` is the result of the script and `@compinfo@` contains the 
 - BIOS Version (Manufacturer)  
 
 Additionally, ticketing is enabled under the script. Refer to the script document for instructions on how to enable it under Global Parameters.
+
+
 

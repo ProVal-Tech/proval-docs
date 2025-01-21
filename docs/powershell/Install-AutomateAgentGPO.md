@@ -1,7 +1,7 @@
 ---
 id: ps-install-automateagentgpo
 title: 'Install-AutomateAgentGPO'
-title_meta: 'Install-AutomateAgentGPO Command'
+title_meta: 'Install-AutomateAgentGPO'
 keywords: ['install', 'automate', 'agent', 'gpo']
 description: 'Documentation for the Install-AutomateAgentGPO command to create a ConnectWise Automate Agent Deployment group policy object.'
 tags: ['active-directory', 'setup', 'windows']
@@ -111,4 +111,6 @@ Creates a Group Policy Object to run a scheduled task that will immediately run 
   The GPO will execute the deployment script (`Automate-Deploy.ps1`) immediately on the end machines with the help of a scheduled task.
 - **Deployment Script:**  
   The deployment script is placed in the NETLOGON folder.
+
+
 

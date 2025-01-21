@@ -1,7 +1,7 @@
 ---
 id: '5e1d98fb-913a-4384-9674-653c57bf610b'
-title: 'Remote Monitor Setup for Security Event Logs'
-title_meta: 'Remote Monitor Setup for Security Event Logs'
+title: 'Import- Security event logs cleareddeleted'
+title_meta: 'Import- Security event logs cleareddeleted'
 keywords: ['remote', 'monitor', 'security', 'event', 'logs', 'setup']
 description: 'This document provides a step-by-step guide to setting up a remote monitor for security event logs in ConnectWise Automate. It includes obtaining group IDs, constructing SQL queries, and applying alert templates for effective monitoring.'
 tags: ['database', 'security', 'setup']
@@ -164,4 +164,6 @@ Limit the remote monitor to a search, if necessary.
 
 ## Step 7
 Apply the appropriate alert template to the remote monitors.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'ab16db00-9f6e-4ea8-974f-8756b3bd2881'
-title: 'Client-Level Patch Count Dataview'
-title_meta: 'Client-Level Patch Count Dataview'
+title: 'Missing Patch - Count by Machines - Client Filter'
+title_meta: 'Missing Patch - Count by Machines - Client Filter'
 keywords: ['dataview', 'patch', 'client', 'machines', 'status']
 description: 'This document outlines a solution for creating a dataview that provides a breakdown of machines at the client level that are missing a specified number of patches. It includes associated scripts and views necessary for implementation.'
 tags: ['database', 'report', 'security', 'update']
@@ -27,4 +27,6 @@ This solution provides a dataview of the client-level breakdown of machines miss
 - Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
+
+
 

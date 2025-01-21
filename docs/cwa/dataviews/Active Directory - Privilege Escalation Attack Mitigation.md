@@ -1,7 +1,7 @@
 ---
 id: 'b81bd6bd-9266-4c31-adad-9eaad5e90e31'
-title: 'Active Directory Privilege Escalation Mitigation Dataview'
-title_meta: 'Active Directory Privilege Escalation Mitigation Dataview'
+title: 'Active Directory - Privilege Escalation Attack Mitigation'
+title_meta: 'Active Directory - Privilege Escalation Attack Mitigation'
 keywords: ['active-directory', 'privilege', 'escalation', 'mitigation', 'patches', 'compliance']
 description: 'This document outlines a dataview created to verify the applied workaround and installation of necessary patches to mitigate and detect Active Directory privilege escalation attacks. It provides a comprehensive overview of computer accounts with non-compliant sAMAccountNames and details about patch statuses.'
 tags: ['active-directory', 'compliance', 'security', 'windows']
@@ -35,4 +35,6 @@ The dataview is created to verify the workaround applied and the installation of
 | Non-compliant UAC sAMAccountType   | To find computer accounts that have a non-compliant UAC sAMAccountType.                                                                        |
 | Information Update Time             | Run-time of the script.                                                                                                                         |
 | Last Contact                        | Last contact of the Computer.                                                                                                                   |
+
+
 

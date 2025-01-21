@@ -1,7 +1,7 @@
 ---
 id: '1adb82ca-d3cb-4319-9319-5d22b569ed6f'
-title: 'Enable or Disable SSL and TLS Protocols'
-title_meta: 'Enable or Disable SSL and TLS Protocols'
+title: 'Internet Explorer Advanced SSL and TLS Settings'
+title_meta: 'Internet Explorer Advanced SSL and TLS Settings'
 keywords: ['ssl', 'tls', 'internet-explorer', 'security', 'registry']
 description: 'This script allows users to enable or disable various SSL and TLS protocols based on user input. It modifies the machine-level registry settings for Internet Explorer to set the desired security protocols, providing a flexible solution for managing secure connections.'
 tags: ['internet-explorer', 'security', 'update', 'windows']
@@ -86,4 +86,6 @@ Various options are:
 - Script log
 - Script state
 - Data view
+
+
 

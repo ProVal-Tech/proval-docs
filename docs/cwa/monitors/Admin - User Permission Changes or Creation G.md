@@ -1,7 +1,7 @@
 ---
 id: '30dde7e3-b96b-4e24-bbc5-cfa041aa5648'
-title: 'Monitor Summary and Dependencies'
-title_meta: 'Monitor Summary and Dependencies for ConnectWise Automate'
+title: 'Admin - User Permission Changes or Creation G'
+title_meta: 'Admin - User Permission Changes or Creation G'
 keywords: ['monitor', 'dependencies', 'ticketing', 'target', 'itglue']
 description: 'This document provides a comprehensive overview of the monitor, including its purpose, dependencies on ITGlue documents, suggested targets for execution, and guidelines for ticket generation. It aims to assist users in understanding how to effectively run the monitor and manage related tickets.'
 tags: ['ticketing']
@@ -45,4 +45,6 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**
 
 **Body**
+
+
 

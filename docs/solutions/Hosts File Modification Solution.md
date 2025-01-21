@@ -1,7 +1,7 @@
 ---
 id: '6fd1f1cb-f487-47cf-89b2-8568ef4bc292'
-title: 'Modify Windows Host File'
-title_meta: 'Modify Windows Host File'
+title: 'Hosts File Modification Solution'
+title_meta: 'Hosts File Modification Solution'
 keywords: ['windows', 'host', 'file', 'modify', 'audit', 'add', 'reset', 'dns']
 description: 'This document provides a comprehensive guide on how to modify the Windows host file, including adding entries, gathering information, and resetting it to default settings. It outlines associated scripts for auditing, adding, and resetting host file entries, as well as implementation steps to ensure regular updates.'
 tags: ['dns', 'setup', 'update', 'windows']
@@ -30,4 +30,6 @@ The purpose of this solution is to provide a quick and easy way to modify the Wi
    3. [EPM - Windows Configuration - Script - Hosts File - Reset](<../cwa/scripts/Hosts File - Reset.md>)  
 2. Import the Dataview [CWM - Automate - Dataview - Hosts File - Audit [Script]](<../cwa/dataviews/Hosts File - Audit Script.md>)  
 3. Schedule the script [EPM - Windows Configuration - Script - Hosts File - Audit](<../cwa/scripts/Hosts File - Audit.md>) to run against the desired computers at regular intervals to keep the dataview up to date.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'dce82a22-77ba-4133-90d9-78a0a1b88412'
-title: 'Veeam Backup Service Monitor Setup'
-title_meta: 'Veeam Backup Service Monitor Setup'
+title: 'Veeam Service Monitor'
+title_meta: 'Veeam Service Monitor'
 keywords: ['veeam', 'monitor', 'service', 'setup', 'sql', 'alert']
 description: 'This document provides a step-by-step guide to setting up a Veeam Backup Service monitor using SQL queries in ConnectWise Automate. It covers obtaining group IDs, executing SQL queries, and applying alert templates to ensure effective monitoring of the Veeam Backup Service.'
 tags: ['setup', 'sql']
@@ -262,4 +262,6 @@ The monitor will come up with the search '`VeeamBackupSvc`' added to the LIMIT.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

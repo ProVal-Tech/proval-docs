@@ -1,7 +1,7 @@
 ---
 id: '8888ddb9-ea31-48cb-a88e-56ff970b0e6c'
-title: 'Internal Monitor for Huntress Agent Deployment'
-title_meta: 'Internal Monitor for Huntress Agent Deployment'
+title: 'Deploy Huntress Agent'
+title_meta: 'Deploy Huntress Agent'
 keywords: ['monitor', 'huntress', 'agent', 'deployment', 'windows', 'macintosh']
 description: 'This document outlines the purpose and functionality of the internal monitor designed to detect Windows and Macintosh machines that are missing the Huntress Agent and have deployment enabled. It includes details on dependencies, client-level, location-level, and computer-level EDFs, as well as the alert template for deploying the Huntress Agent.'
 tags: ['deployment', 'security', 'windows']
@@ -42,4 +42,6 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Deploy Huntress Agent`
+
+
 

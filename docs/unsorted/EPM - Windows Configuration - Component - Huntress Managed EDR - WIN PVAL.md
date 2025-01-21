@@ -1,7 +1,7 @@
 ---
 id: '37781bee-b7cd-448e-9d45-53e789a455b8'
-title: 'Huntress Managed EDR Component for Datto RMM'
-title_meta: 'Huntress Managed EDR Component for Datto RMM - Installation and Management'
+title: 'EPM - Windows Configuration - Component - Huntress Managed EDR - WIN PVAL'
+title_meta: 'EPM - Windows Configuration - Component - Huntress Managed EDR - WIN PVAL'
 keywords: ['huntress', 'edr', 'datto', 'component', 'management']
 description: 'This document outlines the management of the Huntress EDR agent, detailing installation, uninstallation, repair, and reinstallation processes within the Datto RMM environment. It includes necessary dependencies, implementation steps, usage instructions, and expected output for successful job execution.'
 tags: ['datto', 'installation', 'uninstallation']
@@ -58,4 +58,6 @@ StdOut may require you to scroll to view the complete log; you can alternatively
 
 **StdErr**  
 StdErr is not expected.
+
+
 

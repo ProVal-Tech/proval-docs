@@ -1,7 +1,7 @@
 ---
 id: 'ac13e6a2-d240-4b45-b4d1-98c4a860ed8f'
-title: 'Detailed Hardware Information for Automate Agents'
-title_meta: 'Detailed Hardware Information for Automate Agents'
+title: 'plugin_proval_hardwaredetails (View)'
+title_meta: 'plugin_proval_hardwaredetails (View)'
 keywords: ['hardware', 'agents', 'automate', 'inventory', 'information']
 description: 'This document provides comprehensive details on the hardware information available for all applicable agents within an Automate environment, including specifications such as CPU usage, memory, operating system details, and more.'
 tags: ['networking', 'windows']
@@ -117,4 +117,6 @@ Displays detailed hardware information about all applicable agents in an Automat
 | UPS Last Updated                 | VARCHAR  | Information about when the UPS status was last updated.                                        |
 | UPS Replacement Status           | VARCHAR  | Information about if the UPS needs to be updated.                                              |
 | Printer Names                    | TEXT     | Comma-separated list of all connected printers to the machine.                                  |
+
+
 

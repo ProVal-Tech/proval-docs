@@ -1,7 +1,7 @@
 ---
 id: '5a5463d0-0ce3-4c09-bd41-39da28e16d0f'
-title: 'DNS Assignments Data Storage'
-title_meta: 'DNS Assignments Data Storage'
+title: 'pvl_network_Adapter'
+title_meta: 'pvl_network_Adapter'
 keywords: ['dns', 'network', 'data', 'storage', 'assignments']
 description: 'This document outlines the structure of the table that stores data gathered by the DNS Assignments script, detailing its columns, types, and explanations for each field related to network interfaces.'
 tags: ['database', 'networking', 'setup', 'windows']
@@ -47,4 +47,6 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | MacAddress           | varchar(32)   | MAC Address of the network interface                           |
 | SettingID            | varchar(64)   | Interface ID of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
+
+
 

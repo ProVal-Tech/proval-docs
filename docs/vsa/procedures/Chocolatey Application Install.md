@@ -1,7 +1,7 @@
 ---
 id: '8a84e955-77a3-47b7-bd37-9adffb0ee995'
-title: 'Install Chocolatey Application Using Foil'
-title_meta: 'Install Chocolatey Application Using Foil'
+title: 'Chocolatey Application Install'
+title_meta: 'Chocolatey Application Install'
 keywords: ['chocolatey', 'foil', 'installation', 'application', 'package']
 description: 'This document outlines the process of using the Foil wrapper for Chocolatey to install applications. It includes a detailed example of an agent procedure log and the steps involved in the installation process, ensuring that users can successfully deploy applications using Chocolatey and Foil.'
 tags: ['application', 'chocolatey', 'installation', 'software']
@@ -41,4 +41,6 @@ Utilizes the Foil wrapper for Chocolatey to install an application. [Foil GitHub
 4. Installs NuGet if not already installed.
 5. Installs/Updates the Foil Module.
 6. Installs the application using Foil.
+
+
 

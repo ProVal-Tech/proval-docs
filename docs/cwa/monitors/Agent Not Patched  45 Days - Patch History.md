@@ -1,7 +1,7 @@
 ---
 id: '6cfe8a08-851e-42fe-8999-c4526007f572'
-title: 'Windows Updates Monitor for ConnectWise Automate'
-title_meta: 'Windows Updates Monitor for ConnectWise Automate'
+title: 'Agent Not Patched  45 Days - Patch History'
+title_meta: 'Agent Not Patched  45 Days - Patch History'
 keywords: ['windows', 'updates', 'monitor', 'patch', 'security']
 description: 'This document outlines a monitor set designed for ConnectWise Automate to detect machines that have not installed Windows updates within the last 45 days. It ensures that all systems are up-to-date and protected against known security threats, focusing on supported operating systems and patch-managed devices.'
 tags: ['security', 'ticketing']
@@ -62,4 +62,6 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
+
 

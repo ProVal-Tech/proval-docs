@@ -1,7 +1,7 @@
 ---
 id: 'd97282c0-4d81-46f9-b821-d553c2d8a596'
-title: 'Get Wi-Fi Profile Script for ConnectWise Automate'
-title_meta: 'Get Wi-Fi Profile Script for ConnectWise Automate'
+title: 'Get Wifi Profile'
+title_meta: 'Get Wifi Profile'
 keywords: ['wifi', 'profiles', 'automate', 'script', 'edf']
 description: 'This document details the implementation of the Get-WifiProfile script within ConnectWise Automate, providing instructions on its execution, required parameters, and output generated, including log files and data views.'
 tags: ['networking', 'setup', 'software', 'windows']
@@ -41,4 +41,6 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+
+
 

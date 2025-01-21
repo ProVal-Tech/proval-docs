@@ -1,7 +1,7 @@
 ---
 id: '556a609f-b0e6-401b-afc0-17932fde35c7'
-title: 'ESXi Hosts Dataview'
-title_meta: 'ESXi Hosts Dataview'
+title: 'ESXi Hosts'
+title_meta: 'ESXi Hosts'
 keywords: ['esxi', 'dataview', 'virtualization', 'hosts', 'infrastructure']
 description: 'This document provides a comprehensive overview of the ESXi hosts dataview, detailing the necessary dependencies, available columns, and the information displayed for each host, including CPU, memory, and storage metrics.'
 tags: ['cpu', 'memory', 'storage', 'update', 'virtualization']
@@ -40,4 +40,6 @@ This dataview shows useful information about ESXi hosts.
 | Is SSD                          | Indicates whether the attached storage device is SSD or not.    |
 | Storage Last Update             | Displays the last time the storage information of the host was updated in Automate. |
 | Last Update                     | Displays the last time the host's information was updated in Automate. |
+
+
 

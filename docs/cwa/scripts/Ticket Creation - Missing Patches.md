@@ -1,7 +1,7 @@
 ---
 id: 'b53b8338-0d17-4308-b495-d075d520fd13'
-title: 'Complete Ticket Creation Script for Missing Patches'
-title_meta: 'Complete Ticket Creation Script for Missing Patches'
+title: 'Ticket Creation - Missing Patches'
+title_meta: 'Ticket Creation - Missing Patches'
 keywords: ['ticket', 'patches', 'monitor', 'automation', 'windows']
 description: 'This document provides a detailed overview of a script designed for creating tickets based on missing patches in a ProVal environment. It outlines the dependencies, process, and an example of a generated ticket, emphasizing that the script should be monitor-driven and not manually executed.'
 tags: ['report', 'security', 'software', 'windows']
@@ -52,4 +52,6 @@ The only dependency for this script is that the monitor triggering it must repor
 > - Microsoft .NET Framework 4.8 for Windows Server 2012 R2 for x64 (KB4486105)  
 > - 2022-05 Servicing Stack Update for Windows Server 2012 R2 for x64-based Systems (KB5014025)  
 > - 2022-05 Security and Quality Rollup for .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8 for Windows Server 2012 R2 for x64 (KB5013872)  
+
+
 

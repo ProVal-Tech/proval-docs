@@ -1,7 +1,7 @@
 ---
 id: '7174f88a-38fc-4e5a-83cc-1f48a6c29526'
-title: 'Patch Compliance Reporting Solution Setup'
-title_meta: 'Patch Compliance Reporting Solution Setup for Database Items'
+title: 'Create Views for Patch Compliance Report'
+title_meta: 'Create Views for Patch Compliance Report'
 keywords: ['patch', 'compliance', 'reporting', 'database', 'views']
 description: 'This document outlines the setup process for the Patch Compliance Reporting Solution, detailing the creation of necessary database views for effective patch compliance reporting. It includes dependencies, a sample run, and information on the one-time use of the script.'
 tags: ['database', 'installation', 'performance', 'report', 'setup']
@@ -36,4 +36,6 @@ Other items depend on this script being run to function, which are listed below:
 ## Output
 
 This is a one-time use script, used to install/create three views. After running it once, this script can be removed from the environment.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '0a795741-52b7-4de6-abc2-01b5add80f99'
-title: 'Windows Cluster Volume Space Audit'
-title_meta: 'Windows Cluster Volume Space Audit'
+title: 'Windows Cluster Shared Volume Autofix,Ticket'
+title_meta: 'Windows Cluster Shared Volume Autofix,Ticket'
 keywords: ['cluster', 'disk', 'space', 'audit', 'monitor']
 description: 'This document details a function script designed to operate as an Autofix with the CWA Remote Monitor for Windows Cluster Shared Volume Detection. It creates tickets with comprehensive information about cluster disks when free space drops below a set threshold and invokes a space audit to ensure accurate data capture for cluster servers.'
 tags: ['windows']
@@ -34,4 +34,6 @@ This should always run with the [CWA Remote Monitor - Windows Cluster Shared Vol
 
 - Script log
 - Dataview
+
+
 

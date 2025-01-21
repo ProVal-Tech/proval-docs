@@ -1,7 +1,7 @@
 ---
 id: '31670a91-868f-4825-9be0-ed842d62b7c0'
-title: 'HP Image Assistant Deployment Procedure'
-title_meta: 'HP Image Assistant Deployment Procedure'
+title: 'HP Image Assistant - Deploy'
+title_meta: 'HP Image Assistant - Deploy'
 keywords: ['hp', 'image', 'assistant', 'deploy', 'procedure']
 description: 'This document outlines the procedure for deploying HP Image Assistant to endpoints, including downloading, extracting, and installing the software. It provides detailed logs of the agent procedure for transparency and troubleshooting.'
 tags: ['installation', 'networking', 'software', 'update', 'windows']
@@ -62,5 +62,7 @@ C:/HPIA
 Line 10 is where the HP commands are customized.  
 Available Commands (Starting at page 20): [HPIA User Guide](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/HPIAUserGuide.pdf)  
 The procedure is set to a default of: /Operation:Analyze /Category:All /selection:All /action:download /silent /AutoCleanup /reportFolder:c:/HPIA/Report /softpaqdownloadfolder:"C:/Windows/temp"  
+
+
 
 

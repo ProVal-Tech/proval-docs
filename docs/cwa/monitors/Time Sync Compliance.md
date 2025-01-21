@@ -1,7 +1,7 @@
 ---
 id: '021f4d58-3458-4536-96e7-b618960a1e0b'
-title: 'Remote Monitor: Time Sync Compliance'
-title_meta: 'Remote Monitor: Time Sync Compliance'
+title: 'Time Sync Compliance'
+title_meta: 'Time Sync Compliance'
 keywords: ['windows', 'monitor', 'sync', 'time', 'compliance']
 description: 'This document outlines the setup and details for a remote monitor designed to ensure that Windows workstations synchronize their time with the NTP server us.pool.ntp.org. It includes configuration details, alert settings, and ticketing information for compliance failures.'
 tags: ['compliance', 'ticketing', 'windows']
@@ -44,4 +44,6 @@ Insert the details of the monitor in the table below.
 ## How to Import
 
 [Import - Remote Monitor - Time Sync Compliance](https://proval.itglue.com/DOC-5078775-13498164)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '59c1fe7a-2bb8-420c-bd29-938a615fe37f'
-title: 'Web Browser Audit for Disabled Internet Explorer'
-title_meta: 'Web Browser Audit for Disabled Internet Explorer'
+title: 'Popular Web Browser Audit - IE Included'
+title_meta: 'Popular Web Browser Audit - IE Included'
 keywords: ['audit', 'web', 'browser', 'internet', 'explorer', 'disabled']
 description: 'This document provides a detailed dataview of the web browsers installed on agents, specifically focusing on the audit status of Internet Explorer, which has been decommissioned since June 15, 2022. It lists various browsers under audit and includes SQL representation for querying the relevant data.'
 tags: ['security', 'software', 'web-browser', 'windows']
@@ -87,4 +87,6 @@ FROM
       c.computerid
   ) AS t
 ```
+
+
 

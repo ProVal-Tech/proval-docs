@@ -1,7 +1,7 @@
 ---
 id: ps-get-patchconfig
 title: 'Get-PatchConfig'
-title_meta: 'Get-PatchConfig Command'
+title_meta: 'Get-PatchConfig'
 keywords: ['windows', 'update', 'patch', 'configuration']
 description: 'Documentation for the Get-PatchConfig command to retrieve Windows Update settings and services for system patch management.'
 tags: ['update', 'windows']
@@ -286,4 +286,6 @@ $PatchConfig = [PSCustomObject]@{
 ## Output
 - Get-PatchConfig-log.txt
 - Get-PatchConfig-Error.txt
+
+
 

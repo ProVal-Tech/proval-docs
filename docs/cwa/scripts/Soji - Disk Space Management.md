@@ -1,7 +1,7 @@
 ---
 id: '47f53d1e-f609-46f8-b407-ccdf11eeede4'
-title: 'Soji Execution Script for ConnectWise Automate'
-title_meta: 'Soji Execution Script for ConnectWise Automate'
+title: 'Soji - Disk Space Management'
+title_meta: 'Soji - Disk Space Management'
 keywords: ['soji', 'script', 'automate', 'execution', 'logging']
 description: 'This document describes the Soji execution script designed for ConnectWise Automate, detailing its functionality, dependencies, user parameters, process steps, and output results. The script facilitates the execution of the Soji application while managing necessary installations and logging outputs effectively.'
 tags: ['installation', 'logging', 'software']
@@ -41,4 +41,6 @@ Please refer to the Soji documentation for argument options.
 - Script log
 - Desired file output to the Soji directory, e.g., JSON, etc.
 - On LabTech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %ComputerId%/SojiLogs.zip`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'bdc0cb0d-5b88-448b-9568-268d27fdc17d'
-title: 'SSL and TLS Settings for Internet Explorer'
-title_meta: 'SSL and TLS Settings for Internet Explorer'
+title: 'Internet Explorer Advanced SSL and TLS Settings Script'
+title_meta: 'Internet Explorer Advanced SSL and TLS Settings Script'
 keywords: ['ssl', 'tls', 'internet', 'explorer', 'settings', 'security']
 description: 'This document provides detailed information on the SSL and TLS settings configured for Internet Explorer on the machine, including dependencies, columns, and descriptions relevant to the advanced security configurations.'
 tags: ['security', 'windows']
@@ -29,6 +29,8 @@ This document contains the SSL and TLS information set by the dependent script f
 | Contact                      | Last username                                                 |
 | Contact Email                | User's email                                                 |
 | IE Advanced Security Status   | Detailed information on what TLS and SSL settings are configured for Internet Explorer |
+
+
 
 
 

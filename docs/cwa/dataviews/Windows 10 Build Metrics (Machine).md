@@ -1,7 +1,7 @@
 ---
 id: '58e136de-46a7-4af2-9b84-0fb71405bbe4'
-title: 'Windows 10 Patch Policy Status Overview'
-title_meta: 'Windows 10 Patch Policy Status Overview'
+title: 'Windows 10 Build Metrics (Machine)'
+title_meta: 'Windows 10 Build Metrics (Machine)'
 keywords: ['windows', 'patch', 'policy', 'status', 'build', 'agent', 'last', 'contact']
 description: 'This document provides an overview of Windows 10 machines, detailing their build and patch policy status, including whether patch policies are enabled or disabled, along with the latest patch information and agent contact details.'
 tags: ['report', 'windows']
@@ -35,4 +35,6 @@ This dataview shows the Windows 10 machines with build and patch policy status, 
 | Online Last 30 Days           | Indicates whether the agent logged in within the last 30 days |
 | Has Patch Policy              | Describes whether the Windows 10 agent has a patch policy enabled or not |
 | Last Patched                  | Provides the date when the agent was last patched          |
+
+
 

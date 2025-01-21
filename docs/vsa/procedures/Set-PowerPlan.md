@@ -1,7 +1,7 @@
 ---
 id: '9aa93802-fded-4dc8-9c58-761410b5755d'
-title: 'Configure Power Plan Settings Using CSV'
-title_meta: 'Configure Power Plan Settings Using CSV'
+title: 'Set-PowerPlan'
+title_meta: 'Set-PowerPlan'
 keywords: ['power', 'plan', 'csv', 'settings', 'configuration']
 description: 'This document outlines the process for configuring power plan settings using a CSV file. It details the necessary template, the validation of parameters, and how to create or modify power plans based on user-defined settings. It also provides examples of how to utilize the script for different scenarios, including local and remote CSV file usage.'
 tags: ['performance', 'setup', 'software', 'windows']
@@ -132,4 +132,6 @@ PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.pr
 ./Set-PowerPlan-log.txt
 ./Set-PowerPlan-Error.txt
 ```
+
+
 

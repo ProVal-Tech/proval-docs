@@ -1,7 +1,7 @@
 ---
 id: 'ea1aca74-77ee-4387-91f2-57adb5822737'
-title: 'Create/Update Domain Admin Account for AD Plugin'
-title_meta: 'Create/Update Domain Admin Account for AD Plugin'
+title: 'Active Directory - Plugin User Account - CreateUpdate'
+title_meta: 'Active Directory - Plugin User Account - CreateUpdate'
 keywords: ['domain', 'admin', 'account', 'active', 'directory', 'plugin']
 description: 'This document outlines a script designed to create or update a domain admin account for the Active Directory plugin, including features for random password generation and troubleshooting capabilities. It is intended for use on domain controllers detected by the Active Directory Domains plugin and includes implementation steps, dependencies, and variable configurations.'
 tags: ['active-directory', 'security', 'setup', 'windows']
@@ -129,4 +129,6 @@ Additionally, there is an option available in the script to set the password as 
 ## Output
 
 - Script Logs
+
+
 

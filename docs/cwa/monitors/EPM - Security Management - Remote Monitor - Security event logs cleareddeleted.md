@@ -1,7 +1,7 @@
 ---
 id: '0f6e6262-6a9f-4edf-ab23-1522543de7e2'
-title: 'Remote Monitor for Security Event Log Clearance'
-title_meta: 'Remote Monitor for Security Event Log Clearance'
+title: 'EPM - Security Management - Remote Monitor - Security event logs cleareddeleted'
+title_meta: 'EPM - Security Management - Remote Monitor - Security event logs cleareddeleted'
 keywords: ['security', 'event', 'monitor', 'alert', 'windows']
 description: 'This document outlines the setup and configuration of a Remote Monitor that alerts users when security events, specifically event 1102, are deleted or cleared within the last 15 minutes. It includes implementation details, dependencies, and ticketing information for effective monitoring.'
 tags: ['security', 'ticketing', 'windows']
@@ -48,4 +48,6 @@ Windows Computers
 ## Implementation
 
 [Import - Remote Monitor - Security event logs cleared/deleted](./Security%20event%20logs%20cleareddeleted.md)
+
+
 

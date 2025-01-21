@@ -1,7 +1,7 @@
 ---
 id: 'bd386818-0b93-4bf2-a094-ab09aa030ea5'
-title: 'Password Expiration Notification for Domain Users'
-title_meta: 'Password Expiration Notification for Domain Users'
+title: 'Active Directory - Password Expires This Week'
+title_meta: 'Active Directory - Password Expires This Week'
 keywords: ['alert', 'domain', 'expiration', 'notification', 'password', 'user']
 description: 'This document outlines the process of alerting domain users when their passwords are set to expire within the next 7 days. It includes associated content, implementation steps, and troubleshooting FAQs to ensure users receive timely notifications.'
 tags: ['active-directory', 'software']
@@ -41,4 +41,6 @@ This document alerts domain users if their domain password is set to expire with
 
 **Q: Users are not receiving emails?**  
 A: Ensure that the user has an email address set for their Active Directory account, the script's global variables are set correctly, and lastly, check that the emails are not failing from Automate.
+
+
 

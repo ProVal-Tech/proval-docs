@@ -1,7 +1,7 @@
 ---
 id: '0c2128f8-2f99-47e7-a0ff-82b854ff2701'
-title: 'SentinelOne Site Key Configuration'
-title_meta: 'SentinelOne Site Key Configuration for Endpoint Management'
+title: 'Company - SentinelOne Site Key'
+title_meta: 'Company - SentinelOne Site Key'
 keywords: ['sentinelone', 'site', 'key', 'configuration', 'endpoints']
 description: 'This document explains the configuration of the SentinelOne Site Key at the company level, which is essential for organizing and managing endpoints based on their network location. It includes details on dependencies, field specifications, and a screenshot for reference.'
 tags: ['networking', 'security', 'setup']
@@ -26,4 +26,6 @@ This custom field at the company level stores the Sentinel Site Key. The Site Ke
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---SentinelOne-Site-Key/image_1.png)
+
+
 

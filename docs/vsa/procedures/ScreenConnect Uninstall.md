@@ -1,7 +1,7 @@
 ---
 id: 'b29e07cd-596c-427e-82b5-50d271cea679'
-title: 'Remove ScreenConnect from Endpoints'
-title_meta: 'Remove ScreenConnect from Endpoints'
+title: 'ScreenConnect Uninstall'
+title_meta: 'ScreenConnect Uninstall'
 keywords: ['uninstall', 'screenconnect', 'endpoint', 'wmic', 'agent']
 description: 'This document provides a detailed guide on uninstalling all instances of ScreenConnect from an endpoint using WMIC commands. It includes a sample run log, process description, output details, and instructions for exporting attachments.'
 tags: ['software', 'uninstallation', 'windows']
@@ -50,4 +50,6 @@ Remove-ScreenConnect-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

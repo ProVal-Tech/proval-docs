@@ -1,7 +1,7 @@
 ---
 id: '8c184241-699a-4722-9eca-65221ae35c55'
-title: 'Script Effectiveness Monitor Configuration'
-title_meta: 'Script Effectiveness Monitor Configuration'
+title: 'Script Effectiveness Percentage'
+title_meta: 'Script Effectiveness Percentage'
 keywords: ['monitor', 'scripts', 'effectiveness', 'tickets', 'threshold', 'alerting']
 description: 'This document provides a detailed guide on configuring a script effectiveness monitor in ConnectWise Automate. It explains how to set thresholds for script effectiveness, adjust ticket generation settings for on-prem and hosted partners, and customize alert messages. Follow the instructions to ensure proper monitoring and ticket creation for scripts with low effectiveness rates.'
 tags: ['ticketing']
@@ -72,4 +72,6 @@ If you would like to generate the ticket for the minimum client ID of another cl
 ## Target
 
 Global
+
+
 

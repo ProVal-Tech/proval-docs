@@ -1,7 +1,7 @@
 ---
 id: '1af4e51a-7847-4fb1-80b7-c61c98007ac9'
-title: 'Monitoring Machines Online vs Offline Duration in Automate'
-title_meta: 'Monitoring Machines Online vs Offline Duration in Automate'
+title: 'Automate Agent Connection Audit'
+title_meta: 'Automate Agent Connection Audit'
 keywords: ['monitoring', 'automate', 'offline', 'online', 'duration', 'audit']
 description: 'This document outlines a solution for monitoring and displaying the duration that machines were online versus offline in ConnectWise Automate over the past 30 days. It includes implementation steps, associated content, and FAQs to help users understand the functionality and setup process.'
 tags: ['database', 'update']
@@ -55,4 +55,6 @@ The solution is intended to monitor and display the duration machines were onlin
 
 **Q2: Why does the online or offline time sometimes appear greater than the total data collection time?**  
 **A2:** The `Days Since Data Collection` column may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. As a result, it is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`.
+
+
 

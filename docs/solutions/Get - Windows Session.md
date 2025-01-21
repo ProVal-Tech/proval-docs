@@ -1,7 +1,7 @@
 ---
 id: 'bf5badbb-1b64-42af-bf84-1ea597926e9c'
-title: 'Gather and Display Windows Sessions'
-title_meta: 'Gather and Display Windows Sessions'
+title: 'Get - Windows Session'
+title_meta: 'Get - Windows Session'
 keywords: ['gather', 'display', 'windows', 'sessions', 'query']
 description: 'This document outlines a solution to gather, store, and display the results of the query session command in a tabular format. It includes associated content such as scripts, custom tables, and dataviews necessary for implementation.'
 tags: ['windows']
@@ -27,4 +27,6 @@ This solution will gather, store, and display the result of the `query session` 
 - Import the [CWM - Automate - Dataview - Windows Sessions [Script]](<../cwa/dataviews/Windows Sessions Script.md>) dataview.
 - Execute the script against any computer to create the [CWM - Automate - Custom Table - pvl_windows_sessions](<../cwa/tables/pvl_windows_sessions.md>) table.
 - Reference the dataview for results.
+
+
 

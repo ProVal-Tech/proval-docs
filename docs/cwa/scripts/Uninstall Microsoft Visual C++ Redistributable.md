@@ -1,7 +1,7 @@
 ---
 id: '13cfc2e0-c088-424a-a1ab-5769b288a3a2'
-title: 'Invoke-VcRedistModule Uninstall Script for Microsoft Visual C++ Redistributable'
-title_meta: 'Invoke-VcRedistModule Uninstall Script for Microsoft Visual C++ Redistributable'
+title: 'Uninstall Microsoft Visual C++ Redistributable'
+title_meta: 'Uninstall Microsoft Visual C++ Redistributable'
 keywords: ['automate', 'uninstall', 'visual', 'redistributable', 'microsoft', 'script']
 description: 'This document details the implementation of the Invoke-VcRedistModule agnostic script for uninstalling Microsoft Visual C++ Redistributable using ConnectWise Automate. It provides an overview of the script functionality, sample runs, user parameters, and expected output.'
 tags: ['software', 'uninstallation', 'windows']
@@ -34,4 +34,6 @@ An Automate implementation of the [Invoke-VcRedistModule](<../../powershell/Invo
 ## Output
 
 - Script Log
+
+
 

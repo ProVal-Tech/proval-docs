@@ -1,7 +1,7 @@
 ---
 id: ps-remove-pathvariable
 title: 'Remove-PathVariable'
-title_meta: 'Remove-PathVariable Command'
+title_meta: 'Remove-PathVariable'
 keywords: ['remove', 'path', 'environment', 'variable']
 description: 'Documentation for the Remove-PathVariable command to remove specified paths from the Environmental Path variable at the desired scope.'
 tags: ['windows']
@@ -38,4 +38,6 @@ This command will remove the `C:\Documents and Settings`, `C:\Config`, `C:\Recov
 
 ## Output
 Standard Output
+
+
 

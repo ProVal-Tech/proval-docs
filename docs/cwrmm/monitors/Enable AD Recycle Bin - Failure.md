@@ -1,7 +1,7 @@
 ---
 id: '2d98b419-3d5d-4278-a4ce-f2cacba569c5'
-title: 'Enable AD Recycle Bin Monitor'
-title_meta: 'Enable AD Recycle Bin Monitor'
+title: 'Enable AD Recycle Bin - Failure'
+title_meta: 'Enable AD Recycle Bin - Failure'
 keywords: ['monitor', 'ad', 'recycle', 'bin', 'tickets', 'alerts']
 description: 'This document outlines the steps to create a monitor that generates tickets if the task to enable the Active Directory Recycle Bin fails on the Infrastructure master for more than three attempts. It details the necessary dependencies and step-by-step instructions for setting up the monitor in Alert Management.'
 tags: ['windows']
@@ -50,4 +50,6 @@ This monitor will create tickets if the [Task - Enable AD Recycle Bin](https://p
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
+
+
 

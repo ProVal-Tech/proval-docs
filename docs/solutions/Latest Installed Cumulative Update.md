@@ -1,7 +1,7 @@
 ---
 id: '991e926f-dcd2-4be3-9f3a-ea7ee9842da2'
-title: 'Auditing Windows 10 and 11 Cumulative Updates'
-title_meta: 'Auditing Windows 10 and 11 Cumulative Updates'
+title: 'Latest Installed Cumulative Update'
+title_meta: 'Latest Installed Cumulative Update'
 keywords: ['windows', 'updates', 'cumulative', 'audit', 'autofix']
 description: 'This document provides a comprehensive guide for auditing Windows 10 and 11 computers to ensure they have the latest installed Cumulative Update. It includes steps for implementation, automation, and troubleshooting, along with associated content and internal monitors to streamline the update process.'
 tags: ['software', 'update', 'windows']
@@ -109,4 +109,6 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is set up to run only against machines that are not EOL or recently EOL (within 30 days). If the machine is not EOL currently, check to make sure the monitor is set up to run against the group that the machine is in.
+
+
 

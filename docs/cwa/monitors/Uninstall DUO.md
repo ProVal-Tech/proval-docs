@@ -1,7 +1,7 @@
 ---
 id: '0c3523a9-e392-40f6-bc59-173a21001f0d'
-title: 'Windows Duo Agent Exclusion Monitor'
-title_meta: 'Windows Duo Agent Exclusion Monitor'
+title: 'Uninstall DUO'
+title_meta: 'Uninstall DUO'
 keywords: ['duo', 'monitor', 'windows', 'exclusion', 'agent']
 description: 'This document outlines the purpose and dependencies of the Windows Duo Agent Exclusion Monitor, which is designed to detect Windows machines with Duo installed and manage exclusions based on client, location, or computer-level settings.'
 tags: ['security', 'software', 'windows']
@@ -30,4 +30,6 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Uninstall DUO
+
+
 

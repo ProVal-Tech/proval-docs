@@ -1,7 +1,7 @@
 ---
 id: '11eb5fe8-c4ce-43cf-81ff-0021b5cb3bbd'
-title: 'RingCentral Phone Installation Script for Mac'
-title_meta: 'RingCentral Phone Installation Script for Mac'
+title: 'RingCentral Phone Install - Mac'
+title_meta: 'RingCentral Phone Install - Mac'
 keywords: ['ringcentral', 'installation', 'mac', 'dmg', 'application']
 description: 'This document provides a detailed overview of a script designed to unpack and install the RingCentral Phone application on Mac devices, including its dependencies, process, and expected output.'
 tags: ['application', 'installation', 'software']
@@ -36,4 +36,6 @@ The script will put the machine into Fast Talk mode, as this makes the script ru
 ## Output
 
 Script log messages
+
+
 

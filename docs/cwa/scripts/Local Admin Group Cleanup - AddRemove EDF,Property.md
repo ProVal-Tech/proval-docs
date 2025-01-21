@@ -1,7 +1,7 @@
 ---
 id: '20a1ca42-d99d-4bdc-8ca1-ec75b1e2f2dc'
-title: 'Remove Unapproved Users from Local Admin Group'
-title_meta: 'Remove Unapproved Users from Local Admin Group'
+title: 'Local Admin Group Cleanup - AddRemove EDF,Property'
+title_meta: 'Local Admin Group Cleanup - AddRemove EDF,Property'
 keywords: ['local', 'admin', 'users', 'approved', 'group', 'windows', 'script']
 description: 'This script is designed to manage the Local Admin group by removing unapproved users and adding approved members if they are missing. It ensures that only designated users have administrative access while providing logging and ticketing functionality for tracking any issues encountered during execution.'
 tags: ['security', 'ticketing', 'windows']
@@ -77,4 +77,6 @@ To enable ticketing on failure, the ticket category must be set in the global pa
 
 `Please look into why this automation failed to complete.`  
 `Thank you`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '1346f6e0-a1cc-42fd-85f2-a43785eee53e'
-title: 'Create and Set Local Administrator Password'
-title_meta: 'Create and Set Local Administrator Password'
+title: 'Windows - Local Administrator Process'
+title_meta: 'Windows - Local Administrator Process'
 keywords: ['local', 'administrator', 'password', 'script', 'client']
 description: 'This document outlines a script used to create and set a local Administrator password for a client, detailing the variables, parameters, and process involved. It highlights time savings achieved through automation and provides a sample run for reference.'
 tags: ['security', 'setup', 'windows']
@@ -47,4 +47,6 @@ The script will start by checking if the password entry already exists for the c
 ## Output
 
 - Script log
+
+
 

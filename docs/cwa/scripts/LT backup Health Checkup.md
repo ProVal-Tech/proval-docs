@@ -1,7 +1,7 @@
 ---
 id: '7b0a4072-a682-473a-a708-0b8eecc6d83b'
-title: 'LT Backup Health Check'
-title_meta: 'LT Backup Health Check'
+title: 'LT backup Health Checkup'
+title_meta: 'LT backup Health Checkup'
 keywords: ['backup', 'alert', 'ticket', 'monitoring', 'proval']
 description: 'This document outlines a script designed to monitor the health of LT Backups in a client environment. It alerts users if the last backup update is older than 2 days or if the last backup size is smaller than 99 MB, with the capability to send a ticket to Proval for further action.'
 tags: ['backup', 'email']
@@ -49,4 +49,6 @@ This script detects whether the LT backup ran successfully by checking the backu
 
 - Script log
 - Email
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c'
-title: 'Repair Office Click2Run Automatic Update'
-title_meta: 'Repair Office Click2Run Automatic Update'
+title: 'Office C2R Automatic Update Repair'
+title_meta: 'Office C2R Automatic Update Repair'
 keywords: ['office', 'update', 'repair', 'automatic', 'click2run']
 description: 'This document outlines the process to repair the Office Click2Run Automatic Update on an endpoint using the ProVal Agnostic Solution. It includes example logs and details on the execution of the repair procedure.'
 tags: ['office365', 'software', 'update']
@@ -41,4 +41,6 @@ This document describes the process to repair the Office Click2Run Automatic Upd
 ## Output
 
 Agent Procedure Log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c5c0f740-2981-4557-9fcc-dd2f863a1240'
-title: 'Script Details Overview'
-title_meta: 'Script Details Overview'
+title: 'Script List'
+title_meta: 'Script List'
 keywords: ['scripts', 'details', 'permissions', 'guid', 'automation', 'maintenance', 'function', 'client', 'update']
 description: 'This document provides an overview of the dataview that lists all scripts in the environment, detailing their script folders, types, permissions, and other relevant attributes. It includes a summary of the columns available, such as script name, folder paths, permissions for viewing and editing, and additional script characteristics.'
 tags: ['performance', 'security', 'software', 'update']
@@ -34,4 +34,6 @@ This dataview lists all scripts in the environment with details about their scri
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-List/image_4.png)
+
+
 

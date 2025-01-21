@@ -1,7 +1,7 @@
 ---
 id: 'a6c25db7-fd79-4ed6-9f84-765cd2d10362'
-title: 'Remote Monitor for Newly Created Domain Admins'
-title_meta: 'Remote Monitor for Newly Created Domain Admins'
+title: 'RSM - Active Directory- New Domain Admin'
+title_meta: 'RSM - Active Directory- New Domain Admin'
 keywords: ['monitor', 'domain', 'admin', 'ticket', 'automation']
 description: 'This document outlines the setup and implementation of a remote monitor designed to detect newly created or promoted domain admins. It details the configuration of alerts, dependencies, and ticketing processes to ensure effective monitoring and incident response.'
 tags: ['windows']
@@ -58,4 +58,6 @@ New Domain Admin(s) Detected at %domain% for %clientname%.
 ![Example](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_4.png)
 
 **Automate will never close the ticket; instead, it will keep adding new detections to the same ticket as a comment/note unless the ticket is closed/resolved manually.**
+
+
 

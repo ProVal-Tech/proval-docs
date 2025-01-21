@@ -1,7 +1,7 @@
 ---
 id: '19cf3c3f-14e2-40a0-86c3-735b614a9331'
-title: 'Install KB5005394 - Out of Band Patch'
-title_meta: 'Install KB5005394 - Out of Band Patch'
+title: 'Deploy - KB5005394 - Out of Band Patch'
+title_meta: 'Deploy - KB5005394 - Out of Band Patch'
 keywords: ['kb5005394', 'patch', 'windows', 'update', 'installation']
 description: 'This document describes a script designed to install the KB5005394 Out of Band Patch if it is not already installed. It includes prerequisite verification and may require multiple reboots during the installation process. The script ensures that the system is ready for the update and logs the outcomes of each step.'
 tags: ['installation', 'security', 'update', 'windows']
@@ -48,4 +48,6 @@ The script will install KB5005394 - Out of Band Patch only if it is not already 
 
 - Script log
 - Script state
+
+
 

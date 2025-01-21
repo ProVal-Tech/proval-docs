@@ -1,7 +1,7 @@
 ---
 id: '84cd2c82-8c0b-4f7e-9240-6b640add79e0'
-title: 'Finish Tickets for Feature Update'
-title_meta: 'Finish Tickets for Feature Update'
+title: 'Auto Close - Feature Update Tickets Autofix'
+title_meta: 'Auto Close - Feature Update Tickets Autofix'
 keywords: ['tickets', 'feature', 'update', 'windows', 'monitor']
 description: 'This document outlines a script designed to finalize new or open tickets related to the feature pack upgrade solution for Windows 10 machines that have been updated to the latest build. It details the affected ticket subjects, sample run, dependencies, and variables used in the script.'
 tags: ['update', 'windows']
@@ -34,4 +34,6 @@ The purpose of the script is to finish the new or open tickets created by the fe
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticket ID to finish/close                       |
+
+
 

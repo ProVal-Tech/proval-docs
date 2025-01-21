@@ -1,7 +1,7 @@
 ---
 id: 'f9840922-3209-4bd9-b890-2145018bfd56'
-title: 'Windows Upgrade Assistant Script'
-title_meta: 'Windows Upgrade Assistant Script for Upgrading to Windows 10'
+title: 'DEV - Windows 10 Upgrade Assistant'
+title_meta: 'DEV - Windows 10 Upgrade Assistant'
 keywords: ['windows', 'upgrade', 'assistant', 'script', 'automation']
 description: 'This document details a script designed to initiate the Windows Upgrade Assistant for upgrading a target system to the latest version of Windows 10, including dependencies, variables, and the overall process involved in executing the upgrade.'
 tags: ['installation', 'software', 'windows']
@@ -43,4 +43,6 @@ This script starts the Windows Upgrade Assistant to upgrade the target system to
 ## Output
 
 - Script log
+
+
 

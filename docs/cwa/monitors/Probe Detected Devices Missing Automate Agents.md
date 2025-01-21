@@ -1,7 +1,7 @@
 ---
 id: '02f3c288-d5e4-4b45-9020-e47f41a254af'
-title: 'Monitor Device Readiness for Automate Agent Deployment'
-title_meta: 'Monitor Device Readiness for Automate Agent Deployment'
+title: 'Probe Detected Devices Missing Automate Agents'
+title_meta: 'Probe Detected Devices Missing Automate Agents'
 keywords: ['device', 'monitor', 'automate', 'agent', 'deployment', 'readiness', 'network', 'probe']
 description: 'This document outlines a monitoring solution that identifies devices detected by the Network probe that can have the Automate agent deployed. It checks for machines with non-matching MAC addresses against existing Automate agents and provides readiness status and installation attempt details.'
 tags: ['ticketing']
@@ -52,4 +52,6 @@ Global
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
+
+
 

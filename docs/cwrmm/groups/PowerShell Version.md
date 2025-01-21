@@ -1,7 +1,7 @@
 ---
 id: 'bbb9f958-4fd3-4fda-903f-7d303bf26779'
-title: 'PowerShell Version Auditing Solution'
-title_meta: 'PowerShell Version Auditing Solution'
+title: 'PowerShell Version'
+title_meta: 'PowerShell Version'
 keywords: ['device', 'group', 'audit', 'version', 'criteria']
 description: 'This document provides a comprehensive guide for creating three device groups related to the PowerShell version auditing solution. It outlines the necessary dependencies, the steps to create the device groups, and the specific criteria for each group based on the PowerShell version status of the devices.'
 tags: ['software', 'windows']
@@ -71,4 +71,6 @@ When adding criteria, please search for the PowerShell Version custom field.
 - **Condition:** "Success"  
 
 This group holds all devices that are on PowerShell version 5 or above.
+
+
 

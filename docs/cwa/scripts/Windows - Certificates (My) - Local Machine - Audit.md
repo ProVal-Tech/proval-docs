@@ -1,7 +1,7 @@
 ---
 id: '7d13a122-8d62-4c50-b19f-922e6bb37a13'
-title: 'Get Local Certificates Script'
-title_meta: 'Get Local Certificates Script for Monitoring Certificate Repositories'
+title: 'Windows - Certificates (My) - Local Machine - Audit'
+title_meta: 'Windows - Certificates (My) - Local Machine - Audit'
 keywords: ['certificates', 'monitoring', 'script', 'repository', 'servers']
 description: 'This document describes a PowerShell script designed to retrieve all certificates from the personal certificate repository on specified machines. It is recommended for use on App, IIS, and Exchange servers and should be scheduled for regular execution to monitor certificate status effectively.'
 tags: ['windows']
@@ -32,4 +32,6 @@ This script is designed to run a PowerShell script and pull any and all certific
 - Script log
 - Custom Table
 - Dataview
+
+
 

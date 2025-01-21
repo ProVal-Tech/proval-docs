@@ -1,7 +1,7 @@
 ---
 id: '3ccd3348-558b-41c3-8a81-c65fae2cf04e'
-title: 'Restart CWAFileService on Invalid Authorization Token'
-title_meta: 'Restart CWAFileService on Invalid Authorization Token'
+title: 'CWAFileService - Invalid Token'
+title_meta: 'CWAFileService - Invalid Token'
 keywords: ['restart', 'service', 'authorization', 'token', 'monitor']
 description: 'This document outlines a remote monitor that restarts the CWAFileService on the Automate server when it detects an invalid authorization token in the service logs. The monitor checks for specific error messages within the last 15 minutes and triggers a service restart if necessary.'
 tags: []
@@ -42,5 +42,7 @@ The %computername% (Automate) Server is currently reporting %result% occurrences
 
 Follow the article below:  
 - [Import - Remote Monitors - CWAFileService - Invalid Token](<./CWAFileService - Invalid Token.md>)
+
+
 
 

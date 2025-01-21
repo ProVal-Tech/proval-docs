@@ -1,7 +1,7 @@
 ---
 id: 'f4ed7a7d-baf0-4aa5-8bbe-413fa024fff3'
-title: 'Automate Server Security Best Practices'
-title_meta: 'Automate Server Security Best Practices'
+title: 'CWM - Automate - Automate Server Security Best Practices'
+title_meta: 'CWM - Automate - Automate Server Security Best Practices'
 keywords: ['connectwise', 'automate', 'security', 'firewall', 'hardening']
 description: 'This document provides a comprehensive guide to configuring a ConnectWise Automate server with security settings. It includes information on firewall port settings, global parameters, and sample output from the script execution. This guide is essential for ensuring server hardening and security compliance.'
 tags: ['backup', 'networking', 'security', 'windows']
@@ -311,4 +311,6 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 ## Reading View
 
 ![Reading View](../../../static/img/CWM---Automate---Automate-Server-Security-Best-Practices/image_3.png)
+
+
 

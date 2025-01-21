@@ -1,7 +1,7 @@
 ---
 id: '81b5f220-8cfc-4a52-bbf2-e6606eebf822'
-title: 'Duo Multifactor Authentication Overview for Automate Agents'
-title_meta: 'Duo Multifactor Authentication Overview for Automate Agents'
+title: '2FA - Duo Auth Audit'
+title_meta: '2FA - Duo Auth Audit'
 keywords: ['duo', 'mfa', 'authentication', 'automate', 'agents']
 description: 'This document provides an overview of agents configured with Duo Multifactor Authentication within the ConnectWise Automate environment. It details the necessary dependencies, describes the relevant data columns, and includes the SQL representation for querying this information.'
 tags: ['database', 'report', 'security']
@@ -74,4 +74,6 @@ FROM
       AND users.userid > 0 
   ) t
 ```
+
+
 

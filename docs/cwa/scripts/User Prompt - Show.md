@@ -1,7 +1,7 @@
 ---
 id: 'd4406d51-fc3a-46e1-8e25-31a5f43b05e2'
-title: 'Customizable Pop-up and Balloon Message Script'
-title_meta: 'Customizable Pop-up and Balloon Message Script'
+title: 'User Prompt - Show'
+title_meta: 'User Prompt - Show'
 keywords: ['popup', 'balloon', 'message', 'customizable', 'user']
 description: 'This document provides a detailed overview of a script designed to display customizable pop-up and balloon messages on target machines. It includes requirements, sample runs, dependencies, variables, user parameters, and the process for using the script effectively.'
 tags: ['software', 'windows']
@@ -93,4 +93,6 @@ Document the various variables in the script. Delete any section that is not rel
 - The selection made by the user will be stored in the `UserSelection` variable in the script.
   - If you select date/time selection, it will return the selected date/time from the user.
   - If you select a yes-no button, a yes or no will be returned.
+
+
 

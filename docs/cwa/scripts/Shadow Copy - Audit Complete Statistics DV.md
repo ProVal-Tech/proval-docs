@@ -1,7 +1,7 @@
 ---
 id: '9d69d33c-688e-4c02-adfe-cef7c8ecd766'
-title: 'Shadow Copy Data Collection Script'
-title_meta: 'Shadow Copy Data Collection Script for Windows Systems'
+title: 'Shadow Copy - Audit Complete Statistics DV'
+title_meta: 'Shadow Copy - Audit Complete Statistics DV'
 keywords: ['shadowcopy', 'data', 'collection', 'windows', 'script']
 description: 'This document outlines a script that records data related to Shadow Copy for individual systems into a custom table. It details the dependencies, system properties, process, and output of the script, including instructions for ensuring compatibility with blocking applications.'
 tags: ['backup', 'database', 'security', 'windows']
@@ -50,4 +50,6 @@ Finally, the script will run the SQL statement against the Automate server to in
 - Script logs.
 - Custom table [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>).
 - Dataview [Dataview - Windows - Shadow Copy State [Script]](<../dataviews/Windows - Shadow Copy State Script.md>).
+
+
 

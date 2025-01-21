@@ -1,7 +1,7 @@
 ---
 id: 'ddd45f6e-2b41-4b83-a81e-ff3639b462a5'
-title: 'Egnyte Installation Procedure'
-title_meta: 'Egnyte Installation Procedure'
+title: 'Egnyte - Install'
+title_meta: 'Egnyte - Install'
 keywords: ['egnyte', 'installation', 'endpoint', 'update', 'procedure']
 description: 'This document outlines the procedure for installing Egnyte on an endpoint, including how to manage custom fields for reboot requirements and rescheduling the installation process if necessary.'
 tags: ['installation', 'software', 'update']
@@ -23,4 +23,6 @@ This solution installs Egnyte on an endpoint. It will update a custom field if a
 ## Implementation
 
 Ensure the custom field is added prior to running the agent procedure. Additionally, ensure the installer is added to managed files.
+
+
 

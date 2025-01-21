@@ -1,7 +1,7 @@
 ---
 id: '186ae433-e9bc-46d1-9056-71924879ae6e'
-title: 'Enable IE Mode for a Specific Site in Edge'
-title_meta: 'Enable IE Mode for a Specific Site in Edge'
+title: 'Enable IE Mode in Microsoft Edge'
+title_meta: 'Enable IE Mode in Microsoft Edge'
 keywords: ['ie', 'edge', 'integration', 'site', 'mode']
 description: 'This document provides a PowerShell script that enables Internet Explorer mode for a specific site within the Microsoft Edge browser. It outlines the necessary variables, user parameters, and the process for implementation, ensuring that users can easily configure their settings for seamless browsing.'
 tags: ['setup', 'software', 'windows']
@@ -39,6 +39,8 @@ Once the setting is done, it checks the computer EDFs for logging in the databas
 ## Output
 
 - Script log
+
+
 
 
 

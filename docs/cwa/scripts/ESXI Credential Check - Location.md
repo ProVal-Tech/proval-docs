@@ -1,7 +1,7 @@
 ---
 id: '48e22d95-37d4-453d-a7a4-d816bd9950f9'
-title: 'Create Client Ticket for VM Without Host'
-title_meta: 'Create Client Ticket for VM Without Host'
+title: 'ESXI Credential Check - Location'
+title_meta: 'ESXI Credential Check - Location'
 keywords: ['client', 'ticket', 'virtual', 'machine', 'host', 'manager']
 description: 'This document outlines a script that generates client tickets for locations with virtual machines that lack a corresponding host in the virtualization manager. It includes details on variables, process flow, and sample runs to ensure effective monitoring and management.'
 tags: ['database', 'report', 'ticketing', 'virtualization']
@@ -40,4 +40,6 @@ Document the various variables in the script. Delete any section that is not rel
 ![Image](../../../static/img/ESXI-Credential-Check---Location/image_2.png)
 
 ![Image](../../../static/img/ESXI-Credential-Check---Location/image_3.png)
+
+
 

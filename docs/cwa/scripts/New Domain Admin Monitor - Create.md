@@ -1,7 +1,7 @@
 ---
 id: '73adabc6-03cb-4979-9c62-97acc98308da'
-title: 'Creating Remote Monitors for New Domain Administrators'
-title_meta: 'Creating Remote Monitors for New Domain Administrators'
+title: 'New Domain Admin Monitor - Create'
+title_meta: 'New Domain Admin Monitor - Create'
 keywords: ['remote', 'monitors', 'domain', 'administrators', 'windows', 'alerts']
 description: 'This document outlines the process for creating remote monitors that identify new or elevated domain administrators on Windows domain controllers. It details the necessary steps, system properties, and Extra Data Fields (EDFs) required for effective monitoring and alerting.'
 tags: ['security', 'setup', 'windows']
@@ -126,4 +126,6 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
+
+
 

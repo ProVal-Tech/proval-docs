@@ -1,7 +1,7 @@
 ---
 id: '06094f2c-6867-48d7-9a94-1d4b9ad08ec0'
-title: 'Remove Datto RMM from Mac or Windows Endpoint'
-title_meta: 'Remove Datto RMM from Mac or Windows Endpoint'
+title: 'Datto RMM Agent Uninstall'
+title_meta: 'Datto RMM Agent Uninstall'
 keywords: ['datto', 'rmm', 'uninstall', 'windows', 'mac', 'endpoint']
 description: 'This document provides a detailed procedure for uninstalling Datto RMM from both Mac and Windows endpoints, including example logs and dependencies for successful execution.'
 tags: ['software', 'uninstallation', 'windows']
@@ -49,4 +49,6 @@ Runs [sudo bash /Applications/AEM/Agent.app/Contents/Resources/uninstall.sh](htt
 ## Output
 
 Agent procedure log.
+
+
 

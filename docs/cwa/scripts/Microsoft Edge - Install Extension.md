@@ -1,7 +1,7 @@
 ---
 id: '86453c18-b4e1-44ae-ba29-75c55dca7fb9'
-title: 'Enforce Installation of Edge Extensions'
-title_meta: 'Enforce Installation of Edge Extensions'
+title: 'Microsoft Edge - Install Extension'
+title_meta: 'Microsoft Edge - Install Extension'
 keywords: ['edge', 'extensions', 'chromium', 'installation', 'registry', 'mdm']
 description: 'This document provides a detailed overview of a script designed to enforce the installation of specified extensions in the Chromium version of the Microsoft Edge browser. It outlines the dependencies, variables, user parameters, and the process involved in executing the script, ensuring a seamless installation experience for users.'
 tags: ['installation', 'security', 'windows']
@@ -50,4 +50,6 @@ The script takes a single parameter, which is an array of ExtensionIDs to instal
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '62b34638-cf57-4261-8245-20689ac52ce6'
-title: 'Drive Monitoring and RAID Failure Detection'
-title_meta: 'Drive Monitoring and RAID Failure Detection'
+title: 'EPM - Disk - Monitor - Drive Errors and Raid Failures'
+title_meta: 'EPM - Disk - Monitor - Drive Errors and Raid Failures'
 keywords: ['monitoring', 'raid', 'errors', 'windows', 'event', 'logs']
 description: 'This document provides a comprehensive overview of a monitor designed to proactively detect drive errors and RAID failure events in managed Windows computers. It details its functionality, limitations, and customization options for alerting based on specific error types.'
 tags: ['raid', 'windows']
@@ -37,4 +37,6 @@ is the number of events.
 Translated from programming to human, this essentially says, "Do not tell me about controller errors unless there are more than 20 of them."
 
 This could work for Paging Errors, Bad Blocks, or really anything you can match.
+
+
 

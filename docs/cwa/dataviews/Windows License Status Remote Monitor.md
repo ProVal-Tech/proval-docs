@@ -1,7 +1,7 @@
 ---
 id: 'a7c4b9ab-0216-4d04-8480-9e9eac8c4c07'
-title: 'Windows License Status Monitoring'
-title_meta: 'Windows License Status Monitoring'
+title: 'Windows License Status Remote Monitor'
+title_meta: 'Windows License Status Remote Monitor'
 keywords: ['windows', 'license', 'monitoring', 'status', 'client', 'location', 'computer', 'operating', 'contact', 'data', 'collection']
 description: 'This document provides an overview of how to monitor the status of Windows licenses using remote monitoring tools. It outlines the necessary dependencies, the columns used for reporting, and how to interpret the license status of Windows installations across various clients and locations.'
 tags: ['report', 'windows']
@@ -31,4 +31,6 @@ This document displays the status of the Windows License fetched by the remote m
 | Last Contact           | Last contact time of the computer                                  |
 | Data Collection Time    | The time when the Windows License Status was fetched              |
 | Windows License Status  | The status of the Windows license, indicating if it has expired, is about to expire, or is licensed. |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '2c7e719e-7654-47e6-9ff0-d5261ae67eb8'
-title: 'Senteon Registration Code Management'
-title_meta: 'Senteon Registration Code Management for Agents'
+title: 'Senteon_Reg_Code'
+title_meta: 'Senteon_Reg_Code'
 keywords: ['senteon', 'registration', 'code', 'managed', 'variable']
 description: 'This document provides details on managing the Senteon registration code for agents, including how to retrieve the necessary code from the Senteon portal and its usage in the agent installation process.'
 tags: ['installation', 'setup', 'software']
@@ -25,4 +25,6 @@ The value for this must be provided by the partner. The partner can get the data
 | Managed Variable Name | Managed Variable Type | Description                                              |
 |-----------------------|-----------------------|----------------------------------------------------------|
 | Senteon_Reg_Code      | Public                | Used by the agent procedure to specify the registration code during installation |
+
+
 

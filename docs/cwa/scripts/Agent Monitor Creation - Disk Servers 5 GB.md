@@ -1,7 +1,7 @@
 ---
 id: '9ce297f7-cc65-4fd8-b05b-b25e6088c6fe'
-title: 'Create Remote Monitors for Disk Space'
-title_meta: 'Create Remote Monitors for Disk Space'
+title: 'Agent Monitor Creation - Disk Servers 5 GB'
+title_meta: 'Agent Monitor Creation - Disk Servers 5 GB'
 keywords: ['remote', 'monitors', 'disk', 'space', 'agent', 'sensor']
 description: 'This document describes a script that creates remote monitors for detected hard drives at the agent level and updates the script state to indicate that the SensorID already has a monitor assigned. It includes details on dependencies, variables, script states, and the process involved in executing the script.'
 tags: ['disk', 'report']
@@ -47,4 +47,6 @@ This script runs some SQL commands to create remote monitors for detected hard d
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a server.
+
+
 

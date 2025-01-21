@@ -1,7 +1,7 @@
 ---
 id: '2d758af9-c045-4154-b0c9-63eeb7743004'
-title: 'Audit Agents Dataview'
-title_meta: 'Audit Agents Dataview'
+title: 'Agent Audit with AD Computers'
+title_meta: 'Agent Audit with AD Computers'
 keywords: ['audit', 'agents', 'environment', 'dataview', 'client', 'location', 'computerid', 'agent', 'operating', 'system', 'manufacturer', 'antivirus', 'bios', 'contact', 'heartbeat', 'username', 'ad', 'logon']
 description: 'This document provides a detailed overview of the dataview used to audit agents in the environment, including descriptions of each column such as Client Name, Location Name, and Agent Operating System, among others.'
 tags: ['report', 'security', 'windows']
@@ -34,5 +34,7 @@ The dataview can be used to audit the agents in the environment.
 | Last Username                   | The last logged-in user on the computer.           |
 | Last AD Logon                  | The last Active Directory login date.              |
 | Days Since AD Logon            | The number of days since the last Active Directory login. |
+
+
 
 

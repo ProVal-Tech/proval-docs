@@ -1,7 +1,7 @@
 ---
 id: '478c4a27-9722-4175-819d-fd4ed1f481f2'
-title: 'Patch and Cumulative Update Compliance Overview'
-title_meta: 'Patch and Cumulative Update Compliance Overview'
+title: 'Patching and CU compliance Metrics'
+title_meta: 'Patching and CU compliance Metrics'
 keywords: ['patch', 'compliance', 'update', 'windows', 'cumulative', 'score']
 description: 'This document provides an overview of the patch and cumulative update compliance score for supported Windows computers in the environment, detailing the compliance metrics, dependencies, and scoring system used to assess the patch management effectiveness.'
 tags: ['compliance', 'update', 'windows']
@@ -64,4 +64,6 @@ The dataview is designed to display the patch and cumulative update compliance s
 | CU Score %                           | Green  | Greater than or equal to 75         |
 | Compliant Clients - CU %             | Red    | Less than 75                         |
 | Compliant Clients - CU %             | Green  | Greater than or equal to 75         |
+
+
 

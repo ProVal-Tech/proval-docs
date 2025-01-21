@@ -1,7 +1,7 @@
 ---
 id: ps-disable-powershellversion2
-title: 'Disable-PowerShellVersion2'
-title_meta: 'Disable-PowerShellVersion2 Command'
+title: 'Disable-PowershellVersion2'
+title_meta: 'Disable-PowershellVersion2'
 keywords: ['disable', 'powershell', 'version', 'update']
 description: 'Documentation for the Disable-PowerShellVersion2 command to disable the Windows PowerShell v2 feature if a newer version is installed.'
 tags: ['security', 'update', 'windows']
@@ -30,4 +30,6 @@ This command checks for a version of PowerShell greater than v2. If one is prese
 ## Output
 - .\Disable-PowerShellVersion2-log.txt
 - .\Disable-PowerShellVersion2-error.txt
+
+
 

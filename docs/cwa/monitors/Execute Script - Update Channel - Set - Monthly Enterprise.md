@@ -1,7 +1,7 @@
 ---
 id: 'a17fd169-876b-4de8-b01c-d396ec4899cf'
-title: 'Microsoft 365 Update Channel Configuration'
-title_meta: 'Microsoft 365 Update Channel Configuration'
+title: 'Execute Script - Update Channel - Set - Monthly Enterprise'
+title_meta: 'Execute Script - Update Channel - Set - Monthly Enterprise'
 keywords: ['microsoft', '365', 'update', 'channel', 'configuration', 'windows']
 description: 'This document outlines the internal monitor that executes the Microsoft 365 Update Channel script on online machines with Microsoft Office 365 installed. It details the criteria for execution and dependencies required for proper functionality.'
 tags: ['software', 'update', 'windows']
@@ -33,4 +33,6 @@ Windows Machines
 **Name:** `~custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`  
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Monthly Enterprise](<../scripts/Microsoft 365 - Set Update Channel - Monthly Enterprise.md>) script.
+
+
 

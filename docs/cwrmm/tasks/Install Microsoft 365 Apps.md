@@ -1,7 +1,7 @@
 ---
 id: 'b96a76bc-3659-4c6c-b66b-6ae465252c61'
 title: 'Install Microsoft 365 Apps'
-title_meta: 'Install Microsoft 365 Apps for Business with XML Configuration'
+title_meta: 'Install Microsoft 365 Apps'
 keywords: ['microsoft', '365', 'install', 'xml', 'configuration']
 description: 'This document provides a detailed guide on installing Microsoft 365 Apps for Business using an XML configuration file. It includes steps for creating a script, setting parameters, and executing the installation process, with options for customization and logging.'
 tags: ['application', 'setup', 'software', 'windows']
@@ -178,4 +178,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

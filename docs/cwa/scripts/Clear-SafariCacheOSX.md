@@ -1,7 +1,7 @@
 ---
 id: '11e2bd71-314c-497f-a22a-814ff2af0d4d'
-title: 'Clear Safari Cache on macOS Devices'
-title_meta: 'Clear Safari Cache on macOS Devices'
+title: 'Clear-SafariCacheOSX'
+title_meta: 'Clear-SafariCacheOSX'
 keywords: ['safari', 'cache', 'macos', 'clear', 'files', 'folders', 'logs', 'errors']
 description: 'This document provides a step-by-step guide on how to clear the Safari cache on macOS devices, including the requirements, process, and output logs for successful execution.'
 tags: []
@@ -45,4 +45,6 @@ Clears all Safari cache files and folders from macOS devices.
 | ConnectWise RMM           |                                        |
 | Kaseya                    |                                        |
 | Datto RMM                 |                                        |
+
+
 

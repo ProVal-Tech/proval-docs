@@ -1,7 +1,7 @@
 ---
 id: '388b4b61-34b7-4d40-b4de-507032df83d7'
-title: 'Current Agent PowerShell Versions'
-title_meta: 'Current Agent PowerShell Versions'
+title: 'PowerShell Version Audit'
+title_meta: 'PowerShell Version Audit'
 keywords: ['agent', 'powershell', 'version', 'audit', 'rmm']
 description: 'This document provides a dataview that shows the current PowerShell versions installed on agents, along with details such as client name, location, operating system, and last contact information. It also includes SQL representation for querying this data.'
 tags: ['database']
@@ -65,4 +65,6 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
+
+
 

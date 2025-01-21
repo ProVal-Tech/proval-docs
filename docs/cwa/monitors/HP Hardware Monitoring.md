@@ -1,7 +1,7 @@
 ---
 id: 'd6b85a77-e6bc-4ff1-9279-9d17487655ba'
-title: 'HP Event Log Monitoring for Servers'
-title_meta: 'HP Event Log Monitoring for Servers'
+title: 'HP Hardware Monitoring'
+title_meta: 'HP Hardware Monitoring'
 keywords: ['hp', 'event', 'monitoring', 'servers', 'ticketing']
 description: 'This document outlines the process for monitoring HP server event logs using HP Server management software. It details the necessary dependencies, target systems, and ticketing format for alert notifications related to HP hardware issues.'
 tags: ['hp', 'ticketing', 'windows']
@@ -58,4 +58,6 @@ Event Type: Error
 Message: \\<Event Message>
 TimeGen: \\<Time of Generation>
 ```
+
+
 

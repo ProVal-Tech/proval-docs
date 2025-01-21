@@ -1,7 +1,7 @@
 ---
 id: 'd96342ec-c42e-424b-85b6-d7009a3163d0'
-title: 'Create New MySQL User with Read-only Permissions'
-title_meta: 'Create New MySQL User with Read-only Permissions'
+title: 'Create MySQL User'
+title_meta: 'Create MySQL User'
 keywords: ['mysql', 'user', 'permissions', 'read-only', 'database']
 description: 'This document provides a detailed guide on creating a new MySQL user with Read-only permissions using ConnectWise Automate. It includes user parameters, sample run output, and process details necessary for executing the script effectively.'
 tags: ['database', 'security', 'setup']
@@ -29,4 +29,6 @@ This script will create a new MySQL user with Read-only permissions.
 ## Process
 
 This script runs a SQL query and creates a new MySQL user with Full permissions for the `Labtech` database.
+
+
 

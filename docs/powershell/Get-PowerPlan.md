@@ -1,7 +1,7 @@
 ---
 id: ps-get-powerplan
 title: 'Get-PowerPlan'
-title_meta: 'Get-PowerPlan Command'
+title_meta: 'Get-PowerPlan'
 keywords: ['powerplan', 'settings', 'configuration', 'energy']
 description: 'Documentation for the Get-PowerPlan command to retrieve information about power plans, their subgroups, and power settings.'
 tags: ['performance', 'windows']
@@ -31,4 +31,6 @@ To retrieve information about available power plans, subgroups, and power settin
 
 ## Output
 The output will be saved in `Get-PowerPlansInfo-log.txt`.
+
+
 

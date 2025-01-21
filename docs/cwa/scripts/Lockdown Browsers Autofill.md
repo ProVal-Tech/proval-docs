@@ -1,7 +1,7 @@
 ---
 id: '0fd5ce6e-ad48-4198-a69f-55dc16865b05'
-title: 'Lockdown Browsers Configuration Guide'
-title_meta: 'Lockdown Browsers Configuration Guide'
+title: 'Lockdown Browsers Autofill'
+title_meta: 'Lockdown Browsers Autofill'
 keywords: ['lockdown', 'browsers', 'configuration', 'edfs', 'remote', 'monitors']
 description: 'This document provides a comprehensive guide to configuring lockdown settings for browsers within a ConnectWise Automate environment. It includes steps for importing client, location, and computer level Extra Data Fields (EDFs), creating searches and groups, and setting up remote monitors to ensure effective management of browser lockdown features.'
 tags: ['security', 'setup', 'software']
@@ -357,4 +357,6 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Browsers Password Manager
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
+
+
 

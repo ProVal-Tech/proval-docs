@@ -1,7 +1,7 @@
 ---
 id: 'b634da09-7507-466f-be5e-f7a8d62aacf7'
-title: 'Set Custom Property in CW Control'
-title_meta: 'Set Custom Property in CW Control'
+title: 'ScreenConnect - Update Custom Property RMM+,Param'
+title_meta: 'ScreenConnect - Update Custom Property RMM+,Param'
 keywords: ['custom', 'property', 'cw', 'control', 'automation']
 description: 'This document explains how to set a custom property in CW Control for a matching system using the matching GUID. It includes sample runs, dependencies, user parameters, system properties, and expected output, making it a comprehensive guide for users looking to automate this process.'
 tags: []
@@ -59,4 +59,6 @@ User properties for the Custom Property Index and the Property Value need to be 
 ## Output
 
 Script log messages only.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '523b8882-2c51-4f70-ad7d-cb2b4baf7bbf'
-title: 'Huntress Agent Installation Script'
-title_meta: 'Huntress Agent Installation Script'
+title: 'Deploy Huntress Agent Windows, Mac'
+title_meta: 'Deploy Huntress Agent Windows, Mac'
 keywords: ['huntress', 'agent', 'installation', 'windows', 'macintosh', 'ticketing']
 description: 'This document provides a comprehensive guide on installing the Huntress Agent on Windows and Macintosh machines. It includes details on ticket creation for installation failures, sample runs, dependencies, user parameters, and EDF configurations for effective deployment.'
 tags: ['installation', 'security', 'ticketing', 'windows']
@@ -100,4 +100,6 @@ Output of the installation command:
 
 - Script log
 - Ticket (if enabled)
+
+
 

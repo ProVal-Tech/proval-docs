@@ -1,7 +1,7 @@
 ---
 id: 'a4434526-0106-4df4-832c-752519597f82'
-title: 'Store Last Signed-In User'
-title_meta: 'Store Last Signed-In User'
+title: 'Last Signed in User - Backup'
+title_meta: 'Last Signed in User - Backup'
 keywords: ['backup', 'logon', 'user', 'registry', 'computer']
 description: 'This document describes a script used to store the last signed-in user information for PRONOC users, allowing them to restore their computer to its previous state after work is completed. It details the process of creating a registry backup and logging the results.'
 tags: ['backup', 'registry']
@@ -30,4 +30,6 @@ This script stores the last signed-in user information from the registry as a ba
 ## Output
 
 - Script log
+
+
 

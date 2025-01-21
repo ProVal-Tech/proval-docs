@@ -1,7 +1,7 @@
 ---
 id: '5ca4395e-3e6f-476c-a75e-87751957751f'
-title: 'Check MySQL Users Script'
-title_meta: 'Check MySQL Users Script'
+title: 'Monitor MySQL New Users'
+title_meta: 'Monitor MySQL New Users'
 keywords: ['mysql', 'email', 'script', 'users', 'notification']
 description: 'This document outlines a script designed to check the state of MySQL users, determine if there have been any changes since the last execution, and notify specified email addresses of any new users added. The process is automated to save time and streamline user management.'
 tags: ['email', 'mysql', 'setup']
@@ -43,4 +43,6 @@ unlisted: false
 ## Output
 
 Email
+
+
 

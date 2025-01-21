@@ -1,7 +1,7 @@
 ---
 id: '510f8406-d2d0-4ada-a92d-6837c134f43b'
-title: 'Get Power Plan Information'
-title_meta: 'Get Power Plan Information'
+title: 'Get-PowerPlan'
+title_meta: 'Get-PowerPlan'
 keywords: ['power', 'plan', 'settings', 'subgroup', 'configuration']
 description: 'This document outlines a procedure to retrieve detailed information about power plans, their subgroups, and associated power settings using the powercfg command. It provides a structured output that can be logged and used for further analysis or configuration management.'
 tags: ['report', 'setup', 'windows']
@@ -38,4 +38,6 @@ The output log can be found at:
 `$env:ProgramData/_automation/AgentProcedure/GetPowerPlan/Get-PowerPlan-log.txt`
 
 Agent Procedure Log
+
+
 

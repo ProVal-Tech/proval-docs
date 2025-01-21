@@ -1,7 +1,7 @@
 ---
 id: '1b448856-c7d6-4aed-8080-474f5650a070'
-title: 'Windows 10 Feature Upgrade Status Codes'
-title_meta: 'Windows 10 Feature Upgrade Status Codes'
+title: 'xPVAL Windows Feature Upgrade Status'
+title_meta: 'xPVAL Windows Feature Upgrade Status'
 keywords: ['windows', 'upgrade', 'status', 'feature', 'script']
 description: 'This document outlines the various status codes associated with the Windows 10 Feature Upgrade script, detailing what each status indicates regarding the upgrade process.'
 tags: ['windows']
@@ -19,4 +19,6 @@ unlisted: false
 | Failure               | Set when installState = 2                                   |
 | Success               | Set when installState = 3                                   |
 | Reboot Pending        | Set when installState = 1 and lastReboot is less than installDate. |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '0b20cd24-d35c-47c9-a35d-cd1f2a5ac2e8'
-title: 'Deploying Perch Log Shipper on Windows Machines'
-title_meta: 'Deploying Perch Log Shipper on Windows Machines'
+title: 'Deploy PerchLogShipper'
+title_meta: 'Deploy PerchLogShipper'
 keywords: ['perch', 'log', 'shipper', 'windows', 'deployment', 'monitor']
 description: 'This document outlines the steps to deploy Perch Log Shipper on Windows machines, detailing associated scripts and monitors needed for effective implementation.'
 tags: ['deployment', 'software', 'windows']
@@ -39,4 +39,6 @@ Read the associated documents carefully.
 - Ensure the [Script - Deploy Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986108) script is bonded to the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template.
 - Ensure the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template is being used with [Internal Monitor - Agents Missing Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986404).
 - Right-click and select "Run Now" to enable [Internal Monitor - Agents Missing Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986404) to start deploying Perch Log Shipper on the required machines.
+
+
 

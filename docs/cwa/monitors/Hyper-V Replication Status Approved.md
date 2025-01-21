@@ -1,7 +1,7 @@
 ---
 id: 'f201b6f8-2844-484b-b3f8-79e1fd76e819'
-title: 'Hyper-V Replication Status Monitoring'
-title_meta: 'Hyper-V Replication Status Monitoring'
+title: 'Hyper-V Replication Status Approved'
+title_meta: 'Hyper-V Replication Status Approved'
 keywords: ['hyper-v', 'replication', 'monitoring', 'alerts', 'troubleshooting']
 description: 'This document provides a detailed guide on implementing monitoring for Hyper-V replication status within your environment. It includes SQL queries for setting up alerts, troubleshooting steps for replication issues, and examples to ensure proper configuration.'
 tags: ['sql', 'virtualization']
@@ -155,4 +155,6 @@ unlisted: false
    ```
 
 3. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

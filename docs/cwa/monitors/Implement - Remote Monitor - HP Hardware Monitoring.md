@@ -1,7 +1,7 @@
 ---
 id: '4e3fc053-3ccd-4262-b8e8-662222500e06'
-title: 'Steps to Setup HP Hardware Monitoring'
-title_meta: 'Steps to Setup HP Hardware Monitoring'
+title: 'Implement - Remote Monitor - HP Hardware Monitoring'
+title_meta: 'Implement - Remote Monitor - HP Hardware Monitoring'
 keywords: ['setup', 'monitoring', 'hp', 'hardware', 'alerts']
 description: 'This document outlines the step-by-step process to set up HP Hardware Monitoring in ConnectWise Automate, including importing alert templates, running SQL queries, and configuring monitors for HP servers.'
 tags: ['hp', 'setup', 'sql']
@@ -221,4 +221,6 @@ Check the concerned groups to ensure the monitor set is created and configured w
 
 ### 8. Set Alert Template
 Set the appropriate alert template.
+
+
 

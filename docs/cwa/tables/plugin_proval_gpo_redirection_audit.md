@@ -1,7 +1,7 @@
 ---
 id: '025887c2-41a2-4e85-b706-dc0841a104d9'
-title: 'Redirection Audit Dataview Setup'
-title_meta: 'Redirection Audit Dataview Setup for GPO Redirection Settings'
+title: 'plugin_proval_gpo_redirection_audit'
+title_meta: 'plugin_proval_gpo_redirection_audit'
 keywords: ['gpo', 'audit', 'dataview', 'redirection', 'settings']
 description: 'This document outlines the setup of a table for storing data displayed in the Redirection-Audit Dataview, populated by the Audit - GPO Redirection Settings script. It includes details on table structure, dependencies, and SQL commands for table creation.'
 tags: ['database', 'report', 'windows']
@@ -44,4 +44,6 @@ CREATE TABLE IF NOT EXISTS `@TableName@` (
 )
 COLLATE='utf8_general_ci';
 ```
+
+
 

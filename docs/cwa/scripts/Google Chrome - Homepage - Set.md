@@ -1,7 +1,7 @@
 ---
 id: 'eebf8239-a9d5-462b-a7cf-72d9a50e1f14'
-title: 'SWM - Software Configuration - Set-ChromiumHomepage'
-title_meta: 'SWM - Software Configuration - Set-ChromiumHomepage'
+title: 'Google Chrome - Homepage - Set'
+title_meta: 'Google Chrome - Homepage - Set'
 keywords: ['automate', 'chromium', 'homepage', 'configuration', 'browser']
 description: 'This document provides an implementation guide for the SWM - Software Configuration - Set-ChromiumHomepage script, designed to enforce a specific homepage for the Google Chrome browser in a ConnectWise Automate environment. It includes user parameters, dependencies, and sample output to assist in effective deployment.'
 tags: ['setup']
@@ -32,4 +32,6 @@ Refer to the [SWM - Software Configuration - Set-ChromiumHomepage](<../../powers
 ## Output
 
 - Script Logs
+
+
 

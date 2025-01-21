@@ -1,7 +1,7 @@
 ---
 id: 'be3ca430-f53d-4198-9360-52894e5e6a6a'
-title: 'Remote PowerShell Monitor for Stuck Services'
-title_meta: 'Remote PowerShell Monitor for Stuck Services'
+title: 'Stuck Service Detection'
+title_meta: 'Stuck Service Detection'
 keywords: ['remote', 'powershell', 'monitor', 'stuck', 'services', 'windows']
 description: 'This document outlines a remote PowerShell monitor designed to detect services that are stuck in a state other than Running or Stopped on Windows machines. It includes suggested alert styles, templates, and a detailed check action table for implementation.'
 tags: ['windows']
@@ -32,4 +32,6 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Windows Machine
+
+
 

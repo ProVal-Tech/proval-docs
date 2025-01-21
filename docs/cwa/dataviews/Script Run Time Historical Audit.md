@@ -1,7 +1,7 @@
 ---
 id: '84ff85b8-06d4-4c2b-abaa-fbd2b05756c2'
-title: 'Historical Runtime Data for Scripts in Automate'
-title_meta: 'Historical Runtime Data for Scripts in Automate'
+title: 'Script Run Time Historical Audit'
+title_meta: 'Script Run Time Historical Audit'
 keywords: ['historical', 'runtime', 'scripts', 'automate', 'performance']
 description: 'This document provides a detailed overview of historical runtime data for scripts in ConnectWise Automate since their creation. It includes descriptions of various metrics that can be tracked, such as execution dates, average run times, and total time saved, while noting the limitations in creating performance metrics due to the lack of stored failure and success counts.'
 tags: ['performance', 'report', 'setup']
@@ -35,4 +35,6 @@ This dataview displays historical runtime data for scripts in Automate since the
 ## Example Screenshot
 
 ![Screenshot](../../../static/img/Script-Run-Time-Historical-Audit/image_1.png)
+
+
 

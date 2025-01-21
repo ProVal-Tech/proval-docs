@@ -110,3 +110,5 @@ Copy-RegistryItem -Path HKLM:\\SOFTWARE\\Canon -Destination HKLM:\\SOFTWARE\\_au
 Copy-RegistryItem -Path HKLM:\\SOFTWARE\\Adobe -Name PDFFormat -Destination HKLM:\\SOFTWARE\\_automation\\RegistryBackup\\Adobe -Force
 ```
 
+
+

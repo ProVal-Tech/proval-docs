@@ -1,7 +1,7 @@
 ---
 id: '0d5f27c6-fa65-4a98-b32d-61426505aa1c'
-title: 'Close Reboot Pending Tickets'
-title_meta: 'Close Reboot Pending Tickets'
+title: 'Reboot Pending Servers per client - Ticket Management'
+title_meta: 'Reboot Pending Servers per client - Ticket Management'
 keywords: ['client', 'script', 'tickets', 'reboot', 'pending', 'servers']
 description: 'This client script is designed to automatically close Reboot Pending tickets for servers that have already been rebooted and for clients without any pending server reboots. It is recommended to schedule this script to run once per day to ensure optimal performance and ticket management.'
 tags: ['reboot']
@@ -24,4 +24,6 @@ It is recommended to schedule this client script to run once per day for better 
 ## Dependencies
 
 [CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](<./Reboot Pending Servers per client - Ticket Creation.md>)
+
+
 

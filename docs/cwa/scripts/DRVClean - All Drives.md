@@ -1,7 +1,7 @@
 ---
 id: '27940cde-b1b3-4198-863e-b4257aca7b06'
-title: 'Directory Cleanup Automation'
-title_meta: 'Directory Cleanup Automation - Efficiently Clean Aging Files and Folders'
+title: 'DRVClean - All Drives'
+title_meta: 'DRVClean - All Drives'
 keywords: ['cleanup', 'directories', 'files', 'folders', 'automation', 'windows']
 description: 'This document provides a comprehensive guide on automating the cleanup of well-known directories containing aging files and folders on all internal drives. The process saves time and ensures efficient management of disk space on Windows machines.'
 tags: ['cleanup', 'windows']
@@ -41,4 +41,6 @@ This process cleans well-known directories of aging files and folders on all int
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f54508ce-319d-48dc-a178-7d3cd35cb021'
-title: 'Cyrisma Sensor Deployment and Monitoring'
-title_meta: 'Cyrisma Sensor Deployment and Monitoring'
+title: 'Cyrisma'
+title_meta: 'Cyrisma'
 keywords: ['cyrisma', 'sensor', 'deployment', 'monitoring', 'audit']
 description: 'This document provides a comprehensive guide on deploying, monitoring, and auditing the Cyrisma sensor application, including associated tasks, custom fields, and monitoring strategies.'
 tags: ['custom-fields', 'deployment', 'dynamic-groups', 'ticketing']
@@ -32,4 +32,6 @@ Follow the steps below for the implementation:
 - Create Monitor: [CW RMM - Monitor - CRI Agent Deployment Status Check](<../cwrmm/monitors/CRI Agent Deployment Status Check.md>)
 
 Follow the Monitor and Task implementation to complete the solution.
+
+
 

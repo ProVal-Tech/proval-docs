@@ -1,7 +1,7 @@
 ---
 id: '57e85773-11e3-46db-97f1-5aae835cfd62'
-title: 'Install Certificate Script for Windows and MAC'
-title_meta: 'Install Certificate Script for Windows and MAC'
+title: 'Install Certificate - MacWindows Param'
+title_meta: 'Install Certificate - MacWindows Param'
 keywords: ['certificate', 'windows', 'mac', 'install', 'root', 'trusted', 'keychain', 'location']
 description: 'This document provides a script that installs a certificate to a specified location on Windows and MAC machines. It explains how to use the User parameter to provide a direct download URL for the certificate and details the sample run for both environments.'
 tags: ['installation', 'security', 'setup', 'windows']
@@ -37,4 +37,6 @@ Provide the direct download URL for the certificate in the User parameter, and i
 
 *The download URL should be something like:*  
 *[https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer](https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer)*
+
+
 

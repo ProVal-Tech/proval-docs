@@ -1,7 +1,7 @@
 ---
 id: 'ef0eede8-0b3c-4307-8d17-b99e4b80332a'
-title: 'Install and Enforce Firefox Extension'
-title_meta: 'Install and Enforce Firefox Extension'
+title: 'Firefox - Install Extension'
+title_meta: 'Firefox - Install Extension'
 keywords: ['firefox', 'extension', 'installation', 'configuration', 'setup']
 description: 'This document provides a comprehensive guide on using a PowerShell script to install and optionally enforce a specific extension in Mozilla Firefox, detailing dependencies, user parameters, and the process involved in ensuring a successful installation.'
 tags: ['firefox', 'installation', 'setup', 'software']
@@ -56,4 +56,6 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on the computer
+
+
 

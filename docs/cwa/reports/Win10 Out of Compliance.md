@@ -1,7 +1,7 @@
 ---
 id: '4203838c-6e42-42a4-9a35-d6e1e9ea41b7'
-title: 'Out of Compliance Machine and OS Build Report'
-title_meta: 'Out of Compliance Machine and OS Build Report'
+title: 'Win10 Out of Compliance'
+title_meta: 'Win10 Out of Compliance'
 keywords: ['compliance', 'report', 'windows', 'audit', 'count']
 description: 'This document provides a detailed report on the out of compliance machines and OS build counts. It combines two reports: the compliant count and the Windows 10 out of compliance. It includes dependencies, report types, layout, and filtering criteria for effective data analysis.'
 tags: ['report', 'windows']
@@ -78,4 +78,6 @@ Header, footer
 
 ### Export Attachment
 Attach the export XML of the report to this document.
+
+
 

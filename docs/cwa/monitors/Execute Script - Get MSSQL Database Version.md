@@ -1,7 +1,7 @@
 ---
 id: 'd7ad7eb3-8f39-4798-a80c-f0a6cdae7213'
-title: 'Internal Monitor for MSSQL Database Version'
-title_meta: 'Internal Monitor for MSSQL Database Version'
+title: 'Execute Script - Get MSSQL Database Version'
+title_meta: 'Execute Script - Get MSSQL Database Version'
 keywords: ['mssql', 'monitor', 'database', 'version', 'script']
 description: 'This document outlines the functionality of the internal monitor that executes a script to retrieve the MSSQL database version weekly. It details dependencies, target systems, and ticketing information.'
 tags: ['database', 'mssql']
@@ -25,4 +25,6 @@ The internal monitor is explicitly limited to the `MSSQL Servers` present in the
 ## Ticketing
 
 **Name:** `△ Custom - Execute Script - Get MSSQL Database Version`
+
+
 

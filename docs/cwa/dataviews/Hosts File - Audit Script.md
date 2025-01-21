@@ -1,7 +1,7 @@
 ---
 id: 'cfa8fd80-7dc0-4d6b-9861-0467d7e4af94'
-title: 'Host File Audit Dataview'
-title_meta: 'Host File Audit Dataview'
+title: 'Hosts File - Audit Script'
+title_meta: 'Hosts File - Audit Script'
 keywords: ['audit', 'hostfile', 'uncommented', 'rmm', 'windows']
 description: 'This document provides a summary of the Host File Audit Dataview, detailing the uncommented content of the host file fetched by the EPM - Windows Configuration script. It includes important columns such as Client Name, Location Name, Computer Name, and more, along with their descriptions.'
 tags: ['report', 'security', 'windows']
@@ -30,4 +30,6 @@ The purpose of this dataview is to show the uncommented content of the host file
 | Last Contact              | Last Contact with RMM                         |
 | Days Since Last Contact   | Days Since Last Contact with RMM              |
 | Last Logged In User       | Last Logged In User                           |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '39a825db-06ff-4ac3-9dce-30b6f72f3eb0'
-title: 'Remove Splashtop'
-title_meta: 'Remove Splashtop'
+title: 'Splashtop Uninstall'
+title_meta: 'Splashtop Uninstall'
 keywords: ['uninstall', 'splashtop', 'wmi', 'agent', 'procedure']
 description: 'This document provides a detailed overview of the process to uninstall Splashtop using WMI detection and removal methods. It includes a sample run log and describes the output generated during the uninstall procedure.'
 tags: ['performance', 'software', 'uninstallation', 'windows']
@@ -49,4 +49,6 @@ Agent Procedure Log, Remove-Splashtop-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

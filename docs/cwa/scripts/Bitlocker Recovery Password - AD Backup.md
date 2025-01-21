@@ -1,7 +1,7 @@
 ---
 id: 'cd4cedee-cd92-4198-83d6-e7c596a6a01b'
-title: 'Backup BitLocker Recovery Keys to Active Directory'
-title_meta: 'Backup BitLocker Recovery Keys to Active Directory'
+title: 'Bitlocker Recovery Password - AD Backup'
+title_meta: 'Bitlocker Recovery Password - AD Backup'
 keywords: ['bitlocker', 'active', 'directory', 'backup', 'encryption']
 description: 'This document provides a detailed guide on executing a script to back up BitLocker recovery keys to Active Directory. It covers requirements, dependencies, sample runs, and a step-by-step GPO creation process to ensure proper configuration for successful backups.'
 tags: ['active-directory', 'backup', 'encryption', 'gpo']
@@ -68,4 +68,6 @@ This Automate script executes the `Backup-BitlockerRecoveryPW.ps1` agnostic scri
 9. Go to the “Operating System Drives” node and enable the similar policy “**Choose how BitLocker-protected operating system drives can be recovered**“. Afterwards, go to the “Removable Data Drives” node and enable the policy “**Choose how BitLocker-protected removable drives can be recovered**“.
 
 10. When any client PC retrieves the policy changes, BitLocker recovery information will be automatically and silently backed up to AD DS when BitLocker is turned on for fixed drives, OS drives, or removable drives.
+
+
 

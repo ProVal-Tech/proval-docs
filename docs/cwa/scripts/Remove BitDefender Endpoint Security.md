@@ -1,7 +1,7 @@
 ---
 id: '43a09503-3ebd-440e-a113-8ecd3aaafd39'
-title: 'Remove Bitdefender Endpoint Security'
-title_meta: 'Remove Bitdefender Endpoint Security - Automate Implementation'
+title: 'Remove BitDefender Endpoint Security'
+title_meta: 'Remove BitDefender Endpoint Security'
 keywords: ['bitdefender', 'uninstall', 'endpoint', 'security']
 description: 'This document outlines the implementation of the agnostic Remove-BitdefenderEndpointSecurity script, detailing its dependencies, process, and expected output for removing Bitdefender Endpoint Security from target systems.'
 tags: ['security', 'software', 'uninstallation']
@@ -29,4 +29,6 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
+
+
 

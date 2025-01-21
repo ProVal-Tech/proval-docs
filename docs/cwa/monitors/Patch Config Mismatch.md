@@ -1,7 +1,7 @@
 ---
 id: '0e230069-e0d6-49f6-ab3a-894f248f3f5b'
-title: 'Detect Patch Config Mismatch'
-title_meta: 'Detect Patch Config Mismatch'
+title: 'Patch Config Mismatch'
+title_meta: 'Patch Config Mismatch'
 keywords: ['patch', 'config', 'mismatch', 'validation', 'settings']
 description: 'This document outlines a method to detect machines where the data returned by the Get Patch Config script does not align with the expected settings defined by the Patch Manager - WUA Settings Validation script. It includes dependencies and a global target for alerting.'
 tags: []
@@ -26,4 +26,6 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Patch Config Mismatch`
+
+
 

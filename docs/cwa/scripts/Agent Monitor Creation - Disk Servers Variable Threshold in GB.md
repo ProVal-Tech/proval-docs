@@ -1,7 +1,7 @@
 ---
 id: '9f035f14-972d-487a-a2b4-5927cd67978e'
-title: 'Remote Drive Space Monitors Script'
-title_meta: 'Remote Drive Space Monitors Script for Server Management'
+title: 'Agent Monitor Creation - Disk Servers Variable Threshold in GB'
+title_meta: 'Agent Monitor Creation - Disk Servers Variable Threshold in GB'
 keywords: ['remote', 'drive', 'monitor', 'disk', 'server']
 description: 'This document outlines a script designed to build remote drive space monitors for servers. It includes adjustable parameters for different drive sizes and monitors, dependencies, and a detailed process for execution. The script aims to automate the monitoring of disk space and ensure efficient management of server resources.'
 tags: ['disk', 'report']
@@ -52,5 +52,7 @@ This script is run as a subscript from the Daily Maintenance of Automate's disk 
 ## Output
 
 - Script log
+
+
 
 

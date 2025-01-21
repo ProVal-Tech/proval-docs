@@ -1,7 +1,7 @@
 ---
 id: '41b393a9-cb59-4418-8536-9fe911cb4c9d'
-title: 'Monitor for Machines with Queued Scripts'
-title_meta: 'Monitor for Machines with Queued Scripts'
+title: 'Monitor~~ Autofix - Run Queued Scripts'
+title_meta: 'Monitor~~ Autofix - Run Queued Scripts'
 keywords: ['monitor', 'queued', 'scripts', 'computers', 'alert']
 description: 'This document outlines the configuration and functionality of a monitor created by the CWM - Automate - Script - Queue Script. It details how the monitor checks the online status of computers and sends alerts based on their last contact time, along with dependencies and SQL translation for the monitor.'
 tags: ['database', 'performance']
@@ -72,5 +72,7 @@ WHERE
       Tcomp
   )
 ```
+
+
 
 

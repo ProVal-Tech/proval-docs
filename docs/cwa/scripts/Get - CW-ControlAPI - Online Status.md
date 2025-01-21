@@ -1,7 +1,7 @@
 ---
 id: '71ac312f-e490-4126-bc2d-f9c07f5582cf'
-title: 'EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status'
-title_meta: 'EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status'
+title: 'Get - CW-ControlAPI - Online Status'
+title_meta: 'Get - CW-ControlAPI - Online Status'
 keywords: ['connectwise', 'control', 'status', 'script', 'automation']
 description: 'The EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status script is designed to fetch the online status of all machines in the ConnectWise Control application, utilizing the ProVal Tech agnostic script Get-CWControlAgentSession.ps1. It queries the Control session using the Control Plugin in Automate and stores the information in a custom table for further monitoring and reporting.'
 tags: ['connectwise', 'database', 'report', 'setup', 'windows']
@@ -41,4 +41,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Custom Table
+
+
 

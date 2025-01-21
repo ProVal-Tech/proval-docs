@@ -1,7 +1,7 @@
 ---
 id: 'd6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0'
-title: 'C2R Update Channel Details'
-title_meta: 'C2R Update Channel Details'
+title: 'Endpoint - C2R Data Collection Time'
+title_meta: 'Endpoint - C2R Data Collection Time'
 keywords: ['c2r', 'update', 'channel', 'custom', 'fields']
 description: 'This document provides detailed information about the C2R Update Channel, including the time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were last updated. It includes a summary, a detailed table of field names, and screenshots for reference.'
 tags: ['update']
@@ -24,4 +24,6 @@ This document outlines the time when the C2R Update Channel, C2R Auto Update, an
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_2.png)
+
+
 

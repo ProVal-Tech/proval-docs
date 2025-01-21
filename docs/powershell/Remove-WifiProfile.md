@@ -1,7 +1,7 @@
 ---
 id: ps-remove-wifiprofile
 title: 'Remove-WifiProfile'
-title_meta: 'Remove-WifiProfile Command'
+title_meta: 'Remove-WifiProfile'
 keywords: ['remove', 'wifi', 'profile', 'network']
 description: 'Documentation for the Remove-WifiProfile command to remove a specified Wi-Fi profile from the system.'
 tags: ['networking', 'wireless']
@@ -31,4 +31,6 @@ Removes the Wi-Fi profile named 'MyWifi' from the system.
 ## Output
 - .\Remove-WifiProfile-log.txt
 - .\Remove-WifiProfile-error.txt
+
+
 

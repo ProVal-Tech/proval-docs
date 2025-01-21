@@ -1,7 +1,7 @@
 ---
 id: '85513764-8240-40fb-be86-7be910ea62cf'
-title: 'BitLocker Initialization Deployment Script'
-title_meta: 'BitLocker Initialization Deployment Script'
+title: 'Bitlocker - Volume - Initialize Autofix,Param - Wrapper'
+title_meta: 'Bitlocker - Volume - Initialize Autofix,Param - Wrapper'
 keywords: ['bitlocker', 'encryption', 'deployment', 'monitor', 'script']
 description: 'This document provides details on a script designed for the automatic deployment of BitLocker initialization to agents detected by the Internal Monitor for BitLocker. It includes sample runs, dependencies, user parameters, and output details.'
 tags: ['deployment', 'encryption']
@@ -48,4 +48,6 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 
 - Script log
 - Dataview
+
+
 

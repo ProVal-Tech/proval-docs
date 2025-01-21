@@ -1,7 +1,7 @@
 ---
 id: 'b3a711f5-7e0f-4b8a-948c-19cf5721539e'
-title: 'Proval Uptime Measurement in ConnectWise Automate'
-title_meta: 'Proval Uptime Measurement in ConnectWise Automate'
+title: 'h_plugin_proval_uptime_'
+title_meta: 'h_plugin_proval_uptime_'
 keywords: ['connectwise', 'uptime', 'measurement', 'database', 'events']
 description: 'This document explains the purpose and dependencies of the h_plugin_proval_uptime and h_plugin_proval_uptime_days tables in ConnectWise Automate, which are used to track the uptime of machines over time. It details the structure of these tables and the events that populate them.'
 tags: ['connectwise', 'database']
@@ -34,4 +34,6 @@ These tables are populated by the events `ProvalUptime` and `ProvalUptimeDays`. 
 | ComputerID    | INT      | The ComputerID of the measured agent.                 |
 | PercentOnline  | DOUBLE   | The percentage of time that the agent was online on the specified SampleDate. |
 | SampleDate    | DATE     | The date of the measurements used to calculate the PercentOnline. |
+
+
 

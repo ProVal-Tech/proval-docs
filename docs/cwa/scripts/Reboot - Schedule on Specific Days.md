@@ -1,7 +1,7 @@
 ---
 id: 'f1ad69eb-ffe8-4396-a3f4-d380d155b120'
-title: 'Schedule Reboot Script for Hyper-V Hosts'
-title_meta: 'Schedule Reboot Script for Hyper-V Hosts'
+title: 'Reboot - Schedule on Specific Days'
+title_meta: 'Reboot - Schedule on Specific Days'
 keywords: ['reboot', 'hyper-v', 'maintenance', 'ticket', 'schedule']
 description: 'This document describes a script that schedules a reboot for the next applicable day at a specified time on a target machine. For Hyper-V hosts, it also creates a ticket indicating that the reboot has been scheduled, ensuring that the support team is informed.'
 tags: ['hyper-v', 'windows']
@@ -48,4 +48,6 @@ This script schedules a reboot for the next applicable day at the specified time
 
 - Script log messages
 - Ticket (For Hyper-V hosts only)
+
+
 

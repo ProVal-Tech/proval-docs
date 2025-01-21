@@ -1,7 +1,7 @@
 ---
 id: '60098f78-b790-4010-a675-c85b54613e08'
-title: 'Disk Space Monitoring Implementation'
-title_meta: 'Disk Space Monitoring Implementation'
+title: 'Drive Space'
+title_meta: 'Drive Space'
 keywords: ['disk', 'monitoring', 'space', 'agent', 'check']
 description: 'This document provides a comprehensive guide on implementing disk space monitoring solutions, including associated scripts and necessary configurations to ensure successful monitoring of drive space.'
 tags: ['disk']
@@ -24,6 +24,8 @@ unlisted: false
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+
 
 
 

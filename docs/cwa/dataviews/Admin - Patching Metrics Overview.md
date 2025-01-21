@@ -1,7 +1,7 @@
 ---
 id: 'aecfbacc-1c55-4a98-8cc3-7a1b753621ed'
-title: 'Patching Metrics Overview for Windows Computers'
-title_meta: 'Patching Metrics Overview for Windows Computers'
+title: 'Admin - Patching Metrics Overview'
+title_meta: 'Admin - Patching Metrics Overview'
 keywords: ['patching', 'windows', 'approval', 'metrics', 'statistics']
 description: 'This document provides a comprehensive overview of the patching-related statistics for patch-managed Windows computers, categorized by approval age. It includes details on approved and missing patches across different age groups, as well as breakdowns for servers and workstations.'
 tags: ['database', 'patching', 'performance', 'report', 'windows']
@@ -42,4 +42,6 @@ The SQL query filters the results for the patch-managed computers only. Removing
 | Missing Per Workstation    | Average number of missing patches per workstation                                                                   |
 | Patching Policy           | Patching Policy (Managed | Unmanaged). By default, the dataview will display the data for the patch-managed computers only |
 | Sort                      | A custom column to sort the dataview in proper order (Hidden)                                                      |
+
+
 

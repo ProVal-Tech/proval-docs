@@ -1,7 +1,7 @@
 ---
 id: '6ad5ccf5-0502-459c-a877-eaeafc0ad432'
-title: 'Password Expiration Notification Script'
-title_meta: 'Password Expiration Notification Script'
+title: 'Active Directory - Alerting - Password Expires This Week Global,Autofix'
+title_meta: 'Active Directory - Alerting - Password Expires This Week Global,Autofix'
 keywords: ['password', 'notification', 'ticket', 'email', 'compliance']
 description: 'This document details a script for notifying users about upcoming password expirations. It includes configuration options for alerting, ticket creation, and email notifications, as well as instructions for customizing messages and handling different user scenarios.'
 tags: ['alerting', 'email', 'security', 'ticketing']
@@ -220,4 +220,6 @@ If you believe the password has already been changed or that this is a false ale
 
 Sample:  
 ![Default Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_10.png)
+
+
 

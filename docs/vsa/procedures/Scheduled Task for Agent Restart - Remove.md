@@ -1,7 +1,7 @@
 ---
 id: 'b4f78d3c-4c41-46eb-9fee-94b9f7d3caab'
-title: 'Remove Scheduled Task for Restarting VSA Agent'
-title_meta: 'Remove Scheduled Task for Restarting VSA Agent'
+title: 'Scheduled Task for Agent Restart - Remove'
+title_meta: 'Scheduled Task for Agent Restart - Remove'
 keywords: ['vsa', 'agent', 'scheduled', 'task', 'restart', 'remove']
 description: 'This document provides a detailed guide on removing the scheduled task that attempts to restart the VSA Agent every 15 minutes. This helps prevent VSA agents from going offline without notification, ensuring better management and performance of your VSA environment.'
 tags: ['performance', 'security', 'windows']
@@ -38,4 +38,6 @@ The location and method by which this script returns data.
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

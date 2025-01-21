@@ -1,7 +1,7 @@
 ---
 id: '8b658a17-cb91-457a-9efc-4b8f676b0fb0'
-title: 'Implementation Steps for Uninstalling Anydesk'
-title_meta: 'Implementation Steps for Uninstalling Anydesk'
+title: 'Implement- Uninstall Anydesk'
+title_meta: 'Implement- Uninstall Anydesk'
 keywords: ['uninstall', 'anydesk', 'monitor', 'groupid', 'query']
 description: 'This document outlines the steps to implement a remote monitor for uninstalling Anydesk from specified groups using SQL queries. It provides detailed instructions on obtaining group IDs, constructing the SQL query, and executing it within a RAWSQL monitor set.'
 tags: ['software', 'uninstallation']
@@ -155,4 +155,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

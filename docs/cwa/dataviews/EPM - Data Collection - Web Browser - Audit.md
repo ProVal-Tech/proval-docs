@@ -1,7 +1,7 @@
 ---
 id: '779be395-aeeb-44f8-9a99-2bea8a253a86'
-title: 'Installed Web Browsers Status'
-title_meta: 'Installed Web Browsers Status'
+title: 'EPM - Data Collection - Web Browser - Audit'
+title_meta: 'EPM - Data Collection - Web Browser - Audit'
 keywords: ['browsers', 'firefox', 'chrome', 'vivaldi', 'waterfox', 'librewolf', 'opera', 'brave', 'iceweasel', 'tor', 'pale', 'moon', 'safari', 'chromium', 'ie', 'audit']
 description: 'This document provides a dataview of the installed web browsers on machines, detailing the status of Internet Explorer and listing various browsers under auditing, including Firefox, Chrome, and others.'
 tags: ['report', 'security', 'web-browser', 'windows']
@@ -23,4 +23,6 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Last Contact        | Last contact with RMM of the agent          |
 | Web Browser Name    | Web browsers detected on the agent          |
 | IE Audit            | Status of IE disabled or not                |
+
+
 

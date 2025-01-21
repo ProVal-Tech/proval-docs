@@ -1,7 +1,7 @@
 ---
 id: ps-remove-application
 title: 'Remove-Application'
-title_meta: 'Remove-Application Command'
+title_meta: 'Remove-Application'
 keywords: ['remove', 'application', 'uninstall', 'cleanup']
 description: 'Documentation for the Remove-Application command to remove an application or list of applications either by normal means or forcefully.'
 tags: ['software', 'uninstallation']
@@ -94,4 +94,6 @@ Will attempt to remove Google Chrome using the provided custom switch.
 
 - `.\Remove-Application-log.txt`
 - `.\Remove-Application-error.txt`
+
+
 

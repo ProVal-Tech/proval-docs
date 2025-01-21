@@ -1,7 +1,7 @@
 ---
 id: '5c6739bc-45a2-4011-99e1-f90581fa15ac'
-title: 'Enable/Disable Administrator Account Script'
-title_meta: 'Enable/Disable Administrator Account Script for Windows Machines'
+title: 'Windows - `Administrator` account process'
+title_meta: 'Windows - `Administrator` account process'
 keywords: ['administrator', 'account', 'enable', 'disable', 'password', 'script', 'client']
 description: 'This document provides a comprehensive guide on a script designed to enable or disable the administrator account on Windows machines, excluding domain controllers. It outlines the necessary parameters, process flow, and troubleshooting steps to effectively manage admin account settings across client workstations.'
 tags: ['security', 'setup', 'windows']
@@ -93,4 +93,6 @@ This script is designed to do the following:
 ## Output
 
 Script log messages
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '4a21e214-958c-4b97-9194-2fa517342001'
 title: 'Install Perch Log Shipper'
-title_meta: 'Install Perch Log Shipper with ClientToken or EDF Retrieval'
+title_meta: 'Install Perch Log Shipper'
 keywords: ['perch', 'log', 'shipper', 'clienttoken', 'edf', 'installation']
 description: 'This document provides a comprehensive guide on installing Perch Log Shipper using either a user-provided ClientToken or retrieving the token from a client-level EDF. It includes sample runs, dependencies, implementation details, variables, user parameters, and the process for successful installation.'
 tags: ['installation', 'software']
@@ -71,4 +71,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

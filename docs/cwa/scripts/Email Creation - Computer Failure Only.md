@@ -1,7 +1,7 @@
 ---
 id: '901470a2-73d2-4d29-b0d3-c5f15cf19c41'
-title: 'Email RAWSQL Monitor Failure Notification'
-title_meta: 'Email RAWSQL Monitor Failure Notification'
+title: 'Email Creation - Computer Failure Only'
+title_meta: 'Email Creation - Computer Failure Only'
 keywords: ['email', 'rawsql', 'monitor', 'failure', 'notification']
 description: 'This document describes a script designed to send email notifications for failed outcomes of a RAWSQL monitor. It details the email addresses used for notifications, system properties required, and the process flow for handling failures. The script is linked to a specific alert template and includes configuration for success email notifications.'
 tags: ['email']
@@ -66,4 +66,6 @@ It's an Autofix script and is currently attached to the "△ Custom - Email RAWS
 ## Output
 
 Email
+
+
 

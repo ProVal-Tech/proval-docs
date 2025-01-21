@@ -1,7 +1,7 @@
 ---
 id: 'd7d933e3-9668-4de9-9f44-7452198ab85a'
-title: 'Bitlocker Audit Script'
-title_meta: 'Bitlocker Audit Script for Gathering Encryption Information'
+title: 'Bitlocker - Audit'
+title_meta: 'Bitlocker - Audit'
 keywords: ['bitlocker', 'encryption', 'tpm', 'audit', 'recovery']
 description: 'This document provides a comprehensive overview of the Bitlocker Audit script, detailing its functionality in gathering Bitlocker and TPM information from target endpoints, storing it in custom tables, and creating backup files for recovery passwords.'
 tags: ['backup', 'encryption', 'security', 'windows']
@@ -68,5 +68,7 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 - Custom table
 - Dataview
 - Backup file under LTShare at `LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>`
+
+
 
 

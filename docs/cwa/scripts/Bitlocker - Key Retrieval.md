@@ -1,7 +1,7 @@
 ---
 id: 'bc22877d-262a-47f7-8d2f-7e69f07c92e5'
-title: 'Audit Recovery Keys for Encrypted Drives'
-title_meta: 'Audit Recovery Keys for Encrypted Drives'
+title: 'Bitlocker - Key Retrieval'
+title_meta: 'Bitlocker - Key Retrieval'
 keywords: ['audit', 'recovery', 'keys', 'encrypted', 'drives', 'database']
 description: 'This document details a script that audits the recovery keys for each encrypted drive on an agent and adds the information to a custom table, saving time and improving efficiency in managing BitLocker encryption.'
 tags: ['database', 'encryption', 'security', 'setup', 'windows']
@@ -44,4 +44,6 @@ This script audits the recovery keys for each encrypted drive on an agent and ad
 - Script log
 - Role
 - Dataview
+
+
 

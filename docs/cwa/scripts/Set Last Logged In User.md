@@ -1,7 +1,7 @@
 ---
 id: 'd8fcfe10-81c9-42d9-b56b-a4021601f842'
-title: 'Set Last Logged On User Implementation'
-title_meta: 'Set Last Logged On User Implementation for ConnectWise Automate'
+title: 'Set Last Logged In User'
+title_meta: 'Set Last Logged In User'
 keywords: ['automate', 'windows', 'login', 'user', 'management']
 description: 'This document details the implementation of the agnostic script Set-LastLoggedOnUser for ConnectWise Automate, which manages the last logged-in user information displayed on the Windows login screen. It covers usage notes, sample runs, variables, user parameters, and output expectations.'
 tags: ['security', 'setup', 'windows']
@@ -55,4 +55,6 @@ This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser]
 ## Output
 
 - Script log
+
+
 

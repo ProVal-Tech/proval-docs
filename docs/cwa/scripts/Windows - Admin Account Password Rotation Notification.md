@@ -1,7 +1,7 @@
 ---
 id: '1adeca30-5b12-4218-98c2-ff2806eae27e'
-title: 'Admin Account Password Change Notification'
-title_meta: 'Admin Account Password Change Notification'
+title: 'Windows - Admin Account Password Rotation Notification'
+title_meta: 'Windows - Admin Account Password Rotation Notification'
 keywords: ['ticket', 'notification', 'password', 'update', 'client']
 description: 'This document outlines a script that automates the creation of tickets or sending email notifications when a client-level Local Admin password is updated. It ensures partners can manually update their password management tools as notifications are received. The document also includes update notifications, system properties, and sample output details.'
 tags: ['email', 'security', 'update']
@@ -51,4 +51,6 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
   ------------------------------------------------------------------------------------------------------------------------  
 
   Here, @sqlName@, @sqlUsername@, @sqlClientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@ contain the details of the Client Name, Username for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password change information was stored respectively.
+
+
 

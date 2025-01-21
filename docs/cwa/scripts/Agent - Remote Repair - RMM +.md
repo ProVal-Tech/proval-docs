@@ -1,7 +1,7 @@
 ---
 id: '13151439-b80d-4746-b804-1d55a6206462'
-title: 'Reinstall Automate Agent on Offline Machines'
-title_meta: 'Reinstall Automate Agent on Offline Machines'
+title: 'Agent - Remote Repair - RMM +'
+title_meta: 'Agent - Remote Repair - RMM +'
 keywords: ['connectwise', 'automate', 'agent', 'offline', 'script', 'rmm', 'ticketing']
 description: 'This document outlines a script that utilizes the ConnectWise Automate RMM+ plugin to reinstall the Automate agent on machines that are offline while the ScreenConnect agent remains online. It includes details on dependencies, variables, properties, output, and ticketing processes associated with the script.'
 tags: ['connectwise']
@@ -89,4 +89,6 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
 
 - The log that comes along with this is very long.  
   - This is by intent; there are many calls to subscripts for RMM+, and having detailed logging is necessary.
+
+
 

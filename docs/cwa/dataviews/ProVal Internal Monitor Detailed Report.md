@@ -1,7 +1,7 @@
 ---
 id: 'ad298109-c6b4-4af4-8ef1-37ba43db737f'
-title: 'Custom Internal Monitors Overview'
-title_meta: 'Custom Internal Monitors Overview'
+title: 'ProVal Internal Monitor Detailed Report'
+title_meta: 'ProVal Internal Monitor Detailed Report'
 keywords: ['monitors', 'status', 'alert', 'template', 'script', 'failure', 'scan', 'group']
 description: 'This document provides a detailed overview of custom internal monitors built by ProVal, including their implementation status, alert styles, and execution intervals. It also outlines the color coding used to highlight monitor statuses and script types for easier identification.'
 tags: ['software']
@@ -58,4 +58,6 @@ Color coding is applied to the columns "Monitor Status," "Script Nature," and "M
 **Script Nature:** The "ProVal Script" is highlighted in green to indicate where ProVal scripts are used as autofixes.
 
 **Monitor Synced/Updated:** "Yes" is highlighted in green, "No" in red, and "N/A" in grey to easily show whether the monitor is properly synced/updated from the ProVal plugin.
+
+
 

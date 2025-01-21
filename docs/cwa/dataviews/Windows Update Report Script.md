@@ -1,7 +1,7 @@
 ---
 id: '88f63da5-1a24-4545-b322-f6a3dfbc79cf'
-title: 'Windows Update Report Dataview'
-title_meta: 'Windows Update Report Dataview'
+title: 'Windows Update Report Script'
+title_meta: 'Windows Update Report Script'
 keywords: ['patches', 'windows', 'report', 'dataview', 'update', 'installed', 'available']
 description: 'This document provides a detailed overview of the Windows Update Report Dataview, including its dependencies, columns, and descriptions of each column. It is essential for displaying a list of patches installed or available on local machines, populated by specific scripts and solutions.'
 tags: ['report', 'software', 'update', 'windows']
@@ -58,4 +58,6 @@ This dataview was created to display a detailed list of patches that are install
 | Recommended Memory              | Recommended Memory to install the Patch             |
 
 **Note:** Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
+
+
 

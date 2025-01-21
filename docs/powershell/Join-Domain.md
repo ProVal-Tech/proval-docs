@@ -1,7 +1,7 @@
 ---
 id: ps-join-domain
 title: 'Join-Domain'
-title_meta: 'Join-Domain Command'
+title_meta: 'Join-Domain'
 keywords: ['join', 'domain', 'online', 'offline']
 description: 'Documentation for the Join-Domain command to join a computer to a domain using either online or offline methods.'
 tags: ['active-directory', 'windows']
@@ -55,4 +55,6 @@ This command will use the provided `.txt` file to offline join the computer to t
 - Console: Domain join results, or nothing on error.
 - `.\\Join-Domain-log.txt`
 - `.\\Join-Domain-error.txt`
+
+
 

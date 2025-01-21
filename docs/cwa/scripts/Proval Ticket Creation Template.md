@@ -1,7 +1,7 @@
 ---
 id: '9385b560-6005-4a7e-b7f3-de9a9baa5d8a'
-title: 'New Ticket Creation Standard for Clients'
-title_meta: 'New Ticket Creation Standard for Clients'
+title: 'Proval Ticket Creation Template'
+title_meta: 'Proval Ticket Creation Template'
 keywords: ['ticket', 'creation', 'standard', 'clients', 'script']
 description: 'This document outlines a new standard for creating tickets for clients, including required global properties, implementation details, and example scripts. It aims to streamline ticket management and improve efficiency in handling client requests.'
 tags: ['report', 'software', 'windows']
@@ -56,4 +56,6 @@ This document establishes a new standard for creating tickets for our clients.
 ## Output
 
 - Adds to a variable `VarLog` to be displayed in a parent ticket.
+
+
 

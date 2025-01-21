@@ -1,7 +1,7 @@
 ---
 id: 'b13054b0-07b2-4416-ba6d-fbe285f89605'
-title: 'SFC Scan and Ticket Creation'
-title_meta: 'SFC Scan and Ticket Creation for Windows Devices'
+title: 'SFC Scan and Ticket'
+title_meta: 'SFC Scan and Ticket'
 keywords: ['sfc', 'scan', 'ticket', 'windows', 'maintenance']
 description: 'This document outlines a script that performs an SFC scan on a Windows device and creates a ticket if any errors are detected. The script is designed to run during maintenance mode, ensuring minimal disruption while maintaining system integrity.'
 tags: ['windows']
@@ -45,4 +45,6 @@ This script will stop the Windows Update service and clear some folders to ensur
 
 - Script log messages
 - Tickets
+
+
 

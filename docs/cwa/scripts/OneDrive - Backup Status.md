@@ -1,7 +1,7 @@
 ---
 id: 'bf26e767-9125-4b51-a950-ec3d3dc32f8b'
-title: 'OneDrive Backup Status Script'
-title_meta: 'OneDrive Backup Status Script'
+title: 'OneDrive - Backup Status'
+title_meta: 'OneDrive - Backup Status'
 keywords: ['onedrive', 'backup', 'status', 'script', 'windows']
 description: 'This document provides a detailed overview of a script that gathers information about the status of the built-in OneDrive backup functionality for the currently logged-in user, highlighting its efficiency and dependencies.'
 tags: ['backup', 'report', 'software', 'windows']
@@ -29,4 +29,6 @@ This script gathers information about the status of the built-in OneDrive backup
 - Script log
 - Custom table
 - Dataview
+
+
 

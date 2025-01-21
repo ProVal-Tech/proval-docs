@@ -1,7 +1,7 @@
 ---
 id: 'ab5fe07a-d644-4011-96bf-67aa8019216f'
-title: 'Get Wifi Profile Monitor Set'
-title_meta: 'Get Wifi Profile Monitor Set'
+title: 'Execute Script - Get Wifi Profile'
+title_meta: 'Execute Script - Get Wifi Profile'
 keywords: ['wifi', 'monitor', 'windows', 'audit', 'script']
 description: 'This document outlines the setup of a monitor set designed to execute the Get Wifi Profile script in Audit only mode on physical Windows workstations, excluding older versions such as Windows XP, 7, 8, and 8.1, on a monthly basis.'
 tags: ['networking', 'windows']
@@ -27,4 +27,6 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
+
+
 

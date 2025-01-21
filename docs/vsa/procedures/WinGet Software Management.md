@@ -1,7 +1,7 @@
 ---
 id: '5a44d7ca-14a4-4a51-baaf-7697be8836dc'
-title: 'WinGet Package Management Procedures'
-title_meta: 'WinGet Package Management Procedures for Endpoint Management'
+title: 'WinGet Software Management'
+title_meta: 'WinGet Software Management'
 keywords: ['winget', 'packages', 'management', 'install', 'uninstall', 'update', 'export', 'import']
 description: 'This document outlines a suite of 5 agent procedures designed for managing WinGet packages on endpoints using ProVal Agnostic Script. It includes instructions for installing, uninstalling, updating, exporting, and importing WinGet packages, along with usage examples and log outputs.'
 tags: ['installation', 'software', 'uninstallation', 'update', 'windows']
@@ -87,4 +87,6 @@ Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-Winge
 - Agent Procedure Log
 - Log Files Exported to GetFiles
 - Export JSON Exported to GetFiles and present on endpoint in `%ProgramData%/_automation/AgentProcedure/wingetprocessor`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c402434e-1d52-49aa-a797-99b0d2b41f1a'
-title: 'Enable BitLocker on Endpoint'
-title_meta: 'Enable BitLocker on Endpoint'
+title: 'SEC - Encryption - Component - Enable Bitlocker and Document Recovery Key'
+title_meta: 'SEC - Encryption - Component - Enable Bitlocker and Document Recovery Key'
 keywords: ['bitlocker', 'encryption', 'recovery', 'endpoint', 'security']
 description: 'This document provides a guide on enabling BitLocker on endpoints, including saving the recovery key and BitLocker status to User Defined Fields (UDF) in Datto RMM. It outlines the implementation steps required to import the component and modify UDF parameters for proper configuration.'
 tags: ['datto', 'encryption', 'recovery', 'security']
@@ -22,4 +22,6 @@ This document enables BitLocker on the endpoint and saves the recovery key and B
 
 - stdOut
 - stdErr
+
+
 

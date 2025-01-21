@@ -1,7 +1,7 @@
 ---
 id: '8cca4422-d71b-4696-b5d8-8cbc51158b3d'
-title: 'Certificate Audit Report'
-title_meta: 'Certificate Audit Report - Comprehensive Overview of Machine Certificates'
+title: 'SSL Certificate Audit'
+title_meta: 'SSL Certificate Audit'
 keywords: ['certificates', 'audit', 'expiration', 'status', 'thumbprint', 'issuer', 'subject', 'client', 'computer']
 description: 'This document provides a detailed overview of all certificates present on machines, indicating their status regarding expiration and detection issues. It includes information on various attributes of each certificate, such as issuer, thumbprint, and whether they have a private key assigned.'
 tags: ['windows']
@@ -37,4 +37,6 @@ This report is designed to present a complete list of all certificates found on 
 | CertAdded            | When the certificate was added/installed to the machine.                                         |
 | Data Collection Date  | When the last certification scan was performed.                                                  |
 | Status               | The certificate's current status in text.                                                        |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c7d4a134-33d0-4598-add3-f41bd187331d'
-title: 'Implementing Remote Monitor for CWA File Service'
-title_meta: 'Implementing Remote Monitor for CWA File Service'
+title: 'Import- CWAFileService - Invalid Token'
+title_meta: 'Import- CWAFileService - Invalid Token'
 keywords: ['mysql', 'remote', 'monitor', 'cwa', 'file', 'service', 'authorization', 'token']
 description: 'This document provides detailed instructions on how to implement a remote monitor for the CWA File Service using MySQL. It includes SQL commands to set up the monitor, adjust thresholds, and configure alerts based on specific error messages in the logs. Ensure that the settings are tailored to meet client requirements for effective monitoring and alerting.'
 tags: ['setup']
@@ -94,4 +94,6 @@ This sets the remote monitor to check the contents of the FileService logs at th
 
 - Make sure to set the Alert Style to either "Thrice" or "Fourth," so that it will raise a ticket only if the monitor continues to fail after 4 attempts to restart the service.
 - The suggested Alert Template for this monitor is 'Default - Create Automate Ticket'.
+
+
 

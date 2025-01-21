@@ -1,7 +1,7 @@
 ---
 id: '81645955-50e9-45e6-b635-e6780aefc390'
-title: 'Computer Description Data Report'
-title_meta: 'Computer Description Data Report'
+title: 'Computer Description Audit'
+title_meta: 'Computer Description Audit'
 keywords: ['computer', 'description', 'report', 'sql', 'agent']
 description: 'This document provides a detailed overview of the Computer Description Data Report, including its dependencies, columns, and SQL representation for fetching computer description messages set on agents within the RMM.'
 tags: ['database', 'report', 'sql']
@@ -52,5 +52,7 @@ LEFT JOIN clients cl ON cl.clientid = c.clientid)
 LEFT JOIN locations l ON l.locationid = c.locationid)
 WHERE ss.variable = 'ComputerDescriptionReport'
 ```
+
+
 
 

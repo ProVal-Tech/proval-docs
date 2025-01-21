@@ -1,7 +1,7 @@
 ---
 id: '079df125-ee1f-46d0-a660-b16fca648ac9'
-title: 'Install or Update Microsoft Office 365'
-title_meta: 'Install or Update Microsoft Office 365 on the Current Channel'
+title: 'SWM - Software Install - Component - Microsoft Office 365'
+title_meta: 'SWM - Software Install - Component - Microsoft Office 365'
 keywords: ['install', 'update', 'microsoft', 'office', 'configuration', 'xml', 'drrm', 'deployment']
 description: 'This document provides a comprehensive guide on installing or updating Microsoft Office 365 using a preconfigured DRRMConfig.xml file. It outlines the requirements, process, and implementation steps necessary to ensure a successful installation on Windows environments.'
 tags: ['software', 'update', 'windows']
@@ -78,4 +78,6 @@ Location of output for log, result, and error files.
 ```
 StdERR / StdOut
 ```
+
+
 

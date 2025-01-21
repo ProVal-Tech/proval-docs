@@ -1,7 +1,7 @@
 ---
 id: '31e58aae-ce62-4440-8319-b22abec4e842'
-title: 'Script Failure Analysis - 30 Day Retention'
-title_meta: 'Script Failure Analysis - 30 Day Retention'
+title: 'pvl_Script_Assesment'
+title_meta: 'pvl_Script_Assesment'
 keywords: ['script', 'failure', 'analysis', 'retention', 'database']
 description: 'This document provides a detailed analysis of script failures over the past 30 days, including dependencies, table structures, and various metrics related to script performance and failures.'
 tags: ['database', 'performance', 'report', 'setup']
@@ -38,4 +38,6 @@ This document holds a detailed analysis of script failures over the past 30 days
 | First Failure Date        | DATETIME | First Failure Date                                                                                 |
 | Last Failure Date         | DATETIME | Last Failure Date                                                                                  |
 | Data Collection Time      | DATETIME | Data Collection Time                                                                                |
+
+
 

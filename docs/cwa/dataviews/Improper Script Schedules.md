@@ -1,7 +1,7 @@
 ---
 id: '1eb426fd-ee56-4e81-9d3e-116e8c4698b4'
-title: 'Scheduled Script Filters for Technicians'
-title_meta: 'Scheduled Script Filters for Technicians - ConnectWise Automate'
+title: 'Improper Script Schedules'
+title_meta: 'Improper Script Schedules'
 keywords: ['script', 'schedules', 'technician', 'recurring', 'frequency', 'machines', 'environment']
 description: 'This document outlines a Dataview that filters script schedules based on technician scheduling, recurring schedules, and frequency criteria. It identifies schedules running at a frequency greater than 2 hours and highlights those targeting more than 50% of machines in the environment while excluding client scripts and groups without agents.'
 tags: ['performance', 'report', 'setup', 'windows']
@@ -46,5 +46,7 @@ This Dataview filters the script schedules that are scheduled by a technician, a
 | Targeted Servers Count       | Total servers targeted in the schedule                      |
 | Targeted Workstations Count   | Total workstations targeted in the schedule                 |
 | % Machines Targeted          | Percentage of the machines targeted in the schedule         |
+
+
 
 

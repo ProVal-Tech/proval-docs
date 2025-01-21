@@ -1,7 +1,7 @@
 ---
 id: '3aa55f3a-a899-41cc-9430-14b29937f8bb'
-title: 'ProVal Dataviews Audit'
-title_meta: 'ProVal Dataviews Audit - Sync Status Overview'
+title: 'ProVal Dataview Audit'
+title_meta: 'ProVal Dataview Audit'
 keywords: ['dataviews', 'proval', 'sync', 'plugin', 'audit']
 description: 'This document provides an overview of all the dataviews located in the ProVal folder, detailing their synchronization status with the ProSync plugin. It includes a reference table, dependencies, and a sample screenshot for better understanding.'
 tags: ['database', 'report']
@@ -31,4 +31,6 @@ This document lists all the dataviews located in the 'ProVal' folder, depicting 
 - plugin_prosync_dataviews
 - dataviews
 - dataviewfolders
+
+
 

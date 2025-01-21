@@ -1,7 +1,7 @@
 ---
 id: 'd401a54a-5bff-4d37-8fdf-001220f73fb5'
-title: 'Set Office Update Channel for Click2Run Installation'
-title_meta: 'Set Office Update Channel for Click2Run Installation'
+title: 'Office C2R Update Schedule Select'
+title_meta: 'Office C2R Update Schedule Select'
 keywords: ['microsoft', 'update', 'click2run', 'office', 'installation']
 description: 'This document provides a detailed guide on how to set the Microsoft Update Channel for a Click2Run Office installation on an endpoint using an agnostic solution. It includes a summary, example agent procedure logs, and expected output for successful execution.'
 tags: ['office365', 'software', 'update', 'windows']
@@ -41,5 +41,7 @@ This document outlines how to set the Microsoft Update Channel for a Click2Run O
 ## Output
 
 Agent Procedure Log
+
+
 
 

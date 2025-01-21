@@ -1,7 +1,7 @@
 ---
 id: '52fca59d-2cc0-46b2-ae1e-13d46bd36615'
-title: 'Monitor for Account Lockout Detection'
-title_meta: 'Monitor for Account Lockout Detection'
+title: 'Account Lockout Detection'
+title_meta: 'Account Lockout Detection'
 keywords: ['monitor', 'lockout', 'account', 'detection', 'windows']
 description: 'This document outlines a monitoring solution for detecting account lockouts on Windows machines. It includes details on the check action, server address, check type, and dependencies for effective account management.'
 tags: ['security', 'windows']
@@ -29,5 +29,7 @@ This monitor detects account lockouts.
 ## Target
 
 Windows OS
+
+
 
 

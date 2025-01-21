@@ -1,7 +1,7 @@
 ---
 id: '2cc1d72d-5d5b-4017-8114-ad5f722b10f5'
-title: 'Exchange Zero Day Vulnerability Detection Script'
-title_meta: 'Exchange Zero Day Vulnerability Detection Script'
+title: 'Exchange Zero Day Patch Logging'
+title_meta: 'Exchange Zero Day Patch Logging'
 keywords: ['exchange', 'vulnerability', 'cve', 'patch', 'ticketing']
 description: 'This document outlines a script designed to detect recent vulnerabilities associated with Exchange Server, specifically targeting CVEs related to the Zero Day vulnerability. It checks for the presence of necessary patches and can create tickets for unresolved vulnerabilities, improving response times and security management.'
 tags: ['cve', 'security', 'ticketing', 'windows']
@@ -59,4 +59,6 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVEs
 
 - Script log
 - Ticketing if enabled in Globals
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5c3fa8f7-2d12-40db-a282-0147525c60b9'
-title: 'Security Event Monitor for Deleted Logs'
-title_meta: 'Security Event Monitor for Deleted Logs'
+title: 'Security event logs cleareddeleted'
+title_meta: 'Security event logs cleareddeleted'
 keywords: ['security', 'event', 'monitor', 'logs', 'alert']
 description: 'This document outlines a remote monitor designed to alert users when security events, specifically event 1102, are deleted or cleared within the last 15 minutes. It provides details on setup, dependencies, and ticketing for effective monitoring of security log activities on Windows computers.'
 tags: ['security', 'windows']
@@ -48,4 +48,6 @@ Windows Computers
 ## Implementation
 
 [Import - Remote Monitor - Security event logs cleared/deleted](<./Security event logs cleareddeleted.md>)
+
+
 

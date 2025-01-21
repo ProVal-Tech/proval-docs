@@ -1,7 +1,7 @@
 ---
 id: '2487dd9a-79da-443f-809c-a961c3764142'
-title: 'OpenDNS Monitor for Windows Workstations'
-title_meta: 'OpenDNS Monitor for Windows Workstations'
+title: 'OpenDNS InstallUpdate'
+title_meta: 'OpenDNS InstallUpdate'
 keywords: ['opendns', 'monitor', 'windows', 'workstation', 'update', 'software']
 description: 'This document outlines the functionality and requirements of the OpenDNS Monitor designed for Windows Workstations. It details the conditions under which the monitor triggers failures and provides troubleshooting information. Additionally, it suggests configurations for alerts and dependencies related to the software installation process.'
 tags: ['software', 'update', 'windows']
@@ -39,4 +39,6 @@ unlisted: false
 ## Target
 
 The only limiting factor will ultimately be the Windows operating system. The reason for this is that the monitor will filter out servers, ARM processors, virtual machines, etc. That being said, even if you were to include a server in the list for this monitor, that server would never trigger the autofix action.
+
+
 

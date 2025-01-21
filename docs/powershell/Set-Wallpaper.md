@@ -1,7 +1,7 @@
 ---
 id: ps-set-wallpaper
 title: 'Set-Wallpaper'
-title_meta: 'Set-Wallpaper Command'
+title_meta: 'Set-Wallpaper'
 keywords: ['wallpaper', 'desktop', 'background', 'image']
 description: 'Documentation for the Set-Wallpaper command to set the active desktop wallpaper for all users.'
 tags: ['windows']
@@ -48,4 +48,6 @@ Downloads the image from the remote server and sets it as the current wallpaper 
 `PSCustomObject`
 
 Returns the registry settings edited by the script.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '1f1d7e57-764e-4888-bda1-fc0ea45f85c0'
-title: 'Restore Registry Value'
-title_meta: 'Restore Registry Value - Detailed Guide'
+title: 'Restore-RegistryValue'
+title_meta: 'Restore-RegistryValue'
 keywords: ['registry', 'restore', 'backup', 'windows', 'administration']
 description: 'This document provides a comprehensive guide on restoring backed up registry key properties or keys recursively using the Restore-RegistryValue.ps1 script. It outlines the requirements, process, parameters, and output associated with the script, ensuring users can effectively restore their registry settings.'
 tags: ['backup', 'windows']
@@ -65,4 +65,6 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM                      |                                           |
 | Kaseya                               |                                           |
 | Datto RMM                            |                                           |
+
+
 

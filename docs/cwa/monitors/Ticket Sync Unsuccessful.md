@@ -1,7 +1,7 @@
 ---
 id: '1fa27f5d-ca9d-4bff-8776-569a15f772d3'
-title: 'Ticket Sync Failed Monitor'
-title_meta: 'Ticket Sync Failed Monitor'
+title: 'Ticket Sync Unsuccessful'
+title_meta: 'Ticket Sync Unsuccessful'
 keywords: ['ticket', 'sync', 'monitor', 'psa', 'automate']
 description: 'This document outlines a monitor for identifying tickets within ConnectWise Automate that have failed to sync successfully to the PSA. It includes dependencies and target details for effective implementation.'
 tags: ['connectwise']
@@ -22,4 +22,6 @@ This monitor looks for tickets within Automate that have failed to sync successf
 ## Target
 
 Global
+
+
 

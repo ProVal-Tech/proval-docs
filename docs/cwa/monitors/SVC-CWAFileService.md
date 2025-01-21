@@ -1,7 +1,7 @@
 ---
 id: '5ae52dd7-e476-49dd-823f-582cbf6de17e'
-title: 'CWAFileService Monitor for Automate'
-title_meta: 'CWAFileService Monitor for Automate'
+title: 'SVC-CWAFileService'
+title_meta: 'SVC-CWAFileService'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'status']
 description: 'This document outlines the CWAFileService monitor for the Automate server, detailing its purpose to check the service status and create urgent tickets in Autotask if the service is down, specifically for on-prem partners.'
 tags: ['ticketing']
@@ -26,4 +26,6 @@ CWAFileService is one of the important services for the Automate server. This mo
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
+
+
 

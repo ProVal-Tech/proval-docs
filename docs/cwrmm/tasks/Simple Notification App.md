@@ -1,7 +1,7 @@
 ---
 id: '165a2ce7-105e-41f5-a4b1-48f362515b31'
-title: 'Simple Notification App [Param]'
-title_meta: 'Simple Notification App [Param]'
+title: 'Simple Notification App'
+title_meta: 'Simple Notification App'
 keywords: ['notification', 'branding', 'message', 'custom', 'image', 'script', 'automation']
 description: 'This document outlines the implementation of a Simple Notification App that delivers a one-time customized message to users, featuring company branding through an optional image URL. The script is designed for easy setup and execution, ensuring that notifications are displayed promptly on the user’s screen.'
 tags: ['email', 'setup', 'software', 'windows']
@@ -389,4 +389,6 @@ Click the `Run` button to initiate the schedule.
 ## Output
 
 - Script log
+
+
 

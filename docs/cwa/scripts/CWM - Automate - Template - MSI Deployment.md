@@ -1,7 +1,7 @@
 ---
 id: '58020b8e-e16f-433c-8dad-e10b59e2d8d7'
-title: 'Template - MSI Deployment'
-title_meta: 'Template - MSI Deployment'
+title: 'CWM - Automate - Template - MSI Deployment'
+title_meta: 'CWM - Automate - Template - MSI Deployment'
 keywords: ['msi', 'deployment', 'script', 'installation', 'software']
 description: 'This document provides a comprehensive guide on utilizing the Template - MSI Deployment for creating a software installation script that employs a .msi file. It includes detailed steps for exporting, duplicating, renaming, and configuring the script, as well as setting dynamic properties and ensuring successful deployment.'
 tags: ['deployment', 'installation', 'software']
@@ -74,4 +74,6 @@ With this information at hand, we are now equipped to deploy the application. So
 6. Save the script and test it.
 
 7. After the script is prepared, please verify with the partner or consultant whether they would like the script to also generate a ticket in case of failure. If needed, assign the appropriate ticket category ID to the `ticketcreationcategory` variable.
+
+
 

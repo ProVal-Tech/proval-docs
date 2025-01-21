@@ -1,7 +1,7 @@
 ---
 id: 'a36b0952-ad48-4891-b535-c70d0b2e235b'
-title: 'Dataview for Identifying Duplicate Machines in ConnectWise Automate'
-title_meta: 'Dataview for Identifying Duplicate Machines in ConnectWise Automate'
+title: 'Agent - Duplicates Based on Serial Number'
+title_meta: 'Agent - Duplicates Based on Serial Number'
 keywords: ['duplicate', 'machines', 'automate', 'dataview', 'licensing']
 description: 'This document provides an overview of a dataview designed to locate duplicate machines within ConnectWise Automate. It explains the importance of identifying duplicates, particularly in relation to licensing issues, and outlines the limitations regarding serial number retrieval from various manufacturers.'
 tags: ['database', 'report', 'software']
@@ -27,4 +27,6 @@ The purpose of the dataview is to locate duplicate machines within Automate. The
 | Serial Numbers   | Displays the serial number of the duplicate machines  |
 | Mac Addresses    | Displays the MAC address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'e49f2098-c95e-49d6-9626-fecbe89f9306'
-title: 'Remove Intel L1TF and Meltdown Vulnerabilities from Automate Environment'
-title_meta: 'Remove Intel L1TF and Meltdown Vulnerabilities from Automate Environment'
+title: 'Remove Intel L1TF  Intel Meltdown Solution'
+title_meta: 'Remove Intel L1TF  Intel Meltdown Solution'
 keywords: ['intel', 'l1tf', 'meltdown', 'vulnerabilities', 'automate']
 description: 'This document outlines a script designed to remove Intel L1TF and Intel Meltdown vulnerabilities from the Automate environment, detailing the process and expected output.'
 tags: ['security', 'uninstallation']
@@ -31,5 +31,7 @@ The script will remove the Intel L1TF and Intel Meltdown solutions from the Auto
 ## Output
 
 Script Log
+
+
 
 

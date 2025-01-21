@@ -1,7 +1,7 @@
 ---
 id: '2e06791d-4084-4dc3-a524-7b54695c6fc9'
-title: 'Create or Modify Registry Keys'
-title_meta: 'Create or Modify Registry Keys'
+title: 'Generic Registry Editor'
+title_meta: 'Generic Registry Editor'
 keywords: ['registry', 'keys', 'modify', 'create', 'windows']
 description: 'This document provides a detailed overview of a script that enables users to create or modify multiple registry keys, including their names, values, and types. It includes sample runs, user parameters, output details, and frequently asked questions regarding registry properties.'
 tags: ['security', 'setup', 'update', 'windows']
@@ -51,4 +51,6 @@ This script will create or modify the registry for multiple keys, names, values,
 2. Does the length of the parameters need to be the same for the script to work?  
    Yes, the parameters must be of the same length.  
    For example: If you provide two keys for modification, you must also provide two names, two values, and two types, regardless of whether any of the parameters have the same value or not.
+
+
 

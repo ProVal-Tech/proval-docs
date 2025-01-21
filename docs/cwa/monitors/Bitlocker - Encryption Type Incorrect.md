@@ -1,7 +1,7 @@
 ---
 id: '561f5be7-feb7-4c6a-b7b3-5ca93b39a40c'
-title: 'Bitlocker Monitoring Script Overview'
-title_meta: 'Bitlocker Monitoring Script Overview'
+title: 'Bitlocker - Encryption Type Incorrect'
+title_meta: 'Bitlocker - Encryption Type Incorrect'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'compliance']
 description: 'This document provides an overview of a Bitlocker monitoring script that identifies target machines based on specific conditions related to Bitlocker settings and client configurations. It includes SQL queries, dependencies, and guidelines for targeting the Bitlocker solution.'
 tags: ['compliance', 'database', 'encryption', 'security']
@@ -73,4 +73,6 @@ AND (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Encryption-Type-Incorrect/image_1.png)
+
+
 

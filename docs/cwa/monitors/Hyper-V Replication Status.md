@@ -1,7 +1,7 @@
 ---
 id: 'c768b83d-adcf-4de8-8b4f-ac3d65679161'
-title: 'Hyper-V Replication Monitor'
-title_meta: 'Hyper-V Replication Monitor'
+title: 'Hyper-V Replication Status'
+title_meta: 'Hyper-V Replication Status'
 keywords: ['hyper-v', 'replication', 'monitoring', 'virtualization', 'backup']
 description: 'This document outlines a monitor set designed to detect Hyper-V hosts with problematic replication status for virtual machines. It provides insights into the replication state of virtual machines, troubleshooting steps, and details for ticketing when issues arise.'
 tags: ['backup', 'hyper-v', 'virtualization', 'windows']
@@ -63,5 +63,7 @@ TESTDNS01 replication state: Warning
 
 Please follow the article below for the implementation:  
 [Implementation Article](https://proval.itglue.com/5078775/docs/15601954)
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: 'ebb1d05a-bb80-45e7-a4be-9cc73b8f308d'
-title: 'Windows Restore Points Information'
-title_meta: 'Windows Restore Points Information'
+title: 'plugin_proval_restore_points'
+title_meta: 'plugin_proval_restore_points'
 keywords: ['windows', 'restore', 'points', 'information', 'audit']
 description: 'This document provides detailed information about Windows restore points, including their storage, dependencies, and the structure of the data table that captures key attributes such as ComputerID, RestorePointDate, RestorePointDescription, and SequenceNumber.'
 tags: ['backup', 'database', 'security', 'windows']
@@ -28,4 +28,6 @@ This document stores information about Windows restore points.
 | RestorePointDate       | DATETIME | The date that the audited restore point was taken.         |
 | RestorePointDescription | VARCHAR  | The description of the audited restore point.              |
 | SequenceNumber         | INT      | The number of previous sequences that this restore point has been through. |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'ce389f31-cb77-495f-9b20-18003303ae30'
-title: 'ISO Mount Control Procedures'
-title_meta: 'ISO Mount Control Procedures for Windows'
+title: 'Manage ISO Access'
+title_meta: 'Manage ISO Access'
 keywords: ['iso', 'mount', 'control', 'windows', 'access']
 description: 'This document outlines two agent procedures, ISO Mount Disable and ISO Mount Enable, designed to manage end-user access to mounting ISOs in Windows environments. It includes example logs and a detailed process for modifying registry settings to enable or disable ISO mounting capabilities.'
 tags: ['security', 'software', 'windows']
@@ -30,4 +30,6 @@ Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` t
 ## Output
 
 Agent Procedure Log
+
+
 

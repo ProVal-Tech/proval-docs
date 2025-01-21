@@ -1,7 +1,7 @@
 ---
 id: 'bfe883fc-125c-44fc-b2d6-beb27efefd8a'
-title: 'Windows Patching - Quick Audit'
-title_meta: 'Windows Patching - Quick Audit'
+title: 'Windows Patching - Quick Audit (Reference Table)'
+title_meta: 'Windows Patching - Quick Audit (Reference Table)'
 keywords: ['patching', 'windows', 'audit', 'dataview', 'troubleshooting']
 description: 'This document provides a detailed overview of a dataview that displays essential patching-related information for all Windows machines in the environment, aiding in troubleshooting patching issues. It includes dependencies, column descriptions, and FAQs for better understanding and usage.'
 tags: ['database', 'patching', 'report', 'windows']
@@ -56,4 +56,6 @@ Sample Screenshot:
 ![Step 2](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_3.png)  
 
 Once you receive the CSV in your email, you can easily apply the required filters.
+
+
 

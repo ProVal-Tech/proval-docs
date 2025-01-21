@@ -1,7 +1,7 @@
 ---
 id: 'dc9cd56d-9a0c-4e40-8205-2da48893d825'
-title: 'Create Device Group for Update Orchestrator'
-title_meta: 'Create Device Group for Update Orchestrator'
+title: 'Update Orchestrator'
+title_meta: 'Update Orchestrator'
 keywords: ['device', 'group', 'update', 'orchestrator', 'solution', 'windows']
 description: 'This document provides a step-by-step guide on how to create a device group for the Update Orchestrator solution in ConnectWise RMM. It includes dependencies, creation instructions, and criteria for grouping devices based on OS type.'
 tags: ['setup', 'software', 'windows']
@@ -47,4 +47,6 @@ When adding criteria, please search for the **OS Type**.
 **AND**
 
 **Site > Contains any of >** "Select the sites you want this to target."
+
+
 

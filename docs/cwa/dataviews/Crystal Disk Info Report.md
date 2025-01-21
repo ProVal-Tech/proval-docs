@@ -1,7 +1,7 @@
 ---
 id: '47ae12f3-3426-4a5d-b204-07eda11b9eff'
-title: 'EPM - Disk - Script - Crystal Disk Info Report'
-title_meta: 'EPM - Disk - Script - Crystal Disk Info Report'
+title: 'Crystal Disk Info Report'
+title_meta: 'Crystal Disk Info Report'
 keywords: ['disk', 'info', 'report', 'crystal', 'epm', 'data']
 description: 'This document provides an overview of the EPM - Disk - Script - Crystal Disk Info Report, detailing the data displayed by the script, its dependencies, and the various columns that represent different properties of disks. The report is essential for understanding disk performance and health metrics.'
 tags: ['disk', 'performance', 'report']
@@ -61,4 +61,6 @@ Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Crystal-Disk-Info-Report/image_1.png)
+
+
 

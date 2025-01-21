@@ -1,7 +1,7 @@
 ---
 id: '11fad349-3b51-4bfd-8f45-d07db1827543'
-title: 'Locked Out User Account Audit'
-title_meta: 'Locked Out User Account Audit'
+title: 'plugin_proval_account_lock'
+title_meta: 'plugin_proval_account_lock'
 keywords: ['lockout', 'audit', 'user', 'account', 'management']
 description: 'This document outlines the process of auditing locked-out user accounts, detailing the necessary dependencies, table structures, and SQL commands required to manage and retrieve information on both domain and local user accounts that have been locked out.'
 tags: ['database', 'report', 'security', 'setup']
@@ -52,4 +52,6 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_account_lock` (
   CONSTRAINT `plugin_proval_account_lock_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8
 ```
+
+
 

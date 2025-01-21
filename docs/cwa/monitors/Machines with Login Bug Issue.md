@@ -1,7 +1,7 @@
 ---
 id: '9c3ebf70-921b-46e4-bdab-409e06e17a5f'
-title: 'Login Bug Monitor for EPM'
-title_meta: 'Login Bug Monitor for EPM'
+title: 'Machines with Login Bug Issue'
+title_meta: 'Machines with Login Bug Issue'
 keywords: ['monitor', 'login', 'issue', 'reboot', 'agent']
 description: 'This document outlines the Login Bug Monitor designed to detect agents with login issues that have not been rebooted for over 7 days, as part of the EPM - Windows Configuration solution. It includes dependencies, target information, ticketing details, and alert templates.'
 tags: ['ticketing', 'windows']
@@ -30,4 +30,6 @@ This monitor is a global monitor.
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+
+
 

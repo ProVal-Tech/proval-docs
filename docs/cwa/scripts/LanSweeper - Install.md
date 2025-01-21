@@ -1,7 +1,7 @@
 ---
 id: '49b92505-90cb-4c10-9d25-6ec311341f65'
-title: 'Installs the LanSweeper Agent'
-title_meta: 'Installs the LanSweeper Agent for Scanning'
+title: 'LanSweeper - Install'
+title_meta: 'LanSweeper - Install'
 keywords: ['lansweeper', 'agent', 'installation', 'scanning', 'server']
 description: 'This document provides a detailed guide on how to install the LanSweeper agent, including dependencies, user parameters, and expected output. The installation process is outlined with examples and links to additional resources for successful deployment.'
 tags: ['installation', 'software', 'windows']
@@ -41,4 +41,6 @@ Once the values are provided during script execution, the LsAgent will be succes
 ## Output
 
 - Script log
+
+
 

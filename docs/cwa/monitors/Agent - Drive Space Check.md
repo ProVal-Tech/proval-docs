@@ -1,7 +1,7 @@
 ---
 id: '6d2587d3-3839-4f53-92a7-89890936958d'
-title: 'Drive Space Monitoring for Endpoints'
-title_meta: 'Drive Space Monitoring for Endpoints'
+title: 'Agent - Drive Space Check'
+title_meta: 'Agent - Drive Space Check'
 keywords: ['monitoring', 'drive', 'space', 'endpoints', 'alert', 'thresholds']
 description: 'This document provides an overview of a drive space monitoring solution for endpoints, detailing its configuration, dependencies, and default values for alert thresholds. It emphasizes the importance of scheduling for optimal performance and outlines the drive file systems excluded from monitoring.'
 tags: ['disk']
@@ -36,4 +36,6 @@ This monitor is primarily designed for server drive space monitoring. It will fu
 The monitor filters out the following drive file systems: 'CDFS', 'UNKFS', 'DVDFS', 'FAT', 'FAT32', and 'NetFS'.
 
 It also filters out drives where the SmartStatus is like USB, in an attempt to exclude USB drives.
+
+
 

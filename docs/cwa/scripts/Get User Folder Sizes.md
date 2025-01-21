@@ -1,7 +1,7 @@
 ---
 id: '209a433a-f8a7-4ccc-b2d3-3db5b9d3abe4'
-title: 'Fetch User Folder Sizes'
-title_meta: 'Fetch User Folder Sizes - PowerShell Script'
+title: 'Get User Folder Sizes'
+title_meta: 'Get User Folder Sizes'
 keywords: ['folder', 'size', 'user', 'profile', 'database']
 description: 'This PowerShell script retrieves the size of every user folder on a machine, saving significant time in the process. It creates a custom database table to store the folder sizes and provides a detailed log of the execution.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -28,4 +28,6 @@ This script runs PowerShell to fetch the size (in MB) of every user folder found
 ## Output
 
 - Script log
+
+
 

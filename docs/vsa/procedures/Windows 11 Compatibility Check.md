@@ -1,7 +1,7 @@
 ---
 id: '170fedb5-2280-406a-9187-7c353a3cde31'
-title: 'Hardware Readiness for Windows 11'
-title_meta: 'Hardware Readiness for Windows 11'
+title: 'Windows 11 Compatibility Check'
+title_meta: 'Windows 11 Compatibility Check'
 keywords: ['hardware', 'windows', 'compatibility', 'tpm', 'secureboot', 'processor', 'memory', 'storage']
 description: 'This document provides an overview of a PowerShell script that assesses whether a Windows 10 machine meets the hardware requirements for upgrading to Windows 11. It includes checks for storage, memory, TPM, processor details, and Secure Boot status, along with implementation details for Kaseya VSA.'
 tags: ['memory', 'secureboot', 'storage', 'tpm', 'windows']
@@ -57,4 +57,6 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
+
+
 

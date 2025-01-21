@@ -1,7 +1,7 @@
 ---
 id: 'fc919069-1895-4842-9b1e-d13d3f53227b'
-title: 'Drive Scan Output Script'
-title_meta: 'Drive Scan Output Script for Windows and Linux'
+title: 'Space Auditing Script'
+title_meta: 'Space Auditing Script'
 keywords: ['drive', 'scan', 'output', 'script', 'ticket']
 description: 'This document outlines a script that scans the main drive of Windows and Linux systems, outputs the results to a text file, and attaches the file to a ticket for easy reference. The script enhances automation by saving time and ensuring data is readily available within the ticketing system.'
 tags: ['linux', 'windows']
@@ -60,4 +60,6 @@ If the script fails to gather the data appropriately, it will exit with an error
 ## Example Output
 
 ![Example Output](../../../static/img/Space-Auditing-Script/image_2.png)
+
+
 

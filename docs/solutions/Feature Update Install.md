@@ -1,7 +1,7 @@
 ---
 id: '0123f6a0-1512-4c19-a7c0-9cca0404bf5b'
-title: 'Windows 10 and 11 Feature Pack Update Monitoring in CW RMM'
-title_meta: 'Windows 10 and 11 Feature Pack Update Monitoring in CW RMM'
+title: 'Feature Update Install'
+title_meta: 'Feature Update Install'
 keywords: ['windows', 'feature', 'update', 'monitoring', 'automation']
 description: 'This document outlines the procedures for executing, overseeing, and monitoring Windows 10 and 11 Feature Pack updates through ConnectWise RMM. It includes associated content, implementation steps, and FAQs to assist users in managing feature updates effectively.'
 tags: ['update', 'windows']
@@ -65,4 +65,6 @@ This document provides details on the contents and the procedure for executing, 
 
 **Q:** Is it possible to restrict the solution to Windows 10 only?  
 **A:** Certainly, to confine the solution to Windows 10, the individual creating the solution should ensure that the associated groups are limited to Windows 10 only or exclude Windows 11 from the groups.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-compare-adgroupmembers
 title: 'Compare-ADGroupMembers'
-title_meta: 'Compare-ADGroupMembers Command'
+title_meta: 'Compare-ADGroupMembers'
 keywords: ['compare', 'adgroup', 'members', 'changes']
 description: 'Documentation for the Compare-ADGroupMembers command to return information about membership changes to a group based on previous runs of the script.'
 tags: ['active-directory', 'report', 'security']
@@ -39,4 +39,6 @@ Location of output for log, result, and error files.
 - `.\Compare-ADGroupMembers-log.txt`
 - `.\Compare-ADGroupMembers-data.txt`
 - `.\Compare-ADGroupMembers-error.txt`
+
+
 

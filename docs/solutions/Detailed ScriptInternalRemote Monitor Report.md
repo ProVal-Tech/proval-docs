@@ -1,7 +1,7 @@
 ---
 id: '894ea49f-fc57-49a6-a456-165c6170431f'
-title: 'Detailed Auditing of ProVal and Automation Reports'
-title_meta: 'Detailed Auditing of ProVal and Automation Reports'
+title: 'Detailed ScriptInternalRemote Monitor Report'
+title_meta: 'Detailed ScriptInternalRemote Monitor Report'
 keywords: ['auditing', 'dataview', 'proval', 'monitor', 'report']
 description: 'This document provides a comprehensive overview of the dataviews used for detailed auditing of ProVal and all automation reports, including scripts, internal monitors, and remote monitors. It includes links to specific dataviews and implementation instructions for importing content using the ProSync Plugin.'
 tags: ['report']
@@ -34,4 +34,6 @@ This solution contains the dataviews that are used for the detailed auditing of 
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
+
+
 

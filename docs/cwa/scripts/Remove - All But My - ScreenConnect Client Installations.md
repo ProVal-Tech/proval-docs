@@ -1,7 +1,7 @@
 ---
 id: '50779f68-4329-4d15-b069-c50fcba00614'
-title: 'Remove Additional ScreenConnect Clients'
-title_meta: 'Remove Additional ScreenConnect Clients'
+title: 'Remove - All But My - ScreenConnect Client Installations'
+title_meta: 'Remove - All But My - ScreenConnect Client Installations'
 keywords: ['screenconnect', 'automate', 'script', 'removal', 'edf']
 description: 'This document provides a script for removing all instances of ScreenConnect from machines, keeping only the version integrated with Automate or specified permitted versions. It includes setup instructions, client-level and location-level EDF configurations, and output details.'
 tags: ['connectwise']
@@ -87,4 +87,6 @@ This script removes all instances of ScreenConnect from the machine except the o
 - Script Logs
 
 </div>
+
+
 

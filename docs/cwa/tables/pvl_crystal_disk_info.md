@@ -1,7 +1,7 @@
 ---
 id: '89182385-f98c-4e8b-ab62-1df0c73bbb1c'
-title: 'Crystal Disk Info Report Table Structure'
-title_meta: 'Crystal Disk Info Report Table Structure'
+title: 'pvl_crystal_disk_info'
+title_meta: 'pvl_crystal_disk_info'
 keywords: ['disk', 'info', 'report', 'database', 'structure']
 description: 'This document outlines the structure of the table that stores information returned by the Crystal Disk Info Report script, including its columns, data types, and explanations for each field.'
 tags: ['database', 'disk', 'report', 'setup', 'windows']
@@ -50,4 +50,6 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
+
+
 

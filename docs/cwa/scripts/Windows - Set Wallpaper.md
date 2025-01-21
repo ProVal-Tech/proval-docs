@@ -1,7 +1,7 @@
 ---
 id: 'bd6b7507-eccf-4fce-a4e4-62b9b7c97a08'
-title: 'Set Active Desktop Wallpaper for All Users'
-title_meta: 'Set Active Desktop Wallpaper for All Users'
+title: 'Windows - Set Wallpaper'
+title_meta: 'Windows - Set Wallpaper'
 keywords: ['desktop', 'wallpaper', 'enforcement', 'login', 'users', 'local', 'url']
 description: 'This document provides a detailed guide on how to set the active desktop wallpaper for all users from a local path or a URL. It includes options for enforcing the wallpaper on user login and resetting to previous wallpapers, along with user parameters and expected output.'
 tags: ['security', 'setup', 'windows']
@@ -39,4 +39,6 @@ This document outlines how to set the active desktop wallpaper for all users fro
 ```
 C:/ProgramData/_automation/script/Set-Wallpaper/Set-Wallpaper-log.txt
 ```
+
+
 

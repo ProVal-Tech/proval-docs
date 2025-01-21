@@ -1,7 +1,7 @@
 ---
 id: '1325f458-9c0e-4021-b107-26df4360bbed'
-title: 'Remote Monitor to Disable Windows Fast Boot'
-title_meta: 'Remote Monitor to Disable Windows Fast Boot'
+title: 'Windows Fast Boot Disable Change'
+title_meta: 'Windows Fast Boot Disable Change'
 keywords: ['monitor', 'fastboot', 'windows', 'registry', 'disable']
 description: 'This document describes a remote monitor designed to detect if Windows Fast Boot is enabled via a registry check, disable it, and validate the change. If the operation fails, a ticket is generated noting the failure; otherwise, it confirms successful disabling of Fast Boot.'
 tags: ['registry', 'ticketing', 'windows']
@@ -62,5 +62,7 @@ FastBoot is successfully disabled.
 
 Please follow the document below for the implementation steps:  
 [Import - Remote Monitor - Windows Fast Boot Disable](<./Windows Fast Boot Disable Change.md>)
+
+
 
 

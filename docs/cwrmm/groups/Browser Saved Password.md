@@ -1,7 +1,7 @@
 ---
 id: 'a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47'
-title: 'Browser Saved Password Audit and Clearance'
-title_meta: 'Browser Saved Password Audit and Clearance'
+title: 'Browser Saved Password'
+title_meta: 'Browser Saved Password'
 keywords: ['browser', 'audit', 'clear', 'password', 'endpoints', 'dynamic', 'group']
 description: 'This document outlines the creation of dynamic groups to deploy the task for clearing and auditing browser saved passwords, including details on the criteria for each group and the endpoints involved in the process.'
 tags: ['security', 'windows']
@@ -70,4 +70,6 @@ Criteria:
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
+
+
 

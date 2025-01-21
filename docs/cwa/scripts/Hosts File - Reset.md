@@ -1,7 +1,7 @@
 ---
 id: 'd4f874ae-e2d5-4a6c-b0c3-14972813012d'
-title: 'Rename Host File Script'
-title_meta: 'Rename Host File Script - Restore Default Host File Entries'
+title: 'Hosts File - Reset'
+title_meta: 'Hosts File - Reset'
 keywords: ['rename', 'host', 'file', 'dns', 'flush', 'default']
 description: 'This document provides a detailed overview of a script designed to rename the current host file by appending OLD to its name and replacing it with a stock host file that contains no custom entries. The process includes flushing the DNS cache and updating relevant data fields.'
 tags: ['dns', 'recovery', 'setup', 'windows']
@@ -36,4 +36,6 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
   - ![Host File Contents](../../../static/img/Hosts-File---Reset/image_2.png)
+
+
 

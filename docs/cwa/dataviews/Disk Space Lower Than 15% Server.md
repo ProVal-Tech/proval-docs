@@ -1,7 +1,7 @@
 ---
 id: '9d50d408-076d-4ed3-9a70-c2ff4f9c980b'
-title: 'Server Drives with Low Free Space'
-title_meta: 'Server Drives with Low Free Space'
+title: 'Disk Space Lower Than 15% Server'
+title_meta: 'Disk Space Lower Than 15% Server'
 keywords: ['server', 'drives', 'free', 'space', 'monitoring']
 description: 'This document outlines a dataview that displays server drives with less than 15% free space remaining. It includes filtering criteria, dependencies, and a detailed description of standard and available columns for effective monitoring of drive space usage.'
 tags: ['disk-encryption', 'performance', 'report', 'windows']
@@ -51,5 +51,7 @@ None
 | DriveID                | The numerical DB value for the drive                                        |
 | LocationID             | The numerical DB value for the location                                     |
 | Operating System       | The name of the operating system on the computer                            |
+
+
 
 

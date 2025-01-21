@@ -1,7 +1,7 @@
 ---
 id: 'ba82a707-a466-4960-95a9-856d5b67b8ed'
-title: 'Create Automate Agent Deployment GPO Script'
-title_meta: 'Create Automate Agent Deployment GPO Script'
+title: 'CWM - Automate - Script -Automate Agent - InstallRepair - For GPO Globals'
+title_meta: 'CWM - Automate - Script -Automate Agent - InstallRepair - For GPO Globals'
 keywords: ['automate', 'gpo', 'agent', 'installation', 'deployment', 'token', 'script']
 description: 'This document outlines a PowerShell script designed for creating and managing the Automate agent deployment via Group Policy Objects (GPO). It includes steps for installation, repair, and replacement of the agent, ensuring that it remains up-to-date with a new Installation Token. The guide targets Domain Controllers and provides detailed implementation steps, variable definitions, and expected outputs.'
 tags: ['deployment', 'gpo', 'installation']
@@ -81,4 +81,6 @@ The generated PowerShell script will install the agent if it is missing, attempt
 ## Creating Automate Agent Deployment GPO
 
 <iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0"></iframe>
+
+
 

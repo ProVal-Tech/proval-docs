@@ -1,7 +1,7 @@
 ---
 id: ps-get-desynchronizedsqlreplicas
 title: 'Get-DesynchronizedSqlReplicas'
-title_meta: 'Get-DesynchronizedSqlReplicas Command'
+title_meta: 'Get-DesynchronizedSqlReplicas'
 keywords: ['sql', 'replicas', 'desynchronized', 'database']
 description: 'Documentation for the Get-DesynchronizedSqlReplicas command to return a list of all desynchronized SQL replicas.'
 tags: ['database', 'performance', 'report']
@@ -30,4 +30,6 @@ Returns a list of all SQL replication instances that are not synchronized or syn
 Location of output for log, result, and error files:
 - System Object
 - .\Get-DesynchronizedSqlReplicas-log.txt
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-bitlockerstate
 title: 'Get-BitLockerState'
-title_meta: 'Get-BitLockerState Command'
+title_meta: 'Get-BitLockerState'
 keywords: ['bitlocker', 'encryption', 'status', 'drive']
 description: 'Documentation for the Get-BitLockerState command to check and report the BitLocker encryption status of drives on a Windows system.'
 tags: ['disk-encryption', 'report', 'security', 'windows']
@@ -58,4 +58,6 @@ The script generates the following output files in the same directory where it i
 - The script is designed to be run on systems with BitLocker enabled.
 - Administrative rights are required to access BitLocker status information.
 - The script does not modify any system settings or BitLocker configurations.
+
+
 

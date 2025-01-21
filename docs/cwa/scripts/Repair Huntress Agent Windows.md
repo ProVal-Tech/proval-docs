@@ -1,7 +1,7 @@
 ---
 id: '6489855d-0391-444d-a207-dfbd76152948'
-title: 'Repair Huntress Agent for Windows Machines'
-title_meta: 'Repair Huntress Agent for Windows Machines'
+title: 'Repair Huntress Agent Windows'
+title_meta: 'Repair Huntress Agent Windows'
 keywords: ['huntress', 'agent', 'repair', 'windows', 'script']
 description: 'This document provides a detailed guide on using a script to repair the Huntress Agent on Windows machines, including file hashes, dependencies, variables, and client-level EDFs.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -54,4 +54,6 @@ This script can be used to repair the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
+
+
 

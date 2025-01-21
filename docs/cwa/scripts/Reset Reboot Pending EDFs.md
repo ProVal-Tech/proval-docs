@@ -1,7 +1,7 @@
 ---
 id: 'e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c'
-title: 'EPM - Windows Configuration - Monitor - Reboot Pending - Clear EDFs'
-title_meta: 'EPM - Windows Configuration - Monitor - Reboot Pending - Clear EDFs'
+title: 'Reset Reboot Pending EDFs'
+title_meta: 'Reset Reboot Pending EDFs'
 keywords: ['edf', 'monitor', 'reboot', 'clear', 'windows', 'configuration']
 description: 'This document provides an overview of a script designed to clear the EDFs used in the EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]. It explains the dependencies, process, and expected output of the script, ensuring that the monitor can be re-triggered effectively.'
 tags: ['windows']
@@ -35,4 +35,6 @@ This script simply sets the following EDFs to 0 so that the user prompting stops
 ## Output
 
 No logging is performed with this script. It simply zeros out the required EDFs for the dependencies.
+
+
 

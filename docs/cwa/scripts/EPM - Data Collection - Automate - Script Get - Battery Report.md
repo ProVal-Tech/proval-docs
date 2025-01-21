@@ -1,7 +1,7 @@
 ---
 id: '59738aa7-5495-4e4d-a36a-cc8af2643865'
-title: 'EPM - Data Collection - Battery Report'
-title_meta: 'EPM - Data Collection - Battery Report'
+title: 'EPM - Data Collection - Automate - Script Get - Battery Report'
+title_meta: 'EPM - Data Collection - Automate - Script Get - Battery Report'
 keywords: ['data', 'collection', 'battery', 'report', 'sql', 'insert']
 description: 'This document outlines a script that runs the agnostic EPM data collection process to retrieve battery report data and imports it into the plugin_proval_batteries table. It serves as an autofix for an internal monitoring script and includes dependencies, variables, and a detailed process for execution.'
 tags: ['database', 'report', 'setup', 'sql']
@@ -39,4 +39,6 @@ The intention of this script is to serve as an autofix for an internal monitor n
 2. Set up variables for [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>).
 3. Run the agnostic process ([EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)).
 4. Run the automate script process ([CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)).
+
+
 

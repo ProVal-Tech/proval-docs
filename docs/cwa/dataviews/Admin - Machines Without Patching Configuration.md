@@ -1,7 +1,7 @@
 ---
 id: 'dd58d567-cc2a-4d71-831b-32f4079c2534'
-title: 'Microsoft Update Policy Report'
-title_meta: 'Microsoft Update Policy Report'
+title: 'Admin - Machines Without Patching Configuration'
+title_meta: 'Admin - Machines Without Patching Configuration'
 keywords: ['microsoft', 'update', 'policy', 'report', 'machines']
 description: 'This document provides a detailed overview of a dataview that displays machines where the Microsoft update policy is not set, including various columns that provide insights into the client, location, computer details, and patching status.'
 tags: ['patching', 'report', 'software', 'windows']
@@ -31,4 +31,6 @@ This dataview displays any machines where the Microsoft update policy is not set
 | Patch Exclusion Checkbox           | Displays whether the `Disable Automated Patch Install` EDF is `Checked` or `Unchecked`         |
 | Cluster Role Detected              | Displays whether the cluster role detected is True                                             |
 | Last User Name                     | Displays the last username of the machine                                                      |
+
+
 

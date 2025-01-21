@@ -1,7 +1,7 @@
 ---
 id: '23ff7552-2521-43f5-9b6a-bb090a2b5ae6'
-title: 'Disable Windows Update using Registry'
-title_meta: 'Disable Windows Update using Registry'
+title: 'Windows Update Disable'
+title_meta: 'Windows Update Disable'
 keywords: ['windows', 'update', 'registry', 'disable', 'configuration']
 description: 'This document provides a detailed procedure for disabling Windows Update through registry modifications. It includes example logs from the agent procedure, outlining the steps taken to change registry settings and verify success.'
 tags: ['registry', 'security', 'windows']
@@ -38,4 +38,6 @@ This document outlines the procedure to disable Windows Update using the Windows
 ## Output
 
 Agent Procedure Log
+
+
 

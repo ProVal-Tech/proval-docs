@@ -1,7 +1,7 @@
 ---
 id: 'b08343d9-9d4b-4edd-92e2-5941c23d8e43'
-title: 'TLS Version Check - Remote Monitor Setup'
-title_meta: 'TLS Version Check - Remote Monitor Setup'
+title: 'Import- TLS Version Check - Server'
+title_meta: 'Import- TLS Version Check - Server'
 keywords: ['tls', 'monitor', 'setup', 'database', 'query']
 description: 'This document provides a step-by-step guide on how to set up a remote monitor for checking TLS versions within specified groups in your database. It includes obtaining group IDs, modifying SQL queries, and executing them to establish the monitor.'
 tags: ['database', 'security', 'setup']
@@ -168,4 +168,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

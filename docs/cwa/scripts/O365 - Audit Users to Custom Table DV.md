@@ -1,7 +1,7 @@
 ---
 id: 'c4cb8f27-762f-4ebc-9840-f5cb7712a05d'
-title: 'O365 User Audit Script'
-title_meta: 'O365 User Audit Script for Efficient User Management'
+title: 'O365 - Audit Users to Custom Table DV'
+title_meta: 'O365 - Audit Users to Custom Table DV'
 keywords: ['o365', 'audit', 'users', 'reporting', 'dashboard']
 description: 'This document details a script that utilizes O365 admin credentials to connect to O365 and audit users into a custom table. It highlights the requirements, process, and output of the script, which is designed for integration with the ProVal Dashboard for enhanced reporting capabilities.'
 tags: ['installation', 'report', 'security', 'windows']
@@ -51,4 +51,6 @@ Windows OS and PowerShell 5.0 are required.
 ## Output
 
 Script Log
+
+
 

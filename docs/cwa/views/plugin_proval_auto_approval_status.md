@@ -1,7 +1,7 @@
 ---
 id: 'ae8ce64f-816a-4e84-8052-f8e131dde389'
-title: 'Approval Policy - Auto Approve/Ignore/Deny Audit'
-title_meta: 'Approval Policy - Auto Approve/Ignore/Deny Audit'
+title: 'plugin_proval_auto_approval_status'
+title_meta: 'plugin_proval_auto_approval_status'
 keywords: ['approval', 'audit', 'policy', 'dataview', 'mysql']
 description: 'This document presents information on auto-approve category details related to approval policies. It is intended for use in creating a dataview called Approval Policy - Auto Approve/Ignore/Deny Audit, and outlines dependencies, views, and characteristics examined in the audit process.'
 tags: ['database', 'report', 'security', 'windows']
@@ -40,4 +40,6 @@ The script, [Create View plugin_proval_auto_approval_status](<../scripts/View - 
 | Examined Characteristics - By Titles             | text     | List of the titles that are either approved, denied, or ignored.                                          |
 | Examined Characteristics - CVSS Status           | varchar  | Whether the patches are approved on the basis of CVSS score or not.                                      |
 | Examined Characteristics - CVSS >                | varchar  | CVSS score above which auto-approval of patches is applied.                                              |
+
+
 

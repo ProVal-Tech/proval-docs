@@ -1,7 +1,7 @@
 ---
 id: 'c9969bad-d2da-45ec-90fe-d6be82479ebc'
-title: 'Threatlocker Deployment on Windows and Mac Agents'
-title_meta: 'Threatlocker Deployment on Windows and Mac Agents'
+title: 'Threatlocker Deployment'
+title_meta: 'Threatlocker Deployment'
 keywords: ['threatlocker', 'deployment', 'windows', 'mac', 'agent', 'customfield', 'dynamicgroup', 'task']
 description: 'This document outlines the process for deploying the Threatlocker agent on both Windows and Mac operating systems. It includes necessary custom fields, device group creation, and task deployment steps to ensure successful implementation.'
 tags: ['deployment', 'security', 'windows']
@@ -51,4 +51,6 @@ The purpose of this solution is to deploy the Threatlocker agent on Windows and 
 
 3. Create and deploy the following task:
    - [CW RMM - Task - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730645)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '7b4c5967-f117-4305-a230-cc88bc5061e2'
-title: 'User Audit Activities in Automate'
-title_meta: 'User Audit Activities in Automate - Last 7 Days Overview'
+title: 'Automate - Audit Actions Last 7 Days'
+title_meta: 'Automate - Audit Actions Last 7 Days'
 keywords: ['audit', 'activities', 'users', 'automate', 'dataview']
 description: 'This document provides a detailed overview of user audit activities in ConnectWise Automate over the last 7 days, including user actions, messages, and timestamps for each event.'
 tags: []
@@ -21,4 +21,6 @@ This Dataview provides the audit activities of the users in Automate for the las
 | Audit Action | Displays the action performed by the user      |
 | Message      | Displays the exact message of what was done    |
 | HistoryDate  | Displays the date of the action taken by the user |
+
+
 

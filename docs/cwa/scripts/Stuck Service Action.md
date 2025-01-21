@@ -1,7 +1,7 @@
 ---
 id: 'bb8f2562-4744-4349-a661-62f64f0d05b2'
-title: 'Stuck Service Detection Script'
-title_meta: 'Stuck Service Detection Script'
+title: 'Stuck Service Action'
+title_meta: 'Stuck Service Action'
 keywords: ['service', 'detection', 'script', 'automation', 'process']
 description: 'This document provides details about a script that detects services stuck in a state other than Running or Stopped and attempts to forcefully stop those services. It includes sample runs, dependencies, variables, global parameters, and the overall process involved in executing the script.'
 tags: ['windows']
@@ -53,4 +53,6 @@ This script detects any service that is stuck in a state other than Running or S
 - Script log
 - Script state
 - Ticket
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5be9ccc8-0317-42e4-ba36-5fa203e9582e'
-title: 'Dell Event Log Monitor'
-title_meta: 'Dell Event Log Monitor for Critical and Error Detection'
+title: 'EPM - Vendor Specific - Monitor - Dell Hardware Monitoring'
+title_meta: 'EPM - Vendor Specific - Monitor - Dell Hardware Monitoring'
 keywords: ['dell', 'event', 'monitor', 'logs', 'server']
 description: 'This document provides a detailed overview of an internal monitor designed to detect critical and error event logs from Dell servers using the Server Administrator event source. It includes instructions on setting up the monitor and utilizing the appropriate alert template for ticket creation.'
 tags: []
@@ -22,4 +22,6 @@ Replace `<Your AgentID Goes Here>` with the ID of the monitor set before enablin
 ## Target
 
 Dell Servers
+
+
 

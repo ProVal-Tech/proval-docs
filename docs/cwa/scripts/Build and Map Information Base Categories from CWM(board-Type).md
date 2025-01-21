@@ -1,7 +1,7 @@
 ---
 id: '5028b9c1-b787-4e98-801f-efc670c0d662'
-title: 'Optimize Ticket Routing in ConnectWise Automate'
-title_meta: 'Optimize Ticket Routing in ConnectWise Automate'
+title: 'Build and Map Information Base Categories from CWM(board-Type)'
+title_meta: 'Build and Map Information Base Categories from CWM(board-Type)'
 keywords: ['ticket', 'routing', 'automate', 'categories', 'sql']
 description: 'This document details a script designed to optimize ticket routing in ConnectWise Automate by creating descriptive and exact categories based on imported boards. It outlines the process, dependencies, and global parameters necessary for effective use, as well as providing insights into the expected output and time savings achieved through automation.'
 tags: ['connectwise', 'database', 'security', 'setup']
@@ -55,4 +55,6 @@ This script only runs SQL against the database. It is set up to dynamically atte
 ## Output
 
 CW Manage Plugin
+
+
 

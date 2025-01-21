@@ -1,7 +1,7 @@
 ---
 id: '975ed6e2-5fb1-49f5-808a-672a42ccd56b'
-title: 'Enable SNMP Windows Optional Feature'
-title_meta: 'Enable SNMP Windows Optional Feature'
+title: 'SNMP & Community Configuration'
+title_meta: 'SNMP & Community Configuration'
 keywords: ['snmp', 'windows', 'feature', 'enable', 'optional']
 description: 'This document outlines the procedure for enabling the SNMP Windows Optional feature on an endpoint, including example logs and a detailed process description.'
 tags: ['installation', 'performance', 'software', 'windows']
@@ -67,4 +67,6 @@ The agent procedure checks whether the machine has the SNMP feature enabled. If 
 ## Output
 
 Procedure Logs
+
+
 

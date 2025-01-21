@@ -1,7 +1,7 @@
 ---
 id: 'a7234fd9-615c-4862-ae0a-b93fd84f7af6'
-title: 'Microsoft 365 Monthly Update Script'
-title_meta: 'Microsoft 365 Monthly Update Script for Registry Changes'
+title: 'Microsoft 365 - Set Update Channel - Monthly Enterprise'
+title_meta: 'Microsoft 365 - Set Update Channel - Monthly Enterprise'
 keywords: ['microsoft', '365', 'update', 'registry', 'automation']
 description: 'This document outlines a script that modifies registry settings to enable Microsoft 365 products to update on a monthly basis, in line with current channel updates. It also executes a follow-up script to update the relevant dataview in ConnectWise Automate, thereby enhancing the management and auditing of Office versions.'
 tags: ['office365', 'software', 'update']
@@ -35,4 +35,6 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 ## Output
 
 - Script log
+
+
 

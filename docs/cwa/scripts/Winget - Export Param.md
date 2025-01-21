@@ -1,7 +1,7 @@
 ---
 id: 'f9b8a027-e797-49c6-848d-7cb667a16ce0'
-title: 'Export Installed Applications with Winget'
-title_meta: 'Export Installed Applications with Winget - JSON and CSV Formats'
+title: 'Winget - Export Param'
+title_meta: 'Winget - Export Param'
 keywords: ['export', 'applications', 'winget', 'report', 'json', 'csv', 'email']
 description: 'This document provides a detailed overview of a PowerShell script that exports the list of installed applications in JSON and CSV formats using the Winget command. It also includes functionality to email the generated reports to specified addresses, with options to customize the output format and recipients.'
 tags: ['email', 'installation', 'report', 'software', 'windows']
@@ -51,4 +51,6 @@ Path to the reports on the local machine:
 
 - Script logs
 - Email(s) (if enabled)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '212f7065-e0b6-4333-8ac1-557a4cecb502'
-title: 'Patch Report Overview'
-title_meta: 'Patch Report Overview - Comprehensive Patching Information'
+title: 'Patching - Detailed Info'
+title_meta: 'Patching - Detailed Info'
 keywords: ['patching', 'report', 'compliance', 'machine', 'status', 'policy', 'inventory', 'uptime']
 description: 'This document provides a detailed overview of a patch report, showcasing essential information for effective patch management, including patch configuration, status, and compliance metrics for various machines.'
 tags: ['compliance', 'report']
@@ -39,4 +39,6 @@ This dataview is very descriptive and reflects all the relevant information for 
 | Last Patched                  | Displays the last patch date of the machine                                                   |
 | Last Scan                     | Displays the last patch scan date of the machine                                              |
 | Missing Production Patches     | Displays the number of approved but not installed patches that have been in the Production stage for 3 or more days. |
+
+
 

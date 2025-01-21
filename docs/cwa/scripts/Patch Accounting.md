@@ -1,7 +1,7 @@
 ---
 id: '53163c7a-3281-4825-ba22-4e22c8c5b35e'
-title: 'Enhanced Patch Accounting Script'
-title_meta: 'Enhanced Patch Accounting Script for Ticket Management'
+title: 'Patch Accounting'
+title_meta: 'Patch Accounting'
 keywords: ['patch', 'tickets', 'billing', 'time', 'jobs']
 description: 'This document describes an enhanced version of the default Patch Accounting script that creates tickets for successful patch jobs and accurately bills for the time taken. It improves upon the original script by ensuring that the actual time taken by the patch jobs is recorded in the tickets, providing a more precise billing process.'
 tags: []
@@ -31,4 +31,6 @@ This script is called by the default script "Client Scheduled Patch Accounting W
 This script will add the time to the ticket created.
 
 ![Output Image](../../../static/img/Patch-Accounting/image_2.png)
+
+
 

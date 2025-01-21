@@ -1,7 +1,7 @@
 ---
 id: 'b25a430b-13f9-42b7-86da-6cd7f973301f'
-title: 'Designating the Most Active User as Primary Contact in Automate'
-title_meta: 'Designating the Most Active User as Primary Contact in Automate'
+title: 'Associate Most Active Username as Contact Workstations'
+title_meta: 'Associate Most Active Username as Contact Workstations'
 keywords: ['automate', 'user', 'contact', 'email', 'association']
 description: 'This document outlines a script that identifies the most active user on a computer and designates them as the primary contact in ConnectWise Automate. It details the conditions for linking a contact to a computer, implementation steps, and the necessary EDF configurations at client, location, and computer levels.'
 tags: []
@@ -49,4 +49,6 @@ A contact will be linked to the computer if any of the following conditions are 
 | Name                           | Type      | Example | Section | Required | Description                                                                                     |
 |--------------------------------|-----------|---------|---------|----------|-------------------------------------------------------------------------------------------------|
 | Auto Associate Contacts - Exclude | Check-Box | 0/1     | Default | True     | Mark this EDF to exclude the computer from the contact auto association.                       |
+
+
 

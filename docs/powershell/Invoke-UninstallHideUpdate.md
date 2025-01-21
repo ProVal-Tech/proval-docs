@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-uninstallhideupdate
 title: 'Invoke-UninstallHideUpdate'
-title_meta: 'Invoke-UninstallHideUpdate Command'
+title_meta: 'Invoke-UninstallHideUpdate'
 keywords: ['uninstall', 'hide', 'update', 'kbarticles']
 description: 'Documentation for the Invoke-UninstallHideUpdate command to uninstall and hide specified KB articles using the PSWindowsUpdate module.'
 tags: ['update', 'windows']
@@ -34,4 +34,6 @@ Location of output for log, result, and error files.
 .\Invoke-UninstallHideUpdate-log.txt
 .\Invoke-UninstallHideUpdate-error.txt
 ```
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c413c86c-d168-4809-ab13-a1c19df58773'
-title: 'Active Directory Password Testing Script'
-title_meta: 'Active Directory Password Testing Script for Infrastructure Master'
+title: 'AD - Test for Weak Passwords - PowerShell Script'
+title_meta: 'AD - Test for Weak Passwords - PowerShell Script'
 keywords: ['active-directory', 'password', 'testing', 'infrastructure', 'database']
 description: 'This document provides an overview of a PowerShell script designed to run on an Active Directory Infrastructure Master server. The script outputs data in a comma-separated format for database insertion and includes steps for checking directory existence, downloading necessary files, and testing password quality against user accounts.'
 tags: ['active-directory', 'database', 'security', 'setup']
@@ -330,4 +330,6 @@ Write-Host "$ReversibleEncryptionEnabled, $InteractiveLogonMsg, '$FinalStringDup
 | ConnectWise Automate | Attached to Doc - Move wherever is recommended |
 |----------------------|-------------------------------------------------|
 | Kaseya               | Attached to Doc - Move wherever is recommended  |
+
+
 

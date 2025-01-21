@@ -1,7 +1,7 @@
 ---
 id: '1f78325c-968a-4a73-ba85-2a18c061063e'
-title: 'Validate Windows Update Settings'
-title_meta: 'Validate Windows Update Settings'
+title: 'Patch Manager - WUA Settings Validation'
+title_meta: 'Patch Manager - WUA Settings Validation'
 keywords: ['windows', 'update', 'registry', 'patching', 'service']
 description: 'This document describes a script that checks and validates Windows Update settings on Windows 10, 11, and Server 2016, 2019, and 2022. It ensures that the necessary registry keys are set correctly and can restart the Windows Update services if needed. It also provides guidance on using the script as a pre-patching tool.'
 tags: ['update', 'windows']
@@ -48,4 +48,6 @@ If you modify the Active Hours from their default, keep in mind that the **Max**
 ## Output
 
 All output for the PowerShell script results is directed to the Script Log and to the Script State 'PatchSettingCheck'.
+
+
 

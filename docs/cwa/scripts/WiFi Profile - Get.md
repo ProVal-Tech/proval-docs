@@ -1,7 +1,7 @@
 ---
 id: '95ecf8ed-f2ac-46fa-ad7a-05894d0743be'
-title: 'Gather WiFi Profile'
-title_meta: 'Gather WiFi Profile for SSID Management'
+title: 'WiFi Profile - Get'
+title_meta: 'WiFi Profile - Get'
 keywords: ['wifi', 'profile', 'ssid', 'export', 'database']
 description: 'This document outlines a script designed to gather a specific WiFi profile from a target machine based on the SSID. It is intended for use before applying a WiFi profile to ensure the target machine has the necessary configuration. The script saves approximately 5 minutes of time through automation and includes detailed processes for exporting and logging the WiFi profile data.'
 tags: ['database', 'setup']
@@ -40,4 +40,6 @@ It is to be used before the @Apply WiFi Profile script against a machine with th
 
 - Script log
 - Table `plugin_proval_wifi_profiles`
+
+
 

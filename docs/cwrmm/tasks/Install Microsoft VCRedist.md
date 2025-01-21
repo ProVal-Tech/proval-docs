@@ -1,7 +1,7 @@
 ---
 id: 'f352df80-1ff9-4666-9a0e-410d6ef967c1'
-title: 'Install Microsoft Visual C++ Redistributable'
-title_meta: 'Install Microsoft Visual C++ Redistributable'
+title: 'Install Microsoft VCRedist'
+title_meta: 'Install Microsoft VCRedist'
 keywords: ['install', 'microsoft', 'vcredist', 'redistributable', 'script']
 description: 'This document outlines the process for implementing a ConnectWise RMM script to install the Microsoft Visual C++ Redistributable. It includes user parameters, task creation steps, and a sample PowerShell script for execution.'
 tags: ['application', 'setup', 'software', 'windows']
@@ -141,4 +141,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 

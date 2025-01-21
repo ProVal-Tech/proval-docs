@@ -1,7 +1,7 @@
 ---
 id: ps-backupteamtool
 title: 'BackupTeamTool'
-title_meta: 'BackupTeamTool Command'
+title_meta: 'BackupTeamTool'
 keywords: ['speedtest', 'restart', 'download', 'files']
 description: 'Documentation for the BackupTeamTool command to assist the Backup Team with various tasks.'
 tags: []
@@ -52,4 +52,6 @@ Enter the choice of action to perform:
 ## Output
 - `BackupTeamTool-log.txt`
 - `BackupTeamTool-Error.txt`
+
+
 

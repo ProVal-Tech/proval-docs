@@ -1,7 +1,7 @@
 ---
 id: '5b97dae1-f82c-4ae4-9e21-a5c4e3b1480c'
-title: 'OneDrive Sync Status Data View'
-title_meta: 'OneDrive Sync Status Data View'
+title: 'Microsoft OneDrive Sync Status Script'
+title_meta: 'Microsoft OneDrive Sync Status Script'
 keywords: ['onedrive', 'sync', 'status', 'data', 'collection']
 description: 'This document provides an overview of the OneDrive Sync Status data view, detailing the information gathered by the EPM script designed for monitoring OneDrive synchronization across devices. It includes dependencies and a breakdown of the columns presented in the data view.'
 tags: ['windows']
@@ -34,4 +34,6 @@ The data view displays the OneDrive Sync Status gathered by the [EPM - Data Coll
 | Sync Status            | OneDrive Sync Status                                 |
 | One_Drive_Sync_Status  | Detailed Sync Status fetched by the script           |
 | Script_Run_Time        | Data Collection Time                                  |
+
+
 

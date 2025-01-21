@@ -1,7 +1,7 @@
 ---
 id: '47e125c4-26df-4b47-811b-b856f3395290'
-title: 'Get/Remove/Add Wi-Fi Profiles'
-title_meta: 'Get/Remove/Add Wi-Fi Profiles - Manage Wi-Fi Profiles Efficiently'
+title: 'GetRemoveAdd Wifi Profiles'
+title_meta: 'GetRemoveAdd Wifi Profiles'
 keywords: ['wifi', 'profiles', 'management', 'audit', 'removal', 'addition']
 description: 'This document outlines a script designed to manage Wi-Fi profiles on end-user machines, including retrieval, removal, and addition of profiles. It provides detailed instructions on usage, including parameters for adding and removing profiles, as well as important updates and examples.'
 tags: ['networking', 'software', 'windows']
@@ -112,4 +112,6 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
+
+
 

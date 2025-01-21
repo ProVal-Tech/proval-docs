@@ -1,7 +1,7 @@
 ---
 id: '8e25f0d8-8a04-4f5b-853a-282b9f005d9c'
-title: 'Windows Evaluation License (Rearm)'
-title_meta: 'Windows Evaluation License (Rearm)'
+title: 'EPM - Windows Configuration - Component - Windows 11 - Upgrade'
+title_meta: 'EPM - Windows Configuration - Component - Windows 11 - Upgrade'
 keywords: ['windows', 'rearm', 'license', 'evaluation', 'datto', 'component']
 description: 'This document outlines the process for checking whether a machine is an evaluation copy of Windows. It details the steps to export and import the necessary component in Datto RMM, along with the variables for performing a rearm and restarting the endpoint if required.'
 tags: ['datto', 'setup', 'windows']
@@ -33,4 +33,6 @@ The component will prompt for two variables during a job:
 
 - **Rearm:** Specifies whether to perform a rearm if there are available re-arms.  
 - **Restart:** Specifies whether to restart the endpoint after a successful rearm
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-adbitlockerstore
 title: 'Get-ADBitlockerStore'
-title_meta: 'Get-ADBitlockerStore Command'
+title_meta: 'Get-ADBitlockerStore'
 keywords: ['bitlocker', 'ad', 'backup', 'recovery']
 description: 'Documentation for the Get-ADBitlockerStore command to return objects from Active Directory representing backed up Bitlocker key protectors.'
 tags: ['active-directory', 'backup', 'recovery', 'security']
@@ -39,4 +39,6 @@ VolumeGUID              : bf089cd1-fd99-4b77-b4f6-f8f2673aa2ae
 ParentDistinguishedName : \<redacted>
 ParentSID               : S-1-5-21-3684404077-2748133095-2161390432-2690
 ```
+
+
 

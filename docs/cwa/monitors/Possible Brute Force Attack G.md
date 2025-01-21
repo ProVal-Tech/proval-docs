@@ -1,7 +1,7 @@
 ---
 id: 'a520b645-036d-45ce-8ca6-8f3d31ee30cc'
-title: 'Possible Brute Force Attack Detection'
-title_meta: 'Possible Brute Force Attack Detection'
+title: 'Possible Brute Force Attack G'
+title_meta: 'Possible Brute Force Attack G'
 keywords: ['brute', 'force', 'attack', 'eventlog', 'security', 'monitor', 'alert']
 description: 'This document outlines a method to detect possible brute force attacks by checking the event log for failed logon attempts from the Microsoft-Windows-Security-Auditing source. It includes alert templates for ticket creation and implementation steps for monitoring. Ideal for domain controller security management.'
 tags: ['security', 'windows']
@@ -57,4 +57,6 @@ Here is a breakdown of the logon attempts that failed over the past hour:
 ## Dependencies
 
 [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+
+
 

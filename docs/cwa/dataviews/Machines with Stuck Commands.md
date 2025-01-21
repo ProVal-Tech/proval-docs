@@ -1,7 +1,7 @@
 ---
 id: '60b06d7b-2357-4fbd-a13c-92288169adf5'
-title: 'Stuck Command Report for Machines'
-title_meta: 'Stuck Command Report for Machines'
+title: 'Machines with Stuck Commands'
+title_meta: 'Machines with Stuck Commands'
 keywords: ['machines', 'command', 'execution', 'report', 'status']
 description: 'This document provides a detailed report on machines where a specific command has been stuck in the execution state for an extended period, typically exceeding one hour. It includes various columns such as Client ID, Computer ID, Operating System, and more to help identify and troubleshoot issues.'
 tags: ['report', 'windows']
@@ -31,4 +31,6 @@ The dataview displays information about machines where a specific command has be
 | Command Parameter        | Parameter of the Stuck Command       |
 | Date Updated             | Start time of the command            |
 | Stuck Since (Hours)     | Duration the command has been stuck   |
+
+
 

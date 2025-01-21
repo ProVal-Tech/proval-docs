@@ -1,7 +1,7 @@
 ---
 id: '0c299d28-5fcb-4a1e-a341-1c5e78f74cfb'
-title: 'Exclude Site from Winget Update All Task'
-title_meta: 'Exclude Site from Winget Update All Task'
+title: 'Site - WingetUpdateAll_Task_Exclude'
+title_meta: 'Site - WingetUpdateAll_Task_Exclude'
 keywords: ['winget', 'task', 'exclude', 'site', 'windows']
 description: 'This document explains how to mark a custom field to exclude a site from the Winget Update All Task creation, specifically for Windows 10 and 11 computers. It details the implications of marking this field and provides a description of the custom field settings.'
 tags: ['security', 'update', 'windows']
@@ -25,4 +25,6 @@ Marking this custom field will exclude the machines from [CW RMM - Machine Group
 
 ![Screenshot 1](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_2.png)  
+
+
 

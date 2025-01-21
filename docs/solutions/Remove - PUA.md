@@ -1,7 +1,7 @@
 ---
 id: '73ebd85e-aa83-4f0b-a092-41de2b665873'
-title: 'Remove Potentially Unwanted Applications on Windows'
-title_meta: 'Remove Potentially Unwanted Applications on Windows'
+title: 'Remove - PUA'
+title_meta: 'Remove - PUA'
 keywords: ['windows', 'pua', 'software', 'uninstall', 'audit', 'bloatware']
 description: 'This document provides guidance on removing or auditing potentially unwanted applications (PUAs) on Windows systems. It includes associated content, implementation steps, and FAQs related to the process.'
 tags: ['software', 'windows']
@@ -32,4 +32,6 @@ Remove or audit potentially unwanted applications on Windows systems (PUAs).
 1. I don't see the bloatware that I want to get rid of, and my script is erroring, telling me that it could not find the item in any list.
    1. This will happen if the passed bloatware object is not supported in our current script.
    2. You may submit a request to us to add the desired item.
+
+
 

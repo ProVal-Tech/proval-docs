@@ -1,7 +1,7 @@
 ---
 id: '88f2c503-bd4b-4bb5-83d0-72f5fb6a0137'
-title: 'Implementation Steps for DNS Service Monitoring'
-title_meta: 'Implementation Steps for DNS Service Monitoring'
+title: 'DNS Service Monitoring'
+title_meta: 'DNS Service Monitoring'
 keywords: ['dns', 'monitoring', 'sql', 'alert', 'service']
 description: 'This document outlines the implementation steps for setting up DNS service monitoring using SQL queries in a RAWSQL monitor. It includes detailed instructions for executing the necessary SQL commands and verifying the configuration in the ConnectWise Automate platform.'
 tags: ['dns', 'sql']
@@ -88,4 +88,6 @@ unlisted: false
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
    ![Check Remote Monitor](../../../static/img/DNS-Service-Monitoring/image_2.png)
+
+
 

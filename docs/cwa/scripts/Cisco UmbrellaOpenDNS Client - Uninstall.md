@@ -1,7 +1,7 @@
 ---
 id: '98d2c1fc-cac4-41a6-b0e4-29f7eb813197'
-title: 'Remove OpenDNS Umbrella Roaming Client'
-title_meta: 'Remove OpenDNS Umbrella Roaming Client'
+title: 'Cisco UmbrellaOpenDNS Client - Uninstall'
+title_meta: 'Cisco UmbrellaOpenDNS Client - Uninstall'
 keywords: ['opendns', 'umbrella', 'client', 'uninstall', 'ticket']
 description: 'This document provides a detailed overview of a script designed to silently remove the OpenDNS Umbrella Roaming Client. It includes sample run visuals, global parameters, and process steps for effective uninstallation.'
 tags: ['security', 'software', 'uninstallation']
@@ -32,4 +32,6 @@ This script can be used to silently remove the OpenDNS Umbrella Roaming Client.
 
 - Script log
 - Ticket
+
+
 

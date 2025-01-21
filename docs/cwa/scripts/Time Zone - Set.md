@@ -1,7 +1,7 @@
 ---
 id: '89fafb58-91d4-48de-a65d-dafa185bc63b'
-title: 'Set Time Zone Script'
-title_meta: 'Set Time Zone Script'
+title: 'Time Zone - Set'
+title_meta: 'Time Zone - Set'
 keywords: ['time', 'zone', 'script', 'windows', 'configuration']
 description: 'This document outlines a script that sets the time zone on a Windows machine based on user input. It verifies the current time zone, compares it with the desired time zone, and makes the necessary adjustments while ensuring the changes are accepted by the system.'
 tags: ['setup', 'update', 'windows']
@@ -187,4 +187,6 @@ If the time zone is not accepted, the script will exit with an error message.
 - Tonga Standard Time  
 - Samoa Standard Time  
 - Line Islands Standard Time  
+
+
 

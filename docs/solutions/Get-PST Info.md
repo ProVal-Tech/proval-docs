@@ -1,7 +1,7 @@
 ---
 id: '1dc5cc3e-d69c-4aed-a60c-868ca19f1952'
-title: 'Search for PST Files'
-title_meta: 'Search for PST Files - ConnectWise Automate Solution'
+title: 'Get-PST Info'
+title_meta: 'Get-PST Info'
 keywords: ['pst', 'files', 'search', 'custom', 'field']
 description: 'This document outlines a solution designed to search for PST files on a computer and save relevant information into a custom field within ConnectWise Automate. It includes associated content links and implementation instructions.'
 tags: ['report', 'software', 'windows']
@@ -23,4 +23,6 @@ This solution is designed to search for PST files on a computer and save informa
 ## Implementation
 
 Once implemented, the procedure can be run, and the data will be added to the custom field.
+
+
 

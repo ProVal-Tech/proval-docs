@@ -1,7 +1,7 @@
 ---
 id: 'c3342117-53c8-48de-9831-27cd7da77c00'
-title: 'Log4Shell Affected Software MySQL Installation'
-title_meta: 'Log4Shell Affected Software MySQL Installation'
+title: 'Import Log4Shell Table'
+title_meta: 'Import Log4Shell Table'
 keywords: ['log4shell', 'mysql', 'software', 'installation', 'database']
 description: 'This document outlines the installation process for populating a MySQL database with a list of potential Log4Shell affected software. It includes instructions for both on-prem and hosted partners, detailing necessary parameters, dependencies, and expected outputs.'
 tags: ['database', 'installation', 'security', 'software']
@@ -42,4 +42,6 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell
 - Local file on computer
 - Dataview
 - Custom Table
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '2603fc00-ac56-4466-b220-f2484ceef424'
-title: 'Senteon Agent Uninstallation'
-title_meta: 'Senteon Agent Uninstallation'
+title: 'Senteon - Uninstall'
+title_meta: 'Senteon - Uninstall'
 keywords: ['senteon', 'uninstall', 'agent', 'endpoint', 'procedure']
 description: 'This document outlines the steps to uninstall the Senteon Agent from an endpoint using the Remove - Application agent procedure template. It provides details on the implementation process, including exporting and importing the agent procedure within the ProVal VSA environment.'
 tags: ['software', 'uninstallation']
@@ -32,4 +32,6 @@ Proval Plug & Play Procedure: The agent procedure requires no configuration.
 Agent Procedure Log Entry  
 **Success**  
 ![Image](../../../static/img/Senteon---Uninstall/image_3.png)  
+
+
 

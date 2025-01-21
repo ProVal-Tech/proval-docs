@@ -1,7 +1,7 @@
 ---
 id: '8dad86ab-7d59-43ef-b148-f4ab7df0b8f0'
-title: 'SnapAgent Installation Monitor'
-title_meta: 'SnapAgent Installation Monitor'
+title: 'BlackPoint SnapAgent Deployment'
+title_meta: 'BlackPoint SnapAgent Deployment'
 keywords: ['monitor', 'snapagent', 'installation', 'deployment', 'windows']
 description: 'This document outlines a monitor designed to detect online Windows agents where the SnapAgent is not installed. It includes dependencies on specific EDFs for installation confirmation and exclusion criteria, as well as ticketing control through the SnapAgent Installer script.'
 tags: ['deployment', 'ticketing', 'windows']
@@ -33,4 +33,6 @@ Global
 - To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level, as shown below:
 
 ![Ticket Category](../../../static/img/BlackPoint-SnapAgent-Deployment/image_1.png)
+
+
 

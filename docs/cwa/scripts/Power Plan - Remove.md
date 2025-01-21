@@ -1,7 +1,7 @@
 ---
 id: '43d84d2d-f385-4bd4-938a-0989956a8a38'
-title: 'Remove Power Plan Implementation'
-title_meta: 'Remove Power Plan Implementation'
+title: 'Power Plan - Remove'
+title_meta: 'Power Plan - Remove'
 keywords: ['automate', 'epm', 'powerplan', 'configuration', 'script']
 description: 'This document provides an implementation guide for the Remove Power Plan script within ConnectWise Automate. It includes details on file paths, sample runs, dependencies, user parameters, and output logs. Ensure the correct Power Plan name is used for successful execution.'
 tags: ['software', 'windows']
@@ -49,4 +49,6 @@ This is an Automate implementation of the agnostic script [EPM - Windows Configu
 
 - Script Log
 - Dataview
+
+
 

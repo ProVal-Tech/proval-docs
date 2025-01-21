@@ -1,7 +1,7 @@
 ---
 id: '264d107c-e4be-4915-8df1-7be61f8e6f07'
-title: 'Download File from FTP Server'
-title_meta: 'Download File from FTP Server'
+title: 'FTP - Download File'
+title_meta: 'FTP - Download File'
 keywords: ['ftp', 'download', 'file', 'script', 'automation']
 description: 'This document provides a comprehensive overview of a script designed to download files from a specified FTP server. It includes details on user parameters, process flow, and output logging to ensure successful execution and error handling.'
 tags: ['ftp', 'windows']
@@ -44,4 +44,6 @@ This script will download a file from the target FTP server.
 ## Output
 
 - Script log
+
+
 

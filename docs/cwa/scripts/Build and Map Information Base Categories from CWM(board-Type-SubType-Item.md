@@ -1,7 +1,7 @@
 ---
 id: 'ff2075a4-f6a2-4ac1-b548-286276aa35d8'
-title: 'Create Information Base Categories for Manage Boards'
-title_meta: 'Create Information Base Categories for Manage Boards'
+title: 'Build and Map Information Base Categories from CWM(board-Type-SubType-Item'
+title_meta: 'Build and Map Information Base Categories from CWM(board-Type-SubType-Item'
 keywords: ['categories', 'manage', 'ticket', 'database', 'insert', 'cw', 'service', 'plugin']
 description: 'This document outlines a script that automates the creation of information base categories for every imported manage board, saving approximately 60 minutes of manual work. It details the process, user parameters, and dependencies required for successful execution.'
 tags: ['database', 'setup']
@@ -40,4 +40,6 @@ The script executes several SQL queries.
 ## Output
 
 There is no script output. Please reload the cache and view the info base categories in the system dashboard. Review the CW Manage plugin Ticket category area.
+
+
 

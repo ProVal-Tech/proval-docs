@@ -1,7 +1,7 @@
 ---
 id: '1b9044f2-b871-42c4-8f3f-8a4710299018'
-title: 'Audit Click-to-Run Version of Microsoft 365'
-title_meta: 'Audit Click-to-Run Version of Microsoft 365'
+title: 'Microsoft 365 - Click-to-Run - Audit'
+title_meta: 'Microsoft 365 - Click-to-Run - Audit'
 keywords: ['microsoft', 'click-to-run', 'audit', 'office', 'version', 'update', 'channel', 'auto-update']
 description: 'This document provides a comprehensive guide for auditing the Click-to-Run version of Microsoft 365, including the creation of custom fields, device groups, and scheduled tasks to gather essential information about the installed Office version and its update settings.'
 tags: ['report', 'software', 'update', 'windows']
@@ -37,4 +37,6 @@ The solution aims to audit the basic information of the installed Click-to-Run v
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390)
+
+
 

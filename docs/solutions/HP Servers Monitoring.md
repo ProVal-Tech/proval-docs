@@ -1,7 +1,7 @@
 ---
 id: '4cb2968c-ade3-48d6-ad2a-96d04735095b'
-title: 'Monitoring HP Hardware Alerts'
-title_meta: 'Monitoring HP Hardware Alerts'
+title: 'HP Servers Monitoring'
+title_meta: 'HP Servers Monitoring'
 keywords: ['hp', 'hardware', 'alerts', 'monitoring', 'hpeilo', 'insight', 'management', 'agents']
 description: 'This document outlines the purpose and implementation of a solution to monitor hardware alerts generated on HP servers using HPEiLO and HPE Insight Management Agents. It includes associated content, implementation steps, and a deprecation process for managing these monitors and alerts effectively.'
 tags: ['setup']
@@ -60,4 +60,6 @@ The purpose of this solution is to monitor the hardware alerts generated on HP s
       DELETE FROM groupagents WHERE `Name` = 'ProVal - Production - HP Hardware Monitoring';
       DELETE FROM agents WHERE `Name` = 'ProVal - Production - HP Hardware Monitoring' AND computerid > 0;
       ```
+
+
 

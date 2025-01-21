@@ -1,7 +1,7 @@
 ---
 id: ps-add-wifiprofile
 title: 'Add-WifiProfile'
-title_meta: 'Add-WifiProfile Command'
+title_meta: 'Add-WifiProfile'
 keywords: ['networking', 'wireless', 'setup', 'configuration']
 description: 'Documentation for the Add-WifiProfile command to configure WiFi profiles.'
 tags: ['networking', 'setup', 'wireless']
@@ -37,4 +37,6 @@ Create a new WiFi profile named 'MyWiFi' with the password 'MyPassword', using t
 ## Output
 - .\Add-WifiProfile-log.txt
 - .\Add-WifiProfile-error.txt
+
+
 

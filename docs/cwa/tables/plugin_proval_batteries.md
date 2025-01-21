@@ -1,7 +1,7 @@
 ---
 id: '5507c4d8-9cfc-4d67-9c84-7cbad5a37de1'
-title: 'Battery Information Storage for Targets'
-title_meta: 'Battery Information Storage for Targets'
+title: 'plugin_proval_batteries'
+title_meta: 'plugin_proval_batteries'
 keywords: ['battery', 'information', 'storage', 'report', 'health']
 description: 'This document outlines the purpose, dependencies, and structure of the Battery Information Storage for each target machine in ConnectWise Automate. It details the necessary table and its columns for storing battery-related data, including health state, capacity, and manufacturer information.'
 tags: ['database', 'report', 'software']
@@ -37,4 +37,6 @@ Stores battery information for each target.
 | RelativeCapacity          | VarChar   | The battery relative capacity.                       |
 | SerialNumber              | VarChar   | The battery serial number.                          |
 | LastScanTime              | DateTime  | The last scan time for the report.                 |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '775e0b37-b55c-47fb-bec6-a01314ac123f'
-title: 'DUO Authentication Proxy Update Script'
-title_meta: 'DUO Authentication Proxy Update Script'
+title: 'DUO Auth Proxy - InstallUpdate Latest Version Global, Autofix'
+title_meta: 'DUO Auth Proxy - InstallUpdate Latest Version Global, Autofix'
 keywords: ['duo', 'authentication', 'proxy', 'update', 'script']
 description: 'This document provides a detailed overview of a script designed to install or update the DUO Authentication Proxy application to the latest version. The script can be executed manually or as part of an Autofix from the specified monitor set in ConnectWise Automate. It includes sample runs, dependencies, variables, and ticketing information for handling update failures.'
 tags: ['software', 'ticketing', 'update']
@@ -62,4 +62,6 @@ The script to update DUO Security Authentication Proxy has failed - please revie
 Script Logs -
 %PowerShellResult%
 ```
+
+
 

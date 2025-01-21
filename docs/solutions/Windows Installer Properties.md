@@ -1,7 +1,7 @@
 ---
 id: '9342283f-7ca1-4df1-85cd-3c3563e7b67e'
-title: 'Windows Installer Properties Overview'
-title_meta: 'Windows Installer Properties Overview'
+title: 'Windows Installer Properties'
+title_meta: 'Windows Installer Properties'
 keywords: ['applications', 'software', 'dataview', 'properties', 'installation']
 description: 'This document provides a comprehensive overview of a solution designed to display information about applications installed on a machine, including their name, version number, and installation date. It describes the functionality of the script that gathers this information, how it is stored in a custom SQL table, and how users can access it through a dataview for effective management and monitoring of installed software.'
 tags: ['database', 'report', 'setup', 'software', 'windows']
@@ -36,4 +36,6 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 - Debug the script against an online Windows machine to create the table.
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-remove-pua
 title: 'Remove-PUA'
-title_meta: 'Remove-PUA Command'
+title_meta: 'Remove-PUA'
 keywords: ['remove', 'bloatware', 'cleanup', 'software']
 description: 'Documentation for the Remove-PUA command to remove potentially unwanted applications (PUA) from computers.'
 tags: ['software', 'uninstallation']
@@ -77,4 +77,6 @@ I intend to remove all Microsoft-based bloatware except MSPaint and Windows Came
 ## Output
 - `.\Remove-PUA-log.txt`
 - `.\Remove-PUA-error.txt`
+
+
 

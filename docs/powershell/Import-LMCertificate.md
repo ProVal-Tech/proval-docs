@@ -1,7 +1,7 @@
 ---
 id: ps-import-lmcertificate
 title: 'Import-LMCertificate'
-title_meta: 'Import-LMCertificate Command'
+title_meta: 'Import-LMCertificate'
 keywords: ['import', 'certificate', 'localmachine', 'security']
 description: 'Documentation for the Import-LMCertificate command to import a certificate to one or more local machine stores.'
 tags: ['security', 'windows']
@@ -56,4 +56,6 @@ System.Security.Cryptography.X509Certificates.X509Certificate2
 ## Log Files
 - .\Import-LMCertificate-log.txt
 - .\Import-LMCertificate-error.txt
+
+
 

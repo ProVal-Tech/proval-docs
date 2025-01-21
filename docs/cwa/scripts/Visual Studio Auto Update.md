@@ -1,7 +1,7 @@
 ---
 id: '611414aa-ae0b-46f3-92e4-4a99a42e6719'
-title: 'Visual Studio Auto Updates Script'
-title_meta: 'Visual Studio Auto Updates Script'
+title: 'Visual Studio Auto Update'
+title_meta: 'Visual Studio Auto Update'
 keywords: ['visualstudio', 'updates', 'script', 'automation', 'enterprise', 'community']
 description: 'This document details a script designed to perform auto updates for various versions of Visual Studio, including 2017, 2019, and 2022 editions. It outlines compatible applications, dependencies, variables used within the script, and provides a sample run for reference.'
 tags: ['installation', 'logging', 'windows']
@@ -43,4 +43,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

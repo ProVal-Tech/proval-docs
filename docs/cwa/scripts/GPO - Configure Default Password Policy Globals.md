@@ -1,7 +1,7 @@
 ---
 id: '80f78f9e-cc1c-4547-9c54-59b0fce02fe3'
-title: 'Modify Default Password Policy for Domain'
-title_meta: 'Modify Default Password Policy for Domain'
+title: 'GPO - Configure Default Password Policy Globals'
+title_meta: 'GPO - Configure Default Password Policy Globals'
 keywords: ['password', 'policy', 'domain', 'security', 'configuration']
 description: 'This document provides a PowerShell script that modifies the properties of the default password policy for a domain. It includes parameters for lockout duration, threshold, observation window, password complexity, encryption, and age settings. The script aims to enhance security by enforcing stricter password policies and is designed to save time by automating the process.'
 tags: ['security', 'update', 'windows']
@@ -41,4 +41,6 @@ The script modifies the properties of the default password policy for a domain. 
 ## Output
 
 - Script log
+
+
 

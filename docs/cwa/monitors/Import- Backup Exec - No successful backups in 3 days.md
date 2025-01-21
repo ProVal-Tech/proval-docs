@@ -1,7 +1,7 @@
 ---
 id: '1b34e236-7235-4dc1-b4d2-fdd120e75f47'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Import- Backup Exec - No successful backups in 3 days'
+title_meta: 'Import- Backup Exec - No successful backups in 3 days'
 keywords: ['remote', 'monitor', 'backup', 'query', 'groupid']
 description: 'This document outlines the steps needed to apply a remote monitor for backup alerts in ConnectWise Automate. It includes obtaining group IDs, constructing SQL queries, and executing them to set up monitoring effectively.'
 tags: ['backup', 'database']
@@ -199,4 +199,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

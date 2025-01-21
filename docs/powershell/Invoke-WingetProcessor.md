@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-wingetprocessor
 title: 'Invoke-WingetProcessor'
-title_meta: 'Invoke-WingetProcessor Command'
+title_meta: 'Invoke-WingetProcessor'
 keywords: ['winget', 'package', 'install', 'update']
 description: 'Documentation for the Invoke-WingetProcessor command to manage software packages using Winget in PowerShell.'
 tags: ['installation', 'software', 'update']
@@ -58,4 +58,6 @@ Location of output for log, result, and error files.
 .\Invoke-WingetProcessor-log.txt
 .\Invoke-WingetProcessor-error.txt
 ```
+
+
 

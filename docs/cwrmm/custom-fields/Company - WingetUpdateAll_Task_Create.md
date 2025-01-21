@@ -1,7 +1,7 @@
 ---
 id: '40e64c1d-ca29-4c85-9a72-a48b1082b8e1'
-title: 'Winget Update All Tasks for Windows 10 and 11'
-title_meta: 'Winget Update All Tasks for Windows 10 and 11'
+title: 'Company - WingetUpdateAll_Task_Create'
+title_meta: 'Company - WingetUpdateAll_Task_Create'
 keywords: ['winget', 'update', 'tasks', 'windows', 'custom', 'field']
 description: 'This document explains how to mark a custom field to create Winget Update All tasks for Windows 10 and 11 computers within the company. It details the necessary configuration to automatically add machines to the designated machine group and the requirements for running scheduled tasks.'
 tags: ['windows']
@@ -27,4 +27,6 @@ This custom field must be marked at the company level to run the [CW RMM - Task 
 
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Create/image_1.png)
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Create/image_2.png)
+
+
 

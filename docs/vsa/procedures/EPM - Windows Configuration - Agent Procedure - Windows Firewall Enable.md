@@ -1,7 +1,7 @@
 ---
 id: '1d629150-fa76-46b9-ade9-875dcc74d5ab'
-title: 'Enable Windows Firewall on Endpoint'
-title_meta: 'Enable Windows Firewall on Endpoint'
+title: 'EPM - Windows Configuration - Agent Procedure - Windows Firewall Enable'
+title_meta: 'EPM - Windows Configuration - Agent Procedure - Windows Firewall Enable'
 keywords: ['windows', 'firewall', 'enable', 'endpoint', 'procedure']
 description: 'This document provides a detailed procedure for enabling Windows Firewall on an endpoint, including example logs and steps taken during the process. It ensures that the firewall is activated and logs the actions for review.'
 tags: ['firewall', 'security', 'setup', 'windows']
@@ -87,4 +87,6 @@ The agent procedure checks whether the machine has the firewall enabled. If not,
 ## Output
 
 Procedure Logs
+
+
 

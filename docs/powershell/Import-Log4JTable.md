@@ -1,7 +1,7 @@
 ---
 id: ps-import-log4jtable
 title: 'Import-Log4JTable'
-title_meta: 'Import-Log4JTable Command'
+title_meta: 'Import-Log4JTable'
 keywords: ['import', 'log4j', 'mysql', 'database']
 description: 'Documentation for the Import-Log4JTable command to install and populate a MySQL table with a list of potential Log4Shell affected software.'
 tags: ['setup', 'software']
@@ -48,4 +48,6 @@ $cred = New-Object System.Management.Automation.PSCredential("MyUsername", (Conv
 - `.\Import-Log4JTable-data.txt`
 - `.\Import-Log4JTable-error.txt`
 - `.\log4jquery.sql`
+
+
 

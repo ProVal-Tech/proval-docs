@@ -1,7 +1,7 @@
 ---
 id: '964767a7-3de0-4dd4-aa7c-21bf7f6ad926'
-title: 'Install Dell Command Configure'
-title_meta: 'Install Dell Command Configure Script'
+title: 'Dell Command Configure - Installation'
+title_meta: 'Dell Command Configure - Installation'
 keywords: ['dell', 'configure', 'installation', 'script', 'automation']
 description: 'This document details a script that installs Dell Command Configure version 3 or 4 based on the system specifications. The script saves approximately 10 minutes of manual installation time by automatically determining the appropriate version and executing the installation process, including verification and cleanup tasks.'
 tags: ['installation', 'networking', 'software', 'windows']
@@ -34,4 +34,6 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 ## Output
 
 **Script Log:** Success or Failure
+
+
 

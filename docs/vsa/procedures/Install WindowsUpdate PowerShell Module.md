@@ -1,7 +1,7 @@
 ---
 id: 'f2feefc8-66ef-4c25-810c-647e84249e3d'
-title: 'Windows Update PowerShell Module Installation'
-title_meta: 'Windows Update PowerShell Module Installation'
+title: 'Install WindowsUpdate PowerShell Module'
+title_meta: 'Install WindowsUpdate PowerShell Module'
 keywords: ['windows', 'update', 'powershell', 'module', 'install']
 description: 'This document provides a detailed procedure for installing the Windows Update PowerShell module, including example logs of the agent procedure execution and dependencies required for successful installation.'
 tags: ['installation', 'software', 'update', 'windows']
@@ -76,5 +76,7 @@ PowerShell: 5.1.0
 ## Output
 
 Agent Procedure Logs
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: '90969a29-db33-4332-babb-c2f5be128a3e'
-title: 'Set DNS Server Scavenging Settings'
-title_meta: 'Set DNS Server Scavenging Settings - Efficient DNS Management'
+title: 'AD - Set DNS Aging and Scavenging'
+title_meta: 'AD - Set DNS Aging and Scavenging'
 keywords: ['dns', 'scavenging', 'windows', 'server', 'cmdlets', 'management']
 description: 'This document covers the process of enabling DNS scavenging on a Windows DNS server, including setting intervals for scavenging, no refresh, and refresh options. It outlines the necessary dependencies, user parameters, and provides a sample run of the script for better understanding.'
 tags: ['dns', 'performance', 'setup', 'windows']
@@ -47,4 +47,6 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 
 - Script log
 - Local file on the computer
+
+
 

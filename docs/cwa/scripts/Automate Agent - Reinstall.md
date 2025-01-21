@@ -1,7 +1,7 @@
 ---
 id: '567b8db7-a87a-45c1-a81a-b3178090fb52'
-title: 'Full Uninstall and Reinstall of CWA Agent'
-title_meta: 'Full Uninstall and Reinstall of CWA Agent'
+title: 'Automate Agent - Reinstall'
+title_meta: 'Automate Agent - Reinstall'
 keywords: ['uninstall', 'reinstall', 'cwa', 'agent', 'connectwise']
 description: 'This document provides a comprehensive guide on using a script to perform a full uninstall and reinstall of the CWA Agent on target machines through the ConnectWise Control RMM+ add-in, including dependencies and system properties required for execution.'
 tags: ['connectwise', 'windows']
@@ -41,4 +41,6 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 ## Output
 
 - Script log messages only.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '11d49195-0e8a-41a9-b08d-a7c41f1e5357'
-title: 'Set Google Chrome Homepage'
-title_meta: 'Set Google Chrome Homepage - Registry Policy Script'
+title: 'Google Chrome - Set Homepage'
+title_meta: 'Google Chrome - Set Homepage'
 keywords: ['chrome', 'homepage', 'registry', 'policy', 'enforce']
 description: 'This document explains a script that sets the homepage in Google Chrome by modifying the registry policy. It outlines the parameters, dependencies, and process involved in enforcing a specific URL as the homepage, along with optional switches for additional enforcement at startup and on new tabs.'
 tags: ['chrome', 'registry', 'setup', 'windows']
@@ -46,4 +46,6 @@ The script takes a string parameter to define the URL to set the homepage. The a
 
 - Script log
 - Local file on computer
+
+
 

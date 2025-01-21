@@ -1,7 +1,7 @@
 ---
 id: 'cefde8db-a69d-4d25-a5b2-dda08f468fb4'
-title: 'Microsoft Outlook OST/PST Audit'
-title_meta: 'Microsoft Outlook OST/PST Audit'
+title: 'Microsoft Outlook - OSTPST Audit'
+title_meta: 'Microsoft Outlook - OSTPST Audit'
 keywords: ['microsoft', 'outlook', 'ost', 'pst', 'audit', 'dataview', 'monitor']
 description: 'This document outlines a solution for retrieving file path and size details of OST and PST files from Windows Workstations, and displaying this data in an Automate dataview. It helps identify unusually large OST or PST files, enhancing data management and monitoring capabilities.'
 tags: ['windows']
@@ -45,4 +45,6 @@ This solution is designed to retrieve the file path and size details of OST and 
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
+
+
 

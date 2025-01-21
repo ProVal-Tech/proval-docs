@@ -1,7 +1,7 @@
 ---
 id: '4afe3dcb-4326-4833-a87a-77a14a882c81'
-title: 'Dataview Audit Snapshots for Virtual Machines on ESXi'
-title_meta: 'Dataview Audit Snapshots for Virtual Machines on ESXi'
+title: 'ESXi Snapshots'
+title_meta: 'ESXi Snapshots'
 keywords: ['dataview', 'audit', 'virtual', 'machines', 'esxi', 'snapshot']
 description: 'This document provides a comprehensive overview of the dataview audit snapshots for virtual machines hosted on the ESXi platform, detailing the relevant columns and their descriptions for effective management and monitoring.'
 tags: ['performance', 'report', 'virtualization', 'windows']
@@ -47,4 +47,6 @@ This document covers the dataview audit snapshots for virtual machines hosted on
 | Estimated Disk Max Usage        | Displays the maximum disk usage by the snapshot        |
 | Snapshot Description             | Displays the description of the snapshot               |
 | Is Current Snapshot             | Displays whether the snapshot is current or not        |
+
+
 

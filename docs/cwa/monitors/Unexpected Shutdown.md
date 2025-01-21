@@ -1,7 +1,7 @@
 ---
 id: '80e10bf1-9e98-427a-a5bf-dd8ffb208ce8'
-title: 'Unexpected Shutdown Monitor for Windows Machines'
-title_meta: 'Unexpected Shutdown Monitor for Windows Machines'
+title: 'Unexpected Shutdown'
+title_meta: 'Unexpected Shutdown'
 keywords: ['shutdown', 'monitor', 'windows', 'power', 'event']
 description: 'This document outlines a monitor set designed to detect unexpected shutdowns on Windows machines running PowerShell v5 or higher. It provides detailed insights into the shutdown events, including potential causes and ticketing information for alerts.'
 tags: ['performance', 'ticketing', 'windows']
@@ -142,4 +142,6 @@ The user pressed the power button.
 ## Implementation
 
 [Import - Remote Monitor - Unexpected Shutdown](<./Unexpected Shutdown.md>)
+
+
 

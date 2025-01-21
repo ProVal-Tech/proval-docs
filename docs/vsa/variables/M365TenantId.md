@@ -1,7 +1,7 @@
 ---
 id: 'b3141fc4-14f1-41a7-ba67-61b3a4e29fd5'
-title: 'M365 Tenant ID Management'
-title_meta: 'M365 Tenant ID Management for OneDrive Group Policies'
+title: 'M365TenantId'
+title_meta: 'M365TenantId'
 keywords: ['m365', 'tenant', 'id', 'onedrive', 'group', 'policies']
 description: 'This document explains the managed variable used to store the partner Microsoft M365 tenant ID, which is essential for configuring various OneDrive group policies. It provides guidance on how partners can obtain their tenant ID and outlines the associated managed variable details.'
 tags: ['security', 'software', 'windows']
@@ -24,4 +24,6 @@ The value for this must be provided by the partner. The partner can get their M3
 | Managed Variable Name | Managed Variable Type | Description |
 |-----------------------|-----------------------|-------------|
 | M365TenantId          | Public                | Used by the agent procedure to specify the partner's M365 Tenant ID. The tenant ID is required for several of the group policies. |
+
+
 

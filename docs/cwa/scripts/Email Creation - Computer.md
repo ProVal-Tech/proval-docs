@@ -1,7 +1,7 @@
 ---
 id: 'f63c0791-3057-4e90-888e-ae6f2ada558a'
-title: 'Email Notification Script for Monitors'
-title_meta: 'Email Notification Script for Monitors'
+title: 'Email Creation - Computer'
+title_meta: 'Email Creation - Computer'
 keywords: ['email', 'monitor', 'alerts', 'notification', 'sql']
 description: 'This document outlines an email notification script designed for use with monitoring templates. It details how the script sends emails based on specific alert templates and includes important notes on compatibility with different monitor types. The document also provides a comprehensive overview of the variables and global parameters utilized in the script.'
 tags: ['email', 'sql']
@@ -59,4 +59,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
+
+
 

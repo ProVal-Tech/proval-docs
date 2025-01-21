@@ -1,7 +1,7 @@
 ---
 id: '6b52f66a-4b64-4d36-9f9f-74379510cf68'
-title: 'Creating a Group for Windows 10 Incompatible Machines'
-title_meta: 'Creating a Group for Windows 10 Incompatible Machines'
+title: 'Windows 11 incompatible machines'
+title_meta: 'Windows 11 incompatible machines'
 keywords: ['windows', 'group', 'incompatible', 'machines', 'custom', 'criteria']
 description: 'This document provides a step-by-step guide on how to create a dynamic group in ConnectWise RMM for Windows 10 computers that are not compatible with Windows 11. It includes instructions on setting up custom fields and criteria to accurately identify incompatible machines.'
 tags: ['setup', 'windows']
@@ -93,4 +93,6 @@ Click the `Save` button to save/create the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_15.png)  
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_16.png)
+
+
 

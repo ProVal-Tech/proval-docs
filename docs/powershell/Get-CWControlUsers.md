@@ -1,7 +1,7 @@
 ---
 id: ps-get-cwcontrolusers
 title: 'Get-CWControlUsers'
-title_meta: 'Get-CWControlUsers Command'
+title_meta: 'Get-CWControlUsers'
 keywords: ['connectwise', 'control', 'users', 'properties']
 description: 'Documentation for the Get-CWControlUsers command to return a list of users and their respective properties on the ConnectWise Control server.'
 tags: ['report', 'software']
@@ -49,4 +49,6 @@ This command returns all users and their respective properties for the ConnectWi
 - System Object
 - `.\Get-CWControlUsers-Log.txt`
 - `.\Get-CWControlUsers.txt`
+
+
 

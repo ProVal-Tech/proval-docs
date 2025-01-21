@@ -1,7 +1,7 @@
 ---
 id: '36f1569a-d2a1-4638-a304-3b267d9308d9'
-title: 'CrystalDiskInfo Data Gathering'
-title_meta: 'CrystalDiskInfo Data Gathering - Overview and Implementation'
+title: 'Crystal Disk - Drive Info'
+title_meta: 'Crystal Disk - Drive Info'
 keywords: ['crystaldiskinfo', 'data', 'gathering', 'disk', 'information', 'custom', 'field']
 description: 'This document provides an overview of how to gather disk information using the CrystalDiskInfo application within the Kaseya VSA environment. It outlines the requirements, implementation steps, and parameters for executing the process effectively.'
 tags: ['disk', 'installation', 'performance', 'setup', 'windows']
@@ -61,4 +61,6 @@ Location of output for log, result, and error files.
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-log.txt
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-error.txt
 ```
+
+
 

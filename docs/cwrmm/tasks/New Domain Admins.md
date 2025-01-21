@@ -1,7 +1,7 @@
 ---
 id: 'a96db8f9-87fc-4e02-a1b3-2ed60913fc82'
-title: 'New Domain Admins Task Implementation'
-title_meta: 'New Domain Admins Task Implementation'
+title: 'New Domain Admins'
+title_meta: 'New Domain Admins'
 keywords: ['domain', 'admin', 'task', 'monitoring', 'auditing']
 description: 'This document outlines the implementation of a PowerShell script for retrieving information about newly created domain administrators and users added to administrative groups on domain controllers. It includes scheduling instructions, dependencies, and a detailed step-by-step guide for setting up the task effectively.'
 tags: ['active-directory', 'report', 'security', 'windows']
@@ -302,4 +302,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Ticket**  
 ![Ticket Output](../../../static/img/New-Domain-Admins/image_66.png)  
+
+
 

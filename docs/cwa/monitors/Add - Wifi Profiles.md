@@ -1,7 +1,7 @@
 ---
 id: '51eaeefd-b300-4f9a-be28-fa01e6e83b5e'
-title: 'Monitor Set for Wi-Fi Profiles Management'
-title_meta: 'Monitor Set for Wi-Fi Profiles Management'
+title: 'Add - Wifi Profiles'
+title_meta: 'Add - Wifi Profiles'
 keywords: ['monitoring', 'wifi', 'profiles', 'automation', 'management']
 description: 'This document outlines the purpose and functionality of a monitor set designed to identify computers lacking specified Wi-Fi profiles. It details how the monitor set interacts with the relevant dataview and triggers scripts to ensure proper Wi-Fi configuration on managed Windows workstations.'
 tags: ['networking', 'software', 'windows']
@@ -30,4 +30,6 @@ Managed Windows Workstations
 **Name:** `△ CUSTOM - Execute Script - Get - Wifi Profiles`
 
 **Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script.
+
+
 

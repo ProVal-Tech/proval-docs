@@ -1,7 +1,7 @@
 ---
 id: 'ef826863-c354-4a97-9ba8-8ad2a3c65e40'
-title: 'Custom RAWSQL Monitor for Shadow Copy Audit'
-title_meta: 'Custom RAWSQL Monitor for Shadow Copy Audit'
+title: 'Execute Script - Shadow Copy - Audit Complete Statistics'
+title_meta: 'Execute Script - Shadow Copy - Audit Complete Statistics'
 keywords: ['monitor', 'shadow', 'copy', 'audit', 'statistics', 'custom', 'rawsql', 'windows']
 description: 'This document outlines a custom RAWSQL monitor designed to detect machines where the Shadow Copy Audit Complete Statistics script did not run in the last 7 days. The monitor is configured to trigger alerts for a maximum of 50 agents at a time within an hour, ensuring efficient monitoring and management of shadow copy operations.'
 tags: ['windows']
@@ -20,4 +20,6 @@ This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Au
 ## Target
 
 Windows Group
+
+
 

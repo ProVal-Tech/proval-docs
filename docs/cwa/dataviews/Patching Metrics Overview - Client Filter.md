@@ -1,7 +1,7 @@
 ---
 id: 'e8b825c2-919d-4b92-a94a-8d9e01d48428'
-title: 'Patching Metrics Overview for Windows Computers'
-title_meta: 'Patching Metrics Overview for Windows Computers'
+title: 'Patching Metrics Overview - Client Filter'
+title_meta: 'Patching Metrics Overview - Client Filter'
 keywords: ['patching', 'windows', 'clients', 'approval', 'metrics']
 description: 'This document provides an overview of patching-related statistics for patch-managed Windows computers across various clients, categorized by the approval age of patches. It includes detailed metrics such as total approved and missing patches for both servers and workstations, helping to assess the patching status and compliance within the environment.'
 tags: ['patching', 'windows']
@@ -43,4 +43,6 @@ The SQL query filters the results for the patch-managed computers only. Removing
 | Patching Policy            | Patching Policy (Managed | Unmanaged). By default, the dataview will display data for the patch-managed computers only.                                     |
 | Client ID                  | Client ID (Hidden)                                                                                                                                     |
 | Sort                       | A custom column to sort the dataview in proper order (Hidden)                                                                                         |
+
+
 

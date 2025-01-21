@@ -1,7 +1,7 @@
 ---
 id: '9f991e6a-9560-46ee-a9cc-29e401f000e0'
-title: 'HP iLO Health Check Monitor'
-title_meta: 'HP iLO Health Check Monitor'
+title: 'HP iLO Health Report Check'
+title_meta: 'HP iLO Health Report Check'
 keywords: ['ilo', 'health', 'monitor', 'ticket', 'alert']
 description: 'This document details the setup and functionality of the HP iLO Health Check Monitor, which tracks bad health conditions reported by the HP iLO Health Report script and creates tickets based on these alerts. It includes dependencies, alert templates, and ticketing procedures to ensure effective monitoring and response.'
 tags: ['ticketing']
@@ -56,4 +56,6 @@ See details in the iLO and the iLO Health Report dataview.
 ```
 
 **Note:** The ticket will be generated for the computer whose computer ID is stored in the title of the password entry for the iLO device. If the computer ID is not stored in the iLO password entry, then a client-level ticket will be created instead.
+
+
 

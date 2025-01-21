@@ -1,7 +1,7 @@
 ---
 id: 'cd3368d8-d0b0-4ca4-972e-4adc8c1cfcfa'
-title: 'DNS Data Storage for Target Machines'
-title_meta: 'DNS Data Storage for Target Machines'
+title: 'plugin_proval_dns_extradata'
+title_meta: 'plugin_proval_dns_extradata'
 keywords: ['dns', 'data', 'storage', 'computer', 'interface', 'settings', 'table']
 description: 'This document outlines the structure and purpose of the DNS data storage table for target machines, detailing the columns, their types, and the SQL command to create the table. It provides insights into how DNS settings are recorded and managed for networked computers.'
 tags: ['database', 'networking']
@@ -42,4 +42,6 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
+
+
 

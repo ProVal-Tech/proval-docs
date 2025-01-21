@@ -1,7 +1,7 @@
 ---
 id: '0abb04f1-450d-4185-9ecd-f27a842cf658'
-title: 'HP iLO Credential Missing Detection'
-title_meta: 'HP iLO Credential Missing Detection'
+title: 'HP iLO - Potentially Missing Credential'
+title_meta: 'HP iLO - Potentially Missing Credential'
 keywords: ['ilo', 'hp', 'credential', 'detection', 'ticket', 'monitoring']
 description: 'This document provides an overview of the dataview that presents information about iLO-enabled HP Servers where the password entry for the iLO Automation Password is not stored in the client-level password tab. It assists in identifying clients and servers for which the HP iLO Credential Missing Detection script will generate a ticket, along with instructions on how to exclude certain computers from monitoring.'
 tags: ['report', 'security']
@@ -32,4 +32,6 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 | Operating System   | Operating System                 |
 | Manufacturer      | Manufacturer                     |
 | Last Contact      | Last Contact with RMM           |
+
+
 

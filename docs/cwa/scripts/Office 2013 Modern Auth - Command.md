@@ -1,7 +1,7 @@
 ---
 id: 'b6a6f79c-ee8a-43f8-8965-98b1ce40a9a0'
-title: 'Enable or Disable Modern Authentication for Office 2013'
-title_meta: 'Enable or Disable Modern Authentication for Office 2013'
+title: 'Office 2013 Modern Auth - Command'
+title_meta: 'Office 2013 Modern Auth - Command'
 keywords: ['modern', 'authentication', 'office', '2013', 'enable', 'disable']
 description: 'This document provides a script to enable or disable Modern authentication for Office 2013 based on user input. It outlines the process, variables, and expected output, ensuring users can manage authentication settings effectively.'
 tags: ['office365', 'security', 'windows']
@@ -44,4 +44,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '863ba816-8f4f-47e1-aa66-420b428b7188'
-title: 'Internet Speed Audit Monitor'
-title_meta: 'Internet Speed Audit Monitor'
+title: 'Execute Script - Internet Speed Test'
+title_meta: 'Execute Script - Internet Speed Test'
 keywords: ['monitor', 'internet', 'speed', 'audit', 'windows']
 description: 'This document provides details about an internal monitor that detects Windows agents where the Internet Speed Audit script has not been run in the last 10 days. It outlines important considerations, dependencies, and target groups for implementation.'
 tags: ['networking', 'windows']
@@ -26,4 +26,6 @@ This internal monitor detects Windows agents where the script [EPM - Network - S
 ## Target
 
 This monitor can be enabled for all service plan groups, servers only, infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is designed exclusively for Windows.
+
+
 

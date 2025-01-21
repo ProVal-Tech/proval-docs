@@ -1,7 +1,7 @@
 ---
 id: '11b30dcb-74c1-4736-a495-5908ce17117a'
-title: 'Install NetworkGlue Collector'
-title_meta: 'Install NetworkGlue Collector for Client-Specific Token'
+title: 'Network Glue Collector - Install'
+title_meta: 'Network Glue Collector - Install'
 keywords: ['network', 'glue', 'collector', 'installation', 'client', 'activation', 'deployment']
 description: 'This document provides detailed instructions for installing the NetworkGlue Collector, including requirements for the client-specific activation key and the necessary URL for the installer. It outlines user and global parameters, the process for installation, and ticketing information for failed installations.'
 tags: ['deployment', 'installation', 'software', 'ticketing']
@@ -60,4 +60,6 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 - **Body:**  
   Network Glue Collector installation failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
   @ErrorLog@.
+
+
 

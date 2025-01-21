@@ -1,7 +1,7 @@
 ---
 id: '938cd822-f6a3-4ee3-add2-62b407e45622'
-title: 'Windows Operating Systems Support End Dates'
-title_meta: 'Windows Operating Systems Support End Dates'
+title: 'plugin_proval_windows_os_support'
+title_meta: 'plugin_proval_windows_os_support'
 keywords: ['windows', 'support', 'end', 'dates', 'build', 'version']
 description: 'This document provides a detailed table of Windows operating systems, including their support end dates, build numbers, and release information. It serves as a reference for users looking to understand the lifecycle of various Windows versions and how to manage updates and support effectively.'
 tags: ['database', 'report', 'update', 'windows']
@@ -117,5 +117,7 @@ Please follow these instructions carefully to update the information stored in t
 
 20. Scroll to the top of the document and click the `Publish` button to save the changes.  
    ![](../../../static/img/plugin_proval_windows_os_support/image_17.png)  
+
+
 
 

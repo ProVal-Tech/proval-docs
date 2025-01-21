@@ -1,7 +1,7 @@
 ---
 id: 'adc83d4e-f34e-4b3c-b8c9-3975a6efb285'
-title: 'Winget Installation Script for Software Deployment'
-title_meta: 'Winget Installation Script for Software Deployment'
+title: 'Winget - Import Param'
+title_meta: 'Winget - Import Param'
 keywords: ['winget', 'installation', 'ticketing', 'json', 'deployment', 'software']
 description: 'This document provides a detailed guide on using a script to install applications via winget from a JSON file. It also includes instructions for creating tickets for failed installations, ensuring a streamlined software deployment process.'
 tags: ['installation', 'software', 'ticketing']
@@ -74,4 +74,6 @@ The name of the file without the extension should be set to the user parameter a
 
 **Example:**  
 ![](../../../static/img/Winget---Import-Param/image_5.png)
+
+
 

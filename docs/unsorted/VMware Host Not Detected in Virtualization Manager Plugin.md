@@ -1,7 +1,7 @@
 ---
 id: '2dc2bb07-e083-48d0-836e-55e40c05c871'
-title: 'VMware Host Detection Configuration Guide'
-title_meta: 'VMware Host Detection Configuration Guide'
+title: 'VMware Host Not Detected in Virtualization Manager Plugin'
+title_meta: 'VMware Host Not Detected in Virtualization Manager Plugin'
 keywords: ['vmware', 'detection', 'configuration', 'probe', 'credentials']
 description: 'This document provides a comprehensive guide to troubleshooting VMware host detection failures, including configuration checks for network probes and credential settings. It outlines step-by-step instructions to ensure proper setup and resolution of common issues.'
 tags: ['networking', 'security', 'windows']
@@ -76,4 +76,6 @@ If none of the above steps help, please reach out to us at [Support@provaltech.c
 &nbsp;
 
 </div>
+
+
 

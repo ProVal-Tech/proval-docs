@@ -1,7 +1,7 @@
 ---
 id: '1c0eae92-6783-4a1c-8c75-6a02571ef9de'
-title: 'Webroot Keycode Verification Monitor'
-title_meta: 'Webroot Keycode Verification Monitor - Check Agent Status'
+title: 'SEC - Endpoint Protection - Monitor - Execute Script - Webroot Keycode Verification'
+title_meta: 'SEC - Endpoint Protection - Monitor - Execute Script - Webroot Keycode Verification'
 keywords: ['monitor', 'webroot', 'keycode', 'verification', 'agent', 'deployment']
 description: 'This document describes the Webroot Keycode Verification Monitor, which checks for online agents where the script has not run in the last 30 days and ensures that Webroot is installed and deployment is enabled. It also covers dependencies and ticketing setup for keycode mismatch detection.'
 tags: ['deployment', 'ticketing', 'webroot']
@@ -25,4 +25,6 @@ This monitor checks for online agents where the script [EPM - Data Collection - 
 ## Target
 
 - Global
+
+
 

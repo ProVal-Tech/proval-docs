@@ -1,7 +1,7 @@
 ---
 id: 'c3d9eea2-bc5f-40c8-9933-d16163b29f06'
-title: 'Manually Troubleshoot the Orange Icon Issue with ScreenConnect Client'
-title_meta: 'Manually Troubleshoot the Orange Icon Issue with ScreenConnect Client'
+title: 'Manual Troubleshooting - ScreenConnect Orange Icon'
+title_meta: 'Manual Troubleshooting - ScreenConnect Orange Icon'
 keywords: ['screenconnect', 'troubleshoot', 'client', 'orange', 'issue']
 description: 'This document provides a step-by-step guide for technicians to manually troubleshoot the Orange Icon issue with the ScreenConnect client in Automate. The Orange Icon indicates a potential problem with the application installation or connectivity to the ScreenConnect Web portal. Follow the outlined steps to resolve the issue effectively.'
 tags: ['software', 'uninstallation', 'windows']
@@ -118,4 +118,6 @@ This should turn the ScreenConnect icon green, thereby resolving the problem.
 ## Note
 
 If the above-mentioned steps fail to resolve the problem, then you will have to access the computer manually and ensure that it is able to reach the ScreenConnect Web Portal.
+
+
 

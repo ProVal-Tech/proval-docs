@@ -1,7 +1,7 @@
 ---
 id: 'b1695ddc-ae81-4cd0-8622-c036d75fc7ad'
-title: 'Customizable Monitoring for ESXi Servers'
-title_meta: 'Customizable Monitoring for ESXi Servers'
+title: 'VMWare ESXi Monitoring Solution'
+title_meta: 'VMWare ESXi Monitoring Solution'
 keywords: ['esxi', 'monitoring', 'alerts', 'datastores', 'communication']
 description: 'This document outlines a solution for customizable monitoring of ESXi servers, detailing associated internal monitors and scripts for alert management. It provides step-by-step implementation guidance to enhance server monitoring capabilities.'
 tags: ['esxi']
@@ -32,4 +32,6 @@ The goal of this solution is to provide effective and customizable monitoring fo
 4. Import the ticket creation scripts outlined above.
 5. Assign the ticket creation scripts as alert templates for each monitor (these should be importable via the plugin).
 6. Enable the monitors.
+
+
 

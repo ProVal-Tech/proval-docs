@@ -1,7 +1,7 @@
 ---
 id: 'f99ddaae-0cb3-4941-b2aa-dc93671dd246'
-title: 'Configuring the RMM+ Plugin'
-title_meta: 'Configuring the RMM+ Plugin for Efficient Session Management'
+title: 'CWM - Automate - RMM+ Plugin Configuration'
+title_meta: 'CWM - Automate - RMM+ Plugin Configuration'
 keywords: ['rmm', 'plugin', 'session', 'machines', 'checkin']
 description: 'This document provides a detailed guide on configuring the RMM+ Plugin, including steps to create sessions for machines that have not checked in for a specified number of days. It covers the necessary settings in the client control portal and the Automate control center, ensuring a seamless integration and management of remote sessions.'
 tags: ['networking', 'setup', 'software', 'windows']
@@ -70,4 +70,6 @@ Create a session group in the ScreenConnect portal for machines that have not ch
   Change the number of days in `$30DAYSAGO` as per your requirement.  
   ![Image](../../../static/img/CWM---Automate---RMM+-Plugin-Configuration/image_9.png)  
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
+
+
 

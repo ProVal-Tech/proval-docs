@@ -1,7 +1,7 @@
 ---
 id: '84d6587b-2bca-4f0e-9176-c0df064f532c'
-title: 'CPU Temperature Monitoring on Physical Windows Machines'
-title_meta: 'CPU Temperature Monitoring on Physical Windows Machines'
+title: 'CPU Temperature Monitoring Process'
+title_meta: 'CPU Temperature Monitoring Process'
 keywords: ['cpu', 'temperature', 'monitoring', 'windows', 'physical']
 description: 'This document outlines the process for monitoring CPU temperature on physical Windows machines using the CPUTempMon.exe tool. It details the conditions under which a failure is triggered and the necessary dependencies for effective monitoring.'
 tags: ['performance', 'windows']
@@ -37,4 +37,6 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/CPU-Temperature-Monitoring-Process/image_1.png)
+
+
 

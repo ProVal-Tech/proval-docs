@@ -1,7 +1,7 @@
 ---
 id: '2bd68e4a-6a06-47e0-a1af-b67bf4b7ed41'
-title: 'Summary of Extradatafields'
-title_meta: 'Summary of Extradatafields'
+title: 'Unused ExtradataFields'
+title_meta: 'Unused ExtradataFields'
 keywords: ['extradatafields', 'default', 'modification', 'data', 'columns']
 description: 'This document provides a summary of Extradatafields that have either never been populated with data or have never been modified from their default values. It includes a detailed description of each column associated with the Extradatafields, outlining their properties and functionalities.'
 tags: ['database', 'report', 'security', 'windows']
@@ -30,4 +30,6 @@ The purpose of this document is to represent the Extradatafields that have eithe
 | IsEditable                | Represents whether the EDF is editable or not                       |
 | IsRestricted              | Represents whether the EDF is restricted or not                     |
 | (Masked/Password)        | Represents whether the EDF is masked or has a password              |
+
+
 

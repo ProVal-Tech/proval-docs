@@ -1,7 +1,7 @@
 ---
 id: 'd18b57a8-8b6a-41aa-939b-f0dff26bd5cf'
-title: 'DHCP Scope Monitoring Setup'
-title_meta: 'DHCP Scope Monitoring Setup'
+title: 'Import- DHCP Scope(s)  25% and 20 IP Addresses Available'
+title_meta: 'Import- DHCP Scope(s)  25% and 20 IP Addresses Available'
 keywords: ['dhcp', 'monitoring', 'groupid', 'alert', 'network']
 description: 'This document outlines the steps for setting up a DHCP Scope Monitoring system using SQL queries to insert monitoring parameters into the group agents database. It provides a detailed guide on how to obtain group IDs, modify SQL queries, and apply alert templates for effective monitoring of DHCP scopes.'
 tags: ['database', 'networking', 'setup']
@@ -179,4 +179,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

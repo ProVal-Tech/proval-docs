@@ -1,7 +1,7 @@
 ---
 id: ps-new-djoinfile
 title: 'New-DJoinFile'
-title_meta: 'New-DJoinFile Command'
+title_meta: 'New-DJoinFile'
 keywords: ['djoin', 'offline', 'domain', 'join']
 description: 'Documentation for the New-DJoinFile command to create a new Djoin file for an offline domain join.'
 tags: ['active-directory', 'windows']
@@ -39,4 +39,6 @@ This will create a file named `Dev-Win10-2-OfflineJoin.txt` in the working direc
 
 **Console:**
 - Djoin.exe command results.
+
+
 

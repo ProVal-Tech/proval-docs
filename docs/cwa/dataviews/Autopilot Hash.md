@@ -1,7 +1,7 @@
 ---
 id: 'd7da7b86-19e7-4bad-9936-8687800cee66'
-title: 'Hardware Hash Details of Windows Agents'
-title_meta: 'Hardware Hash Details of Windows Agents'
+title: 'Autopilot Hash'
+title_meta: 'Autopilot Hash'
 keywords: ['windows', 'agents', 'hash', 'client', 'location', 'operating', 'system', 'make', 'model', 'serial', 'autopilot']
 description: 'This document provides a detailed overview of the Hardware Hash information for Windows agents within ConnectWise Automate, including key attributes such as machine name, client, location, and more.'
 tags: ['autopilot', 'windows']
@@ -30,4 +30,6 @@ This document displays the Hardware Hash details of Windows agents.
 | Model             | Model of the agent within Automate                       |
 | Serial Number     | Serial Number of the agent within Automate               |
 | Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a'
-title: 'Retrieve iLO Health Report'
-title_meta: 'Retrieve iLO Health Report using PowerShell'
+title: 'HP iLO - Health Report - Get'
+title_meta: 'HP iLO - Health Report - Get'
 keywords: ['ilo', 'health', 'report', 'script', 'monitor', 'automation']
 description: 'This document provides a comprehensive guide on how to retrieve an iLO health report using a PowerShell script. It includes requirements, client-level password entry instructions, sample runs, dependencies, and ticketing capabilities for failures encountered during execution.'
 tags: ['networking', 'security', 'software', 'update', 'windows']
@@ -121,4 +121,6 @@ The script is capable of generating tickets for five distinct failures. However,
 
 5. If the script is executed by the internal monitor and the computer ID is not specified in the password entry or the monitor set cannot locate any online computer on the client's network that matches the network of the IP address specified in the `URL` field of the password entry for the HP iLO device.  
    **Body:** Unable to find a computer online at %clientname% within the network(s) @Network@. Automate will not be able to gather details for the HP iLO device(s) based on the provided password entry(ies) @Title@.
+
+
 

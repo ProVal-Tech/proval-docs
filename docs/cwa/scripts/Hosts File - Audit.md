@@ -1,7 +1,7 @@
 ---
 id: '19d3cc45-e5bd-4705-b82d-c0657b2e6195'
-title: 'Custom Host File Entries Script'
-title_meta: 'Custom Host File Entries Script for PowerShell'
+title: 'Hosts File - Audit'
+title_meta: 'Hosts File - Audit'
 keywords: ['custom', 'host', 'file', 'entries', 'script']
 description: 'This document details a PowerShell script that retrieves custom entries from the host file, updating the Host File Data EDF accordingly. It can be run on individual agents or scheduled across multiple computers to ensure Automate data remains current.'
 tags: ['update', 'windows']
@@ -27,4 +27,6 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Output
 
 This script outputs information into the Host File Contents EDF and can be displayed in a Dataview for monitoring if desired.
+
+
 

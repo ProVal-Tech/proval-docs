@@ -1,7 +1,7 @@
 ---
 id: '1a561427-06ea-4c8c-b752-d1ad312007ab'
-title: 'Computer Client Transfer Notification Script'
-title_meta: 'Computer Client Transfer Notification Script'
+title: 'Agents Migration Monitoring - Client-Level'
+title_meta: 'Agents Migration Monitoring - Client-Level'
 keywords: ['client', 'transfer', 'notification', 'script', 'automate']
 description: 'This document describes a script designed to identify computers that have been transferred from one client to another within ConnectWise Automate. It includes details on setup, dependencies, variables used, and the output format for notifications.'
 tags: ['setup', 'ticketing']
@@ -49,4 +49,6 @@ It is a client script that has to be set up to run on a regular basis, either da
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Agents-Migration-Monitoring---Client-Level/image_2.png)
+
+
 

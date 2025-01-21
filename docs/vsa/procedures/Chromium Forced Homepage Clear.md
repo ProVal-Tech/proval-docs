@@ -1,7 +1,7 @@
 ---
 id: 'd56a82d5-2ac2-4edd-b80b-41ccdb885fd7'
-title: 'Clear Chromium Homepage'
-title_meta: 'Clear Chromium Homepage'
+title: 'Chromium Forced Homepage Clear'
+title_meta: 'Chromium Forced Homepage Clear'
 keywords: ['chromium', 'homepage', 'registry', 'browser', 'clear']
 description: 'This document outlines the procedure to clear enforced homepages in Chromium-based browsers. It details the process of removing specific registry keys that control homepage selection, new tab page control, and session restoration, ensuring a clean browser experience.'
 tags: ['registry', 'security', 'software', 'windows']
@@ -46,4 +46,6 @@ This document describes how to clear enforced homepages in Chromium-based browse
 
 - Agnostic content logs
 - Agent Procedure Log
+
+
 

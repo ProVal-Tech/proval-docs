@@ -1,7 +1,7 @@
 ---
 id: '525e89d1-335a-4664-920b-0428b827a7ad'
-title: 'Failed Emails DataView in ConnectWise Automate'
-title_meta: 'Failed Emails DataView in ConnectWise Automate'
+title: 'Admin - Failed Emails'
+title_meta: 'Admin - Failed Emails'
 keywords: ['failed', 'emails', 'dataview', 'automate', 'error']
 description: 'This document provides a summary of the Failed Emails DataView in ConnectWise Automate, detailing the columns and their descriptions that are displayed from the failedemails table, including information such as the email addresses involved, subject, body, failure date, and error messages.'
 tags: ['database', 'report']
@@ -28,4 +28,6 @@ None
 | Body      | The body of the email                                                                           |
 | FailDate  | The date the email failed to send                                                               |
 | ErrorMsg  | The error message gathered by Automate when the email failed to send                           |
+
+
 

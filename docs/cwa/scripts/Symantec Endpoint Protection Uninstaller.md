@@ -1,7 +1,7 @@
 ---
 id: '7940894c-700c-442d-b0ba-0f197548a8fd'
-title: 'Uninstall Symantec Endpoint Protection'
-title_meta: 'Uninstall Symantec Endpoint Protection using PowerShell'
+title: 'Symantec Endpoint Protection Uninstaller'
+title_meta: 'Symantec Endpoint Protection Uninstaller'
 keywords: ['uninstall', 'symantec', 'endpoint', 'protection', 'script']
 description: 'This document provides a PowerShell script designed to uninstall Symantec Endpoint Protection from a target machine, detailing the process, dependencies, and expected output.'
 tags: ['security', 'software', 'uninstallation']
@@ -38,4 +38,6 @@ This script attempts to uninstall Symantec Endpoint Protection by running a Powe
 ## Output
 
 - Script log.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '18fd9d3f-f0cd-4040-b89f-ec059c405609'
-title: 'Implementation Steps for Windows RDS Session Host'
-title_meta: 'Implementation Steps for Windows RDS Session Host'
+title: 'RDS Hosts - Allow New Connections Status'
+title_meta: 'RDS Hosts - Allow New Connections Status'
 keywords: ['sql', 'rds', 'monitor', 'alert', 'template', 'servers', 'group', 'connections']
 description: 'This document outlines the implementation steps for creating an alert template for Windows RDS Session Host using SQL queries. It includes detailed instructions on inserting roles, searches, groups, and remote monitors to effectively manage RDS servers.'
 tags: ['database', 'windows']
@@ -46,4 +46,6 @@ INSERT IGNORE INTO `groupagents` (`AgentID`, `GroupID`, `SearchID`, `Name`, `Che
 ![Image](../../../static/img/RDS-Hosts---Allow-New-Connections-Status/image_1.png)
 
 - This needs to be changed to the "Default - Create Automate Ticket" or any other template that the client needs, such as emailing or ticket creation.
+
+
 

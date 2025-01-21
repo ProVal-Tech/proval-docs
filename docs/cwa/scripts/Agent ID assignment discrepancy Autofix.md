@@ -1,7 +1,7 @@
 ---
 id: 'fc20710b-81b8-4383-a3ad-42ebef9dd930'
-title: 'Reinstall Automate Agent Script'
-title_meta: 'Reinstall Automate Agent Script for Agent ID Discrepancies'
+title: 'Agent ID assignment discrepancy Autofix'
+title_meta: 'Agent ID assignment discrepancy Autofix'
 keywords: ['automate', 'agent', 'ticket', 'reinstall', 'discrepancy']
 description: 'This document provides a detailed overview of a script designed to reinstall the Automate agent for machines that share the same agent ID. It outlines the process of creating tickets for failed installations and highlights specific dependencies and variables necessary for successful execution. The script is intended for environments where Mac Signup Matching is not enabled.'
 tags: ['installation']
@@ -63,4 +63,6 @@ Sample Ticket:
 
 - Ticket
 - Script logs
+
+
 

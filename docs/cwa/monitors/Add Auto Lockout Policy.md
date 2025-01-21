@@ -1,7 +1,7 @@
 ---
 id: '65644f6f-922e-40e5-91fe-6063c5de2018'
-title: 'Auto-Lock Registry Key Monitor for Windows Machines'
-title_meta: 'Auto-Lock Registry Key Monitor for Windows Machines'
+title: 'Add Auto Lockout Policy'
+title_meta: 'Add Auto Lockout Policy'
 keywords: ['monitor', 'registry', 'auto-lock', 'windows', 'idle']
 description: 'This document provides a detailed implementation guide for setting a registry key that enables auto-lock on Windows machines after 10 minutes of inactivity. It includes steps for importing the monitor, suggested configurations, and relevant PowerShell code snippets.'
 tags: ['registry', 'security', 'windows']
@@ -42,4 +42,6 @@ C://Windows//system32//cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Comman
 ### Note:
 
 This is expected to NOT work on any EOL systems. The PowerShell will error out.
+
+
 

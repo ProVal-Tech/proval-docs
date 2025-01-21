@@ -1,7 +1,7 @@
 ---
 id: 'b0639ecd-38cd-4afd-a764-bcce13fd8ac7'
-title: 'Remote Monitor for TLS Client Version Check'
-title_meta: 'Remote Monitor for TLS Client Version Check'
+title: 'TLS Version Check - Client'
+title_meta: 'TLS Version Check - Client'
 keywords: ['tls', 'monitor', 'windows', 'security', 'version']
 description: 'This document outlines the purpose and details of a remote monitor designed to check and return the Enabled TLS Client version on Windows computers. It includes guidelines for usage, target systems, and import instructions.'
 tags: ['security', 'windows']
@@ -36,4 +36,6 @@ Managed Windows Servers and Workstations
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Client](<./TLS Version Check - Client.md>)
+
+
 

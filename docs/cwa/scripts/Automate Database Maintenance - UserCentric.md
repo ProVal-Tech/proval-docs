@@ -1,7 +1,7 @@
 ---
 id: '983c0f82-09ce-4570-b7dc-55dfc78678fc'
-title: 'Automate Database Maintenance Script'
-title_meta: 'Automate Database Maintenance Script'
+title: 'Automate Database Maintenance - UserCentric'
+title_meta: 'Automate Database Maintenance - UserCentric'
 keywords: ['script', 'cleanup', 'database', 'contacts', 'maintenance']
 description: 'This document provides an overview of the Automate Database Maintenance Script, which is designed to handle the cleanup of specific database tables, particularly the Contacts table. It includes details on variable usage, log output, and sample runs to assist users in implementing the script effectively.'
 tags: ['cleanup', 'database', 'logging']
@@ -35,4 +35,6 @@ This script will add the following section to the log variable:
 ![Output Section](../../../static/img/Automate-Database-Maintenance---UserCentric/image_1.png)
 
 Or data if applicable.
+
+
 

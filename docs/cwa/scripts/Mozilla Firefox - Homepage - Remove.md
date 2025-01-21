@@ -1,7 +1,7 @@
 ---
 id: 'c09afc4e-2ed0-4e85-9beb-e8b54082568e'
-title: 'Remove Enforced Homepage in Mozilla Firefox'
-title_meta: 'Remove Enforced Homepage in Mozilla Firefox'
+title: 'Mozilla Firefox - Homepage - Remove'
+title_meta: 'Mozilla Firefox - Homepage - Remove'
 keywords: ['firefox', 'homepage', 'policy', 'configuration', 'software']
 description: 'This document describes an implementation of the agnostic script to remove the enforced homepage policy in Mozilla Firefox using ConnectWise Automate. It includes a sample run, dependencies, and the expected output including script logs.'
 tags: ['firefox', 'setup', 'software']
@@ -24,4 +24,6 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Logs
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '18401e53-6ea1-4d94-a715-c2fc8767383e'
-title: 'Factory Reset Script'
-title_meta: 'Factory Reset Script for Windows'
+title: 'Wipe Computers - Factory Reset'
+title_meta: 'Wipe Computers - Factory Reset'
 keywords: ['factory', 'reset', 'script', 'windows', 'user']
 description: 'This document provides a detailed overview of a script that allows users to perform a factory reset on their Windows machine. It includes options for user prompts and forceful resets, along with variable definitions and expected outputs. Use this script with caution as it will erase all data.'
 tags: ['recovery', 'security', 'setup', 'windows']
@@ -37,4 +37,6 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
+
+
 

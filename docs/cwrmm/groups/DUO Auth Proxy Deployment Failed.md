@@ -47,3 +47,5 @@ This document contains the devices where the "DUO Security Authentication Proxy"
    ![Search and Select Custom Field](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_7.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
 
+
+

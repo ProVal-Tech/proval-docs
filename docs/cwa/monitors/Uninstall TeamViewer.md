@@ -1,7 +1,7 @@
 ---
 id: '959ac6da-8bb3-41ad-abcc-ba5df775624d'
-title: 'Remote Monitor for TeamViewer Removal on Windows'
-title_meta: 'Remote Monitor for TeamViewer Removal on Windows'
+title: 'Uninstall TeamViewer'
+title_meta: 'Uninstall TeamViewer'
 keywords: ['remote', 'monitor', 'teamviewer', 'removal', 'windows']
 description: 'This document outlines the procedure for setting up a remote monitor to automate the removal of TeamViewer from Windows machines. It includes details on suggested configurations, ticketing information, and import instructions for the monitor.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
@@ -40,4 +40,6 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall TeamViewer](<./Uninstall TeamViewer.md>)
+
+
 

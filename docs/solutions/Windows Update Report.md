@@ -1,7 +1,7 @@
 ---
 id: 'affc0b47-f0fe-43f9-95f6-0e0d1205b4d6'
-title: 'Windows Update Report for Automate'
-title_meta: 'Windows Update Report for Automate'
+title: 'Windows Update Report'
+title_meta: 'Windows Update Report'
 keywords: ['windows', 'update', 'report', 'patches', 'monitoring', 'auditing']
 description: 'This document provides a comprehensive guide on how to implement and use the Windows Update Report in ConnectWise Automate for auditing and monitoring installed or available patches on local machines. It includes associated content, implementation steps, and FAQs.'
 tags: ['auditing', 'custom-table']
@@ -55,4 +55,6 @@ A: It's most likely due to permissions. Try running the [CWM - Automate - Script
 **Q: Even after executing the script, I am unable to find my computer in the dataview, and it shows 'Information Not Available' in the monitor set?**  
 A: Ensure that necessary exclusions are defined in the AV/security products. See [AV Exclusions - ProVal Standard](https://proval.itglue.com/DOC-5078775-10955006). Alternatively, a whitelist object can be defined/added in the AV/security product's portal using the certificate attached to the email to run this particular script.  
 **Note:** Whitelisting the certificate will not override any restrictions or rules that block or restrict the computers from communicating with [https://file.provaltech.com](https://file.provaltech.com).
+
+
 

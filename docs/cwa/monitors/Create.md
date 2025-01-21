@@ -1,7 +1,7 @@
 ---
 id: 'd1cd1622-27ec-4bbd-9297-1b4b7b2d65b2'
-title: 'CPU Temperature Monitor Setup'
-title_meta: 'CPU Temperature Monitor Setup for Windows Machines'
+title: 'Create'
+title_meta: 'Create'
 keywords: ['cpu', 'temperature', 'monitor', 'windows', 'sensors']
 description: 'This document provides a detailed overview of setting up a CPU Temperature Monitor on Windows machines using the EPM - Sensors - Script - CPU Temperature Monitor - Create script. It explains how to enable or disable monitoring through system properties and EDFs, along with the necessary alert template configurations.'
 tags: ['windows']
@@ -29,4 +29,6 @@ Global
 
 ![Image 1](../../../static/img/Create/image_1.png)  
 ![Image 2](../../../static/img/Create/image_2.png)
+
+
 

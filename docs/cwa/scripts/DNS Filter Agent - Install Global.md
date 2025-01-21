@@ -1,7 +1,7 @@
 ---
 id: 'f0ddbb24-0d41-41ca-a6cb-926d70dd71d5'
-title: 'DNSFilter Deployment Script'
-title_meta: 'DNSFilter Deployment Script for Client-Specific Modifications'
+title: 'DNS Filter Agent - Install Global'
+title_meta: 'DNS Filter Agent - Install Global'
 keywords: ['dnsfilter', 'deployment', 'installation', 'ticket', 'client', 'edf', 'macintosh', 'windows']
 description: 'This document details a customized script for deploying the DNS Filter Agent, specifically designed to meet the requirements of ticket T20230331.0168. It outlines the necessary EDF values, compatible operating systems, and the process for handling installation failures through ticket creation.'
 tags: ['dns', 'installation', 'windows']
@@ -42,4 +42,6 @@ This script is customized for a particular client and aims to fulfill the reques
 
 - Script Log
 - Ticket
+
+
 

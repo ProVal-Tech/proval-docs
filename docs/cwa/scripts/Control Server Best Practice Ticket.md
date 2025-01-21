@@ -1,7 +1,7 @@
 ---
 id: '76867be6-fe44-441a-92ce-e3d1124c361d'
-title: 'Auditing and Hardening Rules for CW Control Servers'
-title_meta: 'Auditing and Hardening Rules for CW Control Servers'
+title: 'Control Server Best Practice Ticket'
+title_meta: 'Control Server Best Practice Ticket'
 keywords: ['auditing', 'hardening', 'gpo', 'security', 'windows', 'iis', 'tls', 'ports', 'automation']
 description: 'This document outlines the process of auditing and implementing hardening rules and policies for CW Control (on-prem) servers, focusing on security enhancements and compliance with best practices as per the recent CW guidelines.'
 tags: ['gpo', 'iis', 'networking', 'security', 'windows']
@@ -49,4 +49,6 @@ This document details the process of auditing and establishing hardening rules a
 ## Output
 
 Ticket
+
+
 

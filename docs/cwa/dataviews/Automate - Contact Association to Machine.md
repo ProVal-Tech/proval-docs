@@ -1,7 +1,7 @@
 ---
 id: '9d741648-dc5c-4ff8-884c-99c4072d9f34'
-title: 'Contact Machines Association Dataview in ConnectWise Automate'
-title_meta: 'Contact Machines Association Dataview in ConnectWise Automate'
+title: 'Automate - Contact Association to Machine'
+title_meta: 'Automate - Contact Association to Machine'
 keywords: ['contact', 'machines', 'association', 'dataview', 'automate']
 description: 'This document provides a detailed overview of the dataview that displays the association between machines and specific contacts in ConnectWise Automate, including various permissions and attributes related to each contact.'
 tags: ['connectwise', 'permissions']
@@ -29,4 +29,6 @@ This dataview shows which machines are associated with specific contacts in Auto
 | Reboot               | Check whether the contact has reboot permission or not                  |
 | Shutdown             | Check whether the contact has shutdown permission or not                |
 | Wake On Lan          | Check whether the contact has Wake On Lan permission or not.            |
+
+
 

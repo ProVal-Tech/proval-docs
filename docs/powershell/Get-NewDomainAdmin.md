@@ -1,7 +1,7 @@
 ---
 id: ps-get-newdomainadmin
 title: 'Get-NewDomainAdmin'
-title_meta: 'Get-NewDomainAdmin Command'
+title_meta: 'Get-NewDomainAdmin'
 keywords: ['new', 'domain', 'admin', 'permissions']
 description: 'Documentation for the Get-NewDomainAdmin command to get domain users that have been granted elevated permissions since the last run of the script.'
 tags: ['active-directory', 'security']
@@ -31,4 +31,6 @@ If the script has not been run previously, the admin data is saved to the table,
 ## Tables
 - Get-NewDomainAdmin_log
 - Get-NewDomainAdmin_admins
+
+
 

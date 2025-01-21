@@ -1,7 +1,7 @@
 ---
 id: '8e53a0ed-4b8a-4aec-9d92-99423964f53c'
-title: 'Active Network Adapter Settings Display'
-title_meta: 'Active Network Adapter Settings Display'
+title: 'DNS Assignments'
+title_meta: 'DNS Assignments'
 keywords: ['network', 'adapter', 'settings', 'dns', 'ipaddress', 'gateway', 'status']
 description: 'This document provides a detailed overview of the active network adapter settings for devices, including information on IP addresses, gateways, and adapter types. It outlines the necessary dependencies and describes the columns used in the data display, offering insights into network configurations and statuses.'
 tags: ['dns', 'networking']
@@ -44,4 +44,6 @@ This document provides a display of a device's active network adapter and its as
 | MTU             | The found MTU for the adapter.                       |
 | Bytes Sent      | The number of bytes sent as seen on the adapter.     |
 | Bytes Rec       | The number of bytes received on the adapter.         |
+
+
 

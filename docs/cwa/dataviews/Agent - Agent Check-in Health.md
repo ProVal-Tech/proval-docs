@@ -1,7 +1,7 @@
 ---
 id: '72e598df-0fcf-471d-9ee8-030986141642'
-title: 'Agent Check-In Status Overview in CWA'
-title_meta: 'Agent Check-In Status Overview in CWA'
+title: 'Agent - Agent Check-in Health'
+title_meta: 'Agent - Agent Check-in Health'
 keywords: ['agent', 'checkin', 'status', 'remediation', 'script']
 description: 'This document provides an overview of an agent’s check-in status in ConnectWise Automate (CWA), detailing whether the associated script has been executed for remediation. It includes dependencies, a breakdown of relevant columns, and the status of agents in relation to their connectivity and script execution.'
 tags: ['connectwise']
@@ -35,4 +35,6 @@ This dataview provides information about an agent's check-in status in CWA and w
 | Clientid                     | Client ID (Hidden)                                                                                                   |
 | Locationid                   | Location ID (Hidden)                                                                                                 |
 | Computerid                   | Computer ID (Hidden)                                                                                                 |
+
+
 

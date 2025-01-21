@@ -1,7 +1,7 @@
 ---
 id: '6ebd1a73-94e8-46ba-bc58-3cfb794c7ab0'
-title: 'Set Chromium Homepage'
-title_meta: 'Set Chromium Homepage for Chromium-Based Browsers'
+title: 'Chromium Homepage Set'
+title_meta: 'Chromium Homepage Set'
 keywords: ['chromium', 'homepage', 'browser', 'configuration', 'endpoint']
 description: 'This document outlines the procedure for setting the homepage in Chromium-based browsers using the SWM - Software Configuration - Set-ChromiumHomepage method. It includes a detailed example of agent procedure logs and the process involved in executing the commands.'
 tags: ['setup', 'windows']
@@ -46,4 +46,6 @@ This procedure utilizes [SWM - Software Configuration - Set-ChromiumHomepage](<.
 ## Output
 
 The output consists of the agent procedure log.
+
+
 

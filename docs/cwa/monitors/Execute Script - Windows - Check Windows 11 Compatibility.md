@@ -1,7 +1,7 @@
 ---
 id: '8aa2542c-c61f-43b8-a7ec-ec33558319e4'
-title: 'Windows 11 Compatibility Check Monitor Set'
-title_meta: 'Windows 11 Compatibility Check Monitor Set'
+title: 'Execute Script - Windows - Check Windows 11 Compatibility'
+title_meta: 'Execute Script - Windows - Check Windows 11 Compatibility'
 keywords: ['windows', 'monitor', 'compatibility', 'check', 'script']
 description: 'This document outlines the monitor set designed to execute the Windows - Check Windows 11 Compatibility script, detailing its scheduling, execution frequency, and dependencies, ensuring that systems are ready for the Windows 11 upgrade.'
 tags: []
@@ -27,4 +27,6 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Windows 11 Compatibility Check
+
+
 

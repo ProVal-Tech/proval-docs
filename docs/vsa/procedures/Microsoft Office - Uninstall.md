@@ -1,7 +1,7 @@
 ---
 id: '29949711-0cb3-49fb-b31a-9dbe0ce6b9f6'
-title: 'Silent Uninstallation of Microsoft Office'
-title_meta: 'Silent Uninstallation of Microsoft Office'
+title: 'Microsoft Office - Uninstall'
+title_meta: 'Microsoft Office - Uninstall'
 keywords: ['uninstall', 'office', 'silent', 'procedure', 'agent']
 description: 'This document outlines the procedure for silently removing Microsoft Office when it cannot be uninstalled via winget. It includes example logs from the agent procedure and a link to the Invoke-OffScrub script used in the process.'
 tags: ['performance', 'software', 'uninstallation', 'windows']
@@ -68,4 +68,6 @@ The procedure uses Invoke-OffScrub.
 ## Output
 
 AP Log
+
+
 

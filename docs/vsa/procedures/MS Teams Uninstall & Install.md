@@ -1,7 +1,7 @@
 ---
 id: 'f98d734c-7614-4a47-a358-0f6cb1c66b2e'
-title: 'Teams Uninstall and Install Procedure'
-title_meta: 'Teams Uninstall and Install Procedure'
+title: 'MS Teams Uninstall & Install'
+title_meta: 'MS Teams Uninstall & Install'
 keywords: ['teams', 'uninstall', 'install', 'msi', 'procedure']
 description: 'This document outlines the procedure for silently uninstalling the "Teams Machine-Wide Installer" and installing the latest version on a machine. It includes example logs and a step-by-step process for executing the procedure successfully.'
 tags: ['installation', 'software', 'update', 'windows']
@@ -74,5 +74,7 @@ Agent Procedure Log
 ## Export Attachment
 
 Attach the XML VSA export content to this document.
+
+
 
 

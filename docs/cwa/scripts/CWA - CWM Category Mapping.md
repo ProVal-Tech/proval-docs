@@ -1,7 +1,7 @@
 ---
 id: 'f840d208-1cd4-409a-bf46-b6492790a184'
-title: 'Mapping Categories from Automate to Manage'
-title_meta: 'Mapping Categories from Automate to Manage'
+title: 'CWA - CWM Category Mapping'
+title_meta: 'CWA - CWM Category Mapping'
 keywords: ['mapping', 'categories', 'automate', 'manage', 'query']
 description: 'This document provides a comprehensive guide on how to map categories from ConnectWise Automate to ConnectWise Manage, detailing the assumptions, process, and variables involved in the script execution.'
 tags: ['database', 'setup', 'update']
@@ -63,4 +63,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Q:** What happens if I set both Subtype and Item to 1?  
 **A:** The script checks for Item first, as it trumps Subtype, and adds both the subtype and the item mapping.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '96774e0b-8ce1-4fc6-a465-103b0e478e2c'
-title: 'Install Crowdstrike on Agent'
-title_meta: 'Install Crowdstrike on Agent - Step-by-Step Guide'
+title: 'Crowdstrike Deploy'
+title_meta: 'Crowdstrike Deploy'
 keywords: ['crowdstrike', 'agent', 'installation', 'edf', 'script']
 description: 'This document provides a detailed guide on how to install Crowdstrike on an agent using a script. It covers requirements, variables, global parameters, the installation process, and expected output logs.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -41,4 +41,6 @@ This script will install Crowdstrike on an agent using the CID key provided in t
 ## Output
 
 - Script log
+
+
 

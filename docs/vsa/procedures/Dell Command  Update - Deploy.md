@@ -1,7 +1,7 @@
 ---
 id: '1653896a-517c-4f19-ad8a-affffd6e0bee'
-title: 'Deploying Dell Command | Update to Endpoint'
-title_meta: 'Deploying Dell Command | Update to Endpoint'
+title: 'Dell Command  Update - Deploy'
+title_meta: 'Dell Command  Update - Deploy'
 keywords: ['dell', 'update', 'deploy', 'endpoint', 'procedure']
 description: 'This document outlines the procedure for deploying Dell Command | Update to an endpoint. It includes steps for downloading the software, installing it, and performing a scan and update based on the configuration specified in the DCU_Config.ps1 file. The document also provides example logs and dependencies for the procedure.'
 tags: ['deployment', 'software', 'update', 'windows']
@@ -88,4 +88,6 @@ Dell Command Update Logs: C:/ProgramData/Dell/Logs
 
 - scan.log
 - applyupdates.log
+
+
 

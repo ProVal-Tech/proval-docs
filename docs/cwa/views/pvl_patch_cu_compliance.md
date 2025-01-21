@@ -1,7 +1,7 @@
 ---
 id: '8a713392-a671-4af3-8cbe-ff04199e2f3b'
-title: 'Patching and CU Compliance Metrics'
-title_meta: 'Patching and CU Compliance Metrics'
+title: 'pvl_patch_cu_compliance'
+title_meta: 'pvl_patch_cu_compliance'
 keywords: ['patching', 'compliance', 'windows', 'cumulative', 'update', 'metrics']
 description: 'This document outlines the SQL query used for the Patching and CU Compliance Metrics dataview, focusing on supported Windows computers with managed patch policies. It details dependencies, tables, and various metrics related to patch compliance and cumulative updates.'
 tags: ['compliance', 'database', 'patching', 'report', 'windows']
@@ -51,4 +51,6 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 | Compliant Clients - CU                   | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                                                                                                                     |
 | Non-Compliant Clients - CU               | Total number of individual clients where `CU Score %` is less than 75.                                                                                                                                                    |
 | Compliant Clients - CU %                 | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                          |
+
+
 

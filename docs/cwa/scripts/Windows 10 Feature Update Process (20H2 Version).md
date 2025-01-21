@@ -1,7 +1,7 @@
 ---
 id: 'c182b594-6dab-4c45-8aca-67807dbd23ab'
-title: 'Upgrade Windows 10 to 20H2 Feature Update'
-title_meta: 'Upgrade Windows 10 to 20H2 Feature Update'
+title: 'Windows 10 Feature Update Process (20H2 Version)'
+title_meta: 'Windows 10 Feature Update Process (20H2 Version)'
 keywords: ['windows', 'upgrade', 'feature', 'build', '20h2', 'installation']
 description: 'This document outlines a script used to upgrade a Windows 10 operating system to the specific Feature Update version 20H2. It details the required variables, global parameters, and the process involved in executing the upgrade, along with the supported operating systems and expected output.'
 tags: ['installation', 'setup', 'windows']
@@ -54,4 +54,6 @@ This script is used to upgrade a Windows 10 operating system to a specific Featu
 ## Output
 
 - Script log
+
+
 

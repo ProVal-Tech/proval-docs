@@ -1,7 +1,7 @@
 ---
 id: ps-get-recenteventlog
 title: 'Get-RecentEventLog'
-title_meta: 'Get-RecentEventLog Command'
+title_meta: 'Get-RecentEventLog'
 keywords: ['eventlog', 'recent', 'logs', 'windows']
 description: 'Documentation for the Get-RecentEventLog command to retrieve events from the Windows event log that have triggered since the last run of the script.'
 tags: ['performance', 'windows']
@@ -63,4 +63,6 @@ Get events from the Windows event log that have triggered since the last run of 
 
 ## Output
 `System.Diagnostics.Eventing.Reader.EventLogRecord`
+
+
 

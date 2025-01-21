@@ -1,7 +1,7 @@
 ---
 id: 'aa0c7575-d9f1-4c41-98bb-50eab8aa1ade'
-title: 'SEC - Encryption - Agnostic - Enable-TPM Implementation'
-title_meta: 'SEC - Encryption - Agnostic - Enable-TPM Implementation'
+title: 'Bitlocker - Enable TPM'
+title_meta: 'Bitlocker - Enable TPM'
 keywords: ['tpm', 'encryption', 'provisioning', 'script', 'implementation']
 description: 'This document details the implementation of the agnostic script SEC - Encryption - Agnostic - Enable-TPM within Automate. It covers the initialization of the Trusted Platform Module (TPM) as part of the provisioning process, including necessary parameters and expected outputs.'
 tags: ['encryption', 'logging', 'setup']
@@ -36,4 +36,6 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 ## Output
 
 - Script logs
+
+
 

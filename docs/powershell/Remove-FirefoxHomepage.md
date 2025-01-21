@@ -1,7 +1,7 @@
 ---
 id: ps-remove-firefoxhomepage  
 title: 'Remove-FirefoxHomepage'  
-title_meta: 'Remove-FirefoxHomepage Command'  
+title_meta: 'Remove-FirefoxHomepage'  
 keywords: ['remove', 'homepage', 'firefox', 'browser']  
 description: 'Documentation for the Remove-FirefoxHomepage command to remove the homepage from the Firefox browser.'  
 tags: ['firefox', 'web-browser']  
@@ -24,4 +24,6 @@ This will remove all homepage policies from the policies.json file.
 ## Output  
 
     .\Remove-FirefoxHomepage-log.txt  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '73399399-1acc-444b-bf16-73f6b534a35b'
-title: 'Count Not Actioned Patches'
-title_meta: 'Count Not Actioned Patches in ConnectWise Automate'
+title: 'Patch Not Set - Count'
+title_meta: 'Patch Not Set - Count'
 keywords: ['patches', 'approval', 'policy', 'client', 'automation', 'sql', 'tickets']
 description: 'This document outlines a script that counts the number of patches that have not been actioned in any approval policy within a client environment. It highlights the time saved by automation and provides details on global parameters and the process involved in executing the script.'
 tags: ['report', 'security', 'software', 'windows']
@@ -32,4 +32,6 @@ This script runs a SQL query to check for the count of patches that have not bee
 ## Output
 
 - Script log
+
+
 

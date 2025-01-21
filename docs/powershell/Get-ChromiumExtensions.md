@@ -1,7 +1,7 @@
 ---
 id: ps-get-chromiumextensions
 title: 'Get-ChromiumExtensions'
-title_meta: 'Get-ChromiumExtensions Command'
+title_meta: 'Get-ChromiumExtensions'
 keywords: ['chromium', 'extensions', 'browser', 'user']
 description: 'Documentation for the Get-ChromiumExtensions command to gather information about extensions installed on Chromium-based browsers for each user.'
 tags: ['chrome', 'software', 'web-browser']
@@ -67,4 +67,6 @@ IsDefault               NoteProperty bool IsDefault=False
 ExtensionVersion        NoteProperty string ExtensionVersion=1.12.2
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\\Users\\localadmin
 ```
+
+
 

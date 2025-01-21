@@ -1,7 +1,7 @@
 ---
 id: '54997a10-a21b-450a-8c77-f63d5d048190'
-title: 'Automate User Password Strength Checker'
-title_meta: 'Automate User Password Strength Checker'
+title: 'Automate - User Password Audit'
+title_meta: 'Automate - User Password Audit'
 keywords: ['automate', 'password', 'strength', 'security', 'user']
 description: 'This document outlines the criteria for determining whether an Automate user’s password is considered strong or weak. It details the requirements for a strong password, including character length, variety, and complexity, and provides a summary of the data view used to assess password strength.'
 tags: ['security']
@@ -30,4 +30,6 @@ This document outlines the criteria for determining if an Automate user's passwo
 | Username        | User name                                                   |
 | Email           | Email of the user                                           |
 | Password Error  | The password complexity error indicating whether the password is strong or not. |
+
+
 

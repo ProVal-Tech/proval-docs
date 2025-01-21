@@ -1,7 +1,7 @@
 ---
 id: '33120745-9fa1-4864-aff6-b97d083e3fd5'
-title: 'LTRedirSVC Monitoring for Automate Server'
-title_meta: 'LTRedirSVC Monitoring for Automate Server'
+title: 'SVC-LTRedirSVC'
+title_meta: 'SVC-LTRedirSVC'
 keywords: ['automate', 'monitoring', 'service', 'alert', 'ticket']
 description: 'This document outlines the monitoring setup for the LTRedirSVC service on the Automate server, including alert configurations and service check details to ensure timely notifications and ticket creation in Autotask.'
 tags: []
@@ -30,4 +30,6 @@ It should be created against the "Labtech Server" group for on-prem partners onl
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server
+
+
 

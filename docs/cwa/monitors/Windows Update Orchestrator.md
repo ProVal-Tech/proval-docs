@@ -1,7 +1,7 @@
 ---
 id: '95f64d6e-cb10-4c2c-9d40-c55941a7d7bc'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Windows Update Orchestrator'
+title_meta: 'Windows Update Orchestrator'
 keywords: ['remote', 'monitor', 'sql', 'query', 'update', 'orchestrator']
 description: 'This document outlines the steps to apply a remote monitor in ConnectWise Automate, including obtaining group IDs, running SQL queries, and setting up alerts for monitoring Windows Update Orchestrator services.'
 tags: ['database', 'windows']
@@ -229,4 +229,6 @@ The monitor will come up with the search `Update Orchestrator - UsoSvc` added to
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

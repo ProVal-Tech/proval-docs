@@ -1,7 +1,7 @@
 ---
 id: 'd0d38e82-7faf-4e0f-86b3-81b01a9f18fb'
-title: 'PNP Devices Storage Script'
-title_meta: 'PNP Devices Storage Script for ConnectWise Automate'
+title: 'Plugin_ProVal_PNPDevices'
+title_meta: 'Plugin_ProVal_PNPDevices'
 keywords: ['pnpdevices', 'storage', 'script', 'connectwise', 'inventory']
 description: 'This document outlines the purpose and dependencies of the PNP Devices Storage Script within ConnectWise Automate. It details the data structure used to store information about PNP devices, including their status and classification.'
 tags: ['database']
@@ -30,4 +30,6 @@ Stores the data collected by the [CWM - Automate - Script - Get-PNPDevices [DV]]
 | Status        | varchar(1000) | Current status of the PNP device     |
 | Class         | varchar(1000) | Class of the PNP device               |
 | Date          | datetime     | Script run time                      |
+
+
 

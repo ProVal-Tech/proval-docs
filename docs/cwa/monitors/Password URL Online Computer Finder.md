@@ -1,7 +1,7 @@
 ---
 id: '87d846e1-3f32-4e3d-b4f9-4c17d2d2830f'
-title: 'Monitor for Online Computer Matching Location Password'
-title_meta: 'Monitor for Online Computer Matching Location Password'
+title: 'Password URL Online Computer Finder'
+title_meta: 'Password URL Online Computer Finder'
 keywords: ['monitor', 'online', 'computer', 'location', 'password', 'unifi', 'health', 'check']
 description: 'This document outlines a method to monitor for online computers that match specific location passwords, allowing for targeted operations such as running health checks on Unifi systems. It includes SQL queries for data retrieval and dependencies on ITGlue documents.'
 tags: ['networking', 'sql', 'unifi']
@@ -56,4 +56,6 @@ AND computers.LastContact > DATE_ADD(NOW(), INTERVAL -15 MINUTE)
 AND computers.os LIKE '%Windows%'
 GROUP BY computers.locationid
 ```
+
+
 

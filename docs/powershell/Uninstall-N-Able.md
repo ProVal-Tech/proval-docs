@@ -1,7 +1,7 @@
 ---
 id: ps-uninstall-n-able
 title: 'Uninstall-N-Able'
-title_meta: 'Uninstall-N-Able Command'
+title_meta: 'Uninstall-N-Able'
 keywords: ['uninstall', 'n-able', 'agent', 'remove']
 description: 'Documentation for the Uninstall-N-Able command to perform the uninstallation of the N-Able Windows Agent.'
 tags: ['n-able', 'software', 'uninstallation']
@@ -30,4 +30,6 @@ Location of output for log, result, and error files:
 
 - .\Uninstall-N-Able-log.txt
 - .\Uninstall-N-Able-error.txt
+
+
 

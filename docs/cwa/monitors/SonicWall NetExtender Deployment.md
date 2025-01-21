@@ -1,7 +1,7 @@
 ---
 id: 'b0ca57d2-351c-4f1d-9d98-954c1d77777e'
-title: 'SonicWall NetExtender Monitor Setup'
-title_meta: 'SonicWall NetExtender Monitor Setup'
+title: 'SonicWall NetExtender Deployment'
+title_meta: 'SonicWall NetExtender Deployment'
 keywords: ['sonicwall', 'netextender', 'monitor', 'upgrade', 'deployment', 'edf', 'version']
 description: 'This document outlines the setup of an internal monitor for detecting the online Windows agent with SonicWall NetExtender installed, facilitating upgrades and excluding specific locations or agents as needed. It details dependencies and integration with other monitors for effective management.'
 tags: ['deployment']
@@ -24,4 +24,6 @@ This monitor is also set up to grab the latest version of SonicWall NetExtender 
 ## Target
 
 Global
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '12423bcf-17d9-417e-ad6e-b862dd04f184'
-title: 'Out of Date CU Installation Failure Detection'
-title_meta: 'Out of Date CU Installation Failure Detection'
+title: 'Out of Date CU _ Install Failure'
+title_meta: 'Out of Date CU _ Install Failure'
 keywords: ['cumulative', 'update', 'failure', 'detection', 'windows']
 description: 'This document outlines the steps to create a dynamic group in ConnectWise RMM that detects computers where the latest cumulative update installation failed to complete after a reboot. It includes dependencies, group creation steps, and criteria for filtering devices based on the installation status.'
 tags: ['connectwise', 'update', 'windows']
@@ -61,4 +61,6 @@ The group will detect the computers where the latest cumulative update installat
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_15.png)
 
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_16.png)
+
+
 

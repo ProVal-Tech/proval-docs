@@ -1,7 +1,7 @@
 ---
 id: 'c96624e1-038a-45ca-a6d0-645a629af721'
-title: 'Schedule Script to Run on Next Check-In'
-title_meta: 'Schedule Script to Run on Next Check-In'
+title: 'Queue Script'
+title_meta: 'Queue Script'
 keywords: ['schedule', 'script', 'checkin', 'automate', 'queued']
 description: 'This document outlines a script that schedules another script to run on a computer during its next check-in with the system. It includes details on dependencies, variables, user parameters, and processes involved in setting up the scheduled script.'
 tags: ['database', 'setup']
@@ -68,4 +68,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

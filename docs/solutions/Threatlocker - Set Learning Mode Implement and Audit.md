@@ -1,7 +1,7 @@
 ---
 id: '5e48c013-4305-4bfb-9cdd-1aa518d8f729'
-title: 'ThreatLocker Learning Mode Setup'
-title_meta: 'ThreatLocker Learning Mode Setup'
+title: 'Threatlocker - Set Learning Mode Implement and Audit'
+title_meta: 'Threatlocker - Set Learning Mode Implement and Audit'
 keywords: ['threatlocker', 'learning', 'mode', 'audit', 'api']
 description: 'This document outlines the process of setting ThreatLocker to learning mode using an API, including auditing details such as duration, status, and user information. It provides implementation steps, associated scripts, and FAQs for effective usage.'
 tags: ['api', 'security', 'setup']
@@ -58,4 +58,6 @@ After setting the keys, it is necessary to whitelist the file hash `9FA61A436668
 **Answer:** Possible error messages include the following:
 
 ![Image](https://proval.itglue.com/5078775/docs/16557700/images/24294965)
+
+
 

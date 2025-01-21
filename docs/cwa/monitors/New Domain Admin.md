@@ -1,7 +1,7 @@
 ---
 id: '226dd436-7d87-428c-a9ca-5309f5ad6c2f'
-title: 'Implementation Steps'
-title_meta: 'Implementation Steps for Alert Template and SQL Queries'
+title: 'New Domain Admin'
+title_meta: 'New Domain Admin'
 keywords: ['alert', 'sql', 'monitor', 'template', 'configuration', 'domain', 'controller']
 description: 'This document outlines the implementation steps for importing an alert template and executing SQL queries to set up monitoring for Domain Controllers. It includes detailed instructions for validating scripts, configuring monitors, and ensuring alert templates are correctly set up.'
 tags: ['database', 'windows']
@@ -124,4 +124,6 @@ unlisted: false
 
 - Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket%20Creation%20-%20Computer%20Failures%20Only.md)  
   ![Image](../../../static/img/New-Domain-Admin/image_2.png)  
+
+
 

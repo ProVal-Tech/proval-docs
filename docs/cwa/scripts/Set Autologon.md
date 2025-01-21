@@ -1,7 +1,7 @@
 ---
 id: '0e4d033e-85f3-4ca6-bbad-17a7848fb42a'
-title: 'Autologon Script for Automatic User Login'
-title_meta: 'Autologon Script for Automatic User Login'
+title: 'Set Autologon'
+title_meta: 'Set Autologon'
 keywords: ['autologon', 'login', 'script', 'sysinternals', 'windows']
 description: 'This document describes a script that downloads Autologon.exe from the Sysinternals website and configures it to enable automatic user login after system reboot. It includes user parameters, process details, and expected output.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -38,4 +38,6 @@ This script downloads Autologon.exe from Microsoft to the LTSvc folder. It then 
 ## Output
 
 - Script log messages
+
+
 

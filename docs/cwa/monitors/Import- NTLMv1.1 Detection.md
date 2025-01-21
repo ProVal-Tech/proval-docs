@@ -1,7 +1,7 @@
 ---
 id: '92ad2db8-528e-4bce-8011-ed0e3563e335'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Import- NTLMv1.1 Detection'
+title_meta: 'Import- NTLMv1.1 Detection'
 keywords: ['remote', 'monitor', 'groupid', 'query', 'alert']
 description: 'This document outlines the steps required to apply a remote monitor to specific groups in ConnectWise Automate. It includes instructions for obtaining group IDs, modifying a SQL query, executing the query, and locating the remote monitor within the group settings.'
 tags: ['connectwise', 'database']
@@ -161,4 +161,6 @@ Now execute your query from a RAWSQL monitor set.
 ### 5.
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
+
+
 

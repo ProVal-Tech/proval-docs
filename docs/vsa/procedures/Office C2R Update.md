@@ -1,7 +1,7 @@
 ---
 id: 'ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8'
-title: 'On-Demand Update for Click2Run Office Installation'
-title_meta: 'On-Demand Update for Click2Run Office Installation'
+title: 'Office C2R Update'
+title_meta: 'Office C2R Update'
 keywords: ['update', 'office', 'click2run', 'installation']
 description: 'This document provides a detailed procedure for performing an on-demand update for Click2Run Office installations on endpoints using an agnostic solution. It includes example logs, dependencies, and output details to assist in the execution and troubleshooting of the update process.'
 tags: ['software', 'update', 'windows']
@@ -45,4 +45,6 @@ Does this procedure depend on other VSA content? Link the ITGlue article for the
 ## Output
 
 Procedure log files and other outputs.
+
+
 

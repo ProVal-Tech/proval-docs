@@ -1,7 +1,7 @@
 ---
 id: '3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6'
-title: 'Remove Extensions from Chromium Browsers'
-title_meta: 'Remove Extensions from Chromium Browsers'
+title: 'Chromium Browsers - Extension - Remove'
+title_meta: 'Chromium Browsers - Extension - Remove'
 keywords: ['chromium', 'extensions', 'remove', 'chrome', 'edge', 'brave', 'vivaldi']
 description: 'This document provides a detailed guide on how to remove extensions from popular Chromium-based browsers including Chrome, Edge, Brave, Vivaldi, and Chromium. It includes user parameters, task creation steps, and a sample PowerShell script for automation.'
 tags: ['security', 'software', 'web-browser', 'windows']
@@ -135,4 +135,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 

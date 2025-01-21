@@ -1,7 +1,7 @@
 ---
 id: ps-enable-powerplan
 title: 'Enable-PowerPlan'
-title_meta: 'Enable-PowerPlan Command'
+title_meta: 'Enable-PowerPlan'
 keywords: ['enable', 'powerplan', 'profile', 'configuration']
 description: 'Documentation for the Enable-PowerPlan command to set the specified Power Plan as the active Power Profile.'
 tags: ['performance', 'windows']
@@ -37,4 +37,6 @@ Sets the `High Performance` Power Plan as the active Power Profile.
 ## Output
 - .\\Enable-PowerPlan-Log.txt
 - .\\Enable-PowerPlan-Error.txt
+
+
 

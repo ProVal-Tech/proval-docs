@@ -1,7 +1,7 @@
 ---
 id: 'a58ee59c-988e-4c12-a97b-c5e97f22905e'
-title: 'Create or Remove Shared Folders'
-title_meta: 'Create or Remove Shared Folders'
+title: 'Folder Share - Create or Remove'
+title_meta: 'Folder Share - Create or Remove'
 keywords: ['shared', 'folders', 'windows', 'script', 'permissions']
 description: 'This document provides a script designed to create or remove shared folders on a Windows device, detailing parameters, dependencies, and expected outputs for users.'
 tags: ['security', 'setup', 'windows']
@@ -56,4 +56,6 @@ The script will execute a PowerShell script, passing the above parameters. The s
 ## Output
 
 Script log messages.
+
+
 

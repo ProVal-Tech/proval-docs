@@ -1,7 +1,7 @@
 ---
 id: '0bc76dfc-6e84-459d-83a8-306fe625c835'
-title: 'Client and Agent Level EDFs for DUO Installation'
-title_meta: 'Client and Agent Level EDFs for DUO Installation'
+title: 'DUO - Install MFA Authentication For Windows EDFs'
+title_meta: 'DUO - Install MFA Authentication For Windows EDFs'
 keywords: ['duo', 'installation', 'edf', 'monitor', 'agent', 'client']
 description: 'This document outlines the use of Client and Agent Level EDFs along with an internal monitor to ensure that DUO software is installed for all agents within a client. It includes sample runs, dependencies, global parameters, and the process for installation.'
 tags: ['installation', 'software', 'ticketing']
@@ -47,4 +47,6 @@ Sets all variables from EDFs and Script Globals. The process will exit if requir
 
 - Script Log
 - Ticket - Optional
+
+
 

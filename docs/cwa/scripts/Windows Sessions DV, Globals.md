@@ -1,7 +1,7 @@
 ---
 id: '7d803c02-dd33-4a82-810e-02b4820ae88b'
-title: 'Query Session Command Execution'
-title_meta: 'Query Session Command Execution'
+title: 'Windows Sessions DV, Globals'
+title_meta: 'Windows Sessions DV, Globals'
 keywords: ['query', 'session', 'execution', 'database', 'custom', 'table']
 description: 'This document outlines the execution of the query session command and how to store the results in a custom table. It includes sample runs, dependencies, variable descriptions, global parameters, and output details.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -37,4 +37,6 @@ Executes the `query session` command and stores the result in a custom table.
 
 - Dataview
 - Custom Table
+
+
 

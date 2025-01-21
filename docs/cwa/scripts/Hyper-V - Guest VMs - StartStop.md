@@ -1,7 +1,7 @@
 ---
 id: '52d001b4-7152-4616-92de-99a002e2d22c'
-title: 'Hyper-V VM Control Script'
-title_meta: 'Hyper-V VM Control Script for Managing Virtual Machines'
+title: 'Hyper-V - Guest VMs - StartStop'
+title_meta: 'Hyper-V - Guest VMs - StartStop'
 keywords: ['hyper-v', 'vm', 'control', 'shutdown', 'startup']
 description: 'This document describes a script that enables the management of virtual machines on a Hyper-V host, allowing users to start or shut down VMs based on previous executions of the script, ultimately saving time in the process.'
 tags: ['hyper-v', 'logging', 'virtualization', 'windows']
@@ -41,4 +41,6 @@ Please see [Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870) for 
 
 - Outputs logs to the script log.
 - Outputs logs to log/data files in the script directory.
+
+
 

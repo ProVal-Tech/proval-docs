@@ -1,7 +1,7 @@
 ---
 id: 'cc311e32-be16-4133-ae95-fca238aea891'
-title: 'Internal Monitor Notification for ConnectWise Manage Plugin'
-title_meta: 'Internal Monitor Notification for ConnectWise Manage Plugin'
+title: 'CW Manage Plugin Errors'
+title_meta: 'CW Manage Plugin Errors'
 keywords: ['monitor', 'notification', 'connectwise', 'alerts', 'plugin', 'error']
 description: 'This document outlines the setup and dependencies for an internal monitor that notifies the specified email address of critical errors or issues related to the ConnectWise Manage Plugin. It includes information on the necessary dependencies and the target configuration for global monitoring.'
 tags: ['connectwise', 'email']
@@ -23,4 +23,6 @@ Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template 
 ## Target
 
 Global
+
+
 

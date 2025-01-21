@@ -1,7 +1,7 @@
 ---
 id: '7668ab71-a969-42d2-bf54-6b3cc21e8cda'
-title: 'Remove Inactive Network Devices'
-title_meta: 'Remove Inactive Network Devices - Autofix Script'
+title: 'Network Devices - Remove Older Than 60 Days'
+title_meta: 'Network Devices - Remove Older Than 60 Days'
 keywords: ['network', 'devices', 'inactive', 'sql', 'autofix']
 description: 'This document describes a script that removes network devices that have not been online for 60 days. It is designed to be used as an Autofix solution, saving valuable time by automating the cleanup process. The script executes SQL queries to identify and delete inactive devices, ensuring a streamlined network management experience.'
 tags: ['cleanup', 'sql']
@@ -27,4 +27,6 @@ The script runs a SQL query to delete network devices that have not been online 
 ## Output
 
 - Script log
+
+
 

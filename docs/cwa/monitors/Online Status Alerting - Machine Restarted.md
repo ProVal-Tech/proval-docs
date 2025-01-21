@@ -1,7 +1,7 @@
 ---
 id: 'b2fbe440-9d16-41ae-bd52-14037790697f'
-title: 'Online Status Alerting - Autofix'
-title_meta: 'Online Status Alerting - Autofix - Update Ticket + Email'
+title: 'Online Status Alerting - Machine Restarted'
+title_meta: 'Online Status Alerting - Machine Restarted'
 keywords: ['monitor', 'alerting', 'ticket', 'email', 'status']
 description: 'This document outlines the procedure for a monitor that triggers the Online Status Alerting - Autofix script when a machine comes back online after a restart, ensuring that the appropriate Ticket ID or Email ID is utilized from the EDF settings for notifications.'
 tags: ['email']
@@ -22,4 +22,6 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 ## Target
 
 Global
+
+
 

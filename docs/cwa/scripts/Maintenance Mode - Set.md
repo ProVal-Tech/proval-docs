@@ -1,7 +1,7 @@
 ---
 id: 'cca4abea-2af2-4ea8-b8ea-d6c2342c88a2'
-title: 'Set Maintenance Mode on Target Agent'
-title_meta: 'Set Maintenance Mode on Target Agent'
+title: 'Maintenance Mode - Set'
+title_meta: 'Maintenance Mode - Set'
 keywords: ['maintenance', 'agent', 'script', 'time', 'automation']
 description: 'This document provides a detailed overview of a script that sets maintenance mode on the target agent, including user parameters, process description, and expected output.'
 tags: ['setup', 'windows']
@@ -32,4 +32,6 @@ The script starts maintenance mode with a prompt for how long to set it. Please 
 ## Output
 
 - Script log
+
+
 

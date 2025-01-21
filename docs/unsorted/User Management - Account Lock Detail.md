@@ -1,7 +1,7 @@
 ---
 id: 'b5fa1e24-5582-4c2c-9277-ead30c0f3693'
-title: 'User Lockout Account Audit'
-title_meta: 'User Lockout Account Audit'
+title: 'User Management - Account Lock Detail'
+title_meta: 'User Management - Account Lock Detail'
 keywords: ['audit', 'lockout', 'user', 'account', 'monitor']
 description: 'This document outlines the user lockout account audit process, detailing associated content, implementation steps, and best practices for monitoring account lockouts in Active Directory environments.'
 tags: ['active-directory', 'report', 'windows']
@@ -35,4 +35,6 @@ Schedule on all Windows machines.
 ## FAQ
 
 *(No FAQs have been provided in this document.)*
+
+
 

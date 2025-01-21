@@ -1,7 +1,7 @@
 ---
 id: '72784e6a-7954-4965-871a-ab9a0a13d298'
-title: 'Stack-Standard Disk Cleanup Utility'
-title_meta: 'Stack-Standard Disk Cleanup Utility'
+title: 'Soji Disk Cleaner'
+title_meta: 'Soji Disk Cleaner'
 keywords: ['disk', 'cleanup', 'utility', 'soji', 'endpoint']
 description: 'This document outlines the Stack-Standard Disk Cleanup utility that utilizes agnostic content Soji to perform a cleanup of all drives on the target endpoint. It includes a sample run log, process description, and expected output from the cleanup operation.'
 tags: ['cleanup', 'disk']
@@ -62,4 +62,6 @@ Describe the steps the script performs to accomplish the desired task. Note that
 - etc.
 
 Attach the content XML VSA Export to this document.
+
+
 

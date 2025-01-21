@@ -1,7 +1,7 @@
 ---
 id: 'b0f8d2f8-6688-4c91-990a-041ad2e9bd3e'
-title: 'SWM - Software Configuration - Clear Gecko Cache'
-title_meta: 'SWM - Software Configuration - Clear Gecko Cache'
+title: 'Gecko Cache - Clear'
+title_meta: 'Gecko Cache - Clear'
 keywords: ['automate', 'gecko', 'cache', 'configuration', 'script']
 description: 'This document outlines the Automate implementation of the agnostic script SWM - Software Configuration - Clear Gecko Cache, including a sample run and output details.'
 tags: ['setup', 'software', 'windows']
@@ -20,6 +20,8 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
+
+
 
 
 

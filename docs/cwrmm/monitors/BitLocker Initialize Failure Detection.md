@@ -1,7 +1,7 @@
 ---
 id: '9475b189-47c5-4682-b278-de406761113b'
-title: 'BitLocker Initialization Failure Monitor'
-title_meta: 'BitLocker Initialization Failure Monitor'
+title: 'BitLocker Initialize Failure Detection'
+title_meta: 'BitLocker Initialize Failure Detection'
 keywords: ['bitlocker', 'monitor', 'ticket', 'failure', 'windows']
 description: 'This document provides a detailed guide on creating a monitor that generates a ticket when the BitLocker Initialization fails on the system volume for Windows workstations. It includes dependencies, implementation steps, and ticketing information.'
 tags: ['security', 'windows']
@@ -64,4 +64,6 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+
 

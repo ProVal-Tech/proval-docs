@@ -1,7 +1,7 @@
 ---
 id: '91b463bf-7bb2-4c79-98ca-ef556ea093b0'
-title: 'Implementing Winget Install/Update for Teams'
-title_meta: 'Implementing Winget Install/Update for Teams'
+title: 'Configure BGInfo'
+title_meta: 'Configure BGInfo'
 keywords: ['winget', 'teams', 'install', 'update', 'monitor']
 description: 'This document outlines the steps to implement a remote monitor for installing or updating Microsoft Teams using Winget. It includes SQL queries for creating alert templates and configuring group agents to ensure proper monitoring and notification of the installation status.'
 tags: ['setup', 'software', 'sql', 'windows']
@@ -80,4 +80,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789',
+
+
 

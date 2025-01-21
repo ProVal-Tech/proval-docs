@@ -1,7 +1,7 @@
 ---
 id: '0a19eb90-ba18-4097-ab12-a76efa8e4b83'
-title: 'Remote Monitor for TLS Version Check'
-title_meta: 'Remote Monitor for TLS Version Check'
+title: 'TLS Version Check - Server'
+title_meta: 'TLS Version Check - Server'
 keywords: ['tls', 'monitor', 'windows', 'iis', 'exchange', 'file', 'servers', 'audit']
 description: 'This document outlines the setup and usage of a remote monitor designed to check and return the enabled TLS server version on a computer. It details the requirements, cautionary notes against alerting, and suggestions for implementation in managed Windows environments.'
 tags: ['exchange', 'iis', 'security', 'windows']
@@ -38,4 +38,6 @@ Wherever you would like to audit the TLS server version.
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Server](<./TLS Version Check - Server.md>)
+
+
 

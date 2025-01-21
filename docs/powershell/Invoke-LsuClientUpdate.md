@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-lsuclientupdate
-title: 'Invoke-LSUClientUpdate'
-title_meta: 'Invoke-LSUClientUpdate Command'
+title: 'Invoke-LsuClientUpdate'
+title_meta: 'Invoke-LsuClientUpdate'
 keywords: ['lenovo', 'update', 'firmware', 'driver']
 description: 'Documentation for the Invoke-LSUClientUpdate command to install applicable and silently installable updates on Lenovo machines.'
 tags: ['software', 'update', 'windows']
@@ -61,4 +61,6 @@ This command will attempt to install all available and silently installable pack
     LogOutput      :
     Runtime        : 00:00:21.3074228
 ```
+
+
 

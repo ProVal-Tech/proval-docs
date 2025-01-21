@@ -1,7 +1,7 @@
 ---
 id: '651e701f-40d0-4657-817c-b81785d441ea'
-title: 'Crystal Disk Info Report Automation'
-title_meta: 'Crystal Disk Info Report Automation for Disk Health Monitoring'
+title: 'Crystal Disk Info Report'
+title_meta: 'Crystal Disk Info Report'
 keywords: ['disk', 'health', 'monitoring', 'report', 'automation']
 description: 'This document provides a comprehensive overview of a script that automates the execution of the Crystal Disk Info tool on physical machines. It captures disk health information, logs the results, and creates tickets for any disks not in good health. The script is designed for use in ConnectWise Automate environments and includes details on dependencies, variables, and ticketing procedures.'
 tags: ['disk', 'windows']
@@ -204,5 +204,7 @@ Attached **`DiskInfo.txt`** File:
 
 e.g.,  
 ![Example Exclusion](../../../static/img/Crystal-Disk-Info-Report/image_7.png)
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: 'ff998a72-b705-497c-a96b-15116f62b2a8'
-title: 'Windows 10 to Windows 11 Upgrade Solution'
-title_meta: 'Windows 10 to Windows 11 Upgrade Solution'
+title: 'Windows 10 to 11 Upgrade'
+title_meta: 'Windows 10 to 11 Upgrade'
 keywords: ['windows', 'upgrade', 'installation', 'compatibility', 'customfield', 'policy', 'task']
 description: 'This document outlines a solution for identifying Windows 10 computers that are compatible with Windows 11 and facilitating their upgrade. It includes details on custom fields, device groups, tasks, and policies necessary for the upgrade process, as well as backup options in case of policy failure.'
 tags: ['installation', 'windows']
@@ -106,4 +106,6 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - This policy group document is just for reference.
    - Use the existing policy in conjunction with the policy group if you have not created a new one.
    - The end goal here is to apply an `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](<../cwrmm/groups/Upgrade Enabled Windows 11 Compatible Machines.md>) group.
+
+
 

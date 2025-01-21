@@ -1,7 +1,7 @@
 ---
 id: 'd2ceaf24-a522-423a-be42-f0e120ffaba8'
-title: 'CWM - Automate - Script - Windows Installer Properties [DV]'
-title_meta: 'CWM - Automate - Script - Windows Installer Properties [DV]'
+title: 'Windows Installer Properties DV'
+title_meta: 'Windows Installer Properties DV'
 keywords: ['windows', 'installer', 'properties', 'script', 'dataview', 'sql', 'applications', 'management']
 description: 'The CWM - Automate - Script - Windows Installer Properties [DV] gathers and stores properties of applications installed on a machine, providing users with a structured overview of software management through SQL tables and dataviews.'
 tags: ['database', 'installation', 'report', 'setup', 'software']
@@ -39,4 +39,6 @@ Overall, the "CWM - Automate - Script - Windows Installer Properties [DV]" scrip
 - Custom Table
 - Dataview
 - Script Logs
+
+
 

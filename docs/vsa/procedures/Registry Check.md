@@ -1,7 +1,7 @@
 ---
 id: 'f0d83724-e8a8-41f8-8f73-fea99d0f34de'
-title: 'Check Windows 10 Feature Upgrade Status'
-title_meta: 'Check Windows 10 Feature Upgrade Status'
+title: 'Registry Check'
+title_meta: 'Registry Check'
 keywords: ['windows', 'upgrade', 'status', 'feature', 'check']
 description: 'This document outlines a process for checking the status of the Windows 10 Feature Upgrade process, including sample runs, output logs, and how the process reacts to different installation states.'
 tags: ['performance', 'report', 'windows']
@@ -30,4 +30,6 @@ The process is scheduled automatically in 1-hour increments. It reacts to the re
 ## Output
 
 AP Log
+
+
 

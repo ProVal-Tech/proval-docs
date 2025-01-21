@@ -1,7 +1,7 @@
 ---
 id: 'c9ae6663-8100-457c-abb8-d210f9fd8f87'
-title: 'Autofix for Stuck Commands in ProVal Monitor'
-title_meta: 'Autofix for Stuck Commands in ProVal Monitor'
+title: 'CWM - Automate - Agent - Command - Delete Running'
+title_meta: 'CWM - Automate - Agent - Command - Delete Running'
 keywords: ['autofix', 'stuck', 'commands', 'monitor', 'database']
 description: 'This document describes a script designed to automatically fix issues with stuck commands in the ProVal monitor. It identifies and deletes commands that are stuck in an executing state, ensuring smoother operation of the monitoring system.'
 tags: ['database']
@@ -36,4 +36,6 @@ This script will execute with the monitor and will delete all the executable com
 ## Output
 
 - Script log
+
+
 

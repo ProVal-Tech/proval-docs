@@ -1,7 +1,7 @@
 ---
 id: '1650f6a6-2a4b-4c8c-9818-3f91ffe1805f'
-title: 'Windows Server BitLocker Roles'
-title_meta: 'Windows Server BitLocker Roles'
+title: 'Bitlocker'
+title_meta: 'Bitlocker'
 keywords: ['windows', 'server', 'bitlocker', 'roles', 'security']
 description: 'This document outlines the roles responsible for determining the eligibility of Windows Server for BitLocker. It includes detailed detection strings, comparators, and the applicable operating systems for each role, along with SQL commands to implement these roles.'
 tags: ['security', 'setup', 'windows']
@@ -30,4 +30,6 @@ insert into `roledefinitions` (`RoleName`, `RoleType`, `RoleSubType`, `Detection
 insert into `roledefinitions` (`RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `RoleDetectionGuid`, `IsRemote`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `OsType`) values('Windows Server BitLocker-Utilities','PowerShell','Role','%@powershell.exe -nologo -noprofile -command "(Get-WindowsOptionalFeature -Online -FeatureName Bitlocker-Utilities).state"@%','eq','Enabled','','','618da03f-a2ba-11ef-8f2a-8600008a66b7','1','0','0','','1');
 insert into `roledefinitions` (`RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `RoleDetectionGuid`, `IsRemote`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `OsType`) values('Windows Server BitLocker-RemoteAdminTool','PowerShell','Role','%@powershell.exe -nologo -noprofile -command "(Get-WindowsOptionalFeature -Online -FeatureName BitLocker-RemoteAdminTool).state"@%','eq','Enabled','','','8be25675-a2ba-11ef-8f2a-8600008a66b7','1','0','0','','1');
 ```
+
+
 

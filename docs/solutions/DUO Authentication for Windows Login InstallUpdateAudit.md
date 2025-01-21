@@ -1,7 +1,7 @@
 ---
 id: '076d4f1d-6b33-449a-9bf1-d0f8cb42b3de'
-title: 'DUO Authentication for Windows Login Installation and Update Automation'
-title_meta: 'DUO Authentication for Windows Login Installation and Update Automation'
+title: 'DUO Authentication for Windows Login InstallUpdateAudit'
+title_meta: 'DUO Authentication for Windows Login InstallUpdateAudit'
 keywords: ['duo', 'authentication', 'windows', 'login', 'installation', 'update', 'automation', 'auditing']
 description: 'This document provides a comprehensive guide to automate the installation and update of DUO Authentication for Windows Login, including the necessary custom fields, device groups, and tasks for efficient deployment and auditing.'
 tags: ['auditing', 'deployment', 'software']
@@ -51,4 +51,6 @@ Create the following device groups:
 ### Step 3
 Create and deploy the following tasks:  
 [CW RMM - Task - DUO Install & Upgrade - Latest Version](<../cwrmm/tasks/DUO Install & Upgrade - Latest Version.md>)  
+
+
 

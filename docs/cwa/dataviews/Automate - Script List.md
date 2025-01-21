@@ -1,7 +1,7 @@
 ---
 id: 'afe8b7a5-442c-415e-9a9a-32a10702c189'
-title: 'Script Summary DataView'
-title_meta: 'Script Summary DataView for ConnectWise Automate'
+title: 'Automate - Script List'
+title_meta: 'Automate - Script List'
 keywords: ['script', 'summary', 'dataview', 'logs', 'permissions', 'performance']
 description: 'This document provides a detailed overview of a dataview that lists all scripts in the ConnectWise Automate environment, including their folder details, types, execution permissions, and performance metrics. It also summarizes script execution over a defined retention period.'
 tags: ['performance', 'report', 'security', 'software']
@@ -43,4 +43,6 @@ The script log retention days can be seen at the Automate location below:
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Automate---Script-List/image_2.png)
+
+
 

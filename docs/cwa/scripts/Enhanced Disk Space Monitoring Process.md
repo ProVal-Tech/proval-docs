@@ -1,7 +1,7 @@
 ---
 id: '8efd9cc2-b054-4dda-a690-bbe1d4bd16b3'
-title: 'EPM Disk Internal Monitor Autofix Script'
-title_meta: 'EPM Disk Internal Monitor Autofix Script'
+title: 'Enhanced Disk Space Monitoring Process'
+title_meta: 'Enhanced Disk Space Monitoring Process'
 keywords: ['disk', 'monitor', 'autofix', 'cleanup', 'ticket', 'threshold']
 description: 'This document details the EPM Disk Internal Monitor Autofix Script, which monitors drive space, performs disk cleanup, and manages ticket creation for low drive space conditions. It includes information on its functionality, dependencies, and usage parameters.'
 tags: ['cleanup', 'disk', 'performance', 'windows']
@@ -173,4 +173,6 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
 
 ![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
+
+
 

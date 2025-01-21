@@ -1,7 +1,7 @@
 ---
 id: '337526eb-1aa7-48a3-beab-ab66d2b7aea8'
-title: 'Group Policy Audit in Active Directory'
-title_meta: 'Group Policy Audit in Active Directory'
+title: 'Windows - Group Policy Object Security Filtering'
+title_meta: 'Windows - Group Policy Object Security Filtering'
 keywords: ['active-directory', 'gpo', 'security', 'audit', 'policy']
 description: 'This document provides an overview of a dataview that displays information related to Group Policy Objects (GPOs) in Active Directory, focusing on security policies. It outlines dependencies, columns, and details necessary for auditing GPOs effectively.'
 tags: ['active-directory', 'gpo', 'security']
@@ -40,4 +40,6 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | CreatedTime     | The time when the GPO was created                                                                |
 | ModifiedTime    | The last time this GPO was modified                                                             |
 | ReadTime        | The last time this GPO was read.                                                                |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-diskinfo
 title: 'Get-DiskInfo'
-title_meta: 'Get-DiskInfo Command'
+title_meta: 'Get-DiskInfo'
 keywords: ['disk', 'info', 'performance', 'health']
 description: 'Documentation for the Get-DiskInfo command to return detailed information about all individual drives, including performance and logical drive levels.'
 tags: ['performance', 'windows']
@@ -78,4 +78,6 @@ Location of output for log, result, and error files.
 ```
 [system.object]
 ```
+
+
 

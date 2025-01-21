@@ -1,7 +1,7 @@
 ---
 id: 'f8c0fb81-16ab-4ba2-85ce-d84792a49f6b'
-title: 'Centralized Local Admin User Management'
-title_meta: 'Centralized Local Admin User Management for Enhanced Security'
+title: 'Windows Local Admin Process'
+title_meta: 'Windows Local Admin Process'
 keywords: ['admin', 'security', 'password', 'management', 'monitoring']
 description: 'This document outlines a solution for establishing a centralized local admin user for each client or computer, implementing a password rotation mechanism to enhance security, facilitate management, and mitigate risks associated with static local admin credentials. It includes implementation steps, update notices, and FAQs.'
 tags: ['security', 'update', 'windows']
@@ -89,4 +89,6 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
+
+
 

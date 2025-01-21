@@ -1,7 +1,7 @@
 ---
 id: 'a998bb96-b12c-40d9-b117-3225c621341a'
 title: 'Set Last Logged In User'
-title_meta: 'Set Last Logged In User - Manage Windows Login Information'
+title_meta: 'Set Last Logged In User'
 keywords: ['last', 'logged', 'user', 'windows', 'login', 'script', 'management']
 description: 'This document provides a comprehensive guide on implementing a script to manage the last logged-in user information displayed on the Windows login screen. It covers parameters for clearing user data, setting a new last logged-in user, and options for rebooting the computer to apply changes.'
 tags: ['security', 'setup', 'windows']
@@ -195,4 +195,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 

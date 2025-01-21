@@ -1,7 +1,7 @@
 ---
 id: 'ecddbc88-fbef-4678-b02b-2cc19b219fdc'
-title: 'Azure AD Joined Custom Field'
-title_meta: 'Azure AD Joined Custom Field'
+title: 'EPM - Data Collection - Custom Field- Azure AD Status'
+title_meta: 'EPM - Data Collection - Custom Field- Azure AD Status'
 keywords: ['azure', 'ad', 'custom', 'field', 'machine']
 description: 'This document provides details about a custom field used to indicate whether a machine is joined to Azure Active Directory (AD). It includes information on dependencies and the specific field names utilized in the configuration.'
 tags: ['active-directory', 'azure']
@@ -24,4 +24,6 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM 
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
+
+
 

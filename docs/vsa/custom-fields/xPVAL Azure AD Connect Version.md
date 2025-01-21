@@ -1,7 +1,7 @@
 ---
 id: 'cce3e0b2-3fe2-43d2-ba22-ca7885d4729a'
-title: 'Azure AD Connect Version Audit'
-title_meta: 'Azure AD Connect Version Audit'
+title: 'xPVAL Azure AD Connect Version'
+title_meta: 'xPVAL Azure AD Connect Version'
 keywords: ['azure', 'ad', 'connect', 'version', 'audit']
 description: 'This document provides an overview of the Azure AD Connect version installed on endpoints, detailing its dependencies and field descriptions for effective auditing and management.'
 tags: ['report', 'software', 'windows']
@@ -27,4 +27,6 @@ This document contains information about the Azure AD Connect version installed 
 | Field Name                          | Type of Field (Machine or Organization) | Description              |
 |-------------------------------------|-----------------------------------------|--------------------------|
 | xPVAL Azure AD Connect Version      | Machine CF                             | Azure AD Connect Version  |
+
+
 

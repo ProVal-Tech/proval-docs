@@ -1,7 +1,7 @@
 ---
 id: '2eff2df6-a435-433a-8664-79cdda6fdedc'
-title: 'Windows Feature Pack Update Failure: Compatibility Check Error'
-title_meta: 'Windows Feature Pack Update Failure: Compatibility Check Error'
+title: 'Windows Feature Pack Update Failure Compatibility Check Error'
+title_meta: 'Windows Feature Pack Update Failure Compatibility Check Error'
 keywords: ['windows', 'feature', 'update', 'failure', 'compatibility', 'check', 'error']
 description: 'This document outlines the process for categorizing Windows 11 computers where the Feature Update Install with Tracking script has failed due to a Compatibility Check Error. It includes criteria for selection and steps for creating a dynamic group in ConnectWise RMM.'
 tags: ['security', 'update', 'windows']
@@ -46,4 +46,6 @@ Click the `Save` button to save the group.
 Click the `Save` button to save the group.
 
 ![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_7.png)
+
+
 

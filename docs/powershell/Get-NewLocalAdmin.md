@@ -1,7 +1,7 @@
 ---
 id: ps-get-newlocaladmin
 title: 'Get-NewLocalAdmin'
-title_meta: 'Get-NewLocalAdmin Command'
+title_meta: 'Get-NewLocalAdmin'
 keywords: ['new', 'local', 'admin', 'permissions']
 description: 'Documentation for the Get-NewLocalAdmin command to get user accounts that have been granted elevated permissions since the last run of the script.'
 tags: ['security', 'windows']
@@ -34,4 +34,6 @@ If the script has not been run previously, the admin data is saved to the table,
 
 - `Get-NewLocalAdmin_log`
 - `Get-NewLocalAdmin_admins`
+
+
 

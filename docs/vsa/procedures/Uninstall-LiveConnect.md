@@ -1,7 +1,7 @@
 ---
 id: '02641c45-1e2e-470a-ae9f-224a754bf9c7'
-title: 'Uninstall Live Connect'
-title_meta: 'Uninstall Live Connect - Kaseya Remote Control Software'
+title: 'Uninstall-LiveConnect'
+title_meta: 'Uninstall-LiveConnect'
 keywords: ['uninstall', 'liveconnect', 'kaseya', 'remote', 'control']
 description: 'This document provides a detailed overview of a script that cleanly uninstalls the Live Connect software, which is used for Kaseya Remote Control. It outlines the process, requirements, and output of the script, as well as updates made to enhance its functionality.'
 tags: ['kaseya', 'software', 'uninstallation']
@@ -53,4 +53,6 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM               |                                         |
 | Kaseya VSA                    |                                         |
 | Datto RMM                     |                                         |
+
+
 

@@ -26,3 +26,5 @@ The script is located in ProVal VSA at:
 
 ![Image](../../../static/img/Enable-Bitlocker/image_1.png)
 
+
+

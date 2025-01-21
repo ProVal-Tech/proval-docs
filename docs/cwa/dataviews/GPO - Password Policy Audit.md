@@ -1,7 +1,7 @@
 ---
 id: '28ff3938-c093-47c6-8495-498f407740a7'
-title: 'Default Password Policy Audit'
-title_meta: 'Default Password Policy Audit in Domain'
+title: 'GPO - Password Policy Audit'
+title_meta: 'GPO - Password Policy Audit'
 keywords: ['password', 'policy', 'audit', 'domain', 'security']
 description: 'This document provides a detailed overview of the default password policy in a domain, including its key components and dependencies. It outlines the various settings that govern password complexity, length, history, and account lockout procedures, ensuring a comprehensive understanding of the security measures in place.'
 tags: ['security', 'windows']
@@ -36,4 +36,6 @@ This document provides information about the default password policy in a domain
 | Reverse Encryption Enabled           | Yes/No - Indicates if reverse encryption is enabled on the domain                                            |
 
 (Reference documentation: [Password Policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-policy))
+
+
 

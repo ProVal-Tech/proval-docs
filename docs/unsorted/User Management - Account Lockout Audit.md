@@ -1,7 +1,7 @@
 ---
 id: 'c7996686-560d-47e2-acbf-99ae88c3102e'
-title: 'Audit Locked Account Script'
-title_meta: 'Audit Locked Account Script'
+title: 'User Management - Account Lockout Audit'
+title_meta: 'User Management - Account Lockout Audit'
 keywords: ['audit', 'locked', 'account', 'security', 'event', 'log', 'detection', 'management']
 description: 'This document provides details on a script that audits locked accounts, captures relevant data from security event logs, and stores this information for future reference. It includes sample runs, dependencies, variable documentation, and process descriptions.'
 tags: ['database', 'security', 'windows']
@@ -52,4 +52,6 @@ Examples:
 - Script log
 - plugin_proval_account_lock
 - Dataview
+
+
 

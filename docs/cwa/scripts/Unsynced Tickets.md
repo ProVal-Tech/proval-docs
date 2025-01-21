@@ -1,7 +1,7 @@
 ---
 id: 'eb434aae-87c4-4315-bf73-202a41ff3a96'
-title: 'Unsynced Ticket Email Notification'
-title_meta: 'Unsynced Ticket Email Notification'
+title: 'Unsynced Tickets'
+title_meta: 'Unsynced Tickets'
 keywords: ['email', 'ticket', 'sync', 'notification', 'automate']
 description: 'This document outlines a script that sends an email notification about tickets that failed to sync with PSA in the past specified hours. It details requirements, global parameters, and system properties necessary for the script to function effectively.'
 tags: ['email']
@@ -83,4 +83,6 @@ Ticket Body: \<Ticket Body>
 
 **Sample Screenshot:**
 ![Sample Screenshot](../../../static/img/Unsynced-Tickets/image_5.png)
+
+
 

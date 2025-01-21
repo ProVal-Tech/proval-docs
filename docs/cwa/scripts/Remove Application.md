@@ -1,7 +1,7 @@
 ---
 id: '494f7109-e4b2-4ffa-93f8-e33089b09b4e'
-title: 'Remove Application Script'
-title_meta: 'Remove Application Script for Uninstalling Software'
+title: 'Remove Application'
+title_meta: 'Remove Application'
 keywords: ['uninstall', 'software', 'bloatware', 'ticketing', 'error', 'log']
 description: 'This document provides an overview of a script designed to facilitate the removal of specified software packages from a computer system, including functionality for uninstalling bloatware. It outlines the necessary precautions, command execution steps, sample runs, dependencies, and user parameters for effective usage.'
 tags: ['performance', 'security', 'setup', 'software', 'uninstallation']
@@ -104,4 +104,6 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 **Example:**  
 ![Ticketing Example](../../../static/img/Remove-Application/image_8.png)
+
+
 

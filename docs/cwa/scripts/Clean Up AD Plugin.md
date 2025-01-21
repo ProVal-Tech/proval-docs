@@ -1,7 +1,7 @@
 ---
 id: 'fc26cfc8-33ff-405d-ba3a-bfad02637607'
 title: 'Clean Up AD Plugin'
-title_meta: 'Clean Up AD Plugin for ConnectWise Automate'
+title_meta: 'Clean Up AD Plugin'
 keywords: ['active-directory', 'cleanup', 'database', 'synchronization']
 description: 'This document describes the process of cleaning up the Active Directory Plugin in ConnectWise Automate by removing unnecessary rows from specific tables and ensuring that the plugin is up to date. It outlines the requirements and dependencies for successful implementation.'
 tags: ['active-directory', 'cleanup', 'database', 'setup']
@@ -32,4 +32,6 @@ Additionally, it removes all rows with `ObjectType` 1 or 2 from `plugin_ad_entri
 
 1. Import the 'Clean Up AD Plugin' script.
 2. Schedule the client script to run.
+
+
 

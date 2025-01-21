@@ -1,7 +1,7 @@
 ---
 id: '4f7c1abe-2d4b-4ad3-81a7-48e3111015ac'
-title: 'Denied Patches Dataview'
-title_meta: 'Denied Patches Dataview'
+title: 'ProVal's Denied Patches'
+title_meta: 'ProVal's Denied Patches'
 keywords: ['dataview', 'patches', 'itglue', 'denied', 'policy']
 description: 'This document provides a detailed overview of the Denied Patches Dataview, which populates information about denied patches after executing the Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset script. It includes dependencies and a description of the columns used in the dataview.'
 tags: ['database', 'report']
@@ -25,4 +25,6 @@ This Dataview populates information about the [Denied Patches](https://proval.it
 | KBID   | KBID of the Denied Patch.        |
 | Title  | Title of the denied patch.       |
 | Reason | Reason behind denying the patch.  |
+
+
 

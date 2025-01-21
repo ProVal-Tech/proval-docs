@@ -1,7 +1,7 @@
 ---
 id: 'c563d6fc-13b1-4cc5-9461-745e2a25b49d'
-title: 'Remove Font from Windows Machines'
-title_meta: 'Remove Font from Windows Machines'
+title: 'Remove Font'
+title_meta: 'Remove Font'
 keywords: ['remove', 'font', 'windows', 'script', 'uninstall']
 description: 'This document provides a comprehensive guide on removing installed fonts from Windows machines using a script. It includes sample runs, user parameters, task creation steps, and detailed instructions for implementing the script in ConnectWise RMM.'
 tags: ['uninstallation', 'windows']
@@ -174,4 +174,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'd468b194-6df4-46b0-8dbc-657b623209ff'
-title: 'ConnectWise Control Agent Online Status'
-title_meta: 'ConnectWise Control Agent Online Status'
+title: 'plugin_proval_control_session_status'
+title_meta: 'plugin_proval_control_session_status'
 keywords: ['connectwise', 'agent', 'status', 'online', 'portal']
 description: 'This document outlines the current online status of ConnectWise Control agents within the Control Portal, detailing dependencies and the structure of the relevant database table.'
 tags: ['connectwise', 'database']
@@ -29,4 +29,6 @@ This document holds the current ConnectWise Control agent online status for each
 | Online              | TINYINT(1)   | Holds the online status of the computer in ConnectWise Control agent.                         |
 | LastConnectedDate   | DATETIME     | Holds the last connected date of the ConnectWise Control agent.                               |
 | SCName              | VARCHAR(50)  | Holds the computer name as displayed in the ConnectWise Control portal for that agent.       |
+
+
 

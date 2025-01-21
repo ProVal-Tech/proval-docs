@@ -1,7 +1,7 @@
 ---
 id: '6b5259a2-9eb6-4dc1-877d-ca404877cfc9'
-title: 'Install ImmyBot on Endpoint'
-title_meta: 'Install ImmyBot on Endpoint - VSA Implementation Guide'
+title: 'Install-ImmyBot'
+title_meta: 'Install-ImmyBot'
 keywords: ['immybot', 'installation', 'endpoint', 'vsa', 'agent']
 description: 'This document provides a comprehensive guide for installing ImmyBot on endpoints using preconfigured variables within the VSA environment. It covers dependencies, implementation steps, usage of the installation script, and detailed parameter descriptions.'
 tags: ['installation', 'software']
@@ -73,4 +73,6 @@ Agent Procedure Log Entry
 %ProgramData%_automation/AgentProcedure/ImmyBotInstall/Install-ImmyBot-log.txt
 %ProgramData%_automation/AgentProcedure/ImmyBotInstall/Install-ImmyBot-error.txt
 ```
+
+
 

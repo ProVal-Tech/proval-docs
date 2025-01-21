@@ -1,7 +1,7 @@
 ---
 id: '8beb5e09-23af-40e8-8810-ec1a030c600b'
-title: 'Determine OS Install Date'
-title_meta: 'Determine the Initial Install Date of the Operating System'
+title: 'OS Install Date'
+title_meta: 'OS Install Date'
 keywords: ['os', 'install', 'date', 'powershell', 'agent', 'procedure']
 description: 'This document outlines a procedure to determine the initial install date of the operating system using PowerShell. It provides a detailed example of the agent procedure log, dependencies required for execution, and the expected output of the procedure.'
 tags: ['performance', 'software', 'update', 'windows']
@@ -38,5 +38,7 @@ The agent procedure requires the custom field to be created in order to successf
 ## Output
 
 The agent procedure updates the custom field.
+
+
 
 

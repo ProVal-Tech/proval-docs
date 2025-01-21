@@ -1,7 +1,7 @@
 ---
 id: '561ad1ae-cf4c-49cf-83ea-c41148e66de8'
-title: 'Remove McAfee Software from Windows Machines'
-title_meta: 'Remove McAfee Software from Windows Machines'
+title: 'McAfee Products - Uninstall'
+title_meta: 'McAfee Products - Uninstall'
 keywords: ['mcafee', 'uninstall', 'windows', 'software', 'removal']
 description: 'This document provides a detailed overview of an Automate implementation for the agnostic solution to remove McAfee products from Windows machines. It includes a summary of the script, sample run visuals, dependencies, process steps, and expected output logs.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -30,4 +30,6 @@ This script is an Automate implementation of the agnostic solution [SWM - Softwa
 ## Output
 
 - Script Log
+
+
 

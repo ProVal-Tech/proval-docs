@@ -1,7 +1,7 @@
 ---
 id: 'ee9ae5d4-3ab4-462b-8d90-63a5604a18a4'
-title: 'Global Dataview for Windows Machines'
-title_meta: 'Global Dataview for Windows Machines'
+title: 'Software - Open DNS - Global Agent Audit'
+title_meta: 'Software - Open DNS - Global Agent Audit'
 keywords: ['windows', 'dns', 'umbrella', 'msp', 'licensing']
 description: 'This document provides an overview of the Global Dataview that displays every Windows machine in the environment and indicates whether the Umbrella_RC service is installed, suggesting that OpenDNS is being utilized. It aims to assist Managed Service Providers (MSPs) in optimizing their licensing and deployment of the Umbrella agent based on the machines’ connectivity and requirements.'
 tags: ['networking', 'report', 'security', 'setup', 'windows']
@@ -26,4 +26,6 @@ Many MSPs set up OpenDNS on the LAN, so all workstations connected via Ethernet 
 | Machine Type    | Displays whether the machine is a workstation or a server |
 | Wireless Card    | Displays whether the machine has a wireless card installed or not |
 | Umbrella Agent  | Displays whether the machine has an Umbrella agent installed |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5078e020-af01-4d5f-8fc2-c1fb59208fdf'
-title: 'Automate Wrapper for Agnostic Update-Office Script'
-title_meta: 'Automate Wrapper for Agnostic Update-Office Script'
+title: 'SWM - Software Configuration - Script - Microsoft Office 365 - Update'
+title_meta: 'SWM - Software Configuration - Script - Microsoft Office 365 - Update'
 keywords: ['automate', 'update', 'office', 'script', 'wrapper']
 description: 'This document describes an Automate Wrapper designed to execute the Agnostic Update-Office script, detailing its dependencies, variables, user parameters, global parameters, and ticketing features. It provides a comprehensive guide for users to effectively utilize the script for updating Microsoft Office applications.'
 tags: ['ticketing', 'update']
@@ -61,4 +61,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_2.png)
+
+
 

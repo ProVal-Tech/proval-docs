@@ -1,7 +1,7 @@
 ---
 id: 'ec679801-c86a-4127-9b62-46be10207909'
-title: 'Custom Table for Computer Contact Audit'
-title_meta: 'Custom Table for Computer Contact Audit'
+title: 'pvl_automate_connection_audit'
+title_meta: 'pvl_automate_connection_audit'
 keywords: ['custom', 'table', 'contact', 'audit', 'automate']
 description: 'This document outlines the purpose and structure of a custom table that records the last contact time of computers in ConnectWise Automate whenever their state changes, including going offline and checking in again.'
 tags: ['database', 'report', 'update']
@@ -28,4 +28,6 @@ The custom table records the computer’s last contact time whenever its state c
 | state              | tinyint  | Indicates whether the computer is offline or online (0/1) |
 | lastcontact        | datetime | The last contact time of the computer when the state changed |
 | datacollectiontime  | datetime | The data collection time for the respective entry    |
+
+
 

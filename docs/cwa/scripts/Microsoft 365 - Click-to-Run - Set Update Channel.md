@@ -1,7 +1,7 @@
 ---
 id: '77f0982f-1be7-49a7-871e-cfc88705775e'
-title: 'Get M365 Update Channel'
-title_meta: 'Get M365 Update Channel - Configure Microsoft 365 Update Channel via Registry'
+title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
+title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'registry', 'client', 'computer', 'edf']
 description: 'This document details a script that modifies the registry to set the update channel for Microsoft 365 products based on the values defined in the Client or Computer level EDF Update Channel. It includes sample runs, dependencies, and detailed tables for client and computer level EDF configurations.'
 tags: ['software', 'update', 'windows']
@@ -48,4 +48,6 @@ This script will make changes in the registry to set the update channel for Micr
 - Script Log
 - Custom Table
 - Dataview
+
+
 

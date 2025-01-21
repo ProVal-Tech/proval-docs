@@ -1,7 +1,7 @@
 ---
 id: '59fbb11b-df98-46a4-9b97-986b4f8e16f9'
-title: 'Unifi Data Collection for ConnectWise Automate'
-title_meta: 'Unifi Data Collection for ConnectWise Automate'
+title: 'CWA - Update Table Data - UnifiController'
+title_meta: 'CWA - Update Table Data - UnifiController'
 keywords: ['unifi', 'connectwise', 'data', 'collection', 'automation']
 description: 'This document provides a comprehensive guide on how to collect and integrate data from the Unifi controller into the ConnectWise Automate environment, including associated scripts and custom tables for efficient data management.'
 tags: ['database', 'installation', 'networking', 'report', 'software', 'update', 'windows']
@@ -36,4 +36,6 @@ To implement this solution, follow these steps. Is there any manual configuratio
 ## FAQ
 
 *(This section can be filled with frequently asked questions related to the implementation or usage of the solution.)*
+
+
 

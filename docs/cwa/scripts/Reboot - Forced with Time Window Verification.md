@@ -1,7 +1,7 @@
 ---
 id: 'c0d649f3-0de3-4928-9f15-19fbfb3f625e'
-title: 'Reboot Machine Within Time Window'
-title_meta: 'Reboot Machine Within Time Window'
+title: 'Reboot - Forced with Time Window Verification'
+title_meta: 'Reboot - Forced with Time Window Verification'
 keywords: ['reboot', 'machine', 'time', 'window', 'script']
 description: 'This script allows you to reboot a machine only if it falls within a specified time window, which is not configured by default. It ensures that reboots occur at appropriate times to minimize disruption.'
 tags: ['security', 'windows']
@@ -39,4 +39,6 @@ This script will reboot a machine, but only if it is within a preconfigured time
 ## Output
 
 - Script log
+
+
 

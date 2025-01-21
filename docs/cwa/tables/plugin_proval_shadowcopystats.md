@@ -1,7 +1,7 @@
 ---
 id: '59bbf54a-55af-42fa-9e77-cd0b105122de'
-title: 'Windows Shadow Copies Information'
-title_meta: 'Windows Shadow Copies Information'
+title: 'plugin_proval_shadowcopystats'
+title_meta: 'plugin_proval_shadowcopystats'
 keywords: ['shadow', 'copies', 'windows', 'audit', 'statistics']
 description: 'This document provides detailed information about Windows shadow copies, including their statistics and storage details. It outlines the structure of the data collected, dependencies, and specific metrics related to shadow copies on audited machines.'
 tags: ['backup', 'disk-encryption', 'report', 'windows']
@@ -33,4 +33,6 @@ Stores information about Windows shadow copies.
 | AllocatedSpace   | FLOAT   | Allocated space size for the Shadow Copy in GB.                                               |
 | UsedSpace       | FLOAT   | Used space size by the Shadow Copy in GB.                                                       |
 | MaxSpace        | FLOAT   | Maximum space provided to the Shadow Copy in GB.                                               |
+
+
 

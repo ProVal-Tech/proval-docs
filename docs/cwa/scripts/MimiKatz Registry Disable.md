@@ -1,7 +1,7 @@
 ---
 id: '9b06cea7-e39b-46f2-ac30-3d8b5fc6339b'
-title: 'Autofix Script for MimiKatz Vulnerable Systems'
-title_meta: 'Autofix Script for MimiKatz Vulnerable Systems'
+title: 'MimiKatz Registry Disable'
+title_meta: 'MimiKatz Registry Disable'
 keywords: ['autofix', 'mimikatz', 'vulnerability', 'registry', 'monitor', 'ticketing']
 description: 'This document provides an overview of an autofix script designed to disable the MimiKatz registry setting if a monitor detects it is enabled. The script is integrated with ticketing to manage service requests and logs its actions for review.'
 tags: ['registry', 'security', 'ticketing']
@@ -40,4 +40,6 @@ This autofix script needs to be set up with the monitor @ProVal - Production - S
 
 - Script log
 - Ticket
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '9be930d0-0f3e-40c2-8135-3a77e59a1e9e'
-title: 'Client-Level Ticket Management for Pending Server Reboots'
-title_meta: 'Client-Level Ticket Management for Pending Server Reboots'
+title: 'Reboot Pending Servers per client - Ticket Creation'
+title_meta: 'Reboot Pending Servers per client - Ticket Creation'
 keywords: ['ticket', 'server', 'reboot', 'client', 'management', 'pending', 'automation']
 description: 'This document outlines a script designed to manage client-level tickets for pending server reboots. It generates tickets based on the number of servers awaiting reboot, closes tickets for servers that no longer need reboots, and ensures that new tickets are created with the most current information. The script is intended for regular scheduling to maintain up-to-date ticket management.'
 tags: []
@@ -35,4 +35,6 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 **Computer-Level Ticket:**  
 ![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
+
+
 

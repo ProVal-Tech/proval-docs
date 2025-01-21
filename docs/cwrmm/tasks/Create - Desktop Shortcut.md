@@ -1,7 +1,7 @@
 ---
 id: 'b2c83951-fe1d-4d71-b334-223590be3cc4'
-title: 'Create Desktop Shortcut'
-title_meta: 'Create Desktop Shortcut'
+title: 'Create - Desktop Shortcut'
+title_meta: 'Create - Desktop Shortcut'
 keywords: ['shortcut', 'desktop', 'uri', 'icon', 'management']
 description: 'This document provides a comprehensive guide on how to create a shortcut in the Public Desktop folder using a script. It includes sample runs, user parameters, implementation steps, and detailed instructions for setting up the task in the Script Editor.'
 tags: ['setup', 'software']
@@ -230,5 +230,7 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: '95512be1-f340-42dc-b0c2-885396526850'
-title: 'Bitlocker Audit Report'
-title_meta: 'Bitlocker Audit Report'
+title: 'SEC- Encryption - Dataview - Bitlocker - Non Domain - Audit'
+title_meta: 'SEC- Encryption - Dataview - Bitlocker - Non Domain - Audit'
 keywords: ['bitlocker', 'audit', 'encryption', 'active-directory', 'backup', 'security']
 description: 'This document provides a comprehensive Bitlocker audit report, detailing the encryption status and key protector backups for each audited volume. It includes SQL representation and dependencies for accurate data retrieval and analysis.'
 tags: ['active-directory', 'backup', 'encryption', 'security', 'windows']
@@ -117,4 +117,6 @@ FROM (
         JOIN clients cl ON c.ClientID = cl.ClientID
 ) dt
 ```
+
+
 

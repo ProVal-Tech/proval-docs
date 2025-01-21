@@ -1,7 +1,7 @@
 ---
 id: '1f389c5d-df7a-49a9-9db4-9e0442afbe7b'
-title: 'Remote Monitor for LTCache Size'
-title_meta: 'Remote Monitor for LTCache Size'
+title: 'LTCache Monitoring'
+title_meta: 'LTCache Monitoring'
 keywords: ['monitor', 'ltcache', 'windows', 'alert', 'agent']
 description: 'This document outlines a remote monitor setup that detects when the LTCache directory at C://Windows//Temp exceeds 5 GB in size. It provides details on suggested settings for alerts and the specific check action to be implemented on Windows machines.'
 tags: ['setup', 'windows']
@@ -26,5 +26,7 @@ This is a remote monitor that will detect when the 'C:/Windows/Temp/LTCache' spa
 ## Target
 
 This monitor should be run on all Windows machines.
+
+
 
 

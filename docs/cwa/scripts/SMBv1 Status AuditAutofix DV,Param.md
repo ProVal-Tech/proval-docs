@@ -1,7 +1,7 @@
 ---
 id: '4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b'
-title: 'SMBv1 Detection and Remediation Script'
-title_meta: 'SMBv1 Detection and Remediation Script'
+title: 'SMBv1 Status AuditAutofix DV,Param'
+title_meta: 'SMBv1 Status AuditAutofix DV,Param'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability', 'monitoring']
 description: 'This document outlines a script created to detect and remediate SMBv1 vulnerabilities based on specified settings in the EDF. It details the script execution requirements, dependencies, variables, and output, along with ticketing procedures for successful and failed remediation attempts.'
 tags: ['logging', 'report', 'vulnerability', 'windows']
@@ -75,4 +75,6 @@ It is required to execute this script after importing it with the setting `SetEn
    - **Body:**  
      The vulnerability has been remediated successfully. Refer to the log information below:  
      @SMB1DisableOutput@
+
+
 

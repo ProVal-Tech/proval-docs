@@ -1,7 +1,7 @@
 ---
 id: 'f04ef005-9203-4967-9bcc-11457c91d2dc'
-title: 'Move Unassigned Computers to Matching Locations'
-title_meta: 'Move Unassigned Computers to Matching Locations'
+title: 'Move New Agent to Matching Location (DomainRouter)'
+title_meta: 'Move New Agent to Matching Location (DomainRouter)'
 keywords: ['computers', 'location', 'domain', 'router', 'automation']
 description: 'This document describes a script that automates the process of moving new or unassigned computers from Location ID 1 to their appropriate locations based on matching domain or router addresses, saving time and improving efficiency.'
 tags: ['networking', 'performance', 'setup', 'windows']
@@ -39,4 +39,6 @@ This script will move new or unassigned computers from Location ID 1 to the matc
 ## Output
 
 - Script Log.
+
+
 

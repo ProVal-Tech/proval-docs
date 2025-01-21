@@ -1,7 +1,7 @@
 ---
 id: 'd48f4966-b281-4aaa-8bf0-5059221b7ff3'
-title: 'Click-to-Run Office Audit'
-title_meta: 'Click-to-Run Office Audit'
+title: 'C2R Office Version Audit'
+title_meta: 'C2R Office Version Audit'
 keywords: ['office', 'update', 'audit', 'status', 'version', 'channel']
 description: 'This document details a dataview that populates the Click-to-Run Office version, auto-update status, and update channel information on a machine, along with basic system information. It includes dependencies for data collection and monitoring scripts.'
 tags: ['report', 'software', 'update']
@@ -37,5 +37,7 @@ This dataview populates the Click-to-Run Office version, auto-update status, and
 | Auto Update               | Whether Office Auto Update is enabled on the machine             |
 | Update Channel            | Update Channel for Office installed on the machine                |
 | Script Run Time           | Last time [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine |
+
+
 
 

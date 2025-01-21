@@ -1,7 +1,7 @@
 ---
 id: '22dabcfc-b55c-4eae-81df-96c01446c3b7'
-title: 'Built-In Scripts Permissions'
-title_meta: 'Built-In Scripts Permissions'
+title: 'pvl_scripts_permissions'
+title_meta: 'pvl_scripts_permissions'
 keywords: ['guid', 'permissions', 'userclass', 'scripts', 'access']
 description: 'This document outlines the purpose and details of the Built-In Scripts Permissions, including the GUID and user class assignments for script access and editing. It also highlights dependencies and provides a table detailing the structure of the pvl_scripts_permissions table.'
 tags: ['database', 'security']
@@ -28,4 +28,6 @@ This document stores the GUID and the set of user class(es) for Built-In scripts
 | Developer            | varchar | Creator of the script (Stock or ProVal). The beta version of the solution is limited to the stock scripts. |
 | InitialPermission    | varchar | Existing view permission of the script.                                                          |
 | InitialEditPermission| varchar | Existing edit permission of the script.                                                           |
+
+
 

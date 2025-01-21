@@ -1,7 +1,7 @@
 ---
 id: ps-initialize-bitlockervolume
 title: 'Initialize-BitLockerVolume'
-title_meta: 'Initialize-BitLockerVolume Command'
+title_meta: 'Initialize-BitLockerVolume'
 keywords: ['initialize', 'bitlocker', 'volume', 'encryption']
 description: 'Documentation for the Initialize-BitLockerVolume command to encrypt a drive with BitLocker disk encryption.'
 tags: ['disk-encryption', 'security', 'windows']
@@ -77,5 +77,7 @@ Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256
 - .\\Initialize-BitLockerVolume-log.txt
 - .\\Initialize-BitLockerVolume-data.txt
 - .\\Initialize-BitLockerVolume-error.txt
+
+
 
 

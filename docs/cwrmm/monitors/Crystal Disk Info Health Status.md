@@ -1,7 +1,7 @@
 ---
 id: '8ceb86c8-23b2-4a95-b920-f78e446d9e59'
-title: 'Crystal Disk Info Health Monitor Setup'
-title_meta: 'Crystal Disk Info Health Monitor Setup'
+title: 'Crystal Disk Info Health Status'
+title_meta: 'Crystal Disk Info Health Status'
 keywords: ['monitor', 'alert', 'disk', 'health', 'custom', 'field']
 description: 'This document provides a step-by-step guide on setting up a monitor in ConnectWise RMM that generates alerts based on the health status of disks as reported by the Crystal Disk Info custom field. It also details how to automate ticket resolution based on the disk health status.'
 tags: ['disk', 'setup']
@@ -54,4 +54,6 @@ The monitor set will generate an alert for computers in which the custom field [
 
 - [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>)  
 - [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>)
+
+
 

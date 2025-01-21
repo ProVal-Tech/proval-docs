@@ -1,7 +1,7 @@
 ---
 id: 'ce8d5706-137b-4a55-8a8b-5041e35421de'
-title: 'DHCP Scope Monitor for Insufficient IP Addresses'
-title_meta: 'DHCP Scope Monitor for Insufficient IP Addresses'
+title: 'DHCP Scope(s) 25 and 20 Percent IP Addresses Available'
+title_meta: 'DHCP Scope(s) 25 and 20 Percent IP Addresses Available'
 keywords: ['dhcp', 'monitor', 'ip', 'addresses', 'alert']
 description: 'This document outlines a remote monitor designed to retrieve information about active DHCP server scopes and their IP address statistics. It identifies DHCP servers with insufficient available IP addresses, alerting when active scopes have less than 20 IP addresses or 25% availability. The monitor considers reserved percentages for DHCP failover scopes and ensures both conditions are met before triggering an alert.'
 tags: ['networking', 'windows']
@@ -88,4 +88,6 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 25% and 20 IP Addresses Available](https://proval.itglue.com/DOC-5078775-15408683)
+
+
 

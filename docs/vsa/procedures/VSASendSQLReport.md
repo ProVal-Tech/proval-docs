@@ -1,7 +1,7 @@
 ---
 id: '147ab797-98c3-410d-ab22-e29627e7582a'
-title: 'Get SQL Data and Send as Report'
-title_meta: 'Get SQL Data and Send as Report'
+title: 'VSASendSQLReport'
+title_meta: 'VSASendSQLReport'
 keywords: ['sql', 'report', 'email', 'csv', 'server']
 description: 'This document provides a detailed overview of how to retrieve SQL data and send it as a report via email. It outlines the necessary parameters, including credential types, SQL server details, and email configurations required for successful execution.'
 tags: ['database', 'email', 'report', 'windows']
@@ -23,4 +23,6 @@ Get SQL Data and Send as Report
 - **filename**: Required. The filename of the CSV.  
 - **sqluser**: Required if using SQL credtype. The username to log in to the SQL server.  
 - **sqlpassword**: Required if using SQL credtype. The password to log in to the SQL server.  
+
+
 

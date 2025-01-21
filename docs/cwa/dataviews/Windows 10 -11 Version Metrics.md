@@ -1,7 +1,7 @@
 ---
 id: '998bc4c8-47ea-410d-8ef0-36491abbd96a'
-title: 'Windows Version Metrics Dataview'
-title_meta: 'Windows Version Metrics Dataview'
+title: 'Windows 10 -11 Version Metrics'
+title_meta: 'Windows 10 -11 Version Metrics'
 keywords: ['windows', 'version', 'metrics', 'dataview', 'releaseid']
 description: 'This document provides a detailed overview of a Dataview that displays the number of Windows 10 and Windows 11 machines categorized by their build number (ReleaseID) along with calculated percentages of machines on each version compared to the total. It includes filters, summary rows, and insights into Microsoft support status for various Windows versions.'
 tags: ['performance', 'report', 'security', 'windows']
@@ -68,4 +68,6 @@ There are three summarized rows in this Dataview: one for all Windows 10, one fo
 | % Unsupported Machines              | The percentage of Windows 10+ machines that are on the ReleaseID and are outside their Microsoft support window. Example: Windows 10/11 Total Machines: **100**; W10 - 1809 Unsupported Machines: 7; W11 - 22H2 Unsupported Machines: 0. W10 - 22H1 % Total Online W/ Patch Policy: 7.0%; W11 - 22H2 % Total Online W/ Patch Policy: 0%. Summary Rows: Windows 10 - The percentage of Windows 10+ machines that are on Windows 10 and are outside their Microsoft support window. Windows 11 - The percentage of Windows 10+ machines that are on Windows 11 and are outside their Microsoft support window. Windows 11 + 10 - The percentage of Windows 10+ machines that are outside their Microsoft support window. Example: Windows 10/11 Total Machines: **100**; Windows 10 Unsupported Machines: 14; Windows 11 Unsupported Machines: 0; Windows 10 + 11 Unsupported Machines: 14. Windows 10 % Unsupported Machines: 14.0%; Windows 11 % Unsupported Machines: 0%; Windows 11 + 10 % Unsupported Machines: 14.0%. |
 | % Unsupported Machines - OS         | The percentage of Windows 10+ machines out of the same base OS that are on the ReleaseID and are outside their Microsoft support window. Example: Windows 10/11 Total Machines: **100**; Windows 10 Total Machines: 40; Windows 11 Total Machines: 60; W10 - 1803 Unsupported Machines: 5; W11 - 22H2 Unsupported Machines: 0. W10 - 22H1 % Unsupported Machines - OS: 12.5%; W11 - 22H2 % Unsupported Machines - OS: 0%. Summary Rows: Windows 10 - The percentage of Windows 10 machines that are on Windows 10 and are outside their Microsoft support window. Windows 11 - The percentage of Windows 11 machines that are on Windows 11 and are outside their Microsoft support window. Windows 11 + 10 - The percentage of Windows 10+ machines that are outside their Microsoft support window. Example: Windows 10/11 Total Machines: **100**; Windows 10 Total Machines: 80; Windows 11 Total Machines: 20; Windows 10 Unsupported Machines: 8; Windows 11 Unsupported Machines: 0; Windows 10 + 11 Unsupported Machines: 8. Windows 10 % Unsupported Machines - OS: 10.0%; Windows 11 % Unsupported Machines - OS: 0%; Windows 11 + 10 % Unsupported Machines - OS: 8.0%. |
 ---
+
+
 

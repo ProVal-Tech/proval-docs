@@ -1,7 +1,7 @@
 ---
 id: 'dde000a0-373a-4023-a594-04e532b5ad57'
-title: 'Collect Crash Dump Information'
-title_meta: 'Collect Crash Dump Information'
+title: 'Get-CrashDump'
+title_meta: 'Get-CrashDump'
 keywords: ['crash', 'dump', 'information', 'data', 'ticket', 'email', 'custom', 'table']
 description: 'This document outlines the process for collecting information regarding existing crash dumps on target endpoints using a PowerShell script. It includes sample runs, expected return types, dependencies, and detailed variable descriptions necessary for successful execution.'
 tags: ['email', 'performance', 'software', 'windows']
@@ -95,4 +95,6 @@ This document collects information regarding any existing crash dumps.
 ### Custom Table
 
 ![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
+
+
 

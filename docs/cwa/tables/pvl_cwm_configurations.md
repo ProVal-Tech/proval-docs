@@ -1,7 +1,7 @@
 ---
 id: 'eb24c920-fd51-4441-962b-520c48e9128e'
-title: 'Get CWM Configurations - Active And Managed Only'
-title_meta: 'Get CWM Configurations - Active And Managed Only'
+title: 'pvl_cwm_configurations'
+title_meta: 'pvl_cwm_configurations'
 keywords: ['cwm', 'configurations', 'managed', 'active', 'data', 'collection']
 description: 'This document outlines the purpose and structure of the data stored by the Get CWM Configurations script, which gathers information on active and managed configurations from ConnectWise Manage. It includes details on dependencies and the schema of the data collected.'
 tags: ['database', 'report', 'software', 'windows']
@@ -29,4 +29,6 @@ Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - 
 | PurchaseDate       | datetime | Purchase Date of the Computer/Configuration returned from CW Manage.                         |
 | ExpirationDate     | datetime | Warranty Expiration Date of the Computer/Configuration returned from CW Manage.              |
 | ScriptRunTime      | datetime | Data Collection Time.                                                                         |
+
+
 

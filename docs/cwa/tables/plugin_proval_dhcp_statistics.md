@@ -1,7 +1,7 @@
 ---
 id: '489fe175-9ac6-420c-be2e-e5faceb956fd'
-title: 'DHCP Scope Information Storage'
-title_meta: 'DHCP Scope Information Storage'
+title: 'plugin_proval_dhcp_statistics'
+title_meta: 'plugin_proval_dhcp_statistics'
 keywords: ['dhcp', 'scope', 'statistics', 'ip', 'lease', 'address', 'computer', 'client']
 description: 'This document outlines the purpose and structure of storing information about DHCP scopes on the target machine, as gathered by the script Get DHCP Server Scope Information. It includes details about the dependencies and a comprehensive table of the data collected, including client IDs, location IDs, and IP address ranges.'
 tags: ['database', 'networking', 'report', 'windows']
@@ -36,4 +36,6 @@ Stores information about DHCP scopes on the target machine gathered by the scrip
 | UsedIPCount       | INT     | The number of used IP addresses in the DHCP scope.      |
 | ReservedIPCount    | INT     | The number of reserved IP addresses in the DHCP scope.  |
 | PercentUsed       | INT     | The percentage of used IP addresses in the DHCP scope.  |
+
+
 

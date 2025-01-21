@@ -1,7 +1,7 @@
 ---
 id: '5c93252c-c3d9-48d7-bc9b-4073c9e49638'
-title: 'Disable RDP on Windows Machines'
-title_meta: 'Disable RDP on Windows Machines'
+title: 'Disable RDP'
+title_meta: 'Disable RDP'
 keywords: ['rdp', 'windows', 'registry', 'disable', 'script']
 description: 'This document explains a script designed to check if Remote Desktop Protocol (RDP) is enabled on a Windows machine and disable it by modifying the relevant Registry value. It provides a detailed log of actions taken during the execution of the script, along with sample outputs and processes involved.'
 tags: ['logging', 'security', 'windows']
@@ -56,4 +56,6 @@ Script Logs
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

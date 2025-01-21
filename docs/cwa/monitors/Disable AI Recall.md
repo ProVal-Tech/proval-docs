@@ -1,7 +1,7 @@
 ---
 id: 'c9ef3af9-ea83-467d-a5b7-e34248ab65c5'
-title: 'Steps to Set Up Remote Monitor'
-title_meta: 'Steps to Set Up Remote Monitor'
+title: 'Disable AI Recall'
+title_meta: 'Disable AI Recall'
 keywords: ['setup', 'monitor', 'sql', 'remote', 'windows', 'groupid', 'alert']
 description: 'This document provides detailed steps to set up a remote monitor for Windows 11 machines using SQL queries. It includes obtaining group IDs, executing SQL commands, and applying alert templates for effective monitoring.'
 tags: ['setup', 'sql', 'windows']
@@ -217,4 +217,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

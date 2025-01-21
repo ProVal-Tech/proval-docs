@@ -1,7 +1,7 @@
 ---
 id: 'c9183b6d-95a8-409a-9d04-e85611bf04d2'
-title: 'Alert for Multiple Antivirus Detection'
-title_meta: 'Alert for Multiple Antivirus Detection'
+title: 'ProVal - NonStack - Multiple Antivirus'
+title_meta: 'ProVal - NonStack - Multiple Antivirus'
 keywords: ['alert', 'antivirus', 'monitor', 'detection', 'windows']
 description: 'This document outlines the setup for an alert that triggers when two or more antivirus products are detected on a Windows machine. It provides details on the necessary checks, requirements, and potential issues that may arise when multiple antivirus applications are installed.'
 tags: ['security', 'windows']
@@ -53,5 +53,7 @@ The intended target of this monitor is Windows-based machines that have had at l
 ```
 return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
+
+
 
 

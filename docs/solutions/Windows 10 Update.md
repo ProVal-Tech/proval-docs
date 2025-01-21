@@ -1,7 +1,7 @@
 ---
 id: '16c09937-d57e-4d56-8367-fb5551d1c386'
-title: 'Windows 10 Feature Update Installation'
-title_meta: 'Windows 10 Feature Update Installation'
+title: 'Windows 10 Update'
+title_meta: 'Windows 10 Update'
 keywords: ['windows', 'update', 'installation', 'report', 'alert', 'monitoring']
 description: 'This document outlines a solution for updating Windows 10 machines to the latest Feature Update from Microsoft. It includes features such as reporting successes and failures, user prompts for installation, reboot scheduling, and integration with custom tables for tracking update statuses.'
 tags: ['installation', 'report', 'update', 'windows']
@@ -64,4 +64,6 @@ For a manual run:
 
 4. **The Windows 10 - Feature Update - Install Latest script is failing at line 13.**
    - Please add the Windows 10 - Update Stats - Retrieve script to your automate implementation.
+
+
 

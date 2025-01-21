@@ -1,7 +1,7 @@
 ---
 id: 'dc812b4e-6919-4cc9-a5c5-1e5e8b80c0ab'
-title: 'Update List By Scan - All Machines'
-title_meta: 'Update List By Scan - All Machines'
+title: 'EPM - Windows Configuration - Policy - Update List By Scan - All Machines'
+title_meta: 'EPM - Windows Configuration - Policy - Update List By Scan - All Machines'
 keywords: ['policy', 'update', 'scan', 'machines', 'monitor']
 description: 'This document outlines the policy for running the update list by scan on all machines. It includes details about the policy name, description, applied view, assigned organizations, and policy object settings.'
 tags: ['windows']
@@ -31,4 +31,6 @@ The policy will run the update list by scan on all the machines once.
 - **Policy Object Settings:** To run once at 8 AM with a 7-day distribution window
 
 ![Image](../../static/img/EPM---Windows-Configuration---Policy---Update-List-By-Scan---All-Machines/image_1.png)
+
+
 

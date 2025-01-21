@@ -1,7 +1,7 @@
 ---
 id: '2f324c74-1e32-4c48-b567-abbeebdabe6d'
-title: 'Scheduled Task Creation for Winget Update All'
-title_meta: 'Scheduled Task Creation for Winget Update All'
+title: 'Execute Script - Scheduled Task - Create - Winget Update All'
+title_meta: 'Execute Script - Scheduled Task - Create - Winget Update All'
 keywords: ['scheduled', 'task', 'winget', 'update', 'windows']
 description: 'This document outlines the process for executing a scheduled task that creates Winget Update All tasks on Windows 10 and 11 workstations. It details the necessary client-level and location-level EDFs for managing task initiation and exclusions.'
 tags: ['software', 'update', 'windows']
@@ -31,4 +31,6 @@ Managed Windows Workstations
 **Name**: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
 
 The alert template executes the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../scripts/Scheduled Task - Create - Winget Update All Autofix.md>)
+
+
 

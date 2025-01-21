@@ -1,7 +1,7 @@
 ---
 id: 'c893b839-b951-4b0c-b1d0-879361818839'
-title: 'Remove Application Result Custom Field'
-title_meta: 'Remove Application Result Custom Field'
+title: 'Remove Application'
+title_meta: 'Remove Application'
 keywords: ['customfield', 'application', 'result', 'status']
 description: 'This document provides a detailed overview of the custom field used in the "Remove Application" script to track the success or failure status of application removal. It includes steps for creating the custom field and its specific attributes.'
 tags: ['software']
@@ -45,4 +45,6 @@ The custom field described below is used in the "Remove Application" script to g
    ![Default Value and Description](../../../static/img/Remove-Application/image_13.png)  
 
    **Note**: The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
+
+
 

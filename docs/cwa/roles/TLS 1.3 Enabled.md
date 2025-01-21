@@ -1,7 +1,7 @@
 ---
 id: '5eb171c1-2c40-4283-b8dc-090faf1b2757'
-title: 'Check Registry for TLS 1.3 Client Settings'
-title_meta: 'Check Registry for TLS 1.3 Client Settings'
+title: 'TLS 1.3 Enabled'
+title_meta: 'TLS 1.3 Enabled'
 keywords: ['registry', 'tls', 'client', 'security', 'enabled', 'windows']
 description: 'This document provides a method to check the Windows registry for the TLS 1.3 Client settings. It outlines how to determine if the TLS 1.3 protocol is enabled by checking the registry value and includes related roles, scripts, and dataviews for comprehensive management of TLS settings.'
 tags: ['security', 'windows']
@@ -40,4 +40,6 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1
 | Detection String                                             | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled-%} | Equals     | 1      | Windows        |
+
+
 

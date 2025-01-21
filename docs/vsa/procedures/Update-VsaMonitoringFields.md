@@ -1,7 +1,7 @@
 ---
 id: '3a41852e-86f2-4fa6-b874-9ba472c9a223'
-title: 'Update VSA Monitoring Fields'
-title_meta: 'Update VSA Monitoring Fields for Agent Exclusions'
+title: 'Update-VsaMonitoringFields'
+title_meta: 'Update-VsaMonitoringFields'
 keywords: ['vsa', 'monitoring', 'exclusions', 'agents', 'automation']
 description: 'This document provides an overview of the process to update monitoring exclusions for agents in VSA using automation. It details the requirements for the VSAAPI module, the parameters for executing the script, and examples of how to use the script for on-demand and scheduled updates. The payload usage section illustrates how to manage exclusion settings for agents, groups, and organizations effectively.'
 tags: ['security', 'setup']
@@ -53,4 +53,6 @@ Writes contents of Org CF 'Managed' to 'xPVAL Monitoring Managed' on every endpo
 ```
 ./UpdateVsaMonitoringFields-log.txt
 ```
+
+
 

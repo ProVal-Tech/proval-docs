@@ -1,7 +1,7 @@
 ---
 id: 'f83e6218-da9e-451c-b8ec-fd57d32690f6'
-title: 'A Complete Drive Monitoring Solution for the VSA'
-title_meta: 'A Complete Drive Monitoring Solution for the VSA'
+title: 'VSA Drive Monitoring'
+title_meta: 'VSA Drive Monitoring'
 keywords: ['drive', 'monitoring', 'solution', 'vsa', 'disk']
 description: 'This document outlines a comprehensive drive monitoring solution for Kaseya VSA, detailing associated procedures, custom fields, monitor sets, views, and policies necessary for effective implementation and management of disk monitoring on endpoints.'
 tags: ['disk']
@@ -31,4 +31,6 @@ A Complete Drive Monitoring Solution for the VSA
 3. Import all Views and ensure the advanced filter is properly set on each.
 4. Import all Monitor Sets.
 5. Import all Policies.
+
+
 

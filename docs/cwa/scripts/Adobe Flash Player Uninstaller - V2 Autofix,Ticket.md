@@ -1,7 +1,7 @@
 ---
 id: 'a6c32cd9-8472-45cc-9260-3aa09510ce20'
-title: 'Uninstall Adobe Flash Player'
-title_meta: 'Uninstall Adobe Flash Player - Autofix Script'
+title: 'Adobe Flash Player Uninstaller - V2 Autofix,Ticket'
+title_meta: 'Adobe Flash Player Uninstaller - V2 Autofix,Ticket'
 keywords: ['uninstall', 'adobe', 'flash', 'player', 'script']
 description: 'This document describes an Autofix script designed to uninstall Adobe Flash Player from target machines using multiple methods. The script aims to save time by automating the uninstallation process and includes options for ticket creation in case of failure.'
 tags: ['adobe', 'software', 'uninstallation', 'windows']
@@ -38,6 +38,8 @@ If that fails, it will try to uninstall using the Uninstaller Software script wi
 ## Output
 
 - Script log
+
+
 
 
 

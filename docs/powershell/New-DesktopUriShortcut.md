@@ -1,7 +1,7 @@
 ---
 id: ps-new-desktopurishortcut
-title: 'Create Desktop URI Shortcut'
-title_meta: 'Create Desktop URI Shortcut with PowerShell'
+title: 'New-DesktopUriShortcut'
+title_meta: 'New-DesktopUriShortcut'
 keywords: ['shortcut', 'desktop', 'uri', 'wscript', 'favicon']
 description: 'Guide to creating a desktop URI shortcut using PowerShell.'
 tags: ['windows']
@@ -43,4 +43,6 @@ Creates a shortcut to a web link on the desktop.
 - `$env:PUBLIC\Pictures\icon.ico`
 - `New-DesktopUriShortcut-log.txt`
 - `New-DesktopUriShortcut-error.txt`
+
+
 

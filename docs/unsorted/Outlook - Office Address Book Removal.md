@@ -1,7 +1,7 @@
 ---
 id: 'a0367fce-be4b-474d-8ea1-259d81a33858'
-title: 'Remove and Reset Offline Address Books for All Users'
-title_meta: 'Remove and Reset Offline Address Books for All Users'
+title: 'Outlook - Office Address Book Removal'
+title_meta: 'Outlook - Office Address Book Removal'
 keywords: ['offline', 'address', 'books', 'reset', 'remove', 'users']
 description: 'This document provides a script that removes and resets the Offline Address Books folder for all users in a Windows environment, detailing the process and variables involved.'
 tags: ['performance', 'setup', 'windows']
@@ -30,4 +30,6 @@ The script will remove and reset the 'Offline Address Books' folder located at t
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-set-netadapterdns
 title: 'Set-NetAdapterDNS'
-title_meta: 'Set-NetAdapterDNS Command'
+title_meta: 'Set-NetAdapterDNS'
 keywords: ['dns', 'network', 'adapter', 'configuration']
 description: 'Documentation for the Set-NetAdapterDNS command to append a DNS server address to all physical, active network adapters.'
 tags: ['dns', 'networking', 'windows']
@@ -35,4 +35,6 @@ This command appends the DNS address `1.1.1.1` to the end of all active, physica
 ## Output
 - `.\Set-NetAdapterDNS-log.txt`
 - `.\Set-NetAdapterDNS-data.txt`
+
+
 

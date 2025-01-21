@@ -1,7 +1,7 @@
 ---
 id: '7532eff4-e724-471e-96fc-ddfd944bf710'
-title: 'Configurable Removal of Potentially Unwanted Applications'
-title_meta: 'Configurable Removal of Potentially Unwanted Applications'
+title: 'PUA Remove'
+title_meta: 'PUA Remove'
 keywords: ['removal', 'pua', 'software', 'uninstall', 'bloatware']
 description: 'This document provides a detailed overview of the configurable removal of potentially unwanted applications (PUAs) using an agnostic script. It includes sample run logs, variable descriptions, and the overall process for executing the script effectively.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -58,4 +58,6 @@ AP Log
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

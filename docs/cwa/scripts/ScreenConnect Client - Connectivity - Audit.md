@@ -1,7 +1,7 @@
 ---
 id: '18562eaa-d162-4362-98d3-4bbaa2922458'
-title: 'Incorrect RMM_Plus Configuration'
-title_meta: 'Incorrect RMM_Plus Configuration'
+title: 'ScreenConnect Client - Connectivity - Audit'
+title_meta: 'ScreenConnect Client - Connectivity - Audit'
 keywords: ['rmm', 'configuration', 'email', 'alerts', 'monitoring']
 description: 'This document details a script that checks the configuration of the RMM_Plus solution and sends an alert email if it is not properly configured. It outlines possible outcomes, system properties required for the script to run, and provides a sample run of the script.'
 tags: ['email']
@@ -57,4 +57,6 @@ Reference: [https://proval.itglue.com/5078775/docs/9770217](https://proval.itglu
 - Script log
 - Script state
 - Email
+
+
 

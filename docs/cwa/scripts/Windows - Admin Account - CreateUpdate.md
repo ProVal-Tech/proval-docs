@@ -1,7 +1,7 @@
 ---
 id: 'a3038ecc-f851-4327-b1ca-a4ca485f6f9c'
-title: 'Set Admin Account Script'
-title_meta: 'Set Admin Account Script for Windows Machines'
+title: 'Windows - Admin Account - CreateUpdate'
+title_meta: 'Windows - Admin Account - CreateUpdate'
 keywords: ['admin', 'user', 'domain', 'password', 'credentials']
 description: 'This document provides a detailed overview of the Set Admin Account script, which creates or updates a target admin user on a domain controller or local machine and saves the credentials to the passwords list for the Automate client. It includes usage instructions, parameter details, update notices, and sample runs.'
 tags: ['security', 'software', 'update', 'windows']
@@ -163,4 +163,6 @@ Attempted credentials are saved as \<Title> at the passwords tab of the client i
 ```
 Account Creation/Update Output: \<Output of the PowerShell Script>
 ```
+
+
 

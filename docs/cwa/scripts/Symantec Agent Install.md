@@ -1,7 +1,7 @@
 ---
 id: '47db6b3a-66e5-4ede-bc9f-7dfd3015608c'
-title: 'Install Symantec Agent on Windows'
-title_meta: 'Install Symantec Agent on Windows'
+title: 'Symantec Agent Install'
+title_meta: 'Symantec Agent Install'
 keywords: ['symantec', 'agent', 'windows', 'installation', 'software']
 description: 'This document outlines the process for installing the Symantec Agent on a Windows machine using a script. It includes details on dependencies, the installation process, and the expected output, highlighting the time saved by automation.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -31,4 +31,6 @@ The script installs the Symantec Agent on the Windows machine.
 ## Output
 
 - Script log
+
+
 

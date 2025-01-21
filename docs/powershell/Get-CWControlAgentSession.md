@@ -1,7 +1,7 @@
 ---
 id: ps-get-cwcontrolagentsession
 title: 'Get-CWControlAgentSession'
-title_meta: 'Get-CWControlAgentSession Command'
+title_meta: 'Get-CWControlAgentSession'
 keywords: ['connectwise', 'control', 'session', 'api']
 description: 'Documentation for the Get-CWControlAgentSession command to connect to ConnectWise Control via the built-in Plugin API in Automate to obtain a list of computers with their last check-in date and current state.'
 tags: ['report', 'software']
@@ -44,4 +44,6 @@ The system object will contain:
 ## Output
 - `.\Get-CWControlAgentSession-log.txt`
 - `.\Get-CWControlAgentSession-error.txt`
+
+
 

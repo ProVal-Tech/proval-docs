@@ -1,7 +1,7 @@
 ---
 id: 'e0706097-bc34-4648-b117-8fa1706a21e5'
-title: 'Clean LT Caching Folder Script'
-title_meta: 'Clean LT Caching Folder Script'
+title: 'LTCache - Delete All Files'
+title_meta: 'LTCache - Delete All Files'
 keywords: ['cleanup', 'caching', 'script', 'lt', 'folder', 'automation']
 description: 'This document provides details about a script designed to clean up the LT caching folder, saving approximately 10 minutes of manual effort. It includes a sample run, variable descriptions, and a step-by-step process of how the script operates, along with its output.'
 tags: ['caching', 'cleanup', 'windows']
@@ -34,4 +34,6 @@ This script will clean up the LT caching folder.
 ## Output
 
 - Script log
+
+
 

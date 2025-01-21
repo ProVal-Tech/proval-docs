@@ -1,7 +1,7 @@
 ---
 id: 'bdea3d9e-acca-4b87-96a6-632c488fef1f'
-title: 'Cyrisma Sensor Deployment and Audit Groups'
-title_meta: 'Cyrisma Sensor Deployment and Audit Groups'
+title: 'Cyrisma Sensor'
+title_meta: 'Cyrisma Sensor'
 keywords: ['cyrisma', 'sensor', 'deployment', 'audit', 'monitor', 'dynamic', 'groups']
 description: 'This document outlines the creation and management of dynamic groups for deploying and auditing the Cyrisma Sensor within ConnectWise RMM. It details the necessary criteria for each group and their respective functions in monitoring the deployment status and installed agents.'
 tags: ['report', 'software', 'windows']
@@ -58,4 +58,6 @@ Create Dynamic Groups:
    Criteria:
 
    - Installed Software contains any of 'CYRISMA'
+
+
 

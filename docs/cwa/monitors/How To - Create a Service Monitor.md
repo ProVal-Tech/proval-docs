@@ -1,7 +1,7 @@
 ---
 id: 'bc0be991-ae75-4429-aeb5-3eb1f31375b5'
-title: 'How To - Individual Monitor (Non - Group Based)'
-title_meta: 'How To - Individual Monitor (Non - Group Based)'
+title: 'How To - Create a Service Monitor'
+title_meta: 'How To - Create a Service Monitor'
 keywords: ['monitor', 'alert', 'service', 'windows', 'ticketing']
 description: 'This document provides a step-by-step guide on creating an individual monitor for services in ConnectWise Automate. It covers the setup process, suggested configurations, dependencies, target recommendations, and ticketing guidelines.'
 tags: ['alerting', 'ticketing', 'windows']
@@ -63,4 +63,6 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**  
 
 **Body**  
+
+
 

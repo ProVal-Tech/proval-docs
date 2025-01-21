@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-userlogout
 title: 'Invoke-UserLogout'
-title_meta: 'Invoke-UserLogout Command'
+title_meta: 'Invoke-UserLogout'
 keywords: ['logout', 'user', 'session', 'windows']
 description: 'Documentation for the Invoke-UserLogout command to log a specified user or users out of the system.'
 tags: ['security', 'windows']
@@ -35,4 +35,6 @@ Location of output for log, result, and error files.
 - `.\Invoke-UserLogout-log.txt`
 - `.\Invoke-UserLogout-data.txt`
 - `.\Invoke-UserLogout-error.txt`
+
+
 

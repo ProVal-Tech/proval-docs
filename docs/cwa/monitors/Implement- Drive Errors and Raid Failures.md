@@ -1,7 +1,7 @@
 ---
 id: '4b69a692-f9b1-4df7-b802-0dc265fd32da'
-title: 'Ticket Creation for Computer Failures Only'
-title_meta: 'Ticket Creation for Computer Failures Only'
+title: 'Implement- Drive Errors and Raid Failures'
+title_meta: 'Implement- Drive Errors and Raid Failures'
 keywords: ['ticket', 'creation', 'computer', 'failures', 'monitor', 'alert', 'sql']
 description: 'This document provides a step-by-step guide to creating an alert template for ticket creation specifically for computer failures only. It includes SQL queries for monitoring and configuring alerts effectively in ConnectWise Automate.'
 tags: ['sql', 'windows']
@@ -240,4 +240,6 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ## Step 8
 Set the appropriate alert template.
+
+
 

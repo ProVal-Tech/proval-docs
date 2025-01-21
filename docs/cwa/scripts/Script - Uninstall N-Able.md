@@ -1,7 +1,7 @@
 ---
 id: '3918a9ca-7721-40d6-9b8b-97a5737d6af6'
-title: 'Uninstalling N-Able (Windows Agent) Application'
-title_meta: 'Uninstalling N-Able (Windows Agent) Application'
+title: 'Script - Uninstall N-Able'
+title_meta: 'Script - Uninstall N-Able'
 keywords: ['uninstallation', 'n-able', 'windows', 'agent', 'script']
 description: 'This document provides a comprehensive guide on uninstalling the N-Able (Windows Agent) application, including the script to perform the uninstallation and clean up all traces of the application from the system.'
 tags: ['cleanup', 'software', 'uninstallation', 'windows']
@@ -35,4 +35,6 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 - Script log
 - Local file on the computer
+
+
 

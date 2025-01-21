@@ -1,7 +1,7 @@
 ---
 id: ps-set-firefoxhomepage
 title: 'Set-FirefoxHomepage'
-title_meta: 'Set-FirefoxHomepage Command'
+title_meta: 'Set-FirefoxHomepage'
 keywords: ['homepage', 'firefox', 'browser', 'configuration']
 description: 'Documentation for the Set-FirefoxHomepage command to set and enforce the homepage in Firefox.'
 tags: ['firefox', 'web-browser']
@@ -33,4 +33,6 @@ Location of output for log, result, and error files.
 ```
 .\Set-FirefoxHomepage-log.txt
 ```
+
+
 

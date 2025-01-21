@@ -1,7 +1,7 @@
 ---
 id: '827c282a-8701-42f9-87d3-8dbb7372134d'
-title: 'Weak Passwords Monitor for Domain Controllers'
-title_meta: 'Weak Passwords Monitor for Domain Controllers'
+title: 'Weak Passwords Detected'
+title_meta: 'Weak Passwords Detected'
 keywords: ['monitor', 'weak', 'passwords', 'domain', 'controllers', 'ticket']
 description: 'This document provides a detailed guide on implementing a monitor that creates a ticket when accounts with weak passwords are detected on domain controllers. It includes dependencies, target specifications, and step-by-step implementation instructions.'
 tags: ['active-directory', 'security', 'ticketing']
@@ -56,4 +56,6 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+
 

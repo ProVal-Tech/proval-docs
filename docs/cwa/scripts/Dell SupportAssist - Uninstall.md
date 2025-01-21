@@ -1,7 +1,7 @@
 ---
 id: 'c8dbc87a-084e-479d-a790-4b29041b0ba4'
-title: 'Uninstall Dell SupportAssist'
-title_meta: 'Uninstall Dell SupportAssist from Windows Machines'
+title: 'Dell SupportAssist - Uninstall'
+title_meta: 'Dell SupportAssist - Uninstall'
 keywords: ['dell', 'supportassist', 'uninstall', 'windows', 'software']
 description: 'This document provides a script that checks for the installation of Dell SupportAssist software on Windows machines and uninstalls it if found. The process includes verification of the uninstallation, ensuring that the software is no longer present on the system. The automation is designed to save time and streamline the management of software on Windows devices.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -26,4 +26,6 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
+
+
 

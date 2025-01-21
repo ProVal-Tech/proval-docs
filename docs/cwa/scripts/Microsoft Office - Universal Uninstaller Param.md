@@ -1,7 +1,7 @@
 ---
 id: 'fc97a0b8-b73a-4de0-be9a-c735ece7f43f'
-title: 'Uninstall Microsoft Office Versions with Offscrub'
-title_meta: 'Uninstall Microsoft Office Versions with Offscrub'
+title: 'Microsoft Office - Universal Uninstaller Param'
+title_meta: 'Microsoft Office - Universal Uninstaller Param'
 keywords: ['uninstall', 'microsoft', 'office', 'scrub', 'software']
 description: 'This document describes a script that downloads offscrub files and uninstalls all versions of Microsoft Office from 2007 to 2016 & O365, handling machine or software corruption and removing app shortcuts.'
 tags: ['software', 'uninstallation', 'windows']
@@ -41,4 +41,6 @@ This script is designed to run manually on Windows machines as per requirement. 
 
 - Script log  
 - Local file on computer
+
+
 

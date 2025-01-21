@@ -1,7 +1,7 @@
 ---
 id: 'd533538b-8b00-425e-849f-434518296b2d'
-title: 'Audit Existing Backup BitLocker Key Protectors'
-title_meta: 'Audit Existing Backup BitLocker Key Protectors from Active Directory'
+title: 'Bitlocker - AD Key Protector - Audit'
+title_meta: 'Bitlocker - AD Key Protector - Audit'
 keywords: ['audit', 'bitlocker', 'key', 'protectors', 'active', 'directory']
 description: 'This document provides a detailed guide on auditing existing backup BitLocker key protectors from an Active Directory server. It includes sample runs, dependencies, process explanations, and a step-by-step guide to configuring Group Policy for automatic backup of BitLocker recovery keys to Active Directory.'
 tags: ['active-directory', 'backup', 'encryption', 'gpo', 'windows']
@@ -94,4 +94,6 @@ For additional information about the underlying logic, please see [SEC - Encrypt
 9. Go to the “Operating System Drives” node and enable the similar policy “**Choose how BitLocker-protected operating system drives can be recovered**.” Then, go to the “Removable Data Drives” node and enable the policy “**Choose how BitLocker-protected removable drives can be recovered**.” 
 
 10. When any client PC retrieves the policy changes, BitLocker recovery information will be automatically and silently backed up to AD DS when BitLocker is turned on for fixed drives, OS drives, or removable drives.
+
+
 

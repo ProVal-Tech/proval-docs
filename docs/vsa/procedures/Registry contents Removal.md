@@ -1,7 +1,7 @@
 ---
 id: 'a6e179d1-ac12-482b-b315-f0fae1b83353'
-title: 'Delete PendingFileRenameOperations Registry Contents'
-title_meta: 'Delete PendingFileRenameOperations Registry Contents'
+title: 'Registry contents Removal'
+title_meta: 'Registry contents Removal'
 keywords: ['registry', 'delete', 'pending', 'operations', 'cleanup']
 description: 'This document outlines a script developed to delete all contents of the PendingFileRenameOperations registry. It provides a detailed summary of the script’s functionality, sample run logs, dependencies, process flow, and output information, ensuring users understand how to effectively clear registry entries related to pending file rename operations.'
 tags: ['cleanup', 'performance', 'registry', 'uninstallation', 'windows']
@@ -53,4 +53,6 @@ No
 - Agent Procedure Log
 
 Procedure_PendingFileRenameOperations_-_Registry_contents_Removal.xml
+
+
 

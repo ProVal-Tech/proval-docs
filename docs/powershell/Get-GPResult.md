@@ -1,7 +1,7 @@
 ---
 id: ps-get-gpresult
 title: 'Get-GPResult'
-title_meta: 'Get-GPResult Command'
+title_meta: 'Get-GPResult'
 keywords: ['gpresult', 'gpo', 'report', 'rsop']
 description: 'Documentation for the Get-GPResult command to generate GPRESULT data in various forms.'
 tags: ['report', 'windows']
@@ -142,4 +142,6 @@ $reportOutput = .\\Get-GPResult.ps1 -ReportType PSObject -ExcludeComputer
 - `./gpresult_user.xml`
 - `./gpresult.sql`
 - Returns a simple INSERT statement string with `tablename` and `idvalue` placeholders that can be replaced.
+
+
 

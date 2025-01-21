@@ -1,7 +1,7 @@
 ---
 id: 'cffbdce7-7390-4b11-9300-6a34799b7d82'
-title: 'Add and Remove Wi-Fi Profiles Script'
-title_meta: 'Add and Remove Wi-Fi Profiles Script for Automate'
+title: 'Implement Wifi Profile'
+title_meta: 'Implement Wifi Profile'
 keywords: ['wifi', 'profiles', 'script', 'automate', 'network']
 description: 'This document details a script for adding and removing Wi-Fi profiles on targeted machines using ConnectWise Automate. It provides instructions on how to supply profile names for addition and removal, along with examples, dependencies, and user parameters.'
 tags: ['networking', 'setup', 'windows']
@@ -102,4 +102,6 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
+
+
 

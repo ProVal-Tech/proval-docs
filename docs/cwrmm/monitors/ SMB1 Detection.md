@@ -1,7 +1,7 @@
 ---
 id: 'a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b'
-title: 'SMB1 Detection Monitor Setup'
-title_meta: 'SMB1 Detection Monitor Setup'
+title: ' SMB1 Detection'
+title_meta: ' SMB1 Detection'
 keywords: ['smb1', 'monitor', 'detection', 'scripting', 'rmm']
 description: 'This document provides a step-by-step guide for setting up a monitor to check whether SMB1 is enabled on end machines. It details the necessary configurations, script implementation, and conditions for effective monitoring using RMM tools.'
 tags: ['windows']
@@ -67,4 +67,6 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
    **![Image 9](../../../static/img/-SMB1-Detection/image_9.png)**  
 
 8. Click the `Save` button to save the monitor set.
+
+
 

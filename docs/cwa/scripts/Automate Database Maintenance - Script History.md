@@ -1,7 +1,7 @@
 ---
 id: 'c4cc9f04-c64f-4a39-a92c-3a3a480b3300'
-title: 'Automate Database Maintenance Script'
-title_meta: 'Automate Database Maintenance Script'
+title: 'Automate Database Maintenance - Script History'
+title_meta: 'Automate Database Maintenance - Script History'
 keywords: ['cleanup', 'database', 'maintenance', 'script', 'log']
 description: 'This document provides an overview of the Automate Database Maintenance Script, detailing its functionality for cleaning up specific tables in the database, including script history and stale script states. It also explains the variables used in the script and the expected output in the log.'
 tags: ['cleanup', 'database']
@@ -33,4 +33,6 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Script-History/image_1.png)
+
+
 

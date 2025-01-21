@@ -1,7 +1,7 @@
 ---
 id: 'ec2b3583-4c06-40c2-8f2d-55f46f7aeed1'
-title: 'Deploy and Manage the Huntress Agent'
-title_meta: 'Deploy and Manage the Huntress Agent on Windows and macOS'
+title: 'Huntress Agent Management'
+title_meta: 'Huntress Agent Management'
 keywords: ['huntress', 'agent', 'deployment', 'management', 'windows', 'macos']
 description: 'This document provides a comprehensive guide for deploying and managing the Huntress Agent on both Windows and macOS machines, including installation, uninstallation, and repair processes, along with associated content for effective monitoring and management.'
 tags: ['deployment', 'macos', 'uninstallation', 'windows']
@@ -65,4 +65,6 @@ Configure the solution as outlined below:
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](<../cwa/monitors/Deploy Huntress Agent.md>) internal monitor.  
 ![Image](../../static/img/Huntress-Agent-Management/image_3.png)
+
+
 

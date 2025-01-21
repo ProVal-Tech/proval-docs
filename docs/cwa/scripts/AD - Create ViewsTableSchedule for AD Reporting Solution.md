@@ -1,7 +1,7 @@
 ---
 id: 'f0b2fe2b-8bd8-4d9a-9428-2123b332aa49'
-title: 'Active Directory Reporting Solution Setup'
-title_meta: 'Active Directory Reporting Solution Setup'
+title: 'AD - Create ViewsTableSchedule for AD Reporting Solution'
+title_meta: 'AD - Create ViewsTableSchedule for AD Reporting Solution'
 keywords: ['active', 'directory', 'reporting', 'solution', 'setup', 'database']
 description: 'This document details the process of setting up the Active Directory Reporting Solution by creating necessary database items, including tables and views, along with scheduling an essential script for compliance and security checks.'
 tags: ['active-directory', 'database', 'report', 'security', 'setup']
@@ -40,4 +40,6 @@ Other items depend on this script being executed to function, which are listed b
 ## Output
 
 This is a one-time use script, used to install/create a table, four views, and schedule a script. After running it once, this script can be removed from the environment.
+
+
 

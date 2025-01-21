@@ -1,7 +1,7 @@
 ---
 id: 'a54c73f8-ca6b-4adb-988c-705818e804f7'
-title: 'Dataview for Inactive Network Devices in Automate'
-title_meta: 'Dataview for Inactive Network Devices in Automate'
+title: 'Network Devices Not Contacted from 60 Days'
+title_meta: 'Network Devices Not Contacted from 60 Days'
 keywords: ['dataview', 'network', 'devices', 'inactive', 'automate', 'monitoring']
 description: 'This document provides a comprehensive overview of the Dataview designed to identify network devices that have not been active in ConnectWise Automate for the past 60 days. It outlines dependencies, columns included in the Dataview, and how it can be utilized for monitoring and management of network devices.'
 tags: ['networking', 'report']
@@ -33,4 +33,6 @@ This Dataview is part of the solution to remove network devices that have had no
 | Manufacturer Name   | Displays the name of the manufacturer                |
 | Alert Template     | Indicates if an alert template is applied           |
 | Last Date          | Displays the last contact date of the device in Automate |
+
+
 

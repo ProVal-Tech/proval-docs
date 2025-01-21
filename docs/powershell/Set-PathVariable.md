@@ -1,7 +1,7 @@
 ---
 id: ps-set-pathvariable
 title: 'Set-PathVariable'
-title_meta: 'Set-PathVariable Command'
+title_meta: 'Set-PathVariable'
 keywords: ['path', 'environment', 'variable', 'scope']
 description: 'Documentation for the Set-PathVariable command to set provided paths to the Environmental Path variable at the desired scope.'
 tags: ['windows']
@@ -39,4 +39,6 @@ This command will return the current `$Env:Path` state for the user after adding
 ## Output
 
 Standard Output
+
+
 

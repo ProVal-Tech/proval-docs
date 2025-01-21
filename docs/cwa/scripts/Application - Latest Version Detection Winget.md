@@ -1,7 +1,7 @@
 ---
 id: 'ffb77c6c-8dd7-4ca5-82a2-327b1658cbde'
-title: 'Gather Latest Application Versions with Winget'
-title_meta: 'Gather Latest Application Versions with Winget'
+title: 'Application - Latest Version Detection Winget'
+title_meta: 'Application - Latest Version Detection Winget'
 keywords: ['winget', 'application', 'version', 'packageid', 'script']
 description: 'This document outlines a script designed to gather and store the latest version of applications supported by Winget in system properties, using the PackageID as the identifier for each application.'
 tags: ['software', 'update', 'windows']
@@ -40,4 +40,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

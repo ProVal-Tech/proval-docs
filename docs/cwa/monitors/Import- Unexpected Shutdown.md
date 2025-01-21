@@ -1,7 +1,7 @@
 ---
 id: '9bf4d628-655e-4568-bea6-dfd0544a1a56'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Import- Unexpected Shutdown'
+title_meta: 'Import- Unexpected Shutdown'
 keywords: ['remote', 'monitor', 'groupid', 'query', 'alert', 'template']
 description: 'This document provides a step-by-step guide on how to apply a remote monitor in ConnectWise Automate, including obtaining group IDs, executing SQL queries, and applying alert templates.'
 tags: ['database', 'setup', 'windows']
@@ -211,4 +211,6 @@ Limit the remote monitor to a search, if necessary.
 
 ### 7. Apply the Alert Template
 Apply the appropriate alert template to the remote monitors.
+
+
 

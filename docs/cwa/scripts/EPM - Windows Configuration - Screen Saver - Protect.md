@@ -1,7 +1,7 @@
 ---
 id: '952db509-c813-4225-a53f-7423d174ef24'
-title: 'Enforce Screen Saver Settings'
-title_meta: 'Enforce Screen Saver Settings'
+title: 'EPM - Windows Configuration - Screen Saver - Protect'
+title_meta: 'EPM - Windows Configuration - Screen Saver - Protect'
 keywords: ['screen', 'saver', 'timeout', 'ticketing', 'domain', 'configuration']
 description: 'This document outlines the process to ensure that the screen saver settings are enabled and configured to a specified timeout. It includes sample runs, dependencies, global and user parameters, and expected output files.'
 tags: ['security', 'setup', 'windows']
@@ -51,4 +51,6 @@ See [Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
+
+
 

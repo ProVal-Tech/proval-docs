@@ -1,7 +1,7 @@
 ---
 id: 'a43c5b5e-2a85-4090-9bf1-ec4e3ec974bc'
-title: 'Remove Automate Server Monitoring'
-title_meta: 'Remove Automate Server Monitoring'
+title: 'Remove Automate Server Monitoring Param'
+title_meta: 'Remove Automate Server Monitoring Param'
 keywords: ['automate', 'monitoring', 'script', 'removal', 'client']
 description: 'This document provides a detailed overview of a script designed to remove Automate Server Monitoring content from the environment, including options to remove the ProSyncClient Plugin. It includes user parameters, process steps, and warnings about the script’s potential destructiveness.'
 tags: ['security', 'software', 'uninstallation']
@@ -37,4 +37,6 @@ A client script can either be debugged or executed against any client. The sugge
 - Remove the contents of [Automate Server Monitoring](https://proval.itglue.com/5078775/docs/10390988) from the environment if the `AreYouSure?` parameter is set to `Yes`; otherwise, exit.
 - Remove the ProSyncClient plugin from the environment if the `ProSyncClientToo?` parameter is set to `Yes`; otherwise, exit.
 - Remove itself from the environment if the `ThisScriptAsWell?` parameter is set to `Yes`; otherwise, exit.
+
+
 

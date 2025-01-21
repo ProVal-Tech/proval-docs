@@ -1,7 +1,7 @@
 ---
 id: '11a27ba4-705e-4bdc-8d09-a166c92d0553'
-title: 'Kaseya Onboarding Audit Script'
-title_meta: 'Kaseya Onboarding Audit Script'
+title: 'Get-VsaAuditReports'
+title_meta: 'Get-VsaAuditReports'
 keywords: ['kaseya', 'audit', 'vsa', 'api', 'excel', 'reporting']
 description: 'This document provides an overview of the Kaseya Onboarding Audit script, which performs an extensive audit of Kaseya VSA configurations and outputs the results to an Excel spreadsheet. It details the requirements, process, parameters, and output locations for the audit results, ensuring users can effectively utilize the script for auditing purposes.'
 tags: ['kaseya', 'report', 'security', 'software']
@@ -105,4 +105,6 @@ $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagem
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementDeploymentProfiles.csv
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Users.csv
 ```
+
+
 

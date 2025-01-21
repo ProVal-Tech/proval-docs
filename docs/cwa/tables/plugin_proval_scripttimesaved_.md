@@ -1,7 +1,7 @@
 ---
 id: '3e0ab351-497a-4e39-96d7-a7bec5fc92d8'
-title: 'Script Time Saved Queries for ConnectWise Automate'
-title_meta: 'Script Time Saved Queries for ConnectWise Automate'
+title: 'plugin_proval_scripttimesaved_'
+title_meta: 'plugin_proval_scripttimesaved_'
 keywords: ['queries', 'connectwise', 'automate', 'scripttime', 'database']
 description: 'This document provides detailed information on SQL queries used to create tables and triggers that track the total time saved by scripts in a ConnectWise Automate instance. It explains the structure and purpose of each table generated, including daily, weekly, monthly, and yearly tracking of script execution and time savings.'
 tags: ['database', 'report', 'setup']
@@ -60,4 +60,6 @@ N/A - These tables are populated with the associated triggers.
 ## SQL
 
 [Download SQL Queries](https://proval.itglue.com/attachments/6824289)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '2e38bff4-a727-4c7e-8c3b-ccf8eee85891'
-title: 'Backup Registry Value Script'
-title_meta: 'Backup Registry Value Script for Windows Registry Management'
+title: 'Backup-RegistryValue'
+title_meta: 'Backup-RegistryValue'
 keywords: ['backup', 'registry', 'windows', 'administration', 'copy']
 description: 'This document provides an overview of a script that creates a backup of a specified registry item either specifically or recursively to a designated backup location in the Windows registry. The script requires administrative rights and ensures that the backup is identical to the original key.'
 tags: ['backup', 'registry', 'windows']
@@ -61,4 +61,6 @@ Creates a copy of the key `HKLM:\Software\Microsoft\DataAccess` and all its subk
 | ConnectWise RMM                   |                                          |
 | Kaseya                            |                                          |
 | Datto RMM                         |                                          |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '6a427581-70ba-456b-8985-f16d9b051c35'
-title: 'Join a Machine to a Domain Offline'
-title_meta: 'Join a Machine to a Domain Offline'
+title: 'AD - Offline Domain Join'
+title_meta: 'AD - Offline Domain Join'
 keywords: ['domain', 'join', 'offline', 'dc', 'network']
 description: 'This document provides a detailed overview of a script that allows a machine to join a domain even when it is not connected to the same network as the Domain Controller (DC). It outlines the variables used, the process involved, and the expected output, highlighting the efficiency gained through automation.'
 tags: ['networking', 'security', 'setup', 'windows']
@@ -35,4 +35,6 @@ This script joins a machine to a domain while it is not connected to the same ne
 ## Output
 
 - Script log
+
+
 

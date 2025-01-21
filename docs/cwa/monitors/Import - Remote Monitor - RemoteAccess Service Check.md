@@ -1,7 +1,7 @@
 ---
 id: 'dd99f8a5-83f7-48a5-b8a9-ac68224e543a'
-title: 'Remote Access Service Check Setup'
-title_meta: 'Remote Access Service Check Setup'
+title: 'Import - Remote Monitor - RemoteAccess Service Check'
+title_meta: 'Import - Remote Monitor - RemoteAccess Service Check'
 keywords: ['remote', 'access', 'service', 'check', 'setup', 'monitor']
 description: 'This document outlines the steps necessary to set up a remote access service check within ConnectWise Automate, including obtaining group IDs, executing SQL queries, and applying alert templates for effective monitoring.'
 tags: ['database', 'setup']
@@ -157,4 +157,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

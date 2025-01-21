@@ -1,7 +1,7 @@
 ---
 id: '19787a52-3223-44e1-8670-ecf74f1b415c'
-title: 'Export CW Automate Customizations for Backup'
-title_meta: 'Export CW Automate Customizations for Backup'
+title: 'Backup ScriptsMonitorsCustomizations'
+title_meta: 'Backup ScriptsMonitorsCustomizations'
 keywords: ['backup', 'customizations', 'export', 'scripts', 'monitoring', 'dataviews', 'role', 'virus']
 description: 'This document details a script designed to export various ConnectWise Automate customizations for backup and versioning. It supports multiple customization types and includes features for email alerts and system property configuration, ensuring a reliable backup process.'
 tags: ['backup']
@@ -80,4 +80,6 @@ Creates a series of script states to keep track of each customization. There wil
 
 - Script Log
 - Files on Local Computer
+
+
 

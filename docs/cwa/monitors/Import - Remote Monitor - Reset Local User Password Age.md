@@ -1,7 +1,7 @@
 ---
 id: 'adc49b4c-24dc-4bb5-bd88-abddae4a4739'
-title: 'Steps to Set Up Remote Monitor'
-title_meta: 'Steps to Set Up Remote Monitor'
+title: 'Import - Remote Monitor - Reset Local User Password Age'
+title_meta: 'Import - Remote Monitor - Reset Local User Password Age'
 keywords: ['setup', 'remote', 'monitor', 'sql', 'query', 'groupid']
 description: 'This document provides a detailed guide on how to set up a remote monitor using SQL queries. It includes steps to obtain group IDs, run SQL queries to create and configure the remote monitor, and apply alert templates for monitoring local user password age settings.'
 tags: ['database', 'setup']
@@ -210,4 +210,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

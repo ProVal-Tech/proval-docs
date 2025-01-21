@@ -1,7 +1,7 @@
 ---
 id: 'd9b666b4-e0b0-4736-94c1-06b430581bad'
-title: 'Check Security Event Log for Failed Logon Attempts'
-title_meta: 'Check Security Event Log for Failed Logon Attempts'
+title: 'SEC - Endpoint Protection- Security - Possible Brute Force Attack'
+title_meta: 'SEC - Endpoint Protection- Security - Possible Brute Force Attack'
 keywords: ['security', 'event', 'logon', 'failed', 'monitor']
 description: 'This document outlines how to monitor for security event log event ID 4625, specifically checking for failed logon attempts where the occurrence count exceeds a specified threshold within the last 60 minutes. It includes details on modifying thresholds, alerting, and dependencies for effective monitoring.'
 tags: ['security']
@@ -96,5 +96,7 @@ For more detailed information: [Event 4625 Documentation](https://learn.microsof
 ## Implementation
 
 [Import - Remote Monitor - Security - Possible Brute Force Attack](<./Security - Possible Brute Force Attack.md>)
+
+
 
 

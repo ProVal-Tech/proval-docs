@@ -1,7 +1,7 @@
 ---
 id: ps-remove-sophos
 title: 'Remove-Sophos'
-title_meta: 'Remove-Sophos Command'
+title_meta: 'Remove-Sophos'
 keywords: ['remove', 'sophos', 'uninstall', 'security']
 description: 'Documentation for the Remove-Sophos command to completely remove the Sophos Agent Endpoint from the system.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -35,4 +35,6 @@ Location of output for log, result, and error files.
 .\Remove-Sophos-Log.txt
 .\Remove-Sophos-Error.txt
 ```
+
+
 

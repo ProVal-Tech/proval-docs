@@ -1,7 +1,7 @@
 ---
 id: '1aae141d-3854-4dde-b35f-69db58204fed'
-title: 'Reboot Prompter'
-title_meta: 'Reboot Prompter - A PowerShell Script for User Reboot Notifications'
+title: 'Reboot Prompter (Deprecated)'
+title_meta: 'Reboot Prompter (Deprecated)'
 keywords: ['reboot', 'prompter', 'notification', 'windows', 'script']
 description: 'This document provides a detailed guide on implementing a PowerShell script that prompts users to reboot their systems. It includes instructions for creating tasks, logging actions, and handling the installation of necessary components, ensuring a smooth user experience during system reboots.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -718,4 +718,6 @@ Once all items are added, please save the task. The final task should look like 
 ![Final Task 2](../../../static/img/Reboot-Prompter-(Deprecated)/image_54.png)
 
 ![Final Task 3](../../../static/img/Reboot-Prompter-(Deprecated)/image_55.png)
+
+
 

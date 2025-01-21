@@ -1,7 +1,7 @@
 ---
 id: '278125a7-9a86-4e03-aae5-3025efaf1737'
-title: 'Duo Installation and Upgrade Procedure for Windows'
-title_meta: 'Duo Installation and Upgrade Procedure for Windows'
+title: 'Duo - InstallUpgrade'
+title_meta: 'Duo - InstallUpgrade'
 keywords: ['duo', 'installation', 'upgrade', 'windows', 'procedure']
 description: 'This document outlines the procedure for installing and upgrading Duo for Windows, including detailed logs of the execution steps and their statuses. It provides insights into the commands used, the success of each step, and the overall effectiveness of the installation process.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -76,4 +76,6 @@ This procedure installs and upgrades Duo for Windows.
 ## Output
 
 Procedure Logfiles
+
+
 

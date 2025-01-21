@@ -1,7 +1,7 @@
 ---
 id: ps-remove-sentinelone
 title: 'Remove-SentinelOne'
-title_meta: 'Remove-SentinelOne Command'
+title_meta: 'Remove-SentinelOne'
 keywords: ['remove', 'sentinelone', 'uninstall', 'security']
 description: 'Documentation for the Remove-SentinelOne command to uninstall the SentinelOne agent from a Windows system.'
 tags: ['security', 'uninstallation', 'windows']
@@ -47,4 +47,6 @@ Location of output for log and error files:
 .\Remove-SentinelOne-log.txt
 .\Remove-SentinelOne-error.txt
 ```
+
+
 

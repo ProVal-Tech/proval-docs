@@ -1,7 +1,7 @@
 ---
 id: 'f73d6546-470e-448b-b3db-d7b57d3d8df4'
-title: 'CWAIISMgr Service Monitor for Automate'
-title_meta: 'CWAIISMgr Service Monitor for Automate'
+title: 'SVC-CWAIISMgr'
+title_meta: 'SVC-CWAIISMgr'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'labtech', 'server']
 description: 'This document outlines the CWAIISMgr service monitor for the Automate server, detailing its purpose, configuration, and alert settings to ensure timely ticket creation in the Autotask portal when the service is down.'
 tags: ['windows']
@@ -26,4 +26,6 @@ CWAIISMgr is one of the important services for the Automate server. This monitor
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server.
+
+
 

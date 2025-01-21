@@ -1,7 +1,7 @@
 ---
 id: '04af5f51-5656-4086-b2d2-94cb62388831'
-title: 'Azure AD Connect Version Audit Report'
-title_meta: 'Azure AD Connect Version Audit Report'
+title: 'Azure AD Connect Version Audit'
+title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'ad', 'connect', 'version', 'audit', 'report', 'software']
 description: 'This document provides a comprehensive report on all endpoints where the xPVAL Azure AD Connect Version Custom field is populated with a valid software version. It includes dependencies, report type, layout, and sample report details for effective analysis and auditing.'
 tags: ['report', 'software', 'update']
@@ -45,4 +45,6 @@ Defaults
 
 ### Export Attachment
 Attach the export XML of the report to this document.
+
+
 

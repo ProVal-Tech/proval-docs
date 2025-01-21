@@ -1,7 +1,7 @@
 ---
 id: '642f7615-925c-481f-b4bf-8d6b2c9ad6de'
-title: 'Autofix Script for ESXi Monitoring'
-title_meta: 'Autofix Script for ESXi Monitoring'
+title: 'Email Creation - VMWare ESXi Monitoring'
+title_meta: 'Email Creation - VMWare ESXi Monitoring'
 keywords: ['esxi', 'monitoring', 'alert', 'email', 'notification']
 description: 'This document describes an Autofix script designed for monitoring ESXi hosts. It outlines the requirements for use, including necessary device IDs and email configurations, and provides details on the variables utilized in alert notifications. The script is intended to automate email alerts for detected issues, ensuring timely notifications to designated contacts.'
 tags: ['email', 'esxi']
@@ -51,4 +51,6 @@ It is being used with the `△ Custom - Email Creation - VMWare ESXi Monitoring`
 
 - Script Log
 - Email
+
+
 

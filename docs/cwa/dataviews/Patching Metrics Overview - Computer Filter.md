@@ -1,7 +1,7 @@
 ---
 id: '7cf32e9b-c86b-4a97-ba5a-f97139cddf0e'
-title: 'Patching Metrics Overview for Windows Computers'
-title_meta: 'Patching Metrics Overview for Windows Computers'
+title: 'Patching Metrics Overview - Computer Filter'
+title_meta: 'Patching Metrics Overview - Computer Filter'
 keywords: ['patching', 'windows', 'statistics', 'approval', 'metrics']
 description: 'This document provides an overview of patching-related statistics for Windows computers in the environment, categorized by the approval age of patches. It details the number of approved and missing patches for each approval age category, along with relevant computer and client information.'
 tags: ['patching', 'performance', 'report', 'windows']
@@ -55,4 +55,6 @@ The approval age is divided into five categories:
 - computerpatchpolicies cpp   
 - InstallSoftwarePolicies isp   
 - rebootpolicies rp
+
+
 

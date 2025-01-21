@@ -1,7 +1,7 @@
 ---
 id: 'a1d8f066-b016-4654-b855-891518d1f1da'
-title: 'Soji Disk Cleanup Utility for CW RMM'
-title_meta: 'Soji Disk Cleanup Utility for CW RMM'
+title: 'Soji (Disk Cleanup Utility)'
+title_meta: 'Soji (Disk Cleanup Utility)'
 keywords: ['disk', 'cleanup', 'utility', 'windows', 'rmm']
 description: 'This document provides a comprehensive guide on creating the Soji disk cleanup Task in ConnectWise RMM. Soji is a smart disk cleanup utility designed to enhance system cleanliness on Windows, utilizing native System.IO file and directory management along with COM references to the deprecated cleanmgr tool.'
 tags: ['cleanup', 'software', 'windows']
@@ -250,4 +250,6 @@ Click the `Save` button to save the Task.
 - Script Log
 
 ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
+
+
 

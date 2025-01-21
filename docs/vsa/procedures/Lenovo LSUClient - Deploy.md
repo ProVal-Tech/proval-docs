@@ -1,7 +1,7 @@
 ---
 id: '9a841862-bf4b-4670-83a8-185c63611dc7'
-title: 'Install BIOS Updates for Lenovo Machines'
-title_meta: 'Install BIOS Updates for Lenovo Machines'
+title: 'Lenovo LSUClient - Deploy'
+title_meta: 'Lenovo LSUClient - Deploy'
 keywords: ['lenovo', 'bios', 'updates', 'firmware', 'drivers', 'automation']
 description: 'This document provides a guide on using the PowerShell module LSUClient to install available BIOS updates for Lenovo machines, including important warnings and parameters to consider during the process.'
 tags: ['bios', 'drivers', 'firmware', 'installation', 'update', 'windows']
@@ -47,4 +47,6 @@ $updates = Get-LSUpdate -All
 
 GitHub: [https://jantari.github.io/LSUClient-docs/](https://jantari.github.io/LSUClient-docs/)  
 [https://github.com/jantari/LSUClient](https://github.com/jantari/LSUClient)
+
+
 

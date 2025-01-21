@@ -1,7 +1,7 @@
 ---
 id: 'a4668ce4-9788-47a9-bb3b-1997367803ad'
-title: 'Install Windows 11 from ZIP or ISO'
-title_meta: 'Install Windows 11 from ZIP or ISO'
+title: 'Windows 11 Installer (Beta)'
+title_meta: 'Windows 11 Installer (Beta)'
 keywords: ['windows', 'install', 'upgrade', 'zip', 'iso', 'file', 'repository']
 description: 'This document provides a detailed guide on how to install Windows 11 from a target ZIP file or ISO, including sample runs and user parameters. It covers necessary dependencies and provides download links for the required files.'
 tags: ['installation', 'security', 'update', 'windows']
@@ -47,4 +47,6 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 ## Output
 
 - Script log
+
+
 

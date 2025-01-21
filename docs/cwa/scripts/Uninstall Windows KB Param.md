@@ -1,7 +1,7 @@
 ---
 id: 'fd611b68-7cd6-4a6a-bee1-3d772ecd9a27'
-title: 'Uninstall Windows Update Script'
-title_meta: 'Uninstall Windows Update Script for Windows Systems'
+title: 'Uninstall Windows KB Param'
+title_meta: 'Uninstall Windows KB Param'
 keywords: ['uninstall', 'windows', 'update', 'kbid', 'reboot']
 description: 'This script assists in the uninstallation of a specific Windows update by allowing the user to input the KBID. It includes an option to authorize a system restart if necessary while also striving to prevent an immediate reboot unless required by the update.'
 tags: ['reboot', 'software', 'uninstallation', 'update', 'windows']
@@ -37,4 +37,6 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
+
+
 

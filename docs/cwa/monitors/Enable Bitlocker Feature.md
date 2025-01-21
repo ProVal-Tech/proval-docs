@@ -1,7 +1,7 @@
 ---
 id: '1a32292b-df11-46ef-997f-7ad70f59061f'
-title: 'Enable BitLocker Feature on Windows Server'
-title_meta: 'Enable BitLocker Feature on Windows Server'
+title: 'Enable Bitlocker Feature'
+title_meta: 'Enable Bitlocker Feature'
 keywords: ['bitlocker', 'encryption', 'windows', 'server', 'monitor']
 description: 'This document outlines the process to enable various BitLocker features on Windows servers, including the necessary utilities and tools for drive encryption. It provides detailed instructions for setting up a monitor to ensure these features are installed and functioning correctly.'
 tags: ['encryption', 'setup', 'windows']
@@ -36,4 +36,6 @@ Windows Servers
 ## How to Import
 
 [Import - Remote Monitor - Enable BitLocker Feature](<./Enable BitLocker Feature.md>)
+
+
 

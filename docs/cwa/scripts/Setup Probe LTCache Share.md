@@ -1,7 +1,7 @@
 ---
 id: '06ceeffc-d91b-4936-9889-101e02b683ca'
-title: 'Remove LTCache on Probe'
-title_meta: 'Remove LTCache on Probe'
+title: 'Setup Probe LTCache Share'
+title_meta: 'Setup Probe LTCache Share'
 keywords: ['ltcache', 'probe', 'credentials', 'location', 'settings', 'diskspace', 'folder', 'share', 'local', 'account']
 description: 'This document explains a script that removes the current LTCache on the Probe for a specific location, creates necessary credentials if they do not exist, and sets up a new LTCache. It also includes details on dependencies, variables used in the script, and the overall process, ensuring efficient management of LTCache settings.'
 tags: ['diskspace', 'security', 'setup', 'windows']
@@ -46,4 +46,6 @@ The location must have a probe enabled; otherwise, the script will exit with an 
 ## Output
 
 Script log
+
+
 

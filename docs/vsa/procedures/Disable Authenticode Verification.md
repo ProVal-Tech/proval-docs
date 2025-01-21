@@ -1,7 +1,7 @@
 ---
 id: 'c2cf8ecb-a36e-4180-8503-e3be4d03f9c5'
-title: 'Disable Authenticode Verification on Windows Machines'
-title_meta: 'Disable Authenticode Verification on Windows Machines'
+title: 'Disable Authenticode Verification'
+title_meta: 'Disable Authenticode Verification'
 keywords: ['authenticode', 'windows', 'verification', 'disable', 'reboot']
 description: 'This document provides a detailed overview of a script used to disable the Authenticode verification on Windows machines. It includes an example of the agent procedure log demonstrating the execution and results of the script, along with the necessary reboot for changes to take effect.'
 tags: ['recovery', 'security', 'setup', 'windows']
@@ -43,4 +43,6 @@ This script is used to disable the Authenticode verification on Windows machines
 ## Output
 
 Agent procedure log.
+
+
 

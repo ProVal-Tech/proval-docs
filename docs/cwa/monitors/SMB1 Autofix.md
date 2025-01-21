@@ -1,7 +1,7 @@
 ---
 id: 'cb1ab987-657f-4503-a3e1-f4f6345b6fdf'
-title: 'SMB1 Vulnerability Monitor'
-title_meta: 'SMB1 Vulnerability Monitor'
+title: 'SMB1 Autofix'
+title_meta: 'SMB1 Autofix'
 keywords: ['smb1', 'monitor', 'autofix', 'windows', 'agents']
 description: 'This document details an internal monitor that detects online Windows agents and performs autofix on computers with the "Audit with Autofix" setting for the SMB1 Vulnerability. It highlights dependencies, target scope, and ticketing setup for effective management.'
 tags: ['ticketing', 'vulnerability', 'windows']
@@ -29,4 +29,6 @@ Global
 ![Ticket Category Setup](../../../static/img/SMB1-Autofix/image_1.png)
 
 Once the ticket category is set, the autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) will automatically create a ticket to the service board using the ticket category set.
+
+
 

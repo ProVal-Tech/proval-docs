@@ -1,7 +1,7 @@
 ---
 id: '1634ea10-264c-44df-abd1-ff68edc23391'
-title: 'Create Ticket for Offline Network Device'
-title_meta: 'Create Ticket for Offline Network Device'
+title: 'Ticket Creation - Offline Network Devices'
+title_meta: 'Ticket Creation - Offline Network Devices'
 keywords: ['ticket', 'offline', 'network', 'device', 'alert']
 description: 'This document outlines a script designed to create a formatted ticket for an offline or unreachable network device. It details the prerequisites, dependencies, and implementation steps necessary for the script to function effectively, ensuring that network device alerts are properly managed.'
 tags: ['ticketing']
@@ -80,4 +80,6 @@ To create this ticket to a specific service board in manage, provide the categor
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'b8ce44cf-a4a7-4b17-a292-43615b2b192a'
-title: 'Huntress Account Key Custom Field'
-title_meta: 'Huntress Account Key Custom Field for ConnectWise RMM'
+title: 'Huntress Acct_Key'
+title_meta: 'Huntress Acct_Key'
 keywords: ['huntress', 'custom', 'field', 'account', 'key']
 description: 'This document provides a guide on creating a custom field for the Huntress Account Key within ConnectWise RMM, which partners will fill out for device group deployment tasks.'
 tags: ['connectwise', 'setup']
@@ -24,4 +24,6 @@ This custom field is to be filled with the Huntress Account Key by the partner. 
 **Level:** Company  
 **Description:** Huntress Account Key  
 **Editable:** Yes  
+
+
 

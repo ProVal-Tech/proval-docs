@@ -1,7 +1,7 @@
 ---
 id: '9e2b2dfa-acae-49a0-9f71-0df914c81a8b'
-title: 'Register Firefox Extension'
-title_meta: 'Register Firefox Extension for N-Able Passportal'
+title: 'Register - Firefox Extension'
+title_meta: 'Register - Firefox Extension'
 keywords: ['firefox', 'extension', 'n-able', 'installation', 'protection']
 description: 'This document outlines the process to register a specified extension for the Firefox browser, specifically focusing on the N-Able Passportal extension. It includes sample runs, user parameters, dependencies, and output details to ensure a successful installation and protection from deletion.'
 tags: ['firefox', 'installation', 'n-able', 'security']
@@ -40,4 +40,6 @@ Please review the agnostic content for specifics on the process.
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'cc6575e1-f95a-495a-ab89-65e165e1c85f'
-title: 'Monitor Failure Count Dataview'
-title_meta: 'Monitor Failure Count Dataview'
+title: 'Automate - Monitor Failure Counts'
+title_meta: 'Automate - Monitor Failure Counts'
 keywords: ['monitor', 'failure', 'count', 'tickets', 'dataview']
 description: 'This document describes a dataview that tracks the number of times a monitor detects a failure. It is particularly useful for understanding potential ticket generation over the past three days, even when tickets are not being created.'
 tags: ['report']
@@ -27,4 +27,6 @@ None
 | Client Name     | Client name                                                         |
 | Type            | Shows 'Internal' or 'Remote' depending on the type of monitor      |
 | Times Failed    | Shows the cumulative number of failures in the last three days     |
+
+
 

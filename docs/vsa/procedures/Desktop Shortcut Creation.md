@@ -1,7 +1,7 @@
 ---
 id: '183aecf1-4d22-4373-89b4-14f9dcedef13'
-title: 'Create a Desktop Shortcut'
-title_meta: 'Create a Desktop Shortcut for Quick Access'
+title: 'Desktop Shortcut Creation'
+title_meta: 'Desktop Shortcut Creation'
 keywords: ['shortcut', 'desktop', 'link', 'uri', 'windows']
 description: 'This document provides a comprehensive guide on creating a desktop shortcut in the Public Desktop using the New-DesktopUriShortcut script. It includes example logs, process details, and output files generated during execution.'
 tags: ['setup', 'software', 'windows']
@@ -51,4 +51,6 @@ The custom icon will need to be uploaded to managed files. Once uploaded, point 
 - New-DesktopUriShortcut-log.txt
 - New-DesktopUriShortcut-error.txt
 - Agent Procedure Log
+
+
 

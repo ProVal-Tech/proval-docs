@@ -47,3 +47,5 @@ The agent procedure modifies two settings on the Mac machine via `executeShellCo
 
 ![Image](../../../static/img/MAC-Screen-Lock-Timer/image_1.png)
 
+
+

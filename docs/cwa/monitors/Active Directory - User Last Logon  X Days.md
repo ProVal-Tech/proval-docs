@@ -1,7 +1,7 @@
 ---
 id: '2a260035-6023-4b23-ad58-4dbc38d9c819'
-title: 'Active Directory User Last Logon Monitor'
-title_meta: 'Active Directory User Last Logon Monitor'
+title: 'Active Directory - User Last Logon  X Days'
+title_meta: 'Active Directory - User Last Logon  X Days'
 keywords: ['active-directory', 'monitor', 'lastlogon', 'ticket', 'alert']
 description: 'This document provides a detailed implementation guide for setting up an Active Directory monitor that checks for user accounts that have not logged in for a specified number of days, excluding administrator accounts. It includes instructions for creating tickets with user account status and last login information.'
 tags: ['active-directory']
@@ -38,4 +38,6 @@ User1 (Enabled/Disabled) - Last Login: 6/10/2022
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f7074631-615e-4b66-80ab-10b9c3a0f8fa'
-title: 'Uninstall LogMeIn from Target Machine'
-title_meta: 'Uninstall LogMeIn from Target Machine - Step-by-Step Guide'
+title: 'LogMeIn Uninstall'
+title_meta: 'LogMeIn Uninstall'
 keywords: ['uninstall', 'logmein', 'script', 'automation', 'client']
 description: 'This document provides a detailed overview of a script designed to fetch the uninstall string from the database and execute the uninstallation of LogMeIn clients from a target machine. The process is automated to save time and streamline the uninstallation procedure.'
 tags: ['database', 'software', 'uninstallation']
@@ -26,4 +26,6 @@ This script will fetch the uninstall string from the database and attempt to uni
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'e54f4273-60a6-4790-bb8e-8c0a3d2033d5'
-title: 'OneDrive Error Detection and Monitoring'
-title_meta: 'OneDrive Error Detection and Monitoring'
+title: 'OneDrive Sync Status Issue'
+title_meta: 'OneDrive Sync Status Issue'
 keywords: ['onedrive', 'monitor', 'alert', 'sync', 'issue']
 description: 'This document outlines the internal monitoring process for detecting OneDrive sync issues within a 48-hour timeframe. It details the dependencies required for the monitoring script and provides guidance on ticket creation when issues are detected, including subject and body templates for alerts.'
 tags: ['report', 'ticketing', 'windows']
@@ -43,4 +43,6 @@ Global
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '53f4f86f-0936-40ef-ac65-7287f74d7f65'
-title: 'Login/Logout Audit Script'
-title_meta: 'Login/Logout Audit Script for User Activity Tracking'
+title: 'Activity Logging Reporting DV, Global'
+title_meta: 'Activity Logging Reporting DV, Global'
 keywords: ['audit', 'login', 'logout', 'user', 'activity', 'data', 'deletion', 'threshold']
 description: 'This document outlines a script designed to audit user login and logout activities, detailing its variables, parameters, and dependencies. It provides insights into how to manage data retention and deletion based on user activity over specified periods.'
 tags: []
@@ -56,4 +56,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Data view
+
+
 

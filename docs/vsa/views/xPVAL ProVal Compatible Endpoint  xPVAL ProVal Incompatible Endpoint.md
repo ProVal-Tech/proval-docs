@@ -1,7 +1,7 @@
 ---
 id: '2e0182e6-a723-4b9d-a64b-93fbad74b870'
-title: 'ProVal Compatibility Views for Agents'
-title_meta: 'ProVal Compatibility Views for Agents'
+title: 'xPVAL ProVal Compatible Endpoint  xPVAL ProVal Incompatible Endpoint'
+title_meta: 'xPVAL ProVal Compatible Endpoint  xPVAL ProVal Incompatible Endpoint'
 keywords: ['proval', 'endpoint', 'compatibility', 'filter', 'vsa']
 description: 'This document outlines two views to identify agents that are compatible or incompatible with ProVal content, detailing the necessary filters and dependencies for effective data collection.'
 tags: []
@@ -30,4 +30,6 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance]
 | Filter Name                       | Advanced Filter? | Filter Value   |
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Incompatible Endpoint | Y                | NOT "Compatible" |
+
+
 

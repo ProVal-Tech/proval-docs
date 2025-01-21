@@ -1,7 +1,7 @@
 ---
 id: '472a8d13-fd00-4a97-90dd-833a171eac40'
-title: 'EPM - Data Collection - Firefox Extensions'
-title_meta: 'EPM - Data Collection - Firefox Extensions Implementation'
+title: 'Get Firefox Browser Extensions'
+title_meta: 'Get Firefox Browser Extensions'
 keywords: ['automate', 'firefox', 'extensions', 'data', 'collection', 'json', 'sql', 'logging']
 description: 'This document outlines the implementation of the agnostic script for collecting data on Firefox extensions within ConnectWise Automate. It details the dependencies, process steps, and the expected output including script logs and a custom table.'
 tags: ['database', 'report', 'security', 'setup', 'software']
@@ -36,4 +36,6 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 - Script logs
 - Custom Table
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c25262f7-50fa-49f1-9d3e-a6b37001f43c'
-title: 'Admin Group Audit for Active Directory'
-title_meta: 'Admin Group Audit for Active Directory'
+title: 'AD - Domain Admin Reporting'
+title_meta: 'AD - Domain Admin Reporting'
 keywords: ['audit', 'active-directory', 'admin', 'group', 'changes']
 description: 'This script provides auditing functionality for members of Admin groups in Active Directory, allowing for optional alerts regarding any changes made to these groups. It is designed to run on a Domain Controller and can help maintain security and compliance by tracking modifications to critical administrative roles.'
 tags: ['active-directory', 'security']
@@ -56,4 +56,6 @@ The script provides auditing for members of Admin groups in Active Directory and
 - Script log
 - Script state
 - Ticket (optional)
+
+
 

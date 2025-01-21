@@ -1,7 +1,7 @@
 ---
 id: 'd0774dcc-9a7f-4f9a-9719-096e90309e2d'
 title: 'Reset AD Users Password Age'
-title_meta: 'Reset AD Users Password Age - Remote Monitor for Active Directory'
+title_meta: 'Reset AD Users Password Age'
 keywords: ['active-directory', 'password', 'monitor', 'expire', 'domain', 'policy', 'change']
 description: 'This document describes a remote monitor that checks Active Directory user login password age settings. It identifies users with passwords set to never expire and changes their settings to ensure compliance with a 90-day expiration policy. It also provides details on alerting and ticketing for failed password resets.'
 tags: ['active-directory', 'security', 'windows']
@@ -41,4 +41,6 @@ Domain Controllers
 ## How to Import
 
 [Import - Remote Monitor - Reset AD Users Password Age](<./Import - Remote Monitor - Reset AD Users Password Age.md>)  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'd093a07d-e012-4755-a3c1-ffd234b2905c'
-title: 'Duplicate Password Monitor for Domain Controllers'
-title_meta: 'Duplicate Password Monitor for Domain Controllers'
+title: 'Duplicate Password detected'
+title_meta: 'Duplicate Password detected'
 keywords: ['monitor', 'domain', 'controllers', 'duplicate', 'passwords', 'ticket']
 description: 'This document outlines the implementation of a monitor that creates a ticket when duplicate passwords are detected on a domain controller. It includes dependencies, target specifications, and step-by-step implementation instructions.'
 tags: ['active-directory', 'security', 'ticketing']
@@ -56,4 +56,6 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+
 

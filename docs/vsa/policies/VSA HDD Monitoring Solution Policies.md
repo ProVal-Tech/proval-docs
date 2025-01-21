@@ -1,7 +1,7 @@
 ---
 id: 'b39fe35b-74b3-442d-a977-daef64294297'
-title: 'Server HDD Monitoring Policies'
-title_meta: 'Server HDD Monitoring Policies'
+title: 'VSA HDD Monitoring Solution Policies'
+title_meta: 'VSA HDD Monitoring Solution Policies'
 keywords: ['monitoring', 'storage', 'remediation', 'drive', 'policy']
 description: 'This document outlines the configuration and details of 25 independent policies for monitoring and storage remediation for each drive letter on servers, including a specific monitor for the C: drive on workstations.'
 tags: ['storage']
@@ -36,4 +36,6 @@ This document presents 25 independent policies, one for each drive letter, which
   - **Policy Object Settings**:
     - **Policy Object Members**: [EPM - Disk - Monitor Set - Vsa HDD Monitoring Solution Monitor Sets](https://proval.itglue.com/DOC-5078775-10793257)
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
+
+
 

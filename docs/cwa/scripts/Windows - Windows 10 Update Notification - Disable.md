@@ -1,7 +1,7 @@
 ---
 id: 'cf05b28e-65d3-4d7b-b0e7-be1fe2427e26'
-title: 'Disable Windows 10 v1909 Deprecation Prompt'
-title_meta: 'Disable Windows 10 v1909 Deprecation Prompt'
+title: 'Windows - Windows 10 Update Notification - Disable'
+title_meta: 'Windows - Windows 10 Update Notification - Disable'
 keywords: ['windows', 'deprecation', 'prompt', 'script', 'notification']
 description: 'This document details a script designed to disable the warning prompt message from Microsoft regarding the deprecation of Windows 10 v1909, saving users time and enhancing their experience.'
 tags: ['windows']
@@ -26,4 +26,6 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
+
+
 

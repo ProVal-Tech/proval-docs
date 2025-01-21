@@ -1,7 +1,7 @@
 ---
 id: '2ed11d29-387b-4b8e-8a8b-b77891fe2b87'
-title: 'Microsoft Office Click-to-Run Update Monitor'
-title_meta: 'Microsoft Office Click-to-Run Update Monitor'
+title: 'Execute Script - Click-to-Run - Update'
+title_meta: 'Execute Script - Click-to-Run - Update'
 keywords: ['office365', 'update', 'monitor', 'script', 'execution']
 description: 'This document outlines an internal monitor designed to execute the Microsoft Office Click-to-Run Update script on online machines with Microsoft Office 365 installed. It ensures the update script runs regularly, executing after hours if not run in 15 days and during the day if not run in 30 days.'
 tags: ['software', 'update', 'windows']
@@ -28,4 +28,6 @@ Windows Workstations
 **Name:** `△ Custom - Execute Script - Microsoft Office - Click-to-Run - Update (ScriptState)`
 
 The alert template should execute the "Microsoft Office - Click-to-Run - Update (ScriptState)" script.
+
+
 

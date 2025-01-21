@@ -1,7 +1,7 @@
 ---
 id: 'e7e6a0f4-6d21-4046-89ee-1e9dd5827221'
-title: 'ConnectWise Control User Audit Script'
-title_meta: 'ConnectWise Control User Audit Script'
+title: 'CW Control - User Audit'
+title_meta: 'CW Control - User Audit'
 keywords: ['connectwise', 'audit', 'user', 'control', 'script']
 description: 'This document outlines a script designed to run on the ConnectWise Control server, auditing user information and logging it into a custom table. It details the necessary dependencies, variables used in the script, and the output generated, including a dataview for user audits and a script log. The automation is expected to save approximately 15 minutes of manual effort.'
 tags: ['connectwise', 'database']
@@ -39,4 +39,6 @@ It displays information in the dataview **@CW Control - User Audit**.
 
 - Script log
 - Dataview **@CW Control - User Audit**
+
+
 

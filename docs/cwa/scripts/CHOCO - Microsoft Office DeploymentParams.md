@@ -1,7 +1,7 @@
 ---
 id: 'a89cb4a1-7b45-4bb8-9685-ddf71928acc8'
-title: 'Install Microsoft Office Using Choco'
-title_meta: 'Install Microsoft Office Using Choco'
+title: 'CHOCO - Microsoft Office DeploymentParams'
+title_meta: 'CHOCO - Microsoft Office DeploymentParams'
 keywords: ['microsoft', 'office', 'chocolatey', 'deployment', 'installation']
 description: 'This document provides a comprehensive guide on using a script to install various versions of Microsoft Office through the Choco Microsoft Office Deployment package, detailing parameters, dependencies, and sample runs.'
 tags: ['installation', 'software', 'windows']
@@ -37,4 +37,6 @@ This script can be used to install different versions of Microsoft Office using 
 ## Output
 
 - Script log
+
+
 

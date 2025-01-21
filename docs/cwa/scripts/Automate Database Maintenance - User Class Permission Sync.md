@@ -1,7 +1,7 @@
 ---
 id: '0b85cd78-2ed9-46b0-bf7a-6204226192bb'
-title: 'Automate Database Maintenance User Class Permission Script'
-title_meta: 'Automate Database Maintenance User Class Permission Script'
+title: 'Automate Database Maintenance - User Class Permission Sync'
+title_meta: 'Automate Database Maintenance - User Class Permission Sync'
 keywords: ['automate', 'database', 'maintenance', 'userclass', 'permissions', 'sync']
 description: 'This document provides an overview of the Automate Database Maintenance User Class Permission Script, detailing its functionality, required properties, and variables. It ensures the synchronization of user class permissions from the Default Client to all other clients based on specific system property settings.'
 tags: ['database', 'security', 'setup']
@@ -38,4 +38,6 @@ This script is a function script called from [CWM - Automate - Script - Automate
 ## Output
 
 This script will add the logs to the log variable.
+
+
 

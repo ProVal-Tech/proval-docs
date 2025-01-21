@@ -1,7 +1,7 @@
 ---
 id: '1b38dbb7-848f-4605-b8c9-80e7ebf069d3'
-title: 'Removing Unapproved Wi-Fi Profiles from Windows Machines'
-title_meta: 'Removing Unapproved Wi-Fi Profiles from Windows Machines'
+title: 'Implement Wifi Profile'
+title_meta: 'Implement Wifi Profile'
 keywords: ['wifi', 'profiles', 'windows', 'monitor', 'script', 'implementation', 'automation']
 description: 'This document outlines the process for finding and removing unapproved Wi-Fi profiles from Windows machines using various scripts and monitors within the ConnectWise Automate platform. It includes steps for auditing, automation, and implementation to ensure compliance with approved Wi-Fi configurations.'
 tags: ['windows']
@@ -61,4 +61,6 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+
+
 

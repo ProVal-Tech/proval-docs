@@ -1,7 +1,7 @@
 ---
 id: 'b89a175e-0664-4001-b1d2-2827d74b0c71'
-title: 'Uninstalling the SentinelOne Agent from Windows'
-title_meta: 'Uninstalling the SentinelOne Agent from Windows'
+title: 'Uninstall SentinelOne'
+title_meta: 'Uninstall SentinelOne'
 keywords: ['sentinelone', 'uninstall', 'windows', 'antitamper', 'agent']
 description: 'This document provides a comprehensive guide on how to uninstall the SentinelOne agent from a Windows system, including steps for handling Anti-Tamper features. It outlines the requirements, process, and payload usage for executing the uninstallation successfully.'
 tags: ['performance', 'security', 'software', 'uninstallation', 'windows']
@@ -61,4 +61,6 @@ Location of output for log, result, and error files.
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
+
+
 

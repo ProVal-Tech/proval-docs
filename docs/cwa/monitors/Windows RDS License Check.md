@@ -1,7 +1,7 @@
 ---
 id: '2ad8091c-4bbb-4524-abc0-b0f0016ef4a5'
-title: 'Windows RDS Licensing Check'
-title_meta: 'Windows RDS Licensing Check'
+title: 'Windows RDS License Check'
+title_meta: 'Windows RDS License Check'
 keywords: ['rds', 'licensing', 'monitor', 'server', 'windows']
 description: 'This document outlines a remote monitor that checks the status of the RDS licensing server, verifying if licenses are available for either per user or per device. It includes details on the suggested settings for monitoring, dependencies, target systems, and ticketing information for alert notifications.'
 tags: ['windows']
@@ -42,4 +42,6 @@ Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Li
 **Failure:** We have detected a licensing issue with your RDS Licensing Server. The possibilities are that either the license is misconfigured or has expired. Please check.  
 
 **Success:** The license issue has been resolved.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '581b4986-28e0-41df-bff8-c5179414c9ee'
-title: 'Cleanup for Older Remote Drive Space Monitors'
-title_meta: 'Cleanup for Older Remote Drive Space Monitors'
+title: 'Agent Monitors - Remove Disk Monitors for Missing Drives'
+title_meta: 'Agent Monitors - Remove Disk Monitors for Missing Drives'
 keywords: ['cleanup', 'remote', 'drive', 'space', 'monitor']
 description: 'This document outlines a script designed to clean up older remote drive space monitors for non-existent drives on Windows systems. It provides guidance on when to run the script, including examples of error messages and monitors that indicate the need for cleanup. The process of the script and its output are also detailed.'
 tags: ['cleanup', 'logging', 'sql', 'windows']
@@ -47,4 +47,6 @@ The script will then run two different SQL queries to remove the broken remote d
 ## Output
 
 Script log only.
+
+
 

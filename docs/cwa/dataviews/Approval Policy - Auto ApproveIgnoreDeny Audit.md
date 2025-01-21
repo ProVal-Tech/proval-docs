@@ -1,7 +1,7 @@
 ---
 id: '1b296878-9915-4c2b-9d2e-f9ee09059cc9'
-title: 'Auto Approval Policy View'
-title_meta: 'Auto Approval Policy View'
+title: 'Approval Policy - Auto ApproveIgnoreDeny Audit'
+title_meta: 'Approval Policy - Auto ApproveIgnoreDeny Audit'
 keywords: ['approval', 'policy', 'settings', 'proval', 'filters']
 description: 'This document provides an overview of the dataview used to examine the Auto Approve, Auto Ignore, and Auto Deny settings of Approval Policies, detailing the various characteristics and statuses related to patch approvals.'
 tags: []
@@ -36,4 +36,6 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 | Examined Characteristics - By Titles           | Group_Concat list of the titles that are either approved, denied, or ignored.                                                                                         |
 | Examined Characteristics - CVSS Status         | Whether the patches are approved on the basis of CVSS score or not.                                                                                                   |
 | Examined Characteristics - CVSS >              | CVSS score above which auto-approval of patches is applied.                                                                                                          |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '36a13e9c-fd23-4dae-9979-04a99a787ac0'
-title: 'Weekly Script Failure Analysis - 30 Day Retention'
-title_meta: 'Weekly Script Failure Analysis - 30 Day Retention'
+title: 'Script Failure Analysis - 30 Day Retention'
+title_meta: 'Script Failure Analysis - 30 Day Retention'
 keywords: ['script', 'failure', 'analysis', 'retention', 'data', 'update']
 description: 'This document outlines the purpose and updates of the Weekly Script Failure Analysis - 30 Day Retention script, which creates and manages a data table for script failure assessments, ensuring data is accurately updated daily and older data is removed efficiently.'
 tags: ['database', 'performance', 'update']
@@ -29,4 +29,6 @@ The purpose of this script is to create the [pvl_Script_Assessment](<../tables/p
 
 Schedule the script to run once per day, preferably around midnight.  
 ![Sample Run](../../../static/img/Script-Failure-Analysis---30-Day-Retention/image_1.png)
+
+
 

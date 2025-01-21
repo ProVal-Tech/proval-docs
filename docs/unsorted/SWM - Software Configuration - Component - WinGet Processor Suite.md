@@ -1,7 +1,7 @@
 ---
 id: '9af7383a-7bdd-4ea1-b333-1b35732b1bb7'
-title: 'WinGet Export, Import, Update, and Uninstall'
-title_meta: 'WinGet Export, Import, Update, and Uninstall'
+title: 'SWM - Software Configuration - Component - WinGet Processor Suite'
+title_meta: 'SWM - Software Configuration - Component - WinGet Processor Suite'
 keywords: ['winget', 'export', 'import', 'update', 'uninstall', 'json', 'packages']
 description: 'This document provides an overview of various WinGet functionalities including exporting a list of software packages to a JSON file, importing packages from a JSON file, updating all compatible software packages, and uninstalling specific software packages using WinGet on endpoints. It includes dependencies, implementation details, and Datto variable configurations for each process.'
 tags: ['installation', 'software', 'uninstallation', 'update']
@@ -107,4 +107,6 @@ Import the component in this directory into the target environment.
 
 ### Output
 stdOut & stdError
+
+
 

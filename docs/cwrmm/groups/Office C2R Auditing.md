@@ -1,7 +1,7 @@
 ---
 id: '4611eb6b-e00e-4e38-9935-531f71852e8c'
-title: 'Office C2R Auditing Group Creation'
-title_meta: 'Office C2R Auditing Group Creation'
+title: 'Office C2R Auditing'
+title_meta: 'Office C2R Auditing'
 keywords: ['microsoft', 'group', 'auditing', 'software', 'dynamic']
 description: 'This document provides a step-by-step guide on how to create a dynamic group for auditing computers with Microsoft 365 installed using ConnectWise Automate. It includes navigation instructions, criteria setup, and completion verification.'
 tags: ['setup', 'software']
@@ -45,4 +45,6 @@ This document outlines the process for creating a dynamic group for computers wi
 
 ![Image](../../../static/img/Office-C2R-Auditing/image_10.png)  
 ![Image](../../../static/img/Office-C2R-Auditing/image_11.png)
+
+
 

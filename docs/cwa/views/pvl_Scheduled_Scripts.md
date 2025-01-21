@@ -1,7 +1,7 @@
 ---
 id: '5c02ccad-5b51-46a5-8423-59286adc37ea'
-title: 'CWM - Automate - Dataview - Improper Script Schedules'
-title_meta: 'CWM - Automate - Dataview - Improper Script Schedules'
+title: 'pvl_Scheduled_Scripts'
+title_meta: 'pvl_Scheduled_Scripts'
 keywords: ['sql', 'dataview', 'schedules', 'scripts', 'automation']
 description: 'This document outlines the SQL query view designed to store and execute the schedules of scripts in ConnectWise Automate that may be improperly configured. It identifies recurring schedules running at excessive frequencies and highlights potential issues with script execution.'
 tags: ['database', 'report', 'security', 'windows']
@@ -46,4 +46,6 @@ The view is designed to store and execute the SQL query utilized by the [CWM - A
 | Total Servers          | Total servers targeted in the schedule                                   |
 | Total Workstations      | Total workstations targeted in the schedule                              |
 | Percent Targeted       | Percentage of the machines targeted in the schedule                     |
+
+
 

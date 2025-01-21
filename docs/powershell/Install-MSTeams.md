@@ -1,7 +1,7 @@
 ---
 id: ps-install-msteams
 title: 'Install-MSTeams'
-title_meta: 'Install-MSTeams Command'
+title_meta: 'Install-MSTeams'
 keywords: ['install', 'msteams', 'teamsbootstrapper', 'upgrade']
 description: 'Documentation for the Install-MSTeams command to install Microsoft Teams using the Teamsbootstrapper.exe and optionally upgrade existing installations.'
 tags: ['installation', 'software', 'windows']
@@ -49,4 +49,6 @@ Uninstalls and deprovisions the existing Microsoft Teams installation before rei
 ## Output
 - `.\Install-MSTeams-log.txt`
 - `.\Install-MSTeams-error.txt`
+
+
 

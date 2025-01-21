@@ -1,7 +1,7 @@
 ---
 id: 'bf8fac11-d525-4cea-a6e7-f402af581f77'
-title: 'Threatlocker Organization Name for Deployment'
-title_meta: 'Threatlocker Organization Name for Deployment'
+title: 'Company - Threatlocker_Organization_Name'
+title_meta: 'Company - Threatlocker_Organization_Name'
 keywords: ['threatlocker', 'deployment', 'organization', 'portal']
 description: 'This document outlines the necessary organization name required for deploying Threatlocker. It emphasizes the importance of matching the name with the existing organization in the ThreatLocker portal for successful deployment.'
 tags: ['security', 'software']
@@ -26,4 +26,6 @@ This document specifies the organization name to be used for Threatlocker deploy
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Threatlocker_Organization_Name/image_1.png)
+
+
 

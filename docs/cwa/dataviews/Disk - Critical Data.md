@@ -1,7 +1,7 @@
 ---
 id: '8a8b76b2-aa25-419c-b193-aa98f54ef274'
-title: 'Disk Information Display'
-title_meta: 'Disk Information Display for Critical Disk Data'
+title: 'Disk - Critical Data'
+title_meta: 'Disk - Critical Data'
 keywords: ['disk', 'information', 'critical', 'data', 'gather', 'client', 'computer', 'drive', 'manufacturer', 'health']
 description: 'This document provides an overview of the Disk Information Display, which gathers critical disk data from the EPM - Disk - Agnostic - Get-CriticalDiskInfo script and stores it in a custom table. It includes details about the columns and dependencies involved in the process.'
 tags: ['disk']
@@ -58,5 +58,7 @@ This Dataview displays the disk information gathered from [EPM - Disk - Agnostic
 | IntegrityErrors      | The number of integrity errors logged on the drive                      |
 | InformationalLogEntries | The number of informational log entries logged on the drive           |
 | DateUpdated          | The date that this information was gathered                             |
+
+
 
 

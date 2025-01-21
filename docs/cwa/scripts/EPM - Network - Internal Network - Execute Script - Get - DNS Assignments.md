@@ -1,7 +1,7 @@
 ---
 id: 'c3e9e7df-9e35-46ab-bca6-a182331ca211'
-title: 'EPM - Network - Script - Get - DNS Assignments'
-title_meta: 'EPM - Network - Script - Get - DNS Assignments'
+title: 'EPM - Network - Internal Network - Execute Script - Get - DNS Assignments'
+title_meta: 'EPM - Network - Internal Network - Execute Script - Get - DNS Assignments'
 keywords: ['dns', 'network', 'script', 'assignments', 'dataview']
 description: 'This document outlines the execution of the EPM - Network - Script - Get - DNS Assignments script, which runs weekly to update the DNS Assignments dataview for managed Windows servers and workstations. It includes dependencies and alert template information.'
 tags: ['windows']
@@ -25,4 +25,6 @@ Managed Windows Servers and Workstations
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get - DNS Assignments`
+
+
 

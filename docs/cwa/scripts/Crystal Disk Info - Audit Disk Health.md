@@ -1,7 +1,7 @@
 ---
 id: 'b6740eae-5c84-4285-994b-eed8b3f22f53'
-title: 'Crystal Disk Info Hard Drive Health Check Script'
-title_meta: 'Crystal Disk Info Hard Drive Health Check Script'
+title: 'Crystal Disk Info - Audit Disk Health'
+title_meta: 'Crystal Disk Info - Audit Disk Health'
 keywords: ['hard drive', 'health', 'status', 'script', 'monitoring']
 description: 'This document details a script that utilizes the Crystal Disk Info program to automatically assess hard drive health on computers. It updates the Hard Drive Status field in Extra Data Fields with results indicating whether the hard drive is functioning normally or reporting issues. The script also includes ticket creation functionality for detected failures.'
 tags: ['disk-encryption', 'report', 'setup', 'software', 'windows']
@@ -71,4 +71,6 @@ The status information gets updated in the following places:
 
 - Script Log
 - Hard Drive Status EDF
+
+
 

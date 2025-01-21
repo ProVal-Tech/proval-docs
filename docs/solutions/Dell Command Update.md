@@ -1,7 +1,7 @@
 ---
 id: '0e57bbbb-cc88-4183-ba7c-e67ca0918112'
-title: 'Dell Command Update Execution'
-title_meta: 'Dell Command Update Execution'
+title: 'Dell Command Update'
+title_meta: 'Dell Command Update'
 keywords: ['dell', 'update', 'execution', 'workstations', 'commands']
 description: 'This document outlines the process for executing Dell Command | Update CLI commands on Dell Workstations and provides a comprehensive display of the results. It includes associated content, implementation steps, and relevant links for further assistance.'
 tags: ['dell', 'installation', 'update', 'windows']
@@ -39,4 +39,6 @@ Execute the [Dell Command | Update CLI commands](https://www.dell.com/support/ma
 
 **Note:** The systems must be compatible with the installation of Dell Command Update. For further details on compatible systems, please visit the compatible systems section of the link below:  
 [Dell Command | Update Windows Universal Application | Driver Details | Dell US](https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=0XNVX)
+
+
 

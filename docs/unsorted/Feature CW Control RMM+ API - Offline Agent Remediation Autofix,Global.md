@@ -1,7 +1,7 @@
 ---
 id: 'c793b2af-4369-4c31-8a56-db1a1728d12d'
-title: 'Autofix Script for Offline Server Monitoring'
-title_meta: 'Autofix Script for Offline Server Monitoring'
+title: 'Feature CW Control RMM+ API - Offline Agent Remediation Autofix,Global'
+title_meta: 'Feature CW Control RMM+ API - Offline Agent Remediation Autofix,Global'
 keywords: ['offline', 'server', 'monitoring', 'ticket', 'agent', 'remediation']
 description: 'This document provides details about an updated autofix script designed for monitoring offline servers. The script checks the status of agents in both Automate and Control, attempts to restart offline agents, and can create tickets for offline servers and broken agents. It includes setup instructions, dependencies, and global variables required for optimal functionality.'
 tags: []
@@ -97,4 +97,6 @@ The script will clear the **AgentStatus** script state and finish any open offli
 - Script Log
 - Script State
 - Ticket
+
+
 

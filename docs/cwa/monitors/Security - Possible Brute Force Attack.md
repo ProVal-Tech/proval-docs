@@ -1,7 +1,7 @@
 ---
 id: '5099131e-bdc7-470a-8bd1-011dfc54ef4e'
-title: 'ProVal - Production - Security - Possible Brute Force Attack'
-title_meta: 'ProVal - Production - Security - Possible Brute Force Attack'
+title: 'Security - Possible Brute Force Attack'
+title_meta: 'Security - Possible Brute Force Attack'
 keywords: ['proval', 'security', 'brute', 'force', 'monitor', 'alert']
 description: 'This document outlines the steps to manage the ProVal - Production - Security - Possible Brute Force Attack monitor in your environment, including the removal of existing instances, refreshing group status, executing SQL queries for monitor setup, and implementing alert templates for effective monitoring.'
 tags: ['database', 'security', 'setup']
@@ -133,4 +133,6 @@ Ensure that the monitor set is limited to the `Server Role - AD - Infrastructure
 Implement the appropriate alert template for alerting.
 
 Suggested alert template: `△ Custom - Ticket Creation Computer - Failures Only`
+
+
 

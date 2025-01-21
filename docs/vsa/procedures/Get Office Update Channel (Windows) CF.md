@@ -1,7 +1,7 @@
 ---
 id: 'ed6559df-a8d5-48d9-8a9e-fe26b84a056b'
-title: 'Get Office Update Channel for Microsoft Office'
-title_meta: 'Get Office Update Channel for Microsoft Office'
+title: 'Get Office Update Channel (Windows) CF'
+title_meta: 'Get Office Update Channel (Windows) CF'
 keywords: ['office', 'update', 'channel', 'cf', 'agent', 'procedure']
 description: 'This document outlines the procedure to check and update the Microsoft Office update channel using VSA RMM. It details the various update channels available, the dependencies required, and the implementation steps to successfully export and import the agent procedure.'
 tags: ['software', 'update', 'windows']
@@ -54,4 +54,6 @@ Agent Procedure Log
 
 Custom Field  
 ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_7.png)  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '63beba3c-f4a6-41a5-98e2-d4e4ce885035'
-title: 'All-in-One Ticket Creation Script for Monitors'
-title_meta: 'All-in-One Ticket Creation Script for Monitors'
+title: 'Ticket Creation - Computer'
+title_meta: 'Ticket Creation - Computer'
 keywords: ['ticket', 'monitor', 'alert', 'logging', 'status', 'client', 'location', 'computer']
 description: 'This document provides a comprehensive overview of an all-in-one script designed for monitors that generates detailed tickets with useful information. It is specifically tailored for use in a monitor-driven environment, ensuring efficient ticket creation without manual intervention. The script includes variables for enhanced alert messages and is dependent on the configuration of the monitor’s alerting tab.'
 tags: ['alerting', 'logging']
@@ -53,4 +53,6 @@ This script outputs logging information into the script log in the scripting tab
 What the Alerting Tab looks like:
 
 ![Alerting Tab Example](../../../static/img/Ticket-Creation---Computer/image_4.png)
+
+
 

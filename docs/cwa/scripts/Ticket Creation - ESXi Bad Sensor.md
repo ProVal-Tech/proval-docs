@@ -1,7 +1,7 @@
 ---
 id: '26780ede-b390-4f16-9d5a-de876ab180ee'
-title: 'ESXi Bad Sensor Monitor Ticket Creation Script'
-title_meta: 'ESXi Bad Sensor Monitor Ticket Creation Script'
+title: 'Ticket Creation - ESXi Bad Sensor'
+title_meta: 'Ticket Creation - ESXi Bad Sensor'
 keywords: ['esxi', 'monitor', 'ticket', 'sensor', 'automation']
 description: 'This document describes a script specifically designed for creating tickets for ESXi Bad Sensors, triggered by a monitor. It details the dependencies, process, and provides an example of the generated ticket, ensuring accurate reporting of any issues detected by the monitoring system.'
 tags: ['esxi', 'vmware']
@@ -46,4 +46,6 @@ The only dependency for this script is that the monitor triggering the script mu
 > Type: Storage - Error      Message: Disk 2 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
 > Type: Storage - Error      Message: Disk 3 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
 > Type: Storage - Error      Message: Disk 4 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'eb1db969-6aef-4e3d-b0fd-b72aaba89084'
-title: 'Uninstall Adobe Flash'
-title_meta: 'Uninstall Adobe Flash from Endpoint'
+title: 'Adobe Flash Uninstall'
+title_meta: 'Adobe Flash Uninstall'
 keywords: ['uninstall', 'flash', 'adobe', 'utility', 'endpoint']
 description: 'This document details the procedure for uninstalling Adobe Flash from an endpoint, including logging examples, detection processes, and utility dependencies. It outlines the steps taken during the uninstallation process and confirms the successful removal of the software.'
 tags: ['recovery', 'software', 'uninstallation', 'windows']
@@ -82,4 +82,6 @@ Flash is detected by gci on all known Flash directories. If detected, the uninst
 ## Output
 
 Agent Procedure Log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '3c74153d-7575-485c-bd6d-c5e002384cbd'
-title: 'Enable Advanced Windows Security Auditing'
-title_meta: 'Enable Advanced Windows Security Auditing'
+title: 'Enable Advanced Windows Security Auditing Globals, Autofix'
+title_meta: 'Enable Advanced Windows Security Auditing Globals, Autofix'
 keywords: ['security', 'auditing', 'windows', 'monitor', 'ticket']
 description: 'This document outlines a script designed to fully enable Advanced Windows Security Auditing on a computer system. It configures security settings to capture all security events and can create a ticket for failures to alert system administrators.'
 tags: ['security', 'windows']
@@ -47,4 +47,6 @@ In addition to enabling Advanced Windows Security Auditing, the script is also c
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Enable-Advanced-Windows-Security-Auditing-Globals,-Autofix/image_3.png)
+
+
 

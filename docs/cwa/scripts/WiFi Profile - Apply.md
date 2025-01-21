@@ -1,7 +1,7 @@
 ---
 id: '52b6b460-b6bd-48cf-aab1-8484149578f0'
-title: 'WiFi Configuration Script'
-title_meta: 'WiFi Configuration Script'
+title: 'WiFi Profile - Apply'
+title_meta: 'WiFi Profile - Apply'
 keywords: ['wifi', 'configuration', 'ssid', 'profile', 'automation']
 description: 'This document provides a detailed overview of a script that applies WiFi configuration for a specified SSID, including dependencies, user parameters, and the process involved. It highlights the time saved by automation and includes a sample run of the script.'
 tags: ['networking', 'setup', 'software']
@@ -40,4 +40,6 @@ The script applies the WiFi configuration for the desired SSID.
 ## Output
 
 - Script log
+
+
 

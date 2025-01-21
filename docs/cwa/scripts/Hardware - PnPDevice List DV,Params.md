@@ -1,7 +1,7 @@
 ---
 id: 'b390d527-f85c-4f74-af2e-3a639bff8a51'
-title: 'Collect Device Information Script'
-title_meta: 'Collect Device Information Script for Windows Agents'
+title: 'Hardware - PnPDevice List DV,Params'
+title_meta: 'Hardware - PnPDevice List DV,Params'
 keywords: ['device', 'version', 'windows', 'sql', 'automation']
 description: 'This document provides details on a script that collects device name and version information for specified devices on Windows agents, optimizing the data collection process and saving time through automation.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -49,4 +49,6 @@ This script collects information about the device name and version as provided f
 ## Output
 
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-criticaldiskinfo
 title: 'Get-CriticalDiskInfo'
-title_meta: 'Get-CriticalDiskInfo Command'
+title_meta: 'Get-CriticalDiskInfo'
 keywords: ['disk', 'health', 'monitoring', 'performance']
 description: 'Documentation for the Get-CriticalDiskInfo command to gather data pulled from the CrystalDiskInfo application and return it to RMM.'
 tags: ['performance', 'report', 'software']
@@ -31,4 +31,6 @@ Location of output for log, result, and error files:
 
 - `.\\Get-CriticalDiskInfo-log.txt`
 - `.\\Get-CriticalDiskInfo-error.txt`
+
+
 

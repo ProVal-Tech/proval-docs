@@ -1,7 +1,7 @@
 ---
 id: 'a17ec084-ba3c-4a89-9d7a-52e4260af6e1'
-title: 'Offline Agents Auto-Retire Script'
-title_meta: 'Offline Agents Auto-Retire Script for ConnectWise Automate'
+title: 'Automate - Offline Agents - Auto-Retire'
+title_meta: 'Automate - Offline Agents - Auto-Retire'
 keywords: ['offline', 'agents', 'auto-retire', 'script', 'automate', 'threshold', 'exclusions']
 description: 'This document outlines the Offline Agents Auto-Retire script for ConnectWise Automate, detailing its purpose, implementation steps, user parameters, and system properties. It provides guidance on setting thresholds for retiring offline computers and managing exclusions through Extra Data Fields (EDFs).'
 tags: ['setup', 'windows']
@@ -138,4 +138,6 @@ Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
 Last Logged In User: DEV-WIN10-DCJOI/Test
 ```
+
+
 

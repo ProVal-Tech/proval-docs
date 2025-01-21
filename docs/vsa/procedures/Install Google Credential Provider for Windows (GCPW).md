@@ -1,7 +1,7 @@
 ---
 id: '2e080c81-a143-4fcb-939a-57ada1fae059'
-title: 'Google Credential Provider for Windows (GCPW) - Installation'
-title_meta: 'Google Credential Provider for Windows (GCPW) - Installation'
+title: 'Install Google Credential Provider for Windows (GCPW)'
+title_meta: 'Install Google Credential Provider for Windows (GCPW)'
 keywords: ['gcpw', 'google', 'windows', 'credential', 'provider', 'installation', 'configuration']
 description: 'This document outlines the automated procedure for installing and configuring Google Credential Provider for Windows (GCPW). It includes steps for checking prerequisites, installing necessary software, setting allowed domains for login, and configuring an optional enrollment token. Detailed logging and verification steps are also provided.'
 tags: ['installation', 'setup', 'software', 'windows']
@@ -59,4 +59,6 @@ Agent Procedure Log
 %ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-log.txt
 %ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-error.txt
 ```
+
+
 

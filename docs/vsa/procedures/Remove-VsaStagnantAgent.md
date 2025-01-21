@@ -1,7 +1,7 @@
 ---
 id: '94d707f3-894a-4c0d-a83a-e447cb5d83fd'
-title: 'Remove Stagnant VSA Agents'
-title_meta: 'Remove Stagnant VSA Agents from Environment'
+title: 'Remove-VsaStagnantAgent'
+title_meta: 'Remove-VsaStagnantAgent'
 keywords: ['vsa', 'agents', 'offline', 'removal', 'exclusion']
 description: 'This document outlines the process for removing VSA agents that have been offline for a specified number of days. It details the requirements, parameters, and usage examples for the script that facilitates this removal while allowing for various exclusion filters to be applied, ensuring that only the appropriate agents are targeted.'
 tags: ['setup']
@@ -46,4 +46,6 @@ The location of output files for log, result, and error files is as follows:
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
+
+
 

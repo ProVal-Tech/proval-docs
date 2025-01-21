@@ -1,7 +1,7 @@
 ---
 id: '9f850e35-aca9-4255-b692-4b31d33f7ab1'
-title: 'Remove Application Script for CW RMM'
-title_meta: 'Remove Application Script for CW RMM'
+title: 'Remove Application'
+title_meta: 'Remove Application'
 keywords: ['uninstall', 'application', 'cw', 'rmm', 'script']
 description: 'This document provides a detailed guide on how to create and implement a script in ConnectWise RMM for uninstalling specified applications from devices. It includes sample runs, user parameters, and step-by-step instructions for setting up the task and handling outputs effectively.'
 tags: ['software', 'uninstallation', 'windows']
@@ -285,4 +285,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - Task log
 - Custom field 'Remove Application Result'
+
+
 

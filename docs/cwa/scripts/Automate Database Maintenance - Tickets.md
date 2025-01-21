@@ -1,7 +1,7 @@
 ---
 id: 'a917ce08-f8ba-493e-92c0-643024a70d96'
-title: 'Automate Database Maintenance Solution'
-title_meta: 'Automate Database Maintenance Solution'
+title: 'Automate Database Maintenance - Tickets'
+title_meta: 'Automate Database Maintenance - Tickets'
 keywords: ['cleanup', 'tickets', 'database', 'maintenance', 'log']
 description: 'This document details the Automate Database Maintenance Solution script, which is responsible for cleaning up various tables in the database, including Tickets, TicketData, and others. It outlines the requirements for each table cleanup and provides information on the script functionality and logging mechanism.'
 tags: ['cleanup', 'database']
@@ -37,4 +37,6 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Tickets/image_1.png)
+
+
 

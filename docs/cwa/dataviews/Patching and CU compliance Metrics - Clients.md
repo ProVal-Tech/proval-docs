@@ -1,7 +1,7 @@
 ---
 id: 'd7c2fb39-45e1-482f-b58d-5397cbbec1da'
-title: 'Patch Compliance Overview for Windows Environment'
-title_meta: 'Patch Compliance Overview for Windows Environment'
+title: 'Patching and CU compliance Metrics - Clients'
+title_meta: 'Patching and CU compliance Metrics - Clients'
 keywords: ['patch', 'compliance', 'windows', 'update', 'cumulative']
 description: 'This document provides a comprehensive overview of the patch and Cumulative Update compliance scores for Windows environments using ConnectWise Automate. It details the metrics for supported Windows computers, including compliance percentages, age of updates, and validation data, grouped by client for better clarity and management.'
 tags: ['compliance', 'update', 'windows']
@@ -57,4 +57,6 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | Greater than or equal to 75      |
 | CU Score %                 | Red    | Less than 75                     |
 | CU Score %                 | Green  | Greater than or equal to 75      |
+
+
 

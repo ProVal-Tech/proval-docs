@@ -1,7 +1,7 @@
 ---
 id: '64f26a73-5577-4bfd-b0f0-e8f90ed2904b'
-title: 'eShare Install'
-title_meta: 'eShare Install - Silent Installation Script'
+title: 'Eshare Install'
+title_meta: 'Eshare Install'
 keywords: ['eshare', 'install', 'silent', 'software', 'installation']
 description: 'The eShare Install script facilitates the silent installation of eShare software on the target machine without requiring a reboot. This document provides a summary, sample run logs, dependencies, and the installation process.'
 tags: ['installation', 'software', 'update']
@@ -33,4 +33,6 @@ The **eShare Install** script silently installs the eShare software on the machi
 ## Output
 
 - Procedure log
+
+
 

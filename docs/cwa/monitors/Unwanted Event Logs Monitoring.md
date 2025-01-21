@@ -1,7 +1,7 @@
 ---
 id: '88dfd269-1df7-4c57-a898-9445dec162b5'
-title: 'Urgent Ticket Monitoring for Automate Server'
-title_meta: 'Urgent Ticket Monitoring for Automate Server - ProVal'
+title: 'Unwanted Event Logs Monitoring'
+title_meta: 'Unwanted Event Logs Monitoring'
 keywords: ['ticket', 'monitoring', 'automate', 'event', 'error', 'critical']
 description: "This document outlines the setup for a remote monitor that generates an urgent ticket in ProVal's Autotask portal when critical events from specified sources occur more than 10 times within 60 minutes on the Automate server. It is specifically designed for On-Prem partners and includes detailed configuration settings and dependencies."
 tags: ['autotask']
@@ -34,5 +34,7 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server
+
+
 
 

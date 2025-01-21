@@ -1,7 +1,7 @@
 ---
 id: '1935d4ab-345b-46a0-ad2a-167c9a86532c'
-title: 'Uninstall Microsoft Office Versions'
-title_meta: 'Uninstall Microsoft Office Versions from 2007 to 2016 & O365'
+title: 'Universal Office Uninstaller'
+title_meta: 'Universal Office Uninstaller'
 keywords: ['uninstall', 'microsoft', 'office', 'corruption', 'shortcut']
 description: 'This script automates the process of uninstalling all versions of Microsoft Office from 2007 to 2016 and O365. It downloads necessary offscrub files and handles machine or software corruption, ensuring complete removal of Office app shortcuts for the specified versions. Save time and effort with this efficient solution.'
 tags: ['software', 'uninstallation', 'windows']
@@ -32,4 +32,6 @@ This script downloads the offscrub files from the LTShare and then attempts to u
 ## Output
 
 - Script log
+
+
 

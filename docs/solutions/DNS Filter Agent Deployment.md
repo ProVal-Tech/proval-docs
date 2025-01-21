@@ -1,7 +1,7 @@
 ---
 id: '07996c53-6e1b-4696-aa08-bdb70710c2c7'
-title: 'Deploy DNS Filter Agent Automatically'
-title_meta: 'Deploy DNS Filter Agent Automatically'
+title: 'DNS Filter Agent Deployment'
+title_meta: 'DNS Filter Agent Deployment'
 keywords: ['dns', 'filter', 'agent', 'deployment', 'monitor']
 description: 'This document outlines the steps to automatically deploy the DNS filter agent to client machines using associated scripts and monitors in the ConnectWise Automate environment. It includes detailed instructions for setup, implementation, and ticket creation.'
 tags: ['deployment']
@@ -53,4 +53,6 @@ This solution is designed to automatically deploy the DNS filter to the agents.
 5. Ticket Creation  
    For ticket creation, it is required to set the Ticket Category at the monitor level to gather the ticket category ID and create the ticket on the respective board via the script [CWA - Script - DNS Filter Agent - Install](<../cwa/scripts/DNS Filter Agent - Install.md>):  
    ![Image](../../static/img/DNS-Filter-Agent-Deployment/image_2.png)
+
+
 

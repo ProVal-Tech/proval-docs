@@ -1,7 +1,7 @@
 ---
 id: 'cb9ba98d-9a64-4003-b7d5-a7a18192f161'
-title: 'Offboarding Process Implementation'
-title_meta: 'Offboarding Process Implementation for Client Requirements'
+title: 'Offboarding'
+title_meta: 'Offboarding'
 keywords: ['offboarding', 'monitor', 'scripts', 'automation', 'configuration']
 description: 'This document outlines the implementation of an offboarding process tailored to client requirements, detailing associated scripts, templates, and monitors necessary for effective execution. It provides step-by-step instructions for importing and configuring the relevant components using the ProSync plugin.'
 tags: []
@@ -52,4 +52,6 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
      - Offboard Client
      - Offboard Location
      - Offboard Computer
+
+
 

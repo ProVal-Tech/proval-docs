@@ -1,7 +1,7 @@
 ---
 id: '2be5ccc9-2700-4f5d-9b77-30567de4cfdf'
-title: 'Dell Hardware Monitoring Setup'
-title_meta: 'Dell Hardware Monitoring Setup'
+title: 'Implement- Dell Hardware Monitoring'
+title_meta: 'Implement- Dell Hardware Monitoring'
 keywords: ['dell', 'monitoring', 'alert', 'sql', 'setup', 'configuration']
 description: 'This document outlines the steps to set up Dell Hardware Monitoring in ConnectWise Automate, including importing alert templates, running SQL queries, and configuring monitors for Dell servers.'
 tags: ['setup', 'sql', 'windows']
@@ -225,4 +225,6 @@ Limit to: `Computers - Dell Servers`
 
 ### 8. Set Alert Template
 Set the appropriate alert template.
+
+
 

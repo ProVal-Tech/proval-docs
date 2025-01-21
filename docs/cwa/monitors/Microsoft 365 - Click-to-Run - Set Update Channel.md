@@ -1,7 +1,7 @@
 ---
 id: '44e0a674-9e54-47ad-be29-6c93611db0b2'
-title: 'Microsoft 365 Update Channel Audit'
-title_meta: 'Microsoft 365 Update Channel Audit'
+title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
+title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'audit', 'click-to-run']
 description: 'This document outlines how to detect computers with differing Microsoft 365 update channels as set in the Client or Computer Level Update Channel. It requires Microsoft 365 Click-to-Run installation and a managed patch policy.'
 tags: ['software', 'update']
@@ -26,4 +26,6 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
+
+
 

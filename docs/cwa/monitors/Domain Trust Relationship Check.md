@@ -1,7 +1,7 @@
 ---
 id: 'bf518e9f-f93c-451b-a38a-5fc3472cc6f4'
-title: 'Domain Trust Relationship Monitor'
-title_meta: 'Domain Trust Relationship Monitor'
+title: 'Domain Trust Relationship Check'
+title_meta: 'Domain Trust Relationship Check'
 keywords: ['monitor', 'ticket', 'domain', 'trust', 'workstation']
 description: 'This document outlines the implementation and details of a monitor that generates a ticket when the trust relationship between a domain and a workstation is broken. It includes suggested settings, dependencies, and ticketing information for effective management.'
 tags: ['security', 'ticketing', 'windows']
@@ -56,4 +56,6 @@ The command was completed with a failure
 ## Implementation
 
 [https://proval.itglue.com/5078775/docs/17975723](https://proval.itglue.com/5078775/docs/17975723)
+
+
 

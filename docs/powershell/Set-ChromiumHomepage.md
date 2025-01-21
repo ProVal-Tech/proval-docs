@@ -1,7 +1,7 @@
 ---
 id: ps-set-chromiumhomepage
 title: 'Set-ChromiumHomepage'
-title_meta: 'Set-ChromiumHomepage Command'
+title_meta: 'Set-ChromiumHomepage'
 keywords: ['homepage', 'chromium', 'browser', 'configuration']
 description: 'Documentation for the Set-ChromiumHomepage command to set and enforce the homepage in Chromium-based browsers.'
 tags: ['chrome', 'web-browser']
@@ -37,4 +37,6 @@ This command will set the browser homepage to DuckDuckGo and enforce that page o
 ## Output
 
     .\Set-ChromiumHomepage-log.txt
+
+
 

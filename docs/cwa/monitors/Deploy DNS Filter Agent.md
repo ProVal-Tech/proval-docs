@@ -1,7 +1,7 @@
 ---
 id: '3990e2f6-344e-4d2a-98ac-bd73b7a6c752'
-title: 'DNS Filter Agent Installation Monitor'
-title_meta: 'DNS Filter Agent Installation Monitor'
+title: 'Deploy DNS Filter Agent'
+title_meta: 'Deploy DNS Filter Agent'
 keywords: ['dns', 'filter', 'agent', 'installation', 'monitor']
 description: 'This document outlines the functionality of the internal monitor that executes the DNS Filter Agent installation script on eligible online machines. It details the conditions for installation, the dependencies, and the ticketing process for installation failures.'
 tags: ['installation', 'windows']
@@ -37,4 +37,6 @@ OR
 
 Failed to install DNS Filter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
+
+
 

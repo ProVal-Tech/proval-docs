@@ -1,7 +1,7 @@
 ---
 id: ps-remove-userprofile
 title: 'Remove-UserProfile'
-title_meta: 'Remove-UserProfile Command'
+title_meta: 'Remove-UserProfile'
 keywords: ['remove', 'user', 'profile', 'local']
 description: 'Documentation for the Remove-UserProfile command to delete a user profile and remove the user account if local.'
 tags: ['security', 'windows']
@@ -78,4 +78,6 @@ Removes the user profile for the user 'domain\\testing123'. The user account wil
 - `./Remove-UserProfile-log.txt`
 - `./Remove-UserProfile-data.txt`
 - `./Remove-UserProfile-error.txt`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a961622e-18fd-4e0d-9f43-8c1b9f6beea3'
-title: 'Automate Database Maintenance Cleanup Script'
-title_meta: 'Automate Database Maintenance Cleanup Script'
+title: 'Automate Database Maintenance - EventLog'
+title_meta: 'Automate Database Maintenance - EventLog'
 keywords: ['cleanup', 'database', 'eventlogs', 'maintenance', 'script']
 description: 'This document outlines the Automate Database Maintenance Cleanup Script, which is responsible for cleaning up the Eventlogs table based on specific conditions. It details the script functionality, variables used, and expected output, providing a comprehensive overview for users.'
 tags: ['cleanup', 'database', 'eventlogs']
@@ -34,4 +34,6 @@ This script will add the following section to the log variable:
 ![Output](../../../static/img/Automate-Database-Maintenance---EventLog/image_1.png)
 
 or results if not skipped.
+
+
 

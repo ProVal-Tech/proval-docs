@@ -1,7 +1,7 @@
 ---
 id: 'cf4fb3ae-3228-4621-be94-467b16f97090'
-title: 'Create URL for Automate Agent Installer with Tokens'
-title_meta: 'Create URL for Automate Agent Installer with Tokens'
+title: 'Agent Deploy - Generate Installers with Tokens'
+title_meta: 'Agent Deploy - Generate Installers with Tokens'
 keywords: ['url', 'automate', 'installer', 'tokens', 'email', 'windows', 'mac', 'linux']
 description: 'This document provides a detailed guide on creating a URL for the Automate Agent installer for various operating systems, including Windows MSI, MAC, and Linux. It includes user parameters, output details, and installation commands for each platform, along with a sample run and email outputs.'
 tags: ['email', 'installation', 'linux', 'windows']
@@ -71,4 +71,6 @@ The email will contain MSI, Linux, and MAC installer URLs along with the details
    - Copy the command mentioned under the headline "Deployment PowerShell (Run-as-Admin)" (Command mentioned in Box 5) from the email you received.
    - Press enter. The deployment process will start. Wait for the command to finish.
    - You will receive a message saying: "The Automate Agent Has Been Successfully Installed."
+
+
 

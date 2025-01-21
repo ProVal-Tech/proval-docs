@@ -1,7 +1,7 @@
 ---
 id: 'b0c17ff1-73a8-41ae-af16-901eade975b2'
-title: 'Processor Architecture Info'
-title_meta: 'Processor Architecture Info'
+title: 'Dynamic Processor Architecture Role'
+title_meta: 'Dynamic Processor Architecture Role'
 keywords: ['architecture', 'processor', 'windows', 'cim', 'system']
 description: 'This document provides information on processor architecture, detailing the numeric values corresponding to various architectures such as x86, MIPS, Alpha, PowerPC, ARM, Itanium, AMD64, and ARM64. It also includes detection settings and a sample image for reference.'
 tags: ['cim', 'windows']
@@ -36,4 +36,6 @@ default { Unknown architecture }
 ## Sample
 
 ![Sample Image](../../static/img/Dynamic-Processor-Architecture-Role/image_1.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'babcfa7d-a4cd-404f-9375-e2498856ff24'
-title: 'GPO Deployment Script for Silent Installer'
-title_meta: 'GPO Deployment Script for Silent Installer'
+title: 'Network Probe - Silent EXE URL Generator'
+title_meta: 'Network Probe - Silent EXE URL Generator'
 keywords: ['gpo', 'deployment', 'silent', 'installer', 'probe', 'url']
 description: 'This document details a script that is part of a GPO deployment process, capable of generating a silent installer URL. It can be executed standalone or as part of a larger deployment strategy. The script saves time by automating the installer generation process and requires specific dependencies to function correctly.'
 tags: ['database', 'deployment', 'gpo']
@@ -41,4 +41,6 @@ This script is part of our GPO deployment process but can also be run standalone
 ## Output
 
 - Script log -> Logs the silent install URL to the script logs.
+
+
 

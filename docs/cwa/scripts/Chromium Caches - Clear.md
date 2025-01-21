@@ -1,7 +1,7 @@
 ---
 id: '1edcec5e-4e2d-4edf-b670-1bb81643b4e3'
-title: 'SWM - Software Configuration - Clear Chromium Cache'
-title_meta: 'SWM - Software Configuration - Clear Chromium Cache'
+title: 'Chromium Caches - Clear'
+title_meta: 'Chromium Caches - Clear'
 keywords: ['automate', 'chromium', 'cache', 'configuration', 'script']
 description: 'This document provides an overview of the Automate implementation of the agnostic script for clearing the Chromium cache. It includes user parameters, sample run images, and output details for effective software configuration management.'
 tags: ['software', 'windows']
@@ -26,5 +26,7 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
+
+
 
 

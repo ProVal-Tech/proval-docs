@@ -1,7 +1,7 @@
 ---
 id: '201f46d7-6511-4e5f-a002-ff7f4b27c8be'
-title: 'Network Glue Collector Uninstallation Script'
-title_meta: 'Network Glue Collector Uninstallation Script'
+title: 'Remove Application - Network Glue Collector'
+title_meta: 'Remove Application - Network Glue Collector'
 keywords: ['uninstallation', 'network', 'collector', 'script', 'automation']
 description: 'This document details a script designed for the uninstallation of the Network Glue Collector, either on demand or as part of an offboarding process. It includes dependencies, variables, global parameters, output details, and ticketing information in case of failure during the uninstallation.'
 tags: ['logging', 'ticketing', 'uninstallation']
@@ -64,4 +64,6 @@ This script is built to perform the uninstallation of the Network Glue Collector
 
 **Example:**  
 ![Example](../../../static/img/Remove-Application---Network-Glue-Collector/image_2.png)
+
+
 

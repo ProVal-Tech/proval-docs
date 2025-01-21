@@ -1,7 +1,7 @@
 ---
 id: '0f400020-d1ec-40a1-8581-b7f20aacef5d'
-title: 'Import Certificate to Local Machine Stores'
-title_meta: 'Import Certificate to Local Machine Stores'
+title: 'Import LMCertificate'
+title_meta: 'Import LMCertificate'
 keywords: ['certificate', 'import', 'local', 'machine', 'self-signed']
 description: 'This document provides a comprehensive guide on importing a certificate to one or more local machine stores, including creating a self-signed certificate and importing existing certificates from local paths. It covers user parameters, task creation, and script execution for the process.'
 tags: ['setup', 'windows']
@@ -147,4 +147,6 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 ![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
 
 This
+
+
 

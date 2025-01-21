@@ -1,7 +1,7 @@
 ---
 id: 'b5ffbe82-a523-4104-8e8f-c60cfa2f8419'
-title: 'Uninstall ShadowControl Script'
-title_meta: 'Uninstall ShadowControl Script'
+title: 'ShadowControl Uninstall v2'
+title_meta: 'ShadowControl Uninstall v2'
 keywords: ['uninstall', 'shadowcontrol', 'script', 'server', 'agent']
 description: 'This document details a script that fetches the uninstall string from the database to uninstall ShadowControl and unregister it from the server, streamlining the uninstallation process and saving time through automation.'
 tags: ['database', 'software', 'uninstallation']
@@ -34,4 +34,6 @@ This script will fetch the uninstall string from the database and attempt to uni
 ## Output
 
 - Script log
+
+
 

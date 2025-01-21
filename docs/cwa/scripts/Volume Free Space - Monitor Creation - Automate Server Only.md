@@ -1,7 +1,7 @@
 ---
 id: '8b42e4f9-eb46-4058-b4f9-e0f1ea8840cd'
-title: 'Volume Free Space Monitor Script'
-title_meta: 'Volume Free Space Monitor Script for Automate'
+title: 'Volume Free Space - Monitor Creation - Automate Server Only'
+title_meta: 'Volume Free Space - Monitor Creation - Automate Server Only'
 keywords: ['monitor', 'volume', 'free', 'space', 'ticket', 'drives', 'autotask']
 description: 'This document details a script designed to monitor the free space on drives of the Automate server and generate tickets in the Autotask portal for any failures. It builds upon the existing Volume Free Space Monitor Creation script with modifications to enhance functionality and reporting.'
 tags: ['autotask']
@@ -37,4 +37,6 @@ Referred to: [CWM - Automate - Script - Volume Free Space - Monitor Creation](<.
 
 - Script log
 - Remote Monitor
+
+
 

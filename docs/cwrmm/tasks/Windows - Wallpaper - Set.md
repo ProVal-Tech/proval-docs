@@ -1,7 +1,7 @@
 ---
 id: '886b7749-ea21-4a48-b4c9-06589fb09a7a'
-title: 'Set Desktop Wallpaper for All Users'
-title_meta: 'Set Desktop Wallpaper for All Users'
+title: 'Windows - Wallpaper - Set'
+title_meta: 'Windows - Wallpaper - Set'
 keywords: ['wallpaper', 'desktop', 'users', 'enforcement', 'login']
 description: 'This document provides a comprehensive guide on implementing a script to set the active desktop wallpaper for all users from a local path or a URL. It includes options for enforcing the wallpaper on login and resetting to previous wallpapers.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -169,4 +169,6 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
 

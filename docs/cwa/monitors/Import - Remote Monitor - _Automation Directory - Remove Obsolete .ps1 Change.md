@@ -1,7 +1,7 @@
 ---
 id: 'e2c56554-7f1d-4f1a-b1a2-37a0bd343629'
-title: 'Remove Obsolete PowerShell Monitors in ConnectWise Automate'
-title_meta: 'Remove Obsolete PowerShell Monitors in ConnectWise Automate'
+title: 'Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 Change'
+title_meta: 'Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 Change'
 keywords: ['connectwise', 'monitor', 'obsolete', 'powershell', 'automation']
 description: 'This document provides a step-by-step guide on how to remove obsolete PowerShell monitors in ConnectWise Automate by executing SQL queries to manage group agents effectively.'
 tags: ['connectwise', 'database', 'software', 'windows']
@@ -163,4 +163,6 @@ Locate your remote monitor by opening the group(s) remote monitors tab.
 
 ## Step 6
 Do not apply any alert template to this remote monitor.
+
+
 

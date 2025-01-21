@@ -1,7 +1,7 @@
 ---
 id: 'abc5e9cd-9e2c-4df0-b129-be342008e554'
-title: 'Monitor Windows Machines for PowerShell Version'
-title_meta: 'Monitor Windows Machines for PowerShell Version'
+title: 'PowerShell Out of Date'
+title_meta: 'PowerShell Out of Date'
 keywords: ['windows', 'monitor', 'powershell', 'version', 'detection']
 description: 'This document outlines a monitor set designed to detect Windows machines where the PowerShell version is older than 5.0. It includes necessary adjustments for functionality and dependencies for implementation.'
 tags: ['software', 'windows']
@@ -23,4 +23,6 @@ The monitor set will detect Windows machines where the PowerShell version is old
 ## Target
 
 Managed Windows Workstations and Servers
+
+
 

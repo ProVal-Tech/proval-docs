@@ -1,7 +1,7 @@
 ---
 id: ps-remove-font  
 title: 'Remove-Font'  
-title_meta: 'Remove-Font Command'  
+title_meta: 'Remove-Font'  
 keywords: ['remove', 'font', 'cleanup', 'system']  
 description: 'Documentation for the Remove-Font command to remove one or more installed fonts from the system.'  
 tags: ['windows']  
@@ -57,4 +57,6 @@ Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts
 # or  
 Get-ChildItem -Path (New-Object -ComObject Shell.Application).Namespace(0x14).Self.Path  
 ```  
+
+
 

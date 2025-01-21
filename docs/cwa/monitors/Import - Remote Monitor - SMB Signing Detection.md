@@ -1,7 +1,7 @@
 ---
 id: '8283d8a6-8866-47c2-a6a3-a5bf288664f2'
-title: 'Implementation of CVE-2016-2115 Detection and Remediation'
-title_meta: 'Implementation of CVE-2016-2115 Detection and Remediation'
+title: 'Import - Remote Monitor - SMB Signing Detection'
+title_meta: 'Import - Remote Monitor - SMB Signing Detection'
 keywords: ['cve', 'vulnerability', 'detection', 'remediation', 'database', 'sql']
 description: 'This document provides a comprehensive guide on the implementation of CVE-2016-2115 detection and remediation, including SQL commands for inserting extra fields and searches related to the vulnerability. It also covers the necessary steps to set up remote monitoring and alerts in the system.'
 tags: ['cve', 'database', 'sql', 'vulnerability']
@@ -164,4 +164,6 @@ unlisted: false
    ![Image 1](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_1.png)
 
    ![Image 2](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_2.png)
+
+
 

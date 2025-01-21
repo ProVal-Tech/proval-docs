@@ -1,7 +1,7 @@
 ---
 id: '202e2dde-5865-4035-8410-37dc6cb92a60'
-title: 'SnapAgent Installation Script'
-title_meta: 'SnapAgent Installation Script for Efficient Deployment'
+title: 'BlackPoint - SnapAgent Installer'
+title_meta: 'BlackPoint - SnapAgent Installer'
 keywords: ['snapagent', 'installation', 'monitor', 'edf', 'deployment']
 description: 'This document provides a comprehensive guide on the SnapAgent installation script, detailing its dependencies, variables, and ticketing features for efficient deployment and monitoring. It includes sample runs, variable documentation, and logging information to assist in successful implementation.'
 tags: ['deployment', 'installation', 'logging']
@@ -60,4 +60,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Local files on the computer
+
+
 

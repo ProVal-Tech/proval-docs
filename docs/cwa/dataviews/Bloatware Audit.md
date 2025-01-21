@@ -1,7 +1,7 @@
 ---
 id: '80011568-0974-4dee-b011-f6cd58384061'
-title: 'Bloatware List Display'
-title_meta: 'Bloatware List Display'
+title: 'Bloatware Audit'
+title_meta: 'Bloatware Audit'
 keywords: ['bloatware', 'client', 'computer', 'location', 'operating', 'system']
 description: 'This document provides an overview of the Bloatware List Display, detailing the installed bloatware fetched by the Remove - PUA script. It outlines the dependencies and the columns included in the report, helping users understand the data collected regarding bloatware on client computers.'
 tags: ['report']
@@ -35,5 +35,7 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](https
 | Bloatware                 | Name of the Bloatware                               |
 | Category                  | Category of the Bloatware                           |
 | Data Collection Time      | Data Collection Time                                 |
+
+
 
 

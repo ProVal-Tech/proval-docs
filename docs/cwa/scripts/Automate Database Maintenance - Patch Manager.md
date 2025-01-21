@@ -1,7 +1,7 @@
 ---
 id: '225185fa-817d-49e9-8000-ebbf2e69cf2c'
-title: 'Automate Database Maintenance Solution'
-title_meta: 'Automate Database Maintenance Solution'
+title: 'Automate Database Maintenance - Patch Manager'
+title_meta: 'Automate Database Maintenance - Patch Manager'
 keywords: ['cleanup', 'database', 'maintenance', 'patch', 'history']
 description: 'This document details a script used for maintaining the Automate database by cleaning up specific tables related to patch management. It outlines the required global variable settings, describes the script’s functionality, and provides an overview of the variables used within the script.'
 tags: ['cleanup', 'database']
@@ -39,4 +39,6 @@ Document the various variables in the script. Delete any section that is not rel
 This script will add the following section to the log variable:
 
 ![Output Image](../../../static/img/Automate-Database-Maintenance---Patch-Manager/image_1.png)
+
+
 

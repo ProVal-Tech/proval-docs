@@ -1,7 +1,7 @@
 ---
 id: 'a9e12b7a-2e7f-483c-ae50-39b9ff5667bd'
-title: 'Creating Remote Monitors for Average Disk Queue Length'
-title_meta: 'Creating Remote Monitors for Average Disk Queue Length'
+title: 'Average Disk Queue Length Monitor - Create'
+title_meta: 'Average Disk Queue Length Monitor - Create'
 keywords: ['remote', 'monitor', 'disk', 'queue', 'length', 'windows', 'performance']
 description: 'This document outlines the process for creating Remote Monitors for Average Disk Queue Length on Windows machines, detailing the necessary configurations, thresholds, and troubleshooting steps for optimal performance.'
 tags: ['disk', 'performance', 'windows']
@@ -141,4 +141,6 @@ If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolong
 ## Output
 
 - Remote Monitors
+
+
 

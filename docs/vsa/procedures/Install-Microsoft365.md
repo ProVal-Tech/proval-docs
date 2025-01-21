@@ -1,7 +1,7 @@
 ---
 id: '0c6a208d-d18f-49a5-9244-c5f149c47c0d'
-title: 'Install Microsoft 365 Apps for Business'
-title_meta: 'Install Microsoft 365 Apps for Business with PowerShell'
+title: 'Install-Microsoft365'
+title_meta: 'Install-Microsoft365'
 keywords: ['microsoft', '365', 'installation', 'odt', 'xml', 'configuration']
 description: 'This document provides a comprehensive guide on installing Microsoft 365 Apps for Business using PowerShell. It covers the requirements, process, and parameters needed to customize the installation with XML configuration, including examples and output details.'
 tags: ['installation', 'windows']
@@ -62,4 +62,6 @@ Location of output for log, result, and error files.
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
+
+
 

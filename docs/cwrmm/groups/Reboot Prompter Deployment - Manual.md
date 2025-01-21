@@ -38,3 +38,5 @@ Reboot_PendingReboot --> Custom field (Endpoint)
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
 
+
+

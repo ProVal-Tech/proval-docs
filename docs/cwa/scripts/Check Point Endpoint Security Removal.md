@@ -1,7 +1,7 @@
 ---
 id: '670407ad-49d7-407a-bf5c-4bf727dc103b'
-title: 'Check Point Endpoint Security Uninstallation Script'
-title_meta: 'Check Point Endpoint Security Uninstallation Script'
+title: 'Check Point Endpoint Security Removal'
+title_meta: 'Check Point Endpoint Security Removal'
 keywords: ['uninstallation', 'checkpoint', 'security', 'windows', 'reboot']
 description: 'This document provides a detailed overview of a script designed to uninstall Check Point Endpoint Security from Windows machines. The script handles drive decryption and requires multiple reboots for successful uninstallation, ensuring a thorough process. Caution is advised when using this script due to its reboot requirements.'
 tags: ['reboot', 'security', 'ticketing', 'uninstallation', 'windows']
@@ -56,4 +56,6 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N of PC: @biosver@  
+
+
 

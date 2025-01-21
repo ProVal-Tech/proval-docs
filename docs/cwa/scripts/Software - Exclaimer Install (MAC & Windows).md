@@ -1,7 +1,7 @@
 ---
 id: '8c3f58b7-7680-45c3-8f40-1e9c27001136'
-title: 'Install Exclaimer on MAC and Windows'
-title_meta: 'Install Exclaimer on MAC and Windows'
+title: 'Software - Exclaimer Install (MAC & Windows)'
+title_meta: 'Software - Exclaimer Install (MAC & Windows)'
 keywords: ['exclaimer', 'mac', 'windows', 'installation', 'automation']
 description: 'This document provides a comprehensive guide on how to install the Exclaimer application on both MAC and Windows operating systems. It outlines the dependencies, process, and expected output of the installation script, helping users save time through automation.'
 tags: ['installation', 'software', 'windows']
@@ -41,4 +41,6 @@ This script will install Exclaimer on both MAC and Windows.
 ## Output
 
 - Script log
+
+
 

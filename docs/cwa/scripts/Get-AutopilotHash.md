@@ -1,7 +1,7 @@
 ---
 id: '9171549a-070a-4346-be90-393416713806'
-title: 'Get Autopilot Hash for Device Registration'
-title_meta: 'Get Autopilot Hash for Device Registration'
+title: 'Get-AutopilotHash'
+title_meta: 'Get-AutopilotHash'
 keywords: ['autopilot', 'hash', 'device', 'registration', 'edf']
 description: 'This script retrieves the Hardware Hash necessary for Autopilot device registration and stores it in the Computer EDF labeled "Autopilot Hash". It can be executed as part of an autofix script or independently, and it includes user parameters for initial setup.'
 tags: ['setup']
@@ -34,4 +34,6 @@ It is intended to run as an autofix script with [CWA - Internal Monitor - ProVal
 ## Output
 
 - Script Logs
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'e2ceb0d3-d186-4010-b4e5-f2ea582294e3'
-title: 'Boot an Endpoint into Safe Mode'
-title_meta: 'Boot an Endpoint into Safe Mode'
+title: 'Safe Mode Reboot'
+title_meta: 'Safe Mode Reboot'
 keywords: ['endpoint', 'safemode', 'reboot', 'windows', 'vsa']
 description: 'This document outlines the procedure to boot an endpoint into Safe Mode using the VSA Agent Service. It includes a summary of the process, example logs, and detailed steps to ensure successful execution.'
 tags: ['performance', 'reboot', 'setup', 'windows']
@@ -25,4 +25,6 @@ Boots an endpoint into Safe Mode.
 ## Process
 
 Sets the VSA Agent Service to start in Safe Mode, then restarts the endpoint into Safe Boot network.
+
+
 

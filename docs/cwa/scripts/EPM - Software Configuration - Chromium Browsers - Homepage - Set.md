@@ -1,7 +1,7 @@
 ---
 id: 'e5c01410-3731-4b1c-b166-235d637c44bb'
-title: 'SWM - Software Configuration - Set-ChromiumHomepage'
-title_meta: 'SWM - Software Configuration - Set-ChromiumHomepage'
+title: 'EPM - Software Configuration - Chromium Browsers - Homepage - Set'
+title_meta: 'EPM - Software Configuration - Chromium Browsers - Homepage - Set'
 keywords: ['chromium', 'homepage', 'browser', 'configuration', 'edge', 'chrome']
 description: 'This document outlines the implementation of the SWM - Software Configuration - Set-ChromiumHomepage script for enforcing a homepage in Chromium-based browsers like Google Chrome and Microsoft Edge. It details the parameters, sample runs, and dependencies needed for effective usage.'
 tags: ['chrome', 'edge', 'setup']
@@ -42,6 +42,8 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
+
+
 
 
 

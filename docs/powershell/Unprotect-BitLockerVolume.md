@@ -1,7 +1,7 @@
 ---
 id: ps-unprotect-bitlockervolume
 title: 'Unprotect-BitLockerVolume'
-title_meta: 'Unprotect-BitLockerVolume Command'
+title_meta: 'Unprotect-BitLockerVolume'
 keywords: ['unprotect', 'bitlocker', 'volume', 'disable']
 description: 'Documentation for the Unprotect-BitLockerVolume command to disable BitLocker protection on one or all volumes.'
 tags: ['disk-encryption', 'recovery', 'windows']
@@ -38,4 +38,6 @@ Disables BitLocker protection on all volumes.
 - `.\Unprotect-BitLockerVolume-log.txt`
 - `.\Unprotect-BitLockerVolume-data.txt`
 - `.\Unprotect-BitLockerVolume-error.txt`
+
+
 

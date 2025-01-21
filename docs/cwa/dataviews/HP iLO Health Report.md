@@ -1,7 +1,7 @@
 ---
 id: '163aca22-cc56-45ee-9732-3873c6117e60'
-title: 'iLO Health Report Display'
-title_meta: 'iLO Health Report Display - ConnectWise Automate'
+title: 'HP iLO Health Report'
+title_meta: 'HP iLO Health Report'
 keywords: ['ilo', 'health', 'report', 'client', 'status', 'device', 'firmware', 'network', 'memory', 'storage']
 description: 'This document provides an overview of the iLO health report display, detailing the health status of iLO devices including connection status, firmware revision, and various hardware health metrics. It also outlines dependencies and the specific columns included in the report.'
 tags: ['firmware', 'memory', 'report', 'storage']
@@ -51,5 +51,7 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 | Status                  | Overall status of the iLO device.                                                                         |
 | StatusInfo              | Additional information about the overall iLO status.                                                     |
 | ScriptRunTime           | Last run time of the script to gather data.                                                               |
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-firefoxextensions
 title: 'Get-FirefoxExtensions'
-title_meta: 'Get-FirefoxExtensions Command'
+title_meta: 'Get-FirefoxExtensions'
 keywords: ['firefox', 'extensions', 'browser', 'user']
 description: 'Documentation for the Get-FirefoxExtensions command to gather information about extensions installed on the Mozilla Firefox browser for each user.'
 tags: ['firefox', 'software']
@@ -53,4 +53,6 @@ ExtensionName           NoteProperty string ExtensionName=The best extension
 ExtensionVersion        NoteProperty string ExtensionVersion=1.1.1
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
 ```
+
+
 

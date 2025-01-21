@@ -1,7 +1,7 @@
 ---
 id: '54ca5ad4-d580-4056-92f0-fc3896ac5438'
-title: 'ProVal Audit Solution for Syncing Scripts and Monitors'
-title_meta: 'ProVal Audit Solution for Syncing Scripts and Monitors'
+title: 'ProVal Content Audit'
+title_meta: 'ProVal Content Audit'
 keywords: ['audit', 'sync', 'scripts', 'monitors', 'dataview']
 description: 'This document outlines a solution for auditing scripts, internal monitors, and dataviews to ensure they are in sync with the ProSync Plugin. It provides guidance for consultants to assist partners in syncing or removing unnecessary content and highlights available resources.'
 tags: []
@@ -24,4 +24,6 @@ This solution provides a way to audit the scripts, internal monitors, and datavi
 ## Implementation
 
 Import the [CWM - Automate - Dataview - ProVal Internal Monitor Audit](<../cwa/dataviews/ProVal Internal Monitor Audit.md>), [CWM - Automate - Dataview - ProVal Dataview Audit](<../cwa/dataviews/ProVal Dataview Audit.md>), and [CWM - Automate - Dataview - ProVal Script Audit](<../cwa/dataviews/ProVal Script Audit.md>) dataviews into the client's environment. No additional setup is required.
+
+
 

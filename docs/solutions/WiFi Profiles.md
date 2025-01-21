@@ -1,7 +1,7 @@
 ---
 id: 'd0357bdb-80ab-4106-aee0-21a064150986'
-title: 'Get/Remove/Add Wifi Profiles'
-title_meta: 'Get/Remove/Add Wifi Profiles - Manage Wi-Fi Profiles Effectively'
+title: 'WiFi Profiles'
+title_meta: 'WiFi Profiles'
 keywords: ['wifi', 'profiles', 'malicious', 'suspicious', 'monitor', 'script', 'audit']
 description: 'This document provides a comprehensive guide on the updated script for managing Wi-Fi profiles, including features for adding, removing, and auditing profiles on end machines. It highlights the necessary updates, implementation steps, and associated content to ensure effective management of Wi-Fi profiles while enhancing security.'
 tags: ['networking', 'security', 'setup', 'software', 'windows']
@@ -51,4 +51,6 @@ The purpose of this solution is to identify and remove malicious or suspicious W
 - Check the data fetched from these primary computers in the [CWM - Automate - Dataview - Wi-Fi Profiles](<../cwa/dataviews/WiFi Profile - Audit Script.md>) dataview.
 - Set the EDFs defined in the [script's](<../cwa/scripts/GetRemoveAdd Wifi Profiles.md>) document according to the data available in the [dataview](<../cwa/dataviews/WiFi Profile - Audit Script.md>).
 - Apply the `△ CUSTOM - Execute Script - Get - Wifi Profiles` alert template to the monitor set.
+
+
 

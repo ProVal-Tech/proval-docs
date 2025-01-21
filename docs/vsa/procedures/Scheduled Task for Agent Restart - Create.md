@@ -1,7 +1,7 @@
 ---
 id: '7eb2b58e-9f5e-4732-8457-6518060f0cc3'
-title: 'Scheduled Task for VSA Agent Restart'
-title_meta: 'Scheduled Task for VSA Agent Restart'
+title: 'Scheduled Task for Agent Restart - Create'
+title_meta: 'Scheduled Task for Agent Restart - Create'
 keywords: ['scheduled', 'task', 'vsa', 'agent', 'restart']
 description: 'This document outlines the process of creating a scheduled task that attempts to restart the VSA Agent every 15 minutes to ensure that VSA agents remain online and notify users of any issues. It includes sample run logs, dependencies, and the process involved in setting up the task.'
 tags: ['performance', 'software', 'windows']
@@ -44,4 +44,6 @@ This section describes the location and method by which this script returns data
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

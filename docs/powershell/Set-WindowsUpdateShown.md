@@ -1,7 +1,7 @@
 ---
 id: ps-set-windowsupdateshown
 title: 'Set-WindowsUpdateShown'
-title_meta: 'Set-WindowsUpdateShown Command'
+title_meta: 'Set-WindowsUpdateShown'
 keywords: ['windows', 'update', 'unhide', 'kbarticles']
 description: 'Documentation for the Set-WindowsUpdateShown command to manually unhide provided KB articles from Windows Update using the PSWindowsUpdate module.'
 tags: ['update', 'windows']
@@ -36,4 +36,6 @@ The location of output for log, result, and error files:
 .\Set-WindowsUpdateShown-data.txt
 .\Set-WindowsUpdateShown-error.txt
 ```
+
+
 

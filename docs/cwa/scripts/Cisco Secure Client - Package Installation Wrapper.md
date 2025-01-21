@@ -1,7 +1,7 @@
 ---
 id: '66e1b766-2357-47f0-a7d6-ecd658b61e17'
-title: 'Cisco Secure Client Installation Wrapper'
-title_meta: 'Cisco Secure Client Installation Wrapper'
+title: 'Cisco Secure Client - Package Installation Wrapper'
+title_meta: 'Cisco Secure Client - Package Installation Wrapper'
 keywords: ['cisco', 'client', 'installation', 'wrapper', 'windows', 'macintosh']
 description: 'This document outlines a wrapper script designed to execute package installations for Cisco Secure Client on both Windows and Mac machines. It serves as an autofix for the CWA Internal Monitor that detects missing Cisco Secure Client modules, ensuring seamless installation and configuration across platforms.'
 tags: ['installation', 'software', 'windows']
@@ -16,4 +16,6 @@ This is a wrapper script that executes the [Script - Cisco Secure Client - Packa
 ## Sample Run
 
 ![Sample Run](../../../static/img/Cisco-Secure-Client---Package-Installation-Wrapper/image_1.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '918c1a66-54b8-4468-9e4b-5b7db918b77c'
-title: 'Gather DHCP Information from Target Server'
-title_meta: 'Gather DHCP Information from Target Server'
+title: 'Get DHCP Server Scope Information'
+title_meta: 'Get DHCP Server Scope Information'
 keywords: ['dhcp', 'server', 'database', 'report', 'information']
 description: 'This document outlines a script that gathers DHCP information from a specified target server and stores it in a database for reporting and data view purposes. The automation process is designed to save time and streamline data management.'
 tags: ['database', 'report', 'setup', 'windows']
@@ -27,4 +27,6 @@ This script gathers DHCP information from a target server and saves it to the da
 ## Output
 
 - Table: `plugin_proval_dhcp_statistics`
+
+
 

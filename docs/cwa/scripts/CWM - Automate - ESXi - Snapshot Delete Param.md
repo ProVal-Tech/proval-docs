@@ -1,7 +1,7 @@
 ---
 id: '830beb63-113a-406e-aef2-046403de9cb9'
-title: 'Remove ESXi Snapshot Script'
-title_meta: 'Remove ESXi Snapshot Script'
+title: 'CWM - Automate - ESXi - Snapshot Delete Param'
+title_meta: 'CWM - Automate - ESXi - Snapshot Delete Param'
 keywords: ['esxi', 'snapshot', 'delete', 'virtualmachine', 'automation']
 description: 'This document provides a comprehensive guide on using a PowerShell script to delete a snapshot of a machine hosted on an ESXi host server utilizing the PowerCLI module. It covers prerequisites, dependencies, user parameters, and alerting mechanisms for successful execution.'
 tags: ['alerting', 'email', 'esxi', 'logging']
@@ -88,4 +88,6 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to delete the Snapshot @SnapShotName@ from the virtual machine @VMName@. Please review manually.
 PowerShell script result: @psout@
 ```
+
+
 

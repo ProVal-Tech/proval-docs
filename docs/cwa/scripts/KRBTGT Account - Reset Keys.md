@@ -1,7 +1,7 @@
 ---
 id: 'a6e7a255-6d3e-4c00-bea0-636533914cbc'
-title: 'Reset KRBTGT Active Directory Account'
-title_meta: 'Reset KRBTGT Active Directory Account'
+title: 'KRBTGT Account - Reset Keys'
+title_meta: 'KRBTGT Account - Reset Keys'
 keywords: ['active-directory', 'reset', 'krbtgt', 'account', 'script']
 description: 'This document provides a streamlined script for resetting the KRBTGT Active Directory account. It includes a sample run, dependencies, and output details, while emphasizing the need for caution when executing the script.'
 tags: ['active-directory', 'security']
@@ -37,4 +37,6 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Res
 
 - Script log
 - Local file on the computer
+
+
 

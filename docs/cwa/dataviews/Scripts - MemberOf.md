@@ -1,7 +1,7 @@
 ---
 id: '83b99c1b-d471-41f1-9755-af3a2ab1abf0'
-title: 'Find Script for All Scripts'
-title_meta: 'Find Script for All Scripts - ConnectWise Automate'
+title: 'Scripts - MemberOf'
+title_meta: 'Scripts - MemberOf'
 keywords: ['script', 'connectwise', 'dataview', 'mysql', 'implementation']
 description: 'This document details a script that displays the results of selecting "Find Script" for all scripts in ConnectWise Automate. It includes dependencies, implementation steps, and a breakdown of the columns in the output.'
 tags: ['connectwise', 'database', 'report', 'software']
@@ -40,4 +40,6 @@ This script displays the results of selecting 'Find Script' for all scripts.
 | Object Description  | Full path of the group or whether the alert template is applied at the computer level, remote monitor group, or an internal monitor. |
 | Limited To         | Indicates whether the scheduled group script/remote monitor is limited to a search or if the internal monitor is limited to any group. |
 | Affected Agents    | Number of computers in the group or number of agents detected in the search if limited to search.     |
+
+
 

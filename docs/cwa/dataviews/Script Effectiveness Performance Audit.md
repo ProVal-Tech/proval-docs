@@ -1,7 +1,7 @@
 ---
 id: '5606850a-c68e-4b15-b183-399cded6e601'
-title: 'Script Log Summary'
-title_meta: 'Script Log Summary'
+title: 'Script Effectiveness Performance Audit'
+title_meta: 'Script Effectiveness Performance Audit'
 keywords: ['script', 'log', 'summary', 'retention', 'performance']
 description: 'This document provides a comprehensive summary of all scripts executed over the specified log retention days, detailing total runs, failures, successes, and the overall effectiveness of each script. It includes information on script performance metrics and visual examples for clarity.'
 tags: ['performance', 'report', 'windows']
@@ -48,4 +48,6 @@ The script log retention days can be seen at the Automate location below:
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-Effectiveness-Performance-Audit/image_2.png)
+
+
 

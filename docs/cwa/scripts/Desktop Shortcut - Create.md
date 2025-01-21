@@ -1,7 +1,7 @@
 ---
 id: 'de971be6-bd0c-432c-a0de-94119ee0da2b'
-title: 'Create Desktop Shortcut for All Users'
-title_meta: 'Create Desktop Shortcut for All Users'
+title: 'Desktop Shortcut - Create'
+title_meta: 'Desktop Shortcut - Create'
 keywords: ['desktop', 'shortcut', 'uri', 'icon', 'windows']
 description: 'This document provides a guide on how to create a desktop shortcut for all users on a Windows system. It includes sample runs, user parameters, and dependencies for successful implementation.'
 tags: ['setup', 'software', 'windows']
@@ -36,4 +36,6 @@ This document explains how to create a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for the process.
+
+
 

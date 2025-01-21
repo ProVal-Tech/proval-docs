@@ -1,7 +1,7 @@
 ---
 id: 'a7785954-5a6d-4003-9d0e-c919e1a96b0c'
-title: 'BitLocker Status and Key Custom Field'
-title_meta: 'BitLocker Status and Key Custom Field'
+title: 'BitLocker Status and Recovery Key Audit'
+title_meta: 'BitLocker Status and Recovery Key Audit'
 keywords: ['bitlocker', 'encryption', 'custom', 'field', 'status', 'key']
 description: 'This document outlines the creation of a custom field used to display the BitLocker encryption status of drives. It includes details on how to set up the field, its properties, and how it integrates with the BitLocker Status and Recovery Key Audit task, providing recovery keys when available.'
 tags: ['encryption', 'recovery', 'windows']
@@ -25,4 +25,6 @@ This custom field is used to display the BitLocker encryption status of drives b
 - **Level:** Endpoint
 - **Description:** This will show drives that are encrypted with BitLocker and will display the recovery key if available.
 - **Editable:** Yes
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-repair-windowsupdate
 title: 'Repair-WindowsUpdate'
-title_meta: 'Repair-WindowsUpdate Command'
+title_meta: 'Repair-WindowsUpdate'
 keywords: ['repair', 'windowsupdate', 'reset', 'troubleshoot']
 description: 'Documentation for the Repair-WindowsUpdate command to reset Windows Update settings and troubleshoot update issues.'
 tags: ['update', 'windows']
@@ -54,4 +54,6 @@ Location of output for log, result, and error files:
 .\Reset-WindowsUpdates-log.txt
 .\Reset-WindowsUpdates-error.txt
 ```
+
+
 

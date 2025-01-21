@@ -1,7 +1,7 @@
 ---
 id: '6a68b349-fa31-41d0-9a6c-80eef1a13fdb'
-title: 'Out Of Date Cumulative Updates Monitor'
-title_meta: 'Out Of Date Cumulative Updates Monitor'
+title: 'Last Cumulative Update  45 Days and  60 Days'
+title_meta: 'Last Cumulative Update  45 Days and  60 Days'
 keywords: ['cumulative', 'update', 'monitor', 'alert', 'ticketing']
 description: 'This document outlines a monitor set that identifies computers with cumulative updates installed between 45 and 60 days ago, excluding End-of-Life machines. It includes dependencies and a custom alert template for efficient tracking and management.'
 tags: ['ticketing', 'windows']
@@ -31,4 +31,6 @@ Global
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
 The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](<../scripts/Out of Date Cumulative Updates Autofix.md>) script.
+
+
 

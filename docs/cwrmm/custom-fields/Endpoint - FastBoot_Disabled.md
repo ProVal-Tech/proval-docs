@@ -1,7 +1,7 @@
 ---
 id: '3c87c303-e892-4f6b-889f-acde66928978'
-title: 'FastBoot Disabled Indicator'
-title_meta: 'FastBoot Disabled Indicator'
+title: 'Endpoint - FastBoot_Disabled'
+title_meta: 'Endpoint - FastBoot_Disabled'
 keywords: ['fastboot', 'disabled', 'endpoint', 'flag']
 description: 'This document provides information on the FastBoot Disabled Indicator, detailing its functionality, default values, and editable status. It includes a summary of the indicator, a detailed table of its fields, and screenshots for visual reference.'
 tags: ['security']
@@ -23,4 +23,6 @@ Indicates that FastBoot has been disabled on the computer.
 
 ![Screenshot 1](../../../static/img/Endpoint---FastBoot_Disabled/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---FastBoot_Disabled/image_2.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'de574ff4-5a24-4ccd-83d3-499b1b274893'
-title: 'AD Account LockOut Detection'
-title_meta: 'AD Account LockOut Detection'
+title: 'RSM - Active Directory- AD Account Lockout Detection'
+title_meta: 'RSM - Active Directory- AD Account Lockout Detection'
 keywords: ['monitoring', 'alert', 'eventid', 'domaincontroller', 'ticketing']
 description: 'This document outlines the setup for monitoring event ID 4740 to detect account lockouts in Active Directory. It includes configuration details for alert generation, dependencies, implementation instructions, and ticketing format for incidents.'
 tags: ['active-directory', 'ticketing']
@@ -62,5 +62,7 @@ Endpoint    :    DEV-Win11DomainJoined
 Domain      :    provaltestdomain.local
 DC          :    DEV-SERVER-2019$
 ```
+
+
 
 

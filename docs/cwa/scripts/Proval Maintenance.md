@@ -1,7 +1,7 @@
 ---
 id: '21a017d1-11e9-40ea-817f-d5503da5bfc8'
-title: 'Cleanup Old Data Script for ConnectWise Automate'
-title_meta: 'Cleanup Old Data Script for ConnectWise Automate'
+title: 'Proval Maintenance'
+title_meta: 'Proval Maintenance'
 keywords: ['cleanup', 'automate', 'database', 'tickets', 'history', 'network', 'roles', 'contacts', 'events', 'patch']
 description: 'This document provides a detailed overview of a script designed to clean up old data in ConnectWise Automate, including ticket history, network devices, and more. It outlines the global parameters, process flow, and expected time savings from automation.'
 tags: ['cleanup', 'database']
@@ -54,4 +54,6 @@ This script cleans up many tables in the database, in the following order of ope
 10. Network device cleanup
 11. Inactive ticket status cleanup
 12. Patch manager history cleanup
+
+
 

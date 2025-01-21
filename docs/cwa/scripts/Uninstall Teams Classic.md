@@ -1,7 +1,7 @@
 ---
 id: '0bcdb6d5-adc1-4122-923c-1bc121f1a146'
-title: 'Uninstall Microsoft Teams Classic'
-title_meta: 'Uninstall Microsoft Teams Classic from Windows Machines'
+title: 'Uninstall Teams Classic'
+title_meta: 'Uninstall Teams Classic'
 keywords: ['uninstall', 'microsoft', 'teams', 'windows', 'script']
 description: 'This document provides a detailed overview of a script designed to uninstall Microsoft Teams Classic from Windows machines, including parameters, output, and ticketing information for failures.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
@@ -45,4 +45,6 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N of PC:** @biosver@  
+
+
 

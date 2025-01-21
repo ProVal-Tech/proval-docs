@@ -1,7 +1,7 @@
 ---
 id: '5e0e3054-ce35-494b-bdde-c8b0c56305d0'
-title: 'Lock Browsers Password Saving Feature'
-title_meta: 'Lock Browsers Password Saving Feature'
+title: 'Prevent Saving Browser Passwords (IE.Chrome.FF)'
+title_meta: 'Prevent Saving Browser Passwords (IE.Chrome.FF)'
 keywords: ['browsers', 'passwords', 'registry', 'security', 'automation']
 description: 'This document outlines a PowerShell script designed to lock password saving features in Internet Explorer, Chrome, Firefox, and Edge by modifying the Windows registry. It includes options to enable password saving and to remove saved passwords, with detailed instructions and a sample run for user guidance.'
 tags: ['browsers', 'security', 'setup', 'windows']
@@ -56,4 +56,6 @@ In the above screenshot, the password saving feature for the browsers will be di
 
 - Script log
 - Script state
+
+
 

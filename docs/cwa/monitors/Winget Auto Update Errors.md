@@ -1,7 +1,7 @@
 ---
 id: '68a14948-368f-4064-97a3-d1928e122013'
-title: 'Winget Auto Update Errors Monitor'
-title_meta: 'Winget Auto Update Errors Monitor'
+title: 'Winget Auto Update Errors'
+title_meta: 'Winget Auto Update Errors'
 keywords: ['winget', 'monitor', 'errors', 'ticket', 'update']
 description: 'This document outlines the setup and details of a remote monitor for detecting errors in the Winget Auto Update process. It describes how the monitor is created, the log file it checks, the alert templates used, and the ticketing format for error notifications.'
 tags: ['update']
@@ -43,4 +43,6 @@ Local Machine
 **Body**:  
 `Winget Auto Update Errors detected on %ComputerName%. Failure details:`  
 `\<Failure Reason>`
+
+
 

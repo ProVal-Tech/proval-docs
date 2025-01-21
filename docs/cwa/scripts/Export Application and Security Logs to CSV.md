@@ -1,7 +1,7 @@
 ---
 id: 'aedee17c-e3b5-4f8e-9565-058318a2009a'
-title: 'Export Application and Security Event Logs to CSV'
-title_meta: 'Export Application and Security Event Logs to CSV'
+title: 'Export Application and Security Logs to CSV'
+title_meta: 'Export Application and Security Logs to CSV'
 keywords: ['event', 'logs', 'csv', 'export', 'upload', 'size', 'critical', 'warning', 'error']
 description: 'This document describes a script that exports Application and Security event logs into a CSV file with configurable options for event levels, date range, and export path. It includes functionality to upload the CSV file to LTShare, with checks on file size to manage local storage.'
 tags: ['windows']
@@ -41,4 +41,6 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 - Script Logs
 - File Upload
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c528df82-8309-4fc8-898e-db75e13a594d'
-title: 'Lock Stolen System Script Execution'
-title_meta: 'Lock Stolen System Script Execution'
+title: 'EDF-Based Stolen Systems Monitor'
+title_meta: 'EDF-Based Stolen Systems Monitor'
 keywords: ['encryption', 'security', 'automate', 'monitoring', 'system']
 description: 'This document outlines the execution of the Lock Stolen System script against machines marked with the Mark System As Stolen EDF, along with the process of monitoring these systems through Automate.'
 tags: ['encryption', 'security']
@@ -22,4 +22,6 @@ This document executes the [SEC - Encryption - Script - Lock Stolen System](<../
 - `Marked as Stolen` Group
 
 ![Image](../../../static/img/EDF-Based-Stolen-Systems-Monitor/image_1.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '6357c957-b5b6-42eb-aacc-f4f2a12d3021'
-title: 'End Session in CW Control Portal'
-title_meta: 'End Session in CW Control Portal'
+title: 'ScreenConnect - End Session Command RMM+'
+title_meta: 'ScreenConnect - End Session Command RMM+'
 keywords: ['cwcontrol', 'session', 'guid', 'automation', 'rmm']
 description: 'This document describes a script designed to terminate a matching session in the CW Control portal using the provided GUID. The script outlines the necessary dependencies, system properties, and the overall process for executing the command, including logging the results for review.'
 tags: []
@@ -56,4 +56,6 @@ This script will populate several variables required for RMM+ to function proper
 ## Output
 
 **Script log messages only**
+
+
 

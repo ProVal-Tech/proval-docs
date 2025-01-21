@@ -1,7 +1,7 @@
 ---
 id: 'cbcc97bf-87ec-41a3-b1ed-d39646194186'
-title: 'Maintenance Mode History'
-title_meta: 'Maintenance Mode History'
+title: 'plugin_proval_h_maintenancemodequeue'
+title_meta: 'plugin_proval_h_maintenancemodequeue'
 keywords: ['history', 'maintenance', 'queue', 'audit', 'computer']
 description: 'This document provides information on how to store historical data about queued maintenance modes, including the structure of the relevant database table and its dependencies.'
 tags: ['database', 'report', 'windows']
@@ -28,4 +28,6 @@ This document stores historical information about queued maintenance modes. This
 | TimeStart   | DATETIME| The server time when the maintenance mode begins.                      |
 | Duration    | INT     | The number of minutes that the maintenance mode will last.             |
 | Mode        | INT     | The type of maintenance mode (1 = Alerts, 2 = Scripts, 3 = Alerts & Scripts) |
+
+
 

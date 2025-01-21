@@ -1,7 +1,7 @@
 ---
 id: '61160125-8794-4e01-ba0a-3bf4ec81077e'
-title: 'OneDrive Sync Status Data View'
-title_meta: 'OneDrive Sync Status Data View for EPM'
+title: 'OneDrive Sync Status Script'
+title_meta: 'OneDrive Sync Status Script'
 keywords: ['onedrive', 'sync', 'status', 'data', 'view', 'client', 'location', 'computer', 'quota', 'collection']
 description: 'This document provides a comprehensive overview of the OneDrive Sync Status data view, detailing the information stored in the EPM custom table pvl_odsync_status, including dependencies, columns, and their descriptions.'
 tags: ['windows']
@@ -39,5 +39,7 @@ The data view presents the OneDrive Sync Status data stored in the [EPM - Data C
 | Last Contact           | Last Contact with Automate                          |
 | Operating System       | Operating System                                    |
 | Form Factor            | Form Factor of the machine                          |
+
+
 
 

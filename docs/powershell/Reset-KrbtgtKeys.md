@@ -1,7 +1,7 @@
 ---
 id: ps-reset-krbtgtkeys
 title: 'Reset-KrbtgtKeys'
-title_meta: 'Reset-KrbtgtKeys Command'
+title_meta: 'Reset-KrbtgtKeys'
 keywords: ['krbtgt', 'reset', 'active-directory', 'security']
 description: 'Documentation for the Reset-KrbtgtKeys command to reset the KRBTGT Active Directory account password.'
 tags: ['active-directory', 'security', 'windows']
@@ -51,4 +51,6 @@ The output for log, result, and error files will be located at:
 .\Reset-KrbtgtKeys-log.txt
 .\Reset-KrbtgtKeys-error.txt
 ```
+
+
 

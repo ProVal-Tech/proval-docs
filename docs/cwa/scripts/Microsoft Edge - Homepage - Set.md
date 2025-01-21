@@ -1,7 +1,7 @@
 ---
 id: 'a1ee2dd1-6f31-4da2-bb85-0c52f7a6566e'
-title: 'SWM - Software Configuration - Set-ChromiumHomepage for Microsoft Edge'
-title_meta: 'SWM - Software Configuration - Set-ChromiumHomepage for Microsoft Edge'
+title: 'Microsoft Edge - Homepage - Set'
+title_meta: 'Microsoft Edge - Homepage - Set'
 keywords: ['automate', 'chromium', 'homepage', 'edge', 'configuration']
 description: 'This document details the Automate implementation of the SWM - Software Configuration - Set-ChromiumHomepage script, which enforces a specific homepage for the Microsoft Edge (Chromium) browser. It includes user parameters, sample runs, and dependencies for successful execution.'
 tags: ['software', 'windows']
@@ -32,4 +32,6 @@ This document describes the Automate implementation of the agnostic script [SWM 
 ## Output
 
 - Script Logs
+
+
 

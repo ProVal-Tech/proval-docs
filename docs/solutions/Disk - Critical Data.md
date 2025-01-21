@@ -1,7 +1,7 @@
 ---
 id: '7907bbc0-a161-47b4-bd24-64aa3ccca910'
-title: 'Disk Critical Data Gathering Solution'
-title_meta: 'Disk Critical Data Gathering Solution'
+title: 'Disk - Critical Data'
+title_meta: 'Disk - Critical Data'
 keywords: ['disk', 'data', 'gathering', 'monitor', 'performance', 'failure']
 description: 'This document outlines a comprehensive solution for gathering hard drive failure data from target machines using an agnostic script. It includes the execution of the script within ConnectWise Automate, storage of data in a MySQL table, and monitoring for predictive hard drive failures, ensuring preventive maintenance of disk performance.'
 tags: ['connectwise', 'database', 'performance', 'windows']
@@ -34,4 +34,6 @@ The solution summary focuses on gathering hard drive failure data from target ma
 - Implement the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) Internal Monitor; check the monitor's document for implementation and alert template.
 - Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor.
 - Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor; check the monitor's document for implementation and alert template.
+
+
 

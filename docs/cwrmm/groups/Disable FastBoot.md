@@ -1,7 +1,7 @@
 ---
 id: 'df5b7a85-683f-4fd6-9a24-4fc836ccfd8a'
-title: 'Creating a Dynamic Group to Disable FastBoot'
-title_meta: 'Creating a Dynamic Group to Disable FastBoot in ConnectWise RMM'
+title: 'Disable FastBoot'
+title_meta: 'Disable FastBoot'
 keywords: ['dynamic', 'group', 'fastboot', 'disable', 'custom', 'fields', 'windows']
 description: 'This document provides a step-by-step guide on creating a dynamic group in ConnectWise RMM to disable FastBoot for specific devices, utilizing custom fields to ensure proper configuration and exclusions.'
 tags: ['windows']
@@ -75,4 +75,6 @@ The group contains the computers where the solution to disable FastBoot is enabl
 
 ![Completed Group 1](../../../static/img/Disable-FastBoot/image_12.png)  
 ![Completed Group 2](../../../static/img/Disable-FastBoot/image_13.png)
+
+
 

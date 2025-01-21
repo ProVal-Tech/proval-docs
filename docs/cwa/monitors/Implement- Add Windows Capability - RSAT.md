@@ -1,7 +1,7 @@
 ---
 id: 'b927b474-abad-4e84-8f39-8995d5ace913'
-title: 'Implementation Steps for RSAT'
-title_meta: 'Implementation Steps for RSAT'
+title: 'Implement- Add Windows Capability - RSAT'
+title_meta: 'Implement- Add Windows Capability - RSAT'
 keywords: ['rsat', 'groupid', 'query', 'monitor', 'alert', 'automation']
 description: 'This document outlines the steps required to implement a remote monitor for Remote Server Administration Tools (RSAT) using SQL queries. It details how to obtain group IDs, modify the SQL query, execute it, and apply the appropriate alert template in ConnectWise Automate.'
 tags: ['database', 'setup']
@@ -102,4 +102,6 @@ Now execute your query from a RAWSQL monitor set.
 ### Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.  
 While assigning the alert template, ensure that it is not performing any actions for WARNINGS unless you want to be notified for the PowerShell errors as well.
+
+
 

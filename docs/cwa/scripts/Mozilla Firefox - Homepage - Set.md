@@ -1,7 +1,7 @@
 ---
 id: 'd86f7be6-b88d-4829-8f0e-9b2d6b9dc645'
-title: 'SWM - Software Configuration - Set Firefox Homepage'
-title_meta: 'SWM - Software Configuration - Set Firefox Homepage'
+title: 'Mozilla Firefox - Homepage - Set'
+title_meta: 'Mozilla Firefox - Homepage - Set'
 keywords: ['firefox', 'homepage', 'configuration', 'software', 'browser']
 description: 'This document describes an Automate implementation of the SWM - Software Configuration - Set-FirefoxHomepage script, which sets the default homepage for the Mozilla Firefox browser. It includes user parameters, sample run outputs, and dependencies.'
 tags: ['firefox', 'software', 'update']
@@ -31,4 +31,6 @@ This document provides an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Logs
+
+
 

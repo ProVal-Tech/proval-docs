@@ -1,7 +1,7 @@
 ---
 id: '656f037b-8dba-4e59-b135-33dcd5b0b7dc'
-title: 'Set Update Channel for Microsoft 365 Clients'
-title_meta: 'Set Update Channel for Microsoft 365 Clients'
+title: 'Client - Update Channel'
+title_meta: 'Client - Update Channel'
 keywords: ['update', 'channel', 'microsoft365', 'client', 'computer']
 description: 'This document provides guidance on selecting the Update Channel for Microsoft 365 clients within the ConnectWise RMM environment. It outlines the available options, dependencies, and details about the configuration settings for the Update Channel.'
 tags: ['microsoft365', 'update']
@@ -32,4 +32,6 @@ Available options are:
 
 ![Image](../../../static/img/Client---Update-Channel/image_1.png)
 ![Image](../../../static/img/Client---Update-Channel/image_2.png)
+
+
 

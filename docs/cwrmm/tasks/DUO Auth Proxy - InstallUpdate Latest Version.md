@@ -1,7 +1,7 @@
 ---
 id: 'bfcc2aec-a83b-49ac-bfbe-274cbf112a6e'
-title: 'DUO Install & Upgrade - Latest Version'
-title_meta: 'DUO Install & Upgrade - Latest Version'
+title: 'DUO Auth Proxy - InstallUpdate Latest Version'
+title_meta: 'DUO Auth Proxy - InstallUpdate Latest Version'
 keywords: ['duo', 'install', 'upgrade', 'authentication', 'proxy', 'script']
 description: 'This document provides a comprehensive guide on how to install or update the DUO Authentication Proxy application to the latest version. It includes sample runs, dependencies, task creation steps, and implementation guidance to ensure successful deployment.'
 tags: ['application', 'deployment', 'update']
@@ -296,4 +296,6 @@ Script log
 Custom field  
 
 ![Output](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_37.png)  
+
+
 

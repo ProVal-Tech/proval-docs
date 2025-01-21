@@ -1,7 +1,7 @@
 ---
 id: ps-set-userregistryvalue
 title: 'Set-UserRegistryValue'
-title_meta: 'Set-UserRegistryValue Command'
+title_meta: 'Set-UserRegistryValue'
 keywords: ['registry', 'user', 'configuration', 'windows']
 description: 'Documentation for the Set-UserRegistryValue command to set specific registry values for all users.'
 tags: ['windows']
@@ -45,4 +45,6 @@ Location of output for log, result, and error files.
 .\Set-UserRegistryValue-log.txt
 .\Set-UserRegistryValue-ERROR.txt
 ```
+
+
 

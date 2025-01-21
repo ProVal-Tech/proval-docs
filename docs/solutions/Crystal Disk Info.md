@@ -1,7 +1,7 @@
 ---
 id: '0df580b1-4b36-4988-b192-574a001a7323'
-title: 'Monitoring Disk Health with Crystal Disk Info'
-title_meta: 'Monitoring Disk Health with Crystal Disk Info'
+title: 'Crystal Disk Info'
+title_meta: 'Crystal Disk Info'
 keywords: ['disk', 'health', 'monitoring', 'crystal', 'info', 'windows']
 description: 'This document outlines the process for monitoring the disk health of physical machines using the Crystal Disk Info tool. It includes prerequisites, implementation steps, and troubleshooting FAQs related to disk monitoring and reporting.'
 tags: ['disk', 'report', 'setup', 'windows']
@@ -54,4 +54,6 @@ The purpose of this document is to monitor the disk health of physical machines 
 - `CrystalDiskInfo does not support RAID disks or IDE (Parallel ATA) and Serial ATA disks connected to an external ATA controller.`
 
 Reference: [Crystal Disk Info FAQ](https://crystalmark.info/en/software/crystaldiskinfo/crystaldiskinfo-faq/)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '0ac0139f-9c8e-4ef2-94df-5cf3b1569ecf'
-title: 'Uninstall HP Bloatware from Windows Workstations'
-title_meta: 'Uninstall HP Bloatware from Windows Workstations'
+title: 'Uninstall HP Bloatware'
+title_meta: 'Uninstall HP Bloatware'
 keywords: ['uninstall', 'hp', 'bloatware', 'windows', 'software']
 description: 'This document outlines a script designed to uninstall all HP bloatware from Windows workstations, detailing its operation, global variables, output, and ticketing system for failures during uninstallation.'
 tags: ['logging', 'software', 'ticketing', 'uninstallation', 'windows']
@@ -49,4 +49,6 @@ If the script fails to uninstall some of the HP bloatware from the machine but u
 
 The script has successfully removed all unnecessary HP bloatware, leaving only the following software components:  
 `@RemainingUninstalledSoftwares@`
+
+
 

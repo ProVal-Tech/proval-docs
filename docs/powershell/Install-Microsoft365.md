@@ -1,7 +1,7 @@
 ---
 id: ps-install-microsoft365
 title: 'Install-Microsoft365'
-title_meta: 'Install-Microsoft365 Command'
+title_meta: 'Install-Microsoft365'
 keywords: ['install', 'microsoft365', 'office', 'setup']
 description: 'Documentation for the Install-Microsoft365 command to install Microsoft 365 Apps for Business or any Microsoft 365 product with XML configuration support.'
 tags: ['installation', 'office365', 'setup']
@@ -49,4 +49,6 @@ Installs Microsoft 365 using the specified XML configuration from a URL and rest
 ## Output
 - .\\Install-Microsoft365-log.txt
 - .\\Install-Microsoft365-error.txt
+
+
 

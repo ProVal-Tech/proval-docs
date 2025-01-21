@@ -1,7 +1,7 @@
 ---
 id: '4e0f7314-bf88-44de-a162-139c191e6e09'
-title: 'Network Glue Collector Auto Deployment'
-title_meta: 'Network Glue Collector Auto Deployment'
+title: 'ProVal Production - Network Glue - Deployment'
+title_meta: 'ProVal Production - Network Glue - Deployment'
 keywords: ['monitor', 'deployment', 'network', 'glue', 'collector', 'windows']
 description: 'This document outlines the auto deployment process for the Network Glue Collector, detailing its dependencies, required EDFs, and configuration settings necessary for successful implementation on Windows machines.'
 tags: ['networking', 'setup', 'windows']
@@ -35,4 +35,6 @@ Windows Machines
 **_To enable ticketing, please set the ticket category in the monitor._**  
 ![Image](../../../static/img/ProVal-Production---Network-Glue---Deployment/image_1.png)  
 **_The script will then handle the ticket creation:_** [ - Network Glue Collector - Install](<../scripts/Network Glue Collector - Install.md>)
+
+
 

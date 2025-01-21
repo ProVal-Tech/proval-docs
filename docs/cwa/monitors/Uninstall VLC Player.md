@@ -1,7 +1,7 @@
 ---
 id: 'fbb859fd-ac3c-4cab-9460-6d5260edf65e'
-title: 'Uninstall VLC Player via ConnectWise Automate'
-title_meta: 'Uninstall VLC Player via ConnectWise Automate'
+title: 'Uninstall VLC Player'
+title_meta: 'Uninstall VLC Player'
 keywords: ['uninstall', 'vlc', 'connectwise', 'monitor', 'ticket']
 description: 'This document provides a step-by-step guide on how to uninstall VLC Player using ConnectWise Automate. It includes instructions for setting up the necessary scripts and alert templates, obtaining group IDs, and executing the SQL query to create a remote monitor that handles ticket creation for the uninstallation process.'
 tags: ['connectwise', 'software', 'uninstallation']
@@ -165,4 +165,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
+
 

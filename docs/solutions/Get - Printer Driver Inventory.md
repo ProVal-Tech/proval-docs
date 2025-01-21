@@ -1,7 +1,7 @@
 ---
 id: '485b0ab5-8ce4-400c-9ba6-dff7967988aa'
-title: 'Printer Driver Inventory in Automate'
-title_meta: 'Printer Driver Inventory in Automate'
+title: 'Get - Printer Driver Inventory'
+title_meta: 'Get - Printer Driver Inventory'
 keywords: ['printer', 'driver', 'inventory', 'automate', 'script']
 description: 'This document provides a comprehensive guide on how to pull installed print driver version information into ConnectWise Automate. It includes associated scripts, custom tables, and dataviews necessary for effective implementation and troubleshooting.'
 tags: ['installation', 'networking', 'report', 'setup', 'windows']
@@ -32,4 +32,6 @@ This solution will pull installed print driver version information into Automate
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) script.
+
+
 

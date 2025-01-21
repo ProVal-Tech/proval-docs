@@ -1,7 +1,7 @@
 ---
 id: '3bf6b511-2d50-48cc-b199-979bd39c8dca'
-title: 'Computer Exclusion Monitoring in ConnectWise Automate'
-title_meta: 'Computer Exclusion Monitoring in ConnectWise Automate'
+title: 'Internal Monitors - Exclusions'
+title_meta: 'Internal Monitors - Exclusions'
 keywords: ['monitoring', 'exclusion', 'computers', 'automate', 'detection', 'autofix']
 description: 'This document provides an overview of the dataview that displays computers excluded from internal monitors in ConnectWise Automate. It outlines the exclusion actions and details the columns included in the dataview, such as Computer ID, Monitor Set, Client Name, and more.'
 tags: ['report']
@@ -33,4 +33,6 @@ You can find this information in Automate in the areas displayed below.
 | Operating System      | Operating System                                     |
 | Last Contact          | Last Contact                                         |
 | Days Since Last Contact| Days Since Last Contact                              |
+
+
 

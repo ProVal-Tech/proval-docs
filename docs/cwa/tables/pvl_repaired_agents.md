@@ -1,7 +1,7 @@
 ---
 id: '1258c674-8d60-446d-a3c6-f3295ee682cf'
-title: 'Custom Table for Repaired Computers'
-title_meta: 'Custom Table for Repaired Computers'
+title: 'pvl_repaired_agents'
+title_meta: 'pvl_repaired_agents'
 keywords: ['custom', 'table', 'repaired', 'computers', 'tracking']
 description: 'This document outlines the purpose and structure of a custom table designed to store information about repaired computers, including dependencies on related scripts and a detailed description of the table schema.'
 tags: ['database', 'report', 'setup']
@@ -31,4 +31,6 @@ The custom table stores information about repaired computers.
 | location     | varchar  | Location Name       |
 | computer     | varchar  | Computer Name       |
 | RepairTime   | datetime | Agent Repair Time   |
+
+
 

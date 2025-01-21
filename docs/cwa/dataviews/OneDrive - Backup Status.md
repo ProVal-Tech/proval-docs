@@ -1,7 +1,7 @@
 ---
 id: 'b11f38e6-4a69-4f26-9317-46c30f531640'
-title: 'OneDrive Backup Status Dataview'
-title_meta: 'OneDrive Backup Status Dataview'
+title: 'OneDrive - Backup Status'
+title_meta: 'OneDrive - Backup Status'
 keywords: ['onedrive', 'backup', 'status', 'dataview', 'endpoint']
 description: 'This document provides a detailed overview of a dataview that displays essential information related to OneDrive backups on endpoints, including dependencies, columns, and their descriptions.'
 tags: ['backup', 'report', 'windows']
@@ -33,4 +33,6 @@ This dataview displays basic information related to OneDrive on endpoints.
 | PicturesEnabled    | True/False - Indicates if the user's "Pictures" folder is being backed up to OneDrive              |
 | PicturesPath      | If PicturesEnabled is True, this displays the full path to the user's pictures folder               |
 | TimeStamp         | The last time this data was gathered                                                                  |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '3691bc36-640e-4d39-8a41-0513d44c7d41'
-title: 'Possible Brute Force Attack Monitor'
-title_meta: 'Possible Brute Force Attack Monitor'
+title: 'Possible Brute Force Attack'
+title_meta: 'Possible Brute Force Attack'
 keywords: ['brute', 'force', 'attack', 'monitor', 'security', 'event', 'log', 'id', '4625']
 description: 'This document outlines the steps to create a monitor that checks for security event log event ID 4625 where the count of occurrences exceeds a specified threshold in the last 60 minutes. It includes implementation details, dependencies, and ticketing information for alerts related to possible brute force attacks on endpoints.'
 tags: ['active-directory', 'security']
@@ -186,4 +186,6 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)  
 
 Action: Please have the issue reviewed by a technician.
+
+
 

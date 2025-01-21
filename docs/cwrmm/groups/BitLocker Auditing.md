@@ -1,7 +1,7 @@
 ---
 id: '38b92368-f583-426c-b8f1-5f3b6d56b410'
-title: 'BitLocker Drive Encryption Auditing Solution'
-title_meta: 'BitLocker Drive Encryption Auditing Solution'
+title: 'BitLocker Auditing'
+title_meta: 'BitLocker Auditing'
 keywords: ['bitlocker', 'encryption', 'auditing', 'device', 'group', 'status', 'recovery', 'key']
 description: 'This document provides a comprehensive guide to creating device groups for the BitLocker drive encryption auditing solution in ConnectWise RMM. It details the necessary dependencies and outlines the criteria for four specific device groups: BitLocker - Audit Required, BitLocker - Enabled, BitLocker - Disabled, and BitLocker - Regular Auditing.'
 tags: ['encryption', 'security']
@@ -121,4 +121,6 @@ This group holds all devices that have been audited for BitLocker and checks the
 This is the scheduled recurrence of the [CW RMM - Task - BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878983) task.
 
 ![Image](../../../static/img/BitLocker-Auditing/image_11.png)
+
+
 

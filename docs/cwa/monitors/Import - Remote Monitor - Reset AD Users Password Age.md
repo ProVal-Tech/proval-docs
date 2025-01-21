@@ -1,7 +1,7 @@
 ---
 id: 'da1f5a89-eab2-4fae-8e49-e98c269cf103'
-title: 'Reset AD Users Password Age'
-title_meta: 'Reset AD Users Password Age'
+title: 'Import - Remote Monitor - Reset AD Users Password Age'
+title_meta: 'Import - Remote Monitor - Reset AD Users Password Age'
 keywords: ['ad', 'users', 'password', 'reset', 'monitor']
 description: 'This document provides a step-by-step guide on how to set up a remote monitor in ConnectWise Automate to reset the password age for Active Directory users. It includes SQL queries for creating and managing the monitor, as well as examples for implementation.'
 tags: ['active-directory', 'sql']
@@ -183,4 +183,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

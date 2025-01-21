@@ -1,7 +1,7 @@
 ---
 id: 'cbc62993-0c72-4826-bdfa-bf0aa498891f'
-title: 'Create Client-Level Ticket for Offline Machines'
-title_meta: 'Create Client-Level Ticket for Offline Machines'
+title: 'Offline Machines Detection per client Global'
+title_meta: 'Offline Machines Detection per client Global'
 keywords: ['ticketing', 'offline', 'machines', 'client', 'monitoring']
 description: 'This document outlines the process for creating a client-level ticket that includes information about all machines that have been offline for more than a specified number of days. It provides a template for the ticket subject and body, ensuring that clients are informed about their offline machines and can take appropriate action.'
 tags: ['report', 'ticketing']
@@ -144,4 +144,6 @@ PC Model: Virtual Machine
 OS: Microsoft Windows 10 Enterprise x64
 S/N OF PC: 8204-9944-0772-5397-0764-9709-12
 ```
+
+
 

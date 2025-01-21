@@ -1,7 +1,7 @@
 ---
 id: 'da3a0d43-7bdd-4408-99ce-138337eecb43'
-title: 'Windows User Profile Information'
-title_meta: 'Windows User Profile Information'
+title: 'Windows - User Profiles'
+title_meta: 'Windows - User Profiles'
 keywords: ['windows', 'user', 'profile', 'information', 'computer', 'account', 'local', 'admin', 'sid', 'lastlogon']
 description: 'This document provides an overview of the Windows user profile information gathered from the EPM - Accounts - Script - User Profile - Get Information script. It details the dependencies, columns, and descriptions of the user profile data collected.'
 tags: []
@@ -35,4 +35,6 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | IsAdmin        | Indicates if the user is a local admin.                                                                  |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
+
+
 

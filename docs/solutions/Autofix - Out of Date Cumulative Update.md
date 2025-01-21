@@ -1,7 +1,7 @@
 ---
 id: '6a70396e-c7cc-49d4-9a06-620e2bd462e9'
-title: 'Out of Date Cumulative Update Autofix'
-title_meta: 'Out of Date Cumulative Update Autofix'
+title: 'Autofix - Out of Date Cumulative Update'
+title_meta: 'Autofix - Out of Date Cumulative Update'
 keywords: ['cumulative', 'update', 'autofix', 'windows', 'reboot']
 description: 'This document outlines the solution for installing and reporting the most recent Cumulative Update (CU) on computers that have not had a CU installed in the last 75 days. It details the implementation of the Reboot Prompter solution for managing reboots on workstations and servers, and specifies the supported operating systems.'
 tags: ['reboot', 'software', 'update', 'windows']
@@ -85,5 +85,7 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 4. Create and deploy the following tasks:  
    - [Out of Date Cumulative Update (Autofix)](<../cwrmm/tasks/Out of Date Cumulative Update (Autofix).md>)  
    - [Out of Date Cumulative Update (Post Reboot Verification)](<../cwrmm/tasks/Out of Date Cumulative Update (Post Reboot Verification).md>)  
+
+
 
 

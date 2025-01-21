@@ -1,7 +1,7 @@
 ---
 id: '1a85bfdb-2e43-4a05-9822-d316f34a8820'
-title: 'Audit Control Sessions Dataview'
-title_meta: 'Audit Control Sessions Dataview'
+title: 'Automate - Control Session Audit modified'
+title_meta: 'Automate - Control Session Audit modified'
 keywords: ['audit', 'sessions', 'dataview', 'tracking', 'details']
 description: 'This dataview assists in auditing control sessions by tracking essential details such as participant names, connection times, and disconnection times, providing a comprehensive overview of session activities.'
 tags: []
@@ -26,4 +26,6 @@ This dataview helps you audit control sessions by tracking details such as parti
 | ConnectedTime     | Displays the time when the participant connected to the session. |
 | DisconnectedTime   | Displays the time when the participant disconnected from the session. |
 | Duration          | Displays the total duration of the connected session.      |
+
+
 

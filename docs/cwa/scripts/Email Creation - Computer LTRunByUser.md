@@ -1,7 +1,7 @@
 ---
 id: 'aff3413b-574f-4399-8f4b-85e04d388c5a'
-title: 'Manual Script Schedule - Status Email'
-title_meta: 'Manual Script Schedule - Status Email'
+title: 'Email Creation - Computer LTRunByUser'
+title_meta: 'Email Creation - Computer LTRunByUser'
 keywords: ['email', 'monitor', 'script', 'status']
 description: 'This document outlines an offline script designed to send emails to users who manually run the script, providing completion notifications. It serves as an autofix for monitoring the Manual Script Schedule - Status Email, ensuring users are kept informed of the script execution status.'
 tags: ['setup']
@@ -25,4 +25,6 @@ This script should be utilized as an autofix to monitor [Manual Script Schedule 
 
 - Email
 - Script Log
+
+
 

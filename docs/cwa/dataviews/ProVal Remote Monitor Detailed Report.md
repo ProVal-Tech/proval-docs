@@ -1,7 +1,7 @@
 ---
 id: '643ad45a-2d91-4f87-8bb3-6e7c71af3cd1'
-title: 'Custom Remote Monitors Overview'
-title_meta: 'Custom Remote Monitors Overview - ProVal Implementation Status'
+title: 'ProVal Remote Monitor Detailed Report'
+title_meta: 'ProVal Remote Monitor Detailed Report'
 keywords: ['custom', 'remote', 'monitors', 'implementation', 'status']
 description: 'This document provides a detailed overview of custom remote monitors built by ProVal, including their implementation status, execution intervals, alert styles, and target groups. It also includes color coding for easy identification of critical information.'
 tags: []
@@ -37,4 +37,6 @@ Color coding has been applied to the columns "Affected Computers" and "Script Na
 
 **Script Nature**: Here, the "ProVal Script" is highlighted in green to draw attention to where the "ProVal" scripts are used as an autofix.  
 **Affected Computers**: Here, the "0" is written in bold/italic font using red color to indicate remote monitors that are not applied to any computers.
+
+
 

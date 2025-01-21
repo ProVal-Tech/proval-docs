@@ -1,7 +1,7 @@
 ---
 id: 'f1a15d3d-85d7-4d72-9c08-ad4ca6a7dfbb'
-title: 'Automate Failed Email Report'
-title_meta: 'Automate Failed Email Report'
+title: 'CWM - Automate - Monitor -Failed Email Monitoring'
+title_meta: 'CWM - Automate - Monitor -Failed Email Monitoring'
 keywords: ['email', 'ticket', 'monitor', 'failure', 'notification']
 description: 'This document outlines a monitor that reports any failed email occurrences that are not related to specific exclusions. It generates a ticket detailing the failed emails every hour, providing crucial information for troubleshooting and resolution.'
 tags: ['report', 'security', 'setup']
@@ -52,4 +52,6 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+
 

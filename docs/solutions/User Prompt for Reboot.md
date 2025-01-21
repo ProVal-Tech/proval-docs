@@ -1,7 +1,7 @@
 ---
 id: '32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a'
-title: 'Automate User Reboot Prompt Solution'
-title_meta: 'Automate User Reboot Prompt Solution'
+title: 'User Prompt for Reboot'
+title_meta: 'User Prompt for Reboot'
 keywords: ['automate', 'reboot', 'prompt', 'user', 'monitor', 'script']
 description: 'This document outlines the implementation of a solution that prompts end users to reboot their machines through Automate, ensuring that the machines are rebooted either voluntarily or forcefully. It includes update notices, associated content, implementation steps, configuration details, and customization options.'
 tags: ['update', 'windows']
@@ -161,4 +161,6 @@ Then this will pop up, explaining the reboot:
 | Disable Reboot Prompt | Checkbox | Exclusions | Client | Flag this EDF to exclude the client from the solution. |
 | Disable Reboot Prompt | Checkbox | Exclusions | Location | Flag this EDF to exclude the location from the solution. |
 | Disable Reboot Prompt | Checkbox | Exclusions | Computer | Flag this EDF to exclude the computer from the solution. |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '3bc016eb-e024-451a-975f-95a787401a17'
-title: 'Implementation of Remote Monitor for Disabling Update Orchestrator Service'
-title_meta: 'Implementation of Remote Monitor for Disabling Update Orchestrator Service'
+title: 'Update Orchestrator Service Disable'
+title_meta: 'Update Orchestrator Service Disable'
 keywords: ['implementation', 'remote', 'monitor', 'disable', 'update', 'orchestrator', 'service']
 description: 'This document outlines the steps to implement a remote monitor in ConnectWise Automate that disables the Update Orchestrator Service. It includes obtaining group IDs, crafting SQL queries, and applying alert templates.'
 tags: ['sql']
@@ -159,4 +159,6 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 
 ### Step 4
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

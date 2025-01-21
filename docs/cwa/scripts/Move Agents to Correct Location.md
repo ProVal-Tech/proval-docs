@@ -1,7 +1,7 @@
 ---
 id: 'f01cab64-00bf-4f94-92ea-280c87cf06ca'
-title: 'Agent Checking in with Wrong Location Autofix Script'
-title_meta: 'Agent Checking in with Wrong Location Autofix Script'
+title: 'Move Agents to Correct Location'
+title_meta: 'Move Agents to Correct Location'
 keywords: ['autofix', 'monitor', 'location', 'computer', 'agent']
 description: 'This document outlines the process and requirements for running the Agent Checking in with Wrong Location Autofix script. It details the necessary variables, dependencies, and the expected output when the script is executed as part of a monitor set in ProVal.'
 tags: []
@@ -36,4 +36,6 @@ The monitor set will call the script, which will move the computer to the new lo
 ## Output
 
 Removal of agents from the monitor set's detection.
+
+
 

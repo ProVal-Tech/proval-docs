@@ -1,7 +1,7 @@
 ---
 id: '6cf7ba91-b78d-4368-91a2-43095fad952b'
-title: 'Re-register Huntress Agent for Windows Machines'
-title_meta: 'Re-register Huntress Agent for Windows Machines'
+title: 'Re-Register Huntress Agent Windows'
+title_meta: 'Re-Register Huntress Agent Windows'
 keywords: ['huntress', 'agent', 'windows', 'script', 'deployment']
 description: 'This document provides a detailed guide on how to re-register the Huntress Agent on Windows machines using a PowerShell script. It includes file hashes, dependencies, variables, client-level and location-level EDFs, as well as sample run images and output logs.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -54,4 +54,6 @@ This script can be used to re-register the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
+
+
 

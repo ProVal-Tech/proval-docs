@@ -1,7 +1,7 @@
 ---
 id: 'cafd4aba-ae71-4098-bde5-52173cdc0427'
-title: 'Repaired Agents Dataview'
-title_meta: 'Repaired Agents Dataview'
+title: 'Repaired Agents Last 30 Days'
+title_meta: 'Repaired Agents Last 30 Days'
 keywords: ['dataview', 'agents', 'repair', 'automate', 'information']
 description: 'This document provides a summary of the dataview that displays information about agents that have been repaired using the Automate Agent - Auto Repair script. It includes details on dependencies, columns, and the data captured for each repaired agent.'
 tags: ['database', 'report', 'software', 'windows']
@@ -36,4 +36,6 @@ The dataview displays the information of the agents repaired by the [Script - Au
 | Last Logged In User      | Last Logged In User                                                                                    |
 | Last Contact with RMM    | Last Contact with RMM                                                                                 |
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
+
+
 

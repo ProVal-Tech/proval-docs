@@ -1,7 +1,7 @@
 ---
 id: 'e2fc5d7b-d202-4511-8807-8ac000d104a1'
-title: 'Domain Joined Machines Excluding Domain Controllers'
-title_meta: 'Domain Joined Machines Excluding Domain Controllers'
+title: 'Implement - Remote Monitor - Domain Trust Relationship Check'
+title_meta: 'Implement - Remote Monitor - Domain Trust Relationship Check'
 keywords: ['domain', 'machines', 'controllers', 'sql', 'monitor', 'check', 'groupid']
 description: 'This document provides a step-by-step guide on how to create a SQL query to monitor domain-joined machines while excluding domain controllers. It includes instructions for inserting sensor checks, obtaining group IDs, and setting up alerts for domain trust relationship failures.'
 tags: ['database', 'windows']
@@ -236,4 +236,6 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ## Step 6
 Set the appropriate alert template.
+
+
 

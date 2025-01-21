@@ -1,7 +1,7 @@
 ---
 id: 'e241665b-e0d2-4af4-af8b-d13f754c9cc1'
-title: 'Workstation Reboot Report'
-title_meta: 'Workstation Reboot Report'
+title: 'cPVAL - Workstations Not Rebooted 30+ Days'
+title_meta: 'cPVAL - Workstations Not Rebooted 30+ Days'
 keywords: ['workstation', 'reboot', 'report', 'view', 'filter']
 description: 'This document provides a detailed overview of a view that displays workstations that have not rebooted in the last 30+ days. It includes information on dependencies, applied filters, and an export attachment for further analysis.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -30,4 +30,6 @@ Below are the filters applied to this view:
 ### Export Attachment
 
 Please attach the content XML VSA Export to this document.
+
+
 

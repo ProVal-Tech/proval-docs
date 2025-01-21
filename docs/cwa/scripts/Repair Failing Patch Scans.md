@@ -1,7 +1,7 @@
 ---
 id: '05f60b47-188b-4383-9e9c-98780ba6e488'
-title: 'Autofix Script for Patch Monitoring'
-title_meta: 'Autofix Script for Patch Monitoring'
+title: 'Repair Failing Patch Scans'
+title_meta: 'Repair Failing Patch Scans'
 keywords: ['autofix', 'monitor', 'patch', 'scan', 'service']
 description: 'This document outlines the Autofix script designed for monitoring patch statuses. It details the script function, dependencies, process steps, and how to run it manually. The script checks the status of patch scans and attempts to resolve issues by resending patches and managing service states.'
 tags: []
@@ -54,4 +54,6 @@ This Autofix script is called by the monitor [ProVal - Development - Last scanne
 
 - Script log messages only.
 - Please reach out to [support@provaltech.com](mailto:support@provaltech.com) if you would like this solution to begin ticketing.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '3fb9240d-0256-481b-b1d3-0415b707850f'
-title: 'Clear or Audit Browser Saved Passwords'
-title_meta: 'Clear or Audit Browser Saved Passwords'
+title: 'ClearAudit - Browser Saved Password'
+title_meta: 'ClearAudit - Browser Saved Password'
 keywords: ['browser', 'password', 'audit', 'clear', 'endpoint']
 description: 'This document outlines a solution for clearing or auditing saved passwords in browsers from endpoints. It includes associated tasks, dynamic groups, custom fields, and optional monitors to ensure effective password management and security.'
 tags: []
@@ -30,6 +30,8 @@ This solution is designed to perform the clearing or auditing of saved passwords
 - (Optional) Create the [Monitor - Browser Saved Password Failure Detection](<../cwrmm/monitors/Browser Saved Password Failure Detection.md>) and follow the deployment instructions. This should be created only if the partner approves it.
 
 ## FAQ
+
+
 
 
 

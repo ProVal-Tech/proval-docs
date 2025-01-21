@@ -1,7 +1,7 @@
 ---
 id: ps-update-veeamvulnerabilitiespatch
 title: 'Update-VeeamVulnerabilitiesPatch'
-title_meta: 'Update-VeeamVulnerabilitiesPatch Command'
+title_meta: 'Update-VeeamVulnerabilitiesPatch'
 keywords: ['veeam', 'patch', 'vulnerabilities', 'update']
 description: 'Documentation for the Update-VeeamVulnerabilitiesPatch command to patch Veeam vulnerabilities in Versions 11 and 11a.'
 tags: ['backup', 'security', 'software', 'update']
@@ -30,4 +30,6 @@ Location of output for log, result, and error files:
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-log.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-error.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-patchlog.txt`
+
+
 

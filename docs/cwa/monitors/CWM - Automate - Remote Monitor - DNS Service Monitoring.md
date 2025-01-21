@@ -1,7 +1,7 @@
 ---
 id: '3dd42a74-e25a-44df-8d49-89e6b57139ce'
-title: 'Remote Monitor for DNS Service'
-title_meta: 'Remote Monitor for DNS Service'
+title: 'CWM - Automate - Remote Monitor - DNS Service Monitoring'
+title_meta: 'CWM - Automate - Remote Monitor - DNS Service Monitoring'
 keywords: ['dns', 'monitor', 'service', 'windows', 'ticketing']
 description: 'This document outlines a PowerShell remote monitor designed to ensure the DNS service is running on Windows servers. It provides details on alert styles, suggested settings, and ticketing information for when the service is not operational.'
 tags: ['windows']
@@ -48,4 +48,6 @@ Windows DNS Servers
 ## Implementation
 
 [Import - Remote Monitor - DNS Service Monitoring](<./DNS Service Monitoring.md>)
+
+
 

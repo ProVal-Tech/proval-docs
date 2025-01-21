@@ -1,7 +1,7 @@
 ---
 id: 'c19dc248-c6a0-4f9c-88c5-b3058245d74a'
-title: 'Deploy Huntress Agent Group'
-title_meta: 'Deploy Huntress Agent Group'
+title: 'Deploy Huntress'
+title_meta: 'Deploy Huntress'
 keywords: ['huntress', 'windows', 'group', 'filter', 'agent']
 description: 'This document outlines the steps to create a dynamic group in ConnectWise RMM for filtering Windows machines where the Huntress agent is not installed. It details the necessary dependencies, criteria for filtering, and the process to save the group configuration.'
 tags: ['software', 'windows']
@@ -50,4 +50,6 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Huntress/image_3.png)
 
 ![Image](../../../static/img/Deploy-Huntress/image_4.png)
+
+
 

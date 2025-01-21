@@ -1,7 +1,7 @@
 ---
 id: 'eb303e8a-8199-4f62-806d-e852c5109833'
-title: 'Uninstall eClinicalWorks Client and Dependencies'
-title_meta: 'Uninstall eClinicalWorks Client and Dependencies'
+title: 'Uninstall eClinicalWorks and eCWDependencies'
+title_meta: 'Uninstall eClinicalWorks and eCWDependencies'
 keywords: ['uninstall', 'eclinicalworks', 'client', 'dependencies', 'ticket']
 description: 'This document details a script designed to uninstall the eClinicalWorks Client and its associated eCWDependencies applications from a computer. If the uninstallation fails, the script generates a ticket for further assistance.'
 tags: ['software', 'uninstallation', 'windows']
@@ -21,4 +21,6 @@ This script is designed to uninstall the eClinicalWorks Client and eCWDependenci
 
 - Script log
 - Ticket
+
+
 

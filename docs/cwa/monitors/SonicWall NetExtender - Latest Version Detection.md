@@ -1,7 +1,7 @@
 ---
 id: '62ad1299-3e65-4bf7-a415-307fdf9a162c'
-title: 'SonicWall NetExtender Version Monitor'
-title_meta: 'SonicWall NetExtender Version Monitor'
+title: 'SonicWall NetExtender - Latest Version Detection'
+title_meta: 'SonicWall NetExtender - Latest Version Detection'
 keywords: ['sonicwall', 'netextender', 'monitor', 'version', 'update']
 description: 'This document outlines a monitor that schedules a script to collect the latest version details of the SonicWall NetExtender application monthly, updating the system properties without deploying the application itself. It is designed for Windows 10/11 workstations with a patch policy.'
 tags: ['software', 'update', 'windows']
@@ -20,4 +20,6 @@ This monitor schedules the script [SonicWall NetExtender - Latest Version [Winge
 ## Target
 
 Workstations - Only one workstation is needed for this monitor because it is only required to fetch the latest version.
+
+
 

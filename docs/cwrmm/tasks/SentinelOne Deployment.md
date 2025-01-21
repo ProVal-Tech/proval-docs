@@ -1,7 +1,7 @@
 ---
 id: '25651d1f-99d6-4906-8666-220994a4862e'
 title: 'SentinelOne Deployment'
-title_meta: 'SentinelOne Deployment for Windows, Linux, and Mac'
+title_meta: 'SentinelOne Deployment'
 keywords: ['sentinelone', 'deployment', 'agent', 'windows', 'linux', 'mac', 'security']
 description: 'This document provides a comprehensive guide on deploying the SentinelOne agent across Windows, Linux, and Mac machines, detailing the necessary tasks, scripts, and configurations required for successful installation and management of the agent.'
 tags: ['installation', 'linux', 'security', 'setup', 'windows']
@@ -385,4 +385,6 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 
 - Script Log
 - Custom Field
+
+
 

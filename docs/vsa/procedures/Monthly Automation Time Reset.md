@@ -1,7 +1,7 @@
 ---
 id: '1552dec9-04ae-484f-b217-922542928af3'
-title: 'Monthly CF Reset Procedure'
-title_meta: 'Monthly CF Reset Procedure for ConnectWise Automate'
+title: 'Monthly Automation Time Reset'
+title_meta: 'Monthly Automation Time Reset'
 keywords: ['monthly', 'cf', 'reset', 'automation', 'procedure']
 description: 'This document outlines the procedure for resetting the value of the Monthly CF in ConnectWise Automate, detailing the process, dependencies, and example logs for successful execution.'
 tags: ['setup', 'software']
@@ -31,4 +31,6 @@ Sets the Monthly CF to 0.
 ## Output
 
 None.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '0f2ae395-2139-418c-bb21-8dd87dde20fc'
-title: 'Shadow Copy Status Report'
-title_meta: 'Shadow Copy Status Report'
+title: 'Windows - Shadow Copy Status'
+title_meta: 'Windows - Shadow Copy Status'
 keywords: ['shadowcopy', 'report', 'client', 'location', 'computer']
 description: 'This document provides a detailed report on the status of Shadow Copy for various machines, indicating which machines have Shadow Copy enabled. It pulls data from the custom table "plugin_proval_shadowcopystats" and includes client names, location names, and computer names for clarity.'
 tags: ['report']
@@ -26,4 +26,6 @@ This report pulls data from the custom table "plugin_proval_shadowcopystats" and
 | Location               | Location Name                                            |
 | Computer               | Computer Name                                            |
 | Shadow Copy Enabled     | Enabled/Disabled status of Shadow Copy on the machine    |
+
+
 

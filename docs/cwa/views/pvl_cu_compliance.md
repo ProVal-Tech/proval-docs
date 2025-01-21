@@ -1,7 +1,7 @@
 ---
 id: 'fbd4b655-562a-4ff1-aea7-be27b9a77421'
-title: 'CU Compliance Metrics Dataview'
-title_meta: 'CU Compliance Metrics Dataview for Windows Computers'
+title: 'pvl_cu_compliance'
+title_meta: 'pvl_cu_compliance'
 keywords: ['compliance', 'dataview', 'sql', 'windows', 'patching', 'cumulative', 'update']
 description: 'This document outlines the CU Compliance Metrics Dataview designed for Windows computers with managed patch policies. It details the SQL query utilized, dependencies, and the structure of the data stored, focusing on computers that have been online in Automate within the past 30 days and are part of production patching groups.'
 tags: ['database', 'report', 'security', 'update', 'windows']
@@ -43,4 +43,6 @@ The view is designed to store and execute the SQL query utilized by the 'CU Comp
 | Non-Compliant Clients - CU    | Total number of individual clients where `CU Score %` is less than 75.                                                          |
 | Compliant Clients - CU %     | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`) |
 | Data Missing                 | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+
+
 

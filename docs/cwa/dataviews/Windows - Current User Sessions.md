@@ -1,7 +1,7 @@
 ---
 id: 'ea5d1545-a2d7-4c9e-a61e-b89e43da2b9c'
-title: 'User Session Audit Dataview'
-title_meta: 'User Session Audit Dataview'
+title: 'Windows - Current User Sessions'
+title_meta: 'Windows - Current User Sessions'
 keywords: ['user', 'session', 'audit', 'dataview', 'agent', 'computer', 'status', 'location', 'client', 'logon']
 description: 'This document provides an overview of the User Session Audit Dataview, detailing the information displayed about existing user sessions on audited machines, as well as the dependencies and columns involved in the dataview.'
 tags: []
@@ -46,4 +46,6 @@ The information displayed in this dataview is populated into the custom table `@
 | Location (All Possible Columns) | This dataview includes all possible location details such as location address, location phone number, etc. |
 | Client (All Possible Columns) | Contains all possible client details such as client city, client phone, etc.                 |
 | Computer (All Possible Columns) | Contains all possible computer details such as Computer OS Build, Type, Manufacturer, etc.  |
+
+
 

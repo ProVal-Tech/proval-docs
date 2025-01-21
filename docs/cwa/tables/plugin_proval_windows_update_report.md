@@ -1,7 +1,7 @@
 ---
 id: '845fe569-12ec-48e3-86f4-34377aba03ec'
-title: 'Windows Update Report Storage for ConnectWise Automate'
-title_meta: 'Windows Update Report Storage for ConnectWise Automate'
+title: 'plugin_proval_windows_update_report'
+title_meta: 'plugin_proval_windows_update_report'
 keywords: ['connectwise', 'windows', 'update', 'report', 'storage', 'script']
 description: 'This document outlines the purpose and dependencies for storing data from the Windows Update Report script in ConnectWise Automate. It includes a detailed table structure for the Plugin_ProVal_Windows_Update_Report, which captures essential information about Windows updates, including size, status, and recommended system requirements.'
 tags: ['connectwise', 'database', 'report', 'setup', 'update', 'windows']
@@ -59,4 +59,6 @@ Stores the data captured by the [CWM - Automate - Script - Windows Update Report
 | BrowseOnly                   | varchar(10)    | True | False                                     |
 | PerUser                      | varchar(10)    | True | False                                     |
 | ScriptRunTime                | varchar(50)    | Script run time                                   |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '44ae65f5-ca26-409d-bdcc-ad294544fc90'
-title: 'Log4J/Log4Shell Vulnerability Report'
-title_meta: 'Log4J/Log4Shell Vulnerability Report'
+title: 'Log4J - Log4Shell - Possible Vulnerabilities'
+title_meta: 'Log4J - Log4Shell - Possible Vulnerabilities'
 keywords: ['log4j', 'vulnerability', 'security', 'software', 'endpoint']
 description: 'This document provides a comprehensive report on potential Log4J/Log4Shell vulnerabilities, detailing affected applications based on a curated list from GitHub. It includes dependencies for endpoint protection and outlines the relevant columns for tracking vulnerabilities.'
 tags: ['report', 'security', 'software', 'vulnerability']
@@ -31,4 +31,6 @@ This document displays potential Log4J/Log4Shell vulnerabilities based on the fo
 | Product       | The name of the possibly affected application as it appears in the GitHub table.                         |
 | Status        | The status of the application as of the last run of [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import%20Log4Shell%20Table.md>) |
 | Links         | Links to information about the affected application.                                                    |
+
+
 

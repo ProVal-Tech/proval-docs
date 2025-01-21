@@ -1,7 +1,7 @@
 ---
 id: '1f9f9053-1a02-4115-a7c7-70af370a9655'
-title: 'Client Level Monitor List'
-title_meta: 'Client Level Monitor List - Overview of Monitors for Each Client'
+title: 'Client Monitor - Audit'
+title_meta: 'Client Monitor - Audit'
 keywords: ['monitor', 'client', 'agents', 'alert', 'template', 'category']
 description: 'This document provides a detailed overview of the monitor list at the client level, showcasing the monitors currently scheduled on each client’s agents, along with their respective types and associated alert templates.'
 tags: []
@@ -22,4 +22,6 @@ This dataview provides a monitor list at the client level. It shows a list of th
 | Monitor Type         | The type of monitor applied.                        |
 | Alert Template Name   | Alert template attached to the monitor.            |
 | Ticket Category      | Ticket category associated with the monitor.       |
+
+
 

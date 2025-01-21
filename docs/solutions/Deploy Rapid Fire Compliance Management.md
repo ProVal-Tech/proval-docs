@@ -1,7 +1,7 @@
 ---
 id: '77126d0b-4467-42da-9a4e-92b8aeda91e4'
-title: 'Deploy Rapid Fire Compliance Management Software'
-title_meta: 'Deploy Rapid Fire Compliance Management Software'
+title: 'Deploy Rapid Fire Compliance Management'
+title_meta: 'Deploy Rapid Fire Compliance Management'
 keywords: ['deployment', 'compliance', 'monitoring', 'software', 'management']
 description: 'This document outlines the process to deploy the Rapid Fire Compliance Management software using client-level EDFs with specific location and computer-level exclusions. It includes associated scripts, monitors, and implementation steps to ensure a successful deployment.'
 tags: ['compliance', 'deployment', 'software']
@@ -36,4 +36,6 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
      - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>)
        - Set up with the "`△ Custom - Execute Script - Deploy Rapid Fire`" alert template.
        - Right-click and select Run Now to start the monitor.
+
+
 

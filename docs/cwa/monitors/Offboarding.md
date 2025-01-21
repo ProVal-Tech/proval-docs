@@ -1,7 +1,7 @@
 ---
 id: '5721d83a-3303-4dc2-97ca-118683da0690'
-title: 'Offboarding Monitor for Client, Location, and Computer'
-title_meta: 'Offboarding Monitor for Client, Location, and Computer'
+title: 'Offboarding'
+title_meta: 'Offboarding'
 keywords: ['offboarding', 'monitor', 'edf', 'client', 'location', 'computer']
 description: 'This document outlines the functionality of the Offboarding Monitor, which detects machines opted for offboarding based on selected client, location, or computer level EDFs. It includes dependencies and alert templates for effective monitoring.'
 tags: []
@@ -33,4 +33,6 @@ All Operating Systems
 ## Alert Template
 
 - **`△ Custom - Execute Script - Offboarding Wrapper`**
+
+
 

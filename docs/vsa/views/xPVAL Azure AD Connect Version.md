@@ -1,7 +1,7 @@
 ---
 id: 'c5607e81-8d80-4096-a9d8-76b39ba71db3'
-title: 'Azure AD Connect Version Audit'
-title_meta: 'Azure AD Connect Version Audit'
+title: 'xPVAL Azure AD Connect Version'
+title_meta: 'xPVAL Azure AD Connect Version'
 keywords: ['azure', 'audit', 'connect', 'version', 'endpoint']
 description: 'This document provides a summary of endpoints with a valid Azure AD Connect Version and outlines dependencies, view filters, and export attachment details for auditing purposes.'
 tags: ['report', 'security', 'windows']
@@ -35,4 +35,6 @@ This section lists all filters applied to this view.
 ### Export Attachment
 
 Please attach the content XML VSA export to this document.
+
+
 

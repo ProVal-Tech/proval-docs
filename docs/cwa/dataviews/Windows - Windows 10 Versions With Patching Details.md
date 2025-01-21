@@ -1,7 +1,7 @@
 ---
 id: 'd49af856-de88-46fc-963a-8c7bc0e129ff'
-title: 'Windows 10 Machines Summary'
-title_meta: 'Windows 10 Machines Summary'
+title: 'Windows - Windows 10 Versions With Patching Details'
+title_meta: 'Windows - Windows 10 Versions With Patching Details'
 keywords: ['windows', 'machines', 'versions', 'patching', 'information']
 description: 'This document provides a comprehensive dataview of all Windows 10 machines, detailing their versions, patching information, and setup. It includes various columns that represent critical data points such as OS version, client ID, and reboot policies.'
 tags: ['patching', 'reboot', 'setup', 'windows']
@@ -35,4 +35,6 @@ None
 | Reboot Pending   | Indicates if a reboot is pending                         |
 | Last Contact     | Last time the machine checked into Automate              |
 | Uptime          | Time in seconds since the machine has restarted the kernel |
+
+
 

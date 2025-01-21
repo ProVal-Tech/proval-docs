@@ -1,7 +1,7 @@
 ---
 id: '8ea82e33-879c-47d6-93a2-e33801126e54'
-title: 'Set Maintenance Mode for Reboot'
-title_meta: 'Set Maintenance Mode for Reboot'
+title: 'Reboot - Forced with 30 Min or Custom Maintenance Mode'
+title_meta: 'Reboot - Forced with 30 Min or Custom Maintenance Mode'
 keywords: ['maintenance', 'reboot', 'windows', 'script', 'parameter']
 description: 'This document provides a detailed overview of a script designed to set maintenance mode for servers and workstations before initiating an immediate reboot. Users can customize the duration of maintenance mode, and the script ensures proper handling of parameters and conditions for execution.'
 tags: ['performance', 'reboot', 'windows']
@@ -48,4 +48,6 @@ The script will then issue a Windows CLI command to restart the device and exit 
 ## Output
 
 Script log messages
+
+
 

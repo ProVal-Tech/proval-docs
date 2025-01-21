@@ -1,7 +1,7 @@
 ---
 id: 'a8f66140-8915-41fa-805b-64fafbf002fc'
-title: 'Automated Internal Monitor for HP iLO Health Report'
-title_meta: 'Automated Internal Monitor for HP iLO Health Report'
+title: 'Execute Script - HP iLO - Health Report - Get'
+title_meta: 'Execute Script - HP iLO - Health Report - Get'
 keywords: ['hp', 'ilo', 'monitor', 'health', 'report', 'automation']
 description: 'This document outlines the configuration and requirements for the automated internal monitor that runs the HP iLO Health Report script weekly. It details how to properly store credentials, the execution process, and adjustments for update frequency, ensuring consistent data collection without manual scheduling.'
 tags: ['networking', 'report', 'security']
@@ -72,4 +72,6 @@ The alert template should run the [EPM - Data Collection - Script - HP iLO - Hea
 
 The ticketing feature of the [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) script can be enabled by setting the ticket category in the monitor set.  
 ![Ticketing Feature](../../../static/img/Execute-Script---HP-iLO---Health-Report---Get/image_5.png)
+
+
 

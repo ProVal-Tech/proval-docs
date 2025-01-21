@@ -1,7 +1,7 @@
 ---
 id: '6c4f37b4-d460-464b-bc03-fd1d46be2b0a'
-title: 'Setting Up Monitor for Unresponsive Huntress Agents'
-title_meta: 'Setting Up Monitor for Unresponsive Huntress Agents'
+title: 'Import-  Unresponsive Huntress Agents'
+title_meta: 'Import-  Unresponsive Huntress Agents'
 keywords: ['huntress', 'monitor', 'sql', 'alert', 'setup']
 description: 'This document provides a step-by-step guide on how to set up a monitor for unresponsive Huntress agents within ConnectWise Automate. It includes instructions for importing alert templates, running SQL queries, and configuring monitor settings to ensure effective monitoring of Huntress agents.'
 tags: ['huntress', 'setup', 'sql']
@@ -244,4 +244,6 @@ Check the concerned groups and ensure the monitor set is created and configured 
 Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor 
 
 ![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_2.png)
+
+
 

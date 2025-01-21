@@ -1,7 +1,7 @@
 ---
 id: '6c9ef438-835d-44a9-bf31-4a1db9253347'
-title: 'Active Directory Sync Autofix for RMM+'
-title_meta: 'Active Directory Sync Autofix for RMM+'
+title: 'ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket'
+title_meta: 'ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket'
 keywords: ['active-directory', 'sync', 'autofix', 'monitor', 'ticketing']
 description: 'This document details a script designed to automatically fix issues related to the Active Directory Sync Out of Date monitor in ConnectWise Automate. It outlines the process, dependencies, and ticketing information for effective resolution of sync errors.'
 tags: ['active-directory']
@@ -101,4 +101,6 @@ PC Model: @biosname@
 OS: %os%
 S/N OF PC: @biosver@
 ```
+
+
 

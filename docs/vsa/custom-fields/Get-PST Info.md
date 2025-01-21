@@ -1,7 +1,7 @@
 ---
 id: '74ed821b-9396-4153-b4f3-b556e777bbd5'
-title: 'Custom Field Update Procedure'
-title_meta: 'Custom Field Update Procedure'
+title: 'Get-PST Info'
+title_meta: 'Get-PST Info'
 keywords: ['custom', 'field', 'update', 'agent', 'procedure', 'machine', 'organization']
 description: 'This document outlines the procedure for updating custom fields via the agent. It includes dependencies and details about the specific fields that can be updated, including their types and descriptions.'
 tags: ['software', 'update']
@@ -22,4 +22,6 @@ Custom fields are updated by the agent procedure of this solution.
 | Field Name         | Type of Field (Machine or Organization) | Description            |
 |--------------------|-----------------------------------------|------------------------|
 | cPVAL PST File     | Machine                                 | Used for PST location  |
+
+
 

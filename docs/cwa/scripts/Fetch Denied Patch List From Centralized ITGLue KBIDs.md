@@ -1,7 +1,7 @@
 ---
 id: 'f8e944d6-28ce-4be8-bf38-6907221544a7'
-title: 'Denied Patch Replace Script'
-title_meta: 'Denied Patch Replace Script'
+title: 'Fetch Denied Patch List From Centralized ITGLue KBIDs'
+title_meta: 'Fetch Denied Patch List From Centralized ITGLue KBIDs'
 keywords: ['patches', 'script', 'itglue', 'file', 'email', 'denied']
 description: 'This document outlines the Denied Patch Replace Script that runs twice daily on the file server PVL-EUR-FILE-01. It retrieves a list of denied patches from the ITGlue Flexible Asset, saves it to a specified SQL file, and sends informational emails in case of failures.'
 tags: ['email', 'sql']
@@ -56,4 +56,6 @@ This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provalt
 For failure:  
 - Script log  
 - Email  
+
+
 

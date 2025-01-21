@@ -1,7 +1,7 @@
 ---
 id: ps-install-ciscosecureclient
 title: 'Install-CiscoSecureClient'
-title_meta: 'Install-CiscoSecureClient Command'
+title_meta: 'Install-CiscoSecureClient'
 keywords: ['install', 'cisco', 'secure', 'client', 'vpn']
 description: 'Documentation for the Install-CiscoSecureClient command to install the Cisco Secure Client and selected modules.'
 tags: ['installation', 'networking', 'security', 'software']
@@ -61,4 +61,6 @@ This command will install all modules, including Umbrella, which require the Use
 ## Output
 - .\Install-CiscoSecureClient-log.txt
 - .\Install-CiscoSecureClient-error.txt
+
+
 

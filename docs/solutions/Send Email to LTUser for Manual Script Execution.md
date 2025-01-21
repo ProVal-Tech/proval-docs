@@ -1,7 +1,7 @@
 ---
 id: '6643031d-dcd8-4bec-9d5d-40bb3de1f713'
-title: 'Email Notification for Manual Script Execution'
-title_meta: 'Email Notification for Manual Script Execution'
+title: 'Send Email to LTUser for Manual Script Execution'
+title_meta: 'Send Email to LTUser for Manual Script Execution'
 keywords: ['email', 'script', 'notification', 'status', 'monitor']
 description: 'This document outlines a solution designed to detect when a user manually runs a script on an agent and sends an email to the user with the status of that script. It highlights limitations, implementation steps, and customization options to enhance monitoring capabilities.'
 tags: ['email']
@@ -51,4 +51,6 @@ It is important to note that this solution will send an email for every script i
 
 Remove or comment out the last line in the additional condition of the monitor to disable receiving emails for successful script executions and limit the monitor sets to script failures only.  
 ![Customization Example](../../static/img/Send-Email-to-LTUser-for-Manual-Script-Execution/image_2.png)
+
+
 

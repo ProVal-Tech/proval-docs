@@ -1,7 +1,7 @@
 ---
 id: '561f24a4-36c7-4329-949f-046762abdcbd'
-title: 'Sentinel Agent Verification Process'
-title_meta: 'Sentinel Agent Verification Process'
+title: 'Sentinel One Settings Verification'
+title_meta: 'Sentinel One Settings Verification'
 keywords: ['sentinel', 'agent', 'verification', 'monitor', 'script']
 description: 'This document outlines the process for verifying that computers are using the correct Sentinel Agent associated with their respective clients. It includes implementation steps, associated scripts, and monitors for effective management.'
 tags: ['security', 'setup', 'software']
@@ -35,4 +35,6 @@ The purpose of this solution is to identify instances where computers are utiliz
   ![Image](../../static/img/Sentinel-One-Settings-Verification/image_8.png)  
 - Execute the script against a few random machines with Sentinel One installed and ensure that it's delivering as expected.
 - Implement the alert template to the internal monitor.
+
+
 

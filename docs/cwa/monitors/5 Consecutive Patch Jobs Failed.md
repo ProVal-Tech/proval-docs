@@ -1,7 +1,7 @@
 ---
 id: '54992d2f-f374-41bb-9f61-e4d2fcc93478'
-title: 'Monitor for Failed Microsoft Patch Jobs'
-title_meta: 'Monitor for Failed Microsoft Patch Jobs'
+title: '5 Consecutive Patch Jobs Failed'
+title_meta: '5 Consecutive Patch Jobs Failed'
 keywords: ['monitor', 'patch', 'failed', 'microsoft', 'jobs']
 description: 'This document outlines a monitor designed to detect servers that have experienced five consecutive failed patches for Microsoft-based updates. It details the requirements for effective monitoring, including the necessity of having a minimum number of available patch jobs stored in the patchjobs table.'
 tags: ['database', 'patching']
@@ -21,4 +21,6 @@ This monitor will detect servers that have had five failed patches in a row for 
 ## Target
 
 The SQL query targets only the servers in a patching group.
+
+
 

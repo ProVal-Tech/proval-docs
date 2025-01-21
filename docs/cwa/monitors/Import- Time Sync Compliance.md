@@ -1,7 +1,7 @@
 ---
 id: 'd0b9c0fa-fe52-412b-a4b9-dee96f9ff58b'
-title: 'Steps for Ticket Creation'
-title_meta: 'Steps for Ticket Creation'
+title: 'Import- Time Sync Compliance'
+title_meta: 'Import- Time Sync Compliance'
 keywords: ['ticket', 'creation', 'monitor', 'query', 'alert', 'template']
 description: 'This document outlines the steps required for creating a ticket in ConnectWise Automate, including necessary scripts, obtaining group IDs, and executing SQL queries for remote monitors.'
 tags: ['database']
@@ -180,4 +180,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '38fbe617-1c50-443b-b69b-07eae7135652'
-title: 'Internet Speed Audit Results Storage'
-title_meta: 'Internet Speed Audit Results Storage'
+title: 'plugin_proval_speedtest_audit'
+title_meta: 'plugin_proval_speedtest_audit'
 keywords: ['speedtest', 'audit', 'bandwidth', 'latency', 'jitter', 'packet loss', 'VPN', 'ISP']
 description: 'This document outlines the structure and purpose of the database table used to store results from internet speed tests conducted by the EPM Network script. It details the dependencies, the columns in the database table, and their explanations to facilitate understanding and usage of the stored data.'
 tags: ['database', 'networking', 'performance', 'security', 'windows']
@@ -48,4 +48,6 @@ Stores results from speed tests run by the script [EPM - Network - Script - Inte
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
+
+
 

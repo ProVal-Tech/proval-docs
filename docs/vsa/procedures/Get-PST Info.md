@@ -1,7 +1,7 @@
 ---
 id: '5783728e-e3c6-46f2-b8ae-ea3df5c980ec'
-title: 'Get PST Information'
-title_meta: 'Get PST Information'
+title: 'Get-PST Info'
+title_meta: 'Get-PST Info'
 keywords: ['pst', 'files', 'log', 'location', 'size']
 description: 'This document outlines a procedure for gathering the name, location, and size of all PST files on a machine, storing the information in a log. It also details how to handle scenarios with multiple PST files by updating the configuration file accordingly.'
 tags: ['backup', 'report', 'windows']
@@ -70,4 +70,6 @@ This procedure gathers the name, location, and size of all the PST files on a ma
 ## Output
 
 Procedure log files and computer log
+
+
 

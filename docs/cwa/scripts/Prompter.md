@@ -1,7 +1,7 @@
 ---
 id: 'd8a124df-ea81-4194-82fc-a082c7a036d8'
-title: 'Prompter Application Script for Automate'
-title_meta: 'Prompter Application Script for Automate'
+title: 'Prompter'
+title_meta: 'Prompter'
 keywords: ['prompter', 'script', 'automate', 'user-input', 'date-time', 'header', 'icon']
 description: 'This document outlines the usage of the Prompter application script in ConnectWise Automate, detailing its functionality to present prompts on the desktop with customizable options including date and time pickers, buttons, and header images.'
 tags: ['application']
@@ -49,4 +49,6 @@ This script is a function script and should not be manually executed. Utilize th
 ## Output
 
 - Script Variable
+
+
 

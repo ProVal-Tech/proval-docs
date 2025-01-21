@@ -1,7 +1,7 @@
 ---
 id: 'f7d7af7b-0b1e-463a-bda5-e9d30901e0b6'
-title: 'Reboot into Safe Mode and Disable Sophos Tamper Protection'
-title_meta: 'Reboot into Safe Mode and Disable Sophos Tamper Protection'
+title: 'Sophos - Disable Tamper Protection'
+title_meta: 'Sophos - Disable Tamper Protection'
 keywords: ['sophos', 'tamper', 'protection', 'reboot', 'safe', 'mode', 'registry']
 description: 'This document describes a script that reboots a Windows machine into safe mode and modifies the registry keys related to tamper protection for systems with Sophos Tamper Protection enabled, ultimately streamlining the process of disabling this feature.'
 tags: ['recovery', 'security', 'setup', 'windows']
@@ -35,4 +35,6 @@ The script will first verify that the target device has Sophos installed. It wil
 ## Output
 
 Script log messages only.
+
+
 

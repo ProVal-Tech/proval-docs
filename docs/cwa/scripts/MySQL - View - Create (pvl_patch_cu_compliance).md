@@ -1,7 +1,7 @@
 ---
 id: 'b1963e10-77b2-444a-80ac-9cfded3ab8a4'
-title: 'Generate Views for Patch Compliance in ConnectWise Automate'
-title_meta: 'Generate Views for Patch Compliance in ConnectWise Automate'
+title: 'MySQL - View - Create (pvl_patch_cu_compliance)'
+title_meta: 'MySQL - View - Create (pvl_patch_cu_compliance)'
 keywords: ['views', 'patch', 'compliance', 'automate', 'permissions']
 description: 'This document outlines a script designed to create views named `pvl_patch_cu_compliance` and `pvl_patch_cu_compliance_clients` within ConnectWise Automate, and to grant access permissions to all active users. The script can be executed on any computer to implement the views, followed by the removal of the script from the environment.'
 tags: ['database', 'security', 'setup']
@@ -30,4 +30,6 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
+
+
 

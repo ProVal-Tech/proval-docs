@@ -1,7 +1,7 @@
 ---
 id: 'ba9e49ca-2f53-42ca-94a7-373fd4098527'
-title: 'Winget Update Scheduled Tasks for Windows 10 and 11'
-title_meta: 'Winget Update Scheduled Tasks for Windows 10 and 11'
+title: 'Scheduled Task - Winget Update All'
+title_meta: 'Scheduled Task - Winget Update All'
 keywords: ['winget', 'update', 'scheduled', 'tasks', 'windows', '10', '11']
 description: 'This document outlines the implementation of scheduled tasks for updating installed applications using Winget on Windows 10 and 11 machines. It details the necessary custom fields, device groups, and tasks required to automate the update process effectively.'
 tags: ['software', 'update', 'windows']
@@ -75,4 +75,6 @@ Create the following device groups:
 Create and deploy the following tasks:  
 - [Scheduled Task Winget Update All (Create)](<../cwrmm/tasks/Scheduled Task Winget Update All (Create).md>)  
 - [Scheduled Task Winget Update All (Delete)](<../cwrmm/tasks/Scheduled Task Winget Update All (Delete).md>)  
+
+
 

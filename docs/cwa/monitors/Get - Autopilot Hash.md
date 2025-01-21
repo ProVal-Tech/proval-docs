@@ -1,7 +1,7 @@
 ---
 id: '3add591b-445e-440d-a7b3-cc85b2ea0674'
-title: 'Autopilot Hash Monitor for Windows Machines'
-title_meta: 'Autopilot Hash Monitor for Windows Machines'
+title: 'Get - Autopilot Hash'
+title_meta: 'Get - Autopilot Hash'
 keywords: ['autopilot', 'hash', 'monitor', 'windows', 'edf', 'client', 'computer']
 description: 'This document outlines the setup and functionality of a monitor designed to detect Windows machines where the Autopilot hash has not been collected. It specifies the conditions under which the monitor operates, including the required client-level and computer-level EDF settings, as well as dependencies on the Get-AutopilotHash script.'
 tags: ['autopilot', 'windows']
@@ -36,4 +36,6 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Get-AutopilotHash`
+
+
 

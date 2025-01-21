@@ -1,7 +1,7 @@
 ---
 id: 'fe210a09-4182-4917-9eea-c9e2f028c8ec'
-title: 'Audit Snapshots of Virtual Machines on ESXi Server'
-title_meta: 'Audit Snapshots of Virtual Machines on ESXi Server'
+title: 'Snapshot Audit'
+title_meta: 'Snapshot Audit'
 keywords: ['audit', 'snapshots', 'esxi', 'virtual', 'machines']
 description: 'This document provides a detailed overview of a dataview that helps audit snapshots of virtual machines hosted on an ESXi server. It includes a comprehensive breakdown of columns, each describing specific attributes of the virtual machines and their corresponding snapshots.'
 tags: ['esxi', 'performance', 'report', 'storage', 'virtualization']
@@ -50,4 +50,6 @@ This dataview helps you audit snapshots of the virtual machines that exist on an
 | Estimated Disk Max Usage        | Displays the maximum disk usage by the snapshot      |
 | Snapshot Description             | Displays the description of the snapshot             |
 | Is Current Snapshot             | Displays whether the snapshot is current or not      |
+
+
 

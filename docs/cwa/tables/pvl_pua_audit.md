@@ -1,7 +1,7 @@
 ---
 id: '2c4a0323-9532-4145-8fca-d9151c20773c'
-title: 'Audit Data for PUA Removal'
-title_meta: 'Audit Data for PUA Removal'
+title: 'pvl_pua_audit'
+title_meta: 'pvl_pua_audit'
 keywords: ['audit', 'pua', 'data', 'removal', 'script']
 description: 'This document provides details about the audit data collected for the removal of potentially unwanted applications (PUAs) using a specific script in ConnectWise Automate. It includes information on dependencies and the structure of the audit data table.'
 tags: ['database', 'report', 'security']
@@ -29,4 +29,6 @@ The following dependency is required for this audit data:
 | Name                | VARCHAR  | Primary Key, the name of the bloatware. |
 | Category            | VARCHAR  | The category that the PUA belongs to.   |
 | DataCollectionTime  | DateTime | Data collection time.                    |
+
+
 

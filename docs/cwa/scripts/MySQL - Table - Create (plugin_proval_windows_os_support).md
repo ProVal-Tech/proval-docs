@@ -1,7 +1,7 @@
 ---
 id: '09d6c579-dbce-4876-81aa-0ab7cf5432b1'
-title: 'Insert Latest Version of SEC - Windows Patching - Custom Table'
-title_meta: 'Insert Latest Version of SEC - Windows Patching - Custom Table'
+title: 'MySQL - Table - Create (plugin_proval_windows_os_support)'
+title_meta: 'MySQL - Table - Create (plugin_proval_windows_os_support)'
 keywords: ['windows', 'patching', 'custom', 'table', 'plugin']
 description: 'This document provides a script designed to insert the latest version of the SEC - Windows Patching - Custom Table plugin, ensuring your systems are updated with the most recent Windows versions and their support status.'
 tags: ['security', 'update', 'windows']
@@ -22,4 +22,6 @@ The primary purpose of this script is to insert the latest version of the [SEC -
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---Table---Create-(plugin_proval_windows_os_support)/image_1.png)
+
+
 

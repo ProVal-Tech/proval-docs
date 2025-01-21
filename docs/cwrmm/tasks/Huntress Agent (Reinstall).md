@@ -1,7 +1,7 @@
 ---
 id: 'cdcd950b-9843-4fed-bea8-7a4092c7eadc'
-title: 'Huntress Agent Reinstallation'
-title_meta: 'Huntress Agent Reinstallation'
+title: 'Huntress Agent (Reinstall)'
+title_meta: 'Huntress Agent (Reinstall)'
 keywords: ['huntress', 'agent', 'reinstall', 'script', 'powershell']
 description: 'This document provides a comprehensive guide for reinstalling the Huntress Agent using a PowerShell script. It includes detailed steps for setting up the required variables, downloading the necessary script, and executing the installation process, along with error handling and logging mechanisms.'
 tags: ['installation', 'security', 'windows']
@@ -243,4 +243,6 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script log
+
+
 

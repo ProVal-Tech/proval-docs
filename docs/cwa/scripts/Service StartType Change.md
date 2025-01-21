@@ -1,7 +1,7 @@
 ---
 id: '21ae27d2-c179-4f26-92cf-15760af6791a'
-title: 'Configure Service Start Type'
-title_meta: 'Configure Service Start Type'
+title: 'Service StartType Change'
+title_meta: 'Service StartType Change'
 keywords: ['services', 'starttype', 'configuration', 'windows', 'automation']
 description: 'This document provides a detailed overview of a script that configures the start type for specified services in Windows. It includes parameters, available start types, file hash information, sample run output, and variable descriptions for effective implementation.'
 tags: ['security', 'setup', 'windows']
@@ -62,4 +62,6 @@ Please have the following file hash whitelisted in your security environment to 
 ## Output
 - Script log
 - Ticket
+
+
 

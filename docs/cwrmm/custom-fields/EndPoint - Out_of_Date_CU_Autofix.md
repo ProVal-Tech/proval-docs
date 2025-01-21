@@ -1,7 +1,7 @@
 ---
 id: 'a9e84f5a-0afa-44ef-98b7-c5a70f6a25ea'
-title: 'Autofix Endpoint Settings'
-title_meta: 'Autofix Endpoint Settings - Configure and Manage'
+title: 'EndPoint - Out_of_Date_CU_Autofix'
+title_meta: 'EndPoint - Out_of_Date_CU_Autofix'
 keywords: ['autofix', 'endpoint', 'settings', 'dropdown', 'enable', 'disable']
 description: 'This document provides a detailed overview of the autofix settings for endpoints, including how to enable or disable the autofix feature using a dropdown menu. It outlines the implications of these settings at the company and site level and includes a comprehensive description of each option available.'
 tags: []
@@ -30,4 +30,6 @@ Use the dropdown menu to enable or disable the autofix on the endpoint. This set
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_2.png)  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '08cd231a-c14d-4d61-a774-eba3f69e91bf'
-title: 'Disk Cleanup Script for MAC Devices'
-title_meta: 'Disk Cleanup Script for MAC Devices'
+title: 'Disk - Space - Cleanup (Mac)'
+title_meta: 'Disk - Space - Cleanup (Mac)'
 keywords: ['cleanup', 'mac', 'disk', 'script', 'maintenance']
 description: 'This document provides a comprehensive overview of a script designed to perform disk cleanup on MAC devices, including its dependencies, process, and sample output.'
 tags: ['cleanup']
@@ -31,4 +31,6 @@ The script can be downloaded from [this link](https://raw.githubusercontent.com/
 ## Output
 
 - Script Logs
+
+
 

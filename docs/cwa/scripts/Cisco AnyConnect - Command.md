@@ -1,7 +1,7 @@
 ---
 id: 'a408ca7c-208e-4ecb-bd2f-574a25a95d7c'
-title: 'Cisco AnyConnect Install/Uninstall Script'
-title_meta: 'Cisco AnyConnect Install/Uninstall Script'
+title: 'Cisco AnyConnect - Command'
+title_meta: 'Cisco AnyConnect - Command'
 keywords: ['cisco', 'anyconnect', 'install', 'uninstall', 'script', 'windows', 'mac', 'linux']
 description: 'This document provides a detailed guide on a script designed to install or uninstall Cisco AnyConnect based on user parameters. It covers requirements, variables, user parameters, and the process for different operating systems including Windows, Mac, and Linux.'
 tags: ['installation', 'linux', 'software', 'uninstallation', 'windows']
@@ -77,4 +77,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
   - There is extensive script logging in this script for both the install and uninstall processes.
+
+
 

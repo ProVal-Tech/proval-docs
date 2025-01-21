@@ -1,7 +1,7 @@
 ---
 id: '3a5d036a-dcc5-4e6e-9962-92309891a4ec'
-title: 'Disable AI Recall Feature on Windows 11 Machines'
-title_meta: 'Disable AI Recall Feature on Windows 11 Machines'
+title: 'ProVal - Production - Disable AI Recall'
+title_meta: 'ProVal - Production - Disable AI Recall'
 keywords: ['windows', 'ai', 'recall', 'monitor', 'disable']
 description: 'This document provides a detailed guide on disabling the AI recall feature on Windows 11 machines, including suggested alert styles, ticketing information, and import instructions for remote monitoring.'
 tags: ['ticketing', 'windows']
@@ -39,4 +39,6 @@ Windows 11 machines only.
 ## How To Import
 
 [Import - Remote Monitor - Disable AI Recall](<./Disable AI Recall.md>)
+
+
 

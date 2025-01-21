@@ -1,7 +1,7 @@
 ---
 id: '1f61b913-a45c-41e9-afa4-6cf105cdff86'
-title: 'Dell Command Configure Script'
-title_meta: 'Dell Command Configure Script for Automation'
+title: 'Dell Command Configure - Command Handler'
+title_meta: 'Dell Command Configure - Command Handler'
 keywords: ['dell', 'command', 'configure', 'script', 'automation']
 description: 'This document provides an overview of a script designed to execute commands using the Dell Command Configure application. It outlines the installation requirements, sample runs, dependencies, user parameters, and the process involved in utilizing the script effectively.'
 tags: ['installation', 'software', 'windows']
@@ -50,4 +50,6 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
+
+
 

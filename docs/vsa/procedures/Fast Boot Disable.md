@@ -1,7 +1,7 @@
 ---
 id: 'd0e2ff26-8148-47fc-a482-af212c9659db'
-title: 'Disable Fast Boot in Windows'
-title_meta: 'Disable Fast Boot in Windows'
+title: 'Fast Boot Disable'
+title_meta: 'Fast Boot Disable'
 keywords: ['fast', 'boot', 'disable', 'windows', 'registry']
 description: 'This document provides a detailed guide on disabling fast boot in Windows through registry modifications. It includes sample runs, processes involved, and output logs to ensure successful execution.'
 tags: ['security', 'windows']
@@ -33,4 +33,6 @@ The following command is executed:
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+
 

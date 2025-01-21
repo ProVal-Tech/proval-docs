@@ -1,7 +1,7 @@
 ---
 id: '52d14c0f-fe3e-4520-bed5-b05db491bf26'
-title: 'Get VSA Time Saved'
-title_meta: 'Get VSA Time Saved - Automation Procedure'
+title: 'Automation Time Saved Reports'
+title_meta: 'Automation Time Saved Reports'
 keywords: ['vsa', 'time', 'saved', 'report', 'automation', 'csv']
 description: 'This document outlines the procedure for running the Get-VsaTimeSaved.ps1 script, which generates a CSV report of time saved for various organizations. The report is then placed in the GetFiles directory for easy access by clients and consultants.'
 tags: ['report']
@@ -56,4 +56,6 @@ Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](
 ## Output
 
 Agent Procedure Log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '7cd56a9d-67d5-4d67-a8bf-f61497a93059'
-title: 'Disable NetBIOS on All Network Interfaces'
-title_meta: 'Disable NetBIOS on All Network Interfaces'
+title: 'Disable Netbios on Network Interfaces'
+title_meta: 'Disable Netbios on Network Interfaces'
 keywords: ['netbios', 'remote', 'monitor', 'windows', 'network']
 description: 'This document provides a guide on how to implement a remote monitor that disables NetBIOS on all network interfaces for Windows operating systems. It includes details on alert styles, ticketing, and the import process.'
 tags: ['networking', 'windows']
@@ -38,4 +38,6 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Disable NetBIOS on Network Interfaces](<./Disable NetBIOS on Network Interfaces.md>)
+
+
 

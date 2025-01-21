@@ -1,7 +1,7 @@
 ---
 id: 'e39caf58-ccc6-426c-8550-9c874fee49a8'
-title: 'BitLocker Volume Initialization'
-title_meta: 'BitLocker Volume Initialization'
+title: 'Bitlocker - Volume - Initialize'
+title_meta: 'Bitlocker - Volume - Initialize'
 keywords: ['bitlocker', 'encryption', 'disk', 'security']
 description: 'This document provides a detailed guide on implementing the BitLocker Volume Initialization script within ConnectWise RMM. It covers requirements, user parameters, task creation, and execution steps for encrypting a drive using BitLocker disk encryption.'
 tags: ['disk-encryption', 'encryption', 'security', 'setup']
@@ -413,4 +413,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

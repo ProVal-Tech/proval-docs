@@ -1,7 +1,7 @@
 ---
 id: '9f11d658-bcef-435c-8bfa-517b6588f84a'
-title: 'Windows 10 Feature Upgrade Implementation'
-title_meta: 'Windows 10 Feature Upgrade Implementation Guide'
+title: 'VSA Windows 10 Feature Upgrades'
+title_meta: 'VSA Windows 10 Feature Upgrades'
 keywords: ['upgrade', 'windows', 'feature', 'implementation', 'agent', 'procedure', 'registry', 'status']
 description: 'This document outlines the implementation of a feature upgrade for Windows 10 endpoints, including procedures for handling reboots, monitoring upgrade status, and managing failures. It provides a comprehensive guide for setting up the necessary components to ensure a smooth upgrade process.'
 tags: ['reboot', 'windows']
@@ -41,4 +41,6 @@ This implementation will initiate a feature upgrade on the target endpoint and f
 6. Import `xPVAL_Windows_Feature_Upgrade_Event.xml` and apply it to all workstations in the environment.
 7. Import `xPVAL_Feature_Upgrade_Views.xml` and ensure the Advanced Filters are correct according to the documentation in this solution.
 8. Import `Windows_10_Feature_Upgrade_Reattempt_On_Fail` and place it in the `Policies/PVAL Stack` folder. Ensure that the view and assigned AP are correct in the policy. Notify the client of implementation and availability during the next Admin Call. Be sure to mention the 30-minute forced reboot.
+
+
 

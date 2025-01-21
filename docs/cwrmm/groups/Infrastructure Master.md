@@ -1,7 +1,7 @@
 ---
 id: 'c2c2d22b-f735-4ec5-91a6-a014ab2e84a8'
-title: 'Infrastructure Masters Group'
-title_meta: 'Infrastructure Masters Group Overview'
+title: 'Infrastructure Master'
+title_meta: 'Infrastructure Master'
 keywords: ['infrastructure', 'masters', 'domain', 'controllers', 'group']
 description: 'This document provides an overview of the Infrastructure Masters group, detailing its dependencies, setup instructions, and includes relevant screenshots for reference.'
 tags: ['setup', 'windows']
@@ -31,4 +31,6 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure Masters
 - Select the `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator, and type `Yes` in the condition box.
 - Click the `Save` button at the top left to create the group.
+
+
 

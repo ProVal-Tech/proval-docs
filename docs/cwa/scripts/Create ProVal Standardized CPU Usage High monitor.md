@@ -1,7 +1,7 @@
 ---
 id: '6ddadabd-4b0f-45b0-92d5-51a58eba15a4'
-title: 'Proval Standardized CPU Usage High Remote Monitoring'
-title_meta: 'Proval Standardized CPU Usage High Remote Monitoring'
+title: 'Create ProVal Standardized CPU Usage High monitor'
+title_meta: 'Create ProVal Standardized CPU Usage High monitor'
 keywords: ['cpu', 'monitoring', 'alerting', 'configuration', 'performance', 'group', 'threshold']
 description: 'This document provides a detailed overview of the Proval Standardized CPU Usage High remote monitoring system, including its setup, variables, user parameters, and sample runs. It is designed to monitor CPU usage and alert when thresholds are violated for a selected group.'
 tags: ['alerting', 'cpu', 'performance']
@@ -49,4 +49,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_4.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-unificontroller
 title: 'Get-UnifiController'
-title_meta: 'Get-UnifiController Command'
+title_meta: 'Get-UnifiController'
 keywords: ['unifi', 'controller', 'network', 'api']
 description: 'Documentation for the Get-UnifiController command to retrieve and return data from a Unifi Controller.'
 tags: ['networking', 'software']
@@ -37,4 +37,6 @@ Returns a `unifiController` object containing all site data.
 Location of output for log, result, and error files.
 
 `System.Object`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '88d3ea21-446e-47ad-9cc8-047df5a70a77'
-title: 'Uninstall Microsoft Visual C++ Redistributable'
-title_meta: 'Uninstall Microsoft Visual C++ Redistributable'
+title: 'Uninstall Microsoft VCRedist'
+title_meta: 'Uninstall Microsoft VCRedist'
 keywords: ['uninstall', 'vcredist', 'microsoft', 'redistributable', 'script']
 description: 'This document provides a comprehensive guide on implementing a CW RMM script to uninstall Microsoft Visual C++ Redistributable. It includes details on user parameters, task creation, and sample runs, along with necessary dependencies and execution steps.'
 tags: ['application', 'setup', 'windows']
@@ -156,6 +156,8 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 id: '620de40a-ad15-4449-8022-4af75e319db7'
-title: 'Enable Windows Firewall for All Profiles'
-title_meta: 'Enable Windows Firewall for All Profiles'
+title: 'Windows Firewall - Enable'
+title_meta: 'Windows Firewall - Enable'
 keywords: ['windows', 'firewall', 'profiles', 'security']
 description: 'This document provides a script that enables the Windows firewall for all profiles, including public, domain, and private. It outlines the process, expected output, and time saved by automation, enhancing system security efficiently.'
 tags: ['security', 'windows']
@@ -27,4 +27,6 @@ The script enables the Windows firewall for all profiles, i.e., public, domain, 
 ## Output
 
 - Script log
+
+
 

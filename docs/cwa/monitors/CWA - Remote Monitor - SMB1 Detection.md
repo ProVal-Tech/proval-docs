@@ -1,7 +1,7 @@
 ---
 id: '8b1cd8a8-6684-4896-ae30-a39b3bdb485e'
-title: 'SMB1 Detection on End Machines'
-title_meta: 'SMB1 Detection on End Machines'
+title: 'CWA - Remote Monitor - SMB1 Detection'
+title_meta: 'CWA - Remote Monitor - SMB1 Detection'
 keywords: ['smb1', 'detection', 'vulnerability', 'windows', 'server']
 description: 'This document outlines a method to check whether SMB1 is enabled on end machines using a PowerShell command. It includes details about the check action, server address, check type, and results. This is essential for vulnerability management and ensuring system security.'
 tags: ['security', 'vulnerability', 'windows']
@@ -26,5 +26,7 @@ Check whether SMB1 is enabled on the end machine. It runs the OS version [compat
 ## How to Import
 
 [Import - Remote Monitor - SMB1 Detection Query](<./SMB1 Detection Query.md>)
+
+
 
 

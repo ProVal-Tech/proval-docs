@@ -1,7 +1,7 @@
 ---
 id: '25717003-b658-47c5-abdf-978f9c2b5d5c'
-title: 'Resize Partition to Install the WinRE Update'
-title_meta: 'Resize Partition to Install the WinRE Update'
+title: 'Resize partition to install the WinRE update (KB5034441)'
+title_meta: 'Resize partition to install the WinRE update (KB5034441)'
 keywords: ['partition', 'winre', 'update', 'resize', 'windows']
 description: 'This document provides a detailed overview of a script designed to manually resize a partition for the installation of the Windows Recovery Environment (WinRE) update, following Microsoft guidelines. It includes cautionary notes, sample runs, variable descriptions, user parameters, implementation steps, and expected output for users looking to execute this task effectively.'
 tags: ['recovery', 'setup', 'windows']
@@ -48,4 +48,6 @@ It creates the primary partition with the size increase, and a label 'Windows RE
 ## Output
 
 - Script log
+
+
 

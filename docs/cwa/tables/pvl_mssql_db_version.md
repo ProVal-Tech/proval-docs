@@ -1,7 +1,7 @@
 ---
 id: 'e0ec87f6-0624-40db-ac6b-1b7d823e6b37'
-title: 'Custom Table for MSSQL Database Version'
-title_meta: 'Custom Table for MSSQL Database Version'
+title: 'pvl_mssql_db_version'
+title_meta: 'pvl_mssql_db_version'
 keywords: ['mssql', 'database', 'custom', 'version', 'table']
 description: 'This document outlines the purpose and structure of a custom table that stores data gathered from the MSSQL database version script, including its dependencies and the data it collects.'
 tags: ['database', 'report', 'setup']
@@ -28,4 +28,6 @@ The custom table stores the data gathered by the [Script - Get MSSQL Database Ve
 | Version       | Varchar  | Version of the Database Instance     |
 | PatchLevel    | Varchar  | Patch Level of the Database Instance |
 | ScriptRunTime | DateTime | Data Collection Time                 |
+
+
 

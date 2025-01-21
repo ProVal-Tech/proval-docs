@@ -1,7 +1,7 @@
 ---
 id: '772c0498-4505-4f1c-afc4-46788294b3e2'
-title: 'Setting the Update Channel for Microsoft 365 Click-to-Run'
-title_meta: 'Setting the Update Channel for Microsoft 365 Click-to-Run'
+title: 'Endpoint - Update Channel'
+title_meta: 'Endpoint - Update Channel'
 keywords: ['update', 'channel', 'microsoft', 'click-to-run', 'rmm']
 description: 'This document provides a detailed overview of how to set the Update Channel for Microsoft 365 Click-to-Run using CW RMM. It outlines the available options, dependencies, and provides a table of relevant field details, along with screenshots for reference.'
 tags: ['software', 'update', 'windows']
@@ -34,4 +34,6 @@ Available options are:
 
 ![Screenshot 1](../../../static/img/Endpoint---Update-Channel/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Update-Channel/image_2.png)  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5c2faf09-3e8f-4dd0-978c-5863b443a3b9'
-title: 'Apply or Ignore Role Script'
-title_meta: 'Apply or Ignore Role Script for Environment Management'
+title: 'Role Definition - Change Param'
+title_meta: 'Role Definition - Change Param'
 keywords: ['role', 'monitor', 'agent', 'sql', 'windows']
 description: 'This document provides an overview of a script designed to apply or ignore existing roles in your environment, allowing for better control over monitors that depend on these roles. By using this script, you can avoid unnecessary modifications to group monitors and streamline alert actions, ultimately saving time and enhancing efficiency.'
 tags: ['database', 'windows']
@@ -56,4 +56,6 @@ An SQL query is executed against the Automate DB to apply or ignore the role on 
 - **Action Missing** - Action not provided in parameters
   
 - **Exit with Error** - Script failed to execute properly
+
+
 

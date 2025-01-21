@@ -1,7 +1,7 @@
 ---
 id: 'cb0d8de7-88e2-4406-b2fb-7a7ee338ce37'
-title: 'HPE Insight Management Agent Installation'
-title_meta: 'HPE Insight Management Agent Installation'
+title: 'Deploy HP Insight Management Agent'
+title_meta: 'Deploy HP Insight Management Agent'
 keywords: ['hpe', 'management', 'agent', 'installation', 'windows']
 description: 'This document provides a comprehensive guide for installing the HPE Insight Management Agent on Windows HP machines. It includes details on downloading the installer, global parameters for ticket creation, output logs, and ticketing information in case of installation failure.'
 tags: ['installation', 'software', 'ticketing', 'windows']
@@ -51,4 +51,6 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
+
 

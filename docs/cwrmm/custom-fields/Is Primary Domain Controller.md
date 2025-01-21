@@ -1,7 +1,7 @@
 ---
 id: 'b6a7c804-693c-4cf5-a60e-61dcb10ddcae'
-title: 'Validate Primary Domain Controller'
-title_meta: 'Validate Primary Domain Controller'
+title: 'Is Primary Domain Controller'
+title_meta: 'Is Primary Domain Controller'
 keywords: ['validate', 'primary', 'domain', 'controller', 'machine', 'group']
 description: 'This document outlines the process to validate whether a computer is a primary domain controller. It details the dependencies and provides sample values for the custom field used in the ConnectWise RMM platform.'
 tags: ['networking', 'security', 'windows']
@@ -36,4 +36,6 @@ The custom field is then used to create the [CW RMM - Machine Group - Infrastruc
 ## Sample Value
 
 ![Sample Value](../../../static/img/Is-Primary-Domain-Controller/image_3.png)
+
+
 

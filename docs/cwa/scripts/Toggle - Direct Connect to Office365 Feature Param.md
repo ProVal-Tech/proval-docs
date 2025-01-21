@@ -1,7 +1,7 @@
 ---
 id: '28df6729-15d1-4784-9583-a1a223abb566'
-title: 'Direct Connect to Office365 Feature'
-title_meta: 'Direct Connect to Office365 Feature Overview'
+title: 'Toggle - Direct Connect to Office365 Feature Param'
+title_meta: 'Toggle - Direct Connect to Office365 Feature Param'
 keywords: ['office365', 'outlook', 'autodiscover', 'migration', 'registry']
 description: 'This document discusses the Direct Connect to Office365 feature in Outlook 2016, detailing its implications during migration to Office365, and provides a PowerShell script to manage the registry settings to prevent unwanted connections to Office365 accounts.'
 tags: ['office365', 'windows']
@@ -52,4 +52,6 @@ Please ensure that the "ExcludeExplicitO365Endpoint" parameter has the correct v
 ## Output
 
 Script Log
+
+
 

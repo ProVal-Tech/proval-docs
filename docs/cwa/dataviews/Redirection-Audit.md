@@ -1,7 +1,7 @@
 ---
 id: '85f4745d-0f15-425d-a6a0-d11bc27ce0f7'
-title: 'Redirection Registry Settings Overview'
-title_meta: 'Redirection Registry Settings Overview'
+title: 'Redirection-Audit'
+title_meta: 'Redirection-Audit'
 keywords: ['redirection', 'registry', 'settings', 'audit', 'gpo']
 description: 'This document provides a comprehensive overview of all possible redirection registry settings, detailing their global application and specific user impacts. It includes dependencies, a column breakdown, and SQL representation for data collection and analysis.'
 tags: ['gpo', 'registry', 'sql']
@@ -65,4 +65,6 @@ LEFT JOIN computers c ON (c.ComputerID = GRA.ComputerID)
 LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)  
 LEFT JOIN locations l ON (l.LocationID = c.LocationID)
 ```
+
+
 

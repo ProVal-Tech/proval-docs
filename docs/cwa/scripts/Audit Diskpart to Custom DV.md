@@ -1,7 +1,7 @@
 ---
 id: 'b61566b1-676d-433c-ab86-d7272efe5717'
-title: 'Custom Table Creation for Disk Partition Styles'
-title_meta: 'Custom Table Creation for Disk Partition Styles'
+title: 'Audit Diskpart to Custom DV'
+title_meta: 'Audit Diskpart to Custom DV'
 keywords: ['disk', 'partition', 'database', 'windows', 'script']
 description: 'This document outlines a script that creates a custom table named `plugin_proval_diskpart_style` and runs PowerShell on Windows machines to retrieve disk partition details, subsequently populating this information in the database. This process saves approximately 10 minutes by automating the retrieval of disk details.'
 tags: ['database', 'performance', 'setup', 'windows']
@@ -32,4 +32,6 @@ This script creates a custom table `plugin_proval_diskpart_style`. It runs Power
 ## Output
 
 - Dataview
+
+
 

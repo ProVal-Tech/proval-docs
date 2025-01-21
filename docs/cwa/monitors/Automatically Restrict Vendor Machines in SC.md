@@ -1,7 +1,7 @@
 ---
 id: '4a4b5a11-8087-4e0a-b2b1-629d07326dd2'
-title: 'Restrict Vendor Access Monitor in ConnectWise Automate'
-title_meta: 'Restrict Vendor Access Monitor in ConnectWise Automate'
+title: 'Automatically Restrict Vendor Machines in SC'
+title_meta: 'Automatically Restrict Vendor Machines in SC'
 keywords: ['monitor', 'vendor', 'access', 'restriction', 'automate']
 description: 'This document outlines the setup and dependencies for the Restrict Vendor Access monitor in ConnectWise Automate, ensuring that when specific EDFs are checked, machines in the system are automatically restricted from vendor access.'
 tags: ['security', 'setup']
@@ -33,4 +33,6 @@ All operating systems
 ## Alert Template
 
 - `△ Custom - Execute Script - Update Vendor Restricted Property`
+
+
 

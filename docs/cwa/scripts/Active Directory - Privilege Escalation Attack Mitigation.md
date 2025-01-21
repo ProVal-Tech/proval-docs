@@ -1,7 +1,7 @@
 ---
 id: '18fbde09-500a-41a4-bad0-c37b85429926'
-title: 'Verify Active Directory Patches'
-title_meta: 'Verify Active Directory Patches for Security Compliance'
+title: 'Active Directory - Privilege Escalation Attack Mitigation'
+title_meta: 'Active Directory - Privilege Escalation Attack Mitigation'
 keywords: ['active-directory', 'patches', 'security', 'registry', 'compliance']
 description: 'This document outlines a PowerShell script designed to verify the installation of necessary patches to mitigate and detect Active Directory privilege escalation attacks. It checks for the presence of specific patches, monitors registry settings, and identifies non-compliant computer accounts, ultimately enhancing security compliance for domain controllers.'
 tags: ['active-directory', 'compliance', 'registry', 'security']
@@ -67,4 +67,6 @@ These EDFs are also presented in the dataview [Workaround - Active Directory pri
 
 - Extra Data Fields
 - Dataview
+
+
 

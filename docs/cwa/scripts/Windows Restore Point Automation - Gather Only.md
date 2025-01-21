@@ -1,7 +1,7 @@
 ---
 id: '7f52c871-523c-44ae-9289-814326207896'
-title: 'Restore Point Audit for Workstations'
-title_meta: 'Restore Point Audit for Workstations - Detailed Guide'
+title: 'Windows Restore Point Automation - Gather Only'
+title_meta: 'Windows Restore Point Automation - Gather Only'
 keywords: ['restore', 'point', 'audit', 'workstation', 'dataview']
 description: 'This document provides a comprehensive overview of a script designed to gather and store restore point information for workstations in a Dataview called Restore Point Audit - Workstations. It includes details on dependencies, process, and output, aimed at saving time through automation.'
 tags: ['database', 'report', 'setup', 'windows']
@@ -32,4 +32,6 @@ This script will create a custom table `plugin_proval_restore_points` if it does
 
 - Script log
 - Dataview
+
+
 

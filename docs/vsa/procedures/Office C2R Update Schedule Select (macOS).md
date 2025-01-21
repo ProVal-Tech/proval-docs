@@ -1,7 +1,7 @@
 ---
 id: 'bf426f89-7da1-4f4b-88b7-03983136458c'
-title: 'Office Update Schedule Select for macOS'
-title_meta: 'Office Update Schedule Select for macOS'
+title: 'Office C2R Update Schedule Select (macOS)'
+title_meta: 'Office C2R Update Schedule Select (macOS)'
 keywords: ['office', 'macos', 'update', 'channel', 'procedure']
 description: 'This document outlines the procedure for setting the update channel for Microsoft Office on macOS endpoints, including the available channels and implementation steps for exporting and importing the agent procedure in VSA RMM.'
 tags: ['macos', 'software', 'update', 'windows']
@@ -45,4 +45,6 @@ Two log entries are expected. The procedure will first check the existing channe
 ### Custom Field
 
 ![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_6.png)  
+
+
 

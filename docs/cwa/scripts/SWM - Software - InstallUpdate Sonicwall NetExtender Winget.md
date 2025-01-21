@@ -1,7 +1,7 @@
 ---
 id: 'd7f9015f-0d7c-4bfb-b624-4600f4774b65'
-title: 'SonicWall NetExtender Install/Update Script'
-title_meta: 'SonicWall NetExtender Install/Update Script'
+title: 'SWM - Software - InstallUpdate Sonicwall NetExtender Winget'
+title_meta: 'SWM - Software - InstallUpdate Sonicwall NetExtender Winget'
 keywords: ['sonicwall', 'netextender', 'winget', 'install', 'update']
 description: 'This document provides a comprehensive overview of a script designed to install or update the SonicWall NetExtender application on target devices using Winget. It includes sample runs, variable descriptions, and process details to ensure effective deployment.'
 tags: ['installation', 'networking', 'software', 'update', 'windows']
@@ -35,4 +35,6 @@ This script performs the SonicWall NetExtender install/update using Winget. It c
 ## Output
 
 - Script Log
+
+
 

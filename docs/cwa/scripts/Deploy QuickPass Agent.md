@@ -1,7 +1,7 @@
 ---
 id: 'ab838395-dc94-4ceb-986e-99d00b005198'
-title: 'QuickPass Agent Installation Script'
-title_meta: 'QuickPass Agent Installation Script for Windows Machines'
+title: 'Deploy QuickPass Agent'
+title_meta: 'Deploy QuickPass Agent'
 keywords: ['quickpass', 'agent', 'installation', 'windows', 'deployment']
 description: 'This document provides a comprehensive guide on installing the QuickPass Agent on Windows machines, detailing the necessary prerequisites, parameters, and configuration settings required for a successful installation.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -91,4 +91,6 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
+
 

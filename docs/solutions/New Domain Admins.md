@@ -1,7 +1,7 @@
 ---
 id: '35a03717-5ade-46fb-b396-10a277043788'
-title: 'New Domain Admins Alert'
-title_meta: 'New Domain Admins Alert'
+title: 'New Domain Admins'
+title_meta: 'New Domain Admins'
 keywords: ['domain', 'admin', 'alert', 'monitoring', 'security']
 description: 'This document outlines a solution to monitor for newly created or promoted domain admins within an Active Directory environment and generate alerts accordingly. It includes associated content and implementation steps to ensure proper setup and functionality.'
 tags: ['active-directory', 'security', 'setup']
@@ -35,4 +35,6 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 - Create the Machine Group: [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>).
 - Create the task: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424).
 - Create the deployment schedule as described in this document: [New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424).
+
+
 

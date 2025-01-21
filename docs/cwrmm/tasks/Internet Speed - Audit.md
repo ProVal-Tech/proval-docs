@@ -1,7 +1,7 @@
 ---
 id: '296c457d-66d6-4de8-af91-4667c2321e12'
-title: 'Internet Speed Test via Ookla SpeedTest CLI'
-title_meta: 'Internet Speed Test via Ookla SpeedTest CLI'
+title: 'Internet Speed - Audit'
+title_meta: 'Internet Speed - Audit'
 keywords: ['internet', 'speed', 'test', 'ookla', 'cli']
 description: 'This document provides a comprehensive guide on how to run an internet speed test using the Ookla SpeedTest CLI application. It includes sample runs, dependencies, task creation steps, and detailed instructions on implementing the script in a system.'
 tags: ['networking', 'performance', 'setup']
@@ -130,4 +130,6 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a2436d9b-83e4-4405-a3e1-dc4019438d3a'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Import- TLS Version Check - Client'
+title_meta: 'Import- TLS Version Check - Client'
 keywords: ['remote', 'monitor', 'groupid', 'alert', 'query']
 description: 'This document provides a detailed guide on how to apply a remote monitor to specific groups in your system. It includes steps to obtain group IDs, modify a SQL query, and execute it to set up the remote monitor effectively.'
 tags: ['database', 'setup']
@@ -161,4 +161,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

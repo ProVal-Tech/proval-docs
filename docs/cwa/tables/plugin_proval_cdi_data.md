@@ -1,7 +1,7 @@
 ---
 id: '7a224177-45ff-4f2e-a8fe-a734a642a539'
-title: 'EPM Disk Critical Information'
-title_meta: 'EPM Disk Critical Information'
+title: 'plugin_proval_cdi_data'
+title_meta: 'plugin_proval_cdi_data'
 keywords: ['disk', 'critical', 'info', 'data', 'monitoring']
 description: 'This document provides detailed information about the critical data collected from disk drives using the EPM Disk Agnostic Get-CriticalDiskInfo script. It outlines the dependencies, structure of the data tables, and the specific attributes recorded for each disk, ensuring effective monitoring and management of disk health and performance.'
 tags: ['database', 'disk-encryption', 'performance', 'security', 'setup']
@@ -59,4 +59,6 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Dis
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the date of the last check                 |
+
+
 

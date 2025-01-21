@@ -1,7 +1,7 @@
 ---
 id: '0865e96c-af9c-48f4-acff-a70525b773ac'
-title: 'Restore Backup Logon User'
-title_meta: 'Restore Backup Logon User'
+title: 'Last Signed in User - Restore'
+title_meta: 'Last Signed in User - Restore'
 keywords: ['backup', 'logon', 'restore', 'user']
 description: 'This document provides a detailed overview of a script designed to restore the backup logon user to the login screen of a machine. It includes sample runs, variable documentation, and a description of the process involved in checking and restoring the logon backup file.'
 tags: ['backup', 'security', 'windows']
@@ -32,4 +32,6 @@ This script will restore the backup logon user to the login screen of the machin
 ## Output
 
 - Script log
+
+
 

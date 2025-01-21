@@ -1,7 +1,7 @@
 ---
 id: ps-install-perchlogshipper
 title: 'Install-PerchLogShipper'
-title_meta: 'Install-PerchLogShipper Command'
+title_meta: 'Install-PerchLogShipper'
 keywords: ['install', 'perch', 'logshipper', 'monitoring']
 description: 'Documentation for the Install-PerchLogShipper command to install Perch Log Shipper on Windows computers.'
 tags: ['installation', 'software', 'windows']
@@ -31,4 +31,6 @@ This command installs Perch Log Shipper. A token is necessary to complete the in
 ## Output
 - .\Install-PerchLogShipper-log.txt
 - .\Install-PerchLogShipper-Error.txt
+
+
 

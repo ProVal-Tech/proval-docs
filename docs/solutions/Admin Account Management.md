@@ -1,7 +1,7 @@
 ---
 id: '8ee53115-192b-478e-873b-bb1b4c2907e9'
-title: 'Managing Local and Domain Admins'
-title_meta: 'Managing Local and Domain Admins'
+title: 'Admin Account Management'
+title_meta: 'Admin Account Management'
 keywords: ['local', 'domain', 'admins', 'management', 'windows']
 description: 'This document outlines various solutions for managing local and domain administrators effectively, including processes for creating, updating, and monitoring admin accounts on Windows machines.'
 tags: ['security', 'windows']
@@ -58,4 +58,6 @@ This document outlines multiple solutions that can be used to manage local and d
 ## Implementation
 
 1. Please carefully review the solution documents for importation before implementation.
+
+
 

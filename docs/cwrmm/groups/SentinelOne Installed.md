@@ -1,7 +1,7 @@
 ---
 id: '9bed886f-fa13-4389-932e-47c62482db0d'
-title: 'Creating a Dynamic Group for SentinelOne Installed Machines'
-title_meta: 'Creating a Dynamic Group for SentinelOne Installed Machines'
+title: 'SentinelOne Installed'
+title_meta: 'SentinelOne Installed'
 keywords: ['sentinelone', 'windows', 'group', 'dynamic', 'agent']
 description: 'This document provides a step-by-step guide on how to create a dynamic group in Kaseya VSA for Windows machines that have the Sentinel Agent installed. It includes detailed instructions and images to assist in the setup process.'
 tags: ['setup', 'software', 'windows']
@@ -45,4 +45,6 @@ This document outlines the process for creating a dynamic group that includes Wi
 
 ![Image](../../../static/img/SentinelOne-Installed/image_10.png)  
 ![Image](../../../static/img/SentinelOne-Installed/image_11.png)
+
+
 

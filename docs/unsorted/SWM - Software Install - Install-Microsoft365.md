@@ -1,7 +1,7 @@
 ---
 id: 'b91e0ebd-2946-4030-bc43-a8eda4d885b1'
-title: 'Install Microsoft 365 Apps for Business'
-title_meta: 'Install Microsoft 365 Apps for Business'
+title: 'SWM - Software Install - Install-Microsoft365'
+title_meta: 'SWM - Software Install - Install-Microsoft365'
 keywords: ['microsoft', 'installation', 'office365', 'xml', 'odt']
 description: 'This document provides a detailed guide on installing Microsoft 365 Apps for Business using PowerShell, including requirements, process steps, and example usage with XML configuration support.'
 tags: ['installation', 'office365', 'software', 'windows']
@@ -64,4 +64,6 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 | Install Script                 | /repo/script/Install-Microsoft365  |
 | Automate                       |                                    |
 | Kaseya                        | [Kaseya](https://proval.itglue.com/5078775/docs/15402741) |
+
+
 

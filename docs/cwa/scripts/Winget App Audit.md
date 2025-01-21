@@ -1,7 +1,7 @@
 ---
 id: 'd5ea54f9-07c9-443b-acc2-411401cfbe91'
-title: 'Get Winget Report'
-title_meta: 'Get Winget Report'
+title: 'Winget App Audit'
+title_meta: 'Winget App Audit'
 keywords: ['audit', 'winget', 'applications', 'report', 'script']
 description: 'This document provides an overview of the Get Winget Report script, which audits applications supported by Winget and stores the results in a custom database table. It details the file paths, hash values, sample runs, dependencies, variables, user parameters, and expected output.'
 tags: ['database', 'report', 'setup']
@@ -57,4 +57,6 @@ The script conducts an audit of the computer for applications supported by Winge
 - Script log
 - Custom table
 - Dataview
+
+
 

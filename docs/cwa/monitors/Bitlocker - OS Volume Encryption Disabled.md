@@ -1,7 +1,7 @@
 ---
 id: '369dac26-3df5-4591-8d51-47fc1cd7204c'
-title: 'Bitlocker Monitoring Check for Target Machines'
-title_meta: 'Bitlocker Monitoring Check for Target Machines'
+title: 'Bitlocker - OS Volume Encryption Disabled'
+title_meta: 'Bitlocker - OS Volume Encryption Disabled'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'compliance']
 description: 'This document outlines a monitoring solution for identifying target machines with specific Bitlocker settings, ensuring that only compliant machines are flagged for further action. It includes SQL queries and dependencies for effective implementation.'
 tags: ['compliance', 'database', 'encryption', 'report', 'security']
@@ -93,4 +93,6 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---OS-Volume-Encryption-Disabled/image_1.png)
+
+
 

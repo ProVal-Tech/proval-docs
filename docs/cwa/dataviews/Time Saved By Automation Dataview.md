@@ -1,7 +1,7 @@
 ---
 id: '4b30f415-b15b-4dd5-b2cf-13a69dbeb538'
-title: 'Time Saved by Automation Report'
-title_meta: 'Time Saved by Automation Report'
+title: 'Time Saved By Automation Dataview'
+title_meta: 'Time Saved By Automation Dataview'
 keywords: ['automation', 'report', 'mysql', 'scripting', 'efficiency']
 description: 'This document provides a detailed overview of the accumulated "Time Saved by Automation" for scripts configured with specific triggers and custom tables. It includes dependencies, a breakdown of relevant columns, and how to interpret the data for improved efficiency and performance in automation tasks.'
 tags: ['mysql', 'report']
@@ -27,5 +27,7 @@ This document displays the accumulated "Time Saved by Automation" for each scrip
 | Average Weekly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
 | Average Monthly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
 | Average Yearly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
+
+
 
 

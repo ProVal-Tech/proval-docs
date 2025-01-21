@@ -1,7 +1,7 @@
 ---
 id: 'b456d0ae-a456-4a35-85c2-c9b44eef2844'
-title: 'Reboot Pending - Servers Monitor'
-title_meta: 'Reboot Pending - Servers Monitor'
+title: 'Reboot Pending - Servers'
+title_meta: 'Reboot Pending - Servers'
 keywords: ['monitor', 'ticket', 'reboot', 'windows', 'servers']
 description: 'This document provides a detailed guide on creating a monitor that generates tickets for Windows servers with pending reboots. It covers the implementation process, dependencies, and configuration steps necessary to ensure proper functionality within the ConnectWise RMM environment.'
 tags: ['ticketing', 'windows']
@@ -61,4 +61,6 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+
 

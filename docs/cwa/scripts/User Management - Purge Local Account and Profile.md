@@ -1,7 +1,7 @@
 ---
 id: '45074a99-85a8-4e7f-bda4-775697504bad'
-title: 'Remove Local Accounts Script'
-title_meta: 'Remove Local Accounts Script for User Management'
+title: 'User Management - Purge Local Account and Profile'
+title_meta: 'User Management - Purge Local Account and Profile'
 keywords: ['remove', 'local', 'accounts', 'purge', 'user', 'management']
 description: 'This document outlines a script designed to completely remove and purge local accounts, including UserSID, from the agent. It can operate manually or automatically, depending on the configuration. The script saves approximately 5 minutes of time by automating the removal process for inactive accounts.'
 tags: ['cleanup', 'logging']
@@ -55,4 +55,6 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+
+
 

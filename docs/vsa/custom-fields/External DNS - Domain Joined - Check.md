@@ -70,3 +70,5 @@ This procedure checks to see if a machine is domain-joined and then verifies the
 
 Procedure log files and other outputs.
 
+
+

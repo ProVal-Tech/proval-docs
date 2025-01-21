@@ -1,7 +1,7 @@
 ---
 id: 'e6d09f37-fd0f-42a6-98a5-449f65673296'
-title: 'SMB1 Traffic Detection Remote Monitor Setup'
-title_meta: 'SMB1 Traffic Detection Remote Monitor Setup'
+title: 'Implement- SMB1 Traffic Detection'
+title_meta: 'Implement- SMB1 Traffic Detection'
 keywords: ['smb1', 'monitor', 'remote', 'detection', 'traffic']
 description: 'This document provides a step-by-step guide to set up the SMB1 Traffic Detection Remote Monitor using SQL queries. It includes instructions for inserting necessary searches and groups, refreshing searches, and validating the setup.'
 tags: ['database', 'networking']
@@ -183,4 +183,6 @@ Validate the presence of the `SMB1 Traffic Detection` remote monitor in the grou
 ## Step 6
 
 Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) script for errors/failures.
+
+
 

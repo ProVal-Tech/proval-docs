@@ -1,7 +1,7 @@
 ---
 id: '3ff4b4be-2bca-4ef2-80d6-8761cebaeb15'
-title: 'Monitor Set for Local Admin Account Verification'
-title_meta: 'Monitor Set for Local Admin Account Verification'
+title: 'Windows Local Admin Account Process'
+title_meta: 'Windows Local Admin Account Process'
 keywords: ['monitor', 'local', 'admin', 'account', 'verification', 'password', 'age', 'parameters']
 description: 'This document outlines the purpose and functionality of a monitor set designed to identify Windows machines that lack a designated local admin account or have outdated passwords. It details the customizable UserName and Password age parameters, dependencies, and the alert template for executing necessary scripts.'
 tags: ['security', 'windows']
@@ -30,4 +30,6 @@ With the exception of Domain Controllers, only Windows machines belonging to cli
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>) script on the machines detected by the monitor set.
+
+
 

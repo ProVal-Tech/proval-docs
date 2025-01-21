@@ -1,7 +1,7 @@
 ---
 id: '43fcbb27-0955-4270-9460-33c5e8ccceef'
-title: 'Monitor Battery Report for Computers'
-title_meta: 'Monitor Battery Report for Computers - Automate Script'
+title: 'Get-BatteryReport'
+title_meta: 'Get-BatteryReport'
 keywords: ['monitor', 'battery', 'report', 'computers', 'script']
 description: 'This document outlines a monitor that checks computers for battery report data, triggering a script to collect the latest battery information if the last scan was over 24 hours ago. It includes dependencies, target criteria, and an alert template for execution.'
 tags: ['data-collection']
@@ -29,4 +29,6 @@ The purpose of this monitor is to select all computers that have returned a vali
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
 The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
+
+
 

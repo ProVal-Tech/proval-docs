@@ -1,7 +1,7 @@
 ---
 id: ps-get-latestinstalledcu
 title: 'Get-LatestInstalledCU'
-title_meta: 'Get-LatestInstalledCU Command'
+title_meta: 'Get-LatestInstalledCU'
 keywords: ['cumulative', 'update', 'windows', 'patch']
 description: 'Documentation for the Get-LatestInstalledCU command to retrieve the most recent cumulative update installed on the system.'
 tags: ['update', 'windows']
@@ -48,4 +48,6 @@ OSBuild         : 10.0.22621.1702
 ReleaseDate     : 2023-05-09
 KBid            : KB5026372
 ```
+
+
 

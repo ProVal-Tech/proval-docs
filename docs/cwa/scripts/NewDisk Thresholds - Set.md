@@ -1,7 +1,7 @@
 ---
 id: '9abc689e-609d-48dc-9f90-802c69ddef9b'
-title: 'Set / Reset Disk Thresholds'
-title_meta: 'Set / Reset Disk Thresholds for Global or Computer Level'
+title: 'NewDisk Thresholds - Set'
+title_meta: 'NewDisk Thresholds - Set'
 keywords: ['disk', 'thresholds', 'global', 'computer', 'properties']
 description: 'This document provides a comprehensive guide on using the script to set or reset global or computer level disk thresholds. It includes sample runs, dependencies, variable documentation, user parameters, and expected output.'
 tags: ['performance', 'setup', 'software', 'windows']
@@ -41,4 +41,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

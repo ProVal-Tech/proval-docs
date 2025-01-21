@@ -1,7 +1,7 @@
 ---
 id: '4a9b2e2c-e017-4df2-9613-8a7517d58791'
-title: 'Dataview Audit Snapshots for Virtual Machines on Hyper-V'
-title_meta: 'Dataview Audit Snapshots for Virtual Machines on Hyper-V'
+title: 'Hyper-V Snapshots'
+title_meta: 'Hyper-V Snapshots'
 keywords: ['audit', 'hyper-v', 'virtual', 'machines', 'snapshots', 'dataview']
 description: 'This document provides a comprehensive overview of dataview audit snapshots for virtual machines hosted on the Hyper-V Server, detailing the various columns and their descriptions for better understanding and management of virtual environments.'
 tags: ['hyper-v', 'performance', 'virtualization']
@@ -49,4 +49,6 @@ This document provides an overview of dataview audit snapshots for virtual machi
 | Estimated Disk Max Usage         | Displays the maximum disk usage by the snapshot         |
 | Snapshot Description              | Displays the description of the snapshot                |
 | Is Current Snapshot              | Indicates whether the snapshot is current or not       |
+
+
 

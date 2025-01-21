@@ -1,7 +1,7 @@
 ---
 id: 'c18e0a86-ade5-405a-9fc4-46908a340cf8'
-title: 'Remove Log4J Residuals'
-title_meta: 'Remove Log4J Residuals'
+title: 'Log4J Remediation Residue Removal'
+title_meta: 'Log4J Remediation Residue Removal'
 keywords: ['log4j', 'residuals', 'cleanup', 'script']
 description: 'This document outlines a script that effectively removes residuals left by the Log4J (Log4Shell) File Scan script, including the cleanup of the Everything service. It provides a summary, sample run, and dependencies for successful execution.'
 tags: ['cleanup', 'security', 'windows']
@@ -20,4 +20,6 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](<./Lo
 ## Dependencies
 
 [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>)
+
+
 

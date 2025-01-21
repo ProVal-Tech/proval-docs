@@ -1,7 +1,7 @@
 ---
 id: 'c9891eb9-3731-4b0d-9882-dcb4a73229eb'
-title: 'Patch Configuration Data Table'
-title_meta: 'Patch Configuration Data Table for Windows Update Settings'
+title: 'pvl_patch_config'
+title_meta: 'pvl_patch_config'
 keywords: ['patch', 'configuration', 'windows', 'update', 'registry']
 description: 'This document provides a detailed overview of the patch configuration data table, including the structure, dependencies, and the specific columns used to store Windows Update settings. It outlines the types and explanations of each column, which include service startup types and branch readiness levels, as well as the data collection methodology from the Windows registry.'
 tags: ['database', 'security', 'update', 'windows']
@@ -40,4 +40,6 @@ The table stores the patch configuration data fetched by the [Get Patch Config](
 | WindowsUpdateDeferQualityUpdatesPeriodInDays| Int       | Number of days to defer quality updates. Data is gathered from the registry. **Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate` **Name:** `DeferQualityUpdatesPeriodInDays` **Possible values:** `0-365 (days)` **Example:** `0` |
 | upgradeRestricted                            | Int       | Indicates whether Windows upgrades or feature updates are restricted from the registry key for Windows 10 and 11. Data is gathered from the registry. **Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate` **Name:** `DisableOSUpgrade` **Possible values:** `0 (upgrade not disabled), 1 (upgrade disabled)` **Example:** `0` **Name:** `TargetReleaseVersion` **Possible values:** `0 (Feature update not restricted), 1 (Feature update disabled)` **Example:** `1` **Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate` **Name:** `TargetReleaseVersionInfo` **Possible values:** `22H2, 23H2, 24H2, etc.` **Example:** `22H2` |
 | DataCollectionTime                          | DateTime  | Data Collection Time                                                                                  |
+
+
 

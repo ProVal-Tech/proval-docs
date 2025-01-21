@@ -1,7 +1,7 @@
 ---
 id: 'a616e505-d119-4fbd-90eb-6fcd9ebea41e'
-title: 'Set Chromium Homepage'
-title_meta: 'Set Chromium Homepage - Enforce Homepage in Browsers'
+title: 'Set - Chromium Homepage'
+title_meta: 'Set - Chromium Homepage'
 keywords: ['homepage', 'browsers', 'settings', 'enforcement', 'chromium']
 description: 'This document provides a detailed guide on how to set an enforced homepage in popular browsers such as Brave, Chrome, and Edge. It includes implementation steps, user parameters, and sample runs to ensure proper configuration.'
 tags: ['software', 'windows']
@@ -267,4 +267,6 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
+
+
 

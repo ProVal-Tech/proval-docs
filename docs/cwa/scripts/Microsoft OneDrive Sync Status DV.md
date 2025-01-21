@@ -1,7 +1,7 @@
 ---
 id: '11c05d45-a0fb-4cfb-b388-cdc59362d9a1'
-title: 'OneDrive Sync Status Collection Script'
-title_meta: 'OneDrive Sync Status Collection Script for Windows Machines'
+title: 'Microsoft OneDrive Sync Status DV'
+title_meta: 'Microsoft OneDrive Sync Status DV'
 keywords: ['onedrive', 'sync', 'status', 'windows', 'script']
 description: 'This document details a script for collecting OneDrive sync status information from Windows machines, targeting Non-SharePoint Linked Sites. The script utilizes the Onedrive.dll module and requires an active user session to function correctly.'
 tags: ['performance', 'report', 'software', 'windows']
@@ -40,4 +40,6 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 - Script log
 - Script states
+
+
 

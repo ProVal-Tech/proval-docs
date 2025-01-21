@@ -1,7 +1,7 @@
 ---
 id: 'f1ac2b23-59a0-4dcd-86a2-61901dd551b6'
-title: 'Windows Upgrade Monitor'
-title_meta: 'Windows Upgrade Monitor for Outdated Machines'
+title: 'Patching - Windows 10 Build Upgrades'
+title_meta: 'Patching - Windows 10 Build Upgrades'
 keywords: ['monitor', 'upgrade', 'windows', 'build', 'machines']
 description: 'This document outlines a monitoring solution designed to identify machines running below the latest Windows build and trigger an upgrade script. It is recommended to schedule this monitor daily during off-hours to minimize user productivity loss.'
 tags: ['performance', 'setup', 'windows']
@@ -42,4 +42,6 @@ WHERE
     AND computers.computerid IN (SELECT computerid FROM computerpatchpolicies WHERE installpolicy IN (SELECT ID FROM installsoftwarepolicies WHERE updatemode IN (5, 6)))
 LIMIT 10
 ```
+
+
 

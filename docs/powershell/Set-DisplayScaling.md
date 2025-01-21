@@ -1,7 +1,7 @@
 ---
 id: ps-set-displayscaling
 title: 'Set-DisplayScaling'
-title_meta: 'Set-DisplayScaling Command'
+title_meta: 'Set-DisplayScaling'
 keywords: ['display', 'scaling', 'resolution', 'windows']
 description: 'Documentation for the Set-DisplayScaling command to set custom display scaling for Windows machines.'
 tags: ['windows']
@@ -36,4 +36,6 @@ To set the custom display scaling, use the following command:
 ## Output
 - `.\Set-DisplayScaling-log.txt`
 - `.\Set-DisplayScaling-Error.txt`
+
+
 

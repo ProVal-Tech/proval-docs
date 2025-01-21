@@ -1,7 +1,7 @@
 ---
 id: '1b773da4-e288-4874-9d6b-2e765ddcf248'
-title: 'Monitor for Possible Brute Force Attack on Domain Controller'
-title_meta: 'Monitor for Possible Brute Force Attack on Domain Controller'
+title: 'Possible Brute Force Attack Monitoring'
+title_meta: 'Possible Brute Force Attack Monitoring'
 keywords: ['brute', 'force', 'attack', 'domain', 'controller', 'monitoring', 'security']
 description: 'This document outlines a solution for monitoring domain controllers for excessive logon failures within a one-hour window, which may indicate a potential brute force attack. It includes details on custom fields, dynamic groups, tasks, and monitoring setup necessary for effective security management.'
 tags: ['security']
@@ -56,4 +56,6 @@ The solution monitors the domain controller for excessive logon failures within 
 
 4. Create and enable the following monitor:
    - [Possible Brute Force Attack](<../cwrmm/monitors/Possible Brute Force Attack.md>)
+
+
 

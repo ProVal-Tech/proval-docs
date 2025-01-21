@@ -1,7 +1,7 @@
 ---
 id: '74cca89e-effd-4af7-a73a-53a30b91c8a7'
-title: 'Windows 11 Compatibility Check'
-title_meta: 'Windows 11 Compatibility Check'
+title: 'plugin_proval_windows11_readiness'
+title_meta: 'plugin_proval_windows11_readiness'
 keywords: ['windows', 'upgrade', 'compatibility', 'secureboot', 'memory', 'cpu', 'osdisk', 'tpm']
 description: 'This document outlines the purpose and structure of a custom table that stores data gathered by the Windows 11 Compatibility Check script. It details the dependencies and the specific columns used to assess whether a machine is eligible for an upgrade to Windows 11.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -31,4 +31,6 @@ The custom table stores the data gathered by the [Windows - Check Windows 11 Com
 | OSDisk      | TINYINT  | Indicates whether the OS drive size is compatible with the Windows 11 upgrade. 0 = failed, 1 = pass. |
 | TPM         | TINYINT  | Indicates whether the TPM version is compatible with the Windows 11 upgrade. 0 = failed, 1 = pass. |
 | LastRan     | DATETIME | Timestamp for the collected data.                                                               |
+
+
 

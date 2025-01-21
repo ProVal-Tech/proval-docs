@@ -1,7 +1,7 @@
 ---
 id: 'b4c2b307-41af-4ebf-8132-9f883351b09b'
-title: 'Windows 10 Upgrade Assistant Script'
-title_meta: 'Windows 10 Upgrade Assistant Script for Efficient Upgrades'
+title: 'Windows 10 Upgrade Assistant'
+title_meta: 'Windows 10 Upgrade Assistant'
 keywords: ['windows', 'upgrade', 'assistant', 'installation', 'automation']
 description: 'This document provides a comprehensive overview of a PowerShell script designed to download, install, and run the Windows 10 Upgrade Assistant Application, facilitating the upgrade of eligible devices to the latest Windows 10 version. It details the process, dependencies, and expected outcomes, highlighting the time saved by automation.'
 tags: ['installation', 'software', 'windows']
@@ -38,4 +38,6 @@ If the process for the Windows 10 app exists, the script will exit successfully,
 ## Output
 
 - Script log messages only
+
+
 

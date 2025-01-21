@@ -1,7 +1,7 @@
 ---
 id: 'c18b026e-7989-4853-b1cb-00517e69adb8'
-title: 'Cisco Roaming Client Installation Script'
-title_meta: 'Cisco Roaming Client Installation Script'
+title: 'Deploy OpenDNS Roaming Client Latest Version'
+title_meta: 'Deploy OpenDNS Roaming Client Latest Version'
 keywords: ['cisco', 'roaming', 'client', 'installation', 'update', 'mac', 'windows']
 description: 'This document provides a comprehensive guide on a script that queries Cisco for the latest roaming client installation media and installs the software on target Mac or Windows devices. It includes implementation steps, dependencies, variables, and specific considerations for both operating systems.'
 tags: ['installation', 'networking', 'software', 'update', 'windows']
@@ -56,4 +56,6 @@ The script will push an update to the Windows device if an out-of-date version i
 | ServiceloopCounter       | Variable used to loop for a set amount of time looking for the service to start.                  |
 | FinishStatus             | This variable is used when checking basic PowerShell for common PowerShell issues, e.g., incorrect version, missing modules, etc. |
 | Message                  | Holds the final log message in the event that we finish the install and need to verify.           |
+
+
 

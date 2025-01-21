@@ -1,7 +1,7 @@
 ---
 id: 'be2a3cab-5528-4b53-a636-713198b10fa1'
-title: 'Hide/Unhide Hidden Files Script'
-title_meta: 'Hide/Unhide Hidden Files Script'
+title: 'Show Hidden Files - EnableDisable'
+title_meta: 'Show Hidden Files - EnableDisable'
 keywords: ['hidden', 'files', 'script', 'automation', 'parameter']
 description: 'This document details a script that allows users to hide or unhide hidden files based on a specified input parameter. The script improves efficiency by automating the process of file visibility management, saving users valuable time.'
 tags: ['setup', 'software', 'windows']
@@ -36,4 +36,6 @@ The script will hide or unhide hidden files based on the input parameter.
 ## Output
 
 - Script log
+
+
 

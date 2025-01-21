@@ -1,7 +1,7 @@
 ---
 id: '408bb0fc-cfe0-4ea3-8e77-af13c41e054e'
-title: 'Create and Populate Custom Table for MSP Metrics'
-title_meta: 'Create and Populate Custom Table for MSP Metrics'
+title: 'MSP Automation Metrics - plugin_proval_h_msp_metrics'
+title_meta: 'MSP Automation Metrics - plugin_proval_h_msp_metrics'
 keywords: ['custom', 'metrics', 'data', 'table', 'script', 'agents', 'servers', 'workstations', 'tickets', 'automation']
 description: 'This document outlines a script that creates and populates data into the plugin_proval_h_msp_metrics custom table. It includes details on scheduling, variables used, the process of execution, and expected outputs, providing a comprehensive guide for the implementation and monitoring of MSP metrics.'
 tags: ['database', 'performance', 'report', 'setup', 'windows']
@@ -48,4 +48,6 @@ Please schedule the script to run on the second Monday of each month. This is a 
 
 - Custom Table
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'b86b8355-39ee-4f0c-8f54-33a21ed603f3'
-title: 'Logitech Unifying Software Installation'
-title_meta: 'Logitech Unifying Software Installation'
+title: 'Logitech - Unifying Software - Deploy'
+title_meta: 'Logitech - Unifying Software - Deploy'
 keywords: ['logitech', 'software', 'installation', 'unifying', 'driver']
 description: 'This document provides a detailed guide on installing the Logitech Unifying Software, including requirements, sample runs, global parameters, dependencies, and process overview.'
 tags: ['installation', 'software', 'windows']
@@ -39,4 +39,6 @@ This script will install a specified version of the Logitech Unifying Software b
 ## Output
 
 - Script log
+
+
 

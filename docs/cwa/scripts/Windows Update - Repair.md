@@ -1,7 +1,7 @@
 ---
 id: 'aaa3f8da-cfd3-454a-808b-d4501f9c2608'
-title: 'Repair and Reset Windows Update Settings'
-title_meta: 'Repair and Reset Windows Update Settings'
+title: 'Windows Update - Repair'
+title_meta: 'Windows Update - Repair'
 keywords: ['repair', 'windows', 'update', 'settings', 'script']
 description: 'This document outlines a script designed to repair and reset Windows update settings, aiming to resolve potential patching issues on Windows devices. It details the script’s dependencies, global and user parameters, process, and expected output, including logging of successes and failures.'
 tags: ['performance', 'software', 'update', 'windows']
@@ -44,4 +44,6 @@ Executes the Agnostic script [Repair-WindowsUpdate](<../../powershell/Repair-Win
 ## Output
 
 - Script Logs
+
+
 

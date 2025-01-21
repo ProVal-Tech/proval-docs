@@ -1,7 +1,7 @@
 ---
 id: '7a02abe9-e98a-49d4-a164-d05d1e053e94'
 title: 'Set-NetAdapterDNS'
-title_meta: 'Set-NetAdapterDNS - Append DNS Server Address to Network Adapters'
+title_meta: 'Set-NetAdapterDNS'
 keywords: ['dns', 'network', 'adapter', 'script', 'automation']
 description: 'This document outlines the process to append a DNS server address to all physical, active network adapters. It includes user parameters, task creation, and execution details for implementing the script in ConnectWise Automate.'
 tags: ['dns', 'setup']
@@ -181,4 +181,6 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'e3c5aeb1-144d-4c12-9b33-2d56d05804ce'
-title: 'Update Orchestrator Service Monitor'
-title_meta: 'Update Orchestrator Service Monitor'
+title: 'Update Orchestrator Service Status Detection'
+title_meta: 'Update Orchestrator Service Status Detection'
 keywords: ['monitor', 'service', 'windows', 'alert', 'check']
 description: 'This document provides details on a monitor designed to check the status of the Update Orchestrator Service on Windows machines. If the service is running, it triggers an alert based on the specified template. Suggested configurations for the monitor, including check actions and dependencies, are also included.'
 tags: ['windows']
@@ -31,4 +31,6 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Windows Machine
+
+
 

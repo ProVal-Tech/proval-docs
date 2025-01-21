@@ -1,7 +1,7 @@
 ---
 id: '7cd1193a-c796-4545-b707-758e1b651c22'
-title: 'Ticket Creation for Ping Monitor'
-title_meta: 'Ticket Creation for Ping Monitor - Custom Alert Template'
+title: 'Ticket Creation - Ping Monitor'
+title_meta: 'Ticket Creation - Ping Monitor'
 keywords: ['ticket', 'monitor', 'ping', 'alert', 'client']
 description: 'This document details a script variation designed for ticket management related to remote ping monitors. It focuses on automatically closing tickets upon successful pings and excludes computer information from ticket creation. The script is intended for use with a specific alert template and includes system properties and sample configurations.'
 tags: []
@@ -67,4 +67,6 @@ The script will generate the tickets utilizing the subject and message stored in
 ## Output
 
 - Ticket
+
+
 

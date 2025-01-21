@@ -1,7 +1,7 @@
 ---
 id: 'c1b906ec-7aea-41f3-8241-358d3d644900'
-title: 'Get-PatchConfig Implementation for Automate'
-title_meta: 'Get-PatchConfig Implementation for Automate'
+title: 'Get Patch Config'
+title_meta: 'Get Patch Config'
 keywords: ['patch', 'config', 'windows', 'update', 'script', 'automation']
 description: 'This document details the implementation of the Get-PatchConfig script within the ConnectWise Automate platform, focusing on retrieving and storing essential data for validating changes made by the WUA Settings Validation script. It includes information on file paths, hashes, update notices, sample runs, dependencies, variables, user parameters, and output.'
 tags: ['database', 'update', 'windows']
@@ -63,4 +63,6 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Local file on computer
 - Custom Table
 - Dataview
+
+
 

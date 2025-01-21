@@ -1,7 +1,7 @@
 ---
 id: 'b026c73a-6538-4a44-8720-35ecf9b6d2f5'
-title: 'Get StorageCraft Drive Information'
-title_meta: 'Get StorageCraft Drive Information'
+title: 'Get StorageCraft Backup Drive Letter'
+title_meta: 'Get StorageCraft Backup Drive Letter'
 keywords: ['storagecraft', 'drive', 'information', 'agent', 'procedure']
 description: 'This document outlines the procedure to retrieve drive information configured by StorageCraft on an endpoint. It includes details on dependencies, process execution, and output logging.'
 tags: ['backup', 'software', 'windows']
@@ -29,4 +29,6 @@ Run the procedure.
 
 - Agent Procedure Log:  
   `c:/kworking/System/Get-SCDrive-data.txt`
+
+
 

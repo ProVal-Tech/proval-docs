@@ -1,7 +1,7 @@
 ---
 id: 'fa9b4535-5711-4cde-ac58-cb9759dbd65a'
-title: 'Windows Update Report Monitor Set'
-title_meta: 'Windows Update Report Monitor Set'
+title: 'Get Windows Update Report DV'
+title_meta: 'Get Windows Update Report DV'
 keywords: ['monitor', 'windows', 'update', 'report', 'patching']
 description: 'This document outlines the setup of a monitor set designed to execute the Windows Update Report script weekly across machines with the Managed Patching Policy, optimizing performance by limiting the execution to 200 machines at a time every 15 minutes.'
 tags: ['patching', 'report', 'windows']
@@ -23,4 +23,6 @@ The purpose of this monitor set is to execute the [CWM - Automate - Script - Win
 ## Target
 
 Limited to the Windows machines with Managed Patch Policy via SQL query.
+
+
 

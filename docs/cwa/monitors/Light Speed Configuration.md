@@ -1,7 +1,7 @@
 ---
 id: '1bf99632-84ea-4fc1-8cb4-39bd98621a91'
-title: 'Light Speed XML Configuration Implementation'
-title_meta: 'Light Speed XML Configuration Implementation Steps'
+title: 'Light Speed Configuration'
+title_meta: 'Light Speed Configuration'
 keywords: ['configuration', 'alert', 'monitor', 'sql', 'group', 'agent']
 description: 'This document outlines the implementation steps for configuring the Light Speed XML settings in ConnectWise Automate. It includes SQL queries for creating alert templates, setting up group agents, and ensuring the remote monitor functions correctly.'
 tags: ['sql']
@@ -229,4 +229,6 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 
 - Now execute your query from a RAWSQL monitor set.
 - Locate the remote monitor on the group(s) and ensure that it is functioning as required.
+
+
 

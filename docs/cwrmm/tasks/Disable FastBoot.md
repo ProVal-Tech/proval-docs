@@ -1,7 +1,7 @@
 ---
 id: 'f52aada4-6207-4766-9b7c-24d022812e3c'
-title: 'Disable FastBoot Script for Windows Workstations'
-title_meta: 'Disable FastBoot Script for Windows Workstations'
+title: 'Disable FastBoot'
+title_meta: 'Disable FastBoot'
 keywords: ['disable', 'fastboot', 'windows', 'registry', 'script']
 description: 'This document provides a comprehensive guide on how to implement a script that modifies registry keys to disable fastboot on Windows workstations, ensuring optimal system performance. The guide includes sample runs, dependencies, task creation steps, and deployment instructions.'
 tags: ['performance', 'registry', 'windows']
@@ -168,4 +168,6 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 
 - Script Log
 - Custom Field
+
+
 

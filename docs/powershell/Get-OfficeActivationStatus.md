@@ -1,7 +1,7 @@
 ---
 id: ps-get-officeactivationstatus
 title: 'Get-OfficeActivationStatus'
-title_meta: 'Get-OfficeActivationStatus Command'
+title_meta: 'Get-OfficeActivationStatus'
 keywords: ['office', 'activation', 'license', 'status']
 description: 'Documentation for the Get-OfficeActivationStatus command to retrieve activation information for any licensed Office products on the endpoint.'
 tags: ['office365', 'software', 'windows']
@@ -21,4 +21,6 @@ This command uses the SoftwareLicensingProduct CIM class to gather activation de
 
 ## Output
 The output is saved to `.\Get-OfficeActivationStatus-log.txt`.
+
+
 

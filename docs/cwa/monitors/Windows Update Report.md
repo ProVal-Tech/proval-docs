@@ -1,7 +1,7 @@
 ---
 id: '4a1b21f7-1b25-4640-9405-8c07277c54f0'
-title: 'Windows Update Monitor for CWM Automate'
-title_meta: 'Windows Update Monitor for CWM Automate'
+title: 'Windows Update Report'
+title_meta: 'Windows Update Report'
 keywords: ['monitor', 'windows', 'update', 'report', 'ticket']
 description: 'This document outlines an optional monitor set designed to track machines where the Windows Update Report script has executed but failed to retrieve data. It includes SQL queries and dependencies necessary for effective monitoring and ticket creation if issues are detected.'
 tags: ['report', 'sql', 'windows']
@@ -92,4 +92,6 @@ WHERE
     'No', 
     'Yes') <> 'Yes'
 ```
+
+
 

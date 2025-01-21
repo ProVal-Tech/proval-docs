@@ -1,7 +1,7 @@
 ---
 id: '728ba6ee-7886-4a56-98c6-40ca55dceeba'
-title: 'Webroot Uninstallation Procedure'
-title_meta: 'Webroot Uninstallation Procedure for Kaseya VSA'
+title: 'Webroot - Uninstall'
+title_meta: 'Webroot - Uninstall'
 keywords: ['webroot', 'uninstall', 'endpoint', 'procedure', 'agent']
 description: 'This document outlines the steps required to uninstall the Webroot application from endpoints using Kaseya VSA. It includes implementation details, required dependencies, and expected output logs for both successful and failed uninstallation attempts.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -39,4 +39,6 @@ This document describes the process for uninstalling the Webroot application on 
 
 - **Failure**  
   ![Failure Log](../../../static/img/Webroot---Uninstall/image_4.png)  
+
+
 

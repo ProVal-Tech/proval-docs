@@ -1,7 +1,7 @@
 ---
 id: '2dd77709-9172-4cbe-94cc-b5f664f2f2ce'
-title: 'Unquoted Service Paths Detection and Fix'
-title_meta: 'Unquoted Service Paths Detection and Fix'
+title: 'Unquoted Service Paths Detection'
+title_meta: 'Unquoted Service Paths Detection'
 keywords: ['unquoted', 'service', 'paths', 'detection', 'fix']
 description: 'This document outlines a script designed to detect and fix unquoted service paths on a machine. It details the process of running a PowerShell script to properly quote service paths, ensuring system security and stability. The script is intended to be called by the ProVal monitor set for effective service management.'
 tags: ['security', 'setup', 'windows']
@@ -30,4 +30,6 @@ The script will fetch the new paths to be set for each unquoted service on the m
 ## Output
 
 Script log
+
+
 

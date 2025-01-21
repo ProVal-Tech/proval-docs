@@ -1,7 +1,7 @@
 ---
 id: 'bf20a303-f1b6-427a-a5cc-371de6104e98'
-title: 'Import Custom Backgrounds to Microsoft Teams'
-title_meta: 'Import Custom Backgrounds to Microsoft Teams'
+title: 'Microsoft - Teams - Import - Background'
+title_meta: 'Microsoft - Teams - Import - Background'
 keywords: ['microsoft', 'teams', 'backgrounds', 'zip', 'images']
 description: 'This document outlines the process for importing custom backgrounds into Microsoft Teams using a ZIP file containing supported image formats. It includes implementation steps, dependencies, and the overall process to ensure successful background uploads for active users.'
 tags: ['installation', 'software', 'windows']
@@ -55,4 +55,6 @@ Modify **background.zip** to the name of the ZIP file you selected in the previo
 ## Output
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
+
+
 

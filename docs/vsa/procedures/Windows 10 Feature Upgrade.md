@@ -1,7 +1,7 @@
 ---
 id: '5756f649-47ee-4bf0-b8ef-f65eeb4453fe'
-title: 'Windows 10 Feature Upgrade with Mandatory Reboot'
-title_meta: 'Windows 10 Feature Upgrade with Mandatory Reboot'
+title: 'Windows 10 Feature Upgrade'
+title_meta: 'Windows 10 Feature Upgrade'
 keywords: ['windows', 'upgrade', 'feature', 'reboot', 'patching']
 description: 'This document outlines the process of initiating a Windows 10 feature upgrade that requires a mandatory reboot. It includes a summary of the procedure, sample run logs, and detailed steps of the process involved in executing the upgrade and scheduling necessary tasks.'
 tags: ['patching', 'reboot', 'windows']
@@ -51,5 +51,7 @@ Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Sta
 AP Log  
 [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
 PSOutput Document
+
+
 
 

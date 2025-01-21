@@ -1,7 +1,7 @@
 ---
 id: 'ff2827dd-bd64-4437-8783-4b576e6cfb81'
-title: 'EPM - Data Collection - Chromium Extensions'
-title_meta: 'EPM - Data Collection - Chromium Extensions'
+title: 'Get Chromium Browsers Extensions'
+title_meta: 'Get Chromium Browsers Extensions'
 keywords: ['data', 'collection', 'chromium', 'extensions', 'json', 'sql', 'logging']
 description: 'This document outlines the implementation of the EPM - Data Collection script for gathering data on Chromium extensions. It details the process of creating necessary scripts, executing the agnostic script to collect data, and logging the results for analysis.'
 tags: ['database', 'setup', 'software']
@@ -36,4 +36,6 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Script Log
 - Custom Table
 - Dataview
+
+
 

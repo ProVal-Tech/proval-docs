@@ -1,7 +1,7 @@
 ---
 id: ps-update-powershell  
 title: 'Update-PowerShell'  
-title_meta: 'Update-PowerShell Command'  
+title_meta: 'Update-PowerShell'  
 keywords: ['update', 'powershell', 'installation', 'windows']  
 description: 'Documentation for the Update-PowerShell command to update PowerShell Desktop to the latest version.'  
 tags: ['installation', 'software', 'update', 'windows']  
@@ -31,4 +31,6 @@ Updates PowerShell Desktop to the latest version.
 .\Update-PowershellV2.ps1  
 ```  
 Updates PowerShell on the target machine to PowerShell V5.  
+
+
 

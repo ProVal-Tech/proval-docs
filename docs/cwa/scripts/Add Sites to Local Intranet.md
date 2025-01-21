@@ -1,7 +1,7 @@
 ---
 id: 'df72be26-16b1-452a-b4e7-67e1bf48a86b'
-title: 'Add Local Intranet Sites'
-title_meta: 'Add Local Intranet Sites'
+title: 'Add Sites to Local Intranet'
+title_meta: 'Add Sites to Local Intranet'
 keywords: ['intranet', 'windows', 'configuration', 'sites', 'local']
 description: 'This document provides a detailed overview of a script that adds specified sites to the local intranet zone on Windows computers. It includes sample runs, user parameters, and output details to help users understand how to utilize the script effectively.'
 tags: ['networking', 'setup', 'windows']
@@ -59,4 +59,6 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
+
+
 

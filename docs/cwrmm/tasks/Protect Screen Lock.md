@@ -1,7 +1,7 @@
 ---
 id: 'a2e5e9e8-7601-42a9-9941-88a5142ee69a'
 title: 'Protect Screen Lock'
-title_meta: 'Protect Screen Lock - Set Default Screensaver and Manage Lockscreen Timeout'
+title_meta: 'Protect Screen Lock'
 keywords: ['screensaver', 'timeout', 'domain', 'security', 'configuration']
 description: 'This document provides a comprehensive guide on using the Protect Screen Lock script to set a specified .scr file as the default screensaver for all users, manage lockscreen timeout settings, and handle domain exceptions using Strapper. It includes user parameters, task creation steps, and sample runs for effective implementation.'
 tags: ['domain', 'security']
@@ -190,4 +190,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

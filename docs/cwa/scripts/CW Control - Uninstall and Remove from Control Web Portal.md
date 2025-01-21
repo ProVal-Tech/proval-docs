@@ -1,7 +1,7 @@
 ---
 id: 'd69c20e1-e605-4cf9-bf35-bbe4c74f134f'
-title: 'Uninstall CW Control'
-title_meta: 'Uninstall CW Control Script'
+title: 'CW Control - Uninstall and Remove from Control Web Portal'
+title_meta: 'CW Control - Uninstall and Remove from Control Web Portal'
 keywords: ['uninstall', 'cw', 'control', 'rmm', 'script']
 description: 'This document details a script designed to uninstall CW Control and utilize the Offboarding - CW Control RMM+ API - EndSession Command to terminate the session from the CW Control web portal, saving approximately 10 minutes through automation.'
 tags: ['api', 'uninstallation']
@@ -36,4 +36,6 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 - Script log
 - Ticket if failure found
+
+
 

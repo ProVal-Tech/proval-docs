@@ -1,7 +1,7 @@
 ---
 id: 'a56e605b-a1d4-45ea-bebb-4411f3890f7e'
-title: 'Browser Saved Password Audit and Clearance'
-title_meta: 'Browser Saved Password Audit and Clearance'
+title: 'ClearAudit - Browser Saved Password'
+title_meta: 'ClearAudit - Browser Saved Password'
 keywords: ['browser', 'password', 'audit', 'clearance', 'windows']
 description: 'This document outlines the steps to perform a Browser Saved Password Audit or Clearance using a custom PowerShell script. It includes sample runs, implementation details, and deployment instructions to ensure secure management of saved passwords across different web browsers.'
 tags: ['security', 'software', 'windows']
@@ -362,4 +362,6 @@ This screen will appear.
 
 - Script log
 - Custom field
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '47542900-8cc8-4f35-81e8-cce4169d50f4'
-title: 'Network Probe Credential Verification'
-title_meta: 'Network Probe Credential Verification'
+title: 'Network Probe - Deployment Passwords - Verify'
+title_meta: 'Network Probe - Deployment Passwords - Verify'
 keywords: ['credential', 'network', 'probe', 'verification', 'agent', 'deployment', 'authentication']
 description: 'This document describes a script that verifies the accuracy of credentials provided to a Network Probe for agent installation. It tests each credential and logs the results, making it useful for troubleshooting agent installation issues.'
 tags: ['sql']
@@ -74,4 +74,6 @@ This script can be helpful while troubleshooting agent installation issues from 
 **Sample:**
 
 ![Image](../../../static/img/Network-Probe---Deployment-Passwords---Verify/image_3.png)
+
+
 

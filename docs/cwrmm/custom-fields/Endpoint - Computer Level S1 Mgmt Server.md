@@ -1,7 +1,7 @@
 ---
 id: 'cd0a8207-62e5-41ea-9df9-f9d475ee8866'
-title: 'Computer Level SentinelOne Management Server'
-title_meta: 'Computer Level SentinelOne Management Server'
+title: 'Endpoint - Computer Level S1 Mgmt Server'
+title_meta: 'Endpoint - Computer Level S1 Mgmt Server'
 keywords: ['sentinelone', 'management', 'server', 'computer', 'endpoint']
 description: 'This document provides an overview of the Computer Level SentinelOne Management Server, detailing its dependencies, editable fields, and includes screenshots for better understanding. It is updated by the SentinelOne Management Console Validation task, ensuring accuracy and relevance.'
 tags: ['security']
@@ -27,4 +27,6 @@ Computer Level SentinelOne Management Server. Updated by the [SentinelOne Manage
 
 ![Screenshot 1](../../../static/img/Endpoint---Computer-Level-S1-Mgmt-Server/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Computer-Level-S1-Mgmt-Server/image_2.png)
+
+
 

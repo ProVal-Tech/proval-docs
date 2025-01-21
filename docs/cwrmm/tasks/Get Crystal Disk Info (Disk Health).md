@@ -1,7 +1,7 @@
 ---
 id: '37220488-64d2-4de9-8e65-1cd53f5dee3b'
 title: 'Get Crystal Disk Info (Disk Health)'
-title_meta: 'Get Crystal Disk Info (Disk Health) - Monitoring Disk Health with CW RMM'
+title_meta: 'Get Crystal Disk Info (Disk Health)'
 keywords: ['disk', 'health', 'monitoring', 'custom', 'field', 'crystal', 'info', 'windows']
 description: 'This document describes a script that runs the Crystal Disk Info tool on end machines to fetch and monitor disk health statuses, storing the results in a custom field within ConnectWise RMM for further auditing purposes.'
 tags: ['data-collection', 'disk', 'windows']
@@ -236,5 +236,7 @@ This pop-up box will appear.
 ![Script Log Output](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_39.png)  
 - Custom Field  
 ![Custom Field Output](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_40.png)  
+
+
 
 

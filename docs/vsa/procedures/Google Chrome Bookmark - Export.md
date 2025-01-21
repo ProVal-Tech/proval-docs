@@ -1,7 +1,7 @@
 ---
 id: '57e946ce-9686-4212-879c-3a3cfbdd76df'
-title: 'Google Chrome Bookmark Export Procedure'
-title_meta: 'Google Chrome Bookmark Export Procedure'
+title: 'Google Chrome Bookmark - Export'
+title_meta: 'Google Chrome Bookmark - Export'
 keywords: ['chrome', 'bookmark', 'export', 'onedrive', 'documents']
 description: 'This procedure retrieves the currently logged-in user’s Google Chrome bookmark file from their APPDATA folder and exports it to OneDrive if available, or to the local documents folder if OneDrive is not accessible. Detailed logs of the execution process are provided for tracking purposes.'
 tags: ['backup', 'chrome', 'onedrive']
@@ -67,4 +67,6 @@ Otherwise, the script will fall back to the local Documents folder.
 ## Output
 
 Procedure log files and other outputs.
+
+
 

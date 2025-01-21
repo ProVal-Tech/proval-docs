@@ -1,7 +1,7 @@
 ---
 id: '14948a27-bf40-4dd0-9e8c-73dc06c0b972'
-title: 'Dataview for Retired Computers in Automate'
-title_meta: 'Dataview for Retired Computers in Automate'
+title: 'Agent - Retired Computers Re-checking in with Automate'
+title_meta: 'Agent - Retired Computers Re-checking in with Automate'
 keywords: ['dataview', 'retired', 'computers', 'automate', 'information']
 description: 'This document provides an overview of the Dataview feature that displays information about computers that were previously retired but are still checking in with ConnectWise Automate. It outlines the various columns of information available, such as current and previous client names, locations, operating systems, and more.'
 tags: []
@@ -30,4 +30,6 @@ Dataview displays information about computers that were previously retired and a
 | Serial Number            | Serial Number of Computer             |
 | Last User Name           | Last logged-in user name              |
 | Retire Comments          | Comments added while retiring          |
+
+
 

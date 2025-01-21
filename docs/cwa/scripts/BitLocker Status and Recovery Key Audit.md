@@ -1,7 +1,7 @@
 ---
 id: '58ddde1a-dfdd-4eb8-9024-608e7c57ad4f'
-title: 'Audit BitLocker Endpoint'
-title_meta: 'Audit BitLocker Endpoint'
+title: 'BitLocker Status and Recovery Key Audit'
+title_meta: 'BitLocker Status and Recovery Key Audit'
 keywords: ['bitlocker', 'encryption', 'endpoint', 'audit', 'recovery']
 description: 'This document details a script that audits endpoints for BitLocker status, checking if drives are BitLocker-enabled, ensuring encryption is complete, and retrieving any available recovery keys. It provides a comprehensive overview of the script’s functionality, dependencies, and expected output.'
 tags: ['encryption', 'recovery', 'security', 'windows']
@@ -43,4 +43,6 @@ Sample Output:
 - BitLocker Encryption in Progress on Drive X:
 - BitLocker enabled on Drive X, No recovery key available
 - Drive X: recovery key: dm9ij30d-k4i30jf0-moqiw4oid-oijqwoeij-0qiwjeoqiwj
+
+
 

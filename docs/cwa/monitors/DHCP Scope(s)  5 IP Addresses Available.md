@@ -1,7 +1,7 @@
 ---
 id: '90ad5d20-a081-4027-b8e2-238cbdbe64d3'
-title: 'DHCP Scope(s) with Insufficient IP Addresses Monitor'
-title_meta: 'DHCP Scope(s) with Insufficient IP Addresses Monitor'
+title: 'DHCP Scope(s)  5 IP Addresses Available'
+title_meta: 'DHCP Scope(s)  5 IP Addresses Available'
 keywords: ['dhcp', 'monitor', 'ip', 'addresses', 'network', 'alert', 'server']
 description: 'This document outlines a remote monitor designed to retrieve information about DHCP server scopes and their corresponding IP address statistics. It filters out inactive scopes, focusing on active ones, and checks for those with 5 or fewer available IP addresses, alerting administrators to potential network connectivity issues.'
 tags: ['networking', 'ticketing', 'windows']
@@ -93,4 +93,6 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 5 IP Addresses Available](<./DHCP Scope(s)  5 IP Addresses Available.md>).
+
+
 

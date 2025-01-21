@@ -1,7 +1,7 @@
 ---
 id: 'd1d1297e-d50a-47bb-90af-5c70dd32c1d9'
-title: 'Unregister Chrome Extension'
-title_meta: 'Unregister Chrome Extension'
+title: 'Chrome - Remove Extension'
+title_meta: 'Chrome - Remove Extension'
 keywords: ['chrome', 'extension', 'unregister', 'management', 'registry']
 description: 'This document outlines a script used to remove the enforcement of the installation of specified extensions in Google Chrome, detailing its usage, dependencies, and parameters for effective management of Chrome extensions.'
 tags: ['chrome', 'uninstallation', 'windows']
@@ -65,4 +65,6 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
+
+
 

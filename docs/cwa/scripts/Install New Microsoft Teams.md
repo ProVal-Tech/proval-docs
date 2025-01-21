@@ -1,7 +1,7 @@
 ---
 id: '4def3c77-d37b-456a-b3c7-cec341a797b5'
-title: 'Install New Microsoft Teams on Windows and Mac'
-title_meta: 'Install New Microsoft Teams on Windows and Mac'
+title: 'Install New Microsoft Teams'
+title_meta: 'Install New Microsoft Teams'
 keywords: ['teams', 'installation', 'windows', 'mac', 'uninstallation', 'software']
 description: 'This document provides a script that installs the New Microsoft Teams on both Windows and Mac computers. It includes steps for uninstalling the existing classic version on Windows and requires users to log in again to complete the installation process.'
 tags: ['installation', 'software', 'uninstallation', 'windows']
@@ -20,6 +20,8 @@ This document provides a script for installing the New Microsoft Teams on both W
 ## Output
 
 - Script Log
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 id: '34d2f7ec-4b5d-43d3-b109-4af2bb24d6be'
-title: 'Remote Monitor for Anydesk Removal on Windows'
-title_meta: 'Remote Monitor for Anydesk Removal on Windows'
+title: 'Uninstall Anydesk'
+title_meta: 'Uninstall Anydesk'
 keywords: ['remote', 'monitor', 'anydesk', 'removal', 'windows']
 description: 'This document outlines the setup for a remote monitor designed to uninstall Anydesk from Windows machines. It includes details on suggested configurations, alert styles, and ticketing information for effective monitoring and issue resolution.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
@@ -38,4 +38,6 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall Anydesk](<./Uninstall Anydesk.md>)
+
+
 

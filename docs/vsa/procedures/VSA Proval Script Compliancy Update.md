@@ -1,7 +1,7 @@
 ---
 id: 'a62d8c2e-ca6e-4f12-98d3-4f26783cb701'
-title: 'ProVal Script Compatibility Check'
-title_meta: 'ProVal Script Compatibility Check'
+title: 'VSA Proval Script Compliancy Update'
+title_meta: 'VSA Proval Script Compliancy Update'
 keywords: ['compatibility', 'proval', 'os', 'windows', 'mac']
 description: 'This document outlines the compatibility requirements for ProVal content on Mac and PC, detailing the necessary OS versions and PowerShell requirements for successful execution. It includes example logs from agent procedures, dependencies, and the processing steps involved in determining compatibility.'
 tags: ['performance', 'software', 'update', 'windows']
@@ -74,4 +74,6 @@ All content listed in [EPM - Data Collection - Solution - VSA ProVal Script Comp
 - Agent Procedure Log
 - PSResult
 - CMDResults
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'c9c8a58e-fd25-4596-822c-b6847c782e9c'
-title: 'Setting Up Remote Monitors for Location Ping'
-title_meta: 'Setting Up Remote Monitors for Location Ping'
+title: 'Location Ping Monitors - Create'
+title_meta: 'Location Ping Monitors - Create'
 keywords: ['remote', 'monitors', 'location', 'ping', 'setup', 'alert']
 description: 'This document provides a comprehensive guide on setting up Remote Monitors for Location Ping Monitors, detailing the necessary procedures, system properties, and Extra Data Fields (EDFs) required to effectively monitor location connectivity and trigger alerts when a location becomes unreachable.'
 tags: ['networking', 'setup']
@@ -94,4 +94,6 @@ This document details the procedure for setting up Remote Monitors for Location 
 ## Output
 
 - Remote Monitors
+
+
 

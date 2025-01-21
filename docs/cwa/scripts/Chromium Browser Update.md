@@ -1,7 +1,7 @@
 ---
 id: 'a17a9537-62ae-43f8-8212-dbac0a328ca0'
-title: 'Update Chromium Based Browsers'
-title_meta: 'Update Chromium Based Browsers - Script for Automating Updates'
+title: 'Chromium Browser Update'
+title_meta: 'Chromium Browser Update'
 keywords: ['chromium', 'update', 'browser', 'ticketing', 'automation']
 description: 'This document provides a script designed to automate the update process for Chromium-based browsers including Google Chrome, Microsoft Edge, Brave, and Opera. The script can optionally create tickets for failures, enhancing maintenance workflows.'
 tags: ['software', 'ticketing', 'update', 'windows']
@@ -47,4 +47,6 @@ Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium 
 
 - Script log
 - Optional ticketing
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-install-font
 title: 'Install-Font'
-title_meta: 'Install-Font Command'
+title_meta: 'Install-Font'
 keywords: ['install', 'font', 'typography', 'setup']
 description: 'Documentation for the Install-Font command to install one or more fonts on a Windows system.'
 tags: ['installation', 'windows']
@@ -40,4 +40,6 @@ PowerShell v5
 ## Output
 - `.\Install-Font-log.txt`
 - `.\Install-Font-error.txt`
+
+
 

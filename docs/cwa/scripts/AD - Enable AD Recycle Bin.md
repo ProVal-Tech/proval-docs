@@ -1,7 +1,7 @@
 ---
 id: 'e80d5873-304e-4b12-b52c-b608a7715a9f'
-title: 'Enable AD Recycle Bin Script'
-title_meta: 'Enable AD Recycle Bin Script'
+title: 'AD - Enable AD Recycle Bin'
+title_meta: 'AD - Enable AD Recycle Bin'
 keywords: ['active-directory', 'recycle-bin', 'windows', 'script', 'logging']
 description: 'This document provides a script to enable the Active Directory Recycle Bin, detailing the prerequisites, process, sample output, and ticketing information in case of failure. The script ensures that the Windows OS and domain modes meet the necessary requirements before enabling the feature and outlines the logging and notification procedures.'
 tags: ['active-directory', 'security', 'setup', 'windows']
@@ -67,4 +67,6 @@ The PC information is outlined below:
 ### Outdated
 
 `The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. The minimum version required is above 3.0, and the current version is @PSVersion@.`  
+
+
 

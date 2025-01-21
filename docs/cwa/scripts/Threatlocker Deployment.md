@@ -1,7 +1,7 @@
 ---
 id: '0298665b-0c3d-41de-83ee-bbf3b9d5cd8e'
-title: 'Install ThreatLocker Application'
-title_meta: 'Install ThreatLocker Application for Windows and Mac'
+title: 'Threatlocker Deployment'
+title_meta: 'Threatlocker Deployment'
 keywords: ['threatlocker', 'installation', 'windows', 'mac', 'groupkey']
 description: 'This document provides a comprehensive guide on installing the ThreatLocker application on both Windows and Mac operating systems, including necessary group key information and global parameters required for the installation.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -37,4 +37,6 @@ Then run the script:
 ## Output
 
 - Script log
+
+
 

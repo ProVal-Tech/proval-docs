@@ -1,7 +1,7 @@
 ---
 id: '142bb69a-42f3-469a-ac3f-a8b9007c73f0'
-title: 'Locate PHP.exe Information Display'
-title_meta: 'Locate PHP.exe Information Display'
+title: 'PHP.exe File Location'
+title_meta: 'PHP.exe File Location'
 keywords: ['php', 'file', 'audit', 'data', 'collection', 'monitor']
 description: 'This document provides an overview of the information displayed for the PHP.exe file, fetched by the Locate PHP.exe script. It outlines the dependencies, columns, and details relevant to PHP file auditing within the ConnectWise Automate environment.'
 tags: ['windows']
@@ -40,4 +40,6 @@ Displays the information of the PHP.exe file fetched by the [Locate PHP.exe](<..
 | Last Write Time        | File Modification Time                                                                            |
 | Attributes             | File's Attributes                                                                                 |
 | Script Run Time        | Data Collection Time                                                                              |
+
+
 

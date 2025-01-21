@@ -1,7 +1,7 @@
 ---
 id: '68e362d9-521f-417b-93e3-81adc169b559'
-title: 'Microsoft 365 Update Registry Script'
-title_meta: 'Microsoft 365 Update Registry Script'
+title: 'Microsoft 365 - Set Update Channel - Current'
+title_meta: 'Microsoft 365 - Set Update Channel - Current'
 keywords: ['microsoft', '365', 'update', 'registry', 'channel']
 description: 'This document outlines a script that modifies the registry to enable regular updates for Microsoft 365 products according to the current channel updates. It also executes a follow-up script to update version information in the relevant audit data view.'
 tags: ['office365', 'software', 'update']
@@ -28,4 +28,6 @@ It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](htt
 ## Output
 
 - Script log
+
+
 

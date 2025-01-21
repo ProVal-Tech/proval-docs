@@ -1,7 +1,7 @@
 ---
 id: 'b78c363d-7a4b-4d10-b4ab-38b348dd81f5'
-title: 'Lockdown Browsers Password Manager Implementation'
-title_meta: 'Lockdown Browsers Password Manager Implementation'
+title: 'Lockdown Chromium Browsers Credit Cards and Addresses Autofill'
+title_meta: 'Lockdown Chromium Browsers Credit Cards and Addresses Autofill'
 keywords: ['lockdown', 'browsers', 'password', 'manager', 'implementation']
 description: 'This document provides a detailed guide on implementing the Lockdown Browsers Password Manager using SQL queries and creating necessary groups and monitors in the ConnectWise Automate environment. Follow the steps to ensure proper setup and configuration.'
 tags: ['database', 'security', 'setup']
@@ -173,4 +173,6 @@ Refresh Searches and Groups.
 Confirm the presence of the `ProVal - Production - Lockdown Chromium Browsers Credit Cards and Addresses Autofill` remote monitor on the `△ Lockdown Browsers Password Manager` group.
 
 ![Image](../../../static/img/Lockdown-Chromium-Browsers-Credit-Cards-and-Addresses-Autofill/image_3.png)
+
+
 

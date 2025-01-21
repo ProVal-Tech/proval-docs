@@ -1,7 +1,7 @@
 ---
 id: 'defbdc2a-bd40-4baf-9c03-4768e026e0eb'
 title: 'Cumulative Update Audit'
-title_meta: 'Cumulative Update Audit for Windows OS'
+title_meta: 'Cumulative Update Audit'
 keywords: ['cumulative', 'update', 'audit', 'windows', 'os', 'validation']
 description: 'This document outlines the process of executing a script to validate the full version of the Windows OS and compare it with Microsoft’s database of Cumulative Updates. It details the implementation steps, dependencies, and how to set up a task in ConnectWise RMM to automate the audit process for monitoring purposes.'
 tags: ['update', 'windows']
@@ -260,4 +260,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Custom Field**
 ![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
+
+
 

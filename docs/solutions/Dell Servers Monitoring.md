@@ -1,7 +1,7 @@
 ---
 id: '55ebada8-b333-4109-a97f-4f352a947662'
-title: 'Proactive Monitoring of Dell Servers using Dell OMSA'
-title_meta: 'Proactive Monitoring of Dell Servers using Dell OMSA'
+title: 'Dell Servers Monitoring'
+title_meta: 'Dell Servers Monitoring'
 keywords: ['dell', 'servers', 'monitoring', 'omsa', 'alert', 'ticket', 'event', 'cache']
 description: 'This document outlines the steps to proactively monitor Dell Servers using Dell OpenManage System Management Software (OMSA). It includes details on associated content for monitoring, alert templates, and implementation instructions for setting up the necessary monitors to ensure optimal performance and issue detection.'
 tags: ['dell', 'performance']
@@ -40,4 +40,6 @@ The purpose of this solution is to proactively monitor issues with Dell Servers 
        - **IMPORTANT:** View the results of the monitor before enabling. If there are more than 20 results, confirm with the consultant if they would like it enabled.
          - Configure with the alert template: `△ Custom - Ticket Creation - Computer`.
          - Right-click and Run Now to start the monitor.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '9292f135-cca4-4eba-97ff-cd4276ab62e9'
-title: 'Scripting Engine Hung Monitor'
-title_meta: 'Scripting Engine Hung Monitor'
+title: 'Scripting Engine Hung'
+title_meta: 'Scripting Engine Hung'
 keywords: ['monitor', 'email', 'alert', 'mysql', 'troubleshooting', 'scripts']
 description: 'This document outlines a monitor that sends an email alert for the scripting engine hung state in a client environment. It detects scripts stuck in the pending scripts table for too long and notifies the designated email for proactive review.'
 tags: ['email', 'mysql']
@@ -46,4 +46,6 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 Please follow the article below to perform troubleshooting if this issue arises.  
 [Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)
+
+
 

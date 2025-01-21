@@ -1,7 +1,7 @@
 ---
 id: 'dd8dbfbe-f8eb-4909-9cbf-8662cafb4fd4'
-title: 'Adobe CC Update Script'
-title_meta: 'Adobe CC Update Script'
+title: 'Adobe Creative Cloud - Update'
+title_meta: 'Adobe Creative Cloud - Update'
 keywords: ['adobe', 'update', 'script', 'apps', 'automation']
 description: 'This document details a script that can either list available updates or execute updates for Adobe Creative Cloud applications on the specified machine, saving significant time through automation.'
 tags: ['adobe', 'software', 'update']
@@ -43,4 +43,6 @@ This section should list the ITGlue documents found in the Related Items sidebar
 
 - Script log
 - Local log files
+
+
 

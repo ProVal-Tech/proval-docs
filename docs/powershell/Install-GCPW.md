@@ -1,7 +1,7 @@
 ---
 id: ps-install-gcpw
 title: 'Install-GCPW'
-title_meta: 'Install-GCPW Command'
+title_meta: 'Install-GCPW'
 keywords: ['install', 'gcpw', 'google', 'credential', 'provider']
 description: 'Documentation for the Install-GCPW command to automate the installation and configuration of Google Credential Provider for Windows (GCPW).'
 tags: ['installation', 'software', 'windows']
@@ -44,4 +44,6 @@ Installs Google Chrome (if missing), GCPW (if missing), and configures it for th
 ## Output
 - `.\Install-GCPW-log.txt`
 - `.\Install-GCPW-error.txt`
+
+
 

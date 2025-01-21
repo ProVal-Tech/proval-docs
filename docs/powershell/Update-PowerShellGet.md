@@ -1,7 +1,7 @@
 ---
 id: ps-update-powershellget
 title: 'Update-PowerShellGet'
-title_meta: 'Update-PowerShellGet Command'
+title_meta: 'Update-PowerShellGet'
 keywords: ['update', 'powershellget', 'installation', 'nuget']
 description: 'Documentation for the Update-PowerShellGet command to install or update PowerShellGet to the latest version available in the PowerShell Gallery.'
 tags: ['installation', 'software', 'update']
@@ -24,4 +24,6 @@ Installs or updates PowerShellGet to the latest version available in the PowerSh
 ```powershell
 .\Update-PowerShellGet.ps1
 ```
+
+
 

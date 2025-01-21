@@ -1,7 +1,7 @@
 ---
 id: 'd8ec2315-c425-41f0-a4a9-3f8aa3e61fc4'
-title: 'Remote Monitor for OS Build Changes'
-title_meta: 'Remote Monitor for OS Build Changes'
+title: 'CWM - Automate - Remote Monitor - Monitor OS Build'
+title_meta: 'CWM - Automate - Remote Monitor - Monitor OS Build'
 keywords: ['monitor', 'os', 'build', 'update', 'windows']
 description: 'This document outlines a remote monitor designed to detect changes in the operating system build number of Windows machines. Upon detecting a change, it triggers a script to update the latest installed cumulative update information in the relevant database table. It includes suggestions for configuration and alert styles.'
 tags: ['database', 'update', 'windows']
@@ -32,4 +32,6 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Monitor OS Build](<./Monitor OS Build.md>)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'ddad0c3b-65e2-436a-bdba-54f696ac5bbb'
-title: 'Override Monitor Alert Action'
-title_meta: 'Override Monitor Alert Action - Custom Alert Configuration'
+title: 'Monitor Override - Change'
+title_meta: 'Monitor Override - Change'
 keywords: ['monitor', 'alert', 'override', 'configuration', 'sql']
 description: 'This document provides a detailed overview of a script designed to override the monitor settings applied by a group, allowing for custom alert actions on agents. It includes user parameters, a sample run, and a step-by-step process for executing the script.'
 tags: ['sql', 'windows']
@@ -30,4 +30,6 @@ This script helps to override the monitor settings applied by a group, allowing 
 
 - Takes input of the Monitor Name and the Alert Template from the user.
 - Executes SQL queries to set the override and the alert template.
+
+
 

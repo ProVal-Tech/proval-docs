@@ -1,7 +1,7 @@
 ---
 id: '631186de-253a-4bd7-8197-958cb1ed7b68'
-title: 'Change Printer IP Address'
-title_meta: 'Change Printer IP Address'
+title: 'Printer Change IP'
+title_meta: 'Printer Change IP'
 keywords: ['printer', 'ip', 'change', 'networking']
 description: 'This document outlines a script that changes the IP address of a printer from an old IP address to a new one, detailing the process, variables, and user parameters involved in the operation.'
 tags: ['networking']
@@ -41,4 +41,6 @@ This document describes how to change the printer's IP address from `@OldIP@` to
 ## Output
 
 - Script log
+
+
 

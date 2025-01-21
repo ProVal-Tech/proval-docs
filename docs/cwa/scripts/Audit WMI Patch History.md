@@ -1,7 +1,7 @@
 ---
 id: '113349eb-9de0-4b42-b773-cf873f87f2f0'
-title: 'Audit .NET Patch History'
-title_meta: 'Audit .NET Patch History'
+title: 'Audit WMI Patch History'
+title_meta: 'Audit WMI Patch History'
 keywords: ['audit', 'dotnet', 'patch', 'history', 'windows']
 description: 'This script audits the current patch history from .NET to a custom table (plugin_proval_wmipatchesinstalled). It is designed for use on Windows OS machines and requires PowerShell v2 or greater on the agent. The process includes creating the necessary table if it does not exist, deleting existing data for the target machine, gathering patch information, and inserting new data into the table.'
 tags: ['database', 'update', 'windows']
@@ -32,4 +32,6 @@ This script audits the current patch history from .NET to a custom table (plugin
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
+
+
 

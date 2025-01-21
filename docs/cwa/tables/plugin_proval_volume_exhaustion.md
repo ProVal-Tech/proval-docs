@@ -1,7 +1,7 @@
 ---
 id: '9eee7f2a-78f1-4243-b681-6b36b56c1c9f'
-title: 'Volume Exhaustion Information Storage'
-title_meta: 'Volume Exhaustion Information Storage for Monitoring'
+title: 'plugin_proval_volume_exhaustion'
+title_meta: 'plugin_proval_volume_exhaustion'
 keywords: ['volume', 'storage', 'monitoring', 'database', 'exhaustion', 'space']
 description: 'This document outlines the structure and purpose of the volume exhaustion information storage, detailing the necessary SQL table and its dependencies for effective monitoring of disk space on target computers.'
 tags: ['database', 'performance', 'setup', 'windows']
@@ -47,4 +47,6 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
+
+
 

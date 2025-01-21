@@ -1,7 +1,7 @@
 ---
 id: '0805aaf6-831e-403d-ad41-03fa7573f86b'
-title: 'SentinelOne Management Server Discrepancy Detection'
-title_meta: 'SentinelOne Management Server Discrepancy Detection'
+title: 'SentinelOne Management Server Discrepancy'
+title_meta: 'SentinelOne Management Server Discrepancy'
 keywords: ['sentinelone', 'management', 'discrepancy', 'cw', 'rmm']
 description: 'This document outlines a solution to identify computers where the installed SentinelOne Management server differs from the configuration set for the Client in ConnectWise RMM. It provides details on associated custom fields, dynamic groups, and implementation steps necessary to validate and manage SentinelOne installations effectively.'
 tags: ['security', 'windows']
@@ -39,4 +39,6 @@ The solution aims to find the computers where the installed SentinelOne Manageme
 
 3. Create and schedule this task:  
    - [SentinelOne Management Console Validation](<../cwrmm/tasks/SentinelOne Management Console Validation.md>)  
+
+
 

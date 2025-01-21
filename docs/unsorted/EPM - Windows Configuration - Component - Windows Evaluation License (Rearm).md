@@ -1,7 +1,7 @@
 ---
 id: '214a790c-6c28-4135-9ada-8a2971c140c4'
-title: 'Windows Evaluation License (Rearm)'
-title_meta: 'Windows Evaluation License (Rearm)'
+title: 'EPM - Windows Configuration - Component - Windows Evaluation License (Rearm)'
+title_meta: 'EPM - Windows Configuration - Component - Windows Evaluation License (Rearm)'
 keywords: ['windows', 'license', 'rearm', 'evaluation', 'component']
 description: 'This document outlines the process for checking if a machine is running an evaluation copy of Windows, verifying available re-arms, and executing a rearm if necessary. It includes implementation steps for exporting and importing the component in Datto RMM, usage instructions, and expected output.'
 tags: ['setup', 'software', 'windows']
@@ -45,4 +45,6 @@ A job status of Success is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '2e37903f-6fe2-4764-8cc9-d8e27e596ed9'
-title: 'Automate Database Maintenance Cleanup'
-title_meta: 'Automate Database Maintenance Cleanup'
+title: 'Automate Database Maintenance - Drives'
+title_meta: 'Automate Database Maintenance - Drives'
 keywords: ['cleanup', 'database', 'maintenance', 'automate', 'script']
 description: 'This document details a script used for cleaning up database tables within the Automate system. It outlines the required global variable settings, expected outputs, and logging mechanisms involved in the database maintenance process.'
 tags: ['cleanup', 'database']
@@ -32,4 +32,6 @@ This script is a function script called from **[CWM - Automate - Solution - Auto
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Drives/image_1.png)
+
+
 

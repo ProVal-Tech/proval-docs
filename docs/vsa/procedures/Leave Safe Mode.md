@@ -1,7 +1,7 @@
 ---
 id: 'c4d65870-8eb5-4320-8bbd-ceeb423cb2e3'
-title: 'Reboot Endpoint from Safe Mode'
-title_meta: 'Reboot Endpoint from Safe Mode'
+title: 'Leave Safe Mode'
+title_meta: 'Leave Safe Mode'
 keywords: ['reboot', 'endpoint', 'safe', 'mode', 'normal']
 description: 'This document describes a procedure for rebooting an endpoint from safe mode into normal mode, including example logs and process details.'
 tags: ['performance', 'recovery', 'setup', 'windows']
@@ -25,4 +25,6 @@ This document outlines the procedure for rebooting an endpoint from safe mode in
 ## Process
 
 This section describes the steps to reboot an endpoint from safe mode into normal mode.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '46e361b5-3657-4e5b-800a-858f331b3b8b'
-title: 'Java Uninstallation Script'
-title_meta: 'Java Uninstallation Script for Efficient Removal of Java Versions'
+title: 'Java - Uninstall JDK and JRE'
+title_meta: 'Java - Uninstall JDK and JRE'
 keywords: ['java', 'uninstall', 'script', 'windows', 'software']
 description: 'This document details a script designed to check and uninstall all installed versions of Java from a target machine. It automates the process by creating and executing a RemoveJAVA.cmd file, streamlining software management and saving time in system maintenance.'
 tags: ['software', 'uninstallation', 'windows']
@@ -40,4 +40,6 @@ This script checks and uninstalls all installed versions of Java from the target
 ## Output
 
 - Script log
+
+
 

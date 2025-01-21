@@ -1,7 +1,7 @@
 ---
 id: '4a4d8ffa-760b-4e17-a377-df522ff0ba34'
-title: 'Script Failure Analysis - 30 Day Retention'
-title_meta: 'Script Failure Analysis - 30 Day Retention'
+title: 'Script Failure Assessment - Last 30 Days'
+title_meta: 'Script Failure Assessment - Last 30 Days'
 keywords: ['script', 'failure', 'analysis', 'retention', 'dataview']
 description: 'This document provides a detailed analysis of script failures over the past 30 days, addressing limitations in the retention period of script data. It outlines dependencies, columns, and metrics to assess script performance effectively.'
 tags: ['performance', 'report']
@@ -41,4 +41,6 @@ This Dataview is similar to the [Script Failure Assessment](<./Script Failure As
 | First Failure Date           | Date of the first failure                                                                            |
 | Last Failure Date            | Date of the last failure                                                                             |
 | Time Period Days             | Number of days since the data collection started                                                   |
+
+
 

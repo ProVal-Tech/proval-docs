@@ -1,7 +1,7 @@
 ---
 id: '68a9870d-25d1-4a65-a917-e48bd941a782'
-title: 'Reset Local User Password Age Monitor'
-title_meta: 'Reset Local User Password Age Monitor'
+title: 'Reset Local User Password Age'
+title_meta: 'Reset Local User Password Age'
 keywords: ['monitor', 'password', 'age', 'local', 'user', 'expire', 'windows', 'policy']
 description: 'This document outlines a remote monitor designed to check the login password age of local users on Windows machines. If the password age is set to unlimited, the monitor will change it to expire and adjust the default user policy password age to 90 days. It provides output on users whose password age is set to Never Expire and details any failures in changing the password age.'
 tags: ['security', 'update', 'windows']
@@ -40,4 +40,6 @@ Windows Machines
 ## How to Import
 
 [Import - Remote Monitor - Reset Local User Password Age](<./Import - Remote Monitor - Reset Local User Password Age.md>)
+
+
 

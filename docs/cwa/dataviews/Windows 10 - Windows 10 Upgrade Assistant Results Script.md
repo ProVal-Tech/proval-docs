@@ -1,7 +1,7 @@
 ---
 id: '7d204393-b187-49fe-ba22-17a2e0eb8e3c'
-title: 'Windows 10 Upgrade Data Overview'
-title_meta: 'Windows 10 Upgrade Data Overview'
+title: 'Windows 10 - Windows 10 Upgrade Assistant Results Script'
+title_meta: 'Windows 10 - Windows 10 Upgrade Assistant Results Script'
 keywords: ['upgrade', 'windows', 'data', 'script', 'client', 'location', 'computer', 'version', 'status', 'date']
 description: 'This document provides an overview of the data structure used for tracking the Windows 10 Upgrade process, including details on client, location, computer, versioning, and the status of each upgrade attempt.'
 tags: ['windows']
@@ -25,4 +25,6 @@ unlisted: false
 ## Dependencies
 
 This data is populated by the Windows 10 Upgrade Assistant script as well as a secondary Windows 10 Upgrade Assistant Follow-Up script. Without these scripts, this data view will not be able to effectively display the data.
+
+
 

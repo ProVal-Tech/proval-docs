@@ -1,7 +1,7 @@
 ---
 id: 'd4cc7412-0bcc-4d9a-933c-da29275f6add'
-title: 'Restore Points Automation Script'
-title_meta: 'Restore Points Automation Script for Efficient System Recovery'
+title: 'Windows Restore Point Automation'
+title_meta: 'Windows Restore Point Automation'
 keywords: ['restore', 'points', 'automation', 'system', 'recovery']
 description: 'This document describes a script designed to collect available restore points on systems without the Target Restore Point EDF set and to restore systems when the EDF is configured. It details the process, dependencies, and output of the script, emphasizing the time saved through automation.'
 tags: ['backup', 'database', 'recovery', 'software', 'windows']
@@ -36,4 +36,6 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 ## Output
 
 - Script log
+
+
 

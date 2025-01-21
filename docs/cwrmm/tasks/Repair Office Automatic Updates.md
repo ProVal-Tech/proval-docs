@@ -1,7 +1,7 @@
 ---
 id: '6abb79b5-4638-4d53-b960-f11972f0f96d'
 title: 'Repair Office Automatic Updates'
-title_meta: 'Repair Office Automatic Updates - Automating Resolution of Update Failures'
+title_meta: 'Repair Office Automatic Updates'
 keywords: ['office', 'updates', 'repair', 'automatic', 'script', 'task']
 description: 'This document outlines the process of checking and automatically resolving common failure points in Office automatic updates using a script designed for ConnectWise RMM. It includes detailed steps for task creation, script implementation, and logging results.'
 tags: ['application', 'connectwise', 'office']
@@ -140,4 +140,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 

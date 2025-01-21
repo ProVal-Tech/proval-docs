@@ -1,7 +1,7 @@
 ---
 id: ps-get-cwabackup  
 title: 'Get-CWABackup'  
-title_meta: 'Get-CWABackup Command'  
+title_meta: 'Get-CWABackup'  
 keywords: ['labtech', 'backup', 'files', 'retrieve']  
 description: 'Documentation for the Get-CWABackup command to return all Labtech*.zip files from any Labtech backup location.'  
 tags: ['backup', 'recovery', 'software']  
@@ -24,4 +24,6 @@ Returns all Labtech backup files.
 
 ## Output  
 System.Object  
+
+
 

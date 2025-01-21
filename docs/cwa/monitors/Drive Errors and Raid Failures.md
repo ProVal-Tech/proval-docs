@@ -1,7 +1,7 @@
 ---
 id: 'cef450c6-b649-4bd3-bcde-ed521d38d77f'
-title: 'Drive Errors Monitor'
-title_meta: 'Drive Errors Monitor for Windows Machines'
+title: 'Drive Errors and Raid Failures'
+title_meta: 'Drive Errors and Raid Failures'
 keywords: ['monitor', 'drive', 'raid', 'errors', 'ticket']
 description: 'This document outlines the configuration and functionality of the Drive Errors Monitor, which checks for issues with drives or RAID in Windows machines. It allows customization of error thresholds and provides guidelines for ticket creation upon detection of drive errors.'
 tags: ['ticketing', 'windows']
@@ -66,4 +66,6 @@ Details:
 
 %RESULT%
 ```
+
+
 

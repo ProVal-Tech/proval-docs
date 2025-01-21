@@ -1,7 +1,7 @@
 ---
 id: '016b09a7-6d4c-41bf-a4ec-befc678a5259'
-title: 'Soji - Windows Disk Cleaner'
-title_meta: 'Soji - Windows Disk Cleaner'
+title: 'Soji - Disk Cleaner'
+title_meta: 'Soji - Disk Cleaner'
 keywords: ['windows', 'disk', 'cleaner', 'log', 'csv', 'report']
 description: 'Soji is a Windows disk cleaner designed to log actions to the agent procedure log and upload CSV reports to the target agent’s "Get Files" section. This document provides a summary, sample run, process details, output expectations, and export attachment instructions for using Soji effectively.'
 tags: ['disk-cleanup', 'logging', 'software', 'windows']
@@ -41,4 +41,6 @@ Soji is a Windows disk cleaner that logs actions to the agent procedure log and 
 ## Export Attachment
 
 Attach the content XML VSA export to this document.
+
+
 

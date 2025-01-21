@@ -1,7 +1,7 @@
 ---
 id: '414e2b20-92a2-40bf-b003-6b92af4cbd18'
-title: 'Dataview Audit for Monitors'
-title_meta: 'Dataview Audit for Monitors'
+title: 'Automate - Monitor Audit View'
+title_meta: 'Automate - Monitor Audit View'
 keywords: ['dataview', 'audit', 'monitors', 'environment', 'alert', 'script', 'mysql']
 description: 'This document provides an overview of the Dataview audit process for monitors in an environment, detailing the dependencies, column descriptions, and key attributes associated with each monitor.'
 tags: ['mysql']
@@ -36,4 +36,6 @@ The Dataview audits the monitors in an environment.
 | Category Name           | The category assigned to the alert.                          |
 | Service Board           | The service board that the alert will post to.              |
 | Monitor Run Frequency    | The running interval of the monitor.                         |
+
+
 

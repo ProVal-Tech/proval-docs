@@ -1,7 +1,7 @@
 ---
 id: 'c0aa9260-1daa-4614-9daf-1c898315b3c8'
-title: 'Updating the WinRE Partition for CVE-2024-20666'
-title_meta: 'Updating the WinRE Partition for CVE-2024-20666'
+title: 'Updating the WinRE Partition'
+title_meta: 'Updating the WinRE Partition'
 keywords: ['winre', 'update', 'cve', 'security', 'patch']
 description: 'This document provides detailed instructions on updating the WinRE partition on deployed devices to address security vulnerabilities identified in CVE-2024-20666 by pushing the KB5034957 update. It includes associated scripts, dataviews, and monitors necessary for implementation.'
 tags: ['cve', 'security', 'update', 'windows']
@@ -71,5 +71,7 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
    - To send emails, it is mandatory to set the email address. Multiple email addresses can be set, separated by semicolons:  
      e.g., [abc@def.com](mailto:abc@def.com); [ghi@jkl.com](mailto:ghi@jkl.com); [mno@pqr.com](mailto:mno@pqr.com)  
      Once the email address is set, you can set the value to 1 for the failure email if you need an email only on failure, set 1 for success email if you want an email for success, or set 1 for both for emails on both success and failure.
+
+
 
 

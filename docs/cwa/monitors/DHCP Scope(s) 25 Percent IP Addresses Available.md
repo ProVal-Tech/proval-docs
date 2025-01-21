@@ -1,7 +1,7 @@
 ---
 id: '2cfde48c-aa83-4990-83bd-cb768c882081'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'DHCP Scope(s) 25 Percent IP Addresses Available'
+title_meta: 'DHCP Scope(s) 25 Percent IP Addresses Available'
 keywords: ['remote', 'monitor', 'dhcp', 'groupid', 'alert', 'configuration']
 description: 'This document provides detailed steps on how to apply a remote monitor for DHCP scopes with insufficient IP addresses. It includes SQL query examples and instructions for executing the queries within a RAWSQL monitor set, ensuring effective monitoring and alerting for network connectivity issues.'
 tags: ['dhcp', 'networking']
@@ -181,4 +181,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate and Apply the Alert Template
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

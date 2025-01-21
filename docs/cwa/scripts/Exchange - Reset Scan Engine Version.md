@@ -1,7 +1,7 @@
 ---
 id: 'f699ae53-3ba7-42bd-864d-a670aca7ab0b'
-title: 'Email Stuck Issue Resolution in Microsoft Exchange'
-title_meta: 'Email Stuck Issue Resolution in Microsoft Exchange'
+title: 'Exchange - Reset Scan Engine Version'
+title_meta: 'Exchange - Reset Scan Engine Version'
 keywords: ['exchange', 'email', 'transport', 'queues', 'vulnerability', 'update', 'service']
 description: 'This document provides a detailed guide on resolving the stuck email issue in Microsoft Exchange. It outlines the necessary steps to verify the impacted version, remove existing engines, update to the latest engine, and verify the engine update information to ensure smooth email transport.'
 tags: ['email', 'exchange', 'security', 'update']
@@ -59,5 +59,7 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
+
+
 
 

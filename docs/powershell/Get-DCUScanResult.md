@@ -1,7 +1,7 @@
 ---
 id: ps-get-dcuscanresult
 title: 'Get-DCUScanResult'
-title_meta: 'Get-DCUScanResult Command'
+title_meta: 'Get-DCUScanResult'
 keywords: ['dell', 'dcu', 'scan', 'result']
 description: 'Documentation for the Get-DCUScanResult command to fetch the scan result from dcu-cli for Dell machines.'
 tags: ['report', 'software', 'windows']
@@ -28,4 +28,6 @@ After ensuring the fulfillment of the requirements, this command stores the resu
 - `.\Get-DCUScanResult-log.txt`
 - `.\Get-DCUScanResult-error.txt`
 - `.\DCUReport\DCUApplicableUpdates.xml`
+
+
 

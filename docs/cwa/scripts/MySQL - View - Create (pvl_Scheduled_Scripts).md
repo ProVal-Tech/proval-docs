@@ -1,7 +1,7 @@
 ---
 id: '494c2d2c-2f37-45b7-9eb0-130ff3aac45c'
-title: 'Generate View for Scheduled Scripts'
-title_meta: 'Generate View for Scheduled Scripts - ConnectWise Automate'
+title: 'MySQL - View - Create (pvl_Scheduled_Scripts)'
+title_meta: 'MySQL - View - Create (pvl_Scheduled_Scripts)'
 keywords: ['view', 'scripts', 'permissions', 'automate', 'users']
 description: 'This document outlines a script designed to create a view named `pvl_Scheduled_Scripts` and to grant access permissions to all currently active users in ConnectWise Automate. It provides guidance on running the script and removing it post-execution.'
 tags: ['database', 'security', 'setup']
@@ -22,4 +22,6 @@ Run the script on any computer to create the view, and afterward, remove the scr
 ## Output
 
 - Custom View
+
+
 

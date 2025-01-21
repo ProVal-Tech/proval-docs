@@ -1,7 +1,7 @@
 ---
 id: 'f490325a-023c-430d-876d-e4d311ff3e89'
-title: 'Autofix for Ticket Sync Issues'
-title_meta: 'Autofix for Ticket Sync Issues'
+title: 'Ticket Sync Failed'
+title_meta: 'Ticket Sync Failed'
 keywords: ['ticket', 'sync', 'email', 'monitor', 'automate']
 description: 'This document details an Autofix script designed to be triggered by the monitor for unsuccessful ticket synchronization to the PSA. It gathers ticket information and forwards it to a specified email address to ensure no tickets are missed, saving time and improving efficiency.'
 tags: ['email', 'psa']
@@ -42,4 +42,6 @@ The monitor will trigger this script and pass parameters to it. The parameter pa
 ## Output
 
 The only output for this script is an email to the configured email address. If this email fails to send, the data will be visible in the "Failed Emails" section of the system dashboard.
+
+
 

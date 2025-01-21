@@ -1,7 +1,7 @@
 ---
 id: '371c0aa5-4230-4952-b341-f5c58b0b46ad'
-title: 'Update Channel of Office Installed on Machine'
-title_meta: 'Update Channel of Office Installed on Machine'
+title: 'Endpoint - C2R Update Channel'
+title_meta: 'Endpoint - C2R Update Channel'
 keywords: ['office', 'update', 'channel', 'microsoft', 'click-to-run']
 description: 'This document provides details on how to update the channel of the Office installed on a machine, using the Microsoft 365 - Click-to-Run - Get Details task. It includes a summary, detailed field information, and screenshots for reference.'
 tags: ['setup', 'windows']
@@ -23,4 +23,6 @@ This document explains how to update the channel of the Office installed on a ma
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Update-Channel/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Update-Channel/image_2.png)
+
+
 

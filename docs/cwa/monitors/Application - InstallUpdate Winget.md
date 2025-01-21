@@ -1,7 +1,7 @@
 ---
 id: '9b40d1cd-7886-416f-b56e-11ab3a44befb'
-title: 'Monitor to Update Application Based on PackageID'
-title_meta: 'Monitor to Update Application Based on PackageID'
+title: 'Application - InstallUpdate Winget'
+title_meta: 'Application - InstallUpdate Winget'
 keywords: ['monitor', 'update', 'application', 'packageid', 'source', 'dependencies']
 description: 'This document outlines a monitor designed to update applications based on the provided PackageID, Source, and Application Name. It includes setup instructions, dependencies, and target specifications for effective implementation.'
 tags: ['setup', 'software']
@@ -22,4 +22,6 @@ This monitor is designed to update the application based on the PackageID, Sourc
 Global - Should be run without explicitly defined targets.
 
 This monitor depends on the property named PackageID being created. Therefore, before enabling it, you need to implement the monitor "ProVal - Production - `<Application>` - Latest Version Detection" with the alert template "△ Custom - Execute Script - Application Latest Version."
+
+
 

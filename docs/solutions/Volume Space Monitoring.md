@@ -1,7 +1,7 @@
 ---
 id: '76eafb93-4c7f-4794-914e-0eb6a4641783'
-title: 'Volume Space Monitoring Solution'
-title_meta: 'Volume Space Monitoring Solution for Intelligent Free Space Management'
+title: 'Volume Space Monitoring'
+title_meta: 'Volume Space Monitoring'
 keywords: ['volume', 'monitoring', 'space', 'thresholds', 'automation']
 description: 'The Volume Space Monitoring solution provides a framework for generating intelligent free space monitors based on trending data or static thresholds. It includes associated scripts and monitors for effective volume management and predictive analysis.'
 tags: ['performance']
@@ -172,4 +172,6 @@ The script has been running hourly on USER-PC for 60 days.
 The script has the DaysToLead parameter set to 30.
 
 The script determines that in another 70 days, the volume's space may be completely exhausted based on the linear regression. The script then returns the estimated remaining space 40 days from now (70 - DaysToLead). This estimated remaining space is then used as the threshold for the volume space remote monitor for that volume.
+
+
 

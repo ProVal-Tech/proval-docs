@@ -1,7 +1,7 @@
 ---
 id: '9d9148ad-26f7-45c6-ab6a-37e85dc259e8'
-title: 'Enable Windows 11 Installation for Compatible Windows 10 Computers'
-title_meta: 'Enable Windows 11 Installation for Compatible Windows 10 Computers'
+title: 'Install Windows 11'
+title_meta: 'Install Windows 11'
 keywords: ['windows', 'installation', 'upgrade', 'policy', 'device', 'group']
 description: 'This document provides a step-by-step guide to enable the installation of Windows 11 on compatible Windows 10 computers through the ConnectWise RMM platform. It includes necessary dependencies, package creation instructions, and how to assign policies to device groups.'
 tags: ['setup', 'windows']
@@ -56,4 +56,6 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 ## Completed Policy Group
 
 ![](../../../static/img/Install-Windows-11/image_13.png)
+
+
 

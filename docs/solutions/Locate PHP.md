@@ -1,7 +1,7 @@
 ---
 id: '991b3c58-48a1-44f0-96c6-c9babc049b53'
-title: 'Locate PHP.exe on Computers'
-title_meta: 'Locate PHP.exe on Computers'
+title: 'Locate PHP'
+title_meta: 'Locate PHP'
 keywords: ['php', 'file', 'monitor', 'audit', 'script', 'data']
 description: 'This document outlines the steps to identify computers with the PHP.exe file available, including associated scripts and monitors for effective auditing and data management.'
 tags: []
@@ -46,4 +46,6 @@ The goal of this solution is to identify the computers that have the PHP.exe fil
 
 5. Mark the `Find PHP.exe` EDF on the clients you would like to audit the information on.
    ![Mark EDF](../../static/img/Locate-PHP/image_3.png)
+
+
 

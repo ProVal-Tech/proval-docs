@@ -1,7 +1,7 @@
 ---
 id: '7981530c-3eaa-4030-8382-4f4d812f3d01'
-title: 'Chromium Extensions Audit'
-title_meta: 'Chromium Extensions Audit'
+title: 'Chromium Extension Audit'
+title_meta: 'Chromium Extension Audit'
 keywords: ['chromium', 'extensions', 'audit', 'endpoint', 'inventory']
 description: 'This document details the process of auditing Chromium extensions installed on an endpoint, including example logs and dependencies. It provides insights into the execution of the audit script and its output, helping administrators maintain control over browser extensions.'
 tags: ['report', 'security', 'software', 'windows']
@@ -60,4 +60,6 @@ Runs the agnostic script to collect Chromium extensions installed on an endpoint
 
 - Agent Procedure Log  
 - Custom Field: xPVAL Chromium Extensions Installed
+
+
 

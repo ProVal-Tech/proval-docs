@@ -1,7 +1,7 @@
 ---
 id: '02e56369-332e-4f57-a325-2df8585b0c2c'
-title: 'Reset Windows Update Components'
-title_meta: 'Reset Windows Update Components'
+title: 'Patch Error Troubleshooting'
+title_meta: 'Patch Error Troubleshooting'
 keywords: ['windows', 'update', 'reset', 'services', 'network', 'backup']
 description: 'This document provides a detailed overview of a script designed to reset all Windows Update components. It includes steps to stop necessary services, delete specific files, rename critical folders, reset DLLs, and perform a Winsock reset. The script aims to streamline the update process and save time by automating these tasks.'
 tags: ['backup', 'update', 'windows']
@@ -49,4 +49,6 @@ Reboot the computer.
 ## Output
 
 **Script logs**
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f3ecbc30-3826-4326-9a9d-4ea6411f22a9'
 title: 'Install Font'
-title_meta: 'Install Font - A Guide to Installing Fonts via Script'
+title_meta: 'Install Font'
 keywords: ['install', 'font', 'script', 'directory', 'file']
 description: 'This document provides a comprehensive guide on how to install fonts from a specified directory or file using a script. It includes sample runs, user parameters, and detailed instructions for task creation and execution.'
 tags: ['setup', 'software', 'windows']
@@ -180,4 +180,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

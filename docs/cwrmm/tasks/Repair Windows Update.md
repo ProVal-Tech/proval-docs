@@ -1,7 +1,7 @@
 ---
 id: '7c19c014-844e-40b8-951e-bf3609052d92'
 title: 'Repair Windows Update'
-title_meta: 'Repair Windows Update - Script to Reset Windows Update Settings'
+title_meta: 'Repair Windows Update'
 keywords: ['windows', 'update', 'repair', 'script', 'settings']
 description: 'This document provides a comprehensive guide on using a script to reset Windows update settings. It outlines the steps necessary to implement the script within the ConnectWise RMM platform, including user parameters, task creation, and execution details. The script aims to reset Windows update settings, though it may not resolve all update-related issues.'
 tags: ['patching', 'update', 'windows']
@@ -176,4 +176,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

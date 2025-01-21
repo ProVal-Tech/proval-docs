@@ -1,7 +1,7 @@
 ---
 id: ps-unregister-firefoxextension
 title: 'Unregister-FirefoxExtension'
-title_meta: 'Unregister-FirefoxExtension Command'
+title_meta: 'Unregister-FirefoxExtension'
 keywords: ['unregister', 'firefox', 'extension', 'remove']
 description: 'Documentation for the Unregister-FirefoxExtension command to remove and optionally block the reinstallation of a Firefox extension.'
 tags: ['firefox', 'security', 'web-browser']
@@ -37,4 +37,6 @@ The output will be logged in:
 ```
 .\Unregister-FirefoxExtension-log.txt
 ```
+
+
 

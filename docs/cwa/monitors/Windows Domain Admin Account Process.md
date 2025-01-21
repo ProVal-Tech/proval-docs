@@ -1,7 +1,7 @@
 ---
 id: '6270f7b1-3cf6-433f-b6e9-b1300b545896'
-title: 'Monitor Set for Domain Controllers'
-title_meta: 'Monitor Set for Domain Controllers'
+title: 'Windows Domain Admin Account Process'
+title_meta: 'Windows Domain Admin Account Process'
 keywords: ['domain', 'controllers', 'admin', 'account', 'password', 'monitor']
 description: 'This document outlines a monitor set designed to identify Domain Controllers missing the designated Domain admin account and those with outdated passwords. It provides customization options through system properties and client-level Extra Data Fields (EDFs), enhancing adaptability to various requirements.'
 tags: ['active-directory', 'security']
@@ -30,4 +30,6 @@ Domain Controllers belonging to clients that have the `1a. Enable Domain Admin P
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>) script on the machines detected by the monitor set.
+
+
 

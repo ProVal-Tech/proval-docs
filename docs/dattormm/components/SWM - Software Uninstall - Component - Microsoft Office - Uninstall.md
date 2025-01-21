@@ -1,7 +1,7 @@
 ---
 id: 'e2ca200f-885f-412e-b214-f798bb47ea67'
-title: 'Microsoft Office - Uninstall'
-title_meta: 'Microsoft Office - Uninstall'
+title: 'SWM - Software Uninstall - Component - Microsoft Office - Uninstall'
+title_meta: 'SWM - Software Uninstall - Component - Microsoft Office - Uninstall'
 keywords: ['uninstall', 'microsoft', 'office', 'utility', 'component']
 description: 'This document provides a detailed guide on using the Microsoft Office Uninstall component, which runs the Office Scrub utility to remove specified Microsoft Office products from a Datto RMM instance. It includes implementation steps, usage instructions, and expected output.'
 tags: ['software', 'uninstallation', 'windows']
@@ -48,4 +48,6 @@ StdOut is not expected.
 
 **StdErr**  
 StdErr is not expected.  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'ef03b1ec-11f8-438e-a21e-b4a2bdcd4c78'
-title: 'Windows Server Backup Monitor'
-title_meta: 'Windows Server Backup Monitor for Remote Monitoring'
+title: 'Windows Server Backup Failure Detection'
+title_meta: 'Windows Server Backup Failure Detection'
 keywords: ['backup', 'monitor', 'windows', 'server', 'ticket']
 description: 'This document outlines a remote monitoring solution that detects the last backup status of Windows Server Backup. It raises a ticket if the backup fails, ensuring prompt attention to backup issues.'
 tags: ['backup', 'windows']
@@ -27,4 +27,6 @@ If the backup fails, it will raise a ticket.
 ## Target
 
 It should be targeted on the group that is bound with a search via the role "Windows Server Backup."
+
+
 

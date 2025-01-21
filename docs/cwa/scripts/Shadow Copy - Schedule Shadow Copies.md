@@ -1,7 +1,7 @@
 ---
 id: 'f16b700f-16c7-43f9-8470-84861d7f5c52'
-title: 'Enable Shadow Copies via PowerShell'
-title_meta: 'Enable Shadow Copies via PowerShell'
+title: 'Shadow Copy - Schedule Shadow Copies'
+title_meta: 'Shadow Copy - Schedule Shadow Copies'
 keywords: ['shadow', 'copy', 'task', 'scheduler', 'windows', 'backup']
 description: 'This document details a PowerShell script that enables shadow copies on the system drive by creating a scheduled task through Task Scheduler. It provides configuration parameters and outlines the process for setting up the script to automate shadow copy tasks at specified times.'
 tags: ['backup', 'security', 'windows']
@@ -42,4 +42,6 @@ Once the global parameters are configured to the desired values, the script will
 ## Output
 
 Script log
+
+
 

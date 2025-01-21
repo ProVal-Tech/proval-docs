@@ -1,7 +1,7 @@
 ---
 id: '4bc06cc4-3b78-452a-b602-063e57221234'
-title: 'Offline Agent Remediation'
-title_meta: 'Offline Agent Remediation'
+title: 'No Checkin for More Than 30 Days'
+title_meta: 'No Checkin for More Than 30 Days'
 keywords: ['monitor', 'machines', 'contact', 'action', 'agent', 'ticket', 'maintenance', 'template']
 description: 'This document outlines an internal monitor designed to identify machines that have not contacted the server in over 30 days. It details possible actions that can be taken, such as reinstalling the agent, creating a ticket, or retiring the agent, with a note on limitations regarding maintenance mode.'
 tags: []
@@ -24,4 +24,6 @@ Global
 **Name:** △ Custom - Autofix - Offline Agent Remediation (RMM+)
 
 **Note:** The alert template should execute the [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f281c866-d1a8-44fd-9412-388b5f06200b'
-title: 'Install DNS Filter Agent'
-title_meta: 'Install DNS Filter Agent for Macintosh and Windows Workstations'
+title: 'DNS Filter Agent - Install'
+title_meta: 'DNS Filter Agent - Install'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
 description: 'This document provides a comprehensive guide on installing the DNS Filter agent on both Macintosh and Windows workstations, detailing the necessary variables, EDFs, and expected output during the installation process.'
 tags: ['dns', 'installation', 'windows']
@@ -48,4 +48,6 @@ This script installs the DNS Filter agent on the machines. It is compatible with
 
 - Script Log
 - Ticket
+
+
 

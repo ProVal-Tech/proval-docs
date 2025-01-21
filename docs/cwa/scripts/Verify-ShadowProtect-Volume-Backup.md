@@ -1,7 +1,7 @@
 ---
 id: 'c692dfe2-e9ec-4f3d-a7ed-8f4f5da30493'
-title: 'Query NTFS Volumes on Computer'
-title_meta: 'Query NTFS Volumes on Computer - Efficient Drive Information Retrieval'
+title: 'Verify-ShadowProtect-Volume-Backup'
+title_meta: 'Verify-ShadowProtect-Volume-Backup'
 keywords: ['ntfs', 'database', 'drive', 'volume', 'query']
 description: 'This document describes a script that queries the LT database to gather information about NTFS volumes on a computer, including drive letters, sizes, and file systems. The script aims to streamline the process of verifying ShadowProtect backups for each drive, significantly reducing manual effort and time spent on this task.'
 tags: ['backup', 'database', 'windows']
@@ -38,4 +38,6 @@ This script queries the LT database for each drive letter that is an NTFS volume
 ## Output
 
 - Script log
+
+
 

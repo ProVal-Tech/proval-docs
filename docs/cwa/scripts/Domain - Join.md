@@ -1,7 +1,7 @@
 ---
 id: '3c802520-f292-46e2-bd0e-0dbca86ed0ed'
-title: 'Join Machine to Domain Script'
-title_meta: 'Join Machine to Domain Script'
+title: 'Domain - Join'
+title_meta: 'Domain - Join'
 keywords: ['domain', 'machine', 'join', 'ou', 'restart', 'client', 'location', 'sql', 'credentials']
 description: 'This document provides a detailed overview of a script that automates the process of joining a target machine to a domain. It includes user parameters, process explanation, and expected outputs, highlighting the time saved by automation.'
 tags: ['networking', 'security', 'setup', 'windows']
@@ -32,4 +32,6 @@ This script joins the target machine to a domain based on its current client and
 ## Output
 
 - Script log
+
+
 

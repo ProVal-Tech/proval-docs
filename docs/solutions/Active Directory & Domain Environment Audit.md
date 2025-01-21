@@ -1,7 +1,7 @@
 ---
 id: 'dd914cae-33e3-4ac2-8904-c9ef1f4814a3'
-title: 'Active Directory Monitoring Implementation'
-title_meta: 'Active Directory Monitoring Implementation'
+title: 'Active Directory & Domain Environment Audit'
+title_meta: 'Active Directory & Domain Environment Audit'
 keywords: ['active-directory', 'monitoring', 'implementation', 'alerts', 'reports']
 description: 'This document provides a comprehensive guide on implementing monitoring solutions for Active Directory environments. It details various internal and remote monitors, scripts, dataviews, and reports that can be utilized to ensure effective monitoring and management of Active Directory, along with step-by-step implementation instructions.'
 tags: ['active-directory']
@@ -239,4 +239,6 @@ This article encompasses multiple components and contents. Please import and imp
    - Import the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
+
+
 

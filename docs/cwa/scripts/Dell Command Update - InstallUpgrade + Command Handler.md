@@ -1,7 +1,7 @@
 ---
 id: '91cc7f02-1c0d-4303-81f2-91fd0d275747'
-title: 'Dell Command | Update Script for Dell Workstations'
-title_meta: 'Dell Command | Update Script for Dell Workstations'
+title: 'Dell Command Update - InstallUpgrade + Command Handler'
+title_meta: 'Dell Command Update - InstallUpgrade + Command Handler'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
 description: 'This document provides an overview of a script that utilizes the Dell Command | Update application to manage updates on Dell Workstations. It covers installation, upgrade procedures, command line usage, and sample runs, along with user parameters and script states for effective management of system updates.'
 tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
@@ -60,4 +60,6 @@ In the same way, driver updates can also be installed. Please refer to [Dell Com
 
 - Script State
 - Script Log
+
+
 

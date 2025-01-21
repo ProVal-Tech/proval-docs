@@ -1,7 +1,7 @@
 ---
 id: '1c1eacb7-dd9c-410e-b68a-604622260d6b'
-title: 'Disable Fast Boot for Windows Workstations'
-title_meta: 'Disable Fast Boot for Windows Workstations'
+title: 'Disable Fast Boot'
+title_meta: 'Disable Fast Boot'
 keywords: ['disable', 'fastboot', 'windows', 'workstations', 'registry']
 description: 'This document outlines the solution to disable the Fast Boot feature on Windows workstations, including the necessary custom fields, device group creation, and task implementation required to ensure the feature is turned off.'
 tags: ['performance', 'recovery', 'setup', 'windows']
@@ -49,4 +49,6 @@ The purpose of this document is to outline the solution to disable the Fast Boot
 
 3. Create the Task and deploy it against the device group:  
    - [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a0ee778f-854b-4c86-aa0f-192a09019fe3'
-title: 'Windows Cluster Shared Volume Detection'
-title_meta: 'Windows Cluster Shared Volume Detection'
+title: 'CWA Remote Monitor - Windows Cluster Shared Volume Detection'
+title_meta: 'CWA Remote Monitor - Windows Cluster Shared Volume Detection'
 keywords: ['monitor', 'cluster', 'disk', 'space', 'alert']
 description: 'This document outlines the implementation of a monitor that detects cluster volumes with low disk space, triggering alerts based on predefined thresholds. It includes details on suggested alert styles, configurations, and dependencies for effective monitoring.'
 tags: ['cluster', 'disk', 'windows']
@@ -42,4 +42,6 @@ Should be targeted to a Cluster Detected group.
 Please follow the implementation document below to install this content:
 
 - [Import - Remote Monitor - Windows Cluster Shared Volume Detection](<./Windows Cluster Shared Volume Detection.md>)
+
+
 

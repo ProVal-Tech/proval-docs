@@ -1,7 +1,7 @@
 ---
 id: 'dcfe094a-b15b-4f06-8c8f-c6e211c7f9b0'
-title: 'Implementation Steps for Remote Monitor'
-title_meta: 'Implementation Steps for Remote Monitor'
+title: 'Implement- Reset System Restore Disk Space Usage'
+title_meta: 'Implement- Reset System Restore Disk Space Usage'
 keywords: ['implementation', 'remote', 'monitor', 'query', 'groupid']
 description: 'This document provides detailed implementation steps for applying a remote monitor in a system. It includes obtaining group IDs, modifying SQL queries, and executing them to set up monitoring effectively.'
 tags: ['database', 'setup']
@@ -154,4 +154,6 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

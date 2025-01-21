@@ -1,7 +1,7 @@
 ---
 id: '65815475-a61d-4f0d-b2ba-c7b8368285c9'
-title: 'Windows 10 Feature Update Status Gathering'
-title_meta: 'Windows 10 Feature Update Status Gathering'
+title: 'Windows 10 Update Stats - Retrieve'
+title_meta: 'Windows 10 Update Stats - Retrieve'
 keywords: ['windows', 'update', 'monitor', 'registry', 'database', 'event', 'error', 'ticket', 'installation', 'report']
 description: 'This document outlines the process for gathering status information related to Windows 10 feature updates. It details the dependencies, variables, and processes involved in executing an auto-fix script that monitors specific event logs and manages registry values related to Windows updates.'
 tags: ['database', 'installation', 'report', 'update', 'windows']
@@ -65,4 +65,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 This is intended to be an auto-fix on a monitor and should be used to populate data after a specific event is thrown on a computer.
+
+
 

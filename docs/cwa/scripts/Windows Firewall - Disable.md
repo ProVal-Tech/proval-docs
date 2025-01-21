@@ -1,7 +1,7 @@
 ---
 id: '475fcc0b-08a9-4118-9436-1bbc4a0c9f2f'
-title: 'Disable Windows Firewall for All Profiles'
-title_meta: 'Disable Windows Firewall for All Profiles'
+title: 'Windows Firewall - Disable'
+title_meta: 'Windows Firewall - Disable'
 keywords: ['windows', 'firewall', 'disable', 'security', 'script']
 description: 'This document provides a detailed overview of a script designed to disable the Windows Firewall for all profiles, including public, domain, and private. It outlines the process of executing the script, sample run visuals, and expected output logs.'
 tags: ['firewall', 'security', 'windows']
@@ -24,4 +24,6 @@ The script will execute if the Windows Firewall is enabled on the machine. It ru
 ## Output
 
 - Script log
+
+
 

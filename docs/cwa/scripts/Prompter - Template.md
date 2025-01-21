@@ -1,7 +1,7 @@
 ---
 id: 'e6f6f344-5f75-4794-84d9-86b110206089'
-title: 'Prompter - Template for Client Use'
-title_meta: 'Prompter - Template for Client Use'
+title: 'Prompter - Template'
+title_meta: 'Prompter - Template'
 keywords: ['template', 'prompter', 'script', 'message', 'client']
 description: 'This document provides a template for clients to set up prompter messages in ConnectWise Automate. It includes recommended steps for using the template, dependencies, and a detailed explanation of the variables utilized in the prompter script.'
 tags: ['setup', 'windows']
@@ -59,4 +59,6 @@ These variables are used in the prompter script. They should be set in any scrip
 | selectedButton     | Button selected by the user.                                                                             |
 | dateTimeSelection   | Date and time selected by the user.                                                                      |
 | userResponse       | Input/feedback provided by the user in the user input field.                                            |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '34942020-e99d-4959-892d-78c46a89d574'
-title: 'Remove Sophos Script for Automate Managed Devices'
-title_meta: 'Remove Sophos Script for Automate Managed Devices'
+title: 'Uninstall - Sophos'
+title_meta: 'Uninstall - Sophos'
 keywords: ['sophos', 'uninstall', 'script', 'automate', 'management']
 description: 'This document provides a comprehensive guide on running the Remove-Sophos.ps1 script on Automate managed devices, detailing prerequisites, parameters, and expected outcomes for successful execution.'
 tags: ['security', 'software', 'uninstallation']
@@ -56,4 +56,6 @@ No non-template variables in the script.
 
 - **There are a lot of leftover files on the target computer.**  
   The cleanest method of removal is to set the Arguments parameter to -force, remembering that you should be using -SkipZap if Zap is not installed with the NoSafeMode set to 0.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '843cb902-2299-4d91-90b9-62bd7788ea6a'
-title: 'Deploy Automate Agent GPO'
-title_meta: 'Deploy Automate Agent GPO'
+title: 'GPO - Automate Agent Deployment GPO - Create'
+title_meta: 'GPO - Automate Agent Deployment GPO - Create'
 keywords: ['gpo', 'automate', 'deployment', 'network', 'agent', 'domain', 'probe']
 description: 'This document outlines a script that creates a Group Policy Object (GPO) for deploying the Automate Agent on a domain controller with a network probe configured. It details the process, dependencies, user parameters, and expected outputs, aiming to streamline the deployment process.'
 tags: ['gpo', 'setup', 'windows']
@@ -48,4 +48,6 @@ This script runs against a domain controller in a location with a network probe 
 ## Output
 
 - Script log
+
+
 

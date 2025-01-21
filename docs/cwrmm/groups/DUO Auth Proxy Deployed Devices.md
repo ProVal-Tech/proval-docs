@@ -1,7 +1,7 @@
 ---
 id: 'a940aac1-4586-4e35-90f6-749ec3b2e1d7'
-title: 'DUO Auth Proxy Deployment Overview'
-title_meta: 'DUO Auth Proxy Deployment Overview'
+title: 'DUO Auth Proxy Deployed Devices'
+title_meta: 'DUO Auth Proxy Deployed Devices'
 keywords: ['duo', 'security', 'authentication', 'proxy', 'deployment', 'audit']
 description: 'This document provides an overview of devices where the DUO Security Authentication Proxy application is deployed using the DUO Auth Proxy - Install/Update Latest Version script. It serves as an auditing tool to track deployment status.'
 tags: ['report']
@@ -43,4 +43,6 @@ This document shows the devices where the "DUO Security Authentication Proxy" ap
    Set `Success` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_5.png)  
    **Condition:** `Duo Auth Proxy Result` `Contain any of` `Success`
+
+
 

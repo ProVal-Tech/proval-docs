@@ -1,7 +1,7 @@
 ---
 id: '44048760-bd04-451d-82ea-b6eee6a03552'
-title: 'SSL Certificate Audit Solution'
-title_meta: 'SSL Certificate Audit Solution for Monitoring and Auditing SSL Certificates'
+title: 'plugin_proval_certs'
+title_meta: 'plugin_proval_certs'
 keywords: ['ssl', 'certificate', 'audit', 'monitoring', 'data']
 description: 'This document outlines the SSL Certificate Audit Solution, detailing the structure of the database table used to gather information on SSL Certificates for auditing and monitoring purposes. It provides an overview of the dependencies, table structure, and the specific columns included in the plugin_proval_certs table.'
 tags: ['database', 'report', 'security', 'windows']
@@ -35,4 +35,6 @@ This table is used in the [SSL Certificate Audit Solution](<../../solutions/Cert
 | CertAdded      | DATETIME                                  | When was the certificate added to the system                       |
 | Expiration     | DATETIME                                  | What is the expiration date of the SSL certificate                 |
 | DateUpdated    | DATETIME                                  | When did the script actually add the information into the database  |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '04ffcb6e-be50-4582-9b9b-050c39518811'
 title: 'Update Visual Studio'
-title_meta: 'Update Visual Studio - Automate Updates for Installed Versions'
+title_meta: 'Update Visual Studio'
 keywords: ['visualstudio', 'updates', 'automation', 'script', 'software']
 description: 'This document outlines the process to automate the update of all installed Visual Studio versions using a ConnectWise RMM implementation. It includes step-by-step instructions for task creation, script setup, and execution, ensuring a seamless update process for users.'
 tags: ['application', 'software', 'update']
@@ -136,4 +136,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

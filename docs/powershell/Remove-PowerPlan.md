@@ -1,7 +1,7 @@
 ---
 id: ps-remove-powerplan
 title: 'Remove-PowerPlan'
-title_meta: 'Remove-PowerPlan Command'
+title_meta: 'Remove-PowerPlan'
 keywords: ['remove', 'powerplan', 'configuration', 'energy']
 description: 'Documentation for the Remove-PowerPlan command to remove a specified Power Plan from the computer.'
 tags: ['performance', 'windows']
@@ -38,4 +38,6 @@ PS C:\> .\Remove-PowerPlan.ps1 -Name 'Balanced'
 ## Output
 - .\Remove-PowerPlan-log.txt
 - .\Remove-PowerPlan-Error.txt
+
+
 

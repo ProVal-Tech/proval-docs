@@ -1,7 +1,7 @@
 ---
 id: '28530e35-7416-48c4-b56d-897c7d4727f6'
-title: 'Creating Remote Monitors for Memory Usage on Windows Machines'
-title_meta: 'Creating Remote Monitors for Memory Usage on Windows Machines'
+title: 'Memory Threshold Violation Monitor - Create'
+title_meta: 'Memory Threshold Violation Monitor - Create'
 keywords: ['remote', 'monitors', 'memory', 'usage', 'windows']
 description: 'This document outlines the process for creating Remote Monitors for Memory Usage on Windows machines, detailing system properties, alert thresholds, and implementation steps to effectively monitor memory utilization.'
 tags: ['memory', 'windows']
@@ -136,4 +136,6 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 ## Output
 
 - Remote Monitors
+
+
 

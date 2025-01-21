@@ -1,7 +1,7 @@
 ---
 id: '706c1dcb-998c-4d1e-a046-ab7538429aa7'
-title: 'Speed Test Audit Information'
-title_meta: 'Speed Test Audit Information'
+title: 'Internet Speed - Audit'
+title_meta: 'Internet Speed - Audit'
 keywords: ['speed', 'audit', 'network', 'performance', 'bandwidth', 'latency', 'jitter', 'packet loss', 'ISP']
 description: 'This document provides detailed information on the audited speed test results from the custom table EPM - Network - Custom Table - plugin_proval_speedtest_audit, including various metrics such as latency, jitter, download and upload speeds, and more.'
 tags: ['networking', 'performance', 'report', 'setup']
@@ -51,4 +51,6 @@ Displays audited speed test information from the custom table [EPM - Network - C
 | ResultURL        | The URL of the speed test result.                                                           |
 | DownloadMbps     | The download speed detected in Mbps.                                                        |
 | UploadMbps       | The upload speed detected in Mbps.                                                          |
+
+
 

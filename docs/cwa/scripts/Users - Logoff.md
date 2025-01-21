@@ -1,7 +1,7 @@
 ---
 id: '35c948fc-300e-437b-8338-69175b6a4afa'
-title: 'Log Off User Script'
-title_meta: 'Log Off User Script'
+title: 'Users - Logoff'
+title_meta: 'Users - Logoff'
 keywords: ['logoff', 'users', 'script', 'automation', 'windows']
 description: 'This script allows you to log off a specific user, multiple users, or all users from a Windows machine. It provides flexibility in managing user sessions and can be executed with different parameters to target individual users or the entire user base.'
 tags: ['windows']
@@ -33,4 +33,6 @@ Setting the User parameter to "All" will log off all users.
 
 1. Determine the scope.
 2. Log off the desired user or users.
+
+
 

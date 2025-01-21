@@ -1,7 +1,7 @@
 ---
 id: '986e2bee-68f3-456a-afd3-8634c26b877f'
-title: 'Remove Sophos Endpoint Agent'
-title_meta: 'Remove Sophos Endpoint Agent'
+title: 'Sophos Removal'
+title_meta: 'Sophos Removal'
 keywords: ['sophos', 'endpoint', 'uninstall', 'zap', 'agent']
 description: 'This document provides a comprehensive guide on removing the Sophos Endpoint Agent from an endpoint, including example logs, dependencies, and the process involved in the uninstallation. It details the use of SophosZap and necessary configurations for successful removal.'
 tags: ['cleanup', 'security', 'software', 'uninstallation']
@@ -74,4 +74,6 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../p
 - ./Remove-Sophos-Log.txt
 - ./Remove-Sophos-Error.txt
 - Agent Procedure Log
+
+
 

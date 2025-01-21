@@ -1,7 +1,7 @@
 ---
 id: '67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11'
-title: 'Weak Passwords Detection in ConnectWise RMM'
-title_meta: 'Weak Passwords Detection in ConnectWise RMM'
+title: 'Weak Passwords Audit'
+title_meta: 'Weak Passwords Audit'
 keywords: ['weak', 'passwords', 'detection', 'connectwise', 'rmm']
 description: 'This document outlines a solution for detecting users with potentially compromised passwords by querying known password hashes. It includes details on custom fields, device groups, monitors, and tasks necessary for implementation in ConnectWise RMM.'
 tags: ['active-directory', 'report', 'security']
@@ -56,4 +56,6 @@ This solution gathers information on users with potentially compromised password
 
 4. Create and deploy the following task:
    - [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)
+
+
 

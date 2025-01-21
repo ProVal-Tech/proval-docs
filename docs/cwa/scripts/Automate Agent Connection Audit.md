@@ -1,7 +1,7 @@
 ---
 id: 'ef69cef8-da15-46b7-94a4-697431a87929'
-title: 'Custom Tables for Connection Audit'
-title_meta: 'Custom Tables for Connection Audit'
+title: 'Automate Agent Connection Audit'
+title_meta: 'Automate Agent Connection Audit'
 keywords: ['custom', 'tables', 'audit', 'connection', 'daily', 'online', 'offline']
 description: 'This document describes a script that generates two custom tables, pvl_automate_connection_audit and pvl_automate_connection_audit_daily, which track the daily online and offline times of machines. It provides details on how to run the script and its expected output.'
 tags: ['database', 'report', 'setup']
@@ -22,6 +22,8 @@ The script generates two custom tables: [pvl_automate_connection_audit](<../tabl
 ## Output
 
 - Script Log
+
+
 
 
 

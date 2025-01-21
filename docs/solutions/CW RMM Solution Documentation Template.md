@@ -1,7 +1,7 @@
 ---
 id: '71a7f4d9-7446-4172-806a-e7001e469e0b'
-title: 'Purpose and Implementation of the Solution'
-title_meta: 'Purpose and Implementation of the Solution'
+title: 'CW RMM Solution Documentation Template'
+title_meta: 'CW RMM Solution Documentation Template'
 keywords: ['goal', 'implementation', 'configuration', 'documentation', 'faq']
 description: 'This document outlines the purpose of the solution, associated content, implementation steps, and frequently asked questions to guide users through the setup and understanding of the solution.'
 tags: ['setup']
@@ -26,4 +26,6 @@ Describe how to implement this solution. Is there any manual configuration that 
 ## FAQ
 
 <!-- Add frequently asked questions here -->
+
+
 

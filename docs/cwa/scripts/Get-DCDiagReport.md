@@ -1,7 +1,7 @@
 ---
 id: 'a9e0b7ac-4ce2-4376-ac97-8cdee2d122dc'
-title: 'Automate Wrapper for Get-DCDiagReport'
-title_meta: 'Automate Wrapper for Get-DCDiagReport'
+title: 'Get-DCDiagReport'
+title_meta: 'Get-DCDiagReport'
 keywords: ['automate', 'wrapper', 'ticket', 'diagnostic', 'report']
 description: 'This document describes an automated wrapper for the agnostic Get-DCDiagReport.ps1 script. It details how the script creates a ticket when the PowerShell script fails or when the diagnostic report indicates any failure. It includes sample runs, dependencies, variables, and parameters for both global and user-defined settings.'
 tags: ['diagnostic', 'report']
@@ -62,4 +62,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 ![Ticketing](../../../static/img/Get-DCDiagReport/image_3.png)  
 **The script will not close or finish any ticket.**
+
+
 

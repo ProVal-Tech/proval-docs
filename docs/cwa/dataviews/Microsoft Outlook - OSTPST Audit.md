@@ -1,7 +1,7 @@
 ---
 id: '30279ec0-cbb0-40f5-95ea-fb8052cb093a'
-title: 'Outlook OST/PST Audit Dataview'
-title_meta: 'Outlook OST/PST Audit Dataview'
+title: 'Microsoft Outlook - OSTPST Audit'
+title_meta: 'Microsoft Outlook - OSTPST Audit'
 keywords: ['dataview', 'outlook', 'audit', 'ost', 'pst', 'windows']
 description: 'This document provides a detailed overview of the Dataview that displays the path and size of OST and PST files for users on a Windows machine. It includes dependencies, column descriptions, and data collection details essential for monitoring Outlook files.'
 tags: ['database', 'performance', 'report', 'setup', 'windows']
@@ -39,4 +39,6 @@ This Dataview displays the path and size of the OST and PST files for users on a
 | Operating System          | Operating System                                            |
 | Last Contact              | Last Contact with RMM                                      |
 | Last Logged In User       | Last Logged In User                                        |
+
+
 

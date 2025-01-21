@@ -1,7 +1,7 @@
 ---
 id: '9d2c62e4-37a5-4d37-867c-c0cda13bdef9'
-title: 'Collect PnP Devices Information'
-title_meta: 'Collect PnP Devices Information'
+title: 'Get-PNPDevices DV'
+title_meta: 'Get-PNPDevices DV'
 keywords: ['pnp', 'devices', 'windows', 'inventory', 'script']
 description: 'This document provides a detailed overview of a script designed to collect information about installed Plug and Play (PnP) devices on Windows computers and store the data in a custom table. It includes a summary of the process, dependencies, variables, and expected output.'
 tags: ['database', 'report', 'setup', 'windows']
@@ -44,4 +44,6 @@ This script will collect information about the installed [PnP Devices](https://d
 
 - Script Log
 - Dataview
+
+
 

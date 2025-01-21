@@ -1,7 +1,7 @@
 ---
 id: 'f583b03a-3b9c-4630-b104-5f32fb5c55b9'
-title: 'Download File from SFTP Servers'
-title_meta: 'Download File from SFTP Servers'
+title: 'SFTP Server - Download Files'
+title_meta: 'SFTP Server - Download Files'
 keywords: ['sftp', 'download', 'file', 'client', 'password', 'entry']
 description: 'This document provides a detailed guide on how to use a script to download files from SFTP servers. It explains the necessary client-level password entry setup, user parameters required for execution, and provides sample runs for clarity.'
 tags: []
@@ -49,4 +49,6 @@ Setting the required details to execute the script into a client-level password 
 ## Output
 
 - Script Logs
+
+
 

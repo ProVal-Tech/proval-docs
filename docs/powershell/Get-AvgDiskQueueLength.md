@@ -1,7 +1,7 @@
 ---
 id: ps-get-avgdiskqueuelength
 title: 'Get-AvgDiskQueueLength'
-title_meta: 'Get-AvgDiskQueueLength Command'
+title_meta: 'Get-AvgDiskQueueLength'
 keywords: ['disk', 'queue', 'length', 'performance']
 description: 'Documentation for the Get-AvgDiskQueueLength command to calculate and return the average of X numbers of Average Disk Queue Length using the performance counter.'
 tags: ['performance', 'report', 'windows']
@@ -55,4 +55,6 @@ This example runs the script to calculate the average of the last 5 samples of t
 ## Output
 - `.\Get-AvgDiskQueueLength-log.txt`
 - `.\Get-AvgDiskQueueLength-Error.txt`
+
+
 

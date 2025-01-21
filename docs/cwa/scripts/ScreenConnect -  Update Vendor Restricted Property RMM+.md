@@ -1,7 +1,7 @@
 ---
 id: '1e1a92d4-008b-4b8e-af9d-3ff9579acb24'
-title: 'Duplicate of ScreenConnect - Update Custom Property'
-title_meta: 'Duplicate of ScreenConnect - Update Custom Property for CW Control Portal'
+title: 'ScreenConnect -  Update Vendor Restricted Property RMM+'
+title_meta: 'ScreenConnect -  Update Vendor Restricted Property RMM+'
 keywords: ['duplicate', 'screenconnect', 'custom', 'property', 'vendor', 'restricted', 'access']
 description: 'This document details a script designed to set the "Vendor Restricted" custom property in the CW Control Portal, allowing for the restriction of machine access based on vendor settings. It outlines the necessary system properties, user parameters, and dependencies required for successful execution.'
 tags: ['security', 'setup', 'software']
@@ -59,4 +59,6 @@ The system property `PropertyIndex` needs to be set before running the script.
 ## Output
 
 Script log messages only.
+
+
 

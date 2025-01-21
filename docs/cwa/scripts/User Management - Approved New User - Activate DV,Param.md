@@ -1,7 +1,7 @@
 ---
 id: 'd3db4260-b3e9-4ec6-b422-07434a2a239d'
-title: 'Enable Disabled Users Script'
-title_meta: 'Enable Disabled Users Script - Update Dependent DataView and Custom Table'
+title: 'User Management - Approved New User - Activate DV,Param'
+title_meta: 'User Management - Approved New User - Activate DV,Param'
 keywords: ['enable', 'users', 'script', 'dataview', 'custom', 'table', 'audit']
 description: 'This script enables users that have been disabled by a dependent script. It also updates the dependent DataView and custom table, saving approximately 15 minutes through automation. This is a post-action script that is essential when the previous script is used to disable accounts.'
 tags: ['database', 'update']
@@ -51,4 +51,6 @@ Examples:
 - Script log  
 - DataView  
 - Custom table  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'bd07c1dc-34ff-4f87-aae9-b43dcd1b5057'
-title: 'Network Probe Configuration View'
-title_meta: 'Network Probe Configuration View'
+title: 'plugin_proval_probeconfig'
+title_meta: 'plugin_proval_probeconfig'
 keywords: ['network', 'probe', 'configuration', 'view', 'audit']
 description: 'This document outlines the creation and purpose of the Network Probe Configuration View, which consolidates information for both Generation 1 and Generation 2 probes. It details the dependencies, table structure, and the specific columns included in the view for effective monitoring and management of network probes.'
 tags: ['database', 'report', 'setup']
@@ -55,4 +55,6 @@ This view was created to bypass the word count limit of 2500 for the "SQLBody" c
 | Updated By                               | VARCHAR  | Last user to make any changes to the probe                          |
 | Creation Date                            | datetime | Date of creation                                                   |
 | Last Update Date                         | datetime | Last update date for the network probe                              |
+
+
 

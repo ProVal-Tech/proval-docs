@@ -1,7 +1,7 @@
 ---
 id: '3a2f4004-624d-47c4-a5d0-c3c43e103e25'
-title: 'Invoke Winget Processor'
-title_meta: 'Invoke Winget Processor - Install and Update Applications'
+title: 'Script - Winget - InstallUpdate Autofix,Param'
+title_meta: 'Script - Winget - InstallUpdate Autofix,Param'
 keywords: ['winget', 'install', 'update', 'application', 'script']
 description: 'This document provides a comprehensive overview of the Invoke Winget Processor script, designed to install and update applications available in the Winget package manager. It includes details about the script path, file hash, sample run, variables, and parameters utilized within the script.'
 tags: ['installation', 'software', 'update', 'windows']
@@ -47,4 +47,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

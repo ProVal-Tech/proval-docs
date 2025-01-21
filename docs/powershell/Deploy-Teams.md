@@ -1,7 +1,7 @@
 ---
 id: ps-deploy-teams
 title: 'Deploy-Teams'
-title_meta: 'Deploy-Teams Command'
+title_meta: 'Deploy-Teams'
 keywords: ['deploy', 'teams', 'installation', 'update']
 description: 'Documentation for the Deploy-Teams command to install or update the Teams Machine-Wide Installer to the latest version.'
 tags: ['installation', 'software', 'update', 'windows']
@@ -34,4 +34,6 @@ This script does not require any additional parameters for its execution. To use
 ## Output
 - Deploy-MSTeams-log.txt
 - Deploy-MSTeams-Error.txt
+
+
 

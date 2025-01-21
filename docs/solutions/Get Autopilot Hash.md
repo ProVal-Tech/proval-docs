@@ -1,7 +1,7 @@
 ---
 id: '0af1bff2-a32a-442b-9322-a8a260d150ff'
-title: 'Collecting Hardware Hash for Autopilot Device Registration'
-title_meta: 'Collecting Hardware Hash for Autopilot Device Registration'
+title: 'Get Autopilot Hash'
+title_meta: 'Get Autopilot Hash'
 keywords: ['hardware', 'autopilot', 'registration', 'device', 'monitor', 'script', 'dataview']
 description: 'This document provides a comprehensive guide on how to collect the Hardware Hash for autopilot device registration, including associated scripts, internal monitors, and implementation steps for successful integration.'
 tags: ['windows']
@@ -41,4 +41,6 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
      - [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../cwa/monitors/Get - Autopilot Hash.md>)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
+
+
 

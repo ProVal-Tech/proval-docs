@@ -1,7 +1,7 @@
 ---
 id: '66f60e72-55f5-4c49-938c-8ae4a4cf55b0'
 title: 'Blacklist Agent MAC Address and Retire Agent'
-title_meta: 'Blacklist Agent MAC Address and Retire Agent in ConnectWise Automate'
+title_meta: 'Blacklist Agent MAC Address and Retire Agent'
 keywords: ['blacklist', 'mac', 'agent', 'retire', 'automate']
 description: 'This document describes a script that blacklists the MAC address of a specified agent in ConnectWise Automate and subsequently retires the agent. It is designed to prevent troublesome agents from checking in again, particularly useful for offline or maintenance mode agents. The script details dependencies, variables, user parameters, and the process for executing the blacklist and retirement actions.'
 tags: ['database', 'setup']
@@ -52,4 +52,6 @@ Once the MAC address has been added to the blacklist, the script will move the a
 
 - Script log messages
 - Agent MAC address blacklist
+
+
 

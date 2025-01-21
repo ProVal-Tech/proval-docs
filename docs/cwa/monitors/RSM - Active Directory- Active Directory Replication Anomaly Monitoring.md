@@ -1,7 +1,7 @@
 ---
 id: '495df667-0690-48e0-b929-f7671e9fc92c'
-title: 'Active Directory Replication Monitoring'
-title_meta: 'Active Directory Replication Monitoring'
+title: 'RSM - Active Directory- Active Directory Replication Anomaly Monitoring'
+title_meta: 'RSM - Active Directory- Active Directory Replication Anomaly Monitoring'
 keywords: ['active', 'directory', 'replication', 'monitoring', 'alert']
 description: 'This document details the setup for monitoring Active Directory Replication Failures on Primary Domain Controllers, including alert configurations and ticketing information for incidents detected within the domain.'
 tags: ['active-directory', 'ticketing']
@@ -49,4 +49,6 @@ For a precise understanding of the error codes returned in the `LastError` prope
 ## Implementation
 
 [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<./Active Directory Replication Anomaly Monitoring.md>)
+
+
 

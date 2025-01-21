@@ -1,7 +1,7 @@
 ---
 id: '6bbf6e1c-3721-488d-b807-9c4b4fc78259'
-title: 'CW Control Agent Installation on Mac'
-title_meta: 'CW Control Agent Installation on Mac'
+title: 'CW Control Install - Mac'
+title_meta: 'CW Control Install - Mac'
 keywords: ['cw', 'control', 'agent', 'mac', 'installation', 'removal', 'reinstallation']
 description: 'This document provides a detailed overview of a script designed to perform a fresh installation or a removal and reinstallation of the CW Control agent on a Mac device, including the necessary variables and process steps involved.'
 tags: ['installation', 'software', 'update']
@@ -41,4 +41,6 @@ The script will perform a fresh installation or a removal and reinstallation of 
 ## Output
 
 - Script Logs
+
+
 

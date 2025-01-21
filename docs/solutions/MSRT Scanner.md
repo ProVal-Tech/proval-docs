@@ -1,7 +1,7 @@
 ---
 id: '20e5cbc7-4882-496d-a818-348e42f644db'
-title: 'Malicious Software Removal Tool Scanner Solution'
-title_meta: 'Malicious Software Removal Tool Scanner Solution'
+title: 'MSRT Scanner'
+title_meta: 'MSRT Scanner'
 keywords: ['msrt', 'scanner', 'malware', 'audit', 'monitor']
 description: 'This document outlines a solution for performing MSRT scanning, including optional auto-fix features for detected infections and data storage for auditing purposes. It includes associated scripts, monitors, and dataviews necessary for implementation.'
 tags: ['security', 'windows']
@@ -43,4 +43,6 @@ This solution performs MSRT scanning, auto-fixes detected infections as an optio
      ED06AECD5686944B0A5E5D76C1E7A9EA
      C8759C7E4979819C0BB39DAF4DC64124
      ```
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '18a04fc3-7659-44d6-8a9b-cd080cda4d08'
-title: 'Workstation Patch Policy Overview'
-title_meta: 'Workstation Patch Policy Overview'
+title: 'SEC - Windows Patch - Policy - cPVAL DuoDogs Workstations Patching'
+title_meta: 'SEC - Windows Patch - Policy - cPVAL DuoDogs Workstations Patching'
 keywords: ['patch', 'workstation', 'policy', 'maintenance', 'reboot']
 description: 'This document outlines the organization-level patch policy for workstations, detailing the procedures for patch management, including scheduling maintenance reminders, disabling Windows Automatic Updates, and managing reboot actions based on user activity.'
 tags: ['windows']
@@ -33,4 +33,6 @@ Provide the configuration of the profile using the following templates based on 
 - Patch Windows Automatic Updates for workstations: Every week on Tuesday at 10:00 PM in the machine's time zone, with a skip if offline, and the distribution hours are 2 hours.
 - Patch reboot action is as follows: If the user is logged in, ask for permission. Do nothing if there is no response within 60 minutes. Reboot if the user is not logged in.
 - Windows Automatic Updates are disabled.
+
+
 

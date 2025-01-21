@@ -1,7 +1,7 @@
 ---
 id: '3067b867-c1d4-4f7b-9a21-5344c7078931'
-title: 'Host File Modification Script'
-title_meta: 'Host File Modification Script for DNS Management'
+title: 'Hosts File - Add'
+title_meta: 'Hosts File - Add'
 keywords: ['dns', 'host', 'ip', 'script', 'configuration']
 description: 'This document describes a script that modifies the host file on a machine by taking user-defined parameters for DNS names and IP addresses. It includes a sample run, dependencies, user parameters, and the process for execution, ensuring proper management of DNS entries.'
 tags: ['networking', 'security', 'update', 'windows']
@@ -44,4 +44,6 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents (Extra Data Field)
   - ![Output 1](../../../static/img/Hosts-File---Add/image_2.png) OR ![Output 2](../../../static/img/Hosts-File---Add/image_3.png)
+
+
 

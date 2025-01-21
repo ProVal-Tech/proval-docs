@@ -1,7 +1,7 @@
 ---
 id: ps-rename-itgluedocuments
 title: 'Rename-ITGlueDocuments'
-title_meta: 'Rename-ITGlueDocuments Command'
+title_meta: 'Rename-ITGlueDocuments'
 keywords: ['rename', 'itglue', 'documents', 'bulk']
 description: 'Documentation for the Rename-ITGlueDocuments command to bulk rename ITGlue documents after conversion.'
 tags: []
@@ -21,4 +21,6 @@ Parses through CSV exports from the conversion and directly from ITGlue to renam
 ## Output
 - `.\editeddocs.csv`
 - `.\skippeddocs.csv`
+
+
 

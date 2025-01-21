@@ -1,7 +1,7 @@
 ---
 id: 'f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da'
-title: 'Get PnP Devices in Automate'
-title_meta: 'Get PnP Devices in Automate'
+title: 'Pnp Devices Inventory'
+title_meta: 'Pnp Devices Inventory'
 keywords: ['pnp', 'devices', 'automate', 'information', 'script', 'dataview']
 description: 'This document provides detailed instructions on how to display information about Plug and Play (PnP) devices in ConnectWise Automate. It includes associated scripts and custom tables necessary for implementation, as well as troubleshooting tips for common issues.'
 tags: ['database', 'installation', 'report', 'setup', 'windows']
@@ -32,4 +32,6 @@ Displays detailed information on [PnP Devices](https://docs.microsoft.com/en-us/
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) script.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a7a7e04e-384d-4018-87c5-6abf2d2b2fb2'
-title: 'Remove IIS Log Files Older Than Specified Days'
-title_meta: 'Remove IIS Log Files Older Than Specified Days'
+title: 'Purge IIS Logs Older than X Days Param'
+title_meta: 'Purge IIS Logs Older than X Days Param'
 keywords: ['iis', 'logs', 'purge', 'cleanup', 'directory']
 description: 'This document describes a script that removes IIS log files older than a specified number of days, contingent on the size of the log directory. It provides setup instructions, variable definitions, and a recommended schedule for running the script.'
 tags: ['cleanup', 'setup', 'windows']
@@ -49,4 +49,6 @@ Step 2: Generates the logs as per the PowerShell script's outcome and exits.
 ## Output
 
 - Script Log
+
+
 

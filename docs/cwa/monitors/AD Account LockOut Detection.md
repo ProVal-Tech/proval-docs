@@ -1,7 +1,7 @@
 ---
 id: '2549fcf6-30b5-497b-b44d-7329334bb32c'
-title: 'Custom Ticket Creation for Computer Failures Only'
-title_meta: 'Custom Ticket Creation for Computer Failures Only'
+title: 'AD Account LockOut Detection'
+title_meta: 'AD Account LockOut Detection'
 keywords: ['alert', 'template', 'monitor', 'sql', 'ticket', 'creation', 'failures', 'detection', 'domain', 'controllers']
 description: 'This document provides a step-by-step guide on how to set up a custom ticket creation process for computer failures in ConnectWise Automate. It includes instructions for importing alert templates, validating scripts, running SQL queries, and configuring monitors specifically for Domain Controllers.'
 tags: ['active-directory', 'sql', 'windows']
@@ -107,4 +107,6 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
+
+
 

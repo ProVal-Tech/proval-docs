@@ -1,7 +1,7 @@
 ---
 id: '0004bd17-6820-4def-b5bf-96686276b7ae'
-title: 'Server Offline Ticketing Automation'
-title_meta: 'Server Offline Ticketing Automation'
+title: 'CW Control RMM+ API - Offline Server AutoFix'
+title_meta: 'CW Control RMM+ API - Offline Server AutoFix'
 keywords: ['ticketing', 'automation', 'monitoring', 'troubleshooting', 'offline']
 description: 'This document outlines a script designed to automate the ticketing process for offline servers. It triggers based on a monitor, creates a ticket, performs troubleshooting steps, and updates the ticket with comments as actions are taken. The script ensures consistent communication on the status of the offline server and attempts to resolve issues automatically.'
 tags: ['ticketing']
@@ -54,4 +54,6 @@ The script is designed to consistently update the ticket with new information as
 ![Image 4](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_4.png)
 
 ![Image 5](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_5.png)
+
+
 

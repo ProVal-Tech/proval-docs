@@ -1,7 +1,7 @@
 ---
 id: '1d53f921-ce2e-4ce6-9857-d48984b0d231'
-title: 'Zenbleed Vulnerability Report'
-title_meta: 'Zenbleed Vulnerability Report - AMD Ryzen Systems'
+title: 'Zenbleed Vulnerable Machines'
+title_meta: 'Zenbleed Vulnerable Machines'
 keywords: ['zenbleed', 'amd', 'vulnerability', 'ryzen', 'epyc', 'cpu', 'data-theft']
 description: 'This document provides a comprehensive data view of machines that are expected to be vulnerable to the Zenbleed vulnerability, specifically targeting systems with AMD Ryzen 3000/4000/5000 series processors, AMD EPYC processors, and AMD Ryzen 7020 series.'
 tags: ['amd', 'cpu', 'data-theft', 'performance', 'report', 'vulnerability', 'windows']
@@ -30,4 +30,6 @@ This data view compiles a list of machines that are anticipated to be vulnerable
 | Processor Cache Size      | Cache Size of the Processor                   |
 | Processor Manufacturer     | Manufacturer of the Processor                 |
 | Processor Serial          | Serial Number of the Processor                |
+
+
 

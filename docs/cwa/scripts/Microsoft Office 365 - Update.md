@@ -1,7 +1,7 @@
 ---
 id: 'f63488bf-e843-494e-89a0-d464f4a6c1ad'
-title: 'Automate Wrapper for Agnostic Update-Office Script'
-title_meta: 'Automate Wrapper for Agnostic Update-Office Script'
+title: 'Microsoft Office 365 - Update'
+title_meta: 'Microsoft Office 365 - Update'
 keywords: ['automate', 'update', 'office', 'script', 'wrapper']
 description: 'This document provides an overview of an Automate Wrapper designed to execute the Agnostic Update-Office script. It includes sample runs, dependencies, variable descriptions, global parameters, output details, and ticketing information.'
 tags: ['software', 'ticketing', 'update']
@@ -54,4 +54,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/Microsoft-Office-365---Update/image_2.png)
+
+
 

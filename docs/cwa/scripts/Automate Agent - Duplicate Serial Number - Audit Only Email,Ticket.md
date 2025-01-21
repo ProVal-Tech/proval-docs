@@ -1,7 +1,7 @@
 ---
 id: '44296eb1-9cdc-4833-ac40-7f390eac3a7f'
-title: 'Automate Agent - Duplicate Serial Number - Audit'
-title_meta: 'Automate Agent - Duplicate Serial Number - Audit'
+title: 'Automate Agent - Duplicate Serial Number - Audit Only Email,Ticket'
+title_meta: 'Automate Agent - Duplicate Serial Number - Audit Only Email,Ticket'
 keywords: ['automate', 'agent', 'duplicate', 'serial', 'audit', 'email', 'ticketing']
 description: 'This document provides a detailed overview of a script designed to audit duplicate agents in the Automate environment based on serial number, name, and client affiliation. It includes setup instructions, system properties, user parameters, and output details, ensuring effective management of duplicate agents.'
 tags: ['email']
@@ -67,4 +67,6 @@ Duplicate Agents are listed below:
 In case there is no duplicate serial number:
 
 `No duplicate machines identified based on Serial Number.`
+
+
 

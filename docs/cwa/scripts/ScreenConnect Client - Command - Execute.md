@@ -1,7 +1,7 @@
 ---
 id: 'b713bbc8-a1d9-4e08-ac77-d02b634569f6'
-title: 'Execute Command via Control'
-title_meta: 'Execute Command via Control'
+title: 'ScreenConnect Client - Command - Execute'
+title_meta: 'ScreenConnect Client - Command - Execute'
 keywords: ['command', 'automation', 'control', 'rmm', 'script']
 description: 'This document outlines a script that executes a command through the default command-line parser on the target agent via Control, detailing user parameters, system properties, and expected output.'
 tags: ['networking', 'windows']
@@ -40,4 +40,6 @@ This script will execute a command via the default command-line parser on the ta
 ## Output
 
 - Script log
+
+
 

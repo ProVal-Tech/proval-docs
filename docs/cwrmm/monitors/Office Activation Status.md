@@ -1,7 +1,7 @@
 ---
 id: 'a4b90ce5-21c6-40c4-9158-ff60bd08a53f'
-title: 'Office Activation Status Alert'
-title_meta: 'Office Activation Status Alert'
+title: 'Office Activation Status'
+title_meta: 'Office Activation Status'
 keywords: ['office', 'activation', 'alert', 'unlicensed', 'endpoint']
 description: 'This document provides a comprehensive guide on creating a monitor that generates alerts for any unlicensed Office products on endpoints. It includes step-by-step instructions for setting up the monitor, configuring the script, and managing alert conditions.'
 tags: ['setup', 'windows']
@@ -87,4 +87,6 @@ Generates an alert for any unlicensed Office products on the endpoint.
 
 13. Click the `Save` button to save the monitor set.  
     ![Save Monitor Set](../../../static/img/Office-Activation-Status/image_14.png)
+
+
 

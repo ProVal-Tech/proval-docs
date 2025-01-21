@@ -1,7 +1,7 @@
 ---
 id: 'da7e6b68-3ac3-4d15-9969-ca843a187d2d'
-title: 'Current Agent PowerShell Version'
-title_meta: 'Current Agent PowerShell Version'
+title: 'PowerShell Version Audit'
+title_meta: 'PowerShell Version Audit'
 keywords: ['powershell', 'agent', 'version', 'script', 'query']
 description: 'This document provides a detailed overview of a script that obtains the current agent PowerShell version, supported across all versions of PowerShell. It includes sample runs, dependencies, variables, process description, and expected output.'
 tags: ['performance', 'windows']
@@ -42,4 +42,6 @@ This script runs a PowerShell query that is supported by all Windows operating s
 - Script log
 - Script state
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '59682d1e-d5d7-4cf2-b923-684f6e5c24ce'
-title: 'Overview of ProVal Stack Machine Custom Fields Initialization'
-title_meta: 'Overview of ProVal Stack Machine Custom Fields Initialization'
+title: 'Initialize-VsaAgentFields.ps1'
+title_meta: 'Initialize-VsaAgentFields.ps1'
 keywords: ['proval', 'stack', 'machine', 'customfields', 'initialization']
 description: 'This document provides an overview of the process for writing the ProVal Stack Machine Custom Fields to a new client environment using the VSAAPI ProVal Module. It outlines the requirements, process, payload usage, parameters, and expected output.'
 tags: ['setup', 'software', 'windows']
@@ -36,4 +36,6 @@ The VSAAPI module is used to interface with the client environment, setting new 
 - `Initialize-VsaAgentFields-error.txt`
 
 **NOTE:** This can be run from VSA 9.5 by executing the Agent Procedure: Shared > VSA Automation > Stack CF Initialization.
+
+
 

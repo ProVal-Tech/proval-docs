@@ -1,7 +1,7 @@
 ---
 id: '6ca0f24e-6a38-47a0-8858-0a47143355ad'
-title: 'Update Visual Studio Code'
-title_meta: 'Update Visual Studio Code to the Latest Version'
+title: 'SWM - Software Update - Upgrade Visual Studio Code Latest'
+title_meta: 'SWM - Software Update - Upgrade Visual Studio Code Latest'
 keywords: ['update', 'visualstudio', 'code', 'installer', 'application']
 description: 'This document outlines a script designed to update the installed version of Visual Studio Code to the latest available version. It includes details on user requirements, prompts during the update process, and variables used within the script.'
 tags: ['installation', 'software', 'update', 'windows']
@@ -38,4 +38,6 @@ This prompt is inevitable for computers with the `User Installer` version of the
 ## Output
 
 - Script logs
+
+
 

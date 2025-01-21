@@ -1,7 +1,7 @@
 ---
 id: '86fee99f-6e26-440b-b6a4-6c0eb32fd240'
-title: 'Reboot Scheduling Solution'
-title_meta: 'Reboot Scheduling Solution for Target Machines'
+title: 'Reboot TriggerSchedule on Specific Days'
+title_meta: 'Reboot TriggerSchedule on Specific Days'
 keywords: ['reboot', 'schedule', 'custom fields', 'workstation', 'server', 'implementation']
 description: 'This document outlines a solution that allows users to trigger immediate reboots or schedule them for the next applicable day at a specified time on target machines, based on approved windows defined in company-level custom fields.'
 tags: []
@@ -30,4 +30,6 @@ This solution allows users to trigger an immediate reboot or schedule it for the
 - Create the [Force Reboot Server With Reboot Windows Verification](<../cwrmm/tasks/Force Reboot Server With Reboot Windows Verification.md>) and follow the deployment instructions.
 - Create the [Server Reboot Schedule on Specific Days](<../cwrmm/tasks/Server Reboot Schedule on Specific Days.md>) and follow the deployment instructions.
 - Create the [Workstation Reboot Schedule on Specific Days](<../cwrmm/tasks/Workstation Reboot Schedule on Specific Days.md>) and follow the deployment instructions.
+
+
 

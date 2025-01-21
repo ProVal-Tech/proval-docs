@@ -1,7 +1,7 @@
 ---
 id: 'e562d1d6-a18e-4941-be1b-95117d0b2fa6'
-title: 'EPM Data Collection Crash Dump'
-title_meta: 'EPM Data Collection Crash Dump'
+title: 'plugin_proval_crash_dumps'
+title_meta: 'plugin_proval_crash_dumps'
 keywords: ['data', 'crash', 'dump', 'collection', 'epm']
 description: 'This document describes the purpose and structure of the optional container for holding data retrieved from the EPM Data Collection script for crash dumps. It includes details on dependencies and the structure of the associated database table, plugin_proval_crash_dumps, including column types and explanations.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -49,4 +49,6 @@ Modified by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-Cr
 | Dump_File_Time        | VARCHAR | The dump file time.                           |
 | Computer_Name         | VARCHAR | The computer name; sometimes not shown.       |
 | Processors_count      | INT     | The number of processors.                      |
+
+
 

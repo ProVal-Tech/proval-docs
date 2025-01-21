@@ -1,7 +1,7 @@
 ---
 id: 'a86e30e2-ac59-4c00-957a-f49575ff6027'
-title: 'Hyper-V Virtual Machine Audit'
-title_meta: 'Hyper-V Virtual Machine Audit Information'
+title: 'Hyper-V VMs Audit Script'
+title_meta: 'Hyper-V VMs Audit Script'
 keywords: ['hyper-v', 'audit', 'virtual', 'machine', 'information']
 description: 'This document provides a comprehensive overview of the auditing information related to Hyper-V virtual machines, including details about their state, status, and configuration settings.'
 tags: ['hyper-v', 'performance', 'virtualization', 'windows']
@@ -31,4 +31,6 @@ This dataview displays auditing information about Hyper-V virtual machines.
 | Automatic Start Action     | Displays the status of the automatic start action of the virtual machine. |
 | Automatic Stop Action      | Displays the status of the automatic stop action of the virtual machine.  |
 | Automatic Start Delay      | Displays the automatic start delay time of the virtual machine.   |
+
+
 

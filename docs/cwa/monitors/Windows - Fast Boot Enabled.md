@@ -1,7 +1,7 @@
 ---
 id: '0598c4eb-e1c8-4b3a-8e49-7f654622f459'
-title: 'Windows Fast Boot Monitor'
-title_meta: 'Windows Fast Boot Monitor'
+title: 'Windows - Fast Boot Enabled'
+title_meta: 'Windows - Fast Boot Enabled'
 keywords: ['monitor', 'fast', 'boot', 'windows', 'disable']
 description: 'This document outlines a monitor that detects machines with Windows Fast Boot enabled and provides an Autofix for Windows-based machines to disable it. It is intended for workstations and should not be run on servers.'
 tags: ['windows']
@@ -20,4 +20,6 @@ Using a role definition, this monitor detects machines where Windows Fast Boot i
 ## Target
 
 Workstations - should be run on non-servers.
+
+
 

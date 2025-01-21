@@ -1,7 +1,7 @@
 ---
 id: '200c48e8-a828-43da-8ae5-f31a3280893b'
-title: 'DNS Service Autofix Solution'
-title_meta: 'DNS Service Autofix Solution'
+title: 'DNS Service Check'
+title_meta: 'DNS Service Check'
 keywords: ['dns', 'monitor', 'alert', 'script', 'service']
 description: 'This document outlines a comprehensive solution for monitoring and fixing DNS services on DNS servers. It includes a remote monitor, an alert template, and a script designed to automatically restart DNS services if they fail. Detailed instructions for importing and implementing the solution are also provided.'
 tags: []
@@ -25,4 +25,6 @@ This solution contains a remote monitor, a search, an alert template, and a scri
 
 - Follow the document below for import and implementation steps:  
   [Import - Remote Monitor - ProVal - Production - DNS Service Check](<./DNS Service Monitoring.md>)
+
+
 

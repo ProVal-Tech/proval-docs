@@ -1,7 +1,7 @@
 ---
 id: 'bef87782-0d9d-40f0-96c5-d30b589b57b4'
-title: 'Frequent Logged-In Domain Users Script'
-title_meta: 'Frequent Logged-In Domain Users Script - Automate Integration'
+title: 'Detect Frequent Logon User (Set Computer Contact)'
+title_meta: 'Detect Frequent Logon User (Set Computer Contact)'
 keywords: ['loggedin', 'domain', 'users', 'automate', 'contact', 'windows', 'security']
 description: 'This script gathers frequently logged-in domain users on workstations and associates the detected user as a contact in ConnectWise Automate. It analyzes the lsass.exe file to identify users, determines the most frequent user over a specified period, and updates the computer contact information accordingly.'
 tags: ['active-directory', 'security', 'setup', 'windows']
@@ -54,4 +54,6 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user, a
 - Script log
 - EDFs
 - Dataview
+
+
 

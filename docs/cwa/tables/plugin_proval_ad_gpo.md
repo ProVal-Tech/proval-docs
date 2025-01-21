@@ -1,7 +1,7 @@
 ---
 id: 'c7cf649a-dd80-4e9d-8c80-eb95b813b7c9'
-title: 'Group Policy Audit Report'
-title_meta: 'Group Policy Audit Report'
+title: 'plugin_proval_ad_gpo'
+title_meta: 'plugin_proval_ad_gpo'
 keywords: ['group', 'policy', 'audit', 'active', 'directory']
 description: 'This document provides an overview of the audited group policy objects retrieved from the Group Policy Audit script, detailing their attributes and dependencies for effective management and reporting in Active Directory environments.'
 tags: ['active-directory', 'report', 'windows']
@@ -34,4 +34,6 @@ This document displays the list of audited group policy objects from the script 
 | ModifiedTime      | DATETIME  | Last time this GPO was modified.                                |
 | ReadTime          | DATETIME  | Last time this GPO was read.                                    |
 | LinksTo           | TEXT      | Comma-separated list of OUs that this GPO links to.            |
+
+
 

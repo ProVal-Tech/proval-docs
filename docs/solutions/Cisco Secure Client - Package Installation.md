@@ -1,7 +1,7 @@
 ---
 id: '424ac08c-5e8a-4ebe-9922-050882b9f6e1'
-title: 'Install Cisco Secure Client and Selected Modules'
-title_meta: 'Install Cisco Secure Client and Selected Modules'
+title: 'Cisco Secure Client - Package Installation'
+title_meta: 'Cisco Secure Client - Package Installation'
 keywords: ['cisco', 'client', 'installation', 'modules', 'windows', 'macintosh']
 description: 'This document provides a comprehensive guide for installing the Cisco Secure Client along with selected modules for both Windows and Macintosh operating systems, including associated scripts and implementation steps.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -65,4 +65,6 @@ This document outlines the installation process for the Cisco Secure Client and 
      - Right-click and Run Now to start the monitor.
 
 8. Work with the partner on the Cisco Secure Client modules they would like to install for both Mac and Windows. Set the Cisco Secure Client EDFs accordingly. For more information on these modules and EDFs, refer to [Script - Cisco Secure Client - Package Installation [Macintosh]](<../cwa/scripts/Cisco Secure Client - Package Installation Macintosh.md>) and [Script - Cisco Secure Client - Package Installation [Windows]](<../cwa/scripts/Cisco Secure Client - Package Installation Windows.md>).
+
+
 

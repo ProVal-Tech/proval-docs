@@ -1,7 +1,7 @@
 ---
 id: 'c02b447f-36ba-4a88-b40f-a47cf08fb690'
-title: 'ProVal - Production - Active Directory Replication Anomaly Monitoring'
-title_meta: 'ProVal - Production - Active Directory Replication Anomaly Monitoring'
+title: 'Active Directory Replication Anomaly Monitoring'
+title_meta: 'Active Directory Replication Anomaly Monitoring'
 keywords: ['active-directory', 'monitoring', 'replication', 'anomaly', 'sql', 'alert', 'ticket']
 description: 'This document provides a step-by-step guide to set up the ProVal - Production - Active Directory Replication Anomaly Monitoring remote monitor. It includes SQL queries to import necessary searches, establish remote monitoring, and validate configurations for effective Active Directory replication monitoring.'
 tags: ['active-directory', 'sql']
@@ -131,4 +131,6 @@ Validate the presence of the `ProVal - Production - Active Directory Replication
 
 ## Step 5
 Apply the relevant alert template and ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+
+
 

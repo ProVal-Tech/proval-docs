@@ -1,7 +1,7 @@
 ---
 id: '765eb6aa-cc3a-471e-b11e-d7d8e1972e11'
-title: 'VSA Vulnerability Scan Script'
-title_meta: 'VSA Vulnerability Scan Script'
+title: 'Kaseya VSA Detection Tool'
+title_meta: 'Kaseya VSA Detection Tool'
 keywords: ['vulnerability', 'scan', 'vsa', 'server', 'audit']
 description: 'This document provides details about a script that performs a vulnerability scan on a Kaseya VSA server, logging the output to a dependent dataview. It includes a summary of the script functionality, sample run images, dependencies, and the processes involved in detecting vulnerabilities.'
 tags: ['security']
@@ -39,4 +39,6 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 - Script log
 - Script state
 - Dataview
+
+
 

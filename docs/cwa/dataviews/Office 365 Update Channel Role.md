@@ -1,7 +1,7 @@
 ---
 id: '246e46a3-3de6-40c4-b5f2-21fea200ab9b'
-title: 'Office 365 Update Channel Report'
-title_meta: 'Office 365 Update Channel Report'
+title: 'Office 365 Update Channel Role'
+title_meta: 'Office 365 Update Channel Role'
 keywords: ['office365', 'update', 'channel', 'report', 'windows']
 description: 'This document provides a comprehensive report on the Office 365 Update Channels set on various machines, detailing whether they are Current, Monthly, Semi-Annual, or not set at all. It includes SQL representation for data retrieval and dependencies for accurate reporting.'
 tags: ['office365', 'report', 'update', 'windows']
@@ -125,4 +125,6 @@ FROM
       c.ComputerID
   ) AS dt
 ```
+
+
 

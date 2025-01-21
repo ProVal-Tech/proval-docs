@@ -1,7 +1,7 @@
 ---
 id: '4a0526ef-6e45-4053-9a64-27713b7f4d28'
-title: 'Install Feature Update for Windows 10/11'
-title_meta: 'Install Feature Update for Windows 10/11 - Upgrade and Update Script'
+title: 'Install Windows Upgrade'
+title_meta: 'Install Windows Upgrade'
 keywords: ['windows', 'upgrade', 'feature', 'update', 'installation', 'patching']
 description: 'This document provides a comprehensive overview of the script that installs the latest feature update on Windows 10 and 11 machines. It includes options for upgrading from Windows 10 to Windows 11, execution methods, user parameters, output logs, and ticketing details for handling failures.'
 tags: ['installation', 'patching', 'ticketing', 'update', 'windows']
@@ -156,4 +156,6 @@ Error Log
 Setup Diag Result  
 ----------------  
 `\\<Outcome of the SetupDiagTool verifying the upgrade process>`
+
+
 

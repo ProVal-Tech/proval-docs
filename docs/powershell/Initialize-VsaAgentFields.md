@@ -1,7 +1,7 @@
 ---
 id: ps-initialize-vsaagentfields
 title: 'Initialize-VsaAgentFields'
-title_meta: 'Initialize-VsaAgentFields Command'
+title_meta: 'Initialize-VsaAgentFields'
 keywords: ['vsa', 'customfields', 'client', 'environment']
 description: 'Documentation for the Initialize-VsaAgentFields command to write the ProVal Stack Machine Custom Fields to a new client environment.'
 tags: []
@@ -32,4 +32,6 @@ Uses the VSAAPI module to interface with the client environment, setting new Cus
 ## Output
 - Initialize-VsaAgentFields-Log.txt
 - Initialize-VsaAgentFields-error.txt
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '1986c949-6d8f-40e6-b802-c32195c9a2d3'
-title: 'AV Status Check Script'
-title_meta: 'AV Status Check Script - Verify and Start AV Process'
+title: 'Autofix - Monitor AV Service Status'
+title_meta: 'Autofix - Monitor AV Service Status'
 keywords: ['av', 'monitor', 'process', 'ticketing', 'automation']
 description: 'This script helps to verify whether antivirus (AV) is running on a system. If the AV is not running, the script attempts to start the AV process. It is intended for use with the "AV-Disabled" monitor and can create or update tickets based on the AV status. This automation saves time and enhances security management.'
 tags: ['security', 'ticketing']
@@ -50,4 +50,6 @@ The intended target for this script is the "AV-Disabled" monitor.
 
 - Script log
 - Script state
+
+
 

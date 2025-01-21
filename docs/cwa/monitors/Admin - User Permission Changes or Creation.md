@@ -1,7 +1,7 @@
 ---
 id: '5462a5dd-ba08-475c-b397-a1fb656649ae'
-title: 'User Activity and Permissions Monitor'
-title_meta: 'User Activity and Permissions Monitor'
+title: 'Admin - User Permission Changes or Creation'
+title_meta: 'Admin - User Permission Changes or Creation'
 keywords: ['monitor', 'user', 'activity', 'permissions', 'alert']
 description: 'This document outlines a RAWSQL monitor designed to alert administrators whenever a new user is added or when a user’s permissions are modified, ensuring the security and integrity of the system.'
 tags: ['database', 'security', 'ticketing']
@@ -36,4 +36,6 @@ Details of the change are as follows:
 Thank you,  
 
 ![Image](../../../static/img/Admin---User-Permission-Changes-or-Creation/image_1.png)
+
+
 

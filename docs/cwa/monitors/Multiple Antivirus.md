@@ -1,7 +1,7 @@
 ---
 id: '6b8a4b4e-4df8-4f97-af11-ee8702e8ccbd'
-title: 'Multiple Antivirus Alert Monitor'
-title_meta: 'Multiple Antivirus Alert Monitor'
+title: 'Multiple Antivirus'
+title_meta: 'Multiple Antivirus'
 keywords: ['antivirus', 'monitor', 'windows', 'alert', 'security']
 description: 'This document provides a detailed overview of a monitor designed to alert users when two or more antivirus products are present on a Windows machine. It outlines the requirements, setup instructions, and potential FAQs related to the functionality of the monitor.'
 tags: ['security', 'windows']
@@ -53,5 +53,7 @@ The intended target of this monitor is Windows-based machines that have had at l
 ```
 return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
+
+
 
 

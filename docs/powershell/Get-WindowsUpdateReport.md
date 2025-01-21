@@ -1,7 +1,7 @@
 ---
 id: ps-get-windowsupdatereport
 title: 'Get-WindowsUpdateReport'
-title_meta: 'Get-WindowsUpdateReport Command'
+title_meta: 'Get-WindowsUpdateReport'
 keywords: ['windows', 'update', 'report', 'patches']
 description: 'Documentation for the Get-WindowsUpdateReport command to get a list of patches that are installed or available on the local machine.'
 tags: ['report', 'update', 'windows']
@@ -107,4 +107,6 @@ Running this script on Windows 7 and earlier versions is at best unstable and at
 ```
 .\Get-Windows10PatchInfo-log.txt
 ```
+
+
 

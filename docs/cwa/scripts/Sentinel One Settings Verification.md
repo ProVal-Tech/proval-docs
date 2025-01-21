@@ -1,7 +1,7 @@
 ---
 id: '9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5'
-title: 'SentinelOne Token Verification'
-title_meta: 'SentinelOne Token Verification'
+title: 'Sentinel One Settings Verification'
+title_meta: 'Sentinel One Settings Verification'
 keywords: ['sentinelone', 'token', 'verification', 'connectwise', 'automate']
 description: 'This document provides a comprehensive guide on how to obtain the site key and URL associated with a target endpoint in ConnectWise Automate, and compare it to the value set in the Client-level EDF named "SentinelOne SITE_TOKEN". It includes variables, parameters, configuration, and output details.'
 tags: ['security', 'software']
@@ -97,4 +97,6 @@ SentinelOne URL should be: \<URL>
 SentinelOne Site key should be: \<LicenseKey>
 To resolve a license key mismatch in SentinelOne, you must uninstall and then reinstall the software using the correct license key.
 ```
+
+
 

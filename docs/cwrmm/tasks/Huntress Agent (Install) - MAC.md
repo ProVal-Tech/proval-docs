@@ -1,7 +1,7 @@
 ---
 id: '3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2'
 title: 'Huntress Agent (Install) - MAC'
-title_meta: 'Huntress Agent Installation Script for MAC'
+title_meta: 'Huntress Agent (Install) - MAC'
 keywords: ['huntress', 'mac', 'installation', 'agent', 'deploy']
 description: 'This document provides a detailed guide on creating a script to check for the installation of the Huntress agent on MAC machines. If the agent is not installed, the script will attempt to download and install it while logging the results of the operation.'
 tags: ['installation', 'logging']
@@ -186,4 +186,6 @@ Once selected, click on Run to schedule the script as per requirement.
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'd49db584-9380-486d-a179-c014352f8be1'
-title: 'Local Admin Group Cleanup Monitoring'
-title_meta: 'Local Admin Group Cleanup Monitoring - Detect Unexecuted Cleanup Processes'
+title: 'Local Admin Group Cleanup'
+title_meta: 'Local Admin Group Cleanup'
 keywords: ['monitoring', 'cleanup', 'admin', 'windows', 'script']
 description: 'This document outlines the internal monitor that detects Windows computers where the local admin group cleanup process is enabled but has not been executed in the past 7 days. It provides details on dependencies and alert templates for effective monitoring.'
 tags: ['security', 'setup', 'windows']
@@ -24,4 +24,6 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Local Admin Group Cleanup`
+
+
 

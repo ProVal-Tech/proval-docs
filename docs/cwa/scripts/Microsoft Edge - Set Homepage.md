@@ -1,7 +1,7 @@
 ---
 id: 'ea27a6a7-8b06-4120-b827-745121614aa8'
-title: 'Add Registry Policy for Enforced Homepage in Microsoft Edge'
-title_meta: 'Add Registry Policy for Enforced Homepage in Microsoft Edge'
+title: 'Microsoft Edge - Set Homepage'
+title_meta: 'Microsoft Edge - Set Homepage'
 keywords: ['registry', 'homepage', 'microsoft', 'edge', 'chromium', 'policy', 'enforcement']
 description: 'This document outlines a script that adds a registry policy to enforce a specific homepage in Microsoft Edge (Chromium). It details the necessary dependencies, user parameters, and the process for executing the script, along with sample output and logs.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -46,4 +46,6 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on the computer
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-protect-screenlock
 title: 'Protect-ScreenLock'
-title_meta: 'Protect-ScreenLock Command'
+title_meta: 'Protect-ScreenLock'
 keywords: ['screenlock', 'screensaver', 'timeout', 'security']
 description: 'Documentation for the Protect-ScreenLock command to ensure screen saver settings are enabled and set to a specified timeout.'
 tags: ['security', 'windows']
@@ -74,4 +74,6 @@ Location of output for log, result, and error files.
 .\gpresult_computer.html
 .\gpresult_user.html
 ```
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'cce172ca-7bb4-44ff-ada3-77ffd6fc216e'
-title: 'Remote Monitor for New Local Admin Detection'
-title_meta: 'Remote Monitor for New Local Admin Detection'
+title: 'New Local Admin'
+title_meta: 'New Local Admin'
 keywords: ['monitor', 'local', 'admin', 'ticket', 'detection', 'windows', 'computers']
 description: 'This document outlines the setup and implementation of a remote monitor designed to detect newly created or promoted local administrators on Windows computers. It details the necessary configurations, dependencies, and ticketing processes involved in managing alerts for local admin changes.'
 tags: ['security', 'ticketing', 'windows']
@@ -56,4 +56,6 @@ Please follow the instructions provided in the implementation article to impleme
 ![Example Image](../../../static/img/New-Local-Admin/image_3.png)
 
 **Automate will never close the ticket; instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+
+
 

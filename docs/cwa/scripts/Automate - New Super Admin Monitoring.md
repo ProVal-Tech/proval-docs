@@ -1,7 +1,7 @@
 ---
 id: 'acc57018-b868-4129-b4a5-0f1052dcc1ae'
-title: 'Monitor for New Super Admins'
-title_meta: 'Monitor for New Super Admins - Script Overview'
+title: 'Automate - New Super Admin Monitoring'
+title_meta: 'Automate - New Super Admin Monitoring'
 keywords: ['monitor', 'super', 'admins', 'alert', 'ticket']
 description: 'This script monitors for the creation of new super admins since the last run, generating alerts for any new additions. It saves time by automating the tracking process and creating corresponding tickets for any changes.'
 tags: ['security']
@@ -40,4 +40,6 @@ A temporary custom table is referenced to determine the previous state of the su
 
 - Ticket
 - Script Log
+
+
 

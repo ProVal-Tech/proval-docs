@@ -1,7 +1,7 @@
 ---
 id: 'ef761e33-36e7-47d1-aa96-7bed8d18b3ca'
-title: 'Install Windows Feature Update'
-title_meta: 'Install Windows Feature Update on Endpoint'
+title: 'SEC - Windows Patching - Feature Update Install'
+title_meta: 'SEC - Windows Patching - Feature Update Install'
 keywords: ['windows', 'update', 'feature', 'install', 'script']
 description: 'This document outlines the process for running the Install-FeatureUpdate script to install the latest Windows Feature Update on an endpoint. It includes sample runs, dependencies, and detailed documentation of variables, parameters, and output methods.'
 tags: ['security', 'update', 'windows']
@@ -65,4 +65,6 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
+
+
 

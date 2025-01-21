@@ -1,7 +1,7 @@
 ---
 id: 'dd445ce7-a149-452c-9b35-dc1adbab4e06'
-title: 'Install Winget Package on Target Endpoint'
-title_meta: 'Install Winget Package on Target Endpoint'
+title: 'Winget - InstallUpdate'
+title_meta: 'Winget - InstallUpdate'
 keywords: ['winget', 'package', 'install', 'endpoint']
 description: 'This document provides a detailed guide on how to install a Winget package on a target endpoint, including sample runs, dependencies, and parameters required for the process.'
 tags: ['installation', 'software', 'windows']
@@ -41,4 +41,6 @@ Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor
 ## Output
 
 - Script log
+
+
 

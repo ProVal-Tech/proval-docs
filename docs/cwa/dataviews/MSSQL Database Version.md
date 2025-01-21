@@ -1,7 +1,7 @@
 ---
 id: 'eb2798dd-20c1-4c57-96c7-56349f2867f1'
-title: 'MSSQL Database Version and Patch Level Overview'
-title_meta: 'MSSQL Database Version and Patch Level Overview'
+title: 'MSSQL Database Version'
+title_meta: 'MSSQL Database Version'
 keywords: ['mssql', 'database', 'version', 'patch', 'monitoring']
 description: 'This document provides an overview of the version and patch level details of MSSQL Servers, detailing the data collected through the associated script and its dependencies. It outlines the key columns and their descriptions for better understanding and utilization.'
 tags: ['database', 'report', 'windows']
@@ -36,5 +36,7 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 | MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
 | MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
 | Data Collection Time  | Data Collection Time                                              |
+
+
 
 

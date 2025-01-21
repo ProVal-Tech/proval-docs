@@ -1,7 +1,7 @@
 ---
 id: '0b46811b-be88-407b-aa61-6c63a73ff848'
-title: 'Fetch ConnectWise Manage Configurations'
-title_meta: 'Fetch ConnectWise Manage Configurations'
+title: 'Get CWM Configurations - Active And Managed Only'
+title_meta: 'Get CWM Configurations - Active And Managed Only'
 keywords: ['connectwise', 'configurations', 'database', 'custom', 'table', 'dataview', 'sql', 'api']
 description: 'This document outlines a script that retrieves basic information from ConnectWise Manage configurations and stores it in a custom database table. It also details the necessary variables, global parameters, and provides links for creating API keys and obtaining client IDs.'
 tags: ['connectwise', 'database', 'report', 'sql']
@@ -51,4 +51,6 @@ How to get clientID: [Request to get a Client ID](https://connectwise20.my.site.
 - Script Log
 - Custom Table
 - Dataview
+
+
 

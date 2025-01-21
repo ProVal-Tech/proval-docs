@@ -1,7 +1,7 @@
 ---
 id: '0894c8ab-7630-40fe-81bd-e8af8744c186'
-title: 'Ookla Speed Test Automation Script'
-title_meta: 'Ookla Speed Test Automation Script'
+title: 'SpeedTest - Ookla'
+title_meta: 'SpeedTest - Ookla'
 keywords: ['speedtest', 'ookla', 'internet', 'performance', 'automation']
 description: 'This script automates the process of gathering internet speed test records from Ookla, saving time and providing accurate performance metrics. It downloads and executes the speed test, storing the results for further analysis.'
 tags: ['performance']
@@ -44,4 +44,6 @@ This script downloads the speed test zip file from Ookla and extracts it. After 
 - Script log
 - Script state
 - Dataview
+
+
 

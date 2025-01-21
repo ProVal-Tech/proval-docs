@@ -1,7 +1,7 @@
 ---
 id: ps-get-batteryreport
 title: 'Get-BatteryReport'
-title_meta: 'Get-BatteryReport Command'
+title_meta: 'Get-BatteryReport'
 keywords: ['battery', 'report', 'powercfg', 'system']
 description: 'Documentation for the Get-BatteryReport command to generate and return a detailed battery report using powercfg /batteryreport.'
 tags: ['performance', 'report', 'windows']
@@ -105,5 +105,7 @@ Returns a system object containing all data from the generated battery report.
         StartFullChargeCapacity
         StartTimestamp
 ```
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: 'dc98b12a-e57d-4d58-b8c9-9976d33b2a10'
-title: 'Set Custom Display Scaling for Windows Users'
-title_meta: 'Set Custom Display Scaling for Windows Users'
+title: 'Set-DisplayScaling'
+title_meta: 'Set-DisplayScaling'
 keywords: ['display', 'scaling', 'windows', 'users', 'script']
 description: 'This document provides a script to set custom display scaling on existing and new users for Windows machines. It includes user parameters, sample runs, and dependencies for successful execution.'
 tags: ['performance', 'setup', 'windows']
@@ -35,4 +35,6 @@ This script sets custom display scaling on existing as well as new users for Win
 ## Output
 
 - Script log
+
+
 

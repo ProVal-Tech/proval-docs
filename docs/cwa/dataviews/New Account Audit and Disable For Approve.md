@@ -1,7 +1,7 @@
 ---
 id: 'fac82ae1-8f32-40b3-b9b2-a38f1a71e633'
-title: 'New Account Audit Dataview'
-title_meta: 'New Account Audit Dataview for Account Creation Monitoring'
+title: 'New Account Audit and Disable For Approve'
+title_meta: 'New Account Audit and Disable For Approve'
 keywords: ['audit', 'accounts', 'creation', 'detection', 'management', 'local', 'admin', 'status', 'verification']
 description: 'This dataview provides insights into newly created accounts, including details about the creator, account type, and logon status. It is essential for auditing account creation on servers and helps in monitoring security and compliance.'
 tags: ['accounts']
@@ -40,4 +40,6 @@ This dataview shows newly created accounts. It can be used for auditing accounts
 | New Account Disable Status    | Indicates whether the new account is disabled or not (No Action Taken - if this feature is not chosen in the script) |
 | New Account Approved         | Indicates whether the new account is approved after verification (No Action Required - Since disable is not enabled, it will show that approval is not required) |
 | New Account Approved Date    | Shows when the account was approved to be enabled.                          |
+
+
 

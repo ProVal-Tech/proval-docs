@@ -1,7 +1,7 @@
 ---
 id: '8022b663-4923-47d5-b8c7-7ba24aae305d'
-title: 'Enable User-Level Scheduled Task for Winget Update on Windows'
-title_meta: 'Enable User-Level Scheduled Task for Winget Update on Windows'
+title: 'EndPoint - WingetUpdateAll_UserTask_Disable'
+title_meta: 'EndPoint - WingetUpdateAll_UserTask_Disable'
 keywords: ['scheduled', 'task', 'winget', 'update', 'windows']
 description: 'This document explains how to set a custom field to enable the user-level scheduled task `Winget Update All [Logged on User]` for Windows machines. It includes details about the necessary configuration and the default settings for the task.'
 tags: ['update', 'windows']
@@ -25,4 +25,6 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Schedu
 
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_UserTask_Disable/image_1.png)
 ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_UserTask_Disable/image_2.png)
+
+
 

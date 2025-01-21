@@ -1,7 +1,7 @@
 ---
 id: 'd560e8b6-9195-4bc3-a89a-6939c984d47a'
-title: 'Uninstall Sophos Endpoint'
-title_meta: 'Uninstall Sophos Endpoint Script'
+title: 'Sophos Endpoint - Uninstaller'
+title_meta: 'Sophos Endpoint - Uninstaller'
 keywords: ['sophos', 'uninstall', 'endpoint', 'tamper', 'protection', 'windows']
 description: 'This document provides a detailed overview of a script designed to uninstall the Sophos endpoint from a Windows-based device, including prerequisites, processes, and expected outcomes. The script verifies the status of Sophos Tamper Protection and ensures a clean uninstallation process, followed by a system reboot.'
 tags: ['backup', 'security', 'software', 'uninstallation', 'windows']
@@ -47,4 +47,6 @@ If the services are no longer present, then the script was successful and will e
 ## Output
 
 - Script log messages only
+
+
 

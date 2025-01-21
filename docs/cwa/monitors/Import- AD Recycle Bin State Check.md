@@ -1,7 +1,7 @@
 ---
 id: '7f37dfc1-5f0a-4f7d-bf9f-631ea653a74d'
-title: 'Enable AD Recycle Bin in ConnectWise Automate'
-title_meta: 'Enable AD Recycle Bin in ConnectWise Automate'
+title: 'Import- AD Recycle Bin State Check'
+title_meta: 'Import- AD Recycle Bin State Check'
 keywords: ['ad', 'recycle', 'bin', 'connectwise', 'automate', 'sql', 'monitor']
 description: 'This document provides a step-by-step guide on how to enable the Active Directory Recycle Bin feature in ConnectWise Automate. It includes importing the necessary alert template, running SQL queries to set up the feature, and configuring the remote monitor for Domain Controllers.'
 tags: ['database', 'setup']
@@ -61,4 +61,6 @@ SELECT
     '6' as `CheckAction`,
     @Alertaction as `AlertAction`,
     '[
+
+
 

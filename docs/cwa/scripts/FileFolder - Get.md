@@ -1,7 +1,7 @@
 ---
 id: '281f0b52-80f0-4a8c-842d-e6ebc747884a'
-title: 'Search for Files and Folders Script'
-title_meta: 'Search for Files and Folders Script'
+title: 'FileFolder - Get'
+title_meta: 'FileFolder - Get'
 keywords: ['search', 'files', 'folders', 'regex', 'path']
 description: 'This document provides a comprehensive overview of a script designed to search for files and folders on a computer. It allows users to specify a search term using the "ToSearchFor" parameter, supports regex input for advanced searching, and details the process, dependencies, and output of the script.'
 tags: ['setup', 'software', 'windows']
@@ -50,4 +50,6 @@ The files `Everything.exe` and `es.exe` will be downloaded from ProVal's File Se
 
 - Script Log
 - `@SearchResult@` holds the results.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '61158e8d-5349-418a-9cd8-81685d622846'
-title: 'ESXi Low Storage Space Ticket Creation'
-title_meta: 'ESXi Low Storage Space Ticket Creation'
+title: 'Ticket Creation - ESXi Storage 10 Percent'
+title_meta: 'Ticket Creation - ESXi Storage 10 Percent'
 keywords: ['esxi', 'ticket', 'monitor', 'storage', 'low', 'vmware']
 description: 'This document details a script designed for automatic ticket creation when an ESXi host reports low storage space. It is intended to be triggered by a monitor and outlines the process for gathering necessary information and generating a ticket with relevant details about the ESXi host and its virtual machines.'
 tags: ['esxi', 'networking', 'ticketing', 'virtualization']
@@ -44,3 +44,4 @@ The only dependency for this script is that the monitor triggering the script mu
 > \<VM Name>  
 >
 > \<Datastores with low disk space listed here>
+

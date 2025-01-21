@@ -1,7 +1,7 @@
 ---
 id: ps-set-powerplan
 title: 'Set-PowerPlan'
-title_meta: 'Set-PowerPlan Command'
+title_meta: 'Set-PowerPlan'
 keywords: ['powerplan', 'settings', 'configuration', 'energy']
 description: 'Documentation for the Set-PowerPlan command to configure power plan settings using a provided hashtable or CSV file.'
 tags: ['performance', 'windows']
@@ -115,4 +115,6 @@ PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https:\\file.
 ## Output
 - .\\Set-PowerPlan-log.txt
 - .\\Set-PowerPlan-Error.txt
+
+
 

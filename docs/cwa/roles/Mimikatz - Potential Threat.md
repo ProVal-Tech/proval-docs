@@ -1,7 +1,7 @@
 ---
 id: 'd4cae7e3-3abd-44b5-a9d9-7a0668834050'
-title: 'Checks Registry for Credential Flag'
-title_meta: 'Checks Registry for Credential Flag'
+title: 'Mimikatz - Potential Threat'
+title_meta: 'Mimikatz - Potential Threat'
 keywords: ['registry', 'credentials', 'security', 'vulnerability', 'threat']
 description: 'This document provides an overview of how to check the Windows registry for the stored credentials flag related to WDigest. It explains the implications of the flag being set or not and highlights potential vulnerabilities associated with it, including references to Mimikatz.'
 tags: ['registry', 'security', 'vulnerability', 'windows']
@@ -26,4 +26,6 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredenti
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%}` | Equals     | 1      | Windows        |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-enable-tpm
 title: 'Enable-TPM'
-title_meta: 'Enable-TPM Command'
+title_meta: 'Enable-TPM'
 keywords: ['enable', 'tpm', 'provisioning', 'security']
 description: 'Documentation for the Enable-TPM command to initialize and provision a Trusted Platform Module (TPM).'
 tags: ['security', 'windows']
@@ -51,4 +51,6 @@ Initializes TPM but does not allow the provisioning process to clear the TPM, ev
 - `.\Enable-TPM-log.txt`
 - `.\Enable-TPM-data.txt`
 - `.\Enable-TPM-error.txt`
+
+
 

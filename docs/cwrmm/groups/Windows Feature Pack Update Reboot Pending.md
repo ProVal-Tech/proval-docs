@@ -1,7 +1,7 @@
 ---
 id: '72a7b834-70a2-4b4f-becb-bb77fa83a28d'
-title: 'Categorizing Windows 10 and 11 Computers with Reboot Pending'
-title_meta: 'Categorizing Windows 10 and 11 Computers with Reboot Pending'
+title: 'Windows Feature Pack Update Reboot Pending'
+title_meta: 'Windows Feature Pack Update Reboot Pending'
 keywords: ['windows', 'reboot', 'feature', 'update', 'pending', 'dynamic', 'group']
 description: 'This document outlines the process for categorizing Windows 10 and 11 computers where the Feature Update Install with Tracking script has been completed but a reboot is still pending. It includes dependencies, criteria for selection, and steps to create a dynamic group for better management.'
 tags: ['reboot', 'update', 'windows']
@@ -46,4 +46,6 @@ Categorize the Windows 10 and 11 computers where the `Feature Update Install wit
 Click the Save button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_9.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Reboot-Pending/image_10.png)  
+
+
 

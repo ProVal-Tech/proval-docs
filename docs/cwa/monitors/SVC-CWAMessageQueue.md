@@ -1,7 +1,7 @@
 ---
 id: 'a1fb4b3c-b08f-4090-9df7-66e7d80ca93d'
-title: 'CWA Message Queue Monitoring'
-title_meta: 'CWA Message Queue Monitoring'
+title: 'SVC-CWAMessageQueue'
+title_meta: 'SVC-CWAMessageQueue'
 keywords: ['cwa', 'monitoring', 'service', 'alert', 'ticket']
 description: 'This document outlines the monitoring setup for the CWAMessageQueue service in ConnectWise Automate. It details the alert configuration, suggested parameters, and target server roles to ensure timely notifications and ticket creation in Autotask when the service becomes unavailable.'
 tags: []
@@ -26,4 +26,6 @@ CWAMessageQueue is one of the important services for the Automate server. This m
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server  
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'e413063b-7bce-4a4e-99ce-daea264d6ac6'
-title: 'ESXi Invalid License Key Monitoring'
-title_meta: 'ESXi Invalid License Key Monitoring'
+title: 'ESXi Invalid License Detected'
+title_meta: 'ESXi Invalid License Detected'
 keywords: ['esxi', 'monitoring', 'license', 'ticketing', 'alert']
 description: 'This document outlines the monitor set designed to detect ESXi hosts with expired or trial version license keys. It includes dependencies, target scope, ticketing details, and alert template configuration for effective management of license compliance.'
 tags: ['ticketing', 'vmware']
@@ -34,4 +34,6 @@ Global
 **Name:** `△ Custom - Ticket Creation - ESXi Monitoring`
 
 **The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) **script on failure.**
+
+
 

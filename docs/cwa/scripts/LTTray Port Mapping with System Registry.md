@@ -1,7 +1,7 @@
 ---
 id: 'cc09c16e-c62b-4001-9226-1b92097a6507'
-title: 'LTTray Port Mapping Script'
-title_meta: 'LTTray Port Mapping Script for Resolving Intermittent Issues'
+title: 'LTTray Port Mapping with System Registry'
+title_meta: 'LTTray Port Mapping with System Registry'
 keywords: ['lttray', 'port', 'netstat', 'registry', 'automation']
 description: 'This document describes a script designed to resolve the intermittent issue of LTTray not showing by mapping the port number from netstat and the Windows registry. It includes a detailed process overview, sample run, and dependencies for effective implementation.'
 tags: ['networking', 'windows']
@@ -48,4 +48,6 @@ This script maps the port number from netstat and the Windows registry of the LT
 
 - Script log
 - Script state
+
+
 

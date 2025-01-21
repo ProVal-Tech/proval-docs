@@ -1,7 +1,7 @@
 ---
 id: ps-install-snapagent
 title: 'Install-SnapAgent'
-title_meta: 'Install-SnapAgent Command'
+title_meta: 'Install-SnapAgent'
 keywords: ['install', 'snapagent', 'software', 'monitoring']
 description: 'Documentation for the Install-SnapAgent command to install SnapAgent on Windows computers.'
 tags: ['installation', 'software', 'windows']
@@ -43,4 +43,6 @@ Installs SnapAgent. A URL is necessary to install it.
 ## Output
 - `.\Install-SnapAgent-Log.txt`
 - `.\Install-SnapAgent-Error.txt`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '53e47a1a-7a3d-42f4-8837-4419827f322c'
-title: 'Custom RAWSQL Monitor for User Privileges'
-title_meta: 'Custom RAWSQL Monitor for User Privileges'
+title: 'Automate - Custom Tables Permissions Fix'
+title_meta: 'Automate - Custom Tables Permissions Fix'
 keywords: ['custom', 'rawsql', 'monitor', 'privileges', 'database']
 description: 'This document provides a detailed overview of a custom RAWSQL monitor designed to check the custom table privileges for a user in a database. It outlines the necessary dependencies and the target scope of the monitoring solution.'
 tags: ['database', 'security', 'setup']
@@ -23,4 +23,6 @@ This custom RAWSQL monitor checks the custom table privileges for a user in the 
 ## Target
 
 Global
+
+
 

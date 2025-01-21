@@ -1,7 +1,7 @@
 ---
 id: 'bc410117-b7b7-4345-967c-965f15acdf07'
-title: 'Deploy Perch Log Shipper Monitor'
-title_meta: 'Deploy Perch Log Shipper Monitor for Windows Machines'
+title: 'Deploy Perch Log Shipper'
+title_meta: 'Deploy Perch Log Shipper'
 keywords: ['monitor', 'perch', 'log', 'shipper', 'deployment', 'windows']
 description: 'This document outlines a monitor designed to detect Windows machines that are missing the Perch Log Shipper. It details the necessary client-level EDF settings required to initiate the installation on targeted machines, including the deployment and installation codes needed for successful implementation.'
 tags: ['deployment', 'software', 'windows']
@@ -30,4 +30,6 @@ Windows Machines
 ## Alert Template
 
 - `△ Custom - Execute Script - Deploy Perch Log Shipper`
+
+
 

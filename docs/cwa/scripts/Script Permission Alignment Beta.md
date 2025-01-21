@@ -1,7 +1,7 @@
 ---
 id: '46412261-f40b-456f-92db-500d166c41ca'
-title: 'Standardize Permissions for Built-In Scripts in ConnectWise Automate'
-title_meta: 'Standardize Permissions for Built-In Scripts in ConnectWise Automate'
+title: 'Script Permission Alignment Beta'
+title_meta: 'Script Permission Alignment Beta'
 keywords: ['permissions', 'scripts', 'connectwise', 'automate', 'tier', 'tech', 'access', 'custom', 'table']
 description: 'This document outlines a script designed to standardize the permissions of Built-In scripts in ConnectWise Automate. It provides detailed information on permission assignments for different tech tiers, sample execution, scheduling recommendations, and how to revert to original permissions.'
 tags: ['connectwise', 'permissions', 'setup']
@@ -65,4 +65,6 @@ The initial permissions of the scripts are stored in the custom table during the
 - Custom Table
 - Script-level permissions  
 ![Output Image](../../../static/img/Script-Permission-Alignment-Beta/image_6.png)
+
+
 

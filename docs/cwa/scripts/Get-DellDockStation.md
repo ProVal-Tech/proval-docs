@@ -1,7 +1,7 @@
 ---
 id: '910bdf04-c4ab-413d-a1a6-aafcd6d583d0'
-title: 'Dell Dockstation Detection Script for Workstations'
-title_meta: 'Dell Dockstation Detection Script for Workstations'
+title: 'Get-DellDockStation'
+title_meta: 'Get-DellDockStation'
 keywords: ['dell', 'dockstation', 'workstation', 'monitor', 'installation', 'ticketing']
 description: 'This document details a script designed to detect Dell Dockstations on Dell Workstations. It includes prerequisites validation, installation of necessary components, and ticket creation for installation failures. The script ensures that the required software is installed and provides output logs and ticketing capabilities for monitoring. Ideal for use in Windows 10 and Windows 11 environments.'
 tags: ['dell', 'installation', 'ticketing', 'windows']
@@ -48,4 +48,6 @@ Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](<../moni
 
 **Subject:** Dell Command | Monitor Installation Failed  
 ![Ticket Example](../../../static/img/Get-DellDockStation/image_2.png)
+
+
 

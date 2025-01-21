@@ -1,7 +1,7 @@
 ---
 id: '282be91b-f8ee-4ed8-9a1c-1cf9510678f2'
-title: 'Windows 10/11 Complete Listing with Build Versions'
-title_meta: 'Windows 10/11 Complete Listing with Build Versions'
+title: 'Windows 1011 Feature Update Audit'
+title_meta: 'Windows 1011 Feature Update Audit'
 keywords: ['windows', 'build', 'version', 'listing', 'support', 'eol']
 description: 'This document provides a comprehensive dataview of Windows 10 and 11 systems, detailing their build versions such as 22H2 and 22H3. It includes essential information about each computer, including client details, operating system, last contact, and end-of-life status.'
 tags: ['performance', 'report', 'update', 'windows']
@@ -44,4 +44,6 @@ This dataview provides a complete listing of Windows 10/11 systems along with th
 |--------|------------|-------|--------|
 | EOL    | Equals     | Yes   | **<span style="color: rgb(178, 34, 34);"><span style="background-color: rgb(0, 0, 0);">Red</span></span>** |
 | EOL    | Equals     | No    | **<span style="color: rgb(0, 128, 0);">Green</span>** |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '4d27ff0e-704d-47dd-8c07-3008b7fbfafb'
-title: 'Client Script for HP Server iLO Ticketing'
-title_meta: 'Client Script for HP Server iLO Ticketing'
+title: 'HP iLO Credential Missing Detection'
+title_meta: 'HP iLO Credential Missing Detection'
 keywords: ['client', 'script', 'hp', 'ilo', 'ticketing']
 description: 'This document provides a client script designed to create tickets for clients with HP Servers that have HP iLO enabled but lack credentials. It includes instructions for implementation, dependencies, and expected output.'
 tags: []
@@ -34,4 +34,6 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 
 - Script log
 - Ticket
+
+
 

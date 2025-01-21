@@ -1,7 +1,7 @@
 ---
 id: '42fcda71-e3ed-40e2-92e0-c0eb80e42e2d'
-title: 'Redirect Windows Known Folders to OneDrive Using Group Policies'
-title_meta: 'Redirect Windows Known Folders to OneDrive Using Group Policies'
+title: 'Microsoft OneDrive - (Group PoliciesRedirect Folder)'
+title_meta: 'Microsoft OneDrive - (Group PoliciesRedirect Folder)'
 keywords: ['onedrive', 'group', 'policies', 'windows', 'folders', 'redirect', 'configuration']
 description: 'This document outlines the implementation of group policies to redirect Windows known folders such as Desktop, Documents, Pictures, Screenshots, and Camera Roll to Microsoft OneDrive, along with other related group policy recommendations.'
 tags: ['onedrive', 'setup', 'windows']
@@ -27,4 +27,6 @@ This document implements options for group policies to redirect Windows known fo
 
 2. Export the following content from ProVal's VSA and follow the necessary implementation steps within each document:  
    - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](https://proval.itglue.com/DOC-5078775-16749544)
+
+
 

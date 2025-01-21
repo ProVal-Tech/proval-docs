@@ -1,7 +1,7 @@
 ---
 id: ps-remove-mcafeesoftware
 title: 'Remove-McAfeeSoftware'
-title_meta: 'Remove-McAfeeSoftware Command'
+title_meta: 'Remove-McAfeeSoftware'
 keywords: ['remove', 'mcafee', 'uninstall', 'cleanup']
 description: 'Documentation for the Remove-McAfeeSoftware command to remove all McAfee products from an endpoint.'
 tags: ['security', 'software', 'uninstallation']
@@ -29,4 +29,6 @@ Runs McAfee's publicly available Removal Tool with parameters to remove all prod
 - .\mccleanup.log
 - .\Remove-McAfeeSoftware-log.txt
 - .\Remove-McAfeeSoftware-error.txt
+
+
 

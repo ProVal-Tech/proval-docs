@@ -1,7 +1,7 @@
 ---
 id: 'a8eab72d-3794-4808-9009-b01bf3c9bcba'
-title: 'Log4Shell Vulnerability Scan Script'
-title_meta: 'Log4Shell Vulnerability Scan Script for Datto RMM'
+title: 'Log4J (Log4Shell) File Scan'
+title_meta: 'Log4J (Log4Shell) File Scan'
 keywords: ['vulnerability', 'scan', 'log4shell', 'edf', 'reporting']
 description: 'This document provides an overview of the Log4Shell Vulnerability Scan Script, detailing its functionality, dependencies, and the output it generates. The script is designed to identify vulnerabilities in target systems and save relevant information to EDFs for comprehensive reporting.'
 tags: ['report', 'security', 'software', 'update']
@@ -51,4 +51,6 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
+
+
 

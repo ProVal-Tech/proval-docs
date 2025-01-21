@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-restartservice
 title: 'Invoke-RestartService'
-title_meta: 'Invoke-RestartService Command'
+title_meta: 'Invoke-RestartService'
 keywords: ['restart', 'service', 'taskkill', 'errorhandling']
 description: 'Documentation for the Invoke-RestartService command to simultaneously restart multiple services with proper error handling.'
 tags: ['performance', 'windows']
@@ -45,4 +45,6 @@ Location of output for log, result, and error files:
 [System.Object]
 .\Invoke-RestartService-log.txt
 ```
+
+
 

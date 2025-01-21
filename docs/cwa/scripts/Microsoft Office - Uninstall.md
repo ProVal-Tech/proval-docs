@@ -1,7 +1,7 @@
 ---
 id: 'dd794f2d-7327-4d84-bda5-7d005b68a039'
-title: 'Office Scrub Utility for Microsoft Products'
-title_meta: 'Office Scrub Utility for Microsoft Products'
+title: 'Microsoft Office - Uninstall'
+title_meta: 'Microsoft Office - Uninstall'
 keywords: ['office', 'uninstall', 'utility', 'microsoft', 'script', 'automation']
 description: 'This document details the Office Scrub utility script that automates the uninstallation of specified Microsoft Office products, streamlining the process and saving considerable time. It includes dependencies, user parameters, and output information for effective execution.'
 tags: ['software', 'uninstallation', 'windows']
@@ -49,4 +49,6 @@ Based on the version input by the technician, the script will jump to the approp
 
 - Script log
 - Local file on the computer
+
+
 

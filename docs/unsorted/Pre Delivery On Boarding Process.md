@@ -1,7 +1,7 @@
 ---
 id: 'c4dd571c-4519-48ab-9d86-3fc1680847b5'
-title: 'ProVal Predelivery Process'
-title_meta: 'ProVal Predelivery Process'
+title: 'Pre Delivery On Boarding Process'
+title_meta: 'Pre Delivery On Boarding Process'
 keywords: ['onboarding', 'configuration', 'checklist', 'implementation', 'client']
 description: 'This document outlines the ProVal Predelivery Process, detailing the pre-installation and configuration changes necessary for the new onboarding agent in client environments, including essential pre-check and post-check procedures to ensure proper implementation.'
 tags: ['software']
@@ -18,4 +18,6 @@ It features pre-check and post-check boxes (EDFs) to ensure that the changes or 
 
 The ProVal Predelivery Process includes the following solutions ready:  
 - [List of solutions will be added here]
+
+
 

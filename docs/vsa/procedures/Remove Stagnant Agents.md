@@ -1,7 +1,7 @@
 ---
 id: '84d8b11d-aea7-4fe8-9811-2041d0b7eda2'
 title: 'Remove Stagnant Agents'
-title_meta: 'Remove Stagnant Agents from Kaseya VSA'
+title_meta: 'Remove Stagnant Agents'
 keywords: ['stagnant', 'agents', 'removal', 'vsa', 'automation']
 description: 'This document provides an overview of the process to remove stagnant agents from Kaseya VSA based on specific filters defined in a JSON file. It includes requirements, dependencies, usage examples, and detailed parameters for the removal process, along with logging and notification options.'
 tags: ['software', 'windows']
@@ -49,4 +49,6 @@ Location of output for log, result, and error files.
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
+
+
 

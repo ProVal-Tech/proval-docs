@@ -1,7 +1,7 @@
 ---
 id: 'd65da81c-76ee-429a-a007-9ef788f2ee51'
-title: 'Check Registry for Point And Print Detection'
-title_meta: 'Check Registry for Point And Print Detection'
+title: 'Point and Print Nightmare Check'
+title_meta: 'Point and Print Nightmare Check'
 keywords: ['registry', 'point', 'print', 'detection', 'safety']
 description: 'This script checks the specified registry entries to determine if Point And Print is detected and whether it is set to a safe value. If the registry values are not set or are equal to zero, it reports that no action is required, ensuring system safety.'
 tags: ['print', 'registry', 'security', 'windows']
@@ -42,4 +42,6 @@ If the above conditions are not met, then the script will report Point And Print
 - Script log
 - Script state
 - Dataview
+
+
 

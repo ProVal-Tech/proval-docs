@@ -1,7 +1,7 @@
 ---
 id: ps-remove-userregistryvalue
 title: 'Remove-UserRegistryValue'
-title_meta: 'Remove-UserRegistryValue Command'
+title_meta: 'Remove-UserRegistryValue'
 keywords: ['remove', 'registry', 'user', 'key']
 description: 'Documentation for the Remove-UserRegistryValue command to remove specific registry values for all users.'
 tags: ['security', 'windows']
@@ -43,4 +43,6 @@ Location of output for log, result, and error files.
 ```
 .\Remove-UserRegistryValue-log.txt
 ```
+
+
 

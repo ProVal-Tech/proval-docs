@@ -1,7 +1,7 @@
 ---
 id: '7c397ba6-0b68-421e-9315-3377ad5452b3'
-title: 'Steps to Apply Remote Monitor'
-title_meta: 'Steps to Apply Remote Monitor'
+title: 'Import - Remote Monitor - SMB1 Detection'
+title_meta: 'Import - Remote Monitor - SMB1 Detection'
 keywords: ['remote', 'monitor', 'groupid', 'query', 'execution']
 description: 'This document provides a step-by-step guide on how to apply a remote monitor to specific groups within a system. It includes instructions on obtaining group IDs, constructing the SQL query, and executing it to set up the monitor correctly.'
 tags: ['database', 'installation']
@@ -163,4 +163,6 @@ Now execute your query from a RAWSQL monitor set.
 ### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
+
+
 

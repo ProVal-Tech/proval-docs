@@ -1,7 +1,7 @@
 ---
 id: '2e7517b7-3d3c-47b0-a885-bb8293c55263'
-title: 'Webroot Keycode Check Script'
-title_meta: 'Webroot Keycode Check Script for License Verification'
+title: 'Webroot Keycode Verification EDF'
+title_meta: 'Webroot Keycode Verification EDF'
 keywords: ['webroot', 'keycode', 'license', 'monitor', 'edf']
 description: 'This document outlines a script that collects the machine-level Webroot hashed keycode and compares it with the keycode set in the client EDF "Webroot Site Keycode". It includes instructions on reviewing results using dataviews or generating tickets for mismatched license keys.'
 tags: ['webroot']
@@ -34,4 +34,6 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 - Script log
 - EDF
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5b376f62-e977-4feb-b523-b133d2ef5722'
-title: 'Reboot Prompter Solution'
-title_meta: 'Reboot Prompter Solution'
+title: 'Reboot Prompter'
+title_meta: 'Reboot Prompter'
 keywords: ['reboot', 'prompt', 'automation', 'ticket', 'monitoring', 'dynamic', 'group']
 description: 'This document outlines the Reboot Prompter Solution designed to send reboot prompts to users on workstations, enforce automatic reboots after a specified number of attempts, and generate tickets for servers with pending reboots. It includes both automatic and manual reboot features to ensure OS patching stability.'
 tags: ['reboot', 'setup', 'windows']
@@ -55,4 +55,6 @@ Afterward, it sends a force reboot prompt as shown below:
 Note: The 5 minutes depends on the value provided in the custom field 'RebootForceTimeDelayMinutes'.
 
 ![Screenshot](../../static/img/Reboot-Prompter/image_69.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a3d15808-2cfc-4703-b1bc-21e9579d90c5'
-title: 'Network Connections Summary'
-title_meta: 'Network Connections Summary'
+title: 'Network Connection Info'
+title_meta: 'Network Connection Info'
 keywords: ['network', 'connections', 'status', 'adapter', 'speed', 'uptime', 'client', 'location']
 description: 'This document provides a detailed overview of network connections, including information about client names, locations, computer names, uptime, network adapter details, connection speeds, and more. It serves as a comprehensive guide for understanding the status and configuration of network connections within a system.'
 tags: ['performance', 'report']
@@ -30,4 +30,6 @@ The dataview displays detailed information about network connections.
 | DNS Address                | This displays the DNS information of the machine.           |
 | Domain Name                | The domain information of the machine.                      |
 | DHCP State                 | The DHCP state (Static/Dynamic) of the network.            |
+
+
 

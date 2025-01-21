@@ -1,7 +1,7 @@
 ---
 id: '97e53493-0cd3-4b69-91b1-1e3f70111f5f'
-title: 'Upgrade/Swap Agents Hard Drives or SSDs in ConnectWise Automate'
-title_meta: 'Upgrade/Swap Agents Hard Drives or SSDs in ConnectWise Automate'
+title: 'Incorrect Drive Inventory'
+title_meta: 'Incorrect Drive Inventory'
 keywords: ['upgrade', 'swap', 'agents', 'hard drives', 'ssd', 'connectwise', 'automate', 'monitoring']
 description: 'This document addresses the issue of ConnectWise Automate not reflecting newly imaged hard drives or SSDs. It provides a state-based monitor to detect when Automate fails to pull the correct drive information and suggests alert configurations for managed Windows machines.'
 tags: ['alerting', 'windows']
@@ -45,4 +45,6 @@ It features a state-based monitor, and the WARNING state indicates PowerShell fa
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Incorrect-Drive-Inventory/image_3.png)
+
+
 

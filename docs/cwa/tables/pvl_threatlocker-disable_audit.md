@@ -1,7 +1,7 @@
 ---
 id: '7367ea61-b4bf-4449-b7dd-a68569dc7b75'
-title: 'Threatlocker - Set Learning Mode Data Table'
-title_meta: 'Threatlocker - Set Learning Mode Data Table'
+title: 'pvl_threatlocker-disable_audit'
+title_meta: 'pvl_threatlocker-disable_audit'
 keywords: ['threatlocker', 'learning', 'data', 'audit', 'logs']
 description: 'This document outlines the structure of the data table used for the Threatlocker Set Learning Mode script, detailing the key fields such as computer ID, learning mode duration, timestamps, user information, and status logs.'
 tags: ['database', 'report', 'security']
@@ -31,4 +31,6 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | LearningModeDuration   | INT      | Stores the number of hours for which the Threatlocker learning mode is set.                                       |
 | Status                | VARCHAR  | Stores either "Success" or "Failed" for the learning mode set result.                                            |
 | LogRecord             | VARCHAR  | Stores the logs of script success or failure.                                                                      |
+
+
 

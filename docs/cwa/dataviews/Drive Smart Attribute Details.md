@@ -1,7 +1,7 @@
 ---
 id: '301488c5-1c0a-4c73-a295-09e0556513d5'
-title: 'Drive Attributes Report'
-title_meta: 'Drive Attributes Report'
+title: 'Drive Smart Attribute Details'
+title_meta: 'Drive Smart Attribute Details'
 keywords: ['drive', 'attributes', 'report', 'client', 'machine', 'location', 'os', 'value', 'threshold']
 description: 'This document presents detailed information about drive attributes such as Power Cycle Count, temperature, and Erase Fail Counts. It includes a comprehensive table that outlines various columns including client name, machine name, drive model, and attribute descriptions, along with their corresponding values and thresholds.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -32,4 +32,6 @@ This document presents information about drive attributes such as Power Cycle Co
 | Threshold             | Threshold set for the Attribute               |
 | Last User Name        | Last user name on the machine                 |
 | Last Contact          | Last contact for the computer with the Automate. |
+
+
 

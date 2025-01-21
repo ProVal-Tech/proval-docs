@@ -1,7 +1,7 @@
 ---
 id: '0de90f98-d7ae-4a79-a851-30829a596846'
-title: 'Audit VSSAdmin Storage Details'
-title_meta: 'Audit VSSAdmin Storage Details'
+title: 'Vssadmin List Storage Audit'
+title_meta: 'Vssadmin List Storage Audit'
 keywords: ['vssadmin', 'storage', 'audit', 'volume', 'details']
 description: 'This document provides a comprehensive guide on using a script to audit VSSAdmin storage details across all volumes. It identifies whether VSS storage is enabled and reports relevant information for volumes with enabled storage, while also indicating if no storage is configured for any volume.'
 tags: ['backup', 'performance', 'report', 'windows']
@@ -40,4 +40,6 @@ The location and method by which this script returns data:
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
+
+
 

@@ -53,3 +53,5 @@ The group contains computers with different SentinelOne management servers as co
 ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_10.png)  
 ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_11.png)
 
+
+

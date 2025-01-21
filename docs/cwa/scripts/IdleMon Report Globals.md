@@ -1,7 +1,7 @@
 ---
 id: 'c6ea69e0-823f-4090-9894-2faf81ba8c46'
-title: 'Idle Time Collection Script for Windows'
-title_meta: 'Idle Time Collection Script for Windows'
+title: 'IdleMon Report Globals'
+title_meta: 'IdleMon Report Globals'
 keywords: ['idle', 'time', 'collection', 'windows', 'script', 'monitor']
 description: 'This document outlines a script that collects the idle time of users logged on to a Windows machine. The data is stored in a custom table for a specified number of days, utilizing the IdleMon tool for data collection. Instructions for installation and scheduling are provided.'
 tags: ['database', 'report', 'windows']
@@ -50,4 +50,6 @@ The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be place
 
 - Script log
 - Dataview
+
+
 

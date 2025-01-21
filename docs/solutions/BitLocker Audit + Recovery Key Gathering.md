@@ -1,7 +1,7 @@
 ---
 id: '337848a2-3757-45c9-8142-17abf004a78e'
-title: 'BitLocker Audit and Recovery Key Management'
-title_meta: 'BitLocker Audit and Recovery Key Management'
+title: 'BitLocker Audit + Recovery Key Gathering'
+title_meta: 'BitLocker Audit + Recovery Key Gathering'
 keywords: ['bitlocker', 'audit', 'recovery', 'key', 'management', 'device', 'groups', 'custom', 'tasks']
 description: 'This document outlines a solution for auditing BitLocker status and managing recovery keys using custom tasks and device groups in ConnectWise RMM. It provides step-by-step implementation instructions and associated content for effective management.'
 tags: ['recovery']
@@ -36,6 +36,8 @@ This solution uses custom tasks and device groups to audit and gather informatio
    **Please ensure that the task is run manually!**
 
 ## FAQ
+
+
 
 
 

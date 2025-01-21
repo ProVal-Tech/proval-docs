@@ -43,3 +43,5 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
 
+
+

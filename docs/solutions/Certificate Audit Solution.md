@@ -1,7 +1,7 @@
 ---
 id: '1045cfa0-257d-41a2-9a3f-a15837939b4f'
-title: 'Local Machine Certificate Audit'
-title_meta: 'Local Machine Certificate Audit'
+title: 'Certificate Audit Solution'
+title_meta: 'Certificate Audit Solution'
 keywords: ['certificate', 'audit', 'monitoring', 'ssl', 'expiration', 'alert', 'dataview']
 description: 'This document outlines the purpose and implementation of the Local Machine Certificate Audit solution, which pulls meaningful certificate information for monitoring and reporting in ConnectWise Automate. It includes update notices, associated content, and implementation steps for effective auditing and alerting on SSL certificates.'
 tags: ['database', 'report', 'windows']
@@ -98,4 +98,6 @@ The purpose of this solution is to pull meaningful certificate information into 
    - [Internal Monitor - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and select "Run Now" to start the monitor.
+
+
 

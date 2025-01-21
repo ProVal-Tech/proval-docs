@@ -1,7 +1,7 @@
 ---
 id: '32a21209-8991-4302-b40c-e9c16ebe4331'
-title: 'Windows License Status Monitor'
-title_meta: 'Windows License Status Monitor'
+title: 'Windows License Status'
+title_meta: 'Windows License Status'
 keywords: ['monitor', 'license', 'windows', 'status', 'alert']
 description: 'This document provides a step-by-step guide to creating a Windows License Status Monitor that identifies computers with expired or inactive Windows license keys, ensuring compliance and operational efficiency.'
 tags: ['windows']
@@ -85,4 +85,6 @@ This monitor will identify computers where the license key is reported as inacti
 
 15. Click the `Save` button to save the monitor set.  
     ![Step 15](../../../static/img/Windows-License-Status/image_18.png)
+
+
 

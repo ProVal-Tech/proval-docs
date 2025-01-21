@@ -1,7 +1,7 @@
 ---
 id: '424dfd5c-377f-461f-a57f-80001d839af8'
-title: 'Install Windows Patch Script'
-title_meta: 'Install Windows Patch Script for Efficient Patch Management'
+title: 'Universal KB Installer'
+title_meta: 'Universal KB Installer'
 keywords: ['install', 'patch', 'windows', 'kbnumber', 'reboot']
 description: 'This document provides an overview of a script designed to install specified patches on Windows machines, detailing parameters for rebooting, sample runs, and expected output logs.'
 tags: ['installation', 'security', 'software', 'update', 'windows']
@@ -32,6 +32,8 @@ Set the Reboot parameter to '1' to reboot the machine.
 ## Output
 
 - Script Logs
+
+
 
 
 

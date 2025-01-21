@@ -1,7 +1,7 @@
 ---
 id: ps-get-vsaauditreports
 title: 'Get-VSAAuditReports'
-title_meta: 'Get-VSAAuditReports Command'
+title_meta: 'Get-VSAAuditReports'
 keywords: ['kaseya', 'audit', 'report', 'excel']
 description: 'Documentation for the Get-VSAAuditReports command to perform a Kaseya Onboarding Audit and output results to an Excel spreadsheet.'
 tags: ['report', 'software']
@@ -92,4 +92,6 @@ Location of output for log, result, and error files:
 - `$env:ProgramData\_automation\Audit\CSVs\SoftwareManagementByAgentStats.csv`
 - `$env:ProgramData\_automation\Audit\CSVs\SoftwareManagementDeploymentProfiles.csv`
 - `$env:ProgramData\_automation\Audit\CSVs\Users.csv`
+
+
 

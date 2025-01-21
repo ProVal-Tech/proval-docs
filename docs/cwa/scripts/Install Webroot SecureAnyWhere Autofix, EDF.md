@@ -1,7 +1,7 @@
 ---
 id: 'cddb5b54-a76e-4d74-8226-8f536d8f0eb4'
-title: 'Webroot Deployment Script for Agents'
-title_meta: 'Webroot Deployment Script for Agents'
+title: 'Install Webroot SecureAnyWhere Autofix, EDF'
+title_meta: 'Install Webroot SecureAnyWhere Autofix, EDF'
 keywords: ['webroot', 'deployment', 'agents', 'keycode', 'edf', 'uninstall', 'groupname', 'groupcode']
 description: 'This document provides a comprehensive guide on deploying Webroot to agents using the Webroot site keycode client-EDF. It includes sample runs, dependencies for obtaining the necessary Webroot information, detailed descriptions of the required EDFs, and the expected output of the script.'
 tags: ['deployment', 'software', 'webroot']
@@ -40,4 +40,6 @@ Please follow the documents below to obtain the Webroot Site Keycode and the Web
 ## Output
 
 - Script log
+
+
 

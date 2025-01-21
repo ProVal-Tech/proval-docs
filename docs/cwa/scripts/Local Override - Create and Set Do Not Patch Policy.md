@@ -1,7 +1,7 @@
 ---
 id: '72fc5a6e-e66e-4a02-bfef-4419f3c9709c'
-title: 'Setting Up Local Overrides for Patch Policies'
-title_meta: 'Setting Up Local Overrides for Patch Policies'
+title: 'Local Override - Create and Set Do Not Patch Policy'
+title_meta: 'Local Override - Create and Set Do Not Patch Policy'
 keywords: ['local', 'overrides', 'patch', 'policy', 'automation']
 description: 'This document outlines a script that facilitates the setup of local overrides on machines to prevent them from being patched. It details the process of checking for existing policies, creating new ones if necessary, and logging the actions taken. The script aims to save time by automating the management of patch policies.'
 tags: ['report', 'security', 'setup']
@@ -33,4 +33,6 @@ The script is useful for setting up local overrides on machines so that they won
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'bb53445d-532a-4ec4-b4c5-3f8d0610d6f7'
-title: 'Enable AD Recycle Bin on AD Infrastructure Masters'
-title_meta: 'Enable AD Recycle Bin on AD Infrastructure Masters'
+title: 'Enable AD Recycle Bin'
+title_meta: 'Enable AD Recycle Bin'
 keywords: ['ad', 'recycle', 'bin', 'infrastructure', 'masters']
 description: 'This document provides a detailed guide on how to enable the Active Directory Recycle Bin on Windows Infrastructure Masters, including script creation, dependencies, and deployment instructions.'
 tags: ['active-directory', 'setup', 'windows']
@@ -369,4 +369,6 @@ Then click on Schedule and provide the necessary parameters for script completio
 ## Output
 
 - Script log
+
+
 

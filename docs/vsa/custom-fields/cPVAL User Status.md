@@ -1,7 +1,7 @@
 ---
 id: 'f13ed34c-e9e0-4480-a3b5-86160707a8bc'
-title: 'Custom Field for User Status on Machines'
-title_meta: 'Custom Field for User Status on Machines'
+title: 'cPVAL User Status'
+title_meta: 'cPVAL User Status'
 keywords: ['custom', 'field', 'user', 'status', 'machines']
 description: 'This document describes a custom field that tracks the user status on machines, detailing its dependencies and specific field information relevant to machine management.'
 tags: ['software']
@@ -23,4 +23,6 @@ The custom field contains the user status on the machines.
 | Field Name           | Type of Field (Machine or Organization) | Description                                                     |
 |----------------------|-----------------------------------------|-----------------------------------------------------------------|
 | cPVAL User Status    | Machine                                 | It shows the status of the user on the machines: "PCComp is Present / Not Present." |
+
+
 

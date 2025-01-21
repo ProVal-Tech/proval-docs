@@ -1,7 +1,7 @@
 ---
 id: '34cee8fe-1b6b-4558-a890-2face427ceb8'
-title: 'Manage Overflowed SQL Insert Variables'
-title_meta: 'Manage Overflowed SQL Insert Variables'
+title: 'OverFlowedVariable - SQL Insert - Execute'
+title_meta: 'OverFlowedVariable - SQL Insert - Execute'
 keywords: ['sql', 'insert', 'json', 'optimize', 'datapoints']
 description: 'This document outlines a PowerShell script designed to efficiently manage SQL insert operations when dealing with large data sets that may exceed the character limit. It explains the process of reading from a JSON file, optimizing the number of rows for insertion, and executing the SQL statements iteratively until all data is processed.'
 tags: ['database', 'optimization', 'sql']
@@ -80,4 +80,6 @@ This is a function script and should not be run manually.
    - `TotalRowsToLimit`
    - `SQLInsert`
 10. Return that object.
+
+
 

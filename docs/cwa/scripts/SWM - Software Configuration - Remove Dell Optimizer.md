@@ -1,7 +1,7 @@
 ---
 id: 'b9420698-4c50-42f5-8a9e-6834d03a9ebf'
-title: 'Remove Dell Optimizer Application'
-title_meta: 'Remove Dell Optimizer Application'
+title: 'SWM - Software Configuration - Remove Dell Optimizer'
+title_meta: 'SWM - Software Configuration - Remove Dell Optimizer'
 keywords: ['dell', 'optimizer', 'uninstall', 'reboot']
 description: 'This document outlines a script designed to remove the Dell Optimizer application from Dell computers. It includes instructions for setting a user parameter to control whether the computer should reboot automatically after the application is uninstalled.'
 tags: ['recovery', 'software', 'uninstallation', 'windows']
@@ -32,5 +32,7 @@ Leave the parameter blank to restart the computer manually.
 ## Output
 
 - Script Log
+
+
 
 

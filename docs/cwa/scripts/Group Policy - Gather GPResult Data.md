@@ -1,7 +1,7 @@
 ---
 id: '53bcdcef-8942-4602-bc24-7db1b2cf29ae'
-title: 'GPRESULT Data Storage'
-title_meta: 'GPRESULT Data Storage - Generate and Store GPRESULT Data'
+title: 'Group Policy - Gather GPResult Data'
+title_meta: 'Group Policy - Gather GPResult Data'
 keywords: ['gpresult', 'data', 'storage', 'table', 'windows']
 description: 'This document outlines a script that generates GPRESULT data and stores it in a custom table. It includes sample runs, dependencies, and process information to help users effectively utilize the script for data management.'
 tags: ['database', 'report', 'windows']
@@ -34,4 +34,6 @@ Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershe
 - Script log
 - Local file on the computer
 - Dataview
+
+
 

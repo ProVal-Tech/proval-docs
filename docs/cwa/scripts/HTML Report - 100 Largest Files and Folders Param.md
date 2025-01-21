@@ -1,7 +1,7 @@
 ---
 id: '06840ba0-a4ed-402c-a759-dbb25efa0182'
-title: 'Top 100 Files and Folders Report'
-title_meta: 'Top 100 Files and Folders Report'
+title: 'HTML Report - 100 Largest Files and Folders Param'
+title_meta: 'HTML Report - 100 Largest Files and Folders Param'
 keywords: ['report', 'files', 'folders', 'email', 'html', 'disk', 'storage']
 description: 'This document outlines a script that generates an HTML report of the top 100 files and folders on a specified drive. If no email address is provided, it automatically sends the report to the user running the script. The report includes details such as the drive letter and output path for the generated report.'
 tags: ['disk', 'email', 'report', 'storage', 'windows']
@@ -48,4 +48,6 @@ The script sends an HTML report of the top 100 files and folders to the user exe
 ## Sample Report
 
 ![Sample Report](../../../static/img/HTML-Report---100-Largest-Files-and-Folders-Param/image_3.png)
+
+
 

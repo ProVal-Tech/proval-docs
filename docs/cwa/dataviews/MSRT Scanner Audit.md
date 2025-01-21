@@ -1,7 +1,7 @@
 ---
 id: '3b6465a0-54e7-45ce-94b2-000ac55c6a26'
-title: 'MSRT Scanner Status Dataview'
-title_meta: 'MSRT Scanner Status Dataview'
+title: 'MSRT Scanner Audit'
+title_meta: 'MSRT Scanner Audit'
 keywords: ['msrt', 'scanner', 'status', 'dataview', 'rmm']
 description: 'This document provides information about the MSRT scanner status dataview, which stores the results of the Malicious Software Removal Tool scanner. It outlines the dependencies, columns, and descriptions related to the agent status in the RMM system.'
 tags: ['report', 'security', 'update', 'windows']
@@ -28,4 +28,6 @@ This dataview stores the status of the MSRT scanner result from the script [Mali
 | Last Contact           | The last contact of the agent with the RMM          |
 | MSRT Scanner Result     | MSRT tool scanner result conclusion recorded         |
 | MSRT Scanner Date      | MSRT's last scanner date                             |
+
+
 

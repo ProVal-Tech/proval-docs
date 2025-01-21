@@ -1,7 +1,7 @@
 ---
 id: 'c5f66e4b-17d7-4ccb-bc27-d992e6031650'
-title: 'Ticket Metrics Calculation in ConnectWise Automate'
-title_meta: 'Ticket Metrics Calculation in ConnectWise Automate'
+title: 'Admin - Ticket Volume Metrics'
+title_meta: 'Admin - Ticket Volume Metrics'
 keywords: ['metrics', 'tickets', 'calculation', 'database', 'automate']
 description: 'This document provides an overview of how to calculate ticket metrics based on data from the ConnectWise Automate database, including daily, monthly, and historical ticket data analysis.'
 tags: ['database', 'performance', 'report', 'setup']
@@ -33,4 +33,6 @@ Automate must generate tickets.
 ## Example
 
 ![Example Image](../../../static/img/Admin---Ticket-Volume-Metrics/image_1.png)
+
+
 

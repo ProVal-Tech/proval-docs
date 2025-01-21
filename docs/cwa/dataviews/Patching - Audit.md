@@ -1,7 +1,7 @@
 ---
 id: '663fd322-b49a-49b9-aeb8-2bb621c36388'
-title: 'Comprehensive Patching Report Dataview'
-title_meta: 'Comprehensive Patching Report Dataview'
+title: 'Patching - Audit'
+title_meta: 'Patching - Audit'
 keywords: ['patching', 'report', 'compliance', 'status', 'override', 'policy', 'approval', 'installed', 'missing', 'last', 'agent']
 description: 'This document provides a detailed overview of a comprehensive patching report dataview, including essential columns such as patching configuration, patch status, and compliance metrics for effective machine management.'
 tags: ['compliance', 'patching', 'report', 'security', 'update', 'windows']
@@ -46,5 +46,7 @@ This Dataview is very descriptive and reflects all the relevant information for 
 | Days Since Last Patch Scan             | Displays the number of days since the last patch scan                   |
 | Days Since Last Agent Contact          | Displays the number of days since the last agent contact                |
 | Days Since Last Agent Inventory        | Displays the number of days since the last agent inventory              |
+
+
 
 

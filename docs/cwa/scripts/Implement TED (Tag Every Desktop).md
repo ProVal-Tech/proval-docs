@@ -1,7 +1,7 @@
 ---
 id: '7b939958-3561-471c-971f-c6a667b30d4e'
-title: 'Schedule Task for TED Application'
-title_meta: 'Schedule Task for TED Application'
+title: 'Implement TED (Tag Every Desktop)'
+title_meta: 'Implement TED (Tag Every Desktop)'
 keywords: ['schedule', 'task', 'ted', 'application', 'user', 'logon']
 description: 'This document provides a detailed overview of a PowerShell script that schedules a task to run the TED (Tag Every Desktop) application with specific parameters upon user logon. It includes sample runs, user parameters, and output details.'
 tags: ['installation', 'setup', 'windows']
@@ -53,6 +53,8 @@ The result on End Machine:
 ## Output
 
 - Script Log
+
+
 
 
 

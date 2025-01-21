@@ -1,7 +1,7 @@
 ---
 id: '7519f655-224b-4c95-b716-773f59cb7314'
-title: 'CPU Temperature Monitoring Script for Windows'
-title_meta: 'CPU Temperature Monitoring Script for Windows'
+title: 'CPU Temperature Monitor - Create'
+title_meta: 'CPU Temperature Monitor - Create'
 keywords: ['cpu', 'temperature', 'monitoring', 'windows', 'alerts', 'edfs']
 description: 'This document outlines a script designed for establishing a remote monitoring system specifically for tracking CPU temperature on Windows computers. It details the setup process, usage instructions, and configuration options for effective monitoring and alerting.'
 tags: ['setup', 'windows']
@@ -104,4 +104,6 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Script Logs
 - Files on Machine
 - Remote Monitor
+
+
 

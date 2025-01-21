@@ -1,7 +1,7 @@
 ---
 id: '8d2a9b84-38b6-460f-9e9e-3992ea6fd448'
-title: 'Set Power Plan Automation in ConnectWise Automate'
-title_meta: 'Set Power Plan Automation in ConnectWise Automate'
+title: 'Power Plan - SetCreate'
+title_meta: 'Power Plan - SetCreate'
 keywords: ['connectwise', 'powerplan', 'automation', 'script', 'edf']
 description: 'This document details the implementation of the Set-PowerPlan script in ConnectWise Automate, providing guidance on how to modify or create power plans using settings from a CSV file or hash table. It includes sample runs, automation steps, and configuration details for effective management of power settings across client machines.'
 tags: ['setup', 'software', 'windows']
@@ -195,5 +195,7 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
+
+
 
 

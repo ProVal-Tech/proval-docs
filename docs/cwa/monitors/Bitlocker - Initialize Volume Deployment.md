@@ -1,7 +1,7 @@
 ---
 id: '925adfc5-e119-4c56-937a-a31c3e171371'
-title: 'BitLocker Encryption Monitor'
-title_meta: 'BitLocker Encryption Monitor'
+title: 'Bitlocker - Initialize Volume Deployment'
+title_meta: 'Bitlocker - Initialize Volume Deployment'
 keywords: ['bitlocker', 'encryption', 'monitor', 'windows', 'workstation']
 description: 'This document outlines an internal monitor designed to detect unsupported Windows workstation operating systems that have not been updated regarding BitLocker encryption status. It checks for specific conditions related to the key protector ID, protection status, and configuration settings, ensuring compliance and proper execution of the associated BitLocker initialization script.'
 tags: ['encryption', 'security', 'windows']
@@ -23,4 +23,6 @@ The monitor ensures that the [Script - Bitlocker - Volume - Initialize [Autofix,
 ## Target
 
 Global
+
+
 

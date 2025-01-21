@@ -1,7 +1,7 @@
 ---
 id: '9568d3f6-e271-45c8-9554-3a476f7eb5e4'
-title: 'EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data'
-title_meta: 'EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data'
+title: 'Execute Script - Disk - Gather Critical Data'
+title_meta: 'Execute Script - Disk - Gather Critical Data'
 keywords: ['disk', 'monitor', 'performance', 'data', 'windows', 'mysql']
 description: 'The EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data is a ConnectWise Automate component designed to run a script on non-virtual Windows workstations weekly. It gathers critical disk data, analyzes performance, and stores results in a MySQL table for proactive monitoring.'
 tags: ['mysql', 'performance', 'windows']
@@ -41,4 +41,6 @@ Managed Windows Workstations
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
 Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>) script.
+
+
 

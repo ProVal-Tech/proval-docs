@@ -1,7 +1,7 @@
 ---
 id: ps-set-lastloggedonuser
 title: 'Set-LastLoggedOnUser'
-title_meta: 'Set-LastLoggedOnUser Command'
+title_meta: 'Set-LastLoggedOnUser'
 keywords: ['user', 'login', 'session', 'windows']
 description: 'Documentation for the Set-LastLoggedOnUser command to set the last logged-on user in Windows.'
 tags: ['security', 'windows']
@@ -71,4 +71,6 @@ Sets the specified user as the last logged-in user and restarts the computer imm
 
 - .\\Set-LastLoggedOnUser-Log.txt
 - .\\Set-LastLoggedOnUser-Error.txt
+
+
 

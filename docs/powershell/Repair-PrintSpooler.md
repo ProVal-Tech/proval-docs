@@ -1,7 +1,7 @@
 ---
 id: ps-repair-printspooler
 title: 'Repair-PrintSpooler'
-title_meta: 'Repair-PrintSpooler Command'
+title_meta: 'Repair-PrintSpooler'
 keywords: ['repair', 'printspooler', 'service', 'reset']
 description: 'Documentation for the Repair-PrintSpooler command to repair and reset the Windows Print Spooler service.'
 tags: ['print', 'windows']
@@ -46,4 +46,6 @@ Location of output for log and error files:
 .\Repair-PrintSpooler-log.txt
 .\Repair-PrintSpooler-error.txt
 ```
+
+
 

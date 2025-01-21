@@ -1,7 +1,7 @@
 ---
 id: '64da30ad-04ef-486e-b152-855b51be5896'
-title: 'DUO Auth Proxy Deployment Group Setup'
-title_meta: 'DUO Auth Proxy Deployment Group Setup'
+title: 'DUO Auth Proxy Deployment'
+title_meta: 'DUO Auth Proxy Deployment'
 keywords: ['duo', 'proxy', 'deployment', 'group', 'authentication']
 description: 'This document provides a comprehensive guide on setting up a dynamic group for the DUO Security Authentication Proxy deployment in ConnectWise RMM. It details the necessary custom fields, group creation steps, and criteria for agent inclusion based on specific conditions.'
 tags: ['deployment', 'windows']
@@ -61,4 +61,6 @@ This group adds the agent to the group for the "DUO Security Authentication Prox
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_15.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
+
 

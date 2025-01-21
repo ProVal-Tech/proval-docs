@@ -1,7 +1,7 @@
 ---
 id: '9e16691c-a81f-4a59-865c-ac38530ae29f'
-title: 'SentinelOne Deployment Failure Monitor'
-title_meta: 'SentinelOne Deployment Failure Monitor'
+title: 'SentinelOne Deployment Failure'
+title_meta: 'SentinelOne Deployment Failure'
 keywords: ['monitor', 'sentinelone', 'deployment', 'failure', 'tickets']
 description: 'This document provides a step-by-step guide to create a monitor in ConnectWise RMM that generates tickets when the SentinelOne Deployment task fails to install on machines. It includes details on dependencies, monitor setup, and configuration steps.'
 tags: ['security', 'setup']
@@ -57,6 +57,8 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](htt
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_9.png)  
+
+
 
 
 

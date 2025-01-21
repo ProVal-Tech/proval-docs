@@ -1,7 +1,7 @@
 ---
 id: 'f499a42f-9194-4109-88c4-6ae61fcfbb93'
-title: 'Configure Logon Auditing with Auditpol'
-title_meta: 'Configure Logon Auditing with Auditpol'
+title: 'Set Logon Success and Failure Auditing ON'
+title_meta: 'Set Logon Success and Failure Auditing ON'
 keywords: ['audit', 'logon', 'success', 'failure', 'dc']
 description: 'This document provides a detailed overview of a script that configures logon auditing for success and failure events using auditpol.exe. The script is designed to run on a domain controller and ensures that logon auditing is enabled, facilitating better security monitoring and compliance.'
 tags: ['report', 'security', 'windows']
@@ -33,4 +33,6 @@ This script uses `auditpol.exe` to configure logon auditing for success and fail
 ## Output
 
 - Script log
+
+
 

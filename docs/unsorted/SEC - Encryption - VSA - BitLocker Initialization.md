@@ -1,7 +1,7 @@
 ---
 id: '8c653432-1811-4651-989e-3c8aae89a7cf'
-title: 'BitLocker Initialization Guide for Kaseya VSA'
-title_meta: 'BitLocker Initialization Guide for Kaseya VSA'
+title: 'SEC - Encryption - VSA - BitLocker Initialization'
+title_meta: 'SEC - Encryption - VSA - BitLocker Initialization'
 keywords: ['bitlocker', 'encryption', 'kaseya', 'agent', 'procedure']
 description: 'This guide provides an overview of the BitLocker Initialization folder in Kaseya VSA, detailing the Agent Procedures for automating drive encryption using the Initialize-BitLockerVolume PowerShell script. It includes instructions for selecting and customizing procedures to align with specific security requirements.'
 tags: ['encryption', 'kaseya', 'security', 'setup']
@@ -123,5 +123,7 @@ The following logs are created when the agent procedure is run.
 ./Initialize-BitLockerVolume-data.txt
 ./Initialize-BitLockerVolume-error.txt
 ```
+
+
 
 

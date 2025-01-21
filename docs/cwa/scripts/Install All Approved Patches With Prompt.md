@@ -1,7 +1,7 @@
 ---
 id: 'f2a3feba-fc4b-4693-ba31-6b50f66bac15'
-title: 'Handling Pending Patches Installation and Reboot Management'
-title_meta: 'Handling Pending Patches Installation and Reboot Management'
+title: 'Install All Approved Patches With Prompt'
+title_meta: 'Install All Approved Patches With Prompt'
 keywords: ['patches', 'installation', 'reboot', 'scheduling', 'notification']
 description: 'This document outlines a script that manages the installation of approved patches on a machine, including user interaction for reboot scheduling and notifications for pending actions. It handles scenarios where the user is logged in or not, provides prompts for reboot timing, and ensures that users are informed of available patches and any installation failures.'
 tags: ['installation', 'security', 'windows']
@@ -74,4 +74,6 @@ A pop-up message will appear at the bottom right corner of the screen to remind 
 
 - Script Log
 - Prompt on End Machine
+
+
 

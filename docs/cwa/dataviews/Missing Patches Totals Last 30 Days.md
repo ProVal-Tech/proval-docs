@@ -1,7 +1,7 @@
 ---
 id: '2f00a1ec-90be-4572-9479-facb7c12cb5c'
-title: 'Patching Information Dataview'
-title_meta: 'Patching Information Dataview'
+title: 'Missing Patches Totals Last 30 Days'
+title_meta: 'Missing Patches Totals Last 30 Days'
 keywords: ['patching', 'dataview', 'devices', 'servers', 'workstations', 'missing', 'total', 'reviewed']
 description: 'This document provides a comprehensive overview of a Dataview designed to present patching information for devices that have been online within the last 30 days. It details the total patches not set, reviewed count, total missing patches, and breaks down these numbers by server and workstation.'
 tags: ['performance', 'report', 'update', 'windows']
@@ -25,4 +25,6 @@ This Dataview provides patching information for devices online within the last 3
 | Total Per Machine                  | Displays the number of patches per machine that have been online in the last 30 days                 |
 | Total Missing Unfiltered           | Displays the number of patches that are unfiltered                                                   |
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
+
+
 

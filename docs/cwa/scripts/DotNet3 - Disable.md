@@ -1,7 +1,7 @@
 ---
 id: 'ff5f6191-df47-49a9-b3ff-de96ee484e39'
-title: 'Disable-DotNet3 Implementation'
-title_meta: 'Disable-DotNet3 Implementation - Automate Script'
+title: 'DotNet3 - Disable'
+title_meta: 'DotNet3 - Disable'
 keywords: ['automate', 'implementation', 'dotnet', 'script', 'dependency']
 description: 'This document outlines the implementation of the Disable-DotNet3 agnostic script within ConnectWise Automate, providing a sample run and detailing the necessary dependencies for successful execution.'
 tags: ['software', 'update', 'windows']
@@ -24,4 +24,6 @@ This document describes the implementation of the Disable-DotNet3 agnostic scrip
 ## Process
 
 Please review the agnostic content documentation for process information.
+
+
 

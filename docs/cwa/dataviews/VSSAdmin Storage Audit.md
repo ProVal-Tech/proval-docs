@@ -1,7 +1,7 @@
 ---
 id: '7f7e7d3b-047d-41dc-acc2-5083adcaaf39'
-title: 'VSS Admin Storage Detail for All Volumes'
-title_meta: 'VSS Admin Storage Detail for All Volumes'
+title: 'VSSAdmin Storage Audit'
+title_meta: 'VSSAdmin Storage Audit'
 keywords: ['vss', 'storage', 'volume', 'audit', 'agent']
 description: 'This document provides a detailed overview of the VSS admin storage for all volumes, including dependencies and columns that store essential information about each agent and its storage utilization.'
 tags: ['backup', 'report', 'storage', 'virtualization', 'windows']
@@ -33,4 +33,6 @@ This dataview stores the details of VSS admin storage for all volumes.
 | VSS Allocated Storage   | VSS storage allocated on the disk             |
 | VSS Max Storage         | VSS max storage provided                      |
 | Script Ran Date         | Date when the script last ran on the agent    |
+
+
 

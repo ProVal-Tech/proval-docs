@@ -1,7 +1,7 @@
 ---
 id: '12c94448-10eb-4523-85e6-6c4cde84a33c'
-title: 'Uninstall Huntress Agent Script'
-title_meta: 'Uninstall Huntress Agent Script'
+title: 'Uninstall Huntress Agent Windows, Mac'
+title_meta: 'Uninstall Huntress Agent Windows, Mac'
 keywords: ['uninstall', 'huntress', 'agent', 'windows', 'macintosh']
 description: 'This document provides a detailed overview of a script designed to uninstall the Huntress Agent from both Windows and Macintosh machines, including dependencies, variables, and sample run output.'
 tags: ['security', 'uninstallation', 'windows']
@@ -39,4 +39,6 @@ This script can be used to uninstall the Huntress Agent from both Windows and Ma
 ## Output
 
 - Script log
+
+
 

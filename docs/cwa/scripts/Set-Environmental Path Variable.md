@@ -1,7 +1,7 @@
 ---
 id: '838d8f61-038e-4569-aaf1-c72a1072670a'
-title: 'Add Windows Path Variable'
-title_meta: 'Add Windows Path Variable'
+title: 'Set-Environmental Path Variable'
+title_meta: 'Set-Environmental Path Variable'
 keywords: ['windows', 'path', 'variable', 'environment', 'scope']
 description: 'This document outlines the process for adding a requested Windows path to the environmental path variable for a specified scope, including user and machine options. It provides sample runs, dependencies, and detailed variable descriptions.'
 tags: ['setup', 'windows']
@@ -47,4 +47,6 @@ Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](<..
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-dcdiagreport
 title: 'Get-DCDiagReport'
-title_meta: 'Get-DCDiagReport Command'
+title_meta: 'Get-DCDiagReport'
 keywords: ['dcdiag', 'domain', 'controller', 'report']
 description: 'Documentation for the Get-DCDiagReport command to run advanced diagnostics on a domain controller and generate various report formats.'
 tags: ['active-directory', 'report', 'windows']
@@ -44,4 +44,6 @@ Must be run on a domain controller.
 .\Get-DCDiagReport-error.txt
 \<Specified Log File Path and fileName>
 ```
+
+
 

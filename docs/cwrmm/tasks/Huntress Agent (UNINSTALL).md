@@ -1,7 +1,7 @@
 ---
 id: '12b83efc-afab-463a-a26e-d94e9e963d96'
-title: 'Uninstalling the Huntress Agent on Windows'
-title_meta: 'Uninstalling the Huntress Agent on Windows'
+title: 'Huntress Agent (UNINSTALL)'
+title_meta: 'Huntress Agent (UNINSTALL)'
 keywords: ['uninstall', 'huntress', 'windows', 'agent', 'script']
 description: 'This document provides a detailed guide on how to uninstall the Huntress agent from a Windows machine using a PowerShell script. It includes dependencies, script creation steps, and deployment instructions.'
 tags: ['software', 'uninstallation', 'windows']
@@ -164,4 +164,6 @@ Then click on "Schedule" and provide the parameters details as necessary for the
 ## Output
 
 - Script log
+
+
 

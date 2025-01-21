@@ -1,7 +1,7 @@
 ---
 id: 'f3c63891-aac1-49f9-a05d-552886c5b6da'
-title: 'Collecting AD Users Department Information'
-title_meta: 'Collecting AD Users Department Information'
+title: 'Computer Department AuditingDV'
+title_meta: 'Computer Department AuditingDV'
 keywords: ['ad', 'users', 'department', 'information', 'collection']
 description: 'This document outlines a script designed to collect department information for Active Directory users. It details the dependencies required for the script, the process it follows to gather and store data, and the expected output, including logs and dataviews.'
 tags: ['active-directory', 'database', 'report']
@@ -33,4 +33,6 @@ This script collects the department information of AD users. It stores the infor
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
+
+
 

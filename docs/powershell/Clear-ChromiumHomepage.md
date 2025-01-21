@@ -1,7 +1,7 @@
 ---
 id: ps-clear-chromiumhomepage
 title: 'Clear-ChromiumHomepage'
-title_meta: 'Clear-ChromiumHomepage Command'
+title_meta: 'Clear-ChromiumHomepage'
 keywords: ['clear', 'homepage', 'chromium', 'browser']
 description: 'Documentation for the Clear-ChromiumHomepage command to clear enforced homepages in Chromium-based browsers.'
 tags: ['chrome', 'setup', 'web-browser']
@@ -29,4 +29,6 @@ Removes enforced homepages in Chrome and Edge. After running, user configuration
 
 ## Output
 `.\\Set-ChromiumHomepage-log.txt`
+
+
 

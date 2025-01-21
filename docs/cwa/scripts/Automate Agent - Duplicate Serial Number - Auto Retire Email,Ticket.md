@@ -1,7 +1,7 @@
 ---
 id: 'f9a0c7b8-2807-4e08-b1b7-c9342b89a493'
-title: 'Retire Duplicate Agents in ConnectWise Automate'
-title_meta: 'Retire Duplicate Agents in ConnectWise Automate'
+title: 'Automate Agent - Duplicate Serial Number - Auto Retire Email,Ticket'
+title_meta: 'Automate Agent - Duplicate Serial Number - Auto Retire Email,Ticket'
 keywords: ['duplicate', 'agents', 'automate', 'retire', 'email', 'ticketing']
 description: 'This document provides a comprehensive guide on retiring duplicate agents in the ConnectWise Automate environment. It explains how the script identifies duplicate agents based on their serial number, name, and client affiliation, and outlines the process for keeping only the most recent agent. Additionally, it covers the configuration options for email notifications and ticket generation for retired agents.'
 tags: ['email', 'ticketing', 'windows']
@@ -79,4 +79,6 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 In case there are no duplicate serial numbers:
 
 `No duplicate machines identified based on serial number.`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '198f0265-3e5b-4828-9e86-dfe727bc2d1c'
-title: 'Patching and CU Compliance Metrics'
-title_meta: 'Patching and CU Compliance Metrics'
+title: 'Patching and Cumulative Update Compliance Report'
+title_meta: 'Patching and Cumulative Update Compliance Report'
 keywords: ['patching', 'compliance', 'windows', 'dataview', 'metrics']
 description: 'This document outlines the implementation steps and associated content for the Patching and Cumulative Update Compliance Metrics dataviews in ConnectWise Automate, focusing on Windows computers with managed patch policies and their compliance scores over the past 30 days.'
 tags: ['auditing', 'compliance', 'database', 'windows']
@@ -61,4 +61,6 @@ The purpose of the dataviews included in this solution is to present the patchin
 8. Remove/delete the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
    - [MySQL - View - Create (pvl_patch_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_patch_cu_compliance).md>)
+
+
 

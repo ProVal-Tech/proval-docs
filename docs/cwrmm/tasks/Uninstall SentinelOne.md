@@ -1,7 +1,7 @@
 ---
 id: '7aa2397f-6dcd-4d3c-ba87-160ec1bfcb41'
 title: 'Uninstall SentinelOne'
-title_meta: 'Uninstall SentinelOne Agent Script'
+title_meta: 'Uninstall SentinelOne'
 keywords: ['sentinelone', 'uninstall', 'agent', 'script', 'removal']
 description: 'This document provides a detailed guide on how to identify and uninstall the SentinelOne agent using a script. It explains the requirements for uninstallation, including the use of a passphrase and the necessary steps to disable tamper protection if needed.'
 tags: ['application', 'security', 'setup', 'uninstallation', 'windows']
@@ -169,4 +169,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

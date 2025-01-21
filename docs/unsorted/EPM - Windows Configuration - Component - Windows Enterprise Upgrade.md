@@ -1,7 +1,7 @@
 ---
 id: 'e6c76294-af5e-465d-9824-2e5a58734451'
-title: 'Windows Enterprise Upgrade for Workstations'
-title_meta: 'Windows Enterprise Upgrade for Workstations'
+title: 'EPM - Windows Configuration - Component - Windows Enterprise Upgrade'
+title_meta: 'EPM - Windows Configuration - Component - Windows Enterprise Upgrade'
 keywords: ['windows', 'enterprise', 'upgrade', 'kms', 'component']
 description: 'This document outlines the steps to update the Windows edition for Windows 10/11 workstations to Enterprise. It includes dependencies on KMS host setup, implementation details for exporting and importing components in Datto RMM, and expected output upon successful execution.'
 tags: ['installation', 'software', 'windows']
@@ -48,4 +48,6 @@ A job status of Success is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+
 

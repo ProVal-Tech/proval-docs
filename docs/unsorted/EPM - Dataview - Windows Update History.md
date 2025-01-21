@@ -1,7 +1,7 @@
 ---
 id: 'ecf832e3-2985-4079-971c-436f1c836e53'
-title: 'Windows Update History for Agents'
-title_meta: 'Windows Update History for Agents'
+title: 'EPM - Dataview - Windows Update History'
+title_meta: 'EPM - Dataview - Windows Update History'
 keywords: ['windows', 'update', 'history', 'rmm', 'patch', 'audit']
 description: 'This document provides a comprehensive overview of Windows Update history for agents, detailing the various columns of information such as client name, operating system, patch details, and installation status. It also lists dependencies for effective auditing and management of Windows updates.'
 tags: ['performance', 'report', 'security', 'update', 'windows']
@@ -53,4 +53,6 @@ This document displays information about Windows Update history for agents.
 | Recommended CPU Speed           | Recommended CPU Speed to install the Patch        |
 | Recommended Hard Disk Space     | Recommended Hard Disk Space to Install the Patch  |
 | Recommended Memory              | Recommended Memory to Install the Patch           |
+
+
 

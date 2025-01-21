@@ -1,7 +1,7 @@
 ---
 id: '75f8c13f-04d5-45fd-b650-3b010353a8c0'
-title: 'Remote Monitor for New User Account Creation'
-title_meta: 'Remote Monitor for New User Account Creation'
+title: 'New Account Detection'
+title_meta: 'New Account Detection'
 keywords: ['monitor', 'user', 'account', 'event', 'log', 'windows', 'server', 'workstation']
 description: 'This document details a remote monitor designed to detect the creation of new user accounts on local machines by querying the event log. It includes suggested configurations for alert styles and templates, as well as example check actions and values for implementation.'
 tags: ['windows']
@@ -38,5 +38,7 @@ The suggested target for the monitor is Service Plan(s) for Servers and Workstat
 **Examples:**  
 - **Windows Servers**: Should be run on all Windows-based servers.  
 - **Windows Workstations**: Should be run on all Windows workstations (Optional).
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: ps-get-userchilditem
 title: 'Get-UserChildItem'
-title_meta: 'Get-UserChildItem Command'
+title_meta: 'Get-UserChildItem'
 keywords: ['retrieve', 'user', 'files', 'folders']
 description: 'Documentation for the Get-UserChildItem command to query the C:\\users folder for all users, find the relative subfolder you provide, and return the file properties you would find by running "Get-ChildItem".'
 tags: ['security', 'windows']
@@ -62,4 +62,6 @@ Gets all files in the Documents folder and all its subfolders for all users.
 System Array - Including the exact outputs you would receive by running Get-ChildItem.
 
 Log file: `.\Get-UserChildItem-log.txt`
+
+
 

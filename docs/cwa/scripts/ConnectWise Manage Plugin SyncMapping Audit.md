@@ -1,7 +1,7 @@
 ---
 id: '474cb433-c577-450c-b214-e7fc6a1c73f3'
-title: 'Email Alerts for Unsynced Components in CW Manage Plugin'
-title_meta: 'Email Alerts for Unsynced Components in CW Manage Plugin'
+title: 'ConnectWise Manage Plugin SyncMapping Audit'
+title_meta: 'ConnectWise Manage Plugin SyncMapping Audit'
 keywords: ['email', 'alerts', 'cwmanage', 'unsynced', 'components']
 description: 'This document outlines a script designed to send email alerts when unsynced or unmapped components are detected in the CW Manage plugin. The script runs weekly and checks for various unsynced configurations, generating a ticket in Autotask if issues are found.'
 tags: ['report', 'security']
@@ -39,4 +39,6 @@ It is a client script that should be scheduled to run once a week.
 ## Output
 
 - Email
+
+
 

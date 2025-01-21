@@ -1,7 +1,7 @@
 ---
 id: '292daf43-dff9-418f-982f-56f08ac8d016'
-title: 'BitLocker Volume Initialization Procedures'
-title_meta: 'BitLocker Volume Initialization Procedures'
+title: 'BitLocker Initialization'
+title_meta: 'BitLocker Initialization'
 keywords: ['bitlocker', 'encryption', 'tpm', 'protector', 'security']
 description: 'This document outlines a suite of 9 agent procedures designed for the initialization of BitLocker volumes using various protection methods. Each procedure is detailed with examples and logs to illustrate functionality and outcomes during execution.'
 tags: ['backup', 'encryption', 'security', 'setup', 'windows']
@@ -81,4 +81,6 @@ All required parameters are prompted and explained at script runtime.
     ./Initialize-BitLockerVolume-error.txt
     Agent Procedure Log
 ```
+
+
 

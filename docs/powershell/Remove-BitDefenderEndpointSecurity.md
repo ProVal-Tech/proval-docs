@@ -1,7 +1,7 @@
 ---
 id: ps-remove-bitdefenderendpointsecurity
 title: 'Remove-BitDefenderEndpointSecurity'
-title_meta: 'Remove-BitDefenderEndpointSecurity Command'
+title_meta: 'Remove-BitDefenderEndpointSecurity'
 keywords: ['remove', 'bitdefender', 'security', 'cleanup']
 description: 'Documentation for the Remove-BitDefenderEndpointSecurity command to remove all Bitdefender Endpoint Security products from an endpoint.'
 tags: ['security', 'uninstallation']
@@ -48,4 +48,6 @@ Removes all Bitdefender Endpoint Security from an endpoint when BEST cannot be d
 Location of output for log, result, and error files:
 - `Remove-BitdefenderEndpointSecurity-log.txt`
 - `Remove-BitdefenderEndpointSecurity-Error.txt`
+
+
 

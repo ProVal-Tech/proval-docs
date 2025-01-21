@@ -1,7 +1,7 @@
 ---
 id: 'aa42a0b1-19e4-411c-860f-ec05f0d1bf7d'
-title: 'GPResult Data Storage'
-title_meta: 'GPResult Data Storage'
+title: 'plugin_proval_gpresult'
+title_meta: 'plugin_proval_gpresult'
 keywords: ['gpresult', 'gpo', 'active-directory', 'management', 'database']
 description: 'This document outlines the process of storing GPResult information gathered from the Group Policy. It details the dependencies required for the script, the database table structure, and the significance of each column in the context of Group Policy Objects (GPO).'
 tags: ['active-directory', 'database', 'gpo', 'security']
@@ -34,4 +34,6 @@ Stores GPResult information from the script [EPM - Windows Configuration - Scrip
 | IsValid         | TINYINT   | Indicates if the GPO is valid in the current context.                                          |
 | AccessDenied    | TINYINT   | Indicates if access was denied to apply the GPO.                                               |
 | SecurityFilter   | VARCHAR   | Indicates the security filters that were applied that led to the GPO application.              |
+
+
 

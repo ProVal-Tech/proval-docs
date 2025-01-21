@@ -1,7 +1,7 @@
 ---
 id: ps-remove-chromiumhomepage  
 title: 'Remove-ChromiumHomepage'  
-title_meta: 'Remove-ChromiumHomepage Command'  
+title_meta: 'Remove-ChromiumHomepage'  
 keywords: ['remove', 'homepage', 'chromium', 'browser']  
 description: 'Documentation for the Remove-ChromiumHomepage command to remove homepage settings from popular Chromium-based browsers.'  
 tags: ['chrome', 'web-browser']  
@@ -34,4 +34,6 @@ This will remove all homepage policies for the Google Chrome and Brave browsers.
 ```
 .\Remove-ChromiumHomepage-log.txt  
 ```  
+
+
 

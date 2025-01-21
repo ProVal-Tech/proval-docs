@@ -1,7 +1,7 @@
 ---
 id: '9cd465c4-1fed-40fb-8ac2-0b170c9c50b4'
-title: 'Speed Test Audit Summary'
-title_meta: 'Speed Test Audit Summary'
+title: 'Internet Latest Speed - Audit'
+title_meta: 'Internet Latest Speed - Audit'
 keywords: ['speed', 'audit', 'network', 'bandwidth', 'performance', 'latency', 'jitter', 'packet loss', 'ISP']
 description: 'This document provides a summary of the latest audited speed test information from the custom table related to network performance. It details the dependencies and columns used in the audit, including metrics such as jitter, latency, download and upload bandwidth, and packet loss.'
 tags: ['database', 'ISP', 'performance']
@@ -51,4 +51,6 @@ This document displays the latest audited speed test information from the last s
 | ResultURL       | The URL of the speed test result.                                |
 | DownloadMbps    | The download speed detected in Mbps.                             |
 | UploadMbps      | The upload speed detected in Mbps.                               |
+
+
 

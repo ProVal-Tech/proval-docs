@@ -1,7 +1,7 @@
 ---
 id: '6b79ea40-3f5f-451f-8b03-b6d93c4b099d'
-title: 'Firefox Extensions Audit'
-title_meta: 'Firefox Extensions Audit'
+title: 'Firefox Extension Audit'
+title_meta: 'Firefox Extension Audit'
 keywords: ['firefox', 'extensions', 'audit', 'endpoint', 'inventory']
 description: 'This document provides a detailed overview of the Firefox Extensions Audit procedure, which collects and logs the extensions installed on an endpoint. The process includes example logs and dependencies for running the audit effectively.'
 tags: ['extensions', 'firefox', 'windows']
@@ -66,4 +66,6 @@ Runs the agnostic script to collect Firefox extensions installed on an endpoint.
 
 - Agent Procedure Log
 - Custom Field: xPVAL Firefox Extensions Installed
+
+
 

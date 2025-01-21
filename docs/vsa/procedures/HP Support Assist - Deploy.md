@@ -1,7 +1,7 @@
 ---
 id: 'bc4737bd-eeb2-4211-b33b-a40c5e416d73'
-title: 'Deploying HP Support Assist'
-title_meta: 'Deploying HP Support Assist to Endpoints'
+title: 'HP Support Assist - Deploy'
+title_meta: 'HP Support Assist - Deploy'
 keywords: ['hp', 'support', 'assist', 'deployment', 'software']
 description: 'This document outlines the procedure for deploying HP Support Assist to endpoints, including the download, extraction, and installation processes. It provides a detailed example of the agent procedure log and the necessary dependencies for successful execution.'
 tags: ['installation', 'software', 'windows']
@@ -49,4 +49,6 @@ The procedure requires the shared file "HPSupportAssist.ps1" to run.
 ## Output
 
 Agent Procedure Log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '8b3db9bc-3acc-40fb-96e3-9f6c271a2591'
-title: 'Set Display Scaling for Windows Machines'
-title_meta: 'Set Display Scaling for Windows Machines'
+title: 'Set - DisplayScaling'
+title_meta: 'Set - DisplayScaling'
 keywords: ['display', 'scaling', 'windows', 'custom', 'script']
 description: 'This document outlines the implementation of a script to set custom display scaling for both existing and new users on Windows machines within an RMM environment. It includes user parameters, task creation steps, and example outputs.'
 tags: ['setup', 'windows']
@@ -148,4 +148,6 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+
 

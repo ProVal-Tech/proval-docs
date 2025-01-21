@@ -1,7 +1,7 @@
 ---
 id: 'd2168fe5-e9f2-4265-ad4d-ce98ee14cf26'
-title: 'iDRAC Version Overview for Dell Servers'
-title_meta: 'iDRAC Version Overview for Dell Servers'
+title: 'iDRAC Version - Dell Servers'
+title_meta: 'iDRAC Version - Dell Servers'
 keywords: ['idrac', 'dell', 'servers', 'version', 'rmm']
 description: 'This document provides an overview of the iDRAC version on Dell servers. It includes instructions for scheduling the data view script to run daily on the Dell Servers group to collect relevant data, along with details on the columns displayed in the dataview.'
 tags: ['database', 'dell', 'report']
@@ -28,4 +28,6 @@ This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC 
 | Operating System   | Shows the OS of the concerned server.                      |
 | iDRAC Version     | Shows the iDRAC version of the concerned server.           |
 | Last Contact      | Shows the last contact of the concerned server with RMM.   |
+
+
 

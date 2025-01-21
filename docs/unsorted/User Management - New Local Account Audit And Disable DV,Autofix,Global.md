@@ -1,7 +1,7 @@
 ---
 id: '3b41c8a5-cebe-47bd-a829-9b3fa5701b15'
-title: 'New Account Detection Script'
-title_meta: 'New Account Detection Script'
+title: 'User Management - New Local Account Audit And Disable DV,Autofix,Global'
+title_meta: 'User Management - New Local Account Audit And Disable DV,Autofix,Global'
 keywords: ['account', 'audit', 'disable', 'detection', 'local', 'monitor', 'user']
 description: 'This script detects newly created accounts within the last 15 minutes, logging details about the user who created the account and the new account itself, including its type and login status. It helps in automating the auditing process and can disable newly detected local users based on a configurable parameter.'
 tags: ['security', 'windows']
@@ -45,4 +45,6 @@ This script is a function script and it only runs with the dependent remote moni
 - Script log
 - Custom table
 - Dataview
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '52254d14-bc24-4f32-bb3c-7447756ec15f'
-title: 'Uninstall NinjaRMMAgent Script'
-title_meta: 'Uninstall NinjaRMMAgent Script - ConnectWise Automate'
+title: 'NinjaRMMAgent Uninstaller'
+title_meta: 'NinjaRMMAgent Uninstaller'
 keywords: ['uninstall', 'ninjarmagent', 'script', 'ticketing', 'failure']
 description: 'This document outlines a script designed to uninstall the NinjaRMMAgent from a machine. It includes a global parameter for ticketing, which, when enabled, generates a support ticket if the uninstallation process fails. The document also provides a summary of the script functionality and sample run output.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
@@ -27,4 +27,6 @@ The script attempts to uninstall the NinjaRMMAgent from the machine. If the glob
 
 - Script Log
 - Ticket
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5e473149-73a6-4e38-b61e-fd200d9af020'
-title: 'Create Remote Monitors for Detected Hard Drives'
-title_meta: 'Create Remote Monitors for Detected Hard Drives'
+title: 'Agent Monitor Creation - Disk Workstations 5 GB'
+title_meta: 'Agent Monitor Creation - Disk Workstations 5 GB'
 keywords: ['remote', 'monitors', 'hard', 'drives', 'disk', 'space', 'alerts']
 description: 'This document provides a detailed overview of a script designed to create remote monitors for detected hard drives at the agent level. It outlines the dependencies, variables, system properties, and the process involved in setting up disk space monitoring, including the time saved by automation and sample run images.'
 tags: ['disk', 'sql']
@@ -62,4 +62,6 @@ The script runs as a subscript inside the "Agent Monitor Creation - Disk* - WRAP
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a workstation.
+
+
 

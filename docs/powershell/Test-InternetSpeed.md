@@ -1,7 +1,7 @@
 ---
 id: ps-test-internetspeed
 title: 'Test-InternetSpeed'
-title_meta: 'Test-InternetSpeed Command'
+title_meta: 'Test-InternetSpeed'
 keywords: ['speedtest', 'internet', 'network', 'performance']
 description: 'Documentation for the Test-InternetSpeed command to run an internet speed test via the Ookla SpeedTest CLI application.'
 tags: ['networking', 'performance', 'software']
@@ -38,4 +38,6 @@ result       : @{id=00000000-0000-0000-0000-000000000000; url=https://www.speedt
 downloadMbps : 924.245952
 uploadMbps   : 935.860104
 ```
+
+
 

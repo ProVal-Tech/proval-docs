@@ -1,7 +1,7 @@
 ---
 id: 'dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf'
-title: 'CWA Implementation of Remove-PUA'
-title_meta: 'CWA Implementation of Remove-PUA'
+title: 'Remove - PUA'
+title_meta: 'Remove - PUA'
 keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit']
 description: 'This document provides a detailed overview of the CWA implementation of the Remove-PUA script, including file hashes, sample runs, user parameters, and supported bloatware for the effective uninstallation of unwanted applications.'
 tags: ['uninstallation']
@@ -118,4 +118,6 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
+
+
 

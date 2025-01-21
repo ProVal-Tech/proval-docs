@@ -1,7 +1,7 @@
 ---
 id: '3579d837-d1a4-4186-ba92-4323a27bc367'
-title: 'Stitching Frequent Logon User'
-title_meta: 'Stitching Frequent Logon User - Automate Integration'
+title: 'Frequent Logon User Detection and Set Computer Contact'
+title_meta: 'Frequent Logon User Detection and Set Computer Contact'
 keywords: ['frequent', 'logon', 'user', 'contact', 'workstation']
 description: 'This document outlines a solution for gathering frequent domain logon users on Windows workstations and setting the associated contact in ConnectWise Automate. It includes implementation steps and associated content such as scripts and monitors for effective user detection.'
 tags: ['windows']
@@ -38,4 +38,6 @@ This solution is designed to gather the frequent domain logon user on Windows wo
      - [Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>)
        - Set up with the "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
+
+
 

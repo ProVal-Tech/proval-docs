@@ -1,7 +1,7 @@
 ---
 id: '64476262-ad0f-474e-aebb-70ec1e0ccd97'
-title: 'Unexpected Restart Monitor Setup'
-title_meta: 'Unexpected Restart Monitor Setup for ConnectWise Automate'
+title: 'EPM - Data Collection - Solution -Unexpected Reboots caused by Bluescreens.'
+title_meta: 'EPM - Data Collection - Solution -Unexpected Reboots caused by Bluescreens.'
 keywords: ['restart', 'monitor', 'shutdown', 'event', 'alert', 'template', 'bluescreen', 'power']
 description: 'This document provides a detailed guide on setting up an Unexpected Restart Monitor in ConnectWise Automate. It aims to reduce unnecessary notifications caused by power outages by implementing a second level of verification and alert templates for monitoring unexpected shutdowns.'
 tags: ['bluescreen']
@@ -58,6 +58,8 @@ The Unexpected Restart Monitor generates a lot of noise, as often the shutdown i
 ![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens/image_4.png)
 
 ## FAQ
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 id: 'dcffd758-d8cc-46a4-b7d7-cd34b7fd4953'
-title: 'Remove and Block Firefox Extension'
-title_meta: 'Remove and Block Firefox Extension'
+title: 'Firefox - Remove Extension'
+title_meta: 'Firefox - Remove Extension'
 keywords: ['firefox', 'extension', 'remove', 'block', 'addons', 'policies']
 description: 'This document provides a detailed overview of a script designed to remove and optionally block a specified extension in Mozilla Firefox. It includes information on dependencies, user parameters, and the processing steps involved in executing the script, ensuring users can effectively manage Firefox extensions.'
 tags: ['firefox', 'setup', 'software']
@@ -56,4 +56,6 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on computer
+
+
 

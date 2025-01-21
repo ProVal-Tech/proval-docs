@@ -1,7 +1,7 @@
 ---
 id: '13b8b937-0d9f-44b7-a7e5-5abf38ab9cda'
-title: 'Windows 10 Version Metrics Dataview'
-title_meta: 'Windows 10 Version Metrics Dataview'
+title: 'Windows 10 Version Metrics + Filters + Client Filters'
+title_meta: 'Windows 10 Version Metrics + Filters + Client Filters'
 keywords: ['windows', 'metrics', 'dataview', 'build', 'client', 'machines', 'releaseid', 'patch']
 description: 'This document details a dataview that displays the number of Windows 10 machines by their build number, including calculated percentages of each version against the total number of Windows 10 devices for each client. It includes various filters and a summary row for each client.'
 tags: ['windows']
@@ -44,5 +44,7 @@ An additional summarized row per client is included in the dataview.
 | % Supported Machines              | varchar(27)     | Either 100 or 0 for the ReleaseID row depending on whether the concerned ReleaseID is supported to date. For the Summary row, it's the percentage of the supported Windows 10 machines out of all the available Windows 10 machines. |
 | % Unsupported Machines            | varchar(31)     | Either 0 or 100 for the ReleaseID row depending on whether the concerned ReleaseID is supported to date. For the Summary row, it's the percentage of the unsupported Windows 10 machines out of all the available Windows 10 machines. |
 | Build                             | varchar(60)     | Build Number for the concerned ReleaseID. e.g., 10.0.19044, 10.0.19043. It will show 'Windows 10' for the Summary Row.                                                                                     |
+
+
 
 

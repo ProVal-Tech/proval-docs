@@ -1,7 +1,7 @@
 ---
 id: 'cfba27cd-1b8d-4e4f-810a-0c5885ae840d'
-title: 'Audit and Resize VSSAdmin Shadow Copies'
-title_meta: 'Audit and Resize VSSAdmin Shadow Copies'
+title: 'VSS Admin Storage Audit and Resize'
+title_meta: 'VSS Admin Storage Audit and Resize'
 keywords: ['vssadmin', 'shadow', 'copies', 'audit', 'resize']
 description: 'This document outlines a solution for auditing VSSAdmin shadow copies and resizing them if necessary. It includes associated content such as reports, tables, and scripts that assist in the auditing and resizing processes.'
 tags: ['database', 'report', 'storage']
@@ -29,4 +29,6 @@ The [VSSAdmin List Storage Audit](<../cwa/scripts/Vssadmin List Storage Audit.md
 ## FAQ
 
 *(This section can be filled out with frequently asked questions related to the auditing and resizing of VSSAdmin shadow copies.)*
+
+
 

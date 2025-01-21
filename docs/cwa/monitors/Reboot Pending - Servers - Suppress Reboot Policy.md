@@ -1,7 +1,7 @@
 ---
 id: '3cdacc81-3702-454d-b8db-7a1bd6cf5bd9'
-title: 'Monitor for Suppress Reboot and Alert Behavior'
-title_meta: 'Monitor for Suppress Reboot and Alert Behavior'
+title: 'Reboot Pending - Servers - Suppress Reboot Policy'
+title_meta: 'Reboot Pending - Servers - Suppress Reboot Policy'
 keywords: ['ticket', 'reboot', 'patch', 'server', 'alert']
 description: 'This document outlines a monitor that creates a ticket for servers with the Suppress Reboot and Alert reboot behavior applied. It details how the monitor functions after a successful patch installation, replacing the default feature in the patch manager.'
 tags: ['ticketing']
@@ -36,4 +36,6 @@ The server %COMPUTERNAME% is currently reporting that it is pending a reboot. Pl
 
 **Success:**  
 Server %COMPUTERNAME% is no longer reporting that it is pending a reboot. Closing the ticket.
+
+
 

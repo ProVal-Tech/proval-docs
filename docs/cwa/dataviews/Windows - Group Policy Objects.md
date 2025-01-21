@@ -1,7 +1,7 @@
 ---
 id: '1da4d5e9-4168-4c21-94cf-9b52fc565bf7'
-title: 'GPO Audit Dataview'
-title_meta: 'GPO Audit Dataview'
+title: 'Windows - Group Policy Objects'
+title_meta: 'Windows - Group Policy Objects'
 keywords: ['gpo', 'audit', 'policy', 'trustee', 'linked', 'information', 'output']
 description: 'This document provides an overview of a dataview that displays information about Group Policy Objects (GPOs), including their applied policies, linkage locations, and trustees. It also outlines the dependencies required for the dataview to function and details the columns included in the output.'
 tags: ['active-directory', 'report', 'windows']
@@ -35,5 +35,7 @@ This dataview shows information about GPOs, their applied policies, where they a
 | Modified Time   | GPO last modified date and time                 |
 | Read Time       | GPO last check time                              |
 | OU Links        | Created OUs path                                 |
+
+
 
 

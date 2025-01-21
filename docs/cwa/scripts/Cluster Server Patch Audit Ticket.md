@@ -1,7 +1,7 @@
 ---
 id: '35bce608-7df7-4cc3-bd10-8037198f5025'
-title: 'Cluster Server Patching Script'
-title_meta: 'Cluster Server Patching Script for Automate'
+title: 'Cluster Server Patch Audit Ticket'
+title_meta: 'Cluster Server Patch Audit Ticket'
 keywords: ['ticket', 'update', 'cluster', 'patching', 'cumulative', 'automation']
 description: 'This client script creates a ticket for all cluster hosts with a Cumulative Update older than 60 days, facilitating manual patching for servers where Automate is not recommended for patching clusters.'
 tags: ['cluster', 'patching', 'update', 'windows']
@@ -37,4 +37,6 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank you!
+
+
 

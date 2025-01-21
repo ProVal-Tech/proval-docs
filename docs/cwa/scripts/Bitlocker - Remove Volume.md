@@ -1,7 +1,7 @@
 ---
 id: '710777f0-5c3f-4582-96e9-3beacaf085eb'
-title: 'Disable BitLocker on Volumes'
-title_meta: 'Disable BitLocker on Volumes - A Guide'
+title: 'Bitlocker - Remove Volume'
+title_meta: 'Bitlocker - Remove Volume'
 keywords: ['bitlocker', 'encryption', 'volume', 'disable', 'unprotect']
 description: 'This document provides a comprehensive guide on how to disable BitLocker protection on one or all volumes using a PowerShell script. It includes sample runs, user parameters, and dependencies required for execution.'
 tags: ['encryption', 'security', 'windows']
@@ -39,4 +39,6 @@ See process information in the document for [SEC - Encryption - Agnostic - Unpro
 
 - Script log
 - Local file on computer
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '2db72420-9739-43e1-9166-9d2bba9f50d8'
-title: 'Install Cisco Secure Client'
-title_meta: 'Install Cisco Secure Client - Comprehensive Guide'
+title: 'Cisco Secure Client - Install'
+title_meta: 'Cisco Secure Client - Install'
 keywords: ['cisco', 'secure', 'client', 'installation', 'vpn']
 description: 'This document provides a comprehensive guide on installing the Cisco Secure Client along with necessary configurations and parameters required for a successful installation. It includes details about using URLs or managed files for the installer and outlines the required values for Umbrella installations.'
 tags: ['installation', 'security', 'software', 'vpn']
@@ -79,4 +79,6 @@ This command will install all modules, including Umbrella, which require the Use
 ./Install-CiscoSecureClient-log.txt
 ./Install-CiscoSecureClient-error.txt
 ```
+
+
 

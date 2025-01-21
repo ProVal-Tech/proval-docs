@@ -1,7 +1,7 @@
 ---
 id: '7f064a98-679c-4e7c-a8da-499c269b551f'
-title: 'Monitor Audit View Creation for AutoTask Plugins'
-title_meta: 'Monitor Audit View Creation for AutoTask Plugins'
+title: 'plugin_proval_v_monitorauditat'
+title_meta: 'plugin_proval_v_monitorauditat'
 keywords: ['monitor', 'autotask', 'view', 'sql', 'audit']
 description: 'This document provides a detailed SQL script to create a monitor audit view for clients utilizing AutoTask plugins. The script includes necessary joins and conditions to retrieve relevant monitoring information, ensuring effective management and oversight of monitoring activities.'
 tags: ['autotask', 'database', 'sql']
@@ -294,5 +294,7 @@ WHERE
   ) 
   AND (`a`.`ComputerID` < 1)
 ```
+
+
 
 

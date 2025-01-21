@@ -1,7 +1,7 @@
 ---
 id: '87d623c4-d8e2-4c25-b838-f9c0dee5043d'
-title: 'Out of Date CU - Reboot Pending Group Creation'
-title_meta: 'Out of Date CU - Reboot Pending Group Creation'
+title: 'Out of Date CU _ Reboot Pending'
+title_meta: 'Out of Date CU _ Reboot Pending'
 keywords: ['cumulative', 'update', 'reboot', 'pending', 'group', 'creation', 'criteria', 'windows']
 description: 'This document details the steps to create a dynamic group in ConnectWise RMM that identifies computers where a Cumulative Update has been installed but requires a reboot. It includes dependencies, group creation steps, and criteria for filtering devices based on their update status.'
 tags: ['reboot', 'update', 'windows']
@@ -73,4 +73,6 @@ This document groups computers where a Cumulative Update was installed by the Ou
 
 ![Completed Group 1](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_20.png)  
 ![Completed Group 2](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_21.png)
+
+
 

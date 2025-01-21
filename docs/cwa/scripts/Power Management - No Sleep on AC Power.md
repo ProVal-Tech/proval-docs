@@ -1,7 +1,7 @@
 ---
 id: '150f9b38-2ff8-457d-9293-943a2d038d04'
-title: 'Sets the Computer to Not Sleep When Plugged In'
-title_meta: 'Sets the Computer to Not Sleep When Plugged In'
+title: 'Power Management - No Sleep on AC Power'
+title_meta: 'Power Management - No Sleep on AC Power'
 keywords: ['sleep', 'powercfg', 'never', 'exe', 'ac']
 description: 'This document outlines a script that prevents a computer from sleeping while plugged in, detailing its dependencies, variables, and the process involved in executing the script. It includes a sample run and highlights the time saved by automation.'
 tags: ['performance', 'software', 'windows']
@@ -51,4 +51,6 @@ The script will download the EXE file and execute it.
 ## Output
 
 - Script log
+
+
 

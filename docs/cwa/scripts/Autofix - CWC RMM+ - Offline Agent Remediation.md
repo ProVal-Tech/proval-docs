@@ -1,7 +1,7 @@
 ---
 id: '458b387d-e369-4ea5-bbc6-608e4ea7f993'
-title: 'Restart Agent Services Script'
-title_meta: 'Restart Agent Services Script for ConnectWise RMM'
+title: 'Autofix - CWC RMM+ - Offline Agent Remediation'
+title_meta: 'Autofix - CWC RMM+ - Offline Agent Remediation'
 keywords: ['restart', 'agent', 'services', 'reinstall', 'monitor', 'ticketing', 'automation']
 description: 'This document describes a script that restarts agent services or reinstalls the agent if the services fail to restart. It outlines the dependencies, global parameters, process flow, and expected output, making it essential for managing agents in ConnectWise RMM.'
 tags: ['ticketing']
@@ -120,4 +120,6 @@ This script is an autofix to a monitor and should not be manually run.
 ## Change Log
 
 01-2023: Added functionality to handle registry key entry preventing repair.
+
+
 

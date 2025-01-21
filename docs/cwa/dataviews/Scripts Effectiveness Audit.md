@@ -1,7 +1,7 @@
 ---
 id: '71cf5ece-22b7-4b19-b4e8-6a048b2c2ecc'
-title: 'Script Summary Dataview'
-title_meta: 'Script Summary Dataview'
+title: 'Scripts Effectiveness Audit'
+title_meta: 'Scripts Effectiveness Audit'
 keywords: ['dataview', 'scripts', 'summary', 'log', 'retention']
 description: 'This document provides an overview of a Dataview that displays a summary of all scripts run over the specified script log retention days, including total runs, failures, successes, and effectiveness metrics.'
 tags: ['database', 'performance', 'report', 'windows']
@@ -30,4 +30,6 @@ This Dataview displays a summary of all scripts run over the set script log rete
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Scripts-Effectiveness-Audit/image_2.png)
+
+
 

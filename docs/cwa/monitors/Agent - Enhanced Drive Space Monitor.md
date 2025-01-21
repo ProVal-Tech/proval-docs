@@ -1,7 +1,7 @@
 ---
 id: 'f7235a0b-b6b6-456d-8af3-bd3471b1e70f'
-title: 'Drive Space Monitoring System'
-title_meta: 'Drive Space Monitoring System'
+title: 'Agent - Enhanced Drive Space Monitor'
+title_meta: 'Agent - Enhanced Drive Space Monitor'
 keywords: ['monitoring', 'drive', 'space', 'alerts', 'thresholds', 'windows']
 description: 'This document provides an overview of a drive space monitoring system designed to check the drive space of Windows devices and generate alerts based on defined thresholds at global, group, and computer levels. It includes details on configuration options, alert generation, ticket closure, and limitations of the system.'
 tags: ['windows']
@@ -153,4 +153,6 @@ In the above example:
 **Q:** Should we expect any possible problems or errors on systems running PowerShell versions earlier than 5.0?  
 **A:** For systems with PowerShell versions older than 5.0, you may encounter PowerShell errors similar to the one in this screenshot for the Soji failure notes.  
 ![image](https://proval.itglue.com/5078775/docs/11637304/images/18580512)
+
+
 

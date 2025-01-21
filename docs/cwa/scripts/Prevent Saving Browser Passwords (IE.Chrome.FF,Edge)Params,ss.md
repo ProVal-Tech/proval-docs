@@ -1,7 +1,7 @@
 ---
 id: '5c889aef-ed96-405b-b44f-511436105f2c'
-title: 'SWM - Software Configuration - Prevent Saving Browser Passwords'
-title_meta: 'SWM - Software Configuration - Prevent Saving Browser Passwords'
+title: 'Prevent Saving Browser Passwords (IE.Chrome.FF,Edge)Params,ss'
+title_meta: 'Prevent Saving Browser Passwords (IE.Chrome.FF,Edge)Params,ss'
 keywords: ['browser', 'passwords', 'registry', 'security', 'configuration']
 description: 'This document details a script that prevents browsers from prompting to save passwords by modifying the registry settings for Internet Explorer, Chrome, Firefox, and Edge. It includes options to enable password saving and remove currently saved passwords, along with sample runs and variable descriptions.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -56,4 +56,6 @@ In the above screenshot, the Password Saving Feature for the browsers will be di
 
 - Script Log
 - Script State
+
+
 

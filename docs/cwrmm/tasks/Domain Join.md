@@ -1,7 +1,7 @@
 ---
 id: 'a0374bc3-b579-4299-b952-5bb3d0440c52'
-title: 'Join a Non-Domain Joined Computer to a Domain'
-title_meta: 'Join a Non-Domain Joined Computer to a Domain'
+title: 'Domain Join'
+title_meta: 'Domain Join'
 keywords: ['domain', 'join', 'computer', 'rmm', 'management']
 description: 'This document provides a detailed guide on how to join a non-domain joined computer to a domain using a specific script within ConnectWise RMM. It includes user parameters, task creation steps, and sample run images to assist users in the implementation process.'
 tags: ['domain', 'security', 'setup', 'windows']
@@ -203,4 +203,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '36fa496a-be60-416f-87a6-f725a1241540'
-title: 'Install Extensions on Popular Chromium Browsers'
-title_meta: 'Install Extensions on Popular Chromium Browsers'
+title: 'Chromium Browsers - Extension - Install'
+title_meta: 'Chromium Browsers - Extension - Install'
 keywords: ['extensions', 'chromium', 'chrome', 'edge', 'brave', 'vivaldi']
 description: 'This document provides a comprehensive guide on installing extensions on popular Chromium-based browsers including Chrome, Edge, Brave, Vivaldi, and Chromium. It includes user parameters, task creation steps, and sample scripts for effective implementation.'
 tags: ['installation', 'software', 'web-browser', 'windows']
@@ -135,5 +135,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+
 
 

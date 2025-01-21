@@ -1,7 +1,7 @@
 ---
 id: '28ddee2c-510a-4557-941a-168d155eacdc'
-title: 'LTTray Port Check for Windows Machines'
-title_meta: 'LTTray Port Check for Windows Machines'
+title: 'LTTray Detection'
+title_meta: 'LTTray Detection'
 keywords: ['lttray', 'port', 'registry', 'monitor', 'windows']
 description: 'This document outlines a remote monitor designed to detect discrepancies between the LTTray port value in the registry and the actual port being utilized by Windows. It includes suggested alert styles, templates, and check actions for effective monitoring on Windows machines.'
 tags: ['performance', 'registry', 'windows']
@@ -30,4 +30,6 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 ## Target
 
 Windows machine
+
+
 

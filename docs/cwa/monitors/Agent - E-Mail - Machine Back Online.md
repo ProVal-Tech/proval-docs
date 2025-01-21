@@ -1,7 +1,7 @@
 ---
 id: '82c2d005-f115-4481-8c59-82b22526eafa'
-title: 'Monitor for Online Alert E-mail in ConnectWise Automate'
-title_meta: 'Monitor for Online Alert E-mail in ConnectWise Automate'
+title: 'Agent - E-Mail - Machine Back Online'
+title_meta: 'Agent - E-Mail - Machine Back Online'
 keywords: ['monitor', 'alert', 'connectwise', 'email', 'computer']
 description: 'This document provides a detailed overview of a monitor that alerts when a computer checks in with a valid email address for the Online Alert E-mail EDF in ConnectWise Automate. It includes information on the alert template and dependencies required for setup.'
 tags: ['connectwise', 'email', 'setup']
@@ -24,4 +24,6 @@ This monitor will alert on any computer that has checked in within the last 5 mi
 ## Target
 
 Global
+
+
 

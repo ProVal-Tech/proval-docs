@@ -1,7 +1,7 @@
 ---
 id: '7a09c023-231a-4574-a367-ef8009537e23'
-title: 'Child of Solution'
-title_meta: 'Child of Solution - Data Collection for Unifi Controller'
+title: 'Update Table Data - UnifiController'
+title_meta: 'Update Table Data - UnifiController'
 keywords: ['unifi', 'data', 'collection', 'automate', 'script']
 description: 'This document outlines a script that launches the Get-UnifiController.ps1 file from the registry to filter and populate data into various tables related to the Unifi Controller. It includes sample runs, dependencies, variables, process steps, and output logs.'
 tags: ['database', 'report', 'security', 'setup']
@@ -106,4 +106,6 @@ Describe the steps the script performs to accomplish the desired task. Note that
 ## Output
 
 - Script log
+
+
 

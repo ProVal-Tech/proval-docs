@@ -1,7 +1,7 @@
 ---
 id: ps-get-volumethresholds
 title: 'Get-VolumeThresholds'
-title_meta: 'Get-VolumeThresholds Command'
+title_meta: 'Get-VolumeThresholds'
 keywords: ['volume', 'threshold', 'disk', 'space']
 description: 'Documentation for the Get-VolumeThresholds command to gather and return information about each applicable volume and their requested threshold for space remaining.'
 tags: ['disk-encryption', 'performance']
@@ -171,4 +171,6 @@ ThresholdType NoteProperty
 .\Get-VolumeExhaustionEstimate-log.txt
 .\Get-VolumeExhaustionEstimate-error.txt
 ```
+
+
 

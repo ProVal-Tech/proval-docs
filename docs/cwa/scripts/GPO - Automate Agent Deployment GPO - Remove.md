@@ -1,7 +1,7 @@
 ---
 id: '3404eb65-3992-4cad-9dec-c1426c4656ca'
-title: 'Remove Automate Agent Deployment Group Policy'
-title_meta: 'Remove Automate Agent Deployment Group Policy'
+title: 'GPO - Automate Agent Deployment GPO - Remove'
+title_meta: 'GPO - Automate Agent Deployment GPO - Remove'
 keywords: ['gpo', 'group', 'policy', 'automate', 'deployment']
 description: 'This document outlines a script that removes the "Automate Agent Deployment" group policy from the Domain Controller server, saving approximately 10 minutes of manual effort. It includes a sample run, process details, and expected output.'
 tags: ['security', 'setup', 'windows']
@@ -26,4 +26,6 @@ The script runs the appropriate PowerShell command to remove the "Automate Agent
 ## Output
 
 - Script log
+
+
 

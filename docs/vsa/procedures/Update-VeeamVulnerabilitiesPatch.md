@@ -1,7 +1,7 @@
 ---
 id: 'fdefa9e8-9b20-4f90-a125-949694bf36c6'
-title: 'Update Veeam Vulnerabilities Patch'
-title_meta: 'Update Veeam Vulnerabilities Patch'
+title: 'Update-VeeamVulnerabilitiesPatch'
+title_meta: 'Update-VeeamVulnerabilitiesPatch'
 keywords: ['veeam', 'patch', 'vulnerabilities', 'update', 'install']
 description: 'This document provides an overview of the Update Veeam Vulnerabilities Patch, detailing the requirements, process, payload usage, and output locations for effectively patching vulnerabilities in Veeam versions 11 and 11a.'
 tags: ['installation', 'security', 'software', 'update', 'windows']
@@ -48,4 +48,6 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM        |                     |
 | Kaseya VSA            |                     |
 | Datto RMM             |                     |
+
+
 

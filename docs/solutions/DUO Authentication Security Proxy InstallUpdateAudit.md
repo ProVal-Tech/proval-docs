@@ -1,7 +1,7 @@
 ---
 id: '8fad089d-7b43-4539-b59e-0750ad4c8038'
-title: 'DUO Authentication Security Proxy Installation and Update Automation'
-title_meta: 'DUO Authentication Security Proxy Installation and Update Automation'
+title: 'DUO Authentication Security Proxy InstallUpdateAudit'
+title_meta: 'DUO Authentication Security Proxy InstallUpdateAudit'
 keywords: ['duo', 'authentication', 'security', 'proxy', 'installation', 'update', 'automation', 'auditing']
 description: 'This document outlines the process for automating the installation and update of the DUO Authentication Security Proxy, including the necessary custom fields, dynamic groups, and tasks for effective management and auditing.'
 tags: ['auditing', 'deployment', 'software']
@@ -48,4 +48,6 @@ The aim is to perform the DUO Authentication Security Proxy installation and upd
 
 3. Create and deploy the following tasks:  
    [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](<../cwrmm/tasks/DUO Auth Proxy - InstallUpdate Latest Version.md>)  
+
+
 

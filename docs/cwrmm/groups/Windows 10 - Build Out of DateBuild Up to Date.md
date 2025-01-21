@@ -1,7 +1,7 @@
 ---
 id: '1b2c0555-1eea-4816-bbfc-bca1e29c9d5c'
-title: 'Creating Device Groups for Windows 10 Upgrade Assistance'
-title_meta: 'Creating Device Groups for Windows 10 Upgrade Assistance'
+title: 'Windows 10 - Build Out of DateBuild Up to Date'
+title_meta: 'Windows 10 - Build Out of DateBuild Up to Date'
 keywords: ['windows', 'device', 'group', 'upgrade', 'assistance']
 description: 'This document provides a guide on creating two specific device groups related to the Windows 10 Upgrade Assistance solution within ConnectWise RMM. It includes steps for creating dynamic groups and details on criteria for each group.'
 tags: ['windows']
@@ -72,4 +72,6 @@ When adding criteria, please search for the **OS Version**.
 **Contains any of:** Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '22ee8d54-e19d-4b47-9ccd-c45c259f8fb7'
-title: 'Winget Update All Task Creation for Windows 10 and 11'
-title_meta: 'Winget Update All Task Creation for Windows 10 and 11'
+title: 'Winget Update All (Task Create)'
+title_meta: 'Winget Update All (Task Create)'
 keywords: ['winget', 'update', 'task', 'windows', 'group']
 description: 'This document provides a detailed guide on creating a dynamic group in ConnectWise RMM to detect Windows 10 and 11 computers where the Winget Update All tasks are missing. It outlines the necessary dependencies and step-by-step instructions for setting up the group criteria.'
 tags: ['connectwise', 'setup', 'windows']
@@ -102,4 +102,6 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_27.png)  
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_28.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '87a2b5ad-872c-431c-83a4-618434f03c9a'
-title: 'Remove McAfee Software'
-title_meta: 'Remove McAfee Software'
+title: 'Remove Mcafee Software'
+title_meta: 'Remove Mcafee Software'
 keywords: ['mcafee', 'uninstall', 'script', 'endpoint', 'software']
 description: 'This document provides a detailed guide on removing all McAfee products from an endpoint using a ConnectWise RMM implementation of the agnostic script Remove-McAfeeSoftware. It includes sample runs, dependencies, task creation steps, and the complete script for execution.'
 tags: ['application', 'software', 'uninstallation', 'windows']
@@ -125,4 +125,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

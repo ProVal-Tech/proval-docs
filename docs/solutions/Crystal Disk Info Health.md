@@ -1,7 +1,7 @@
 ---
 id: 'd8e1d743-88d6-4acb-b149-7fc27c2e1738'
-title: 'Monitoring Disk Health with Crystal Disk Info'
-title_meta: 'Monitoring Disk Health with Crystal Disk Info'
+title: 'Crystal Disk Info Health'
+title_meta: 'Crystal Disk Info Health'
 keywords: ['disk', 'health', 'monitoring', 'crystal', 'info']
 description: 'This document outlines the process for monitoring the disk health of physical machines using the Crystal Disk Info tool. It includes associated content such as custom fields, tasks, and monitors within the ConnectWise RMM environment to ensure effective disk health management.'
 tags: ['alerting', 'disk']
@@ -28,4 +28,6 @@ The purpose of this document is to monitor the disk health of physical machines 
 - Create the task: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../cwrmm/tasks/Get Crystal Disk Info (Disk Health).md>)
 - Create the deployment schedule as described in this document: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../cwrmm/tasks/Get Crystal Disk Info (Disk Health).md>)
 - Create the monitor if necessary: [CW RMM - Monitor - Crystal Disk Info Health Status](<../cwrmm/monitors/Crystal Disk Info Health Status.md>)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '134f8e46-d2b2-4d92-9c3c-d1f8f921bf5d'
-title: 'Huntress Installation and Uninstallation Script'
-title_meta: 'Huntress Installation and Uninstallation Script'
+title: 'Huntress - Command'
+title_meta: 'Huntress - Command'
 keywords: ['huntress', 'install', 'uninstall', 'reinstall', 'script']
 description: 'This document outlines a script designed to manage the installation and uninstallation of the Huntress application on target machines, detailing action parameters, processes, and expected outputs.'
 tags: ['installation', 'security', 'software', 'uninstallation', 'windows']
@@ -58,4 +58,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

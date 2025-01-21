@@ -1,7 +1,7 @@
 ---
 id: 'f65ad1a0-8f26-40f7-8d72-0e753243c01e'
-title: 'HP Support Assistant Installation Script'
-title_meta: 'HP Support Assistant Installation Script for ConnectWise Automate'
+title: 'HP Support Assistant - Install'
+title_meta: 'HP Support Assistant - Install'
 keywords: ['hp', 'support', 'assistant', 'installation', 'script']
 description: 'This document outlines a script that downloads and installs the HP Support Assistant when a user is logged in. It verifies the installation and logs the outcome, aiming to save time by automating the installation process.'
 tags: ['installation', 'logging', 'software']
@@ -34,4 +34,6 @@ This script downloads and installs the HP Support Assistant if a user is logged 
 ## Output
 
 - Script log
+
+
 

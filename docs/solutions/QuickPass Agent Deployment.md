@@ -1,7 +1,7 @@
 ---
 id: '65d0dbb6-29c1-4242-841c-1da9b92edab6'
-title: 'Installing the QuickPass Agent on Windows Machines'
-title_meta: 'Installing the QuickPass Agent on Windows Machines'
+title: 'QuickPass Agent Deployment'
+title_meta: 'QuickPass Agent Deployment'
 keywords: ['quickpass', 'agent', 'windows', 'install', 'monitor']
 description: 'This document outlines the procedure to install the QuickPass agent on Windows machines where it is not already installed. It includes associated content, implementation steps, and configuration details necessary for successful deployment.'
 tags: ['installation', 'software', 'windows']
@@ -44,4 +44,6 @@ The purpose of this document is to install the QuickPass agent on Windows machin
        - Configure with the alert template: `△ Custom - Execute Script - Deploy QuickPass Agent`.
        - Right-click and Run Now to start the monitor.
    - The following EDFs and System Property should be populated by the client to ensure the solution works. For more details, refer to the document [SWM - Software Install - Script - Deploy QuickPass
+
+
 

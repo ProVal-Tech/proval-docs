@@ -1,7 +1,7 @@
 ---
 id: '8437ea68-5f49-4e76-ba19-52001cd178ef'
-title: 'OneDrive Sync Monitor for Alerting'
-title_meta: 'OneDrive Sync Monitor for Alerting'
+title: 'OneDrive Sync Failures'
+title_meta: 'OneDrive Sync Failures'
 keywords: ['onedrive', 'sync', 'monitor', 'alert', 'issue']
 description: 'This document details the OneDrive Sync Monitor, which identifies machines with sync issues detected in the last 48 hours and triggers alerts. It relies on specific data collection scripts and custom tables to provide timely notifications for IT support teams.'
 tags: ['data-collection']
@@ -75,4 +75,6 @@ Sync Status: Error
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
+
 

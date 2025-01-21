@@ -1,7 +1,7 @@
 ---
 id: '2f451b19-e8af-4a24-9032-17d65ba2b40d'
-title: 'Creating the plugin_proval_auto_approval_status View'
-title_meta: 'Creating the plugin_proval_auto_approval_status View'
+title: 'View - Create (plugin_proval_auto_approval_status)'
+title_meta: 'View - Create (plugin_proval_auto_approval_status)'
 keywords: ['view', 'proval', 'automate', 'permissions', 'script']
 description: 'This document outlines the process for creating the plugin_proval_auto_approval_status view, including steps for dropping and creating the view, and updating user permissions for ProVal custom tables.'
 tags: ['database', 'setup']
@@ -26,4 +26,6 @@ This document creates the [plugin_proval_auto_approval_status](<../views/plugin_
 ## Output
 
 The output is the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
+
+
 

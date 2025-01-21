@@ -1,7 +1,7 @@
 ---
 id: ps-set-targetupgradeversion
 title: 'Set-TargetUpgradeVersion'
-title_meta: 'Set-TargetUpgradeVersion Command'
+title_meta: 'Set-TargetUpgradeVersion'
 keywords: ['upgrade', 'version', 'target', 'update']
 description: 'Documentation for the Set-TargetUpgradeVersion command to specify the target version for system upgrades.'
 tags: ['update', 'windows']
@@ -43,4 +43,6 @@ Location of output for log, result, and error files.
 .\Set-TargetUpgradeVersion-data.txt
 .\Set-TargetUpgradeVersion-error.txt
 ```
+
+
 

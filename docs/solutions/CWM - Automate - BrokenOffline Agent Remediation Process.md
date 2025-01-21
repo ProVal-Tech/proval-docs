@@ -1,7 +1,7 @@
 ---
 id: '809aa131-6fd4-4016-88d9-795124823603'
-title: 'Restoring ConnectWise Automate Agents Functionality'
-title_meta: 'Restoring ConnectWise Automate Agents Functionality'
+title: 'CWM - Automate - BrokenOffline Agent Remediation Process'
+title_meta: 'CWM - Automate - BrokenOffline Agent Remediation Process'
 keywords: ['connectwise', 'agents', 'remediation', 'report', 'plugin']
 description: 'This document outlines a solution to restore the functionality of ConnectWise Automate agents that may be broken or frozen. It details the components involved in automatically identifying and fixing issues, as well as the importance of the CW RMM+ plugin for successful implementation.'
 tags: ['connectwise', 'report', 'setup', 'software']
@@ -27,6 +27,8 @@ It is essential to note that this solution relies on the CW RMM+ plugin and its 
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+
 
 
 

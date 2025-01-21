@@ -1,7 +1,7 @@
 ---
 id: 'c630e0b8-da8d-4188-aa83-4c4c7e421d92'
-title: 'Set Alert Template for Offline Network Devices'
-title_meta: 'Set Alert Template for Offline Network Devices'
+title: 'Network Devices - Offline Ticket Enabling'
+title_meta: 'Network Devices - Offline Ticket Enabling'
 keywords: ['alert', 'template', 'offline', 'network', 'devices', 'ticket', 'creation']
 description: 'This document provides a comprehensive guide on how to set the alert template for offline network devices in bulk, including user parameters, dependencies, system properties, and implementation steps necessary to ensure proper alerting and ticket creation for network devices.'
 tags: []
@@ -94,4 +94,6 @@ Device-Level EDFs:
 ## Output
 
 - Script log
+
+
 

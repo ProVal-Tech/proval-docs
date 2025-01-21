@@ -1,7 +1,7 @@
 ---
 id: '92357c7e-dc65-400a-9d61-4d3243a334d4'
-title: 'Printer Driver Inventory Collection'
-title_meta: 'Printer Driver Inventory Collection'
+title: 'Get - Printer Driver Inventory DV'
+title_meta: 'Get - Printer Driver Inventory DV'
 keywords: ['printer', 'drivers', 'inventory', 'windows', 'collection']
 description: 'This document outlines a script designed to collect and store information about printer drivers on Windows computers. It details the process, dependencies, and output of the script, ensuring that users can effectively manage printer driver inventories within their systems.'
 tags: ['database', 'report', 'setup', 'windows']
@@ -45,4 +45,6 @@ This script collects information about the printer drivers on the target system 
 - Script Log
 - Custom Table
 - Dataview
+
+
 

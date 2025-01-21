@@ -1,7 +1,7 @@
 ---
 id: '7c0947f0-306b-4ae0-9bd7-dd15dfb0008c'
-title: 'Agent Repair Script for Automate'
-title_meta: 'Agent Repair Script for Automate - Automate Agent Management'
+title: 'Automate Agent - Auto Repair'
+title_meta: 'Automate Agent - Auto Repair'
 keywords: ['automate', 'agent', 'repair', 'script', 'monitor', 'status']
 description: 'This document provides a comprehensive guide on the Agent Repair Script for ConnectWise Automate, detailing its functionality to check the online status of machines, handle duplicate instances, and manage the Automate agent through RMM+ integration. It includes setup requirements, sample runs, dependencies, variables, user properties, and ticketing information.'
 tags: ['ticketing']
@@ -151,5 +151,7 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
+
+
 
 

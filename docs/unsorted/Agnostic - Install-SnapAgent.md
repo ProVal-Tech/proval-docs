@@ -1,7 +1,7 @@
 ---
 id: '91f1c2be-4667-4e81-b49a-fbc6f65cb9a4'
-title: 'Install SnapAgent on Windows Computers'
-title_meta: 'Install SnapAgent on Windows Computers'
+title: 'Agnostic - Install-SnapAgent'
+title_meta: 'Agnostic - Install-SnapAgent'
 keywords: ['snapagent', 'installer', 'windows', 'download', 'validation', 'installation', 'logging']
 description: 'This document provides a comprehensive guide on installing SnapAgent on Windows computers using a PowerShell script. It outlines the requirements, process, parameters, and expected outputs, ensuring users can successfully install SnapAgent by providing the necessary URL.'
 tags: ['installation', 'logging', 'software', 'windows']
@@ -50,4 +50,6 @@ To install SnapAgent, a URL is necessary.
 
 - `./Install-SnapAgent-Log.txt`
 - `./Install-SnapAgent-Error.txt`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '904664df-741e-4c18-9667-6bf351b4754c'
-title: 'Disable Bitlocker Protection on Volumes'
-title_meta: 'Disable Bitlocker Protection on Volumes'
+title: 'Unprotect Bitlocker Volume'
+title_meta: 'Unprotect Bitlocker Volume'
 keywords: ['bitlocker', 'protection', 'disable', 'volumes', 'security']
 description: 'This document provides detailed instructions on how to disable Bitlocker protection on one or all volumes. It includes sample runs, dependencies, user parameters, task creation steps, and script execution details.'
 tags: ['encryption', 'security', 'setup', 'windows']
@@ -202,4 +202,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

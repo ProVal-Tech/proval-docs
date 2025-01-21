@@ -1,7 +1,7 @@
 ---
 id: '3f87f890-c2b4-4f01-b9e2-c1828cc164c9'
-title: 'Department Detail of Last Logged In User'
-title_meta: 'Department Detail of Last Logged In User'
+title: 'EPM - Windows Configuration - Dataview - Department Detail of Computer'
+title_meta: 'EPM - Windows Configuration - Dataview - Department Detail of Computer'
 keywords: ['department', 'user', 'computer', 'client', 'location', 'os', 'memory', 'cpu', 'drive', 'sql']
 description: 'This document provides a detailed view of the department information for the last logged in user on each machine within the client environment. It includes dependencies, column descriptions, and an SQL representation to help retrieve the relevant data efficiently.'
 tags: ['database', 'performance', 'report', 'security', 'windows']
@@ -101,4 +101,6 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
+
+
 

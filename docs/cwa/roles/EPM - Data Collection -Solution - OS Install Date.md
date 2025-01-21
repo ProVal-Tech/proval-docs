@@ -1,7 +1,7 @@
 ---
 id: '4ed8cce5-502c-4207-857f-1dfd64697920'
-title: 'Custom Field for Initial OS Install Date'
-title_meta: 'Custom Field for Initial OS Install Date'
+title: 'EPM - Data Collection -Solution - OS Install Date'
+title_meta: 'EPM - Data Collection -Solution - OS Install Date'
 keywords: ['custom', 'field', 'install', 'date', 'os']
 description: 'This document outlines a solution for populating a custom field with the initial install date of the operating system. It ensures that the displayed date reflects the oldest installation date, unaffected by any feature updates or OS upgrades.'
 tags: ['installation']
@@ -23,4 +23,6 @@ This solution allows for a custom field to be populated with the initial install
 ## Implementation
 
 The agent procedure must be run in order for the custom field to be populated.
+
+
 

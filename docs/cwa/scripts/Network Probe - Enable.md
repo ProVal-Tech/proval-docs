@@ -1,7 +1,7 @@
 ---
 id: '46629c59-bae2-49d8-80ac-12267a8ccc5b'
-title: 'Network Probe Generator Script'
-title_meta: 'Network Probe Generator Script for Efficient Monitoring'
+title: 'Network Probe - Enable'
+title_meta: 'Network Probe - Enable'
 keywords: ['network', 'probe', 'monitor', 'automation', 'script']
 description: 'This document describes a script designed to execute commands for generating a network probe, particularly useful for monitoring locations that lack a network probe. The script improves efficiency by saving time during the setup process.'
 tags: ['setup']
@@ -26,4 +26,6 @@ The script executes the LT Command to enable the network probe.
 ## Output
 
 No Output - Command Log
+
+
 

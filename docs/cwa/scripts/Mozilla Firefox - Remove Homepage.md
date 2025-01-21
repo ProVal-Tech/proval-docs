@@ -1,7 +1,7 @@
 ---
 id: '21929424-6cad-41b0-b039-ee798fc38ff7'
-title: 'Remove Firefox Homepage Enforcement'
-title_meta: 'Remove Firefox Homepage Enforcement'
+title: 'Mozilla Firefox - Remove Homepage'
+title_meta: 'Mozilla Firefox - Remove Homepage'
 keywords: ['firefox', 'homepage', 'policy', 'script', 'windows']
 description: 'This document outlines a script designed to remove the enforcement of a homepage in the Mozilla Firefox browser. It details the dependencies required, the process involved in scanning and removing homepage policies, and the expected output including logs for success and failure tracking.'
 tags: ['firefox', 'software', 'windows']
@@ -38,4 +38,6 @@ The script will scan for and remove all homepage policies from the Firefox polic
 
 - Script log
 - Local file on the computer
+
+
 

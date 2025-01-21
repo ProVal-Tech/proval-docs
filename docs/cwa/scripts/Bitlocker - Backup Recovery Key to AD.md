@@ -1,7 +1,7 @@
 ---
 id: '5f31f0b4-b682-4444-bd51-3182a8a2bd39'
-title: 'Backup BitLocker Recovery Key to AD Domain'
-title_meta: 'Backup BitLocker Recovery Key to Active Directory Domain'
+title: 'Bitlocker - Backup Recovery Key to AD'
+title_meta: 'Bitlocker - Backup Recovery Key to AD'
 keywords: ['bitlocker', 'backup', 'recovery', 'ad', 'encryption', 'script']
 description: 'This document provides a detailed overview of a script that automates the process of backing up the existing BitLocker recovery key to a joined Active Directory domain, saving significant time in the process. It includes sample runs, dependencies, variables, and the overall process involved in executing the script.'
 tags: ['active-directory', 'backup', 'encryption', 'security', 'windows']
@@ -45,4 +45,6 @@ The machine must be using BitLocker for encryption.
 ## Output
 
 - Script log
+
+
 

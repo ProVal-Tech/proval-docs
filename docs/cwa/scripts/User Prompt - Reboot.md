@@ -1,7 +1,7 @@
 ---
 id: '1789b867-61db-436d-ac0b-07d5aac3f4b8'
-title: 'Reboot Prompt Script for Windows Configuration'
-title_meta: 'Reboot Prompt Script for Windows Configuration'
+title: 'User Prompt - Reboot'
+title_meta: 'User Prompt - Reboot'
 keywords: ['reboot', 'prompt', 'edf', 'monitor', 'windows', 'configuration']
 description: 'This document outlines the Reboot Prompt Script for Windows Configuration, detailing its functionality, dependencies, system properties, and process flow. The script prompts users to reboot their machines when a reboot is pending while also managing user interactions and logging the number of prompts. It is designed to run only when triggered by a specific monitor, ensuring automated management of reboot requests in a controlled manner.'
 tags: ['windows']
@@ -66,4 +66,6 @@ The following items depend on this script to function correctly:
 ## Output
 
 The EDFs outlined above get updated as the script gets triggered. The monitor looks at the EDFs to confirm it is following the 'proval_RebootPromptDurBetweenPrompt' System Property.
+
+
 

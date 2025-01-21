@@ -1,7 +1,7 @@
 ---
 id: '1e7f2148-6bd5-41ce-a397-9c41054487cf'
-title: 'Disk Cleanup Script for ConnectWise Automate'
-title_meta: 'Disk Cleanup Script for ConnectWise Automate'
+title: 'Disk Space Monitoring Process'
+title_meta: 'Disk Space Monitoring Process'
 keywords: ['disk', 'cleanup', 'connectwise', 'automate', 'threshold', 'ticket']
 description: 'This document outlines a script that checks disk space against defined thresholds in a ConnectWise Automate instance, performs disk cleanup on Windows machines, and creates a ticket if necessary. It includes user parameters, system properties, and a detailed process for execution.'
 tags: ['cleanup', 'connectwise', 'disk', 'windows']
@@ -60,4 +60,6 @@ The following steps are performed:
 
 - Script Log
 - Ticket
+
+
 

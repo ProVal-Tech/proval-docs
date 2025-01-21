@@ -1,7 +1,7 @@
 ---
 id: '4664a942-cb4f-425a-ae16-4615d2b14cae'
-title: 'Policy to Enable Windows 11 Installation for Windows 10 Machines'
-title_meta: 'Policy to Enable Windows 11 Installation for Windows 10 Machines'
+title: 'Install Windows 11'
+title_meta: 'Install Windows 11'
 keywords: ['windows', 'installation', 'policy', 'upgrade', 'patching']
 description: 'This document outlines the steps to create a policy that enables the installation of Windows 11 on Windows 10 machines, including navigation through the endpoints and configuring necessary settings.'
 tags: ['patching', 'setup']
@@ -45,6 +45,8 @@ This document provides a policy to enable Windows 11 installation for Windows 10
 ![Image](../../../static/img/Install-Windows-11/image_23.png)
 
 ## Completed Policy
+
+
 
 
 

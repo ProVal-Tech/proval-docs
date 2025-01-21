@@ -1,7 +1,7 @@
 ---
 id: ps-update-office  
 title: 'Update-Office'  
-title_meta: 'Update-Office Command'  
+title_meta: 'Update-Office'  
 keywords: ['update', 'office365', 'repair', 'version']  
 description: 'Documentation for the Update-Office command to update Office 365 to the latest version.'  
 tags: ['installation', 'office365', 'software', 'update']  
@@ -29,4 +29,6 @@ Launches the Microsoft Update Program to update Office 365.
 ## Output  
 - .\Update-Office-log.txt  
 - .\Update-Office-error.txt  
+
+
 

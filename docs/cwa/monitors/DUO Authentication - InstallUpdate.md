@@ -1,7 +1,7 @@
 ---
 id: '4e62e216-7a5f-4b35-8ac8-eca9a38bd440'
-title: 'DUO Authentication Monitor for Windows Agents'
-title_meta: 'DUO Authentication Monitor for Windows Agents'
+title: 'DUO Authentication - InstallUpdate'
+title_meta: 'DUO Authentication - InstallUpdate'
 keywords: ['duo', 'authentication', 'windows', 'monitor', 'agent', 'edf', 'exclusion']
 description: 'This document outlines a monitor designed to detect online Windows agents with outdated DUO Authentication for Windows Logon. It also identifies agents with specific client EDF settings and exclusions not applied at the location or computer level.'
 tags: ['security', 'software', 'windows']
@@ -52,4 +52,6 @@ Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When an argument is missing:**  
 Arguments required to install DUO Authentication for Windows Logon are not set.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f1cc450a-82dd-49f9-b720-22983f7b696c'
-title: 'Enable or Disable Edge Sidebar'
-title_meta: 'Enable or Disable Edge Sidebar'
+title: 'Edge-Sidebar - EnableDisable'
+title_meta: 'Edge-Sidebar - EnableDisable'
 keywords: ['edge', 'sidebar', 'enable', 'disable', 'ticket', 'script']
 description: 'This document provides instructions on how to enable or disable the Edge Sidebar on a target machine, including sample runs, variables, and output details.'
 tags: ['software', 'windows']
@@ -87,4 +87,6 @@ Finishing ticket 77459
 ## Ticket Example
 
 ![Ticket Example](../../../static/img/Edge-Sidebar---EnableDisable/image_4.png)
+
+
 

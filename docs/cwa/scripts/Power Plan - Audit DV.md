@@ -1,7 +1,7 @@
 ---
 id: '6e9ec56b-ba57-48cd-8dff-e659c30d2f3d'
-title: 'EPM - Data Collection - Get-PowerPlan Implementation'
-title_meta: 'EPM - Data Collection - Get-PowerPlan Implementation'
+title: 'Power Plan - Audit DV'
+title_meta: 'Power Plan - Audit DV'
 keywords: ['data', 'collection', 'powerplan', 'audit', 'script', 'custom', 'table']
 description: 'This document details the implementation of the EPM - Data Collection - Agnostic - Get-PowerPlan script, which gathers data and stores it in the custom table pvl_powerplan_audit. The collected data is then displayed using the corresponding dataview for analysis and reporting.'
 tags: ['database', 'report', 'setup', 'software', 'windows']
@@ -45,4 +45,6 @@ This is an Automate implementation of the agnostic script [EPM - Data Collection
 - Script Log
 - Custom Table
 - Dataview
+
+
 

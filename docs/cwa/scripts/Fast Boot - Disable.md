@@ -1,7 +1,7 @@
 ---
 id: '663e3658-c389-4ab6-b7a2-8486f9e237c1'
-title: 'Disable Windows Fast Boot'
-title_meta: 'Disable Windows Fast Boot - Registry Adjustment Script'
+title: 'Fast Boot - Disable'
+title_meta: 'Fast Boot - Disable'
 keywords: ['windows', 'registry', 'fast', 'boot', 'shutdown']
 description: 'This document details a script designed to disable the Windows Fast Boot feature by adjusting the local registry on the target device. Fast Boot can prevent a full kernel reboot during shutdown, potentially causing system issues and impacting patch installations. The script ensures proper functionality by requiring a device restart for changes to take effect.'
 tags: ['performance', 'reboot', 'registry', 'windows']
@@ -45,4 +45,6 @@ If the value did not change in the registry, the script will exit with a failure
 ## Output
 
 Script log messages only.
+
+
 

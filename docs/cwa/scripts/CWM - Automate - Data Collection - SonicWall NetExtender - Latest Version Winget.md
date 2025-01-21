@@ -1,7 +1,7 @@
 ---
 id: '5eca56c8-7035-41f7-b5d0-ef8d58bf532a'
-title: 'SonicWall NetExtender Version Storage Script'
-title_meta: 'SonicWall NetExtender Version Storage Script'
+title: 'CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget'
+title_meta: 'CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget'
 keywords: ['sonicwall', 'netextender', 'version', 'system', 'properties']
 description: 'This document describes a script designed to store the latest version of SonicWall NetExtender in the system properties, ensuring that the most up-to-date version is easily accessible and manageable.'
 tags: ['security', 'software', 'update']
@@ -26,6 +26,8 @@ This script is designed to store the latest version of SonicWall NetExtender in 
 ## Output
 
 - Script log
+
+
 
 
 

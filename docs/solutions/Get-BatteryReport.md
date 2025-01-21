@@ -1,7 +1,7 @@
 ---
 id: '701fd9e6-617a-49a0-8368-531ec189e44c'
-title: 'Workstation Battery State Monitoring'
-title_meta: 'Workstation Battery State Monitoring'
+title: 'Get-BatteryReport'
+title_meta: 'Get-BatteryReport'
 keywords: ['workstation', 'battery', 'monitoring', 'report', 'threshold']
 description: 'This document provides a comprehensive solution for monitoring the battery state of workstations. It includes scripts, dataviews, and internal monitors to effectively collect and report battery data, ensuring proactive management of battery health.'
 tags: ['battery', 'report', 'setup']
@@ -61,4 +61,6 @@ This solution provides information on a workstation's battery state.
      - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11417979)
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '3a1d1f7d-a655-40bf-a048-5e861aee00ae'
-title: 'Monitor Set for Wi-Fi Profiles Management'
-title_meta: 'Monitor Set for Wi-Fi Profiles Management'
+title: 'Wifi Profiles - Add'
+title_meta: 'Wifi Profiles - Add'
 keywords: ['wifi', 'monitor', 'profiles', 'audit', 'script']
 description: 'This document outlines the purpose and functionality of a monitor set designed to identify computers lacking specified Wi-Fi profiles. It details how the monitor set utilizes data from a custom table and triggers a script to implement missing profiles, ensuring proper configuration and management of Wi-Fi settings across client environments.'
 tags: ['networking', 'windows']
@@ -28,4 +28,6 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Implement Wifi Profile`
+
+
 

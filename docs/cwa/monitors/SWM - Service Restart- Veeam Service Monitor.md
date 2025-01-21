@@ -1,7 +1,7 @@
 ---
 id: 'fd0bef13-23d6-40e3-8883-367e0fa6d166'
-title: 'Veeam Service Monitor'
-title_meta: 'Veeam Service Monitor'
+title: 'SWM - Service Restart- Veeam Service Monitor'
+title_meta: 'SWM - Service Restart- Veeam Service Monitor'
 keywords: ['veeam', 'monitor', 'service', 'restart', 'alert']
 description: 'This document outlines the implementation of a Veeam Service Monitor that checks the status of the VeeamBackupSvc service, restarts it if it is not running, and manages dependencies on other Veeam services. It includes details on alerting, ticketing, and implementation steps.'
 tags: ['ticketing']
@@ -49,4 +49,6 @@ Managed Computers with the `VeeamBackupSvc` service.
 ## Implementation
 
 [Implement - Remote Monitor - Veeam Service Monitor](<./Veeam Service Monitor.md>)
+
+
 

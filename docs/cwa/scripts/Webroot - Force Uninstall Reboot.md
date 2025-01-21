@@ -1,7 +1,7 @@
 ---
 id: '175431c0-b3d2-436a-bf40-e72710a17c36'
-title: 'Webroot Uninstallation Script in Safe Mode'
-title_meta: 'Webroot Uninstallation Script in Safe Mode'
+title: 'Webroot - Force Uninstall Reboot'
+title_meta: 'Webroot - Force Uninstall Reboot'
 keywords: ['webroot', 'uninstallation', 'safe-mode', 'wipe', 'script']
 description: 'This document provides a detailed overview of a script designed to boot a machine in safe mode and completely remove Webroot from the target machine. It includes a summary of the process, a sample run, and the expected output, ensuring users can effectively utilize the script for uninstallation.'
 tags: ['security', 'setup', 'uninstallation', 'windows']
@@ -26,4 +26,6 @@ This script first checks if the Webroot service is running on the machine. If it
 ## Output
 
 - Script log
+
+
 

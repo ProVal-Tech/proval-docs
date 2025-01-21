@@ -1,7 +1,7 @@
 ---
 id: 'bd99d6b2-2d31-4611-9682-3c8518c53998'
-title: 'Fetch Latest Installed Cumulative Update'
-title_meta: 'Fetch Latest Installed Cumulative Update'
+title: 'Get Latest Installed Cumulative Update'
+title_meta: 'Get Latest Installed Cumulative Update'
 keywords: ['cumulative', 'update', 'windows', 'installed', 'build']
 description: 'This document describes a script that retrieves the latest installed Cumulative Update and Full Build Number for a Windows computer. The data is stored in a custom table for Automate implementation, providing essential update information for system management.'
 tags: ['database', 'software', 'update', 'windows']
@@ -38,5 +38,7 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 
 - Custom Table
 - Dataview
+
+
 
 

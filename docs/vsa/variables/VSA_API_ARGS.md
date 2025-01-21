@@ -1,7 +1,7 @@
 ---
 id: '2e21d3a9-d6c7-4279-895b-ad029fab84b7'
-title: 'VSA API Arguments for VSAToolbox'
-title_meta: 'VSA API Arguments for VSAToolbox'
+title: 'VSA_API_ARGS'
+title_meta: 'VSA_API_ARGS'
 keywords: ['vsa', 'api', 'arguments', 'vsatoolbox', 'parameters']
 description: 'This document outlines the necessary parameters required for using VSAToolbox, a set of tools designed to interact with a Kaseya VSA server API. It includes details on dependencies, example data, and the correct format for API arguments.'
 tags: ['networking', 'security', 'setup', 'software']
@@ -42,4 +42,6 @@ The personal access token to use for VSA REST API authentication.
 </div>
 </div>
 </div>
+
+
 

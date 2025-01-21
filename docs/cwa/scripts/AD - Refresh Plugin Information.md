@@ -1,7 +1,7 @@
 ---
 id: '17153d23-676f-47b8-bc1c-f32fb10049c0'
-title: 'Reset AD Plugin for Domain Controller'
-title_meta: 'Reset AD Plugin for Domain Controller'
+title: 'AD - Refresh Plugin Information'
+title_meta: 'AD - Refresh Plugin Information'
 keywords: ['active-directory', 'plugin', 'synchronize', 'labtech', 'command']
 description: 'This document outlines a script designed to reset the Active Directory plugin for the Domain Controller it operates on, detailing the process and expected time savings from automation.'
 tags: ['active-directory', 'setup', 'windows']
@@ -23,4 +23,6 @@ This script will reset the AD plugin for the Domain Controller (DC) it runs on.
 
 - Runs LabTech Command 13 to reset the AD plugin on the DC.
 - Runs another LabTech command "update plugins" to synchronize plugin data on the agent.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '1e7111ed-fd09-4b58-bc4b-becb2dc3c8e0'
-title: 'Labtech Database Size Alert Script'
-title_meta: 'Labtech Database Size Alert Script'
+title: 'Database size increased by 5 Percent Global'
+title_meta: 'Database size increased by 5 Percent Global'
 keywords: ['labtech', 'database', 'alert', 'ticket', 'autotask']
 description: 'This document outlines a script designed to monitor the Labtech Database size and create a ticket in AutoTask if the database size increases by a specified threshold within the last 24 hours. The script can be scheduled to run hourly and includes details on variables, global parameters, and the process flow for execution.'
 tags: ['database']
@@ -76,4 +76,6 @@ Labtech Database's size increased by SizeToCompare percent within the last Hours
 
 - Script States
 - Email
+
+
 

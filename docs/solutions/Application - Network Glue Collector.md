@@ -1,7 +1,7 @@
 ---
 id: '2aceee46-2a96-465d-929d-85de69811a3a'
-title: 'Network Glue Deployment and Uninstallation'
-title_meta: 'Network Glue Deployment and Uninstallation'
+title: 'Application - Network Glue Collector'
+title_meta: 'Application - Network Glue Collector'
 keywords: ['network', 'glue', 'deployment', 'uninstallation', 'monitor', 'script']
 description: 'This document provides detailed instructions for the deployment and uninstallation of the Network Glue Collector, including associated scripts and monitors. It outlines the necessary steps for implementation and configuration within the ConnectWise Automate environment.'
 tags: ['deployment', 'uninstallation']
@@ -38,4 +38,6 @@ This solution contains the Network Glue deployment and uninstallation articles.
      - [Internal Monitor - ProVal Production - Network Glue - Deployment](<../cwa/monitors/ProVal Production - Network Glue - Deployment.md>)  
        - Set up with the "△ Custom - Execute Script - Network Glue Collector - Install" Alert Template
        - Right-click and select "Run Now" to start the monitor.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-set-officeupdateschedule
 title: 'Set-OfficeUpdateSchedule'
-title_meta: 'Set-OfficeUpdateSchedule Command'
+title_meta: 'Set-OfficeUpdateSchedule'
 keywords: ['office365', 'update', 'schedule', 'configuration']
 description: 'Documentation for the Set-OfficeUpdateSchedule command to set the update schedule for Office 365 Click2Run installations.'
 tags: ['office365', 'update']
@@ -35,4 +35,6 @@ Sets the update schedule to 'Current Channel (Preview)'
 ## Output
 - `.\Set-OfficeUpdateSchedule-log.txt`
 - `.\Set-OfficeUpdateSchedule-error.txt`
+
+
 

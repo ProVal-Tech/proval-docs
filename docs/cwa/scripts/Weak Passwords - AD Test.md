@@ -1,7 +1,7 @@
 ---
 id: 'cf22292d-e874-47ee-9bd1-5ec79c5f3724'
-title: 'Test Weak Credentials in Active Directory'
-title_meta: 'Test Weak Credentials in Active Directory'
+title: 'Weak Passwords - AD Test'
+title_meta: 'Weak Passwords - AD Test'
 keywords: ['active-directory', 'credentials', 'security', 'audit', 'reporting']
 description: 'This document provides a detailed overview of a script that tests hashed credentials in Active Directory against known compromised or weak lists. It outlines dependencies, user parameters, global parameters, and the expected output, ensuring users can effectively utilize the script for auditing purposes.'
 tags: ['active-directory', 'report', 'security']
@@ -58,4 +58,6 @@ This script utilizes the agnostic script [Test-WeakCredentials](<../../powershel
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
+
+
 

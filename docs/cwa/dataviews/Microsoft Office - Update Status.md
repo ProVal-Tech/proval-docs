@@ -1,7 +1,7 @@
 ---
 id: '43bf32a9-8e30-4344-b321-e478ba5b85d8'
-title: 'Click To Run Update Status for Microsoft 365 Apps'
-title_meta: 'Click To Run Update Status for Microsoft 365 Apps'
+title: 'Microsoft Office - Update Status'
+title_meta: 'Microsoft Office - Update Status'
 keywords: ['click', 'run', 'microsoft', 'office', 'update', 'status']
 description: 'This document provides an overview of the dataview that displays the update status of supported versions of Click To Run Microsoft 365 Apps. It includes information on the recent execution of the update script and the current application versions installed on various machines.'
 tags: ['application', 'office', 'software', 'update']
@@ -36,4 +36,6 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Required Version     | Required Version to install                             |
 | Update Status        | Updated / Out Of Date                                  |
 | Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script |
+
+
 

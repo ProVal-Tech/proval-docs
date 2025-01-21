@@ -1,7 +1,7 @@
 ---
 id: '7665cb82-1340-4f76-ba0e-e7c277c40f73'
-title: 'SMB1 Server Auditing Remote Monitor'
-title_meta: 'SMB1 Server Auditing Remote Monitor'
+title: 'SMB1 Traffic Detection'
+title_meta: 'SMB1 Traffic Detection'
 keywords: ['smb1', 'monitor', 'server', 'auditing', 'event', 'logs']
 description: 'This document outlines the SMB1 Server Auditing Remote Monitor, which activates auditing for SMB1 connections and reviews event logs for client connection attempts. It serves to identify environments still using the SMB1 protocol before disabling it.'
 tags: ['logging', 'networking', 'security']
@@ -50,4 +50,6 @@ Details: `
 ## Implementation
 
 [Implement - Remote Monitor - SMB1 Traffic Detection](<./SMB1 Traffic Detection.md>)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '1cfbe430-0cbd-4abf-861d-4884632b7705'
-title: 'Monitor Repairs in ConnectWise Automate'
-title_meta: 'Monitor Repairs in ConnectWise Automate'
+title: 'Track Repaired Agents'
+title_meta: 'Track Repaired Agents'
 keywords: ['monitor', 'repairs', 'connectwise', 'automate', 'script', 'custom', 'table', 'dataview']
 description: 'This document explains how to monitor repairs carried out by the ConnectWise Automate script, detailing the storage of repair information in a custom table and its display in a dataview for easy access to recent repairs.'
 tags: ['connectwise']
@@ -22,4 +22,6 @@ This is a function script run by the [CWM - Automate - Script - Automate Agent -
 
 - Custom Table
 - Dataview
+
+
 

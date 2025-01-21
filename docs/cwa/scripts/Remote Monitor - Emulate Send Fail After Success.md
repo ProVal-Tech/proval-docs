@@ -1,7 +1,7 @@
 ---
 id: '70f5868c-7006-4393-afed-156fbae86ab5'
-title: 'Remote Monitor Autofix for Ticket Management'
-title_meta: 'Remote Monitor Autofix for Ticket Management'
+title: 'Remote Monitor - Emulate Send Fail After Success'
+title_meta: 'Remote Monitor - Emulate Send Fail After Success'
 keywords: ['remote', 'monitor', 'ticket', 'management', 'autofix', 'status']
 description: 'This document describes an autofix solution for remote monitors that enables them to mimic the behavior of internal monitors by allowing automatic ticket closure based on monitor status changes. It includes details on dependencies, variables, and the processing logic of the script.'
 tags: []
@@ -50,4 +50,6 @@ If the script determines the monitor is in a "success" state, it will go through
 **Script log messages**
 
 The script will create a ticket if necessary.
+
+
 

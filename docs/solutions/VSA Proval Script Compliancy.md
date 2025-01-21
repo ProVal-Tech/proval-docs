@@ -1,7 +1,7 @@
 ---
 id: '9ec556eb-e7b8-410d-8f03-0dcb0a8b549b'
-title: 'Check Endpoint Compatibility for ProVal Support'
-title_meta: 'Check Endpoint Compatibility for ProVal Support'
+title: 'VSA Proval Script Compliancy'
+title_meta: 'VSA Proval Script Compliancy'
 keywords: ['endpoint', 'compatibility', 'proval', 'windows', 'customfield', 'agent', 'view']
 description: 'This document outlines the process for checking if an endpoint operating system and PowerPoint version are supported by ProVal. It updates a custom field with compatibility status and organizes agents into appropriate views based on their compatibility.'
 tags: ['windows']
@@ -30,4 +30,6 @@ This document checks whether an endpoint operating system (OS) and PowerPoint ve
 - Ensure the AP has the appropriate CF assigned to `updateSystemInfo()`
 - Run the AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
+
+
 

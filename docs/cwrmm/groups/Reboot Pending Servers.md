@@ -1,7 +1,7 @@
 ---
 id: 'd6235892-7f62-4a75-83ef-c6c01cc43898'
-title: 'Reboot Pending Servers Group'
-title_meta: 'Reboot Pending Servers Group'
+title: 'Reboot Pending Servers'
+title_meta: 'Reboot Pending Servers'
 keywords: ['reboot', 'servers', 'windows', 'dynamic', 'group', 'endpoint']
 description: 'This document outlines the configuration and details for the Reboot Pending Servers group within ConnectWise RMM. It specifies the criteria for detecting supported Windows servers that require a reboot and the dependencies necessary for its functionality.'
 tags: ['reboot', 'windows']
@@ -39,4 +39,6 @@ This group contains the server endpoints where a reboot is pending. It detects o
 - The agent available equals True.
 - The OS contains any of Windows 2016, Windows 2019, or Windows 2022.
 - The Exclude reboot custom field equals False.
+
+
 

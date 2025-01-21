@@ -1,7 +1,7 @@
 ---
 id: 'deb78496-0147-4a1b-b368-3b3113f9cf5b'
-title: 'Internal Monitors for Virtualization Manager Plugin'
-title_meta: 'Internal Monitors for Virtualization Manager Plugin'
+title: 'ESXi Virtualization Manager Customized Monitoring'
+title_meta: 'ESXi Virtualization Manager Customized Monitoring'
 keywords: ['monitors', 'virtualization', 'esxi', 'alert', 'dataview']
 description: 'This guide provides detailed instructions on sharing internal monitor details with partners regarding the Virtualization Manager plugin. It includes setup, implementation steps, and associated content for monitoring ESXi hosts.'
 tags: ['esxi', 'networking']
@@ -101,4 +101,6 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 **Q:** My VMware ESXi host is not showing up in the Virtualization Manager. What can I do to troubleshoot?  
 **A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](https://proval.itglue.com/DOC-5078775-11901041)
+
+
 

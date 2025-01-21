@@ -1,7 +1,7 @@
 ---
 id: '97aba1f6-ff21-4997-ba2b-7b43c337567a'
-title: 'Show Installed Fonts'
-title_meta: 'Show Installed Fonts - Custom Object of Fonts on System'
+title: 'Show-Font'
+title_meta: 'Show-Font'
 keywords: ['fonts', 'registry', 'customobject', 'installed', 'system']
 description: 'This document provides an overview of a script that returns a custom object listing all installed fonts on a system by querying the registry. It details the process, usage, and output format of the script.'
 tags: ['software', 'windows']
@@ -40,4 +40,6 @@ CustomObject
 | ConnectWise RMM       |                              |
 | Kaseya                |                              |
 | Datto RMM            |                              |
+
+
 

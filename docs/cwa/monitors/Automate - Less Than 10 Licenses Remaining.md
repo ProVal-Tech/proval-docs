@@ -1,7 +1,7 @@
 ---
 id: '86cf6cf1-58cc-404d-ab7a-a80658e7b91f'
-title: 'Automate License Alert Monitor'
-title_meta: 'Automate License Alert Monitor'
+title: 'Automate - Less Than 10 Licenses Remaining'
+title_meta: 'Automate - Less Than 10 Licenses Remaining'
 keywords: ['automate', 'alert', 'licenses', 'monitor', 'ticket']
 description: 'This document provides details on setting up an alert monitor for Automate licenses. It will trigger notifications when the number of remaining licenses drops below ten, facilitating timely responses to license management needs. The guide includes important notes for both on-prem and hosted partners regarding ticket generation and client identification.'
 tags: []
@@ -25,4 +25,6 @@ For hosted partners, it will be the minimum `computerid` of `Clientid 1`. If `Cl
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+
 

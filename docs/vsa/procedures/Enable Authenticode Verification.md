@@ -1,7 +1,7 @@
 ---
 id: '847585fe-5c51-4479-9562-9524ab687330'
-title: 'Enable Authenticode Verification on Windows'
-title_meta: 'Enable Authenticode Verification on Windows'
+title: 'Enable Authenticode Verification'
+title_meta: 'Enable Authenticode Verification'
 keywords: ['authenticode', 'verification', 'windows', 'script', 'reboot']
 description: 'This document provides a detailed guide on enabling Authenticode Verification on Windows machines. It includes an example agent procedure log that demonstrates the successful execution of the script and the necessary reboot to apply changes.'
 tags: ['recovery', 'security', 'setup', 'windows']
@@ -43,4 +43,6 @@ This script is used to enable the Authenticode Verification on Windows machines.
 ## Output
 
 Agent procedure log.
+
+
 

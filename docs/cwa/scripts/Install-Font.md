@@ -1,7 +1,7 @@
 ---
 id: 'c16a83d6-7845-4478-9b25-c4947aac8f5d'
-title: 'Font Installation Wrapper Script'
-title_meta: 'Font Installation Wrapper Script'
+title: 'Install-Font'
+title_meta: 'Install-Font'
 keywords: ['font', 'installation', 'script', 'zip', 'extract']
 description: 'This document outlines a wrapper script designed for installing fonts using an agnostic software installation method. It includes steps for preparing font files, running the script, and verifying the installation process.'
 tags: ['installation', 'software', 'windows']
@@ -50,4 +50,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+
 

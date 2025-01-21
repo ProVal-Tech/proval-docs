@@ -1,7 +1,7 @@
 ---
 id: '8edbbe65-d1fd-4b22-b80d-da2dc12a01ba'
-title: 'Silent Uninstallation of VLC'
-title_meta: 'Silent Uninstallation of VLC'
+title: 'VLC Uninstall'
+title_meta: 'VLC Uninstall'
 keywords: ['vlc', 'uninstall', 'silent', 'procedure', 'agent']
 description: 'This document outlines the procedure for silently removing VLC from systems where it cannot be uninstalled via winget. It includes example logs and the command used for uninstallation.'
 tags: ['software', 'uninstallation', 'windows']
@@ -28,6 +28,8 @@ This procedure silently removes VLC.
 ## Output
 
 AP Log
+
+
 
 
 

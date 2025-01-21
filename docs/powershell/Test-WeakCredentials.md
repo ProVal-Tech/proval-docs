@@ -1,7 +1,7 @@
 ---
 id: ps-test-weakcredentials  
 title: 'Test-WeakCredentials'  
-title_meta: 'Test-WeakCredentials Command'  
+title_meta: 'Test-WeakCredentials'  
 keywords: ['weak', 'credentials', 'passwords', 'security']  
 description: 'Documentation for the Test-WeakCredentials command to identify users with potentially compromised passwords by querying known password hashes.'  
 tags: ['active-directory', 'security']  
@@ -49,4 +49,6 @@ This will download the 12GB password list, execute that query to compare values,
 
 ## Output  
 PSObject  
+
+
 

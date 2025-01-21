@@ -1,7 +1,7 @@
 ---
 id: '6427c251-f3e5-422a-9d40-7b6254d7d8ae'
-title: 'ShadowControl Client Installation'
-title_meta: 'ShadowControl Client Installation'
+title: 'ShadowControl Subscribe'
+title_meta: 'ShadowControl Subscribe'
 keywords: ['shadowcontrol', 'client', 'installation', 'subscribe', 'proval']
 description: 'This document outlines the process for downloading and installing the ShadowControl client on a target machine. It includes automatic subscription to the ProVal ShadowControl server and ensures the downloaded installer is deleted after completion. Note that this script is specifically designed for ProVal Shadow Control instances.'
 tags: ['backup', 'installation', 'security', 'software']
@@ -36,4 +36,6 @@ The script will run a command-line argument against the `stccmd` application on 
 ## Output
 
 Script log messages only.
+
+
 

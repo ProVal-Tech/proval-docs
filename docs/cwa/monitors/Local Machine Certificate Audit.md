@@ -1,7 +1,7 @@
 ---
 id: '48737f29-accd-41ac-a35d-047d7e266e6f'
-title: 'Internal Monitor for Windows Certificates Audit'
-title_meta: 'Internal Monitor for Windows Certificates Audit'
+title: 'Local Machine Certificate Audit'
+title_meta: 'Local Machine Certificate Audit'
 keywords: ['monitor', 'windows', 'certificates', 'audit', 'servers']
 description: 'This document outlines the implementation of an internal monitor designed to detect servers where the Windows Certificates (My) Local Machine Audit script has not been executed in the past week. It specifies the dependencies and target groups for effective monitoring.'
 tags: ['windows']
@@ -32,4 +32,6 @@ The internal monitor should be explicitly limited to the following groups:
 ## Alert Template
 
 **Name:** △ Custom - Local Machine Certificate Audit
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'b2d7d16d-ecc3-4c23-b1ce-f05027098fc1'
-title: 'Enable AD Recycle Bin on AD Infrastructure Masters'
-title_meta: 'Enable AD Recycle Bin on AD Infrastructure Masters'
+title: 'Enable AD Recycle Bin'
+title_meta: 'Enable AD Recycle Bin'
 keywords: ['ad', 'recycle', 'bin', 'infrastructure', 'masters']
 description: 'This document outlines the steps to enable the Active Directory Recycle Bin on Active Directory Infrastructure Masters where it is not already enabled. It includes associated content such as custom fields, tasks, device groups, and monitoring setups to ensure successful implementation and failure tracking.'
 tags: ['active-directory']
@@ -30,4 +30,6 @@ The purpose of this solution is to enable the AD Recycle Bin on AD Infrastructur
 - Create the [Device Group - Infrastructure Master - Without Recycle Bin](<../cwrmm/groups/Infrastructure Master - Without Recycle Bin.md>).
 - Create the deployment schedule as described in this document: [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513).
 - Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) if the partner wants tickets when the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable the AD Recycle Bin.
+
+
 

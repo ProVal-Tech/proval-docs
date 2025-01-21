@@ -1,7 +1,7 @@
 ---
 id: 'a13ca3c7-a75d-4549-9056-dd0b79e4caeb'
-title: 'MSSQL Database Version Retrieval Solution'
-title_meta: 'MSSQL Database Version Retrieval Solution'
+title: 'MSSQL Database Version'
+title_meta: 'MSSQL Database Version'
 keywords: ['mssql', 'database', 'version', 'audit', 'monitor', 'script', 'dataview']
 description: 'This document outlines a solution for centralizing the retrieval of MSSQL server versions across an environment. It provides detailed steps for implementation, including associated content for auditing purposes and configurations for monitoring MSSQL database versions effectively.'
 tags: ['database', 'windows']
@@ -49,4 +49,6 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
      - [Internal Monitor - Execute Script - Get MSSQL Database](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
+
+
 

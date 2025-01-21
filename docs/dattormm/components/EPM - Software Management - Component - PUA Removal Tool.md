@@ -1,7 +1,7 @@
 ---
 id: '7356bbb4-4d5f-4c3c-839e-68054255c0d8'
-title: 'Datto RMM Implementation of the ProVal Agnostic Remove-PUA'
-title_meta: 'Datto RMM Implementation of the ProVal Agnostic Remove-PUA'
+title: 'EPM - Software Management - Component - PUA Removal Tool'
+title_meta: 'EPM - Software Management - Component - PUA Removal Tool'
 keywords: ['datto', 'rmm', 'pua', 'bloatware', 'implementation']
 description: 'This document provides an overview of the Datto RMM implementation of the ProVal Agnostic Remove-PUA script, detailing its dependencies, implementation steps, and configuration variables for effective bloatware removal.'
 tags: ['windows']
@@ -34,4 +34,6 @@ Import PUA Removal Tool.cpt into the environment.
 # Output
 
 stdOut & stdError
+
+
 

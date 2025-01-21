@@ -1,7 +1,7 @@
 ---
 id: 'ff05755d-c0eb-4617-82fd-33e74e95b34c'
-title: 'Installed Remote Access Software Overview'
-title_meta: 'Installed Remote Access Software Overview'
+title: 'Software - Remote Access Apps'
+title_meta: 'Software - Remote Access Apps'
 keywords: ['remote', 'access', 'software', 'installed', 'list']
 description: 'This document provides a comprehensive overview of well-known remote access software installed on systems. It includes detection capabilities for various popular remote access tools, along with a detailed column description of the data collected.'
 tags: ['networking', 'security', 'software', 'windows']
@@ -59,4 +59,6 @@ The following remote software will be detected:
 | Location           | Location Name                           |
 | Computer           | Computer Name                           |
 | Remote Software    | List of remote software installed       |
+
+
 

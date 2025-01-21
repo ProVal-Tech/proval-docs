@@ -1,7 +1,7 @@
 ---
 id: '64cf5b44-11bf-42dc-87bc-f1f93582ed8d'
-title: 'Run a Query'
-title_meta: 'Run a Query - Troubleshooting for ConnectWise Automate'
+title: 'Scripting Engine Hung - Troubleshooting'
+title_meta: 'Scripting Engine Hung - Troubleshooting'
 keywords: ['query', 'troubleshooting', 'scripts', 'monitor', 'database']
 description: 'This document outlines the steps to troubleshoot and run queries in ConnectWise Automate, specifically focusing on managing running scripts and addressing scripting engine issues. It includes detailed instructions on navigating the system, running specific SQL queries, and exporting results for further analysis.'
 tags: ['database', 'report']
@@ -109,4 +109,6 @@ Please validate the stuck scripts and export that report to Excel to forward to 
 Navigate to **Help >> Server Status >> Restart Database Agent**.
 
 This will remove all queued scripts and will temporarily fix the scripting engine hang if the script queuing issue is not resolved from the above query results.
+
+
 

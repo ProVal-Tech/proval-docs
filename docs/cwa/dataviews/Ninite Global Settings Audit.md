@@ -1,7 +1,7 @@
 ---
 id: '33deee73-0939-4830-b0a8-4bc0d547cdb8'
-title: 'Audit of Ninite Plugin Configurations'
-title_meta: 'Audit of Ninite Plugin Configurations'
+title: 'Ninite Global Settings Audit'
+title_meta: 'Ninite Global Settings Audit'
 keywords: ['audit', 'ninite', 'plugin', 'configurations', 'settings', 'applications']
 description: 'This document provides an audit of all locations that have different configurations from the global settings in the Ninite Plugin, detailing the discrepancies in application configurations for better management.'
 tags: ['ninite', 'report', 'software']
@@ -27,4 +27,6 @@ This document presents an audit of all locations that have configurations differ
 | Client Name                  | Name of the client                                              |
 | Different App Configurations  | Applications that differ from global settings in Ninite         |
 | Number of Different Apps      | Total count of applications that differ from global settings     |
+
+
 

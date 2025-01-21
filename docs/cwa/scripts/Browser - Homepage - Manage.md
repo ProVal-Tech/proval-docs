@@ -1,7 +1,7 @@
 ---
 id: '770946a6-9399-4001-adc6-9d1eb9f203da'
-title: 'Configure Homepage for Chrome, Edge, and Firefox'
-title_meta: 'Configure Homepage for Chrome, Edge, and Firefox'
+title: 'Browser - Homepage - Manage'
+title_meta: 'Browser - Homepage - Manage'
 keywords: ['homepage', 'browsers', 'configuration', 'set', 'remove', 'replace']
 description: 'This document outlines a script that configures the homepage settings for Google Chrome, Microsoft Edge, and Mozilla Firefox. It provides detailed instructions on how to set, remove, or replace the homepage across these browsers, along with user parameters and sample runs to illustrate its functionality.'
 tags: ['chrome', 'edge', 'firefox', 'setup']
@@ -102,4 +102,6 @@ Example: Configuring Google Chrome and Microsoft Edge to open [https://www.prova
 ## Output
 
 - Script logs
+
+
 

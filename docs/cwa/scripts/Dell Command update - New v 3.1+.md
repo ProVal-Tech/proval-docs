@@ -1,7 +1,7 @@
 ---
 id: '6b58263a-cc4f-45d1-bf29-2e777f0cf644'
-title: 'Install Dell Command Update'
-title_meta: 'Install Dell Command Update'
+title: 'Dell Command update - New v 3.1+'
+title_meta: 'Dell Command update - New v 3.1+'
 keywords: ['dell', 'command', 'update', 'installation', 'scan']
 description: 'This document provides a script for installing and running a scan for Dell Command Update, detailing user parameters and process steps to ensure a smooth installation and update experience.'
 tags: ['dell', 'firmware', 'installation', 'update']
@@ -40,4 +40,6 @@ This script installs Dell Command Update if it is not present, updates it to ver
 ## Output
 
 - Script log
+
+
 

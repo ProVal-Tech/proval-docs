@@ -1,7 +1,7 @@
 ---
 id: '5ffed5a2-c8d9-4e43-964a-54f1ac563268'
-title: 'ThreatLocker Authorization Key Configuration'
-title_meta: 'ThreatLocker Authorization Key Configuration'
+title: 'Company - ThreatLockerAuthKey'
+title_meta: 'Company - ThreatLockerAuthKey'
 keywords: ['threatlocker', 'authorization', 'key', 'windows', 'company']
 description: 'This document outlines the configuration of the ThreatLocker Authorization Key at the company level for Windows machines, including its dependencies and detailed field information.'
 tags: ['security', 'windows']
@@ -27,4 +27,6 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerAuthKey/image_1.png)
+
+
 

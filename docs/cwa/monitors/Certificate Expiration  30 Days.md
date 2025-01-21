@@ -1,7 +1,7 @@
 ---
 id: 'a7dad4d0-d2dc-44b2-972b-0893d7814f8c'
-title: 'SSL Certificate Expiration Monitor'
-title_meta: 'SSL Certificate Expiration Monitor'
+title: 'Certificate Expiration  30 Days'
+title_meta: 'Certificate Expiration  30 Days'
 keywords: ['ssl', 'certificate', 'monitor', 'expiration', 'alert']
 description: 'This document outlines a monitor that checks the proval_plugin_certs table for SSL certificates that are expiring in fewer than 30 days. It provides implementation details, dependencies, and ticketing information to ensure timely renewals of SSL certificates.'
 tags: ['ticketing']
@@ -60,4 +60,6 @@ Expiration: 2023-04-20 19:59:59
 ## Example Ticket
 
 ![Image](../../../static/img/Certificate-Expiration--30-Days/image_2.png)
+
+
 

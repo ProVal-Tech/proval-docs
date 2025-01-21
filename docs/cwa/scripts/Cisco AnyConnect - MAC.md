@@ -1,7 +1,7 @@
 ---
 id: '9d906bff-cc45-4a2b-b0c5-8e9f97c396a2'
-title: 'Install Cisco AnyConnect on Mac Agents'
-title_meta: 'Install Cisco AnyConnect on Mac Agents'
+title: 'Cisco AnyConnect - MAC'
+title_meta: 'Cisco AnyConnect - MAC'
 keywords: ['cisco', 'anyconnect', 'mac', 'install', 'application']
 description: 'This document provides a detailed guide for installing the Cisco AnyConnect application on Mac agents using a script. It includes information about the required files, process steps, and output logs, helping users automate the installation process efficiently.'
 tags: ['application', 'installation', 'networking', 'software']
@@ -37,4 +37,6 @@ This script will install the Cisco AnyConnect application on Mac agents.
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '454d77d4-5cbf-4773-bad1-63a47cfd4342'
-title: 'Windows Fast Boot Disable Remote Monitor Implementation'
-title_meta: 'Windows Fast Boot Disable Remote Monitor Implementation'
+title: 'Import- Windows Fast Boot disable Change'
+title_meta: 'Import- Windows Fast Boot disable Change'
 keywords: ['windows', 'monitor', 'remote', 'fast', 'boot', 'disable', 'groupid', 'alert', 'template']
 description: 'This document provides a step-by-step guide for implementing a remote monitor that disables the fast boot feature on Windows 10 and 11 machines. It includes SQL queries to set up the necessary sensor checks and group agents, along with instructions for applying the appropriate alert templates.'
 tags: ['setup', 'windows']
@@ -219,4 +219,6 @@ Locate your remote monitor by opening the group(s) remote monitors tab, then app
 
 ![Remote Monitor Tab 1](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_2.png)  
 ![Remote Monitor Tab 2](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_3.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a7bcd631-f96c-4443-ae87-e7739407e283'
-title: 'Remote Monitor for Event Log Check'
-title_meta: 'Remote Monitor for Event Log Check'
+title: 'ShadowCopy Creation Failure Detection'
+title_meta: 'ShadowCopy Creation Failure Detection'
 keywords: ['monitor', 'event', 'log', 'check', 'windows', 'server', 'workstation']
 description: 'This document describes a remote monitor that queries the event log to determine if event ID 12298 has occurred within the last 12 hours, returning the count of occurrences. It includes details on suggested limits, alert styles, and target environments for optimal monitoring.'
 tags: ['windows']
@@ -36,4 +36,6 @@ The suggested target for the monitor is Service Plan(s) for Servers and Workstat
 **Examples**:  
 - **Windows Servers**: Should be run on all Windows-based servers.  
 - **Windows Workstations**: Should be run on all Windows workstations (Optional).
+
+
 

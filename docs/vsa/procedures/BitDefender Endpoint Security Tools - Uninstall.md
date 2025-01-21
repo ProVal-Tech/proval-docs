@@ -1,7 +1,7 @@
 ---
 id: '96b91b8c-3c8a-485e-8f33-9a77cf4d190c'
-title: 'Remove BitDefender Endpoint Security Tools'
-title_meta: 'Remove BitDefender Endpoint Security Tools'
+title: 'BitDefender Endpoint Security Tools - Uninstall'
+title_meta: 'BitDefender Endpoint Security Tools - Uninstall'
 keywords: ['bitdefender', 'uninstall', 'endpoint', 'security', 'tools', 'procedure']
 description: 'This document provides a comprehensive guide for completely removing BitDefender Endpoint Security Tools from an endpoint using an agent procedure. It includes implementation steps, optional variables, and the process for ensuring proper uninstallation, along with logging and error handling.'
 tags: ['security', 'software', 'uninstallation', 'windows']
@@ -51,4 +51,6 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 ## Output
 
 Agent Procedure Log Entry & %ProgramData%/_automation/AgentProcedure/RemoveBitdefender
+
+
 

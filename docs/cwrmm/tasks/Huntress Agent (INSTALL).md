@@ -1,7 +1,7 @@
 ---
 id: 'e1f40d15-13f1-465e-9870-653927ad0434'
-title: 'Huntress Agent Install'
-title_meta: 'Huntress Agent Install'
+title: 'Huntress Agent (INSTALL)'
+title_meta: 'Huntress Agent (INSTALL)'
 keywords: ['huntress', 'agent', 'install', 'windows', 'deployment']
 description: 'This document provides a detailed guide on installing the Huntress agent on Windows machines, including prerequisites, dependencies, and step-by-step instructions for script creation and deployment within ConnectWise Automate.'
 tags: ['installation', 'security', 'setup', 'windows']
@@ -312,4 +312,6 @@ The other custom fields can be left blank.
 
 **Note:**  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.
+
+
 

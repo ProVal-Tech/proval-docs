@@ -1,7 +1,7 @@
 ---
 id: '518eca1b-77be-4a26-bdb5-01d4440cad34'
-title: 'MSP Automation Metrics'
-title_meta: 'MSP Automation Metrics for Client Environment'
+title: 'MSP Automation Metrics - v1'
+title_meta: 'MSP Automation Metrics - v1'
 keywords: ['msp', 'metrics', 'automation', 'data', 'client']
 description: 'This document provides a solution for MSPs to gather and store important data related to the client environment through automation metrics. It outlines the associated content, including scripts, custom tables, and dataviews, and provides implementation steps for effective usage.'
 tags: []
@@ -27,4 +27,6 @@ This solution is intended to provide important MSP data relating to the client e
 - Import the [CWM - Automate - Dataview - MSP Automation Metrics](<../cwa/dataviews/MSP Automation Metrics.md>) dataview.
 - Debug the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../cwa/scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>) script against any client and verify the presence of data in the dataview.
 - Schedule the script to run on the 1st of each month.
+
+
 

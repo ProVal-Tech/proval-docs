@@ -1,7 +1,7 @@
 ---
 id: 'ce16526d-84b5-4e58-928b-13a29195056e'
-title: 'Get Microsoft 365 Update Channel'
-title_meta: 'Get Microsoft 365 Update Channel - Script Overview'
+title: 'Microsoft 365 - Click-to-Run - Get Details'
+title_meta: 'Microsoft 365 - Click-to-Run - Get Details'
 keywords: ['microsoft', 'office', 'update', 'channel', 'automation', 'edf']
 description: 'This document provides an overview of the script that retrieves the installed Microsoft Click-to-Run Office version, verifies auto-update settings, and stores the Update channel information in a custom table for monitoring and management purposes.'
 tags: ['office', 'update']
@@ -52,4 +52,6 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 - Script log
 - Custom Table
 - Dataview
+
+
 

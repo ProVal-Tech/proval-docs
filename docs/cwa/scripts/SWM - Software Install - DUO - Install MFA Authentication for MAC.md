@@ -1,7 +1,7 @@
 ---
 id: '854ffbbf-6756-48c6-8dc1-85dea08333e8'
-title: 'Install DUO 2FA Authentication for MAC'
-title_meta: 'Install DUO 2FA Authentication for MAC - Step-by-Step Guide'
+title: 'SWM - Software Install - DUO - Install MFA Authentication for MAC'
+title_meta: 'SWM - Software Install - DUO - Install MFA Authentication for MAC'
 keywords: ['duo', '2fa', 'mac', 'authentication', 'installation']
 description: 'This document provides a comprehensive guide for installing the latest version of DUO 2FA Authentication for MAC OS. It includes requirements, variables, and SQL queries needed for proper configuration and execution of the installation script.'
 tags: ['installation']
@@ -69,4 +69,6 @@ Call v_Extradatarefresh(3,'Clients');
 ## Output
 
 - Script Logs
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'cc16fc4b-276f-4416-a994-e917421add17'
-title: 'Updating Machine CFs with Org CF Patching Schedule'
-title_meta: 'Updating Machine CFs with Org CF Patching Schedule'
+title: 'Update-VsaPatchingSchedule'
+title_meta: 'Update-VsaPatchingSchedule'
 keywords: ['vsa', 'patching', 'configuration', 'scheduling', 'api']
 description: 'This document outlines the process for updating machine custom fields with the organization custom field patching schedule, including requirements, process steps, and parameters for the API call.'
 tags: ['api', 'patching']
@@ -46,4 +46,6 @@ Pass the parameters to VSAAPI for use in the API call.
 
 # Output
 The output will be saved to `./Update-VsaPatchingSchedule-log.txt`.
+
+
 

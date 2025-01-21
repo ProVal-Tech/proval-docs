@@ -1,7 +1,7 @@
 ---
 id: 'c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33'
-title: 'Generate Compliance Views and Grant Access'
-title_meta: 'Generate Compliance Views and Grant Access in ConnectWise Automate'
+title: 'MySQL - View - Create (pvl_cu_compliance)'
+title_meta: 'MySQL - View - Create (pvl_cu_compliance)'
 keywords: ['compliance', 'views', 'access', 'automate', 'permissions']
 description: 'This document details a script that generates compliance views named `pvl_cu_compliance` and `pvl_cu_compliance_clients` and grants access permissions to all currently active Automate users. The script can be run on any computer to create the views, after which it should be removed from the environment.'
 tags: ['database', 'report', 'security', 'setup']
@@ -27,4 +27,6 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
+
+
 

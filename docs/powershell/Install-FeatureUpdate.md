@@ -1,7 +1,7 @@
 ---
 id: ps-install-featureupdate
 title: 'Install-FeatureUpdate'
-title_meta: 'Install-FeatureUpdate Command'
+title_meta: 'Install-FeatureUpdate'
 keywords: ['install', 'featureupdate', 'upgrade', 'windows']
 description: 'Documentation for the Install-FeatureUpdate command to install the latest feature update on a Windows 10+ machine.'
 tags: ['installation', 'update', 'windows']
@@ -85,4 +85,6 @@ SetupOperationInfo : {@{OperationName=Start suspended services; OperationStartTi
 ### Tables
 - Install-FeatureUpdate_logs
 - Install-FeatureUpdate_setupdiag
+
+
 

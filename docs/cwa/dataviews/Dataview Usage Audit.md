@@ -1,7 +1,7 @@
 ---
 id: '99dfcda4-d0ce-49db-baac-bbe2d41c9e85'
-title: 'Dataview Audit'
-title_meta: 'Dataview Audit - Track User Access'
+title: 'Dataview Usage Audit'
+title_meta: 'Dataview Usage Audit'
 keywords: ['dataview', 'audit', 'tracking', 'users', 'access']
 description: 'This document provides an overview of a Dataview that audits the most frequently accessed Dataviews by users, allowing for the tracking of valuable Dataviews for clients. It includes detailed information on the columns used in the audit, such as Dataview ID, name, folder, and access statistics.'
 tags: ['database', 'performance', 'report']
@@ -25,5 +25,7 @@ This Dataview audits the Dataviews most frequently accessed by users. It can be 
 | Recently Opened On                   | Most recent date when the Dataview was accessed                                                     |
 | Duration Since Initial Opening (Days) | Number of days since the Dataview was opened for the first time in the last (History Retention) days |
 | History Retention (Days)            | Indicates how many days old the data displayed in the Dataview is (it depends on the data shown in the h_users table) |
+
+
 
 

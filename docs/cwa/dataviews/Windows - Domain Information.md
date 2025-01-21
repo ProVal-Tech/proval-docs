@@ -1,7 +1,7 @@
 ---
 id: '18505efc-1e3d-4d75-97d9-6c10e5de540f'
-title: 'Domain Joined Status Overview'
-title_meta: 'Domain Joined Status Overview'
+title: 'Windows - Domain Information'
+title_meta: 'Windows - Domain Information'
 keywords: ['domain', 'azure', 'hybrid', 'drs', 'on-prem', 'status']
 description: 'This document provides a comprehensive overview of how a computer is domain joined, detailing the different types of domain join statuses including Azure AD, Hybrid, DRS Joined, On-Prem, and Not Joined. It includes dependencies and a detailed column description for better understanding.'
 tags: ['networking', 'security', 'windows']
@@ -34,4 +34,6 @@ This document provides an overview of how a computer is domain joined (or not do
 | Microsoft - Hybrid AD Joined       | Joined | Not Joined if the machine is Hybrid AD joined                 |
 | Microsoft - On-Premises DRS Joined | Joined | Not Joined if the machine is Device Registration Service (DRS) AD joined |
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
+
+
 

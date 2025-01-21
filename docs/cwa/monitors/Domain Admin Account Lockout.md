@@ -1,7 +1,7 @@
 ---
 id: 'a24b00c5-49d4-4a2b-9090-a2716b56cf47'
-title: 'Remote Monitor for Domain Admin Account Lockout'
-title_meta: 'Remote Monitor for Domain Admin Account Lockout'
+title: 'Domain Admin Account Lockout'
+title_meta: 'Domain Admin Account Lockout'
 keywords: ['monitor', 'domain', 'admin', 'lockout', 'ticket', 'alert']
 description: 'This document outlines the configuration of a remote monitor designed to detect when the domain admin account is locked. It includes details on check actions, dependencies, target servers, ticketing information, and implementation steps for effective monitoring and alerting.'
 tags: ['active-directory']
@@ -56,4 +56,6 @@ Domain Admin Locked Account Detected on %computername%. Refer to the below detai
 Please follow the implementation document below to install this content:
 
 - [Implement - Remote Monitor - Domain Admin Account Lockout](<./Implement - Remote Monitor - Domain Admin Account Lockout.md>)
+
+
 

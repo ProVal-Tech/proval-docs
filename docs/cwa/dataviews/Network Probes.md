@@ -1,7 +1,7 @@
 ---
 id: '0d3e8cd2-8055-42bb-8559-098e60a9db42'
-title: 'Overview of Network Probes (Gen1 and Gen2)'
-title_meta: 'Overview of Network Probes (Gen1 and Gen2)'
+title: 'Network Probes'
+title_meta: 'Network Probes'
 keywords: ['network', 'probe', 'scan', 'deployment', 'subnet']
 description: 'This document presents comprehensive information about Network Probes (Gen1 and Gen2), including details on subnet settings, scan configurations, and deployment options. It also provides recommendations for the best computer to use when a network probe is not present at a location.'
 tags: ['deployment']
@@ -54,4 +54,6 @@ Information from the following tabs of a Network Probe settings page is displaye
 | Updated By                      | Last user to make changes to the probe.                                                        |
 | Creation Date                   | Date of creation.                                                                                |
 | Last Update Date                | Last update date for the network probe.                                                         |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'f375aa2e-d7cd-4974-a8bb-986e95bb47d7'
-title: 'Automated Uninstallation of Pulseway'
-title_meta: 'Automated Uninstallation of Pulseway'
+title: 'SWM - Software Uninstall - Component - Pulseway - Uninstall WIN PVAL'
+title_meta: 'SWM - Software Uninstall - Component - Pulseway - Uninstall WIN PVAL'
 keywords: ['uninstallation', 'pulseway', 'cleanup', 'datto', 'rmm']
 description: 'This document outlines the steps to perform an automated uninstallation of Pulseway, including necessary cleanup procedures and integration with Datto RMM. It provides detailed implementation instructions and expected output for successful execution.'
 tags: ['cleanup', 'datto', 'installation', 'software', 'uninstallation']
@@ -36,4 +36,6 @@ A job status of **Success** is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+
 

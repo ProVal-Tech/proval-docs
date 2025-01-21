@@ -1,7 +1,7 @@
 ---
 id: '75173959-6166-4520-838a-f960ab0070ea'
-title: 'Check NUMA Resource Limits on Hyper-V Machines'
-title_meta: 'Check NUMA Resource Limits on Hyper-V Machines'
+title: 'Set NUMA VM Status'
+title_meta: 'Set NUMA VM Status'
 keywords: ['numa', 'hyper-v', 'resources', 'limits', 'performance']
 description: 'This document describes a script designed to check for Hyper-V machines that exceed their NUMA node limits, helping to identify misconfigured virtual machines and optimize resource allocation.'
 tags: ['hyper-v', 'performance', 'windows']
@@ -31,4 +31,6 @@ The script runs a PowerShell script to get the NumaStatus. The PowerShell then h
 ## Output
 
 - Script state
+
+
 

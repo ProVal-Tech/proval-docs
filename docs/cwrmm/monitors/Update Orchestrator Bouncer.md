@@ -1,7 +1,7 @@
 ---
 id: 'a88678ef-dc82-4837-802c-e77573277504'
 title: 'Update Orchestrator Bouncer'
-title_meta: 'Update Orchestrator Bouncer - Monitor RMM for Windows Update'
+title_meta: 'Update Orchestrator Bouncer'
 keywords: ['monitor', 'update', 'orchestrator', 'rmm', 'windows']
 description: 'This document outlines the creation and configuration of the Update Orchestrator Bouncer monitor, which prevents unauthorized Microsoft patches from being applied by renaming the reboot folder in the Update Orchestrator path. It includes details on monitor creation, configuration, conditions, ticket resolution, and dependencies.'
 tags: ['windows']
@@ -66,4 +66,6 @@ This monitor is intentionally aimed at the Update Orchestrator group.
 
 ## Ticketing
 This solution does technically create tickets, but the tickets are designed to autoclose as soon as the machine runs the task to update PowerShell.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'da608773-1677-4247-a161-ea62b3b3ba23'
-title: 'Daily Connection Audit Table for Automate'
-title_meta: 'Daily Connection Audit Table for Automate'
+title: 'pvl_automate_connection_audit_daily'
+title_meta: 'pvl_automate_connection_audit_daily'
 keywords: ['connection', 'audit', 'table', 'automate', 'offline', 'online', 'data', 'collection']
 description: 'This document outlines the purpose and structure of the daily connection audit table for Automate, which records the online and offline time of computers over the past 24 hours. It details the dependencies, table structure, and the process for updating the data.'
 tags: ['database', 'performance', 'report', 'update']
@@ -31,4 +31,6 @@ The script will start adding data to this table 24 hours after the first entry i
 | online              | int      | Number of minutes it was online in the last 24 hours |
 | offline             | int      | Number of minutes it was offline in the last 24 hours |
 | datacollectiontime  | datetime | Data collection time for the respective entry        |
+
+
 

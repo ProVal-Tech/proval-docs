@@ -1,7 +1,7 @@
 ---
 id: '099fdbf2-75c5-4c33-958c-9760e51539d4'
-title: 'Windows Server Dataview with DNS Information'
-title_meta: 'Windows Server Dataview with DNS Information'
+title: 'DNS Settings Audit - Servers'
+title_meta: 'DNS Settings Audit - Servers'
 keywords: ['windows', 'server', 'dns', 'environment', 'information']
 description: 'This document provides a comprehensive dataview that displays information for all Windows servers in the environment, including their corresponding DNS addresses, client names, locations, operating systems, and last contact details with RMM.'
 tags: ['dns', 'windows']
@@ -23,4 +23,6 @@ This dataview displays information for all the Windows servers present in the en
 | DNS_Settings       | DNS addresses.                     |
 | Operating_System    | OS information of the server.      |
 | Last Contact       | Last contact with RMM.             |
+
+
 

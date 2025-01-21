@@ -1,7 +1,7 @@
 ---
 id: '6a855fe6-df02-4668-81c3-8cd392595c31'
-title: 'Unsynced Ticket Comments Monitor for CW Manage'
-title_meta: 'Unsynced Ticket Comments Monitor for CW Manage'
+title: 'CWM - Automate - Automate - Unsynced Ticket Content'
+title_meta: 'CWM - Automate - Automate - Unsynced Ticket Content'
 keywords: ['monitor', 'tickets', 'alerts', 'synchronization', 'cwmanage']
 description: 'This document outlines the setup and dependencies for the Unsynced Ticket Comments Monitor, which alerts partners about any ticket comments that have not been synchronized with CW Manage. It includes details on required plugins and configuration steps to ensure alerts are sent correctly.'
 tags: ['cwmanage', 'email']
@@ -27,4 +27,6 @@ Use the "△ Email RAWSQL Monitor set results to the Partner" alert template alo
 ## Target
 
 Global
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '55e5e8ed-f8a3-40d3-bc9c-8ca5f0059306'
-title: 'Disallow OneDrive from Use in Local Security Policy'
-title_meta: 'Disallow OneDrive from Use in Local Security Policy'
+title: 'OneDrive Disable'
+title_meta: 'OneDrive Disable'
 keywords: ['onedrive', 'security', 'policy', 'disable', 'windows']
 description: 'This document outlines the procedure to disallow OneDrive from being used on endpoints through Local Security Policy. It includes a sample run log, the process used to achieve this, and the expected output from the agent procedure.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -55,4 +55,6 @@ else{
 - Agent Procedure Log
 
 Attach the content XML VSA Export to this document.
+
+
 

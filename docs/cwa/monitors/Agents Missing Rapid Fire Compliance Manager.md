@@ -1,7 +1,7 @@
 ---
 id: 'c9e3891e-1588-4dbc-85eb-dc39a861a433'
-title: 'Compliance Management Monitor'
-title_meta: 'Compliance Management Monitor - Detecting Agent Deployment'
+title: 'Agents Missing Rapid Fire Compliance Manager'
+title_meta: 'Agents Missing Rapid Fire Compliance Manager'
 keywords: ['monitor', 'agent', 'compliance', 'deployment', 'alerting']
 description: 'This document describes a monitor that detects agents based on the presence of the "Compliance Management Installer Key" and ensures that deployment is enabled. It highlights the importance of not excluding any locations or computers from this monitoring process.'
 tags: ['alerting', 'compliance', 'deployment']
@@ -26,4 +26,6 @@ Global
 *To create a ticket, please set the ticket category in the alerting section of the monitor.*
 
 ![Image](../../../static/img/Agents-Missing-Rapid-Fire-Compliance-Manager/image_1.png)
+
+
 

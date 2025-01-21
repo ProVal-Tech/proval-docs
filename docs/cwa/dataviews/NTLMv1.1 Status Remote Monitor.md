@@ -1,7 +1,7 @@
 ---
 id: '5a6640f6-f0cb-4231-845f-e48c9445aa22'
-title: 'NTLMv1.1 Detection on Endpoints'
-title_meta: 'NTLMv1.1 Detection on Endpoints - Security Assessment'
+title: 'NTLMv1.1 Status Remote Monitor'
+title_meta: 'NTLMv1.1 Status Remote Monitor'
 keywords: ['ntlm', 'security', 'endpoint', 'detection', 'protocol']
 description: 'This document outlines a dataview designed to check the status of NTLMv1.1 on endpoints, highlighting the security risks associated with its use and providing implementation steps for monitoring. It emphasizes the importance of disabling NTLMv1.1 to protect sensitive information from unauthorized access.'
 tags: ['networking', 'security']
@@ -38,4 +38,6 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 - Apply and import the remote monitors to the Managed Windows Computers group.
 - Import the dataview.
+
+
 

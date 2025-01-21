@@ -1,7 +1,7 @@
 ---
 id: '965bd890-074b-4217-bba2-e9ddb4a3109d'
-title: 'CU Compliance Metrics - Clients'
-title_meta: 'CU Compliance Metrics - Clients'
+title: 'pvl_cu_compliance_clients'
+title_meta: 'pvl_cu_compliance_clients'
 keywords: ['compliance', 'clients', 'sql', 'cumulative', 'updates', 'windows', 'patching']
 description: 'This document outlines the SQL query view designed for the CU compliance metrics, focusing on Windows computers with managed patch policies. It details the data structure, dependencies, and the metrics calculated for clients based on their compliance with cumulative updates over a specified timeframe.'
 tags: ['database', 'performance', 'report', 'security', 'update', 'windows']
@@ -43,4 +43,6 @@ The data is grouped by client.
 | EOL %                           | Proportion of outdated machines ineligible for cumulative updates.                             |
 | Total Eligible Computers - CU   | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
 | Data Missing                    | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+
+
 

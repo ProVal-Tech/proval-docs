@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-officescrub
 title: 'Invoke-OfficeScrub'
-title_meta: 'Invoke-OfficeScrub Command'
+title_meta: 'Invoke-OfficeScrub'
 keywords: ['uninstall', 'office', 'cleanup', 'remove']
 description: 'Documentation for the Invoke-OfficeScrub command to uninstall Microsoft Office products via OffScrub.'
 tags: ['office365', 'uninstallation']
@@ -47,4 +47,6 @@ Removes all installed versions of Office.
 ## Output
 - .\Invoke-OfficeScrub-log.txt
 - .\Invoke-OfficeScrub-error.txt
+
+
 

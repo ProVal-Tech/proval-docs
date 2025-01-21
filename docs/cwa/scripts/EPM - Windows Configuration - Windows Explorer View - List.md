@@ -1,7 +1,7 @@
 ---
 id: '6eddbb86-86a9-4812-8a5e-3302933800c9'
-title: 'Set Windows Explorer to List View'
-title_meta: 'Set Windows Explorer to List View'
+title: 'EPM - Windows Configuration - Windows Explorer View - List'
+title_meta: 'EPM - Windows Configuration - Windows Explorer View - List'
 keywords: ['windows', 'explorer', 'list', 'view', 'shell', 'registry']
 description: 'This script configures Windows Explorer to display files and folders in List View by modifying specific registry settings. It ensures that the changes apply to all users and creates the necessary registry keys for the desired view mode.'
 tags: ['registry', 'setup', 'windows']
@@ -36,4 +36,6 @@ This script performs the following actions:
 ## Output
 
 - Script log
+
+
 

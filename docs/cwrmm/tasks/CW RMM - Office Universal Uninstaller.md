@@ -1,7 +1,7 @@
 ---
 id: '88ebc856-6e02-41d2-a6b5-af8cbd37e2c6'
-title: 'Office Universal Uninstaller'
-title_meta: 'Office Universal Uninstaller'
+title: 'CW RMM - Office Universal Uninstaller'
+title_meta: 'CW RMM - Office Universal Uninstaller'
 keywords: ['office', 'uninstaller', 'microsoft', 'corruption', 'script']
 description: 'This document provides a comprehensive guide on using the Office Universal Uninstaller script, which downloads offscrub files and uninstalls all versions of Microsoft Office from 2007 to 2016 & O365, handling machine or software corruption and removing app shortcuts.'
 tags: ['setup', 'software', 'uninstallation', 'windows']
@@ -122,4 +122,6 @@ Then click on **Schedule** and provide the parameter details as necessary for th
 ## Output
 
 - Script log
+
+
 

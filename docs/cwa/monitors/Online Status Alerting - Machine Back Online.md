@@ -1,7 +1,7 @@
 ---
 id: '76fa2909-0cc0-4f76-82a0-c067660d52ac'
-title: 'Online Status Alerting - Autofix - Update Ticket + Email'
-title_meta: 'Online Status Alerting - Autofix - Update Ticket + Email'
+title: 'Online Status Alerting - Machine Back Online'
+title_meta: 'Online Status Alerting - Machine Back Online'
 keywords: ['monitor', 'alerting', 'ticket', 'email', 'status']
 description: 'This document outlines the objectives and dependencies for the Online Status Alerting Autofix script, which triggers updates to tickets and sends emails when a machine comes back online. It details the necessary components and templates required for effective monitoring.'
 tags: ['email']
@@ -21,4 +21,6 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 ## Target
 
 Global
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '5e2c781f-761a-42f8-8d0a-d2866c2318b5'
-title: 'Autofix for Outdated Cumulative Updates'
-title_meta: 'Autofix for Outdated Cumulative Updates - CWM Automate Script'
+title: 'Out of Date Cumulative Updates Autofix without Ticketing'
+title_meta: 'Out of Date Cumulative Updates Autofix without Ticketing'
 keywords: ['autofix', 'cumulative', 'update', 'installation', 'monitor']
 description: 'This document provides a comprehensive guide on the Autofix script designed to install the latest available Cumulative Update on computers identified by specific monitoring criteria. It includes troubleshooting steps to ensure smooth installation, dependencies, system properties, and script states for effective management.'
 tags: ['installation', 'update', 'windows']
@@ -48,4 +48,6 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 ## Output
 
 - Script Log
+
+
 

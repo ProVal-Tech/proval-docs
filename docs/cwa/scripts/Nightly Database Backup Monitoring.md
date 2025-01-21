@@ -1,7 +1,7 @@
 ---
 id: '002e4435-9142-4373-a857-6bf91c16d7af'
-title: 'Create Ticket for ConnectWise Automate Backup Failure'
-title_meta: 'Create Ticket for ConnectWise Automate Backup Failure'
+title: 'Nightly Database Backup Monitoring'
+title_meta: 'Nightly Database Backup Monitoring'
 keywords: ['ticket', 'backup', 'failure', 'connectwise', 'automate', 'email', 'notification']
 description: 'This document describes a script that creates a ticket in the ProValtech Autotask Portal when the ConnectWise Automate nightly backup fails. It details the process, variables, and system properties involved in the script, ensuring timely notifications for backup issues.'
 tags: ['backup', 'connectwise', 'database', 'email']
@@ -57,4 +57,6 @@ A MySQL backup for ConnectWise Automate was generated last night, but it is lowe
 ## Output
 
 - Email
+
+
 

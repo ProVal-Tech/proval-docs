@@ -1,7 +1,7 @@
 ---
 id: '36dec374-8bc6-4fda-a273-4e4a1af2f6f7'
-title: 'Comparative Online Status Dataview for Automate and Control'
-title_meta: 'Comparative Online Status Dataview for Automate and Control'
+title: 'Agent online status check CWC to CWA'
+title_meta: 'Agent online status check CWC to CWA'
 keywords: ['dataview', 'connectwise', 'agents', 'status', 'online', 'control', 'repair', 'reinstall']
 description: 'This document provides a comprehensive overview of a Dataview designed to display comparative results of the online status of agents in ConnectWise Automate and Control. It includes details on dependencies, column descriptions, and SQL representation to facilitate the monitoring and management of agent statuses.'
 tags: ['connectwise', 'database', 'report']
@@ -53,4 +53,6 @@ FROM
   LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
   LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
 ```
+
+
 

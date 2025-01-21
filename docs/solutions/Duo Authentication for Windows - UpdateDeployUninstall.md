@@ -1,7 +1,7 @@
 ---
 id: '34f77d1b-342e-49bd-bc31-39894850c7c1'
-title: 'DUO Install and Update Solution'
-title_meta: 'DUO Install and Update Solution for Consistent Application Management'
+title: 'Duo Authentication for Windows - UpdateDeployUninstall'
+title_meta: 'Duo Authentication for Windows - UpdateDeployUninstall'
 keywords: ['duo', 'update', 'install', 'monitor', 'automation']
 description: 'This document outlines a solution for managing the installation and updating of the DUO application, ensuring it remains patched and up-to-date against vulnerabilities like CVE-2024-20292. It includes associated monitors and scripts for detecting the latest version and implementing updates automatically.'
 tags: ['application', 'security', 'update']
@@ -76,4 +76,6 @@ Configure the solution as outlined below:
     - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) bonded to it.
     - Right-click and Run Now to start the monitor.
+
+
 

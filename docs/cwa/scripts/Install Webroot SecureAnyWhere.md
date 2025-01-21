@@ -1,7 +1,7 @@
 ---
 id: 'cab8dbad-3675-4e65-863e-dd88a0391fc1'
-title: 'Webroot Plugin Installation Script Modification'
-title_meta: 'Webroot Plugin Installation Script Modification for ConnectWise Automate'
+title: 'Install Webroot SecureAnyWhere'
+title_meta: 'Install Webroot SecureAnyWhere'
 keywords: ['webroot', 'plugin', 'installation', 'deployment', 'automate']
 description: 'This document details a modified script for the Webroot Plugin installation, enabling automatic deployment through ConnectWise Automate. It outlines the script functionality, dependencies, variables, and process for both installed and non-installed software scenarios.'
 tags: ['connectwise', 'installation', 'registry', 'security', 'software']
@@ -58,4 +58,6 @@ Document the various variables in the script. Delete any section that is not rel
          - Install for Mac, verify, then exit.
       2. Windows
          - Install for Windows, verify, and exit.
+
+
 

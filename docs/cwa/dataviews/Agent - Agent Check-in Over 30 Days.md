@@ -1,7 +1,7 @@
 ---
 id: 'a326b230-2a55-42c6-a9bd-59ad1b1c3288'
-title: 'Agent Check-in Summary for RMM'
-title_meta: 'Agent Check-in Summary for RMM'
+title: 'Agent - Agent Check-in Over 30 Days'
+title_meta: 'Agent - Agent Check-in Over 30 Days'
 keywords: ['agents', 'checkin', 'rmm', 'summary', 'dataview']
 description: 'This document provides a detailed summary of agents that have not checked in for 30 days, including their status, last contact date, and additional details about the client and location.'
 tags: ['networking', 'performance', 'report', 'windows']
@@ -33,4 +33,6 @@ This dataview shows information about agents that have not checked in for 30 day
 ## ProVal Suggested Solution
 
 [ProVal Suggested Solution](<../../solutions/OfflineBroken Agents.md>)
+
+
 

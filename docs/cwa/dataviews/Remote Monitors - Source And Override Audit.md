@@ -1,7 +1,7 @@
 ---
 id: 'a8d876f8-5972-43ff-8318-26930e6f5300'
-title: 'Remote Monitor Source and Override Status'
-title_meta: 'Remote Monitor Source and Override Status Overview'
+title: 'Remote Monitors - Source And Override Audit'
+title_meta: 'Remote Monitors - Source And Override Audit'
 keywords: ['remote', 'monitor', 'override', 'status', 'client', 'location', 'computer', 'os', 'alert', 'template']
 description: 'This document provides a comprehensive overview of the Remote Monitor Sources and their Override status, detailing the various columns that display key information about clients, machines, operating systems, and monitoring configurations.'
 tags: []
@@ -26,4 +26,6 @@ This dataview shows all the Remote Monitor Sources and their Override status.
 | Monitor Source           | Displays the source of the monitor, whether it's coming from a group, Ignite, Local, or Override. |
 | Monitor Override Status   | Displays the Monitor Override status: Override or Normal.                 |
 | Alert Template           | Displays the name of the Alert template applied to the monitor set.       |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '317fccab-60e6-4af7-8866-1b4d862d973e'
-title: 'EPM - Data Collection - Solution - Update Table Data - UnifiController'
-title_meta: 'EPM - Data Collection - Solution - Update Table Data - UnifiController'
+title: 'plugin_proval_unificontroller'
+title_meta: 'plugin_proval_unificontroller'
 keywords: ['unifi', 'data', 'collection', 'update', 'table']
 description: 'This document outlines the purpose and dependencies for the EPM - Data Collection solution that updates table data specific to the Unifi Controller. It includes detailed information about the relevant database tables and their structure.'
 tags: ['database', 'security', 'update']
@@ -35,4 +35,6 @@ Holds requested Unifi Controller data specific to the controller only.
 | Port         | Int    | The port that the Controller communicates on.                             |
 | UserName     | String | The username for the admin user on the Unifi Controller.                 |
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
+
+
 

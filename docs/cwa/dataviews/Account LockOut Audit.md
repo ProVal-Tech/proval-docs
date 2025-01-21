@@ -1,7 +1,7 @@
 ---
 id: '40cf6430-7ec1-496c-8e6e-b92a499120e6'
-title: 'Account Lock Details for Local and Domain Users'
-title_meta: 'Account Lock Details for Local and Domain Users'
+title: 'Account LockOut Audit'
+title_meta: 'Account LockOut Audit'
 keywords: ['account', 'lock', 'user', 'details', 'local', 'domain']
 description: 'This document provides a comprehensive overview of account lock details for both local and domain users, including SQL representation and relevant dependencies for effective user management.'
 tags: ['sql']
@@ -61,4 +61,6 @@ FROM
   JOIN locations l ON l.`LocationID` = c.`LocationID` 
   JOIN plugin_proval_account_lock p ON p.computerid = c.`ComputerID`
 ```
+
+
 

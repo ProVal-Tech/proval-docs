@@ -1,7 +1,7 @@
 ---
 id: '183d5388-764f-4e39-9ddc-2e4212b579e4'
-title: 'Enable Bitlocker Feature for Groups'
-title_meta: 'Enable Bitlocker Feature for Groups'
+title: 'Import- Enable Bitlocker Feature'
+title_meta: 'Import- Enable Bitlocker Feature'
 keywords: ['bitlocker', 'groupid', 'monitor', 'sql', 'feature']
 description: 'This document provides a step-by-step guide on how to enable the Bitlocker feature for specific groups using SQL queries in ConnectWise Automate. It includes instructions on obtaining group IDs, modifying the SQL query, and executing it to apply the remote monitor settings.'
 tags: ['database', 'security', 'windows']
@@ -161,4 +161,6 @@ Now execute your query from a RAWSQL monitor set.
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
+
+
 

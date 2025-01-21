@@ -1,7 +1,7 @@
 ---
 id: 'de2e1944-e0cc-4b5a-8b87-4f09cfafe4a9'
-title: 'Exclude Threatlocker Deployment for Site'
-title_meta: 'Exclude Threatlocker Deployment for Site'
+title: 'Site - Exclude Threatlocker'
+title_meta: 'Site - Exclude Threatlocker'
 keywords: ['threatlocker', 'deployment', 'custom', 'field', 'site']
 description: 'This document explains how to use the custom field to exclude all machines under a specific site from Threatlocker deployment. It provides details on the field name, type, default value, and editable status, along with a screenshot for reference.'
 tags: ['security', 'windows']
@@ -26,4 +26,6 @@ Setting this custom field to "Yes" will exclude all the machines under that site
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)
+
+
 

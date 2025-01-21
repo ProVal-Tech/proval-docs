@@ -1,7 +1,7 @@
 ---
 id: ps-update-visualstudio  
 title: 'Update-VisualStudio'  
-title_meta: 'Update-VisualStudio Command'  
+title_meta: 'Update-VisualStudio'  
 keywords: ['update', 'visualstudio', 'upgrade', 'installation']  
 description: 'Documentation for the Update-VisualStudio command to update all installed Visual Studio versions automatically.'  
 tags: ['installation', 'software', 'update']  
@@ -37,4 +37,6 @@ Supported Visual Studio versions:
 - .\Update-VisualStudio-log.txt  
 - .\Update-VisualStudio-data.txt  
 - .\Update-VisualStudio-error.txt  
+
+
 

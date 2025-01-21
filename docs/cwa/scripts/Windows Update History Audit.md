@@ -1,7 +1,7 @@
 ---
 id: 'd0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6'
-title: 'Gather Windows Update Data'
-title_meta: 'Gather Windows Update Data for EPM Custom Table'
+title: 'Windows Update History Audit'
+title_meta: 'Windows Update History Audit'
 keywords: ['windows', 'update', 'data', 'epm', 'report']
 description: 'This document provides a comprehensive overview of a script that gathers Windows update data and enters it into the EPM - Custom Table - pvl_windows_updates. It includes details on dependencies, variables, global parameters, and the expected output.'
 tags: ['database', 'report', 'update', 'windows']
@@ -38,4 +38,6 @@ This document describes a script that gathers Windows update data and enters it 
 
 - Script Log
 - [pvl_windows_updates](<../tables/pvl_windows_updates.md>)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'b6bf288a-a1f5-4d76-9973-1ecfca5521a5'
-title: 'Detect BitLocker Script Execution'
-title_meta: 'Detect BitLocker Script Execution'
+title: 'Security - Stale Bitlocker Data'
+title_meta: 'Security - Stale Bitlocker Data'
 keywords: ['bitlocker', 'audit', 'monitor', 'encryption', 'script']
 description: 'This document outlines a method to detect Windows computers where the BitLocker audit script has not executed in the past month and initiates its execution. It also details the necessary roles for Windows servers to support BitLocker and provides links to related SQL scripts for role import in Automate.'
 tags: ['encryption', 'security', 'windows']
@@ -39,4 +39,6 @@ Global
 *Available for import within the ProSync Plugin.*
 
 Note: Ensure the presence of the [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>) table and the [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script in the environment before creating the monitor set and importing the alert template.
+
+
 

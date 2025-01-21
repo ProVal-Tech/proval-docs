@@ -1,7 +1,7 @@
 ---
 id: 'f64826a7-f9c0-45c5-9d1f-136657fbd875'
-title: 'Get Disk Drive Information and Save to CSV'
-title_meta: 'Get Disk Drive Information and Save to CSV'
+title: 'HDD Info Retrieval'
+title_meta: 'HDD Info Retrieval'
 keywords: ['disk', 'drive', 'csv', 'information', 'reporting']
 description: 'This document outlines a procedure to retrieve disk drive information and save it to a CSV file on the endpoint for client ingestion. It provides a detailed log example and dependencies related to the EPM - Disk - Agnostic - Get-DiskInfo implementation.'
 tags: ['disk', 'report', 'setup', 'windows']
@@ -48,4 +48,6 @@ This procedure runs Get-DiskInfo and creates a CSV file with commonly requested 
 
 GetFile: StackContent/DiskReport.csv  
 Endpoint: %ProgramData%/_automation/StackContent/DiskReport/DiskReport.csv
+
+
 

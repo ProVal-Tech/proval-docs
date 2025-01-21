@@ -1,7 +1,7 @@
 ---
 id: 'c53aa0aa-4c52-4cd7-9971-f99662b4cbec'
-title: 'Autofix for Critical Machine Offline in ConnectWise Automate'
-title_meta: 'Autofix for Critical Machine Offline in ConnectWise Automate'
+title: 'CWM - Automate - ScreenConnect RMM+ - Offline Server AutoFix Solution'
+title_meta: 'CWM - Automate - ScreenConnect RMM+ - Offline Server AutoFix Solution'
 keywords: ['autofix', 'offline', 'server', 'agent', 'connectwise', 'monitor']
 description: 'This document outlines a solution for accurate offline server and critical agent reporting in ConnectWise Automate, including remediation steps when discrepancies between ScreenConnect and Automate are detected. It also details the implementation of associated scripts and monitors, ensuring efficient ticket management and automation.'
 tags: []
@@ -78,4 +78,6 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
        - 'Critical Workstation'
        - 'Server'
      - It is recommended that you use this alert template only if you are confident that the scripting engine should not get overloaded based on your current configuration OR if you are okay with accepting the potential risk if the scripting engine has a problem during an offline server issue.
+
+
 

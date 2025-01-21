@@ -1,7 +1,7 @@
 ---
 id: '03510207-4f32-44b9-960d-9cad25932e6b'
-title: 'Windows Server Backup Audit Solution'
-title_meta: 'Windows Server Backup Audit Solution'
+title: 'CWA Solution - Windows Server Backup'
+title_meta: 'CWA Solution - Windows Server Backup'
 keywords: ['windows', 'backup', 'audit', 'monitor', 'report', 'schedule', 'role']
 description: 'This document outlines a comprehensive solution for auditing Windows Server backups, including scripts, tables, and monitoring tools to ensure the backup process is functioning correctly and efficiently.'
 tags: ['backup', 'report', 'windows']
@@ -32,6 +32,8 @@ Additionally, schedule the remote monitor for the group to detect backup failure
 ## FAQ
 
 * (Add frequently asked questions here)
+
+
 
 
 

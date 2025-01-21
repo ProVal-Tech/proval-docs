@@ -1,7 +1,7 @@
 ---
 id: '2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c'
-title: 'Update PowerShell to Version 5'
-title_meta: 'Update PowerShell to Version 5'
+title: 'PowerShell Version Update'
+title_meta: 'PowerShell Version Update'
 keywords: ['update', 'powershell', 'version', 'windows', 'install']
 description: 'This document provides a detailed guide on updating PowerShell to version 5 on Windows devices. The script checks the current version and performs the update if necessary, while also detailing the conditions under which the update can be applied.'
 tags: ['software', 'update', 'windows']
@@ -165,5 +165,7 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
+
+
 
 

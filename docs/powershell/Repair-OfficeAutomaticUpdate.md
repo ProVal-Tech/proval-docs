@@ -1,7 +1,7 @@
 ---
 id: ps-repair-officeautomaticupdate
 title: 'Repair-OfficeAutomaticUpdate'
-title_meta: 'Repair-OfficeAutomaticUpdate Command'
+title_meta: 'Repair-OfficeAutomaticUpdate'
 keywords: ['repair', 'office365', 'update', 'automatic']
 description: 'Documentation for the Repair-OfficeAutomaticUpdate command to check and resolve common failure points in Office automatic updates.'
 tags: ['office365', 'update']
@@ -33,4 +33,6 @@ Performs a check and repair of Office 365.
 ## Output
 - `.\Repair-OfficeAutomaticUpdate-log.txt`
 - `.\Repair-OfficeAutomaticUpdate-error.txt`
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-disable-dotnet3
 title: 'Disable-DotNet3'
-title_meta: 'Disable-DotNet3 Command'
+title_meta: 'Disable-DotNet3'
 keywords: ['disable', 'dotnet', 'update', 'windows']
 description: 'Documentation for the Disable-DotNet3 command to disable the .NET 3.5 Windows feature after ensuring a newer version is installed.'
 tags: ['update', 'windows']
@@ -33,4 +33,6 @@ This command will ensure that a new version of .NET is installed and disable the
 
 - `.\Disable-DotNet3-log.txt`
 - `.\Disable-DotNet3-error.txt`
+
+
 

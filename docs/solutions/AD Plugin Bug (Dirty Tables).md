@@ -1,7 +1,7 @@
 ---
 id: '5d7a5b18-9aa8-4892-b70a-908dcfbe0fa2'
-title: 'CWA Active Directory Plugin Cleanup Workaround'
-title_meta: 'CWA Active Directory Plugin Cleanup Workaround'
+title: 'AD Plugin Bug (Dirty Tables)'
+title_meta: 'AD Plugin Bug (Dirty Tables)'
 keywords: ['cwa', 'active-directory', 'plugin', 'cleanup', 'workaround']
 description: 'This document provides a temporary workaround for a bug in the CWA Active Directory plugin, which fails to remove deleted user and computer entries from its tables. It outlines the necessary steps to schedule scripts to maintain accurate data in the plugin until the issue is resolved by ConnectWise.'
 tags: ['active-directory', 'cleanup', 'connectwise']
@@ -100,4 +100,6 @@ The script [CWM - Automate - Clean up AD plugin](<../cwa/scripts/Clean Up AD Plu
 ## FAQ
 
 *No FAQs available at this time.*
+
+
 

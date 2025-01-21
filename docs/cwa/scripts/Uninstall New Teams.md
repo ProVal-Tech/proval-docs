@@ -1,7 +1,7 @@
 ---
 id: 'dad7ec2a-4998-47f9-bcb2-c886d3bea833'
-title: 'Uninstall New Teams from Windows Machines'
-title_meta: 'Uninstall New Teams from Windows Machines'
+title: 'Uninstall New Teams'
+title_meta: 'Uninstall New Teams'
 keywords: ['uninstall', 'teams', 'windows', 'script', 'software']
 description: 'This document provides a script for uninstalling New Teams from Windows machines, specifically designed to work with logged-in users. It includes details on file paths, hashes, global parameters, output, and ticketing information for failures.'
 tags: ['software', 'uninstallation', 'windows']
@@ -47,4 +47,6 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N OF PC:** @biosver@
+
+
 

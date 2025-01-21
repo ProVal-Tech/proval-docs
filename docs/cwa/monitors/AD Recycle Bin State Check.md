@@ -1,7 +1,7 @@
 ---
 id: '5041d497-ae6c-4209-a338-60f1da396106'
-title: 'Remote PowerShell Monitor for AD Recycle Bin Status'
-title_meta: 'Remote PowerShell Monitor for AD Recycle Bin Status'
+title: 'AD Recycle Bin State Check'
+title_meta: 'AD Recycle Bin State Check'
 keywords: ['active-directory', 'monitor', 'recycle-bin', 'windows', 'dc']
 description: 'This document provides a detailed overview of a remote PowerShell monitor designed to detect whether the Active Directory Recycle Bin is enabled or disabled on Windows Domain Controller servers. It includes suggested configurations, dependencies, and implementation instructions.'
 tags: ['active-directory', 'recovery', 'windows']
@@ -35,4 +35,6 @@ Domain Controllers only.
 ## Implementation
 
 - [Import - Remote Monitor - AD Recycle Bin State Check](<./AD Recycle Bin State Check.md>)  
+
+
 

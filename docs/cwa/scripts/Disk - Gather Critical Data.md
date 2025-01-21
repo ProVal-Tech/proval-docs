@@ -1,7 +1,7 @@
 ---
 id: '687261c3-e6d7-46bc-84f6-506007d47142'
-title: 'Disk - Gather Critical Info'
-title_meta: 'Disk - Gather Critical Info'
+title: 'Disk - Gather Critical Data'
+title_meta: 'Disk - Gather Critical Data'
 keywords: ['disk', 'critical', 'info', 'data', 'failure', 'custom', 'table']
 description: 'This document outlines an Automate Script designed to retrieve data related to hard drive failures. It creates a custom table called plugin_proval_cdi_data and appends data from an agnostic script to that table. The document includes a sample run, dependencies, user parameters, process details, output, and frequently asked questions about the script.'
 tags: ['disk', 'performance', 'report', 'setup', 'windows']
@@ -102,4 +102,6 @@ It appends data from that agnostic script to the created table.
    
 4. **I updated this script to its newest version, and now the script fails every time.**
    - Please set the refresh table to 'Yes' on the first run after a version upgrade of this script.
+
+
 

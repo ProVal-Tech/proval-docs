@@ -1,7 +1,7 @@
 ---
 id: '6af95203-1e0a-4e2d-8e51-4a3f5a66eba7'
-title: 'Import and Link GPO Script'
-title_meta: 'Import and Link GPO Script for Active Directory'
+title: 'GPO Import Process'
+title_meta: 'GPO Import Process'
 keywords: ['gpo', 'import', 'link', 'active-directory', 'automation', 'backup']
 description: 'This document provides a comprehensive guide on importing a target Group Policy Object (GPO) and optionally linking it to the root of the domain. It includes sample runs, dependencies, variables, and the overall process involved in executing the script.'
 tags: ['active-directory', 'backup', 'windows']
@@ -53,4 +53,6 @@ Imports a target GPO and optionally links it to the root of the domain.
 ## Output
 
 - Script log
+
+
 

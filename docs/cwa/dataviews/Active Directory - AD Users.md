@@ -1,7 +1,7 @@
 ---
 id: 'be838d2c-2633-4df6-94b0-0dc5d4aef7dd'
-title: 'Active Directory User Report'
-title_meta: 'Active Directory User Report'
+title: 'Active Directory - AD Users'
+title_meta: 'Active Directory - AD Users'
 keywords: ['active-directory', 'user', 'report', 'account', 'email', 'security']
 description: 'This document provides a comprehensive overview of a dataview that displays all users associated with a domain, including their general information, account status, and security details. It outlines the columns available in the report, such as client, location, account name, email, and password expiration details, along with their significance.'
 tags: ['active-directory', 'email', 'report', 'security']
@@ -38,5 +38,7 @@ This dataview displays all users associated with a domain and general informatio
 | Distinguished Name                | Shows the distinguished name                                                                                                                          |
 | Password Expires                  | Similar to the Password Expiration Date column; however, it doesn't list the date. It just displays whether or not the password expires without a date |
 | Account Expiration                | Indicates whether the account is set to expire in Active Directory                                                                                   |
+
+
 
 

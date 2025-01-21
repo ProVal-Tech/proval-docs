@@ -1,7 +1,7 @@
 ---
 id: 'cf2a1fb5-3667-4c4a-b0c8-2a600f191980'
-title: 'Credit Cards Autofill Lockdown Status'
-title_meta: 'Credit Cards Autofill Lockdown Status'
+title: 'Chromium Browsers Credit Card Autofill Lockdown - Status'
+title_meta: 'Chromium Browsers Credit Card Autofill Lockdown - Status'
 keywords: ['credit', 'autofill', 'lockdown', 'browsers', 'status']
 description: 'This document provides an overview of the Credit Cards Autofill Lockdown Status for computers monitored by the Lockdown Chromium Browsers Credit Card Autofill remote monitor, detailing the effectiveness of the autofill deactivation process across installed Chromium browsers.'
 tags: ['browsers', 'security', 'windows']
@@ -34,4 +34,6 @@ The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the comput
 | Last Contact                    | Last Contact with RMM                                                                                                    |
 | Last Logged In User             | Last Logged In User                                                                                                      |
 | Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed. |
+
+
 

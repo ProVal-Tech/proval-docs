@@ -1,7 +1,7 @@
 ---
 id: 'ed03ad47-d4f8-4917-8ecc-0505b6172ece'
-title: 'OneDrive Sync Status Retrieval'
-title_meta: 'OneDrive Sync Status Retrieval'
+title: 'Get OneDrive Sync Status DV'
+title_meta: 'Get OneDrive Sync Status DV'
 keywords: ['onedrive', 'sync', 'status', 'quota', 'script', 'custom', 'table']
 description: 'This document provides an overview of a script that retrieves the OneDrive Sync Status and Quota Information, storing the data in a custom table. It includes details on sample runs, user parameters, output, and frequently asked questions.'
 tags: ['database', 'setup', 'windows']
@@ -44,4 +44,6 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
    **Answer:** Yes, you just need to whitelist the following hashes:  
    - C:/ProgramData/_Automation/Script/ODSync/ODSyncUtility.ps1: **A5EBD70394BA53B0D3A093FB47C94985**  
    - C:/ProgramData/_Automation/Script/ODSyncUtil/ODSyncFetch.ps1: **4626F936E0BABCE79F350E096671A19F**  
+
+
 

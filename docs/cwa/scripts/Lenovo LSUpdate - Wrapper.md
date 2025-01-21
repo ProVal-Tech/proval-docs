@@ -1,7 +1,7 @@
 ---
 id: '3405233d-ead9-4997-b685-c4a90432df3c'
-title: 'Install BIOS Updates for Lenovo Machines'
-title_meta: 'Install BIOS Updates for Lenovo Machines'
+title: 'Lenovo LSUpdate - Wrapper'
+title_meta: 'Lenovo LSUpdate - Wrapper'
 keywords: ['bios', 'lenovo', 'updates', 'firmware', 'driver']
 description: 'This document provides a guide on using the PowerShell module LSUClient to install available BIOS updates for Lenovo machines. It includes warnings about the risks of automating driver and firmware updates, sample runs, dependencies, variables, user parameters, and expected output.'
 tags: ['bios', 'firmware', 'lenovo', 'windows']
@@ -63,4 +63,6 @@ PowerShell Version 5+
 ## Output
 
 - Script logs
+
+
 

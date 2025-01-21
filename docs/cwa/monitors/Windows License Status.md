@@ -1,7 +1,7 @@
 ---
 id: '7c6678ef-12c5-4e21-a2d2-9fd84a21191e'
-title: 'Windows License Status Monitor'
-title_meta: 'Windows License Status Monitor'
+title: 'Windows License Status'
+title_meta: 'Windows License Status'
 keywords: ['windows', 'license', 'status', 'monitor', 'ciminstance', 'alert', 'ticketing']
 description: 'This document outlines the implementation details for a remote monitor that checks and returns the Windows License Status using CIMInstance. It includes dependencies, suggested targets, alert configurations, and ticketing information for failed license checks.'
 tags: ['ticketing', 'windows']
@@ -79,4 +79,6 @@ A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](<../sc
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
+
+
 

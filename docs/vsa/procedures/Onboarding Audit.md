@@ -1,7 +1,7 @@
 ---
 id: 'd68f1d82-f773-47f2-8c80-994614244646'
-title: 'Get VSA Audit Reports'
-title_meta: 'Get VSA Audit Reports - Kaseya VSA Documentation'
+title: 'Onboarding Audit'
+title_meta: 'Onboarding Audit'
 keywords: ['vsa', 'audit', 'reports', 'kaseya', 'automation']
 description: 'This document outlines the process for running the Get-VSAAuditReports script in Kaseya VSA, detailing the procedure log, dependencies, and output generated during execution. Users will learn how to gather information, provide parameters, and access the generated audit reports.'
 tags: ['kaseya', 'report', 'setup']
@@ -50,4 +50,6 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](https://proval.itglue.com/D
 
 - AP Log
 - getFiles: StackContent/Audits/#ClientName#/AuditReport.xlsx
+
+
 

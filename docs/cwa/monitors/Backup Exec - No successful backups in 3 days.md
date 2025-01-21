@@ -1,7 +1,7 @@
 ---
 id: 'abddfc3a-9f1b-4356-a62c-3475cdb32c96'
-title: 'Backup Exec - No Successful Backups in 3 Days'
-title_meta: 'Backup Exec - No Successful Backups in 3 Days'
+title: 'Backup Exec - No successful backups in 3 days'
+title_meta: 'Backup Exec - No successful backups in 3 days'
 keywords: ['backup', 'exec', 'alert', 'monitoring', 'ticketing']
 description: 'This document outlines the procedure to verify the occurrence of event ID 34112 within the last three days to ensure successful backup operations on machines with Symantec Backup Exec installed. It includes suggested alert styles, ticketing information, and import instructions for remote monitoring.'
 tags: ['backup', 'ticketing']
@@ -43,4 +43,6 @@ Backup Management > Backup Exec
 ## How to Import
 
 [Import - Remote Monitor - Backup Exec - No successful backups in 3 days](<./Backup Exec - No successful backups in 3 days.md>)  
+
+
 

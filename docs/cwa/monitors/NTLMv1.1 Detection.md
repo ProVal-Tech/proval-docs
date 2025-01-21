@@ -1,7 +1,7 @@
 ---
 id: '8e107867-6d8d-4b6c-aa10-20f8da59fdca'
-title: 'Check NTLMv1.1 Status on Managed Windows Computers'
-title_meta: 'Check NTLMv1.1 Status on Managed Windows Computers'
+title: 'NTLMv1.1 Detection'
+title_meta: 'NTLMv1.1 Detection'
 keywords: ['ntlm', 'status', 'windows', 'monitor', 'security']
 description: 'This document provides a detailed guide on checking whether NTLMv1.1 is enabled on managed Windows machines. It includes suggested configurations for alerts, dependencies, and import instructions for remote monitoring.'
 tags: ['security', 'windows']
@@ -36,4 +36,6 @@ Managed Windows Computers
 ## How to Import
 
 [Import - Remote Monitor - NTLMv1.1 Detection](<./NTLMv1.1 Detection.md>)
+
+
 

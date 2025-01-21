@@ -1,7 +1,7 @@
 ---
 id: '3f819775-4c68-4511-ad44-d97a37ca3869'
-title: 'Update Windows 10 with Reboot Options'
-title_meta: 'Update Windows 10 with Reboot Options'
+title: 'Windows 10 - Update'
+title_meta: 'Windows 10 - Update'
 keywords: ['windows', 'update', 'reboot', 'notification', 'log']
 description: 'This document provides a comprehensive guide on updating Windows 10 to the latest release, including options for rebooting or aborting the reboot process. It outlines important notes regarding user notifications and potential data loss in the C://windows directory, as well as parameters for running the update script.'
 tags: ['security', 'update', 'windows']
@@ -56,4 +56,6 @@ Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows
 ## Output
 
 - Script log
+
+
 

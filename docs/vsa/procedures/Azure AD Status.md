@@ -1,7 +1,7 @@
 ---
 id: 'ee5b1d9e-eabf-4be4-ad8c-6192b5223cbb'
-title: 'Azure AD Status Check Procedure'
-title_meta: 'Azure AD Status Check Procedure'
+title: 'Azure AD Status'
+title_meta: 'Azure AD Status'
 keywords: ['azure', 'ad', 'status', 'check', 'procedure', 'machine']
 description: 'This document outlines a procedure to check if a machine is Azure AD joined or registered. It details the logging of actions taken during the process and how to update custom fields based on the machine Azure AD status. The procedure is essential for filtering machines in views based on their Azure AD status.'
 tags: ['azure', 'logging']
@@ -46,5 +46,7 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM 
 ## Output
 
 Procedure log files and custom fields.
+
+
 
 

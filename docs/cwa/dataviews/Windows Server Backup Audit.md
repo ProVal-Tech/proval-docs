@@ -1,7 +1,7 @@
 ---
 id: '070f3e8b-1365-4347-9fcb-43aad1d09d41'
-title: 'Windows Server Backup Report'
-title_meta: 'Windows Server Backup Report - Comprehensive Overview'
+title: 'Windows Server Backup Audit'
+title_meta: 'Windows Server Backup Audit'
 keywords: ['windows', 'backup', 'report', 'sql', 'audit', 'performance']
 description: 'This document provides a detailed overview of the Windows Server Backup report, showcasing how backups are performed on a scheduled basis. It includes dependencies, column descriptions, and SQL representation for querying backup status and details.'
 tags: ['backup', 'performance', 'report', 'sql', 'windows']
@@ -81,4 +81,6 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
+
+
 

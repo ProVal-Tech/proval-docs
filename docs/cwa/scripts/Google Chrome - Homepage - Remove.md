@@ -1,7 +1,7 @@
 ---
 id: '7fc15e41-8b1d-485d-808f-518893b41686'
-title: 'Remove Chromium Homepage Configuration'
-title_meta: 'Remove Chromium Homepage Configuration in ConnectWise Automate'
+title: 'Google Chrome - Homepage - Remove'
+title_meta: 'Google Chrome - Homepage - Remove'
 keywords: ['automate', 'chrome', 'configuration', 'registry', 'homepage']
 description: 'This document outlines an Automate implementation of a script designed to remove the registry policy that enforces a specific homepage in Google Chrome. It includes a sample run, dependencies, and output details.'
 tags: ['chrome', 'software', 'uninstallation']
@@ -24,4 +24,6 @@ This document describes an Automate implementation of the [SWM - Software Config
 ## Output
 
 - Script Logs
+
+
 

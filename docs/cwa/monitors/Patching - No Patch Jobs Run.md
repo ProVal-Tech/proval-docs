@@ -1,7 +1,7 @@
 ---
 id: '6d42adc8-2e3d-4642-9471-327ef96bae1f'
-title: 'Monitor Patching Status in ConnectWise Automate'
-title_meta: 'Monitor Patching Status in ConnectWise Automate'
+title: 'Patching - No Patch Jobs Run'
+title_meta: 'Patching - No Patch Jobs Run'
 keywords: ['patching', 'monitor', 'connectwise', 'automate', 'status']
 description: 'This document outlines a monitor designed to identify machines that are patching via ConnectWise Automate but lack patch job information in the system. It emphasizes the importance of reviewing these devices to ensure proper patching and maintenance.'
 tags: ['connectwise', 'patching']
@@ -20,4 +20,6 @@ Automate must be upgraded to the "new" patch manager.
 ## Target
 
 Global - This monitor should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by ConnectWise Automate.
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '8ace140f-74d7-49cb-b9aa-90cf098629fc'
-title: 'Environment Setup Verification'
-title_meta: 'Environment Setup Verification'
+title: 'PowerShell Environment Setup Verification'
+title_meta: 'PowerShell Environment Setup Verification'
 keywords: ['environment', 'verification', 'uac', 'admin', 'powershell', 'path', 'version']
 description: 'This document outlines a script that checks for necessary environmental conditions before executing other scripts. It verifies Admin Approval Mode, UAC settings, environmental path variables, and PowerShell version to ensure that the target machine meets the required criteria for successful script execution.'
 tags: ['performance', 'security', 'setup', 'windows']
@@ -96,4 +96,6 @@ Environmental tests failed for the following issues -
 
 UAC Status
 ```
+
+
 

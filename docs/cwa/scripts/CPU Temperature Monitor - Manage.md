@@ -1,7 +1,7 @@
 ---
 id: '56c1260c-a689-45e9-a226-49bf31444750'
-title: 'Client Script for CPU Temperature Monitor Management'
-title_meta: 'Client Script for CPU Temperature Monitor Management'
+title: 'CPU Temperature Monitor - Manage'
+title_meta: 'CPU Temperature Monitor - Manage'
 keywords: ['client', 'script', 'cpu', 'temperature', 'monitor', 'management']
 description: 'This document provides an overview of a client script that manages remote monitors for CPU temperature monitoring. It ensures that installed monitor sets align with the configuration in the EDF and System properties, removing or updating monitors as necessary.'
 tags: ['software', 'update']
@@ -29,4 +29,6 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 
 - [EPM - Sensors - Script - CPU Temperature Monitor - Create](<./CPU Temperature Monitor - Create.md>)
 - [EPM - Sensors - Remote Monitor - CPU Temperature Monitoring Process](<../monitors/CPU Temperature Monitoring Process.md>)
+
+
 

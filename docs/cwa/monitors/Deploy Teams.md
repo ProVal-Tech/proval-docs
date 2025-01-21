@@ -1,7 +1,7 @@
 ---
 id: '5cc62311-8109-43b8-af64-e0aac4292d19'
-title: 'Configure BGInfo Script Implementation'
-title_meta: 'Guide to Implementing BGInfo Script in ConnectWise Automate'
+title: 'Deploy Teams'
+title_meta: 'Deploy Teams'
 keywords: ['bginfo', 'script', 'connectwise', 'monitoring', 'alert']
 description: 'This document provides a detailed guide on how to implement the BGInfo script within ConnectWise Automate. It includes steps for importing the script, creating alert templates, and applying the script to specific groups using SQL queries.'
 tags: ['connectwise', 'database']
@@ -1007,4 +1007,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'aa50a67f-a0b6-4b97-8e89-18b0155265cc'
-title: 'Group Policy Redirection Audit Script'
-title_meta: 'Group Policy Redirection Audit Script for Effective Data Collection'
+title: 'Audit - GPO Redirection Settings'
+title_meta: 'Audit - GPO Redirection Settings'
 keywords: ['audit', 'gpo', 'redirection', 'json', 'sql', 'variables', 'power', 'settings']
 description: 'This document outlines a script designed to audit registry settings related to group policy redirection. It populates a custom table with the collected data, ensuring effective data management and reporting. The script includes detailed dependencies, variable definitions, and a comprehensive process for execution and output logging.'
 tags: ['database', 'report', 'security', 'windows']
@@ -52,4 +52,6 @@ This script will audit the registry settings associated with any group policy re
 ## Output
 
 - Script log
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'e1e20509-bc51-4b66-8653-d3ab91baad47'
-title: 'Disable NTLMv1.1 Detection and Remediation'
-title_meta: 'Disable NTLMv1.1 Detection and Remediation'
+title: 'NTLMv1.1'
+title_meta: 'NTLMv1.1'
 keywords: ['ntlm', 'detection', 'remediation', 'security', 'protocol']
 description: 'This document outlines the process to detect and disable the NTLMv1.1 protocol, including associated content and implementation steps to ensure proper security measures are in place.'
 tags: ['security']
@@ -31,4 +31,6 @@ The goal of this solution is to detect and disable NTLMv1.1.
 - Import - [Script - Disable NTLMv1.1](<../cwa/scripts/Disable NTLMv1.1.md>).
   - This script can be used as an auto-fix with the [Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>) or can also be executed manually.
   - If the auto-fix is needed, import the alert template: `△ Custom - Autofix - Disable NTLMv1.1`.
+
+
 

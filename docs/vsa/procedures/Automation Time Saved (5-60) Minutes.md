@@ -1,7 +1,7 @@
 ---
 id: '6d0aca76-28b6-4a21-9617-75ffd5868977'
-title: 'Incremental Time Values for CF Update Script'
-title_meta: 'Incremental Time Values for CF Update Script'
+title: 'Automation Time Saved (5-60) Minutes'
+title_meta: 'Automation Time Saved (5-60) Minutes'
 keywords: ['incremental', 'cf', 'update', 'script', 'automation', 'tracking']
 description: 'This document outlines the use of Agent Procedures (APs) with incremental time values that call the main CF Update Script, providing ease of scheduling within other content. It includes an example agent procedure log and details on dependencies and process flow.'
 tags: []
@@ -44,4 +44,6 @@ Uses Global Variables to set incremental values to the Automation Tracking CF.
 ## Output
 
 N/A
+
+
 

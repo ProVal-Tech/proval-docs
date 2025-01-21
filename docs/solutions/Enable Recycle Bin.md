@@ -1,7 +1,7 @@
 ---
 id: '7fe38bc2-2ca2-444e-899b-15f41201ed06'
-title: 'Enable AD Recycle Bin on Domain Controllers'
-title_meta: 'Enable AD Recycle Bin on Domain Controllers'
+title: 'Enable Recycle Bin'
+title_meta: 'Enable Recycle Bin'
 keywords: ['active-directory', 'recycle', 'bin', 'domain', 'controllers', 'monitor', 'script']
 description: 'This document outlines the steps to enable the Active Directory Recycle Bin feature on Domain Controllers, including associated roles, scripts, and monitoring processes. It provides detailed implementation instructions and links to relevant resources.'
 tags: ['active-directory']
@@ -45,4 +45,6 @@ The purpose of this solution is to enable the AD Recycle Bin on Domain Controlle
    - Import the monitor [AD Recycle Bin State Check](<../cwa/monitors/AD Recycle Bin State Check.md>) using the fourth step in the same document. Run the provided SQL in the RAWSQL monitor.
    - The [AD Recycle Bin State Check](<../cwa/monitors/AD Recycle Bin State Check.md>) monitor will be automatically created in the "Domain Controllers" group, limited to the search "DC without Recycle Bin," and with the alert template `△ Custom - Execute Script - AD - Enable AD Recycle Bin`.
    - Ensure that the alert template is running the [AD - Enable AD Recycle Bin](<../cwa/scripts/AD - Enable AD Recycle Bin.md>) script.
+
+
 

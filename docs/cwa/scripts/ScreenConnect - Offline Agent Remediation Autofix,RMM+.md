@@ -1,7 +1,7 @@
 ---
 id: 'ab3118dc-bc06-4443-9af0-78ccfb594844'
-title: 'Reinstall Automate Agents Using RMM+'
-title_meta: 'Reinstall Automate Agents Using RMM+'
+title: 'ScreenConnect - Offline Agent Remediation Autofix,RMM+'
+title_meta: 'ScreenConnect - Offline Agent Remediation Autofix,RMM+'
 keywords: ['automate', 'agents', 'rmm', 'ticket', 'service', 'monitoring', 'offline', 'control']
 description: 'This document provides a detailed overview of a script that utilizes the RMM+ extension in CW Control to reinstall Automate Agents. It addresses scenarios where agents are online in Control but offline in Automate, and includes functionality for creating tickets for offline servers or broken agents. The script aims to enhance efficiency by automating the agent restart process and ticket creation for better monitoring and management.'
 tags: []
@@ -90,4 +90,6 @@ It will clear the `AgentStatus` script state and will finish any open offline se
 - Script Log
 - Script State
 - Ticket
+
+
 

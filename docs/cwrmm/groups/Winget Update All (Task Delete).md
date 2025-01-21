@@ -1,7 +1,7 @@
 ---
 id: 'a8ce29e2-502c-4bb8-a959-c7eb59e38808'
-title: 'Winget Update All Task Deletion for Windows 10 and 11'
-title_meta: 'Winget Update All Task Deletion for Windows 10 and 11'
+title: 'Winget Update All (Task Delete)'
+title_meta: 'Winget Update All (Task Delete)'
 keywords: ['winget', 'task', 'windows', 'deletion', 'group']
 description: 'This document outlines the process for identifying Windows 10 and 11 computers with scheduled Winget Update All tasks and removing them. It includes detailed steps for creating a dynamic group in ConnectWise RMM to manage these tasks effectively.'
 tags: ['windows']
@@ -101,4 +101,6 @@ This document identifies Windows 10 and 11 computers with the presence of Winget
     **Condition:** `OS` `Contains any of` `Microsoft Windows 10 and 11`
 
 12. Click the `Save` button
+
+
 

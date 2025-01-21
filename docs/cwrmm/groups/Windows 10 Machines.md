@@ -1,7 +1,7 @@
 ---
 id: '8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a'
-title: 'Creating a Dynamic Group for Windows 10 Machines'
-title_meta: 'Creating a Dynamic Group for Windows 10 Machines'
+title: 'Windows 10 Machines'
+title_meta: 'Windows 10 Machines'
 keywords: ['windows', 'group', 'dynamic', 'machines', 'criteria']
 description: 'This document provides a step-by-step guide on how to create a dynamic group for Windows 10 machines within the Kaseya VSA platform. It includes navigation instructions, setting group criteria, and saving the group.'
 tags: ['setup', 'windows']
@@ -46,4 +46,6 @@ This document outlines the process for creating a dynamic group specifically for
 
 ![Image](../../../static/img/Windows-10-Machines/image_11.png)  
 ![Image](../../../static/img/Windows-10-Machines/image_12.png)
+
+
 

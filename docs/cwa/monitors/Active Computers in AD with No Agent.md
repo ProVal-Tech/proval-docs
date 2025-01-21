@@ -1,7 +1,7 @@
 ---
 id: '29eeae8f-d854-4234-82c5-28b1bbee0fc7'
-title: 'Detection of Missing Automate Agents'
-title_meta: 'Detection of Missing Automate Agents'
+title: 'Active Computers in AD with No Agent'
+title_meta: 'Active Computers in AD with No Agent'
 keywords: ['automate', 'agents', 'monitoring', 'ticketing', 'exclusions']
 description: 'This document outlines the process for generating client-level tickets that report on domain-joined computers lacking the Automate agent. It includes details on the necessary configurations, SQL queries for creating exclusion fields, and the format for ticket alerts regarding missing agents.'
 tags: ['active-directory', 'ticketing']
@@ -65,4 +65,6 @@ Last Logon: <Last Logon Date>
 
 Note: The list of machine names, separated by commas, can be configured within the client-level Extra Data Field (EDF) labeled "Excluded Missing Agent Computers" to exclude those machines from this monitoring process.
 ```
+
+
 

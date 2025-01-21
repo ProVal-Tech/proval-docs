@@ -1,7 +1,7 @@
 ---
 id: 'a89ef3e3-2a5e-4b46-9286-1a2cf054011a'
-title: 'Unregister Edge Extension'
-title_meta: 'Unregister Edge Extension - Remove Extension Enforcement in Microsoft Edge'
+title: 'Microsoft Edge - Remove Extension'
+title_meta: 'Microsoft Edge - Remove Extension'
 keywords: ['edge', 'extension', 'unregister', 'chromium', 'windows']
 description: 'This document outlines a script designed to remove the enforcement of the installation of specified extensions in the Chromium version of the Microsoft Edge browser. The process includes details on dependencies, variables, and the overall operation of the script, ensuring users can effectively manage their browser extensions.'
 tags: ['security', 'software', 'update', 'windows']
@@ -68,4 +68,6 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-EdgeExtension-log.txt
 ```
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: 'a94dc919-d39c-4787-a585-ae2dc9456d12'
-title: 'Enable Screensaver Scheduled Task'
-title_meta: 'Enable Screensaver Scheduled Task'
+title: 'Screensaver - Enable Mystify Globals'
+title_meta: 'Screensaver - Enable Mystify Globals'
 keywords: ['screensaver', 'scheduled', 'task', 'login', 'timeout']
 description: 'This document provides a detailed overview of a PowerShell script that creates a scheduled task to enable the screensaver for a specified number of seconds for all users. The settings will be applied at the next logon, ensuring a consistent user experience across the system.'
 tags: ['performance', 'security', 'setup', 'windows']
@@ -33,4 +33,6 @@ The script runs a PowerShell script to create a scheduled task that enables the 
 ## Output
 
 - Script log
+
+
 

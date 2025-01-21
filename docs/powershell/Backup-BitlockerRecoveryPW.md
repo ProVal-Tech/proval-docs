@@ -1,7 +1,7 @@
 ---
 id: ps-backup-bitlockerrecoverypw
 title: 'Backup-BitlockerRecoveryPW'
-title_meta: 'Backup-BitlockerRecoveryPW Command'
+title_meta: 'Backup-BitlockerRecoveryPW'
 keywords: ['bitlocker', 'recovery', 'password', 'backup']
 description: 'Documentation for the Backup-BitlockerRecoveryPW command to backup BitLocker recovery passwords.'
 tags: ['active-directory', 'backup', 'recovery']
@@ -30,4 +30,6 @@ Attempts to back up any Recovery Password type key protectors to Active Director
 - `Microsoft.BitLocker.Structures.BitLockerVolume`
 - `.\Backup-BitlockerRecoveryPW-log.txt`
 - `.\Backup-BitlockerRecoveryPW-error.txt`
+
+
 

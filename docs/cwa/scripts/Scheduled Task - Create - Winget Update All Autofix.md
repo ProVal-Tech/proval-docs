@@ -1,7 +1,7 @@
 ---
 id: '4bb08610-f80b-4c5a-8e13-b6db095484c1'
-title: 'Winget Update Scheduled Tasks'
-title_meta: 'Winget Update Scheduled Tasks for Windows 10 and 11'
+title: 'Scheduled Task - Create - Winget Update All Autofix'
+title_meta: 'Scheduled Task - Create - Winget Update All Autofix'
 keywords: ['winget', 'scheduled', 'tasks', 'update', 'windows']
 description: 'This document provides an overview of a script that establishes scheduled tasks for Winget updates on Windows 10 and 11. It details the parameters, system properties, and the behavior of user-level scheduled tasks, including how to enable and configure them.'
 tags: ['update', 'windows']
@@ -77,4 +77,6 @@ When the `Winget Update All [Logged on User]` task is enabled, a command window 
 
 - Script log
 - Extra Data Field
+
+
 

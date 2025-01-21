@@ -1,7 +1,7 @@
 ---
 id: '20f500f3-77da-48a8-aeb2-4661f1865421'
-title: 'Audit Active Directory Group Changes'
-title_meta: 'Audit Active Directory Group Changes'
+title: 'AD - Audit Group Members'
+title_meta: 'AD - Audit Group Members'
 keywords: ['active-directory', 'audit', 'changes', 'ticketing', 'log']
 description: 'This document describes a script that audits a specified Active Directory group for changes since the last execution. It optionally creates a ticket if changes are detected, facilitating better tracking and management of AD group modifications.'
 tags: ['active-directory', 'ticketing']
@@ -48,4 +48,6 @@ If [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) return
 - Script Log
 - Log Files
 - Ticketing
+
+
 

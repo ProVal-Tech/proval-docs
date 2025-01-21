@@ -1,7 +1,7 @@
 ---
 id: '343654e4-9263-4fec-87c1-3c3401a94e95'
-title: 'SMBv1 Audit and Autofix Solution'
-title_meta: 'SMBv1 Audit and Autofix Solution'
+title: 'SMBv1AuditAutofix'
+title_meta: 'SMBv1AuditAutofix'
 keywords: ['smbv1', 'audit', 'autofix', 'monitor', 'ticketing']
 description: 'This document outlines the SMBv1 audit and autofix solution based on the EDF, including associated scripts, monitors, and implementation steps. It provides guidance on removing old solutions, importing new content, and configuring monitoring for SMBv1 vulnerabilities in client systems.'
 tags: ['ticketing', 'vulnerability', 'windows']
@@ -101,4 +101,6 @@ Optionally, if the client wants, we can enable ticketing to monitor the SMB1 tra
 ![Traffic Detection Ticketing](../../static/img/SMBv1AuditAutofix/image_4.png)
 
 Note: This should only be implemented if the consultant approves it.
+
+
 

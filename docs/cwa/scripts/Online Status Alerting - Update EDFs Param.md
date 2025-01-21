@@ -1,7 +1,7 @@
 ---
 id: '79f11a31-7ae1-4e12-a9d7-581e809aaa2e'
-title: 'Online Alert Notification Script'
-title_meta: 'Online Alert Notification Script for ConnectWise Automate'
+title: 'Online Status Alerting - Update EDFs Param'
+title_meta: 'Online Status Alerting - Update EDFs Param'
 keywords: ['alert', 'notification', 'ticket', 'email', 'script', 'machine', 'status', 'offline', 'online']
 description: 'This document describes a script that can be used to manage online alert notifications for offline computers in ConnectWise Automate. It details the user parameters required to customize the alert notifications, including ticket IDs, email recipients, and scripts to run when the machine comes back online.'
 tags: ['email']
@@ -46,4 +46,6 @@ The parameters provided will be filled into their respective EDF values:
 | Email           | Online Alert E-mail        |
 | ScriptIDs       | Online Alert Scripts       |
 | AfterNextReboot | Online Alert Restarted Machine |
+
+
 

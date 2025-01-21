@@ -1,7 +1,7 @@
 ---
 id: '587dab37-7b57-467f-bcde-b112783f5cf1'
-title: 'Manual Script Execution Monitor'
-title_meta: 'Manual Script Execution Monitor'
+title: 'Manual Script Schedule - Status Email'
+title_meta: 'Manual Script Schedule - Status Email'
 keywords: ['monitor', 'execution', 'alert', 'email', 'status']
 description: 'This document provides an overview of a monitor designed to detect manual script execution by the LT User, along with its dependencies, target, and alert template for email notifications.'
 tags: ['email']
@@ -45,4 +45,6 @@ Here, %RESULT% contains the script name: "Scriptname" ran on computer "Computern
 **Email Example:**
 
 ![Email Example](../../../static/img/Manual-Script-Schedule---Status-Email/image_1.png)
+
+
 

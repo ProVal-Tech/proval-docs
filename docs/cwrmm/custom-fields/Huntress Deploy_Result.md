@@ -1,7 +1,7 @@
 ---
 id: '822e9dc0-d455-4706-8482-175b85dbd491'
-title: 'CW RMM - Task - Huntress Agent (INSTALL)'
-title_meta: 'CW RMM - Task - Huntress Agent (INSTALL)'
+title: 'Huntress Deploy_Result'
+title_meta: 'Huntress Deploy_Result'
 keywords: ['huntress', 'install', 'task', 'custom', 'field', 'failure']
 description: 'This document outlines the CW RMM task for installing the Huntress Agent, detailing the custom field used to track installation failures. It provides guidance on creating the custom field necessary for monitoring and ticket creation based on installation results.'
 tags: ['security', 'software']
@@ -24,4 +24,6 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](<../tasks/Huntress Agent (INSTA
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
+
+
 

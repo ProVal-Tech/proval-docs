@@ -1,7 +1,7 @@
 ---
 id: '6c3d68e8-61cd-4e74-a13f-d6be1516feec'
-title: 'Network Detective Procedures'
-title_meta: 'Network Detective Procedures'
+title: 'Network Detective Workstation  Server'
+title_meta: 'Network Detective Workstation  Server'
 keywords: ['network', 'detective', 'scan', 'results', 'procedure', 'admin']
 description: 'This document outlines the procedures for deploying the Network Detective tool to workstations or servers, executing scans, and logging the results for further analysis. It includes detailed steps, dependencies, and expected outcomes.'
 tags: ['installation', 'networking', 'setup', 'windows']
@@ -1722,5 +1722,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
     }
 ]
 ```
+
+
 
 

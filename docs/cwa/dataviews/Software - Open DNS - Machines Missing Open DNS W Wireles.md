@@ -1,7 +1,7 @@
 ---
 id: 'f943b29e-998e-48be-8327-c03ee9c0818e'
-title: 'Open DNS Dataview for Endpoint Management'
-title_meta: 'Open DNS Dataview for Endpoint Management'
+title: 'Software - Open DNS - Machines Missing Open DNS W Wireles'
+title_meta: 'Software - Open DNS - Machines Missing Open DNS W Wireles'
 keywords: ['open', 'dns', 'dataview', 'endpoint', 'management']
 description: 'This document provides a dataview to identify machines with Open DNS (Umbrella Agent) installed and checks for the presence of a wireless network card. It aims to help in finding devices unnecessarily using Open DNS when configured at the router/firewall level. By identifying endpoints without wireless capabilities, organizations can reduce costs associated with the Open DNS solution.'
 tags: ['networking', 'report', 'security', 'software', 'windows']
@@ -28,4 +28,6 @@ None
 | Machine Type   | The type of machine: Server | Workstation | Mac | Linux                                          |
 | Wireless Card   | Checks if any of the cards connected to the endpoint are wireless compatible                   |
 | Umbrella Agent | Indicates if the Open DNS/Umbrella Agent is installed on the endpoint                          |
+
+
 

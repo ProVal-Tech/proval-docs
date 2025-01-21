@@ -1,7 +1,7 @@
 ---
 id: '85f52c7c-84bc-488f-a4de-d3122fec1f42'
-title: 'GPO Links Information'
-title_meta: 'GPO Links Information'
+title: 'plugin_proval_ad_gpolinks'
+title_meta: 'plugin_proval_ad_gpolinks'
 keywords: ['gpo', 'links', 'audit', 'information', 'proval']
 description: 'This document provides detailed information about Group Policy Object (GPO) links as retrieved from the Group Policy Audit script. It outlines the dependencies, table structure, and the meaning of each column in the data output.'
 tags: ['database', 'gpo']
@@ -29,4 +29,6 @@ This document displays detailed information about the GPO links per GPO from the
 | Path         | VARCHAR | The OU path of the link.                                          |
 | Enforced      | VARCHAR | True or False depending on whether the link is being enforced.   |
 | LinkEnabled   | VARCHAR | True or False depending on whether the link is enabled.          |
+
+
 

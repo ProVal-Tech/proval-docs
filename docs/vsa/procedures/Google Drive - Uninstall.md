@@ -1,7 +1,7 @@
 ---
 id: '9979a839-d375-462c-ae0c-d28038fe5239'
-title: 'Google Drive Uninstallation Procedure'
-title_meta: 'Google Drive Uninstallation Procedure'
+title: 'Google Drive - Uninstall'
+title_meta: 'Google Drive - Uninstall'
 keywords: ['google', 'drive', 'uninstall', 'endpoint', 'procedure']
 description: 'This document outlines the procedure for removing Google Drive from an endpoint, including a detailed example of the agent procedure log and the steps involved in the uninstallation process.'
 tags: ['software', 'uninstallation', 'windows']
@@ -34,5 +34,7 @@ This procedure outlines the steps to remove Google Drive from the endpoint.
 ## Output
 
 Agent Log
+
+
 
 

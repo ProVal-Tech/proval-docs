@@ -116,3 +116,5 @@ This is a client-level script and should be scheduled to run regularly to mainta
 The script log represents a log file. This is a representation of the expected log file.  
 ![Expected Log File Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_6.png)
 
+
+

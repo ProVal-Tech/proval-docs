@@ -1,7 +1,7 @@
 ---
 id: '3f080b6a-ea0b-43de-a4b0-0595629b7a9c'
-title: 'Rapid Fire Compliance Management Deployment'
-title_meta: 'Rapid Fire Compliance Management Deployment'
+title: 'Deploy Rapid Fire Compliance Management'
+title_meta: 'Deploy Rapid Fire Compliance Management'
 keywords: ['deployment', 'compliance', 'management', 'script', 'installation', 'netframework', 'ticketing']
 description: 'This document provides a comprehensive overview of the script used to deploy the Rapid Fire compliance management application, including prerequisites, variables, user parameters, and ticketing integration.'
 tags: ['compliance', 'installation', 'netframework', 'software', 'ticketing']
@@ -62,4 +62,6 @@ Failed to install Compliance Management Agent on %computername% at %clientname%.
 ## Output
 
 - Script log
+
+
 

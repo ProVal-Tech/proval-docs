@@ -1,7 +1,7 @@
 ---
 id: 'f1a8a745-3c9f-4505-b17e-778e3399d7aa'
-title: 'Internal Monitor Audit'
-title_meta: 'Internal Monitor Audit'
+title: 'Admin - Broken Monitor Audit'
+title_meta: 'Admin - Broken Monitor Audit'
 keywords: ['audit', 'monitor', 'group', 'sql', 'alert']
 description: 'This document provides an overview of the dataview used for auditing internal monitors, highlighting issues with broken group mappings, and detailing the relevant columns and their descriptions.'
 tags: ['sql']
@@ -24,4 +24,6 @@ The dataview helps to audit the internal monitors where their group mapping is b
 | Group Applied | Displays the group name on which the monitor is applied. |
 | Notes        | Displays the notes mentioned about the group.      |
 | AlertAction  | Displays the ID of the applied alert template.     |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: ps-uninstall-liveconnect
 title: 'Uninstall-LiveConnect'
-title_meta: 'Uninstall-LiveConnect Command'
+title_meta: 'Uninstall-LiveConnect'
 keywords: ['uninstall', 'liveconnect', 'remove', 'cleanup']
 description: 'Documentation for the Uninstall-LiveConnect command to uninstall LiveConnect and remove associated directories.'
 tags: ['software', 'uninstallation']
@@ -30,4 +30,6 @@ The script generates the following output files to log the uninstallation proces
 - `.\\Uninstall-LiveConnect-log.txt`: Contains detailed logs of the uninstallation process.
 - `.\\Uninstall-LiveConnect-data.txt`: Contains data related to the uninstallation process.
 - `.\\Uninstall-LiveConnect-error.txt`: Contains any error messages encountered during the uninstallation process.
+
+
 

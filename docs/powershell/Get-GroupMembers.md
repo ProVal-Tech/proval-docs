@@ -1,7 +1,7 @@
 ---
 id: ps-get-groupmembers
 title: 'Get-GroupMembers'
-title_meta: 'Get-GroupMembers Command'
+title_meta: 'Get-GroupMembers'
 keywords: ['groups', 'members', 'local', 'ad', 'azuread']
 description: 'Documentation for the Get-GroupMembers command to return all groups and their members for a local system, Active Directory, or Azure Active Directory.'
 tags: ['active-directory', 'security']
@@ -48,4 +48,6 @@ This returns a system object of all Azure Active Directory groups and all member
 ```
 Group     /      Members
 ```
+
+
 

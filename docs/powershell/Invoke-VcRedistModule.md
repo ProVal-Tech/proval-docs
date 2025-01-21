@@ -1,7 +1,7 @@
 ---
 id: ps-invoke-vcredistmodule
 title: 'Invoke-VcRedistModule'
-title_meta: 'Invoke-VcRedistModule Command'
+title_meta: 'Invoke-VcRedistModule'
 keywords: ['vcredist', 'visualc++', 'redistributable', 'installation']
 description: 'Documentation for the Invoke-VcRedistModule command to manage the installation, uninstallation, and listing of Visual C++ Redistributables.'
 tags: ['installation', 'software', 'uninstallation']
@@ -101,4 +101,6 @@ Uninstalls unsupported redistributables and installs supported ones.
 ## Output
 - .\Invoke-VcRedistModule-log.txt
 - .\Invoke-VcRedistModule-Error.txt
+
+
 

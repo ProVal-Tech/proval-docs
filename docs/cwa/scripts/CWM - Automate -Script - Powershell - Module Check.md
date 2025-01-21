@@ -1,7 +1,7 @@
 ---
 id: '2ae05c30-5cef-42be-8c8a-c39928d85321'
-title: 'Command Test Script in ConnectWise Automate'
-title_meta: 'Command Test Script in ConnectWise Automate'
+title: 'CWM - Automate -Script - Powershell - Module Check'
+title_meta: 'CWM - Automate -Script - Powershell - Module Check'
 keywords: ['connectwise', 'script', 'command', 'endpoint', 'test']
 description: 'This document outlines a function script in ConnectWise Automate designed to test a specified command on an endpoint. If the command is not recognized, the script will fail, ensuring that only valid commands are executed. The document includes a summary, sample run, variable documentation, user parameters, and output details.'
 tags: ['connectwise']
@@ -34,4 +34,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - `failstatus` will be false if this script fails.
+
+
 

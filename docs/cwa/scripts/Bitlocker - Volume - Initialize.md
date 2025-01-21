@@ -1,7 +1,7 @@
 ---
 id: '759a5a88-17ef-42e0-9145-4760aff7a3c9'
-title: 'Encrypt Drive with Bitlocker'
-title_meta: 'Encrypt Drive with Bitlocker'
+title: 'Bitlocker - Volume - Initialize'
+title_meta: 'Bitlocker - Volume - Initialize'
 keywords: ['bitlocker', 'encryption', 'drive', 'tpm', 'recovery']
 description: 'This document provides a detailed guide on how to encrypt a drive using Bitlocker disk encryption. It includes sample runs, global and user parameters, and the process for selecting key protector types. Important dependencies and prerequisites are also outlined to ensure successful encryption.'
 tags: ['disk-encryption', 'encryption', 'security', 'setup', 'windows']
@@ -89,4 +89,6 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
+
+
 

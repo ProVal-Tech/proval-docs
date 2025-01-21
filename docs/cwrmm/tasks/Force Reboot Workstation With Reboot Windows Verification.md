@@ -1,7 +1,7 @@
 ---
 id: 'd2983497-492e-4812-ba6c-09ac8998c7b3'
-title: 'Force Workstation Reboot With Reboot Windows Verification'
-title_meta: 'Force Workstation Reboot With Reboot Windows Verification'
+title: 'Force Reboot Workstation With Reboot Windows Verification'
+title_meta: 'Force Reboot Workstation With Reboot Windows Verification'
 keywords: ['reboot', 'workstation', 'windows', 'automation', 'script']
 description: 'This document outlines a script designed to reboot workstation endpoints based on specified reboot windows defined by custom fields. It includes implementation steps, sample runs, and detailed script logic to ensure reboots occur only within the designated timeframes.'
 tags: ['custom-fields']
@@ -334,5 +334,7 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
+
+
 
 

@@ -1,7 +1,7 @@
 ---
 id: '62c75166-da9a-4b8a-ae44-1be7a7076401'
-title: 'Clear Duplicate Entries from Scriptstate Table'
-title_meta: 'Clear Duplicate Entries from Scriptstate Table'
+title: 'Remove Duplicates from ScriptState Table'
+title_meta: 'Remove Duplicates from ScriptState Table'
 keywords: ['duplicate', 'scriptstate', 'sql', 'cleanup', 'database']
 description: 'This document provides a detailed guide on how to clear duplicate entries from the scriptstate table in a client script. It includes sample runs, variable descriptions, and a step-by-step process to effectively manage and schedule the cleanup of duplicate entries on a daily basis.'
 tags: ['cleanup', 'database', 'sql']
@@ -44,4 +44,6 @@ HAVING NumberofValues > 1;
 **Step 2:** Exit if the total number of results from the above step is zero.  
 
 **Step 3:** Run a loop to delete all the duplicate entries for each script state per computer per script.
+
+
 

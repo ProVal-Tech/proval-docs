@@ -1,7 +1,7 @@
 ---
 id: 'cwa-email-impact-summary'
-title: 'Email Flow Impact Summary'
-title_meta: 'Email Flow Impact Summary'
+title: '2022 Transport Queue Issue Status'
+title_meta: '2022 Transport Queue Issue Status'
 keywords: ['email', 'flow', 'impact', 'exchange', 'server', 'status', 'monitoring']
 description: 'This document provides a summary of agents where email flow has been impacted and subsequently corrected by the specified script. It includes details about the Exchange server, its location, operating system, and the status of email processing. This document is useful for monitoring email flow issues in Exchange environments.'
 tags: ['email', 'exchange']
@@ -30,4 +30,6 @@ Reference:
 | Operating System   | Operating system of the Exchange server               |
 | Last Contact      | Last contact of the server with RMM                   |
 | Email Status      | Script status return: fixed, not fixed, or not impacted |
+
+
 

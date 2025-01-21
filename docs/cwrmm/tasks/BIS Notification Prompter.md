@@ -215,3 +215,5 @@ This task can be scheduled manually on-demand to any agent or to a certain group
   ![Three Bars](../../../static/img/BIS-Notification-Prompter/image_33.png)  
   ![Three Bars Step 2](../../../static/img/BIS-Notification-Prompter/image_34.png)  
 
+
+

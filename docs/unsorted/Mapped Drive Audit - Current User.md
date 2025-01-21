@@ -1,7 +1,7 @@
 ---
 id: '6e855af4-7a44-4332-a5cf-73b238c6dac7'
-title: 'Mapped Network Drives for Current User'
-title_meta: 'Mapped Network Drives for Current User'
+title: 'Mapped Drive Audit - Current User'
+title_meta: 'Mapped Drive Audit - Current User'
 keywords: ['mapped', 'network', 'drives', 'current', 'user']
 description: 'This document provides a detailed overview of the mapped network drives for the currently logged-in user on a machine, including SQL representation and relevant dependencies.'
 tags: []
@@ -52,4 +52,6 @@ FROM
   JOIN clients cl ON cl.ClientID = c.ClientID 
   JOIN plugin_proval_Mapped_Drive_CurrentUser ppc ON ppc.computerid = c.ComputerID
 ```
+
+
 

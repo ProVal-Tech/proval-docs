@@ -1,7 +1,7 @@
 ---
 id: '588520f3-c262-4b80-8c56-0b9411ab0bdc'
-title: 'DUO Authentication Proxy Version Monitor'
-title_meta: 'DUO Authentication Proxy Version Monitor'
+title: 'DUO Auth Proxy'
+title_meta: 'DUO Auth Proxy'
 keywords: ['duo', 'monitor', 'version', 'authentication', 'proxy', 'windows']
 description: 'This document outlines a monitoring setup designed to identify computers with outdated versions of the DUO Authentication Proxy application installed. It includes specific details on check actions, server address, check types, and execution commands necessary for effective monitoring.'
 tags: ['security', 'software', 'update', 'windows']
@@ -28,5 +28,7 @@ Insert the details of the monitor in the table below.
 ## Target
 
 - Group of Windows machines having the 'DUO Security Authentication Proxy' application installed.
+
+
 
 

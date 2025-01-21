@@ -1,7 +1,7 @@
 ---
 id: '47f6e5ab-064e-4f15-86e6-226a274b73dc'
-title: 'Centralized Domain Admin Solution'
-title_meta: 'Centralized Domain Admin Solution for Enhanced Security'
+title: 'Windows Domain Admin Process'
+title_meta: 'Windows Domain Admin Process'
 keywords: ['centralized', 'domain', 'admin', 'security', 'password', 'rotation']
 description: 'This document outlines a solution for establishing a centralized domain admin for each domain, implementing a password rotation mechanism, and enhancing security and management of domain admin credentials.'
 tags: ['security', 'windows']
@@ -52,4 +52,6 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
+
+
 

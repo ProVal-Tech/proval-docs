@@ -1,7 +1,7 @@
 ---
 id: '662b2faa-c7f5-4c96-bbbe-f1878ddb8aa3'
-title: 'Applying Remote Monitor for CPU Threshold'
-title_meta: 'Applying Remote Monitor for CPU Threshold'
+title: 'ProVal - Production - CPU Threshold Violation Monitor'
+title_meta: 'ProVal - Production - CPU Threshold Violation Monitor'
 keywords: ['remote', 'monitor', 'cpu', 'threshold', 'alert']
 description: 'This document provides a step-by-step guide on how to apply a remote monitor for CPU threshold violations in ConnectWise Automate. It includes instructions on obtaining group IDs, constructing SQL queries, and executing them to set up alerts for high CPU usage.'
 tags: ['connectwise', 'cpu', 'sql']
@@ -172,4 +172,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+
 

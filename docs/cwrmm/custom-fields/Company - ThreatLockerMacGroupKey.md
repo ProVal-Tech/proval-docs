@@ -1,7 +1,7 @@
 ---
 id: 'a9d8b61d-304f-442b-b7e3-54efe8ae150e'
-title: 'ThreatLocker Group Key for Macintosh Machines'
-title_meta: 'ThreatLocker Group Key for Macintosh Machines'
+title: 'Company - ThreatLockerMacGroupKey'
+title_meta: 'Company - ThreatLockerMacGroupKey'
 keywords: ['threatlocker', 'macintosh', 'group', 'key', 'company']
 description: 'This document provides instructions for storing the ThreatLocker Group key at the company level specifically for Macintosh machines. It includes details on how to obtain the group key and references to related solutions and documentation.'
 tags: ['security']
@@ -26,4 +26,6 @@ This custom field at the company level stores the ThreatLocker Group key for Mac
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerMacGroupKey/image_1.png)
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '6f37a14e-64e0-4bf1-a840-806cdf2ab2b4'
-title: 'Uninstall Application Script'
-title_meta: 'Uninstall Application Script'
+title: 'Software - Attempt Silent Uninstall Using String Params'
+title_meta: 'Software - Attempt Silent Uninstall Using String Params'
 keywords: ['uninstall', 'application', 'script', 'database', 'silent']
 description: 'This document describes a script that fetches the uninstallation string from the database for a specified application and attempts to uninstall it. The script utilizes silent switches for a seamless process and logs the results for verification.'
 tags: ['database', 'software', 'uninstallation', 'windows']
@@ -32,4 +32,6 @@ When the script runs, it will prompt the user for the parameter `AppName`, which
 ## Output
 
 - Script log
+
+
 

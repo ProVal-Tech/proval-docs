@@ -1,7 +1,7 @@
 ---
 id: 'e47be58e-d72d-4396-aa0c-edef63f056e8'
-title: 'Get User Folder Sizes'
-title_meta: 'Get User Folder Sizes - Script Overview'
+title: 'plugin_proval_userfoldersizes'
+title_meta: 'plugin_proval_userfoldersizes'
 keywords: ['user', 'folder', 'size', 'information', 'script']
 description: 'This document outlines the purpose and dependencies of the Get User Folder Sizes script, detailing how it stores user folder size information and the structure of the data it collects.'
 tags: ['database', 'report', 'windows']
@@ -26,4 +26,6 @@ This script depends on **Get User Folder Sizes**.
 | ComputerID    | INT     | The audited agent's computer ID.     |
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
+
+
 

@@ -1,7 +1,7 @@
 ---
 id: '13e225e3-ebab-45f8-ac25-f1a15eb4ac80'
-title: 'Download and Install ShadowControl Client'
-title_meta: 'Download and Install ShadowControl Client'
+title: 'ShadowControl Installer'
+title_meta: 'ShadowControl Installer'
 keywords: ['shadowcontrol', 'client', 'install', 'download', 'subscription']
 description: 'This document provides a detailed guide on a script that automates the download and installation of the ShadowControl client on a target machine, including steps for subscribing to the appropriate ShadowControl server and cleaning up after installation.'
 tags: ['installation', 'networking', 'software']
@@ -34,4 +34,6 @@ This script downloads and installs the ShadowControl client on the target machin
 ## Output
 
 **Script Log**
+
+
 

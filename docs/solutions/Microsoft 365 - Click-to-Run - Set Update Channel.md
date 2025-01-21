@@ -1,7 +1,7 @@
 ---
 id: 'b605b808-7016-4911-8c37-6b950de40919'
-title: 'Set Update Channel for Microsoft 365 Products'
-title_meta: 'Set Update Channel for Microsoft 365 Products'
+title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
+title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'custom', 'field', 'task']
 description: 'This document outlines the steps to set the update channel for Microsoft 365 products using Custom Fields and scheduled tasks in ConnectWise RMM. It includes links to associated content and implementation instructions for creating the necessary fields and tasks.'
 tags: ['windows']
@@ -29,4 +29,6 @@ Create the following custom fields:
 
 Create and schedule this task:
 - [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17430050)
+
+
 

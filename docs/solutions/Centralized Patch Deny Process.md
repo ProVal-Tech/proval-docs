@@ -1,7 +1,7 @@
 ---
 id: 'bfef669b-5475-4293-b6e8-77c8f20b3d5f'
-title: 'Deny Patches in Default Approval Policy'
-title_meta: 'Deny Patches in Default Approval Policy'
+title: 'Centralized Patch Deny Process'
+title_meta: 'Centralized Patch Deny Process'
 keywords: ['deny', 'patches', 'approval', 'policy', 'automate']
 description: 'This document outlines the process for denying patches in the default approval policy using scripts and dataviews from ProVal. It includes associated content, implementation steps, and FAQs to assist users in managing denied patches effectively.'
 tags: ['database', 'installation', 'security', 'update']
@@ -45,4 +45,6 @@ The purpose of this document is to outline the process for denying patches in th
 
 **Q:** Can we exclude an OS for a KB? For example, deny a KBID for Windows 10 version 1809 but allow it to be approved for Windows Server 2019.  
 **A:** No.
+
+
 

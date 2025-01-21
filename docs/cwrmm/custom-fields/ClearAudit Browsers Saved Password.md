@@ -1,7 +1,7 @@
 ---
 id: '5059a874-fdcd-4b78-989f-a0fd5184d7ce'
-title: 'Dynamic Groups - Browser Saved Password'
-title_meta: 'Dynamic Groups - Browser Saved Password'
+title: 'ClearAudit Browsers Saved Password'
+title_meta: 'ClearAudit Browsers Saved Password'
 keywords: ['custom', 'fields', 'dynamic', 'groups', 'browser', 'saved', 'password', 'audit', 'task']
 description: 'This document describes the custom fields used in the creation of Dynamic Groups for Browser Saved Passwords and their application in the Task for Clearing and Auditing Browser Saved Passwords. It includes details about each field, its purpose, and implementation steps.'
 tags: ['security', 'setup', 'software', 'windows']
@@ -47,4 +47,6 @@ The custom fields described here are used in the creation of [Dynamic Groups - B
    Once the custom fields are created, please validate them by searching for them in the search input text field provided in the custom fields:  
    ![Search Custom Fields](../../../static/img/ClearAudit-Browsers-Saved-Password/image_4.png)  
    It will show you the custom fields you created.
+
+
 

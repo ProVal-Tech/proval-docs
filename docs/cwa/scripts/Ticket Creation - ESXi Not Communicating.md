@@ -1,7 +1,7 @@
 ---
 id: '7e7eb565-3b99-4e6f-89f8-6257f5b4e7d6'
-title: 'ESXi Host Ticket Creation Script'
-title_meta: 'ESXi Host Ticket Creation Script for Automate'
+title: 'Ticket Creation - ESXi Not Communicating'
+title_meta: 'Ticket Creation - ESXi Not Communicating'
 keywords: ['esxi', 'ticket', 'monitor', 'automation', 'network', 'inventory']
 description: 'This document details a script designed for creating tickets related to ESXi hosts that have not communicated for over 3 days. The script is monitor-driven, ensuring it runs automatically based on specific conditions and gathers necessary information to create a detailed ticket for IT support.'
 tags: ['esxi', 'networking', 'ticketing', 'vmware']
@@ -42,4 +42,6 @@ The only dependency for this script is that the monitor triggering the script mu
 >
 > There is 1 reported VM running on this host, which is displayed below:  
 > \<VM Name>
+
+
 

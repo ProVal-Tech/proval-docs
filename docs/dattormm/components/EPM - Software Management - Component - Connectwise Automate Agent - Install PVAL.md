@@ -1,7 +1,7 @@
 ---
 id: 'bb088b81-eed8-45bb-861b-2349d3e798fa'
-title: 'Installs the Connectwise Automate Agent'
-title_meta: 'Installs the Connectwise Automate Agent with Site Variables'
+title: 'EPM - Software Management - Component - Connectwise Automate Agent - Install PVAL'
+title_meta: 'EPM - Software Management - Component - Connectwise Automate Agent - Install PVAL'
 keywords: ['connectwise', 'automate', 'agent', 'installation', 'variables', 'bulk', 'import']
 description: 'This document provides an overview of how to install the Connectwise Automate agent using site variables with configured settings. It includes implementation steps, required site variables, and instructions for bulk importing site variables to streamline the installation process.'
 tags: ['connectwise', 'installation']
@@ -92,4 +92,6 @@ LastStatus    : 7
 
 Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
+
+
 

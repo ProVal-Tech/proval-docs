@@ -1,7 +1,7 @@
 ---
 id: '860cd3d8-4833-4c29-b87d-ac997816994e'
-title: 'Internal Monitor for Crystal Disk Info Report'
-title_meta: 'Internal Monitor for Crystal Disk Info Report'
+title: 'Execute Script - Crystal Disk Info Report'
+title_meta: 'Execute Script - Crystal Disk Info Report'
 keywords: ['monitor', 'crystal', 'disk', 'info', 'report', 'windows', 'script']
 description: 'This document outlines the setup and usage of an internal monitor designed to execute the Crystal Disk Info Report script weekly on managed Windows machines. It includes details on dependencies, target systems, alert template setup, and ticket category management for effective monitoring and reporting.'
 tags: ['report', 'windows']
@@ -46,4 +46,6 @@ The [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/D
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_5.png)  
   - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_6.png)  
+
+
 

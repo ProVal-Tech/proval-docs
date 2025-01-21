@@ -1,7 +1,7 @@
 ---
 id: '9bb7d6a2-5e10-47d7-98cc-78b8e5cdd10c'
-title: 'Audit OpenDNS Machines without Wireless Card'
-title_meta: 'Audit OpenDNS Machines without Wireless Card'
+title: 'Software - Open DNS - Machines With Open DNS but no Wirele'
+title_meta: 'Software - Open DNS - Machines With Open DNS but no Wirele'
 keywords: ['audit', 'opendns', 'agent', 'wireless', 'msp']
 description: 'This document provides a dataview to help Managed Service Providers (MSPs) audit machines that have the OpenDNS agent installed but lack a wireless card. It aims to assist in identifying unnecessary agents and determining the need for Umbrella agents, ultimately aiding in license management for clients.'
 tags: ['licensing']
@@ -26,4 +26,6 @@ Many MSPs set up OpenDNS on the LAN, so all workstations connected via Ethernet 
 | Machine Type    | Displays whether it's a server or a workstation |
 | Wireless Card    | Displays the wireless card status              |
 | Umbrella Agent  | Displays the Umbrella agent status              |
+
+
 

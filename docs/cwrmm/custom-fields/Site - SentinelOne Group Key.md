@@ -1,7 +1,7 @@
 ---
 id: 'ecb78b4e-fa63-4bd0-b59a-e0e0412b6cd5'
-title: 'SentinelOne Group Key Management'
-title_meta: 'SentinelOne Group Key Management'
+title: 'Site - SentinelOne Group Key'
+title_meta: 'Site - SentinelOne Group Key'
 keywords: ['sentinelone', 'group', 'key', 'management', 'endpoints']
 description: 'This document provides an overview of the custom field at the site level for storing the Sentinel Group Key, which is essential for grouping and managing endpoints according to logical criteria such as departments or security policies. It also includes details on dependencies, field specifications, and a visual reference.'
 tags: ['security']
@@ -26,4 +26,6 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---SentinelOne-Group-Key/image_1.png)
+
+
 

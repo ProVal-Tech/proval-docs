@@ -1,7 +1,7 @@
 ---
 id: '663a6cf8-f3da-4a44-9725-73aae8d4d954'
-title: 'Cumulative Patch Monitoring for Machines'
-title_meta: 'Cumulative Patch Monitoring for Machines'
+title: 'Patches Not Installing  X Days'
+title_meta: 'Patches Not Installing  X Days'
 keywords: ['cumulative', 'patch', 'monitoring', 'updates', 'alerting']
 description: 'This document outlines a monitoring setup to detect machines that have not installed any cumulative or security patches in the past specified days. It provides alert templates and instructions for adjusting the monitoring parameters, ensuring timely updates and maintenance of machines within a managed patching policy.'
 tags: ['report', 'sql', 'windows']
@@ -59,4 +59,6 @@ SQL is limiting it to machines with a managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
+
+
 

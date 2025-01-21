@@ -1,7 +1,7 @@
 ---
 id: 'd2d35bf1-52bc-41da-9802-76699c5d29bd'
-title: 'Dell and HP Server Management Software Dataview'
-title_meta: 'Dell and HP Server Management Software Dataview'
+title: 'Windows - Dell and HP Management Software Status'
+title_meta: 'Windows - Dell and HP Management Software Status'
 keywords: ['dell', 'hp', 'servers', 'management', 'software', 'dataview']
 description: 'This document outlines a dataview that retrieves information about software installed on servers, specifically targeting Dell and HP server management software. It details the columns included in the dataview, such as client name, location, agent name, manufacturer, software status, software name, installation date, size, and version.'
 tags: ['installation', 'report', 'software', 'windows']
@@ -31,4 +31,6 @@ None
 | Date Installed      | Shows when the software was installed                                        |
 | Size               | Shows the total size of the installed application                             |
 | Version            | Shows the version of the management software installed on the machine        |
+
+
 

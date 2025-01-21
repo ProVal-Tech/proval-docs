@@ -1,7 +1,7 @@
 ---
 id: 'dc9e4596-2cce-49b2-9f64-d6dfd46ac1ec'
-title: 'Shared Folder Audit Script'
-title_meta: 'Shared Folder Audit Script for Access Permissions'
+title: 'Shared Folder Audit'
+title_meta: 'Shared Folder Audit'
 keywords: ['shared', 'folder', 'audit', 'permissions', 'access']
 description: 'This document describes a script that collects detailed information about shared folder access, including share names, paths, types, user permissions, and access rights. The automation of this process saves approximately 10 minutes of manual work.'
 tags: ['networking', 'security', 'windows']
@@ -49,4 +49,6 @@ The script will run a PowerShell script to gather data from the endpoint. It wil
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
+
+
 

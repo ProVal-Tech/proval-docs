@@ -1,7 +1,7 @@
 ---
 id: '4a93b183-7e52-42a5-b72a-db3abbb973e1'
-title: 'Uninstallation of LiveConnect Agent'
-title_meta: 'Uninstallation of LiveConnect Agent'
+title: 'Uninstall LiveConnect'
+title_meta: 'Uninstall LiveConnect'
 keywords: ['uninstallation', 'liveconnect', 'agent', 'endpoint', 'procedure']
 description: 'This document provides a detailed overview of the script created for the uninstallation of the LiveConnect agent from endpoints. It includes sample run logs, dependencies, process steps, and output information related to the agent procedure.'
 tags: ['uninstallation']
@@ -60,4 +60,6 @@ Agent Procedure Log
 ## Export Attachment
 
 Attached the content XML VSA Export to this document.
+
+
 

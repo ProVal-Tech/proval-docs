@@ -1,7 +1,7 @@
 ---
 id: 'eb9d46c0-757b-4630-b6c5-709f708ceec5'
-title: 'Stop and Disable Update Orchestrator Service'
-title_meta: 'Stop and Disable Update Orchestrator Service'
+title: 'Update Orchestrator Service - Disable'
+title_meta: 'Update Orchestrator Service - Disable'
 keywords: ['update', 'service', 'disable', 'orchestrator', 'stop']
 description: 'This document provides a detailed overview of a script designed to stop and disable the Update Orchestrator service, including its dependencies, process, and expected output. The automation saves approximately 5 minutes of manual effort.'
 tags: ['performance', 'update', 'windows']
@@ -32,4 +32,6 @@ It will run as an autofix with a dependent monitor.
 ## Output
 
 - Script log  
+
+
 

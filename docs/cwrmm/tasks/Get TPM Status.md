@@ -138,3 +138,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ![Custom Field Output](../../../static/img/Get-TPM-Status/image_24.png)  
 Example: `TpmEnabled: True | TpmActivated: True | TpmReady: True | TpmPresent: True | RestartPending: False`
 
+
+
