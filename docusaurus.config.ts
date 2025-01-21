@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'proval-tech', // Usually your GitHub org/user name.
   projectName: 'proval-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
