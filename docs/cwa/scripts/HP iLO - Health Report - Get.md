@@ -25,7 +25,7 @@ Retrieve an iLO health report using the provided IP address. It is required to h
 
 The `Title` for the password entry saved for the iLO Device should be in the following format:
 
-- **iLO Automation Password - /\\<iLO Device Name/>**
+- **iLO Automation Password - /\<iLO Device Name/>**
 
   Example: `iLO Automation Password - DeviceName2`; When saving the password in this format, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>) monitor set will execute the script against any random computer from the network of the IP Address stored in the `URL` field to fetch the information for the iLO Device `DeviceName2`.
 
@@ -33,7 +33,7 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
   ![Image](../../../static/img/HP-iLO---Health-Report---Get/image_1.png)
 
-- **iLO Automation Password - /\\<iLO Device Name/> (/\\<Computer ID to connect to the device/>)**
+- **iLO Automation Password - /\<iLO Device Name/> (/\<Computer ID to connect to the device/>)**
 
   Example: `iLO Automation Password - DeviceName3 (670)`; When saving the password in this format, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](<../monitors/Execute Script - HP iLO - Health Report - Get.md>) monitor set will execute the script against the computer ID 670 to fetch the information for the iLO Device `DeviceName3` with the IP Address stored in the password's `URL` field.
 

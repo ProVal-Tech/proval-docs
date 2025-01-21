@@ -15,8 +15,8 @@ This document presents 25 independent policies, one for each drive letter, which
 
 # Details
 
-- **Policy Name**: Server Core HDD Monitor Drive {LETTER}
-- **Policy Description**: Monitors server drive {LETTER}.
+- **Policy Name**: Server Core HDD Monitor Drive \{LETTER}
+- **Policy Description**: Monitors server drive \{LETTER}.
 - **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client

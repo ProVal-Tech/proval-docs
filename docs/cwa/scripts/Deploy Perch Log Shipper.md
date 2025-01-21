@@ -56,7 +56,7 @@ Computer-level EDF to exclude a computer from Perch Log Shipper deployment.
 
 ## Ticketing
 
-<small style="color:#add8e6;">The tickets will only be generated if the ticket category is defined on a global monitor.</small>
+The tickets will only be generated if the ticket category is defined on a global monitor.
 
 **Ticket Subject:** `Perch Log Shipper Installation Failed on %ComputerName%(%ComputerID%)`
 
