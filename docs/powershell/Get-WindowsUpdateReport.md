@@ -1,31 +1,30 @@
 ---
 id: ps-get-windowsupdatereport
 title: 'Get-WindowsUpdateReport'
-title_meta: 'Get-WindowsUpdateReport Command'
+title_meta: 'Get-WindowsUpdateReport'
 keywords: ['windows', 'update', 'report', 'patches']
 description: 'Documentation for the Get-WindowsUpdateReport command to get a list of patches that are installed or available on the local machine.'
-tags: ['windows', 'update', 'report']
+tags: ['report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Get a list of patches that are installed or available on the local machine.
 
 ### Execution Note
-Running this script on Windows 7 and below is at best unstable and at worst causes an out-of-memory exception.
+Running this script on Windows 7 and earlier versions is at best unstable and at worst may cause an out-of-memory exception.
 
 ## Requirements
-- Powershell v5
+- PowerShell v5
 - Internet connection
 
 ## Usage
-1. Prerequisite installation is performed
+1. Prerequisite installation is performed:
    1. Installs NuGet if not present
    2. Sets PSGallery as a trusted provider
-   3. Installs PSWindowsUpdate module
+   3. Installs the PSWindowsUpdate module
 2. Returns WindowsUpdate objects
-
-
 
 *Returns a PSWindowsUpdate.WindowsUpdate object list of installed and available patches.*
 ```powershell
@@ -52,57 +51,62 @@ Running this script on Windows 7 and below is at best unstable and at worst caus
 | --------------------------------- |
 | `Size`                            |
 | `Status`                          |
-| `ComputerName`                    |
+| `ComputerName`                   |
 | `KB`                              |
 | `Title`                           |
-| `AutoSelectOnWebSites`            |
-| `BundledUpdates`                  |
-| `CanRequireSource`                |
-| `Categories`                      |
-| `Deadline`                        |
+| `AutoSelectOnWebSites`           |
+| `BundledUpdates`                 |
+| `CanRequireSource`               |
+| `Categories`                     |
+| `Deadline`                       |
 | `DeltaCompressedContentAvailable` |
 | `DeltaCompressedContentPreferred` |
-| `Description`                     |
-| `EulaAccepted`                    |
-| `EulaText`                        |
-| `HandlerID`                       |
-| `Identity`                        |
-| `Image`                           |
-| `InstallationBehavior`            |
-| `IsBeta`                          |
-| `IsDownloaded`                    |
-| `IsHidden`                        |
-| `IsInstalled`                     |
-| `IsMandatory`                     |
-| `IsUninstallable`                 |
-| `Languages`                       |
-| `LastDeploymentChangeTime`        |
-| `MaxDownloadSize`                 |
-| `MinDownloadSize`                 |
-| `MoreInfoUrls`                    |
-| `MsrcSeverity`                    |
-| `RecommendedCpuSpeed`             |
-| `RecommendedHardDiskSpace`        |
-| `RecommendedMemory`               |
-| `ReleaseNotes`                    |
-| `SecurityBulletinIDs`             |
-| `SupersededUpdateIDs`             |
-| `SupportUrl`                      |
-| `Type`                            |
-| `UninstallationNotes`             |
-| `UninstallationBehavior`          |
-| `UninstallationSteps`             |
-| `KBArticleIDs`                    |
-| `DeploymentAction`                |
-| `DownloadPriority`                |
-| `DownloadContents`                |
-| `RebootRequired`                  |
-| `IsPresent`                       |
-| `CveIDs`                          |
-| `BrowseOnly`                      |
-| `PerUser`                         |
-| `AutoSelection`                   |
-| `AutoDownload`                    |
-### Log File
+| `Description`                    |
+| `EulaAccepted`                   |
+| `EulaText`                       |
+| `HandlerID`                      |
+| `Identity`                       |
+| `Image`                          |
+| `InstallationBehavior`           |
+| `IsBeta`                         |
+| `IsDownloaded`                   |
+| `IsHidden`                       |
+| `IsInstalled`                    |
+| `IsMandatory`                    |
+| `IsUninstallable`                |
+| `Languages`                      |
+| `LastDeploymentChangeTime`       |
+| `MaxDownloadSize`                |
+| `MinDownloadSize`                |
+| `MoreInfoUrls`                   |
+| `MsrcSeverity`                   |
+| `RecommendedCpuSpeed`            |
+| `RecommendedHardDiskSpace`       |
+| `RecommendedMemory`              |
+| `ReleaseNotes`                   |
+| `SecurityBulletinIDs`            |
+| `SupersededUpdateIDs`            |
+| `SupportUrl`                     |
+| `Type`                           |
+| `UninstallationNotes`            |
+| `UninstallationBehavior`         |
+| `UninstallationSteps`            |
+| `KBArticleIDs`                   |
+| `DeploymentAction`               |
+| `DownloadPriority`               |
+| `DownloadContents`               |
+| `RebootRequired`                 |
+| `IsPresent`                      |
+| `CveIDs`                         |
+| `BrowseOnly`                     |
+| `PerUser`                        |
+| `AutoSelection`                  |
+| `AutoDownload`                   |
 
-    .\Get-Windows10PatchInfo-log.txt
+### Log File
+```
+.\Get-Windows10PatchInfo-log.txt
+```
+
+
+

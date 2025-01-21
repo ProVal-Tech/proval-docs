@@ -1,10 +1,10 @@
 ---
 id: ps-repair-officeautomaticupdate
 title: 'Repair-OfficeAutomaticUpdate'
-title_meta: 'Repair-OfficeAutomaticUpdate Command'
+title_meta: 'Repair-OfficeAutomaticUpdate'
 keywords: ['repair', 'office365', 'update', 'automatic']
 description: 'Documentation for the Repair-OfficeAutomaticUpdate command to check and resolve common failure points in Office automatic updates.'
-tags: ['office365', 'update', 'configuration']
+tags: ['office365', 'update']
 draft: false
 unlisted: false
 ---
@@ -13,25 +13,26 @@ unlisted: false
 Checks common failure points in Office automatic updates and automatically resolves them.
 
 ## Requirements
-Office 365 (C2R) Version 16.x installed on the endpoint
+- Office 365 (C2R) Version 16.x installed on the endpoint
 
 ## Usage
 Checks the following common failures:
-- UpdateEnabled set to True
+- `UpdateEnabled` is set to `True`
 - Channel is properly filled
-  - If the Channel is empty, it will be set to the uri for Microsoft's 'Current Channel.
+  - If the Channel is empty, it will be set to the URI for Microsoft's 'Current Channel.'
 - CDN is properly filled
-- Scheduled task that launches the Microsoft Office Update process exists and is enabled.
-  - Task will be created to match the Official Microsoft task as closely as possible.
+- A scheduled task that launches the Microsoft Office Update process exists and is enabled.
+  - The task will be created to match the official Microsoft task as closely as possible.
   - If the task is present but not in a 'ready' state, the task will be enabled.
 
-
 ```powershell
-    PS C:\> Repair-OfficeAutomaticUpdate.ps1
-    Performs a check and repair of Office365.
+PS C:\> Repair-OfficeAutomaticUpdate.ps1
+Performs a check and repair of Office 365.
 ```
 
 ## Output
-.\Repair-OfficeAutomaticUpdate-log.txt
+- `.\Repair-OfficeAutomaticUpdate-log.txt`
+- `.\Repair-OfficeAutomaticUpdate-error.txt`
 
-.\Repair-OfficeAutomaticUpdate-error.txt
+
+

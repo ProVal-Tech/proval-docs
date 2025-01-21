@@ -5,15 +5,15 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ProVal Tech Content Documentation',
+  title: 'ProVal Tech Content Documentation (Under Construction 🚧)',
   //tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://proval-tech.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/proval-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -38,9 +38,9 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           tags: 'tags.yml',
-          onInlineTags: 'throw',
+          onInlineTags: 'warn',
           editUrl:
-            'https://github.com/proval-tech/docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/proval-tech/proval-docs/tree/main/',
         },
         blog: false,
         theme: {
@@ -49,6 +49,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
 
   themeConfig: {
     // Replace with your project's social card
@@ -68,7 +69,7 @@ const config: Config = {
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/proval-tech/docs',
+          href: 'https://github.com/ProVal-Tech/proval-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -90,16 +91,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://x.com/provaltech',
             },
           ],
         },
@@ -107,17 +100,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/proval-tech',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

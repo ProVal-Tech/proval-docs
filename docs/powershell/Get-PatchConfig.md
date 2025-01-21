@@ -1,13 +1,14 @@
 ---
 id: ps-get-patchconfig
 title: 'Get-PatchConfig'
-title_meta: 'Get-PatchConfig Command'
+title_meta: 'Get-PatchConfig'
 keywords: ['windows', 'update', 'patch', 'configuration']
 description: 'Documentation for the Get-PatchConfig command to retrieve Windows Update settings and services for system patch management.'
-tags: ['windows', 'update', 'configuration']
+tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Retrieves Windows Update settings and services for system patch management.
 
@@ -19,56 +20,56 @@ PowerShell v5+
 2. Update or Install `Strapper` Module
 3. Collect Registry Data
 
-- Branch Readiness Level:
+- **Branch Readiness Level:**
     - Path: `HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Update\BranchReadinessLevel`
     - Collect `AllowedValues` and `Value`
 
-- UX Settings:
+- **UX Settings:**
     - Path: `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings`
     - Collect `BranchReadinessLevel`, `ActiveHoursStart`, and `ActiveHoursEnd`
 
-- Windows Update Policies:
+- **Windows Update Policies:**
     - Path: `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
     - Collect various settings including `DisableWindowsUpdateAccess`, `BranchReadinessLevel`, `DeferFeatureUpdates`, etc.
 
-- Automatic Update Policies:
+- **Automatic Update Policies:**
     - Path: `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU`
     - Collect various settings including `NoAutoUpdate`, `AUOptions`, `ScheduledInstallDay`, etc.
 
-- User Windows Update Policy:
+- **User Windows Update Policy:**
     - Path: `HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate`
     - Collect `DisableWindowsUpdateAccess` for each user
 
-- Orchestrator Settings:
+- **Orchestrator Settings:**
     - Path: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator`
     - Collect `ScanBeforeInitialLogonAllowed` and `UsoDisableAADJAttribution`
 
 4. Collect Service Start Types
-    - Collect the start types of following services:
+    - Collect the start types of the following services:
         - `Wuauserv` (Windows Update Service)
         - `Cryptsvc` (Cryptographic Services)
         - `Bits` (Background Intelligent Transfer Service)
         - `TrustedInstaller` (Windows Modules Installer)
         - `UsoSvc` (Update Orchestrator Service)
 
-7. Assemble the Output Object
+5. Assemble the Output Object
     - Combine all collected data into the `$PatchConfig` object:
-```powershell
-        $PatchConfig = [PSCustomObject]@{
-            Services = $Services
-            BranchReadinessLevel = $BranchReadinessLevel
-            UxSettings = $UxSettings
-            WindowsUpdate = $WindowsUpdate  
-            AutoUpdate = $AutoUpdate
-            UserWUPolicy = $UserWUPolicy
-            Orchestrator = $Orchestrator
-        }
-```
+    ```powershell
+    $PatchConfig = [PSCustomObject]@{
+        Services = $Services
+        BranchReadinessLevel = $BranchReadinessLevel
+        UxSettings = $UxSettings
+        WindowsUpdate = $WindowsUpdate  
+        AutoUpdate = $AutoUpdate
+        UserWUPolicy = $UserWUPolicy
+        Orchestrator = $Orchestrator
+    }
+    ```
 
-8. Return the Output Object
+6. Return the Output Object
 
 ## PatchConfig Object
-    The `$PatchConfig` object is a custom PowerShell object that contains configurations and statuses related to Windows Update and system services.
+The `$PatchConfig` object is a custom PowerShell object that contains configurations and statuses related to Windows Update and system services.
 
 ### $PatchConfig Structure
 
@@ -80,7 +81,7 @@ This sub-object includes the start types of several essential services:
 - **`TrustedInstaller`** (Windows Modules Installer)
 - **`UsoSvc`** (Update Orchestrator Service)
 
-**Possible values for `StartType`**:
+**Possible values for `StartType`:**
 - `Automatic`
 - `Manual`
 - `Disabled`
@@ -88,12 +89,12 @@ This sub-object includes the start types of several essential services:
 #### 2. **BranchReadinessLevel**
 This sub-object refers to the registry key `HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Update\BranchReadinessLevel`.
 
-**Properties**:
+**Properties:**
 - `Path`: The registry path.
 - `AllowedValues`: Possible values for the branch readiness level.
 - `Value`: The current value of the branch readiness level.
 
-**Possible values for `AllowedValues` and `Value`**:
+**Possible values for `AllowedValues` and `Value`:**
 - `16` (Semi-Annual Channel)
 - `8` (Semi-Annual Channel (Targeted))
 - `32` (Release Preview)
@@ -103,13 +104,13 @@ This sub-object refers to the registry key `HKLM:\SOFTWARE\Microsoft\PolicyManag
 #### 3. **UxSettings**
 This sub-object refers to the registry key `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings`.
 
-**Properties**:
+**Properties:**
 - `Path`: The registry path.
 - `BranchReadinessLevel`: The current branch readiness level.
 - `ActiveHoursStart`: The start time for active hours.
 - `ActiveHoursEnd`: The end time for active hours.
 
-**Possible values**:
+**Possible values:**
 - `BranchReadinessLevel`: As defined above.
 - `ActiveHoursStart`: 0-23 (hours).
 - `ActiveHoursEnd`: 0-23 (hours).
@@ -117,7 +118,7 @@ This sub-object refers to the registry key `HKLM:\SOFTWARE\Microsoft\WindowsUpda
 #### 4. **WindowsUpdate**
 This sub-object refers to the registry key `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`.
 
-**Properties**:
+**Properties:**
 - `Path`: The registry path.
 - `DisableWindowsUpdateAccess`: Whether access to Windows Update is disabled.
 - `BranchReadinessLevel`: The current branch readiness level.
@@ -131,12 +132,12 @@ This sub-object refers to the registry key `HKLM:\SOFTWARE\Policies\Microsoft\Wi
 - `TargetGroup`: The target group for updates.
 - `AcceptTrustedPublisherCerts`: Whether to accept trusted publisher certificates.
 - `ExcludeWUDriversInQualityUpdate`: Whether to exclude Windows Update drivers in quality updates.
-- `DisableOSUpgrade`: Whether to disable windows upgrade functionality. (from windows 10 to 11)
+- `DisableOSUpgrade`: Whether to disable Windows upgrade functionality (from Windows 10 to 11).
 - `TargetReleaseVersion`: Whether to limit the Windows feature release version to a certain version.
-- `TargetReleaseVersionInfo`: Windows Feature Release version to limit the upgrade of the computer. The computer can not be upgraded above the version stored in this registry key.
-- `SetDisableUXWUAccess`: Remove access to use all Windows Update features
+- `TargetReleaseVersionInfo`: Windows Feature Release version to limit the upgrade of the computer. The computer cannot be upgraded above the version stored in this registry key.
+- `SetDisableUXWUAccess`: Remove access to use all Windows Update features.
 
-**Possible values**:
+**Possible values:**
 - `DisableWindowsUpdateAccess`: 0 (not disabled), 1 (disabled).
 - `BranchReadinessLevel`: As defined above.
 - `DeferFeatureUpdates`: 0 (not deferred), 1 (deferred).
@@ -150,14 +151,14 @@ This sub-object refers to the registry key `HKLM:\SOFTWARE\Policies\Microsoft\Wi
 - `AcceptTrustedPublisherCerts`: 0 (not accepted), 1 (accepted).
 - `ExcludeWUDriversInQualityUpdate`: 0 (not excluded), 1 (excluded).
 - `DisableOSUpgrade`: 0 (not disabled), 1 (disabled).
-- `TargetReleaseVersion`: 1 (`TargetReleaseVersionInfo` registry key is enabled), 0 (`TargetReleaseVersionInfo` registry key is not enabled.)
-- `TargetReleaseVersionInfo`: String (22H2, 23H2, 24H2 etc.)
+- `TargetReleaseVersion`: 1 (`TargetReleaseVersionInfo` registry key is enabled), 0 (`TargetReleaseVersionInfo` registry key is not enabled).
+- `TargetReleaseVersionInfo`: String (22H2, 23H2, 24H2, etc.).
 - `SetDisableUXWUAccess`: 0 (not disabled), 1 (disabled).
 
 #### 5. **AutoUpdate**
 This sub-object refers to the registry key `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU`.
 
-**Properties**:
+**Properties:**
 - `Path`: The registry path.
 - `NoAutoUpdate`: Whether automatic updates are disabled.
 - `AUOptions`: Automatic update options.
@@ -168,7 +169,7 @@ This sub-object refers to the registry key `HKLM:\SOFTWARE\Policies\Microsoft\Wi
 - `NoAutoRebootWithLoggedOnUsers`: Whether to avoid auto reboot with logged-on users.
 - `DetectionFrequency`: The detection frequency for updates.
 
-**Possible values**:
+**Possible values:**
 - `NoAutoUpdate`: 0 (automatic updates enabled), 1 (automatic updates disabled).
 - `AUOptions`:
     - 2 (Notify for download and auto install)
@@ -185,28 +186,28 @@ This sub-object refers to the registry key `HKLM:\SOFTWARE\Policies\Microsoft\Wi
 - `DetectionFrequency`: 1-22 (hours).
 
 #### 6. **UserWUPolicy**
-This sub-object refers to the registry key `HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate`, and `HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer`.
+This sub-object refers to the registry key `HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate` and `HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer`.
 
-**Properties**:
+**Properties:**
 - `DisableWindowsUpdateAccessPath`: The registry path of `DisableWindowsUpdateAccess` property.
 - `DisableWindowsUpdateAccess`: Disabling Windows Update access for users.
 - `NoWindowsUpdatePath`: The registry path of `NoWindowsUpdatePath` property.
 - `NoWindowsUpdate`: Prevents users from connecting to the Windows Update website.
 
-**Possible values**:
+**Possible values:**
 - `DisableWindowsUpdateAccess`: 0 (not disabled), 1 (disabled).
 - `NoWindowsUpdate`: 0 (Disabled or not configured. Users can connect to the Windows Update website.), 1 (Enabled. Users cannot connect to the Windows Update website.)
 
 #### 7. **Orchestrator**
-This sub-object refers to the registry key `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator`, and `HKLM:\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations`.
+This sub-object refers to the registry key `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator` and `HKLM:\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations`.
 
-**Properties**:
+**Properties:**
 - `ScanBeforeInitialLogonAllowedPath`: The registry path of `ScanBeforeInitialLogonAllowed` property.
 - `ScanBeforeInitialLogonAllowed`: Whether scanning before the initial logon is allowed.
 - `UsoDisableAADJAttributionPath`: The registry path of `UsoDisableAADJAttribution` property.
 - `UsoDisableAADJAttribution`: To disable displaying the organization name in Windows Update notifications.
 
-**Possible values**:
+**Possible values:**
 - `ScanBeforeInitialLogonAllowed`: 0 (not allowed), 1 (allowed).
 - `UsoDisableAADJAttribution`: 0 (not disabled), 1 (disabled).
 
@@ -283,5 +284,8 @@ $PatchConfig = [PSCustomObject]@{
 ```
 
 ## Output
-    Get-PatchConfig-log.txt
-    Get-PatchConfig-Error.txt
+- Get-PatchConfig-log.txt
+- Get-PatchConfig-Error.txt
+
+
+

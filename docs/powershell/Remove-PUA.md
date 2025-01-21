@@ -1,51 +1,48 @@
 ---
 id: ps-remove-pua
 title: 'Remove-PUA'
-title_meta: 'Remove-PUA Command'
+title_meta: 'Remove-PUA'
 keywords: ['remove', 'bloatware', 'cleanup', 'software']
 description: 'Documentation for the Remove-PUA command to remove potentially unwanted applications (PUA) from computers.'
-tags: ['uninstallation', 'software']
+tags: ['software', 'uninstallation']
 draft: false
 unlisted: false
 ---
-## Description
-Removes Bloatware from Computers agnostically in a single powershell script.
 
+## Description
+Removes bloatware from computers agnostically in a single PowerShell script.
 
 ## Requirements
-Parameters are required at minimum.
-This script contains 6 system objects, 5 of which are specific to listing potential bloatware by category. The Final object contains potential .exe silent switches.  As we identify more items to list this script will need to be modified to add such items.
+Parameters are required at minimum. This script contains six system objects, five of which are specific to listing potential bloatware by category. The final object contains potential `.exe` silent switches. As we identify more items to list, this script will need to be modified to add such items.
 
 ## Usage
 1. What initial switch was used
-    1. RemoveAll
+    1. **RemoveAll**
         1. There is an additional switch
             1. Category selected
-                1. populate a list of all items in that category
-                    1. Is there an additional switch
+                1. Populate a list of all items in that category
+                    1. Is there an additional switch?
                         1. Except is selected
-                            1. Remove the item(s) Excepted from the items list for that category
+                            1. Remove the item(s) excepted from the items list for that category
                             2. Uninstall all other installed items from that list
                         2. Except is not selected
                             1. Filter list down to only installed items
                             2. Uninstall those items
             2. Except selected
-                1. Remove the item(s) Excepted from the list it belongs to
+                1. Remove the item(s) excepted from the list it belongs to
                 2. Uninstall all other items from that list
         2. There is no additional switch
             1. Check all items in all lists
-            2. filter down to only installed applications
-            3. uninstall the items
-    2. Remove
-        1. Is the item(s) in a list
+            2. Filter down to only installed applications
+            3. Uninstall the items
+    2. **Remove**
+        1. Are the item(s) in a list?
             1. No
-                1.  Error out in Error log could not find item
+                1. Error out in error log: could not find item
             2. Yes
                 1. Uninstall item(s) listed in string array
-    3. ListBloatware
+    3. **ListBloatware**
         1. Display a list of all potential installed items
-
-
 
 See what potential bloatware is installed:
 ```powershell
@@ -70,14 +67,16 @@ I intend to remove all Microsoft-based bloatware except MSPaint and Windows Came
 
 ## Parameters
 | Parameter         | Alias | Required  | Default   | Type        | Description                               |
-| ----------------- | ----- | --------- | --------- | ---------   | ----------------------------------------- |
+| ----------------- | ----- | --------- | --------- | ----------- | ----------------------------------------- |
 | `ListBloatware`   |       | True      |           | Switch      | Provides a list of any installed potential bloatware |
 | `Remove`          |       | True      |           | StringArray | The name of the application or applications you wish to uninstall |
-| `RemoveAll`       |       | True      |           | Switch      | Switch Required to remove all bloatware by category or all found bloatware with or without exceptions|
-| `Category`        |       | False     |           | ValidateSet | Used with RemoveAll will filter bloatware to a certain category allowing you to select just a specific category of bloatware         |
-| `Except`          |       | False     |           | StringArray | Used with RemoveAll or Category to remove all except some item(s) from a category or all together|
+| `RemoveAll`       |       | True      |           | Switch      | Switch required to remove all bloatware by category or all found bloatware with or without exceptions |
+| `Category`        |       | False     |           | ValidateSet | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware |
+| `Except`          |       | False     |           | StringArray | Used with RemoveAll or Category to remove all except some item(s) from a category or all together |
 
 ## Output
+- `.\Remove-PUA-log.txt`
+- `.\Remove-PUA-error.txt`
 
-    .\Remove-PUA-log.txt
-    .\Remove-PUA-error.txt
+
+

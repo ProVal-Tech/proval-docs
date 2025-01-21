@@ -5,7 +5,7 @@ title_meta: Script Name
 keywords: []
 description: A description of the script.
 tags: []
-draft: true
+draft: false
 unlisted: false
 ---
 
@@ -16,7 +16,7 @@ Explain the problem this content solves.
 Does the content require any additional data or configuration to operate?
 
 ## Usage
-Describe how the script is executed and if it requires any parameters. Delete the parameter block below if not needed. 
+Describe how the script is executed and if it requires any parameters. Delete the parameter block below if not needed.
 
 ```powershell
 .\somescript.ps1 -Param1 param
@@ -33,3 +33,6 @@ Describe how the script is executed and if it requires any parameters. Delete th
 
 ## Output
 Describe the output of the content. Delete if not needed.
+
+
+

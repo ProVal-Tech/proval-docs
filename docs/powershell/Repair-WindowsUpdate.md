@@ -1,53 +1,59 @@
 ---
 id: ps-repair-windowsupdate
 title: 'Repair-WindowsUpdate'
-title_meta: 'Repair-WindowsUpdate Command'
+title_meta: 'Repair-WindowsUpdate'
 keywords: ['repair', 'windowsupdate', 'reset', 'troubleshoot']
 description: 'Documentation for the Repair-WindowsUpdate command to reset Windows Update settings and troubleshoot update issues.'
-tags: ['windows', 'update', 'configuration']
+tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
 
 ## Description
-Script used to reset windows update settings.
+This script is used to reset Windows Update settings.
 
-🚨 This script is provided "without warranty". 🚨
+🚨 This script is provided "without warranty." 🚨
 
-It is not necessary that running the script will resolve any issue with the windows updates. It will simply attempt to reset windows update settings.
+Running the script may not necessarily resolve any issues with Windows updates. It simply attempts to reset Windows Update settings.
 
 🚨 *YOU HAVE BEEN WARNED* 🚨
 
 ## Requirements
 - PowerShell v5
-- Must be executed as administrator
+- Must be executed as an administrator
 - Windows must be licensed 
 
 ## Usage
-- Stop the services related to windows updates.
-- Perform System File Check.
-- Rename cache directories for windows update.
-- Start the services related to windows updates.
-- Logs any failures to the error log.
+1. Stop the services related to Windows updates.
+2. Perform a System File Check.
+3. Rename cache directories for Windows Update.
+4. Start the services related to Windows updates.
+5. Log any failures to the error log.
 
-
-Attempt to reset windows update settings as a primary troubleshooting step for windows update issues.
+Attempt to reset Windows Update settings as a primary troubleshooting step for Windows Update issues.
 
 ```powershell
 .\Repair-WindowsUpdate.ps1
 ```
 
-Attempt to reset windows update settings as a primary troubleshooting step, with an optional sfc scan, for windows update issues.
+Attempt to reset Windows Update settings as a primary troubleshooting step, with an optional SFC scan, for Windows Update issues.
+
 ```powershell
 .\Repair-WindowsUpdate.ps1 -SFCScan
 ```
+
 ## Parameters
 | Parameter         | Alias | Required  | Default   | Type      | Description                               |
 | ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
-| `-SFCScan`        |       | False     |           | Switch    | Toggles an optional sfc scan as a repair option for windows updates.|
+| `-SFCScan`       |       | False     |           | Switch    | Toggles an optional SFC scan as a repair option for Windows updates. |
 
 ## Output
-Location of output for log, result, and error files.
+Location of output for log, result, and error files:
 
-    .\Reset-WindowsUpdates-log.txt
-    .\Reset-WindowsUpdates-error.txt
+```
+.\Reset-WindowsUpdates-log.txt
+.\Reset-WindowsUpdates-error.txt
+```
+
+
+
