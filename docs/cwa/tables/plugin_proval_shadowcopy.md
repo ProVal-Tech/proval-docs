@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table stores the Windows Shadow Copy state for endpoints with Shadow Copy Enabled collected from the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) result.
+This table stores the Windows Shadow Copy state for endpoints with Shadow Copy enabled, collected from the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) result.
 
 ## Dependencies
 
@@ -22,23 +23,11 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy E
 
 | Column            | Type    | Explanation                                                                                      |
 |-------------------|---------|--------------------------------------------------------------------------------------------------|
-| computerid        | INT     | It contains the ID of the associated computer where the script executed to collect shadow copy data |
-| driveid           | INT     | It contains the ID of the associated drive where the script executed to collect shadow copy data  |
-| DriveLetter       | VARCHAR | It stores the drive letter for which the shadow copy data is collected                           |
-| CapacityGB        | DECIMAL | It stores the allotted capacity for Shadow Copy on the machine                                   |
-| FreeSpaceGB      | DECIMAL | It contains the remaining space for Shadow Copy to use on the machine                            |
-| ShadowCopyCount   | INT     | It collects the number of Shadow Copies on the machine                                          |
-| OldestShadowCopy  | VARCHAR | It contains the oldest available Shadow Copy date                                               |
-| LatestShadowCopy  | VARCHAR | It contains the most recent available Shadow Copy date                                           |
-
-
-
-
-
-
-
-
-
-
-
-
+| computerid        | INT     | Contains the ID of the associated computer where the script executed to collect shadow copy data. |
+| driveid           | INT     | Contains the ID of the associated drive where the script executed to collect shadow copy data.  |
+| DriveLetter       | VARCHAR | Stores the drive letter for which the shadow copy data is collected.                           |
+| CapacityGB        | DECIMAL | Stores the allotted capacity for Shadow Copy on the machine.                                   |
+| FreeSpaceGB      | DECIMAL | Contains the remaining space for Shadow Copy to use on the machine.                            |
+| ShadowCopyCount   | INT     | Indicates the number of Shadow Copies on the machine.                                          |
+| OldestShadowCopy  | VARCHAR | Contains the oldest available Shadow Copy date.                                               |
+| LatestShadowCopy  | VARCHAR | Contains the most recent available Shadow Copy date.                                           |

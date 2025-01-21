@@ -8,18 +8,7 @@ tags: ['kaseya', 'sql']
 draft: false
 unlisted: false
 ---
-## Summary:
 
-Check and Alert for Specific Kaseya Logon Events (SQL => api?)  
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
+This document outlines how to check for specific Kaseya logon events and set up alerts based on those events. It also discusses the integration of SQL queries with the Kaseya API to effectively monitor logon activities.

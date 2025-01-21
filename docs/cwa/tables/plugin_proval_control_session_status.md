@@ -8,15 +8,16 @@ tags: ['connectwise', 'database']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This will hold the current ConnectWise Control agent online status for each agent in the Control Portal.
+This document holds the current ConnectWise Control agent online status for each agent in the Control Portal.
 
 ## Dependencies
 
 - [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](<../scripts/Get - CW-ControlAPI - Online Status.md>)
 - [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](<../dataviews/Agent online status check CWC to CWA.md>)
-- [EPM - Data Collection - Solution - Get - CW-ControlAPI-Online Status](<../../solutions/Get - CW-ControlAPI-Online Status.md>)
+- [EPM - Data Collection - Solution - Get - CW-ControlAPI - Online Status](<../../solutions/Get - CW-ControlAPI - Online Status.md>)
 
 ## Tables
 
@@ -24,19 +25,7 @@ This will hold the current ConnectWise Control agent online status for each agen
 
 | Column              | Type         | Explanation                                                                                     |
 |---------------------|--------------|-------------------------------------------------------------------------------------------------|
-| GUID                 | VARCHAR(255) | Holds the ConnectWise Control GUID for the Computer. (Primary Key)                            |
+| GUID                 | VARCHAR(255) | Holds the ConnectWise Control GUID for the computer. (Primary Key)                            |
 | Online              | TINYINT(1)   | Holds the online status of the computer in ConnectWise Control agent.                         |
 | LastConnectedDate   | DATETIME     | Holds the last connected date of the ConnectWise Control agent.                               |
 | SCName              | VARCHAR(50)  | Holds the computer name as displayed in the ConnectWise Control portal for that agent.       |
-
-
-
-
-
-
-
-
-
-
-
-

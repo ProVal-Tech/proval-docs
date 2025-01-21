@@ -8,9 +8,10 @@ tags: ['active-directory', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview displays any machines found within the Active Directory integration if the Automate agent is installed on the machine or not. It also displays when the agent was installed, AD's last logon, last contact in RMM, etc. This Dataview pulls from the Active Directory Plugin. The active directory plugin must be installed and configured to properly detect this information.
+This Dataview displays any machines found within the Active Directory integration, regardless of whether the Automate agent is installed on the machine. It also shows when the agent was installed, Active Directory's last logon, last contact in RMM, and more. This Dataview pulls from the Active Directory Plugin, which must be installed and configured to properly detect this information.
 
 ## Columns
 
@@ -18,26 +19,14 @@ This Dataview displays any machines found within the Active Directory integratio
 |--------------------------|-----------------------------------------------------|
 | Client                   | Displays the name of the client                     |
 | Location                 | Displays the name of the location                   |
-| AD Computer Name         | Displays the name of computer in AD                 |
-| Operating System         | Display the name of the operating system            |
+| AD Computer Name         | Displays the name of the computer in Active Directory |
+| Operating System         | Displays the name of the operating system           |
 | Agent Installed          | Displays whether an agent is installed or not       |
-| Agent Installed Date     | Displays the date when was agent installed          |
-| Since Last AD Logon     | Displays the date Since Last AD Logon               |
-| AD Last Login            | Displays the date of the AD last login              |
-| LastContact With RMM     | Displays the last contact of the machine in RMM     |
-| Last User Automate       | Displays the last user logged in if there is any    |
-| ParentDN                | Displays if the ParentDN is enabled or disabled     |
-| ObjectClasses            | Displays the object class of the machine            |
-| ObjectType               | Displays the object type of the machine             |
-
-
-
-
-
-
-
-
-
-
-
-
+| Agent Installed Date     | Displays the date when the agent was installed      |
+| Since Last AD Logon     | Displays the date since the last AD logon           |
+| AD Last Login            | Displays the date of the last AD login              |
+| Last Contact with RMM    | Displays the last contact of the machine in RMM     |
+| Last User Automate       | Displays the last user logged in, if there is any   |
+| Parent DN                | Displays whether the Parent DN is enabled or disabled |
+| Object Classes           | Displays the object class of the machine            |
+| Object Type              | Displays the object type of the machine             |

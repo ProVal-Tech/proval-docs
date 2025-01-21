@@ -8,6 +8,7 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Displays the list of the installed bloatware fetched by the [Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214) script.
@@ -34,16 +35,4 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](https
 | Bloatware                 | Name of the Bloatware                               |
 | Category                  | Category of the Bloatware                           |
 | Data Collection Time      | Data Collection Time                                 |
-
-
-
-
-
-
-
-
-
-
-
-
 

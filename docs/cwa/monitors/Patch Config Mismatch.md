@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Detects the machines where the data returned by the [Get Patch Config](<../scripts/Get Patch Config.md>) script does not match the settings defined by the [Patch Manager - WUA Settings Validation](<../scripts/Patch Manager - WUA Settings Validation.md>) script.
+This document detects machines where the data returned by the [Get Patch Config](<../scripts/Get Patch Config.md>) script does not match the settings defined by the [Patch Manager - WUA Settings Validation](<../scripts/Patch Manager - WUA Settings Validation.md>) script.
 
 ## Dependencies
 
@@ -24,16 +25,4 @@ Global
 
 ## Alert Template
 
-**Name:**  `△ Custom - Patch Config Mismatch`
-
-
-
-
-
-
-
-
-
-
-
-
+**Name:** `△ Custom - Patch Config Mismatch`

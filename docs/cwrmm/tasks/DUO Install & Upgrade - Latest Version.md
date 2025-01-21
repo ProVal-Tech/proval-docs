@@ -8,9 +8,10 @@ tags: ['installation', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will install or update DUO if the currently installed instance is older than the latest released version. This script does match the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).
+This script will install or update DUO if the currently installed instance is older than the latest released version. It matches the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).
 
 ## Sample Run
 
@@ -23,35 +24,35 @@ This script will install or update DUO if the currently installed instance is ol
 
 ## Variables
 
-| Name         | Description                                                                                                         |
-|--------------|---------------------------------------------------------------------------------------------------------------------|
-| DUOHost      | Collects the host key for deployment stored in the company custom field "DUO Windows Login Host".                   |
-| DUOSKEY      | Collects the Skey for DUO deployment stored in the company custom field "Duo Windows Login SKEY".                  |
-| DUOIKEY      | Collects the Ikey for DUO deployment stored in the company custom field "Duo Windows Login IKEY".                  |
-| AutopushOvr  | Collects the value stored in the endpoint custom field "DUO Autopush Ovrr".                                       |
-| AutopushSvr  | Collects the value stored in the company custom field "DUO Autopush Server".                                       |
-| AutopushWks  | Collects the value stored in the company custom field "DUO Autopush Wks".                                         |
-| EnableOfflineOvr | Collects the value stored in the endpoint custom field "DUO EnableOffline Ovrr".                                |
-| EnableOfflineSvr | Collects the value stored in the company custom field "DUO EnableOffline Server".                              |
-| EnableOfflineWks | Collects the value stored in the company custom field "DUO EnableOffline Wks".                                 |
-| FailOpenOvr  | Collects the value stored in the endpoint custom field "DUO FailOpen Ovrr".                                       |
-| FailOpenSvr  | Collects the value stored in the company custom field "DUO FailOpen Server".                                       |
-| FailOpenWks  | Collects the value stored in the company custom field "DUO FailOpen Wks".                                         |
-| RDPOnlyOvr   | Collects the value stored in the endpoint custom field "DUO RDPOnly Ovrr".                                        |
-| RDPOnlySvr   | Collects the value stored in the company custom field "DUO RDPOnly Server".                                       |
-| RDPOnlyWks   | Collects the value stored in the company custom field "DUO RDPOnly Wks".                                         |
-| SmartCardOvr | Collects the value stored in the endpoint custom field "DUO SmartCard Ovrr".                                       |
-| SmartCardSvr | Collects the value stored in the company custom field "DUO SmartCard Server".                                       |
-| SmartCardWks | Collects the value stored in the company custom field "DUO SmartCard Wks".                                         |
+| Name              | Description                                                                                                         |
+|-------------------|---------------------------------------------------------------------------------------------------------------------|
+| DUOHost           | Collects the host key for deployment stored in the company custom field "DUO Windows Login Host".                   |
+| DUOSKEY           | Collects the Skey for DUO deployment stored in the company custom field "Duo Windows Login SKEY".                  |
+| DUOIKEY           | Collects the Ikey for DUO deployment stored in the company custom field "Duo Windows Login IKEY".                  |
+| AutopushOvr       | Collects the value stored in the endpoint custom field "DUO Autopush Ovrr".                                       |
+| AutopushSvr       | Collects the value stored in the company custom field "DUO Autopush Server".                                       |
+| AutopushWks       | Collects the value stored in the company custom field "DUO Autopush Wks".                                         |
+| EnableOfflineOvr   | Collects the value stored in the endpoint custom field "DUO EnableOffline Ovrr".                                   |
+| EnableOfflineSvr   | Collects the value stored in the company custom field "DUO EnableOffline Server".                                  |
+| EnableOfflineWks   | Collects the value stored in the company custom field "DUO EnableOffline Wks".                                     |
+| FailOpenOvr       | Collects the value stored in the endpoint custom field "DUO FailOpen Ovrr".                                       |
+| FailOpenSvr       | Collects the value stored in the company custom field "DUO FailOpen Server".                                       |
+| FailOpenWks       | Collects the value stored in the company custom field "DUO FailOpen Wks".                                         |
+| RDPOnlyOvr        | Collects the value stored in the endpoint custom field "DUO RDPOnly Ovrr".                                        |
+| RDPOnlySvr        | Collects the value stored in the company custom field "DUO RDPOnly Server".                                       |
+| RDPOnlyWks        | Collects the value stored in the company custom field "DUO RDPOnly Wks".                                         |
+| SmartCardOvr      | Collects the value stored in the endpoint custom field "DUO SmartCard Ovrr".                                       |
+| SmartCardSvr      | Collects the value stored in the company custom field "DUO SmartCard Server".                                       |
+| SmartCardWks      | Collects the value stored in the company custom field "DUO SmartCard Wks".                                         |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation 1](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_3.png)  
 ![Task Creation 2](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_4.png)  
 
 **Name:** `DUO Install & Upgrade - Latest Version`  
-**Description:** `This script will install or update DUO if the currently installed instance is older than the latest released version. This script does match the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).`  
+**Description:** `This script will install or update DUO if the currently installed instance is older than the latest released version. This script matches the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).`  
 **Category:** `Application`  
 ![Task Creation 3](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_5.png)  
 
@@ -208,7 +209,7 @@ The following function will pop up on the screen:
 
 - Select the `Custom Field` radio button.
 - Set `FailOpenOvr` in the `Variable Name` field.
-- Search and select the Client-Level Custom Field `DUO Failopen Ovrr` from the Custom Field dropdown menu.
+- Search and select the Client-Level Custom Field `DUO FailOpen Ovrr` from the Custom Field dropdown menu.
 - Click the `Save` button.  
 ![Task Step 5](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_28.png)  
 ![Task Step 6](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_29.png)  
@@ -313,7 +314,7 @@ The following function will pop up on the screen:
 
 - Select the `Custom Field` radio button.
 - Set `SmartCardSvr` in the `Variable Name` field.
-- Search and select the Client-Level Custom Field `DUO Smartcard Server` from the Custom Field dropdown menu.
+- Search and select the Client-Level Custom Field `DUO SmartCard Server` from the Custom Field dropdown menu.
 - Click the `Save` button.  
 ![Task Step 5](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_42.png)  
 ![Task Step 6](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_43.png)  
@@ -328,7 +329,7 @@ The following function will pop up on the screen:
 
 - Select the `Custom Field` radio button.
 - Set `SmartCardWks` in the `Variable Name` field.
-- Search and select the Client-Level Custom Field `DUO Smartcard Wks` from the Custom Field dropdown menu.
+- Search and select the Client-Level Custom Field `DUO SmartCard Wks` from the Custom Field dropdown menu.
 - Click the `Save` button.  
 ![Task Step 5](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_44.png)  
 ![Task Step 6](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_45.png)  
@@ -376,13 +377,13 @@ if ($DUOHost -eq '' -or $DUOHost -match '@DUOHost') {
 
 ```powershell
 if ($DUOIKEY -eq '' -or $DUOIKEY -match '@DUOIKEY') {
-    return 'ERROR: DUO Host missing.'
+    return 'ERROR: DUO IKEY missing.'
 }
 ```
 
 ```powershell
 if ($DUOSKEY -eq '' -or $DUOSKEY -match '@DUOSKEY') {
-    return 'ERROR: DUO Host missing.'
+    return 'ERROR: DUO SKEY missing.'
 }
 ```
 
@@ -452,8 +453,8 @@ if ( !(Test-Path $WorkingDirectory) ) {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
+if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
+    $Acl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
@@ -478,7 +479,7 @@ If ($DuoRawHash -eq $CurrentHash) {
     if ($DuoVersion -eq $DUOCurrentVersion) {
         return 'DUO Windows for login is already up to date.'
     } elseif ($DUOCurrentVersion -match '[0-9]') {
-        Start-Process -FilePath $Path -ArgumentList "/S /V`/" REBOOT=ReallySuppress /qn IKEY=`/"$DUOIKEY`/" SKEY=`/"$DUOSKEY`/" HOST=`/"$DUOHost`/" $ArgumentsString`/"" -Wait -WindowStyle Hidden
+        Start-Process -FilePath $Path -ArgumentList "/S /V`/\" REBOOT=ReallySuppress /qn IKEY=`/\"$DUOIKEY`/\" SKEY=`/\"$DUOSKEY`/\" HOST=`/\"$DUOHost`/\" $ArgumentsString`/\"\" -Wait -WindowStyle Hidden
         Start-Sleep -Seconds 30
         $DUOCurrentVersion = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
         if ($DuoVersion -eq $DUOCurrentVersion) {
@@ -487,7 +488,7 @@ If ($DuoRawHash -eq $CurrentHash) {
             return 'ERROR: Duo Authentication for Windows Logon failed to update.'
         }
     } else {
-        Start-Process -FilePath $Path -ArgumentList "/S /V`/" REBOOT=ReallySuppress /qn IKEY=`/"$DUOIKEY`/" SKEY=`/"$DUOSKEY`/" HOST=`/"$DUOHost`/" $ArgumentsString`/"" -Wait -WindowStyle Hidden
+        Start-Process -FilePath $Path -ArgumentList "/S /V`/\" REBOOT=ReallySuppress /qn IKEY=`/\"$DUOIKEY`/\" SKEY=`/\"$DUOSKEY`/\" HOST=`/\"$DUOHost`/\" $ArgumentsString`/\"\" -Wait -WindowStyle Hidden
         Start-Sleep -Seconds 30
         $DUOCurrentVersion = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
         if ($DuoVersion -eq $DUOCurrentVersion) {
@@ -518,7 +519,7 @@ Type `ERROR:` in the Value box.
 Add a new row by clicking the `Add Row` button.  
 ![Task Step 10](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_46.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Task Step 11](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_52.png)  
 
 The following function will pop up on the screen:  
@@ -576,7 +577,7 @@ and click the `Save` button.
 Add a new row by clicking the `Add Row` button.  
 ![Task Step 24](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_46.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Task Step 25](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_52.png)  
 
 The following function will pop up on the screen:  
@@ -610,12 +611,12 @@ and click the `Save` button.
 
 ## Implementation
 
-It is suggested to run the Task once per week against the group `DUO Auth for Windows Login Deployment`.  
+It is suggested to run the task once per week against the group `DUO Auth for Windows Login Deployment`.  
 
-- Goto `Automation` > `Tasks`.
+- Go to `Automation` > `Tasks`.
 - Search for `DUO Install & Upgrade - Latest Version` Task.
 - Select the concerned task.
-- Click on `Schedule` the button to schedule the task/script.  
+- Click on `Schedule` to schedule the task/script.  
 ![Implementation Step 1](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_70.png)  
 
 This screen will appear.  
@@ -624,7 +625,7 @@ This screen will appear.
 - Select the `Schedule` button and click the calendar-looking button present in front of the `Recurrence` option.  
 ![Implementation Step 3](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_72.png)  
 
-- Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.  
+- Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.  
 ![Implementation Step 4](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_73.png)  
 
 - Click the `Select Targets` button to select the concerned target.  
@@ -642,17 +643,4 @@ Custom Field
 ![Output 1](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_77.png)  
 
 Script Log  
-
-
-
-
-
-
-
-
-
-
-
-
-
 

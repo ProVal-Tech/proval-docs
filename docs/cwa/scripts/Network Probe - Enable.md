@@ -8,32 +8,21 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will execute the command to generate a network probe.
+This script executes the command to generate a network probe.
 
-Should be used with a monitor for locations missing network probe
+It should be used with a monitor for locations missing a network probe.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/Network-Probe---Enable/image_1.png)
 
-Script executes the LT Command to enable network probe
+The script executes the LT Command to enable the network probe.
 
 ## Output
 
 No Output - Command Log
-
-
-
-
-
-
-
-
-
-
-
-

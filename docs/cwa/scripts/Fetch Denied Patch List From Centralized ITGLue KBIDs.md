@@ -8,13 +8,14 @@ tags: ['email', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This runs twice per day against our file server "PVL-EUR-FILE-01".  
+This script runs twice per day against our file server "PVL-EUR-FILE-01".  
 The script retrieves a list of denied patches from our [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records) Flexible Asset.  
-This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provaltech.com/repo/config/DeniedPatchReplace.sql). As well as sending an informational email to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com) in the event of failures.  
+This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provaltech.com/repo/config/DeniedPatchReplace.sql). Additionally, it sends an informational email to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com) in the event of failures.  
 
-Note: The script must not be imported to any of our partners.
+**Note:** The script must not be imported to any of our partners.
 
 ## Sample Run
 
@@ -28,9 +29,9 @@ Note: The script must not be imported to any of our partners.
 
 ## Variables
 
-| Name     | Description                                                                 |
-|----------|-----------------------------------------------------------------------------|
-| OutFile  | Result of the powershell script writing E:/repo/config/DeniedPatchReplace.sql file. |
+| Name     | Description                                                                                     |
+|----------|-------------------------------------------------------------------------------------------------|
+| OutFile  | Result of the PowerShell script writing to the E:/repo/config/DeniedPatchReplace.sql file.   |
 
 #### Global Parameters
 
@@ -43,27 +44,15 @@ Note: The script must not be imported to any of our partners.
 
 ## Process
 
-1. Verifies if the Name of the computer is "PVL-EUR-FILE-01"
-2. Executes the PowerShell script to fetch and store the denied patches from ITGlue Flexible Asset to the E:/repo/config/DeniedPatchReplace.sql file.
-3. Run a Get-Content Command to verify the content of E:/repo/config/DeniedPatchReplace.sql file.
-4. Exits if it finds "REPLACE INTO Plugin_ProVal_Denied_Patches" in the file. Otherwise, will send an informational email to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com).
+1. Verify if the name of the computer is "PVL-EUR-FILE-01".
+2. Execute the PowerShell script to fetch and store the denied patches from the ITGlue Flexible Asset to the E:/repo/config/DeniedPatchReplace.sql file.
+3. Run a `Get-Content` command to verify the content of the E:/repo/config/DeniedPatchReplace.sql file.
+4. Exit if it finds "REPLACE INTO Plugin_ProVal_Denied_Patches" in the file. Otherwise, send an informational email to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com).
 
 ## Output
 
 [DeniedPatchReplace.sql](https://file.provaltech.com/repo/config/DeniedPatchReplace.sql)
 
-For Failure:  
-- Script Log  
+For failure:  
+- Script log  
 - Email  
-
-
-
-
-
-
-
-
-
-
-
-

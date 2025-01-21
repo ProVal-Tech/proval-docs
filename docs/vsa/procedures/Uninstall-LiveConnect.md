@@ -8,13 +8,14 @@ tags: ['kaseya', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Overview
 
-Cleanly uninstalls Live Connect (Kaseya Remote Control software) and optionally reboots the endpoint. This can be used to resolve an update prompt issue in VSA, or to cleanly remove the software for any other reason. Checks for 32 or 64 bit versions of the software in case Kaseya ever changes to 64 bit.
+This script cleanly uninstalls Live Connect (Kaseya Remote Control software) and optionally reboots the endpoint. It can be used to resolve an update prompt issue in VSA or to remove the software for any other reason. The script checks for 32 or 64-bit versions of the software in case Kaseya changes to a 64-bit version.
 
 **UPDATE 2/7/22:**
 - Corrected function to follow appropriate naming conventions
-- Removed reboot parameter (Manual reboot should be fine.)
+- Removed reboot parameter (manual reboot should be fine)
 
 ## Requirements
 
@@ -22,7 +23,7 @@ None
 
 ## Process
 
-Run script and choose reboot option 1 or 0. Reboot manually after script runs if not chosen to auto-restart.
+Run the script and choose the reboot option (1 for yes or 0 for no). Reboot manually after the script runs if you do not choose to auto-restart.
 
 ## Payload Usage
 
@@ -45,20 +46,10 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 
 ## Locations
 
-| Payload                       | /repo/scripts/Uninstall-LiveConnect.ps1 |
-|-------------------------------|------------------------------------------|
-| ConnectWise Automate          |                                          |
-| ConnectWise RMM               |                                          |
-| Kaseya VSA                    |                                          |
-| Datto RMM                     |                                          |
-
-
-
-
-
-
-
-
-
-
-
+| Payload                       | Location                                |
+|-------------------------------|-----------------------------------------|
+| Uninstall-LiveConnect.ps1    | /repo/scripts/Uninstall-LiveConnect.ps1 |
+| ConnectWise Automate          |                                         |
+| ConnectWise RMM               |                                         |
+| Kaseya VSA                    |                                         |
+| Datto RMM                     |                                         |

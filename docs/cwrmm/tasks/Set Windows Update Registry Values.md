@@ -8,6 +8,7 @@ tags: ['patching', 'registry', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script is designed to remove any additional registry values from the registry path `Computer/HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU`. Additionally, it ensures that the values for the keys `NoAutoRebootWithLoggedOnUsers` and `NoAutoUpdate` are set to `1`.  
@@ -15,7 +16,7 @@ The script is designed to remove any additional registry values from the registr
 
 CW Support recommends setting these registry keys on the local device to ensure that patching and rebooting occur properly from CW RMM.
 
-Furthermore, the script will make sure that patching access is not disabled for the `System` account by making the necessary registry changes.
+Furthermore, the script will ensure that patching access is not disabled for the `System` account by making the necessary registry changes.
 
 ## Sample Run
 
@@ -23,7 +24,7 @@ Furthermore, the script will make sure that patching access is not disabled for 
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Image](../../../static/img/Set-Windows-Update-Registry-Values/image_4.png)  
 ![Image](../../../static/img/Set-Windows-Update-Registry-Values/image_5.png)  
 
@@ -34,7 +35,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Image](../../../static/img/Set-Windows-Update-Registry-Values/image_7.png)  
 
 A blank function will appear.  
@@ -72,11 +73,11 @@ if ( Test-Path -Path $regKey ) {
     foreach ( $property in ((Get-Item -Path $regKey).Property) ) {
         if ( !(('NoAutoUpdate', 'NoAutoRebootWithLoggedOnUsers') -contains $property) ) {
             try {
-                $value = (Get-ItemProperty -Path $regKey)."${Property}"
-                Write-Output "Removing the registry key $($property) with the value $value"
+                $value = (Get-ItemProperty -Path $regKey).\"${Property}\"
+                Write-Output \"Removing the registry key $($property) with the value $value\"
                 Remove-ItemProperty -Path $regKey -Name $property -Force -Confirm:$false -ErrorAction Stop
             } catch {
-                throw "Failed to remove registry key: $($property). Reason: $($Error[0].Exception.Message)"
+                throw \"Failed to remove registry key: $($property). Reason: $($Error[0].Exception.Message)\"
             }
         }
     }
@@ -84,17 +85,17 @@ if ( Test-Path -Path $regKey ) {
 
 # Set the desired registry values
 foreach ( $prop in ('NoAutoUpdate', 'NoAutoRebootWithLoggedOnUsers') ) {
-    $value = (Get-ItemProperty -Path $regKey -ErrorAction SilentlyContinue)."${prop}"
+    $value = (Get-ItemProperty -Path $regKey -ErrorAction SilentlyContinue).\"${prop}\"
     if ( !($value -eq 1) ) {
         try {
             if ( !$value ) {
-                Write-Output "$prop does not exist. Creating the registry key."
+                Write-Output \"$prop does not exist. Creating the registry key.\"
             } else {
-                Write-Output "Current Value for $($prop): $($Value)"
+                Write-Output \"Current Value for $($prop): $($Value)\"
             }
             Set-RegistryKeyProperty -Path $regKey -Name $prop -Value 1 -Type DWord -Force -ErrorAction Stop
         } catch {
-            throw "Failed to set registry key: $($prop). Reason: $($Error[0].Exception.Message)"
+            throw \"Failed to set registry key: $($prop). Reason: $($Error[0].Exception.Message)\"
         }
     }
 }
@@ -109,7 +110,7 @@ if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindows
         }
         Set-ItemProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
     } catch {
-        throw "Failed to enable Windows Update Access for the system account. Reason: $($Error[0].Exception.Message)"
+        throw \"Failed to enable Windows Update Access for the system account. Reason: $($Error[0].Exception.Message)\"
     }
 }
 ```
@@ -145,15 +146,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

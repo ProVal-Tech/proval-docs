@@ -8,26 +8,15 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This internal monitor detects when a new Super Admin permission is provisioned to a user.
 
 ## Dependencies
 
-@plugin_proval_superadminaudit -- custom table
+`@plugin_proval_superadminaudit` -- custom table
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

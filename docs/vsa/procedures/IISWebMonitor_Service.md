@@ -8,18 +8,7 @@ tags: ['alerting', 'iis']
 draft: false
 unlisted: false
 ---
-## Summery:
 
-a service (needs to be installed) that keeps IIS websites online, restarts the message queue when one goes down, and calls event id's for alerting.
+## Summary:
 
-
-
-
-
-
-
-
-
-
-
-
+This service (which needs to be installed) keeps IIS websites online by restarting the message queue when a site goes down and generating alerts based on specific event IDs.

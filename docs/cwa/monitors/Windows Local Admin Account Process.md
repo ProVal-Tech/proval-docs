@@ -8,11 +8,12 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The purpose of the monitor set is to identify machines that do not have the designated local admin account and machines where the password for the account has not been updated within the specified password age limit. The UserName and Password age parameters are configured in the system properties and client-level Extra Data Fields (EDFs), allowing for customization and adaptability to specific requirements.
 
-Check [Script's](<../scripts/Windows - Admin Account - CreateUpdate.md>) document for more information on EDFs, Script State, and System Properties used in the monitor set.
+Check the [Script's](<../scripts/Windows - Admin Account - CreateUpdate.md>) document for more information on EDFs, Script State, and System Properties used in the monitor set.
 
 ## Dependencies
 
@@ -20,7 +21,7 @@ Check [Script's](<../scripts/Windows - Admin Account - CreateUpdate.md>) documen
 
 ## Target
 
-With the exception of Domain Controllers, only Windows machines belonging to clients that have the `Enabled for Servers and Workstations` selected for the `1a. Local Admin Process` EDF. Selecting the `Enabled for Workstations Only` option will limit the local admin creation to the workstations only.
+With the exception of Domain Controllers, only Windows machines belonging to clients that have the `Enabled for Servers and Workstations` option selected for the `1a. Local Admin Process` EDF will be targeted. Selecting the `Enabled for Workstations Only` option will limit the local admin creation to workstations only.
 
 ![Image](../../../static/img/Windows-Local-Admin-Account-Process/image_1.png)
 
@@ -29,15 +30,3 @@ With the exception of Domain Controllers, only Windows machines belonging to cli
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>) script on the machines detected by the monitor set.
-
-
-
-
-
-
-
-
-
-
-
-

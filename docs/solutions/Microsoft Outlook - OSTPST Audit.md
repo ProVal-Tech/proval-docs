@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This solution is designed to retrieve the file path and size details of OST and PST files from all Windows Workstations and display the data in an Automate dataview. This can be used to spot abnormally large OST or PST files.
@@ -44,15 +45,3 @@ This solution is designed to retrieve the file path and size details of OST and 
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,15 +8,16 @@ tags: ['deployment', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor detects the online Windows agent where the SnapAgent is not installed.
+This monitor detects online Windows agents where the SnapAgent is not installed.
 
-It also depends on the EDFs:
-- BlackPoint SNAP URL -> Client EDF should contain the URL of the installer package downloader.
-- BlackPoint SnapAgent Deploy -> Client EDF should be checked for the deployment confirmation.
-- BlackPoint SnapAgent Deploy Exclude -> The location EDF shouldn't be checked for the deployment else the agents of the locations will be excluded.
-- BlackPoint SnapAgent Exclude -> The computer EDF shouldn't be checked for the deployment else the agent will be excluded.
+It also depends on the following EDFs:
+- **BlackPoint SNAP URL**: The Client EDF should contain the URL of the installer package downloader.
+- **BlackPoint SnapAgent Deploy**: The Client EDF should be checked for deployment confirmation.
+- **BlackPoint SnapAgent Deploy Exclude**: The location EDF should not be checked for deployment; otherwise, agents from those locations will be excluded.
+- **BlackPoint SnapAgent Exclude**: The computer EDF should not be checked for deployment; otherwise, the agent will be excluded.
 
 ## Dependencies
 
@@ -28,20 +29,7 @@ Global
 
 ## Ticketing
 
-- The ticket is controlled by the script "SnapAgent Installer".
-- To enable the ticketing feature it is mandatory to set the ticket category at the monitor level as shown below:
+- The ticket is controlled by the script "SnapAgent Installer."
+- To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level, as shown below:
 
 ![Ticket Category](../../../static/img/BlackPoint-SnapAgent-Deployment/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

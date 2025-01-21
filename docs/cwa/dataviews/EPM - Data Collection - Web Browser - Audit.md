@@ -8,9 +8,10 @@ tags: ['report', 'security', 'web-browser', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the installed web browsers on machines, as well as the status of internet explorer. The browser list which is under auditing is (Mozilla Firefox | Google Chrome | Vivaldi | Waterfox | Librewolf | Opera | Brave | Iceweasel | Tor Browser | Pale Moon | Safari | and Chromium).
+This dataview shows the installed web browsers on machines, as well as the status of Internet Explorer. The browsers under auditing include Mozilla Firefox, Google Chrome, Vivaldi, Waterfox, Librewolf, Opera, Brave, Iceweasel, Tor Browser, Pale Moon, Safari, and Chromium.
 
 ## Columns
 
@@ -20,18 +21,5 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Computer            | Computer name of the agent                  |
 | Operating System    | Operating system info of the agent          |
 | Last Contact        | Last contact with RMM of the agent          |
-| Web Browser Name    | Web browsers detected on the agent.         |
+| Web Browser Name    | Web browsers detected on the agent          |
 | IE Audit            | Status of IE disabled or not                |
-
-
-
-
-
-
-
-
-
-
-
-
-

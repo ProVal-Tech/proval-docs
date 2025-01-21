@@ -8,9 +8,10 @@ tags: ['installation', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview pulls in the software installed for servers and looks for Dell or HP server management software.
+This dataview pulls in the software installed on servers and looks for Dell or HP server management software.
 
 ## Dependencies
 
@@ -18,27 +19,15 @@ None
 
 ## Columns
 
-| Column            | Description                                                                  |
-|-------------------|------------------------------------------------------------------------------|
-| Client Name       | Client Name                                                                  |
-| Location Name     | Location Name                                                                |
-| Agent Name        | Computer Name                                                                |
-| Manufacturer      | Manufacturer of the computer                                                 |
-| Software Status   | Shows: "Missing Dell Open Manage", "Missing HP Insight Manager", "Installed" |
-| Software Name     | Shows the Open Manage or Insights installed on the machine                   |
-| Software Location  | Shows the full path to the installed software                                |
-| DateInstalled     | Shows when the software was installed                                        |
-| Size              | Shows the total size of the installed application                             |
-| Version           | Shows the version of the management software installed on the machine        |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column             | Description                                                                  |
+|--------------------|------------------------------------------------------------------------------|
+| Client Name        | Client Name                                                                  |
+| Location Name      | Location Name                                                                |
+| Agent Name         | Computer Name                                                                |
+| Manufacturer       | Manufacturer of the computer                                                 |
+| Software Status    | Shows: "Missing Dell OpenManage", "Missing HP Insight Manager", "Installed" |
+| Software Name      | Shows the OpenManage or Insights installed on the machine                   |
+| Software Location   | Shows the full path to the installed software                                |
+| Date Installed      | Shows when the software was installed                                        |
+| Size               | Shows the total size of the installed application                             |
+| Version            | Shows the version of the management software installed on the machine        |

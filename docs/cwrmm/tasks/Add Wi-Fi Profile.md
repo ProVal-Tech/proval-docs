@@ -1,4 +1,4 @@
-"---
+---
 id: 'ce5e9466-a5c3-487a-a9b7-5d204093e73e'
 title: 'Add Wi-Fi Profile'
 title_meta: 'Add Wi-Fi Profile for Windows Computers'
@@ -8,6 +8,7 @@ tags: ['networking', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is a CW RMM implementation of the agnostic script [Add-WifiProfile](<../../powershell/Add-WifiProfile.md>). The script can be used to manually add Wi-Fi profiles for Windows computers.
@@ -48,9 +49,9 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ![Task Creation Step 2](../../../static/img/Add-Wi-Fi-Profile/image_6.png)
 
-**Name:** Add Wi-Fi Profile  
-**Description:** `The script can be used to manually add Wi-Fi profiles for Windows computers.`  
-`Requirement: PowerShell v5+`  
+**Name:** Add Wi-Fi Profile  \
+**Description:** `The script can be used to manually add Wi-Fi profiles for Windows computers.`  \
+`Requirement: PowerShell v5+`  \
 **Category:** Custom
 
 ![Task Creation Step 3](../../../static/img/Add-Wi-Fi-Profile/image_7.png)
@@ -318,15 +319,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-"
-
-
-
-
-
-
-
-
-
-

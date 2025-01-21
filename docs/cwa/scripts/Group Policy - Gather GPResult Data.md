@@ -8,9 +8,10 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Generates GPRESULT data and stores it in a custom table.
+This document describes a script that generates GPRESULT data and stores it in a custom table.
 
 ## Sample Run
 
@@ -26,23 +27,10 @@ Generates GPRESULT data and stores it in a custom table.
 
 ## Process
 
-See [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>) for process information.
+Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>) for detailed process information.
 
 ## Output
 
 - Script log
-- Local file on computer
+- Local file on the computer
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

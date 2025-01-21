@@ -8,15 +8,16 @@ tags: ['database']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](<../scripts/Get-PNPDevices DV.md>) script.
+Stores the data collected by the [CWM - Automate - Script - Get-PNPDevices [DV]](<../scripts/Get-PNPDevices DV.md>) script.
 
 ## Dependencies
 
 - [CWM - Automate - Dataview - Get-PNPDevices [Script]](<../dataviews/Get-PNPDevices Script.md>)
 - [CWM - Automate - Script - Get-PNPDevices [DV]](<../scripts/Get-PNPDevices DV.md>)
-- [CWM - Automate - Solution - Pnp Devices Inventory](<../../solutions/Pnp Devices Inventory.md>)
+- [CWM - Automate - Solution - PNP Devices Inventory](<../../solutions/Pnp Devices Inventory.md>)
 
 ## Tables
 
@@ -24,20 +25,8 @@ Stores the data grabbed by the [CWM - Automate - Script - Get-PNPDevices [DV]](<
 
 | Column        | Type         | Explanation                          |
 |---------------|--------------|--------------------------------------|
-| Computerid    | int(11)     | Computerid                           |
-| FriendlyName   | varchar(1000) | Friendly Name of the PnpDevice      |
-| Status        | varchar(1000) | Current Status of the PnpDevice     |
-| Class         | Varchar(1000) | Class of the PnpDevice               |
-| Date          | datetime     | Script Run Time                      |
-
-
-
-
-
-
-
-
-
-
-
-
+| Computerid    | int(11)     | Computer ID                           |
+| FriendlyName   | varchar(1000) | Friendly name of the PNP device      |
+| Status        | varchar(1000) | Current status of the PNP device     |
+| Class         | varchar(1000) | Class of the PNP device               |
+| Date          | datetime     | Script run time                      |

@@ -10,37 +10,29 @@ unlisted: false
 ---
 
 ## Description
-Set Custom Display Scaling for Windows Machines
+Set custom display scaling for Windows machines.
 
 ## Requirements
-Windows OS, Powershell 5
+- Windows OS
+- PowerShell 5
 
 ## Usage
-- Set the registry path 
-- Calculate the display scale value
-- Modify the LogPixels and Win8DpiScaling registry keys with the calculated value and enable DPI scaling
+1. Set the registry path.
+2. Calculate the display scale value.
+3. Modify the `LogPixels` and `Win8DpiScaling` registry keys with the calculated value and enable DPI scaling.
 
-
-Set Custom Display Scaling for Windows Machines
+To set the custom display scaling, use the following command:
 
 ```powershell
 .\Set-DisplayScaling.ps1 -Scale '150'
 ```
 
 ## Parameters
-| Parameter         | Alias | Required  | Validate Set        | Type  | Description                         |
-| ----------------- | ----- | --------- | ------------------- | ----- | ------------------------------------|
-| `Scale`           |       | True      | 100 125,150,175,200 | Int32 | Percentage to set the Display scale |
+
+| Parameter         | Alias | Required | Validate Set        | Type  | Description                         |
+| ----------------- | ----- | -------- | ------------------- | ----- | ------------------------------------|
+| `Scale`           |       | True     | 100, 125, 150, 175, 200 | Int32 | Percentage to set the display scale |
 
 ## Output
-    .\Set-DisplayScaling-log.txt
-    .\Set-DisplayScaling-Error.txt
-
-
-
-
-
-
-
-
-
+- `.\Set-DisplayScaling-log.txt`
+- `.\Set-DisplayScaling-Error.txt`

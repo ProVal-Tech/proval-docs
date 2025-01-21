@@ -8,43 +8,30 @@ tags: ['compliance', 'patching', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-A thorough examination of Windows 10 computers and their patching for each client.
+A thorough examination of Windows 10 computers and their patching status for each client.
 
 ## Requirements
 
-1. [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) must be present in order to make this dataview to work.
+1. [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) must be present for this dataview to work.
 
 ## Columns
 
 | Column                             | Description                                                                                      |
 |------------------------------------|--------------------------------------------------------------------------------------------------|
 | Client Name                        | Name of the Client                                                                               |
-| #Windows 10 Computers              | Total number of the Windows 10 Computers.                                                       |
-| #Windows 10 in Patching            | Total number of the Windows 10 Computers with a patch policy applied.                          |
-| #Supported Windows 10              | Total number of the Supported Windows 10 computers. It is calculated on the basis of the SupportMainstreamEnd, SupportEnterpriseEnd and SupportLTSBEnd columns of the `plugin_proval_windows_os_support` table. |
-| #Unsupported Windows 10            | Total number of the Unsupported Windows 10 computers.                                           |
+| # Windows 10 Computers             | Total number of Windows 10 Computers.                                                           |
+| # Windows 10 in Patching           | Total number of Windows 10 Computers with a patch policy applied.                              |
+| # Supported Windows 10             | Total number of Supported Windows 10 computers. This is calculated based on the SupportMainstreamEnd, SupportEnterpriseEnd, and SupportLTSBEnd columns of the `plugin_proval_windows_os_support` table. |
+| # Unsupported Windows 10           | Total number of Unsupported Windows 10 computers.                                               |
 | Supported Windows 10 Compliance     | Patch Compliance for the Supported Windows 10 computers.                                        |
-| UnSupported Windows 10 Compliance   | Patch Compliance for the UnSupported Windows 10 computers.                                      |
-| #Approved Patches Windows 10       | Total Number of the approved patches for Windows 10 computers.                                  |
-| #Denied Patches Windows 10         | Total Number of the denied patches for Windows 10 computers.                                    |
-| #Ignored Patches Windows 10        | Total Number of the ignored patches for Windows 10 computers.                                   |
-| #Installed Patches Windows 10      | Total Number of the installed patches for Windows 10 computers.                                 |
-| #Missing patches Windows 10        | Total Number of the missing patches for Windows 10 computers.                                   |
-| #Failed patches Windows 10         | Total Number of the Failed patches for Windows 10 computers.                                    |
-| Windows 10 Patch Compliance         | Avg patch compliance for all the Windows 10 computers.                                         |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Unsupported Windows 10 Compliance   | Patch Compliance for the Unsupported Windows 10 computers.                                      |
+| # Approved Patches Windows 10      | Total number of approved patches for Windows 10 computers.                                      |
+| # Denied Patches Windows 10        | Total number of denied patches for Windows 10 computers.                                        |
+| # Ignored Patches Windows 10       | Total number of ignored patches for Windows 10 computers.                                       |
+| # Installed Patches Windows 10     | Total number of installed patches for Windows 10 computers.                                     |
+| # Missing Patches Windows 10       | Total number of missing patches for Windows 10 computers.                                       |
+| # Failed Patches Windows 10        | Total number of failed patches for Windows 10 computers.                                        |
+| Windows 10 Patch Compliance         | Average patch compliance for all Windows 10 computers.                                          |

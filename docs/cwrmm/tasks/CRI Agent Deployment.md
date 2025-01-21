@@ -8,6 +8,7 @@ tags: ['deployment', 'installation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task is designed to deploy the Cyrisma Censor Application.
@@ -26,16 +27,16 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 ![Create Task](../../../static/img/CRI-Agent-Deployment/image_3.png)
 
-Name: CRI Agent Deployment  
-Description: This script installs the CRI Agent to the machines.  
-OS Supported: Windows  
-Category: Custom  
+- **Name:** CRI Agent Deployment  
+- **Description:** This script installs the CRI Agent on the machines.  
+- **OS Supported:** Windows  
+- **Category:** Custom  
 
 ![Task Details](../../../static/img/CRI-Agent-Deployment/image_4.png)
 
 ### Script
 
-Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
 ![Add Row](../../../static/img/CRI-Agent-Deployment/image_5.png)
 
@@ -55,13 +56,13 @@ This sets the variable `CryismaAgent_URL` with the value of a custom field 'Cryi
 
 This sets the variable `CryismaAgent_Key` with the value of a custom field 'CryismaAgent_Key' [CW RMM - Cyrisma Custom Fields](<../custom-fields/CW RMM - Cyrisma Custom Fields.md>).
 
-### Row 3: Function: PowerShell script
+### Row 3: Function: PowerShell Script
 
 ![Row 3 Image 1](../../../static/img/CRI-Agent-Deployment/image_10.png)
 
 ![Row 3 Image 2](../../../static/img/CRI-Agent-Deployment/image_11.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to `1800` seconds.
+Paste the following PowerShell script and set the expected time of script execution to `1800` seconds.
 
 ```
 $InstallerCheck = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Cyrisma' } | Select-Object -ExpandProperty DisplayName
@@ -72,18 +73,18 @@ if ($InstallerCheck) {
     $EXEURL = 'https://dl.cyrisma.com/6167656E7473/Cyrisma_Setup.exe'
     $WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
     $EXEPath = "$WorkingDirectory/$ProjectName.exe"
-    if ( !(Test-Path $WorkingDirectory) ) {
+    if (!(Test-Path $WorkingDirectory)) {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
-            throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+            throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
     }
-    if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+    if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
         $ACl = Get-Acl $WorkingDirectory
         $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
         $Acl.AddAccessRule($AccessRule)
-        Set-Acl  $WorkingDirectory $Acl
+        Set-Acl $WorkingDirectory $Acl
     }
     Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
     if (!(Test-Path -Path $EXEPath)) {
@@ -117,32 +118,32 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 4a: Condition: Output Contains
 
-In the IF part, enter `Installation failed` in the right box of the "Output Contains" Part.
+In the IF part, enter `Installation failed` in the right box of the "Output Contains" section.
 
 ![Condition Image](../../../static/img/CRI-Agent-Deployment/image_16.png)
 
 ### Row 4b: Function: Set Custom Field
 
-Add a new row by clicking on the Add row button. 
+Add a new row by clicking on the Add Row button.
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function 'Set Custom Field'. When you select `Set Custom Field`, it will open up a new window.
 
 In this window, search for the `Cryisma_Status` field.
 
-**Custom Field:** Cryisma_Status  
-**Value:** Success
+- **Custom Field:** Cryisma_Status  
+- **Value:** Success  
 
 ![Custom Field](../../../static/img/CRI-Agent-Deployment/image_17.png)
 
 ### Row 4c: Function: Set Custom Field
 
-Add a new row by clicking on the Add row button in the ELSE part and select Script 'Set Custom Field' function again.
+Add a new row by clicking on the Add Row button in the ELSE part and select the Script 'Set Custom Field' function again.
 
-In this one set Custom Field and Value like shown below.
+In this one, set the Custom Field and Value as shown below.
 
 ![Set Custom Field](../../../static/img/CRI-Agent-Deployment/image_18.png)
 
-Once all items are added, please save the task. The final task should look like the below screenshot.
+Once all items are added, please save the task. The final task should look like the screenshot below.
 
 ![Final Task Screenshot](../../../static/img/CRI-Agent-Deployment/image_19.png)
 
@@ -151,9 +152,9 @@ Once all items are added, please save the task. The final task should look like 
 It is suggested to run the Task every 2 hours against the group "Cyrisma Sensor Deployment".
 
 - Go to `Automation` > `Tasks.`
-- Search for `CRI Agent Deployment` Task.
+- Search for the `CRI Agent Deployment` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 This screen will appear.
 
@@ -182,16 +183,4 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field
-
-
-
-
-
-
-
-
-
-
-
-
 

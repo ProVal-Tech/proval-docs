@@ -8,9 +8,10 @@ tags: ['office365', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Repairs the Office Click2Run Automatic Update process on an endpoint, using the ProVal Agnostic Solution:  
+This document describes the process to repair the Office Click2Run Automatic Update on an endpoint using the ProVal Agnostic Solution. For detailed instructions, refer to:  
 [SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>)
 
 ## Example Agent Procedure Log
@@ -23,33 +24,20 @@ Repairs the Office Click2Run Automatic Update process on an endpoint, using the 
 | 9:08:49 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System) | Success THEN                                                                                                                         | provaltech.com/dan.hicks    |
 | 9:08:49 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0016 | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server. | provaltech.com/dan.hicks    |
 | 9:08:49 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0016 | Informational: GetFile command overwrote the server file C://Kaseya//UserProfiles//229175768944442//GetFiles//..//docs//psoutput.txt with the new contents from c://provaltech//psoutput.txt in THEN step 3. | provaltech.com/dan.hicks    |
-| 9:08:42 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "%ProgramData%//_automation//AgentProcedure//OfficeAutomaticUpdateRepair//Repair-OfficeAutomaticUpdate.ps1" >"c://provaltech//psoutputtmp.txt" | provaltech.com/dan.hicks    |
+| 9:08:42 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: \"\" -command \"%ProgramData%//_automation//AgentProcedure//OfficeAutomaticUpdateRepair//Repair-OfficeAutomaticUpdate.ps1\" >\"c://provaltech//psoutputtmp.txt\" | provaltech.com/dan.hicks    |
 | 9:08:42 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                                                                   | provaltech.com/dan.hicks    |
 | 9:08:42 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as %ProgramData%//_automation//AgentProcedure//OfficeAutomaticUpdateRepair//Repair-OfficeAutomaticUpdate.ps1 | provaltech.com/dan.hicks    |
 | 9:08:42 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                                                                 | provaltech.com/dan.hicks    |
 | 9:08:40 am 21-Feb-23    | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                                                               | provaltech.com/dan.hicks    |
 | 9:08:38 am 21-Feb-23    | Execute Powershell Command                       | Success THEN                                                                                                                         | provaltech.com/dan.hicks    |
 | 9:08:37 am 21-Feb-23    | Execute Powershell Command-0011                 | Powershell command completed!                                                                                                        | provaltech.com/dan.hicks    |
-| 9:08:35 am 21-Feb-23    | Execute Powershell Command-0011                 | Executing powershell "" -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name OfficeAutomaticUpdateRepair" "" | provaltech.com/dan.hicks    |
+| 9:08:35 am 21-Feb-23    | Execute Powershell Command-0011                 | Executing powershell \"\" -Command \"New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name OfficeAutomaticUpdateRepair\" \"\" | provaltech.com/dan.hicks    |
 | 9:08:35 am 21-Feb-23    | Execute Powershell Command-0010                 | Not sending output to variable.                                                                                                      | provaltech.com/dan.hicks    |
-| 9:08:35 am 21-Feb-23    | Execute Powershell Command-0008                 | New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name OfficeAutomaticUpdateRepair" | provaltech.com/dan.hicks    |
+| 9:08:35 am 21-Feb-23    | Execute Powershell Command-0008                 | New command variable is: -Command \"New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name OfficeAutomaticUpdateRepair\" | provaltech.com/dan.hicks    |
 | 9:08:35 am 21-Feb-23    | Execute Powershell Command-0008                 | Custom commands detected as New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name OfficeAutomaticUpdateRepair | provaltech.com/dan.hicks    |
 | 9:08:31 am 21-Feb-23    | Execute Powershell Command-0002                 | Powershell is present.                                                                                                               | provaltech.com/dan.hicks    |
-| 9:08:23 am 21-Feb-23    | Run Now - Automatic Update Repair                | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Automatic Update Repair to run at Feb 21 2023 9:08AM                   |                             |
+| 9:08:23 am 21-Feb-23    | Run Now - Automatic Update Repair                | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Automatic Update Repair to run at Feb 21 2023 9:08 AM                   |                             |
 
 ## Output
 
 Agent Procedure Log
-
-
-
-
-
-
-
-
-
-
-
-
-

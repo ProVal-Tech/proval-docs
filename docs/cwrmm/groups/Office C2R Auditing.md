@@ -8,9 +8,10 @@ tags: ['setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Computers with Microsoft 365 installed.
+This document outlines the process for creating a dynamic group for computers with Microsoft 365 installed.
 
 ## Group Creation
 
@@ -33,7 +34,7 @@ Computers with Microsoft 365 installed.
 
 5. Search and select the `Installed Software Name` custom field from the search box.  
    ![Image](../../../static/img/Office-C2R-Auditing/image_7.png)  
-   Set operator to `Contains any of` and `Microsoft 365` in the comparison condition.  
+   Set the operator to `Contains any of` and enter `Microsoft 365` in the comparison condition.  
    ![Image](../../../static/img/Office-C2R-Auditing/image_8.png)  
    **Condition:** `Installed Software Name` `Contains any of` `Microsoft 365`
 
@@ -44,15 +45,3 @@ Computers with Microsoft 365 installed.
 
 ![Image](../../../static/img/Office-C2R-Auditing/image_10.png)  
 ![Image](../../../static/img/Office-C2R-Auditing/image_11.png)
-
-
-
-
-
-
-
-
-
-
-
-

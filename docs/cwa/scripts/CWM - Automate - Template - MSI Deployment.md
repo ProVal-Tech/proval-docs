@@ -8,20 +8,21 @@ tags: ['deployment', 'installation', 'software']
 draft: false
 unlisted: false
 ---
+
 This document is crafted to walk you through the utilization of the `Template - MSI Deployment` for creating a software installation script that employs a .msi file for the installation process.
 
 ## Steps
 
 1. Export the `Template - MSI Deployment` script from our environment and import it to the client environment.
 
-2. Right-Click on the script and select Duplicate.  
+2. Right-click on the script and select Duplicate.  
    ![Duplicate Script](../../../static/img/CWM---Automate---Template---MSI-Deployment/image_1.png)
 
-3. Rename the copied script to something pertaining to what you are installing, like shown below:  
+3. Rename the copied script to something pertaining to what you are installing, as shown below:  
    ![Rename Script](../../../static/img/CWM---Automate---Template---MSI-Deployment/image_2.png)  
    ![Rename Script](../../../static/img/CWM---Automate---Template---MSI-Deployment/image_3.png)
 
-4. Right Click the newly Renamed Software Install script and select Send To --> Script Folder --> Send to the 'ProVal - Client Specific' folder.  
+4. Right-click the newly renamed software install script and select Send To → Script Folder → Send to the 'ProVal - Client Specific' folder.  
    ![Send to Script Folder](../../../static/img/CWM---Automate---Template---MSI-Deployment/image_4.png)  
    ![Send to ProVal Folder](../../../static/img/CWM---Automate---Template---MSI-Deployment/image_5.png)
 
@@ -41,7 +42,7 @@ This document is crafted to walk you through the utilization of the `Template - 
    - `DownloadURL`: **(Step 5)**: This is the URL from which the .msi package can be downloaded.
    - `SoftwareName`: **(Step 7)**: This is the exact name of the application as it appears in the software tab of a machine where it has already been installed.
    - `AppName`: **(Step 9)**: This is the name used to store the .msi package on the endpoint. It’s recommended to avoid spaces or special characters in the package name.
-   - `AdditionalParameters`: **(Step 11)**: These are the extra parameters required to install the script, apart from the `msiexec /qn /i "\<Package Path.msi>"`. For example, if the complete command to install an application named ABC is `msiexec /qn /i "C://Temp//ABC.msi" /noreboot ACCEPTEULA`, then `/noreboot ACCEPTEULA` should be stored in this variable.
+   - `AdditionalParameters`: **(Step 11)**: These are the extra parameters required to install the script, apart from the `msiexec /qn /i \"<Package Path.msi>\"`. For example, if the complete command to install an application named ABC is `msiexec /qn /i \"C://Temp//ABC.msi\" /noreboot ACCEPTEULA`, then `/noreboot ACCEPTEULA` should be stored in this variable.
 
 ## Example
 
@@ -55,32 +56,21 @@ With this information at hand, we are now equipped to deploy the application. So
 
 1. Copy the script titled `Template - MSI Deployment` located in the `ProVal - Templates` folder. Rename the copied script to `Deploy An Msi Application`.
 
-2. Generate the download URL to download the installer. that would be [`https://fqdnofthepartner/labtech/transfer/software/msipackage.msi`](https://fqdnofthepartner/labtech/transfer/software/msipackage.msi) in this case. Ensure that the download URL can download the `msipackage.msi` file.
+2. Generate the download URL to download the installer. That would be [`https://fqdnofthepartner/labtech/transfer/software/msipackage.msi`](https://fqdnofthepartner/labtech/transfer/software/msipackage.msi) in this case. Ensure that the download URL can download the `msipackage.msi` file.
 
-3. Figure out the complete installation command for the `msipackage.msi` package. Let's say the command needed to install the application is `msiexec /qn /i "msipackage.msi" /noreboot /Allowsomething=1 /AllUsers AcceptEULA`.
+3. Figure out the complete installation command for the `msipackage.msi` package. Let's say the command needed to install the application is `msiexec /qn /i \"msipackage.msi\" /noreboot /Allowsomething=1 /AllUsers AcceptEULA`.
 
 4. Now we have all the values to configure the Global Variables.
 
 5. Set the Dynamic Variables.  
-   **TicketCategory**: Leave this variable to `0`. Since we do not have any information on whether the partner expects a failure ticket or not.  
+   **TicketCategory**: Leave this variable as `0`, since we do not have any information on whether the partner expects a failure ticket or not.  
    **DownloadURL**: [`https://fqdnofthepartner/labtech/transfer/software/msipackage.msi`](https://fqdnofthepartner/labtech/transfer/software/msipackage.msi)  
    **SoftwareName**: `An Msi Application`  
    **AppName**: `msipackage`  
-   **Additionalparameters**: `/noreboot /Allowsomething=1 /AllUsers AcceptEULA`  
+   **AdditionalParameters**: `/noreboot /Allowsomething=1 /AllUsers AcceptEULA`  
    ![Dynamic Variables](../../../static/img/CWM---Automate---Template---MSI-Deployment/image_8.png)  
    **You do not need to convert the symbols. The conversion portrayed in the screenshot is performed by Automate itself.**
 
 6. Save the script and test it.
 
 7. After the script is prepared, please verify with the partner or consultant whether they would like the script to also generate a ticket in case of failure. If needed, assign the appropriate ticket category ID to the `ticketcreationcategory` variable.
-
-
-
-
-
-
-
-
-
-
-

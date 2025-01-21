@@ -8,29 +8,17 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Alerts if a computer or computers have the wrong Webroot Keycode assigned.
+This document alerts administrators if a computer or multiple computers have the wrong Webroot Keycode assigned.
 
 ## Dependencies
 
 - [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
-- [SEC - Endpoint Protection - Dataview - Webroot KeyCode Audit[Script]](<../dataviews/Webroot KeyCode AuditScript.md>)
-- [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](<../scripts/Webroot Keycode Verification.md>)
+- [SEC - Endpoint Protection - Dataview - Webroot KeyCode Audit (Script)](<../dataviews/Webroot KeyCode AuditScript.md>)
+- [EPM - Data Collection - Script - Webroot Hashed Key Retrieval (DV)](<../scripts/Webroot Keycode Verification.md>)
 
 ## Target
 
-Targets the Webroot Group created in the solution document in the Audit Process Setup Section.
-
-
-
-
-
-
-
-
-
-
-
-
-
+This targets the Webroot Group created in the solution document in the Audit Process Setup section.

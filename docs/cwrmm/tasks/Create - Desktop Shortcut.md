@@ -8,15 +8,16 @@ tags: ['setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Creates a shortcut in the Public Desktop folder.
+This document describes how to create a shortcut in the Public Desktop folder.
 
 ## Sample Run
 
 ![Sample Run Image 1](../../../static/img/Create---Desktop-Shortcut/image_1.png)
 
-To add desktop shortcut for [https://chatgpt.com/](https://chatgpt.com/)
+To add a desktop shortcut for [https://chatgpt.com/](https://chatgpt.com/):
 
 ![Sample Run Image 2](../../../static/img/Create---Desktop-Shortcut/image_2.png)
 
@@ -32,7 +33,7 @@ Select `Run Now` and click on `Run Task`:
 
 | Name          | Example                                         | Required | Description                                                                                      |
 |---------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------------|
-| TargetUri     | [https://www.google.com/](https://www.google.com/) | True     | The target path of the shortcut. This can be a local or web URI. Must begin with '\<DRIVE_LETTER>:/' or 'Https://' or 'http://' |
+| TargetUri     | [https://www.google.com/](https://www.google.com/) | True     | The target path of the shortcut. This can be a local or web URI. Must begin with '\\<DRIVE_LETTER>:/', 'Https://', or 'http://' |
 | ShortcutName  | Google                                          | False    | The optional name of the shortcut being set. If not provided, the file name or DnsSafeHost property will be used as the shortcut name. |
 | IconLocation   | --                                             | False    | Optionally set an *.ico file as the shortcut icon.                                            |
 
@@ -40,14 +41,14 @@ Select `Run Now` and click on `Run Task`:
 
 ## Implementation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Implementation Image 1](../../../static/img/Create---Desktop-Shortcut/image_5.png)
 
 ![Implementation Image 2](../../../static/img/Create---Desktop-Shortcut/image_6.png)
 
-**Name:** Create - Desktop Shortcut  
-**Description:** Creates a shortcut in the Public Desktop folder.  
+**Name:** Create - Desktop Shortcut  \
+**Description:** Creates a shortcut in the Public Desktop folder.  \
 **Category:** Management  
 
 ![Implementation Image 3](../../../static/img/Create---Desktop-Shortcut/image_7.png)
@@ -62,11 +63,11 @@ This screen will appear.
 
 ![Parameters Image 2](../../../static/img/Create---Desktop-Shortcut/image_9.png)
 
-## TargetUri
+### TargetUri
 
 - Set `TargetUri` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
-- Toggle ON the `Required Field` button
+- Toggle ON the `Required Field` button.
 - Click the `Save` button.
 
 ![TargetUri Image](../../../static/img/Create---Desktop-Shortcut/image_10.png)
@@ -103,11 +104,11 @@ Once all the parameters are created, it should look like this:
 
 ![Parameters Created Image](../../../static/img/Create---Desktop-Shortcut/image_16.png)
 
-Proceed with the below steps to create a task.
+Proceed with the following steps to create a task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Task Image](../../../static/img/Create---Desktop-Shortcut/image_17.png)
 
@@ -128,21 +129,22 @@ The following function will pop up on the screen:
 Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
 ```
-# # Parameters and Globals
-# # Parameters and Globals # # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# Parameters and Globals
+# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 
 $TargetUri = '@TargetUri@'
 $ShortcutName = '@ShortcutName@'
 $IconLocation = '@IconLocation@'
 $Parameters = @{}
 
-if (( $IconLocation -match '//.ico$') ) 
-{$Parameters['IconLocation'] = $IconLocation}
+if (($IconLocation -match '//.ico$')) {
+    $Parameters['IconLocation'] = $IconLocation
+}
 
 if ($TargetUri -match ':') {
-$Parameters['TargetUri'] = $TargetUri
+    $Parameters['TargetUri'] = $TargetUri
 } else {
-throw 'Invalid Target'
+    throw 'Invalid Target'
 }
 
 $Parameters['ShortcutName'] = $ShortcutName
@@ -172,6 +174,7 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
+
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -180,11 +183,11 @@ if ($Parameters) {
 }
 #endregion
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -227,16 +230,3 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview publishes the defragmentation scan result by using a script @Windows Drive Defragmentation.
+This dataview publishes the defragmentation scan results by using the script @Windows Drive Defragmentation.
 
 ## Dependencies
 
@@ -22,7 +23,7 @@ This dataview publishes the defragmentation scan result by using a script @Windo
 |----------------------|---------------------------------------------------------|
 | Client Name          | Displays the name of the client                         |
 | Client ID            | Displays the ID of the client                           |
-| Computer Name        | Displays the Computer Name of the machine               |
+| Computer Name        | Displays the computer name of the machine               |
 | Computer ID          | Displays the computer ID of the machine                 |
 | Location Name        | Displays the location name of the client                |
 | Location ID          | Displays the location ID                                 |
@@ -30,16 +31,3 @@ This dataview publishes the defragmentation scan result by using a script @Windo
 | Script Ran Date      | Displays the date when the script ran                   |
 | Drive Fragmented     | Displays the drive letter of the fragmented drive       |
 | Drive Fragment Report | Displays the full report of fragmentation fetched by the script |
-
-
-
-
-
-
-
-
-
-
-
-
-

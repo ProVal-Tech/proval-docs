@@ -8,9 +8,10 @@ tags: ['report']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the detail of the Processor Architecture.
+This dataview shows the details of the Processor Architecture.
 
 The output is:
 
@@ -19,7 +20,7 @@ The output is:
 - Alpha
 - PowerPC
 - ARM
-- Itanium-based systems (ia64)
+- Itanium-based systems (IA-64)
 - AMD64
 - ARM64
 - Unknown architecture
@@ -30,25 +31,11 @@ The output is:
 
 ## Columns
 
-| Column               | Description                                      |
-|---------------------|--------------------------------------------------|
-| Client              | Client Name of the agent                         |
-| Location            | Location Name of the agent                       |
-| Computer            | Computer Name of the agent                       |
-| Operating System    | Operating System name of the agent               |
-| LastContact         | Last contact of an agent with the RMM           |
+| Column                | Description                                      |
+|----------------------|--------------------------------------------------|
+| Client               | Client Name of the agent                         |
+| Location             | Location Name of the agent                       |
+| Computer             | Computer Name of the agent                       |
+| Operating System     | Operating System name of the agent               |
+| Last Contact         | Last contact of an agent with the RMM           |
 | Processor Architecture | Processor Architecture name                    |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

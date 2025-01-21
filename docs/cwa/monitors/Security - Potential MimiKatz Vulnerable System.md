@@ -8,27 +8,16 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor detects the agent where MimiKatz potential threat detected dependent on roles detection.
+This monitor detects potential threats from MimiKatz based on agent roles.
 
 ## Dependencies
 
-- @Mimikatz - Potential Threat -- Roles
-- @Mimikatz registry disable -- Script
+- @Mimikatz - Potential Threat - Roles
+- @Mimikatz registry disable - Script
 
 ## Target
 
 Windows Agent
-
-
-
-
-
-
-
-
-
-
-
-

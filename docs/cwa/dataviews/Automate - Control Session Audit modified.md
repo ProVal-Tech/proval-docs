@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview helps you audit control sessions. It helps you track details like participant name, connection, and disconnection time.
+This dataview helps you audit control sessions by tracking details such as participant names, connection times, and disconnection times.
 
 ## Columns
 
@@ -19,21 +20,9 @@ This dataview helps you audit control sessions. It helps you track details like 
 | Client            | Client name.                                                |
 | Location          | Location name.                                             |
 | Computer          | Computer name.                                            |
-| ComputerID       | Computer id.                                             |
+| ComputerID       | Computer ID.                                             |
 | SessionName       | Displays the name of the connected session.                |
 | ParticipantName   | Displays the name of the participant connected to the session. |
-| ConnectedTime     | Displays the time when the participant connected the session. |
-| DisconnectedTime   | Displays the time when the participant disconnected the session. |
+| ConnectedTime     | Displays the time when the participant connected to the session. |
+| DisconnectedTime   | Displays the time when the participant disconnected from the session. |
 | Duration          | Displays the total duration of the connected session.      |
-
-
-
-
-
-
-
-
-
-
-
-

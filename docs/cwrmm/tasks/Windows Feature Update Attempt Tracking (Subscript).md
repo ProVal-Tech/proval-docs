@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is a subscript used for tracking the number of times the Windows Feature Upgrade solution has run and enters that value into the `WinFeatUpgradeAttempts` field.
@@ -23,7 +24,7 @@ The script is intended to be called from the task [CW RMM - Task - Feature Updat
 
 ## Create Script
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_1.png)
 
@@ -55,7 +56,7 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_8.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $output='@reset@'
@@ -64,13 +65,13 @@ $output
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_9.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_10.png)
 
 ### Row 2 Logic: If Then
 
-Insert a new `If/Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_11.png)  
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_12.png)
@@ -93,7 +94,7 @@ Search and select the `Script Log` function in the new row.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_16.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Reset Variable = %output%  
 Resetting WinFeatUpgradeAttempts Custom Field to 0.`
 
@@ -119,7 +120,7 @@ Search and select the `WinFeatUpgradeAttempts` Custom Field.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_23.png)
 
-Type `0` in the `Value` box and click the Save button.
+Type `0` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_24.png)
 
@@ -137,7 +138,7 @@ Select `Set Pre-defined Variable` function.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_27.png)
 
-Type `VarCheck` in the `Variable Name` field, Mark the `Custom Field` Check box, select the `WinFeatUpgradeAttempts` in the Custom Field box and click the `Save` button.
+Type `VarCheck` in the `Variable Name` field, mark the `Custom Field` checkbox, select `WinFeatUpgradeAttempts` in the Custom Field box, and click the `Save` button.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_28.png)
 
@@ -155,7 +156,7 @@ Search and select the `Script Log` function in the new row.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_16.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Win Feature Pack Upgrade Attempts = @varcheck@`
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_30.png)
@@ -176,7 +177,7 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_8.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $Number = @VarCheck@
@@ -186,7 +187,7 @@ $Number
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_32.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_10.png)
 
@@ -202,7 +203,7 @@ Search and select the `Script Log` function in the new row.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_16.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `%output%`
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_33.png)
@@ -225,13 +226,13 @@ Search and select the `WinFeatUpgradeAttempts` Custom Field.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_23.png)
 
-Type `%Output%` in the `Value` box and click the Save button.
+Type `%Output%` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_35.png)
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_36.png)
 
-Click the `Save` button to save the Task.
+Click the `Save` button to save the task.
 
 ![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_37.png)
 
@@ -245,15 +246,3 @@ Click the `Save` button to save the Task.
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

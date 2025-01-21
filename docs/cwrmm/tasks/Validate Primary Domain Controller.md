@@ -8,11 +8,12 @@ tags: ['domain']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task validates whether the endpoint is a primary domain controller or not. It updates the value of [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>) custom field, which is then used to create the [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>) group.
+This task validates whether the endpoint is a primary domain controller. It updates the value of the [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>) custom field, which is then used to create the [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>) group.
 
-This task should be scheduled to run once per week/month against the [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group.
+This task should be scheduled to run once per week or month against the [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group.
 
 ## Sample Run
 
@@ -33,7 +34,7 @@ Create the Custom Field [CW RMM - Custom Field - Is Primary Domain Controller](<
 
 ### Create Script
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Script Editor](../../../static/img/Validate-Primary-Domain-Controller/image_3.png)
 
@@ -41,7 +42,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Name:** Validate Primary Domain Controller
 
-**Description:** Validate whether the endpoint is an infrastructure master or not and mark the `Is Primary Domain Controller` Custom Field.
+**Description:** Validate whether the endpoint is an infrastructure master or not and mark the `Is Primary Domain Controller` custom field.
 
 **Category:** Custom
 
@@ -74,25 +75,25 @@ if ((Get-ADDomain -ErrorAction SilentlyContinue).InfrastructureMaster -match $en
 
 ##### Row 2a Condition: Output Contains
 
-Enter `yes` in the text box.
+Enter `Yes` in the text box.
 
 ![Output Contains](../../../static/img/Validate-Primary-Domain-Controller/image_12.png)
 
 ##### Row 2b Function: Set Custom Field
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the `Add Row` button.
 
 ![Add Row 2](../../../static/img/Validate-Primary-Domain-Controller/image_13.png)
 
-Select `Set Custom Field` Function.
+Select `Set Custom Field` function.
 
 ![Set Custom Field](../../../static/img/Validate-Primary-Domain-Controller/image_14.png)
 
-When you select `set custom field`, that will open up a new window.
+When you select `Set Custom Field`, a new window will open.
 
 ![Set Custom Field Window](../../../static/img/Validate-Primary-Domain-Controller/image_15.png)
 
-In this window, search for `Is Primary Domain Controller` field.
+In this window, search for the `Is Primary Domain Controller` field.
 
 **Custom Field:** Is Primary Domain Controller
 
@@ -102,18 +103,18 @@ In this window, search for `Is Primary Domain Controller` field.
 
 ![Final Setup 2](../../../static/img/Validate-Primary-Domain-Controller/image_18.png)
 
-Once all items are added, please save the task. The final task should look like the below screenshot.
+Once all items are added, please save the task. The final task should look like the screenshot below.
 
 ![Final Task Screenshot](../../../static/img/Validate-Primary-Domain-Controller/image_19.png)
 
 ### Deployment
 
-It is suggested to run the Task once per hour against the primary domain controllers or infrastructure masters.
+It is suggested to run the task once per hour against the primary domain controllers or infrastructure masters.
 
 - Go to `Automation` > `Tasks`.
 - Search for `Validate Primary Domain Controller Task`.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Button](../../../static/img/Validate-Primary-Domain-Controller/image_20.png)
 
@@ -129,12 +130,12 @@ This pop-up box will appear.
 
 ![Repeat Options](../../../static/img/Validate-Primary-Domain-Controller/image_23.png)
 
-Select `Week(s)` option from the Repeat dropdown and select a day to schedule the task.
+Select the `Week(s)` option from the Repeat dropdown and select a day to schedule the task.
 
 ![Select Week](../../../static/img/Validate-Primary-Domain-Controller/image_24.png)
 ![Select Day](../../../static/img/Validate-Primary-Domain-Controller/image_25.png)
 
-Search for `Domain Controllers` in the `Resources*` and select `Domain Controllers` group.
+Search for `Domain Controllers` in the `Resources*` and select the `Domain Controllers` group.
 
 ![Domain Controllers](../../../static/img/Validate-Primary-Domain-Controller/image_26.png)
 
@@ -150,15 +151,3 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Custom Field ![Custom Field Output](../../../static/img/Validate-Primary-Domain-Controller/image_30.png)
-
-
-
-
-
-
-
-
-
-
-
-

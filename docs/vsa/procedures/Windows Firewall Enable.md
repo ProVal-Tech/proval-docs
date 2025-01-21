@@ -8,9 +8,10 @@ tags: ['firewall', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Provides the option to enable Windows Firewall for both Public and Private Networks
+This document provides the option to enable Windows Firewall for both Public and Private Networks.
 
 ## Example Agent Procedure Log
 
@@ -54,24 +55,12 @@ Provides the option to enable Windows Firewall for both Public and Private Netwo
 | 10:13:50 am 2-Nov-22  | Execute Powershell Command-0008          | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled" | provaltech.com/dan.hicks      |
 | 10:13:50 am 2-Nov-22  | Execute Powershell Command-0008          | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled | provaltech.com/dan.hicks      |
 | 10:13:49 am 2-Nov-22  | Execute Powershell Command-0002          | Powershell is present.                                                                                | provaltech.com/dan.hicks      |
-| 10:13:41 am 2-Nov-22  | Run Now - Windows Firewall Enable        | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Windows Firewa                          |                               |
+| 10:13:41 am 2-Nov-22  | Run Now - Windows Firewall Enable        | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Windows Firewall Enable                |                               |
 
 ## Process
 
-If EnablePublicFirewall is set to 1, Windows Firewall will be enabled for Public Networks. Same for private networks.
+If `EnablePublicFirewall` is set to 1, Windows Firewall will be enabled for Public Networks. The same applies for Private Networks.
 
 ## Output
 
 AP Log
-
-
-
-
-
-
-
-
-
-
-
-

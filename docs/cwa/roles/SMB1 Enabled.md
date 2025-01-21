@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will look to see if SMB1 is enabled on a device. For security purposes, SMB1 should be disabled on endpoints and this role can help determine machines with SMB enabled. 
+This role will check if SMB1 is enabled on a device. For security purposes, SMB1 should be disabled on endpoints, and this role can help determine which machines have SMB enabled.
 
 This data is viewable in the dataview: @Security - SMB1 Enabled Status Check [Role]
 
@@ -18,16 +19,4 @@ This data is viewable in the dataview: @Security - SMB1 Enabled Status Check [Ro
 
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
-| `{%@powershell.exe "(Get-SmbServerConfiguration).EnableSMB1Protocol"@%}` | Contains   | True   | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-
-
+| `{%@powershell.exe \"(Get-SmbServerConfiguration).EnableSMB1Protocol\"@%}` | Contains   | True   | Windows OS     |

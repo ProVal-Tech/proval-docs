@@ -8,39 +8,29 @@ tags: ['disk-encryption', 'performance', 'report', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows internal drive health status for all Automate agents.
+This dataview shows the internal drive health status for all Automate agents.
 
 ## Columns
 
 | Column                | Description                                                               |
 |----------------------|---------------------------------------------------------------------------|
-| Client Name          | Display the agent name.                                                  |
-| Location Name        | Display the location name of the agent.                                  |
-| Computer Name        | Display the Client name of the agent.                                    |
-| Agent Type           | Agent type whether laptop, workstation, or server.                       |
-| Drive Last updated    | Display the date when drive inventory was last updated in automate.      |
-| Drive Letter         | Display the drive letter.                                                |
-| Drive Size           | Display the total drive size in GB.                                      |
-| Drive Free Space     | Display the total free drive space in GB.                                |
-| Drive Free Percent    | Display the total free drive space percentage.                           |
-| Drive Fragmentation   | Display the total drive fragmentation in percent.                        |
-| Drive MFT Frag       | Display the master file table Fragmentation.                             |
-| Drive Total Files    | Display the total no. of files present on the drive.                    |
-| Drive File System    | Display the name of the drive file system.                               |
-| Drive Model          | Display the model name of the drive.                                     |
-| Drive SSD            | Display the status of the Drive SSD, True or False.                     |
-| Drive Missing        | Display the status of the drive if it's missing or connected.           |
-
-
-
-
-
-
-
-
-
-
-
+| Client Name          | Displays the agent name.                                                  |
+| Location Name        | Displays the location name of the agent.                                  |
+| Computer Name        | Displays the client name of the agent.                                    |
+| Agent Type           | Indicates the agent type, whether it is a laptop, workstation, or server. |
+| Drive Last Updated    | Displays the date when the drive inventory was last updated in Automate. |
+| Drive Letter         | Displays the drive letter.                                                |
+| Drive Size           | Displays the total drive size in GB.                                      |
+| Drive Free Space     | Displays the total free drive space in GB.                                |
+| Drive Free Percent    | Displays the total free drive space percentage.                           |
+| Drive Fragmentation   | Displays the total drive fragmentation in percent.                        |
+| Drive MFT Frag       | Displays the master file table fragmentation.                             |
+| Drive Total Files    | Displays the total number of files present on the drive.                 |
+| Drive File System    | Displays the name of the drive file system.                               |
+| Drive Model          | Displays the model name of the drive.                                     |
+| Drive SSD            | Displays the status of the Drive SSD, indicating True or False.          |
+| Drive Missing        | Displays the status of the drive, indicating if it is missing or connected. |
 

@@ -8,9 +8,10 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the monitor set is to execute [Get Wifi Profile](<../scripts/Get Wifi Profile.md>) script in Audit only mode once per month against physical windows workstations excluding windows XP, 7, 8, and 8.1. 
+The purpose of the monitor set is to execute the [Get Wifi Profile](<../scripts/Get Wifi Profile.md>) script in Audit only mode once per month against physical Windows workstations, excluding Windows XP, 7, 8, and 8.1.
 
 ## Dependencies
 
@@ -26,16 +27,3 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

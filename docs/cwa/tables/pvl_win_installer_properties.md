@@ -8,13 +8,14 @@ tags: ['database', 'installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The "pvl_win_installer_properties" is an SQL custom table that is used in conjunction with the [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>) script and the "Windows Installer Properties [Script]" dataview. The purpose of this table is to store the gathered information about the properties of the Windows Installer applications installed on a machine. Stores the data fetched by [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>) script.
+The "pvl_win_installer_properties" is an SQL custom table that is used in conjunction with the [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>) script and the "Windows Installer Properties [Script]" dataview. The purpose of this table is to store the gathered information about the properties of the Windows Installer applications installed on a machine. It stores the data fetched by the [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>)
+- [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>)
 
 ## Tables
 
@@ -22,26 +23,14 @@ The "pvl_win_installer_properties" is an SQL custom table that is used in conjun
 
 | Column           | Type         | Explanation                                         |
 |------------------|--------------|-----------------------------------------------------|
-| computerid       | int(16)     | computerid                                         |
+| computerid       | int(16)     | Computer ID                                         |
 | Name             | varchar(128) | Display Name of the Application                      |
 | Version          | varchar(32)  | Display Version of the Application                   |
-| Publisher        | varchar(128) | Application's publisher                              |
+| Publisher        | varchar(128) | Application's Publisher                              |
 | InstallDate      | varchar(10)  | Install Date of the application in numerics         |
 | URLInfoAbout     | varchar(256) | URL of the information related to the application    |
 | URLUpdateInfo    | varchar(256) | URL of the information related to the application's updates |
-| InstallSource     | varchar(512) | Path to the installer on local machine              |
-| InstallLocation   | varchar(512) | Path to the installed location of the application on local machine |
+| InstallSource    | varchar(512) | Path to the installer on the local machine          |
+| InstallLocation  | varchar(512) | Path to the installed location of the application on the local machine |
 | ScriptRunTime    | datetime     | Data Collection Time                                |
-| SerialNumber     | int          | Auto_Incremental Column to be used as primary key   |
-
-
-
-
-
-
-
-
-
-
-
-
+| SerialNumber     | int          | Auto-incremental column to be used as primary key   |

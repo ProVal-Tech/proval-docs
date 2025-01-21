@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task installs Threatocker on both Windows and Mac operating systems.
+This task installs Threatlocker on both Windows and Mac operating systems.
 
 ## Sample Run
 
@@ -23,12 +24,12 @@ This task installs Threatocker on both Windows and Mac operating systems.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Image 1](../../../static/img/Threatlocker-Deployment/image_6.png)  
 ![Task Creation Image 2](../../../static/img/Threatlocker-Deployment/image_7.png)
 
 **Name:** `Threatlocker Deployment`  
-**Description:** `This script will check for ThreatLocker and attempt to install if not present. It matches the organization to the client name, if no match is found, it will create the company for you. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group.`  
+**Description:** `This script will check for ThreatLocker and attempt to install it if not present. It matches the organization to the client name; if no match is found, it will create the company for you. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group.`  
 **Category:** `Custom`  
 ![Category Image](../../../static/img/Threatlocker-Deployment/image_8.png)
 
@@ -42,25 +43,25 @@ A blank function will appear.
 
 ### Row 1 Function: Set Pre-Defined Variable
 
-- Select `Set Pre-Defined Variable` Function  
+- Select `Set Pre-Defined Variable` function  
 ![Row 1 Function Image](../../../static/img/Threatlocker-Deployment/image_11.png)
 
 - Select `Custom Field`
 - Input `Organization` as Variable name
-- Select `Threatlocker_Organization_Name` custom field from drop Down
+- Select `Threatlocker_Organization_Name` custom field from the dropdown
 - Click Save
-- Limit this Step to Windows OS by selecting `Windows` from `Operating System` Drop down on left side
+- Limit this step to Windows OS by selecting `Windows` from the `Operating System` dropdown on the left side
 
 ### Row 2 Function: Set Pre-Defined Variable
 
-- Select `Set Pre-Defined Variable` Function  
+- Select `Set Pre-Defined Variable` function  
 ![Row 2 Function Image](../../../static/img/Threatlocker-Deployment/image_11.png)
 
 - Select `Custom Field`
 - Input `ThreatLockerAuthKey` as Variable name
-- Select `ThreatLockerAuthKey` custom field from drop Down
+- Select `ThreatLockerAuthKey` custom field from the dropdown
 - Click Save
-- Limit this Step to Windows OS by selecting `Windows` from `Operating System` Drop down on left side
+- Limit this step to Windows OS by selecting `Windows` from the `Operating System` dropdown on the left side
 
 ### Row 3 Function: PowerShell Script
 
@@ -96,9 +97,9 @@ try {
         $downloadURL = "https://api.threatlocker.com/updates/installers/threatlockerstubx86.exe";
     }
     $localInstaller = "C:/ProgramData/_automation/script/Threatlocker/ThreatLockerStub.exe";
-    Invoke-WebRequest -Uri $downloadURL -OutFile $localInstaller -Usebasicparsing;
+    Invoke-WebRequest -Uri $downloadURL -OutFile $localInstaller -UseBasicParsing;
 } catch {
-    Write-Output "Failed to get download the installer";
+    Write-Output "Failed to download the installer";
     return;
 }
 
@@ -137,18 +138,18 @@ Limit this step to `Windows OS` only.
 
 ### Row 5 Function: Set Pre-Defined Variable
 
-- Select `Set Pre-Defined Variable` Function  
+- Select `Set Pre-Defined Variable` function  
 ![Row 5 Function Image](../../../static/img/Threatlocker-Deployment/image_16.png)
 
 - Select `Custom Field`
 - Input `ThreatLockerMacGroupKey` as Variable name
-- Select `ThreatLockerMacGroupKey` custom field from drop Down
+- Select `ThreatLockerMacGroupKey` custom field from the dropdown
 - Click Save
-- Limit this Step to Windows OS by selecting `MacOs` from `Operating System` Drop down on left side
+- Limit this step to Windows OS by selecting `MacOS` from the `Operating System` dropdown on the left side
 
-### Row 6 Function: Command Prompt(CMD) Script
+### Row 6 Function: Command Prompt (CMD) Script
 
-Search and select the `Command Prompt(CMD) Script` function.  
+Search and select the `Command Prompt (CMD) Script` function.  
 ![CMD Script Function Image](../../../static/img/Threatlocker-Deployment/image_17.png)
 
 The following function will pop up on the screen:  
@@ -158,35 +159,35 @@ Paste in the following bash script and set the expected time of script execution
 
 ```bash
 #!/bin/bash
-    GroupKey="@ThreatLockerMacGroupKey@"
+GroupKey="@ThreatLockerMacGroupKey@"
 #install
 if [ ! -d /Applications/Threatlocker.app ]
+then
+    curl --output-dir "/Applications" -O https://updates.threatlocker.com/repository/mac/1.0/Threatlocker.app.zip
+    echo "Downloading Threatlocker"
+    open /Applications/Threatlocker.app.zip
+    sleep 5
+    osascript -e 'quit app "Finder"'
+    rm -d /Applications/Threatlocker.app.zip
+    if [ ! -d /Applications/Threatlocker.app ]
     then
-        curl --output-dir "/Applications" -O https://updates.threatlocker.com/repository/mac/1.0/Threatlocker.app.zip
-        echo "Downloading Threatlocker"
-        open /Applications/Threatlocker.app.zip
-        sleep 5
-        osascript -e 'quit app "Finder"'
-        rm -d /Applications/Threatlocker.app.zip
-        if [ ! -d /Applications/Threatlocker.app ]
-            then
-                echo "Not able to download the file"
-                exit 1
-            else
-                open /Applications/ThreatLocker.app --args -groupKey $GroupKey
-                echo "Installing Threatlocker"
-                sleep 15
-                echo "Verifying Group Key"
-                sleep 15
-                if [ ! -d /Library/Application/ Support/Threatlocker ]
-                    then
-                        echo "GroupKey is Invalid"
-                        exit 1
-                    else
-                        echo "Threatlocker Installed"
-                        exit 0
-                    fi
-            fi
+        echo "Not able to download the file"
+        exit 1
+    else
+        open /Applications/ThreatLocker.app --args -groupKey $GroupKey
+        echo "Installing Threatlocker"
+        sleep 15
+        echo "Verifying Group Key"
+        sleep 15
+        if [ ! -d /Library/Application/Support/Threatlocker ]
+        then
+            echo "GroupKey is Invalid"
+            exit 1
+        else
+            echo "Threatlocker Installed"
+            exit 0
+        fi
+    fi
 fi
 ```
 
@@ -195,7 +196,7 @@ Limit this step to `Mac OS` only.
 
 ### Row 7: Function: Script Log
 
-In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+In the script log message, simply type `%output%` so that the script will send the results of the bash script above to the output on the Automation tab for the target device.  
 ![Script Log Image](../../../static/img/Threatlocker-Deployment/image_20.png)
 
 Limit this step to `Mac OS` only.
@@ -206,25 +207,13 @@ Limit this step to `Mac OS` only.
 
 ## Implementation
 
-This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocker](<../groups/Deploy Threatlocker.md>)`** group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocker](<../groups/Deploy Threatlocker.md>)`** group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
-Search for Threatlocker Deployment  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.  
+Search for Threatlocker Deployment.  
+Then click on Schedule and provide the parameters detail as necessary for the script completion.  
 ![Implementation Image](../../../static/img/Threatlocker-Deployment/image_22.png)
 
 ## Output
 
 Script Log
-
-
-
-
-
-
-
-
-
-
-
-

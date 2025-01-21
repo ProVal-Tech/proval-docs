@@ -8,12 +8,13 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script can be used to search for any file or folder on the computer. The name of the File/Folder to be searched should be passed to the "ToSearchFor" Parameter. It supports the Regex input as well.
+The script can be used to search for any file or folder on the computer. The name of the file or folder to be searched should be passed to the "ToSearchFor" parameter. It also supports regex input.
 
-e.g., To search for all the available "Desktop" namely folder "Desktop$" ("$" represents the end of string) should be used. For "Desktop", it will output the path to each and every file with "Desktop" in the path.  
-For regex reference: [https://regexr.com/](https://regexr.com/)
+For example, to search for the folder "Desktop," you should use the regex "Desktop$" (where "$" represents the end of the string). To find any file with "Desktop" in the path, simply enter "Desktop."  
+For regex reference, visit: [https://regexr.com/](https://regexr.com/)
 
 ## Sample Run
 
@@ -21,7 +22,7 @@ For regex reference: [https://regexr.com/](https://regexr.com/)
 
 ## Dependencies
 
-Everything.exe and es.exe will be downloaded from ProVal's File Server. So, the following URL and files should not be blocked by any AV program or ThreatLocker:
+The files `Everything.exe` and `es.exe` will be downloaded from ProVal's File Server. Ensure that the following URL and files are not blocked by any antivirus program or ThreatLocker:
 
 - [https://file.provaltech.com/repo/tools/everything.exe](https://file.provaltech.com/repo/tools/everything.exe)
 - [https://file.provaltech.com/repo/tools/es.exe](https://file.provaltech.com/repo/tools/es.exe)
@@ -36,28 +37,16 @@ Everything.exe and es.exe will be downloaded from ProVal's File Server. So, the 
 
 | Name        | Example      | Required | Description                                             |
 |-------------|--------------|----------|---------------------------------------------------------|
-| ToSearchFor | //Desktop$   | True     | Name of the file or folder to look for. Use Regex for a better result |
+| ToSearchFor | //Desktop$   | True     | Name of the file or folder to look for. Use regex for better results. |
 
 ## Process
 
 1. Check if the parameter is passed or is blank.
-2. Attempt to search for the File/Folder inputted in the parameter.
-3. Retry with the search, if it fails to search with "Please make sure Everything is running." in output.
-4. Logs the search result or error accordingly.
+2. Attempt to search for the file or folder inputted in the parameter.
+3. Retry the search if it fails, displaying "Please make sure Everything is running." in the output.
+4. Log the search result or error accordingly.
 
 ## Output
 
 - Script Log
-- @SearchResult@ holds the results.
-
-
-
-
-
-
-
-
-
-
-
-
+- `@SearchResult@` holds the results.

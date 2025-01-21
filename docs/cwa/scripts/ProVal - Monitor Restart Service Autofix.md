@@ -8,15 +8,16 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is intended to be called by the "~Autofix Kill stuck service and restart" alert template. When run, the script will attempt to restart the failed service. If the attempt to restart the service is successful, the script will exit. However, if the first attempt failed, it will attempt to kill the service first and attempt to start the service using default Labtech Command as well as shell commands. The script requires an input parameter named `@fieldname@` containing the name of the service to be restarted.
+This script is intended to be called by the "~Autofix Kill stuck service and restart" alert template. When run, the script will attempt to restart the failed service. If the attempt to restart the service is successful, the script will exit. However, if the first attempt fails, it will attempt to kill the service first and then try to start the service using the default Labtech Command as well as shell commands. The script requires an input parameter named `@fieldname@` containing the name of the service to be restarted.
 
 **Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
-This script is intended to run only as an auto-fix script as the `@Fieldname@` will be passed by the monitor.
+This script is intended to run only as an auto-fix script, as the `@fieldname@` will be passed by the monitor.
 
 ## Dependencies
 
@@ -26,24 +27,13 @@ Should be run as an auto-fix script on the Service Monitors.
 
 | **Variable Name**               | **Description**                                             |
 |----------------------------------|-----------------------------------------------------------|
-| DisableAutofixes                 | This variable stores the EDF(Disable Autofixes) value.   |
-| DisableRestartService            | This variable stores the EDF(Disable Autofix Restart Services) value. |
+| DisableAutofixes                 | This variable stores the EDF (Disable Autofixes) value.   |
+| DisableRestartService            | This variable stores the EDF (Disable Autofix Restart Services) value. |
 
 ## Process
 
-This script is intended to be called by the "~Autofix Kill stuck service and restart" alert template. When run, the script will attempt to restart the failed service. If the attempt to restart the service is successful, the script will exit. However, if the first attempt failed, it will attempt to kill the service first and attempt to start the service using default Labtech Command as well as shell commands. The script requires an input parameter named `@fieldname@` containing the name of the service to be restarted.
+This script is intended to be called by the "~Autofix Kill stuck service and restart" alert template. When run, the script will attempt to restart the failed service. If the attempt to restart the service is successful, the script will exit. However, if the first attempt fails, it will attempt to kill the service first and then try to start the service using the default Labtech Command as well as shell commands. The script requires an input parameter named `@fieldname@` containing the name of the service to be restarted.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

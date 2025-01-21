@@ -8,31 +8,22 @@ tags: []
 draft: true
 unlisted: false
 ---
-\<div class='text-section scrollable'>
-What data does this Managed Variable hold?
 
+<div class='text-section scrollable'>
+## What data does this Managed Variable hold?
+
+</div>
 
 ## Dependencies
 
-\<div class='text-section scrollable'>
-What VSA content relies on this Managed Variable?  
+<div class='text-section scrollable'>
+### What VSA content relies on this Managed Variable?
 
+</div>
 
 ## Example Data
 
-\<div class='text-section scrollable'>
-Provide an example of the data contained within the variable, including any required syntax.  
+<div class='text-section scrollable'>
+### Provide an example of the data contained within the variable, including any required syntax.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>

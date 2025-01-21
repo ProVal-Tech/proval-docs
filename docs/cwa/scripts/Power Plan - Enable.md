@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is an Automate implementation of the agnostic script [EPM - Windows Configuration - Agnostic - Enable-PowerPlan](<../../powershell/Enable-PowerPlan.md>). Which can be utilized to mark an existing Power Plan as active.
+This script is an Automate implementation of the agnostic script [EPM - Windows Configuration - Agnostic - Enable-PowerPlan](<../../powershell/Enable-PowerPlan.md>), which can be utilized to mark an existing Power Plan as active.
 
 File Path: `C:/ProgramData/_Automation/script/Enable-PowerPlan/Enable-PowerPlan.ps1`  
 File Hash (Sha256): `13F38A3CB96BE9C19B38ED09A1175852B33713DE43368B84867A7999D202F6F3`  
@@ -47,15 +48,3 @@ File Hash (MD5): `59BB9E9FB16FD5E53EB657D0F02ED9A8`
 
 - Script Log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

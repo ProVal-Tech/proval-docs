@@ -8,10 +8,11 @@ tags: ['cleanup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Cleans well-known directories of aging files and folders on all internal drives.  
-Time Saved by Automation: 20 Minutes
+This guide details the process of cleaning well-known directories of aging files and folders on all internal drives.  
+**Time Saved by Automation:** 20 Minutes
 
 ## Sample Run
 
@@ -25,29 +26,18 @@ Time Saved by Automation: 20 Minutes
 
 | Variable          | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
-| ProjectName       | This contains application name and project title                            |
-| WorkingDirectory   | This contains the path where this development workaround will be stored      |
-| EXEURL            | This contains the url link of the direct download drvclean.exe file        |
-| EXEPATH           | This contains the directory info where the file will be downloaded on local agent |
-| EXELOG            | This contains the logging path where file execution log will be stored      |
-| EXEERRORLOG       | This contains the error log path where file execution error will be stored  |
+| ProjectName       | Contains the application name and project title                            |
+| WorkingDirectory   | Contains the path where this development workaround will be stored          |
+| EXEURL            | Contains the URL link for direct download of drvclean.exe file            |
+| EXEPATH           | Contains the directory information where the file will be downloaded on the local agent |
+| EXELOG            | Contains the logging path where file execution logs will be stored          |
+| EXEERRORLOG       | Contains the error log path where file execution errors will be stored      |
 
 ## Process
 
-Cleans well-known directories of aging files and folders on all internal drives.  
-Requirements: Need to run on Windows machine.
+This process cleans well-known directories of aging files and folders on all internal drives.  
+**Requirements:** Must run on a Windows machine.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

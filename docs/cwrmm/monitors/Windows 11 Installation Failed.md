@@ -8,9 +8,10 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Detects the computers where the Windows 11 Installer (Beta) task failed.
+This document detects the computers where the Windows 11 Installer (Beta) task has failed.
 
 ## Dependencies
 
@@ -26,7 +27,7 @@ Detects the computers where the Windows 11 Installer (Beta) task failed.
 
 2. Click the `Create Monitor` button at the top-right corner of the screen.  
    ![Step 2 Image](../../../static/img/Windows-11-Installation-Failed/image_2.png)  
-   It will take you to this screen.  
+   This will take you to the following screen.  
    ![Step 2 Image](../../../static/img/Windows-11-Installation-Failed/image_3.png)
 
 3. Fill in the following details:  
@@ -36,13 +37,13 @@ Detects the computers where the Windows 11 Installer (Beta) task failed.
    **Severity:** Others  
    **Family:** Patch Management  
    ![Step 3 Image](../../../static/img/Windows-11-Installation-Failed/image_4.png)  
-   The right half of the screen will be changed to this after setting the `Type` to `Custom Field`.  
+   The right half of the screen will change after setting the `Type` to `Custom Field`.  
    ![Step 3 Image](../../../static/img/Windows-11-Installation-Failed/image_5.png)
 
 4. **Conditions**  
    - Change the `Custom Field Type` to `Text Box`.
    - Find and select the `Windows 11 Upgrade Failed` custom field in the `Custom Field Name` field.  
-   - Set the comparator to `Contains`
+   - Set the comparator to `Contains`.  
    - Type `Failed` in the `Enter Value` field and press `Enter`.  
    ![Step 4 Image](../../../static/img/Windows-11-Installation-Failed/image_6.png)
 
@@ -58,15 +59,3 @@ Detects the computers where the Windows 11 Installer (Beta) task failed.
 
 7. Click the `Save` button at the top-right corner of the screen to create the monitor set.  
    ![Step 7 Image](../../../static/img/Windows-11-Installation-Failed/image_10.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['report', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview populates the Click-to-Run Office version, auto-update status and Update channel Information on the machine along with some basic information.
+This dataview populates the Click-to-Run Office version, auto-update status, and update channel information on the machine, along with some basic system information.
 
 ## Dependencies
 
@@ -29,23 +30,11 @@ This dataview populates the Click-to-Run Office version, auto-update status and 
 | Location                  | Location Name                                                     |
 | Computer                  | Computer Name                                                     |
 | Operating System          | Operating System                                                  |
-| LastContact               | Last Contact of the machine                                       |
+| Last Contact              | Last Contact of the machine                                       |
 | Last Logged In User       | Last Logged In User                                              |
 | Form Factor               | Form Factor                                                      |
-| C2R Office version        | C2R office version installed on the machine                       |
-| Auto Update               | If office Auto update is enabled or not on the machine           |
-| Update Channel            | Update Channel for office installed on the machine                |
+| C2R Office version        | C2R Office version installed on the machine                       |
+| Auto Update               | Whether Office Auto Update is enabled on the machine             |
+| Update Channel            | Update Channel for Office installed on the machine                |
 | Script Run Time           | Last time [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine |
-
-
-
-
-
-
-
-
-
-
-
-
 

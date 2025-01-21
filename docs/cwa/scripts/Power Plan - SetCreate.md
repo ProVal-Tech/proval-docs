@@ -8,19 +8,20 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It is an Automate implementation of the agnostic script [Set-PowerPlan](https://proval.itglue.com/DOC-5078775-14903184) script, which can be used to Modify or Create a Power Plan.
+This document outlines the Automate implementation of the agnostic script [Set-PowerPlan](https://proval.itglue.com/DOC-5078775-14903184), which can be used to modify or create a power plan.
 
-The Settings for the Power Plan are required to create or modify the Power Plan. These settings can be provided to the script in two ways: through the `Settings` parameter as a hash table or from a CSV file. A template for the CSV file is attached to this ITGlue document. Details regarding the columns of the CSV file are explained later in this document.
+The settings for the power plan are required to create or modify the power plan. These settings can be provided to the script in two ways: through the `Settings` parameter as a hash table or from a CSV file. A template for the CSV file is attached to this ITGlue document. Details regarding the columns of the CSV file are explained later in this document.
 
-File Path: `C:/ProgramData/_Automation/script/Set-PowerPlan/Set-PowerPlan.ps1`  
-File Hash (Sha256): `28C5503857406511327E72114784F559799CEBFE96A6D323FAA2A25F56F8488C`  
-File Hash (MD5): `7882C5890DCDFA7CE81DD62AB093A1F8`  
+**File Path:** `C:/ProgramData/_Automation/script/Set-PowerPlan/Set-PowerPlan.ps1`  
+**File Hash (SHA256):** `28C5503857406511327E72114784F559799CEBFE96A6D323FAA2A25F56F8488C`  
+**File Hash (MD5):** `7882C5890DCDFA7CE81DD62AB093A1F8`  
 
 ## Sample Run (Set Environment)
 
-Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor.
+Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor.
 
 ![Sample Run](../../../static/img/Power-Plan---SetCreate/image_1.png)
 
@@ -33,15 +34,15 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 - Edit the downloaded file.
 - Specify the necessary values for the power settings in the `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns.
 - For rows where the `Minimum Possible Setting` and `Maximum Possible Setting` columns have values, ensure that the values in the `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns fall within the specified range.
-- For rows where the `Possible Settings` column has a value, input the numerical value for both `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns, as described in the `Possible Settings` Column.
+- For rows where the `Possible Settings` column has a value, input the numerical value for both `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns, as described in the `Possible Settings` column.
 - Refrain from modifying any columns other than the `Direct Power Setting (AC)` and `Direct Power Setting (DC)` columns.
 - Keep the first row of the CSV file unchanged.
-  
+
 ![CSV Example](../../../static/img/Power-Plan---SetCreate/image_2.png)
 
 - Rename the file to a name relevant to the PowerProfile you intend to create or edit.
-- In this example, I am renaming it to `Test_Power_Plan` as I will be creating a Power Plan named `Test Power Plan` on the machine.
-- Put the file in the `LTShare` (WebDav for hosted partners) within the `Transfer/PowerPlan` directory. If the `PowerPlan` directory doesn't exist under the `Transfer` directory, you may need to create it.
+- In this example, I am renaming it to `Test_Power_Plan` as I will be creating a power plan named `Test Power Plan` on the machine.
+- Place the file in the `LTShare` (WebDav for hosted partners) within the `Transfer/PowerPlan` directory. If the `PowerPlan` directory doesn't exist under the `Transfer` directory, you may need to create it.
 
 ![Directory Example](../../../static/img/Power-Plan---SetCreate/image_3.png)
 
@@ -55,10 +56,10 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 
 **Example 2:** Placing the CSV file in a downloadable location other than LTShare.
 
-- This method can be used if somehow the CSV file cannot be placed in the LTShare, but can be placed at another downloadable location.
-- Edit and Rename the CSV file as explained in **Example 1**.
+- This method can be used if the CSV file cannot be placed in the LTShare but can be placed at another downloadable location.
+- Edit and rename the CSV file as explained in **Example 1**.
 - Place the file at a location from where it can be downloaded using a download URL.
-- I have placed the file at [https://file.provaltech.com](https://file.provaltech.com) and the download URL is [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv). (This is a dummy download URL used in this example to demonstrate how a download URL to download the CSV file should look.)
+- I have placed the file at [https://file.provaltech.com](https://file.provaltech.com), and the download URL is [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv). (This is a dummy download URL used in this example to demonstrate how a download URL to download the CSV file should look.)
 - Run the script on the relevant machine(s) with the specified parameters to create the `Test Power Plan` with the power settings outlined in the CSV file `Test_Power_Plan`:
 
 **PowerPlan:** Test Power Plan  
@@ -68,25 +69,25 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 
 **Example 3:** Using HashTable
 
-- This approach is suitable for updating a selected number of settings within a Power Plan.
-- Proficiency in PowerShell's Hash Table is crucial to utilize this method effectively.
-- In this method, the power settings are supplied to the script through the `Settings` parameter, employing a correctly formatted Hash Table of the settings.
+- This approach is suitable for updating a selected number of settings within a power plan.
+- Proficiency in PowerShell's hash table is crucial to utilize this method effectively.
+- In this method, the power settings are supplied to the script through the `Settings` parameter, employing a correctly formatted hash table of the settings.
 
-Format of the Hash Table:
-
-```
-@\{Subgroup=@\{'&lt;Name of the Subgroup&gt;' = @\{ \<strong>PowerSetting \</strong>= @\{ '&lt;Name of the Power Setting&gt;' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt; }; 'Name of the Power Setting' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt;}; '&lt;Name of the Power Setting&gt;' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt;}; '&lt;Name of the Power Setting&gt;' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt; }}}}}
-```
-
-Ensure that the name of the Subgroup and the Power Settings match those specified in the attached CSV file. The values for both AC and DC should fall within the range defined in the CSV file, or be selected from the Possible settings if the range does not apply to the setting.
-
-In this example, I am configuring the values for the following Settings within the `Test Power Plan`:
+**Format of the Hash Table:**
 
 ```
-@\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}}
+@{Subgroup=@{'&lt;Name of the Subgroup&gt;' = @{ <strong>PowerSetting </strong>= @{ '&lt;Name of the Power Setting&gt;' = @{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt; }; 'Name of the Power Setting' = @{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt;}; '&lt;Name of the Power Setting&gt;' = @{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt;}; '&lt;Name of the Power Setting&gt;' = @{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt; }}}}}
 ```
 
-If the Power Plan named `Test Power Plan` doesn't already exist on the computer, the script will create it with the settings outlined in the table below while the rest of the settings will be copied from the currently active Power Plan. Otherwise, if the plan already exists, only the following settings will be modified.
+Ensure that the name of the subgroup and the power settings match those specified in the attached CSV file. The values for both AC and DC should fall within the range defined in the CSV file or be selected from the possible settings if the range does not apply to the setting.
+
+In this example, I am configuring the values for the following settings within the `Test Power Plan`:
+
+```
+@{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
+```
+
+If the power plan named `Test Power Plan` doesn't already exist on the computer, the script will create it with the settings outlined in the table below while the rest of the settings will be copied from the currently active power plan. Otherwise, if the plan already exists, only the following settings will be modified.
 
 | Subgroup | Power Setting          | Direct Power Settings (AC) | Battery Power Settings (DC) |
 |----------|------------------------|-----------------------------|------------------------------|
@@ -100,43 +101,43 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 **PowerPlan:** Test Power Plan  
 **Setting:** 
 ```
-@\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}}
+@{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
 ```
 
 ![Run Configuration](../../../static/img/Power-Plan---SetCreate/image_6.png)
 
 ## Automation
 
-- Edit and place the [configuration file](https://proval.itglue.com/attachments/14048399) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in the `Example 1` of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](https://proval.itglue.com/attachments/15784030) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
+- Edit and place the [configuration file](https://proval.itglue.com/attachments/14048399) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in **Example 1** of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](https://proval.itglue.com/attachments/15784030) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
 
 ![Automation Example](../../../static/img/Power-Plan---SetCreate/image_7.png)
 
-- Set the appropriate option in Client-Level EDF `PowerPlan Automation` to enable it for the client's machines. Leaving it blank is equivalent to setting it to `Not Enabled`.
+- Set the appropriate option in the Client-Level EDF `PowerPlan Automation` to enable it for the client's machines. Leaving it blank is equivalent to setting it to `Not Enabled`.
 
 ![Client-Level EDF](../../../static/img/Power-Plan---SetCreate/image_8.png)
 
-- Set the Name of the csv file placed in the LTShare to the `PowerPlan Configuration File` EDF.
+- Set the name of the CSV file placed in the LTShare to the `PowerPlan Configuration File` EDF.
 
 ![CSV Name Example](../../../static/img/Power-Plan---SetCreate/image_9.png)
 
-- Set the Name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and it can be anything.
+- Set the name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and can be anything.
 
 ![PowerPlan Name Example](../../../static/img/Power-Plan---SetCreate/image_10.png)
 
 **Note:**
 
 - In the example demonstrated above, the `ProVal High Performance` power plan will be set and enabled on all workstations of the `Development` client.
-- [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor should be running for the Automation to work.
+- The [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor should be running for the automation to work.
 
 ## PowerPlanSettingsTemplate.CSV
 
-The provided CSV file acts as the template for the settings accepted by the script for creating or modifying the Power Plan. To use it effectively, download and modify the template to specify the CSVPath parameter, as illustrated in the aforementioned examples.
+The provided CSV file acts as the template for the settings accepted by the script for creating or modifying the power plan. To use it effectively, download and modify the template to specify the CSVPath parameter, as illustrated in the aforementioned examples.
 
 Here's a breakdown of the columns in the CSV file:
 
 **Subgroup:** Displays the name of the subgroups of the power plan. This column should not be edited or modified.
 
-**Power Setting:** Indicates the name of the associated Power Setting for that subgroup. This column should not be edited or modified.
+**Power Setting:** Indicates the name of the associated power setting for that subgroup. This column should not be edited or modified.
 
 **Direct Power Settings (AC):** Stores the value for the power setting when the machine is connected directly to electricity. Update this column as required.
 
@@ -150,7 +151,7 @@ Here's a breakdown of the columns in the CSV file:
 
 **Additional Notes:** Offers additional explanations, particularly when 0 signifies `never` for rows where such interpretation is relevant.
 
-**Note:** To understand the relation of the columns in the CSV file with the Power Plan Settings, you can run the `powercfg /query` command from the command prompt. This command will display detailed information about the power plans configured on your Windows computer, including their settings. By examining the output of this command, you can correlate the settings listed with the columns in the CSV file, such as subgroup names, power setting names, and their corresponding values for AC and DC power sources.
+**Note:** To understand the relation of the columns in the CSV file with the power plan settings, you can run the `powercfg /query` command from the command prompt. This command will display detailed information about the power plans configured on your Windows computer, including their settings. By examining the output of this command, you can correlate the settings listed with the columns in the CSV file, such as subgroup names, power setting names, and their corresponding values for AC and DC power sources.
 
 ## Dependencies
 
@@ -169,18 +170,18 @@ Here's a breakdown of the columns in the CSV file:
 
 | Name              | Example                                                                 | Required        | Description                                              |
 |-------------------|-------------------------------------------------------------------------|------------------|----------------------------------------------------------|
-| PowerPlan         | Test Power Plan                                                          | True             | Name of the Power Plan to modify or create.             |
-| Setting           | @\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}} | Partially        | Hash Table of the Power Plan settings to Set.           |
+| PowerPlan         | Test Power Plan                                                          | True             | Name of the power plan to modify or create.             |
+| Setting           | @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}} | Partially        | Hash table of the power plan settings to set.           |
 | CSVPath           | [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv) (if the CSV file of the settings is placed at a downloadable location) OR Test_Power_Plan (if the CSV file of the settings is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory) | Partially        | Download URL of the CSV file if the file is placed at a downloadable location. OR Name of the CSV file if the file is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory. |
-| Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor. |
+| Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor. |
 
 ## Client-Level EDF
 
 | Name                       | Example | Type      | Section    | Description                                                                                      |
 |----------------------------|---------|-----------|------------|--------------------------------------------------------------------------------------------------|
-| PowerPlan Automation        | 1/0     | Dropdown  | PowerPlan  | Set the appropriate option in Client-Level EDF `PowerPlan Automation` to enable it for the client's machines. Available Options: \<ul>\<li>Not Enabled\</li>\<li>Enabled for Workstations Only\</li>\<li>Enabled for Laptops Only\</li>\<li>Enabled for Servers Only\</li>\<li>Enabled for All Machines\</li>\</ul> |
-| PowerPlan Configuration File| ProVal_-_High_Performance | Text      | PowerPlan  | Set the Name of the csv file placed in the LTShare to the `PowerPlan Configuration File` EDF. |
-| PowerPlan Name             | ProVal High Performance | Text      | PowerPlan  | Set the Name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and it can be anything. |
+| PowerPlan Automation        | 1/0     | Dropdown  | PowerPlan  | Set the appropriate option in Client-Level EDF `PowerPlan Automation` to enable it for the client's machines. Available Options: <ul><li>Not Enabled</li><li>Enabled for Workstations Only</li><li>Enabled for Laptops Only</li><li>Enabled for Servers Only</li><li>Enabled for All Machines</li></ul> |
+| PowerPlan Configuration File| ProVal_-_High_Performance | Text      | PowerPlan  | Set the name of the CSV file placed in the LTShare to the `PowerPlan Configuration File` EDF. |
+| PowerPlan Name             | ProVal High Performance | Text      | PowerPlan  | Set the name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and can be anything. |
 
 ![Client-Level EDF Example](../../../static/img/Power-Plan---SetCreate/image_11.png)
 
@@ -194,16 +195,3 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
-
-
-
-
-
-
-
-
-
-
-
-
-

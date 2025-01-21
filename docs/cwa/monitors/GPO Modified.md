@@ -8,16 +8,17 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Custom RAWSQL monitor shows GPO modified time on the computer if the GPO was modified in the last 1 day.
+This Custom RAWSQL monitor shows the GPO modified time on the computer if the GPO was modified in the last day.
 
 ## Implementation
 
 - Replace `\\<MonitorID>` in the additional condition with the ID of the monitor set.  
   ![Image 1](../../../static/img/GPO-Modified/image_1.png)  
   ![Image 2](../../../static/img/GPO-Modified/image_2.png)  
-- Ensure that the monitor set is targeted on Domain Controllers group  
+- Ensure that the monitor set is targeted on the Domain Controllers group.  
   ![Image 3](../../../static/img/GPO-Modified/image_3.png)  
 
 ## Dependencies
@@ -51,16 +52,3 @@ Details:
 
 **Sample Ticket:**  
 ![Sample Ticket Image](../../../static/img/GPO-Modified/image_4.png)  
-
-
-
-
-
-
-
-
-
-
-
-
-

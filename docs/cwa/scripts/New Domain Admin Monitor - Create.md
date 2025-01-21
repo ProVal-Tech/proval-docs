@@ -8,13 +8,14 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This document describes the process for creating remote monitors to identify new or elevated domain administrators on a Windows domain controllers. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
+This document describes the process for creating remote monitors to identify new or elevated domain administrators on Windows domain controllers. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
 
-The script generates remote monitors that trigger an alert when a user or group of users are promoted as domain administrator on a Windows domain controller. By default, it excludes the domain administrators created by the [Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
+The script generates remote monitors that trigger an alert when a user or group of users is promoted to domain administrator on a Windows domain controller. By default, it excludes the domain administrators created by the [Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
 
-The generated remote monitors `ProVal - Production - New Domain Admin` will use the [Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>) agnostic script to perform the monitoring. The monitor set will be created for one domain controller per domain to avoid any duplicate alerts/tickets from multiple domain controllers for the same user.
+The generated remote monitor `ProVal - Production - New Domain Admin` will use the [Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>) agnostic script to perform the monitoring. The monitor set will be created for one domain controller per domain to avoid any duplicate alerts/tickets from multiple domain controllers for the same user.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-NewDomainAdmin/Get-NewDomainadmin.ps1`  
 **File Hash:** `934A0A3CD8A38BE3EA8B39C8440D8DBB7FB0833B914E197BDE6A4C9C8C27711D`  
@@ -31,9 +32,9 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 1. **Remove Existing Monitors**
    - Remove the existing `ProVal - Production - New Domain Admin` monitor set from the groups it's already applied to.
-     - Execute this SQL query from a RAWSQL monitor set to get rid of the existing monitors:
-       ```
-       Delete From Groupagents where `Name` = 'ProVal - Production - New Domain Admin'
+     - Execute this SQL query from a RAWSQL monitor set to remove the existing monitors:
+       ```sql
+       DELETE FROM Groupagents WHERE `Name` = 'ProVal - Production - New Domain Admin'
        ```
 
    - Open the `Server Status` tool by navigating to `Help` > `Server Status`.
@@ -85,8 +86,8 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 | NDA_Monitoring_Enable         | 1       | True     | Set this system property to `1` to enable the remote monitor creation for the partner. The default value is `0`.                                                                                                                                 |
 | NDA_Monitoring_Group_Ids      | 828     | True     | The script will create remote monitors for the domain controllers (One Domain Controller Per Domain) that belong to the groups identified by the group IDs specified in this system property. Multiple IDs can be included by separating them with a comma. |
 | NDA_Monitoring_Interval       | 3600    | True     | Controls the generated Remote Monitor run time interval. The default is 3600 seconds.                                                                                                                                                          |
-| NDA_Monitoring_AlertTemplate  | 611     | True     | This system property stores the id of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.                          |
-| NDA_Monitoring_TicketCategory  | 124     | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Domain Controllers. The default value is '0'. i.e., `&lt;Not Specifed&gt;`.                                 |
+| NDA_Monitoring_AlertTemplate  | 611     | True     | This system property stores the ID of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.                          |
+| NDA_Monitoring_TicketCategory  | 124     | False    | This system property stores the ID of the `Ticket Category` to apply to the remote monitors created for the Domain Controllers. The default value is '0', i.e., `&lt;Not Specified&gt;`.                                 |
 | NDA_Monitoring_Excluded_Users | Batman,AnotherBatman,OneMoreBatman | True | This system property stores the usernames to exclude from generating the new domain admin-detected tickets. The default value will be `&lt;blank&gt;`. Multiple usernames can be added by separating them with a comma.                |
 
 ## Client-Level EDF
@@ -107,15 +108,15 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 **Name:** `ProVal - Production - New Domain Admin Monitor`
 
-**Ticket Subject:** `New Domain Admin Detected at \<DOMAIN NAME>`
+**Ticket Subject:** `New Domain Admin Detected at \\<DOMAIN NAME>`
 
 **Alert Message on Failure:**  
-`New Domain Admin(s) Detected at \<DOMAIN NAME> for %CLIENTNAME%.`  
-`\<Newly Created Domain Admin(s)>`
+`New Domain Admin(s) Detected at \\<DOMAIN NAME> for %CLIENTNAME%.`  
+`\\<Newly Created Domain Admin(s)>`
 
 **Sample Ticket:**  
 ![Sample Ticket](../../../static/img/New-Domain-Admin-Monitor---Create/image_9.png)  
-**Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+**Automate will never close the ticket; instead, it will keep adding the new detections to the same ticket as a comment/note unless the ticket is closed/resolved manually.**
 
 **Sample Remote Monitor:**  
 ![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_10.png)  
@@ -125,15 +126,3 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['alerting', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The solution aims to retrieve and display the OneDrive Sync Status using the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncUtil/blob/master/ODSyncUtil/Get-ODStatus.ps1) script.
@@ -19,7 +20,7 @@ The solution aims to retrieve and display the OneDrive Sync Status using the [Ge
 | Content                                                                                         | Type          | Function                                         |
 |-------------------------------------------------------------------------------------------------|---------------|--------------------------------------------------|
 | [Script - Get OneDrive Sync Status [DV]](<../cwa/scripts/Get OneDrive Sync Status DV.md>)      | Script        | The script fetches the data.                     |
-| [pvl_odsync_status](<../cwa/tables/pvl_odsync_status.md>)                          | Custom Table  | The custom table stores the data.                |
+| [pvl_odsync_status](<../cwa/tables/pvl_odsync_status.md>)                                      | Custom Table  | The custom table stores the data.                |
 | [Dataview - OneDrive Sync Status [Script]](<../cwa/dataviews/OneDrive Sync Status Script.md>)   | Dataview      | The dataview displays the data.                  |
 | [Internal Monitor - Execute Script - Get OneDrive Sync Status [DV]](<../cwa/monitors/Execute Script - Get OneDrive Sync Status DV.md>) | Internal Monitor | The internal monitor detects the relevant computers. |
 | Alert Template - △ Custom - Execute Script - Get OneDrive Sync Status [DV]                    | Alert Template | The alert template executes the script.          |
@@ -37,7 +38,7 @@ The solution aims to retrieve and display the OneDrive Sync Status using the [Ge
 ### 1.
 **Remove the following** items if they exist (This is the old solution):
 - [Script - Microsoft OneDrive Sync Status [DV]](<../cwa/scripts/Microsoft OneDrive Sync Status DV.md>)  
-  - _If you get an error stating the script is running_, navigate to the System Dashboard --> Management --> Scripts --> Remove this script from that list by Right-Clicking and selecting 'Kill Script'
+  - _If you get an error stating the script is running_, navigate to the System Dashboard --> Management --> Scripts --> Remove this script from that list by right-clicking and selecting 'Kill Script'
     - Then proceed to delete the script
 - Dataview - Microsoft OneDrive Sync Status [Script]
 - [Internal Monitor - OneDrive Sync Status Issue](<../cwa/monitors/OneDrive Sync Status Issue.md>)
@@ -61,7 +62,7 @@ Run the script against any online Windows machine with the `Set_Environment` par
 
 ### 5.
 Configure the solution as outlined below:
-- Navigate to Automation --> Monitors within the CWA Control Center and setup the following:
+- Navigate to Automation --> Monitors within the CWA Control Center and set up the following:
   - [Internal Monitor - Execute Script - Get OneDrive Sync Status [DV]](<../cwa/monitors/Execute Script - Get OneDrive Sync Status DV.md>)  
     - Alert Template: `△ Custom - Execute Script - Get OneDrive Sync Status [DV]`
     - Right-click and Run Now to start the monitor
@@ -82,19 +83,7 @@ Reload the system cache:
 
 ### 3.
 Configure the solution as outlined below:
-- Navigate to Automation --> Monitors within the CWA Control Center and setup the following:
+- Navigate to Automation --> Monitors within the CWA Control Center and set up the following:
   - [Internal Monitor - ProVal - Production - OneDrive Sync Failures](<../cwa/monitors/OneDrive Sync Failures.md>)  
     - Alert Template: `△ Custom - Ticket Creation - Computer`
     - Right-click and Run Now to start the monitor
-
-
-
-
-
-
-
-
-
-
-
-

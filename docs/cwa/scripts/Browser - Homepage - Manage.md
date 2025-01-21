@@ -8,6 +8,7 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script serves as a wrapper for configuring the homepage of three browsers: Google Chrome, Microsoft Edge, and Mozilla Firefox. It leverages the following scripts:
@@ -17,11 +18,11 @@ This script serves as a wrapper for configuring the homepage of three browsers: 
 - [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](<./Mozilla Firefox - Homepage - Set.md>)
 - [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](<./Mozilla Firefox - Homepage - Remove.md>)
 
-The 'Action' parameter can be used to specify the desired action (Set/Remove/Replace), and the 'Browser' parameter to indicate the target browser for the operation. If the 'Browser' parameter is left unspecified, the script will perform the specified action on all three browsers.
+The 'Action' parameter can be used to specify the desired action (Set/Remove/Replace), and the 'Browser' parameter indicates the target browser for the operation. If the 'Browser' parameter is left unspecified, the script will perform the specified action on all three browsers.
 
 ## Dependencies
 
-Importing this script will import the following scripts too:
+Importing this script will also import the following scripts:
 
 - [EPM - Software Configuration - Chromium Browsers - Homepage - Set](<./EPM - Software Configuration - Chromium Browsers - Homepage - Set.md>)
 - [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](<./EPM - Software Configuration - Chromium Browsers - Homepage - Remove.md>)
@@ -32,8 +33,8 @@ Importing this script will import the following scripts too:
 
 | Name                       | Example                               | Required | Description                                                                                                                                                                                                 |
 |----------------------------|---------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Action                     | Set                                   | True     | The 'Action' parameter can be used to specify the desired action (Set/Remove). \<ul>\<li>Set -> To set the Homepage\</li>\<li>Remove -> To Remove the Homepage\</li>\<li>Replace -> To Replace the current Homepage \<ul>\<li>Use this to override previously configured settings (such as EnforceOnNewTab)\</li>\</ul>\</li>\</ul> |
-| Browser                    | Chrome                                | False    | The 'Browser' parameter specifies the browser for setting/removing the homepage. Only 'Chrome', 'Edge', and 'Firefox' are acceptable values. If unspecified, the script will perform the action on all three browsers. Each value should be separated by a comma without any additional spaces. e.g., chrome,firefox |
+| Action                     | Set                                   | True     | The 'Action' parameter can be used to specify the desired action (Set/Remove). <ul><li>Set -> To set the Homepage</li><li>Remove -> To remove the Homepage</li><li>Replace -> To replace the current Homepage <ul><li>Use this to override previously configured settings (such as EnforceOnNewTab)</li></ul></li></ul> |
+| Browser                    | Chrome                                | False    | The 'Browser' parameter specifies the browser for setting/removing the homepage. Only 'Chrome', 'Edge', and 'Firefox' are acceptable values. If unspecified, the script will perform the action on all three browsers. Each value should be separated by a comma without any additional spaces, e.g., chrome,firefox. |
 | Homepage                   | [https://www.provaltech.com](https://www.provaltech.com) | True     | The string value of the homepage to set in the browser. Only useful with the `Set` and `Replace` actions.                                                                                                 |
 | EnforceOnNewTab           | 1                                     | False    | Set to 1 to force the homepage on each new tab instead of the new tab page. Only useful with the `Set` and `Replace` actions and only works on Chromium Browsers (Chrome and Edge).                       |
 | EnforceHomepageStartup     | 1                                     | False    | Set to 1 to force the homepage to be the only open tab at the startup of the browser. Only useful with the `Set` and `Replace` actions.                                                                   |
@@ -41,7 +42,7 @@ Importing this script will import the following scripts too:
 ## Action
 
 ### Set:
-Set action can be used for setting a specific homepage to the concerned browser(s).
+The Set action can be used for setting a specific homepage for the concerned browser(s).
 
 **Parameters Used:**  
 ![Set Parameters](../../../static/img/Browser---Homepage---Manage/image_1.png)
@@ -50,7 +51,7 @@ Set action can be used for setting a specific homepage to the concerned browser(
 ![Set Output](../../../static/img/Browser---Homepage---Manage/image_2.png)
 
 ### Remove:
-Remove action can be used to remove the currently applied Homepage from the concerned browser(s).
+The Remove action can be used to remove the currently applied homepage from the concerned browser(s).
 
 **Parameters Used:**  
 ![Remove Parameters](../../../static/img/Browser---Homepage---Manage/image_3.png)
@@ -78,7 +79,7 @@ The `Replace` action serves to substitute the existing homepage configuration in
 Example: Setting [https://www.provaltech.com](https://www.provaltech.com) to the homepage of Google Chrome:  
 ![Set Chrome Homepage](../../../static/img/Browser---Homepage---Manage/image_9.png)
 
-- Remove the Homepage from one single browser:  
+- Remove the Homepage from a single browser:  
 Example: Removing the homepage from Mozilla Firefox:  
 ![Remove Firefox Homepage](../../../static/img/Browser---Homepage---Manage/image_10.png)
 
@@ -94,22 +95,10 @@ Example: Replacing the homepage with [https://www.provaltech.com](https://www.pr
 Example: Removing the homepage from all three browsers (Google Chrome, Microsoft Edge, Mozilla Firefox):  
 ![Remove All Browsers Homepage](../../../static/img/Browser---Homepage---Manage/image_13.png)
 
-- Enforce the homepage on Browser startup.  
+- Enforce the homepage on browser startup.  
 Example: Configuring Google Chrome and Microsoft Edge to open [https://www.provaltech.com](https://www.provaltech.com) as the homepage upon startup and ensuring that this setting is enforced in both browsers.  
 ![Enforce Homepage on Startup](../../../static/img/Browser---Homepage---Manage/image_14.png)
 
 ## Output
 
 - Script logs
-
-
-
-
-
-
-
-
-
-
-
-

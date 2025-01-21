@@ -8,13 +8,14 @@ tags: ['email', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will automatically create a ticket or send an email notification if the script 'Windows - Admin Account - Create/Update' updates a client-level Local Admin password. This will allow the partner to update a separate password management tool manually as the tickets come in.
+This script will automatically create a ticket or send an email notification if the script 'Windows - Admin Account - Create/Update' updates a client-level Local Admin password. This will allow the partner to manually update a separate password management tool as the tickets come in.
 
-## UPDATE NOTIFICATION: 11-14-23
+## Update Notification: 11-14-23
 
-Please be advised to promptly synchronize the script [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>). Notably, there have been updates in the `SetEnvironment_Local_Admin_Process` function of the script, focusing on property imports. Additionally, script notes have been adjusted to include the required date for optimal functionality. If updating, please re-run the `SetEnvironment_Local_Admin_Process` function of the script to make sure the system properties required for this script are imported.
+Please be advised to promptly synchronize the script [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>). Notably, there have been updates in the `SetEnvironment_Local_Admin_Process` function of the script, focusing on property imports. Additionally, script notes have been adjusted to include the required date for optimal functionality. If updating, please re-run the `SetEnvironment_Local_Admin_Process` function of the script to ensure that the system properties required for this script are imported.
 
 ## Sample Run
 
@@ -28,8 +29,8 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
 
 | Name                                                    | Example                                    | Required | Description                                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------|--------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Default_Local_Admin_Password_Change_Notification_Client | 0                                          | False    | 1 -> This will enable the notification alerting for password update0 -> By default set to 0 which will not let the notification set for password update                                                                                                                                                                                  |
-| Default_Local_Admin_Password_Change_Notification_Email  | [test@test.com](mailto:test@test.com); [msp@msp.com](http://;msp@msp.com) | False    | Set the email address in this property to enable the emailing from the notification script rather than ticket creation for password update notification                                                                                                                                                                                      |
+| Default_Local_Admin_Password_Change_Notification_Client | 0                                          | False    | 1 -> This will enable the notification alerting for password updates; 0 -> By default set to 0, which will not allow the notification for password updates.                                                                                                                                                                               |
+| Default_Local_Admin_Password_Change_Notification_Email  | [test@test.com](mailto:test@test.com); [msp@msp.com](mailto:msp@msp.com) | False    | Set the email address in this property to enable emailing from the notification script rather than ticket creation for password update notifications.                                                                                                                                                                                      |
 
 ## Output
 
@@ -49,16 +50,4 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
 
   ------------------------------------------------------------------------------------------------------------------------  
 
-  Here, @sqlName@, @sqlUserName@, @sqlclientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@, contains the detail of the Client Name, User Name for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password was changed information stored respectively.
-
-
-
-
-
-
-
-
-
-
-
-
+  Here, @sqlName@, @sqlUsername@, @sqlClientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@ contain the details of the Client Name, Username for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password change information was stored respectively.

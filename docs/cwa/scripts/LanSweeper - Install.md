@@ -8,10 +8,11 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Installs the LanSweeper agent.  
-[https://www.lansweeper.com/download/lsagent/](https://www.lansweeper.com/download/lsagent/)
+[Download LanSweeper Agent](https://www.lansweeper.com/download/lsagent/)
 
 ## Sample Run
 
@@ -19,35 +20,24 @@ Installs the LanSweeper agent.
 
 ## Dependencies
 
-[https://www.lansweeper.com/download/lsagent/](https://www.lansweeper.com/download/lsagent/)
+[Download LanSweeper Agent](https://www.lansweeper.com/download/lsagent/)
 
 #### User Parameters
 
 | Name            | Example                     | Required | Description                                           |
 |-----------------|-----------------------------|----------|-------------------------------------------------------|
-| ScanningServer   | FQDN, NetBIOS or IP        | False    | The FQDN, Netbios or IP of the scanning server       |
-| ListeningPort    | 9524                        | False    | Listening port configured of the scanning server      |
+| ScanningServer   | FQDN, NetBIOS, or IP       | False    | The FQDN, NetBIOS, or IP of the scanning server      |
+| ListeningPort    | 9524                        | False    | Listening port configured for the scanning server     |
 | RelayAuthKey     | Key                         | False    | Cloud Relay Authentication Key                         |
 
 ## Process
 
-[https://www.lansweeper.com/knowledgebase/silently-installing-lsagent-on-a-windows-linux-or-mac-computer/](https://www.lansweeper.com/knowledgebase/silently-installing-lsagent-on-a-windows-linux-or-mac-computer/)  
-It is dependent on three parameters for installation to complete, they are:  
+[Silently Installing LanSweeper Agent](https://www.lansweeper.com/knowledgebase/silently-installing-lsagent-on-a-windows-linux-or-mac-computer/)  
+The installation depends on three parameters to complete successfully:  
 ![Process Image](../../../static/img/LanSweeper---Install/image_2.png)  
 
-Once the value provided during script execution, the LsAgent will be successfully installed.
+Once the values are provided during script execution, the LsAgent will be successfully installed.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

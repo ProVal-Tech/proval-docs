@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Data used for auditing Windows 10 versions. Displays information grouped by ClientID and ReleaseID of Windows 10.
+This document provides data used for auditing Windows 10 versions. It displays information grouped by ClientID and ReleaseID of Windows 10.
 
 ## Dependencies
 
@@ -28,21 +29,8 @@ Data used for auditing Windows 10 versions. Displays information grouped by Clie
 | Count Machines Online               | BIGINT   | Number of machines with this version of Windows 10 that are online.    |
 | % Total Online                      | DECIMAL  | The percentage of Windows 10 machines with this version that are online.|
 | clientid                           | INT      | The ClientID of the audited Windows 10 versions.                        |
-| Machines W/ Patch Policy            | BIGINT   | The number of Windows 10 machines with the specified version with a patching policy. |
-| % Total W/ Patch Policy             | DECIMAL  | The percent of Windows 10 machines with the specified version with a patching policy. |
-| Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version with a patching policy. |
-| % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version with a patching policy. |
+| Machines W/ Patch Policy            | BIGINT   | The number of Windows 10 machines with the specified version that have a patching policy. |
+| % Total W/ Patch Policy             | DECIMAL  | The percent of Windows 10 machines with the specified version that have a patching policy. |
+| Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version that have a patching policy. |
+| % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version that have a patching policy. |
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,28 +8,29 @@ tags: ['deployment', 'encryption']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script runs as an autofix to deploy the BitLocker initialization to the agents detected by the monitor [Internal Monitor - Bitlocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>).
+This script runs as an autofix to deploy the BitLocker initialization to the agents detected by the monitor [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>).
 
 ## Sample Run
 
-Run it with `SetEnvironment = 1`, to set the EDFs required for this script once after importing the script.
+Run it with `SetEnvironment = 1` to set the EDFs required for this script once after importing it.
 
 ![Sample Run](../../../static/img/Bitlocker---Volume---Initialize-Autofix,Param---Wrapper/image_1.png)
 
 ## Dependencies
 
-- [Internal Monitor - Bitlocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>)
-- [SEC - Encryption - Script - Bitlocker - Volume - Initialize](https://proval.itglue.com/DOC-5078775-8934308)
-- [SEC - Encryption - Script - Bitlocker - Audit](<./Bitlocker - Audit.md>)
+- [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>)
+- [SEC - Encryption - Script - BitLocker - Volume - Initialize](https://proval.itglue.com/DOC-5078775-8934308)
+- [SEC - Encryption - Script - BitLocker - Audit](<./Bitlocker - Audit.md>)
 
 #### EDFs
 
 | Name                                              | Level     | Type     | Editable | Description                                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------|-----------|----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BitLocker Encryption Automation - Enable [Wks]    | Location  | Dropdown | Yes      | This location EDF provided two options:AllDrives - Select this to enable the initialization of BitLocker to all NTFS, internal, and nonmissing drives.SystemDrive - Select this to enable the initialization of BitLocker to (C:) volume.                                                                                             |
-| Bitlocker Enable Exclude                           | Computer  | Flag     | Yes      | This computer EDF if checked will exclude the agent from the BitLocker auto-initialization.                                                                                                                                                                                                                                                        |
+| BitLocker Encryption Automation - Enable [Wks]    | Location  | Dropdown | Yes      | This location EDF provides two options: AllDrives - Select this to enable the initialization of BitLocker to all NTFS, internal, and non-missing drives. SystemDrive - Select this to enable the initialization of BitLocker to the (C:) volume.                                                                                             |
+| BitLocker Enable Exclude                           | Computer  | Flag     | Yes      | This computer EDF, if checked, will exclude the agent from the BitLocker auto-initialization.                                                                                                                                                                                                                                                       |
 
 #### User Parameters
 
@@ -37,25 +38,13 @@ Run it with `SetEnvironment = 1`, to set the EDFs required for this script once 
 |-----------------|---------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SetEnvironment   | 1 or 0 | False    | Executing the script for the first time with SetEnvironment = 1 is mandatory to set the EDFs in the partner environment.                                                     |
 
-## ScriptState
+## Script State
 
 | Variable Name                     | Value    | Required | Description                                                                                                                                                                                                                     |
 |-----------------------------------|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bitlocker_Enable_Fail_Count       | 1 or 2  | True     | The script enters the count of failed attempts of the BitLocker initialization to this script state.If it fails twice (2) times, the computer will be excluded from the monitor [Internal Monitor - Bitlocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>). |
+| BitLocker_Enable_Fail_Count       | 1 or 2  | True     | The script records the count of failed attempts of the BitLocker initialization in this script state. If it fails twice (2) times, the computer will be excluded from the monitor [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>). |
 
 ## Output
 
 - Script log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

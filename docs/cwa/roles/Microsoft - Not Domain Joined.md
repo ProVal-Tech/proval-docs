@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This role is detected on machines that are not joined to a domain.
@@ -19,17 +20,5 @@ This role is detected on machines that are not joined to a domain.
 | See below        | Equals     | True   | Windows        |
 
 ```powershell
-{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]"%}
+powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]"
 ```
-
-
-
-
-
-
-
-
-
-
-
-

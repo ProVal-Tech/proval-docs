@@ -8,6 +8,7 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This table stores health information about HP iLO devices. It is filled by the script [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) and is used by the dataview [HP iLO Health Report](<../dataviews/HP iLO Health Report.md>).
@@ -48,18 +49,5 @@ This table stores health information about HP iLO devices. It is filled by the s
 | Hostname                     | VARCHAR  | Hostname of the iLO device (if available).           |
 | Status                       | VARCHAR  | Overall status of the iLO device.                     |
 | StatusInfo                   | VARCHAR  | Additional information about the overall iLO status.  |
-| LastRun                      | DATETIME | The last time the Script was run.                     |
-| Computerid                   | INT      | Computerid                                           |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| LastRun                      | DATETIME | The last time the script was run.                     |
+| Computerid                   | INT      | Computer ID.                                          |

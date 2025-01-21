@@ -8,14 +8,15 @@ tags: ['installation', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
 
-This agent procedure automates the installation and configuration of Google Credential Provider for Windows (GCPW). The procedure sets the domains allowed to login, and optionally configures an enrollment token. Enrollment tokens are in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings.
+This agent procedure automates the installation and configuration of Google Credential Provider for Windows (GCPW). The procedure sets the domains allowed for login and optionally configures an enrollment token. Enrollment tokens can be found in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings.
 
 ## Requirements
 
 - PowerShell v5 or higher
-- Administrative privileges are required for execution (Procedure is ran as System)
+- Administrative privileges are required for execution (the procedure runs as System)
 
 ## Process
 
@@ -26,9 +27,9 @@ This agent procedure automates the installation and configuration of Google Cred
 5. Performs verification steps to ensure the registry keys for domains and the enrollment token (if provided) are correctly set.
 6. Cleans up installation files and logs the installation process.
 
-## Kaseya Implementation:
+## Kaseya Implementation
 
-Procedure Name: Google Credential Provider for Windows (GCPW) - Install
+**Procedure Name:** Google Credential Provider for Windows (GCPW) - Install
 
 ![Image](../../../static/img/Install-Google-Credential-Provider-for-Windows-(GCPW)/image_1.png)
 
@@ -38,15 +39,15 @@ This procedure uses two variables.
 
 | Variable          | Required | Default | Description                                                                                     |
 |-------------------|----------|---------|-------------------------------------------------------------------------------------------------|
-| `DomainsAllowed`  | True     |         | Specifies the domain(s) users are allowed to log in from. Accepts single domains, or multiple domains. |
+| `DomainsAllowed`  | True     |         | Specifies the domain(s) users are allowed to log in from. Accepts single domains or multiple domains. |
 | `EnrollmentToken` | False    | 0       | Sets the enrollment token to manage GCPW from the Google Admin console. Leave at 0 to skip this step. |
 
 > Example of a single domain: "solarmora.com"
 
-> Example of multiple domains: "solarmora.com","altostrat.com"
+> Example of multiple domains: "solarmora.com", "altostrat.com"
 
 ```
-Enrollment tokens are in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings
+Enrollment tokens can be found in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings
 ```
 
 # Output
@@ -58,14 +59,3 @@ Agent Procedure Log
 %ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-log.txt
 %ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

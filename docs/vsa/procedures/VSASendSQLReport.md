@@ -8,29 +8,18 @@ tags: ['database', 'email', 'report', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
+
+## Summary
 
 Get SQL Data and Send as Report  
 
-## Parameter:
+## Parameters:
 
-- **credtype**: Required. [sql] or [windows]  
-- **sqlserver**: Required. The name or IP of the SQL server  
-- **sqlfile**: Required. The path to query file to run. Example: `c://kworking//sqlquery.sql`  
-- **msgto**: Required. The target email address  
-- **msgsubject**: Required. The email subject line  
-- **filename**: Required. The filename of the csv  
-- **sqluser**: Required if sql credtype. The username to logon to the SQL server  
-- **sqlpassword**: Required if sql credtype. The password to logon to the SQL server  
-
-
-
-
-
-
-
-
-
-
-
-
+- **credtype**: Required. Can be either `[sql]` or `[windows]`.  
+- **sqlserver**: Required. The name or IP address of the SQL server.  
+- **sqlfile**: Required. The path to the query file to run. Example: `c://kworking//sqlquery.sql`.  
+- **msgto**: Required. The target email address.  
+- **msgsubject**: Required. The email subject line.  
+- **filename**: Required. The filename of the CSV.  
+- **sqluser**: Required if using SQL credtype. The username to log in to the SQL server.  
+- **sqlpassword**: Required if using SQL credtype. The password to log in to the SQL server.  

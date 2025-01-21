@@ -8,9 +8,10 @@ tags: ['vulnerability']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) and depicts the status of SMB Enabled on the agent where it is deployed.
+This dataview gathers data from the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) and depicts the status of SMB enabled on the agent where it is deployed.
 
 ## Dependencies
 
@@ -24,21 +25,8 @@ This dataview gathers the data from the script [CWA Script - SMBv1 Enabled Detec
 | Location                  | Location name of the agent                                                                    |
 | Computer                  | The computer name of the agent                                                                |
 | Operating System          | The operating system name of the agent                                                        |
-| LastContact               | The last contact info of agent with the Automate                                              |
-| SMBv1 Status              | This stores the status of SMBv1 status after script execution                                 |
-| SMBv1 Logging             | This stores the script PowerShell execution output for logging                                 |
+| Last Contact              | The last contact information of the agent with Automate                                       |
+| SMBv1 Status              | This stores the status of SMBv1 after script execution                                        |
+| SMBv1 Logging             | This stores the PowerShell execution output of the script for logging                         |
 | SMBv1 Detection Date      | This stores the date and time when the last SMBv1 status was detected via the script [CWA Script - SMBv1 Enabled Detection & Remediation](<../scripts/SMBv1 Status AuditAutofix DV,Param.md>) |
-| SMBv1 Vulnerability State  | This shows whether the device is vulnerable or not vulnerable based on the script output detection |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| SMBv1 Vulnerability State  | This indicates whether the device is vulnerable or not based on the script output detection    |

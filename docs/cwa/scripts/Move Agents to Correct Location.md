@@ -8,13 +8,14 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script must be run as an Autofix script from [ProVal - Development - Agent Checking in with Wrong Location](<../monitors/Agent Checking in with Wrong Location.md>) monitor set. It will set the Move the computer to New_Location detected in the monitor set.
+The script must be run as an Autofix script from the [ProVal - Development - Agent Checking in with Wrong Location](<../monitors/Agent Checking in with Wrong Location.md>) monitor set. It will move the computer to the New_Location detected in the monitor set.
 
 ## Sample Run
 
-Since `@FieldName@` and `@Result@` are compulsory variables to make the script work. So, it would not work for manual executions.
+Since `@FieldName@` and `@Result@` are compulsory variables for the script to function, it will not work for manual executions.
 
 ## Dependencies
 
@@ -22,28 +23,16 @@ Since `@FieldName@` and `@Result@` are compulsory variables to make the script w
 
 ## Variables
 
-| Name       | Description                                    |
-|------------|------------------------------------------------|
-| STATUS     | Success or Failed status of monitor set.      |
-| RESULT     | Result or test value from the monitor set.    |
-| FIELDNAME  | Field name or identity field from the monitor set. |
+| Name      | Description                                     |
+|-----------|-------------------------------------------------|
+| STATUS    | Success or Failed status of the monitor set.   |
+| RESULT    | Result or test value from the monitor set.     |
+| FIELDNAME | Field name or identity field from the monitor set. |
 
 ## Process
 
-Monitor set will call the script. The script will move the computer to the new location as per the monitor set.
+The monitor set will call the script, which will move the computer to the new location as specified in the monitor set.
 
 ## Output
 
-Removal of agents from the Monitor set's detection.
-
-
-
-
-
-
-
-
-
-
-
-
+Removal of agents from the monitor set's detection.

@@ -8,6 +8,7 @@ tags: ['cve', 'database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview will display the results from the [CWA Script - CVE-2021-1675 - Set folder ACL](<../scripts/CVE-2021-1675 - Set folder ACL (PrintNightmare).md>) script running against machines related to the CVE-2021-1675 vulnerability.
@@ -16,7 +17,7 @@ This dataview will display the results from the [CWA Script - CVE-2021-1675 - Se
 
 The script [CWA Script - CVE-2021-1675 - Set folder ACL](<../scripts/CVE-2021-1675 - Set folder ACL (PrintNightmare).md>) must be running in the environment for this dataview to display the appropriate data.
 
-The script should be imported via the ProVal plugin to ensure the GUID does not change on import. The GUID for the script is hardcoded into the SQL.
+The script should be imported via the ProVal plugin to ensure the GUID does not change upon import. The GUID for the script is hardcoded into the SQL.
 
 ## Columns
 
@@ -27,16 +28,3 @@ The script should be imported via the ProVal plugin to ensure the GUID does not 
 | Computer   | The computer associated with the results of the script                      |
 | Status     | This is the Script State "Result" column from the script                   |
 | Last Run   | This is the most recent date that the script was run against the target device |
-
-
-
-
-
-
-
-
-
-
-
-
-

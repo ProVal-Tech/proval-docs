@@ -8,9 +8,10 @@ tags: ['active-directory', 'gpo']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an Automate implementation of the agnostic script [RSM - Active Directory - Agnostic - Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846).
+This document outlines the implementation of the agnostic script [RSM - Active Directory - Agnostic - Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846) within ConnectWise Automate.
 
 ## Sample Run
 
@@ -18,21 +19,10 @@ This is an Automate implementation of the agnostic script [RSM - Active Director
 
 ## Dependencies
 
-[RSM - Active Directory - Agnostic - Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
+- [RSM - Active Directory - Agnostic - Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
 
 ## Output
 
 - Custom Table
 - Dataview
 - Script Log
-
-
-
-
-
-
-
-
-
-
-

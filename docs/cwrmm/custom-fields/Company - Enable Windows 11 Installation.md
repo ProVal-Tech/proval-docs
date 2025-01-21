@@ -8,6 +8,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Mark this custom field to enable Windows 11 installation for the company's Windows 10 machines.
@@ -18,19 +19,7 @@ Mark this custom field to enable Windows 11 installation for the company's Windo
 |--------------------------------------|--------|------|---------------|-----------------------------------------------------------------------------|----------|
 | Enable Windows 11 Installation       | Company| Flag | No            | Mark this custom field to enable Windows 11 installation for the company's Windows 10 machines. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Image 1](../../../static/img/Company---Enable-Windows-11-Installation/image_1.png)  
 ![Image 2](../../../static/img/Company---Enable-Windows-11-Installation/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

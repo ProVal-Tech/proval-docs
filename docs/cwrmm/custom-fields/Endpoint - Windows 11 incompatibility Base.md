@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Stores the result returned by the [Windows 11 Compatibility Validation](<../tasks/Windows 11 Compatibility Validation.md>) task for the incompatible machines.
@@ -16,22 +17,9 @@ Stores the result returned by the [Windows 11 Compatibility Validation](<../task
 
 | Field Name                            | Level    | Type      | Default Value | Description                                                            | Editable |
 |---------------------------------------|----------|-----------|---------------|------------------------------------------------------------------------|----------|
-| Windows 11 incompatibility Base       | Endpoint | Text Box  |               | What causes a Windows 10 computer to be incompatible with Windows 11? | Yes      |
+| Windows 11 Incompatibility Base       | Endpoint | Text Box  |               | What causes a Windows 10 computer to be incompatible with Windows 11? | Yes      |
 
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

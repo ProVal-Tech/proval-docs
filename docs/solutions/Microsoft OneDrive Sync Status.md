@@ -8,9 +8,10 @@ tags: ['alerting', 'auditing', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of the solution is to collect and display the OneDrive sync status information from Windows machines exclusively for Non-SharePoint Linked Sites.
+The purpose of this solution is to collect and display OneDrive sync status information from Windows machines exclusively for Non-SharePoint Linked Sites.
 
 ## Associated Content
 
@@ -70,16 +71,4 @@ Implement the Alerting solution as follows:
 ## FAQ
 
 **Q:** Why does the script occasionally throw an error and fail to retrieve data from the computer?  
-**A:** The script relies on the functionality of the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module to fetch the necessary data. However, it's important to note that the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module is not entirely infallible, which can result in occasional errors during data retrieval. Additionally, it's crucial to ensure that no security application is impeding the functionality of this module, as it needs to operate without restrictions to retrieve data successfully.
-
-
-
-
-
-
-
-
-
-
-
-
+**A:** The script relies on the functionality of the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module to fetch the necessary data. However, it's important to note that the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module is not entirely infallible, which can result in occasional errors during data retrieval. Additionally, it's crucial to ensure that no security applications are impeding the functionality of this module, as it needs to operate without restrictions to retrieve data successfully.

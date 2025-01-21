@@ -8,10 +8,10 @@ tags: ['deployment', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This group adds the agent to the group for the "DUO Security Authentication Proxy" deployment.  
-The agent gets added if the company custom field "DUO Proxy Deployment" is checked.
+This group adds the agent to the group for the "DUO Security Authentication Proxy" deployment. The agent gets added if the company custom field "DUO Proxy Deployment" is checked.
 
 ## Dependencies
 
@@ -25,7 +25,7 @@ The agent gets added if the company custom field "DUO Proxy Deployment" is check
 
 ## Group Creation
 
-1. Navigate to `Devices` > `Device Groups`.
+1. Navigate to `Devices` > `Device Groups`.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_6.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
@@ -42,33 +42,22 @@ The agent gets added if the company custom field "DUO Proxy Deployment" is check
    This search box will appear.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_11.png)
 
-5. - Search and select the `OS` from the search box.
+5. - Search and select the `OS` from the search box.  
    - Mark and select `Microsoft Windows 10` and `Microsoft Windows 11` in the comparison field.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_12.png)  
    **Condition:** `OS` `Contains any of` `Microsoft Windows 10, Microsoft Windows 11`
 
-6. - Search and select the `Duo Proxy Deployment` custom field from the search box.
+6. - Search and select the `Duo Proxy Deployment` custom field from the search box.  
    - Set `True` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_13.png)  
    **Condition:** `Duo Proxy Deployment` `Equal` `True`
 
-7. - Search and select the `Duo Proxy Exclusion` custom field from the search box.
+7. - Search and select the `Duo Proxy Exclusion` custom field from the search box.  
    - Set `False` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_14.png)  
    **Condition:** `Duo Proxy Exclusion` `Equal` `False`
 
-8. - Search and select the `Duo Auth Proxy Result` custom field from the search box.
+8. - Search and select the `Duo Auth Proxy Result` custom field from the search box.  
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_15.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
-
-
-
-
-
-
-
-
-
-
-

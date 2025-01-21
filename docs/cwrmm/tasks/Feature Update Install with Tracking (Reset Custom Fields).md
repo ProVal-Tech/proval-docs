@@ -8,6 +8,7 @@ tags: ['patching', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script clears the related custom fields on machines where the Feature Update is successfully installed, thereby excluding those machines from automation and monitoring.
@@ -27,7 +28,7 @@ The script clears the related custom fields on machines where the Feature Update
 
 ## Create Script
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Create Script](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_3.png)  
 ![Create Script 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_4.png)  
@@ -81,10 +82,10 @@ Search and select the `Set Custom Field` function in the new row.
 
 Search and select the `Feature Update Install Failure` Custom Field.  
 ![Feature Update Install Failure](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_16.png)  
-Type ` ` in the `Value` box and click the Save button. (There is a single space in the `Value` field.)  
+Type ` ` (there is a single space) in the `Value` box and click the Save button.  
 ![Value Field 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_17.png)  
 
-Click the `Save` button to save the Task.  
+Click the `Save` button to save the task.  
 ![Save Task](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_18.png)  
 
 ## Completed Script
@@ -94,9 +95,9 @@ Click the `Save` button to save the Task.
 ## Deployment
 
 1. Go to `Automation` > `Tasks`.
-2. Search for `Feature Update Install With Tracking (Reset Custom Fields)` Task.
+2. Search for `Feature Update Install With Tracking (Reset Custom Fields)` task.
 3. Select the concerned task.
-4. Click on `Schedule` button to schedule the task/script.  
+4. Click on the `Schedule` button to schedule the task/script.  
    ![Schedule Task](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_20.png)  
 5. This screen will appear.  
    ![Schedule Screen](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_21.png)  
@@ -104,9 +105,9 @@ Click the `Save` button to save the Task.
    ![Does Not Repeat](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_22.png)  
 7. This pop-up box will appear.  
    ![Pop-up Box](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_23.png)  
-8. Click `OK` button to run the Task once per day.  
+8. Click the `OK` button to run the task once per day.  
    ![OK Button](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_24.png)  
-9. Select the relevant time to execute the script. It is suggested to run this task during working hours, when most of the workstations are online.  
+9. Select the relevant time to execute the script. It is suggested to run this task during working hours when most of the workstations are online.  
    ![Execution Time](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_24.png)  
 10. Search and select the `Feature Pack Update - Updated Computers` group in the `Resources`.  
     ![Resources](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_25.png)  
@@ -115,22 +116,10 @@ Click the `Save` button to save the Task.
 12. The task will start appearing in the Scheduled Tasks.  
     ![Scheduled Tasks](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_27.png)  
     ![Scheduled Tasks 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_28.png)  
-13. `Suspend` option can be used to `suspend/stop` the schedule.  
+13. The `Suspend` option can be used to `suspend/stop` the schedule.  
     ![Suspend Option](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_29.png)  
     ![Suspend Option 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_30.png)  
 
 ## Output
 
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

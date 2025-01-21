@@ -8,9 +8,10 @@ tags: ['chrome', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It is an Automate implementation of the [SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>) agnostic script to remove the registry policy for an enforced homepage in Google Chrome.
+This document describes an Automate implementation of the [SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>) agnostic script, which is designed to remove the registry policy for an enforced homepage in Google Chrome.
 
 ## Sample Run
 
@@ -23,15 +24,3 @@ It is an Automate implementation of the [SWM - Software Configuration - Remove-C
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-
-

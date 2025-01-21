@@ -8,9 +8,10 @@ tags: ['custom-fields']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is designed to reboot the workstations endpoints based on the custom field `@WorkstationRebootWindowStart@`, `@WorkstationRebootWindowEnd@`, and `@WorkstationRebootWindowDay@`. If the reboot time does not fall between the windows then the reboot will not trigger.
+This script is designed to reboot workstation endpoints based on the custom fields `@WorkstationRebootWindowStart@`, `@WorkstationRebootWindowEnd@`, and `@WorkstationRebootWindowDay@`. If the reboot time does not fall between the defined windows, the reboot will not trigger.
 
 ## Sample Run
 
@@ -31,14 +32,14 @@ This script is designed to reboot the workstations endpoints based on the custom
 ![Create Task](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_3.png)
 
 - **Name:** Force Workstation Server With Reboot Windows Verification
-- **Description:** This script is designed to reboot the endpoints based on the custom field WorkstationRebootWindowStart, WorkstationRebootWindowEnd, and WorkstationRebootWindowDay. If the reboot time does not fall between the windows then the reboot will not trigger.
+- **Description:** This script is designed to reboot the endpoints based on the custom fields WorkstationRebootWindowStart, WorkstationRebootWindowEnd, and WorkstationRebootWindowDay. If the reboot time does not fall between the windows, the reboot will not trigger.
 - **Category:** Maintenance
 
 ![Task Details](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_4.png)
 
 ## Script
 
-Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
 ![Add Rows](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_5.png)
 
@@ -56,7 +57,7 @@ Paste the highlighted text: `Checking OS`
 
 ![Row 2 Log](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_9.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
+Paste the following PowerShell script and set the expected time of script execution to `600` seconds.
 
 ```powershell
 $os = Get-CimInstance -ClassName Win32_OperatingSystem
@@ -85,7 +86,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 4a: Condition: Output Contains
 
-In the IF part, enter `Workstation` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `Workstation` in the right box of the "Output Does Not Contain" part.
 
 ![Row 4a](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_14.png)
 
@@ -113,7 +114,7 @@ In the script exit message, leave it blank.
 
 ### Row 5a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 5a](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_18.png)
 
@@ -133,7 +134,7 @@ In the script log message, type `Force reboot is allowed on the endpoint. Procee
 
 Run it as 'Continue on Failure' and paste.
 
-Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
+Paste the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
 shutdown -r -f -t 60
@@ -179,7 +180,7 @@ Select the custom field 'WorkstationRebootWindowDay' and set the variable 'Reboo
 
 ### Row 9a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 9a](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_28.png)
 
@@ -215,7 +216,7 @@ In the script log message, type `Verifying that machine is in approved window be
 
 ![Row 11 Log](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_31.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
+Paste the following PowerShell script and set the expected time of script execution to `600` seconds.
 
 ```powershell
 $hour = [int](get-date -Format "HH");
@@ -251,7 +252,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 13a: Condition: Output Contains
 
-In the IF part, enter `Machine is in reboot window` in the right box of the "Output Contain" Part.
+In the IF part, enter `Machine is in reboot window` in the right box of the "Output Contains" part.
 
 ![Row 13a](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_32.png)
 
@@ -271,7 +272,7 @@ In the script log message, type `Proceeding for the reboot as the reboot falls u
 
 Run it as 'Continue on Failure' and paste.
 
-Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
+Paste the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
 shutdown -r -f -t 60
@@ -299,14 +300,14 @@ The complete script looks as shown below:
 
 ## Deployment
 
-This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided at the company-level custom fields.
+This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
 [CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
 
 - Go to `Automation` > `Tasks.`
 - Search for `Force Reboot Workstation With Reboot Windows Verification` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task](../../../static/img/Force-Reboot-Workstation-With-Reboot-Windows-Verification/image_37.png)
 
@@ -333,15 +334,4 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
-
-
-
-
-
-
-
-
-
-
-
 

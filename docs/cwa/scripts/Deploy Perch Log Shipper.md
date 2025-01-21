@@ -8,9 +8,10 @@ tags: ['deployment', 'installation', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script deploys Perch Log Shipper on Windows machines where it's not already installed. The client-level EDF `Deploy Perch Log Shipper` must be checked and client-level EDF `Perch Client Install Code` or location-level EDF `Perch Location Install Code` must be populated to enable deployment of Perch Log Shipper on the client machines.
+This script deploys the Perch Log Shipper on Windows machines where it is not already installed. The client-level EDF `Deploy Perch Log Shipper` must be checked, and either the client-level EDF `Perch Client Install Code` or the location-level EDF `Perch Location Install Code` must be populated to enable the deployment of the Perch Log Shipper on the client machines.
 
 ## Script Target
 
@@ -22,7 +23,7 @@ Windows Machines
 
 ## Sample Run
 
-It has to be run with [SWM - Software Install - Internal Monitor - Agents Missing PerchLogShipper](https://proval.itglue.com/DOC-5078775-14986404) monitor but can also be run individually
+It must be run with the [SWM - Software Install - Internal Monitor - Agents Missing PerchLogShipper](https://proval.itglue.com/DOC-5078775-14986404) monitor but can also be run individually.
 
 ![Sample Run Image](../../../static/img/Deploy-Perch-Log-Shipper/image_4.png)
 
@@ -30,21 +31,21 @@ It has to be run with [SWM - Software Install - Internal Monitor - Agents Missin
 
 | EDF Name                     | Level   | Type      | Description                                                                                                                                                          |
 |------------------------------|---------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Deploy Perch Log Shipper     | Client  | CheckBox  | Check it if you would like to enable the client for Perch Log Shipper Deployment                                                                                   |
+| Deploy Perch Log Shipper     | Client  | CheckBox  | Check it if you would like to enable the client for Perch Log Shipper deployment.                                                                                   |
 | Perch Client Install Code     | Client  | TextField | Populate it with a client-based installation code.                                                                                                                 |
-| Perch Location Install Code    | Location| TextField | Populate it with a location-based installation code. If nothing is mentioned at `Perch Client Install Code` CEDF, the script will check for the location-level installation code mentioned at `Perch Location Install Code` |
-| Exclude Perch                | Location| CheckBox  | Check it if you would like to Exclude a location from Perch Log Shipper Deployment                                                                                 |
-| Exclude Perch                | Computer| CheckBox  | Check it if you would like to Exclude a computer from Perch Log Shipper Deployment                                                                                 |
+| Perch Location Install Code    | Location| TextField | Populate it with a location-based installation code. If nothing is mentioned at `Perch Client Install Code`, the script will check for the location-level installation code mentioned at `Perch Location Install Code`. |
+| Exclude Perch                | Location| CheckBox  | Check it if you would like to exclude a location from Perch Log Shipper deployment.                                                                                 |
+| Exclude Perch                | Computer| CheckBox  | Check it if you would like to exclude a computer from Perch Log Shipper deployment.                                                                                 |
 
-Client-Level EDF's to select Perch Log Shipper Deployment and to populate the installation token
+Client-level EDFs to select Perch Log Shipper deployment and to populate the installation token.
 
 ![Client-Level EDF](../../../static/img/Deploy-Perch-Log-Shipper/image_5.png)
 
-Location-level EDF to Exclude a Location from Perch Log Shipper Deployment and to populate the installation token
+Location-level EDF to exclude a location from Perch Log Shipper deployment and to populate the installation token.
 
 ![Location-Level EDF](../../../static/img/Deploy-Perch-Log-Shipper/image_6.png)
 
-Computer-level EDF to Exclude a computer from Perch Log Shipper Deployment
+Computer-level EDF to exclude a computer from Perch Log Shipper deployment.
 
 ![Computer-Level EDF](../../../static/img/Deploy-Perch-Log-Shipper/image_7.png)
 
@@ -55,39 +56,28 @@ Computer-level EDF to Exclude a computer from Perch Log Shipper Deployment
 
 ## Ticketing
 
-\<span style="color:#add8e6;">The tickets will only be generated if the ticket category is defined on a global monitor.\</span>
+<small style="color:#add8e6;">The tickets will only be generated if the ticket category is defined on a global monitor.</small>
 
 **Ticket Subject:** `Perch Log Shipper Installation Failed on %ComputerName%(%ComputerID%)`
 
 **Ticket Body:**  
-Failed to Install Perch Log Shipper on %computername% at %clientname%. Here are the Script attempt results: @psout@
+Failed to install Perch Log Shipper on %computername% at %clientname%. Here are the script attempt results: @psout@
 
 `@ErrorLog@`
 
 The PC information is outlined below:  
 PC Name: %computername%  
 Last Login: %lastuser%  
-PC model: @biosname@  
+PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
 
 ## Ticket Category
 
-The ticket category for the tickets generated by the script can be set from the alerting tab of the monitor
+The ticket category for the tickets generated by the script can be set from the alerting tab of the monitor.
 
 - The ticket category can be selected at the monitor set (`ProVal - Production - Deploy Perch Log Shipper`) as shown below:
 
 ![Ticket Category Selection](../../../static/img/Deploy-Perch-Log-Shipper/image_8.png)
 
-- If no ticket category is defined at the Global Monitor, the script will not generate any tickets.
-
-
-
-
-
-
-
-
-
-
-
+- If no ticket category is defined at the global monitor, the script will not generate any tickets.

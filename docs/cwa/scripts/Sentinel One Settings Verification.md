@@ -8,9 +8,10 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Obtains the site key and URL associated with the target endpoint and compares that value to the set value in ConnectWise Automate's Client-level EDF named "SentinelOne SITE_TOKEN"
+This document outlines how to obtain the site key and URL associated with the target endpoint and compare that value to the one set in ConnectWise Automate's Client-level EDF named "SentinelOne SITE_TOKEN".
 
 ## Sample Run
 
@@ -27,11 +28,11 @@ Obtains the site key and URL associated with the target endpoint and compares th
 | MachineDecryptedValue    | The decrypted value of the machine base-64 string.                                            |
 | ClientDecryptValue       | The decrypted value of the client base-64 string.                                             |
 | MachineUrl               | The URL portion of the decrypted string for the machine.                                       |
-| MachineUrlSha            | The SHA value of the machine url.                                                               |
+| MachineUrlSha            | The SHA value of the machine URL.                                                               |
 | MachineSiteKey           | The SiteKey portion of the decrypted string for the machine.                                   |
 | MachineKeySHA            | The SHA value of the machine site key.                                                         |
 | ClientUrl                | The URL portion of the decrypted string for the client.                                        |
-| ClientUrlSha             | The SHA value of the client url.                                                                |
+| ClientUrlSha             | The SHA value of the client URL.                                                                |
 | ClientSiteKey            | The SiteKey portion of the decrypted string for the client.                                    |
 | ClientKeySha             | The SHA value of the Client site key.                                                          |
 | TicketBody               | The note added to the ticket regarding the results of the script.                               |
@@ -40,20 +41,20 @@ Obtains the site key and URL associated with the target endpoint and compares th
 
 | Name                     | Example                                                                                     | Required | Description                                                                                     |
 |--------------------------|---------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------|
-| TicketCreateSubject      | Unmatching SentinelOne Token for  %LocationName% / %ComputerName% (%ComputerID%)         | True     | The subject of any created ticket for this script.                                            |
+| TicketCreateSubject      | Unmatching SentinelOne Token for %LocationName% / %ComputerName% (%ComputerID%)         | True     | The subject of any created ticket for this script.                                            |
 | TicketCreationCategory    | 1                                                                                          | True     | The ticket creation category to assign to any created ticket.                                 |
 
 ## User Parameters
 
 | Name              | Example | Required | Description                                                                                                    |
 |-------------------|---------|----------|----------------------------------------------------------------------------------------------------------------|
-| Set_Environment    | 1       | Need to set to 1 for first-time implementation | Running the script with the user parameter `Set_Environment` as `1` will import the System Properties needed for the script. |
+| Set_Environment    | 1       | Yes      | Set to 1 for first-time implementation. Running the script with the user parameter `Set_Environment` as `1` will import the System Properties needed for the script. |
 
 ## System Properties
 
 | Name                                 | Example                      | Required | Description                                                                                      |
 |--------------------------------------|------------------------------|----------|--------------------------------------------------------------------------------------------------|
-| Client_Level_Sentinel_One_Token_EDF_Name | SentinelOne_SITE_TOKEN       | True     | The name of the client-level EDF storing the Sentinel One Site Token.                            |
+| Client_Level_Sentinel_One_Token_EDF_Name | SentinelOne_SITE_TOKEN       | True     | The name of the client-level EDF storing the SentinelOne Site Token.                            |
 
 ## EDF Configuration
 
@@ -71,7 +72,7 @@ Do not encrypt the EDF used in the Global Variable `Client_Level_Sentinel_One_To
 
 ### TicketCreationCategory 
 
-The script will use ticket creation category mentioned in the monitor [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](<../monitors/Execute Script - Sentinel One Settings Verification.md>)
+The script will use the ticket creation category mentioned in the monitor [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](<../monitors/Execute Script - Sentinel One Settings Verification.md>).
 
 ![TicketCreationCategory](../../../static/img/Sentinel-One-Settings-Verification/image_4.png)
 
@@ -94,17 +95,5 @@ SentinelOne Site key is: \<LicenseKey>
 Automate is configured to install as follows:
 SentinelOne URL should be: \<URL>
 SentinelOne Site key should be: \<LicenseKey>
-To resolve a license key mismatch in Sentinel One, you must uninstall and then re-install the software using the correct license key.
+To resolve a license key mismatch in SentinelOne, you must uninstall and then reinstall the software using the correct license key.
 ```
-
-
-
-
-
-
-
-
-
-
-
-

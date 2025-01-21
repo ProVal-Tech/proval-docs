@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an RMM implementation of the agnostic script [Set-Wallpaper](<../../powershell/Set-Wallpaper.md>) to set the active desktop wallpaper for all users from a local path or a URL. Can optionally be switched to enforce the wallpaper for all users on login.
+This is an RMM implementation of the agnostic script [Set-Wallpaper](<../../powershell/Set-Wallpaper.md>) to set the active desktop wallpaper for all users from a local path or a URL. It can optionally be switched to enforce the wallpaper for all users on login.
 
 ## Sample Run
 
@@ -44,7 +45,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 ![Create Script](../../../static/img/Windows---Wallpaper---Set/image_5.png)
 
 **Name:** Windows - Wallpaper - Set  
-**Description:** This script sets the active desktop wallpaper for all users from a local path or a URL. Can optionally be switched to enforce the wallpaper for all users on login.  
+**Description:** This script sets the active desktop wallpaper for all users from a local path or a URL. It can optionally be switched to enforce the wallpaper for all users on login.  
 **Category:** Custom  
 ![Category](../../../static/img/Windows---Wallpaper---Set/image_6.png)
 
@@ -62,7 +63,7 @@ This screen will appear.
 - Click the `Save` button.  
   ![Save Parameter](../../../static/img/Windows---Wallpaper---Set/image_9.png)
 
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
   ![Confirm Parameter](../../../static/img/Windows---Wallpaper---Set/image_10.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
@@ -73,17 +74,17 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Click the `Save` button.  
   ![Save Parameter](../../../static/img/Windows---Wallpaper---Set/image_12.png)
 
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 
 - Set `Reset` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
   ![Confirm Parameter](../../../static/img/Windows---Wallpaper---Set/image_13.png)
 
-All the parameters will look like as shown below:  
+All the parameters will look like this:  
 ![Parameters](../../../static/img/Windows---Wallpaper---Set/image_14.png)
 
 ## Task
@@ -102,7 +103,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![Function Pop Up](../../../static/img/Windows---Wallpaper---Set/image_18.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
+Paste the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
 ```powershell
 $Path = "@Path@"
@@ -136,20 +137,20 @@ if (!(Test-Path -Path $PS1Path)) {
 }
 #endregion
 
-if ($AllUsers -match '1|Y|Yes|True' ) {
+if ($AllUsers -match '1|Y|Yes|True') {
     & $PS1Path -uri $Path -Enforce
-} elseif ($Reset -match '1|Y|Yes|True' ){
+} elseif ($Reset -match '1|Y|Yes|True') {
     & $PS1Path -Reset
 } else {
     & $PS1Path -uri $Path
 }
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 
@@ -168,15 +169,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

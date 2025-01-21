@@ -8,6 +8,7 @@ tags: ['application', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 A CW RMM implementation of the [Invoke-VcRedistModule](https://proval.itglue.com/DOC-5078775) agnostic script to install Microsoft Visual C++ Redistributable. By default, the task will install the supported redistributable unless a user parameter is set.
@@ -22,7 +23,7 @@ A CW RMM implementation of the [Invoke-VcRedistModule](https://proval.itglue.com
 
 | Name     | Example               | Required | Description                                                           |
 |----------|-----------------------|----------|-----------------------------------------------------------------------|
-| Release  | 20192012,2013,2022| False    | Set the release id(s) of the Redistributable to install.            |
+| Release  | 20192012,2013,2022    | False    | Set the release id(s) of the Redistributable to install.            |
 | Purge    |                       | False    | Flagging this parameter will remove the unsupported Redistributable and install the supported Redistributable. |
 
 ![User Parameters](../../../static/img/Install-Microsoft-VCRedist/image_4.png)  
@@ -53,7 +54,7 @@ This screen will appear.
 - Select `False` from the `Value` dropdown menu.
 - Click the `Save` button.  
 ![Save Parameter](../../../static/img/Install-Microsoft-VCRedist/image_10.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Parameter](../../../static/img/Install-Microsoft-VCRedist/image_11.png)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
@@ -66,7 +67,7 @@ This screen will appear.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Save Parameter](../../../static/img/Install-Microsoft-VCRedist/image_12.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Parameter](../../../static/img/Install-Microsoft-VCRedist/image_11.png)  
 
 ### Task
@@ -140,14 +141,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-

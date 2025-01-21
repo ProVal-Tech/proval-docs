@@ -8,20 +8,21 @@ tags: ['installation', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this script is to install the desired patch on the windows machines.
+The purpose of this script is to install the desired patch on Windows machines.
 
 ## Sample Run
 
 Leave the Reboot parameter blank or set it to '0' to prevent the machine from rebooting.  
 ![Image](../../../static/img/Universal-KB-Installer/image_1.png)  
 
-Set Reboot Parameter to '1' to reboot the machine  
+Set the Reboot parameter to '1' to reboot the machine.  
 
 ![Image](../../../static/img/Universal-KB-Installer/image_2.png)  
 
-#### User Parameters
+### User Parameters
 
 | Name     | Example   | Required | Description                                                                                   |
 |----------|-----------|----------|-----------------------------------------------------------------------------------------------|
@@ -31,14 +32,5 @@ Set Reboot Parameter to '1' to reboot the machine
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
 
 

@@ -38,12 +38,3 @@ result       : @{id=00000000-0000-0000-0000-000000000000; url=https://www.speedt
 downloadMbps : 924.245952
 uploadMbps   : 935.860104
 ```
-
-
-
-
-
-
-
-
-

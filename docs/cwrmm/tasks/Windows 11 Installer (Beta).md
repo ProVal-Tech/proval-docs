@@ -8,11 +8,12 @@ tags: ['installation', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Install Windows 11 on a compatible Windows 10 computer. The default nature of the script is to restart the computer to complete the upgrade. Although, the `NoReboot` parameter provides an option to suppress the reboot. However, the computer should be rebooted at the earliest convenience to complete the upgrade.  
+Install Windows 11 on a compatible Windows 10 computer. The default behavior of the script is to restart the computer to complete the upgrade. However, the `NoReboot` parameter provides an option to suppress the reboot. It is recommended that the computer be rebooted at the earliest convenience to complete the upgrade.
 
-The OS Drive should have 20 GB of free space to install the upgrade.  
+The OS drive should have 20 GB of free space to install the upgrade.
 
 This task can be executed manually against the computers present in the [Windows 11 Compatible Machines](<../groups/Windows 11 Compatible Machines.md>) group.
 
@@ -41,7 +42,7 @@ This task can be executed manually against the computers present in the [Windows
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Windows-11-Installer-(Beta)/image_6.png)  
 ![Task Creation 2](../../../static/img/Windows-11-Installer-(Beta)/image_7.png)  
@@ -67,7 +68,7 @@ This screen will appear.
 - Select `False` from the `Value` dropdown menu.
 - Click the `Save` button.  
 ![Save Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_11.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_12.png)  
 
 ### Task
@@ -87,7 +88,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![PowerShell Function](../../../static/img/Windows-11-Installer-(Beta)/image_17.png)  
 
-Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.  
+Paste in the following PowerShell script and leave the expected time of script execution set to `300` seconds. Click the `Save` button.  
 
 ```powershell
 ( Get-Date ).ToString('yyyy-MM-dd HH:mm:ss')
@@ -105,7 +106,7 @@ A blank function will appear.
 Search and select the `Set Custom Field` function.  
 ![Select Set Custom Field](../../../static/img/Windows-11-Installer-(Beta)/image_20.png)  
 
-Search and select `Windows 11 Upgrade RunTime` in the `Search Custom Field` field and set `%Output%` in the `Value` field and click the `Save` button.  
+Search for `Windows 11 Upgrade RunTime` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
 ![Set Custom Field](../../../static/img/Windows-11-Installer-(Beta)/image_21.png)  
 ![Set Custom Field 2](../../../static/img/Windows-11-Installer-(Beta)/image_22.png)  
 
@@ -164,22 +165,9 @@ Click the `Save` button at the top right corner of the screen to save the task.
 
 ## Deployment
 
-It is suggested to run this task manually for the time being.  
+It is suggested to run this task manually for the time being.
 
 ## Output
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-
-

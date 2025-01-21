@@ -8,11 +8,12 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor looks for devices that have their Antivirus disabled. This is a copy of the original AV - Disabled monitor provided by ConnectWise.
 
-There is an available Autofix for Windows-based machines that will attempt to restart the service for the AntiVirus detected on the device. The script is named @Autofix - Monitor AV Service Status [Global].
+There is an available Autofix for Windows-based machines that will attempt to restart the service for the Antivirus detected on the device. The script is named `@Autofix - Monitor AV Service Status [Global]`.
 
 ## Dependencies
 
@@ -20,18 +21,6 @@ None.
 
 ## Target
 
-All Machines with AntiVirus installed and/or the managed service plans. 
+All machines with Antivirus installed and/or the managed service plans. 
 
-This monitor will work for all operating systems, but the available auto-fix will only run on Windows devices!
-
-
-
-
-
-
-
-
-
-
-
-
+This monitor will work for all operating systems, but the available Autofix will only run on Windows devices!

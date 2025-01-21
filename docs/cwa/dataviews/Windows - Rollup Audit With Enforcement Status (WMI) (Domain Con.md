@@ -8,9 +8,10 @@ tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview collects latest rollup installation detail on domain controllers.
+This document collects the latest rollup installation details on domain controllers.
 
 ## Dependencies
 
@@ -26,22 +27,10 @@ This dataview collects latest rollup installation detail on domain controllers.
 | Client            | Client Name                                            |
 | Location          | Location Name                                          |
 | Computer          | Computer Name                                          |
-| Agent Type        | Agent type whether Server, Workstation or Laptop       |
+| Agent Type        | Agent type (Server, Workstation, or Laptop)           |
 | OS                | Operating System information of the agent              |
 | Windows Version    | Windows build information of the agent                 |
-| Latest Rollup     | Latest Rollup patch installed detail                   |
-| KB                | Latest rollup KB installed detail                      |
-| LastContact       | Agent Last Contact with the Automate                   |
-| Enforcement Status | Confirms if Enforcement enabled or not. This is outdated info as it has been fixed with Dec 2020 rollup release. |
-
-
-
-
-
-
-
-
-
-
-
-
+| Latest Rollup     | Latest Rollup patch installed details                  |
+| KB                | Latest rollup KB installed details                     |
+| LastContact       | Agent's last contact with the Automate                 |
+| Enforcement Status | Confirms if enforcement is enabled or not. This information is outdated as it has been fixed with the December 2020 rollup release. |

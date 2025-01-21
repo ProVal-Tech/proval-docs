@@ -8,31 +8,20 @@ tags: ['performance', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Reboots an endpoint out of safe mode into normal mode.
+This document outlines the procedure for rebooting an endpoint from safe mode into normal mode.
 
 ## Example Agent Procedure Log
 
 | Time                     | Action                               | Status                        | User                       |
 |--------------------------|--------------------------------------|-------------------------------|----------------------------|
-| 1:23:27 pm 28-Oct-22     | Leave Safe Mode                      | Success THEN                  | provaltech.com/dan.hicks   |
-| 1:23:26 pm 28-Oct-22     | Windows - 32 or 64 bit OS           | Success THEN                  | provaltech.com/dan.hicks   |
-| 1:23:26 pm 28-Oct-22     | Windows - 32 or 64 bit OS-0011      | Windows OS is 64-bit.        | provaltech.com/dan.hicks   |
-| 1:23:19 pm 28-Oct-22     | Run Now - Leave Safe Mode           | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Leave Safe Mode to run at Oct 28 2022 1:23PM | 
+| 1:23:27 PM 28-Oct-22     | Leave Safe Mode                      | Success THEN                  | provaltech.com/dan.hicks   |
+| 1:23:26 PM 28-Oct-22     | Windows - 32 or 64 bit OS           | Success THEN                  | provaltech.com/dan.hicks   |
+| 1:23:26 PM 28-Oct-22     | Windows - 32 or 64 bit OS-0011      | Windows OS is 64-bit.        | provaltech.com/dan.hicks   |
+| 1:23:19 PM 28-Oct-22     | Run Now - Leave Safe Mode           | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Leave Safe Mode to run at Oct 28 2022 1:23 PM | 
 
 ## Process
 
-Reboots an endpoint out of safe mode into normal mode.
-
-
-
-
-
-
-
-
-
-
-
-
+This section describes the steps to reboot an endpoint from safe mode into normal mode.

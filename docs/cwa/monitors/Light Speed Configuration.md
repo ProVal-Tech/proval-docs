@@ -8,12 +8,13 @@ tags: ['sql']
 draft: false
 unlisted: false
 ---
+
 ## Implementation Steps
 
-- Import [EPM - Security - Script - Light Speed XML Configuration](https://proval.itglue.com/DOC-5078775-13496676) script.
-- Run this SQL query from a RAWSQL monitor set to create the alert template.
+- Import the [EPM - Security - Script - Light Speed XML Configuration](https://proval.itglue.com/DOC-5078775-13496676) script.
+- Run the following SQL query from a RAWSQL monitor to create the alert template.
 
-```
+```sql
 INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `GUID`) 
 SELECT 
 '△ Custom - Execute Script - Light Speed XML Configuration' AS `Name`, 
@@ -21,11 +22,11 @@ SELECT
 'PRONOC' AS `Last_User`,
 (NOW()) AS `Last_Date`,
 '11f7d227-bed1-44f9-b781-0aecca04d747' AS `GUID` 
-From (SELECT MIN(computerid) FROM computers) a
+FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM alerttemplate WHERE GUID = '11f7d227-bed1-44f9-b781-0aecca04d747') = '0';
 ```
 
-```
+```sql
 INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Trump`, `GUID`, `WarningAction`)
 SELECT 
 (SELECT alertactionid FROM alerttemplate WHERE `GUID` = '11f7d227-bed1-44f9-b781-0aecca04d747') AS `AlertActionid`,
@@ -39,15 +40,15 @@ SELECT
 '0' AS `Trump`,
 'dfcd3669-1833-4896-bad5-23970ed59f25' AS `GUID`,
 '0' AS `WarningAction` 
-From (SELECT MIN(computerid) FROM computers) a
+FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM alerttemplates WHERE GUID = 'dfcd3669-1833-4896-bad5-23970ed59f25') = '0';
 ```
 
-- Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+- Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
-- Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups: (The string to replace can be found at the very bottom of the query, right after **WHERE**)
+- Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups. (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
-```
+```sql
 SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = '11f7d227-bed1-44f9-b781-0aecca04d747');
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
@@ -76,36 +77,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -165,12 +136,12 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Client Specific - Light Speed Configuration')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Client Specific - Light Speed Configuration')
 ```
 
-- An example of a query with a groupid:
+- An example of a query with a group ID:
 
-```
+```sql
 SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = '11f7d227-bed1-44f9-b781-0aecca04d747');
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
@@ -247,31 +218,14 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (2,3)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Client Specific - Light Speed Configuration')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Client Specific - Light Speed Configuration')
 ```
 
 - Now execute your query from a RAWSQL monitor set.
-- Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
-
-
-
-
-
-
-
-
-
-
-
-
+- Locate the remote monitor on the group(s) and ensure that it is functioning as required.

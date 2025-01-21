@@ -8,9 +8,10 @@ tags: ['report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview was required to display a detailed list of patches that are installed or available on the local machine. The data is being populated by the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script.
+This dataview was created to display a detailed list of patches that are installed or available on the local machine. The data is populated by the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script.
 
 ## Dependencies
 
@@ -22,51 +23,38 @@ This dataview was required to display a detailed list of patches that are instal
 ## Columns
 
 | Column                          | Description                                           |
-|---------------------------------|-------------------------------------------------------|
-| Client Name                     | Client Name                                          |
-| Location Name                   | Location Name                                        |
-| Computer Name                   | Computer Name                                        |
-| Operating System                | Operating System                                     |
-| OS Type                         | OS Type (Server|Workstation)                        |
-| Last Contact                    | Last Contact with RMM                                |
-| Days Since Last Contact         | Days Since Last Contact with RMM                     |
-| KB                              | KBID of the Patch                                    |
-| Title                           | Title of the Patch                                   |
-| Description                     | Description of the Patch                             |
-| Size                            | Size of the Patch in MB                              |
+|---------------------------------|-----------------------------------------------------|
+| Client Name                     | Client Name                                         |
+| Location Name                   | Location Name                                       |
+| Computer Name                   | Computer Name                                       |
+| Operating System                | Operating System                                    |
+| OS Type                         | OS Type (Server | Workstation)                     |
+| Last Contact                    | Last Contact with RMM                               |
+| Days Since Last Contact         | Days Since Last Contact with RMM                    |
+| KB                              | KBID of the Patch                                   |
+| Title                           | Title of the Patch                                  |
+| Description                     | Description of the Patch                            |
+| Size                            | Size of the Patch in MB                             |
 | Type                            | Type of the Patch (Windows Update | Driver | Third Party) |
-| Is Beta                         | Is Beta? (True | False)                             |
-| Is Installed                    | Is Installed? (True | False)                        |
-| Is Mandatory                    | Is Mandatory? (True | False)                        |
-| Is Reboot Required              | Is Reboot Required? (True | False)                  |
-| Is Uninstallable                | Is Uninstallable? (True | False)                    |
-| Is Downloaded                   | Is Downloaded? (True | False)                       |
-| Is Hidden                       | Is Hidden? (True | False)                           |
-| Severity                        | Severity of the Patch                                |
-| Last Deployment Change Time     | Last Deployment Change Time for the Patch           |
-| Support URL                     | Support URL for the Patch                            |
-| Auto Select On WebSites         | Auto Select On WebSites? (True | False)             |
-| Can require Source              | Can require Source to install? (True | False)       |
-| Is Eula Accepted                | Is Eula Accepted? (True | False)                    |
-| Is Present                      | Is Present on the Machine? (True | False)           |
-| Is Browse Only                  | Is Browse Only? (True | False)                      |
-| Is Per User                     | Is Per User? (True | False)                         |
-| Dead Line                       | Dead Line to install the Patch/Support End Date for the Patch |
-| Recommended CPU Speed           | Recommended CPU Speed to install the Patch          |
-| Recommended Hard Disk Space     | Recommended Hard Disk Space to Install the Patch    |
-| Recommended Memory              | Recommended Memory to Install the Patch              |
+| Is Beta                         | Is Beta? (True | False)                            |
+| Is Installed                    | Is Installed? (True | False)                       |
+| Is Mandatory                    | Is Mandatory? (True | False)                       |
+| Is Reboot Required              | Is Reboot Required? (True | False)                 |
+| Is Uninstallable                | Is Uninstallable? (True | False)                   |
+| Is Downloaded                   | Is Downloaded? (True | False)                      |
+| Is Hidden                       | Is Hidden? (True | False)                          |
+| Severity                        | Severity of the Patch                               |
+| Last Deployment Change Time     | Last Deployment Change Time for the Patch          |
+| Support URL                     | Support URL for the Patch                           |
+| Auto Select On Websites         | Auto Select On Websites? (True | False)            |
+| Can Require Source              | Can require Source to install? (True | False)      |
+| Is EULA Accepted                | Is EULA Accepted? (True | False)                   |
+| Is Present                      | Is Present on the Machine? (True | False)          |
+| Is Browse Only                  | Is Browse Only? (True | False)                     |
+| Is Per User                     | Is Per User? (True | False)                        |
+| Deadline                        | Deadline to install the Patch / Support End Date for the Patch |
+| Recommended CPU Speed           | Recommended CPU Speed to install the Patch         |
+| Recommended Hard Disk Space     | Recommended Hard Disk Space to install the Patch   |
+| Recommended Memory              | Recommended Memory to install the Patch             |
 
-Note: Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Note:** Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.

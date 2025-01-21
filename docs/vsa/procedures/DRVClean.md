@@ -8,21 +8,11 @@ tags: ['setup', 'windows', 'wmi']
 draft: false
 unlisted: false
 ---
-## Summery:
 
-Drive cleaning script both VSA and LT use (WMI)  
+## Summary:
+
+Drive cleaning script for both VSA and LT using WMI.
 
 ## Parameters:
 
-- **-drive**: Optional. The target drive. If not defined then all drives are processed.
-
-
-
-
-
-
-
-
-
-
-
+- **-drive**: Optional. The target drive. If not defined, all drives are processed.

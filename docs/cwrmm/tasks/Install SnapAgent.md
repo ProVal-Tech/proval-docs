@@ -8,9 +8,10 @@ tags: ['application', 'installation', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs BlackPoint SnapAgent. CW RMM implementation of the agnostic script [Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>).
+This document outlines the installation of BlackPoint SnapAgent using the ConnectWise RMM implementation of the agnostic script [Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>).
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Installs BlackPoint SnapAgent. CW RMM implementation of the agnostic script [Ins
 
 ## Dependencies
 
-[Agnostic - Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>)  
+- [Agnostic - Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>)  
 
 ## User Parameters
 
@@ -32,7 +33,7 @@ Installs BlackPoint SnapAgent. CW RMM implementation of the agnostic script [Ins
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/Install-SnapAgent/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Install-SnapAgent/image_6.png)  
 
@@ -60,7 +61,7 @@ This screen will appear.
 
 ## Task Creation
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row Step 1](../../../static/img/Install-SnapAgent/image_11.png)  
 
 A blank function will appear.  
@@ -159,15 +160,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

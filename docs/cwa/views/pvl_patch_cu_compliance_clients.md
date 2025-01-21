@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The view is designed to store and execute the SQL query utilized by the 'Patching and CU compliance Metrics - Clients' dataview. It contains data exclusively for supported Windows computers with managed patch policies, which have been online in Automate within the past 30 days and are part of production patching groups.
+The view is designed to store and execute the SQL query utilized by the 'Patching and CU Compliance Metrics - Clients' dataview. It contains data exclusively for supported Windows computers with managed patch policies that have been online in Automate within the past 30 days and are part of production patching groups.
 
 The data is grouped by client.
 
@@ -28,33 +29,21 @@ The data is grouped by client.
 
 | Column                         | Explanation                                                                                                                                                                                                 |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientid                       | Clientid                                                                                                                                                                                                     |
+| clientid                       | Client ID                                                                                                                                                                                                     |
 | Client                         | Name of the Client                                                                                                                                                                                          |
 | Approved Prod. Patches         | Number of approved production patches                                                                                                                                                                       |
-| Installed Prod. Patches        | Number of Installed Production Patches                                                                                                                                                                      |
-| Failed Prod. Patches           | Number of Failed Production Patches                                                                                                                                                                         |
-| Missing Prod. Patches          | Number of Missing Production Patches                                                                                                                                                                        |
-| Prod. Patch Compliance %       | Patch Compliance of the whole environment for the production patches ( `Number of installed production patches` divided by `Number of approved production patches` multiplied by `100`)                      |
-| Supported Prod. Computers      | Number of active Windows machines with managed patch policies and are part of production patching groups.                                                                                                  |
-| CU Age - Current               | The count of computers where the installed latest Cumulative Update's release date falls within the last 45 days.                                                                                         |
-| CU Age - 46-90                | The count of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days.                                                                                          |
-| CU Age - 91-135               | The count of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days.                                                                                         |
-| CU Age - 136+                 | The number of computers where the release date of the installed latest Cumulative Update is at least 136 days ago.                                                                                       |
-| CU Score %                    | This scoring system is custom-made, based on the age of the installed Cumulative Update. A score of 100 is assigned if the Cumulative Update is less than 45 days old, 75 if it falls between 46 to 90 days, 50 for updates aged between 91 to 135 days, and 25 for updates older than 136 days. The formula used for calculation is as follows:   `(CU Age - Current) * 100 + (CU Age - 46-90) * 75 + (CU Age - 91-135) * 50 + (CU Age - 136+) * 25) / Supported CU Eligible Computers` |
-| CU Age - Current %            | Percentage of computers where the installed latest Cumulative Update's release date falls within the last 45 days. ( `CU Age - Current` divided by `Supported CU Eligible Computers` multiplied by `100`) |
-| CU Age - 46-90 %              | Percentage of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days. ( `CU Age - 46-90` divided by `Supported CU Eligible Computers` multiplied by `100`)    |
-| CU Age - 91-135 %             | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
-| CU Age - 136+ %               | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. ( `CU Age - 136+` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
-| Total Eligible Computers - CU  | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
-
-
-
-
-
-
-
-
-
-
-
-
+| Installed Prod. Patches        | Number of installed production patches                                                                                                                                                                      |
+| Failed Prod. Patches           | Number of failed production patches                                                                                                                                                                         |
+| Missing Prod. Patches          | Number of missing production patches                                                                                                                                                                        |
+| Prod. Patch Compliance %       | Patch compliance of the whole environment for the production patches ( `Number of installed production patches` divided by `Number of approved production patches` multiplied by `100`)                      |
+| Supported Prod. Computers      | Number of active Windows machines with managed patch policies that are part of production patching groups.                                                                                                  |
+| CU Age - Current               | The count of computers where the installed latest cumulative update's release date falls within the last 45 days.                                                                                         |
+| CU Age - 46-90                | The count of computers where the installed latest cumulative update's release date falls between 46 to 90 days.                                                                                          |
+| CU Age - 91-135               | The count of computers where the installed latest cumulative update's release date falls between 91 to 135 days.                                                                                         |
+| CU Age - 136+                 | The number of computers where the release date of the installed latest cumulative update is at least 136 days ago.                                                                                       |
+| CU Score %                    | This scoring system is custom-made, based on the age of the installed cumulative update. A score of 100 is assigned if the cumulative update is less than 45 days old, 75 if it falls between 46 to 90 days, 50 for updates aged between 91 to 135 days, and 25 for updates older than 136 days. The formula used for calculation is as follows: `(CU Age - Current) * 100 + (CU Age - 46-90) * 75 + (CU Age - 91-135) * 50 + (CU Age - 136+) * 25) / Supported CU Eligible Computers` |
+| CU Age - Current %            | Percentage of computers where the installed latest cumulative update's release date falls within the last 45 days. ( `CU Age - Current` divided by `Supported CU Eligible Computers` multiplied by `100`) |
+| CU Age - 46-90 %              | Percentage of computers where the installed latest cumulative update's release date falls between 46 to 90 days. ( `CU Age - 46-90` divided by `Supported CU Eligible Computers` multiplied by `100`)    |
+| CU Age - 91-135 %             | Percentage of computers where the installed latest cumulative update's release date falls between 91 to 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
+| CU Age - 136+ %               | Percentage of computers where the release date of the installed latest cumulative update is at least 136 days ago. ( `CU Age - 136+` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
+| Total Eligible Computers - CU  | Total number of supported Windows computers that have been online in Automate within the past 30 days and exist in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |

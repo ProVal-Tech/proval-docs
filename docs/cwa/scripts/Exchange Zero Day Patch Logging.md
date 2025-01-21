@@ -8,20 +8,21 @@ tags: ['cve', 'security', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script helps to fetch the vulnerability attack detection for the recent Exchange Zero Day Vulnerability.  
-It majorly looks for the CVE:
+It primarily looks for the following CVEs:
 
-CVE-2021-26855  
-CVE-2021-26858  
-CVE-2021-26857  
-CVE-2021-27065  
+- CVE-2021-26855  
+- CVE-2021-26858  
+- CVE-2021-26857  
+- CVE-2021-27065  
 
-If any of the above vulnerabilities are detected, then it checks whether the patch has been installed or not (KB5000978, KB5000871).  
-If the patch is also missing, then you can view the logs in the script log or you can get logs in the ticket which informs that the agent is being attacked but no fix has been applied yet.  
+If any of the above vulnerabilities are detected, the script checks whether the necessary patches (KB5000978, KB5000871) have been installed.  
+If the patches are missing, you can view the logs in the script log or receive logs in the ticket, which informs that the agent is being attacked but no fix has been applied yet.
 
-For getting a ticket, you must change the global parameter value for TicketCreation to 1.  
+To create a ticket, you must change the global parameter value for `TicketCreation` to `1`.
 
 **Time Saved by Automation:** 15 Minutes
 
@@ -45,29 +46,16 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name            | Example | Required | Description                                                                                  |
 |-----------------|---------|----------|----------------------------------------------------------------------------------------------|
-| TicketCreation   | 0       | True     | If set to '1' will enable Ticket creation, default is 0 to disable ticketing                 |
+| TicketCreation   | 0       | True     | If set to '1', will enable ticket creation; default is 0 to disable ticketing               |
 
 ## Process
 
-Performs various checks of Exchange server logs via PowerShell to confirm what CVEs apply to that server.  
-Corrective steps and checks for patch installs are then taken based on CVE results.  
+The script performs various checks of Exchange server logs via PowerShell to confirm which CVEs apply to that server.  
+Corrective steps and checks for patch installations are then taken based on CVE results.  
 
-Primarily, the installation of KB5000871 is confirmed for the resolution of CVE-2021-26855, 26858, 27065.
+Primarily, the installation of KB5000871 is confirmed for the resolution of CVEs 2021-26855, 26858, and 27065.
 
 ## Output
 
 - Script log
 - Ticketing if enabled in Globals
-
-
-
-
-
-
-
-
-
-
-
-
-

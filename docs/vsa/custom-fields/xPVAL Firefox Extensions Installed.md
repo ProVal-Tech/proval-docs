@@ -8,9 +8,10 @@ tags: ['firefox', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Lists all firefox extensions installed on the endpoint
+This document lists all Firefox extensions installed on the endpoint.
 
 ## Dependencies
 
@@ -21,17 +22,4 @@ Lists all firefox extensions installed on the endpoint
 
 | Field Name                       | Type of Field (Machine or Organization) | Description                                        |
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
-| xPVAL Firefox Extensions Installed | Mach                                    | Lists all firefox extensions installed on the endpoint |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| xPVAL Firefox Extensions Installed | Machine                                 | Lists all Firefox extensions installed on the endpoint |

@@ -8,9 +8,10 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom table if it doesn't exist and will keep the track of agent count for up to 90 days.
+The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom table if it doesn't exist and will keep track of agent counts for up to 90 days.
 
 ## Dependencies
 
@@ -19,15 +20,3 @@ The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom ta
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

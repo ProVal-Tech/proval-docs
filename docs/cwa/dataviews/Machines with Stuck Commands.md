@@ -8,6 +8,7 @@ tags: ['report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The dataview displays information about machines where a specific command has been stuck in the execution state for an extended period, typically exceeding one hour.
@@ -16,9 +17,9 @@ The dataview displays information about machines where a specific command has be
 
 | Column                   | Description                           |
 |--------------------------|---------------------------------------|
-| Clientid                 | Clientid (Hidden)                    |
-| Locationid               | Locationid (Hidden)                  |
-| Computerid               | Computerid                            |
+| Client ID                | Client ID (Hidden)                   |
+| Location ID              | Location ID (Hidden)                 |
+| Computer ID              | Computer ID                           |
 | Client                   | Client Name                           |
 | Location                 | Location Name                         |
 | Computer                 | Computer Name                         |
@@ -27,19 +28,6 @@ The dataview displays information about machines where a specific command has be
 | Last Logged-In User      | Last Logged-In User                   |
 | Form Factor              | Form Factor                           |
 | Stuck Command            | Command that is Stuck                |
-| Command Parameter        | Parameter of the Stuck Command        |
+| Command Parameter        | Parameter of the Stuck Command       |
 | Date Updated             | Start time of the command            |
-| Stuck Since (Hours)     | Stuck Since (Hours)                  |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Stuck Since (Hours)     | Duration the command has been stuck   |

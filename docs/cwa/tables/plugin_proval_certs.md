@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table is used in the [SSL Certificate Audit Solution](<../../solutions/Certificate Audit Solution.md>) to gather data on SSL Certificates to be used for general Audit or active monitoring.
+This table is used in the [SSL Certificate Audit Solution](<../../solutions/Certificate Audit Solution.md>) to gather data on SSL Certificates for general auditing or active monitoring.
 
 ## Dependencies
 
@@ -20,29 +21,17 @@ This table is used in the [SSL Certificate Audit Solution](<../../solutions/Cert
 
 #### plugin_proval_certs
 
-| Column        | Type                                      | Explanation                                                        |
-|---------------|-------------------------------------------|--------------------------------------------------------------------|
-| ComputerID    | INT - Not Null [Primary Key]             | This is the computer ID that the SSL Cert was found on.            |
-| FriendlyName  | VARCHAR                                   | Friendly name of the SSL Certificate [If Set]                      |
-| Subject       | VARCHAR                                   | Subject of the SSL Certificate                                      |
-| Issuer        | VARCHAR                                   | Issuer of the SSL Certificate                                       |
-| Thumbprint    | VARCHAR - Not Null [Primary Key]         | Thumbprint of the SSL Certificate                                   |
-| Archived      | VARCHAR                                   | (1,0) is this certificate 'Archived'                               |
-| HasPrivateKey  | VARCHAR                                   | (1,0) Does this certificate have a private key                     |
-| SerialNumber  | VARCHAR                                   | Serial Number of the SSL Certificate                                |
-| Version       | VARCHAR                                   | What version is the SSL Certificate (Normally 3)                   |
-| CertAdded     | DATETIME                                  | When was the certificate added to the system                        |
-| Expiration    | DATETIME                                  | What is the expiration date of the SSL certificate                  |
-| DateUpdated   | DATETIME                                  | When did the script actually add the information into the DB       |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column         | Type                                      | Explanation                                                        |
+|----------------|-------------------------------------------|--------------------------------------------------------------------|
+| ComputerID     | INT - Not Null [Primary Key]             | This is the computer ID that the SSL certificate was found on.     |
+| FriendlyName   | VARCHAR                                   | Friendly name of the SSL certificate [If set]                     |
+| Subject        | VARCHAR                                   | Subject of the SSL certificate                                     |
+| Issuer         | VARCHAR                                   | Issuer of the SSL certificate                                      |
+| Thumbprint     | VARCHAR - Not Null [Primary Key]         | Thumbprint of the SSL certificate                                   |
+| Archived       | VARCHAR                                   | (1,0) Indicates if this certificate is 'Archived'                 |
+| HasPrivateKey   | VARCHAR                                   | (1,0) Indicates if this certificate has a private key             |
+| SerialNumber   | VARCHAR                                   | Serial number of the SSL certificate                                |
+| Version        | VARCHAR                                   | What version is the SSL certificate (normally 3)                   |
+| CertAdded      | DATETIME                                  | When was the certificate added to the system                       |
+| Expiration     | DATETIME                                  | What is the expiration date of the SSL certificate                 |
+| DateUpdated    | DATETIME                                  | When did the script actually add the information into the database  |

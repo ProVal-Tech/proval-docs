@@ -8,11 +8,12 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The [`CW RMM - Task - Huntress Agent (INSTALL)`](<../tasks/Huntress Agent (INSTALL).md>) task utilizes this custom field to store the number of times the task failed to install Huntress on the machine. This can further be utilized to create tickets for Huntress failure as per partners' requirements.
 
-# Create the Custom Field
+## Create the Custom Field
 
 ![Image 1](../../../static/img/Huntress-Deploy_Result/image_1.png)
 
@@ -23,15 +24,3 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](<../tasks/Huntress Agent (INSTA
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
-
-
-
-
-
-
-
-
-
-
-
-

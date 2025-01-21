@@ -8,9 +8,10 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview pulls from the role detection of Fast Boot. This shows all machines where Fast Boot is enabled.
+This document pulls data from the role detection of Fast Boot. It shows all machines where Fast Boot is enabled.
 
 ## Dependencies
 
@@ -22,18 +23,5 @@ This dataview pulls from the role detection of Fast Boot. This shows all machine
 | --------------- | ----------------------------------------------------------------------------------------- |
 | Client Name     | Client Name                                                                               |
 | Computer Name   | Computer Name                                                                             |
-| OS              | OS installed on the machine                                                               |
-| FastBoot status | Shows FastBoot Enabled if the role is detected, or 'Not Detected' if FastBoot is disabled |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| OS              | Operating System installed on the machine                                                 |
+| Fast Boot Status| Shows "Fast Boot Enabled" if the role is detected, or "Not Detected" if Fast Boot is disabled |

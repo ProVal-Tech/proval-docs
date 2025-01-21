@@ -10,21 +10,20 @@ unlisted: false
 ---
 
 ## Description
-Disable Bitlocker protection on one (or all) volumes.
+Disable BitLocker protection on one (or all) volumes.
 
 ## Requirements
 PowerShell v5
 
 ## Usage
-The script will validate that the volume/volumes is/are ready for decryption, and then run the `Disable-BitLocker` cmdlet against the target volumes.
+The script will validate that the volume(s) is/are ready for decryption and then run the `Disable-BitLocker` cmdlet against the target volumes.
 
-
-Disables Bitlocker protection on the C: volume.
+Disables BitLocker protection on the C: volume.
 ```powershell
 .\Unprotect-BitLockerVolume.ps1 -MountPoint "C:"
 ```
 
-Disables Bitlocker protection on all volumes.
+Disables BitLocker protection on all volumes.
 ```powershell
 .\Unprotect-BitLockerVolume.ps1 -All
 ```
@@ -32,20 +31,10 @@ Disables Bitlocker protection on all volumes.
 ## Parameters
 | Parameter         | Required  | Default   | Type      | Description                               |
 | ----------------- | --------- | --------- | --------- | ----------------------------------------- |
-| `MountPoint`      | True      |           | String    | The target volume to remove Bitlocker protection from. |
-| `All`             | True      |           | Switch    | Use this switch to remove Bitlocker protection from all volumes. |
+| `MountPoint`      | True      |           | String    | The target volume to remove BitLocker protection from. |
+| `All`             | True      |           | Switch    | Use this switch to remove BitLocker protection from all volumes. |
 
 ## Output
-
-    .\Unprotect-BitLockerVolume-log.txt
-    .\Unprotect-BitLockerVolume-data.txt
-    .\Unprotect-BitLockerVolume-error.txt
-
-
-
-
-
-
-
-
-
+- `.\Unprotect-BitLockerVolume-log.txt`
+- `.\Unprotect-BitLockerVolume-data.txt`
+- `.\Unprotect-BitLockerVolume-error.txt`

@@ -8,6 +8,7 @@ tags: ['adobe', 'application', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the agnostic script [Update-AdobeCC](<../../powershell/Update-AdobeCC.md>).
@@ -32,7 +33,7 @@ Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/Update-Adobe-Creative-Cloud/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Update-Adobe-Creative-Cloud/image_6.png)  
 
@@ -58,7 +59,7 @@ This screen will appear.
 
 ## Task Creation
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Update-Adobe-Creative-Cloud/image_11.png)  
 
 A blank function will appear.  
@@ -157,16 +158,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log  
-
-
-
-
-
-
-
-
-
-
-
-
-

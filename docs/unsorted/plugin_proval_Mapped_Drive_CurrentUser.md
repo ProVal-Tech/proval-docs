@@ -8,6 +8,7 @@ tags: ['database', 'setup', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Purpose
 
 This table stores the mapped drive details of the currently logged-in users.
@@ -23,10 +24,10 @@ This table stores the mapped drive details of the currently logged-in users.
 
 | Column     | Type     | Explanation                                 |
 |------------|----------|---------------------------------------------|
-| Computerid | INT      | Computerid of the agent                     |
-| username   | VARCHAR  | Username for which the mapped drive detected |
+| Computerid | INT      | Computer ID of the agent                    |
+| username   | VARCHAR  | Username for which the mapped drive is detected |
 | Path       | VARCHAR  | Path of the mapped drive                    |
-| Timestamp  | DATETIME | Script last ran date on the agent           |
+| Timestamp  | DATETIME | Script last run date on the agent           |
 
 ## SQL
 
@@ -39,17 +40,3 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_Mapped_Drive_CurrentUser` (
   CONSTRAINT `plugin_proval_Mapped_Drive_CurrentUser_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,22 +8,23 @@ tags: ['backup', 'database', 'sql', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Allows to clear a patch from Failed Patches with help of SQL.
+This document allows you to clear a patch from the Failed Patches list with the help of SQL.
 
 ## Associated Content
 
 | **Content**                     | **Type**      | **Function**                                             |
 |----------------------------------|---------------|----------------------------------------------------------|
-| SQL - clearFailedPatchesByKB     | SQL Query     | Removes Specific Patch from failed patches.              |
+| SQL - clearFailedPatchesByKB     | SQL Query     | Removes a specific patch from failed patches.            |
 
 ## Implementation
 
-1. Take Backup of VSA DataBase.  
+1. **Take a Backup of the VSA Database.**  
    ![](../../../static/img/SQL/image_1.png)
 
-2. Update the Kb Number in the SQL Query Below.  
+2. **Update the KB Number in the SQL Query Below.**  
    ![](../../../static/img/SQL/image_2.png)  
    ```sql
    -- clears "failed" patches on all agents for a specific KB article ID
@@ -32,7 +33,7 @@ Allows to clear a patch from Failed Patches with help of SQL.
 
    SELECT @agentGuid = MIN(agentguid)
    FROM patchStatus s
-   JOIN patchData d ON s.patchDataId = d.patchDataId AND D.kbArticleId = @kbArticleId
+   JOIN patchData d ON s.patchDataId = d.patchDataId AND d.kbArticleId = @kbArticleId
    WHERE s.patchState = 0
    AND s.schedTogether IN (2,3,8)
 
@@ -40,7 +41,7 @@ Allows to clear a patch from Failed Patches with help of SQL.
    BEGIN
        UPDATE patchStatus SET schedTogether = 0
        FROM patchStatus s
-       JOIN patchData d ON s.patchDataId = d.patchDataId AND D.kbArticleId = @kbArticleId
+       JOIN patchData d ON s.patchDataId = d.patchDataId AND d.kbArticleId = @kbArticleId
        WHERE patchState = 0
        AND schedTogether IN (2,3,8)
        AND agentGuid = @agentGuid
@@ -49,22 +50,11 @@ Allows to clear a patch from Failed Patches with help of SQL.
 
        SELECT @agentGuid = MIN(agentguid)
        FROM patchStatus s
-       JOIN patchData d ON s.patchDataId = d.patchDataId AND D.kbArticleId = @kbArticleId
+       JOIN patchData d ON s.patchDataId = d.patchDataId AND d.kbArticleId = @kbArticleId
        WHERE s.patchState = 0
        AND s.schedTogether IN (2,3,8)
    END
    ```
 
-3. Run this Query on KSubscribers on SQL Server.  
+3. **Run this Query on KSubscribers on SQL Server.**  
    ![](../../../static/img/SQL/image_3.png)
-
-
-
-
-
-
-
-
-
-
-

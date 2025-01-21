@@ -8,6 +8,7 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
 Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../procedures/Automation Time Saved Reports.md>)
@@ -21,21 +22,9 @@ Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation
 - **Policy Name**: Automation Time Saved Report (VSA Server, API Call)
 - **Policy Description**: Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../procedures/Automation Time Saved Reports.md>)
 - **Applied View**: xPVAL VSA Server
-- **Assigned Organizations / Machine Groups**: NA
-- **Assigned Machines**: NA
+- **Assigned Organizations / Machine Groups**: N/A
+- **Assigned Machines**: N/A
 - **Policy Objects Active**
   - **Policy Object Name**: Agent Procedures
     - **Policy Object Members**: Automation Time Saved Reports
       - **Policy Object Member Settings**: Monthly, Last Day, Midnight, Do not skip if offline
-
-
-
-
-
-
-
-
-
-
-
-

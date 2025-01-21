@@ -8,6 +8,7 @@ tags: ['performance', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Office is non-removable via winget. This procedure silently removes Office.
@@ -61,21 +62,9 @@ Office is non-removable via winget. This procedure silently removes Office.
 
 ## Process
 
-Procedure uses Invoke-OffScrub  
-[https://file.provaltech.com/repo/script/Invoke-OffScrub.ps1](https://file.provaltech.com/repo/script/Invoke-OffScrub.ps1)
+The procedure uses Invoke-OffScrub.  
+[Invoke-OffScrub Script](https://file.provaltech.com/repo/script/Invoke-OffScrub.ps1)
 
 ## Output
 
 AP Log
-
-
-
-
-
-
-
-
-
-
-
-

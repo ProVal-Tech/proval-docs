@@ -8,11 +8,12 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor set will detect the windows machines where PowerShell Version is older than 5.0.
+The monitor set will detect Windows machines where the PowerShell version is older than 5.0.
 
-**NOTE:** Adjustments to the sql must be made at AgentID = 'TYPE YOUR MONITOR ID HERE' to make this functional.
+**NOTE:** Adjustments to the SQL must be made at `AgentID = 'TYPE YOUR MONITOR ID HERE'` to make this functional.
 
 ## Dependencies
 
@@ -22,16 +23,3 @@ The monitor set will detect the windows machines where PowerShell Version is old
 ## Target
 
 Managed Windows Workstations and Servers
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,33 +8,20 @@ tags: ['storage', 'virtualization', 'vmware']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor is intended to report any ESXi hosts in the system that have reported a remaining storage space for any disk is less than 10% within the VMWare monitoring. This is intended to be used with the [Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) as the auto-fix.
+This monitor is intended to report any ESXi hosts in the system that have reported a remaining storage space of less than 10% for any disk within the VMWare monitoring. This is designed to be used with the [Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) as the auto-fix.
 
-Alert Template: △ Custom - Ticket Creation - ESXi Monitoring
+**Alert Template:** △ Custom - Ticket Creation - ESXi Monitoring
 
 ## Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this monitor depends.
+This section should list the ITGlue documents found in the Related Items sidebar on which this monitor depends.
 
 - [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>)
-- This solution requires that the Virtualization Manager is setup and configured.
+- This solution requires that the Virtualization Manager is set up and configured.
 
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

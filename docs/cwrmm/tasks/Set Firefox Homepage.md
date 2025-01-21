@@ -8,6 +8,7 @@ tags: ['application', 'firefox', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>).
@@ -26,7 +27,7 @@ Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](<.
 
 | Name                        | Example                               | Required | Type         | Description                           |
 |-----------------------------|---------------------------------------|----------|--------------|---------------------------------------|
-| `Homepage`                  | [https://www.provaltech.com](https://www.provaltech.com) | True     | Text String  | The Url to the desired homepage.      |
+| `Homepage`                  | [https://www.provaltech.com](https://www.provaltech.com) | True     | Text String  | The URL to the desired homepage.      |
 | `EnforceHomepageStartup`    | 0/1                                   | False    | Flag         | Sets the browser to display the homepage on startup. |
 
 ![User Parameters Image](../../../static/img/Set-Firefox-Homepage/image_4.png)  
@@ -66,7 +67,7 @@ This screen will appear.
 ![Parameter Image 2](../../../static/img/Set-Firefox-Homepage/image_9.png)  
 
 - Set `EnforceHomepageStartup` in the `Parameter Name` field.
-- Select `flag` from the `Parameter Type` dropdown menu.
+- Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 
 ![Parameter Image 4](../../../static/img/Set-Firefox-Homepage/image_11.png)  
@@ -179,15 +180,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Log](../../../static/img/Set-Firefox-Homepage/image_25.png)  
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,16 +3,17 @@ id: '1986c949-6d8f-40e6-b802-c32195c9a2d3'
 title: 'AV Status Check Script'
 title_meta: 'AV Status Check Script - Verify and Start AV Process'
 keywords: ['av', 'monitor', 'process', 'ticketing', 'automation']
-description: 'This script helps to verify whether antivirus (AV) is running on a system. If the AV is not running, the script attempts to start the AV process. It is intended for use with the "AV- Disabled" monitor and can create or update tickets based on the AV status. This automation saves time and enhances security management.'
+description: 'This script helps to verify whether antivirus (AV) is running on a system. If the AV is not running, the script attempts to start the AV process. It is intended for use with the "AV-Disabled" monitor and can create or update tickets based on the AV status. This automation saves time and enhances security management.'
 tags: ['security', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script helps to verify whether AV is running or not. If it's not running, then it will attempt to start the AV process.  
+This script helps to verify whether AV is running. If it's not running, it will attempt to start the AV process.
 
-The intended target for this script would be "AV- Disabled" monitor.  
+The intended target for this script is the "AV-Disabled" monitor.  
 **Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
@@ -24,13 +25,13 @@ The intended target for this script would be "AV- Disabled" monitor.
 - `@svc@` - Shows the AV process name from the database
 - `@ticketbody@` - Sets the body for the ticket
 - `@powershell@` - Logs the output of the PowerShell command that attempted to restart the process
-- `@TicketID@` - This shows if there is an existing ticket for the agent
+- `@TicketID@` - Indicates if there is an existing ticket for the agent
 
 ### Global Parameters
 
 | Name           | Example | Required | Description                              |
 |----------------|---------|----------|------------------------------------------|
-| TicketCreation | 1       | False    | Setting this to 1 would enable ticketing |
+| TicketCreation | 1       | False    | Setting this to 1 enables ticketing     |
 
 ### Script States
 
@@ -41,22 +42,11 @@ The intended target for this script would be "AV- Disabled" monitor.
 ## Process
 
 - Fetches the AV process from the database
-- Verifies if it's running or not. If it's not running, then it will attempt to start the AV process.
-- If started, then it will look for an existing ticket and close it.
-- If not started, then it will append to the existing ticket or create a new ticket.
+- Verifies if it's running. If it's not running, it will attempt to start the AV process.
+- If started, it will look for an existing ticket and close it.
+- If not started, it will append to the existing ticket or create a new ticket.
 
 ## Output
 
 - Script log
 - Script state
-
-
-
-
-
-
-
-
-
-
-

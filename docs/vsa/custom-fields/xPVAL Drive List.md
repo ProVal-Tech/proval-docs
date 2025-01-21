@@ -8,20 +8,9 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Details
 
-| Field Name            | Type of Field (Machine or Organization) | Description                                                                                       | Syntax               |
-|-----------------------|------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------|
-| xPVAL Drive List      | Machine                                  | Contains all physical non-removable drives > 10GB max capacity on the endpoint.                  | DriveLetter:whitepsaceC: D: E: |
-
-
-
-
-
-
-
-
-
-
-
-
+| Field Name         | Type of Field (Machine or Organization) | Description                                                                                     | Syntax                     |
+|--------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|----------------------------|
+| xPVAL Drive List   | Machine                                  | Contains all physical non-removable drives with a maximum capacity of over 10GB on the endpoint. | DriveLetter: C: D: E:      |

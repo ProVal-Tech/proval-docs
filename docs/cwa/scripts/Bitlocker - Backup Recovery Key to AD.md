@@ -1,18 +1,19 @@
 ---
 id: '5f31f0b4-b682-4444-bd51-3182a8a2bd39'
-title: 'Backup Bitlocker Recovery Key to AD Domain'
-title_meta: 'Backup Bitlocker Recovery Key to Active Directory Domain'
+title: 'Backup BitLocker Recovery Key to AD Domain'
+title_meta: 'Backup BitLocker Recovery Key to Active Directory Domain'
 keywords: ['bitlocker', 'backup', 'recovery', 'ad', 'encryption', 'script']
-description: 'This document provides a detailed overview of a script that automates the process of backing up the existing Bitlocker recovery key to a joined Active Directory domain, saving significant time in the process. It includes sample runs, dependencies, variables, and the overall process involved in executing the script.'
+description: 'This document provides a detailed overview of a script that automates the process of backing up the existing BitLocker recovery key to a joined Active Directory domain, saving significant time in the process. It includes sample runs, dependencies, variables, and the overall process involved in executing the script.'
 tags: ['active-directory', 'backup', 'encryption', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script backs up the existing Bitlocker recovery key to the joined AD domain.
+This script backs up the existing BitLocker recovery key to the joined AD domain.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,39 +21,27 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[https://file.provaltech.com/repo/script/Send-BitlockerADRecovery.ps1](https://file.provaltech.com/repo/script/Send-BitlockerADRecovery.ps1)
+[Send-BitlockerADRecovery.ps1](https://file.provaltech.com/repo/script/Send-BitlockerADRecovery.ps1)
 
 ## Variables
 
-| Variable        | Description                                                                                     |
+| Variable         | Description                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------|
-| BaseURL          | It contains file server address                                                                  |
-| WorkingDirectory  | It contains destination path where file server file is kept                                    |
-| PS1URL           | This contains the file complete path in the file server for direct download                    |
-| PS1Path          | This denotes the complete path where file is stored to local machine after downloading from file server |
-| PS1TempPath      | This stores the downloaded file as a temporary to local system directory.                       |
-| PS1Log           | This stores the complete powershell execution log.                                             |
-| PS1DataLog       | This stores the powershell data log                                                             |
-| PS1ErrorLog      | This stores the powershell error log.                                                          |
+| BaseURL          | Contains the file server address                                                                |
+| WorkingDirectory  | Contains the destination path where the file server file is kept                               |
+| PS1URL           | Contains the complete file path in the file server for direct download                         |
+| PS1Path          | Denotes the complete path where the file is stored on the local machine after downloading from the file server |
+| PS1TempPath      | Stores the downloaded file temporarily in the local system directory.                           |
+| PS1Log           | Stores the complete PowerShell execution log.                                                  |
+| PS1DataLog       | Stores the PowerShell data log                                                                  |
+| PS1ErrorLog      | Stores the PowerShell error log.                                                               |
 
 ## Process
 
-The script gathers information about existing Bitlocker volumes. It then loops through each volume and runs the `Backup-BitLockerKeyProtector` cmdlet against each encrypted drive. If the process fails, then the `-data.txt` file will have `FAIL` written to it and the `-error.txt` log file will be generated. Otherwise, `SUCCESS` will be written to the data log file.
+The script gathers information about existing BitLocker volumes. It then loops through each volume and runs the `Backup-BitLockerKeyProtector` cmdlet against each encrypted drive. If the process fails, the `-data.txt` file will have `FAIL` written to it, and the `-error.txt` log file will be generated. Otherwise, `SUCCESS` will be written to the data log file.
 
-Machine must be using Bitlocker for encryption.
+The machine must be using BitLocker for encryption.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

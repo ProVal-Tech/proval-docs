@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table stores the data of the script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>) where it shows the computerid, learning mode duration, start time of the learning mode, end time of the learning mode, the reason for learning mode, and which LT user set the learning mode, the status of the learning mode whether successfully set or failed and the complete log.
+This table stores the data of the script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>). It includes the computer ID, learning mode duration, start time of the learning mode, end time of the learning mode, the reason for learning mode, the LT user who set the learning mode, the status of the learning mode (whether successfully set or failed), and the complete log.
 
 ## Dependencies
 
@@ -18,27 +19,15 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 
 ## Tables
 
-### pvl_threatlocker-disable_audit
+### pvl_threatlocker_disable_audit
 
-| Column               | Type     | Explanation                                                                                                         |
-|----------------------|----------|---------------------------------------------------------------------------------------------------------------------|
-| computerid           | INT      | computerid of the agent                                                                                            |
-| Username             | VARCHAR  | Stores the LT username who ran the script "[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)" to set threatlocker learning mode. |
-| StartTime            | DATETIME | It stores the start time from which the learning mode disabled started.                                          |
-| EndTime              | DATETIME | It stores the end time when the threatlocker protection will resume.                                             |
-| Reason               | VARCHAR  | It stores the reason why the learning mode is set. This needed to be provided by the LT Run user who executes the script "[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)" manually. |
-| LearningModeDuration  | INT      | This stores the number of hours for which the threatlocker learning mode is set.                                 |
-| Status               | VARCHAR  | This stores either "Success" or "Failed" for the learning mode set result.                                      |
-| LogRecord            | VARCHAR  | This stores the logs of script success or failure.                                                                |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                | Type     | Explanation                                                                                                         |
+|-----------------------|----------|---------------------------------------------------------------------------------------------------------------------|
+| computerid            | INT      | The computer ID of the agent                                                                                        |
+| Username              | VARCHAR  | Stores the LT username who ran the script "[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)" to set Threatlocker learning mode. |
+| StartTime             | DATETIME | Stores the start time from which the learning mode disabled started.                                              |
+| EndTime               | DATETIME | Stores the end time when the Threatlocker protection will resume.                                                 |
+| Reason                | VARCHAR  | Stores the reason why the learning mode is set. This needs to be provided by the LT Run user who executes the script "[Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)" manually. |
+| LearningModeDuration   | INT      | Stores the number of hours for which the Threatlocker learning mode is set.                                       |
+| Status                | VARCHAR  | Stores either "Success" or "Failed" for the learning mode set result.                                            |
+| LogRecord             | VARCHAR  | Stores the logs of script success or failure.                                                                      |

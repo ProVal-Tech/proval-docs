@@ -8,16 +8,17 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is a wrapper to install fonts using the agnostic [SWM - Software Install - Agnostic - Script - Install-Font](https://proval.itglue.com/DOC-5078775-10371922).
 
 ## Sample Run
 
-- As a first step please gather all desired font files and create a zip file containing those items.
-- Place this file in the LTShare in the Transfer/FontFiles (Create this folder if necessary) Folder named [ZipFileName].zip.
+- As a first step, please gather all desired font files and create a zip file containing those items.
+- Place this file in the LTShare in the Transfer/FontFiles folder (create this folder if necessary) named `[ZipFileName].zip`.
 - Import this script into the environment and run it against the desired targets.
-- Set the ZipFileName = The zip file name you created minus the .zip.
+- Set the `ZipFileName` to the zip file name you created, minus the `.zip`.
 
 ![Sample Run Image](../../../static/img/Install-Font/image_1.png)
 
@@ -31,32 +32,21 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name        | Description                             |
 |-------------|-----------------------------------------|
-| Fontocation | Designated as %windir%/Temp/Font      |
+| Fontocation | Designated as `%windir%/Temp/Font`    |
 
 #### User Parameters
 
 | Name        | Example                                        | Required | Description                                                 |
 |-------------|------------------------------------------------|----------|-------------------------------------------------------------|
-| ZipFileName | The name of the zip file stored in the LTShare | True     | This is the name of the .Zip file you created minus the .zip|
+| ZipFileName | The name of the zip file stored in the LTShare | True     | This is the name of the .zip file you created, minus the `.zip` |
 
 ## Process
 
 1. Download the font .zip file to the endpoint.
 2. Extract the file.
-3. Verify the file extracted.
+3. Verify the file was extracted.
 4. Run the agnostic script.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

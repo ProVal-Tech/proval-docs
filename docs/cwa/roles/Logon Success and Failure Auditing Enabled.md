@@ -8,25 +8,13 @@ tags: ['active-directory', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Runs auditpol.exe and determines if logon success / failure auditing is enabled.
+This document outlines how to run `auditpol.exe` to determine if logon success and failure auditing is enabled.
 
 ## Settings
 
 | Detection String                             | Comparator | Result              | Applicable OS         |
 |----------------------------------------------|------------|---------------------|-----------------------|
-| \{%@auditpol.exe /get /subcategory:logon@%} | Contains   | Success and Failure | Windows AD Controller  |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `auditpol.exe /get /subcategory:logon`     | Contains   | Success and Failure | Windows AD Controller  |

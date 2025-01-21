@@ -8,9 +8,10 @@ tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Contains data regarding the Windows 10 - Feature Update - Install Latest script success and failures historically.
+This document contains data regarding the historical success and failure rates of the Windows 10 Feature Update - Install Latest script.
 
 ## Dependencies
 
@@ -26,20 +27,7 @@ Contains data regarding the Windows 10 - Feature Update - Install Latest script 
 | ComputerID        | INT       | The computer ID in the system for the target machine (Primary and foreign key cascading)       |
 | WindowsVersion     | VarChar   | The currently installed version as seen by the reporting process. (Primary Key)                |
 | InstallationDate   | DateTime  | The day and time recorded when the upgrade was run.                                           |
-| InstallationState  | TinyInt   | The State of the Installation (0 - Not attempted, 1 - Attempted, 2 - Failed, 3 - Successful). |
-| Successes          | TinyInt   | The Count of Successful installations for this version.                                        |
-| Failures           | TinyInt   | The Count of Failed attempts to install this version.                                          |
-| TotalAttempts      | INT       | The Total attempts it took to upgrade to this version.                                         |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| InstallationState  | TinyInt   | The state of the installation (0 - Not attempted, 1 - Attempted, 2 - Failed, 3 - Successful). |
+| Successes          | TinyInt   | The count of successful installations for this version.                                        |
+| Failures           | TinyInt   | The count of failed attempts to install this version.                                          |
+| TotalAttempts      | INT       | The total attempts it took to upgrade to this version.                                         |

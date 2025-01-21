@@ -8,29 +8,18 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-If C2R office Auto update is enabled or not on the machine gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) task.
+This document outlines whether the C2R Office Auto Update feature is enabled on the machine, as gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) task.
 
 ## Details
 
 | Field Name         | Level    | Type      | Default Value | Description                                                                                                           | Editable |
 |--------------------|----------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------|----------|
-| C2R Auto Update     | Endpoint | Text Box  | \<Blank>       | If C2R office Auto update is enabled or not on the machine gathered by the Microsoft 365 - Click-to-Run - Get Details task. | Yes      |
+| C2R Auto Update     | Endpoint | Text Box  | \<Blank>      | Indicates if the C2R Office Auto Update is enabled on the machine, as gathered by the Microsoft 365 - Click-to-Run - Get Details task. | Yes      |
 
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Auto-Update/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Auto-Update/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,15 +8,15 @@ tags: ['office365', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Allows the uninstallation of Microsoft Office products via OffScrub.
 
 ## Usage
-1. Ensures that the session is elevated, if not warns and exits.
+1. Ensures that the session is elevated; if not, it warns and exits.
 2. Determines what switches you entered and sets up an object with the file download locations.
-3. If no switches are present: warn and exit.
+3. If no switches are present, it warns and exits.
 4. Loops through all the switches, downloading and executing them.
-
 
 ```powershell
 .\Invoke-OfficeScrub.ps1 -Office03
@@ -24,15 +24,14 @@ Allows the uninstallation of Microsoft Office products via OffScrub.
 Uninstalls detected Office 2003 installs.
 
 ```powershell
-.\Invoke-OffScrub.ps1 -Office03 -Office10 -Office16
+.\Invoke-OfficeScrub.ps1 -Office03 -Office10 -Office16
 ```
 Removes all detected instances of Office 2003, 2010, and 2016.
 
 ```powershell
-.\Invoke-OffScrub.ps1 -All
+.\Invoke-OfficeScrub.ps1 -All
 ```
 Removes all installed versions of Office.
-
 
 ## Parameters
 | Parameter   | Alias | Required | Default | Type   | Description                          |
@@ -46,14 +45,5 @@ Removes all installed versions of Office.
 | `All`       |       | False    |         | Switch | Uninstalls all above Office versions |
 
 ## Output
-    .\Invoke-OffScrub-log.txt
-    .\Invoke-OffScrub-error.txt
-
-
-
-
-
-
-
-
-
+- .\Invoke-OfficeScrub-log.txt
+- .\Invoke-OfficeScrub-error.txt

@@ -8,6 +8,7 @@ tags: ['active-directory', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor looks for new domain user accounts that have a creation date within the past day. A ticket is created for each new account discovered.
@@ -19,16 +20,3 @@ This monitor looks for new domain user accounts that have a creation date within
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['active-directory', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor checks AD user's login password age to see if the age is set to unlimited, and if so it will change the user password from never expire to expire and will also change the Default domain policy password age to 90 days. It outputs the users whose password age is set to never expire and monitor fails to change the password age.
+This remote monitor checks Active Directory users' login password age to see if the age is set to unlimited. If so, it will change the user password from never expire to expire and will also change the Default Domain Policy password age to 90 days. It outputs the users whose password age is set to never expire and notes if the monitor fails to change the password age.
 
 ## Details
 
@@ -18,7 +19,7 @@ This remote monitor checks AD user's login password age to see if the age is set
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
@@ -35,20 +36,8 @@ Domain Controllers
 **Success Body**: `No users found with Password Age set to Not Expire.`  
 
 **Failure Body:**  
-`Failed to Reset AD Users Password Age on %Computername% at %Clientname%. Password is still set to Not Expire on below users:%RESULT`  
+`Failed to Reset AD Users Password Age on %Computername% at %Clientname%. Password is still set to Not Expire on the below users: %RESULT`  
 
 ## How to Import
 
 [Import - Remote Monitor - Reset AD Users Password Age](<./Import - Remote Monitor - Reset AD Users Password Age.md>)  
-
-
-
-
-
-
-
-
-
-
-
-

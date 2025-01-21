@@ -8,9 +8,10 @@ tags: ['bitlocker']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview contains the computer record where the BitLocker initialization failed twice by the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)".
+This dataview contains the computer records where BitLocker initialization failed twice due to the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)".
 
 ## Dependencies
 
@@ -24,18 +25,5 @@ This dataview contains the computer record where the BitLocker initialization fa
 | Location                  | Location name of the agent                            |
 | Computer                  | Computer name of the agent                            |
 | Operating System          | Operating system name of the agent                    |
-| LastContact               | Last contact of the agent with the CW Automate       |
-| Number of Failed Attempts  | The BitLocker initialization failed attempts count    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Contact              | Last contact of the agent with the CW Automate       |
+| Number of Failed Attempts  | The count of BitLocker initialization failure attempts |

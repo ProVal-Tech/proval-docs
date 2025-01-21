@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Imports custom backgrounds to Microsoft Teams using a provided ZIP file.
+This document describes how to import custom backgrounds to Microsoft Teams using a provided ZIP file.
 
 ## Implementation
 
@@ -20,15 +21,15 @@ Export the agent procedure.
 ![Image 1](../../../static/img/Microsoft---Teams---Import---Background/image_1.png)  
 ![Image 2](../../../static/img/Microsoft---Teams---Import---Background/image_2.png)  
 
-The agent procedure requires a ZIP file with the backgrounds.  
-The ZIP can contain multiple images.  
-The following images are supported: **('jpeg', 'jpg', 'png', 'bmp')**
+The agent procedure requires a ZIP file containing the backgrounds.  
+The ZIP file can contain multiple images.  
+The following image formats are supported: **('jpeg', 'jpg', 'png', 'bmp')**
 
 ![Image 3](../../../static/img/Microsoft---Teams---Import---Background/image_3.png)  
 
-If the file selected is "background.zip" no further changes are required.  
+If the selected file is "background.zip," no further changes are required.  
 If a different file has been specified, update the filename in the PowerShell execution.  
-Modify **background.zip** to the name of the ZIP you've selected in the previous step.  
+Modify **background.zip** to the name of the ZIP file you selected in the previous step.  
 
 ![Image 4](../../../static/img/Microsoft---Teams---Import---Background/image_4.png)  
 
@@ -40,28 +41,17 @@ Modify **background.zip** to the name of the ZIP you've selected in the previous
 ## Process
 
 - Deploy the ZIP file and Import-TeamsBackground.ps1 to the endpoint.
-- Check if Teams is installed and get the list of active users' info
+- Check if Teams is installed and retrieve the list of active users' information
   - Get the user profile path from the user's SID for each active user
     - Create the Backgrounds and Uploads folders for each active user
       - Extract images from the ZIP file
         - Remove the temporary directories if they exist
         - Create the temporary directories
           - Extract images from the ZIP file to the temporary directory
-            - Rename JPEG, JPG, PNG, BMP files with Teams GUID
-            - Create a _thumb copy of each image.
+            - Rename JPEG, JPG, PNG, and BMP files with Teams GUID
+            - Create a _thumb copy of each image
               - Copy renamed images to active users' Teams Backgrounds directories
 
 ## Output
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
-
-
-
-
-
-
-
-
-
-
-

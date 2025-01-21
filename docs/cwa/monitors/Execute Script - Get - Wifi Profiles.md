@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the monitor set is to execute [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script in Audit only mode once per month against physical windows workstations excluding windows 7 and XP.
+The purpose of the monitor set is to execute the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script in Audit only mode once per month against physical Windows workstations, excluding Windows 7 and XP.
 
 ## Dependencies
 
@@ -26,16 +27,3 @@ Managed Windows Workstations
 **Name:** `△ CUSTOM - Execute Script - Get - Wifi Profiles`
 
 **Note:** The alert template should be running the [CWM - Automate - Script - Get/Remove/Add Wifi Profiles](<../scripts/GetRemoveAdd Wifi Profiles.md>) script.
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,13 +8,14 @@ tags: ['deployment', 'gpo', 'installation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to create the PowerShell script to be used along with the Automate agent deployment GPO. Also, it will keep the PowerShell Script up-to-date with a new Installation Token. 
+The purpose of this script is to create a PowerShell script to be used along with the Automate agent deployment GPO. It will also keep the PowerShell script up-to-date with a new Installation Token.
 
-The PowerShell script generated will install the agent if missing, attempt to repair the agent if broken, and rip and replace the agent if another MSP's agent is installed.  
+The generated PowerShell script will install the agent if it is missing, attempt to repair the agent if it is broken, and rip and replace the agent if another MSP's agent is installed.
 
-Intended Target: Domain Controllers with Automate agent deployment GPO
+**Intended Target:** Domain Controllers with Automate agent deployment GPO
 
 ## Sample Run
 
@@ -22,30 +23,30 @@ Intended Target: Domain Controllers with Automate agent deployment GPO
 
 ## Implementation
 
-Step 1: Create a computer-level EDF "Automate Agent Deployment GPO Enabled".
+**Step 1:** Create a computer-level EDF "Automate Agent Deployment GPO Enabled."
 
 ![Step 1](../../../static/img/CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals/image_2.png)
 
-Step 2: Create an Auto-Join Group for the machines where the EDF is checked. 
+**Step 2:** Create an Auto-Join Group for the machines where the EDF is checked.
 
-Step 3: Schedule the script to run once per day against the group. 
+**Step 3:** Schedule the script to run once per day against the group.
 
 ![Step 3](../../../static/img/CWM---Automate---Script--Automate-Agent---InstallRepair---For-GPO-Globals/image_3.png)
 
-Step 4: Now mark the EDF of the Domain Controllers where you would like to create the Agent Deployment GPO.
+**Step 4:** Mark the EDF of the Domain Controllers where you would like to create the Agent Deployment GPO.
 
 ## Variables
 
 | Name               | Description                                                                                     |
 |--------------------|-------------------------------------------------------------------------------------------------|
-| TargetLocationID   | Locationid to create the Installer Token for. Will use the locationid of the computer.        |
+| TargetLocationID   | Location ID to create the Installer Token for. Will use the location ID of the computer.      |
 | ValidityPeriod     | Age limit for the Installer. 1 Day                                                             |
-| InstallerTypeID    | Id of the installer type. 1 represents an .msi agent installer                                 |
+| InstallerTypeID    | ID of the installer type. 1 represents an .msi agent installer                                 |
 | TokenReason        | Reason behind creating the installer token.                                                    |
 | TokenIngredients    | Required variables/values to create the Agent token.                                          |
 | VerificationKey    | Verification Key for the Agent Installer Token.                                                |
 | OutCome            | Output of the PowerShell script used to write/modify the agent installation ps1 file.        |
-| InstallerToken     | Installer Token generated to used with the agent reinstall command.                            |
+| InstallerToken     | Installer Token generated to be used with the agent reinstall command.                        |
 
 #### Global Parameters
 
@@ -64,30 +65,19 @@ Step 4: Now mark the EDF of the Domain Controllers where you would like to creat
 
 - Remove the previously generated token for the computer from the `installertokens` table.
 - Clear the 'GPO Agent Token' script state.
-- Create the @Directory@ if not exists.
+- Create the `@Directory@` if it does not exist.
 - Generate an Agent Installer Token.
-- Stores the token to the Script State.
+- Store the token to the Script State.
 - Generate the PowerShell script on the computer.
-- Verifies the Presence of the @InstallerToken@ in the script.
-- Logs the outcome.
+- Verify the presence of the `@InstallerToken@` in the script.
+- Log the outcome.
 
 ## Output
 
 - Script State
 - Script Log
-- Local File on the computer (C:/ProgamData/_Automation/Automate Agent/Redo-Agent.ps1)
+- Local File on the computer (C:/ProgramData/_Automation/Automate Agent/Redo-Agent.ps1)
 
 ## Creating Automate Agent Deployment GPO
 
-\<iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0">\</iframe>
-
-
-
-
-
-
-
-
-
-
-
+<iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0"></iframe>

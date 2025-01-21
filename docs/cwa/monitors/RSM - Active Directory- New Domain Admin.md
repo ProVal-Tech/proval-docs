@@ -8,17 +8,18 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the remote monitor is to detect the newly created/promoted domain admins and create a ticket. It uses the [EPM - User Management - Agnostic - Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>) agnostic script to perform the monitoring.
+The purpose of the remote monitor is to detect newly created or promoted domain admins and create a ticket. It uses the [EPM - User Management - Agnostic - Get-NewDomainAdmin](<../../powershell/Get-NewDomainAdmin.md>) agnostic script to perform the monitoring.
 
 ## Details
 
-**Suggested "Limit to"**: Primary Domain Controllers of Each Domain `\<Distinct  Domain Controller Per Client>`  
+**Suggested "Limit to"**: Primary Domain Controllers of Each Domain `\\<Distinct Domain Controller Per Client>`  
 **Suggested Alert Style**: Continuous  
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
@@ -26,17 +27,17 @@ Insert the details of the monitor in the below table.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
 Domain Controllers  
 ![Target](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_2.png)
 
-The monitor set should be limited to the `Distinct  Domain Controller Per Client` search.  
+The monitor set should be limited to the `Distinct Domain Controller Per Client` search.  
 ![Search](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_3.png)
 
-This search will create the remote monitor on a single domain controller of each domain.
+This search will create the remote monitor on a single domain controller for each domain.
 
 ## Implementation
 
@@ -45,27 +46,15 @@ Please follow the instructions provided in the implementation article to impleme
 
 ## Ticketing
 
-**Subject:** `New Domain Admin Detected at \<DomainName>`
+**Subject:** `New Domain Admin Detected at \\<DomainName>`
 
 **Body:**  
 ```
 New Domain Admin(s) Detected at %domain% for %clientname%.
-\<Newly Created Domain Admin(s)>
+\\<Newly Created Domain Admin(s)>
 ```
 
 **Example:**  
 ![Example](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_4.png)
 
-**Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
-
-
-
-
-
-
-
-
-
-
-
-
+**Automate will never close the ticket; instead, it will keep adding new detections to the same ticket as a comment/note unless the ticket is closed/resolved manually.**

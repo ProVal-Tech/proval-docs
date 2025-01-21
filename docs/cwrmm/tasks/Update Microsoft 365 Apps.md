@@ -8,9 +8,10 @@ tags: ['application', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM implementation of the agnostic script [Update-Office](<../../powershell/Update-Office.md>).
+This document describes how to run the Office Click-to-Run client to update Microsoft 365 Apps using the ConnectWise RMM implementation of the agnostic script [Update-Office](<../../powershell/Update-Office.md>).
 
 ## Sample Run
 
@@ -19,11 +20,11 @@ Runs the Office Click-to-Run client to update Microsoft 365 Apps. CW RMM impleme
 
 ## Dependencies
 
-[SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
+- [SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Image 3](../../../static/img/Update-Microsoft-365-Apps/image_3.png)  
 ![Image 4](../../../static/img/Update-Microsoft-365-Apps/image_4.png)  
@@ -35,7 +36,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Image 6](../../../static/img/Update-Microsoft-365-Apps/image_6.png)  
 
 A blank function will appear.  
@@ -86,11 +87,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -126,15 +127,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

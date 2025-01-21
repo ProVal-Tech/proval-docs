@@ -8,13 +8,14 @@ tags: ['database', 'installation', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores the data fetched by the [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script.
+Stores the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
+[CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
 
 ## Tables
 
@@ -22,20 +23,11 @@ Stores the data fetched by the [CWM - Automate - Script - Get Lastest Installed 
 
 | Column         | Type        | Explanation                                       |
 |----------------|-------------|---------------------------------------------------|
-| computerid     | int(11)    | Computerid                                        |
+| computerid     | int(11)    | Computer ID                                       |
 | CU             | varchar(128)| Name of the latest installed Cumulative Update    |
 | OSBuild        | varchar(128)| Full OS Build Number                              |
 | ScriptRunTime  | datetime    | Last run time of the script                       |
 | KBid           | varchar(128)| KBID of the latest installed Cumulative Update    |
-| ReleaseDate    | Date        | Release date of the latest installed Cumulative Update |
-
-
-
-
-
-
-
-
-
+| ReleaseDate    | date        | Release date of the latest installed Cumulative Update |
 
 

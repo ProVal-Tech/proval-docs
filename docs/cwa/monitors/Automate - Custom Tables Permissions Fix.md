@@ -8,30 +8,18 @@ tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This custom RAWSQL monitor will check for the custom table privileges for a user in DB.
+This custom RAWSQL monitor checks the custom table privileges for a user in the database.
 
 ## Dependencies
 
-[plugin_proval_ad_gp](<../tables/plugin_proval_ad_gp.md>)  
-[plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)  
-@ plugin_proval_gpo_audit  
-@ plugin_proval_outlook_pst  
+- [plugin_proval_ad_gp](<../tables/plugin_proval_ad_gp.md>)  
+- [plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)  
+- @ plugin_proval_gpo_audit  
+- @ plugin_proval_outlook_pst  
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-
-

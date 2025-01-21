@@ -8,48 +8,36 @@ tags: ['performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview is similar to the [Script Failure Assessment](<./Script Failure Assessment.md>) with the key difference being that it provides a detailed analysis of script failures over the past 30 days. In contrast, the [Script Failure Assessment](<./Script Failure Assessment.md>) relies on the retention period specified in the `Scripts` property on the dashboard. This Dataview was created to address the limitation of the `Scripts` property retention, which is often set to just `7` days, making it challenging to assess script failures over a month.
+This Dataview is similar to the [Script Failure Assessment](<./Script Failure Assessment.md>), with the key difference being that it provides a detailed analysis of script failures over the past 30 days. In contrast, the [Script Failure Assessment](<./Script Failure Assessment.md>) relies on the retention period specified in the `Scripts` property on the dashboard. This Dataview was created to address the limitation of the `Scripts` property retention, which is often set to just `7` days, making it challenging to assess script failures over a month.
 
 ## Dependencies
 
 - [CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](<../scripts/Script Failure Analysis - 30 Day Retention.md>)
-- [CWM - Automate - Custom Table - pvl_Script_Assesment](<../tables/pvl_Script_Assesment.md>)
+- [CWM - Automate - Custom Table - pvl_Script_Assessment](<../tables/pvl_Script_Assessment.md>)
 
 ## Columns
 
 | Column                       | Description                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------|
-| ScriptID                     | ScriptID                                                                                           |
+| ScriptID                     | Script ID                                                                                           |
 | Script                       | Script Name                                                                                        |
-| Is Computer Script           | Is Computer Script? (0/1)                                                                          |
-| Is Offline Script            | Is Offline Script? (0/1)                                                                           |
+| Is Computer Script           | Is this a computer script? (0/1)                                                                   |
+| Is Offline Script            | Is this an offline script? (0/1)                                                                    |
 | Total Affected Computers     | Count of distinct computers on which the script has run                                            |
 | Total Runs                   | Total number of runs                                                                                |
 | Total Failures               | Total number of failures                                                                            |
 | Total Failure %              | Overall Failure Percentage                                                                          |
 | Script Step                  | The step where the script failed                                                                    |
-| Script Function              | Function which failed                                                                                |
+| Script Function              | Function that failed                                                                                |
 | Step Failure Count           | Number of failures on the same script step                                                         |
-| Step Failure %               | Percentage of scripts failure on the same step                                                     |
+| Step Failure %               | Percentage of script failures on the same step                                                     |
 | SQL Execution Failures       | Total number of times it failed to execute SQL query                                               |
-| SQL Execution Failures %     | Percentage of failures because the SQL query failed to execute                                      |
-| Kill Command Issued          | Total number of times it failed because of timeout. (Either the computer went offline during a command execution or an execute script function ran for over 6 hours.) |
-| Kill Command Issued %        | Percentage of failures because the Kill Command was issued                                          |
-| First Failure Date           | First Failure Date                                                                                 |
-| Last Failure Date            | Last Failure Date                                                                                  |
+| SQL Execution Failures %     | Percentage of failures due to SQL query execution failure                                           |
+| Kill Command Issued          | Total number of times the script failed due to a timeout (either the computer went offline during command execution or the execute script function ran for over 6 hours) |
+| Kill Command Issued %        | Percentage of failures due to the Kill Command being issued                                          |
+| First Failure Date           | Date of the first failure                                                                            |
+| Last Failure Date            | Date of the last failure                                                                             |
 | Time Period Days             | Number of days since the data collection started                                                   |
-
-
-
-
-
-
-
-
-
-
-
-
-

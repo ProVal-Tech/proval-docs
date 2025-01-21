@@ -8,10 +8,11 @@ tags: ['cleanup', 'disk']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Stack-Standard Disk Cleanup utility  
-This will use agnostic content [Soji](https://proval.itglue.com/DOC-5078775-10338558) to perform a cleanup of all drives on the target endpoint.
+**Stack-Standard Disk Cleanup Utility**  
+This utility uses agnostic content [Soji](https://proval.itglue.com/DOC-5078775-10338558) to perform a cleanup of all drives on the target endpoint.
 
 ## Sample Run
 
@@ -22,7 +23,7 @@ This will use agnostic content [Soji](https://proval.itglue.com/DOC-5078775-1033
 | 11:55:40 am 13-Jul-22    | Soji - Disk Cleaner    | Comment at THEN step 13                                                                                    | provaltech.com/dan.hicks  |
 | 11:55:40 am 13-Jul-22    | Soji - Disk Cleaner    | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/204148124820810/GetFiles/SojiLogs/Soji-summary.csv with the new contents from %ProgramData%/_automation/AgentProcedure/SojiDiskCleaner/SojiLogs/soji-summary.csv in THEN step 12. | provaltech.com/dan.hicks  |
 | 11:55:39 am 13-Jul-22    | Soji - Disk Cleaner    | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/204148124820810/GetFiles/SojiLogs/Soji-volumecaches.csv with the new contents from %ProgramData%/_automation/AgentProcedure/SojiDiskCleaner/SojiLogs/soji-volumecaches.csv in THEN step 11. | provaltech.com/dan.hicks  |
-| 11:55:39 am 13-Jul-22    | Soji - Disk Cleaner    | Raw exe Data: [11:55:33 INF] Starting up Soji! [11:55:33 INF] No drive letters passed in. Starting drive detection. [11:55:33 INF] 1 valid drive letter detected. [11:55:33 INF] Getting volume caches for drive C:/ [11:55:33 INF] Skipping return of Active Setup Temp Folders as it is currently using no space. [11:55:33 WRN] Failed to initialize the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/BranchCache'. Deactivating! [11:55:33 WRN] Releasing the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/BranchCache'. [11:55:33 WRN] Failed to initialize the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/Content Indexer Cleaner'. Deactivating! [11:55:33 WRN] Releasing the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/Content Indexer Cleaner'. [11:55:33 INF] Skipping return of Diagnostic Data Viewer database files as it is curre... | provaltech.com/dan.hicks  |
+| 11:55:39 am 13-Jul-22    | Soji - Disk Cleaner    | Raw exe Data: [11:55:33 INF] Starting up Soji! [11:55:33 INF] No drive letters passed in. Starting drive detection. [11:55:33 INF] 1 valid drive letter detected. [11:55:33 INF] Getting volume caches for drive C:/ [11:55:33 INF] Skipping return of Active Setup Temp Folders as it is currently using no space. [11:55:33 WRN] Failed to initialize the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/BranchCache'. Deactivating! [11:55:33 WRN] Releasing the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/BranchCache'. [11:55:33 WRN] Failed to initialize the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/Content Indexer Cleaner'. Deactivating! [11:55:33 WRN] Releasing the VolumeCache object at 'SOFTWARE/Microsoft/Windows/CurrentVersion/Explorer/VolumeCaches/Content Indexer Cleaner'. [11:55:33 INF] Skipping return of Diagnostic Data Viewer database files as it is currently... | provaltech.com/dan.hicks  |
 | 11:55:39 am 13-Jul-22    | Execute Shell command - Get Results to Variable | Success THEN                                                                                              | provaltech.com/dan.hicks  |
 | 11:55:36 am 13-Jul-22    | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: cd %ProgramData%/_automation/AgentProcedure/SojiDiskCleaner && %ProgramData%/_automation/AgentProcedure/SojiDiskCleaner/soji.exe --csv >"c:/provaltech/commandresults-1375566225.txt" 2>&1 | provaltech.com/dan.hicks  |
 | 11:55:33 am 13-Jul-22    | Soji - Disk Cleaner    | .NET 6.0 Update Results: .NET 6 Desktop Runtime already installed.                                        | provaltech.com/dan.hicks  |
@@ -31,7 +32,7 @@ This will use agnostic content [Soji](https://proval.itglue.com/DOC-5078775-1033
 | 11:55:31 am 13-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "%ProgramData%/_automation/AgentProcedure/SojiDiskCleaner/update-net6.ps1" >"c:/provaltech/psoutputtmp.txt" | provaltech.com/dan.hicks  |
 | 11:55:31 am 13-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                                        | provaltech.com/dan.hicks  |
 | 11:55:31 am 13-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as %ProgramData%/_automation/AgentProcedure/SojiDiskCleaner/update-net6.ps1                                                  | provaltech.com/dan.hicks  |
-| 11:55:31 am 13-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                                     | provaltech.com/dan.hicks  |
+| 11:55:31 am 13-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0003 | No Powershell file variable detected.                                                                     | provaltech.com/dan.hicks  |
 | 11:55:30 am 13-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                                    | provaltech.com/dan.hicks  |
 | 11:55:25 am 13-Jul-22    | Execute Powershell Command | Success THEN                                                                                              | provaltech.com/dan.hicks  |
 | 11:55:24 am 13-Jul-22    | Execute Powershell Command-0011 | Powershell command completed!                                                                             | provaltech.com/dan.hicks  |
@@ -51,7 +52,7 @@ This will use agnostic content [Soji](https://proval.itglue.com/DOC-5078775-1033
 
 ## Process
 
-Describe the steps the script performs to accomplish the desired task. Note that if this script is just a front-end for a piece of Agnostic Content, then you can insert a link to the documentation for that content here instead.
+Describe the steps the script performs to accomplish the desired task. Note that if this script is just a front-end for a piece of agnostic content, then you can insert a link to the documentation for that content here instead.
 
 ## Output
 
@@ -61,14 +62,3 @@ Describe the steps the script performs to accomplish the desired task. Note that
 - etc.
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-

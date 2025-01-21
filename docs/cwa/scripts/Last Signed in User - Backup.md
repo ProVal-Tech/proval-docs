@@ -8,9 +8,10 @@ tags: ['backup', 'registry']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is used to store the last signed-in user so PRONOC users can run this script prior to logging in, and then can put the computer back into the state it was in prior to logging in after work is completed.
+This script is used to store the last signed-in user so PRONOC users can run this script prior to logging in, allowing them to restore the computer to the state it was in before logging in after work is completed.
 
 ## Sample Run
 
@@ -20,24 +21,12 @@ This script is used to store the last signed-in user so PRONOC users can run thi
 
 | Name          | Description                                                                                       |
 |---------------|---------------------------------------------------------------------------------------------------|
-| LogonBackup   | Collects information about backup taken successfully or not. The reg backup at path: C:/Temp/Logonbackup/logonexport.reg |
+| LogonBackup   | Collects information about whether the backup was taken successfully or not. The registry backup is located at: C:/Temp/Logonbackup/logonexport.reg |
 
 ## Process
 
-This script stores the last sign-in user info from the registry as a registry backup to the local computer. It stores the last logged in user data to the file "C:/Temp/Logonbackup/logonexport.reg". It then queries the results of the returned script for errors and sends this to the script log.
+This script stores the last signed-in user information from the registry as a backup on the local computer. It saves the last logged-in user data to the file "C:/Temp/Logonbackup/logonexport.reg". It then checks the results of the returned script for errors and logs this information.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

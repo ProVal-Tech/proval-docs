@@ -8,9 +8,10 @@ tags: ['performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the detailed information of the Network connections.
+The dataview displays detailed information about network connections.
 
 ## Columns
 
@@ -19,26 +20,13 @@ The dataview displays the detailed information of the Network connections.
 | Client                     | Name of the client.                                           |
 | Location                   | Name of the location.                                        |
 | Computer Name              | Name of the computer.                                       |
-| Uptime                     | The uptime of the computers (in Minutes).                   |
-| Network Adapter Name       | This is the name of the connected Network Adapters.          |
-| Network Status             | The status of the Network Adapter (Up/Down).                |
+| Uptime                     | The uptime of the computers (in minutes).                   |
+| Network Adapter Name       | This is the name of the connected network adapters.          |
+| Network Status             | The status of the network adapter (Up/Down).                |
 | Network Connection Speed    | This is the speed in Mb/s of the network connection.        |
 | Network Adapter Type       | The type of the connected network adapters.                  |
 | MAC Address                | This is the physical address of the network adapters.        |
 | IP Address                 | This is the IPv4 address of the network adapters.           |
 | DNS Address                | This displays the DNS information of the machine.           |
 | Domain Name                | The domain information of the machine.                      |
-| DHCP State                 | The DHCP state (Static/Dynamic) of the Network.            |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| DHCP State                 | The DHCP state (Static/Dynamic) of the network.            |

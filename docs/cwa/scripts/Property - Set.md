@@ -8,17 +8,18 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script is intended to implement a solution to the multiple requests for exclusions in thresholds for targets. If a threshold for an item is set as a global property, there should be a way to trump said policy at the computer level. This script addresses that request and is written in a manner so that it may be implemented in any automate solution.
+This script is intended to implement a solution to the multiple requests for exclusions in thresholds for targets. If a threshold for an item is set as a global property, there should be a way to override said policy at the computer level. This script addresses that request and is written in a manner so that it may be implemented in any Automate solution.
 
 ## Sample Run
 
 ![Sample Run Image 1](../../../static/img/Property---Set/image_1.png)  
-Above image sets a computer exclusion edf to a new threshold overwriting it if it currently exists.
+The above image sets a computer exclusion EDF to a new threshold, overwriting it if it currently exists.
 
 ![Sample Run Image 2](../../../static/img/Property---Set/image_2.png)  
-Above image sets a global parameter to a value overwriting it if it exists.
+The above image sets a global parameter to a value, overwriting it if it exists.
 
 #### User Parameters
 
@@ -33,34 +34,23 @@ Above image sets a global parameter to a value overwriting it if it exists.
 
 | Name          | Description                                                          |
 |---------------|----------------------------------------------------------------------|
-| Validate      | Checks for the parameter returns something or -9999 if missing       |
-| dataValidate  | Checks for the specific computer parameter data if missing returns -9999 (used if setting computer parameter) |
-| GUID          | Creates a guid for use with computer parameter                       |
-| EFID          | The id of the Computer parameter.                                    |
+| Validate      | Checks for the parameter; returns something or -9999 if missing.    |
+| dataValidate  | Checks for the specific computer parameter data; if missing, returns -9999 (used if setting computer parameter). |
+| GUID          | Creates a GUID for use with the computer parameter.                  |
+| EFID          | The ID of the computer parameter.                                    |
 
 ## Process
 
-If Global is selected  
-- Check for the global parameter  
-  - Parameter missing  
-    - Create the parameter with the desired value  
-  - Parameter exists  
-    - Check overwrite if not 1 exit with error if 1 then overwrite current value.  
+If Global is selected:  
+- Check for the global parameter.  
+  - If the parameter is missing:  
+    - Create the parameter with the desired value.  
+  - If the parameter exists:  
+    - Check overwrite; if not 1, exit with an error. If 1, overwrite the current value.  
 
-If Computer is selected  
-- Check for the parameter and verify that the specific computer holds data in that parameter, if not returns -9999  
-  - If a value is missing for that target  
-    - Create the parameter for that target  
-  - If a value is present for that target  
-    - Check overwrite if not 1 exit with error otherwise overwrite the current target's parameter value.  
-
-
-
-
-
-
-
-
-
-
-
+If Computer is selected:  
+- Check for the parameter and verify that the specific computer holds data in that parameter; if not, return -9999.  
+  - If a value is missing for that target:  
+    - Create the parameter for that target.  
+  - If a value is present for that target:  
+    - Check overwrite; if not 1, exit with an error; otherwise, overwrite the current target's parameter value.  

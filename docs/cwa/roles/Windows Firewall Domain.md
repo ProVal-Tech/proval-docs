@@ -8,25 +8,13 @@ tags: ['firewall', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will detect if the Domain profile of the Windows Firewall is enabled.
+This document will detect if the Domain profile of the Windows Firewall is enabled.
 
 ## Settings
 
 | Detection String                                             | Comparator | Result | Applicable OS |
 |------------------------------------------------------------|------------|--------|----------------|
-| \{%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |

@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'windows']
 draft: true
 unlisted: false
 ---
+
 # Summary
 
-This View will show the Workstations that have not been rebooted in the last 60 days.
+This view will show the workstations that have not been rebooted in the last 60 days.
 
 # Dependencies
 
@@ -18,24 +19,11 @@ None
 
 # View Filters
 
-List all filters applied to this view
+The following filters are applied to this view:
 
 | Filter Name                     | Advanced Filter? | Filter Value                                                  |
 |----------------------------------|------------------|--------------------------------------------------------------|
-| OS Info                         | Y                | All Workstations                                             |
-| Machine Status                  | Y                | Machines that have not rebooted in last 60 days            |
-| Operating System                 | Y                | Not *mac* AND NOT *linux*                                   |
-| cPVAL All Policy Removal         | Y                | NOT *1*                                                    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| OS Info                         | Yes              | All Workstations                                             |
+| Machine Status                  | Yes              | Machines that have not rebooted in the last 60 days        |
+| Operating System                 | Yes              | Not *mac* AND NOT *linux*                                   |
+| cPVAL All Policy Removal         | Yes              | NOT *1*                                                    |

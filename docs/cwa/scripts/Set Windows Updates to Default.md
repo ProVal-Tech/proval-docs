@@ -8,6 +8,7 @@ tags: ['registry', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script removes any registry entries that may be preventing Windows updates and restores the default Windows Update settings, fully re-enabling updates for the user.
@@ -19,14 +20,3 @@ This script removes any registry entries that may be preventing Windows updates 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

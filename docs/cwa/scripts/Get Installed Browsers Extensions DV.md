@@ -8,9 +8,10 @@ tags: ['software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script gathers all the extensions installed on the Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox browsers. It's a wrapper script to execute the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>), and [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) scripts.
+This script gathers all the extensions installed on the Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox browsers. It's a wrapper script that executes the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>) and [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) scripts.
 
 ## Sample Run
 
@@ -32,21 +33,9 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 
 - Refresh software inventory.
 - Look for the installed browsers.
-- Executes the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>) script if any of the `Google Chrome`, `Brave`, or `Microsoft Edge` browsers are installed.
-- Executes the [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) script if the `Mozilla Firefox` browser is installed.
+- Execute the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>) script if any of the `Google Chrome`, `Brave`, or `Microsoft Edge` browsers are installed.
+- Execute the [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) script if the `Mozilla Firefox` browser is installed.
 
 ## Output
 
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['database', 'mssql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitor executes the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) once per week against the MSSQL servers available in the environment.
@@ -24,16 +25,3 @@ The internal monitor is explicitly limited to the `MSSQL Servers` present in the
 ## Ticketing
 
 **Name:** `△ Custom - Execute Script - Get MSSQL Database Version`
-
-
-
-
-
-
-
-
-
-
-
-
-

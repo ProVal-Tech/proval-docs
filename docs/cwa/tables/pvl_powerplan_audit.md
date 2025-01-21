@@ -1,19 +1,8 @@
 id: '9560f2db-f58f-4c07-a9da-2828deabc4cf'  
 title: 'Advanced Script Usage in PowerShell'  
 title_meta: 'Advanced Script Usage in PowerShell'  
-keywords: ['scripting', 'automation', 'variables', 'functions', 'errorhandling']  
+keywords: ['scripting', 'automation', 'variables', 'functions', 'error handling']  
 description: 'This document explores advanced techniques for script usage in PowerShell, including the use of variables, functions, and error handling to create efficient and robust scripts for various tasks.'  
-tags: ['performance', 'security', 'setup', 'windows']
+tags: ['performance', 'security', 'setup', 'windows']  
 draft: false  
 unlisted: false  
-
-
-
-
-
-
-
-
-
-
-

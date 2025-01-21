@@ -8,11 +8,12 @@ tags: ['security', 'setup', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will boot the machine in safe mode and attempt to completely wipe Webroot from the target machine.
 
-Time Saved by Automation: 20 Minutes
+**Time Saved by Automation:** 20 Minutes
 
 ## Sample Run
 
@@ -20,20 +21,8 @@ Time Saved by Automation: 20 Minutes
 
 ## Process
 
-This script first checks if the Webroot service is running on the machine or not. If yes, then it will boot the machine in safe mode and attempt to completely wipe Webroot from the target machine. It further verifies if the uninstallation was successful or not.
+This script first checks if the Webroot service is running on the machine. If it is, the script will boot the machine in safe mode and attempt to completely wipe Webroot from the target machine. It further verifies whether the uninstallation was successful.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

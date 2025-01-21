@@ -8,29 +8,17 @@ tags: ['connectwise', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor is intended to create an urgent ticket to our (ProVal's) AutoTask Portal for a broken integration between ConnectWise Automate and ScreenConnect.
+This monitor is intended to create an urgent ticket in ProVal's AutoTask Portal for a broken integration between ConnectWise Automate and ScreenConnect.
 
 ## Dependencies
 
 [Email RAWSQL Monitor Set Failures* [Autofix]](<../scripts/Email Creation - Computer Failure Only.md>)
 
-"△ Custom - Email RAWSQL Monitor set results to ProVal" Alert template should be applied.
+The "△ Custom - Email RAWSQL Monitor set results to ProVal" alert template should be applied.
 
 ## Target
 
-Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-
-
-
+Global - This should be run without explicitly defined targets.

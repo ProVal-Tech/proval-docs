@@ -8,14 +8,15 @@ tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview will calculate metrics based on ticket data in the Automate database.
 
-Daily = Tickets created in the last 24 hours  
-Monthly = Tickets Created in the last 30 days  
-1 Month Ago (Monthly) = Tickets created from 30 days ago to 60 days ago  
-2 Months Ago (Monthly) = Tickets created from 60 days ago to 90 days ago  
+- **Daily**: Tickets created in the last 24 hours  
+- **Monthly**: Tickets created in the last 30 days  
+- **1 Month Ago (Monthly)**: Tickets created from 30 days ago to 60 days ago  
+- **2 Months Ago (Monthly)**: Tickets created from 60 days ago to 90 days ago  
 
 ## Dependencies
 
@@ -32,15 +33,3 @@ Automate must generate tickets.
 ## Example
 
 ![Example Image](../../../static/img/Admin---Ticket-Volume-Metrics/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

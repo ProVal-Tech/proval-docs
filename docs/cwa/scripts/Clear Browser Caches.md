@@ -8,6 +8,7 @@ tags: ['browsers', 'cleanup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will clear the caches for the following browsers:
@@ -18,7 +19,7 @@ This script will clear the caches for the following browsers:
 - Mozilla Firefox
 - Microsoft Edge (Legacy)
 
-Note: This is strictly for the browser cache and will not remove the browser history.
+**Note:** This is strictly for the browser cache and will not remove the browser history.
 
 ## Sample Run
 
@@ -33,20 +34,8 @@ Note: This is strictly for the browser cache and will not remove the browser his
 
 | Name   | Example | Required | Description                                                                                                                                                  |
 |--------|---------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Force  | 1       | False    | Browser instances will be terminated if the `Force` parameter is set to `1` and they are bearing a handle to target cache files.                           |
+| Force  | 1       | False    | Browser instances will be terminated if the `Force` parameter is set to `1` and they are holding a handle to target cache files.                           |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

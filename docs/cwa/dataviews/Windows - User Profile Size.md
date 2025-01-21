@@ -8,35 +8,23 @@ tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview displays all the available User Profile sizes on the windows machine.
+This document displays all the available user profile sizes on a Windows machine.
 
 ## Dependencies
 
-- `@plugin_proval_userfoldersizes` - custom Table
+- `@plugin_proval_userfoldersizes` - Custom Table
 - `@Get User Folder Sizes` (script)
 
 ## Columns
 
 | Column            | Description                                      |
 |-------------------|--------------------------------------------------|
-| ComputerID       | Display the computerID.                          |
-| Machine          | Display the computer name.                       |
-| Client           | Display the client name.                         |
-| Profile Path     | Display the user profile folder path.            |
-| Profile Size (MB)| Display the user profile folder size in MB.     |
-| OS               | Display the computer operating system.           |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| ComputerID       | Displays the Computer ID.                        |
+| Machine          | Displays the computer name.                      |
+| Client           | Displays the client name.                        |
+| Profile Path     | Displays the user profile folder path.           |
+| Profile Size (MB)| Displays the user profile folder size in MB.    |
+| OS               | Displays the computer operating system.          |

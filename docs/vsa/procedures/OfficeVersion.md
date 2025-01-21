@@ -8,19 +8,7 @@ tags: ['office365', 'report', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
 
-Get Default Office Version, Bit, CTR, and 2019  
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
-
+Get Default Office Version, Bit, CTR, and 2019

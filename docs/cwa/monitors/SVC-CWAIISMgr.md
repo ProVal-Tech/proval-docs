@@ -8,10 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-CWAIISMgr is one of the important services for the Automate server, this monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Autotask portal if it is down.  
-It should be created against the "Labtech Server" group for the on-prem partners only.
+CWAIISMgr is one of the important services for the Automate server. This monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Autotask portal if it is down. It should be created against the "Labtech Server" group for the on-prem partners only.
 
 ## Details
 
@@ -25,15 +25,4 @@ It should be created against the "Labtech Server" group for the on-prem partners
 
 ## Target
 
-Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
-
-
-
-
-
-
-
-
-
-
-
+Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server.

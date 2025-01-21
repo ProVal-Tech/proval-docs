@@ -8,13 +8,14 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is designed to establish a remote monitoring system for Windows computers, specifically focusing on tracking CPU temperature. The script utilizes the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) tool to monitor CPU temperatures and generate alerts if any sensor consistently records temperatures exceeding the permissible limit.
 
 **Tool Placement:**
 - Save the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file in the `LTShare` directory (or `Webdav` for hosted partners) under the path `Transfer/Tools/CPUTempMon/CPUTempMon.exe`.
-- Create the `CPUTempMon` folder, place the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file, Unblock the file if it's blocked, and execute an `iisreset` command after placing the file.
+- Create the `CPUTempMon` folder, place the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file, unblock the file if it's blocked, and execute an `iisreset` command after placing the file.
 
 ![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_1.png)
 
@@ -32,11 +33,11 @@ This script is designed to establish a remote monitoring system for Windows comp
 
 **Note:**
 - It's crucial to follow the specified directory structure and initiate an `iisreset` after placing the tool.
-- The [**`CPUTempMon.exe tool`**](https://proval.itglue.com/attachments/13313008) is attached with this document.
+- The [**`CPUTempMon.exe` tool**](https://proval.itglue.com/attachments/13313008) is attached to this document.
 
 ## Sample Run
 
-**First run:** For the initial run, you must execute the script with the `Set_Environment` Parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.
+**First Run:** For the initial run, you must execute the script with the `Set_Environment` parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.
 
 ![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_4.png)
 
@@ -52,16 +53,16 @@ This script is designed to establish a remote monitoring system for Windows comp
 | Name                    | Description                                               |
 |-------------------------|-----------------------------------------------------------|
 | ProjectName             | CPUTempMon                                               |
-| WorkingDirectory         | C:/PorgramData/_Automation/Script/CPUTempMon            |
+| WorkingDirectory         | C:/ProgramData/_Automation/Script/CPUTempMon            |
 | DownloadURL             | [https://redirhostname/labtech/transfer/Tools/CPUTempMon/CPUTempMon.exe](https://redirhostname/labtech/transfer/Tools/CPUTempMon/CPUTempMon.exe) |
-| ToolPath                | C:/PorgramData/_Automation/Script/CPUTempMon/CPUTempMon.exe |
-| ScriptPath              | C:/PorgramData/_Automation/Script/CPUTempMon/CPUTempMon.ps1 |
+| ToolPath                | C:/ProgramData/_Automation/Script/CPUTempMon/CPUTempMon.exe |
+| ScriptPath              | C:/ProgramData/_Automation/Script/CPUTempMon/CPUTempMon.ps1 |
 
 ## User Parameters
 
 | Name                | Example | Required                              | Description                                                                                                                                                                                                 |
 |---------------------|---------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set_Environment      | 1       | True (For First Run of the script)   | For the initial run, you must execute the script with the `Set_Environment` Parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.             |
+| Set_Environment      | 1       | True (For First Run of the script)   | For the initial run, you must execute the script with the `Set_Environment` parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.             |
 | Force                | 1       | False                                 | The script’s general function is to compare the monitor set currently installed on the machine with the configuration in the EDFs and system properties. If discrepancies are detected, the monitor will be re-created. However, the force switch can be used to forcefully re-create the monitor set. |
 
 ## System Properties
@@ -84,9 +85,6 @@ This script is designed to establish a remote monitoring system for Windows comp
 | CPUTempMon_Offset              | 20                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_Offset` for a specific client’s machine.                                                                                 |
 | CPUTempMon_AlertTemplate_Servers | 1                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertTemplate_Servers` for a specific client’s machine. Best use case scenario is to disable the alerting for a specific client's servers. |
 | CPUTempMon_AlertTemplate_Workstations | 1               | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertTemplate_Workstations` for a specific client’s machine. Best use case scenario is to disable the alerting for a specific client's workstations. |
-| CPUTempMon_TicketCategory_Servers | 6                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_TicketCategory_Servers` for a specific client’s machine.                                                                   |
-| CPUTempMon_TicketCategory_Workstations | 6               | Text      | This can be used to override the value stored in the system property `CPUTempMon_TicketCategory_Workstations` for a specific client’s machine.                                                             |
-| CPUTempMon_AlertStyle          | 4                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertStyle` for a specific client's machine.                                                                                |
 
 ## Location-Level EDF
 
@@ -106,14 +104,3 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Script Logs
 - Files on Machine
 - Remote Monitor
-
-
-
-
-
-
-
-
-
-
-

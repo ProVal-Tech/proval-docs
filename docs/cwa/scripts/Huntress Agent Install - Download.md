@@ -8,11 +8,12 @@ tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script downloads and installs the Huntress Agent silently on the Windows machine.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Variables
 
-#### Global Parameters
+### Global Parameters
 
 | Name      | Example              | Required | Description                                                                                     |
 |-----------|----------------------|----------|-------------------------------------------------------------------------------------------------|
@@ -29,21 +30,9 @@ Time Saved by Automation: 10 Minutes
 ## Process
 
 - Downloads the specific .exe file using the Account Key.
-- Executes Batch script to install Huntress Agent on the machine.
-- Stores the output of the Batch script in the variable: `@shellresult@`.
+- Executes a batch script to install the Huntress Agent on the machine.
+- Stores the output of the batch script in the variable: `@shellresult@`.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

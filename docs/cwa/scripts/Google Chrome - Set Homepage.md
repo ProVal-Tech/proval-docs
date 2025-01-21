@@ -8,11 +8,12 @@ tags: ['chrome', 'registry', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script takes a string parameter to define the URL to set the homepage to and adds the registry policy for an enforced homepage in Google Chrome.
+This script takes a string parameter to define the URL to set the homepage and adds the registry policy for an enforced homepage in Google Chrome.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -27,7 +28,7 @@ Time Saved by Automation: 5 Minutes
 ## Variables
 
 - `@PS1DataLog@` - Helps to verify if the script actually succeeded.
-- `@PS1ErrorLog@` - Helps to track failure of the script.
+- `@PS1ErrorLog@` - Helps to track failures of the script.
 
 #### User Parameters
 
@@ -39,20 +40,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-The script takes a string parameter to define the URL to set the homepage to. The applicable registry policies are applied to set the homepage to the one defined by the parameter. Optionally, switches can be used to enforce the homepage on startup, and to enforce the homepage on each new tab.
+The script takes a string parameter to define the URL to set the homepage. The applicable registry policies are applied to set the homepage to the one defined by the parameter. Optionally, switches can be used to enforce the homepage on startup and to enforce the homepage on each new tab.
 
 ## Output
 
 - Script log
 - Local file on computer
-
-
-
-
-
-
-
-
-
-
-

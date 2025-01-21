@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor creates a ticket if the BitLocker Initialize fails to enable the Bitlocker on the system volume.
+This monitor creates a ticket if the BitLocker initialization fails to enable BitLocker on the system volume.
 
 ## Dependencies
 
@@ -25,35 +26,35 @@ This should target the group 'Windows 10/11' as shown below:
 
 ## Implementation
 
-1. From the left bar select Alert Management -> Monitor  
-   
+1. From the left bar, select Alert Management -> Monitor  
+
    ![Select Monitor](../../../static/img/BitLocker-Initialize-Failure-Detection/image_2.png)  
-   
+
    Then click 'Create Monitor'  
-   
+
    ![Create Monitor](../../../static/img/BitLocker-Initialize-Failure-Detection/image_3.png)
 
 2. Fill in the mandatory columns on the left side.  
-   Name: Bitlocker Init Failure  
-   Description: This monitor creates a ticket if the BitLocker Initialize fails to enable the Bitlocker on the system volume.  
-   Type: Custom Field  
-   Severity: Critical Non-Impact Alerts  
-   Family: Desktop Security  
+   - **Name**: BitLocker Init Failure  
+   - **Description**: This monitor creates a ticket if the BitLocker initialization fails to enable BitLocker on the system volume.  
+   - **Type**: Custom Field  
+   - **Severity**: Critical Non-Impact Alerts  
+   - **Family**: Desktop Security  
 
    ![Mandatory Fields](../../../static/img/BitLocker-Initialize-Failure-Detection/image_4.png)
 
 3. Fill in the condition on the right side.  
    Follow the screenshot:  
-   
+
    ![Condition Screenshot](../../../static/img/BitLocker-Initialize-Failure-Detection/image_5.png)
 
 4. Select the target.  
    Click on Select Target:  
-   
+
    ![Select Target](../../../static/img/BitLocker-Initialize-Failure-Detection/image_6.png)  
-   
-   Then click on Device Group and then search for the word reboot, and then select the 'Windows 10/11' group as shown below:  
-   
+
+   Then click on Device Group, search for the word "reboot," and select the 'Windows 10/11' group as shown below:  
+
    ![Windows 10/11 Group Selection](../../../static/img/BitLocker-Initialize-Failure-Detection/image_1.png)
 
 ## Ticketing
@@ -63,15 +64,3 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
-
-
-
-
-
-
-
-
-
-
-

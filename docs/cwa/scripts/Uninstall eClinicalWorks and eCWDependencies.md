@@ -8,9 +8,10 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script is designed to uninstall the eClinicalWorks Client and eCWDependencies applications from the computer, and in case of failure, it generates a ticket.
+This script is designed to uninstall the eClinicalWorks Client and eCWDependencies applications from the computer. In case of failure, it generates a ticket for further assistance.
 
 ## Sample Run
 
@@ -20,14 +21,3 @@ The script is designed to uninstall the eClinicalWorks Client and eCWDependencie
 
 - Script log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-

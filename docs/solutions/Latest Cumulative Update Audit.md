@@ -8,9 +8,10 @@ tags: ['compliance', 'database', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The solution grabs the computer's build number and compares it with Microsoft's database to determine the installed Cumulative Update. It then compares the age of the installed Cumulative Update to determine whether the machine is in compliance with Microsoft updates or not.
+The solution retrieves the computer's build number and compares it with Microsoft's database to determine the installed Cumulative Update. It then assesses the age of the installed Cumulative Update to determine whether the machine is in compliance with Microsoft updates.
 
 ## Associated Content
 
@@ -27,15 +28,3 @@ The solution grabs the computer's build number and compares it with Microsoft's 
 - Create the task: [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029444)
-
-
-
-
-
-
-
-
-
-
-
-

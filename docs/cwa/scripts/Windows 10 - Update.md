@@ -8,28 +8,32 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Updates Windows 10 to the latest release with the option to either prompt the user to Reboot (Prompt) or abort the reboot altogether (None).
+This document updates Windows 10 to the latest release with the option to either prompt the user to reboot (Prompt) or abort the reboot altogether (None).
 
-### *** IMPORTANT NOTES ***
+### ***IMPORTANT NOTES***
 
-### If aborting the reboot, and a user is logged in the user will see the following
-1. A blue box saying the computer will reboot will pop up with a close button, it will last about 5 seconds and vanish.
+#### If aborting the reboot, and a user is logged in, the user will see the following:
 
-![image](../../../static/img/Windows-10---Update/image_1.png)
+1. A blue box saying the computer will reboot will pop up with a close button. It will last about 5 seconds and then vanish.
 
-2. After the blue box vanishes a black notification may appear in the lower right-hand side of the screen saying a user logout was aborted.
+   ![image](../../../static/img/Windows-10---Update/image_1.png)
 
-![image](../../../static/img/Windows-10---Update/image_2.png)
+2. After the blue box vanishes, a black notification may appear in the lower right-hand side of the screen, indicating that a user logout was aborted.
+
+   ![image](../../../static/img/Windows-10---Update/image_2.png)
 
 ### ***IMPORTANT FUNCTIONALITY NOTE***
-If aborting the reboot, between the time that a user sees the blue banner and the time the computer is restarted **any change made to the C:/windows directory and its subfolders will be LOST after rebooting.**
 
-### ****RUNNING AS AUTOFIX NOTE ****
-**If you are running this as an autofix the reboot parameter WILL DEFAULT TO PROMPT.**
+If aborting the reboot, between the time that a user sees the blue banner and the time the computer is restarted, **any change made to the C:/windows directory and its subfolders will be LOST after rebooting.**
 
-**This Means it will reboot.**
+### ****RUNNING AS AUTOFIX NOTE****
+
+**If you are running this as an autofix, the reboot parameter WILL DEFAULT TO PROMPT.**
+
+**This means it will reboot.**
 
 ## Sample Run
 
@@ -43,7 +47,7 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 | Name    | Example        | Required | Description                                                                                      |
 |---------|----------------|----------|--------------------------------------------------------------------------------------------------|
-| Reboot  | None / Prompt  | True     | A Reboot value of None aborts the reboot, a value of Prompt will prompt the user.              |
+| Reboot  | None / Prompt  | True     | A Reboot value of None aborts the reboot; a value of Prompt will prompt the user.              |
 
 ## Process
 
@@ -52,16 +56,3 @@ Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

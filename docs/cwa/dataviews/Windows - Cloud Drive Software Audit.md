@@ -8,9 +8,10 @@ tags: ['cloud', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview helps in auditing cloud drive software and its version on the machines.
+This dataview helps in auditing cloud drive software and its versions on machines.
 
 ## Dependencies
 
@@ -24,15 +25,3 @@ None
 | Computer ID    | The ID of the machine where software is detected     |
 | Software Name   | Name of the cloud drive software present on the machine |
 | Version        | Version of the cloud drive software                   |
-
-
-
-
-
-
-
-
-
-
-
-

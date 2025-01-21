@@ -8,9 +8,10 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor is a part of [EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) and is designed to detect the agents with Login Bug Issues. It has been more than 07 days since its detection, and the machine has still not been rebooted.
+This internal monitor is part of the [EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) and is designed to detect agents with Login Bug Issues. It has been more than 7 days since the issue was detected, and the machine still has not been rebooted.
 
 ## Dependencies
 
@@ -18,26 +19,14 @@ This internal monitor is a part of [EPM - Windows Configuration - Solution - Use
 
 ## Target
 
-This Monitor is a Global Monitor.
+This monitor is a global monitor.
 
 ## Ticketing
 
 **Subject:** `Login Bug Issue detected on %COMPUTERNAME%/%CLIENTNAME%`
 
-**Body:** `It has been over 7 days since the Login Bug Issue was identified on %COMPUTERNAME%/%CLIENTNAME%. The machine has not yet been rebooted. Please proceed with a manual reboot at your earliest convenience, as this machine is currently in need of a Reboot. Thank you...!!`
+**Body:** `It has been over 7 days since the Login Bug Issue was identified on %COMPUTERNAME%/%CLIENTNAME%. The machine has not yet been rebooted. Please proceed with a manual reboot at your earliest convenience, as this machine is currently in need of a reboot. Thank you!`
 
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
-
-
-
-
-
-
-
-
-
-
-
-

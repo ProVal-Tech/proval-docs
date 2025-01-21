@@ -8,9 +8,10 @@ tags: ['installation', 'webex']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script installs WebEx from Webex Website
+This script installs WebEx from the Webex website.
 
 ## Sample Run
 
@@ -33,25 +34,25 @@ Document the various variables in the script. Delete any section that is not rel
 |-------------------------------|---------------------------------|
 | The name of the variable      | What the variable represents    |
 
-#### Global Parameters
+### Global Parameters
 
 | Name                          | Example                          | Required       | Description                     |
 |-------------------------------|----------------------------------|----------------|---------------------------------|
 | The name of the parameter     | An example value of the parameter| True or False  | What the parameter represents    |
 
-#### User Parameters
+### User Parameters
 
 | Name                          | Example                          | Required       | Description                     |
 |-------------------------------|----------------------------------|----------------|---------------------------------|
 | The name of the parameter     | An example value of the parameter| True or False  | What the parameter represents    |
 
-#### System Properties
+### System Properties
 
 | Name                          | Example                          | Required       | Description                     |
 |-------------------------------|----------------------------------|----------------|---------------------------------|
 | The name of the property      | An example value of the property | True or False  | What the property represents     |
 
-#### Script States
+### Script States
 
 | Name                          | Example                          | Description                     |
 |-------------------------------|----------------------------------|---------------------------------|
@@ -65,23 +66,10 @@ Describe the steps the script performs to accomplish the desired task. Note that
 
 The location and method by which this script returns data.
 
-Ex:
+Examples:
 
 - Script log
 - Script state
 - Local file on computer
 - Dataview
 - etc.
-
-
-
-
-
-
-
-
-
-
-
-
-

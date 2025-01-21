@@ -8,21 +8,22 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Gathers information about user profiles. Data is stored into the custom table [plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>).
+This script gathers information about user profiles. The data is stored in the custom table [plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>).
 
-**Not supported on Windows Domain Controllers or deprecated versions of Windows. An error will be thrown if run against one.**
+**Note:** This script is not supported on Windows Domain Controllers or deprecated versions of Windows. An error will be thrown if it is run against one.
 
 ## File Hash
 
-**File Path:** `C:/ProgramData/_Automation/script/Get-UserProfiles/Get-UserProfilesAI.ps1`  
-**File Hash (SHA256):** `782A08CB0AB705D3992280FA6A86EF2AC1A5B6DEEF7E979FC90F76EB32EF6787`  
-**File Hash (MD5):** `32621978F70465D5C41BCAE331D01668`  
+- **File Path:** `C:/ProgramData/_Automation/script/Get-UserProfiles/Get-UserProfilesAI.ps1`  
+  **File Hash (SHA256):** `782A08CB0AB705D3992280FA6A86EF2AC1A5B6DEEF7E979FC90F76EB32EF6787`  
+  **File Hash (MD5):** `32621978F70465D5C41BCAE331D01668`  
 
-**File Path:** `C:/ProgramData/_Automation/script/Get-UserProfiles/Get-UserProfiles.ps1`  
-**File Hash (SHA256):** `FDE0F31BB08DC85F8260D437284927F0D6907C88C04F8728ED9D67C125886663`  
-**File Hash (MD5):** `1DF4E90E6E42BA0540944AF8C85A181B`  
+- **File Path:** `C:/ProgramData/_Automation/script/Get-UserProfiles/Get-UserProfiles.ps1`  
+  **File Hash (SHA256):** `FDE0F31BB08DC85F8260D437284927F0D6907C88C04F8728ED9D67C125886663`  
+  **File Hash (MD5):** `1DF4E90E6E42BA0540944AF8C85A181B`  
 
 ## Sample Run
 
@@ -38,16 +39,3 @@ Gathers information about user profiles. Data is stored into the custom table [p
 - Script log
 - Local file on computer
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

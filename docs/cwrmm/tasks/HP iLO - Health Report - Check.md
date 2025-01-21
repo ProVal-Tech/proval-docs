@@ -8,9 +8,10 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will check and return the health status of the HP iLO Devices. Writes the Output in a Script Log. It is a CW RMM implementation of [Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>) agnostic script.
+The script will check and return the health status of the HP iLO devices, writing the output in a script log. It is a CW RMM implementation of [Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>), an agnostic script.
 
 ## Sample Run
 
@@ -28,22 +29,22 @@ The script will check and return the health status of the HP iLO Devices. Writes
 
 | Name        | Example                     | Required | Type        | Description                                                                                     |
 |-------------|-----------------------------|----------|-------------|-------------------------------------------------------------------------------------------------|
-| `Address`   | - 192.168.2.16- 192.168.7.13:54 | True     | Text String | IP address of the iLO Device. Port number must be added if a custom port is being used.       |
-| `Username`  | Administrator               | True     | Text String | Admin user name to connect with the iLO Device.                                               |
+| `Address`   | 192.168.2.16, 192.168.7.13:54 | True     | Text String | IP address of the iLO device. Port number must be added if a custom port is being used.       |
+| `Username`  | Administrator               | True     | Text String | Admin username to connect with the iLO device.                                               |
 | `Password`  | @!#f2GW@f2!$                | True     | Text String | Password for the admin user.                                                                    |
 
 ![User Parameters Image](../../../static/img/HP-iLO---Health-Report---Check/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/HP-iLO---Health-Report---Check/image_5.png)
 
 ![Task Creation Image 2](../../../static/img/HP-iLO---Health-Report---Check/image_6.png)
 
 **Name:** `HP iLO - Health Report - Check`  
-**Description:** `The script will check and return the health status of the HP iLO Devices. Writes the Output in a Script Log.`  
+**Description:** `The script will check and return the health status of the HP iLO devices, writing the output in a script log.`  
 **Category:** Custom
 
 ![Task Creation Image 3](../../../static/img/HP-iLO---Health-Report---Check/image_7.png)
@@ -55,7 +56,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 ![Add Parameter Image 1](../../../static/img/HP-iLO---Health-Report---Check/image_8.png)
 
-This screen will appear. 
+This screen will appear.
 
 ![Add Parameter Image 2](../../../static/img/HP-iLO---Health-Report---Check/image_9.png)
 
@@ -100,7 +101,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Image](../../../static/img/HP-iLO---Health-Report---Check/image_13.png)
 
@@ -192,19 +193,19 @@ function Confirm-Output {
     $LogPath = "$WorkingDirectory/$ProjectName-log.txt"
     $ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 
-    if ( !(Test-Path $LogPath) ) {
-        throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+    if (!(Test-Path $LogPath)) {
+        throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
     }
-    if ( Test-Path $ErrorLogPath ) {
-        $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+    if (Test-Path $ErrorLogPath) {
+        $ErrorContent = (Get-Content -Path $ErrorLogPath)
         throw $ErrorContent
     }
 }
 
-foreach ( $ProjectName in ( 'Update-PowerShellGet', 'Get-HPiLOHealthReport' ) ) {
+foreach ($ProjectName in ('Update-PowerShellGet', 'Get-HPiLOHealthReport')) {
     $Workingpath = Write-Script -ProjectName $ProjectName
     $PS1Path = "$Workingpath/$ProjectName.ps1"
-    if ( $ProjectName -eq 'Update-PowerShellGet' ) {
+    if ($ProjectName -eq 'Update-PowerShellGet') {
         & $PS1Path
     } else {
         & $PS1Path @Parameters
@@ -243,15 +244,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

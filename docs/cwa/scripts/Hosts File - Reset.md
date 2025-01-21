@@ -8,9 +8,10 @@ tags: ['dns', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script simply renames the current host file to have OLD in the name and replaces it with a stock host file with no custom entries in it.
+This script simply renames the current host file to include OLD in the name and replaces it with a stock host file that contains no custom entries.
 
 ## Sample Run
 
@@ -18,16 +19,16 @@ This script simply renames the current host file to have OLD in the name and rep
 
 ## Dependencies
 
-This script is dependent on the following items:
+This script depends on the following items:
 - [Update EDF with Existing Host File Entries](<./Hosts File - Audit.md>)
 - Host File Contents (Extra Data Field)
 
 ## Process
 
-1. Rename existing host file to have OLD in the name
-2. Build a new host file with the default host file information inside.
-3. Perform a `ipconfig /flushdns`
-4. Update the Host File Contents EDF with the new info.
+1. Rename the existing host file to include OLD in the name.
+2. Build a new host file with the default host file information.
+3. Perform `ipconfig /flushdns`.
+4. Update the Host File Contents EDF with the new information.
 
 ## Output
 
@@ -35,16 +36,3 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
   - ![Host File Contents](../../../static/img/Hosts-File---Reset/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['security', 'software', 'web-browser', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the Web browsers installed on the agent with Internet Explorer disabled status audit since it is decommissioned on 06/15/2022.
+This dataview shows the web browsers installed on the agent with Internet Explorer disabled status audit since it was decommissioned on June 15, 2022.
 
-The browser list which is under auditing is (Mozilla Firefox | Google Chrome | Vivaldi | Waterfox | Librewolf | Opera | Brave | Iceweasel | Tor Browser | Pale Moon | Safari | Chromium).
+The list of browsers under audit includes: Mozilla Firefox, Google Chrome, Vivaldi, Waterfox, Librewolf, Opera, Brave, Iceweasel, Tor Browser, Pale Moon, Safari, and Chromium.
 
 ## Dependencies
 
@@ -25,8 +26,8 @@ The browser list which is under auditing is (Mozilla Firefox | Google Chrome | V
 | Client               | Client name of the agent              |
 | Location             | Location name of the agent            |
 | Computer             | Computer name of the agent            |
-| Operating System     | Operating system info of the agent    |
-| LastContact          | Last contact with RMM of the agent    |
+| Operating System     | Operating system information of the agent |
+| Last Contact         | Last contact with RMM of the agent    |
 | Web Browser Name     | Web browsers detected on the agent.   |
 | IE Audit             | Status of IE disabled or not          |
 
@@ -86,17 +87,3 @@ FROM
       c.computerid
   ) AS t
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

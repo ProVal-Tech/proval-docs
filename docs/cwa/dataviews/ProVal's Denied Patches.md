@@ -8,6 +8,7 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This Dataview populates information about the [Denied Patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records) after running the [Deny Patches in Default Policy From Centralized ITGLue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) script.
@@ -24,16 +25,3 @@ This Dataview populates information about the [Denied Patches](https://proval.it
 | KBID   | KBID of the Denied Patch.        |
 | Title  | Title of the denied patch.       |
 | Reason | Reason behind denying the patch.  |
-
-
-
-
-
-
-
-
-
-
-
-
-

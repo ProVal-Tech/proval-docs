@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will perform a fresh installation, or a removal and reinstallation of the CW Control agent on a Mac device.
+The script will perform a fresh installation or a removal and reinstallation of the CW Control agent on a Mac device.
 
 ## Sample Run
 
@@ -20,34 +21,23 @@ The script will perform a fresh installation, or a removal and reinstallation of
 
 | Name           | Description                                                  |
 |----------------|--------------------------------------------------------------|
-| instanceid     | instanceid of the integrated screenconnect.                 |
-| Client         | Client Name with all the spaces replaced with %20           |
-| Location       | Location Name with all the spaces replaced with %20         |
-| macdownloadurl  | Download URL generated from database to download a pkg installer |
-| SessionGUID    | GUID of the installed instance                                |
+| instanceid     | Instance ID of the integrated ScreenConnect.                 |
+| Client         | Client name with all spaces replaced with %20.              |
+| Location       | Location name with all spaces replaced with %20.            |
+| macdownloadurl | Download URL generated from the database to download a pkg installer. |
+| SessionGUID    | GUID of the installed instance.                              |
 
 ## Process
 
-1. Finds the instanceid, it is used in the installation command.
+1. Finds the instance ID, which is used in the installation command.
 2. Turns on FastTalk.
-3. Generates the Download URL.
+3. Generates the download URL.
 4. Downloads the .pkg file and defines it as executable.
-5. Removes the older instances and their traces.
-6. Executes the installation Command.
+5. Removes older instances and their traces.
+6. Executes the installation command.
 7. Verifies the installation.
-8. Updates the GUID in plugin_screenconnec_scinstalled table.
+8. Updates the GUID in the `plugin_screenconnec_scinstalled` table.
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-

@@ -8,25 +8,13 @@ tags: ['installation', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Will detect the servers with the Online Responder Feature installed.
+This document will detect the servers with the Online Responder Feature installed.
 
 ## Settings
 
 | Detection String                                                                                                                                             | Comparator | Result   | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
-| `%\{@powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Online-Cert' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%}` | Contains   | Installed | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `%{@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Online-Cert' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows        |

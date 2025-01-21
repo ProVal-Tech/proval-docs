@@ -8,6 +8,7 @@ tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script is designed to uninstall Sophos Endpoint Protection from both Mac and Windows computers. To use the script, tamper protection must be disabled on the machine beforehand.
@@ -19,14 +20,3 @@ The script is designed to uninstall Sophos Endpoint Protection from both Mac and
 ## Output
 
 - Script logs
-
-
-
-
-
-
-
-
-
-
-

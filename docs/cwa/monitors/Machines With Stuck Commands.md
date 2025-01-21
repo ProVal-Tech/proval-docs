@@ -8,11 +8,12 @@ tags: ['connectwise', 'recovery', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Identifies machines where commands from Automate and Scripts are not processing on the Agent and the count of executing stuck commands is more than 5.
+This document identifies machines where commands from Automate and scripts are not processing on the agent, particularly when the count of executing stuck commands exceeds five.
 
-Suggest restarting the agent, services, and/or Automate Server and investigate restarting.
+It suggests restarting the agent, services, and/or the Automate server as potential solutions and recommends investigating further.
 
 ## Dependency
 
@@ -21,15 +22,3 @@ Suggest restarting the agent, services, and/or Automate Server and investigate r
 ## Target
 
 - Global
-
-
-
-
-
-
-
-
-
-
-
-

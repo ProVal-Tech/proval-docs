@@ -8,11 +8,12 @@ tags: ['registry', 'security', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an autofix Script that needs to be setup with monitor @ProVal - Production - Security - Potential MimiKatz Vulnerable System. The script will disable the MimiKatz registry if the monitor finds it enabled.
+This autofix script needs to be set up with the monitor @ProVal - Production - Security - Potential MimiKatz Vulnerable System. The script will disable the MimiKatz registry if the monitor finds it enabled.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -26,27 +27,16 @@ Time Saved by Automation: 5 Minutes
 
 | Name                     | Example | Required | Description                                          |
 |--------------------------|---------|----------|------------------------------------------------------|
-| Enable Ticketing         | 1       | False    | if you want ticketing enabled then set it to 1      |
-| TicketCreationCategory    | 120     | False    | Helps in managing service board for tickets          |
+| Enable Ticketing         | 1       | False    | If you want ticketing enabled, set it to 1         |
+| TicketCreationCategory    | 120     | False    | Helps in managing the service board for tickets     |
 
 ## Process
 
-- Set the registry value for "HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest/UseLogonCredential" to 0
-- Verifies if the changes are successfully made
-- By default ticketing is enabled so sends success or failure tickets for attention.
+- Set the registry value for "HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest/UseLogonCredential" to 0.
+- Verify if the changes are successfully made.
+- By default, ticketing is enabled, so success or failure tickets are sent for attention.
 
 ## Output
 
 - Script log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-

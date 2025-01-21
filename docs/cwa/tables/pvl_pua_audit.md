@@ -8,32 +8,24 @@ tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Holds audit data from [CWM - Automate - Script - Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214)
+This document holds audit data from [CWM - Automate - Script - Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214).
 
 ## Dependencies
 
-[CWM - Automate - Script - Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214)
+The following dependency is required for this audit data:
+
+- [CWM - Automate - Script - Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214)
 
 ## Tables
 
-#### pvl_pua_audit
+### pvl_pua_audit
 
 | Column              | Type     | Explanation                              |
 |---------------------|----------|------------------------------------------|
 | ComputerID          | INT      | Primary Key, the computer ID.           |
 | Name                | VARCHAR  | Primary Key, the name of the bloatware. |
-| Category            | VARCHAR  | The Category that the pua belongs to.   |
-| DataCollectionTime  | DateTime | Data Collection Time                     |
-
-
-
-
-
-
-
-
-
-
-
+| Category            | VARCHAR  | The category that the PUA belongs to.   |
+| DataCollectionTime  | DateTime | Data collection time.                    |

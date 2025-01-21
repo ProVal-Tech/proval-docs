@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Verify if a Windows 10 PC is compatible with Windows 11.
@@ -109,7 +110,7 @@ Search and select `Set Custom Field` Function.
 ![Set Custom Field Image 2](../../../static/img/Windows-11-Compatibility-Validation/image_17.png)  
 ![Set Custom Field Image 3](../../../static/img/Windows-11-Compatibility-Validation/image_18.png)  
 
-Search and select `Windows 11 Compatible` in the `Search Custom Field` field and set `Yes` in the `Value` field and click the `Save` button.  
+Search and select `Windows 11 Compatible` in the `Search Custom Field` field, set `Yes` in the `Value` field, and click the `Save` button.  
 ![Set Custom Field Image 4](../../../static/img/Windows-11-Compatibility-Validation/image_19.png)  
 ![Set Custom Field Image 5](../../../static/img/Windows-11-Compatibility-Validation/image_20.png)  
 
@@ -133,7 +134,7 @@ Add another condition by clicking the `Add Condition` button.
 Change the logical operator to `Or` from `And`.  
 ![Change Logical Operator Image](../../../static/img/Windows-11-Compatibility-Validation/image_26.png)  
 
-In the new condition; type `Unsupported OS` in the `Input Value or Variable` field and press `Enter`.  
+In the new condition, type `Unsupported OS` in the `Input Value or Variable` field and press `Enter`.  
 ![Unsupported OS Condition Image](../../../static/img/Windows-11-Compatibility-Validation/image_27.png)  
 
 ##### Row 2c(ii) Function: Script Exit
@@ -148,7 +149,7 @@ Search and select the `Script Exit` function in the newly appeared row.
 ![Script Exit Selection Image 1](../../../static/img/Windows-11-Compatibility-Validation/image_29.png)  
 ![Script Exit Selection Image 2](../../../static/img/Windows-11-Compatibility-Validation/image_30.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![Script Exit Popup Image](../../../static/img/Windows-11-Compatibility-Validation/image_31.png)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
@@ -169,7 +170,7 @@ Search and select `Set Custom Field` Function.
 ![Set Custom Field Image 7](../../../static/img/Windows-11-Compatibility-Validation/image_17.png)  
 ![Set Custom Field Image 8](../../../static/img/Windows-11-Compatibility-Validation/image_18.png)  
 
-Search and select `Windows 11 incompatible Base` in the `Search Custom Field` field and set `%Output%` in the `Value` field and click the `Save` button.  
+Search and select `Windows 11 incompatible Base` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
 ![Set Custom Field Image 9](../../../static/img/Windows-11-Compatibility-Validation/image_34.png)  
 ![Set Custom Field Image 10](../../../static/img/Windows-11-Compatibility-Validation/image_35.png)  
 
@@ -185,16 +186,16 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 It is suggested to run the Task once per month against [Windows 10 Machines](<../groups/Windows 10 Machines.md>).
 
-- Goto `Automation` > `Tasks.`
+- Go to `Automation` > `Tasks.`
 - Search for `Windows 10 Machines` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Task Image](../../../static/img/Windows-11-Compatibility-Validation/image_39.png)  
 - This screen will appear.  
 ![Schedule Screen Image](../../../static/img/Windows-11-Compatibility-Validation/image_40.png)  
-- Select the `Schedule` button and click the calendar looking button present in front of the `Recurrence` option.  
+- Select the `Schedule` button and click the calendar icon present in front of the `Recurrence` option.  
 ![Recurrence Option Image](../../../static/img/Windows-11-Compatibility-Validation/image_41.png)  
-- Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.  
+- Select the `Month(s)` for the `Repeat`, set `1` for `Dates`, and click the `OK` button to save the schedule.  
 ![Save Schedule Image](../../../static/img/Windows-11-Compatibility-Validation/image_42.png)  
 - Click the `Select Targets` button to select the concerned target.  
 ![Select Targets Image](../../../static/img/Windows-11-Compatibility-Validation/image_43.png)  
@@ -207,15 +208,3 @@ It is suggested to run the Task once per month against [Windows 10 Machines](<..
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave). CW RMM implementation of [Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>)
+This document describes how to remove homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave). It includes the CW RMM implementation of [Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>).
 
 ## Sample Run
 
@@ -26,13 +27,13 @@ Removes homepage settings from popular Chromium-based browsers (Edge, Chrome, an
 
 | Name      | Example                                                                                       | Required | Type        | Description                                                                                                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------|----------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Target`  | - Chrome- Edge- Brave- Chrome, Edge- Edge, Brave- Chrome, Edge, Brave | False    | Text String | Name of the browser(s) to remove the Homepage from. The script will clear/remove the Homepage of all three browsers (Chrome, Edge, and Brave) if the parameter is left blank.                             |
+| `Target`  | - Chrome - Edge - Brave - Chrome, Edge - Edge, Brave - Chrome, Edge, Brave | False    | Text String | Name of the browser(s) to remove the homepage from. The script will clear/remove the homepage of all three browsers (Chrome, Edge, and Brave) if the parameter is left blank.                             |
 
 ![User Parameters](../../../static/img/Remove-Chromium-Homepage/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Remove-Chromium-Homepage/image_5.png)  
 ![Task Creation 2](../../../static/img/Remove-Chromium-Homepage/image_6.png)  
@@ -51,7 +52,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 ![Add Parameter](../../../static/img/Remove-Chromium-Homepage/image_8.png)  
 
-This screen will appear.  
+This screen will appear.
 
 ![Parameter Setup](../../../static/img/Remove-Chromium-Homepage/image_9.png)  
 
@@ -63,7 +64,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Remove-Chromium-Homepage/image_11.png)  
 
@@ -190,15 +191,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script log  
 ![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  
-
-
-
-
-
-
-
-
-
-
-
-

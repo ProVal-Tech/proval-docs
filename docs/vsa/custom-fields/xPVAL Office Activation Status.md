@@ -8,24 +8,13 @@ tags: ['office']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Tracks the activation status of any installed office applications.
+This document tracks the activation status of any installed Office applications.
 
 ## Details
 
 | Field Name                     | Type of Field (Machine or Organization) | Description                                        |
 |--------------------------------|------------------------------------------|----------------------------------------------------|
-| xPVAL Office Activation Status  | Mach                                     | Tracks the activation status of any installed office applications. |
-
-
-
-
-
-
-
-
-
-
-
-
+| xPVAL Office Activation Status  | Machine                                  | Tracks the activation status of any installed Office applications. |

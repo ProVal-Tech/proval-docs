@@ -8,6 +8,7 @@ tags: ['adobe', 'installation', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Installs Adobe Acrobat 2022
@@ -23,21 +24,10 @@ None
 ## Variables
 
 None  
+
 **Process**  
-Downloads installer from vendor, performs quiet norestart installation of MSI, cleans up afterwards
+Downloads the installer from the vendor, performs a quiet no-restart installation of MSI, and cleans up afterwards.
 
 ## Output
 
-none
-
-
-
-
-
-
-
-
-
-
-
-
+None

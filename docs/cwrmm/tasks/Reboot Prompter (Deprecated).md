@@ -3,14 +3,15 @@ id: '1aae141d-3854-4dde-b35f-69db58204fed'
 title: 'Reboot Prompter'
 title_meta: 'Reboot Prompter - A PowerShell Script for User Reboot Notifications'
 keywords: ['reboot', 'prompter', 'notification', 'windows', 'script']
-description: 'This document provides a detailed guide on implementing a PowerShell script that prompts users to reboot their systems. It includes instructions for creating tasks, logging actions, and handling installation of necessary components, ensuring a smooth user experience during system reboots.'
+description: 'This document provides a detailed guide on implementing a PowerShell script that prompts users to reboot their systems. It includes instructions for creating tasks, logging actions, and handling the installation of necessary components, ensuring a smooth user experience during system reboots.'
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script prompts the user to reboot with a simple yes or no prompt. It also forces a reboot after the PromptRebootCount is crossed.
+The script prompts the user to reboot with a simple yes or no prompt. It also forces a reboot after the `PromptRebootCount` is exceeded.
 
 ## Sample Run
 
@@ -47,7 +48,7 @@ In the script log message, simply type `Creating the working directory for the p
 
 ![Script Log Message](../../../static/img/Reboot-Prompter-(Deprecated)/image_7.png)
 
-### Row 2: Function: PowerShell script
+### Row 2: Function: PowerShell Script
 
 ![PowerShell Script](../../../static/img/Reboot-Prompter-(Deprecated)/image_8.png)
 
@@ -59,19 +60,19 @@ Paste in the following PowerShell script and set the expected time of script exe
 $ProjectName = 'Prompter'
 $WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
 
-if ( !(Test-Path $WorkingDirectory) ) {
+if (!(Test-Path $WorkingDirectory)) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
-        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
 
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
+if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
+    $Acl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
-    Set-Acl  $WorkingDirectory $Acl
+    Set-Acl $WorkingDirectory $Acl
 }
 ```
 
@@ -79,11 +80,11 @@ if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityRe
 
 ![Script Log](../../../static/img/Reboot-Prompter-(Deprecated)/image_6.png)
 
-In the script log message, simply type `Installing the supported .net version`.
+In the script log message, simply type `Installing the supported .NET version`.
 
 ![Installation Log](../../../static/img/Reboot-Prompter-(Deprecated)/image_10.png)
 
-### Row 4: Function: PowerShell script
+### Row 4: Function: PowerShell Script
 
 ![PowerShell Script](../../../static/img/Reboot-Prompter-(Deprecated)/image_8.png)
 
@@ -94,16 +95,16 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 $ProjectName = 'Prompter'
 $WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-try { 
-    $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " " 
+try {
+    $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " "
 } catch {}
 
 if (!($dotNetVersions -match "WindowsDesktop/.App 6")) {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     (New-Object System.Net.WebClient).DownloadFile("https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/6.0.6/windowsdesktop-runtime-6.0.6-win-x64.exe", "$WorkingDirectory/windowsdesktop-runtime-6.0.6-win-x64.exe")
     Start-Process -FilePath "$WorkingDirectory/windowsdesktop-runtime-6.0.6-win-x64.exe" -ArgumentList "/quiet", "/norestart" -NoNewWindow -Wait
-    try { 
-        $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " " 
+    try {
+        $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " "
     } catch {}
     if (($dotNetVersions -match "WindowsDesktop/.App 6")) {
         return "Successfully installed."
@@ -133,7 +134,7 @@ Add a new row by clicking on the Add row button.
 
 ![Add Row](../../../static/img/Reboot-Prompter-(Deprecated)/image_15.png)
 
-In the script exit message, simply type `The supported .net version has failed to install.`
+In the script exit message, simply type `The supported .NET version has failed to install.`
 
 ![Script Exit Message](../../../static/img/Reboot-Prompter-(Deprecated)/image_16.png)
 
@@ -149,7 +150,7 @@ In the script log message, simply type `%Output% Creating the Prompter.ps1 file 
 
 ![Set Pre-Defined Variable](../../../static/img/Reboot-Prompter-(Deprecated)/image_18.png)
 
-Click on Custom Field > Choose RebootForceTimeDelaySeconds. Then set the variable name as 'RebootForceTimeDelaySeconds'.
+Click on Custom Field > Choose `RebootForceTimeDelaySeconds`. Then set the variable name as `RebootForceTimeDelaySeconds`.
 
 ![Variable Name](../../../static/img/Reboot-Prompter-(Deprecated)/image_19.png)
 
@@ -157,7 +158,7 @@ Click on Custom Field > Choose RebootForceTimeDelaySeconds. Then set the variabl
 
 ![Set Pre-Defined Variable](../../../static/img/Reboot-Prompter-(Deprecated)/image_20.png)
 
-Click on Custom Field > Choose RebootPromptCount. Then set the variable name as 'RebootPromptCount'.
+Click on Custom Field > Choose `RebootPromptCount`. Then set the variable name as `RebootPromptCount`.
 
 ![Variable Name](../../../static/img/Reboot-Prompter-(Deprecated)/image_21.png)
 
@@ -165,7 +166,7 @@ Click on Custom Field > Choose RebootPromptCount. Then set the variable name as 
 
 ![Set Pre-Defined Variable](../../../static/img/Reboot-Prompter-(Deprecated)/image_22.png)
 
-Click on Custom Field > Choose Prompter_Title. Then set the variable name as 'Prompter_Title'.
+Click on Custom Field > Choose `Prompter_Title`. Then set the variable name as `Prompter_Title`.
 
 ![Variable Name](../../../static/img/Reboot-Prompter-(Deprecated)/image_23.png)
 
@@ -173,7 +174,7 @@ Click on Custom Field > Choose Prompter_Title. Then set the variable name as 'Pr
 
 ![Set Pre-Defined Variable](../../../static/img/Reboot-Prompter-(Deprecated)/image_24.png)
 
-Click on Custom Field > Choose Prompter_Timeout. Then set the variable name as 'Prompter_Timeout'.
+Click on Custom Field > Choose `Prompter_Timeout`. Then set the variable name as `Prompter_Timeout`.
 
 ![Variable Name](../../../static/img/Reboot-Prompter-(Deprecated)/image_25.png)
 
@@ -181,7 +182,7 @@ Click on Custom Field > Choose Prompter_Timeout. Then set the variable name as '
 
 ![Set Pre-Defined Variable](../../../static/img/Reboot-Prompter-(Deprecated)/image_26.png)
 
-Click on Custom Field > Choose Prompter_HeaderImage. Then set the variable name as 'Prompter_HeaderImage'.
+Click on Custom Field > Choose `Prompter_HeaderImage`. Then set the variable name as `Prompter_HeaderImage`.
 
 ![Variable Name](../../../static/img/Reboot-Prompter-(Deprecated)/image_27.png)
 
@@ -189,7 +190,7 @@ Click on Custom Field > Choose Prompter_HeaderImage. Then set the variable name 
 
 ![Set Pre-Defined Variable](../../../static/img/Reboot-Prompter-(Deprecated)/image_28.png)
 
-Click on Custom Field > Choose Prompter_Icon. Then set the variable name as 'Prompter_Icon'.
+Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as `Prompter_Icon`.
 
 ![Variable Name](../../../static/img/Reboot-Prompter-(Deprecated)/image_29.png)
 
@@ -198,7 +199,7 @@ Click on Custom Field > Choose Prompter_Icon. Then set the variable name as 'Pro
 ![Create File](../../../static/img/Reboot-Prompter-(Deprecated)/image_30.png)
 
 Create a file.  
-**Path:** C:/ProgramData/_Automation/app/Prompter/Prompter.ps1
+**Path:** `C:/ProgramData/_Automation/app/Prompter/Prompter.ps1`
 
 ![Create File Path](../../../static/img/Reboot-Prompter-(Deprecated)/image_31.png)
 
@@ -228,7 +229,7 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
             }
         }
     }
-    $PromptMessage = "Would you like to restart now? If you choose to not reboot at this time you will be prompted $TimePrompted more times before being forced to reboot."
+    $PromptMessage = "Would you like to restart now? If you choose not to reboot at this time, you will be prompted $TimesPrompted more times before being forced to reboot."
     $loggedUsers = Get-CimInstance -Class Win32_ComputerSystem | Select-Object -ExpandProperty UserName
     if ($null -eq $loggedUsers) {
         Write-Output "No user logged in"
@@ -236,7 +237,7 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
     }
     Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
     if (!(Test-Path -Path $EXEPath)) {
-        Write-Output "No pre-downloaded app exists and the script $EXEURL failed to download. Exiting."  
+        Write-Output "No pre-downloaded app exists and the script $EXEURL failed to download. Exiting."
         return 1
     }
     if ($LASTEXITCODE -eq 1) {
@@ -249,31 +250,31 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
     $Title = "@Prompter_Title@"
     $Theme = 'dark'
     $ButtonType = 'Yes No'
-    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds Seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot.  Thank you!"
+    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot. Thank you!"
     $Param = "-m `"$PromptMessage`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
     $Result = cmd.exe /c "$EXEPath $Param"
     $CurrentDate = Get-Date -Format "yyyy-MM-dd hh:mm:ss"
     $Output = "User Action: " + $Result + "`r`n" + "User Action Date Time: " + $CurrentDate
     $Output | Out-File "C:/ProgramData/_Automation/app/Prompter/Prompter_UserAction.txt" -Append
     if ($Result -contains 'Yes') {
-        Write-Output " The end user has authorized Restarting computer" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+        Write-Output "The end user has authorized restarting the computer" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
     }
     if ($Result -notcontains 'Yes') {
         if ($TimesPrompted -eq $proval_RebootPromptCount) {
-            Write-Output " The threshold met. Sending force reboot prompt" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+            Write-Output "The threshold met. Sending force reboot prompt" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
             $ButtonType = 'OK'
             $Param = "-m `"$Message`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
             $Result = cmd.exe /c "$EXEPath $Param"
-            $TimesPrompted = 0 
+            $TimesPrompted = 0
             $TimesPrompted | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt'
         } else {
             $TimesPrompted++
-            Write-Output " Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+            Write-Output "Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
             $TimesPrompted | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt'
         }
     }
 } else {
-    Write-Output " The operating system is not Windows 10 or 11." | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+    Write-Output "The operating system is not Windows 10 or 11." | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
 }
 ```
 
@@ -346,7 +347,7 @@ $TaskName = 'Reboot Prompter'
 $Description = 'Running Reboot prompter to send the prompt'
 $ProjectName = 'Prompter'
 $WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-$TaskFile = "$WorkingDirectory/$ProjectName.ps1" 
+$TaskFile = "$WorkingDirectory/$ProjectName.ps1"
 $TaskCheck = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
 
 if ($TaskCheck) {
@@ -354,11 +355,11 @@ if ($TaskCheck) {
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 
-$Action = New-ScheduledTaskAction -Execute 'cmd.exe' -WorkingDirectory $WorkingDirectory -Argument  ('/c start /min "" Powershell' + ' -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden' + " -File ""$($TaskFile)""")
+$Action = New-ScheduledTaskAction -Execute 'cmd.exe' -WorkingDirectory $WorkingDirectory -Argument ('/c start /min "" Powershell -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden -File ""$($TaskFile)""')
 $TriggerTime = (Get-Date).AddMinutes(1)
 $Trigger = New-ScheduledTaskTrigger -Once -At $TriggerTime
 $Settings = New-ScheduledTaskSettingsSet
-$Principal = New-ScheduledTaskPrincipal -GroupId ( ( New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545') ).Translate( [System.Security.Principal.NTAccount] ).Value )
+$Principal = New-ScheduledTaskPrincipal -GroupId ((New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545')).Translate([System.Security.Principal.NTAccount]).Value)
 
 try {
     Register-ScheduledTask -Action $Action -Trigger $Trigger -TaskName $TaskName -Description $Description -Settings $Settings -Principal $Principal
@@ -384,7 +385,7 @@ In the script log message, simply type `%output%`.
 
 ### Row 20a: Condition: Custom Field
 
-In the IF part, enter `@RebootPromptCount@` in the right box of the "Custom Field" part where the custom field is 'Prompter_Counter'.
+In the IF part, enter `@RebootPromptCount@` in the right box of the "Custom Field" part where the custom field is `Prompter_Counter`.
 
 ![Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_38.png)
 
@@ -423,7 +424,7 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_Counter` field.
 
-**Custom Field:** Prompter_Counter  
+**Custom Field:** `Prompter_Counter`  
 **Value:** `%output%`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_39.png)
@@ -448,7 +449,7 @@ In the IF part, enter `Task created successfully` in the right box of the "Outpu
 
 ### Row 23b.1: Condition: Custom Field
 
-In the IF part, enter `0` in the right box of the "Custom Field" part where the custom field is 'Prompter_Counter'.
+In the IF part, enter `0` in the right box of the "Custom Field" part where the custom field is `Prompter_Counter`.
 
 ![Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_41.png)
 
@@ -487,7 +488,7 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_Logging` field.
 
-**Custom Field:** Prompter_Logging  
+**Custom Field:** `Prompter_Logging`  
 **Value:** `%output%`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_44.png)
@@ -517,7 +518,7 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_UserAction` field.
 
-**Custom Field:** Prompter_UserAction  
+**Custom Field:** `Prompter_UserAction`  
 **Value:** `%output%`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_44.png)
@@ -528,7 +529,7 @@ Add a new row by clicking on the Add row button. Set Function to command prompt.
 
 ![Add Row](../../../static/img/Reboot-Prompter-(Deprecated)/image_45.png)
 
-Paste in the following CommandPrompt script and set the expected time of script execution to 1800 seconds.
+Paste in the following Command Prompt script and set the expected time of script execution to 1800 seconds.
 
 ```bash
 shutdown -r -t @RebootForceTimeDelaySeconds@
@@ -540,7 +541,7 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_RebootPending` field.
 
-**Custom Field:** Prompter_RebootPending  
+**Custom Field:** `Prompter_RebootPending`  
 **Value:** `False`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_46.png)
@@ -549,7 +550,7 @@ In this window, search for the `Prompter_RebootPending` field.
 
 Add a new row by clicking on the Add row button.
 
-Set Function Script Exit and keep it empty so that script exits normally.
+Set Function Script Exit and keep it empty so that the script exits normally.
 
 ![Script Exit](../../../static/img/Reboot-Prompter-(Deprecated)/image_47.png)
 
@@ -591,7 +592,7 @@ for ($j = 0; $j -lt 3; $j++) {
                 Start-Sleep -Seconds 600
             }
             if ($i -eq 2) {
-                Write-Output "The Task $TaskName will automatically recreate during next run."
+                Write-Output "The Task $TaskName will automatically recreate during the next run."
             }
         }
     } else {
@@ -599,7 +600,7 @@ for ($j = 0; $j -lt 3; $j++) {
         Start-Sleep -Seconds 600
     }
     if ($j -eq 2) {
-        Write-Output "The Task $TaskName will automatically recreate during next run."
+        Write-Output "The Task $TaskName will automatically recreate during the next run."
     }
 }
 ```
@@ -647,7 +648,7 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_Counter` field.
 
-**Custom Field:** Prompter_Counter  
+**Custom Field:** `Prompter_Counter`  
 **Value:** `%output%`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_44.png)
@@ -675,7 +676,7 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_Logging` field.
 
-**Custom Field:** Prompter_Logging  
+**Custom Field:** `Prompter_Logging`  
 **Value:** `%output%`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_44.png)
@@ -703,28 +704,17 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 
 In this window, search for the `Prompter_UserAction` field.
 
-**Custom Field:** Prompter_UserAction  
+**Custom Field:** `Prompter_UserAction`  
 **Value:** `%output%`
 
 ![Set Custom Field](../../../static/img/Reboot-Prompter-(Deprecated)/image_44.png)
 
 ### Row 24: Complete
 
-Once all items are added, please save the task. The final task should look like the below screenshot.
+Once all items are added, please save the task. The final task should look like the below screenshots.
 
 ![Final Task 1](../../../static/img/Reboot-Prompter-(Deprecated)/image_53.png)
 
 ![Final Task 2](../../../static/img/Reboot-Prompter-(Deprecated)/image_54.png)
 
 ![Final Task 3](../../../static/img/Reboot-Prompter-(Deprecated)/image_55.png)
-
-
-
-
-
-
-
-
-
-
-

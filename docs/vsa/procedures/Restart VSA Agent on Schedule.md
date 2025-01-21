@@ -8,29 +8,18 @@ tags: ['recovery']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Allows VSA Agents to come back online after a service failure on their own, without user intervention. Includes a deletion script that undoes this process.
+This document allows VSA Agents to come back online after a service failure on their own, without user intervention. It includes a deletion script that can undo this process.
 
 ## Associated Content
 
 | Content                                                                                     | Type            | Function                      |
 |---------------------------------------------------------------------------------------------|-----------------|-------------------------------|
 | [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) | Agent Procedure  | Creates the scheduled task    |
-| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](<./Scheduled Task for Agent Restart - Remove.md>) | Agent Procedure  | Removes the Scheduled task    |
+| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](<./Scheduled Task for Agent Restart - Remove.md>) | Agent Procedure  | Removes the scheduled task    |
 
 ## Implementation
 
-Import both XMLs into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) to point to the proper VSA service name. Use the getVariable `#serviceName#` for this. Schedule / deploy procedures.
-
-
-
-
-
-
-
-
-
-
-
-
+Import both XML files into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) to point to the correct VSA service name. Use the variable `#serviceName#` for this. Finally, schedule and deploy the procedures.

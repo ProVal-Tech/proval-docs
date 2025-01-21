@@ -8,9 +8,10 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor is created to fetch the latest version of the DUO Authentication, with the packageID = `DuoSecurity.Duo2FAAuthenticationforWindows`. The monitor will update a system property with the latest version available through WinGet to ensure the system is able to tell what machines are out of date. This system property will get updated Monthly.
+This monitor is created to fetch the latest version of the DUO Authentication, with the package ID `DuoSecurity.Duo2FAAuthenticationforWindows`. The monitor will update a system property with the latest version available through WinGet to ensure the system can identify which machines are out of date. This system property will be updated monthly.
 
 ## Dependencies
 
@@ -20,21 +21,8 @@ This monitor is created to fetch the latest version of the DUO Authentication, w
 
 Global - Should be run without explicitly defined targets.
 
-This script is only targeted to one machine to fetch the Application's latest version.
+This script is only targeted to one machine to fetch the application's latest version.
 
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
-
-
-
-
-
-
-
-
-
-
-
-
-

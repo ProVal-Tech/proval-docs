@@ -8,14 +8,15 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The custom table stores the information of the repaired computers.
+The custom table stores information about repaired computers.
 
 ## Dependencies
 
 - [CWM - Automate - Script - Track Repaired Agents](<../scripts/Track Repaired Agents.md>)
-- [CWM - Automate - Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
+- [CWM - Automate - Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)
 
 ## Tables
 
@@ -23,22 +24,10 @@ The custom table stores the information of the repaired computers.
 
 | Column       | Type     | Explanation         |
 |--------------|----------|---------------------|
-| clientid    | int      | clientid            |
-| locationid   | int      | locationid          |
-| computerid   | int      | computerid          |
+| clientid    | int      | Client ID           |
+| locationid   | int      | Location ID         |
+| computerid   | int      | Computer ID         |
 | client       | varchar  | Client Name         |
 | location     | varchar  | Location Name       |
 | computer     | varchar  | Computer Name       |
 | RepairTime   | datetime | Agent Repair Time   |
-
-
-
-
-
-
-
-
-
-
-
-

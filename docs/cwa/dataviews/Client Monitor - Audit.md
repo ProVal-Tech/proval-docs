@@ -8,28 +8,17 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview provides a monitor list based on a client level, it shows a list of the Monitors applied to each client that are currently scheduled on that client's agents.
+This dataview provides a monitor list at the client level. It shows a list of the monitors applied to each client that are currently scheduled on that client's agents.
 
 ## Columns
 
 | Column                | Description                                         |
 |----------------------|-----------------------------------------------------|
-| Client Name          | Client Name.                                       |
+| Client Name          | Name of the client.                                 |
 | Monitor Name         | Name of the monitors applied to the agents.        |
 | Monitor Type         | The type of monitor applied.                        |
 | Alert Template Name   | Alert template attached to the monitor.            |
-| Ticket Category      | Ticket category to show applied to the monitor.    |
-
-
-
-
-
-
-
-
-
-
-
-
+| Ticket Category      | Ticket category associated with the monitor.       |

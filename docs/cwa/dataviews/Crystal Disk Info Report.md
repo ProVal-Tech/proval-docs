@@ -8,9 +8,10 @@ tags: ['disk', 'performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script. It's not necessary for all the disks to show value for all the columns/properties as different drive models can return slightly different properties/results.
+Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script. It is not necessary for all disks to show values for all columns/properties, as different drive models can return slightly different properties/results.
 
 ## Dependencies
 
@@ -21,9 +22,9 @@ Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk In
 
 | Column                   | Description                                                    |
 |-------------------------|---------------------------------------------------------------|
-| clientid                | Clientid (Hidden)                                           |
-| locationid              | LocationID (Hidden)                                        |
-| Computerid              | Computerid                                                 |
+| clientid                | Client ID (Hidden)                                           |
+| locationid              | Location ID (Hidden)                                        |
+| Computerid              | Computer ID                                                 |
 | Client                  | Client Name                                                |
 | Location                | Location Name                                              |
 | Computer                | Computer Name                                              |
@@ -42,7 +43,7 @@ Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk In
 | Interface               | Interface of the Disk                                      |
 | Major Version           | Major Version of the Interface                              |
 | Minor Version           | Minor Version of the Interface                              |
-| Transfer Mode           | Transfer Mode(s) of the disk returned by the Crystal Disk Info Tool |
+| Transfer Mode           | Transfer Mode(s) of the Disk returned by the Crystal Disk Info Tool |
 | Power On Hours          | Power On Hours                                            |
 | Power On Count          | Power On Count                                            |
 | Host Reads              | Host Reads                                                |
@@ -60,16 +61,3 @@ Dataview displays the data grabbed by the [EPM - Disk - Script - Crystal Disk In
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Crystal-Disk-Info-Report/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

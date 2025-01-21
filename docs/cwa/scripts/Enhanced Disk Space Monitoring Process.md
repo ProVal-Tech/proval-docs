@@ -8,6 +8,7 @@ tags: ['cleanup', 'disk', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script serves as an autofix for the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<../monitors/Agent - Enhanced Drive Space Monitor.md>). Here are the key points and functionality of this autofix script:
@@ -17,7 +18,7 @@ The script serves as an autofix for the [EPM - Disk - Internal Monitor - ProVal 
    - The script keeps monitoring the machine until the drive space goes below the Lower Threshold.
 
 2. **Disk Cleanup and Ticket Creation:**
-   - The script continues to reschedule itself for the specific computer until the drive space falls below the Lower Threshold (Threshold).
+   - The script continues to reschedule itself for the specific computer until the drive space falls below the Lower Threshold.
    - Once the drive space falls below the Lower Threshold, the script executes a disk cleanup process.
    - If necessary, the script creates a ticket to alert administrators or responsible parties about the low drive space condition.
 
@@ -38,7 +39,7 @@ The script serves as an autofix for the [EPM - Disk - Internal Monitor - ProVal 
 
 The script is designed to run from the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<../monitors/Agent - Enhanced Drive Space Monitor.md>) monitor set only and should not be executed manually against any machine except for the first time to set the environment.
 
-After importing the script it should either be debugged or run against any computer in the environment with 1 in the user parameter `SetEnvironment`.
+After importing the script, it should either be debugged or run against any computer in the environment with `1` in the user parameter `SetEnvironment`.
 
 ![Image 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_1.png)
 
@@ -51,38 +52,38 @@ After importing the script it should either be debugged or run against any compu
 
 ## Variables
 
-| Name                | Description                                                                                                          |
-|---------------------|----------------------------------------------------------------------------------------------------------------------|
-| STATUS              | Status returned by the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<../monitors/Agent - Enhanced Drive Space Monitor.md>) monitor set. (Success/Failure) |
-| DriveLetter         | Drive Letter returned by the monitor set.                                                                           |
-| DriveSize           | Size of the concerned drive in MB.                                                                                 |
-| InitialFree         | Free drive space in MB before performing the disk cleanup.                                                         |
-| sojicomment         | Result returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>) script. |
-| finishstatus        | Finish Status returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>) script. (True/False) |
-| SojiFailureComment   | Failures returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>) script if any. |
-| nowfree             | Free drive space in MB after performing the disk cleanup.                                                          |
-| freed               | Amount of drive space in MB freed after performing the disk cleanup.                                               |
+| Name                  | Description                                                                                                          |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------|
+| STATUS                | Status returned by the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<../monitors/Agent - Enhanced Drive Space Monitor.md>) monitor set. (Success/Failure) |
+| DriveLetter           | Drive Letter returned by the monitor set.                                                                           |
+| DriveSize             | Size of the concerned drive in MB.                                                                                 |
+| InitialFree           | Free drive space in MB before performing the disk cleanup.                                                         |
+| sojicomment           | Result returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>) script. |
+| finishstatus          | Finish Status returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>) script. (True/False) |
+| SojiFailureComment    | Failures returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>) script, if any. |
+| nowfree               | Free drive space in MB after performing the disk cleanup.                                                          |
+| freed                 | Amount of drive space in MB freed after performing the disk cleanup.                                               |
 | TicketCreationCategory | Ticket Category ID for the ticket to create.                                                                      |
-| TicketVariable      | Stores the ExistingTicketid, TicketSubject, and TicketBody Variable for the concerned drive.                       |
-| ExistingTicketID    | TicketID of the existing ticket.                                                                                    |
-| TicketSubject       | Subject of the ticket to create.                                                                                    |
-| TicketBody          | Ticket Summary or comment to add to the ticket.                                                                    |
-| Reschedule          | Script sets this variable to 1 while rescheduling itself so that it can be checked whether it's the first run or not at the next execution. |
-| OfflineExecutions    | Stores the number of times the script had executed consecutively for the computer when it's offline.                |
-| Monitorid           | ID of the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<../monitors/Agent - Enhanced Drive Space Monitor.md>) monitor set to set to the ticket. |
+| TicketVariable        | Stores the ExistingTicketID, TicketSubject, and TicketBody Variable for the concerned drive.                       |
+| ExistingTicketID      | TicketID of the existing ticket.                                                                                    |
+| TicketSubject         | Subject of the ticket to create.                                                                                    |
+| TicketBody            | Ticket Summary or comment to add to the ticket.                                                                    |
+| Reschedule            | Script sets this variable to `1` while rescheduling itself so that it can be checked whether it's the first run or not at the next execution. |
+| OfflineExecutions      | Stores the number of times the script had executed consecutively for the computer when it's offline.                |
+| Monitorid             | ID of the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<../monitors/Agent - Enhanced Drive Space Monitor.md>) monitor set to set to the ticket. |
 
 ### Global Parameters
 
 | Name                          | Default | Required | Description                                                                                                                                                                                                                                     |
 |-------------------------------|---------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ServerTicketCreationCategory  | 0       | False    | Setting to a predefined ticket creation category will set a specified ticket creation category for server-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](<../monitors/Agent - Enhanced Drive Space Monitor.md>) document. 0 in the value represents that this global property is not in use. |
-| WorkstationTicketCreationCategory | 0       | False    | Setting to a predefined ticket creation category will set a specified ticket creation category for workstation-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](<../monitors/Agent - Enhanced Drive Space Monitor.md>) document. 0 in the value represents that this global property is not in use. |
+| ServerTicketCreationCategory  | 0       | False    | Setting to a predefined ticket creation category will set a specified ticket creation category for server-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](<../monitors/Agent - Enhanced Drive Space Monitor.md>) document. `0` in the value represents that this global property is not in use. |
+| WorkstationTicketCreationCategory | 0       | False    | Setting to a predefined ticket creation category will set a specified ticket creation category for workstation-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](<../monitors/Agent - Enhanced Drive Space Monitor.md>) document. `0` in the value represents that this global property is not in use. |
 
 ### User Parameters
 
 | Name            | Example | Required                  | Description                                                                                                                                       |
 |-----------------|---------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| SetEnvironment   | 1       | True for first run only   | Set it to 1 for the first run after importing the script. This will create the EDFs and System Properties needed for the solution.              |
+| SetEnvironment   | 1       | True for first run only   | Set it to `1` for the first run after importing the script. This will create the EDFs and System Properties needed for the solution.              |
 
 ### Script States
 
@@ -133,7 +134,7 @@ Serial Number: \<SerialNumber>
 
 **\<SojiComment> can be different and it depends on the results returned by the disk cleanup script [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>)**
 
-**For a successful Run of the script:**
+**For a successful run of the script:**
 
 ```
 The tool Soji (Temp File Cleanup Application) was run and freed up @freed@MB of storage space.
@@ -141,7 +142,7 @@ A brief report of large files, user profiles, and program files taking up space 
 (Note: if there is no attachment, it is possible that the attachment did not sync over to your PSA. In this case, please navigate to the UPLOADS folder within the LTShare to access the logs.)
 ```
 
-**For Failure of the script:**
+**For failure of the script:**
 
 ```
 The tool Soji (Temp File Cleanup Application) was run and failed due to an unexpected error. Please refer to the internal notes to determine the root cause.
@@ -158,7 +159,7 @@ If this contains errors then either the .NET installation package could not be d
 
 The results from Soji's execution were:
 \<ResultReturnedBytheDiskCleanupToolSoji>
-If this contains a 1 then one of the following errors may have occurred:
+If this contains a `1`, then one of the following errors may have occurred:
 - Soji could not be downloaded and was not present from a previous run
 - Soji was blocked or quarantined
 
@@ -172,15 +173,3 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
 
 ![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
-
-
-
-
-
-
-
-
-
-
-
-

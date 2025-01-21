@@ -8,26 +8,15 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-Shows all endpoints that have succeeded the Windows 10 Feature Upgrade.
+This document shows all endpoints that have successfully completed the Windows 10 Feature Upgrade.
 
 # View Filters
 
-List all filters applied to this view
+Below is a list of all filters applied to this view:
 
 | Filter Name                                                                                      | Advanced Filter? | Filter Value |
 |--------------------------------------------------------------------------------------------------|------------------|--------------|
-| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Y                | "Success"    |
-
-
-
-
-
-
-
-
-
-
-
-
+| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Yes              | "Success"    |

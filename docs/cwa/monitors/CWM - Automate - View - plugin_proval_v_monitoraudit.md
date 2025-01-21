@@ -8,9 +8,10 @@ tags: ['database']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores data about monitors and their configuration.
+This document stores data about monitors and their configuration.
 
 ## Dependencies
 
@@ -27,8 +28,8 @@ Stores data about monitors and their configuration.
 | Monitor                | VARCHAR     | The name of the monitor.                         |
 | Group Path             | TEXT        | The path of the groups that the monitor is assigned to. |
 | Next Scan              | VARCHAR     | The next time the monitor will scan.            |
-| Disabled               | VARCHAR     | Yes / No / N/A for if the monitor is disabled.  |
-| Monitor Type           | VARCHAR     | The type of monitor (Remote or Internal)        |
+| Disabled               | VARCHAR     | Yes / No / N/A for whether the monitor is disabled.  |
+| Monitor Type           | VARCHAR     | The type of monitor (Remote or Internal).       |
 | AlertMessage           | MEDIUMTEXT  | The associated alert message.                    |
 | Alert Template         | VARCHAR     | The associated alert template.                   |
 | AlertID                | INT         | The associated alert ID.                         |
@@ -37,16 +38,3 @@ Stores data about monitors and their configuration.
 | Category Name           | VARCHAR     | The category assigned to the alert.              |
 | Service Board           | VARCHAR     | The service board that the alert will post to.  |
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
-
-
-
-
-
-
-
-
-
-
-
-
-

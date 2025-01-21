@@ -8,11 +8,12 @@ tags: ['sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script helps to override the monitor which is being applied by a group and where you would like to set the alert action different than the existing group agents.
+This script helps to override the monitor settings applied by a group, allowing you to set a different alert action than the existing group agents.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -22,22 +23,10 @@ Time Saved by Automation: 5 Minutes
 
 | Name              | Example                                         | Required | Description                                         |
 |-------------------|-------------------------------------------------|----------|-----------------------------------------------------|
-| Monitor Name      | ProVal - Submitted - AD Recycle Bin State Check | True     | Provide the exact same monitor name                  |
-| Alert Template     | Default - Do Nothing                            | True     | The alert name which you would like to set on the agent |
+| Monitor Name      | ProVal - Submitted - AD Recycle Bin State Check | True     | Provide the exact name of the monitor                |
+| Alert Template     | Default - Do Nothing                            | True     | The alert name that you would like to set on the agent |
 
 ## Process
 
-- Takes input of Monitor Name and the alert template from the user
-- Executes SQL queries to set the override and the alert template
-
-
-
-
-
-
-
-
-
-
-
-
+- Takes input of the Monitor Name and the Alert Template from the user.
+- Executes SQL queries to set the override and the alert template.

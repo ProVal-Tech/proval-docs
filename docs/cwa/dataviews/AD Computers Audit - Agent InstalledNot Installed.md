@@ -8,9 +8,10 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview displays all AD machines from the AD plugin and gives details about whether the CWA agent is installed.
+This dataview displays all AD machines from the AD plugin and provides details about whether the CWA agent is installed.
 
 ## Columns
 
@@ -19,23 +20,11 @@ This dataview displays all AD machines from the AD plugin and gives details abou
 | Client Name                        | Client Name                                         |
 | Location Name                      | Location Name                                       |
 | Computer Name (Automate)          | Computer Name in Automate                           |
-| LastContact                        | Last contact of agent with Automate                 |
-| ReleaseID                          | Release ID information of agent in automate         |
-| Operating System                   | Operating System information of agent in automate    |
+| Last Contact                       | Last contact of agent with Automate                 |
+| Release ID                         | Release ID information of agent in Automate         |
+| Operating System                   | Operating System information of agent in Automate    |
 | Domain Name                        | Domain information of the agent                     |
 | Computer Name (AD)                | Computer name in Active Directory plugin info       |
 | When Changed                       | When agent was last changed in AD plugin            |
 | When Created                       | When agent was created in AD                        |
-| LastLogon                          | Last logon detail of agent in AD                    |
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Logon                         | Last logon detail of agent in AD                    |

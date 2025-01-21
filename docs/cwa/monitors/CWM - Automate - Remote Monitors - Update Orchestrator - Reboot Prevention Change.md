@@ -8,14 +8,16 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor set renames the reboot file at "C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot" in order to prevent rebooting the computer by the Windows update orchestrator service. It will also enable the `UsoSvc` service if it's disabled.
+The monitor set renames the reboot file at `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot` in order to prevent the Windows Update Orchestrator service from rebooting the computer. It will also enable the `UsoSvc` service if it's disabled.
 
 ### What will change?
+
 This monitor will rename the reboot file at  
-"C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot"  
-& Keep the Windows Update Orchestrator Service Enabled + Running
+`C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot`  
+and keep the Windows Update Orchestrator Service enabled and running.
 
 *This action will happen regardless of what alert template is set against the monitor.*  
 *Monitors that make a change to the environment can be difficult to audit actions taken. Use with caution.*
@@ -26,11 +28,11 @@ This monitor will rename the reboot file at
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default - Create Automate Ticket  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
-|--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | Does Not Contain | 600      | Failed to rename the reboot file |
+| Check Action | Server Address | Check Type | Execute Info | Comparator       | Interval | Result                        |
+|--------------|----------------|------------|---------------|------------------|----------|-------------------------------|
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | Does Not Contain  | 600      | Failed to rename the reboot file |
 
 ## Target
 
@@ -39,25 +41,11 @@ Managed Windows Servers and Workstations
 ## Ticketing
 
 **Subject:**  
-Windows update Orchestrator Monitor - Failed - %ComputerName%
+Windows Update Orchestrator Monitor - Failed - %ComputerName%
 
 **Body:**  
-The reboot file at "C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.
+The reboot file at `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/reboot` failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.
 
 ## Implementation
 
 [Implement - Remote Monitor - Windows Update Orchestrator](<./Windows Update Orchestrator.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

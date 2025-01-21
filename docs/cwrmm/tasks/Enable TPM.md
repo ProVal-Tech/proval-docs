@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Initializes TPM as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used. CW RMM implementation of [Enable TPM](<../../cwa/scripts/Bitlocker - Enable TPM.md>).
+This document initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use. This guide covers the CW RMM implementation of [Enable TPM](<../../cwa/scripts/Bitlocker - Enable TPM.md>).
 
 ## Sample Run
 
@@ -26,20 +27,20 @@ Initializes TPM as a part of the provisioning process for a Trusted Platform Mod
 
 | Name                      | Example | Required | Type | Description |
 |---------------------------|---------|----------|------|-------------|
-| `AllowClear`              | 0/1     | False    | Flag | Indicates that the provisioning process clears the TPM, if necessary, to move the TPM closer to complying with latest Windows standards. |
+| `AllowClear`              | 0/1     | False    | Flag | Indicates that the provisioning process clears the TPM, if necessary, to move the TPM closer to complying with the latest Windows standards. |
 | `AllowPhysicalPresence`   | 0/1     | False    | Flag | Indicates that the provisioning process may send physical presence commands that require a user to be present in order to continue. |
-| `AllowRestart`            | 0/1     | False    | Flag | Allow the script to automatically restart or shutdown the machine. This can happen on initialization of TPM. |
+| `AllowRestart`            | 0/1     | False    | Flag | Allows the script to automatically restart or shut down the machine. This can happen during the initialization of TPM. |
 
 ![User Parameters Image](../../../static/img/Enable-TPM/image_4.png)  
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Image 1](../../../static/img/Enable-TPM/image_5.png)  
 ![Task Creation Image 2](../../../static/img/Enable-TPM/image_6.png)  
 
 **Name:** `Enable TPM`  
-**Description:** `Initializes TPM as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used.`  
+**Description:** `Initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use.`  
 **Category:** `Setup`  
 ![Task Creation Image 3](../../../static/img/Enable-TPM/image_7.png)  
 
@@ -86,7 +87,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Task Image 1](../../../static/img/Enable-TPM/image_13.png)  
 
 A blank function will appear.  
@@ -195,15 +196,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Enable-TPM/image_26.png)  
-
-
-
-
-
-
-
-
-
-
-
-

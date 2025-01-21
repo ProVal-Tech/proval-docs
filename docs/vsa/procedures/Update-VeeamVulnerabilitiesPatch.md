@@ -8,6 +8,7 @@ tags: ['installation', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Overview
 
 Patches Veeam vulnerabilities in Versions 11 and 11a: [https://www.veeam.com/kb4288](https://www.veeam.com/kb4288)
@@ -15,12 +16,12 @@ Patches Veeam vulnerabilities in Versions 11 and 11a: [https://www.veeam.com/kb4
 ## Requirements
 
 - Requires Veeam 11 or 11a. All previous versions require manual installation from ISO.
-- Requires a manual restart after the process is complete, before Veeam can be reopened.
+- A manual restart is required after the process is complete before Veeam can be reopened.
 
 ## Process
 
-- Checks for running restore operations and breaks if found.
-- Stops jobs from running during the installation.
+- Checks for running restore operations and stops if found.
+- Prevents jobs from running during the installation.
 - Downloads, unpacks, and installs the appropriate patch file for the currently installed version of Veeam.
 
 ## Payload Usage
@@ -47,14 +48,3 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM        |                     |
 | Kaseya VSA            |                     |
 | Datto RMM             |                     |
-
-
-
-
-
-
-
-
-
-
-

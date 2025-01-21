@@ -8,9 +8,10 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The internal monitor detects computers where the Microsoft 365 update channel is different as set in the Client or Computer Level `Update Channel`. The computer must have Microsoft 365 Click-to-Run installed and a managed patch policy applied.
+The internal monitor detects computers where the Microsoft 365 update channel is different from what is set in the Client or Computer Level `Update Channel`. The computer must have Microsoft 365 Click-to-Run installed and a managed patch policy applied.
 
 ## Dependencies
 
@@ -25,15 +26,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
-
-
-
-
-
-
-
-
-
-
-
-

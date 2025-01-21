@@ -8,11 +8,12 @@ tags: ['custom-fields']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is designed to reboot the endpoints based on the custom field `@ServerRebootWindowStart@`, `@ServerRebootWindowEnd@`, and `@ServerRebootWindowDay@`. If the reboot time does not fall between the windows then reboot will not trigger.
+This script is designed to reboot the endpoints based on the custom fields `@ServerRebootWindowStart@`, `@ServerRebootWindowEnd@`, and `@ServerRebootWindowDay@`. If the reboot time does not fall between the defined windows, the reboot will not trigger.
 
-**NOTE:** To exclude this client from the solution, please enter 'Exclude' in the `@ServerRebootWindowDay@` and `@WorkstationRebootWindowDay@` field. That will cause the script to exit and not take any actions on the target partner.
+**NOTE:** To exclude this client from the solution, please enter 'Exclude' in the `@ServerRebootWindowDay@` and `@WorkstationRebootWindowDay@` fields. This will cause the script to exit and not take any actions on the target partner.
 
 ## Sample Run
 
@@ -27,19 +28,19 @@ This script is designed to reboot the endpoints based on the custom field `@Serv
 
 ### Create Task
 
-Force Reboot Server With Reboot Windows Verification: To implement this script, please create a new "Script Editor" style script in the system.
+To implement this script, please create a new "Script Editor" style script in the system.
 
 ![Create Task Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_3.png)
 
-Name: Force Reboot Server With Reboot Windows Verification  
-Description: This script is designed to reboot the endpoints based on the custom field `@ServerRebootWindowStart@`, `@ServerRebootWindowEnd@`, and `@ServerRebootWindowDay@`. If the reboot time does not fall between the windows then reboot will not trigger.  
-Category: Maintenance
+- **Name:** Force Reboot Server With Reboot Windows Verification  
+- **Description:** This script is designed to reboot the endpoints based on the custom fields `@ServerRebootWindowStart@`, `@ServerRebootWindowEnd@`, and `@ServerRebootWindowDay@`. If the reboot time does not fall between the defined windows, the reboot will not trigger.  
+- **Category:** Maintenance
 
 ![Create Task Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_4.png)
 
 ## Script
 
-Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
 ![Script Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_5.png)
 
@@ -82,21 +83,21 @@ In the script log message, simply type `%output%` so that the script will send t
 ![Row 4 Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_12.png)
 ![Row 4 Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_13.png)
 
-### Row 4a: Condition: Output Contains
+#### Row 4a: Condition: Output Contains
 
-In the IF part, enter `Server` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `Server` in the right box of the "Output Does Not Contain" part.
 
 ![Row 4a Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_14.png)
 
-### Row 4b: Function: Script Log
+#### Row 4b: Function: Script Log
 
 ![Row 4b Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_10.png)
 
-In the script log message, type `The OS detected is confirmed not a Server. Please try the script 'Force Reboot Workstation with Reboot Windows Verification'. Exiting script without any action.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, type `The OS detected is confirmed not a Server. Please try the script 'Force Reboot Workstation with Reboot Windows Verification'. Exiting script without any action.` This will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 4b Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_15.png)
 
-### Row 4c: Function: Script Exit
+#### Row 4c: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
@@ -110,21 +111,21 @@ In the script exit message, leave it blank.
 
 ![Row 5 Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_12.png)
 
-### Row 5a: Condition: Custom Field Equals
+#### Row 5a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 5a Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_18.png)
 
-### Row 5b: Function: Script Log
+#### Row 5b: Function: Script Log
 
 ![Row 5b Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_10.png)
 
-In the script log message, type `Force reboot is allowed on the endpoint. Proceeding for reboot without windows validation.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, type `Force reboot is allowed on the endpoint. Proceeding for reboot without windows validation.` This will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 5b Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_19.png)
 
-### Row 5c: Function: Command Prompt (CMD) Script
+#### Row 5c: Function: Command Prompt (CMD) Script
 
 ![Row 5c Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_20.png)
 ![Row 5c Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_21.png)
@@ -137,7 +138,7 @@ Paste in the following PowerShell script and set the expected time of script exe
 shutdown -r -f -t 60
 ```
 
-### Row 5d: Function: Script Exit
+#### Row 5d: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
@@ -175,21 +176,21 @@ Select the custom field 'ServerRebootWindowDay' and set the variable 'RebootWind
 
 ![Row 9 Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_12.png)
 
-### Row 9a: Condition: Custom Field Equals
+#### Row 9a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 9a Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_28.png)
 
-### Row 9b: Function: Script Log
+#### Row 9b: Function: Script Log
 
 ![Row 9b Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_10.png)
 
-In the script log message, type `This endpoint has 'Exclude Reboot' flag checked. Exiting script without any action.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, type `This endpoint has 'Exclude Reboot' flag checked. Exiting script without any action.` This will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 9b Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_29.png)
 
-### Row 9c: Function: Script Exit
+#### Row 9c: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
@@ -203,7 +204,7 @@ In the script exit message, leave it blank.
 
 ![Row 10 Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_10.png)
 
-In the script log message, type `Verifying that machine is in approved window between @RebootWindowStart@ and @RebootWindowEnd@ (Note: 0=12:00 AM, 23=11:00 PM) and Day @RebootWindowDay@.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, type `Verifying that machine is in approved window between @RebootWindowStart@ and @RebootWindowEnd@ (Note: 0=12:00 AM, 23=11:00 PM) and Day @RebootWindowDay@.` This will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 10 Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_30.png)
 
@@ -245,21 +246,21 @@ In the script log message, simply type `%output%` so that the script will send t
 ![Row 13 Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_12.png)
 ![Row 13 Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_13.png)
 
-### Row 13a: Condition: Output Contains
+#### Row 13a: Condition: Output Contains
 
-In the IF part, enter `Machine is in reboot window` in the right box of the "Output Contain" Part.
+In the IF part, enter `Machine is in reboot window` in the right box of the "Output Contains" part.
 
 ![Row 13a Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_32.png)
 
-### Row 13b: Function: Script Log
+#### Row 13b: Function: Script Log
 
 ![Row 13b Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_10.png)
 
-In the script log message, type `Proceeding for the reboot as the reboot falls under the reboot window provided in the script.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, type `Proceeding for the reboot as the reboot falls under the reboot window provided in the script.` This will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 13b Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_33.png)
 
-### Row 13c: Function: Command Prompt (CMD) Script
+#### Row 13c: Function: Command Prompt (CMD) Script
 
 ![Row 13c Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_20.png)
 ![Row 13c Image 2](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_21.png)
@@ -272,7 +273,7 @@ Paste in the following PowerShell script and set the expected time of script exe
 shutdown -r -f -t 60
 ```
 
-### Row 13d: Function: Script Exit
+#### Row 13d: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
@@ -292,14 +293,14 @@ The complete script looks as shown below:
 
 ## Deployment
 
-This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided at the company-level custom fields.
+This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
 [CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
 
 - Go to `Automation` > `Tasks.`
-- Search for `Force Reboot Server With Reboot Windows Verification` Task.
+- Search for the `Force Reboot Server With Reboot Windows Verification` task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task Image](../../../static/img/Force-Reboot-Server-With-Reboot-Windows-Verification/image_37.png)
 
@@ -328,15 +329,3 @@ For example:
 ## Output
 
 - Task & Sequences Log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,24 +8,25 @@ tags: ['email', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket, it is designed to send the email to the email address provided in the system property.
+This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket, it is designed to send an email to the email address provided in the system property.
 
-This script sends email to two different addresses:
+This script sends emails to two different addresses:
 
-1. If the script is called by the alert template “**△ Custom - Email RAWSQL Monitor set results to ProVal**” then it will send an email to the email address set at system property “ProVal_Alerts_Email_Address” which is mostly set to “[alerts@provaltech.com](mailto:alerts@provaltech.com)”.  
-   **Note:** If the property is missing, the script will automatically set it to “[alerts@provaltech.com](mailto:alerts@provaltech.com)”, but if it is set to a different email address then it will not be modified.
+1. If the script is called by the alert template “**△ Custom - Email RAWSQL Monitor set results to ProVal**,” it will send an email to the address set in the system property “ProVal_Alerts_Email_Address,” which is typically set to “[alerts@provaltech.com](mailto:alerts@provaltech.com).”  
+   **Note:** If the property is missing, the script will automatically set it to “[alerts@provaltech.com](mailto:alerts@provaltech.com),” but if it is set to a different email address, it will not be modified.
 
-2. If the script is called by any other template then it will fetch the email address from the system property “_sysTicketDefaultEmail”.
+2. If the script is called by any other template, it will fetch the email address from the system property “_sysTicketDefaultEmail.”
 
 ## Sample Run
 
-This script should be utilized as an autofix to a monitor.
+This script should be utilized as an autofix for a monitor.
 
-## Important Notes on using this with Monitors
+## Important Notes on Using This with Monitors
 
-- Monitors can be tricky with this; in most cases, with remote monitors this will work fine. However, in some cases, internal monitors may not be compatible with this solution. This can be due to the utilization of `set @something =` in the monitor. You should avoid this in your internal RAWSQL monitors if the result is going to be to use this solution.
+- Monitors can be tricky with this; in most cases, remote monitors will work fine. However, in some cases, internal monitors may not be compatible with this solution. This can be due to the utilization of `set @something =` in the monitor. You should avoid this in your internal RAWSQL monitors if the result is going to be used with this solution.
 - If you can place your SQL inside a select statement in parentheses and it works, you should be fine (tcomps are adjusted for).
   - For instance, if `select youridentityfield from ( [your select statement] ) s Where your select computerid is equal to the computer id for the script` works, then this solution should work for you.
 
@@ -58,15 +59,3 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
-
-
-
-
-
-
-
-
-
-
-
-

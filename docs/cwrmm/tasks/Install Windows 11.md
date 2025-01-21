@@ -3,16 +3,17 @@ id: '50d6c9a0-11d6-4d2f-bbc3-47411502448e'
 title: 'Install Windows 11 Upgrade'
 title_meta: 'Install Windows 11 Upgrade'
 keywords: ['windows', 'upgrade', 'installation', 'script', 'update']
-description: 'This document outlines a PowerShell script designed to facilitate the upgrade of a Windows 10 computer to Windows 11 using the Windows update agent. It includes implementation details, sample runs, and necessary checks for compatibility and system health before proceeding with the upgrade process.'
+description: 'This document outlines a PowerShell script designed to facilitate the upgrade of a Windows 10 computer to Windows 11 using the Windows Update Agent. It includes implementation details, sample runs, and necessary checks for compatibility and system health before proceeding with the upgrade process.'
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this script is to facilitate the upgrade of a Windows 10 computer to Windows 11. The process will be managed through the [Windows update agent](https://go.microsoft.com/fwlink/?linkid=2171764), which will handle the necessary steps to complete the upgrade. It's important to note that the upgrade may require multiple restarts of the computer. Due to the potential for multiple restarts and the time-consuming nature of the upgrade, it's advisable to avoid scheduling the script during working hours unless scheduled restarts are anticipated. The entire upgrade process is anticipated to take more than 2 hours to complete.
+The purpose of this script is to facilitate the upgrade of a Windows 10 computer to Windows 11. The process will be managed through the [Windows Update Agent](https://go.microsoft.com/fwlink/?linkid=2171764), which will handle the necessary steps to complete the upgrade. It's important to note that the upgrade may require multiple restarts of the computer. Due to the potential for multiple restarts and the time-consuming nature of the upgrade, it's advisable to avoid scheduling the script during working hours unless scheduled restarts are anticipated. The entire upgrade process is anticipated to take more than 2 hours to complete.
 
-**Note:** The PowerShell script used by the task will only attempt to upgrade the Windows 11 compatible computers. The compatibility check is performed by Microsoft's [Hardware Readiness Check script](https://download.microsoft.com/download/e/1/e/e1e682c2-a2ee-46c7-ad1e-d0e38714a795/HardwareReadiness.ps1).
+**Note:** The PowerShell script used by the task will only attempt to upgrade Windows 11 compatible computers. The compatibility check is performed by Microsoft's [Hardware Readiness Check script](https://download.microsoft.com/download/e/1/e/e1e682c2-a2ee-46c7-ad1e-d0e38714a795/HardwareReadiness.ps1).
 
 ## Sample Run
 
@@ -29,13 +30,13 @@ The purpose of this script is to facilitate the upgrade of a Windows 10 computer
 
 ### Create Script
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Create Script](../../../static/img/Install-Windows-11/image_26.png)  
 ![Script Editor](../../../static/img/Install-Windows-11/image_27.png)  
 
 **Name:** Install Windows 11  
-**Description:** This script facilitates a Windows 10 to Windows 11 upgrade utilizing a Windows update agent. The process may involve multiple computer restarts and is estimated to span up to 2 hours.  
+**Description:** This script facilitates a Windows 10 to Windows 11 upgrade utilizing a Windows Update Agent. The process may involve multiple computer restarts and is estimated to span up to 2 hours.  
 **Category:** Patching  
 
 ### Script
@@ -55,10 +56,10 @@ Set `os` for both `Variable Name`.
 A dropdown menu will appear after clicking the `System Variable` text box.  
 ![System Variable Dropdown](../../../static/img/Install-Windows-11/image_31.png)  
 
-Click the dropdown menu and scroll down till you find the `Os` menu.  
+Click the dropdown menu and scroll down until you find the `Os` menu.  
 ![Select Os](../../../static/img/Install-Windows-11/image_32.png)  
 
-Click the `Os` menu dropdown button and scroll down till you find the `Product` option. Select the Product option and click the Save button to save the variable.  
+Click the `Os` menu dropdown button and scroll down until you find the `Product` option. Select the Product option and click the Save button to save the variable.  
 ![Select Product](../../../static/img/Install-Windows-11/image_33.png)  
 ![Save Variable](../../../static/img/Install-Windows-11/image_34.png)  
 
@@ -84,14 +85,14 @@ Add a new row by clicking on the Add row button.
 Select `Script Exit Function`.  
 ![Script Exit Function](../../../static/img/Install-Windows-11/image_40.png)  
 
-This `Error Message` field will appear after Selecting the `Script Exit` Function.  
+This `Error Message` field will appear after selecting the `Script Exit` Function.  
 ![Error Message Field](../../../static/img/Install-Windows-11/image_41.png)  
 
 Enter the `"The script is only compatible with Windows 10 machines."` message in the `Error Message field` and click on the `Save` button.  
 ![Save Error Message](../../../static/img/Install-Windows-11/image_42.png)  
 ![Confirmation](../../../static/img/Install-Windows-11/image_43.png)  
 
-#### Row 3 function: Script Log
+#### Row 3 Function: Script Log
 
 Add a new row by clicking on the Add row button.  
 ![Add Row for Script Log](../../../static/img/Install-Windows-11/image_44.png)  
@@ -112,10 +113,10 @@ Add a new row by clicking on the Add row button.
 Select `PowerShell Script Function`.  
 ![PowerShell Script Function](../../../static/img/Install-Windows-11/image_48.png)  
 
-The `PowerShell Script Editor` will appear on Selecting the `PowerShell Script` Function.  
+The `PowerShell Script Editor` will appear upon selecting the `PowerShell Script` Function.  
 ![PowerShell Script Editor](../../../static/img/Install-Windows-11/image_49.png)  
 
-Paste in the following `PowerShell script`, set the expected time of script execution to `7200` seconds and click on the `Save` button.
+Paste in the following `PowerShell script`, set the expected time of script execution to `7200` seconds, and click on the `Save` button.
 
 ```powershell
 #requires -RunAsAdministrator
@@ -158,7 +159,7 @@ Write-Information "`nBuild version: $buildVersion" -InformationAction Continue
 $ReadinessCheck = CompatibilityCheck
 if ($ReadinessCheck -match 'NOT CAPABLE') {
     return @"
-`n $Env:ComputerName is incompatible with windows 11 upgrade.
+`n $Env:ComputerName is incompatible with Windows 11 upgrade.
 Result returned by Compatibility check script:
 $ReadinessCheck
 Minimum system requirements: https://www.microsoft.com/en-in/windows/windows-11-specifications
@@ -211,7 +212,7 @@ Write-Information "`nTarget Download Path: $targetAssistantApp." -InformationAct
 try {
     Get-WebFile -Uri $targetDownloadUri -Path $targetAssistantApp -Clobber
 } catch {
-    return "`nFailed to download $targetDownloadUri.Reason: $($Error[0].Exception.Message)"
+    return "`nFailed to download $targetDownloadUri. Reason: $($Error[0].Exception.Message)"
 }
 
 $installAssistantLogPath = Join-Path -Path ${env:ProgramFiles(x86)} -ChildPath 'WindowsInstallationAssistant/Logs'
@@ -334,7 +335,7 @@ Restart-Computer -Force
 ![Final Script](../../../static/img/Install-Windows-11/image_50.png)  
 ![Final Confirmation](../../../static/img/Install-Windows-11/image_51.png)  
 
-### Row 5 function: Script Log
+### Row 5 Function: Script Log
 
 Add a new row by clicking on the Add row button.  
 ![Add Row for Script Log](../../../static/img/Install-Windows-11/image_44.png)  
@@ -354,10 +355,10 @@ Add a new row by clicking on the Add row button.
 Select `PowerShell Script Function`.  
 ![PowerShell Script Function](../../../static/img/Install-Windows-11/image_48.png)  
 
-The `PowerShell Script Editor` will appear on Selecting the `PowerShell Script` Function.  
+The `PowerShell Script Editor` will appear upon selecting the `PowerShell Script` Function.  
 ![PowerShell Script Editor](../../../static/img/Install-Windows-11/image_49.png)  
 
-Paste in the following `PowerShell command`, set the expected time of script execution to `305` seconds and click on the `Save` button. We are simply pausing the script here for `5` minutes to give RMM enough time to fetch the computer's information post-reboot.
+Paste in the following `PowerShell command`, set the expected time of script execution to `305` seconds, and click on the `Save` button. We are simply pausing the script here for `5` minutes to give RMM enough time to fetch the computer's information post-reboot.
 
 ```powershell
 Start-Sleep -Seconds 300
@@ -380,10 +381,10 @@ Set `os` for both `Variable Name`.
 A dropdown menu will appear after clicking the `System Variable` text box.  
 ![System Variable Dropdown](../../../static/img/Install-Windows-11/image_31.png)  
 
-Click the dropdown menu and scroll down till you find the `Os` menu.  
+Click the dropdown menu and scroll down until you find the `Os` menu.  
 ![Select Os](../../../static/img/Install-Windows-11/image_32.png)  
 
-Click the `Os` menu dropdown button and scroll down till you find the `Product` option. Select the Product option and click the Save button to save the variable.  
+Click the `Os` menu dropdown button and scroll down until you find the `Product` option. Select the Product option and click the Save button to save the variable.  
 ![Select Product](../../../static/img/Install-Windows-11/image_33.png)  
 ![Save Variable](../../../static/img/Install-Windows-11/image_34.png)  
 
@@ -409,14 +410,14 @@ Add a new row by clicking on the Add row button.
 Select `Script Exit Function`.  
 ![Script Exit Function](../../../static/img/Install-Windows-11/image_40.png)  
 
-This `Error Message` field will appear after Selecting the `Script Exit` Function.  
+This `Error Message` field will appear after selecting the `Script Exit` Function.  
 ![Error Message Field](../../../static/img/Install-Windows-11/image_41.png)  
 
-Enter the `"Script failed to upgrade the machine to windows 11."` message in the `Error Message field` and click on the `Save` button.  
+Enter the `"Script failed to upgrade the machine to Windows 11."` message in the `Error Message field` and click on the `Save` button.  
 ![Save Error Message](../../../static/img/Install-Windows-11/image_55.png)  
 ![Confirmation](../../../static/img/Install-Windows-11/image_56.png)  
 
-### Row 9 function: Script Log
+### Row 9 Function: Script Log
 
 Add a new row by clicking on the Add row button.  
 ![Add Row for Script Log](../../../static/img/Install-Windows-11/image_44.png)  
@@ -432,23 +433,11 @@ In the `Script Log Message` field, simply type this message and click on the `Sa
 Once all items are added, please `save` the task by clicking the `Save` button.  
 ![Save Task](../../../static/img/Install-Windows-11/image_58.png)  
 
-The final task should look like the below screenshot.  
+The final task should look like the screenshot below.  
 ![Final Task](../../../static/img/Install-Windows-11/image_59.png)  
 
 ## Output
 
 - Script logs  
 ![Script Logs](../../../static/img/Install-Windows-11/image_60.png)  
-(**This output is from an Incompatible Windows 10 computer.)**
-
-
-
-
-
-
-
-
-
-
-
-
+(**This output is from an incompatible Windows 10 computer.**)

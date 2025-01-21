@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview displays a summary of all scripts run over the set script log retention days. It displays the total runs, failures, successes, and the scripts effectiveness. The Script log retention days can be seen at the automate location below:
+This Dataview displays a summary of all scripts run over the set script log retention days. It includes the total runs, failures, successes, and the effectiveness of the scripts. The script log retention days can be seen at the automate location below:
 
 ![Script Log Retention Days](../../../static/img/Scripts-Effectiveness-Audit/image_1.png)
 
@@ -21,23 +22,11 @@ This Dataview displays a summary of all scripts run over the set script log rete
 | Script Name         | Name of the script                   |
 | Script Path         | Path to the script                   |
 | Total Runs          | Number of times it ran               |
-| Failure             | Number of times it Failed            |
-| Success             | Number of times it Succeed           |
-| Effective Percent    | Effective percent of Success         |
+| Failure             | Number of times it failed            |
+| Success             | Number of times it succeeded         |
+| Effective Percent    | Effective percentage of success      |
 | Script Last Run     | This shows the last run of the script|
 
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Scripts-Effectiveness-Audit/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

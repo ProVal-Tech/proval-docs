@@ -8,28 +8,17 @@ tags: ['macos', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Custom Field containing either 'Compatible' or the reason for incompatibility
+Custom field containing either 'Compatible' or the reason for incompatibility.
 
 ## Dependencies
 
-All content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>)
+All content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>).
 
 ## Details
 
 | Field Name                               | Type of Field (Machine or Organization) | Description / Syntax:                                                                                                   |
 |------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| xPVAL ProVal Compatible Endpoint         | Machine                                 | 'Compatible' OR  'Windows OS Out of Date.' OR 'Powershell Version Out of Date.' OR 'MacOS Out of Date.' OR 'Unable to get Data from the endpoint'  |
-
-
-
-
-
-
-
-
-
-
-
-
+| xPVAL ProVal Compatible Endpoint         | Machine                                 | 'Compatible' OR 'Windows OS Out of Date.' OR 'PowerShell Version Out of Date.' OR 'MacOS Out of Date.' OR 'Unable to get Data from the endpoint'  |

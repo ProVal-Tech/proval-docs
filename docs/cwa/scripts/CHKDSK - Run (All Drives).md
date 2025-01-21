@@ -8,11 +8,12 @@ tags: ['disk-encryption', 'security', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will run CHKDSK for all internal drives.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -22,24 +23,12 @@ Time Saved by Automation: 15 Minutes
 
 | **Name**                    | **Example** | **Required** | **Description**                                                                                                                                                                                                                       |
 |-----------------------------|-------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TicketCreationCategory      | 0           | 0 or 1      | This will represent if the tickets will get created by the script or not. By default, it will be set to 0 and it will not create tickets. If you want to enable the ticketing you need to set the value to 1.                        |
+| TicketCreationCategory      | 0           | 0 or 1      | This indicates whether tickets will be created by the script. By default, it is set to 0, which means no tickets will be created. To enable ticketing, set the value to 1.                                                          |
 
 ## Process
 
-This script will run check disk for all internal drives a machine has. This script will first check for the existing ticket. The script first runs a Powershell script to check if there are any bad sectors found. If a bad sector is found, then it will schedule a fix for it. If a bad sector is found, then it will comment on the existing ticket, else it will create a new one. After creating a ticket, it will schedule the fix and add comments to the ticket as well. Currently, in the script, the maintenance message and automatic reboot lines are enabled but they can be disabled as per client recommendation.
+This script will run CHKDSK for all internal drives on a machine. It first checks for any existing tickets. The script runs a PowerShell command to check for bad sectors. If a bad sector is found, it schedules a fix and comments on the existing ticket; if no ticket exists, it creates a new one. After creating a ticket, it schedules the fix and adds comments to the ticket as well. Currently, the maintenance message and automatic reboot options are enabled in the script, but they can be disabled based on client recommendations.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

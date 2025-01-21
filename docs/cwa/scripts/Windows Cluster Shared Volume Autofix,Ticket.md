@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This function script runs as an Autofix with the [CWA Remote Monitor - Windows Cluster Shared Volume Detection](<../monitors/CWA Remote Monitor - Windows Cluster Shared Volume Detection.md>) to create the ticket with detailed info about the cluster disk where the free space is below the threshold. It also calls the [CWA Script - Windows Cluster Volume Space Audit](<./Windows Cluster Volume Space Audit DV.md>) to perform the space audit after the autofix script schedule to ensure the latest data is captured for that cluster server.
+This function script runs as an Autofix with the [CWA Remote Monitor - Windows Cluster Shared Volume Detection](<../monitors/CWA Remote Monitor - Windows Cluster Shared Volume Detection.md>) to create a ticket with detailed information about the cluster disk where the free space is below the threshold. It also calls the [CWA Script - Windows Cluster Volume Space Audit](<./Windows Cluster Volume Space Audit DV.md>) to perform the space audit after the Autofix script is scheduled, ensuring the latest data is captured for that cluster server.
 
 ## Sample Run
 
@@ -25,23 +26,11 @@ This should always run with the [CWA Remote Monitor - Windows Cluster Shared Vol
 
 | Name                   | Description                                                                                                      |
 |------------------------|------------------------------------------------------------------------------------------------------------------|
-| psout                  | Contains the output of the PowerShell to catch the status of cluster disk space availability                    |
-| TicketComment          | Stores the status of the disk space which can be directly used in the ticket body                               |
-| TicketCreationCategory  | It stores the ticket category ID coming up from the monitor [CWA Remote Monitor - Windows Cluster Shared Volume Detection](<../monitors/CWA Remote Monitor - Windows Cluster Shared Volume Detection.md>) |
+| psout                  | Contains the output of the PowerShell to capture the status of cluster disk space availability                    |
+| TicketComment          | Stores the status of the disk space, which can be directly used in the ticket body                               |
+| TicketCreationCategory  | Stores the ticket category ID coming from the monitor [CWA Remote Monitor - Windows Cluster Shared Volume Detection](<../monitors/CWA Remote Monitor - Windows Cluster Shared Volume Detection.md>) |
 
 ## Output
 
 - Script log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

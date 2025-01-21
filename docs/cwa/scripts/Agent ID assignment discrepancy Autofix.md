@@ -8,11 +8,12 @@ tags: ['installation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will reinstall the Automate agent for the machines which are checking into Automate with the same agentid as another agent. It will create a ticket if it fails to re-install the agents with a new agentid.
+This script will reinstall the Automate agent for machines that are checking into Automate with the same agent ID as another agent. It will create a ticket if it fails to reinstall the agents with a new agent ID.
 
-Also, it will work reliably only for the customers where Mac Signup Matching is not enabled.
+Additionally, it will work reliably only for customers where Mac Signup Matching is not enabled.
 
 ![Image](../../../static/img/Agent-ID-assignment-discrepancy-Autofix/image_1.png)
 
@@ -21,10 +22,10 @@ Sample Ticket:
 
 ## How To Use
 
-- Import the script
-- Create an alert template say ~Autofix - Agent ID assignment discrepancy.
+- Import the script.
+- Create an alert template, such as ~Autofix - Agent ID assignment discrepancy.
 - Assign that alert template to the [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](https://proval.itglue.com/DOC-5078775-10829954) monitor set.
-- Import the monitor set, if it's already not imported.
+- Import the monitor set if it has not already been imported.
 
 ## Dependencies
 
@@ -33,44 +34,32 @@ Sample Ticket:
 - [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
 - [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](<./Automate Agent - Reinstall.md>)
 - LTPoSH Community Module ([https://bit.ly/LTPoSH](https://bit.ly/LTPoSH))
-- RMM+ Plugin Configured in CW Control portal
+- RMM+ Plugin configured in the CW Control portal
 
 ## Variables
 
 | Name              | Description                                                    |
 |-------------------|---------------------------------------------------------------|
-| Online            | Will indicate if the agent is online in CW Control           |
+| Online            | Indicates if the agent is online in CW Control               |
 | Command           | The command to issue to the endpoint to perform the reinstall |
-| Cid               | Current Computerid                                           |
+| Cid               | Current Computer ID                                          |
 | CName             | Current Name of the Computer                                 |
 | CLocalAddress     | Local IP Address                                            |
 | CRouterAddress    | Router/Public Address                                        |
-| AnotherAgent      | Distinct Names of the agents checking into the same computerid |
+| AnotherAgent      | Distinct Names of the agents checking into the same Computer ID |
 | NewAgentID        | New Agent ID of the machine after successful reinstall       |
 | Comment           | Comment to add to the ticket                                 |
 | Subject           | Ticket Subject                                              |
-| Ticid             | Ticket id                                                  |
+| Ticid             | Ticket ID                                                  |
 
 ## Process
 
-Step 1: Determine whether computer is offline or online in Control.  
-Step 2: Attempt to reinstall agent.  
-Step 3: Determine whether installation was a success or not, by verifying the presence of new computerid for the same machine.  
-Step 4: Create/comment ticket for failure and to finish any open ticket for success.
+1. Determine whether the computer is offline or online in Control.
+2. Attempt to reinstall the agent.
+3. Determine whether the installation was successful by verifying the presence of a new Computer ID for the same machine.
+4. Create or comment on a ticket for failure and finish any open ticket for success.
 
 ## Output
 
 - Ticket
 - Script logs
-
-
-
-
-
-
-
-
-
-
-
-

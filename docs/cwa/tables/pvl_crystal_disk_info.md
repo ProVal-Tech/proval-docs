@@ -8,6 +8,7 @@ tags: ['database', 'disk', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The table stores the information returned by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script.
@@ -22,7 +23,7 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 
 | Column               | Type        | Explanation                                                         |
 |----------------------|-------------|---------------------------------------------------------------------|
-| computerid           | int(11)    | Computerid                                                          |
+| computerid           | int(11)    | Computer ID                                                         |
 | ID                   | tinyint(4) | ID of the disk returned by the Crystal Disk Info Tool               |
 | Model                | varchar(128)| Model of the disk                                                   |
 | Firmware             | varchar(64) | Firmware of the disk                                               |
@@ -49,15 +50,3 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
-
-
-
-
-
-
-
-
-
-
-
-

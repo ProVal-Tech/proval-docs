@@ -8,6 +8,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Mark this custom field to exclude the endpoints of this site from the Windows 10 to 11 upgrade process.
@@ -18,18 +19,7 @@ Mark this custom field to exclude the endpoints of this site from the Windows 10
 |-------------------------------------|-------|------|---------------|------------------------------------------------------------------------------------------------------|----------|
 | Exclude Windows 11 Installation     | Site  | Flag | No            | Mark this custom field to exclude the endpoints of this site from the Windows 10 to 11 upgrade process. | Yes      |
 
-## Screenshot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Site---Exclude-Windows-11-Installation/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---Exclude-Windows-11-Installation/image_2.png)
-
-
-
-
-
-
-
-
-
-
-

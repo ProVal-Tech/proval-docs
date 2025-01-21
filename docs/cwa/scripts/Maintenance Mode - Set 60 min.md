@@ -8,11 +8,12 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script sets maintenance mode for 60 minutes on the agent.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -21,14 +22,3 @@ Time Saved by Automation: 5 Minutes
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
-
-
-
-
-
-
-
-
-
-
-

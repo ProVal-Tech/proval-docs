@@ -8,30 +8,19 @@ tags: ['update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated.
+This document outlines the time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were last updated.
 
 ## Details
 
 | Field Name                     | Level   | Type      | Default Value | Description                                                                                                 | Editable |
 |--------------------------------|---------|-----------|---------------|-------------------------------------------------------------------------------------------------------------|----------|
-| C2R Data Collection Time       | Company | Text Box  | \<Blank>       | The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. | Yes      |
+| C2R Data Collection Time       | Company | Text Box  | \<Blank>      | The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. | Yes      |
 
-## Screenshot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

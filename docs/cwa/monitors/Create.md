@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor set runs the [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>) script once a week on Windows machines where CPU Temperature monitoring is enabled. The monitoring can be turned on or off using the system properties and the EDFs, as explained in the [script’s](<../scripts/CPU Temperature Monitor - Create.md>) documentation.
+The monitor set runs the [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>) script once a week on Windows machines where CPU temperature monitoring is enabled. Monitoring can be turned on or off using the system properties and the EDFs, as explained in the [script’s](<../scripts/CPU Temperature Monitor - Create.md>) documentation.
 
 ## Dependencies
 
@@ -22,23 +23,9 @@ Global
 
 ## Alert Template
 
-**Name:** △ CUSTOM - Execute Script - CPU Temperature Monitor - Create
+**Name:** △ CUSTOM - Execute Script - CPU Temperature Monitor - Create
 
 **The alert template should run the** [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>) **script for `Error`.**
 
 ![Image 1](../../../static/img/Create/image_1.png)  
 ![Image 2](../../../static/img/Create/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

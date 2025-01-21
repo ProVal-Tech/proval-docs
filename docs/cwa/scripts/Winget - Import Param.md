@@ -8,13 +8,14 @@ tags: ['installation', 'software', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script offers the functionality to install the list of applications using winget from the `softwarelist.json` file exported by the [SWM - Data Collection - Script - Winget - Export [Param]](<./Winget - Export Param.md>) script.
+The script offers the functionality to install a list of applications using winget from the `softwarelist.json` file exported by the [SWM - Data Collection - Script - Winget - Export [Param]](<./Winget - Export Param.md>) script.
 
-Additionally, it includes an option to create a ticket with the list of the applications it failed to deploy on the computer from the `softwarelist.json` list.
+Additionally, it includes an option to create a ticket with the list of applications that failed to deploy on the computer from the `softwarelist.json` list.
 
-Requirements: PowerShell 5+
+**Requirements:** PowerShell 5+
 
 ## Implementation
 
@@ -38,7 +39,7 @@ After placing the software list as `softwarelist.json` in LTShare at the path ex
 
 ![](../../../static/img/Winget---Import-Param/image_3.png)
 
-Name of the file without the extension should be set to the user parameter after placing the software list with a different name in LTShare at the path explained in the `Implementation` section of the document:
+The name of the file without the extension should be set to the user parameter after placing the software list with a different name in LTShare at the path explained in the `Implementation` section of the document:
 
 ![](../../../static/img/Winget---Import-Param/image_4.png)
 
@@ -56,7 +57,7 @@ Name of the file without the extension should be set to the user parameter after
 
 | Name                                   | Example | Required | Description                                                                                                                                                                                                                      |
 |----------------------------------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TicketCreationCategory_Winget_Import   | 6       | False    | Id of the ticket category to create a ticket. Setting the id of the relevant ticket category in this system property will enable the ticketing on failure for the script. The script will not create a ticket if this property is missing or set to 0. |
+| TicketCreationCategory_Winget_Import   | 6       | False    | ID of the ticket category to create a ticket. Setting the ID of the relevant ticket category in this system property will enable ticketing on failure for the script. The script will not create a ticket if this property is missing or set to 0. |
 
 ## Output
 
@@ -68,20 +69,8 @@ Name of the file without the extension should be set to the user parameter after
 **Subject:** `Winget Import - Software List - Failed - %ComputerName%`
 
 **Summary:**  
-`Fail to install the following applications:`  
-`\<List of the failed applications>`
+`Failed to install the following applications:`  
+`\\<List of the failed applications>`
 
 **Example:**  
 ![](../../../static/img/Winget---Import-Param/image_5.png)
-
-
-
-
-
-
-
-
-
-
-
-

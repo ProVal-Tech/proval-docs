@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Disallows Onedrive from use in Local Security Policy
+Disallows OneDrive from use in Local Security Policy.
 
 ## Sample Run
 
@@ -21,19 +22,19 @@ Disallows Onedrive from use in Local Security Policy
 | 4:59:20 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System) | Success THEN                                                                                   | provaltech.com/dan.hicks     |
 | 4:59:20 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0016 | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server. | provaltech.com/dan.hicks     |
 | 4:59:20 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0016 | Informational: GetFile command overwrote the server file C:/Kaseya/UserProfiles/233148175125752/GetFiles/../docs/psoutput.txt with the new contents from c:/provaltech/psoutput.txt in THEN step 3. | provaltech.com/dan.hicks     |
-| 4:59:14 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "%ProgramData%/_automation/AgentProcedure/Disable-OneDrive.ps1" >"c:/provaltech/psoutputtmp.txt" | provaltech.com/dan.hicks     |
+| 4:59:14 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: \"\" -command \"%ProgramData%/_automation/AgentProcedure/Disable-OneDrive.ps1\" >\"c:/provaltech/psoutputtmp.txt\" | provaltech.com/dan.hicks     |
 | 4:59:14 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                             | provaltech.com/dan.hicks     |
 | 4:59:14 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as %ProgramData%/_automation/AgentProcedure/Disable-OneDrive.ps1    | provaltech.com/dan.hicks     |
 | 4:59:14 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                          | provaltech.com/dan.hicks     |
 | 4:59:13 pm 8-Jul-22    | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                         | provaltech.com/dan.hicks     |
 | 4:59:10 pm 8-Jul-22    | Execute Powershell Command                           | Success THEN                                                                                   | provaltech.com/dan.hicks     |
 | 4:59:10 pm 8-Jul-22    | Execute Powershell Command-0011                     | Powershell command completed!                                                                  | provaltech.com/dan.hicks     |
-| 4:59:07 pm 8-Jul-22    | Execute Powershell Command-0011                     | Executing powershell "" -Command "New-Item -Type Directory -Path %ProgramData%/_automation/AgentProcedure/ -name OneDriveDisable -ErrorAction SilentlyContinue" "" | provaltech.com/dan.hicks     |
+| 4:59:07 pm 8-Jul-22    | Execute Powershell Command-0011                     | Executing powershell \"\" -Command \"New-Item -Type Directory -Path %ProgramData%/_automation/AgentProcedure/ -name OneDriveDisable -ErrorAction SilentlyContinue\" \"\" | provaltech.com/dan.hicks     |
 | 4:59:07 pm 8-Jul-22    | Execute Powershell Command-0010                     | Not sending output to variable.                                                                | provaltech.com/dan.hicks     |
-| 4:59:07 pm 8-Jul-22    | Execute Powershell Command-0008                     | New command variable is: -Command "New-Item -Type Directory -Path %ProgramData%/_automation/AgentProcedure/ -name OneDriveDisable -ErrorAction SilentlyContinue" | provaltech.com/dan.hicks     |
+| 4:59:07 pm 8-Jul-22    | Execute Powershell Command-0008                     | New command variable is: -Command \"New-Item -Type Directory -Path %ProgramData%/_automation/AgentProcedure/ -name OneDriveDisable -ErrorAction SilentlyContinue\" | provaltech.com/dan.hicks     |
 | 4:59:07 pm 8-Jul-22    | Execute Powershell Command-0008                     | Custom commands detected as New-Item -Type Directory -Path %ProgramData%/_automation/AgentProcedure/ -name OneDriveDisable -ErrorAction SilentlyContinue | provaltech.com/dan.hicks     |
 | 4:59:02 pm 8-Jul-22    | Execute Powershell Command-0002                     | Powershell is present.                                                                         | provaltech.com/dan.hicks     |
-| 4:58:54 pm 8-Jul-22    | Run Now - OneDrive Disable                           | Admin provaltech.com/dan.hicks scheduled procedure Run Now - OneDrive Disable to run at Jul 8 2022 4:58PM |                               |
+| 4:58:54 pm 8-Jul-22    | Run Now - OneDrive Disable                           | Admin provaltech.com/dan.hicks scheduled procedure Run Now - OneDrive Disable to run at Jul 8 2022 4:58 PM |                               |
 
 ## Process
 
@@ -54,14 +55,3 @@ else{
 - Agent Procedure Log
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to finish the new/open tickets created by the Missing Patches detection solution for the machines missing less than three or not missing any patches.
+The purpose of the script is to finish the new/open tickets created by the Missing Patches detection solution for machines missing fewer than three patches or none at all.
 
 Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%ComputerName%`
 
@@ -28,16 +29,4 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 |-------------|--------------------------------------------------|
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
-| SQLTicketid | Ticketid to finish/close                         |
-
-
-
-
-
-
-
-
-
-
-
-
+| SQLTicketid | Ticket ID to finish/close                         |

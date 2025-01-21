@@ -8,9 +8,10 @@ tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script can be used to uninstall Huntress Agent from both Windows and Macintosh machines.
+This script can be used to uninstall the Huntress Agent from both Windows and Macintosh machines.
 
 ---
 
@@ -25,7 +26,7 @@ This script can be used to uninstall Huntress Agent from both Windows and Macint
 
 ## Dependencies
 
-[raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
+[InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
 
 ## Variables
 
@@ -38,14 +39,3 @@ This script can be used to uninstall Huntress Agent from both Windows and Macint
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

@@ -8,32 +8,21 @@ tags: ['database', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores information about gathered WiFi profiles from [WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>) for later application by the script [WiFi Profile - Apply](<../scripts/WiFi Profile - Apply.md>).
+This document stores information about gathered WiFi profiles from [WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>) for later application by the script [WiFi Profile - Apply](<../scripts/WiFi Profile - Apply.md>).
 
 ## Dependencies
 
-[WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>)
+- [WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>)
 
 ## Table
 
-#### plugin_proval_wifi_profiles
+### plugin_proval_wifi_profiles
 
 | Column   | Type    | Explanation                                      |
 |----------|---------|--------------------------------------------------|
 | clientid | INT     | The ClientID associated with the WiFi profile.   |
 | ssid     | VARCHAR | The SSID of the WiFi profile.                    |
-| xml      | BLOB    | The configuration information of the WiFi profile.|
-
-
-
-
-
-
-
-
-
-
-
-
+| xml      | BLOB    | The configuration information of the WiFi profile. |

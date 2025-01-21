@@ -8,25 +8,13 @@ tags: ['installation', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uses powershell to confirm if the RDS Connection broker server role is installed.
+This document uses PowerShell to confirm if the RDS Connection Broker server role is installed.
 
 ## Settings
 
 | Detection String                                        | Comparator | Result | Applicable OS |
 |--------------------------------------------------------|------------|--------|----------------|
-| \{%@powershell "(Get-WindowsFeature RDS-Connection-Broker).Installed"@%} | Equals     | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `{%@powershell "(Get-WindowsFeature RDS-Connection-Broker).Installed"@%}` | Equals     | True   | Windows        |

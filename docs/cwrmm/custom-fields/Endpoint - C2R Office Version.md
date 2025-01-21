@@ -8,29 +8,18 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-C2R office version installed on the machine gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) task.
+This document provides details about the C2R Office version installed on the machine, gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) task.
 
 ## Details
 
 | Field Name          | Level    | Type      | Default Value | Description                                                                                     | Editable |
 |---------------------|----------|-----------|---------------|-------------------------------------------------------------------------------------------------|----------|
-| C2R Office Version   | Endpoint | Text Box  | \<Blank>       | C2R office version installed on the machine gathered by the Microsoft 365 - Click-to-Run - Get Details task. | Yes      |
+| C2R Office Version   | Endpoint | Text Box  | \<Blank>       | C2R Office version installed on the machine, gathered by the Microsoft 365 - Click-to-Run - Get Details task. | Yes      |
 
-## Screenshot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Office-Version/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Office-Version/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

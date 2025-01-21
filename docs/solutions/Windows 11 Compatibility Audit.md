@@ -8,11 +8,12 @@ tags: ['installation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The solution aims to determine the compatibility of Windows 10 machines for the Windows 11 installation.
 
-Additionally, it can be used to detect Windows 11 computers that do not meet the Microsoft requirements for Windows 11. Windows 11 can be forcefully installed on incompatible computers, but the feature pack cannot be updated for such machines using the Windows Update Assistant. The dataview in the solution can be filtered for Windows 11 to find such machines.
+Additionally, it can be used to detect Windows 11 computers that do not meet Microsoft's requirements for Windows 11. While Windows 11 can be forcefully installed on incompatible computers, the feature pack cannot be updated for such machines using the Windows Update Assistant. The dataview in the solution can be filtered for Windows 11 to identify these machines.
 
 ## Associated Content
 
@@ -38,19 +39,7 @@ Additionally, it can be used to detect Windows 11 computers that do not meet the
 3. Execute the [Windows - Check Windows 11 Compatibility](<../cwa/scripts/Windows - Check Windows 11 Compatibility.md>) script against an online Windows 10 computer to create the [plugin_proval_windows11_readiness](<../cwa/tables/plugin_proval_windows11_readiness.md>) custom table.
 
 4. Configure the solution as outlined below:
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Monitor - Execute Script - Windows - Check Windows 11 Compatibility](<../cwa/monitors/Execute Script - Windows - Check Windows 11 Compatibility.md>)  
        - △ Custom - Execute Script - Windows 11 Compatibility Check  
        - Right-click and Run Now to start the monitor
-
-
-
-
-
-
-
-
-
-
-
-

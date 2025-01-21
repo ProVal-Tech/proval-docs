@@ -8,9 +8,10 @@ tags: ['gpo', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Displays detailed information about the GPO security filtering of each GPO from the script @Group Policy Audit.
+This document displays detailed information about the GPO security filtering of each GPO from the script @Group Policy Audit.
 
 ## Dependencies
 
@@ -27,14 +28,3 @@ Displays detailed information about the GPO security filtering of each GPO from 
 | ComputerID  | INT      | The Automate ComputerID of the supplying domain controller.                |
 | Trustee     | VARCHAR  | The name of the user or group that the security filter is applying to.     |
 | TrusteeType | VARCHAR  | The type of trustee (User, Group, WellKnownGroup, etc.)                   |
-
-
-
-
-
-
-
-
-
-
-

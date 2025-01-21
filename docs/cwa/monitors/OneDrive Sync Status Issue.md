@@ -8,15 +8,16 @@ tags: ['report', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script.  
+The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script.
 
 ## Dependencies
 
 - [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<./Execute Script - Microsoft OneDrive Sync Status.md>) 
-- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) 
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<./Execute Script - Microsoft OneDrive Sync Status.md>)
+- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
 ## Target
 
@@ -36,21 +37,9 @@ Global
 `The OneDrive Audit script found an issue with ABC Inc.//TEST-COMPUTER`  
 `Data Collection Time: 3/14/2024 1:11:45 PM`  
 `Reported Issue:`  
-`Sync Status for "someone" for "C://Users//someone//OneDriveCloudTemp" is "\<ERROR>Status not found for type [OneDriveCloudTemp]";`  
+`Sync Status for "someone" for "C://Users//someone//OneDriveCloudTemp" is "<ERROR>Status not found for type [OneDriveCloudTemp]";`  
 `Sync Status for "someone" for "C://Users//someone//OneDrive - Some Inc" is "Up to date";`
 
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,8 +8,9 @@ tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
-This script calculates and returns the average of X numbers of Average Disk Queue Length using the performance counter '\PhysicalDisk(_total)\Avg. Disk Queue Length'.
+This script calculates and returns the average of X numbers of Average Disk Queue Length using the performance counter `\PhysicalDisk(_total)\Avg. Disk Queue Length`.
 
 ## Usage
 1. **Parameter Setup**: 
@@ -32,14 +33,13 @@ This script calculates and returns the average of X numbers of Average Disk Queu
    - Stores the current samples in the table, overwriting existing data if necessary.
 
 6. **Average Calculation**:
-   - If the number of samples meets or exceeds the specified `$Samples`, calculate the average disk queue length.
+   - If the number of samples meets or exceeds the specified `$Samples`, calculates the average disk queue length.
    - Constructs a custom object containing sample count, timestamps, time interval, average disk queue length, and count of fixed disks.
 
 7. **Logging and Output**:
    - Logs the results if the required number of samples is collected.
    - Returns the custom object with the calculated data.
    - Logs a message if the required number of samples is not available, without returning any result.
-
 
 This example runs the script to calculate the average of the last 5 samples of the Average Disk Queue Length.
 
@@ -53,14 +53,5 @@ This example runs the script to calculate the average of the last 5 samples of t
 | `Samples`         |       | False     | 3         | Int32     | Specifies the number of samples to calculate the average for. |
 
 ## Output
-    .\Get-AvgDiskQueueLength-log.txt
-    .\Get-AvgDiskQueueLength-Error.txt
-
-
-
-
-
-
-
-
-
+- `.\Get-AvgDiskQueueLength-log.txt`
+- `.\Get-AvgDiskQueueLength-Error.txt`

@@ -8,9 +8,10 @@ tags: ['azure', 'backup', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Will attempt to push BitLocker keys to AD/Azure AD. This is a one-way push, NOT a sync. If the push is successful, the key should be backed up. If the push is unsuccessful, the key will need to be validated manually.
+This document describes the process for pushing BitLocker keys to Active Directory (AD) and Azure Active Directory (Azure AD). This is a one-way push, NOT a sync. If the push is successful, the key should be backed up. If the push is unsuccessful, the key will need to be validated manually.
 
 ## Parameters
 
@@ -18,7 +19,7 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-[CW RMM - Custom Field - BitLocker Key Backup Status](<../custom-fields/BitLocker Key Backup Status.md>) 
+[CW RMM - Custom Field - BitLocker Key Backup Status](<../custom-fields/BitLocker Key Backup Status.md>)
 
 ## Create Script
 
@@ -28,12 +29,12 @@ To implement this script, please create a new "Script Editor" style script in th
 ![Image 2](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_2.png)  
 
 **Name:** BitLocker Recovery Key Backup Audit  
-**Description:** Will attempt to push BitLocker keys to AD/Azure AD. This is a one way push, NOT a sync. If the push is successful, the key should be backed up. If the push is unsuccessful, the key will need to be validated manually.  
+**Description:** This script will attempt to push BitLocker keys to AD/Azure AD. This is a one-way push, NOT a sync. If the push is successful, the key should be backed up. If the push is unsuccessful, the key will need to be validated manually.  
 **Category:** Custom  
 
 ![Image 3](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_3.png)  
 
-Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
 ![Image 4](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_4.png)  
 
@@ -81,7 +82,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ![Image 9](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_9.png)  
 
-When you select set custom field, that will open up a new window. In this window, find the "BitLocker Key Backup Status" field.
+When you select "Set Custom Field," a new window will open. In this window, find the "BitLocker Key Backup Status" field.
 
 ![Image 10](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_10.png)  
 
@@ -90,13 +91,13 @@ In the Value area, simply type `%output%` to store the PowerShell output in the 
 ![Image 11](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_11.png)  
 
 Once all items are added, please save the task.  
-The final task should look like the below screenshot.
+The final task should look like the screenshot below.
 
 ![Image 12](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_12.png)  
 
 ## Script Deployment
 
-The script is intended to run manually at this time.  
+The script is intended to run manually at this time.
 
 The task should be scheduled to run once. Please see the example in the screenshot below.
 
@@ -104,21 +105,9 @@ The task should be scheduled to run once. Please see the example in the screensh
 ![Image 14](../../../static/img/BitLocker-Recovery-Key-Backup-Audit/image_14.png)  
 
 **Run Now**  
-**Resource:** Select a group/machine in which you would like to run this against.
+**Resource:** Select a group/machine on which you would like to run this script.
 
 ## Output
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

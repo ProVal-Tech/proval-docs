@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'uninstallation', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution is designed to Uninstall/Install/Update software via Winget
+This solution is designed to uninstall, install, and update software via Winget.
 
 ## Associated Content
 
@@ -18,20 +19,8 @@ This solution is designed to Uninstall/Install/Update software via Winget
 |-----------------------------------------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------------------|
 | [CW RMM - Task - Winget Install Application](https://proval.itglue.com/5078775/docs/13472474#version=published&amp;documentMode=view) | Task | Attempts to install an application via Winget                                                                 |
 | [CW RMM - Task - Winget Uninstall Application](https://proval.itglue.com/5078775/docs/13473023#version=published&amp;documentMode=view) | Task | Attempts to uninstall an application via Winget                                                               |
-| [CW RMM - Task - Winget Upgrade All](https://proval.itglue.com/5078775/docs/13473030#version=published&amp;documentMode=view) | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint. Attempts to install an application via Winget |
+| [CW RMM - Task - Winget Upgrade All](https://proval.itglue.com/5078775/docs/13473030#version=published&amp;documentMode=view) | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint.                                 |
 
 ## FAQ
-
-
-
-
-
-
-
-
-
-
-
-
 
 

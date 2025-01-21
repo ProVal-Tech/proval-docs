@@ -8,6 +8,7 @@ tags: ['encryption']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview displays the FileVault Status for the MAC computers present in the environment.
@@ -31,16 +32,4 @@ This dataview displays the FileVault Status for the MAC computers present in the
 | File Vault Status         | File Vault Status, either ON or OFF        |
 | File Vault Script Run Time | File Vault Script Run Time                  |
 | Last Contact              | Last Contact                                |
-| Last Logon User          | Last Logon User                            |
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Logon User           | Last Logon User                            |

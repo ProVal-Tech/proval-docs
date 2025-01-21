@@ -8,23 +8,26 @@ tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Overview
 
-This Script will disable Windows Powershell v2 feature, providing a newer version is installed.
+This script will disable the Windows PowerShell v2 feature, provided that a newer version is installed.
 
 ## Requirements
 
-A version of PowerShell greater than v2 must be installed to disable PowerShell v2, this script will attempt to satisfy that requirement before disabling anything. The removal of the .NET 3.0 feature requires a reboot.
+A version of PowerShell greater than v2 must be installed to disable PowerShell v2. This script will attempt to satisfy that requirement before disabling anything. The removal of the .NET 3.0 feature requires a reboot.
 
 ## Process
 
-1. If there is a PowerShell version installed greater than v2, then we will disable PowerShell V2.
+1. If there is a PowerShell version installed greater than v2, then we will disable PowerShell v2.
 2. If there is no PowerShell version installed greater than v2:
    1. Install a version greater than v2.
-   2. Verify that the installation was successful, error if not.
+   2. Verify that the installation was successful; error if not.
    3. Disable PowerShell version 2.
 
-How does the content operate and accomplish the goal?
+## How the Content Operates
+
+The content checks for a version of PowerShell greater than v2. If one is present, it disables the PowerShell v2 feature. If it is not present, it attempts to install a newer PowerShell version so that v2 can be disabled.
 
 ## Payload Usage
 
@@ -32,32 +35,19 @@ How does the content operate and accomplish the goal?
 ./Disable-PowershellVersion2.ps1
 ```
 
-Checks for a version of PowerShell greater than v2, if there is one present disables the PowerShell V2 feature, if it's not present it attempts to install a newer PowerShell version so v2 can be disabled.
-
 ## Output
 
 ```
-    ./Disable-PowershellVersion2-log.txt
-    ./Disable-PowershellVersion2-error.txt
+./Disable-PowershellVersion2-log.txt
+./Disable-PowershellVersion2-error.txt
 ```
 
 ## Locations
 
-| Payload                     | /repo/script/Disable-PowershellVersion2.ps1 |
-|-----------------------------|-----------------------------------------------|
-| Automate                    |                                               |
-| ConnectWise RMM             |                                               |
-| Kaseya                      |                                               |
-| Datto RMM                   |                                               |
-
-
-
-
-
-
-
-
-
-
-
-
+| Payload                     | Path                                      |
+|-----------------------------|-------------------------------------------|
+| Disable PowerShell v2       | /repo/script/Disable-PowershellVersion2.ps1 |
+| Automate                    |                                           |
+| ConnectWise RMM             |                                           |
+| Kaseya                      |                                           |
+| Datto RMM                   |                                           |

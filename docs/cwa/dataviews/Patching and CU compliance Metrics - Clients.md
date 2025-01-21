@@ -8,9 +8,10 @@ tags: ['compliance', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview is designed to display the patch and Cumulative Update compliance score for the whole environment. It displays data exclusively for supported Windows computers with managed patch policies, which have been online in Automate within the past 30 days and are part of production patching groups.
+The dataview is designed to display the patch and Cumulative Update compliance score for the entire environment. It displays data exclusively for supported Windows computers with managed patch policies, which have been online in Automate within the past 30 days and are part of production patching groups.
 
 The data is grouped by client.
 
@@ -28,44 +29,31 @@ The data is grouped by client.
 
 | Column                       | Explanation                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| clientid                     | Clientid                                                                                                           |
+| clientid                     | Client ID                                                                                                          |
 | Client                       | Name of the Client                                                                                                |
 | Approved Prod. Patches       | Number of approved production patches                                                                              |
-| Installed Prod. Patches      | Number of Installed Production Patches                                                                             |
-| Failed Prod. Patches         | Number of Failed Production Patches                                                                                |
-| Missing Prod. Patches        | Number of Missing Production Patches                                                                               |
-| Prod. Patch Compliance %     | Patch Compliance of the whole environment for the production patches ( `Number of installed production patches` divided by `Number of approved production patches` multiplied by `100`) |
-| Supported Prod. Computers     | Number of active Windows machines with managed patch policies and are part of production patching groups.         |
+| Installed Prod. Patches      | Number of installed production patches                                                                             |
+| Failed Prod. Patches         | Number of failed production patches                                                                                |
+| Missing Prod. Patches        | Number of missing production patches                                                                               |
+| Prod. Patch Compliance %     | Patch compliance of the entire environment for the production patches ( `Number of installed production patches` divided by `Number of approved production patches` multiplied by `100`) |
+| Supported Prod. Computers     | Number of active Windows machines with managed patch policies that are part of production patching groups.         |
 | CU Age - Current             | The count of computers where the installed latest Cumulative Update's release date falls within the last 45 days. |
-| CU Age - 46-90               | The count of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days.    |
-| CU Age - 91-135              | The count of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days.   |
+| CU Age - 46-90               | The count of computers where the installed latest Cumulative Update's release date falls between 46 and 90 days.   |
+| CU Age - 91-135              | The count of computers where the installed latest Cumulative Update's release date falls between 91 and 135 days.  |
 | CU Age - 136+                | The number of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. |
-| CU Score %                   | This scoring system is custom-made, based on the age of the installed Cumulative Update. A score of 100 is assigned if the Cumulative Update is less than 45 days old, 75 if it falls between 46 to 90 days, 50 for updates aged between 91 to 135 days, and 25 for updates older than 136 days. The formula used for calculation is as follows:  `(CU Age - Current) * 100 + (CU Age - 46-90) * 75 + (CU Age - 91-135) * 50 + (CU Age - 136+) * 25) / Supported CU Eligible Computers` |
+| CU Score %                   | This scoring system is custom-made, based on the age of the installed Cumulative Update. A score of 100 is assigned if the Cumulative Update is less than 45 days old, 75 if it falls between 46 and 90 days, 50 for updates aged between 91 and 135 days, and 25 for updates older than 136 days. The formula used for calculation is as follows: `(CU Age - Current) * 100 + (CU Age - 46-90) * 75 + (CU Age - 91-135) * 50 + (CU Age - 136+) * 25) / Supported CU Eligible Computers` |
 | CU Age - Current %           | Percentage of computers where the installed latest Cumulative Update's release date falls within the last 45 days. ( `CU Age - Current` divided by `Supported CU Eligible Computers` multiplied by `100`) |
-| CU Age - 46-90 %             | Percentage of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days. ( `CU Age - 46-90` divided by `Supported CU Eligible Computers` multiplied by `100`) |
-| CU Age - 91-135 %            | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`) |
+| CU Age - 46-90 %             | Percentage of computers where the installed latest Cumulative Update's release date falls between 46 and 90 days. ( `CU Age - 46-90` divided by `Supported CU Eligible Computers` multiplied by `100`) |
+| CU Age - 91-135 %            | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 and 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`) |
 | CU Age - 136+ %              | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. ( `CU Age - 136+` divided by `Supported CU Eligible Computers` multiplied by `100`) |
-| Total Eligible Computers - CU | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
-| Validation                   | This is a hidden column which displays the concatenated data for the client in the following format: `Total Wks: X | Total Svrs: X | Wks Online > 30d: X | Online Patch Managed Wks: X | Patch Managed Wks: X | Patch Managed Svrs: X | Wks in CU Table: X | Svrs in CU Table: X | Unsupported Svrs: X | Unsupported Wks: X`  **Total Wks** - Total number of workstations unfiltered.  **Total Svrs** - Total number of servers unfiltered.  **Wks Online > 30 days** - Workstations that have been online in the past 30 days, including non-patch-managed and EOL systems.  **Online Patch Managed Wks** - Workstations that have been online in the past 30 days and are patch-managed, including EOL systems.  **Patch Managed Wks** - Workstations that are patch managed, including offline agents and EOL systems.  **Patch Managed Svrs** - Servers that are patch managed, including offline agents and EOL systems.  **Wks in CU table** - Workstations that are in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.  **Svrs in CU table** - Servers that are in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.  **Unsupported Svrs** - Servers that are EOL.  **Unsupported Wks** - Workstations that are EOL.  This column is independent of the [pvl_patch_cu_compliance_clients](<../views/pvl_patch_cu_compliance_clients.md>) table and displays the count of all machines regardless of them being supported or end of life. |
+| Total Eligible Computers - CU | Total number of supported Windows computers that have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+| Validation                   | This is a hidden column that displays the concatenated data for the client in the following format: `Total Wks: X | Total Svrs: X | Wks Online > 30d: X | Online Patch Managed Wks: X | Patch Managed Wks: X | Patch Managed Svrs: X | Wks in CU Table: X | Svrs in CU Table: X | Unsupported Svrs: X | Unsupported Wks: X`.  **Total Wks** - Total number of workstations unfiltered.  **Total Svrs** - Total number of servers unfiltered.  **Wks Online > 30 days** - Workstations that have been online in the past 30 days, including non-patch-managed and EOL systems.  **Online Patch Managed Wks** - Workstations that have been online in the past 30 days and are patch-managed, including EOL systems.  **Patch Managed Wks** - Workstations that are patch managed, including offline agents and EOL systems.  **Patch Managed Svrs** - Servers that are patch managed, including offline agents and EOL systems.  **Wks in CU table** - Workstations that are in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.  **Svrs in CU table** - Servers that are in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.  **Unsupported Svrs** - Servers that are EOL.  **Unsupported Wks** - Workstations that are EOL.  This column is independent of the [pvl_patch_cu_compliance_clients](<../views/pvl_patch_cu_compliance_clients.md>) table and displays the count of all machines regardless of them being supported or end of life. |
 
 ## Format Control
 
 | Column                     | Colour | Description                      |
 |----------------------------|--------|----------------------------------|
-| Prod. Patch Compliance %   | Red    | less than 75                     |
-| Prod. Patch Compliance %   | Green  | greater than or equal to 75      |
-| CU Score %                 | Red    | less than 75                     |
-| CU Score %                 | Green  | greater than or equal to 75      |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Prod. Patch Compliance %   | Red    | Less than 75                     |
+| Prod. Patch Compliance %   | Green  | Greater than or equal to 75      |
+| CU Score %                 | Red    | Less than 75                     |
+| CU Score %                 | Green  | Greater than or equal to 75      |

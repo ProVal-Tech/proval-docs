@@ -8,21 +8,21 @@ tags: ['cleanup', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The remote monitor is designed to clean up any '*.ps1' files older than 1 day located in the `C:/ProgramData/_Automation` directory. Since these scripts are often whitelisted by security applications, it is recommended to remove them from the system after they are run.
 
 ---
 
-This monitor will make a change to all systems it is deployed to
+This monitor will make a change to all systems it is deployed to.
 
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif) ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
 
 ---
 
-\\<strong>What will change?\\</strong>  
-This monitor will check X condition and make Y change.  
-All PowerShell Files under the _automation directory that are older than 1 day will get deleted.
+**What will change?**  
+This monitor will check for a specific condition and make the necessary changes. All PowerShell files under the _Automation directory that are older than 1 day will be deleted.
 
 ---
 
@@ -35,11 +35,11 @@ All PowerShell Files under the _automation directory that are older than 1 day w
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default - Do Nothing  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|-------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | Rexgex Match | 86400    | ((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)|(^$)) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | Regex Match | 86400    | ((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)|(^$)) |
 
 ## Target
 
@@ -49,16 +49,3 @@ Managed Windows Servers and Workstations
 ## Implementation
 
 [Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 [Change]](<./Import - Remote Monitor - _Automation Directory - Remove Obsolete .ps1 Change.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

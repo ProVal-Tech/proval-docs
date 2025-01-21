@@ -8,11 +8,12 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to finish the new/open tickets created by the feature pack upgrading solution for the Windows 10 machines which are already updated to the latest build.
+The purpose of the script is to finish the new or open tickets created by the feature pack upgrade solution for Windows 10 machines that are already updated to the latest build.
 
-Affected ticket subjects:
+### Affected Ticket Subjects:
 
 - Pre-Reboot Installation Failure of Feature Update for %ClientName%/%ComputerName%
 - Feature Update Reboot Ignored on %ClientName%/%ComputerName%
@@ -32,16 +33,4 @@ Affected ticket subjects:
 |-------------|------------------------------------------------|
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
-| SQLTicketid | Ticketid to finish/close                       |
-
-
-
-
-
-
-
-
-
-
-
-
+| SQLTicketid | Ticket ID to finish/close                       |

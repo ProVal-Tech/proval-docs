@@ -8,9 +8,10 @@ tags: ['gpo', 'registry', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview displays all possible redirection registry settings globally and for all users.
+This document displays all possible redirection registry settings globally and for all users.
 
 ## Dependencies
 
@@ -21,22 +22,22 @@ This dataview displays all possible redirection registry settings globally and f
 
 | Column         | Description                                                                                                                                                 |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ClientID       | The Client ID of the target Computer.                                                                                                                    |
-| LocationID     | The location ID of the target Computer.                                                                                                                  |
-| ClientName     | The Client Name.                                                                                                                                         |
-| LocationName   | The locationName.                                                                                                                                       |
+| ClientID       | The Client ID of the target computer.                                                                                                                    |
+| LocationID     | The location ID of the target computer.                                                                                                                  |
+| ClientName     | The client name.                                                                                                                                         |
+| LocationName   | The location name.                                                                                                                                       |
 | ComputerID     | The target computer ID.                                                                                                                                  |
 | ComputerName   | The name of the target computer.                                                                                                                          |
-| EffectedUsers  | The scope of the effected parameter, if the parameter applies to all users, it will say All, if the parameter applies to a specific user it will list the effected user. |
+| EffectedUsers  | The scope of the affected parameter; if the parameter applies to all users, it will say "All." If the parameter applies to a specific user, it will list the affected user. |
 | PropertyName   | The name of the property that is set in the registry.                                                                                                     |
 | Rawvalue       | The value assigned to the registry property.                                                                                                              |
-| Description    | The description of what the property effects, if known.                                                                                                   |
-| TargetType     | Global Setting if the property is setting a global computer setting, Folder if the property is targeting a folder.                                        |
-| RoamingState   | Local if the property does not prove redirection, Roaming if the property proves redirection.                                                             |
+| Description    | The description of what the property affects, if known.                                                                                                   |
+| TargetType     | "Global Setting" if the property is setting a global computer setting; "Folder" if the property is targeting a folder.                                    |
+| RoamingState   | "Local" if the property does not provide redirection; "Roaming" if the property provides redirection.                                                     |
 
 ## SQL Representation
 
-```
+```sql
 SELECT     c.ClientID AS ClientID
            ,c.LocationID AS LocationID
            ,cl.NAME AS ClientName
@@ -64,16 +65,3 @@ LEFT JOIN computers c ON (c.ComputerID = GRA.ComputerID)
 LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)  
 LEFT JOIN locations l ON (l.LocationID = c.LocationID)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

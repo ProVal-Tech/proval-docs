@@ -8,18 +8,19 @@ tags: ['installation', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Allows for the install and uninstall of the Senteon Agent application, and displaying the results to a custom field. 
+This document allows for the installation and uninstallation of the Senteon Agent application, as well as displaying the results in a custom field.
 
 ## Associated Content
 
 | Content | Type | Function |
 |---------|------|----------|
-| [cPVAL Senteon Installed](<../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint or not. |
-| [Senteon_Org](<../vsa/variables/Senteon_Org.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's Organization. |
-| [Senteon_Tenant](<../vsa/variables/Senteon_Tenant.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to. |
-| [Senteon_Reg_Code](<../vsa/variables/Senteon_Reg_Code.md>) | Managed Variable | This managed variable is used to store the Senteon registration code of the Tenant the partner wishes to register the agent/endpoint to. |
+| [cPVAL Senteon Installed](<../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint. |
+| [Senteon_Org](<../vsa/variables/Senteon_Org.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's organization. |
+| [Senteon_Tenant](<../vsa/variables/Senteon_Tenant.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the tenant the partner wishes to register the agent/endpoint to. |
+| [Senteon_Reg_Code](<../vsa/variables/Senteon_Reg_Code.md>) | Managed Variable | This managed variable is used to store the Senteon registration code of the tenant the partner wishes to register the agent/endpoint to. |
 | [Senteon - Install](<../vsa/procedures/Senteon - Install.md>) | Agent Procedure | This agent procedure is used to install the Senteon Agent application on the endpoint. |
 | [Senteon - Uninstall](<../vsa/procedures/Senteon - Uninstall.md>) | Agent Procedure | This agent procedure is used to uninstall the Senteon Agent application on the endpoint. |
 | [Check Senteon Installed CF](<../vsa/procedures/Check Senteon Installed CF.md>) | Agent Procedure | This agent procedure is used to check for the presence of Senteon on the endpoint and update a custom field with the status. |
@@ -36,15 +37,3 @@ Allows for the install and uninstall of the Senteon Agent application, and displ
    - [Agent Procedure - Senteon - Install](<../vsa/procedures/Senteon - Install.md>)  
    - [Agent Procedure - Senteon - Uninstall](<../vsa/procedures/Senteon - Uninstall.md>)  
    - [Agent Procedure - Check Senteon Installed CF](<../vsa/procedures/Check Senteon Installed CF.md>)  
-
-
-
-
-
-
-
-
-
-
-
-

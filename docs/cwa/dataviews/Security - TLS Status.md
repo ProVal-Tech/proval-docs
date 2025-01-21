@@ -8,11 +8,12 @@ tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview is an easy way to audit which versions of TLS are enabled on the endpoint. This is native to the machine, not to I.E. An example of this would be the communication from the machine to a server, like a File Server.
+This dataview is an easy way to audit which versions of TLS are enabled on the endpoint. This is native to the machine, not to Internet Explorer. An example of this would be the communication from the machine to a server, such as a File Server.
 
-Note: Only if the Remote monitor (from dependencies) has executed/run at least once on the machine will the enabled TLS version be shown in the dataview.
+**Note:** Only if the Remote Monitor (from dependencies) has executed/run at least once on the machine will the enabled TLS version be shown in the dataview.
 
 ## Dependencies
 
@@ -23,33 +24,19 @@ Note: Only if the Remote monitor (from dependencies) has executed/run at least o
 
 | Column                      | Description                                   |
 |-----------------------------|-----------------------------------------------|
-| Clientid                    | Clientid (Hidden)                            |
-| Locationid                  | Locationid (Hidden)                          |
-| Computerid                  | Computerid (Hidden)                          |
-| Client Name                 | Client Name                                  |
-| Location Name               | Location Name                                |
-| Computer Name               | Computer Name                                |
-| Operating System            | Operating System                             |
-| Last Contact                | Last Contact with RMM                        |
+| Client ID                   | Client ID (Hidden)                           |
+| Location ID                 | Location ID (Hidden)                         |
+| Computer ID                 | Computer ID (Hidden)                         |
+| Client Name                 | Client Name                                   |
+| Location Name               | Location Name                                 |
+| Computer Name               | Computer Name                                 |
+| Operating System            | Operating System                              |
+| Last Contact                | Last Contact with RMM                         |
 | Last Logged In User         | Last Logged In User (Hidden)                 |
 | Enabled TLS - Client        | Enabled TLS Client Version(s)                |
 | Enabled TLS - Server        | Enabled TLS Server Version(s) (if applicable)|
-| Data Collection Time        | Data Collection Time                         |
+| Data Collection Time        | Data Collection Time                          |
 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Security---TLS-Status/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

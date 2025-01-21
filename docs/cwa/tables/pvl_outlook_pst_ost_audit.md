@@ -8,6 +8,7 @@ tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The custom table stores the data gathered by the [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>) script.
@@ -22,20 +23,8 @@ The custom table stores the data gathered by the [EPM - Data Collection - Script
 
 | Column              | Type     | Description                                 |
 |---------------------|----------|---------------------------------------------|
-| Computerid          | Int      | Computerid (Hidden)                        |
+| Computerid          | Int      | Computer ID (Hidden)                       |
 | Path                | Varchar  | Path to the OST/PST file                   |
-| Size                | Double   | Size of the file in MegaBytes              |
+| Size                | Double   | Size of the file in Megabytes              |
 | ModificationTime    | DateTime | Most recent modification time of the file   |
 | DataCollectionTime  | DateTime | Data Collection Time                        |
-
-
-
-
-
-
-
-
-
-
-
-

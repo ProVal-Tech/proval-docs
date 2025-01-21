@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uses Client and Agent Level EDFs and an Internal monitor to ensure DUO software is installed for all agents within a client.
+This document uses Client and Agent Level EDFs and an internal monitor to ensure that DUO software is installed for all agents within a client.
 
 ## Sample Run
 
@@ -18,11 +19,11 @@ Uses Client and Agent Level EDFs and an Internal monitor to ensure DUO software 
 
 ## Dependencies
 
-- Client EDF  
-![Client EDF](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_2.png)
+- **Client EDF**  
+  ![Client EDF](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_2.png)
 
-- Agent EDF for exclusion (Will prevent monitor from picking up agent / forcing DUO install)  
-![Agent EDF](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_3.png)
+- **Agent EDF for exclusion** (Will prevent the monitor from picking up the agent / forcing DUO install)  
+  ![Agent EDF](../../../static/img/DUO---Install-MFA-Authentication-For-Windows-EDFs/image_3.png)
 
 ## Variables
 
@@ -32,29 +33,17 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name                     | Example | Required | Description                                                      |
 |--------------------------|---------|----------|------------------------------------------------------------------|
-| AUTOPUSH                 | #0      | True     | Duo Install Parameter - review DUO documentation                 |
-| FAILOPEN                 | #1      | True     | Duo Install Parameter - review DUO documentation                 |
-| RDPONLY                  | #0      | True     | Duo Install Parameter - review DUO documentation                 |
+| AUTOPUSH                 | #0      | True     | DUO Install Parameter - review DUO documentation                 |
+| FAILOPEN                 | #1      | True     | DUO Install Parameter - review DUO documentation                 |
+| RDPONLY                  | #0      | True     | DUO Install Parameter - review DUO documentation                 |
 | Ticketing                | 1       | True     | 1 = Ticket on Failure                                            |
-| TicketCreationCategory    | 123     | False    | If set will override default ticket category if Ticketing = 1   |
+| TicketCreationCategory    | 123     | False    | If set, will override default ticket category if Ticketing = 1   |
 
 ## Process
 
-Sets all variables from EDFs and Script Globals. Will exit if required variables are not set. Downloads DUO MSI File from [https://dl.duosecurity.com](https://dl.duosecurity.com). Installs according to DUO documentation, confirms software is installed. Will create ticket on failure if global is set.
+Sets all variables from EDFs and Script Globals. The process will exit if required variables are not set. It downloads the DUO MSI File from [https://dl.duosecurity.com](https://dl.duosecurity.com), installs according to DUO documentation, and confirms that the software is installed. A ticket will be created on failure if the global variable is set.
 
 ## Output
 
 - Script Log
 - Ticket - Optional
-
-
-
-
-
-
-
-
-
-
-
-

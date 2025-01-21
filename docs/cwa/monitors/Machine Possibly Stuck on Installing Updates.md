@@ -8,22 +8,11 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor will detect machines that likely have stalled on their patching process.
+This internal monitor will detect machines that likely have stalled in their patching process.
 
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,16 +8,17 @@ tags: ['installation', 'software']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script installs the cybercns agent on a computer.
+This script installs the CyberCNS agent on a computer.
 
 ## Requirements
 
-The Following Client Level EDFs must be set:
-1. EDF Cybercns Company  
-2. EDF Cybercns Client ID  
-3. EDF Cybercns Client Secret  
+The following client-level EDFs must be set:
+1. EDF CyberCNS Company  
+2. EDF CyberCNS Client ID  
+3. EDF CyberCNS Client Secret  
 
 The global variable `URL_Download` must have a valid download URL.
 
@@ -31,37 +32,24 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name                     | Description                                          |
 |--------------------------|------------------------------------------------------|
-| CyberCNS Company ID      | Client EDF- Store the value of cybercns company ID  |
-| CyberCNS Client ID       | Client EDF- Store the value of cybercns Client ID   |
-| CyberCNS Client Secret    | Client EDF- Store the value of the cybercns client secret |
+| CyberCNS Company ID      | Client EDF - Store the value of the CyberCNS company ID  |
+| CyberCNS Client ID       | Client EDF - Store the value of the CyberCNS Client ID   |
+| CyberCNS Client Secret    | Client EDF - Store the value of the CyberCNS client secret |
 
 ## Global Parameter
 
 | Name          | Example                          | Required | Description                                                    |
 |---------------|----------------------------------|----------|----------------------------------------------------------------|
-| URL_Download  | [https://cbercns.exe](https://cbercns.exe) | True     | This stores the cybercns exe package URL to proceed for installation. |
+| URL_Download  | [https://cbercns.exe](https://cbercns.exe) | True     | This stores the CyberCNS executable package URL to proceed with the installation. |
 
 ## Process
 
-1. Retrieves the client level EDF values
-2. If anything is missing it exits with error.
-3. If all values are present, it downloads the installer using the `URL_Download` parameter
-4. Once downloaded it installs the application
-5. After execution it verifies the installation.
+1. Retrieve the client-level EDF values.
+2. If anything is missing, exit with an error.
+3. If all values are present, download the installer using the `URL_Download` parameter.
+4. Once downloaded, install the application.
+5. After execution, verify the installation.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

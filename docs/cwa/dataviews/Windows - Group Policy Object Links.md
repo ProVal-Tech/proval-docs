@@ -3,14 +3,15 @@ id: '45a9f461-fac0-4e5c-9a5f-819786e8ad21'
 title: 'GPO Audit Dataview'
 title_meta: 'GPO Audit Dataview - Overview of Group Policy Objects'
 keywords: ['gpo', 'audit', 'policy', 'link', 'dc', 'client', 'location', 'enabled', 'enforced', 'computer', 'user', 'created', 'modified', 'read']
-description: 'This document provides a comprehensive overview of the GPO Audit Dataview, detailing the information about Group Policy Objects (GPOs), their applied policies, and their linkage within Active Directory environments. It outlines the dependencies required for implementation and describes the columns used to present the data effectively.'
+description: 'This document provides a comprehensive overview of the GPO Audit Dataview, detailing information about Group Policy Objects (GPOs), their applied policies, and their linkage within Active Directory environments. It outlines the dependencies required for implementation and describes the columns used to present the data effectively.'
 tags: ['active-directory', 'gpo', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows information about GPOs, their applied policies, and where they are linked to.
+This dataview shows information about GPOs, their applied policies, and where they are linked.
 
 ## Dependencies
 
@@ -37,17 +38,4 @@ This dataview shows information about GPOs, their applied policies, and where th
 | Created Time    | GPO created date and time information.           |
 | Modified Time   | GPO last modified date and time.                 |
 | Read Time       | GPO last check time.                              |
-
-
-
-
-
-
-
-
-
-
-
-
-
 

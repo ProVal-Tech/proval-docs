@@ -8,6 +8,7 @@ tags: ['registry', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task will make changes in the registry to set the update channel for Microsoft 365 products to the value set in the Client or Computer level Custom Fields `Update Channel`.
@@ -24,7 +25,7 @@ This task will make changes in the registry to set the update channel for Micros
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_6.png)
 
@@ -50,11 +51,11 @@ A blank function will appear.
 
 ### Row 1 Function: Set User Variable
 
-Select `Set User Variable` from the Drop Down Menu
+Select `Set User Variable` from the dropdown menu.
 
 ![Select Set User Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_11.png)
 
-Set `UpdateChannel` as the variable name and `None` as Value
+Set `UpdateChannel` as the variable name and `None` as the value.
 
 ![Set Update Channel](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_12.png)
 
@@ -66,16 +67,16 @@ Add a new `If/Then` logic from the Add Logic dropdown menu.
 
 #### Row 2a Condition: Custom Field
 
-Select Custom Field in place of Output from the Dropdown menu
+Select Custom Field in place of Output from the dropdown menu.
 
 ![Select Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_14.png)
 
-Select `Update Channel (ENUM - ENDPOINT)` in the Search and `Does Not Contain` as Comparator and Set `None` in the Value.
+Select `Update Channel (ENUM - ENDPOINT)` in the search, `Does Not Contain` as Comparator, and set `None` in the Value.
 
 #### Row 2b Function: Set Pre-Defined Variable
 
-- Add another row and select `Set Pre-Defined Variable` from the Drop Down Menu
-- Set `UpdateChannel` in the Variable Name, choose `Custom Field` and select `Update Channel (ENUM - ENDPOINT)` from the Drop Down menu.
+- Add another row and select `Set Pre-Defined Variable` from the dropdown menu.
+- Set `UpdateChannel` in the Variable Name, choose `Custom Field`, and select `Update Channel (ENUM - ENDPOINT)` from the dropdown menu.
 
 ![Set Pre-Defined Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_15.png)
 
@@ -87,16 +88,16 @@ Add a new `If/Then` logic from the Add Logic dropdown menu.
 
 #### Row 3a Condition: Custom Field
 
-Select Custom Field in place of Output from the Dropdown menu.
+Select Custom Field in place of Output from the dropdown menu.
 
 ![Select Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_14.png)
 
-Select `Update Channel (ENUM - Client)` in the Search and `Does Not Contain` as Comparator and Set `None` in the Value.
+Select `Update Channel (ENUM - Client)` in the search, `Does Not Contain` as Comparator, and set `None` in the Value.
 
 #### Row 3b Function: Set Pre-Defined Variable
 
-- Add another row and select `Set Pre-Defined Variable` from the Drop Down Menu
-- Set `UpdateChannel` in the Variable Name, choose `Custom Field` and select `Update Channel (ENUM - Client)` from the Drop Down menu.
+- Add another row and select `Set Pre-Defined Variable` from the dropdown menu.
+- Set `UpdateChannel` in the Variable Name, choose `Custom Field`, and select `Update Channel (ENUM - Client)` from the dropdown menu.
 
 ![Set Pre-Defined Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_15.png)
 
@@ -108,15 +109,15 @@ Add a new `If/Then` logic from the Add Logic dropdown menu.
 
 #### Row 4a Condition: Value
 
-Select `Value` in place of Output from the Dropdown menu.
+Select `Value` in place of Output from the dropdown menu.
 
 ![Select Value](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_17.png)
 
-Select `@UpdateChannel@` in the Enter Value and `Equals` as Comparator and Set `None` in the Value.
+Select `@UpdateChannel@` in the Enter Value, `Equals` as Comparator, and set `None` in the Value.
 
 #### Row 4b Function: Script Exit
 
-Add another row by selecting `ADD ROW` button.
+Add another row by selecting the `ADD ROW` button.
 
 - Search and select the `Script Exit` function.
 - Input the following:
@@ -213,14 +214,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-

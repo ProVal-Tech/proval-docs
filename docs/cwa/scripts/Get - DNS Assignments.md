@@ -8,6 +8,7 @@ tags: ['dns', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script retrieves details about accessible network adapters from a Windows computer, including their DNS configurations, and then saves the gathered data into a custom table.
@@ -31,15 +32,3 @@ The script retrieves details about accessible network adapters from a Windows co
 - Script Log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

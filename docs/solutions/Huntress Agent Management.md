@@ -8,6 +8,7 @@ tags: ['deployment', 'macos', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The solution aims to deploy and manage the Huntress Agent on both Windows and macOS machines.
@@ -56,7 +57,7 @@ Reload the system cache:
 
 ### 5.
 Configure the solution as outlined below:
-- Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+- Navigate to Automation → Monitors within the CWA Control Center and set up the following:
   - [Internal Monitor - Deploy Huntress Agent](<../cwa/monitors/Deploy Huntress Agent.md>) 
     - `Alert Template - △ Custom - Deploy Huntress Agent`
     - Right-click and Run Now to start the monitor
@@ -64,15 +65,3 @@ Configure the solution as outlined below:
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](<../cwa/monitors/Deploy Huntress Agent.md>) internal monitor.  
 ![Image](../../static/img/Huntress-Agent-Management/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,31 +8,19 @@ tags: ['database', 'performance']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the Power Profile for each agent in the environment. The Dataview fetches the data from the database and displays the power profile enabled on the agent.
+This document displays the Power Profile for each agent in the environment. The Dataview fetches the data from the database and presents the power profile enabled on each agent.
 
 ## Columns
 
-| Column         | Description                          |
-|----------------|--------------------------------------|
-| ClientName     | Displays the client name             |
-| ClientID       | Displays the clientID                |
-| LocationName   | Displays the location name           |
-| LocationID     | Displays the locationID              |
-| ComputerName   | Displays the computer name           |
-| ComputerID     | Displays the computerID              |
-| Power Profile   | Displays the Power Profile set on the machine |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column         | Description                                         |
+|----------------|-----------------------------------------------------|
+| ClientName     | Displays the client name                            |
+| ClientID       | Displays the client ID                              |
+| LocationName   | Displays the location name                          |
+| LocationID     | Displays the location ID                            |
+| ComputerName   | Displays the computer name                          |
+| ComputerID     | Displays the computer ID                            |
+| Power Profile   | Displays the Power Profile set on the machine      |

@@ -8,30 +8,18 @@ tags: ['connectwise', 'email']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor is intended to notify [alerts@provaltech.com](mailto:alerts@provaltech.com) of any critical errors or other issues relating to the ConnectWise Manage Plugin.
+This internal monitor is intended to notify [alerts@provaltech.com](mailto:alerts@provaltech.com) of any critical errors or other issues related to the ConnectWise Manage Plugin.
 
 ## Dependencies
 
-[Email RAWSQL Monitor Set Failures* [Autofix]](<../scripts/Email Creation - Computer Failure Only.md>)  
-CW Manage Plugin  
+- [Email RAWSQL Monitor Set Failures* [Autofix]](<../scripts/Email Creation - Computer Failure Only.md>)  
+- CW Manage Plugin  
 
 Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template along with the monitor set.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['firefox', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It is an Automate implementation of the agnostic script [SWM - Software Configuration - Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>) to set the default homepage for the Mozilla Firefox browser.
+This document provides an Automate implementation of the agnostic script [SWM - Software Configuration - Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>) to set the default homepage for the Mozilla Firefox browser.
 
 ## Sample Run
 
@@ -22,23 +23,11 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 
 #### User Parameters
 
-| Name                  | Example                           | Required | Description                                                                                     |
-|-----------------------|-----------------------------------|----------|-------------------------------------------------------------------------------------------------|
-| Homepage              | [https://www.provaltech.com](https://www.provaltech.com) | True     | String value of the homepage to set in the browser.                                           |
-| EnforceHomepageStartup | 1                                 | False    | Set to 1 to force the homepage to be the only open tab at startup of the browser.             |
+| Name                   | Example                               | Required | Description                                                                                   |
+|------------------------|---------------------------------------|----------|-----------------------------------------------------------------------------------------------|
+| Homepage               | [https://www.provaltech.com](https://www.provaltech.com) | True     | String value of the homepage to set in the browser.                                          |
+| EnforceHomepageStartup  | 1                                     | False    | Set to 1 to force the homepage to be the only open tab at startup of the browser.            |
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-
-

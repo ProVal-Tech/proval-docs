@@ -8,9 +8,10 @@ tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uses the agent procedure of the same name and stores the values from WinSAT into custom fields.
+This document uses the agent procedure of the same name and stores the values from WinSAT into custom fields.
 
 ## Details
 
@@ -20,14 +21,3 @@ Uses the agent procedure of the same name and stores the values from WinSAT into
 | xPVAL Disk Score        | Machine        | Captures the Disk score from WinSAT     |
 | xPVAL Graphics Score     | Machine        | Captures the Graphics score from WinSAT  |
 | xPVAL Memory Score      | Machine        | Captures the Memory score from WinSAT    |
-
-
-
-
-
-
-
-
-
-
-

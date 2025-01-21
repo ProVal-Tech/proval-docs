@@ -8,6 +8,7 @@ tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This document outlines a script designed to collect OneDrive sync status information from Windows machines exclusively for Non-SharePoint Linked Sites. The script leverages the [Onedrive.dll](https://github.com/rodneyviana/ODSyncService) module to retrieve the requisite data. It is crucial to note that the script necessitates an active user session on the computer to operate effectively.
@@ -32,23 +33,10 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 | Name                          | Example                                                                                                                                                        | Description                                                             |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| OneDriveSyncStatus            | "Sync Status for "ramkishor" for "C:/Users/ramkishor/OneDrive/Desktop" is "Synced"; "Sync Status for "ramkishor" for "C:/Users/ramkishor/OneDrive/Documents" is "Synced"; "Sync Status for "ramkishor" for "C:/Users/ramkishor/OneDrive/Picture" is "Not Synced"; | Stores the result returned by the PowerShell script checking the OneDrive status on the endpoint. |
+| OneDriveSyncStatus            | "Sync Status for \"ramkishor\" for \"C:/Users/ramkishor/OneDrive/Desktop\" is \"Synced\"; \"Sync Status for \"ramkishor\" for \"C:/Users/ramkishor/OneDrive/Documents\" is \"Synced\"; \"Sync Status for \"ramkishor\" for \"C:/Users/ramkishor/OneDrive/Pictures\" is \"Not Synced\";" | Stores the result returned by the PowerShell script checking the OneDrive status on the endpoint. |
 | OneDriveSyncStatusScriptruntime | 2023-10-26 11:51:02                                                                                                                                         | Stores the data collection time                                       |
 
 ## Output
 
 - Script log
 - Script states
-
-
-
-
-
-
-
-
-
-
-
-
-

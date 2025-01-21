@@ -3,15 +3,16 @@ id: '72c57df5-f535-4d8e-9c04-6acde4c93aef'
 title: 'Send Popup Reboot Reminder'
 title_meta: 'Send Popup Reboot Reminder'
 keywords: ['popup', 'reminder', 'reboot', 'user', 'notification']
-description: 'This script sends a popup message to the logged-in user, reminding them to reboot their machine if it has not been rebooted in the last 30 days. Ideal for monitors that check machine uptime and require user action to maintain performance.'
+description: 'This script sends a popup message to the logged-in user, reminding them to reboot their machine if it has not been rebooted in the last 30 days. It is ideal for monitors that check machine uptime and require user action to maintain performance.'
 tags: ['performance', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will send a popup message to the logged-in user to remind them to reboot their machine.  
-This script can only be used as autofix for monitors that check for the machine which have not been rebooted since 30 days.  
+This script sends a popup message to the logged-in user, reminding them to reboot their machine.  
+It can only be used as an autofix for monitors that check for machines that have not been rebooted in the last 30 days.  
 
 **Time Saved by Automation:** 2 Minutes
 
@@ -21,17 +22,5 @@ This script can only be used as autofix for monitors that check for the machine 
 
 ## Process
 
-- The script first verifies if the user is logged in or not. If not, exit out.
-- If the user is logged in, send a popup message to the user to reboot their machine online.
-
-
-
-
-
-
-
-
-
-
-
-
+- The script first verifies if the user is logged in. If not, it exits.
+- If the user is logged in, it sends a popup message to remind them to reboot their machine.

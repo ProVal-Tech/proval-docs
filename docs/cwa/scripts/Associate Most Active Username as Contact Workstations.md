@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script determines the most active user on a computer and designates them as the primary contact in Automate.
@@ -18,7 +19,7 @@ A contact will be linked to the computer if any of the following conditions are 
 2. `Username` matches the `FirstName + LastName` stored in the contact.
 3. `Username` matches the `FirstName` of the contact.
 
-Notes:  
+**Notes:**
 - If multiple conditions are satisfied, precedence is given to the contact identified by the first condition.
 - `Username` refers to the currently logged-in user. If no user is logged in when the script runs, it will default to the last logged-in user.
 
@@ -48,14 +49,3 @@ Notes:
 | Name                           | Type      | Example | Section | Required | Description                                                                                     |
 |--------------------------------|-----------|---------|---------|----------|-------------------------------------------------------------------------------------------------|
 | Auto Associate Contacts - Exclude | Check-Box | 0/1     | Default | True     | Mark this EDF to exclude the computer from the contact auto association.                       |
-
-
-
-
-
-
-
-
-
-
-

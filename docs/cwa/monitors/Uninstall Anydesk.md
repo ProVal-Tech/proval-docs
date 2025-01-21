@@ -8,17 +8,18 @@ tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the remote monitor is to remove the `Anydesk` from the Windows machines.
+The purpose of the remote monitor is to remove `Anydesk` from Windows machines.
 
 ## Details
 
-**Suggested "Limit to"**: windows OS  
-**Suggested Alert Style**: once  
+**Suggested "Limit to"**: Windows OS  
+**Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator    | Interval | Result |
 |--------------|----------------|-------------|---------------|----------------|----------|--------|
@@ -30,23 +31,10 @@ Windows OS
 
 ## Ticketing
 
-**Subject**: - `Anydesk Removal Failed on %CLIENTNAME%/%COMPUTERNAME%`  
+**Subject**: `Anydesk Removal Failed on %CLIENTNAME%/%COMPUTERNAME%`  
 
-**Ticket Body**: - `Failed to remove Anydesk on %CLIENTNAME%/%COMPUTERNAME%`
+**Ticket Body**: `Failed to remove Anydesk on %CLIENTNAME%/%COMPUTERNAME%`
 
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall Anydesk](<./Uninstall Anydesk.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

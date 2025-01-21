@@ -8,6 +8,7 @@ tags: ['connectwise', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Fetches the TPM Status of the machine and stores it in the [TPM Status](<../custom-fields/Endpoint - TPM Status.md>) custom field.
@@ -67,7 +68,7 @@ try {
 } catch {
     throw "The script did not return the expected result. Reason: $($Error[0].Exception.Message)"
 }
-return "TpmEnabled: $($tpmresults.TpmEnabled) | TpmActivated: $($tpmresults.TpmActivated) | TpmReady: $($tpmresults.TpmReady) | TpmPresent: $($tpmresults.TpmPresent) | RestartPending: $($tpmresults.RestartPending)"
+return "TpmEnabled: $($tpmResults.TpmEnabled) | TpmActivated: $($tpmResults.TpmActivated) | TpmReady: $($tpmResults.TpmReady) | TpmPresent: $($tpmResults.TpmPresent) | RestartPending: $($tpmResults.RestartPending)"
 ```
 
 ![PowerShell Script Execution Image](../../../static/img/Get-TPM-Status/image_11.png)
@@ -136,15 +137,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 - Custom Field  
 ![Custom Field Output](../../../static/img/Get-TPM-Status/image_24.png)  
 Example: `TpmEnabled: True | TpmActivated: True | TpmReady: True | TpmPresent: True | RestartPending: False`
-
-
-
-
-
-
-
-
-
-
-
-

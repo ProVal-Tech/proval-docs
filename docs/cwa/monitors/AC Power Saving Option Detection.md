@@ -8,17 +8,18 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor is looking for any AC option that would allow the machine to go to sleep or hibernate.
+This remote monitor is designed to check for any AC options that would allow the machine to go to sleep or hibernate.
 
 ## Details
 
 **Suggested "Limit to"**: Windows Workstations  
-**Suggested Alert Style**: Once.  
+**Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default - Create Automate Ticket  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Comparator        | Interval | Result  |
 |--------------|----------------|-------------|--------------------|----------|---------|
@@ -31,15 +32,3 @@ None
 ## Target
 
 - Managed 24x7 | 8x5 Workstations
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,28 +8,29 @@ tags: ['api', 'patching']
 draft: false
 unlisted: false
 ---
+
 # Overview
-Updates Machine CFs with the Org CF Patching schedule, considering Machine View, and Group exceptions.
+This document outlines the process for updating machine custom fields (CFs) with the organization custom field patching schedule, considering Machine View and Group exceptions.
 
 # Requirements
-VSAAPI Module
+- VSAAPI Module
 
 # Process
-1. Gets the All Servers and All Workstations view ID from API
-2. Gets all agents in the relevant view
-3. Sets CF 'xPVAL Patch Schedule' value on all servers in the environment to the 'Servers - Patch Schedule' Org CF Value
-4. Sets CF 'xPVAL Patch Schedule' value on all Workstations in the environment to the 'Workstations - Patch Schedule' Org CF Value
-5. Checks for any Group Exceptions in the Org CFs and applies those values to the specified groups.
+1. Retrieve the All Servers and All Workstations view ID from the API.
+2. Get all agents in the relevant view.
+3. Set the CF 'xPVAL Patch Schedule' value on all servers in the environment to the 'Servers - Patch Schedule' Org CF value.
+4. Set the CF 'xPVAL Patch Schedule' value on all workstations in the environment to the 'Workstations - Patch Schedule' Org CF value.
+5. Check for any Group Exceptions in the Org CFs and apply those values to the specified groups.
 
 # Notes
-The Custom Field for Group Exceptions MUST meet the following syntax:
+The custom field for Group Exceptions **MUST** meet the following syntax:
 
 > GROUPNAME SCHEDULE|GROUPNAME SCHEDULE
 
-Specifically, for each group that needs an exception within an org, list the group name, then a single space, then the name of the patching schedule (which can be anything). If you have more than one group, separate each group with a pipe.
+For each group that needs an exception within an organization, list the group name, followed by a single space, and then the name of the patching schedule (which can be anything). If there is more than one group, separate each group with a pipe.
 
 # Payload Usage
-Passes the parameters to VSAAPI for use in the API call
+Pass the parameters to VSAAPI for use in the API call.
 
 ```
 ./Update-VsaPatchingSchedule.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName dantestapi -RestApiToken 8a8e0cf0-bac1-4faa-ae2e-3cfa04e3938c
@@ -37,22 +38,11 @@ Passes the parameters to VSAAPI for use in the API call
 
 # Parameters
 
-| Parameter         | Alias | Required | Default | Type   | Description                |
-|-------------------|-------|----------|---------|--------|----------------------------|
-| `BaseURL`        |       | True     |         | String | VSA URL                    |
-| `VsaUserName`    |       | True     |         | String | User with Api Access       |
-| `RestApiToken`   |       | True     |         | String | Rest Api Token for User    |
+| Parameter       | Alias | Required | Default | Type   | Description                |
+|------------------|-------|----------|---------|--------|----------------------------|
+| `BaseURL`       |       | True     |         | String | VSA URL                    |
+| `VsaUserName`   |       | True     |         | String | User with API Access       |
+| `RestApiToken`  |       | True     |         | String | REST API Token for User    |
 
 # Output
-./Update-VsaPatchingSchedule-log.txt
-
-
-
-
-
-
-
-
-
-
-
+The output will be saved to `./Update-VsaPatchingSchedule-log.txt`.

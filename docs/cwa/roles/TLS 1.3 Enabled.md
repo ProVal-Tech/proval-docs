@@ -8,45 +8,35 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Checks registry for value if stored credentials flag is set.
+This document checks the registry for the value of the stored credentials flag.
 
-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled
+**Registry Path:**
+```
+HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client:Enabled
+```
 
-If it is set to 1 - enabled  
-If it is not set - disabled  
+- If it is set to `1`, TLS 1.3 is enabled.
+- If it is not set, TLS 1.3 is disabled.
 
-Related Roles  
+### Related Roles
 
-- [TLS 1.0 Enabled](<./TLS 1.0 Enabled.md>)  
-- [TLS 1.1 Enabled](<./TLS 1.1 Enabled.md>)  
-- [TLS 1.2 Enabled](<./TLS 1.2 Enabled.md>)  
+- [TLS 1.0 Enabled](<./TLS 1.0 Enabled.md>)
+- [TLS 1.1 Enabled](<./TLS 1.1 Enabled.md>)
+- [TLS 1.2 Enabled](<./TLS 1.2 Enabled.md>)
 
-Related Script  
+### Related Script
 
-- [Internet Explorer Advanced SSL and TLS Settings [Script]](<./Internet Explorer Advanced SSL and TLS Settings Script.md>)  
+- [Internet Explorer Advanced SSL and TLS Settings [Script]](<./Internet Explorer Advanced SSL and TLS Settings Script.md>)
 
-Related Dataview  
+### Related Dataview
 
-- [Internet Explorer Advanced SSL and TLS Settings](<../scripts/Internet Explorer Advanced SSL and TLS Settings.md>)  
+- [Internet Explorer Advanced SSL and TLS Settings](<../scripts/Internet Explorer Advanced SSL and TLS Settings.md>)
 
 ## Settings
 
 | Detection String                                             | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled-%} | Equals     | 1      | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

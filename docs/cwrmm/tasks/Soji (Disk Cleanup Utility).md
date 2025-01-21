@@ -8,6 +8,7 @@ tags: ['cleanup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Soji is a smart yet straightforward disk cleanup utility designed to enhance system cleanliness on Windows. It utilizes both native System.IO file and directory management along with COM references to the deprecated cleanmgr tool.
@@ -71,7 +72,7 @@ The `Add New Script Parameter` box will appear.
 
 ![New Script Parameter](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_8.png)
 
-In the box fill in the following details and select `Save` to create the `Arguments` parameter.
+In the box, fill in the following details and select `Save` to create the `Arguments` parameter.
 
 **Parameter Name:** `Arguments`
 
@@ -129,21 +130,21 @@ Select `PowerShell Script` function.
 
 ![PowerShell Script 1](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_19.png) ![PowerShell Script 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_20.png) ![PowerShell Script 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_21.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $WorkingDirectory = '@WorkingDirectory@/@ProjectName@'
 
 if ( !(Test-Path $WorkingDirectory) ) {
     try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
+        New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop | Out-Null
     } catch {
-        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
 
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-ACL $WorkingDirectory 
+if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
+    $Acl = Get-ACL $WorkingDirectory 
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl  $WorkingDirectory $Acl
@@ -162,7 +163,7 @@ Select `PowerShell Script` function.
 
 ![PowerShell Script 6](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_19.png) ![PowerShell Script 7](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_20.png) ![PowerShell Script 8](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_21.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `600` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
 
 ```
 $ErrorActionPreference = 'silentlycontinue'
@@ -195,7 +196,7 @@ Select `PowerShell Script` function.
 
 ![PowerShell Script 11](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_19.png) ![PowerShell Script 12](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_20.png) ![PowerShell Script 13](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_21.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
 
 ```
 #region Setup - Variables
@@ -231,7 +232,7 @@ Select `Script Log` function.
 
 ![Script Log 1](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_26.png) ![Script Log 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_27.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `%output%`
 
 ![Script Log Message](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_28.png) ![Script Log Message 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_29.png)
@@ -249,14 +250,3 @@ Click the `Save` button to save the Task.
 - Script Log
 
 ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
-
-
-
-
-
-
-
-
-
-
-

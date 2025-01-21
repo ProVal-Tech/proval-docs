@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the services on computers that are Logged on as users but not as the default service account.
+The dataview displays the services on computers that are logged on as users but not as the default service account.
 
 ## Columns
 
@@ -20,19 +21,7 @@ The dataview displays the services on computers that are Logged on as users but 
 | Location     | Location name                                       |
 | Computer     | Computer name                                       |
 | Service Name | Displays the service name                           |
-| Display      | This displays the display name of the service       |
+| Display      | Displays the display name of the service           |
 | State        | Status of the service                               |
-| Startup      | Displays Startup Type of the service                |
+| Startup      | Displays the startup type of the service            |
 | Log on As    | Service account through which services are running   |
-
-
-
-
-
-
-
-
-
-
-
-

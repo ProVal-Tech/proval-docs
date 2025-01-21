@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The purpose of this solution is to collect the Hardware Hash for autopilot device registration.
@@ -16,10 +17,10 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
 
 | Content                                                                                                               | Type           | Function                                           |
 |-----------------------------------------------------------------------------------------------------------------------|----------------|----------------------------------------------------|
-| [CWA - Script - Get-AutopilotHash](<../cwa/scripts/Get-AutopilotHash.md>)                                 | Script         | Gather Agents Hardware Hash.                       |
+| [CWA - Script - Get-AutopilotHash](<../cwa/scripts/Get-AutopilotHash.md>)                                         | Script         | Gather agents' Hardware Hash.                       |
 | [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../cwa/monitors/Get - Autopilot Hash.md>) | Internal Monitor | Detects Windows agents missing Hardware Hash       |
 | `△ Custom - Execute Script - Get-AutopilotHash`                                                                     | Alert Template | Execute the script [CWA - Script - Get-AutopilotHash](<../cwa/scripts/Get-AutopilotHash.md>) against the machines detected by the internal monitor. |
-| [CWA - Automate - Dataview - Autopilot Hash](<../cwa/dataviews/Autopilot Hash.md>)                       | Dataview       | Displays the Hardware Hash details of Windows agents. |
+| [CWA - Automate - Dataview - Autopilot Hash](<../cwa/dataviews/Autopilot Hash.md>)                                 | Dataview       | Displays the Hardware Hash details of Windows agents. |
 
 ## Implementation
 
@@ -36,19 +37,7 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
    ![Image](../../static/img/Get-Autopilot-Hash/image_2.png)
 
 4. Configure the solution as outlined below:
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../cwa/monitors/Get - Autopilot Hash.md>)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
-
-
-
-
-
-
-
-
-
-
-
-

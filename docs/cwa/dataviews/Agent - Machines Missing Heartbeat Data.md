@@ -8,31 +8,20 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview shows all the agents with their HeartBeat data and status.
+This Dataview shows all the agents with their heartbeat data and status.
 
 ## Columns
 
 | Column                     | Description                                                     |
 |---------------------------|-----------------------------------------------------------------|
-| Client Name               | Display the agent name                                          |
-| Location Name             | Display the location name of the agent                         |
-| Computer Name             | Display the client name of the agent                           |
-| Last Contact Date         | Agent last Contact Date with Automate                          |
-| Agent Type                | Agent type whether laptop, workstation, or server              |
-| Last Heartbeat Time       | Display the agent's last heartbeat time received in automate.  |
-| Heartbeat Status          | Display the agent heartbeat status. Whether it's found or Missing. |
-| Days Since Last Heartbeat  | Display the days count since the Last Heartbeat was received.  |
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name               | Displays the agent name                                         |
+| Location Name             | Displays the location name of the agent                        |
+| Computer Name             | Displays the computer name of the agent                        |
+| Last Contact Date         | Displays the agent's last contact date with Automate           |
+| Agent Type                | Indicates the agent type (laptop, workstation, or server)     |
+| Last Heartbeat Time       | Displays the agent's last heartbeat time received in Automate   |
+| Heartbeat Status          | Displays the agent's heartbeat status (Found or Missing)       |
+| Days Since Last Heartbeat  | Displays the count of days since the last heartbeat was received |

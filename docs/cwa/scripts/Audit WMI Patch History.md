@@ -8,12 +8,13 @@ tags: ['database', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script audits the current patch history from .NET to a custom table (plugin_proval_wmipatchesinstalled).  
-The script should be run against Windows OS machines and PowerShell v2 or greater is required on the agent.  
+The script should be run against Windows OS machines, and PowerShell v2 or greater is required on the agent.  
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -26,21 +27,8 @@ Time Saved by Automation: 15 Minutes
 
 ## Process
 
-This script audits the current patch history from .NET to a custom table (plugin_proval_wmipatchesinstalled). The script creates plugin_proval_wmipatchesinstalled if it does not exist and deletes the current data for the target machine from the table. Then it executes the PowerShell to gather the patch information and inserts the new data into the table.
+This script audits the current patch history from .NET to a custom table (plugin_proval_wmipatchesinstalled). The script creates the `plugin_proval_wmipatchesinstalled` table if it does not exist and deletes the current data for the target machine from the table. Then it executes the PowerShell to gather the patch information and inserts the new data into the table.
 
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
-
-
-
-
-
-
-
-
-
-
-
-
-

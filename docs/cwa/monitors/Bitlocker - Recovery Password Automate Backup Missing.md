@@ -8,9 +8,10 @@ tags: ['database', 'encryption', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will return any target machine whose client has the 'Bitlocker Monitoring' EDF checked, and the target's 'Bitlocker Monitoring Exclusion' is not checked, and its 'C' drive is listed as a mount point in 'plugin_proval_bitlocker_audit' and the RecoveryPassword in 'plugin_proval_bitlocker_audit' does not exist in the 'plugin_proval_ad_bitlocker_keyprotectors' table for that target.
+This monitor will return any target machine whose client has the 'Bitlocker Monitoring' EDF checked, the target's 'Bitlocker Monitoring Exclusion' is not checked, its 'C' drive is listed as a mount point in 'plugin_proval_bitlocker_audit', and the RecoveryPassword in 'plugin_proval_bitlocker_audit' does not exist in the 'plugin_proval_ad_bitlocker_keyprotectors' table for that target.
 
 ## Dependencies
 
@@ -20,11 +21,11 @@ This monitor will return any target machine whose client has the 'Bitlocker Moni
 
 ## Target
 
-Please follow the recommended target for the bitlocker solution.
+Please follow the recommended target for the Bitlocker solution.
 
 ## Translated SQL
 
-```
+```sql
 SELECT computers.username AS TestValue
     ,computers.NAME AS IdentityField
     ,computers.computerid
@@ -77,7 +78,7 @@ LEFT JOIN ExtraFieldData edfDefault2 ON (
 WHERE (
         (
             (
-                (IFNULL(IFNULL(edfAssigned1.Value, edfDefault1.value), '0') \\<> 0)
+                (IFNULL(IFNULL(edfAssigned1.Value, edfDefault1.value), '0') <> 0)
                 AND (IFNULL(IFNULL(edfAssigned2.Value, edfDefault2.value), '0') = 0)
                 )
             )
@@ -93,23 +94,10 @@ WHERE (
                 )
             )
         ) AND (
-              computers.DateAdded \\< DATE_SUB(NOW(), INTERVAL 7 DAY )
+              computers.DateAdded < DATE_SUB(NOW(), INTERVAL 7 DAY)
               )
 ```
 
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Recovery-Password-Automate-Backup-Missing/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

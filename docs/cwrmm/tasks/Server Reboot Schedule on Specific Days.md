@@ -8,13 +8,14 @@ tags: ['custom-fields']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This schedules the force reboot of the server on the scheduled days based on the approved window check.
+This document outlines the process for scheduling a forced reboot of the server on specific days based on the approved window check.
 
 ## Sample Run
 
-Select the device and search 'Workstation Re' in the search box and click.
+Select the device and search for 'Workstation Re' in the search box, then click.
 
 ![Sample Run Step 1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_1.png)
 
@@ -22,15 +23,15 @@ Provide the user parameter value as per the requirement and then click 'Continue
 
 ![Sample Run Step 2](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_2.png)
 
-Click Run task to schedule the task immediately.
+Click 'Run task' to schedule the task immediately.
 
 ![Sample Run Step 3](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_3.png)
 
-## User Parameter
+## User Parameters
 
 | Name                | Example                       | Required | Description                                                                                                                                      |
 |---------------------|-------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| HoursToReboot       | 4                             | True     | The hour of the day to reboot in a 24-hour format. Example: 13 = 1:00PM                                                                       |
+| HoursToReboot       | 4                             | True     | The hour of the day to reboot in a 24-hour format. Example: 13 = 1:00 PM                                                                       |
 | MinutesToReboot     | 0                             | True     | The minute of the hour to reboot. Supports values from 0 - 59                                                                                  |
 | DaysToReboot        | 'Tuesday','Wednesday','Thursday' | True     | Must be a comma-separated list of strings in single quotes with the names of the days of the week to reboot. Example: 'Tuesday','Wednesday','Thursday' |
 
@@ -42,12 +43,12 @@ Click Run task to schedule the task immediately.
 
 ### Create Task
 
-Server Reboot Schedule on Specific Days: To implement this script, please create a new "Script Editor" style script in the system.
+To implement this script, please create a new "Script Editor" style script in the system.
 
 ![Create Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_4.png)
 
 - Name: Server Reboot Schedule on Specific Days
-- Description: This schedules the force reboot of the server on the scheduled days based on the approved window check
+- Description: This schedules the forced reboot of the server on the scheduled days based on the approved window check.
 - Category: Maintenance
 
 ![Create Task Details](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_5.png)
@@ -99,7 +100,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 4a: Condition: Output Contains
 
-In the IF part, enter `Server` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `Server` in the right box of the "Output Does Not Contain" part.
 
 ![Row 4a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_14.png)
 
@@ -113,7 +114,7 @@ In the script log message, type `The OS detected is confirmed not a Server. Plea
 
 ### Row 4c: Function: Script Exit
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the Add Row button.
 
 ![Row 4c](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
@@ -127,7 +128,7 @@ In the script exit message, leave it blank.
 
 ### Row 5a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 5a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_18.png)
 
@@ -213,7 +214,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 5e.1: Condition: Output Does Not Contain
 
-In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not Contain" part.
 
 ![Row 5e.1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_21.png)
 
@@ -235,7 +236,7 @@ In the script log message, type `Reboot successfully scheduled on %output%.` so 
 
 ### Row 5g: Function: Script Exit
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the Add Row button.
 
 ![Row 5g](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
@@ -273,7 +274,7 @@ Select the custom field 'ServerRebootWindowDay' and set the variable 'RebootWind
 
 ### Row 9a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 9a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_31.png)
 
@@ -287,7 +288,7 @@ In the script log message, type `This endpoint has 'Exclude Reboot' flag checked
 
 ### Row 9c: Function: Script Exit
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the Add Row button.
 
 ![Row 9c](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
@@ -342,7 +343,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 13a: Condition: Output Contains
 
-In the IF part, enter `Machine is in reboot window` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `Machine is in reboot window` in the right box of the "Output Does Not Contain" part.
 
 ![Row 13a](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_35.png)
 
@@ -428,9 +429,9 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ![Row 13e Detail](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_37.png)
 
-### Row 13e.1: Condition: Output Contain
+### Row 13e.1: Condition: Output Contains
 
-In the IF part, enter `RebootDateTime` in the right box of the "Output Contains" Part.
+In the IF part, enter `RebootDateTime` in the right box of the "Output Contains" part.
 
 ![Row 13e.1](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_38.png)
 
@@ -444,7 +445,7 @@ In the script log message, type `Reboot successfully scheduled on %output%.` so 
 
 ### Row 13e.3: Function: Script Exit
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the Add Row button.
 
 ![Row 13e.3](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_16.png)
 
@@ -472,14 +473,14 @@ In the script exit message, type `Reboot Schedule Failed with an error %output%.
 
 ## Deployment
 
-This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided at the company-level custom fields.
+This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
 [CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
 
-- Go to `Automation` > `Tasks.`
-- Search for `Server Reboot Schedule on Specific Days` Task.
+- Go to `Automation` > `Tasks`.
+- Search for `Server Reboot Schedule on Specific Days` task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_5.png)
 
@@ -504,15 +505,3 @@ For example:
 ![Run Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_47.png)
 
 - The task will start appearing in the Scheduled Tasks.
-
-
-
-
-
-
-
-
-
-
-
-

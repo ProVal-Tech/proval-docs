@@ -8,16 +8,17 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor set will create a ticket whenever 2 or more machines are checking into a single Automate agent. It is looking for the number of times the name for the agentid had changed more than 2 times in the last 7 days.
+The monitor set will create a ticket whenever two or more machines are checking into a single Automate agent. It looks for instances where the name for the agent ID has changed more than two times in the last seven days.
 
-Subject: LT - Agent Discrepancy Found with %computername% (%computerID%)
+**Subject:** LT - Agent Discrepancy Found with %computername% (%computerID%)
 
-Alert on Failure: The agent with the ID of %ComputerID% is currently reporting it has had its computer name changed %Result% times within the past 7 days.  
+**Alert on Failure:** The agent with the ID of %ComputerID% is currently reporting that its computer name has changed %Result% times within the past seven days.  
 %FieldName%  
 
-To remediate this issue, please login to ConnectWise Control --> Find one of the PCs affected (Shown Above) --> Run the following command on one of the agents through the Command Tab:  
+To remediate this issue, please log in to ConnectWise Control --> Find one of the affected PCs (shown above) --> Run the following command on one of the agents through the Command Tab:  
 ```
 #!ps
 #maxlength=10000
@@ -25,16 +26,16 @@ To remediate this issue, please login to ConnectWise Control --> Find one of the
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 (new-object Net.WebClient).DownloadString('https://raw.githubusercontent.com/LabtechConsulting/LabTech-Powershell-Module/master/LabTech.psm1') | iex; Reset-LTService
 ```
-If you would like to run it within PowerShell, outside of Control, simply remove any lines with # in front of it.
+If you would like to run it within PowerShell, outside of Control, simply remove any lines with `#` in front of them.
 
-Alert on Success: There is no longer any indication of a discrepancy with the machine %Computername%. Closing ticket.
+**Alert on Success:** There is no longer any indication of a discrepancy with the machine %Computername%. Closing ticket.
 
-Alert Template: ~Custom - Ticket Creation - Computer  
+**Alert Template:** ~Custom - Ticket Creation - Computer  
 
-SQL Result (TestValue): This should output the physical number of PC Name Changes that has happened in the past 7 days.  
+**SQL Result (TestValue):** This should output the physical number of PC name changes that have occurred in the past seven days.  
 
-SQL FieldName (IdentityField): This should simply show the PCs affected like the below example:  
-PCs Affected: PC-2,PC-19,PC-3  
+**SQL FieldName (IdentityField):** This should simply show the PCs affected, as in the example below:  
+PCs Affected: PC-2, PC-19, PC-3  
 
 ## Dependencies
 
@@ -42,17 +43,4 @@ PCs Affected: PC-2,PC-19,PC-3
 
 ## Target
 
-Global
-
-
-
-
-
-
-
-
-
-
-
-
-
+Global  

@@ -8,9 +8,10 @@ tags: ['active-directory', 'database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores data about active user sessions on Windows machines.
+This document stores data about active user sessions on Windows machines.
 
 ## Dependencies
 
@@ -26,18 +27,5 @@ Stores data about active user sessions on Windows machines.
 | Username      | VARCHAR  | The username of the audited session.             |
 | State         | VARCHAR  | The state of the audited session.                |
 | LogonDate     | DATETIME | The date and time that the session was started.  |
-| SessionLength  | INT      | The length in minutes of the audited session.    |
+| SessionLength | INT      | The length in minutes of the audited session.    |
 | Timestamp     | DATETIME | The date and time that the audit was run.        |
-
-
-
-
-
-
-
-
-
-
-
-
-

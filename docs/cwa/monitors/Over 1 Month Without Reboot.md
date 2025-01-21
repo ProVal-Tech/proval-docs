@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor looks for machines showing a system uptime greater than 30 days (in seconds) and alerts if the machine is online within the last 15 minutes.
+This internal monitor looks for machines showing a system uptime greater than 30 days (in seconds) and alerts if the machine has been online within the last 15 minutes.
 
 ## Dependencies
 
@@ -22,15 +23,3 @@ Optional Targets:
 - Global - Should be run without explicitly defined targets.
 - Managed 24x7 | 8x5 Servers
 - Managed 24x7 | 8x5 Workstations
-
-
-
-
-
-
-
-
-
-
-
-

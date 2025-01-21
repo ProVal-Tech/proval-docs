@@ -8,25 +8,18 @@ tags: ['office365', 'performance', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Update Microsoft 365 Apps to their latest version.
 
 ## Sample Run
 
+*(Insert sample run details here)*
+
 ## Output
 
-- Script log
-- /ProgramData/_automation/script/Update-Office/Update-Office-log.txt
+- **Script log**
+- **Location:** /ProgramData/_automation/script/Update-Office/Update-Office-log.txt
 
-
-
-
-
-
-
-
-
-
-
-
+*(Add any additional output details here)*

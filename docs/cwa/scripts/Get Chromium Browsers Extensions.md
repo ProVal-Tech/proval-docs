@@ -8,6 +8,7 @@ tags: ['database', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>).
@@ -28,22 +29,10 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Executes the agnostic script [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>) and stores the data into a JSON file.
 - Clears the stale data.
 - Executes the [OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) script to parse through the JSON file and insert the data into the [Plugin_ProVal_Browsers_Extensions](<../tables/Plugin_ProVal_Browsers_Extensions.md>) table.
-- Logs the Success/Failures.
+- Logs the successes and failures.
 
 ## Output
 
 - Script Log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

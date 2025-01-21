@@ -8,11 +8,12 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script downloads the offscrub files from the LTShare and then attempts to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can deal with machine or software corruption and completely removes Office app shortcuts for the version.
+This script downloads the offscrub files from the LTShare and then attempts to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can deal with machine or software corruption and completely removes Office app shortcuts for the specified versions.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,26 +21,14 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-- All the Off Scrub files and PS1 file should be present in LTShare
+- All the offscrub files and PS1 file should be present in LTShare.
 
 ## Process
 
-- Checks if office is installed on the machine
-- Downloads the off scrub files and PS1 file from the LTShare 
-- Run the ps1 file and logs the result
+- Checks if Office is installed on the machine.
+- Downloads the offscrub files and PS1 file from the LTShare.
+- Runs the PS1 file and logs the result.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

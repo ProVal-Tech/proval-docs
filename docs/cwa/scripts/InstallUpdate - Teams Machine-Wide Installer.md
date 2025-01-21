@@ -8,9 +8,10 @@ tags: ['deployment', 'installation', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-An implementation of the agnostic script [SWM - Software Install - Agnostic - Deploy-Teams](<../../powershell/Deploy-Teams.md>)
+An implementation of the agnostic script [SWM - Software Install - Agnostic - Deploy-Teams](<../../powershell/Deploy-Teams.md>).
 
 ## Sample Run
 
@@ -19,16 +20,3 @@ An implementation of the agnostic script [SWM - Software Install - Agnostic - De
 ## Output
 
 - Script logs
-
-
-
-
-
-
-
-
-
-
-
-
-

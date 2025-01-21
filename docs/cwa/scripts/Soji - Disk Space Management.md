@@ -8,6 +8,7 @@ tags: ['installation', 'logging', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is an Automate script intended to execute the Soji application found in the GitHub repository.
@@ -16,7 +17,7 @@ This is an Automate script intended to execute the Soji application found in the
 
 ![Sample Run](../../../static/img/Soji---Disk-Space-Management/image_1.png)
 
-Please Reference the Soji documentation for Argument options.
+Please refer to the Soji documentation for argument options.
 
 ## Dependencies
 
@@ -26,28 +27,17 @@ Please Reference the Soji documentation for Argument options.
 
 | Name      | Example                | Required | Description                                                                 |
 |-----------|------------------------|----------|-----------------------------------------------------------------------------|
-| Arguments | --drives c,f --json    | False    | Please reference [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argument usage. |
+| Arguments | --drives c,f --json    | False    | Please refer to [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argument usage. |
 
 ## Process
 
-1. Installs .NET 6 (if not installed)
+1. Install .NET 6 (if not installed)
 2. Set up the environment and download Soji
 3. Run Soji with the passed-in arguments
-4. Compress the logs files as `SojiLogs.Zip` and upload them to Automate server.
+4. Compress the log files as `SojiLogs.zip` and upload them to the Automate server.
 
 ## Output
 
 - Script log
-- Desired file output to the soji directory ie. json etc.
-- On Labtech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %Computerid%/SojiLogs.zip`
-
-
-
-
-
-
-
-
-
-
-
+- Desired file output to the Soji directory, e.g., JSON, etc.
+- On LabTech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %ComputerId%/SojiLogs.zip`

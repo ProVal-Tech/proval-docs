@@ -8,34 +8,25 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-VLC is non-removable via winget (no valid silent option in the manifest)  
-this procedure silently removes VLC
+VLC is non-removable via winget (no valid silent option in the manifest).  
+This procedure silently removes VLC.
 
 ## Example Agent Procedure Log
 
-2:30:02 pm 15-Feb-23   VLC Uninstall   Success THEN   provaltech.com/dan.hicks  
-2:30:02 pm 15-Feb-23   VLC Uninstall-0002   VLC successfully removed.   provaltech.com/dan.hicks  
-2:29:58 pm 15-Feb-23   VLC Uninstall-0001   Uninstalling VLC...   provaltech.com/dan.hicks  
-2:28:46 pm 15-Feb-23   Run Now - VLC Uninstall   Admin provaltech.com/dan.hicks scheduled procedure Run Now - VLC Uninstall to run at Feb 15 2023 2:28PM  
+- 2:30:02 pm 15-Feb-23   VLC Uninstall   Success   THEN   provaltech.com/dan.hicks  
+- 2:30:02 pm 15-Feb-23   VLC Uninstall-0002   VLC successfully removed.   provaltech.com/dan.hicks  
+- 2:29:58 pm 15-Feb-23   VLC Uninstall-0001   Uninstalling VLC...   provaltech.com/dan.hicks  
+- 2:28:46 pm 15-Feb-23   Run Now - VLC Uninstall   Admin provaltech.com/dan.hicks scheduled procedure Run Now - VLC Uninstall to run at Feb 15 2023 2:28 PM  
 
 ## Process
 
-Program Files/VideoLAN/VLC/uninstall.exe /S /V/qn
+`Program Files/VideoLAN/VLC/uninstall.exe /S /V/qn`
 
 ## Output
 
 AP Log
-
-
-
-
-
-
-
-
-
-
 
 

@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Executes the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) once per week against the online windows computers.
+This document describes the execution of the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script once per week on online Windows computers.
 
 ## Dependencies
 
@@ -24,16 +25,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Find PHP.exe`
-
-
-
-
-
-
-
-
-
-
-
-
-

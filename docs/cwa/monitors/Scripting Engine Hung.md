@@ -8,6 +8,7 @@ tags: ['email', 'mysql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor sends an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) to proactively review why the script engine hung in the client's environment. The monitor detects the number of scripts stuck in the `pendingscripts` table for longer than the specified time after their scheduled execution.
@@ -27,7 +28,7 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 ## Ticketing
 
-**Subject**: `CWA - Scripting Engine Hung`  
+**Subject:** `CWA - Scripting Engine Hung`  
 **Body:**  
 **Failure:**  
 `%RESULT%`  
@@ -43,17 +44,5 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 ## Troubleshooting
 
-Please follow the below article to perform the troubleshooting if this issue is raised.  
-[Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)  
-
-
-
-
-
-
-
-
-
-
-
-
+Please follow the article below to perform troubleshooting if this issue arises.  
+[Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)

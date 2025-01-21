@@ -8,10 +8,11 @@ tags: []
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script will find the computer description information from the agent and will store the information to the dependent dataview.  
-Time Saved by Automation: 10 Minutes
+This script will find the computer description information from the agent and store the information in the dependent dataview.  
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -21,34 +22,20 @@ Time Saved by Automation: 10 Minutes
 
 [Computer Description Audit](<./Computer Description Audit.md>)
 
-## ScriptState
+## Script State
 
-| Name                    | Example                               | Description                                                             |
-|-------------------------|---------------------------------------|-------------------------------------------------------------------------|
-| ComputerDescriptionReport| @Powershell Output@ -- @Date of script execution@ | Represent the Computer description message of an agent and the date when the script ran. |
+| Name                     | Example                                     | Description                                                             |
+|--------------------------|---------------------------------------------|-------------------------------------------------------------------------|
+| ComputerDescriptionReport | `@Powershell Output@ -- @Date of script execution@` | Represents the computer description message of an agent and the date when the script ran. |
 
 ## Process
 
 - This script will check for the computer description information.
-- If computer description is not set then it will store "Computer Description Not Set" with the date of script execution.
-- Stores the information to the scriptstate so that it can be reflected in the dataview.
+- If the computer description is not set, it will store "Computer Description Not Set" along with the date of script execution.
+- Stores the information in the script state so that it can be reflected in the dataview.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-
-

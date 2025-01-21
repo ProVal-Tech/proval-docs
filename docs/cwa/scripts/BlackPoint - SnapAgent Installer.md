@@ -8,9 +8,10 @@ tags: ['deployment', 'installation', 'logging']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is designed to install the SnapAgent to the machine.
+This script is designed to install the SnapAgent on the machine.
 
 ## Sample Run
 
@@ -24,10 +25,10 @@ EDFs
 
 | Name                             | Level   | Type       | Description                                                                                                                                                                                                                                                                                        |
 |----------------------------------|---------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BlackPoint SnapAgent Deploy      | Client  | Check Box  | This client-level EDF needed to be checked for the SnapAgent installation. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is directly proportional to this EDF.                                                                          |
+| BlackPoint SnapAgent Deploy      | Client  | Check Box  | This client-level EDF needs to be checked for the SnapAgent installation. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is directly proportional to this EDF.                                                                          |
 | BlackPoint SNAP URL              | Client  | Text       | This client-level EDF must be filled with the installer package URL for downloading and installing the licensed SnapAgent application. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is directly proportional to this EDF.                   |
-| BlackPoint SnapAgent Exclude     | Location| Check Box  | If this location-level EDF is checked then all agents of the location will be excluded from the monitor for the SnapAgent deployment. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is indirectly proportional to this EDF.              |
-| BlackPoint SnapAgent Exclude     | Computer| Check Box  | If this computer-level EDF is checked then the agent will be excluded from the monitor for the SnapAgent deployment. The monitor is indirectly [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) proportional to this EDF.                                 |
+| BlackPoint SnapAgent Exclude     | Location| Check Box  | If this location-level EDF is checked, then all agents of the location will be excluded from the monitor for the SnapAgent deployment. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is indirectly proportional to this EDF.              |
+| BlackPoint SnapAgent Exclude     | Computer| Check Box  | If this computer-level EDF is checked, then the agent will be excluded from the monitor for the SnapAgent deployment. The monitor is indirectly [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) proportional to this EDF.                                 |
 
 ## Variables
 
@@ -35,16 +36,16 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name               | Description                                                                                                                                                                                                                     |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @ProjectName@      | This contains the agnostic ps1 name and sets that as a project and working directory to C:/ProgramData/_Automation/Script/@ProjectName@.                                                                                     |
+| @ProjectName@      | This contains the agnostic PS1 name and sets that as a project and working directory to C:/ProgramData/_Automation/Script/@ProjectName@.                                                                                     |
 | @URL@              | This contains the value of the URL from the client-level EDF "BlackPoint SNAP URL".                                                                                                                                           |
-| @WorkingDirectory@ | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:/ProgramData/_Automation/Script/@ProjectName@".                                                                   |
-| @PS1Log@           | This stores the PowerShell informational logs for validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-log.txt.                                                                           |
-| @PS1ErrorLog@      | This contains the PowerShell Error logs for the validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-error.txt.                                                                          |
-| @ErrorLog@         | This contains the content of the error log file i.e. @ProjectName@-error.txt.                                                                                                                                               |
+| @WorkingDirectory@ | This is a directory where the agnostic script downloads and its logging is stored. The directory path is "C:/ProgramData/_Automation/Script/@ProjectName@".                                                                   |
+| @PS1Log@           | This stores the PowerShell informational logs for validation and saves them in the @WorkingDirectory@ folder with the name: @ProjectName@-log.txt.                                                                           |
+| @PS1ErrorLog@      | This contains the PowerShell error logs for validation and saves them in the @WorkingDirectory@ folder with the name: @ProjectName@-error.txt.                                                                          |
+| @ErrorLog@         | This contains the content of the error log file, i.e., @ProjectName@-error.txt.                                                                                                                                               |
 
 ## Ticketing
 
-- To enable the ticketing feature it is mandatory to set the ticket category at the monitor level as shown below:
+- To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level as shown below:
 
 ![Ticketing Category](../../../static/img/BlackPoint---SnapAgent-Installer/image_2.png)
 
@@ -52,22 +53,10 @@ Document the various variables in the script. Delete any section that is not rel
   SnapAgent Installation Failed on %computername% of %clientname%/%locationname%
 
 - **Body:**  
-  SnapAgent Installation Failed on %computername% of %clientname%/%locationname%. Refer to the below logs:  
+  SnapAgent Installation Failed on %computername% of %clientname%/%locationname%. Refer to the logs below:  
   @ErrorLog@.
 
 ## Output
 
 - Script log
 - Local files on the computer
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 **This script is destructive and should only be used after fully understanding the implications.**
 
-Deletes a user profile and removes the user account if local. Runs [EPM - Accounts - Script - User Profile - Get Information](<./User Profile - Get Information.md>) after successful deletion.
+This script deletes a user profile and removes the user account if it is local. It runs [EPM - Accounts - Script - User Profile - Get Information](<./User Profile - Get Information.md>) after successful deletion.
 
 ## Sample Run
 
@@ -22,10 +23,10 @@ Deletes a user profile and removes the user account if local. Runs [EPM - Accoun
 
 ### User Parameters
 
-| Name          | Example    | Required | Description                                                                                          |
-|---------------|------------|----------|------------------------------------------------------------------------------------------------------|
-| Username      | testuser   | True     | The username of the user to remove. Can be in the format 'testuser', './testuser', or 'domain/testuser'. |
-| PreserveUser  | 1          | False    | If set to 1, then the user account will not be deleted along with the profile.                     |
+| Name         | Example    | Required | Description                                                                                          |
+|--------------|------------|----------|------------------------------------------------------------------------------------------------------|
+| Username     | testuser   | True     | The username of the user to remove. Can be in the format 'testuser', './testuser', or 'domain/testuser'. |
+| PreserveUser | 1          | False    | If set to 1, then the user account will not be deleted along with the profile.                     |
 
 ## Process
 
@@ -35,16 +36,3 @@ See [EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-Us
 
 - Script log
 - Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
-

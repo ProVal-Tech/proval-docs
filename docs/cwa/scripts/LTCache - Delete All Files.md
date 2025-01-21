@@ -8,11 +8,12 @@ tags: ['caching', 'cleanup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will clean up the LT caching folder.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -22,26 +23,14 @@ Time Saved by Automation: 10 Minutes
 
 | Variable        | Description                                                                                      |
 |------------------|--------------------------------------------------------------------------------------------------|
-| CacheServerName  | This stores the SCDrive tweak name where //// replaced with blank after first //.              |
+| CacheServerName  | This stores the SCDrive tweak name where `//` is replaced with a blank after the first `//`.  |
 
 ## Process
 
-- Script will get the configured cache folder on the Location level.
+- The script will get the configured cache folder at the location level.
 - Then it will look for the machines where the LT cache was created.
-- Script will check on the machine if the Cache folder exists. If it does, then it will remove all the items from the caching folder.
+- The script will check if the cache folder exists on the machine. If it does, it will remove all the items from the caching folder.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

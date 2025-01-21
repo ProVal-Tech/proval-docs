@@ -8,31 +8,32 @@ tags: ['kaseya', 'performance', 'setup', 'update']
 draft: false
 unlisted: false
 ---
+
 # Overview
-Copies Org CFs to Machines in the specified Org
+Copies Org CFs to Machines in the specified Org.
 
 # Requirements
-VSAAPI module
+- VSAAPI module
 
 # Process
-Copies Org CFs to Machines in the specified Org. Checks to ensure the Machine CF Exists and creates it if it does not.
+Copies Org CFs to Machines in the specified Org. It checks to ensure the Machine CF exists and creates it if it does not.
 
 # Payload Usage
 ```
 ./Copy-VsaOrgToMachineCF -BaseURL https://vsa.provaltech.com -VsaUserName serviceApi -RestApiToken token -OrgField 'Monitoring' -MachineField 'xPVAL Monitoring Managed' -OrgName 'Proval Technologies' -AgentName fdev-win10-1
 ```
-Sets 'xPVAL Monitoring Managed' to the org cf value from 'Monitoring' for the specified agent.
+This command sets 'xPVAL Monitoring Managed' to the org CF value from 'Monitoring' for the specified agent.
 
 # Parameters
 
 | Parameter       | Alias | Required | Default | Type   | Description                                             |
 |------------------|-------|----------|---------|--------|---------------------------------------------------------|
 | `BaseURL`        |       | True     |         | String | VSA URL                                                |
-| `VsaUserName`    |       | True     |         | String | User with Api Access                                   |
-| `RestApiToken`   |       | True     |         | String | Rest Api Token for User                                |
+| `VsaUserName`    |       | True     |         | String | User with API Access                                   |
+| `RestApiToken`   |       | True     |         | String | REST API Token for User                                |
 | `OrgName`        |       | True     |         | String | Org Name that contains the Field to Copy               |
 | `OrgField`       |       | True     |         | String | Org Custom Field to Copy                               |
-| `MachineField`   |       | True     |         | String | Machine Custom field to receive data                   |
+| `MachineField`   |       | True     |         | String | Machine Custom Field to receive data                   |
 | `GroupName`      |       | False    |         | String | Optionally supply a group within the org to write the CF to exclusively |
 | `AgentName`      |       | False    |         | String | Optionally supply a single agent name within the org to write the CF to exclusively |
 
@@ -40,14 +41,3 @@ Sets 'xPVAL Monitoring Managed' to the org cf value from 'Monitoring' for the sp
 ```
 ./UpdateVsaMonitoringFields-log.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

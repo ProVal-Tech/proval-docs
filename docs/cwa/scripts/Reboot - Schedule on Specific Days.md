@@ -8,11 +8,12 @@ tags: ['hyper-v', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script schedules a reboot for the next applicable day at the specified time on a target machine. For Hyper-V hosts, the script will also create a ticket indicating the reboot has been scheduled. 
+This script schedules a reboot for the next applicable day at the specified time on a target machine. For Hyper-V hosts, the script will also create a ticket indicating that the reboot has been scheduled.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -31,7 +32,7 @@ None
 | Name                     | Example                       | Required | Description                                                                                              |
 |--------------------------|-------------------------------|----------|----------------------------------------------------------------------------------------------------------|
 | DAYS_TO_REBOOT           | "Tuesday","Wednesday"         | True     | Must be a comma-separated list of strings in double quotes with the names of the days of the week to reboot. |
-| HOUR_TO_REBOOT           | 13                            | True     | The hour of the day to reboot in a 24-hour format. (13 = 1:00 PM etc)                                 |
+| HOUR_TO_REBOOT           | 13                            | True     | The hour of the day to reboot in a 24-hour format. (13 = 1:00 PM, etc.)                                 |
 | MINUTE_TO_REBOOT         | 15                            | True     | The minute of the hour to reboot. Supports values from 0 - 59                                          |
 | MAINTENANCE_TIME         | 15                            | True     | The time in minutes for the maintenance window to last.                                                |
 | MAINTENANCE_COMMENT      | Scheduled Reboot              | True     | The comment to add into the maintenance window.                                                          |
@@ -39,7 +40,7 @@ None
 
 ## Process
 
-This script schedules a reboot for the next applicable day at the specified time on a target machine. Once the reboot is scheduled, the maintenance window is set for the reboot time, and the length is determined by a global. If the target machine is a Hyper-V server, a maintenance window will also be set for all discovered child machines. A ticket is then generated to make the support team aware of the reboot. 
+This script schedules a reboot for the next applicable day at the specified time on a target machine. Once the reboot is scheduled, the maintenance window is set for the reboot time, and the length is determined by a global variable. If the target machine is a Hyper-V server, a maintenance window will also be set for all discovered child machines. A ticket is then generated to make the support team aware of the reboot.
 
 **To cancel the reboot after it is scheduled, type "shutdown /a" in a command prompt window. This will abort the scheduled restart.**
 
@@ -47,15 +48,3 @@ This script schedules a reboot for the next applicable day at the specified time
 
 - Script log messages
 - Ticket (For Hyper-V hosts only)
-
-
-
-
-
-
-
-
-
-
-
-

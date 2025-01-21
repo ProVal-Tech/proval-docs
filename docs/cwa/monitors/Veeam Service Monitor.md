@@ -8,8 +8,9 @@ tags: ['setup', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Step 1
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
 ---
 
@@ -50,7 +51,7 @@ WHERE
 ---
 
 ## Step 3
-Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)**' with the Groupid(s) of the relevant groups:  
+Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)**' with the Group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -69,7 +70,7 @@ SELECT '' as `AgentID`,
 '300' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command /"$ErrorActionPreference = //'SilentlyContinue//';$s = //'VeeamBackupSvc//';$ss = Get-Service $s;if ($ss) {if ((Get-Service $s).Status -ne //'Running//') {$v = (Get-Service | Where-Object {$_.Name -match //'Veeam//' -and $_.Name -ne $s -and $_.Status -ne //'Running//'});$p = //'Invoke-RestartService//';$b = //'\<a href=/"https://file.provaltech.com/repo//';$d/">https://file.provaltech.com/repo//';$d\</a> = /////"$b/script/$p.ps1/////";$wd = /////"C:////ProgramData////_Automation////Script////$p/////";$pp = /////"$wd////$p.ps1/////";mkdir $wd 3&gt;&amp;1 2&gt;&amp;1 1&gt;$null;[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072);try {(New-Object System.Net.WebClient).DownloadFile($d, $pp)} catch {return //'Script Download Failure//'};$r = &amp; $pp -ServiceNames $s;if ((Get-Service $s).Status -ne //'Running//') {$rv = &amp; $pp -ServiceNames $v};$rv = &amp; $pp -ServiceNames $v;if ((Get-Service $s).Status -ne //'Running//') {$rs = &amp; $pp -ServiceNames $s};if ((Get-Service $s).Status -ne //'Running//') {return /////"Failed to Start $($s). `n`nOutput of restarting Veeam* Services: $($rv). `n`nOutput of restarting $($s): $rs/////"}}}/"' as `DataOut`,
+'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command /\"$ErrorActionPreference = //'SilentlyContinue//';$s = //'VeeamBackupSvc//';$ss = Get-Service $s;if ($ss) {if ((Get-Service $s).Status -ne //'Running//') {$v = (Get-Service | Where-Object {$_.Name -match //'Veeam//' -and $_.Name -ne $s -and $_.Status -ne //'Running//'});$p = //'Invoke-RestartService//';$b = //'\\<a href=/\"https://file.provaltech.com/repo//';$d/\">https://file.provaltech.com/repo//';$d\\</a> = /////\"$b/script/$p.ps1/////\";$wd = /////\"C:////ProgramData////_Automation////Script////$p/////\";$pp = /////\"$wd////$p.ps1/////\";mkdir $wd 3&gt;&amp;1 2&gt;&amp;1 1&gt;$null;[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072);try {(New-Object System.Net.WebClient).DownloadFile($d, $pp)} catch {return //'Script Download Failure//'};$r = &amp; $pp -ServiceNames $s;if ((Get-Service $s).Status -ne //'Running//') {$rv = &amp; $pp -ServiceNames $v};$rv = &amp; $pp -ServiceNames $v;if ((Get-Service $s).Status -ne //'Running//') {$rs = &amp; $pp -ServiceNames $s};if ((Get-Service $s).Status -ne //'Running//') {return /////\"Failed to Start $($s). `n`nOutput of restarting Veeam* Services: $($rv). `n`nOutput of restarting $($s): $rs/////\"}}}/\"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))|5|Script Download Failure|10|Failed to Start' as `DataIn`,
 '' as `IDField`,
@@ -142,16 +143,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
@@ -164,7 +155,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ---
 
 ## Step 4
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```
 SET @searchID = ( SELECT MAX(sensid) FROM sensorchecks WHERE `GUID` = '4ab59b9b-b8c9-42dc-8bbf-a6eb71e15c37' );
@@ -182,7 +173,7 @@ SELECT '' as `AgentID`,
 '300' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command /"$ErrorActionPreference = //'SilentlyContinue//';$s = //'VeeamBackupSvc//';$ss = Get-Service $s;if ($ss) {if ((Get-Service $s).Status -ne //'Running//') {$v = (Get-Service | Where-Object {$_.Name -match //'Veeam//' -and $_.Name -ne $s -and $_.Status -ne //'Running//'});$p = //'Invoke-RestartService//';$b = //'\<a href=/"https://file.provaltech.com/repo//';$d/">https://file.provaltech.com/repo//';$d\</a> = /////"$b/script/$p.ps1/////";$wd = /////"C:////ProgramData////_Automation////Script////$p/////"; $pp = /////"$wd////$p.ps1/////";mkdir $wd 3&gt;&amp;1 2&gt;&amp;1 1&gt;$null;[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072);try {(New-Object System.Net.WebClient).DownloadFile($d, $pp)} catch {return //'Script Download Failure//'};$r = &amp; $pp -ServiceNames $s;if ((Get-Service $s).Status -ne //'Running//') {$rv = &amp; $pp -ServiceNames $v};$rv = &amp; $pp -ServiceNames $v;if ((Get-Service $s).Status -ne //'Running//') {$rs = &amp; $pp -ServiceNames $s};if ((Get-Service $s).Status -ne //'Running//') {return /////"Failed to Start $($s). `n`nOutput of restarting Veeam* Services: $($rv). `n`nOutput of restarting $($s): $rs/////"}}}/"' as `DataOut`,
+'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command /\"$ErrorActionPreference = //'SilentlyContinue//';$s = //'VeeamBackupSvc//';$ss = Get-Service $s;if ($ss) {if ((Get-Service $s).Status -ne //'Running//') {$v = (Get-Service | Where-Object {$_.Name -match //'Veeam//' -and $_.Name -ne $s -and $_.Status -ne //'Running//'});$p = //'Invoke-RestartService//';$b = //'\\<a href=/\"https://file.provaltech.com/repo//';$d/\">https://file.provaltech.com/repo//';$d\\</a> = /////\"$b/script/$p.ps1/////\";$wd = /////\"C:////ProgramData////_Automation////Script////$p/////\";$pp = /////\"$wd////$p.ps1/////\";mkdir $wd 3&gt;&amp;1 2&gt;&amp;1 1&gt;$null;[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072);try {(New-Object System.Net.WebClient).DownloadFile($d, $pp)} catch {return //'Script Download Failure//'};$r = &amp; $pp -ServiceNames $s;if ((Get-Service $s).Status -ne //'Running//') {$rv = &amp; $pp -ServiceNames $v};$rv = &amp; $pp -ServiceNames $v;if ((Get-Service $s).Status -ne //'Running//') {$rs = &amp; $pp -ServiceNames $s};if ((Get-Service $s).Status -ne //'Running//') {return /////\"Failed to Start $($s). `n`nOutput of restarting Veeam* Services: $($rv). `n`nOutput of restarting $($s): $rs/////\"}}}/\"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(////r////n){0,}[////r////n]{0,}////s{0,})$)%7C(^$))|5|Script Download Failure|10|Failed to Start' as `DataIn`,
 '' as `IDField`,
@@ -271,14 +262,3 @@ The monitor will come up with the search '`VeeamBackupSvc`' added to the LIMIT.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-

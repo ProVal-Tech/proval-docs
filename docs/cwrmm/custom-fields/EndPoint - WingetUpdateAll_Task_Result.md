@@ -8,9 +8,10 @@ tags: ['connectwise', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This custom field stores the outcome of both [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) and [CW RMM - Task - Scheduled Task Winget Update All (Delete)](https://proval.itglue.com/DOC-5078775-15702855) tasks. It stores whether the task succeeded or failed.
+This custom field stores the outcome of both [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) and [CW RMM - Task - Scheduled Task Winget Update All (Delete)](https://proval.itglue.com/DOC-5078775-15702855) tasks. It indicates whether the task succeeded or failed.
 
 Possible values:
 - NA
@@ -23,22 +24,10 @@ Possible values:
 
 | Field Name                          | Level    | Type      | Default Value | Description                                         | Editable |
 |-------------------------------------|----------|-----------|---------------|-----------------------------------------------------|----------|
-| WingetUpdateAll_Task_Result         | ENDPOINT | Text Box  | NA            | Stores the result of Scheduled Task Winget Update All script. | Yes      |
+| WingetUpdateAll_Task_Result         | ENDPOINT | Text Box  | NA            | Stores the result of the Scheduled Task Winget Update All script. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_1.png)
 
 ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

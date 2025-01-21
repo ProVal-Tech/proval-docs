@@ -8,11 +8,12 @@ tags: ['recovery', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will reboot a machine into safe mode and change the registry keys related to tamper protection for machines with Sophos Tamper Protection enabled.
 
-Time Saved by Automation: 20 Minutes
+**Time Saved by Automation:** 20 Minutes
 
 ## Sample Run
 
@@ -21,7 +22,7 @@ Time Saved by Automation: 20 Minutes
 ## Dependencies
 
 - The target machine must have Sophos installed.
-- The target machine must be a Windows operating system.
+- The target machine must be running a Windows operating system.
 
 ## Variables
 
@@ -29,20 +30,8 @@ Time Saved by Automation: 20 Minutes
 
 ## Process
 
-The script will first verify that the target device has Sophos installed. The script will reboot the machine into safe mode and wait for the machine to come back up. The script will stop the Sophos services and then change the appropriate registry keys to disable tamper protection. The script will then restart Sophos services and reboot the machine back to normal mode. The script will verify that tamper protection was properly disabled; if successful, the script will exit with a success log message. If the script fails, it will exit with an error log message.
+The script will first verify that the target device has Sophos installed. It will then reboot the machine into safe mode and wait for the machine to come back up. The script will stop the Sophos services and change the appropriate registry keys to disable tamper protection. After that, it will restart the Sophos services and reboot the machine back to normal mode. Finally, the script will verify that tamper protection was properly disabled; if successful, it will exit with a success log message. If the script fails, it will exit with an error log message.
 
 ## Output
 
 Script log messages only.
-
-
-
-
-
-
-
-
-
-
-
-

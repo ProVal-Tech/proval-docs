@@ -8,9 +8,10 @@ tags: ['installation', 'patching', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview contains detailed information about patching on the agent. (Date installed, Source, etc.)
+This document contains detailed information about patching on the agent, including the installation date, source, and other relevant details.
 
 ## Columns
 
@@ -19,22 +20,9 @@ This dataview contains detailed information about patching on the agent. (Date i
 | Client              | Client Name                                                                                    |
 | Location            | Location Name                                                                                  |
 | Computer Name       | Agent Name                                                                                     |
-| Patching Date       | Patch installed date                                                                           |
-| Patching Title      | Patch description                                                                               |
-| Patching Source     | The source through which patch installed                                                       |
-| Patching Operation   | Patching operation to show whether patch is installing, uninstalling, or stuck on rollback     |
-| Patching Result     | State of patch whether successfully installed, running or failed                                |
-| Operating System    | Operating system of the agent                                                                   |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Patching Date       | Date the patch was installed                                                                    |
+| Patching Title      | Description of the patch                                                                        |
+| Patching Source     | The source through which the patch was installed                                                |
+| Patching Operation   | Indicates whether the patch is installing, uninstalling, or stuck on rollback                 |
+| Patching Result     | The state of the patch, whether it was successfully installed, is running, or has failed       |
+| Operating System    | The operating system of the agent                                                               |

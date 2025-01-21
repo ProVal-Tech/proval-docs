@@ -8,11 +8,12 @@ tags: ['performance', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Renames a Windows machine.
+This document describes how to rename a Windows machine.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -22,23 +23,23 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-[Rename-Machine](https://proval.itglue.com/DOC-5078775-8175161)
+- [Rename-Machine](https://proval.itglue.com/DOC-5078775-8175161)
 
 ## Variables
 
 - `@Username@` - The username gathered from the passwords table.
 - `@Password@` - The password gathered from the passwords table.
 
-#### User Parameters
+### User Parameters
 
-| Name                  | Example           | Required | Description                                                                                                                                                       |
-|-----------------------|-------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NewName               | COMPUTER2         | True     | The new name to set on the target machine.                                                                                                                     |
-| DomainPasswordTitle   | Domain Admin Account | False    | The title of the password entry to use for the username and password for domain authentication. The password entry must be under the same Client as the target machine. |
+| Name                | Example             | Required | Description                                                                                                                                                       |
+|---------------------|---------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NewName             | COMPUTER2           | True     | The new name to set on the target machine.                                                                                                                     |
+| DomainPasswordTitle | Domain Admin Account | False    | The title of the password entry to use for the username and password for domain authentication. The password entry must be under the same client as the target machine. |
 
 ## Process
 
-See [Rename-Machine](https://proval.itglue.com/DOC-5078775-8175161) document for detailed information about the backend process.
+See the [Rename-Machine](https://proval.itglue.com/DOC-5078775-8175161) document for detailed information about the backend process.
 
 ## Output
 
@@ -48,26 +49,14 @@ Outputs logs to the standard output location:
 ./Rename-Machine-log.txt
 ```
 
-If the script is successful, then the following file will have output:
+If the script is successful, the following file will contain output:
 
 ```
 ./Rename-Machine-data.txt
 ```
 
-If there are errors in the run of the script, an error file will be generated:
+If there are errors during the execution of the script, an error file will be generated:
 
 ```
 ./Rename-Machine-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-

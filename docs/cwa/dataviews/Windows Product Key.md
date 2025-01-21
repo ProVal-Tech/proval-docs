@@ -8,6 +8,7 @@ tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview gathers the Windows Product Key from the [Role - Windows Product Key](https://proval.itglue.com/DOC-5078775-17415731).
@@ -24,17 +25,5 @@ This dataview gathers the Windows Product Key from the [Role - Windows Product K
 | Location            | Location name of the agent                          |
 | Computer            | Name of the agent                                   |
 | Operating System    | Operating system name of the agent                  |
-| LastContact         | The last contact of the agent with the CW Automate  |
-| Windows Product Key  | Windows product key info of the agent               |
-
-
-
-
-
-
-
-
-
-
-
-
+| LastContact         | The last contact of the agent with ConnectWise Automate |
+| Windows Product Key  | Windows product key information of the agent        |

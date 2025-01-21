@@ -8,28 +8,17 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is a function script run by the [CWM - Automate - Script - Automate Agent - Auto Repair*](<./Automate Agent - Auto Repair.md>) script. Its purpose is to monitor the repairs carried out by the script. The details of the repaired computer are stored in the [CWM - Automate - Custom Table - pvl_repaired_agents](<../tables/pvl_repaired_agents.md>) custom table. This information is then displayed by the [CWM - Automate - Dataview - Repaired Agents Last 30 Days](<../dataviews/Repaired Agents Last 30 Days.md>) dataview.
+This is a function script run by the [CWM - Automate - Script - Automate Agent - Auto Repair](<./Automate Agent - Auto Repair.md>) script. Its purpose is to monitor the repairs carried out by the script. The details of the repaired computer are stored in the [CWM - Automate - Custom Table - pvl_repaired_agents](<../tables/pvl_repaired_agents.md>) custom table. This information is then displayed by the [CWM - Automate - Dataview - Repaired Agents Last 30 Days](<../dataviews/Repaired Agents Last 30 Days.md>) dataview.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Automate Agent - Auto Repair*](<./Automate Agent - Auto Repair.md>)
+- [CWM - Automate - Script - Automate Agent - Auto Repair](<./Automate Agent - Auto Repair.md>)
 - [CWM - Automate - Custom Table - pvl_repaired_agents](<../tables/pvl_repaired_agents.md>)
 
 ## Output
 
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

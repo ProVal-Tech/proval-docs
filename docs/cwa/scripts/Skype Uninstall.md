@@ -8,11 +8,12 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will attempt to uninstall Skype
+This script will attempt to uninstall Skype.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,25 +21,14 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-None
+None.
 
 ## Process
 
-The script will verify that Skype is installed. If Skype is installed it will fetch the proper uninstall string from the device, sanitize the string, and then run the uninstall string. The script will then refresh its software inventory and verify if the application was removed successfully. 
+The script will verify that Skype is installed. If Skype is installed, it will fetch the proper uninstall string from the device, sanitize the string, and then run the uninstall string. The script will then refresh its software inventory and verify if the application was removed successfully.
 
 If Skype is removed successfully, the script will exit with a successful log message. If Skype is not removed, the script will exit with an error and an error log message.
 
 ## Output
 
-Script log messages
-
-
-
-
-
-
-
-
-
-
-
+Script log messages.

@@ -8,9 +8,10 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script configures the [Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate) solution on the endpoint with the options configured in the client-level EDFs which are further explained in this document. Additionally, it can create the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor if the client-level EDF `WAU - MonitorFailures` is flagged.
+The script configures the [Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate) solution on the endpoint with the options configured in the client-level EDFs, which are further explained in this document. Additionally, it can create the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor if the client-level EDF `WAU - MonitorFailures` is flagged.
 
 Refer to [Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate) for detailed information on `Winget-AutoUpdate`.
 
@@ -74,17 +75,17 @@ These scripts come with the `Winget-AutoUpdate` application.
 
 ## Sample Run
 
-First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](<../../unsorted/SWM - Software Update - Custom Table - pvl_wau_config.md>) table and EDFs used by the solution.
+**First Run:** Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](<../../unsorted/SWM - Software Update - Custom Table - pvl_wau_config.md>) table and EDFs used by the solution.
 
 ![First Run](../../../static/img/Configure-Winget-Auto-Update/image_1.png)
 
-Regular execution:  
+**Regular Execution:**  
 ![Regular Execution](../../../static/img/Configure-Winget-Auto-Update/image_2.png)
 
-To uninstall `Winget-AutoUpdate` and wipe its traces. It will remove the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor if exists. Additionally, Computer-level EDF `Exclude From Winget Auto Update` will be flagged as well resulting in excluding the computer from the solution and preventing the script execution in future.  
+To uninstall `Winget-AutoUpdate` and wipe its traces, it will remove the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor if it exists. Additionally, the Computer-level EDF `Exclude From Winget Auto Update` will be flagged, resulting in excluding the computer from the solution and preventing the script execution in the future.  
 ![Uninstall](../../../static/img/Configure-Winget-Auto-Update/image_3.png)
 
-Script's default nature is to compare the existing configuration before running the installation. Setting the `Force` to `1` will skip the comparison.  
+The script's default nature is to compare the existing configuration before running the installation. Setting the `Force` to `1` will skip the comparison.  
 ![Force](../../../static/img/Configure-Winget-Auto-Update/image_4.png)
 
 ## Dependencies
@@ -105,22 +106,22 @@ Script's default nature is to compare the existing configuration before running 
 | Name                | Example | Required                        | Description                                                                                                                                                                                                                                    |
 |---------------------|---------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set_Environment      | 1       | True (for first execution)     | Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](<../../unsorted/SWM - Software Update - Custom Table - pvl_wau_config.md>) table and EDFs used by the solution.                                      |
-| Force                | 1       | False                           | Script's default nature is to compare the existing configuration before running the installation. Setting the `Force` to `1` will skip the comparison.                                                                                          |
-| Uninstall            | 1       | False                           | To uninstall `Winget-AutoUpdate` and wipe its traces. It will remove the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor if exists. Additionally, Computer-level EDF `Exclude From Winget Auto Update` will be flagged as well resulting in excluding the computer from the solution and preventing the script execution in future. |
+| Force                | 1       | False                           | The script's default nature is to compare the existing configuration before running the installation. Setting the `Force` to `1` will skip the comparison.                                                                                          |
+| Uninstall            | 1       | False                           | To uninstall `Winget-AutoUpdate` and wipe its traces. It will remove the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor if it exists. Additionally, the Computer-level EDF `Exclude From Winget Auto Update` will be flagged, resulting in excluding the computer from the solution and preventing the script execution in the future. |
 
 ## Client-Level EDF
 
-| Name                       | Example                                                  | Type      | dropdown options                                                                                                           | Description                                                                                           |
+| Name                       | Example                                                  | Type      | Dropdown Options                                                                                                           | Description                                                                                           |
 |----------------------------|----------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Winget Auto Update          | Enabled for Servers and Workstations                     | Dropdown  | - Disabled- Enabled for Workstations Only- Enabled for Servers and Workstations                                    | Set this EDF to enable the Winget Auto Update solution.                                              |
+| Winget Auto Update          | Enabled for Servers and Workstations                     | Dropdown  | - Disabled - Enabled for Workstations Only - Enabled for Servers and Workstations                                    | Set this EDF to enable the Winget Auto Update solution.                                              |
 | WAU - Whitelist            | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL... | Text      |                                                                                                                           | A comma-separated list of applications to update. By default, the solution will enable the Auto-update for all applications unless a whitelist is defined. Specifying this list overrides the blacklisted applications. |
 | WAU-Blacklist              | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL... | Text      |                                                                                                                           | A comma-separated list of applications to exclude. Only one of Whitelist or Blacklist can be used at a time. If both are provided, Whitelist will take precedence. |
 | WAU - InstallUserContext   |                                                          | Check-Box |                                                                                                                           | Flag this EDF to enable auto-update for User-level applications, too. By default, only system-level applications are updated.  **Note:** End users may observe a PowerShell window appearing on their screens during the scheduled update if the user context is enabled. |
-| WAU - NotificationLevel     | SuccessOnly                                             | Dropdown  | - Full- SuccessOnly- None                                                                                          | Specifies the notification level for application updates.  **Default:** None  **Sample Notification:** ![Notification Sample](../../../static/img/Configure-Winget-Auto-Update/image_5.png) |
-| WAU - UpdateInterval       | Daily                                                    | Dropdown  | - Daily- BiDaily- Weekly- BiWeekly- Monthly- Never                                                     | Specifies the frequency of updates for the applications. This EDF defines how frequently the available updates are checked and implemented for the applications.  **Default:** Daily |
-| WAU - UpdatesAtTime        | 06AM                                                    | Dropdown  | - 12AM- 12:30AM- 01AM- 01:30AM- 02AM- 02:30AM- 03AM- 03:30AM- 04AM- 04:30AM- 05AM- 05:30AM- 06AM- 06:30AM- 07AM- 07:30AM- 08AM- 08:30AM- 09AM- 09:30AM- 10AM- 10:30AM- 11AM- 11:30AM- 12PM- 12:30PM- 01PM- 01:30PM- 02PM- 02:30PM- 03PM- 03:30PM- 04PM- 04:30PM- 05PM- 05:30PM- 06PM- 06:30PM- 07PM- 07:30PM- 08PM- 08:30PM- 09PM- 09:30PM- 10PM- 10:30PM- 11PM- 11:30PM | Specifies the time for updates in 12-hour format for updating the applications.  **Default:** 06AM |
+| WAU - NotificationLevel     | SuccessOnly                                             | Dropdown  | - Full - SuccessOnly - None                                                                                          | Specifies the notification level for application updates.  **Default:** None  **Sample Notification:** ![Notification Sample](../../../static/img/Configure-Winget-Auto-Update/image_5.png) |
+| WAU - UpdateInterval       | Daily                                                    | Dropdown  | - Daily - BiDaily - Weekly - BiWeekly - Monthly - Never                                                     | Specifies the frequency of updates for the applications. This EDF defines how frequently the available updates are checked and implemented for the applications.  **Default:** Daily |
+| WAU - UpdatesAtTime        | 06AM                                                    | Dropdown  | - 12AM - 12:30AM - 01AM - 01:30AM - 02AM - 02:30AM - 03AM - 03:30AM - 04AM - 04:30AM - 05AM - 05:30AM - 06AM - 06:30AM - 07AM - 07:30AM - 08AM - 08:30AM - 09AM - 09:30AM - 10AM - 10:30AM - 11AM - 11:30AM - 12PM - 12:30PM - 01PM - 01:30PM - 02PM - 02:30PM - 03PM - 03:30PM - 04PM - 04:30PM - 05PM - 05:30PM - 06PM - 06:30PM - 07PM - 07:30PM - 08PM - 08:30PM - 09PM - 09:30PM - 10PM - 10:30PM - 11PM - 11:30PM | Specifies the time for updates in 12-hour format for updating the applications.  **Default:** 06AM |
 | WAU - updatesAtLogon      |                                                          | Check-Box |                                                                                                                           | Flag this EDF to configure WAU to run at user logon. Both UpdatesAtTime and UpdatesAtLogon can be used together. |
-| WAU - doNotRunAfterInstallation |                                                  | Check-Box |                                                                                                                           | Flag this EDF to Prevent Winget-AutoUpdate from running immediately after installation. By default, it runs after installation. |
+| WAU - doNotRunAfterInstallation |                                                  | Check-Box |                                                                                                                           | Flag this EDF to prevent Winget-AutoUpdate from running immediately after installation. By default, it runs after installation. |
 | WAU - MonitorFailures      |                                                          | Check-Box |                                                                                                                           | Flag this EDF to create the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor on the computer to alert on Winget AutoUpdate failures. |
 
 ![Client-Level EDF](../../../static/img/Configure-Winget-Auto-Update/image_6.png)
@@ -147,15 +148,3 @@ Script's default nature is to compare the existing configuration before running 
   - Winget-AutoUpdate-Notify
   - Winget-AutoUpdate-Policies
   - Winget-AutoUpdate-UserContext
-
-
-
-
-
-
-
-
-
-
-
-

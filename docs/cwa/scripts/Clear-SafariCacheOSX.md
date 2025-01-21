@@ -1,56 +1,47 @@
 ---
 id: '11e2bd71-314c-497f-a22a-814ff2af0d4d'
-title: 'Clear Safari Cache on OSX Devices'
-title_meta: 'Clear Safari Cache on OSX Devices'
-keywords: ['safari', 'cache', 'osx', 'clear', 'files', 'folders', 'logs', 'errors']
-description: 'This document provides a step-by-step guide on how to clear the Safari cache on OSX devices, including the requirements, process, and output logs for successful execution.'
+title: 'Clear Safari Cache on macOS Devices'
+title_meta: 'Clear Safari Cache on macOS Devices'
+keywords: ['safari', 'cache', 'macos', 'clear', 'files', 'folders', 'logs', 'errors']
+description: 'This document provides a step-by-step guide on how to clear the Safari cache on macOS devices, including the requirements, process, and output logs for successful execution.'
 tags: []
 draft: false
 unlisted: false
 ---
+
 ## Overview
 
-Clear the Safari Cache on OSX devices
+Clear the Safari Cache on macOS devices.
 
 ## Requirements
 
-Must be run on OSX devices
+Must be run on macOS devices.
 
 ## Process
 
-1. Loops through cache files and folders removing those items
-2. Logs any errors
+1. Loop through cache files and folders, removing those items.
+2. Log any errors.
 
 ## Payload Usage
 
 ```
-Clear-SafariCacheOSX.ps1
-Clears all safari cache files and folders from osx devices
+Clear-SafariCachemacOS.ps1
+Clears all Safari cache files and folders from macOS devices.
 ```
 
 ## Output
 
 ```
-    ./Clear-SafariCacheOSX-log.txt
-    ./Clear-SafariCacheOSX-error.txt
+./Clear-SafariCachemacOS-log.txt
+./Clear-SafariCachemacOS-error.txt
 ```
 
 ## Locations
 
-| Payload                    | /repo/scripts/Clear-SafariCacheOSX.ps1 |
-|---------------------------|-----------------------------------------|
-| Automate                  |                                         |
-| ConnectWise RMM           |                                         |
-| Kaseya                    |                                         |
-| Datto RMM                 |                                         |
-
-
-
-
-
-
-
-
-
-
-
+| Payload                    | Location                               |
+|---------------------------|----------------------------------------|
+| Script                    | /repo/scripts/Clear-SafariCachemacOS.ps1 |
+| Automate                  |                                        |
+| ConnectWise RMM           |                                        |
+| Kaseya                    |                                        |
+| Datto RMM                 |                                        |

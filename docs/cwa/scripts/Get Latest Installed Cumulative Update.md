@@ -8,6 +8,7 @@ tags: ['database', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The purpose of the script is to fetch the latest installed Cumulative Update and the Full Build Number of a Windows computer.  
@@ -16,7 +17,7 @@ e.g.,
 
 The data is then stored in the custom table [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>).  
 
-It is an Automate implementation of the agnostic script [EPM - Windows Update - Agnostic - Get-LatestInstalledCU](<../../powershell/Get-LatestInstalledCU.md>).  
+It is an Automate implementation of the agnostic script [EPM - Windows Update - Agnostic - Get-LatestInstalledCU](<../../powershell/Get-LatestInstalledCU.md>).
 
 ## Sample Run
 
@@ -28,24 +29,12 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ProjectName           | Get-LatestInstalledCU                                                                                                                                       |
 | WorkingDirectory       | C:/ProgramData/_automation/script/Get-LatestInstalledCU                                                                                                     |
-| TableName             | [pvl_win_lastest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)                                                                             |
+| TableName             | [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)                                                                                 |
 | SQLReplaceStatement   | `REPLACE` statement returned by the PowerShell script to update the data in the custom table                                                                 |
 | OSBuild               | Full OS Build of the computer                                                                                                                                 |
-| MaxReleaseDate        | Maximum CU release Date stored in the database for the [@OSBuild@.](http://@OSBuild@.) Used to verify whether if the computer's history had returned correct CU information or not. |
+| MaxReleaseDate        | Maximum CU release date stored in the database for [@OSBuild@](http://@OSBuild@). Used to verify whether the computer's history has returned correct CU information or not. |
 
 ## Output
 
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

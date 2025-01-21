@@ -8,6 +8,7 @@ tags: ['logging']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script resets the Print Spooler service, checks and starts necessary dependencies, and logs the service status before and after repair. Use this script to troubleshoot and repair common issues with the Print Spooler service. CW RMM implementation of the agnostic script [Repair-PrintSpooler](https://file.provaltech.com/repo/script/Repair-PrintSpooler.ps1).
@@ -20,7 +21,7 @@ This script resets the Print Spooler service, checks and starts necessary depend
 
 ## Dependencies
 
-[file.provaltech.com/repo/script/Repair-PrintSpooler.ps1](https://file.provaltech.com/repo/script/Repair-PrintSpooler.ps1)
+[Repair-PrintSpooler.ps1](https://file.provaltech.com/repo/script/Repair-PrintSpooler.ps1)
 
 ## User Parameters
 
@@ -32,7 +33,7 @@ This script resets the Print Spooler service, checks and starts necessary depend
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Repair-Print-Spooler/image_5.png)  
 ![Task Creation 2](../../../static/img/Repair-Print-Spooler/image_6.png)
@@ -61,7 +62,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Repair-Print-Spooler/image_11.png)
 
@@ -121,7 +122,7 @@ if ($Parameters) {
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell Script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -159,14 +160,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

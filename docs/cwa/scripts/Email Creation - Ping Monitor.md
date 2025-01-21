@@ -8,6 +8,7 @@ tags: ['email']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is an email version of [CWM - Automate - Script - Ticket Creation - Ping Monitor](<./Ticket Creation - Ping Monitor.md>). It will manage emails related to remote ping monitors.
@@ -20,20 +21,20 @@ The script is not intended for manual execution. It is explicitly configured to 
 
 Alert Template: `△ Custom - Email Creation - Ping Monitor`
 
-## System properties
+## System Properties
 
-| Name                       | Required | Example                             | Description                                                                                                    |
-|----------------------------|----------|-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| _sysPingMonitorDefaultEmail | False    | [xyz@something.com](mailto:xyz@something.com) | Add in the email address where the partner would like to receive the alerts from ping monitors                |
-| _sysTicketDefaultEmail     | True     | [xyz@something.com](mailto:xyz@something.com) | If nothing is mentioned in _sysPingMonitorDefaultEmail property, script will use the default email address from _sysTicketDefaultEmail property. |
+| Name                        | Required | Example                             | Description                                                                                                   |
+|-----------------------------|----------|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| _sysPingMonitorDefaultEmail  | False    | [xyz@something.com](mailto:xyz@something.com) | Add the email address where the partner would like to receive alerts from ping monitors.                     |
+| _sysTicketDefaultEmail      | True     | [xyz@something.com](mailto:xyz@something.com) | If nothing is mentioned in the _sysPingMonitorDefaultEmail property, the script will use the default email address from the _sysTicketDefaultEmail property. |
 
-*Note: Create this system property `_sysPingMonitorDefaultEmail` under system → Dashboard → Config → Properties before executing this system anywhere if client would like to use specific email address for ping monitors.*
+*Note: Create this system property `_sysPingMonitorDefaultEmail` under system → Dashboard → Config → Properties before executing this system anywhere if the client would like to use a specific email address for ping monitors.*
 
 ## Global Parameters
 
-| Name            | Required | Example | Description                                                                                                           |
-|-----------------|----------|---------|-----------------------------------------------------------------------------------------------------------------------|
-| Email_On_Success | False    | 1       | Set it to 1 to receive success email alerts. Leave it blank or set it to 0 in case the partner doesn't want success email alerts. |
+| Name              | Required | Example | Description                                                                                                           |
+|-------------------|----------|---------|-----------------------------------------------------------------------------------------------------------------------|
+| Email_On_Success  | False    | 1       | Set it to 1 to receive success email alerts. Leave it blank or set it to 0 if the partner doesn't want success email alerts. |
 
 ## Sample Ping Monitor
 
@@ -54,7 +55,7 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 `Result: %RESULT%`
 
 **%WHERE%:** `This variable returns the IPv4 Address or Host Name to ping.`  
-**%RESULT%:** `This variable return the result from the monitor set.`  
+**%RESULT%:** `This variable returns the result from the monitor set.`  
 **%LocalAddress%:** `This variable returns the private address of the local computer where the monitor set is executed.`
 
 **Configuration Tab:**  
@@ -66,15 +67,3 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Output
 
 - Email
-
-
-
-
-
-
-
-
-
-
-
-

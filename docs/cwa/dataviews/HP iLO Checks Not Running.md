@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-List down the password entries for which the HP iLO Health Check automation is not running properly.
+This document lists the password entries for which the HP iLO Health Check automation is not running properly.
 
 ## Dependencies
 
@@ -19,23 +20,10 @@ List down the password entries for which the HP iLO Health Check automation is n
 
 ## Columns
 
-| Column           | Description                                       |
-|------------------|---------------------------------------------------|
-| Client           | Client Name                                       |
-| Location         | Location Name                                     |
-| iLO              | Title of the Password Entry                       |
-| PassLastRun      | Last time the check was performed if any         |
-| ConnectionStatus  | Connection Status during the previous execution    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column            | Description                                       |
+|-------------------|---------------------------------------------------|
+| Client            | Client Name                                       |
+| Location          | Location Name                                     |
+| iLO               | Title of the Password Entry                       |
+| PassLastRun       | Last time the check was performed, if any        |
+| ConnectionStatus   | Connection Status during the previous execution    |

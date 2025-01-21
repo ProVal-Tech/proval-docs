@@ -8,6 +8,7 @@ tags: ['security', 'uninstallation', 'windows']
 draft: true
 unlisted: false
 ---
+
 # Overview
 This script is designed to uninstall the SentinelOne agent from a Windows system. If Anti-Tamper is enabled, a passphrase must be provided.
 
@@ -17,8 +18,8 @@ This script is designed to uninstall the SentinelOne agent from a Windows system
 
 # Process
 1. The script starts by setting up the necessary parameters, including the optional passphrase.
-2. Detects the currently installed version of the SentinelOne agent on the system.
-3. Proceeds to attempt the uninstallation of the SentinelOne agent.
+2. It detects the currently installed version of the SentinelOne agent on the system.
+3. The script proceeds to attempt the uninstallation of the SentinelOne agent.
 4. If Anti-Tamper is enabled and a passphrase is required, it uses the provided passphrase.
 5. The script completes the uninstallation process, ensuring all necessary steps are taken to remove the agent securely.
 
@@ -39,21 +40,8 @@ Run the script with a passphrase:
 | `-PassPhrase`  |       | False    |         | String | Passphrase for disabling anti-tampering |
 
 # Output
-Location of output for log, result, and error files.
+Location of output for log, result, and error files:
 ```
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,17 +8,18 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
-Sets 'xPVAL OS Build' custom field value on machines.
+This document sets the 'xPVAL OS Build' custom field value on machines.
 
 # Requirements
-Module VSAAPI
+- Module: VSAAPI
 
 # Process
-Uses API calls in the VSAAPI module to get the OSInfo field from audit, parse to the build number, and set the appropriate custom field.
+The process uses API calls in the VSAAPI module to get the OSInfo field from the audit, parse it to extract the build number, and set the appropriate custom field.
 
 # Payload Usage
-Passes the parameters to VSAAPI for use in the API call.
+The following command passes the parameters to VSAAPI for use in the API call:
 
 ```
 ./Update-OsBuildCustomField.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiservice -RestApiToken abcd-1234-efgh-5678
@@ -29,23 +30,12 @@ Passes the parameters to VSAAPI for use in the API call.
 | Parameter        | Alias | Required | Default | Type   | Description                |
 |------------------|-------|----------|---------|--------|----------------------------|
 | `BaseURL`       |       | True     |         | String | VSA URL                   |
-| `VsaUserName`   |       | True     |         | String | User with Api Access      |
-| `RestApiToken`  |       | True     |         | String | Rest Api Token for User   |
+| `VsaUserName`   |       | True     |         | String | User with API Access      |
+| `RestApiToken`  |       | True     |         | String | REST API Token for User   |
 
 # Output
-Location of output for log, result, and error files.
+The output location for log, result, and error files is as follows:
 
 ```
 ./Update-OsBuildCustomField-log.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

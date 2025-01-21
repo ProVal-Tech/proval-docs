@@ -8,6 +8,7 @@ tags: ['connectwise', 'gpo', 'installation', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The task will generate a ConnectWise RMM Agent Deployment Group Policy Object (GPO) on the domain controller where it is run. It is recommended to execute the script on the Primary Domain Controller.
@@ -45,8 +46,8 @@ The results of the script execution will be stored on the endpoint in either the
 
 ## Installer Token Generation
 
-1. Go to **Devices** > **Computers**. Once the page loads, you will be able to see a **Manage** option in the Action Bar, at the top-left of the page.
-2. Click **Manage** open the Menu Item. In the Menu, click **Download Agent.**  
+1. Go to **Devices** > **Computers**. Once the page loads, you will see a **Manage** option in the Action Bar, at the top-left of the page.
+2. Click **Manage** to open the Menu Item. In the Menu, click **Download Agent.**  
    ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_9.png)
 3. A new window will launch from where you can generate the agent installer token.  
    ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_10.png)
@@ -56,7 +57,7 @@ The results of the script execution will be stored on the endpoint in either the
 
 ## Create Script
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_12.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_13.png)
 
@@ -73,7 +74,7 @@ Click the `Add Parameter` button.
 The `Add New Script Parameter` box will appear.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_16.png)
 
-In the box fill in the following details and select `Save` to create the `Token` parameter.
+In the box, fill in the following details and select `Save` to create the `Token` parameter.
 
 - **Parameter Name:** `Token`
 - **Required Field:** `True`
@@ -88,12 +89,12 @@ Start by adding a row. You can do this by clicking the `Add Row` button at the b
 
 #### Row 1 Function: PowerShell Script
 
-Select `PowerShell Script` function.  
+Select the `PowerShell Script` function.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_19.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_20.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_21.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $Token = '@Token@'
@@ -122,11 +123,11 @@ if ( !(Test-Path $WorkingDirectory) ) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
     } catch {
-        Write-Log -Level Error -Text "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+        Write-Log -Level Error -Text "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
 
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
     $ACl = Get-ACL $WorkingDirectory 
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
@@ -155,68 +156,68 @@ Function New-ScriptFile {
         Update-Module -Name Strapper -ErrorAction Stop
     } catch {
         Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-        Get-Module -Name Strapper -ListAvailable | Where-Object { `$_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion `$_.Version }
+        Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
     }
-    Import-Module -Name Strapper 3>&1 2>&1 1>`$null
+    Import-Module -Name Strapper 3>&1 2>&1 1>$null
     Set-StrapperEnvironment
     #endregion
     
-    `$ProjectName = 'Install-RMMAgent'
-    `$WorkingDirectory = "C:/ProgramData/_automation/script/`$ProjectName"
-    `$StrapperSession.LogPath = "`$WorkingDirectory/`$ProjectName-log.txt"
-    `$StrapperSession.ErrorPath = "`$WorkingDirectory/`$ProjectName-Error.txt"
-    `$Installer = "`$WorkingDirectory/Agent_TKN$($Token).msi"
+    $ProjectName = 'Install-RMMAgent'
+    $WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
+    $StrapperSession.LogPath = "$WorkingDirectory/$ProjectName-log.txt"
+    $StrapperSession.ErrorPath = "$WorkingDirectory/$ProjectName-Error.txt"
+    $Installer = "$WorkingDirectory/Agent_TKN$($Token).msi"
     
-    if ( !(Test-Path `$WorkingDirectory) ) {
+    if ( !(Test-Path $WorkingDirectory) ) {
         try {
-            New-Item -Path `$WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
+            New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
         } catch {
-            Write-Log -Level Error -Text "Failed to Create `$WorkingDirectory. Reason: `$(`$Error[0].Excpection.Message)"
+            Write-Log -Level Error -Text "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
     }
     
-    if (-not ( ( ( Get-Acl `$WorkingDirectory ).Access | Where-Object { `$_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-        `$ACl = Get-ACL `$WorkingDirectory 
-        `$AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-        `$Acl.AddAccessRule(`$AccessRule)
-        Set-Acl  `$WorkingDirectory `$Acl
+    if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
+        $ACl = Get-ACL $WorkingDirectory 
+        $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
+        $Acl.AddAccessRule($AccessRule)
+        Set-Acl  $WorkingDirectory $Acl
     }
     
-    `$DesktopURL = "\<a href=/"https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup/">https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup\</a>"
-    `$ServerURL = "\<a href=/"https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup/">https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup\</a>"
+    $DesktopURL = "https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup/"
+    $ServerURL = "https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup/"
     
-    `$url = if ( ( Get-Ciminstance -Class Win32_OperatingSystem ).Caption -match 'Server' ) { `$ServerURL } else { `$DesktopURL }
+    $url = if ( ( Get-CimInstance -Class Win32_OperatingSystem ).Caption -match 'Server' ) { $ServerURL } else { $DesktopURL }
     
     try { 
-        `$webClient = [System.Net.WebClient]::new()
-        `$WebClient.DownloadFile(`$url, `$installer) 
-        Unblock-File -Path `$Installer -Confirm:`$false -ErrorAction SilentlyContinue
+        $webClient = [System.Net.WebClient]::new()
+        $WebClient.DownloadFile($url, $installer) 
+        Unblock-File -Path $Installer -Confirm:$false -ErrorAction SilentlyContinue
     } catch {
-        Write-Log -Level Error -Text "Failed to download the installer. Reason: `$(`$Error[0].exception.Message)"
+        Write-Log -Level Error -Text "Failed to download the installer. Reason: $($Error[0].Exception.Message)"
     }
     
-    `$ExitCode = (Start-Process 'C:/Windows/System32/msiexec.exe' -ArgumentList "/i ""`$(`$installer)"" /qn" -Wait -PassThru).ExitCode
+    $ExitCode = (Start-Process 'C:/Windows/System32/msiexec.exe' -ArgumentList "/i `"$($installer)`" /qn" -Wait -PassThru).ExitCode
     
     do {
-        try {`$connection = test-connection 8.8.8.8 -Erroraction Stop} catch {`$connection = 'down'}
-    } until (`$connection -ne 'Down' )
+        try {$connection = Test-Connection 8.8.8.8 -Erroraction Stop} catch {$connection = 'down'}
+    } until ($connection -ne 'Down')
     
     Start-Sleep -Seconds 30
-    `$serviceRestartTimeout = 1
+    $serviceRestartTimeout = 1
     do {
         Write-Log -Level Information -Text 'Waiting for the ITPSPlatform Service to appear.'
         Start-Sleep -Seconds 1
-        `$serviceRestartTimeout++
-    } until ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' -ErrorAction SilentlyContinue ) -or `$serviceRestartTimeout -gt 120 )
+        $serviceRestartTimeout++
+    } until ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' -ErrorAction SilentlyContinue ) -or $serviceRestartTimeout -gt 120 )
     
     if ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' -ErrorAction SilentlyContinue ) {
         Write-Log -Level Information -Text 'Successfully installed CW RMM agent.'
         Start-Sleep -Seconds 30
-        foreach ( `$service in ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' | Where-Object { `$_.Status -ne 'Running' } ).Name) ) {
-            Restart-Service -Name `$service -Force -Confirm:`$false -ErrorAction SilentlyContinue
+        foreach ( $service in ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' | Where-Object { $_.Status -ne 'Running' } ).Name) ) {
+            Restart-Service -Name $service -Force -Confirm:$false -ErrorAction SilentlyContinue
         }
     } else {
-        Write-Log -Level Error -Text "CW RMM Agent Installation Failed with exit code `$ExitCode."
+        Write-Log -Level Error -Text "CW RMM Agent Installation Failed with exit code $ExitCode."
     }
 "@
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
@@ -244,7 +245,7 @@ If ( !$ExistingGPO ) {
 0CmdLine=$($projectName).ps1
 0Parameters=
 "@
-    
+
     $psfilename = "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/psscripts.ini"
     $pshellscript | Out-File $psfilename -Encoding unicode
     $psfile = Get-Item $psfilename -Force
@@ -273,7 +274,7 @@ displayName=New Group Policy Object
         Write-Log -Level Information -Text 'Token matches'
         return
     } else {
-        Write-Log -Level Information -Text 'token doesnt match, applying new token'
+        Write-Log -Level Information -Text 'Token doesn’t match, applying new token'
         New-ScriptFile -Token $Token
         Copy-Item "$($WorkingDirectory)/$($ProjectName).ps1" "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force
     }
@@ -288,11 +289,11 @@ displayName=New Group Policy Object
 Insert a new row by clicking the `Add Row` button.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
 
-Select `Script Log` function.  
+Select the `Script Log` function.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_25.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_26.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `PowerShell Output: %Output%`  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_27.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_28.png)
@@ -302,12 +303,12 @@ Paste this line in the `Script Log Message` box and Click the `Save` button.
 Insert a new row by clicking the `Add Row` button.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
 
-Select `PowerShell Script` function.  
+Select the `PowerShell Script` function.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_19.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_20.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_21.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 Get-Content -Path "C:/ProgramData/_automation/script/Install-RMMAgentGPO/Install-RMMAgentGPO-Log.txt" -ErrorAction SilentlyContinue
@@ -315,16 +316,16 @@ Get-Content -Path "C:/ProgramData/_automation/script/Install-RMMAgentGPO/Install
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_29.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_23.png)
 
-#### Row 2 Function: Script Log
+#### Row 4 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
 
-Select `Script Log` function.  
+Select the `Script Log` function.  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_25.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_26.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Script Logs: %Output%`  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_30.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_28.png)
@@ -340,14 +341,3 @@ Click the `Save` button to save the Task.
 
 - Script Log  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_33.png)
-
-
-
-
-
-
-
-
-
-
-

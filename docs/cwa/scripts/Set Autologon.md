@@ -8,11 +8,12 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will download the Autologon.exe from the sysinternals website and will pass the AutoLogon.exe parameters that will allow a user to login automatically after the system is rebooted.
+This script downloads Autologon.exe from the Sysinternals website and passes the Autologon.exe parameters that allow a user to log in automatically after the system is rebooted.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -20,9 +21,9 @@ Time Saved by Automation: 15 Minutes
 
 ## Dependencies
 
-This script downloads a file from the Microsoft Sysinternals website. If this link changes the script must be updated to reflect the proper download location.
+This script downloads a file from the Microsoft Sysinternals website. If this link changes, the script must be updated to reflect the proper download location.
 
-#### User Parameters
+### User Parameters
 
 | Name     | Example           | Required | Description                                                                                      |
 |----------|-------------------|----------|--------------------------------------------------------------------------------------------------|
@@ -32,20 +33,8 @@ This script downloads a file from the Microsoft Sysinternals website. If this li
 
 ## Process
 
-This script will download the Autologon.exe from Microsoft to the LTSvc folder. It will then execute the Autologon.exe application passing the parameters entered by the user running the script. The script will then lock the machine forcing the Autologon to go into effect.
+This script downloads Autologon.exe from Microsoft to the LTSvc folder. It then executes the Autologon.exe application, passing the parameters entered by the user running the script. The script will subsequently lock the machine, forcing the Autologon to take effect.
 
 ## Output
 
 - Script log messages
-
-
-
-
-
-
-
-
-
-
-
-

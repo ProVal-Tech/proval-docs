@@ -8,6 +8,7 @@ tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The Dataview displays the installed [Printer Driver](https://www.technipages.com/definition/printer-driver) information obtained by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) script.
@@ -29,22 +30,10 @@ The Dataview displays the installed [Printer Driver](https://www.technipages.com
 | OS Type               | Whether Server or Workstation                         |
 | Chassis               | Whether Physical Machine/Virtual Machine/Laptop      |
 | Printer Name          | Printer Name                                         |
-| Printer Environment    | Printer Environment e.g., Windows x64 or Windows x86|
+| Printer Environment    | Printer Environment, e.g., Windows x64 or Windows x86|
 | Manufacturer          | Printer Manufacturer                                  |
 | Driver Version        | Printer Driver Version                                |
 | Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) |
 | Last Contact          | Last Contact with RMM                                |
 | Days Since Last Contact| Days Since Last Contact with RMM                     |
-
-
-
-
-
-
-
-
-
-
-
-
 

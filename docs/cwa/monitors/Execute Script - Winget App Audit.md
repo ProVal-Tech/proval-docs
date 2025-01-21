@@ -8,9 +8,10 @@ tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Executes the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script once per week against windows machines.
+This document describes the execution of the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script once per week against Windows machines.
 
 ## Dependencies
 
@@ -23,18 +24,4 @@ Global
 
 ## Alert Template
 
-`△ Custom - Execute Script - Winget App Audit`  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`△ Custom - Execute Script - Winget App Audit`

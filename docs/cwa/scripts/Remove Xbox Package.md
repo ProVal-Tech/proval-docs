@@ -8,11 +8,12 @@ tags: ['logging', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will remove all Xbox packages, including Xbox Game Bar from the target system.
+This script will remove all Xbox packages, including the Xbox Game Bar, from the target system.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,21 +21,9 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- It will run a PowerShell script which will check for online provisioned Xbox packages and attempt to remove them from the agent.
-- The error handling was already set in the script for logging.
+- The script will run a PowerShell command that checks for online provisioned Xbox packages and attempts to remove them from the system.
+- Error handling has been implemented in the script for logging purposes.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

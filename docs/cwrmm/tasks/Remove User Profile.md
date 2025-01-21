@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Deletes a user profile and removes the user account if local. CW RMM implementation of the agnostic script [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>).
+This document describes how to delete a user profile and remove the associated user account if it is local. It includes the ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>).
 
 ## Sample Run
 
@@ -26,14 +27,14 @@ Deletes a user profile and removes the user account if local. CW RMM implementat
 
 | Name          | Example    | Required | Type        | Description                                                                                                                                                                                                                   |
 |---------------|------------|----------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UserName      | TestAdmin  | True     | Text String | The username of the user to remove the profile for. Validated by the following regex: `^(((/.//)|(//w|//-|//.)+//)|)(//w|//.|//-)+$` Valid entries for this parameter are: \<ul>\<li>username\</li>\<li>.//username\</li>\<li>domain//username\</li>\</ul> |
+| UserName      | TestAdmin  | True     | Text String | The username of the user for whom to remove the profile. Validated by the following regex: `^(((/.//)|(//w|//-|//.)+//)|)(//w|//.|//-)+$`. Valid entries for this parameter are: <ul><li>username</li><li>.//username</li><li>domain//username</li></ul> |
 | PreserveUser  | 0/1        | False    | Flag        | Use this switch to preserve the user account after profile deletion.                                                                                                                                                       |
 
 ![User Parameters Image](../../../static/img/Remove-User-Profile/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Image 1](../../../static/img/Remove-User-Profile/image_5.png)  
 ![Task Creation Image 2](../../../static/img/Remove-User-Profile/image_6.png)  
 
@@ -58,22 +59,22 @@ This screen will appear.
 
 ![Username Parameter Image](../../../static/img/Remove-User-Profile/image_10.png)  
 
-### Preserveuser:
+### PreserveUser:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Preserveuser Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
+![Add PreserveUser Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
-![Preserveuser Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
-- Set `Preserveuser` in the `Parameter Name` field.
+![PreserveUser Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+- Set `PreserveUser` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Preserveuser Parameter Image](../../../static/img/Remove-User-Profile/image_11.png)  
+![PreserveUser Parameter Image](../../../static/img/Remove-User-Profile/image_11.png)  
 
 ## Task Creation
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row Image](../../../static/img/Remove-User-Profile/image_12.png)  
 
 A blank function will appear.  
@@ -133,11 +134,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -173,15 +174,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

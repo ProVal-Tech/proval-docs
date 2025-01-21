@@ -8,11 +8,12 @@ tags: ['report', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 # Summary
-Reports on all endpoints where the xPVAL Azure AD Connect Version Custom field is populated with a valid software version.
+This report details all endpoints where the xPVAL Azure AD Connect Version Custom field is populated with a valid software version.
 
 ## Dependencies
-List any related content listed in the Related Items section at the right side of ITGlue. Include Report Parts, Views, Custom Fields, and Solutions, if applicable.
+List any related content found in the Related Items section on the right side of ITGlue. Include Report Parts, Views, Custom Fields, and Solutions, if applicable.
 
 - [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853853)
 - [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853854)
@@ -27,7 +28,7 @@ Modern Report
 ### Layout
 List the report parts used. If custom report parts were designed during report creation, list their properties and attributes.
 
-- Report Parts used
+- Report Parts used:
   - [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853854)
 
 ### General
@@ -44,15 +45,3 @@ Defaults
 
 ### Export Attachment
 Attach the export XML of the report to this document.
-
-
-
-
-
-
-
-
-
-
-
-

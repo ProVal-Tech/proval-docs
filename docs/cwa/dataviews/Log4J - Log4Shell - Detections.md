@@ -8,9 +8,10 @@ tags: ['report', 'security', 'vulnerability']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../scripts/Log4J (Log4Shell) File Scan.md>). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit.
+This document displays information about the EDFs filled by the [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../scripts/Log4J (Log4Shell) File Scan.md>). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit.
 
 ## Dependencies
 
@@ -24,22 +25,9 @@ Displays information about the EDFs filled by [SEC - Endpoint Protection - Scrip
 | ComputerID                   | The ID of the displayed computer.                                   |
 | Computer                     | The name of the displayed computer.                                 |
 | Last Scan                    | The last time that a scan was performed.                           |
-| Attack Attempts Detected      | True if the YARA scan detected attack attempts, otherwise False.   |
-| Vulnerable Files Present      | True if vulnerable files were detected, otherwise False.           |
-| Vulnerable Libraries Present   | True if the Luna scan detected vulnerable libraries, otherwise False. |
+| Attack Attempts Detected      | True if the YARA scan detected attack attempts; otherwise, False.   |
+| Vulnerable Files Present      | True if vulnerable files were detected; otherwise, False.           |
+| Vulnerable Libraries Present   | True if the Luna scan detected vulnerable libraries; otherwise, False. |
 | Log Location                 | The location on the computer of the script log file.               |
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
-
-
-
-
-
-
-
-
-
-
-
-
-

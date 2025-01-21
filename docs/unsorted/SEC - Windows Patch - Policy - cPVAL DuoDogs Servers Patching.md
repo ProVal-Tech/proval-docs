@@ -8,9 +8,10 @@ tags: ['reboot', 'windows']
 draft: true
 unlisted: false
 ---
+
 # Summary
 
-We have created an organization-level patch policy for Servers and its purpose is to Patch & reboot the servers. Windows Automatic Update is disabled on this policy.
+We have created an organization-level patch policy for servers, and its purpose is to manage patching and rebooting of the servers. Windows Automatic Update is disabled under this policy.
 
 # Profile Module
 
@@ -22,29 +23,16 @@ None
 
 # Profile Type
 
-What type of profile has been created? Includes the following:
+What type of profile has been created? It includes the following:
 
 - Patch Management Profiles
 
 # Profile Details
 
-Provide the configuration of the profile, using the following templates based on profile Type. Remove any segments below that are not applicable to the Profile Type.
+Provide the configuration of the profile using the following templates based on the profile type. Remove any segments below that are not applicable to the profile type.
 
 ### Patch Management
 
-- Patch windows automatic update: Servers: Every Week on Saturday at 10:30 PM as per the machine time zone with Skip if offline and the distribution hours is 1 hour.
-- Patch reboot action as below: If user logged in ask permission. Do nothing if no response in 15 minutes. Reboot if user not logged in.
-- Patch Windows Automatic Update is disabled.
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Patch Windows Automatic Update: Servers will be patched every week on Saturday at 10:30 PM according to the machine's time zone, with a "Skip if offline" option and a distribution window of 1 hour.
+- Patch reboot action: If a user is logged in, ask for permission. Do nothing if there is no response in 15 minutes. Reboot if the user is not logged in.
+- Windows Automatic Update is disabled.

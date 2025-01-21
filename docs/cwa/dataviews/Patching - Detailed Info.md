@@ -8,9 +8,10 @@ tags: ['compliance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview is very descriptive and reflects all the relevant information for patching in just one report including patch configuration, patch status, etc.
+This dataview is very descriptive and reflects all the relevant information for patching in just one report, including patch configuration, patch status, and more.
 
 ## Columns
 
@@ -33,21 +34,8 @@ This dataview is very descriptive and reflects all the relevant information for 
 | Approved Patches              | Displays the number of approved patches for the machine                                       |
 | Installed Patches             | Displays the number of installed patches on the machine                                       |
 | Missing Patches               | Displays the number of missing patches on the machine                                         |
-| Overall Compliance             | Displays the overall patch compliance of the machine                                          |
+| Overall Compliance            | Displays the overall patch compliance of the machine                                          |
 | Reboot Pending                | Displays whether the machine has a pending reboot                                             |
 | Last Patched                  | Displays the last patch date of the machine                                                   |
 | Last Scan                     | Displays the last patch scan date of the machine                                              |
-| Missing Production Patches     | The number of approved but not installed patches which are in the Production stage for 3 or more days. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Missing Production Patches     | Displays the number of approved but not installed patches that have been in the Production stage for 3 or more days. |

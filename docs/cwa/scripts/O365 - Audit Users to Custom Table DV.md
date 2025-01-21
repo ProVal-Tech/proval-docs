@@ -8,13 +8,13 @@ tags: ['installation', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uses O365 admin credentials to connect to O365 and audit users to a custom table. The script by default will save the O365 credentials to the password tab so subsequent runs won't require entering them (if these fields are left blank we will attempt to load them from the passwords tab of the client).  
-This script is intended to be used with ProVal's Dashboard for reporting. Dataviews built to monitor this will require super admin.
+This script uses O365 admin credentials to connect to O365 and audit users to a custom table. By default, the script saves the O365 credentials to the password tab, so subsequent runs won't require entering them again (if these fields are left blank, it will attempt to load them from the passwords tab of the client). This script is intended to be used with ProVal's Dashboard for reporting. Dataviews built to monitor this will require super admin access.
 
 **Requirements**  
-Windows OS and PowerShell 5.0 is required
+Windows OS and PowerShell 5.0 are required.
 
 **Time Saved by Automation:** 15 Minutes
 
@@ -38,27 +38,16 @@ Windows OS and PowerShell 5.0 is required
 
 | Name                   | Example   | Required | Description                                                  |
 |------------------------|-----------|----------|--------------------------------------------------------------|
-| Add-Update-Username    | User      | False    | Will add or update a stored username for O365 admin in Passwords Tab |
-| Add-Update-Password    | Password1 | False    | Will add or update a stored password for O365 admin in Passwords Tab |
+| Add-Update-Username    | User      | False    | Will add or update a stored username for O365 admin in the Passwords Tab |
+| Add-Update-Password    | Password1 | False    | Will add or update a stored password for O365 admin in the Passwords Tab |
 
 ## Process
 
-- Creates @plugin_proval_o365_users table
-- Checks if User Param for username/password have been entered; if yes - updates table, if no, selects the existing username/passwords in table.
-- Checks for AzureRM Powershell module, installs if missing
-- Attempts to connect to O365, gathers info and imports in the custom table.
+- Creates the @plugin_proval_o365_users table.
+- Checks if User Params for username/password have been entered; if yes, updates the table; if no, selects the existing username/passwords in the table.
+- Checks for the AzureRM PowerShell module and installs it if missing.
+- Attempts to connect to O365, gathers information, and imports it into the custom table.
 
 ## Output
 
 Script Log
-
-
-
-
-
-
-
-
-
-
-

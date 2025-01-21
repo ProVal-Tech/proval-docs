@@ -8,35 +8,36 @@ tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The monitoring system is set up to gather data on event ID 4740 that occurred within the last 15 minutes and to generate an alert with the relevant information.
 
 ## Details
 
-**Suggested "Limit to"**: Primary Domain Controllers of Each Domain `\<Distinct  Domain Controller Per Client>`
+**Suggested "Limit to"**: Primary Domain Controllers of Each Domain `\\<Distinct Domain Controller Per Client>`
 
 **Suggested Alert Style**: Continuous
 
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
-|--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 900      | \<Screenshot Below> |
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result            |
+|--------------|----------------|------------|---------------|------------|----------|-------------------|
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 900      | \\<Screenshot Below> |
 
 ![Screenshot](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_1.png)
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
 
 ## Target
 
 Domain Controllers  
 ![Image](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_2.png)  
-The monitor set should be limited to the `\<Server Role - AD - Infrastructure Master>` search.  
+The monitor set should be limited to the `\\<Server Role - AD - Infrastructure Master>` search.  
 ![Image](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_3.png)
 
 ## Implementation
@@ -46,7 +47,7 @@ Please follow the instructions provided in the implementation article to impleme
 
 ## Ticketing
 
-**Subject:** `\<AD Account LockOut Detected on %COMPUTERNAME%>`
+**Subject:** `\\<AD Account LockOut Detected on %COMPUTERNAME%>`
 
 **Body:**  
 Here are the details of the user(s) who were locked out:  
@@ -61,15 +62,3 @@ Endpoint    :    DEV-Win11DomainJoined
 Domain      :    provaltestdomain.local
 DC          :    DEV-SERVER-2019$
 ```
-
-
-
-
-
-
-
-
-
-
-
-

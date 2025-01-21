@@ -8,27 +8,17 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Custom field is updated by the agent procedure of this solution.
+Custom fields are updated by the agent procedure of this solution.
 
 ## Dependencies
 
-[https://proval.itglue.com/DOC-5078775-13650440](https://proval.itglue.com/DOC-5078775-13650440)
+[Documentation Link](https://proval.itglue.com/DOC-5078775-13650440)
 
 ## Details
 
 | Field Name         | Type of Field (Machine or Organization) | Description            |
 |--------------------|-----------------------------------------|------------------------|
 | cPVAL PST File     | Machine                                 | Used for PST location  |
-
-
-
-
-
-
-
-
-
-
-

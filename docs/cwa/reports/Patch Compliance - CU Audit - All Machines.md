@@ -8,9 +8,10 @@ tags: ['compliance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The Patch Compliance - CU Audit - All Machines report displays a comprehensive summary of all machines at a specific client and their perspective patch status. It looks at how long each machine has been on an older cumulative update than the latest, and calculates a client compliance score based on that information.
+The Patch Compliance - CU Audit - All Machines report displays a comprehensive summary of all machines at a specific client and their respective patch status. It examines how long each machine has been using an older cumulative update compared to the latest version and calculates a client compliance score based on that information.
 
 ## Dependencies
 

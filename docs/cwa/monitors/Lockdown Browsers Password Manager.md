@@ -8,11 +8,12 @@ tags: ['browsers', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The remote monitor is trying to turn off the Password Manager in specific web browsers like Google Chrome, Mozilla Firefox, Microsoft Edge, and Brave. The solution involves making changes to the computer's registry.
 
-It's important to know that for browsers based on Chromium (like Google Chrome, Mozilla Firefox, and Microsoft Edge), turning off the Password Manager won't stop the Autofill (or Sign in Automatically) feature. If Autofill (or Sign in Automatically) is enabled and there are saved passwords, it will still automatically fill in credentials for websites. But, if the Password Manager is disabled, new passwords won't be saved, and the browser won't ask to store passwords. However, the saved passwords will still work.
+It's important to know that for browsers based on Chromium (like Google Chrome, Microsoft Edge, and Brave), turning off the Password Manager won't stop the Autofill (or Sign in Automatically) feature. If Autofill (or Sign in Automatically) is enabled and there are saved passwords, it will still automatically fill in credentials for websites. However, if the Password Manager is disabled, new passwords won't be saved, and the browser won't ask to store passwords. The saved passwords will still work.
 
 For Firefox, turning off the Password Manager will also disable Autofill.
 
@@ -29,7 +30,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Mozilla Firefox Setting](../../../static/img/Lockdown-Browsers-Password-Manager/image_4.png)
 
 **Note:**
-- The changes will only happen once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
+- The changes will only take effect once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
 - If the PowerShell version on the machines is older than version 5, the remote monitor may not produce the expected outcomes.
 
 ## Details
@@ -61,16 +62,3 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Implementation
 
 [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)  
-
-
-
-
-
-
-
-
-
-
-
-
-

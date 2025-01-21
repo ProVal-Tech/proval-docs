@@ -8,13 +8,14 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is a function script in Connectwise Automate that takes a `@command@` variable set to a desired command, tests that command on the endpoint and the script will fail if that command returns that the command is not known.
+This is a function script in ConnectWise Automate that takes a `@command@` variable set to a desired command, tests that command on the endpoint, and the script will fail if that command is not recognized.
 
 ## Sample Run
 
-Function script only
+Function script only.
 
 ## Variables
 
@@ -22,25 +23,14 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name  | Description                               |
 |-------|-------------------------------------------|
-| psout | The output of the powershell command.    |
+| psout | The output of the PowerShell command.    |
 
 #### User Parameters
 
 | Name    | Example                 | Required | Description                             |
 |---------|-------------------------|----------|-----------------------------------------|
-| Command | Get-bitlockervolume     | True     | The command to test on the endpoint.    |
+| Command | Get-BitLockerVolume     | True     | The command to test on the endpoint.    |
 
 ## Output
 
-- failstatus will be false if this script fails
-
-
-
-
-
-
-
-
-
-
-
+- `failstatus` will be false if this script fails.

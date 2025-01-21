@@ -8,13 +8,14 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script establishes two scheduled tasks on the computer: `Winget Update All [System]` and `Winget Update All [Logged on User]`. The `Winget Update All [System]` task executes the Winget's upgrade of all commands upon system boot (after network connection) under the SYSTEM context. Meanwhile, the `Winget Update All [Logged on User]` task initiates the Winget's upgrade of all commands upon user login.
+The script establishes two scheduled tasks on the computer: `Winget Update All [System]` and `Winget Update All [Logged on User]`. The `Winget Update All [System]` task executes Winget's upgrade of all commands upon system boot (after network connection) under the SYSTEM context. Meanwhile, the `Winget Update All [Logged on User]` task initiates Winget's upgrade of all commands upon user login.
 
-The system property `Winget_Disable_User_Level_Scheduled_Task` can be used to enable the `Winget Update All [Logged on User]` task. By default, `Winget_Disable_User_Level_Scheduled_Task` is set to 1, which is disabled.
+The system property `Winget_Disable_User_Level_Scheduled_Task` can be used to enable the `Winget Update All [Logged on User]` task. By default, `Winget_Disable_User_Level_Scheduled_Task` is set to 1, which means it is disabled.
 
-![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif) Be sure that user-level scheduled tasks `Winget Update All [Logged on User]` may prompt for UAC to the logged-in user if enabled. ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
+![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif) Be aware that the user-level scheduled task `Winget Update All [Logged on User]` may prompt for UAC to the logged-in user if enabled. ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
 
 **Note:** The script is explicitly limited to Windows 10 and 11.
 
@@ -38,7 +39,7 @@ Regular execution of the script:
 
 | Name                                          | Default | Mandatory | Description                                                                                                           |
 |-----------------------------------------------|---------|-----------|-----------------------------------------------------------------------------------------------------------------------|
-| Winget_Disable_User_Level_Scheduled_Task     | 1       | False     | Set the `Winget_Disable_User_Level_Scheduled_Task` System Property to `0` to enable the `Winget Update All [Logged on User]` task on the endpoints. |
+| Winget_Disable_User_Level_Scheduled_Task     | 1       | False     | Set the `Winget_Disable_User_Level_Scheduled_Task` system property to `0` to enable the `Winget Update All [Logged on User]` task on the endpoints. |
 
 ![System Properties](../../../static/img/Scheduled-Task---Create---Winget-Update-All-Autofix/image_3.png)
 
@@ -76,16 +77,3 @@ When the `Winget Update All [Logged on User]` task is enabled, a command window 
 
 - Script log
 - Extra Data Field
-
-
-
-
-
-
-
-
-
-
-
-
-

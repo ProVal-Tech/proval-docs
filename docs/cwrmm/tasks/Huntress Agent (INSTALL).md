@@ -8,9 +8,10 @@ tags: ['installation', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs Huntress agent on the Windows machine if it's not already installed.
+Installs the Huntress agent on the Windows machine if it's not already installed.
 
 ## Dependencies
 
@@ -28,7 +29,7 @@ Please create a new "PowerShell" style script to implement this script.
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_2.png)  
 
 **Name:** Huntress Agent Install  
-**Description:** This task will check first if Huntress is installed or not. If not, then it attempts to install the agent and log the result.  
+**Description:** This task will check first if Huntress is installed. If not, it attempts to install the agent and log the result.  
 **Category:** Custom  
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_3.png)  
@@ -41,15 +42,15 @@ Please create a new "PowerShell" style script to implement this script.
 
 Input the following:
 
->This script will detect the Huntress Agent and if the agent is not found then it will install the agent.
+>This script will detect the Huntress Agent, and if the agent is not found, it will install the agent.
 >
 >acct_key : `@acct_key@`  
 >org_key: `@ORG_Key@`  
 >tags: ['installation', 'security', 'setup', 'windows']
 >
->Attempting to download the file using acct_key from the huntress website as below:  
+>Attempting to download the file using acct_key from the Huntress website as below:  
 >
->[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded the agent will be attempted to install.
+>[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded, the agent will be attempted to install.
 
 ### Row 2 Function: Set Pre-defined Variable
 
@@ -59,7 +60,7 @@ Input the following:
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
-- Select `Huntress Acct_Key` custom field from drop-down
+- Select `Huntress Acct_Key` custom field from the drop-down
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_6.png)  
@@ -131,13 +132,14 @@ if ($installed -match 'Huntress') {
     #endregion
 
     #region Setup - Folder Structure
-    if ( !(Test-Path $WorkingDirectory) ) {
+    if (!(Test-Path $WorkingDirectory)) {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
             return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
-    } if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+    } 
+    if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' }).FileSystemRights -Match 'FullControl')) {
         $ACl = Get-Acl $WorkingDirectory
         $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
         $Acl.AddAccessRule($AccessRule)
@@ -154,7 +156,7 @@ if ($installed -match 'Huntress') {
         [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
     }
     if (!(Test-Path -Path $PS1Path)) {
-        return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
+        return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
     }
     #endregion
 
@@ -180,7 +182,7 @@ if ($installed -match 'Huntress') {
 
 ### Step 6 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button
 - Search and select the `Script Log` function.
 - Input the following  
 
@@ -205,7 +207,7 @@ if ($installed -match 'Huntress') {
 
 ### ROW 7b Function: Set Custom Field
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button
 - Search and select the `Set Custom Field` function.
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_15.png)  
@@ -217,7 +219,7 @@ if ($installed -match 'Huntress') {
 
 ### ROW 7c Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button
 - Search and select the `Script Exit` function.
 - Leave it blank
 
@@ -230,7 +232,7 @@ Huntress Agent is installed successfully.
 
 ### ROW 7d Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button
 - Search and select the `Script Exit` function.
 - Leave it blank
 
@@ -249,16 +251,16 @@ Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `Else` s
 
 ### Row 7e(i) Condition: Output Contains
 
-- Select `Output` from Drop Down
+- Select `Output` from the drop-down
 - Type `ERROR:` in the Value box.
-- Select another condition with `OR` Operator
+- Select another condition with the `OR` Operator
 - Type `Account Key Missing` in the Value box.
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_22.png)  
 
 ### Row 7e(ii) Function: Set Custom Field
 
-Add another row by selecting `ADD ROW` button in the `Else` section of the internal `If/Then` section.  
+Add another row by selecting the `ADD ROW` button in the `Else` section of the internal `If/Then` section.  
 
 - Search and select the `Set Custom Field` function.
 
@@ -271,7 +273,7 @@ Add another row by selecting `ADD ROW` button in the `Else` section of the inter
 
 ### Row 7e(iii) Function: Script Exit
 
-Add another row by selecting `ADD ROW` button in the `Else` section of the internal `If/Then` section.  
+Add another row by selecting the `ADD ROW` button in the `Else` section of the internal `If/Then` section.  
 
 - Search and select the `Script Exit` function.
 - Input the following  
@@ -281,17 +283,17 @@ Failed to install Huntress. Refer to the below log:
 %Output%
 ```
 
-The final task should look like the below screenshot.
+The final task should look like the screenshot below.
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_25.png)  
 
 ## Script Deployment
 
-This task has to be scheduled on `Deploy Huntress` group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on the `Deploy Huntress` group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Huntress Agent Install.  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
+Then click on Schedule and provide the parameter details as necessary for the script completion.
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_26.png)  
 
@@ -301,25 +303,12 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 
 ## FAQ
 
-Note:  
-For the huntress deployment, the Huntress_Acct_Key is mandatory to be filled at the company level.
+**Note:**  
+For the Huntress deployment, the Huntress_Acct_Key is mandatory to be filled at the company level.
 
 ![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_27.png)  
 
-Rest other custom fields can be left blank.
+The other custom fields can be left blank.
 
-Note:  
-Huntress_Acct_Key and Huntress_Org_Key are the company custom fields whereas the Huntress_Tags is the site-level custom field.
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Note:**  
+Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.

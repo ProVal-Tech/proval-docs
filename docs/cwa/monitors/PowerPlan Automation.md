@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The internal monitor will detect machines where the Power Plan set in the Client-Level EDF "PowerPlan Name" EDF is not available, and Power Plan Automation is enabled.
+The internal monitor will detect machines where the Power Plan set in the Client-Level EDF "PowerPlan Name" is not available, and Power Plan Automation is enabled.
 
 ## Dependencies
 
@@ -23,15 +24,3 @@ Global
 ## Alert Template
 
 Name: `△ Custom - PowerPlan Automation`
-
-
-
-
-
-
-
-
-
-
-
-

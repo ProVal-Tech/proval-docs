@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'usage', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will display data related to how often scripts are being run by users in the environment. The goal of this dataview is to show if Techs are using scripts or are just providing remote support without using the RMM.
+This dataview displays data related to how often scripts are being run by users in the environment. The goal of this dataview is to show if technicians are using scripts or are just providing remote support without utilizing the RMM.
 
 ## Dependencies
 
@@ -24,17 +25,4 @@ None
 | Run by User   | The user that ran the script                                                                     |
 | ScriptID      | The numerical value of the script                                                                 |
 | Times Run     | A count of the number of times the script was run by this user in the last 30 days              |
-| Last Run      | The last time the script was ran by the user                                                    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Run      | The last time the script was run by the user                                                    |

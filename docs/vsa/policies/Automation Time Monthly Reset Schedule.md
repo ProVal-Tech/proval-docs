@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 # Summary
 
 Schedules the Monthly CF Field Reset AP.
@@ -21,22 +22,10 @@ Schedules the Monthly CF Field Reset AP.
 - **Policy Name**: Automation Time Monthly Reset Schedule
 - **Policy Description**: Schedules the Monthly CF Field Reset AP.
 - **Applied View**: All Machines
-- **Assigned Organizations / Machine Groups**: NA
-- **Assigned Machines**: NA
+- **Assigned Organizations / Machine Groups**: N/A
+- **Assigned Machines**: N/A
 - **Policy Objects Active**:
   - **Policy Object Name**: Agent Procedure
   - **Policy Object Settings**:
     - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](<../procedures/Monthly Automation Time Reset.md>)
       - **Policy Object Member Settings**: Monthly, 1st day, midnight, do not SiO
-
-
-
-
-
-
-
-
-
-
-
-

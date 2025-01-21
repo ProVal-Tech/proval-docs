@@ -8,11 +8,12 @@ tags: ['backup', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script uses PowerShell to enable shadow copies (like the older solution "previous versions" feature in Windows 7). It will create a Shadow Copy task for the System Drive via Task Scheduler at the scheduled times in the Global Variables.
+The script uses PowerShell to enable shadow copies (similar to the older "previous versions" feature in Windows 7). It will create a Shadow Copy task for the system drive via Task Scheduler at the scheduled times defined in the global parameters.
 
-Time Saved by Automation: 20 Minutes
+**Time Saved by Automation:** 20 Minutes
 
 ## Sample Run
 
@@ -30,26 +31,14 @@ None
 
 | Name         | Example  | Required | Description                                                                                         |
 |--------------|----------|----------|-----------------------------------------------------------------------------------------------------|
-| AM-Time      | 6:00AM   | True     | This is the scheduled AM instance of the Shadow Copy (6:00AM is the default value)                |
-| PM-Time      | 6:00PM   | True     | This is the scheduled PM instance of the Shadow Copy (6:00PM is the default value)                |
+| AM-Time      | 6:00 AM  | True     | This is the scheduled AM instance of the Shadow Copy (6:00 AM is the default value)                |
+| PM-Time      | 6:00 PM  | True     | This is the scheduled PM instance of the Shadow Copy (6:00 PM is the default value)                |
 | Task-Prefix  | MSP-     | True     | The prefix added to the name of the scheduled task (MSP- is the default value)                    |
 
 ## Process
 
-Once the global parameters are configured to the desired values, the script will use the values to run a PowerShell script that allocates space on the system drive for the Shadow Copies. It then proceeds to set up scheduled tasks for an AM and a PM Shadow Copy. The script will verify that there were no failures in the PowerShell script and will exit successfully as long as there are no errors returned from the PowerShell script. If the PowerShell does not run successfully, the Automate script will exit with an error and a log message.
+Once the global parameters are configured to the desired values, the script will use those values to run a PowerShell script that allocates space on the system drive for the shadow copies. It then proceeds to set up scheduled tasks for both AM and PM shadow copies. The script will verify that there were no failures in the PowerShell script and will exit successfully as long as there are no errors returned from the PowerShell script. If the PowerShell script does not run successfully, the automation script will exit with an error and log a message.
 
 ## Output
 
 Script log
-
-
-
-
-
-
-
-
-
-
-
-

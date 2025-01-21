@@ -8,29 +8,19 @@ tags: ['usage']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Checks current Automate license availability. Suggested monitor failure is 90% usage.  
-The suggested alert template is Default Create Automate Ticket.
+This document checks the current Automate license availability. The suggested monitor failure threshold is 90% usage.  
+The recommended alert template is "Default Create Automate Ticket."
 
 ## Important Notes
 
-For the on-prem partners, tickets will be generated for the Automate server.  
-For the hosted partners, it will be the minimum computerid of Clientid 1. If Clientid 1 is not the primary client for a hosted partner then the clientid should be updated in the Additional Field:  
+For on-prem partners, tickets will be generated for the Automate server.  
+For hosted partners, it will be the minimum computer ID of Client ID 1. If Client ID 1 is not the primary client for a hosted partner, then the Client ID should be updated in the Additional Field:  
 ![Image](../../../static/img/Over-90-Licenses-Used-G/image_1.png)
 
 ## Target
 
-The suggested target for the monitor.  
+The suggested target for the monitor is as follows:  
 Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-

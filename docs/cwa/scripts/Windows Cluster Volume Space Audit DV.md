@@ -8,15 +8,16 @@ tags: ['cluster', 'disk', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is created to perform the audit of the Cluster group devices to maintain a report of the space free at the cluster disks.
+This script is designed to perform an audit of the cluster group devices to maintain a report of the free space on the cluster disks.
 
 ## Sample Run
 
 ![Sample Run Image](../../../static/img/Windows-Cluster-Volume-Space-Audit-DV/image_1.png)
 
-Set the value of `Set_Environment` to 1, to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation/Cluster Detected" group.
+Set the value of `Set_Environment` to 1 to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation/Cluster Detected" group.
 
 ![Sample Run Image](../../../static/img/Windows-Cluster-Volume-Space-Audit-DV/image_2.png)
 
@@ -26,29 +27,17 @@ Set the value of `Set_Environment` to 1, to create the table and schedule the sc
 
 #### Global Parameters
 
-| Name       | Example              | Required | Description                                                                 |
-|------------|----------------------|----------|-----------------------------------------------------------------------------|
-| TableName  | pvl_cluster_volumes   | True     | This table stores the audit report of the cluster disks of the cluster servers. |
+| Name      | Example              | Required | Description                                                                 |
+|-----------|----------------------|----------|-----------------------------------------------------------------------------|
+| TableName | pvl_cluster_volumes   | True     | This table stores the audit report of the cluster disks of the cluster servers. |
 
 ## User Parameters
 
-| Name             | Example | Required | Description                                                                                                         |
-|------------------|---------|----------|---------------------------------------------------------------------------------------------------------------------|
-| Set_Environment   | 1       | False    | Set to 1, to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation/Cluster Detected" group. |
+| Name            | Example | Required | Description                                                                                                         |
+|-----------------|---------|----------|---------------------------------------------------------------------------------------------------------------------|
+| Set_Environment  | 1       | False    | Set to 1 to create the table and schedule the script every Monday at 4:30 AM agent time on the "_System Automation/Cluster Detected" group. |
 
 ## Output
 
 - Script log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

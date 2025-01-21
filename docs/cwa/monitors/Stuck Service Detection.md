@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is remote PowerShell monitor which detects stuck services in a state other than Running or Stopped.
+This document describes a remote PowerShell monitor that detects stuck services in a state other than Running or Stopped.
 
 ## Details
 
@@ -18,7 +19,7 @@ This is remote PowerShell monitor which detects stuck services in a state other 
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: ~Autofix - Remove Stuck Services  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
@@ -31,16 +32,3 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Windows Machine
-
-
-
-
-
-
-
-
-
-
-
-
-

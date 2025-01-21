@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script installs the New Microsoft Teams on both Windows and Mac computers. Users will need to log in again to finalize the installation. It uses the [Install-MsTeams](<../../powershell/Install-MSTeams.md>) agnostic script for Windows. It also attempts to uninstall the existing Microsoft Teams classic installation before reinstalling for Windows.
+This document provides a script for installing the New Microsoft Teams on both Windows and Mac computers. Users will need to log in again to finalize the installation. The script utilizes the [Install-MsTeams](<../../powershell/Install-MSTeams.md>) agnostic script for Windows. Additionally, it attempts to uninstall the existing Microsoft Teams classic installation before reinstalling on Windows.
 
 ## Sample Run
 
@@ -19,16 +20,5 @@ The script installs the New Microsoft Teams on both Windows and Mac computers. U
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
 
 

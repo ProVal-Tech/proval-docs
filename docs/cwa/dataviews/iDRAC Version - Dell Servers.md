@@ -8,9 +8,10 @@ tags: ['database', 'dell', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the version of iDRAC on Dell Servers. The script [Get iDRAC Version - Dell Servers [DV]](<../scripts/Get iDRAC Version - Dell Servers DV.md>) should be scheduled to run daily on "Dell Servers" group to gather the corresponding data.
+This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC Version - Dell Servers [DV]](<../scripts/Get iDRAC Version - Dell Servers DV.md>) should be scheduled to run daily on the "Dell Servers" group to gather the corresponding data.
 
 ## Dependencies
 
@@ -20,24 +21,10 @@ This dataview shows the version of iDRAC on Dell Servers. The script [Get iDRAC 
 
 | Column            | Description                                                 |
 |-------------------|-------------------------------------------------------------|
-| Client Name       | Shows the name of client for the concern server.           |
-| Location Name     | Shows the name of location for the concern server.         |
-| Computer Name     | Shows the name of the concern server.                       |
-| Manufacturer      | Shows the manufacturer for the concern server.             |
-| Operating System   | Shows the OS for the concern server.                       |
-| iDRAC Version     | Shows the iDRAC Version for the concern server.            |
-| Last Contact      | Shows the last contact of concern server with RMM.         |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name       | Shows the name of the client for the concerned server.     |
+| Location Name     | Shows the name of the location for the concerned server.   |
+| Computer Name     | Shows the name of the concerned server.                     |
+| Manufacturer      | Shows the manufacturer of the concerned server.            |
+| Operating System   | Shows the OS of the concerned server.                      |
+| iDRAC Version     | Shows the iDRAC version of the concerned server.           |
+| Last Contact      | Shows the last contact of the concerned server with RMM.   |

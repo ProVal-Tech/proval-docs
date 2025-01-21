@@ -8,21 +8,22 @@ tags: ['active-directory', 'logging', 'registry', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Overview
 
-Returns information about membership changes to a group based on previous runs of the script.
+This script returns information about membership changes to a group based on previous runs.
 
 ## Requirements
 
-1. Should be run on an Active Directory Domain Controller
+- Should be run on an Active Directory Domain Controller.
 
 ## Process
 
-1. If the script has not been run previously for the target group, then the script creates the pertinent registry key and value, and then exits.
-2. Previous runs of the script are then compared with the current run.
-3. If there are changes detected, the changes will be logged and added to the return object.
-4. Update the list of users in the registry with the live user list.
-5. Return the object.
+1. If the script has not been run previously for the target group, it creates the pertinent registry key and value, then exits.
+2. Previous runs of the script are compared with the current run.
+3. If changes are detected, they will be logged and added to the return object.
+4. The list of users in the registry is updated with the live user list.
+5. The object is returned.
 
 ## Payload Usage
 
@@ -32,7 +33,7 @@ Example:
 ```
 Compare-ADGroupMembers.ps1 -ADGroupName "Domain Admins"
 ```
-Compares the users found in the last run of Compare-ADGroupMembers.ps1 with the current list of members of the specified group and returns the differences between the two.
+This command compares the users found in the last run of `Compare-ADGroupMembers.ps1` with the current list of members of the specified group and returns the differences between the two.
 
 ### Parameters
 
@@ -54,16 +55,3 @@ Compares the users found in the last run of Compare-ADGroupMembers.ps1 with the 
 | Payload                                  |
 |------------------------------------------|
 | /repo/scripts/Compare-ADGroupMembers.ps1 |
-
-
-
-
-
-
-
-
-
-
-
-
-

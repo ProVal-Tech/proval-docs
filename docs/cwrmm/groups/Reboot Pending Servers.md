@@ -8,9 +8,10 @@ tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This group contains the server endpoint where the reboot is pending. This group contains the server endpoint where the reboot is pending. It detects only supported Windows servers i.e. 2016, 2019, and 2022 and it only works when the Reboot Prompter Solution is activated.
+This group contains the server endpoints where a reboot is pending. It detects only supported Windows servers, specifically 2016, 2019, and 2022, and it only works when the Reboot Prompter Solution is activated.
 
 ## Dependencies
 
@@ -20,9 +21,9 @@ This group contains the server endpoint where the reboot is pending. This group 
 
 | Field Name                 | Type of Field (Machine or Organization) | Description                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reboot Pending Servers      | Dynamic Group                          | This group contains the server endpoint where the reboot is pending. This group contains the server endpoint where the reboot is pending. It detects only supported Windows servers i.e. 2016, 2019, and 2022 and it only works when the Reboot Prompter Solution is activated.                                                                                                                                 |
+| Reboot Pending Servers      | Dynamic Group                          | This group contains the server endpoints where a reboot is pending. It detects only supported Windows servers, specifically 2016, 2019, and 2022, and it only works when the Reboot Prompter Solution is activated.                                                                                                                                                                 |
 
-## Group Create
+## Group Creation
 
 ### 1. Create Dynamic Groups:
 
@@ -34,18 +35,7 @@ This group contains the server endpoint where the reboot is pending. This group 
 
 **Criteria:**
 
-- Auto_RebootPendingCheck custom field equals to True.
-- The agent available equals to True.
-- The OS contains any of Windows 2016, Windows 2019, and Windows 2022.
+- Auto_RebootPendingCheck custom field equals True.
+- The agent available equals True.
+- The OS contains any of Windows 2016, Windows 2019, or Windows 2022.
 - The Exclude reboot custom field equals False.
-
-
-
-
-
-
-
-
-
-
-

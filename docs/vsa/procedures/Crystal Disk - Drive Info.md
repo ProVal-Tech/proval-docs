@@ -8,30 +8,31 @@ tags: ['disk', 'installation', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
-Gathers data pulled from the CrystalDiskInfo application.
+This document gathers data pulled from the CrystalDiskInfo application.
 
 # Requirements
-- Powershell V.5
+- PowerShell V.5
 - Custom Field "SMART status"
 
 # VSA Implementation
-1. Create a custom field "Smart status" as a string prior to running the agent procedure.
+1. Create a custom field "SMART status" as a string prior to running the agent procedure.
 
-![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_1.png)
+   ![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_1.png)
 
 2. Import the procedure and set the variables within the agent procedure. There are comments describing the purpose and usage of these lines within the agent procedure. A screenshot of the relevant portion of the procedure has been provided below.
 
-![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_2.png)
+   ![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_2.png)
 
-3. Run the agent procedure and verify you see the drive information in the agent procedure log as well as the custom field updated.
+3. Run the agent procedure and verify that you see the drive information in the agent procedure log, as well as the custom field updated.
 
 # Process
-1. Downloads Crystal Disk Info
-2. Runs the Executable silently
-3. Parses the created .txt file
-4. Generates objects based on the output
-5. Returns the objects
+1. Downloads CrystalDiskInfo.
+2. Runs the executable silently.
+3. Parses the created .txt file.
+4. Generates objects based on the output.
+5. Returns the objects.
 6. The objects are stored in the log, written to the agent procedure, and stored in a custom field.
 
 # Payload Usage
@@ -60,14 +61,3 @@ Location of output for log, result, and error files.
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-log.txt
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

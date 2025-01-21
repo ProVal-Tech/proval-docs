@@ -8,6 +8,7 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The purpose of the script is to uninstall any version of Driver Booster from the machine.
@@ -15,9 +16,9 @@ The purpose of the script is to uninstall any version of Driver Booster from the
 ## Implementation
 
 - Import the script.
-- Import internal monitor "ProVal - Client Specific - Uninstall Driver Booster".
-- Run Script as an Autofix with the Above monitor.
-- Further, it can be run independently against any Windows machine as well.
+- Import the internal monitor "ProVal - Client Specific - Uninstall Driver Booster".
+- Run the script as an Autofix with the above monitor.
+- Additionally, it can be run independently against any Windows machine.
 
 ## Sample Run
 
@@ -26,14 +27,3 @@ The purpose of the script is to uninstall any version of Driver Booster from the
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-

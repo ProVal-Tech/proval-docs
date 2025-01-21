@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Baseline for the following dataviews:
@@ -26,14 +27,13 @@ Minimum Requirement: MySQL 5.7.7
 
 ### plugin_proval_v_patching_metrics_overview
 
-| Column         | Type         | Explanation                                                                                  |
-|----------------|--------------|----------------------------------------------------------------------------------------------|
-| Clientid       | int (11)     | Clientid                                                                                     |
-| Computerid     | int (11)     | Computerid                                                                                   |
-| locationid     | int (11)     | Computerid                                                                                   |
-| os             | varchar (100)| Operating System                                                                             |
-| ApproVal Age   | varchar (5)  | Approval Age in days of the patch ('\<= 7', '8-14', '15-22', '22-30', '> 30')               |
-| Total Approved  | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
-| Total Missing   | decimal (23,0)| Number of approved patches that aren't installed                                             |
-| Patching Policy | varchar (9)  | Patching Policy (Managed | Unmanaged)                                                       |
-
+| Column          | Type          | Explanation                                                                                  |
+|-----------------|---------------|----------------------------------------------------------------------------------------------|
+| Clientid        | int (11)      | Client ID                                                                                    |
+| Computerid      | int (11)      | Computer ID                                                                                  |
+| Locationid      | int (11)      | Location ID                                                                                  |
+| OS              | varchar (100) | Operating System                                                                              |
+| ApproVal Age    | varchar (5)   | Approval Age in days of the patch ('\\<= 7', '8-14', '15-22', '22-30', '> 30')               |
+| Total Approved   | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
+| Total Missing    | decimal (23,0)| Number of approved patches that aren't installed                                             |
+| Patching Policy  | varchar (9)   | Patching Policy (Managed | Unmanaged)                                                       |

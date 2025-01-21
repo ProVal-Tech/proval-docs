@@ -8,10 +8,12 @@ tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script collects information of shared folder details such as Share Name, Shared path, Shared Type, User having access to the share folder, permission type (Allow or Deny), permission right (full, read, change or no access) etc.  
-Time Saved by Automation: 10 Minutes
+This script collects information about shared folder details such as Share Name, Shared Path, Shared Type, Users having access to the shared folder, Permission Type (Allow or Deny), and Permission Rights (Full, Read, Change, or No Access).
+
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -37,25 +39,13 @@ Time Saved by Automation: 10 Minutes
 
 | Name                      | Example                                           | Description                                                                                     |
 |---------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| ShareFolder@loopcounter@ | Example -- Resource -- Remark --AccountName - AccessControlType -- AccessRight | This is a concatenated string of the values above and is used to display the data in the associated Dataview |
+| ShareFolder@loopcounter@ | Example -- Resource -- Remark -- AccountName -- AccessControlType -- AccessRight | This is a concatenated string of the values above and is used to display the data in the associated Dataview |
 
 ## Process
 
-The script will run a PowerShell script to gather the data from the endpoint. The script will then use a specially designed SQL loop that will separate out the results from the PowerShell run into different script state lines. Once the loop writes a bad value, the script will stop the loop and finish processing the script states for the machine.
+The script will run a PowerShell script to gather data from the endpoint. It will then use a specially designed SQL loop to separate the results from the PowerShell run into different script state lines. Once the loop encounters a bad value, the script will stop the loop and finish processing the script states for the machine.
 
 ## Output
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,23 +8,13 @@ tags: ['api', 'setup']
 draft: false
 unlisted: false
 ---
-## Summery:
+
+## Summary:
 
 Put the System's Org Name in a Custom Field via API
 
 ## Parameters:
 
-- **user**: user we plan to auth with
-- **password**: Auth string for vsa
-- **url**: URL of our vsa
-
-
-
-
-
-
-
-
-
-
-
+- **user**: User we plan to authenticate with
+- **password**: Authentication string for VSA
+- **url**: URL of our VSA

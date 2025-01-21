@@ -8,35 +8,24 @@ tags: ['database', 'office365', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores baseline information about Office 365 users gathered by the script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>).
+This document stores baseline information about Office 365 users gathered by the script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>).
 
 ## Dependencies
 
-[O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>).
+The script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>) is required.
 
 ## Table
 
-#### plugin_proval_o365_users
+### plugin_proval_o365_users
 
 | Column      | Type | Explanation                                                     |
 |-------------|------|-----------------------------------------------------------------|
 | ClientID    | INT  | The ClientID associated with the O365 user.                     |
 | DisplayName | CHAR | The display name of the O365 user.                              |
-| Email       | CHAR | The primary e-mail address of the O365 user.                   |
-| IsLicensed   | CHAR | True or False depending on if the user is licensed or not.     |
-| 2FAStatus   | CHAR | String denoting the type of 2FA set up on the account.         |
+| Email       | CHAR | The primary email address of the O365 user.                    |
+| IsLicensed   | CHAR | Indicates whether the user is licensed (True or False).        |
+| 2FAStatus   | CHAR | A string denoting the type of 2FA set up on the account.       |
 | ContactID   | INT  | The ContactID associated with the O365 user. Will be NULL if a match cannot be found. |
-
-
-
-
-
-
-
-
-
-
-
-

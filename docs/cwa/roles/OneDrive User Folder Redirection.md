@@ -8,24 +8,13 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role is detected on machines on which OneDrive User Folder redirection is enabled.
+This document outlines the detection of machines on which OneDrive User Folder redirection is enabled.
 
 ## Settings
 
-| Detection String                          | Comparator | Result | Applicable OS |
-|-------------------------------------------|------------|--------|----------------|
+| Detection String                                               | Comparator | Result | Applicable OS |
+|--------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptIn-%}` | Exists     |        | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-

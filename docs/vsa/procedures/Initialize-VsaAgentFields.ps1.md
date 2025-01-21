@@ -8,14 +8,15 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
-Writes the ProVal Stack Machine Custom Fields to a new client environment
+This document describes the process of writing the ProVal Stack Machine Custom Fields to a new client environment.
 
 # Requirements
-VSAAPI ProVal Module
+- VSAAPI ProVal Module
 
 # Process
-Uses VSAAPI module to interface with client environment, setting new CustomFields for the Machine Scope
+The VSAAPI module is used to interface with the client environment, setting new CustomFields for the Machine Scope.
 
 # Payload Usage
 ```
@@ -26,22 +27,12 @@ Uses VSAAPI module to interface with client environment, setting new CustomField
 
 | Parameter         | Required | Type   | Description                                       |
 |-------------------|----------|--------|---------------------------------------------------|
-| `BaseURL`        | True     | String | URL Of the Target VSA Environment                 |
-| `VsaUserName`    | True     | String | Vsa User with System Role/Scope and API Access   |
-| `RestApiToken`   | True     | String | Rest Api Access Token for the Vsa User above      |
+| `BaseURL`        | True     | String | URL of the target VSA environment                 |
+| `VsaUserName`    | True     | String | VSA user with system role/scope and API access   |
+| `RestApiToken`   | True     | String | REST API access token for the VSA user above      |
 
 # Output
-Initialize-VsaAgentFields-Log.txt Initialize-VsaAgentFields-error.txt
+- `Initialize-VsaAgentFields-Log.txt`
+- `Initialize-VsaAgentFields-error.txt`
 
-**NOTE:** Can be run from VSA 9.5 by running the Agent Procedure: Shared > Vsa Automation > Stack CF Initialization
-
-
-
-
-
-
-
-
-
-
-
+**NOTE:** This can be run from VSA 9.5 by executing the Agent Procedure: Shared > VSA Automation > Stack CF Initialization.

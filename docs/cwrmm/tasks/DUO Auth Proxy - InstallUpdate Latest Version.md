@@ -8,6 +8,7 @@ tags: ['application', 'deployment', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script installs or updates the DUO Authentication Proxy application to the latest available version.
@@ -23,13 +24,13 @@ The script installs or updates the DUO Authentication Proxy application to the l
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_3.png)  
 ![Task Creation 2](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_4.png)  
 
 **Name:** `DUO Install & Upgrade - Latest Version`  
-**Description:** `This script will install or update DUO if the currently installed instance is older than the latest released version. This script does match the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).`  
+**Description:** `This script will install or update DUO if the currently installed instance is older than the latest released version. This script checks the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).`  
 **Category:** `Application`  
 
 ![Task Creation 3](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_5.png)  
@@ -50,11 +51,11 @@ The following function will pop up on the screen:
 
 ![PowerShell Function](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_8.png)  
 
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
+Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
 ```powershell
 $ProgressPreference = 'SilentlyContinue'
-$ErrorActionPreference = 'Silentlycontinue'
+$ErrorActionPreference = 'SilentlyContinue'
 $URL = 'https://dl.duosecurity.com/duoauthproxy-latest.exe'
 $WorkingDirectory = 'C:/ProgramData/_Automation/Script/DuoAuthProxy'
 $Path = "$WorkingDirectory/DuoAuthProxyInstaller.exe"
@@ -62,7 +63,7 @@ $File = (Invoke-WebRequest -uri https://dl.duosecurity.com/duoauthproxy-latest.e
 $DuoVersion = "$(($File -replace '.*duoauthproxy-','' -replace '/.exe"$',''))"
 
 #region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
+if (!(Test-Path $WorkingDirectory)) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     }
@@ -70,8 +71,8 @@ if ( !(Test-Path $WorkingDirectory) ) {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
+if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
+    $Acl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
@@ -95,7 +96,7 @@ elseif ($DUOCurrentVersion -match '[0-9]') {
         Write-Output 'DUO Security Authentication Proxy is successfully updated.'
     }
     else {
-        return 'ERROR: DUO Security Authentication Proxy is failed to update.'
+        return 'ERROR: DUO Security Authentication Proxy failed to update.'
     }
 }
 else {
@@ -106,7 +107,7 @@ else {
         Write-Output 'DUO Security Authentication Proxy is successfully installed.'
     }
     else {
-        return 'ERROR: DUO Security Authentication Proxy is failed to install.'
+        return 'ERROR: DUO Security Authentication Proxy failed to install.'
     }
 }
 ```
@@ -131,7 +132,7 @@ Add a new row by clicking the `Add Row` button.
 
 ![Add Row 2b](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_6.png)  
 
-Search and Select the `Set Custom Field` function.
+Search and select the `Set Custom Field` function.
 
 ![Set Custom Field](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_12.png)  
 
@@ -159,7 +160,6 @@ A blank function will appear.
 Search and select the `Script Exit` function.
 
 ![Script Exit](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_17.png)  
-
 ![Script Exit 2](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_18.png)  
 
 The following function will pop up on the screen:  
@@ -190,7 +190,6 @@ A blank function will appear.
 Search and select the `Script Log` function.
 
 ![Script Log](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_22.png)  
-
 ![Script Log 2](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_23.png)  
 
 The following function will pop up on the screen:  
@@ -214,7 +213,7 @@ Add a new row by clicking the `Add Row` button.
 
 ![Add Row 4](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_6.png)  
 
-Search and Select the `Set Custom Field` function.
+Search and select the `Set Custom Field` function.
 
 ![Set Custom Field 4](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_12.png)  
 
@@ -242,7 +241,6 @@ A blank function will appear.
 Search and select the `Script Exit` function.
 
 ![Script Exit 5](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_17.png)  
-
 ![Script Exit 5b](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_18.png)  
 
 The following function will pop up on the screen:  
@@ -259,12 +257,12 @@ In the script exit message, leave it blank and click the `Save` button.
 
 ## Implementation
 
-It is suggested to run the Task once per week against the group `DUO Auth Proxy Deployment`.
+It is suggested to run the task once per week against the group `DUO Auth Proxy Deployment`.
 
 - Go to `Automation` > `Tasks`.
-- Search for `DUO Auth Proxy - Install/Update Latest Version` Task.
+- Search for the `DUO Auth Proxy - Install/Update Latest Version` task.
 - Select the concerned task.
-- Click on `Schedule` the button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_30.png)  
 
@@ -276,7 +274,7 @@ Select the `Schedule` button and click the calendar-looking button present in fr
 
 ![Schedule Recurrence](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_32.png)  
 
-Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.
+Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.
 
 ![Schedule Save](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_33.png)  
 
@@ -298,14 +296,3 @@ Script log
 Custom field  
 
 ![Output](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_37.png)  
-
-
-
-
-
-
-
-
-
-
-

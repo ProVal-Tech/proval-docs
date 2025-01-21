@@ -8,18 +8,7 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 ---
-## Summery
+
+## Summary
 
 Update OS Custom Fields
-
-
-
-
-
-
-
-
-
-
-
-

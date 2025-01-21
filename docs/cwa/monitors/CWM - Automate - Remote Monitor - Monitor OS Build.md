@@ -8,17 +8,18 @@ tags: ['database', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this remote monitor is to detect if there is any change in the machine's OS build number. If yes, it will run the [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script on the machine to update information on [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.
+The purpose of this remote monitor is to detect any changes in the machine's OS build number. If a change is detected, it will run the [CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script on the machine to update information in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table.
 
 ## Details
 
-**Suggested "Limit to"**: `Windows OS Excluding EOL machines like Server 2003, 2008, 2012, Windows 7, XP, 8 etc`  
+**Suggested "Limit to"**: `Windows OS excluding EOL machines such as Server 2003, 2008, 2012, Windows 7, XP, 8, etc.`  
 **Suggested Alert Style**: `Continuous`  
 **Suggested Alert Template**: `△ Custom - Execute Script - Get Latest Installed Cumulative Update`  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result |
 |--------------|----------------|-------------|---------------|---------------|----------|--------|
@@ -31,16 +32,3 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Monitor OS Build](<./Monitor OS Build.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

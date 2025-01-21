@@ -8,9 +8,10 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uninstalls ALL screenconnect instances from an endpoint.
+This document outlines the procedure to uninstall all instances of ScreenConnect from an endpoint.
 
 ## Sample Run
 
@@ -35,11 +36,11 @@ Uninstalls ALL screenconnect instances from an endpoint.
 | 1:42:23 pm 21-Jun-22    | Execute Powershell Command-0008  | New command variable is: -Command "New-Item -Type directory -Path %ProgramData%/_automation/AgentProcedure/ -Name RemoveScreenConnect" | provaltech.com/dan.hicks        |
 | 1:42:23 pm 21-Jun-22    | Execute Powershell Command-0008  | Custom commands detected as New-Item -Type directory -Path %ProgramData%/_automation/AgentProcedure/ -Name RemoveScreenConnect | provaltech.com/dan.hicks        |
 | 1:42:17 pm 21-Jun-22    | Execute Powershell Command-0002  | Powershell is present.                                                                                        | provaltech.com/dan.hicks        |
-| 1:42:04 pm 21-Jun-22    | Run Now - ScreenConnect Uninstall | Admin provaltech.com/dan.hicks scheduled procedure Run Now - ScreenConnect Uninstall to run at Jun 21 2022 1:42PM |                                  |
+| 1:42:04 pm 21-Jun-22    | Run Now - ScreenConnect Uninstall | Admin provaltech.com/dan.hicks scheduled procedure Run Now - ScreenConnect Uninstall to run at Jun 21 2022 1:42 PM |                                  |
 
 ## Process
 
-WMIC loops through instances for anything matching 'ScreenConnect%' and performs a nointeractive uninstall. We then check Win32_product class to see if it still exists afterwards.
+WMIC loops through instances for anything matching 'ScreenConnect%' and performs a non-interactive uninstall. We then check the Win32_Product class to see if it still exists afterward.
 
 ## Output
 
@@ -49,15 +50,3 @@ Remove-ScreenConnect-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
-

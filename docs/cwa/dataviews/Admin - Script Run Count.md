@@ -8,9 +8,10 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview helps you audit run count of scripts that are running in your environment.
+This dataview helps you audit the run count of scripts that are running in your environment.
 
 ## Columns
 
@@ -19,18 +20,5 @@ This dataview helps you audit run count of scripts that are running in your envi
 | Script ID      | Displays the ID of the script                         |
 | Script Name    | Displays the name of the script                       |
 | Last Run Time  | Displays the last run time of the script              |
-| Total Runs     | Displays the total number of times the script is executed |
+| Total Runs     | Displays the total number of times the script has been executed |
 | Last Run Date  | Displays the last run date of the script              |
-
-
-
-
-
-
-
-
-
-
-
-
-

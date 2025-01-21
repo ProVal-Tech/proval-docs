@@ -8,28 +8,17 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Looks for tickets within Automate that failed to sync successfully to the PSA.
+This monitor looks for tickets within Automate that have failed to sync successfully to the PSA.
 
 ## Dependencies
 
 [Ticket Sync Failed](<../scripts/Ticket Sync Failed.md>) - This needs to be tied as an Autofix with this Monitor.  
 
-△ Autofix - Ticket Sync Failed alert template should be used along with this monitor set.
+- **Autofix**: The Ticket Sync Failed alert template should be used along with this monitor set.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

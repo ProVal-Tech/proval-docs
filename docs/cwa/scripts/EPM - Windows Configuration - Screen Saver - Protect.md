@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Ensures that the screen saver settings are enabled and set to the specified timeout.
+This document ensures that the screen saver settings are enabled and set to the specified timeout.
 
 ## Sample Run
 
@@ -50,16 +51,3 @@ See [Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

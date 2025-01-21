@@ -8,6 +8,7 @@ tags: ['performance', 'registry', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script will attempt to modify the registry keys to disable fastboot on the Windows workstations if it is not already disabled.
@@ -19,7 +20,7 @@ The script will attempt to modify the registry keys to disable fastboot on the W
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field  - Company - Disable_FastBoot.md>) 
+- [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>) 
 - [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](<../custom-fields/Endpoint - FastBoot_Disabled.md>) 
 - [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](<../custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) 
 - [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](<../custom-fields/Site - Disable_Fastboot_Exclusion.md>) 
@@ -27,7 +28,7 @@ The script will attempt to modify the registry keys to disable fastboot on the W
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Disable-FastBoot/image_16.png)  
 ![Task Creation 2](../../../static/img/Disable-FastBoot/image_17.png)  
@@ -85,39 +86,39 @@ Type `Success` in the `Input Value or Variable` field and press `Enter`.
 
 #### Row 2b Function: Set Custom Field
 
-Add a new row by clicking on `Add row` button.  
+Add a new row by clicking on the `Add row` button.  
 ![Add Row 2](../../../static/img/Disable-FastBoot/image_27.png)  
 
-Search and select `Set Custom Field` Function.  
+Search and select the `Set Custom Field` function.  
 ![Select Set Custom Field 1](../../../static/img/Disable-FastBoot/image_28.png)  
 ![Select Set Custom Field 2](../../../static/img/Disable-FastBoot/image_29.png)  
 
-Search and select `FastBoot_Disabled` in the `Search Custom Field` field and set `True` in the `Value` field and click the `Save` button.  
+Search and select `FastBoot_Disabled` in the `Search Custom Field` field, set `True` in the `Value` field, and click the `Save` button.  
 ![Set FastBoot_Disabled](../../../static/img/Disable-FastBoot/image_30.png)  
 ![FastBoot Disabled](../../../static/img/Disable-FastBoot/image_31.png)  
 
 #### Row 2d Function: Set Custom Field
 
-Add a new row by clicking on `Add row` button in the `Else` section.  
+Add a new row by clicking on the `Add row` button in the `Else` section.  
 ![Add Row Else](../../../static/img/Disable-FastBoot/image_32.png)  
 
-Search and select `Set Custom Field` Function.  
+Search and select the `Set Custom Field` function.  
 ![Select Set Custom Field 3](../../../static/img/Disable-FastBoot/image_28.png)  
 ![Select Set Custom Field 4](../../../static/img/Disable-FastBoot/image_29.png)  
 
-Search and select `FastBoot_Disabled` in the `Search Custom Field` field and set `False` in the `Value` field and click the `Save` button.  
+Search and select `FastBoot_Disabled` in the `Search Custom Field` field, set `False` in the `Value` field, and click the `Save` button.  
 ![Set FastBoot_Disabled False](../../../static/img/Disable-FastBoot/image_33.png)  
 ![FastBoot Disabled False](../../../static/img/Disable-FastBoot/image_34.png)  
 
 #### Row 2c Function: Script Exit
 
-Add a new row by clicking on `Add row` button.  
+Add a new row by clicking on the `Add row` button.  
 ![Add Row Script Exit](../../../static/img/Disable-FastBoot/image_35.png)  
 
-Search and select `Script Exit` Function.  
+Search and select the `Script Exit` function.  
 ![Select Script Exit](../../../static/img/Disable-FastBoot/image_36.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![Function Pop-up](../../../static/img/Disable-FastBoot/image_37.png)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
@@ -139,9 +140,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 The task should be scheduled to run once per day against the [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) device group.
 
 - Go to `Automation` > `Tasks.`
-- Search for `Disable FastBoot` Task.
+- Search for the `Disable FastBoot` task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task.  
+- Click on the `Schedule` button to schedule the task.  
   ![Schedule Task](../../../static/img/Disable-FastBoot/image_42.png)  
 - This screen will appear.  
   ![Schedule Screen](../../../static/img/Disable-FastBoot/image_43.png)  
@@ -155,7 +156,7 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
   ![Recurrence Updated](../../../static/img/Disable-FastBoot/image_47.png)  
 - Select the `Device Groups` option in the `Targeted Resources` section.  
   ![Targeted Resources](../../../static/img/Disable-FastBoot/image_48.png)  
-- Search and Select the [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) device group.  
+- Search and select the [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) device group.  
   ![Select Device Group](../../../static/img/Disable-FastBoot/image_49.png)  
 - Now click the `Run` button to initiate the task.  
   ![Run Task](../../../static/img/Disable-FastBoot/image_50.png)  
@@ -167,15 +168,3 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['autotask', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This client script is exclusively built for our internal development environment. It creates a ticket in our Autotask portal with the data of the subscripts that have been modified in the last 12 hours.
 
-**Note:** Do not import this script in other Automate environment.
+**Note:** Do not import this script into other Automate environments.
 
 ## Sample Run
 
@@ -43,14 +44,3 @@ It is scheduled in our internal Automate environment to run twice per day.
 
 **Sample Ticket:**  
 ![Sample Ticket](../../../static/img/Internal-Environment-Sub-Script-Modification-Notification/image_3.png)
-
-
-
-
-
-
-
-
-
-
-

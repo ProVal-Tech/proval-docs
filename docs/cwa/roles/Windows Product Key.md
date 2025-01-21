@@ -8,23 +8,13 @@ tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role runs a PowerShell to fetch the Windows Product key and matches to ensure the key exists in the format "[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}".
+This role runs a PowerShell script to fetch the Windows Product key and matches it to ensure the key exists in the format `[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}`.
 
 ## Settings
 
 | Detection String                                                                                   | Comparator    | Result                                        | Applicable OS |
 |----------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------|----------------|
-| `%@C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "(Get-CimInstance -Query 'select * from SoftwareLicensingService').OA3xOriginalProductKey"@%` | Regex Match   | [A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5} | Windows        |
-
-
-
-
-
-
-
-
-
-
-
+| `%@C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "(Get-CimInstance -Query 'select * from SoftwareLicensingService').OA3xOriginalProductKey"@%` | Regex Match   | `[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}` | Windows        |

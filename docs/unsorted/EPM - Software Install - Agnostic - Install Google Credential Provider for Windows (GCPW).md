@@ -8,29 +8,30 @@ tags: ['installation', 'windows']
 draft: true
 unlisted: false
 ---
+
 # Overview
-Automates the installation and configuration of Google Credential Provider for Windows (GCPW). Sets the domains allowed to login, and optionally configures an enrollment token. Enrollment tokens are in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings
+This document automates the installation and configuration of the Google Credential Provider for Windows (GCPW). It sets the domains allowed for login and optionally configures an enrollment token. Enrollment tokens can be found in the Google Admin console under: Menu > Devices > Mobile and endpoints > Settings > Windows settings.
 
 # Requirements
 - PowerShell v5 or higher
 - Administrative privileges are required for execution
 
 # Process
-1. Checks if Google Chrome is installed. If not, it installs Google Chrome.
-2. Checks if GCPW is installed. If not, it installs GCPW.
-3. Sets the allowed domains for GCPW login by updating the registry.
-4. Optionally sets the enrollment token for GCPW by updating the registry.
-5. Performs verification steps to ensure the registry keys for domains and the enrollment token (if provided) are correctly set.
-6. Cleans up installation files and logs the installation process.
+1. Check if Google Chrome is installed. If not, install Google Chrome.
+2. Check if GCPW is installed. If not, install GCPW.
+3. Set the allowed domains for GCPW login by updating the registry.
+4. Optionally set the enrollment token for GCPW by updating the registry.
+5. Perform verification steps to ensure the registry keys for domains and the enrollment token (if provided) are correctly set.
+6. Clean up installation files and log the installation process.
 
 # Payload Usage
-Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domains:
+To install Google Chrome (if missing), GCPW (if missing), and configure it for the specified domains, use the following command:
 
 ```
 ./Install-GCPW.ps1 -DomainsAllowed "solarmora.com","altostrat.com"
 ```
 
-Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domain, and applies the enrollment token:
+To install Google Chrome (if missing), GCPW (if missing), configure it for the specified domain, and apply the enrollment token, use the following command:
 
 ```
 ./Install-GCPW.ps1 -DomainsAllowed "solarmora.com" -enrollmentToken "your_enrollment_token"
@@ -44,7 +45,7 @@ Installs Google Chrome (if missing), GCPW (if missing), and configures it for th
 | `-enrollmentToken`  |       | False    |         | String | Set token to manage GCPW from the Admin console.   |
 
 # Output
-Location of output for log, result, and error files.
+The location of output for log, result, and error files is as follows:
 
 ```
 ./Install-GCPW-log.txt
@@ -53,23 +54,9 @@ Location of output for log, result, and error files.
 
 # Locations
 
-| Payload                                       | /repo/script/Install-GCPW.ps1                   |
-|-----------------------------------------------|--------------------------------------------------|
-| Automate                                      |                                                  |
-| ConnectWise RMM                               |                                                  |
+| Payload                                       | Path                                           |
+|-----------------------------------------------|------------------------------------------------|
+| Automate                                      |                                                |
+| ConnectWise RMM                               |                                                |
 | Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](<../vsa/procedures/Install Google Credential Provider for Windows (GCPW).md>) |
-| Datto RMM                                     |                                                  |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Datto RMM                                     |                                                |

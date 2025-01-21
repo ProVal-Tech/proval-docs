@@ -8,10 +8,10 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version".  
-It is built for auditing purposes.
+This document shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version." It is built for auditing purposes.
 
 ## Dependencies
 
@@ -21,7 +21,7 @@ It is built for auditing purposes.
 
 | Field Name                           | Type of Field (Machine or Organization) | Description                                                                                                                                                                |
 |--------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DUO Auth Proxy Deployed Devices      | Dynamic                                 | This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version". It is built for auditing purposes. |
+| DUO Auth Proxy Deployed Devices      | Dynamic                                 | This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version." It is built for auditing purposes. |
 
 ---
 
@@ -36,21 +36,10 @@ It is built for auditing purposes.
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_3.png)
 
 3. Set the group name to `DUO Auth Proxy Deployed Devices`.  
-   Description: `This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version".`  
+   Description: `This shows the devices where the "DUO Security Authentication Proxy" application is deployed by the script "DUO Auth Proxy - Install/Update Latest Version."`  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_4.png)
 
 4. Search and select the `Duo Auth Proxy Result` custom field from the search box.  
    Set `Success` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployed-Devices/image_5.png)  
    **Condition:** `Duo Auth Proxy Result` `Contain any of` `Success`
-
-
-
-
-
-
-
-
-
-
-

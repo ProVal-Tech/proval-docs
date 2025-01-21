@@ -8,9 +8,10 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an automate implementation of the Disable-PowershellVersion2 agnostic script
+This document provides an implementation guide for the Disable-PowershellVersion2 agnostic script.
 
 ## Sample Run
 
@@ -22,16 +23,4 @@ This is an automate implementation of the Disable-PowershellVersion2 agnostic sc
 
 ## Process
 
-Please review the agnostic content document for complete process.
-
-
-
-
-
-
-
-
-
-
-
-
+Please review the agnostic content document for the complete process.

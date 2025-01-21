@@ -8,41 +8,29 @@ tags: ['active-directory', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Shows all the active users within the last 30 days using the Active directory plugin.
+This document shows all the active users within the last 30 days using the Active Directory plugin.
 
 ## Dependencies
 
-- Active Directory Plugin Installed, Enabled and Setup
+- Active Directory Plugin installed, enabled, and set up.
 
 ## Columns
 
-| Column                        | Description                                               |
-|-------------------------------|-----------------------------------------------------------|
-| Client                        | Client Name                                              |
-| Location                      | Location Name                                            |
-| Domain Controller             | The Domain controller the AD plugin is syncing to        |
-| Account Name                  | End User Account Name                                    |
-| Name                          | Friendly Name                                           |
-| Email                         | Email of the AD user                                    |
-| Domain Admin                  | Yes | No if the user is a Domain Admin                   |
-| AccountEnabled                | Enabled | Disabled depending on the User's status         |
-| Last Logon                   | The last time the user has logged into the Domain       |
-| Days Since Last Logon        | Total number of days since the last logon date          |
-| Password Expiration Date      | Shows the date of the next password expiration for the user |
-| Password Last Set             | Shows the last time the password was setup for this user |
-| Days Since Last Password Change| Total number of days since the last password set date.  |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                        | Description                                                |
+|-------------------------------|------------------------------------------------------------|
+| Client                        | Client name                                               |
+| Location                      | Location name                                             |
+| Domain Controller             | The domain controller the AD plugin is syncing to         |
+| Account Name                  | End user account name                                     |
+| Name                          | Friendly name                                            |
+| Email                         | Email of the AD user                                     |
+| Domain Admin                  | Yes / No if the user is a domain admin                   |
+| Account Enabled               | Enabled / Disabled depending on the user's status         |
+| Last Logon                   | The last time the user logged into the domain             |
+| Days Since Last Logon        | Total number of days since the last logon date            |
+| Password Expiration Date      | Shows the date of the next password expiration for the user|
+| Password Last Set             | Shows the last time the password was set for this user    |
+| Days Since Last Password Change| Total number of days since the last password set date.    |

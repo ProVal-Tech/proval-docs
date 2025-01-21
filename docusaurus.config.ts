@@ -69,7 +69,7 @@ const config: Config = {
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/proval-tech/docs',
+          href: 'https://github.com/ProVal-Tech/proval-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -106,7 +106,6 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

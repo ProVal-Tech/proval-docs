@@ -8,9 +8,10 @@ tags: ['deployment', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version". It is built for auditing purposes.
+This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version." It is built for auditing purposes.
 
 ## Dependencies
 
@@ -20,9 +21,7 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
 
 | Field Name                           | Type of Field (Machine or Organization) | Description                                                                                                                |
 |--------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| DUO Auth for Windows Login Installed  | Dynamic                                 | This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version". |
-
-
+| DUO Auth for Windows Login Installed  | Dynamic                                 | This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version." |
 
 ## Group Creation
 
@@ -34,8 +33,8 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
    This page will appear after clicking on the `Dynamic Group` button:  
    ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_3.png)
 
-3. Set the group name to `DUO Auth for Windows Login Installed`  
-   Description: `This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version".`  
+3. Set the group name to `DUO Auth for Windows Login Installed`.  
+   Description: `This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version."`  
    ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
@@ -47,15 +46,3 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
    - Set `Success` in the comparison condition.  
    ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
-
-
-
-
-
-
-
-
-
-
-
-

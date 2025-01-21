@@ -8,6 +8,7 @@ tags: ['software', 'ticketing', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is an Automate Wrapper to run the Agnostic Update-Office script.
@@ -28,11 +29,11 @@ Document the various variables in the script. Delete any section that is not rel
 |-------------------|-------------------------------------------------------------------------------------------------|
 | WorkingDirectory   | Standard Template Variable.                                                                     |
 | PS1Log            | Standard Template Variable.                                                                     |
-| PS!DataLog        | Standard Template Variable.                                                                     |
+| PS1DataLog        | Standard Template Variable.                                                                     |
 | PS1ErrorLog       | Standard Template Variable.                                                                     |
 | LogContent        | Standard Template Variable.                                                                     |
-| QueriedLog        | Necessary to determine if a warning is present in the log, since the agnostic script sets a warning, Selects The last two lines of the log file. |
-| AlertType         | This sets the alert type found can be a warning or error.                                      |
+| QueriedLog        | Necessary to determine if a warning is present in the log, since the agnostic script sets a warning; selects the last two lines of the log file. |
+| AlertType         | This sets the alert type, which can be a warning or error.                                      |
 | ErrorMsg          | The associated error message for the specific script section.                                   |
 | DataLogContent    | Standard Template Variable.                                                                     |
 | TicketSubject     | The subject of the ticket.                                                                      |
@@ -43,8 +44,8 @@ Document the various variables in the script. Delete any section that is not rel
 | Name               | Example         | Required | Description                                                    |
 |--------------------|----------------|----------|----------------------------------------------------------------|
 | ProjectName        | Update-Office  | True     | The name of the agnostic script minus the .ps1                |
-| TicketOnError      | 0 or 1        | True     | Toggles on / off ticketing on error.                           |
-| TicketOnWarning     | 0 or 1        | True     | Toggles on / off ticketing on warning.                         |
+| TicketOnError      | 0 or 1        | True     | Toggles on/off ticketing on error.                             |
+| TicketOnWarning     | 0 or 1        | True     | Toggles on/off ticketing on warning.                           |
 
 ## Output
 
@@ -53,15 +54,3 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/Microsoft-Office-365---Update/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

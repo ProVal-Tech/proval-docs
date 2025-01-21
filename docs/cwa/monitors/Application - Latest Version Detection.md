@@ -8,9 +8,10 @@ tags: ['application']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor is created to fetch the latest version of the application for which you want Winget to control the upgrade. Please duplicate the monitor name and replace the \<Application\> with the actual application name.
+This monitor is designed to fetch the latest version of the application for which you want Winget to control the upgrade. Please duplicate the monitor name and replace `<Application>` with the actual application name.
 
 ## Dependencies
 
@@ -20,24 +21,9 @@ This monitor is created to fetch the latest version of the application for which
 
 Global - Should be run without explicitly defined targets.
 
-This script is only targeted to one machine to fetch the Application's latest version.
+This script is only targeted to one machine to fetch the application's latest version.
 
 ## Implementation
 
 1. Import the monitor.  
-   Create a duplicate of the monitor and remove the imported monitor so there is no confusion.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Create a duplicate of the monitor and remove the imported monitor to avoid confusion.

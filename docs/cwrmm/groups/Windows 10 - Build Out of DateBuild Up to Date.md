@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 There are two device groups related to the Windows 10 Upgrade Assistance solution. Please see the guide below to create separate device groups.
@@ -20,15 +21,15 @@ There are two device groups related to the Windows 10 Upgrade Assistance solutio
 
 ## Create Device Groups
 
-There are two device groups for this solution. To create device groups, please navigate to Devices > Device Groups.
+There are two device groups for this solution. To create device groups, please navigate to **Devices > Device Groups**.
 
 **![Add Dynamic Group](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_1.png)**
 
-Select Add > Dynamic Group
+Select **Add > Dynamic Group**.
 
 ![Dynamic Group](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_2.png)
 
-Please repeat the above steps per device group.
+Please repeat the above steps for each device group.
 
 ---
 
@@ -36,18 +37,18 @@ Please repeat the above steps per device group.
 
 ![Windows 10 - Build Up to Date](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_3.png)
 
-Description: Machines that are up to the latest Windows 10 feature build  
-Criteria:  
+**Description:** Machines that are up to the latest Windows 10 feature build.  
+**Criteria:**  
 ![Criteria](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_4.png)
 
-When adding criteria, please search for the "OS Version"  
-Equal: 10.0.19045  
-AND  
-Endpoint Type  
-Equal: Desktop  
-AND  
-OS Product  
-Contains any of: Windows 10  
+When adding criteria, please search for the **OS Version**.  
+**Equal:** 10.0.19045  
+**AND**  
+**Endpoint Type**  
+**Equal:** Desktop  
+**AND**  
+**OS Product**  
+**Contains any of:** Windows 10  
 
 This group holds all workstations that are up to the latest feature build.
 
@@ -57,28 +58,17 @@ This group holds all workstations that are up to the latest feature build.
 
 ![Windows 10 - Build Out of Date](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_5.png)
 
-Description: Machines that are not up to the latest Windows 10 feature build  
-Criteria:  
+**Description:** Machines that are not up to the latest Windows 10 feature build.  
+**Criteria:**  
 ![Criteria](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_6.png)
 
-When adding criteria, please search for the "OS Version"  
-Not Equal: 10.0.19045  
-AND  
-Endpoint Type  
-Equal: Desktop  
-AND  
-OS Product  
-Contains any of: Windows 10  
+When adding criteria, please search for the **OS Version**.  
+**Not Equal:** 10.0.19045  
+**AND**  
+**Endpoint Type**  
+**Equal:** Desktop  
+**AND**  
+**OS Product**  
+**Contains any of:** Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
-
-
-
-
-
-
-
-
-
-
-

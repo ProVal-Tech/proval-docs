@@ -8,6 +8,7 @@ tags: ['domain', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script sets a specified .scr file as the default screensaver for all users, manages lockscreen timeout settings, and handles domain exceptions using Strapper. If no screensaver path is provided, this portion of the script is skipped. CW RMM implementation of the agnostic script [Protect-Screenlock](https://file.provaltech.com/repo/script/Protect-ScreenLock.ps1).
@@ -20,21 +21,21 @@ This script sets a specified .scr file as the default screensaver for all users,
 
 ## Dependencies
 
-[https://file.provaltech.com/repo/script/Protect-ScreenLock.ps1](https://file.provaltech.com/repo/script/Protect-ScreenLock.ps1)
+[Protect Screen Lock Script](https://file.provaltech.com/repo/script/Protect-ScreenLock.ps1)
 
 ## User Parameters
 
 | Name             | Example                        | Required | Default | Type          | Description                                                                                                                                                       |
 |------------------|--------------------------------|----------|---------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ScreenSaverPath  | C:/Temp/ScreenSaver/Saver.scr  | False    |         | Text String   | Optional parameter to specify the path of the screensaver file. The script will not set a screensaver if this parameter is not provided.                       |
-| Timeout          | 900                            | True     | 900     | Number Value  | The maximum timeout value for the screen saver. Defaults to 900 seconds.                                                                                       |
+| Timeout          | 900                            | True     | 900     | Number Value  | The maximum timeout value for the screensaver. Defaults to 900 seconds.                                                                                       |
 | DomainException   | 0/1                           | False    |         | Flag          | Set to run a GPRESULT instead of making configuration changes when a machine is part of a domain.                                                                |
 
 ![User Parameters Image](../../../static/img/Protect-Screen-Lock/image_4.png)  
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/Protect-Screen-Lock/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Protect-Screen-Lock/image_6.png)  
 
@@ -80,7 +81,7 @@ This screen will appear.
 ![Domain Exception Step 2](../../../static/img/Protect-Screen-Lock/image_9.png)  
 
 - Set `DomainException` in the `Parameter Name` field.
-- Select `flag` from the `Parameter Type` dropdown menu.
+- Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Domain Exception Step 3](../../../static/img/Protect-Screen-Lock/image_12.png)  
 
@@ -189,14 +190,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

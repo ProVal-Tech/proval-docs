@@ -8,9 +8,10 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Classify Windows 10 and 11 computers that are already using the latest build version but still possess a value in any of the associated custom fields.
+This document explains how to classify Windows 10 and 11 computers that are already using the latest build version but still possess a value in any of the associated custom fields.
 
 ## Dependencies
 
@@ -20,7 +21,7 @@ Classify Windows 10 and 11 computers that are already using the latest build ver
 - [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
 - [CW RMM - Task - Feature Update Install with Tracking (Reset Custom Fields)](<../tasks/Feature Update Install with Tracking (Reset Custom Fields).md>)
 
-## Summary
+## Group Details
 
 **Group Type:** Dynamic
 
@@ -30,18 +31,18 @@ Classify Windows 10 and 11 computers that are already using the latest build ver
 
 ## Criteria
 
-- Select `OS Build Number` for the Criteria
+- Select `OS Build Number` for the criteria:
   - Contains any of `19045` and `22631` in the condition box.
-  
+
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_1.png)
-  
+
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_2.png)
 
-- Click the `Add Criteria` button to add another Criteria.
+- Click the `Add Criteria` button to add another criterion.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_3.png)
 
-- Select `OS` for the Criteria
+- Select `OS` for the criteria:
   - Contains any of `Microsoft Windows 10 and 11` for the condition.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_4.png)
@@ -50,25 +51,25 @@ Classify Windows 10 and 11 computers that are already using the latest build ver
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_6.png)
 
-- Add an Outer Block by clicking the `Add Outer Block` button.
+- Add an outer block by clicking the `Add Outer Block` button.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_7.png)
 
-- The main outer block should be using AND and not OR.
+- The main outer block should use AND and not OR.
 
-- In the `Outer Block`, Select `Feature Update Install Failure` custom field for criteria, 
+- In the `Outer Block`, select the `Feature Update Install Failure` custom field for criteria:
   - Contains any of `Error` in the condition box.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_8.png)
 
-- Select `Feature Update Reboot Pending` custom field for criteria, `Equal` for comparator and type `True` in the condition box.
+- Select the `Feature Update Reboot Pending` custom field for criteria, `Equal` for comparator, and type `True` in the condition box.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_9.png)
 
-- Add another criteria by clicking the `Add Criteria` button inside the outer block.
+- Add another criterion by clicking the `Add Criteria` button inside the outer block.
 
-- Choose the `WinFeatUpgradeAttempts` custom field for criteria, 
-  - Contains any of integers from 1 to 15 in the condition field. Enter each number individually, pressing Enter after each one: 1,2,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
+- Choose the `WinFeatUpgradeAttempts` custom field for criteria:
+  - Contains any of the integers from 1 to 15 in the condition field. Enter each number individually, pressing Enter after each one: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_10.png)
 
@@ -78,22 +79,10 @@ Classify Windows 10 and 11 computers that are already using the latest build ver
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_12.png)
 
-## Group
+## Group Creation
 
-Click the Save button to Save the Group.
+Click the Save button to save the group.
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_13.png)
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_14.png)
-
-
-
-
-
-
-
-
-
-
-
-

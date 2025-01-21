@@ -8,23 +8,24 @@ tags: ['connectwise', 'ticketing', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this script is to update the Screenconnect versions on the machine. It downloads the Connectwise control msi and installs it to update the agent. The script supports both Windows and Mac machines and is limited to ScreenConnect integrated with Automate only.
+The purpose of this script is to update the Screenconnect versions on the machine. It downloads the Connectwise Control MSI and installs it to update the agent. The script supports both Windows and Mac machines and is limited to ScreenConnect integrated with Automate only.
 
 ## Script Target
 
-Both Windows and MAC machines
+Both Windows and Mac machines
 
 ## Sample Run
 
-The script is intended to run as an auto-fix with the internal monitor [CWC - Internal Monitor - Outdated Screenconnect Version](<../monitors/Outdated Screenconnect Version.md>) so the agent gets updated automatically.
+The script is intended to run as an auto-fix with the internal monitor [CWC - Internal Monitor - Outdated Screenconnect Version](<../monitors/Outdated Screenconnect Version.md>), so the agent gets updated automatically.
 
 ## Global Parameters
 
 | Name                     | Example | Required | Description                                                                                  |
 |--------------------------|---------|----------|----------------------------------------------------------------------------------------------|
-| TicketCreationCategory    | 293     | True     | Mention the ticket creation category in order to enable ticketing on the machine. Mention it as '0' to disable Ticketing. |
+| TicketCreationCategory    | 293     | True     | Specify the ticket creation category to enable ticketing on the machine. Use '0' to disable ticketing. |
 
 ## Dependencies
 
@@ -37,24 +38,12 @@ The script is intended to run as an auto-fix with the internal monitor [CWC - In
 
 ## Ticketing
 
-To enable the ticketing on failure, the ticket category must be set in the global parameter of the script. The TicketCreationCategory parameter should not be equal to '0'.
+To enable ticketing on failure, the ticket category must be set in the global parameters of the script. The TicketCreationCategory parameter should not be equal to '0'.
 
 **Ticket Subject:** `CW Control Agent Update - Failed - %ClientName%/%ComputerName%`
 
-**Ticket Body:**  `Script failed to update the screenconnect version on the machine....!!`
+**Ticket Body:**  `Script failed to update the Screenconnect version on the machine....!!`
 
-If screen connect service fails to start after running the installation:
+If the Screenconnect service fails to start after running the installation:
 
-`The script tried to run the installer but could not find the screen connect service on the machine anymore. Run the CW control repair script to resolve the issue.`
-
-
-
-
-
-
-
-
-
-
-
-
+`The script tried to run the installer but could not find the Screenconnect service on the machine anymore. Run the CW control repair script to resolve the issue.`

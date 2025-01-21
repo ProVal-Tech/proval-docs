@@ -8,9 +8,10 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' is not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>) ran in the past 7 days.
+This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' are not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>) ran in the past 7 days.
 
 ## Dependencies
 
@@ -19,34 +20,22 @@ This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 
 
 ## Target
 
-Windows 10, 11, 2016, 2019, and 2022 only where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' is not checked.
+Windows 10, 11, 2016, 2019, and 2022 only where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' are not checked.
 
 ## Ticketing
 
 **Subject**  
-Microsoft Malicious Software Removal Tool ScanReport Audit Report of %computername%
+Microsoft Malicious Software Removal Tool Scan Report Audit Report of %computername%
 
 **Body**  
-MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the below logs:  
+MSRT Scan Report Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the logs below:  
 @ScanResult@
 
 OR
 
-ScanResult couldn't able to generate properly.  
+Scan Result couldn't be generated properly.
 
 OR  
 
-MSRT ScanReport Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the below logs:  
-@ScanResult@. The Autofix extended scan of the computer and automatically cleans any infections that are found is scheduled.
-
-
-
-
-
-
-
-
-
-
-
-
+MSRT Scan Report Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the logs below:  
+@ScanResult@. The Autofix extended scan of the computer, which automatically cleans any infections that are found, is scheduled.

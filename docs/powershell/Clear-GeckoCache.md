@@ -8,27 +8,22 @@ tags: ['firefox', 'performance']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Clears Gecko engine (Firefox) browser caches.
 
 ## Usage
-1. If a sub-directory of `\Users\\<Username>\AppData\Local` with the name `Profiles` has a child directory name of `cache2`, then it is detected as a Gecko cache directory.
+1. If a sub-directory of `\\Users\\<Username>\\AppData\\Local` with the name `Profiles` has a child directory named `cache2`, then it is detected as a Gecko cache directory.
 2. The detected directories are then purged of all files without an extension. The directory structure is left in place.
 
-
 *Clears Gecko engine browser caches for all users.*
+
 ```powershell
-.\Clear-GeckoCache.ps1
+.\\Clear-GeckoCache.ps1
 ```
 
 ## Output
-    .\Clear-GeckoCache-log.txt
-
-
-
-
-
-
-
-
-
+The output log can be found at:
+```
+.\\Clear-GeckoCache-log.txt
+```

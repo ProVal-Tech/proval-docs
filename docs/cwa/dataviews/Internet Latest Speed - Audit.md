@@ -2,15 +2,16 @@
 id: '9cd465c4-1fed-40fb-8ac2-0b170c9c50b4'
 title: 'Speed Test Audit Summary'
 title_meta: 'Speed Test Audit Summary'
-keywords: ['speed', 'audit', 'network', 'bandwidth', 'performance', 'latency', 'jitter', 'packetloss', 'isp']
+keywords: ['speed', 'audit', 'network', 'bandwidth', 'performance', 'latency', 'jitter', 'packet loss', 'ISP']
 description: 'This document provides a summary of the latest audited speed test information from the custom table related to network performance. It details the dependencies and columns used in the audit, including metrics such as jitter, latency, download and upload bandwidth, and packet loss.'
-tags: ['database', 'isp', 'performance']
+tags: ['database', 'ISP', 'performance']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the latest audited speed test information of the last script ran from the custom table [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
+This document displays the latest audited speed test information from the last script run from the custom table [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
 
 ## Dependencies
 
@@ -27,8 +28,8 @@ Displays the latest audited speed test information of the last script ran from t
 | Location        | The location of the audited computer.                              |
 | Computer        | The name of the audited computer.                                  |
 | Timestamp       | The time of the audit.                                            |
-| Jitter          | Amount of Jitter detected.                                        |
-| Latency         | Amount of Latency detected.                                       |
+| Jitter          | Amount of jitter detected.                                        |
+| Latency         | Amount of latency detected.                                       |
 | DLBandwidth     | The measured bandwidth for download speed.                        |
 | DLBytes         | The total number of bytes received in the audit.                 |
 | DLElapsed       | The total time taken to receive the bytes.                       |
@@ -39,7 +40,7 @@ Displays the latest audited speed test information of the last script ran from t
 | ISP             | The name of the ISP.                                             |
 | InternalIP      | The internal IP of the audited agent.                             |
 | MACAddress      | The MAC address of the audited agent.                             |
-| IsVPN           | 1 if the speedtest was run on a detected VPN connection.        |
+| IsVPN           | 1 if the speed test was run on a detected VPN connection.        |
 | ExternalIP      | The external IP of the audited agent.                             |
 | ServerHost      | The server host that the speed test was performed against.       |
 | ServerName      | The name of the server host that the speed test was performed against. |
@@ -50,16 +51,3 @@ Displays the latest audited speed test information of the last script ran from t
 | ResultURL       | The URL of the speed test result.                                |
 | DownloadMbps    | The download speed detected in Mbps.                             |
 | UploadMbps      | The upload speed detected in Mbps.                               |
-
-
-
-
-
-
-
-
-
-
-
-
-

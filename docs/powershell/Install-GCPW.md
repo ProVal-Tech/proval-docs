@@ -8,8 +8,9 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
-Automates the installation and configuration of Google Credential Provider for Windows (GCPW)
+Automates the installation and configuration of Google Credential Provider for Windows (GCPW).
 
 ## Requirements
 - Run as Administrator
@@ -23,30 +24,23 @@ Automates the installation and configuration of Google Credential Provider for W
 5. Performs verification steps to ensure the registry keys for domains and the enrollment token (if provided) are correctly set.
 6. Cleans up installation files and logs the installation process.
 
-## Usage
+## Examples
 ```powershell
 .\Install-GCPW.ps1 -DomainsAllowed "solarmora.com","altostrat.com"
+```
 Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domains.
 
 ```powershell
 .\Install-GCPW.ps1 -DomainsAllowed "solarmora.com" -enrollmentToken "your_enrollment_token"
-Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domain, and applies the enrollment token.
+```
+Installs Google Chrome (if missing), GCPW (if missing), and configures it for the specified domain, applying the enrollment token.
 
 ## Parameters
 |     Parameter      | Alias | Required | Default | Type   | Description                                        |
 | ------------------ | ----- | -------- | ------- | ------ | -------------------------------------------------- |
-| `DomainsAllowed`   |       | True     |         | String | Domain(s) users are allowed to sign in from.       |
+| `DomainsAllowed`   |       | True     |         | String | Domain(s) users are allowed to sign in from.      |
 | `enrollmentToken`  |       | False    |         | String | Set token to manage GCPW from the Admin console.   |
 
 ## Output
-    .\Install-GCPW-log.txt
-    .\Install-GCPW-error.txt
-
-
-
-
-
-
-
-
-
+- `.\Install-GCPW-log.txt`
+- `.\Install-GCPW-error.txt`

@@ -8,22 +8,13 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) service.
+This document describes the installation process for the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) service.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
 
 

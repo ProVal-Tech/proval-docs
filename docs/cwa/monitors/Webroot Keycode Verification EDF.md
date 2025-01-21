@@ -8,9 +8,10 @@ tags: ['deployment', 'ticketing', 'webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420) has not run in the last 30 days and the agent has Webroot installed and the deployment enabled.
+This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420) has not run in the last 30 days, and the agent has Webroot installed with deployment enabled.
 
 ## Dependencies
 
@@ -22,21 +23,10 @@ This monitor checks the online agent where the script [EPM - Data Collection - S
 
 ## Ticketing
 
-- To set up the ticketing for the keycode mismatch detection it is mandatory to set the ticket category in the monitor.
+To set up the ticketing for the keycode mismatch detection, it is mandatory to set the ticket category in the monitor.
 
 ![Ticketing Setup](../../../static/img/Webroot-Keycode-Verification-EDF/image_1.png)
 
 ## Target
 
 - Global
-
-
-
-
-
-
-
-
-
-
-

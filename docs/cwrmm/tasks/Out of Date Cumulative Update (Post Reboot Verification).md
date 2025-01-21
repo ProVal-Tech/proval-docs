@@ -8,9 +8,10 @@ tags: ['deployment']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task validates whether the Cumulative Update installed by the Out of Date Cumulative Update (Autofix) task succeeded or not post-reboot.
+This task validates whether the Cumulative Update installed by the Out of Date Cumulative Update (Autofix) task succeeded post-reboot.
 
 ## Sample Run
 
@@ -44,7 +45,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_6.png)  
 
 A blank function will appear.  
@@ -56,19 +57,19 @@ Search and select the `Set Pre-defined Variable` function.
 ![Set Pre-defined Variable 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_8.png)  
 ![Set Pre-defined Variable 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_9.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![Set Pre-defined Variable Function](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_10.png)  
 
 - Type `TaskRunTime` in the `Variable Name` field.
-- Select the `Custom Field` Radio button.
-- Search and select the company-level `Out_of_Date_CU_Autofix_Date` Custom Field in the `Search Custom Field` field.
+- Select the `Custom Field` radio button.
+- Search and select the company-level `Out_of_Date_CU_Autofix_Date` custom field in the `Search Custom Field` field.
 - Click the `Save` button to save the changes.  
 ![Save Changes 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_11.png)  
 ![Save Changes 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_12.png)  
 
 ### Row 2 Function: PowerShell Script
 
-Add a new row by clicking on `Add Row` button.  
+Add a new row by clicking on the `Add Row` button.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_13.png)  
 
 A blank function will appear.  
@@ -78,7 +79,7 @@ Search and select the `PowerShell Script` function.
 ![PowerShell Script 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_14.png)  
 ![PowerShell Script 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_15.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![PowerShell Script Function](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_16.png)  
 
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.  
@@ -127,7 +128,7 @@ Search and select the `Script Log` function in the newly appeared row.
 ![Script Log 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_24.png)  
 ![Script Log 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_25.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![Script Log Function](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_26.png)  
 
 Type `Still reboot pending` in the `Script Log Message` field and click the `Save` button.  
@@ -143,7 +144,7 @@ Search and select the `Script Exit` function in the newly appeared row.
 ![Script Exit 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_28.png)  
 ![Script Exit 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_29.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![Script Exit Function](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_30.png)  
 
 Click the `Save` button without typing anything in the `Error Message` field.  
@@ -183,7 +184,7 @@ Add a new row by clicking the `Add Row` button inside the `If` section.
 ![Add Row in If](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_22.png)  
 ![Add Row in If 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_23.png)  
 
-Search and select `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_42.png)  
 ![Set Custom Field 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_43.png)  
 
@@ -201,7 +202,7 @@ Search and select the `Script Exit` function in the newly appeared row.
 ![Script Exit 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_28.png)  
 ![Script Exit 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_29.png)  
 
-Following function will pop-up on to the screen:  
+The following function will pop up on the screen:  
 ![Script Exit Function](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_30.png)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
@@ -214,7 +215,7 @@ Add a new row by clicking the `Add Row` button inside the `Else` section.
 ![Add Row in Else](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_22.png)  
 ![Add Row in Else 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_23.png)  
 
-Search and select `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_42.png)  
 ![Set Custom Field 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_43.png)  
 
@@ -228,7 +229,7 @@ Add a new row by clicking the `Add Row` button inside the `Else` section.
 ![Add Row in Else](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_22.png)  
 ![Add Row in Else 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_23.png)  
 
-Search and select `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field 1](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_42.png)  
 ![Set Custom Field 2](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_43.png)  
 
@@ -246,12 +247,12 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per day against the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.
+It is suggested to run the task once per day against the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.
 
 - Go to `Automation` > `Tasks.`
-- Search for `Out of Date Cumulative Update (Post Reboot Verification)` Task.
+- Search for `Out of Date Cumulative Update (Post Reboot Verification)` task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task.  
+- Click on the `Schedule` button to schedule the task.  
 ![Schedule Task](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_54.png)  
 
 This screen will appear.  
@@ -272,7 +273,7 @@ Recurrence will be updated to `Every Day`.
 Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_54.png)  
 
-Search and Select the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.  
+Search and select the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.  
 ![Device Group Selection](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_60.png)  
 
 Now click the `Run` button to initiate the task.  
@@ -286,15 +287,3 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

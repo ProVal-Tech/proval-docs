@@ -8,6 +8,7 @@ tags: ['networking', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the endpoint. NTLMv1.1 has been deprecated due to security concerns, as credential theft remains a significant risk when legacy protocols are active. It is strongly advised that machines do not have NTLMv1.1 enabled, as its inherent security vulnerabilities can potentially facilitate unauthorized access and compromise sensitive information.
@@ -21,33 +22,19 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 | Column                     | Description                                             |
 |---------------------------|---------------------------------------------------------|
-| Clientid                  | Clientid                                               |
-| Locationid                | Locationid                                             |
-| Computerid                | Computerid                                             |
+| Clientid                  | Client ID                                              |
+| Locationid                | Location ID                                            |
+| Computerid                | Computer ID                                            |
 | Client                    | Client Name                                           |
 | Location                  | Location Name                                         |
 | Computer                  | Computer Name                                         |
 | Operating System          | Operating System                                       |
 | Last Logged In User       | Last Logged In User                                   |
 | Last Contact              | Last Contact with RMM                                 |
-| NTLMv1.1 Status           | It displays if NTLMv1.1 is enabled or not on the server |
-| Information Update Time    | The time when the SMB1 Status data was fetched       |
+| NTLMv1.1 Status           | Displays if NTLMv1.1 is enabled or not on the server  |
+| Information Update Time    | Time when the SMB1 Status data was fetched            |
 
 ## Implementation
 
 - Apply and import the remote monitors to the Managed Windows Computers group.
 - Import the dataview.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

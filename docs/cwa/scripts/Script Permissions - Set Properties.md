@@ -8,9 +8,10 @@ tags: ['security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script is designed to manage view and edit permissions for scripts within specific script folders. The script relies on system properties to determine folder IDs, user classes for view permissions, and user classes for edit permissions.
+The script is designed to manage view and edit permissions for scripts within specific script folders. It relies on system properties to determine folder IDs, user classes for view permissions, and user classes for edit permissions.
 
 - The folder IDs of the scripts are expected to be stored in the `SSP_Script_Folder_Ids` system property.
 - User classes designated for view permissions should be specified in the `SSP_View_Permission_User_Classes` system property.
@@ -26,7 +27,7 @@ In essence, this script ensures proper management of permissions for scripts wit
 
 **Note:** Prior to proceeding, kindly obtain the name(s) of the script folder(s) and the user class(es) from the consultant.
 
-## Show the FolderIds of Script Folders
+## Show the Folder IDs of Script Folders
 
 1. Navigate to `Preferences`  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_2.png)
@@ -34,7 +35,7 @@ In essence, this script ensures proper management of permissions for scripts wit
 2. Enable the `Show` option for `Object IDs` and click the `SAVE` button to apply and save the preferences.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_3.png)
 
-## Find the FolderIds of Script Folders
+## Find the Folder IDs of Script Folders
 
 3. Navigate to Automation > Scripts > View Scripts.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_4.png)
@@ -66,17 +67,17 @@ In essence, this script ensures proper management of permissions for scripts wit
 
 5. Locate the `SSP_Script_Folder_Ids` system property and set the ID(s) of the desired script folder(s).  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_12.png)  
-   Multiple IDs can be set by separating a comma without any spaces between them.  
+   Multiple IDs can be set by separating them with a comma without any spaces between them.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_13.png)
 
 6. Locate the `SSP_View_Permission_User_Classes` system property and set the name(s) of the User Class(es) that require view permissions for the scripts.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_14.png)  
-   Multiple User Class names can be set by separating by a comma without any spaces between them.  
+   Multiple User Class names can be set by separating them with a comma without any spaces between them.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_15.png)
 
 7. Locate the `SSP_Edit_Permission_User_Classes` system property and set the name(s) of the User Class(es) that require edit permissions for the scripts.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_16.png)  
-   Multiple User Class names can be set by separating by a comma without any spaces between them.  
+   Multiple User Class names can be set by separating them with a comma without any spaces between them.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_17.png)
 
 8. Navigate to Management > Scheduled Client Scripts inside the `Dashboard` and schedule the script to run once per hour.  
@@ -89,14 +90,3 @@ In essence, this script ensures proper management of permissions for scripts wit
 | `SSP_Script_Folder_Ids`       | 0            | True     | Stores the IDs of the Script Folder(s) of the scripts for which script permissions need to be restricted. |
 | `SSP_View_Permission_User_Classes` | Super Admin | True     | Stores the name(s) of the User Class(es) that require view permissions for the scripts.                  |
 | `SSP_Edit_Permission_User_Classes` | Super Admin | True     | Stores the name(s) of the User Class(es) that require edit permissions for the scripts.                  |
-
-
-
-
-
-
-
-
-
-
-

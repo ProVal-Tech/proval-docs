@@ -8,29 +8,17 @@ tags: ['encryption', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Executes the [SEC - Encryption - Script - Lock Stolen System](<../scripts/Lock Stolen System.md>) script against the machines where the `Mark System As Stolen` EDF is marked and starts checking back with Automate.
+This document executes the [SEC - Encryption - Script - Lock Stolen System](<../scripts/Lock Stolen System.md>) script against the machines where the `Mark System As Stolen` EDF is marked and initiates monitoring through Automate.
 
 ## Dependencies
 
-[SEC - Encryption - Script - Lock Stolen System](<../scripts/Lock Stolen System.md>)
+- [SEC - Encryption - Script - Lock Stolen System](<../scripts/Lock Stolen System.md>)
 
 ## Target
 
-`Marked as Stolen` Group
+- `Marked as Stolen` Group
 
 ![Image](../../../static/img/EDF-Based-Stolen-Systems-Monitor/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

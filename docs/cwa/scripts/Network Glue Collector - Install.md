@@ -8,11 +8,10 @@ tags: ['deployment', 'installation', 'software', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs NetworkGlue Collector and applies a client-specific token.  
-The URL is needed to download the NetworkGlueCollector.msi, so it is required to host the file to the ltshare or webdev.  
-An Activation Key is Necessary and it can be found on the Clients' IT Glue page under the networks section.
+This document provides instructions for installing the NetworkGlue Collector and applying a client-specific token. The URL is needed to download the `NetworkGlueCollector.msi`, so it is required to host the file on the ltshare or webdev. An Activation Key is necessary, and it can be found on the Clients' IT Glue page under the networks section.
 
 ## Sample Run
 
@@ -22,22 +21,22 @@ An Activation Key is Necessary and it can be found on the Clients' IT Glue page 
 
 | Name           | Example       | Required | Description                                                                 |
 |----------------|---------------|----------|-----------------------------------------------------------------------------|
-| ActivationKey  | NTG1234ASDF  | True     | The Individual Clients' Activation key is found on their IT Glue Networks page |
+| ActivationKey  | NTG1234ASDF  | True     | The individual client's activation key is found on their IT Glue Networks page |
 
 ## Global Parameters
 
 | Name | Example | Required | Description                                                                                                           |
 |------|---------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| URL  | [https://Your_LTSharePath/NetworkGlueCollector.msi](https://Your_LTSharePath/NetworkGlueCollector.msi) | True     | This contains the Network Glue Collector installer msi package hosted to the ltshare, webdev, or anywhere it can be directly downloaded. |
+| URL  | [https://Your_LTSharePath/NetworkGlueCollector.msi](https://Your_LTSharePath/NetworkGlueCollector.msi) | True     | This contains the Network Glue Collector installer MSI package hosted on the ltshare, webdev, or anywhere it can be directly downloaded. |
 
 ## EDFs
 
 | Name                           | Level   | Type  | Editable | Description                                                                                                           |
 |--------------------------------|---------|-------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| Network Glue Activation Key     | Client  | Text  | Yes      | This is required to be set with the Individual Clients' Activation key found in their IT Glue Networks page to set the auto deployment |
-| Network Glue Deployment         | Client  | Flag  | Yes      | This check box at the client level is needed to allow the deployment of the Network Glue collector to the endpoints of the client |
-| Network Glue Exclusion          | Location| Flag  | Yes      | This check box at the location level will exclude the deployment of the Network Glue collector to the endpoints of the location |
-| Network Glue Exclusion          | Computer| Flag  | Yes      | This check box at the computer level will exclude the deployment of the Network Glue collector from the endpoint.    |
+| Network Glue Activation Key     | Client  | Text  | Yes      | This is required to be set with the individual client's activation key found in their IT Glue Networks page to enable auto deployment. |
+| Network Glue Deployment         | Client  | Flag  | Yes      | This checkbox at the client level is needed to allow the deployment of the Network Glue Collector to the endpoints of the client. |
+| Network Glue Exclusion          | Location| Flag  | Yes      | This checkbox at the location level will exclude the deployment of the Network Glue Collector to the endpoints of the location. |
+| Network Glue Exclusion          | Computer| Flag  | Yes      | This checkbox at the computer level will exclude the deployment of the Network Glue Collector from the endpoint.    |
 
 ## Process
 
@@ -52,7 +51,7 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 
 ## Ticketing
 
-***To enable ticketing please set the ticket category in the monitor***  
+***To enable ticketing, please set the ticket category in the monitor.***  
 ![Ticketing](https://proval.itglue.com/5078775/docs/17492944/images/26700118)
 
 - **Subject:**  
@@ -61,14 +60,3 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 - **Body:**  
   Network Glue Collector installation failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
   @ErrorLog@.
-
-
-
-
-
-
-
-
-
-
-

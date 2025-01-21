@@ -8,22 +8,11 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an internal monitor that detects if an agent was moved to a different location.  
+This document describes an internal monitor that detects if an agent has been moved to a different location.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

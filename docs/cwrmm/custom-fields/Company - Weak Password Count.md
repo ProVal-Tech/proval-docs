@@ -8,9 +8,10 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Holds the count of accounts with weak passwords
+This document holds the count of accounts with weak passwords.
 
 ## Dependencies
 
@@ -20,20 +21,8 @@ Holds the count of accounts with weak passwords
 
 | Field Name           | Level    | Type    | Default Value | Description                                   | Editable |
 |----------------------|----------|---------|---------------|-----------------------------------------------|----------|
-| Weak Password Count   | Endpoint | Textbox | NA            | Holds the count of Weak Passwords on a Domain | Yes      |
+| Weak Password Count   | Endpoint | Textbox | NA            | Holds the count of weak passwords on a domain | Yes      |
 
-## ScreenShot
+## Screenshot
 
 ![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

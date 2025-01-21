@@ -8,17 +8,18 @@ tags: ['encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task enables the BitLocker on the system volume.
+This task enables BitLocker on the system volume.
 
 The encryption methods that will be used to protect the target volume are:
 
 - Aes256
 - XtsAes256
 
-These two options come up with the custom field dependencies.  
-Refer to the doc for the custom field dependencies check:  
+These two options come with custom field dependencies.  
+Refer to the document for the custom field dependencies check:  
 [CW RMM Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738)
 
 ## Sample Run
@@ -35,24 +36,24 @@ Refer to the doc for the custom field dependencies check:
 
 | Name       | Description                                                                                                                                                                                                                                                         |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter  | This stores the parameter based on the combination of Encryption methods that came from custom field options and allows reboot with TPM initialization based on the Allow_TPM/Reboot user parameter settings.                                                       |
+| Parameter  | This stores the parameter based on the combination of encryption methods that came from custom field options and allows reboot with TPM initialization based on the Allow_TPM/Reboot user parameter settings.                                                       |
 
 #### User Parameters
 
 | Name               | Default Value | Required | Description                                                                                                                                                                                                                                           |
 |--------------------|---------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Allow_TPM/Reboot   | 0             | True     | Options for allowing TPM initialization and rebooting.0 = Do not allow1 = Allow TPM Initialization2 = Allow Reboot3 = Allow TPM Initialization and Reboot                                                                                 |
+| Allow_TPM/Reboot   | 0             | True     | Options for allowing TPM initialization and rebooting. 0 = Do not allow, 1 = Allow TPM Initialization, 2 = Allow Reboot, 3 = Allow TPM Initialization and Reboot                                                                                 |
 
 ## Implementation
 
 ### Create Task
 
-Bitlocker Initialize C Volume: To implement this script, please create a new "Script Editor" style script in the system.  
+BitLocker Initialize C Volume: To implement this script, please create a new "Script Editor" style script in the system.  
 ![Create Task](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_3.png)  
 
-Name: Bitlocker Initialize C Volume  
-Description: This script will perform the BitLocker initialization on the endpoint for the C: volume using the AES256 or XTSAES256 encryption method chosen based on the custom fields.  
-Category: Security  
+**Name:** BitLocker Initialize C Volume  
+**Description:** This script will perform the BitLocker initialization on the endpoint for the C: volume using the AES256 or XTSAES256 encryption method chosen based on the custom fields.  
+**Category:** Security  
 ![Task Category](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_4.png)  
 
 ### Script
@@ -68,19 +69,19 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 ### Row 1a: Condition: Custom Field
 
 In the IF part,  
-Enter `false` in the right box of the "Custom Field Equals" Part.  
+Enter `false` in the right box of the "Custom Field Equals" part.  
 ![Row 1a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_8.png)  
 
 ### Row 1b: Function: Script Log
 
 ![Row 1b Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
 
-In the script log message, type `The Bitlocker Monitoring custom field is not set at the company level. Exiting script.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+In the script log message, type `The BitLocker Monitoring custom field is not set at the company level. Exiting script.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Row 1b Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_10.png)  
 
 ### Row 1c: Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 ![Row 1c Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_11.png)  
 
 In the script exit message, please leave it blank.  
@@ -94,7 +95,7 @@ In the script exit message, please leave it blank.
 ### Row 2a: Condition: Custom Field
 
 In the IF part,  
-Enter `false` in the right box of the "Custom Field Does Not Equal" Part.  
+Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
 ![Row 2a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_13.png)  
 
 ### Row 2b: Function: Script Log
@@ -106,7 +107,7 @@ In the script log message, type `The BitLocker exclusion is applied to the endpo
 
 ### Row 2c: Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 ![Row 2c Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_11.png)  
 
 In the script exit message, please leave it blank.  
@@ -134,7 +135,7 @@ elseif ($os.Caption -like "*Windows 11*") {
     return 'The operating system is Windows 11.'
 }
 else {
-    return 'The operating system is not a Windows workstations.'
+    return 'The operating system is not a Windows workstation.'
 }
 ```  
 
@@ -153,12 +154,12 @@ In the script log message, type `%output%` so that the script will send the resu
 ### Row 6a: Condition: Output Contains
 
 In the IF part,  
-Enter `The operating system is not a Windows workstations` in the right box of the "Output Contain" Part.  
+Enter `The operating system is not a Windows workstation` in the right box of the "Output Contains" part.  
 ![Row 6a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_19.png)  
 
 ### Row 6b: Function: Script Log
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 ![Row 6b Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_11.png)  
 
 In the script exit message, please leave it blank.  
@@ -172,22 +173,22 @@ In the script exit message, please leave it blank.
 ### Row 7a: Condition: Custom Field
 
 In the IF part,  
-Enter `false` in the right box of the "Custom Field Does Not Equal" Part.  
+Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
 ![Row 7a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_22.png)  
 
 ### Row 7b: Condition: Custom Field
 
-In the IF part Click:  
+In the IF part, click:  
 ![Row 7b Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_23.png)  
 
-Enter `false` in the right box of the "Custom Field Does Not Equal" Part.  
+Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
 ![Row 7b Condition 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_24.png)  
 
 ### Row 7c: Function: Script Log
 
 ![Row 7c Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
 
-In the script log message, type `Both custom fields 'Bitlocker Monitoring' and 'Bitlocker XTSAES 256' are true.Setting encryption method to 'XtsAes256'.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+In the script log message, type `Both custom fields 'BitLocker Monitoring' and 'BitLocker XTSAES 256' are true. Setting encryption method to 'XtsAes256'.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Row 7c Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_25.png)  
 
 ### Row 7d: Function: Set User Variable
@@ -203,7 +204,7 @@ Enter the `Encryption Method` in the Variable Name box and provide the Value as 
 ### Row 7e.1: Condition: Value
 
 In the IF part,  
-Enter `0 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `0 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7e.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_27.png)  
 
 ### Row 7e.2: Function: Set User Variable
@@ -216,7 +217,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7f.1: Condition: Value
 
 In the IF part,  
-Enter `1 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `1 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7f.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_29.png)  
 
 ### Row 7f.2: Function: Set User Variable
@@ -229,7 +230,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7g.1: Condition: Value
 
 In the IF part,  
-Enter `2 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `2 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7g.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_31.png)  
 
 ### Row 7g.2: Function: Set User Variable
@@ -242,7 +243,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7h.1: Condition: Value
 
 In the IF part,  
-Enter `3 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `3 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7h.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_33.png)  
 
 ### Row 7h.2: Function: Set User Variable
@@ -255,22 +256,22 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7i: Condition: Custom Field
 
 In the IF part,  
-Enter `false` in the right box of the "Custom Field Does Not Equal" Part.  
+Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
 ![Row 7i Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_22.png)  
 
 ### Row 7j: Condition: Custom Field
 
-In the IF part Click:  
+In the IF part, click:  
 ![Row 7j Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_23.png)  
 
-Enter `false` in the right box of the "Custom Field Equal" Part.  
+Enter `false` in the right box of the "Custom Field Equals" part.  
 ![Row 7j Condition 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_35.png)  
 
 ### Row 7k: Function: Script Log
 
 ![Row 7k Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
 
-In the script log message, type `The 'Bitlocker Monitoring' custom fields are true and 'Bitlocker XTSAES 256' are false.Setting encryption method to 'Aes256'.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+In the script log message, type `The 'BitLocker Monitoring' custom fields are true and 'BitLocker XTSAES 256' are false. Setting encryption method to 'Aes256'.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Row 7k Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_36.png)  
 
 ### Row 7l: Function: Set User Variable
@@ -281,7 +282,7 @@ Enter the `Encryption Method` in the Variable Name box and provide the Value as 
 ### Row 7l.1: Condition: Value
 
 In the IF part,  
-Enter `0 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `0 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7l.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_27.png)  
 
 ### Row 7l.2: Function: Set User Variable
@@ -294,7 +295,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7m.1: Condition: Value
 
 In the IF part,  
-Enter `1 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `1 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7m.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_29.png)  
 
 ### Row 7m.2: Function: Set User Variable
@@ -307,7 +308,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7n.1: Condition: Value
 
 In the IF part,  
-Enter `2 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `2 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7n.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_31.png)  
 
 ### Row 7n.2: Function: Set User Variable
@@ -320,7 +321,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 ### Row 7o.1: Condition: Value
 
 In the IF part,  
-Enter `3 Equals @Allow_TPM/Reboot@` in the right box of the Value" Part.  
+Enter `3 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
 ![Row 7o.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_33.png)  
 
 ### Row 7o.2: Function: Set User Variable
@@ -332,7 +333,7 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 ![Row 8 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
 
-In the script log message, type `Executing Bitlocker initialization` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+In the script log message, type `Executing BitLocker initialization` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Row 8 Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_37.png)  
 
 ### Row 9: Function: PowerShell Script
@@ -411,21 +412,10 @@ In the script log message, type `%output%` so that the script will send the resu
 
 ### Row 13: Function: Set Custom Field
 
-Add a new row by clicking on the Add row button.  
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.  
+Add a new row by clicking on the Add Row button.  
+Select Function 'Set Custom Field'. When you select `Set Custom Field`, it will open up a new window.  
 
-In this window, search for the `ACP Bitlocker INIT Result` field.  
-**Custom Field:** `ACP Bitlocker INIT Result`  
+In this window, search for the `ACP BitLocker INIT Result` field.  
+**Custom Field:** `ACP BitLocker INIT Result`  
 **Value:** `%Output%`  
 ![Row 13 Custom Field](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_40.png)  
-
-
-
-
-
-
-
-
-
-
-

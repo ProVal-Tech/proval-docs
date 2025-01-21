@@ -8,22 +8,11 @@ tags: ['performance', 'report', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Internal Monitor detects machines where patch inventory shows 0 available patches.
+This Internal Monitor detects machines where the patch inventory shows zero available patches.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

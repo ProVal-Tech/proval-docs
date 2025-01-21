@@ -8,6 +8,7 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores the information returned by the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script.
@@ -22,24 +23,12 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](<../scrip
 
 | Column          | Type     | Explanation                                     |
 |-----------------|----------|-------------------------------------------------|
-| computerid      | int      | computerid                                      |
-| FolderPath      | varchar  | Full Path to the OneDrive Directory             |
-| IsQuotaAvailable | Int      | Is Quota Available?                             |
-| QuotaLabel      | varchar  | Current usage status of quota.                  |
-| ScriptRunTime   | DateTime | Data Collection Time                            |
-| SyncStatus      | VarChar  | Current Sync status of OneDrive                 |
-| TotalQuota      | float    | Total Size of the Available Quota (GB)         |
-| UsedQuota       | float    | Amount of used Quota (GB)                       |
+| computerid      | int      | Computer ID                                     |
+| FolderPath      | varchar  | Full path to the OneDrive directory             |
+| IsQuotaAvailable | int      | Is quota available?                             |
+| QuotaLabel      | varchar  | Current usage status of quota                   |
+| ScriptRunTime   | DateTime | Data collection time                            |
+| SyncStatus      | varchar  | Current sync status of OneDrive                 |
+| TotalQuota      | float    | Total size of the available quota (GB)         |
+| UsedQuota       | float    | Amount of used quota (GB)                       |
 | Username        | varchar  | Username                                        |
-
-
-
-
-
-
-
-
-
-
-
-

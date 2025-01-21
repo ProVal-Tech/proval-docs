@@ -8,6 +8,7 @@ tags: ['email', 'office365', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is designed to automatically generate and distribute a report on the Multi-Factor Authentication (MFA) status of Office 365 users for a specified ClientID. The report is sent via email to the individual executing the script, provided that an email address has not been pre-set in the user parameter `EmailAddress`.
@@ -20,7 +21,7 @@ Please note that this script is designed for professional use and requires a cer
 
 **Note of Caution**: Its functionality is not guaranteed on any computer running a version of PowerShell older than 5. Please ensure your systems are updated to at least PowerShell version 5 for optimal performance.
 
-## How to create Office 365 ClientID, TenantID, and Client Secret?
+## How to Create Office 365 ClientID, TenantID, and Client Secret?
 
 ### Register Office 365 Application
 
@@ -35,7 +36,7 @@ To register an application:
    ![Enter Name](../../../static/img/Export-Office-365-users-MFA-Status-Report/image_3.png)
 5. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**.  
    ![Supported Account Types](../../../static/img/Export-Office-365-users-MFA-Status-Report/image_4.png)
-6. Click **Register**. Your application is created and you are redirected to your application page to generate a client secret for this application.
+6. Click **Register**. Your application is created, and you are redirected to your application page to generate a client secret for this application.
 7. Click **Certificates & secrets**.  
    ![Certificates & Secrets](../../../static/img/Export-Office-365-users-MFA-Status-Report/image_5.png)
 8. Click **New client secret**.
@@ -52,9 +53,9 @@ To register an application:
     ![Select Microsoft Graph](https://docs.connectwise.com/@api/deki/files/32459/scn_o365setup_azure_apipermissions_addperimssion_msgraph.png?revision=1)
 15. Click **Application permissions**.
 16. In the search bar, enter **User**.
-17. For **User permissions** select the application permissions `User.Read.All` and `User.Export.All`.
+17. For **User permissions**, select the application permissions `User.Read.All` and `User.Export.All`.
 18. In the search bar, enter **AuthenticationMethod**.
-19. For **User authentication method permissions** select the application permissions `UserAuthenticationMethod.Read.All`.
+19. For **User authentication method permissions**, select the application permission `UserAuthenticationMethod.Read.All`.
 20. Remove the default permission `User.Read` (Delegated type), which is not needed.
 21. Click **Add permissions**. A **Preparing content** button displays. Proceed when the button is no longer disabled.
 22. Click **Grant admin consent**. A confirmation window displays.  
@@ -66,7 +67,7 @@ To register an application:
 
 ## Sample Run
 
-- The script will generate a report for the clientid `24`. This report will then be dispatched via email to the addresses specified in the user parameter `EmailAddress`. The script will utilize the information provided in these parameters to establish a connection with the Office 365 portal.  
+- The script will generate a report for the ClientID `24`. This report will then be dispatched via email to the addresses specified in the user parameter `EmailAddress`. The script will utilize the information provided in these parameters to establish a connection with the Office 365 portal.  
   ![Sample Run 1](../../../static/img/Export-Office-365-users-MFA-Status-Report/image_12.png)
 - The script will generate a report for the client associated with the computer on which the script is executed. This report will subsequently be emailed to the user who initiated the script. The script will leverage the information stored in the client-level EDFs to establish a connection with the Office 365 portal.  
   ![Sample Run 2](../../../static/img/Export-Office-365-users-MFA-Status-Report/image_13.png)
@@ -81,21 +82,21 @@ To register an application:
 
 | Name                      | Example                                    | Required | Description                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------|--------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EmailAddress              | [support@provaltech.com](mailto:support@provaltech.com)  [support@provaltech.com](mailto:support@provaltech.com); [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | False    | The email address or addresses that will receive the generated report. If this parameter is left blank, the script will default to sending the report to the email address of the user executing the script. In the case of multiple email addresses, each address should be separated by a semicolon.                                                                 |
+| EmailAddress              | [support@provaltech.com](mailto:support@provaltech.com); [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | False    | The email address or addresses that will receive the generated report. If this parameter is left blank, the script will default to sending the report to the email address of the user executing the script. In the case of multiple email addresses, each address should be separated by a semicolon.                                                                 |
 | Automate_ClientID         | 21                                         | False    | This parameter specifies the Automate Client for which the report will be generated. If this parameter is left blank, the script will default to generating a report for the client associated with the computer on which the script is executed. This parameter offers flexibility, allowing the script to be run on a centralized computer (for example, an Automate server) and generate reports for all clients. |
-| Office365_Client_ID       | 4e9b6c4a-8e38-46a1-9f7c-4f9a1fc3d7f5    | True (if the Client-Level EDF `M365 Client ID` is not set) | Office 365 Clientid. If this parameter is left blank, the script will default to using the value stored in the client-level EDF `M365 Client ID.`                                                                                                                                                                                                                   |
-| Office365_Tenant_IT       | 78d61825-d966-4a3d-a3a8-5408e8acc66c      | True (if the Client-Level EDF `M365 Tenant ID` is not set) | Office 365 Tenantid. If this parameter is left blank, the script will default to using the value stored in the client-level EDF `M365 Tenant ID.`                                                                                                                                                                                                                   |
+| Office365_Client_ID       | 4e9b6c4a-8e38-46a1-9f7c-4f9a1fc3d7f5    | True (if the Client-Level EDF `M365 Client ID` is not set) | Office 365 Client ID. If this parameter is left blank, the script will default to using the value stored in the client-level EDF `M365 Client ID.`                                                                                                                                                                                                                   |
+| Office365_Tenant_ID       | 78d61825-d966-4a3d-a3a8-5408e8acc66c      | True (if the Client-Level EDF `M365 Tenant ID` is not set) | Office 365 Tenant ID. If this parameter is left blank, the script will default to using the value stored in the client-level EDF `M365 Tenant ID.`                                                                                                                                                                                                                   |
 | Office365_Client_Secret    | W/c9zFv622GjDgY+ZaPPFJiO3Z6GpD4R/9a+CT4yGA= | True (if the Client-Level EDF `M365 Client Secret` is not set) | Office 365 Client Secret. If this parameter is left blank, the script will default to using the value stored in the client-level EDF `M365 Client Secret.`                                                                                                                                                                                                          |
 
 ## Client-Level Extra Data Fields
 
 | Name              | Example                                    | Required | Description                                                                                                      |
 |-------------------|--------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------|
-| M365 Client ID     | 4e9b6c4a-8e38-46a1-9f7c-4f9a1fc3d7f5    | True (Otherwise set the value in the user parameter `Office365_Client_ID` while running the script.) | Office 365 Clientid                                                                                              |
-| M365 Tenant ID     | 78d61825-d966-4a3d-a3a8-5408e8acc66c      | True (Otherwise set the value in the user parameter `Office365_Tenant_ID` while running the script.) | Office 365 Tenantid                                                                                              |
+| M365 Client ID     | 4e9b6c4a-8e38-46a1-9f7c-4f9a1fc3d7f5    | True (Otherwise set the value in the user parameter `Office365_Client_ID` while running the script.) | Office 365 Client ID                                                                                              |
+| M365 Tenant ID     | 78d61825-d966-4a3d-a3a8-5408e8acc66c      | True (Otherwise set the value in the user parameter `Office365_Tenant_ID` while running the script.) | Office 365 Tenant ID                                                                                              |
 | M365 Client Secret  | W/c9zFv622GjDgY+ZaPPFJiO3Z6GpD4R/9a+CT4yGA= | True (Otherwise set the value in the user parameter `Office365_Client_Secret` while running the script.) | Office 365 Client Secret                                                                                          |
 
-These EDFs in the Client-Level EDF section `Office 365 - MFA Status Report`.  
+These EDFs are in the Client-Level EDF section `Office 365 - MFA Status Report`.  
 ![Client-Level EDFs](../../../static/img/Export-Office-365-users-MFA-Status-Report/image_14.png)
 
 ## Output
@@ -108,7 +109,7 @@ These EDFs in the Client-Level EDF section `Office 365 - MFA Status Report`.
 
 **Subject:** `\<ClientName> - Office 365 Users MFA Stats Report - \<TimeStamp>`
 
-**Body:** `Attached Csv file is the Office 365 Users MFA Stats Report for the client \<ClientName>.`
+**Body:** `Attached CSV file is the Office 365 Users MFA Stats Report for the client \<ClientName>.`
 
 **File Name Example:** `MfaStatusReport_2023-Sep-23-Sat 01-51 PM.csv`
 
@@ -122,15 +123,4 @@ The script can create a ticket for failures. The ticketing feature can be toggle
 
 **Ticket Body for configuration error:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations. Set the Office365 ClientID, TenantID, and Client Secret in the Client level EDFs 'Office 365 - ClientID', 'Office 365 - TenantID', and 'Office 365 - Client Secret' respectively for \<Client Name>. The EDFs are present in the Client level EDF section 'Office 365 - MFA Status Report'. Alternatively, you can pass the required values in the script's user parameters 'Office365_Client_ID', 'Office365_Tenant_ID', and 'Office365_Client_Secret' respectively while initiating the script.`
 
-**Ticket Body for the script failure:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations.&lt;Error returned by the PowerShell script&gt;`
-
-
-
-
-
-
-
-
-
-
-
+**Ticket Body for the script failure:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations. <Error returned by the PowerShell script>`

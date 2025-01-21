@@ -8,11 +8,12 @@ tags: ['connectwise', 'software', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Script should be used against an offboarding group, location, monitor Autofix or run manually. Review and set global values per clients standards and products.
+The script should be used against an offboarding group, location, monitor Autofix, or run manually. Review and set global values per client standards and products.
 
-Will check if agent is online or offline, if online will attempt removal of products as set in Globals. If offline it will just retire agent.
+It will check if the agent is online or offline; if online, it will attempt the removal of products as set in Globals. If offline, it will just retire the agent.
 
 ## Sample Run
 
@@ -22,12 +23,12 @@ Will check if agent is online or offline, if online will attempt removal of prod
 
 | Name                     | Example | Required | Description                                                                                     |
 |--------------------------|---------|----------|-------------------------------------------------------------------------------------------------|
-| AV_Software_Search       | ESET%   | False    | If filled out, will attempt to remove software. Also requires script line 18 to be set to correct removal script. |
-| ticketcreationcategory    | 123     | False    | if filled out, will enable ticketing for AV, CW Control removal failures.                      |
-| ThirdWallRemoval         | 0       | True     | 1 - Will attempt Third Wall Removal, 0 - Will NOT attempt removal.                            |
-| SCRemoval                | 1       | True     | 1 - Will attempt CW Control removal, 0 - Will NOT attempt removal.                            |
-| LTAgentRemoval           | 1       | True     | 1 - Will attempt LT Agent Uninstall, 0 - Will NOT attempt removal.                            |
-| ContinueOnFailure        | 0       | True     | Cannot be used with ticketing, if set to 1 will force through AV, SC removal failures to continue offboarding. |
+| AV_Software_Search       | ESET%   | False    | If filled out, will attempt to remove software. Also requires script line 18 to be set to the correct removal script. |
+| ticketcreationcategory    | 123     | False    | If filled out, will enable ticketing for AV and CW Control removal failures.                   |
+| ThirdWallRemoval         | 0       | True     | 1 - Will attempt Third Wall removal, 0 - Will NOT attempt removal.                             |
+| SCRemoval                | 1       | True     | 1 - Will attempt CW Control removal, 0 - Will NOT attempt removal.                             |
+| LTAgentRemoval           | 1       | True     | 1 - Will attempt LT Agent uninstall, 0 - Will NOT attempt removal.                             |
+| ContinueOnFailure        | 0       | True     | Cannot be used with ticketing; if set to 1, will force through AV and SC removal failures to continue offboarding. |
 
 #### User Parameters
 
@@ -37,24 +38,13 @@ Will check if agent is online or offline, if online will attempt removal of prod
 
 ## Process
 
-Will check if agent is online or offline, if online will attempt removal of products as set in Globals. If offline will just retire agent.
+The script will check if the agent is online or offline; if online, it will attempt the removal of products as set in Globals. If offline, it will just retire the agent.
 
-Windows Updates will be reset back to normal. Will attempt to remove AV software if specified. Will remove CW Control (ScreenConnect) if specified. Thirdwall will be removed if specified.
+Windows Updates will be reset back to normal. The script will attempt to remove AV software if specified. It will remove CW Control (ScreenConnect) if specified. Thirdwall will be removed if specified.
 
 Ticketing is optional.
 
 ## Output
 
-Script Log  
-Ticketing on failure if enabled.
-
-
-
-
-
-
-
-
-
-
-
+- Script Log  
+- Ticketing on failure if enabled.

@@ -8,25 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role determines if the agent is acting as an RDS Gateway server.
+This document outlines how to determine if the agent is acting as an RDS Gateway server.
 
 ## Settings
 
 | Detection String                                   | Comparator | Result | Applicable OS |
 |----------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-

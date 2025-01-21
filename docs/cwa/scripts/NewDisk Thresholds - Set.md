@@ -8,9 +8,10 @@ tags: ['performance', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script can be used to set / reset global or computer level disk thresholds.
+This script can be used to set or reset global or computer level disk thresholds.
 
 ## Sample Run
 
@@ -24,31 +25,19 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name  | Description                                                  |
 |-------|--------------------------------------------------------------|
-| Name  | The name of the Global / Computer system property / edf.    |
+| Name  | The name of the Global / Computer system property / EDF.    |
 | Value | The value to be assigned to the Name.                        |
 
 #### User Parameters
 
 | Name               | Example               | Required | Description                                                                                       |
 |--------------------|-----------------------|----------|---------------------------------------------------------------------------------------------------|
-| 16-300Threshold     | a percent such as 10  | True     | The percent of free space that if above violates the threshold.                                  |
-| 300-1024Threshold   | a size in bytes such as 34200 | True     | The size in bytes of free space that if below violates the threshold.                           |
-| 1024+Threshold      | a size in bytes such as 72000 | True     | The size in bytes of the free space that if below violates the threshold.                       |
-| Overwrite           | 0 / 1                 | False    | Set to 1 to overwrite any currently set global / computer level thresholds                        |
-| Type                | Computer / Global      | False    | Sets the type of property to set, global or computer.                                           |
+| 16-300Threshold     | A percent such as 10  | True     | The percent of free space that, if above, violates the threshold.                                 |
+| 300-1024Threshold   | A size in bytes such as 34200 | True     | The size in bytes of free space that, if below, violates the threshold.                          |
+| 1024+Threshold      | A size in bytes such as 72000 | True     | The size in bytes of the free space that, if below, violates the threshold.                      |
+| Overwrite           | 0 / 1                 | False    | Set to 1 to overwrite any currently set global or computer level thresholds.                      |
+| Type                | Computer / Global      | False    | Sets the type of property to set, either global or computer.                                     |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

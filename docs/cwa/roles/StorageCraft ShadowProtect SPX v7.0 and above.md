@@ -8,24 +8,13 @@ tags: ['backup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will determine if the primary build number for ShadowProtect SPX is version 7. This data is used to help coordinate backup management based on the version of the software on an endpoint. This data is viewable in the role definitions screen of the computer management window.
+This role will determine if the primary build number for ShadowProtect SPX is version 7. This data is used to help coordinate backup management based on the version of the software on an endpoint. This information is viewable in the role definitions screen of the computer management window.
 
 ## Settings
 
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%}` | Regex Match   | ^7/..  | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-
-

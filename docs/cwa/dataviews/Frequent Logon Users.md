@@ -8,9 +8,10 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview stores the logonusername, logonusercount, and script run date data detected via script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>) of the Windows Workstations.
+This dataview stores the logon username, logon user count, and script run date data detected via the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>) for Windows Workstations.
 
 ## Dependencies
 
@@ -20,24 +21,11 @@ This dataview stores the logonusername, logonusercount, and script run date data
 
 | Column                        | Description                                                                                                           |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Client                        | Client Name of the agent.                                                                                            |
-| Location                      | Location Name of the agent.                                                                                          |
-| Computer                      | Computer Name of the agent.                                                                                          |
+| Client                        | Client name of the agent.                                                                                            |
+| Location                      | Location name of the agent.                                                                                          |
+| Computer                      | Computer name of the agent.                                                                                          |
 | Operating System              | The operating system name of the agent.                                                                              |
-| LastContact                   | Last contact of the agent with the CW Automate.                                                                     |
+| Last Contact                  | Last contact of the agent with the CW Automate.                                                                     |
 | Frequent Logon User Name      | Frequent logon user name detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>). |
 | Frequent Logon User Count      | Frequent logon user count number detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>). |
-| Script Ran Date               | Script last ran date to show when the last user was detected.                                                       |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Script Ran Date               | Date when the script was last run, indicating when the last user was detected.                                     |

@@ -8,23 +8,13 @@ tags: ['database', 'virtualization', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role detects if the machine is a Nutanix VM and if so, applies this role in the Automate database.
+This role detects if the machine is a Nutanix VM and, if so, applies this role in the Automate database.
 
 ## Settings
 
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | %@powershell.exe "Get-WmiObject -Query 'SELECT Manufacturer FROM Win32_ComputerSystem' | Select-Object -ExpandProperty Manufacturer@% | Equals     | True   | All OS's       |
-
-
-
-
-
-
-
-
-
-
-

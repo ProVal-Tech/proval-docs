@@ -8,9 +8,10 @@ tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this role is to identify the machines where IPv6 is enabled on any network adapter.
+The purpose of this document is to identify machines where IPv6 is enabled on any network adapter.
 
 ## Settings
 
@@ -22,14 +23,3 @@ The purpose of this role is to identify the machines where IPv6 is enabled on an
 
 Use the following document as a guide to implement this role:  
 [https://proval.itglue.com/5078775/docs/17883447](https://proval.itglue.com/5078775/docs/17883447)
-
-
-
-
-
-
-
-
-
-
-

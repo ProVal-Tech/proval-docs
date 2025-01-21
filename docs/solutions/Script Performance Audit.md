@@ -8,6 +8,7 @@ tags: ['performance', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The solution comprises three dataviews designed to showcase the performance, historical, and descriptive details of the scripts.
@@ -16,7 +17,7 @@ The solution comprises three dataviews designed to showcase the performance, his
 
 | Content                                                                 | Type      | Function                                                              |
 |-------------------------------------------------------------------------|-----------|----------------------------------------------------------------------|
-| [Dataview - Script List](<../cwa/dataviews/Script List.md>) | Dataview  | Displays the basic information of the scripts present in the environment. |
+| [Dataview - Script List](<../cwa/dataviews/Script List.md>)          | Dataview  | Displays the basic information of the scripts present in the environment. |
 | [Dataview - Script Effectiveness Performance Audit](<../cwa/dataviews/Script Effectiveness Performance Audit.md>) | Dataview  | Displays the performance audit of the scripts present in the environment. |
 | [Dataview - Script Run Time Historical Audit](<../cwa/dataviews/Script Run Time Historical Audit.md>) | Dataview  | Displays the historical run-time data of the scripts present in the environment. |
 
@@ -40,15 +41,3 @@ The solution comprises three dataviews designed to showcase the performance, his
 
 **Q:** Is it feasible to consolidate these dataviews into a single dataview?  
 **A:** While it is technically possible to merge these dataviews into one, it's important to note that the resulting dataview will not function reliably due to the complexity of calculations and the volume of data processed to generate these views.
-
-
-
-
-
-
-
-
-
-
-
-

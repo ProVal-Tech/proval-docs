@@ -8,6 +8,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The purpose of this task is to install the desired patch on the Windows machines.
@@ -16,7 +17,7 @@ The purpose of this task is to install the desired patch on the Windows machines
 
 ![Sample Run 1](../../../static/img/Universal-KB-Installer/image_3.png)
 
-Leave the Reboot parameter Untick to prevent the machine from rebooting.
+Leave the Reboot parameter unticked to prevent the machine from rebooting.
 
 ![Sample Run 2](../../../static/img/Universal-KB-Installer/image_4.png)
 
@@ -29,17 +30,17 @@ Tick the Reboot parameter to reboot the machine.
 | Name      | Example   | Accepted Values | Required | Default | Type   | Description                                                  |
 |-----------|-----------|-----------------|----------|---------|--------|--------------------------------------------------------------|
 | `KBNumber`| 5044285   | KB ID Number    | True     |         | String | KB ID Number of the patch that needs to be installed.       |
-| `Reboot`  | Unmarked  |                 | False    | $false  | Flag   | Select it to Reboot the machine during task execution.      |
+| `Reboot`  | Unmarked  |                 | False    | $false  | Flag   | Select it to reboot the machine during task execution.      |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Universal-KB-Installer/image_6.png)
 
 ![Task Creation 2](../../../static/img/Universal-KB-Installer/image_7.png)
 
-**Name:** Universal KB installer  
+**Name:** Universal KB Installer  
 **Description:** The purpose of this task is to install the desired patch on the Windows machines.  
 **Category:** Custom  
 
@@ -57,12 +58,12 @@ This screen will appear.
 
 - Set `KBNumber` in the `Parameter Name` field.
 - Select `String` from the `Parameter Type` dropdown menu.
-- Toggle Required Field.
+- Toggle the Required Field.
 - Click the `Save` button.
 
 ![Parameter Addition 3](../../../static/img/Universal-KB-Installer/image_11.png)
 
-It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
+It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
 ![Parameter Confirmation](../../../static/img/Universal-KB-Installer/image_12.png)
 
@@ -70,9 +71,9 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![Parameter Addition 4](../../../static/img/Universal-KB-Installer/image_13.png)
 
-- Set `Reboot` in the `Parameter Name` Field.
+- Set `Reboot` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
-- Toggle Default Value.
+- Toggle the Default Value.
 - Set Default Value as `False`.
 - Click the `Save` button.
 - Click the `Confirm` button to create the parameter.
@@ -85,7 +86,7 @@ Parameters will look like as shown below:
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Universal-KB-Installer/image_16.png)
 
@@ -106,7 +107,7 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
 ```powershell
-if ( '@KBNumber@' -notmatch '[0-9]'){
+if ( '@KBNumber@' -notmatch '[0-9]') {
     throw "Valid KB ID is required to install the patch"
 } else {
     $KBNumber = '@KBNumber@'
@@ -154,7 +155,7 @@ if ($Reboot -eq '1' -and $RebootRequired -eq 'True') {
 }
 ```
 
-### Row 2: Function: Script Log
+### Row 2 Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
@@ -167,15 +168,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

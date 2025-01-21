@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitor executes the [EPM - Network - Script - Get - DNS Assignments](<./Get - DNS Assignments.md>) script once per week to keep the data updated in the [EPM - Network - Dataview - DNS Assignments](https://proval.itglue.com/DOC-5078775-12184160) dataview.
@@ -24,15 +25,3 @@ Managed Windows Servers and Workstations
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get - DNS Assignments`
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows each KB along with the title of the KB and shows the OS version that it impacts. It also shows you when it was added into the patch manager, when it was set to approved/Ignore/Deny, set by whom, what the approval was, and how many patch policies it impacts.
+This dataview shows each KB along with the title of the KB and the OS version that it impacts. It also indicates when it was added to the patch manager, when it was set to approved, ignored, or denied, who set it, what the approval status was, and how many patch policies it impacts.
 
 ## Dependencies
 
@@ -20,26 +21,13 @@ None
 
 | Column          | Description                                               |
 |-----------------|-----------------------------------------------------------|
-| KBID            | KB number to the patch                                    |
+| KBID            | KB number of the patch                                    |
 | Title           | The name of the patch                                     |
 | OS              | OS version of the patch to which it applies              |
 | Category        | The category as reflected in the patch manager            |
 | Severity        | The severity as reflected in the patch manager            |
-| DateAdded       | Date of when it was added in the patch manager            |
-| SetTime         | When the patch was set to something                       |
-| SetBy           | The User or 'Auto' that set the patch                    |
-| ApprovalSetting | Approved, Deny, or Ignore or Not Set                      |
-| Impact          | Number of policies where this patch is being set         |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| DateAdded       | Date when it was added to the patch manager               |
+| SetTime         | When the patch was set to a status                        |
+| SetBy           | The user or 'Auto' that set the patch                    |
+| ApprovalSetting | Approved, Denied, Ignored, or Not Set                     |
+| Impact          | Number of policies where this patch is being applied      |

@@ -8,9 +8,10 @@ tags: ['connectwise', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This group detects Windows 10 and 11 computers where Winget Update All [System] and Winget Update All [Logged on User] tasks are missing and are opted in the Winget update All Scheduled task creation solution.
+This group detects Windows 10 and 11 computers where Winget Update All [System] and Winget Update All [Logged on User] tasks are missing and are opted into the Winget Update All Scheduled task creation solution.
 
 ## Dependencies
 
@@ -58,7 +59,7 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
    ![Step 7](../../../static/img/Winget-Update-All-(Task-Create)/image_13.png)  
    A new search box will appear.  
    ![Step 7 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_14.png)  
-   Search and select the `WingetUpdateAll_Task_Exclude` custom field from the search box. Both Site and computer level Custom fields have the same name. So, ensure selecting both fields. You have selected one in the previous step; select the other one in this step.  
+   Search and select the `WingetUpdateAll_Task_Exclude` custom field from the search box. Both Site and computer-level custom fields have the same name, so ensure you select both fields. You have selected one in the previous step; select the other one in this step.  
    ![Step 7 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_15.png)  
    Set `False` in the comparison condition.  
    ![Step 7 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_12.png)  
@@ -80,7 +81,7 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
    ![Step 9 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_19.png)  
    Search and select the `WingetUpdateAll_Task_Result` custom field from the search box.  
    ![Step 9 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_20.png)  
-   Select `Does Not Contain any of` for comparator and set `Task Created` in the comparison condition.  
+   Select `Does Not Contain any of` for the comparator and set `Task Created` in the comparison condition.  
    ![Step 9 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_21.png)  
    **Condition:** `WingetUpdateAll_Task_Result` `Does Not Contain any of` `Task Created`
 
@@ -90,7 +91,7 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
     ![Step 10 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_23.png)  
     Search and select the `OS` criteria from the search box.  
     ![Step 10 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_24.png)  
-    Select `Contains any of` for comparator and select `Microsoft Windows 10 and 11` for the comparison field.  
+    Select `Contains any of` for the comparator and select `Microsoft Windows 10 and 11` for the comparison field.  
     ![Step 10 Continued](../../../static/img/Winget-Update-All-(Task-Create)/image_25.png)  
     **Condition:** `OS` `Contains any of` `Microsoft Windows` `10` `11`
 
@@ -101,15 +102,3 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_27.png)  
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_28.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,33 +8,21 @@ tags: ['active-directory', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This solution is used to check the Azure AD status of a machine. An agent procedure updates a custom field that allows a view to pull the machines.
 
 ## Associated Content
 
-| Content                                                                                       | Type         | Function                                           |
-|-----------------------------------------------------------------------------------------------|--------------|----------------------------------------------------|
-| [https://proval.itglue.com/DOC-5078775-12540473](https://proval.itglue.com/DOC-5078775-12540473) | View         | Creates the view to allow filtering of the machines |
-| [https://proval.itglue.com/DOC-5078775-12540748](<../vsa/custom-fields/EPM - Data Collection - Custom Field- Azure AD Status.md>) | Custom Field | Creates the custom field so that the procedure can update the status |
-| [https://proval.itglue.com/DOC-5078775-12540861](https://proval.itglue.com/DOC-5078775-12540861) | Agent Procedure | The agent procedure updates the system info.       |
+| Content                                                                                       | Type            | Function                                           |
+|-----------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------|
+| [View Documentation](https://proval.itglue.com/DOC-5078775-12540473)                       | View            | Creates the view to allow filtering of the machines |
+| [Custom Field Documentation](<../vsa/custom-fields/EPM - Data Collection - Custom Field- Azure AD Status.md>) | Custom Field    | Creates the custom field so that the procedure can update the status |
+| [Agent Procedure Documentation](https://proval.itglue.com/DOC-5078775-12540861)             | Agent Procedure  | The agent procedure updates the system info.       |
 
 ## Implementation
 
-- View needs to be created
-- Custom Field needs to be created
-- Agent Procedure needs to be run once these are created
-
-
-
-
-
-
-
-
-
-
-
-
-
+- A view needs to be created.
+- A custom field needs to be created.
+- The agent procedure needs to be run once these are created.

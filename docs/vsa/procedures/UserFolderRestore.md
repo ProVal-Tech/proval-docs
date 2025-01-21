@@ -8,19 +8,7 @@ tags: ['backup', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery:
 
-Restore Backed Up Folders to Current User  
+## Summary:
 
-
-
-
-
-
-
-
-
-
-
-
-
+Restore Backed Up Folders to Current User

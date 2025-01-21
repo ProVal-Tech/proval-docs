@@ -8,9 +8,10 @@ tags: ['performance', 'virtualization']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Internal monitor that will alert if a host has not gathered inventory in more than 7 days.
+This document describes an internal monitor that will alert users if a host has not gathered inventory in more than 7 days.
 
 ## Dependencies
 
@@ -18,16 +19,4 @@ Internal monitor that will alert if a host has not gathered inventory in more th
 
 ## Target
 
-Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-
-
+Global - This monitor should be run without explicitly defined targets.

@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The view is designed to store and execute the SQL query utilized by the 'CU Compliance Metrics' dataview. It contains data exclusively for the windows computers with managed patch policies, which have been online in Automate within the past 30 days and are part of production patching groups.
+The view is designed to store and execute the SQL query utilized by the 'CU Compliance Metrics' dataview. It contains data exclusively for Windows computers with managed patch policies that have been online in Automate within the past 30 days and are part of production patching groups.
 
 ## Dependencies
 
@@ -24,33 +25,21 @@ The view is designed to store and execute the SQL query utilized by the 'CU Comp
 
 | Column                       | Explanation                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Production Computers         | Online Computers (Past 30 Days) Including EOL with Managed patch policy.                                                        |
+| Production Computers         | Online computers (past 30 days) including EOL with managed patch policy.                                                         |
 | CU Age - Current             | The count of computers where the installed latest Cumulative Update's release date falls within the last 45 days.                |
 | CU Age - 46-90              | The count of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days.                  |
 | CU Age - 91-135             | The count of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days.                 |
 | CU Age - 136+               | The count of computers where the release date of the installed latest Cumulative Update is at least 136 days ago.                |
-| Eol Count                   | The count of Outdated Machines Ineligible for Cumulative Updates.                                                                |
-| CU Score %                  | This scoring system is custom-made, based on the age of the installed Cumulative Update. A score of 100 is assigned if the Cumulative Update is less than 45 days old, 75 if it falls between 46 to 90 days, 50 for updates aged between 91 to 135 days, 25 for updates older than 136 days, and 0 for EOL machines. The formula used for calculation is as follows:  `(CU Age - Current) * 100 + (CU Age - 46-90) * 75 + (CU Age - 91-135) * 50 + (CU Age - 136+) * 25) / Production Computers` |
+| EOL Count                   | The count of outdated machines ineligible for Cumulative Updates.                                                                |
+| CU Score %                  | This scoring system is custom-made based on the age of the installed Cumulative Update. A score of 100 is assigned if the Cumulative Update is less than 45 days old, 75 if it falls between 46 to 90 days, 50 for updates aged between 91 to 135 days, 25 for updates older than 136 days, and 0 for EOL machines. The formula used for calculation is as follows: `(CU Age - Current) * 100 + (CU Age - 46-90) * 75 + (CU Age - 91-135) * 50 + (CU Age - 136+) * 25) / Production Computers` |
 | CU Age - Current %          | Percentage of computers where the installed latest Cumulative Update's release date falls within the last 45 days. (`CU Age - Current` divided by `Production Computers` multiplied by `100`) |
 | CU Age - 46-90 %            | Percentage of computers where the installed latest Cumulative Update's release date falls between 46 to 90 days. (`CU Age - 46-90` divided by `Production Computers` multiplied by `100`) |
 | CU Age - 91-135 %           | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. (`CU Age - 91-135` divided by `Production Computers` multiplied by `100`) |
 | CU Age - 136+ %             | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. (`CU Age - 136+` divided by `Production Computers` multiplied by `100`) |
-| Eol %                       | Proportion of Outdated Machines Ineligible for Cumulative Updates.                                                               |
+| EOL %                       | Proportion of outdated machines ineligible for Cumulative Updates.                                                               |
 | Total Eligible Computers - CU | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
 | Total Eligible Clients - CU   | Total number of clients with supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
-| Compliant Clients - CU       | Total number of individual clients where `CU Score %` is greater than equal to 75.                                              |
+| Compliant Clients - CU       | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                            |
 | Non-Compliant Clients - CU    | Total number of individual clients where `CU Score %` is less than 75.                                                          |
-| Compliant Clients - CU %     | Percentage of the compliant client based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`) |
+| Compliant Clients - CU %     | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`) |
 | Data Missing                 | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
-
-
-
-
-
-
-
-
-
-
-
-

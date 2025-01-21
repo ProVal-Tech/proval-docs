@@ -8,9 +8,10 @@ tags: ['disk', 'email', 'report', 'storage', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-the script sends an HTML report of the top 100 files and folders to the user executing the script if the email address(es) is not filled in the user parameter `@Email@`
+The script sends an HTML report of the top 100 files and folders to the user executing the script if the email address(es) is not filled in the user parameter `@Email@`.
 
 ## Sample Run
 
@@ -33,8 +34,8 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 
 | Name        | Example                          | Required | Description                                                                                      |
 |-------------|----------------------------------|----------|--------------------------------------------------------------------------------------------------|
-| Email       | [someone@somewhere.com](mailto:someone@somewhere.com) | False    | If email address is not provided then the script will by default send the report to the user running the script. |
-| Drive_Letter| C                                | False    | If the drive letter is not specified then the script will by default generate the report for C Drive. |
+| Email       | [someone@somewhere.com](mailto:someone@somewhere.com) | False    | If the email address is not provided, then the script will by default send the report to the user running the script. |
+| Drive_Letter| C                                | False    | If the drive letter is not specified, then the script will by default generate the report for the C Drive. |
 
 ## Output
 
@@ -47,15 +48,3 @@ the script sends an HTML report of the top 100 files and folders to the user exe
 ## Sample Report
 
 ![Sample Report](../../../static/img/HTML-Report---100-Largest-Files-and-Folders-Param/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

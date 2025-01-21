@@ -8,19 +8,20 @@ tags: ['uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script uninstalls the Mac from the MAC agent.
+This script uninstalls the Huntress agent from a Mac system.
 
 ## Create Script
 
-Please create a new "PowerShell" style script to implement this script.
+Please create a new "PowerShell" style script to implement this process.
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_1.png)  
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_2.png)  
 
 **Name:** Huntress Agent (Uninstall) - MAC  
-**Description:** This script uninstalls the Mac from the MAC agent.  
+**Description:** This script uninstalls the Huntress agent from a Mac system.  
 **Category:** Custom  
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_3.png)  
@@ -31,7 +32,7 @@ Please create a new "PowerShell" style script to implement this script.
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_4.png)  
 
-Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
+Paste the following Bash script and set the expected script execution time to 900 seconds.
 
 ```
 #!/bin/bash
@@ -57,7 +58,7 @@ fi
 
 ## Step 2 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button.
 - Search and select the `Script Log` function.
 - Input the following:  
 
@@ -74,15 +75,15 @@ fi
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_8.png)  
 
-## ROW 3a Condition: Output Contains
+## Row 3a Condition: Output Contains
 
 - Type `Failed to uninstall Huntress` in the Value box.  
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_9.png)  
 
-## ROW 3b Function: Script Exit
+## Row 3b Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button.
 - Search and select the `Script Exit` function.
 - Input the following:  
 
@@ -95,7 +96,7 @@ Huntress failed to uninstall. Refer to the logs: %Output%
 
 ## Step 4 Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button.
 - Search and select the `Script Exit` function.
 - Leave it blank  
 
@@ -114,21 +115,10 @@ Huntress failed to uninstall. Refer to the logs: %Output%
 For now, the task has been created to run manually on the machines.  
 Go to Automations > Tasks.  
 Search for Huntress Agent (Uninstall) - MAC.  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.  
+Then click on Schedule and provide the necessary parameters for script completion.  
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_14.png)  
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

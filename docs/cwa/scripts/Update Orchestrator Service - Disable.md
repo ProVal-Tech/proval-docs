@@ -8,15 +8,16 @@ tags: ['performance', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script will stop and disable the Update Orchestrator service.  
-Time Saved by Automation: 5 Minutes  
+**Time Saved by Automation:** 5 Minutes  
 
 ## Sample Run
 
-Function Script  
-It will run as an autofix with dependent monitor.  
+### Function Script  
+It will run as an autofix with a dependent monitor.  
 
 ## Dependencies
 
@@ -24,23 +25,10 @@ It will run as an autofix with dependent monitor.
 
 ## Process
 
-- This script will detect the Update Orchestrator whether running.
-- If running then it will stop it and disable the service.
-- Cross check and confirm the status.
+- This script will detect whether the Update Orchestrator is running.
+- If it is running, the script will stop it and disable the service.
+- Cross-check and confirm the status.
 
 ## Output
 
-- Script log
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Script log  

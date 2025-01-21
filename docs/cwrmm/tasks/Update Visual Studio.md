@@ -8,9 +8,10 @@ tags: ['application', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Updates all installed VS versions automatically. CW RMM implementation of the agnostic script [Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>).
+This document updates all installed Visual Studio versions automatically using the ConnectWise RMM implementation of the agnostic script [Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>).
 
 ## Sample Run
 
@@ -19,11 +20,11 @@ Updates all installed VS versions automatically. CW RMM implementation of the ag
 
 ## Dependencies
 
-[SWM - Software Update - Agnostic - Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>)
+Refer to the [SWM - Software Update - Agnostic - Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>) for dependencies.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Step 1](../../../static/img/Update-Visual-Studio/image_3.png)
 ![Task Creation Step 2](../../../static/img/Update-Visual-Studio/image_4.png)
@@ -35,7 +36,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Update-Visual-Studio/image_6.png)
 
@@ -89,11 +90,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -135,15 +136,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

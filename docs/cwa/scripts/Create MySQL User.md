@@ -1,18 +1,19 @@
 ---
 id: 'd96342ec-c42e-424b-85b6-d7009a3163d0'
-title: 'Create New MYSQL User with Read-only Permissions'
-title_meta: 'Create New MYSQL User with Read-only Permissions'
+title: 'Create New MySQL User with Read-only Permissions'
+title_meta: 'Create New MySQL User with Read-only Permissions'
 keywords: ['mysql', 'user', 'permissions', 'read-only', 'database']
-description: 'This document provides a detailed guide on creating a new MYSQL user with Read-only permissions using ConnectWise Automate. It includes user parameters, sample run output, and process details necessary for executing the script effectively.'
+description: 'This document provides a detailed guide on creating a new MySQL user with Read-only permissions using ConnectWise Automate. It includes user parameters, sample run output, and process details necessary for executing the script effectively.'
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will create a new MYSQL user with Read-only permissions.
+This script will create a new MySQL user with Read-only permissions.
 
-Requirement: CW Automate Version 22 Patch 10 +
+**Requirement:** CW Automate Version 22 Patch 10 +
 
 ## Sample Run
 
@@ -22,20 +23,9 @@ Requirement: CW Automate Version 22 Patch 10 +
 
 | Name     | Example                  | Required | Description                  |
 |----------|--------------------------|----------|------------------------------|
-| Username | User1                    | True     | New MYSQL username.          |
-| Password | 11!v-U6uoVmHJr8tcPd     | True     | New MYSQL user password.     |
+| Username | User1                    | True     | New MySQL username.          |
+| Password | 11!v-U6uoVmHJr8tcPd     | True     | New MySQL user password.     |
 
 ## Process
 
-This script runs a SQL query and creates a new MYSQL user with Full permissions for `Labtech` database.
-
-
-
-
-
-
-
-
-
-
-
+This script runs a SQL query and creates a new MySQL user with Full permissions for the `Labtech` database.

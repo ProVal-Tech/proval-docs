@@ -8,17 +8,7 @@ tags: ['kaseya', 'software', 'update']
 draft: false
 unlisted: false
 ---
-## Summery
 
-Controls Kaseya App Blocker (updates kasyea ini file)
+## Summary
 
-
-
-
-
-
-
-
-
-
-
+Controls Kaseya App Blocker (updates Kaseya INI file)

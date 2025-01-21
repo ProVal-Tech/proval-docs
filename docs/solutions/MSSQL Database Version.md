@@ -8,9 +8,10 @@ tags: ['database', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The objective of the solution is to centralize the retrieval of MSSQL server versions across the environment into a single location for auditing purposes.
+The objective of this solution is to centralize the retrieval of MSSQL server versions across the environment into a single location for auditing purposes.
 
 ## Associated Content
 
@@ -44,19 +45,7 @@ The objective of the solution is to centralize the retrieval of MSSQL server ver
    ![Execute Script](../../static/img/MSSQL-Database-Version/image_2.png)
 
 4. Configure the solution as follows:  
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - Execute Script - Get MSSQL Database](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview gives the Media Player state audit report whether enabled or not.
+This document presents the Media Player state audit report, indicating whether the feature is enabled or not.
 
 ## Dependencies
 
@@ -20,33 +21,33 @@ This dataview gives the Media Player state audit report whether enabled or not.
 
 | Column               | Description                                      |
 |---------------------|--------------------------------------------------|
-| Client              | Client Name of the agent                         |
-| Location            | Location Name of the agent                       |
+| Client              | Client name of the agent                         |
+| Location            | Location name of the agent                       |
 | Computer            | Computer name of the agent                       |
 | Operating System    | Operating system of the agent                    |
-| Agent State         | Agent status whether online or offline           |
+| Agent State         | Agent status, whether online or offline          |
 | Feature Name        | Windows optional feature name                    |
 | Display Name        | Display name of the optional feature             |
-| Description         | Description of the windows optional feature      |
-| Reboot Required     | Reboot required for the feature                  |
-| MediaPlayer State   | MediaPlayer state whether enabled or disabled    |
+| Description         | Description of the Windows optional feature      |
+| Reboot Required     | Indicates if a reboot is required for the feature|
+| MediaPlayer State   | MediaPlayer state, whether enabled or disabled   |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
-  cl.name as `Client`, 
-  l.name as `Location`, 
-  c.name as `Computer`, 
-  c.os as `Operating System`, 
-  CasE WHEN c.LastContact > NOW() - INTERVAL 15 MINUTE THEN 'Online' ELSE 'Offline' END as `Agent State`, 
+  cl.name AS `Client`, 
+  l.name AS `Location`, 
+  c.name AS `Computer`, 
+  c.os AS `Operating System`, 
+  CASE WHEN c.LastContact > NOW() - INTERVAL 15 MINUTE THEN 'Online' ELSE 'Offline' END AS `Agent State`, 
   c.computerid, 
   c.clientid, 
   c.locationid, 
   TRIM(
     SUBSTRING_INDEX(ss.value, '--', 1)
-  ) as `Feature Name`, 
-  CasE WHEN TRIM(
+  ) AS `Feature Name`, 
+  CASE WHEN TRIM(
     SUBSTRING_INDEX(
       SUBSTRING_INDEX(ss.value, '--', 2), 
       '--', 
@@ -58,8 +59,8 @@ SELECT
       '--', 
       -1
     )
-  ) END as `Display Name`, 
-  CasE WHEN TRIM(
+  ) END AS `Display Name`, 
+  CASE WHEN TRIM(
     SUBSTRING_INDEX(
       SUBSTRING_INDEX(ss.value, '--', 3), 
       '--', 
@@ -71,8 +72,8 @@ SELECT
       '--', 
       -1
     )
-  ) END as `Description`, 
-  CasE WHEN TRIM(
+  ) END AS `Description`, 
+  CASE WHEN TRIM(
     SUBSTRING_INDEX(
       SUBSTRING_INDEX(ss.value, '--', 4), 
       '--', 
@@ -84,8 +85,8 @@ SELECT
       '--', 
       -1
     )
-  ) END as `Reboot Required`, 
-  CasE WHEN TRIM(
+  ) END AS `Reboot Required`, 
+  CASE WHEN TRIM(
     SUBSTRING_INDEX(
       SUBSTRING_INDEX(ss.value, '--', 5), 
       '--', 
@@ -97,7 +98,7 @@ SELECT
       '--', 
       -1
     )
-  ) END as `MediaPlayer State` 
+  ) END AS `MediaPlayer State` 
 FROM 
   computers c 
   LEFT JOIN clients cl ON cl.clientid = c.clientid 
@@ -106,15 +107,3 @@ FROM
 WHERE 
   ss.variable = 'MediaPlayerCheck'
 ```
-
-
-
-
-
-
-
-
-
-
-
-

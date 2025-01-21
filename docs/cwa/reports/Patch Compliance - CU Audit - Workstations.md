@@ -8,9 +8,10 @@ tags: ['compliance', 'report', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The Patch Compliance - CU Audit - Workstations report displays a comprehensive summary of all workstations at a specific client and their perspective patch status. It looks at how long each machine has been on an older cumulative update than the latest, and calculates a client compliance score based on that information.
+The Patch Compliance - CU Audit - Workstations report displays a comprehensive summary of all workstations at a specific client and their respective patch statuses. It examines how long each machine has been using an older cumulative update compared to the latest version and calculates a compliance score based on that information.
 
 ## Dependencies
 

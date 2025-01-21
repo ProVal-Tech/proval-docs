@@ -10,23 +10,14 @@ unlisted: false
 ---
 
 ## Description
-Historical. Used for the bulk renaming of ITGlue documents after the conversion. Kept for posterity and reference.
+This command is used for the bulk renaming of ITGlue documents after conversion. It is kept for posterity and reference.
 
 ## Requirements
-Requires ITGlue module.
+Requires the ITGlue module.
 
 ## Usage
 Parses through CSV exports from the conversion and directly from ITGlue to rename documents.
 
 ## Output
-    .\editeddocs.csv
-    .\skippeddocs.csv
-
-
-
-
-
-
-
-
-
+- `.\editeddocs.csv`
+- `.\skippeddocs.csv`

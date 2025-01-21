@@ -8,16 +8,17 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will check for the update orchestrator service. If running then it will trigger the alert template applied.
+This monitor checks for the Update Orchestrator Service. If the service is running, it will trigger the applied alert template.
 
 ## Details
 
 **Suggested "Limit to"**: Windows Machines  
 **Suggested Alert Style**: Continuous  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type    | Check Value | Comparator | Interval | Result |
 |--------------|----------------|---------------|-------------|------------|----------|--------|
@@ -30,16 +31,3 @@ Insert the details of the monitor in the below table.
 ## Target
 
 Windows Machine
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,20 +8,21 @@ tags: ['installation', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task reinstalls the huntress Agent.
+This task reinstalls the Huntress Agent.
 
 ## Create Script
 
-Please create a new "PowerShell" style script to implement this script.
+Please create a new PowerShell style script to implement this task.
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_1.png)  
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_2.png)  
 
-Name: Huntress Agent (ReInstall)  
-Description: This task reinstalls the huntress Agent.  
-Category: Custom  
+**Name:** Huntress Agent (ReInstall)  
+**Description:** This task reinstalls the Huntress Agent.  
+**Category:** Custom  
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_3.png)  
 
@@ -33,15 +34,15 @@ Category: Custom
 
 Input the following:
 
-The script will detect the required keys for the huntress reinstallation:  
+The script will detect the required keys for the Huntress reinstallation:  
 ```plaintext
 acct_key : @acct_key@
 org_key: @ORG_Key@
 tags: ['installation', 'security', 'windows']
 ```
 
-Attempting to download the ps1 from the below link:  
-[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded the agent will be attempted to reinstall.
+Attempting to download the PS1 file from the following link:  
+[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1). Once downloaded, the agent will attempt to reinstall.
 
 ## Row 2 Function: Set Pre-defined Variable
 
@@ -51,7 +52,7 @@ Attempting to download the ps1 from the below link:
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
-- Select `Huntress Acct_Key` custom field from drop Down
+- Select `Huntress Acct_Key` custom field from the dropdown
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_6.png)  
@@ -64,7 +65,7 @@ Attempting to download the ps1 from the below link:
 
 - Select `Custom Field`
 - Input `ORG_Key` as Variable name
-- Select `Huntress Org_Key` custom field from the drop Down
+- Select `Huntress Org_Key` custom field from the dropdown
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_7.png)  
@@ -77,7 +78,7 @@ Attempting to download the ps1 from the below link:
 
 - Select `Custom Field`
 - Input `Tags` as Variable name
-- Select `Huntress Tag` custom field from the drop Down
+- Select `Huntress Tag` custom field from the dropdown
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_8.png)  
@@ -126,14 +127,15 @@ if (!(Test-Path $WorkingDirectory)) {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
-if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' }).FileSystemRights -Match 'FullControl')) {
+if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
     $ACl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
 }
+#endregion
 
-#region write script
+#region Write Script
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
 if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
@@ -143,7 +145,7 @@ if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
 }
 if (!(Test-Path -Path $PS1Path)) {
-    return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
+    return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
 }
 #endregion
 
@@ -160,7 +162,7 @@ if ($Parameters) {
 
 ## Step 6 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else block by clicking the Add Row button
 - Search and select the `Script Log` function.
 - Input the following  
 
@@ -177,7 +179,7 @@ if ($Parameters) {
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_13.png)  
 
-## ROW 7a Condition: Output Contains
+## Row 7a Condition: Output Contains
 
 - Type `denied` in the Value box.
 - Add another condition with the OR operator and type `ERROR:` in the Value box.
@@ -185,9 +187,9 @@ if ($Parameters) {
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_14.png)  
 
-## ROW 7b Function: Script Exit
+## Row 7b Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else block by clicking the Add Row button
 - Search and select the `Script Exit` function.
 - Input the following  
 
@@ -200,7 +202,7 @@ Failed to repair Huntress Agent. Command Result: %Output%
 
 ## Step 8 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else block by clicking the Add Row button
 - Search and select the `Script Log` function.
 - Input the following  
 
@@ -213,7 +215,7 @@ Successfully repaired Huntress Agent.
 
 ## Step 9 Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If-Else block by clicking the Add Row button
 - Search and select the `Script Exit` function.
 - Leave it blank  
 
@@ -234,21 +236,10 @@ For now, the task has been created to run manually on the machines.
 
 Go to Automations > Tasks.  
 Search for Huntress Agent (ReInstall).  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
+Then click on Schedule and provide the parameters details as necessary for the script completion.
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_20.png)  
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

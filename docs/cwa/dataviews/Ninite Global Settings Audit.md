@@ -8,13 +8,13 @@ tags: ['ninite', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This displays an audit of all of the locations that have any different configuration from the global settings in Ninite Plugin.
+This document presents an audit of all locations that have configurations different from the global settings in the Ninite Plugin.
 
 ## Dependencies
 
-Table:
 - mp_niniteselections
 
 ## Columns
@@ -22,20 +22,8 @@ Table:
 | Column                       | Description                                                       |
 |------------------------------|-------------------------------------------------------------------|
 | LocationID                   | Location ID of the location                                       |
-| Location Name                | Name of the Location                                             |
-| ClientID                     | ID of the Client                                                |
-| Client Name                  | Name of the Client                                              |
-| Different App Configurations  | Applications that are different from global settings in Ninite   |
-| Number of Different Apps      | Total count of applications that are different from global settings|
-
-
-
-
-
-
-
-
-
-
-
-
+| Location Name                | Name of the location                                             |
+| ClientID                     | ID of the client                                                |
+| Client Name                  | Name of the client                                              |
+| Different App Configurations  | Applications that differ from global settings in Ninite         |
+| Number of Different Apps      | Total count of applications that differ from global settings     |

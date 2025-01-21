@@ -8,24 +8,13 @@ tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role checks the StorageCraft installed version and if it matches 6.5 or better, apply this role in the Automate database.
+This role checks the installed version of StorageCraft. If it matches version 6.5 or higher, the role can be applied in the Automate database.
 
 ## Settings
 
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%} | Regex Match | ^6/.. | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-

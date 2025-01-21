@@ -8,33 +8,22 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Mark this custom field to create Winget Update All (System And Logged on User) tasks for the company's Windows 10 and 11 computers. 
+Mark this custom field to create Winget Update All (System and Logged on User) tasks for the company's Windows 10 and 11 computers.
 
-Marking this custom field will automatically add the machines to [CW RMM - Machine Group - Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) group.
+Marking this custom field will automatically add the machines to the [CW RMM - Machine Group - Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) group.
 
-This custom field must be marked on the company level to run [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task.
+This custom field must be marked at the company level to run the [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task.
 
 ## Details
 
 | Field Name                     | Level  | Type | Default Value | Description                                                                 | Editable |
 |--------------------------------|--------|------|---------------|-----------------------------------------------------------------------------|----------|
-| WingetUpdateAll_Task_Create    | COMPANY | Flag | No            | Mark this custom field to create Winget Update All (System And Logged on User) tasks for the company. | Yes      |
+| WingetUpdateAll_Task_Create    | COMPANY | Flag | No            | Mark this custom field to create Winget Update All (System and Logged on User) tasks for the company. | Yes      |
 
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Create/image_1.png)
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Create/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

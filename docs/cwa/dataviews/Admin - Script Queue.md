@@ -8,6 +8,7 @@ tags: ['performance', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview helps you audit the queued and running scripts in Automate.
@@ -16,20 +17,8 @@ This dataview helps you audit the queued and running scripts in Automate.
 
 | Column            | Description                                          |
 |-------------------|------------------------------------------------------|
-| ScriptName        | Display the script name.                             |
-| CurrentRuning     | Display if the script is currently running or not.  |
-| ScriptID          | Display the script ID.                               |
-| TotalCount        | Displays the total number of times the script is executed. |
-| RunningPercentage  | Displays the script running percentage.              |
-
-
-
-
-
-
-
-
-
-
-
-
+| ScriptName        | Displays the script name.                             |
+| CurrentRunning    | Indicates if the script is currently running or not.  |
+| ScriptID          | Displays the script ID.                               |
+| TotalCount        | Displays the total number of times the script has been executed. |
+| RunningPercentage  | Displays the script's running percentage.             |

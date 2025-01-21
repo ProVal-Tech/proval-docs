@@ -8,11 +8,12 @@ tags: ['database', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes roles that are still listed on machines, but no longer detected on them.
+This document outlines a process to remove roles that are still listed on machines but are no longer detected on them.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,15 +21,4 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- The script runs SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.
-
-
-
-
-
-
-
-
-
-
-
+- The script runs a SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.

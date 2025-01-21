@@ -8,9 +8,10 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview helps you audit UAC status on machines with the help of a script @UAC Status
+This dataview helps you audit the UAC status on machines with the help of a script.
 
 ## Dependencies
 
@@ -18,22 +19,9 @@ This dataview helps you audit UAC status on machines with the help of a script @
 
 ## Columns
 
-| Column                 | Description                                 |
-|-----------------------|---------------------------------------------|
-| Client Name           | Displays the name of the client             |
-| Machine Name          | Displays the name of the machine            |
-| Location Name         | Displays the name of the location           |
-| User Account Control   | Displays the status of UAC on machines      |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                  | Description                                 |
+|------------------------|---------------------------------------------|
+| Client Name            | Displays the name of the client             |
+| Machine Name           | Displays the name of the machine            |
+| Location Name          | Displays the name of the location           |
+| User Account Control    | Displays the status of UAC on machines      |

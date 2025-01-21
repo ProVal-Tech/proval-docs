@@ -8,9 +8,10 @@ tags: ['patching', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script will utilize the LSU Client powershell module to install any updates that are both applicable and silently installable on any Lenovo machine whose battery is currently not discharging.
+This script will utilize the LSU Client PowerShell module to install any updates that are both applicable and silently installable on any Lenovo machine whose battery is currently not discharging.
 
 CW RMM implementation of [Invoke-LSUClientUpdate](<../../powershell/Invoke-LsuClientUpdate.md>) agnostic script.
 
@@ -26,7 +27,7 @@ CW RMM implementation of [Invoke-LSUClientUpdate](<../../powershell/Invoke-LsuCl
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/LSUClient---Install-Lenovo-Update/image_3.png)
 
@@ -34,7 +35,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Name:** `LSUClient - Install Lenovo Update`
 
-**Description:** `This Script will utilize the LSU Client powershell module to install any updates that are both applicable and silently installable on any Lenovo machine whose battery is currently not discharging.`
+**Description:** `This script will utilize the LSU Client PowerShell module to install any updates that are both applicable and silently installable on any Lenovo machine whose battery is currently not discharging.`
 
 **Category:** `Patching`
 
@@ -42,7 +43,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Image](../../../static/img/LSUClient---Install-Lenovo-Update/image_6.png)
 
@@ -76,6 +77,7 @@ $WorkingPath = $WorkingDirectory
 $LogPath = "$WorkingDirectory/$ProjectName-log.txt"
 $ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
+
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -89,6 +91,7 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
+
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -96,12 +99,13 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
+
 #region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -143,15 +147,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
 

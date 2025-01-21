@@ -8,6 +8,7 @@ tags: ['firefox', 'web-browser']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Adds an extension to the Firefox browser.
 
@@ -16,32 +17,23 @@ The name of the extension must be provided.
 
 ## Usage
 1. Gets the provided extension name information.
-2. Parses it to json
-3. Applies the values to the firefox extensions file.
-
-
+2. Parses it to JSON.
+3. Applies the values to the Firefox extensions file.
 
 ```powershell
 .\Register-FirefoxExtension.ps1 -ExtensionName "ublock-origin" -Mandate
 ```
-Installs the ublock-origin extension to firefox and removes the rights to remove it.
+This command installs the uBlock Origin extension to Firefox and removes the rights to remove it.
 
 ## Parameters
 | Parameter         | Alias | Required  | Default   | Type      | Description                               |
 | ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
-| `ExtensionName`   |       | True      |           | String    | The name of the extension you wish to install.                                          |
-| `Mandate`         |       | False     |           | Bool      | Removes the right to remove the extension.                                          |
-
+| `ExtensionName`   |       | True      |           | String    | The name of the extension you wish to install. |
+| `Mandate`         |       | False     |           | Bool      | Removes the right to remove the extension. |
 
 ## Output
+The output log can be found at:
 
-    .\Register-FirefoxExtension-log.txt
-
-
-
-
-
-
-
-
-
+```
+.\Register-FirefoxExtension-log.txt
+```

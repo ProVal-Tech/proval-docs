@@ -8,9 +8,10 @@ tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script sets custom Display scaling on existing as well as new users for windows machines.
+This script sets custom display scaling on existing as well as new users for Windows machines.
 
 ## Sample Run
 
@@ -24,25 +25,13 @@ This script sets custom Display scaling on existing as well as new users for win
 
 | Name            | Example | Required | Description                                                                                                                                                          |
 |-----------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ScalePercentage  | 150     | True     | Enter One of the scaling percentages from the below option:                                                                                                        |
-|                 |         |          | - 100 - to maximize the windows zoom to 100%                                                                                                                     |
-|                 |         |          | - 125 - to maximize the windows zoom to 125%                                                                                                                     |
-|                 |         |          | - 150 - to maximize the windows zoom to 150%                                                                                                                     |
-|                 |         |          | - 175 - to maximize the windows zoom to 175%                                                                                                                     |
-|                 |         |          | - 200 - to maximize the windows zoom to 200%                                                                                                                     |
+| ScalePercentage  | 150     | True     | Enter one of the scaling percentages from the options below:                                                                                                        |
+|                 |         |          | - 100 - to maximize the window zoom to 100%                                                                                                                     |
+|                 |         |          | - 125 - to maximize the window zoom to 125%                                                                                                                     |
+|                 |         |          | - 150 - to maximize the window zoom to 150%                                                                                                                     |
+|                 |         |          | - 175 - to maximize the window zoom to 175%                                                                                                                     |
+|                 |         |          | - 200 - to maximize the window zoom to 200%                                                                                                                     |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

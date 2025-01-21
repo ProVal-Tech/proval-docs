@@ -8,9 +8,10 @@ tags: ['disk', 'hyper-v', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the report of the Hyper-Vs disk record from the custom table [pvl_disk_record](<../tables/pvl_disk_record.md>).
+This dataview shows the report of the Hyper-V disk records from the custom table [pvl_disk_record](<../tables/pvl_disk_record.md>).
 
 ## Dependencies
 
@@ -19,32 +20,19 @@ This dataview shows the report of the Hyper-Vs disk record from the custom table
 
 ## Columns
 
-| Column           | Description                                             |
-|------------------|---------------------------------------------------------|
-| Client Name      | Client Name of the agent                                |
-| Location Name    | Location Name of the agent                              |
-| Computer Name    | Name of the agent                                      |
-| Operating System  | Operating system name of the agent                      |
-| LastContact      | Last contact of agent with RMM                          |
-| Volume           | Assigned letter of the drives                           |
-| Total Size       | Total size of the drive                                 |
-| Free Size        | Available free space of the drive                       |
-| FileSystem       | File System of the drive ex: NTFS                       |
-| Model            | Model of the drive                                      |
-| Missing          | Drive status whether detected in Automate or not        |
-| Internal         | Drive check whether internal or external/removable      |
-| SSD              | Disk check whether SSD or not                           |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column            | Description                                             |
+|-------------------|---------------------------------------------------------|
+| Client Name       | Client name of the agent                                |
+| Location Name     | Location name of the agent                              |
+| Computer Name     | Name of the agent                                      |
+| Operating System   | Operating system name of the agent                      |
+| Last Contact      | Last contact of the agent with RMM                      |
+| Volume            | Assigned letter of the drives                           |
+| Total Size        | Total size of the drive                                 |
+| Free Size         | Available free space of the drive                       |
+| File System       | File system of the drive (e.g., NTFS)                  |
+| Model             | Model of the drive                                      |
+| Missing           | Drive status indicating whether detected in Automate or not |
+| Internal          | Indicates whether the drive is internal or external/removable |
+| SSD               | Indicates whether the disk is SSD or not                |
 

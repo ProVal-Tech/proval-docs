@@ -8,9 +8,10 @@ tags: ['backup', 'report', 'storage', 'virtualization', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview stores the detail of VSS admin storage for all volumes.
+This dataview stores the details of VSS admin storage for all volumes.
 
 ## Dependencies
 
@@ -22,27 +23,13 @@ This dataview stores the detail of VSS admin storage for all volumes.
 
 | Column                   | Description                                   |
 |-------------------------|-----------------------------------------------|
-| Client Name             | Client Name of the agent                      |
-| Location Name           | Location Name of the agent                    |
-| Computer Name           | Computer Name of the agent                    |
+| Client Name             | Client name of the agent                      |
+| Location Name           | Location name of the agent                    |
+| Computer Name           | Computer name of the agent                    |
 | Operating System        | Operating system of the agent                 |
-| LastContact             | Last contact of the agent with the RMM       |
-| ShadowCopy Volume       | ShadowCopy volume letter                      |
-| VSS Used Storage        | vss storage occupied on the disk              |
-| VSS Allocated Storage   | Vss storage allocated on the disk             |
+| Last Contact            | Last contact of the agent with the RMM       |
+| Shadow Copy Volume      | Shadow copy volume letter                     |
+| VSS Used Storage        | VSS storage occupied on the disk              |
+| VSS Allocated Storage   | VSS storage allocated on the disk             |
 | VSS Max Storage         | VSS max storage provided                      |
-| Script Ran Date         | Script last ran date on the agent            |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Script Ran Date         | Date when the script last ran on the agent    |

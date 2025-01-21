@@ -8,41 +8,44 @@ tags: ['backup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Overview
 
-Restores a backed up registry key property or registry key recursively when backed up with Backup-RegistryValue.ps1.
+This document explains how to restore a backed-up registry key property or registry key recursively when backed up with `Backup-RegistryValue.ps1`.
 
 ## Requirements
 
-1. [EPM - Windows Configuration - Agnostic - Script - Backup-RegistryValue](<./Backup-RegistryValue.md>) must have been used to back up that value.
-2. Must be run with Admin Rights.
+1. The [EPM - Windows Configuration - Agnostic - Script - Backup-RegistryValue](<./Backup-RegistryValue.md>) must have been used to back up the registry value.
+2. The script must be run with Admin Rights.
 
 ## Process
 
-1. Gets needed information for the key properties (or keys and all associated properties) being restored.
-2. Restores that key property or key properties to their original registry location.
-3. Verifies that the two keys match.
-   1. If removal of backup is desired, removes backup key.
+1. Retrieve the necessary information for the key properties (or keys and all associated properties) being restored.
+2. Restore the key property or key properties to their original registry location.
+3. Verify that the two keys match.
+   1. If the removal of the backup is desired, remove the backup key.
 
 ## Payload Usage
+
+To restore the backed-up key property to its original registry location and remove the backed-up key property when finished, use the following command:
 
 ```
 Restore-RegistryValue.ps1 -Path "HKLM:\\Software\\_automation\\WindowsUpdate\\Windowsversion" -Name Windowsversion -RemoveOnRestore
 ```
-Restores the backed up key property to its original registry location and removes the backed up key property when finished.
+
+To restore the backed-up key property and all recursive keys and properties to their original registry locations, use the following command:
 
 ```
 Restore-RegistryValue.ps1 -Path "HKLM:\\Software\\_automation\\WindowsUpdate\\Windowsversion"
 ```
-Restores the backed up key property and all recursive keys and properties to their original registry locations.
 
 ### Parameters
 
 | Parameter                | Alias | Required | Default | Type   | Description                                     |
 |--------------------------|-------|----------|---------|--------|-------------------------------------------------|
-| `-Path`                  |       | True     |         | String | The path to the backed up registry key.         |
-| `-Name`                  |       | True     |         | String | The original path of the backed up key.         |
-| `-RemoveOnRestore`       |       | False    | False   | Bool   | Designates removal of backed up key after successful restore.|
+| `-Path`                  |       | True     |         | String | The path to the backed-up registry key.         |
+| `-Name`                  |       | True     |         | String | The original path of the backed-up key.         |
+| `-RemoveOnRestore`      |       | False    | False   | Bool   | Designates removal of the backed-up key after successful restore. |
 
 ## Output
 
@@ -55,20 +58,10 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 
 ## Locations
 
-| Payload                              | /repo/script/Restore-RegistryValue.ps1 |
-|--------------------------------------|------------------------------------------|
-| Automate                             |                                          |
-| ConnectWise RMM                      |                                          |
-| Kaseya                               |                                          |
-| Datto RMM                            |                                          |
-
-
-
-
-
-
-
-
-
-
-
+| Payload                              | Path                                      |
+|--------------------------------------|-------------------------------------------|
+| Restore Script                       | /repo/script/Restore-RegistryValue.ps1   |
+| Automate                             |                                           |
+| ConnectWise RMM                      |                                           |
+| Kaseya                               |                                           |
+| Datto RMM                            |                                           |

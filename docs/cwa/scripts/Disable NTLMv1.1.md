@@ -8,9 +8,10 @@ tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script disables the NTLMv1.1 protocol on the target windows machine.
+This script disables the NTLMv1.1 protocol on the target Windows machine.
 
 ## Target
 
@@ -23,15 +24,5 @@ Domain Controllers
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
 
 

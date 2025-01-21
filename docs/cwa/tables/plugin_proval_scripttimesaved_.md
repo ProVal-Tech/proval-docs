@@ -8,6 +8,7 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 These queries are used to generate tables and triggers to retain information about the total time saved per script in an Automate instance. Below are the explanations of the tables generated and their contents that are filled by the triggers.
@@ -58,15 +59,4 @@ N/A - These tables are populated with the associated triggers.
 
 ## SQL
 
-[https://proval.itglue.com/attachments/6824289](https://proval.itglue.com/attachments/6824289)
-
-
-
-
-
-
-
-
-
-
-
+[Download SQL Queries](https://proval.itglue.com/attachments/6824289)

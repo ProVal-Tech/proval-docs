@@ -8,9 +8,10 @@ tags: ['cluster', 'disk', 'hyper-v', 'performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview is built to show the cluster disk space audit report fetched from the table "pvl_cluster_volumes" where the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) performs the audit.
+This dataview is built to show the cluster disk space audit report fetched from the table **pvl_cluster_volumes**, where the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) performs the audit.
 
 ## Dependencies
 
@@ -24,7 +25,7 @@ This dataview is built to show the cluster disk space audit report fetched from 
 | Location                                 | Location name of the agent                                               |
 | Computer                                 | The computer name of the agent                                           |
 | Operating System                         | The operating system name of the agent                                   |
-| LastContact                              | Last contact of the agent with the RMM tool                             |
+| Last Contact                             | Last contact of the agent with the RMM tool                             |
 | Cluster Name                             | The cluster name of the Hyper-V cluster server                           |
 | Cluster Path                             | The cluster path of the Hyper-V cluster server                           |
 | Cluster Volume Total Size (GB)          | The cluster volume total size on the Hyper-V cluster server              |
@@ -32,16 +33,3 @@ This dataview is built to show the cluster disk space audit report fetched from 
 | Cluster Volume Used Space (GB)          | The cluster volume used size on the Hyper-V cluster server               |
 | Cluster Volume Free Percent              | The cluster volume available in percent of the Hyper-V cluster server    |
 | Script Last Run Time                     | Script last run time when the latest audit was done on the Hyper-V cluster server. |
-
-
-
-
-
-
-
-
-
-
-
-
-

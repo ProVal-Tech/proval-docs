@@ -8,9 +8,10 @@ tags: ['uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script removes the `Winget Update All [System]` and `Winget Update All [Logged on User]` tasks created by the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<./Scheduled Task - Create - Winget Update All Autofix.md>) script from the windows 10 and 11 machines.
+The script removes the `Winget Update All [System]` and `Winget Update All [Logged on User]` tasks created by the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<./Scheduled Task - Create - Winget Update All Autofix.md>) script from Windows 10 and 11 machines.
 
 ## Sample Run
 
@@ -25,22 +26,9 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 | Name                          | Type      | Section | Description                                           |
 |-------------------------------|-----------|---------|-------------------------------------------------------|
-| Winget_update_all_task_created | Check-Box | Default | The script will un-mark this EDF after removing the tasks. |
+| Winget_update_all_task_created | Check-Box | Default | The script will unmark this EDF after removing the tasks. |
 
 ## Output
 
 - Script log
 - Extra Data Field
-
-
-
-
-
-
-
-
-
-
-
-
-

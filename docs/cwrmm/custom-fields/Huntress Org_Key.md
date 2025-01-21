@@ -8,11 +8,12 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Custom field is to be filled with Huntress Organization Key. It is being utilized by [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task. Basically the Client Name.
+This custom field is to be filled with the Huntress Organization Key. It is utilized by the [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task, which essentially corresponds to the Client Name.
 
-# Create the Custom Field
+## Create the Custom Field
 
 ![Image 1](../../../static/img/Huntress-Org_Key/image_1.png)
 
@@ -21,17 +22,5 @@ This Custom field is to be filled with Huntress Organization Key. It is being ut
 **Name:** Huntress Org_Key  
 **Type:** Text Box  
 **Level:** Company  
-**Description:** Huntress Organization Key. Organization Keys are used to associate a Huntress Agent into a grouping called Huntress Organizationz. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
+**Description:** The Huntress Organization Key is used to associate a Huntress Agent with a grouping called Huntress Organizations. The Organization Key is typically a short, user-defined identifier that is required for agent installation.  
 **Editable:** Yes  
-
-
-
-
-
-
-
-
-
-
-
-

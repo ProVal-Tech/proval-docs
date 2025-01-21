@@ -8,9 +8,10 @@ tags: ['application', 'office', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview will display whether the supported versions of Click To Run `Microsoft 365 Apps / Microsoft Office` are updated to their latest released build or not. Additionally, it displays the recent execution of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script against the machine.
+The dataview will display whether the supported versions of Click To Run `Microsoft 365 Apps / Microsoft Office` are updated to their latest released build. Additionally, it displays the recent execution of the [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script against the machine.
 
 ## Dependencies
 
@@ -21,9 +22,9 @@ The dataview will display whether the supported versions of Click To Run `Micros
 
 | Column                | Description                                             |
 |----------------------|---------------------------------------------------------|
-| Clientid             | Clientid (Hidden)                                      |
-| Locationid           | Locationid (Hidden)                                    |
-| Computerid           | Computerid (Hidden)                                    |
+| Clientid             | Client ID (Hidden)                                     |
+| Locationid           | Location ID (Hidden)                                   |
+| Computerid           | Computer ID (Hidden)                                   |
 | Client               | Client Name                                            |
 | Location             | Location Name                                          |
 | Computer             | Computer Name                                          |
@@ -33,18 +34,5 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Application Name     | Name of the Application                                 |
 | Current Version      | Current Installed version of the application           |
 | Required Version     | Required Version to install                             |
-| Update Status        | Updated/Out Of Date                                    |
+| Update Status        | Updated / Out Of Date                                  |
 | Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script |
-
-
-
-
-
-
-
-
-
-
-
-
-

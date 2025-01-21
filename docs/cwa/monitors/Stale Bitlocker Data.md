@@ -8,6 +8,7 @@ tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will look for agents where Bitlocker is enabled and data about the keys has not been gathered for 30 days.
@@ -22,16 +23,3 @@ This script should be run as an autofix.
 ## Target
 
 Windows Machine
-
-
-
-
-
-
-
-
-
-
-
-
-

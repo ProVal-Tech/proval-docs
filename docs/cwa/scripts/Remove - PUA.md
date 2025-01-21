@@ -3,11 +3,12 @@ id: 'dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf'
 title: 'CWA Implementation of Remove-PUA'
 title_meta: 'CWA Implementation of Remove-PUA'
 keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit']
-description: 'This document provides a detailed overview of the CWA implementation of the Remove-PUA script, including file hashes, sample runs, user parameters, and supported bloatware for effective uninstallation of unwanted applications.'
+description: 'This document provides a detailed overview of the CWA implementation of the Remove-PUA script, including file hashes, sample runs, user parameters, and supported bloatware for the effective uninstallation of unwanted applications.'
 tags: ['uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 A CWA implementation of the agnostic script [Remove-PUA](<../../powershell/Remove-PUA.md>). Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview.
@@ -28,22 +29,22 @@ A CWA implementation of the agnostic script [Remove-PUA](<../../powershell/Remov
 
 ## Sample Run
 
-To fetch the list of installed Bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview:  
+To fetch the list of installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview:  
 ![Sample Run 1](../../../static/img/Remove---PUA/image_1.png)
 
-To fetch the list of installed Bloatware and email it to the user running the script:  
+To fetch the list of installed bloatware and email it to the user running the script:  
 ![Sample Run 2](../../../static/img/Remove---PUA/image_2.png)
 
-To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
+To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather`, and `Microsoft.People`:  
 ![Sample Run 3](../../../static/img/Remove---PUA/image_3.png)
 
-To remove all installed Bloatware supported by the script:  
+To remove all installed bloatware supported by the script:  
 ![Sample Run 4](../../../static/img/Remove---PUA/image_4.png)
 
-To remove all xboxfeatureapps, except xboxGameOverlay:  
+To remove all Xbox feature apps, except `xboxGameOverlay`:  
 ![Sample Run 5](../../../static/img/Remove---PUA/image_5.png)
 
-To remove all installed Bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather` and `Microsoft.People`:  
+To remove all installed bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather`, and `Microsoft.People`:  
 ![Sample Run 6](../../../static/img/Remove---PUA/image_6.png)
 
 ## Dependencies
@@ -55,21 +56,21 @@ To remove all installed Bloatware supported by the script except `Microsoft.Bing
 
 | Name          | Example                                          | Accepted Values                                                                                     | Required   | Description                                                                                                                                                                            |
 |---------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ListBloatware | 1                                                | - 1- 2                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview.`2`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview and send the list to the user running the script. |
-| Remove        | Microsoft.BingNews,Microsoft.BingWeather,Microsoft.People |                                                                                                     | Partially  | The name(s) of the application or applications you wish to uninstall                                                                                                               |
+| ListBloatware | 1                                                | - 1- 2                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview. `2`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview and send the list to the user running the script. |
+| Remove        | Microsoft.BingNews, Microsoft.BingWeather, Microsoft.People |                                                                                                     | Partially  | The name(s) of the application or applications you wish to uninstall                                                                                                               |
 | Remove All    | 1                                                |                                                                                                     | Partially  | Set it to 1 to remove all bloatware by category or all found bloatware with or without exceptions                                                                                   |
-| Category      | XboxFeaturesApps                                | - MsftBloatApps- ThirdPartyBloatApps- WindowsStoreApps- XboxFeaturesApps- NonAppxApps | False      | Used with RemoveAll will filter bloatware to a certain category allowing you to select just a specific category of bloatware                                                        |
+| Category      | XboxFeaturesApps                                | - MsftBloatApps - ThirdPartyBloatApps - WindowsStoreApps - XboxFeaturesApps - NonAppxApps | False      | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware                                                        |
 | Except        | xboxGameOverlay                                 |                                                                                                     | False      | Used with RemoveAll or Category to remove all except some item(s) from a category or all together                                                                                   |
 
 ## Emailing
 
-The script is designed to send the list of installed Bloatware to the user running the script if the `ListBloatware` parameter is set to `2`.
+The script is designed to send the list of installed bloatware to the user running the script if the `ListBloatware` parameter is set to `2`.
 
 **Sample Email:**  
 ![Sample Email](../../../static/img/Remove---PUA/image_7.png)
 
 **Sample CSV File:**  
-**![Sample CSV](../../../static/img/Remove---PUA/image_8.png)**
+![Sample CSV](../../../static/img/Remove---PUA/image_8.png)
 
 ## Output
 
@@ -117,15 +118,3 @@ The script is designed to send the list of installed Bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
-
-
-
-
-
-
-
-
-
-
-
-

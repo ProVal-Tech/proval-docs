@@ -8,6 +8,7 @@ tags: ['hyper-v', 'performance', 'virtualization', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview displays auditing information about Hyper-V virtual machines.
@@ -20,26 +21,13 @@ This dataview displays auditing information about Hyper-V virtual machines.
 
 | Column                     | Description                                                        |
 |---------------------------|--------------------------------------------------------------------|
-| Client Name               | Display the name of the client associated to the machine           |
-| Location Name             | The name of the locations associated to the machine                |
-| Host Name                 | Display the name of the Host machine.                              |
-| VM Name                   | Display the name of the Virtual machine.                           |
-| VM State                  | Display the state of the Virtual machine.                          |
-| VM Status                 | Display the status of the Virtual machine.                         |
-| VM Version                | Display the version of the Virtual machine.                        |
-| Automatic Start Action     | Display the status of the automatic start action of the Virtual machine. |
-| Automatic Stop Action      | Display the status of the automatic stop action of the Virtual machine.  |
-| Automatic Start Delay      | Display the automatic start delay time of the Virtual machine.    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name               | Displays the name of the client associated with the machine        |
+| Location Name             | Displays the name of the locations associated with the machine     |
+| Host Name                 | Displays the name of the host machine.                             |
+| VM Name                   | Displays the name of the virtual machine.                          |
+| VM State                  | Displays the state of the virtual machine.                         |
+| VM Status                 | Displays the status of the virtual machine.                        |
+| VM Version                | Displays the version of the virtual machine.                       |
+| Automatic Start Action     | Displays the status of the automatic start action of the virtual machine. |
+| Automatic Stop Action      | Displays the status of the automatic stop action of the virtual machine.  |
+| Automatic Start Delay      | Displays the automatic start delay time of the virtual machine.   |

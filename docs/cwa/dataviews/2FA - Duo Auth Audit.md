@@ -8,75 +8,69 @@ tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will provide an overview of the agents configured with Duo Multifactor Authentication. This data is specifically related to the Duo plugin for Automate. This audit will not work for any SSO accounts.
+This dataview provides an overview of the agents configured with Duo Multifactor Authentication. This data is specifically related to the Duo plugin for Automate. Please note that this audit will not work for any SSO accounts.
 
 ## Dependencies
 
-DUO Plugin must be installed and configured.
+The DUO Plugin must be installed and configured.
 
 ## Columns
 
 | Column              | Description                                                                                       |
 |---------------------|---------------------------------------------------------------------------------------------------|
 | Username            | The username of the Automate user                                                                |
-| Duo Auth Enabled    | A Yes|No column indicating whether or not the Automate user account is using Duo MFA.             |
-| Userid             | User id of the users.                                                                             |
+| Duo Auth Enabled    | A Yes/No column indicating whether the Automate user account is using Duo MFA.                   |
+| Userid             | User ID of the users.                                                                             |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   t.userid, 
   t.username, 
   t.`DUO Auth Enabled` 
-from 
+FROM 
   ( 
-    Select 
-      users.userid as `userid`, 
-      users.name as `UserName`, 
-      case when ( 
-        select 
-          value 
-        from 
-          plugin_duo_settings 
-        where 
-          settingname = 'duoenabledcc' 
-      ) = 'false' then 'false' when ( 
-        select 
-          value 
-        from 
-          plugin_duo_settings 
-        where 
-          settingname = 'duotoggleallusers' 
-      )= '1' then 'true' when find_in_set( 
-        convert(users.`userid`, char), 
-        ( 
-          select 
+    SELECT 
+      users.userid AS `userid`, 
+      users.name AS `UserName`, 
+      CASE 
+        WHEN ( 
+          SELECT 
             value 
-          from 
+          FROM 
             plugin_duo_settings 
-          where 
-            settingname = 'duouserlist' 
-        ) 
-      ) > 0 then 'true' else 'false' end as `Duo Auth Enabled` 
+          WHERE 
+            settingname = 'duoenabledcc' 
+        ) = 'false' THEN 'false' 
+        WHEN ( 
+          SELECT 
+            value 
+          FROM 
+            plugin_duo_settings 
+          WHERE 
+            settingname = 'duotoggleallusers' 
+        ) = '1' THEN 'true' 
+        WHEN FIND_IN_SET( 
+          CONVERT(users.`userid`, CHAR), 
+          ( 
+            SELECT 
+              value 
+            FROM 
+              plugin_duo_settings 
+            WHERE 
+              settingname = 'duouserlist' 
+          ) 
+        ) > 0 THEN 'true' 
+        ELSE 'false' 
+      END AS `Duo Auth Enabled` 
     FROM 
       Users 
     WHERE 
-      users.Name \\<> 'root' 
-      and users.userid > 0 
+      users.Name <> 'root' 
+      AND users.userid > 0 
   ) t
 ```
-
-
-
-
-
-
-
-
-
-
-
-

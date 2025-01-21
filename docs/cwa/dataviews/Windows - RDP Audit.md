@@ -8,11 +8,12 @@ tags: ['networking', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview gives information about if RDP is enabled or disabled on an agent based on the dependent role.
+This dataview provides information about whether RDP is enabled or disabled on an agent based on the dependent role.
 
-Note: This dataview is a role dependent dataview so it will not reflect changed status immediately.
+**Note:** This dataview is role-dependent, so it will not reflect changed status immediately.
 
 ## Dependencies
 
@@ -22,23 +23,9 @@ Note: This dataview is a role dependent dataview so it will not reflect changed 
 
 | Column              | Description                                 |
 |---------------------|---------------------------------------------|
-| Client Name         | Client Name of an agent                     |
-| Location Name       | Location Name of an agent                   |
+| Client Name         | Client name of an agent                     |
+| Location Name       | Location name of an agent                   |
 | Computer Name       | Agent name                                  |
-| Operating System    | Operating System of an agent                |
-| Agent Status        | Agent status whether offline or online      |
-| RDP Status          | RDP status whether enabled or disabled      |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Operating System    | Operating system of an agent                |
+| Agent Status        | Agent status, whether offline or online     |
+| RDP Status          | RDP status, whether enabled or disabled     |

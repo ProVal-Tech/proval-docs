@@ -8,9 +8,10 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table will store the data to be displayed in the Redirection-Audit Dataview, it is populated by the Audit - GPO Redirection Settings script.
+This table will store the data to be displayed in the Redirection-Audit Dataview. It is populated by the Audit - GPO Redirection Settings script.
 
 ## Dependencies
 
@@ -26,8 +27,8 @@ This table will store the data to be displayed in the Redirection-Audit Dataview
 | User           | VARCHAR(50)   | References the user account that the data was found on.|
 | PropertyName   | VARCHAR(100)  | References the specific property that is holding the data. |
 | SettingType    | VARCHAR(25)   | The type of setting being shown (Global or Folder).    |
-| Description     | TEXT          | The description of what the property is setting if known. |
-| Value          | TEXT          | The Value assigned to the Property.                     |
+| Description     | TEXT          | The description of what the property is setting, if known. |
+| Value          | TEXT          | The value assigned to the property.                     |
 
 ## SQL
 
@@ -43,15 +44,3 @@ CREATE TABLE IF NOT EXISTS `@TableName@` (
 )
 COLLATE='utf8_general_ci';
 ```
-
-
-
-
-
-
-
-
-
-
-
-

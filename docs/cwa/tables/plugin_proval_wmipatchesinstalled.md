@@ -8,9 +8,10 @@ tags: ['wmi']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores individual patch information per computer and their installation status from WMI (outside of Automate patching).
+This document stores individual patch information per computer and their installation status from WMI (outside of Automate patching).
 
 ## Dependencies
 
@@ -27,15 +28,3 @@ Stores individual patch information per computer and their installation status f
 | Title       | VARCHAR  | The title of the audited patch.                      |
 | Result      | VARCHAR  | The current installation status of the audited patch.|
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
-
-
-
-
-
-
-
-
-
-
-
-

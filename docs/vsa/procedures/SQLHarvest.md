@@ -8,19 +8,7 @@ tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
 
-Detect and Get Information About Installed SQL (Reg key)  
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
-
+Detect and Get Information About Installed SQL (Reg key)

@@ -8,9 +8,10 @@ tags: ['patching', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Will attempt to "neuter" the update orchestrator solution on endpoints by renaming/removing a directory.
+This script will attempt to "neuter" the update orchestrator solution on endpoints by renaming or removing a directory.
 
 ## Manual Run
 
@@ -29,13 +30,13 @@ To implement this script, please create a new "PowerShell" style script in the s
 ![Image 1](../../../static/img/Update-Orchestrator-Bouncer/image_6.png)  
 ![Image 2](../../../static/img/Update-Orchestrator-Bouncer/image_7.png)  
 
-Name: Update Orchestrator Bouncer  
-Description: Will attempt to "neuter" the update orchestrator solution on endpoints by renaming/removing a directory.  
-Category: Patching  
+- **Name:** Update Orchestrator Bouncer  
+- **Description:** Will attempt to "neuter" the update orchestrator solution on endpoints by renaming or removing a directory.  
+- **Category:** Patching  
 
 ![Image 3](../../../static/img/Update-Orchestrator-Bouncer/image_8.png)  
 
-# Script
+## Script
 
 ![Image 4](../../../static/img/Update-Orchestrator-Bouncer/image_9.png)  
 Paste the below PowerShell script directly into the "Script" field.
@@ -45,7 +46,7 @@ $RebootPath = 'C://Windows//System32//Tasks//Microsoft//Windows//UpdateOrchestra
 $BakPath = 'C://Windows//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak'
 if (Test-Path $RebootPath) {
     if (Test-Path $BakPath) {
-        Remove-Item -path $BakPath -Force -Confirm:$False
+        Remove-Item -Path $BakPath -Force -Confirm:$False
     }
     Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False
     return 'Renamed the Reboot File'
@@ -63,14 +64,3 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

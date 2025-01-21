@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 A brief summary of what this script is used for and any important notes about how to run the script.
@@ -50,21 +51,10 @@ Describe the steps the script performs to accomplish the desired task. Note that
 
 The location and method by which this script returns data.
 
-Ex: 
+Examples:
 
 - Script log
 - Script state
 - Local file on computer
 - Dataview
 - etc.
-
-
-
-
-
-
-
-
-
-
-

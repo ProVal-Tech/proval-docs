@@ -8,9 +8,10 @@ tags: ['patching', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Script used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings. CW RMM implementation of [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>) agnostic script.
+This script is used to reset Windows update settings. Running the script does not guarantee resolution of any issues with Windows updates; it simply attempts to reset the settings. This is a ConnectWise RMM implementation of the [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>) agnostic script.
 
 ## Sample Run
 
@@ -28,20 +29,20 @@ Script used to reset Windows update settings. It is not necessary that running t
 
 | Name     | Example | Required | Type  | Description                                                                 |
 |----------|---------|----------|-------|-----------------------------------------------------------------------------|
-| SfcScan  | 0/1     | False    | Flag  | This flag toggles an optional sfc scan.                                    |
+| SfcScan  | 0/1     | False    | Flag  | This flag toggles an optional SFC scan.                                    |
 
 ![User Parameters Image](../../../static/img/Repair-Windows-Update/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/Repair-Windows-Update/image_5.png)
 
 ![Task Creation Image 2](../../../static/img/Repair-Windows-Update/image_6.png)
 
-**Name:** `Repair Windows Update`  
-**Description:** `Script used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings.`  
+**Name:** `Repair Windows Update`  \
+**Description:** `Script used to reset Windows update settings. Running the script does not guarantee resolution of any issues with Windows updates; it simply attempts to reset the settings.`  \
 **Category:** `Patching`  
 
 ![Task Creation Image 3](../../../static/img/Repair-Windows-Update/image_7.png)
@@ -66,7 +67,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Task Image 1](../../../static/img/Repair-Windows-Update/image_11.png)
 
@@ -91,7 +92,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```
 #region parameters
 $SfcScan = '@SfcScan@'
-if ( $SfcScan -match '1|Yes|True' ) {
+if ($SfcScan -match '1|Yes|True') {
     $Parameters = @{
         SfcScan = $true
     }
@@ -129,11 +130,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -175,15 +176,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

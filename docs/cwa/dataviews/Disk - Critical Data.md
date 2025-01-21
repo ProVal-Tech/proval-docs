@@ -8,9 +8,10 @@ tags: ['disk']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview displays the Disk information gathered from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>). This is called from the [Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>) automate script and stores that data in the automate custom table [plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>).
+This Dataview displays the disk information gathered from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>). This is called from the [Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>) automation script and stores that data in the custom table [plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>).
 
 ## Dependencies
 
@@ -22,51 +23,39 @@ This Dataview displays the Disk information gathered from [EPM - Disk - Agnostic
 
 | Column                | Description                                                              |
 |----------------------|--------------------------------------------------------------------------|
-| Client               | The name of the Client for the displayed computer                        |
+| Client               | The name of the client for the displayed computer                        |
 | ComputerName         | The name of the computer                                                 |
-| DriveID              | The ID of the Drive                                                     |
+| DriveID              | The ID of the drive                                                      |
 | Model                | The drive model                                                         |
-| Manufacturer         | The Manufacturer of the drive                                           |
-| Firmware             | The Drives' firmware                                                    |
+| Manufacturer         | The manufacturer of the drive                                           |
+| Firmware             | The drive's firmware                                                    |
 | SerialNumber         | The serial number of the drive                                          |
 | DiskSize             | The size of the drive                                                   |
-| BufferSize           | The buffer size of the drive if known, unknown if unknown              |
-| Rotation Rate        | The rotation rate of the drive, will display SSD if no rotation rate   |
-| Interface            | The drives' interface                                                   |
-| Transfer Mode        | The drives' transfer mode                                               |
-| PowerOnCount         | The drives' power on count                                              |
-| PowerOnHours         | The drives' power on hours                                              |
-| HostReads            | The drives' host reads                                                 |
-| HowtWrites           | The drives' host writes                                                |
-| Temperature          | The drives' temperature                                                |
-| HealthStatus         | The drives' health status                                              |
-| Features             | The drives' features                                                   |
-| APMLevel             | The drives' APM level                                                  |
-| AAMLevel             | The drives' AAM level                                                  |
-| CriticalWarnings      | The number of critical warnings for this drive                          |
-| CompositeTemperature  | The drives' composite temperature                                       |
-| AvailableSpare       | The drives' available spare value                                       |
-| AvailableSpareThreshold | The drives' available spare threshold value                             |
-| PercentageUsed       | The percent of the drive being used                                     |
+| BufferSize           | The buffer size of the drive if known; unknown if not known            |
+| Rotation Rate        | The rotation rate of the drive; will display SSD if no rotation rate   |
+| Interface            | The drive's interface                                                   |
+| Transfer Mode        | The drive's transfer mode                                               |
+| PowerOnCount         | The drive's power-on count                                              |
+| PowerOnHours         | The drive's power-on hours                                              |
+| HostReads            | The drive's host reads                                                  |
+| HostWrites           | The drive's host writes                                                 |
+| Temperature          | The drive's temperature                                                 |
+| HealthStatus         | The drive's health status                                               |
+| Features             | The drive's features                                                    |
+| APMLevel             | The drive's APM level                                                  |
+| AAMLevel             | The drive's AAM level                                                  |
+| CriticalWarnings     | The number of critical warnings for this drive                          |
+| CompositeTemperature  | The drive's composite temperature                                       |
+| AvailableSpare       | The drive's available spare value                                       |
+| AvailableSpareThreshold | The drive's available spare threshold value                             |
+| PercentageUsed       | The percentage of the drive being used                                   |
 | DataUnitsRead        | The amount of data units read by the drive                              |
 | DataUnitsWritten     | The amount of data units written by the drive                           |
-| HostReadCommands     | The amount of host read commands logged on this drive                   |
-| HostWriteCommands    | The amount of host write commands logged on this drive                  |
-| ControllerBusyTime   | The total amount of time the controller logged as busy                  |
-| UnsafeShutdowns      | The amount of unsafe shutdowns logged on the drive                      |
-| IntegrityErrors      | The amount of integrity errors logged on the drive                      |
-| InformationalLogEntries | The amount of informational log entries logged on the drive           |
-| DateUpdated          | The Date that this information was gathered                             |
-
-
-
-
-
-
-
-
-
-
-
-
+| HostReadCommands     | The number of host read commands logged on this drive                   |
+| HostWriteCommands    | The number of host write commands logged on this drive                  |
+| ControllerBusyTime   | The total amount of time the controller was logged as busy              |
+| UnsafeShutdowns      | The number of unsafe shutdowns logged on the drive                      |
+| IntegrityErrors      | The number of integrity errors logged on the drive                      |
+| InformationalLogEntries | The number of informational log entries logged on the drive           |
+| DateUpdated          | The date that this information was gathered                             |
 

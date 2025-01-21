@@ -8,6 +8,7 @@ tags: ['backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores the recovery key from the script [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>).
@@ -25,16 +26,3 @@ Stores the recovery key from the script [Bitlocker - Key Retrieval](<../scripts/
 | DriveID      | INT     | The associated drive of the recovery key.          |
 | RecoveryKey  | CHAR    | The BitLocker recovery key.                         |
 | LastUpdated  | DATETIME| The last time the agent recovery key was audited.  |
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview contains information about Windows 10 build information and patch policies.
+This document contains information about Windows 10 build information and patch policies.
 
 ## Dependencies
 
@@ -23,26 +24,13 @@ This dataview contains information about Windows 10 build information and patch 
 | Client                    | Client Name                                         |
 | Location                  | Location Name                                       |
 | Computer                  | Computer Name                                       |
-| ReleaseId                 | Computer windows 10 build info                      |
+| ReleaseId                 | Windows 10 build information                        |
 | Last Contact              | Last contact with RMM                               |
-| Online Last 30 Days       | Whether online from last 30 days or not            |
+| Online Last 30 Days       | Whether online in the last 30 days or not          |
 | Has Patch Policy          | Patch policy applied via CW Automate or not         |
-| LastPatched               | When agent was last patched via CW Automate         |
+| Last Patched              | When the agent was last patched via CW Automate     |
 | Operating System          | Operating System                                    |
 | Last Logged In User       | Last Logged In User                                 |
-| Days Since Last Patched   | Days Since Last Contact With RMM                    |
+| Days Since Last Patched   | Days since last contact with RMM                    |
 | Supported Till            | Support End Date                                    |
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
-
-
-
-
-
-
-
-
-
-
-
-
-

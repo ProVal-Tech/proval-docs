@@ -8,35 +8,36 @@ tags: ['office365', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview collects info of machines where Office 365 Update Channel is set and of which type like Current, Monthly, Semi-Annual or different type. Also, it shows if the O365 update channel is not set on the machine.
+This dataview collects information about machines where the Office 365 Update Channel is set and identifies the type, such as Current, Monthly, Semi-Annual, or another type. It also indicates if the Office 365 update channel is not set on the machine.
 
 ## Dependencies
 
 - @Office 365 Update Channel Set
 - @Office 365 Current Update Channel
-- @Office 354 Monthly Update Channel
-- @Office 365 Semi-Annual update Channel
+- @Office 365 Monthly Update Channel
+- @Office 365 Semi-Annual Update Channel
 
 ## Columns
 
 | Column                     | Description                                                      |
 |---------------------------|------------------------------------------------------------------|
 | Client                    | Displays the name of the client                                   |
-| ClientID                  | Displays the client ID                                           |
-| Location                  | Displays the location name                                       |
-| LocationID                | Displays the Location ID                                         |
-| Computer                  | Displays the computer name                                       |
-| ComputerID                | Displays the computer ID                                         |
-| OS                        | Displays the name of the operating system of the machine        |
+| ClientID                  | Displays the client ID                                            |
+| Location                  | Displays the location name                                        |
+| LocationID                | Displays the Location ID                                          |
+| Computer                  | Displays the computer name                                        |
+| ComputerID                | Displays the computer ID                                          |
+| OS                        | Displays the name of the operating system of the machine         |
 | Office 365 Update Channel  | Displays the name of the Office 365 Update Channel set on the machine |
 
 ## SQL Representation
 
-```
-Select 
-  Count(*) 
+```sql
+SELECT 
+  COUNT(*) 
 FROM 
   (
     SELECT 
@@ -47,91 +48,80 @@ FROM
       c.Name AS 'Computer', 
       c.OS AS 'OS', 
       c.ComputerID AS 'ComputerID', 
-      CASE WHEN c.computerid NOT IN(
-        SELECT 
-          computerid 
-        FROM 
-          `computerroledefinitions` 
-        WHERE 
-          roledefinitionid IN(
-            SELECT 
-              roledefinitionid 
-            FROM 
-              roledefinitions 
-            WHERE 
-              rolename = 'Office 365 Update Channel SET'
-          ) 
-          AND currentlydetected = '1'
-      ) THEN 'Update Not Set' 
-      WHEN c.computerid IN(
-        SELECT 
-          computerid 
-        FROM 
-          `computerroledefinitions` 
-        WHERE 
-          roledefinitionid IN(
-            SELECT 
-              roledefinitionid 
-            FROM 
-              roledefinitions 
-            WHERE 
-              rolename = 'Office 365 Semi-Annual Channel Update'
-          ) 
-          AND currentlydetected = '1'
-      ) THEN 'Semi-Annual Channel' 
-      WHEN c.computerid IN(
-        SELECT 
-          computerid 
-        FROM 
-          `computerroledefinitions` 
-        WHERE 
-          roledefinitionid IN(
-            SELECT 
-              roledefinitionid 
-            FROM 
-              roledefinitions 
-            WHERE 
-              rolename = 'Office 365 Currently Channel Update'
-          ) 
-          AND currentlydetected = '1'
-      ) THEN 'Current Channel' 
-      WHEN c.computerid IN(
-        SELECT 
-          computerid 
-        FROM 
-          `computerroledefinitions` 
-        WHERE 
-          roledefinitionid IN(
-            SELECT 
-              roledefinitionid 
-            FROM 
-              roledefinitions 
-            WHERE 
-              rolename = 'Office 365 Monthly Channel Update'
-          ) 
-          AND currentlydetected = '1'
-      ) THEN 'Monthly Channel' 
-      ELSE 'Non-Standard Channel' 
+      CASE 
+        WHEN c.ComputerID NOT IN (
+          SELECT 
+            ComputerID 
+          FROM 
+            `computerroledefinitions` 
+          WHERE 
+            RoleDefinitionID IN (
+              SELECT 
+                RoleDefinitionID 
+              FROM 
+                RoleDefinitions 
+              WHERE 
+                RoleName = 'Office 365 Update Channel SET'
+            ) 
+            AND CurrentlyDetected = '1'
+        ) THEN 'Update Not Set' 
+        WHEN c.ComputerID IN (
+          SELECT 
+            ComputerID 
+          FROM 
+            `computerroledefinitions` 
+          WHERE 
+            RoleDefinitionID IN (
+              SELECT 
+                RoleDefinitionID 
+              FROM 
+                RoleDefinitions 
+              WHERE 
+                RoleName = 'Office 365 Semi-Annual Channel Update'
+            ) 
+            AND CurrentlyDetected = '1'
+        ) THEN 'Semi-Annual Channel' 
+        WHEN c.ComputerID IN (
+          SELECT 
+            ComputerID 
+          FROM 
+            `computerroledefinitions` 
+          WHERE 
+            RoleDefinitionID IN (
+              SELECT 
+                RoleDefinitionID 
+              FROM 
+                RoleDefinitions 
+              WHERE 
+                RoleName = 'Office 365 Current Channel Update'
+            ) 
+            AND CurrentlyDetected = '1'
+        ) THEN 'Current Channel' 
+        WHEN c.ComputerID IN (
+          SELECT 
+            ComputerID 
+          FROM 
+            `computerroledefinitions` 
+          WHERE 
+            RoleDefinitionID IN (
+              SELECT 
+                RoleDefinitionID 
+              FROM 
+                RoleDefinitions 
+              WHERE 
+                RoleName = 'Office 365 Monthly Channel Update'
+            ) 
+            AND CurrentlyDetected = '1'
+        ) THEN 'Monthly Channel' 
+        ELSE 'Non-Standard Channel' 
       END AS `Office 365 Update Channel` 
     FROM 
-      computers c 
-      LEFT JOIN clients cl ON c.ClientID = cl.ClientID 
-      JOIN locations l ON c.LocationID = l.LocationID 
+      Computers c 
+      LEFT JOIN Clients cl ON c.ClientID = cl.ClientID 
+      JOIN Locations l ON c.LocationID = l.LocationID 
     WHERE 
-      c.os LIKE '%Window%' 
+      c.OS LIKE '%Windows%' 
     GROUP BY 
       c.ComputerID
   ) AS dt
 ```
-
-
-
-
-
-
-
-
-
-
-
-

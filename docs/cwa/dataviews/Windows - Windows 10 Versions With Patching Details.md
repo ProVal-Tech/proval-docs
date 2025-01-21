@@ -8,9 +8,10 @@ tags: ['patching', 'reboot', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows all Windows 10 machines alongside their versions and patching information and setup.
+This dataview shows all Windows 10 machines alongside their versions, patching information, and setup.
 
 ## Dependencies
 
@@ -23,26 +24,14 @@ None
 | Client Name     | Client Name                                              |
 | Machine Name    | Machine Name                                             |
 | OS              | OS installed on the machine                              |
-| OS Version      | The Major OS version number                              |
-| clientid        | Client ID in Automate                                    |
-| computerid      | Computer ID in Automate                                  |
-| locationid      | Location ID in Automate                                  |
-| Release ID      | The easy-read format of the Version name                |
-| Install Policy   | Shows the Microsoft Patch Install Policy set on the machine |
-| Reboot Policy    | Shows the Reboot policy set on the machine               |
-| wuaversion      | Shows the full Windows Update Agent (WUA) install on the machine |
-| Reboot Pending   | Shows the reboot pending flag if a reboot pending is detected |
+| OS Version      | The major OS version number                              |
+| Client ID       | Client ID in Automate                                    |
+| Computer ID     | Computer ID in Automate                                  |
+| Location ID     | Location ID in Automate                                  |
+| Release ID      | The easy-read format of the version name                |
+| Install Policy  | Shows the Microsoft Patch Install Policy set on the machine |
+| Reboot Policy    | Shows the reboot policy set on the machine               |
+| WUA Version     | Shows the full Windows Update Agent (WUA) install on the machine |
+| Reboot Pending   | Indicates if a reboot is pending                         |
 | Last Contact     | Last time the machine checked into Automate              |
 | Uptime          | Time in seconds since the machine has restarted the kernel |
-
-
-
-
-
-
-
-
-
-
-
-

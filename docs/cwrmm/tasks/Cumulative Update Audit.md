@@ -8,9 +8,10 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Executes a PowerShell script to validate the full version of the OS and compares that with Microsoft's database of Windows 10/11 Cumulative Updates to validate which cumulative the device has. The data is then formatted and stored in [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>) Custom Field for further auditing and monitoring purposes.
+This document executes a PowerShell script to validate the full version of the OS and compares it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>) for further auditing and monitoring purposes.
 
 ## Sample Run
 
@@ -19,7 +20,7 @@ Executes a PowerShell script to validate the full version of the OS and compares
 
 ## Dependencies
 
-[CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
+- [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
 
 ## Variables
 
@@ -30,14 +31,14 @@ Executes a PowerShell script to validate the full version of the OS and compares
 
 ## Implementation
 
-Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
+Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>).
 
 ### Create Script
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
 **Name:** Cumulative Update Audit  
-**Description:** Will run a PowerShell script to validate the full version of the OS and compare that with Microsoft's database of Windows 10/11 Cumulative Updates to validate which cumulative the device has.  
+**Description:** This script will run a PowerShell script to validate the full version of the OS and compare it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has.  
 **Category:** Custom  
 
 ![Script Editor](../../../static/img/Cumulative-Update-Audit/image_14.png)
@@ -52,7 +53,7 @@ Start by adding a row. You can do this by clicking the "Add Row" button at the b
 
 ![Set User Variable](../../../static/img/Cumulative-Update-Audit/image_16.png)
 
-Type `Threshold_Days` for Variable Name and `75` for the value. The value is the number of days to consider the latest installed Cumulative Update as obsolete. This threshold can be modified as needed.
+Type `Threshold_Days` for Variable Name and `75` for the value. This value represents the number of days to consider the latest installed Cumulative Update as obsolete. This threshold can be modified as needed.
 
 The script will return `Failed` in the Custom Field if the most recently installed Cumulative Update on the computer is older than the days stored in this variable.
 
@@ -60,7 +61,8 @@ The script will return `Failed` in the Custom Field if the most recently install
 
 #### Row 2 Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Cumulative-Update-Audit/image_18.png) ![PowerShell Script 2](../../../static/img/Cumulative-Update-Audit/image_19.png)
+![PowerShell Script](../../../static/img/Cumulative-Update-Audit/image_18.png) 
+![PowerShell Script 2](../../../static/img/Cumulative-Update-Audit/image_19.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
 
@@ -141,8 +143,8 @@ if ( !( $osinfo.Name -Match 'Server 2022' ) ) {
         $ReleaseDate = $($($Kbhtml -split '&lt;td&gt;' -split '&lt;/td&gt;') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $KBid = ''
     } else {
-        $KBid = $($($KBhtml -split '/"&gt;' -split '&lt;/a') -Match 'KB[0-9]{7}').Trim()
-        $SupportURL = $($($Kbhtml -Split '=/"' -split '/"') -match 'https').Trim()
+        $KBid = $($($KBhtml -split '/\"&gt;' -split '&lt;/a') -Match 'KB[0-9]{7}').Trim()
+        $SupportURL = $($($Kbhtml -Split '=/\"' -split '/\"') -match 'https').Trim()
         $ReleaseDate = $($($Kbhtml -split '&lt;td&gt;' -split '&lt;/td&gt;') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $PatchInfoHTML = (Invoke-WebRequest -Uri $SupportUrl -UseBasicParsing).Links.OuterHTML
         $PatchInfoHTML = ($PatchInfoHTML -Match $KBid)[0]
@@ -177,7 +179,7 @@ return "$($status). $($CUInfo.LastInstalledCU). Version: $($CUInfo.OSBuild). Dat
 
 Save and move to the next row.
 
-#### Row 3 function: Script Log
+#### Row 3 Function: Script Log
 
 ![Script Log](../../../static/img/Cumulative-Update-Audit/image_20.png)
 
@@ -187,7 +189,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 #### Row 4 Function: Set Custom Field
 
-Add a new row by clicking on Add row button.
+Add a new row by clicking on the "Add Row" button.
 
 ![Set Custom Field](../../../static/img/Cumulative-Update-Audit/image_22.png)
 
@@ -195,18 +197,18 @@ Select `Set Custom Field` Function.
 
 ![Select Custom Field](../../../static/img/Cumulative-Update-Audit/image_23.png)
 
-When you select `set custom field`, that will open up a new window.
+When you select `Set Custom Field`, a new window will open.
 
 ![Custom Field Window](../../../static/img/Cumulative-Update-Audit/image_24.png)
 
-In this window, search for `Latest Cumulative Update` field.
+In this window, search for the `Latest Cumulative Update` field.
 
 **Custom Field:** Latest Cumulative Update  
 **Value:** %Output%
 
 ![Custom Field Value](../../../static/img/Cumulative-Update-Audit/image_25.png)
 
-Once all items are added, please save the task. The final task should look like the below screenshot.
+Once all items are added, please save the task. The final task should look like the screenshot below.
 
 ![Final Task](../../../static/img/Cumulative-Update-Audit/image_26.png)
 
@@ -214,10 +216,10 @@ Once all items are added, please save the task. The final task should look like 
 
 It is suggested to run the Task once per month against Windows computers.
 
-- Go to `Automation` > `Tasks.`
-- Search for `Cumulative Update Audit` Task.
-- Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+1. Go to `Automation` > `Tasks`.
+2. Search for the `Cumulative Update Audit` Task.
+3. Select the concerned task.
+4. Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task](../../../static/img/Cumulative-Update-Audit/image_27.png)
 
@@ -225,7 +227,7 @@ This screen will appear.
 
 ![Schedule Screen](../../../static/img/Cumulative-Update-Audit/image_28.png)
 
-Select the relevant time to run the script and click the Does not repeat button.
+Select the relevant time to run the script and click the "Does not repeat" button.
 
 ![Select Time](../../../static/img/Cumulative-Update-Audit/image_29.png)
 
@@ -233,9 +235,10 @@ This pop-up box will appear.
 
 ![Repeat Interval](../../../static/img/Cumulative-Update-Audit/image_30.png)
 
-Change the Repeat interval to once per Month. Here, I am selecting 15th of every month, since Microsoft releases the patches on the second Tuesday of every month.
+Change the Repeat interval to once per month. Here, I am selecting the 15th of every month since Microsoft releases the patches on the second Tuesday of every month.
 
-![Repeat Interval Selection](../../../static/img/Cumulative-Update-Audit/image_31.png) ![Repeat Interval Confirmation](../../../static/img/Cumulative-Update-Audit/image_32.png)
+![Repeat Interval Selection](../../../static/img/Cumulative-Update-Audit/image_31.png) 
+![Repeat Interval Confirmation](../../../static/img/Cumulative-Update-Audit/image_32.png)
 
 Search for `windows` in the `Resources*` and select `Windows Desktops` and `Windows Servers` groups. You can search and select any relevant group you would like to schedule the task against.
 
@@ -247,24 +250,13 @@ Now click the `Run` button to initiate the task.
 
 The task will start appearing in the Scheduled Tasks.
 
-![Scheduled Tasks](../../../static/img/Cumulative-Update-Audit/image_35.png) ![Scheduled Tasks 2](../../../static/img/Cumulative-Update-Audit/image_36.png)
+![Scheduled Tasks](../../../static/img/Cumulative-Update-Audit/image_35.png) 
+![Scheduled Tasks 2](../../../static/img/Cumulative-Update-Audit/image_36.png)
 
 ## Output
 
-- Script log
+- **Script log**
 ![Script Log Output](../../../static/img/Cumulative-Update-Audit/image_37.png)
 
-- Custom Field
+- **Custom Field**
 ![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
-
-
-
-
-
-
-
-
-
-
-
-

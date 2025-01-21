@@ -8,9 +8,10 @@ tags: ['alerting', 'compliance', 'deployment']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor detects the agent where the location of the agent contains the "Compliance Management Installer Key" and the deployment is enabled. The location or computers shouldn't be excluded.
+This monitor detects the agent where the location of the agent contains the "Compliance Management Installer Key" and the deployment is enabled. Locations or computers should not be excluded.
 
 ## Dependencies
 
@@ -22,18 +23,6 @@ Global
 
 ## Ticketing
 
-*To create a ticket please set the ticket category in the alerting section of the monitor*
+*To create a ticket, please set the ticket category in the alerting section of the monitor.*
 
 ![Image](../../../static/img/Agents-Missing-Rapid-Fire-Compliance-Manager/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

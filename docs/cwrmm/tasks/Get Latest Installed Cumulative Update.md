@@ -8,9 +8,10 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the task is to fetch the latest installed Cumulative Update and the Full Build Number of a Windows computer.
+The purpose of this task is to fetch the latest installed Cumulative Update and the Full Build Number of a Windows computer.
 
 ## Sample Run
 
@@ -24,7 +25,7 @@ The purpose of the task is to fetch the latest installed Cumulative Update and t
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image](../../../static/img/Get-Latest-Installed-Cumulative-Update/image_5.png)
 
@@ -32,7 +33,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Name:** Get Latest Installed Cumulative Update
 
-**Description:** The purpose of the task is to fetch the latest installed Cumulative Update and the Full Build Number of a Windows computer.
+**Description:** The purpose of this task is to fetch the latest installed Cumulative Update and the Full Build Number of a Windows computer.
 
 **Category:** Custom
 
@@ -40,7 +41,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Image](../../../static/img/Get-Latest-Installed-Cumulative-Update/image_8.png)
 
@@ -108,15 +109,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the information of PHP.exe file fetched by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
+Displays the information of the PHP.exe file fetched by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
 
 ## Dependencies
 
@@ -22,9 +23,9 @@ Displays the information of PHP.exe file fetched by the [Locate PHP.exe](<../scr
 
 | Column                  | Description                                                                                      |
 |------------------------|--------------------------------------------------------------------------------------------------|
-| Clientid               | Clientid (Hidden)                                                                                |
-| Locationid             | Locationid (Hidden)                                                                              |
-| Computerid             | Computerid (Hidden)                                                                              |
+| Clientid               | Client ID (Hidden)                                                                                |
+| Locationid             | Location ID (Hidden)                                                                              |
+| Computerid             | Computer ID (Hidden)                                                                              |
 | Client                 | Client Name                                                                                     |
 | Location               | Location Name                                                                                   |
 | Computer               | Computer Name                                                                                   |
@@ -33,22 +34,9 @@ Displays the information of PHP.exe file fetched by the [Locate PHP.exe](<../scr
 | Last Logged-In User    | Last Logged-In User                                                                              |
 | Form Factor            | Form Factor (Desktop/Laptop/Hyper-V Host/Virtual Server/Physical Server)                      |
 | File Path              | Path to the PHP.exe file                                                                         |
-| File Version           | Version of the File if available                                                                  |
-| Size (MB)             | Size of the file in Mega Bytes                                                                    |
+| File Version           | Version of the file, if available                                                                  |
+| Size (MB)             | Size of the file in megabytes                                                                    |
 | Creation Time          | File Creation Time                                                                                |
 | Last Write Time        | File Modification Time                                                                            |
 | Attributes             | File's Attributes                                                                                 |
 | Script Run Time        | Data Collection Time                                                                              |
-
-
-
-
-
-
-
-
-
-
-
-
-

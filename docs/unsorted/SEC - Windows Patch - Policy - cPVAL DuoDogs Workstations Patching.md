@@ -8,40 +8,28 @@ tags: ['windows']
 draft: true
 unlisted: false
 ---
+
 # Summary
-We have created an organization-level patch policy for Workstations and its purpose is to Patch & reboot the Workstations. Windows Automatic Update is disabled and this policy will also give the maintenance reminder prior to patching.
+We have created an organization-level patch policy for workstations. Its purpose is to patch and reboot the workstations. Windows Automatic Updates are disabled, and this policy will also provide maintenance reminders prior to patching.
 
 # Profile Module
 Patch Management 
 
 # Dependencies
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this Patching profile depends
+This section should list the ITGlue documents referenced in the Related Items sidebar on which this patching profile depends.
 
-- Agent procedure: Weekly Maintenance reminder
+- Agent procedure: Weekly Maintenance Reminder
 
 # Profile Type
-What type of profile has been created? Includes the following:
+What type of profile has been created? This includes the following:
 
 - Patch Management Profiles
 
 # Profile Details
-Provide the configuration of the profile, using the following templates based on profile Type. Remove any segments below that are not applicable to the Profile Type.
+Provide the configuration of the profile using the following templates based on the profile type. Remove any segments below that are not applicable to the profile type.
 
 ### Patch Management
-- Desktop maintenance reminder Procedure is scheduled on Every week on Tuesday at 10 AM on the machine time zone with skip if offline.
-- Patch windows automatic update: Workstations: Every Week on Tuesday at 10:00 PM as per the machine time zone with Skip if offline and the distribution hours is 2 hours.
-- Patch reboot action as below: If user logged in ask permission. Do nothing if no response in 60 minutes. Reboot if user not logged in.
-- Patch Windows Automatic Update is disabled.
-
-
-
-
-
-
-
-
-
-
-
-
-
+- The desktop maintenance reminder procedure is scheduled for every week on Tuesday at 10 AM in the machine's time zone, with a skip if offline.
+- Patch Windows Automatic Updates for workstations: Every week on Tuesday at 10:00 PM in the machine's time zone, with a skip if offline, and the distribution hours are 2 hours.
+- Patch reboot action is as follows: If the user is logged in, ask for permission. Do nothing if there is no response within 60 minutes. Reboot if the user is not logged in.
+- Windows Automatic Updates are disabled.

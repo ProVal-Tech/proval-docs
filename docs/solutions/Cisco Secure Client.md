@@ -8,6 +8,7 @@ tags: ['cisco', 'installation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The purpose of this solution is to provide an option to install different Cisco Secure Client modules on Windows and MAC machines.
@@ -17,8 +18,8 @@ The purpose of this solution is to provide an option to install different Cisco 
 | Content                                                                                                      | Type            | Function                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [SWM - Software Install - Script - Cisco Secure Client](https://proval.itglue.com/DOC-5078775-17918982)     | Script          | This script provides an option to install different Cisco Secure Client modules on Windows and MAC machines.                                                 |
-| [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>) | Internal Monitor | The internal monitor detects the online machines where Cisco Secure Client's EDFs (For Module Installation) are selected, but selected modules are not installed for Windows and MAC machines. |
-| △ Custom - Execute Script - Cisco Secure Client - Package Installation                                       | Alert Template   | It runs as an autofix with the [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>) and runs [SWM - Software Install - Script - Cisco Secure Client](https://proval.itglue.com/DOC-5078775-17918982) on the detected agents. |
+| [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>) | Internal Monitor | The internal monitor detects the online machines where Cisco Secure Client's EDFs (for Module Installation) are selected, but the selected modules are not installed on Windows and MAC machines. |
+| △ Custom - Execute Script - Cisco Secure Client - Package Installation                                       | Alert Template   | It runs as an autofix with the [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>) and executes [SWM - Software Install - Script - Cisco Secure Client](https://proval.itglue.com/DOC-5078775-17918982) on the detected agents. |
 
 ## Implementation
 
@@ -31,19 +32,7 @@ The purpose of this solution is to provide an option to install different Cisco 
    ![Reload Cache](../../static/img/Cisco-Secure-Client/image_24.png)
 
 3. Configure the solution as outlined below:
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../cwa/monitors/Missing Cisco Secure Client Modules.md>)
-       - Setup with "`△ Custom - Execute Script - Cisco Secure Client - Package Installation`" alert template.
-       - Right-click and Run Now to start the monitor.
-
-
-
-
-
-
-
-
-
-
-
-
+       - Set up with the alert template "`△ Custom - Execute Script - Cisco Secure Client - Package Installation`".
+       - Right-click and select "Run Now" to start the monitor.

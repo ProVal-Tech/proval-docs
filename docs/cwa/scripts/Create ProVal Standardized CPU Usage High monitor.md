@@ -8,6 +8,7 @@ tags: ['alerting', 'cpu', 'performance']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Generates a Proval Standardized CPU Usage High remote monitoring system for a selected group.
@@ -28,14 +29,14 @@ Document the various variables in the script. Delete any section that is not rel
 | AlertAction        | 1 (Default Do Nothing)                                                                           |
 | Interval           | 600 seconds                                                                                      |
 | GUID               | Random GUID for the Group Monitor                                                                |
-| ComparisionString   | State based condition to use with the remote monitor                                             |
+| ComparisonString    | State-based condition to use with the remote monitor                                             |
 | ExecuteString      | Command to run from the remote monitor                                                           |
 
 #### User Parameters
 
 | Name      | Example | Required | Description                                         |
 |-----------|---------|----------|-----------------------------------------------------|
-| GroupID   | 12545   | True     | The group Id to assign the remote monitor.          |
+| GroupID   | 12545   | True     | The group ID to assign the remote monitor.          |
 | SearchID  | 1254    | False    | A limiting search for this remote monitor.          |
 
 ## Sample Monitor
@@ -43,19 +44,8 @@ Document the various variables in the script. Delete any section that is not rel
 **Status Tab:**  
 ![Status Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_2.png)
 
-**Alerting Tab:** By Default, the script will set the `Default Do Nothing` template, it must be switched to `Custom - Ticket Creation - Computer` to use the monitor set at its full potential.  
+**Alerting Tab:** By default, the script will set the `Default Do Nothing` template. It must be switched to `Custom - Ticket Creation - Computer` to use the monitor to its full potential.  
 ![Alerting Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_3.png)
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_4.png)
-
-
-
-
-
-
-
-
-
-
-

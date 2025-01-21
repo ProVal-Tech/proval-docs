@@ -8,11 +8,12 @@ tags: ['patching', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this monitor set is to execute the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script once per week against all the machines with the Managed Patching Policy. It will execute the script against 200 online machines at a time, and will execute this action every 15 minutes. The purpose of this is to reduce load on the script engine in larger environments.
+The purpose of this monitor set is to execute the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script once per week against all the machines with the Managed Patching Policy. It will execute the script against 200 online machines at a time and will perform this action every 15 minutes. This approach aims to reduce the load on the script engine in larger environments.
 
-Alert Template: ~Fetch Windows Update Report
+**Alert Template:** ~Fetch Windows Update Report
 
 ## Dependencies
 
@@ -21,17 +22,4 @@ Alert Template: ~Fetch Windows Update Report
 
 ## Target
 
-Limited to the Windows Machines with Managed Patch Policy via SQL query.
-
-
-
-
-
-
-
-
-
-
-
-
-
+Limited to the Windows machines with Managed Patch Policy via SQL query.

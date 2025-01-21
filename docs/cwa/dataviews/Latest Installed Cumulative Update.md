@@ -8,22 +8,23 @@ tags: ['report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the data fetched by the [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script. The dataview is explicitly excluding the machines for which Microsoft does not release Cumulative Updates.
+This document displays the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get Lastest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
+- [CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
 - [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 
 ## Columns
 
 | Column                              | Description                                         |
 |-------------------------------------|-----------------------------------------------------|
-| Clientid                            | Clientid (Hidden)                                   |
-| Locationid                          | Locationid (Hidden)                                 |
-| Computerid                          | Computerid                                         |
+| Client ID                           | Client ID (Hidden)                                 |
+| Location ID                         | Location ID (Hidden)                               |
+| Computer ID                         | Computer ID                                       |
 | Client Name                         | Client Name                                        |
 | Location Name                       | Location Name                                      |
 | Computer Name                       | Computer Name                                      |
@@ -31,28 +32,15 @@ Displays the data fetched by the [CWM - Automate - Script - Get Lastest Installe
 | Release                             | OS Release Number                                   |
 | Latest Installed Cumulative Update   | Name of the Latest Installed Cumulative Update     |
 | OS Build                            | Full Build Number of the Operating System           |
-| Patch Managed                       | Is the computer patch Managed? (Yes/No)            |
+| Patch Managed                       | Is the computer patch managed? (Yes/No)            |
 | Is End of Life                      | Is the computer's Operating System End of Life? (Yes/No) |
 | Last Logged In User                 | Last Logged In User                                 |
 | Last Contact                        | Last Contact with RMM                              |
 | Script Run Time                     | Last Run Time of the script                         |
-| Patch Release Date                  | Date When the installed CU was released             |
+| Patch Release Date                  | Date when the installed CU was released             |
 | KBID                                | KBID of the CU                                     |
-| Days Since Last Cumulative          | Age of the latest installed Cumulative Update in Days |
+| Days Since Last Cumulative          | Age of the latest installed cumulative update in days |
 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Latest-Installed-Cumulative-Update/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

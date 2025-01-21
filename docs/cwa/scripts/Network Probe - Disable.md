@@ -8,6 +8,7 @@ tags: ['performance', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will disable the Network probe on an Automate agent.  
@@ -20,14 +21,3 @@ This script will disable the Network probe on an Automate agent.
 ## Process
 
 - This script runs an LT Command to disable the Network probe on the Automate agent.
-
-
-
-
-
-
-
-
-
-
-

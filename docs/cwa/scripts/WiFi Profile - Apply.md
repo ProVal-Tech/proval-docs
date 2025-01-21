@@ -8,11 +8,12 @@ tags: ['networking', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script applies the WiFi configuration for the desired SSID.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -34,20 +35,8 @@ Time Saved by Automation: 10 Minutes
 ## Process
 
 - The script should be used after the WiFi profile has been gathered by running the [WiFi Profile - Get](<./WiFi Profile - Get.md>) script against a machine with the profile already set up.
-- Gets the XML profile from the database based on the ClientID and SSID provided, writes the output to a file, and imports the profile onto the target machine.
+- It retrieves the XML profile from the database based on the ClientID and SSID provided, writes the output to a file, and imports the profile onto the target machine.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,14 +8,15 @@ tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to update the installed version of the Visual Studio Code to the latest available version.
+The purpose of this script is to update the installed version of Visual Studio Code to the latest available version.
 
-If `User Installer` is installed then the user must be logged on to the computer for the script to work. If the user is using the application then they will be prompted to close:  
+If the `User Installer` is installed, then the user must be logged on to the computer for the script to work. If the user is using the application, they will be prompted to close it:  
 ![Close Application Prompt](../../../static/img/SWM---Software-Update---Upgrade-Visual-Studio-Code-Latest/image_1.png)
 
-The Application cannot be upgraded if it's running.  
+The application cannot be upgraded if it is running.
 
 This prompt is inevitable for computers with the `User Installer` version of the application installed and should not be canceled:  
 ![Inevitable Prompt](../../../static/img/SWM---Software-Update---Upgrade-Visual-Studio-Code-Latest/image_2.png)
@@ -30,22 +31,10 @@ This prompt is inevitable for computers with the `User Installer` version of the
 
 | Name          | Description                                         |
 |---------------|-----------------------------------------------------|
-| LatestVersion | Latest Version of the application released by Microsoft |
+| LatestVersion | Latest version of the application released by Microsoft |
 | DownloadURL   | URL to download the latest version of the application |
-| Log           | Script Log to write before exiting                   |
+| Log           | Script log to write before exiting                   |
 
 ## Output
 
-- Script Logs
-
-
-
-
-
-
-
-
-
-
-
-
+- Script logs

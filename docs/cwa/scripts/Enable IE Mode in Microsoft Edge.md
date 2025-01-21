@@ -8,10 +8,11 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script enables the IE mode for a particular site.  
-Please provide the variable `InternetExplorerIntegrationCloudSiteList` in the PowerShell to allow the other sites to open in IE mode inside the Edge.
+This script enables IE mode for a particular site.  
+Please provide the variable `InternetExplorerIntegrationCloudSiteList` in PowerShell to allow other sites to open in IE mode within Edge.
 
 ## Sample Run
 
@@ -21,32 +22,22 @@ Please provide the variable `InternetExplorerIntegrationCloudSiteList` in the Po
 
 | Name                          | Description                                               |
 |-------------------------------|-----------------------------------------------------------|
-| Enabled IE Mode in Edge      | Computer EDF - Checked when IE Mode set in Edge          |
+| Enabled IE Mode in Edge      | Computer EDF - Checked when IE Mode is set in Edge       |
 
 #### User Parameters
 
 | Name                          | Example    | Required | Description                                           |
 |-------------------------------|------------|----------|-------------------------------------------------------|
-| InternetExplorerIntegrationCloudSiteList | https://   | True     | The site link which requires to open in Edge in IE Mode |
+| InternetExplorerIntegrationCloudSiteList | https://   | True     | The site link that needs to open in Edge in IE Mode   |
 
 ## Process
 
-This script enables the IE mode for a particular site.  
-Please provide the variable `InternetExplorerIntegrationCloudSiteList` in the PowerShell to allow the other sites to open in IE mode inside the Edge.  
-Once the setting is done it checks the computer EDFs for the logging in the database.
+This script enables IE mode for a particular site.  
+Please provide the variable `InternetExplorerIntegrationCloudSiteList` in PowerShell to allow other sites to open in IE mode within Edge.  
+Once the setting is done, it checks the computer EDFs for logging in the database.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
 
 

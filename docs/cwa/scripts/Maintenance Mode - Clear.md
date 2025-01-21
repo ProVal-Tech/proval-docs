@@ -8,11 +8,12 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script allows you to bulk-clear Maintenance mode (or schedule it to be clear on a set time)
+This script allows you to bulk-clear Maintenance mode or schedule it to be cleared at a set time.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,23 +21,12 @@ Time Saved by Automation: 5 Minutes
 
 ## Variables
 
-- `%computerid%` -> ComputerID of the target machine
+- `%computerid%` - Computer ID of the target machine
 
 ## Process
 
-The script will run the command to remove Maintenance mode from the target machine(s)
+The script will execute the command to remove Maintenance mode from the target machine(s).
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['bios', 'dell', 'installation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview populates the available Dockstations Inventory for the Dell Workstations that has been gathered by the [Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>).
@@ -21,33 +22,20 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 
 | Column               | Description                                        |
 |---------------------|----------------------------------------------------|
-| computerid          | Computerid of the machine                          |
-| Machine Name        | Name of the Machine                                |
-| Client              | Client Name                                        |
-| Location            | Location Name                                      |
-| Operating System    | Operating System of the machine                    |
-| LastContact         | The last Contact of the machine                    |
-| BiosName            | BiosName of the Machine                            |
-| BiosMFG             | Manufacturer of the machine                        |
-| Dock Manufacturer    | Manufacturer of the Dockstation                    |
-| Dock Model          | Model of the Dockstation                            |
-| Dock SerialNumber   | SerialNumber of the Dockstation                    |
-| Dock Version        | Version of the Dockstation                          |
-| Dock Description     | Description of Dockstation                          |
+| computerid          | Computer ID of the machine                         |
+| Machine Name        | Name of the machine                                |
+| Client              | Client name                                        |
+| Location            | Location name                                      |
+| Operating System    | Operating system of the machine                    |
+| Last Contact        | The last contact of the machine                    |
+| Bios Name           | BIOS name of the machine                           |
+| Bios MFG            | Manufacturer of the machine                        |
+| Dock Manufacturer    | Manufacturer of the dockstation                    |
+| Dock Model          | Model of the dockstation                            |
+| Dock Serial Number   | Serial number of the dockstation                   |
+| Dock Version        | Version of the dockstation                          |
+| Dock Description     | Description of the dockstation                      |
 | Install Date        | Dockstation install date                           |
-| Manufacture Date    | Manufacture Date of DockStation                    |
-| Dock Name           | Name of Dockstation                                |
-| Script Last Ran     | Last Time the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) executed on the machine |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Manufacture Date    | Manufacture date of the dockstation                |
+| Dock Name           | Name of the dockstation                            |
+| Script Last Ran     | Last time the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) executed on the machine |

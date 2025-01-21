@@ -8,21 +8,22 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Will add a requested windows path to the environmental path variable for the desired scope.
+This document will guide you through the process of adding a requested Windows path to the environmental path variable for the desired scope.
 
 ## Sample Run
 
-- Setting a User scoped path variable
+- Setting a user-scoped path variable
 
 ![User Scoped Path Variable](../../../static/img/Set-Environmental-Path-Variable/image_1.png)
 
-- Setting more than one machine scoped path variables.
+- Setting more than one machine-scoped path variable.
 
 ![Machine Scoped Path Variables](../../../static/img/Set-Environmental-Path-Variable/image_2.png)
 
-**NOTE:**  Scope is not mandatory and if left blank the scope will default to the machine scoped variable.
+**NOTE:** The scope is not mandatory; if left blank, the scope will default to the machine-scoped variable.
 
 ## Dependencies
 
@@ -37,7 +38,7 @@ Standard agnostic template variables apply.
 | Name  | Example                   | Required | Description                                                                                     |
 |-------|---------------------------|----------|-------------------------------------------------------------------------------------------------|
 | Path  | C:/windows, C:/temp...   | True     | The paths that must exist in the scoped environmental path variable.                           |
-| Scope | UserMachine           | False    | The scope of the environmental path variable you wish to target.This is defaulted to 'Machine' |
+| Scope | UserMachine               | False    | The scope of the environmental path variable you wish to target. This defaults to 'Machine'.   |
 
 ## Process
 
@@ -46,16 +47,3 @@ Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](<..
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

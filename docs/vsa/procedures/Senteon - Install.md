@@ -8,18 +8,19 @@ tags: ['installation', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Downloads and runs the installer for Senteon Agent on the endpoint. Updates the custom field if install is successful. 
+This document describes how to download and run the installer for the Senteon Agent on the endpoint. It also details how to update the custom field if the installation is successful.
 
 ## Dependencies
 
 | Content | Type | Function |
 |---------|------|----------|
-| [cPVAL Senteon Installed](<../../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint or not. |
-| [Senteon_Org](<../variables/Senteon_Org.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's Organization. |
-| [Senteon_Tenant](<../variables/Senteon_Tenant.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to. |
-| [Senteon_Reg_Code](<../variables/Senteon_Reg_Code.md>) | Managed Variable | This managed variable is used to store the Senteon registration code of the Tenant the partner wishes to register the agent/endpoint to. |
+| [cPVAL Senteon Installed](<../../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>) | Custom Field | This custom field is used to determine if the Senteon Agent is installed on the endpoint. |
+| [Senteon_Org](<../variables/Senteon_Org.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the partner's organization. |
+| [Senteon_Tenant](<../variables/Senteon_Tenant.md>) | Managed Variable | This managed variable is used to store the Senteon ID/Name of the tenant the partner wishes to register the agent/endpoint to. |
+| [Senteon_Reg_Code](<../variables/Senteon_Reg_Code.md>) | Managed Variable | This managed variable is used to store the Senteon registration code of the tenant the partner wishes to register the agent/endpoint to. |
 
 ## Associated Content
 
@@ -27,31 +28,19 @@ Downloads and runs the installer for Senteon Agent on the endpoint. Updates the 
 
 ## Implementation
 
-Export the agent procedure from the ProVal VSA, and import into the partner VSA.  
-Name: Senteon - Install  
+Export the agent procedure from the ProVal VSA and import it into the partner VSA.  
+**Name:** Senteon - Install  
 ![Image](../../../static/img/Senteon---Install/image_1.png)  
 ![Image](../../../static/img/Senteon---Install/image_2.png)  
 
-ProVal Plug & Play: No agent procedure configuration is required. Ensure dependencies exist prior to usage.  
+**ProVal Plug & Play:** No agent procedure configuration is required. Ensure dependencies exist prior to usage.
 
 ## Output
 
-Agent Procedure Log Entry  
+### Agent Procedure Log Entry
 
-Successful Install  
+**Successful Install**  
 ![Image](../../../static/img/Senteon---Install/image_3.png)  
 
-Existing Install  
+**Existing Install**  
 ![Image](../../../static/img/Senteon---Install/image_4.png)  
-
-
-
-
-
-
-
-
-
-
-
-

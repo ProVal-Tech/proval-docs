@@ -8,74 +8,62 @@ tags: ['kaseya', 'networking', 'security', 'setup', 'windows']
 draft: true
 unlisted: false
 ---
-## OverView
 
-This Program pair are used to remote domain join a machine without connection access to the domain using Kaseya API by running on the endpoint and the dc.  
+## Overview
+
+This program pair is used to remotely domain join a machine without direct access to the domain using the Kaseya API by running on the endpoint and the domain controller (DC).  
 The endpoint requires a restart.  
-This will and can rename the machine if specified, otherwise the machine will use the computer name.
+This will rename the machine if specified; otherwise, the machine will use its existing computer name.
 
 ## Process
 
-#### GetDCKasyeaNameAPI.exe
+### GetDCKaseyaNameAPI.exe
 
-This Executable uses API to get its own agent details. It uses its org id for its agent result to get the most common domain in the org, then gets the DC for that domain.  
-The executable then pushes its details to that dc using api and the dc's agent guid and executes a agent procedure on that dc.  
-Finally the executable waits for its own domain join payload file to appear in its API documents folder, at which point it will domain join the machine.  
-If the program does not see the payload file after 10 min it will die.
+This executable uses the API to get its own agent details. It uses its organization ID to retrieve the most common domain in the organization, then gets the DC for that domain.  
+The executable then pushes its details to that DC using the API and the DC's agent GUID and executes an agent procedure on that DC.  
+Finally, the executable waits for its own domain join payload file to appear in its API documents folder, at which point it will domain join the machine.  
+If the program does not see the payload file after 10 minutes, it will terminate.
 
-#### CreateDJOINFileAPI.exe
+### CreateDJOINFileAPI.exe
 
-This Executable is called by an agent procedure fired from another executable on the endpoint.  
-It gets all the detail files from its API documents folder and then makes payloads for the ones that do not have payloads on the end point.  
-Once no files are needed to be made it cleans up its managed files (the files it acted on) then closes itself after uploading the payloads to the endpoint.
+This executable is called by an agent procedure triggered from another executable on the endpoint.  
+It retrieves all the detail files from its API documents folder and then creates payloads for those that do not have payloads on the endpoint.  
+Once no files need to be created, it cleans up its managed files (the files it acted upon) and then closes itself after uploading the payloads to the endpoint.
 
 ## Parameters
 
-#### GetDCKaseyaName
+### GetDCKaseyaName
 
 | Parameter     | Required | Default | Type   | Description                                                                                             |
 |---------------|----------|---------|--------|---------------------------------------------------------------------------------------------------------|
-| agentguid     | true     |         | String | This is an agent guid you need to push to the script from the endpoint                                   |
-| url           | true     |         | String | The URL for our api connection                                                                           |
-| username      | true     |         | String | The username for api our connection                                                                      |
-| password      | true     |         | String | The password for api our connection                                                                      |
-| renametype    | false    |         | String | Set to SERIAL for Serial, Set to COMPUTERNAME for computer name, else the program will take input as computer name |
-| customdomain  | false    |         | String | Input the domain name you wish to join to, there must be a domain controller for this domain in that org |
+| agentguid     | true     |         | String | This is an agent GUID you need to push to the script from the endpoint                                   |
+| url           | true     |         | String | The URL for our API connection                                                                           |
+| username      | true     |         | String | The username for our API connection                                                                      |
+| password      | true     |         | String | The password for our API connection                                                                      |
+| renametype    | false    |         | String | Set to SERIAL for Serial, set to COMPUTERNAME for computer name; otherwise, the program will take input as the computer name |
+| customdomain  | false    |         | String | Input the domain name you wish to join; there must be a domain controller for this domain in that organization |
 
-#### GetDCKaseyaName
+### GetDCKaseyaName
 
 | Parameter     | Required | Default | Type   | Description                                                                                             |
 |---------------|----------|---------|--------|---------------------------------------------------------------------------------------------------------|
-| agentguid     | true     |         | String | This is an agent guid you need to push to the script from the endpoint                                   |
-| url           | true     |         | String | The URL for our api connection                                                                           |
-| username      | true     |         | String | The username for api our connection                                                                      |
-| password      | true     |         | String | The password for api our connection                                                                      |
+| agentguid     | true     |         | String | This is an agent GUID you need to push to the script from the endpoint                                   |
+| url           | true     |         | String | The URL for our API connection                                                                           |
+| username      | true     |         | String | The username for our API connection                                                                      |
+| password      | true     |         | String | The password for our API connection                                                                      |
 
 ## Output
 
-Output files for endpoint are located in the same directory as the exe:  
-`.//{YOURAGENTGUID}-EndpointCompName.txt - local file for dc to make djoin file`  
-`.//RemoteADJoin_CreateDJOINFile-log.txt - log file for endpoint`  
-`.//{YOURAGENTGUID}Z-DJoinPayload.txt - the djoin file`
+Output files for the endpoint are located in the same directory as the executable:  
+`./{YOURAGENTGUID}-EndpointCompName.txt - local file for DC to create the djoin file`  
+`./RemoteADJoin_CreateDJOINFile-log.txt - log file for endpoint`  
+`./{YOURAGENTGUID}Z-DJoinPayload.txt - the djoin file`
 
 ## Locations
 
 | Executable Endpoint                                                                                     | Executable DC                                                                                          |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [https://file.provaltech.com/repo/app/RemoteADJoin-CreateDJOINFileAPI.exe](https://file.provaltech.com/repo/app/MySQLConnectionPing.exe) | [https://file.provaltech.com/repo/app/RemoteADJoin-GetDCKaseyaNameAPI.exe](https://file.provaltech.com/repo/app/MySQLConnectionPing.exe) |
+| [RemoteADJoin-CreateDJOINFileAPI.exe](https://file.provaltech.com/repo/app/RemoteADJoin-CreateDJOINFileAPI.exe) | [RemoteADJoin-GetDCKaseyaNameAPI.exe](https://file.provaltech.com/repo/app/RemoteADJoin-GetDCKaseyaNameAPI.exe) |
 | Automate                                                                                               | N/A                                                                                                    |
 | Kaseya endpoint procedure                                                                               | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
 | Kaseya DC procedure                                                                                   | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
-
-
-
-
-
-
-
-
-
-
-
-
-

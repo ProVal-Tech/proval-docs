@@ -8,14 +8,15 @@ tags: ['active-directory', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Check the computer for security event log event id 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
+Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
 
 The threshold can be modified by updating the value of the `$th` variable in the remote monitor's command.  
 Change this value from 10 to the desired value after creating the monitor.
 
-**The monitor set may not perform as expected for the PowerShell version older than 5.**
+**The monitor set may not perform as expected for PowerShell versions older than 5.**
 
 ## Dependencies
 
@@ -33,19 +34,19 @@ Change this value from 10 to the desired value after creating the monitor.
 
 1. From the left bar, select Endpoints → Alerts → Monitors  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_2.png)  
-   Then Click 'Create Monitor'  
+   Then click 'Create Monitor'  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_3.png)
 
-2. Fill in the mandatory columns on the left side
+2. Fill in the mandatory columns on the left side:
    - Name: Possible Brute Force Attack
-   - Description: Check the computer for security event log event id 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
+   - Description: Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
    - Type: Script
    - Severity: Critical Impact Alerts
    - Family: Active Directory  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_4.png)
 
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_5.png)  
-   
+
    **Conditions:**
    - **Run script on:** Schedule
    - **Repeat every:** 1 Hour(s)
@@ -55,18 +56,18 @@ Change this value from 10 to the desired value after creating the monitor.
      $ErroractionPreference = 'SilentlyContinue'
      $th = 10
      $hours = 1
-     $StartTime = (Get-Date).Addhours(-$hours)
+     $StartTime = (Get-Date).AddHours(-$hours)
      $filter = @{LogName = 'Security'; ID = 4625; StartTime = $StartTime}
      $events = Get-WinEvent -FilterHashtable $filter
      $filteredEvents = $events | Where-Object { $_.Message -notmatch 'Logon Type://s+4' -and $_.Message -notmatch 'Logon Type://s+5' }
-     $total = ($filteredEvents | Measure-Object).count
+     $total = ($filteredEvents | Measure-Object).Count
      if ($total -ge $th) {
-         $groupedEvents = $filteredEvents | Where-Object { $_.Properties.Value -match '//S' } | Group-Object  @{ Expression = { $_.Properties.Value } }, @{ Expression = { $_.Properties.Value } }
+         $groupedEvents = $filteredEvents | Where-Object { $_.Properties.Value -match '//S' } | Group-Object @{ Expression = { $_.Properties.Value } }, @{ Expression = { $_.Properties.Value } }
          $output = @()
          foreach ($group in $groupedEvents) {
              $ex = ([xml]$groupedEvents.Group[-1].ToXml()).Event
              $time = ([DateTime]$ex.System.TimeCreated.SystemTime).ToString('yyyy-MM-dd HH:mm:ss')
-             $data = $ex.eventdata.data
+             $data = $ex.EventData.Data
              $e = [Ordered]@{}
              $data | ForEach-Object { $e[$_.Name] = $_.'#Text' }
              $procid = [Convert]::ToInt64($e.ProcessId, 16)
@@ -81,7 +82,7 @@ Change this value from 10 to the desired value after creating the monitor.
                  SourceIpPort = $e.IpPort
                  FailureStatus = $e.Status
                  FailureSubStatus = $e.SubStatus
-                 callerProcessId = $procid
+                 CallerProcessId = $procid
                  CallerProcessName = $e.ProcessName
                  CallerProcessStatus = $processStatus
                  LogonProcess = $e.LogonProcessName
@@ -98,19 +99,19 @@ Change this value from 10 to the desired value after creating the monitor.
          $staticInfo = @'
          Logon Type Reference Table:
          '@
-         ```
-     - **Criteria:** Contains
-     - **Operator:** AND
-     - **Script Output:** `failed logon event logs detected in the past`
-     - **Escalate ticket on script failure:** Disabled
-     - **Automatically resolve:** Disabled
-     - **Monitor Output:** Generate Ticket
+     ```
+   - **Criteria:** Contains
+   - **Operator:** AND
+   - **Script Output:** `failed logon event logs detected in the past`
+   - **Escalate ticket on script failure:** Disabled
+   - **Automatically resolve:** Disabled
+   - **Monitor Output:** Generate Ticket
 
 3. Select the target endpoints:
    - Click on Select Target:  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_6.png)
 
-   - Then click on Device Group and then search for the word '[Infrastructure Master](<../groups/Infrastructure Master.md>)', and then select the group as shown below:  
+   - Then click on Device Group and search for the word '[Infrastructure Master](<../groups/Infrastructure Master.md>)', and select the group as shown below:  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_7.png)
 
 ## Completed Monitor
@@ -128,14 +129,14 @@ Change this value from 10 to the desired value after creating the monitor.
 Company Name: ProVal - Development  
 Site Name: ProVal - Development  
 Resource - DEV-Server2019DC (DEV-Server2019DC)  
-This issue observed at 2024-12-16 18:24:23  
+This issue was observed at 2024-12-16 18:24:23  
 Following are the Monitor details for the same:  
 Monitor Name: Possible Brute Force Attack  
-Monitor Description: Check the computer for security event log event id 4625 where the count of occurrences is greater than 10 in the last 60 minutes.  
-Script Monitor has detected an issue on the endpoint, Please refer the details:  
-Script Language: powershell  
+Monitor Description: Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.  
+Script Monitor has detected an issue on the endpoint, please refer to the details:  
+Script Language: PowerShell  
 Keyword detected:  
-Script Output 6 failed logon event logs detected in the past 1 hour(s)  
+Script Output: 6 failed logon event logs detected in the past 1 hour(s)  
 
 UserName: Administrator  
 UserSid: S-1-0-0  
@@ -146,7 +147,7 @@ SourceIpAddress: 127.0.0.1
 SourceIpPort: 0  
 FailureStatus: 0xc000006d  
 FailureSubStatus: 0xc000006a  
-callerProcessId: 2088  
+CallerProcessId: 2088  
 CallerProcessName: C:/Windows/System32/svchost.exe  
 CallerProcessStatus: Running  
 LogonProcess: User32  
@@ -184,16 +185,4 @@ Failure Reason Reference Table:
 Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not available) with the reference table mentioned above to identify the failure reason.  
 For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)  
 
-Action: Please get the issue reviewed by a technician.
-
-
-
-
-
-
-
-
-
-
-
-
+Action: Please have the issue reviewed by a technician.

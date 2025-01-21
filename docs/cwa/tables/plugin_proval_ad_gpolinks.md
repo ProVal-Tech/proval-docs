@@ -8,14 +8,15 @@ tags: ['database', 'gpo']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Displays detailed information about the GPO links per GPO from the script @Group Policy Audit.
+This document displays detailed information about the GPO links per GPO from the script @Group Policy Audit.
 
 ## Dependencies
 
-@Group Policy Audit  
-[Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)  
+- @Group Policy Audit  
+- [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)  
 
 ## Table
 
@@ -26,16 +27,5 @@ Displays detailed information about the GPO links per GPO from the script @Group
 | GPOGUID      | VARCHAR | The GUID of the GPO associated with the link.                     |
 | ComputerID   | INT     | The Automate ComputerID of the supplying domain controller.       |
 | Path         | VARCHAR | The OU path of the link.                                          |
-| Enforced      | VARCHAR | True or False depending on if the link is being enforced.        |
-| LinkEnabled   | VARCHAR | True or False depending on if the link is enabled.               |
-
-
-
-
-
-
-
-
-
-
-
+| Enforced      | VARCHAR | True or False depending on whether the link is being enforced.   |
+| LinkEnabled   | VARCHAR | True or False depending on whether the link is enabled.          |

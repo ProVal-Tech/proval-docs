@@ -8,9 +8,10 @@ tags: ['email']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The objective of this monitor is to run the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) once a machine comes back online and has either Ticket ID filled in the EDF "Online Alert Ticket ID" or Email ID filled in the EDF "Online Alert E-mail".
+The objective of this monitor is to run the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) once a machine comes back online and has either the Ticket ID filled in the EDF "Online Alert Ticket ID" or the Email ID filled in the EDF "Online Alert E-mail".
 
 ## Dependencies
 
@@ -20,15 +21,3 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

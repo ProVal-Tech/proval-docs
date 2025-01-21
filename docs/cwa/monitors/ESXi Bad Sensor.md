@@ -8,33 +8,20 @@ tags: ['virtualization', 'vmware']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMWare monitoring. This is intended to be used with the [Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) as the auto-fix.
+This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMware monitoring system. This is designed to be used with the [Script - Ticket Creation - VMware ESXi Monitoring](<../scripts/Ticket Creation - VMware ESXi Monitoring.md>) as the auto-fix.
 
-Alert Template: △ Custom - Ticket Creation - ESXi Monitoring
+**Alert Template:** △ Custom - Ticket Creation - ESXi Monitoring
 
 ## Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this monitor depends.
+This section should list the ITGlue documents found in the Related Items sidebar on which this monitor depends.
 
-- [Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>)
-- This solution requires that the Virtualization Manager is setup and configured
+- [Script - Ticket Creation - VMware ESXi Monitoring](<../scripts/Ticket Creation - VMware ESXi Monitoring.md>)
+- This solution requires that the Virtualization Manager is set up and configured.
 
 ## Target
 
-This monitor is a Global RAWSQL monitor and does not need to be assigned to a group, however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.

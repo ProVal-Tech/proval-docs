@@ -8,9 +8,10 @@ tags: ['domain', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Joins a non-domain joined computer to a domain. The machine will be forcefully rebooted if required. CW RMM implementation of the agnostic script [Join-Domain](<../../powershell/Join-Domain.md>).
+This document describes how to join a non-domain joined computer to a domain. The machine will be forcefully rebooted if required. It covers the CW RMM implementation of the agnostic script [Join-Domain](<../../powershell/Join-Domain.md>).
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Joins a non-domain joined computer to a domain. The machine will be forcefully r
 
 ## Dependencies
 
-[RSM - Active Directory - Agnostic - Script - Join-Domain](<../../powershell/Join-Domain.md>)
+- [RSM - Active Directory - Agnostic - Script - Join-Domain](<../../powershell/Join-Domain.md>)
 
 ## User Parameters
 
@@ -34,7 +35,7 @@ Joins a non-domain joined computer to a domain. The machine will be forcefully r
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/Domain-Join/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Domain-Join/image_6.png)  
 
@@ -89,7 +90,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Domain-Join/image_13.png)  
 
 A blank function will appear.  
@@ -121,7 +122,7 @@ if ( ($DomainName -match '/SDomainName/S') -or ([String]::IsNullOrWhiteSpace($Do
 if ( ($Admin -match '/SDomainAdmin/S') -or ([String]::IsNullOrWhiteSpace($Admin)) ) {
     throw 'Invalid domain admin account. Please provide a valid domain admin account.'
 }
-if ( ($password -match '/SPassword/S') -or ([String]::IsNullOrWhite($password)) ) {
+if ( ($password -match '/SPassword/S') -or ([String]::IsNullOrWhiteSpace($password)) ) {
     throw 'Invalid password. Please provide a valid password.'
 }
 $securePwd = ConvertTo-SecureString -String $password -AsPlainText -Force
@@ -163,11 +164,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -202,15 +203,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

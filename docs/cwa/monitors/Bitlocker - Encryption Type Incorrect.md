@@ -8,12 +8,13 @@ tags: ['compliance', 'database', 'encryption', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will return any target machine whose client has the 'Bitlocker Monitoring' EDF checked, and the target's 'Bitlocker Monitoring Exclusion' is not checked, and its 'C' drive is listed as a mount point in 'plugin_proval_bitlocker_audit' under the following conditions:
 
-- If the client level 'Bitlocker XTS-AES 256' edf is checked and the value for Encryption Method is not NONE and not 'XtsAes256' then return that target.
-- If the client level 'Bitlocker XTS-AES 256' edf is not checked and the value for Encryption Method is not NONE and not 'Aes256' then return that target.
+- If the client level 'Bitlocker XTS-AES 256' EDF is checked and the value for Encryption Method is not NONE and not 'XtsAes256', then return that target.
+- If the client level 'Bitlocker XTS-AES 256' EDF is not checked and the value for Encryption Method is not NONE and not 'Aes256', then return that target.
 
 ## Dependencies
 
@@ -22,11 +23,11 @@ This monitor will return any target machine whose client has the 'Bitlocker Moni
 
 ## Target
 
-Please follow the recommended target for the bitlocker solution.
+Please follow the recommended target for the Bitlocker solution.
 
 ## Translated SQL
 
-```
+```sql
 SELECT 
    ppba.EncryptionMethod as TestValue,
    computers.name as IdentityField,
@@ -55,33 +56,20 @@ LEFT JOIN ExtraFieldData edfDefault3 ON (edfDefault3.id=0 and edfDefault3.ExtraF
 LEFT JOIN ExtraFieldData edfAssigned2 ON (edfAssigned2.id=Computers.ComputerId and edfAssigned2.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE `Name` = 'Bitlocker Monitoring Exclusion'))
 LEFT JOIN ExtraFieldData edfDefault2 ON (edfDefault2.id=0 and edfDefault2.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='Bitlocker Monitoring Exclusion'))
 WHERE 
-((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')\\<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0)))) 
+((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0') <> '0') AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')='0')))) 
 AND ( 
-   (ppba.MountPoint = 'C:')
-   AND (
-       Case  When (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0') = 1) Then
-       (ppba.`EncryptionMethod` != 'NONE' AND ppba.`EncryptionMethod` != 'XtsAes256')
-       ELSE (ppba.`EncryptionMethod` != 'NONE' AND ppba.`EncryptionMethod` != 'Aes256')
-       END
+   (ppba.MountPoint = 'C:') 
+   AND ( 
+       CASE WHEN (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0') = '1') THEN 
+       (ppba.`EncryptionMethod` != 'NONE' AND ppba.`EncryptionMethod` != 'XtsAes256') 
+       ELSE (ppba.`EncryptionMethod` != 'NONE' AND ppba.`EncryptionMethod` != 'Aes256') 
+       END 
    ) 
-) AND (
-       computers.DateAdded \\< DATE_SUB(NOW(), INTERVAL 7 DAY )
+) AND ( 
+       computers.DateAdded < DATE_SUB(NOW(), INTERVAL 7 DAY) 
 )
 ```
 
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Encryption-Type-Incorrect/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

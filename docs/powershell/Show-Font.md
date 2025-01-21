@@ -8,20 +8,21 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Overview
 
-Returns a custom object of all installed fonts on a system
+This script returns a custom object of all installed fonts on a system.
 
 ## Process
 
-1. Query the registry for fonts
-2. Return the custom object
+1. Query the registry for fonts.
+2. Return the custom object.
 
 ## Payload Usage
 
 ```
 Show-Font.ps1
-Returns a CustomObject listing all installed fonts
+Returns a CustomObject listing all installed fonts.
 ```
 
 ## Output
@@ -32,19 +33,10 @@ CustomObject
 
 ## Locations
 
-| Payload                | /repo/scripts/show-font.ps1 |
-|-----------------------|-------------------------------|
-| Automate              |                               |
-| ConnectWise RMM       |                               |
-| Kaseya                |                               |
-| Datto RMM            |                               |
-
-
-
-
-
-
-
-
-
-
+| Payload                | Location                     |
+|-----------------------|------------------------------|
+| /repo/scripts/show-font.ps1 |                          |
+| Automate              |                              |
+| ConnectWise RMM       |                              |
+| Kaseya                |                              |
+| Datto RMM            |                              |

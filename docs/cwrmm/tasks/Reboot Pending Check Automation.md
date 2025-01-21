@@ -8,9 +8,10 @@ tags: ['reboot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task is designed to detect the reboot pending on the endpoints automatically and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>).
+This task is designed to automatically detect the reboot pending status on endpoints and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>).
 
 ## Dependencies
 
@@ -33,14 +34,14 @@ To implement this script, please create a new "PowerShell" style script in the s
 ![Create Task](../../../static/img/Reboot-Pending-Check-Automation/image_3.png)
 
 - **Name:** Reboot Pending Check Automation
-- **Description:** This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output it sets the custom field 'Auto_RebootPendingCheck'.
+- **Description:** This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.
 - **Category:** Custom
 
 ![Task Details](../../../static/img/Reboot-Pending-Check-Automation/image_4.png)
 
 ### Script
 
-Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
 ![Add Rows](../../../static/img/Reboot-Pending-Check-Automation/image_5.png)
 
@@ -105,7 +106,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 4a: Condition: Output Contains
 
-In the IF part, enter `Module installed successfully` in the right box of the "Output Contains" Part.
+In the IF part, enter `Module installed successfully` in the right box of the "Output Contains" part.
 
 ![Row 4a Condition](../../../static/img/Reboot-Pending-Check-Automation/image_14.png)
 
@@ -139,7 +140,7 @@ In the script log message, simply type `The Pending Reboot Requirement: %output%
 
 ### Row 4c.2: Condition: Output Contains
 
-In the IF part, enter `True` in the right box of the "Output Contains" Part.
+In the IF part, enter `True` in the right box of the "Output Contains" part.
 
 ![Row 4c.2 Condition](../../../static/img/Reboot-Pending-Check-Automation/image_19.png)
 
@@ -182,10 +183,10 @@ In the script exit message, simply type `%output%`.
 
 It is suggested to run the Task every 2 hours against the group `Reboot Pending Check Automation`.
 
-- Goto `Automation` > `Tasks.`
+- Go to `Automation` > `Tasks.`
 - Search for `Force Reboot Server With Reboot Windows Verification` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task](../../../static/img/Reboot-Pending-Check-Automation/image_25.png)
 
@@ -216,15 +217,3 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
-
-
-
-
-
-
-
-
-
-
-
-

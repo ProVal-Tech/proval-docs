@@ -8,29 +8,17 @@ tags: ['security', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will trigger the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script to restore the key against the computers where the required patches that fix the vulnerability are installed.
+This monitor will trigger the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md) script to restore the key on computers where the required patches that fix the vulnerability are installed.
 
 ## Dependencies
 
-- [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>)
-- [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<./Microsoft Support Diagnostic Tool Vulnerability G.md>)
-- [CVE-2022-30190 MSDT - Workarounds](<../../solutions/CVE-2022-30190 MSDT Vulnerability - Workarounds.md>)
+- [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md)
+- [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](./Microsoft Support Diagnostic Tool Vulnerability G.md)
+- [CVE-2022-30190 MSDT - Workarounds](../../solutions/CVE-2022-30190 MSDT Vulnerability - Workarounds.md)
 
 ## Target
 
 Windows computers
-
-
-
-
-
-
-
-
-
-
-
-
-

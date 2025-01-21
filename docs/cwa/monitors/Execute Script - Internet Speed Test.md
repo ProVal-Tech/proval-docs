@@ -8,12 +8,13 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor detects the Windows agent where the script [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226) has not been run in the last 10 days. It will only detect the machines where the Powershell version is greater than 05.
+This internal monitor detects Windows agents where the script [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226) has not been run in the last 10 days. It will only detect machines where the PowerShell version is greater than 5.
 
 **Important**
-- The monitor target should be applied to a group, otherwise, it will not function.
+- The monitor target should be applied to a group; otherwise, it will not function.
 - Import the [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>) in the client environment.
 
 ## Dependencies
@@ -24,18 +25,4 @@ This internal monitor detects the Windows agent where the script [EPM - Network 
 
 ## Target
 
-This monitor can be enabled for all service plan groups, Servers only, Infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is built for only Windows.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This monitor can be enabled for all service plan groups, servers only, infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is designed exclusively for Windows.

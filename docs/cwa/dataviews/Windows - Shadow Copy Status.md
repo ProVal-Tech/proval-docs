@@ -8,9 +8,10 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This picks the data from the custom table "plugin_proval_shadowcopystats" and adds the client name, location name, computer name to show data properly. This indicates which machines have Shadow Copy enabled.
+This report pulls data from the custom table "plugin_proval_shadowcopystats" and adds the client name, location name, and computer name to present the data clearly. It indicates which machines have Shadow Copy enabled.
 
 ## Dependencies
 
@@ -25,15 +26,3 @@ This picks the data from the custom table "plugin_proval_shadowcopystats" and ad
 | Location               | Location Name                                            |
 | Computer               | Computer Name                                            |
 | Shadow Copy Enabled     | Enabled/Disabled status of Shadow Copy on the machine    |
-
-
-
-
-
-
-
-
-
-
-
-

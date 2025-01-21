@@ -8,17 +8,19 @@ tags: ['backup', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script helps to reset all the windows update components. It performs actions like:
-- Stopping the windows update, bits, cryptsvc, and appidsvc services.
-- Removes `%ALLUSERSPROFILE%/Application Data/Microsoft/Network/Downloader/qmgr*.dat`
-- Removes `C:/Users/All Users/Microsoft/Network/Downloader/qmgr*.dat`
-- Renames the softwaredistribution file to softwaredistribution.bak
-- Renames the catroot2 file to catroot2.bak
-- Resets all windows update dlls
-- Performs a Winsock reset
-- Starts services windows update, bits, cryptsvc, and appidsvc.
+This script helps to reset all the Windows Update components. It performs actions such as:
+
+- Stopping the Windows Update, BITS, CryptSvc, and AppIdSvc services.
+- Removing `%ALLUSERSPROFILE%/Application Data/Microsoft/Network/Downloader/qmgr*.dat`
+- Removing `C:/Users/All Users/Microsoft/Network/Downloader/qmgr*.dat`
+- Renaming the SoftwareDistribution folder to SoftwareDistribution.bak
+- Renaming the Catroot2 folder to Catroot2.bak
+- Resetting all Windows Update DLLs
+- Performing a Winsock reset
+- Starting the Windows Update, BITS, CryptSvc, and AppIdSvc services.
 
 Reboot the computer.
 
@@ -27,35 +29,23 @@ Reboot the computer.
 ## Sample Run
 
 **Target:** Windows Device  
-**Note:** This script will forcefully reboot to the target device. It may not be ideal to run this script during business hours.
+**Note:** This script will forcefully reboot the target device. It may not be ideal to run this script during business hours.
 
 ![Sample Run](../../../static/img/Patch-Error-Troubleshooting/image_1.png)
 
 ## Process
 
-1. Create a .BAT file in the `C:/temp/` folder and the script will execute the .BAT file.
-   1. The .BAT file will stop and then start several services and delete or rename some files (View all actions below)
-      1. Stop services: windows update, bits, cryptsvc, and appidsvc
+1. Create a .BAT file in the `C:/temp/` folder, and the script will execute the .BAT file.
+   1. The .BAT file will stop and then start several services and delete or rename some files (View all actions below).
+      1. Stop services: Windows Update, BITS, CryptSvc, and AppIdSvc.
       2. Delete `%ALLUSERSPROFILE%/Application Data/Microsoft/Network/Downloader/qmgr*.dat`
       3. Delete `C:/Users/All Users/Microsoft/Network/Downloader/qmgr*.dat`
-      4. Rename the softwaredistribution file to softwaredistribution.bak
-      5. Rename the catroot2 file to catroot2.bak
-      6. Reset all windows update dll
-      7. Winsock reset
-      8. Start services windows update, bits, cryptsvc, and appidsvc.
+      4. Rename the SoftwareDistribution folder to SoftwareDistribution.bak
+      5. Rename the Catroot2 folder to Catroot2.bak
+      6. Reset all Windows Update DLLs
+      7. Perform a Winsock reset
+      8. Start services: Windows Update, BITS, CryptSvc, and AppIdSvc.
 
 ## Output
 
 **Script logs**
-
-
-
-
-
-
-
-
-
-
-
-

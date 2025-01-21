@@ -8,11 +8,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will disable the prompt message to users from Microsoft warning about Windows 10 v1909 deprecation.
+This script will disable the prompt message to users from Microsoft warning about the deprecation of Windows 10 v1909.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,20 +21,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-This script will disable the prompt message to users from Microsoft warning about Windows 10 v1909 deprecation.
+This script will disable the prompt message to users from Microsoft warning about the deprecation of Windows 10 v1909.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

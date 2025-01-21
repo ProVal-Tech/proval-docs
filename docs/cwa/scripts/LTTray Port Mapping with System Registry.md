@@ -8,11 +8,12 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will map the port number from netstat and the Windows registry of the LTTray which resolves the intermittent lttray not showing issue.
+This script maps the port number from netstat and the Windows registry of the LTTray, resolving the intermittent issue of LTTray not showing.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -26,36 +27,24 @@ Time Saved by Automation: 10 Minutes
 
 | Name               | Example | Required | Description                                                                 |
 |--------------------|---------|----------|-----------------------------------------------------------------------------|
-| Ticket Creation     | 0       | False    | 0 -- No ticket1 -- Script will create ticket for failed attempt       |
+| Ticket Creation     | 0       | False    | 0 -- No ticket; 1 -- Script will create a ticket for failed attempts       |
 
 #### Script States
 
 | Name              | Example    | Description                                                        |
 |-------------------|------------|--------------------------------------------------------------------|
-| LTTRayAutofix     | %ticketid% | This scriptstate will store the LTTray ticket record for auto-close and commenting |
+| LTTrayAutofix     | %ticketid% | This script state will store the LTTray ticket record for auto-close and commenting |
 
 ## Process
 
-- This script will check for the ltsvc process.
-- Once found it will check the port information in netstat.
-- Then it will match the port value with the registry value.
-- If port value mismatched then it will replace registry value with the netstat value.
-- And after resetting it will check again to confirm if the value is set properly or not.
-- If the resetting has issue it will create the ticket.
+- This script checks for the `ltsvc` process.
+- Once found, it checks the port information in netstat.
+- It then matches the port value with the registry value.
+- If the port value is mismatched, it replaces the registry value with the netstat value.
+- After resetting, it checks again to confirm if the value is set properly.
+- If there is an issue during resetting, it creates a ticket.
 
 ## Output
 
 - Script log
-- Scriptstate
-
-
-
-
-
-
-
-
-
-
-
-
+- Script state

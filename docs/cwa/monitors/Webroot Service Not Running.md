@@ -8,32 +8,21 @@ tags: ['connectwise', 'setup', 'webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Alerts on targets where the Webroot Service is present and not running.
+Alerts on targets where the Webroot Service is present but not running.
 
 ## Details
 
-Create By: Follow instructions in the Audit Section of the [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>) document
+Created By: Follow instructions in the Audit Section of the [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>) document.
 
 ## Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this monitor depends.
+This section should list the ITGlue documents referenced in the Related Items sidebar on which this monitor depends.
 
 - [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
 
 ## Target
 
 ConnectWise Automate Group: Webroot
-
-
-
-
-
-
-
-
-
-
-
-

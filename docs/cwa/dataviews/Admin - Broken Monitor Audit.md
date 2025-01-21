@@ -8,6 +8,7 @@ tags: ['sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The dataview helps to audit the internal monitors where their group mapping is broken.
@@ -19,19 +20,7 @@ The dataview helps to audit the internal monitors where their group mapping is b
 | Agentid      | Displays the Monitor ID of the internal monitor.   |
 | Name         | Displays the name of the internal monitor.         |
 | Dataout      | Displays the SQL query running on the monitor.     |
-| Groupid      | Displays the group id on which the monitor is applied. |
+| Groupid      | Displays the group ID on which the monitor is applied. |
 | Group Applied | Displays the group name on which the monitor is applied. |
-| Notes        | Displays the Notes mentioned about the group.      |
+| Notes        | Displays the notes mentioned about the group.      |
 | AlertAction  | Displays the ID of the applied alert template.     |
-
-
-
-
-
-
-
-
-
-
-
-

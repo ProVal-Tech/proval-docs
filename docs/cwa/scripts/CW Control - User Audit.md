@@ -8,12 +8,13 @@ tags: ['connectwise', 'database']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script runs on the control server and audits ConnectWise Control user information to a custom table [plugin_proval_controluseraudit](<../tables/plugin_proval_controluseraudit.md>)  
+This script runs on the Control server and audits ConnectWise Control user information to a custom table [plugin_proval_controluseraudit](<../tables/plugin_proval_controluseraudit.md>).
 
-It displays information in the dataview @CW Control - User Audit  
-Time Saved by Automation: 15 Minutes
+It displays information in the dataview **@CW Control - User Audit**.  
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -26,27 +27,15 @@ Time Saved by Automation: 15 Minutes
 
 ## Variables
 
-- `@insertStatement@` - Fetches the information of all the users that will be inserted in the custom table
-- `@2FAColumnExists@` - Verifies if the 2FA column exists or not
+- `@insertStatement@` - Fetches the information of all the users that will be inserted into the custom table.
+- `@2FAColumnExists@` - Verifies if the 2FA column exists or not.
 
 ## Process
 
-- Runs PowerShell and fetches all the information of control users
-- Verifies if 2FA column exists or not; if it doesn't exist, then it will drop the table; otherwise, it creates the table with all the information.
+- Runs PowerShell and fetches all the information of Control users.
+- Verifies if the 2FA column exists; if it doesn't exist, it will drop the table; otherwise, it creates the table with all the information.
 
 ## Output
 
 - Script log
-- Dataview @CW Control - User Audit
-
-
-
-
-
-
-
-
-
-
-
-
+- Dataview **@CW Control - User Audit**

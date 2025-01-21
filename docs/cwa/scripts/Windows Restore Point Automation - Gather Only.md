@@ -8,9 +8,10 @@ tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script helps to get all restore point information of a workstation and store the details in a Dataview called Restore Point Audit - workstations.
+This script helps to gather all restore point information of a workstation and store the details in a Dataview called Restore Point Audit - Workstations.
 
 **Time Saved by Automation:** 30 Minutes
 
@@ -25,22 +26,9 @@ This script helps to get all restore point information of a workstation and stor
 
 ## Process
 
-This script will create a Custom Table `plugin_proval_restore_points` if it doesn't exist. The script will then run the Powershell commands to gather the information regarding the restore points and will update the data in the Custom table using SQL queries. The script will work on Windows Workstations only.
+This script will create a custom table `plugin_proval_restore_points` if it doesn't exist. The script will then run PowerShell commands to gather information regarding the restore points and update the data in the custom table using SQL queries. The script is designed to work on Windows workstations only.
 
 ## Output
 
 - Script log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

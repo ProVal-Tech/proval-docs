@@ -8,6 +8,7 @@ tags: ['performance', 'registry', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This remote monitor detects if the port value for the LTTray in the registry matches the actual port that is being used by Windows for the process.
@@ -16,7 +17,7 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 
 **Suggested "Limit to"**: Windows Machines  
 **Suggested Alert Style**: Continuous  
-**Suggested Alert Template**: ~Autofix - LTTray Fix  
+**Suggested Alert Template**: Autofix - LTTray Fix  
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result          |
 |--------------|----------------|-------------|-------------|------------|----------|------------------|
@@ -29,16 +30,3 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 ## Target
 
 Windows machine
-
-
-
-
-
-
-
-
-
-
-
-
-

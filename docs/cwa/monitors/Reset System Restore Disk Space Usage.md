@@ -8,17 +8,18 @@ tags: ['performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this remote monitor is to detect the maximum space allocated to VSS. If it is more than 25% of the drive space, it will limit the maximum space to 5%.
+The purpose of this remote monitor is to detect the maximum space allocated to VSS. If it exceeds 25% of the drive space, it will limit the maximum space to 5%.
 
 ## Details
 
-**Suggested "Limit to"**: windows OS  
+**Suggested "Limit to"**: Windows OS  
 **Suggested Alert Style**: Continuous  
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result                                             |
 |--------------|----------------|------------|---------------|--------------|----------|---------------------------------------------------|
@@ -31,16 +32,3 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Reset System Restore Disk Space Usage](<./Reset System Restore Disk Space Usage.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

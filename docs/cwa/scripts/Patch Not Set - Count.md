@@ -8,11 +8,12 @@ tags: ['report', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will count the number of patches which has not been actioned in any approval policy at the client environment.
+This script counts the number of patches that have not been actioned in any approval policy within the client environment.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -22,23 +23,12 @@ Time Saved by Automation: 10 Minutes
 
 | Name      | Example | Required | Description                                                                                      |
 |-----------|---------|----------|--------------------------------------------------------------------------------------------------|
-| Threshold | 10      | True     | This sets to set limit to check for not set patches over which ticket will be created.          |
+| Threshold | 10      | True     | This sets the limit to check for not set patches over which a ticket will be created.          |
 
 ## Process
 
-This script runs a SQL query to check for the patches count which has not been actioned via any approval policy and left as Not Set.
+This script runs a SQL query to check for the count of patches that have not been actioned via any approval policy and are left as Not Set.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

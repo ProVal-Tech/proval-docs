@@ -8,26 +8,29 @@ tags: ['kaseya', 'report', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 # Overview
 
-Performs much of the Kaseya Onboarding Audit, outputs to an excel spreadsheet in the script dir.
+This script performs much of the Kaseya Onboarding Audit and outputs the results to an Excel spreadsheet in the script directory.
 
 # Requirements
 
-Requires an API User account with Both REST and DataWarehouse access configured in the VSA.  
-On-Prem Audit requires IP whitelisting to access. In lieu of whitelisting, the script can be run on the client's VSA server via the Agent Procedure "Shared/ProVal Content Repository/Vsa/Onboarding Audit." Implementation instructions for this procedure are located at [https://proval.itglue.com/5078775/docs/9739268](https://proval.itglue.com/5078775/docs/9739268).  
-REST API requires a NATIVE VSA user. If 'UserName must be an email address' is enabled in System > Configuration > Default Settings, this must be temporarily disabled during API account creation.
+- Requires an API User account with both REST and Data Warehouse access configured in the VSA.
+- On-Prem Audit requires IP whitelisting to access. In lieu of whitelisting, the script can be run on the client's VSA server via the Agent Procedure "Shared/ProVal Content Repository/Vsa/Onboarding Audit." Implementation instructions for this procedure are located at [ProVal Documentation](https://proval.itglue.com/5078775/docs/9739268).
+- The REST API requires a native VSA user. If "UserName must be an email address" is enabled in System > Configuration > Default Settings, this must be temporarily disabled during API account creation.
 
 # Process
 
-Uses VSAAPI to perform the following REST API Requests and saves the results in CSV format in the 'CSVs' subfolder if data was returned.
+The script uses VSAAPI to perform the following REST API requests and saves the results in CSV format in the 'CSVs' subfolder if data was returned:
+
 - System/Users
 - System/Roles
 - System/Scopes
 - Automation/AgentProcs
 - Assetmgmt/Agents
 
-Uses VSAAPI to perform the following Data Warehouse API Requests and saves the results in CSV format in the 'CSVs' subfolder if data was returned.
+Additionally, it uses VSAAPI to perform the following Data Warehouse API requests and saves the results in CSV format in the 'CSVs' subfolder if data was returned:
+
 - DiscoveryActiveDirectoryDomainSummary
 - DiscoveryLanWatchNetworks
 - LanCacheAssignments
@@ -41,8 +44,8 @@ Uses VSAAPI to perform the following Data Warehouse API Requests and saves the r
 - MonitorSetAgentAssignments
 - MonitorSNMPSetAgentAssignments
 
-Uses the ImportExcel Module to write data to individual worksheets in an Excel Spreadsheet named `AuditResults.xlsx`.  
-Automatically creates the following pivot tables according to auditing best practices, if data for the category was returned by the API.
+The script uses the ImportExcel module to write data to individual worksheets in an Excel spreadsheet named `AuditResults.xlsx`. It automatically creates the following pivot tables according to auditing best practices, if data for the category was returned by the API:
+
 - Windows Build Versions
 - Patch Management Policies
 - Patch Reboot Actions
@@ -59,7 +62,7 @@ Automatically creates the following pivot tables according to auditing best prac
 
 # Payload Usage
 
-Requires all parameters. API Account must be configured in VSA prior to running, and REST API / DataWarehouse scopes must be provided. DataWarehouse token must be gathered as well.
+All parameters are required. The API account must be configured in VSA prior to running, and REST API/Data Warehouse scopes must be provided. The Data Warehouse token must also be gathered.
 
 ```powershell
 ./Get-VSAAuditReports.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiServiceAccount -RestApiToken abcd-1234-efgh-5678 -DataWarehouseApiToken abcd-1234-efgh-5678
@@ -77,7 +80,7 @@ Requires all parameters. API Account must be configured in VSA prior to running,
 
 # Output
 
-Location of output for log, result, and error files.
+Location of output for log, result, and error files:
 
 ```
 ./Get-VSAAuditReports-log.txt
@@ -102,14 +105,3 @@ $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagem
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementDeploymentProfiles.csv
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Users.csv
 ```
-
-
-
-
-
-
-
-
-
-
-

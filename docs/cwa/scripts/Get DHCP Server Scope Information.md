@@ -8,11 +8,12 @@ tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script gathers DHCP information from a target server and saves it to the database for use in a data view or report.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,22 +21,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- Runs PowerShell command to gather DHCP information from a target server
+- Runs a PowerShell command to gather DHCP information from a target server.
 - Creates the [plugin_proval_dhcp_statistics](<../tables/plugin_proval_dhcp_statistics.md>) table if it does not exist.
 
 ## Output
 
-- Table plugin_proval_dhcp_statistics
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Table: `plugin_proval_dhcp_statistics`

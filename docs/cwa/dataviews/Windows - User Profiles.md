@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Displays Windows user profile information gathered from the script [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>).
@@ -25,26 +26,12 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | Location       | The name of the location for the target computer.                                                       |
 | ComputerID     | The ComputerID of the target computer.                                                                  |
 | Computer       | The name of the target computer.                                                                         |
-| User           | The username of the target profile. If `(Inferred)` is appended, then the user could not be found and the username was inferred from the Profile path. |
-| Enabled        | 'True' or 'False' if the local account is enabled. Will be set to 'Remote' when account is not local.  |
+| User           | The username of the target profile. If `(Inferred)` is appended, then the user could not be found and the username was inferred from the profile path. |
+| Enabled        | 'True' or 'False' if the local account is enabled. Will be set to 'Remote' when the account is not local.  |
 | SID            | The SID of the target profile.                                                                           |
 | ProfilePath    | The user folder path for the target profile.                                                            |
 | ProfileSizeMB  | The size of the user folder for the target profile.                                                     |
-| IsLocal        | Shows if the user is a local user.                                                                       |
-| IsAdmin        | Shows if the user is a local admin.                                                                      |
+| IsLocal        | Indicates if the user is a local user.                                                                   |
+| IsAdmin        | Indicates if the user is a local admin.                                                                  |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

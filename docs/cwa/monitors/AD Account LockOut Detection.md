@@ -8,22 +8,23 @@ tags: ['active-directory', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ### Step 1
 Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only`.
 
 ---
 
 ### Step 2
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well and the alert template is executing this script for failures only.
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md) script was imported as well and that the alert template is executing this script for failures only.
 
 ---
 
 ### Step 3
 Run this SQL query from a RAWSQL monitor set to create and set the remote monitor on the Domain Controllers group:
 
-```
-SET @Groupid= (SELECT Groupid FROM mastergroups WHERE `GUID` = '3ac455da-f1fb-11e1-b4ec-1231391d2d19');
-SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
+```sql
+SET @Groupid = (SELECT Groupid FROM mastergroups WHERE `GUID` = '3ac455da-f1fb-11e1-b4ec-1231391d2d19');
+SET @Searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -36,7 +37,7 @@ SELECT '' as `AgentID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$st = (Get-Date).AddMinutes(-15); $r = Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=/'security/'; id=4740; startTime=$st} | ForEach-Object {$ex = ([xml]$_.ToXml()).Event; $e = [ordered]@{EventDate = [DateTime]$ex.System.TimeCreated.SystemTime};$ex.EventData.ChildNodes | ForEach-Object{$e[$_.Name] = $_.'#text'};[PsCustomObject]$e}; if ($r) { $r | Select-Object  @{n=/'EventID/';e={/'4740/'}}, @{n=/'EventDate/';e={$_.eventdate}}, @{n=/'Username/';e={$_.TargetUserName}}, @{n=/'Endpoint/';e={$_.TargetDomainName}}, @{n=/'Domain/';e={$_.SubjectDomainName}}, @{n=/'DC/'; e={$_.SubjectUserName}} | Format-List }"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$st = (Get-Date).AddMinutes(-15); $r = Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=\'security\'; id=4740; startTime=$st} | ForEach-Object {$ex = ([xml]$_.ToXml()).Event; $e = [ordered]@{EventDate = [DateTime]$ex.System.TimeCreated.SystemTime};$ex.EventData.ChildNodes | ForEach-Object{$e[$_.Name] = $_.'#text'};[PsCustomObject]$e}; if ($r) { $r | Select-Object  @{n=\'EventID\';e={\'4740\'}}, @{n=\'EventDate\';e={$_.eventdate}}, @{n=\'Username\';e={$_.TargetUserName}}, @{n=\'Endpoint\';e={$_.TargetDomainName}}, @{n=\'Domain\';e={$_.SubjectDomainName}}, @{n=\'DC\'; e={$_.SubjectUserName}} | Format-List }"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})EventID)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})EventID' as `DataIn`,
 '' as `IDField`,
@@ -89,8 +90,8 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
-WHERE m.groupid = @groupid
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - AD Account Lockout Detection');
+WHERE m.groupid = @Groupid
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - AD Account Lockout Detection');
 ```
 
 ---
@@ -106,16 +107,3 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
-
-
-
-
-
-
-
-
-
-
-
-
-

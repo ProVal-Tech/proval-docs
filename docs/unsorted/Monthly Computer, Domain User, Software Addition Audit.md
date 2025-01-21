@@ -8,39 +8,26 @@ tags: ['installation', 'software', 'update', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the audit of last month's new computer added to the client environment, new software addition on the computer level audit, and new domain user addition audit on the domain level.  
-Column description:  
+This document provides an audit of last month's new computers added to the client environment, new software additions at the computer level, and new domain user additions at the domain level.
 
 ## Columns
 
 | Column                          | Description                                                                  |
 |---------------------------------|------------------------------------------------------------------------------|
-| Client Name                     | Client Name of the agent                                                    |
-| Location Name                   | Location Name of the agent                                                  |
-| Computer Name                   | Computer name of the agent                                                 |
-| Operating System                 | Operating system of the agent                                              |
-| Agent Status                    | Agent status whether agent is online or offline                             |
-| Agent Installation Date         | Agent installation date of the agent                                       |
-| Newly Computer Name             | A newly computer name list which was added in last month of a client       |
-| Newly Computer Count            | Newly computer added count of last month                                   |
-| Newly Software Name             | Newly software added list of last month computer based                     |
-| Newly Software Count            | Newly software count of last month computer based                          |
-| Software Install Date           | Newly software added install date list of last month in synchronized manner |
-| Newly Added Domain User         | Domain users list of last month added                                      |
-| Newly Added Account Count       | Domain users count of last month added                                     |
-| Domain Account Creation Date     | Domain Account Creation Date of last month                                  |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name                     | Name of the client associated with the agent                                 |
+| Location Name                   | Location of the agent                                                        |
+| Computer Name                   | Name of the computer associated with the agent                               |
+| Operating System                 | Operating system used by the agent                                           |
+| Agent Status                    | Status of the agent (online or offline)                                      |
+| Agent Installation Date         | Date when the agent was installed                                            |
+| Newly Computer Name             | List of newly added computer names from last month                           |
+| Newly Computer Count            | Count of newly added computers from last month                               |
+| Newly Software Name             | List of newly added software for last month                                   |
+| Newly Software Count            | Count of newly added software for last month                                  |
+| Software Install Date           | Installation dates of newly added software from last month                   |
+| Newly Added Domain User         | List of domain users added in the last month                                 |
+| Newly Added Account Count       | Count of domain users added in the last month                                |
+| Domain Account Creation Date     | Creation dates of domain accounts added in the last month                    |

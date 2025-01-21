@@ -8,23 +8,24 @@ tags: ['performance', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor set helps check if the computer had any recent unexpected shutdowns and gives basic details about them, offering insights into possible reasons.
+The monitor set helps check if the computer had any recent unexpected shutdowns and provides basic details about them, offering insights into possible reasons.
 
-Requirement: PowerShell v5+
+**Requirement:** PowerShell v5+
 
 ## Details
 
-**Suggested "Limit to"**: Windows machines with PowerShell v5+ (Windows 10, 11, Server 2016, 2019, 2022)  
-**Suggested Alert Style**: Continuous  
-**Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only  
+**Suggested "Limit to":** Windows machines with PowerShell v5+ (Windows 10, 11, Server 2016, 2019, 2022)  
+**Suggested Alert Style:** Continuous  
+**Suggested Alert Template:** △ Custom - Ticket Creation Computer - Failures Only  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Condition | Interval | Result |
-|--------------|----------------|------------|---------------|-----------|----------|--------|
-| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based| 3600     | \<Screenshot Below> |
+| Check Action | Server Address | Check Type | Execute Info | Condition | Interval | Result               |
+|--------------|----------------|------------|---------------|-----------|----------|----------------------|
+| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based| 3600     | \<Screenshot Below>   |
 
 ![Screenshot](../../../static/img/Unexpected-Shutdown/image_1.png)
 
@@ -45,7 +46,7 @@ Managed Windows machines with PowerShell v5+ (Windows 10, 11, Server 2016, 2019,
 **Example 1:**
 
 ```
-The previous system shutdown at 7:44:21 AM at ‎1/‎8/‎2024 was unexpected.
+The previous system shutdown at 7:44:21 AM on 1/8/2024 was unexpected.
 Event ID: 41
 --------------------------------------
 EventDate                      : 1/9/2024 2:47:50 AM
@@ -77,7 +78,7 @@ Please review this article for more information on the detected BugCheckCode: [E
 **Example 2:**
 
 ```
-The previous system shutdown at 9:24:16 AM at ‎1/‎10/‎2024 was unexpected.
+The previous system shutdown at 9:24:16 AM on 1/10/2024 was unexpected.
 Event ID: 41
 --------------------------------------
 EventDate                      : 1/10/2024 3:17:30 PM
@@ -103,13 +104,13 @@ InputSuppressionState       : 0
 PowerButtonSuppressionState  : 0
 LidState                    : 1
 ----------------------------------------
-The computer was not shutdown due to a it crashing or a user pressing the powerbutton most likely cause was a power outage.
+The computer was not shut down due to crashing or a user pressing the power button; the most likely cause was a power outage.
 ```
 
 **Example 3:**
 
 ```
-The previous system shutdown at 11:13:56 PM at ‎2/‎21/‎2024 was unexpected.
+The previous system shutdown at 11:13:56 PM on 2/21/2024 was unexpected.
 Event ID: 41
 --------------------------------------
 EventDate                      : 2/22/2024 12:14:50 AM
@@ -141,16 +142,3 @@ The user pressed the power button.
 ## Implementation
 
 [Import - Remote Monitor - Unexpected Shutdown](<./Unexpected Shutdown.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

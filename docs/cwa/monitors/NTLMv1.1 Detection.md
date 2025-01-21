@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Checks whether the NTLMv1.1 is enabled on the end machine or not.
+This document checks whether NTLMv1.1 is enabled on the end machine.
 
 ## Details
 
@@ -18,7 +19,7 @@ Checks whether the NTLMv1.1 is enabled on the end machine or not.
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default Do Nothing  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator   | Interval | Result                                       |
 |--------------|----------------|-------------|-------------|---------------|----------|----------------------------------------------|
@@ -35,16 +36,3 @@ Managed Windows Computers
 ## How to Import
 
 [Import - Remote Monitor - NTLMv1.1 Detection](<./NTLMv1.1 Detection.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

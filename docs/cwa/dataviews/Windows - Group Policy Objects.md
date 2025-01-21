@@ -8,9 +8,10 @@ tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows information about GPOs, their applied policies, where they are linked to, and to what trustees they are applied to. The dataview output comes from dependent script.
+This dataview shows information about GPOs, their applied policies, where they are linked, and to which trustees they are applied. The dataview output comes from a dependent script.
 
 ## Dependencies
 
@@ -28,23 +29,10 @@ This dataview shows information about GPOs, their applied policies, where they a
 | Domain          | Domain joined detail of DC                       |
 | GPO             | Applied GPO policy                               |
 | GPO GUID        | GPO GUID information                             |
-| ComputerEnabled  | Shows if the Computer section of the GPO is enabled. |
-| UserEnabled     | Shows if the User section of the GPO is enabled. |
-| Created Time    | GPO created date and time information           |
+| Computer Enabled | Indicates if the Computer section of the GPO is enabled. |
+| User Enabled     | Indicates if the User section of the GPO is enabled. |
+| Created Time    | GPO creation date and time information           |
 | Modified Time   | GPO last modified date and time                 |
 | Read Time       | GPO last check time                              |
 | OU Links        | Created OUs path                                 |
-
-
-
-
-
-
-
-
-
-
-
-
-
 

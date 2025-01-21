@@ -8,6 +8,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](<./Scheduled Task Winget Update All (Create).md>) task.
@@ -32,7 +33,7 @@ The ultimate objective of the task is to remove the scheduled tasks (Winget Upda
 
 ### Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_3.png)
 
@@ -86,11 +87,11 @@ Type `Unsupported` in the `Input Value or Variable` field and press `Enter`.
 
 ### Row 2b Function: Script Log
 
-Add a new row by clicking on `Add row` button.
+Add a new row by clicking on the `Add row` button.
 
 ![Row 2b Step 1](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_14.png)
 
-Search and select `Script Log` function.
+Search and select the `Script Log` function.
 
 ![Row 2b Step 2](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_15.png)
 
@@ -106,9 +107,9 @@ Supported OS are Windows 10 and Windows 11
 
 ### Row 2c Function: Script Exit
 
-Add a new row by clicking on `Add row` button.
+Add a new row by clicking on the `Add row` button.
 
-Search and select `Script Exit` function.
+Search and select the `Script Exit` function.
 
 ### Note:
 Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
@@ -123,12 +124,12 @@ Click the `Save` button at the top right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per day against the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
+It is suggested to run the task once per day against the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Scheduled Task Winget Update All (Delete) Task.`
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task.
+- Click on the `Schedule` button to schedule the task.
 
 ![Schedule Task](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_18.png)
 
@@ -152,7 +153,7 @@ Select the `Device Groups` option in the `Targeted Resources` section.
 
 ![Device Groups](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_23.png)
 
-Search and Select the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
+Search and select the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
 
 ![Device Group Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_24.png)
 
@@ -168,15 +169,3 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

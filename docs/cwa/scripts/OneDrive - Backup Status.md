@@ -8,11 +8,12 @@ tags: ['backup', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script gathers information about the status of the built in OneDrive backup functionality for the currently logged in user.
+This script gathers information about the status of the built-in OneDrive backup functionality for the currently logged-in user.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,24 +21,11 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-[OneDrive - Backup Status](https://proval.itglue.com/DOC-5078775-8028415)  
-[EPM - Windows Configuration - Custom Table - plugin_proval_onedrivebackupstatus](<../tables/plugin_proval_onedrivebackupstatus.md>)
+- [OneDrive - Backup Status](https://proval.itglue.com/DOC-5078775-8028415)  
+- [EPM - Windows Configuration - Custom Table - plugin_proval_onedrivebackupstatus](<../tables/plugin_proval_onedrivebackupstatus.md>)
 
 ## Output
 
 - Script log
-- custom table
+- Custom table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

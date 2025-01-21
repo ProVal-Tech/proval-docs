@@ -8,16 +8,17 @@ tags: ['active-directory', 'cleanup', 'database', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes all rows from the following tables:
+This document outlines the cleanup process for the Active Directory Plugin in ConnectWise Automate. It involves removing all rows from the following tables:
 
-- plugin_ad_computers
-- plugin_ad_memberofxrefs
-- plugin_ad_userproxyaddresses
-- plugin_ad_users
+- `plugin_ad_computers`
+- `plugin_ad_memberofxrefs`
+- `plugin_ad_userproxyaddresses`
+- `plugin_ad_users`
 
-Removes all rows with ObjectType 1 or 2 from plugin_ad_entries.
+Additionally, it removes all rows with `ObjectType` 1 or 2 from `plugin_ad_entries`.
 
 ## Requirements
 
@@ -25,20 +26,9 @@ Removes all rows with ObjectType 1 or 2 from plugin_ad_entries.
 
 ## Dependencies
 
-- "Run Full Active Directory Sync" script from Automate's Active Directory plugin.
+- The "Run Full Active Directory Sync" script from Automate's Active Directory plugin.
 
 ## Implementation
 
-1. Import the 'Clean Up AD Plugin' script
-2. Schedule the client script to run
-
-
-
-
-
-
-
-
-
-
-
+1. Import the 'Clean Up AD Plugin' script.
+2. Schedule the client script to run.

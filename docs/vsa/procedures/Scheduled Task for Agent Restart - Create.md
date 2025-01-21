@@ -8,9 +8,10 @@ tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Creates a Scheduled task that attempts to restart the VSA Agent every 15 minutes to prevent VSA agents from going offline without notification.
+This document creates a scheduled task that attempts to restart the VSA Agent every 15 minutes to prevent VSA agents from going offline without notification.
 
 ## Sample Run
 
@@ -19,39 +20,27 @@ Creates a Scheduled task that attempts to restart the VSA Agent every 15 minutes
 | 13:49:09 28-Apr-22    | Scheduled Task for Agent Restart - Create     | Success THEN                                      | provaltech.com/dan.hicks    |
 | 13:49:08 28-Apr-22    | Scheduled Task for Agent Restart - Create-0001| Batch file created successfully. Scheduling task. | provaltech.com/dan.hicks    |
 | 13:49:08 28-Apr-22    | Write text to file                            | Success THEN                                      | provaltech.com/dan.hicks    |
-| 13:48:59 28-Apr-22    | Run Now - Scheduled Task for Agent Restart - Create | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Scheduled Task for Agent Restart - Create to run at Apr 28 2022 1:48PM | provaltech.com/dan.hick     |
+| 13:48:59 28-Apr-22    | Run Now - Scheduled Task for Agent Restart - Create | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Scheduled Task for Agent Restart - Create to run at Apr 28 2022 1:48 PM | provaltech.com/dan.hicks    |
 
 ## Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.
+This section should list the ITGlue documents found in the Related Items sidebar on which this script depends.
 
 - [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](<./Scheduled Task for Agent Restart - Remove.md>)
 - [Restart VSA Agent on Schedule](<./Restart VSA Agent on Schedule.md>) (Solution)
 
 ## Process
 
-Creates a batch file on the endpoint that restarts the agent service (which needs to be configured per environment based on Service Name) and runs the schtask command to schedule this check every 15 minutes, as system user.
+This document creates a batch file on the endpoint that restarts the agent service (which needs to be configured per environment based on Service Name) and runs the `schtask` command to schedule this check every 15 minutes as the system user.
 
-Note: `#serviceName#` MUST be manually filled for each client deployment.
+**Note:** `#serviceName#` MUST be manually filled in for each client deployment.
 
 ## Output
 
-The location and method by which this script returns data.
+This section describes the location and method by which this script returns data.
 
 - Agent Procedure Log
 
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
-

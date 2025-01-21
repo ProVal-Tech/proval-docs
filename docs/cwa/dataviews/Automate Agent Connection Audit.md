@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The dataview compares the time a computer was online versus offline over the past 30 days. It also provides detailed status updates for the past 7 days and the past 24 hours.
@@ -38,7 +39,7 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 | Operating System                | Operating System                                                                                    |
 | Last Contact                    | Last Contact time with Automate                                                                     |
 | Last LoggedIn User              | Last LoggedIn User on the computer                                                                   |
-| Minutes Since Last Contact      | Minutes Since it last contacted with Automate                                                       |
+| Minutes Since Last Contact      | Minutes since it last contacted Automate                                                            |
 | Form Factor                     | Computer type (Physical Server/Virtual Server/Laptop/Desktop)                                       |
 | Online Minutes - 24 Hours       | Number of minutes the computer was online in the past 24 hours                                      |
 | Offline Minutes - 24 Hours      | Number of minutes the computer was offline in the past 24 hours                                     |
@@ -58,17 +59,4 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 | Offline - 30 Days               | Amount of time for which the computer was offline in the past 30 days (Format: 'xxday xxhr xxmin'; example: '14day 10hr 38min') |
 | Online Percentage - 30 Days     | Percentage of time the computer was online in the past 30 days                                      |
 | Offline Percentage - 30 Days    | Percentage of time the computer was offline in the past 30 days                                     |
-| Days since Data Collection       | Number of days the current calculations displayed in the dataview is based upon. It may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. It is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Days Since Data Collection       | Number of days the current calculations displayed in the dataview are based upon. It may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. It is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`. |

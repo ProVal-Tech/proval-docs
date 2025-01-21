@@ -8,23 +8,26 @@ tags: ['database', 'performance']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Monitor is created by the [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>) automate script. It returns failed if the computer is offline, and success when online.
+This monitor is created by the [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>) automate script. It returns a failure if the computer is offline and success when online.
 
-Internal Monitor settings:
-- Interval - 5 minute
-- Mode - Send fail after success
-- Table - Computers
-- Field - LastContact
-- Condition - Lessthan
-- Result - (NOW() - Interval 5 Minute)
-- Identity - Computers.Name
-- Target Groups - Machines with Queued Scripts
+### Internal Monitor Settings
 
-Group level configuration:
-- Alert template - ~Autofix - Run Queued Scripts
-- State - Enabled
+- **Interval:** 5 minutes
+- **Mode:** Send fail after success
+- **Table:** Computers
+- **Field:** LastContact
+- **Condition:** Less than
+- **Result:** (NOW() - Interval 5 Minutes)
+- **Identity:** Computers.Name
+- **Target Groups:** Machines with Queued Scripts
+
+### Group Level Configuration
+
+- **Alert Template:** ~Autofix - Run Queued Scripts
+- **State:** Enabled
 
 ## Dependencies
 
@@ -35,23 +38,23 @@ Group level configuration:
 
 ## Target
 
-The suggested target for the monitor. This will be partially generalized as group names can vary between Automate systems. Examples:
+The suggested target for the monitor will be partially generalized, as group names can vary between Automate systems. Examples:
 
-'Machines With Queued Scripts' Group only
+- 'Machines With Queued Scripts' Group only
 
 ## Translated SQL
 
-```
-Select 
+```sql
+SELECT 
   DISTINCT 'C', 
   computers.computerid, 
-  computers.Name as ComputerName, 
-  Convert(
+  computers.Name AS ComputerName, 
+  CONVERT(
     CONCAT(
       clients.name, ' ', locations.name
-    ) Using utf8
-  ) As Location, 
-  computers.`LastContact` as TestValue, 
+    ) USING utf8
+  ) AS Location, 
+  computers.`LastContact` AS TestValue, 
   Computers.Name 
 FROM 
   ( 
@@ -59,25 +62,14 @@ FROM
     LEFT JOIN Locations ON Locations.LocationID = computers.Locationid
   ) 
   LEFT JOIN Clients ON Clients.ClientID = Computers.clientid 
-  JOIN AgentComputerData on Computers.ComputerID = AgentComputerData.ComputerID 
+  JOIN AgentComputerData ON Computers.ComputerID = AgentComputerData.ComputerID 
 WHERE 
-  computers.`LastContact` \< (NOW() - Interval 5 Minute) 
+  computers.`LastContact` < (NOW() - INTERVAL 5 MINUTE) 
   AND Computers.ComputerID IN (
-    Select 
-      Distinct ComputerID 
-    From 
+    SELECT 
+      DISTINCT ComputerID 
+    FROM 
       Tcomp
   )
 ```
-
-
-
-
-
-
-
-
-
-
-
 

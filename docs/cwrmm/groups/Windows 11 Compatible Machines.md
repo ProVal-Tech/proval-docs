@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Windows 10 computers which are compatible with Windows 11 upgrade.
+This document describes how to identify Windows 10 computers that are compatible with the Windows 11 upgrade.
 
 ## Dependencies
 
@@ -23,11 +24,11 @@ Windows 10 computers which are compatible with Windows 11 upgrade.
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
    ![Image](../../../static/img/Windows-11-Compatible-Machines/image_2.png)  
-   This page will appear after clicking on the `Dynamic Group` button:  
+   This page will appear after clicking the `Dynamic Group` button:  
    ![Image](../../../static/img/Windows-11-Compatible-Machines/image_3.png)
 
 3. Set the group name to `Windows 11 Compatible Machines`.  
-   Description: `Windows 10 computers which are compatible with Windows 11 upgrade.`  
+   Description: `Windows 10 computers that are compatible with the Windows 11 upgrade.`  
    ![Image](../../../static/img/Windows-11-Compatible-Machines/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
@@ -58,15 +59,3 @@ Windows 10 computers which are compatible with Windows 11 upgrade.
 
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_14.png)  
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_15.png)
-
-
-
-
-
-
-
-
-
-
-
-

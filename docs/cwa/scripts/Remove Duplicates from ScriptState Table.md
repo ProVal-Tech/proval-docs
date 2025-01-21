@@ -8,14 +8,15 @@ tags: ['cleanup', 'database', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Clears duplicate entries from the scriptstate table.  
-It is a client script and can be scheduled to run once per day.
+This document outlines the process to clear duplicate entries from the scriptstate table.  
+It is a client script that can be scheduled to run once per day.
 
 ## Sample Run
 
-To be scheduled as a client script.  
+This script is to be scheduled as a client script.  
 ![Sample Run Image](../../../static/img/Remove-Duplicates-from-ScriptState-Table/image_1.png)
 
 ## Variables
@@ -27,26 +28,19 @@ To be scheduled as a client script.
 | @SqlComputerid@    | Distinct Computerid                                                                                   |
 | @SqlVariable@      | Distinct Variable                                                                                     |
 | @SqlNumberofValues@| Total number of duplicate entries for the distinct variable for the distinct computer for the distinct scriptid |
-| @Limit@            | @SqlNumberofValue - 1                                                                                 |
-| %sqlresult%        | To refresh the loop counter                                                                            |
+| @Limit@            | @SqlNumberofValues - 1                                                                                |
+| %sqlresult%        | Used to refresh the loop counter                                                                       |
 
 ## Process
 
-Step 1: Fetches the total number of duplicate entries per scriptid per computerid per variable from the scriptstate table using the following SQL Query:  
-`select scriptid, variable, computerid, count(*) as NumberofValues from scriptstate group by scriptid, variable, computerid Having Numberofvalues > 1`
+**Step 1:** Fetch the total number of duplicate entries per scriptid, per computerid, and per variable from the scriptstate table using the following SQL query:  
+```sql
+SELECT scriptid, variable, computerid, COUNT(*) AS NumberofValues 
+FROM scriptstate 
+GROUP BY scriptid, variable, computerid 
+HAVING NumberofValues > 1;
+```
 
-Step 2: Exits, if the total number of results in the above step is zero.  
+**Step 2:** Exit if the total number of results from the above step is zero.  
 
-Step 3: Runs a loop to delete all the duplicate entries for each Script state per computer per script.
-
-
-
-
-
-
-
-
-
-
-
-
+**Step 3:** Run a loop to delete all the duplicate entries for each script state per computer per script.

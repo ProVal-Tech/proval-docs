@@ -8,9 +8,10 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Task is used to install the fonts from a particular directory or file.
+This task is used to install fonts from a particular directory or file.
 
 ## Sample Run
 
@@ -31,17 +32,17 @@ This Task is used to install the fonts from a particular directory or file.
 ![User Parameters](../../../static/img/Install-Font/image_5.png)
 
 **Note:**  
-- If parameter is set to NULL, the script will throw an error.
+- If the parameter is set to NULL, the script will throw an error.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Install-Font/image_6.png)  
 ![Task Creation 2](../../../static/img/Install-Font/image_7.png)  
 
 **Name:** Install Font  
-**Description:** This script is used to install the fonts from a particular directory or file.  
+**Description:** This script is used to install fonts from a particular directory or file.  
 **Category:** Custom  
 
 ### Parameters
@@ -66,7 +67,7 @@ Click the `Confirm` button to save the parameter.
 
 ### Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Install-Font/image_12.png)  
 
@@ -91,7 +92,7 @@ The following function will pop up on the screen:
 $Path = '@Path@'
 $Parameters = @{}
 
-if ($Path -notmatch ":/") {
+if ($Path -notmatch ":\") {
     throw "Invalid Path."
 } else {
     $Parameters["Path"] = $Path
@@ -158,7 +159,6 @@ A blank function will appear.
 Search and select the `Script Log` function.
 
 ![Select Script Log](../../../static/img/Install-Font/image_19.png)  
-
 ![Script Log Function](../../../static/img/Install-Font/image_20.png)  
 
 The following function will pop up on the screen:
@@ -180,15 +180,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

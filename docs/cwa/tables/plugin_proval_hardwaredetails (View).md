@@ -8,6 +8,7 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Displays detailed hardware information about all applicable agents in an Automate environment.
@@ -42,7 +43,7 @@ Displays detailed hardware information about all applicable agents in an Automat
 | Location Router                  | VARCHAR  | The Location router IP address of the audited computer.                                        |
 | Location Router Port             | INT      | The Location router port of the audited computer.                                              |
 | ComputerID                       | INT      | The ComputerID of the audited computer.                                                        |
-| OS Version                       | VARCHAR  | The version of running OS of the audited computer.                                             |
+| OS Version                       | VARCHAR  | The version of the running OS of the audited computer.                                         |
 | Agent Version                    | VARCHAR  | The currently installed agent version of the audited computer.                                  |
 | Agent Comment                    | VARCHAR  | The optional comment about the audited computer.                                               |
 | Agent Last Contact Date          | DATETIME | The last time the agent checked in with the Automate server.                                   |
@@ -64,7 +65,7 @@ Displays detailed hardware information about all applicable agents in an Automat
 | Agent Windows Domain             | VARCHAR  | The joined domain (or workgroup) of the audited computer.                                     |
 | Manufacturer                     | VARCHAR  | The hardware manufacturer of the audited computer.                                            |
 | Agent IP Address                 | VARCHAR  | The local IP address of the audited computer.                                                 |
-| Agent asset Tag                  | VARCHAR  | The asset tag of the audited computer. (if available)                                         |
+| Agent Asset Tag                  | VARCHAR  | The asset tag of the audited computer (if available).                                         |
 | Agent Asset Date                 | DATETIME | The last time an asset scan was run.                                                           |
 | Drive Letters                    | TEXT     | Comma-separated list of drive letters of the audited computer.                                 |
 | Drive Models                     | TEXT     | Comma-separated list of drive models of the audited computer.                                  |
@@ -79,51 +80,40 @@ Displays detailed hardware information about all applicable agents in an Automat
 | Chassis Version                  | VARCHAR  | The make/model of the audited computer.                                                       |
 | Chassis Product Name             | VARCHAR  | The make/model ID number of the audited computer.                                             |
 | Chassis Manufacturer              | VARCHAR  | The manufacturer of the audited computer.                                                     |
-| Chassis SerialNumber             | VARCHAR  | The serial of the audited computer.                                                             |
-| Chassis Lastdate Updated         | TIMESTAMP| The last time the agent was queried for Chassis information.                                   |
-| Bios Version                     | VARCHAR  | The version of the BIOS of the audited computer.                                              |
-| Bios Last Updated                | VARCHAR  | Last time the BIOS was updated.                                                                 |
-| Bios Size                        | INT      | The size in KB of the BIOS                                                                       |
+| Chassis Serial Number             | VARCHAR  | The serial of the audited computer.                                                             |
+| Chassis Last Date Updated        | TIMESTAMP| The last time the agent was queried for chassis information.                                   |
+| BIOS Version                     | VARCHAR  | The version of the BIOS of the audited computer.                                              |
+| BIOS Last Updated                | VARCHAR  | Last time the BIOS was updated.                                                                 |
+| BIOS Size                        | INT      | The size in KB of the BIOS                                                                       |
 | Virtual Machine Type             | VARCHAR  | The type of VM that the agent is (if applicable)                                              |
-| Bios Netbootstatus               | VARCHAR  | Information about if network boot is enabled on the audited computer.                          |
+| BIOS Netboot Status              | VARCHAR  | Information about if network boot is enabled on the audited computer.                          |
 | Machine Type                     | VARCHAR  | Determines if the machine is a Host (Physical) or VM (Virtual)                                |
 | Device Names                     | VARCHAR  | Comma-separated list of all detected devices connected to the machine.                         |
 | Network Device Names             | TEXT     | Comma-separated list of all detected network devices connected to the machine.                 |
-| Network Mac Address              | VARCHAR  | MAC address of the agent.                                                                        |
+| Network MAC Address              | VARCHAR  | MAC address of the agent.                                                                        |
 | Network IP Address               | VARCHAR  | IP address of the agent.                                                                         |
 | Network Card Speed               | VARCHAR  | Reported network speed of the agent's network card.                                            |
 | Video Processor Name             | VARCHAR  | Primary graphics processor name.                                                                 |
-| Video Processor resolution        | VARCHAR  | Current video resolution.                                                                        |
+| Video Processor Resolution        | VARCHAR  | Current video resolution.                                                                        |
 | Video Processor Architecture      | VARCHAR  | Video architecture.                                                                              |
-| Video Processor pixel            | VARCHAR  | Color-depth of the video processor.                                                             |
-| VideoCard last dateupdated       | VARCHAR  | Last update of the video processor.                                                             |
-| VideoProcessor Card memory       | VARCHAR  | Amount of VRAM available to the video processor.                                               |
+| Video Processor Pixel            | VARCHAR  | Color-depth of the video processor.                                                             |
+| Video Card Last Date Updated     | VARCHAR  | Last update of the video processor.                                                             |
+| Video Processor Card Memory      | VARCHAR  | Amount of VRAM available to the video processor.                                               |
 | Operating System Version         | VARCHAR  | The numerical version of the installed OS.                                                     |
-| OS Build version                 | INT      | The numerical build version of the installed OS (Windows 10+ only)                             |
-| OS ServicePack                   | VARCHAR  | The currently installed service pack.                                                           |
-| Domain name                      | VARCHAR  | The domain or workgroup that the machine is joined to.                                         |
-| .Net Version                     | VARCHAR  | Highest .NET version of the target agent.                                                      |
-| OS edition                       | VARCHAR  | Installed edition of the OS (Pro, Home, etc.)                                                  |
+| OS Build Version                 | INT      | The numerical build version of the installed OS (Windows 10+ only)                             |
+| OS Service Pack                  | VARCHAR  | The currently installed service pack.                                                           |
+| Domain Name                      | VARCHAR  | The domain or workgroup that the machine is joined to.                                         |
+| .NET Version                     | VARCHAR  | Highest .NET version of the target agent.                                                      |
+| OS Edition                       | VARCHAR  | Installed edition of the OS (Pro, Home, etc.)                                                  |
 | OS License Status                | VARCHAR  | Shows if the OS is currently licensed.                                                          |
 | Domain Controller                 | VARCHAR  | YES/NO on if the machine is a domain controller.                                               |
-| Systemslot Name                  | VARCHAR  | Determines if there is an express/media slot on the machine.                                   |
-| Systemslot Type                  | VARCHAR  | The type of slot (PCI Express, USB, etc.)                                                      |
-| SystemSlot last dateupdated      | VARCHAR  | Last update of the system slot.                                                                  |
-| ProbeFan Monitor                 | VARCHAR  | Information about the fan monitor.                                                              |
+| System Slot Name                 | VARCHAR  | Determines if there is an express/media slot on the machine.                                   |
+| System Slot Type                 | VARCHAR  | The type of slot (PCI Express, USB, etc.)                                                      |
+| System Slot Last Date Updated     | VARCHAR  | Last update of the system slot.                                                                  |
+| Probe Fan Monitor                | VARCHAR  | Information about the fan monitor.                                                              |
 | Fan Sensor                       | VARCHAR  | Information about the fan sensor.                                                                |
 | UPS Name                         | VARCHAR  | Information about an attached UPS device.                                                       |
-| UPS Last updated by              | VARCHAR  | Information about the UPS last updated user.                                                   |
-| UPS last updated                 | VARCHAR  | Information about when the UPS status was last updated.                                        |
+| UPS Last Updated By              | VARCHAR  | Information about the UPS last updated user.                                                   |
+| UPS Last Updated                 | VARCHAR  | Information about when the UPS status was last updated.                                        |
 | UPS Replacement Status           | VARCHAR  | Information about if the UPS needs to be updated.                                              |
 | Printer Names                    | TEXT     | Comma-separated list of all connected printers to the machine.                                  |
-
-
-
-
-
-
-
-
-
-
-

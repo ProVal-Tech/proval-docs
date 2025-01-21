@@ -8,6 +8,7 @@ tags: ['security', 'web-browser', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The remote monitor attempts to disable the Autofilling feature for credit cards in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave. This solution entails modifying the computer's registry settings.
@@ -22,7 +23,7 @@ The remote monitor attempts to disable the Autofilling feature for credit cards 
 ![Brave Setting](../../../static/img/Lockdown-Chromium-Browsers-Credit-Card-Autofill/image_3.png)
 
 **Note:**
-- The changes will only happen once the browser is restarted if it's currently open.
+- The changes will only take effect once the browser is restarted if it is currently open.
 - If the PowerShell version on the machines is older than version 5, the remote monitor may not produce the expected outcomes.
 
 ## Details
@@ -54,15 +55,3 @@ Using any alert templates is not recommended unless the partner specifically des
 ## Implementation
 
 [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)
-
-
-
-
-
-
-
-
-
-
-
-

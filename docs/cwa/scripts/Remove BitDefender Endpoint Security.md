@@ -8,14 +8,15 @@ tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an automate implementation of the agnostic Remove-BitdefenderEndpointSecurity script.
+This document provides an automated implementation of the agnostic Remove-BitdefenderEndpointSecurity script.
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/Remove-BitDefender-Endpoint-Security/image_1.png)  
-Running this will remove Bitdefender Endpoint Security from the target.
+Running this script will remove Bitdefender Endpoint Security from the target system.
 
 ## Dependencies
 
@@ -28,15 +29,3 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

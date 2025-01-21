@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Columns
 
 | Column              | Type    | Description                                                                                                                  |
@@ -16,24 +17,11 @@ unlisted: false
 | Location            | VARCHAR | The name of the location.                                                                                                   |
 | Computer            | VARCHAR | The name of the computer.                                                                                                   |
 | Starting Version    | VARCHAR | This script state is created by the Windows 10 Upgrade Assistant Script when it is run. It will only update after that script completes. |
-| End Version         | VARCHAR | This script state is created by the Windows 10 Upgrade Assistant Follow Up Script when it is run. It will only update after that script completes. |
+| End Version         | VARCHAR | This script state is created by the Windows 10 Upgrade Assistant Follow-Up Script when it is run. It will only update after that script completes. |
 | Start Date          | VARCHAR | The day and time that the script was run.                                                                                  |
 | End Date            | VARCHAR | The day and time that the follow-up script ran to verify the new data.                                                    |
-| Last Run Status     | VARCHAR | The calculated column based on the result comparing the starting version and the end version displayed as "Success" and "Failure". |
+| Last Run Status     | VARCHAR | The calculated column based on the result comparing the starting version and the end version, displayed as "Success" and "Failure". |
 
 ## Dependencies
 
-This data is populated by the Windows 10 - Upgrade Assistant script as well as a secondary Windows 10 - Upgrade Assistant Follow Up script. Without these scripts, this dataview will not be able to effectively display the data.
-
-
-
-
-
-
-
-
-
-
-
-
-
+This data is populated by the Windows 10 Upgrade Assistant script as well as a secondary Windows 10 Upgrade Assistant Follow-Up script. Without these scripts, this data view will not be able to effectively display the data.

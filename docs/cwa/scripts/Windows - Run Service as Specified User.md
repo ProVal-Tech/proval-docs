@@ -8,11 +8,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will start a specified Service with a specific user account. This will work for both Domain and local user accounts.
+This script will start a specified service with a specific user account. It works for both domain and local user accounts.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -24,24 +25,12 @@ Time Saved by Automation: 10 Minutes
 |-------------|-----------|----------|-------------------------------------------------------------------------|
 | username    | pronoc    | True     | The username whose authentication is required to run the service        |
 | password    | ********* | True     | The password to authenticate to run the service                          |
-| servicename | wuauserv  | True     | The service which is required to run with provided user credential      |
+| servicename | wuauserv  | True     | The service that is required to run with the provided user credentials   |
 
 ## Process
 
-This script will start a specified Service with a specific user account. This will work for both Domain and local user accounts. Script will also try to restart the service after log on account change and verify the result accordingly.
+This script will start a specified service with a specific user account. It works for both domain and local user accounts. The script will also attempt to restart the service after the logon account change and verify the result accordingly.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

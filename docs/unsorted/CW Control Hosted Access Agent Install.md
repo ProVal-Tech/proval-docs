@@ -8,9 +8,10 @@ tags: ['connectwise', 'installation']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-Script will use the client level EDF's to download and install a CW Control agent on the system.
+This script will use the client level EDFs to download and install a CW Control agent on the system.
 
 ## Sample Run
 
@@ -18,43 +19,30 @@ Script will use the client level EDF's to download and install a CW Control agen
 
 ## Dependencies
 
-Client Level EDF -  
+**Client Level EDF**  
 ![Client Level EDF](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_2.png)
 
-Agent Level EDF -  
+**Agent Level EDF**  
 ![Agent Level EDF](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_3.png)
 
 ## Variables
 
-- `@Hosted_CW_Enabled@` - client level EDF
+- `@Hosted_CW_Enabled@` - Client level EDF
 - `@Hosted_CW_GUID@` - Client level EDF - contains the CWC GUID
 - `@Hosted_CW_URL@` - Direct URL for the CWC MSI installer for the target instance. The URL will be a long string similar to:
 
-[https://your.domain.com/Control/Bin/ConnectWiseControl.ClientSetup.msi?h=your.domain.com&p=8041&k=\(long string of alphanumeric characters)&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=](https://your.domain.com/Control/Bin/ConnectWiseControl.ClientSetup.msi?h=your.domain.com&p=8041&k=\(long string of alphanumeric characters)&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=)
+[https://your.domain.com/Control/Bin/ConnectWiseControl.ClientSetup.msi?h=your.domain.com&p=8041&k=(long string of alphanumeric characters)&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=](https://your.domain.com/Control/Bin/ConnectWiseControl.ClientSetup.msi?h=your.domain.com&p=8041&k=(long string of alphanumeric characters)&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=)
 
-You can get this string from pressing the ![button](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_4.png) button and using these settings:
+You can get this string by pressing the ![button](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_4.png) button and using these settings:
 
 ![Settings](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_5.png)
 
 ## Process
 
-Uses the client EDF to download the CW Control install MSI.  
-Installs the downloaded MSI.  
-Then uses the client EDF to verify the correct GUID was installed.
+- Uses the client EDF to download the CW Control install MSI.
+- Installs the downloaded MSI.
+- Then uses the client EDF to verify that the correct GUID was installed.
 
 ## Output
 
-Script Log
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Script Log**

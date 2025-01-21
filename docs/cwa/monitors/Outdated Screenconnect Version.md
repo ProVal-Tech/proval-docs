@@ -8,33 +8,22 @@ tags: ['ticketing', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will detect the online machines where the screenconnect agent is not on the latest version.
+This monitor will detect the online machines where the ScreenConnect agent is not on the latest version.
 
-**Note**: At least one agent has to be updated manually on the latest screenconnect version, in order to detect the machines.
+**Note**: At least one agent must be updated manually to the latest ScreenConnect version in order to detect the other machines.
 
 ## Dependencies
 
-[CWM - Control - Script - Update Screenconnect Version](<../scripts/Update Screenconnect Version.md>) (This script should be run as an autofix with the monitor)  
-Use alert template ~Autofix - Update Screenconnect Version with the monitor
+[CWM - Control - Script - Update ScreenConnect Version](<../scripts/Update Screenconnect Version.md>) (This script should be run as an autofix with the monitor)  
+Use alert template ~Autofix - Update ScreenConnect Version with the monitor
 
 ## Target
 
-Globally (both on windows and MAC machines)
+Globally (both on Windows and Mac machines)
 
 ## Ticketing
 
-The tickets will be created by the [CWM - Control - Script - Update Screenconnect Version](<../scripts/Update Screenconnect Version.md>) script.
-
-
-
-
-
-
-
-
-
-
-
-
+The tickets will be created by the [CWM - Control - Script - Update ScreenConnect Version](<../scripts/Update Screenconnect Version.md>) script.

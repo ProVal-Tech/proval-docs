@@ -8,6 +8,7 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is an RMM implementation of the agnostic script [EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](<../../powershell/Set-LastLoggedOnUser.md>) to manage the last logged-in user's information displayed on the Windows login screen.
@@ -16,17 +17,17 @@ This is an RMM implementation of the agnostic script [EPM - User Management - Ag
 
 ![Sample Run Image](../../../static/img/Set-Last-Logged-In-User/image_5.png)
 
-- Select the below parameters to clear the last logged-in user's information from the login screen. The computer must be restarted manually afterward to implement the changes.  
+- Select the parameters below to clear the last logged-in user's information from the login screen. The computer must be restarted manually afterward to implement the changes.  
 ![Clear User Info](../../../static/img/Set-Last-Logged-In-User/image_6.png)  
 ![Clear User Info](../../../static/img/Set-Last-Logged-In-User/image_7.png)
 
-- Similarly, to clear the last logged-in user's information from the login screen and forcefully restart the computer, select the below parameters.  
+- Similarly, to clear the last logged-in user's information from the login screen and forcefully restart the computer, select the parameters below.  
 ![Force Restart](../../../static/img/Set-Last-Logged-In-User/image_8.png)
 
-- Below parameters set the specified local user as the last logged-in user. The computer must be restarted manually afterward to implement the changes.  
+- The parameters below set the specified local user as the last logged-in user. The computer must be restarted manually afterward to implement the changes.  
 ![Set Local User](../../../static/img/Set-Last-Logged-In-User/image_9.png)
 
-- Below parameters set the specified domain user as the last logged-in user and forcefully restart the computer.  
+- The parameters below set the specified domain user as the last logged-in user and forcefully restart the computer.  
 ![Set Domain User](../../../static/img/Set-Last-Logged-In-User/image_10.png)
 
 ## Dependencies
@@ -93,7 +94,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Click the `Save` button.
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
-All the parameters will look like as shown below:  
+All the parameters will look like the following:  
 ![Parameters](../../../static/img/Set-Last-Logged-In-User/image_19.png)
 
 ## Task
@@ -112,7 +113,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![PowerShell Function](../../../static/img/Set-Last-Logged-In-User/image_23.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
+Paste the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
 ```powershell
 $Clear = "@Clear@"
@@ -122,9 +123,9 @@ $Reboot = "@Reboot@"
 
 #region Setup - Variables
 $ProjectName = 'Set-LastLoggedOnUser'
-# # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
-if ( $Clear -eq 1 ) {
+# Parameters and Globals
+# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+if ($Clear -eq 1) {
     $parameters = @{
         Clear = $true
         Restart = $Reboot -eq 1
@@ -132,7 +133,7 @@ if ( $Clear -eq 1 ) {
 } else {
     $parameters = @{
         UserName = $UserName
-        DisplayName = if ( $DisplayName -match '[0-9A-z_]' ) { $DisplayName } else { $($UserName -split '////')[-1] }
+        DisplayName = if ($DisplayName -match '[0-9A-z_]') { $DisplayName } else { $($UserName -split '////')[-1] }
         Restart = $Reboot -eq 1
     }
 }
@@ -171,12 +172,12 @@ if ($Parameters) {
 }
 #endregion
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 
@@ -194,15 +195,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

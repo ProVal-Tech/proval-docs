@@ -8,9 +8,10 @@ tags: ['sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Discovers SSIS (SQL Server Integration Services)
+This document discusses how to discover SQL Server Integration Services (SSIS).
 
 ```
 SQL Server        Service Name
@@ -27,16 +28,3 @@ SQL 2019          MsDtsServer150
 | Detection String                                         | Comparator | Result           | Applicable OS |
 |---------------------------------------------------------|------------|------------------|----------------|
 | \{%@sc queryex type= service | find /i "MsDtsServer140"@%} | Contains   | MsDtsServer140   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-

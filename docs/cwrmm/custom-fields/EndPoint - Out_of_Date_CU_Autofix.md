@@ -8,36 +8,25 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Use the dropdown menu to enable or disable the autofix on the endpoint. This setting will be forcefully applied to the machine regardless of the options selected at the Company or the Site level custom field Out_of_Date_CU_Autofix.
+Use the dropdown menu to enable or disable the autofix on the endpoint. This setting will be forcefully applied to the machine regardless of the options selected in the Company or Site level custom field `Out_of_Date_CU_Autofix`.
 
 ## Details
 
 | Field Name                  | Level    | Type      | Options                    | Default Value | Description                                                                                                                                                                                                                                               | Editable |
 |-----------------------------|----------|-----------|----------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| Out_of_Date_CU_Autofix     | ENDPOINT | Dropdown  | `Disable`, `Enable`       |               | Use the dropdown menu to enable or disable the autofix on the endpoint. This setting will be forcefully applied to the machine regardless of the options selected at the Company or the Site level custom field Out_of_Date_CU_Autofix.                     | Yes      |
+| Out_of_Date_CU_Autofix     | ENDPOINT | Dropdown  | `Disable`, `Enable`       |               | Use the dropdown menu to enable or disable the autofix on the endpoint. This setting will be forcefully applied to the machine regardless of the options selected in the Company or Site level custom field `Out_of_Date_CU_Autofix`.                     | Yes      |
 
 ## Options
 
 | Option  | Description                                                                                                                                                                                                                                                |
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Disable | To disable the Autofix for the particular endpoint. It can be used to override the options selected at the company and the site level custom field Out_of_Date_CU_Autofix.                                                                               |
-| Enable  | To enable the Autofix for the particular endpoint. It can be used to override the options selected at the company and the site level custom field Out_of_Date_CU_Autofix.                                                                                 |
+| Disable | Disables the Autofix for the particular endpoint. It can be used to override the options selected in the company and site level custom field `Out_of_Date_CU_Autofix`.                                                                                 |
+| Enable  | Enables the Autofix for the particular endpoint. It can be used to override the options selected in the company and site level custom field `Out_of_Date_CU_Autofix`.                                                                                 |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_2.png)  
-
-
-
-
-
-
-
-
-
-
-
-

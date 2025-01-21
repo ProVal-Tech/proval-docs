@@ -8,6 +8,7 @@ tags: ['disk', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script creates remote monitors for detected hard drives at the agent level and sets the script state to note that the SensorID already has a monitor assigned to it.
@@ -27,7 +28,7 @@ This script creates remote monitors for detected hard drives at the agent level 
 
 | Variable Name   | Description                                                                                   |
 |------------------|-----------------------------------------------------------------------------------------------|
-| interval         | Sets the internal and as ProVal standard it is set to 300                                    |
+| interval         | Sets the internal, and as per ProVal standard, it is set to 300                             |
 | MinMBytesFree    | Using system properties "WorkstationDiskThreshold" set for the monitor. In this case, it is 5000 MB |
 | MinSizeMB        | The minimum size of the drive should be at least 16 GB                                       |
 | reportcategory    | The report category for the alerts.                                                          |
@@ -48,27 +49,16 @@ This script creates remote monitors for detected hard drives at the agent level 
 
 ## Process
 
-This script runs some SQL commands to create monitors for detected hard drives at the agent level and sets the script state to note that the SensorID already has a monitor assigned to it. 
+This script runs some SQL commands to create monitors for detected hard drives at the agent level and sets the script state to note that the SensorID already has a monitor assigned to it.
 
 **ONLY 1 LINE SHOULD BE ENABLED BELOW.**
 - Line 22 - If enabled, will only work for C drives.
 - Line 23 - If enabled, will work for ALL drives (Default)
 
-**Note:** To adjust the thresholds please adjust line 7 to the desired MB free, adjust line 5 to match that (in GB), and line 18 to use the appropriate alert template for thorough disk cleanup.
+**Note:** To adjust the thresholds, please modify line 7 to the desired MB free, adjust line 5 to match that (in GB), and line 18 to use the appropriate alert template for thorough disk cleanup.
 
 The script runs as a subscript inside the "Agent Monitor Creation - Disk* - WRAPPER [Globals]" script.
 
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a workstation.
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Client Level SentinelOne Management Server. Updated by [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
@@ -22,20 +23,8 @@ Client Level SentinelOne Management Server. Updated by [SentinelOne Management C
 |---------------------------------|----------|-----------|---------------|--------------------------------------------|----------|
 | Client Level S1 Mgmt Server     | ENDPOINT | Text Box  | No            | Client Level SentinelOne Management Server.| Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---Client-Level-S1-Mgmt-Server/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---Client-Level-S1-Mgmt-Server/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

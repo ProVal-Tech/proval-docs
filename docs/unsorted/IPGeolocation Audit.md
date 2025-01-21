@@ -8,9 +8,10 @@ tags: ['timezone']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script collects device current location detail.
+This script collects the current location details of a device.
 
 ## Sample Run
 
@@ -22,31 +23,18 @@ This script collects device current location detail.
 
 ## Process
 
-This script scans the device to collect information for its current location. It uses ipinfo.io website to collect this information. The information fetches as:
+This script scans the device to collect information about its current location. It uses the ipinfo.io website to gather this information, which includes:
 - Device IP
 - City
 - State
 - Country
 - Map Location
-- Postal address
+- Postal Address
 - Timezone
-- Date when data collected
+- Date when the data was collected
 
 ## Output
 
 - Script log
 - Dataview
 - Custom table plugin_proval_ipinfo
-
-
-
-
-
-
-
-
-
-
-
-
-

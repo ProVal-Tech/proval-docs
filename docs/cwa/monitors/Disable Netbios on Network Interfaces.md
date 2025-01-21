@@ -8,13 +8,14 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor disables netbios on all network interfaces
+This remote monitor disables NetBIOS on all network interfaces.
 
 ## Details
 
-**Suggested "Limit to"**: windows OS  
+**Suggested "Limit to"**: Windows OS  
 **Suggested Alert Style**: Continuous  
 **Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
 
@@ -28,25 +29,12 @@ Windows OS
 
 ## Ticketing
 
-**Subject:** `Failed to Disable NetBios on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
+**Subject:** `Failed to Disable NetBIOS on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
 
-**Success Body**: `Netbios has been disabled on all Network Interfaces`  
+**Success Body:** `NetBIOS has been disabled on all Network Interfaces`  
 
-**Failure Body:** `Failed to Set Netbios on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.`
+**Failure Body:** `Failed to Set NetBIOS on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.`
 
 ## How To Import
 
-[Implement - Remote Monitor - Disable Netbios on Network Interfaces](<./Disable Netbios on Network Interfaces.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Implement - Remote Monitor - Disable NetBIOS on Network Interfaces](<./Disable NetBIOS on Network Interfaces.md>)

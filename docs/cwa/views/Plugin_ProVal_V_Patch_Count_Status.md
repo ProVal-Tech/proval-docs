@@ -8,6 +8,7 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This view provides a client-level breakdown of machines missing a certain number of patches.
@@ -25,19 +26,7 @@ Sample data:
 
 | Column        | Type       | Explanation                                                                                   |
 |---------------|------------|-----------------------------------------------------------------------------------------------|
-| clientid     | int(11)   | Clientid                                                                                      |
-| os            | varchar(11) | Operating System (Workstation | Server)                                                      |
-| category      | varchar(18) | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)       |
-| Machine Count | int(5)    | Number of machines falling under the concerned category for the client.                      |
-
-
-
-
-
-
-
-
-
-
-
-
+| clientid     | int(11)    | Client ID                                                                                     |
+| os            | varchar(11)| Operating System (Workstation | Server)                                                     |
+| category      | varchar(18)| Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)      |
+| Machine Count | int(5)     | Number of machines falling under the concerned category for the client.                      |

@@ -8,9 +8,10 @@ tags: ['installation', 'performance', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This agent procedure is used to enable 'SNMP' Windows Optional feature in endpoint.
+This agent procedure is used to enable the 'SNMP' Windows Optional feature on an endpoint.
 
 ## Example Agent Procedure Log
 
@@ -31,9 +32,9 @@ This agent procedure is used to enable 'SNMP' Windows Optional feature in endpoi
 | 12:07:19 pm 3-Oct-22 | Execute Powershell Command-0002           | Powershell is present.                         | provaltech.com/surender.kumar    |
 | 12:07:17 pm 3-Oct-22 | Execute Powershell Command                 | Success THEN                                   | provaltech.com/surender.kumar    |
 | 12:07:16 pm 3-Oct-22 | Execute Powershell Command-0011           | Powershell command completed!                  | provaltech.com/surender.kumar    |
-| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "Enable-WindowsOptionalFeature -Online -FeatureName "SNMP"" "" | provaltech.com/surender.kumar    |
+| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "Enable-WindowsOptionalFeature -Online -FeatureName \"SNMP\"" "" | provaltech.com/surender.kumar    |
 | 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0010           | Not sending output to variable.                | provaltech.com/surender.kumar    |
-| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "Enable-WindowsOptionalFeature -Online -FeatureName "SNMP"" | provaltech.com/surender.kumar    |
+| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "Enable-WindowsOptionalFeature -Online -FeatureName \"SNMP\"" | provaltech.com/surender.kumar    |
 | 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0008           | Custom commands detected as Enable-WindowsOptionalFeature -Online -FeatureName "SNMP" | provaltech.com/surender.kumar    |
 | 12:07:08 pm 3-Oct-22 | Execute Powershell Command-0002           | Powershell is present.                         | provaltech.com/surender.kumar    |
 | 12:07:07 pm 3-Oct-22 | Execute Powershell Command                 | Success THEN                                   | provaltech.com/surender.kumar    |
@@ -53,27 +54,16 @@ This agent procedure is used to enable 'SNMP' Windows Optional feature in endpoi
 | 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "(Get-WindowsCapability -name SNMP* -online).State" | provaltech.com/surender.kumar    |
 | 12:03:50 pm 3-Oct-22 | Execute Powershell Command-0008           | Custom commands detected as (Get-WindowsCapability -name SNMP* -online).State | provaltech.com/surender.kumar    |
 | 12:03:47 pm 3-Oct-22 | Execute Powershell Command-0002           | Powershell is present.                         | provaltech.com/surender.kumar    |
-| 12:03:38 pm 3-Oct-22 | Run Now - SNMP & Community Configuration    | Admin provaltech.com/surender.kumar scheduled procedure Run Now - SNMP & Community Configuration to run at Oct 3 2022 12:03PM | provaltech.com/surender.kumar    |
+| 12:03:38 pm 3-Oct-22 | Run Now - SNMP & Community Configuration    | Admin provaltech.com/surender.kumar scheduled procedure Run Now - SNMP & Community Configuration to run at Oct 3 2022 12:03 PM | provaltech.com/surender.kumar    |
 
 ## Dependencies
 
-No
+None
 
 ## Process
 
-The agent procedure checks whether the machine has the SNMP feature enabled or not. If not the procedure enables it.
+The agent procedure checks whether the machine has the SNMP feature enabled. If not, the procedure enables it.
 
 ## Output
 
 Procedure Logs
-
-
-
-
-
-
-
-
-
-
-

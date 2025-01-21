@@ -8,9 +8,10 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script downloads the offscrub files from the repo and then attempts to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can deal with machine or software corruption and completely removes Office app shortcuts for the version.
+This script downloads the offscrub files from the repository and then attempts to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can handle machine or software corruption and completely removes Office app shortcuts for the version.
 
 ## Sample Run
 
@@ -22,36 +23,21 @@ This script downloads the offscrub files from the repo and then attempts to unin
 
 ## Variables
 
-| Name                       | Description                                                                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameters                 | This contains the User input for Arguments parameter. If Arguments is empty then it sets it to -All, else the argument is passed to the uninstallation of the desired Office application. |
+| Name       | Description                                                                                                                                   |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Parameters | This contains the user input for the Arguments parameter. If Arguments is empty, it sets it to -All; otherwise, the argument is passed to the uninstallation of the desired Office application. |
 
 ### User Parameters
 
-| Name                       | Example | Required | Description                                                                                                                                   |
-|----------------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Arguments                  | -All   | False    | This parameter accepts the user input for the different Office uninstallation based on the argument list provided in the agnostic solution. |
+| Name      | Example | Required | Description                                                                                                                                   |
+|-----------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Arguments | -All   | False    | This parameter accepts user input for the different Office uninstallation based on the argument list provided in the agnostic solution. |
 
 ## Implementation
 
-This script is designed to run manually on Windows machines as per requirement.  
-It can uninstall any variant of the Office based on the arguments passed in it.  
-This script can be run anytime as it is completely silent and no restart is required after its completion.
+This script is designed to run manually on Windows machines as per requirement. It can uninstall any variant of Office based on the arguments passed to it. This script can be run at any time as it is completely silent, and no restart is required after its completion.
 
 ## Output
 
 - Script log  
 - Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
-

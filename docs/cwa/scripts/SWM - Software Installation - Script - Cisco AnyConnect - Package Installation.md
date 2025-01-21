@@ -8,18 +8,19 @@ tags: ['installation', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will install Cisco AnyConnect and any of its desired components.
 
-This utilizes the related Install-Anyconnect agnostic script.
+This utilizes the related Install-AnyConnect agnostic script.
 
-Ignore parameters -
+Ignore parameters:
 - ClientID (Gathered from EDF)
 - Fingerprint (Gathered from EDF)
 - OrgId (Gathered from EDF)
 
-### Argument options
+### Argument Options
 - -Amp
 - -Dart
 - -Gina
@@ -27,8 +28,8 @@ Ignore parameters -
 - -Nvm
 - -IsePosture
 - -Posture
-- -Umbrella (Requires Client ID, Org ID, and Fingerprint in the agnostic script, however this will be set to the client's EDF)
-- -ALL (Requires Client ID, Org ID, and Fingerprint in the agnostic script, however this will be set to the client's EDF)
+- -Umbrella (Requires Client ID, Org ID, and Fingerprint in the agnostic script; however, this will be set to the client's EDF)
+- -ALL (Requires Client ID, Org ID, and Fingerprint in the agnostic script; however, this will be set to the client's EDF)
 
 ---
 
@@ -44,11 +45,11 @@ Ignore parameters -
 
 ## Sample Run
 
-Install All Cisco AnyConnect packages.
+Install all Cisco AnyConnect packages.
 
 ![Install All Packages](../../../static/img/SWM---Software-Installation---Script---Cisco-AnyConnect---Package-Installation/image_2.png)
 
-Install specific AnyConnect packages
+Install specific AnyConnect packages.
 
 ![Install Specific Packages](../../../static/img/SWM---Software-Installation---Script---Cisco-AnyConnect---Package-Installation/image_3.png)
 
@@ -56,7 +57,7 @@ Install specific AnyConnect packages
 
 ## Dependencies
 
-- Please reference Agnostic content document for more information 
+- Please reference the Agnostic content document for more information.
 
 ---
 
@@ -64,26 +65,26 @@ Install specific AnyConnect packages
 
 | Name        | Description                                                 |
 |-------------|-------------------------------------------------------------|
-| OrgID       | The ID set in the client level opendns EDF under orgID    |
-| Fingerprint | The fingerprint set in the client level opendns EDF under fingerprint |
-| Client      | The userID set in the client level opendns EDF under clientID |
+| OrgID       | The ID set in the client level OpenDNS EDF under OrgID    |
+| Fingerprint | The fingerprint set in the client level OpenDNS EDF under Fingerprint |
+| Client      | The userID set in the client level OpenDNS EDF under ClientID |
 
 #### User Parameters
 
 | Name      | Example                     | Required | Description                                                                                                                                                                                                                                                                                                                                                   |
 |-----------|-----------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Arguments | -All-Dart -Amp -Umbrella | False    | This is the argument you would pass to the Install-AnyConnect Agnostic script as you would pass them.You may ignore the ClientID, OrgID, and Fingerprint parameter in all cases as the script will add the corresponding EDF value as that parameter value during the processing of this installation.Providing a ClientID, OrgID, and Fingerprint or any combination of those in the Arguments user parameter will overwrite any EDF value set at the client level. |
+| Arguments | -All -Dart -Amp -Umbrella | False    | This is the argument you would pass to the Install-AnyConnect Agnostic script. You may ignore the ClientID, OrgID, and Fingerprint parameters in all cases, as the script will add the corresponding EDF value as that parameter value during the processing of this installation. Providing a ClientID, OrgID, and Fingerprint or any combination of those in the Arguments user parameter will overwrite any EDF value set at the client level. |
 
 ---
 
 ## Process
 
-1. Get the fingerprint, orgid, and client from the client level EDF.
-2. Check if the Argument is not All or Umbrella; if it is not, use the arguments as is.
-3. Check if the Argument does not contain umbrella; if it does not, use the arguments as is.
-4. Check if the Argument contains -ClientID; if it does not, add it using the EDF.
-5. Check if the Argument contains -OrgID; if it does not, add it using the EDF.
-6. Check if the Argument contains -Fingerprint; if it does not, add it using the EDF.
+1. Get the fingerprint, OrgID, and client from the client level EDF.
+2. Check if the argument is not All or Umbrella; if it is not, use the arguments as is.
+3. Check if the argument does not contain Umbrella; if it does not, use the arguments as is.
+4. Check if the argument contains -ClientID; if it does not, add it using the EDF.
+5. Check if the argument contains -OrgID; if it does not, add it using the EDF.
+6. Check if the argument contains -Fingerprint; if it does not, add it using the EDF.
 7. Run the agnostic script with the required arguments.
 
 ---
@@ -91,14 +92,4 @@ Install specific AnyConnect packages
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
 

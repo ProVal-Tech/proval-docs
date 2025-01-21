@@ -8,13 +8,14 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to create a formatted ticket for an offline/unreachable network device. It will create a ticket for the concerned Network Device, so for the ticket to sync with CW Manage, the Network Device should be synced beforehand.
+The purpose of the script is to create a formatted ticket for an offline or unreachable network device. It will create a ticket for the concerned network device, so for the ticket to sync with CW Manage, the network device should be synced beforehand.
 
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_1.png)
 
-**Note:** Both script and the monitoring can only be used if the network probe of the device's location is online.
+**Note:** Both the script and the monitoring can only be used if the network probe of the device's location is online.
 
 ## Sample Run
 
@@ -41,13 +42,12 @@ The `Send Alert when Unit is Down` checkbox on a network device is required for 
 
 | Name                                                                 | Example | Required | Description                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------|---------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NetworkDeviceTicketCategory                                          | 5       | False    | This will determine the service board where the offline network device ticket should be created                                                                                                                               |
+| NetworkDeviceTicketCategory                                          | 5       | False    | This will determine the service board where the offline network device ticket should be created.                                                                                                                               |
 | ScriptTicketCategory                                                 | 8       | False    | This is a default system property that is set at the CW Manage plugin to create tickets via script to this service board if no ticket category is defined in the script.                                                         |
 
 ## Implementation
 
-Refer to the client-script document.  
-This will guide you on how to enable ticketing on manufacturer-based network devices or apply to all network devices with specific exclusions of the device IDs.  
+Refer to the client-script document. This will guide you on how to enable ticketing on manufacturer-based network devices or apply it to all network devices with specific exclusions of the device IDs.  
 [Documentation Link](https://proval.itglue.com/5078775/docs/16290414)
 
 ## Output
@@ -74,21 +74,9 @@ Device Type: \<Network Device Type>
 ```
 
 **Ticket Category:**  
-To create this ticket to a specific service board in manage then provide the category ID to the property "NetworkDeviceTicketCategory" else it will create the ticket to the default service board.
+To create this ticket to a specific service board in manage, provide the category ID to the property "NetworkDeviceTicketCategory"; otherwise, it will create the ticket to the default service board.
 
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_4.png)
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
-
-
-
-
-
-
-
-
-
-
-
-

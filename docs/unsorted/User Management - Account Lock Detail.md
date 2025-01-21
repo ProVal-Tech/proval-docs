@@ -8,43 +8,30 @@ tags: ['active-directory', 'report', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Purpose
 
-The user lockout account audit
+The purpose of this document is to outline the user lockout account audit process.
 
 ## Associated Content
 
-| Content                                                                 | Type      | Function                              |
-|-------------------------------------------------------------------------|-----------|---------------------------------------|
-| [User Management - Account Lockout Audit](<./User Management - Account Lockout Audit.md>) | Script    | Collects the account lockout detail   |
-| [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>) | Dataview  | Shows the detail of account lockout   |
-| [AD Account Lockout Detection](<../cwa/monitors/Account Lockout Detection.md>) | Remote Monitor | Monitor to detect the lockout account  |
-| [plugin_proval_account_lock](<./plugin_proval_account_lock.md>) | Table     | Collects the information of lockout account |
+| Content                                                                 | Type          | Function                              |
+|-------------------------------------------------------------------------|---------------|---------------------------------------|
+| [User Management - Account Lockout Audit](<./User Management - Account Lockout Audit.md>) | Script        | Collects the account lockout details   |
+| [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>) | Dataview      | Shows the details of account lockouts  |
+| [AD Account Lockout Detection](<../cwa/monitors/Account Lockout Detection.md>) | Remote Monitor | Monitors to detect lockout accounts    |
+| [plugin_proval_account_lock](<./plugin_proval_account_lock.md>) | Table         | Collects information about lockout accounts |
 
 ## Implementation
 
-The monitor is required to run every 15 minutes and the script is required to run as an autofix. The table and Dataview will be updated by the script.
+The monitor is required to run every 15 minutes, and the script is required to run as an autofix. The table and Dataview will be updated by the script.
 
-For AD users account lock report:  
+For the AD users' account lock report:  
 Apply the remote monitor to the DC group.
 
-For all users account lock report (local user):  
-Schedule to all Windows machines.
+For all users' account lock report (local users):  
+Schedule on all Windows machines.
 
 ## FAQ
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*(No FAQs have been provided in this document.)*

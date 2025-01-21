@@ -8,9 +8,10 @@ tags: ['database', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will fetch the uninstallation string from the database for the defined app in the parameter `@AppName@` and then attempt to uninstall the application. And if `uninstall.exe` is found in the uninstall string, it attempts to uninstall the application using silent switches.
+This script fetches the uninstallation string from the database for the defined application specified in the parameter `@AppName@` and then attempts to uninstall the application. If `uninstall.exe` is found in the uninstallation string, it will attempt to uninstall the application using silent switches.
 
 **Time Saved by Automation:** 10 Minutes
 
@@ -26,19 +27,8 @@ This script will fetch the uninstallation string from the database for the defin
 
 ## Process
 
-When the script runs, it will ask for a parameter `AppName` that needs to be filled by the user. This script will then look if the software is installed on the machine and if yes, it will fetch the uninstallation string from the database for the defined app in the parameter `@AppName@` and then attempt to uninstall the application. And if `uninstall.exe` is found in the uninstall string, it attempts to uninstall the application using silent switches. This script also verifies if the software was uninstalled or not and displays the result in the script's logs section.
+When the script runs, it will prompt the user for the parameter `AppName`, which needs to be filled in. The script will then check if the software is installed on the machine. If it is, it will fetch the uninstallation string from the database for the specified application and attempt to uninstall it. If `uninstall.exe` is found in the uninstallation string, the script will use silent switches to uninstall the application. The script also verifies whether the software was successfully uninstalled and displays the result in the script's logs section.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

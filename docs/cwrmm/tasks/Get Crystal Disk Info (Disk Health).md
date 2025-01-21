@@ -8,11 +8,12 @@ tags: ['data-collection', 'disk', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script runs the Crystal Disk Info tool on the end machines and fetches the Disk Health. The data is then formatted and stored in [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>) Custom Field for further auditing and monitoring purposes.
 
-Output Syntax: `Harddisk - \<Model> (Drives: \<Drive Letter(s)>): Health Status - \<Status>`
+**Output Syntax:** `Harddisk - \\<Model> (Drives: \\<Drive Letter(s)>): Health Status - \\<Status>`
 
 ## Sample Run
 
@@ -35,7 +36,7 @@ Output Syntax: `Harddisk - \<Model> (Drives: \<Drive Letter(s)>): Health Status 
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Step 1](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_6.png)  
@@ -65,7 +66,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Step](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_11.png)  
 
@@ -198,18 +199,18 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per week against Windows computers.
+It is suggested to run the task once per week against Windows computers.
 
 - Go to `Automation` > `Tasks.`
-- Search for `Crystal Disk Info` Task.
+- Search for the `Crystal Disk Info` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Task](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_29.png)  
 
 This screen will appear.  
 ![Schedule Screen](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_30.png)  
 
-- Select the relevant time to run the script and click the Does not repeat button.  
+- Select the relevant time to run the script and click the "Does not repeat" button.  
 ![Does Not Repeat](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_31.png)  
 
 This pop-up box will appear.  
@@ -235,15 +236,4 @@ This pop-up box will appear.
 ![Script Log Output](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_39.png)  
 - Custom Field  
 ![Custom Field Output](../../../static/img/Get-Crystal-Disk-Info-(Disk-Health)/image_40.png)  
-
-
-
-
-
-
-
-
-
-
-
 

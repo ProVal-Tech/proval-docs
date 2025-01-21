@@ -8,9 +8,10 @@ tags: ['disk', 'hyper-v', 'performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of this table is to store the audit report of the cluster disk space on the hyperV cluster servers.
+The purpose of this document is to store the audit report of the cluster disk space on the Hyper-V cluster servers.
 
 ## Dependencies
 
@@ -22,24 +23,11 @@ The purpose of this table is to store the audit report of the cluster disk space
 
 | Column        | Type     | Explanation                                                                                     |
 |---------------|----------|-------------------------------------------------------------------------------------------------|
-| Computerid    | INT      | The Computerid of the agent                                                                     |
-| Cluster_Name  | VARCHAR  | The cluster name of cluster disks on the hyperV cluster server                                  |
-| Cluster_Path  | VARCHAR  | The cluster path of the cluster disks on the hyperV cluster server                              |
-| Size          | INT      | The cluster disk total size on the hyperV cluster server                                        |
-| FreeSpace     | INT      | The cluster disk free space available on the hyperV cluster server                              |
-| UsedSpace     | INT      | The cluster disk used space on the hyperV cluster server                                        |
-| PercentFree   | INT      | The cluster disk available space in percent on the hyperV cluster server                        |
-| ScriptRunTime | DATETIME | The script's last run date to show when the latest audit was done via the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Computerid    | INT      | The Computer ID of the agent                                                                     |
+| Cluster_Name  | VARCHAR  | The cluster name of the cluster disks on the Hyper-V cluster server                              |
+| Cluster_Path  | VARCHAR  | The cluster path of the cluster disks on the Hyper-V cluster server                              |
+| Size          | INT      | The total size of the cluster disk on the Hyper-V cluster server                                  |
+| FreeSpace     | INT      | The available free space on the cluster disk in the Hyper-V cluster server                       |
+| UsedSpace     | INT      | The used space on the cluster disk in the Hyper-V cluster server                                  |
+| PercentFree   | INT      | The available space on the cluster disk expressed as a percentage in the Hyper-V cluster server  |
+| ScriptRunTime | DATETIME | The script's last run date, indicating when the latest audit was performed via the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) |

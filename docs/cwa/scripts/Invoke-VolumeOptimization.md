@@ -8,6 +8,7 @@ tags: ['optimization', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script runs the agnostic [EPM - Windows Configuration - Agnostic - Invoke-VolumeOptimization](https://proval.itglue.com/DOC-5078775-11110986).
@@ -15,7 +16,7 @@ This script runs the agnostic [EPM - Windows Configuration - Agnostic - Invoke-V
 ## Sample Run
 
 ![Sample Run](../../../static/img/Invoke-VolumeOptimization/image_1.png)  
-Will run a PowerShell equivalent of defrag on the target machine.
+This will run a PowerShell equivalent of defrag on the target machine.
 
 ## Dependencies
 
@@ -45,7 +46,7 @@ Will run a PowerShell equivalent of defrag on the target machine.
 
 ## Process
 
-Please reference the agnostic document for process.
+Please reference the agnostic document for the process.
 
 ## Output
 
@@ -65,15 +66,3 @@ If the script/monitor is intended to create tickets, please note the Subject and
 @psout@  
 
 ![Ticket Example](../../../static/img/Invoke-VolumeOptimization/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

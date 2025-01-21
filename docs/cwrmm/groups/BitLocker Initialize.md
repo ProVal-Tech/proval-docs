@@ -8,9 +8,10 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This group contains the Windows 10 and Windows 11 agents only.
+This group contains only the Windows 10 and Windows 11 agents.
 
 ## Details
 
@@ -18,7 +19,7 @@ This group contains the Windows 10 and Windows 11 agents only.
 |------------------|-----------------------------------------|-------------|
 | Windows 10/11    | Dynamic Group                           |             |
 
-## Group Create
+## Group Creation
 
 1. **Create Dynamic Groups:**
 
@@ -30,18 +31,6 @@ This group contains the Windows 10 and Windows 11 agents only.
 
    **Criteria:**
 
-   - OS contains any of Windows 10 and Windows 11  
+   - OS contains any of Windows 10 or Windows 11  
    
      ![Criteria](../../../static/img/BitLocker-Initialize/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

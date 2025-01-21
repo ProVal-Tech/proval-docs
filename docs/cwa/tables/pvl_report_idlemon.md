@@ -8,6 +8,7 @@ tags: ['database', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>) script.
@@ -20,25 +21,13 @@ Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Global
 
 #### pvl_report_idlemon
 
-| Column             | Type          | Explanation                                                      |
-|--------------------|---------------|------------------------------------------------------------------|
-| computerid         | int(11)      | Computerid                                                       |
-| Username           | varchar(50)  | Logged in user                                                  |
-| Domain             | varchar(50)  | Domain of the logged in user                                     |
-| IdleTime           | varchar(50)  | Idle Time of the logged in user (Hours:Minutes:Seconds.Milliseconds) |
-| IsAdmin            | varchar(5)   | Is Admin? (True/False)                                         |
-| IsDomainAdmin      | varchar(5)   | IsDomainAdmin? (True/False)                                   |
-| IsEnterpriseAdmin   | varchar(5)   | IsEnterpriseAdmin? (True/False)                               |
-| ScriptRunTime      | datetime      | Data Collection Time                                            |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column              | Type          | Explanation                                                      |
+|---------------------|---------------|------------------------------------------------------------------|
+| computerid          | int(11)      | Computer ID                                                      |
+| Username            | varchar(50)  | Logged in user                                                  |
+| Domain              | varchar(50)  | Domain of the logged in user                                     |
+| IdleTime            | varchar(50)  | Idle time of the logged in user (Hours:Minutes:Seconds.Milliseconds) |
+| IsAdmin             | varchar(5)   | Is Admin? (True/False)                                         |
+| IsDomainAdmin       | varchar(5)   | Is Domain Admin? (True/False)                                   |
+| IsEnterpriseAdmin    | varchar(5)   | Is Enterprise Admin? (True/False)                               |
+| ScriptRunTime       | datetime      | Data collection time                                            |

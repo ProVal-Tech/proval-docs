@@ -8,9 +8,10 @@ tags: ['connectwise', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The group will detect the computers where the Latest Cumulative Update installation failed to complete after reboot.
+The group will detect the computers where the latest cumulative update installation failed to complete after reboot.
 
 ## Dependencies
 
@@ -18,7 +19,7 @@ The group will detect the computers where the Latest Cumulative Update installat
 
 ## Group Creation
 
-1. Navigate to `Devices` > `Device Groups`.
+1. Navigate to `Devices` > `Device Groups`.  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
@@ -26,8 +27,8 @@ The group will detect the computers where the Latest Cumulative Update installat
    This page will appear after clicking on the `Dynamic Group` button:  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_3.png)
 
-3. Set the group name to `Out of Date CU _ Install Failure`.  
-   Description: `The group will detect the computers where the Latest Cumulative Update installation failed to complete after reboot.`  
+3. Set the group name to `Out of Date CU - Install Failure`.  
+   Description: `The group will detect the computers where the latest cumulative update installation failed to complete after reboot.`  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
@@ -45,12 +46,12 @@ The group will detect the computers where the Latest Cumulative Update installat
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_9.png)  
    A new search box will appear.  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_10.png)  
-   Search and select the `OS` Criteria.  
+   Search and select the `OS` criteria.  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_11.png)  
-   Select all available instances of `Microsoft Windows` `10`, `11`, `Server 2016`, `2019`, and `2022` in the comparison Field.  
+   Select all available instances of `Microsoft Windows` `10`, `11`, `Server 2016`, `2019`, and `2022` in the comparison field.  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_12.png)  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_13.png)  
-   Condition: `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11`, `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`
+   **Condition:** `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11`, `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`
 
 7. Click the `Save` button to save/create the group.  
    ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_14.png)
@@ -60,15 +61,3 @@ The group will detect the computers where the Latest Cumulative Update installat
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_15.png)
 
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_16.png)
-
-
-
-
-
-
-
-
-
-
-
-

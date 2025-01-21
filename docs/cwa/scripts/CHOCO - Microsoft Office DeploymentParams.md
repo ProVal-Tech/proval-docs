@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script can be used to install the different versions of Microsoft Office using the Choco Microsoft Office Deployment package.
+This script can be used to install different versions of Microsoft Office using the Choco Microsoft Office Deployment package.
 
 **Time Saved by Automation:** 20 Minutes
 
@@ -20,7 +21,7 @@ This script can be used to install the different versions of Microsoft Office us
 
 ## Dependencies
 
-The following URL will provide all the packages available in Choco that can be put in the Params and then installed by this script.  
+The following URL provides all the packages available in Choco that can be included in the Params and installed by this script.  
 [Chocolatey Microsoft Office Deployment Packages](https://community.chocolatey.org/packages/microsoft-office-deployment#install)
 
 #### Global Parameters
@@ -31,20 +32,8 @@ The following URL will provide all the packages available in Choco that can be p
 
 ## Process
 
-This script can be used to install the different versions of Microsoft Office using the Choco Microsoft Office Deployment package. This script uses Powershell to install the Microsoft Office version provided in the Params section.
+This script can be used to install different versions of Microsoft Office using the Choco Microsoft Office Deployment package. It utilizes PowerShell to install the Microsoft Office version specified in the Params section.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

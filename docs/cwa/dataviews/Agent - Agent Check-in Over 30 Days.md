@@ -8,6 +8,7 @@ tags: ['networking', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview shows information about agents that have not checked in for 30 days.
@@ -16,33 +17,19 @@ This dataview shows information about agents that have not checked in for 30 day
 
 | Column                   | Description                                                                                  |
 |-------------------------|----------------------------------------------------------------------------------------------|
-| Client Name             | Agent name                                                                                   |
+| Client Name             | Name of the client associated with the agent                                                 |
 | Location Name           | Location of the agent                                                                        |
-| Computer Name           | Client name of the agent                                                                     |
-| Agent Last Contact Date  | Agent last Contact Date with RMM                                                             |
-| Agent Type              | Agent type whether laptop, workstation or server                                             |
-| Days Since LC          | Days count since last contacted with RMM                                                     |
-| Agent OS                | Agent operating system                                                                        |
-| Status                  | Status of an agent whether offline or online                                                 |
-| All Agent Detail        | This dataview has all computer detail including Agent manufacturer, Agent IP, MAC address etc. |
-| All Location Detail     | This dataview has complete location detail including address, city detail, router address etc. |
-| All Client Detail       | This dataview has detail of client brief description about city, state, country, geo time etc. |
-| All Contact Detail      | Dataview contains all the contact detail of the agent such as email address, phone number, full name etc. |
+| Computer Name           | Name of the computer used by the agent                                                      |
+| Agent Last Contact Date  | Date of the agent's last contact with RMM                                                  |
+| Agent Type              | Type of the agent (laptop, workstation, or server)                                          |
+| Days Since Last Contact  | Number of days since the agent was last contacted with RMM                                 |
+| Agent OS                | Operating system of the agent                                                                |
+| Status                  | Current status of the agent (offline or online)                                             |
+| All Agent Details       | This dataview includes all details about the computer, such as manufacturer, IP, MAC address, etc. |
+| All Location Details    | This dataview provides complete location details, including address, city, router address, etc. |
+| All Client Details      | This dataview contains details about the client, including city, state, country, and timezone. |
+| All Contact Details     | This dataview includes all contact details of the agent, such as email address, phone number, and full name. |
 
 ## ProVal Suggested Solution
 
-[https://proval.itglue.com/DOC-5078775-13319030](<../../solutions/OfflineBroken Agents.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[ProVal Suggested Solution](<../../solutions/OfflineBroken Agents.md>)

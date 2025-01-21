@@ -8,6 +8,7 @@ tags: ['cleanup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script performs the uninstallation of the N-Able (Windows Agent) application and deletes all its traces.
@@ -24,25 +25,13 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 | Name             | Description                                                                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ProjectName      | This contains the agnostic ps1 name and sets that as a project and working directory to C:/ProgramData/_Automation/Script/@ProjectName@.                     |
-| WorkingDirectory  | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:/ProgramData/_Automation/Script/@ProjectName@".   |
-| PS1Log           | This stores the PowerShell informational logs for validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-log.txt.           |
-| PS1ErrorLog      | This contains the PowerShell Error logs for the validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-error.txt.          |
-| ErrorLog         | This contains the content of the error log file i.e. @ProjectName@-error.txt.                                                                                 |
+| ProjectName      | This contains the agnostic PowerShell script name and sets it as a project, with the working directory at `C:/ProgramData/_Automation/Script/@ProjectName@`. |
+| WorkingDirectory  | This is the directory where the agnostic script downloads and its logs are stored. The directory path is `C:/ProgramData/_Automation/Script/@ProjectName@`.   |
+| PS1Log           | This stores the PowerShell informational logs for validation and saves them in the `@WorkingDirectory@` folder with the name: `@ProjectName@-log.txt`.        |
+| PS1ErrorLog      | This contains the PowerShell error logs for validation and saves them in the `@WorkingDirectory@` folder with the name: `@ProjectName@-error.txt`.           |
+| ErrorLog         | This contains the content of the error log file, i.e., `@ProjectName@-error.txt`.                                                                             |
 
 ## Output
 
 - Script log
 - Local file on the computer
-
-
-
-
-
-
-
-
-
-
-
-

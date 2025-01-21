@@ -8,6 +8,7 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This role will be detected on an agent where OneDrive folder redirection is enabled at a system policy level.
@@ -16,16 +17,4 @@ This role will be detected on an agent where OneDrive folder redirection is enab
 
 | Detection String                                                                                   | Comparator | Result           | Applicable OS |
 |----------------------------------------------------------------------------------------------------|------------|------------------|---------------|
-| \{%@reg query "HKLM/SOFTWARE/Policies/Microsoft/OneDrive" /v KFMSilentOptIn | find "KFMSilentOptIn"@%} | Contains   | KFMSilentOptIn | Windows       |
-
-
-
-
-
-
-
-
-
-
-
-
+| `%@reg query "HKLM/SOFTWARE/Policies/Microsoft/OneDrive" /v KFMSilentOptIn | find "KFMSilentOptIn"@%` | Contains   | KFMSilentOptIn | Windows       |

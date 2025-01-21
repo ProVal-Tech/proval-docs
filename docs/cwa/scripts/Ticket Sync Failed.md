@@ -8,15 +8,16 @@ tags: ['email', 'psa']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is an Autofix and is meant to be called by the monitor [ProVal - Production - Automate - Ticket Sync Unsuccessful](<../monitors/Ticket Sync Unsuccessful.md>). If a ticket has failed to sync to the PSA for more than 2 hours the monitor will trigger this script. The script will gather the information from the ticket and forward the ticket to a specified email address so that the ticket is not missed.
+This script is an Autofix and is meant to be called by the monitor [ProVal - Production - Automate - Ticket Sync Unsuccessful](<../monitors/Ticket Sync Unsuccessful.md>). If a ticket has failed to sync to the PSA for more than 2 hours, the monitor will trigger this script. The script will gather the information from the ticket and forward the ticket to a specified email address, ensuring that no tickets are missed.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
-This script is a function script and will not run successfully if run manually.
+This script is a function script and will not run successfully if executed manually.
 
 ## Dependencies
 
@@ -36,20 +37,8 @@ Automate must be syncing tickets with a PSA that uses the "ExternalID" field in 
 
 ## Process
 
-The monitor will trigger this script and pass parameters to the script. The parameter passed by the monitor is the ticket id to be converted into an email. The script will set the email body to the body of the ticket in the `@TicketMessage@` variable. The script will send the email to the target address with the information from the ticket in the body of the email.
+The monitor will trigger this script and pass parameters to it. The parameter passed by the monitor is the ticket ID to be converted into an email. The script will set the email body to the body of the ticket in the `@TicketMessage@` variable. The script will send the email to the target address with the information from the ticket in the body of the email.
 
 ## Output
 
-The only output for this script is an email to the configured email address. If this email fails to send, the data would be visible in the "Failed Emails" section of the system dashboard.
-
-
-
-
-
-
-
-
-
-
-
-
+The only output for this script is an email to the configured email address. If this email fails to send, the data will be visible in the "Failed Emails" section of the system dashboard.

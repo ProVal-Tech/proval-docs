@@ -8,11 +8,12 @@ tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-To granularly present the fundamental patching-related stats for the whole environment, clients, and computers scattered throughout the various patch approval ages.
+To granularly present the fundamental patching-related statistics for the whole environment, clients, and computers scattered throughout various patch approval ages.
 
-Minimum Requirement: MySQL 5.7.7
+**Minimum Requirement:** MySQL 5.7.7
 
 ## Associated Content
 
@@ -20,9 +21,9 @@ Minimum Requirement: MySQL 5.7.7
 |---------------------------------------------------------------------------------------------|----------|-----------------------------------------------------------------------|
 | [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](<../cwa/scripts/MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview.md>) | Script   | Imports the [plugin_proval_v_patching_metrics_overview](<../cwa/views/plugin_proval_v_patching_metrics_overview.md>) view. |
 | [plugin_proval_v_patching_metrics_overview](<../cwa/views/plugin_proval_v_patching_metrics_overview.md>) | View     | Baseline for the dataviews.                                         |
-| [Patching Metrics Overview](<../cwa/dataviews/Admin - Patching Metrics Overview.md>)                | Dataview | Displays the consolidated stats for the whole environment.           |
-| [Patching Metrics Overview - Client Filter](<../cwa/dataviews/Patching Metrics Overview - Client Filter.md>) | Dataview | Displays the stats for each client.                                  |
-| [Patching Metrics Overview - Computer Filter](<../cwa/dataviews/Patching Metrics Overview - Computer Filter.md>) | Dataview | Displays the stats for each computer.                                |
+| [Patching Metrics Overview](<../cwa/dataviews/Admin - Patching Metrics Overview.md>)                | Dataview | Displays the consolidated statistics for the whole environment.      |
+| [Patching Metrics Overview - Client Filter](<../cwa/dataviews/Patching Metrics Overview - Client Filter.md>) | Dataview | Displays the statistics for each client.                             |
+| [Patching Metrics Overview - Computer Filter](<../cwa/dataviews/Patching Metrics Overview - Computer Filter.md>) | Dataview | Displays the statistics for each computer.                           |
 
 ## Implementation
 
@@ -34,22 +35,10 @@ Minimum Requirement: MySQL 5.7.7
 
 ## FAQ
 
-**Q:** [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](<../cwa/scripts/MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview.md>) script is failing.  
-**A:** Please ensure that the minimum requirement is met and the MySQL version is at least **5.7.7.**  
+**Q:** The [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](<../cwa/scripts/MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview.md>) script is failing.  
+**A:** Please ensure that the minimum requirement is met and that the MySQL version is at least **5.7.7.**  
 
-You can check the Database version from the `Server Status` in Control Center.  
+You can check the database version from the `Server Status` in Control Center.  
 
 ![Image1](../../static/img/Patching-Metrics/image_1.png)  
 ![Image2](../../static/img/Patching-Metrics/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

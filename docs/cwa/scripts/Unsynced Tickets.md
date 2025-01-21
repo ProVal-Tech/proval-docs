@@ -8,9 +8,10 @@ tags: ['email']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to send an email with the information about all the tickets that failed to sync with PSA in the past **X** hours. **X** is the number of hours set for the Global Parameter `Threshold`.
+The purpose of the script is to send an email with information about all the tickets that failed to sync with PSA in the past **X** hours. **X** is the number of hours set for the Global Parameter `Threshold`.
 
 **Requirements:**
 1. Ticket Sync should be enabled in the CW Manage Plugin.
@@ -49,7 +50,7 @@ Schedule:
 
 | Name                           | Example                          | Required | Description                                                                 |
 |--------------------------------|----------------------------------|----------|-----------------------------------------------------------------------------|
-| Unsynced_Ticket_Email_Address  | [example@example.com](mailto:example@example.com) | True     | Address(es) to send the email. Multiple Addresses should be separated by a semi-colon(;). |
+| Unsynced_Ticket_Email_Address  | [example@example.com](mailto:example@example.com) | True     | Address(es) to send the email. Multiple addresses should be separated by a semicolon (;). |
 
 **Examples:**
 - Single Email Address:
@@ -82,14 +83,3 @@ Ticket Body: \<Ticket Body>
 
 **Sample Screenshot:**
 ![Sample Screenshot](../../../static/img/Unsynced-Tickets/image_5.png)
-
-
-
-
-
-
-
-
-
-
-

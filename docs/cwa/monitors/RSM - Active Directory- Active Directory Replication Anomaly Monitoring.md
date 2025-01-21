@@ -8,6 +8,7 @@ tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The monitor set operates on a cluster of Primary Domain Controllers (Infrastructure Masters) for each domain, triggering a failure alert upon detecting any Active Directory Replication Failure.
@@ -20,7 +21,7 @@ The monitor set operates on a cluster of Primary Domain Controllers (Infrastruct
 **Suggested Alert Style:** Continuous  
 **Suggested Alert Template:** `△ Custom - Ticket Creation Computer - Failures Only`
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Execute Info | Check Value | Condition     | Interval | Result |
 |--------------|----------------|---------------|-------------|---------------|----------|--------|
@@ -48,16 +49,3 @@ For a precise understanding of the error codes returned in the `LastError` prope
 ## Implementation
 
 [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<./Active Directory Replication Anomaly Monitoring.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

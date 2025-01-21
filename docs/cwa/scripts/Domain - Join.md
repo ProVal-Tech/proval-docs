@@ -8,6 +8,7 @@ tags: ['networking', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script joins the target machine to a domain.  
@@ -31,15 +32,3 @@ This script joins the target machine to a domain based on its current client and
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

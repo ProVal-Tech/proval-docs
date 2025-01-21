@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is designed to run a PowerShell script and pull any and all certificates in the personal certificate repository on every machine that it is run on. It should be scheduled to run intermittently on all machines you would like to monitor the certificates on. Suggested targets: App/IIS/Exchange servers.
+This script is designed to run a PowerShell script and pull any and all certificates in the personal certificate repository on every machine that it is run on. It should be scheduled to run intermittently on all machines you would like to monitor the certificates on. Suggested targets: App, IIS, and Exchange servers.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-LocalCerts/Get-LocalCerts.ps1`  
 **File Hash (SHA256):** `7835B8AAFD28CF9810494D7627ED035F45B562614FFA7526AB2D3F93E6F5301E`  
@@ -31,15 +32,3 @@ This script is designed to run a PowerShell script and pull any and all certific
 - Script log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['backup', 'security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will attempt to uninstall Sophos endpoint on the target device.
+This script will attempt to uninstall the Sophos endpoint on the target device.
 
-**NOTE:** This script will force a reboot, please keep this in mind when running the script.
+**NOTE:** This script will force a reboot; please keep this in mind when running the script.
 
 Time Saved by Automation: 15 Minutes
 
@@ -22,11 +23,11 @@ Time Saved by Automation: 15 Minutes
 
 ## Dependencies
 
-This will only work for a Windows-based target.
+This script will only work for a Windows-based target.
 
-The machine must have Sophos installed and Sophos Tamper Protection must be disabled.
+The machine must have Sophos installed, and Sophos Tamper Protection must be disabled.
 
-**NOTE:** The script will verify if Sophos Tamper Protection is enabled/disabled. If you need to disable tamper protection, please check the [Sophos - Disable Tamper Protection](<./Sophos - Disable Tamper Protection.md>) script.
+**NOTE:** The script will verify if Sophos Tamper Protection is enabled or disabled. If you need to disable Tamper Protection, please check the [Sophos - Disable Tamper Protection](<./Sophos - Disable Tamper Protection.md>) script.
 
 ## Variables
 
@@ -35,27 +36,14 @@ The machine must have Sophos installed and Sophos Tamper Protection must be disa
 ## Process
 
 The script will verify that the target device is a Windows-based machine. It will exit if the OS is not Windows.  
-Will verify if the Sophos service is running. It will exit if Sophos is not running/installed.  
-Will verify if Tamper Protection is enabled/disabled. If Tamper Protection is enabled, the script will exit with a log message and error.  
+It will verify if the Sophos service is running and exit if Sophos is not running or installed.  
+It will verify if Tamper Protection is enabled or disabled. If Tamper Protection is enabled, the script will exit with a log message and an error.  
 If Tamper Protection is disabled, the script will then run the uninstall strings provided by Sophos.  
 **Once the uninstall command completes, the script will issue a reboot to the machine.**  
 Once the machine is back online, the script will update the service inventory and check if the Sophos services are present.  
-If the services are present, then the script failed and will exit with a log message and will exit with an error.  
+If the services are present, then the script failed and will exit with a log message and an error.  
 If the services are no longer present, then the script was successful and will exit with a success message.
 
 ## Output
 
 - Script log messages only
-
-
-
-
-
-
-
-
-
-
-
-
-

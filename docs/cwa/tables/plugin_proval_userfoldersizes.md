@@ -8,13 +8,14 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores user folder size information from the script @Get User Folder Sizes (Script)
+This document stores user folder size information from the script **Get User Folder Sizes**.
 
 ## Dependencies
 
-@Get User Folder Sizes (Script)
+This script depends on **Get User Folder Sizes**.
 
 ## Table
 
@@ -25,15 +26,3 @@ Stores user folder size information from the script @Get User Folder Sizes (Scri
 | ComputerID    | INT     | The audited agent's computer ID.     |
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
-
-
-
-
-
-
-
-
-
-
-
-

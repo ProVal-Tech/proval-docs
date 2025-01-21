@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Address Autofill](<../monitors/Lockdown Chromium Browsers Address Autofill.md>) remote monitor. It indicates whether the remote monitor has effectively deactivated the Autofilling feature for addresses for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed.
+The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Address Autofill](<../monitors/Lockdown Chromium Browsers Address Autofill.md>) remote monitor. It indicates whether the remote monitor has effectively deactivated the autofilling feature for addresses in the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
@@ -23,26 +24,13 @@ The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer 
 
 | Column                                         | Description                                                                                      |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Clientid                                      | Clientid (Hidden)                                                                               |
-| Locationid                                    | Locationid (Hidden)                                                                             |
-| Computerid                                    | Computerid (Hidden)                                                                             |
-| Client                                        | Client Name                                                                                    |
+| Clientid                                      | Client ID (Hidden)                                                                               |
+| Locationid                                    | Location ID (Hidden)                                                                             |
+| Computerid                                    | Computer ID (Hidden)                                                                             |
+| Client                                        | Client Name                                                                                      |
 | Location                                      | Location Name                                                                                   |
 | Computer                                      | Computer Name                                                                                   |
 | Operating System                              | Operating System                                                                                 |
 | Last Contact                                  | Last Contact with RMM                                                                           |
 | Last Logged In User                           | Last Logged In User                                                                              |
-| Credit Cards and Addresses Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the Autofilling feature for addresses for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Credit Cards and Addresses Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the autofilling feature for addresses in the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed. |

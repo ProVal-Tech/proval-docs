@@ -8,11 +8,12 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-LTRedirSVC is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and creates an urgent ticket in our (ProVal's) Autotask portal if the status becomes failed. 
+LTRedirSVC is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and create an urgent ticket in our (ProVal's) Autotask portal if the status becomes failed.
 
-It should be created against the "Labtech Server" group for the on-prem partners only.
+It should be created against the "Labtech Server" group for on-prem partners only.
 
 ## Details
 
@@ -28,15 +29,4 @@ It should be created against the "Labtech Server" group for the on-prem partners
 
 ## Target
 
-Service [Plans.Windows](http://plans.Windows) servers.Server Roles.MSP Specific Servers.Labtech Server
-
-
-
-
-
-
-
-
-
-
-
+Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server

@@ -8,6 +8,7 @@ tags: ['recovery', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script includes an option to initiate a factory reset, which will erase all data on the computer. Please use this script with extreme caution.
@@ -36,15 +37,3 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

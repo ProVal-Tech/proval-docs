@@ -8,9 +8,10 @@ tags: ['application', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes all McAfee products from an endpoint. CW RMM implementation of the agnostic script [Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>).
+This document outlines the process to remove all McAfee products from an endpoint using the ConnectWise RMM implementation of the agnostic script [Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>).
 
 ## Sample Run
 
@@ -23,18 +24,18 @@ Removes all McAfee products from an endpoint. CW RMM implementation of the agnos
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Image 1](../../../static/img/Remove-Mcafee-Software/image_3.png)  
 ![Task Creation Image 2](../../../static/img/Remove-Mcafee-Software/image_4.png)  
 
-**Name:** `Remove Mcafee Software`  
+**Name:** `Remove McAfee Software`  
 **Description:** `Removes all McAfee products from an endpoint.`  
 **Category:** `Application`  
 ![Task Creation Image 3](../../../static/img/Remove-Mcafee-Software/image_5.png)  
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row Image](../../../static/img/Remove-Mcafee-Software/image_6.png)  
 
 A blank function will appear.  
@@ -84,11 +85,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -124,15 +125,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

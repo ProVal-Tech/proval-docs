@@ -8,11 +8,12 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Remote Monitor will alert if security events were deleted or cleared in the last 15 minutes, it is specifically looking for security event 1102. The remote monitor should be set to run at an interval less than or equal to 15 minutes.
+This Remote Monitor will alert if security events were deleted or cleared in the last 15 minutes, specifically looking for security event 1102. The remote monitor should be set to run at an interval of 15 minutes or less.
 
-Event 1102 is logged whenever the **Security log is cleared**, REGARDLESS of the status of the Audit System Events audit policy. The Account Name and Domain Name fields identify the user who cleared the log.
+Event 1102 is logged whenever the **Security log is cleared**, regardless of the status of the Audit System Events audit policy. The Account Name and Domain Name fields identify the user who cleared the log.
 
 **Note:** If the computer's PowerShell version is older than 5, the monitor set may not function properly.
 
@@ -22,7 +23,7 @@ Event 1102 is logged whenever the **Security log is cleared**, REGARDLESS of the
 **Suggested Alert Style**: Continuous  
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result                   |
 |--------------|----------------|------------|---------------|------------|----------|--------------------------|
@@ -47,16 +48,3 @@ Windows Computers
 ## Implementation
 
 [Import - Remote Monitor - Security event logs cleared/deleted](<./Security event logs cleareddeleted.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

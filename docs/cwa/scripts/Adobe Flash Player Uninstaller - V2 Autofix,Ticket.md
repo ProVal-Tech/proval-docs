@@ -8,11 +8,12 @@ tags: ['adobe', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will run as an Autofix script which helps to uninstall the Adobe Flash Player via multiple ways from the target machine.
+This script runs as an Autofix script that helps to uninstall Adobe Flash Player from the target machine using multiple methods.
 
-Time Saved by Automation: 20 Minutes
+**Time Saved by Automation:** 20 Minutes
 
 ## Sample Run
 
@@ -20,31 +21,22 @@ Time Saved by Automation: 20 Minutes
 
 ## Dependencies
 
-This script runs with a monitor named: "Proval - Production - Adobe Flash Detected"
+This script runs with a monitor named: **"Proval - Production - Adobe Flash Detected"**
 
-#### Global Parameters
+### Global Parameters
 
-| Name           | Example | Required | Description                                                                                                                                                          |
-|----------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TicketCreation  | 0       | False    | This requires to let users decide if they want a ticket if the script fails to uninstall the Adobe Flash Player. If yes, change it to 1.                          |
+| Name            | Example | Required | Description                                                                                                                                                          |
+|-----------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TicketCreation   | 0       | False    | This parameter allows users to decide if they want a ticket created if the script fails to uninstall Adobe Flash Player. If yes, change it to 1.                  |
 
 ## Process
 
-This script helps to uninstall the Adobe Flash Player via multiple ways.  
-First, it tries to uninstall it via uninstall.exe of Adobe Flash Player.  
-If failed then it will try to uninstall using the Uninstaller Software script using the uninstaller string.
+This script helps to uninstall Adobe Flash Player through multiple methods.  
+First, it attempts to uninstall it using `uninstall.exe` of Adobe Flash Player.  
+If that fails, it will try to uninstall using the Uninstaller Software script with the uninstaller string.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
 
 

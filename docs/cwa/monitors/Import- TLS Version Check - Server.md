@@ -8,13 +8,14 @@ tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ### Step 1.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
 ---
 
 ### Step 2.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUP ID(S)** with the Group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -30,7 +31,7 @@ INSERT INTO groupagents
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/'; $protocols = @(/'1.0/',/'1.1/',/'1.2/',/'1.3/'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty "//HKLM//SYSTEM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Protocols//TLS $($protocol)//Server//" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]/'6.1/') {$Enabled += @(/'1.0/') -Match $protocol} elseif ($osVer -lt [Version]/'6.2/') {$Enabled += @(/'1.0/',/'1.1/') -Match $protocol} else {$Enabled += @(/'1.0/',/'1.1/',/'1.2/') -Match $Protocol} }}; return $($Enabled -Join /',/')" as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $protocols = @(/'1.0/',/'1.1/',/'1.2/',/'1.3/'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty \"//HKLM//SYSTEM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Protocols//TLS $($protocol)//Server//\" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]/'6.1/') {$Enabled += @(/'1.0/') -Match $protocol} elseif ($osVer -lt [Version]/'6.2/') {$Enabled += @(/'1.0/',/'1.1/') -Match $protocol} else {$Enabled += @(/'1.0/',/'1.1/',/'1.2/') -Match $Protocol} }}; return $($Enabled -Join /',/')\" as `DataOut`,
 '12' as `Comparor`,
 '' as `DataIn`,
 '' as `IDField`,
@@ -88,7 +89,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ---
 
 ### Step 3.
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```
 INSERT INTO groupagents 
@@ -103,7 +104,7 @@ INSERT INTO groupagents
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/'; $protocols = @(/'1.0/',/'1.1/',/'1.2/',/'1.3/'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty "//HKLM//SYSTEM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Protocols//TLS $($protocol)//Server//" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]/'6.1/') {$Enabled += @(/'1.0/') -Match $protocol} elseif ($osVer -lt [Version]/'6.2/') {$Enabled += @(/'1.0/',/'1.1/') -Match $protocol} else {$Enabled += @(/'1.0/',/'1.1/',/'1.2/') -Match $Protocol} }}; return $($Enabled -Join /',/')" as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $protocols = @(/'1.0/',/'1.1/',/'1.2/',/'1.3/'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty \"//HKLM//SYSTEM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Protocols//TLS $($protocol)//Server//\" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]/'6.1/') {$Enabled += @(/'1.0/') -Match $protocol} elseif ($osVer -lt [Version]/'6.2/') {$Enabled += @(/'1.0/',/'1.1/') -Match $protocol} else {$Enabled += @(/'1.0/',/'1.1/',/'1.2/') -Match $Protocol} }}; return $($Enabled -Join /',/')\" as `DataOut`,
 '12' as `Comparor`,
 '' as `DataIn`,
 '' as `IDField`,
@@ -167,15 +168,3 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-
-

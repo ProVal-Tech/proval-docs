@@ -8,11 +8,12 @@ tags: ['report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the internal monitor is to execute [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script once per week against the managed Windows machines.
+The purpose of the internal monitor is to execute the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script once per week against the managed Windows machines.
 
-**Note:** The script is supported for PowerShell V5+ only. Hence, the monitor set explicitly excludes Operating Systems older than Windows 10 or Server 2016. However, if you are certain that the PS version for Server 2012 R2 servers in your environment is updated to v5+, then '**2012 R2**' can be removed from this line in the monitor set's additional field, and it will start running the script on those servers too.
+**Note:** The script is supported for PowerShell V5+ only. Hence, the monitor set explicitly excludes operating systems older than Windows 10 or Server 2016. However, if you are certain that the PowerShell version for Server 2012 R2 servers in your environment is updated to v5+, then '**2012 R2**' can be removed from this line in the monitor set's additional field, and it will start running the script on those servers too.
 
 ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_1.png)
 
@@ -31,31 +32,17 @@ Managed Windows Computers
 
 **Name:** △ CUSTOM - Execute Script - Crystal Disk Info Report
 
-[EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script should be imported before importing/creating the alert template. As the alert template should execute this script.
+The [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script should be imported before importing or creating the alert template, as the alert template should execute this script.
 
 ## Ticket Category
 
-- Connectwise Manage board, type, and priority for the ticket can be set by setting the proper ticket category.
-- The ticket will be created by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script and the ticket category can be set at the following levels:
-  - In the script's global variables. Setting the relevant ticket category id in these global variables will allow the script to create a ticket under those categories.  
+- ConnectWise Manage board, type, and priority for the ticket can be set by configuring the appropriate ticket category.
+- The ticket will be created by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script, and the ticket category can be set at the following levels:
+  - In the script's global variables. Setting the relevant ticket category ID in these global variables will allow the script to create a ticket under those categories.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_3.png)
-  - At the group level. Ticket category can be set from the groups where the internal monitor is applied. This ticket category will only be picked if global variables are set to 0.  
+  - At the group level. The ticket category can be set from the groups where the internal monitor is applied. This ticket category will only be picked if global variables are set to 0.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_4.png)
-  - On global monitor set. Ticket category can be selected at the monitor set itself. This ticket category will only be picked if the group level ticket category is not defined and global variables are set to 0.  
+  - On the global monitor set. The ticket category can be selected at the monitor set itself. This ticket category will only be picked if the group-level ticket category is not defined and global variables are set to 0.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_5.png)  
-  - If ticket category is set from none of the above mentioned places, then ticket will be generated under the default ticket category.  
+  - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_6.png)  
-
-
-
-
-
-
-
-
-
-
-
-
-
-

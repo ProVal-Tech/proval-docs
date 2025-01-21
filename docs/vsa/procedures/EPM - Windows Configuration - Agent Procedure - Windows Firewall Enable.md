@@ -8,9 +8,10 @@ tags: ['firewall', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This agent procedure is used to enable Windows Firewall in endpoint.
+This agent procedure is used to enable Windows Firewall on an endpoint.
 
 ## Example Agent Procedure Log
 
@@ -73,27 +74,16 @@ This agent procedure is used to enable Windows Firewall in endpoint.
 | 8:54:44 am 2-Nov-22 | Execute Powershell Command-0008                 | New command variable is: -Command "Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt" | provaltech.com/surender.kumar   |
 | 8:54:44 am 2-Nov-22 | Execute Powershell Command-0008                 | Custom commands detected as Get-NetFirewallProfile -Name Private | Select-Object -ExpandProperty Enabled >C:/provaltech/pvtfw.txt | provaltech.com/surender.kumar   |
 | 8:54:41 am 2-Nov-22 | Execute Powershell Command-0002                 | Powershell is present.                   | provaltech.com/surender.kumar   |
-| 8:54:32 am 2-Nov-22 | Run Now - Windows Firewall Enable                | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Windows Firewall Enable to run at Nov 2 2022 8:54AM | provaltech.com/surender.kumar   |
+| 8:54:32 am 2-Nov-22 | Run Now - Windows Firewall Enable                | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Windows Firewall Enable to run at Nov 2 2022 8:54 AM | provaltech.com/surender.kumar   |
 
 ## Dependencies
 
-No
+None
 
 ## Process
 
-The agent procedure checks whether the machine has firewall enabled or not. If not then the procedure enables it and saves its logs in procedure log entry.
+The agent procedure checks whether the machine has the firewall enabled. If not, the procedure enables it and saves its logs in the procedure log entry.
 
 ## Output
 
 Procedure Logs
-
-
-
-
-
-
-
-
-
-
-

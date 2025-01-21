@@ -8,36 +8,25 @@ tags: ['active-directory', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows you all domains and their respective groups and a corresponding list of members. 
+This dataview shows all domains, their respective groups, and a corresponding list of members.
 
 ## Dependencies
 
-AD Plugin needs to be installed, enabled, and configured with credentials to pull data.  
+The AD Plugin needs to be installed, enabled, and configured with credentials to pull data.
+
 **Tables Referenced**  
-- plugin_ad_memberofxrefs  
-- plugin_ad_users  
-- plugin_ad_domains  
+- `plugin_ad_memberofxrefs`  
+- `plugin_ad_users`  
+- `plugin_ad_domains`  
 
 ## Columns
 
-| Column        | Description                        |
-|---------------|------------------------------------|
-| Group Name    | Displays the group name            |
-| Group GUID    | Displays the group GUID            |
-| Members       | Displays the members of the group   |
-| Domain Name   | Displays the Domain Name           |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column        | Description                         |
+|---------------|-------------------------------------|
+| Group Name    | Displays the group name             |
+| Group GUID    | Displays the group GUID             |
+| Members       | Displays the members of the group    |
+| Domain Name   | Displays the Domain Name            |

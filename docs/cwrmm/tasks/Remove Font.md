@@ -8,9 +8,10 @@ tags: ['uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Remove the installed font from the Windows machines. Accepts the '*' wildcard to remove multiple matching fonts. CW RMM implementation of the agnostic script [Remove-Font](<../../powershell/Remove-Font.md>).
+This document outlines how to remove installed fonts from Windows machines. It accepts the '*' wildcard to remove multiple matching fonts. The CW RMM implementation of the agnostic script can be found in [Remove-Font](<../../powershell/Remove-Font.md>).
 
 ## Sample Run
 
@@ -26,13 +27,13 @@ Remove the installed font from the Windows machines. Accepts the '*' wildcard to
 
 | Name   | Example         | Required | Type         | Description                                         |
 |--------|------------------|----------|--------------|-----------------------------------------------------|
-| Title  | Malicious Font    | True     | Text String  | Title to the font to remove from the system.       |
+| Title  | Malicious Font    | True     | Text String  | Title of the font to remove from the system.       |
 
 ![User Parameter Image](../../../static/img/Remove-Font/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/Remove-Font/image_5.png)  
 ![Task Creation Image 2](../../../static/img/Remove-Font/image_6.png)  
@@ -47,7 +48,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ### Title:
 
-Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
+Add a new parameter by clicking the `Add Parameter` button located at the top-right corner of the screen.
 
 ![Add Parameter Image 1](../../../static/img/Remove-Font/image_8.png)  
 
@@ -56,7 +57,7 @@ This screen will appear.
 ![Add Parameter Image 2](../../../static/img/Remove-Font/image_9.png)  
 
 - Set `Title` in the `Parameter Name` field.
-- Enable the `Required Field` button.
+- Enable the `Required Field` option.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
@@ -64,7 +65,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Image](../../../static/img/Remove-Font/image_11.png)  
 
@@ -83,7 +84,7 @@ The following function will pop up on the screen:
 
 ![PowerShell Script Popup](../../../static/img/Remove-Font/image_15.png)  
 
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
+Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
 
 ```
 #region parameters
@@ -127,11 +128,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -173,15 +174,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

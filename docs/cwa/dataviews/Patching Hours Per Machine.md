@@ -8,32 +8,20 @@ tags: ['patching', 'performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview represents the number of patching jobs and total patching hours per machine.
+This document provides a dataview representing the number of patching jobs and total patching hours per machine.
 
 ## Columns
 
 | Column                                   | Description                                          |
 |------------------------------------------|------------------------------------------------------|
-| computerid                               | Computerid of the machine                           |
-| Machine Name                             | Name of the Machine                                 |
-| Client Name                              | Name of the client                                  |
-| Location Name                            | Name of the Location                                |
-| Operating System                         | Operating System of the machine                     |
-| Number of Patch Jobs last 30 days       | Number of Patch Jobs per machine in the last 30 days|
-| Sum of Patching hours last 30 days      | Sum of Patching hours per machine in the last 30 days|
-| Total Patch Duration                     | Total Patch Duration per machine in the last 30 days|
-
-
-
-
-
-
-
-
-
-
-
-
-
+| computerid                               | Computer ID of the machine                           |
+| Machine Name                             | Name of the machine                                  |
+| Client Name                              | Name of the client                                   |
+| Location Name                            | Name of the location                                 |
+| Operating System                         | Operating system of the machine                      |
+| Number of Patch Jobs Last 30 Days       | Number of patch jobs per machine in the last 30 days |
+| Sum of Patching Hours Last 30 Days      | Sum of patching hours per machine in the last 30 days |
+| Total Patch Duration                     | Total patch duration per machine in the last 30 days |

@@ -3,37 +3,26 @@ id: 'd4cae7e3-3abd-44b5-a9d9-7a0668834050'
 title: 'Checks Registry for Credential Flag'
 title_meta: 'Checks Registry for Credential Flag'
 keywords: ['registry', 'credentials', 'security', 'vulnerability', 'threat']
-description: 'This document provides an overview of how to check the Windows registry for the stored credentials flag related to WDigest. It explains the implications of the flag being set or not, and highlights potential vulnerabilities associated with it, including references to Mimikatz.'
+description: 'This document provides an overview of how to check the Windows registry for the stored credentials flag related to WDigest. It explains the implications of the flag being set or not and highlights potential vulnerabilities associated with it, including references to Mimikatz.'
 tags: ['registry', 'security', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Checks registry for value if stored credentials flag is set.
+This document checks the registry for the value of the stored credentials flag.
 
-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential
+**Registry Path:**
+```
+HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredential
+```
 
-If it is set - potential threat is using it.
-
-If it is not set but exists - system is vulnerable - see [Mimikatz - Vulnerable](<./Mimikatz - Vulnerable.md>)
+- If the flag is set, there is a potential threat associated with using it.
+- If the flag is not set but exists, the system is vulnerable. For more information, see [Mimikatz - Vulnerable](<./Mimikatz - Vulnerable.md>).
 
 ## Settings
 
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
-| \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 1      | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%}` | Equals     | 1      | Windows        |

@@ -8,11 +8,12 @@ tags: ['linux', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script scans your main drive (C: for Windows and everything for Linux) and outputs the information to a text file in the temp folders. This also puts the information inside the ticket and attaches the text file in the ticket in case it becomes unreadable in the ticket.
+This script scans your main drive (C: for Windows and everything for Linux) and outputs the information to a text file in the temp folders. It also includes the information inside the ticket and attaches the text file in case it becomes unreadable in the ticket.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-Windows or Linux based machines
+- Windows or Linux-based machines
 
 ## Variables
 
@@ -34,21 +35,21 @@ Windows or Linux based machines
 
 ## Process
 
-The script will first check to see if a previous version of the log file exists from a prior run of this script. If the file exists, it will delete the file and continue on. If the file does not exist, the script will continue.
+The script will first check to see if a previous version of the log file exists from a prior run of this script. If the file exists, it will delete the file and continue. If the file does not exist, the script will proceed.
 
-The script will then determine if the machine is a Windows OS or a Non Windows OS. 
+The script will then determine if the machine is running a Windows OS or a Non-Windows OS.
 
-For Non Windows OS the script will run a BASH command to gather the data and output the data to a text file.
+For Non-Windows OS, the script will run a BASH command to gather the data and output the results to a text file.
 
-The script will gather the information from the text file and will generate a ticket and attempt to place all of the data from the earlier BASH command into the ticket. It will also attempt to download the log file and attach it to the ticket in case the results were too long for Automate to hold in a variable.
+The script will gather the information from the text file and generate a ticket, attempting to place all of the data from the earlier BASH command into the ticket. It will also attempt to download the log file and attach it to the ticket in case the results were too long for Automate to hold in a variable.
 
-For Windows OS the script will run a PowerShell script and will output the data to a text file.
+For Windows OS, the script will run a PowerShell script and output the data to a text file.
 
-The script will then gather the information from the text file and will generate a ticket and attempt to place all of the data from the earlier PowerShell command into the ticket. It will also attempt to download the log file and attach it to the ticket in case the results were too long for Automate to hold in a variable.
+The script will then gather the information from the text file, generate a ticket, and attempt to place all of the data from the earlier PowerShell command into the ticket. It will also attempt to download the log file and attach it to the ticket in case the results were too long for Automate to hold in a variable.
 
-If the ticket was successful and has created the ticket with the data the script will exit with a success log message.
+If the ticket is successfully created with the data, the script will exit with a success log message.
 
-If the script failed and has not gathered the data appropriately it will exit with an error log message.
+If the script fails to gather the data appropriately, it will exit with an error log message.
 
 ## Output
 
@@ -59,15 +60,3 @@ If the script failed and has not gathered the data appropriately it will exit wi
 ## Example Output
 
 ![Example Output](../../../static/img/Space-Auditing-Script/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

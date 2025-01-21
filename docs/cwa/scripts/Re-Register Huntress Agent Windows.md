@@ -8,9 +8,10 @@ tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script can be used to re-register Huntress Agent for the Windows machines.
+This script can be used to re-register the Huntress Agent for Windows machines.
 
 **File Hash:**
 - **MD5:** `8F19848478D623C13615D166134FE8C1`
@@ -38,7 +39,7 @@ This script can be used to re-register Huntress Agent for the Windows machines.
 | Name                          | Type   | Example              | Section        | Required | Description                                                                                              |
 |-------------------------------|--------|----------------------|----------------|----------|----------------------------------------------------------------------------------------------------------|
 | Huntress Agent - Account Key   | Text   | 1SA2345AASSSS234     | Security Tools | True     | This is the Account Key that determines which Huntress Account an Agent should be associated with.      |
-| Huntress Agent - Org Key       | Text   | Development          | Security Tools | False    | By default, Huntress Organization key is the name of the client. Set this EDF if it's different for the client. |
+| Huntress Agent - Org Key       | Text   | Development          | Security Tools | False    | By default, the Huntress Organization key is the name of the client. Set this EDF if it's different for the client. |
 
 **These EDFs can be created by running the [Deploy Huntress Agent [Windows, Mac]](<./Deploy Huntress Agent Windows, Mac.md>) script with the `Set_Environment` parameter set to `1`.**
 
@@ -46,22 +47,10 @@ This script can be used to re-register Huntress Agent for the Windows machines.
 
 | Name                             | Type       | Example | Section        | Required | Description                                                                                              |
 |----------------------------------|------------|---------|----------------|----------|----------------------------------------------------------------------------------------------------------|
-| Huntress Agent Install - Exclude | Check-Box  | 0/1     | Security Tools | False    | Mark this EDF to exclude the location from the Auto deployment of the Huntress Agent from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set. |
+| Huntress Agent Install - Exclude | Check-Box  | 0/1     | Security Tools | False    | Mark this EDF to exclude the location from the auto deployment of the Huntress Agent from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set. |
 
 **This EDF can be created by running the [Deploy Huntress Agent [Windows, Mac]](<./Deploy Huntress Agent Windows, Mac.md>) script with the `Set_Environment` parameter set to `1`.**
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

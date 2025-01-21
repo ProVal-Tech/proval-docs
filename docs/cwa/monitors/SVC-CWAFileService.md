@@ -8,9 +8,10 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-CWAFileService is one of the important services for the Automate server, this monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Autotask portal if it is down. It should be created against the "Labtech Server" group for the on-prem partners only.
+CWAFileService is one of the important services for the Automate server. This monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Autotask portal if it is down. It should be created against the "Labtech Server" group for on-prem partners only.
 
 ## Details
 
@@ -25,14 +26,3 @@ CWAFileService is one of the important services for the Automate server, this mo
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
-
-
-
-
-
-
-
-
-
-
-

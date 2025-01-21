@@ -8,23 +8,13 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will determine if the folder redirection notifications are enabled for OneDrive on an endpoint. Ideally, for machines using OneDrive, the folder redirection notification should be enabled so users are aware if their OneDrive is not redirecting properly.
+This document determines whether folder redirection notifications are enabled for OneDrive on an endpoint. Ideally, for machines using OneDrive, the folder redirection notification should be enabled so users are aware if their OneDrive is not redirecting properly.
 
 ## Settings
 
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptInWithNotification-%}` | Equals     | 1      | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-

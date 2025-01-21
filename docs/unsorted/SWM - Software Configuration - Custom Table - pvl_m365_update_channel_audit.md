@@ -8,9 +8,10 @@ tags: ['database', 'report', 'setup', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Purpose
 
-Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script
+Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script.
 
 ## Dependencies
 
@@ -23,22 +24,10 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](htt
 
 | Column            | Data Type | Description                                                                                     |
 |-------------------|-----------|-------------------------------------------------------------------------------------------------|
-| computerid        | int       | computerid                                                                                      |
-| Version           | varchar   | C2R office version installed on the machine                                                    |
-| AutoUpdate        | tinyint   | If office Auto update is enabled or not on the machine                                         |
-| updateChannel     | varchar   | Update Channel for office installed on the machine                                             |
-| dataCollectionDate| datetime  | Last time [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine |
-
-
-
-
-
-
-
-
-
-
-
-
+| computerid        | int       | Identifier for the computer.                                                                    |
+| Version           | varchar   | C2R Office version installed on the machine.                                                   |
+| AutoUpdate        | tinyint   | Indicates whether Office Auto Update is enabled on the machine.                                |
+| updateChannel     | varchar   | Update Channel for Office installed on the machine.                                            |
+| dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine. |
 
 

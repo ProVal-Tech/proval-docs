@@ -8,9 +8,10 @@ tags: ['webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will show the Webroot hashed keycode present on the machine, the status of the keycode, and whether it matches the keycode setup under the Webroot plugin or with the EDF "Webroot site Keycode".
+This dataview shows the Webroot hashed keycode present on the machine, the status of the keycode, and whether it matches the keycode setup under the Webroot plugin or with the EDF "Webroot site Keycode".
 
 ## Dependencies
 
@@ -21,22 +22,9 @@ This dataview will show the Webroot hashed keycode present on the machine, the s
 
 | Column               | Description                                                            |
 |---------------------|------------------------------------------------------------------------|
-| Computer Name       | Display the Computer name.                                            |
-| Client Name         | Display the Client name.                                              |
-| Location Name       | Display the location name.                                            |
-| OS                  | Display the Operating System.                                         |
-| Encrypted Keycode   | Display the currently present webroot Encrypted keycode.              |
-| KeyCode Status      | Display the keycode status, whether it matches the keycode setup under the webroot plugin. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Computer Name       | Displays the computer name.                                           |
+| Client Name         | Displays the client name.                                             |
+| Location Name       | Displays the location name.                                           |
+| OS                  | Displays the operating system.                                        |
+| Encrypted Keycode   | Displays the currently present Webroot encrypted keycode.             |
+| KeyCode Status      | Displays the keycode status, indicating whether it matches the keycode setup under the Webroot plugin. |

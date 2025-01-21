@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Implements group policies to redirect Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll) to Microsoft OneDrive and other desired modifications.
+This document implements group policies to redirect Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll) to Microsoft OneDrive and outlines other desired modifications.
 
 ## Dependencies
 
@@ -22,7 +23,7 @@ Implements group policies to redirect Windows known folders (Desktop, Documents,
 
 ## Implementation
 
-Export the procedure from ProVal's VSA instance  
+Export the procedure from ProVal's VSA instance.  
 **Name:** Microsoft OneDrive - (Group Policies/Redirect Folder)  
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_1.png)  
@@ -31,7 +32,7 @@ The export will download the necessary XML file.
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_2.png)  
 
-Import this procedure into the partner's VSA instance  
+Import this procedure into the partner's VSA instance.  
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_3.png)  
 
@@ -57,7 +58,7 @@ Ensure the managed variable exists prior to usage.
 | AllowTenantList                   | \<M365TenantId>   | \<M365TenantId>    | This setting prevents users from easily uploading files to other organizations by specifying allowed tenant IDs |
 | KFMBlockOptOut                    | (0/1)            | 1                 | This setting forces users to keep their Documents, Pictures, and Desktop folders directed to OneDrive. |
 | KFMOptInWithWizard                | \<M365TenantId>   | \<M365TenantId>    | This setting shows a window that prompts users to move their Documents, Pictures, and Desktop folders to OneDrive. |
-| KFMSilentOptIn                    | \<M365TenantId>   | \<M365TenantId>    | This setting redirects and move your users' Documents, Pictures, and/or Desktop folders to OneDrive without any user interaction. |
+| KFMSilentOptIn                    | \<M365TenantId>   | \<M365TenantId>    | This setting redirects and moves your users' Documents, Pictures, and/or Desktop folders to OneDrive without any user interaction. |
 | KFMSilentOptInWithNotification     | (0/1)            | 1                 | Shows a notification after a successful redirection.                                          |
 
 ## Output
@@ -69,15 +70,3 @@ A status of Success is expected.
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_6.png)  
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_7.png)  
-
-
-
-
-
-
-
-
-
-
-
-

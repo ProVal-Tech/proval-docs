@@ -8,24 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will determine if the device has Windows Defender ATP (Advanced Threat Protection) enabled.
+This document outlines a method to determine if the device has Windows Defender ATP (Advanced Threat Protection) enabled.
 
 ## Settings
 
-| Detection String                                      | Comparator | Result | Applicable OS |
-|------------------------------------------------------|------------|--------|----------------|
+| Detection String                                                                 | Comparator | Result | Applicable OS |
+|----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Windows Advanced Threat Protection/Status:OnboardingState-%}` | Equals     | 1      | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-
-

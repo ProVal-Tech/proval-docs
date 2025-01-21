@@ -8,23 +8,11 @@ tags: ['active-directory', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uses the AD_Plugin tables to determine if a new Domain admin user has recently been created.
+This document uses the AD_Plugin tables to determine if a new Domain Admin user has recently been created.
 
 ## Target
 
-Servers - Domain Controllers
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Servers:** Domain Controllers

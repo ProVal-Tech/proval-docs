@@ -8,14 +8,15 @@ tags: ['email', 'mysql', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Description:  
-> Check the script state  
-> If the script state exists, then check if it has changed since the last run of the script and send the names to the Email address stored in global variable @Email@.  
-> If the script state doesn't exist or is empty, fill it.
+**Description:**  
+- Check the script state.  
+- If the script state exists, then check if it has changed since the last run of the script and send the names to the email address stored in the global variable `@Email@`.  
+- If the script state doesn't exist or is empty, fill it.
 
-Time Saved by Automation: 7 Minutes.
+**Time Saved by Automation:** 7 minutes.
 
 ## Sample Run
 
@@ -23,34 +24,22 @@ Time Saved by Automation: 7 Minutes.
 
 ## Variables
 
-- @Email@: Email Address passed as a global variable. 
-- @MySQLUsers_state@: Value of the script state "MySQLUsers_state". 
-- @MySQLCompUsers@: Name of the MySQL users added since the last runtime of the script.
+- `@Email@`: Email address passed as a global variable.  
+- `@MySQLUsers_state@`: Value of the script state "MySQLUsers_state".  
+- `@MySQLCompUsers@`: Names of the MySQL users added since the last runtime of the script.
 
 #### Global Parameters
 
 | Name  | Example                       | Required | Description                                                                                                                                       |
 |-------|-------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Email | [example@email.com](mailto:example@email.com) | True     | Sends the Email to the address mentioned in the variable with names of the newly created MySQL users. To use multiple email addresses, each one should be separated by a semi-colon ';'. |
+| Email | [example@email.com](mailto:example@email.com) | True     | Sends the email to the address mentioned in the variable with names of the newly created MySQL users. To use multiple email addresses, each one should be separated by a semicolon ';'. |
 
 ## Process
 
-Step 1: Check the script state  
-Step 2: If the script state exists, then check if it has changed since the last run of the script and send the names to the Email address stored in global variable @Email@.  
-Step 3: If the script state doesn't exist or is empty, fill it.
+1. Check the script state.  
+2. If the script state exists, then check if it has changed since the last run of the script and send the names to the email address stored in the global variable `@Email@`.  
+3. If the script state doesn't exist or is empty, fill it.
 
 ## Output
 
 Email
-
-
-
-
-
-
-
-
-
-
-
-

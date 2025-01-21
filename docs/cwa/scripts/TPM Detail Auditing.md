@@ -8,11 +8,12 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will provide detailed information about the TPM configuration on the endpoint.
+This script provides detailed information about the TPM configuration on the endpoint.
 
-Time Automation: 10 Minutes
+**Time Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -26,42 +27,29 @@ Time Automation: 10 Minutes
 
 | Variable              | Description                                                   |
 |-----------------------|---------------------------------------------------------------|
-| TPMData               | It collects the complete TPM information                      |
-| TPMReady              | This conveys whether TPMReady is Enabled or disabled          |
-| TPMPresent            | This conveys whether TPMPresent is Enabled or disabled        |
-| ManagedAuthLevel      | This stores the ManagedAuthLevel information                  |
-| OwnerAuth             | This stores the OwnerAuth Info                                |
-| OwnerClearDisabled     | This contains the detail of whether OwnerClearDisabled or not |
-| AutoProvisioning      | It conveys whether auto-provisioning is enabled or not       |
-| LockedOut             | This denotes whether TPM is locked or not                     |
-| TPMVersion            | This provides the TPM version info                            |
+| TPMData               | Collects the complete TPM information                         |
+| TPMReady              | Indicates whether TPMReady is enabled or disabled             |
+| TPMPresent            | Indicates whether TPMPresent is enabled or disabled           |
+| ManagedAuthLevel      | Stores the ManagedAuthLevel information                       |
+| OwnerAuth             | Stores the OwnerAuth information                              |
+| OwnerClearDisabled    | Indicates whether OwnerClear is disabled or not               |
+| AutoProvisioning      | Indicates whether auto-provisioning is enabled or not        |
+| LockedOut             | Indicates whether TPM is locked or not                        |
+| TPMVersion            | Provides the TPM version information                          |
 
 #### Script States
 
 | Name                   | Example                                                                                                      | Description                                               |
 |------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| TPMDetail_Info         | @TPMReady@ -- @TpmPresent@ -- @ManagedAuthLevel@ -- @OwnerAuth@ -- @OwnerClearDisabled@ -- @AutoProvisioning@ -- @LockedOut@ -- @TPMVersion@ | This stores the TPM data to be displayed in the dataview. |
+| TPMDetail_Info         | @TPMReady@ -- @TPMPresent@ -- @ManagedAuthLevel@ -- @OwnerAuth@ -- @OwnerClearDisabled@ -- @AutoProvisioning@ -- @LockedOut@ -- @TPMVersion@ | Stores the TPM data to be displayed in the dataview.     |
 
 ## Process
 
-- PowerShell script will gather the relevant TPM details.
-- Stores the output of the PowerShell script to a scriptstate. This data is then visible in the [TPM Detailed Info](<../dataviews/TPM Detailed Info.md>) dataview.
+- The PowerShell script gathers the relevant TPM details.
+- It stores the output of the PowerShell script to a script state. This data is then visible in the [TPM Detailed Info](<../dataviews/TPM Detailed Info.md>) dataview.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

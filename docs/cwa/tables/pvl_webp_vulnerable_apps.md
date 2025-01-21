@@ -8,6 +8,7 @@ tags: ['database', 'installation', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The custom table serves as a container for the data fetched by the [WebP Vulnerability Report](https://proval.itglue.com/DOC-5078775-14166219) script.
@@ -23,25 +24,13 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 
 | Column                       | Type        | Explanation                                                                                     |
 |------------------------------|-------------|-------------------------------------------------------------------------------------------------|
-| computerid                   | int(10)    | Computerid of the endpoint                                                                      |
-| installedappname             | varchar(128)| Full Name of the application installed on the endpoint                                          |
-| installedappversion          | varchar(32) | Installed Version of the correspondence application                                             |
-| electronappname              | varchar(128)| Application Name fetched from the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file |
-| electronversion               | varchar(32) | Electron_Version available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
-| access_type                  | varchar(16) | Access_Type available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
-| date_accessed                | varchar(32) | Date_Accessed available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
-| vulnerable_cve_2023_4863     | varchar(32) | Vulnerable_CVE_2023_4863 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
-| vulnerable_cve_2023_5217     | varchar(32) | Vulnerable_CVE_2023_5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the correspondence application |
-| datetime                     | datetime    | Data Collection Time from the endpoint                                                          |
-
-
-
-
-
-
-
-
-
-
-
-
+| computerid                   | int(10)    | Computer ID of the endpoint                                                                      |
+| installedappname             | varchar(128)| Full name of the application installed on the endpoint                                          |
+| installedappversion          | varchar(32) | Installed version of the corresponding application                                             |
+| electronappname              | varchar(128)| Application name fetched from the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file |
+| electronversion               | varchar(32) | Electron version available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
+| access_type                  | varchar(16) | Access type available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
+| date_accessed                | varchar(32) | Date accessed available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
+| vulnerable_cve_2023_4863     | varchar(32) | Vulnerable CVE 2023-4863 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
+| vulnerable_cve_2023_5217     | varchar(32) | Vulnerable CVE 2023-5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
+| datetime                     | datetime    | Data collection time from the endpoint                                                          |

@@ -8,11 +8,12 @@ tags: ['disk']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor replicates the functionality of the Internal Monitor: 'Enhanced Drive Space Monitor'. Its primary purpose is to identify machines for which tickets have been closed prematurely, without effectively resolving the space issue on the respective machine. The monitor scans will output all of the machines that still have the low drive space issue, but no ticket has been generated for it. The monitor is designed to run daily to re-create those problem tickets.
+This monitor replicates the functionality of the Internal Monitor: 'Enhanced Drive Space Monitor'. Its primary purpose is to identify machines for which tickets have been closed prematurely without effectively resolving the space issue on the respective machine. The monitor scans will output all of the machines that still have the low drive space issue, but for which no ticket has been generated. The monitor is designed to run daily to recreate those problem tickets.
 
-Note: The monitor will not detect machines in maintenance mode.
+**Note:** The monitor will not detect machines in maintenance mode.
 
 ## Dependencies
 
@@ -21,25 +22,12 @@ Note: The monitor will not detect machines in maintenance mode.
 
 ## How to Configure
 
-This monitor has to be configured the same as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) with the same alert template. It will use the same group and computer-level EDF's.
+This monitor must be configured the same as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) with the same alert template. It will use the same group and computer-level EDFs.
 
-Just need to import this monitor and set the alert template which has been used by the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>).
+Simply import this monitor and set the alert template that has been used by the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>).
 
 ## Caution
 
-Just make sure [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>) should have been using the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) at line 54. Otherwise, both monitors will not be able to detect the tickets.
+Ensure that the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>) uses the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) at line 54. Otherwise, both monitors will not be able to detect the tickets.
 
 ![Image](../../../static/img/Enhanced-Drive-Space-Monitor-Ticket-Management/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

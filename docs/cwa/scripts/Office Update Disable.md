@@ -8,11 +8,12 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script disables office updates by running a PowerShell command
+This script disables Office updates by running a PowerShell command.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,16 +21,4 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- Disables office update by running a PowerShell command which updates a registry value “HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration” and setting the UpdateEnabled to False.
-
-
-
-
-
-
-
-
-
-
-
-
+- Disables Office updates by running a PowerShell command that updates a registry value at `HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration` and sets the `UpdateEnabled` value to `False`.

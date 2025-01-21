@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs a Winget package on a target endpoint.
+This document explains how to install a Winget package on a target endpoint.
 
 ## Sample Run
 
@@ -20,36 +21,23 @@ Installs a Winget package on a target endpoint.
 
 - [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
 
-#### Global Parameters
+### Global Parameters
 
-| Name         | Example                | Required | Description                                                                 |
-|--------------|------------------------|----------|-----------------------------------------------------------------------------|
-| ProjectName  | Invoke-WingetProcessor | True     | This represents the name of the Agnostic script, and should not be changed. |
+| Name        | Example                | Required | Description                                                                 |
+|-------------|------------------------|----------|-----------------------------------------------------------------------------|
+| ProjectName | Invoke-WingetProcessor | True     | This represents the name of the Agnostic script and should not be changed. |
 
-#### User Parameters
+### User Parameters
 
 | Name      | Example                          | Required | Description                                |
 |-----------|----------------------------------|----------|--------------------------------------------|
 | PackageId | Cisco.CiscoWebexMeetings        | True     | The Winget package you wish to install.   |
-| Scope     | msstorewinget               | True     | The Source to use when obtaining the package. |
+| Scope     | msstorewinget                   | True     | The source to use when obtaining the package. |
 
 ## Process
 
-Please Reference [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>) for process.
+Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>) for the process.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

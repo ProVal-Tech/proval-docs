@@ -8,6 +8,7 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will make changes in the registry to set the update channel for Microsoft 365 products to the value set in the Client or Computer level EDF `Update Channel`.
@@ -47,14 +48,3 @@ This script will make changes in the registry to set the update channel for Micr
 - Script Log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-

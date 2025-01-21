@@ -8,9 +8,10 @@ tags: ['active-directory', 'database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script collects the AD Users department information.
+This script collects the department information of Active Directory (AD) users.
 
 ## Sample Run
 
@@ -18,14 +19,13 @@ This script collects the AD Users department information.
 
 ## Dependencies
 
-[plugin_proval_computer_department](<../../unsorted/plugin_proval_computer_department.md>)  
-@Department Detail of AD Users [Script] -- Dataviews  
-@Department Detail of Computer [Script] -- Dataviews  
+- [plugin_proval_computer_department](<../../unsorted/plugin_proval_computer_department.md>)  
+- @Department Detail of AD Users [Script] -- Dataviews  
+- @Department Detail of Computer [Script] -- Dataviews  
 
 ## Process
 
-This script will collect the user department information of the AD Users.  
-It will store the information to the table `plugin_proval_computer_department` and also store the value to the EDF "Computer Department".
+This script collects the department information of AD users. It stores the information in the table `plugin_proval_computer_department` and also records the value in the EDF "Computer Department."
 
 ## Output
 
@@ -33,15 +33,3 @@ It will store the information to the table `plugin_proval_computer_department` a
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
-
-
-
-
-
-
-
-
-
-
-
-

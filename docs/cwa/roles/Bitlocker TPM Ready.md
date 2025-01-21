@@ -8,24 +8,13 @@ tags: ['connectwise', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role checks the machine if the machine TPM is ready to use, if so this role gets applied to the machine in the Automate database.
+This role checks if the TPM on the machine is ready to use. If so, this role is applied to the machine in the Automate database.
 
 ## Settings
 
 | Detection String                                                                                           | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
-| \{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |
-
-
-
-
-
-
-
-
-
-
-
-
+| \\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |

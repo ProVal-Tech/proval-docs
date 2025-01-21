@@ -8,11 +8,12 @@ tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will check if the Dell SupportAssist software is installed and then will uninstall Dell SupportAssist from the Windows machines.
+The script will check if the Dell SupportAssist software is installed and then uninstall it from the Windows machines.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,20 +21,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-This script will first check if the Dell SupportAssist software is installed and then will try to uninstall it using the shell command. This script also verifies if the software was uninstalled from the machine.
+This script will first check if the Dell SupportAssist software is installed and then attempt to uninstall it using a shell command. The script also verifies if the software was successfully uninstalled from the machine.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

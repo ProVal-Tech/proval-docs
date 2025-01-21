@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is a variation of the [Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script, designed specifically for ticket management related to remote ping monitors. The key distinction of this script is that it excludes the addition of the computer's information to the ticket.
@@ -26,7 +27,7 @@ Alert Template: `△ Custom - Ticket Creation - Ping Monitor`
 
 | Name                              | Example | Required | Description                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------|---------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _sysPingMonitor_EnableClientTickets | 1       | False    | Set its value to '1' in order to create client tickets under the client corresponding to the IP being pinged in the monitor. The script will match the IP with the router address in the automate and will fetch the corresponding client. If not found, it will create the standard computer tickets on the automate server. By default, its value is '0' which means only standard tickets are enabled. ![Image](../../../static/img/Ticket-Creation---Ping-Monitor/image_1.png) |
+| _sysPingMonitor_EnableClientTickets | 1       | False    | Set its value to '1' in order to create client tickets under the client corresponding to the IP being pinged in the monitor. The script will match the IP with the router address in the automate and will fetch the corresponding client. If not found, it will create the standard computer tickets on the automate server. By default, its value is '0', which means only standard tickets are enabled. ![Image](../../../static/img/Ticket-Creation---Ping-Monitor/image_1.png) |
 
 ## Sample Ping Monitor
 
@@ -66,15 +67,3 @@ The script will generate the tickets utilizing the subject and message stored in
 ## Output
 
 - Ticket
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-checks the status of the Windows 10 Feature Upgrade process
+This document checks the status of the Windows 10 Feature Upgrade process.
 
 ## Sample Run
 
@@ -18,26 +19,14 @@ checks the status of the Windows 10 Feature Upgrade process
 |--------------------------|--------------------|--------------------------------------------------|----------------------------|
 | 10:54:24 am 1-Sep-22    | Registry Check      | Success THEN                                     | provaltech.com/dan.hicks   |
 | 10:54:23 am 1-Sep-22    | Registry Check      | Feature Upgrade Install State: 2                 | provaltech.com/dan.hicks   |
-| 10:54:16 am 1-Sep-22    | Run Now - Registry Check | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Registry Check to run at Sep 1 2022 10:54AM |
+| 10:54:16 am 1-Sep-22    | Run Now - Registry Check | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Registry Check to run at Sep 1 2022 10:54 AM |
 
 ## Process
 
-Scheduled automatically in 1 hour increments. Reacts to the reported installation state and reacts accordingly:
-- Sets the custom field to FAILURE, SUCCESS, or IN PROGRESS
-- Reschedules the check if the status is in progress.
+The process is scheduled automatically in 1-hour increments. It reacts to the reported installation state and responds accordingly:
+- Sets the custom field to FAILURE, SUCCESS, or IN PROGRESS.
+- Reschedules the check if the status is IN PROGRESS.
 
 ## Output
 
 AP Log
-
-
-
-
-
-
-
-
-
-
-
-

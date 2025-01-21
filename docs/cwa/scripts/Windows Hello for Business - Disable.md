@@ -8,10 +8,11 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script disables Windows Hello for Business.  
-Time Saved by Automation: 10 Minutes  
+**Time Saved by Automation:** 10 Minutes  
 
 ## Sample Run
 
@@ -19,20 +20,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-This script disables Windows Hello for Business by adding in the registry key `HKLM:/SOFTWARE/Policies/Microsoft/PassportForWork:Enabled` equal to `0`.  
+This script disables Windows Hello for Business by adding the registry key `HKLM:/SOFTWARE/Policies/Microsoft/PassportForWork:Enabled` and setting its value to `0`.  
 
 ## Output
 
 - Script log  
-
-
-
-
-
-
-
-
-
-
-
-

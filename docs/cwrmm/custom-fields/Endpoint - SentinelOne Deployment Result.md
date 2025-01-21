@@ -8,6 +8,7 @@ tags: ['connectwise', 'deployment']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15806354).
@@ -22,17 +23,6 @@ This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](
 |-----------------------------------|----------|----------|---------------|-----------------------------------------------|----------|
 | SentinelOne Deployment Result      | Endpoint | TextBox  |               | The result of the SentinelOne Deployment Task | No       |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Endpoint---SentinelOne-Deployment-Result/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Endpoint---SentinelOne-Deployment-Result/image_1.png)

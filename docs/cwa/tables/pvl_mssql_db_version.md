@@ -8,9 +8,10 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The custom table stores the data gathered by the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) and gets displayed in the [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865).
+The custom table stores the data gathered by the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) and is displayed in the [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865).
 
 ## Dependencies
 
@@ -22,20 +23,8 @@ The custom table stores the data gathered by the [Script - Get MSSQL Database Ve
 
 | Column        | Type     | Explanation                          |
 |---------------|----------|--------------------------------------|
-| computerid    | int      | Computerid                           |
+| computerid    | int      | Computer ID                          |
 | Instance      | Varchar  | Name of the Database Instance        |
 | Version       | Varchar  | Version of the Database Instance     |
 | PatchLevel    | Varchar  | Patch Level of the Database Instance |
 | ScriptRunTime | DateTime | Data Collection Time                 |
-
-
-
-
-
-
-
-
-
-
-
-

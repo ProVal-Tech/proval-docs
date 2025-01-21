@@ -8,6 +8,7 @@ tags: ['data-collection']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script.
@@ -74,15 +75,3 @@ Sync Status: Error
 ```
 △ Custom - Ticket Creation - Computer
 ```
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,10 +8,11 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script utilizes the BISNotification.exe from the ProVal file repo and sends a custom message to the user's machine once to the logged-in user if detected.  
-Note: The user parameters are not mandatory. If the user parameters are not set, then a default pop-up is set for the logged-in user. It is as shown below:
+This script utilizes the BISNotification.exe from the ProVal file repository and sends a custom message to the logged-in user on their machine if detected.  
+Note: The user parameters are not mandatory. If the user parameters are not set, a default pop-up is displayed for the logged-in user, as shown below:
 
 ![Default Pop-up](../../../static/img/BIS-Notification-Prompter/image_1.png)
 
@@ -25,18 +26,18 @@ Note: The user parameters are not mandatory. If the user parameters are not set,
 
 | Name    | Example                             | Accepted Values | Required | Default | Type   | Description |
 |---------|-------------------------------------|-----------------|----------|---------|--------|-------------|
-| Message | This is a test message              | String          | False    | No      | String | This allows the notification to pop up with the provided custom message in the notification. The message needed to be shortened as much as possible. If the Message is left empty, the default message will be displayed. |
-| Email   | [support@bisconsultants.com](mailto:support@bisconsultants.com) | String          | False    | No      | String | This allows the notification to pop up with the provided custom email address in the notification. |
-| Phone   | 1-123-456-7890                     | String          | False    | No      | String | This allows the notification to pop up with the provided custom phone number in the notification. |
+| Message | This is a test message              | String          | False    | No      | String | This allows the notification to pop up with the provided custom message. The message should be as concise as possible. If the Message is left empty, the default message will be displayed. |
+| Email   | [support@bisconsultants.com](mailto:support@bisconsultants.com) | String          | False    | No      | String | This allows the notification to pop up with the provided custom email address. |
+| Phone   | 1-123-456-7890                     | String          | False    | No      | String | This allows the notification to pop up with the provided custom phone number. |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/BIS-Notification-Prompter/image_5.png)  
 ![Task Creation Step 2](../../../static/img/BIS-Notification-Prompter/image_6.png)  
 
 **Name:** BIS Notification Prompter  
-**Description:** This script utilizes the BISNotification.exe from the ProVal file repo and sends a custom message to the user's machine once to the logged-in user if detected.  
+**Description:** This script utilizes the BISNotification.exe from the ProVal file repository and sends a custom message to the logged-in user on their machine if detected.  
 **Category:** Maintenance  
 ![Task Creation Step 3](../../../static/img/BIS-Notification-Prompter/image_7.png)  
 
@@ -62,7 +63,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![PowerShell Function](../../../static/img/BIS-Notification-Prompter/image_13.png)  
 
-Paste in the following PowerShell script and leave the expected time of script execution to `900` seconds. Click the `Save` button.
+Paste in the following PowerShell script and leave the expected time of script execution set to `900` seconds. Click the `Save` button.
 
 ```
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
@@ -73,14 +74,15 @@ $EXEPath = "$WorkingDirectory//BISNotification.exe"
 #endregion
 
 #region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
+if (!(Test-Path $WorkingDirectory)) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
-        return "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+        return "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
+}
+if (-not ((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl') {
+    $Acl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
@@ -119,7 +121,7 @@ if ($TaskCheck) {
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 
-if ($Parameter -notmatch '-' ) {
+if ($Parameter -notmatch '-') {
     $Action = New-ScheduledTaskAction -Execute $TaskFile
 } else {
     $Action = New-ScheduledTaskAction -Execute $TaskFile -Argument $Parameter
@@ -155,13 +157,13 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ## Row 3a Condition: Output Contains
 
-In the IF part, enter `An error occurred and the script was unable to be downloaded` in the right box of the "OutPut Contains" Part.  
-Add another condition with the Or operator and enter `Failed to create task` in the right box of the "OutPut Contains" Part.  
+In the IF part, enter `An error occurred and the script was unable to be downloaded` in the right box of the "Output Contains" part.  
+Add another condition with the Or operator and enter `Failed to create task` in the right box of the "Output Contains" part.  
 ![Output Contains Condition](../../../static/img/BIS-Notification-Prompter/image_19.png)  
 
 ## Row 3b Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the `Add Row` button.  
 ![Add Row Step 3](../../../static/img/BIS-Notification-Prompter/image_20.png)  
 
 In the script exit message, simply type `%Output%`.  
@@ -169,7 +171,7 @@ In the script exit message, simply type `%Output%`.
 
 ## Row 4 Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the `Add Row` button.  
 ![Add Row Step 4](../../../static/img/BIS-Notification-Prompter/image_20.png)  
 
 In the script exit message, leave it empty.  
@@ -181,20 +183,20 @@ In the script exit message, leave it empty.
 
 ## Implementation
 
-This task can be scheduled manually on-demand to any agent or to a certain group of endpoints where the Notification is required to be sent at some specific time.
+This task can be scheduled manually on-demand to any agent or to a certain group of endpoints where the notification is required to be sent at a specific time.
 
 1. Go to `Automation` > `Tasks.`
 2. Search for `BIS Notification Prompter` Task.
 3. Select the concerned task.
-4. Click on `Schedule` the button to schedule the task/script.  
+4. Click on the `Schedule` button to schedule the task/script.  
    ![Schedule Task](../../../static/img/BIS-Notification-Prompter/image_24.png)
 5. This screen will appear.  
    ![Schedule Task Step 2](../../../static/img/BIS-Notification-Prompter/image_25.png)  
    Please set the parameters as required to customize the notification:  
    ![Schedule Task Step 3](../../../static/img/BIS-Notification-Prompter/image_26.png)
-6. Select the `Schedule` button and click the calendar looking button present in front of the `Recurrence` option.  
+6. Select the `Schedule` button and click the calendar icon present in front of the `Recurrence` option.  
    ![Recurrence Option](../../../static/img/BIS-Notification-Prompter/image_27.png)
-7. Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.  
+7. Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.  
    ![Save Schedule](../../../static/img/BIS-Notification-Prompter/image_28.png)
 8. Click the `Select Targets` button to select the concerned target.  
    ![Select Targets](../../../static/img/BIS-Notification-Prompter/image_29.png)
@@ -205,21 +207,10 @@ This task can be scheduled manually on-demand to any agent or to a certain group
 
 ## Output
 
-- Script log  
-  To view the logs follow the below steps:  
+- **Script log**  
+  To view the logs, follow the steps below:  
   Navigate to the Endpoints -> Devices  
   ![Devices](../../../static/img/BIS-Notification-Prompter/image_32.png)  
   Navigate to the right side of the screen and click on the three bars as shown below:  
   ![Three Bars](../../../static/img/BIS-Notification-Prompter/image_33.png)  
   ![Three Bars Step 2](../../../static/img/BIS-Notification-Prompter/image_34.png)  
-
-
-
-
-
-
-
-
-
-
-

@@ -8,12 +8,13 @@ tags: ['dns', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Old Content piece to compare to: [Set-DNSServerScavengingSettings (Deprecate after approved content)](https://proval.itglue.com/DOC-5078775-7516268)  
+Old content piece to compare to: [Set-DNSServerScavengingSettings (Deprecate after approved content)](https://proval.itglue.com/DOC-5078775-7516268)  
 Enables DNS scavenging and optionally allows you to set the interval for scavenging, 'no refresh', and refresh.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -26,17 +27,17 @@ Time Saved by Automation: 5 Minutes
 ## Variables
 
 - `@PS1Log@` -> Log file location  
-- `@PS1Path@` -> where the PS1 is found.  
+- `@PS1Path@` -> Location of the PS1 file.  
 - `%executeresult%` -> Output from the PowerShell script  
-- `@LogContent@` -> this is the same content from the PS1Log locally on the machine but within Automate's script logs  
+- `@LogContent@` -> This is the same content from the PS1 log locally on the machine but within Automate's script logs  
 
 #### User Parameters
 
-| Name               | Example | Required | Description                                                                                                           |
-|--------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| norefreshinterval   | 7       | True     | This setting controls when the DNS server rejects refresh requests from hosts and the DHCP service.                 |
-| refreshinterval     | 7       | True     | This option determines when a DDNS record can be flagged for scavenging (deletion). The default value is seven days. |
-| Scavenginginterval   | 7       | True     | The scavenging process runs after X days.                                                                             |
+| Name                | Example | Required | Description                                                                                                           |
+|---------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------|
+| norefreshinterval    | 7       | True     | This setting controls when the DNS server rejects refresh requests from hosts and the DHCP service.                 |
+| refreshinterval      | 7       | True     | This option determines when a DDNS record can be flagged for scavenging (deletion). The default value is seven days. |
+| scavenginginterval    | 7       | True     | The scavenging process runs after X days.                                                                             |
 
 ## Process
 
@@ -45,16 +46,4 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 ## Output
 
 - Script log
-- Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
+- Local file on the computer

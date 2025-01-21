@@ -8,9 +8,10 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this group is to filter Windows machines where Huntress agent is not installed.
+The purpose of this group is to filter Windows machines where the Huntress agent is not installed.
 
 ## Dependencies
 
@@ -21,7 +22,7 @@ The purpose of this group is to filter Windows machines where Huntress agent is 
 - [CW RMM - Custom Fields - Exclude Huntress Deployment](<../custom-fields/Exclude Huntress Deployment.md>)
 - [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>)
 
-## Summary
+## Group Details
 
 ![Image](../../../static/img/Deploy-Huntress/image_1.png)
 
@@ -39,25 +40,13 @@ The purpose of this group is to filter Windows machines where Huntress agent is 
 - Huntress Tag should not be blank
 - Exclude Huntress should be false
 - Exclude Huntress Deployment should be false
-- OS Product Contains of `Windows`
-- Available Should be True.
+- OS Product Contains `Windows`
+- Available should be True.
 
-## Group
+## Saving the Group
 
-Once adding the above criteria, click the Save button to save the group.
+Once you have added the above criteria, click the Save button to save the group.
 
 ![Image](../../../static/img/Deploy-Huntress/image_3.png)
 
 ![Image](../../../static/img/Deploy-Huntress/image_4.png)
-
-
-
-
-
-
-
-
-
-
-
-

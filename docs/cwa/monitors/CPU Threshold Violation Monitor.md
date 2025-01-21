@@ -8,17 +8,18 @@ tags: ['performance', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor uses a high threshold ($th) and a low threshold ($tl). The low threshold will only be used when the high threshold has been previously triggered.
+This remote monitor uses a high threshold (`$th`) and a low threshold (`$tl`). The low threshold will only be used when the high threshold has been previously triggered.
 
-The ticket will return the Commandline/Script path being run by the PowerShell Process as well if it is one of the top 5 processes.
+The ticket will return the Commandline/Script path being run by the PowerShell process if it is one of the top 5 processes.
 
-Warning Stage represents the PowerShell errors.
+The Warning Stage represents the PowerShell errors.
 
 ## Target
 
-Windows Machines - Should be run on all Windows machines
+Windows Machines - Should be run on all Windows machines.
 
 ## Ticketing
 
@@ -56,22 +57,8 @@ idlemon                          5.5
 
 ![Alert Template](../../../static/img/CPU-Threshold-Violation-Monitor/image_2.png)
 
-**Note:** The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too.
+**Note:** The alert template should not be running the same script for the Warning action unless you want to create a ticket for the PowerShell errors as well.
 
 ## How to Import
 
 [Import - Remote Monitor - ProVal - Production - CPU Threshold Violation Monitor](<./ProVal - Production - CPU Threshold Violation Monitor.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

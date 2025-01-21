@@ -8,13 +8,14 @@ tags: ['database', 'installation', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores information about Windows Update history for agents.
 
 ## Dependencies
 
-Populating script: [EPM - Script - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093) 
+Populating script: [EPM - Script - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093)
 
 ## Tables
 
@@ -55,15 +56,3 @@ Populating script: [EPM - Script - Windows Update History Audit](https://proval.
 | BrowseOnly                      | TINYINT   |                                                                                                 |
 | PerUser                         | TINYINT   |                                                                                                 |
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
-
-
-
-
-
-
-
-
-
-
-
-

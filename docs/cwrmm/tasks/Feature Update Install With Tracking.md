@@ -8,9 +8,10 @@ tags: ['installation', 'patching', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script initiates the latest Feature Update using the Upgrade Assistant and records the attempt in the custom field `WinFeatUpgradeAttempts`. In case of failure, it updates the `Feature Update Install Failure` custom field with the error message. If the upgrade completes without error but a reboot is pending, the `Feature Update Reboot Pending` Custom Field is updated.
+The script initiates the latest Feature Update using the Upgrade Assistant and records the attempt in the custom field `WinFeatUpgradeAttempts`. In case of failure, it updates the `Feature Update Install Failure` custom field with the error message. If the upgrade completes without error but a reboot is pending, the `Feature Update Reboot Pending` custom field is updated.
 
 The script compares the current operating system build with the latest available build before and after the upgrade, with the latest build requiring manual entry into the script. For any new releases, the build number must be manually set in the script at step 2 for Windows 11 and step 3 for Windows 10.
 
@@ -19,7 +20,7 @@ The script compares the current operating system build with the latest available
 **Parameters:**
 
 - **Reboot** - If True: Will reboot the device immediately after the upgrade completes.
-- **Reset** - If True: Will reset tracker counter to 0.
+- **Reset** - If True: Will reset the tracker counter to 0.
 
 ## Sample Run
 
@@ -28,7 +29,8 @@ The script compares the current operating system build with the latest available
 ## Parameters
 
 - Reboot - If True: Will reboot the device immediately after the upgrade completes.
-- Reset - If True: Will reset tracker counter to 0.
+- Reset - If True: Will reset the tracker counter to 0.
+
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_3.png)
 
 ## Dependencies
@@ -41,7 +43,7 @@ The script compares the current operating system build with the latest available
 
 ## Create Script
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_4.png)
 
@@ -49,7 +51,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Name:** `Feature Update Install With Tracking`
 
-**Description:** `Attempts latest Feature Update using the Upgrade Assistant. Tracks attempt into Custom Field WinFeatUpgradeAttempts Parameters: Reboot - If True: Will reboot the device immediately after upgrade completes. Reset - If True: Will reset tracker counter to 0.`
+**Description:** `Attempts latest Feature Update using the Upgrade Assistant. Tracks attempt into Custom Field WinFeatUpgradeAttempts. Parameters: Reboot - If True: Will reboot the device immediately after the upgrade completes. Reset - If True: Will reset tracker counter to 0.`
 
 **Category:** Patching
 
@@ -65,11 +67,11 @@ The `Add New Script Parameter` box will appear.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_8.png)
 
-In the box fill the following details and select `Save` to create the `Reboot` parameter.
+In the box, fill in the following details and select `Save` to create the `Reboot` parameter.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_9.png)
 
-Add another parameter and fill the following details to create the `Reset` parameter.
+Add another parameter and fill in the following details to create the `Reset` parameter.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_10.png)
 
@@ -89,7 +91,7 @@ Search for the `Windows Feature Update Attempt Tracking (Subscript)` and select 
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_13.png)
 
-NOTE ** Make sure to select the 'Continue on Failure' Checkbox.
+**NOTE:** Make sure to select the 'Continue on Failure' checkbox.
 
 #### Row 2 Function: Set User Variable
 
@@ -105,7 +107,7 @@ Select `Set User Variable` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_17.png)
 
-Type `Win11LatestBuild` in the `Variable Name` field and `10.0.22631` in the `Value` field. `10.0.22631` is the latest available Feature build for Windows 11 at the moment. Click `Save` to create the `Win11LatestBuild` variable.
+Type `Win11LatestBuild` in the `Variable Name` field and `10.0.22631` in the `Value` field. `10.0.22631` is the latest available feature build for Windows 11 at the moment. Click `Save` to create the `Win11LatestBuild` variable.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_18.png)
 
@@ -125,7 +127,7 @@ Select `Set User Variable` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_17.png)
 
-Type `Win10LatestBuild` in the `Variable Name` field and `10.0.19045` in the `Value` field. `10.0.19045` is the latest available Feature build for Windows 10 at the moment. Click `Save` to create the `Win10LatestBuild` variable.
+Type `Win10LatestBuild` in the `Variable Name` field and `10.0.19045` in the `Value` field. `10.0.19045` is the latest available feature build for Windows 10 at the moment. Click `Save` to create the `Win10LatestBuild` variable.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_20.png)
 
@@ -145,7 +147,7 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_24.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
@@ -154,13 +156,13 @@ if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_25.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
 #### Row 5 Logic: If Then
 
-Insert a new `If/Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_27.png)
 
@@ -184,7 +186,7 @@ Search and select the `Script Log` function in the new row.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_32.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.
+Paste this line in the `Script Log Message` box and click the `Save` button.
 
 `The machine has already been updated to the latest feature build available for the operating system.`
 
@@ -220,22 +222,22 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_24.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `7200` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `7200` seconds, and click the `Save` button.
 
 ```
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $workingpath = "$env:ProgramData/_automation/Script/FeatureUpdate"
 $path = "$workingpath/Install-FeatureUpdate.ps1"
 $url = 'https://file.provaltech.com/repo/script/Install-FeatureUpdate.ps1'
-Remove-Item -Path $workingpath -Recurse -Force -Erroraction SilentlyContinue | Out-Null
-New-Item -Type Directory -Path $WorkingPath -Force -Erroraction SilentlyContinue | Out-Null 
+Remove-Item -Path $workingpath -Recurse -Force -ErrorAction SilentlyContinue | Out-Null
+New-Item -Type Directory -Path $WorkingPath -Force -ErrorAction SilentlyContinue | Out-Null 
 (New-Object System.Net.WebClient).DownloadFile($url, $path)
 & $path
 ```
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_39.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
@@ -251,7 +253,7 @@ Select `Script Log` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_32.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.
+Paste this line in the `Script Log Message` box and click the `Save` button.
 
 `Script Output: %output%`
 
@@ -273,21 +275,21 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_24.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $workingpath = "$env:ProgramData/_automation/Script/FeatureUpdate"
 $logpath = "$workingpath/Install-FeatureUpdate-log.txt"
 if ( Test-Path $logpath ) {
   Get-Content $logpath
-}  else  {
+} else {
   return 'Log File not found.'
 }
 ```
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_42.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
@@ -303,7 +305,7 @@ Select `Script Log` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_32.png)
 
-Paste this line in the `Script Log Message` box and Click the `Save` button.
+Paste this line in the `Script Log Message` box and click the `Save` button.
 
 `Log Content: %output%`
 
@@ -325,27 +327,27 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_24.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $workingpath = "$env:ProgramData/_automation/Script/FeatureUpdate"
 $errorlogpath = "$workingpath/Install-FeatureUpdate-error.txt"
 if ( Test-Path $errorlogpath ) {
   Get-Content $errorlogpath
-}  else  {
+} else {
   return 'Error Log File not found.'
 }
 ```
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_44.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
 #### Row 11 Logic: If Then
 
-Insert a new `If/Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_27.png)
 
@@ -353,25 +355,25 @@ Insert a new `If/Then` logic from the `Add Logic` Dropdown menu.
 
 #### Row 11a Condition: Output Does Not Contain
 
-In the `Output Contains` condition, select the `Does Not Contain` condition from the drop-down menu, type `Error Log File not found` in the `input value or variable` box and press `Enter`.
+In the `Output Contains` condition, select the `Does Not Contain` condition from the drop-down menu, type `Error Log File not found` in the `input value or variable` box, and press `Enter`.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_45.png)
 
 #### Row 11b Logic: If Then
 
-Insert a new `If/Then` logic from the `Add Logic` Dropdown menu after the `Output Does Not Contain` Condition.
+Insert a new `If/Then` logic from the `Add Logic` dropdown menu after the `Output Does Not Contain` condition.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_46.png)
 
 #### Row 11b(i) Condition: Output Contains
 
-In the `Output Contains` Condition, type `The volume health check returned a negative result` in the `input value or variable` box and press `Enter`.
+In the `Output Contains` condition, type `The volume health check returned a negative result` in the `input value or variable` box and press `Enter`.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_47.png)
 
 #### Row 11b(ii) Function: Set Custom Field
 
-click the `Add Row` button inside the internal `If Then` logic to add a new function.
+Click the `Add Row` button inside the internal `If Then` logic to add a new function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_48.png)
 
@@ -381,11 +383,11 @@ Search and select the `Set Custom Field` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_50.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.
+Search and select the `Feature Update Install Failure` custom field.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_51.png)
 
-Type `Volume Health Error` in the `Value` box and click the Save button.
+Type `Volume Health Error` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_52.png)
 
@@ -393,19 +395,19 @@ Type `Volume Health Error` in the `Value` box and click the Save button.
 
 #### Row 11c Logic: If Then
 
-Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_54.png)
 
 #### Row 11c(i) Condition: Output Contains
 
-In the `Output Contains` Condition, type `The Windows Update health check returned a negative result` in the `input value or variable` box and press `Enter`.
+In the `Output Contains` condition, type `The Windows Update health check returned a negative result` in the `input value or variable` box and press `Enter`.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_55.png)
 
 #### Row 11c(ii) Function: Set Custom Field
 
-click the `Add Row` button inside the internal `If Then` logic to add a new function.
+Click the `Add Row` button inside the internal `If Then` logic to add a new function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_56.png)
 
@@ -415,11 +417,11 @@ Search and select the `Set Custom Field` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_50.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.
+Search and select the `Feature Update Install Failure` custom field.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_51.png)
 
-Type `Health Check Error` in the `Value` box and click the Save button.
+Type `Health Check Error` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_57.png)
 
@@ -427,21 +429,19 @@ Type `Health Check Error` in the `Value` box and click the Save button.
 
 #### Row 11d Logic: If Then
 
-Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_59.png)
 
-![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_60.png)
-
 #### Row 11d(i) Condition: Output Contains
 
-In the `Output Contains` Condition, type `The Drive Space health check failed` in the `input value or variable` box and press `Enter`.
+In the `Output Contains` condition, type `The Drive Space health check failed` in the `input value or variable` box and press `Enter`.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_61.png)
 
 #### Row 11d(ii) Function: Set Custom Field
 
-click the `Add Row` button inside the internal `If Then` logic to add a new function.
+Click the `Add Row` button inside the internal `If Then` logic to add a new function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_62.png)
 
@@ -451,11 +451,11 @@ Search and select the `Set Custom Field` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_50.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.
+Search and select the `Feature Update Install Failure` custom field.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_51.png)
 
-Type `Low Drive Space Error` in the `Value` box and click the Save button.
+Type `Low Drive Space Error` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_63.png)
 
@@ -463,21 +463,19 @@ Type `Low Drive Space Error` in the `Value` box and click the Save button.
 
 #### Row 11e Logic: If Then
 
-Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_65.png)
 
-![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_66.png)
-
 #### Row 11e(i) Condition: Output Contains
 
-In the `Output Contains` Condition, type `incompatible with windows 11 upgrade` in the `input value or variable` box and press `Enter`.
+In the `Output Contains` condition, type `incompatible with windows 11 upgrade` in the `input value or variable` box and press `Enter`.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_67.png)
 
 #### Row 11e(ii) Function: Set Custom Field
 
-click the `Add Row` button inside the internal `If Then` logic to add a new function.
+Click the `Add Row` button inside the internal `If Then` logic to add a new function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_68.png)
 
@@ -487,11 +485,11 @@ Search and select the `Set Custom Field` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_50.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.
+Search and select the `Feature Update Install Failure` custom field.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_51.png)
 
-Type `Compatibility Check Error` in the `Value` box and click the Save button.
+Type `Compatibility Check Error` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_69.png)
 
@@ -499,11 +497,9 @@ Type `Compatibility Check Error` in the `Value` box and click the Save button.
 
 #### Row 11f Logic: If Then
 
-Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_71.png)
-
-![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_72.png)
 
 #### Row 11f(i) Condition: Custom Field Does Not Contain
 
@@ -533,7 +529,7 @@ Type `Error Log File not found` in the `Input Value or Variable` box and press `
 
 #### Row 11f(ii) Function: Set Custom Field
 
-click the `Add Row` button inside the internal `If Then` logic to add a new function.
+Click the `Add Row` button inside the internal `If Then` logic to add a new function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_79.png)
 
@@ -543,11 +539,11 @@ Search and select the `Set Custom Field` function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_50.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.
+Search and select the `Feature Update Install Failure` custom field.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_51.png)
 
-Type `Installation Failure/Error` in the `Value` box and click the Save button.
+Type `Installation Failure/Error` in the `Value` box and click the `Save` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_80.png)
 
@@ -555,7 +551,7 @@ Type `Installation Failure/Error` in the `Value` box and click the Save button.
 
 #### Row 11g Function: Script Exit
 
-click the `Add Row` button inside the external `If Then` logic to add a new function.
+Click the `Add Row` button inside the external `If Then` logic to add a new function.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_82.png)
 
@@ -569,13 +565,13 @@ Type `Error Log Content: %Output%` in the Error Message field and click the `Sav
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_85.png)
 
-This is how the Step 11 should look after the completion.
+This is how Step 11 should look after completion.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_86.png)
 
 ### Step 12 Logic: If Then Else
 
-Add a new `If/Then/Else` logic from the Add Logic dropdown menu. ** Make sure to not click on the one that is apart of row 11.
+Add a new `If/Then/Else` logic from the Add Logic dropdown menu. **Make sure to not click on the one that is part of row 11.**
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_87.png)
 
@@ -595,7 +591,7 @@ Select `Equals` from the condition dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_91.png)
 
-Type `True` and Press Enter in the `Input Value or Variable` field.
+Type `True` and press Enter in the `Input Value or Variable` field.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_92.png)
 
@@ -603,7 +599,7 @@ Type `True` and Press Enter in the `Input Value or Variable` field.
 
 ### Step 12b Function: PowerShell Script
 
-Add a new row in the `If` Section by clicking the `Add Row` button.
+Add a new row in the `If` section by clicking the `Add Row` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_94.png)
 
@@ -615,7 +611,7 @@ Search and select the `PowerShell Script` in the newly added row.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_97.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 shutdown /f /r /t 00
@@ -623,13 +619,13 @@ shutdown /f /r /t 00
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_98.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
 ### Step 12c Function: PowerShell Script
 
-Add a new row in the `If` Section by clicking the `Add Row` button.
+Add a new row in the `If` section by clicking the `Add Row` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_99.png)
 
@@ -641,7 +637,7 @@ Search and select the `PowerShell Script` in the newly added row.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_97.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `610` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `610` seconds, and click the `Save` button.
 
 ```
 Start-Sleep 600
@@ -649,13 +645,13 @@ Start-Sleep 600
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_101.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
 ### Step 12d Function: PowerShell Script
 
-Add a new row in the `If` Section by clicking the `Add Row` button.
+Add a new row in the `If` section by clicking the `Add Row` button.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_102.png)
 
@@ -667,7 +663,7 @@ Search and select the `PowerShell Script` in the newly added row.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_97.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
@@ -676,11 +672,11 @@ if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_104.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_26.png)
 
-This is how Step 12 Should look after adding the above-mentioned `PowerShell Script` Steps.
+This is how Step 12 should look after adding the above-mentioned PowerShell script steps.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_105.png)
 
@@ -745,7 +741,7 @@ This is how Step 12 Should look after adding the above-mentioned `PowerShell Scr
 - Go to `Automation` > `Tasks.`
 - Search for `Feature Update Install with Tracking` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_121.png)
 
@@ -761,15 +757,15 @@ This pop-up box will appear.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_124.png)
 
-Click `OK` button to run the Task once per day.
+Click the `OK` button to run the task once per day.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_125.png)
 
-Select the relevant time to execute the script. It is suggested to run this task during after hours.
+Select the relevant time to execute the script. It is suggested to run this task after hours.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_126.png)
 
-Leave the Parameters as it is unless your requirement is to restart the computer forcefully. Select `True` for the `Reboot` parameter to restart the computer during script run. Be careful with the script run time especially with the `Reboot` parameter set to `True`.
+Leave the parameters as they are unless your requirement is to restart the computer forcefully. Select `True` for the `Reboot` parameter to restart the computer during script run. Be careful with the script run time, especially with the `Reboot` parameter set to `True`.
 
 ![Image](../../../static/img/Feature-Update-Install-With-Tracking/image_127.png)
 
@@ -797,16 +793,3 @@ The `Suspend` option can be used to `suspend/stop` the schedule.
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-
-

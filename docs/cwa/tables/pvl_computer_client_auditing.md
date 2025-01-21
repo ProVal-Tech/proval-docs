@@ -8,32 +8,21 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-It's a temporary table created by [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>) script to keep the tag of the machines jumping from one client to another.
+This document describes a temporary table created by the [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>) script, which is used to track machines transitioning from one client to another.
 
 ## Dependencies
 
-[CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>)
+- [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>)
 
 ## Tables
 
-#### pvl_computer_client_auditing
+### pvl_computer_client_auditing
 
 | Column      | Type     | Explanation    |
 |-------------|----------|----------------|
-| Computerid  | int(8)  | Computerid     |
-| Clientid    | int(8)  | Clientid       |
-| Timestamp   | datetime | Script Run Time |
-
-
-
-
-
-
-
-
-
-
-
-
+| Computerid  | int(8)  | Unique identifier for the computer |
+| Clientid    | int(8)  | Unique identifier for the client   |
+| Timestamp   | datetime | The time when the script was run   |

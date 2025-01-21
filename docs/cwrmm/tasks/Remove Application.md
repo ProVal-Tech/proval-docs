@@ -8,6 +8,7 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is designed to perform the uninstallation of the application provided in the parameter. The script requires the application name(s) to precisely match those listed under the `Applications` tile in the device available in CW RMM.
@@ -27,7 +28,7 @@ Remove Application Result - Custom Field (Endpoint)
 
 | Name             | Example                                                                                           | Required | Description                                                                                                                                                                                                                                                                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ApplicationName  | 'Google Chrome' 'Google Chrome','Microsoft OneDrive','VMware Tools'                     | True     | The name of the application(s) to remove is encoded in the single quotation mark. When specifying multiple application names, ensure they are separated by a comma (,) without any spaces with each application encoded with a single quotation, as depicted in the example.                                                               |
+| ApplicationName  | 'Google Chrome', 'Microsoft OneDrive', 'VMware Tools'                                          | True     | The name of the application(s) to remove is encoded in single quotation marks. When specifying multiple application names, ensure they are separated by a comma (,) without any spaces, with each application encoded in single quotation marks, as depicted in the example.                                                               |
 
 ## Implementation
 
@@ -68,9 +69,9 @@ $to_Remove = @ApplicationName@
 if ($to_Remove) {
     $Applications = @()
     $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM://Software//Microsoft//Windows//CurrentVersion//Uninstall//*', 'HKLM://Software//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall//*' | Get-ItemProperty).DisplayName); 
-    $for_removal = foreach ($application in $applications) { if ( $to_remove -contains $application) { $application } };  
-    if ($for_removal) { return " '$($for_removal -join ''',''')' " } else { return 'Not Installed' }
+    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM://Software//Microsoft//Windows//CurrentVersion//Uninstall//*', 'HKLM://Software//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall//*' | Get-ItemProperty).DisplayName);
+    $for_removal = foreach ($application in $applications) { if ($to_remove -contains $application) { $application } };
+    if ($for_removal) { return "'$($for_removal -join ''',''')'" } else { return 'Not Installed' }
 } else {
     return 'Parameter missing'
 }
@@ -90,9 +91,9 @@ In the script log message, simply type `%output%` so that the script will send t
 
 #### Row 4a: Condition: Output Contains
 
-In the IF part, enter **Not Installed** in the right box of the "Output Contains" Part.  
+In the IF part, enter **Not Installed** in the right box of the "Output Contains" part.  
 Add Condition OR  
-Enter the **Parameter Missing** in the right box of the "Output Contains" Part  
+Enter **Parameter Missing** in the right box of the "Output Contains" part.  
 ![Row 4a Condition](../../../static/img/Remove-Application/image_28.png)  
 
 #### Row 4b: Function: Script Log
@@ -105,7 +106,7 @@ Paste the highlighted text:
 
 #### Row 4c: Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 ![Row 4c Add Row](../../../static/img/Remove-Application/image_30.png)  
 
 In the script exit message, leave it blank.  
@@ -130,8 +131,8 @@ Paste in the following PowerShell script and set the expected time of script exe
 #region Setup - Variables
 $ProjectName = 'Remove-Application'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-# # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# Parameters and Globals
+# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $Parameters = @{
      Name = @ApplicationName@
 }
@@ -183,9 +184,9 @@ $to_Remove = @ApplicationName@
 if ($to_Remove) {
     $Applications = @()
     $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM://Software//Microsoft//Windows//CurrentVersion//Uninstall//*', 'HKLM://Software//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall//*' | Get-ItemProperty).DisplayName); 
-    $for_removal = foreach ($application in $applications) { if ( $to_remove -contains $application) { $application } };  
-    if ($for_removal) { return " '$($for_removal -join ''',''')' " } else { return 'Not Installed' }
+    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM://Software//Microsoft//Windows//CurrentVersion//Uninstall//*', 'HKLM://Software//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall//*' | Get-ItemProperty).DisplayName);
+    $for_removal = foreach ($application in $applications) { if ($to_remove -contains $application) { $application } };
+    if ($for_removal) { return "'$($for_removal -join ''',''')'" } else { return 'Not Installed' }
 } else {
     return 'Parameter missing'
 }
@@ -202,7 +203,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 #### Row 10a: Condition: Output Contains
 
-In the IF part, enter **Not Installed** in the right box of the "Output Contains" Part.  
+In the IF part, enter **Not Installed** in the right box of the "Output Contains" part.  
 ![Row 10a Condition](../../../static/img/Remove-Application/image_34.png)  
 
 #### Row 10b: Function: Script Log
@@ -215,7 +216,7 @@ Paste the highlighted text:
 
 #### Row 10c: Function: Set Custom Field
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.  
 
 In this window, search for the **Remove Application Result** field.  
@@ -225,19 +226,19 @@ In this window, search for the **Remove Application Result** field.
 
 #### Row 10d: Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 In the script exit message, leave it blank.  
 ![Row 10d Exit](../../../static/img/Remove-Application/image_31.png)  
 
 ### Row 11: Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 In the script exit message, write `@ApplicationName@ failed to uninstall. Exiting script with error.`  
 ![Row 11 Exit](../../../static/img/Remove-Application/image_37.png)  
 
 ### Row 12: Function: Set Custom Field
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the Add Row button.  
 Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.  
 
 In this window, search for the **Remove Application Result** field.  
@@ -254,10 +255,10 @@ In this window, search for the **Remove Application Result** field.
 
 It is suggested to run the Task every 2 hours against the group `Remove Application`.
 
-- Goto `Automation` > `Tasks.`
+- Go to `Automation` > `Tasks.`
 - Search for `Remove Application` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Task](../../../static/img/Remove-Application/image_41.png)  
 
 This screen will appear.  
@@ -284,14 +285,3 @@ The task will start appearing in the Scheduled Tasks.
 
 - Task log
 - Custom field 'Remove Application Result'
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will send a popup message to the logged-in user to leave their machine online for patching/maintenance.
+This script will send a popup message to the logged-in user to leave their machine online for patching and maintenance.
 
 **Time Saved by Automation:** 2 Minutes
 
@@ -20,17 +21,5 @@ This script will send a popup message to the logged-in user to leave their machi
 
 ## Process
 
-- The script first verifies if the user is logged in or not. If not, exit out.
-- If a user is logged in, send a popup message to the user to leave their machine online.
-
-
-
-
-
-
-
-
-
-
-
-
+- The script first verifies if the user is logged in. If not, it exits.
+- If a user is logged in, it sends a popup message to the user to leave their machine online.

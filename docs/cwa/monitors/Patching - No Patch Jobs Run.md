@@ -8,9 +8,10 @@ tags: ['connectwise', 'patching']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The goal of this monitor is to look for machines that are patching via CW Automate but do not have any patch job information in the system. This may indicate that the target device is not patching properly in CW Automate and should be reviewed by either a CW Admin or a technician.
+The goal of this monitor is to identify machines that are patching via ConnectWise Automate but do not have any patch job information in the system. This may indicate that the target device is not patching properly in ConnectWise Automate and should be reviewed by either a ConnectWise Administrator or a technician.
 
 ## Dependencies
 
@@ -18,15 +19,4 @@ Automate must be upgraded to the "new" patch manager.
 
 ## Target
 
-Global - Should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by CW Automate.
-
-
-
-
-
-
-
-
-
-
-
+Global - This monitor should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by ConnectWise Automate.

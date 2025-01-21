@@ -8,6 +8,7 @@ tags: ['cleanup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script performs a disk cleanup on a MAC device.
@@ -18,26 +19,15 @@ This script performs a disk cleanup on a MAC device.
 
 ## Dependencies
 
-[https://raw.githubusercontent.com/ProVal-Tech/mac-cleanup-sh/main/mac-cleanup](https://raw.githubusercontent.com/ProVal-Tech/mac-cleanup-sh/main/mac-cleanup)
+The script can be downloaded from [this link](https://raw.githubusercontent.com/ProVal-Tech/mac-cleanup-sh/main/mac-cleanup).
 
 ## Process
 
-1. Downloads the Script from [https://raw.githubusercontent.com/ProVal-Tech/mac-cleanup-sh/main/mac-cleanup](https://raw.githubusercontent.com/ProVal-Tech/mac-cleanup-sh/main/mac-cleanup).
-2. Defines the script as executable.
-3. Executes it.
-4. Error Handling.
+1. Download the script from [this link](https://raw.githubusercontent.com/ProVal-Tech/mac-cleanup-sh/main/mac-cleanup).
+2. Define the script as executable.
+3. Execute the script.
+4. Handle any errors that may occur.
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-

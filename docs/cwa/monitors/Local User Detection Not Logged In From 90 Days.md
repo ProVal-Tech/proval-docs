@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will detect the local users not logged in from last 90 days.
+This monitor will detect local users who have not logged in for the last 90 days.
 
 ## Dependencies
 
@@ -21,16 +22,3 @@ This monitor will detect the local users not logged in from last 90 days.
 ## Target
 
 Windows Servers
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,10 +8,11 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will monitor for the creation of new super admins since the last run of the script.  
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -33,21 +34,9 @@ None
 
 ## Process
 
-A temporary custom table is referenced to determine the previous state of the super admins. The table is then compared to the existing super admins, and if there are any added super admins, then a ticket is generated with the list of usernames of those users.
+A temporary custom table is referenced to determine the previous state of the super admins. The table is then compared to the existing super admins, and if there are any added super admins, a ticket is generated with the list of usernames of those users.
 
 ## Output
 
 - Ticket
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

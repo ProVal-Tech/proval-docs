@@ -8,23 +8,15 @@ tags: ['report', 'security', 'setup']
 draft: false
 unlisted: false
 ---
-Export the Log4J Scan & Mitigation procedure from Shared > PVAL Content Source.  
-Import into client environment.  
-For each client, edit the procedure and change the Email global variable to the client's primary contact.  
+
+## Export the Log4J Scan & Mitigation Procedure
+
+Export the Log4J Scan & Mitigation procedure from **Shared > PVAL Content Source**.  
+Import it into the client environment.  
+
+For each client, edit the procedure and change the **Email** global variable to the client's primary contact.  
 
 ![Image](../../../static/img/Log4J-Scan-&-Mitigation-Deployment---Internal/image_1.png)  
 
-Save the Procedure.  
-Log the deployment in the tracker located here: [https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG](https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG)
-
-
-
-
-
-
-
-
-
-
-
-
+Save the procedure.  
+Log the deployment in the tracker located here: [Deployment Tracker](https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG)

@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Check this box to exclude the computer from the solution that disables fastboot.
@@ -18,18 +19,7 @@ Check this box to exclude the computer from the solution that disables fastboot.
 |--------------------------------|----------|-------|---------------|----------------------------------------------------------------------------|----------|
 | Disable_Fastboot_Exclusion     | ENDPOINT | Flag  | No            | Check this box to exclude the computer from the solution that disables fastboot. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---Disable_Fastboot_Exclusion/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---Disable_Fastboot_Exclusion/image_2.png)
-
-
-
-
-
-
-
-
-
-
-

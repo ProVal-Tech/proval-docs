@@ -8,9 +8,10 @@ tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Disable Bitlocker protection on one (or all) volumes.
+Disable BitLocker protection on one (or all) volumes.
 
 ## Sample Run
 
@@ -23,12 +24,12 @@ Disable Bitlocker protection on one (or all) volumes.
 - [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](<../../powershell/Unprotect-BitLockerVolume.md>)
 - PowerShell v5
 
-#### User Parameters
+### User Parameters
 
 | Name       | Example | Required | Description                                   |
 |------------|---------|----------|-----------------------------------------------|
-| MountPoint | C:      | Semi     | The volume to un-protect.                    |
-| All        | 1       | Semi     | Set to 1 to un-protect all applicable volumes.|
+| MountPoint | C:      | Semi     | The volume to unprotect.                     |
+| All        | 1       | Semi     | Set to 1 to unprotect all applicable volumes. |
 
 ## Process
 
@@ -38,16 +39,3 @@ See process information in the document for [SEC - Encryption - Agnostic - Unpro
 
 - Script log
 - Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
-

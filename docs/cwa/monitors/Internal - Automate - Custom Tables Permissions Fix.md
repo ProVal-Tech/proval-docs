@@ -8,19 +8,20 @@ tags: ['database', 'permissions']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Internal Use Only
+**Internal Use Only**
 
-This monitor checks several tables that ProVal wrote, and updates permissions on those tables (if the Automate DB agent gets restarted) allowing the user access to those tables.
+This monitor checks several tables created by ProVal and updates permissions on those tables (if the Automate DB agent is restarted), allowing user access to those tables.
 
 ## Dependencies
 
-- @Autofix - Custom - Update user DB Permissions to Custom Tables (Alert template/Script)
+- @Autofix - Custom - Update User DB Permissions to Custom Tables (Alert template/Script)
 
-Tables:
+### Tables:
 - @custom_proval_computer_new_accounts
-- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>) 
+- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
 - @plugin_proval_bitlocker
 - @plugin_proval_gpo_audit
 - @plugin_proval_outlook_pst
@@ -28,16 +29,3 @@ Tables:
 ## Target
 
 - Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-
-
-

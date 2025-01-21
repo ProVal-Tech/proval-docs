@@ -13,34 +13,23 @@ unlisted: false
 Applies a homepage to Firefox.
 
 ## Usage
-1. Sets up the JSON item
+1. Sets up the JSON item.
 2. Applies the JSON item to the Firefox file.
-
-
 
 ```powershell
 .\Set-FirefoxHomepage.ps1 -Homepage "https://duckduckgo.com" -EnforceHomepageStartup
 ```
-This will set the homepage of Firefox to "https://duckduckgo.com" and set the browser Startup to be the homepage
-
+This command will set the homepage of Firefox to "https://duckduckgo.com" and configure the browser to display this homepage on startup.
 
 ## Parameters
-| Parameter         | Alias | Required  | Default   | Type      | Description                               |
-| ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
-| `Homepage`        |       | True      |           | String    | The Url to the desired homepage.                                          |
-| `EnforceHomepageStartup`  |   | False |           | Bool      | Sets the browser to display the homepage on startup.                                          |
-
+| Parameter                   | Alias | Required | Default | Type   | Description                                                       |
+|-----------------------------|-------|----------|---------|--------|-------------------------------------------------------------------|
+| `Homepage`                  |       | True     |         | String | The URL to the desired homepage.                                 |
+| `EnforceHomepageStartup`     |       | False    |         | Bool   | Sets the browser to display the homepage on startup.            |
 
 ## Output
 Location of output for log, result, and error files.
 
-    .\Set-FirefoxHomepage-log.txt
-
-
-
-
-
-
-
-
-
+```
+.\Set-FirefoxHomepage-log.txt
+```

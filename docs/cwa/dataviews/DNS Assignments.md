@@ -8,9 +8,10 @@ tags: ['dns', 'networking']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Gives a display of a devices active network adapter and its associated settings.
+This document provides a display of a device's active network adapter and its associated settings.
 
 ## Dependencies
 
@@ -23,37 +24,23 @@ Gives a display of a devices active network adapter and its associated settings.
 |-----------------|------------------------------------------------------|
 | DateUpdated     | The date the data was updated.                       |
 | ComputerID      | The computer ID                                      |
-| Client Name     | The Client Name.                                    |
+| Client Name     | The Client Name.                                     |
 | Location Name   | The Location Name.                                   |
 | Computer Name   | The Computer Name.                                   |
-| PnPDeviceID     | The PnP Device Id as found on the target computer.  |
+| PnPDeviceID     | The PnP Device ID as found on the target computer.  |
 | Description      | The description of the network device.               |
-| AdapterType     | The Adapter type.                                   |
-| IpAddress       | The adapter ip address.                             |
-| IPv6            | The adapter ipv6 address.                           |
-| NetMask         | The Network mask for the adapter.                   |
-| Gateway         | The gateway of the adapter.                         |
-| Speed           | The speed of the adapter.                           |
-| RoutingEnabled  | O or 1 depending on if routing is enabled.         |
-| Mac             | The Mac of the adapter if known.                    |
-| Status          | The adapters current status.                         |
+| AdapterType     | The Adapter type.                                    |
+| IpAddress       | The adapter IP address.                              |
+| IPv6            | The adapter IPv6 address.                            |
+| NetMask         | The Network mask for the adapter.                    |
+| Gateway         | The gateway of the adapter.                          |
+| Speed           | The speed of the adapter.                            |
+| RoutingEnabled  | 0 or 1 depending on if routing is enabled.          |
+| Mac             | The MAC address of the adapter if known.             |
+| Status          | The adapter's current status.                        |
 | DNS Type        | DHCP or Static.                                     |
-| DHCPEnabled     | 0 or 1 depending on the DHCP Enabled state.        |
-| DNS Setting     | The current dns setting in a comma separated list.  |
-| MTU             | The found MTU for the adapter.                      |
-| Bytes Sent      | The number of bytes Sent as seen on the adapter.    |
-| Bytes Rec       | The number of bytes received on the adapter.        |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| DHCPEnabled     | 0 or 1 depending on the DHCP enabled state.        |
+| DNS Setting     | The current DNS setting in a comma-separated list.   |
+| MTU             | The found MTU for the adapter.                       |
+| Bytes Sent      | The number of bytes sent as seen on the adapter.     |
+| Bytes Rec       | The number of bytes received on the adapter.         |

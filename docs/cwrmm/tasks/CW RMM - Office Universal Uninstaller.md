@@ -8,9 +8,10 @@ tags: ['setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script downloads the offscrub files from the repo and then attempts to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can deal with machine or software corruption and completely removes Office app shortcuts for the version.
+This script downloads the offscrub files from the repository and then attempts to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can handle machine or software corruption and completely removes Office app shortcuts for the version.
 
 ## Sample Run
 
@@ -24,7 +25,7 @@ This script downloads the offscrub files from the repo and then attempts to unin
 
 | Name       | Example    | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------|------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Arguments  | -office16  | True     | The user parameters values are: -office03-office07-office10-office13-office16-officec2r-AllYou can use the combinations of the -officexx values. For ex:-office03 -office13 -officec2rOr else, you can use -All to uninstall any office applications.By default value is set as -All, which means you can directly schedule this script and it will uninstall any office applications. |
+| Arguments  | -office16  | True     | The user parameter values are: -office03, -office07, -office10, -office13, -office16, -officec2r, -All. You can use combinations of the -officexx values. For example: -office03 -office13 -officec2r. Alternatively, you can use -All to uninstall any Office applications. By default, the value is set to -All, which means you can directly schedule this script, and it will uninstall any Office applications. |
 
 ## Implementation
 
@@ -32,9 +33,9 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 ![Implementation](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_2.png)
 
-Name: Office Universal Uninstaller  
-Description: This task will download the offscrub files from the repo and then attempt to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can deal with machine or software corruption and completely removes Office app shortcuts for the version.  
-Category: Custom  
+**Name:** Office Universal Uninstaller  
+**Description:** This task will download the offscrub files from the repository and then attempt to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can handle machine or software corruption and completely removes Office app shortcuts for the version.  
+**Category:** Custom  
 
 ![Implementation Category](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_3.png)
 
@@ -42,10 +43,10 @@ Category: Custom
 
 ![Parameter](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_4.png)
 
-Parameter Names: Arguments  
-Required Field: Selected  
-Parameter Type: Text String  
-Default Value: -All  
+**Parameter Names:** Arguments  
+**Required Field:** Selected  
+**Parameter Type:** Text String  
+**Default Value:** -All  
 
 ### Script
 
@@ -100,11 +101,11 @@ if (!(Test-Path -Path $PS1Path)) {
 
 ![Row 3 Function](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_9.png)
 
-In the script log message, simply type %output% so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 3 Function Output](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_10.png)
 
-The final task should look like the below screenshot.
+The final task should look like the screenshot below.
 
 ![Final Task Screenshot](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_11.png)
 
@@ -112,25 +113,12 @@ The final task should look like the below screenshot.
 
 The script is intended to run manually at this time.
 
-Go to Automations > Tasks.  
-Search for Office Universal Uninstaller.  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
+Go to **Automations > Tasks.**  
+Search for **Office Universal Uninstaller.**  
+Then click on **Schedule** and provide the parameter details as necessary for the script completion.
 
 ![Script Deployment](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_12.png)
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of the dataviews included in this solution is to present the cumulative update compliance score for the Windows computers with managed patch policies, which have been online in Automate within the past 30 days and are part of production patching groups for the whole environment and client filtered separately.
+The purpose of the dataviews included in this solution is to present the cumulative update compliance score for Windows computers with managed patch policies that have been online in Automate within the past 30 days. These computers are part of production patching groups for the whole environment and are filtered separately by client.
 
 ## Associated Content
 
@@ -19,18 +20,18 @@ The purpose of the dataviews included in this solution is to present the cumulat
 | Content                                                                 | Type        | Function                                           |
 |-------------------------------------------------------------------------|-------------|----------------------------------------------------|
 | [Script - MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>) | Script      | Imports the associated views.                       |
-| [View - pvl_cu_compliance](<../cwa/views/pvl_cu_compliance.md>) | Custom View | Stores and execute the SQL query utilized by the 'CU Compliance Metrics' dataview. |
-| [View - pvl_cu_compliance_clients](<../cwa/views/pvl_cu_compliance_clients.md>) | Custom View | Stores and execute the SQL query utilized by the 'CU Compliance Metrics - Clients' dataview. |
-| [Dataview - CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>) | Dataview    | Display the global data.                           |
-| [Dataview - CU Compliance Metrics - Clients](<../cwa/dataviews/CU Compliance Metrics - Clients.md>) | Dataview    | Display the client filtered data.                  |
+| [View - pvl_cu_compliance](<../cwa/views/pvl_cu_compliance.md>) | Custom View | Stores and executes the SQL query utilized by the 'CU Compliance Metrics' dataview. |
+| [View - pvl_cu_compliance_clients](<../cwa/views/pvl_cu_compliance_clients.md>) | Custom View | Stores and executes the SQL query utilized by the 'CU Compliance Metrics - Clients' dataview. |
+| [Dataview - CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>) | Dataview    | Displays the global data.                           |
+| [Dataview - CU Compliance Metrics - Clients](<../cwa/dataviews/CU Compliance Metrics - Clients.md>) | Dataview    | Displays the client-filtered data.                  |
 
 ### Dependencies
 
 | Content                                                                 | Type        | Function                                           |
 |-------------------------------------------------------------------------|-------------|----------------------------------------------------|
-| [Custom Table - plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) | Custom Table | Stored the support date of different version of Operating System |
+| [Custom Table - plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) | Custom Table | Stores the support date of different versions of the Operating System. |
 | [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) | Script      | Creates the 'Plugin_ProVal_Windows_OS_Support' table. |
-| [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) | Solution    | Fetch and store the information of latest installed Cumulative Update on Windows 10 and 11 computers. |
+| [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) | Solution    | Fetches and stores the information of the latest installed Cumulative Update on Windows 10 and 11 computers. |
 
 ## Implementation
 
@@ -42,7 +43,7 @@ The purpose of the dataviews included in this solution is to present the cumulat
    - [CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>)
    - [CU Compliance Metrics - Clients](<../cwa/dataviews/CU Compliance Metrics - Clients.md>)
 
-3. Follow the implementation step provided in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) solution's document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
+3. Follow the implementation steps provided in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) solution document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
 
 4. Reload the System Cache  
    ![Reload the System Cache](../../static/img/Cumulative-Update-Compliance---Report/image_1.png)
@@ -55,20 +56,8 @@ The purpose of the dataviews included in this solution is to present the cumulat
 
 7. Validate the presence of data in the following dataviews:
    - [CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>)
-   - [Patching and CU compliance Metrics - Clients](<../cwa/dataviews/Patching and CU compliance Metrics - Clients.md>)
+   - [Patching and CU Compliance Metrics - Clients](<../cwa/dataviews/Patching and CU compliance Metrics - Clients.md>)
 
 8. Remove the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
    - [MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>)
-
-
-
-
-
-
-
-
-
-
-
-

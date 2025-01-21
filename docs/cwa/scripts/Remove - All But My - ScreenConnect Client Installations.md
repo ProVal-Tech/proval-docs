@@ -8,23 +8,24 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
-\<div class='text-section scrollable'>
+
+<div class='text-section scrollable'>
 
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
 
 **_PLEASE NOTE_** -  
 
-**If you are NOT a current ProVal partner - you are using this content at your own risk and support will NOT be provided!**
+**If you are NOT a current ProVal partner, you are using this content at your own risk, and support will NOT be provided!**
 
-**This script will, by default, attempt to remove ALL ScreenConnect versions that do not match your Automate Deployed version.**
+**This script will, by default, attempt to remove ALL ScreenConnect versions that do not match your Automate deployed version.**
 
-**If you would like to add another permitted ScreenConnect version, please refer to the ExtraDataFields section of the document. We also recommend testing the script before deploying it in mass.**
+**If you would like to add another permitted ScreenConnect version, please refer to the ExtraDataFields section of the document. We also recommend testing the script before deploying it en masse.**
 
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
 
 ## Summary
 
-This script removes all instances of ScreenConnect from the machine except the one integrated with Automate or any other optional ScreenConnect instances provided in client EDF `Other Permitted SC Instances`.
+This script removes all instances of ScreenConnect from the machine except the one integrated with Automate or any other optional ScreenConnect instances provided in the client EDF `Other Permitted SC Instances`.
 
 ## Dependencies
 
@@ -36,9 +37,9 @@ This script removes all instances of ScreenConnect from the machine except the o
 
    ![Download XML](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_1.png)
 
-2. Login to your Automate thick client
+2. Log in to your Automate thick client
 3. Navigate to: System, General, Import, XML Expansion
-4. Browse to the XML downloaded from this Document
+4. Browse to the XML downloaded from this document
 
    ![Browse XML](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_2.png)
 
@@ -46,11 +47,11 @@ This script removes all instances of ScreenConnect from the machine except the o
 
    ![Import Warning](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_3.png)
 
-6. Use CTRL-R or the Reload System Cache drop down
+6. Use CTRL-R or the Reload System Cache dropdown
 
    ![Reload System Cache](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_4.png)
 
-7. Script will be located in: Automation, Scripts, ProVal, Connectwise Control folder
+7. The script will be located in: Automation, Scripts, ProVal, Connectwise Control folder
 
 ## Sample Run
 
@@ -60,7 +61,7 @@ This script removes all instances of ScreenConnect from the machine except the o
 
 | **Name**                       | **Type**   | **Required** | **Example**                      | **Section**      | **Description**                                                                                                                                                                                                 |
 |--------------------------------|------------|--------------|----------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Other Permitted SC Instances    | TextBox   | False        | 6ef67d57664499m5|0di7fd57637401k5 | ScreenConnect      | Mention the Instance IDs other than the Default one, which you would not like to remove from the client's machines. Remember to separate the instance IDs by Pipeline (|) if you are mentioning multiple instances and there should be no spacing in them. Like shown below: `@instanceid1@|@instanceid2@` |
+| Other Permitted SC Instances    | TextBox   | False        | 6ef67d57664499m5|0di7fd57637401k5 | ScreenConnect      | Mention the Instance IDs other than the Default one, which you would not like to remove from the client's machines. Remember to separate the instance IDs by pipe (|) if you are mentioning multiple instances, and there should be no spacing in them. Like shown below: `@instanceid1@|@instanceid2@` |
 | Remove Additional SC Clients    | CheckBox  | True         |                                  | ScreenConnect      | Mark the EDF to enable the Auto-Removal automation for the client.                                                                                                                                           |
 
 ![Client Level EDF](../../../static/img/Remove---All-But-My---ScreenConnect-Client-Installations/image_6.png)
@@ -85,13 +86,4 @@ This script removes all instances of ScreenConnect from the machine except the o
 
 - Script Logs
 
-
-
-
-
-
-
-
-
-
-
+</div>

@@ -8,29 +8,16 @@ tags: ['performance', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will detect agents where the CVE-2021-1675 patch has been installed and the custom mitigations against the exploit are also applied.
 
 ## Dependencies
 
-- [CVE-2021-1675 - Restore folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
+- [CVE-2021-1675 - Restore Folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
 - [Windows - Security - CVE 2021 1675 Status - PrintNightmare](<../dataviews/Windows - Security - CVE 2021 1675 Status - PrintNightmare.md>)
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-
-
-

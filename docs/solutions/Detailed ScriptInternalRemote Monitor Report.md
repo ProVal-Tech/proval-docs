@@ -8,17 +8,18 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution contains the dataviews that are used for the Detailed auditing of the ProVal and All automation (Script, Internal Monitors, and Remote monitors) reports.
+This solution contains the dataviews that are used for the detailed auditing of ProVal and all automation reports (scripts, internal monitors, and remote monitors).
 
 #### Auditing Content
 
 | Content                                                                                                  | Type     | Function                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
-| [Dataview - ProVal Script Detailed Report](<../cwa/dataviews/ProVal Script Detailed Report.md>)             | Dataview | This dataview shows all custom scripts built by ProVal with its detailed implementation status information.            |
-| [Dataview - ProVal Internal Monitor Detailed Report](<../cwa/dataviews/ProVal Internal Monitor Detailed Report.md>) | Dataview | This dataview shows all custom internal monitors built by ProVal with its detailed implementation status information.   |
-| [Dataview - ProVal Remote Monitor Detailed Report](<../cwa/dataviews/ProVal Remote Monitor Detailed Report.md>)   | Dataview | This dataview shows all custom remote monitors built by ProVal with its detailed implementation status information.     |
+| [Dataview - ProVal Script Detailed Report](<../cwa/dataviews/ProVal Script Detailed Report.md>)             | Dataview | This dataview shows all custom scripts built by ProVal with detailed implementation status information.            |
+| [Dataview - ProVal Internal Monitor Detailed Report](<../cwa/dataviews/ProVal Internal Monitor Detailed Report.md>) | Dataview | This dataview shows all custom internal monitors built by ProVal with detailed implementation status information.   |
+| [Dataview - ProVal Remote Monitor Detailed Report](<../cwa/dataviews/ProVal Remote Monitor Detailed Report.md>)   | Dataview | This dataview shows all custom remote monitors built by ProVal with detailed implementation status information.     |
 | [Dataview - All Internal Monitor Detailed Report](<../cwa/dataviews/All Internal Monitor Detailed Report.md>)     | Dataview | This dataview shows all custom internal monitors with detailed implementation status information.                       |
 | [Dataview - All Remote Monitor Detailed Report](<../cwa/dataviews/All Remote Monitor Detailed Report.md>)       | Dataview | This dataview shows all custom remote monitors with detailed implementation status information.                        |
 
@@ -33,15 +34,3 @@ This solution contains the dataviews that are used for the Detailed auditing of 
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

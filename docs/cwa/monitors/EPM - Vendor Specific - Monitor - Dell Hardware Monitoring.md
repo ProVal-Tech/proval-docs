@@ -8,28 +8,17 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This internal monitor detects critical and error Dell event logs via the "Server Administrator" event source, filtering out noisy event log types.
 
-"~Custom - Ticket Creation - Computer" Alert template should be used. 
+The "~Custom - Ticket Creation - Computer" alert template should be used.
 
-Replace \<Your AgentID Goes Here\> with the ID of the monitor set before enabling it. 
+Replace `<Your AgentID Goes Here>` with the ID of the monitor set before enabling it.
 
 ![Image](../../../static/img/EPM---Vendor-Specific---Monitor---Dell-Hardware-Monitoring/image_1.png)
 
 ## Target
 
 Dell Servers
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,25 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will determine if the Windows Firewall is enabled to the "public" setting. This data is visible in the dataview: @Windows - Firewall Status
+This document outlines the process to determine if the Windows Firewall is enabled for the "public" setting. This data is visible in the dataview: @Windows - Firewall Status.
 
 ## Settings
 
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
-| `\{%@netsh advfirewall show publicprofile state| find "State"@%}` | Contains   | ON     | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `\\{%@netsh advfirewall show publicprofile state| find "State"@%}` | Contains   | ON     | Windows OS     |

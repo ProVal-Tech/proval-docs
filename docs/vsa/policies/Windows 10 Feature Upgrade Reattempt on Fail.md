@@ -8,6 +8,7 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
 Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](<../procedures/Windows 10 Feature Upgrade (No Reboot).md>)
@@ -22,16 +23,3 @@ Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedu
   - **Policy Object Settings**:  
     - **Policy Object Members**: [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](<../procedures/Windows 10 Feature Upgrade (No Reboot).md>)  
       - **Policy Object Member Settings**: Scheduled Monthly, 1st of the month, Do not skip if offline, at midnight.
-
-
-
-
-
-
-
-
-
-
-
-
-

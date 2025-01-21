@@ -8,18 +8,19 @@ tags: ['encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution performs the BitLocker enabling on the endpoints. It has a feature to control the encryption method and Allow TPM and Reboot options.
+This solution enables BitLocker on the endpoints. It features control over the encryption method as well as options for TPM and reboot.
 
 ## Associated Content
 
 | Content                                                                                   | Type         | Function                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - BitLocker Initialize C Volume](<../cwrmm/tasks/CW RMM Script - BitLocker Initialize C Volume.md>) | Script       | This task enables the BitLocker on the system volume. The encryption methods that will be used to protect the target volume are:\<ul>\<li>Aes256\</li>\<li>XtsAes256\</li>\</ul>These two options come up with the custom field dependencies.Refer to the doc for the custom field dependencies check:[CW RMM Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738) |
-| [Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738) | Custom Field | This doc contains the custom field details linked to the Bitlocker Initialize Volume solution.                                                                                                                                    |
-| [Monitor - BitLocker Initialize Failure Detection](<../cwrmm/monitors/BitLocker Initialize Failure Detection.md>) | Monitor      | This monitor creates a ticket if the BitLocker Initialize fails to enable the Bitlocker on the system volume.                                                                                                                    |
-| [Machine Group - BitLocker Initialize](<../cwrmm/groups/BitLocker Initialize.md>) | Dynamic Group| This group contains the Windows 10 and Windows 11 agents only.The group name is "Windows 10/11".                                                                                                                             |
+| [Script - BitLocker Initialize C Volume](<../cwrmm/tasks/CW RMM Script - BitLocker Initialize C Volume.md>) | Script       | This task enables BitLocker on the system volume. The encryption methods that will be used to protect the target volume are:<ul><li>AES-256</li><li>XTS-AES-256</li></ul>These two options come with custom field dependencies. Refer to the document for the custom field dependencies check: [CW RMM Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738) |
+| [Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738) | Custom Field | This document contains the custom field details linked to the BitLocker Initialize Volume solution.                                                                                                                                    |
+| [Monitor - BitLocker Initialize Failure Detection](<../cwrmm/monitors/BitLocker Initialize Failure Detection.md>) | Monitor      | This monitor creates a ticket if the BitLocker initialization fails to enable on the system volume.                                                                                                                    |
+| [Machine Group - BitLocker Initialize](<../cwrmm/groups/BitLocker Initialize.md>) | Dynamic Group| This group contains only Windows 10 and Windows 11 agents. The group name is "Windows 10/11".                                                                                                                             |
 
 ## Implementation
 
@@ -27,15 +28,3 @@ This solution performs the BitLocker enabling on the endpoints. It has a feature
 - Create the [Machine Group - BitLocker Initialize](<../cwrmm/groups/BitLocker Initialize.md>)
 - Create the [Script - BitLocker Initialize C Volume](<../cwrmm/tasks/CW RMM Script - BitLocker Initialize C Volume.md>) and follow the deployment instructions
 - Create the [Monitor - BitLocker Initialize Failure Detection](<../cwrmm/monitors/BitLocker Initialize Failure Detection.md>) and follow the deployment instructions.
-
-
-
-
-
-
-
-
-
-
-
-

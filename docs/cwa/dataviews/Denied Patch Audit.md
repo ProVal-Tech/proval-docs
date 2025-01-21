@@ -8,35 +8,24 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview displays the list of denied patches in the environment.
 
 ## Columns
 
-| Column            | Description                                                        |
-|-------------------|--------------------------------------------------------------------|
-| ApprovaPolicyID   | The ID of the approval policies where patch is denied              |
-| ApprovalPolicies   | Name of the approval policies where patch is denied                |
-| HotfixID          | HotfixID of the patch                                             |
-| KBID              | KBID of the patch                                                |
-| Title             | Title of the patch                                               |
-| Manufacturer      | Manufacturer of the patch                                        |
-| Category          | Category of the patch                                            |
-| DateAdded         | Date the patch was discovered in the automate                    |
-| IsThirdParty      | 1 if it's a third-party patch                                    |
-| Affected Devices   | Number of devices on which this patch is denied                  |
-| SetBy             | Describes who set the patch to denied state                      |
-| Set Time          | Time of the patch denial                                         |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column             | Description                                                      |
+|--------------------|------------------------------------------------------------------|
+| ApprovalPolicyID   | The ID of the approval policies where the patch is denied        |
+| ApprovalPolicies    | Name of the approval policies where the patch is denied          |
+| HotfixID           | Hotfix ID of the patch                                           |
+| KBID               | KB ID of the patch                                              |
+| Title              | Title of the patch                                             |
+| Manufacturer       | Manufacturer of the patch                                       |
+| Category           | Category of the patch                                          |
+| DateAdded          | Date the patch was discovered in the system                     |
+| IsThirdParty       | 1 if it's a third-party patch                                   |
+| Affected Devices    | Number of devices on which this patch is denied                 |
+| SetBy              | Describes who set the patch to denied state                     |
+| Set Time           | Time of the patch denial                                        |

@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The below custom fields are used in the DUO Auth Proxy Deployment Solution.
+The custom fields listed below are used in the DUO Auth Proxy Deployment Solution.
 
 ## Dependencies
 
@@ -20,14 +21,14 @@ The below custom fields are used in the DUO Auth Proxy Deployment Solution.
 |----------------------------|---------|------|----------|----------|-----------------|--------------------------------------------------------------------------------------------------------------------|
 | Duo Proxy Deployment       | Company | Flag | False    | Yes      | No              | This checkbox allows the deployment of the application "Duo Security Authentication Proxy" by adding the agents of the company to the deployment group. |
 | DUO Proxy Exclusion        | Endpoint| Flag | False    | Yes      | No              | This checkbox excludes the agent from the deployment of the application "Duo Security Authentication Proxy".      |
-| DUO Auth Proxy Result      | Company | Text | False    | No       | \<Blank>         | This stores the success or failure result comes from the script "DUO Auth Proxy - Install/Update Latest Version". |
+| DUO Auth Proxy Result      | Company | Text | False    | No       | <Blank>         | This stores the success or failure result from the script "DUO Auth Proxy - Install/Update Latest Version".      |
 
 ## Steps to Create Custom Fields
 
 1. Go to Settings > Custom Fields  
    ![Step 1](../../../static/img/DUO-Auth-Proxy-Deployment/image_1.png)
 
-2. Click Add option  
+2. Click the Add option  
    ![Step 2](../../../static/img/DUO-Auth-Proxy-Deployment/image_2.png)
 
 3. Create Custom Field  
@@ -37,23 +38,11 @@ The below custom fields are used in the DUO Auth Proxy Deployment Solution.
    Then check the Type option:  
    Type: Flag  
    ![Type Option](../../../static/img/DUO-Auth-Proxy-Deployment/image_4.png)  
-   Then Provide Default Value and Description:  
+   Then provide Default Value and Description:  
    Default: No  
    Description: This checkbox allows the deployment of the application "Duo Security Authentication Proxy" by adding the agents of the company to the deployment group.  
    Editable: Yes  
    ![Default Value](../../../static/img/DUO-Auth-Proxy-Deployment/image_5.png)  
-   Note: Description is mandatory to be filled and it doesn't accept **'NEW LINE'**. Write everything in one phrase to describe the detail of the custom field.
+   **Note:** The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
 
-4. Please follow the same step to create other custom fields.
-
-
-
-
-
-
-
-
-
-
-
-
+4. Please follow the same steps to create other custom fields.

@@ -8,50 +8,38 @@ tags: ['cleanup', 'installation', 'reboot', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Agent procedure updates/installs the Egnyte software. It kills all Office applications prior to install, and prompts for a reboot after install.
+The agent procedure updates and installs the Egnyte software. It kills all Office applications prior to installation and prompts for a reboot afterward.
 
 ## Example Agent Procedure Log
 
 | Time                    | Action                      | Result                                                                                              | User          |
 |-------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------|---------------|
-| 7:09:06 pm 2-May-23    | Egnyte - Install            | Success THEN                                                                                         | derek.joniak  |
-| 7:08:10 pm 2-May-23    | Egnyte - Install-0003      | Cleanup performed                                                                                    | derek.joniak  |
-| 7:08:10 pm 2-May-23    | Delete Folder               | Success THEN                                                                                         | derek.joniak  |
-| 7:08:10 pm 2-May-23    | Delete Folder-0019         | Success! %ProgramData%/_automation/AgentProcedure/EgnyteInstall folder has been removed.           | derek.joniak  |
-| 7:08:08 pm 2-May-23    | Delete Folder-0013         | Directory %ProgramData%/_automation/AgentProcedure/EgnyteInstall is not empty but recursive delete is enabled - removing... | derek.joniak  |
-| 7:08:07 pm 2-May-23    | Delete Folder-0009         | %ProgramData%/_automation/AgentProcedure/EgnyteInstall folder exists.                              | derek.joniak  |
-| 7:08:06 pm 2-May-23    | Delete Folder-0004         | Directory contains a /. This should be a Windows folder.                                           | derek.joniak  |
-| 7:03:06 pm 2-May-23    | Egnyte - Install-0003      | Egnyte installed, waiting 5 minutes to prompt for reboot                                           | derek.joniak  |
-| 7:02:47 pm 2-May-23    | Egnyte - Install-0003      | File Copied. Starting Installation.                                                                 | derek.joniak  |
-| 7:02:10 pm 2-May-23    | Execute Powershell Command  | Success THEN                                                                                         | derek.joniak  |
-| 7:02:09 pm 2-May-23    | Execute Powershell Command-0011 | Powershell command completed!                                                                        | derek.joniak  |
-| 7:02:07 pm 2-May-23    | Execute Powershell Command-0011 | Executing powershell "" -Command "Get-Process | Where-Object \{$_.ProcessName -like "Excel" -or $_.ProcessName -like "Word" -or $_.ProcessName -like "PowerPoint" -or $_.ProcessName -like "Outlook" -or $_.ProcessName -like "OneNote" -or $_.ProcessName -like "Access" -or $_.ProcessName -like "Publisher" -or $_.ProcessName -like "SkypeforBusiness" -or $_.ProcessName -like "Teams"} | Stop-Process -Force" "" | derek.joniak  |
-| 7:02:07 pm 2-May-23    | Execute Powershell Command-0010 | Not sending output to variable.                                                                       | derek.joniak  |
-| 7:02:07 pm 2-May-23    | Execute Powershell Command-0008 | New command variable is: -Command "Get-Process | Where-Object \{$_.ProcessName -like "Excel" -or $_.ProcessName -like "Word" -or $_.ProcessName -like "PowerPoint" -or $_.ProcessName -like "Outlook" -or $_.ProcessName -like "OneNote" -or $_.ProcessName -like "Access" -or $_.ProcessName -like "Publisher" -or $_.ProcessName -like "SkypeforBusiness" -or $_.ProcessName -like "Teams"} | Stop-Process -Force" | derek.joniak  |
-| 7:02:07 pm 2-May-23    | Execute Powershell Command-0008 | Custom commands detected as Get-Process | Where-Object \{$_.ProcessName -like "Excel" -or $_.ProcessName -like "Word" -or $_.ProcessName -like "PowerPoint" -or $_.ProcessName -like "Outlook" -or $_.ProcessName -like "OneNote" -or $_.ProcessName -like "Access" -or $_.ProcessName -like "Publisher" -or $_.ProcessName -like "SkypeforBusiness" -or $_.ProcessName -like "Teams"} | Stop-Process -Force | derek.joniak  |
-| 7:01:59 pm 2-May-23    | Execute Powershell Command-0002 | Powershell is present.                                                                               | derek.joniak  |
-| 7:01:56 pm 2-May-23    | Egnyte - Install-0003      | User selected Install Now.                                                                           | derek.joniak  |
-| 7:01:48 pm 2-May-23    | Run Now - Egnyte - Install  | Admin derek.joniak scheduled procedure Run Now - Egnyte - Install to run at May 2 2023 8:01PM     | derek.joniak  |
+| 7:09:06 PM 2-May-23    | Egnyte - Install            | Success THEN                                                                                         | derek.joniak  |
+| 7:08:10 PM 2-May-23    | Egnyte - Install-0003      | Cleanup performed                                                                                    | derek.joniak  |
+| 7:08:10 PM 2-May-23    | Delete Folder               | Success THEN                                                                                         | derek.joniak  |
+| 7:08:10 PM 2-May-23    | Delete Folder-0019         | Success! %ProgramData%/_automation/AgentProcedure/EgnyteInstall folder has been removed.           | derek.joniak  |
+| 7:08:08 PM 2-May-23    | Delete Folder-0013         | Directory %ProgramData%/_automation/AgentProcedure/EgnyteInstall is not empty, but recursive delete is enabled - removing... | derek.joniak  |
+| 7:08:07 PM 2-May-23    | Delete Folder-0009         | %ProgramData%/_automation/AgentProcedure/EgnyteInstall folder exists.                              | derek.joniak  |
+| 7:08:06 PM 2-May-23    | Delete Folder-0004         | Directory contains a /. This should be a Windows folder.                                           | derek.joniak  |
+| 7:03:06 PM 2-May-23    | Egnyte - Install-0003      | Egnyte installed, waiting 5 minutes to prompt for reboot                                           | derek.joniak  |
+| 7:02:47 PM 2-May-23    | Egnyte - Install-0003      | File Copied. Starting Installation.                                                                 | derek.joniak  |
+| 7:02:10 PM 2-May-23    | Execute PowerShell Command   | Success THEN                                                                                         | derek.joniak  |
+| 7:02:09 PM 2-May-23    | Execute PowerShell Command-0011 | PowerShell command completed!                                                                        | derek.joniak  |
+| 7:02:07 PM 2-May-23    | Execute PowerShell Command-0011 | Executing PowerShell command to stop Office processes...                                            | derek.joniak  |
+| 7:02:07 PM 2-May-23    | Execute PowerShell Command-0010 | Not sending output to variable.                                                                       | derek.joniak  |
+| 7:02:07 PM 2-May-23    | Execute PowerShell Command-0008 | New command variable is set to stop Office processes.                                                | derek.joniak  |
+| 7:02:07 PM 2-May-23    | Execute PowerShell Command-0008 | Custom commands detected to stop Office processes.                                                  | derek.joniak  |
+| 7:01:59 PM 2-May-23    | Execute PowerShell Command-0002 | PowerShell is present.                                                                               | derek.joniak  |
+| 7:01:56 PM 2-May-23    | Egnyte - Install-0003      | User selected Install Now.                                                                           | derek.joniak  |
+| 7:01:48 PM 2-May-23    | Run Now - Egnyte - Install  | Admin derek.joniak scheduled procedure Run Now - Egnyte - Install to run at May 2, 2023, 8:01 PM  | derek.joniak  |
 
 ## Dependencies
 
-Procedure requires the custom field to run: [https://proval.itglue.com/DOC-5078775-12754459](<../../unsorted/SWM - Software Install - Custom Field - Egnyte - Install.md>)
+The procedure requires the custom field to run: [Custom Field - Egnyte - Install](<../../unsorted/SWM - Software Install - Custom Field - Egnyte - Install.md>)
 
 ## Output
 
 Agent Logs
-
-
-
-
-
-
-
-
-
-
-
-
-

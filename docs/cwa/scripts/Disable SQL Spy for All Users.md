@@ -8,11 +8,12 @@ tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will disable SQL Spy for all users in the environment
+The script will disable SQL Spy for all users in the environment.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,15 +21,4 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-The script will execute a query against the Automate server to disable SQL Spy for all users in the environment. The change will go into effect next time the user logs in. The script will take whatever the "windows" value is in the users_extend table and remove the binary value of 524288 from it. This is the switch used to display SQL Spy.
-
-
-
-
-
-
-
-
-
-
-
+The script will execute a query against the Automate server to disable SQL Spy for all users in the environment. The change will take effect the next time the user logs in. The script will take the current value of the "windows" field in the `users_extend` table and remove the binary value of `524288` from it. This binary value is the switch used to display SQL Spy.

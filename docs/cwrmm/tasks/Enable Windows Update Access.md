@@ -8,9 +8,10 @@ tags: ['patching', 'registry', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will overwrite the `DisableWindowsUpdateAccess` registry key if it's set at the computer or user level. This ensures that the Windows update access is not disabled for the machine, users, or the system account.
+The script will overwrite the `DisableWindowsUpdateAccess` registry key if it's set at the computer or user level. This ensures that Windows update access is not disabled for the machine, users, or the system account.
 
 ## Sample Run
 
@@ -19,7 +20,7 @@ The script will overwrite the `DisableWindowsUpdateAccess` registry key if it's 
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Image 1](../../../static/img/Enable-Windows-Update-Access/image_3.png)  
 ![Task Creation Image 2](../../../static/img/Enable-Windows-Update-Access/image_4.png)  
 
@@ -30,7 +31,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Task Image 1](../../../static/img/Enable-Windows-Update-Access/image_6.png)  
 
 A blank function will appear.  
@@ -47,7 +48,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```
+```powershell
 #region Strapper
 $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
@@ -64,8 +65,8 @@ Set-StrapperEnvironment
 #endregion
 ```
 
-```
-#Overwriting Disabled windows access for System account
+```powershell
+# Overwriting Disabled Windows Access for System Account
 $pathArray = @(
     'Registry::HKEY_USERS//S-1-5-18//Software//Policies//Microsoft//Windows//WindowsUpdate',
     'Registry::HKEY_USERS//S-1-5-18//Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
@@ -73,10 +74,10 @@ $pathArray = @(
     'Registry::HKEY_USERS//S-1-5-18//Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
 )
 foreach ($path in $pathArray) {
-    if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1 ) {
+    if ((Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1) {
         Write-Output 'Enabling Windows Update Access to the System Account.'
         try {
-            if ( !(Test-Path $path) ) {
+            if (!(Test-Path $path)) {
                 New-Item -Path $path -Force -Confirm:$false -ErrorAction Stop | Out-Null
             }
             Set-ItemProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
@@ -87,8 +88,8 @@ foreach ($path in $pathArray) {
 }
 ```
 
-```
-#Overwriting Disabled windows access for computer
+```powershell
+# Overwriting Disabled Windows Access for Computer
 $pathArray = @(
     'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate',
     'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
@@ -96,8 +97,7 @@ $pathArray = @(
     'HKLM://Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
 )
 foreach ($path in $pathArray) {
-    $Path = 'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate'
-    if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1 ) {
+    if ((Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1) {
         Write-Output 'Enabling Windows Update Access to the Computer.'
         try {
             Set-RegistryKeyProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
@@ -108,8 +108,8 @@ foreach ($path in $pathArray) {
 }
 ```
 
-```
-#Overwriting Disabled windows access for users
+```powershell
+# Overwriting Disabled Windows Access for Users
 $pathArray = @(
     'Software//Policies//Microsoft//Windows//WindowsUpdate',
     'Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
@@ -117,10 +117,10 @@ $pathArray = @(
     'Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
 )
 foreach ($path in $pathArray) {
-    if ( Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 } ) {
+    if (Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 }) {
         Set-UserRegistryKeyProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
         $failedUsers = Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 }
-        if ( $failedUsers ) {
+        if ($failedUsers) {
             throw "Failed to enable Windows Update Access for the Users. $($failedUsers -join ', ')"
         }
     }
@@ -139,7 +139,6 @@ A blank function will appear.
 
 Search and select the `Script Log` function.  
 ![Task Image 9](../../../static/img/Enable-Windows-Update-Access/image_14.png)  
-
 ![Task Image 10](../../../static/img/Enable-Windows-Update-Access/image_15.png)  
 
 The following function will pop up on the screen:  
@@ -158,15 +157,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

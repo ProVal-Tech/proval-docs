@@ -8,18 +8,19 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Identifies computers whose last cumulative update was installed more than 45 days but less than 60 days ago, excluding End-of-Life (EOL) machines.  
+This monitor identifies computers whose last cumulative update was installed more than 45 days but less than 60 days ago, excluding End-of-Life (EOL) machines.
 
-The monitor set will not keep detecting the computers where a ticket is already generated if it's using the suggested alert template `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`.
+The monitor set will not continue detecting the computers for which a ticket has already been generated if it is using the suggested alert template `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`.
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) 
-- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) 
-- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix] [without Ticketing]](<../scripts/Out of Date Cumulative Updates Autofix without Ticketing.md>) 
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) 
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
+- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
+- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix] [without Ticketing]](<../scripts/Out of Date Cumulative Updates Autofix without Ticketing.md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 
 ## Target
 
@@ -30,16 +31,3 @@ Global
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
 The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](<../scripts/Out of Date Cumulative Updates Autofix.md>) script.
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,24 +8,14 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Creates a new user on the mac and adds it to the local admin group.
+This document explains how to create a new user on a Mac and add that user to the local admin group.
 
 ## Process
 
-- adds the user
-- creates the user structure
-- adds the password
-- adds the user to the local admin group
-
-
-
-
-
-
-
-
-
-
-
+1. Add the user.
+2. Create the user structure.
+3. Set the password.
+4. Add the user to the local admin group.

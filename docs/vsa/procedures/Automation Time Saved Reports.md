@@ -8,9 +8,10 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into GetFiles for client and consultant access.
+Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into the GetFiles directory for client and consultant access.
 
 ## Example Agent Procedure Log
 
@@ -42,7 +43,7 @@ Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTime
 | 3:47:35 pm 28-Oct-22    | Execute Powershell Command-0008  | New command variable is: -Command "New-Item -ItemType Directory -Path %ProgramData%/_automation/ -Name StackContent -ErrorAction SilentlyContinue"                                                                                           | provaltech.com/dan.hicks |
 | 3:47:35 pm 28-Oct-22    | Execute Powershell Command-0008  | Custom commands detected as New-Item -ItemType Directory -Path %ProgramData%/_automation/ -Name StackContent -ErrorAction SilentlyContinue                                                                                                     | provaltech.com/dan.hicks |
 | 3:47:34 pm 28-Oct-22    | Execute Powershell Command-0002  | Powershell is present.                                                                                                                                                                                                                           | provaltech.com/dan.hicks |
-| 3:47:26 pm 28-Oct-22    | Run Now - Time Saved Report      | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Time Saved Report to run at Oct 28 2022 3:47PM                                                                                                                                 |                          |
+| 3:47:26 pm 28-Oct-22    | Run Now - Time Saved Report      | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Time Saved Report to run at Oct 28 2022 3:47 PM                                                                                                                                 |                          |
 
 ## Dependencies
 
@@ -50,20 +51,8 @@ Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTime
 
 ## Process
 
-Downloads and Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into GetFiles.
+Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into the GetFiles directory.
 
 ## Output
 
 Agent Procedure Log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>).
@@ -22,30 +23,17 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 
 | Column                | Description                                                        |
 |----------------------|--------------------------------------------------------------------|
-| Clientid             | Clientd (Hidden)                                                  |
-| Locationid           | Locationid (Hidden)                                              |
-| Computerid           | Computerid (Hidden)                                              |
+| Clientid             | Client ID (Hidden)                                                |
+| Locationid           | Location ID (Hidden)                                              |
+| Computerid           | Computer ID (Hidden)                                              |
 | Client               | Client Name                                                       |
 | Location             | Location Name                                                     |
 | Computer             | Computer Name                                                     |
 | Operating System      | Operating System                                                  |
-| Form Factor          | Form Factor of the Machine (Virtual Server/Physical Server/HyperV Host) |
+| Form Factor          | Form Factor of the Machine (Virtual Server/Physical Server/Hyper-V Host) |
 | Last Contact         | Last Contact with RMM                                            |
 | MSSQL Instance       | Name of the MSSQL Instance                                       |
 | MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
 | MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
 | Data Collection Time  | Data Collection Time                                              |
-
-
-
-
-
-
-
-
-
-
-
-
-
 

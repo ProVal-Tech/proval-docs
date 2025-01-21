@@ -8,22 +8,23 @@ tags: ['reboot', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution is built to send the reboot prompt popup to the user's screen on workstations and set it to reboot forcefully after several attempts set in the custom field to maintain the OS patching stability. It has both Auto and manual reboot pending automation features. It also has a feature to generate tickets for the servers where reboot pending is detected.
+This solution is designed to send a reboot prompt popup to the user's screen on workstations and enforce a forceful reboot after several attempts, as specified in the custom field, to maintain OS patching stability. It includes both automatic and manual reboot features, as well as a functionality to generate tickets for servers where a reboot is pending.
 
 ## Associated Content
 
 | Content                                                                                       | Type          | Function                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Task - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298948)                   | Task          | The script prompts the user to reboot with a simple yes or no prompt. It also forces a reboot after the PromptRebootCount is crossed.                                                                                                           |
-| [Task - Reboot Pending Check Automation](<../cwrmm/tasks/Reboot Pending Check Automation.md>)    | Task          | This task is designed to detect the reboot pending on the endpoints automatically and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../cwrmm/groups/Reboot Prompter Deployment - Auto.md>). |
-| [Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)           | Custom Fields | It contains all custom fields detail which has task and deployment dependencies.                                                                                                                                                                 |
-| [Dynamic Group - Reboot Prompter Deployment - Manual](<../cwrmm/groups/Reboot Prompter Deployment - Manual.md>) | Dynamic Group | This dynamic group depends on the endpoint custom field 'Prompter_RebootPending' flag should be checked and the agent should be available to check in to the group.                                                                                 |
-| [Dynamic Group - Reboot Prompter Deployment - Auto](<../cwrmm/groups/Reboot Prompter Deployment - Auto.md>) | Dynamic Group | This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck' flag should be checked and the agent should be available to check in to the group.                                                                                 |
-| [Dynamic Group - Automatic Reboot Pending Check](<../cwrmm/groups/Automatic Reboot Pending Check.md>) | Dynamic Group | This group is designed to schedule the task 'Automatic Reboot Pending Check' to set the auto reboot pending automation by checking the custom field 'Auto_RebootPendingCheck'.                                                                         |
-| [Dynamic Group - Reboot Pending Servers](<../cwrmm/groups/Reboot Pending Servers.md>)    | Dynamic Group | This group contains the server endpoint where the reboot is pending. It detects only supported Windows servers i.e. 2016, 2019, and 2022 and it only works when the Reboot Prompter Solution is activated.                                          |
-| [Monitor - Reboot Pending - Servers](<../cwrmm/monitors/Reboot Pending - Servers.md>)        | Monitor       | This monitor creates a ticket on servers where the reboot is pending. It detects only supported Windows servers i.e. 2016, 2019, and 2022 and it only works when the Reboot Prompter Solution is activated.                                          |
+| [Task - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298948)                   | Task          | The script prompts the user to reboot with a simple yes or no prompt. It also forces a reboot after the `PromptRebootCount` is exceeded.                                                                                                           |
+| [Task - Reboot Pending Check Automation](<../cwrmm/tasks/Reboot Pending Check Automation.md>)    | Task          | This task is designed to automatically detect reboot pending status on endpoints and check the custom field `Auto_RebootPendingCheck`, so that the agent is added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../cwrmm/groups/Reboot Prompter Deployment - Auto.md>). |
+| [Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)           | Custom Fields | This document contains details of all custom fields that have task and deployment dependencies.                                                                                                                                                                 |
+| [Dynamic Group - Reboot Prompter Deployment - Manual](<../cwrmm/groups/Reboot Prompter Deployment - Manual.md>) | Dynamic Group | This dynamic group depends on the endpoint custom field `Prompter_RebootPending` being checked, and the agent should be available to check into the group.                                                                                 |
+| [Dynamic Group - Reboot Prompter Deployment - Auto](<../cwrmm/groups/Reboot Prompter Deployment - Auto.md>) | Dynamic Group | This dynamic group depends on the endpoint custom field `Auto_RebootPendingCheck` being checked, and the agent should be available to check into the group.                                                                                 |
+| [Dynamic Group - Automatic Reboot Pending Check](<../cwrmm/groups/Automatic Reboot Pending Check.md>) | Dynamic Group | This group is designed to schedule the task `Automatic Reboot Pending Check` to set the auto reboot pending automation by checking the custom field `Auto_RebootPendingCheck`.                                                                         |
+| [Dynamic Group - Reboot Pending Servers](<../cwrmm/groups/Reboot Pending Servers.md>)    | Dynamic Group | This group contains server endpoints where a reboot is pending. It detects only supported Windows servers (i.e., 2016, 2019, and 2022) and works only when the Reboot Prompter Solution is activated.                                          |
+| [Monitor - Reboot Pending - Servers](<../cwrmm/monitors/Reboot Pending - Servers.md>)        | Monitor       | This monitor creates a ticket on servers where a reboot is pending. It detects only supported Windows servers (i.e., 2016, 2019, and 2022) and works only when the Reboot Prompter Solution is activated.                                          |
 
 ## Implementation
 
@@ -37,16 +38,16 @@ This solution is built to send the reboot prompt popup to the user's screen on w
 - Create the [Monitor - Reboot Pending - Servers](<../cwrmm/monitors/Reboot Pending - Servers.md>)
 - Schedule the [Task - Reboot Pending Check Automation](<../cwrmm/tasks/Reboot Pending Check Automation.md>) at the [Dynamic Group - Automatic Reboot Pending Check](<../cwrmm/groups/Automatic Reboot Pending Check.md>) every 2 hours.
   - Follow the deployment instructions in the [Task - Reboot Pending Check Automation](<../cwrmm/tasks/Reboot Pending Check Automation.md>).
-- Schedule the [Task - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298948) at the [Dynamic Group - Reboot Prompter Deployment - Manual](<../cwrmm/groups/Reboot Prompter Deployment - Manual.md>) and the [Dynamic Group - Reboot Prompter Deployment - Auto](<../cwrmm/groups/Reboot Prompter Deployment - Auto.md>) as per client requirement to send prompt every how much interval.
+- Schedule the [Task - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298948) at the [Dynamic Group - Reboot Prompter Deployment - Manual](<../cwrmm/groups/Reboot Prompter Deployment - Manual.md>) and the [Dynamic Group - Reboot Prompter Deployment - Auto](<../cwrmm/groups/Reboot Prompter Deployment - Auto.md>) according to client requirements to send prompts at the specified intervals.
   - Follow the deployment instructions in the task [CW RMM - Task - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298948).
-- Schedule the monitor [Monitor - Reboot Pending - Servers](<../cwrmm/monitors/Reboot Pending - Servers.md>) to target group [Dynamic Group - Reboot Pending Servers](<../cwrmm/groups/Reboot Pending Servers.md>) to create a ticket for the reboot pending on the servers.
+- Schedule the monitor [Monitor - Reboot Pending - Servers](<../cwrmm/monitors/Reboot Pending - Servers.md>) to target the group [Dynamic Group - Reboot Pending Servers](<../cwrmm/groups/Reboot Pending Servers.md>) to create a ticket for the reboot pending on the servers.
 
 ## FAQ
 
 The script popup screenshot:
 
-Send Yes No Prompt option for attempts equal to [RebootPromptCount](http://RebootPromptCount).  
-Note: The x time (s) depends on the count it prompted the user and "4" before being forced to reboot depends on the threshold set at the site-level custom field "RebootPromptCount".
+Send Yes/No prompt option for attempts equal to [RebootPromptCount](http://RebootPromptCount).  
+Note: The time (in seconds) depends on the count it prompted the user, and "4" before being forced to reboot depends on the threshold set at the site-level custom field "RebootPromptCount".
 
 ![Screenshot](../../static/img/Reboot-Prompter/image_68.png)
 
@@ -54,15 +55,3 @@ Afterward, it sends a force reboot prompt as shown below:
 Note: The 5 minutes depends on the value provided in the custom field 'RebootForceTimeDelayMinutes'.
 
 ![Screenshot](../../static/img/Reboot-Prompter/image_69.png)
-
-
-
-
-
-
-
-
-
-
-
-

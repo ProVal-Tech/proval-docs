@@ -8,15 +8,16 @@ tags: ['database', 'report', 'update']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the latest approved patches and their release date.
+The dataview displays the latest approved patches and their release dates.
 
 If any computer is over 2 months out from the last update it received, or the last update it received was in a failed state, it should be considered for review.
 
 The dataview filters the patches that it displays based on the following requirements:
 
-- Patches should be in the default policy
+- Patches should be in the default policy.
 - Patches displayed should have been released within the last two months.
 - Do not display any patch that was denied.
 - Do not display any patch that pertains to Windows Defender or malicious software removal.
@@ -27,54 +28,42 @@ The dataview filters the patches that it displays based on the following require
 |---------------------------|-----------------------------------------------------------|
 | Client Name               | The name of the client a computer belongs to.            |
 | Location Name             | The name of the location that a computer belongs to.     |
-| ComputerID                | The Id of the computer being queried.                    |
+| ComputerID                | The ID of the computer being queried.                    |
 | Computer Name             | The name of the computer.                                |
 | KBID                      | The KBID for the patch last attempted.                   |
 | Title                     | The title of the update that was last attempted.         |
 | Severity                  | The severity of the update.                              |
 | Patch Approved on Date    | The date the patch was approved.                         |
-| Patch Last Attempt Date   | The date the patch install was attempted last.          |
-| Status                    | The status of the computer at this time (Up To Date, or Please Review) |
+| Patch Last Attempt Date   | The date the patch installation was attempted last.      |
+| Status                    | The status of the computer at this time (Up To Date or Please Review) |
 
 ## SQL Representation
 
-```
+```sql
 SELECT
     Computers.ComputerID,
     clients.Name AS 'ClientName',
     locations.Name AS 'LocationName',
     computers.Name AS 'ComputerName',
     MAX(patchjobs.FinishDate) AS 'PatchLastAttemptDate',
-    v_setpatches.SetTime AS 'PatchApprovedonDate',
+    v_setpatches.SetTime AS 'PatchApprovedOnDate',
     Severity,
     KBID,
     Title,
-    if((MAX(FinishDate) > v_setpatches.Settime + INTERVAL 2 MONTH) OR ((MAX(FinishDate) \< v_setpatches.Settime + INTERVAL 2 MONTH) AND operationResultCode != '2'), "Please Review","Up To Date") AS 'ComputerState'
+    IF((MAX(FinishDate) > v_setpatches.SetTime + INTERVAL 2 MONTH) OR 
+       ((MAX(FinishDate) < v_setpatches.SetTime + INTERVAL 2 MONTH) AND operationResultCode != '2'), 
+       'Please Review', 'Up To Date') AS 'ComputerState'
 FROM
     Computers
-    INNER JOIN Patchjobs
-    ON Patchjobs.ComputerID = Computers.ComputerID
-    LEFT JOIN patchjobpatches
-    ON patchjobpatches.PatchJobGuid = patchjobs.PatchJobGuid
-    LEFT JOIN locations
-    ON locations.LocationID = computers.LocationID
-    LEFT JOIN clients
-    ON clients.ClientID = computers.ClientID
-    LEFT JOIN v_setpatches
-    ON v_setpatches.HotfixID = Patchjobpatches.PatchID
-WHERE v_setpatches.approvalPolicyID = 6 AND v_setpatches.settime >= now() - INTERVAL 2 MONTH AND v_setpatches.approvalsetting != '4' and NOT v_setpatches.Title REGEXP '//W*(Microsoft Defender)//W*|//W*(Malicious Software Removal)//W*'
-GROUP BY computerid
+    INNER JOIN Patchjobs ON Patchjobs.ComputerID = Computers.ComputerID
+    LEFT JOIN patchjobpatches ON patchjobpatches.PatchJobGuid = patchjobs.PatchJobGuid
+    LEFT JOIN locations ON locations.LocationID = computers.LocationID
+    LEFT JOIN clients ON clients.ClientID = computers.ClientID
+    LEFT JOIN v_setpatches ON v_setpatches.HotfixID = patchjobpatches.PatchID
+WHERE 
+    v_setpatches.approvalPolicyID = 6 
+    AND v_setpatches.SetTime >= NOW() - INTERVAL 2 MONTH 
+    AND v_setpatches.approvalSetting != '4' 
+    AND NOT v_setpatches.Title REGEXP '//W*(Microsoft Defender)//W*|//W*(Malicious Software Removal)//W*'
+GROUP BY ComputerID
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

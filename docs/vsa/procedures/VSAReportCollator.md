@@ -8,25 +8,15 @@ tags: ['email', 'kaseya', 'report']
 draft: false
 unlisted: false
 ---
-## Summery:
+
+## Summary
 
 Collate CSV Report Parts from Kaseya GetFiles Then Send As Attachment
 
-## Parameter:
+## Parameters
 
 - **filepart**: Required. The individual report file names  
 - **msgto**: Required. The target email address  
 - **msgsubject**: Required. The email subject line  
 - **msgattach**: Required. The email attachment file name  
 - **days**: Optional. Purge report parts older than X days before run  
-
-
-
-
-
-
-
-
-
-
-

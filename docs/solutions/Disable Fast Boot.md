@@ -8,37 +8,38 @@ tags: ['performance', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of the solution is to disable the Fast Boot feature for Windows Workstations.
+The purpose of this document is to outline the solution to disable the Fast Boot feature for Windows workstations.
 
 ## Associated Content
 
-### Custom Field
+### Custom Fields
 
 | Content                                                                 | Type  | Level   | Function                                                                                                           |
 |-------------------------------------------------------------------------|-------|---------|--------------------------------------------------------------------------------------------------------------------|
-| [Disable_FastBoot](<../cwrmm/custom-fields/CW RMM - Custom Field  - Company - Disable_FastBoot.md>)    | Flag  | Company | Check this box to enable the solution to disable fastboot on the client's Windows workstations.                  |
-| [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Site - Disable_Fastboot_Exclusion.md>) | Flag  | Site    | Check this box to exclude the site from the solution that disables fastboot.                                    |
-| [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) | Flag  | Endpoint | Check this box to exclude the computer from the solution that disables fastboot.                                 |
-| [FastBoot_Disabled](<../cwrmm/custom-fields/Endpoint - FastBoot_Disabled.md>)   | Flag  | Endpoint | Indicates that FastBoot has been disabled on the computer.                                                       |
+| [Disable_FastBoot](<../cwrmm/custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>)    | Flag  | Company | Check this box to enable the solution to disable Fast Boot on the client's Windows workstations.                  |
+| [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Site - Disable_Fastboot_Exclusion.md>) | Flag  | Site    | Check this box to exclude the site from the solution that disables Fast Boot.                                    |
+| [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) | Flag  | Endpoint | Check this box to exclude the computer from the solution that disables Fast Boot.                                 |
+| [FastBoot_Disabled](<../cwrmm/custom-fields/Endpoint - FastBoot_Disabled.md>)   | Flag  | Endpoint | Indicates that Fast Boot has been disabled on the computer.                                                       |
 
 ### Device Group
 
 | Content                                                                | Type     | Function                                                                                                                |
 |------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
-| [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416)   | Dynamic  | The group contains the computers where the solution to disable FastBoot is enabled through the Custom Fields.          |
+| [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416)   | Dynamic  | This group contains the computers where the solution to disable Fast Boot is enabled through the Custom Fields.       |
 
 ### Task
 
 | Content                                                                | Type           | Function                                                                                                                |
 |------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)   | Script Editor  | The script will attempt to modify the registry keys to disable fastboot on the Windows workstations if it is not already disabled. |
+| [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)   | Script Editor  | The script will attempt to modify the registry keys to disable Fast Boot on the Windows workstations if it is not already disabled. |
 
 ## Implementation
 
-1. Create the following custom Fields:  
-   - [Disable_FastBoot](<../cwrmm/custom-fields/CW RMM - Custom Field  - Company - Disable_FastBoot.md>)  
+1. Create the following custom fields:  
+   - [Disable_FastBoot](<../cwrmm/custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>)  
    - [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Site - Disable_Fastboot_Exclusion.md>)  
    - [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>)  
    - [FastBoot_Disabled](<../cwrmm/custom-fields/Endpoint - FastBoot_Disabled.md>)  
@@ -48,16 +49,3 @@ The purpose of the solution is to disable the Fast Boot feature for Windows Work
 
 3. Create the Task and deploy it against the device group:  
    - [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)  
-
-
-
-
-
-
-
-
-
-
-
-
-

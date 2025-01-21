@@ -8,12 +8,13 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The ultimate objective of the solution is to establish and oversee two scheduled tasks designed to update installed applications utilizing Winget on Windows 10 and 11 machines within the environment.
+The ultimate objective of this solution is to establish and oversee two scheduled tasks designed to update installed applications utilizing Winget on Windows 10 and 11 machines within the environment.
 
-- `Winget Update All [System]` task executes the Winget's `upgrade all command` upon system boot (after network connection) under the SYSTEM context.
-- `Winget Update All [Logged on User]` task initiates the Winget's `upgrade all command` upon user login.
+- The `Winget Update All [System]` task executes Winget's `upgrade all` command upon system boot (after network connection) under the SYSTEM context.
+- The `Winget Update All [Logged on User]` task initiates Winget's `upgrade all` command upon user login.
 
 **Note:** Excluding the client/location/computer will remove both scheduled tasks from the associated endpoint(s).
 
@@ -33,7 +34,7 @@ The ultimate objective of the solution is to establish and oversee two scheduled
 | [Internal Monitor - Execute Script - Scheduled Task - Create - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Create - Winget Update All.md>) | Internal Monitor | Detects the Windows 10 and 11 machines where either of the tasks are missing. |
 | [Internal Monitor - Execute Script - Scheduled Task - Delete - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Delete - Winget Update All.md>) | Internal Monitor | Detects the Windows 10 and 11 machines where either of the tasks are present but are excluded. |
 
-### Alert template
+### Alert Template
 
 | Content                                                                 | Type          | Function                                                                                                     |
 |-------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------|
@@ -57,16 +58,16 @@ The ultimate objective of the solution is to establish and oversee two scheduled
 4. Reload the system cache.
    ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_1.png)
 
-5. Execute the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Create - Winget Update All Autofix.md>) against any online Windows 10 or Windows 11 computer with the `SetEnvironment` parameter to `1` to create the system property and the EDFs.
+5. Execute the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Create - Winget Update All Autofix.md>) against any online Windows 10 or Windows 11 computer with the `SetEnvironment` parameter set to `1` to create the system property and the EDFs.
    ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_2.png)
 
 6. Configure the Extra Data Fields to initiate the solution as described in this document: [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Create - Winget Update All Autofix.md>).
-   
+
    **Note:** Marking the client-level EDF `Winget Update All Task - Create` will initiate the solution for the client.
 
 7. Configure the solution as follows:
 
-   Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   Navigate to Automation → Monitors within the CWA Control Center and set up the following:
 
    - [CWM - Automate - Internal Monitor - Execute Script - Scheduled Task - Create - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Create - Winget Update All.md>)
      - Configure with the alert template: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
@@ -103,16 +104,4 @@ The ultimate objective of the solution is to establish and oversee two scheduled
 **A:** Upon marking the Location-Level EDF `Winget Update All Task - Exclude`, the [Execute Script - Scheduled Task - Delete - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Delete - Winget Update All.md>) internal monitor executes the [Scheduled Task - Delete - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Delete - Winget Update All Autofix.md>) script to remove the tasks from all Windows 10 and 11 machines of the location.
 
 **Q:** How to remove the tasks from all machines of a client?  
-**A:** Upon Un-marking the Client-Level EDF `Winget Update All Task - Create`, the [Execute Script - Scheduled Task - Delete - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Delete - Winget Update All.md>) internal monitor executes the [Scheduled Task - Delete - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Delete - Winget Update All Autofix.md>) script to remove the tasks from all Windows 10 and 11 machines of the client.
-
-
-
-
-
-
-
-
-
-
-
-
+**A:** Upon unmarking the Client-Level EDF `Winget Update All Task - Create`, the [Execute Script - Scheduled Task - Delete - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Delete - Winget Update All.md>) internal monitor executes the [Scheduled Task - Delete - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Delete - Winget Update All Autofix.md>) script to remove the tasks from all Windows 10 and 11 machines of the client.

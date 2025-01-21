@@ -8,9 +8,10 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor checks the Local user's login password age to see if the age is set to unlimited, and if so it will change the user password from never Expire to expire and will also change the Default user policy password age to 90 days. It outputs the users whose password age is set to Never Expire and the monitor fails to change the password age.
+This remote monitor checks the local user's login password age to see if it is set to unlimited. If so, it will change the user's password setting from Never Expire to expire and will also change the default user policy password age to 90 days. It outputs the users whose password age is set to Never Expire and indicates any failures in changing the password age.
 
 ## Details
 
@@ -18,7 +19,7 @@ This remote monitor checks the Local user's login password age to see if the age
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator    | Interval | Result |
 |--------------|----------------|------------|---------------|----------------|----------|--------|
@@ -34,20 +35,8 @@ Windows Machines
 
 **Success Body**: `No users found with Password Age set to Not Expire.`  
 
-**Failure Body:** `Failed to Reset Local Users Password Age on %Computername% at %Clientname%. Password is still set to Not Expire on below users:%RESULT%`  
+**Failure Body:** `Failed to Reset Local Users Password Age on %Computername% at %Clientname%. Password is still set to Not Expire on the following users: %RESULT%`  
 
 ## How to Import
 
 [Import - Remote Monitor - Reset Local User Password Age](<./Import - Remote Monitor - Reset Local User Password Age.md>)
-
-
-
-
-
-
-
-
-
-
-
-

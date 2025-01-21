@@ -8,10 +8,11 @@ tags: ['database', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script creates a custom table `plugin_proval_diskpart_style`. Runs Powershell against Windows machines to fetch disk partition details and populate the information in the database.  
-Time Saved by Automation: 10 Minutes
+This script creates a custom table `plugin_proval_diskpart_style`. It runs PowerShell against Windows machines to fetch disk partition details and populate the information in the database.  
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -24,23 +25,10 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- This script will first create the custom table in the Database.
-- Then verify the Windows OS, if no then exit.
-- Then script will run some Powershell to fetch disk partition details and store them inside the database.
+- This script will first create the custom table in the database.
+- Then, it will verify the Windows OS; if it is not Windows, the script will exit.
+- The script will then run PowerShell to fetch disk partition details and store them in the database.
 
 ## Output
 
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,15 +8,16 @@ tags: ['active-directory', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The task involves the execution of a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task. Subsequently, the acquired data is formatted and stored in [Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362), facilitating enhanced auditing and monitoring processes. 
+The task involves executing a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task. Subsequently, the acquired data is formatted and stored in [Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362), facilitating enhanced auditing and monitoring processes.
 
-Importantly, this task should be scheduled against the primary domain controller per domain.
+Importantly, this task should be scheduled against the primary domain controller for each domain.
 
 ## Update Notice: 27-December-2024
 
-Task has been updated to create a ticket. Therefore, the `New Domain Admins` monitor is no longer needed. Please remove the monitor set before updating the task.
+The task has been updated to create a ticket. Therefore, the `New Domain Admins` monitor is no longer needed. Please remove the monitor set before updating the task.
 
 ## Sample Run
 
@@ -43,13 +44,13 @@ Create the Custom Field [CW RMM - Custom Field - New Domain Admins](https://prov
 
 ## Create Script
 
-Create a new "Script Editor" style script in the system to implement this Task.
+Create a new "Script Editor" style script in the system to implement this task.
 
 ![Create Script](../../../static/img/New-Domain-Admins/image_18.png)  
 ![Script Editor](../../../static/img/New-Domain-Admins/image_19.png)  
 
 **Name:** New Domain Admins  
-**Description:** The task involves the execution of a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task.  
+**Description:** The task involves executing a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task.  
 **Category:** Custom  
 
 ![Script Category](../../../static/img/New-Domain-Admins/image_20.png)  
@@ -68,7 +69,7 @@ Start by adding a row. You can do this by clicking the "Add Row" button at the b
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. This PowerShell function will validate whether the endpoint is a domain controller or not.
 
 ```powershell
-$check = ( Get-Ciminstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).domainrole
+$check = ( Get-CimInstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).DomainRole
 if ( $check -in ( 4,5 ) ) {
     return 'domain controller'
 } elseif ( $check -eq 1 ) {
@@ -87,7 +88,7 @@ if ( $check -in ( 4,5 ) ) {
 
 ##### Row 2a Condition: Output Does Not Contain
 
-Click the dropdown `Contains` and select `Does Not Contain` and enter `domain controller` in the text box.
+Click the dropdown `Contains` and select `Does Not Contain`, then enter `domain controller` in the text box.
 
 ![Output Condition](../../../static/img/New-Domain-Admins/image_27.png)  
 
@@ -140,12 +141,12 @@ Set-StrapperEnvironment
 ```powershell
 $adminTableName = 'domainadmin'
 $previousDomainAdmins = try { Get-StoredObject -TableName $adminTableName -WarningAction SilentlyContinue } catch { $null }
-$adminGroupMembers = Get-ADGroupMember -Identity Administrators -Recursive | Where-Object { $_.ObjectClass -eq 'User' } | Select-Object -Property distinguishedName, name, objectClass, objectGUID, SamAccountName, SID -Unique
+$adminGroupMembers = Get-ADGroupMember -Identity Administrators -Recursive | Where-Object { $_.ObjectClass -eq 'User' } | Select-Object -Property DistinguishedName, Name, ObjectClass, ObjectGUID, SamAccountName, SID -Unique
 if (!$previousDomainAdmins) {
     Write-Log -Text 'No previous runs of the script were detected. Creating new chain.' -Level Information
 } elseif ($newDomainAdmins = $adminGroupMembers | Where-Object { $_.SID.Value -notin $previousDomainAdmins.SID.Value }) {
-    Write-Log -Text "$($newDomainAdmins.Count) new domain admins(s) detected." -Level Information
-    Write-Output "New Domain admin(s): $(foreach ($admin in $newDomainAdmins) {""'$($admin.SamAccountName)';"" })"
+    Write-Log -Text "$($newDomainAdmins.Count) new domain admin(s) detected." -Level Information
+    Write-Output "New Domain admin(s): $(foreach ($admin in $newDomainAdmins) { "'$($admin.SamAccountName)';" })"
 } else {
     Write-Log -Text 'No new domain admin detected.' -Level Information
     Write-Output 'No new domain admin detected.'
@@ -165,18 +166,18 @@ Select `Set Custom Field` Function.
 
 ![Set Custom Field](../../../static/img/New-Domain-Admins/image_33.png)  
 
-When you select `set custom field`, that will open up a new window.
+When you select `Set Custom Field`, a new window will open.
 
 ![Custom Field Window](../../../static/img/New-Domain-Admins/image_34.png)  
 
-In this window, search for `New Domain Admins` field.
+In this window, search for the `New Domain Admins` field.
 
 **Custom Field:** Crystal Disk Info_Disk Health  
 **Value:** Virtual Machine - Crystal Disk Not Eligible  
 
 ![Set Custom Field](../../../static/img/New-Domain-Admins/image_35.png)  
 
-#### Row 5 function: Script Log
+#### Row 5 Function: Script Log
 
 Add a new row by clicking on the Add row button.
 
@@ -196,13 +197,13 @@ In the script log message, simply type `%output%` so that the script will send t
 ![If Then Logic](../../../static/img/New-Domain-Admins/image_25.png)  
 ![If Then Logic 2](../../../static/img/New-Domain-Admins/image_26.png)  
 
-##### Row 2a Condition: Output Contains
+##### Row 6a Condition: Output Contains
 
-Click the dropdown `Contains` and select `Contain` and enter `New Domain admin(s):` in the text box.
+Click the dropdown `Contains` and select `Contains`, then enter `New Domain admin(s):` in the text box.
 
 ![Output Condition](../../../static/img/New-Domain-Admins/image_39.png)  
 
-##### Row 2b Function: Set Pre-defined Variable
+##### Row 6b Function: Set Pre-defined Variable
 
 Add a new row by clicking on the Add row button.
 
@@ -221,7 +222,7 @@ Select the `System Variable` button, set `Computer` for the `Variable Name` and 
 ![Save Changes](../../../static/img/New-Domain-Admins/image_43.png)  
 ![Save Changes 2](../../../static/img/New-Domain-Admins/image_44.png)  
 
-##### Row 2c Function: Create Ticket
+##### Row 6c Function: Create Ticket
 
 Add a new row by clicking on the Add row button.
 
@@ -241,68 +242,63 @@ This function will appear.
 
 ![Ticket Details](../../../static/img/New-Domain-Admins/image_47.png)  
 
-Once all items are added, please save the task. The final task should look like the below screenshot.
+Once all items are added, please save the task. The final task should look like the screenshot below.
 
 ![Final Task](../../../static/img/New-Domain-Admins/image_48.png)  
 ![Final Task 2](../../../static/img/New-Domain-Admins/image_49.png)  
 
 ## Deployment
 
-It is suggested to run the Task once per hour against the primary domain controllers or infrastructure masters.
+It is suggested to run the task once per hour against the primary domain controllers or infrastructure masters.
 
 - Go to `Automation` > `Tasks`.
 - Search for `New Domain Admins Task`.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
+
 ![Schedule Task](../../../static/img/New-Domain-Admins/image_50.png)  
 
 This screen will appear.  
+
 ![Schedule Screen](../../../static/img/New-Domain-Admins/image_51.png)  
 
 Click the `Does not repeat` button.  
+
 ![Does Not Repeat](../../../static/img/New-Domain-Admins/image_52.png)  
 
 This pop-up box will appear.  
+
 ![Repeat Options](../../../static/img/New-Domain-Admins/image_53.png)  
 
-Select `Hour(s)` option from the Repeat dropdown.  
+Select the `Hour(s)` option from the Repeat dropdown.  
+
 ![Select Hour](../../../static/img/New-Domain-Admins/image_54.png)  
 ![Select Hour 2](../../../static/img/New-Domain-Admins/image_55.png)  
 
-Search for `Infrastructure` in the `Resources*` and select `Infrastructure Master` group.  
+Search for `Infrastructure` in the `Resources*` and select the `Infrastructure Master` group.  
+
 ![Select Infrastructure Master](../../../static/img/New-Domain-Admins/image_56.png)  
 
 Now click the `Run` button to initiate the task.  
+
 ![Run Task](../../../static/img/New-Domain-Admins/image_57.png)  
 
 The task will start appearing in the Scheduled Tasks.  
+
 ![Scheduled Tasks](../../../static/img/New-Domain-Admins/image_58.png)  
 ![Scheduled Tasks 2](../../../static/img/New-Domain-Admins/image_59.png)  
 
 ## Output
 
-- Script Log  
+- **Script Log**  
 ![Script Log Output](../../../static/img/New-Domain-Admins/image_60.png)  
 ![Script Log Output 2](../../../static/img/New-Domain-Admins/image_61.png)  
 ![Script Log Output 3](../../../static/img/New-Domain-Admins/image_62.png)  
 
-- Custom Field  
+- **Custom Field**  
 ![Custom Field Output](../../../static/img/New-Domain-Admins/image_63.png)  
 ![Custom Field Output 2](../../../static/img/New-Domain-Admins/image_64.png)  
 ![Custom Field Output 3](../../../static/img/New-Domain-Admins/image_65.png)  
 
-- Ticket  
+- **Ticket**  
 ![Ticket Output](../../../static/img/New-Domain-Admins/image_66.png)  
-
-
-
-
-
-
-
-
-
-
-
-
-

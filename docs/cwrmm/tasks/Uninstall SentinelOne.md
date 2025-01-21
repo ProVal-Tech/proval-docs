@@ -8,15 +8,16 @@ tags: ['application', 'security', 'setup', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal. CW RMM implementation of the agnostic script [Remove SentinelOne](<../../unsorted/EPM - Software Uninstall - Agnostic - Remove SentinelOne.md>).
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Uninstall-SentinelOne/image_2.png)
-![Sample Run 2](../../../static/img/Uninstall-SentinelOne/image_3.png)
-![Sample Run 3](../../../static/img/Uninstall-SentinelOne/image_4.png)
+![Sample Run 1](../../../static/img/Uninstall-SentinelOne/image_2.png)  
+![Sample Run 2](../../../static/img/Uninstall-SentinelOne/image_3.png)  
+![Sample Run 3](../../../static/img/Uninstall-SentinelOne/image_4.png)  
 
 ## Dependencies
 
@@ -24,9 +25,9 @@ This script identifies the installed version of the SentinelOne agent and attemp
 
 ## User Parameters
 
-| Name      | Example         | Required | Type        | Description                                                                                         |
-|-----------|------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
-| PassPhrase| FQQHCWFQFC==     | False    | Text String | The passphrase used for uninstalling the SentinelOne agent when Anti-Tamper is enabled.           |
+| Name       | Example         | Required | Type        | Description                                                                                         |
+|------------|------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
+| PassPhrase | FQQHCWFQFC==     | False    | Text String | The passphrase used for uninstalling the SentinelOne agent when Anti-Tamper is enabled.           |
 
 ![User Parameters Image](../../../static/img/Uninstall-SentinelOne/image_5.png)
 
@@ -34,8 +35,8 @@ This script identifies the installed version of the SentinelOne agent and attemp
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](../../../static/img/Uninstall-SentinelOne/image_6.png)
-![Task Creation Image 2](../../../static/img/Uninstall-SentinelOne/image_7.png)
+![Task Creation Image 1](../../../static/img/Uninstall-SentinelOne/image_6.png)  
+![Task Creation Image 2](../../../static/img/Uninstall-SentinelOne/image_7.png)  
 
 **Name:** `Uninstall SentinelOne`  
 **Description:** `This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal.`  
@@ -73,8 +74,8 @@ A blank function will appear.
 ### Row 1 Function: PowerShell Script
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Image 1](../../../static/img/Uninstall-SentinelOne/image_14.png)
-![PowerShell Script Image 2](../../../static/img/Uninstall-SentinelOne/image_15.png)
+![PowerShell Script Image 1](../../../static/img/Uninstall-SentinelOne/image_14.png)  
+![PowerShell Script Image 2](../../../static/img/Uninstall-SentinelOne/image_15.png)  
 
 The following function will pop up on the screen:
 
@@ -168,15 +169,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['extensions', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script will enable an extensions for the following Chromium-based browsers:
+This script will enable extensions for the following Chromium-based browsers:
 
 - Chromium
 - Google Chrome
@@ -18,15 +19,15 @@ This Script will enable an extensions for the following Chromium-based browsers:
 - Brave
 - Vivaldi
 
-Note: Microsoft Edge may ignore policy settings with devices that are not managed, and some Windows releases do not accept MDM policies.
+**Note:** Microsoft Edge may ignore policy settings on devices that are not managed, and some Windows releases do not accept MDM policies.
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/Register---ChromiumExtension/image_1.png)
 
-Installs N-Able Passportal extension for the Chrome browser.  
-When selecting multiple browsers use 'Chrome', 'Edge', 'Brave'...  
-If Setting all available browsers leave Target Blank.
+Installs the N-Able Passportal extension for the Chrome browser.  
+When selecting multiple browsers, use 'Chrome', 'Edge', 'Brave', etc.  
+If setting all available browsers, leave the Target blank.
 
 ## Dependencies
 
@@ -37,20 +38,8 @@ If Setting all available browsers leave Target Blank.
 | Name        | Example                                      | Required | Description                                         |
 |-------------|----------------------------------------------|----------|-----------------------------------------------------|
 | ExtensionID | nakcddgmfmjmdbfahkkiijejmmfkfipc            | True     | The Extension ID from the Google Chrome Store.      |
-| Target      | 'Chromium', 'Chrome', 'Edge', 'Brave', 'Vivaldi' | False    | The browser or browsers to enable the extension for. Will Target all available if left blank. |
+| Target      | 'Chromium', 'Chrome', 'Edge', 'Brave', 'Vivaldi' | False    | The browser or browsers to enable the extension for. Will target all available if left blank. |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

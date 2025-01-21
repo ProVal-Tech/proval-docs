@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script generates a client-level ticket containing details about all pending server reboots for that client. Nevertheless, if a client has only one server awaiting a reboot, the script will generate a ticket at the computer level.  
+The script generates a client-level ticket containing details about all pending server reboots for that client. However, if a client has only one server awaiting a reboot, the script will generate a ticket at the computer level.
 
 The script will close tickets for servers that no longer have pending reboots and for clients with no pending server reboots. It won't generate new tickets for servers with pending reboots if there's already an existing ticket. It will re-create client-level tickets with current information after closing the previous ticket(s).
 
@@ -21,7 +22,7 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 ## Dependencies
 
-[CWM - Automate - Script - Reboot Pending Servers per client - Tickets Management](<./Reboot Pending Servers per client - Ticket Management.md>)
+[CWM - Automate - Script - Reboot Pending Servers per Client - Tickets Management](<./Reboot Pending Servers per client - Ticket Management.md>)
 
 ## Output
 
@@ -29,20 +30,8 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 ## Sample Tickets
 
-**Client-Level ticket:**  
+**Client-Level Ticket:**  
 ![Client-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_2.png)  
 
-**Computer-Level ticket:**  
+**Computer-Level Ticket:**  
 ![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['registry', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This role can be used to create an audit dataview for the Domain Controllers for Netlogon's [RequireSeal](https://support.microsoft.com/en-us/topic/kb5021130-how-to-manage-the-netlogon-protocol-changes-related-to-cve-2022-38023-46ea3067-3989-4d40-963c-680fd9e8ee25#:~:text=Windows%20domain%20controllers%3A-,RequireSeal,-Registry%20key) registry key.
@@ -19,15 +20,3 @@ The registry key's value will be stored in the `Serial Number` column.
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Services/Netlogon/Parameters:RequireSeal-%} | Exists     |        | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-

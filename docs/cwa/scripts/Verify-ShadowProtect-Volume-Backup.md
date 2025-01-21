@@ -8,11 +8,12 @@ tags: ['backup', 'database', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script queries the LT database for each drive letter that is an NTFS volume on a computer.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-- @Verify-ShadowProtect-Volume-Backup-byLetter[SubScript] (script)
+- `@Verify-ShadowProtect-Volume-Backup-byLetter[SubScript]` (script)
 
 ## Variables
 
@@ -29,23 +30,11 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-1. Sets up 2 variables, DriveLetterString and rowcountA.
-2. Starts querying the database and grabbing the drive information.
-3. Sends that information to the subscript for Shadow-Protect verification.
+1. Sets up two variables: `DriveLetterString` and `rowcountA`.
+2. Starts querying the database and retrieving the drive information.
+3. Sends that information to the subscript for ShadowProtect verification.
 4. Loops until this is completed for all machines the script is run on.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,27 +8,15 @@ tags: ['performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role determines if the agent has Windows Fast boot enabled.
+This role determines if the agent has Windows Fast Boot enabled.
 
-Fast boot is a Win10 feature that puts the system into a deep sleep rather than a true shutdown. Disabling Fast boot causes the system uptime to reset when the system is shutdown.
+Fast Boot is a Windows 10 feature that puts the system into a deep sleep rather than a true shutdown. Disabling Fast Boot causes the system uptime to reset when the system is shut down.
 
 ## Settings
 
 | Detection String                                        | Comparator | Result | Applicable OS |
 |--------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/Session Manager/Power:HiberbootEnabled-%} | Equals     | 1      | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-

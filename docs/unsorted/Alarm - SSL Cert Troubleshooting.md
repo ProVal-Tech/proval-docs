@@ -8,19 +8,7 @@ tags: ['installation', 'setup']
 draft: true
 unlisted: false
 ---
+
 ## Step 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This section will provide a detailed overview of Step 1, including the necessary actions and considerations for successful execution. Please follow the instructions carefully to ensure a smooth process.

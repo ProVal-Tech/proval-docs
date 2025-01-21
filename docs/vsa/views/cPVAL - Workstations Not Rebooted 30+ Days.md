@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-This View will show the data of workstations, that have not rebooted in the last 30+ days.
+This view shows the data of workstations that have not rebooted in the last 30+ days.
 
 # Dependencies
 
@@ -18,25 +19,14 @@ None
 
 # View Filters
 
-List all filters applied to this view
+Below are the filters applied to this view:
 
 | Filter Name         | Advanced Filter? | Filter Value                                        |
 |---------------------|------------------|-----------------------------------------------------|
-| OS Type             | N                | All Workstations                                    |
-| Operating System     | N                | NOT *MAC* AND NOT *LINUX*                          |
-| Machine Status      | N                | Show machines that have not rebooted in last 30 day |
+| OS Type             | No               | All Workstations                                    |
+| Operating System     | No               | NOT *MAC* AND NOT *LINUX*                          |
+| Machine Status      | No               | Show machines that have not rebooted in the last 30 days |
 
 ### Export Attachment
 
-Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
+Please attach the content XML VSA Export to this document.

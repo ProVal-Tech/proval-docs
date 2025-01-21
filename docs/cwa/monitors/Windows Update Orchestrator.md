@@ -8,10 +8,11 @@ tags: ['database', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Steps to Apply Remote Monitor
 
 ### 1.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
 ---
 
@@ -52,7 +53,7 @@ WHERE
 ---
 
 ### 3.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Group ID(s) of the relevant groups:
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -72,7 +73,7 @@ SELECT '' as `AgentID`,
 '600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = //'None//'; if (( Get-Service -Name //'UsoSvc//' ).StartType -ne //'Automatic//' ) { Set-Service -Name //'UsoSvc//' -StartupType //'Automatic//'}; $RebootPath = ////"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot////"; $BakPath = ////"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak////"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return //'Failed to rename the reboot file//'}}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = //'None//'; if (( Get-Service -Name //'UsoSvc//' ).StartType -ne //'Automatic//' ) { Set-Service -Name //'UsoSvc//' -StartupType //'Automatic//'}; $RebootPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot////\"; $BakPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak////\"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return //'Failed to rename the reboot file//'}}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed to rename the reboot file' as `DataIn`,
 '' as `IDField`,
@@ -87,16 +88,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -141,13 +132,13 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Update Orchestrator - Reboot Prevention [Change]')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Update Orchestrator - Reboot Prevention [Change]')
 ```
 
 ---
 
 ### 4.
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```
 SET @searchid = IFNULL(( SELECT MIN(SensID) From sensorchecks where `GUID` = '04a11d92-3269-4ab1-a634-43d405e37b8b' ), 0);
@@ -166,7 +157,7 @@ SELECT '' as `AgentID`,
 '600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = //'None//'; if (( Get-Service -Name //'UsoSvc//' ).StartType -ne //'Automatic//' ) { Set-Service -Name //'UsoSvc//' -StartupType //'Automatic//'}; $RebootPath = ////"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot////"; $BakPath = ////"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak////"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return //'Failed to rename the reboot file//'}}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = //'None//'; if (( Get-Service -Name //'UsoSvc//' ).StartType -ne //'Automatic//' ) { Set-Service -Name //'UsoSvc//' -StartupType //'Automatic//'}; $RebootPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot////\"; $BakPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak////\"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return //'Failed to rename the reboot file//'}}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed to rename the reboot file' as `DataIn`,
 '' as `IDField`,
@@ -214,33 +205,13 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (2,3,855,856)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Update Orchestrator - Reboot Prevention [Change]')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Update Orchestrator - Reboot Prevention [Change]')
 ```
 
 ---
@@ -258,14 +229,3 @@ The monitor will come up with the search `Update Orchestrator - UsoSvc` added to
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-

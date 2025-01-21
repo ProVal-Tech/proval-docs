@@ -8,6 +8,7 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Enable or disable the Edge Sidebar on a target machine.
@@ -40,8 +41,8 @@ If no action is passed, then `Disable` will be selected by default.
 | ExpectedReturn           | Hive: HKEY_LOCAL_MACHINE/Software/Policies/Microsoft | True     | Designates the expected return of the ps1 file.                                                    |
 | TicketCreateSubject      | Edge-Sidebar - Command Result for %ComputerName% | True     | Designates the desired subject line for a ticket created by this script.                            |
 | TicketCreationCategory    | 1                                            | True     | Designates the desired ticket creation category for a ticket created by this script.                |
-| TicketFinishUserID      | 1                                            | True     | Designates the desired userId for finishing or commenting a ticket created by this script.          |
-| DoNotCommentOpenTicket   | 0 or 1                                      | True     | Toggles commenting open tickets on recurrent failures.                                              |
+| TicketFinishUserID      | 1                                            | True     | Designates the desired userId for finishing or commenting on a ticket created by this script.      |
+| DoNotCommentOpenTicket   | 0 or 1                                      | True     | Toggles commenting on open tickets for recurrent failures.                                          |
 
 ### User Parameters
 
@@ -74,11 +75,9 @@ OK
 The Command has completed successfully,
 A reboot / logoff / logon is required for the setting to completely apply to the computer.
 -------------------------------------------------------------------------
-
 A ticket already exists for DEV-WIN11-2
 TicketId is: 77459
 -------------------------------------------------------------------------
-
 Resolution is : True
 TicketId: 77459
 Finishing ticket 77459
@@ -88,15 +87,3 @@ Finishing ticket 77459
 ## Ticket Example
 
 ![Ticket Example](../../../static/img/Edge-Sidebar---EnableDisable/image_4.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,14 +8,15 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
 The `Update-Windows10` script manages Windows 10 feature updates, preventing automatic reboots during the upgrade process. It provides a high-level assessment of the system prior to upgrading, verbose logging during the upgrade, and reporting features for success and failure.
 
 ## Requirements
-- Reboot parameter must be set.
+- The reboot parameter must be set.
 
 ## Usage
-1. **Determine if status update is desired:**
+1. **Determine if a status update is desired:**
     - `(status Update)`
         1. Returns the values found in the registry regarding the script's reporting feature.
         2. Creates an event log for the completion of the script.
@@ -60,25 +61,14 @@ This parameter provides options for restarting the system:
 ### StatusUpdate
 This parameter toggles the Status Update feature of the script. It operates on a timed trigger and should not be executed manually.
 
-
-
-| Parameter     | Alias | Required | Default | Type         | Description                                                                 |
-| ------------- | ----- | -------- | ------- | ------------ | --------------------------------------------------------------------------- |
-| `Diagnostics` | N/A   | No       | False   | Switch       | Sets a scheduled task to log errors and configuration issues.               |
-| `Reboot`      | N/A   | No       |         | ValidateSet  | Options: `Auto` (reboots 30 minutes after completion), `None` (no reboot).  |
-| `StatusUpdate`| N/A   | No       | False   | Switch       | Enables status updates for reporting purposes only.                         |
+| Parameter      | Alias | Required | Default | Type         | Description                                                                  |
+| ---------------| ----- | -------- | ------- | ------------ | ---------------------------------------------------------------------------- |
+| `Diagnostics`  | N/A   | No       | False   | Switch       | Sets a scheduled task to log errors and configuration issues.                |
+| `Reboot`       | N/A   | No       |         | ValidateSet  | Options: `Auto` (reboots 30 minutes after completion), `None` (no reboot).  |
+| `StatusUpdate` | N/A   | No       | False   | Switch       | Enables status updates for reporting purposes only.                          |
 
 ## Output
 The script generates log, result, and error files at the following locations:
 
-- `.\Update-Windows10-log.txt`
-- `.\Update-Windows10-Error.txt`
-
-
-
-
-
-
-
-
-
+- `.\\Update-Windows10-log.txt`
+- `.\\Update-Windows10-Error.txt`

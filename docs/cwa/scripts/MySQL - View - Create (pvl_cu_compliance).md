@@ -8,6 +8,7 @@ tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script aims to generate views named `pvl_cu_compliance` and `pvl_cu_compliance_clients`, and subsequently grant access permissions to all currently active Automate users.
@@ -26,15 +27,3 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
-
-
-
-
-
-
-
-
-
-
-
-

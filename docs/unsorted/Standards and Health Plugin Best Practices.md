@@ -8,29 +8,16 @@ tags: ['connectwise', 'software']
 draft: true
 unlisted: false
 ---
-\<div class='text-section scrollable'>
+
+<div class='text-section scrollable'>
 
 ![Image](../../static/img/Standards-and-Health-Plugin-Best-Practices/image_1.png)
 
-
-
 ## Searches
 
-\<div class='text-section scrollable'>
+<div class='text-section scrollable'>
 
-Searches need to be all custom ones, and have a unique name.
+All searches need to be custom and have a unique name to ensure clarity and organization.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
+</div>

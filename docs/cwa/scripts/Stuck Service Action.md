@@ -8,11 +8,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will detect any service stuck in a state other than Running or Stopped and try to stop that process forcefully.
+This script detects any service that is stuck in a state other than Running or Stopped and attempts to forcefully stop that process.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -26,42 +27,29 @@ Time Saved by Automation: 10 Minutes
 
 | Variable | Description                                                   |
 |----------|---------------------------------------------------------------|
-| Output   | It contains PowerShell output of stuck commands and its action |
+| Output   | Contains PowerShell output of stuck commands and their actions |
 
 ### Global Parameters
 
 | Name    | Example | Required | Description                                           |
 |---------|---------|----------|-------------------------------------------------------|
-| Action  | 0       | True     | 0 - No start of service1 - Attempt to start the stuck service |
+| Action  | 0       | True     | 0 - No start of service; 1 - Attempt to start the stuck service |
 
 ### Script States
 
 | Name            | Example   | Description          |
 |----------------|-----------|----------------------|
-| StoppingService | Ticket_ID | It contains ticket record |
+| StoppingService | Ticket_ID | Contains ticket record |
 
 ## Process
 
-- This script checks for a service in a status other than Running or Stopped.
-- If found, then it will attempt to stop the service forcefully.
-- The script depends on the Global parameter "Action". If it is set to 0, then the stuck service will only be stopped. If set to 1, it will attempt to start the stuck service.
-- If the action failed to stop or start the service depending upon the option, then it will create the ticket.
+- This script checks for services in a status other than Running or Stopped.
+- If a stuck service is found, the script will attempt to stop it forcefully.
+- The script depends on the global parameter "Action." If set to 0, the stuck service will only be stopped. If set to 1, it will attempt to start the stuck service.
+- If the action fails to stop or start the service, depending on the option selected, a ticket will be created.
 
 ## Output
 
 - Script log
 - Script state
 - Ticket
-
-
-
-
-
-
-
-
-
-
-
-
-

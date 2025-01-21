@@ -8,10 +8,11 @@ tags: ['database', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will fetch the uninstallation string from the database for the defined app in the parameter `@AppName@` and then attempt to uninstall the application.  
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -25,19 +26,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-When the script runs it will ask for a parameter `AppName` and that needs to be filled by the user. This script will then look if the software is installed on the machine and if yes, it will fetch the uninstallation string from the database for the defined app in the parameter `@AppName@` and then attempt to uninstall the application. This script also verifies if the software was uninstalled or not and displays the result in the scripts logs section.
+When the script runs, it will ask for a parameter `AppName`, which needs to be filled by the user. This script will then check if the software is installed on the machine. If it is, the script will fetch the uninstallation string from the database for the defined app in the parameter `@AppName@` and attempt to uninstall the application. The script also verifies whether the software was uninstalled successfully and displays the result in the script's logs section.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

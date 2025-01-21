@@ -8,11 +8,12 @@ tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Sets the computer to not sleep when plugged in.
+This script sets the computer to not sleep when plugged in.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -24,40 +25,29 @@ Time Saved by Automation: 5 Minutes
 
 ## Variables
 
-| **Variable Name**    | **Description**                                                                                       |
-|-----------------------|-------------------------------------------------------------------------------------------------------|
-| ProjectName           | This represents the name of the executable and in this case, it will be NeverSleepAC.               |
-| BaseURL               | This represents the base URL and it will be [https://file.provaltech.com/repo](https://file.provaltech.com/repo) in this case. |
-| WorkingDirectory       | C:/ProgramData/provaltech/app/@ProjectName@                                                           |
-| EXEURL                | @BaseURL@/app/@ProjectName@.exe                                                                      |
-| EXEPath               | @WorkingDirectory@/@ProjectName@.exe                                                                  |
-| EXETempPath           | @WorkingDirectory@/@ProjectName@-temp.exe                                                             |
-| EXELog                | @WorkingDirectory@/@ProjectName@-log.txt                                                              |
-| EXEErrorLog           | @WorkingDirectory@/@ProjectName@-errors.txt                                                           |
-| LogContent            | @EXELog@                                                                                              |
+| **Variable Name** | **Description**                                                                                       |
+|--------------------|-------------------------------------------------------------------------------------------------------|
+| ProjectName        | This represents the name of the executable, which in this case will be NeverSleepAC.               |
+| BaseURL            | This represents the base URL, which will be [https://file.provaltech.com/repo](https://file.provaltech.com/repo) in this case. |
+| WorkingDirectory    | C:/ProgramData/provaltech/app/@ProjectName@                                                          |
+| EXEURL             | @BaseURL@/app/@ProjectName@.exe                                                                       |
+| EXEPath            | @WorkingDirectory@/@ProjectName@.exe                                                                   |
+| EXETempPath        | @WorkingDirectory@/@ProjectName@-temp.exe                                                              |
+| EXELog             | @WorkingDirectory@/@ProjectName@-log.txt                                                               |
+| EXEErrorLog        | @WorkingDirectory@/@ProjectName@-errors.txt                                                            |
+| LogContent         | @EXELog@                                                                                               |
 
 ## Process
 
-This script will download the NeverSleepAC.exe from [NeverSleepAC.exe](https://file.provaltech.com/repo/app/NeverSleepAC.exe). The script is a .NET wrapper that grabs the 3 GUIDs required for powercfg: active scheme, subgroup, and setting. It gets the currently loaded power plan, which means it can adjust user settings from the system account. It adjusts the values for only the AC settings (plugged in) of that current plan:
+This script will download the NeverSleepAC.exe from [NeverSleepAC.exe](https://file.provaltech.com/repo/app/NeverSleepAC.exe). The script is a .NET wrapper that retrieves the three GUIDs required for powercfg: active scheme, subgroup, and setting. It gets the currently loaded power plan, which allows it to adjust user settings from the system account. The script modifies the values for only the AC settings (plugged in) of that current plan:
+
 - Sleep after = Never
 - Allow hybrid sleep = Off
 - Hibernate after = Never
-- Lid Close Action = Nothing (which is only present on mobile HW).
+- Lid Close Action = Nothing (which is only present on mobile hardware).
 
-The script will download the EXE file and will execute it.
+The script will download the EXE file and execute it.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Computer Level SentinelOne Management Server. Updated by [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
+Computer Level SentinelOne Management Server. Updated by the [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
 
 ## Dependencies
 
@@ -22,19 +23,7 @@ Computer Level SentinelOne Management Server. Updated by [SentinelOne Management
 |----------------------------------|----------|-----------|---------------|---------------------------------------------|----------|
 | Computer Level S1 Mgmt Server    | ENDPOINT | Text Box  | No            | Computer Level SentinelOne Management Server. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---Computer-Level-S1-Mgmt-Server/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Computer-Level-S1-Mgmt-Server/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

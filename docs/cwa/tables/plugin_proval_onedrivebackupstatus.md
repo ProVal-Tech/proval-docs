@@ -8,9 +8,10 @@ tags: ['backup', 'onedrive']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores information about redirection of Desktop, Documents, and Pictures to OneDrive per user.
+This document stores information about the redirection of Desktop, Documents, and Pictures to OneDrive for individual users.
 
 ## Dependencies
 
@@ -22,23 +23,12 @@ Stores information about redirection of Desktop, Documents, and Pictures to OneD
 
 | Column           | Type     | Explanation                                         |
 |------------------|----------|-----------------------------------------------------|
-| ComputerID       | INT      | The Computer where the audit was performed.        |
+| ComputerID       | INT      | The computer where the audit was performed.        |
 | Username         | VARCHAR  | The audited account's username.                     |
-| DesktopEnabled    | TINYINT  | 1 or 0 if Desktop redirection is enabled or disabled. |
+| DesktopEnabled    | TINYINT  | 1 or 0 indicating if Desktop redirection is enabled or disabled. |
 | DesktopPath      | VARCHAR  | The path to the Desktop redirection.               |
-| DocumentsEnabled   | TINYINT  | 1 or 0 if Documents redirection is enabled or disabled. |
+| DocumentsEnabled   | TINYINT  | 1 or 0 indicating if Documents redirection is enabled or disabled. |
 | DocumentsPath    | VARCHAR  | The path to the Documents redirection.             |
-| PicturesEnabled    | TINYINT  | 1 or 0 if Pictures redirection is enabled or disabled. |
+| PicturesEnabled    | TINYINT  | 1 or 0 indicating if Pictures redirection is enabled or disabled. |
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
-
-
-
-
-
-
-
-
-
-
-

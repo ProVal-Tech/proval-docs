@@ -8,6 +8,7 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This remote monitor is configured to detect when the domain admin account is locked. It checks every 15 minutes and creates a ticket for the partner to review, providing complete details.
@@ -27,7 +28,7 @@ This remote monitor is configured to detect when the domain admin account is loc
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)  
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)  
 `△ Custom - Ticket Creation Computer - Failures Only`
 
 ## Target
@@ -46,24 +47,12 @@ Domain Admin Locked Account Detected on %computername%
 **Body:**  
 Domain Admin Locked Account Detected on %computername%. Refer to the below detail:  
 %RESULT%.  
+
 **Reference Ticket:**  
 ![Reference Ticket](../../../static/img/Domain-Admin-Account-Lockout/image_4.png)
 
 ## Implementation
 
-Please follow the below implementation document to install this content:
+Please follow the implementation document below to install this content:
 
 - [Implement - Remote Monitor - Domain Admin Account Lockout](<./Implement - Remote Monitor - Domain Admin Account Lockout.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

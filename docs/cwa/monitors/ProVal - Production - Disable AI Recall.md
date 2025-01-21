@@ -8,11 +8,12 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor disables the AI recall feature on Windows 11 machines.
 
-For more details on this feature visit the below link:  
+For more details on this feature, visit the following link:  
 [https://learn.microsoft.com/en-us/windows/client-management/manage-recall](https://learn.microsoft.com/en-us/windows/client-management/manage-recall)
 
 ## Details
@@ -38,15 +39,3 @@ Windows 11 machines only.
 ## How To Import
 
 [Import - Remote Monitor - Disable AI Recall](<./Disable AI Recall.md>)
-
-
-
-
-
-
-
-
-
-
-
-

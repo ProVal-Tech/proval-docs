@@ -8,11 +8,12 @@ tags: ['reboot', 'security', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script will set the registry based on the below article:  
-[https://windowsreport.com/disable-windows-defender-credential-guard-windows-11/](https://windowsreport.com/disable-windows-defender-credential-guard-windows-11/).  
-Once the registry is set, it will set the machine to reboot using the prompter solution.
+This script will set the registry based on the following article:  
+[Disable Windows Defender Credential Guard on Windows 11](https://windowsreport.com/disable-windows-defender-credential-guard-windows-11/).  
+Once the registry is set, it will prompt the machine to reboot.
 
 ## Sample Run
 
@@ -26,22 +27,8 @@ Once the registry is set, it will set the machine to reboot using the prompter s
 
 | Name  | Description                                    |
 |-------|------------------------------------------------|
-| psout | It contains the status of the registry set or not |
+| psout | Contains the status of whether the registry was set or not |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-
-

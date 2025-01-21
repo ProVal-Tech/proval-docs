@@ -8,35 +8,24 @@ tags: ['backup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Returns the Drive StorageCraft is configured to  
+Returns the drive information that StorageCraft is configured to retrieve.
 
 ## Dependencies
 
-Endpoint with StorageCraft installed  
+- Endpoint with StorageCraft installed.
 
 ## Variables
 
-None  
+None.
 
-Process  
+## Process
 
-Run procedure  
+Run the procedure.
 
 ## Output
 
-Agent Procedure Log  
-c:/kworking/System/Get-SCDrive-data.txt  
-
-
-
-
-
-
-
-
-
-
-
-
+- Agent Procedure Log:  
+  `c:/kworking/System/Get-SCDrive-data.txt`

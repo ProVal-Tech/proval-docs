@@ -8,11 +8,12 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will gather the KBIDs from [New Patch Deny Process](<../../unsorted/New Patch Deny Process.md>) and deny the patches listed.
+The script will gather the KBIDs from the [New Patch Deny Process](<../../unsorted/New Patch Deny Process.md>) and deny the patches listed.
 
-Time saved by automation: 20 Minutes
+**Time saved by automation:** 20 minutes
 
 ## Sample Run
 
@@ -20,37 +21,24 @@ Time saved by automation: 20 Minutes
 
 ## Dependencies
 
-[https://proval.itglue.com/5078775/docs/8524500](https://proval.itglue.com/5078775/docs/8524500)
+[Proval IT Glue Documentation](https://proval.itglue.com/5078775/docs/8524500)
 
 ## Variables
 
-- `@KBID@`: To store the output of the PowerShell query fetching the KBIDs from [https://proval.itglue.com/5078775/docs/8524500](https://proval.itglue.com/5078775/docs/8524500).
-- `@ApprovalPolicyID@`: To store the ID of the default approval policy.
+- `@KBID@`: Stores the output of the PowerShell query fetching the KBIDs from [Proval IT Glue Documentation](https://proval.itglue.com/5078775/docs/8524500).
+- `@ApprovalPolicyID@`: Stores the ID of the default approval policy.
 
 ## Process
 
-Step 1: Add the KBID of the patches to be denied after the "Patches_To_DENY:" string under the URL [https://proval.itglue.com/5078775/docs/8524500](https://proval.itglue.com/5078775/docs/8524500). KBIDs should be comma separated and there shouldn't be a space in between or after the ids. As mentioned in the attached screenshots:  
+**Step 1:** Add the KBIDs of the patches to be denied after the `Patches_To_DENY:` string under the URL [Proval IT Glue Documentation](https://proval.itglue.com/5078775/docs/8524500). KBIDs should be comma-separated, with no spaces in between or after the IDs. As shown in the attached screenshots:  
 ![Step 1 Screenshot](../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs/image_2.png)
 
-Step 2: A PowerShell query will fetch those KBIDs to the script and will store those KBIDs under the `@KBID@` variable.
+**Step 2:** A PowerShell query will fetch those KBIDs to the script and store them under the `@KBID@` variable.
 
-Step 3: The default approval policy ID will be saved under the `@ApprovalPolicyID@` variable.
+**Step 3:** The default approval policy ID will be saved under the `@ApprovalPolicyID@` variable.
 
-Step 4: The script will fetch the hotfix ID for each KBID and will deny those hotfix IDs for `@ApprovalPolicyID@` regardless of the current state.
+**Step 4:** The script will fetch the hotfix ID for each KBID and deny those hotfix IDs for `@ApprovalPolicyID@`, regardless of the current state.
 
 ## Output
 
-Output can be checked from the Approval section of the patch manager.
-
-
-
-
-
-
-
-
-
-
-
-
-
+The output can be checked from the Approval section of the patch manager.

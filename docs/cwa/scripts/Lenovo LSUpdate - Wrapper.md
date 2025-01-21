@@ -8,13 +8,14 @@ tags: ['bios', 'firmware', 'lenovo', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script uses the PowerShell module `LSUClient` to install available BIOS updates for Lenovo machines. The `InstallAll` parameter can be used to install all available vendor updates, including BIOS, Firmware, and Drivers.
+This script uses the PowerShell module `LSUClient` to install available BIOS updates for Lenovo machines. The `InstallAll` parameter can be used to install all available vendor updates, including BIOS, firmware, and drivers.
 
 ## Warning
 
-It is generally not recommended to automate `driver` and `firmware` updates on machines since they can cause unexpected results. In some rare cases, they may cause machines to not function afterwards.
+It is generally not recommended to automate `driver` and `firmware` updates on machines since they can cause unexpected results. In some rare cases, they may cause machines to stop functioning afterward.
 
 Also, please note that the computer can be restarted even without setting the `Reboot` parameter while installing all available updates. Therefore, the `InstallAll` parameter should be used with caution.
 
@@ -22,7 +23,7 @@ Also, please note that the computer can be restarted even without setting the `R
 
 ## Sample Run
 
-- Install available BIOS Updates without restarting the computer:  
+- Install available BIOS updates without restarting the computer:  
   ![Install available BIOS Updates without restarting](../../../static/img/Lenovo-LSUpdate---Wrapper/image_1.png)
 
 - Install available BIOS updates and restart the computer immediately:  
@@ -46,7 +47,7 @@ PowerShell Version 5+
 
 | Name        | Description                                                  |
 |-------------|--------------------------------------------------------------|
-| LogMessage  | The Log message to be sent to the script log for the target. |
+| LogMessage  | The log message to be sent to the script log for the target. |
 
 ---
 
@@ -55,22 +56,10 @@ PowerShell Version 5+
 | Name       | Example | Required | Description                                                                                       |
 |------------|---------|----------|---------------------------------------------------------------------------------------------------|
 | Reboot     | 1       | False    | Script will restart the computer if this parameter is set to 1 and a restart is required for the update. |
-| InstallAll | 1       | False    | Set this parameter to 1 to install all available vendor updates including driver, firmware, and bios updates. **USE THIS OPTION WITH CAUTION** |
+| InstallAll | 1       | False    | Set this parameter to 1 to install all available vendor updates including driver, firmware, and BIOS updates. **USE THIS OPTION WITH CAUTION** |
 
 ---
 
 ## Output
 
 - Script logs
-
-
-
-
-
-
-
-
-
-
-
-

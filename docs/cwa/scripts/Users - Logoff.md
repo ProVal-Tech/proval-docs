@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will log off a user, users, or all users.
+This script will log off a user, multiple users, or all users.
 
 ## Sample Run
 
@@ -20,27 +21,15 @@ Setting the User parameter to this will log off the user named 'calve' and the u
 
 ![Sample Run 2](../../../static/img/Users---Logoff/image_2.png)
 
-Setting the user parameter to All will log off all users.
+Setting the User parameter to "All" will log off all users.
 
 #### User Parameters
 
 | Name   | Example                       | Required | Description                                          |
 |--------|-------------------------------|----------|------------------------------------------------------|
-| User   | 'someone', 'someoneelse'  All | True     | The target user, users, or all users to log off the machine. |
+| User   | 'someone', 'someoneelse', 'All' | True     | The target user, multiple users, or all users to log off the machine. |
 
 ## Process
 
-Determine the scope  
-Log off the desired user or users.
-
-
-
-
-
-
-
-
-
-
-
-
+1. Determine the scope.
+2. Log off the desired user or users.

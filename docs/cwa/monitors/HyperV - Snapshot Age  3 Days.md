@@ -8,9 +8,10 @@ tags: ['alerting', 'hyper-v', 'ticketing', 'virtualization']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Remote monitor will provide alerting on HyperV host snapshots that have turned 3 days old in the past hour, and continue to alert until a day threshold is surpassed.
+This remote monitor will provide alerts on Hyper-V host snapshots that have turned 3 days old in the past hour and will continue to alert until a day threshold is surpassed.
 
 ## Details
 
@@ -31,7 +32,7 @@ Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows
 
 ## Ticketing
 
-**Subject:**  `HyperV - Aging Snapshot Detected on %Computername%`  
+**Subject:**  `Hyper-V - Aging Snapshot Detected on %Computername%`  
 
 **Body:**  
 ```
@@ -52,16 +53,3 @@ CreationTime: 7/16/2024 2:02 PM
 ## Implementation
 
 [Implementation Guide](https://proval.itglue.com/5078775/docs/15601843)
-
-
-
-
-
-
-
-
-
-
-
-
-

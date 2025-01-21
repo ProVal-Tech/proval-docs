@@ -8,6 +8,7 @@ tags: ['performance', 'security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
 This script is designed to uninstall the SentinelOne agent from a Windows system. If Anti-Tamper is enabled, a passphrase must be provided.
 
@@ -17,25 +18,25 @@ This script is designed to uninstall the SentinelOne agent from a Windows system
 
 # Process
 1. The script starts by setting up the necessary parameters, including the optional passphrase.
-2. Detects the currently installed version of the SentinelOne agent on the system.
-3. Proceeds to attempt the uninstallation of the SentinelOne agent.
+2. It detects the currently installed version of the SentinelOne agent on the system.
+3. The script proceeds to attempt the uninstallation of the SentinelOne agent.
 4. If Anti-Tamper is enabled and a passphrase is required, it uses the provided passphrase.
 5. The script completes the uninstallation process, ensuring all necessary steps are taken to remove the agent securely.
 
 # VSA Implementation
-In the VSA there are two procedures for this script.  
+In the VSA, there are two procedures for this script.
 
-**Sentinel One - Uninstall** - This procedure requires the endpoint(s) to have anti-tamper disabled, but can be used on multiple endpoints or on a scheduled basis if necessary. No configuration is required.  
+**SentinelOne - Uninstall** - This procedure requires the endpoint(s) to have Anti-Tamper disabled but can be used on multiple endpoints or on a scheduled basis if necessary. No configuration is required.
 
-**Sentinel One - Uninstall (Anti-Tamper)** - This procedure can only be run on one endpoint, and requires the passphrase of the endpoint.  
+**SentinelOne - Uninstall (Anti-Tamper)** - This procedure can only be run on one endpoint and requires the passphrase of the endpoint.
 
-The agent procedure is set to prompt for the passphrase when the procedure is scheduled.  
+The agent procedure is set to prompt for the passphrase when the procedure is scheduled.
 
-![Passphrase Prompt](../../../static/img/Uninstall-SentinelOne/image_25.png)  
+![Passphrase Prompt](../../../static/img/Uninstall-SentinelOne/image_25.png)
 
-The client can find the passphrase for the endpoint in the SentinelOne portal.  
+The client can find the passphrase for the endpoint in the SentinelOne portal.
 
-![Passphrase Location](../../../static/img/Uninstall-SentinelOne/image_26.png)  
+![Passphrase Location](../../../static/img/Uninstall-SentinelOne/image_26.png)
 
 # Payload Usage
 Run the script without a passphrase:
@@ -60,14 +61,3 @@ Location of output for log, result, and error files.
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

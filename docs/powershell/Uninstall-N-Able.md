@@ -10,35 +10,23 @@ unlisted: false
 ---
 
 ## Description
-Perform un-installation of N-Able (Windows Agent)
+Perform the uninstallation of N-Able (Windows Agent).
 
 ## Requirements
-PowerShell 5.1
+- PowerShell 5.1
 
 ## Usage
-This checks if the Windows Agent exist.
-If yes, then it performs the complete removal of the Windows Agent (N-Able).
+This script checks if the Windows Agent exists. If it does, it performs a complete removal of the Windows Agent (N-Able).
 
-
-Uninstall N-Able
-
-Explanation of the usage of the below example.
+### Uninstall N-Able
+Explanation of the usage of the example below.
 
 ```powershell
 .\Uninstall-N-Able.ps1
 ```
 
 ## Output
-Location of output for log, result, and error files.
+Location of output for log, result, and error files:
 
-    .\Uninstall-N-Able-log.txt
-    .\Uninstall-N-Able-error.txt
-
-
-
-
-
-
-
-
-
+- .\Uninstall-N-Able-log.txt
+- .\Uninstall-N-Able-error.txt

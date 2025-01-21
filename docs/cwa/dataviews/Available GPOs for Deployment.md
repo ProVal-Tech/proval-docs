@@ -8,29 +8,17 @@ tags: ['deployment', 'gpo']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview gives the complete list of available GPOs for deployment via the script [GPO Import Process](<../scripts/GPO Import Process.md>).
+This dataview provides a complete list of available GPOs for deployment via the script [GPO Import Process](<../scripts/GPO Import Process.md>).
 
 ## Dependencies
 
-[GPO Import Process](<../scripts/GPO Import Process.md>)
+- [GPO Import Process](<../scripts/GPO Import Process.md>)
 
 ## Columns
 
 | Column | Description |
 |--------|-------------|
 | GPOs   | List of GPOs available for deployment via [GPO Import Process](<../scripts/GPO Import Process.md>). |
-
-
-
-
-
-
-
-
-
-
-
-
-

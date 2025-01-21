@@ -8,6 +8,7 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is a wrapper script that executes the [Script - Cisco Secure Client - Package Installation [Windows]](<./Cisco Secure Client - Package Installation Windows.md>) for Windows machines and the [Script - Cisco Secure Client - Package Installation [Macintosh]](<./Cisco Secure Client - Package Installation Macintosh.md>) for Mac machines. It was designed to be used as an autofix with [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../monitors/Missing Cisco Secure Client Modules.md>).
@@ -15,15 +16,3 @@ This is a wrapper script that executes the [Script - Cisco Secure Client - Packa
 ## Sample Run
 
 ![Sample Run](../../../static/img/Cisco-Secure-Client---Package-Installation-Wrapper/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

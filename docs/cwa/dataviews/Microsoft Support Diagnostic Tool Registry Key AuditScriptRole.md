@@ -8,9 +8,10 @@ tags: ['registry', 'security', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview tracks the progress of the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script and [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<../monitors/Microsoft Support Diagnostic Tool Vulnerability G.md>) monitor set.
+This dataview tracks the progress of the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script and the [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<../monitors/Microsoft Support Diagnostic Tool Vulnerability G.md>) monitor set.
 
 ## Dependencies
 
@@ -21,26 +22,13 @@ This dataview tracks the progress of the [Workaround - Microsoft Support Diagnos
 
 ## Columns
 
-| Column                        | Description                                                                                              |
-|-------------------------------|----------------------------------------------------------------------------------------------------------|
-| computerid                   | computerid                                                                                               |
-| Client Name                  | Client Name                                                                                              |
-| Location Name                | Location Name                                                                                            |
-| Computer Name                | Computer Name                                                                                            |
-| Operating System             | Operating System                                                                                         |
-| lastcontact                  | lastcontact                                                                                              |
-| MS-MSDT Registry Status      | Value of the script state, MS-MSDT Registry Status                                                     |
-| MS-MSDT Registry Key Role    | Whether the role is active, inactive, or if it's never detected.  Active: The registry key is currently present on the computer.  Inactive: The registry key was once present on the computer, but the script had removed that.  Not Detected: Either the registry key was not present on the computer from the very beginning or somehow the computer is not accepting the role. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                        | Description                                                                                                                                                                                                                                          |
+|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| computerid                   | Computer ID                                                                                                                                                                                                                                         |
+| Client Name                  | Client Name                                                                                                                                                                                                                                          |
+| Location Name                | Location Name                                                                                                                                                                                                                                        |
+| Computer Name                | Computer Name                                                                                                                                                                                                                                        |
+| Operating System             | Operating System                                                                                                                                                                                                                                     |
+| lastcontact                  | Last contact time                                                                                                                                                                                                                                    |
+| MS-MSDT Registry Status      | Value of the script state, indicating the MS-MSDT Registry Status.                                                                                                                                                                                |
+| MS-MSDT Registry Key Role    | Indicates whether the role is active, inactive, or if it's never detected. Active: The registry key is currently present on the computer. Inactive: The registry key was once present on the computer, but the script has removed it. Not Detected: Either the registry key was never present on the computer or the computer is not accepting the role. |

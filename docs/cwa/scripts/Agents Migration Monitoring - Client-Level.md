@@ -8,6 +8,7 @@ tags: ['setup', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script's objective is to identify the computers that have been transferred from one client to another in Automate. The schedule of the script determines the delay in the alert.
@@ -26,13 +27,13 @@ It is a client script that has to be set up to run on a regular basis, either da
 
 | Name               | Description                                                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------------------------|
-| Table_Name         | [pvl_computer_client_auditing](<../tables/pvl_computer_client_auditing.md>)                            |
+| Table_Name         | [pvl_computer_client_auditing](<../tables/pvl_computer_client_auditing.md>)                             |
 | Count              | Number of detected computers                                                                                 |
-| sqlNew_Clientid    | New clientid of detected computer                                                                            |
-| sqlcmpid           | computerid of detected computer                                                                               |
+| sqlNew_Clientid    | New client ID of the detected computer                                                                       |
+| sqlcmpid           | Computer ID of the detected computer                                                                          |
 | sqlComputer_Name    | Name of the detected computer                                                                                 |
 | sqlOld_Client_Name | Name of the previous client of the detected computer                                                         |
-| sqlNew_Client_Name | Name of the Current Client of the detected computer                                                          |
+| sqlNew_Client_Name | Name of the current client of the detected computer                                                          |
 | sqlLast_Checked    | Last time when the computer was found under the previous client                                              |
 
 ## Output
@@ -48,15 +49,3 @@ It is a client script that has to be set up to run on a regular basis, either da
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Agents-Migration-Monitoring---Client-Level/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

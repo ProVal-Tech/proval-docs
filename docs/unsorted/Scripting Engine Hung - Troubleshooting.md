@@ -8,41 +8,47 @@ tags: ['database', 'report']
 draft: true
 unlisted: false
 ---
-## Run a query
+
+## Run a Query
 
 ## Example Ticket
 
 ![Example Ticket](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_1.png)
 
-When you see a ticket like the above for any partner please follow the below troubleshooting steps.
+When you see a ticket like the above for any partner, please follow the troubleshooting steps below.
 
-### 1.
-Navigate to the System >> VNC / Ticket Priority >> MAX Running Scripts
+### 1. Check MAX Running Scripts
 
-Look for the "MAX Running Scripts" and ensure its value is at least 1/3 of the value of its agent count.  
+Navigate to **System >> VNC / Ticket Priority >> MAX Running Scripts**.
+
+Look for "MAX Running Scripts" and ensure its value is at least 1/3 of the value of the agent count.  
 This applies only to the environment where you have seen frequent Scripting Engine Hung issues.  
-This is not a stated statement; rather, it is being assumed to prevent situations in the partner environment if they continuously encounter Scripting engine crash issues.
+This is not a stated statement; rather, it is an assumption to prevent situations in the partner environment if they continuously encounter scripting engine crash issues.
 
 ![MAX Running Scripts](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_2.png)
 
-Navigate to the System >> Configuration >> Dashboard >> Config >> Configuration >> Properties
+Navigate to **System >> Configuration >> Dashboard >> Config >> Configuration >> Properties**.
 
 Look for the property "LT_MAXRunningScripts" and ensure its value is reflected.
 
-### 2.
-Navigate to the Automation >> Monitor >> Internal Monitor
+### 2. Monitor Internal Scripts
 
-### 3.
-Right-click and select the "New Monitor"
+Navigate to **Automation >> Monitor >> Internal Monitor**.
+
+### 3. Create a New Monitor
+
+Right-click and select **New Monitor**.
 
 ![New Monitor](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_3.png)
 
-### 4.
-Start Fresh >> Next
+### 4. Start Fresh
+
+Select **Start Fresh >> Next**.
 
 ![Start Fresh](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_4.png)
 
-### 5.
+### 5. Run the Query
+
 Run the query as mentioned below:
 
 ![Run Query](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_5.png)
@@ -63,12 +69,12 @@ ORDER BY COUNT(r.scriptid) DESC;
 ```
 
 Export the list to share with the consultant.  
-Check for the top scripts whose running count is too much figure out why it has been running like that and fix it if found irrelevant.  
-Bring the concern to the consultant with the note point and screenshots.
+Check for the top scripts whose running count is excessive, figure out why they have been running like that, and fix them if found irrelevant.  
+Bring the concern to the consultant with notes and screenshots.
 
-### 6.
-Run another query  
-Follow steps 2-4, then run the below query:
+### 6. Run Another Query
+
+Follow steps 2-4, then run the query below:
 
 ![Another Query](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_6.png)
 
@@ -90,28 +96,16 @@ WHERE
             WHERE
                   timestart + INTERVAL `Duration` MINUTE > NOW()
       )
-      AND p.NextRun \< NOW() - INTERVAL 15 MINUTE
+      AND p.NextRun < NOW() - INTERVAL 15 MINUTE
       AND CASE WHEN c.lastcontact > NOW() - INTERVAL 15 MINUTE THEN l.ScriptFlags = 0 ELSE l.scriptflags = 1 END
 ```
 
-Please validate the stuck scripts and get that report exported to Excel to forward to the consultant with your feedback and review analysis reporting.
+Please validate the stuck scripts and export that report to Excel to forward to the consultant with your feedback and analysis.
 
-### 7.
-**Only if the scripting engine appears to be hung with a lot of scripts reporting in the queue**, Restart the DB Agent service
+### 7. Restart the Database Agent Service
 
-Navigate to Help >> Server Status >> Restart Database Agent
+**Only if the scripting engine appears to be hung with a lot of scripts reporting in the queue**, restart the DB Agent service.
 
-This will remove all queued scripts and will fix the script engine hung temporarily if the script queuing issue is not fixed from the above query results.
+Navigate to **Help >> Server Status >> Restart Database Agent**.
 
-
-
-
-
-
-
-
-
-
-
-
-
+This will remove all queued scripts and will temporarily fix the scripting engine hang if the script queuing issue is not resolved from the above query results.

@@ -8,23 +8,13 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery:
+
+## Summary:
 
 Updates System Hosts File
 
 ## Parameters:
 
-- ip  
-- host  
-
-
-
-
-
-
-
-
-
-
-
+- **ip**  
+- **host**  
 

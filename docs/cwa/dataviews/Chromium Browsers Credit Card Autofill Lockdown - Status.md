@@ -8,9 +8,10 @@ tags: ['browsers', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Credit Card Autofill](<../monitors/Lockdown Chromium Browsers Credit Card Autofill.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the Autofilling feature for credit cards for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed.
+The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Credit Card Autofill](<../monitors/Lockdown Chromium Browsers Credit Card Autofill.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
@@ -23,27 +24,13 @@ The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the comput
 
 | Column                          | Description                                                                                                                |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Clientid                        | Clientid (Hidden)                                                                                                        |
-| Locationid                      | Locationid (Hidden)                                                                                                      |
-| Computerid                      | Computerid (Hidden)                                                                                                      |
+| Clientid                        | Client ID (Hidden)                                                                                                       |
+| Locationid                      | Location ID (Hidden)                                                                                                     |
+| Computerid                      | Computer ID (Hidden)                                                                                                     |
 | Client                          | Client Name                                                                                                              |
 | Location                        | Location Name                                                                                                            |
 | Computer                        | Computer Name                                                                                                            |
 | Operating System                | Operating System                                                                                                         |
 | Last Contact                    | Last Contact with RMM                                                                                                    |
 | Last Logged In User             | Last Logged In User                                                                                                      |
-| Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the Autofilling feature for credit cards for the installed Chromium browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed. |

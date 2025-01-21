@@ -8,11 +8,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Mark this custom field to exclude the computer from Winget Update All Task creation and remove the created tasks for the machine.
 
-Marking this custom field will exclude the machine from [CW RMM - Machine Group - Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) group. The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task will not run on the computer with this custom field marked.
+Marking this custom field will exclude the machine from the [CW RMM - Machine Group - Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) group. The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task will not run on the computer with this custom field marked.
 
 ## Details
 
@@ -20,18 +21,7 @@ Marking this custom field will exclude the machine from [CW RMM - Machine Group 
 |-----------------------------------|----------|------|---------------|-----------------------------------------------------------------------------|----------|
 | WingetUpdateAll_Task_Exclude      | ENDPOINT | Flag | No            | Mark this custom field to exclude the computer from Winget Update All Task creation and remove the created task. | Yes      |
 
-## ScreenShot
+## Screenshots
 
-![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_1.png) ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_1.png) 
+![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_2.png)

@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Executes the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script once weekly against the Windows workstations with the OneDrive process.
@@ -23,16 +24,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get OneDrive Sync Status [DV]`
-
-
-
-
-
-
-
-
-
-
-
-
-

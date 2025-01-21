@@ -8,11 +8,12 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor will show all machines which have the last contact older than 30 days. Any action can be taken against those machines like reinstalling the agent, creating a ticket, or retiring the agent.
+This internal monitor will show all machines that have not contacted the server in over 30 days. Any action can be taken against those machines, such as reinstalling the agent, creating a ticket, or retiring the agent.
 
-**Note:** Autofix action(s) can not be performed on the computers in maintenance mode.
+**Note:** Autofix action(s) cannot be performed on computers in maintenance mode.
 
 ## Target
 
@@ -22,17 +23,4 @@ Global
 
 **Name:** △ Custom - Autofix - Offline Agent Remediation (RMM+)
 
-**Note:** The alert template should be executing the [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Note:** The alert template should execute the [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)

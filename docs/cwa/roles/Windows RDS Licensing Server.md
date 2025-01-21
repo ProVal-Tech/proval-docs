@@ -8,6 +8,7 @@ tags: ['report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This role definition shows which servers have the RDS Licensing feature enabled.
@@ -16,17 +17,4 @@ This role definition shows which servers have the RDS Licensing feature enabled.
 
 | Detection String                                  | Comparator | Result | Applicable OS |
 |--------------------------------------------------|------------|--------|----------------|
-| \{%@powershell "(Get-WindowsFeature RDS-Licensing).Installed"@%} | Equals     | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@powershell "(Get-WindowsFeature RDS-Licensing).Installed"@%} | Equals     | True   | Windows        |

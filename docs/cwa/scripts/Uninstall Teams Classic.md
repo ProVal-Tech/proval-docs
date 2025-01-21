@@ -8,6 +8,7 @@ tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script uninstalls `Microsoft Teams Classic` from Windows machines.
@@ -24,8 +25,8 @@ This script uninstalls `Microsoft Teams Classic` from Windows machines.
 
 | Name                   | Required | Example | Description                                                                                     |
 |------------------------|----------|---------|-------------------------------------------------------------------------------------------------|
-| Ticket_On_Failure      | False    | 1       | Fill it as '1' if you would like to receive Ticket on failure else leave it blank or '0'      |
-| TicketCreationCategory  | False    | 298     | Mention the ticketcreationcategory in order to direct the tickets to the right board in Manage |
+| Ticket_On_Failure      | False    | 1       | Set to '1' if you would like to receive a ticket on failure; otherwise, leave it blank or set to '0'. |
+| TicketCreationCategory  | False    | 298     | Specify the ticket creation category to direct the tickets to the appropriate board in Manage. |
 
 ## Output
 
@@ -34,24 +35,13 @@ This script uninstalls `Microsoft Teams Classic` from Windows machines.
 
 ## Ticketing
 
-Subject: `Microsoft Teams classic Uninstallation Failed on %ComputerName%(%ComputerID%)`  
+**Subject:** `Microsoft Teams Classic Uninstallation Failed on %ComputerName% (%ComputerID%)`
 
-Ticket Body: `Failed to Uninstall Microsoft Teams Classic from machine on %computername% at %clientname%. Here are the results returned from the installer: @psout@`
+**Ticket Body:** `Failed to uninstall Microsoft Teams Classic from machine on %computername% at %clientname%. Here are the results returned from the installer: @psout@`
 
 The PC information is outlined below:  
-PC Name: %computername%  
-Last Login: %lastuser%  
-PC model: @biosname@  
-OS: %os%  
-S/N OF PC: @biosver@  
-
-
-
-
-
-
-
-
-
-
-
+**PC Name:** %computername%  
+**Last Login:** %lastuser%  
+**PC Model:** @biosname@  
+**OS:** %os%  
+**S/N of PC:** @biosver@  

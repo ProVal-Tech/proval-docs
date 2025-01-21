@@ -8,10 +8,11 @@ tags: ['installation', 'logging', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script performs the Visual Studio Auto Updates.  
-It is compatible with the below applications only:  
+This script performs auto updates for Visual Studio.  
+It is compatible with the following applications:  
 - VS 2022 Enterprise  
 - VS 2022 Community  
 - VS 2019 Enterprise  
@@ -33,24 +34,12 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name               | Description                                                                                                                                                          |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @ProjectName@      | This contains the agnostic ps1 name and sets that as a project and working directory to C:/ProgramData/_Automation/Script/@ProjectName@.                         |
-| @WorkingDirectory@  | This is a directory where the agnostic script download and its logging is stored. The directory path is "C:/ProgramData/_Automation/Script/@ProjectName@".      |
-| @PS1Log@           | This stores the PowerShell informational logs for validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-log.txt.                |
-| @PS1ErrorLog@      | This contains the PowerShell Error logs for the validation and stores them in the @WorkingDirectory@ folder with the name: @ProjectName@-error.txt.               |
-| @ErrorLog@         | This contains the content of the error log file i.e. @ProjectName@-error.txt.                                                                                     |
+| @ProjectName@      | This contains the agnostic PowerShell script name and sets that as a project and working directory to `C:/ProgramData/_Automation/Script/@ProjectName@`.         |
+| @WorkingDirectory@  | This is a directory where the agnostic script downloads and its logging is stored. The directory path is `C:/ProgramData/_Automation/Script/@ProjectName@`.       |
+| @PS1Log@           | This stores the PowerShell informational logs for validation and saves them in the @WorkingDirectory@ folder with the name: `@ProjectName@-log.txt`.                |
+| @PS1ErrorLog@      | This contains the PowerShell error logs for validation and saves them in the @WorkingDirectory@ folder with the name: `@ProjectName@-error.txt`.                   |
+| @ErrorLog@         | This contains the content of the error log file, i.e., `@ProjectName@-error.txt`.                                                                                 |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

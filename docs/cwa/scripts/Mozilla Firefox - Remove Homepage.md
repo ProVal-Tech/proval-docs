@@ -8,11 +8,12 @@ tags: ['firefox', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is used to remove the enforcement of a homepage in the browser.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -27,7 +28,7 @@ Time Saved by Automation: 5 Minutes
 ## Variables
 
 - `@PS1DataLog@` - Helps to verify if the script actually succeeded.
-- `@PS1ErrorLog@` - Helps to track failure of the script.
+- `@PS1ErrorLog@` - Helps to track failures of the script.
 
 ## Process
 
@@ -36,16 +37,4 @@ The script will scan for and remove all homepage policies from the Firefox polic
 ## Output
 
 - Script log
-- Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
+- Local file on the computer

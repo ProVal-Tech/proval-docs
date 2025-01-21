@@ -8,6 +8,7 @@ tags: ['database', 'logging', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This table stores the User login/logout data.
@@ -20,24 +21,12 @@ This table stores the User login/logout data.
 
 #### pvl_login_logout_audit
 
-| Column                                                                 | Type    | Explanation                                                                                     |
-|------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------|
-| computerid                                                             | INT     | computerid of the agent                                                                         |
-| Username                                                               | VARCHAR | The username of the agent for which the login/logout trace found                                |
-| UserDomain                                                             | VARCHAR | This shows whether user was domain or local                                                    |
-| Activity_Time                                                          | DATETIME| This shows the time when the user was logged in/out                                            |
-| ConnectionType                                                         | INT     | This stores the integer value of the user connection type to show whether the user was remote, network, or no interaction type etc |
-| Action                                                                 | INT     | This shows whether the user trace found for login or logout                                     |
-| ScriptRanDate                                                          | DATETIME| This shows the script date about when script last ran                                          |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column            | Type    | Explanation                                                                                     |
+|-------------------|---------|-------------------------------------------------------------------------------------------------|
+| computerid        | INT     | The computer ID of the agent.                                                                   |
+| Username          | VARCHAR | The username of the agent for which the login/logout trace was found.                          |
+| UserDomain        | VARCHAR | Indicates whether the user was part of a domain or local.                                      |
+| Activity_Time     | DATETIME| The time when the user logged in or out.                                                       |
+| ConnectionType    | INT     | An integer value representing the user connection type (e.g., remote, network, or no interaction). |
+| Action            | INT     | Indicates whether the trace found was for login or logout.                                     |
+| ScriptRanDate     | DATETIME| The date when the script last ran.                                                              |

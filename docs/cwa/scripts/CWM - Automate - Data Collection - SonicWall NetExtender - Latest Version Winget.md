@@ -8,9 +8,10 @@ tags: ['security', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is designed to store the SonicWall NetExtender latest version to the system properties.
+This script is designed to store the latest version of SonicWall NetExtender in the system properties.
 
 ## Sample Run
 
@@ -20,19 +21,10 @@ This script is designed to store the SonicWall NetExtender latest version to the
 
 | Name                          | Example   | Required | Description                                                                                      |
 |-------------------------------|-----------|----------|--------------------------------------------------------------------------------------------------|
-| SonicWall_Netextender_Version | 10.2.331 | True     | This system property stores the latest version of SonicWall NetExtender which was fetched by this script |
+| SonicWall_Netextender_Version | 10.2.331 | True     | This system property stores the latest version of SonicWall NetExtender, which was fetched by this script. |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
 
 

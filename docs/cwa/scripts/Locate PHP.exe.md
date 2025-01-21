@@ -8,6 +8,7 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe` present on the machine and stores the data into a [custom table](<../tables/pvl_php_audit.md>).
@@ -43,22 +44,9 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 
 | Name          | Section  | Required | Description                                              |
 |---------------|----------|----------|----------------------------------------------------------|
-| Find PHP.exe  | Default  | True     | Mark this EDF to enable the Auditing for the client.     |
+| Find PHP.exe  | Default  | True     | Mark this EDF to enable the auditing for the client.     |
 
 ## Output
 
 - Script Log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

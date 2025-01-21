@@ -8,6 +8,7 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This custom field at the site level stores the Sentinel Group Key, which is utilized for grouping and managing endpoints based on logical criteria like departments or security policies. If this custom field is empty, the script will then search for the @SentinelOne Site Key instead.
@@ -25,14 +26,3 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---SentinelOne-Group-Key/image_1.png)
-
-
-
-
-
-
-
-
-
-
-

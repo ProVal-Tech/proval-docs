@@ -8,11 +8,12 @@ tags: ['database', 'security', 'vulnerability']
 draft: false
 unlisted: false
 ---
+
 ## Step 1.
 
 ### Insert Queries
 
-#### #Insert EDFs
+#### Insert EDFs
 
 ```sql
 INSERT IGNORE INTO `extrafield` (`Form`, `Name`, `Sort`, `NoBreak`, `FType`, `Section`, `UnEditable`, `Collapsed`, `Fill`, `LtGuid`, `IsPassword`, `IsEncrypted`, `IsHidden`, `IsRestricted`, `ViewPermissions`, `EditPermissions`) VALUES (3, 'SMB1 Vulnerability', 0, 0, 2, 'Vulnerability', 0, 0, 'Disabled~Audit with Autofix~Audit Only|Select any option to perform the CVE vulnerability detection or remediation.|2', 'c12fcc47-764f-48dd-a200-98b99a6f5c8d', 0, 0, 0, 0, '', '');
@@ -24,7 +25,7 @@ INSERT IGNORE INTO `extrafield` (`Form`, `Name`, `Sort`, `NoBreak`, `FType`, `Se
 INSERT IGNORE INTO `extrafield` (`Form`, `Name`, `Sort`, `NoBreak`, `FType`, `Section`, `UnEditable`, `Collapsed`, `Fill`, `LtGuid`, `IsPassword`, `IsEncrypted`, `IsHidden`, `IsRestricted`, `ViewPermissions`, `EditPermissions`) VALUES (1, 'SMBv1 Vulnerability', 0, 0, 0, 'Vulnerability', 0, 0, '', '61accb37-b780-4659-9a77-04eff1e68b71', 0, 0, 0, 0, '', '');
 ```
 
-#### #Insert Search: Vulnerability Management
+#### Insert Search: Vulnerability Management
 
 ```sql
 INSERT INTO `sensorchecks`
@@ -68,20 +69,20 @@ LEFT JOIN ExtraFieldData edfDefault7 ON (edfDefault7.id=0 and edfDefault7.ExtraF
 LEFT JOIN ExtraFieldData edfAssigned8 ON (edfAssigned8.id=Locations.LocationId and edfAssigned8.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='55346207-b7e1-11e0-aac1-9d777f14e852'))
 LEFT JOIN ExtraFieldData edfDefault8 ON (edfDefault8.id=0 and edfDefault8.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='55346207-b7e1-11e0-aac1-9d777f14e852'))
 WHERE 
-((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')\<>0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'windows')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'darwin') >0, 2, 3)) = '1') AND (NOT ((IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')\<>0))) AND (((((IF(INSTR(computers.os, 'server')>0, 1, 0)\<>0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'') \<> 'None') AND (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'') \<> 'Not Selected') AND (IFNULL(IFNULL(edfAssigned5.Value,edfDefault5.value),'') \<> 'No Contract'))) OR (((IF(INSTR(computers.os, 'server')>0, 1, 0)=0) AND (IFNULL(IFNULL(edfAssigned6.Value,edfDefault6.value),'') \<> 'None') AND (IFNULL(IFNULL(edfAssigned7.Value,edfDefault7.value),'') \<> 'Not Selected') AND (IFNULL(IFNULL(edfAssigned8.Value,edfDefault8.value),'') = 'No Contract')))))))) 
+((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')<>0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'windows')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'darwin') >0, 2, 3)) = '1') AND (NOT ((IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')<>0))) AND (((((IF(INSTR(computers.os, 'server')>0, 1, 0)<>0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'') <> 'None') AND (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'') <> 'Not Selected') AND (IFNULL(IFNULL(edfAssigned5.Value,edfDefault5.value),'') <> 'No Contract'))) OR (((IF(INSTR(computers.os, 'server')>0, 1, 0)=0) AND (IFNULL(IFNULL(edfAssigned6.Value,edfDefault6.value),'') <> 'None') AND (IFNULL(IFNULL(edfAssigned7.Value,edfDefault7.value),'') <> 'Not Selected') AND (IFNULL(IFNULL(edfAssigned8.Value,edfDefault8.value),'') = 'No Contract')))))))) 
 ' as `SQL`,
 '4' as `QueryType`,
 'Select||=||=||=|^Select|||||||^' as `ListData`,
 '0' as `FolderID`,
 '47d73828-38b1-4289-ae68-3017cf968ff7' as `GUID`,
-'\<LabTechAbstractSearch>\<asn>\<st>AndNode\</st>\<cn>\<asn>\<st>AndNode\</st>\<cn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Extra Data Field.Default.Onboarding Complete\</lon>\<lok>Computer.Edf.553438e0-b7e1-11e0-aac1-9d777f14e852\</lok>\<lmo>IsTrue\</lmo>\<dv>NULL\</dv>\<dk>NULL\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.OS.Type\</lon>\<lok>Computer.OS.Type\</lok>\<lmo>Equals\</lmo>\<dv>Windows\</dv>\<dk>1\</dk>\</asn>\<asn>\<st>NotNode\</st>\<cn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Extra Data Field.Default.Exclude MSP Contract\</lon>\<lok>Computer.Edf.a72e229b-3bf5-11e1-92fd-c1ee63289e9e\</lok>\<lmo>IsTrue\</lmo>\<dv>NULL\</dv>\<dk>NULL\</dk>\</asn>\</cn>\</asn>\<asn>\<st>OrNode\</st>\<cn>\<asn>\<st>AndNode\</st>\<cn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.OS.IsServer\</lon>\<lok>Computer.OS.IsServer\</lok>\<lmo>IsTrue\</lmo>\<dv>NULL\</dv>\<dk>NULL\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Location.Extra Data Field.Default.Server Service Plan\</lon>\<lok>Computer.Location.Edf.5ca92306-2d93-11e1-ac0f-3d76979114ae\</lok>\<lmo>NotEqual\</lmo>\<dv>None\</dv>\<dk>None\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Location.Extra Data Field.Default.Server Service Plan\</lon>\<lok>Computer.Location.Edf.5ca92306-2d93-11e1-ac0f-3d76979114ae\</lok>\<lmo>NotEqual\</lmo>\<dv>Not Selected\</dv>\<dk>Not Selected\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Location.Extra Data Field.Default.Server Service Plan\</lon>\<lok>Computer.Location.Edf.5ca92306-2d93-11e1-ac0f-3d76979114ae\</lok>\<lmo>NotEqual\</lmo>\<dv>No Contract\</dv>\<dk>No Contract\</dk>\</asn>\</cn>\</asn>\</cn>\</asn>\</LabTechAbstractSearch>' as `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Extra Data Field.Default.Onboarding Complete</lon><lok>Computer.Edf.553438e0-b7e1-11e0-aac1-9d777f14e852</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn><asn><st>ComparisonNode</st><lon>Computer.OS.Type</lon><lok>Computer.OS.Type</lok><lmo>Equals</lmo><dv>Windows</dv><dk>1</dk></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Extra Data Field.Default.Exclude MSP Contract</lon><lok>Computer.Edf.a72e229b-3bf5-11e1-92fd-c1ee63289e9e</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn></cn></asn><asn><st>OrNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.IsServer</lon><lok>Computer.OS.IsServer</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn><asn><st>ComparisonNode</st><lon>Computer.Location.Extra Data Field.Default.Server Service Plan</lon><lok>Computer.Location.Edf.5ca92306-2d93-11e1-ac0f-3d76979114ae</lok><lmo>NotEqual</lmo><dv>None</dv><dk>None</dk></asn><asn><st>ComparisonNode</st><lon>Computer.Location.Extra Data Field.Default.Server Service Plan</lon><lok>Computer.Location.Edf.5ca92306-2d93-11e1-ac0f-3d76979114ae</lok><lmo>NotEqual</lmo><dv>Not Selected</dv><dk>Not Selected</dk></asn><asn><st>ComparisonNode</st><lon>Computer.Location.Extra Data Field.Default.Server Service Plan</lon><lok>Computer.Location.Edf.5ca92306-2d93-11e1-ac0f-3d76979114ae</lok><lmo>NotEqual</lmo><dv>No Contract</dv><dk>No Contract</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From SensorChecks where `GUID` = '47d73828-38b1-4289-ae68-3017cf968ff7') = 0;
+WHERE (SELECT count(*) From SensorChecks where `GUID` = '47d73828-38b1-4289-ae68-3017cf968ff7') = 0;
 ```
 
-#### #Insert Search: SMB1 Vulnerability Remote Monitor Creation
+#### Insert Search: SMB1 Vulnerability Remote Monitor Creation
 
 ```sql
 INSERT INTO `sensorchecks`
@@ -126,20 +127,20 @@ LEFT JOIN ExtraFieldData edfDefault8 ON (edfDefault8.id=0 and edfDefault8.ExtraF
 LEFT JOIN ExtraFieldData edfAssigned9 ON (edfAssigned9.id=Computers.ComputerId and edfAssigned9.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='77e6376d-3a70-454e-b6d0-d10261177218'))
 LEFT JOIN ExtraFieldData edfDefault9 ON (edfDefault9.id=0 and edfDefault9.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='77e6376d-3a70-454e-b6d0-d10261177218'))
 WHERE 
-((((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'') like 'Audit%' AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'') \<> 'Disabled' AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'') \<> 'Disabled'))) OR (((NOT ((IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'') like 'Audit%'))) AND (IFNULL(IFNULL(edfAssigned5.Value,edfDefault5.value),'') like 'Audit%' AND (IFNULL(IFNULL(edfAssigned6.Value,edfDefault6.value),'') \<> 'Disabled'))) OR (((NOT ((IFNULL(IFNULL(edfAssigned7.Value,edfDefault7.value),'') like 'Audit%'))) AND (NOT ((IFNULL(IFNULL(edfAssigned8.Value,edfDefault8.value),'') like 'Audit%'))) AND (IFNULL(IFNULL(edfAssigned9.Value,edfDefault9.value),'') like 'Audit%')))))) 
+((((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'') like 'Audit%' AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'') <> 'Disabled' AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'') <> 'Disabled'))) OR (((NOT ((IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'') like 'Audit%'))) AND (IFNULL(IFNULL(edfAssigned5.Value,edfDefault5.value),'') like 'Audit%' AND (IFNULL(IFNULL(edfAssigned6.Value,edfDefault6.value),'') <> 'Disabled'))) OR (((NOT ((IFNULL(IFNULL(edfAssigned7.Value,edfDefault7.value),'') like 'Audit%'))) AND (NOT ((IFNULL(IFNULL(edfAssigned8.Value,edfDefault8.value),'') like 'Audit%'))) AND (IFNULL(IFNULL(edfAssigned9.Value,edfDefault9.value),'') like 'Audit%')))))) 
 ' as `SQL`,
 '4' as `QueryType`,
 'Select||=||=||=|^Select|||||||^' as `ListData`,
 '0' as `FolderID`,
 '0353b13c-69ec-484d-946e-7925fc9d096d' as `GUID`,
-'\<LabTechAbstractSearch>\<asn>\<st>AndNode\</st>\<cn>\<asn>\<st>OrNode\</st>\<cn>\<asn>\<st>AndNode\</st>\<cn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Client.Extra Data Field.Vulnerability.SMB1 Vulnerability\</lon>\<lok>Computer.Client.Edf.c12fcc47-764f-48dd-a200-98b99a6f5c8d\</lok>\<lmo>TextLike\</lmo>\<dv>Audit%\</dv>\<dk>Audit%\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Location.Extra Data Field.Vulnerability.SMB1 Vulnerability\</lon>\<lok>Computer.Location.Edf.02f643c0-259d-495b-a0b1-e58c347fda7c\</lok>\<lmo>NotEqual\</lmo>\<dv>Disabled\</dv>\<dk>Disabled\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Extra Data Field.Vulnerability.SMB1 Vulnerability\</lon>\<lok>Computer.Edf.77e6376d-3a70-454e-b6d0-d10261177218\</lok>\<lmo>NotEqual\</lmo>\<dv>Disabled\</dv>\<dk>Disabled\</dk>\</asn>\</cn>\</asn>\<asn>\<st>AndNode\</st>\<cn>\<asn>\<st>NotNode\</st>\<cn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Client.Extra Data Field.Vulnerability.SMB1 Vulnerability\</lon>\<lok>Computer.Client.Edf.c12fcc47-764f-48dd-a200-98b99a6f5c8d\</lok>\<lmo>TextLike\</lmo>\<dv>Audit%\</dv>\<dk>Audit%\</dk>\</asn>\</cn>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Location.Extra Data Field.Vulnerability.SMB1 Vulnerability\</lon>\<lok>Computer.Location.Edf.02f643c0-259d-495b-a0b1-e58c347fda7c\</lok>\<lmo>TextLike\</lmo>\<dv>Audit%\</dv>\<dk>Audit%\</dk>\</asn>\<asn>\<st>ComparisonNode\</st>\<lon>Computer.Extra Data Field.Vulnerability.SMB1 Vulnerability\</lon>\<lok>Computer.Edf.77e6376d-3a70-454e-b6d0-d10261177218\</lok>\<lmo>NotEqual\</lmo>\<dv>Disabled\</dv>\<dk>Disabled\</dk>\</asn>\</cn>\</asn>\</cn>\</asn>\</LabTechAbstractSearch>' as `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>OrNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Client.Extra Data Field.Vulnerability.SMB1 Vulnerability</lon><lok>Computer.Client.Edf.c12fcc47-764f-48dd-a200-98b99a6f5c8d</lok><lmo>TextLike</lmo><dv>Audit%</dv><dk>Audit%</dk></asn><asn><st>ComparisonNode</st><lon>Computer.Location.Extra Data Field.Vulnerability.SMB1 Vulnerability</lon><lok>Computer.Location.Edf.02f643c0-259d-495b-a0b1-e58c347fda7c</lok><lmo>NotEqual</lmo><dv>Disabled</dv><dk>Disabled</dk></asn><asn><st>ComparisonNode</st><lon>Computer.Extra Data Field.Vulnerability.SMB1 Vulnerability</lon><lok>Computer.Edf.77e6376d-3a70-454e-b6d0-d10261177218</lok><lmo>NotEqual</lmo><dv>Disabled</dv><dk>Disabled</dk></asn></cn></asn><asn><st>AndNode</st><cn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Client.Extra Data Field.Vulnerability.SMB1 Vulnerability</lon><lok>Computer.Client.Edf.c12fcc47-764f-48dd-a200-98b99a6f5c8d</lok><lmo>TextLike</lmo><dv>Audit%</dv><dk>Audit%</dk></asn></cn></asn><asn><st>ComparisonNode</st><lon>Computer.Location.Extra Data Field.Vulnerability.SMB1 Vulnerability</lon><lok>Computer.Location.Edf.02f643c0-259d-495b-a0b1-e58c347fda7c</lok><lmo>TextLike</lmo><dv>Audit%</dv><dk>Audit%</dk></asn><asn><st>ComparisonNode</st><lon>Computer.Extra Data Field.Vulnerability.SMB1 Vulnerability</lon><lok>Computer.Edf.77e6376d-3a70-454e-b6d0-d10261177218</lok><lmo>NotEqual</lmo><dv>Disabled</dv><dk>Disabled</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From SensorChecks where `GUID` = '0353b13c-69ec-484d-946e-7925fc9d096d') = 0;
+WHERE (SELECT count(*) From SensorChecks where `GUID` = '0353b13c-69ec-484d-946e-7925fc9d096d') = 0;
 ```
 
-#### #Insert Group △ System Monitoring
+#### Insert Group: △ System Monitoring
 
 ```sql
 INSERT INTO `mastergroups`
@@ -172,10 +173,10 @@ SELECT
 '0' as `ContactJoin`,
 '0' as `ContactJoinOptions`
 FROM (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From MasterGroups where `GUID` = '1749280f-9114-11ed-9c83-000c295e5f17' ) = 0;
+WHERE (SELECT count(*) From MasterGroups where `GUID` = '1749280f-9114-11ed-9c83-000c295e5f17') = 0;
 ```
 
-#### #Insert Group: △ System Monitoring.△ Vulnerability Management
+#### Insert Group: △ System Monitoring.△ Vulnerability Management
 
 ```sql
 SET @Searchid = (SELECT sensid from sensorchecks where `GUID` = '47d73828-38b1-4289-ae68-3017cf968ff7') ;
@@ -211,10 +212,10 @@ SELECT
 '0' as `ContactJoin`,
 '0' as `ContactJoinOptions`
 FROM (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From MasterGroups where `GUID` = 'eaf01ee9-2c88-41e7-8f54-1b6a1eb80914' ) = 0;
+WHERE (SELECT count(*) From MasterGroups where `GUID` = 'eaf01ee9-2c88-41e7-8f54-1b6a1eb80914') = 0;
 ```
 
-#### #Insert Remote Monitor: ProVal - Production - SMB1 Detection
+#### Insert Remote Monitor: ProVal - Production - SMB1 Detection
 
 ```sql
 SET @Groupid = (SELECT GroupID From mastergroups WHERE guid = 'eaf01ee9-2c88-41e7-8f54-1b6a1eb80914') ;
@@ -292,14 +293,3 @@ Locate your remote monitor by opening the group(s) remote monitors tab.
 ![Remote Monitor](../../../static/img/SMB1-Detection-Query/image_1.png)
 
 Please validate that the Alert Template is properly set to "`Default - Do Nothing`".
-
-
-
-
-
-
-
-
-
-
-

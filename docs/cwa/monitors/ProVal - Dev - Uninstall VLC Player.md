@@ -8,9 +8,10 @@ tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the remote monitor is to remove the `VLC Media Player` from the Windows machines.
+The purpose of the remote monitor is to remove the `VLC Media Player` from Windows machines.
 
 ## Details
 
@@ -18,11 +19,11 @@ The purpose of the remote monitor is to remove the `VLC Media Player` from the W
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator       | Interval | Result                 |
-|--------------|----------------|------------|---------------|-------------------|----------|------------------------|
-| System       | 127.0.0.1     | Run File   | _**REDACTED**_ | Does Not Contain   | 604800   | Failed to remove VLC    |
+| Check Action | Server Address | Check Type | Execute Info    | Comparator       | Interval | Result                 |
+|--------------|----------------|------------|------------------|-------------------|----------|------------------------|
+| System       | 127.0.0.1     | Run File   | _**REDACTED**_   | Does Not Contain   | 604800   | Failed to remove VLC    |
 
 ## Dependencies
 
@@ -41,15 +42,3 @@ Windows Workstations
 ## How to Import
 
 [Import - Remote Monitor - Uninstall VLC Player](<./Uninstall VLC Player.md>)
-
-
-
-
-
-
-
-
-
-
-
-

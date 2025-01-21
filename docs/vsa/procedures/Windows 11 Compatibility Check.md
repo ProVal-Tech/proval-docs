@@ -8,6 +8,7 @@ tags: ['memory', 'secureboot', 'storage', 'tpm', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
 - Determines if an endpoint is compatible with Windows 11 per Microsoft's Hardware Readiness script.
 
@@ -18,7 +19,7 @@ unlisted: false
 # VSA Implementation
 There is no configuration required within the Agent Procedure, but a custom field is required to display the compatibility.
 
-Custom Field: xPVAL Win 11 Compatible
+**Custom Field**: xPVAL Win 11 Compatible
 
 ![Image](../../../static/img/Windows-11-Compatibility-Check/image_1.png)
 
@@ -36,7 +37,7 @@ The `HardwareReadiness.ps1` script is a PowerShell script designed to assess a W
 ```
 #ScriptName#.ps1 >> #Directory#/#ScriptName#-log.txt; $result = Get-Content -Path #Directory#/#ScriptName#-log.txt -Raw | ConvertFrom-Json; $simplifiedResult = switch ($result.returnCode) {0 {"'Yes'"} 1 {"'No'"} -1 {"'Hardware Check Failed'"} -2 {"'Script Error'"} default {"'UnknownReturnCode'"}}; Write-Host $simplifiedResult
 ```
-Runs the HardwareReadiness.ps1 script, outputting the results to a log file within the Agent Procedure folder. The returnCode is read, and modified to produce a value for the **xPVAL Win 11 Compatible** custom field.
+Runs the HardwareReadiness.ps1 script, outputting the results to a log file within the Agent Procedure folder. The returnCode is read and modified to produce a value for the **xPVAL Win 11 Compatible** custom field.
 
 | returnCode | Definition                                                                                                       | **xPVAL Win 11 Compatible** Value    |
 |------------|------------------------------------------------------------------------------------------------------------------|--------------------------------------|
@@ -56,14 +57,3 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

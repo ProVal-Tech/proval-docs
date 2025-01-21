@@ -8,11 +8,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Detects the computers where the [Get Patch Config](<../scripts/Get Patch Config.md>) script has not been executed within the past 7 days.
 
-Limited to: `Windows 10, 11, Server 2016, 2019, and 2022`
+**Limited to:** `Windows 10, 11, Server 2016, 2019, and 2022`
 
 ## Dependencies
 
@@ -26,16 +27,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get Patch Config`
-
-
-
-
-
-
-
-
-
-
-
-
-

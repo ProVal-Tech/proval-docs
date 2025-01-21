@@ -8,9 +8,10 @@ tags: ['ftp', 'installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Process to download and install Windows 11 from a URL.
+This document describes the process to download and install Windows 11 from a URL.
 
 ## Sample Run
 
@@ -18,8 +19,8 @@ Process to download and install Windows 11 from a URL.
 
 ## Dependencies
 
-[SEC - Windows Patching - Agnostic - Install-Windows11](https://proval.itglue.com/DOC-5078775-8801459)  
-Download and host ISO from here: [https://www.microsoft.com/en-us/software-download/windows11](https://www.microsoft.com/en-us/software-download/windows11)
+- [SEC - Windows Patching - Agnostic - Install-Windows11](https://proval.itglue.com/DOC-5078775-8801459)  
+- Download and host the ISO from here: [https://www.microsoft.com/en-us/software-download/windows11](https://www.microsoft.com/en-us/software-download/windows11)
 
 ## Variables
 
@@ -30,7 +31,7 @@ Download and host ISO from here: [https://www.microsoft.com/en-us/software-downl
 | URL         | True     | [https://file.contoso.com/Win11_English_x64.iso](https://file.contoso.com/Win11_English_x64.iso) | The URL to download the ISO from. This can be a direct link, FTP link, or a SharePoint public link. |
 | FTPUser     | False    | someFTPUser                                                            | The user to authenticate with the FTP server.                                               |
 | FTPPassword | False    | s0m3FTPU$ersP@$sw0rD                                                   | The password to authenticate with the FTP server.                                           |
-| ISOHash     | False    | 1F7840814B672457482AE77A70ACE03F                                       | The hash of the ISO file to compare any existing ISO. The default value is the hash of the English version of the Windows 11 ISO as of 12/02/2021. |
+| ISOHash     | False    | 1F7840814B672457482AE77A70ACE03F                                       | The hash of the ISO file to compare with any existing ISO. The default value is the hash of the English version of the Windows 11 ISO as of 12/02/2021. |
 
 ## Process
 
@@ -40,15 +41,3 @@ See [SEC - Windows Patching - Agnostic - Install-Windows11](https://proval.itglu
 
 - Script log
 - Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-

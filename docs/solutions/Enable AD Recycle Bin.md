@@ -8,18 +8,19 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of this solution is to Enable AD Recycle Bin on AD Infrastructure Masters where it's not already enabled.
+The purpose of this solution is to enable the AD Recycle Bin on AD Infrastructure Masters where it is not already enabled.
 
 ## Associated Content
 
 | Content                                                                                 | Type         | Function                                                                                                                                                           |
 |-----------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Custom Field - AD Recycle Bin](<../cwrmm/custom-fields/AD Recycle Bin.md>)       | Custom Field | The [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) utilizes this custom field to store the information regarding AD Recycle Bin status. |
-| [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513)       | Task         | Enables AD Recycle Bin on AD Infrastructure Masters.                                                                                                             |
-| [Device Group - Infrastructure Master - Without Recycle Bin](<../cwrmm/groups/Infrastructure Master - Without Recycle Bin.md>) | Device Group | Filters Infrastructure Masters where AD recycle bin is not enabled.                                                                                             |
-| [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) | Monitor      | This monitor will create tickets if the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable AD recycle bin on Infrastructure master for more than three times. |
+| [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513)       | Task         | Enables the AD Recycle Bin on AD Infrastructure Masters.                                                                                                         |
+| [Device Group - Infrastructure Master - Without Recycle Bin](<../cwrmm/groups/Infrastructure Master - Without Recycle Bin.md>) | Device Group | Filters Infrastructure Masters where the AD Recycle Bin is not enabled.                                                                                          |
+| [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) | Monitor      | This monitor will create tickets if the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable the AD Recycle Bin on the Infrastructure Master for more than three times. |
 
 ## Implementation
 
@@ -28,16 +29,4 @@ The purpose of this solution is to Enable AD Recycle Bin on AD Infrastructure Ma
 - Create the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513).
 - Create the [Device Group - Infrastructure Master - Without Recycle Bin](<../cwrmm/groups/Infrastructure Master - Without Recycle Bin.md>).
 - Create the deployment schedule as described in this document: [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513).
-- Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) if the partner wants tickets if [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable AD recycle Bin.
-
-
-
-
-
-
-
-
-
-
-
-
+- Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) if the partner wants tickets when the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable the AD Recycle Bin.

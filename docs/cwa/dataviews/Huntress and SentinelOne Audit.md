@@ -8,36 +8,26 @@ tags: ['installation', 'performance', 'report', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will show Sentinel One and Huntress installation status (allowed or not) for a location, it will also show the count of agents per location where Sentinel and Huntress are installed and missing.
+This dataview will show the installation status (allowed or not) of Sentinel One and Huntress for each location. It will also display the count of agents installed and missing for both Sentinel One and Huntress at each location.
 
 ## Dependencies
 
 - Huntress Deployment -- EDF
-- SentinelOne_Site_Token -- EDF
+- SentinelOne Site Token -- EDF
 
 ## Columns
 
 | Column                      | Description                                               |
 |-----------------------------|-----------------------------------------------------------|
-| Client Name                 | Client Name                                              |
-| Location Name               | Location Name                                            |
-| SentinelOne Status          | SentinelOne token detected or not                        |
-| Huntress Status             | Huntress deployment allowed or not                       |
-| Huntress Install Count      | Huntress agent install count on agents of each location  |
-| Huntress Missing Count      | Huntress agent missing count on each location            |
-| SentinelOne Install Count   | SentinelOne install count on agents of each location     |
-| SentinelOne Missing Count   | SentinelOne missing count on agents of each location     |
-
-
-
-
-
-
-
-
-
-
-
+| Client Name                 | Name of the client                                        |
+| Location Name               | Name of the location                                      |
+| SentinelOne Status          | Indicates whether the SentinelOne token is detected or not|
+| Huntress Status             | Indicates whether Huntress deployment is allowed or not   |
+| Huntress Install Count      | Count of Huntress agents installed at each location       |
+| Huntress Missing Count      | Count of missing Huntress agents at each location         |
+| SentinelOne Install Count   | Count of SentinelOne agents installed at each location    |
+| SentinelOne Missing Count   | Count of missing SentinelOne agents at each location      |
 

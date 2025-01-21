@@ -3,14 +3,15 @@ id: '5bfc3175-98f3-4855-9df0-7fb9bf35a954'
 title: 'Set Outlook PST Size in Registry'
 title_meta: 'Set Outlook PST Size in Registry'
 keywords: ['registry', 'outlook', 'pst', 'maxlargesize', 'warnlargesize']
-description: 'This script modifies the registry settings for Outlook to adjust the MaxLargeFileSize and WarnLargeFileSize parameters based on user-defined values or defaults. It ensures that the MaxLargeFileSize is set to 100000 MB and WarnLargeFileSize to 95000 MB if no values are provided.'
+description: 'This script modifies the registry settings for Outlook to adjust the MaxLargeFileSize and WarnLargeFileSize parameters based on user-defined values or defaults. It ensures that the MaxLargeFileSize is set to 100,000 MB and WarnLargeFileSize to 95,000 MB if no values are provided.'
 tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script helps to set each user's registry Software/Microsoft/Office/OfficeVersion/Outlook/PST: MaxLargeFileSize and WarnLargeFileSize to custom as per user param or by default it sets MaxLargeFileSize to 100000 and WarnLargeFileSize to 95000.
+This script helps to set each user's registry `Software/Microsoft/Office/OfficeVersion/Outlook/PST`: `MaxLargeFileSize` and `WarnLargeFileSize` to custom values as per user parameters or, by default, it sets `MaxLargeFileSize` to 100,000 MB and `WarnLargeFileSize` to 95,000 MB.
 
 ## Sample Run
 
@@ -20,25 +21,13 @@ This script helps to set each user's registry Software/Microsoft/Office/OfficeVe
 
 Strapper Module
 
-#### User Parameters
+### User Parameters
 
 | Name                | Example  | Required | Description                                                                                          |
 |---------------------|----------|----------|------------------------------------------------------------------------------------------------------|
-| MaxLargeFileSize    | 100000   | False    | If set value, then it will set the size in MB, if left empty then by default user registry set to 100000 |
-| WarnLargeFileSize   | 120000   | False    | If set value, then it will set the size in MB, if left empty then by default user registry set to 95000  |
+| MaxLargeFileSize    | 100000   | False    | If a value is set, then it will set the size in MB; if left empty, the default user registry is set to 100,000. |
+| WarnLargeFileSize   | 120000   | False    | If a value is set, then it will set the size in MB; if left empty, the default user registry is set to 95,000.  |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

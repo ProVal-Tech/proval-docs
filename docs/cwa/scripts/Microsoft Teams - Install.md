@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs the Teams Machine-wide Installer and installs Teams for the current user. Creates a scheduled task to perform this process for all users that log into the machine.
+This document describes the installation of the Teams Machine-wide Installer and the process to install Teams for the current user. It also covers the creation of a scheduled task to ensure that all users logging into the machine will have Teams installed automatically.
 
 ## Sample Run
 
@@ -22,21 +23,9 @@ Installs the Teams Machine-wide Installer and installs Teams for the current use
 
 ## Process
 
-See [Deploy-MSTeams](https://proval.itglue.com/DOC-5078775-8204723) for process information.
+Refer to [Deploy-MSTeams](https://proval.itglue.com/DOC-5078775-8204723) for detailed process information.
 
 ## Output
 
 - Script log
-- Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
+- Local file on the computer

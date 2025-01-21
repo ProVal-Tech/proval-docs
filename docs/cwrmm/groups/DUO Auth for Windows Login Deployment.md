@@ -8,9 +8,10 @@ tags: ['deployment', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This group adds the member where the DUO Deployment is enabled. The agent gets added if the company custom field "DUO Deployment" is checked.
+This group adds members where the DUO Deployment is enabled. The agent is added if the company custom field "DUO Deployment" is checked.
 
 ## Dependencies
 
@@ -20,9 +21,7 @@ This group adds the member where the DUO Deployment is enabled. The agent gets a
 
 | Field Name                                     | Type of Field (Machine or Organization) | Description                                                                                                                                                    |
 |------------------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DUO Auth for Windows Login Deployment           | Dynamic                                 | This group adds the member where the DUO Deployment is enabled. The agent gets added if the company custom field "DUO Deployment" is checked.              |
-
-
+| DUO Auth for Windows Login Deployment           | Dynamic                                 | This group adds members where the DUO Deployment is enabled. The agent is added if the company custom field "DUO Deployment" is checked.                   |
 
 ## Group Creation
 
@@ -34,11 +33,11 @@ This group adds the member where the DUO Deployment is enabled. The agent gets a
    This page will appear after clicking on the `Dynamic Group` button:  
    ![Step 2 - Continued](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_3.png)
 
-3. Set the group name to `DUO Auth for Windows Login Deployment`  
-   Description: `This group adds the member where the DUO Deployment is enabled. The agent gets added if the company custom field "DUO Deployment" is checked.`  
+3. Set the group name to `DUO Auth for Windows Login Deployment`.  
+   Description: `This group adds members where the DUO Deployment is enabled. The agent is added if the company custom field "DUO Deployment" is checked.`  
    ![Step 3](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_4.png)
 
-4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
+4. Click `+ Add Criteria` in the `Criteria` section of the group.  
    ![Step 4](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_5.png)  
    This search box will appear.  
    ![Step 4 - Continued](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_6.png)
@@ -62,15 +61,3 @@ This group adds the member where the DUO Deployment is enabled. The agent gets a
    - Set `Failed` in the comparison condition.  
    ![Step 8](../../../static/img/DUO-Auth-for-Windows-Login-Deployment/image_10.png)  
    **Condition:** `Duo Deployment Result` `Does Not Contain any of` `Failed`
-
-
-
-
-
-
-
-
-
-
-
-

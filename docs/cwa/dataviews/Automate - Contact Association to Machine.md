@@ -8,35 +8,24 @@ tags: ['connectwise', 'permissions']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows which machines are associated to specific Contacts in Automate.
+This dataview shows which machines are associated with specific contacts in Automate.
 
 ## Columns
 
 | Column               | Description                                                             |
 |----------------------|-------------------------------------------------------------------------|
-| Client Name          | Client Name of the agent                                                |
-| Location Name        | Location Name of the agent                                              |
+| Client Name          | Client name of the agent                                                |
+| Location Name        | Location name of the agent                                              |
 | Computer Name        | Agent name                                                              |
-| Contact Name         | CW Automate User name to check which agent allocated to them            |
-| Email                | Email address of contact                                                |
-| Web Password Set     | Check whether contact password set                                      |
-| Tickets              | Check whether contact has any tickets assigned permission               |
-| Remote Access        | Check whether contact has remote access permission or not               |
-| Install Agent        | Check whether contact has install agent permission provided or not      |
-| Reboot               | Check whether contact has reboot permission or not                      |
-| Shutdown             | Check whether contact has shutdown permission or not                    |
-| Wake On Lan          | Check whether contact has Wake On Lan permission or not.                |
-
-
-
-
-
-
-
-
-
-
-
-
+| Contact Name         | CW Automate user name to check which agent is allocated to them        |
+| Email                | Email address of the contact                                            |
+| Web Password Set     | Check whether the contact's password is set                            |
+| Tickets              | Check whether the contact has any tickets assigned permission           |
+| Remote Access        | Check whether the contact has remote access permission or not           |
+| Install Agent        | Check whether the contact has install agent permission provided or not  |
+| Reboot               | Check whether the contact has reboot permission or not                  |
+| Shutdown             | Check whether the contact has shutdown permission or not                |
+| Wake On Lan          | Check whether the contact has Wake On Lan permission or not.            |

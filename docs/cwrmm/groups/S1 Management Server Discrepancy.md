@@ -8,9 +8,10 @@ tags: ['connectwise', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The group contains computers with the different SentinelOne management server as configured for the client in CW RMM.
+The group contains computers with different SentinelOne management servers as configured for the client in CW RMM.
 
 ## Dependencies
 
@@ -29,7 +30,7 @@ The group contains computers with the different SentinelOne management server as
    ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_3.png)
 
 3. Set the group name to `S1 Management Server Discrepancy`.  
-   Description: `The group contains computers with the different SentinelOne management server as configured for the client in CW RMM.`
+   Description: `The group contains computers with different SentinelOne management servers as configured for the client in CW RMM.`
    ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.
@@ -51,15 +52,3 @@ The group contains computers with the different SentinelOne management server as
 
 ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_10.png)  
 ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_11.png)
-
-
-
-
-
-
-
-
-
-
-
-

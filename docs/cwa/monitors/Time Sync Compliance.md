@@ -8,9 +8,10 @@ tags: ['compliance', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the remote monitor is to set the sync of the Windows workstation time with `us.pool.ntp.org`.
+The purpose of the remote monitor is to synchronize the time of Windows workstations with `us.pool.ntp.org`.
 
 ## Details
 
@@ -18,11 +19,11 @@ The purpose of the remote monitor is to set the sync of the Windows workstation 
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info          | Comparator              | Interval | Result                                |
 |--------------|----------------|------------|-----------------------|-------------------------|----------|---------------------------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**          | Does Not Regex Match    | 86400    | (The Computer did not resync)|(Failed to start) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**          | Does Not Regex Match    | 86400    | (The Computer did not resync) (Failed to start) |
 
 ## Dependencies
 
@@ -37,22 +38,9 @@ Insert the details of the monitor in the below table.
 **Subject:** `Time Sync Compliance Failed - %ComputerName%`  
 
 **Body:**  
-`Time Sync Compliance failed for %ComputerName%.`  
-`Reason:  %RESULT%`
+`Time Sync Compliance failed for %ComputerName%`  
+`Reason: %RESULT%`
 
 ## How to Import
 
 [Import - Remote Monitor - Time Sync Compliance](https://proval.itglue.com/DOC-5078775-13498164)
-
-
-
-
-
-
-
-
-
-
-
-
-

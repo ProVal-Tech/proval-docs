@@ -8,12 +8,13 @@ tags: ['recovery', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is based on the Microsoft article:  
 [Instructions to Manually Resize Your Partition to Install the WinRE Update](https://support.microsoft.com/en-us/topic/kb5028997-instructions-to-manually-resize-your-partition-to-install-the-winre-update-400faa27-9343-461c-ada9-24c8229763bf)  
 
-It creates the Primary partition with the size increase and a label 'Windows RE Tools' is assigned to it.
+It creates the primary partition with the size increase, and a label 'Windows RE Tools' is assigned to it.
 
 ## Caution
 
@@ -33,7 +34,7 @@ It creates the Primary partition with the size increase and a label 'Windows RE 
 |-------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Windows RE Update Fix (EDF)  | This EDF is checked when the script runs successfully to create the Windows RE Tools primary partition     |
 
-#### User Parameters
+### User Parameters
 
 | Name           | Example | Required | Description                                                                                      |
 |----------------|---------|----------|--------------------------------------------------------------------------------------------------|
@@ -41,20 +42,9 @@ It creates the Primary partition with the size increase and a label 'Windows RE 
 
 ## Implementation
 
-- Import the script 'Resize partition to install the WinRE update (KB5034441)'.
-- After import, Reload the cache so the EDF is imported with the script.
+- Import the script 'Resize Partition to Install the WinRE Update (KB5034441)'.
+- After import, reload the cache so the EDF is imported with the script.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

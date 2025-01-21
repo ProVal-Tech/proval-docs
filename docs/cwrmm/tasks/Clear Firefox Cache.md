@@ -8,9 +8,10 @@ tags: ['application', 'logging']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>).
+This document outlines how to clear the Gecko engine (Firefox) browser caches using the ConnectWise RMM implementation of [Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>).
 
 ## Sample Run
 
@@ -23,7 +24,7 @@ Clears Gecko engine (Firefox) browser caches. CW RMM implementation of [Clear-Ge
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Image 1](../../../static/img/Clear-Firefox-Cache/image_3.png)  
 ![Task Creation Image 2](../../../static/img/Clear-Firefox-Cache/image_4.png)  
 
@@ -34,7 +35,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Task Image 1](../../../static/img/Clear-Firefox-Cache/image_6.png)  
 
 A blank function will appear.  
@@ -49,7 +50,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![Task Image 5](../../../static/img/Clear-Firefox-Cache/image_10.png)  
 
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
+Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
 $ProjectName = 'Clear-GeckoCache'
@@ -84,11 +85,11 @@ if ($Parameters) {
 ```
 
 ```powershell
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -124,15 +125,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Clear-Firefox-Cache/image_19.png)  
-
-
-
-
-
-
-
-
-
-
-
-

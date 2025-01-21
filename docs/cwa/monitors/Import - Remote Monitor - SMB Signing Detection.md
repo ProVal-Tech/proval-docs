@@ -8,6 +8,7 @@ tags: ['cve', 'database', 'sql', 'vulnerability']
 draft: false
 unlisted: false
 ---
+
 ## Implementation
 
 1. **Insert EDFs**
@@ -53,7 +54,7 @@ unlisted: false
    LEFT JOIN ExtraFieldData edfAssigned4 ON (edfAssigned4.id=Computers.ComputerId and edfAssigned4.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='f4deaa69-d284-4346-9dfe-3491733a34ba'))
    LEFT JOIN ExtraFieldData edfDefault4 ON (edfDefault4.id=0 and edfDefault4.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='f4deaa69-d284-4346-9dfe-3491733a34ba'))
    WHERE 
-   (((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')\\<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')=0))) OR (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'0')\\<>0))))
+   (((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')=0))) OR (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'0')<>0))))
    ' as `SQL`,
    '4' as `QueryType`,
    'Select||=||=||=|^Select|||||||^' as `ListData`,
@@ -63,7 +64,7 @@ unlisted: false
    (NULL) as `UpdatedBy`,
    (NULL) as `UpdateDate`
    FROM  (SELECT MIN(computerid) FROM computers) a
-   Where (SELECT count(*) From SensorChecks where `GUID` = '716a3b4f-f28d-4ebf-84fe-f719f18d31e4') = 0 ;
+   WHERE (SELECT count(*) From SensorChecks where `GUID` = '716a3b4f-f28d-4ebf-84fe-f719f18d31e4') = 0 ;
    ```
 
    **Insert Search: `CVE-2016-2115 Limit Search`**
@@ -102,7 +103,7 @@ unlisted: false
    LEFT JOIN ExtraFieldData edfAssigned6 ON (edfAssigned6.id=Computers.ComputerId and edfAssigned6.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='f4deaa69-d284-4346-9dfe-3491733a34ba'))
    LEFT JOIN ExtraFieldData edfDefault6 ON (edfDefault6.id=0 and edfDefault6.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='f4deaa69-d284-4346-9dfe-3491733a34ba'))
    WHERE 
-   (((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')\\<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned5.Value,edfDefault5.value),'0')=0))) OR (IFNULL(IFNULL(edfAssigned6.Value,edfDefault6.value),'0')\\<>0))))
+   (((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned5.Value,edfDefault5.value),'0')=0))) OR (IFNULL(IFNULL(edfAssigned6.Value,edfDefault6.value),'0')<>0))))
    ' as `SQL`,
    '4' as `QueryType`,
    'Select||=||=||=|^Select|||||||^' as `ListData`,
@@ -112,7 +113,7 @@ unlisted: false
    (NULL) as `UpdatedBy`,
    (NULL) as `UpdateDate`
    FROM  (SELECT MIN(computerid) FROM computers) a
-   Where (SELECT count(*) From SensorChecks where `GUID` = 'e1ee6e8b-d44b-4aa5-8a1a-4b799dc018f4') = 0 ;
+   WHERE (SELECT count(*) From SensorChecks where `GUID` = 'e1ee6e8b-d44b-4aa5-8a1a-4b799dc018f4') = 0 ;
    ```
 
    **Insert Search: `CVE-2016-2115 SMB Signing`**
@@ -145,7 +146,7 @@ unlisted: false
    LEFT JOIN ExtraFieldData edfAssigned4 ON (edfAssigned4.id=Computers.ComputerId and edfAssigned4.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='bcb76c6b-4231-4ab7-b34c-0fb3dc34db5f'))
    LEFT JOIN ExtraFieldData edfDefault4 ON (edfDefault4.id=0 and edfDefault4.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='bcb76c6b-4231-4ab7-b34c-0fb3dc34db5f'))
    WHERE 
-   (((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')\\<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')=0))) OR (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'0')\\<>0))))
+   (((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')<>0) AND (IFNULL(IFNULL(edfAssigned2.Value,edfDefault2.value),'0')=0) AND (IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')=0))) OR (IFNULL(IFNULL(edfAssigned4.Value,edfDefault4.value),'0')<>0))))
    ' as `SQL`,
    '4' as `QueryType`,
    'Select||=||=||=|^Select|||||||^' as `ListData`,
@@ -155,7 +156,7 @@ unlisted: false
    (NULL) as `UpdatedBy`,
    (NULL) as `UpdateDate`
    FROM  (SELECT MIN(computerid) FROM computers) a
-   Where (SELECT count(*) From SensorChecks where `GUID` = '74f0d0d7-bc52-4656-b5d9-3ba9e913da0b') = 0 ;
+   WHERE (SELECT count(*) From SensorChecks where `GUID` = '74f0d0d7-bc52-4656-b5d9-3ba9e913da0b') = 0 ;
    ```
 
 2. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
@@ -163,15 +164,3 @@ unlisted: false
    ![Image 1](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_1.png)
 
    ![Image 2](../../../static/img/Import---Remote-Monitor---SMB-Signing-Detection/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

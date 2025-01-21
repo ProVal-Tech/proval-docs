@@ -8,15 +8,16 @@ tags: ['memory', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This document outlines the process for creating Remote Monitors for Memory Usage on Windows machines. The creation of these remote monitors is governed by system properties, as well as client-level, location-level and computer-level Extra Data Fields (EDFs). These elements are further detailed within this document.
+This document outlines the process for creating Remote Monitors for Memory Usage on Windows machines. The creation of these remote monitors is governed by system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs). These elements are further detailed within this document.
 
-The script creates remote monitors that trigger an alert when the Memory usage on the target machine exceeds a certain upper threshold percentage and remains above a certain lower threshold percentage for a specified duration. These thresholds can be configured in the system properties, which are elaborated in the **System Properties** section of this document.
+The script creates remote monitors that trigger an alert when the memory usage on the target machine exceeds a certain upper threshold percentage and remains above a certain lower threshold percentage for a specified duration. These thresholds can be configured in the system properties, which are elaborated in the **System Properties** section of this document.
 
 **Note of Caution**: The remote monitors created by this script utilize PowerShell for monitoring. Therefore, its functionality is not guaranteed on any computer running a version of PowerShell older than 5. Please ensure your systems are updated to at least PowerShell version 5 for optimal performance.
 
-## Before you proceed
+## Before You Proceed
 
 The remote monitor created by this script employs the "/Memory/% Committed Bytes In Use" performance counter, while it should be noted that the default monitor set in Automate utilizes the "Memory/Available MBytes" performance counter.
 
@@ -25,7 +26,7 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 1. **/Memory/Available MBytes**:
    - This counter measures the amount of physical memory (RAM) available, in megabytes, at a given moment. It represents the memory that the operating system can allocate to applications without causing excessive paging (swapping data to disk).
    - Useful when you want to monitor the immediate availability of free memory for applications to use.
-   - Includes the memory allocated by idle processes as well that can be released to accommodate new processes.
+   - Includes the memory allocated by idle processes that can be released to accommodate new processes.
 
 2. **/Memory/% Committed Bytes In Use**:
    - This counter represents the percentage of the total virtual address space that is currently committed to physical memory. In simpler terms, it shows how much of the memory allocated for running processes is in use.
@@ -41,8 +42,8 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 1. **Remove Existing Monitors**
    - Remove the existing `ProVal - Production - Memory Threshold Violation Monitor` monitor set from the groups it's already applied to.
      - Execute this SQL query from a RAWSQL monitor set to get rid of the existing monitors:
-       ```
-       Delete From Groupagents where `Name` = 'ProVal - Production - Memory Threshold Violation Monitor'
+       ```sql
+       DELETE FROM Groupagents WHERE `Name` = 'ProVal - Production - Memory Threshold Violation Monitor'
        ```
    - Open the `Server Status` tool by navigating to Help > Server Status.
    - Click the `Do Group Refresh` button to refresh and apply the changes made.
@@ -77,9 +78,9 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 | Name | Example | Required | Description |
 |------|---------|----------|-------------|
 | MEM_Monitoring_Group_Ids | 2,3,855,856 | True | The script will create remote monitors for the machines that belong to the groups identified by the group IDs specified in this system property. The monitor set will not be associated with the groups themselves but with the individual machines. Multiple IDs can be included by separating them with a comma. The default value is `0`. **Note:** If this property is set to `0`, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group IDs are defined in the system properties. |
-| MEM_Monitoring_Server_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to the Windows Servers only. The default value is `0`. The script will remove the monitor set created for the Windows Workstations after setting this property to `1`. |
-| MEM_Monitoring_Workstation_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to the Windows Workstations only. The default value is `0`. The script will remove the monitor set created for the Windows Servers after setting this property to `1`. |
-| MEM_Monitoring_Exclude_Virtual_Machines | 0 | False | Setting this system property to `1` will limit the monitor set creation to the Physical Windows Machines only. The default value is `0`. The script will remove the monitor set created for the Virtual Machines after setting this property to `1`. |
+| MEM_Monitoring_Server_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to Windows Servers only. The default value is `0`. The script will remove the monitor set created for the Windows Workstations after setting this property to `1`. |
+| MEM_Monitoring_Workstation_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to Windows Workstations only. The default value is `0`. The script will remove the monitor set created for the Windows Servers after setting this property to `1`. |
+| MEM_Monitoring_Exclude_Virtual_Machines | 0 | False | Setting this system property to `1` will limit the monitor set creation to Physical Windows Machines only. The default value is `0`. The script will remove the monitor set created for the Virtual Machines after setting this property to `1`. |
 | MEM_Monitoring_Interval | 300 | True | Controls the generated Remote Monitor run time interval. The default is 300 seconds. |
 | MEM_Monitoring_Server_Continuous_Usage_Threshold_Minutes | 30 | True | This property determines the duration in minutes during which servers must consistently exhibit high Memory usage before triggering an alert. By default, this duration is set to `30` minutes. |
 | MEM_Monitoring_Workstation_Continuous_Usage_Threshold_Minutes | 30 | True | This property determines the duration in minutes during which workstations must consistently exhibit high Memory usage before triggering an alert. By default, this duration is set to `30` minutes. |
@@ -135,14 +136,3 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 ## Output
 
 - Remote Monitors
-
-
-
-
-
-
-
-
-
-
-

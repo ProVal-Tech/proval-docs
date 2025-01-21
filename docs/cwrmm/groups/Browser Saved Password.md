@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) and audit the failure endpoints where the browser's saved password failed to clear.
+The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) and audit the failure endpoints where the browser's saved passwords failed to clear.
 
 ## Dependencies
 
@@ -20,9 +21,9 @@ The groups below are created to deploy the [Task - Clear/Audit - Browser Saved P
 
 | Field Name                        | Type of Field (Machine or Organization) | Description                                                                                                                                                      |
 |-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Clear Browser Saved Password endpoints | Dynamic Group                          | This group contains the list of all endpoints where the Browser saved passwords are intended to clear by scheduling [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286). |
-| Browser Saved Password Audit Group | Dynamic Group                          | This group adds the endpoints where the Browser Saved password is selected for audit only by scheduling [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).            |
-| Browser Saved Password Failure     | Dynamic Group                          | This group contains the endpoints where the browser-saved password clearance failed by the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).                        |
+| Clear Browser Saved Password endpoints | Dynamic Group                          | This group contains the list of all endpoints where the browser saved passwords are intended to clear by scheduling [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286). |
+| Browser Saved Password Audit Group | Dynamic Group                          | This group adds the endpoints where the browser saved password is selected for audit only by scheduling [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).            |
+| Browser Saved Password Failure     | Dynamic Group                          | This group contains the endpoints where the browser saved password clearance failed by the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).                        |
 
 ---
 
@@ -39,12 +40,12 @@ Create Dynamic Groups:
 
 Criteria:
 
-- `Browser Saved Pwd Audit Only` company level custom field should be checked
-- AND `Exclude Browser Saved Pwd Audit` site level custom field should not be checked
-- AND `Exclude Browser Saved Pwd Audit` endpoint level custom field should not be checked
-- AND `Clear Browser Saved Pwd` endpoint level custom field should not be checked
+- `Browser Saved Pwd Audit Only` company-level custom field should be checked
+- AND `Exclude Browser Saved Pwd Audit` site-level custom field should not be checked
+- AND `Exclude Browser Saved Pwd Audit` endpoint-level custom field should not be checked
+- AND `Clear Browser Saved Pwd` endpoint-level custom field should not be checked
 - AND agent should be Available (True)
-- OR `Browser Saved Pwd Audit Only` endpoint level custom field should be checked
+- OR `Browser Saved Pwd Audit Only` endpoint-level custom field should be checked
 - AND agent should be Available (True)
 
 ### 2. Clear Browser Saved Password endpoints
@@ -54,12 +55,12 @@ Criteria:
 
 Criteria:
 
-- `Clear Browser Saved Pwd` company level custom field should be checked
-- AND `Exclude Clear Browser Saved Pwd` site level custom field should not be checked
-- AND `Exclude Clear Browser Saved Pwd` endpoint level custom field should not be checked
-- AND `Browser Saved Pwd Audit Only` endpoint level custom field should not be checked
+- `Clear Browser Saved Pwd` company-level custom field should be checked
+- AND `Exclude Clear Browser Saved Pwd` site-level custom field should not be checked
+- AND `Exclude Clear Browser Saved Pwd` endpoint-level custom field should not be checked
+- AND `Browser Saved Pwd Audit Only` endpoint-level custom field should not be checked
 - AND agent should be Available (True)
-- OR `Clear Browser Saved Pwd` endpoint level custom field should be checked
+- OR `Clear Browser Saved Pwd` endpoint-level custom field should be checked
 - AND agent should be Available (True)
 
 ### 3. Browser Saved Password Failure
@@ -69,16 +70,3 @@ Criteria:
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
-
-
-
-
-
-
-
-
-
-
-
-
-

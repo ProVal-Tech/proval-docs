@@ -8,22 +8,11 @@ tags: ['performance', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The Monitor looks for any internal monitor that got disabled due to an error.
+The Monitor looks for any internal monitors that have been disabled due to errors.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

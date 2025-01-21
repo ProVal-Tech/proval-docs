@@ -8,24 +8,13 @@ tags: ['database', 'report', 'security', 'update']
 draft: false
 unlisted: false
 ---
-## Summery:
+
+## Summary
 
 Update the PVALOrgAgentCounts Table for Reporting
 
-## Parameter:
+## Parameters
 
-- **sqlserver**: Server address we plan to access  
-- **sqluser**: username for sql access  
-- **sqlpassword**: password for sql access  
-
-
-
-
-
-
-
-
-
-
-
-
+- **sqlserver**: Server address to access  
+- **sqluser**: Username for SQL access  
+- **sqlpassword**: Password for SQL access  

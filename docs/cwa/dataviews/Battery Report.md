@@ -8,9 +8,10 @@ tags: ['battery', 'performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the battery report information
+This document displays the battery report information.
 
 ## Dependencies
 
@@ -20,38 +21,26 @@ Displays the battery report information
 
 ## Columns
 
-| Column                | Description                                                                                                                                                     |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ComputerID           | The Computer Id in automate.                                                                                                                                 |
-| BatteryID            | The alpha numeric battery id.                                                                                                                                 |
-| Client               | The Client the target belongs to.                                                                                                                             |
-| Location             | The location the target belongs to.                                                                                                                           |
-| Name                 | The Computer Name                                                                                                                                              |
-| BatteryState         | Ok if above 70 percent, poor if between 30 and 70, very poor if between 15 and 30, and replace soon if lower than 15 percent calculated by FullChargeCapacity * 100 / DesignCapacity. |
-| BatteryHealthPercentage| Health Percentage of the Battery, calculated by FullChargeCapacity * 100 / DesignCapacity.                                                                     |
-| Chemistry            | The battery chemistry                                                                                                                                          |
-| FullChargeCapacity    | The Full Charge Capacity of the battery.                                                                                                                      |
-| DesignCapacity       | The design capacity of the battery.                                                                                                                            |
-| CycleCount           | The batteries cycle count.                                                                                                                                     |
-| LastScanTime         | The last time the battery report script ran                                                                                                                    |
-| LongTerm             | The value for long term received from the agnostic script.                                                                                                    |
-| ManufactureDate      | The manufacture date of the battery                                                                                                                            |
-| Manufacturer         | The battery Manufacturer.                                                                                                                                      |
-| RelativeCapacity     | The relative capacity of the battery                                                                                                                           |
-| SerialNumber         | The battery serial number.                                                                                                                                     |
-| ClientID             | Not displayed but used.                                                                                                                                       |
-| LocationID           | Not displayed but used.                                                                                                                                       |
-| ThresholdViolation    | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                 | Description                                                                                                                                                     |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ComputerID            | The Computer ID in Automate.                                                                                                                                 |
+| BatteryID             | The alphanumeric battery ID.                                                                                                                                  |
+| Client                | The client the target belongs to.                                                                                                                             |
+| Location              | The location the target belongs to.                                                                                                                           |
+| Name                  | The computer name.                                                                                                                                              |
+| BatteryState          | "Ok" if above 70 percent, "Poor" if between 30 and 70, "Very Poor" if between 15 and 30, and "Replace Soon" if lower than 15 percent; calculated by FullChargeCapacity * 100 / DesignCapacity. |
+| BatteryHealthPercentage| Health percentage of the battery, calculated by FullChargeCapacity * 100 / DesignCapacity.                                                                     |
+| Chemistry             | The battery chemistry.                                                                                                                                          |
+| FullChargeCapacity     | The full charge capacity of the battery.                                                                                                                      |
+| DesignCapacity        | The design capacity of the battery.                                                                                                                            |
+| CycleCount            | The battery's cycle count.                                                                                                                                     |
+| LastScanTime          | The last time the battery report script ran.                                                                                                                  |
+| LongTerm              | The value for long term received from the agnostic script.                                                                                                    |
+| ManufactureDate       | The manufacture date of the battery.                                                                                                                            |
+| Manufacturer          | The battery manufacturer.                                                                                                                                      |
+| RelativeCapacity      | The relative capacity of the battery.                                                                                                                           |
+| SerialNumber          | The battery serial number.                                                                                                                                     |
+| ClientID              | Not displayed but used.                                                                                                                                       |
+| LocationID            | Not displayed but used.                                                                                                                                       |
+| ThresholdViolation     | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
 

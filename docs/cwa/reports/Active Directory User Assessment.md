@@ -8,9 +8,10 @@ tags: ['active-directory', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The Active Directory User Assessment report displays a comprehensive list of all user accounts in the domain, along with a summary of all of the back-end settings on the Domain Controller.
+The Active Directory User Assessment report displays a comprehensive list of all user accounts in the domain, along with a summary of all the back-end settings on the Domain Controller.
 
 ## Dependencies
 
@@ -18,14 +19,3 @@ This report is dependent on the following items:
 
 - [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9492875)
 - [AD - Create Views/Tables/Schedules for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
-
-
-
-
-
-
-
-
-
-
-

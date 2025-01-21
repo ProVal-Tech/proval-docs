@@ -8,13 +8,16 @@ tags: ['application', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs Extension on Mozilla Firefox Browser.
+Installs an extension on the Mozilla Firefox Browser.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Mozilla-Firefox---Extension---Install/image_1.png) ![Sample Run 2](../../../static/img/Mozilla-Firefox---Extension---Install/image_2.png) ![Sample Run 3](../../../static/img/Mozilla-Firefox---Extension---Install/image_3.png)
+![Sample Run 1](../../../static/img/Mozilla-Firefox---Extension---Install/image_1.png) 
+![Sample Run 2](../../../static/img/Mozilla-Firefox---Extension---Install/image_2.png) 
+![Sample Run 3](../../../static/img/Mozilla-Firefox---Extension---Install/image_3.png)
 
 ## Dependencies
 
@@ -29,12 +32,12 @@ Installs Extension on Mozilla Firefox Browser.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/Mozilla-Firefox---Extension---Install/image_4.png)  
 ![Task Creation Step 2](../../../static/img/Mozilla-Firefox---Extension---Install/image_5.png)  
 
 **Name:** Mozilla Firefox - Extension - Install  
-**Description:** Installs Extension on Mozilla Firefox Browser.  
+**Description:** Installs an extension on the Mozilla Firefox Browser.  
 **Category:** Application  
 ![Task Creation Image](../../../static/img/Mozilla-Firefox---Extension---Install/image_6.png)  
 
@@ -51,7 +54,7 @@ This screen will appear.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Save Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_9.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_10.png)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
@@ -64,14 +67,14 @@ This screen will appear.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Save Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_11.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Button](../../../static/img/Mozilla-Firefox---Extension---Install/image_10.png)  
 
 ![Parameter Image](../../../static/img/Mozilla-Firefox---Extension---Install/image_12.png)  
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Mozilla-Firefox---Extension---Install/image_13.png)  
 
 A blank function will appear.  
@@ -80,7 +83,8 @@ A blank function will appear.
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Function](../../../static/img/Mozilla-Firefox---Extension---Install/image_15.png) ![PowerShell Function Selection](../../../static/img/Mozilla-Firefox---Extension---Install/image_16.png)  
+![PowerShell Function](../../../static/img/Mozilla-Firefox---Extension---Install/image_15.png) 
+![PowerShell Function Selection](../../../static/img/Mozilla-Firefox---Extension---Install/image_16.png)  
 
 The following function will pop up on the screen:  
 ![Function Pop Up](../../../static/img/Mozilla-Firefox---Extension---Install/image_17.png)  
@@ -103,18 +107,18 @@ Remove-Item $WorkingDirectory -Force -Recurse -ErrorAction SilentlyContinue | Ou
 Mkdir $WorkingDirectory 3>&1 2>&1 1>$Null
 try {(New-Object System.Net.WebClient).DownloadFile($PS1URL, $ScriptPath)} catch {throw 'Script Download Failure'}
 
-if ( $Mandate -match '1|True|Yes' ) {
+if ($Mandate -match '1|True|Yes') {
     & $ScriptPath -ExtensionName $ExtensionName -Mandate
 } else {
     & $ScriptPath -ExtensionName $ExtensionName
 }
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 
@@ -133,16 +137,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-
 

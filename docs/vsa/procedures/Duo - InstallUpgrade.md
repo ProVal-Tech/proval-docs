@@ -8,6 +8,7 @@ tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This procedure installs and upgrades Duo for Windows.
@@ -59,7 +60,7 @@ This procedure installs and upgrades Duo for Windows.
 | 10:25:55 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0016 | Success THEN                                   | derek.joniak  |
 | 10:25:55 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0016 | Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server. | derek.joniak  |
 | 10:25:55 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0016 | Informational: GetFile command overwrote the server file C://Kaseya//UserProfiles//910544681671025//GetFiles//..//docs//psoutput.txt with the new contents from c://Proval//psoutput.txt in THEN step 3. | derek.joniak  |
-| 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "New-Item -ItemType Directory -Path /"%ProgramData%//_automation//AgentProcedure -Name Duo/" >/"c://Proval//psoutputtmp.txt" | derek.joniak  |
+| 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: "" -command "New-Item -ItemType Directory -Path /"%ProgramData%//_automation//AgentProcedure -Name Duo/" >/ "c://Proval//psoutputtmp.txt" | derek.joniak  |
 | 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0012 | Success THEN                                   | derek.joniak  |
 | 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0013 | Success THEN                                   | derek.joniak  |
 | 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.             | derek.joniak  |
@@ -70,19 +71,8 @@ This procedure installs and upgrades Duo for Windows.
 | 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as New-Item -ItemType Directory -Path "%ProgramData%//_automation//AgentProcedure -Name Duo" | derek.joniak  |
 | 10:25:49 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.          | derek.joniak  |
 | 10:25:45 am 6-Jul-23    | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                         | derek.joniak  |
-| 10:25:35 am 6-Jul-23    | Run Now - Duo - Install & Upgrade              | Admin derek.joniak scheduled procedure Run Now - Duo - Install & Upgrade to run at Jul 6 2023 11:25AM | derek.joniak  |
+| 10:25:35 am 6-Jul-23    | Run Now - Duo - Install & Upgrade              | Admin derek.joniak scheduled procedure Run Now - Duo - Install & Upgrade to run at Jul 6 2023 11:25 AM | derek.joniak  |
 
 ## Output
 
 Procedure Logfiles
-
-
-
-
-
-
-
-
-
-
-

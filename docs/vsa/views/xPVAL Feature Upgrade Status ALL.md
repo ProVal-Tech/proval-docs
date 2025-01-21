@@ -8,27 +8,15 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-Shows all endpoints that have run the Windows 10 Feature Upgrade in any form.
+This document shows all endpoints that have undergone the Windows 10 Feature Upgrade in any form.
 
 # View Filters
 
-List all filters applied to this view
+The following filters are applied to this view:
 
 | Filter Name                                                                                      | Advanced Filter? | Filter Value |
 |--------------------------------------------------------------------------------------------------|------------------|--------------|
-| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Y                | NOT ""       |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Yes              | NOT ""       |

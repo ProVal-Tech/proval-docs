@@ -8,39 +8,27 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Presents information about drive attributes like Power Cycle Count, temperature, Erase Fail Counts etc.
+This document presents information about drive attributes such as Power Cycle Count, temperature, and Erase Fail Counts.
 
 ## Columns
 
-| Column             | Description                                   |
-|--------------------|-----------------------------------------------|
-| Client Name        | Name of the Client                           |
-| Machine Name       | Name of the Computer                         |
-| Location Name      | Name of the location                         |
-| Letter             | Drive Letter                                 |
-| DriveID            | ID of the Drive                              |
-| Drive Model        | Model of the Drive                           |
-| OS                 | Operating System of the machine              |
-| Attribute Name     | Name of the Attribute                        |
-| Attribute Description | Description of the Attribute               |
-| Value              | Value of the Attribute                       |
-| Worst              | Worst Value of the attribute                 |
-| Raw Value          | Raw Value of the attribute                   |
-| Threshold          | Threshold set for the attribute              |
-| Last User Name     | Last user name on the machine                |
-| LastContact        | Last Contact for computer with the Automate. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                | Description                                   |
+|-----------------------|-----------------------------------------------|
+| Client Name           | Name of the Client                            |
+| Machine Name          | Name of the Computer                          |
+| Location Name         | Name of the Location                          |
+| Letter                | Drive Letter                                  |
+| DriveID               | ID of the Drive                               |
+| Drive Model           | Model of the Drive                            |
+| OS                    | Operating System of the machine               |
+| Attribute Name        | Name of the Attribute                         |
+| Attribute Description  | Description of the Attribute                  |
+| Value                 | Value of the Attribute                        |
+| Worst                 | Worst Value of the Attribute                  |
+| Raw Value             | Raw Value of the Attribute                    |
+| Threshold             | Threshold set for the Attribute               |
+| Last User Name        | Last user name on the machine                 |
+| Last Contact          | Last contact for the computer with the Automate. |

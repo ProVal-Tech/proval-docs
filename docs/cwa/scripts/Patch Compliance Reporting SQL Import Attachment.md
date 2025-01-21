@@ -8,8 +8,9 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Step 1
-Please download the 'PatchComplianceReports.SQL' attached to this document.
+Please download the 'PatchComplianceReports.SQL' file attached to this document.
 
 ---
 
@@ -19,14 +20,3 @@ Import the file using **System** → **General** → **Import** → **SQL File**
 ![Image](../../../static/img/Patch-Compliance-Reporting-SQL-Import-Attachment/image_1.png)
 
 **Note:** Import the SQL file only after importing the [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696) and running it once.
-
-
-
-
-
-
-
-
-
-
-

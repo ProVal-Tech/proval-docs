@@ -8,9 +8,10 @@ tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-Policy to schedule the scan of server endpoints for Azure AD Connect software and gather the version number
+Policy to schedule the scan of server endpoints for Azure AD Connect software and gather the version number.
 
 # Dependencies
 
@@ -23,29 +24,18 @@ Policy to schedule the scan of server endpoints for Azure AD Connect software an
 
 # Details
 
-Policy Name: Azure AD Connect Version Audit  
-Policy Description: Policy to schedule the scan of server endpoints for Azure AD Connect software and gather the version number  
-Applied View: All Servers  
-Assigned Organizations / Machine Groups: None  
-Assigned Machines: None  
-Policy Objects Active:
-- Policy Object Name: Agent Procedures
-  - Policy Object Settings
-    - Policy Object Members: Azure AD Connect Version Audit
-      - Policy Object Member Settings: Schedule: Weekly, Midnight, Do not skip if offline
+**Policy Name:** Azure AD Connect Version Audit  
+**Policy Description:** Policy to schedule the scan of server endpoints for Azure AD Connect software and gather the version number  
+**Applied View:** All Servers  
+**Assigned Organizations / Machine Groups:** None  
+**Assigned Machines:** None  
+
+**Policy Objects Active:**
+- **Policy Object Name:** Agent Procedures
+  - **Policy Object Settings**
+    - **Policy Object Members:** Azure AD Connect Version Audit
+      - **Policy Object Member Settings:** Schedule: Weekly, Midnight, Do not skip if offline
 
 ### Export Attachment
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
-

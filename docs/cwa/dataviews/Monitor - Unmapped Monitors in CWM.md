@@ -8,37 +8,26 @@ tags: ['connectwise', 'report', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will show all monitors in the environment that are uncategorized. Indicating which monitors will send tickets to the default board. This data is useful to ensure that tickets are being routed to the proper board in CW Manage.
+This dataview shows all monitors in the environment that are uncategorized, indicating which monitors will send tickets to the default board. This data is useful to ensure that tickets are being routed to the proper board in ConnectWise Manage.
 
 ## Dependencies
 
-ConnectWise Manage Plugin must be installed and configured with imported service boards.
+The ConnectWise Manage Plugin must be installed and configured with imported service boards.
 
 ## Columns
 
 | Column          | Description                                                                                             |
 |-----------------|---------------------------------------------------------------------------------------------------------|
 | Monitor Name    | The name of the monitor                                                                                 |
-| Monitor Type    | The type of monitor that is unmapped. (Remote | Internal)                                              |
-| Ticket Category  | The current ticket category assigned to the monitor or if the monitor category is Not Set              |
+| Monitor Type    | The type of monitor that is unmapped (Remote | Internal)                                              |
+| Ticket Category  | The current ticket category assigned to the monitor, or if the monitor category is Not Set              |
 | Description     | The description of the ticket category                                                                  |
 | Service Board   | The service board the ticket category is mapped to (This should be blank if the filters are working properly) |
-| Priority        | The priority the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
-| Service Type    | The service type the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
-| Sub Type        | The sub-type ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
-| Item            | The item the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
-| Work Type       | The work type the ticket category is mapped to in CW Manage (This should be blank if the filters are working properly) |
-
-
-
-
-
-
-
-
-
-
-
-
+| Priority        | The priority the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
+| Service Type    | The service type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
+| Sub Type        | The sub-type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
+| Item            | The item the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
+| Work Type       | The work type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |

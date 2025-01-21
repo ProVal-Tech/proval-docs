@@ -8,29 +8,18 @@ tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Windows 11 compatibility check suggests that the computer meets the requirements for installing Windows 11.
+The Windows 11 compatibility check indicates whether the computer meets the requirements for installing Windows 11.
 
 ## Details
 
 | Field Name                | Level    | Type     | Options                     | Default Value | Description                                                                                              | Editable |
 |---------------------------|----------|----------|-----------------------------|---------------|----------------------------------------------------------------------------------------------------------|----------|
-| Windows 11 Compatible      | Endpoint | Dropdown | `Yes` `No` `NA`            | NA            | Windows 11 compatibility check suggests that the computer meets the requirements for installing Windows 11. | Yes      |
+| Windows 11 Compatible      | Endpoint | Dropdown | `Yes`, `No`, `NA`          | NA            | Indicates if the computer meets the requirements for installing Windows 11.                             | Yes      |
 
-## Screenshot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Compatible/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Compatible/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

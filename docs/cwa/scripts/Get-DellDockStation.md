@@ -8,22 +8,23 @@ tags: ['dell', 'installation', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script detects Dell Dockstation on Dell Workstations. Since `Dell Command | Monitor` is required to be installed to detect the dockstations, it will install it if it's not already installed and will proceed to run the commands to detect Dockstations.
+This script detects Dell Dockstations on Dell Workstations. Since `Dell Command | Monitor` is required to be installed to detect the dockstations, the script will install it if it's not already present and will proceed to run the commands to detect Dockstations.
 
-The script will validate the prerequisites before attempting to install the application. It can create a ticket if the pre-req validation fails. It will also attempt to install `Microsoft Visual C++ 2015-2022 Redistributable` if the required version is not installed.
+The script validates the prerequisites before attempting to install the application. It can create a ticket if the prerequisite validation fails. Additionally, it will attempt to install the `Microsoft Visual C++ 2015-2022 Redistributable` if the required version is not installed.
 
-Computer level EDF `Unsupported Dell Bios` will be marked for the computers not having a supported BIOS.
+Computer-level EDF `Unsupported Dell BIOS` will be marked for computers that do not have a supported BIOS.
 
-Pre-req:  
+**Prerequisites:**  
 [Prerequisites for Systems Running on Windows](https://www.dell.com/support/manuals/en-us/command-monitor/dellcommandmonitor_rn/prerequisites-for-systems-running-on-windows?guid=guid-aa49b007-8eb3-496b-851b-d2131a8c74b6&lang=en-us)
 
 ## Dependencies
 
 [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)  
 
-Note: Since [this installer](https://dl.dell.com/FOLDER11078318M/1/Dell-Command-Monitor_KF06N_WIN_10.10.1.13_A00.EXE) works just with a browser, it can be used in the script to download the installer on the machine. Download the installer on the Client Ltshare and share its path in the script at Line 42.
+Note: Since [this installer](https://dl.dell.com/FOLDER11078318M/1/Dell-Command-Monitor_KF06N_WIN_10.10.1.13_A00.EXE) works only with a browser, it can be used in the script to download the installer on the machine. Download the installer on the Client Ltshare and share its path in the script at Line 42.
 
 ## Target
 
@@ -33,7 +34,7 @@ Windows 10, Windows 11 Workstations
 
 This script is designed to be run as an autofix with the [Internal Monitor - Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>).  
 
-Also, it can be run manually  
+It can also be run manually:  
 ![Sample Run](../../../static/img/Get-DellDockStation/image_1.png)
 
 ## Output
@@ -43,19 +44,7 @@ Also, it can be run manually
 
 ## Ticketing
 
-Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>) monitor set to enable ticketing for `Dell Command | Monitor` installation failure.  
+Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>) monitor to enable ticketing for `Dell Command | Monitor` installation failures.  
 
 **Subject:** Dell Command | Monitor Installation Failed  
 ![Ticket Example](../../../static/img/Get-DellDockStation/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,10 +8,11 @@ tags: ['database', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will fetch the uninstall string from the DB and attempt to uninstall LogMeIn from the target machine.  
-Time Saved by Automation: 5 Minutes
+This script will fetch the uninstall string from the database and attempt to uninstall LogMeIn from the target machine.  
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -19,20 +20,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- Runs SQL query to fetch uninstall string for all the LogMeIn clients found in the database.
-- Sequentially runs shell command to uninstall all the LogMeIn clients using their respective uninstallation string.
+- Runs SQL query to fetch the uninstall string for all the LogMeIn clients found in the database.
+- Sequentially runs shell commands to uninstall all the LogMeIn clients using their respective uninstallation strings.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

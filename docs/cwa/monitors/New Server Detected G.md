@@ -8,24 +8,13 @@ tags: ['backup', 'linux', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-An Internal Monitor that will look for any new Windows Server OS or Linux Class machine.
+An internal monitor that will look for any new Windows Server OS or Linux Class machines.
 
-Suggest to ticket to the Pronoc board for backup service clients.
+It is suggested to create a ticket to the Pronoc board for clients requiring backup services.
 
 ## Target
 
 Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-
-

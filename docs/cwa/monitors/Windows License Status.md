@@ -8,9 +8,10 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor Checks and Returns Windows License Status via CIMInstance.
+This remote monitor checks and returns the Windows License Status via CIMInstance.
 
 ## Dependencies
 
@@ -22,17 +23,17 @@ This remote monitor Checks and Returns Windows License Status via CIMInstance.
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer - Warning and Failed  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result               |
 |--------------|----------------|------------|---------------|-------------|----------|----------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | \<Screenshot Below>    |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | \<Screenshot Below>   |
 
 ![Image](../../../static/img/Windows-License-Status/image_1.png)
 
 ## Target
 
-The suggested target for the monitor is the managed service plans for Windows devices. (Example: Managed Workstations 24x7.) Please evaluate the best service plans where the monitor should be applied. It is recommended to include a "limit to" search for this remote monitor that excludes End of Life Windows Machines.
+The suggested target for the monitor is the managed service plans for Windows devices (e.g., Managed Workstations 24x7). Please evaluate the best service plans where the monitor should be applied. It is recommended to include a "limit to" search for this remote monitor that excludes End-of-Life Windows Machines.
 
 Windows Machines - Excluding End-of-Life Windows Machines.
 
@@ -71,23 +72,10 @@ NonGenuineGrace: This means that the Windows installation is in the Non-Genuine 
 ## FAQ
 
 **Q: Receiving unwanted results?**  
-A: Exclude the End of Life machines from monitoring.  
+A: Exclude the End-of-Life machines from monitoring.  
 
 **Q: Not receiving alerts for warnings?**  
 A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script is up-to-date.  
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
-
-
-
-
-
-
-
-
-
-
-
-
-

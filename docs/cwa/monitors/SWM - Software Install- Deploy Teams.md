@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to detect the computers missing the `Teams Machine-Wide Installer` application.
+The purpose of this document is to outline the process for detecting computers that are missing the `Teams Machine-Wide Installer` application.
 
 ## Details
 
@@ -18,7 +19,7 @@ The purpose of the script is to detect the computers missing the `Teams Machine-
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: △ Custom - Execute Script - Winget - Install/Update - Teams  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
@@ -36,21 +37,9 @@ Managed Windows Workstations
 
 **Name**: `△ Custom - Execute Script - Winget - Install/Update - Teams`  
 
-**Note**: The [**EPM - Software Install - Script - Winget - Install/Update - Teams**](<../scripts/Winget - InstallUpdate - Teams.md>) script should be imported prior to creating/importing the alert template; since the alert template should run this script on failures.  
+**Note**: The [**EPM - Software Install - Script - Winget - Install/Update - Teams**](<../scripts/Winget - InstallUpdate - Teams.md>) script should be imported prior to creating or importing the alert template, as the alert template should run this script on failures.  
 
 ## Implementation
 
 Follow the steps provided in this private document to implement the solution:  
 [**Implement - Remote Monitor - Deploy Teams**](<./Deploy Teams.md>)  
-
-
-
-
-
-
-
-
-
-
-
-

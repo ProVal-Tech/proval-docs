@@ -8,25 +8,26 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Lists all the scripts which are in 'proval', 'Proval - client specific', 'Proval - development' folder. It depicts their sync status with ProSync plugin. Along with that it helps to identify if the script is being used in environment or not.
+This document lists all the scripts located in the 'proval', 'Proval - client specific', and 'Proval - development' folders. It depicts their synchronization status with the ProSync plugin and helps identify whether the script is being used in the environment.
 
 ## Dependencies
 
-plugin_prosync_scripts
+- plugin_prosync_scripts
 
 ## Columns
 
 | Column                     | Description                                             |
 |----------------------------|---------------------------------------------------------|
-| Folder Name                | Name of the Folder                                      |
-| Script ID                  | Script ID                                              |
-| Script Name                | Name of the script                                     |
-| Total Runs                 | Number of times script executed in environment         |
-| Synced In ProVal Plugin    | Is script synced with prosync plugin or not            |
-| FirstRuntime               | Depicts first time script was executed in environment. |
-| LastRuntime                | Depicts last time script was executed in environment.  |
+| Folder Name                | Name of the folder                                      |
+| Script ID                  | Unique identifier for the script                        |
+| Script Name                | Name of the script                                      |
+| Total Runs                 | Number of times the script has been executed in the environment |
+| Synced In ProVal Plugin    | Indicates whether the script is synced with the ProSync plugin |
+| First Runtime              | Timestamp of the first time the script was executed in the environment |
+| Last Runtime               | Timestamp of the last time the script was executed in the environment |
 
 ## Reference Tables
 
@@ -34,4 +35,3 @@ plugin_prosync_scripts
 - lt_scripts
 - h_systemtimings
 - plugin_prosync_scripts
-

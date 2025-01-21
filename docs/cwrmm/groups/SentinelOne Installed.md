@@ -8,9 +8,10 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The group contains the Windows machines where Sentinel Agent is installed.
+This document outlines the process for creating a dynamic group that includes Windows machines with the Sentinel Agent installed.
 
 ## Group Creation
 
@@ -19,11 +20,11 @@ The group contains the Windows machines where Sentinel Agent is installed.
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
    ![Image](../../../static/img/SentinelOne-Installed/image_2.png)  
-   This page will appear after clicking on the `Dynamic Group` button:  
+   The following page will appear after clicking the `Dynamic Group` button:  
    ![Image](../../../static/img/SentinelOne-Installed/image_3.png)
 
 3. Set the group name to `SentinelOne Installed`.  
-   Description: `The group contains the windows machines where Sentinel Agent is installed.`  
+   Description: `The group contains the Windows machines where the Sentinel Agent is installed.`  
    ![Image](../../../static/img/SentinelOne-Installed/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
@@ -44,15 +45,3 @@ The group contains the Windows machines where Sentinel Agent is installed.
 
 ![Image](../../../static/img/SentinelOne-Installed/image_10.png)  
 ![Image](../../../static/img/SentinelOne-Installed/image_11.png)
-
-
-
-
-
-
-
-
-
-
-
-

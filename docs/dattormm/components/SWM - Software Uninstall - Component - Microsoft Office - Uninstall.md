@@ -8,6 +8,7 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This component will run the Office Scrub utility and remove all or specified Microsoft Office products.
@@ -18,15 +19,16 @@ This component will run the Office Scrub utility and remove all or specified Mic
 
 ## Implementation
 
-Export the component from ProVal's Datto RMM instance  
-**Name:** Microsoft Office - Uninstall  
-![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_1.png)  
-The export will download the necessary component (cpt) file.  
-![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_2.png)  
-Import this component file into the partner's Datto RMM instance  
-![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_3.png)  
+1. Export the component from ProVal's Datto RMM instance.  
+   **Name:** Microsoft Office - Uninstall  
+   ![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_1.png)  
+   The export will download the necessary component (cpt) file.  
+   ![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_2.png)  
+   
+2. Import this component file into the partner's Datto RMM instance.  
+   ![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_3.png)  
 
-Proval Plug & Play: This component requires no configuration once imported.
+**Proval Plug & Play:** This component requires no configuration once imported.
 
 ## Usage
 
@@ -36,24 +38,13 @@ Select the versions you wish to uninstall.
 
 ## Output
 
-A job status of Success is expected.  
+A job status of **Success** is expected.  
 ![Image](../../../static/img/SWM---Software-Uninstall---Component---Microsoft-Office---Uninstall/image_5.png)  
 
-A job status of expired may also occur. If expired is displayed, verification will be required to determine if the uninstall was successful.  
+A job status of **Expired** may also occur. If "Expired" is displayed, verification will be required to determine if the uninstall was successful.  
 
 **StdOut**  
-StdOut is not expected  
+StdOut is not expected.  
 
 **StdErr**  
-StdErr is not expected  
-
-
-
-
-
-
-
-
-
-
-
+StdErr is not expected.  

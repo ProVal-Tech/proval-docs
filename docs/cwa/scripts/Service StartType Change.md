@@ -8,6 +8,7 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 This script configures the start type for specified services.
 
@@ -61,14 +62,3 @@ Please have the following file hash whitelisted in your security environment to 
 ## Output
 - Script log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-

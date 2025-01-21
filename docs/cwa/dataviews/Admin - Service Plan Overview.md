@@ -8,34 +8,23 @@ tags: ['patching']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview shows the status of the Service plan, Onboarding, patching, and other useful information for each location.
+This document provides an overview of the service plan status, onboarding, patching, and other useful information for each location.
 
 ## Columns
 
 | Column                     | Description                                                                                          |
 |----------------------------|------------------------------------------------------------------------------------------------------|
-| Client                     | Display the name of the client.                                                                      |
-| Location                   | Display the name of the locations.                                                                    |
-| Onboarding                 | Display the status of Onboarding. [Enabled/Disabled]                                                |
-| Server Service Plan        | Display the server service plan status.                                                               |
-| Workstations Service Plan   | Display the workstations service plan status.                                                        |
-| Servers Covered            | Display the count of servers covered under the contract.                                             |
-| Workstations Covered       | Display the count of workstations covered under the contract.                                        |
-| Server Patching            | Display the server patching status. [Enabled/Disabled]                                              |
-| Workstations Patching      | Display the workstations patching status. [Enabled/Disabled]                                        |
-| Administrator Credentials  | Display the status of Admin creds set in Deployment & default tab on Locations.                      |
-| Cache Drive                | Display the status of the Location cache drive.                                                     |
-
-
-
-
-
-
-
-
-
-
-
-
+| Client                     | Displays the name of the client.                                                                      |
+| Location                   | Displays the name of the locations.                                                                    |
+| Onboarding                 | Displays the status of onboarding. [Enabled/Disabled]                                                |
+| Server Service Plan        | Displays the server service plan status.                                                               |
+| Workstations Service Plan   | Displays the workstations service plan status.                                                        |
+| Servers Covered            | Displays the count of servers covered under the contract.                                             |
+| Workstations Covered       | Displays the count of workstations covered under the contract.                                        |
+| Server Patching            | Displays the server patching status. [Enabled/Disabled]                                              |
+| Workstations Patching      | Displays the workstations patching status. [Enabled/Disabled]                                        |
+| Administrator Credentials  | Displays the status of admin credentials set in the Deployment & Default tab on Locations.           |
+| Cache Drive                | Displays the status of the location cache drive.                                                     |

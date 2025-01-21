@@ -8,9 +8,10 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an automate implementation of the Disable-DotNet3 agnostic script.
+This document describes the implementation of the Disable-DotNet3 agnostic script within ConnectWise Automate.
 
 ## Sample Run
 
@@ -22,16 +23,4 @@ This is an automate implementation of the Disable-DotNet3 agnostic script.
 
 ## Process
 
-Please review agnostic content documentation for process information.
-
-
-
-
-
-
-
-
-
-
-
-
+Please review the agnostic content documentation for process information.

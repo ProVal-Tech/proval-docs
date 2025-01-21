@@ -8,32 +8,22 @@ tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-A view which shows all machines with a pccomp user present on the machine.
+This document provides a view that shows all machines with a PCComp user present on the machine.
 
 # Dependencies
 
-Below is the Docx for the script created to check the user status:
-- [https://proval.itglue.com/5078775/docs/18178737](https://proval.itglue.com/5078775/docs/18178737)
+Below is the link to the document for the script created to check the user status:
+- [User Status Script Documentation](https://proval.itglue.com/5078775/docs/18178737)
 
 # View Filters
 
-List all filters applied to this view.
+The following filters are applied to this view:
 
 | Filter Name           | Advanced Filter? | Filter Value |
 |----------------------|------------------|--------------|
-| cPVAL User Status    | Y                | *present*    |
+| cPVAL User Status    | Yes              | *present*    |
 |                      |                  |              |
 |                      |                  |              |
-
-
-
-
-
-
-
-
-
-
-

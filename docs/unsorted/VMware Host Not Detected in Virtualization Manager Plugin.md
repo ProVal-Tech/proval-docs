@@ -8,13 +8,14 @@ tags: ['networking', 'security', 'windows']
 draft: true
 unlisted: false
 ---
-\<div class='text-section scrollable'>
 
-The document will help in finding the incorrect configuration that can cause the VMware host detection to fail as well as explains the resolution for each of those areas.  
+<div class='text-section scrollable'>
+
+This document will help in identifying incorrect configurations that can cause VMware host detection to fail, as well as explain the resolution for each of those areas.  
 
 ### Probe Configuration
 
-1. Verify a network probe is configured on the same IP subnet where the VMware host resides. Refer to the [Enabling the Network Probe](https://docs.connectwise.com/ConnectWise_Automate_Documentation/070/175/020) article for more information.
+1. Verify that a network probe is configured on the same IP subnet where the VMware host resides. Refer to the [Enabling the Network Probe](https://docs.connectwise.com/ConnectWise_Automate_Documentation/070/175/020) article for more information.
 2. Confirm that the probe machine has the **VM Manager Probe Check via Remote** role detected.  
    If you do not see this role, run the following commands on the probe machine:
    - Update Config
@@ -25,7 +26,7 @@ The document will help in finding the incorrect configuration that can cause the
 
 ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_9.png)  
 
-3. Confirm that the VMware host's IP address appears under the **Network Devices** under the client in the **Control Center**.  
+3. Confirm that the VMware host's IP address appears under the **Network Devices** section for the client in the **Control Center**.  
 
 &nbsp;
 
@@ -40,23 +41,23 @@ The document will help in finding the incorrect configuration that can cause the
 ### Credential Configuration
 
 5. Confirm that you have configured the proper credentials for the VMware host. This can be done from the **Global Settings**.  
-   The Global Credentials are for if you have an ESXi Password that you share between multiple clients (Not Recommended).
+   The Global Credentials are for instances where you have an ESXi password that you share between multiple clients (not recommended).
 
 ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_12.png)  
 
-The other option (Recommended), is to manually set the credentials through the Local Credentials section and select the proper password from the client or location:
+The recommended option is to manually set the credentials through the Local Credentials section and select the appropriate password from the client or location:
 
 ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_13.png)  
 
-If you do not have credentials saved at the client or location, you can add them with a quick shortcut when you hit the dropdown and select new credential:
+If you do not have credentials saved at the client or location, you can add them quickly by hitting the dropdown and selecting "New Credential":
 
 ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_14.png) ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_15.png)  
 
-If the above steps are fine please check the below steps:
+If the above steps are fine, please check the following:
 
 &nbsp;
 
-1. From the Control Center, open the Computer Management Screen of the Probe agent and open the File Explorer and look for the *C:/Windows/LTSVC/Plugin_VM.txt* log file on the probe machine.
+1. From the Control Center, open the Computer Management screen of the Probe agent, and open the File Explorer to look for the *C:/Windows/LTSVC/Plugin_VM.txt* log file on the probe machine.
 2. Verify that the VMware host is being scanned. If the IP address does not appear in the log, refer to the above section on **Probe Configuration**.
 3. Check for an error message similar to the one below associated with the IP address of your VMware host:  
    *The underlying connection was closed: An unexpected error occurred on a send.....InnerException: Authentication failed because the remote party has closed the transport stream. This indicates that you must modify the ciphers allowed on the VMware host.*  
@@ -70,21 +71,8 @@ If the above steps are fine please check the below steps:
 
 ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_17.png)  
 
-If none of the above steps help, please reach out to us at [Support@provaltech.com](mailto:Support@provaltech.com)  
+If none of the above steps help, please reach out to us at [Support@provaltech.com](mailto:Support@provaltech.com).  
 
 &nbsp;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>

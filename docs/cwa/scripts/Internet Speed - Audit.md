@@ -8,17 +8,18 @@ tags: ['database', 'email', 'networking', 'performance', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Runs an internet speed test via the Ookla SpeedTest CLI application.
+This document outlines how to run an internet speed test via the Ookla SpeedTest CLI application.
 
 ## Sample Run
 
 Save the result to the database only.  
 ![Sample Run Image 1](../../../static/img/Internet-Speed---Audit/image_1.png)  
-Save the result/output to the database and email it to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com)  
+Save the result/output to the database and email it to [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com).  
 ![Sample Run Image 2](../../../static/img/Internet-Speed---Audit/image_2.png)  
-Save the result to the database and email it to both [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com)  
+Save the result to the database and email it to both [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com) and [support@provaltech.com](mailto:support@provaltech.com).  
 ![Sample Run Image 3](../../../static/img/Internet-Speed---Audit/image_3.png)  
 
 ## Dependencies
@@ -29,14 +30,14 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 
 | Name            | Example                                      | Required | Description                                                                                                                                                                |
 |-----------------|----------------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Email_Address   | [support@provaltech.com](mailto:support@provaltech.com) | False    | Emails out the result to the provided email address(es). Multiple email addresses should be separated by a semi-colon (;). e.g., [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com); [support@provaltech.com](mailto:support@provaltech.com) |
+| Email_Address   | [support@provaltech.com](mailto:support@provaltech.com) | False    | Emails the result to the provided email address(es). Multiple email addresses should be separated by a semicolon (;). e.g., [ram.kishor@provaltech.com](mailto:ram.kishor@provaltech.com); [support@provaltech.com](mailto:support@provaltech.com) |
 
 ## Global Parameters
 
 | Name                | Example | Required | Description                                                                                                           |
 |---------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------|
 | Retention            | 60      | True     | This sets the table data retention for each device; if the data is older than the retention value, it will be deleted. |
-| Delete_Old_Data     | 1       | False    | If it is set to 1, then the deletion of data will work; else it will be skipped. By default, the value is set to 0 to skip. |
+| Delete_Old_Data     | 1       | False    | If set to 1, then the deletion of data will work; otherwise, it will be skipped. By default, the value is set to 0 to skip. |
 
 ## Process
 
@@ -48,21 +49,8 @@ See [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-Inter
 - Local File
 - Custom Table
 - Dataview
-- Email (if email address is provided in the user parameter)
+- Email (if an email address is provided in the user parameter)
 
 ## Sample Email
 
 ![Sample Email Image](../../../static/img/Internet-Speed---Audit/image_4.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

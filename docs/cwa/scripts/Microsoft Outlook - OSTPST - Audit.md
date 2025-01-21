@@ -8,12 +8,13 @@ tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script collects all the OST/PST file names and sizes from the Windows machines and stores it into a custom table [EPM - Data Collection - Custom Table - pvl_outlook_pst_ost_audit](<../tables/pvl_outlook_pst_ost_audit.md>).
+This script collects all the OST/PST file names and sizes from Windows machines and stores them in a custom table [EPM - Data Collection - Custom Table - pvl_outlook_pst_ost_audit](<../tables/pvl_outlook_pst_ost_audit.md>).
 
-Script Path: C:/Programdata/_Automation/Script/Audit-OutlookDB/Audit-OutlookDB.ps1  
-File Hash: B5689044612005060B790DFC5560C8E28E44B82BDE107D971AA146B91F147881
+**Script Path:** C:/ProgramData/_Automation/Script/Audit-OutlookDB/Audit-OutlookDB.ps1  
+**File Hash:** B5689044612005060B790DFC5560C8E28E44B82BDE107D971AA146B91F147881
 
 ## Sample Run
 
@@ -27,16 +28,3 @@ File Hash: B5689044612005060B790DFC5560C8E28E44B82BDE107D971AA146B91F147881
 
 - Script log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

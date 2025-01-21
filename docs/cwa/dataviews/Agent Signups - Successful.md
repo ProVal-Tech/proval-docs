@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 An audit of the DISTINCT computers that successfully signed up using the network probe.
@@ -20,27 +21,14 @@ An audit of the DISTINCT computers that successfully signed up using the network
 | Location Name        | Name of the location.                                           |
 | Network Probe        | Name of the Network Probe.                                      |
 | Computer Name        | Name of the computer that the probe failed to install the agent on. |
-| Network ProbeID      | ID of the Network Probe.                                        |
+| Network Probe ID     | ID of the Network Probe.                                        |
 | Router Address       | Remote/Router address of the computer.                          |
-| MAC address          | MAC Address of the computer.                                    |
+| MAC Address          | MAC Address of the computer.                                    |
 | IP Address           | IP address of the computer.                                     |
-| Operating System     | Operating system of the Computer.                               |
-| Signup Date          | Date when the Signup was successful.                            |
-| Last Logged In User  | Detail of the last logged in user.                              |
-| Last Contact         | Last contact of the Computer.                                   |
+| Operating System     | Operating system of the computer.                               |
+| Signup Date          | Date when the signup was successful.                            |
+| Last Logged In User  | Detail of the last logged-in user.                              |
+| Last Contact         | Last contact of the computer.                                   |
 | Computer ID          | Computer ID of the computer.                                    |
 | Location ID          | Location ID of the computer.                                    |
 | Client ID            | Client ID of the computer.                                      |
-
-
-
-
-
-
-
-
-
-
-
-
-

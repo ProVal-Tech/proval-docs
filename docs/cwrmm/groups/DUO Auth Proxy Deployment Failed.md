@@ -8,10 +8,10 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This contains the devices where the "DUO Security Authentication Proxy" application deployment failed by the script "DUO Auth Proxy - Install/Update Latest Version".  
-It is built for auditing purposes.
+This document contains the devices where the "DUO Security Authentication Proxy" application deployment failed due to the script "DUO Auth Proxy - Install/Update Latest Version." It is built for auditing purposes.
 
 ## Dependencies
 
@@ -21,9 +21,7 @@ It is built for auditing purposes.
 
 | Field Name                          | Type of Field (Machine or Organization) | Description                                                                                                                                             |
 |-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DUO Auth Proxy Deployment Failed     | Dynamic                                 | This contains the devices where the "DUO Security Authentication Proxy" application deployment failed by the script "DUO Auth Proxy - Install/Update Latest Version".It is built for auditing purposes. |
-
-
+| DUO Auth Proxy Deployment Failed     | Dynamic                                 | This contains the devices where the "DUO Security Authentication Proxy" application deployment failed due to the script "DUO Auth Proxy - Install/Update Latest Version." It is built for auditing purposes. |
 
 ## Group Creation
 
@@ -35,8 +33,8 @@ It is built for auditing purposes.
    This page will appear after clicking on the `Dynamic Group` button:  
    ![Dynamic Group Page](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_3.png)
 
-3. Set the group name to `DUO Auth Proxy Deployment Failed`  
-   Description: `This contains the devices where the "DUO Security Authentication Proxy" application deployment failed by the script "DUO Auth Proxy - Install/Update Latest Version".`  
+3. Set the group name to `DUO Auth Proxy Deployment Failed`.  
+   Description: `This contains the devices where the "DUO Security Authentication Proxy" application deployment failed due to the script "DUO Auth Proxy - Install/Update Latest Version."`  
    ![Group Name and Description](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
@@ -48,15 +46,3 @@ It is built for auditing purposes.
    - Set `Failed` in the comparison condition.  
    ![Search and Select Custom Field](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_7.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
-
-
-
-
-
-
-
-
-
-
-
-

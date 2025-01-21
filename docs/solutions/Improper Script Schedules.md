@@ -8,9 +8,10 @@ tags: ['mysql', 'permissions', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of this solution is to present the scripts that are improperly Scheduled.
+The purpose of this document is to present the scripts that are improperly scheduled.
 
 ## Associated Content
 
@@ -19,22 +20,22 @@ The purpose of this solution is to present the scripts that are improperly Sched
 | Content                                                                                                   | Type      | Function                                       |
 |-----------------------------------------------------------------------------------------------------------|-----------|------------------------------------------------|
 | [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>) | Script    | Imports the associated view.                   |
-| [CWM - Automate - Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343) | Dataview  | Stores the Improper scheduled Scripts          |
+| [CWM - Automate - Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343) | Dataview  | Stores the improperly scheduled scripts        |
 
 #### Dependencies
 
 | Content                                                                                                   | Type          | Function                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - View - pvl_Scheduled_Scripts](<../cwa/views/pvl_Scheduled_Scripts.md>)         | Custom Table  | Store and execute the SQL query utilized by the [Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343). |
+| [CWM - Automate - View - pvl_Scheduled_Scripts](<../cwa/views/pvl_Scheduled_Scripts.md>)         | Custom Table  | Stores and executes the SQL query utilized by the [Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343). |
 
 ## Implementation
 
 ### 1.
-Import the following script from the `ProSync` plugin
+Import the following script from the `ProSync` plugin:
 - [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>)
 
 ### 2.
-Import the following Dataview from the `ProSync` plugin
+Import the following Dataview from the `ProSync` plugin:
 - [CWM - Automate - Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343)
 
 ### 3.
@@ -49,15 +50,3 @@ Validate the presence of data in the [CWM - Automate - Dataview - Improper Scrip
 
 ### 6.
 Remove the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>) script.
-
-
-
-
-
-
-
-
-
-
-
-

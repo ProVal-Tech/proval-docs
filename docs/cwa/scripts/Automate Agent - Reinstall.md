@@ -8,6 +8,7 @@ tags: ['connectwise', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is used to perform a full uninstall and reinstall of the CWA Agent on the target machine through the ConnectWise Control RMM+ add-in.
@@ -16,7 +17,7 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 
 ## Sample Run
 
-**Target:** Windows and MAC agents
+**Target:** Windows and Mac agents
 
 ![Sample Run](../../../static/img/Automate-Agent---Reinstall/image_1.png)
 
@@ -32,23 +33,11 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 
 | Name                          | Example                                    | Required | Description                                                                                                                                   |
 |-------------------------------|--------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RMMPlus_AccessKey             | ajw8fh2p93ufn;o31ifu2091j23oif            | True     | This is the key setup in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.                                   |
+| RMMPlus_AccessKey             | ajw8fh2p93ufn;o31ifu2091j23oif            | True     | This is the key set up in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.                                   |
 | RMMPlus_Headers               | Origin: [site.site.com](http://site.site.com) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control. |
 | RMMPlus_StaleAgentThreshold   | 30                                         | True     | The number of days to indicate what a "stale" agent is to the scripts. 30 is the default.                                                  |
-| RMMPlus_Timeout               | 1000                                       | True     | The default timeout for commands runs via RMM+ through Automate. 1000 is the default.                                                      |
+| RMMPlus_Timeout               | 1000                                       | True     | The default timeout for commands run via RMM+ through Automate. 1000 is the default.                                                      |
 
 ## Output
 
 - Script log messages only.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will execute a command via the default command-line parser on the target agent through Control.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -32,22 +33,10 @@ Time Saved by Automation: 10 Minutes
 
 | Name                  | Example                           | Required | Description                                                                                                      |
 |-----------------------|-----------------------------------|----------|------------------------------------------------------------------------------------------------------------------|
-| RMMPlus_AccessKey     | dd22rtbm!sde8ye                  | True     | This is the key setup in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.       |
+| RMMPlus_AccessKey     | dd22rtbm!sde8ye                  | True     | This is the key set up in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.       |
 | RMMPlus_Headers       | origin: [yours.control.com](http://yours.control.com) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control. |
-| RMMPlus_Timeout       | 1000                              | True     | The default timeout for commands runs via RMM+ through Automate. 1000 is the default.                          |
+| RMMPlus_Timeout       | 1000                              | True     | The default timeout for command runs via RMM+ through Automate. 1000 is the default.                          |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

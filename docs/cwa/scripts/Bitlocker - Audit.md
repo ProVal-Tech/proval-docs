@@ -8,9 +8,10 @@ tags: ['backup', 'encryption', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Gathers Bitlocker information from the target endpoint and stores it in the custom table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>). Creates a tpm table named `plugin_proval_tpm_audit` and populates that table with TPM data. Creates a backup text document with the recovery password in the ltshare for the target machine.
+The Bitlocker Audit script gathers Bitlocker information from the target endpoint and stores it in the custom table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>). It creates a TPM table named `plugin_proval_tpm_audit` and populates that table with TPM data. Additionally, it creates a backup text document with the recovery password in the LTShare for the target machine.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Bitlocker_Audit/Bitlocker_Audit.ps1`  
 **File Hash (SHA256):** `4C4E524791404130BA61E50C287681010F4D9161766945C36411AEAD23588CFF`  
@@ -20,11 +21,11 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 **File Hash (SHA256):** `36BDC7BDE052953BE5DB9324F6E00730C2E0494BC74121BE690CD16117FFF058`  
 **File Hash (MD5):** `B332B23E8155ACC256D9737322A7ADF1`  
 
-*Note*: *Bitlocker Drive Encryption Feature must be enabled on Servers to encrypt a drive with Bitlocker disk encryption on it. Encryption will not work without enabling this feature.*
+*Note*: *The Bitlocker Drive Encryption feature must be enabled on servers to encrypt a drive with Bitlocker disk encryption. Encryption will not work without enabling this feature.*
 
 ## Sample Run
 
-**First Run:** Run the script against any online windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution.  
+**First Run:** Run the script against any online Windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution.  
 ![First Run](../../../static/img/Bitlocker---Audit/image_1.png)
 
 **Regular Execution:**  
@@ -39,7 +40,7 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 
 | Name              | Example | Required                              | Description                                                                                                                                               |
 |-------------------|---------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set_Environment    | 1       | For First Run (After Updating the script) | Run the script against any online windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution. |
+| Set_Environment    | 1       | For First Run (After Updating the script) | Run the script against any online Windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution. |
 
 ## EDFs
 
@@ -66,17 +67,4 @@ Gathers Bitlocker information from the target endpoint and stores it in the cust
 
 - Custom table
 - Dataview
-- Backup file under LTshare at "LTShare/Uploads/\<ClientName>/\<ComputerName (Computerid)>"
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Backup file under LTShare at "LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>"

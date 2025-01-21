@@ -8,46 +8,35 @@ tags: ['dell', 'firmware', 'installation', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script installs and runs a scan for Dell Command Update.  
+This script installs and runs a scan for Dell Command Update.
 
-**Time Saved by Automation:** 10 Minutes  
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Dell-Command-update---New-v-3.1+/image_1.png)  
+![Sample Run](../../../static/img/Dell-Command-update---New-v-3.1+/image_1.png)
 
 ## Variables
 
-| Variable | Description |
-|----------|-------------|
+| Variable | Description                                   |
+|----------|-----------------------------------------------|
 | Logs     | This contains the Dell command execution failure logs |
 
-#### User Parameters
+### User Parameters
 
 | Name         | Example | Required | Description                                                                                                   |
 |--------------|---------|----------|---------------------------------------------------------------------------------------------------------------|
-| DCU_INSTALL  | 1       | False    | Set it to 1 then it will (Just install/Upgrade DCU. No scans or updates)                                     |
-| DCU_SCAN     | 1       | False    | Set it to 1 then it will (Install/Upgrade DCU, run a scan, no updates)                                      |
-| DCU_BIOS     | 1       | False    | Set it to 1 then it will (Install/Upgrade DCU if needed, run a scan, run updates and attempt BIOS)          |
+| DCU_INSTALL  | 1       | False    | Set it to 1 to install/upgrade DCU. No scans or updates will be performed.                                   |
+| DCU_SCAN     | 1       | False    | Set it to 1 to install/upgrade DCU, run a scan, and perform no updates.                                      |
+| DCU_BIOS     | 1       | False    | Set it to 1 to install/upgrade DCU if needed, run a scan, execute updates, and attempt a BIOS update.       |
 
 ## Process
 
-This script installs Dell Command Update if not present, updates it to 3.1.2 if needed, configures it, runs a scan, and then runs a one-time Dell firmware update by default if no value is provided in the user parameters.  
+This script installs Dell Command Update if it is not present, updates it to version 3.1.2 if needed, configures it, runs a scan, and then performs a one-time Dell firmware update by default if no value is provided in the user parameters.
 
 ## Output
 
-- Script log  
-
-
-
-
-
-
-
-
-
-
-
-
+- Script log

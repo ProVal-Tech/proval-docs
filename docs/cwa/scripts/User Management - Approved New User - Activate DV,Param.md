@@ -8,12 +8,13 @@ tags: ['database', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will enable the users which has been disabled by the dependent script.  
-This script will help to update the dependent dataview and custom table as well.
+This script will enable the users that have been disabled by the dependent script.  
+It will also help to update the dependent DataView and custom table.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -21,44 +22,32 @@ Time Saved by Automation: 15 Minutes
 
 ## Dependencies
 
-- [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV,Autofix,Global.md>)  
+- [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV,Autofix,Global.md>)  
 - [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)  
 - [New Account Audit and Disable For Approve [Script]](<../dataviews/New Account Audit and Disable For Approve.md>)  
 - [New User Account Audit Table](<../tables/custom_proval_computer_new_accounts.md>)  
 
 ## Variables
 
-username
+- username
 
 #### User Parameters
 
 | Name     | Example                | Required | Description                                    |
 |----------|------------------------|----------|------------------------------------------------|
-| username | user1,user2,user3     |          | Provide the username which user want to approve.|
+| username | user1,user2,user3     |          | Provide the usernames that you want to approve.|
 
 ## Process
 
-This script is post action of above script, it will run to enable the disabled account from the above script.  
-This script is only required when the above script is used to disable account, if used only for audit then this script is not required.
+This script is the post-action of the above script; it will run to enable the disabled accounts from the previous script.  
+This script is only required when the above script is used to disable accounts. If used only for audit, then this script is not required.
 
 ## Output
 
 The location and method by which this script returns data.
 
-Ex:  
+Examples:  
 
-- Script log
-- Dataview
-- custom table
-
-
-
-
-
-
-
-
-
-
-
-
+- Script log  
+- DataView  
+- Custom table  

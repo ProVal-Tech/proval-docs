@@ -8,9 +8,10 @@ tags: ['database', 'storage', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table contains the vssadmin storage details.
+This table contains the VSSAdmin storage details.
 
 ## Dependencies
 
@@ -24,16 +25,16 @@ This table contains the vssadmin storage details.
 
 | Column                | Type     | Explanation                                         |
 |----------------------|----------|-----------------------------------------------------|
-| computerid           | INT      | computerid of the agent                             |
-| ShadowCopyVolume     | VARCHAR  | Volume letter where vssadmin enabled                |
-| ShadowStorageUsed    | VARCHAR  | Volume storage used by vss storage                   |
-| ShadowStorageAllocated| VARCHAR  | The total allocated storage space for vss storage    |
-| ShadowStorageMax     | VARCHAR  | Maximum storage for the vss storage                  |
-| TimeStamp            | DATETIME | Stores date when script was last executed            |
+| computerid           | INT      | Computer ID of the agent                            |
+| ShadowCopyVolume     | VARCHAR  | Volume letter where VSSAdmin is enabled            |
+| ShadowStorageUsed    | VARCHAR  | Volume storage used by VSS storage                  |
+| ShadowStorageAllocated| VARCHAR  | The total allocated storage space for VSS storage   |
+| ShadowStorageMax     | VARCHAR  | Maximum storage for the VSS storage                 |
+| TimeStamp            | DATETIME | Stores the date when the script was last executed   |
 
 ## SQL
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_vssadminstorage` (
   `computerid` INT(11) NOT NULL,
   `ShadowCopyVolume` VARCHAR(50) NOT NULL,
@@ -41,20 +42,7 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_vssadminstorage` (
   `ShadowStorageAllocated` VARCHAR(50) NOT NULL,
   `ShadowStorageMax` VARCHAR(50) NOT NULL,
   `TimeStamp` DATETIME NOT NULL,
-  PRIMARY KEY (`computerid`,`ShadowCopyVolume`),
+  PRIMARY KEY (`computerid`, `ShadowCopyVolume`),
   CONSTRAINT `plugin_proval_vssadminstorage_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

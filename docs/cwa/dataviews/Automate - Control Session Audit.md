@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview helps you audit control sessions. It helps you track details like participant name, connection and disconnection time.
+This dataview helps you audit control sessions by tracking details such as participant names, connection times, and disconnection times.
 
 ## Columns
 
@@ -18,23 +19,10 @@ This dataview helps you audit control sessions. It helps you track details like 
 |-------------------|------------------------------------------------------------|
 | Client            | Displays the name of the client                            |
 | Location          | Displays the name of the location                          |
-| Computer          | Displays the name of the machine user connected to         |
+| Computer          | Displays the name of the machine the user is connected to  |
 | Session Name      | Displays the name of the connected session                 |
 | Participant Name  | Displays the name of the participant connected to the machine |
 | Connected Time    | Displays the time of actual connection                     |
-| Disconnected Time  | Displays the time when the participant disconnected        |
-| Computer ID      | Displays the ID of the connected computer                  |
-| Duration          | Displays the duration of connection                         |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Disconnected Time | Displays the time when the participant disconnected        |
+| Computer ID       | Displays the ID of the connected computer                  |
+| Duration          | Displays the duration of the connection                     |

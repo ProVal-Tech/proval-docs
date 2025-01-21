@@ -8,6 +8,7 @@ tags: ['application', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 A CW RMM implementation of the [Invoke-VcRedistModule](https://proval.itglue.com/DOC-5078775) agnostic script to uninstall Microsoft Visual C++ Redistributable. By default, the script will uninstall the unsupported redistributable unless a user parameter is set.
@@ -30,8 +31,8 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 | Name    | Example                   | Required | Description                                             |
 |---------|---------------------------|----------|---------------------------------------------------------|
-| Release | 20072007,2008,2012    | False    | Set the release id(s) of the Redistributable to remove. |
-| All     | 1                         | False    | Setting this parameter to 1 will remove all installed Redistributable from the computer. |
+| Release | 20072007,2008,2012       | False    | Set the release id(s) of the Redistributable to remove. |
+| All     | 1                         | False    | Setting this parameter to 1 will remove all installed Redistributables from the computer. |
 
 ![User Parameters](../../../static/img/Uninstall-Microsoft-VCRedist/image_4.png)  
 
@@ -64,7 +65,7 @@ This screen will appear.
 - Click the `Save` button.  
 ![Save Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_10.png)  
 
-It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_11.png)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
@@ -79,7 +80,7 @@ This screen will appear.
 - Click the `Save` button.  
 ![Save Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_12.png)  
 
-It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_11.png)  
 
 ### Task
@@ -155,14 +156,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
 
 

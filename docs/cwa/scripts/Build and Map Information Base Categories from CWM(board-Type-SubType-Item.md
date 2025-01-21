@@ -8,11 +8,12 @@ tags: ['database', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will create information base categories (ticket categories) for every imported manage board.
 
-Time Saved by Automation: 60 Minutes
+**Time Saved by Automation:** 60 Minutes
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Time Saved by Automation: 60 Minutes
 
 ## Dependencies
 
-CW Manage Plugin Setup and Service Board import must be completed
+The CW Manage Plugin Setup and Service Board import must be completed.
 
 #### User Parameters
 
@@ -30,25 +31,12 @@ CW Manage Plugin Setup and Service Board import must be completed
 
 ## Process
 
-Script executes several SQL queries.
+The script executes several SQL queries.
 
-Generates list of the insert statements based on the CW Service boards & Type / Subtype / Items.
-
-Executes the insert statements to create new Information Base Categories.
-
-Maps those new info base categories in the CW Manage plugin tables.
+1. Generates a list of the insert statements based on the CW Service boards & Type / Subtype / Items.
+2. Executes the insert statements to create new Information Base Categories.
+3. Maps those new info base categories in the CW Manage plugin tables.
 
 ## Output
 
-No script output, reload cache and view info base categories in system dashboard & review the CW Manage plugin Ticket category area.
-
-
-
-
-
-
-
-
-
-
-
+There is no script output. Please reload the cache and view the info base categories in the system dashboard. Review the CW Manage plugin Ticket category area.

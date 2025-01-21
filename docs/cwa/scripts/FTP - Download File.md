@@ -8,11 +8,12 @@ tags: ['ftp', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will download a file from the target FTP server.
 
-Time Saved by Automation: 10-20 Minutes
+**Time Saved by Automation:** 10-20 Minutes
 
 ## Sample Run
 
@@ -22,36 +23,24 @@ Time Saved by Automation: 10-20 Minutes
 
 | Variable      | Description                                                                                       |
 |---------------|---------------------------------------------------------------------------------------------------|
-| PS_Results    | This store powershell script output whether file successfully downloaded from provided FTP server or not. |
+| PS_Results    | This stores the PowerShell script output, indicating whether the file was successfully downloaded from the provided FTP server or not. |
 
 ### User Parameters
 
 | Name               | Example                                 | Required | Description                                                  |
 |--------------------|-----------------------------------------|----------|--------------------------------------------------------------|
-| FTP_Server_Path    | [https://ftp.server/download](https://ftp.server/download) | True     | It asks the ftp server path where file is stored            |
-| FTP_Username       | test_user                               | True     | It asks about the FTP username to access the ftp site       |
-| FTP_Password       | testing@123                             | True     | It asks about the FTP password to access the ftp site       |
-| FTP_Filename       | Filename.zip                            | True     | Provide filename with extension to download from ftp site   |
-| Download_to_Path   | C:/Windows/Temp/Folder                  | True     | Local destination path on agent                               |
+| FTP_Server_Path    | [https://ftp.server/download](https://ftp.server/download) | True     | The FTP server path where the file is stored.               |
+| FTP_Username       | test_user                               | True     | The FTP username to access the FTP site.                    |
+| FTP_Password       | testing@123                             | True     | The FTP password to access the FTP site.                    |
+| FTP_Filename       | Filename.zip                            | True     | The filename with extension to download from the FTP site.  |
+| Download_to_Path   | C:/Windows/Temp/Folder                  | True     | The local destination path on the agent.                     |
 
 ## Process
 
-- This script will attempt to download the file from FTP site.
-- It will first ensure whether all user parameters are provided or not; if not provided, then script will exit or else will attempt to download file from the ftp site as per provided details.
-- It will log the output in the script whether downloaded or not.
+- This script will attempt to download the file from the FTP site.
+- It will first check whether all user parameters are provided; if not, the script will exit. If all parameters are provided, it will attempt to download the file from the FTP site as per the provided details.
+- It will log the output in the script indicating whether the download was successful or not.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

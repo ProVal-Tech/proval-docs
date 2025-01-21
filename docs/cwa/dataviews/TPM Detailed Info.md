@@ -8,9 +8,10 @@ tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays information about the TPM configuration on endpoints.
+This document displays information about the TPM configuration on endpoints.
 
 ## Dependencies
 
@@ -24,25 +25,12 @@ Displays information about the TPM configuration on endpoints.
 | Location Name       | The name of the location.                                    |
 | Computer Name       | The name of the endpoint.                                    |
 | Operating System     | Operating system information of the agent                    |
-| LastContact         | Last contact of agent with the CW Automate                   |
-| TPMReady            | Displays whether TPMReady is Enabled or disabled             |
-| TPMPresent          | Displays whether TPMReady is Enabled or disabled             |
-| ManagedAuthLevel    | Displays the ManagedAuthLevel information                    |
-| OwnerAuth           | Displays the OwnerAuth Info                                   |
-| OwnerClearDisabled   | Displays the OwnerClearDisabled status. (True or false)      |
-| AutoProvisioning     | Displays whether auto-provisioning is enabled or not         |
-| LockedOut           | Displays whether TPM locked or not                            |
-| TPMVersion          | Displays the TPM version on the endpoint                     |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Contact        | Last contact of the agent with CW Automate                   |
+| TPM Ready           | Displays whether TPM Ready is enabled or disabled            |
+| TPM Present         | Displays whether TPM is present or not                       |
+| Managed Auth Level   | Displays the Managed Auth Level information                  |
+| Owner Auth          | Displays the Owner Auth information                           |
+| Owner Clear Disabled | Displays the Owner Clear Disabled status (True or False)     |
+| Auto Provisioning    | Displays whether auto-provisioning is enabled or not         |
+| Locked Out          | Displays whether TPM is locked or not                        |
+| TPM Version         | Displays the TPM version on the endpoint                     |

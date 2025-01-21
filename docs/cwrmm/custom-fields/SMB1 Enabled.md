@@ -8,6 +8,7 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This custom field is used to store and display the results of the task [CW RMM - Task - Detect SMB1](<../tasks/Detect SMB1.md>).
@@ -22,22 +23,10 @@ This custom field is used to store and display the results of the task [CW RMM -
 |------------------|-----------------------------------------|---------------------------------------------|
 | SMB1 Enabled     | Endpoint                                | SMB1 Status fetched by 'Detect SMB1' Script |
 
-## ScreenShot
+## Screenshot
 
 ![Screenshot](../../../static/img/SMB1-Enabled/image_1.png)
 
 ## Sample Value
 
 ![Sample Value](../../../static/img/SMB1-Enabled/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

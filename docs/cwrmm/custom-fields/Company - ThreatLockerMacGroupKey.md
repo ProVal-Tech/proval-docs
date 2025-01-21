@@ -8,31 +8,21 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Custom field at company level stores the threatlocker Group key for Macintosh Machines. Follow the instructions to get the group key for the desired machine. [MAC Agent Group Key Location | ThreatLocker Help Center (kb.help)](https://threatlocker.kb.help/mac-agent-group-key-location/)
+This custom field at the company level stores the ThreatLocker Group key for Macintosh machines. Follow the instructions to obtain the group key for the desired machine. [MAC Agent Group Key Location | ThreatLocker Help Center (kb.help)](https://threatlocker.kb.help/mac-agent-group-key-location/)
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - ThreatLocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
 
 ## Details
 
 | Field Name                | Level  | Type     | Default Value | Description                                 | Editable |
 |---------------------------|--------|----------|---------------|---------------------------------------------|----------|
-| ThreatLockerMacGroupKey   | Company| TextBox  | NA            | Threatlocker Group key for Macintosh machines|          |
+| ThreatLockerMacGroupKey   | Company| TextBox  | NA            | ThreatLocker Group key for Macintosh machines|          |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Company---ThreatLockerMacGroupKey/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Company---ThreatLockerMacGroupKey/image_1.png)

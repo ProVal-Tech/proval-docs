@@ -8,11 +8,12 @@ tags: ['performance', 'report', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will list all scripts in the environment with details about their script folders, the type of scripts, any notes included, and which user classes may run and/or edit the script. Additionally, **displays a summary of all scripts run over the set script log retention days.**
+This dataview lists all scripts in the environment with details about their script folders, the types of scripts, any notes included, and which user classes may run and/or edit the script. Additionally, it **displays a summary of all scripts run over the set script log retention days.**
 
-The Script log retention days can be seen at the automate location below:
+The script log retention days can be seen at the Automate location below:
 
 ![Script Log Retention Days](../../../static/img/Automate---Script-List/image_1.png)
 
@@ -20,37 +21,25 @@ The Script log retention days can be seen at the automate location below:
 
 | Column                     | Description                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------|
-| ScriptID                  | Scriptid (Hidden)                                                                                                 |
+| ScriptID                  | Script ID (Hidden)                                                                                                 |
 | Script Name               | The name of the script                                                                                            |
 | Script Parent Folder      | Parent folder of the script (Hidden)                                                                             |
 | Script Folder             | The full path to the folder containing the script                                                                 |
 | Script Version            | Version of the script (Hidden)                                                                                    |
 | Script GUID               | GUID of the script (Hidden)                                                                                      |
-| Script Notes              | Script Notes                                                                                                     |
+| Script Notes              | Script notes                                                                                                     |
 | Script Client Only        | Whether it's a Client or a Computer script                                                                        |
-| Execute Permissions        | Comma Separated List of User Classes that can execute the script, `EveryOne` stands for all users with the basic permission of scripts. |
-| EditPermissions           | Comma Separated List of User Classes that can execute the script, `EveryOne` stands for all users with the basic permission of scripts. |
-| Total Runs                | Number of times it ran                                                                                            |
-| Failure                   | Number of times it Failed                                                                                         |
-| Success                   | Number of times it Succeed                                                                                        |
-| Effective Percent         | Effective percent of Success                                                                                      |
-| Script Last Run           | This shows the last run of the script                                                                             |
-| Days Since Last Run      | Number of Days since script executed the last time ever                                                          |
-| Ever Executed             | Does the script ever executed (Yes/No)                                                                           |
+| Execute Permissions       | Comma-separated list of user classes that can execute the script; `EveryOne` stands for all users with basic permission for scripts. |
+| Edit Permissions          | Comma-separated list of user classes that can edit the script; `EveryOne` stands for all users with basic permission for scripts. |
+| Total Runs                | Number of times the script ran                                                                                   |
+| Failure                   | Number of times the script failed                                                                                 |
+| Success                   | Number of times the script succeeded                                                                              |
+| Effective Percent         | Effective percentage of success                                                                                    |
+| Script Last Run           | The last run of the script                                                                                        |
+| Days Since Last Run       | Number of days since the script was last executed                                                                |
+| Ever Executed             | Has the script ever been executed (Yes/No)                                                                       |
 | Script Performance         | Displays 'Poor' if the script's effectiveness is lower than 80% and has been executed at least once. This column is primarily used for conditional formatting and needs to be displayed for the formatting to work. |
 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Automate---Script-List/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,13 +8,16 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This will set the startup type to Automatic and will restart the RemoteAccess service on endpoints.
+This document describes how to set the startup type to Automatic and restart the RemoteAccess service on endpoints.
 
-Alert Template -  ~Autofix - Set RemoteAccess Startup Type to Auto
+### Alert Template
 
-This should be called by the monitor [CWM - Automate -Remote Monitor - ProVal - Development - RemoteAccess Service - Set StartType To Auto](<../monitors/RemoteAccess Service Check.md>)
+- Autofix - Set RemoteAccess Startup Type to Auto
+
+This should be called by the monitor [CWM - Automate - Remote Monitor - ProVal - Development - RemoteAccess Service - Set StartType To Auto](<../monitors/RemoteAccess Service Check.md>).
 
 ## Sample Run
 
@@ -22,17 +25,5 @@ This should be called by the monitor [CWM - Automate -Remote Monitor - ProVal - 
 
 ## Output
 
-Startup Type = Automatic  
-Status = Running
-
-
-
-
-
-
-
-
-
-
-
-
+- Startup Type: Automatic  
+- Status: Running

@@ -8,39 +8,40 @@ tags: ['dns', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task **appends a DNS server address to all physical, active network adapters.**
+This task **appends a DNS server address to all physical, active network adapters.**
 
 ## Sample Run
 
 ![Sample Run Image](../../../static/img/Set-NetAdapterDNS/image_1.png)
 
-Add DNS Server address and select Force if you would like to force DNS address updates to DHCP-enabled adapters. DNS address updates to DHCP-enabled adapters.
+Add the DNS server address and select **Force** if you would like to force DNS address updates to DHCP-enabled adapters.
 
 ![Sample Run Image](../../../static/img/Set-NetAdapterDNS/image_2.png)
 
 ## Dependencies
 
-[file.provaltech.com/repo/script/Set-NetAdapterDNS.ps1](https://file.provaltech.com/repo/script/Set-NetAdapterDNS.ps1)
+[Set-NetAdapterDNS.ps1](https://file.provaltech.com/repo/script/Set-NetAdapterDNS.ps1)
 
 ## User Parameters
 
-| Name          | Example   | Accepted Values | Required | Default | Type   | Description                                                         |
-|---------------|-----------|------------------|----------|---------|--------|---------------------------------------------------------------------|
-| `DNSServer`   | 1.1.1.1   | IPv4 addresses    | True     |         | String | The DNS server address to append to the network adapter(s)         |
-| `Force`       | Unmarked  |                  | False    | $false  | Flag   | Intended to force DNS address updates to DHCP-enabled adapters.     |
+| Name        | Example   | Accepted Values | Required | Default | Type   | Description                                                         |
+|-------------|-----------|------------------|----------|---------|--------|---------------------------------------------------------------------|
+| `DNSServer` | 1.1.1.1   | IPv4 addresses    | True     |         | String | The DNS server address to append to the network adapter(s)         |
+| `Force`     | Unmarked  |                  | False    | $false  | Flag   | Intended to force DNS address updates to DHCP-enabled adapters.     |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image](../../../static/img/Set-NetAdapterDNS/image_3.png)
 
 ![Task Creation Image](../../../static/img/Set-NetAdapterDNS/image_4.png)
 
 **Name:** Set-NetAdapterDNS  
-**Description:** This task is used to append a DNS server address to all physical, active network adapter.  
+**Description:** This task is used to append a DNS server address to all physical, active network adapters.  
 **Category:** Custom  
 
 ![Task Creation Image](../../../static/img/Set-NetAdapterDNS/image_5.png)
@@ -57,7 +58,7 @@ This screen will appear.
 
 - Set `DNSServer` in the `Parameter Name` field.
 - Select `String` from the `Parameter Type` dropdown menu.
-- Toggle Required Field.
+- Toggle the Required Field.
 - Click the `Save` button.
 
 ![Save Button Image](../../../static/img/Set-NetAdapterDNS/image_8.png)
@@ -70,11 +71,11 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![Add Parameter Image](../../../static/img/Set-NetAdapterDNS/image_10.png)
 
-- Set `Force` in the `Parameter Name` Field
+- Set `Force` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
-- Toggle Default Value
-- Set Default Value as `False`
-- Click the `Save` button
+- Toggle Default Value.
+- Set Default Value as `False`.
+- Click the `Save` button.
 - Click the `Confirm` button to create the parameter.
 
 ![Confirm Button Image](../../../static/img/Set-NetAdapterDNS/image_11.png)
@@ -85,7 +86,7 @@ Parameters will look like as shown below:
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Image](../../../static/img/Set-NetAdapterDNS/image_13.png)
 
@@ -106,7 +107,7 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
 ```powershell
-if ( '@DNSServer@' -match '/b((/d{1,3})/.){3}(/d{1,3})/b') {
+if ( '@DNSServer@' -match '\b((\d{1,3}\.){3}\d{1,3})\b') {
     $DNSServer = '@DNSServer@'
 } else {
    throw "Enter Valid DNS Server"
@@ -157,11 +158,11 @@ if ($Parameters) {
 }
 #endregion
 
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -180,15 +181,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

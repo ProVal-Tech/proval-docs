@@ -8,21 +8,22 @@ tags: ['exchange', 'iis', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the remote monitor is to check and return the Enabled TLS Server version on a computer.
+The purpose of the remote monitor is to check and return the enabled TLS server version on a computer.
 
-Requirements: PowerShell v2.0+
+**Requirements:** PowerShell v2.0+
 
-**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - Security - TLS Status](<../dataviews/Security - TLS Status.md>) dataview. This monitor set should not be used for alerting/ticketing purposes.
+**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - Security - TLS Status](<../dataviews/Security - TLS Status.md>) dataview. This monitor set should not be used for alerting or ticketing purposes.
 
 ## Details
 
-**Suggested "Limit to"**: Windows IIS, Exchange, File Servers  
-**Suggested Alert Style**: Continuous  
-**Suggested Alert Template**: Default Do Nothing  
+**Suggested "Limit to":** Windows IIS, Exchange, File Servers  
+**Suggested Alert Style:** Continuous  
+**Suggested Alert Template:** Default Do Nothing  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
@@ -32,21 +33,8 @@ Insert the details of the monitor in the below table.
 
 Managed Windows IIS, Exchange, and File Servers.  
 **OR**  
-Wherever you would like to audit TLS server Version
+Wherever you would like to audit the TLS server version.
 
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Server](<./TLS Version Check - Server.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

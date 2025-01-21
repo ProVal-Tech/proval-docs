@@ -8,33 +8,21 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview provides the status of the Network devices in the environment.
+This document provides an overview of the status of network devices in the environment.
 
 ## Columns
 
 | Column                             | Description                                                              |
 |------------------------------------|--------------------------------------------------------------------------|
-| Probe Name                         | Displays the name of the probe with respect to the Network devices.      |
-| Device Name                        | This is the name of the Network device.                                  |
-| Device IP Address                  | This is the IP address of the Network devices.                           |
-| Device MAC                         | Displays the MAC address of the Network devices.                         |
-| Device Status                      | Displays the status of the device (Online/Offline).                     |
-| Device Last Contact Attempt        | This displays the last contact date of the network device.              |
-| Device uptime                      | Displays uptime of the network device.                                   |
-| Device Type                        | Displays the type of the Network device.                                 |
-| External Sync                      | This displays if the external sync is disabled or enabled on the network device. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Probe Name                         | Displays the name of the probe associated with the network devices.      |
+| Device Name                        | The name of the network device.                                         |
+| Device IP Address                  | The IP address of the network devices.                                  |
+| Device MAC                         | Displays the MAC address of the network devices.                        |
+| Device Status                      | Displays the status of the device (Online/Offline).                    |
+| Device Last Contact Attempt        | Displays the last contact date of the network device.                  |
+| Device Uptime                      | Displays the uptime of the network device.                              |
+| Device Type                        | Displays the type of the network device.                                |
+| External Sync                      | Indicates whether the external sync is disabled or enabled on the network device. |

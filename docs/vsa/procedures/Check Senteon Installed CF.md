@@ -8,6 +8,7 @@ tags: ['installation', 'performance', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This agent procedure is used to check for the presence of the Senteon Agent on the endpoint and updates a custom field **cPVAL Senteon Installed** with the status.
@@ -23,7 +24,7 @@ Custom Field: [cPVAL Senteon Installed](<../../unsorted/SWM - Software Managemen
 ## Implementation
 
 Ensure all dependencies exist prior to implementation.  
-Export the agent procedure from the ProVal VSA, and import into the partner VSA.  
+Export the agent procedure from the ProVal VSA and import it into the partner VSA.  
 Name: Check Senteon Installed CF  
 
 ![Image 1](../../../static/img/Check-Senteon-Installed-CF/image_1.png)  
@@ -39,20 +40,8 @@ Script Summary of Success is expected
 Agent Procedure Log Entry & Custom Field - **Installed**  
 ![Image 4](../../../static/img/Check-Senteon-Installed-CF/image_4.png)  
 
-Agent Procedure Log Entry & Custom Field - **Not_Running**  
+Agent Procedure Log Entry & Custom Field - **Not Running**  
 ![Image 5](../../../static/img/Check-Senteon-Installed-CF/image_5.png)  
 
-Agent Procedure Log Entry & Custom Field - **Not_Present**  
+Agent Procedure Log Entry & Custom Field - **Not Present**  
 ![Image 6](../../../static/img/Check-Senteon-Installed-CF/image_6.png)  
-
-
-
-
-
-
-
-
-
-
-
-

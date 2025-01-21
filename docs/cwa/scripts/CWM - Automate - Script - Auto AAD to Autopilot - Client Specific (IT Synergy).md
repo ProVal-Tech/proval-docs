@@ -8,9 +8,10 @@ tags: ['disk-encryption', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will run the Optimize-Volume PowerShell command to defragment a drive whenever possible. If the command is not recognized, it will revert to using the standard defrag command. The script returns a verbose log of what the optimize-volume command outputs. Due to this being a simple log return, there typically would not be any known failure (there is never a failure log written with this agnostic solution) unless an environmental issue exists, which we are looking for in the script.
+This script will run the Optimize-Volume PowerShell command to defragment a drive whenever possible. If the command is not recognized, it will revert to using the standard defrag command. The script returns a verbose log of what the Optimize-Volume command outputs. Due to this being a simple log return, there typically would not be any known failure (there is never a failure log written with this agnostic solution) unless an environmental issue exists, which we are looking for in the script.
 
 ## Sample Run
 
@@ -67,21 +68,10 @@ Describe the steps the script performs to accomplish the desired task. Note that
 
 The location and method by which this script returns data.
 
-Ex:
+Example:
 
 - Script log
 - Script state
 - Local file on computer
 - Dataview
 - etc.
-
-
-
-
-
-
-
-
-
-
-

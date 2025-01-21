@@ -8,9 +8,10 @@ tags: ['hp', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor looks for several event types and IDs coming from the HP Server management software installed on the HP Servers.
+This internal monitor looks for several event types and IDs coming from the HP Server management software installed on the HP servers.
 
 The "△ Custom - Ticket Creation - Computer" alert template should be used for proper alerting.
 
@@ -37,36 +38,23 @@ HP servers
 Computer Name: \\<ComputerName>
 Source: \\<Event Source>
 
-Eventid: \\<EventID1>
+Event ID: \\<EventID1>
 Event Type: Error
 Message: \\<Event Message>
 TimeGen: \\<Time of Generation>
 
-Eventid: \\<EventID2>
+Event ID: \\<EventID2>
 Event Type: Error
 Message: \\<Event Message>
 TimeGen: \\<Time of Generation>
 
-Eventid: \\<EventID3>
+Event ID: \\<EventID3>
 Event Type: Error
 Message: \\<Event Message>
 TimeGen: \\<Time of Generation>
 
-Eventid: \\<EventIDN>
+Event ID: \\<EventIDN>
 Event Type: Error
 Message: \\<Event Message>
 TimeGen: \\<Time of Generation>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,21 +8,22 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor checks if the RDS licensing server has issue with License. This checks if the license is available either for per User or per device.
+This remote monitor checks if the RDS licensing server has issues with licenses. It verifies if the license is available either for per user or per device.
 
 ## Details
 
-**Suggested "Limit to"**: Machines where Windows RDS Licensing Server Role is detected.  
+**Suggested "Limit to"**: Machines where the Windows RDS Licensing Server Role is detected.  
 **Suggested Alert Style**: Once  
-**Suggested Alert Template**: Default-Create Automate Ticket  
+**Suggested Alert Template**: Default - Create Automate Ticket  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Comparator | Result | Interval |
 |--------------|----------------|-------------|------------|--------|----------|
-| System       | Default        | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -Namespace 'Root/CIMV2/TerminalServices' -Class Win32_TerminalServiceSetting | Select-Object -ExpandProperty LicensingType" | Regex Match | 2|4 | Daily |
+| System       | Default        | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -Namespace 'Root/CIMV2/TerminalServices' -Class Win32_TerminalServiceSetting | Select-Object -ExpandProperty LicensingType" | Regex Match | 2 | 4 | Daily |
 
 ## Dependencies
 
@@ -30,7 +31,7 @@ Insert the details of the monitor in the below table.
 
 ## Target
 
-Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](<../roles/Windows RDS Licensing Server.md>) role installed
+Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](<../roles/Windows RDS Licensing Server.md>) role installed.
 
 ## Ticketing
 
@@ -38,19 +39,6 @@ Windows Machines with [RSM - Remote Desktop Services - Role - Windows RDS Licens
 
 **Body:**  
 
-**Failure:** We have detected Licensing issue with your RDS Licensing Server. Possibilities are either the License is configured or has expired. Please check.  
+**Failure:** We have detected a licensing issue with your RDS Licensing Server. The possibilities are that either the license is misconfigured or has expired. Please check.  
 
-**Success:** License issue is resolved now.
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Success:** The license issue has been resolved.

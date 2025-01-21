@@ -8,22 +8,23 @@ tags: ['installation', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to install the [latest available version of the Liongard Agent](https://agents.static.liongard.com/LiongardAgent-lts.msi). The script provides an option to run the `Liongard Agent` service as `LocalSystem` or with a `custom credential`. It can also be used to upgrade an older install to the latest version.
+The purpose of the script is to install the [latest available version of the Liongard Agent](https://agents.static.liongard.com/LiongardAgent-lts.msi). The script provides an option to run the `Liongard Agent` service as `LocalSystem` or with a `custom credential`. It can also be used to upgrade an older installation to the latest version.
 
 ## Implementation
 
 - Import the script.
 - Reload System Cache.
-- Create the `liongard_url` system key and set the respective URL in there.  
+- Create the `liongard_url` system key and set the respective URL in it.  
   ![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_1.png)
 
 ## Sample Run
 
 **To run the `Liongard Agent` Service with the credentials saved at the location-level `Passwords` tab as `Liongard Service Account`:**  
 ![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_2.png)  
-**`Liongard Service Account` Password entry must be saved at the location level `Passwords` tab for the script to run the service with these credentials.**  
+**The `Liongard Service Account` password entry must be saved at the location-level `Passwords` tab for the script to run the service with these credentials.**  
 ![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_3.png)  
 
 **To run the installed `Liongard Agent` service as `LocalSystem`:**  
@@ -39,17 +40,17 @@ The script will work as long as this download URL is active:
 
 ## Variables
 
-| Name             | Description                       |
-|------------------|-----------------------------------|
-| AccessKey        | Liongard Access Key               |
-| Secret           | Liongard Secret                   |
-| Environment      | Liongard Environment               |
-| LiongardURL      | Liongard URL                      |
-| Username         | Service User                      |
-| Password         | Password of the service user      |
-| AppName          | LiongardAgent                     |
-| WorkingDirectory  | C:/ProgramData/_automation/script/LiongardAgent |
-| Installer        | C:/ProgramData/_automation/script/LiongardAgent/LiongardAgent.msi |
+| Name              | Description                        |
+|-------------------|------------------------------------|
+| AccessKey         | Liongard Access Key                |
+| Secret            | Liongard Secret                    |
+| Environment       | Liongard Environment                |
+| LiongardURL       | Liongard URL                       |
+| Username          | Service User                       |
+| Password          | Password of the service user       |
+| AppName           | LiongardAgent                      |
+| WorkingDirectory   | C:/ProgramData/_automation/script/LiongardAgent |
+| Installer         | C:/ProgramData/_automation/script/LiongardAgent/LiongardAgent.msi |
 
 #### Global Parameters
 
@@ -59,11 +60,11 @@ The script will work as long as this download URL is active:
 
 #### User Parameters
 
-| Name        | Example | Required | Description                                                                                           |
-|-------------|---------|----------|-------------------------------------------------------------------------------------------------------|
-| RunAsSystem | 1       | False    | Set it to 1 to run the `Liongard Agent` service as `LocalSystem`                                    |
-| Description | Domain Controller of the Environment | False | Agent Description, it will fall back to the `\<computername>` if left blank                           |
-| Upgrade     | 1       | False    | Set it to 1 to attempt to upgrade the application to the latest available version                    |
+| Name        | Example                           | Required | Description                                                                                           |
+|-------------|-----------------------------------|----------|-------------------------------------------------------------------------------------------------------|
+| RunAsSystem | 1                                 | False    | Set it to 1 to run the `Liongard Agent` service as `LocalSystem`                                    |
+| Description | Domain Controller of the Environment | False | Agent Description; it will fall back to the `\\<computername>` if left blank                           |
+| Upgrade     | 1                                 | False    | Set it to 1 to attempt to upgrade the application to the latest available version                    |
 
 #### System Properties
 
@@ -83,14 +84,3 @@ The script will work as long as this download URL is active:
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-

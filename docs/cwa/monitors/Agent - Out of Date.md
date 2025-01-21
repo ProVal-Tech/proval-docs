@@ -8,9 +8,10 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor looks for machines that do not have the newest Automate agent. Determines the max agent version by checking the database for the highest version installed based on OS. There is an available Autofix that will attempt to update agents. The script is named @Update Agent - All OS.
+This monitor looks for machines that do not have the newest Automate agent. It determines the maximum agent version by checking the database for the highest version installed based on the operating system. An Autofix feature is available that will attempt to update agents. The script is named `@Update Agent - All OS`.
 
 ## Dependencies
 
@@ -18,16 +19,4 @@ None
 
 ## Target
 
-All Agents - Should be run on all machines.
-
-
-
-
-
-
-
-
-
-
-
-
+All Agents - This monitor should be run on all machines.

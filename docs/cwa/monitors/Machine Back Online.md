@@ -8,22 +8,11 @@ tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Add ComputerIDs into the result field for tracking machines. Generally used for stolen/missing systems.
+This document outlines the process of adding ComputerIDs into the result field for tracking machines, primarily focusing on stolen or missing systems.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

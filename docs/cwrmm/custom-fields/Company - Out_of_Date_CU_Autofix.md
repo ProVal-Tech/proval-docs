@@ -8,15 +8,16 @@ tags: ['connectwise', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solution - Latest Cumulative Update Audit](<../../solutions/Latest Cumulative Update Audit.md>) solution. Select Enable from the drop-down to allow installation of the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. Selecting Servers as well will enable Autofix for the servers too.
+A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solution - Latest Cumulative Update Audit](<../../solutions/Latest Cumulative Update Audit.md>) solution. Select "Enable" from the drop-down to allow installation of the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. Selecting "Servers as well" will enable Autofix for the servers too.
 
 ## Details
 
 | Field Name                  | Level   | Type     | Options                                   | Default Value | Description                                                                                                                                                         | Editable |
 |-----------------------------|---------|----------|-------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| Out_of_Date_CU_Autofix     | COMPANY | Dropdown | `Enable`, `Disable`, `Servers as well`   | Disable       | Select Enable from the drop-down to allow installation of the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. Selecting Servers as well will enable Autofix for the servers too. | Yes      |
+| Out_of_Date_CU_Autofix     | COMPANY | Dropdown | `Enable`, `Disable`, `Servers as well`   | Disable       | Select "Enable" from the drop-down to allow installation of the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. Selecting "Servers as well" will enable Autofix for the servers too. | Yes      |
 
 ## Options
 
@@ -24,22 +25,10 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable            | To enable the Autofix for the Company. Enabling the Autofix will enable the Autofix for the Workstations only. It can be overridden from the Site and Endpoint level. |
 | Disable           | To disable the Autofix for the Company. It can be overridden from the Site and Endpoint level.                                                                    |
-| Servers as well   | To enable the Autofix for Servers too. Selecting this option will enable the Autofix (Auto installation of latest Cumulative Update) for Servers as well. It can be overridden from the Site and Endpoint level. |
+| Servers as well   | To enable the Autofix for Servers too. Selecting this option will enable the Autofix (auto installation of the latest Cumulative Update) for Servers as well. It can be overridden from the Site and Endpoint level. |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Company---Out_of_Date_CU_Autofix/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---Out_of_Date_CU_Autofix/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

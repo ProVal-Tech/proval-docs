@@ -8,11 +8,12 @@ tags: ['connectwise', 'performance', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will pull the highest agent version in the environment and will attempt to update the out of date agent.
+The script pulls the highest agent version in the environment and attempts to update any outdated agents.
 
-Time Saved by Automation: 2 Minutes
+**Time Saved by Automation:** 2 Minutes
 
 ## Sample Run
 
@@ -20,16 +21,5 @@ Time Saved by Automation: 2 Minutes
 
 ## Process
 
-- The script will run some SQL to pull the highest agent version in the environment and will attempt to update the agent using those parameters.
-- The script is intended to be used with ProVal – Production – Agent – Out of Date
-
-
-
-
-
-
-
-
-
-
-
+- The script runs SQL to pull the highest agent version in the environment and attempts to update the agent using those parameters.
+- The script is intended to be used with ProVal – Production – Agent – Out of Date.

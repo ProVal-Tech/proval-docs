@@ -8,13 +8,14 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 ### **This script needs revision.**
 
-This script executes the PowerShell which set rules on teams for all users other than Public and 'ADMINI~*'. Rulename is “Teams.exe for user (username)”.
+This script executes PowerShell commands that set rules for Teams for all users except public users and those with administrative accounts matching 'ADMINI~*'. The rule name is "Teams.exe for user (username)."
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -22,31 +23,19 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-- Windows OS and PowerShell version greater equal to 3.
+- Windows OS and PowerShell version 3.0 or greater.
 
 ## Variables
 
-- `@Result@` -> Result of the PowerShell to add the firewall rule
-- `@shellresult@` -> results of checking the PowerShell version on the machine
+- `@Result@` -> Result of the PowerShell command to add the firewall rule.
+- `@shellresult@` -> Results of checking the PowerShell version on the machine.
 
 ## Process
 
-1. Checks the PowerShell version on the machine for v3.0 or greater
-2. Runs PowerShell to add the firewall rule for Teams
-3. Logs the results in the script logs in Automate
+1. Check the PowerShell version on the machine for v3.0 or greater.
+2. Run PowerShell to add the firewall rule for Teams.
+3. Log the results in the script logs in Automate.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

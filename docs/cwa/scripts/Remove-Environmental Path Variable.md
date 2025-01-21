@@ -8,21 +8,22 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Will remove a requested windows path from the environmental path variable for the desired scope.
+This document will remove a requested Windows path from the environmental path variable for the desired scope.
 
 ## Sample Run
 
-- To remove a user scoped environmental path variable item.
+- To remove a user-scoped environmental path variable item.
 
 ![Sample Run 1](../../../static/img/Remove-Environmental-Path-Variable/image_1.png)
 
-- To remove multiple machine scoped environmental path variable items.
+- To remove multiple machine-scoped environmental path variable items.
 
 ![Sample Run 2](../../../static/img/Remove-Environmental-Path-Variable/image_2.png)
 
-NOTE: Scope is not mandatory and if left blank the scope will default to the machine scoped variable.
+**Note:** Scope is not mandatory; if left blank, the scope will default to the machine-scoped variable.
 
 ## Dependencies
 
@@ -32,30 +33,17 @@ NOTE: Scope is not mandatory and if left blank the scope will default to the mac
 
 Standard agnostic template variables apply.
 
-#### User Parameters
+### User Parameters
 
 | Name  | Example                  | Required | Description                                                                                     |
 |-------|--------------------------|----------|-------------------------------------------------------------------------------------------------|
 | Path  | C:/windows, C:/temp...  | True     | The paths that must be removed from the scoped environmental path variable.                    |
-| Scope | UserMachine          | False    | The scope of the environmental path variable you wish to target.This is defaulted to 'Machine' |
+| Scope | UserMachine              | False    | The scope of the environmental path variable you wish to target. This is defaulted to 'Machine' |
 
 ## Process
 
-Please see agnostic content document [EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>) for process information.
+Please see the agnostic content document [EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>) for process information.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

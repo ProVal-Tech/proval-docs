@@ -8,6 +8,7 @@ tags: ['active-directory', 'azure']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This custom field is used to display whether or not a machine is Azure AD joined.
@@ -23,16 +24,3 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM 
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
-
-
-
-
-
-
-
-
-
-
-
-
-

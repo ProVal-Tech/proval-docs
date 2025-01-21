@@ -8,6 +8,7 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores the output of the `query session` command returned by the [CWM - Automate - Script - Windows Sessions [DV, Globals]](<../scripts/Windows Sessions DV, Globals.md>) script.
@@ -22,23 +23,11 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 
 | Column        | Type         | Explanation                                 |
 |---------------|--------------|---------------------------------------------|
-| computerid    | int (16)     | computerid                                  |
+| computerid    | int (16)     | Computer ID                                 |
 | SessionName   | varchar(256) | Name of the Windows Session                 |
 | UserName      | varchar(256) | Name of the user logged on to that session  |
 | ID            | int (16)     | Session ID of the session                   |
 | State         | varchar(32)  | State of the session                        |
 | Type          | varchar(64)  | Type of the session                         |
-| Device        | varchar(64)  | Device of the Session                       |
-| ScriptRunTime | DateTime     | Data Collection time                        |
-
-
-
-
-
-
-
-
-
-
-
-
+| Device        | varchar(64)  | Device of the session                       |
+| ScriptRunTime | DateTime     | Data collection time                        |

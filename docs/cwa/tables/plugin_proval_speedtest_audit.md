@@ -2,19 +2,20 @@
 id: '38fbe617-1c50-443b-b69b-07eae7135652'
 title: 'Internet Speed Audit Results Storage'
 title_meta: 'Internet Speed Audit Results Storage'
-keywords: ['speedtest', 'audit', 'bandwidth', 'latency', 'jitter', 'packetloss', 'vpn', 'isp']
+keywords: ['speedtest', 'audit', 'bandwidth', 'latency', 'jitter', 'packet loss', 'VPN', 'ISP']
 description: 'This document outlines the structure and purpose of the database table used to store results from internet speed tests conducted by the EPM Network script. It details the dependencies, the columns in the database table, and their explanations to facilitate understanding and usage of the stored data.'
 tags: ['database', 'networking', 'performance', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores results from speedtests run by the script [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226)  
+Stores results from speed tests run by the script [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226).
 
 ## Dependencies
 
-[EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226)  
+[EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226).
 
 ## Tables
 
@@ -24,8 +25,8 @@ Stores results from speedtests run by the script [EPM - Network - Script - Inter
 |-----------------|----------|-----------------------------------------------------------------------------|
 | ComputerID      | INT      | The ID of the audited agent.                                               |
 | Timestamp       | DATETIME | The time of the audit.                                                    |
-| Jitter          | FLOAT    | Amount of Jitter detected.                                                |
-| Latency         | FLOAT    | Amount of Latency detected.                                               |
+| Jitter          | FLOAT    | Amount of jitter detected.                                                |
+| Latency         | FLOAT    | Amount of latency detected.                                               |
 | DLBandwidth     | BIGINT   | The measured bandwidth for download speed.                                |
 | DLBytes         | BIGINT   | The total number of bytes received in the audit.                         |
 | DLElapsed       | INT      | The total time taken to receive the bytes.                               |
@@ -36,7 +37,7 @@ Stores results from speedtests run by the script [EPM - Network - Script - Inter
 | ISP             | VARCHAR  | The name of the ISP.                                                     |
 | InternalIP      | VARCHAR  | The internal IP of the audited agent.                                    |
 | MACAddress      | VARCHAR  | The MAC address of the audited agent.                                    |
-| IsVPN           | TINYINT  | 1 if the speedtest was run on a detected VPN connection.                 |
+| IsVPN           | TINYINT  | 1 if the speed test was run on a detected VPN connection.                |
 | ExternalIP      | VARCHAR  | The external IP of the audited agent.                                    |
 | ServerHost      | VARCHAR  | The server host that the speed test was performed against.               |
 | ServerName      | VARCHAR  | The name of the server host that the speed test was performed against.   |
@@ -47,15 +48,3 @@ Stores results from speedtests run by the script [EPM - Network - Script - Inter
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
-
-
-
-
-
-
-
-
-
-
-
-

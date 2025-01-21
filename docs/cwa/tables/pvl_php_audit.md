@@ -8,9 +8,10 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores the data collected by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
+This document stores the data collected by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
 
 ## Dependencies
 
@@ -18,27 +19,15 @@ Stores the data collected by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>
 
 ## Tables
 
-#### pvl_php_audit
+### pvl_php_audit
 
 | Column          | Type                | Explanation                     |
 |-----------------|---------------------|---------------------------------|
-| computerid      | int                 | computerid                      |
+| computerid      | int                 | Identifier for the computer     |
 | Path            | varchar             | Path to the file               |
 | FileVersion     | varchar             | Version of the file if available|
-| Size            | double unsigned      | Size of the file in Mega Bytes |
-| CreationTime    | datetime            | File Creation time              |
-| LastWriteTime   | datetime            | File Modification date          |
+| Size            | double unsigned      | Size of the file in Megabytes  |
+| CreationTime    | datetime            | File creation time              |
+| LastWriteTime   | datetime            | File modification date          |
 | Attributes      | varchar             | File's attributes               |
-| ScriptRunTime   | datetime            | Data Collection Time            |
-
-
-
-
-
-
-
-
-
-
-
-
+| ScriptRunTime   | datetime            | Data collection time            |

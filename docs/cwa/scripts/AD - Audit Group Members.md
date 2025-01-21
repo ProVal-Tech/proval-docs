@@ -8,11 +8,12 @@ tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Audits the target AD group for changes since the last time the script was run. Sends an optional ticket after finding changes in the target group.
+This script audits the target Active Directory (AD) group for changes since the last time it was run. It can send an optional ticket after detecting changes in the target group.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -47,16 +48,3 @@ If [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) return
 - Script Log
 - Log Files
 - Ticketing
-
-
-
-
-
-
-
-
-
-
-
-
-

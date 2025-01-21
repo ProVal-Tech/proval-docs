@@ -8,17 +8,18 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script sets maintenance mode on the target agent.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/Maintenance-Mode---Set/image_1.png)
 
-#### User Parameters
+### User Parameters
 
 | Name                | Example | Required | Description                                                                 |
 |---------------------|---------|----------|-----------------------------------------------------------------------------|
@@ -26,20 +27,8 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-Starts maintenance mode with a prompt for how long to set it for. Please set the time when running. Max time is 99999 minutes. Any number larger than that will error out the script.
+The script starts maintenance mode with a prompt for how long to set it. Please specify the time when running the script. The maximum time allowed is 99999 minutes. Any number larger than that will cause the script to error out.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

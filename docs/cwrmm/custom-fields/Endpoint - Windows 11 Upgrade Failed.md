@@ -8,28 +8,18 @@ tags: ['setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Stores whether Windows 11 Upgrade Failed after running the Windows 11 Installer (Beta) task.
+This document stores whether the Windows 11 Upgrade failed after running the Windows 11 Installer (Beta) task.
 
 ## Details
 
 | Field Name                    | Level    | Type      | Default Value | Description                                                                 | Editable |
 |-------------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|----------|
-| Windows 11 Upgrade Failed      | Endpoint | Text Box  | NA            | Stores whether Windows 11 Upgrade Failed after running the Windows 11 Installer (Beta) task. | Yes      |
+| Windows 11 Upgrade Failed      | Endpoint | Text Box  | NA            | Stores whether the Windows 11 Upgrade failed after running the Windows 11 Installer (Beta) task. | Yes      |
 
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Upgrade-Failed/image_2.png)
-
-
-
-
-
-
-
-
-
-
-

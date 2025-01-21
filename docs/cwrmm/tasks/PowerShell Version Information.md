@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task will gather the PS version of the machine and put the results into the Powershell Version Custom Field.
+This task will gather the PowerShell version of the machine and store the results in the PowerShell Version Custom Field.
 
 *The custom field is required before this script will run properly. Please ensure that the PowerShell Version Custom Field is present.*
 
@@ -38,7 +39,7 @@ To implement this script, please create a new "Script Editor" style script in th
 ![Image2](../../../static/img/PowerShell-Version-Information/image_2.png)  
 
 **Name:** PowerShell Version Information  
-**Description:** This task will gather the PS version of the machine and put the results into the Powershell Version Custom Field  
+**Description:** This task will gather the PowerShell version of the machine and store the results in the PowerShell Version Custom Field  
 **Category:** Data Collection  
 
 ![Image3](../../../static/img/PowerShell-Version-Information/image_3.png)  
@@ -67,40 +68,29 @@ Please leave the timeout set to 300 seconds.
 
 ![Image7](../../../static/img/PowerShell-Version-Information/image_7.png)  
 
-This will open up the script log editor.  
+This will open the script log editor.  
 ![Image8](../../../static/img/PowerShell-Version-Information/image_8.png)  
 
-Please type in %output% into this field. This will display the results of the above PowerShell in the script logs. This makes it easier to audit what happened when the script was run.
+Please type %output% into this field. This will display the results of the above PowerShell in the script logs, making it easier to audit what happened when the script was run.
 
 #### Row 3 function: Set Custom Field
 
 *NOTE: The custom field must be created first.*  
 ![Image9](../../../static/img/PowerShell-Version-Information/image_9.png)  
 
-When you select the "Set Custom Field" function you will get a dialog box used to write the output to a specific custom field.  
+When you select the "Set Custom Field" function, you will get a dialog box used to write the output to a specific custom field.  
 
 Search for the custom field:  
 ![Image10](../../../static/img/PowerShell-Version-Information/image_10.png)  
 ![Image11](../../../static/img/PowerShell-Version-Information/image_11.png)  
 
-Please write in %output% to the "PowerShell Version" custom field. This will write the results of the PowerShell script to the PowerShell Version Custom Field.
+Please write %output% to the "PowerShell Version" custom field. This will write the results of the PowerShell script to the PowerShell Version Custom Field.
 
 ## Script Deployment
 
-ProVal recommends scheduling this task using a monitor and a machine group. Please review the [Solutions](https://proval.itglue.com/5078775/docs/12824365#version=published&documentMode=view) Document here for best practice implementation.
+ProVal recommends scheduling this task using a monitor and a machine group. Please review the [Solutions](https://proval.itglue.com/5078775/docs/12824365#version=published&documentMode=view) document here for best practice implementation.
 
 ## Output
 
 - Script log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-

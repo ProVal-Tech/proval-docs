@@ -8,9 +8,10 @@ tags: ['windows']
 draft: true
 unlisted: false
 ---
+
 # Summary
 
-The policy will run the update list by scan on all the machines for once.
+The policy will run the update list by scan on all the machines once.
 
 # Dependencies
 
@@ -26,20 +27,7 @@ The policy will run the update list by scan on all the machines for once.
 - **Assigned Machines:** **All Machines**
 
 **Policy Objects Active**
-- **Policy Object Name:** Update list by Scan
-- **Policy Object Settings:** To run once at 8 AM with a 7 day distribution window
+- **Policy Object Name:** Update List by Scan
+- **Policy Object Settings:** To run once at 8 AM with a 7-day distribution window
 
 ![Image](../../static/img/EPM---Windows-Configuration---Policy---Update-List-By-Scan---All-Machines/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

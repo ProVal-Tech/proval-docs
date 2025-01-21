@@ -8,9 +8,10 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Custom field is to be filled with Huntress Tag. It is being utilized by [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task. Basically the Location Name.
+This custom field is to be filled with the Huntress Tag. It is utilized by the [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task, essentially serving as the Location Name.
 
 # Create the Custom Field
 
@@ -21,17 +22,5 @@ This Custom field is to be filled with Huntress Tag. It is being utilized by [CW
 **Name:** Huntress Tag  
 **Type:** Text Box  
 **Level:** Site  
-**Description:** Huntress Agent Tag. These could be simple keywords that could be used to group agents within Huntress Organization.  
+**Description:** Huntress Agent Tag. These could be simple keywords that can be used to group agents within the Huntress Organization.  
 **Editable:** Yes  
-
-
-
-
-
-
-
-
-
-
-
-

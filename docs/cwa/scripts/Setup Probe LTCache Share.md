@@ -8,9 +8,10 @@ tags: ['diskspace', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will remove the current LTCache on the Probe for the target's location, create credentials (if they don't exist) and create an LTCache on the Probe.  
+This script will remove the current LTCache on the Probe for the target location, create credentials (if they don't exist), and establish a new LTCache on the Probe.
 
 It will then set the location settings to use the new LTCache settings.
 
@@ -22,37 +23,26 @@ It will then set the location settings to use the new LTCache settings.
 
 ## Dependencies
 
-Location must have a probe enabled, otherwise script will exit with error.
+The location must have a probe enabled; otherwise, the script will exit with an error.
 
 ## Variables
 
-- `@TargetComputerID@` - computer script is running on
-- `@Computerid@` - Probe computerid
-- `@DiskSpaceCheck@` - Result in percent of free space available on Drive
-- `@ProbeHostName@` - Computer Name of ProbeID
-- `@LTChachePath@` = `@ProbeHostName@/LTCache`
-- `@LTChachePassword@` - Randomly Generated password / stored in the passwords table
+- `@TargetComputerID@` - Computer on which the script is running
+- `@Computerid@` - Probe computer ID
+- `@DiskSpaceCheck@` - Result in percentage of free space available on the drive
+- `@ProbeHostName@` - Computer name of Probe ID
+- `@LTCachePath@` - `@ProbeHostName@/LTCache`
+- `@LTCachePassword@` - Randomly generated password stored in the passwords table
 
 ## Process
 
 - Find Probe Agent
-- Checks current computer drive free space - if less than 20% will exit script
-- Creates folder and share
-- Creates a local account username / password for the LTCache folder
-  - Username = ltcache 
-  - Password = Randomized / Stored in Passwords Table / Client Passwords
+- Check the current computer drive's free space; if less than 20%, the script will exit
+- Create folder and share
+- Create a local account username/password for the LTCache folder
+  - Username: ltcache
+  - Password: Randomized / Stored in Passwords Table / Client Passwords
 
 ## Output
 
 Script log
-
-
-
-
-
-
-
-
-
-
-

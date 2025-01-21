@@ -8,13 +8,14 @@ tags: ['connectwise', 'installation']
 draft: false
 unlisted: false
 ---
+
 # Overview
-Installs the Connectwise Automate agent based on site variables with configured settings.
+This document describes how to install the Connectwise Automate agent based on site variables with configured settings.
 
 # Implementation
-Import Connectwise Automate Agent - Install PVAL.cpt into the environment.
+Import the Connectwise Automate Agent - Install PVAL.cpt into the environment.
 
-This component does not require any modifications, but it does require three site variables in order to function. If these variables are not present, the component will error out and log the error.
+This component does not require any modifications, but it does require three site variables to function. If these variables are not present, the component will error out and log the error.
 
 ![Image](../../../static/img/EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL/image_1.png)
 
@@ -22,40 +23,38 @@ This component does not require any modifications, but it does require three sit
 
 | Variable Name     | Example                           | Required | Description                                                                                       |
 |-------------------|-----------------------------------|----------|---------------------------------------------------------------------------------------------------|
-| `CWALocationID`   | `1659`                            | `True`   | `Use LocationID to install the Automate Agent directly to the appropriate client's location / site.` |
-| `CWAToken`        | `4fe5d1e9fd571cedecaa8f988d75787d` | `True`   | `Use Token to install the Automate Agent directly to the appropriate client's location / site.`     |
+| `CWALocationID`   | `1659`                            | `True`   | `Use LocationID to install the Automate Agent directly to the appropriate client's location/site.` |
+| `CWAToken`        | `4fe5d1e9fd571cedecaa8f988d75787d` | `True`   | `Use Token to install the Automate Agent directly to the appropriate client's location/site.`     |
 | `CWAServer`       | `cwa.provaltech.com`             | `True`   | `URL to the Automate server. Do not include https://`                                           |
 
-![Image](../../../static/img/EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL/image_2.png)
-
-These settings must be configured for every site required.
+These settings must be configured for every required site.
 
 # Bulk Import
-Datto does offer a solution for importing site variables in bulk to make it easier.
+Datto offers a solution for importing site variables in bulk to simplify the process.
 
-[https://rmm.datto.com/help/de/Content/3NEWUI/Setup/GlobalSettings.htm](https://rmm.datto.com/help/de/Content/3NEWUI/Setup/GlobalSettings.htm)
+[Datto RMM Global Settings](https://rmm.datto.com/help/de/Content/3NEWUI/Setup/GlobalSettings.htm)
 
-One or more of the Managed sites' existing variables can be modified or new variables added by uploading the CSV template.
+One or more of the managed sites' existing variables can be modified, or new variables can be added by uploading the CSV template.
 
 > **NOTE:** Sites with OnDemand devices cannot be updated with variables.
 
 ![Image](../../../static/img/EPM---Software-Management---Component---Connectwise-Automate-Agent---Install-PVAL/image_3.png)
 
-Use the pre-populated CSV template from the partner's Datto RMM portal. This template contains every site in the Datto RMM account. The template is useful for quickly adding a single variable or for adding multiple variables at once to any number of sites. Complete the following steps to download, edit, and upload the site variables CSV template:
+Use the pre-populated CSV template from the partner's Datto RMM portal. This template contains every site in the Datto RMM account. It is useful for quickly adding a single variable or for adding multiple variables at once to any number of sites. Complete the following steps to download, edit, and upload the site variables CSV template:
 
 1. Click **Download Template**.
-2. Open the CSV file you downloaded, and add the following information:
+2. Open the CSV file you downloaded and add the following information:
 
 | Field               | Description                                                                                                                        |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Site ID             | The Site ID (site identifier) is hard-coded and cannot be changed or updated.                                                    |
 | Site Name           | The name of your site. The name cannot be updated through the CSV file; however, it can be changed in [Site Settings - Legacy UI](https://rmm.datto.com/help/de/Content/4WEBPORTAL/Sites/SiteSettings.htm) in the legacy UI and in [Site Settings](https://rmm.datto.com/help/de/Content/3NEWUI/Sites/CreateASite.htm#Site_Settings) in the New UI. |
 | Site Description    | The description of your site. The description cannot be updated through the CSV file; however, it can be changed in [Site Settings - Legacy UI](https://rmm.datto.com/help/de/Content/4WEBPORTAL/Sites/SiteSettings.htm) in the legacy UI and in [Site Settings](https://rmm.datto.com/help/de/Content/3NEWUI/Sites/CreateASite.htm#Site_Settings) in the New UI. |
-| Variable Name       | Enter the name of the site variable. It can be a new variable or an already existing one.  **NOTE:** This field is mandatory.     |
+| Variable Name       | Enter the name of the site variable. It can be a new variable or an already existing one. **NOTE:** This field is mandatory.     |
 | Variable Value      | Enter the value of the variable. It can be a new value or an already existing one. Variable value limit: 20,000 characters. **NOTE:** This field is mandatory. |
 | Variable is Hidden  | If you would like to mask the variable value, enter 1. If you would not like to mask the variable value, enter 0. **NOTE:** When adding a new variable and leaving this field blank, the variable value will not be masked. |
 
-**NOTE:** The **variable_name** and **variable_value** values in the CSV file are both mandatory in order for a site variable to be successfully imported.
+**NOTE:** The **variable_name** and **variable_value** fields in the CSV file are both mandatory for a site variable to be successfully imported.
 
 3. Save the file in CSV format.
 4. Click **Import**, and select the file you have just saved.
@@ -93,14 +92,3 @@ LastStatus    : 7
 
 Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

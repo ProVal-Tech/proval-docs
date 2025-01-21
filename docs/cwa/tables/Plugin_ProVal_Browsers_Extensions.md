@@ -8,9 +8,10 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This Automate custom table stores the information gathered by the [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>) and [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>) scripts and is used by the [Installed Browsers Extensions [Script]](<../dataviews/Installed Browsers Extensions Script.md>) dataview.
+This Automate custom table stores the information gathered by the [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>) and [Get Firefox Browser Extensions](<../scripts/Get Firefox Browser Extensions.md>) scripts and is used by the [Installed Browsers Extensions [Script]](<../dataviews/Installed Browsers Extensions Script.md>) dataview.
 
 ## Dependencies
 
@@ -23,23 +24,11 @@ This Automate custom table stores the information gathered by the [Get Chromium 
 
 | Column                | Type        | Explanation                                                       |
 |----------------------|-------------|-------------------------------------------------------------------|
-| Computerid           | int(10)    | Computerid                                                       |
-| Browser              | varchar(10) | Name of the Browser (Edge|Chrome|Edge|Firefox)                  |
+| Computerid           | int(10)    | Computer ID                                                       |
+| Browser              | varchar(10) | Name of the Browser (Edge|Chrome|Firefox)                        |
 | UserProfilePath      | varchar(128)| User Profile Path of the user to whom the extension belongs      |
 | ExtensionName        | varchar(128)| Name of the Extension                                            |
 | ExtensionID          | varchar(128)| ID of the Extension                                             |
 | ExtensionVersion     | varchar(32) | Version of the Extension                                        |
 | ExtensionInstallTime  | datetime    | Installation time of the Extension                               |
 | ScriptRunTime        | datetime    | Time when the data was fetched in Automate                      |
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,22 +8,11 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Looks for domains that have not synced with the Active Directory plugin within the past two days.
+This document looks for domains that have not synced with the Active Directory plugin within the past two days.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

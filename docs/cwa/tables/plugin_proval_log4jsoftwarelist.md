@@ -8,9 +8,10 @@ tags: ['database', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores information from [https://github.com/NCSC-NL/log4shell/blob/main/software/README.md](https://github.com/NCSC-NL/log4shell/blob/main/software/README.md) about Log4J possibly affected applications.
+This document stores information from [NCSC-NL's GitHub repository](https://github.com/NCSC-NL/log4shell/blob/main/software/README.md) about applications that may be affected by Log4J vulnerabilities.
 
 ## Dependencies
 
@@ -27,17 +28,5 @@ Stores information from [https://github.com/NCSC-NL/log4shell/blob/main/software
 | Product  | VARCHAR | The name of the application.                      |
 | Version  | VARCHAR | The affected versions of the application.        |
 | Status   | VARCHAR | The current vulnerable status of the application. |
-| Notes    | VARCHAR | Any notes about the application                   |
-| Links    | VARCHAR | Links about the application's vulnerability.      |
-
-
-
-
-
-
-
-
-
-
-
-
+| Notes    | VARCHAR | Any notes about the application.                  |
+| Links    | VARCHAR | Links regarding the application's vulnerability.  |

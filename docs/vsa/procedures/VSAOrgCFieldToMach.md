@@ -8,26 +8,16 @@ tags: ['security', 'software', 'update']
 draft: false
 unlisted: false
 ---
-## Summary:
 
-Will push custom field's to the machine/endpoint being targeted from our Organization custom field set.
+## Summary
 
-Updates machine records for Patching, AV, Monitoring, and third party fields.
+This document will push custom fields to the targeted machine or endpoint from our organization's custom field set.
+
+It updates machine records for patching, antivirus, monitoring, and third-party fields.
 
 ## Parameters
 
-- **url**: required. the kaseya server URL  
-- **user**: required. username to log into the kaseya server  
-- **password**: required. password/PAT to log into the kaseya server  
-- **monfilter**: optional. group or org names to not monitor  
-
-
-
-
-
-
-
-
-
-
-
+- **url**: required. The Kaseya server URL.  
+- **user**: required. Username to log into the Kaseya server.  
+- **password**: required. Password/PAT to log into the Kaseya server.  
+- **monfilter**: optional. Group or organization names to exclude from monitoring.  

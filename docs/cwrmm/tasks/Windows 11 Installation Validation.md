@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Check and confirm the Windows 11 installation status after running the Windows 11 Installer (Beta) task.
@@ -81,7 +82,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![PowerShell Function](../../../static/img/Windows-11-Installation-Validation/image_15.png)  
 
-Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
+Paste in the following PowerShell script and leave the expected time of script execution at `300` seconds. Click the `Save` button.
 
 ```
 $TaskRunTime = '@TaskRunTime@'
@@ -114,10 +115,10 @@ Add a new row by clicking the `Add Row` button.
 A blank function will appear.  
 ![Blank Function](../../../static/img/Windows-11-Installation-Validation/image_7.png)  
 
-Search and select `Set Custom Field` Function.  
+Search and select the `Set Custom Field` function.  
 ![Select Set Custom Field](../../../static/img/Windows-11-Installation-Validation/image_17.png)  
 
-Search and select `Windows 11 Upgrade Failed` in the `Search Custom Field` field and set `%Output%` in the `Value` field and click the `Save` button.  
+Search and select `Windows 11 Upgrade Failed` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
 ![Save Custom Field](../../../static/img/Windows-11-Installation-Validation/image_18.png)  
 
 Mark the `Continue on Failure` checkbox.  
@@ -135,9 +136,9 @@ Click the `Save` button at the top-right corner of the screen to save the task.
 The task should be scheduled to run once per day against the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.
 
 - Go to `Automation` > `Tasks`.
-- Search for `Windows 11 Installation Validation` Task.
+- Search for the `Windows 11 Installation Validation` task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task.  
+- Click on the `Schedule` button to schedule the task.  
 ![Schedule Task](../../../static/img/Windows-11-Installation-Validation/image_22.png)  
 - This screen will appear.  
 ![Schedule Screen](../../../static/img/Windows-11-Installation-Validation/image_23.png)  
@@ -151,7 +152,7 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 ![Every Day Recurrence](../../../static/img/Windows-11-Installation-Validation/image_27.png)  
 - Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Windows-11-Installation-Validation/image_28.png)  
-- Search and Select the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.  
+- Search and select the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.  
 ![Select Device Group](../../../static/img/Windows-11-Installation-Validation/image_29.png)  
 - Now click the `Run` button to initiate the task.  
 ![Run Button](../../../static/img/Windows-11-Installation-Validation/image_30.png)  
@@ -163,15 +164,3 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

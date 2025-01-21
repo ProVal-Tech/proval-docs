@@ -8,29 +8,17 @@ tags: ['setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor is designed to update the application based on the PackageID, Source, and Application Name provided inside the monitor. Please duplicate the monitor name and replace the \<Application\> with the actual application name.
+This monitor is designed to update the application based on the PackageID, Source, and Application Name provided within the monitor. Please duplicate the monitor name and replace `<Application>` with the actual application name.
 
 ## Dependencies
 
-[Winget - Install/Update [Autofix,Param]](<../scripts/Script - Winget - InstallUpdate Autofix,Param.md>)
+[Winget - Install/Update [Autofix, Param]](<../scripts/Script - Winget - InstallUpdate Autofix,Param.md>)
 
 ## Target
 
 Global - Should be run without explicitly defined targets.
 
-This monitor is dependent on the properties with the name of PackageID to be created. So, before enabling it you need to implement the monitor "ProVal - Production - \<Application\> - Latest Version Detection" with an alert template "△ Custom - Execute Script - Application Latest Version".
-
-
-
-
-
-
-
-
-
-
-
-
-
+This monitor depends on the property named PackageID being created. Therefore, before enabling it, you need to implement the monitor "ProVal - Production - `<Application>` - Latest Version Detection" with the alert template "△ Custom - Execute Script - Application Latest Version."

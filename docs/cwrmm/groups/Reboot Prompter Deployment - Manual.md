@@ -8,9 +8,10 @@ tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dynamic group depends on the endpoint custom field 'Prompter_RebootPending' flag should be checked and the agent should be available to check in to the group.
+This dynamic group depends on the endpoint custom field 'Prompter_RebootPending'. The flag should be checked, and the agent should be available to check in to the group.
 
 ## Dependencies
 
@@ -21,29 +22,18 @@ Reboot_PendingReboot --> Custom field (Endpoint)
 
 | Field Name                          | Type of Field (Machine or Organization) | Description                                                                                                                                                      |
 |-------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reboot Prompter Deployment - Manual | Dynamic Group                          | This dynamic group depends on the endpoint custom field 'Prompter_RebootPending' flag should be checked and the agent should be available to check in to the group. |
+| Reboot Prompter Deployment - Manual | Dynamic Group                          | This dynamic group depends on the endpoint custom field 'Prompter_RebootPending'. The flag should be checked, and the agent should be available to check in to the group. |
 
-## Group Create 
+## Group Creation 
 
 1. Create Dynamic Groups:  
    ![Image](../../../static/img/Reboot-Prompter-Deployment---Manual/image_1.png)
 
 2. Reboot Prompter Deployment - Manual  
    ![Image](../../../static/img/Reboot-Prompter-Deployment---Manual/image_2.png)  
-   
+
    Criteria:
    - Prompter_RebootPending custom field equals True.
-   - The agent available equals to True.
-   - The OS contains any of Windows 10 and Windows 11.
+   - The agent available equals True.
+   - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
-
-
-
-
-
-
-
-
-
-
-

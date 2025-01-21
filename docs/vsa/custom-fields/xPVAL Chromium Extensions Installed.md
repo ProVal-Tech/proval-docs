@@ -8,9 +8,10 @@ tags: ['chrome', 'data-collection']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Lists all Chromium extensions installed on the endpoint
+This document lists all Chromium extensions installed on the endpoint.
 
 ## Dependencies
 
@@ -21,17 +22,4 @@ Lists all Chromium extensions installed on the endpoint
 
 | Field Name                           | Type of Field (Machine or Organization) | Description                                   |
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
-| xPVAL Chromium Extensions Installed   | Mach                                    | Lists all Chromium extensions installed on the endpoint |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| xPVAL Chromium Extensions Installed   | Machine                                 | Lists all Chromium extensions installed on the endpoint |

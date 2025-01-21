@@ -8,9 +8,10 @@ tags: ['networking', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script functions by adding the site(s) specified in the `Sites` parameter to the 'local intranet zone' on the Windows computer.
+The script functions by adding the site(s) specified in the `Sites` parameter to the local intranet zone on the Windows computer.
 
 ![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_1.png)
 
@@ -35,7 +36,7 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_7.png)
 
 **Input:**  
-**![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_8.png)**
+![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_8.png)
 
 **Result:**  
 ![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_9.png)
@@ -58,15 +59,3 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

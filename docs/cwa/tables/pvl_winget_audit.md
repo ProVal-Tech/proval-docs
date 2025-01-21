@@ -8,39 +8,28 @@ tags: ['database', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores the audit data fetched by the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script.  
+This document stores the audit data fetched by the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script.
 
 ## Dependencies
 
-[SWM - Software Update - Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895)  
+[SWM - Software Update - Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895)
 
 ## Tables
 
-#### pvl_winget_audit
+### pvl_winget_audit
 
-| Column             | Type      | Explanation                                                                                     |
-|--------------------|-----------|-------------------------------------------------------------------------------------------------|
-| computerid         | int       | Computerid of the computer.                                                                     |
-| displayName        | varchar   | DisplayName of the application.                                                                  |
-| packageId          | varchar   | PackageId of the application.                                                                    |
-| InstalledVersion    | varchar   | Installed version of the application.                                                            |
-| AvailableVersion    | varchar   | Latest available version of the application if any.                                             |
-| Source             | varchar   | Source of the application (Winget/Msstore).                                                    |
-| UptoDate          | tinytext  | Is the application uptodate?(0/1)                                                               |
-| Level              | varchar   | Installation level of the application (System/User).                                            |
-| AutoUpdateEnabled   | tinytext  | Is the Auto Update Enabled for the application?(0/1). Refer to the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script's document for detailed instructions on enabling Auto update. |
-| DataCollectionTime  | datetime  | Data Collection Time.                                                                            |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column               | Type      | Explanation                                                                                     |
+|----------------------|-----------|-------------------------------------------------------------------------------------------------|
+| computerid           | int       | Computer ID of the computer.                                                                    |
+| displayName          | varchar   | Display name of the application.                                                                 |
+| packageId            | varchar   | Package ID of the application.                                                                   |
+| InstalledVersion      | varchar   | Installed version of the application.                                                           |
+| AvailableVersion      | varchar   | Latest available version of the application, if any.                                            |
+| Source               | varchar   | Source of the application (Winget/Msstore).                                                    |
+| UptoDate            | tinytext  | Is the application up to date? (0/1)                                                            |
+| Level                | varchar   | Installation level of the application (System/User).                                            |
+| AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script's document for detailed instructions on enabling Auto Update. |
+| DataCollectionTime    | datetime  | Data collection time.                                                                            |

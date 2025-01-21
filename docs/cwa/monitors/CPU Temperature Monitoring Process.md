@@ -8,6 +8,7 @@ tags: ['performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The remote monitor is responsible for CPU temperature monitoring on physical Windows machines. It utilizes the [CPUTempMon.exe](https://proval.itglue.com/attachments/13313008) tool to obtain readings from the CPU temperature sensors. This tool is based on the [Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor).
@@ -18,11 +19,11 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 ## Details
 
-**Suggested "Limit to"**: Physical Windows machines
+**Suggested "Limit to":** Physical Windows machines
 
-**Suggested Alert Style**: Once
+**Suggested Alert Style:** Once
 
-**Suggested Alert Template**: `△ Custom - Ticket Creation - Computer` or `△ Custom - Email Creation - Computer`
+**Suggested Alert Template:** `△ Custom - Ticket Creation - Computer` or `△ Custom - Email Creation - Computer`
 
 ## Dependencies
 
@@ -36,17 +37,3 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/CPU-Temperature-Monitoring-Process/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

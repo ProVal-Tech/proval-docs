@@ -8,12 +8,13 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The ultimate objective of the solution is to establish and oversee two scheduled tasks designed to update installed applications utilizing Winget on Windows 10 and 11 machines within the environment.
+The ultimate objective of this solution is to establish and oversee two scheduled tasks designed to update installed applications utilizing Winget on Windows 10 and 11 machines within the environment.
 
-- `Winget Update All [System]` task executes the Winget's `upgrade all command` upon system boot (after network connection) under the SYSTEM context.
-- `Winget Update All [Logged on User]` task initiates the Winget's `upgrade all command` upon user login.
+- The `Winget Update All [System]` task executes Winget's `upgrade all command` upon system boot (after network connection) under the SYSTEM context.
+- The `Winget Update All [Logged on User]` task initiates Winget's `upgrade all command` upon user login.
 
 **Note**:  
 Excluding the client/location/computer will remove both scheduled tasks from the associated endpoint(s). By default, "[WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/Company - WingetUpdateAll_UserTask_Disable.md>)" at the company, site, and endpoint level is set to "yes," which means disabled.
@@ -21,7 +22,7 @@ Excluding the client/location/computer will remove both scheduled tasks from the
 To enable the `Winget Update All [Logged on User]`, you need to change the custom field [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/Company - WingetUpdateAll_UserTask_Disable.md>) to "No" for the required company, site, or endpoint level.
 
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)  
-Be sure that user-level scheduled tasks `Winget Update All [Logged on User]` may prompt for UAC to the logged-in user if enabled. ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)  
+Be aware that user-level scheduled tasks `Winget Update All [Logged on User]` may prompt for UAC to the logged-in user if enabled. ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)  
 
 ## Associated Content
 
@@ -31,18 +32,18 @@ Be sure that user-level scheduled tasks `Winget Update All [Logged on User]` may
 |---------|------|-------|---------|----------|
 | [WingetUpdateAll_Task_Create](<../cwrmm/custom-fields/Company - WingetUpdateAll_Task_Create.md>) | Flag | Company | No | Mark this custom field to create Winget Update All (System And Logged on User) tasks for the company's Windows 10 and 11 computers. |
 | [WingetUpdateAll_Task_Delete](<../cwrmm/custom-fields/Company - WingetUpdateAll_Task_Delete.md>) | Flag | Company | No | Mark this custom field to delete Winget Update All (System And Logged on User) tasks for the company's Windows 10 and 11 machines. |
-| [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/Company - WingetUpdateAll_UserTask_Disable.md>) | Flag | Company | Yes | Set this custom field to "No" to enable the user-level Winget to update all tasks for Windows 10 and 11 of the company. |
+| [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/Company - WingetUpdateAll_UserTask_Disable.md>) | Flag | Company | Yes | Set this custom field to "No" to enable the user-level Winget update all tasks for Windows 10 and 11 of the company. |
 | [WingetUpdateAll_Task_Exclude](<../cwrmm/custom-fields/Site - WingetUpdateAll_Task_Exclude.md>) | Flag | Site | No | Mark this custom field to exclude the site from Winget Update All Task creation and remove the created tasks for the site's Windows 10 and 11 computers. |
-| [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/Site - WingetUpdateAll_UserTask_Disable.md>) | Flag | Site | No | Set this custom field to "Yes" to disable the user-level Winget to update all tasks for Windows 10 and 11 of the site. |
+| [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/Site - WingetUpdateAll_UserTask_Disable.md>) | Flag | Site | No | Set this custom field to "Yes" to disable the user-level Winget update all tasks for Windows 10 and 11 of the site. |
 | [WingetUpdateAll_Task_Exclude](<../cwrmm/custom-fields/EndPoint - WingetUpdateAll_Task_Exclude.md>) | Flag | Endpoint | No | Mark this custom field to exclude the computer from Winget Update All Task creation and remove the created tasks for the machine. |
-| [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/EndPoint - WingetUpdateAll_UserTask_Disable.md>) | Flag | Endpoint | No | Set this custom field to "Yes" to disable the user-level Winget to update all tasks for the Windows machines. |
+| [WingetUpdateAll_UserTask_Disable](<../cwrmm/custom-fields/EndPoint - WingetUpdateAll_UserTask_Disable.md>) | Flag | Endpoint | No | Set this custom field to "Yes" to disable the user-level Winget update all tasks for the Windows machines. |
 | [WingetUpdateAll_Task_Result](<../cwrmm/custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>) | Text | Endpoint | No | This custom field stores the outcome of both [Scheduled Task Winget Update All (Create)](<../cwrmm/tasks/Scheduled Task Winget Update All (Create).md>) and [Scheduled Task Winget Update All (Delete)](<../cwrmm/tasks/Scheduled Task Winget Update All (Delete).md>) tasks. It stores whether the task succeeded or failed. |
 
 ### Device Groups
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Winget Update All (Task Create)](<../cwrmm/groups/Winget Update All (Task Create).md>) | Dynamic | This group detects Windows 10 and 11 computers where Winget Update All [System] and Winget Update All [Logged on User] tasks are missing and are opted in the Winget update All Scheduled task creation solution. |
+| [Winget Update All (Task Create)](<../cwrmm/groups/Winget Update All (Task Create).md>) | Dynamic | This group detects Windows 10 and 11 computers where Winget Update All [System] and Winget Update All [Logged on User] tasks are missing and are opted in for the Winget Update All Scheduled task creation solution. |
 | [Winget Update All (Task Delete)](<../cwrmm/groups/Winget Update All (Task Delete).md>) | Dynamic | This group identifies Windows 10 and 11 computers with the presence of Winget Update All [System] and Winget Update All [Logged on User] tasks and opts to remove these scheduled tasks. |
 
 ### Tasks
@@ -74,16 +75,3 @@ Create the following device groups:
 Create and deploy the following tasks:  
 - [Scheduled Task Winget Update All (Create)](<../cwrmm/tasks/Scheduled Task Winget Update All (Create).md>)  
 - [Scheduled Task Winget Update All (Delete)](<../cwrmm/tasks/Scheduled Task Winget Update All (Delete).md>)  
-
-
-
-
-
-
-
-
-
-
-
-
-

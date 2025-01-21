@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will look for machines with the event ID 6008. This Windows event is usually associated with an "Unexpected Shutdown".
+This monitor will look for machines with event ID 6008. This Windows event is usually associated with an "Unexpected Shutdown."
 
 ## Dependencies
 
@@ -19,19 +20,6 @@ Automate must be gathering event logs into the database for this internal monito
 
 ## Target
 
-Primarily this monitor target is servers, but it will work properly for workstations if this data is of value to the MSP.  
+Primarily, this monitor targets servers, but it will work properly for workstations if this data is of value to the MSP.  
 **Servers** - Should be run on servers  
 **Windows Machines** - Should be run on all Windows machines  
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['performance', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview tracks the working of the [User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) solution.
+The dataview tracks the functioning of the [User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) solution.
 
 ## Dependencies
 
@@ -21,16 +22,16 @@ The dataview tracks the working of the [User Prompt for Reboot](<../../solutions
 
 | Column                                | Description                                                                                                           |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Clientid                              | Clientid (Hidden)                                                                                                   |
-| Locationid                            | Locationid (Hidden)                                                                                                 |
-| Computerid                            | Computerid (Hidden)                                                                                                 |
+| Clientid                              | Client ID (Hidden)                                                                                                   |
+| Locationid                            | Location ID (Hidden)                                                                                                 |
+| Computerid                            | Computer ID (Hidden)                                                                                                 |
 | Client                                | Client Name                                                                                                         |
 | Location                              | Location Name                                                                                                       |
 | Computer                              | Computer Name                                                                                                       |
 | Operating System                      | Operating System                                                                                                    |
 | Form Factor                           | Form Factor (Laptop/Desktop/Virtual Machine)                                                                        |
 | Last Contact                          | Last Contact With RMM                                                                                               |
-| Last LoggedIn User                   | Name of the last logged-in user (Hidden)                                                                            |
+| Last Logged-In User                   | Name of the last logged-in user (Hidden)                                                                            |
 | Active User                           | Name of the currently active user (Hidden)                                                                          |
 | Last Reboot Time                     | Last Reboot Time of the computer                                                                                   |
 | Idle Time (Seconds)                  | Idle Time of the computer in seconds (Hidden)                                                                      |
@@ -40,19 +41,6 @@ The dataview tracks the working of the [User Prompt for Reboot](<../../solutions
 | Global Maximum Prompts                | Maximum number of prompts to be sent as set in the `proval_RebootPromptCount` system property                       |
 | Global Duration Between Prompts (Hours)| Duration set in the `proval_RebootPromptDurBetweenPrompt` system property for two consecutive prompts.              |
 | Global Uptime Days to Send Prompts    | Uptime in days set in the `proval_RebootPromptUptimeDays` system property to automatically send the prompt. (0 --> Disabled) |
-| Global Prompt for Reboot Pending      | Is prompting enabled for the computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
-| Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 05 times and issue is still not resolved. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Global Prompt for Reboot Pending      | Is prompting enabled for computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
+| Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 5 times and the issue is still not resolved. |
 

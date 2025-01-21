@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitors run the [Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>) script on a weekly basis for Windows workstations with Outlook installed.
@@ -23,17 +24,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
-
-
-
-
-
-
-
-
-
-
-
-
-
-

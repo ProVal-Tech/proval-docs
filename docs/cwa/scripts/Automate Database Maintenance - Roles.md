@@ -8,12 +8,13 @@ tags: ['cleanup', 'database', 'logging']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>). 
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
 
-This script handles cleanup of the following table(s):  
-ComputerRoleDefinitions - Requires [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) MissingRoles_Cleanup Global Variable Set to 1.
+This script handles the cleanup of the following table(s):  
+**ComputerRoleDefinitions** - Requires [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) MissingRoles_Cleanup Global Variable set to 1.
 
 ## Sample Run
 
@@ -21,25 +22,13 @@ This script is a function script called from [CWM - Automate - Script - Automate
 
 ## Variables
 
-| Name         | Description                                                                                                                                                      |
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verify       | This variable verified both the starting count of targeted data, as well as the after action count of targeted data. We expect the starting count will be a value bigger than 0, and an after action value of 0. |
-| LogMessage   | This is the running Log holding variable. Please note this variable is always set the same everywhere it's used in the solution. @logMessage@ = @LogMessage@[Linebreak]%when% : [Category] Cleanup [Stage] - Result. Please continue to utilize this standard with this running log file. |
+| Name       | Description                                                                                                                                                      |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Verify     | This variable verifies both the starting count of targeted data and the after-action count of targeted data. We expect the starting count to be a value greater than 0, and the after-action value to be 0. |
+| LogMessage | This variable holds the running log message. Please note this variable is always set the same way wherever it's used in the solution. `@logMessage@` = `@LogMessage@[Linebreak]%when% : [Category] Cleanup [Stage] - Result`. Please continue to utilize this standard with this running log file. |
 
 ## Output
 
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Roles/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,17 +8,18 @@ tags: ['report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The solution aims to audit the basic information of installed Click-to-Run version of Microsoft 365.
+The solution aims to audit the basic information of the installed Click-to-Run version of Microsoft 365.
 
 ## Associated Content
 
 | Content                                                                                     | Type          | Function                                                                                                      |
 |---------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------|
-| [Endpoint - C2R Office Version](<../cwrmm/custom-fields/Endpoint - C2R Office Version.md>)           | Custom Field  | Stores the C2R office version installed on the machine.                                                    |
-| [Endpoint - C2R Auto Update](<../cwrmm/custom-fields/Endpoint - C2R Auto Update.md>)             | Custom Field  | Stores whether the C2R office Auto update is enabled or disabled.                                          |
-| [Endpoint - C2R Update Channel](<../cwrmm/custom-fields/Endpoint - C2R Update Channel.md>)          | Custom Field  | Stores the Update Channel of the office installed on the machine.                                          |
+| [Endpoint - C2R Office Version](<../cwrmm/custom-fields/Endpoint - C2R Office Version.md>)           | Custom Field  | Stores the C2R Office version installed on the machine.                                                    |
+| [Endpoint - C2R Auto Update](<../cwrmm/custom-fields/Endpoint - C2R Auto Update.md>)             | Custom Field  | Stores whether the C2R Office Auto Update is enabled or disabled.                                          |
+| [Endpoint - C2R Update Channel](<../cwrmm/custom-fields/Endpoint - C2R Update Channel.md>)          | Custom Field  | Stores the Update Channel of the Office installed on the machine.                                          |
 | [Endpoint - C2R Data Collection Time](<../cwrmm/custom-fields/Endpoint - C2R Data Collection Time.md>)    | Custom Field  | Stores the time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. |
 | [Device Group - Office C2R Auditing](<../cwrmm/groups/Office C2R Auditing.md>)     | Device Group  | A group of computers with Microsoft 365 installed.                                                         |
 | [Task - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) | Task          | Retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel. |
@@ -36,16 +37,3 @@ The solution aims to audit the basic information of installed Click-to-Run versi
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390)
-
-
-
-
-
-
-
-
-
-
-
-
-

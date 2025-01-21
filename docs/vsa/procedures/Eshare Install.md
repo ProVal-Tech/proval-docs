@@ -8,16 +8,17 @@ tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The "eShare Install" script silently installs the eShare software to the machine. There is no need to reboot the machine for this.
+The **eShare Install** script silently installs the eShare software on the machine without requiring a reboot.
 
 ## Sample Run
 
 | Time                     | Action                          | Status                                                                 | User                           |
 |--------------------------|---------------------------------|------------------------------------------------------------------------|--------------------------------|
 | 10:55:20 am 5-May-22    | Eshare install                  | Success THEN                                                          | provaltech.com/surender.kumar  |
-| 10:54:35 am 5-May-22    | Run Now - Eshare install        | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Eshare install to run at May 5 2022 10:54AM | provaltech.com/surender.kumar  |
+| 10:54:35 am 5-May-22    | Run Now - Eshare install        | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Eshare install to run at May 5 2022 10:54 AM | provaltech.com/surender.kumar  |
 
 #### Dependencies
 
@@ -26,20 +27,9 @@ The "eShare Install" script silently installs the eShare software to the machine
 
 ## Process
 
-- We are going to copy "EShareClient.exe" to the machine through write file.
-- We are making it silent run by executing shell command.
+- Copy **EShareClient.exe** to the machine through file write.
+- Execute a shell command to run it silently.
 
 ## Output
 
 - Procedure log
-
-
-
-
-
-
-
-
-
-
-

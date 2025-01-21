@@ -8,11 +8,12 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is for use in conjunction with User-Centric. When users are imported using the AD plugin it doesn't set them to 'managed' and 'Activated' which are the flags that prevent them from showing in the UserCentric plugin in Manage. The Active Directory plugin must be configured correctly and the script is intended to run against the Automate Server.
+This script is for use in conjunction with User-Centric. When users are imported using the AD plugin, it doesn't set them to 'managed' and 'activated', which are the flags that prevent them from showing in the UserCentric plugin in Manage. The Active Directory plugin must be configured correctly, and the script is intended to run against the Automate Server.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -24,19 +25,8 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-This script is for use in conjunction with User-Centric. When users are imported using the AD plugin it doesn't set them to 'managed' and 'Activated' which are the flags that prevent them from showing in the UserCentric plugin in Manage. The script is intended to run against the Automate Server and before running the script the Active Directory plugin must be configured correctly.
+This script is for use in conjunction with User-Centric. When users are imported using the AD plugin, it doesn't set them to 'managed' and 'activated', which are the flags that prevent them from showing in the UserCentric plugin in Manage. The script is intended to run against the Automate Server, and before running the script, the Active Directory plugin must be configured correctly.
 
 ## Output
 
 Manage plugin
-
-
-
-
-
-
-
-
-
-
-

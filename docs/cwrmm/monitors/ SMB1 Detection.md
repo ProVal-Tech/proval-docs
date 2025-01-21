@@ -8,27 +8,28 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor checks whether the SMB1 is enabled on the end machine or not. It runs the OS version [compatible command](https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3?tabs=server#how-to-detect-status-enable-and-disable-smb-protocols) to fetch the data.
+This monitor checks whether SMB1 is enabled on the end machine. It runs the OS version [compatible command](https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3?tabs=server#how-to-detect-status-enable-and-disable-smb-protocols) to fetch the data.
 
 ## Monitor
 
-1. Go to Alert Management > Monitors > Add monitor  
+1. Go to **Alert Management > Monitors > Add monitor**  
    ![Image 1](../../../static/img/-SMB1-Detection/image_1.png)  
    ![Image 2](../../../static/img/-SMB1-Detection/image_2.png)  
 
 2. This screen will appear.  
    ![Image 3](../../../static/img/-SMB1-Detection/image_3.png)  
 
-3. Fill the Name and Description boxes.  
+3. Fill in the Name and Description boxes.  
    **Name:** SMB1 Detection  
-   **Description:** Check whether the SMB1 is enabled on the end machine or not.  
+   **Description:** Check whether SMB1 is enabled on the end machine.  
 
    Select `Script` as `Type`, `RMM Agent` for the `Family`, and `Others` or any relevant option for the `Severity`.  
    ![Image 4](../../../static/img/-SMB1-Detection/image_4.png)  
 
-4. In conditions selection, select Powershell in the Script Language, select Schedule in Run Script on, type 167 hours in Repeat every. Add the following query in the Script box:  
+4. In the conditions selection, select PowerShell in the Script Language, select Schedule in Run Script on, and type 167 hours in Repeat every. Add the following query in the Script box:  
    ```powershell
    $ErroractionPreference= 'SilentlyContinue';  
    $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version;  
@@ -49,7 +50,7 @@ This monitor checks whether the SMB1 is enabled on the end machine or not. It ru
    }
    ```  
 
-   In Criteria select `Contains`, `AND`  
+   In Criteria, select `Contains`, `AND`  
    Enter `True` in Script output.  
    The Conditions Section should look something like this:  
    ![Image 5](../../../static/img/-SMB1-Detection/image_5.png)  
@@ -66,14 +67,3 @@ This monitor checks whether the SMB1 is enabled on the end machine or not. It ru
    **![Image 9](../../../static/img/-SMB1-Detection/image_9.png)**  
 
 8. Click the `Save` button to save the monitor set.
-
-
-
-
-
-
-
-
-
-
-

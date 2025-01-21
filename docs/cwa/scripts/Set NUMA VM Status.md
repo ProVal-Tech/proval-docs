@@ -8,10 +8,11 @@ tags: ['hyper-v', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is used to check for machines that have too many resources, exceeding their NUMA node limits.  
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -25,20 +26,8 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-The script runs a Powershell script to get the NumaStatus. The Powershell then holds the MisconfiguredNumaVMs in the script state. The script is intended to run on the Hyper-V host servers.
+The script runs a PowerShell script to get the NumaStatus. The PowerShell then holds the MisconfiguredNumaVMs in the script state. The script is intended to run on the Hyper-V host servers.
 
 ## Output
 
 - Script state
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['active-directory', 'backup', 'encryption', 'security', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-Displays information from the table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) filled by [SEC - Encryption - Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). Additionally displays information about the Active Directory backup status of each key protector.
+This document displays information from the table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>), which is filled by [SEC - Encryption - Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). Additionally, it provides information about the Active Directory backup status of each key protector.
 
 ## Dependencies
 
@@ -27,33 +28,33 @@ Displays information from the table [SEC - Encryption - Custom Table - plugin_pr
 | Computer                                           | The name of the audited agent.                                                                                                                                  |
 | MountPoint                                         | The drive letter of the audited volume.                                                                                                                          |
 | EncryptionMethod                                   | The encryption method used to encrypt the drive.                                                                                                                |
-| AutoUnlockEnabled                                  | 1 or 0 depending on if the drive will be auto-unlocked.                                                                                                         |
+| AutoUnlockEnabled                                  | 1 or 0 depending on whether the drive will be auto-unlocked.                                                                                                     |
 | AutoUnlockKeyStored                                | 1 or 0 depending on whether any external keys or related information that may be used to automatically unlock data volumes exist in the currently running operating system volume. |
 | MetadataVersion                                    | The version of the Bitlocker metadata.                                                                                                                          |
-| VolumeStatus                                       | The current status that the audited volume is in.                                                                                                              |
-| ProtectionStatus                                   | Whether Bitlocker protection is currently On or Off.                                                                                                            |
-| LockStatus                                         | Whether the protected drive is currently locked.                                                                                                                |
-| EncryptionPercentage                               | The percentage that the audited drive is currently encrypted. If encryption is enabled and has completed, then this should be 100.                              |
+| VolumeStatus                                       | The current status of the audited volume.                                                                                                                      |
+| ProtectionStatus                                   | Indicates whether Bitlocker protection is currently On or Off.                                                                                                   |
+| LockStatus                                         | Indicates whether the protected drive is currently locked.                                                                                                        |
+| EncryptionPercentage                               | The percentage of the audited drive that is currently encrypted. If encryption is enabled and has completed, this should be 100.                                 |
 | WipePercentage                                     | The percentage of the volume that has been wiped after issuing a wipe command.                                                                                   |
 | VolumeType                                         | The type of the audited volume.                                                                                                                                  |
-| The GUID of the key protector for the audited volume. | The GUID of the key protector for the audited volume.                                                                                                            |
-| AutoUnlockProtector                                | 1 or 0 depending on if this key protector is an auto-unlock protector.                                                                                          |
+| KeyProtectorGUID                                   | The GUID of the key protector for the audited volume.                                                                                                            |
+| AutoUnlockProtector                                | 1 or 0 depending on whether this key protector is an auto-unlock protector.                                                                                      |
 | KeyProtectorType                                   | The type of key protector.                                                                                                                                       |
 | KeyFileName                                        | The file name of the key protector (if applicable).                                                                                                             |
 | RecoveryPassword                                    | The recovery password of the key protector (if applicable).                                                                                                      |
 | KeyCertificateType                                 | The certificate type of the key protector (if applicable).                                                                                                      |
 | Thumbprint                                         | The thumbprint of the key protector (if applicable).                                                                                                            |
 | LastUpdated                                        | The last time the volume was audited.                                                                                                                            |
-| ADBackupDetected                                   | True or False if the key was detected as backed up to Active Directory.                                                                                          |
+| ADBackupDetected                                   | True or False indicating if the key was detected as backed up to Active Directory.                                                                                |
 | ADBackupLastAudit                                  | The last time any domain controller in the target domain has been audited for key protector backups. NULL if no audit has been performed.                        |
 
 ## SQL Representation
 
-```
+```sql
 SELECT
     dt.Client,
     dt.ComputerID,
-    [dt.Computer](http://dt.Computer),
+    dt.Computer,
     dt.MountPoint,
     dt.EncryptionMethod,
     dt.AutoUnlockEnabled,
@@ -77,9 +78,9 @@ SELECT
     dt.ADBackupLastAudit
 FROM (
     SELECT DISTINCT
-        [cl.Name](http://cl.Name) AS Client,
+        cl.Name AS Client,
         c.ComputerID AS ComputerID,
-        [c.Name](http://c.Name) AS Computer,
+        c.Name AS Computer,
         b.MountPoint AS MountPoint,
         b.EncryptionMethod AS EncryptionMethod,
         b.AutoUnlockEnabled AS AutoUnlockEnabled,
@@ -99,7 +100,7 @@ FROM (
         b.KeyCertificateType AS KeyCertificateType,
         b.Thumbprint AS Thumbprint,
         b.LastUpdated AS LastUpdated,
-        IF(kp.RecoveryGUID IS NULL,'False','True') AS ADBackupDetected,
+        IF(kp.RecoveryGUID IS NULL, 'False', 'True') AS ADBackupDetected,
         (
             SELECT `Timestamp`
             FROM plugin_proval_ad_bitlocker_keyprotectors
@@ -112,21 +113,7 @@ FROM (
         ) AS ADBackupLastAudit
     FROM computers c
         LEFT JOIN plugin_proval_bitlocker_audit b ON c.ComputerID = b.ComputerID
-        LEFT JOIN plugin_proval_ad_bitlocker_keyprotectors kp ON b.KeyProtectorId = CONCAT('{',kp.RecoveryGUID,'}')
+        LEFT JOIN plugin_proval_ad_bitlocker_keyprotectors kp ON b.KeyProtectorId = CONCAT('{', kp.RecoveryGUID, '}')
         JOIN clients cl ON c.ClientID = cl.ClientID
 ) dt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

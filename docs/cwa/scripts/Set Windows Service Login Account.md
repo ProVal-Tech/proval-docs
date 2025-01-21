@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Used to change the service login account for a target service.
+This document is used to change the service login account for a target service.
 
 ## Sample Run
 
@@ -30,11 +31,11 @@ Used to change the service login account for a target service.
 
 | Name         | Example       | Required      | Description                                                                                              |
 |--------------|---------------|---------------|----------------------------------------------------------------------------------------------------------|
-| Name         | spooler       | Semi-Required | The service name to modify. Either this or DisplayName parameter must be specified.                     |
-| DisplayName  | Print Spooler | Semi-Required | The display name of the service to modify. Either this or Name parameter must be specified.             |
-| User         | testuser      | Semi-Required | The username of the user to run the service as. User and Pass must be specified, otherwise System must be specified. |
-| Pass         | testpass123   | Semi-Required | The password of the user to run the service as. User and Pass must be specified, otherwise System must be specified. |
-| System       | 1             | Semi-Required | Use this to run the service as "Local System". System must be specified, otherwise User and Pass must be specified. |
+| Name         | spooler       | Semi-Required | The service name to modify. Either this or the DisplayName parameter must be specified.                 |
+| DisplayName  | Print Spooler | Semi-Required | The display name of the service to modify. Either this or the Name parameter must be specified.         |
+| User         | testuser      | Semi-Required | The username of the user to run the service as. User and Pass must be specified; otherwise, System must be specified. |
+| Pass         | testpass123   | Semi-Required | The password of the user to run the service as. User and Pass must be specified; otherwise, System must be specified. |
+| System       | 1             | Semi-Required | Use this to run the service as "Local System." System must be specified; otherwise, User and Pass must be specified. |
 
 ## Process
 
@@ -44,19 +45,7 @@ See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.i
 
 - Script log
 - Script state
-- Local file on computer
+- Local files on the computer
   - `.//Set-ServiceLogin-log.txt`
   - `.//Set-ServiceLogin-data.txt`
   - `.//Set-ServiceLogin-error.txt`
-
-
-
-
-
-
-
-
-
-
-
-

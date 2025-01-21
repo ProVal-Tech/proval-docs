@@ -8,9 +8,10 @@ tags: ['networking', 'performance', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Runs an internet speed test via the Ookla SpeedTest CLI application.
+This document describes how to run an internet speed test using the Ookla SpeedTest CLI application.
 
 ## Sample Run
 
@@ -24,7 +25,7 @@ Runs an internet speed test via the Ookla SpeedTest CLI application.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation](../../../static/img/Internet-Speed---Audit/image_7.png)
 
@@ -38,7 +39,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Internet-Speed---Audit/image_10.png)
 
@@ -129,15 +130,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

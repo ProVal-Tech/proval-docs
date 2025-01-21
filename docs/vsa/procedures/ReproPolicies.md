@@ -8,25 +8,14 @@ tags: ['database', 'security']
 draft: false
 unlisted: false
 ---
-## Summery
+
+## Summary
 
 Clear Overrides and Reprocess Policies
 
-## Parameter:
+## Parameters:
 
-- **credtype**: required. [sql] or [windows]  
-- **server**: required. the SQL server name  
-- **user**: required if sql authent. the username of the sql acct  
-- **password**: required if sql authent. the password of the sql acct  
-
-
-
-
-
-
-
-
-
-
-
-
+- **credtype**: required. Either [sql] or [windows].  
+- **server**: required. The SQL server name.  
+- **user**: required if using SQL authentication. The username of the SQL account.  
+- **password**: required if using SQL authentication. The password of the SQL account.  

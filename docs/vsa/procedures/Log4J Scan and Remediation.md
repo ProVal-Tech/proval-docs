@@ -1,31 +1,20 @@
 ---
 id: '860118db-b386-45bd-8dfc-580742b1f467'
-title: 'Uses revised Datto Scrip'
-title_meta: 'Uses revised Datto Scrip for Endpoint Security Scanning'
+title: 'Uses Revised Datto Scrip'
+title_meta: 'Uses Revised Datto Scrip for Endpoint Security Scanning'
 keywords: ['datto', 'endpoint', 'security', 'vulnerabilities', 'scan']
 description: 'This document discusses the use of the revised Datto Scrip, credited to Stephen Nix, for scanning endpoints for attacks and potential vulnerabilities. It outlines the requirement for an email to be specified in the script and explains the notification process for detected threats.'
 tags: ['security']
 draft: false
 unlisted: false
 ---
-## Uses revised Datto Scrip
 
-Uses revised Datto Scrip (revision credit Stephen Nix) to scan endpoint for attacks and possible vulnerabilities. 
+## Uses Revised Datto Scrip
 
-Email must be specified on script line 7.
+The revised Datto Scrip (revision credited to Stephen Nix) is used to scan endpoints for attacks and potential vulnerabilities.
 
-Email will be sent in the case that vulnerabilities or attack traces are found. No notification if no threat exists.
+An email must be specified on line 7 of the script.
+
+An email notification will be sent if vulnerabilities or attack traces are found. No notification will be sent if no threats exist.
 
 ![Image](../../../static/img/Log4J-Scan-and-Remediation/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

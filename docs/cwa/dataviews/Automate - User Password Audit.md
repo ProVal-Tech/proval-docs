@@ -8,17 +8,18 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview denotes if an Automate user's password is set to a weak string. The following items are required for a "strong" password:
+This document outlines the criteria for determining if an Automate user's password is considered weak. The following items are required for a "strong" password:
 
 - No variations on the word "Password"
   - P@s$W0rd
   - p@$swORD
   - etc.
 - At least 10 characters long
-- Contains one lower case character
-- Contains one upper case character
+- Contains one lowercase character
+- Contains one uppercase character
 - Contains one numeric character
 - Contains one non-alphanumeric character
 
@@ -26,18 +27,6 @@ This dataview denotes if an Automate user's password is set to a weak string. Th
 
 | Column          | Description                                                  |
 |-----------------|--------------------------------------------------------------|
-| Username        | User Name                                                   |
-| Email           | Email of user                                              |
-| Password Error  | The password complexity error to show whether password set is strong or not. |
-
-
-
-
-
-
-
-
-
-
-
-
+| Username        | User name                                                   |
+| Email           | Email of the user                                           |
+| Password Error  | The password complexity error indicating whether the password is strong or not. |

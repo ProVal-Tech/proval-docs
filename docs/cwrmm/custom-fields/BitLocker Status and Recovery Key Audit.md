@@ -8,11 +8,12 @@ tags: ['encryption', 'recovery', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This custom field is used to display the BitLocker encryption status of drives based on the [BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878983) task. If a recovery is available, the solution will also write the key to the custom field.
+This custom field is used to display the BitLocker encryption status of drives based on the [BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878983) task. If a recovery key is available, the solution will also write the key to the custom field.
 
-# Create the Custom Field
+## Create the Custom Field
 
 ![Image 1](../../../static/img/BitLocker-Status-and-Recovery-Key-Audit/image_2.png)
 
@@ -24,15 +25,3 @@ This custom field is used to display the BitLocker encryption status of drives b
 - **Level:** Endpoint
 - **Description:** This will show drives that are encrypted with BitLocker and will display the recovery key if available.
 - **Editable:** Yes
-
-
-
-
-
-
-
-
-
-
-
-

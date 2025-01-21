@@ -8,6 +8,7 @@ tags: ['installation', 'software', 'web-browser', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium').
@@ -53,7 +54,7 @@ This screen will appear.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Parameter Image 3](../../../static/img/Chromium-Browsers---Extension---Install/image_9.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Parameter Image 4](../../../static/img/Chromium-Browsers---Extension---Install/image_10.png)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
@@ -66,7 +67,7 @@ This screen will appear.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Parameter Image 7](../../../static/img/Chromium-Browsers---Extension---Install/image_11.png)  
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Parameter Image 8](../../../static/img/Chromium-Browsers---Extension---Install/image_10.png)  
 
 ## Task
@@ -104,18 +105,18 @@ Remove-Item $WorkingDirectory -Force -Recurse -ErrorAction SilentlyContinue | Ou
 Mkdir $WorkingDirectory 3>&1 2>&1 1>$Null
 try {(New-Object System.Net.WebClient).DownloadFile($PS1URL, $ScriptPath)} catch {throw 'Script Download Failure'}
 
-if ( $Target -match '^(Chromium|Chrome|Edge|Brave|Vivaldi)$' ) {
+if ($Target -match '^(Chromium|Chrome|Edge|Brave|Vivaldi)$') {
   & $ScriptPath -ExtensionID $ExtensionID -Target $Target
 } else {
   & $ScriptPath -ExtensionID $ExtensionID
 }
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
   Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 
-if ( Test-Path $ErrorLogPath ) {
-  $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+  $ErrorContent = (Get-Content -Path $ErrorLogPath)
   throw $ErrorContent
 }
 
@@ -134,16 +135,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-
 

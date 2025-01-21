@@ -8,9 +8,10 @@ tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview helps to view the domain level and forest levels information of the Domain Controllers.
+The dataview helps to view the domain level and forest level information of the Domain Controllers.
 
 ## Dependencies
 
@@ -20,20 +21,7 @@ The dataview helps to view the domain level and forest levels information of the
 
 | Column        | Description                                                   |
 |---------------|---------------------------------------------------------------|
-| Domain Name   | Displays domain name with respect to the Domain controller.   |
-| Domain Level  | Displays domain functional level of the respective domains.    |
-| Forest Name   | Displays Forest name with respect to the Domain controller.    |
-| Forest Level  | Displays forest functional level of the respective domains.    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Domain Name   | Displays the domain name with respect to the Domain Controller. |
+| Domain Level  | Displays the domain functional level of the respective domains.  |
+| Forest Name   | Displays the forest name with respect to the Domain Controller.  |
+| Forest Level  | Displays the forest functional level of the respective domains.  |

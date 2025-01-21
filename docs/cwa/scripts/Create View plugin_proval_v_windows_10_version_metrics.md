@@ -8,9 +8,10 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will create the view [plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/5078775/docs/9373661) which is used by the dataview, "[Windows - Windows 10 Version Metrics + Filters + Client Filters(reference table)](https://proval.itglue.com/5078775/docs/9373201)".
+The script will create the view [plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/5078775/docs/9373661), which is used by the dataview, "[Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](https://proval.itglue.com/5078775/docs/9373201)."
 
 ## Sample Run
 
@@ -18,22 +19,10 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 
 ## Dependencies
 
-- [Windows - Windows 10 Version Metrics + Filters + Client Filters(reference table)](https://proval.itglue.com/5078775/docs/9373201)
+- [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](https://proval.itglue.com/5078775/docs/9373201)
 - [plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/5078775/docs/9373661)
 - [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<./MySQL - Permission - Set Custom Table Permissions.md>)
 
 ## Process
 
-Executes the SQL query to create the plugin_proval_v_windows_10_Version_metrics view.
-
-
-
-
-
-
-
-
-
-
-
-
+This section executes the SQL query to create the `plugin_proval_v_windows_10_version_metrics` view.

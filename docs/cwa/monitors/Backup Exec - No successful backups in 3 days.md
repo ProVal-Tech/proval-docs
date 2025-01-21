@@ -8,9 +8,10 @@ tags: ['backup', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It verifies the occurrence of event ID 34112 within the preceding three-day period to ascertain the execution of a successful backup operation on the respective machine.
+This document verifies the occurrence of event ID 34112 within the preceding three-day period to ascertain the execution of a successful backup operation on the respective machine.
 
 ## Details
 
@@ -18,7 +19,7 @@ It verifies the occurrence of event ID 34112 within the preceding three-day peri
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: `Default - Create Automate Ticket` or `△ Custom - Ticket Creation Computer`  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator        | Interval | Result     |
 |--------------|----------------|------------|---------------|--------------------|----------|------------|
@@ -42,16 +43,3 @@ Backup Management > Backup Exec
 ## How to Import
 
 [Import - Remote Monitor - Backup Exec - No successful backups in 3 days](<./Backup Exec - No successful backups in 3 days.md>)  
-
-
-
-
-
-
-
-
-
-
-
-
-

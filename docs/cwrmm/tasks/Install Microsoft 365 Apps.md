@@ -8,9 +8,10 @@ tags: ['application', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs Microsoft 365 Apps for Business or any Microsoft 365 install with XML config. You can use [https://config.office.com/](https://config.office.com/) to help build the config file. If no XML is provided Microsoft 365 Apps for business will install and be configured. XML Settings: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA.
+This guide explains how to install Microsoft 365 Apps for Business or any Microsoft 365 installation using XML configuration. You can use [https://config.office.com/](https://config.office.com/) to help build the configuration file. If no XML is provided, Microsoft 365 Apps for Business will install with a default configuration. XML settings include: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA.
 
 CW RMM Implementation of [Install-Microsoft365](<../../unsorted/SWM - Software Install - Install-Microsoft365.md>)
 
@@ -29,18 +30,18 @@ CW RMM Implementation of [Install-Microsoft365](<../../unsorted/SWM - Software I
 | Name      | Example                                             | Required | Type         | Description                                                                                                                                                                                                                                                                                                                                                          |
 |-----------|-----------------------------------------------------|----------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | XMLPath   | - [https://pathtoxml.com](https://pathtoxml.com)  - C:/temp/fileName.xml | False    | Text String  | Installs Microsoft 365 with the specified XML path. Supports local file path or URL. If not provided, a default configuration will be used.                                                                                                                                                                                                                         |
-| Restart   | 0/1                                               | False    | Flag         | Optional: After installation a restart is performed.                                                                                                                                                                                                                                                                                                                                                                          |
+| Restart   | 0/1                                               | False    | Flag         | Optional: A restart is performed after installation.                                                                                                                                                                                                                                                                                                                                                                          |
 
 ![User Parameters Image](../../../static/img/Install-Microsoft-365-Apps/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/Install-Microsoft-365-Apps/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Install-Microsoft-365-Apps/image_6.png)  
 
 **Name:** `Install Microsoft 365 Apps`  
-**Description:** `Installs Microsoft 365 Apps for Business or any Microsoft 365 install with XML config. You can use [https://config.office.com/](https://config.office.com/) to help build the config file. If no XML is provided Microsoft 365 Apps for business will install and be configured. XML Settings: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA`  
+**Description:** `Installs Microsoft 365 Apps for Business or any Microsoft 365 install with XML config. You can use [https://config.office.com/](https://config.office.com/) to help build the config file. If no XML is provided, Microsoft 365 Apps for Business will install with a default configuration. XML Settings: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA.`  
 **Category:** Application  
 ![Task Creation Image](../../../static/img/Install-Microsoft-365-Apps/image_7.png)  
 
@@ -177,16 +178,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

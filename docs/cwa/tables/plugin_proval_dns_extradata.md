@@ -8,9 +8,10 @@ tags: ['database', 'networking']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table stores the dns data for a target machine. This data includes the computer id, interface id, dns type, and dns setting.
+This table stores the DNS data for a target machine. This data includes the computer ID, interface ID, DNS type, and DNS setting.
 
 ## Dependencies
 
@@ -22,34 +23,22 @@ This table stores the dns data for a target machine. This data includes the comp
 
 | Column      | Type    | Explanation                                                |
 |-------------|---------|-----------------------------------------------------------|
-| ComputerID  | Int     | The computer id that returned the dns setting.            |
-| InterfaceID | Varchar | The interface id where the dns settings were reported.    |
-| DNSType     | Varchar | Manual or DHCP dns setting.                               |
-| DNSSetting  | Varchar | A comma separated list of the actual setting set for that computer and interface. |
+| ComputerID  | Int     | The computer ID that returned the DNS setting.            |
+| InterfaceID | Varchar | The interface ID where the DNS settings were reported.    |
+| DNSType     | Varchar | Manual or DHCP DNS setting.                               |
+| DNSSetting  | Varchar | A comma-separated list of the actual settings configured for that computer and interface. |
 
 ## SQL
 
-```
+```sql
 CREATE TABLE `plugin_proval_dns_extradata` (
     `ComputerID` INT(11) NOT NULL,
-    `InterFaceID` VARCHAR(100) NOT NULL DEFAULT '' COLLATE 'utf8_general_ci',
+    `InterfaceID` VARCHAR(100) NOT NULL DEFAULT '' COLLATE 'utf8_general_ci',
     `DNSType` VARCHAR(25) NOT NULL DEFAULT '' COLLATE 'utf8_general_ci',
     `DNSSetting` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
-    PRIMARY KEY (`ComputerID`, `InterFaceID`) USING BTREE
+    PRIMARY KEY (`ComputerID`, `InterfaceID`) USING BTREE
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
-
-
-
-
-
-
-
-
-
-
-
-

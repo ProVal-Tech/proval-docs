@@ -8,9 +8,10 @@ tags: ['installation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The internal monitor executes the `DNS Filter Agent - Install` script hourly on online machines missing `DNS Agent` on them. This monitor excludes the Linux and Windows servers since they do not support DNS Filter Agent. It detects agents where the 'Deploy DNS Filter Agent' client-EDF is checked and the 'Exclusion of DNS Filter Agent' at the location/computer level is not checked. It also ensures the secret key at the Computer/Location/Client level should exist for the installation.
+The internal monitor executes the `DNS Filter Agent - Install` script hourly on online machines that are missing the `DNS Agent`. This monitor excludes Linux and Windows servers since they do not support the DNS Filter Agent. It detects agents where the 'Deploy DNS Filter Agent' client-EDF is checked and the 'Exclusion of DNS Filter Agent' at the location/computer level is not checked. It also ensures that the secret key at the Computer/Location/Client level exists for the installation.
 
 ## Dependencies
 
@@ -28,24 +29,11 @@ DNS Filter Agent Installation Failure - %ClientName%//%ComputerName%
 
 **Body:**
 
-Failed to install DNSFilter Agent for %ClientName%//%ComputerName%.  
+Failed to install DNS Filter Agent for %ClientName%//%ComputerName%.  
 Reason: No Secret Key Found.  
-Please add a client/location/computer key at client-level EDF (DNSFilter Site Key), location-level EDF (DNSFilter Location Key), or computer-level EDF (DNSFilter Computer Key) and re-run the script.
+Please add a client/location/computer key at the client-level EDF (DNSFilter Site Key), location-level EDF (DNSFilter Location Key), or computer-level EDF (DNSFilter Computer Key) and re-run the script.
 
 OR
 
-Failed to install DNSFilter Agent for %ClientName%//%ComputerName%.  
+Failed to install DNS Filter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
-
-
-
-
-
-
-
-
-
-
-
-
-

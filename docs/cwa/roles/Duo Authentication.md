@@ -8,6 +8,7 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This role denotes that the agent has the Duo Authentication app installed.
@@ -20,16 +21,4 @@ This role denotes that the agent has the Duo Authentication app installed.
 
 | Detection String                                                                                   |
 |----------------------------------------------------------------------------------------------------|
-| \{%@powershell.exe "Get-ItemProperty HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/* | Select-Object DisplayName | Format-Table -autosize" | Find /i "Duo Authentication"@%} |
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@powershell.exe "Get-ItemProperty HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/* | Select-Object DisplayName | Format-Table -autosize" | Find /i "Duo Authentication"@%} |

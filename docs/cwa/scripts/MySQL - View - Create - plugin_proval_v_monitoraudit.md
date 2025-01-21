@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitorauditat.md>) View, which populates the data in the [CWM - Automate - Dataview - Automate - Monitor Audit [View]](<../dataviews/Automate - Monitor Audit View.md>) dataview.
+This script creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitoraudit.md>) View, which populates the data in the [CWM - Automate - Dataview - Automate - Monitor Audit [View]](<../dataviews/Automate - Monitor Audit View.md>) dataview.
 
 ## Sample Run
 
@@ -18,22 +19,10 @@ This script creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_p
 
 ## Process
 
-- Drops the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitorauditat.md>) if it already exists.
-- Creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitorauditat.md>).
-- Assign View's permission to all users.
+- Drops the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitoraudit.md>) if it already exists.
+- Creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_proval_v_monitoraudit.md>).
+- Assigns View permissions to all users.
 
 ## Output
 
 - View
-
-
-
-
-
-
-
-
-
-
-
-

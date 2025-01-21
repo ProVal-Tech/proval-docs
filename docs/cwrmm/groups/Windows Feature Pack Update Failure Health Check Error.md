@@ -8,46 +8,31 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Categorize the Windows 10 and 11 Computers where the `Feature Update Install with Tracking` script failed because of a Health Check Error.
+This document categorizes Windows 10 and 11 computers where the `Feature Update Install with Tracking` script failed due to a Health Check Error.
 
 ## Dependencies
 
-[CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)  
-[CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
-
-## Summary
-
-Categorize the Windows 10 and 11 Computers where the `Feature Update Install with Tracking` script failed because of a Health Check Error.
+- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)  
+- [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
 
 ## Criteria
 
-- Select `OS Build Number` for the Criteria `Does Not Contain any` for comparator and type `19045` and `22631` in the condition box.  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_1.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_2.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_3.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_4.png)  
+- Select `OS Build Number` for the criteria `Does Not Contain Any`, and type `19045` and `22631` in the condition box.  
+  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_1.png)  
+  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_2.png)  
+  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_3.png)  
+  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_4.png)  
 
-- Click the `Add Criteria` button to add another Criteria.  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_5.png)  
+- Click the `Add Criteria` button to add another criterion.  
+  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_5.png)  
 
-- Select `Feature Update Install Failure` custom field for criteria, `Equal` for comparator and type `Health Check Error` in the condition box.  
+- Select the `Feature Update Install Failure` custom field for criteria, `Equal` for comparator, and type `Health Check Error` in the condition box.  
 
 ## Group
 
-Click the `Save` button to Save the Group.  
+Click the `Save` button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_6.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_7.png)
-
-
-
-
-
-
-
-
-
-
-
-
+![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_7.png)  

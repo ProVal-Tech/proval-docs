@@ -8,13 +8,14 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 A brief summary of what this dataview is displaying and why it is important/actionable.
 
 ## Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this dataview depends.
+This section should list the ITGlue documents found in the Related Items sidebar on which this dataview depends.
 
 - Script Doc Link
 - Custom Table Doc Link
@@ -26,15 +27,3 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 | Column                                        | Description                                   |
 |-----------------------------------------------|-----------------------------------------------|
 | The display name of the column in the dataview. | Information about what this column is displaying. |
-
-
-
-
-
-
-
-
-
-
-
-

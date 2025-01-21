@@ -8,28 +8,16 @@ tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview shows the list and details of the top 10 tables in DB. This Dataview will is helpful in the auditing process.
+This Dataview shows the list and details of the top 10 tables in the database. It is helpful in the auditing process.
 
 ## Columns
 
 | Column      | Description                             |
 |-------------|-----------------------------------------|
 | Table_name  | Displays the name of the table         |
-| rows        | Displays the number of rows of the table|
-| data        | Displays the amount of data/size in the table |
-| total_size  | Displays the total size of the table    |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Rows        | Displays the number of rows in the table|
+| Data        | Displays the amount of data/size in the table |
+| Total_size  | Displays the total size of the table    |

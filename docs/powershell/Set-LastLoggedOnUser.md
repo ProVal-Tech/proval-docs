@@ -3,7 +3,7 @@ id: ps-set-lastloggedonuser
 title: 'Set-LastLoggedOnUser'
 title_meta: 'Set-LastLoggedOnUser Command'
 keywords: ['user', 'login', 'session', 'windows']
-description: 'Documentation for the Set-LastLoggedOnUser command to set the last logged on user in Windows.'
+description: 'Documentation for the Set-LastLoggedOnUser command to set the last logged-on user in Windows.'
 tags: ['security', 'windows']
 draft: false
 unlisted: false
@@ -38,48 +38,36 @@ The user must have logged on to the computer at least once to be set at the logi
 - If the `-Restart` parameter is not specified:
   - Logs a reminder to restart the computer at the earliest convenience to apply the changes.
 
-
+```powershell
+.\\Set-LastLoggedOnUser.ps1 -Clear
+```
+Clears the last logged-in user's information from the login screen.
 
 ```powershell
-.\Set-LastLoggedOnUser.ps1 -Clear
+.\\Set-LastLoggedOnUser.ps1 -Username 'Domain\\User' -DisplayName 'User Name'
 ```
-    Clears the last logged-in user's information from the login screen.
+Sets the specified domain user as the last logged-in user on the login screen with an optional display name.
 
 ```powershell
-.\Set-LastLoggedOnUser.ps1 -Username 'Domain\User' -DisplayName 'User Name'
+.\\Set-LastLoggedOnUser.ps1 -Username 'User' -DisplayName 'User Name'
 ```
-    Sets the specified domain user as the last logged-in user on the login screen with an optional display name.
+Sets the specified local user as the last logged-in user on the login screen with an optional display name.
 
 ```powershell
-.\Set-LastLoggedOnUser.ps1 -Username 'User' -DisplayName 'User Name'
+.\\Set-LastLoggedOnUser.ps1 -Username 'Domain\\User' -Restart
 ```
-    Sets the specified local user as the last logged-in user on the login screen with an optional display name.
-
-```powershell
-.\ScriptName.ps1 -Username 'Domain\User' -Restart
-```
-    Sets the specified user as the last logged-in user and restarts the computer immediately to apply the changes.
+Sets the specified user as the last logged-in user and restarts the computer immediately to apply the changes.
 
 ## Parameters
 
-| Parameter         | ParameterSet | Required  | Type      | Description                               |
-| ----------------- | ----- | --------- | --------- | ----------------------------------------- |
-| `Clear`      | `Clear`   | True       | Switch    |Clears the last logged-in user's information from the login screen.|
-| `Username`      | `Set`   | True    | String    |Sets the specified username as the last logged-in user. The username should be in the format 'Domain\User' or 'User'.|
-| `DisplayName`      | `Set`   | False    | String |Optionally specifies the display name to set for the last logged-in user. If not provided, it defaults to the username.|
-| `Restart`      | `Set`,`Clear`   | False    | String    |Optionally restarts the computer to apply the changes immediately.|
-
+| Parameter      | ParameterSet | Required | Type   | Description                                                                                  |
+|----------------|--------------|----------|--------|----------------------------------------------------------------------------------------------|
+| `Clear`        | `Clear`      | True     | Switch | Clears the last logged-in user's information from the login screen.                         |
+| `Username`     | `Set`        | True     | String | Sets the specified username as the last logged-in user. The username should be in the format 'Domain\\User' or 'User'. |
+| `DisplayName`  | `Set`        | False    | String | Optionally specifies the display name to set for the last logged-in user. If not provided, it defaults to the username. |
+| `Restart`      | `Set`, `Clear` | False  | String | Optionally restarts the computer to apply the changes immediately.                          |
 
 ## Output
 
-    .\Set-LastLoggedOnUser-Log.txt
-    .\Set-LastLoggedOnUser-Error.txt
-
-
-
-
-
-
-
-
-
+- .\\Set-LastLoggedOnUser-Log.txt
+- .\\Set-LastLoggedOnUser-Error.txt

@@ -8,29 +8,30 @@ tags: ['database', 'report', 'sql', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Overview
 
-Return a list of all desynchronized Sql replicas
+Return a list of all desynchronized SQL replicas.
 
 ## Requirements
 
-Should be run on an sql server
+This script should be run on an SQL server.
 
 ## Process
 
-1. Ensures Microsoft Sql is installed
-2. Checks the replication status for any not synced
-3. Returns all found unsynced items
+1. Ensure Microsoft SQL is installed.
+2. Check the replication status for any unsynced replicas.
+3. Return all found unsynced items.
 
 ## Payload Usage
 
-Describe how the payload is executed and if it requires any parameters. Delete the parameter block below if not needed. State that this does not use a payload if it doesn’t.
+Describe how the payload is executed and if it requires any parameters. If no parameters are needed, delete the parameter block below. State that this does not use a payload if it doesn’t.
 
 Example:
 ```
 Get-DesynchronizedSqlReplicas.ps1
 ```
-Returns a list of all Sql replication instances that are not synchronized or synchronizing
+This command returns a list of all SQL replication instances that are not synchronized or are synchronizing.
 
 ## Output
 
@@ -47,16 +48,3 @@ Returns a list of all Sql replication instances that are not synchronized or syn
 | ConnectWise RMM                   |                                                 |
 | Kaseya                            |                                                 |
 | Datto RMM                         |                                                 |
-
-
-
-
-
-
-
-
-
-
-
-
-

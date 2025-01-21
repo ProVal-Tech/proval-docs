@@ -8,25 +8,13 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The role is used to view the status of the FileVault on the Mac agents.
+This role is used to view the status of FileVault on Mac agents.
 
 ## Settings
 
 | Detection String         | Comparator | Result               | Applicable OS |
 |-------------------------|------------|----------------------|----------------|
-| \{%@fdesetup status@%}  | Contains   | FileVault is On      | Mac            |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `%@fdesetup status@%`   | Contains   | FileVault is On      | Mac            |

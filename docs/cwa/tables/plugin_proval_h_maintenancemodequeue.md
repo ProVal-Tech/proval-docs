@@ -8,9 +8,10 @@ tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores historical information about queued maintenance modes. This is filled by a trigger called `plugin_proval_t_maintenancemodequeue`.
+This document stores historical information about queued maintenance modes. This data is populated by a trigger called `plugin_proval_t_maintenancemodequeue`.
 
 ## Dependencies
 
@@ -18,23 +19,12 @@ Stores historical information about queued maintenance modes. This is filled by 
 
 ## Table
 
-#### plugin_proval_h_maintenancemodequeue
+### plugin_proval_h_maintenancemodequeue
 
 | Column      | Type    | Explanation                                                             |
 |-------------|---------|-------------------------------------------------------------------------|
 | QueueID     | INT     | The ID of the audited queue.                                            |
-| ComputerID  | INT     | The ID of the computer where the audited queue was targeted against.    |
-| TimeStart   | DATETIME| The server time that the maintenance mode begins.                       |
-| Duration    | INT     | The number of minutes that the maintenance mode will last.              |
+| ComputerID  | INT     | The ID of the computer where the audited queue was targeted.           |
+| TimeStart   | DATETIME| The server time when the maintenance mode begins.                      |
+| Duration    | INT     | The number of minutes that the maintenance mode will last.             |
 | Mode        | INT     | The type of maintenance mode (1 = Alerts, 2 = Scripts, 3 = Alerts & Scripts) |
-
-
-
-
-
-
-
-
-
-
-

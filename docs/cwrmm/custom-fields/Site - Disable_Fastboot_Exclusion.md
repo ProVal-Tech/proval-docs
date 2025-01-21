@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Check this box to exclude the site from the solution that disables fastboot.
@@ -22,15 +23,3 @@ Check this box to exclude the site from the solution that disables fastboot.
 
 ![Screenshot 1](../../../static/img/Site---Disable_Fastboot_Exclusion/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---Disable_Fastboot_Exclusion/image_2.png)  
-
-
-
-
-
-
-
-
-
-
-
-

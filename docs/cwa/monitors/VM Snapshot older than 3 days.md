@@ -8,6 +8,7 @@ tags: ['database', 'hyper-v']
 draft: false
 unlisted: false
 ---
+
 ## Implementation
 
 1. **Execute the following query from a `RAWSQL` monitor set.**
@@ -25,7 +26,7 @@ unlisted: false
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$X = 3;Get-VM | Get-VMSnapshot | Where-Object { $_.creationTime -le (Get-Date).AddDays(-$X) -and $_.IsDeleted -eq $false } | Select-Object -Property VMName, Name, ParentSnapshotName, SnapshotType, CreationTime | Format-List"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$X = 3;Get-VM | Get-VMSnapshot | Where-Object { $_.creationTime -le (Get-Date).AddDays(-$X) -and $_.IsDeleted -eq $false } | Select-Object -Property VMName, Name, ParentSnapshotName, SnapshotType, CreationTime | Format-List\"' as `DataOut`,
    '16' as `Comparor`,
    '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})VMName)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})VMName' as `DataIn`,
    '' as `IDField`,
@@ -83,14 +84,3 @@ unlisted: false
 2. **Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.**
 
    **Group Path:** `Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows Hyper-V Host Group.`
-
-
-
-
-
-
-
-
-
-
-

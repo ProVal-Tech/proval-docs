@@ -8,9 +8,10 @@ tags: ['database', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_windows_updates](<../tables/pvl_windows_updates.md>) table.
+This document describes a script that gathers Windows update data and enters it into the [EPM - Custom Table - pvl_windows_updates](<../tables/pvl_windows_updates.md>) table.
 
 ## Sample Run
 
@@ -24,7 +25,7 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 
 | Name      | Description                                         |
 |-----------|-----------------------------------------------------|
-| JSONPath  | The file path that the serialized object will be saved to. |
+| JSONPath  | The file path where the serialized object will be saved. |
 
 #### Global Parameters
 
@@ -37,16 +38,3 @@ Gathers Windows update data and enters it into the [EPM - Custom Table - pvl_win
 
 - Script Log
 - [pvl_windows_updates](<../tables/pvl_windows_updates.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

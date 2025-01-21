@@ -8,9 +8,10 @@ tags: ['active-directory', 'compliance', 'registry', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script is created to verify the installation of all the necessary patches in order to mitigate and detect Active Directory privilege escalation attacks. Apart from this, it is looking for computer accounts with non-compliant sAMAccountName and is also ensuring the presence of the `HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/Kdc/PacRequestorEnforcement` registry key with value 1.
+The script is designed to verify the installation of all necessary patches to mitigate and detect Active Directory privilege escalation attacks. Additionally, it searches for computer accounts with non-compliant `sAMAccountName` values and ensures the presence of the `HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/Kdc/PacRequestorEnforcement` registry key with a value of 1.
 
 **Intended Target:** Domain Controllers  
 **Time Saved by Automation:** 30 Minutes.
@@ -25,14 +26,13 @@ The script is created to verify the installation of all the necessary patches in
 
 ## Variables
 
-- `@Output@`: Stores the PowerShell result of the PowerShell script verifying the installation of concern patches.
+- `@Output@`: Stores the PowerShell result of the script verifying the installation of the relevant patches.
 - `@Missing_Patches@`: KBID of the superseded patches that need to be installed on the concerned computer.
-- `@ncsam@`: Stores the names of the computer accounts with non-compliant sAMAccountName.
+- `@ncsam@`: Stores the names of the computer accounts with non-compliant `sAMAccountName`.
 
 ## Process
 
-**Step 1:** The script will check for the installation of the patches needed in order to stop/restrict Active Directory privilege escalation attacks.  
-With the release of a superseded version of each patch, we may need to keep updating the script in order to account for those as well. Currently, it is looking for the following patches and one patch from each line is supposed to be installed for the concerned Operating System:
+**Step 1:** The script checks for the installation of the patches needed to stop/restrict Active Directory privilege escalation attacks. As superseded versions of each patch are released, the script may need updates to account for these changes. Currently, it looks for the following patches, with one patch from each line required for the concerned Operating System:
 
 - [KB5008263](https://support.microsoft.com/en-us/topic/december-14-2021-kb5008263-monthly-rollup-513a39f5-b624-4214-b2be-b93f5a775e12), [KB5007247](#): Server 2012 R2  
 - [KB5008277](https://support.microsoft.com/en-us/topic/december-14-2021-kb5008277-monthly-rollup-f6678266-b1fb-474e-9cf1-cf60fa8faa54), [KB5007260](https://support.microsoft.com/en-us/topic/november-9-2021-kb5007260-monthly-rollup-eea1738a-38d1-424b-8d73-d9e30ce28e1a): Server 2012  
@@ -47,9 +47,9 @@ With the release of a superseded version of each patch, we may need to keep upda
 
 **Step 2:** It will add the KBID of the compulsory and missing updates to the "Missing Patches" EDF of the concerned computer.
 
-**Step 3:** Then it will check for the status of the `HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/Kdc/PacRequestorEnforcement` registry key and will add/update the registry key if the value is already not set to 1 or 2.
+**Step 3:** The script will check the status of the `HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services/Kdc/PacRequestorEnforcement` registry key and will add/update the registry key if the value is not already set to 1 or 2.
 
-**Step 4:** In the end, it will check for the potentially vulnerable Computer Accounts and update those names in the EDFs.
+**Step 4:** Finally, it will check for potentially vulnerable computer accounts and update those names in the EDFs.
 
 The script will save information to the following EDFs based on the output of the script:
 - KB5008602 Status
@@ -58,24 +58,12 @@ The script will save information to the following EDFs based on the output of th
 - Missing Patches
 - CVE-2021-42287 Workaround
 - Non-compliant sAMAccountName
-- non-compliant UAC sAMAccountType
+- Non-compliant UAC sAMAccountType
 - Information Update Time
 
-These EDFs are also presented in the dataview [Workaround - Active Directory privilege escalation attack [SCRIPT]](https://proval.itglue.com/DOC-5078775-8930310) Dataview.
+These EDFs are also presented in the dataview [Workaround - Active Directory privilege escalation attack [SCRIPT]](https://proval.itglue.com/DOC-5078775-8930310).
 
 ## Output
 
 - Extra Data Fields
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the Windows workstations that got upgraded to the new Win10/Win11 version in the last 30 days.
+The dataview displays the Windows workstations that have been upgraded to the new Win10/Win11 version in the last 30 days.
 
 ## Columns
 
@@ -18,22 +19,9 @@ The dataview displays the Windows workstations that got upgraded to the new Win1
 |-------------------|--------------------------------------------------|
 | Client Name       | Client name                                      |
 | Location Name     | Location name                                    |
-| ComputerID        | Computer ID                                      |
+| Computer ID       | Computer ID                                      |
 | Computer Name     | Computer name                                    |
 | Upgrade Date      | Displays the date when the system was upgraded.  |
-| Old OS Version    | Displays OS version before upgrade.              |
-| New OS Version    | Displays OS version after the upgrade.           |
+| Old OS Version    | Displays the OS version before the upgrade.      |
+| New OS Version    | Displays the OS version after the upgrade.       |
 | Build Version     | Displays the new build versions such as 22H2, 22H3, etc. |
-
-
-
-
-
-
-
-
-
-
-
-
-

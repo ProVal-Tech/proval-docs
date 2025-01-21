@@ -8,11 +8,12 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script collects information of device name and version as provided for the parameter “Device” while executing the script.
+This script collects the device name and version information as provided for the parameter “Device” while executing the script.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -24,39 +25,27 @@ Time Saved by Automation: 15 Minutes
 
 ## Variables
 
-| Variable Name | Description |
-|---------------|-------------|
-| NameLoop      | This variable will hold the result of the SQL query select CONCAT('@','DriverVersion',@loopcounter,'@') |
-| DriverLoop    | This variable will host the result of the SQL query select CONCAT('@','DriverVersion',@loopcounter,'@') |
+| Variable Name | Description                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| NameLoop      | This variable will hold the result of the SQL query `SELECT CONCAT('@','DriverVersion',@loopcounter,'@')` |
+| DriverLoop    | This variable will hold the result of the SQL query `SELECT CONCAT('@','DriverVersion',@loopcounter,'@')` |
 
-#### Global Parameters
+### Global Parameters
 
 | Name   | Example      | Required | Description                                                                                                     |
 |--------|--------------|----------|-----------------------------------------------------------------------------------------------------------------|
-| Device | HP Printer   | True     | Provide the device name for which you need their version info on all of your windows agents to show in the Dataview. |
+| Device | HP Printer   | True     | Provide the device name for which you need version information on all of your Windows agents to show in the Dataview. |
 
 ## Script States
 
 | Script State Name        | Description                          |
 |--------------------------|--------------------------------------|
-| [DeviceList@loopcounter@](DeviceList@loopcounter@) | This script state will hold the @NameLoop@ -- @DriverLoop@ |
+| [DeviceList@loopcounter@](DeviceList@loopcounter@) | This script state will hold the `@NameLoop@` and `@DriverLoop@` values. |
 
 ## Process
 
-This script collects information of device name and version as provided for the parameter “Device” while executing the script. The script runs Powershell to get the Device Name and device version and splits the variables. Then runs the SQL commands to get the results and holds the results in script state.
+This script collects information about the device name and version as provided for the parameter “Device” while executing the script. The script runs PowerShell to get the device name and device version, splits the variables, and then runs the SQL commands to get the results, holding them in the script state.
 
 ## Output
 
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

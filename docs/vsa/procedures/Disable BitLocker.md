@@ -8,19 +8,12 @@ tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
 ---
-Disables BitLocker on all drives.  
-Content Located in Shared > PVAL Content Source > BitLocker > Disable Bitlocker
+
+## Disabling BitLocker on All Drives
+
+This document provides a script that disables BitLocker on all drives. 
+
+### Content Location
+Content is located in: **Shared > PVAL Content Source > BitLocker > Disable BitLocker**
 
 ![Image](../../../static/img/Disable-BitLocker/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

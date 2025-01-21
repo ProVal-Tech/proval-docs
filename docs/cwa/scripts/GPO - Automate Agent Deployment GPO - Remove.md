@@ -8,11 +8,12 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will remove the "Automate Agent Deployment" group policy from the DC server.
+This script will remove the "Automate Agent Deployment" group policy from the Domain Controller (DC) server.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,19 +21,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-Runs the appropriate PowerShell to remove the "Automate Agent Deployment" GPO from the target DC.
+The script runs the appropriate PowerShell command to remove the "Automate Agent Deployment" GPO from the target DC.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

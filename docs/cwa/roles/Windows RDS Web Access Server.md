@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This role will detect the Windows RDS Web Access Server.
@@ -16,17 +17,4 @@ This role will detect the Windows RDS Web Access Server.
 
 | Detection String                                   | Comparator | Result | Applicable OS |
 |----------------------------------------------------|------------|--------|----------------|
-| \{%@powershell "(Get-WindowsFeature RDS-Web-Access).Installed"@%} | Equals     | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@powershell "(Get-WindowsFeature RDS-Web-Access).Installed"@%} | Equals     | True   | Windows        |

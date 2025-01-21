@@ -8,11 +8,12 @@ tags: ['report', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script is useful in setting up local overrides on that machines so that they won't get patched.
+The script is useful for setting up local overrides on machines so that they won't be patched.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -25,21 +26,10 @@ Time Saved by Automation: 15 Minutes
 
 ## Process
 
-- Script checks for any existing DO NOT PATCH policy and if it exists then sets that policy as a local override on the machine.
-- If there is no existing patch policy then it creates one and checks whether the policy is successfully created or not.
-- If the policy is successfully created then it sets that policy as a local override.
+- The script checks for any existing DO NOT PATCH policy, and if it exists, it sets that policy as a local override on the machine.
+- If there is no existing patch policy, it creates one and checks whether the policy is successfully created.
+- If the policy is successfully created, it sets that policy as a local override.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

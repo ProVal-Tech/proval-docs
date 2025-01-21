@@ -8,44 +8,32 @@ tags: ['deployment', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor is designed to create a ticket for the CRI Agent deployment failure.
 
 ## Create and Implement Monitor
 
-- Click on Alert Management -> Monitors -> Create Monitor  
+- Click on **Alert Management** -> **Monitors** -> **Create Monitor**  
   ![Image 1](../../../static/img/CRI-Agent-Deployment-Status-Check/image_1.png)  
   ![Image 2](../../../static/img/CRI-Agent-Deployment-Status-Check/image_2.png)  
 
-- Name: CRI Agent Deployment Status Check  
-  Description: This monitor is designed to create a ticket for the CRI Agent deployment failure  
-  Type: Custom Field  
-  Severity: Critical Non-Impact Alerts  
-  Family: Security  
+- **Name**: CRI Agent Deployment Status Check  
+  **Description**: This monitor is designed to create a ticket for the CRI Agent deployment failure  
+  **Type**: Custom Field  
+  **Severity**: Critical Non-Impact Alerts  
+  **Family**: Security  
   ![Image 3](../../../static/img/CRI-Agent-Deployment-Status-Check/image_3.png)  
 
-- Set the Conditions as shown below:  
+- Set the **Conditions** as shown below:  
   ![Image 4](../../../static/img/CRI-Agent-Deployment-Status-Check/image_4.png)  
 
-- Set Target as shown below:  
+- Set **Target** as shown below:  
   ![Image 5](../../../static/img/CRI-Agent-Deployment-Status-Check/image_5.png)  
 
-- Once all is done, click Save, the monitor will be created and the ticket creation will be set for the [CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) status check.
+- Once all is done, click **Save**. The monitor will be created, and ticket creation will be set for the [CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) status check.
 
 ## Target
 
 Dynamic Group: Cyrisma Deployment Failure Check
-
-
-
-
-
-
-
-
-
-
-
-
-

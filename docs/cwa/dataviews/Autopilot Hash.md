@@ -8,9 +8,10 @@ tags: ['autopilot', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the Hardware Hash details of Windows agents.
+This document displays the Hardware Hash details of Windows agents.
 
 ## Dependencies
 
@@ -24,21 +25,8 @@ Displays the Hardware Hash details of Windows agents.
 | Client            | Client Name of the agent                                  |
 | Location          | Location Name of the agent                                |
 | Operating System   | Operating System of the agent                             |
-| LastContact       | Last contact info of the agent with Automate             |
-| Make              | Make of the agent within the Automate                    |
-| Model             | Model of the agent within the Automate                   |
-| Serial Number     | Serial Number of the agent within the Automate           |
+| Last Contact      | Last contact info of the agent with Automate             |
+| Make              | Make of the agent within Automate                        |
+| Model             | Model of the agent within Automate                       |
+| Serial Number     | Serial Number of the agent within Automate               |
 | Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) |
-
-
-
-
-
-
-
-
-
-
-
-
-

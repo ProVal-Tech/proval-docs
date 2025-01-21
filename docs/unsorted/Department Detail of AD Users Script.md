@@ -8,6 +8,7 @@ tags: ['active-directory', 'database', 'report']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
 This dataview stores the AD Users department information.
@@ -15,7 +16,7 @@ This dataview stores the AD Users department information.
 ## Dependencies
 
 - [plugin_proval_computer_department](<./plugin_proval_computer_department.md>)
-- [Computer Department Auditing[DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
+- [Computer Department Auditing [DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
 
 ## Columns
 
@@ -30,7 +31,7 @@ This dataview stores the AD Users department information.
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   cl.name AS `Client Name`, 
   l.name AS `Location Name`, 
@@ -44,17 +45,3 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_computer_department pp ON pp.computerid = c.computerid
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

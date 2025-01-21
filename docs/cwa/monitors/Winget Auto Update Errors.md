@@ -8,6 +8,7 @@ tags: ['update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The remote monitor is created by the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script against the computers of the client with the Winget Auto Update enabled and the `WAU - MonitorFailures` EDF flagged.
@@ -21,7 +22,7 @@ The remote monitor will be generated with the `△ Custom - Ticket Creation - Co
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: `△ Custom - Ticket Creation - Computer`
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval |
 |--------------|----------------|------------|---------------|-------------|----------|
@@ -42,14 +43,3 @@ Local Machine
 **Body**:  
 `Winget Auto Update Errors detected on %ComputerName%. Failure details:`  
 `\<Failure Reason>`
-
-
-
-
-
-
-
-
-
-
-

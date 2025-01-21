@@ -8,18 +8,16 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
-Installs Perch Log Shipper on the Windows computers.
+Installs Perch Log Shipper on Windows computers.
 
 ## Requirements
-    Powershell v5+
-    Installer Token
+- PowerShell v5+
+- Installer Token
 
 ## Usage
-How does the content operate and accomplish the goal?
-
-
-Installs Perch Log Shipper. Token is necessary to install it
+This command installs Perch Log Shipper. A token is necessary to complete the installation.
 
 ```powershell
 .\Install-PerchLogShipper.ps1 -Token 'hwu76-whduh-hhjdhj'
@@ -27,19 +25,9 @@ Installs Perch Log Shipper. Token is necessary to install it
 
 ## Parameters
 | Parameter         | Alias | Required  | Default   | Type      | Description                                   |
-| ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------------|
-| `Token`           |       | True      |           | String    |   The Token assigned to install the installer |
-
+| ----------------- | ----- | --------- | --------- | --------- | ---------------------------------------------- |
+| `Token`           |       | True      |           | String    | The token assigned to install the software    |
 
 ## Output
-    .\Install-PerchLogShipper-log.txt
-    .\Install-PerchLogShipper-Error.txt
-
-
-
-
-
-
-
-
-
+- .\Install-PerchLogShipper-log.txt
+- .\Install-PerchLogShipper-Error.txt

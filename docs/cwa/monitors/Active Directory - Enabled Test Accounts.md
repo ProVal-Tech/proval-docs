@@ -8,6 +8,7 @@ tags: ['active-directory', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Using the Active Directory plugin, this monitor will look for any account with the name "test" in the account name and will flag that account if it is enabled on the domain. The goal of this monitor is to locate these enabled test accounts so a technician can evaluate the account and decide if it should be enabled or not.
@@ -19,16 +20,3 @@ Using the Active Directory plugin, this monitor will look for any account with t
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-
-

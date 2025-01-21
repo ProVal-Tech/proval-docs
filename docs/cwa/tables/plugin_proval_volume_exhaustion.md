@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores volume exhaustion information from [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
@@ -31,7 +32,7 @@ Stores volume exhaustion information from [Volume Free Space - Monitor Creation]
 
 ## SQL
 
-```
+```sql
 CREATE TABLE `plugin_proval_volume_exhaustion` (
     `ComputerID` INT(11) NOT NULL,
     `DriveLetter` VARCHAR(50) NOT NULL COLLATE 'utf8_general_ci',
@@ -46,16 +47,3 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,13 +8,14 @@ tags: ['database', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores Battery Information for each target
+Stores battery information for each target.
 
 ## Dependencies
 
-[EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)  Creates this table.
+[EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) creates this table.
 
 ## Tables
 
@@ -22,29 +23,17 @@ Stores Battery Information for each target
 
 | Column                     | Type      | Explanation                                         |
 |---------------------------|-----------|-----------------------------------------------------|
-| ComputerID                | INT       | Holds the target machine id in automate.            |
-| BatteryID                 | VarChar   | Holds an alpha numeric battery ID.                  |
-| Chemistry                 | VarChar   | The battery Chemistry.                               |
-| CycleCount                | VarChar   | The Battery CycleCount.                             |
-| DesignCapacity            | VarChar   | The Battery Design Capacity.                         |
-| FullChargeCapacity        | VarChar   | The Battery Full Charge Capacity.                   |
-| BatteryState              | varchar    | Health State of Battery, OK/poor/Very Poor.        |
-| BatteryHealthPercentage    | int       | Life left for the battery.                          |
-| LongTerm                  | VarChar   | The Battery LongTerm Value.                         |
-| ManufactureDate           | VarChar   | The Battery Manufacture Date.                       |
-| Manufacturer              | VarChar   | The Battery Manufacturer.                           |
-| RelativeCapacity          | VarChar   | The Battery Relative Capacity.                       |
-| SerialNumber              | VarChar   | The Battery SerialNumber.                           |
-| LastScanTime              | DateTime  | The Last Scan Time for the report.                  |
-
-
-
-
-
-
-
-
-
-
-
-
+| ComputerID                | INT       | Holds the target machine ID in Automate.            |
+| BatteryID                 | VarChar   | Holds an alphanumeric battery ID.                   |
+| Chemistry                 | VarChar   | The battery chemistry.                               |
+| CycleCount                | VarChar   | The battery cycle count.                             |
+| DesignCapacity            | VarChar   | The battery design capacity.                         |
+| FullChargeCapacity        | VarChar   | The battery full charge capacity.                   |
+| BatteryState              | VarChar   | Health state of battery: OK/poor/very poor.        |
+| BatteryHealthPercentage    | INT       | Life left for the battery.                          |
+| LongTerm                  | VarChar   | The battery long-term value.                        |
+| ManufactureDate           | VarChar   | The battery manufacture date.                       |
+| Manufacturer              | VarChar   | The battery manufacturer.                           |
+| RelativeCapacity          | VarChar   | The battery relative capacity.                       |
+| SerialNumber              | VarChar   | The battery serial number.                          |
+| LastScanTime              | DateTime  | The last scan time for the report.                 |

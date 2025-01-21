@@ -8,13 +8,14 @@ tags: ['backup', 'installation', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Downloads and installs the ShadowControl client to the target machine. Automatically subscribes the installed client to the **ProVal ShadowControl** server. Deletes the downloaded installer upon completion.
+This document describes how to download and install the ShadowControl client on the target machine. It automatically subscribes the installed client to the **ProVal ShadowControl** server and deletes the downloaded installer upon completion.
 
-Note: this script is hardcoded to subscribe to the ProVal Shadow Control server. Please do not use this script if you are attempting to subscribe a machine to a different instance.
+**Note:** This script is hardcoded to subscribe to the ProVal Shadow Control server. Please do not use this script if you are attempting to subscribe a machine to a different instance.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -22,27 +23,16 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-The agent will need the appropriate Storage Craft applications installed so the agent can subscribe to the ProVal Shadow Control instance.
+The agent will need the appropriate Storage Craft applications installed so that it can subscribe to the ProVal Shadow Control instance.
 
 ## Variables
 
-`%ShellResult%` - The result from the attempted Shadow Control signup
+- `%ShellResult%` - The result from the attempted Shadow Control signup.
 
 ## Process
 
-The script will run a command-line argument against the stccmd application on the endpoint that will have the target endpoint subscribe to the ProVal Shadow Control portal.
+The script will run a command-line argument against the `stccmd` application on the endpoint, which will have the target endpoint subscribe to the ProVal Shadow Control portal.
 
 ## Output
 
-Script log messages only
-
-
-
-
-
-
-
-
-
-
-
+Script log messages only.

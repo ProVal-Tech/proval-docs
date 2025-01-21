@@ -8,11 +8,12 @@ tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will detect online machines where internet explorer is installed by detecting the machines where the "Internet Explorer Installed" Role is Enabled.
+This monitor will detect online machines where Internet Explorer is installed by identifying the machines where the "Internet Explorer Installed" role is enabled.
 
-Alert Template: ~Autofix - Disable Internet Explorer
+**Alert Template:** Autofix - Disable Internet Explorer
 
 ## Dependencies
 
@@ -21,44 +22,32 @@ Alert Template: ~Autofix - Disable Internet Explorer
 
 ## Target
 
-SQL query is limiting it to the Computers where "Internet Explorer Installed" role is installed.
+The SQL query limits the results to computers where the "Internet Explorer Installed" role is present.
 
 ## Translated SQL
 
-```
+```sql
 SELECT 
   rd.RoleName AS `TestValue`, 
   rd.comparisonresult AS `IdentityField`, 
   c.computerid, 
-  [Cl.Name](http://cl.Name) AS `Client Name`, 
-  [L.Name](http://l.Name) AS `Location Name`, 
-  [C.Name](http://c.Name) AS `Computer Name`, 
+  Cl.Name AS `Client Name`, 
+  L.Name AS `Location Name`, 
+  C.Name AS `Computer Name`, 
   C.OS AS `Operating System`, 
   '00:00:00' as uptimestart, 
   '23:59:59' as uptimeend, 
   0 as noalerts 
 FROM 
   computers C 
-  JOIN clients Cl ON C.Clientid = Cl.CLientid 
+  JOIN clients Cl ON C.Clientid = Cl.Clientid 
   JOIN locations L ON C.Locationid = L.Locationid 
-  JOIN computerroledefinitions crd ON c.computerid = crd.Computerid 
+  JOIN computerroledefinitions crd ON C.computerid = crd.Computerid 
   JOIN roledefinitions rd ON crd.roledefinitionid = rd.RoleDefinitionId 
 WHERE 
   rd.RoleDetectionGuid = '57d918d5-8361-11ec-a044-000c295e5f17' 
   AND crd.CurrentlyDetected = 1
-  AND c.lastcontact > NOW() - Interval 15 Minute
-  Group By C.Computerid
+  AND C.lastcontact > NOW() - INTERVAL 15 MINUTE
+GROUP BY C.Computerid
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 

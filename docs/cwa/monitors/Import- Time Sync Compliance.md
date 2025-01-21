@@ -8,20 +8,21 @@ tags: ['database']
 draft: false
 unlisted: false
 ---
+
 ## Steps for Ticket Creation
 
 ### 1.
-Ensure the presence of [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and `△ Custom - Ticket Creation - Computer` alert template.
+Ensure the presence of the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and the `△ Custom - Ticket Creation - Computer` alert template.
 
 ---
 
 ### 2.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
 ---
 
 ### 3.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -37,7 +38,7 @@ INSERT INTO groupagents
   '86400' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "$S = //'W32Time//';$peerList = //'us.pool.ntp.org//';$syncOutput = //'//';if ((Get-Service $S).Status -ne //'Running//') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return /////"Failed to start $S Service. Reason: $($Error.Exception.Message)/////"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += /////"`n/////" + (W32tm /resync /force);if ($syncOutput -match //'The computer did not resync//') {return //'Failed: The computer did not resync.//'} else {return //'Success: The computer resynced successfully.//'}"' as `DataOut`,
+  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command \"$S = //'W32Time//';$peerList = //'us.pool.ntp.org//';$syncOutput = //'//';if ((Get-Service $S).Status -ne //'Running//') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return /////\"Failed to start $S Service. Reason: $($Error.Exception.Message)/////\"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += /////\"`n/////\" + (W32tm /resync /force);if ($syncOutput -match //'The computer did not resync//') {return //'Failed: The computer did not resync.//'} else {return //'Success: The computer resynced successfully.//'}\"' as `DataOut`,
   '11' as `Comparor`,
   '(The Computer did not resync)|(Failed to start)' as `DataIn`,
   '' as `IDField`,
@@ -95,7 +96,7 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 ---
 
 ### 4.
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```
 INSERT INTO groupagents 
@@ -110,7 +111,7 @@ INSERT INTO groupagents
   '86400' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command "$S = //'W32Time//';$peerList = //'us.pool.ntp.org//';$syncOutput = //'//';if ((Get-Service $S).Status -ne //'Running//') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return /////"Failed to start $S Service. Reason: $($Error.Exception.Message)/////"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += /////"`n/////" + (W32tm /resync /force);if ($syncOutput -match //'The computer did not resync//') {return //'Failed: The computer did not resync.//'} else {return //'Success: The computer resynced successfully.//'}"' as `DataOut`,
+  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command \"$S = //'W32Time//';$peerList = //'us.pool.ntp.org//';$syncOutput = //'//';if ((Get-Service $S).Status -ne //'Running//') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return /////\"Failed to start $S Service. Reason: $($Error.Exception.Message)/////\"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += /////\"`n/////\" + (W32tm /resync /force);if ($syncOutput -match //'The computer did not resync//') {return //'Failed: The computer did not resync.//'} else {return //'Success: The computer resynced successfully.//'}\"' as `DataOut`,
   '11' as `Comparor`,
   '(The Computer did not resync)|(Failed to start)' as `DataIn`,
   '' as `IDField`,
@@ -125,6 +126,11 @@ INSERT INTO groupagents
     SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
     SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
     SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+    SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+    SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+    SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+    SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+    '-',
     SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
     SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
     SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -174,16 +180,3 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
-
-
-
-
-
-
-
-
-
-
-
-
-

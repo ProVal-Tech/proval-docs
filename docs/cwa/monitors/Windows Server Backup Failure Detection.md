@@ -8,15 +8,16 @@ tags: ['backup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This remote monitor detects the last backup status of the Windows Server Backup.  
-If the backup failed, then it will raise a ticket.
+If the backup fails, it will raise a ticket.
 
 ## Details
 
-| Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
-|--------------|----------------|-------------|--------------|------------|----------|--------|
+| Check Action | Server Address | Check Type | Check Value                                                                                               | Comparator | Interval | Result |
+|--------------|----------------|-------------|-----------------------------------------------------------------------------------------------------------|------------|----------|--------|
 | System       | 127.0.0.1     | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-WBSummary | select-object -ExpandProperty LastBackupResultHR" | Equals     | 3600     | 0      |
 
 ## Dependencies
@@ -25,17 +26,4 @@ If the backup failed, then it will raise a ticket.
 
 ## Target
 
-It should be targeted on the group which is bounded with a search via role "Windows Sever Backup".
-
-
-
-
-
-
-
-
-
-
-
-
-
+It should be targeted on the group that is bound with a search via the role "Windows Server Backup."

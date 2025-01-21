@@ -8,25 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Role used to detect the servers with Certificate Enrollment Web Service Feature installed.
+This document describes a role used to detect servers with the Certificate Enrollment Web Service Feature installed.
 
 ## Settings
 
 | Detection String                                                                                                         | Comparator | Result   | Applicable OS |
 |--------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
-| \{@%powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Enroll-Web-Svc' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains    | Installed | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Enroll-Web-Svc' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"%}` | Contains    | Installed | Windows        |

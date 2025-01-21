@@ -8,26 +8,15 @@ tags: ['adobe', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This internal monitor will detect the agent where Adobe Flash is installed.
 
 ## Dependencies
 
-@Adobe Flash Player Uninstaller - V2 [Autofix, Ticket] -- Script
+- @Adobe Flash Player Uninstaller - V2 [Autofix, Ticket] -- Script
 
 ## Target
 
 Windows OS
-
-
-
-
-
-
-
-
-
-
-
-

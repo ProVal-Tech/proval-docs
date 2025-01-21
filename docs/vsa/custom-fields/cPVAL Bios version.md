@@ -8,13 +8,14 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 # Summary
 
 XYZ
 
 # Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this View depends.
+This section should list the ITGlue documents found in the Related Items sidebar that this View depends on.
 
 - Script Doc Link
 - Custom Fields Doc Link
@@ -22,20 +23,9 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 # View Filters
 
-List all filters applied to this view
+List all filters applied to this view.
 
 | Filter Name                     | Advanced Filter? | Filter Value                |
 |---------------------------------|------------------|-----------------------------|
 | OS Info / OS Type               | N                | Server                      |
 | xPVAL Monitoring Managed        | Y                | NOT *1* OR NOT *yes*       |
-
-
-
-
-
-
-
-
-
-
-

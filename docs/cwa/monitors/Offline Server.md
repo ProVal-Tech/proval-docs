@@ -8,6 +8,7 @@ tags: ['networking', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This internal monitor detects offline servers based on the last contact and last heartbeat time with the RMM.
@@ -18,23 +19,10 @@ This internal monitor detects offline servers based on the last contact and last
 
 ## Properties
 
-| Name            | Example | Required | Description                                                                                                                                               |
-|-----------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OfflineThreshold | 11      | False    | This monitor detects the value of the offlineThreshold property. If not found, it inserts the value to 11 by default to the property.                     |
+| Name             | Example | Required | Description                                                                                                                                               |
+|------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| OfflineThreshold  | 11      | False    | This monitor detects the value of the OfflineThreshold property. If not found, it defaults to a value of 11 for the property.                             |
 
 ## Target
 
 Windows Server
-
-
-
-
-
-
-
-
-
-
-
-
-

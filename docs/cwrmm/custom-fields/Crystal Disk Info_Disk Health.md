@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This custom field is used to store and display the results of the [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>) task.
@@ -22,7 +23,7 @@ This custom field is used to store and display the results of the [CW RMM - Task
 |------------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
 | Crystal Disk Info_Disk Health      | Machine                                 | Disk Health Status fetched by the [Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>) script. |
 
-## ScreenShot
+## Screenshot
 
 ![Screenshot](../../../static/img/Crystal-Disk-Info_Disk-Health/image_1.png)
 
@@ -31,15 +32,3 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/Crystal-Disk-Info_Disk-Health/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,18 +3,19 @@ id: '0957012a-a6da-4e1b-abec-936a0a467e6a'
 title: 'Workstation Reboot Schedule on Specific Days'
 title_meta: 'Workstation Reboot Schedule on Specific Days'
 keywords: ['reboot', 'schedule', 'workstation', 'automation', 'script']
-description: 'This document provides a comprehensive guide on scheduling a force reboot of workstations on specific days based on an approved window check. It includes sample runs, user parameters, dependencies, implementation steps, and deployment instructions to ensure smooth execution of the reboot task.'
+description: 'This document provides a comprehensive guide on scheduling a forced reboot of workstations on specific days based on an approved window check. It includes sample runs, user parameters, dependencies, implementation steps, and deployment instructions to ensure smooth execution of the reboot task.'
 tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This schedules the force reboot of the workstation on the scheduled days based on the approved window check.
+This document outlines the process for scheduling a forced reboot of workstations on specific days based on the approved window check.
 
 ## Sample Run
 
-Select the device and search 'Workstation Re' in the search box and click.
+Select the device and search for 'Workstation Re' in the search box, then click.
 
 ![Sample Run Image 1](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_1.png)
 
@@ -22,15 +23,15 @@ Provide the user parameter value as per the requirement and then click 'Continue
 
 ![Sample Run Image 2](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_2.png)
 
-Click Run task to schedule the task immediately.
+Click 'Run task' to schedule the task immediately.
 
 ![Sample Run Image 3](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_3.png)
 
-## User Parameter
+## User Parameters
 
 | Name                | Example                              | Required | Description                                                                                                                                               |
 |---------------------|--------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HoursToReboot       | 4                                    | True     | The hour of the day to reboot in a 24-hour format. Example: 13 = 1:00PM                                                                               |
+| HoursToReboot       | 4                                    | True     | The hour of the day to reboot in a 24-hour format. Example: 13 = 1:00 PM                                                                               |
 | MinutesToReboot     | 0                                    | True     | The minute of the hour to reboot. Supports values from 0 - 59                                                                                         |
 | DaysToReboot        | 'Tuesday','Wednesday','Thursday'    | True     | Must be a comma-separated list of strings in single quotes with the names of the days of the week to reboot. Example: 'Tuesday','Wednesday','Thursday' |
 
@@ -42,13 +43,13 @@ Click Run task to schedule the task immediately.
 
 ### Create Task
 
-Force Reboot Workstation With Reboot Windows Verification: To implement this script, please create a new "Script Editor" style script in the system.
+To implement this script, please create a new "Script Editor" style script in the system.
 
 ![Create Task Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_4.png)
 
-- Name: Workstation Reboot Schedule on Specific Days
-- Description: This schedule the force reboot of the workstation on the schedule days based on the approved window check.
-- Category: Maintenance
+- **Name**: Workstation Reboot Schedule on Specific Days
+- **Description**: This schedule forces the reboot of the workstation on the scheduled days based on the approved window check.
+- **Category**: Maintenance
 
 ![Create Task Image 2](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_5.png)
 
@@ -93,7 +94,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ### Row 4a: Condition: Output Contains
 
-In the IF part, enter `Workstation` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `Workstation` in the right box of the "Output Does Not Contain" part.
 
 ![Row 4a Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_11.png)
 
@@ -113,7 +114,7 @@ Add a new row by clicking on the Add row button. In the script exit message, lea
 
 ### Row 5a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 5a Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_13.png)
 
@@ -189,7 +190,7 @@ In the script log message, simply type `%output%`.
 
 ### Row 5e.1: Condition: Output Does Not Contain
 
-In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not Contain" part.
 
 ![Row 5e.1 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_15.png)
 
@@ -233,7 +234,7 @@ Select the custom field 'WorkstationRebootWindowDay' and set the variable 'Reboo
 
 ### Row 9a: Condition: Custom Field Equals
 
-In the IF part, enter `true` in the right box of the "Custom Field Equals" Part.
+In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ![Row 9a Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_21.png)
 
@@ -285,7 +286,7 @@ In the script log message, simply type `%output%`.
 
 ### Row 13a: Condition: Output Contains
 
-In the IF part, enter `Machine is in reboot window` in the right box of the "Output Does Not Contain" Part.
+In the IF part, enter `Machine is in reboot window` in the right box of the "Output Does Not Contain" part.
 
 ![Row 13a Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_24.png)
 
@@ -359,9 +360,9 @@ In the script log message, simply type `%output%`.
 
 ![Row 13e Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_10.png)
 
-### Row 13e.1: Condition: Output Contain
+### Row 13e.1: Condition: Output Contains
 
-In the IF part, enter `RebootDateTime` in the right box of the "Output Contains" Part.
+In the IF part, enter `RebootDateTime` in the right box of the "Output Contains" part.
 
 ![Row 13e.1 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_26.png)
 
@@ -395,14 +396,14 @@ The complete script looks as shown below:
 
 ## Deployment
 
-This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided at the company-level custom fields.
+This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
 [CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
 
-- Go to `Automation` > `Tasks.`
+- Go to `Automation` > `Tasks`.
 - Search for `Workstation Reboot Schedule on Specific Days` Task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Deployment Step 1](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_32.png)
 
@@ -410,7 +411,7 @@ This screen will appear.
 
 ![Deployment Step 2](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_33.png)
 
-- Select the relevant time to run the script and click the Do not repeat button.
+- Select the relevant time to run the script and click the 'Do not repeat' button.
 
 ![Deployment Step 3](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_34.png)
 
@@ -427,15 +428,3 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
-
-
-
-
-
-
-
-
-
-
-
-

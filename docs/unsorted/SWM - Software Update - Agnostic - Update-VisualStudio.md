@@ -8,9 +8,10 @@ tags: ['installation', 'report', 'software', 'update', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Overview
 
-Updates all installed VS versions automatically. It's only available for:
+This script updates all installed versions of Visual Studio automatically. It is available for:
 
 - VS 2022 Enterprise
 - VS 2022 Community
@@ -21,15 +22,15 @@ Updates all installed VS versions automatically. It's only available for:
 
 ## Requirements
 
-No
+None
 
 ## Process
 
-This script first checks if any of the above Visual applications are found. If found, then it downloads the update package of that particular application and performs the upgrade. Once the upgrade is done, it logs the information, and error log files, and deletes the exe package.
+The script first checks if any of the above Visual Studio applications are installed. If found, it downloads the update package for that particular application and performs the upgrade. Once the upgrade is complete, it logs the information, error log files, and deletes the executable package.
 
 ## Payload Usage
 
-Update Visual Studio.
+To update Visual Studio, run the following command:
 
 ```
 ./Update-VisualStudio.ps1
@@ -37,21 +38,10 @@ Update Visual Studio.
 
 ## Output
 
+The output files will be generated as follows:
+
 ```
 ./Update-VisualStudio-log.txt
 ./Update-VisualStudio-data.txt
 ./Update-VisualStudio-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

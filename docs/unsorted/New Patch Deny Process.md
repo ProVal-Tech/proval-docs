@@ -8,19 +8,11 @@ tags: ['performance', 'security', 'update', 'windows']
 draft: true
 unlisted: false
 ---
-##  
 
-Patches_To_DENY:4580325,3185319
+## Patches to Deny
 
+The following patches should be denied:
 
+- Patches_To_DENY: 4580325, 3185319
 
-
-
-
-
-
-
-
-
-
-
+Please ensure to review each patch and understand the implications of denying them to maintain system stability and security.

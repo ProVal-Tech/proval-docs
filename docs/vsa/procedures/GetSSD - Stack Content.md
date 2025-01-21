@@ -8,19 +8,7 @@ tags: ['disk', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
 
-Get Drive SSD or Mech  
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
-
+Get Drive SSD or Mech

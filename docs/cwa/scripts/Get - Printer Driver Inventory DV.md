@@ -8,11 +8,12 @@ tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will collect information about the printer drivers on the target and will store it in the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) Table.
+This script collects information about the printer drivers on the target system and stores it in the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table.
 
-Intended Target: Windows Computers
+**Intended Target:** Windows Computers
 
 ## Sample Run
 
@@ -22,7 +23,7 @@ Intended Target: Windows Computers
 
 - [CWM - Automate - Custom Table - plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>)
 - [CWM - Automate - Solution - Get - Printer Driver Inventory](<../../solutions/Get - Printer Driver Inventory.md>)
-- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventoy Script.md>)
+- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventory Script.md>)
 
 ## Variables
 
@@ -32,27 +33,15 @@ Intended Target: Windows Computers
 
 ## Process
 
-1. Create the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table if it already does not exist.
-2. Run the PowerShell script to retrieve information about installed Printer Drivers.
-3. Verify the Outcome.
-4. Parse the Outcome to ensure SQL compatibility.
-5. Insert the data to the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) Table.
-6. Log any Failures.
+1. Create the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table if it does not already exist.
+2. Run the PowerShell script to retrieve information about installed printer drivers.
+3. Verify the outcome.
+4. Parse the outcome to ensure SQL compatibility.
+5. Insert the data into the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table.
+6. Log any failures.
 
 ## Output
 
 - Script Log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

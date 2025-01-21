@@ -1,16 +1,17 @@
 ---
 id: '86b3fe11-be22-4721-8626-ba34a5bf4419'
-title: 'Uninstall Onedrive from Windows Machines'
-title_meta: 'Uninstall Onedrive from Windows Machines'
+title: 'Uninstall OneDrive from Windows Machines'
+title_meta: 'Uninstall OneDrive from Windows Machines'
 keywords: ['uninstall', 'onedrive', 'windows', 'ticketing', 'script']
-description: 'This document describes a script designed to uninstall Onedrive from Windows machines, including global parameters for ticketing on failure, sample run outputs, and details for logging and ticket creation.'
+description: 'This document describes a script designed to uninstall OneDrive from Windows machines, including global parameters for ticketing on failure, sample run outputs, and details for logging and ticket creation.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this script is to uninstall Onedrive from Windows machines.
+The purpose of this script is to uninstall OneDrive from Windows machines.
 
 ## Sample Run
 
@@ -20,8 +21,8 @@ The purpose of this script is to uninstall Onedrive from Windows machines.
 
 | Name                    | Required | Example | Description                                                                                                 |
 |-------------------------|----------|---------|-------------------------------------------------------------------------------------------------------------|
-| Ticket_On_Failure       | False    | 1       | Fill it as '1' if you would like to receive Ticket on failure else leave it blank or '0'                  |
-| TicketCreationCategory   | False    | 298     | Mention the ticketcreationcategory in order to direct the tickets to the right board in Manage             |
+| Ticket_On_Failure       | False    | 1       | Set to '1' if you would like to receive a ticket on failure; otherwise, leave it blank or set to '0'.      |
+| TicketCreationCategory   | False    | 298     | Specify the ticket creation category to direct the tickets to the appropriate board in Manage.              |
 
 ## Output
 
@@ -30,25 +31,13 @@ The purpose of this script is to uninstall Onedrive from Windows machines.
 
 ## Ticketing
 
-Subject: `Onedrive Uninstallation Failed on %ComputerName%(%ComputerID%)`
+**Subject:** `OneDrive Uninstallation Failed on %ComputerName% (%ComputerID%)`
 
-Ticket Body: `Failed to uninstall Onedrive on the machine. Here is the uninstallation attempt results : @Output@`
+**Ticket Body:** `Failed to uninstall OneDrive on the machine. Here are the uninstallation attempt results: @Output@`
 
 The PC information is outlined below:  
-PC Name: %computername%  
-Last Login: %lastuser%  
-PC model: @biosname@  
-OS: %os%  
-S/N OF PC: @biosver@
-
-
-
-
-
-
-
-
-
-
-
-
+**PC Name:** %computername%  
+**Last Login:** %lastuser%  
+**PC Model:** @biosname@  
+**OS:** %os%  
+**S/N OF PC:** @biosver@

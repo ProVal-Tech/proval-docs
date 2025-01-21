@@ -8,6 +8,7 @@ tags: ['email']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script generates a ticket containing information about internal monitors that have been disabled due to failure in the past `2` hours. It explicitly excludes monitor sets with the string `[Disabled]` in their names. This script is necessary because disabled monitors cannot independently create tickets about their status.
@@ -38,11 +39,11 @@ The `MonitorFailureCheck-EmailAlerts` property offers the option to enable email
 
 ## Implementation Steps
 
-### For new implementation:
+### For New Implementation:
 1. **Importing the Script:**
    - Navigate to the ProSync Client Plugin.
    - Import the script following the established procedure.
-2. **Create System Properties:** Execute the script against any client in the environment with the set environment parameter set to 1 to create the system properties used by the script.
+2. **Create System Properties:** Execute the script against any client in the environment with the set environment parameter set to `1` to create the system properties used by the script.
    ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_2.png)
    ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_3.png)
 3. **System Properties Configuration (Initial Implementation):**
@@ -51,22 +52,22 @@ The `MonitorFailureCheck-EmailAlerts` property offers the option to enable email
 4. **Script Schedule:** Schedule the script following the example provided in the **Sample Run** section of the document.
 
 ### For Script Updates After 14-Dec-2023:
-1. **Open the Script:**  
+1. **Open the Script:**
    - Access the existing script (`Internal Monitor - Failed [Tickets, Global]`) in the environment where the update is required.
-2. **Capture Current Global Variables:**  
+2. **Capture Current Global Variables:**
    - Before proceeding with the update, take a screenshot of the existing Global Variables settings to preserve the current configuration.
    ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_4.png)
-3. **Import the new Script:**  
+3. **Import the New Script:**
    - Navigate to the ProSync Client Plugin.
    - Import the new script (`Internal Monitor - Failure Check [Autofix, Properties]`) following the established procedure.
-4. **Create System Properties:** Execute the script against any client in the environment with the set environment parameter set to 1 to create the system properties used by the script.
+4. **Create System Properties:** Execute the script against any client in the environment with the set environment parameter set to `1` to create the system properties used by the script.
    ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_5.png)
    ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_3.png)
-5. **System Properties Configuration (Initial Implementation):**  
+5. **System Properties Configuration (Initial Implementation):**
    - Refer to the **System Properties** section of the document for more information on the properties.
    - Verify that the values for the new system properties match those of the current Global parameters.
 6. **Script Schedule:** Schedule the script following the example provided in the **Sample Run** section of the document.
-7. **Remove the old script:** Delete the old script (`Internal Monitor - Failed [Tickets, Global]`) from the environment.
+7. **Remove the Old Script:** Delete the old script (`Internal Monitor - Failed [Tickets, Global]`) from the environment.
 
 ## Sample Run
 
@@ -78,14 +79,14 @@ Consider scheduling the new client script to execute every two hours.
 
 | Name | Former Global Variable | Default | Required | Description |
 |------|------------------------|---------|----------|-------------|
-| MonitorFailureCheck-EmailAlerts |  | 0 | False | Setting the value to 1 will activate the script's email feature. The script will then send an email to the address(es) stored in the default system property `_sysTicketDefaultEmail` after creating a ticket for any issues. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_7.png)  `_sysTicketDefaultEmail`: ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_8.png) |
+| MonitorFailureCheck-EmailAlerts |  | 0 | False | Setting the value to `1` will activate the script's email feature. The script will then send an email to the address(es) stored in the default system property `_sysTicketDefaultEmail` after creating a ticket for any issues. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_7.png)  `_sysTicketDefaultEmail`: ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_8.png) |
 | MonitorFailureCheck-TicketCategory | TicketCreationCategory | 6 | False | Ticket category id of the ticket to be generated. Leave it blank to generate the ticket with the default script ticket category. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_9.png)  Default Script Ticket Category: ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_10.png) |
-| MonitorFailureCheck-EnableAutofix | Autofix | 0 | True | If the value is set to 1, it will trigger Autofix and disable the default detection ticketing. The default, set at 0, generates a ticket for the disabled monitor set without attempting to enable them. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_11.png) |
-| MonitorFailureCheck-AutofixFailureAlerting | TicketPostAutofix | 1 | False | Setting the value to 1 will enable the Ticket generation feature after applying the Autofix. The script can create two types of Autofix failure tickets: one for the immediate failure of the Autofix and the other for monitor sets that are continuously getting disabled even after applying the Autofix multiple times. The behavior for these tickets can be controlled and managed by the system properties explained in the subsequent cells of this table. Note that `MonitorFailureCheck-EnableAutofix` must be enabled or set to 1 to use this property. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_12.png) |
+| MonitorFailureCheck-EnableAutofix | Autofix | 0 | True | If the value is set to `1`, it will trigger Autofix and disable the default detection ticketing. The default, set at `0`, generates a ticket for the disabled monitor set without attempting to enable them. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_11.png) |
+| MonitorFailureCheck-AutofixFailureAlerting | TicketPostAutofix | 1 | False | Setting the value to `1` will enable the Ticket generation feature after applying the Autofix. The script can create two types of Autofix failure tickets: one for the immediate failure of the Autofix and the other for monitor sets that are continuously getting disabled even after applying the Autofix multiple times. The behavior for these tickets can be controlled and managed by the system properties explained in the subsequent cells of this table. Note that `MonitorFailureCheck-EnableAutofix` must be enabled or set to `1` to use this property. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_12.png) |
 | MonitorFailureCheck-ThresholdDays | ThresholdDays | 7 | True | If the `MonitorFailureCheck-AutofixFailureAlerting` system property is set to `1`, the script checks for monitor sets that were disabled `X` number of times over `Y` number of days to identify those disabled multiple times. In this context, `Y` represents the number of days stored in the `MonitorFailureCheck-ThresholdDays` system property. `MonitorFailureCheck-EnableAutofix` and `MonitorFailureCheck-AutofixFailureAlerting` must both be set to `1` to utilize this property. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_13.png) |
 | MonitorFailureCheck-ThresholdTimes | ThresholdTimes | 5 | True | Stores the number of times (`X`) a monitor set must have failed over the past `Y` days, where `Y` is the number of days stored in the `MonitorFailureCheck-ThresholdDays` system property. To utilize this property, both `MonitorFailureCheck-EnableAutofix` and `MonitorFailureCheck-AutofixFailureAlerting` must be set to `1`. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_14.png) |
 | MonitorFailureCheck-MaxAllowedDisabledMonitors |  | 5 | True | This property stores the number of disabled monitor sets that Automate fails to enable even after running the Autofix, serving as a basis for comparison before creating an Autofix failure ticket. To utilize this property, both `MonitorFailureCheck-EnableAutofix` and `MonitorFailureCheck-AutofixFailureAlerting` must be set to `1`. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_15.png) |
-| MonitorFailureCheck-ClientIDForTicket |  | 0 | False | The ClientID for which failure tickets are intended to be created. This system property can be disregarded for on-prem partners and for hosted partners where the client ID of the internal environment is 1. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_16.png) |
+| MonitorFailureCheck-ClientIDForTicket |  | 0 | False | The ClientID for which failure tickets are intended to be created. This system property can be disregarded for on-prem partners and for hosted partners where the client ID of the internal environment is `1`. ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_16.png) |
 
 ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_17.png)
 
@@ -96,14 +97,3 @@ Consider scheduling the new client script to execute every two hours.
 ## Sample Ticket
 
 ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_18.png)
-
-
-
-
-
-
-
-
-
-
-

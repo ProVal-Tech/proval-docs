@@ -8,18 +8,10 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
-Import the Procedure XML  
-Import the PS1 to Managedfiles/Shared/ProValAutomation  
-Add Machine CF **xPVAL Windows 10 Build Result**  
 
+# Import the Procedure XML
 
+## Steps to Follow
 
-
-
-
-
-
-
-
-
-
+1. Import the PS1 to `Managedfiles/Shared/ProValAutomation`
+2. Add Machine Configuration: **xPVAL Windows 10 Build Result**

@@ -8,22 +8,23 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 - This Remote Monitor triggers failure only if:
-  1. Target is a workstation
-  2. Target is not virtual
-  3. Target does not have an ARM processor
-  4. The .net version is 4.6.2 or greater (or Windows 11 or higher, determined by the OS build number being greater than 22000)
-  5. The currently installed OpenDNS version is less than the available version provided by OpenDNS
+  1. The target is a workstation.
+  2. The target is not virtual.
+  3. The target does not have an ARM processor.
+  4. The .NET version is 4.6.2 or greater (or Windows 11 or higher, determined by the OS build number being greater than 22000).
+  5. The currently installed OpenDNS version is less than the available version provided by OpenDNS.
 
-- Troubleshooting: The Monitor status information column returns reasons for failure such as .Net requirement not satisfied, incorrect OS architecture, failure to satisfy physical machine requirement, ARM processors not supported, or update/installation not required. The monitor only triggers failure when it returns "True". Success is based on the result not equaling "True".
+- **Troubleshooting**: The Monitor status information column returns reasons for failure such as .NET requirement not satisfied, incorrect OS architecture, failure to satisfy physical machine requirements, ARM processors not supported, or update/installation not required. The monitor only triggers failure when it returns "True." Success is based on the result not equaling "True."
 
-- The monitor can be viewed in table view to see the results of the attempt, which can be addressed in the event that clients are targeting unsupported machines.
+- The monitor can be viewed in table format to see the results of the attempt, which can be addressed in the event that clients are targeting unsupported machines.
 
 ## Details
 
-**Suggested "Limit to"**: Selected Windows Workstations, or all windows machines as the monitor is smart enough not to trigger on items that do not satisfy the requirements.  
+**Suggested "Limit to"**: Selected Windows Workstations, or all Windows machines, as the monitor is smart enough not to trigger on items that do not satisfy the requirements.  
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Create an alert template that on error runs the [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](<../scripts/Deploy OpenDNS Roaming Client Latest Version.md>)
 
@@ -37,17 +38,4 @@ unlisted: false
 
 ## Target
 
-The only limiting factor will be ultimately windows operating system, the reason for this is that the monitor will filter out servers, and arm processors, and virtual machines, etc. That being said, even if you were to put a server in the list for this monitor that server would never trigger the autofix action.
-
-
-
-
-
-
-
-
-
-
-
-
-
+The only limiting factor will ultimately be the Windows operating system. The reason for this is that the monitor will filter out servers, ARM processors, virtual machines, etc. That being said, even if you were to include a server in the list for this monitor, that server would never trigger the autofix action.

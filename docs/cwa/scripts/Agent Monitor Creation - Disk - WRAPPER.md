@@ -8,11 +8,12 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script MUST be called by the Agent Monitor Creation script and/or the Remove and Rebuild script to create disk monitors for machines.
+This script **must** be called by the Agent Monitor Creation script and/or the Remove and Rebuild script to create disk monitors for machines.
 
-On a default setup, change the Agent Monitor Creation Script - line 8ish to be the ProVal Disk Wrapper instead.
+On a default setup, change the Agent Monitor Creation Script (around line 8) to use the ProVal Disk Wrapper instead.
 
 **Before**  
 ![Before](../../../static/img/Agent-Monitor-Creation---Disk---WRAPPER/image_1.png)  
@@ -20,11 +21,11 @@ On a default setup, change the Agent Monitor Creation Script - line 8ish to be t
 **After**  
 ![After](../../../static/img/Agent-Monitor-Creation---Disk---WRAPPER/image_2.png)  
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
-Cannot be run manually.
+This script cannot be run manually.
 
 ## Dependencies
 
@@ -35,24 +36,12 @@ Cannot be run manually.
 
 | Name        | Example        | Required | Description                                                                 |
 |-------------|----------------|----------|-----------------------------------------------------------------------------|
-| ExcludeIDs  | 445,334,345    | False    | A list of comma-separated computer ids to exclude from monitor creation.   |
+| ExcludeIDs  | 445,334,345    | False    | A list of comma-separated computer IDs to exclude from monitor creation.   |
 
 ## Process
 
-This script MUST be called by the Agent Monitor Creation script and the Remove and Rebuild script to create disk monitors for machines. It checks the computerid in the provided exclude list IDs. If any agent is found in that list then this script will not run on that agent and no monitors will be created.
+This script **must** be called by the Agent Monitor Creation script and the Remove and Rebuild script to create disk monitors for machines. It checks the `computerid` against the provided exclude list IDs. If any agent is found in that list, then this script will not run on that agent, and no monitors will be created.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Stores TPM Status of the machine. Updated by [Get TPM Status](<../tasks/Get TPM Status.md>) task.
+Stores the TPM status of the machine. Updated by the [Get TPM Status](<../tasks/Get TPM Status.md>) task.
 
 ## Dependencies
 
@@ -20,21 +21,9 @@ Stores TPM Status of the machine. Updated by [Get TPM Status](<../tasks/Get TPM 
 
 | Field Name   | Level    | Type      | Default Value | Description                          | Editable |
 |--------------|----------|-----------|---------------|--------------------------------------|----------|
-| TPM Status   | ENDPOINT | Text Box  | No            | Stores TPM Status of the machine.    | Yes      |
+| TPM Status   | ENDPOINT | Text Box  | No            | Stores the TPM status of the machine. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---TPM-Status/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---TPM-Status/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

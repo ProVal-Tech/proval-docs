@@ -8,12 +8,13 @@ tags: ['active-directory', 'email', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Client Specific Script for PCM  
 Monitor - AD - Password Expires This Week monitor  
-Autofix action assigned to his monitor calls this script  
-Script takes the GUID for the user and populates an email to that user letting them know that their password is going to expire  
+Autofix action assigned to this monitor calls this script.  
+The script takes the GUID for the user and populates an email to that user, letting them know that their password is going to expire.  
 
 ## Dependencies
 
@@ -24,28 +25,17 @@ Script takes the GUID for the user and populates an email to that user letting t
 
 | Name        | Description                                        |
 |-------------|----------------------------------------------------|
-| MSPWebsite  | used in the email body holds the MSP's Website     |
-| MSPName     | used in the email body holds the MSP's Name        |
+| MSPWebsite  | Used in the email body to hold the MSP's Website   |
+| MSPName     | Used in the email body to hold the MSP's Name      |
 
 ## Process
 
-1. Sets the user email address to variable
-2. Sets the user account name to variable
-3. Sets the user first name to variable
-4. Determines if the user can be emailed
-5. Either creates an email to the user or the MSP depending on what is available.
+1. Sets the user email address to a variable.
+2. Sets the user account name to a variable.
+3. Sets the user first name to a variable.
+4. Determines if the user can be emailed.
+5. Either creates an email to the user or the MSP, depending on what is available.
 
 ## Output
 
 N/A - No output present
-
-
-
-
-
-
-
-
-
-
-

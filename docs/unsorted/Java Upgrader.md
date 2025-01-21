@@ -8,9 +8,10 @@ tags: ['software', 'update', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script upgrades Java to the latest Java 8
+This script upgrades Java to the latest version of Java 8.
 
 ## Sample Run
 
@@ -18,29 +19,16 @@ This script upgrades Java to the latest Java 8
 
 ## Script State
 
-| Name      | Example           | Description                                       |
-|-----------|-------------------|---------------------------------------------------|
-| Old_Java  | java advance 8    | All old java application name with comma separated |
+| Name      | Example        | Description                                        |
+|-----------|----------------|----------------------------------------------------|
+| Old_Java  | java advance 8 | All old Java application names, separated by commas |
 
 ## Process
 
-Upgrades to the latest Java 8  
-Attempts to remove old java.  
-Stores old Java in Script State just in case.
+- Upgrades to the latest version of Java 8.
+- Attempts to remove old Java installations.
+- Stores old Java information in the Script State just in case.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

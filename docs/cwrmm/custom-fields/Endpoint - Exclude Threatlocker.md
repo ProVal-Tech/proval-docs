@@ -8,9 +8,10 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Turning this Custom Field "Yes" will exclude the machine from Threatlocker Deployment.
+Setting this Custom Field to "Yes" will exclude the machine from Threatlocker Deployment.
 
 ## Dependencies
 
@@ -20,19 +21,8 @@ Turning this Custom Field "Yes" will exclude the machine from Threatlocker Deplo
 
 | Field Name              | Level    | Type | Default Value | Description                                                                                         | Editable |
 |-------------------------|----------|------|---------------|-----------------------------------------------------------------------------------------------------|----------|
-| Exclude Threatlocker    | Endpoint | Flag | No            | Turning this Custom Field "Yes" will exclude all the machine from Threatlocker Deployment.        | Yes      |
+| Exclude Threatlocker    | Endpoint | Flag | No            | Setting this Custom Field to "Yes" will exclude the machine from Threatlocker Deployment.          | Yes      |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Endpoint---Exclude-Threatlocker/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Endpoint---Exclude-Threatlocker/image_1.png)

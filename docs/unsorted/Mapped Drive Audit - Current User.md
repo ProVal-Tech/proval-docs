@@ -8,9 +8,10 @@ tags: []
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This dataview gathers a detail of the mapped network drives for the current user logged into the machine.
+This document gathers details of the mapped network drives for the current user logged into the machine.
 
 ## Dependencies
 
@@ -25,14 +26,14 @@ This dataview gathers a detail of the mapped network drives for the current user
 | Location         | Location name of the agent.                                       |
 | Computer         | Computer name of the agent.                                       |
 | Operating System  | Operating system information of the agent                         |
-| LastContact      | LastContact of the agent                                          |
-| Username         | Logged in username for which the mapped drive detected            |
+| LastContact      | Last contact of the agent                                          |
+| Username         | Logged-in username for which the mapped drive is detected         |
 | Path             | Path of the mapped drive                                          |
-| TimeStamp        | Timestamp of last script ran                                       |
+| TimeStamp        | Timestamp of the last script run                                   |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   c.clientid, 
   c.locationid, 
@@ -51,17 +52,3 @@ FROM
   JOIN clients cl ON cl.ClientID = c.ClientID 
   JOIN plugin_proval_Mapped_Drive_CurrentUser ppc ON ppc.computerid = c.ComputerID
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

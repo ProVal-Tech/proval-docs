@@ -8,9 +8,10 @@ tags: ['connectwise', 'database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview is meant to display comparative results of the online status of agents in Automate as they pertain to the online status of that same machine in Control. As a result, this dataview can be used to determine if Control agents need to be repaired or reinstalled as well as Automate agents in that same regard.
+This Dataview is designed to display comparative results of the online status of agents in Automate as they relate to the online status of the same machines in Control. As a result, this Dataview can be used to determine if Control agents need to be repaired or reinstalled, as well as Automate agents in that same regard.
 
 ## Dependencies
 
@@ -20,27 +21,29 @@ This Dataview is meant to display comparative results of the online status of ag
 
 ## Columns
 
-| Column            | Description                                                                                  |
-|-------------------|----------------------------------------------------------------------------------------------|
-| Client            | The client the agent belongs to in ConnectWise Automate.                                    |
-| Location          | The location the agent belongs to in ConnectWise Automate.                                  |
-| CWAName           | The name given to the agent in the ConnectWise Automate Platform.                           |
-| CWCName           | The name given to the agent in the ConnectWise Control Platform.                            |
-| CWCOnlineStatus    | The status of the connection of the agent in ConnectWise Control (Online or Offline).      |
-| CWAOnlineStatus    | The status of the connection of the agent in ConnectWise Automate (Online or Offline).     |
-| LastConnected     | The last time the agent connected within the ConnectWise Control Platform.                   |
-| CWCGUID           | The GUID given to the agent for its ConnectWise Control session.                            |
+| Column             | Description                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------|
+| Client             | The client the agent belongs to in ConnectWise Automate.                                    |
+| Location           | The location the agent belongs to in ConnectWise Automate.                                  |
+| CWAName            | The name given to the agent in the ConnectWise Automate Platform.                           |
+| CWCName            | The name given to the agent in the ConnectWise Control Platform.                            |
+| CWCOnlineStatus    | The connection status of the agent in ConnectWise Control (Online or Offline).             |
+| CWAOnlineStatus     | The connection status of the agent in ConnectWise Automate (Online or Offline).            |
+| LastConnected      | The last time the agent connected within the ConnectWise Control Platform.                   |
+| CWCGUID            | The GUID assigned to the agent for its ConnectWise Control session.                          |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   clients.Name AS 'Client', 
   locations.Name AS 'Location', 
   computers.Name AS 'CWAName', 
   plugin_proval_control_session_status.SCName AS 'CWCName', 
-  CASE WHEN plugin_proval_control_session_status.Online = 0 THEN 'Offline' WHEN plugin_proval_control_session_status.Online = 1 THEN 'Online' END AS 'CWCOnlineStatus', 
-  CASE WHEN computers.UpTime \\<= 0 THEN 'Offline' WHEN computers.UpTime > 0 THEN 'Online' END AS 'CWAOnlineStatus', 
+  CASE WHEN plugin_proval_control_session_status.Online = 0 THEN 'Offline' 
+       WHEN plugin_proval_control_session_status.Online = 1 THEN 'Online' END AS 'CWCOnlineStatus', 
+  CASE WHEN computers.UpTime <= 0 THEN 'Offline' 
+       WHEN computers.UpTime > 0 THEN 'Online' END AS 'CWAOnlineStatus', 
   plugin_proval_control_session_status.LastConnectedDate AS 'LastConnected', 
   plugin_proval_control_session_status.GUID AS 'CWCGUID' 
 FROM 
@@ -50,16 +53,3 @@ FROM
   LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
   LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

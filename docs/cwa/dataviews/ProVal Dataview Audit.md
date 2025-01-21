@@ -8,13 +8,14 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Lists all the dataviews which are in 'proval' folder. It depicts their sync status with ProSync plugin.
+This document lists all the dataviews located in the 'ProVal' folder, depicting their synchronization status with the ProSync plugin.
 
 ## Dependencies
 
-plugin_prosync_dataviews
+- plugin_prosync_dataviews
 
 ## Columns
 
@@ -22,12 +23,11 @@ plugin_prosync_dataviews
 |------------------------------|------------------------------------------------|
 | DataviewID                   | Dataview ID                                   |
 | Dataview                     | Name of the dataview                          |
-| GUID                         | Dataview GUID from dataviews table           |
-| Synced In ProVal Plugin      | Is dataview synced with Prosync plugin or not |
+| GUID                         | Dataview GUID from the dataviews table       |
+| Synced In ProVal Plugin      | Indicates whether the dataview is synced with the ProSync plugin |
 
 ## Reference Table
 
 - plugin_prosync_dataviews
 - dataviews
 - dataviewfolders
-

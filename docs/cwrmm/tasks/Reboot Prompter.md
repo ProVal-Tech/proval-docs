@@ -8,9 +8,10 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script prompts the user to reboot with a simple yes or no prompt. It also forces a reboot after the PromptRebootCount is crossed.
+The script prompts the user to reboot with a simple yes or no prompt. It also forces a reboot after the `PromptRebootCount` is crossed.
 
 ## Dependencies
 
@@ -62,19 +63,19 @@ Paste in the following PowerShell script and set the expected time of script exe
 $ProjectName = 'Prompter'
 $WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
 
-if ( !(Test-Path $WorkingDirectory) ) {
+if (!(Test-Path $WorkingDirectory)) {
     try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop| Out-Null
+        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
-        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
 
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
+if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
+    $Acl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
-    Set-Acl  $WorkingDirectory $Acl
+    Set-Acl $WorkingDirectory $Acl
 }
 ```
 
@@ -82,7 +83,7 @@ if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityRe
 
 ![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
 
-In the script log message, simply type `Installing the supported .net version`  
+In the script log message, simply type `Installing the supported .NET version`  
 
 ![Log Message](../../../static/img/Reboot-Prompter/image_16.png)  
 
@@ -96,16 +97,16 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 $ProjectName = 'Prompter'
 $WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-try { 
-    $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " " 
+try {
+    $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " "
 } catch {}
 
 if (!($dotNetVersions -match "WindowsDesktop/.App 6")) {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     (New-Object System.Net.WebClient).DownloadFile("https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/6.0.6/windowsdesktop-runtime-6.0.6-win-x64.exe", "$WorkingDirectory/windowsdesktop-runtime-6.0.6-win-x64.exe")
     Start-Process -FilePath "$WorkingDirectory/windowsdesktop-runtime-6.0.6-win-x64.exe" -ArgumentList "/quiet", "/norestart" -NoNewWindow -Wait
-    try { 
-        $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " " 
+    try {
+        $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " "
     } catch {}
     if (($dotNetVersions -match "WindowsDesktop/.App 6")) {
         return "Successfully installed."
@@ -142,7 +143,7 @@ Add a new row by clicking on the Add row button.
 
 ![Add Row](../../../static/img/Reboot-Prompter/image_22.png)  
 
-In the script exit message, simply type `The supported .net version has failed to install.`  
+In the script exit message, simply type `The supported .NET version has failed to install.`  
 
 ![Exit Message](../../../static/img/Reboot-Prompter/image_23.png)  
 
@@ -275,7 +276,7 @@ if ($TaskCheck) {
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 if (Test-Path -Path "$File") {
-    Remove-Item -Path  "$File" -Force -Recurse
+    Remove-Item -Path "$File" -Force -Recurse
 }
 ```
 
@@ -298,7 +299,7 @@ Leave it blank so that the script exits normally.
 
 ![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_35.png)  
 
-Click on Custom Field > Choose RebootForceTimeDelayMinutes. Then set the variable name as 'RebootForceTimeDelayMinutes'.
+Click on Custom Field > Choose `RebootForceTimeDelayMinutes`. Then set the variable name as 'RebootForceTimeDelayMinutes'.
 
 ![Set Variable](../../../static/img/Reboot-Prompter/image_36.png)  
 
@@ -306,7 +307,7 @@ Click on Custom Field > Choose RebootForceTimeDelayMinutes. Then set the variabl
 
 ![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_37.png)  
 
-Click on Custom Field > Choose RebootPromptCount. Then set the variable name as 'RebootPromptCount'.
+Click on Custom Field > Choose `RebootPromptCount`. Then set the variable name as 'RebootPromptCount'.
 
 ![Set Variable](../../../static/img/Reboot-Prompter/image_38.png)  
 
@@ -314,7 +315,7 @@ Click on Custom Field > Choose RebootPromptCount. Then set the variable name as 
 
 ![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_39.png)  
 
-Click on Custom Field > Choose Prompter_Title. Then set the variable name as 'Prompter_Title'.
+Click on Custom Field > Choose `Prompter_Title`. Then set the variable name as 'Prompter_Title'.
 
 ![Set Variable](../../../static/img/Reboot-Prompter/image_40.png)  
 
@@ -322,7 +323,7 @@ Click on Custom Field > Choose Prompter_Title. Then set the variable name as 'Pr
 
 ![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_41.png)  
 
-Click on Custom Field > Choose Prompter_Timeout. Then set the variable name as 'Prompter_Timeout'.
+Click on Custom Field > Choose `Prompter_Timeout`. Then set the variable name as 'Prompter_Timeout'.
 
 ![Set Variable](../../../static/img/Reboot-Prompter/image_42.png)  
 
@@ -330,7 +331,7 @@ Click on Custom Field > Choose Prompter_Timeout. Then set the variable name as '
 
 ![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_43.png)  
 
-Click on Custom Field > Choose Prompter_HeaderImage. Then set the variable name as 'Prompter_HeaderImage'.
+Click on Custom Field > Choose `Prompter_HeaderImage`. Then set the variable name as 'Prompter_HeaderImage'.
 
 ![Set Variable](../../../static/img/Reboot-Prompter/image_44.png)  
 
@@ -338,7 +339,7 @@ Click on Custom Field > Choose Prompter_HeaderImage. Then set the variable name 
 
 ![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_45.png)  
 
-Click on Custom Field > Choose Prompter_Icon. Then set the variable name as 'Prompter_Icon'.
+Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as 'Prompter_Icon'.
 
 ![Set Variable](../../../static/img/Reboot-Prompter/image_46.png)  
 
@@ -406,18 +407,18 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
     $Title = "@Prompter_Title@"
     $Theme = 'dark'
     $ButtonType = 'Yes No'
-    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds Seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot.  Thank you!"
+    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds Seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot. Thank you!"
     $Param = "-m `"$PromptMessage`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
     $Result = cmd.exe /c "$EXEPath $Param"
     $CurrentDate = Get-Date -Format "yyyy-MM-dd hh:mm:ss"
     $Output = "User Action: " + $Result + "`r`n" + "User Action Date Time: " + $CurrentDate
     $Output | Out-File "C:/ProgramData/_Automation/app/Prompter/Prompter_UserAction.txt" -Append
     if ($Result -contains 'Yes') {
-        Write-Output " The end user has authorized Restarting computer" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+        Write-Output "The end user has authorized Restarting computer" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
     }
     if ($Result -notcontains 'Yes') {
         if ($TimesPrompted -eq $proval_RebootPromptCount) {
-            Write-Output " The threshold met. Sending force reboot prompt" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+            Write-Output "The threshold met. Sending force reboot prompt" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
             $ButtonType = 'OK'
             $Param = "-m `"$Message`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
             $Result = cmd.exe /c "$EXEPath $Param"
@@ -425,12 +426,12 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
             $TimesPrompted | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt'
         } else {
             $TimesPrompted++
-            Write-Output " Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+            Write-Output "Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
             $TimesPrompted | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt'
         }
     }
 } else {
-    Write-Output " The operating system is not Windows 10 or 11." | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+    Write-Output "The operating system is not Windows 10 or 11." | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
 }
 ```
 
@@ -508,11 +509,11 @@ if ($TaskCheck) {
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 
-$Action = New-ScheduledTaskAction -Execute 'cmd.exe' -WorkingDirectory $WorkingDirectory -Argument  ('/c start /min "" Powershell' + ' -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden' + " -File ""$($TaskFile)""")
+$Action = New-ScheduledTaskAction -Execute 'cmd.exe' -WorkingDirectory $WorkingDirectory -Argument ('/c start /min "" Powershell' + ' -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden' + " -File ""$($TaskFile)""")
 $TriggerTime = (Get-Date).AddMinutes(1)
 $Trigger = New-ScheduledTaskTrigger -Once -At $TriggerTime
 $Settings = New-ScheduledTaskSettingsSet
-$Principal = New-ScheduledTaskPrincipal -GroupId ( ( New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545') ).Translate( [System.Security.Principal.NTAccount] ).Value)
+$Principal = New-ScheduledTaskPrincipal -GroupId ((New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545')).Translate([System.Security.Principal.NTAccount]).Value)
 
 try {
     Register-ScheduledTask -Action $Action -Trigger $Trigger -TaskName $TaskName -Description $Description -Settings $Settings -Principal $Principal
@@ -561,12 +562,12 @@ Once all items are added, please save the task. The final task should look like 
 
 ## Deployment
 
-It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reboot Prompter Deployment - Manual](<../groups/Reboot Prompter Deployment - Manual.md>) and [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>) at certain intervals as per client requirement to send prompts at how many intervals.
+It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reboot Prompter Deployment - Manual](<../groups/Reboot Prompter Deployment - Manual.md>) and [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>) at certain intervals as per client requirements to send prompts at regular intervals.
 
 1. Go to `Automation` > `Tasks`.
 2. Search for `Reboot Prompter` Task.
 3. Select the concerned task.
-4. Click on `Schedule` button to schedule the task/script.
+4. Click on the `Schedule` button to schedule the task/script.
 
 ![Schedule Task](../../../static/img/Reboot-Prompter/image_61.png)  
 
@@ -574,12 +575,12 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 
 ![Schedule Screen](../../../static/img/Reboot-Prompter/image_62.png)  
 
-6. Select the relevant time to run the script and click the Do not repeat button.
+6. Select the relevant time to run the script and click the `Do not repeat` button.
 
 ![Select Time](../../../static/img/Reboot-Prompter/image_63.png)  
 
 7. A pop-up box will appear.
-8. Suppose client asked to set the reboot prompt for every 2 hours.
+8. Suppose the client asked to set the reboot prompt for every 2 hours.
 9. Change the number of hours to `2` and click `OK`.
 
 ![Set Time](../../../static/img/Reboot-Prompter/image_64.png)  
@@ -599,15 +600,3 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 
 Task Log  
 Custom Field  
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['edge', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It is an Automate implementation of the agnostic script [SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>) to remove the registry policy for an enforced homepage in Microsoft Edge (Chromium).
+This document outlines an Automate implementation of the agnostic script [SWM - Software Configuration - Remove-ChromiumHomepage](<../../powershell/Remove-ChromiumHomepage.md>) to remove the registry policy for an enforced homepage in Microsoft Edge (Chromium).
 
 ## Sample Run
 
@@ -23,15 +24,5 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
 
 

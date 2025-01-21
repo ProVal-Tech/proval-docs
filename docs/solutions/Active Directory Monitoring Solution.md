@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The solution document delineates the contents applicable for monitoring the Active Directory Domain environment. Please review the implementation steps meticulously as a significant portion of the content relies on the **`Active Directory`** plugin.
+This document delineates the contents applicable for monitoring the Active Directory Domain environment. Please review the implementation steps meticulously, as a significant portion of the content relies on the **`Active Directory`** plugin.
 
 This article encompasses multiple components and contents. Please import and implement only the required components.
 
@@ -55,9 +56,9 @@ This article encompasses multiple components and contents. Please import and imp
 |-----------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Dataview - Active Directory - AD Users](<../cwa/dataviews/Active Directory - AD Users.md>)                      | Dataview        | This dataview displays all users associated with a domain and general information about all the users.                                                                                               |
 | [Dataview - Active Directory - Domain Groups and Members](<../cwa/dataviews/Active Directory - Domain Groups and Members.md>)    | Dataview        | This dataview shows you all domains and their respective groups and a corresponding list of members.                                                                                                  |
-| [Dataview - Windows - Group Policy Objects](<../cwa/dataviews/Windows - Group Policy Objects.md>)                  | Dataview        | This dataview shows information about GPO's, their applied policies, where they are linked to, and to what trustees they are applied to.                                                               |
-| [Dataview - Windows - Group Policy Settings](<../cwa/dataviews/Windows - Group Policy Settings.md>)                  | Dataview        | This dataview shows information about GPO's, their applied policies, and settings.                                                                                                                    |
-| [Dataview - Windows - Group Policy Object Links](<../cwa/dataviews/Windows - Group Policy Object Links.md>)              | Dataview        | This dataview shows information about GPO's, their applied policies, and where they are linked to.                                                                                                     |
+| [Dataview - Windows - Group Policy Objects](<../cwa/dataviews/Windows - Group Policy Objects.md>)                  | Dataview        | This dataview shows information about GPOs, their applied policies, where they are linked to, and to what trustees they are applied.                                                               |
+| [Dataview - Windows - Group Policy Settings](<../cwa/dataviews/Windows - Group Policy Settings.md>)                  | Dataview        | This dataview shows information about GPOs, their applied policies, and settings.                                                                                                                    |
+| [Dataview - Windows - Group Policy Object Links](<../cwa/dataviews/Windows - Group Policy Object Links.md>)              | Dataview        | This dataview shows information about GPOs, their applied policies, and where they are linked to.                                                                                                     |
 | [Dataview - Windows - Group Policy Object Security Filtering](<../cwa/dataviews/Windows - Group Policy Object Security Filtering.md>) | Dataview        | This dataview displays information related to Group Policy Objects in Active Directory, specifically related to security policies.                                                                       |
 
 ### Reports
@@ -76,9 +77,9 @@ This article encompasses multiple components and contents. Please import and imp
 | [Internal Monitor - Active Directory - New User Account Created](<../cwa/monitors/Active Directory - New User Account Created.md>) | Internal Monitor | This monitor looks for new domain user accounts that have a creation date within the past day. A ticket is created for each new account discovered.                                                 |
 | [Internal Monitor - Password Expires This Week [G]](<../cwa/monitors/Password Expires This Week G.md>)            | Internal Monitor | Detects the domain users whose password is going to expire within a week.                                                                                                                             |
 | [Internal Monitor - Account Disabled](<../cwa/monitors/Account Disabled.md>)                           | Internal Monitor | This Monitor looks for the disabled accounts on Active Directory servers through the Active Directory plugin and creates a ticket for each one found.                                                  |
-| [Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>)                | Remote Monitor   | This remote monitor checks AD user's login password age to see if the age is set to unlimited, and if so it will change the user password from never expire to expire and will also change the default domain policy password age to 90 days. |
+| [Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>)                | Remote Monitor   | This remote monitor checks AD user's login password age to see if the age is set to unlimited, and if so, it will change the user password from never expire to expire and will also change the default domain policy password age to 90 days. |
 | [Remote Monitor - AD Account Lockout Detection](<../cwa/monitors/AD Account LockOut Detection.md>)               | Remote Monitor   | This remote monitor will detect when any AD account is flagged as being locked out. This can be noisy, so it has been deprecated.                                                                      |
-| [Script - Active Directory - Alerting - Password Expires This Week [Global,Autofix]*](https://proval.itglue.com/DOC-6075716-11713518) | Script           | This script sends an email to the user whose password is expiring within 1 week. This already happens through Windows, so it's been deprecated.                                                       |
+| [Script - Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](https://proval.itglue.com/DOC-6075716-11713518) | Script           | This script sends an email to the user whose password is expiring within 1 week. This already happens through Windows, so it's been deprecated.                                                       |
 
 ## Implementation (Plugin)
 
@@ -95,7 +96,7 @@ This article encompasses multiple components and contents. Please import and imp
    - [Dataview - Active Directory - AD Users](<../cwa/dataviews/Active Directory - AD Users.md>)
    - [Dataview - Active Directory - Domain Groups and Members](<../cwa/dataviews/Active Directory - Domain Groups and Members.md>)
    - Alert Template - **`△ Custom - Ticket Creation - Client`**
-   - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
+   - Alert Template - **`△ Custom - Ticket Creation - Computer - Failures Only`**
    - Alert Template - **`△ Custom - Ticket Creation - Computer`**
 
    OR - **_If the partner does not have PSA Integration_**, the Email Creation Alert Templates can be used in place of the Ticket Creation ones:
@@ -103,7 +104,7 @@ This article encompasses multiple components and contents. Please import and imp
    - [Script - Email Creation - Failures Only](https://proval.itglue.com/5078775/docs/10390936)
    - [Dataview - Active Directory - AD Users](<../cwa/dataviews/Active Directory - AD Users.md>)
    - [Dataview - Active Directory - Domain Groups and Members](<../cwa/dataviews/Active Directory - Domain Groups and Members.md>)
-   - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
+   - Alert Template - **`△ Custom - Email Creation - Computer - Failures Only`**
    - Alert Template - **`△ Custom - Email Creation - Computer`**
 
    After importing, ensure the system property **`_sysTicketDefaultEmail`** is filled out with the email address specified by the consultant.
@@ -119,7 +120,7 @@ This article encompasses multiple components and contents. Please import and imp
 2. Run the [AD - Create Views/Table/Schedule for AD Reporting Solution](<../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>) script once on any random machine to create the framework needed for the solution.
    - **Delete the script afterward.**
 
-3. Download the attached SQL file named 'Import_All_AD_Reports.sql'. Refer to the below doc for the attachment:
+3. Download the attached SQL file named 'Import_All_AD_Reports.sql'. Refer to the below document for the attachment:
    - [Active Directory Reporting SQL Import Attachment](<../unsorted/Active Directory Reporting SQL Import Attachment.md>)
 
 4. Import the file using System → General → Import → SQL File (The SQL file is too large for a remote monitor).
@@ -169,8 +170,7 @@ This article encompasses multiple components and contents. Please import and imp
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Domain Computers Missing Automate Agent](<../cwa/monitors/Active Computers in AD with No Agent.md>).
      - Assign the **`△ Custom - Ticket Creation - Client`** alert template.
-     - If the partner requires an Email Creation - Client alert template, this will need to get built by development.
-
+     - If the partner requires an Email Creation - Client alert template, this will need to be built by development.
    ![Image](../../static/img/Active-Directory-Monitoring-Solution/image_6.png)
 
 ### ADPluginUser - Create
@@ -196,7 +196,7 @@ This article encompasses multiple components and contents. Please import and imp
 2. Reload the System Cache:
    ![Image](../../static/img/Active-Directory-Monitoring-Solution/image_5.png)
 
-3. Edit the monitor with the last login value specified by the consultant; if this has not been specified then reach out to the consultant to clarify:
+3. Edit the monitor with the last login value specified by the consultant; if this has not been specified, then reach out to the consultant to clarify:
    ![Image](../../static/img/Active-Directory-Monitoring-Solution/image_9.png)
 
 4. Navigate to Automation → Monitors → Internal Monitors and configure the following:
@@ -315,15 +315,3 @@ The solutions presented in this section do not rely on any plugin.
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
-
-
-
-
-
-
-
-
-
-
-
-

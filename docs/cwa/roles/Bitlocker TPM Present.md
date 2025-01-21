@@ -8,25 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role denotes if the agent has Bitlocker TPM Present.
+This document outlines whether the agent has Bitlocker TPM present.
 
 ## Settings
 
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
-| \{%@C:/WINDOWS/system32/WindowsPowerShell/v1.0/powershell.exe -command "Get-Tpm|select -ExpandProperty TPMPresent"@%} | Contains   | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `{%@C:/WINDOWS/system32/WindowsPowerShell/v1.0/powershell.exe -command "Get-Tpm|select -ExpandProperty TPMPresent"@%}` | Contains   | True   | Windows        |

@@ -8,27 +8,15 @@ tags: ['performance', 'report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-Shows all endpoints that have run the Windows 10 Feature Upgrade (NoReboot) script and have not rebooted.
+This document shows all endpoints that have run the Windows 10 Feature Upgrade (NoReboot) script and have not rebooted.
 
 # View Filters
 
-List all filters applied to this view
+The following filters have been applied to this view:
 
 | Filter Name                                                                                      | Advanced Filter? | Filter Value     |
 |--------------------------------------------------------------------------------------------------|------------------|------------------|
-| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Y                | "Reboot Pending"  |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Yes              | "Reboot Pending"  |

@@ -8,6 +8,7 @@ tags: ['active-directory', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This solution gathers information on users with potentially compromised passwords by querying currently available comprehensive lists of known password hashes.
@@ -32,7 +33,7 @@ This solution gathers information on users with potentially compromised password
 | Content                                                                                                     | Type          | Description                                                                                         |
 |-------------------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------|
 | [CW RMM - Monitor - Weak Passwords Detected](<../cwrmm/monitors/Weak Passwords Detected.md>)              | Custom Field  | It creates a ticket if accounts with weak passwords are detected on a domain controller.           |
-| [CW RMM - Monitor - Duplicate Password detected](<../cwrmm/monitors/Duplicate Password detected.md>)         | Custom Field  | It creates a ticket if accounts with duplicate passwords are detected on a domain controller.       |
+| [CW RMM - Monitor - Duplicate Password Detected](<../cwrmm/monitors/Duplicate Password detected.md>)         | Custom Field  | It creates a ticket if accounts with duplicate passwords are detected on a domain controller.       |
 
 #### Tasks
 
@@ -50,20 +51,8 @@ This solution gathers information on users with potentially compromised password
    - [CW RMM - Machine Group - Domain Controllers](<../cwrmm/groups/Domain Controllers.md>)
 
 3. Create the following monitors:
-   - [CW RMM - Custom Field - Company - Weak Password Count](<../cwrmm/custom-fields/Company - Weak Password Count.md>)
-   - [CW RMM - Monitor - Duplicate Password detected](<../cwrmm/monitors/Duplicate Password detected.md>)
+   - [CW RMM - Monitor - Weak Passwords Detected](<../cwrmm/monitors/Weak Passwords Detected.md>)
+   - [CW RMM - Monitor - Duplicate Password Detected](<../cwrmm/monitors/Duplicate Password detected.md>)
 
-4. Create and deploy the following tasks:
+4. Create and deploy the following task:
    - [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)
-
-
-
-
-
-
-
-
-
-
-
-

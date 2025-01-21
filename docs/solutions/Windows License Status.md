@@ -8,16 +8,17 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of this solution is to pull the Windows License Status from the computers, if it is licensed, unlicensed or about to expire.
+The purpose of this solution is to pull the Windows License Status from the computers, determining whether it is licensed, unlicensed, or about to expire.
 
 ## Associated Content
 
 | Content                                                                                                    | Type          | Function                                                                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011) | Remote Monitor | This remote monitor Checks and Returns Windows License Status via CIMInstance. It will create ticket for the statuses other than Licensed.                                      |
-| [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>)      | Script        | This will be used in the alert template `△ Custom - Ticket Creation Computer - Warning and Failed` and will create ticket for the statuses other than Licensed.                 |
+| [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011) | Remote Monitor | This remote monitor checks and returns the Windows License Status via CIMInstance. It will create a ticket for the statuses other than Licensed.                                 |
+| [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>)      | Script        | This will be used in the alert template `△ Custom - Ticket Creation Computer - Warning and Failed` and will create a ticket for the statuses other than Licensed.                |
 | △ Custom - Ticket Creation Computer - Warning and Failed                                                    | Alert Template | To be applied to the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011)                            |
 | [EPM - Windows Configuration - Dataview - Windows License Status [Remote Monitor]](<../cwa/dataviews/Windows License Status Remote Monitor.md>) | Dataview      | This will display the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011) |
 
@@ -34,18 +35,6 @@ The purpose of this solution is to pull the Windows License Status from the comp
 **3.** Reload the system cache:  
 - ![Reload Cache](../../static/img/Windows-License-Status/image_19.png)
 
-**4.** If ticketing is desired for when a machine has an issue with their Windows license: (The consultant should specify this)  
+**4.** If ticketing is desired for when a machine has an issue with its Windows license (the consultant should specify this):  
 - Apply the following alert template to the remote monitor:  
   - `△ Custom - Ticket Creation Computer - Warning and Failed`  
-
-
-
-
-
-
-
-
-
-
-
-

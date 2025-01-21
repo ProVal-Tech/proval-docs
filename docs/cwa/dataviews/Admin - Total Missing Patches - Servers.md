@@ -8,9 +8,10 @@ tags: ['report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the number of missing patches for each server patching through Automate.
+This dataview shows the number of missing patches for each server being patched through Automate.
 
 ## Columns
 
@@ -19,18 +20,6 @@ This dataview shows the number of missing patches for each server patching throu
 | Client Name     | Displays the client name                         |
 | Location Name   | Displays the location name                       |
 | Machine Name    | Displays the name of the machine                 |
-| OS              | Displays the operation system of the machine     |
-| AgentType       | Displays the agent type                          |
-| MissingPatches  | Displays the number of missing patches on the machine |
-
-
-
-
-
-
-
-
-
-
-
-
+| OS              | Displays the operating system of the machine     |
+| Agent Type      | Displays the agent type                          |
+| Missing Patches | Displays the number of missing patches on the machine |

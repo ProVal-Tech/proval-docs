@@ -8,11 +8,12 @@ tags: ['api', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will uninstall CW Control and call the [Offboarding - CW Control RMM+ API - EndSession Command](<./ScreenConnect - End Session Command RMM+.md>) script to end the session from the CW Control web portal.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -24,26 +25,14 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- The script will first check if CW Control is installed or not
-- An attempt will be made to uninstall CW Control using WMIC
-- If the uninstall fails with wmic then an attempt will be made to uninstall using LTCommand
-- If the LTCommand uninstall failed then a ticket will be created to denote the failure
-- If any of the above attempts succeeded, then the dependent script will be called to remove the machine from the Control web portal.
-- If the machine is unable to be removed from the Control portal, then a ticket will be created
+- The script will first check if CW Control is installed.
+- An attempt will be made to uninstall CW Control using WMIC.
+- If the uninstall fails with WMIC, then an attempt will be made to uninstall using LTCommand.
+- If the LTCommand uninstall fails, a ticket will be created to denote the failure.
+- If any of the above attempts succeed, then the dependent script will be called to remove the machine from the Control web portal.
+- If the machine is unable to be removed from the Control portal, then a ticket will be created.
 
 ## Output
 
 - Script log
 - Ticket if failure found
-
-
-
-
-
-
-
-
-
-
-
-

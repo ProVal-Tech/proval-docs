@@ -8,23 +8,24 @@ tags: ['active-directory', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an RMM implementation of the agnostic script [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>). This task is used to reset the KRBTGT Active Directory account. Adapted from [https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
+This is an RMM implementation of the agnostic script [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>). This task is used to reset the KRBTGT Active Directory account. Adapted from [New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
 
 This script is provided "without warranty".
 
-It is in essence a streamlined version of the adapted script to always run the live account reset with some modernization of the PowerShell mixed in.
+It is essentially a streamlined version of the adapted script to always run the live account reset with some modernization of PowerShell mixed in.
 
-Due to this, results are not guaranteed, and if at all possible should always be run manually and logins should be immediately tested.
+Due to this, results are not guaranteed, and if at all possible, it should always be run manually, and logins should be immediately tested.
 
-*YOU HAVE BEEN WARNED*
+**YOU HAVE BEEN WARNED**
 
 ## Sample Run
 
 ![Sample Run Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_2.png)
 
-In order to run without DryRun, Do not select DryRun  
+In order to run without DryRun, do not select DryRun.  
 ![Sample Run Image 2](../../../static/img/KRBTGT-Account---Reset-Keys/image_3.png)
 
 ## Dependencies
@@ -35,18 +36,18 @@ In order to run without DryRun, Do not select DryRun
 
 | Name      | Example   | Accepted Values | Required | Default | Type | Description                                                                                       |
 |-----------|-----------|----------------|----------|---------|------|---------------------------------------------------------------------------------------------------|
-| `DryRun`  | Unmarked  | True/False     | False    | False   | Flag | Runs the process of resetting the KRBTGT account password without actually resetting it. Recommended to be run and reviewed before running the live reset. |
+| `DryRun`  | Unmarked  | True/False     | False    | False   | Flag | Runs the process of resetting the KRBTGT account password without actually resetting it. Recommended to be run and reviewed before executing the live reset. |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_4.png)
 
 ![Task Creation Image 2](../../../static/img/KRBTGT-Account---Reset-Keys/image_5.png)
 
 **Name:** KRBTGT Account - Reset Keys  
-**Description:** This task is used to reset the KRBTGT Active Directory account. Adapted from [https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1)  
+**Description:** This task is used to reset the KRBTGT Active Directory account. Adapted from [New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1)  
 **Category:** Custom  
 ![Task Creation Image 3](../../../static/img/KRBTGT-Account---Reset-Keys/image_6.png)
 
@@ -66,15 +67,15 @@ This screen will appear.
 - Click the `Save` button.  
 ![Parameters Image 3](../../../static/img/KRBTGT-Account---Reset-Keys/image_9.png)
 
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Parameters Image 4](../../../static/img/KRBTGT-Account---Reset-Keys/image_10.png)
 
-Parameters will look like as shown below:  
+Parameters will look as shown below:  
 ![Parameters Image 5](../../../static/img/KRBTGT-Account---Reset-Keys/image_11.png)
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Task Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_12.png)
 
 A blank function will appear.  
@@ -117,7 +118,7 @@ if (!(Test-Path -Path $PS1Path)) {
 }
 #endregion
 #region Execution
-if ($DryRun -match '1|Y|Yes|True' ) {
+if ($DryRun -match '1|Y|Yes|True') {
     & $PS1Path -DryRun
 } else {
     & $PS1Path
@@ -126,11 +127,11 @@ if ($DryRun -match '1|Y|Yes|True' ) {
 ```
 
 ```
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if (!(Test-Path $LogPath)) {
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -148,15 +149,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

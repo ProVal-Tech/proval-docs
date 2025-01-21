@@ -8,13 +8,14 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Indicates that FastBoot has been disabled on the computer.
 
 ## Details
 
-| Field Name           | Level    | Type  | Default Value | Description                                             | Editable |
+| Field Name          | Level    | Type  | Default Value | Description                                             | Editable |
 |---------------------|----------|-------|---------------|---------------------------------------------------------|----------|
 | FastBoot_Disabled    | ENDPOINT | Flag  | No            | Indicates that FastBoot has been disabled on the computer. | Yes      |
 
@@ -22,15 +23,3 @@ Indicates that FastBoot has been disabled on the computer.
 
 ![Screenshot 1](../../../static/img/Endpoint---FastBoot_Disabled/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---FastBoot_Disabled/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

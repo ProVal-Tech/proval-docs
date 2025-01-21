@@ -8,19 +8,20 @@ tags: ['installation', 'software', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-Updates the Windows edition for Windows 10/11 workstations to Enterprise.
+This document updates the Windows edition for Windows 10/11 workstations to Enterprise.
 
 ## Dependencies
 
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)  
-The partner must have a KMS host setup or this component will not function.  
+The partner must have a KMS host setup; otherwise, this component will not function.  
 Refer the partner to [How to create a KMS Host](https://learn.microsoft.com/en-us/windows-server/get-started/kms-create-host) if no KMS host exists.
 
 ## Implementation
 
-Export the component from ProVal's Datto RMM instance  
+Export the component from ProVal's Datto RMM instance.  
 **Name:** Windows Enterprise Upgrade  
 
 ![Component Export](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_1.png)  
@@ -29,7 +30,7 @@ The export will download the necessary component (cpt) file.
 
 ![Import Component](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_2.png)  
 
-Import this component file into the partner's Datto RMM instance  
+Import this component file into the partner's Datto RMM instance.  
 
 ![Component Import](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_3.png)  
 
@@ -43,21 +44,7 @@ A job status of Success is expected.
 
 **StdOut**  
 ![StdOut](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_5.png)  
-
 ![StdOut](../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_6.png)  
 
 **StdErr**  
 StdErr is not expected.
-
-
-
-
-
-
-
-
-
-
-
-
-

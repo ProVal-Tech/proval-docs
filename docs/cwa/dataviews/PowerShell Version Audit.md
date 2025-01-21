@@ -8,9 +8,10 @@ tags: ['database']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows current agent PowerShell versions.
+This dataview shows the current agent PowerShell versions.
 
 ## Dependencies
 
@@ -20,17 +21,17 @@ This dataview shows current agent PowerShell versions.
 
 | Column              | Description                                      |
 |---------------------|--------------------------------------------------|
-| Client              | Client Name of the agent                         |
-| Location            | Location Name of the agent                       |
-| Computer            | Computer Name of the agent                       |
-| Operating System    | Operating System of the agent                    |
-| LastContact         | Last Contact of the agent with the RMM          |
+| Client              | Client name of the agent                         |
+| Location            | Location name of the agent                       |
+| Computer            | Computer name of the agent                       |
+| Operating System    | Operating system of the agent                    |
+| Last Contact        | Last contact of the agent with the RMM          |
 | PowerShell Version   | PowerShell version on the agent                  |
 | Script Run Time     | The last date when the PowerShell version was checked |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   c.clientid, 
   c.locationid, 
@@ -64,15 +65,3 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['application', 'connectwise', 'office']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Checks common failure points in Office automatic updates and automatically resolves them. CW RMM implementation of the agnostic script [Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>).
+This document checks common failure points in Office automatic updates and automatically resolves them. It provides a ConnectWise RMM implementation of the agnostic script [Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>).
 
 ## Sample Run
 
@@ -24,7 +25,7 @@ Checks common failure points in Office automatic updates and automatically resol
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Repair-Office-Automatic-Updates/image_3.png)
 
@@ -38,7 +39,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Repair-Office-Automatic-Updates/image_6.png)
 
@@ -93,11 +94,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -139,15 +140,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

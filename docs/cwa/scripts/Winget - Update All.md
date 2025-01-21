@@ -8,9 +8,10 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script will update all Winget packages found on an endpoint.
+This script will update all Winget packages found on an endpoint.
 
 ## Sample Run
 
@@ -18,9 +19,9 @@ This Script will update all Winget packages found on an endpoint.
 
 ## Dependencies
 
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
+- [SWM - Software Management - PowerShell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
 
-#### Global Parameters
+### Global Parameters
 
 | Name          | Example                   | Required | Description                                                                                     |
 |---------------|---------------------------|----------|-------------------------------------------------------------------------------------------------|
@@ -28,21 +29,8 @@ This Script will update all Winget packages found on an endpoint.
 
 ## Process
 
-Please reference the agnostic content for process.
+Please reference the agnostic content for the process.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

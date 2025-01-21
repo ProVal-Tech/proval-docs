@@ -8,6 +8,7 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-ChromiumCache](<../../powershell/Clear-ChromiumCache.md>).
@@ -20,20 +21,9 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 
 | Name   | Example | Required | Description                                                                                                                                                     |
 |--------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Force  | 1       | False    | Browser instances will be terminated if the `Force` parameter is set to `1` and they are bearing a handle to target cache files.                             |
+| Force  | 1       | False    | Browser instances will be terminated if the `Force` parameter is set to `1` and they are holding a handle to target cache files.                             |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
 

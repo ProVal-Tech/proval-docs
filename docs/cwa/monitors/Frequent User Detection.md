@@ -8,11 +8,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor is designed to detect the online Windows workstation agent where frequent user detection has not been detected in the last 14 days.
+This internal monitor is designed to detect online Windows workstation agents where user detection has not occurred in the last 14 days.
 
-You can change this day number on the monitor to set different script run frequencies and freely set it to any number as the dates are compared from the stored value of the EDF "LogonUserCheckDate".
+You can change the number of days in the monitor to set different script run frequencies, allowing you to customize it to any value, as the dates are compared from the stored value of the EDF "LogonUserCheckDate".
 
 ![Image](../../../static/img/Frequent-User-Detection/image_1.png)
 
@@ -23,16 +24,3 @@ You can change this day number on the monitor to set different script run freque
 ## Target
 
 Windows Workstations
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 # Syntax
 
 | Field Value           | Description                                                  |
@@ -18,15 +19,3 @@ unlisted: false
 | Failure               | Set when installState = 2                                   |
 | Success               | Set when installState = 3                                   |
 | Reboot Pending        | Set when installState = 1 and lastReboot is less than installDate. |
-
-
-
-
-
-
-
-
-
-
-
-

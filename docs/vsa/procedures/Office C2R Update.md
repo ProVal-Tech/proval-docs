@@ -8,10 +8,11 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Perfoms an on-demand update for a Click2Run Office installation on an endpoint using agnostic solution  
-[SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>) 
+Performs an on-demand update for a Click2Run Office installation on an endpoint using an agnostic solution.  
+[SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
 
 ## Example Agent Procedure Log
 
@@ -39,21 +40,8 @@ Perfoms an on-demand update for a Click2Run Office installation on an endpoint u
 
 ## Dependencies
 
-Does this Procedure depend on other VSA content? Link the ITGlue Article for the content documentation.
+Does this procedure depend on other VSA content? Link the ITGlue article for the content documentation.
 
 ## Output
 
-Procedure Logfiles and other outputs
-
-
-
-
-
-
-
-
-
-
-
-
-
+Procedure log files and other outputs.

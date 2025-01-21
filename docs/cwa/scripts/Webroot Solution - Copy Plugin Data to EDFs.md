@@ -8,9 +8,10 @@ tags: ['update', 'webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This client script will update the client EDFs value from the Webroot plugin only when AutoDeploy is enabled in the plugin table `plugin_webroot3_clients` or `plugin_webroot_sa_cls_basic` based on the Webroot version.
+This client script updates the client EDFs value from the Webroot plugin only when AutoDeploy is enabled in the plugin tables `plugin_webroot3_clients` or `plugin_webroot_sa_cls_basic`, depending on the Webroot version.
 
 ## Sample Run
 
@@ -31,14 +32,3 @@ This client script will update the client EDFs value from the Webroot plugin onl
 ## Output
 
 - EDF
-
-
-
-
-
-
-
-
-
-
-

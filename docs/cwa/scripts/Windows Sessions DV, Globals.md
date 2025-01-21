@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Executes the `query session` command and stores the result in a custom table.
@@ -30,22 +31,9 @@ Executes the `query session` command and stores the result in a custom table.
 
 | Name          | Default | Required | Description                                                                                                           |
 |---------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| retentiondays | 1       | True     | Number of days to keep the historical data. Any data older than the mentioned days will be removed from the database on the next execution of the script. |
+| retentiondays | 1       | True     | Number of days to keep the historical data. Any data older than the specified days will be removed from the database on the next execution of the script. |
 
 ## Output
 
 - Dataview
 - Custom Table
-
-
-
-
-
-
-
-
-
-
-
-
-

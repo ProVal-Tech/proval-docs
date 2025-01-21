@@ -8,15 +8,16 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScaling](<../../unsorted/Agnostic - Set-DisplayScaling.md>) to set custom Display scaling on existing as well as new users for windows machines.
+This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScaling](<../../unsorted/Agnostic - Set-DisplayScaling.md>) to set custom display scaling on both existing and new users for Windows machines.
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/Set---DisplayScaling/image_1.png)
 
-- In order to set display scale to 100%  
+To set the display scale to 100%:  
 ![Set Display Scale](../../../static/img/Set---DisplayScaling/image_2.png)
 
 ## Dependencies
@@ -27,16 +28,16 @@ This is an RMM implementation of the agnostic script [Agnostic - Set-DisplayScal
 
 | Name            | Example | Required | Description                                                                                                                                                                                                                              |
 |-----------------|---------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ScalePercentage  | 150     | True     | Enter One of the scaling percentages from the below option- 100 - to maximize the windows zoom to 100%- 125 - to maximize the windows zoom to 125%- 150 - to maximize the windows zoom to 150%- 175 - to maximize the windows zoom to 175%- 200 - to maximize the windows zoom to 200% |
+| ScalePercentage  | 150     | True     | Enter one of the scaling percentages from the options below: - 100 - to maximize the window zoom to 100% - 125 - to maximize the window zoom to 125% - 150 - to maximize the window zoom to 150% - 175 - to maximize the window zoom to 175% - 200 - to maximize the window zoom to 200% |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.  
+Create a new `Script Editor` style script in the system to implement this task.  
 ![Create Script](../../../static/img/Set---DisplayScaling/image_3.png)  
 ![Script Creation](../../../static/img/Set---DisplayScaling/image_4.png)
 
 **Name:** Set - DisplayScaling  
-**Description:** This task sets custom Display scaling on existing as well as new users for Windows machines.  
+**Description:** This task sets custom display scaling on existing and new users for Windows machines.  
 **Category:** Custom  
 ![Category](../../../static/img/Set---DisplayScaling/image_5.png)
 
@@ -49,20 +50,20 @@ This screen will appear.
 ![Parameter Screen](../../../static/img/Set---DisplayScaling/image_7.png)
 
 - Set `ScalePercentage` in the `Parameter Name` field.
-- Toggle Required Field.
+- Toggle the Required field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
 ![Save Button](../../../static/img/Set---DisplayScaling/image_8.png)
 
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.  
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
 ![Confirm Button](../../../static/img/Set---DisplayScaling/image_9.png)
 
-Parameters will look like as shown below:  
+Parameters will look as shown below:  
 ![Parameters Example](../../../static/img/Set---DisplayScaling/image_10.png)
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Set---DisplayScaling/image_11.png)
 
 A blank function will appear.  
@@ -126,7 +127,7 @@ if ($Parameters) {
 #endregion
 
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell Script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -147,15 +148,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

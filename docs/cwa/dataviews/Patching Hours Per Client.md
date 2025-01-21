@@ -8,30 +8,18 @@ tags: ['patching', 'performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview represents the number of patching jobs and total patching hours per client.
+This document provides an overview of patching jobs and the total patching hours per client.
 
 ## Columns
 
 | Column                             | Description                                               |
 |------------------------------------|-----------------------------------------------------------|
-| Clientid                           | Computerid of the machine                                 |
+| Client ID                          | Computer ID of the machine                                |
 | Client Name                        | Name of the client                                        |
-| Patch Managed Devices              | Number of Devices in patch managed mode per client       |
-| Number of Patch Jobs last 30 days  | Number of Patch Jobs per Client in the last 30 days      |
-| Sum of Patching hours last 30 days | Sum of Patching hours per Client in the last 30 days     |
-| Total Patch Duration               | Total Patch Duration per Client in the last 30 days      |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Patch Managed Devices              | Number of devices in patch managed mode per client       |
+| Number of Patch Jobs Last 30 Days  | Number of patch jobs per client in the last 30 days      |
+| Sum of Patching Hours Last 30 Days | Sum of patching hours per client in the last 30 days     |
+| Total Patch Duration               | Total patch duration per client in the last 30 days      |

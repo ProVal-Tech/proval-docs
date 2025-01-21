@@ -8,15 +8,33 @@ tags: ['extensions', 'firefox', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Gets Firefox extensions installed on an endpoint
+This document describes how to collect Firefox extensions installed on an endpoint.
 
 ## Example Agent Procedure Log
 
 ```
 8:33:10 am 23-Jan-23   Firefox Extensions Audit   Success THEN   provaltech.com/dan.hicks
-8:33:09 am 23-Jan-23   Firefox Extensions Audit-0001   Log: 2023-01-23 08:30:07 INIT ----------------------------------------------- 2023-01-23 08:30:07 INIT Get-FirefoxExtensions 2023-01-23 08:30:07 INIT System: DEV 2023-01-23 08:30:07 INIT User: DEV$ 2023-01-23 08:30:07 INIT OS Bitness: AMD64 2023-01-23 08:30:07 INIT PowerShell Bitness: 64 2023-01-23 08:30:07 INIT PowerShell Version: 5 2023-01-23 08:30:07 INIT ----------------------------------------------- 2023-01-23 08:30:07 LOG Starting browser inventory on DEV. 2023-01-23 08:33:10 INIT ----------------------------------------------- 2023-01-23 08:33:10 INIT Get-FirefoxExtensions 2023-01-23 08:33:10 INIT System: DEV 2023-01-23 08:33:10 INIT User: DEV$ 2023-01-23 08:33:10 INIT OS Bitness: AMD64 2023-01-23 08:33:10 INIT PowerShell Bitness: 64 2023-01-23 08:33:10 INIT PowerShell Version: 5 2023-01-23 08:33:10 INIT ----------------------------------------------- 2023-01-23 08:33:10 L...   provaltech.com/dan.hicks
+8:33:09 am 23-Jan-23   Firefox Extensions Audit-0001   Log: 2023-01-23 08:30:07 INIT -----------------------------------------------
+2023-01-23 08:30:07 INIT Get-FirefoxExtensions 
+2023-01-23 08:30:07 INIT System: DEV 
+2023-01-23 08:30:07 INIT User: DEV$ 
+2023-01-23 08:30:07 INIT OS Bitness: AMD64 
+2023-01-23 08:30:07 INIT PowerShell Bitness: 64 
+2023-01-23 08:30:07 INIT PowerShell Version: 5 
+2023-01-23 08:30:07 INIT -----------------------------------------------
+2023-01-23 08:30:07 LOG Starting browser inventory on DEV. 
+2023-01-23 08:33:10 INIT -----------------------------------------------
+2023-01-23 08:33:10 INIT Get-FirefoxExtensions 
+2023-01-23 08:33:10 INIT System: DEV 
+2023-01-23 08:33:10 INIT User: DEV$ 
+2023-01-23 08:33:10 INIT OS Bitness: AMD64 
+2023-01-23 08:33:10 INIT PowerShell Bitness: 64 
+2023-01-23 08:33:10 INIT PowerShell Version: 5 
+2023-01-23 08:33:10 INIT -----------------------------------------------
+2023-01-23 08:33:10 L...   provaltech.com/dan.hicks
 8:33:08 am 23-Jan-23   Firefox Extensions Audit   Firefox Extensions: OneTab   provaltech.com/dan.hicks
 8:33:08 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)   Success THEN   provaltech.com/dan.hicks
 8:33:08 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0016   Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server.   provaltech.com/dan.hicks
@@ -33,7 +51,7 @@ Gets Firefox extensions installed on an endpoint
 8:32:56 am 23-Jan-23   Execute Powershell Command-0008   New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name FirefoxExtensionAudit"   provaltech.com/dan.hicks
 8:32:56 am 23-Jan-23   Execute Powershell Command-0008   Custom commands detected as New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name FirefoxExtensionAudit   provaltech.com/dan.hicks
 8:32:54 am 23-Jan-23   Execute Powershell Command-0002   Powershell is present.   provaltech.com/dan.hicks
-8:32:46 am 23-Jan-23   Run Now - Firefox Extensions Audit   Admin provaltech.com/dan.hicks scheduled procedure Run Now - Firefox Extensions Audit to run at Jan 23 2023 8:32AM
+8:32:46 am 23-Jan-23   Run Now - Firefox Extensions Audit   Admin provaltech.com/dan.hicks scheduled procedure Run Now - Firefox Extensions Audit to run at Jan 23 2023 8:32 AM
 ```
 
 ## Dependencies
@@ -42,21 +60,9 @@ Gets Firefox extensions installed on an endpoint
 
 ## Process
 
-Runs the agnostic script to collect firefox extensions installed on an endpoint
+Runs the agnostic script to collect Firefox extensions installed on an endpoint.
 
 ## Output
 
 - Agent Procedure Log
 - Custom Field: xPVAL Firefox Extensions Installed
-
-
-
-
-
-
-
-
-
-
-
-

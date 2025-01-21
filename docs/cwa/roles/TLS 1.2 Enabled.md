@@ -8,24 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Will determine if the endpoint is using TLS version 1.2. This data is visible in the dataview @Security - TLS Status.
+This document will determine if the endpoint is using TLS version 1.2. This data is visible in the dataview under @Security - TLS Status.
 
 ## Settings
 
 | Detection String                                                                 | Comparator | Result | Applicable OS |
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.2/Client:Enabled-%}` | Equals     | 1      | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-
-

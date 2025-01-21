@@ -8,8 +8,9 @@ tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
-Gathers CF Data from xPVAL Azure AD Connect Version and displays all endpoints that have a valid version
+This document gathers CF data from the xPVAL Azure AD Connect Version and displays all endpoints that have a valid version.
 
 # Dependencies
 - [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853853)
@@ -20,28 +21,16 @@ Gathers CF Data from xPVAL Azure AD Connect Version and displays all endpoints t
 - [SWM - Software Configuration - Report - Azure AD Connect Version Audit](https://proval.itglue.com/5078775/docs/9853843)
 
 # Layout
-List the report parts used. If custom report parts were designed during report creation, list their properties and attributes
-- Template Used: Audit / Machine Summary
-- Data Type (Pie, Bar, Grid, etc): Grid
-- Columns: Computer Name, xPVAL Azure AD Connect Version (Alias: Azure AD Connect Version)
-- Ordering and Grouping
-  - Order By Columns (include whether Aggregate and Sort order are defined): None
-  - Group By Columns: Group Name
-- Filtering
-  - Row Filter Settings (Distinct, Limit Types, Limit Values): None
-  - Date Filters: None
-  - Advanced Filters (Field, Operator, Value):
+List the report parts used. If custom report parts were designed during report creation, list their properties and attributes:
+- **Template Used:** Audit / Machine Summary
+- **Data Type (Pie, Bar, Grid, etc):** Grid
+- **Columns:** Computer Name, xPVAL Azure AD Connect Version (Alias: Azure AD Connect Version)
+- **Ordering and Grouping**
+  - **Order By Columns (include whether Aggregate and Sort order are defined):** None
+  - **Group By Columns:** Group Name
+- **Filtering**
+  - **Row Filter Settings (Distinct, Limit Types, Limit Values):** None
+  - **Date Filters:** None
+  - **Advanced Filters (Field, Operator, Value):**
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
-
-
-
-
-
-
-
-
-
-
-
-

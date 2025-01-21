@@ -8,9 +8,10 @@ tags: ['database', 'security', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script audits the locked account and stores it in the table.
+This script audits locked accounts and stores the information in a table.
 
 ## Sample Run
 
@@ -35,33 +36,19 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name         | Example                                             | Required | Description                                         |
 |--------------|-----------------------------------------------------|----------|-----------------------------------------------------|
-| Email        | [abc@xyz.com](mailto:abc@xyz.com); [efg@tty.com](mailto:efg@tty.com); | False    | Email address to send email on Lockout Detail      |
-| Email_Option | 1 or 0                                            | False    | 0 - No Email by default1 - Send email to the email provided |
+| Email        | [abc@xyz.com](mailto:abc@xyz.com); [efg@tty.com](mailto:efg@tty.com) | False    | Email address to send email on Lockout Detail      |
+| Email_Option | 1 or 0                                            | False    | 0 - No Email by default; 1 - Send email to the provided address |
 
 ## Process
 
-This script audits the locked account and stores it in the table based on the security event log 4740. This stores that information in the table for future record and shows it in the dataview.
+This script audits locked accounts and stores the information in a table based on the security event log 4740. It retains this information for future reference and displays it in the dataview.
 
 ## Output
 
 The location and method by which this script returns data.
 
-Ex:
+Examples:
 
 - Script log
 - plugin_proval_account_lock
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-
-

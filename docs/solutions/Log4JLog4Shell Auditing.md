@@ -8,6 +8,7 @@ tags: ['security', 'vulnerability']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 To present information about possible Log4Shell vulnerabilities and attacks on Automate agents.
@@ -22,16 +23,4 @@ To present information about possible Log4Shell vulnerabilities and attacks on A
 | [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../powershell/Import-Log4JTable.md>) | Agnostic     | Scrapes data from [this repo](https://raw.githubusercontent.com/NCSC-NL/log4shell/main/software/README.md) and stores it in a custom table. |
 | [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>) | Script       | This script is used to scan for possible vulnerabilities in a target system, saving information to EDFs for reporting. |
 | [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](<../cwa/dataviews/Log4J - Log4Shell - Detections.md>) | Dataview    | Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit. |
-| [CWM - Automate - Script - Log4J Remediation Residue Removal](<../cwa/scripts/Log4J Remediation Residue Removal.md>) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>) script including the `Everything` service. |
-
-
-
-
-
-
-
-
-
-
-
-
+| [CWM - Automate - Script - Log4J Remediation Residue Removal](<../cwa/scripts/Log4J Remediation Residue Removal.md>) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>) script, including the `Everything` service. |

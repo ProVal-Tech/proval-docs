@@ -8,9 +8,10 @@ tags: ['application', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Allows the uninstallation of Microsoft Office products via OffScrub. Accepted Versions: All, 2003, 2007, 2010, 2013, 2016, and C2R. Leaving the parameter blank will remove all installed versions.
+This document allows the uninstallation of Microsoft Office products via OffScrub. Accepted Versions: All, 2003, 2007, 2010, 2013, 2016, and C2R. Leaving the parameter blank will remove all installed versions.
 
 CW RMM implementation of [Invoke-OfficeScrub](<../../powershell/Invoke-OfficeScrub.md>) agnostic script.
 
@@ -36,13 +37,13 @@ CW RMM implementation of [Invoke-OfficeScrub](<../../powershell/Invoke-OfficeScr
 
 | Name    | Example                        | Accepted Values                                              | Required | Default | Type          | Description                                                                                   |
 |---------|--------------------------------|-------------------------------------------------------------|----------|---------|---------------|-----------------------------------------------------------------------------------------------|
-| Version | - All                          | - 2003- 2007- 2010- 2013- 2016- c2r- All | True     | All     | Text String   | Office Version to remove. Leaving it blank is equivalent to `All`.                          |
+| Version | - All                          | - 2003 - 2007 - 2010 - 2013 - 2016 - C2R - All             | True     | All     | Text String   | Office Version to remove. Leaving it blank is equivalent to `All`.                          |
 
 ![User Parameters](../../../static/img/Uninstall-Microsoft-Office/image_5.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Uninstall-Microsoft-Office/image_6.png)
 
@@ -121,7 +122,7 @@ if ( ($version -match 'All|//SVersion//S') -or ([String]::IsNullOrWhiteSpace($ve
         $parameters.Add('Office16', $true)
     }
     if ( $version -match 'C2R' ) {
-        $parameters.Add('Officec2r', $true)
+        $parameters.Add('OfficeC2R', $true)
     }
 }
 if ( !($parameters) ) {
@@ -161,7 +162,7 @@ if ($Parameters) {
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -206,15 +207,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

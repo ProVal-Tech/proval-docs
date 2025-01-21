@@ -8,12 +8,13 @@ tags: ['database', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script helps gathering a specific WiFi profile from the target machine based on SSID.  
-To be used before the @Apply WiFi Profile script against a machine with the target WiFi profile already set up.  
+This script helps gather a specific WiFi profile from the target machine based on the SSID.  
+It is to be used before the @Apply WiFi Profile script against a machine with the target WiFi profile already set up.  
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -21,32 +22,21 @@ Time Saved by Automation: 5 Minutes
 
 ## Variables
 
-@WifiProfile@ - Shows the data of the exported wifi profile
+@WifiProfile@ - Shows the data of the exported WiFi profile
 
 #### User Parameters
 
 | Name  | Example     | Required | Description                     |
 |-------|-------------|----------|---------------------------------|
-| SSID  | Guest_wifi  | True     | SSID of the wifi profile        |
+| SSID  | Guest_wifi  | True     | SSID of the WiFi profile        |
 
 ## Process
 
-- Creates the plugin_proval_wifi_profiles table if it does not exist.
+- Creates the `plugin_proval_wifi_profiles` table if it does not exist.
 - Runs the command to export the WiFi profile from the target machine.
-- Exports the profile to %ltsvcdir%/Wifiprofiles and writes the information to the database.
+- Exports the profile to `%ltsvcdir%/Wifiprofiles` and writes the information to the database.
 
 ## Output
 
 - Script log
-- Table plugin_proval_wifi_profiles
-
-
-
-
-
-
-
-
-
-
-
+- Table `plugin_proval_wifi_profiles`

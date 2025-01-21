@@ -8,6 +8,7 @@ tags: ['report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview can be used to audit the Maintenance Window applied to a Group or a Location.
@@ -17,18 +18,6 @@ This dataview can be used to audit the Maintenance Window applied to a Group or 
 | Column              | Description                                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------|
 | Path                | The complete path of the group or the name of the location.                                  |
-| Maint Window Name   | The name of the Maintenance window.                                                           |
+| Maint Window Name   | The name of the Maintenance Window.                                                           |
 | Maint Window Note   | Displays additional comments for a Maintenance Window.                                        |
-| Number Of Machines   | This is the total machine on which the Maintenance Window is applied.                        |
-
-
-
-
-
-
-
-
-
-
-
-
+| Number Of Machines   | The total number of machines on which the Maintenance Window is applied.                      |

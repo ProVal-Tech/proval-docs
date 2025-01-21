@@ -8,16 +8,17 @@ tags: ['sql']
 draft: false
 unlisted: false
 ---
+
 ## Steps
 
 ### 1.
-Ensure the presence of [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+Ensure the presence of the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and `△ Custom - Ticket Creation Computer - Failures Only` alert template.
 
 ### 2.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
 ### 3.
-Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)**' with the Groupid(s) of the relevant groups:  
+Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)**' with the Group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -89,7 +90,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ```
 
 ### 4.
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```
 INSERT INTO groupagents  
@@ -164,16 +165,3 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.
-
-
-
-
-
-
-
-
-
-
-
-
-

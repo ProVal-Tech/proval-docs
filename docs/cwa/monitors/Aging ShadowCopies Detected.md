@@ -8,30 +8,18 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will detect agents where shadow copies are not present or older than the system property value. @ProVal_ShadowCopyRemoveMaxInDays@
+This monitor will detect agents where shadow copies are not present or are older than the system property value, `@ProVal_ShadowCopyRemoveMaxInDays`.
 
 ## Dependencies
 
-- @ProVal_ShadowCopyRemoveMaxInDays - System Property.
-- [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)  
-  @ShadowCopy - Create [Global,Autofix] -- Autofix script
-- @plugin_proval_shadowcopystats - Custom Table
+- `@ProVal_ShadowCopyRemoveMaxInDays` - System Property.
+- [Shadow Copy - Audit Complete Statistics [DV]](../scripts/Shadow%20Copy%20-%20Audit%20Complete%20Statistics%20DV.md)  
+  `@ShadowCopy - Create [Global, Autofix]` -- Autofix script
+- `@plugin_proval_shadowcopystats` - Custom Table
 
 ## Target
 
-Windows Machines - Should be run on all Windows machines
-
-
-
-
-
-
-
-
-
-
-
-
-
+Windows Machines - This monitor should be run on all Windows machines.

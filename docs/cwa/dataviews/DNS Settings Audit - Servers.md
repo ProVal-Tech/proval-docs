@@ -8,9 +8,10 @@ tags: ['dns', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview displays the information for all the Windows servers present in the environment along with their DNS Addresses.  
+This dataview displays information for all the Windows servers present in the environment along with their DNS addresses.
 
 ## Columns
 
@@ -18,20 +19,7 @@ This dataview displays the information for all the Windows servers present in th
 |--------------------|------------------------------------|
 | Client_Name        | Name of the client.                |
 | Location_Name      | Name of the location.              |
-| Server_Name        | Name of the Server.                |
-| DNS_Settings       | DNS Addresses.                     |
+| Server_Name        | Name of the server.                |
+| DNS_Settings       | DNS addresses.                     |
 | Operating_System    | OS information of the server.      |
-| Last Contact       | Last Contact with RMM.             |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Contact       | Last contact with RMM.             |

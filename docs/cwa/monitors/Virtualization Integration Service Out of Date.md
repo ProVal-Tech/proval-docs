@@ -8,14 +8,15 @@ tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Implementation
 
-1. **Obtain the groupid(s)** of the group(s) that the remote monitor should be applied to.
+1. **Obtain the group ID(s)** of the group(s) that the remote monitor should be applied to.
 
-2. **Copy the following query** and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+2. **Copy the following query** and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups:  
    (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
-   ```
+   ```sql
    INSERT INTO groupagents 
    SELECT '' as `AgentID`,
    `groupid` as `GroupID`,
@@ -28,7 +29,7 @@ unlisted: false
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C://Windows//system32//cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq /'Update required/')} | Foreach-Object {Write-Host /"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/"}} catch {}"' as `DataOut`,
+   'C://Windows//system32//cmd.exe /c powershell.exe \"try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq /'Update required/')} | Foreach-Object {Write-Host /\"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/\"}} catch {}\"' as `DataOut`,
    '9' as `Comparor`,
    'IntegrationServicesState:' as `DataIn`,
    '' as `IDField`,
@@ -82,9 +83,9 @@ unlisted: false
    AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Hyper-V - Integration Service Out of Date')
    ```
 
-3. **An example of a query with a groupid:**
+3. **An example of a query with a group ID:**
 
-   ```
+   ```sql
    INSERT INTO groupagents 
    SELECT '' as `AgentID`,
    `groupid` as `GroupID`,
@@ -97,7 +98,7 @@ unlisted: false
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C://Windows//system32//cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq /'Update required/')} | Foreach-Object {Write-Host /"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/"}} catch {}"' as `DataOut`,
+   'C://Windows//system32//cmd.exe /c powershell.exe \"try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq /'Update required/')} | Foreach-Object {Write-Host /\"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/\"}} catch {}\"' as `DataOut`,
    '9' as `Comparor`,
    'IntegrationServicesState:' as `DataIn`,
    '' as `IDField`,
@@ -152,14 +153,3 @@ unlisted: false
    ```
 
 4. **Locate your remote monitor** by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-

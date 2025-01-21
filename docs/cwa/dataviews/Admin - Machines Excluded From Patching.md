@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview helps you audit machines which are excluded from patching inside automate.
+This dataview helps you audit machines that are excluded from patching within Automate.
 
 ## Dependencies
 
@@ -26,17 +27,5 @@ None
 | Computer               | The computer name of the detected machine                   |
 | OS                     | The operating system of the detected machine                |
 | Last Contact           | The last check-in time of the detected machine              |
-| Install Policy         | The Install policy that is applied on the machine           |
-| Onboarding Completed    | The status of onboarding, whether the machine has completed onboarding or not |
-
-
-
-
-
-
-
-
-
-
-
-
+| Install Policy         | The install policy that is applied to the machine           |
+| Onboarding Completed    | The status of onboarding, indicating whether the machine has completed onboarding or not |

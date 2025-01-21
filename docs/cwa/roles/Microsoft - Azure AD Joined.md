@@ -8,24 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role is detected on machines that are Azure AD joined.
+This document describes how to detect machines that are Azure AD joined.
 
 ## Settings
 
 | Detection String                                                                                                                                                                                                                                           | Comparator | Result | Applicable OS |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
-| `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : YES*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]"}@%` | Contains   | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
+| `{%@powershell.exe -nologo -noprofile -command \"$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : YES*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]\"}@%` | Contains   | True   | Windows        |

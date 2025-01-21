@@ -8,9 +8,10 @@ tags: ['firewall', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script runs a standard shell command to disable Windows Firewall for all profiles i.e. public, domain, and private, and then verifies itself inside of the script.
+This script runs a standard shell command to disable the Windows Firewall for all profiles, namely public, domain, and private, and subsequently verifies its execution within the script.
 
 ## Sample Run
 
@@ -18,20 +19,8 @@ The script runs a standard shell command to disable Windows Firewall for all pro
 
 ## Process
 
-The script will run if the Windows Firewall is enabled on the machine. The script will run a standard shell command to disable Windows Firewall for all profiles i.e. public, domain, and private, and then verifies itself inside of the script.
+The script will execute if the Windows Firewall is enabled on the machine. It runs a standard shell command to disable the Windows Firewall for all profiles—public, domain, and private—and then verifies its execution within the script.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

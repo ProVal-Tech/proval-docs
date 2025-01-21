@@ -8,9 +8,10 @@ tags: ['encryption', 'logging', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-An Automate implementation of the agnostic script [SEC - Encryption - Agnostic - Enable-TPM](<../../powershell/Enable-TPM.md>). Initializes Tpm as a part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM to be used. A restart may be required to initialize TPM.
+An Automate implementation of the agnostic script [SEC - Encryption - Agnostic - Enable-TPM](<../../powershell/Enable-TPM.md>) initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use. A restart may be required to initialize TPM.
 
 ## Sample Run
 
@@ -24,26 +25,14 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 
 | Name                     | Example          | Required | Description                                                                                                                                                       |
 |--------------------------|------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AllowClear               | True or False     | True     | True to pass the switch to the agnostic script, False to suppress. Default value is True.                                                                        |
-| AllowPhysicalPresence     | True or False     | True     | True to pass the switch to the agnostic script, False to suppress. Default value is False.                                                                        |
-| AllowRestart             | True or False     | True     | True to pass the switch to the agnostic script, False to suppress. Default value is False. Setting this parameter as True will reboot the computer if it's necessary to initialize TPM. |
+| AllowClear               | True or False     | True     | Set to True to pass the switch to the agnostic script; set to False to suppress. Default value is True.                                                          |
+| AllowPhysicalPresence     | True or False     | True     | Set to True to pass the switch to the agnostic script; set to False to suppress. Default value is False.                                                         |
+| AllowRestart             | True or False     | True     | Set to True to pass the switch to the agnostic script; set to False to suppress. Default value is False. Setting this parameter to True will reboot the computer if it's necessary to initialize TPM. |
 
 ## Process
 
-- Executes the Agnostic script and writes the Informational Logs in Automate.
+- Executes the agnostic script and writes the informational logs in Automate.
 
 ## Output
 
-- Script Logs
-
-
-
-
-
-
-
-
-
-
-
-
+- Script logs

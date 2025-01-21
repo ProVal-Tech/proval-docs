@@ -8,11 +8,12 @@ tags: ['backup', 'database', 'recovery', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script runs against a system that does not have the Target Restore Point EDF set and it will collect all available restore points. If run on a system with the EDF set (EDF: Available restore point) it will attempt to restore a system.
+This script runs against a system that does not have the Target Restore Point EDF set and collects all available restore points. If run on a system with the EDF set (EDF: Available restore point), it will attempt to restore the system.
 
-Time Saved by Automation: 30 Minutes
+**Time Saved by Automation:** 30 Minutes
 
 ## Sample Run
 
@@ -24,26 +25,14 @@ Time Saved by Automation: 30 Minutes
 
 ## Variables
 
-| Variable Name | Description |
-|---------------|-------------|
+| Variable Name | Description                                          |
+|---------------|------------------------------------------------------|
 | RestPoint     | This variable will store the result of the EDF: Available restore point |
 
 ## Process
 
-This script will create a Custom Table `plugin_proval_restore_points` if it doesn't exist. The script will then check the EDF: Available restore point value and will gather the information regarding the restore points. If the script is run against the machine where EDF: Available restore point is not set it will update the data in the Custom table using SQL queries. And if the EDF is set it will start restoring the system using PowerShell.
+This script will create a Custom Table `plugin_proval_restore_points` if it doesn't exist. The script will then check the EDF: Available restore point value and gather information regarding the restore points. If the script is run on a machine where the EDF: Available restore point is not set, it will update the data in the Custom table using SQL queries. If the EDF is set, it will start restoring the system using PowerShell.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

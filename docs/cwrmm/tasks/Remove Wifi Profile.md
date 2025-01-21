@@ -8,9 +8,10 @@ tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script removes the specified Wifi profile from the system. A brief summary of what this script is used for and any important notes about how to run the script. CW RMM implementation of the agnostic script [Remove-WifiProfile](<../../powershell/Remove-WifiProfile.md>).
+This script removes the specified Wifi profile from the system. It provides a brief overview of the script's purpose and important notes on how to run it. This is the ConnectWise RMM implementation of the agnostic script [Remove-WifiProfile](<../../powershell/Remove-WifiProfile.md>).
 
 ## Sample Run
 
@@ -32,7 +33,7 @@ This script removes the specified Wifi profile from the system. A brief summary 
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Step 1](../../../static/img/Remove-Wifi-Profile/image_5.png)  
 ![Task Creation Step 2](../../../static/img/Remove-Wifi-Profile/image_6.png)  
@@ -64,7 +65,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Step 1](../../../static/img/Remove-Wifi-Profile/image_11.png)  
 
@@ -79,13 +80,13 @@ Search and select the `PowerShell Script` function.
 ![Row 1 Function Step 1](../../../static/img/Remove-Wifi-Profile/image_13.png)  
 ![Row 1 Function Step 2](../../../static/img/Remove-Wifi-Profile/image_14.png)  
 
-The following function will pop up on the screen:  
+The following function will pop up on the screen:
 
 ![Row 1 Function Step 3](../../../static/img/Remove-Wifi-Profile/image_15.png)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```powershell
 #region parameters
 $ProfileName = '@ProfileName@'
 if ( [String]::IsNullOrWhiteSpace($ProfileName) -or $Title -match '/SProfileName/S' ) {
@@ -127,11 +128,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -154,7 +155,7 @@ Search and select the `Script Log` function.
 
 ![Row 2 Function Step 3](../../../static/img/Remove-Wifi-Profile/image_19.png)  
 
-The following function will pop up on the screen:  
+The following function will pop up on the screen:
 
 ![Row 2 Function Step 4](../../../static/img/Remove-Wifi-Profile/image_20.png)  
 
@@ -173,15 +174,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
 
 

@@ -8,10 +8,11 @@ tags: ['security', 'vulnerability']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This remote monitor is designed to check whether the SMB signing is enabled or not.  
-If SMB Signing is disabled on the agent then it detects it and applies the autofix.
+This remote monitor is designed to check whether SMB signing is enabled.  
+If SMB signing is disabled on the agent, it detects this and applies the autofix.
 
 ## Details
 
@@ -32,22 +33,10 @@ If SMB Signing is disabled on the agent then it detects it and applies the autof
 
 ## Ticketing
 
-**_The ticket part is handled by the script.  
-Refer to the script documentation [CWA Script - CVE-2016-2115 - SMB Signing](<../scripts/CVE-2013-3900 WinVerifyTrust Signature Vulnerability.md>) on how the ticketing will be set up._**
+**_The ticketing part is handled by the script.  
+Refer to the script documentation [CWA Script - CVE-2016-2115 - SMB Signing](<../scripts/CVE-2013-3900 WinVerifyTrust Signature Vulnerability.md>) for details on how the ticketing will be set up._**
 
 ## Implementation
 
-Please follow the below implementation document to install this content:
+Please follow the implementation document below to install this content:
 - [Import - Remote Monitor - SMB Signing Detection](<./Import - Remote Monitor - SMB Signing Detection.md>)
-
-
-
-
-
-
-
-
-
-
-
-

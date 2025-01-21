@@ -8,13 +8,14 @@ tags: ['backup', 'database']
 draft: false
 unlisted: false
 ---
+
 ## Steps to Apply Remote Monitor
 
-### 1.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+### 1. Obtain Group ID(s)
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
-### 2.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+### 2. Construct SQL Query
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -74,6 +75,16 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -90,11 +101,11 @@ WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
 ```
 
 ```
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Backup Exec - No successful backups in 3 days') ;
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Backup Exec - No successful backups in 3 days');
 ```
 
-### 3.
-An example of a query with a groupid:
+### 3. Example Query
+An example of a query with a group ID:
 
 ```
 INSERT INTO groupagents 
@@ -153,6 +164,20 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -166,23 +191,11 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (12)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Backup Exec - No successful backups in 3 days') ;
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Backup Exec - No successful backups in 3 days');
 ```
 
-### 4.
+### 4. Execute Your Query
 Now execute your query from a RAWSQL monitor set.
 
-### 5.
+### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-
-

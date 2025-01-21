@@ -8,6 +8,7 @@ tags: ['database', 'report', 'software']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
 This dataview displays Adobe License information.
@@ -29,7 +30,7 @@ This dataview displays Adobe License information.
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   t.`Client Name`, 
   t.`Location Name`, 
@@ -78,17 +79,3 @@ FROM
       c.computerid
   ) AS t
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

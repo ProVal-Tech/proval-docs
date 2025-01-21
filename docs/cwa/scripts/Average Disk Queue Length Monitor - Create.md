@@ -8,11 +8,12 @@ tags: ['disk', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This document outlines the process for creating Remote Monitors for Average Disk Queue Length on Windows machines. The creation of these remote monitors is governed by system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs). These elements are further detailed within this document.
 
-The script creates remote monitors that trigger an alert when the Average of **X** samples collected in a period of time of **Avg. Disk Queue Length** on the target machine exceeds a certain threshold. The thresholds can be configured in the system properties, which are elaborated in the **System Properties** section of this document.
+The script creates remote monitors that trigger an alert when the average of **X** samples collected over a period of time for **Avg. Disk Queue Length** on the target machine exceeds a certain threshold. The thresholds can be configured in the system properties, which are elaborated in the **System Properties** section of this document.
 
 **Note of Caution**: The remote monitors created by this script utilize PowerShell for monitoring. Therefore, its functionality is not guaranteed on any computer running a version of PowerShell older than 5. Please ensure your systems are updated to at least PowerShell version 5 for optimal performance.
 
@@ -22,9 +23,9 @@ A new Computer-Level EDF `ADQL - Physical Disk Count` has been introduced. Updat
 ![Image 1](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_1.png)  
 ![Image 2](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_2.png)
 
-## Before you proceed
+## Before You Proceed
 
-The remote monitor created by this script utilizes [Get-AvgDiskQueueLength](<../../powershell/Get-AvgDiskQueueLength.md>) agnostic script, which is using the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
+The remote monitor created by this script utilizes the [Get-AvgDiskQueueLength](<../../powershell/Get-AvgDiskQueueLength.md>) agnostic script, which uses the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
 
 ### Overview
 
@@ -34,9 +35,9 @@ If the Avg. Disk Queue Length is greater than 2 per hard disk for a prolonged pe
 
 ### Troubleshooting
 
-Having an excess of files that are being accessed will seriously increase your Avg. Disk Queue Length, resulting in a disk bottleneck. Say you have 1,000 1MB files. They will take up more storage space and require more processing than a single 1GB file due to the longer time spent opening and closing all the files. To consolidate the multitude of small files, you may want to consider compressing them into an archive if possible.
+Having an excess of files being accessed will significantly increase your Avg. Disk Queue Length, resulting in a disk bottleneck. For example, if you have 1,000 1MB files, they will take up more storage space and require more processing than a single 1GB file due to the longer time spent opening and closing all the files. To consolidate the multitude of small files, you may want to consider compressing them into an archive if possible.
 
-However, this may be time-consuming and not the root issue. If your disk performance is poor, your options are to upgrade your disk, hard drive controller, or implement stripe set. Use the following formula to find the Avg. Disk Queue Time: **Avg. Queue Time = Disk Queue Length x Avg. Disk sec/Transfer.** This will provide you with a relative performance measurement and should be compared with other hard disk drives in your system. The higher the number of requests waiting in the command queue, the slower the disk performance.
+However, this may be time-consuming and not the root issue. If your disk performance is poor, your options are to upgrade your disk, hard drive controller, or implement a stripe set. Use the following formula to find the Avg. Disk Queue Time: **Avg. Queue Time = Disk Queue Length x Avg. Disk sec/Transfer.** This will provide you with a relative performance measurement and should be compared with other hard disk drives in your system. The higher the number of requests waiting in the command queue, the slower the disk performance.
 
 ## Implementation
 
@@ -52,7 +53,7 @@ However, this may be time-consuming and not the root issue. If your disk perform
    ![Image](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_3.png)
 
 4. **Configure System Properties and EDFs**
-   - Navigate to the **System Dashboard --> Config --> Configurations --> Properties**.
+   - Navigate to **System Dashboard --> Config --> Configurations --> Properties**.
    - Find the properties beginning with `ADQL_Monitoring`.  
    ![Image](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_4.png)  
    - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
@@ -75,19 +76,19 @@ However, this may be time-consuming and not the root issue. If your disk perform
 
 | Name                                   | Example       | Required | Description                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------------------|---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ADQL_Monitoring_Group_Ids             | 2,3,855,856   | True     | The script will create remote monitors for the machines that belong to the groups identified by the group IDs specified in this system property. The monitor set will not be associated with the groups themselves but with the individual machines. Multiple IDs can be included by separating them with a comma. The default value is ‘0’.**Note:** If this property is set to ‘0’, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group IDs are defined in the system properties. |
-| ADQL_Monitoring_Server_Only           | 0             | False    | Setting this system property to '1' will limit the monitor set creation to the Windows Servers only. The default value is '0'. Also, the script will remove the monitor set created for the Windows Workstations after setting this property to '1'.                                                                                              |
-| ADQL_Monitoring_Workstation_Only       | 0             | False    | Setting this system property to '1' will limit the monitor set creation to the Windows Workstations only. The default value is '0'. Also, the script will remove the monitor set created for the Windows Servers after setting this property to '1'.                                                                                                  |
-| ADQL_Monitoring_Exclude_Virtual_Machines | 0             | False    | Setting this system property to '1' will limit the monitor set creation to the Physical Windows Machines only. The default value is '0'. Also, the script will remove the monitor set created for the Virtual Machines after setting this property to '1'.                                                                                               |
+| ADQL_Monitoring_Group_Ids             | 2,3,855,856   | True     | The script will create remote monitors for the machines that belong to the groups identified by the group IDs specified in this system property. The monitor set will not be associated with the groups themselves but with the individual machines. Multiple IDs can be included by separating them with a comma. The default value is ‘0’. **Note:** If this property is set to ‘0’, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group IDs are defined in the system properties. |
+| ADQL_Monitoring_Server_Only           | 0             | False    | Setting this system property to '1' will limit the monitor set creation to Windows Servers only. The default value is '0'. Also, the script will remove the monitor set created for the Windows Workstations after setting this property to '1'.                                                                                              |
+| ADQL_Monitoring_Workstation_Only       | 0             | False    | Setting this system property to '1' will limit the monitor set creation to Windows Workstations only. The default value is '0'. Also, the script will remove the monitor set created for the Windows Servers after setting this property to '1'.                                                                                                  |
+| ADQL_Monitoring_Exclude_Virtual_Machines | 0             | False    | Setting this system property to '1' will limit the monitor set creation to Physical Windows Machines only. The default value is '0'. Also, the script will remove the monitor set created for the Virtual Machines after setting this property to '1'.                                                                                               |
 | ADQL_Monitoring_Interval               | 900           | True     | Controls the generated Remote Monitor run time interval. The default is `900` seconds.                                                                                                                                                                                                                                                                         |
 | ADQL_Monitoring_Server_Samples         | 4             | True     | This property determines the number of samples to calculate the average for servers. The remote monitor will perform the calculations after generating the number of samples stored in this system property. The default value is `4`. The remote monitor will produce a single sample for each run. Therefore, by setting the `Interval` to `900` and `Samples` to `4`, the monitoring will analyze the average of the readings gathered from the preceding 900 * 4 = 3600 seconds (1 hour). |
 | ADQL_Monitoring_Workstation_Samples     | 8             | True     | This property determines the number of samples to calculate the average for workstations. The remote monitor will perform the calculations after generating the number of samples stored in this system property. The default value is `8`.                                                                                                                                               |
-| ADQL_Monitoring_Server_Per_Disk_Threshold | 2           | True     | The allowed `Avg. Disk Queue Length` per disk for servers is stored in this property. If the average reading for `Avg. Disk Queue Length` is greater than or equal to the **Number of Disks * The value stored in this System Property**, the monitor set will trigger a failure. The default value for this System Property is `2`.**Example:**Interval = 900Samples = 4Per_Disk_Threshold = 2Number of Hard Disks = 2According to this configuration, the monitor set will be triggered if the average value of the `Avg. Disk Queue Length` for the server within an hour (900 * 4 = 3600 seconds) exceeds or equals four (2 * 2). |
+| ADQL_Monitoring_Server_Per_Disk_Threshold | 2           | True     | The allowed `Avg. Disk Queue Length` per disk for servers is stored in this property. If the average reading for `Avg. Disk Queue Length` is greater than or equal to the **Number of Disks * The value stored in this System Property**, the monitor set will trigger a failure. The default value for this System Property is `2`. **Example:** Interval = 900, Samples = 4, Per_Disk_Threshold = 2, Number of Hard Disks = 2. According to this configuration, the monitor set will be triggered if the average value of the `Avg. Disk Queue Length` for the server within an hour (900 * 4 = 3600 seconds) exceeds or equals four (2 * 2). |
 | ADQL_Monitoring_Workstation_Per_Disk_Threshold | 2       | True     | The allowed `Avg. Disk Queue Length` per disk for workstations is stored in this property. If the average reading for `Avg. Disk Queue Length` is greater than or equal to the **Number of Disks * The value stored in this System Property**, the monitor set will trigger a failure. The default value for this System Property is `2`.                                                                                                                                                     |
-| ADQL_Monitoring_Server_AlertTemplate   | 1             | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the servers. The default value is '1'. i.e., `Default - Do Nothing.` Navigate to the **System Dashboard --> Management --> Alert Templates** to find the Id of the required alert template. It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
-| ADQL_Monitoring_Workstation_AlertTemplate | 1          | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the workstations. The default value is '1'. i.e., `Default - Do Nothing.` It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
-| ADQL_Monitoring_Server_TicketCategory    | 124         | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Servers. The default value is '0'. i.e., `\<Not Specified>`. Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate. Navigate to the **System Dashboard --> Config --> Information Base Categories** to find the Id of the required ticket category. |
-| ADQL_Monitoring_Workstation_TicketCategory | 125       | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Workstations. The default value is '0'. i.e., `\<Not Specified>`.                                                                                                                                                                                                                                   |
+| ADQL_Monitoring_Server_AlertTemplate   | 1             | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the servers. The default value is '1', i.e., `Default - Do Nothing.` Navigate to the **System Dashboard --> Management --> Alert Templates** to find the Id of the required alert template. It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
+| ADQL_Monitoring_Workstation_AlertTemplate | 1          | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the workstations. The default value is '1', i.e., `Default - Do Nothing.` It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
+| ADQL_Monitoring_Server_TicketCategory    | 124         | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Servers. The default value is '0', i.e., `\\<Not Specified>`. Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate. Navigate to the **System Dashboard --> Config --> Information Base Categories** to find the Id of the required ticket category. |
+| ADQL_Monitoring_Workstation_TicketCategory | 125       | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Workstations. The default value is '0', i.e., `\\<Not Specified>`.                                                                                                                                                                                                                                   |
 
 ## Client-Level EDF
 
@@ -126,7 +127,7 @@ However, this may be time-consuming and not the root issue. If your disk perform
 If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolonged period of time, it may produce a bottlenecked system. If you have a RAID system with 8 disks, the Avg. Disk Queue Length should not exceed 16. Please investigate the issue and take appropriate actions to address the root cause.  
 %RESULT%`  
 
-**Sample Ticket:** The ticket illustrated here was created by setting the samples to '2' and the Allowed value for average disk queue length per disk to '0'. However, it's important to note that this example is purely for demonstration purposes.  
+**Sample Ticket:** The ticket illustrated here was created by setting the samples to '2' and the allowed value for average disk queue length per disk to '0'. However, it's important to note that this example is purely for demonstration purposes.  
 ![Sample Ticket 1](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_6.png)  
 ![Sample Ticket 2](../../../static/img/Average-Disk-Queue-Length-Monitor---Create/image_7.png)  
 
@@ -140,15 +141,3 @@ If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolong
 ## Output
 
 - Remote Monitors
-
-
-
-
-
-
-
-
-
-
-
-

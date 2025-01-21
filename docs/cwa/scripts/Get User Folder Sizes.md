@@ -8,11 +8,12 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script runs PowerShell to fetch the size (in MB) of every user folder found on a machine.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -21,22 +22,9 @@ Time Saved by Automation: 15 Minutes
 ## Process
 
 - Creates a custom table [plugin_proval_userfoldersizes](<../tables/plugin_proval_userfoldersizes.md>) in the Labtech Database if it doesn't already exist.
-- Runs PowerShell script to fetch the folder size of every user profile.
-- Inserts the value in the above table.
+- Runs the PowerShell script to fetch the folder size of every user profile.
+- Inserts the values into the above table.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

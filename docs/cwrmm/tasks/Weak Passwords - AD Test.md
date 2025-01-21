@@ -8,9 +8,10 @@ tags: ['active-directory', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task utilizes the agnostic script [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) to test the hashed credentials in AD against a known compromised or weak list.
+This task utilizes the agnostic script [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) to test the hashed credentials in Active Directory against a known compromised or weak password list.
 
 ## Sample Run
 
@@ -27,19 +28,19 @@ This task utilizes the agnostic script [Test-WeakCredentials](<../../powershell/
 
 | Name          | Example | Accepted Values                     | Required | Default | Type   | Description                                                                                     |
 |---------------|---------|-------------------------------------|----------|---------|--------|-------------------------------------------------------------------------------------------------|
-| `PWDictSize`  | Small   | 'Tiny', 'Small', 'Medium', 'Large' | False    | Medium  | String | This Parameter specifies the Password dictionary you wish to query. It is a validated set of 'Tiny', 'Small', 'Medium', 'Large' |
-| `Force`       | All     | 'All', 'Text', 'Zipped'            | False    |         | String | This Parameter accepts any combination of its validated set. It is a validated set of 'All', 'Text', 'Zipped' |
+| `PWDictSize`  | Small   | 'Tiny', 'Small', 'Medium', 'Large' | False    | Medium  | String | This parameter specifies the password dictionary you wish to query. It is a validated set of 'Tiny', 'Small', 'Medium', 'Large'. |
+| `Force`       | All     | 'All', 'Text', 'Zipped'            | False    |         | String | This parameter accepts any combination of its validated set. It is a validated set of 'All', 'Text', 'Zipped'. |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Create Script](../../../static/img/Weak-Passwords---AD-Test/image_4.png)
 
 ![Script Editor](../../../static/img/Weak-Passwords---AD-Test/image_5.png)
 
 **Name:** Weak Passwords - AD Test  
-**Description:** This task utilizes the agnostic script Test-WeakCredentials to test the hashed credentials in AD against a known compromised or weak list.  
+**Description:** This task utilizes the agnostic script Test-WeakCredentials to test the hashed credentials in AD against a known compromised or weak password list.  
 **Category:** Custom
 
 ![Category](../../../static/img/Weak-Passwords---AD-Test/image_6.png)
@@ -60,7 +61,7 @@ This screen will appear.
 - Set Default Value as `Medium`
 - Click the `Save` button
 - ![Save Button](../../../static/img/Weak-Passwords---AD-Test/image_9.png)
-- It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
+- It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 ![Confirm](../../../static/img/Weak-Passwords---AD-Test/image_10.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
@@ -73,13 +74,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Click the `Confirm` button to create the parameter.
 ![Confirm Another Parameter](../../../static/img/Weak-Passwords---AD-Test/image_12.png)
 
-Parameters will look like as shown below:
+Parameters will look like the following:
 
 ![Parameters](../../../static/img/Weak-Passwords---AD-Test/image_13.png)
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Weak-Passwords---AD-Test/image_14.png)
 
@@ -119,7 +120,7 @@ if (!($Cleanup)) {
 } else {
     $Parameters = @{
         PWDictSize = $PWDictSize
-        Cleanup = $cleanup
+        Cleanup = $Cleanup
     }
 }
 
@@ -130,7 +131,6 @@ $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
 $WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
 $PS1Path = "$WorkingDirectory/$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
 $LogPath = "$WorkingDirectory/$ProjectName-log.txt"
 $ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
 #endregion
@@ -153,7 +153,7 @@ if (!(Test-Path -Path $PS1Path)) {
 $TheseResults = & "$PS1Path" @Parameters 2>$Null 6>$Null
 
 if (!$TheseResults) {
-    if ( $ErrorLogPath ) {
+    if ($ErrorLogPath) {
         $errorContent = Get-Content $ErrorLogPath -ErrorAction SilentlyContinue
         throw $($errorContent | Out-String)
     }
@@ -188,7 +188,7 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 $output = '%output%'
 $WeakPasswordCount = $($($output -split '/|')[1] -split ':')[1]
-if ($WeakPasswordCount  -match '[1-9]') {return $WeakPasswordCount } else {return 'No weak password Found'}
+if ($WeakPasswordCount -match '[1-9]') { return $WeakPasswordCount } else { return 'No weak password found' }
 ```
 
 ![Row 3](../../../static/img/Weak-Passwords---AD-Test/image_18.png)
@@ -197,27 +197,27 @@ if ($WeakPasswordCount  -match '[1-9]') {return $WeakPasswordCount } else {retur
 
 ![Row 4 Logic](../../../static/img/Weak-Passwords---AD-Test/image_19.png)
 
-There will be two sections If part and Else part
+There will be two sections: If part and Else part.
 
 ![Row 4 Else](../../../static/img/Weak-Passwords---AD-Test/image_20.png)
 
 ### Row 4a Condition: Output Contains
 
-In IF part, Enter `password Found` in the right box of the "Output Contains" Part.
+In the IF part, enter `password found` in the right box of the "Output Contains" part.
 
 ![Row 4a Condition](../../../static/img/Weak-Passwords---AD-Test/image_21.png)
 
 ### Row 4b Function: Set Custom Field
 
-Add a new row by clicking on Add row button. Set Custom Field 'Weak Password Count' to 'NA'
+Add a new row by clicking on the Add row button. Set Custom Field 'Weak Password Count' to 'NA'.
 
 ![Row 4b](../../../static/img/Weak-Passwords---AD-Test/image_22.png)
 
-### Row 4C Function: Set Custom Field
+### Row 4c Function: Set Custom Field
 
-Add a new row by clicking on the Add row button in the ELSE part. Set Custom Field `Weak Password Count` to `%output%`
+Add a new row by clicking on the Add row button in the ELSE part. Set Custom Field `Weak Password Count` to `%output%`.
 
-![Row 4C](../../../static/img/Weak-Passwords---AD-Test/image_23.png)
+![Row 4c](../../../static/img/Weak-Passwords---AD-Test/image_23.png)
 
 ### Row 5: Function: PowerShell Script
 
@@ -234,7 +234,7 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 $output = '%output%'
 $duplicatePasswordCount = $($($output -split '/|')[0] -split ':')[1]
-if ($duplicatePasswordCount  -match '[1-9]') {return $duplicatePasswordCount } else {return 'No Duplicate Password found'}
+if ($duplicatePasswordCount -match '[1-9]') { return $duplicatePasswordCount } else { return 'No duplicate password found' }
 ```
 
 ![Row 5 Result](../../../static/img/Weak-Passwords---AD-Test/image_24.png)
@@ -243,27 +243,27 @@ if ($duplicatePasswordCount  -match '[1-9]') {return $duplicatePasswordCount } e
 
 ![Row 6 Logic](../../../static/img/Weak-Passwords---AD-Test/image_25.png)
 
-There will be two sections If part and Else part
+There will be two sections: If part and Else part.
 
 ![Row 6 Else](../../../static/img/Weak-Passwords---AD-Test/image_26.png)
 
 ### Row 6a Condition: Output Contains
 
-In IF part, Enter `password Found` in the right box of the "Output Contains" Part.
+In the IF part, enter `password found` in the right box of the "Output Contains" part.
 
 ![Row 6a Condition](../../../static/img/Weak-Passwords---AD-Test/image_21.png)
 
 ### Row 6b Function: Set Custom Field
 
-Add a new row by clicking on Add row button. Set Custom Field `Duplicate Password Count` to `NA`
+Add a new row by clicking on the Add row button. Set Custom Field `Duplicate Password Count` to `NA`.
 
 ![Row 6b](../../../static/img/Weak-Passwords---AD-Test/image_27.png)
 
-### Row 6C Function: Set Custom Field
+### Row 6c Function: Set Custom Field
 
-Add a new row by clicking on the Add row button in the ELSE part. Set Custom Field `Duplicate Password Count` to `%output%`
+Add a new row by clicking on the Add row button in the ELSE part. Set Custom Field `Duplicate Password Count` to `%output%`.
 
-![Row 6C](../../../static/img/Weak-Passwords---AD-Test/image_28.png)
+![Row 6c](../../../static/img/Weak-Passwords---AD-Test/image_28.png)
 
 ## Completed Task
 
@@ -271,27 +271,14 @@ Add a new row by clicking on the Add row button in the ELSE part. Set Custom Fie
 
 ## Implementation
 
-This task has to be scheduled on [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on the [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
-Search for Weak Passwords - AD Test  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
+Search for Weak Passwords - AD Test.  
+Then click on Schedule and provide the parameters details as necessary for the script completion.
 
 ![Implementation](../../../static/img/Weak-Passwords---AD-Test/image_30.png)
 
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-
-

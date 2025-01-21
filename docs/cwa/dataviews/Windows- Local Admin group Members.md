@@ -8,13 +8,14 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview helps you audit local admin members with the help of a script @Get Local admin group members.
+The dataview helps you audit local admin members with the assistance of a script to retrieve local admin group members.
 
 ## Dependencies
 
-- @Get Local admin group members
+- Script to get local admin group members
 
 ## Columns
 
@@ -23,16 +24,3 @@ The dataview helps you audit local admin members with the help of a script @Get 
 | Client                     | Displays the name of the client           |
 | Computer Name              | Displays the name of the computer         |
 | Local Admin Group Members   | Displays the local admin group members     |
-
-
-
-
-
-
-
-
-
-
-
-
-

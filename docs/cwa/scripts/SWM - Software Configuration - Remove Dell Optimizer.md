@@ -8,15 +8,16 @@ tags: ['recovery', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to remove the `Dell Optimizer` application from the Dell computers. The computer needs to be restarted to remove the application completely.  
+The purpose of the script is to remove the `Dell Optimizer` application from Dell computers. The computer needs to be restarted to remove the application completely.  
 
 **Note:** The script will not reboot the computer unless the user parameter `Reboot` is set to `1`.
 
 ## Sample Run
 
-Set the value for the user parameter `Reboot` to `1` to forcefully restart the computer post uninstalling the application.  
+Set the value for the user parameter `Reboot` to `1` to forcefully restart the computer after uninstalling the application.  
 ![Sample Run 1](../../../static/img/SWM---Software-Configuration---Remove-Dell-Optimizer/image_1.png)  
 
 Leave the parameter blank to restart the computer manually.  
@@ -26,20 +27,9 @@ Leave the parameter blank to restart the computer manually.
 
 | Name   | Example | Required | Description                                                                                     |
 |--------|---------|----------|-------------------------------------------------------------------------------------------------|
-| Reboot | 1       | False    | Set it to 1 to restart the computer after removing the application. Leave it blank to restart the computer later/manually. |
+| Reboot | 1       | False    | Set it to `1` to restart the computer after removing the application. Leave it blank to restart the computer later/manually. |
 
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
 

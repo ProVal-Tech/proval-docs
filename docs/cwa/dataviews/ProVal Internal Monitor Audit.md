@@ -8,13 +8,14 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Lists all the internal monitors which contains 'proval' or 'custom' in their names. It depicts their sync status with ProSync plugin. It also details the last scan, fail count and the groups id it is applied for the monitor.
+This document lists all the internal monitors that contain 'proval' or 'custom' in their names. It depicts their synchronization status with the ProSync plugin and details the last scan time, failure count, and the group IDs to which each monitor is applied.
 
 ## Dependencies
 
-plugin_prosync_monitors
+- plugin_prosync_monitors
 
 ## Columns
 
@@ -22,10 +23,10 @@ plugin_prosync_monitors
 |------------------------------|-------------------------------------------------------|
 | Monitor ID                   | Monitor ID                                           |
 | Monitor Name                 | Name of the monitor.                                 |
-| DriveID                      | Group IDs to which internal monitor is applied to.   |
-| Synced In ProVal Plugin      | Is script synced with prosync plugin or not.        |
-| Last Scan                    | Last time monitor ran in the environment.            |
-| Fail Count                   | Total number of times monitor failed in the environment. |
+| DriveID                      | Group IDs to which the internal monitor is applied.  |
+| Synced In ProVal Plugin      | Indicates whether the script is synced with the ProSync plugin. |
+| Last Scan                    | The last time the monitor ran in the environment.    |
+| Fail Count                   | Total number of times the monitor has failed in the environment. |
 | GUID                         | Script GUID                                          |
 | Agent Default GUID           | Script Default GUID                                  |
 
@@ -34,4 +35,3 @@ plugin_prosync_monitors
 - plugin_prosync_monitors
 - agents
 - h_agents
-

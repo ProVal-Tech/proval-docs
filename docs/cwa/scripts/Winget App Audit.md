@@ -8,6 +8,7 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script conducts an audit of the computer for applications supported by Winget and stores the information in a custom table called [pvl_winget_audit](<../tables/pvl_winget_audit.md>). It retrieves data for both system-level and user-level applications. However, user-level application data will not be retrieved if there are no logged-in users on the computer.
@@ -24,10 +25,10 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## Sample Run
 
-First Run: Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table used by the solution.  
+**First Run:** Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table used by the solution.  
 ![First Run](../../../static/img/Winget-App-Audit/image_1.png)
 
-Regular execution:  
+**Regular Execution:**  
 ![Regular Execution](../../../static/img/Winget-App-Audit/image_2.png)
 
 ## Dependencies
@@ -56,16 +57,3 @@ Regular execution:
 - Script log
 - Custom table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

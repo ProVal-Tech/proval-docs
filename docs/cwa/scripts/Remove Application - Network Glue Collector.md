@@ -8,9 +8,10 @@ tags: ['logging', 'ticketing', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is built to perform the Network Glue Collector uninstallation on demand or in conjunction with the offboarding script.
+This script is built to perform the uninstallation of the Network Glue Collector on demand or in conjunction with the offboarding script.
 
 ## Sample Run
 
@@ -18,7 +19,7 @@ This script is built to perform the Network Glue Collector uninstallation on dem
 
 ## Dependencies
 
-[https://proval.itglue.com/5078775/docs/12578871](https://proval.itglue.com/5078775/docs/12578871)
+[Documentation Link](https://proval.itglue.com/5078775/docs/12578871)
 
 ## Variables
 
@@ -28,12 +29,12 @@ This script is built to perform the Network Glue Collector uninstallation on dem
 | WorkingDirectory  | C:/ProgramData/_automation/script/Remove-Application          |
 | PS1Log           | C:/ProgramData/_automation/script/Remove-Application/Remove-Application-log.txt |
 
-#### Global Parameters
+### Global Parameters
 
 | Name            | Example                     | Required | Description                                                                                                       |
 |-----------------|-----------------------------|----------|-------------------------------------------------------------------------------------------------------------------|
 | Name            | Network Glue Collector       | True     | This determines that this script will only uninstall the "Network Glue Collector" application from the endpoints. |
-| Enable_Ticketing | 1                           | False    | If it is set to 1, then if the script fails to remove the application it will generate a ticket.                 |
+| Enable_Ticketing | 1                           | False    | If set to 1, the script will generate a ticket if it fails to remove the application.                           |
 
 ## Output
 
@@ -47,9 +48,9 @@ This script is built to perform the Network Glue Collector uninstallation on dem
 
 **Summary:**
 
-`The script attempted to remove the provided list of application(s) from the computer but it failed. Initially, the following application(s) were identified as installed out of the provided list:`
+`The script attempted to remove the provided list of application(s) from the computer, but it failed. Initially, the following application(s) were identified as installed out of the provided list:`
 
-`- \<Comma Separated Name(s) of the application(s) out the provided list installed initially on the computer>`
+`- \<Comma Separated Name(s) of the application(s) out of the provided list installed initially on the computer>`
 
 `However, the removal process failed for the following application(s):`
 
@@ -63,14 +64,3 @@ This script is built to perform the Network Glue Collector uninstallation on dem
 
 **Example:**  
 ![Example](../../../static/img/Remove-Application---Network-Glue-Collector/image_2.png)
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the status of the Restore point for workstations.
+The dataview displays the status of the Restore Point for workstations.
 
 ## Dependencies
 
@@ -24,18 +25,4 @@ The dataview displays the status of the Restore point for workstations.
 | Location Name       | Location name.                                              |
 | Computer Name       | Computer name.                                            |
 | OS                  | Displays the operating system of the agents.               |
-| Restore Point Status | Displays if the Restore point is Enabled or Disabled on the computers. |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Restore Point Status | Displays if the Restore Point is enabled or disabled on the computers. |

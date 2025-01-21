@@ -8,9 +8,10 @@ tags: ['office', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775) script on online machines with Microsoft Office 365 installed on them. It will execute the script on the machines where it has not been run for over 14 days. Additionally, the monitor selectively targets machines with a Managed Mode policy in Automate.
+This internal monitor executes the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775) script on online machines with Microsoft Office 365 installed. It will execute the script on machines where it has not been run for over 14 days. Additionally, the monitor selectively targets machines with a Managed Mode policy in Automate.
 
 ## Dependencies
 
@@ -26,16 +27,3 @@ Managed Windows Computers
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
-
-
-
-
-
-
-
-
-
-
-
-
-

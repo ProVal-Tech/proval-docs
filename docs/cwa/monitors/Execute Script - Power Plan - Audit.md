@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The internal monitor executes the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script once per week against the physical Windows Workstations.
+The internal monitor executes the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script once per week against the physical Windows workstations.
 
 ## Dependencies
 
@@ -32,16 +33,4 @@ Managed Workstations
 The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script.  
 
 ![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_3.png)  
-
-
-
-
-
-
-
-
-
-
-
-
 

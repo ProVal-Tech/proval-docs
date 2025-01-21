@@ -8,29 +8,17 @@ tags: ['datto', 'encryption', 'recovery', 'security']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-Enables BitLocker on the endpoint and saves the recovery key and bitlocker status to UDF.
+This document enables BitLocker on the endpoint and saves the recovery key and BitLocker status to User Defined Fields (UDF).
 
 ## Implementation
 
-- Import Component into Datto RMM
-- Modify UDF parameters to match the UDF number in the environment
+- Import the component into Datto RMM.
+- Modify UDF parameters to match the UDF number in the environment.
 
 ## Output
 
 - stdOut
 - stdErr
-
-
-
-
-
-
-
-
-
-
-
-
-

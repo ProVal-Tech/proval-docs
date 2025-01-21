@@ -8,25 +8,15 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This will monitor offline agents for specific servers where EDF "Offline Server Monitor" is check marked.
+This document describes the process for monitoring offline agents for specific servers where the EDF "Offline Server Monitor" option is checked.
 
 ## Dependencies
 
-@Offline Server Monitor - EDF at the computer level
+- Offline Server Monitor - EDF at the computer level
 
 ## Target
 
-Servers - Should be run on servers
-
-
-
-
-
-
-
-
-
-
-
+- Servers: This should be run on servers.

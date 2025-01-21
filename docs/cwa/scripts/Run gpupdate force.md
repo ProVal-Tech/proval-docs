@@ -8,11 +8,12 @@ tags: ['performance', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script runs `gpupdate /force` on the target Windows machine.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -25,15 +26,3 @@ This script runs `gpupdate /force` on the target Windows machine.
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

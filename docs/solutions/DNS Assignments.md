@@ -8,9 +8,10 @@ tags: ['dns']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of this solution is to add to the current NON-Stack dataview [EPM - Network - Dataview - DNS Assignments](https://proval.itglue.com/DOC-5078775-12184160) to display the dns type and dns settings for the devices shown.
+The purpose of this solution is to add to the current NON-Stack dataview [EPM - Network - Dataview - DNS Assignments](https://proval.itglue.com/DOC-5078775-12184160) to display the DNS type and DNS settings for the devices shown.
 
 ## Associated Content
 
@@ -25,15 +26,3 @@ The purpose of this solution is to add to the current NON-Stack dataview [EPM - 
 1. Import the [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](<../cwa/scripts/Create and Populate plugin_proval_dns_extradata.md>) script.
 2. Schedule the script to run against any target groups or endpoints.
 3. Review the data in the dataview for accuracy.
-
-
-
-
-
-
-
-
-
-
-
-

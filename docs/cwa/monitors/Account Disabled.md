@@ -8,26 +8,15 @@ tags: ['active-directory', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Monitor looks for the disabled accounts on Active Directory servers through the Active Directory plugin, and creates a ticket for each one found.
+This monitor looks for disabled accounts on Active Directory servers through the Active Directory plugin and creates a ticket for each one found.
 
 ## Dependencies
 
-- Active Directory plugin Installed, Enabled, and Setup
+- Active Directory plugin installed, enabled, and set up.
 
 ## Target
 
 Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,25 +8,15 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Internal monitor is checking machines to look for any antivirus software installed, but **excluding** where the Webroot plugin is auto-deploying.
+This internal monitor checks machines for any installed antivirus software, but **excludes** those where the Webroot plugin is set to auto-deploy.
 
 ## Dependencies
 
-- Webroot Plugin -- Installed, Enabled, and Setup with Auto-Deploy
+- Webroot Plugin — Installed, enabled, and set up with auto-deploy.
 
 ## Target
 
-- Global - Should be run without explicitly defined targets.
-
-
-
-
-
-
-
-
-
-
-
+- Global — Should be run without explicitly defined targets.

@@ -8,27 +8,16 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is a RAWSQL monitor that detects machines where the restore point is currently disabled.
+This RAWSQL monitor detects machines where the restore point is currently disabled.
 
 ## Dependencies
 
 - [Restore Point - Enabled](<../roles/Restore Point - Enabled.md>)  
-- @System Restore - Enable [Autofix,Params] (Script)
+- @System Restore - Enable [Autofix, Params] (Script)
 
 ## Target
 
 Workstations
-
-
-
-
-
-
-
-
-
-
-
-

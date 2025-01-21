@@ -8,6 +8,7 @@ tags: ['setup', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview tracks the progress of the [Workaround - Windows Search Protocol Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script and [ProVal - Development - Workaround - Windows Search Protocol Vulnerability [G]](<../monitors/Workaround - Windows Search Protocol VulnerabilityG.md>) monitor set.
@@ -23,25 +24,11 @@ This dataview tracks the progress of the [Workaround - Windows Search Protocol V
 
 | Column                        | Description                                                                                           |
 |-------------------------------|-------------------------------------------------------------------------------------------------------|
-| computerid                    | computerid                                                                                           |
-| Client Name                   | Client Name                                                                                          |
-| Location Name                 | Location Name                                                                                        |
-| Computer Name                 | Computer Name                                                                                        |
-| Operating System              | Operating System                                                                                     |
-| lastcontact                   | lastcontact                                                                                          |
-| Search-MS Registry Status      | Value of the script state, Search-MS Registry Status                                                |
-| Search-MS Registry Key Role    | Whether the role is active, inactive, or it's never been detected.  Active: The registry key is currently present on the computer.  Inactive: The registry key was once present on the computer, but the script had removed that.  Not Detected: Either the registry key was not present on the computer from the very beginning or somehow the computer is not accepting the role. |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| computerid                    | Unique identifier for the computer.                                                                  |
+| Client Name                   | Name of the client.                                                                                  |
+| Location Name                 | Name of the location.                                                                                 |
+| Computer Name                 | Name of the computer.                                                                                 |
+| Operating System              | Operating system installed on the computer.                                                          |
+| lastcontact                   | Last contact time with the computer.                                                                  |
+| Search-MS Registry Status      | Value of the script state; indicates the Search-MS Registry Status.                                   |
+| Search-MS Registry Key Role    | Indicates whether the role is active, inactive, or has never been detected. Active: The registry key is currently present on the computer. Inactive: The registry key was once present on the computer, but the script has removed it. Not Detected: Either the registry key was not present on the computer from the beginning or the computer is not accepting the role. |

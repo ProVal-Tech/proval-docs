@@ -8,13 +8,14 @@ tags: ['database', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Implementation Steps
 
 - Import the Alert Template '△ Custom - Ticket Creation Computer - Failures Only'
-  - Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well.
+  - Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket%20Creation%20-%20Computer%20Failures%20Only.md) script was imported as well.
 
 - Run this SQL query from a RAWSQL monitor set to import the required search.
-  ```
+  ```sql
   INSERT INTO `sensorchecks`
   SELECT 
   '' as `SensID`,
@@ -24,7 +25,7 @@ unlisted: false
   Where Computers.ClientID = Clients.ClientID
   and ((Computers.ComputerID in (SELECT c1.computerid FROM Computers c1 WHERE c1.domain LIKE 'DC:%' AND c1.lastcontact > NOW() - INTERVAL 10 MINUTE AND c1.computerid = ( SELECT MAX(c2.computerid) FROM Computers c2 WHERE c2.domain = c1.domain AND c2.clientid = c1.clientid AND c2.lastcontact > NOW() - INTERVAL 10 MINUTE ))))' as `SQL`,
   '4' as `QueryType`,
-  'Computer ID||\<=|*(SELECT c1.computerid FROM Computers c1 WHERE c1.domain LIKE 'DC:%' AND c1.lastcontact > NOW() - INTERVAL 10 MINUTE AND c1.computerid = ( SELECT MAX(c2.computerid) FROM Computers c2 WHERE c2.domain = c1.domain AND c2.clientid = c1.clientid AND c2.lastcontact > NOW() - INTERVAL 10 MINUTE ))|=||=|^' as `ListData`,
+  'Computer ID||\\<=|*(SELECT c1.computerid FROM Computers c1 WHERE c1.domain LIKE 'DC:%' AND c1.lastcontact > NOW() - INTERVAL 10 MINUTE AND c1.computerid = ( SELECT MAX(c2.computerid) FROM Computers c2 WHERE c2.domain = c1.domain AND c2.clientid = c1.clientid AND c2.lastcontact > NOW() - INTERVAL 10 MINUTE ))|=||=|^' as `ListData`,
   '0' as `FolderID`,
   '13211dbf-74ba-4334-95d6-10a88d15ea46' as `GUID`,
   '' as `SearchXML`,
@@ -34,8 +35,8 @@ unlisted: false
   Where (SELECT count(*) From SensorChecks where `GUID` = '13211dbf-74ba-4334-95d6-10a88d15ea46') = 0 ;
   ```
 
-- Run this SQL query from a RAWSQL monitor set to create and setup the remote monitor on the Domain Controllers group.
-  ```
+- Run this SQL query from a RAWSQL monitor set to create and set up the remote monitor on the Domain Controllers group.
+  ```sql
   SET @Groupid= (SELECT Groupid FROM mastergroups WHERE `GUID` = '3ac455da-f1fb-11e1-b4ec-1231391d2d19');
   SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '13211dbf-74ba-4334-95d6-10a88d15ea46');
   SET @Alertaction= (SELECT alertactionid FROM alerttemplate WHERE `GUID` = 'f2fe531c-3116-4afa-85b6-bdb3f5c84a39');
@@ -52,7 +53,7 @@ unlisted: false
   '3600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-NewDomainAdmin'; $WorkingDirectory = 'C://ProgramData//_Automation//Script//$ProjectName//'; $scriptpath = '$($WorkingDirectory)$($ProjectName).ps1'; $scripturl = 'https://file.provaltech.com/repo/script/Get-NewDomainAdmin.ps1'; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); & $scriptpath"' as `DataOut`,
+  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = ''Get-NewDomainAdmin''; $WorkingDirectory = ''C://ProgramData//_Automation//Script//$ProjectName//''; $scriptpath = ''$($WorkingDirectory)$($ProjectName).ps1''; $scripturl = ''https://file.provaltech.com/repo/script/Get-NewDomainAdmin.ps1''; if( !(Test-Path $WorkingDirectory) ) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); & $scriptpath"' as `DataOut`,
   '16' as `Comparor`,
   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(distinguishedName)|10|distinguishedName' as `DataIn`,
   '0' as `IDField`,
@@ -67,6 +68,11 @@ unlisted: false
   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+  SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+  SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+  SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+  SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+  '-',
   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -116,18 +122,5 @@ unlisted: false
   Alert Template: △ Custom - Ticket Creation Computer - Failures Only  
   ![Image](../../../static/img/New-Domain-Admin/image_1.png)
 
-- Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>)  
+- Click `Edit the Alerts` and ensure that the alert template is using the correct script, [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket%20Creation%20-%20Computer%20Failures%20Only.md)  
   ![Image](../../../static/img/New-Domain-Admin/image_2.png)  
-  
-
-
-
-
-
-
-
-
-
-
-
-

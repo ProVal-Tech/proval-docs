@@ -8,6 +8,7 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This article outlines the process to add the `Windows Feature Update` option in the `Self Help` menu.  
@@ -29,10 +30,10 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
 3. Navigate to Automation > Templates > Agent Templates:  
    ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_3.png)  
 
-4. Agent Templates menu will appear:  
+4. The Agent Templates menu will appear:  
    ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_4.png)  
 
-5. Double-click and open the agent template which is being used to manage the `Self Help` menu. We are using the `Default` agent template in the illustrations:  
+5. Double-click and open the agent template being used to manage the `Self Help` menu. We are using the `Default` agent template in the illustrations:  
    ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_5.png)  
 
 6. Navigate to `Tray Menus` and click the `New Menu` button:  
@@ -50,19 +51,19 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
 9. Click the `Save` button to save the changes made to the `Custom Tray Menu Editor`:  
    ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_9.png)  
 
-10. `Double Click` the `Self Help - Menu`:  
+10. Double-click the `Self Help - Menu`:  
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_10.png)  
 
 11. Select `Self Help - Menu` from the `Tray Menus` dropdown and click the `Edit` button to add the `Windows Feature Update` menu to the `Self Help - Menu`.  
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_11.png)  
 
-12. `Custom Tray Menu Editor` will appear for the `Self Help - Menu`:  
+12. The `Custom Tray Menu Editor` will appear for the `Self Help - Menu`:  
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_12.png)  
 
 13. Select the `Windows Feature Update` menu from the `Tray Menus` dropdown.  
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_13.png)  
 
-14. Click the `Add` button to add the `Windows Feature Update` menu in the Active Menus list.  
+14. Click the `Add` button to add the `Windows Feature Update` menu to the Active Menus list.  
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_14.png)  
 
 15. Click the `Save` button to save the changes made to the `Self Help - Menu`.  
@@ -75,15 +76,3 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_17.png)  
 
 Configuration updates will take effect on devices after running the `Update Config` command.
-
-
-
-
-
-
-
-
-
-
-
-

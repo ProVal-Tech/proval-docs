@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-An implementation of [SWM - Software Installation - Script - Winget - Install/Update](<./Winget - InstallUpdate.md>) script to deploy `Teams Machine-Wide Installer` application only.
+This document outlines the implementation of the [SWM - Software Installation - Script - Winget - Install/Update](./Winget - InstallUpdate.md) script to deploy the `Teams Machine-Wide Installer` application.
 
 ## Sample Run
 
@@ -20,23 +21,12 @@ An implementation of [SWM - Software Installation - Script - Winget - Install/Up
 
 | Name        | Value               |
 |-------------|---------------------|
-| ProjectName | Invoke-Webrequest    |
+| ProjectName | Invoke-WebRequest    |
 | PackageID   | Microsoft.Teams      |
 | Source      | Winget               |
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-
 
 

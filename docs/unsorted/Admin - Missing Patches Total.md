@@ -8,27 +8,28 @@ tags: ['connectwise', 'report', 'software', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview contains counts of missing patches and patches that have no approval across the entire Automate instance.
+This document contains counts of missing patches and patches that have no approval across the entire Automate instance.
 
 ## Columns
 
 | Column                     | Description                                                                                   |
 |---------------------------|-----------------------------------------------------------------------------------------------|
-| Server Missing            | It shows count of Microsoft patches missing for the servers.                                 |
-| PerServer                 | It shows the percentage of patches missing per server.                                       |
-| Workstation Missing        | It shows count of Microsoft patches missing for the workstations.                            |
-| PerWorkstation             | It shows the percentage of patches missing per workstation.                                   |
-| Total Missing             | It shows the count of the total Microsoft missing patches.                                   |
-| TotalPerMachine           | It shows the percentage of total patches missing on total agent count.                       |
-| Total Missing Unfiltered   | It shows the count of the total patches missing in the environment.                          |
-| Total Approved            | It shows the count of total approved patches in the environment.                             |
-| Total Not Set            | It shows the count of total "Not Set" patches, meant which has not been actioned by any approval policies. |
+| Server Missing            | Count of Microsoft patches missing for the servers.                                         |
+| PerServer                 | Percentage of patches missing per server.                                                   |
+| Workstation Missing        | Count of Microsoft patches missing for the workstations.                                    |
+| PerWorkstation            | Percentage of patches missing per workstation.                                              |
+| Total Missing             | Count of the total Microsoft missing patches.                                              |
+| TotalPerMachine           | Percentage of total patches missing on total agent count.                                   |
+| Total Missing Unfiltered   | Count of the total patches missing in the environment.                                      |
+| Total Approved            | Count of total approved patches in the environment.                                         |
+| Total Not Set            | Count of total "Not Set" patches, which have not been actioned by any approval policies.    |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   server.`Server Missing` as `Server Missing`, 
   ROUND(
@@ -286,17 +287,4 @@ FROM
       approvalpolicycount = 0
   ) AS CountNotSet
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 

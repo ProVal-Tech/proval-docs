@@ -8,9 +8,10 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-> The task validates whether the SentinelOne Management Server detected at the computer is different or not as set for the Client in CW RMM. Information gathered by this task is stored in the following custom fields:
+> The task validates whether the SentinelOne Management Server detected on the computer is different from what is set for the Client in CW RMM. Information gathered by this task is stored in the following custom fields:
 - [Client Level S1 Mgmt Server](<../custom-fields/Endpoint - Client Level S1 Mgmt Server.md>)
 - [Computer Level S1 Mgmt Server](<../custom-fields/Endpoint - Computer Level S1 Mgmt Server.md>)
 - [S1 Mgmt Server Discrepancy](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>)
@@ -36,7 +37,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 ![Task Creation 2](../../../static/img/SentinelOne-Management-Console-Validation/image_4.png)  
 
 **Name:** `SentinelOne Management Console Validation`  
-**Description:** `The task validates whether the SentinelOne Management Server detected at the computer different or not as set for the Client in CW RMM`  
+**Description:** `The task validates whether the SentinelOne Management Server detected on the computer is different from what is set for the Client in CW RMM`  
 **Category:** `Security`  
 ![Task Creation 3](../../../static/img/SentinelOne-Management-Console-Validation/image_5.png)  
 
@@ -59,7 +60,7 @@ The following function will pop up on the screen:
 - Select the `Custom Field` radio button.
 - Set `clientSiteKey` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `SentinelOne Site Key` from the Custom Field dropdown menu.
-  - **If the partner uses a different custom field to store the SentinelOne Site Key than use that one instead.**
+  - **If the partner uses a different custom field to store the SentinelOne Site Key, then use that one instead.**
 - Click the `Save` button.  
 ![Save Button](../../../static/img/SentinelOne-Management-Console-Validation/image_10.png)  
 
@@ -87,7 +88,7 @@ if ( ($clientLevelKey -match [Regex]::Escape('clientSiteKey@')) -or ($null -eq $
 }
 $json = [System.Text.Encoding]::UTF8.GetString($([System.Convert]::FromBase64String($clientLevelKey)))
 $obj = $json | ConvertFrom-Json
-$url = $obj.url -replace '/"', ''
+$url = $obj.url -replace '/\"', ''
 return $url
 ```
 
@@ -98,7 +99,7 @@ return $url
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/SentinelOne-Management-Console-Validation/image_12.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field Function](../../../static/img/SentinelOne-Management-Console-Validation/image_16.png)  
 
 The following function will pop up on the screen:  
@@ -116,7 +117,7 @@ The following function will pop up on the screen:
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/SentinelOne-Management-Console-Validation/image_12.png)  
 
-Search and Select the `Set User Variable` function.  
+Search and select the `Set User Variable` function.  
 ![Set User Variable Function](../../../static/img/SentinelOne-Management-Console-Validation/image_20.png)  
 
 The following function will pop up on the screen:  
@@ -145,15 +146,15 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```powershell
 $regPath = 'HKLM://SYSTEM//CurrentControlSet//Services//SentinelAgent'
 if ( Test-Path -Path $regPath ) {
-    $ctlPath = "$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))//.exe', 'SentinelCtl.exe' -Replace '/"','')"
+    $ctlPath = \"$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))//.exe', 'SentinelCtl.exe' -Replace '/\"','')\"
     if ( !(Test-Path -Path $ctlPath) ) {
         throw 'SentinelCtl.exe not found.'
     }
 } else {
     throw 'Sentinel Agent not found.'
 }
-$mgmtServer = cmd.exe /c "$ctlPath" config server.mgmtServer
-$mgmtServer = $mgmtServer -replace '/"', ''
+$mgmtServer = cmd.exe /c \"$ctlPath\" config server.mgmtServer
+$mgmtServer = $mgmtServer -replace '/\"', ''
 return $mgmtServer
 ```
 
@@ -164,7 +165,7 @@ return $mgmtServer
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/SentinelOne-Management-Console-Validation/image_12.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field Function](../../../static/img/SentinelOne-Management-Console-Validation/image_16.png)  
 
 The following function will pop up on the screen:  
@@ -182,7 +183,7 @@ The following function will pop up on the screen:
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/SentinelOne-Management-Console-Validation/image_12.png)  
 
-Search and Select the `Set User Variable` function.  
+Search and select the `Set User Variable` function.  
 ![Set User Variable Function](../../../static/img/SentinelOne-Management-Console-Validation/image_20.png)  
 
 The following function will pop up on the screen:  
@@ -212,9 +213,9 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 $clientMgmtSvr = '@clientMgmtSvr@'
 $computerMgmtSvr = '@computerMgmtSvr@'
 if ( ($clientMgmtSvr -match [Regex]::Escape('clientMgmtSvr@')) -or ($null -eq $clientMgmtSvr) ) {
-    throw 'Invlaid Client Level Management Server.'
+    throw 'Invalid Client Level Management Server.'
 } elseif ( ($computerMgmtSvr -match [Regex]::Escape('computerMgmtSvr@')) -or ($null -eq $computerMgmtSvr) ) {
-    throw 'Invlaid Client Level Management Server.'
+    throw 'Invalid Computer Level Management Server.'
 } elseif ( $clientMgmtSvr -eq $computerMgmtSvr ) {
     return 'No'
 } elseif ( $clientMgmtSvr -ne $computerMgmtSvr ) {
@@ -231,7 +232,7 @@ if ( ($clientMgmtSvr -match [Regex]::Escape('clientMgmtSvr@')) -or ($null -eq $c
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/SentinelOne-Management-Console-Validation/image_12.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field Function](../../../static/img/SentinelOne-Management-Console-Validation/image_16.png)  
 
 The following function will pop up on the screen:  
@@ -258,23 +259,23 @@ It is suggested to run the Task once per month against the computers with the `S
 - Go to `Automation` > `Tasks.`
 - Search for `SentinelOne Management Console Validation Task.`
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Task](../../../static/img/SentinelOne-Management-Console-Validation/image_34.png)  
 
 This screen will appear.  
 ![Schedule Screen](../../../static/img/SentinelOne-Management-Console-Validation/image_35.png)  
 
-Select the `Schedule` button and click the calendar looking button present in front of the `Recurrence` option.  
+Select the `Schedule` button and click the calendar button present in front of the `Recurrence` option.  
 ![Recurrence Option](../../../static/img/SentinelOne-Management-Console-Validation/image_36.png)  
 
-Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.  
+Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.  
 ![Save Schedule](../../../static/img/SentinelOne-Management-Console-Validation/image_37.png)  
 
 Click the `Select Targets` button to select the concerned target.  
 ![Select Targets](../../../static/img/SentinelOne-Management-Console-Validation/image_38.png)  
 
 Search and select the [`SentinelOne Installed`](<../groups/SentinelOne Installed.md>) Device Group for the target.
-- **If the partner uses a different group for the computers with the `Sentinel Agent` application installed than use that one.**  
+- **If the partner uses a different group for the computers with the `Sentinel Agent` application installed, then use that one.**  
 ![Device Group](../../../static/img/SentinelOne-Management-Console-Validation/image_39.png)  
 
 Click the `Run` button to initiate the schedule.  
@@ -284,15 +285,4 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/SentinelOne-Management-Console-Validation/image_41.png)  
-
-
-
-
-
-
-
-
-
-
-
 

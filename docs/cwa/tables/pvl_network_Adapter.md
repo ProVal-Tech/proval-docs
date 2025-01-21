@@ -8,6 +8,7 @@ tags: ['database', 'networking', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The table stores the data gathered by the [EPM - Network - Script - Get - DNS Assignments](<../scripts/Get - DNS Assignments.md>) script.
@@ -22,17 +23,17 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 
 | Column                | Type          | Explanation                                                   |
 |----------------------|---------------|---------------------------------------------------------------|
-| computerid           | int           | Computer id of the machine                                    |
+| computerid           | int           | Computer ID of the machine                                    |
 | Name                 | varchar(128)  | Name of the network interface                                  |
-| PhysicalMediaType    | varchar(50)   | Physical Media Type of the Network interface                  |
-| status               | varchar(16)   | Status of the Network interface                                |
-| LinkSpeed            | varchar(16)   | Link Speed of the Network interface                            |
-| PnpDeviceID          | varchar(256)  | PnpDeviceID of the Network interface                          |
-| InterfaceName        | varchar(256)  | Type of the Network interface                                  |
+| PhysicalMediaType    | varchar(50)   | Physical Media Type of the network interface                  |
+| status               | varchar(16)   | Status of the network interface                                |
+| LinkSpeed            | varchar(16)   | Link Speed of the network interface                            |
+| PnpDeviceID          | varchar(256)  | PnP Device ID of the network interface                        |
+| InterfaceName        | varchar(256)  | Type of the network interface                                  |
 | Hidden               | varchar(8)    | Is the network interface hidden?                              |
-| index                | int           | index number of the DNS record                                |
-| Description          | varchar(256)  | Description of the Network interface                           |
-| DHCPEnabled          | varchar(8)    | Is DHCP enabled for the Network interface?                    |
+| index                | int           | Index number of the DNS record                                |
+| Description          | varchar(256)  | Description of the network interface                           |
+| DHCPEnabled          | varchar(8)    | Is DHCP enabled for the network interface?                    |
 | DHCPServer           | varchar(256)  | Name/Address of the DHCP server of the network interface      |
 | DHCPLeaseObtained    | varchar(32)   | DHCP Lease start date for the network interface               |
 | DHCPLeaseExpires      | varchar(32)   | DHCP Lease expiry date for the network interface              |
@@ -41,20 +42,8 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | DNSServerSearchOrder | varchar(128)  | DNS Address(es) of the network interface                       |
 | DefaultIPGateway     | varchar(32)   | Default Gateway of the network interface                       |
 | IPSubnet             | varchar(64)   | Subnet of the network interface                                 |
-| IPAddress            | varchar(255)  | IPAddress(es) of the network interface (both IPv4 and IPv6 if available) |
-| Interfaceindex       | int           | index number of the network interface                          |
-| MacAddress           | varchar(32)   | Mac Address of the network interface                           |
-| SettingID            | varchar(64)   | interface id of the network interface                          |
+| IPAddress            | varchar(255)  | IP Address(es) of the network interface (both IPv4 and IPv6 if available) |
+| InterfaceIndex       | int           | Index number of the network interface                          |
+| MacAddress           | varchar(32)   | MAC Address of the network interface                           |
+| SettingID            | varchar(64)   | Interface ID of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
-
-
-
-
-
-
-
-
-
-
-
-

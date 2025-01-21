@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is the ProVal version of the default monitor "SVC - Auto Services Stopped". It has been modified to support wild cards within the service blacklist in the System Dashboard. This monitor will monitor all the services which are set to automatically start with windows and are not running except any that are mentioned in the service blacklist. To exclude any service from this monitor, add its name to the service blacklist. You could also add a wildcard to exclude all the services with that name like using the wildcard 'GoogleUpdater*' to exclude all the services with the name "GoogleUpdater".
+This is the ProVal version of the default monitor "SVC - Auto Services Stopped". It has been modified to support wildcards within the service blacklist in the System Dashboard. This monitor will track all the services that are set to automatically start with Windows and are not running, except for any that are mentioned in the service blacklist. To exclude any service from this monitor, add its name to the service blacklist. You can also use a wildcard to exclude all services with that name, such as using the wildcard 'GoogleUpdater*' to exclude all services with the name "GoogleUpdater".
 
 ## Dependencies
 
@@ -26,16 +27,3 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
-
-
-
-
-
-
-
-
-
-
-
-
-

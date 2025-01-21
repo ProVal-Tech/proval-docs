@@ -8,6 +8,7 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The dataview can be used to audit the agents in the environment.
@@ -21,28 +22,16 @@ The dataview can be used to audit the agents in the environment.
 | ComputerID                     | Agent ID of the computers.                         |
 | Agent Name                     | Computer name.                                     |
 | Agent Type                     | Displays computer type (Workstation/Laptop/Server).|
-| Agent Operating System          | OS of the computers.                               |
+| Agent Operating System         | OS of the computers.                               |
 | Windows 10 Version             | The ReleaseID of the Windows version.              |
 | Agent Manufacturer              | Displays the name of the BIOS manufacturer.        |
-| AntiVirus                      | The VirusScanner running on the agent.             |
-| Agent Serial Number            | The BIOS version of the computer.                  |
+| AntiVirus                      | The virus scanner running on the agent.            |
+| Agent Serial Number            | The serial number of the computer.                 |
 | Agent - BIOS Date              | The BIOS date of the computer.                     |
 | Agent Last Contact Date        | The last contact date of the agent.                |
 | Days Since LC                  | The number of days since the last contact.         |
-| LastHeartbeatTime              | The last heartbeat time that was received from the agent.|
-| LastUsername                   | The last logged-in user on the computer.           |
-| Last AD Logon                  | The last AD login date.                            |
-| Days Since AD Logon            | The number of days since the last AD login.       |
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Heartbeat Time            | The last heartbeat time received from the agent.   |
+| Last Username                   | The last logged-in user on the computer.           |
+| Last AD Logon                  | The last Active Directory login date.              |
+| Days Since AD Logon            | The number of days since the last Active Directory login. |
 

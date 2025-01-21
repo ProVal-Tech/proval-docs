@@ -8,9 +8,10 @@ tags: ['database', 'disk-encryption', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This table stores the drive's data of the Hyper-Vs at different schedules of the script [Hyper-V Disk Space Record](<../dataviews/Hyper-V Disk Space Record.md>).
+This table stores the drive data of the Hyper-V machines at different schedules of the script [Hyper-V Disk Space Record](<../dataviews/Hyper-V Disk Space Record.md>).
 
 ## Dependencies
 
@@ -22,26 +23,13 @@ This table stores the drive's data of the Hyper-Vs at different schedules of the
 
 | Column        | Type     | Explanation                                      |
 |---------------|----------|--------------------------------------------------|
-| ComputerID    | INT      | Computerid of the agent in RMM                  |
-| DriveID       | INT      | DriveID of the drives                            |
+| ComputerID    | INT      | Computer ID of the agent in RMM                  |
+| DriveID       | INT      | Drive ID of the drives                            |
 | Volume        | VARCHAR  | Drive volume letter                              |
 | Total Size    | INT      | Total size of the volume                         |
 | Free Size     | INT      | Available free size of the volume                |
-| FileSystem    | VARCHAR  | File System of the drive ex: NTFS               |
+| FileSystem    | VARCHAR  | File system of the drive (e.g., NTFS)           |
 | Model         | VARCHAR  | Model of the drive                               |
-| Missing       | TINYINT  | Drive status whether detected in Automate or not |
-| Internal      | TINYINT  | Drive checks whether internal or external/removable |
-| SSD           | TINYINT  | Disk checks whether SSD or not                   |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Missing       | TINYINT  | Drive status indicating whether detected in Automate or not |
+| Internal      | TINYINT  | Indicates whether the drive is internal or external/removable |
+| SSD           | TINYINT  | Indicates whether the disk is SSD or not        |

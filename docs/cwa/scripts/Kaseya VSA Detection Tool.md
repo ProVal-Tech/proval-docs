@@ -8,11 +8,12 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will perform the vulnerability scan on VSA server and log output to dependent dataview.
+This script performs a vulnerability scan on the VSA server and logs the output to a dependent dataview.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -22,32 +23,19 @@ Time Saved by Automation: 10 Minutes
 
 [Kaseya Vulnerability Audit](<../dataviews/Kaseya Vulnerability Audit.md>)
 
-#### Script States
+### Script States
 
 | Name                     | Example               | Description                                                                                       |
 |--------------------------|-----------------------|---------------------------------------------------------------------------------------------------|
-| VSAEndpointDetection      | safe -- %shellresult% | This will store the script output and comparative status whether server is vulnerable or safe.   |
+| VSAEndpointDetection      | safe -- %shellresult% | This will store the script output and comparative status indicating whether the server is vulnerable or safe.   |
 
 ## Process
 
-- This script will detect the suspicious certificate check, suspicious executable check, suspicious file reference check, scan indicates intrusion risk and malicious file check and report everything to the dataview.
-- This should be target to VSA server only.
+- This script will detect suspicious certificate checks, suspicious executable checks, suspicious file reference checks, scan for intrusion risks, and malicious file checks, reporting everything to the dataview.
+- This should be targeted to the VSA server only.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

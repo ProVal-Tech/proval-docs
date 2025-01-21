@@ -8,25 +8,13 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role denotes that the agent has an Office 365 Update Channel set in the registry.
+This document outlines how to determine if an agent has an Office 365 Update Channel set in the registry.
 
 ## Settings
 
-| Detection String                                          | Comparator | Result | Applicable OS |
-|----------------------------------------------------------|------------|--------|----------------|
-| \{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Exists     |        | Windows OS     |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Detection String                                          | Comparator | Result | Applicable OS  |
+|----------------------------------------------------------|------------|--------|-----------------|
+| \\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Exists     |        | Windows OS      |

@@ -8,17 +8,18 @@ tags: ['active-directory', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Script used to reset the KRBTGT Active Directory account. Adapted from [https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1)
+This document presents a script used to reset the KRBTGT Active Directory account, adapted from [New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
 
-This script is provided "without warranty". 
+This script is provided "without warranty." 
 
-It is in essence a streamlined version of the adapted script to always run the live account reset with some modernization of the PowerShell mixed in. 
+It is essentially a streamlined version of the adapted script designed to always run the live account reset, with some modernization of PowerShell included. 
 
-Due to this, results are not guaranteed, and if at all possible should always be run manually and logins should be immediately tested. 
+Due to this, results are not guaranteed. If at all possible, the script should always be run manually, and logins should be immediately tested. 
 
-*YOU HAVE BEEN WARNED*
+**YOU HAVE BEEN WARNED**
 
 ## Sample Run
 
@@ -35,17 +36,4 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Res
 ## Output
 
 - Script log
-- Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Local file on the computer

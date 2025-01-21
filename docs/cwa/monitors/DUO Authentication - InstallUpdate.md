@@ -8,22 +8,23 @@ tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will detect the online Windows agent where the outdated DUO Authentication for Windows Logon is installed or it also detects the agents whose client EDFs are set with values and the exclusions EDF "DUO Agent Exclusion" are not checked at the location or computer level.
+This monitor detects online Windows agents where outdated DUO Authentication for Windows Logon is installed. It also identifies agents whose client EDFs are set with specific values and those where the exclusion EDF "DUO Agent Exclusion" is not checked at the location or computer level.
 
-Client EDFs:
+### Client EDFs:
 
 ![Client EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_1.png)
 
-Client Exclusion EDF:  
+### Client Exclusion EDF:  
 **![Client Exclusion EDF](../../../static/img/DUO-Authentication---InstallUpdate/image_2.png)**  
 
-Location Exclusion EDFs:
+### Location Exclusion EDFs:
 
 ![Location Exclusion EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_3.png)
 
-Computer Exclusion EDFs:
+### Computer Exclusion EDFs:
 
 ![Computer Exclusion EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_4.png)
 
@@ -46,22 +47,8 @@ DUO Authentication Install/Update Failed on %ComputerName% at %ClientName%
 
 **Body**
 
-**When installation failed**  
-Failed to Install the @ApplicationVersion@ of DUO Authentication for Windows Logon. Here's the result of the installation Command: %ShellResult%
+**When installation fails:**  
+Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Logon. Here's the result of the installation command: %ShellResult%
 
-**When Argument Missing**  
-Arguments required to install DUO Authentication for Windows Login is not set.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**When an argument is missing:**  
+Arguments required to install DUO Authentication for Windows Logon are not set.

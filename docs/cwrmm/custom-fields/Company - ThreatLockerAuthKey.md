@@ -8,32 +8,22 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Custom field at company level stores the threatlocker Authorization key for windows machines.  
+This custom field at the company level stores the ThreatLocker Authorization Key for Windows machines.  
 [Getting your Unique Identifier from ThreatLocker | ThreatLocker Help Center](https://threatlocker.kb.help/getting-your-unique-identifier-from-threatlocker/)
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - ThreatLocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
 
 ## Details
 
 | Field Name             | Level  | Type     | Default Value | Description                                        | Editable |
 |-----------------------|--------|----------|---------------|----------------------------------------------------|----------|
-| ThreatLockerAuthKey   | Company| TextBox  | NA            | Threatlocker Authorization key for windows machines.| Yes      |
+| ThreatLockerAuthKey   | Company| TextBox  | NA            | ThreatLocker Authorization Key for Windows machines.| Yes      |
 
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerAuthKey/image_1.png)
-
-
-
-
-
-
-
-
-
-
-

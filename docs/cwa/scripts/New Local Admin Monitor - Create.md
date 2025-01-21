@@ -8,13 +8,14 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This document describes the process for creating remote monitors to identify new or elevated local administrators on Windows machines. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
 
-The script generates remote monitors that trigger an alert when a user or group of users are promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
+The script generates remote monitors that trigger an alert when a user or group of users is promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
 
-The generated remote monitors `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>) agnostic script to perform the monitoring.
+The generated remote monitor `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>) agnostic script to perform the monitoring.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-NewLocalAdmin/Get-NewLocalAdmin.ps1`
 
@@ -24,8 +25,8 @@ The generated remote monitors `ProVal - Production - New Local Admin` will use t
 
 **Exclusion Tips:**
 
-- The word `Domain` can be used to define a domain user or group into the exclusion.  
-  Example: If the exclusion is "Domain/Domain Users" then the script will intelligently exclude the "Domain Users" group for all domain joined computers.
+- The word `Domain` can be used to define a domain user or group in the exclusion.  
+  Example: If the exclusion is "Domain/Domain Users," then the script will intelligently exclude the "Domain Users" group for all domain-joined computers.
 - Adding "Domain/Batman, Batman" to the exclusion system property will exclude both local and domain user "Batman" from generating alerts.
 
 ## Important Note
@@ -34,7 +35,7 @@ The `ProVal - Production - New Local Admin Monitor` remote monitor will not be c
 
 ## Update Notice: 27-September-2024
 
-The solution's Extra Data Fields have been modified. Update the script from the `Prosync` plugin and run/debug against any client with `Set_Environment` as `1` to implement the changes.
+The solution's Extra Data Fields have been modified. Update the script from the `Prosync` plugin and run/debug against any client with `Set_Environment` set to `1` to implement the changes.
 
 ![Update Notice](../../../static/img/New-Local-Admin-Monitor---Create/image_1.png)
 
@@ -93,13 +94,13 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 | Name                             | Example           | Required | Description                                                                                                                                                                                                                      |
 |----------------------------------|-------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NLA_Monitoring_Enable            | 1                 | True     | Set this system property to `1` to enable the remote monitor creation for the partner. The default value is `0`.                                                                                                                |
-| NLA_Monitoring_Group_Ids         | 2,3,855,856       | True     | The script will create remote monitors for the machines (Domain Controllers are Excluded) that belong to the groups identified by the group IDs specified in this system property. The default value is ‘2,3,855,856’.            |
+| NLA_Monitoring_Group_Ids         | 2,3,855,856       | True     | The script will create remote monitors for the machines (Domain Controllers are excluded) that belong to the groups identified by the group IDs specified in this system property. The default value is ‘2,3,855,856’.            |
 | NLA_Monitoring_Server_Only       | 0                 | False    | Setting this system property to '1' will limit the monitor set creation to the Windows Servers only. The default value is '0'.                                                                                               |
 | NLA_Monitoring_Workstation_Only   | 0                 | False    | Setting this system property to '1' will limit the monitor set creation to the Windows Workstations only. The default value is '0'.                                                                                           |
 | NLA_Monitoring_Interval          | 3600              | True     | Controls the generated Remote Monitor run time interval. The default is 3600 seconds.                                                                                                                                         |
-| NLA_Monitoring_AlertTemplate     | 611               | True     | This system property stores the id of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.         |
-| NLA_Monitoring_TicketCategory     | 124               | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the machines. The default value is '0'. i.e., `\<Not Specified>`.                                                        |
-| NLA_Monitoring_Excluded_Users    | ClientAdmin, Admin2, User3 | True     | This system property stores the usernames to exclude from generating the new local admin-detected tickets. The default value will be `\<blank>`.                                                                                 |
+| NLA_Monitoring_AlertTemplate     | 611               | True     | This system property stores the ID of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.         |
+| NLA_Monitoring_TicketCategory     | 124               | False    | This system property stores the ID of the `Ticket Category` to apply to the remote monitors created for the machines. The default value is '0', i.e., `\\<Not Specified>`.                                                        |
+| NLA_Monitoring_Excluded_Users    | ClientAdmin, Admin2, User3 | True     | This system property stores the usernames to exclude from generating the new local admin-detected tickets. The default value will be `\\<blank>`.                                                                                 |
 
 ## Client-Level EDF
 
@@ -125,7 +126,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 | Name                    | Type      | Section        | Description                                                                                                                                                                                                                      |
 |-------------------------|-----------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NLAM_Exclude            | Check Box | Exclusions      | Selecting this Extra Data Field (EDF) will exclude the particular computer from the New Local Admin Monitoring. As a result, the script will not create any remote monitors for the computer. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitor. |
-| NLAM_Excluded_Users     | Check Box | Exclusions      | This EDF stores the usernames to exclude from generating the new local admin-detected tickets. By default it will be a blank text box. The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NLA_Monitoring_Excluded_Users` system property, and the Client-Level EDF `3b. Excluded_Users`. |
+| NLAM_Excluded_Users     | Check Box | Exclusions      | This EDF stores the usernames to exclude from generating the new local admin-detected tickets. By default, it will be a blank text box. The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NLA_Monitoring_Excluded_Users` system property, and the Client-Level EDF `3b. Excluded_Users`. |
 
 ## Remote Monitor Example
 
@@ -135,11 +136,11 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 
 **Alert Message on Failure:**  
 `New Local Admin(s) Detected at %COMPUTERNAME% for %CLIENTNAME%.`  
-`\<Newly Created Local Admin(s)>`
+`\\<Newly Created Local Admin(s)>`
 
 **Sample Ticket:**  
 ![Sample Ticket](../../../static/img/New-Local-Admin-Monitor---Create/image_11.png)  
-**Automate will never close the ticket, instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
+**Automate will never close the ticket; instead, it will keep adding the new detections to the same ticket as a comment/note, unless the ticket is closed/resolved manually.**
 
 **Sample Remote Monitor:**  
 ![Sample Remote Monitor](../../../static/img/New-Local-Admin-Monitor---Create/image_12.png)  
@@ -152,7 +153,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 
 ## FAQ
 
-**Q.** The remote monitor `ProVal - Production - New Local Admin Monitor` uses a domainrole check where 4,5 is excluded. What do those represent?  
+**Q.** The remote monitor `ProVal - Production - New Local Admin Monitor` uses a domain role check where 4,5 is excluded. What do those represent?  
 **A.** The `DomainRole` property from the `Win32_ComputerSystem` class in PowerShell represents the role of the computer in a domain or workgroup. It returns a numeric value that corresponds to the system's role in the domain or workgroup. The values are as follows:
 
 - **0:** **Standalone Workstation** — The computer is not a member of a domain and is a standalone workstation.
@@ -163,15 +164,3 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 - **5:** **Primary Domain Controller (PDC)** — The computer is a Primary Domain Controller (PDC) in the domain. It handles user logins and manages the domain.
 
 So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meaning that it continues if the machine is **not** a domain controller.
-
-
-
-
-
-
-
-
-
-
-
-

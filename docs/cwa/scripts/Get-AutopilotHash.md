@@ -8,40 +8,29 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script gets the Hardware Hash for Autopilot device registration. It collects the Hardware hash and stores it in the Computer EDF "Autopilot Hash".
+This script retrieves the Hardware Hash for Autopilot device registration. It collects the Hardware Hash and stores it in the Computer EDF labeled "Autopilot Hash".
 
 ## Sample Run
 
-It is intended to run as an autofix Script with [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../monitors/Get - Autopilot Hash.md>) but could also be run independently.
+It is intended to run as an autofix script with [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../monitors/Get - Autopilot Hash.md>), but it can also be run independently.
 
 ![Sample Run](../../../static/img/Get-AutopilotHash/image_1.png)
 
 ## EDFs
 
-| Name         | Level   | Type  | Description                                                |
-|--------------|---------|-------|------------------------------------------------------------|
-| Autopilot Hash | Computer | Text  | Script stores the Hardware Hash of a device under this EDF |
+| Name          | Level   | Type  | Description                                                |
+|---------------|---------|-------|------------------------------------------------------------|
+| Autopilot Hash| Computer| Text  | Script stores the Hardware Hash of a device under this EDF |
 
 ## User Parameters
 
 | Name             | Example | Required                                               | Description                                                                                             |
 |------------------|---------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Set_Environment   | 1       | Need to set to 1 for first-time implementation       | Running the script with the user parameter `Set_Environment` as `1` will import the EDFs needed for the script. |
+| Set_Environment   | 1       | Must be set to 1 for first-time implementation       | Running the script with the user parameter `Set_Environment` as `1` will import the EDFs needed for the script. |
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-
-

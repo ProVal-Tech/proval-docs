@@ -8,24 +8,14 @@ tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Sets the wallpaper on a windows endpoint, and optionally enforces that wallpaper via AtLogon scheduled task.
+This document explains how to set the wallpaper on a Windows endpoint and optionally enforce that wallpaper via an AtLogon scheduled task.
 
 ## Example Agent Procedure Log
 
 | Time                     | Event                                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | User                      |
 |--------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| 3:22:38 pm 15-Feb-23     | Wallpaper Set                                 | Success THEN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | provaltech.com/dan.hicks  |
-| 3:22:37 pm 15-Feb-23     | Wallpaper Set-0002                           | Log: 2023-02-15 15:18:52.030 -05:00 [INF] Writing user-level script to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:18:52.656 -05:00 [INF] Granting public access to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:18:53.015 -05:00 [INF] Granting public access to 'C:/Windows/TEMP/4844810.jpg'. 2023-02-15 15:22:26.270 -05:00 [INF] Writing user-level script to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:22:26.785 -05:00 [
-
-
-
-
-
-
-
-
-
-
-
+| 3:22:38 pm 15-Feb-23    | Wallpaper Set                                 | Success THEN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | provaltech.com/dan.hicks  |
+| 3:22:37 pm 15-Feb-23    | Wallpaper Set-0002                           | Log: 2023-02-15 15:18:52.030 -05:00 [INF] Writing user-level script to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:18:52.656 -05:00 [INF] Granting public access to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:18:53.015 -05:00 [INF] Granting public access to 'C:/Windows/TEMP/4844810.jpg'. 2023-02-15 15:22:26.270 -05:00 [INF] Writing user-level script to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:22:26.785 -05:00 [INF]  |

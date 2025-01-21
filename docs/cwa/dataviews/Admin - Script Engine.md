@@ -8,6 +8,7 @@ tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview will display metrics on how scripts are running in the environment.
@@ -21,21 +22,8 @@ None
 | Column        | Description                                                                                      |
 |---------------|--------------------------------------------------------------------------------------------------|
 | ScriptName    | The name of the script                                                                           |
-| MachineHours  | This is a calculated metric that will tally, in hours, how much time this script is run. More hours indicates the script is running more often |
-| LastRunTime   | The amount of time, in minutes, it took the script to run that last time it ran.                |
+| MachineHours  | This is a calculated metric that will tally, in hours, how much time this script is run. More hours indicate that the script is running more often. |
+| LastRunTime   | The amount of time, in minutes, it took the script to run the last time it executed.            |
 | DaysRunning    | The number of days each script has been running in the environment.                             |
 | TotalRuns     | The count of times each script has run                                                          |
 | LastRunDate   | The most recent time the script was run                                                         |
-
-
-
-
-
-
-
-
-
-
-
-
-

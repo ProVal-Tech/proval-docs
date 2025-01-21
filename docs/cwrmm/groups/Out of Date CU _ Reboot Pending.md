@@ -8,14 +8,15 @@ tags: ['reboot', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Groups computers where Cumulative Update was installed by the Out of Date Cumulative Update (Autofix) task but a reboot is pending.
+This document groups computers where a Cumulative Update was installed by the Out of Date Cumulative Update (Autofix) task, but a reboot is pending.
 
 ## Dependencies
 
-[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)  
-[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)  
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)  
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)  
 
 ## Group Creation
 
@@ -27,7 +28,7 @@ Groups computers where Cumulative Update was installed by the Out of Date Cumula
    This page will appear after clicking on the `Dynamic Group` button:  
    ![Step 2 Continued](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_3.png)
 
-3. Set the group name to `Out of Date CU _ Reboot Pending`.  
+3. Set the group name to `Out of Date CU - Reboot Pending`.  
    Description: `Groups computers where Cumulative Update was installed by the Out of Date Cumulative Update (Autofix) task but a reboot is pending.`  
    ![Step 3](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_4.png)
 
@@ -46,12 +47,12 @@ Groups computers where Cumulative Update was installed by the Out of Date Cumula
    ![Step 6](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_9.png)  
    A new search box will appear.  
    ![Step 6 Continued](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_10.png)  
-   Search and select the `OS` Criteria.  
+   Search and select the `OS` criteria.  
    ![Step 6 Continued](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_11.png)  
-   Select all available instances of `Microsoft Windows` `10`, `11`, `Server 2016`, `2019`, and `2022` in the comparison Field.  
+   Select all available instances of `Microsoft Windows` `10`, `11`, `Server 2016`, `2019`, and `2022` in the comparison field.  
    ![Step 6 Continued](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_12.png)  
    ![Step 6 Continued](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_13.png)  
-   Condition: `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11`, `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`
+   **Condition:** `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11`, `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`
 
 7. Click the `+ Add Criteria` button.  
    ![Step 7](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_14.png)  
@@ -72,15 +73,3 @@ Groups computers where Cumulative Update was installed by the Out of Date Cumula
 
 ![Completed Group 1](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_20.png)  
 ![Completed Group 2](../../../static/img/Out-of-Date-CU-_-Reboot-Pending/image_21.png)
-
-
-
-
-
-
-
-
-
-
-
-

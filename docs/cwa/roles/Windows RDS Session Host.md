@@ -8,24 +8,13 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role detects if the machine is a Remote Desktop Service Session Host and if so, applies this role in the Automate database.
+This role detects if the machine is a Remote Desktop Service Session Host and, if so, applies this role in the Automate database.
 
 ## Settings
 
 | Detection String                                   | Comparator | Result | Applicable OS |
 |---------------------------------------------------|------------|--------|----------------|
-| \{%@powershell "(Get-WindowsFeature RDS-RD-Server).Installed"@%} | Equals     | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@powershell "(Get-WindowsFeature RDS-RD-Server).Installed"@%} | Equals     | True   | Windows        |

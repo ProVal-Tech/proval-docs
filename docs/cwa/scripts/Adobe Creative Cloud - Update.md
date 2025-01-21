@@ -8,11 +8,12 @@ tags: ['adobe', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will either list the available updates or run updates for the Adobe CC apps on the target machine.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -22,7 +23,7 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.
+This section should list the ITGlue documents found in the Related Items sidebar that this script depends on.
 
 - [Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
 
@@ -32,7 +33,7 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 | Name  | Example | Required | Description                                                |
 |-------|---------|----------|------------------------------------------------------------|
-| Mode  | Update  | True     | The mode that the script should be run in. Can only be either "Update" or "List" |
+| Mode  | Update  | True     | The mode in which the script should be run. Can only be either "Update" or "List". |
 
 ## Process
 
@@ -42,15 +43,3 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 - Script log
 - Local log files
-
-
-
-
-
-
-
-
-
-
-
-

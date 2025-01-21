@@ -8,9 +8,10 @@ tags: ['installation', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Targets clients with EDFs enabled to install DUO. Will exclude agents that have EDF set for Exclusion.
+This document targets clients with EDFs enabled for the installation of DUO while excluding agents that have EDF set for exclusion.
 
 ## Dependencies
 
@@ -18,17 +19,4 @@ Targets clients with EDFs enabled to install DUO. Will exclude agents that have 
 
 ## Target
 
-Global - Uses EDFs to scope agents / clients
-
-
-
-
-
-
-
-
-
-
-
-
-
+Global - Uses EDFs to scope agents/clients.

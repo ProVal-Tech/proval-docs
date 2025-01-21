@@ -8,6 +8,7 @@ tags: ['database', 'report', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitor runs every 5 minutes and adds an entry to the [pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>) table for computers whose current state differs from the previously saved state. Its purpose is to keep the table updated. Instead of running a client script at 5-minute intervals, this internal monitor executes the insert query.
@@ -15,20 +16,8 @@ The internal monitor runs every 5 minutes and adds an entry to the [pvl_automate
 ## Dependencies
 
 - [CWM - Automate - Custom Table - pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>)
-- [CWM - Automate - script - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745)
+- [CWM - Automate - Script - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745)
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

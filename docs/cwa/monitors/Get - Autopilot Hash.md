@@ -8,9 +8,10 @@ tags: ['autopilot', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this monitor is to detect the windows machines where Autopilot hash has not been collected yet. It selects the machines where the client-level EDF "Collect Autopilot Hardware Hash" is enabled, the computer-level EDF "Autopilot Hash" is empty, and the script [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) has not been successfully executed on the device within the last 7 days.
+The purpose of this monitor is to detect Windows machines where the Autopilot hash has not been collected yet. It selects the machines where the client-level EDF "Collect Autopilot Hardware Hash" is enabled, the computer-level EDF "Autopilot Hash" is empty, and the script [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) has not been successfully executed on the device within the last 7 days.
 
 ## Dependencies
 
@@ -35,16 +36,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Get-AutopilotHash`
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['installation', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of the solution is to install and remove the extensions from the popular browsers.  
+The purpose of this document is to guide users on how to install and remove extensions from popular web browsers.
 
-Supported Browsers: Chrome, Edge, Brave, Vivaldi, Chromium, and Firefox
+**Supported Browsers:** Chrome, Edge, Brave, Vivaldi, Chromium, and Firefox
 
 ## Associated Content
 
@@ -20,25 +21,13 @@ Supported Browsers: Chrome, Edge, Brave, Vivaldi, Chromium, and Firefox
 |---------------------------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------|
 | [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>) | Task | Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium') |
 | [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)  | Task | Remove Extensions from the Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium'). |
-| [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)   | Task | Installs Extension on Mozilla Firefox Browser.                                                   |
-| [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)    | Task | Removes Extension from Mozilla Firefox Browser.                                                  |
+| [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)   | Task | Install Extensions on the Mozilla Firefox Browser.                                               |
+| [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)    | Task | Remove Extensions from the Mozilla Firefox Browser.                                              |
 
 ## Implementation
 
-Create the following tasks:  
-- [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>)  
-- [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)  
-- [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)  
-- [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)  
-
-
-
-
-
-
-
-
-
-
-
-
+Create the following tasks:
+- [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>)
+- [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)
+- [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)
+- [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)

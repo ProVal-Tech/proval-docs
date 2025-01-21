@@ -8,6 +8,7 @@ tags: ['performance', 'software', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
 This role shows the language used when displaying text in programs that do not support Unicode.
@@ -20,22 +21,8 @@ This role shows the language used when displaying text in programs that do not s
 
 ## Uses
 
-This is helpful to be used in a solution that has dependencies on the system output of a program execution like PowerShell/shell etc. For example, in the United States, the date format is “MM/DD/YYYY”, while in many European countries, it’s “DD/MM/YYYY”. The system locale setting is designed to accommodate these differences.
+This is helpful to be used in a solution that has dependencies on the system output of a program execution like PowerShell/shell, etc. For example, in the United States, the date format is “MM/DD/YYYY,” while in many European countries, it’s “DD/MM/YYYY.” The system locale setting is designed to accommodate these differences.
 
 ## Sample
 
 ![Sample Image](../../static/img/Dynamic-Display-Language-Role/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

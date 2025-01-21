@@ -8,13 +8,14 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-Shows any endpoints with a valid Azure AD Connect Version
+This document shows any endpoints with a valid Azure AD Connect Version.
 
 # Dependencies
 
-This should be a list of ITGlue documents listed in the Related Items sidebar on which this View depends.
+This section lists the ITGlue documents found in the Related Items sidebar on which this view depends.
 
 - [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853853)
 - [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853854)
@@ -25,7 +26,7 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 # View Filters
 
-List all filters applied to this view
+This section lists all filters applied to this view.
 
 | Filter Name                          | Advanced Filter? | Filter Value                  |
 |--------------------------------------|------------------|-------------------------------|
@@ -33,16 +34,4 @@ List all filters applied to this view
 
 ### Export Attachment
 
-Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
-
+Please attach the content XML VSA export to this document.

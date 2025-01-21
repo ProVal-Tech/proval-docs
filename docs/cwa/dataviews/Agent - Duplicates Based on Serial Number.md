@@ -8,11 +8,12 @@ tags: ['database', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the dataview is to locate duplicate machines inside of Automate. These are usually machines where the agent was reinstalled and the old agent was never cleared out of Automate. Duplicate machines can be an issue for licensing as well as just adding unnecessary confusion/complexity to the environment.
+The purpose of the dataview is to locate duplicate machines within Automate. These are usually machines where the agent was reinstalled, and the old agent was never cleared out of Automate. Duplicate machines can pose issues for licensing, as well as introducing unnecessary confusion and complexity to the environment.
 
-Note: This dataview specifically references the biosver column in the computers table. This is where Automate attempts to store the serial number/Service tag of the machine. If the manufacturer of the machine does not include a proper service tag or serial number this dataview will not work. For example, all supermicro machines use 123456789 as their serial number. This may also be the case with any "home" built machines. Automate is not 100% effective at gathering the serial number/asset tags. Virtual Machines are excluded too.
+**Note:** This dataview specifically references the `biosver` column in the computers table. This is where Automate attempts to store the serial number or service tag of the machine. If the manufacturer of the machine does not include a proper service tag or serial number, this dataview will not work. For example, all Supermicro machines use `123456789` as their serial number. This may also be the case with any "home-built" machines. Automate is not 100% effective at gathering the serial number or asset tags. Virtual machines are excluded as well.
 
 ## Columns
 
@@ -23,18 +24,6 @@ Note: This dataview specifically references the biosver column in the computers 
 | Client Name      | Displays the client name of the duplicate machines   |
 | Computer Names   | Displays the computer name of the duplicate machines |
 | Manufacturer     | Displays the manufacturer of the duplicate machines  |
-| Serial Numbers    | Displays the serial number of the duplicate machines  |
-| Mac Addresses    | Displays the Mac address of the duplicate machines   |
+| Serial Numbers   | Displays the serial number of the duplicate machines  |
+| Mac Addresses    | Displays the MAC address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
-
-
-
-
-
-
-
-
-
-
-
-

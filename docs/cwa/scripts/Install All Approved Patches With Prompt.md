@@ -8,16 +8,19 @@ tags: ['installation', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is designed to handle the installation of all pending approved patches on the machine. If the user is not logged in, it will proceed to reboot the machine. However, if the user is logged in, it will provide a popup message with options to select a specific time for rebooting, ranging from within the next 48 hours.  
-If the user chooses a time beyond the 48-hour window, the prompt will repeat up to three times, encouraging the user to select a time within the next 48 hours. If no time is selected after four attempts, the script will schedule the restart after 48 hours.  
-Additionally, the script will display the number of available patches before installing them and inform the user of any patches that failed to install via a popup message.  
-Furthermore, if the script schedules a restart after 48 hours due to user inactivity or failure to select a time, it will send another popup message before restarting the computer forcibly.  
+This script is designed to handle the installation of all pending approved patches on the machine. If the user is not logged in, it will proceed to reboot the machine. However, if the user is logged in, it will provide a popup message with options to select a specific time for rebooting, ranging from within the next 48 hours. 
+
+If the user chooses a time beyond the 48-hour window, the prompt will repeat up to three times, encouraging the user to select a time within the next 48 hours. If no time is selected after four attempts, the script will schedule the restart after 48 hours. 
+
+Additionally, the script will display the number of available patches before installing them and inform the user of any patches that failed to install via a popup message. Furthermore, if the script schedules a restart after 48 hours due to user inactivity or failure to select a time, it will send another popup message before forcibly restarting the computer. 
+
 While the script can be executed from Automate, it is recommended to utilize it from the [Tray Menu](https://docs.connectwise.com/ConnectWise_Automate_Documentation/060/020/010#:~:text=setting%20this%20value.-,Tray%20Menus,-The%C2%A0Tray%20Menus) within an agent template for a better user experience.
 
 **Note:**  
-- The Logo displayed in the sample prompts is for exemplary purposes only. The prompter will fetch and display the logo from the concerned Automate environment.
+- The logo displayed in the sample prompts is for exemplary purposes only. The prompter will fetch and display the logo from the concerned Automate environment.
 - The machine will be restarted immediately if the user selects the `Reboot Now` button for a `Post Patch Reboot Confirmation` prompt.
 
 ## Sample Run
@@ -35,7 +38,7 @@ While the script can be executed from Automate, it is recommended to utilize it 
 **CASE 1:** If the approved production patches are available on the computer to install  
 ![Case 1](../../../static/img/Install-All-Approved-Patches-With-Prompt/image_2.png)
 
-**CASE 2:** If there are no patches available to install. The script will exit if there are no approved production patches are missing on the computer.  
+**CASE 2:** If there are no patches available to install. The script will exit if there are no approved production patches missing on the computer.  
 ![Case 2](../../../static/img/Install-All-Approved-Patches-With-Prompt/image_3.png)
 
 #### Post Patch Reboot Confirmation
@@ -71,15 +74,3 @@ A pop-up message will appear at the bottom right corner of the screen to remind 
 
 - Script Log
 - Prompt on End Machine
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['installation', 'software', 'uninstallation', 'update']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script will install the Datto Workplace 10.3.0.281 and uninstall any Datto Workplace which is of another version.
+This script will install Datto Workplace 10.3.0.281 and uninstall any other versions of Datto Workplace.
 
 ## Sample Run
 
@@ -22,24 +23,11 @@ This script will install the Datto Workplace 10.3.0.281 and uninstall any Datto 
 
 ## Process
 
-1. Check for installed Datto Workplace; if not installed, install it.
-2. Check if the current installed version is 10.3.0.281; if so, exit. If not, continue.
+1. Check for installed Datto Workplace; if not installed, proceed with the installation.
+2. Check if the currently installed version is 10.3.0.281; if so, exit. If not, continue.
 3. Uninstall the old version.
 4. Install the new version.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

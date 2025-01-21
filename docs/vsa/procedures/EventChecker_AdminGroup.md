@@ -8,18 +8,7 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
+
+## Summary
 
 Checks Security Events for Admin Memberships
-
-
-
-
-
-
-
-
-
-
-
-

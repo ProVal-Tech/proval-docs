@@ -8,11 +8,12 @@ tags: ['connectwise', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Select this custom Field to exclude a site from Huntress Deployment. It is being utilized by '[CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>)' group.
+Select this custom field to exclude a site from Huntress Deployment. It is being utilized by the '[CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>)' group.
 
-# Create the Custom Field
+## Create the Custom Field
 
 ![Image](../../../static/img/Exclude-Huntress/image_1.png)
 
@@ -23,16 +24,3 @@ Select this custom Field to exclude a site from Huntress Deployment. It is being
 **Level:** Site  
 **Description:** Select to Exclude Site from Huntress Deployment  
 **Editable:** Yes  
-
-
-
-
-
-
-
-
-
-
-
-
-

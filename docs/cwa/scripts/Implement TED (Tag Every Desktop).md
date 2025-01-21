@@ -8,23 +8,24 @@ tags: ['installation', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The purpose of the script is to schedule a task on the computer that runs the [TED (Tag Every Desktop)](https://github.com/HealthITAU/TED) application with the configured parameters upon user logon.  
-Requirement: PowerShell v5.1+
+**Requirement:** PowerShell v5.1+
 
 ## Sample Run
 
-Without Arguments:
+### Without Arguments:
 
 ![Without Arguments](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_1.png)  
 The result on End Machine:  
 ![Result on End Machine 1](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_2.png)  
 ![Result on End Machine 2](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_3.png)  
 
-With Arguments:  
+### With Arguments:  
 ![With Arguments](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_4.png)  
-Arguments used: [ ](-di "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -li "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -f Arial -fs 14 -ls 5 -hp 10 -vp 10 -line "Hello, @userName" -line "Computer Name: @machineName" -line "OS: @osName" -line "OS Version: @osVersion")  
+Arguments used: `-di "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -li "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -f Arial -fs 14 -ls 5 -hp 10 -vp 10 -line "Hello, @userName" -line "Computer Name: @machineName" -line "OS: @osName" -line "OS Version: @osVersion"`  
 The result on End Machine:  
 ![Result on End Machine 3](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_5.png)  
 ![Result on End Machine 4](../../../static/img/Implement-TED-(Tag-Every-Desktop)/image_6.png)  
@@ -43,24 +44,14 @@ The result on End Machine:
 | WorkingDirectory      | C:/ProgramData/_Automation/Application/TED |
 | ScheduledTaskName     | Implement TED (Tag Every Desktop)    |
 
-#### User Parameters
+### User Parameters
 
 | Name      | Example                                                                                                                                                                                                                                           | Required | Description                          |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------------------------|
-| Argument  | -di "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -li "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -f Arial -fs 14 -ls 5 -hp 10 -vp 10 -line "Hello, @userName" -line "Computer Name: @machineName" -line "OS: @osName" -line "OS Version: @osVersion" | False    | Switches/Arguments to run the TED tool with. |
+| Argument  | `-di "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -li "[https://i.imgur.com/g1v5XZP.jpg](https://i.imgur.com/g1v5XZP.jpg)" -f Arial -fs 14 -ls 5 -hp 10 -vp 10 -line "Hello, @userName" -line "Computer Name: @machineName" -line "OS: @osName" -line "OS Version: @osVersion"` | False    | Switches/Arguments to run the TED tool with. |
 
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
 
 

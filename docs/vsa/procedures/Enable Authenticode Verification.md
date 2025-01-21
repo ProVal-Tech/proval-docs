@@ -8,9 +8,10 @@ tags: ['recovery', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is used to Enable the Authenticode Verification on the Windows machines, a reboot required for the changes to take effect.
+This script is used to enable the Authenticode Verification on Windows machines. A reboot is required for the changes to take effect.
 
 ## Example Agent Procedure Log
 
@@ -37,19 +38,8 @@ This script is used to Enable the Authenticode Verification on the Windows machi
 | 10:36:06 am 23-Dec-24   | Execute Powershell Command-0002              | Powershell is present.                                                                       | kunal.kumar   |
 | 10:36:05 am 23-Dec-24   | Windows - 32 or 64 bit OS                    | Success THEN                                                                                | kunal.kumar   |
 | 10:36:05 am 23-Dec-24   | Windows - 32 or 64 bit OS-0011               | Windows OS is 64-bit.                                                                        | kunal.kumar   |
-| 10:35:57 am 23-Dec-24   | Run Now - Enable Authenticode Verification    | Admin kunal.kumar scheduled procedure Run Now - Enable Authenticode Verification to run at Dec 23 2024 10:35AM | kunal.kum     |
+| 10:35:57 am 23-Dec-24   | Run Now - Enable Authenticode Verification    | Admin kunal.kumar scheduled procedure Run Now - Enable Authenticode Verification to run at Dec 23 2024 10:35 AM | kunal.kumar   |
 
 ## Output
 
 Agent procedure log.
-
-
-
-
-
-
-
-
-
-
-

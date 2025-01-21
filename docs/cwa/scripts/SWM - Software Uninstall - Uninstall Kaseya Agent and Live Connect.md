@@ -8,9 +8,10 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the script is to remove `Kaseya Agent` and `Live Connect` applications from Windows computers.
+The purpose of the script is to remove the `Kaseya Agent` and `Live Connect` applications from Windows computers.
 
 ## Sample Run
 
@@ -20,20 +21,8 @@ The purpose of the script is to remove `Kaseya Agent` and `Live Connect` applica
 
 | Name        | Description                                                        |
 |-------------|--------------------------------------------------------------------|
-| ShellResult | Output of PowerShell script attempting to remove the applications.  |
+| ShellResult | Output of the PowerShell script attempting to remove the applications.  |
 
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

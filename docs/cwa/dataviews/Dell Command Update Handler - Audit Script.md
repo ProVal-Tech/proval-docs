@@ -8,17 +8,5 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 It appears that you have provided an empty HTML document. If you have specific HTML content that you would like to convert to Markdown, please provide that content, and I will be happy to assist you with the conversion!
-
-
-
-
-
-
-
-
-
-
-
-
-

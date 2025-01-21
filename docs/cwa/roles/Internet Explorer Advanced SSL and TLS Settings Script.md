@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This contains the SSL and TLS info being set by the dependent script for the IE on the machine.
+This document contains the SSL and TLS information set by the dependent script for Internet Explorer on the machine.
 
 ## Dependencies
 
@@ -20,24 +21,13 @@ This contains the SSL and TLS info being set by the dependent script for the IE 
 
 | Column                       | Description                                                     |
 |------------------------------|-----------------------------------------------------------------|
-| Client Name                  | Client Name                                                    |
-| Location Name                | Location Name                                                  |
-| Computer Name                | Computer Name where IE advanced setting changed                |
+| Client Name                  | Name of the client                                             |
+| Location Name                | Name of the location                                          |
+| Computer Name                | Name of the computer where the IE advanced settings were changed |
 | Operating System             | Operating system of the agent                                  |
 | Last Contact                 | Last contact of the agent with the RMM                        |
-| Contact                      | Last user name                                                |
-| Contact Email                | User email                                                    |
-| IE Advanced Security Status   | Detail information of what TLS and SSL are set for Internet Explorer |
-
-
-
-
-
-
-
-
-
-
-
+| Contact                      | Last username                                                 |
+| Contact Email                | User's email                                                 |
+| IE Advanced Security Status   | Detailed information on what TLS and SSL settings are configured for Internet Explorer |
 
 

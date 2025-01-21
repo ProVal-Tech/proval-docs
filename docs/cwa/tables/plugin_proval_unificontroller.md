@@ -8,6 +8,7 @@ tags: ['database', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Child of Solution
 
 [EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](<../../solutions/CWA - Update Table Data - UnifiController.md>)  
@@ -27,22 +28,10 @@ Holds requested Unifi Controller data specific to the controller only.
 
 | Column       | Type   | Explanation                                                                 |
 |--------------|--------|-----------------------------------------------------------------------------|
-| ControllerID | String | The Unique Controller Id from the Unifi Controller.                        |
-| ClientID     | Int    | The ID of the Client that housed the computer that ran this script.       |
-| LocationID   | Int    | The ID of the Location that housed the computer that ran this script.     |
-| HostName     | String | The Name of the Computer that ran this script.                            |
-| Port         | Int    | The Port that the Controller communicates on.                             |
-| UserName     | String | The User name for the admin user on the Unifi Controller.                 |
+| ControllerID | String | The unique Controller ID from the Unifi Controller.                        |
+| ClientID     | Int    | The ID of the client that housed the computer that ran this script.       |
+| LocationID   | Int    | The ID of the location that housed the computer that ran this script.     |
+| HostName     | String | The name of the computer that ran this script.                            |
+| Port         | Int    | The port that the Controller communicates on.                             |
+| UserName     | String | The username for the admin user on the Unifi Controller.                 |
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
-
-
-
-
-
-
-
-
-
-
-
-

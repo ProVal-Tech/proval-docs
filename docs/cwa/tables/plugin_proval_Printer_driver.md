@@ -8,15 +8,16 @@ tags: ['database', 'report', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) script in order to feed into the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventoy Script.md>) dataview.
+To store the data retrieved by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) script to feed into the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventory Script.md>) dataview.
 
 ## Dependencies
 
 - [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>)
 - [CWM - Automate - Solution - Get - Printer Driver Inventory](<../../solutions/Get - Printer Driver Inventory.md>)
-- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventoy Script.md>)
+- [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventory Script.md>)
 
 ## Tables
 
@@ -24,32 +25,20 @@ To store the data grabbed by [CWM - Automate - Script - Get - Printer Driver Inv
 
 | Column             | Type          | Explanation                                                  |
 |--------------------|---------------|-------------------------------------------------------------|
-| SerialNumber       | int(10)      | An Auto Incremental Column to serve as a primary key for the table |
-| Computerid         | int(10)      | Computerid                                                  |
-| Name               | varchar(256)  | Name of the Printer                                         |
-| PrinterEnvironment  | varchar(100)  | Printer Environment e.g., Windows x64 or Windows x86      |
-| Path               | varchar(256)  | Physical Path to the Printer Driver                        |
-| DataFile           | varchar(256)  | Physical Path to the Driver's Data File                    |
-| ConfigFile         | varchar(256)  | Physical Path to the Driver's Config File                  |
-| HelpFile           | varchar(256)  | Physical Path to the Driver's Help File (if any)          |
+| SerialNumber       | int(10)      | An auto-incremental column that serves as the primary key for the table |
+| Computerid         | int(10)      | Identifier for the computer                                  |
+| Name               | varchar(256)  | Name of the printer                                         |
+| PrinterEnvironment  | varchar(100)  | Printer environment, e.g., Windows x64 or Windows x86      |
+| Path               | varchar(256)  | Physical path to the printer driver                        |
+| DataFile           | varchar(256)  | Physical path to the driver's data file                    |
+| ConfigFile         | varchar(256)  | Physical path to the driver's config file                  |
+| HelpFile           | varchar(256)  | Physical path to the driver's help file (if any)          |
 | DependentFiles     | varchar(4096) | Path to the files dependent on this printer driver         |
-| DefaultDataTypes   | varchar(20)   | Default extensions to print using this printer             |
-| Manufacturer       | varchar(64)   | Manufacturer                                               |
-| HardwareID         | varchar(64)   | HardwareID of the Printer                                  |
-| Provider           | varchar(256)  | Provider/Manufacturer                                      |
-| PrintProcessor     | varchar(128)  | Printer Processor                                          |
-| InfPath            | varchar(256)  | Physical path to the Driver's inf file                     |
-| DriverVersion      | varchar(32)   | Driver Version                                            |
-| ScriptRunTime      | varchar(25)   | Script Run Time                                           |
-
-
-
-
-
-
-
-
-
-
-
-
+| DefaultDataTypes   | varchar(20)   | Default extensions for printing using this printer         |
+| Manufacturer       | varchar(64)   | Manufacturer of the printer                                 |
+| HardwareID         | varchar(64)   | Hardware ID of the printer                                  |
+| Provider           | varchar(256)  | Provider/manufacturer                                       |
+| PrintProcessor     | varchar(128)  | Printer processor                                           |
+| InfPath            | varchar(256)  | Physical path to the driver's INF file                     |
+| DriverVersion      | varchar(32)   | Driver version                                             |
+| ScriptRunTime      | varchar(25)   | Script run time                                            |

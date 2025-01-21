@@ -8,6 +8,7 @@ tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This custom field is used to store and display the results of the [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442) task.
@@ -22,26 +23,13 @@ This custom field is used to store and display the results of the [CW RMM - Task
 |---------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Latest Cumulative Update   | Machine                                 | Will contain the results of the Cumulative Update Audit task. This task checks the cumulative update version on an endpoint and reports the details back to this field. |
 
----
-
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/Latest-Cumulative-Update/image_1.png)
 ![Screenshot 2](../../../static/img/Latest-Cumulative-Update/image_2.png)
 
-Description: Will contain the results of the Cumulative Update Audit task. This task checks the cumulative update version of an endpoint and reports the details back to this field.
+**Description:** Will contain the results of the Cumulative Update Audit task. This task checks the cumulative update version of an endpoint and reports the details back to this field.
 
 ## Sample Value
 
 ![Sample Value](../../../static/img/Latest-Cumulative-Update/image_3.png)
-
-
-
-
-
-
-
-
-
-
-

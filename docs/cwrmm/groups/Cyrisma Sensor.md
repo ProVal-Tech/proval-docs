@@ -8,6 +8,7 @@ tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The groups mentioned below are created to deploy and audit the Cyrisma Sensor.
@@ -22,7 +23,7 @@ The groups mentioned below are created to deploy and audit the Cyrisma Sensor.
 |--------------------------------|-----------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cyrisma Sensor Deployment       | Dynamic Group                          | This group is created to deploy the task [CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) |
 | Cyrisma Deployment Failure Check | Dynamic Group                          | This group is designed to schedule the monitor [CW RMM - Monitor - CRI Agent Deployment Status Check](<../monitors/CRI Agent Deployment Status Check.md>) |
-| Cyrisma Installed               | Dynamic Group                          | This group contains the agents where the Cyrisma sensor is installed for the auditing.           |
+| Cyrisma Installed               | Dynamic Group                          | This group contains the agents where the Cyrisma sensor is installed for auditing.               |
 
 ## Create Group
 
@@ -47,6 +48,7 @@ Create Dynamic Groups:
    ![Image](../../../static/img/Cyrisma-Sensor/image_3.png)
 
    Criteria:
+
    - Cryisma_Status should not be blank
 
 3. **Cyrisma Installed**
@@ -54,16 +56,5 @@ Create Dynamic Groups:
    ![Image](../../../static/img/Cyrisma-Sensor/image_4.png)
 
    Criteria:
-   - Installed Software Contains any of 'CYRISMA'
 
-
-
-
-
-
-
-
-
-
-
-
+   - Installed Software contains any of 'CYRISMA'

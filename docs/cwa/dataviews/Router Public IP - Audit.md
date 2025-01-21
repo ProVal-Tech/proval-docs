@@ -8,6 +8,7 @@ tags: ['networking', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview shows the public IP address of the location's router.
@@ -16,21 +17,8 @@ This dataview shows the public IP address of the location's router.
 
 | Column                       | Description                                         |
 |------------------------------|-----------------------------------------------------|
-| Client Name                  | Client the router belongs to.                       |
-| Location Name                | Location Name that holds the router.                |
-| Router Address               | Router Public IP Address.                           |
-| Router Access Count          | Number of agents connected with the Router Public IP.|
-| Agent Name Using Router      | Name of the agents that are connected to the Router Public IP.|
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name                  | The client to which the router belongs.             |
+| Location Name                | The name of the location that holds the router.     |
+| Router Address               | The router's public IP address.                     |
+| Router Access Count          | The number of agents connected to the router's public IP. |
+| Agent Name Using Router      | The names of the agents that are connected to the router's public IP. |

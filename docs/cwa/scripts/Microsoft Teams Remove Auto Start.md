@@ -8,11 +8,12 @@ tags: ['performance', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will remove the autostart entry for MS Teams for all users.
 
-Time Saved by Automation: 15 Minutes
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -20,20 +21,8 @@ Time Saved by Automation: 15 Minutes
 
 ## Process
 
-- This script runs a PowerShell script to remove the registry keys that cause MS Teams to start at login for all users.
+- This script runs a PowerShell command to remove the registry keys that cause MS Teams to start at login for all users.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

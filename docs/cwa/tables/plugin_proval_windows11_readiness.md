@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 The custom table stores the data gathered by the [Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>) script.
@@ -22,24 +23,11 @@ The custom table stores the data gathered by the [Windows - Check Windows 11 Com
 
 | Column      | Type     | Explanation                                                                                     |
 |-------------|----------|-------------------------------------------------------------------------------------------------|
-| Computerid  | INT      | To Store the Computerid.                                                                        |
-| Capable     | TINYINT  | To depict whether the machine is up-gradable to windows 11 or not. 0 = capable and 1 = not capable. |
-| Secureboot  | TINYINT  | Secureboot is enabled or not. 0 = disabled and 1 = enabled.                                   |
-| Memory      | TINYINT  | Physical Memory is meeting the upgrade criteria or not. 0 = failed and 1 = pass.              |
-| CPU         | TINYINT  | Processor is supported for the Windows 11 upgrade or not. 0 = failed and 1 = pass.           |
-| OSDisk      | TINYINT  | Drive Size of OS drive is compatible with the windows 11 upgrade or not. 0 = failed and 1 = pass. |
-| TPM         | TINYINT  | TPM version is compatible with the windows 11 upgrade or not. 0 = failed and 1 = pass.      |
+| Computerid  | INT      | Stores the Computer ID.                                                                         |
+| Capable     | TINYINT  | Indicates whether the machine is upgradable to Windows 11 or not. 0 = capable, 1 = not capable. |
+| Secureboot  | TINYINT  | Indicates whether Secure Boot is enabled. 0 = disabled, 1 = enabled.                          |
+| Memory      | TINYINT  | Indicates whether the physical memory meets the upgrade criteria. 0 = failed, 1 = pass.       |
+| CPU         | TINYINT  | Indicates whether the processor is supported for the Windows 11 upgrade. 0 = failed, 1 = pass.|
+| OSDisk      | TINYINT  | Indicates whether the OS drive size is compatible with the Windows 11 upgrade. 0 = failed, 1 = pass. |
+| TPM         | TINYINT  | Indicates whether the TPM version is compatible with the Windows 11 upgrade. 0 = failed, 1 = pass. |
 | LastRan     | DATETIME | Timestamp for the collected data.                                                               |
-
-
-
-
-
-
-
-
-
-
-
-
-

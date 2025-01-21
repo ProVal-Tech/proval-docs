@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Dataview displays information about computers that were previously retired and are still checking in with Automate.
@@ -16,7 +17,7 @@ Dataview displays information about computers that were previously retired and a
 
 | Column                   | Description                           |
 |--------------------------|---------------------------------------|
-| Current Computerid       | Computerid                            |
+| Current Computer ID      | Computer ID                           |
 | Current Client Name      | Client Name                           |
 | Previous Client Name     | Client Name when it was retired       |
 | Current Location Name    | Location Name                         |
@@ -27,17 +28,5 @@ Dataview displays information about computers that were previously retired and a
 | Last Contact             | Last Contact                          |
 | Operating System         | Operating System                      |
 | Serial Number            | Serial Number of Computer             |
-| Last User Name           | Last logged in user name              |
+| Last User Name           | Last logged-in user name              |
 | Retire Comments          | Comments added while retiring          |
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,27 +8,17 @@ tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor is designed to detect the agents whose reboot was done by the script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It detects the agents and triggers the script [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) to clear the EDFs so they can be re-triggered at another time.
+This internal monitor is designed to detect agents whose reboot was initiated by the script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It identifies these agents and triggers the script [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) to clear the EDFs so they can be re-triggered at a later time.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421)
+- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421)
 
 ## Target
 
-This monitor is an automation-driven reboot prompt removal monitor. This should only be applied to Windows Workstations.
+This monitor is an automation-driven reboot prompt removal tool. It should only be applied to Windows workstations.
 
-Windows Workstations - Should be run on non-servers and must be running Windows.
-
-
-
-
-
-
-
-
-
-
-
+- **Windows Workstations**: This monitor should be run on non-server machines that are running Windows.

@@ -8,15 +8,16 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of this solution is to install the QuickPass agent on Windows machines where it's not already installed.
+The purpose of this document is to install the QuickPass agent on Windows machines where it is not already installed.
 
 ## Associated Content
 
 | Content                                                                                               | Type           | Function                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------|
-| [SWM - Software Install - Script - Deploy QuickPass Agent](<../cwa/scripts/Deploy QuickPass Agent.md>) | Script         | This script installs QuickPass Agent on Windows machines where it's not already installed.                               |
+| [SWM - Software Install - Script - Deploy QuickPass Agent](<../cwa/scripts/Deploy QuickPass Agent.md>) | Script         | This script installs the QuickPass Agent on Windows machines where it is not already installed.                          |
 | [SWM - Software Install - Internal Monitor - Agents Missing QuickPass](https://proval.itglue.com/DOC-7339781-14875676) | Internal Monitor | This is a remote PowerShell monitor that detects whether the AD Recycle Bin is enabled or disabled on the Windows Infrastructure master. |
 | `△ Custom - Execute Script - Deploy QuickPass Agent`                                               | Alert Template | Executes the script [SWM - Software Install - Script - Deploy QuickPass Agent](<../cwa/scripts/Deploy QuickPass Agent.md>) against the computers detected in the monitor set [SWM - Software Install - Internal Monitor - Agents Missing QuickPass](https://proval.itglue.com/DOC-7339781-14875676) |
 
@@ -36,25 +37,10 @@ The purpose of this solution is to install the QuickPass agent on Windows machin
 
 5. Configure the solution as follows:
    - Navigate to Automation → Scripts within the CWA Control Center.
-     - Debug Script [SWM - Software Install - Script - Deploy QuickPass Agent](<../cwa/scripts/Deploy QuickPass Agent.md>) on any online machine with User Parameter 'Set_environment' = 1
-     - It will create the System property required for the script.
+     - Debug Script [SWM - Software Install - Script - Deploy QuickPass Agent](<../cwa/scripts/Deploy QuickPass Agent.md>) on any online machine with User Parameter 'Set_environment' = 1.
+     - This will create the System property required for the script.
    - Navigate to Automation → Monitors within the CWA Control Center.
      - [SWM - Software Install - Internal Monitor - Agents Missing QuickPass](https://proval.itglue.com/DOC-7339781-14875676)
-       - Configure with the alert template: `△ Custom - Execute Script - Deploy QuickPass Agent`
+       - Configure with the alert template: `△ Custom - Execute Script - Deploy QuickPass Agent`.
        - Right-click and Run Now to start the monitor.
-   - Below EDFs and System Property should be populated by the client to make the solution work. For more details on these follow the document [SWM - Software Install - Script - Deploy QuickPass Agent](<../cwa/scripts/Deploy QuickPass Agent.md>)
-     - Client EDF - QuicPass
-     - Client EDF - QuickPass Agent ID
-     - System Property - QuickpassInstallToken
-
-
-
-
-
-
-
-
-
-
-
-
+   - The following EDFs and System Property should be populated by the client to ensure the solution works. For more details, refer to the document [SWM - Software Install - Script - Deploy QuickPass

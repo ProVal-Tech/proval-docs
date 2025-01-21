@@ -8,11 +8,12 @@ tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script aims to generate view named `pvl_Scheduled_Scripts`, and subsequently grant access permissions to all currently active Automate users.
+The script aims to generate a view named `pvl_Scheduled_Scripts` and subsequently grant access permissions to all currently active Automate users.
 
-Run the script on any computer to create the views, and afterward, remove the script from the environment.
+Run the script on any computer to create the view, and afterward, remove the script from the environment.
 
 ## Sample Run
 
@@ -21,14 +22,3 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom View
-
-
-
-
-
-
-
-
-
-
-

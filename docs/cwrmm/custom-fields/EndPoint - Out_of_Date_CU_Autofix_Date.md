@@ -8,6 +8,7 @@ tags: ['report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Stores the install date of the latest CU performed by the Out of Date Cumulative Update (Autofix) task.
@@ -18,19 +19,7 @@ Stores the install date of the latest CU performed by the Out of Date Cumulative
 |---------------------------------|----------|-----------|-----------------------|-----------------------------------------------------------------------------|----------|
 | Out_of_Date_CU_Autofix_Date    | ENDPOINT | Text Box  | 0001-01-01 00:00:00  | Stores the install date of the latest CU performed by the Out of Date Cumulative Update (Autofix) task. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Date/image_1.png)  
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Date/image_2.png)  
-
-
-
-
-
-
-
-
-
-
-
-

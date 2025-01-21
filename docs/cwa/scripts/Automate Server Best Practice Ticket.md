@@ -8,11 +8,12 @@ tags: ['firewall', 'gpo', 'permissions', 'security', 'tls']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script goes through the process of Auditing and setting up hardening rules and policies relating to the recently published CW document [Hardening Automate (on-prem) Servers](https://proval.itglue.com/DOC-5078775-8025389).
+This script goes through the process of auditing and setting up hardening rules and policies relating to the recently published CW document [Hardening Automate (on-prem) Servers](https://proval.itglue.com/DOC-5078775-8025389).
 
-Time Saved by Automation: 30 Minutes
+**Time Saved by Automation:** 30 Minutes
 
 ## Sample Run
 
@@ -21,44 +22,40 @@ Time Saved by Automation: 30 Minutes
 ## Variables
 
 - `@Admins@`: Name of the local admins.
-- `@PrivTicOutput@`: Output of command "SecEdit /export /cfg $TemplateFilename /areas USER_RIGHTS".
+- `@PrivTicOutput@`: Output of the command `SecEdit /export /cfg $TemplateFilename /areas USER_RIGHTS`.
 - `@OpenPorts@`: List of the open ports to be closed.
-- `@LTSharePermissions@`: Output of the command, "Get-SmbShareAccess -Name 'LTShare' | select-object accountname, accessright".
-- `@CperUsers@`: List of Automate users with permissions to connectwise control plugin.
+- `@LTSharePermissions@`: Output of the command `Get-SmbShareAccess -Name 'LTShare' | select-object accountname, accessright`.
+- `@CperUsers@`: List of Automate users with permissions to the ConnectWise Control plugin.
 
 ## Process
 
-> Get the name of users/groups added in Administrators group and add to the ticket.  
-> Sets following GPOs:  
-> --> Do Not Allow Anonymous Enumeration of SAM accounts and Shares  
-> --> Disallow AutoPlay for non-volume devices  
-> --> Do not execute any autorun commands  
-> --> Turn off AutoPlay  
-> --> Always install with elevated privileges  
-> Get the name of users/groups acting as Operating System and add to the ticket.  
-> Checks the Open ports on the windows firewall for following and will add the port number to the ticket if open  
-> --> Port 70 TCP, Ports 70-74 UDP, Port 8002 TCP/UDP, Ports 40000-40050 TCP, Ports 40000-41000 UDP, Port 3389  
-> Following ports are checked only if server is placed in Domain  
-> --> Port 135: MSRPC, Port 139: NetBios, Port 445: Microsoft-ds  
-> Disables TLS1.0 and TLS1.1  
-> Checks the permissions assigned to the users/user classes for "LTSHARE" and add the permissions in ticket for the client to review. Apart from this sets the permissions for EVERYONE to read only.  
-> Disable HTTP Headers  
-> Disable HTTP Options  
-> Checks and add the users to the ticket with the permissions of Connectwise Control plugin.  
+> Get the names of users/groups added to the Administrators group and add them to the ticket.  
+> Set the following GPOs:  
+> - Do Not Allow Anonymous Enumeration of SAM accounts and Shares  
+> - Disallow AutoPlay for non-volume devices  
+> - Do not execute any autorun commands  
+> - Turn off AutoPlay  
+> - Always install with elevated privileges  
+> Get the names of users/groups acting as Operating System and add them to the ticket.  
+> Check the open ports on the Windows firewall for the following and add the port number to the ticket if open:  
+> - Port 70 TCP  
+> - Ports 70-74 UDP  
+> - Port 8002 TCP/UDP  
+> - Ports 40000-40050 TCP  
+> - Ports 40000-41000 UDP  
+> - Port 3389  
+> The following ports are checked only if the server is placed in a Domain:  
+> - Port 135: MSRPC  
+> - Port 139: NetBios  
+> - Port 445: Microsoft-ds  
+> Disable TLS 1.0 and TLS 1.1.  
+> Check the permissions assigned to the users/user classes for "LTSHARE" and add the permissions in the ticket for the client to review. Additionally, set the permissions for EVERYONE to read-only.  
+> Disable HTTP Headers.  
+> Disable HTTP Options.  
+> Check and add the users to the ticket with the permissions of the ConnectWise Control plugin.  
 > [Automate Comprehensive Best Practice Guide](https://university.connectwise.com/content/userdocs/business_knowledge/Automate_Comprehensive_Best_Practice_Guide.pdf)
 
 ## Output
 
 - Ticket
 - Script Log
-
-
-
-
-
-
-
-
-
-
-

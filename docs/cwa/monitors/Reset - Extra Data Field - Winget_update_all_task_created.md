@@ -8,14 +8,15 @@ tags: ['sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 #### Launch RAWSQL Monitor
 
-1. Launch a fresh RAWSQL monitor, wherein a RAWSQL monitor set is an internal monitor featuring the string `RAWSQL` in both the `Table to Check` and `Field to Check` fields.  
+1. Launch a fresh RAWSQL monitor. A RAWSQL monitor set is an internal monitor featuring the string `RAWSQL` in both the `Table to Check` and `Field to Check` fields.  
    ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_1.png)
 
 #### For Client Level Changes
 
-2. Copy the provided SQL query and replace the `\<Clientid(s)>` with the comma-separated list of clients to disable the user-level task.  
+2. Copy the provided SQL query and replace `\\<Clientid(s)>` with a comma-separated list of clients to disable the user-level task.  
 
    ```sql
    REPLACE INTO extrafielddata 
@@ -35,7 +36,7 @@ unlisted: false
      computers c 
    WHERE 
      c.os REGEXP 'Windows 1[01]' 
-     AND c.clientid in (\<strong>&lt;Clientid(s)&gt;\</strong>); 
+     AND c.clientid in (\\<strong>&lt;Clientid(s)&gt;\\</strong>); 
    CALL v_extradata(1, 'Computers'); 
    CALL v_extradatarefresh(1, 'Computers');
    ```
@@ -101,14 +102,3 @@ unlisted: false
 
 4. Reload the system cache to ensure all changes are updated.  
    ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_6.png)
-
-
-
-
-
-
-
-
-
-
-

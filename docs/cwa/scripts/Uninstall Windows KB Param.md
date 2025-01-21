@@ -3,15 +3,17 @@ id: 'fd611b68-7cd6-4a6a-bee1-3d772ecd9a27'
 title: 'Uninstall Windows Update Script'
 title_meta: 'Uninstall Windows Update Script for Windows Systems'
 keywords: ['uninstall', 'windows', 'update', 'kbid', 'reboot']
-description: 'This script assists in the uninstallation of a specific Windows update by allowing the user to input the KBID. It includes an option to authorize a system restart if necessary, while also striving to prevent an immediate reboot unless required by the update.'
+description: 'This script assists in the uninstallation of a specific Windows update by allowing the user to input the KBID. It includes an option to authorize a system restart if necessary while also striving to prevent an immediate reboot unless required by the update.'
 tags: ['reboot', 'software', 'uninstallation', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script is designed to facilitate the uninstallation of a specific Windows update on a computer. To achieve this, it requires the user to input the KBID (Knowledge Base Identifier) of the Windows update through a designated user parameter. Additionally, there is an option to authorize a system restart if the update necessitates it, which can be accomplished by providing a '1' in the user parameter for reboot.  
-The script will endeavour to remove the targeted update without initiating a system restart when the reboot parameter is either left blank or set to '0'.  
+The script is designed to facilitate the uninstallation of a specific Windows update on a computer. To achieve this, it requires the user to input the KBID (Knowledge Base Identifier) of the Windows update through a designated user parameter. Additionally, there is an option to authorize a system restart if the update necessitates it, which can be accomplished by providing a '1' in the user parameter for reboot. 
+
+The script will endeavor to remove the targeted update without initiating a system restart when the reboot parameter is either left blank or set to '0'.
 
 **Caution:** It's worth noting, however, that in certain scenarios, the update itself may trigger an involuntary system reboot.
 
@@ -35,15 +37,3 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

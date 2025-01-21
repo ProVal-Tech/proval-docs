@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Disables fast boot in the registry
+This document outlines the steps to disable fast boot in the Windows registry.
 
 ## Sample Run
 
@@ -18,12 +19,12 @@ Disables fast boot in the registry
 |-------------------------|---------------------------|------------------------------------------------------------------------|-----------------------------|
 | 11:39:23 am 3-May-22   | Fast Startup Disable       | Success THEN                                                          | provaltech.com/dan.hicks    |
 | 11:39:23 am 3-May-22   | Fast Startup Disable       | Fast Boot Disabled. Please reboot this endpoint when convenient for settings to take effect. | provaltech.com/dan.hicks    |
-| 11:39:15 am 3-May-22   | Run Now - Fast Startup Disable | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Fast Startup Disable to run at May 3 2022 11:39AM |                             |
+| 11:39:15 am 3-May-22   | Run Now - Fast Startup Disable | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Fast Startup Disable to run at May 3, 2022, 11:39 AM |                             |
 
 ## Process
 
-Performs the following command:  
-`REG ADD "HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Session Manager/Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f`
+The following command is executed:  
+`REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f`
 
 ## Output
 
@@ -32,14 +33,3 @@ Performs the following command:
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-

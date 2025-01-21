@@ -8,14 +8,15 @@ tags: ['database', 'performance', 'report', 'security', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will store the department detail of the last logged in user on each machine of the client environment.
+This dataview will store the department detail of the last logged in user on each machine in the client environment.
 
 ## Dependencies
 
 - [plugin_proval_computer_department](<./plugin_proval_computer_department.md>)
-- [Computer Department Auditing[DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
+- [Computer Department Auditing [DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
 
 ## Columns
 
@@ -33,14 +34,14 @@ This dataview will store the department detail of the last logged in user on eac
 | Available Memory     | Available memory of the agent                          |
 | Drive Letter         | Drive letter of the agent                              |
 | Drive Size           | Drive total size                                       |
-| Drive Free space     | Drive free space on the agent                          |
+| Drive Free Space     | Drive free space on the agent                          |
 | Drive Model          | Drive file model information                            |
-| Drive Missing        | Drive missing information whether drive is missing in CW Automate |
-| Drive Free Percent    | Drive Free info in the percentage format               |
+| Drive Missing        | Information on whether the drive is missing in CW Automate |
+| Drive Free Percent    | Drive free info in percentage format                   |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   c.clientid, 
   c.locationid, 
@@ -76,13 +77,17 @@ SELECT
   CONCAT(
     ROUND(
       (
-        (d.Free / d.Size)* 100
+        (d.Free / d.Size) * 100
       ), 
       0
     ), 
     '%'
   ) AS `Drive Free Percent`, 
-  CASE WHEN ve.`Computer Department` IS NULL THEN 'Not Detected' WHEN ve.`Computer Department` = '' THEN 'Not Detected' ELSE ve.`Computer Department` END AS `Department` 
+  CASE 
+    WHEN ve.`Computer Department` IS NULL THEN 'Not Detected' 
+    WHEN ve.`Computer Department` = '' THEN 'Not Detected' 
+    ELSE ve.`Computer Department` 
+  END AS `Department` 
 FROM 
   computers c 
   LEFT JOIN clients cl ON cl.clientid = c.clientid 
@@ -96,17 +101,3 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

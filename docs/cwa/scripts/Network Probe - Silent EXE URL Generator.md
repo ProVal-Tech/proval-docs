@@ -8,9 +8,10 @@ tags: ['database', 'deployment', 'gpo']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is part of our GPO deployment script, but also can be run standalone. The script generates the silent installer, the same way the probe naturally would.
+This script is part of our GPO deployment process but can also be run standalone. The script generates the silent installer in the same way the probe naturally would.
 
 **Time Saved by Automation:** 5 Minutes
 
@@ -20,34 +21,23 @@ This script is part of our GPO deployment script, but also can be run standalone
 
 ## Dependencies
 
-- Requires you to have a probe setup and the script **run on the probe**
+- Requires you to have a probe set up and the script **run on the probe**.
 
 ## Variables
 
-- `@LTSilentEXEURL@` = `@serveraddress@/Labtech/Deployment.aspx?%sqlresult%` --- This will be the full URL to download the silent installer
-- `@serveraddress@` = `%sqlresult%` -- Setting internal variable to your default template's connection string
-- `%sqlresult%` = `select substring_index(serveraddress,'|',1) from templates where templates.name = 'default'` --- This pulls in your default template's connection string.
+- `@LTSilentEXEURL@` = `@serveraddress@/Labtech/Deployment.aspx?%sqlresult%` — This will be the full URL to download the silent installer.
+- `@serveraddress@` = `%sqlresult%` — Setting an internal variable to your default template's connection string.
+- `%sqlresult%` = `select substring_index(serveraddress,'|',1) from templates where templates.name = 'default'` — This pulls in your default template's connection string.
 
 ## Process
 
-1. The script inserts the Probe command to update the agent installer
-2. Once the command completes, the script parses out the server address and the URL
-3. Queries the default template connection string from the database.
-4. Lastly, combines all the strings to create your silent installer URL download link.
+1. The script inserts the Probe command to update the agent installer.
+2. Once the command completes, the script parses out the server address and the URL.
+3. It queries the default template connection string from the database.
+4. Lastly, it combines all the strings to create your silent installer URL download link.
 
-- This would return the full URL to be used in the GPO Deployment script 
+- This would return the full URL to be used in the GPO Deployment script.
 
 ## Output
 
 - Script log -> Logs the silent install URL to the script logs.
-
-
-
-
-
-
-
-
-
-
-

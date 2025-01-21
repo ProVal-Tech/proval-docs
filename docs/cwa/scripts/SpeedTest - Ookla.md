@@ -8,10 +8,11 @@ tags: ['performance']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will gather an internet speed test record from Ookla.  
-Time Saved by Automation: 15 Minutes
+This script gathers an internet speed test record from Ookla.  
+**Time Saved by Automation:** 15 Minutes
 
 ## Sample Run
 
@@ -23,36 +24,23 @@ Time Saved by Automation: 15 Minutes
 
 ## Variables
 
-| Variable | Description |
-|----------|-------------|
-| Ookla    | This variable contains information about whether ookla package downloaded and extracted properly |
-| Speedtest| This variable contains information of the ookla speedtest executable file output |
+| Variable   | Description                                                                 |
+|------------|-----------------------------------------------------------------------------|
+| Ookla      | This variable contains information about whether the Ookla package was downloaded and extracted properly. |
+| Speedtest  | This variable contains information about the Ookla speed test executable file output. |
 
-#### Script States
+### Script States
 
 | Name         | Example                                                                                  | Description                     |
 |--------------|------------------------------------------------------------------------------------------|---------------------------------|
-| SpeedTestCLI | @ServerName@ -- @ServerId@ -- @Latency@ -- @Jitter@ -- @PacketLoss@ -- @Download@ -- @Upload@ -- @Downloadbytes@ -- @Uploadbytes@ -- @ExecuteDate@ -- @ShareURL@ | This stores all speedtest output |
+| SpeedTestCLI | @ServerName@ -- @ServerId@ -- @Latency@ -- @Jitter@ -- @PacketLoss@ -- @Download@ -- @Upload@ -- @Downloadbytes@ -- @Uploadbytes@ -- @ExecuteDate@ -- @ShareURL@ | This stores all speed test output. |
 
 ## Process
 
-This script will download the speed test zip file from Ookla and extract it. After extraction, it executes it and stores the output to a script state.
+This script downloads the speed test zip file from Ookla and extracts it. After extraction, it executes the file and stores the output in a script state.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

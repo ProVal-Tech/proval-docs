@@ -8,9 +8,10 @@ tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Two agent Procedures: ISO Mount Disable & ISO Mount Enable, to prevent or allow end users from mounting ISOs in Windows.
+This document describes two agent procedures: ISO Mount Disable and ISO Mount Enable, which are used to prevent or allow end users from mounting ISOs in Windows.
 
 ## Example Agent Procedure Log
 
@@ -20,24 +21,12 @@ Two agent Procedures: ISO Mount Disable & ISO Mount Enable, to prevent or allow 
 | 11:32:02 am 19-Dec-22    | ISO Mount Enable         | Endpoint user ISO access enabled.                  | provaltech.com/dan.hicks      |
 | 11:32:01 am 19-Dec-22    | ISO Mount Enable         | Reinstating end-user ISO Mount capability from endpoint. | provaltech.com/dan.hicks      |
 | 11:30:32 am 19-Dec-22    | ISO Mount Enable         | Reinstating end-user ISO Mount capability from endpoint. | provaltech.com/dan.hicks      |
-| 11:30:24 am 19-Dec-22    | Run Now - ISO Mount Enable | Admin provaltech.com/dan.hicks scheduled procedure Run Now - ISO Mount Enable to run at Dec 19 2022 11:30AM | provaltech.com/dan.hicks      |
+| 11:30:24 am 19-Dec-22    | Run Now - ISO Mount Enable | Admin provaltech.com/dan.hicks scheduled procedure Run Now - ISO Mount Enable to run at Dec 19 2022 11:30 AM | provaltech.com/dan.hicks      |
 
 ## Process
 
-Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` to remove Mount access, and removes the value to re-enable.
+Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` to remove Mount access, and removes the value to re-enable it.
 
 ## Output
 
 Agent Procedure Log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,15 +8,16 @@ tags: ['cleanup', 'logging', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is used to clean up older remote drive space monitors for drives that no longer exist on Windows systems. 
+This script is used to clean up older remote drive space monitors for drives that no longer exist on Windows systems.
 
 If there are tickets related to the following example message, this script should be run against those systems.  
 **Example:**  
 "Unable to query drive 'H:' for free space as the drive is not found: Could not find the drive 'H://'. The drive might not be ready or might not be mapped."
 
-Or if there are Remote (System) monitors showing similar "Return Information" to the screenshot below.
+Alternatively, if there are Remote (System) monitors showing similar "Return Information" to the screenshot below.
 
 ![Screenshot](../../../static/img/Agent-Monitors---Remove-Disk-Monitors-for-Missing-Drives/image_1.png)
 
@@ -26,7 +27,7 @@ It is safe to run this script against any Windows system.
 
 ## Sample Run
 
-Target should be any Windows machine reporting inaccurate values for remote drive space monitoring (Drive Space Critical monitors).  
+The target should be any Windows machine reporting inaccurate values for remote drive space monitoring (Drive Space Critical monitors).  
 **Note:** This script CAN be run against offline agents.
 
 ![Sample Run Screenshot](../../../static/img/Agent-Monitors---Remove-Disk-Monitors-for-Missing-Drives/image_2.png)
@@ -46,15 +47,3 @@ The script will then run two different SQL queries to remove the broken remote d
 ## Output
 
 Script log only.
-
-
-
-
-
-
-
-
-
-
-
-

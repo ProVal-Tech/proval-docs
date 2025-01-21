@@ -8,9 +8,10 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Is the SentinelOne Management Server detected at the computer different or not as set for the Client in CW RMM? Updated by [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
+Is the SentinelOne Management Server detected at the computer different from what is set for the Client in CW RMM? Updated by [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
 
 ## Dependencies
 
@@ -20,22 +21,9 @@ Is the SentinelOne Management Server detected at the computer different or not a
 
 | Field Name                       | Level    | Type      | Default Value | Description                                                                                       | Editable |
 |----------------------------------|----------|-----------|---------------|---------------------------------------------------------------------------------------------------|----------|
-| S1 Mgmt Server Discrepancy      | ENDPOINT | Text Box  | No            | Is the SentinelOne Management Server detected at the computer different or not as set for the Client in CW RMM? | Yes      |
+| S1 Mgmt Server Discrepancy      | ENDPOINT | Text Box  | No            | Is the SentinelOne Management Server detected at the computer different from what is set for the Client in CW RMM? | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Endpoint---S1-Mgmt-Server-Discrepancy/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---S1-Mgmt-Server-Discrepancy/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

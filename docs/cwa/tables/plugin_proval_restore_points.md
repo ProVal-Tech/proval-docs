@@ -8,9 +8,10 @@ tags: ['backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores information about Windows restore points.
+This document stores information about Windows restore points.
 
 ## Dependencies
 
@@ -21,22 +22,9 @@ Stores information about Windows restore points.
 
 #### plugin_proval_restore_points
 
-| Column                | Type    | Explanation                                                  |
-|----------------------|---------|-------------------------------------------------------------|
-| ComputerID           | INT     | The ComputerID of the audited machine.                     |
-| RestorePointDate     | DATETIME| The date that the audited restore point was taken.         |
-| RestorePointDescription | VARCHAR | The description of the audited restore point.              |
-| SequenceNumber       | INT     | The number of previous sequences that this restore point has been through. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                  | Type     | Explanation                                                  |
+|------------------------|----------|-------------------------------------------------------------|
+| ComputerID             | INT      | The ComputerID of the audited machine.                     |
+| RestorePointDate       | DATETIME | The date that the audited restore point was taken.         |
+| RestorePointDescription | VARCHAR  | The description of the audited restore point.              |
+| SequenceNumber         | INT      | The number of previous sequences that this restore point has been through. |

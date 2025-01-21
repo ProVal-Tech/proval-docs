@@ -8,6 +8,7 @@ tags: ['cluster', 'disk', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will detect the cluster volumes where the cluster disk space is below 10% as an error and between 10-20% as a warning.
@@ -18,11 +19,11 @@ This monitor will detect the cluster volumes where the cluster disk space is bel
 **Suggested Alert Style**: Once, Twice, etc.  
 **Suggested Alert Template**: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
-|--------------|----------------|------------|-------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | \<REDACTED\>  | State Based | 3600     | \<Screenshot below\> |
+| Check Action | Server Address | Check Type | Check Value   | Comparator   | Interval | Result                |
+|--------------|----------------|------------|---------------|--------------|----------|-----------------------|
+| System       | 127.0.0.1     | Run File   | \<REDACTED\>  | State Based  | 3600     | \<Screenshot below\>  |
 
 ![Image](../../../static/img/CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection/image_1.png)
 
@@ -38,19 +39,6 @@ Should be targeted to a Cluster Detected group.
 
 ## Implementation
 
-Please follow the below implementation document to install this content:
+Please follow the implementation document below to install this content:
 
 - [Import - Remote Monitor - Windows Cluster Shared Volume Detection](<./Windows Cluster Shared Volume Detection.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

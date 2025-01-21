@@ -8,9 +8,10 @@ tags: ['email', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/en-us/windows/deployment/upgrade/setupdiag), returning the results to a variable and optionally e-mailing them.
+Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/en-us/windows/deployment/upgrade/setupdiag), returning the results to a variable and optionally emailing them.
 
 ## Sample Run
 
@@ -26,27 +27,14 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 |-------------------|-------------------------------------------|
 | SetupDiagResult   | Contains the return from the run of SetupDiag. |
 
-#### User Parameters
+### User Parameters
 
 | Name          | Example                                   | Required | Description                                   |
 |---------------|-------------------------------------------|----------|-----------------------------------------------|
-| EmailAddress  | [myemail@provaltech.com](mailto:myemail@provaltech.com) | False    | Send an e-mail report to a specified address. |
+| EmailAddress  | [myemail@provaltech.com](mailto:myemail@provaltech.com) | False    | Send an email report to a specified address. |
 
 ## Output
 
-Outputs to a variable (@SetupDiagResult@) that can be referenced in parent scripts.
+Outputs to a variable (`SetupDiagResult`) that can be referenced in parent scripts.
 
 See [Invoke-SetupDiag](<../../powershell/Invoke-SetupDiag.md>) for additional output information.
-
-
-
-
-
-
-
-
-
-
-
-
-

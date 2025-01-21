@@ -8,9 +8,10 @@ tags: ['active-directory', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The Computers in Active Directory - No Agent report displays a comprehensive list of all computers that are found in Active Directory and excludes the ones that are in CWA.
+The Computers in Active Directory - No Agent report displays a comprehensive list of all computers that are found in Active Directory while excluding those that are in ConnectWise Automate (CWA).
 
 ## Dependencies
 
@@ -22,15 +23,3 @@ This report is dependent on the following items:
 ## Report Example
 
 ![Report Example](../../../static/img/Computers-in-Active-Directory---No-Agent/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

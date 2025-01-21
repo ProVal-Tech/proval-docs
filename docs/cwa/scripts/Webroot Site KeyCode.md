@@ -8,26 +8,16 @@ tags: ['setup', 'software', 'webroot']
 draft: false
 unlisted: false
 ---
-## Step 1.
-Login to Webroot Portal
 
-## Step 2.
-Go to the Site List --> Sites --> Details
+## Step 1
+Login to the Webroot Portal.
+
+## Step 2
+Go to the Site List --> Sites --> Details.
 
 ![Image](../../../static/img/Webroot-Site-KeyCode/image_1.png)
 
-You will set the code in the format xxxx-xxxx-xxxx-xxxx-xxxx.
+You will set the code in the format `xxxx-xxxx-xxxx-xxxx-xxxx`.
 
-## Step 3.
-Copy the code and paste it to client EDF 'Webroot Site KeyCode' for the solution to work.
-
-
-
-
-
-
-
-
-
-
-
+## Step 3
+Copy the code and paste it into the client EDF 'Webroot Site KeyCode' for the solution to work.

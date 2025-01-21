@@ -8,23 +8,24 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Identifies computers that have not installed a Cumulative Update in the last 75 days, excluding End-of-Life (EOL) machines.
+This document identifies computers that have not installed a Cumulative Update in the last 75 days, excluding End-of-Life (EOL) machines.
 
 If requested, the monitor can easily be adjusted to a lower or higher number of days since the last cumulative update was installed before a ticket was generated.
 
 ![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_1.png)
 
-The monitor set will not keep detecting the computers where a ticket is already generated if it's using the suggested alert template `△ Custom - Autofix - Out of Date Cumulative Updates`.
+The monitor set will not continue detecting computers for which a ticket has already been generated if it is using the suggested alert template `△ Custom - Autofix - Out of Date Cumulative Updates`.
 
 This monitor has direct dependencies on the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) schedule.
 
-The p.Scriptruntime days in the monitor need to be set with one increment day to the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) schedule as shown below:
+The `p.Scriptruntime` days in the monitor need to be set with one increment day to the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) schedule, as shown below:
 
 ![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_2.png)
 
-Please review monitor [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<./Execute Script - Get Latest Installed Cumulative Update.md>) and get the value from it from the hs.dateissued days and set it with one day addition in the monitor p.scriptruntime value.
+Please review the monitor [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<./Execute Script - Get Latest Installed Cumulative Update.md>) and obtain the value from the `hs.dateissued` days. Set it with one day added to the `p.scriptruntime` value in the monitor.
 
 ![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_3.png)
 
@@ -48,19 +49,6 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 
 ## FAQ
 
-**Q1)** What happens if the machine hasn't logged in for several days or the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different than the lastruntime check from the table "[Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)"?
+**Q1)** What happens if the machine hasn't logged in for several days, or if the interval of the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) is different from the `lastruntime` check in the table "[Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)"?
 
-**Ans)** This monitor will ignore the agents whose last contact date is older than 7 days from monitoring and also exclude the agents where the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) has not run from the scheduled days period which should be matched to the p.scriptruntime set in the monitor.
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Ans)** This monitor will ignore agents whose last contact date is older than 7 days from monitoring. It will also exclude agents where the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) has not run within the scheduled days period, which should match the `p.scriptruntime` set in the monitor.

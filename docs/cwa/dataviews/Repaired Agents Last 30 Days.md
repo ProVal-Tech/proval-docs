@@ -8,13 +8,14 @@ tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the information of the agents repaired by the [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>).
+The dataview displays the information of the agents repaired by the [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>).
 
 ## Dependencies
 
-- [Script - Automate Agent - Auto Repair*](<../scripts/Automate Agent - Auto Repair.md>)
+- [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)
 - [Custom Table - pvl_repaired_agents](<../tables/pvl_repaired_agents.md>)
 - [Script - Track Repaired Agents](<../scripts/Track Repaired Agents.md>)
 
@@ -22,29 +23,16 @@ The dataview displays the information of the agents repaired by the [Script - Au
 
 | Column                    | Description                                                                                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|
-| Clientid                 | Clientid (Hidden)                                                                                     |
-| Locationid               | Locationid (Hidden)                                                                                   |
-| Computerid               | Computerid                                                                                             |
+| Clientid                 | Client ID (Hidden)                                                                                    |
+| Locationid               | Location ID (Hidden)                                                                                  |
+| Computerid               | Computer ID                                                                                           |
 | Client                   | Client Name                                                                                           |
 | Location                 | Location Name                                                                                         |
 | Computer                 | Computer Name                                                                                         |
 | Repair Time              | Agent Repair Time                                                                                     |
 | Days Since Repaired      | Days Since the Agent was Repaired                                                                     |
-| Form Factor              | Form Factor (Laptop/Desktop/Virtual Server/Physical Server/HyperV Host)                              |
+| Form Factor              | Form Factor (Laptop/Desktop/Virtual Server/Physical Server/Hyper-V Host)                             |
 | Operating System         | Operating System                                                                                      |
 | Last Logged In User      | Last Logged In User                                                                                    |
 | Last Contact with RMM    | Last Contact with RMM                                                                                 |
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
-
-
-
-
-
-
-
-
-
-
-
-
-

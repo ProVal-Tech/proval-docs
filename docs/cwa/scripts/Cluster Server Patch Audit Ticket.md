@@ -8,9 +8,10 @@ tags: ['cluster', 'patching', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This client script will create a ticket for all the cluster hosts where the currently installed Cumulative Update shows older than 60 days in the [Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>).
+This client script creates a ticket for all the cluster hosts where the currently installed Cumulative Update is older than 60 days, as indicated in the [Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>).
 
 ## Sample Run
 
@@ -31,20 +32,8 @@ This client script will create a ticket for all the cluster hosts where the curr
 UPDATES - Cluster Server Patching for @ServerCount@ Servers at @sqlname@
 
 **Body:**  
-There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patching, since Automate is not recommended to patch clusters. Please manually patch the machine(s) listed below:
+There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patching, as Automate is not recommended for patching clusters. Please manually patch the machine(s) listed below:
 
 %sqlresult%
 
-Thank You!
-
-
-
-
-
-
-
-
-
-
-
-
+Thank you!

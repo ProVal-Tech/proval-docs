@@ -8,18 +8,7 @@ tags: ['performance', 'update', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
 
-Gets Latest Avail Win10 Version Status
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
+Gets the latest available Windows 10 version status.

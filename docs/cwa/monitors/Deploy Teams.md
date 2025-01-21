@@ -8,14 +8,15 @@ tags: ['connectwise', 'database']
 draft: false
 unlisted: false
 ---
+
 ## Implementation Steps
 
 - Import [EPM - Software Configuration - Script - Configure BGInfo](https://proval.itglue.com/DOC-5078775-13482616) script.
 
-- Run this SQL query from a RAWSQL monitor set to create the alert template.
+- Run the following SQL query from a RAWSQL monitor to create the alert template.
 
 ```sql
-#Create Alert Template
+# Create Alert Template
 INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `GUID`) 
 SELECT 
 '△ Custom - Execute Script - Configure BGInfo' AS `Name`, 
@@ -23,7 +24,7 @@ SELECT
 'PRONOC' AS `Last_User`,
 (NOW()) AS `Last_Date`,
 'fd9097fb-1bbf-4c5a-a654-664867f7d605' AS `GUID` 
-From (SELECT MIN(computerid) FROM computers) a
+FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM alerttemplate WHERE GUID = 'fd9097fb-1bbf-4c5a-a654-664867f7d605') = '0';
 ```
 
@@ -41,111 +42,16 @@ SELECT
 '0' AS `Trump`,
 '05c0b164-d150-4236-a02c-5cf7be143c41' AS `GUID`,
 '0' AS `WarningAction` 
-From (SELECT MIN(computerid) FROM computers) a
+FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM alerttemplates WHERE GUID = '05c0b164-d150-4236-a02c-5cf7be143c41') = '0';
 ```
 
 - Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
 
-- Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups: (The string to replace can be found at the very bottom of the query, right after **WHERE**)
+- Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the groupid(s) of the relevant groups. The string to replace can be found at the very bottom of the query, right after **WHERE**.
 
 ```sql
-SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = 'fd9097fb-1bbf-4c5a-a654-664867f7d605') ;
-INSERT INTO groupagents 
-SELECT '' as `AgentID`,
-`groupid` as `GroupID`,
-'0' as `SearchID`,
-'ProVal - Dev - Configure BGInfo' as `Name`,
-'6' as `CheckAction`,
-@AlertAction as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
-'0' as `ContactID`,
-'86400' as `interval`,
-'127.0.0.1' as `Where`,
-'7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-ItemProperty /'HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Run/').BGInfo) {/'Configured/'} Else {/'Not Configured/'}"' as `DataOut`,
-'9' as `Comparor`,
-'Not Configured' as `DataIn`,
-'' as `IDField`,
-'1' as `AlertStyle`,
-'0' as `ScriptID`,
-'' as `datacollector`,
-'21' as `Category`,
-'0' as `TicketCategory`,
-'1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
-'root' as `UpdatedBy`,
-(NOW()) as `UpdateDate`
-FROM mastergroups m
-WHERE m.groupid IN (**YOUR COMMA SEPARATED LIST OF GROUPID(S)**)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Configure BGInfo')
-```
-
-- An example of a query with a groupid:
-
-```sql
-SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = 'fd9097fb-1bbf-4c5a-a654-664867f7d605') ;
+SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = 'fd9097fb-1bbf-4c5a-a654-664867f7d605'); 
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -1020,16 +926,84 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 '-',
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*
-
-
-
-
-
-
-
-
-
-
-
-
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'-',
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND

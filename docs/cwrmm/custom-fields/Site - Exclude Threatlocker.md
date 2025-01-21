@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Turning this Custom Field "Yes" will exclude all the machines under that Site from Threatlocker Deployment.
+Setting this custom field to "Yes" will exclude all the machines under that site from Threatlocker deployment.
 
 ## Dependencies
 
@@ -20,19 +21,8 @@ Turning this Custom Field "Yes" will exclude all the machines under that Site fr
 
 | Field Name            | Level | Type | Default Value | Description                                                                                     | Editable |
 |----------------------|-------|------|---------------|-------------------------------------------------------------------------------------------------|----------|
-| Exclude Threatlocker  | Site  | Flag | No            | Turning this Custom Field "Yes" will exclude all the machines under that Site from Threatlocker Deployment. | Yes      |
+| Exclude Threatlocker  | Site  | Flag | No            | Setting this custom field to "Yes" will exclude all the machines under that site from Threatlocker deployment. | Yes      |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)

@@ -8,13 +8,14 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of the solution is to manage the members in the local admin group for the Windows machines.
+The purpose of this solution is to manage the members in the local admin group for Windows machines.
 
-## Update Notice: 27-September-2024
+## Update Notice: 27 September 2024
 
-The solution's Extra Data Fields have been modified. Update the [Local Admin Group Cleanup - Add/Remove](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) script from the `Prosync` plugin and run/debug against an online Windows machine with `Set_Environment` as `1` to implement the changes.
+The solution's Extra Data Fields have been modified. Update the [Local Admin Group Cleanup - Add/Remove](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) script from the `Prosync` plugin and run/debug against an online Windows machine with `Set_Environment` set to `1` to implement the changes.
 
 ![Image](../../static/img/Local-Admin-Group-Cleanup/image_1.png)
 
@@ -40,7 +41,7 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
    ![Image](../../static/img/Local-Admin-Group-Cleanup/image_1.png)
 
 4. Configure the solution as outlined below:
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)  
        - `Alert Template: △ Custom - Local Admin Group Cleanup`
        - Right-click and Run Now to start the monitor
@@ -49,15 +50,3 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
    ![Image](../../static/img/Local-Admin-Group-Cleanup/image_3.png)
 
 6. Set the appropriate values for the system properties and EDFs defined in the [script's](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) document, which should be provided by the consultant.
-
-
-
-
-
-
-
-
-
-
-
-

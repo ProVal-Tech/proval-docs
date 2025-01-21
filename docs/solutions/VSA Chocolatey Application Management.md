@@ -8,30 +8,18 @@ tags: ['installation', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Provide a reliable and accessible solution for application management via Chocolatey
+Provide a reliable and accessible solution for application management via Chocolatey.
 
 ## Associated Content
 
 | Content                                                                                               | Type             | Function                                                      |
 |-------------------------------------------------------------------------------------------------------|------------------|---------------------------------------------------------------|
-| [SWM - Software Install - Agent Procedure - Chocolatey Application Install](<../vsa/procedures/Chocolatey Application Install.md>) | Agent Procedure   | Utilizes the Foil wrapper for chocolatey to install an application. |
-| [SWM - Software Uninstall - Agent Procedure - Chocolatey Application Uninstall](<../vsa/procedures/Chocolatey Application Uninstall.md>) | Agent Procedure   | Utilizes the Foil wrapper for chocolatey to uninstall an application. |
+| [SWM - Software Install - Agent Procedure - Chocolatey Application Install](<../vsa/procedures/Chocolatey Application Install.md>) | Agent Procedure   | Utilizes the Foil wrapper for Chocolatey to install an application. |
+| [SWM - Software Uninstall - Agent Procedure - Chocolatey Application Uninstall](<../vsa/procedures/Chocolatey Application Uninstall.md>) | Agent Procedure   | Utilizes the Foil wrapper for Chocolatey to uninstall an application. |
 
 ## Implementation
 
 Import both Agent Procedures.
-
-
-
-
-
-
-
-
-
-
-
-
-

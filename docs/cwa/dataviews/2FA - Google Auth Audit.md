@@ -8,25 +8,14 @@ tags: ['connectwise', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview shows if the Google Authentication is enabled on Automate users or not.
+This Dataview shows whether Google Authentication is enabled for Automate users.
 
 ## Columns
 
-| Column                  | Description                                                      |
-|------------------------|------------------------------------------------------------------|
-| Username               | Displays the name of the Automate User                          |
-| Google Auth Enabled     | Displays if the Google Auth is enabled on the user or not       |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                | Description                                                    |
+|----------------------|---------------------------------------------------------------|
+| Username             | Displays the name of the Automate user                       |
+| Google Auth Enabled   | Indicates if Google Authentication is enabled for the user   |

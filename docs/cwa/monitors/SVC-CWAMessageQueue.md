@@ -8,10 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-CWAMessageQueue is one of the important services for the Automate server, this monitor is intended to alert on the status of that service and creates an urgent ticket in our (ProVal's) Autotask portal in the event that that service becomes unavailable.  
-It should be created against the "Labtech Server" group for the on-prem partners only.
+CWAMessageQueue is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and create an urgent ticket in our (ProVal's) Autotask portal in the event that the service becomes unavailable. It should be created against the "Labtech Server" group for the on-prem partners only.
 
 ## Details
 
@@ -25,15 +25,4 @@ It should be created against the "Labtech Server" group for the on-prem partners
 
 ## Target
 
-Service [Plans.Windows](http://plans.Windows) servers.Server Roles.MSP Specific Servers.Labtech Server  
-
-
-
-
-
-
-
-
-
-
-
+Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server  

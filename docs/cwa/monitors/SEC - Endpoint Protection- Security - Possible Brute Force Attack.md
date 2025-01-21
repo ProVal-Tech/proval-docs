@@ -8,14 +8,14 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Check the computer for security event log event id 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
+Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
 
-The threshold can be modified by updating the value of the `$th` variable in the remote monitor's command.  
-Change this value from 10 to the desired value after importing the remote monitor.
+The threshold can be modified by updating the value of the `$th` variable in the remote monitor's command. Change this value from 10 to the desired value after importing the remote monitor.
 
-**The monitor set may not perform as expected for the PowerShell version older than 5.**
+**The monitor set may not perform as expected for PowerShell versions older than 5.**
 
 ## Details
 
@@ -23,9 +23,9 @@ Change this value from 10 to the desired value after importing the remote monito
 **Suggested Alert Style**: Continuous  
 **Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only  
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
-|--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File   | REDACTED      | State Based | 3600     | \<Shown Below> |
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result          |
+|--------------|----------------|------------|---------------|------------|----------|------------------|
+| System       | 127.0.0.1      | Run File   | REDACTED      | State Based | 3600     | \<Shown Below>   |
 
 ![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_1.png)
 
@@ -33,9 +33,9 @@ Change this value from 10 to the desired value after importing the remote monito
 
 | State  | Condition            | Comparator |
 |--------|----------------------|------------|
-| Normal | Regex Match          | ((^((OK)\{0,}(//r//n)\{0,}[//r//n]\{0,}//s\{0,})$)|(^$)) |
-| Warning | Does Not Regex Match | ((^((OK)\{0,}(//r//n)\{0,}[//r//n]\{0,}//s\{0,})$)|(^$))|(^((//r//n)\{0,}[//r//n]\{0,}//s\{0,})[0-9]\{1,} failed logon event logs detected in the past [0-9]\{1,} hour//(s//).) |
-| Error  | Regex Match          | ^((//r//n)\{0,}[//r//n]\{0,}//s\{0,})[0-9]\{1,} failed logon event logs detected in the past [0-9]\{1,} hour//(s//). |
+| Normal | Regex Match          | ((^((OK)\\{0,}(//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})$)|(^$)) |
+| Warning | Does Not Regex Match | ((^((OK)\\{0,}(//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})$)|(^$))|(^((//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})[0-9]\\{1,} failed logon event logs detected in the past [0-9]\\{1,} hour//(s//).) |
+| Error  | Regex Match          | ^((//r//n)\\{0,}[//r//n]\\{0,}//s\\{0,})[0-9]\\{1,} failed logon event logs detected in the past [0-9]\\{1,} hour//(s//). |
 
 ## Dependencies
 
@@ -51,7 +51,7 @@ Domain Controllers
 
 **Subject:** `Possible Brute Force Attack on %COMPUTERNAME%`
 
-**Alert Message on Success:** `There are no potential brute force or logon failures. detected in the last hour on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
+**Alert Message on Success:** `There are no potential brute force or logon failures detected in the last hour on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
 
 **Alert Message on Failure:**  
 A possible brute force attack has been detected on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%.  
@@ -96,17 +96,3 @@ For more detailed information: [Event 4625 Documentation](https://learn.microsof
 ## Implementation
 
 [Import - Remote Monitor - Security - Possible Brute Force Attack](<./Security - Possible Brute Force Attack.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

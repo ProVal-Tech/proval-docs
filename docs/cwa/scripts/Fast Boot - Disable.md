@@ -8,9 +8,10 @@ tags: ['performance', 'reboot', 'registry', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will adjust the local registry on the target device and will disable the Windows Fast Boot feature. When a machine has Fast Boot enabled, the machine will not perform a full kernel reboot on "shutdown" and can cause systems to misbehave. This can also impact patches installing on devices as the patch will not be able to apply itself fully until the machine is properly restarted. The target device will need to be restarted for this change to take effect.
+This script will adjust the local registry on the target device and disable the Windows Fast Boot feature. When a machine has Fast Boot enabled, it will not perform a full kernel reboot on "shutdown," which can lead to system misbehavior. This can also impact the installation of patches on devices, as the patch will not be able to apply itself fully until the machine is properly restarted. The target device will need to be restarted for this change to take effect.
 
 **Time Saved by Automation:** 5 Minutes
 
@@ -33,26 +34,14 @@ This script will adjust the local registry on the target device and will disable
 
 ## Process
 
-This script will first verify that it is a Windows-based device, or it will exit.
+This script will first verify that it is a Windows-based device; otherwise, it will exit.
 
-It will then set the registry key to Disable Fast Boot on the system and verify that the change occurred as expected.
+It will then set the registry key to disable Fast Boot on the system and verify that the change occurred as expected.
 
-If the script was successful, it will exit with a log message indicating that the registry was updated successfully and the machine needs to be rebooted for the setting to go into effect.
+If the script was successful, it will exit with a log message indicating that the registry was updated successfully and that the machine needs to be rebooted for the setting to take effect.
 
-If the value did not change in the registry, the script will exit as a failure with a log message indicating it was unable to adjust the registry value.
+If the value did not change in the registry, the script will exit with a failure message indicating it was unable to adjust the registry value.
 
 ## Output
 
 Script log messages only.
-
-
-
-
-
-
-
-
-
-
-
-

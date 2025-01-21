@@ -8,6 +8,7 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script will be used to enable or disable any versions of TLS (v1.0, v1.1, v1.2, v1.3) simultaneously by updating the registry.
@@ -22,7 +23,7 @@ The script will be used to enable or disable any versions of TLS (v1.0, v1.1, v1
 
 ## Sample Run
 
-To disable TLS 1.0, and TLS 1.1 and to enable TLS 1.2, and TLS 1.3 along with the strong crypto for .Net.  
+To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with strong crypto for .NET.
 
 ![Sample Run](../../../static/img/Windows---TLS---EnableDisable/image_1.png)
 
@@ -30,24 +31,12 @@ To disable TLS 1.0, and TLS 1.1 and to enable TLS 1.2, and TLS 1.3 along with th
 
 | Name            | Example | Required            | Description                                                                                     |
 |-----------------|---------|---------------------|-------------------------------------------------------------------------------------------------|
-| YN-TLS1.0      | 0       | 1 or 0 or blank     | To enable TLSv1.0, enter 1, or to disable it enter 0 or else, leave blank.                   |
-| YN-TLS1.1      | 0       | 1 or 0 or blank     | To enable TLSv1.1, enter 1, or to disable it enter 0 or else, leave blank.                   |
-| YN-TLS1.2      | 1       | 1 or 0 or blank     | To enable TLSv1.2, enter 1 or to disable it enter 0 or else, leave blank.                    |
-| YN-TLS1.3      | 1       | 1 or 0 or blank     | To enable TLSv1.3, enter 1, or to disable it enter 0 or else, leave blank.                   |
-| YN-StrongCrypto | 1       | 1 or 0 or blank     | To enable the Strong Crypto for .Net, enter 1 or to disable it enter 0 or else, leave blank.  |
+| YN-TLS1.0      | 0       | 1 or 0 or blank     | To enable TLSv1.0, enter 1; to disable it, enter 0, or leave blank.                          |
+| YN-TLS1.1      | 0       | 1 or 0 or blank     | To enable TLSv1.1, enter 1; to disable it, enter 0, or leave blank.                          |
+| YN-TLS1.2      | 1       | 1 or 0 or blank     | To enable TLSv1.2, enter 1; to disable it, enter 0, or leave blank.                          |
+| YN-TLS1.3      | 1       | 1 or 0 or blank     | To enable TLSv1.3, enter 1; to disable it, enter 0, or leave blank.                          |
+| YN-StrongCrypto | 1       | 1 or 0 or blank     | To enable Strong Crypto for .NET, enter 1; to disable it, enter 0, or leave blank.           |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,16 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor set will compare the result of `C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue'; $WarningPreference = 'SilentlyContinue'; $disks = (Get-WmiObject -Class Win32_DiskDrive) ; foreach($disk in $disks) \{write-host -NoNewline "$($disk.Status)"}` Command against the "Fail". The expected outcomes are 'OK', 'Predic Failure', or 'Failed'. A ticket will be created for the machines with either of "Failed" or "Predic Failure" health status for a disk.
+The monitor setup will compare the result of the following PowerShell command:
+
+```
+C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue'; $WarningPreference = 'SilentlyContinue'; $disks = (Get-WmiObject -Class Win32_DiskDrive); foreach($disk in $disks) {write-host -NoNewline "$($disk.Status)"}"
+```
+
+against the status "Fail". The expected outcomes are 'OK', 'Predicted Failure', or 'Failed'. A ticket will be created for machines with either "Failed" or "Predicted Failure" health status for a disk.
 
 ## Details
 
@@ -18,24 +25,12 @@ The monitor set will compare the result of `C:/Windows/System32/WindowsPowerShel
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default Create Automate Ticket  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue'; $WarningPreference = 'SilentlyContinue'; $disks = (Get-WmiObject -Class Win32_DiskDrive) ; foreach($disk in $disks) \{write-host -NoNewline "$($disk.Status)"}` | Does Not Contain | 600 | Fail |
+| System       | 127.0.0.1     | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue'; $WarningPreference = 'SilentlyContinue'; $disks = (Get-WmiObject -Class Win32_DiskDrive); foreach($disk in $disks) {write-host -NoNewline "$($disk.Status)"}" | Does Not Contain | 600 | Fail |
 
 ## Target
 
-Windows Machines: This should be run on all the windows machines covered under the Service Plans.
-
-
-
-
-
-
-
-
-
-
-
-
+Windows Machines: This should be run on all the Windows machines covered under the Service Plans.

@@ -8,14 +8,15 @@ tags: ['email']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor detects the manual script execution by the LT User.
+This monitor detects manual script execution by the LT User.
 
-It has a couple of restrictions.
+It has a couple of restrictions:
 
-- It will not give reliable data if someone executes the script frequently in less than 2 or 3-minute intervals.
-- It will also not result if the script is scheduled once on Group; it can only result if the script is scheduled on the machines or multiple machines.
+- It will not provide reliable data if someone executes the script frequently in intervals of less than 2 or 3 minutes.
+- It will also not trigger if the script is scheduled only once on a group; it can only trigger if the script is scheduled on individual machines or multiple machines.
 
 ## Dependencies
 
@@ -39,20 +40,8 @@ Manual Script Execution Status on %CLIENTNAME%/%COMPUTERNAME%
 
 Manual Script Execution Status of %RESULT% on %CLIENTNAME%/%COMPUTERNAME%
 
-Here, %Result% contains the Script Name: "Scriptname" ran on computer "Computername" by user/email "LTUserName/Email address of the ltuser" with a result "Script Result" during "When script executed" on clientname/computername.
+Here, %RESULT% contains the script name: "Scriptname" ran on computer "Computername" by user/email "LTUserName/Email address of the LT user" with a result "Script Result" during "When script executed" on %CLIENTNAME%/%COMPUTERNAME%.
 
 **Email Example:**
 
 ![Email Example](../../../static/img/Manual-Script-Schedule---Status-Email/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

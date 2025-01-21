@@ -8,11 +8,12 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script adds the registry policy for an enforced homepage in Microsoft Edge (Chromium).
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -27,7 +28,7 @@ Time Saved by Automation: 10 Minutes
 ## Variables
 
 - `@PS1DataLog@` - Helps to verify if the script actually succeeded.
-- `@PS1ErrorLog@` - Helps to track failure of the script.
+- `@PS1ErrorLog@` - Helps to track the failure of the script.
 
 #### User Parameters
 
@@ -44,16 +45,4 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 ## Output
 
 - Script log
-- Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
+- Local file on the computer

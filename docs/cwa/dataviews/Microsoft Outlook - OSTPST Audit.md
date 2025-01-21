@@ -8,9 +8,10 @@ tags: ['database', 'performance', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview displays the result of the path and size of the OST and PST files for users on a windows machine.
+This Dataview displays the path and size of the OST and PST files for users on a Windows machine.
 
 ## Dependencies
 
@@ -22,33 +23,19 @@ This Dataview displays the result of the path and size of the OST and PST files 
 
 | Column                     | Description                                                  |
 |---------------------------|--------------------------------------------------------------|
-| Clientid                  | Clientid (Hidden)                                          |
-| Locationid                | Locationid (Hidden)                                        |
-| Computerid                | Computerid (Hidden)                                        |
+| Client ID                 | Client ID (Hidden)                                          |
+| Location ID               | Location ID (Hidden)                                        |
+| Computer ID               | Computer ID (Hidden)                                        |
 | Client Name               | Client Name                                                |
 | Location Name             | Location Name                                              |
 | Computer Name             | Computer Name                                              |
-| File Name                 | Name of the file                                          |
+| File Name                 | Name of the file                                           |
 | Path                      | Path to the OST/PST file                                   |
-| Type                      | Type of the file (ost/pst)                                 |
-| Size (MB)                | Size of the file in MegaBytes                              |
-| Size (GB)                | Size of the file in GigaBytes                              |
+| Type                      | Type of the file (OST/PST)                                 |
+| Size (MB)                | Size of the file in Megabytes                              |
+| Size (GB)                | Size of the file in Gigabytes                              |
 | Last Modified Time        | Most recent modification time of the file                  |
 | Data Collection Time      | Data Collection Time                                        |
 | Operating System          | Operating System                                            |
 | Last Contact              | Last Contact with RMM                                      |
 | Last Logged In User       | Last Logged In User                                        |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

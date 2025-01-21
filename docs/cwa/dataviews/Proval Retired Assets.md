@@ -8,26 +8,15 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is a direct copy of the stock Retired Assets dataview with the addition of the Retired Asset Comment available.
+This is a direct copy of the stock Retired Assets dataview with the addition of the Retired Asset Comment.
 
 ## Columns
 
-All Columns are exactly the same as the stock retired assets dataview with the addition of the below column.
+All columns are exactly the same as the stock Retired Assets dataview, with the addition of the column below.
 
 | Column  | Description                                             |
 |---------|---------------------------------------------------------|
-| Comment | The Comment associated with the retirement of the agent.|
-
-
-
-
-
-
-
-
-
-
-
-
+| Comment | The comment associated with the retirement of the agent. |

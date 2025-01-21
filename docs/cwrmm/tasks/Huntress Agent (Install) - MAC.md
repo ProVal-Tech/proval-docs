@@ -8,19 +8,20 @@ tags: ['installation', 'logging']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task will check first if Huntress is installed or not. If not, then it attempts to install the agent and log the result for the MAC machines.
+This task will first check if Huntress is installed. If it is not, the script will attempt to install the agent and log the result for MAC machines.
 
 ## Create Script
 
-Please create a new "PowerShell" style script to implement this script.
+Please create a new "PowerShell" style script to implement this task.
 
 ![Image 1](../../../static/img/Huntress-Agent-(Install)---MAC/image_1.png)  
 ![Image 2](../../../static/img/Huntress-Agent-(Install)---MAC/image_2.png)  
 
 **Name:** Huntress Agent (Install) - MAC  
-**Description:** This task will check first if Huntress is installed or not. If not, then it attempts to install the agent and log the result for the MAC machines.  
+**Description:** This task will check if Huntress is installed. If not, it will attempt to install the agent and log the result for MAC machines.  
 **Category:** Custom  
 
 ![Image 3](../../../static/img/Huntress-Agent-(Install)---MAC/image_3.png)  
@@ -33,14 +34,14 @@ Please create a new "PowerShell" style script to implement this script.
 
 Input the following:
 
-The script will detect the Huntress Agent and if the agent is not found then it will install the agent.  
+The script will detect the Huntress Agent, and if the agent is not found, it will install the agent.  
 ```
 acct_key : @acct_key@  
 org_key: @ORG_Key@  
 tags: ['installation', 'logging']
 ```
 Attempting to download the file using acct_key from the Huntress website as below:  
-[https://huntress.io/script/darwin/@acctKey](https://huntress.io/script/darwin/@acctKey), and once downloaded the agent will be attempted to install.
+[https://huntress.io/script/darwin/@acctKey](https://huntress.io/script/darwin/@acctKey), and once downloaded, the agent will be attempted to install.
 
 ## Row 2 Function: Set Pre-defined Variable
 
@@ -49,7 +50,7 @@ Attempting to download the file using acct_key from the Huntress website as belo
 
 - Select `Custom Field`  
 - Input `acct_key` as Variable name  
-- Select `Huntress Acct_Key` custom field from drop Down  
+- Select `Huntress Acct_Key` custom field from the dropdown  
 - Click Save  
 
 ![Image 6](../../../static/img/Huntress-Agent-(Install)---MAC/image_6.png)  
@@ -61,7 +62,7 @@ Attempting to download the file using acct_key from the Huntress website as belo
 
 - Select `Custom Field`  
 - Input `ORG_Key` as Variable name  
-- Select `Huntress Org_Key` custom field from the drop Down  
+- Select `Huntress Org_Key` custom field from the dropdown  
 - Click Save  
 
 ![Image 8](../../../static/img/Huntress-Agent-(Install)---MAC/image_7.png)  
@@ -73,7 +74,7 @@ Attempting to download the file using acct_key from the Huntress website as belo
 
 - Select `Custom Field`  
 - Input `Tags` as Variable name  
-- Select `Huntress Tag` custom field from the drop Down  
+- Select `Huntress Tag` custom field from the dropdown  
 - Click Save  
 
 ![Image 10](../../../static/img/Huntress-Agent-(Install)---MAC/image_8.png)  
@@ -82,7 +83,7 @@ Attempting to download the file using acct_key from the Huntress website as belo
 
 ![Image 11](../../../static/img/Huntress-Agent-(Install)---MAC/image_9.png)  
 
-Paste in the following PowerShell script and set the expected script execution time to 900 seconds.  
+Paste the following PowerShell script and set the expected script execution time to 900 seconds.  
 ```
 #!/bin/bash
 
@@ -114,7 +115,7 @@ fi
 
 ## Step 6 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button  
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Script Log` function.  
 - Input the following:  
 ```
@@ -135,7 +136,7 @@ fi
 
 ## ROW 7b Function: Set Custom Field
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button  
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Set Custom Field` function.  
 ![Image 17](../../../static/img/Huntress-Agent-(Install)---MAC/image_15.png)  
 
@@ -144,7 +145,7 @@ fi
 
 ## ROW 7c Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button  
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Script Exit` function.  
 - Leave the value blank to allow the script to exit on success.  
 
@@ -153,7 +154,7 @@ fi
 
 ## Step 8 Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button  
+- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Script Log` function.  
 - Input the following:  
 ```
@@ -168,11 +169,11 @@ Huntress Agent failed to install. Refer to the logs: %Output%
 
 ## Script Deployment
 
-This task has to be scheduled on `Deploy Huntress - MAC` the group for auto-deployment. The script can also be run manually if required.
+This task must be scheduled on `Deploy Huntress - MAC`, the group for auto-deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Huntress Agent Install.  
-Then click on Schedule and click on the Select Target:  
+Then click on Schedule and select the Target:  
 
 ![Image 23](../../../static/img/Huntress-Agent-(Install)---MAC/image_20.png)  
 
@@ -180,19 +181,8 @@ Select the group "Deploy Huntress - MAC" and save the selection.
 
 ![Image 24](../../../static/img/Huntress-Agent-(Install)---MAC/image_21.png)  
 
-Once selected, Click on Run to schedule the script as per requirement.
+Once selected, click on Run to schedule the script as per requirement.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

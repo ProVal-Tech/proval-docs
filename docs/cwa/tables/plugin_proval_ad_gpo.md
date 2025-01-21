@@ -8,9 +8,10 @@ tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Displays the list of audited group policy objects from the script @Group Policy Audit.
+This document displays the list of audited group policy objects from the script @Group Policy Audit.
 
 ## Dependencies
 
@@ -21,28 +22,15 @@ Displays the list of audited group policy objects from the script @Group Policy 
 
 #### plugin_proval_ad_gpo
 
-| Column          | Type      | Explanation                                                       |
-|-----------------|-----------|-------------------------------------------------------------------|
-| GUID            | VARCHAR   | The GUID of the GPO.                                             |
-| ComputerID      | INT       | The Automate ComputerID of the supplying domain controller.      |
-| Name            | VARCHAR   | The name of the GPO.                                            |
-| Domain          | VARCHAR   | The domain that the GPO is under.                               |
-| ComputerEnabled  | TINYINT   | Denotes if the GPO has the Computer policies enabled.           |
-| UserEnabled      | TINYINT   | Denotes if the GPO has the User policies enabled.               |
-| CreatedTime      | DATETIME  | When the GPO was created.                                       |
-| ModifiedTime     | DATETIME  | Last time this GPO was modified.                                |
-| ReadTime         | DATETIME  | Last time this GPO was read.                                    |
-| LinksTo          | TEXT      | Comma-separated list of OUs that this GPO links to.            |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column           | Type      | Explanation                                                       |
+|------------------|-----------|-------------------------------------------------------------------|
+| GUID             | VARCHAR   | The GUID of the GPO.                                             |
+| ComputerID       | INT       | The Automate ComputerID of the supplying domain controller.      |
+| Name             | VARCHAR   | The name of the GPO.                                            |
+| Domain           | VARCHAR   | The domain that the GPO is under.                               |
+| ComputerEnabled   | TINYINT   | Denotes if the GPO has the Computer policies enabled.           |
+| UserEnabled       | TINYINT   | Denotes if the GPO has the User policies enabled.               |
+| CreatedTime       | DATETIME  | When the GPO was created.                                       |
+| ModifiedTime      | DATETIME  | Last time this GPO was modified.                                |
+| ReadTime          | DATETIME  | Last time this GPO was read.                                    |
+| LinksTo           | TEXT      | Comma-separated list of OUs that this GPO links to.            |

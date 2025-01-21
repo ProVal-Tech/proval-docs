@@ -8,30 +8,18 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor looks for the AD server that has been onboarded for more than 30 days and is experiencing a credential issue in the Active Directory Plugin. It will auto-resolve any issues with the plugin syncing using the API integration with CW Control and create a ticket if it fails to fix it.
+This monitor looks for Active Directory (AD) servers that have been onboarded for more than 30 days and are experiencing credential issues in the Active Directory Plugin. It will auto-resolve any issues with the plugin syncing using the API integration with CW Control and create a ticket if it fails to fix the problem.
 
 ## Dependencies
 
 This monitor is dependent on the following items:
 
-- [CWM - Automate - Script - ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date [Ticket]*](<../scripts/ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket.md>)  
+- [CWM - Automate - Script - ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date [Ticket]](<../scripts/ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket.md>)  
 - [CWM - Automate - RMM+ Plugin Configuration](<../scripts/CWM - Automate - RMM+ Plugin Configuration.md>)  
 
 ## Target
 
-The monitor set is explicitly limited to the domain controllers detected in the `Active Directory` plugin.
-
-
-
-
-
-
-
-
-
-
-
-
-
+The monitor set is explicitly limited to the domain controllers detected in the Active Directory plugin.

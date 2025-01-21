@@ -8,9 +8,10 @@ tags: ['webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script collects the Webroot hashed keycode from the machine and further matches it with the keycode setup in the Webroot plugin and the keycode present on the machine. We can either review the results in the [Dataview - Webroot KeyCode Audit [Script]](<../dataviews/Webroot KeyCode AuditScript.md>), or this also creates a ticket for a keycode mismatch with the [Monitor - Execute Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-14989291), when the monitor has a ticket category set.
+This script collects the Webroot hashed keycode from the machine and matches it with the keycode set up in the Webroot plugin. We can either review the results in the [Dataview - Webroot KeyCode Audit [Script]](<../dataviews/Webroot KeyCode AuditScript.md>), or it can create a ticket for a keycode mismatch with the [Monitor - Execute Script - Webroot Keycode Verification](https://proval.itglue.com/DOC-5078775-14989291) when the monitor has a ticket category set.
 
 ## Sample Run
 
@@ -18,30 +19,18 @@ This script collects the Webroot hashed keycode from the machine and further mat
 
 ## Dependencies
 
-Webroot SecureAnyWhere with Utility Plugin  
+Webroot SecureAnywhere with Utility Plugin  
 ![Dependencies](../../../static/img/Webroot-Keycode-Verification/image_2.png)
 
 ## EDFs
 
 | **Name**                     | **Level** | **Required** | **Description**                                      |
 |------------------------------|-----------|--------------|------------------------------------------------------|
-| Webroot Encrypted KeyCode    | Computer  | True         | Stores keycode grabbed from computer                  |
-| Webroot KeyCode Status       | Computer  | True         | Stored keycode's status either `KeyCode Matched` or `KeyCode Not Matched` |
+| Webroot Encrypted KeyCode    | Computer  | True         | Stores the keycode grabbed from the computer         |
+| Webroot KeyCode Status       | Computer  | True         | Stored keycode's status, either `KeyCode Matched` or `KeyCode Not Matched` |
 
 ## Output
 
 - Script log
 - EDF
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

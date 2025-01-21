@@ -8,10 +8,10 @@ tags: ['backup', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will help to audit the vssadmin storage details.  
-It will report for all volumes where VSS storage is enabled; if not enabled to any volume, then it will report No Drive.
+This script will help audit the VSSAdmin storage details. It will report for all volumes where VSS storage is enabled; if it is not enabled for any volume, it will report "No Drive."
 
 ## Sample Run
 
@@ -27,31 +27,16 @@ It will report for all volumes where VSS storage is enabled; if not enabled to a
 
 | Name   | Description                               |
 |--------|-------------------------------------------|
-| output | Contains the output of vssadmin size audit |
+| output | Contains the output of the VSSAdmin size audit |
 
 ## Process
 
-This script runs the PowerShell to check whether the vssadmin storage is placed on the drive or not. If placed then it detects the Volume letter, Total size, allocated size for storage, max storage size, script run time and stores these detail to the table for auditing.
+This script runs PowerShell to check whether the VSSAdmin storage is placed on the drive. If it is placed, the script detects the volume letter, total size, allocated size for storage, maximum storage size, and script run time, storing these details in a table for auditing.
 
 ## Output
 
-The location and method by which this script returns data.  
-
-Ex:  
+The location and method by which this script returns data:
 
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

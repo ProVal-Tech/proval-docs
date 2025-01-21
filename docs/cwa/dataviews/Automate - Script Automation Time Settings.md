@@ -8,28 +8,17 @@ tags: ['report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will show all the Scripts with their defined saved Automation time.
+This dataview will show all the scripts with their defined saved automation time.
 
 ## Columns
 
 | Column                  | Description                                         |
 |------------------------|-----------------------------------------------------|
-| Script Folder          | Display the Script folder path.                     |
-| Script Name            | Display the Script name.                            |
-| Script Client Only     | Display if it's a client only Script. Yes or No.   |
-| Script Notes           | Display the Script note.                            |
-| AutomationTimeMinutes  | Display the Script defined saved Automation time.   |
-
-
-
-
-
-
-
-
-
-
-
-
+| Script Folder          | Displays the script folder path.                    |
+| Script Name            | Displays the script name.                           |
+| Script Client Only     | Indicates if it's a client-only script. Yes or No.  |
+| Script Notes           | Displays the script notes.                          |
+| Automation Time Minutes | Displays the script's defined saved automation time. |

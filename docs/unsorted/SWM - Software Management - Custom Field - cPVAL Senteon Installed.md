@@ -8,9 +8,10 @@ tags: ['installation', 'software']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This custom field is used to determine if the Senteon Agent is installed on the endpoint or not.
+This custom field is used to determine if the Senteon Agent is installed on the endpoint.
 
 ## Associated Content
 
@@ -27,19 +28,5 @@ This custom field is used to determine if the Senteon Agent is installed on the 
 | Custom Field Value | Description                                                                                     |
 |--------------------|-------------------------------------------------------------------------------------------------|
 | Installed          | The expected value when the application is detected and the service is running.                |
-| Not_Running        | The expected value when the application was detected on the endpoint but the service was running.|
+| Not_Running        | The expected value when the application was detected on the endpoint but the service was not running. |
 | Not_Present        | The expected value when the application is not detected.                                      |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

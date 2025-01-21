@@ -8,9 +8,10 @@ tags: ['deployment']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Select this custom Field to exclude a machine from Huntress Deployment. It is being utilized by [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>) group.
+Select this custom field to exclude a machine from Huntress Deployment. It is utilized by the [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>) group.
 
 # Create the Custom Field
 
@@ -18,20 +19,8 @@ Select this custom Field to exclude a machine from Huntress Deployment. It is be
 
 ![Image](../../../static/img/Exclude-Huntress-Deployment/image_2.png)
 
-**Name:** Exclude Huntress  
-**Type:** Flag  
-**Level:** Endpoint  
-**Description:** Select to Exclude Endpoint from Huntress Deployment  
-**Editable:** Yes  
-
-
-
-
-
-
-
-
-
-
-
-
+**Name:** Exclude Huntress  \
+**Type:** Flag  \
+**Level:** Endpoint  \
+**Description:** Select to Exclude Endpoint from Huntress Deployment  \
+**Editable:** Yes 

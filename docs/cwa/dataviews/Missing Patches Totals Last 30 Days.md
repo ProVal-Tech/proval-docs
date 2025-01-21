@@ -8,32 +8,20 @@ tags: ['performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview provides patching information for devices online within the last 30 days. It will display total patches not set, reviewed count, total missing patches, and breaks those numbers down to by server and by workstation numbers.
+This Dataview provides patching information for devices online within the last 30 days. It displays the total patches not set, reviewed count, total missing patches, and breaks these numbers down by server and workstation.
 
 ## Columns
 
 | Column                             | Description                                                                                           |
 |------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Patches Missing - Server (> 30 days) | Displays the number of patches missing on servers that have been online in the last 30 days         |
-| Patches Missing / server           | Displays the number of patches missing per server that have been online in the last 30 days         |
+| Patches Missing / Server           | Displays the number of patches missing per server that have been online in the last 30 days         |
 | Patches Missing - Workstation (> 30 days) | Displays the number of patches missing on workstations that have been online in the last 30 days   |
-| Patches Missing / workstation      | Displays the number of patches missing per workstation that have been online in the last 30 days    |
+| Patches Missing / Workstation      | Displays the number of patches missing per workstation that have been online in the last 30 days    |
 | Total Missing                      | Displays the total number of missing patches                                                          |
-| TotalPerMachine                   | Displays the number of patches per machine that have been online in the last 30 days                 |
-| TotalMissingUnfiltered             | Displays the number of patches that are unfiltered                                                   |
+| Total Per Machine                  | Displays the number of patches per machine that have been online in the last 30 days                 |
+| Total Missing Unfiltered           | Displays the number of patches that are unfiltered                                                   |
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
-
-
-
-
-
-
-
-
-
-
-
-
-

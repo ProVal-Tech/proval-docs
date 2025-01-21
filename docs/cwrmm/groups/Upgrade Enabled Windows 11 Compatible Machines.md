@@ -8,9 +8,10 @@ tags: ['installation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Houses the computers where the Windows 11 Installer (Beta) task has been executed but haven't rebooted since then.
+This document houses the computers where the Windows 11 Installer (Beta) task has been executed but have not rebooted since then.
 
 ## Dependencies
 
@@ -22,12 +23,12 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
 
 ## Group Creation
 
-1. Navigate to `Devices` > `Device Groups`.
+1. Navigate to `Devices` > `Device Groups`.  
    ![Step 1](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_1.png)
 
-2. Create a new dynamic group by clicking the `Dynamic Group` button.
-   ![Step 2](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_2.png)
-   
+2. Create a new dynamic group by clicking the `Dynamic Group` button.  
+   ![Step 2](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_2.png)  
+
    This page will appear after clicking on the `Dynamic Group` button:  
    ![Step 2 Continued](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_3.png)
 
@@ -50,7 +51,7 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
    ![Step 6](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_9.png)  
    A new search box will appear.  
    ![Step 6 Continued](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_10.png)  
-   
+
    Search and select the `Exclude Windows 11 Installation` custom field from the search box. There are two custom fields with the same name. Select the site-level custom field in this step.  
    ![Step 6 Continued](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_11.png)  
    Set `False` in the comparison condition.  
@@ -61,7 +62,7 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
    ![Step 7](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_13.png)  
    A new search box will appear.  
    ![Step 7 Continued](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_14.png)  
-   
+
    Search and select the `Exclude Windows 11 Installation` custom field from the search box. There are two custom fields with the same name. Select the computer-level custom field in this step.  
    ![Step 7 Continued](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_15.png)  
    Set `False` in the comparison condition.  
@@ -97,15 +98,3 @@ Houses the computers where the Windows 11 Installer (Beta) task has been execute
 
 ![Completed Group 1](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_23.png)  
 ![Completed Group 2](../../../static/img/Upgrade-Enabled-Windows-11-Compatible-Machines/image_24.png)
-
-
-
-
-
-
-
-
-
-
-
-

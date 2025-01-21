@@ -8,9 +8,10 @@ tags: ['backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The table is built to store the complete Windows Server Backup data
+The table is built to store the complete Windows Server Backup data.
 
 ## Dependencies
 
@@ -22,32 +23,19 @@ The table is built to store the complete Windows Server Backup data
 
 | Column                                     | Type     | Explanation                                                                                           |
 |--------------------------------------------|----------|-------------------------------------------------------------------------------------------------------|
-| computerid                                 | INT      | Computerid of the agent                                                                               |
+| computerid                                 | INT      | Computer ID of the agent                                                                              |
 | Next Backup Time                           | DATETIME | Next backup runtime                                                                                    |
 | Last Successful Backup Time                | DATETIME | Last successful backup time                                                                            |
 | Last Backup Time                           | DATETIME | Last backup runtime                                                                                    |
 | Last Backup Status                         | VARCHAR  | Last backup health                                                                                     |
-| Last Backup Target                         | VARCHAR  | Destination path where last backup stored                                                             |
-| Backup Operation Status During ScriptRan   | VARCHAR  | This shows whether the backup is in progress or completed                                              |
+| Last Backup Target                         | VARCHAR  | Destination path where the last backup is stored                                                      |
+| Backup Operation Status During ScriptRan   | VARCHAR  | Indicates whether the backup is in progress or completed                                              |
 | Backup Start Date                          | DATETIME | Backup schedule date                                                                                   |
-| Volumes To Backup                          | VARCHAR  | Volume which is backing up                                                                             |
-| Files to Backup                            | VARCHAR  | Files which is backing up                                                                              |
-| Exclude Files From Backup                  | VARCHAR  | Files which is excluded from backing                                                                   |
-| Components to Backup                       | VARCHAR  | Components which is backing up                                                                          |
-| Bare Metal Recovery                        | VARHAR   | It stands for a complete system restore, including the operating system and all system-specific configurations |
-| SystemState Backup                         | VARCHAR  | It contains the critical system components, including the registry, Active Directory, and system files required for system recovery |
-| Overwrite Old Format VHD                   | VARCHAR  | If enabled the old VHD files will be overwritten during subsequent backups                             |
+| Volumes To Backup                          | VARCHAR  | Volumes that are being backed up                                                                       |
+| Files to Backup                            | VARCHAR  | Files that are being backed up                                                                         |
+| Exclude Files From Backup                  | VARCHAR  | Files that are excluded from backup                                                                    |
+| Components to Backup                       | VARCHAR  | Components that are being backed up                                                                     |
+| Bare Metal Recovery                        | VARCHAR  | Refers to a complete system restore, including the operating system and all system-specific configurations |
+| SystemState Backup                         | VARCHAR  | Contains critical system components, including the registry, Active Directory, and system files required for recovery |
+| Overwrite Old Format VHD                   | VARCHAR  | If enabled, the old VHD files will be overwritten during subsequent backups                           |
 | ScriptRanDate                              | DATETIME | Script last run time                                                                                   |
-
-
-
-
-
-
-
-
-
-
-
-
-

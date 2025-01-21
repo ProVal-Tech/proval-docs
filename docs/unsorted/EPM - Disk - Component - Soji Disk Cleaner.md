@@ -8,34 +8,22 @@ tags: ['cleanup', 'datto', 'disk-cleanup', 'software']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-Runs the Soji Disk Cleaner on the selected endpoint(s).
+This document describes the process of running the Soji Disk Cleaner on selected endpoint(s).
 
 ## Dependencies
 
-[Soji](https://proval.itglue.com/DOC-5078775-10338558) Agnostic Content  
-.NET 6 (Install will be attempted by Component if not detected.)
+- [Soji](https://proval.itglue.com/DOC-5078775-10338558) Agnostic Content  
+- .NET 6 (Installation will be attempted by the component if not detected.)
 
 ## Implementation
 
-Import the attached component into Datto RMM
+Import the attached component into Datto RMM.
 
 ## Output
 
-stdOut  
-stdError  
-ProgramData/_automation/app/soji/sojilogs/
-
-
-
-
-
-
-
-
-
-
-
-
-
+- stdOut  
+- stdError  
+- ProgramData/_automation/app/soji/sojilogs/

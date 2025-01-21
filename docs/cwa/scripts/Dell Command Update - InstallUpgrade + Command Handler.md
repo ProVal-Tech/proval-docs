@@ -8,15 +8,16 @@ tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The "Dell Command | Update" application is used by this script to carry out commands on Dell Workstations. If the application isn't already installed, it will do it. If a version older than 5 is already present, it will upgrade the application to the latest available version.
+The "Dell Command | Update" application is used by this script to carry out commands on Dell Workstations. If the application isn't already installed, it will be installed. If a version older than 5 is already present, it will upgrade the application to the latest available version.
 
 Supported OS: Windows 10, Windows 11
 
 Command line reference: [Dell Command | Update CLI Commands](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us)
 
-**Note:** The systems must be compatible with the installation of Dell Command Update. For further details on compatible systems, please visit the compatible systems section of the below link: [Dell Command | Update Windows Universal Application | Driver Details | Dell US](https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=0XNVX)
+**Note:** The systems must be compatible with the installation of Dell Command Update. For further details on compatible systems, please visit the compatible systems section of the following link: [Dell Command | Update Windows Universal Application | Driver Details | Dell US](https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=0XNVX)
 
 **Note:** ProVal does not recommend performing BIOS updates remotely. ProVal is not responsible for any failed devices due to remote BIOS updates. BIOS updates are performed at the MSP's risk.
 
@@ -27,22 +28,22 @@ Command line reference: [Dell Command | Update CLI Commands](https://www.dell.co
 To execute the /scan command:  
 ![Execute Scan Command](../../../static/img/Dell-Command-Update---InstallUpgrade-+-Command-Handler/image_2.png)
 
-To Install all the available Updates:  
+To install all the available updates:  
 ![Install All Updates](../../../static/img/Dell-Command-Update---InstallUpgrade-+-Command-Handler/image_3.png)
 
-To Install BIOS, and FIRMWARE Updates only:  
+To install BIOS and firmware updates only:  
 ![Install BIOS and Firmware Updates](../../../static/img/Dell-Command-Update---InstallUpgrade-+-Command-Handler/image_4.png)
 
-To Install BIOS updates Only:  
+To install BIOS updates only:  
 ![Install BIOS Updates Only](../../../static/img/Dell-Command-Update---InstallUpgrade-+-Command-Handler/image_5.png)
 
-In the same way Driver Updates can be installed as well. Please refer to [Dell Command | Update Version 5.x Reference Guide | Dell US](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) for more supported commands.
+In the same way, driver updates can also be installed. Please refer to [Dell Command | Update Version 5.x Reference Guide | Dell US](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) for more supported commands.
 
 ## User Parameters
 
 | Name     | Example | Required | Description                                                                                       |
 |----------|---------|----------|---------------------------------------------------------------------------------------------------|
-| Command  | /scan   | False    | Command to execute on the computer, /scan command will be executed, if this parameter is left blank. |
+| Command  | /scan   | False    | Command to execute on the computer; the /scan command will be executed if this parameter is left blank. |
 
 ## Script States
 
@@ -51,7 +52,7 @@ In the same way Driver Updates can be installed as well. Please refer to [Dell C
 | DellCommandUpdateLastCommandPassed | Stores the command executed from the user parameter.   |
 | DellCommandUpdateScriptLastRunTime | Stores the script run time.                            |
 | DellCommandUpdateScriptLastResult  | Output of the command executed from Dell Command | Update. |
-| UpdatesNeeded                      | Number of updates needed to install on the computer. Returned by the /Scan command. |
+| UpdatesNeeded                      | Number of updates needed to install on the computer, returned by the /scan command. |
 | LastRunStatus                      | Exit code returned by Dell Command | Update.           |
 | LastRunStatusReference             | Translation of the exit code.                          |
 
@@ -59,15 +60,3 @@ In the same way Driver Updates can be installed as well. Please refer to [Dell C
 
 - Script State
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

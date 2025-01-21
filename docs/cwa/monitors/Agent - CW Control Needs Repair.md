@@ -8,27 +8,15 @@ tags: ['connectwise', 'installation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will locate broken CWControl installations on agents. Optionally runs an auto-fix to fix the agent.
+This monitor will locate broken CWControl installations on agents and optionally run an auto-fix to repair the agent.
 
 ## Dependencies
 
-[CWM - Control - Script - CW Control - Repair [RMM+, Autofix,Globals]](<../scripts/ScreenConnect - Repair RMM+, Autofix, Globals.md>)
+[CWM - Control - Script - CW Control - Repair [RMM+, Autofix, Globals]](<../scripts/ScreenConnect - Repair RMM+, Autofix, Globals.md>)
 
 ## Target
 
-All Agents - Should be run on all machines.
-
-
-
-
-
-
-
-
-
-
-
-
-
+All agents - This should be run on all machines.

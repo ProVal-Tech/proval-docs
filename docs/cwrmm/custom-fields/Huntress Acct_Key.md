@@ -8,9 +8,10 @@ tags: ['connectwise', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Custom field is to be filled with Huntress Account Key by the partner. It is being utilized by [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>) task.
+This custom field is to be filled with the Huntress Account Key by the partner. It is utilized by the [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>) task.
 
 # Create the Custom Field
 
@@ -18,20 +19,8 @@ This Custom field is to be filled with Huntress Account Key by the partner. It i
 
 ![Image 2](../../../static/img/Huntress-Acct_Key/image_2.png)
 
-**Name:** Huntress Acct_Key  
+**Name:** Huntress Account Key  
 **Type:** Text Box  
 **Level:** Company  
-**Description:** Huntress Account key  
+**Description:** Huntress Account Key  
 **Editable:** Yes  
-
-
-
-
-
-
-
-
-
-
-
-

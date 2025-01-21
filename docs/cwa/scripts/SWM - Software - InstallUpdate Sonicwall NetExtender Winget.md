@@ -8,9 +8,10 @@ tags: ['installation', 'networking', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will attempt to install/update the SonicWall NetExtender application to the target device using Winget.
+This script attempts to install or update the SonicWall NetExtender application on the target device using Winget.
 
 ## Sample Run
 
@@ -21,29 +22,16 @@ This script will attempt to install/update the SonicWall NetExtender application
 | Name           | Description                                                             |
 |----------------|-------------------------------------------------------------------------|
 | psout          | Stores the SonicWall NetExtender install/update result                  |
-| LogContent     | This stores the content of the file SonicWall.NetExtender-log.txt      |
-| DataLogContent | This stores the content of the file SonicWall.NetExtender-data.txt     |
-| ErrorLog       | This stores the content of the file SonicWall.NetExtender-error.txt    |
+| LogContent     | Stores the content of the file `SonicWall.NetExtender-log.txt`        |
+| DataLogContent | Stores the content of the file `SonicWall.NetExtender-data.txt`       |
+| ErrorLog       | Stores the content of the file `SonicWall.NetExtender-error.txt`      |
 
 ## Process
 
-This script will perform the SonicWall NetExtender install/update using Winget. It can be run directly or can be scheduled with the monitor [SonicWall NetExtender Deployment](<../monitors/SonicWall NetExtender Deployment.md>).
+This script performs the SonicWall NetExtender install/update using Winget. It can be run directly or scheduled with the monitor [SonicWall NetExtender Deployment](<../monitors/SonicWall NetExtender Deployment.md>).
 
-Note: This script needed to be scheduled on at least one machine permanently, so that the max version keeps on updating in the database to trigger the monitor for the update of the SonicWall NetExtender on all agents where it is installed.
+**Note:** This script needs to be scheduled on at least one machine permanently so that the maximum version keeps updating in the database to trigger the monitor for the update of the SonicWall NetExtender on all agents where it is installed.
 
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-
-

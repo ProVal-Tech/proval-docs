@@ -8,25 +8,26 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will set a custom property in CW Control for the matching system in the CW Control portal using the matching GUID.  
+This script will set a custom property in CW Control for the matching system in the CW Control portal using the matching GUID.
 
-![Image](../../../static/img/ScreenConnect---Update-Custom-Property-RMM+,Param/image_1.png)  
+![Image](../../../static/img/ScreenConnect---Update-Custom-Property-RMM+,Param/image_1.png)
 
-User property for the Custom Property Index and the Property Value needs to be set before running the script.  
+User properties for the Custom Property Index and the Property Value need to be set before running the script.
 
-**Time Saved by Automation:** 5 Minutes  
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
-**Target:** Any machine with CW Control installed  
+**Target:** Any machine with CW Control installed
 
-![Image](../../../static/img/ScreenConnect---Update-Custom-Property-RMM+,Param/image_2.png)  
+![Image](../../../static/img/ScreenConnect---Update-Custom-Property-RMM+,Param/image_2.png)
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)  
+[CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
 
 #### Variables
 
@@ -43,30 +44,18 @@ User property for the Custom Property Index and the Property Value needs to be s
 
 | Name           | Example | Required | Description                                                                                                                                                                                                                                 |
 |----------------|---------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PropertyIndex   | 5       | True     | This is the custom property in CW Control that you want to set. Property 1-4 are used by the CWA / CWC plugin. Suggest starting with Property 5-8. This video can explain how to set them up in CWC. [Watch Video](https://www.youtube.com/watch?v=KgtLfEkAdwM) |
+| PropertyIndex   | 5       | True     | This is the custom property in CW Control that you want to set. Properties 1-4 are used by the CWA / CWC plugin. It is suggested to start with Properties 5-8. This video can explain how to set them up in CWC. [Watch Video](https://www.youtube.com/watch?v=KgtLfEkAdwM) |
 | PropertyValue   | True    | True     | This is the value you want to set for the Custom Property                                                                                                                                                                                |
 
 #### System Properties
 
 | Name                           | Example                               | Required | Description                                                                                                                                                                                                                     |
 |--------------------------------|---------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RMMPlus_AccessKey              | ajw8fh2p93ufn;o31ifu2091j23oif      | True     | This is the key setup in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.                                                                                                                    |
+| RMMPlus_AccessKey              | ajw8fh2p93ufn;o31ifu2091j23oif      | True     | This is the key set up in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.                                                                                                                    |
 | RMMPlus_Headers                | Origin: [site.site.com](http://site.site.com/) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control.                                                                           |
 | RMMPlus_StaleAgentThreshold     | 30                                    | True     | The number of days to indicate what a "stale" agent is to the scripts. 30 is the default.                                                                                                                                     |
-| RMMPlus_Timeout                | 1000                                  | True     | The default timeout for commands runs via RMM+ through Automate. 1000 is the default.                                                                                                                                         |
+| RMMPlus_Timeout                | 1000                                  | True     | The default timeout for commands run via RMM+ through Automate. 1000 is the default.                                                                                                                                         |
 
 ## Output
 
 Script log messages only.
-
-
-
-
-
-
-
-
-
-
-
-

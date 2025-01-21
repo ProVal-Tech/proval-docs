@@ -8,23 +8,11 @@ tags: ['disk', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor looks for the Drive other than C: on location level to check if any agent has disk partition set and no cache size set on the drive.
+This monitor checks for drives other than C: at the location level to ensure that any agent has a disk partition set and that no cache size is configured on the drive.
 
 ## Target
 
 Windows Server
-
-
-
-
-
-
-
-
-
-
-
-
-

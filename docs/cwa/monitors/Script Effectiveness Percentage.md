@@ -8,19 +8,20 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The monitor will create a ticket for the scripts which have a success/effectiveness rate of less than X over the set script log retention days.
+The monitor will create a ticket for scripts that have a success/effectiveness rate of less than X over the set script log retention days.
 
-The Script log retention days can be seen at the automate location below:
+The script log retention days can be seen at the Automate location below:
 
 ![Script Log Retention Days](../../../static/img/Script-Effectiveness--X-/image_1.png)
 
-50 is the default Threshold. The value for the `@ThresholdPercent` in the extra condition of the monitor set can be adjusted to update the Threshold. If you set this number to 30, the monitor set will look for scripts for which the effectiveness is less than 30.
+50 is the default threshold. The value for the `@ThresholdPercent` in the extra condition of the monitor set can be adjusted to update the threshold. If you set this number to 30, the monitor set will look for scripts for which the effectiveness is less than 30.
 
 ![Threshold Adjustment](../../../static/img/Script-Effectiveness--X-/image_2.png)
 
-And change this number in the Alert Message on Failure section under the alerting tab accordingly.
+Make sure to change this number in the Alert Message on Failure section under the alerting tab accordingly.
 
 ![Alert Message Adjustment](../../../static/img/Script-Effectiveness--X-/image_3.png)
 
@@ -30,57 +31,44 @@ The monitor's default behavior is to detect all scripts, regardless of how many 
 
 ### For On-Prem Partners
 
-Default nature of the monitor is to create all the tickets against the Automate server. If you would like to generate the tickets for another computer, then set a number for the `@ComptueridForTickets` variable.
+The default nature of the monitor is to create all the tickets against the Automate server. If you would like to generate the tickets for another computer, then set a number for the `@ComputeridForTickets` variable.
 
 ![On-Prem Ticket Generation](../../../static/img/Script-Effectiveness--X-/image_5.png)
 
 ### For Hosted Partners
 
-Default nature of the monitor is to create all the tickets for the oldest computer of clientid 1. If you would like to generate the tickets for another computer, then set a number for the `@ComptueridForTickets` variable.
+The default nature of the monitor is to create all the tickets for the oldest computer of client ID 1. If you would like to generate the tickets for another computer, then set a number for the `@ComputeridForTickets` variable.
 
 ![Hosted Ticket Generation](../../../static/img/Script-Effectiveness--X-/image_6.png)
 
-If you would like to generate the ticket for the minimum clientid of another client, then set another number/id for the `@HostedPartnersDefaultClientid` Variable.
+If you would like to generate the ticket for the minimum client ID of another client, then set another number/id for the `@HostedPartnersDefaultClientid` variable.
 
 ![Hosted Partners Default Client ID](../../../static/img/Script-Effectiveness--X-/image_7.png)
 
-Note: Do Not Remove the Semi-colons (;) while making changes.
+**Note:** Do not remove the semicolons (;) while making changes.
 
 ### Alerting Tab:
 
-Ticket Subject: Effectiveness Check - Script Name - Failed
+- **Ticket Subject:** Effectiveness Check - Script Name - Failed
 
-Ticket Body for Failures:
+- **Ticket Body for Failures:**
+  - Threshold Percent: 50
+  - Total Runs: TotalNumberOfScriptRuns  
+  - Effective Percent: Effective Percent  
+  - Last Run Date: LastRunDateofScript.
 
-Threshold Percent: 50
-
-Total Runs: TotalNumberOfScriptRuns  
-Effective Percent: Effective Percent  
-Last Run Date: LastRunDateofScript.
-
-Sample Screenshot Ticket Subject:
+#### Sample Screenshot Ticket Subject:
 
 ![Sample Ticket Subject](../../../static/img/Script-Effectiveness--X-/image_8.png)
 
-Sample Screenshot Ticket Body:
+#### Sample Screenshot Ticket Body:
 
 ![Sample Ticket Body](../../../static/img/Script-Effectiveness--X-/image_9.png)
 
-**Above screenshot contains ticket body from three tickets.
+**The above screenshot contains the ticket body from three tickets.**
 
-Recommended Alert Template: Default Create Ticket
+**Recommended Alert Template:** Default Create Ticket
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-

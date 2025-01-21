@@ -8,9 +8,10 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Windows 10 computers which are not compatible for Windows 11.
+This document describes how to identify Windows 10 computers that are not compatible with Windows 11.
 
 ## Dependencies
 
@@ -22,7 +23,8 @@ Navigate to `Devices` > `Device Groups`.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_1.png)
 
-### 1.
+### 1. Create a Dynamic Group
+
 Create a new dynamic group by clicking the `Dynamic Group` button.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_2.png)
@@ -31,14 +33,16 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_3.png)
 
-### 2.
+### 2. Set Group Name and Description
+
 Set the group name to `Windows 11 incompatible machines`.  
-Description: `Windows 10 computers which are not compatible for Windows 11.`
+Description: `Windows 10 computers which are not compatible with Windows 11.`
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_4.png)
 
-### 3.
-Click the `+ Add Criteria` in the `Criteria` section of the group.
+### 3. Add Criteria
+
+Click the `+ Add Criteria` button in the `Criteria` section of the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_5.png)
 
@@ -46,7 +50,8 @@ This search box will appear.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_6.png)
 
-### 4.
+### 4. Select Custom Field
+
 Search and select the `Windows 11 compatible` custom field from the search box.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_7.png)
@@ -57,7 +62,8 @@ Set `No` in the comparison condition.
 
 **Condition:** `Enable Windows 11 Compatible` `Contains any of` `No`
 
-### 5.
+### 5. Add Additional Criteria
+
 Click the `+ Add Criteria` button.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_9.png)
@@ -77,7 +83,8 @@ Select `Microsoft Windows 10` in the comparison condition.
 
 **Condition:** `OS` `Contains any of` `Microsoft Windows 10`
 
-### 6.
+### 6. Save the Group
+
 Click the `Save` button to save/create the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_14.png)
@@ -86,15 +93,3 @@ Click the `Save` button to save/create the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_15.png)  
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_16.png)
-
-
-
-
-
-
-
-
-
-
-
-

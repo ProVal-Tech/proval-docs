@@ -8,19 +8,20 @@ tags: ['database', 'patching', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Present the fundamental patching-related statistics for the patch-managed windows computers present in the environment. Data is displayed w.r.t the `Approval age` of the patches. It will show five rows, i.e., one row per Approval age category.
+This document presents the fundamental patching-related statistics for the patch-managed Windows computers in the environment. Data is displayed with respect to the `Approval Age` of the patches. It will show five rows, with one row per approval age category.
 
 The approval age is divided into five categories:
 
-- Less than 7 Days (\<= 7)
+- Less than 7 Days (≤ 7)
 - Between 8 to 14 Days (8-14)
 - Between 15 to 21 Days (15-21)
 - Between 22 to 30 Days (22-30)
 - More than 30 Days (> 30)
 
-The SQL query filters the results for the Patch Managed computers only, removing the `j.Patching Policy = 'Managed'` from the `SQLWhere` dataview will also show the data for the Unmanaged windows machines.
+The SQL query filters the results for the patch-managed computers only. Removing `j.Patching Policy = 'Managed'` from the `SQLWhere` dataview will also show data for the unmanaged Windows machines.
 
 ## Dependencies
 
@@ -30,29 +31,14 @@ The SQL query filters the results for the Patch Managed computers only, removing
 
 | Column                     | Description                                                                                                          |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------|
-| ApproVal Age              | Approval age of the patches in days ('\<= 7', '8-14', '15-22', '22-30', '> 30')                                    |
-| Total Approved            | Number of patches approved between the respective Approval Age for the whole environment                             |
+| Approval Age              | Approval age of the patches in days ('≤ 7', '8-14', '15-21', '22-30', '> 30')                                    |
+| Total Approved            | Number of patches approved within the respective approval age for the whole environment                             |
 | Total Missing             | Number of approved patches that aren't installed                                                                     |
-| Total Approved Servers     | Number of patches approved between the respective Approval Age for all the Servers                                   |
+| Total Approved Servers     | Number of patches approved within the respective approval age for all the servers                                   |
 | Total Missing Servers      | Number of approved patches that aren't installed for the servers                                                    |
 | Missing Per Server        | Average number of missing patches per server                                                                         |
-| Total Approved Workstations | Number of patches approved between the respective Approval Age for the Workstations                                  |
-| Total Missing Workstations  | Number of approved patches that aren't installed for the Workstations                                               |
+| Total Approved Workstations | Number of patches approved within the respective approval age for the workstations                                  |
+| Total Missing Workstations  | Number of approved patches that aren't installed for the workstations                                               |
 | Missing Per Workstation    | Average number of missing patches per workstation                                                                   |
-| Patching Policy           | Patching Policy (Managed | UnManaged). (By Default the dataview will display the data for the Patch managed computers only) |
-| sort                      | A custom column to sort the dataview in proper order (Hidden)                                                      |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Patching Policy           | Patching Policy (Managed | Unmanaged). By default, the dataview will display the data for the patch-managed computers only |
+| Sort                      | A custom column to sort the dataview in proper order (Hidden)                                                      |

@@ -8,9 +8,10 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script modifies the properties of the default password policy for a domain. You can modify property values by using the cmdlet parameters and can adjust the value in the Global variable.
+The script modifies the properties of the default password policy for a domain. You can modify property values by using the cmdlet parameters and adjusting the values in the global variables.
 
 **Time Saved by Automation:** 15 Minutes
 
@@ -22,33 +23,21 @@ The script modifies the properties of the default password policy for a domain. 
 
 | Name                        | Example       | Required | Description                                                                                     |
 |-----------------------------|---------------|----------|-------------------------------------------------------------------------------------------------|
-| LockoutDurration            | 00:30:00      | True     | This helps to lock the machine to provided time window after multiple failed attempts.         |
-| LockoutThreshold            | 5             | True     | This helps to lock the machine after provided failed attempt count.                            |
-| LockoutObservationWindow    | 00:20:00      | True     | This helps to show info after how much time again try to login.                               |
-| ComplexityEnabled           | 1             | True     | This shows info about the password complexity of a combination of numbers, characters, and special conditions as per requirement. |
-| ReversibleEncryptionEnabled  | 0             | True     | This is required for encryption enabled or not.                                               |
-| MinPasswordLength          | 10            | True     | This shows the min password length.                                                            |
-| PasswordHistoryCount       | 10            | True     | This shows the last password strength and password set to avoid setting duplicate password again and again. |
-| MaxPasswordAge             | 90.00:00:00   | True     | This ensures the password expiration day after a certain threshold set.                        |
+| LockoutDuration             | 00:30:00      | True     | This helps to lock the machine for the provided time window after multiple failed attempts.    |
+| LockoutThreshold            | 5             | True     | This helps to lock the machine after the provided failed attempt count.                        |
+| LockoutObservationWindow    | 00:20:00      | True     | This helps to show information about how much time must pass before trying to log in again.   |
+| ComplexityEnabled           | 1             | True     | This indicates whether password complexity is enforced, including a combination of numbers, characters, and special conditions as per requirements. |
+| ReversibleEncryptionEnabled  | 0             | True     | This indicates whether encryption is enabled or not.                                           |
+| MinPasswordLength          | 10            | True     | This specifies the minimum password length.                                                    |
+| PasswordHistoryCount       | 10            | True     | This specifies the number of previous passwords that cannot be reused.                         |
+| MaxPasswordAge             | 90.00:00:00   | True     | This ensures the password expiration date after a certain threshold is set.                   |
 | MinPasswordAge             | 01:00:00      | True     | This ensures the minimum password age.                                                          |
 
 ## Process
 
-- This script will get the domain name first.
-- The script will run the PowerShell to modify the properties of the default password policy for a domain. You can modify property values by adjusting the value in the Global variable.
+- This script will first retrieve the domain name.
+- The script will run PowerShell to modify the properties of the default password policy for a domain. You can modify property values by adjusting the values in the global variables.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script disables the SMB1 protocol on the target machine. For both below and above the version '6.3'.
+This script disables the SMB1 protocol on the target machine for both versions below and above '6.3'.
 
 ## Target
 
@@ -23,15 +24,3 @@ Windows OS
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

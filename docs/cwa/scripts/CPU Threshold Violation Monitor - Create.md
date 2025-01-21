@@ -8,9 +8,10 @@ tags: ['performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This document outlines the process for creating Remote Monitors for CPU Usage on Windows machines. The creation of these remote monitors is governed by system properties, as well as client-level, location-level and computer-level Extra Data Fields (EDFs). These elements are further detailed within this document.
+This document outlines the process for creating remote monitors for CPU usage on Windows machines. The creation of these remote monitors is governed by system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs). These elements are further detailed within this document.
 
 The script creates remote monitors that trigger an alert when the CPU usage on the target machine exceeds a certain upper threshold percentage and remains above a certain lower threshold percentage for a specified duration. These thresholds can be configured in the system properties, which are elaborated in the **System Properties** section of this document.
 
@@ -20,7 +21,7 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 
 1. **Remove Existing Monitors**
    - Remove the existing `ProVal - Production - CPU Threshold Violation Monitor` monitor set from the groups it's already applied to.
-   - Execute this SQL query from an RAWSQL monitor set to get rid of the existing monitors:  
+   - Execute this SQL query from a RAWSQL monitor set to get rid of the existing monitors:  
      `Delete From Groupagents where Name = 'ProVal - Production - CPU Threshold Violation Monitor'`
    - Open the `Server Status` tool by navigating to `Help` > `Server Status`.  
      ![Server Status Tool](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_1.png)
@@ -71,17 +72,17 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 | CPU_Monitoring_Workstation_High_Threshold_Percentage | 90           | True     | This property stores the upper threshold, expressed as a percentage, for CPU usage on workstations. The upper threshold is the CPU usage percentage that triggers the timer. Once the CPU usage hits the upper threshold, the monitor set initiates a timer and monitors it until the CPU usage drops below the lower threshold. If the CPU usage remains above the lower threshold for the duration specified in the `CPU_Monitoring_Workstation_Continuous_Usage_Threshold_Minutes` property, an alert will be generated. The default value is `90`. |
 | CPU_Monitoring_Server_Low_Threshold_Percentage  | 90               | True     | This property stores the lower threshold, expressed as a percentage, for CPU usage on servers. The lower threshold is the CPU usage percentage that stops the timer. Once the CPU usage goes below the lower threshold, the monitor set stops the timer initiated after hitting the higher threshold stored in the `CPU_Monitoring_Server_High_Threshold_Percentage` property. The monitor set will auto-close the ticket after the CPU usage for the server drops below the percentage stored in this system property. The default value is `90`. |
 | CPU_Monitoring_Workstation_Low_Threshold_Percentage | 85            | True     | This property stores the lower threshold, expressed as a percentage, for CPU usage on workstations. The lower threshold is the CPU usage percentage that stops the timer. Once the CPU usage goes below the lower threshold, the monitor set stops the timer initiated after hitting the higher threshold stored in the `CPU_Monitoring_Workstation_High_Threshold_Percentage` property. The monitor set will auto-close the ticket after the CPU usage for the workstation drops below the percentage stored in this system property. The default value is `90`. |
-| CPU_Monitoring_Server_AlertTemplate             | 1                | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the servers. The default value is `1`. i.e., `Default - Do Nothing.` Navigate to the **System Dashboard --> Management --> Alert Templates** to find the Id of the required alert template. It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
-| CPU_Monitoring_Workstation_AlertTemplate        | 1                | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the workstations. The default value is `1`. i.e., `Default - Do Nothing.` It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
-| CPU_Monitoring_Server_TicketCategory            | 124              | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Servers. The default value is `0`. i.e., `\<Not Specifed>`. Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate. Navigate to the **System Dashboard --> Config--> Information Base Categories** to find the Id of the required ticket category. |
-| CPU_Monitoring_Workstation_TicketCategory       | 125              | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Workstations. The default value is `0`. i.e., `\<Not Specifed>`.                                                                                                                                                          |
+| CPU_Monitoring_Server_AlertTemplate             | 1                | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the servers. The default value is `1`, i.e., `Default - Do Nothing.` Navigate to the **System Dashboard --> Management --> Alert Templates** to find the Id of the required alert template. It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
+| CPU_Monitoring_Workstation_AlertTemplate        | 1                | True     | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the workstations. The default value is `1`, i.e., `Default - Do Nothing.` It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
+| CPU_Monitoring_Server_TicketCategory            | 124              | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Servers. The default value is `0`, i.e., `\\<Not Specified>`. Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate. Navigate to the **System Dashboard --> Config --> Information Base Categories** to find the Id of the required ticket category. |
+| CPU_Monitoring_Workstation_TicketCategory       | 125              | False    | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Workstations. The default value is `0`, i.e., `\\<Not Specified>`.                                                                                                                                                          |
 
 ## Client-Level EDF
 
 | Name                                      | Type      | Section      | Description                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------------------|-----------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CPU Monitoring - Exclude Servers          | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the servers of the client from the CPU Usage monitoring. As a result, the script will not create any remote monitors for the servers under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the servers of this client. |
-| CPU Monitoring - Exclude Workstations     | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the workstations of the client from the CPU Usage monitoring. As a result, the script will not create any remote monitors for the workstations under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the workstations of this client. |
+| CPU Monitoring - Exclude Servers          | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the servers of the client from the CPU usage monitoring. As a result, the script will not create any remote monitors for the servers under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the servers of this client. |
+| CPU Monitoring - Exclude Workstations     | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the workstations of the client from the CPU usage monitoring. As a result, the script will not create any remote monitors for the workstations under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the workstations of this client. |
 
 **Note:** Mark both EDFs to exclude the client from the monitoring.
 
@@ -89,8 +90,8 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 
 | Name                                      | Type      | Section      | Description                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------------------|-----------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CPU Monitoring - Exclude Servers          | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the servers of the location from the CPU Usage monitoring. As a result, the script will not create any remote monitors for the servers under this location. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the servers of this location. |
-| CPU Monitoring - Exclude Workstations     | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the workstations of the location from the CPU Usage monitoring. As a result, the script will not create any remote monitors for the workstations under this location. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the workstations of this location. |
+| CPU Monitoring - Exclude Servers          | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the servers of the location from the CPU usage monitoring. As a result, the script will not create any remote monitors for the servers under this location. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the servers of this location. |
+| CPU Monitoring - Exclude Workstations     | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the workstations of the location from the CPU usage monitoring. As a result, the script will not create any remote monitors for the workstations under this location. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the workstations of this location. |
 
 **Note:** Mark both EDFs to exclude the location from the monitoring.
 
@@ -98,7 +99,7 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 
 | Name                                      | Type      | Section      | Description                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------------------|-----------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CPU Monitoring - Exclude                  | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the computer from the CPU Usage monitoring. As a result, the script will not create any remote monitor for this computer. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitor for this computer.                             |
+| CPU Monitoring - Exclude                  | Check Box | Exclusions    | Selecting this Extra Data Field (EDF) will exclude the computer from the CPU usage monitoring. As a result, the script will not create any remote monitor for this computer. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitor for this computer.                             |
 
 ## Remote Monitor Example
 
@@ -122,20 +123,8 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 ![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_11.png)  
 ![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_12.png)  
 ![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_13.png)  
-![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_14.png)
+![Sample Remote Monitor](../../../static/img/CPU-Threshold-Violation-Monitor---Create/image_14.png)  
 
 ## Output
 
 - Remote Monitors
-
-
-
-
-
-
-
-
-
-
-
-

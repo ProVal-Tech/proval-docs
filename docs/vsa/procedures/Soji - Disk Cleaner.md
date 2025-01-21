@@ -8,9 +8,10 @@ tags: ['disk-cleanup', 'logging', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Soji - A Windows disk cleaner. Will log to the agent procedure log and upload CSV reports to the "Get Files" section of the target agent.
+Soji is a Windows disk cleaner that logs actions to the agent procedure log and uploads CSV reports to the "Get Files" section of the target agent.
 
 ## Sample Run
 
@@ -25,13 +26,13 @@ Soji - A Windows disk cleaner. Will log to the agent procedure log and upload CS
 | 1:37:44 pm 1-Jul-22     | Soji - Disk Cleaner                         | Comment at THEN step 10                                                                                                                                                                                                        | learning |
 | 1:37:42 pm 1-Jul-22     | Write text to file                          | Success THEN                                                                                                                                                                                                                   | learning |
 | 1:37:42 pm 1-Jul-22     | Write text to file-0002                    | Overwrite enabled and file exists - deleting before write process.                                                                                                                                                            | learning |
-| 1:37:38 pm 1-Jul-22     | Soji - Disk Cleaner-0001                   | App folder Created. Directory: %ProgramData%//_automation//app//Soji                                                                                                                                                        | learning |
-| 1:37:37 pm 1-Jul-22     | Soji - Disk Cleaner-0001                   | App Folder does not exist. Creating...                                                                                                                                                                                       | learning |
-| 1:37:29 pm 1-Jul-22     | Run Now - Soji - Disk Cleaner               | Admin learning scheduled procedure Run Now - Soji - Disk Cleaner to run at Jul 1 2022 1:37PM                                                                                                                                 | learning |
+| 1:37:38 pm 1-Jul-22     | Soji - Disk Cleaner-0001                   | App folder created. Directory: %ProgramData%//_automation//app//Soji                                                                                                                                                        | learning |
+| 1:37:37 pm 1-Jul-22     | Soji - Disk Cleaner-0001                   | App folder does not exist. Creating...                                                                                                                                                                                       | learning |
+| 1:37:29 pm 1-Jul-22     | Run Now - Soji - Disk Cleaner               | Admin learning scheduled procedure "Run Now - Soji - Disk Cleaner" to run at Jul 1, 2022, 1:37 PM                                                                                                                           | learning |
 
 ## Process
 
-[https://proval.itglue.com/5078775/docs/10338558](https://proval.itglue.com/5078775/docs/10338558)
+[Process Documentation](https://proval.itglue.com/5078775/docs/10338558)
 
 ## Output
 
@@ -39,15 +40,4 @@ Soji - A Windows disk cleaner. Will log to the agent procedure log and upload CS
 
 ## Export Attachment
 
-Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
+Attach the content XML VSA export to this document.

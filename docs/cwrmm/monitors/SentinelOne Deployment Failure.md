@@ -8,6 +8,7 @@ tags: ['security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15806354) fails to install SentinelOne on the machines.
@@ -19,16 +20,16 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](htt
 
 ## Monitor
 
-1. Go to Alert Management > Monitors.  
+1. Go to **Alert Management > Monitors**.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_1.png)  
-   
-2. Click the `Create Monitor` button.  
+
+2. Click the **Create Monitor** button.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_2.png)  
-   
+
 3. This screen will appear.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_3.png)  
 
-4. Fill in the following details.  
+4. Fill in the following details:  
    **Name:** SentinelOne Deployment Failure  
    **Description:** This monitor will create tickets if CW RMM - Task - SentinelOne Deployment fails to install SentinelOne on the machines.  
    **Type:** Custom Fields  
@@ -36,35 +37,25 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](htt
    **Family:** Desktop Security  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_4.png)  
 
-5. Select `Text Box` in the Custom Field Type.  
-   Select `SentinelOne Deployment Result` from Custom Field Name Drop Down.  
-   Add `Error` in the Value.  
+5. Select **Text Box** in the Custom Field Type.  
+   Select **SentinelOne Deployment Result** from the Custom Field Name drop-down.  
+   Add **Error** in the Value.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_5.png)  
 
-6. Click the `Select Targets` button to select the clients to monitor.  
+6. Click the **Select Targets** button to select the clients to monitor.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_6.png)  
 
-7. Select all companies and click the `Save Selection` button.  
+7. Select all companies and click the **Save Selection** button.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_7.png)  
 
 8. In Ticket Resolution,  
-   Set 'Text Box' as Custom Field Type.  
-   Select `SentinelOne Deployment Result` from Custom Field Name Drop Down.  
-   Replace Equals with `Does not Contain`.  
-   Add `Error` in the Value.  
+   Set **Text Box** as the Custom Field Type.  
+   Select **SentinelOne Deployment Result** from the Custom Field Name drop-down.  
+   Replace **Equals** with **Does not Contain**.  
+   Add **Error** in the Value.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_8.png)  
 
-9. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
+9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/SentinelOne-Deployment-Failure/image_9.png)  
-
-
-
-
-
-
-
-
-
-
 
 

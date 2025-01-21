@@ -8,6 +8,7 @@ tags: ['dns']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is an RMM implementation of the agnostic script [Set-DNSServerScavengingSettings (Deprecate after approved content)](https://proval.itglue.com/DOC-5078775-7516268). It enables DNS scavenging and optionally allows you to set the interval for scavenging, 'no refresh', and refresh.
@@ -34,9 +35,9 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ![Task Creation](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_2.png)
 
-**Name:** DNS - Aging and Scavenging - Configure Intervals  
-**Description:** Enables DNS scavenging and optionally allows you to set the interval for 'scavenging', 'no refresh', and 'refresh'.  
-**Category:** Custom  
+**Name:** DNS - Aging and Scavenging - Configure Intervals  \
+**Description:** Enables DNS scavenging and optionally allows you to set the interval for 'scavenging', 'no refresh', and 'refresh'.  \
+**Category:** Custom  \
 ![Task Creation](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_3.png)
 
 ## Parameters
@@ -149,11 +150,11 @@ if ($Parameters) {
 }
 #endregion
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -171,14 +172,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-

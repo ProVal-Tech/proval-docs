@@ -8,13 +8,14 @@ tags: ['webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor checks the online agent where the client EDF "Enable Webroot Deployment" is checked and the "Exclude Webroot Deployment" location/computer EDF is set to false and the agent missing Webroot.
+This monitor checks the online status of agents where the client EDF "Enable Webroot Deployment" is enabled, the "Exclude Webroot Deployment" location/computer EDF is set to false, and the agent is missing Webroot.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Install Webroot SecureAnyWhere [EDF]](<../scripts/Install Webroot SecureAnyWhere Autofix, EDF.md>)
+[EPM - Data Collection - Script - Install Webroot SecureAnywhere [EDF]](<../scripts/Install Webroot SecureAnywhere Autofix, EDF.md>)
 
 - EDFs:
   - Enable Webroot Deployment - Client EDF
@@ -24,15 +25,3 @@ This monitor checks the online agent where the client EDF "Enable Webroot Deploy
 ## Target
 
 - Global
-
-
-
-
-
-
-
-
-
-
-
-

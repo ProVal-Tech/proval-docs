@@ -8,55 +8,44 @@ tags: ['report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Description
-This Script is intended to run on the Control Server. It will return a list of users and their respective properties.
+This script is intended to run on the Control Server. It will return a list of users and their respective properties.
 
 ## Requirements
-This must be run on the Control Server.
-Returns all users and their respective properties for the ConnectWise Control server.
+This script must be run on the Control Server. It returns all users and their respective properties for the ConnectWise Control server.
 
 ## Usage
 1. A user object is configured.
-2. Determines the location of the desired xml file that holds this information.
-3. Creates a new users object using the data from the xml.
-4. Outputs the results.
-
-
+2. The location of the desired XML file that holds this information is determined.
+3. A new users object is created using the data from the XML.
+4. The results are outputted.
 
 ```powershell
 .\Get-CWControlUsers.ps1
 ```
-Returns all users and their respective properties for the ConnectWise Control server.
+This command returns all users and their respective properties for the ConnectWise Control server.
 
-| Object Property       | Type     |
-| --------------------- | -------- |
-| `Name`                | String   |
-| `DisplayName`         | String   |
-| `Email`               | String   |
-| `Comment`             | String   |
-| `CreationDate`        | DateTime |
-| `LastActivityDate`    | DateTime |
-| `LastLockoutDate`     | DateTime |
-| `LastPasswordChangedDate` | DateTime  |
-| `PasswordAttemptWindowStartTime`  | DateTime |
-| `InvalidPasswordWindowAttemptCount`  | Int   |
-| `InvalidPasswordAbsoluteAttemptCount`  | Int   |
-| `PasswordQuestion`    | String   |
-| `Roles`               | String[] |
-| `PasswordHashHistory` | String[] |
-| `IsApproved`          | Bool     |
-| `IsLockedOut`         | Bool     |
+| Object Property                       | Type     |
+| ------------------------------------- | -------- |
+| `Name`                                | String   |
+| `DisplayName`                         | String   |
+| `Email`                               | String   |
+| `Comment`                             | String   |
+| `CreationDate`                        | DateTime |
+| `LastActivityDate`                   | DateTime |
+| `LastLockoutDate`                    | DateTime |
+| `LastPasswordChangedDate`            | DateTime |
+| `PasswordAttemptWindowStartTime`     | DateTime |
+| `InvalidPasswordWindowAttemptCount`   | Int      |
+| `InvalidPasswordAbsoluteAttemptCount` | Int      |
+| `PasswordQuestion`                    | String   |
+| `Roles`                               | String[] |
+| `PasswordHashHistory`                 | String[] |
+| `IsApproved`                          | Bool     |
+| `IsLockedOut`                         | Bool     |
 
 ## Output
-    System Object
-    .\Get-CWControlUsers-Log.txt
-    .\Get-CWControlUsers.txt
-
-
-
-
-
-
-
-
-
+- System Object
+- `.\Get-CWControlUsers-Log.txt`
+- `.\Get-CWControlUsers.txt`

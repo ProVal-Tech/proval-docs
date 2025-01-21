@@ -8,11 +8,12 @@ tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script installs Symantec Agent on the Windows machine.
+The script installs the Symantec Agent on the Windows machine.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,24 +21,13 @@ Time Saved by Automation: 10 Minutes
 
 ## Dependencies
 
-- Symantec_Agent_setup.exe must exist in the LtShare/Transfer/Software/ folder on the Automate server.
+- `Symantec_Agent_setup.exe` must exist in the `LtShare/Transfer/Software/` folder on the Automate server.
 
 ## Process
 
-- Downloads the setup.exe file from Automate server.
-- Installs the Symantec agent through this setup.exe file silently.
+- Downloads the `setup.exe` file from the Automate server.
+- Installs the Symantec Agent through this `setup.exe` file silently.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

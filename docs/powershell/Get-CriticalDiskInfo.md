@@ -8,35 +8,26 @@ tags: ['performance', 'report', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Description
-Gathers Data pulled from the Crystal Disk info application and pulls that data into rmm
+Gathers data pulled from the CrystalDiskInfo application and imports that data into RMM.
 
 ## Requirements
-Powershell V.5
+- PowerShell V5
 
 ## Usage
-1. Downloads Crystal Disk Info
-2. Runs the Executable silently
-3. Parses the created .txt file
-4. Generates objects based on the output
-5. Returns the objects
-
+1. Downloads CrystalDiskInfo.
+2. Runs the executable silently.
+3. Parses the created `.txt` file.
+4. Generates objects based on the output.
+5. Returns the objects.
 
 ```powershell
 $GetDiskInfo = .\Get-CriticalDiskInfo.ps1
 ```
 
 ## Output
-Location of output for log, result, and error files.
+Location of output for log, result, and error files:
 
-    .\Get-CriticalDiskInfo-log.txt
-    .\Get-CriticalDiskInfo-error.txt
-
-
-
-
-
-
-
-
-
+- `.\\Get-CriticalDiskInfo-log.txt`
+- `.\\Get-CriticalDiskInfo-error.txt`

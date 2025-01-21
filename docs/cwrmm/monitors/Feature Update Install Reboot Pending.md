@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Notifications for the computer where the `Feature Update Install with Tracking` script is completed but a restart is pending.
+Notifications for computers where the `Feature Update Install with Tracking` script has completed, but a restart is pending.
 
 ## Dependencies
 
@@ -28,18 +29,18 @@ Notifications for the computer where the `Feature Update Install with Tracking` 
 3. This screen will appear.  
    ![Step 3](../../../static/img/Feature-Update-Install-Reboot-Pending/image_3.png)
 
-4. Fill the Name and Description boxes.  
+4. Fill in the Name and Description fields.  
    **Name:** Feature Update Install Reboot Pending  
-   **Description:** Notifications for the computer where the `Feature Update Install with Tracking` script is completed but a restart is pending.  
+   **Description:** Notifications for computers where the `Feature Update Install with Tracking` script has completed, but a restart is pending.  
    ![Step 4](../../../static/img/Feature-Update-Install-Reboot-Pending/image_4.png)
 
-5. Select the `Custom Field` in the Type dropdown, `Others` in the Severity, and `Patch Management` for the Family.  
+5. Select `Custom Field` in the Type dropdown, `Others` in the Severity dropdown, and `Patch Management` for the Family.  
    ![Step 5](../../../static/img/Feature-Update-Install-Reboot-Pending/image_5.png)
 
-6. Select the `Flag` from `Custom Field Type` dropdown and `Feature Update Reboot Pending` from the `Custom Field Name` dropdown menu. Select `Yes` for the `Flag Value`.  
+6. Select `Flag` from the `Custom Field Type` dropdown and `Feature Update Reboot Pending` from the `Custom Field Name` dropdown menu. Select `Yes` for the `Flag Value`.  
    ![Step 6](../../../static/img/Feature-Update-Install-Reboot-Pending/image_6.png)
 
-7. Choose the same values/options in the `Ticket Resolution` Section, with the only difference being to use `No` for the Flag Value instead of `Yes`.  
+7. Choose the same values/options in the `Ticket Resolution` section, with the only difference being to use `No` for the Flag Value instead of `Yes`.  
    ![Step 7](../../../static/img/Feature-Update-Install-Reboot-Pending/image_7.png)
 
 8. Click the `Select Targets` button to select the clients to monitor.  
@@ -50,15 +51,3 @@ Notifications for the computer where the `Feature Update Install with Tracking` 
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Reboot-Pending/image_10.png)
-
-
-
-
-
-
-
-
-
-
-
-

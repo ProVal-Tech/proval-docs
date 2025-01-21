@@ -8,9 +8,10 @@ tags: ['encryption']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This doc contains the custom field details linked to the Bitlocker Initialize Volume solution.
+This document contains the custom field details linked to the Bitlocker Initialize Volume solution.
 
 ## Dependencies
 
@@ -18,19 +19,8 @@ This doc contains the custom field details linked to the Bitlocker Initialize Vo
 
 | Name                        | Type | Level    | Default Value | Editable | Description                                                                                                                                                    |
 |-----------------------------|------|----------|---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bitlocker Exclude Monitoring | Flag | Endpoint | No            | Yes      | This custom field gives the option to exclude the endpoint from the Bitlocker Initialize Volume solution.                                                     |
-| Bitlocker Monitoring         | Flag | Company  | No            | Yes      | This custom field sets the Bitlocker initialization of the system volume of the agent with the Encryption method 'AES256'.                                   |
-| Bitlocker XTSAES 256        | Flag | Company  | No            | Yes      | This custom field needs the 'Bitlocker Monitoring' company custom field to be checked first. If this is also checked, then the BitLocker setting would be done of system volume with the encryption method 'XtsAes256'. |
-| ACP BitLocker Init Result    | Text | Endpoint |               | No       | This custom field stores the output of the Bitlocker script. It stores 'Failure' when the script generates the error log file or misses the log file generation, Else store 'Success'. |
-
-
-
-
-
-
-
-
-
-
-
+| Bitlocker Exclude Monitoring | Flag | Endpoint | No            | Yes      | This custom field provides the option to exclude the endpoint from the Bitlocker Initialize Volume solution.                                                  |
+| Bitlocker Monitoring         | Flag | Company  | No            | Yes      | This custom field sets the Bitlocker initialization of the system volume of the agent with the encryption method 'AES256'.                                   |
+| Bitlocker XTSAES 256        | Flag | Company  | No            | Yes      | This custom field requires the 'Bitlocker Monitoring' company custom field to be checked first. If this is also checked, then the BitLocker setting will be applied to the system volume with the encryption method 'XtsAes256'. |
+| ACP BitLocker Init Result    | Text | Endpoint |               | No       | This custom field stores the output of the Bitlocker script. It records 'Failure' when the script generates an error log file or fails to generate a log file; otherwise, it records 'Success'. |
 

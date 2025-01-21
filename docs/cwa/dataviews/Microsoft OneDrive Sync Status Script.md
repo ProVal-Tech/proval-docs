@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script.
+The data view displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script.
 
 ## Dependencies
 
@@ -21,28 +22,15 @@ The dataview displays the OneDrive Sync Status gathered by the [EPM - Data Colle
 
 | Column                  | Description                                           |
 |------------------------|-------------------------------------------------------|
-| Clientid               | Clientid (Hidden)                                    |
-| Locationid             | Locationid (Hidden)                                  |
-| Computerid             | Computerid (Hidden)                                  |
+| Clientid               | Client ID (Hidden)                                   |
+| Locationid             | Location ID (Hidden)                                 |
+| Computerid             | Computer ID (Hidden)                                 |
 | Client_Name            | Client Name                                          |
 | Location_Name          | Location Name                                        |
 | Computer_Name          | Computer Name                                        |
 | Operating_System       | Operating System                                     |
-| Last_Contact           | Last Contact time of the computer with Automate      |
-| Sync Enabled           | Is OneDrive Sync Enabled?                            |
+| Last_Contact           | Last contact time of the computer with Automate      |
+| Sync Enabled           | Is OneDrive Sync enabled?                            |
 | Sync Status            | OneDrive Sync Status                                 |
 | One_Drive_Sync_Status  | Detailed Sync Status fetched by the script           |
 | Script_Run_Time        | Data Collection Time                                  |
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../views/Plugin_ProVal_V_Patch_Count_Status.md>) view.
+This script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../views/Plugin_ProVal_V_Patch_Count_Status.md>) view.
 
 ## Sample Run
 
@@ -19,20 +20,8 @@ This Script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Sta
 ## Process
 
 - Creates the view.
-- Assign the permissions of the view to all the users.
+- Assigns the permissions of the view to all users.
 
 ## Output
 
 - View
-
-
-
-
-
-
-
-
-
-
-
-

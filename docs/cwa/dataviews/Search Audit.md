@@ -8,9 +8,10 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Overview of the searches that are used in Automate at various locations.
+This document provides an overview of the searches that are used in Automate at various locations.
 
 ## Columns
 
@@ -20,16 +21,4 @@ Overview of the searches that are used in Automate at various locations.
 | Search Name  | Search Name                                                                                    |
 | Object Type  | Type of the object against which a search is applied (e.g., Group, Remote Monitor)            |
 | Object Name  | Name of the object against which the search is applied (e.g., Name of the Group, Name of the Remote Monitor) |
-| Group Path   | Full Path to the group over where the search is being used/applied.                           |
-
-
-
-
-
-
-
-
-
-
-
-
+| Group Path   | Full path to the group where the search is being used/applied.                                 |

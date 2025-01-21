@@ -8,9 +8,10 @@ tags: ['compliance', 'database', 'encryption', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will return any target machine whose client has the 'Bitlocker Monitoring' EDF checked, and the target's 'Bitlocker Monitoring Exclusion' is not checked, and its 'C' drive is listed as a mount point in 'plugin_proval_bitlocker_audit' and the drive's encryption method is 'NONE'.
+This monitor will return any target machine whose client has the 'Bitlocker Monitoring' EDF checked, and the target's 'Bitlocker Monitoring Exclusion' is not checked. Additionally, its 'C' drive must be listed as a mount point in 'plugin_proval_bitlocker_audit', and the drive's encryption method must be 'NONE'.
 
 ## Dependencies
 
@@ -19,11 +20,11 @@ This monitor will return any target machine whose client has the 'Bitlocker Moni
 
 ## Target
 
-Please follow the recommended target for the bitlocker solution.
+Please follow the recommended target for the Bitlocker solution.
 
 ## Translated SQL
 
-```
+```sql
 SELECT IFNULL(IFNULL(edfAssigned1.Value, edfDefault1.value), '0') AS TestValue,
     computers.NAME AS IdentityField,
     computers.computerid,
@@ -76,8 +77,8 @@ LEFT JOIN ExtraFieldData edfDefault2 ON (
 WHERE (
         (
             (
-                (IFNULL(IFNULL(edfAssigned1.Value, edfDefault1.value), '0') \\<> 0)
-                AND (IFNULL(IFNULL(edfAssigned2.Value, edfDefault2.value), '0') = 0)
+                (IFNULL(IFNULL(edfAssigned1.Value, edfDefault1.value), '0') <> '0')
+                AND (IFNULL(IFNULL(edfAssigned2.Value, edfDefault2.value), '0') = '0')
                 )
             )
         )
@@ -85,23 +86,10 @@ WHERE (
         (ppba.MountPoint = 'C:')
         AND (ppba.`EncryptionMethod` = 'NONE')
         ) AND (
-              computers.DateAdded \\< DATE_SUB(NOW(), INTERVAL 7 DAY )
+              computers.DateAdded < DATE_SUB(NOW(), INTERVAL 7 DAY)
               )
 ```
 
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---OS-Volume-Encryption-Disabled/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-

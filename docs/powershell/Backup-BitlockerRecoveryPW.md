@@ -10,17 +10,16 @@ unlisted: false
 ---
 
 ## Description
-This script will cycle through all volumes and backup the recovery password for any drive that has an associated Recovery Password.
+This script cycles through all volumes and backs up the recovery password for any drive that has an associated Recovery Password.
 
 ## Requirements
 - PowerShell v5
-- Target must be domain joined
+- Target must be domain-joined
 
 ## Usage
-1. Starts the loop through all Bitlocker volumes.
-2. Attempts to Backup the Recovery Password to AD for each volume, if one exists.
+1. Starts the loop through all BitLocker volumes.
+2. Attempts to back up the Recovery Password to Active Directory for each volume, if one exists.
 3. Logs any failures to the error log.
-
 
 ```powershell
 .\Backup-BitlockerRecoveryPW.ps1
@@ -28,16 +27,6 @@ This script will cycle through all volumes and backup the recovery password for 
 Attempts to back up any Recovery Password type key protectors to Active Directory.
 
 ## Output
-    Microsoft.BitLocker.Structures.BitLockerVolume
-
-    .\Backup-BitlockerRecoveryPW-log.txt
-    .\Backup-BitlockerRecoveryPW-error.txt
-
-
-
-
-
-
-
-
-
+- `Microsoft.BitLocker.Structures.BitLockerVolume`
+- `.\Backup-BitlockerRecoveryPW-log.txt`
+- `.\Backup-BitlockerRecoveryPW-error.txt`

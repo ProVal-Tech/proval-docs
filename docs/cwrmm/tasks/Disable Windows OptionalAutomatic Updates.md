@@ -8,6 +8,7 @@ tags: ['patching', 'registry', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task will disable the Windows optional automatic updates.
@@ -126,15 +127,4 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### Row 6: Complete
 
 ![Complete](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_17.png)  
-
-
-
-
-
-
-
-
-
-
-
 

@@ -8,9 +8,10 @@ tags: ['deployment', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the internal monitor is to detect the Windows and Macintosh machines missing Huntress Agent and have deployment enabled.
+The purpose of the internal monitor is to detect Windows and Macintosh machines that are missing the Huntress Agent and have deployment enabled.
 
 ## Dependencies
 
@@ -20,7 +21,7 @@ The purpose of the internal monitor is to detect the Windows and Macintosh machi
 
 | Name                          | Type      | Example | Section        | Required | Description                                          |
 |-------------------------------|-----------|---------|----------------|----------|------------------------------------------------------|
-| Huntress Agent Install - Enable | Check-Box | 0/1     | Security Tools | False    | Mark this EDF to enable Auto deployment for the client |
+| Huntress Agent Install - Enable | Check-Box | 0/1     | Security Tools | False    | Mark this EDF to enable auto deployment for the client |
 
 ## Location-Level EDF
 
@@ -41,16 +42,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Deploy Huntress Agent`
-
-
-
-
-
-
-
-
-
-
-
-
-

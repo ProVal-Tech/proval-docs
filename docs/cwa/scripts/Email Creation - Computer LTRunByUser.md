@@ -8,9 +8,10 @@ tags: ['setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](<../monitors/Manual Script Schedule - Status Email.md>) to send emails to the user who ran the script manually during the completion.
+This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](<../monitors/Manual Script Schedule - Status Email.md>) to send emails to the user who manually ran the script during its completion.
 
 ## Sample Run
 
@@ -24,15 +25,3 @@ This script should be utilized as an autofix to monitor [Manual Script Schedule 
 
 - Email
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The solution's purpose is to keep tabs on end users to determine how long they leave their computers idle and if they are actually utilising them.
+The purpose of this solution is to monitor end users to determine how long they leave their computers idle and whether they are actually utilizing them.
 
 ## Associated Content
 
@@ -18,24 +19,12 @@ The solution's purpose is to keep tabs on end users to determine how long they l
 |-------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------|
 | [CWM - Automate - Script - IdleMon Report [Globals]](<../cwa/scripts/IdleMon Report Globals.md>) | Script       | Collects the data/samples from the machine    |
 | [CWM - Automate - Custom Table - pvl_report_idlemon](<../cwa/tables/pvl_report_idlemon.md>) | Custom Table | Stores the samples collected by the script     |
-| [CWM - Automate - Dataview - IdleMon Report](https://proval.itglue.com/DOC-5078775-12869574) | Dataview    | Displays the data gathered by the script       |
+| [CWM - Automate - Dataview - IdleMon Report](https://proval.itglue.com/DOC-5078775-12869574) | Dataview     | Displays the data gathered by the script       |
 
 ## Implementation
 
-- Place the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool in the `Utilities` folder at `LTShare/Transfer` on Automate Server/WebDav.
+- Place the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool in the `Utilities` folder at `LTShare/Transfer` on the Automate Server/WebDav.
 - Import the script.
 - Import the dataview.
-- Schedule the script to run periodically against the concerned machines. It is suggested not to schedule the script against a bunch of computers as it needs to be executed frequently for proper output.
-- Ask the user to log off of their computer or wait for them to log off after the first execution of the script. The script/tool cannot collect data/samples unless the logged-in user re-logins after the installation of the tool.
-
-
-
-
-
-
-
-
-
-
-
-
+- Schedule the script to run periodically against the relevant machines. It is recommended not to schedule the script against a large number of computers simultaneously, as it needs to be executed frequently for optimal output.
+- Ask the user to log off their computer or wait for them to log off after the first execution of the script. The script/tool cannot collect data/samples unless the logged-in user re-logs in after the installation of the tool.

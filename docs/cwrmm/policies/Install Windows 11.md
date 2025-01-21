@@ -8,9 +8,10 @@ tags: ['patching', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Policy to enable Windows 11 installation for Windows 10 machines.
+This document provides a policy to enable Windows 11 installation for Windows 10 machines.
 
 ## Policy Creation
 
@@ -32,10 +33,10 @@ Policy to enable Windows 11 installation for Windows 10 machines.
 6. Enable the `OS Patching Automation`.
    ![Image](../../../static/img/Install-Windows-11/image_19.png)
 
-7. Leave the other options in the `Patch Classifications` section to `Do not deploy` and turn on `OS Upgrade` option.
+7. Leave the other options in the `Patch Classifications` section set to `Do not deploy` and enable the `OS Upgrade` option.
    ![Image](../../../static/img/Install-Windows-11/image_20.png)
 
-8. Make the necessary changes to the rest of the options as the partner requires.
+8. Make the necessary changes to the rest of the options as required by the partner.
    ![Image](../../../static/img/Install-Windows-11/image_21.png)
 
 9. Click the `Save` button to save the policy.
@@ -44,15 +45,5 @@ Policy to enable Windows 11 installation for Windows 10 machines.
 ![Image](../../../static/img/Install-Windows-11/image_23.png)
 
 ## Completed Policy
-
-
-
-
-
-
-
-
-
-
 
 

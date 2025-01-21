@@ -8,57 +8,41 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Categorize the Windows 11 Computers where the `Feature Update Install with Tracking` script failed because of a Compatibility Check Error.
+This document categorizes Windows 11 computers where the `Feature Update Install with Tracking` script failed due to a Compatibility Check Error.
 
 ## Dependencies
 
-[CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
-
-[CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
-
-## Summary
-
-Categorize the Windows 11 Computers where the `Feature Update Install with Tracking` script failed because of a Compatibility Check Error.
+- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
+- [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
 
 ## Criteria
 
-- Select `OS Build Number` for the Criteria `Does Not Contain any` for comparator and type `22631` in the condition box.
-  
+- Select `OS Build Number` for the Criteria `Does Not Contain any` for the comparator and type `22631` in the condition box.
+
   ![Image 1](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_1.png)  
   ![Image 2](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_2.png)  
   ![Image 3](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_3.png)  
   ![Image 4](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_4.png)
 
-- Click the `Add Criteria` button to add another Criteria.
-  
+- Click the `Add Criteria` button to add another criterion.
+
   ![Image 5](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_5.png)
 
-- Select `Feature Update Install Failure` custom field for criteria, `Equal` for comparator and type `Compatibility Check Error` in the condition box.
+- Select the `Feature Update Install Failure` custom field for criteria, `Equal` for the comparator, and type `Compatibility Check Error` in the condition box.
 
 ## Group Type: Dynamic
 
 ## Group Name: Windows Feature Pack Update Failure: Compatibility Check Error
 
-Click the `Save` button to Save the Group.
-  
+Click the `Save` button to save the group.
+
 ![Image 6](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_6.png)
 
 ## Group
 
-Click the `Save` button to Save the Group.
-  
+Click the `Save` button to save the group.
+
 ![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_7.png)
-
-
-
-
-
-
-
-
-
-
-
-

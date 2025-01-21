@@ -8,9 +8,10 @@ tags: ['report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-A simple dataview that will display the number of machines assigned to each client.
+This document presents a simple dataview that displays the number of machines assigned to each client.
 
 ## Dependencies
 
@@ -20,18 +21,6 @@ None
 
 | Column              | Description                                         |
 |---------------------|-----------------------------------------------------|
-| Client Name         | The name of the client associated to the data       |
-| Total Servers       | The number of servers associated to the client      |
-| Total Workstations   | The number of workstations associated to the client  |
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name         | The name of the client associated with the data     |
+| Total Servers       | The number of servers associated with the client     |
+| Total Workstations   | The number of workstations associated with the client |

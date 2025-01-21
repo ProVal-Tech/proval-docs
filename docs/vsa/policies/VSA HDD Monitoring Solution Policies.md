@@ -8,16 +8,15 @@ tags: ['storage']
 draft: false
 unlisted: false
 ---
+
 # Summary
 
-25 independent policies, one for each drive letter allow, for automation of monitoring and storage remediation per drive on servers.
-
-A C: drive monitor has been created for workstations.
+This document presents 25 independent policies, one for each drive letter, which facilitate the automation of monitoring and storage remediation for drives on servers. Additionally, a specific monitor for the C: drive has been created for workstations.
 
 # Details
 
 - **Policy Name**: Server Core HDD Monitor Drive {LETTER}
-- **Policy Description**: Monitors Server drive {LETTER}.
+- **Policy Description**: Monitors server drive {LETTER}.
 - **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
@@ -28,7 +27,7 @@ A C: drive monitor has been created for workstations.
       - **Policy Object Member Settings**: Alarm, Send Email
 
 - **Policy Name**: Workstation Core HDD Monitor Drive C:
-- **Policy Description**: Monitors Workstation drive C:.
+- **Policy Description**: Monitors workstation drive C:.
 - **Applied View**: [xPVAL Drive C](<../custom-fields/xPVAL Drive List.md>)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
@@ -37,15 +36,3 @@ A C: drive monitor has been created for workstations.
   - **Policy Object Settings**:
     - **Policy Object Members**: [EPM - Disk - Monitor Set - Vsa HDD Monitoring Solution Monitor Sets](https://proval.itglue.com/DOC-5078775-10793257)
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
-
-
-
-
-
-
-
-
-
-
-
-

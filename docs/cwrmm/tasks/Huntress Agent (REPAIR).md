@@ -8,19 +8,20 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task repairs the huntress Agent.
+This task repairs the Huntress Agent.
 
 ## Create Script
 
-Please create a new "PowerShell" style script to implement this script.
+Please create a new "PowerShell" style script to implement this task.
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_1.png)
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_2.png)
 
 **Name:** Huntress Agent (REPAIR)  
-**Description:** This task repairs the huntress Agent.  
+**Description:** This task repairs the Huntress Agent.  
 **Category:** Custom
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_3.png)
@@ -33,12 +34,12 @@ Please create a new "PowerShell" style script to implement this script.
 
 Input the following:
 
-> The script will detect the keys required for the Huntress agent repair:  
+> The script will detect the keys required for the Huntress Agent repair:  
 > `acct_key : @acct_key@`  
 > `org_key: @ORG_Key@`  
-> `tags: ['security', 'setup', 'software', 'windows']
-> Attempting to download the ps1 from the below link:  
-> [https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded the agent will be repaired.
+> `tags: ['security', 'setup', 'software', 'windows']`  
+> Attempting to download the PS1 from the link below:  
+> [https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded, the agent will be repaired.
 
 ## Row 2 Function: Set Pre-defined Variable
 
@@ -48,7 +49,7 @@ Input the following:
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
-- Select `Huntress Acct_Key` custom field from drop Down
+- Select `Huntress Acct_Key` custom field from the dropdown
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_6.png)
@@ -61,7 +62,7 @@ Input the following:
 
 - Select `Custom Field`
 - Input `ORG_Key` as Variable name
-- Select `Huntress Org_Key` custom field from the drop Down
+- Select `Huntress Org_Key` custom field from the dropdown
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_7.png)
@@ -74,7 +75,7 @@ Input the following:
 
 - Select `Custom Field`
 - Input `Tags` as Variable name
-- Select `Huntress Tag` custom field from the drop Down
+- Select `Huntress Tag` custom field from the dropdown
 - Click Save
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_8.png)
@@ -117,21 +118,21 @@ if ($Tags -ne '' -and $Tags -notmatch '@tags') {
 #endregion
 
 #region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
+if (!(Test-Path $WorkingDirectory)) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 } 
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
+if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
+    $Acl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
 }
 
-#region write script
+#region Write Script
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
 if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
@@ -141,7 +142,7 @@ if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
 }
 if (!(Test-Path -Path $PS1Path)) {
-    return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
+    return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
 }
 #endregion
 
@@ -158,7 +159,7 @@ if ($Parameters) {
 
 ## Step 6 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button
 - Search and select the `Script Log` function.
 - Input the following 
 
@@ -176,7 +177,7 @@ if ($Parameters) {
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_13.png)
 
-## ROW 7a Condition: Output Contains
+## Row 7a Condition: Output Contains
 
 - Type `denied` in the Value box.
 - Add another condition with the OR operator and type `ERROR:` in the Value box.
@@ -184,9 +185,9 @@ if ($Parameters) {
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_14.png)
 
-## ROW 7b Function: Script Exit
+## Row 7b Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button
 - Search and select the `Script Exit` function.
 - Input the following 
 
@@ -200,7 +201,7 @@ Failed to repair Huntress Agent. Command Result: %Output%
 
 ## Step 8 Function: Script Log
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button
 - Search and select the `Script Log` function.
 - Input the following 
 
@@ -214,7 +215,7 @@ Successfully repaired Huntress Agent.
 
 ## Step 9 Function: Script Exit
 
-- Add a new row in the If Section of If else then part by clicking the Add Row button
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button
 - Search and select the `Script Exit` function.
 - Leave it blank
 
@@ -236,22 +237,10 @@ For now, the task has been created to run manually on the machines.
 
 Go to Automations > Tasks.  
 Search for Huntress Agent (REPAIR).  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
+Then click on Schedule and provide the parameters detail as necessary for the script completion.
 
 ![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_20.png)
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will attempt to end a matching session in the CW Control portal using the matching GUID.
+This script will attempt to end a matching session in the CW Control portal using the provided GUID.
 
 **Time Saved by Automation:** 5 Minutes
 
@@ -31,7 +32,7 @@ This script will attempt to end a matching session in the CW Control portal usin
 ### Variables
 
 - `@accesskey@` - See System properties below
-- `@httpplugin_headers@` - See system properties below
+- `@httpplugin_headers@` - See System properties below
 - `@sccomputerguid@` - The GUID of the CW Control instance
 - `@SCUrl@` - The URL for the CW Control portal
 - `@Port@` - The port in use for CW Control
@@ -43,10 +44,10 @@ This script will attempt to end a matching session in the CW Control portal usin
 
 | Name                         | Example                               | Required | Description                                                                                                   |
 |------------------------------|---------------------------------------|----------|---------------------------------------------------------------------------------------------------------------|
-| RMMPlus_AccessKey           | ajw8fh2p93ufn;o31ifu2091j23oif      | True     | This is the key setup in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.    |
+| RMMPlus_AccessKey           | ajw8fh2p93ufn;o31ifu2091j23oif      | True     | This is the key set up in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.    |
 | RMMPlus_Headers             | Origin: [site.site.com](http://site.site.com/) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control. |
 | RMMPlus_StaleAgentThreshold  | 30                                    | True     | The number of days to indicate what a "stale" agent is to the scripts. 30 is the default.                   |
-| RMMPlus_Timeout             | 1000                                  | True     | The default timeout for commands runs via RMM+ through Automate. 1000 is the default.                       |
+| RMMPlus_Timeout             | 1000                                  | True     | The default timeout for commands run via RMM+ through Automate. 1000 is the default.                       |
 
 ## Process
 
@@ -55,16 +56,3 @@ This script will populate several variables required for RMM+ to function proper
 ## Output
 
 **Script log messages only**
-
-
-
-
-
-
-
-
-
-
-
-
-

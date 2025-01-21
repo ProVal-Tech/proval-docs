@@ -8,9 +8,10 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes the provided path(s) from the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Remove-PathVariable](<../../powershell/Remove-PathVariable.md>).
+This document describes how to remove the provided path(s) from the Environmental Path variable for a Path at the Machine scope. It covers the ConnectWise RMM implementation of the agnostic script [Remove-PathVariable](<../../powershell/Remove-PathVariable.md>).
 
 ## Sample Run
 
@@ -26,13 +27,13 @@ Removes the provided path(s) from the Environmental Path variable for a Path at 
 
 | Name  | Example                                                                 | Required | Type        | Description                                                                                                      |
 |-------|-------------------------------------------------------------------------|----------|-------------|------------------------------------------------------------------------------------------------------------------|
-| Path  | - 'C://Temp' - 'C://Temp', 'C://Temp//ProgramData', 'D://Text Files' | True     | Text String | Comma Separated list of the path(s) to add to the path variable.**Requirement:** - Each path should be enclosed between single quotes. - Path should exist on the end machine. |
+| Path  | - 'C://Temp' - 'C://Temp', 'C://Temp//ProgramData', 'D://Text Files' | True     | Text String | Comma-separated list of the path(s) to remove from the path variable. **Requirement:** Each path should be enclosed in single quotes. The path should exist on the end machine. |
 
 ![User Parameters Image](../../../static/img/Remove-Path-Variable/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/Remove-Path-Variable/image_5.png)  
 ![Task Creation Image 2](../../../static/img/Remove-Path-Variable/image_6.png)  
@@ -85,7 +86,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```
 #region parameters
 $Path = "@Path@"
-if ( $path -match '://' ) {
+if ($Path -match '://') {
     $Path = $($Path -split ',').Trim()
 } else {
     throw 'Invalid path.'
@@ -126,11 +127,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -166,15 +167,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

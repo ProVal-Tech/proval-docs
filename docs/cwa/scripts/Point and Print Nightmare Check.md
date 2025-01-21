@@ -8,13 +8,14 @@ tags: ['print', 'registry', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will check if the registry entry provided in the below link is detected or not.  
+This script will check if the registry entry provided in the link below is detected.  
 If the registry is detected, it will determine if it is set to 0 or null.  
 If the above conditions are not met, then the script will report Point And Print as detected.  
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -28,29 +29,16 @@ Time Saved by Automation: 10 Minutes
 
 | Name              | Example          | Description                                                                                      |
 |-------------------|------------------|--------------------------------------------------------------------------------------------------|
-| PointAndPrint     | Powershell Output | Detected - Meant registry entry found and not equal to 0No Action Required - Safe          |
+| PointAndPrint     | Powershell Output | Detected - Meant registry entry found and not equal to 0<br>No Action Required - Safe          |
 
 ## Process
 
 - This script will check for `HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows NT/Printers/PointAndPrint/NoWarningNoElevationOnInstall` and `HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows NT/Printers/PointAndPrint/UpdatePromptSettings`.
-- If any found then check for the value.
-- If value is not set or 0 then safe, else record as PrintAndPoint Detected.
+- If any are found, then check for the value.
+- If the value is not set or is 0, then it is safe; else, record as Point And Print Detected.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-
-

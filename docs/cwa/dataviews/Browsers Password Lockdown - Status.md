@@ -8,9 +8,10 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview exhibits the `Password Manager Lockdown Status` for the computer obtained from the [Lockdown Browsers Password Manager](<../monitors/Lockdown Browsers Password Manager.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the name of the specific browsers where the disabling process failed.
+The dataview exhibits the `Password Manager Lockdown Status` for the computer obtained from the [Lockdown Browsers Password Manager](<../monitors/Lockdown Browsers Password Manager.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the names of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
@@ -23,26 +24,13 @@ The dataview exhibits the `Password Manager Lockdown Status` for the computer ob
 
 | Column                       | Description                                                                                                                   |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Clientid                     | Clientid (Hidden)                                                                                                           |
-| Locationid                   | Locationid (Hidden)                                                                                                         |
-| Computerid                   | Computerid (Hidden)                                                                                                         |
+| Clientid                     | Client ID (Hidden)                                                                                                           |
+| Locationid                   | Location ID (Hidden)                                                                                                         |
+| Computerid                   | Computer ID (Hidden)                                                                                                         |
 | Client                       | Client Name                                                                                                                 |
 | Location                     | Location Name                                                                                                               |
 | Computer                     | Computer Name                                                                                                               |
 | Operating System             | Operating System                                                                                                           |
 | Last Contact                 | Last Contact with RMM                                                                                                       |
 | Last Logged In User          | Last Logged In User                                                                                                         |
-| Password Manager Lockdown Status | Indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the name of the specific browsers where the disabling process failed. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Password Manager Lockdown Status | Indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the names of the specific browsers where the disabling process failed. |

@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores information about existing user profiles on computers. Data filled by @User Management - Profile Audit
+This document stores information about existing user profiles on computers. Data is filled by @User Management - Profile Audit.
 
 ## Dependencies
 
@@ -24,22 +25,11 @@ Stores information about existing user profiles on computers. Data filled by @Us
 |--------------|----------|-----------------------------------------------------|
 | computerid   | INT      | The ComputerID of the machine with this user profile. |
 | username     | VARCHAR  | The username for the profile.                       |
-| localuser    | TINYINT  | Determines if the user is a local user or not.     |
-| localadmin   | TINYINT  | Determines if the user is a local admin or not.    |
-| password     | TINYINT  | Determines if the user has a password set.         |
+| localuser    | TINYINT  | Indicates if the user is a local user.             |
+| localadmin   | TINYINT  | Indicates if the user is a local admin.            |
+| password     | TINYINT  | Indicates if the user has a password set.          |
 | profilesize  | INT      | The size in Megabytes of the target profile.       |
 | usersid      | VARCHAR  | The SID of the target profile.                      |
 | LastLogon    | DATETIME | The last time the profile was logged into.         |
 | TimeStamp    | DATETIME | The last time this profile information was gathered.|
-| UserProfile   | VARCHAR  | The path to the user folder for the target profile. |
-
-
-
-
-
-
-
-
-
-
-
+| UserProfile  | VARCHAR  | The path to the user folder for the target profile. |

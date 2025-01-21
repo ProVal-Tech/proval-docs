@@ -8,19 +8,9 @@ tags: ['active-directory', 'networking', 'windows']
 draft: false
 unlisted: false
 ---
-## Summery
 
-Get Primary Domain Controller  
+## Summary
 
-
-
-
-
-
-
-
-
-
-
+Get Primary Domain Controller
 
 

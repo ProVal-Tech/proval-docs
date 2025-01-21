@@ -8,6 +8,7 @@ tags: ['database', 'performance']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Displays the current and ProVal recommended INI settings for CWA.
@@ -20,9 +21,9 @@ Displays the current and ProVal recommended INI settings for CWA.
 |---------------------------|---------|----------------------------------------------|
 | Variable_name             | VARCHAR | The name of the INI variable.                |
 | Variable_Value            | VARCHAR | The currently set value for the variable.    |
-| Recomended_Value          | VARCHAR | The ProVal recommendations for this variable. |
+| Recommended_Value         | VARCHAR | The ProVal recommendations for this variable. |
 
-| Variable_name                     | Variable_Value                  | Recomended_Value               |
+| Variable_name                     | Variable_Value                  | Recommended_Value               |
 |-----------------------------------|---------------------------------|--------------------------------|
 | datadir                           | C://ProgramData//MySQL//MySQL Server 5.7//Data// | NA                             |
 | innodb_autoinc_lock_mode         | 1                               | 2                              |
@@ -57,14 +58,3 @@ Displays the current and ProVal recommended INI settings for CWA.
 | thread_cache_size                 | 38                              | 100                            |
 | tmp_table_size                    | 100663296                       | 100663296                      |
 | wait_timeout                      | 28800                           | 900                            |
-
-
-
-
-
-
-
-
-
-
-

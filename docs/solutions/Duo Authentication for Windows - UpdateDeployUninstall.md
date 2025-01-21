@@ -8,28 +8,29 @@ tags: ['application', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution assists in setting the latest DUO detection and updating the older DUO installed to the agents based on the latest version detection. This was created to ensure DUO got patched for the CVE-2024-20292, however, this will keep the application up to date consistently into the future.
+This solution assists in setting the latest DUO detection and updating older DUO installations on agents based on the latest version detection. It was created to ensure DUO is patched for CVE-2024-20292; however, this will keep the application up to date consistently in the future.
 
 ## Associated Content
 
-| Content                                                                                                      | Type    | Function                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>) | Monitor | This internal monitor is created to fetch the latest version of the application.                                   |
-| [Script - Application - Latest Version Detection [Winget]](<../cwa/scripts/Application - Latest Version Detection Winget.md>) | Script  | This script is designed to gather the latest version of applications supported by Winget which is provided in the [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>). |
-| [Internal Monitor - DUO Authentication - Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)   | Monitor | This monitor is designed to update the DUO Authentication on the computers where the outdated application is detected. |
-| [Script - DUO Install & Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>)           | Script  | This script will install or update DUO if the currently installed instance is older than the latest released version. This script does match the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe). |
+| Content                                                                                                      | Type           | Function                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|
+| [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>) | Monitor        | This internal monitor is created to fetch the latest version of the application.                                   |
+| [Script - Application - Latest Version Detection [Winget]](<../cwa/scripts/Application - Latest Version Detection Winget.md>) | Script         | This script is designed to gather the latest version of applications supported by Winget, which is provided in the [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>). |
+| [Internal Monitor - DUO Authentication - Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)   | Monitor        | This monitor is designed to update DUO Authentication on computers where the outdated application is detected.     |
+| [Script - DUO Install & Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>)           | Script         | This script will install or update DUO if the currently installed instance is older than the latest released version. It matches the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe). |
 | △ Custom - Execute Script - Application Latest Version                                                       | Alert Template | This alert template is designed to be used with the [Internal Monitor - DUO Authentication - Latest Version Detection](<../unsorted/ProVal - Production - DUO Authentication - Latest Version Detection.md>) to run the script [Application - Latest Version Detection [Winget]](<../cwa/scripts/Application - Latest Version Detection Winget.md>). |
-| △ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version                                         | Alert Template | This alert template is designed to run the script [DUO Install/Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>) with the [Monitor - DUO Authentication- Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>). |
+| △ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version                                         | Alert Template | This alert template is designed to run the script [DUO Install/Upgrade - Latest Version](<../cwa/scripts/DUO InstallUpgrade - Latest Version.md>) with the [Monitor - DUO Authentication - Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>). |
 
 ## Optional Content
 
-| Content                                                                                                      | Type    | Function                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633)                   | Script  | Uninstalls DUO from windows machines.                                                                              |
-| [CWM - Automate - Internal Monitor - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472632)        | Monitor | Detect machines where DUO is installed and Duo Exclusion EDfs are selected.                                       |
-| `△ Custom - Execute Script - Uninstall DUO`                                                                 | Alert Template | Execute the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) against the machines detected by the internal monitor. |
+| Content                                                                                                      | Type           | Function                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|
+| [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633)                   | Script         | Uninstalls DUO from Windows machines.                                                                              |
+| [CWM - Automate - Internal Monitor - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472632)        | Monitor        | Detects machines where DUO is installed and Duo Exclusion EDFs are selected.                                       |
+| `△ Custom - Execute Script - Uninstall DUO`                                                                 | Alert Template | Executes the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) against the machines detected by the internal monitor. |
 
 ## Implementation
 
@@ -47,15 +48,15 @@ This solution assists in setting the latest DUO detection and updating the older
 2. Reload the system cache:
    ![Reload System Cache](../../static/img/Duo-Authentication-for-Windows---UpdateDeployUninstall/image_1.png)
 
-   Run the script against any online windows machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
+   Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
    ![Run Script](../../static/img/Duo-Authentication-for-Windows---UpdateDeployUninstall/image_2.png)
 
 3. Navigate to Automation → Monitors within the CWA Control Center and set up the following:
    - [Monitor - DUO Authentication - Latest Version Detection](<../cwa/monitors/Application - Latest Version Detection.md>)
      - Set up with the alert template `△ Custom - Execute Script - Application Latest Version`
      - Ensure the monitor is running monthly and not at a more frequent interval.
-     - Right-click and Run Now and Reset Monitor after applying the alert template.
-   - [Monitor - DUO Authentication- Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)
+     - Right-click and Run Now, then Reset Monitor after applying the alert template.
+   - [Monitor - DUO Authentication - Install/Update](<../cwa/monitors/DUO Authentication - InstallUpdate.md>)
      - Apply the alert template `△ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version`
      - **NOTE**: Make sure to confirm the Latest Version Detection monitor has run and completed before enabling this monitor.
        - Right-click and Run Now after applying the alert template.
@@ -72,18 +73,6 @@ Import the following content using the ProSync Plugin:
 Configure the solution as outlined below:
 - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
   - [CWM - Automate - Internal Monitor - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472632)
-    - Make Sure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
+    - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) bonded to it.
     - Right-click and Run Now to start the monitor.
-
-
-
-
-
-
-
-
-
-
-
-

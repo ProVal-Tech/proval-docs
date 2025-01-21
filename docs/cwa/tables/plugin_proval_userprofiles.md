@@ -8,17 +8,18 @@ tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](<../dataviews/Windows - User Profiles.md>).
+This document stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](<../dataviews/Windows - User Profiles.md>).
 
 ## Dependencies
 
-[EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
+- [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
 
 ## Tables
 
-#### plugin_proval_userprofiles
+### plugin_proval_userprofiles
 
 | Column      | Type     | Explanation                                               |
 |-------------|----------|----------------------------------------------------------|
@@ -31,17 +32,4 @@ Stores Windows user profile information. Data is filled by [EPM - Accounts - Scr
 | LastLogon   | DATETIME | The last time the user logged in.                         |
 | TimeStamp   | DATETIME | The date and time of the audit.                           |
 | UserProfile | VARCHAR  | The path to the user profile folder.                      |
-| Enabled     | VARCHAR  | True or False on if the local account is enabled. If not a local user, then field is set to Remote. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Enabled     | VARCHAR  | True or False indicating if the local account is enabled. If not a local user, then the field is set to Remote. |

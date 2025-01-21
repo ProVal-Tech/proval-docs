@@ -8,6 +8,7 @@ tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Installs the latest feature update on a Windows 10+ machine.
 
@@ -15,7 +16,6 @@ Installs the latest feature update on a Windows 10+ machine.
 - PowerShell 5+
 - Windows OS
 - Must be run as an Administrator
-
 
 Installs the latest feature update, if applicable.
 ```powershell
@@ -27,22 +27,22 @@ Installs the latest feature update, if applicable. Reboots after a successful in
 & .\Install-FeatureUpdate.ps1 -Reboot
 ```
 
-Installs the latest feature update, if applicable. Skip drive check.
+Installs the latest feature update, if applicable. Skips the drive check.
 ```powershell
 & .\Install-FeatureUpdate.ps1 -SkipDriveCheck
 ```
 
 Upgrades to the latest numbered version of Windows, if applicable. Reboots after a successful install.
 ```powershell
-&  .\Install-FeatureUpdate -Reboot -Upgrade
+& .\Install-FeatureUpdate -Reboot -Upgrade
 ```
 
 ## Parameters
-| Parameter | Required | Default | Type   | Description                                                      |
-| --------- | -------- | ------- | ------ | ---------------------------------------------------------------- |
-| `Reboot`  | False    | False   | switch | If no errors are detected, reboots the machine after completion. |
-| `SkipDriveCheck`  | False    | False   | switch | It skip the drive check and proceed for the upgrade. Default behavior of the script is to exit if the free drive space is less than 20 GB. |
-| `Upgrade`  | False    | False   | switch | Upgrades to the latest numbered version of Windows. |
+| Parameter         | Required | Default | Type   | Description                                                      |
+| ----------------- | -------- | ------- | ------ | ---------------------------------------------------------------- |
+| `Reboot`          | False    | False   | switch | If no errors are detected, reboots the machine after completion. |
+| `SkipDriveCheck`  | False    | False   | switch | Skips the drive check and proceeds with the upgrade. The default behavior of the script is to exit if the free drive space is less than 20 GB. |
+| `Upgrade`         | False    | False   | switch | Upgrades to the latest numbered version of Windows.             |
 
 ## Output
 ### Object
@@ -79,18 +79,9 @@ SetupOperationInfo : {@{OperationName=Start suspended services; OperationStartTi
 ```
 
 ### Log Files
-    .\Install-FeatureUpdate-log.txt
-    .\Install-FeatureUpdate-error.txt
+- .\Install-FeatureUpdate-log.txt
+- .\Install-FeatureUpdate-error.txt
 
 ### Tables
-    Install-FeatureUpdate_logs
-    Install-FeatureUpdate_setupdiag
-
-
-
-
-
-
-
-
-
+- Install-FeatureUpdate_logs
+- Install-FeatureUpdate_setupdiag

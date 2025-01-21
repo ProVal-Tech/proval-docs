@@ -8,6 +8,7 @@ tags: ['networking', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script is an Automate implementation of the agnostic script [Get-WifiProfile](<../../powershell/Get-WifiProfile.md>). It retrieves details about Wi-Fi profiles stored on designated end-user machines.
@@ -40,15 +41,3 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

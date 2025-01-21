@@ -8,13 +8,14 @@ tags: ['database', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will move the agent it's run against to retired assets, this can be used as an autofix to automatically retire agents.
+This script will move the agent it is run against to retired assets. This can be used as an autofix to automatically retire agents.
 
-Time Saved by Automation: 3 Minutes
+**Time Saved by Automation:** 3 Minutes
 
-Note: This should not be ran manually, it should only be ran through the monitor.
+**Note:** This should not be run manually; it should only be run through the monitor.
 
 ## Sample Run
 
@@ -23,14 +24,3 @@ Note: This should not be ran manually, it should only be ran through the monitor
 ## Process
 
 This script runs a SQL query against the machine to retire it.
-
-
-
-
-
-
-
-
-
-
-

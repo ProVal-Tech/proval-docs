@@ -10,35 +10,29 @@ unlisted: false
 ---
 
 ## Description
-Manually unhides provided KB articles from Windows Update using the PSWindowsUpdate nuget module
+The `Set-WindowsUpdateShown` command manually unhides provided KB articles from Windows Update using the PSWindowsUpdate module.
 
 ## Requirements
 None
 
 ## Usage
-Takes an array of KBArticles and unides them using 
+This command takes an array of KB articles and unhides them using the following PowerShell commands:
+
 ```powershell
 Get-WindowsUpdate -Show
-Set-WindowsUpdateHidden -KBArticles "KB12345667","KB123456334"
+Set-WindowsUpdateHidden -KBArticles "KB12345667", "KB123456334"
 ```
 
 ## Parameters
 | Parameter         | Alias | Required  | Default   | Type      | Description                               |
 | ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
-| -KBArticles       |       | True      |           | String    |   List of KBArticles to Unhide            |
+| -KBArticles       |       | True      |           | String    | List of KB articles to unhide            |
 
 ## Output
-Location of output for log, result, and error files.
+The location of output for log, result, and error files:
 
-    .\Set-WindowsUpdateShown-log.txt
-    .\Set-WindowsUpdateShown-data.txt
-    .\Set-WindowsUpdateShown-error.txt
-
-
-
-
-
-
-
-
-
+```
+.\Set-WindowsUpdateShown-log.txt
+.\Set-WindowsUpdateShown-data.txt
+.\Set-WindowsUpdateShown-error.txt
+```

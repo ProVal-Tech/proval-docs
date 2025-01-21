@@ -8,6 +8,7 @@ tags: ['disk', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor is dynamically generated from the script [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>). It is used to alert on low space on a volume.
@@ -16,7 +17,7 @@ This monitor is dynamically generated from the script [Volume Free Space - Monit
 
 **Suggested "Limit to"**: N/A  
 **Suggested Alert Style**: Once  
-**Suggested Alert Template**: Default - Create Automate Ticket  
+**Suggested Alert Template**: Default - Create Automated Ticket  
 
 This monitor will have dynamic properties based on the result of the script [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
 
@@ -27,15 +28,3 @@ N/A
 ## Target
 
 Windows Machines - Should be run on all Windows machines
-
-
-
-
-
-
-
-
-
-
-
-

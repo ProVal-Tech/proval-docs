@@ -8,12 +8,13 @@ tags: ['installation', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This managed variable is used to store the Senteon ID/Name of the Tenant the partner wishes to register the agent/endpoint to.
+This managed variable is used to store the Senteon ID/Name of the Tenant that the partner wishes to register the agent/endpoint to.
 
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)  
-The value for this must be provided by the partner. The partner can get the data from the Senteon portal: [https://app.senteon.co](https://app.senteon.co)
+The value for this must be provided by the partner. The partner can obtain the data from the Senteon portal: [https://app.senteon.co](https://app.senteon.co)
 
 ## Associated Content
 
@@ -23,16 +24,4 @@ The value for this must be provided by the partner. The partner can get the data
 
 | Managed Variable Name | Managed Variable Type | Description                                                |
 |-----------------------|-----------------------|------------------------------------------------------------|
-| Senteon_Tenant        | Public                | Used by the agent procedure to specify the tenant during install |
-
-
-
-
-
-
-
-
-
-
-
-
+| Senteon_Tenant        | Public                | Used by the agent procedure to specify the tenant during installation |

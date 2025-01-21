@@ -8,24 +8,13 @@ tags: ['firewall', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role is detecting if the 'Private' firewall is enabled on the machine, if so this role is applied to the machine in the Automate database.
+This role detects if the 'Private' firewall is enabled on the machine. If so, this role is applied to the machine in the Automate database.
 
 ## Settings
 
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
-| \{%@netsh advfirewall show privateprofile state| find "State"@%} | Contains   | ON     | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@netsh advfirewall show privateprofile state| find "State"@%} | Contains   | ON     | Windows        |

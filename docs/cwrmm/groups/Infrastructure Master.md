@@ -8,6 +8,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The group contains the Infrastructure Masters.
@@ -18,7 +19,7 @@ The group contains the Infrastructure Masters.
 - [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
 - [CW RMM - Task - Validate Primary Domain Controller](<../tasks/Validate Primary Domain Controller.md>)
 
-## Screenshot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Infrastructure-Master/image_1.png)
 
@@ -27,18 +28,6 @@ The group contains the Infrastructure Masters.
 ## Group
 
 - **Group Name:** Infrastructure Master
-- **Description:** Contains Infrastructure masters
-- Select `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator and type `Yes` in the condition box.
-- Click `Save` button at the top left to create the group.
-
-
-
-
-
-
-
-
-
-
-
-
+- **Description:** Contains Infrastructure Masters
+- Select the `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator, and type `Yes` in the condition box.
+- Click the `Save` button at the top left to create the group.

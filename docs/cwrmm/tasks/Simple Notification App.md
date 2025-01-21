@@ -8,6 +8,7 @@ tags: ['email', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is designed to deliver a one-time, customized message to the partner, featuring your company's branding through an optional image URL. For branding purposes, using a PNG or JPEG image URL is recommended, though not mandatory. Once executed, the script will display the message on the logged-in user's screen within one minute.
@@ -29,11 +30,11 @@ This script is designed to deliver a one-time, customized message to the partner
 | Email     | [someone@testing.com](mailto:someone@testing.com)                                                           | False    | The support e-mail address is displayed to the user. |
 | Phone     | 000-000-0000                                                                                                 | False    | The support phone number is displayed to the user.   |
 
-These have to set in the script editor of the task in the 'set user variables' functions respectively.
+These need to be set in the script editor of the task in the 'set user variables' functions respectively.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Image 4](../../../static/img/Simple-Notification-App/image_4.png)
 
@@ -61,10 +62,10 @@ Search and select the `Set User Variable` function.
 
 ![Image 8](../../../static/img/Simple-Notification-App/image_8.png)
 
-A pop box will appear. Set them as follows:
+A pop-up box will appear. Set them as follows:
 
 - Set `Variable Name` as `ImageURL`
-- Set `Value` as `ENTER YOUR VALUE HERE` (Replace the value 'Enter value here' with the Image URL provided by partner, If not provided leave it as it is)
+- Set `Value` as `ENTER YOUR VALUE HERE` (Replace 'Enter value here' with the Image URL provided by the partner. If not provided, leave it as it is.)
 - Click the `Save` button.
 
 ![Image 9](../../../static/img/Simple-Notification-App/image_9.png)
@@ -79,10 +80,10 @@ Search and select the `Set User Variable` function.
 
 ![Image 11](../../../static/img/Simple-Notification-App/image_8.png)
 
-A pop box will appear. Set them as follows:
+A pop-up box will appear. Set them as follows:
 
 - Set `Variable Name` as `Message`
-- Set `Value` as `ENTER YOUR VALUE HERE` (Replace the value 'Enter value here' with the Notification message provided by partner, Script will not proceed without the message)
+- Set `Value` as `ENTER YOUR VALUE HERE` (Replace 'Enter value here' with the Notification message provided by the partner. The script will not proceed without the message.)
 - Click the `Save` button.
 
 ![Image 12](../../../static/img/Simple-Notification-App/image_10.png)
@@ -97,10 +98,10 @@ Search and select the `Set User Variable` function.
 
 ![Image 14](../../../static/img/Simple-Notification-App/image_8.png)
 
-A pop box will appear. Set them as follows:
+A pop-up box will appear. Set them as follows:
 
 - Set `Variable Name` as `Email`
-- Set `Value` as `ENTER YOUR VALUE HERE` (Replace the value 'Enter value here' with the Email provided by partner, If not provided leave it as it is)
+- Set `Value` as `ENTER YOUR VALUE HERE` (Replace 'Enter value here' with the Email provided by the partner. If not provided, leave it as it is.)
 - Click the `Save` button.
 
 ![Image 15](../../../static/img/Simple-Notification-App/image_11.png)
@@ -115,10 +116,11 @@ Search and select the `Set User Variable` function.
 
 ![Image 17](../../../static/img/Simple-Notification-App/image_8.png)
 
-A pop box will appear. Set them as follows:
+A pop-up box will appear. Set them as follows:
 
 - Set `Variable Name` as `Phone`
-- Set `Value` as `ENTER YOUR VALUE HERE` (Replace the value 'Enter value here' with the Phone Number provided by partner, If not provided leave it as it is)
+- Set `Value` as `ENTER YOUR VALUE HERE` (Replace 'Enter value here' with the Phone Number provided by the partner. If not provided, leave it as it is.)
+
 - Click the `Save` button.
 
 ### Row 5 Function: PowerShell Script
@@ -159,7 +161,7 @@ if ( '@Email@' -match 'ENTER YOUR VALUE HERE') {
 }
 
 if ( '@Phone@' -match 'ENTER YOUR VALUE HERE') {
-   $Email = ''
+   $Phone = ''
 } elseif ('@Phone@' -notmatch '[0-9]') {
    $Phone = ''
 } else {
@@ -351,12 +353,12 @@ In the script exit message, leave it blank and click the `Save` button.
 
 ## Implementation
 
-It is designed to run as an on-demand because this pops up the notification as soon as the script triggers and only for once.
+It is designed to run as an on-demand task because this pops up the notification as soon as the script triggers and only once.
 
-- Goto `Automation` > `Tasks`.
-- Search for `DUO Auth Proxy - Install/Update Latest Version` Task.
+- Go to `Automation` > `Tasks`.
+- Search for the `DUO Auth Proxy - Install/Update Latest Version` Task.
 - Select the concerned task.
-- Click on `Schedule` the button to schedule the task/script.
+- Click on the `Schedule` button to schedule the task/script.
 
 ![Image 40](../../../static/img/Simple-Notification-App/image_33.png)
 
@@ -368,7 +370,7 @@ Select the `Schedule` button and click the calendar-looking button present in fr
 
 ![Image 42](../../../static/img/Simple-Notification-App/image_35.png)
 
-Select the `Month(s)` for the `Repeat`, `1` for `Dates` and click the `OK` button to save the schedule.
+Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.
 
 ![Image 43](../../../static/img/Simple-Notification-App/image_36.png)
 
@@ -376,7 +378,7 @@ Click the `Select Targets` button to select the concerned target.
 
 ![Image 44](../../../static/img/Simple-Notification-App/image_37.png)
 
-Search and select the appropriate target like sites, groups, or devices where you would like to send the notification at the same time.
+Search and select the appropriate target, such as sites, groups, or devices where you would like to send the notification at the same time.
 
 ![Image 45](../../../static/img/Simple-Notification-App/image_38.png)
 
@@ -387,14 +389,3 @@ Click the `Run` button to initiate the schedule.
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

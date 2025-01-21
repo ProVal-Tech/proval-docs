@@ -8,31 +8,19 @@ tags: ['connectwise', 'email', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will alert on any computer that has checked in in the last 5 minutes that also has the 'Online Alert E-mail' ConnectWise Automate computer level EDF filled out with a valid email address.
+This monitor will alert on any computer that has checked in within the last 5 minutes and has the 'Online Alert E-mail' ConnectWise Automate computer-level EDF filled out with a valid email address.
 
 ![Image](../../../static/img/Agent---E-Mail---Machine-Back-Online/image_1.png)
 
-Alert Template: △ Custom - E-Mail - Machine Back Online
+**Alert Template:** △ Custom - E-Mail - Machine Back Online
 
 ## Dependencies
 
-[CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]*](<../scripts/Email - EDF - Machine Back Online Autofix.md>)
+[CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]](../scripts/Email - EDF - Machine Back Online Autofix.md)
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-
-

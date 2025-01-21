@@ -8,38 +8,29 @@ tags: ['networking', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of the monitor set is to detect the computers that are placed in the wrong location. Location is verified on the basis of the router address. Router IP for each location must be defined. Multiple router IPs can be defined as well. A router address must be written in double quotes ("Router Address"). For using multiple router addresses, each router address must be separated by a space and a comma ("Router Address 1", "Router Address 2", "Router Address n").
+The purpose of the monitor set is to detect computers that are placed in the wrong location. Location is verified based on the router address. The router IP for each location must be defined, and multiple router IPs can also be specified. A router address must be written in double quotes ("Router Address"). When using multiple router addresses, each address must be separated by a space and a comma ("Router Address 1", "Router Address 2", "Router Address n").
 
-Sample screenshot for the multiple Router Addresses:
+### Sample Screenshots
+
+**Multiple Router Addresses:**
 
 ![Sample screenshot for multiple Router Addresses](../../../static/img/Agent-Checking-in-with-Wrong-Location/image_1.png)
 
-Sample screenshot for the single Router Address:
+**Single Router Address:**
 
 ![Sample screenshot for single Router Address](../../../static/img/Agent-Checking-in-with-Wrong-Location/image_2.png)
 
-However, there's an option available in Monitor set to use router address without quotes, but in that case, you would not be able to use multiple router addresses for any of the locations. 
+There is an option available in the monitor set to use router addresses without quotes; however, in that case, you will not be able to use multiple router addresses for any of the locations.
 
-In order to use a single router address without quotes, you can un-comment "#ON FIND_IN_SET (a.routeraddress, b.scrouteraddress) \<\> 0" statement in the additional condition followed by commenting the very next line.
+To use a single router address without quotes, you can uncomment the line `#ON FIND_IN_SET (a.routeraddress, b.scrouteraddress) <> 0` in the additional condition, followed by commenting the very next line.
 
-Sample Screenshot for single unquoted router address:
+**Single Unquoted Router Address:**
 
 ![Sample Screenshot for single unquoted router address](../../../static/img/Agent-Checking-in-with-Wrong-Location/image_3.png)
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-
-

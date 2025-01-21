@@ -8,9 +8,10 @@ tags: ['active-directory']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The solution document delineates the contents applicable for monitoring the Active Directory Domain environment. Please review the implementation steps meticulously as a significant portion of the content relies on the **`Active Directory`** plugin.
+This solution document delineates the contents applicable for monitoring the Active Directory Domain environment. Please review the implementation steps meticulously as a significant portion of the content relies on the **`Active Directory`** plugin.
 
 This article encompasses multiple components and contents. Please import and implement only the required components.
 
@@ -24,17 +25,17 @@ This article encompasses multiple components and contents. Please import and imp
 | [RSM - Active Directory - Monitor - Active Directory - New User Account Created](<../cwa/monitors/Active Directory - New User Account Created.md>)             | Internal Monitor | This monitor looks for new domain user accounts that have a creation date within the past day. A ticket is created for each new account discovered.                                |
 | [RSM - Active Directory - Monitor - Password Expires This Week [G]](<../cwa/monitors/Password Expires This Week G.md>)                          | Internal Monitor | Detects the domain users whose password is going to expire within a week.                                                                                                         |
 | [RSM - Active Directory - Monitor - Active Directory - Enabled Test Accounts](<../cwa/monitors/Active Directory - Enabled Test Accounts.md>)                | Internal Monitor | This monitor will look for any account with the name **`Test`** in the account name and will flag that account if it is enabled on the domain.                                     |
-| [RSM - Active Directory - Monitor - Account Disabled](<../cwa/monitors/Account Disabled.md>)                                       | Internal Monitor | This Monitor looks for the disabled accounts on Active Directory servers through the Active Directory plugin and creates a ticket for each one found.                               |
+| [RSM - Active Directory - Monitor - Account Disabled](<../cwa/monitors/Account Disabled.md>)                                       | Internal Monitor | This monitor looks for the disabled accounts on Active Directory servers through the Active Directory plugin and creates a ticket for each one found.                               |
 | [RSM - Active Directory - Monitor - Active Directory - User Last Logon > X Days](<../cwa/monitors/Active Directory - User Last Logon  X Days.md>)            | Internal Monitor | This monitor will check for users who have not logged in for more than X days and are not administrator accounts.                                                                  |
 | [CWM - Automate - Internal Monitor - Active Computers in AD with No Agent](<../cwa/monitors/Active Computers in AD with No Agent.md>)                  | Internal Monitor | The monitor set generates a client-level ticket containing details of domain-joined computers active within the domain, which have been joined to the domain for at least 7 days but do not have the Automate agent installed. |
 | [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../cwa/monitors/Active Directory - ADPluginUser - CreateUpdate.md>)       | Internal Monitor | The purpose of this monitor set is to create an 'ADPluginUser' account for the domain controllers detected in AD Plugin.                                                           |
-| [RSM - Active Directory - Monitor - GPO Modified](<../cwa/monitors/GPO Modified.md>)                                          | Internal Monitor | This Custom RAWSQL monitor shows GPO modified time on the computer if the GPO was modified in the last 1 day.                                                                    |
+| [RSM - Active Directory - Monitor - GPO Modified](<../cwa/monitors/GPO Modified.md>)                                          | Internal Monitor | This Custom RAWSQL monitor shows GPO modified time on the computer if the GPO was modified in the last day.                                                                    |
 
 #### Remote Monitor
 
 | Content                                                                                                                                      | Type            | Function                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [EPM - User Management - Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>)                     | Remote Monitor   | This remote monitor checks AD user's login password age to see if the age is set to unlimited, and if so it will change the user password from never Expire to expire and will also change the Default domain policy password age to 90 days. |
+| [EPM - User Management - Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>)                     | Remote Monitor   | This remote monitor checks AD user's login password age to see if the age is set to unlimited, and if so it will change the user password from never expire to expire and will also change the Default domain policy password age to 90 days. |
 | [RSM - Active Directory - Remote Monitor - New Domain Admin](<../cwa/monitors/New Domain Admin.md>)                               | Remote Monitor   | The purpose of the remote monitor is to detect the newly created/promoted domain admins and create a ticket.                                                                         |
 | [CWM - Automate - Remote Monitor - AD Recycle Bin State Check](<../cwa/monitors/AD Recycle Bin State Check.md>)                             | Remote Monitor   | This is a remote PowerShell monitor which detects whether the AD Recycle Bin is enabled or disabled on Windows Active Directory servers.                                             |
 | [RSM - Active Directory - Remote Monitor - AD Account Lockout Detection](<../cwa/monitors/AD Account LockOut Detection.md>)                   | Remote Monitor   | The monitoring system is set up to gather data on event ID 4740 that occurred within the last 15 minutes and to generate an alert with the relevant information.                     |
@@ -67,7 +68,7 @@ This article encompasses multiple components and contents. Please import and imp
 
 | Content                                                                                                                                      | Type            | Function                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Report - Active Directory User Assessment](<../cwa/reports/Active Directory User Assessment.md>)                                               | Report          | Displays an overall health view of the Clients Active Directory along with a full user report.                                                                                     |
+| [Report - Active Directory User Assessment](<../cwa/reports/Active Directory User Assessment.md>)                                               | Report          | Displays an overall health view of the Client's Active Directory along with a full user report.                                                                                     |
 | [Report - Active Directory User Groups - Detail](<../cwa/reports/Active Directory User Groups - Detail.md>)                                          | Report          | Displays a complete user list with all groups that each user is in, along with an overall view of what groups are used the most.                                                  |
 | [Report - Computers in Active Directory - No Agent](<../cwa/reports/Computers in Active Directory - No Agent.md>)                                      | Report          | Displays a list of all computers that are in Active Directory but not in Automate. Can be used to clean up Client Active Directories.                                              |
 | SubPageHeaderLandscape                                                                                                                    | Subreport       | Used as the template for the page header on these reports.                                                                                                                          |
@@ -81,7 +82,7 @@ This article encompasses multiple components and contents. Please import and imp
 
 2. ### Active Directory Reporting Solution
 
-   Follow the Steps outlined in the [EPM - Accounts - Report - Active Directory Reporting Solution](<../cwa/reports/Active Directory Reporting Solution.md>) document to import and configure the following reports:
+   Follow the steps outlined in the [EPM - Accounts - Report - Active Directory Reporting Solution](<../cwa/reports/Active Directory Reporting Solution.md>) document to import and configure the following reports:
 
    - [Report - Active Directory User Assessment](<../cwa/reports/Active Directory User Assessment.md>)
    - [Report - Active Directory User Groups - Detail](<../cwa/reports/Active Directory User Groups - Detail.md>)
@@ -102,8 +103,8 @@ This article encompasses multiple components and contents. Please import and imp
 4. ### Active Directory - New User Account
 
    - Import the [RSM - Active Directory - Monitor - Active Directory - New User Account Created](<../cwa/monitors/Active Directory - New User Account Created.md>) internal monitor from the `ProSync` plugin.
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - New User Account Created](<../cwa/monitors/Active Directory - New User Account Created.md>) monitor set.
 
@@ -123,8 +124,8 @@ This article encompasses multiple components and contents. Please import and imp
 6. ### Active Directory - Enabled Test Accounts
 
    - Import the [RSM - Active Directory - Monitor - Active Directory - Enabled Test Accounts](<../cwa/monitors/Active Directory - Enabled Test Accounts.md>) internal monitor from the `ProSync` plugin.
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - Enabled Test Accounts](<../cwa/monitors/Active Directory - Enabled Test Accounts.md>) monitor set.
 
@@ -133,8 +134,8 @@ This article encompasses multiple components and contents. Please import and imp
 7. ### Active Directory - Account Disabled
 
    - Import the [RSM - Active Directory - Monitor - Account Disabled](<../cwa/monitors/Account Disabled.md>) internal monitor from the `ProSync` plugin.
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Account Disabled](<../cwa/monitors/Account Disabled.md>) monitor set.
 
@@ -143,8 +144,8 @@ This article encompasses multiple components and contents. Please import and imp
 8. ### Active Directory - User Last Logon > X Days
 
    - Import the [RSM - Active Directory - Monitor - Active Directory - User Last Logon > X Days](<../cwa/monitors/Active Directory - User Last Logon  X Days.md>) internal monitor from the `ProSync` plugin.
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - User Last Logon > X Days](<../cwa/monitors/Active Directory - User Last Logon  X Days.md>) monitor set.
 
@@ -153,8 +154,8 @@ This article encompasses multiple components and contents. Please import and imp
 9. ### Active Directory - Domain Computers Missing Automate Agent
 
    - Import the [CWM - Automate - Internal Monitor - Domain Computers Missing Automate Agent](<../cwa/monitors/Active Computers in AD with No Agent.md>) internal monitor from the `ProSync` plugin.
-   - Import the **`△ Custom - Ticket Creation - Client`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Ticket Creation - Client](<../cwa/scripts/CWM - Automate - Ticket Creation - Client.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Client`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Ticket Creation - Client](<../cwa/scripts/CWM - Automate - Ticket Creation - Client.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Client`** alert template to the [CWM - Automate - Internal Monitor - Domain Computers Missing Automate Agent](<../cwa/monitors/Active Computers in AD with No Agent.md>) monitor set.
 
@@ -164,7 +165,7 @@ This article encompasses multiple components and contents. Please import and imp
 
     - Import the [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../cwa/monitors/Active Directory - ADPluginUser - CreateUpdate.md>) monitor set from the `ProSync` plugin.
     - Import and implement the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](<../cwa/scripts/Active Directory - Plugin User Account - CreateUpdate.md>) script as instructed in the **`Implementation`** section of the [script's](<../cwa/scripts/Active Directory - Plugin User Account - CreateUpdate.md>) document.
-    - Import the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template from the `ProSync` plugin, if it's already not present in the environment.
+    - Import the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template from the `ProSync` plugin, if it's not already present in the environment.
     - Assign the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template to the [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](<../cwa/monitors/Active Directory - ADPluginUser - CreateUpdate.md>) monitor set.
 
     ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_10.png)
@@ -192,8 +193,8 @@ This article encompasses multiple components and contents. Please import and imp
    - Schedule the [RSM - Active Directory - Script - Group Policy - Audit](<../cwa/scripts/Group Policy - Audit.md>) script to run once per day against the domain controllers group.
    - Import the [RSM - Active Directory - Monitor - GPO Modified](<../cwa/monitors/GPO Modified.md>) internal monitor from the `ProSync` plugin.
    - Implement the monitor set as explained in the **`Implementation`** section of the [monitor's](<../cwa/monitors/GPO Modified.md>) document.
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Script - Group Policy - Audit](<../cwa/scripts/Group Policy - Audit.md>) monitor set.
 
@@ -201,16 +202,16 @@ This article encompasses multiple components and contents. Please import and imp
 
 3. ### Reset AD Users Password Age
 
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Import the [EPM - User Management - Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>) remote monitor by following the instructions outlined in the [Import - Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Import - Remote Monitor - Reset AD Users Password Age.md>) document.
    - Reload the System Cache.
    - Locate the [EPM - User Management - Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>) remote monitor by opening the relevant group(s) and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
 
 4. ### New Domain Admin
 
-   - Import the **`△ Custom - Ticket Creation Computer - Failures Only`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../cwa/scripts/Ticket Creation - Computer Failures Only.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation Computer - Failures Only`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../cwa/scripts/Ticket Creation - Computer Failures Only.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Import the [RSM - Active Directory - Remote Monitor - New Domain Admin](<../cwa/monitors/New Domain Admin.md>) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - New Domain Admin](<../cwa/monitors/New Domain Admin.md>) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - New Domain Admin](<../cwa/monitors/New Domain Admin.md>) remote monitor by opening the **`Domain Controllers`** group.
@@ -223,30 +224,18 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Locate the [EPM - User Management - Remote Monitor - Reset AD Users Password Age](<../cwa/monitors/Reset AD Users Password Age.md>) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Execute Script - AD - Enable AD Recycle Bin`** alert template to the group monitor.
 
-6. ### AD Account Lockout Detection 
+6. ### AD Account Lockout Detection
 
-   - Import the **`△ Custom - Ticket Creation Computer - Failures Only`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../cwa/scripts/Ticket Creation - Computer Failures Only.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation Computer - Failures Only`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../cwa/scripts/Ticket Creation - Computer Failures Only.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Import the [RSM - Active Directory - Remote Monitor - AD Account Lockout Detection](<../cwa/monitors/AD Account LockOut Detection.md>) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - AD Account LockOut Detection](<../cwa/monitors/AD Account LockOut Detection.md>) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - AD Account Lockout Detection](<../cwa/monitors/AD Account LockOut Detection.md>) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation Computer - Failures Only`** alert template to the group monitor.
 
 7. ### Active Directory Replication Anomaly Monitoring
 
-   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's already not present in the environment.
-   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's already not present in the environment.
+   - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
+   - Import the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script from the `ProSync` plugin, if it's not already present in the environment.
    - Import the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](<../cwa/monitors/Active Directory Replication Anomaly Monitoring.md>) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
-
-
-
-
-
-
-
-
-
-
-
-

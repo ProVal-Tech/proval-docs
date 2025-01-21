@@ -8,6 +8,7 @@ tags: ['chrome', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is used to remove the enforcement of the installation of an extension or list of extensions in Google Chrome.  
@@ -27,7 +28,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 | Variable Name      | Description                                                                                     |
 |--------------------|-------------------------------------------------------------------------------------------------|
-| ProjectName        | The name of the project and in this case it would be Unregister-EdgeExtension                  |
+| ProjectName        | The name of the project; in this case, it would be Unregister-EdgeExtension                   |
 | Parameters         | This will take the ExtensionIDs.                                                                |
 | BaseURL            | The base URL here will be [https://file.provaltech.com/repo](https://file.provaltech.com/repo) |
 | WorkingDirectory    | C:/ProgramData/provaltech/script/@ProjectName@                                                |
@@ -48,7 +49,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 ## Process
 
-The script takes a single parameter which is an array of Extension IDs to install that can be found on the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). The list of extensions is then cycled through and install registry entries are removed from the policy section. Blocking entries are then added to the registry to prevent future installation. To find an extension to unmanage, navigate to the page for that extension and copy the last portion of the URL for the Extension ID.
+The script takes a single parameter, which is an array of Extension IDs to install that can be found on the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). The list of extensions is then cycled through, and install registry entries are removed from the policy section. Blocking entries are then added to the registry to prevent future installation. To find an extension to unmanage, navigate to the page for that extension and copy the last portion of the URL for the Extension ID.
 
 **Example:**
 
@@ -64,15 +65,3 @@ The script takes a single parameter which is an array of Extension IDs to instal
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-

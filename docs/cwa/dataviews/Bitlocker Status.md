@@ -8,6 +8,7 @@ tags: ['active-directory', 'backup', 'encryption', 'security', 'tpm']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview displays the Bitlocker information on all computers that have run the [Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>). This Bitlocker information consists of the Bitlocker status of machine drives, information about key protectors, TPM status, and the backup status in Active Directory.
@@ -27,7 +28,7 @@ This dataview displays the Bitlocker information on all computers that have run 
 | Computer               | The name of the audited agent.                                                                                       |
 | MountPoint             | The drive letter of the audited volume.                                                                              |
 | EncryptionMethod       | The encryption method used to encrypt the drive.                                                                     |
-| AutoUnlockEnabled      | 1 or 0 depending on if the drive will be auto-unlocked.                                                             |
+| AutoUnlockEnabled      | 1 or 0 depending on whether the drive will be auto-unlocked.                                                        |
 | AutoUnlockKeyStored    | 1 or 0 depending on whether any external keys or related information that may be used to automatically unlock data volumes exist in the currently running operating system volume. |
 | MetadataVersion        | The version of the Bitlocker metadata.                                                                                |
 | VolumeStatus           | The current status that the audited volume is in.                                                                    |
@@ -37,7 +38,7 @@ This dataview displays the Bitlocker information on all computers that have run 
 | WipePercentage         | The percentage of the volume that has been wiped after issuing a wipe command.                                      |
 | VolumeType             | The type of the audited volume.                                                                                      |
 | KeyProtectorId        | The GUID of the key protector for the audited volume.                                                                |
-| AutoUnlockProtector    | 1 or 0 depending on if this key protector is an auto-unlock protector.                                              |
+| AutoUnlockProtector    | 1 or 0 depending on whether this key protector is an auto-unlock protector.                                         |
 | KeyProtectorType       | The type of key protector.                                                                                            |
 | KeyFileName            | The file name of the key protector (if applicable).                                                                 |
 | RecoveryPassword        | The recovery password of the key protector (if applicable).                                                         |
@@ -54,20 +55,6 @@ This dataview displays the Bitlocker information on all computers that have run 
 | ClientID               | This was required to allow the data to populate in the dataview.                                                   |
 | TpmReady               | The TPM Ready state of the target.                                                                                  |
 | TpmEnabled             | The TPM Enabled state of the target.                                                                                 |
-| TPM Version            | It contains the TPM Version number.                                                                                 |
+| TPM Version            | The TPM Version number.                                                                                             |
 | TPMOwned               | The TPM Owned state of the target.                                                                                  |
 | TPMActivated           | The activation state of the TPM on the target.                                                                      |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

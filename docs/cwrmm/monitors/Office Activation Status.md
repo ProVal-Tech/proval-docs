@@ -8,9 +8,10 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Generates alert for any unlicensed Office products on the endpoint.
+Generates an alert for any unlicensed Office products on the endpoint.
 
 ## Monitor
 
@@ -24,7 +25,7 @@ Generates alert for any unlicensed Office products on the endpoint.
    ![Monitor Screen](../../../static/img/Office-Activation-Status/image_3.png)
 
 4. **Name:** Office Activation Status  
-   **Description:** Generates alert for any unlicensed Office products on the endpoint  
+   **Description:** Generates an alert for any unlicensed Office products on the endpoint  
    **Type:** Script  
    **Family:** Desktop Operating System  
    **Severity:** Others  
@@ -72,7 +73,7 @@ Generates alert for any unlicensed Office products on the endpoint.
    ```
    ![PowerShell Script](../../../static/img/Office-Activation-Status/image_8.png)
 
-9. Set `Unlicensed`, `Non_Genuine_Grace_Period`, `Out_Of_Tolerance_Grace_Period` to the `Script Output` box.  
+9. Set `Unlicensed`, `Non_Genuine_Grace_Period`, and `Out_Of_Tolerance_Grace_Period` to the `Script Output` box.  
    ![Script Output](../../../static/img/Office-Activation-Status/image_9.png)
 
 10. Enable the `Escalate ticket on script failure` option.  
@@ -86,15 +87,3 @@ Generates alert for any unlicensed Office products on the endpoint.
 
 13. Click the `Save` button to save the monitor set.  
     ![Save Monitor Set](../../../static/img/Office-Activation-Status/image_14.png)
-
-
-
-
-
-
-
-
-
-
-
-

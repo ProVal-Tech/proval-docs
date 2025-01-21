@@ -8,25 +8,13 @@ tags: ['bitlocker', 'security', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This contains BitLocker fully decrypt machines
+This document provides information on fully decrypting machines using BitLocker.
 
 ## Settings
 
 | Detection String                                                                                                                                       | Comparator | Result        | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------------|----------------|
-| %@powershell.exe -nologo -noprofile -command "Get-BitLockerVolume -MountPoint "C:" | Select-Object -ExpandProperty VolumeStatus"@% | Contains    | FullyDecrypted | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `%@powershell.exe -nologo -noprofile -command "Get-BitLockerVolume -MountPoint "C:" | Select-Object -ExpandProperty VolumeStatus"@% | Contains    | FullyDecrypted | Windows        |

@@ -8,9 +8,10 @@ tags: ['performance', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview lists out the 'top talkers' when in reference to monitors. Each row is a monitor name with a total ticket count next to it for the last 30 days.
+This dataview lists the 'top talkers' in reference to monitors. Each row represents a monitor name with the total ticket count next to it for the last 30 days.
 
 ## Dependencies
 
@@ -23,17 +24,4 @@ None
 | Agent ID                  | This is the Monitor ID                              |
 | Name                      | Name of the Monitor                                 |
 | Internal                  | 1 = internal monitor; 0 = remote monitor           |
-| TicketCountLast30Days     | Total number of tickets generated last 30 days      |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| TicketCountLast30Days     | Total number of tickets generated in the last 30 days |

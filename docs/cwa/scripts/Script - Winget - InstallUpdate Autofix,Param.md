@@ -8,14 +8,15 @@ tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is created to install and update the application whose package is available in the Winget.  
-Please find the application package from below URL:  
+This script is created to install and update applications whose packages are available in Winget.  
+Please find the application package at the following URL:  
 [https://winget.run/search](https://winget.run/search)  
 
-Script Path: C:/ProgramData/_automation/script/Invoke-WingetProcessor/Invoke-WingetProcessor.ps1  
-File Hash: 606FC62A7E6AD61143B93A6426BAD11F99C05AAD01BDFA0963F6AC83D6935C73  
+**Script Path:** `C:/ProgramData/_automation/script/Invoke-WingetProcessor/Invoke-WingetProcessor.ps1`  
+**File Hash:** `606FC62A7E6AD61143B93A6426BAD11F99C05AAD01BDFA0963F6AC83D6935C73`  
 
 ## Sample Run
 
@@ -34,27 +35,15 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name         | Example                     | Required | Description                                                                                                   |
 |--------------|-----------------------------|----------|---------------------------------------------------------------------------------------------------------------|
-| ProjectName  | Invoke-WingetProcessor      | True     | This determines which Project to Download and execute by the Automate implementation script                   |
+| ProjectName  | Invoke-WingetProcessor      | True     | This determines which project to download and execute by the Automate implementation script                   |
 
 #### User Parameters
 
 | Name      | Example                     | Required | Description                                                                                                   |
 |-----------|-----------------------------|----------|---------------------------------------------------------------------------------------------------------------|
 | PackageID | Microsoft.RemoteDesktopClient| False    | This is needed to install/update the application                                                              |
-| Source    | Winget                      | False    | This is needed to determine whether the application packageid is in Winget search or Microsoft Store          |
+| Source    | Winget                      | False    | This is needed to determine whether the application PackageID is in Winget search or Microsoft Store          |
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

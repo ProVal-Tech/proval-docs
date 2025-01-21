@@ -2,15 +2,16 @@
 id: 'f8b7444f-398c-42a5-8ed8-f83c3491818e'
 title: 'Install ClickShare'
 title_meta: 'Install ClickShare - A Guide to Installation'
-keywords: ['clickshare', 'installation', 'script', 'agent', 'taskschedular']
+keywords: ['clickshare', 'installation', 'script', 'agent', 'taskscheduler']
 description: 'This document provides a comprehensive guide on how to install ClickShare using a script. It covers the installation options for all users or the logged-in user, along with dependencies and global parameters.'
 tags: ['installation', 'setup', 'software']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script will help to install the ClickShare.
+This script will help to install ClickShare.
 
 ## Sample Run
 
@@ -24,25 +25,12 @@ This script will help to install the ClickShare.
 
 | Name          | Example | Required | Description                                                                                     |
 |---------------|---------|----------|-------------------------------------------------------------------------------------------------|
-| TaskSchedular | 0,1     | True     | 1 --> Schedule the task to install ClickShare for all users0 --> Install ClickShare to logged in user |
+| TaskScheduler | 0,1     | True     | 1 --> Schedule the task to install ClickShare for all users; 0 --> Install ClickShare for the logged-in user |
 
 ## Process
 
-This script helps to install the Click Share on the agent. It can install the application to all users at once or to the logged-in user based on global parameter "TaskSchedular".
+This script helps to install ClickShare on the agent. It can install the application for all users at once or for the logged-in user based on the global parameter "TaskScheduler".
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

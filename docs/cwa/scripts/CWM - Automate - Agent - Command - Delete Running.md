@@ -8,13 +8,14 @@ tags: ['database']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script should be used as an Autofix for our internal monitor 'ProVal - Production - Automate - Machines With Stuck Commands [G]'. The script will delete the Stuck commands from the target machine. It will check for the command status id '2' (status 2 indicates the commands that are stuck in executing state) on the target machine and will remove them from the database.
+This script should be used as an autofix for our internal monitor, 'ProVal - Production - Automate - Machines With Stuck Commands [G]'. The script will delete the stuck commands from the target machine. It will check for the command status ID '2' (status 2 indicates the commands that are stuck in an executing state) on the target machine and will remove them from the database.
 
 ## Sample Run
 
-The script is a function script, that can't run manually.
+The script is a function script that cannot run manually.
 
 ## Dependencies
 
@@ -26,7 +27,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name  | Description                                                                                     |
 |-------|-------------------------------------------------------------------------------------------------|
-| Check | This variable stores the count of commands detected in executing state                          |
+| Check | This variable stores the count of commands detected in an executing state                      |
 
 ## Process
 
@@ -35,14 +36,3 @@ This script will execute with the monitor and will delete all the executable com
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

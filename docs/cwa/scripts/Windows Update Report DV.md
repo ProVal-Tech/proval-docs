@@ -26,32 +26,20 @@ Get a detailed list of patches that are installed or available on the local mach
 
 | Name            | Description                                                                                     |
 |-----------------|-------------------------------------------------------------------------------------------------|
-| InsertStatement  | Result of the PowerShell Script attempted to retrieve the Windows Update Report                |
+| InsertStatement  | Result of the PowerShell script that attempts to retrieve the Windows Update Report            |
 
 ## Process
 
-Step 1: Creating the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table if it already not exists.  
-Step 2: Change the structure of the table, if the partner is still using the older structure. Also removes the duplicate entry from the table.  
-Step 3: Running the PowerShell script to retrieve the Windows Update Report.  
-Step 4: Verifying the Outcome.  
-Step 5: Parsing the Outcome to ensure SQL compatibility.  
-Step 6: Inserting the data to the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) Table.  
-Step 7: Logging the Failure.  
+1. Creating the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table if it does not already exist.
+2. Changing the structure of the table if the partner is still using the older structure. This step also removes duplicate entries from the table.
+3. Running the PowerShell script to retrieve the Windows Update Report.
+4. Verifying the outcome.
+5. Parsing the outcome to ensure SQL compatibility.
+6. Inserting the data into the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table.
+7. Logging any failures.
 
 ## Output
 
 - Script Log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

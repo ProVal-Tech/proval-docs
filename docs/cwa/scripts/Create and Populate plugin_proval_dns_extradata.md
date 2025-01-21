@@ -8,9 +8,10 @@ tags: ['database', 'setup', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will create the `plugin_proval_dns_extradata` table and populate that table with the required data.
+This script will create the `plugin_proval_dns_extradata` table and populate it with the required data.
 
 ## Sample Run
 
@@ -29,7 +30,7 @@ Document the various variables in the script. Delete any section that is not rel
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | finishstatus       | The finish status of the [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](<./PowerShell Environment Setup Verification.md>) script. |
 | WorkingDirectory    | The directory to populate a .json file to be parsed and added to the table.                                                                    |
-| JsonFileName       | The name of the Json file to be created by the script.                                                                                          |
+| JsonFileName       | The name of the JSON file to be created by the script.                                                                                          |
 | psout              | The results of a PowerShell command.                                                                                                            |
 | SQLStartStatement   | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)             |
 | SQLTailString      | Required by [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)             |
@@ -45,7 +46,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Process
 
 1. Utilize the new [EPM - Windows Configuration - Script - PowerShell Environment Setup Verification](<./PowerShell Environment Setup Verification.md>) script to determine if this script will operate as expected.
-2. Check for a failure to the verification script; if failed, log an error and exit with error.
+2. Check for a failure in the verification script; if it fails, log an error and exit with an error.
 3. Create the table.
 4. Run a PowerShell command to obtain the DNS objects and necessary data and save it to a .json file.
 5. Use the overflowed variable script to populate the data into the table.
@@ -53,15 +54,3 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

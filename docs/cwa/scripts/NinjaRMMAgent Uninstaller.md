@@ -8,9 +8,10 @@ tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script tries to uninstall NinjaRMMAgent from the machine. If the global variable `Ticketing` is set to `1`, it generates a ticket when the uninstallation fails.
+The script attempts to uninstall the NinjaRMMAgent from the machine. If the global variable `Ticketing` is set to `1`, it generates a ticket when the uninstallation fails.
 
 ## Sample Run
 
@@ -26,14 +27,3 @@ The script tries to uninstall NinjaRMMAgent from the machine. If the global vari
 
 - Script Log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will create a ticket and will move the agent it's run against to retired assets.
+This script will create a ticket and move the agent it is run against to retired assets.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -20,19 +21,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- This script will create a ticket and will move the agent it is run against to retired assets.
+- This script will create a ticket and move the agent it is run against to retired assets.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Stores the output of the Out of Date Cumulative Update (Autofix) task.
+This document stores the output of the Out of Date Cumulative Update (Autofix) task.
 
 ## Possible Values
 
@@ -24,20 +25,8 @@ Stores the output of the Out of Date Cumulative Update (Autofix) task.
 |----------------------------------|----------|-----------|---------------|-------------------------------------------------------------------|----------|
 | Out_of_Date_CU_Autofix_Result | ENDPOINT | Text Box  | NA            | Stores the output of the Out of Date Cumulative Update (Autofix) task. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Result/image_1.png)
 
 ![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix_Result/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

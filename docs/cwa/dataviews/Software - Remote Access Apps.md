@@ -8,19 +8,20 @@ tags: ['networking', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows a list of installed well-known remote access software.
+This document provides a list of well-known remote access software that may be installed on systems.
 
-Will detect the following remote software:
+The following remote software will be detected:
 
 - RemotePC
-- Teamviewer
+- TeamViewer
 - LogMeIn
 - GoToAssist
 - RealVNC
 - Splashtop
-- ZohoAssist
+- Zoho Assist
 - AnyDesk
 - Ammyy
 - Bomgar
@@ -30,7 +31,6 @@ Will detect the following remote software:
 - AetherPal
 - AppliDis
 - BeAnywhere
-- Bomgar
 - Citrix XenApp
 - CloudBerry Remote Assistant
 - Ericom Connect
@@ -58,17 +58,4 @@ Will detect the following remote software:
 | Client             | Client Name                             |
 | Location           | Location Name                           |
 | Computer           | Computer Name                           |
-| Remote Software    | List of Remote software installed.      |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Remote Software    | List of remote software installed       |

@@ -8,25 +8,13 @@ tags: ['chrome', 'software', 'update']
 draft: true
 unlisted: false
 ---
+
 ## Variables
 
-\<div class='text-section scrollable'>
+<div class='text-section scrollable'>
 
 | Name                                      | Description                                                                                     |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Google Chrome Auto Update (EDF)          | This EDF gets checked when the auto-update of chrome is enabled via script.                    |
+| Google Chrome Auto Update (EDF)          | This EDF is checked when the auto-update of Chrome is enabled via the script.                 |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>

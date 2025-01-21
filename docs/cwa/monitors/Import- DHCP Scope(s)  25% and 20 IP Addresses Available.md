@@ -8,11 +8,12 @@ tags: ['database', 'networking', 'setup']
 draft: false
 unlisted: false
 ---
-## Step 1.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
 
-## Step 2.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+## Step 1
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
+
+## Step 2
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```
@@ -20,10 +21,10 @@ INSERT INTO groupagents
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
 '0' as `SearchID`,
-'ProVal - Production - DHCP Scope(s) \\< 25% and 20 IP Addresses Available' as `Name`,
+'ProVal - Production - DHCP Scope(s) < 25% and 20 IP Addresses Available' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~The problem is fixed.!!!DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~Active DHCP scope(s) with less than 25% and 20 available IP addresses detected on %ClientName%/%ComputerName% at %LocationName%. /r/n/r/nThis could potentially lead to IP address allocation problems and network connectivity issues for users. Immediate action should be taken to ensure sufficient IP addresses are available within the DHCP scopes to prevent any network disruptions. Please investigate the DHCP server configuration and take the necessary steps to address this issue. Potential solutions could include expanding IP address ranges, optimizing IP address allocation, or adding additional DHCP servers./r/n/r/nAffected Scope(s) details: /r/n%RESULT%' as `AlertMessage`,
+'DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~The problem is fixed.!!!DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~Active DHCP scope(s) with less than 25% and 20 available IP addresses detected on %ClientName%/%ComputerName% at %LocationName%. \r\n\r\nThis could potentially lead to IP address allocation problems and network connectivity issues for users. Immediate action should be taken to ensure sufficient IP addresses are available within the DHCP scopes to prevent any network disruptions. Please investigate the DHCP server configuration and take the necessary steps to address this issue. Potential solutions could include expanding IP address ranges, optimizing IP address allocation, or adding additional DHCP servers.\r\n\r\nAffected Scope(s) details: \r\n%RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
@@ -43,26 +44,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -117,21 +98,21 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
-AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - DHCP Scope(s) \\< 25% and 20 IP Addresses Available')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - DHCP Scope(s) < 25% and 20 IP Addresses Available')
 ```
 
-## Step 3.
-An example of a query with a groupid:
+## Step 3
+An example of a query with a group ID:
 
 ```
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
 '0' as `SearchID`,
-'ProVal - Production - DHCP Scope(s) \\< 25% and 20 IP Addresses Available' as `Name`,
+'ProVal - Production - DHCP Scope(s) < 25% and 20 IP Addresses Available' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~The problem is fixed.!!!DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~Active DHCP scope(s) with less than 25% and 20 available IP addresses detected on %ClientName%/%ComputerName% at %LocationName%. /r/n/r/nThis could potentially lead to IP address allocation problems and network connectivity issues for users. Immediate action should be taken to ensure sufficient IP addresses are available within the DHCP scopes to prevent any network disruptions. Please investigate the DHCP server configuration and take the necessary steps to address this issue. Potential solutions could include expanding IP address ranges, optimizing IP address allocation, or adding additional DHCP servers./r/n/r/nAffected Scope(s) details: /r/n%RESULT%' as `AlertMessage`,
+'DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~The problem is fixed.!!!DHCP Scope(s) with Insufficient IP Addresses Detected on %computername%~~~Active DHCP scope(s) with less than 25% and 20 available IP addresses detected on %ClientName%/%ComputerName% at %LocationName%. \r\n\r\nThis could potentially lead to IP address allocation problems and network connectivity issues for users. Immediate action should be taken to ensure sufficient IP addresses are available within the DHCP scopes to prevent any network disruptions. Please investigate the DHCP server configuration and take the necessary steps to address this issue. Potential solutions could include expanding IP address ranges, optimizing IP address allocation, or adding additional DHCP servers.\r\n\r\nAffected Scope(s) details: \r\n%RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
@@ -184,39 +165,17 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (1674)
-AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - DHCP Scope(s) \\< 25% and 20 IP Addresses Available')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - DHCP Scope(s) < 25% and 20 IP Addresses Available')
 ```
 
-## Step 4.
+## Step 4
 Now execute your query from a RAWSQL monitor set.
 
-## Step 5.
+## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['mysql', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the accumulated "Time Saved by Automation" for each script that has the setting set based on triggers and custom tables created by [Time Saved By Automation MySQL](<../tables/plugin_proval_scripttimesaved_.md>).
+This document displays the accumulated "Time Saved by Automation" for each script that has the setting configured based on triggers and custom tables created by [Time Saved By Automation MySQL](<../tables/plugin_proval_scripttimesaved_.md>).
 
 ## Dependencies
 
@@ -18,24 +19,12 @@ Displays the accumulated "Time Saved by Automation" for each script that has the
 
 ## Columns
 
-| Column                          | Type    | Description                                                                                           |
-|---------------------------------|---------|-------------------------------------------------------------------------------------------------------|
-| GUID                            | VARCHAR | The GUID of the script.                                                                               |
-| Script Name                    | VARCHAR | The name of the script.                                                                                |
-| Average Daily Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per day since the beginning of data collection. |
-| Average Weekly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
-| Average Monthly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
-| Average Yearly Minutes Saved      | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                         | Type    | Description                                                                                           |
+|--------------------------------|---------|-------------------------------------------------------------------------------------------------------|
+| GUID                           | VARCHAR | The GUID of the script.                                                                               |
+| Script Name                   | VARCHAR | The name of the script.                                                                                |
+| Average Daily Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per day since the beginning of data collection. |
+| Average Weekly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
+| Average Monthly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
+| Average Yearly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
 

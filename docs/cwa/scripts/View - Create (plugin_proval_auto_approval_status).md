@@ -8,9 +8,10 @@ tags: ['database', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Creates the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
+This document creates the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
 
 ## Sample Run
 
@@ -18,22 +19,10 @@ Creates the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_ap
 
 ## Process
 
-Step 1: Drop View if it exists.  
-Step 2: Create View if it exists.  
-Step 3: Calls the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<./MySQL - Permission - Set Custom Table Permissions.md>) script.
+1. Drop the view if it exists.
+2. Create the view if it does not exist.
+3. Call the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<./MySQL - Permission - Set Custom Table Permissions.md>) script.
 
 ## Output
 
-[plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>)
-
-
-
-
-
-
-
-
-
-
-
-
+The output is the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.

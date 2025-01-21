@@ -8,6 +8,7 @@ tags: ['cleanup', 'logging', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This agent procedure will uninstall the Huntress EDR agent, Huntress updater, and Rio.
@@ -32,10 +33,10 @@ The agent procedure requires no customization.
 1. The agent procedure pushes a script to the endpoint.
 2. Data is logged regarding the current installation detected.
 3. Services for Huntress are stopped.
-4. Executables for Huntress are killed.
+4. Executables for Huntress are terminated.
 5. The built-in uninstaller is run on the machine, silently.
-6. The uninstall will loop until Huntress assets are all successfully removed, or exit & report if timer exceeds 15 seconds.
-7. Manual cleanup of Huntress folder after the uninstall completes.
+6. The uninstall will loop until all Huntress assets are successfully removed, or it will exit and report if the timer exceeds 15 seconds.
+7. Manual cleanup of the Huntress folder after the uninstall completes.
 8. Manual cleanup of Huntress registry keys after the uninstall completes.
 
 ## Output
@@ -43,14 +44,3 @@ The agent procedure requires no customization.
 `%SystemRoot%/temp/HuntressPoShInstaller.log`  
 `%TEMP%/HuntressPoShInstaller.log`  
 Agent Procedure Log
-
-
-
-
-
-
-
-
-
-
-

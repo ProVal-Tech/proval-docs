@@ -8,25 +8,13 @@ tags: ['software']
 draft: true
 unlisted: false
 ---
+
 ## Introduction
 
 This process includes pre-installation and configuration changes of the new onboarding agent in the client environment.  
-It has a pre-check and post-check box EDFs to ensure the changes or implementation are allowed and configured properly.
+It features pre-check and post-check boxes (EDFs) to ensure that the changes or implementation are allowed and configured properly.
 
 ## Description
 
-The ProVal's Predelivery Process includes the below solutions ready:  
-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
+The ProVal Predelivery Process includes the following solutions ready:  
+- [List of solutions will be added here]

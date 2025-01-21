@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is a remote monitor. Determines via querying the event log if event id - 12298 has occurred within the last 12 hours & returns the count.
+This is a remote monitor that determines, by querying the event log, if event ID 12298 has occurred within the last 12 hours and returns the count.
 
 ## Details
 
@@ -18,7 +19,7 @@ This is a remote monitor. Determines via querying the event log if event id - 12
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default - Create Ticket  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
@@ -30,20 +31,8 @@ None.
 
 ## Target
 
-The suggested target for the monitor: Service Plan(s) for Servers and Workstations.
+The suggested target for the monitor is Service Plan(s) for Servers and Workstations.
 
-Examples:  
-Windows Servers - Should be run on all Windows-based servers.  
-Windows Workstations - Should be run on all Windows workstations (Optional)
-
-
-
-
-
-
-
-
-
-
-
-
+**Examples**:  
+- **Windows Servers**: Should be run on all Windows-based servers.  
+- **Windows Workstations**: Should be run on all Windows workstations (Optional).

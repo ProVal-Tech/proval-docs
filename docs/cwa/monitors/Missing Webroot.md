@@ -8,29 +8,18 @@ tags: ['deployment', 'macos', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor detects all computers whose associated client has the Enable Webroot Deployment EDF Checked and does not have an associated location exclusion or computer exclusion.
+This internal monitor detects all computers whose associated client has the Enable Webroot Deployment EDF checked and does not have an associated location exclusion or computer exclusion.
 
 ## Dependencies
 
-- [SWM - Software Installation - Script - △ Install Webroot SecureAnyWhere](https://proval.itglue.com/DOC-5078775-11623253)
+- [SWM - Software Installation - Script - △ Install Webroot SecureAnywhere](https://proval.itglue.com/DOC-5078775-11623253)
 - [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
 
 ## Target
 
-- Should not target Linux based operating systems
-- Can target MACOS or Windows.
-- Please review Solution Document for supported systems.
-
-
-
-
-
-
-
-
-
-
-
-
+- Should not target Linux-based operating systems.
+- Can target macOS or Windows.
+- Please review the solution document for supported systems.

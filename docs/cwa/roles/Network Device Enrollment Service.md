@@ -8,25 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Role used to detect the servers with Network Device Enrollment Service Feature installed.
+This document describes the role used to detect servers with the Network Device Enrollment Service feature installed.
 
 ## Settings
 
 | Detection String                                                                                   | Comparator | Result   | Applicable OS |
 |----------------------------------------------------------------------------------------------------|------------|----------|---------------|
-| \{@%powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Device-Enrollment' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains    | Installed | Windows       |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Device-Enrollment' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"%}` | Contains    | Installed | Windows       |

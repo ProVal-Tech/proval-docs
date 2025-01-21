@@ -8,11 +8,12 @@ tags: ['hyper-v', 'logging', 'virtualization', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script allows for the shut down or start up of VMs on the target Hyper-V host based on previous runs of the script.
+This script allows for the shutdown or startup of VMs on the target Hyper-V host based on previous runs of the script.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -38,17 +39,5 @@ Please see [Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870) for 
 
 ## Output
 
-- Outputs logs to the script log
+- Outputs logs to the script log.
 - Outputs logs to log/data files in the script directory.
-
-
-
-
-
-
-
-
-
-
-
-

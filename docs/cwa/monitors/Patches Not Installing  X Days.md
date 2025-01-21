@@ -8,29 +8,30 @@ tags: ['report', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The Purpose of this monitor set is to detect the machines that do have not any Cumulative/Security Patches installed in the past X days. It will not detect any EOL machine, and will only detect the machines where [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script is executed even once over the past 7 days.
+The purpose of this monitor set is to detect machines that do not have any cumulative or security patches installed in the past X days. It will not detect any end-of-life (EOL) machines and will only identify machines where the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script has been executed at least once over the past 7 days.
 
-Suggested Alert Template: ~Custom - Ticket Creation Computer
+### Suggested Alert Template: ~Custom - Ticket Creation Computer
 
-Alerting Tab:
+**Alerting Tab:**
 
-Subject: LT - Patches Not Installing > X Days on %computername%
+- **Subject:** LT - Patches Not Installing > X Days on %computername%
 
-Alert on Failure: The machine %computername% at %clientname%/%locationname% is currently reporting that it has not installed a recent Cumulative Update for over X days. Please look into why this machine is not getting patches. The last Cumulative Update for this machine was installed on %Result%.
+**Alert on Failure:** The machine %computername% at %clientname%/%locationname% is currently reporting that it has not installed a recent cumulative update for over X days. Please investigate why this machine is not receiving patches. The last cumulative update for this machine was installed on %Result%.
 
-%FieldName%
+**%FieldName%**
 
-Alert on Success: The machine %Computername% is no longer reporting it has failed the monitor %Name%. Closing ticket.
+**Alert on Success:** The machine %Computername% is no longer reporting that it has failed the monitor %Name%. Closing ticket.
 
-NOTES:
-1. Adjustment to the sql must be made at AgentID = 'TYPE YOUR MONITOR ID HERE' to make this functional.
+### NOTES:
+1. Adjustments to the SQL must be made at `AgentID = 'TYPE YOUR MONITOR ID HERE'` to make this functional.
    ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_1.png)
-2. To overwrite the default threshold of 45 days, following changes should be made:
-   1. 45 in the INTERVAL 45 DAY statement at the bottom of the additional condition of the monitor set should be changed to the preferred number/day.
+2. To overwrite the default threshold of 45 days, the following changes should be made:
+   1. Change 45 in the `INTERVAL 45 DAY` statement at the bottom of the additional condition of the monitor set to the preferred number of days.
       ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_2.png)
-   2. In the Alerting tab, replace 45 with the desired threshold/day.
+   2. In the Alerting tab, replace 45 with the desired threshold in days.
       ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_3.png)
 
 ## Dependencies
@@ -41,7 +42,7 @@ NOTES:
 
 ## Target
 
-SQL is limiting it to the machines with Managed patching policy only.
+SQL is limiting it to machines with a managed patching policy only.
 
 ## Reference Table
 
@@ -58,15 +59,3 @@ SQL is limiting it to the machines with Managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
-
-
-
-
-
-
-
-
-
-
-
-

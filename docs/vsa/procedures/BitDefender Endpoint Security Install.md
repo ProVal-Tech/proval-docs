@@ -8,9 +8,10 @@ tags: ['installation', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs BitDefender Endpoint Security Tools on the endpoint.
+This document outlines the installation of BitDefender Endpoint Security Tools on endpoints.
 
 ## Example Agent Procedure Log
 
@@ -32,26 +33,15 @@ Installs BitDefender Endpoint Security Tools on the endpoint.
 ## Dependencies
 
 - Managed Variable: BD_PACKAGE_ID
-- Vendor Tool: [https://download.bitdefender.com/SMB/Hydra/release/bst_win/downloaderWrapper/BEST_downloaderWrapper.msi](https://download.bitdefender.com/SMB/Hydra/release/bst_win/downloaderWrapper/BEST_downloaderWrapper.msi)
+- Vendor Tool: [Download BitDefender Installer](https://download.bitdefender.com/SMB/Hydra/release/bst_win/downloaderWrapper/BEST_downloaderWrapper.msi)
 
 ## Process
 
-1. Downloads Vendor BD Install wrapper
-2. Runs the installer using /qn, package ID from managed Variable
-3. Pauses the procedure while the installer runs
-4. Checks if the files and the service were properly installed
+1. Download the vendor's BD Install wrapper.
+2. Run the installer using `/qn` and the package ID from the managed variable.
+3. Pause the procedure while the installer runs.
+4. Check if the files and the service were properly installed.
 
 ## Output
 
-Agent procedure Log
-
-
-
-
-
-
-
-
-
-
-
+Agent procedure log.

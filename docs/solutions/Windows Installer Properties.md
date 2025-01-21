@@ -8,15 +8,16 @@ tags: ['database', 'report', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution provided is designed to display a specific set of information about the applications installed on a machine. This solution is intended to help users quickly and easily identify what software is installed on their computer. The information that is displayed includes the name of the application, the version number, and the date the application was installed. This information is presented in a clear and easy-to-read format, making it simple for users to quickly identify the software that is installed on their machine.
+This solution is designed to display a specific set of information about the applications installed on a machine. It aims to help users quickly and easily identify what software is installed on their computer. The displayed information includes the name of the application, the version number, and the date the application was installed. This information is presented in a clear and easy-to-read format, making it simple for users to identify the software installed on their machine.
 
 The "CWM - Automate - Script - Windows Installer Properties [DV]" script is a tool that gathers a set of properties for the applications installed on a machine. The gathered information includes properties such as the product name, version, installation date, and more. The script is designed to collect information only for the applications listed in the `software` table.
 
-The gathered information is stored in an SQL custom table named "pvl_win_installer_properties". Users can review the gathered information in the "Windows Installer Properties [Script]" dataview, which presents the information in a tabular format.
+The gathered information is stored in a custom SQL table named "pvl_win_installer_properties." Users can review the gathered information in the "Windows Installer Properties [Script]" dataview, which presents the information in a tabular format.
 
-It is important to note that the information presented in the dataview is directly fetched from the machine. If there is no data available for a particular property, the corresponding cell in the dataview will be blank. This is an indication that the data is not present on the machine itself.
+It is important to note that the information presented in the dataview is directly fetched from the machine. If there is no data available for a particular property, the corresponding cell in the dataview will be blank. This indicates that the data is not present on the machine itself.
 
 Overall, these tools provide a comprehensive solution for managing and monitoring the applications installed on a machine. Users can easily access the gathered information in the "Windows Installer Properties [Script]" dataview, and the data is conveniently stored in the "pvl_win_installer_properties" table for future reference. The inclusion of the note regarding blank cells ensures that users understand the limitations of the data presented and can interpret it correctly.
 
@@ -32,18 +33,6 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 
 - Import the script [CWM - Automate - Script - Windows Installer Properties [DV]](<../cwa/scripts/Windows Installer Properties DV.md>).
 - Import the dataview [CWM - Automate - Dataview - Windows Installer Properties [Script]](<../cwa/dataviews/Windows Installer Properties Script.md>).
-- Debug the script against an online windows machine to create the table.
+- Debug the script against an online Windows machine to create the table.
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
-
-
-
-
-
-
-
-
-
-
-
-

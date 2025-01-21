@@ -8,21 +8,22 @@ tags: ['chrome', 'edge', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It is an Automate implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>) to enforce a home page for the Chromium Browsers. Supported Browsers are `Google Chrome`, and `Microsoft Edge`. 
+This document presents an automated implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>) to enforce a homepage for Chromium-based browsers. The supported browsers are `Google Chrome` and `Microsoft Edge`.
 
 The `Browser` parameter can be used to specify the browser's name.
 
 ## Sample Run
 
-- Setting [https://www.provaltech.com](https://www.provaltech.com) to Google Chrome's homepage:  
+- Setting [https://www.provaltech.com](https://www.provaltech.com) as Google Chrome's homepage:  
   ![Image](../../../static/img/EPM---Software-Configuration---Chromium-Browsers---Homepage---Set/image_1.png)
 
-- Setting [https://www.provaltech.com](https://www.provaltech.com) to Google Chrome's homepage:  
+- Setting [https://www.provaltech.com](https://www.provaltech.com) as Microsoft Edge's homepage:  
   ![Image](../../../static/img/EPM---Software-Configuration---Chromium-Browsers---Homepage---Set/image_2.png)
 
-- Setting [https://www.provaltech.com](https://www.provaltech.com) to both Microsoft Edge's and Google Chrome's homepage:  
+- Setting [https://www.provaltech.com](https://www.provaltech.com) as the homepage for both Microsoft Edge and Google Chrome:  
   ![Image](../../../static/img/EPM---Software-Configuration---Chromium-Browsers---Homepage---Set/image_3.png)
 
 ## Dependencies
@@ -33,23 +34,13 @@ The `Browser` parameter can be used to specify the browser's name.
 
 | Name                     | Example                                               | Required | Description                                                                                                      |
 |--------------------------|-------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------|
-| Browser                  | Chrome                                                | False    | The 'Browser' parameter specifies the browser for setting the homepage. Only 'Chrome' and 'Edge' are acceptable values. If this parameter is left blank, the script will attempt to set the homepage for both Chrome and Edge browsers. |
-| Homepage                 | [https://www.provaltech.com/](https://www.provaltech.com/) | True     | String value of the homepage to set in the browser.                                                             |
+| Browser                  | Chrome                                                | False    | The 'Browser' parameter specifies the browser for setting the homepage. Acceptable values are 'Chrome' and 'Edge'. If this parameter is left blank, the script will attempt to set the homepage for both browsers. |
+| Homepage                 | [https://www.provaltech.com/](https://www.provaltech.com/) | True     | The string value of the homepage to set in the browser.                                                         |
 | EnforceOnNewTab         | 1                                                     | False    | Set to 1 to force the homepage on each new tab instead of the new tab page.                                    |
-| EnforceHomepageStartup   | 1                                                     | False    | Set to 1 to force the homepage to be the only open tab at startup of the browser.                               |
+| EnforceHomepageStartup   | 1                                                     | False    | Set to 1 to force the homepage to be the only open tab at the startup of the browser.                           |
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
 
 

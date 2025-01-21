@@ -8,6 +8,7 @@ tags: ['performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script obtains the current agent PowerShell version. The script is supported in all versions of PowerShell to collect its version.
@@ -34,21 +35,10 @@ This script obtains the current agent PowerShell version. The script is supporte
 
 ## Process
 
-This script runs a PowerShell query that is supported by all Windows OS and collects it to the Script State which replicates to the dataview. It also stores the script ran date about when the PowerShell version was last checked.
+This script runs a PowerShell query that is supported by all Windows operating systems and collects the data to the Script State, which replicates to the dataview. It also stores the date when the PowerShell version was last checked.
 
 ## Output
 
 - Script log
 - Script state
 - Dataview
-
-
-
-
-
-
-
-
-
-
-

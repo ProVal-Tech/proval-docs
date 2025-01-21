@@ -8,13 +8,14 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](<../dataviews/Scripts - MemberOf.md>) dataview.
+Serves as the base table for the [CWM - Automate - Dataview - Scripts - MemberOf](<../dataviews/Scripts - MemberOf.md>) dataview.
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)*](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>)
+[CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>)
 
 ## Tables
 
@@ -22,22 +23,10 @@ Serves as base table for the [CWM - Automate - Dataview - Scripts - MemberOf](<.
 
 | Column               | Description                                                                                                       |
 |----------------------|-------------------------------------------------------------------------------------------------------------------|
-| Scriptid             | Id of the script.                                                                                                 |
-| Script Name          | Name of the Script.                                                                                               |
-| Object Name          | Name of the Object.                                                                                               |
-| Object Type          | Type of the Object (group/Monitor/Alert Template/Individual Computer/Maintenance).                               |
-| Object description    | Full Path of the Group/Whether the alert template is applied on a computer-level remote monitor group remote monitor or an internal monitor. |
-| Limited to          | Whether the scheduled group script/remote monitor is limited to a search/internal monitor is limited to any group. |
-| Affected Agents      | Number of computers in the group/Number of agents detected in the search if limited to search.                   |
-
-
-
-
-
-
-
-
-
-
-
-
+| Scriptid             | ID of the script.                                                                                                 |
+| Script Name          | Name of the script.                                                                                               |
+| Object Name          | Name of the object.                                                                                               |
+| Object Type          | Type of the object (group/monitor/alert template/individual computer/maintenance).                               |
+| Object Description    | Full path of the group, indicating whether the alert template is applied on a computer-level remote monitor group or an internal monitor. |
+| Limited To          | Indicates whether the scheduled group script/remote monitor is limited to a search/internal monitor or any group. |
+| Affected Agents      | Number of computers in the group/number of agents detected in the search if limited to search.                   |

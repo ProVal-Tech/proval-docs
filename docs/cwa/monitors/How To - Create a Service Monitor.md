@@ -8,15 +8,16 @@ tags: ['alerting', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## How To - Individual Monitor (Non - Group Based)
 
-1. Navigate to the computer that you would like to create a monitor for --> Right-Click on the Monitor icon and select Services  
+1. Navigate to the computer for which you would like to create a monitor. Right-click on the Monitor icon and select Services.  
    ![Image](../../../static/img/How-To---Create-a-Service-Monitor/image_1.png)
-   
-2. Right-Click on the service you would like to monitor and select 'Create Monitor'  
+
+2. Right-click on the service you would like to monitor and select 'Create Monitor'.  
    ![Image](../../../static/img/How-To---Create-a-Service-Monitor/image_2.png) ![Image](../../../static/img/How-To---Create-a-Service-Monitor/image_3.png)
-   
-3. Navigate to the Alerting Tab of that monitor we just created and select the alert template 'Custom - Autofix - Restart Service' (Import if it does not exist)
+
+3. Navigate to the Alerting Tab of the monitor you just created and select the alert template 'Custom - Autofix - Restart Service' (Import if it does not exist).
 
 ## Details
 
@@ -24,7 +25,7 @@ unlisted: false
 **Suggested Alert Style**: Once, Twice, etc.  
 **Suggested Alert Template**: \<Name of the Alert Template\>  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------|------------|----------|--------|
@@ -62,15 +63,3 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**  
 
 **Body**  
-
-
-
-
-
-
-
-
-
-
-
-

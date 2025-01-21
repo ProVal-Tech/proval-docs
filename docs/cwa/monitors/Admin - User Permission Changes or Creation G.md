@@ -8,6 +8,7 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 A brief summary of what this monitor is used for and any important notes about how to run it.
@@ -26,9 +27,9 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 The suggested target for the monitor. This will be partially generalized as group names can vary between Automate systems. Examples:
 
 - Global - Should be run without explicitly defined targets.
-- Workstations - Should be run on non-servers
-- Servers - Should be run on servers
-- Windows Machines - Should be run on all Windows machines
+- Workstations - Should be run on non-servers.
+- Servers - Should be run on servers.
+- Windows Machines - Should be run on all Windows machines.
 
 There can also be composite definitions. Examples:
 
@@ -44,15 +45,3 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**
 
 **Body**
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 There is one device group related to the Update Orchestrator solution. Please see the guide below to create a device group.
@@ -19,11 +20,11 @@ There is one device group related to the Update Orchestrator solution. Please se
 
 ## Create Device Group
 
-There is one device group for this solution. To create device groups, please navigate to Devices > Device Groups.
+There is one device group for this solution. To create device groups, please navigate to **Devices > Device Groups**.
 
-**![Image](../../../static/img/Update-Orchestrator/image_1.png)**
+![Image](../../../static/img/Update-Orchestrator/image_1.png)
 
-Select Add > Dynamic Group.
+Select **Add > Dynamic Group**.
 
 ![Image](../../../static/img/Update-Orchestrator/image_2.png)
 
@@ -33,27 +34,16 @@ Select Add > Dynamic Group.
 
 ![Image](../../../static/img/Update-Orchestrator/image_3.png)
 
-Description: Machines in this group will get the Update Orchestrator solution.
+**Description:** Machines in this group will get the Update Orchestrator solution.
 
-Criteria:
+**Criteria:**
 
 ![Image](../../../static/img/Update-Orchestrator/image_4.png)
 
-When adding criteria, please search for the "OS Type".
+When adding criteria, please search for the **OS Type**.
 
-Contains any of: "Windows"
+**Contains any of:** "Windows"
 
-AND
+**AND**
 
-Site > Contains any of > "Select the sites you want this to target".
-
-
-
-
-
-
-
-
-
-
-
+**Site > Contains any of >** "Select the sites you want this to target."

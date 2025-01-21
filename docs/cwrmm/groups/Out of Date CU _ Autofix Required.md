@@ -8,9 +8,10 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The group will detect the computers where the Latest Cumulative Update Custom Field contains failed, indicating that the machine has not installed a Cumulative Update in the past 75 days.
+The group will detect the computers where the Latest Cumulative Update Custom Field contains "failed," indicating that the machine has not installed a Cumulative Update in the past 75 days.
 
 ## Dependencies
 
@@ -33,7 +34,7 @@ This page will appear after clicking on the `Dynamic Group` button:
 ![Step 2 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_3.png)
 
 ### 3.
-Set the group name to `Out of Date CU _ Autofix Required`.  
+Set the group name to `Out of Date CU - Autofix Required`.  
 Description: `The group will detect the computers where the Latest Cumulative Update Custom Field contains failed, indicating that the machine has not installed a Cumulative Update in the past 75 days.`  
 ![Step 3 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_4.png)
 
@@ -68,7 +69,7 @@ Click the `+ Add Criteria` button.
 ![Step 7 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_14.png)  
 A new search box will appear.  
 ![Step 7 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_15.png)  
-Search and select the `Out_of_Date_CU_Autofix` custom field from the search box. Remember there are three different `Out_of_Date_CU_Autofix` custom fields and we are going to use all three of these one after another in the conditions.  
+Search and select the `Out_of_Date_CU_Autofix` custom field from the search box. Remember, there are three different `Out_of_Date_CU_Autofix` custom fields, and we are going to use all three of these one after another in the conditions.  
 We are selecting the `company` level custom field in this step.  
 ![Step 7 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_16.png)  
 Change the comparator to `Does Not Contain any of`.  
@@ -110,14 +111,14 @@ A new search box will appear.
 ![Step 10 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_24.png)  
 Search and select the `OS` criteria.  
 ![Step 10 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_27.png)  
-Leave the comparator to `Contain any of`.  
+Leave the comparator set to `Contain any of`.  
 ![Step 10 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_28.png)  
-Select `Microsoft Windows` `10` and `11` in the comparison field.  
+Select `Microsoft Windows`, `10`, and `11` in the comparison field.  
 ![Step 10 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_29.png)  
 **Condition:** `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11`
 
 ### 11.
-**From this step onward we will work in an Outer Block.**  
+**From this step onward, we will work in an Outer Block.**  
 Click the `Add Outer Block` button to create a new block.  
 ![Step 11 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_30.png)  
 A new block will appear.  
@@ -198,9 +199,9 @@ A new search box will appear.
 ![Step 17 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_24.png)  
 Search and select the `OS` criteria.  
 ![Step 17 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_27.png)  
-Leave the comparator to `Contain any of`.  
+Leave the comparator set to `Contain any of`.  
 ![Step 17 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_28.png)  
-Select `Microsoft Windows` `Server` `2016` `2019` and `2022` in the comparison field.  
+Select `Microsoft Windows`, `Server`, `2016`, `2019`, and `2022` in the comparison field.  
 ![Step 17 Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_44.png)  
 **Condition:** `OS` `Contains any of` `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`
 
@@ -213,15 +214,3 @@ Click the `Save` button to save/create the group.
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_46.png)
 
 ![Completed Group Image](../../../static/img/Out-of-Date-CU-_-Autofix-Required/image_47.png)
-
-
-
-
-
-
-
-
-
-
-
-

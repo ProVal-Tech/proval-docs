@@ -8,11 +8,12 @@ tags: ['cleanup', 'database', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will remove the current LTCache on the Probe for the target's location.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,33 +21,21 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-- Requires a probe to be setup
+- Requires a probe to be set up.
 
 ## Variables
 
 - `@TargetComputerID@` = %computerid% (The computer you ran the script on)
-- `@Computerid@` = %ProbeID% -> this targets the location probe 
-- `@RemoveLTCachePSOut@` -> the output from the Powershell script
+- `@ComputerID@` = %ProbeID% (This targets the location probe)
+- `@RemoveLTCachePSOut@` (The output from the PowerShell script)
 
 ## Process
 
-1. Sets the target computer to the computer the script ran on
-2. Sets the probe target based on the computer's location
-3. Runs the cleanup on the share
-4. Updates the database to reflect the removal of the cache
+1. Sets the target computer to the computer the script ran on.
+2. Sets the probe target based on the computer's location.
+3. Runs the cleanup on the share.
+4. Updates the database to reflect the removal of the cache.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

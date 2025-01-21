@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles from Windows machines.
+The purpose of this solution is to find and remove any unapproved Wi-Fi profiles from Windows machines.
 
 ## Associated Content
 
@@ -28,8 +29,8 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
 
 | Content                                                                  | Type            | Function                                                                                               |
 |--------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) | Internal Monitor | Detects the machines where approved Wifi profiles are not available.                                   |
-| [Script - Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111356) | Script          | Adds and removes the Wifi profiles.                                                                    |
+| [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) | Internal Monitor | Detects the machines where approved Wi-Fi profiles are not available.                                   |
+| [Script - Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111356) | Script          | Adds and removes the Wi-Fi profiles.                                                                    |
 | △ Custom - Execute Script - Implement Wifi Profile                       | Alert Template   | Executes the script against the machines detected by the [Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) monitor set. |
 
 ## Implementation
@@ -60,15 +61,3 @@ The purpose of the solution is to find and remove any unapproved Wi-Fi Profiles 
      - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
-
-
-
-
-
-
-
-
-
-
-
-

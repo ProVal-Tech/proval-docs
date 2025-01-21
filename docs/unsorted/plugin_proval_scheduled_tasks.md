@@ -8,6 +8,7 @@ tags: ['database', 'report', 'software', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Purpose
 
 The table stores the scheduled task data.
@@ -23,7 +24,7 @@ The table stores the scheduled task data.
 
 | Column                          | Type     | Explanation                                 |
 |---------------------------------|----------|---------------------------------------------|
-| computerid                      | INT      | computerid of the agent                     |
+| computerid                      | INT      | Computer ID of the agent                    |
 | Scheduled Task Name             | VARCHAR  | Scheduled task name on the agent            |
 | Hostname                        | VARCHAR  | Hostname of the agent                       |
 | User Task Run                   | VARCHAR  | Scheduled task for user                     |
@@ -36,21 +37,21 @@ The table stores the scheduled task data.
 | Task Start Time                 | VARCHAR  | Scheduled task start time                   |
 | Task End Date                   | VARCHAR  | Scheduled task end date                     |
 | Task Start Date                 | VARCHAR  | Scheduled task start date                   |
-| Task Scheduled Type             | VARCHAR  | Scheduled task type                          |
-| Task Schedule                   | VARCHAR  | Task scheduled status                        |
-| Task Idle Time                  | VARCHAR  | Task pause time duration                     |
-| Task Days                       | VARCHAR  | Task per days                               |
-| Task Months                     | VARCHAR  | Task per months                             |
-| Task Repeat Every               | VARCHAR  | Task repeat every hour/day etc              |
-| Task Repeat Until Duration      | VARCHAR  | Task repeat end date                        |
-| Task Repeat UntilTime           | VARCHAR  | Task repeat end time                        |
-| Power Management                | VARCHAR  | Power Management status of the task         |
-| Delete Task If Not Rescheduled  | VARCHAR  | Delete task if not rescheduled              |
-| Script Ran Date                 | DATETIME | Script Last Ran Date                        |
+| Task Scheduled Type             | VARCHAR  | Scheduled task type                         |
+| Task Schedule                   | VARCHAR  | Task scheduled status                       |
+| Task Idle Time                  | VARCHAR  | Task pause time duration                    |
+| Task Days                       | VARCHAR  | Task per days                              |
+| Task Months                     | VARCHAR  | Task per months                            |
+| Task Repeat Every               | VARCHAR  | Task repeat every hour/day, etc.           |
+| Task Repeat Until Duration      | VARCHAR  | Task repeat end date                       |
+| Task Repeat Until Time          | VARCHAR  | Task repeat end time                       |
+| Power Management                | VARCHAR  | Power management status of the task        |
+| Delete Task If Not Rescheduled  | VARCHAR  | Delete task if not rescheduled             |
+| Script Ran Date                 | DATETIME | Script last ran date                       |
 
 ## SQL
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   `computerid` INT(11) NOT NULL,
   `HostName` VARCHAR(100) NOT NULL,
@@ -65,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   `ScheduledTaskState` VARCHAR(50) NOT NULL,
   `IdleTime` VARCHAR(50) NOT NULL,
   `PowerManagement` VARCHAR(50) NOT NULL,
-  `DeleteTaskifNotRescheduled` VARCHAR(50) NOT NULL,
+  `DeleteTaskIfNotRescheduled` VARCHAR(50) NOT NULL,
   `Schedule` VARCHAR(50) NOT NULL,
   `StartTime` VARCHAR(20) NOT NULL,
   `ScheduledType` VARCHAR(50) NOT NULL,
@@ -80,17 +81,3 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   CONSTRAINT `plugin_proval_scheduled_tasks_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

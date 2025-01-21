@@ -8,6 +8,7 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 There are three device groups related to the PowerShell version auditing solution. Please see the guide below to create the separate device groups.
@@ -19,12 +20,12 @@ There are three device groups related to the PowerShell version auditing solutio
 
 ## Create Device Groups
 
-There are three device groups for this solution. To create device groups, please navigate to Devices > Device Groups.
+There are three device groups for this solution. To create device groups, please navigate to **Devices > Device Groups**.
 
 ![Image](../../../static/img/PowerShell-Version/image_3.png)  
-Select Add > Dynamic Group  
+Select **Add > Dynamic Group**  
 ![Image](../../../static/img/PowerShell-Version/image_4.png)  
-Please repeat the above steps per device group.
+Please repeat the above steps for each device group.
 
 ---
 
@@ -43,7 +44,7 @@ This group holds all devices that have not had their PowerShell versions audited
 
 ---
 
-### Device Group Name: PowerShell Version \< 5
+### Device Group Name: PowerShell Version < 5
 
 ![Image](../../../static/img/PowerShell-Version/image_7.png)  
 
@@ -70,16 +71,3 @@ When adding criteria, please search for the PowerShell Version custom field.
 - **Condition:** "Success"  
 
 This group holds all devices that are on PowerShell version 5 or above.
-
-
-
-
-
-
-
-
-
-
-
-
-

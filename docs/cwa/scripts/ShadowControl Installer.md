@@ -8,11 +8,12 @@ tags: ['installation', 'networking', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script downloads and installs the ShadowControl client to the target machine and subscribes it to the appropriate SC server.
+This script downloads and installs the ShadowControl client on the target machine and subscribes it to the appropriate SC server.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -26,21 +27,10 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-- Downloads and installs the ShadowControl client to the target machine.
-- Automatically subscribes the installed client to the client's ShadowControl server depending upon the Global value.
+- Downloads and installs the ShadowControl client on the target machine.
+- Automatically subscribes the installed client to the relevant ShadowControl server based on the global value.
 - Deletes the downloaded installer upon completion.
 
 ## Output
 
-Script Log
-
-
-
-
-
-
-
-
-
-
-
+**Script Log**

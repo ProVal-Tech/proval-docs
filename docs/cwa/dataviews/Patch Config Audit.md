@@ -8,9 +8,10 @@ tags: ['report', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays the patch audit data stored in the [pvl_patch_config](<../tables/pvl_patch_config.md>) table.
+This document displays the patch audit data stored in the [pvl_patch_config](<../tables/pvl_patch_config.md>) table.
 
 A red cell in the dataview indicates that the values available on that computer do not match the settings defined by the [Patch Manager - WUA Settings Validation](<../scripts/Patch Manager - WUA Settings Validation.md>) script.
 
@@ -48,7 +49,7 @@ A red cell in the dataview indicates that the values available on that computer 
 | WindowsUpdateDeferQualityUpdatesPeriodInDays | Number of days to defer quality updates. Data is gathered from the registry.  **Path:** `HKLM://SOFTWARE//Policies//Microsoft//Windows//WindowsUpdate`  **Name:** `DeferQualityUpdatesPeriodInDays`  **Possible values:** `0-365(days).`  **Example:** `0` |
 | UpgradeRestricted                  | Indicates whether Windows upgrades or feature updates are restricted from the registry key for Windows 10 and 11.   `0` --> Not restricted  `1` --> Restricted  Data is gathered from the registry.  **Path:** `HKLM://SOFTWARE//Policies//Microsoft//Windows//WindowsUpdate`  **Name:** `DisableOSUpgrade`  **Possible values:** `0 (upgrade not disabled), 1 (upgrade disabled).`  **Example:** `0`  **Name:** `TargetReleaseVersion`  **Possible values:** `0 (Feature update not restricted), 1 (Feature update disabled).`  **Example:** `1`  **Path:** `HKLM://SOFTWARE//Microsoft//Windows//WindowsUpdate`  **Name:** `TargetReleaseVersionInfo`  **Possible values:** `22H2, 23H2, 24H2, etc.`  **Example:** `22H2` |
 | DataCollectionTime                 | Data Collection Time                                                                          |
-| Needs Adjustment                   | If any column mentioned in the Format Control section is colored red.                        |
+| Needs Adjustment                   | Indicates if any column mentioned in the Format Control section is colored red.              |
 
 ## Format Control
 
@@ -70,16 +71,3 @@ A red cell in the dataview indicates that the values available on that computer 
 | WindowsUpdateDeferQualityUpdatesPeriodInDays | Not Equal | 0 | Red   |
 | UpgradeDisabled                    | Not Equal | 0         | Red   |
 | Needs Adjustment                   | Equals   | 1         | Red   |
-
-
-
-
-
-
-
-
-
-
-
-
-

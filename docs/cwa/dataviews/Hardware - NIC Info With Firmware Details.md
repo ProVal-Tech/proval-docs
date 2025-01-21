@@ -8,30 +8,19 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview will show information about existing network adapters.
+This Dataview shows information about existing network adapters.
 
 ## Columns
 
-| Column          | Description                             |
-|-----------------|-----------------------------------------|
-| Client Name     | Display the Client Name.                |
-| Location Name   | Display the Location Name.              |
-| Computer Name   | Display the Computer Name.              |
-| NIC Type        | Display the Network adapter type.       |
-| NIC Name        | Display the Network adapter name.       |
-| Driver Name     | Display the Network adapter driver name.|
-| Driver Version  | Display the Network adapter driver version.|
-
-
-
-
-
-
-
-
-
-
-
-
+| Column          | Description                                      |
+|-----------------|--------------------------------------------------|
+| Client Name     | Displays the Client Name.                        |
+| Location Name   | Displays the Location Name.                      |
+| Computer Name   | Displays the Computer Name.                      |
+| NIC Type        | Displays the Network adapter type.               |
+| NIC Name        | Displays the Network adapter name.               |
+| Driver Name     | Displays the Network adapter driver name.        |
+| Driver Version  | Displays the Network adapter driver version.     |

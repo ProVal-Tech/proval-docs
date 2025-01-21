@@ -8,9 +8,10 @@ tags: ['deployment', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Set this custom flag to true to exclude an endpoint from sentinelone deployment.
+Set this custom flag to true to exclude an endpoint from SentinelOne deployment.
 
 ## Dependencies
 
@@ -22,17 +23,6 @@ Set this custom flag to true to exclude an endpoint from sentinelone deployment.
 |-----------------------------------------|---------|------|---------------|------------------------------------------------------------------|----------|
 | SentinelOne Deployment Exclusion        | Endpoint| Flag | No            | Set this flag to true to exclude from SentinelOne deployment.    | Yes      |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Flag---SentinelOne-Deployment-Exclusion/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Flag---SentinelOne-Deployment-Exclusion/image_1.png)

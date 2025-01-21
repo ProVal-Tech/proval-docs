@@ -8,6 +8,7 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will sync the machine's time with us.pool.ntp.org.
@@ -27,14 +28,14 @@ This monitor will sync the machine's time with us.pool.ntp.org.
    ![Image](../../../static/img/Time-Sync-Compliance/image_3.png)
 
 4. **Name:** Time Sync Compliance  
-   **Description:** This monitor will sync machines time with us.pool.ntp.org.  
+   **Description:** This monitor will sync machine time with us.pool.ntp.org.  
    **Type:** Script  
    **Family:** Desktop Operating System  
    **Severity:** Others  
 
    ![Image](../../../static/img/Time-Sync-Compliance/image_4.png)
 
-5. The `Conditions` tab will start looking like this: 
+5. The `Conditions` tab will start looking like this:
 
    ![Image](../../../static/img/Time-Sync-Compliance/image_5.png)
 
@@ -48,7 +49,7 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 
 8. Paste this PowerShell script in the `Script` box.
 
-   ```
+   ```powershell
    $S = 'W32Time';
    $peerList = 'us.pool.ntp.org';
    $syncOutput = '';
@@ -94,14 +95,3 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 12. Click the `Save` button to save the monitor set.
 
     ![Image](../../../static/img/Time-Sync-Compliance/image_13.png)
-
-
-
-
-
-
-
-
-
-
-

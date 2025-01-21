@@ -8,6 +8,7 @@ tags: ['cpu', 'memory', 'storage', 'update', 'virtualization']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview shows useful information about ESXi hosts.
@@ -20,35 +21,22 @@ This dataview shows useful information about ESXi hosts.
 
 | Column                          | Description                                                       |
 |---------------------------------|-------------------------------------------------------------------|
-| Client Name                     | Name of the Client.                                              |
-| Location Name                   | Name of the Location.                                          |
-| Device Name                     | Display the Host device name.                                   |
-| FQDN                            | IP Address/FQDN of the Esxi Host.                              |
-| Product Name                    | Display the device's product name.                             |
-| Product Full Version            | Display the device product version.                             |
-| Vendor                          | Display the device vendor name.                                 |
-| Model                           | Display the device model name.                                  |
-| CPU                             | Display the device CPU information.                             |
-| Number Of Cores                 | Display the number of cores on the device.                     |
-| Overall Cpu Usage (Ghz)        | Display the device CPU Usage information in Ghz.               |
-| Total Memory (GB)              | Display the Device Total Memory.                                |
-| Overall Memory Usage (GB)      | Display the device's current memory in use.                    |
-| Storage Name                    | Display the Name of the Disks attached to the Host.            |
-| Disk Total Space (GB)          | Display the Total Storage Space Used on the Host.              |
-| Disk Free Space (GB)           | Display the Total Storage Space available on the Host.         |
-| IsSSD                           | Display's whether the attached Storage Device is SSD or not.   |
-| StorageLastUpdate               | Display the last time the Storage information of the host is updated in Automate. |
-| LastUpdate                      | Display the last time the Host's information was updated in Automate. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Client Name                     | Name of the client.                                              |
+| Location Name                   | Name of the location.                                           |
+| Device Name                     | Displays the host device name.                                   |
+| FQDN                            | IP address/FQDN of the ESXi host.                              |
+| Product Name                    | Displays the device's product name.                             |
+| Product Full Version            | Displays the device product version.                             |
+| Vendor                          | Displays the device vendor name.                                 |
+| Model                           | Displays the device model name.                                  |
+| CPU                             | Displays the device CPU information.                             |
+| Number of Cores                 | Displays the number of cores on the device.                     |
+| Overall CPU Usage (GHz)        | Displays the device CPU usage information in GHz.               |
+| Total Memory (GB)              | Displays the device's total memory.                              |
+| Overall Memory Usage (GB)      | Displays the device's current memory in use.                    |
+| Storage Name                    | Displays the names of the disks attached to the host.           |
+| Disk Total Space (GB)          | Displays the total storage space used on the host.              |
+| Disk Free Space (GB)           | Displays the total storage space available on the host.         |
+| Is SSD                          | Indicates whether the attached storage device is SSD or not.    |
+| Storage Last Update             | Displays the last time the storage information of the host was updated in Automate. |
+| Last Update                     | Displays the last time the host's information was updated in Automate. |

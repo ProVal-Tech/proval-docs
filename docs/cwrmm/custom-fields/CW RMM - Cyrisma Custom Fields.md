@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The below custom fields are used in the Cyrisma deployment and audit.
+The custom fields listed below are used in the Cyrisma deployment and audit.
 
 ## Dependencies
 
@@ -20,18 +21,6 @@ The below custom fields are used in the Cyrisma deployment and audit.
 
 | Field Name          | Type of Field (Machine or Organization) | Description                                                                 |
 |---------------------|-----------------------------------------|-----------------------------------------------------------------------------|
-| Cryisma_Status      | Endpoint                                | It stores the [CW RMM - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) task execution status |
-| CryismaAgnent_Key   | Site                                    | This stores the site key for the Cyrisma Deployment                        |
-| CryismaAgent_URL    | Site                                    | This stores the unique site URL for the Cyrisma Deployment                 |
-
-
-
-
-
-
-
-
-
-
-
-
+| Cyrisma_Status      | Endpoint                                | It stores the [CW RMM - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) task execution status. |
+| CyrismaAgent_Key    | Site                                    | This stores the site key for the Cyrisma Deployment.                       |
+| CyrismaAgent_URL    | Site                                    | This stores the unique site URL for the Cyrisma Deployment.                |

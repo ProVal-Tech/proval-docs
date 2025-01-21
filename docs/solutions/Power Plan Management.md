@@ -8,6 +8,7 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This solution automates the deployment of a standard power plan to Windows machines. Additionally, it can perform a comprehensive audit of power plans on each machine. However, auditing will generate a separate entry for each individual setting within every detected power plan. For example, a machine with five power plans could produce around 120 entries in the dataview.
@@ -30,8 +31,8 @@ This solution automates the deployment of a standard power plan to Windows machi
 | Content                                                                 | Type   | Function                                        |
 |-------------------------------------------------------------------------|--------|------------------------------------------------|
 | [Script - Power Plan - Audit [DV]](<../cwa/scripts/Power Plan - Audit DV.md>) | Script | Gather the information on available power plan(s). |
-| [Script - Power Plan - Set/Create](<../cwa/scripts/Power Plan - SetCreate.md>) | Script | Create or Modify a power plan.                  |
-| [Script - Power Plan - Enable](<../cwa/scripts/Power Plan - Enable.md>) | Script | Enable or Activate a power plan.                |
+| [Script - Power Plan - Set/Create](<../cwa/scripts/Power Plan - SetCreate.md>) | Script | Create or modify a power plan.                  |
+| [Script - Power Plan - Enable](<../cwa/scripts/Power Plan - Enable.md>) | Script | Enable or activate a power plan.                |
 | [Script - Power Plan - Remove](<../cwa/scripts/Power Plan - Remove.md>) | Script | Remove a power plan.                            |
 
 ### Custom Table
@@ -78,20 +79,20 @@ This solution automates the deployment of a standard power plan to Windows machi
    ![Image](../../static/img/Power-Plan-Management/image_2.png)
 
 4. Configure the solution as follows:  
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [EPM - Windows Configuration - Internal Monitor - PowerPlan Automation](<../cwa/monitors/PowerPlan Automation.md>)
        - Configure with the alert template: `△ Custom - PowerPlan Automation`
-       - **Validate there are no results reporting in the monitor** and Right-click and Run Now to start the monitor.
+       - **Validate that there are no results reporting in the monitor** and right-click and run now to start the monitor.
 
 #### Standardize
 
 1. **Follow these steps only if instructed to do so**: More details are provided in the **`Automation`** section of the [Power Plan - Set/Create](<../cwa/scripts/Power Plan - SetCreate.md>) script's document.  
-   You can start by downloading the `ProVal_-_High_Performance.csv` found on the linked document above and placing it on the LTShare under the folder `//LTShare//Transfer//PowerPlan`.  
+   You can start by downloading the `ProVal_-_High_Performance.csv` found in the linked document above and placing it on the LTShare under the folder `//LTShare//Transfer//PowerPlan`.  
    ![Image](../../static/img/Power-Plan-Management/image_3.png)
 
-2. Next navigate to the System Dashboard → Config → Additional Field Defaults → Clients → PowerPlan
+2. Next, navigate to System Dashboard → Config → Additional Field Defaults → Clients → PowerPlan
    - Fill out the PowerPlan Configuration File to show 'ProVal_-_High_Performance'
-   - Enter the PowerPlan Name specified by the consultant (**If it has not been specified, stop and reach out to them and ask**) - This is the display name that the power plan will show up as within Windows and what the client will see. This will likely be `\<Client Abbreviation> Standard`. Like 'ProVal Standard' for example.
+   - Enter the PowerPlan Name specified by the consultant (**If it has not been specified, stop and reach out to them and ask**) - This is the display name that the power plan will show up as within Windows and what the client will see. This will likely be `\\<Client Abbreviation> Standard`. Like 'ProVal Standard' for example.
    - **IMPORTANT** **Do NOT fill out the PowerPlan Automation EDF**. That will need to be filled out by the partner on a per-client basis.  
    ![Image](../../static/img/Power-Plan-Management/image_4.png)
 
@@ -114,23 +115,11 @@ This solution automates the deployment of a standard power plan to Windows machi
    - [Script - MySQL - Permission - Set Custom Table Permissions](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>)
 
 4. Configure the solution as follows:  
-   - Navigate to Automation → Monitors within the CWA Control Center and setup the following:
+   - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - Execute Script - Power Plan - Audit](<../cwa/monitors/Execute Script - Power Plan - Audit.md>)
        - Configure with the alert template: `△ Custom - Execute Script - Power Plan - Audit`
-       - Right-click and Run Now to start the monitor.
+       - Right-click and run now to start the monitor.
 
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,13 +8,14 @@ tags: ['active-directory', 'database', 'report', 'setup']
 draft: true
 unlisted: false
 ---
+
 ## Purpose
 
-Lists the AD Users department information of the Domain servers.
+This document lists the Active Directory (AD) users' department information from the Domain servers.
 
 ## Dependencies
 
-@Computer Department Auditing -- Script
+- Computer Department Auditing -- Script
 
 ## Table
 
@@ -22,8 +23,8 @@ Lists the AD Users department information of the Domain servers.
 
 | Column      | Type    | Explanation                                   |
 |-------------|---------|-----------------------------------------------|
-| computerid  | INT     | The AD Server computer id                     |
-| clientid    | INT     | The client id of the AD Server                |
+| computerid  | INT     | The AD Server computer ID                     |
+| clientid    | INT     | The client ID of the AD Server                |
 | locationid  | INT     | The location where the AD server is located.  |
 | username     | VARCHAR | The username of the audited user.             |
 | department   | VARCHAR | The department of the audited user.           |
@@ -32,8 +33,8 @@ Lists the AD Users department information of the Domain servers.
 
 Put the SQL to create the custom tables here:
 
-```
-CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_computer_department` (  
+```sql
+CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_computer_department` (
   `computerid` INT(11) NOT NULL,
   `clientid` INT(11) NOT NULL,
   `locationid` INT(11) NOT NULL,
@@ -43,16 +44,3 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_computer_department` (
   CONSTRAINT `plugin_proval_computer_department_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`computerid`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['database', 'installation', 'security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Installs and populates a table in a MySQL with a list of potential Log4Shell affected software. On-prem partners must enter a MySQL username and password. Hosted partners will need to set the Hosted param to 1. Hosted partners may not have the most up to date data compared to on-prem.
+This document installs and populates a table in MySQL with a list of potential Log4Shell affected software. On-prem partners must enter a MySQL username and password. Hosted partners will need to set the Hosted parameter to 1. Hosted partners may not have the most up-to-date data compared to on-prem.
 
 ## Sample Run
 
@@ -41,15 +42,3 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell
 - Local file on computer
 - Dataview
 - Custom Table
-
-
-
-
-
-
-
-
-
-
-
-

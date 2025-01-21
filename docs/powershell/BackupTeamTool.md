@@ -10,10 +10,10 @@ unlisted: false
 ---
 
 ## Description
-The script provides various functions for performing actions such as running a speed test, restarting services, and downloading files to help Backup Team in their day-to-day tasks.
+The script provides various functions for performing actions such as running a speed test, restarting services, and downloading files to help the Backup Team in their day-to-day tasks.
 
 ## Requirements
-Run as administrator
+- Run as administrator
 
 ## Usage
 1. The script begins by setting up the environment, including updating the NuGet package provider, setting the PowerShell Gallery as a trusted repository, and ensuring the Strapper module is installed and up to date.
@@ -37,30 +37,18 @@ Run as administrator
 
 By organizing the script into functions and menus, the content operates in a modular and interactive manner. Users can select specific actions from the menu, which triggers the corresponding functions to perform the desired tasks. The script relies on external resources and modules to download files, extract archives, and interact with services. Logging is used to provide feedback and record important information or errors during the execution process.
 
-
-
 ```powershell
 .\BackupTeamTool.ps1
 ```
-    Prompts the user to select an action to perform from a menu.
+Prompts the user to select an action to perform from a menu.
 
-    Enter the choice of action to perform:
-    1. SpeedTest
-    2. Change Default Download Path (Default Path: C:\WINDOWS\Temp)
-    3. StorageCraft
-    4. Veeam
-    5. Exit
-
+Enter the choice of action to perform:
+1. SpeedTest
+2. Change Default Download Path (Default Path: C:\WINDOWS\Temp)
+3. StorageCraft
+4. Veeam
+5. Exit
 
 ## Output
-    BackupTeamTool-log.txt
-    BackupTeamTool-Error.txt
-
-
-
-
-
-
-
-
-
+- `BackupTeamTool-log.txt`
+- `BackupTeamTool-Error.txt`

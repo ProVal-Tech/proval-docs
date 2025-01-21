@@ -8,6 +8,7 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This solution provides a way to compare ConnectWise Automate online devices with ConnectWise Control online devices to determine if repair actions are needed for either platform.
@@ -16,18 +17,6 @@ This solution provides a way to compare ConnectWise Automate online devices with
 
 | Content                                                                                       | Type          | Function                                                  |
 |-----------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------|
-| [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](<../cwa/scripts/Get - CW-ControlAPI - Online Status.md>) | Script        | Queries ConnectWise Control API to find all agents online status |
+| [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](<../cwa/scripts/Get - CW-ControlAPI - Online Status.md>) | Script        | Queries ConnectWise Control API to find all agents' online status |
 | [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](<../cwa/tables/plugin_proval_control_session_status.md>) | Custom Table  | Holds values from Get - CW-Control - Online Status        |
-| [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](<../cwa/dataviews/Agent online status check CWC to CWA.md>) | Dataview      | Displays the data from the custom table compared to state in automate. |
-
-
-
-
-
-
-
-
-
-
-
-
+| [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](<../cwa/dataviews/Agent online status check CWC to CWA.md>) | Dataview      | Displays the data from the custom table compared to the state in Automate. |

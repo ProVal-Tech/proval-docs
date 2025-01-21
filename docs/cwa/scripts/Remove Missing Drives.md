@@ -8,11 +8,12 @@ tags: ['cleanup', 'database', 'performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes drives that are still listed on machines, but no longer detected on them.
+This script removes drives that are still listed on machines but are no longer detected.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,16 +21,4 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- The script runs SQL query against the database to delete the drives from the machines that are still listed but no longer detected on them.
-
-
-
-
-
-
-
-
-
-
-
-
+- The script runs an SQL query against the database to delete the drives from the machines that are still listed but no longer detected.

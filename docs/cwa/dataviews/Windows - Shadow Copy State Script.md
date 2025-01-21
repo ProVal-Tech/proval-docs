@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will display the Windows Shadow Copy state for endpoints with Shadow Copy Enabled and that have run the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) to gather the information.
+This DataView displays the Windows Shadow Copy state for endpoints with Shadow Copy enabled that have run the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) to gather the information.
 
 ## Dependencies
 
@@ -19,32 +20,20 @@ This dataview will display the Windows Shadow Copy state for endpoints with Shad
 
 ## Columns
 
-| Column                                   | Description                                                            |
-|------------------------------------------|------------------------------------------------------------------------|
-| Client Name                              | The name of the client associated with the machine                     |
-| Location Name                            | The name of the locations associated with the machine                  |
-| Computer Name                            | The name of the machine associated with the data                       |
-| Operating System                         | The operating system name of the agent                                 |
-| Lastcontact                              | LastContact of the agent with the CW Automate                          |
-| Drive Letter                             | The Drive letter associated with the Shadow Copy                       |
-| Drive Size (GB)                         | The allotted capacity for Shadow Copy on the machine                   |
-| Drive Free (GB)                         | The remaining space for Shadow Copy to use on the machine              |
-| ShadowCopyCount                          | The number of Shadow Copies on the machine                             |
-| Oldest ShadowCopy                        | The oldest available Shadow Copy date                                   |
-| Latest ShadowCopy                        | The most recent available Shadow Copy date                              |
-| Used Space by Shadow Copy (GB)          | Used space size by the Shadow Copy in GB                               |
-| Allocated Size of Shadow Copy (GB)      | Allocated space size for the Shadow Copy in GB                         |
-| Maximum Space Provided to Shadow Copy (GB)| Maximum space provided to the Shadow Copy in GB                       |
-
-
-
-
-
-
-
-
-
-
-
-
+| Column                                      | Description                                                            |
+|---------------------------------------------|------------------------------------------------------------------------|
+| Client Name                                 | The name of the client associated with the machine                     |
+| Location Name                               | The name of the locations associated with the machine                  |
+| Computer Name                               | The name of the machine associated with the data                       |
+| Operating System                            | The operating system name of the agent                                 |
+| Last Contact                                | Last contact of the agent with CW Automate                             |
+| Drive Letter                                | The drive letter associated with the Shadow Copy                       |
+| Drive Size (GB)                            | The allotted capacity for Shadow Copy on the machine                   |
+| Drive Free (GB)                            | The remaining space for Shadow Copy to use on the machine              |
+| Shadow Copy Count                           | The number of Shadow Copies on the machine                             |
+| Oldest Shadow Copy                          | The oldest available Shadow Copy date                                   |
+| Latest Shadow Copy                          | The most recent available Shadow Copy date                              |
+| Used Space by Shadow Copy (GB)             | Used space size by the Shadow Copy in GB                               |
+| Allocated Size of Shadow Copy (GB)         | Allocated space size for the Shadow Copy in GB                         |
+| Maximum Space Provided to Shadow Copy (GB) | Maximum space provided to the Shadow Copy in GB                        |
 

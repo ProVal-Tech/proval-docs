@@ -8,9 +8,10 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Organization Name to be used for Threatlocker deployment. If deploying to an existing organization, that name must match the organization's name in the ThreatLocker portal.
+This document specifies the organization name to be used for Threatlocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal.
 
 ## Dependencies
 
@@ -20,19 +21,8 @@ Organization Name to be used for Threatlocker deployment. If deploying to an exi
 
 | Field Name                     | Level   | Type  | Default Value | Description                                                                                                                    | Editable |
 |--------------------------------|---------|-------|---------------|-------------------------------------------------------------------------------------------------------------------------------|----------|
-| Threatlocker_Organization_Name | Company | Text  | NA            | Organization Name to be used for Threatlocker deployment. If deploying to an existing organization, that name must match the organization's name in the ThreatLocker portal. | Yes      |
+| Threatlocker_Organization_Name | Company | Text  | NA            | Organization name to be used for Threatlocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | Yes      |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Company---Threatlocker_Organization_Name/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Company---Threatlocker_Organization_Name/image_1.png)

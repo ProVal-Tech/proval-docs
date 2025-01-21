@@ -8,6 +8,7 @@ tags: ['cleanup', 'logging']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script can be used to completely remove/purge local accounts (including UserSID) manually and automatically from the agent.
@@ -28,42 +29,29 @@ This script can be used to completely remove/purge local accounts (including Use
 
 | Variable  | Description                                                                                          |
 |-----------|------------------------------------------------------------------------------------------------------|
-| psout     | This contains powershell script output of whether the complete profile removed or not              |
-| fieldname | This contains list of users account inactive from 90 days                                           |
+| psout     | This contains PowerShell script output indicating whether the complete profile was removed or not. |
+| fieldname | This contains a list of user accounts inactive for 90 days                                           |
 | status    | It detects the dependent monitor status for the agent                                               |
 
 #### Global Parameters
 
 | Name      | Example                               | Required | Description                                         |
 |-----------|---------------------------------------|----------|-----------------------------------------------------|
-| LogPath   | C:/temp/Remove-LocalUserProfile.log  | True     | This path stores the logging of completed script.   |
-| AutoPurge | False                                 | True     | False -- Auto Purge is off, Usernames requiredTrue -- Auto Purge is ON, Usernames not required |
+| LogPath   | C:/temp/Remove-LocalUserProfile.log  | True     | This path stores the logging of the completed script.   |
+| AutoPurge | False                                 | True     | False -- Auto Purge is off, Usernames required; True -- Auto Purge is ON, Usernames not required |
 
 #### User Parameters
 
 | Name      | Example              | Required    | Description                                                                                      |
 |-----------|----------------------|-------------|--------------------------------------------------------------------------------------------------|
-| Usernames | user1,user2,user3   | True/False  | Provide list of user to remove when AutoPurge = False, else for Autopurge = True please leave blank. |
+| Usernames | user1,user2,user3   | True/False  | Provide a list of users to remove when AutoPurge = False; leave blank for AutoPurge = True.   |
 
 ## Process
 
-- This script can be used to perform both manual removal of users or automatic purge.
-- For automatic purge, mark Autopurge = True, then the usernames not logged in from more than 90 days will be picked from dependent monitor and this script will trigger as autofix to remove them.
-- For manual purge, Provide usernames to remove from the agent.
+- This script can be used to perform both manual removal of users and automatic purge.
+- For automatic purge, set AutoPurge = True; the usernames not logged in for more than 90 days will be picked from the dependent monitor, and this script will trigger as an autofix to remove them.
+- For manual purge, provide the usernames to remove from the agent.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

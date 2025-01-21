@@ -3,16 +3,17 @@ id: '0fd0215c-d6d5-40c8-9ba6-79b69721f4c1'
 title: 'Client-Level Patch Status Breakdown'
 title_meta: 'Client-Level Patch Status Breakdown'
 keywords: ['client', 'patch', 'status', 'machines', 'breakdown']
-description: 'This document provides an RMM specific display of the client-level breakdown of machines that are missing a certain number of patches, including detailed columns for client ID, name, operating system, patch status, and machine count.'
+description: 'This document provides an RMM-specific display of the client-level breakdown of machines that are missing a certain number of patches, including detailed columns for client ID, name, operating system, patch status, and machine count.'
 tags: ['report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview is the RMM specific display of the client-level breakdown of machines missing a certain amount of patches.
+This Dataview is the RMM-specific display of the client-level breakdown of machines missing a certain number of patches.
 
-Sample Screenshot:  
+**Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/Dash---Missing-Patch---Count-by-Machines---Client-Filter/image_1.png)
 
 ## Dependencies
@@ -24,22 +25,8 @@ Sample Screenshot:
 
 | Column        | Description                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------|
-| Clientid     | Clientid                                                                                     |
+| Client ID     | Client ID                                                                                     |
 | Client Name   | Client Name                                                                                  |
-| os            | Operating System (Server | Workstation)                                                     |
+| OS            | Operating System (Server | Workstation)                                                     |
 | Patch Status  | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)         |
 | Machine Count | Number of machines falling under the concerned category/patch status for the client.       |
-
-
-
-
-
-
-
-
-
-
-
-
-
-

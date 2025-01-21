@@ -8,6 +8,7 @@ tags: ['patching', 'report', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview displays any machines where the Microsoft update policy is not set.
@@ -23,23 +24,10 @@ This dataview displays any machines where the Microsoft update policy is not set
 | Last Contact                       | The last contact date of the agent                                                              |
 | Install Policy                     | Displays the current Microsoft update policy set on the agent                                  |
 | Onboarding Completed                | Displays the onboarding status of the agent                                                    |
-| Patching Checkbox Enabled           | Displays whether the patching is enabled or disabled for the computer's location               |
-| Effective Service Plan             | Displays the applied Service plan                                                                |
+| Patching Checkbox Enabled           | Displays whether patching is enabled or disabled for the computer's location                   |
+| Effective Service Plan             | Displays the applied service plan                                                                |
 | All Patch Approvals                | Displays whether the patch approvals are enabled or disabled for the computer                  |
-| Applied Patching Agent Templates    | Name of the applied patching related agent templates                                            |
+| Applied Patching Agent Templates    | Name of the applied patching-related agent templates                                            |
 | Patch Exclusion Checkbox           | Displays whether the `Disable Automated Patch Install` EDF is `Checked` or `Unchecked`         |
 | Cluster Role Detected              | Displays whether the cluster role detected is True                                             |
-| LastUserName                       | Displays the Last username of the machine                                                      |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last User Name                     | Displays the last username of the machine                                                      |

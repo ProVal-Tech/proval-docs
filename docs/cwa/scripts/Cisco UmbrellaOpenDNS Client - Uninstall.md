@@ -8,9 +8,10 @@ tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Script can be used for removing OpenDNS Umbrella Roaming Client silently.
+This script can be used to silently remove the OpenDNS Umbrella Roaming Client.
 
 ## Sample Run
 
@@ -20,25 +21,14 @@ This Script can be used for removing OpenDNS Umbrella Roaming Client silently.
 
 | Name            | Example | Required | Description                                                                                         |
 |-----------------|---------|----------|-----------------------------------------------------------------------------------------------------|
-| TicketCreation   | 1       | False    | If set to 1, then a ticket will be created if the script failed to uninstall the OpenDNS Umbrella Client |
+| TicketCreation   | 1       | False    | If set to 1, a ticket will be created if the script fails to uninstall the OpenDNS Umbrella Client. |
 
 ## Process
 
 - Import the script from the plugin.
-- Schedule it on the agents where the OpenDNS Umbrella client is required to be uninstalled.
+- Schedule it on the agents where the OpenDNS Umbrella Client needs to be uninstalled.
 
 ## Output
 
 - Script log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['autotask', 'database', 'sql']
 draft: false
 unlisted: false
 ---
+
 ## Dependencies
 
 - AutoTask Plugin - Enabled and Setup
@@ -16,11 +17,11 @@ unlisted: false
 
 Creates a monitor audit view for clients with the AutoTask plugins.
 
-**Notes**: If the script doesn't work, run the SELECT statement down and export from a RAWSQL monitor.
+**Notes**: If the script doesn't work, run the SELECT statement below and export from a RAWSQL monitor.
 
 ## SQL
 
-```
+```sql
 CREATE VIEW `plugin_proval_v_monitorauditat` AS 
 SELECT 
   `ga`.`AgentID` AS `AgentID`, 
@@ -33,26 +34,19 @@ SELECT
   `alt`.`Name` AS `Alert Template`, 
   `alts`.`alertid` AS `AlertID`, 
   IF(
-    (
-      (1024 & `alts`.`alertaction`) = 1024
-    ), 
+    (1024 & `alts`.`alertaction`) = 1024, 
     'True', 
     'False'
   ) AS `Alert Ticket Creation`, 
   IF(
-    (
-      (512 & `alts`.`alertaction`) = 512
-    ), 
+    (512 & `alts`.`alertaction`) = 512, 
     IFNULL(
-      (
-        SELECT 
-          `labtech`.`lt_scripts`.`ScriptName` 
-        FROM 
-          `labtech`.`lt_scripts` 
-        WHERE 
-          (
-            `labtech`.`lt_scripts`.`ScriptId` = `alts`.`scriptid`
-          )
+      (SELECT 
+        `labtech`.`lt_scripts`.`ScriptName` 
+      FROM 
+        `labtech`.`lt_scripts` 
+      WHERE 
+        `labtech`.`lt_scripts`.`ScriptId` = `alts`.`scriptid`
       ), 
       'N/A'
     ), 
@@ -60,26 +54,21 @@ SELECT
   ) AS `Script Assigned`, 
   `cat`.`CategoryName` AS `CategoryName`, 
   IF(
-    ISNULL(`sb`.`atQueueName`), 
+    ISNULL(`sb`.`AtQueueName`), 
     CONCAT(
-      (
-        SELECT 
-          `labtech`.`plugin_at_queues`.`AtQueueName` 
-        FROM 
-          `labtech`.`plugin_at_queues` 
-        WHERE 
-          (
-            `labtech`.`plugin_at_queues`.`ATQueueID` = (
-              SELECT 
-                `labtech`.`properties`.`value` 
-              FROM 
-                `labtech`.`properties` 
-              WHERE 
-                (
-                  `labtech`.`properties`.`name` = 'plugin_at_dbqueue'
-                )
-            )
-          )
+      (SELECT 
+        `labtech`.`plugin_at_queues`.`AtQueueName` 
+      FROM 
+        `labtech`.`plugin_at_queues` 
+      WHERE 
+        `labtech`.`plugin_at_queues`.`ATQueueID` = (
+          SELECT 
+            `labtech`.`properties`.`value` 
+          FROM 
+            `labtech`.`properties` 
+          WHERE 
+            `labtech`.`properties`.`name` = 'plugin_at_dbqueue'
+        )
       ), 
       '(Default)'
     ), 
@@ -91,54 +80,31 @@ FROM
       (
         (
           (
-            (
-              `labtech`.`groupagents` `ga` 
-              JOIN `labtech`.`mastergroups` `mg` ON(
-                (`mg`.`GroupID` = `ga`.`GroupID`)
-              )
-            ) 
-            LEFT JOIN `labtech`.`alerttemplate` `alt` ON(
-              (
-                `alt`.`AlertActionID` = `ga`.`AlertAction`
-              )
-            )
+            `labtech`.`groupagents` `ga` 
+            JOIN `labtech`.`mastergroups` `mg` ON(`mg`.`GroupID` = `ga`.`GroupID`)
           ) 
-          LEFT JOIN (
-            SELECT 
-              `labtech`.`alerttemplates`.`AlertActionID` AS `alertactionid`, 
-              `labtech`.`alerttemplates`.`AlertAction` AS `alertaction`, 
-              `labtech`.`alerttemplates`.`AlertID` AS `alertid`, 
-              `labtech`.`alerttemplates`.`ScriptID` AS `scriptid` 
-            FROM 
-              `labtech`.`alerttemplates` 
-            WHERE 
-              (
-                `labtech`.`alerttemplates`.`AlertActionID` = 2
-              ) 
-            GROUP BY 
-              `labtech`.`alerttemplates`.`AlertActionID`
-          ) `alts` ON(
-            (
-              `alt`.`AlertActionID` = `alts`.`alertactionid`
-            )
-          )
+          LEFT JOIN `labtech`.`alerttemplate` `alt` ON(`alt`.`AlertActionID` = `ga`.`AlertAction`)
         ) 
-        LEFT JOIN `labtech`.`infocategory` `cat` ON(
-          (
-            `cat`.`ID` = `ga`.`TicketCategory`
-          )
-        )
+        LEFT JOIN (
+          SELECT 
+            `labtech`.`alerttemplates`.`AlertActionID` AS `alertactionid`, 
+            `labtech`.`alerttemplates`.`AlertAction` AS `alertaction`, 
+            `labtech`.`alerttemplates`.`AlertID` AS `alertid`, 
+            `labtech`.`alerttemplates`.`ScriptID` AS `scriptid` 
+          FROM 
+            `labtech`.`alerttemplates` 
+          WHERE 
+            `labtech`.`alerttemplates`.`AlertActionID` = 2 
+          GROUP BY 
+            `labtech`.`alerttemplates`.`AlertActionID`
+        ) `alts` ON(`alt`.`AlertActionID` = `alts`.`alertactionid`)
       ) 
-      LEFT JOIN `labtech`.`plugin_at_categorymapping` `map` ON(
-        (`map`.`CategoryID` = `cat`.`ID`)
-      )
+      LEFT JOIN `labtech`.`infocategory` `cat` ON(`cat`.`ID` = `ga`.`TicketCategory`)
     ) 
-    LEFT JOIN `labtech`.`plugin_at_queues` `sb` ON(
-      (
-        `sb`.`AtQueueID` = `map`.`AtQueueID`
-      )
-    )
+    LEFT JOIN `labtech`.`plugin_at_categorymapping` `map` ON(`map`.`CategoryID` = `cat`.`ID`)
   ) 
+  LEFT JOIN `labtech`.`plugin_at_queues` `sb` ON(`sb`.`AtQueueID` = `map`.`AtQueueID`)
+) 
 UNION ALL 
 SELECT 
   `a`.`AgentID` AS `AgentID`, 
@@ -146,11 +112,7 @@ SELECT
   `mgs`.`FullName` AS `Group Path`, 
   `a`.`LastScan` AS `Next Scan`, 
   IF(
-    (
-      TIMESTAMPDIFF(SECOND, `a`.`LastScan`, NOW()) \< -(
-        (`a`.`interval` * 4)
-      )
-    ), 
+    TIMESTAMPDIFF(SECOND, `a`.`LastScan`, NOW()) < -(`a`.`interval` * 4), 
     'Yes', 
     'No'
   ) AS `Disabled`, 
@@ -159,26 +121,19 @@ SELECT
   `alt`.`Name` AS `Alert Template`, 
   `alts`.`alertid` AS `AlertID`, 
   IF(
-    (
-      (1024 & `alts`.`alertaction`) = 1024
-    ), 
+    (1024 & `alts`.`alertaction`) = 1024, 
     'True', 
     'False'
   ) AS `Alert Ticket Creation`, 
   IF(
-    (
-      (512 & `alts`.`alertaction`) = 512
-    ), 
+    (512 & `alts`.`alertaction`) = 512, 
     IFNULL(
-      (
-        SELECT 
-          `labtech`.`lt_scripts`.`ScriptName` 
-        FROM 
-          `labtech`.`lt_scripts` 
-        WHERE 
-          (
-            `labtech`.`lt_scripts`.`ScriptId` = `alts`.`scriptid`
-          )
+      (SELECT 
+        `labtech`.`lt_scripts`.`ScriptName` 
+      FROM 
+        `labtech`.`lt_scripts` 
+      WHERE 
+        `labtech`.`lt_scripts`.`ScriptId` = `alts`.`scriptid`
       ), 
       'N/A'
     ), 
@@ -188,24 +143,19 @@ SELECT
   IF(
     ISNULL(`sb`.`ATQueueName`), 
     CONCAT(
-      (
-        SELECT 
-          `labtech`.plugin_at_queues.`AtQueueName` 
-        FROM 
-          `labtech`.`plugin_at_queues` 
-        WHERE 
-          (
-            `labtech`.`plugin_at_queues`.`ATQueueID` = (
-              SELECT 
-                `labtech`.`properties`.`value` 
-              FROM 
-                `labtech`.`properties` 
-              WHERE 
-                (
-                  `labtech`.`properties`.`name` = 'plugin_at_dbqueue'
-                )
-            )
-          )
+      (SELECT 
+        `labtech`.`plugin_at_queues`.`AtQueueName` 
+      FROM 
+        `labtech`.`plugin_at_queues` 
+      WHERE 
+        `labtech`.`plugin_at_queues`.`ATQueueID` = (
+          SELECT 
+            `labtech`.`properties`.`value` 
+          FROM 
+            `labtech`.`properties` 
+          WHERE 
+            `labtech`.`properties`.`name` = 'plugin_at_dbqueue'
+        )
       ), 
       '(Default)'
     ), 
@@ -217,61 +167,33 @@ FROM
       (
         (
           (
-            (
-              (
-                `labtech`.`agents` `a` 
-                JOIN `labtech`.`groupdagents` `gda` ON(
-                  (`gda`.`AgentID` = `a`.`AgentID`)
-                )
-              ) 
-              LEFT JOIN `labtech`.`mastergroups` `mgs` ON(
-                (
-                  `mgs`.`GroupID` = `gda`.`GroupID`
-                )
-              )
-            ) 
-            LEFT JOIN `labtech`.`alerttemplate` `alt` ON(
-              (
-                `alt`.`AlertActionID` = `gda`.`AlertAction`
-              )
-            )
+            `labtech`.`agents` `a` 
+            JOIN `labtech`.`groupdagents` `gda` ON(`gda`.`AgentID` = `a`.`AgentID`)
           ) 
-          LEFT JOIN (
-            SELECT 
-              `labtech`.`alerttemplates`.`AlertActionID` AS `alertactionid`, 
-              `labtech`.`alerttemplates`.`AlertAction` AS `alertaction`, 
-              `labtech`.`alerttemplates`.`AlertID` AS `alertid`, 
-              `labtech`.`alerttemplates`.`ScriptID` AS `scriptid` 
-            FROM 
-              `labtech`.`alerttemplates` 
-            WHERE 
-              (
-                `labtech`.`alerttemplates`.`AlertActionID` = 2
-              ) 
-            GROUP BY 
-              `labtech`.`alerttemplates`.`AlertActionID`
-          ) `alts` ON(
-            (
-              `alt`.`AlertActionID` = `alts`.`alertactionid`
-            )
-          )
+          LEFT JOIN `labtech`.`mastergroups` `mgs` ON(`mgs`.`GroupID` = `gda`.`GroupID`)
         ) 
-        LEFT JOIN `labtech`.`infocategory` `cat` ON(
-          (
-            `cat`.`ID` = `gda`.`TicketCategory`
-          )
-        )
+        LEFT JOIN `labtech`.`alerttemplate` `alt` ON(`alt`.`AlertActionID` = `gda`.`AlertAction`)
       ) 
-      LEFT JOIN `labtech`.`plugin_at_categorymapping` `map` ON(
-        (`map`.`CategoryID` = `cat`.`ID`)
-      )
+      LEFT JOIN (
+        SELECT 
+          `labtech`.`alerttemplates`.`AlertActionID` AS `alertactionid`, 
+          `labtech`.`alerttemplates`.`AlertAction` AS `alertaction`, 
+          `labtech`.`alerttemplates`.`AlertID` AS `alertid`, 
+          `labtech`.`alerttemplates`.`ScriptID` AS `scriptid` 
+        FROM 
+          `labtech`.`alerttemplates` 
+        WHERE 
+          `labtech`.`alerttemplates`.`AlertActionID` = 2 
+        GROUP BY 
+          `labtech`.`alerttemplates`.`AlertActionID`
+      ) `alts` ON(`alt`.`AlertActionID` = `alts`.`alertactionid`)
     ) 
-    LEFT JOIN `labtech`.`plugin_at_queues` `sb` ON(
-      (
-        `sb`.`ATQueueID` = `map`.`ATQueueID`
-      )
-    )
+    LEFT JOIN `labtech`.`infocategory` `cat` ON(`cat`.`ID` = `gda`.`TicketCategory`)
   ) 
+  LEFT JOIN `labtech`.`plugin_at_categorymapping` `map` ON(`map`.`CategoryID` = `cat`.`ID`)
+) 
+LEFT JOIN `labtech`.`plugin_at_queues` `sb` ON(`sb`.`ATQueueID` = `map`.`ATQueueID`)
+) 
 UNION ALL 
 SELECT 
   `a`.`AgentID` AS `AgentID`, 
@@ -279,11 +201,7 @@ SELECT
   'Global' AS `Group Path`, 
   `a`.`LastScan` AS `Next Scan`, 
   IF(
-    (
-      TIMESTAMPDIFF(SECOND, `a`.`LastScan`, NOW()) \< -(
-        (`a`.`interval` * 4)
-      )
-    ), 
+    TIMESTAMPDIFF(SECOND, `a`.`LastScan`, NOW()) < -(`a`.`interval` * 4), 
     'Yes', 
     'No'
   ) AS `Disabled`, 
@@ -296,26 +214,19 @@ SELECT
   ) AS `Alert Template`, 
   `alts`.`alertid` AS `AlertID`, 
   IF(
-    (
-      (1024 & `alts`.`alertaction`) = 1024
-    ), 
+    (1024 & `alts`.`alertaction`) = 1024, 
     'True', 
     'False'
   ) AS `Alert Ticket Creation`, 
   IF(
-    (
-      (512 & `alts`.`alertaction`) = 512
-    ), 
+    (512 & `alts`.`alertaction`) = 512, 
     IFNULL(
-      (
-        SELECT 
-          `labtech`.`lt_scripts`.`ScriptName` 
-        FROM 
-          `labtech`.`lt_scripts` 
-        WHERE 
-          (
-            `labtech`.`lt_scripts`.`ScriptId` = `alts`.`scriptid`
-          )
+      (SELECT 
+        `labtech`.`lt_scripts`.`ScriptName` 
+      FROM 
+        `labtech`.`lt_scripts` 
+      WHERE 
+        `labtech`.`lt_scripts`.`ScriptId` = `alts`.`scriptid`
       ), 
       'N/A'
     ), 
@@ -329,24 +240,19 @@ SELECT
   IF(
     ISNULL(`sb`.`ATQueueName`), 
     CONCAT(
-      (
-        SELECT 
-          `labtech`.`plugin_at_queues`.`AtQueueName` 
-        FROM 
-          `labtech`.`plugin_at_queues` 
-        WHERE 
-          (
-            `labtech`.`plugin_at_queues`.`ATQueueID` = (
-              SELECT 
-                `labtech`.`properties`.`value` 
-              FROM 
-                `labtech`.`properties` 
-              WHERE 
-                (
-                  `labtech`.`properties`.`name` = 'plugin_at_dbqueue'
-                )
-            )
-          )
+      (SELECT 
+        `labtech`.`plugin_at_queues`.`AtQueueName` 
+      FROM 
+        `labtech`.`plugin_at_queues` 
+      WHERE 
+        `labtech`.`plugin_at_queues`.`ATQueueID` = (
+          SELECT 
+            `labtech`.`properties`.`value` 
+          FROM 
+            `labtech`.`properties` 
+          WHERE 
+            `labtech`.`properties`.`name` = 'plugin_at_dbqueue'
+        )
       ), 
       '(Default)'
     ), 
@@ -359,11 +265,7 @@ FROM
         (
           (
             `labtech`.`agents` `a` 
-            LEFT JOIN `labtech`.`alerttemplate` `alt` ON(
-              (
-                `alt`.`AlertActionID` = `a`.`AlertAction`
-              )
-            )
+            LEFT JOIN `labtech`.`alerttemplate` `alt` ON(`alt`.`AlertActionID` = `a`.`AlertAction`)
           ) 
           LEFT JOIN (
             SELECT 
@@ -374,50 +276,22 @@ FROM
             FROM 
               `labtech`.`alerttemplates` 
             WHERE 
-              (
-                `labtech`.`alerttemplates`.`AlertActionID` = 2
-              ) 
+              `labtech`.`alerttemplates`.`AlertActionID` = 2 
             GROUP BY 
               `labtech`.`alerttemplates`.`AlertActionID`
-          ) `alts` ON(
-            (
-              `alt`.`AlertActionID` = `alts`.`alertactionid`
-            )
-          )
+          ) `alts` ON(`alt`.`AlertActionID` = `alts`.`alertactionid`)
         ) 
-        LEFT JOIN `labtech`.`infocategory` `cat` ON(
-          (
-            `cat`.`ID` = `a`.`TicketCategory`
-          )
-        )
+        LEFT JOIN `labtech`.`infocategory` `cat` ON(`cat`.`ID` = `a`.`TicketCategory`)
       ) 
-      LEFT JOIN `labtech`.`plugin_at_categorymapping` `map` ON(
-        (`map`.`CategoryID` = `cat`.`ID`)
-      )
+      LEFT JOIN `labtech`.`plugin_at_categorymapping` `map` ON(`map`.`CategoryID` = `cat`.`ID`)
     ) 
-    LEFT JOIN `labtech`.`plugin_at_queues` `sb` ON(
-      (
-        `sb`.`ATQueueID` = `map`.`ATQueueID`
-      )
-    )
+    LEFT JOIN `labtech`.`plugin_at_queues` `sb` ON(`sb`.`ATQueueID` = `map`.`ATQueueID`)
   ) 
 WHERE 
   (
-    (
-      (`a`.`DriveID` = '') 
-      OR (`a`.`DriveID` = '0')
-    ) 
-    AND (`a`.`ComputerID` \< 1)
-  )
+    (`a`.`DriveID` = '') 
+    OR (`a`.`DriveID` = '0')
+  ) 
+  AND (`a`.`ComputerID` < 1)
 ```
-
-
-
-
-
-
-
-
-
-
 

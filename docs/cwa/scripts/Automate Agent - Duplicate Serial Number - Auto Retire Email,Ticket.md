@@ -8,13 +8,14 @@ tags: ['email', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script retires duplicate agents from the Automate environment. The duplicate agent is identified based on its serial number, name, and Client affiliation. Agents are removed based on their last contact with the Automate server, keeping only the agent with the most recent date. The script also emails/tickets the list of duplicate agents that have been retired.
+The script retires duplicate agents from the Automate environment. A duplicate agent is identified based on its serial number, name, and client affiliation. Agents are removed based on their last contact with the Automate server, keeping only the agent with the most recent date. The script also emails or generates tickets for the list of duplicate agents that have been retired.
 
-This is a client script and will work only for the Physical Machines. Virtual Machines are excluded to prevent any accidental deletion. It can be set up to email the list of duplicate agents that have been retired by the script to any email address or a ticket can also be generated.
+This is a client script and will work only for physical machines. Virtual machines are excluded to prevent any accidental deletion. It can be set up to email the list of duplicate agents that have been retired by the script to any email address, or a ticket can also be generated.
 
-## Update Notice: 27-December-2024
+## Update Notice: 27 December 2024
 
 Introduced the following system properties:
 - `_sysDuplicateAgent_Contact_Threshold`
@@ -28,7 +29,7 @@ Remove the `Automate Agent - Duplicate Serial Number - Retire` script if it exis
 
 ## Sample Run
 
-Set the parameter `Set_environment` for the first execution.
+Set the parameter `Set_Environment` for the first execution.
 
 ![Sample Run Image](../../../static/img/Automate-Agent---Duplicate-Serial-Number---Auto-Retire-Email,Ticket/image_2.png)
 
@@ -38,7 +39,7 @@ Specify the email address where you would like to receive the output of the resu
 
 ## Schedule
 
-It is suggested to run the script once per script.
+It is suggested to run the script once per schedule.
 
 ![Schedule Image](../../../static/img/Automate-Agent---Duplicate-Serial-Number---Auto-Retire-Email,Ticket/image_4.png)
 
@@ -47,19 +48,19 @@ It is suggested to run the script once per script.
 | Name                                          | Required | Example                          | Description                                                                                                                                                                                                                 |
 |-----------------------------------------------|----------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `_sysDuplicateAgentEmailAddress`              | False    | [xyz@something.com](mailto:xyz@something.com) | Universal email address where you would like to receive the list of duplicate agents that have been retired by the script.                                                                                                 |
-| `_sysDuplicateAgentTicketingEnable`           | False    | 1                                | Fill it as '1' if you would like to receive the Ticket with a list of Duplicate agents else leave it blank or '0'.                                                                                                        |
-| `_sysDuplicateAgentTicketCategory`            | False    | 234                              | Mention the ticket creation category to direct the tickets to the right board in Manage. **Note:** If no ticket creation category is mentioned in this property, the script will use the universal ticket creation category mentioned in the global System property `MonitorTicketCategory`. |
-| `_sysDuplicateAgent_NoDuplicate_Ticketing`    | False    | 0                                | Set its value to '1' to receive tickets/emails when there are no Duplicate agents. Its default value is '0' which means by default, the script will not generate tickets/emails in case no duplicate agents are found.      |
-| `_sysDuplicateAgent_Ticketing_DefaultClientid`| False    | 1                                | Client ID of the client under which tickets should be generated. Its default value is '1', meaning tickets will be generated under the client whose client ID is '1' in the environment.                                  |
-| `_sysDuplicateAgent_Contact_Threshold`        | False    | 15                               | Define the threshold for the number of days after which duplicate agents should be retired. If this system property is not specified, duplicate agents with a last contact time of more than an hour will be automatically removed. |
-| `_sysDuplicateAgent_Retire_VM`                | False    | 1                                | Fill it as '1' to retire duplicate virtual machines as well (duplicates on the basis of serial number). If nothing is mentioned in this property, the script will not retire duplicate virtual machines.                     |
+| `_sysDuplicateAgentTicketingEnable`           | False    | 1                                | Set to '1' if you would like to receive a ticket with a list of duplicate agents; otherwise, leave it blank or set to '0'.                                                                                               |
+| `_sysDuplicateAgentTicketCategory`            | False    | 234                              | Specify the ticket creation category to direct tickets to the correct board in Manage. **Note:** If no ticket creation category is mentioned, the script will use the universal ticket creation category in the global System property `MonitorTicketCategory`. |
+| `_sysDuplicateAgent_NoDuplicate_Ticketing`    | False    | 0                                | Set to '1' to receive tickets/emails when there are no duplicate agents. The default value is '0', meaning the script will not generate tickets/emails if no duplicate agents are found.                                 |
+| `_sysDuplicateAgent_Ticketing_DefaultClientid`| False    | 1                                | Client ID under which tickets should be generated. The default value is '1', meaning tickets will be generated under the client whose client ID is '1' in the environment.                                                  |
+| `_sysDuplicateAgent_Contact_Threshold`        | False    | 15                               | Define the threshold for the number of days after which duplicate agents should be retired. If this property is not specified, duplicate agents with a last contact time of more than an hour will be automatically removed. |
+| `_sysDuplicateAgent_Retire_VM`                | False    | 1                                | Set to '1' to retire duplicate virtual machines as well (based on serial number). If nothing is mentioned, the script will not retire duplicate virtual machines.                                                          |
 
 ## User Parameters
 
 | Name             | Required                  | Example                          | Description                                                                                                                                                                                                                 |
 |------------------|---------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Email_Address`   | False                     | [xyz@something.com](mailto:xyz@something.com) | Fill it with an email address where you would like to receive the list of Duplicate agents retired by the script. **Note:** If nothing is mentioned in this user parameter, the script will check the system property `_sysDuplicateAgentEmailAddress`. If any email address is mentioned there, it will send an email to it. If not, it will not send any email to anyone. |
-| `Set_Environment` | True (For First execution) | 1                                | Set it to '1' to create the system properties if they're not already made in the environment. It has to be set to '1' for the first execution.                                                                              |
+| `Email_Address`   | False                     | [xyz@something.com](mailto:xyz@something.com) | Provide an email address where you would like to receive the list of duplicate agents retired by the script. **Note:** If nothing is mentioned, the script will check the system property `_sysDuplicateAgentEmailAddress`. If an email address is specified there, it will send an email to it; otherwise, it will not send any email. |
+| `Set_Environment` | True (For First execution) | 1                                | Set to '1' to create the system properties if they are not already created in the environment. This must be set to '1' for the first execution.                                                                              |
 
 ## Output
 
@@ -73,19 +74,8 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 
 **Subject:** `List of Retired Duplicate Agents Based on Serial Numbers`
 
-**Body:** `"%ScriptName% ran on the machines and has retired below duplicate agents:@Machines@"`
+**Body:** `"%ScriptName% ran on the machines and has retired the following duplicate agents:@Machines@"`
 
-In case there is no duplicate serial number:
+In case there are no duplicate serial numbers:
 
-`No duplicate Machines identified based on Serial Number.`
-
-
-
-
-
-
-
-
-
-
-
+`No duplicate machines identified based on serial number.`

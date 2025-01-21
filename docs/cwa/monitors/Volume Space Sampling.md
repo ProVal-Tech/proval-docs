@@ -8,6 +8,7 @@ tags: ['performance', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor is dynamically generated from the script [Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775). It is used to gather data points for the optional regression-based threshold generation. The monitors are generated to have an interval of one hour.
@@ -27,16 +28,3 @@ N/A
 ## Target
 
 Windows Machines - Should be run on all Windows machines
-
-
-
-
-
-
-
-
-
-
-
-
-

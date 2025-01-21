@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 An audit of the DISTINCT computers that failed to sign up.
@@ -20,21 +21,9 @@ An audit of the DISTINCT computers that failed to sign up.
 | Location Name   | Name of the location.                                                             |
 | Network Probe    | Name of the Network Probe.                                                        |
 | Computer Name   | Name of the computer that the probe failed to install the agent on.              |
-| #Attempts       | Number of Failed attempts made for the Specific Error Message.                    |
-| User Name       | Name of the currently logged in user.                                            |
-| MAC address     | MAC Address of the computer.                                                     |
-| Remote Address   | Remote/Router address of the computer.                                           |
+| # Attempts       | Number of failed attempts made for the specific error message.                    |
+| User Name       | Name of the currently logged-in user.                                            |
+| MAC Address     | MAC address of the computer.                                                     |
+| Remote Address   | Remote/router address of the computer.                                           |
 | Latest Attempt  | The last time the installation attempt was made.                                  |
 | Error Message   | The last error message received from the attempted installation.                  |
-
-
-
-
-
-
-
-
-
-
-
-

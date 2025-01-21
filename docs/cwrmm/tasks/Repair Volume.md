@@ -8,15 +8,15 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Runs a powershell equivalent of chkdsk on any or all drives, with the option to repair if desired. CW RMM implementation of [Invoke-RepairVolume](https://proval.itglue.com/DOC-5078775-11068928) agnostic script.
+This document outlines how to run a PowerShell equivalent of chkdsk on any or all drives, with the option to repair if desired. It provides a ConnectWise RMM implementation of the [Invoke-RepairVolume](https://proval.itglue.com/DOC-5078775-11068928) agnostic script.
 
 ## Sample Run
 
 ![Sample Run 1](../../../static/img/Repair-Volume/image_1.png)
 ![Sample Run 2](../../../static/img/Repair-Volume/image_2.png)
-
 ![Sample Run 3](../../../static/img/Repair-Volume/image_3.png)
 
 ## Dependencies
@@ -27,7 +27,7 @@ Runs a powershell equivalent of chkdsk on any or all drives, with the option to 
 
 | Name        | Example  | Required | Type        | Description                                                                                      |
 |-------------|----------|----------|-------------|--------------------------------------------------------------------------------------------------|
-| Driveletters| C, D, E | False    | Text String | The Letters of the target drives. The script will fall back to all internal drives if left blank. |
+| Driveletters| C, D, E | False    | Text String | The letters of the target drives. The script will fall back to all internal drives if left blank. |
 | Repair      | 0/1      | False    | Flag        | Toggles the repair option.                                                                       |
 | Full        | 0/1      | False    | Flag        | Toggles the full offline repair option when using repair.                                        |
 
@@ -35,13 +35,13 @@ Runs a powershell equivalent of chkdsk on any or all drives, with the option to 
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Step 1](../../../static/img/Repair-Volume/image_5.png)
 ![Task Creation Step 2](../../../static/img/Repair-Volume/image_6.png)
 
 **Name:** `Repair Volume`  
-**Description:** `Runs a powershell equivalent of chkdsk on any or all drives, with the option to repair if desired.`  
+**Description:** `Runs a PowerShell equivalent of chkdsk on any or all drives, with the option to repair if desired.`  
 **Category:** `Maintenance`  
 
 ![Task Creation Step 3](../../../static/img/Repair-Volume/image_7.png)
@@ -49,6 +49,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 ## Parameters
 
 ### Driveletters:
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Driveletters Step 1](../../../static/img/Repair-Volume/image_8.png)
@@ -64,6 +65,7 @@ This screen will appear.
 ![Driveletters Step 3](../../../static/img/Repair-Volume/image_10.png)
 
 ### Repair:
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Repair Step 1](../../../static/img/Repair-Volume/image_8.png)
@@ -79,6 +81,7 @@ This screen will appear.
 ![Repair Step 3](../../../static/img/Repair-Volume/image_11.png)
 
 ### Full:
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Full Step 1](../../../static/img/Repair-Volume/image_8.png)
@@ -95,7 +98,7 @@ This screen will appear.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Task Step 1](../../../static/img/Repair-Volume/image_13.png)
 
@@ -104,6 +107,7 @@ A blank function will appear.
 ![Task Step 2](../../../static/img/Repair-Volume/image_14.png)
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.
 
 ![Row 1 Function Step 1](../../../static/img/Repair-Volume/image_15.png)
@@ -168,7 +172,7 @@ if ($Parameters) {
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -181,6 +185,7 @@ Get-Content -Path $LogPath
 ![Row 1 Function Step 4](../../../static/img/Repair-Volume/image_18.png)
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.
 
 ![Row 2 Function Step 1](../../../static/img/Repair-Volume/image_19.png)
@@ -208,14 +213,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

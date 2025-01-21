@@ -8,28 +8,18 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade process.
 
 ## Details
 
-| Field Name                        | Level   | Type  | Default Value | Description                                                                 | Editable |
-|-----------------------------------|---------|-------|---------------|-----------------------------------------------------------------------------|----------|
-| Exclude Windows 11 Installation    | Endpoint| Flag  | No            | Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade process. | Yes      |
+| Field Name                       | Level   | Type  | Default Value | Description                                                                 | Editable |
+|----------------------------------|---------|-------|---------------|-----------------------------------------------------------------------------|----------|
+| Exclude Windows 11 Installation   | Endpoint| Flag  | No            | Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade process. | Yes      |
 
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/Endpoint---Exclude-Windows-11-Installation/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Exclude-Windows-11-Installation/image_2.png)
-
-
-
-
-
-
-
-
-
-
-

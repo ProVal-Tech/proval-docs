@@ -8,17 +8,18 @@ tags: ['security', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The objective of this monitor set is to provide a comprehensive solution for detecting machines that have not installed Windows updates within the last 45 days. This will help ensure that all systems are up-to-date and protected against known security threats.
 
-Only devices running Microsoft's supported operating systems will be detected by the monitor set excluding those that are at the end of their lives. It will also only monitor machines that have come online within the last 7 days to ensure that the data collected is current and relevant.
+Only devices running Microsoft's supported operating systems will be detected by the monitor set, excluding those that are at the end of their life. It will also only monitor machines that have come online within the last 7 days to ensure that the data collected is current and relevant.
 
 Moreover, it only applies to PCs that are patch-managed and using Automate's default `patchhistory` table.
 
 ## Implementation
 
-Replace the word `\\<MonitorID>` in the additional condition with the actual monitorid.
+Replace the word `\\<MonitorID>` in the additional condition with the actual monitor ID.
 
 ![Image 1](../../../static/img/Agent-Not-Patched--45-Days---Patch-History/image_1.png)
 
@@ -31,7 +32,7 @@ Replace the word `\\<MonitorID>` in the additional condition with the actual mon
 
 ## Target
 
-SQL is limiting the results to the patch-managed supported windows machines.
+SQL is limiting the results to the patch-managed supported Windows machines.
 
 ## Ticketing
 
@@ -40,7 +41,7 @@ SQL is limiting the results to the patch-managed supported windows machines.
 **Failure Body:** 
 
 ```
-We are currently reporting that it has been 45+ Days since the machine %CLIENTNAME%/%COMPUTERNAME% has installed a patch. Sometimes Automate fails to update the patch history table correctly so please verify if patching is actually having an issue or not.
+We are currently reporting that it has been 45+ days since the machine %CLIENTNAME%/%COMPUTERNAME% has installed a patch. Sometimes Automate fails to update the patch history table correctly, so please verify if patching is actually having an issue or not.
 
 The last update(s) seen to have been installed are shown below:
 %FIELDNAME%
@@ -52,7 +53,7 @@ The last update(s) seen to have been installed are shown below:
 Since this machine has fallen below the patching threshold, we are closing this ticket.
 ```
 
-**%RESULT%:** `Number of days since the last windows update was installed.`
+**%RESULT%:** `Number of days since the last Windows update was installed.`
 
 **%FIELDNAME%:** `Title(s) of the last patch(es) installed on the computer.`
 
@@ -61,16 +62,3 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

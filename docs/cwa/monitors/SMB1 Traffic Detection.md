@@ -8,9 +8,10 @@ tags: ['logging', 'networking', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The remote monitor activates SMB1 Server Auditing if not already enabled to generate event logs when any computer attempts to connect using the SMB1 protocol. Subsequently, it reviews the event logs to identify any instances of client connection attempts using the SMB1 protocol within the last hour.
+The remote monitor activates SMB1 Server Auditing if it is not already enabled, generating event logs when any computer attempts to connect using the SMB1 protocol. Subsequently, it reviews the event logs to identify any instances of client connection attempts using the SMB1 protocol within the last hour.
 
 This monitoring mechanism serves to identify servers or environments where the SMB1 protocol is still in use before any protocol disabling procedures are implemented.
 
@@ -22,7 +23,7 @@ This monitoring mechanism serves to identify servers or environments where the S
 **Suggested Alert Style:** Continuous  
 **Suggested Alert Template:** `△ Custom - Ticket Creation Computer - Failures Only`
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
@@ -39,7 +40,7 @@ SMB1 Server Enabled [Remote Monitor]
 
 ## Ticketing
 
-**Subject:**  `SMB1 Traffic Detected on %COMPUTERNAME%`
+**Subject:** `SMB1 Traffic Detected on %COMPUTERNAME%`
 
 **Body:**  
 `SMB1 Traffic detected on %CLIENTNAME%/%COMPUTERNAME% in the past 1 hour.  
@@ -49,16 +50,3 @@ Details: `
 ## Implementation
 
 [Implement - Remote Monitor - SMB1 Traffic Detection](<./SMB1 Traffic Detection.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

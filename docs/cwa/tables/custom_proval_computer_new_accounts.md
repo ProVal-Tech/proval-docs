@@ -8,18 +8,17 @@ tags: ['database']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The table named as: "custom_proval_computer_new_accounts".  
-This table is built to store all information about the newly created accounts on the server.  
-It is being created by a script named as: "User Management - New Local Account Audit And Disable [DV,Autofix,Global]".
+The table named: **custom_proval_computer_new_accounts** is built to store all information about the newly created accounts on the server. It is created by a script named: **User Management - New Local Account Audit And Disable [DV, Autofix, Global]**.
 
 ## Dependencies
 
 - [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)  
-- [User Management - New Local Account Audit And Disable [DV,Autofix,Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV,Autofix,Global.md>)  
+- [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV, Autofix, Global.md>)  
 - [New Account Audit and Disable For Approve [Script]](https://proval.itglue.com/DOC-5078775-7695146)  
-- [User Management - Approved New User - Activate [DV,Param]](<../scripts/User Management - Approved New User - Activate DV,Param.md>)  
+- [User Management - Approved New User - Activate [DV, Param]](<../scripts/User Management - Approved New User - Activate DV, Param.md>)  
 
 ## Table
 
@@ -27,30 +26,18 @@ It is being created by a script named as: "User Management - New Local Account A
 
 | Column                    | Type     | Explanation                                                                                          |
 |--------------------------|----------|------------------------------------------------------------------------------------------------------|
-| computerid               | INT      | It stores the computerid of the computer                                                             |
-| Creator UserName         | VARCHAR  | It stores the username who created the new account.                                                 |
-| Creator LocalUser        | TINYINT  | It denotes whether the creator of the new account is local or domain. (1 - Local, 0 - Domain)      |
-| Creator LocalAdmin       | TINYINT  | It denotes whether the creator of the new account is non-admin or admin. (1 - Admin, 0 - Non Admin)|
-| Creator LastLogon        | DATETIME | It denotes creator last logon date                                                                    |
-| Creator password         | TINYINT  | It denotes whether the creator has a password set. (1 - Yes, 0 - No)                                |
-| Created Username         | VARCHAR  | It stores the newly created user account name                                                        |
-| Created LocalUser        | TINYINT  | It denotes whether the newly created account is local or domain. (1 - Local, 0 - Domain)            |
-| Created LocalAdmin       | TINYINT  | It denotes whether the newly created account is non-admin or admin. (1 - Admin, 0 - Non Admin)      |
-| Created LastLogon        | DATETIME | It denotes the last logon date of the newly created account. (If date is 1970-01-01 00:00:00 it means, never logged in). |
-| Created password         | TINYINT  | It denotes whether the newly created account has a password set. (1 - Yes, 0 - No)                  |
-| Account Creation Date    | DATETIME | It stores the newly created account date                                                              |
-| Disable Status           | TINYINT  | It denotes whether the newly created account is disabled. (0-New Account Approved, 1- Disabled, 2 - No Action). Here, 2 means the script which creates this table did not choose to disable the newly created account, only meant for auditing the new account. |
-| Approve Status           | TINYINT  | It denotes whether the account is approved to get enabled. (0- Not Approved, 1-Approved and Enabled, 2- No Action). |
-| Approve Date Status      | DATETIME | It represents when the newly created account was approved to get enabled. (If date is 1970-01-01 00:00:00 it means, Not Approved). |
-
-
-
-
-
-
-
-
-
-
-
-
+| computerid               | INT      | Stores the computer ID of the computer.                                                             |
+| Creator UserName         | VARCHAR  | Stores the username of the person who created the new account.                                       |
+| Creator LocalUser        | TINYINT  | Indicates whether the creator of the new account is local or domain (1 - Local, 0 - Domain).       |
+| Creator LocalAdmin       | TINYINT  | Indicates whether the creator of the new account is an admin or non-admin (1 - Admin, 0 - Non Admin). |
+| Creator LastLogon        | DATETIME | Records the creator's last logon date.                                                               |
+| Creator Password         | TINYINT  | Indicates whether the creator has a password set (1 - Yes, 0 - No).                                 |
+| Created Username         | VARCHAR  | Stores the newly created user account name.                                                          |
+| Created LocalUser        | TINYINT  | Indicates whether the newly created account is local or domain (1 - Local, 0 - Domain).             |
+| Created LocalAdmin       | TINYINT  | Indicates whether the newly created account is an admin or non-admin (1 - Admin, 0 - Non Admin).   |
+| Created LastLogon        | DATETIME | Records the last logon date of the newly created account. (If the date is 1970-01-01 00:00:00, it means the account has never logged in.) |
+| Created Password         | TINYINT  | Indicates whether the newly created account has a password set (1 - Yes, 0 - No).                   |
+| Account Creation Date    | DATETIME | Stores the date the account was created.                                                             |
+| Disable Status           | TINYINT  | Indicates whether the newly created account is disabled (0 - New Account Approved, 1 - Disabled, 2 - No Action). Here, 2 means the script that creates this table did not choose to disable the newly created account; it is only meant for auditing the new account. |
+| Approve Status           | TINYINT  | Indicates whether the account is approved to be enabled (0 - Not Approved, 1 - Approved and Enabled, 2 - No Action). |
+| Approve Date Status      | DATETIME | Represents when the newly created account was approved to be enabled. (If the date is 1970-01-01 00:00:00, it means the account is not approved.) |

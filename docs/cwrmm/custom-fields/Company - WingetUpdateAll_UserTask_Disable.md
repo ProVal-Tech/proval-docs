@@ -8,32 +8,21 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Set this custom field to "No" to enable the user-level scheduled task `Winget Update All [Logged on User]` for Windows 10 and 11 of the company.
+Set this custom field to "No" to enable the user-level scheduled task `Winget Update All [Logged on User]` for Windows 10 and 11 in the company.
 
-[CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task will not enable the user-level Winget to update all scheduled tasks by default as it is set to "Yes".
+The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task will not enable the user-level Winget to update all scheduled tasks by default, as it is set to "Yes".
 
 ## Details
 
 | Field Name                              | Level  | Type | Default Value | Description                                                                                                                                       | Editable |
 |-----------------------------------------|--------|------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| WingetUpdateAll_UserTask_Disable       | COMPANY| Flag | Yes           | Set this custom field to "No" to enable the user-level scheduled task `Winget Update All [Logged on User]` for Windows 10 and 11 of the company. | Yes      |
+| WingetUpdateAll_UserTask_Disable       | COMPANY| Flag | Yes           | Set this custom field to "No" to enable the user-level scheduled task `Winget Update All [Logged on User]` for Windows 10 and 11 in the company. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_1.png)
 
 ![Screenshot 2](../../../static/img/Company---WingetUpdateAll_UserTask_Disable/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['registry', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task removes any registry entries that may be preventing Windows updates and restores the default Windows Update settings, fully re-enabling updates for the user.
@@ -19,20 +20,20 @@ This task removes any registry entries that may be preventing Windows updates an
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/Set-Windows-Updates-to-Default/image_4.png)  
 ![Task Creation Image 2](../../../static/img/Set-Windows-Updates-to-Default/image_5.png)  
 
 **Name:** Set Windows Updates to Default  
-**Description:** This task removes all the possible registries that disable the windows update on a machine.  
+**Description:** This task removes all the possible registry entries that disable Windows Update on a machine.  
 **Category:** Custom  
 
 ![Task Creation Image 3](../../../static/img/Set-Windows-Updates-to-Default/image_6.png)  
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 
 ![Add Row Image](../../../static/img/Set-Windows-Updates-to-Default/image_7.png)  
 
@@ -88,16 +89,16 @@ $pathArray = @(
     'Registry::HKEY_USERS//S-1-5-18//Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
 )
 
-foreach ( $regPath in $pathArray ) {
-    foreach ( $property in $properties ) {
-        if ( Get-ItemProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue ) {
+foreach ($regPath in $pathArray) {
+    foreach ($property in $properties) {
+        if (Get-ItemProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue) {
             try {
-                Set-ItemProperty -Path $regPath -Name $property -value 0 -Force -ErrorAction Stop
+                Set-ItemProperty -Path $regPath -Name $property -Value 0 -Force -ErrorAction Stop
             } catch {
                 $failure = [pscustomobject]@{
                     RegistryPath = $regPath
                     PropertyName = $property
-                    FailureMessage = "Failed to Set property: $($Error[0].Exception.Message)"
+                    FailureMessage = "Failed to set property: $($Error[0].Exception.Message)"
                 }
                 $failures += $failure
             }
@@ -114,9 +115,9 @@ $pathArray = @(
     'Software//Microsoft//Windows//CurrentVersion//Policies//Explorer'
 )
 
-foreach ( $regPath in $pathArray ) {
-    foreach ( $property in $properties ) {
-        if ( Get-UserRegistryKeyProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue ) {
+foreach ($regPath in $pathArray) {
+    foreach ($property in $properties) {
+        if (Get-UserRegistryKeyProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue) {
             try {
                 Set-UserRegistryKeyProperty -Path $regPath -Name $property -Value 0 -Force -ErrorAction Stop
             } catch {
@@ -131,8 +132,8 @@ foreach ( $regPath in $pathArray ) {
     }
 }
 
-if ( $failures ) {
-    throw ( $failures | Out-String )
+if ($failures) {
+    throw ($failures | Out-String)
 } else {
     return 'Success'
 }
@@ -152,15 +153,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-
-

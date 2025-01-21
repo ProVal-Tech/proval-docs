@@ -8,9 +8,10 @@ tags: ['bios', 'uefi']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will show the BIOS boot type for machines, whether they are UEFI or Legacy boot types.
+This dataview shows the BIOS boot type for machines, indicating whether they are using UEFI or Legacy boot types.
 
 ## Dependencies
 
@@ -18,25 +19,12 @@ This dataview will show the BIOS boot type for machines, whether they are UEFI o
 
 ## Columns
 
-| Column                | Description                                                                                     |
-|----------------------|-------------------------------------------------------------------------------------------------|
-| Client               | The name of the client                                                                          |
-| Location             | The name of the location                                                                        |
-| Computer             | The name of the end point                                                                        |
-| BIOS Manufacturer     | The manufacturer of the BIOS, based on data collected by Automate                              |
-| BIOS Name            | The name of the BIOS. This may display the model of the machine as well                        |
-| BIOS Version         | The BIOS version detected by Automate                                                           |
-| BIOS Type            | Using the [BIOS Type - Legacy](<../roles/BIOS Type - Legacy.md>) role, this will determine if the machine has the legacy or UEFI boot type |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column               | Description                                                                                     |
+|---------------------|-------------------------------------------------------------------------------------------------|
+| Client              | The name of the client                                                                          |
+| Location            | The name of the location                                                                        |
+| Computer            | The name of the endpoint                                                                         |
+| BIOS Manufacturer    | The manufacturer of the BIOS, based on data collected by Automate                              |
+| BIOS Name           | The name of the BIOS. This may display the model of the machine as well                        |
+| BIOS Version        | The BIOS version detected by Automate                                                           |
+| BIOS Type           | Using the [BIOS Type - Legacy](<../roles/BIOS Type - Legacy.md>) role, this will determine if the machine has the legacy or UEFI boot type |

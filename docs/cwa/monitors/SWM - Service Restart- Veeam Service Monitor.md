@@ -8,6 +8,7 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will check the status of the `VeeamBackupSvc` service and restart it if it is not running. If it fails to start, it will identify all other services with names starting with `Veeam` that are not running, start those services, and then attempt to start `VeeamBackupSvc` again.
@@ -16,7 +17,7 @@ This monitor will check the status of the `VeeamBackupSvc` service and restart i
 
 **Suggested "Limit to"**: VeeamBackupSvc  
 **Suggested Alert Style**: Once  
-**Suggested Alert Template**: ` △ Custom - Ticket Creation - Computer`  
+**Suggested Alert Template**: `△ Custom - Ticket Creation - Computer`  
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|-------------|----------|--------|
@@ -24,11 +25,11 @@ This monitor will check the status of the `VeeamBackupSvc` service and restart i
 
 ## Dependencies
 
-[EPM -Windows Configuration - Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
+[EPM - Windows Configuration - Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
 
 ## Target
 
-Managed Computers with `VeeamBackupSvc` service.  
+Managed Computers with the `VeeamBackupSvc` service.  
 ![Target Image](../../../static/img/SWM---Service-Restart--Veeam-Service-Monitor/image_2.png)  
 
 ## Ticketing
@@ -36,27 +37,15 @@ Managed Computers with `VeeamBackupSvc` service.
 **Subject**: `Veeam Service Monitor - Failed - %ComputerName%`  
 
 **Body:**  
-`Veeam Service Monitor Failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`  
+`Veeam Service Monitor failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`  
 
 `%RESULT%`  
 
 **%RESULT%:**  
-`Failed to Start VeeamBackupSvc.`  
+`Failed to start VeeamBackupSvc.`  
 `Output of restarting Veeam* Services: \<Output of Restarting Veeam* Services>`  
 `Output of restarting VeeamBackupSvc: \<Output of Restarting VeeamBackupSvc>`  
 
 ## Implementation
 
 [Implement - Remote Monitor - Veeam Service Monitor](<./Veeam Service Monitor.md>)
-
-
-
-
-
-
-
-
-
-
-
-

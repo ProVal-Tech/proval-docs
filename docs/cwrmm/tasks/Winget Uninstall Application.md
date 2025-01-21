@@ -1,38 +1,39 @@
 ---
 id: '70ce6b79-5bfe-4160-95d9-77622b7fce89'
-title: 'Winget UnInstall Application'
-title_meta: 'Winget UnInstall Application'
+title: 'Winget Uninstall Application'
+title_meta: 'Winget Uninstall Application'
 keywords: ['winget', 'uninstall', 'application', 'windows', 'script']
 description: 'This document provides a detailed guide on how to uninstall an application using Winget on Windows devices. It includes parameters, dependencies, and a complete PowerShell script for implementation.'
 tags: ['setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Attempts to uninstall an application via Winget
+This document outlines the process to uninstall an application via Winget.
 
 ## Parameters
 
-- **ID** = winget application ID (Example: Google.Chrome)  
-To get the id, you can search in cmd using "winget search appname" or by browsing to winget.run
+- **ID** = Winget application ID (Example: Google.Chrome)  
+To obtain the ID, you can search in the command prompt using `winget search appname` or by browsing to winget.run.
 
 ## Dependencies
 
-None. This script can be run against any Windows device.
+None. This script can be executed on any Windows device.
 
 ## Create Script
 
-To implement this script, please create a new "PowerShell" style script in the system.
+To implement this script, please create a new PowerShell-style script on the system.
 
-![Winget unInstall Application](../../../static/img/Winget-Uninstall-Application/image_1.png)  
-![Winget unInstall Application](../../../static/img/Winget-Uninstall-Application/image_2.png)  
+![Winget Uninstall Application](../../../static/img/Winget-Uninstall-Application/image_1.png)  
+![Winget Uninstall Application](../../../static/img/Winget-Uninstall-Application/image_2.png)  
 
-**Name:** Winget unInstall Application  
+**Name:** Winget Uninstall Application  
 **Description:** Attempts to uninstall an application via Winget  
 **Parameter:**  
-- ID = winget application ID (Example: Google.Chrome)  
-To get the id, you can search in cmd using "winget search appname" or by browsing to winget.run  
+- ID = Winget application ID (Example: Google.Chrome)  
+To obtain the ID, you can search in the command prompt using `winget search appname` or by browsing to winget.run.  
 **Category:** Custom  
 
 ![Parameter](../../../static/img/Winget-Uninstall-Application/image_3.png)  
@@ -57,19 +58,19 @@ Input the following:
 
 ![PowerShell Script](../../../static/img/Winget-Uninstall-Application/image_7.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to 600 seconds.
+Paste the following PowerShell script and set the expected time of script execution to 600 seconds.
 
 ```
-\<#
-.SYNOPSIS
-Uses the powershell wrapper for WinGet to uninstall an application
-.OUTPUTS
-Install-@id@-log.txt
-Install-@id@-error.txt
-.NOTES
-Script will check if WinGet is installed and attempt to install if not present.
-Can be run as SYSTEM.
-#>
+<# 
+.SYNOPSIS 
+Uses the PowerShell wrapper for WinGet to uninstall an application 
+.OUTPUTS 
+Install-@id@-log.txt 
+Install-@id@-error.txt 
+.NOTES 
+Script will check if WinGet is installed and attempt to install if not present. 
+Can be run as SYSTEM. 
+#> 
 
 ### Bootstrap ###
 if (-not $bootstrapLoaded) {
@@ -114,7 +115,7 @@ if (!(Get-ProvisionedAppPackage -Online | Where-Object { $_.DisplayName -match '
     Remove-Item -Path $vclib -Force
 }
 
-#check to ensure redists are present on the machine
+# Check to ensure redistributables are present on the machine
 $Visual2019 = 'Microsoft Visual C++ 2015-2019 Redistributable*'
 $Visual2022 = 'Microsoft Visual C++ 2015-2022 Redistributable*'
 $path = Get-Item @(
@@ -142,10 +143,10 @@ if (!($path)) {
 } else {
     Write-Log -Text 'Prerequisites checked. OK' -Type LOG
 }
-#print out user to log for debug
+# Print out user to log for debug
 Write-Log -Text "Running as $(whoami)" -Type LOG
 
-#if we couldn't find winget, fail and throw since we already tried installing
+# If we couldn't find winget, fail and throw since we already tried installing
 if (!(Test-Path -Path $wingetPath)) {
     Write-Log -Text 'Unable to install winget' -Type ERROR
     throw 'Exception - Unable to install WinGet'
@@ -168,7 +169,7 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ![Output](../../../static/img/Winget-Uninstall-Application/image_9.png)  
 
-The final task should look like the below screenshot.  
+The final task should look like the screenshot below.  
 ![Final Task](../../../static/img/Winget-Uninstall-Application/image_10.png)  
 
 ## Script Deployment
@@ -178,15 +179,3 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

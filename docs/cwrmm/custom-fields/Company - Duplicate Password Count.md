@@ -8,9 +8,10 @@ tags: ['security']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Holds the count of accounts with Duplicate passwords
+This document holds the count of accounts with duplicate passwords.
 
 ## Dependencies
 
@@ -22,18 +23,6 @@ Holds the count of accounts with Duplicate passwords
 |--------------------------|----------|---------|---------------|------------------------------------------------------|----------|
 | Duplicate Password Count  | Endpoint | Textbox | NA            | Holds the count of accounts that have duplicate passwords | Yes      |
 
-## ScreenShot
+## Screenshot
 
 ![Screenshot](../../../static/img/Company---Duplicate-Password-Count/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-

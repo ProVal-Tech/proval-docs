@@ -8,13 +8,14 @@ tags: ['connectwise', 'database']
 draft: false
 unlisted: false
 ---
+
 ## Steps to Apply Remote Monitor
 
 ### 1.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) to which the remote monitor should be applied.
 
 ### 2.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Group ID(s) of the relevant groups:  
 *(The string to replace can be found at the very bottom of the query, right after **WHERE**)*
 
 ```
@@ -30,7 +31,7 @@ SELECT '' AS `AgentID`,
 '900' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-itemproperty -Path HKLM://SYSTEM//CurrentControlSet//control//Lsa,HKLM://SYSTEM//CurrentControlSet//services//Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return /'Enabled/'}}} else {return /'Enabled/'}"' AS `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-itemproperty -Path HKLM://SYSTEM//CurrentControlSet//control//Lsa,HKLM://SYSTEM//CurrentControlSet//services//Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return /'Enabled/'}}} else {return /'Enabled/'}\"' AS `DataOut`,
 '16' AS `Comparor`,
 '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(Enabled)|10|(Enabled)' AS `DataIn`,
 '' AS `IDField`,
@@ -85,7 +86,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ```
 
 ### 3.
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```
 INSERT INTO groupagents 
@@ -100,7 +101,7 @@ SELECT '' AS `AgentID`,
 '900' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$US = (Get-itemproperty -Path HKLM://SYSTEM//CurrentControlSet//control//Lsa,HKLM://SYSTEM//CurrentControlSet//services//Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return /'Enabled/'}}} else {return /'Enabled/'}"' AS `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-itemproperty -Path HKLM://SYSTEM//CurrentControlSet//control//Lsa,HKLM://SYSTEM//CurrentControlSet//services//Lsa -ErrorAction SilentlyContinue);if($US) { foreach ($U in $US){if ($u.LmCompatibilityLevel -ne 5){return /'Enabled/'}}} else {return /'Enabled/'}\"' AS `DataOut`,
 '16' AS `Comparor`,
 '10|^(()%7C %7C(OK)%7C(//r//n))$|11|(^(()%7C %7C(OK)%7C(//r//n))$)%7C(Enabled)|10|(Enabled)' AS `DataIn`,
 '' AS `IDField`,
@@ -160,15 +161,3 @@ Now execute your query from a RAWSQL monitor set.
 ### 5.
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
-
-
-
-
-
-
-
-
-
-
-
-

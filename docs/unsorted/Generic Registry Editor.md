@@ -8,9 +8,10 @@ tags: ['security', 'setup', 'update', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script will create or modify the registry for multiple keys/names/values/types.
+This script will create or modify the registry for multiple keys, names, values, and types.
 
 ## Sample Run
 
@@ -20,16 +21,16 @@ This script will create or modify the registry for multiple keys/names/values/ty
 
 | Name  | Description                                           |
 |-------|-------------------------------------------------------|
-| psout | It contains the status of the registry set or not     |
+| psout | Contains the status of whether the registry was set or not |
 
 #### User Parameters
 
 | Name                | Example                                                   | Required | Description                                                                                                                                                 |
 |---------------------|-----------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Keys                | 'HKLM://SYSTEM//CurrentControlSet//Control','HKLM://SOFTWARE//Policies//Microsoft' | True     | The registry keys list that needs to be created or modified. It is required to put registry keys inside a single quote and separated by commas.          |
-| Names               | 'LsaCfgFlags','LsaCfgFlags'                              | True     | The names list that needs to be created or modified. It is required to put names inside a single quote and separated by commas.                          |
-| Values              | '0','0'                                                 | True     | The values list that needs to be created or modified. It is required to put values inside a single quote and separated by commas.                        |
-| Types               | 'DWORD','STRING'                                       | True     | The Types list that needs to be created or modified. It is required to put Types inside a single quote and separated by commas. The various keys are: String, ExpandString, Binary, DWord, MultiString, QWord |
+| Keys                | 'HKLM://SYSTEM//CurrentControlSet//Control', 'HKLM://SOFTWARE//Policies//Microsoft' | True     | The list of registry keys that need to be created or modified. It is required to put registry keys inside single quotes and separate them by commas.          |
+| Names               | 'LsaCfgFlags', 'LsaCfgFlags'                              | True     | The list of names that need to be created or modified. It is required to put names inside single quotes and separate them by commas.                          |
+| Values              | '0', '0'                                                 | True     | The list of values that need to be created or modified. It is required to put values inside single quotes and separate them by commas.                        |
+| Types               | 'DWORD', 'STRING'                                       | True     | The list of types that need to be created or modified. It is required to put types inside single quotes and separate them by commas. The various types are: String, ExpandString, Binary, DWord, MultiString, QWord |
 
 ## Output
 
@@ -37,8 +38,8 @@ This script will create or modify the registry for multiple keys/names/values/ty
 
 ## FAQ
 
-1. What are the various Property types and what do they stand for?  
-   The various property types are: String, ExpandString, Binary, DWord, MultiString, QWord  
+1. What are the various property types and what do they stand for?  
+   The various property types are: String, ExpandString, Binary, DWord, MultiString, QWord.  
    They stand for:  
    - String: Equivalent to REG_SZ in the Windows Registry.  
    - ExpandString: Equivalent to REG_EXPAND_SZ in the Windows Registry.  
@@ -47,19 +48,6 @@ This script will create or modify the registry for multiple keys/names/values/ty
    - MultiString: Equivalent to REG_MULTI_SZ in the Windows Registry.  
    - QWord: Equivalent to REG_QWORD in the Windows Registry.  
 
-2. Does the length of the parameters required to be the same for getting it to work?  
-   Yes, the parameter needed to be of the same length.  
-   For example: If you have put two keys for modifications, you have to provide two names, two values, and two types irrespective of whether any of the parameters have the same value or not.
-
-
-
-
-
-
-
-
-
-
-
-
-
+2. Does the length of the parameters need to be the same for the script to work?  
+   Yes, the parameters must be of the same length.  
+   For example: If you provide two keys for modification, you must also provide two names, two values, and two types, regardless of whether any of the parameters have the same value or not.

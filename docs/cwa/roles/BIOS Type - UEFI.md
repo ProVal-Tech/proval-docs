@@ -8,25 +8,13 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role definition helps you track down machines with UEFI BIOS type.
+This role definition helps you track machines with UEFI BIOS type.
 
 ## Settings
 
 | Detection String                       | Comparator    | Result | Applicable OS |
 |----------------------------------------|---------------|--------|----------------|
 | \{%@bcdedit | find /i "path"@%}       | Regex Match   | .efi   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-
-

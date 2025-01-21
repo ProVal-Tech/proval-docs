@@ -8,19 +8,7 @@ tags: ['active-directory', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
-## Summary:
 
-Restore Profile for Active User  
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
-
+Restore Profile for Active User

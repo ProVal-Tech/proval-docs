@@ -8,13 +8,14 @@ tags: ['database', 'security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-Stores information about the existing super admins. This is used as a challenge comparison to determine if a new super admin was added by the script [Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>).
+This document stores information about the existing super admins. It is used as a challenge comparison to determine if a new super admin was added by the script [Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>).
 
 ## Dependencies
 
-[Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>)
+This document relies on the script [Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>).
 
 ## Table
 
@@ -24,15 +25,3 @@ Stores information about the existing super admins. This is used as a challenge 
 |-----------|----------|-----------------------------------------------|
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
-
-
-
-
-
-
-
-
-
-
-
-

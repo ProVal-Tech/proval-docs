@@ -8,14 +8,15 @@ tags: ['database', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Implementation Steps
 
-1. Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+1. Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
-2. Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the managed windows groups for workstations and servers.  
+2. Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the managed Windows groups for workstations and servers.  
    (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
-   ```
+   ```sql
    INSERT INTO groupagents 
    SELECT '' as `AgentID`,
    `groupid` as `GroupID`,
@@ -28,7 +29,7 @@ unlisted: false
    '300' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = /'SilentlyContinue/';$result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status; if($result -eq /'Running/'){return /'Service Running/' } else {Set-Service -Name /'RemoteAccess/' -StartupType Automatic; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Starttype; if($result -eq /'Automatic/'){Start-Service -Name /'RemoteAccess/'; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status;if($result -eq /'Running/'){return /'Service Running/'} else{return /'Service not Starting/'}} else {return /'Service Not Starting/'} }"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErrorActionPreference = /'SilentlyContinue/';$result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status; if($result -eq /'Running/'){return /'Service Running/' } else {Set-Service -Name /'RemoteAccess/' -StartupType Automatic; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Starttype; if($result -eq /'Automatic/'){Start-Service -Name /'RemoteAccess/'; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status;if($result -eq /'Running/'){return /'Service Running/'} else{return /'Service not Starting/'}} else {return /'Service Not Starting/'} }\"' as `DataOut`,
    '1' as `Comparor`,
    'Service Running' as `DataIn`,
    '' as `IDField`,
@@ -83,9 +84,9 @@ unlisted: false
    AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Development - RemoteAccess Service Check')
    ```
 
-3. An example of a query with a groupid:
+3. An example of a query with a group ID:
 
-   ```
+   ```sql
    INSERT INTO groupagents 
    SELECT '' as `AgentID`,
    `groupid` as `GroupID`,
@@ -98,7 +99,7 @@ unlisted: false
    '300' as `interval`,
    '127.0.0.1' as `Where`,
    '7' as `What`,
-   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = /'SilentlyContinue/';$result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status; if($result -eq /'Running/'){return /'Service Running/' } else {Set-Service -Name /'RemoteAccess/' -StartupType Automatic; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Starttype; if($result -eq /'Automatic/'){Start-Service -Name /'RemoteAccess/'; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status;if($result -eq /'Running/'){return /'Service Running/'} else{return /'Service not Starting/'}} else {return /'Service Not Starting/'} }"' as `DataOut`,
+   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErrorActionPreference = /'SilentlyContinue/';$result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status; if($result -eq /'Running/'){return /'Service Running/' } else {Set-Service -Name /'RemoteAccess/' -StartupType Automatic; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Starttype; if($result -eq /'Automatic/'){Start-Service -Name /'RemoteAccess/'; $result = Get-Service -Name /'RemoteAccess/' | Select-Object -ExpandProperty Status;if($result -eq /'Running/'){return /'Service Running/'} else{return /'Service not Starting/'}} else {return /'Service Not Starting/'} }\"' as `DataOut`,
    '1' as `Comparor`,
    'Service Running' as `DataIn`,
    '' as `IDField`,
@@ -156,15 +157,3 @@ unlisted: false
 4. Now execute your query from a RAWSQL monitor set.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-
-

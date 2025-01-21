@@ -8,39 +8,28 @@ tags: ['security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this monitor is to ensure that when the EDFs "Restrict Vendor Access" EDFs are checked within automate, it automatically restricts the machines in SC.
+The purpose of this monitor is to ensure that when the "Restrict Vendor Access" EDFs are checked within Automate, it automatically restricts the machines in the system.
 
 ## Dependencies
 
-Below EDFs must be created before importing the monitor:
+The following EDFs must be created before importing the monitor:
 
-- Select Client EDF "Restrict Vendor Access" to select Whole client for Vendor Restriction  
+- **Select Client EDF**: "Restrict Vendor Access" to select the whole client for vendor restriction  
   ![Image](../../../static/img/Automatically-Restrict-Vendor-Machines-in-SC/image_1.png)
 
-- Select Location EDF "Restrict Vendor Access" to select the Whole location for Vendor Restriction  
+- **Select Location EDF**: "Restrict Vendor Access" to select the whole location for vendor restriction  
   ![Image](../../../static/img/Automatically-Restrict-Vendor-Machines-in-SC/image_2.png)
 
-- Select Computer EDF "Restrict Vendor Access" to select a machine for Vendor Restriction  
+- **Select Computer EDF**: "Restrict Vendor Access" to select a machine for vendor restriction  
   ![Image](../../../static/img/Automatically-Restrict-Vendor-Machines-in-SC/image_3.png)
 
 ## Target
 
-All Operating Systems
+All operating systems
 
 ## Alert Template
 
 - `△ Custom - Execute Script - Update Vendor Restricted Property`
-
-
-
-
-
-
-
-
-
-
-
-

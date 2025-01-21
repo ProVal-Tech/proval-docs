@@ -8,6 +8,7 @@ tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Mark this custom field to exclude the site from Winget Update All Task creation and remove the created tasks for the site's Windows 10 and 11 computers.
@@ -16,23 +17,11 @@ Marking this custom field will exclude the machines from [CW RMM - Machine Group
 
 ## Details
 
-| Field Name                        | Level | Type | Default Value | Description                                                                                     | Editable |
-|-----------------------------------|-------|------|---------------|-------------------------------------------------------------------------------------------------|----------|
-| WingetUpdateAll_Task_Exclude      | SITE  | Flag | No            | Mark this custom field to exclude the site from Winget Update All Task creation and remove the created task. | Yes      |
+| Field Name                       | Level | Type | Default Value | Description                                                                                   | Editable |
+|----------------------------------|-------|------|---------------|-----------------------------------------------------------------------------------------------|----------|
+| WingetUpdateAll_Task_Exclude     | SITE  | Flag | No            | Mark this custom field to exclude the site from Winget Update All Task creation and remove the created task. | Yes      |
 
-## ScreenShot
+## Screenshots
 
 ![Screenshot 1](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_2.png)  
-
-
-
-
-
-
-
-
-
-
-
-

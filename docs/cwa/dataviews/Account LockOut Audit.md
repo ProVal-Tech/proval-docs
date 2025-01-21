@@ -8,9 +8,10 @@ tags: ['sql']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the account lock detailed information of both local or domain users.
+This document provides detailed information about account locks for both local and domain users.
 
 ## Dependencies
 
@@ -24,20 +25,20 @@ This dataview shows the account lock detailed information of both local or domai
 | ------------------ | ------------------------------------------------------ |
 | Client             | Client name of the agent                               |
 | Location           | Location name of the agent                             |
-| Computer           | Computer Name of the agent                             |
-| Operating System   | Operating system info of the agent                     |
-| Last Contact       | Last contact of agent with the RMM                     |
-| User Name          | User Name locked out                                   |
-| Local User         | Locked user detail whether local or domain             |
-| Local Admin        | Locked user info whether local admin or not            |
+| Computer           | Computer name of the agent                             |
+| Operating System   | Operating system information of the agent              |
+| Last Contact       | Last contact of the agent with the RMM                |
+| User Name          | User name that was locked out                          |
+| Local User         | Indicates whether the locked user is local or domain   |
+| Local Admin        | Indicates whether the locked user is a local admin     |
 | Last Logon of User | Last login date of the locked user                     |
-| Password           | Locked user password information whether set or not    |
-| Account Lock Date  | Locked user date/time when the account locked          |
-| Script Run Time    | Script run time to show when the account lock detected |
+| Password           | Indicates whether the locked user’s password is set    |
+| Account Lock Date  | Date and time when the account was locked              |
+| Script Run Time    | Script run time indicating when the account lock was detected |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   c.clientid, 
   c.locationid, 
@@ -60,16 +61,3 @@ FROM
   JOIN locations l ON l.`LocationID` = c.`LocationID` 
   JOIN plugin_proval_account_lock p ON p.computerid = c.`ComputerID`
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['dell', 'installation', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Downloads and runs DellCMDUpdate from ProVal App Repo
+This document describes how to download and run DellCMDUpdate from the ProVal App Repository.
 
 ## Sample Run
 
@@ -18,28 +19,16 @@ Downloads and runs DellCMDUpdate from ProVal App Repo
 
 ## Dependencies
 
-Dell manufactured endpoint
+- Dell manufactured endpoint
 
 ## Variables
 
-none
+- None
 
 ## Process
 
-Run Procedure
+- Run the procedure as outlined.
 
 ## Output
 
-workingdir/System/DellCMDUpdate-log.txt
-
-
-
-
-
-
-
-
-
-
-
-
+- The log file can be found at: `workingdir/System/DellCMDUpdate-log.txt`

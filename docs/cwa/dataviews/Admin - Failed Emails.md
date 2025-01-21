@@ -8,9 +8,10 @@ tags: ['database', 'report']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will display the data from the failedemails table in Automate.
+This DataView displays the data from the `failedemails` table in Automate.
 
 ## Dependencies
 
@@ -22,20 +23,8 @@ None
 |-----------|-------------------------------------------------------------------------------------------------|
 | To        | The email address where Automate attempted to send the email                                   |
 | From      | The email address that Automate tried to send the email from                                   |
-| CC        | Will list any email addresses in the "CC" section of the email                                 |
+| CC        | Lists any email addresses in the "CC" section of the email                                     |
 | Subject   | The subject of the email                                                                        |
 | Body      | The body of the email                                                                           |
 | FailDate  | The date the email failed to send                                                               |
 | ErrorMsg  | The error message gathered by Automate when the email failed to send                           |
-
-
-
-
-
-
-
-
-
-
-
-

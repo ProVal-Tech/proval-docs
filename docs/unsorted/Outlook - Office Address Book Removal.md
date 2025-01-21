@@ -8,9 +8,10 @@ tags: ['performance', 'setup', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-The script will remove and reset the 'Offline Address Books' folder for all users.
+This script will remove and reset the 'Offline Address Books' folder for all users.
 
 ## Sample Run
 
@@ -24,21 +25,8 @@ The script will remove and reset the 'Offline Address Books' folder for all user
 
 ## Process
 
-The script will remove and reset the 'Offline Address Books' folder which is under path "c:/users/@everyuser@/AppData/Local/Microsoft/Outlook/Offline Address Books".
+The script will remove and reset the 'Offline Address Books' folder located at the path `C:/Users/@everyuser@/AppData/Local/Microsoft/Outlook/Offline Address Books`.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

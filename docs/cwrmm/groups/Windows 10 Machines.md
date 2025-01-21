@@ -8,30 +8,31 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Windows 10 Machines 
+This document outlines the process for creating a dynamic group specifically for Windows 10 machines.
 
-## Group Creation 
+## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
    ![Image](../../../static/img/Windows-10-Machines/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
    ![Image](../../../static/img/Windows-10-Machines/image_2.png)  
-   This page will appear after clicking on the `Dynamic Group` button:  
+   The following page will appear after clicking the `Dynamic Group` button:  
    ![Image](../../../static/img/Windows-10-Machines/image_3.png)
 
 3. Set the group name to `Windows 10 Machines`.  
    Description: `Windows 10 Machines`  
    ![Image](../../../static/img/Windows-10-Machines/image_4.png)
 
-4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
+4. Click the `+ Add Criteria` button in the `Criteria` section of the group.  
    ![Image](../../../static/img/Windows-10-Machines/image_5.png)  
-   This search box will appear.  
+   The following search box will appear.  
    ![Image](../../../static/img/Windows-10-Machines/image_6.png)
 
-5. Search and select the `OS` criteria.  
+5. Search for and select the `OS` criteria.  
    ![Image](../../../static/img/Windows-10-Machines/image_7.png)  
    Select `Microsoft Windows 10` in the comparison condition.  
    ![Image](../../../static/img/Windows-10-Machines/image_8.png)  
@@ -41,19 +42,7 @@ Windows 10 Machines
 6. Click the `Save` button to save/create the group.  
    ![Image](../../../static/img/Windows-10-Machines/image_10.png)
 
-## Completed Group 
+## Completed Group
 
 ![Image](../../../static/img/Windows-10-Machines/image_11.png)  
 ![Image](../../../static/img/Windows-10-Machines/image_12.png)
-
-
-
-
-
-
-
-
-
-
-
-

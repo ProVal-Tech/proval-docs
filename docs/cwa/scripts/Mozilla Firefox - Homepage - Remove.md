@@ -8,9 +8,10 @@ tags: ['firefox', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-It is an Automate implementation of the agnostic script [SWM - Software Configuration - Remove-FirefoxHomepage](<../../powershell/Remove-FirefoxHomepage.md>) to remove the policy for an enforced homepage in Mozilla Firefox.
+This document outlines an Automate implementation of the agnostic script [SWM - Software Configuration - Remove-FirefoxHomepage](<../../powershell/Remove-FirefoxHomepage.md>) to remove the policy for an enforced homepage in Mozilla Firefox.
 
 ## Sample Run
 
@@ -18,20 +19,8 @@ It is an Automate implementation of the agnostic script [SWM - Software Configur
 
 ## Dependencies
 
-[SWM - Software Configuration - Remove-FirefoxHomepage](<../../powershell/Remove-FirefoxHomepage.md>)
+- [SWM - Software Configuration - Remove-FirefoxHomepage](<../../powershell/Remove-FirefoxHomepage.md>)
 
 ## Output
 
 - Script Logs
-
-
-
-
-
-
-
-
-
-
-
-

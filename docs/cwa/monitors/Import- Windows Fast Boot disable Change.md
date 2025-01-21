@@ -8,35 +8,36 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Implementation
 
-### Step 1.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+### Step 1
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
-### Step 2.
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+### Step 2
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```sql
-#Insert Search
+# Insert Search
 INSERT INTO `sensorchecks` 
 SELECT 
 '' as `SensID`,
-'Windows 10/11 Machines'  as `Name`, 
+'Windows 10/11 Machines' as `Name`, 
 'SELECT /r/n   computers.computerid as `Computer Id`,/r/n   computers.name as `Computer Name`,/r/n   clients.name as `Client Name`,/r/n   computers.domain as `Computer Domain`,/r/n   computers.username as `Computer User`,/r/n   inv_operatingsystem.name as `Computer.OS.Name`/r/nFROM Computers /r/nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)/r/nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)/r/nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)/r/n WHERE /r/n((((inv_operatingsystem.name like '%Windows 10%') OR (inv_operatingsystem.name like '%Windows 11%'))))/r/n' as `SQL`,
 '4' as `QueryType`,
 'Select|||||||^' as `ListData`,
 '0' as `FolderID`,
 '89790899-2354-4e0f-81a5-ceb493359b21' as `GUID`,
-'\\<LabTechAbstractSearch>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>OrNode\\</st>\\<cn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.OS.Name\\</lon>\\<lok>Computer.OS.Name\\</lok>\\<lmo>TextLike\\</lmo>\\<dv>%Windows 10%\\</dv>\\<dk>%Windows 10%\\</dk>\\</asn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.OS.Name\\</lon>\\<lok>Computer.OS.Name\\</lok>\\<lmo>TextLike\\</lmo>\\<dv>%Windows 11%\\</dv>\\<dk>%Windows 11%\\</dk>\\</asn>\\</cn>\\</asn>\\</cn>\\</asn>\\</LabTechAbstractSearch>' as `SearchXML`,
+'\\\\<LabTechAbstractSearch>\\\\<asn>\\\\<st>AndNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>OrNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 10%\\\\</dv>\\\\<dk>%Windows 10%\\\\</dk>\\\\</asn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 11%\\\\</dv>\\\\<dk>%Windows 11%\\\\</dk>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From SensorChecks where `GUID` = '89790899-2354-4e0f-81a5-ceb493359b21') = 0 ;
+Where (SELECT count(*) From SensorChecks where `GUID` = '89790899-2354-4e0f-81a5-ceb493359b21') = 0;
 ```
 
 ```sql
-#Insert Remote Monitor with Limit to search
+# Insert Remote Monitor with Limit to search
 SET @SearchID = (SELECT sensid FROM sensorchecks where `GUID` = '89790899-2354-4e0f-81a5-ceb493359b21');
 SET @TicketCategorySet = 0;
 SET @DefaultCreateTicket = (SELECT alertactionid FROM alerttemplate WHERE NAME = 'Default - Do Nothing');
@@ -52,7 +53,7 @@ INSERT INTO groupagents
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}\"' as `DataOut`,
 '9' as `Comparor`,
 'Failed' as `DataIn`,
 '' as `IDField`,
@@ -99,6 +100,8 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
@@ -108,29 +111,29 @@ WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
 AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Windows Fast Boot Disable [Change]')
 ```
 
-### Step 3.
-An example of a query with a groupid:
+### Step 3
+An example of a query with a group ID:
 
 ```sql
-#Insert Search
+# Insert Search
 INSERT INTO `sensorchecks` 
 SELECT 
 '' as `SensID`,
-'Windows 10/11 Machines'  as `Name`, 
+'Windows 10/11 Machines' as `Name`, 
 'SELECT /r/n   computers.computerid as `Computer Id`,/r/n   computers.name as `Computer Name`,/r/n   clients.name as `Client Name`,/r/n   computers.domain as `Computer Domain`,/r/n   computers.username as `Computer User`,/r/n   inv_operatingsystem.name as `Computer.OS.Name`/r/nFROM Computers /r/nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)/r/nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)/r/nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)/r/n WHERE /r/n((((inv_operatingsystem.name like '%Windows 10%') OR (inv_operatingsystem.name like '%Windows 11%'))))/r/n' as `SQL`,
 '4' as `QueryType`,
 'Select|||||||^' as `ListData`,
 '0' as `FolderID`,
 '89790899-2354-4e0f-81a5-ceb493359b21' as `GUID`,
-'\\<LabTechAbstractSearch>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>OrNode\\</st>\\<cn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.OS.Name\\</lon>\\<lok>Computer.OS.Name\\</lok>\\<lmo>TextLike\\</lmo>\\<dv>%Windows 10%\\</dv>\\<dk>%Windows 10%\\</dk>\\</asn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.OS.Name\\</lon>\\<lok>Computer.OS.Name\\</lok>\\<lmo>TextLike\\</lmo>\\<dv>%Windows 11%\\</dv>\\<dk>%Windows 11%\\</dk>\\</asn>\\</cn>\\</asn>\\</cn>\\</asn>\\</LabTechAbstractSearch>' as `SearchXML`,
+'\\\\<LabTechAbstractSearch>\\\\<asn>\\\\<st>AndNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>OrNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 10%\\\\</dv>\\\\<dk>%Windows 10%\\\\</dk>\\\\</asn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 11%\\\\</dv>\\\\<dk>%Windows 11%\\\\</dk>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From SensorChecks where `GUID` = '89790899-2354-4e0f-81a5-ceb493359b21') = 0 ;
+Where (SELECT count(*) From SensorChecks where `GUID` = '89790899-2354-4e0f-81a5-ceb493359b21') = 0;
 ```
 
 ```sql
-#Insert Remote Monitor with Limit to search
+# Insert Remote Monitor with Limit to search
 SET @SearchID = (SELECT sensid FROM sensorchecks where `GUID` = '89790899-2354-4e0f-81a5-ceb493359b21');
 SET @TicketCategorySet = 0;
 SET @DefaultCreateTicket = (SELECT alertactionid FROM alerttemplate WHERE NAME = 'Default - Do Nothing');
@@ -146,7 +149,7 @@ INSERT INTO groupagents
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}\"' as `DataOut`,
 '9' as `Comparor`,
 'Failed' as `DataIn`,
 '' as `IDField`,
@@ -185,6 +188,9 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+'SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -201,27 +207,15 @@ WHERE m.groupid IN (1737)
 AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Windows Fast Boot Disable [Change]')
 ```
 
-### Step 4.
-Now execute your query from an RAWSQL monitor set. Once the query is executed, relaunch the control center.
+### Step 4
+Now execute your query from a RAWSQL monitor set. Once the query is executed, relaunch the control center.
 
 ![Control Center](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_1.png)
 
 Then re-open the group where the monitor is created. The monitor will come up with the search 'Windows 10/11 Machines' added to the LIMIT.
 
-### Step 5.
+### Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
 
 ![Remote Monitor Tab 1](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_2.png)  
 ![Remote Monitor Tab 2](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

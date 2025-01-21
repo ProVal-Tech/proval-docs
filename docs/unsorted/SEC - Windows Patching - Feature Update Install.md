@@ -8,9 +8,10 @@ tags: ['security', 'update', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-Runs [Install-FeatureUpdate](<../powershell/Install-FeatureUpdate.md>) on the endpoint to install the latest Windows Feature Update
+Runs [Install-FeatureUpdate](<../powershell/Install-FeatureUpdate.md>) on the endpoint to install the latest Windows Feature Update.
 
 ## Dependencies
 
@@ -57,24 +58,10 @@ Document the various variables in the script. Delete any section that is not rel
 
 The location and method by which this script returns data.
 
-Ex:
+Examples:
 
 - Script log
 - Script state
 - Local file on computer
 - Dataview
 - etc.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

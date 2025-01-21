@@ -8,11 +8,12 @@ tags: ['database', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Step 1
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
 ## Step 2
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups:  
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups:  
 *(The string to replace can be found at the very bottom of the query, right after WHERE)*
 
 ```sql
@@ -28,7 +29,7 @@ INSERT INTO groupagents
   '21600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}"' as `DataOut`,
+  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}\"' as `DataOut`,
   '16' as `Comparor`,
   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|^(()%7C %7C(OK)%7C(//r//n))$%7C(Failed)|10|Failed' as `DataIn`,
   '' as `IDField`,
@@ -84,7 +85,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ```
 
 ## Step 3
-An example of a query with a groupid:
+An example of a query with a group ID:
 
 ```sql
 INSERT INTO groupagents 
@@ -99,7 +100,7 @@ INSERT INTO groupagents
   '21600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}"' as `DataOut`,
+  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}\"' as `DataOut`,
   '16' as `Comparor`,
   '10|^(()%7C %7C(OK)%7C(//r//n))$|11|^(()%7C %7C(OK)%7C(//r//n))$%7C(Failed)|10|Failed' as `DataIn`,
   '' as `IDField`,
@@ -159,16 +160,4 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab.  
-**DO NOT** Apply any alert template to this monitor set.
-
-
-
-
-
-
-
-
-
-
-
-
+**DO NOT** apply any alert template to this monitor set.

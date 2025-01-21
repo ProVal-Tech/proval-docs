@@ -8,16 +8,17 @@ tags: ['application', 'installation', 'networking', 'security', 'software', 'win
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task is a CW RMM implementation of the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](<../../powershell/Install-CiscoSecureClient.md>). It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
 
-## Prerequisite
+## Prerequisites
 
-Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` and place it at a downloadable location as `Cisco_Secure_Client.zip`.
+Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` and place it in a downloadable location as `Cisco_Secure_Client.zip`.
 
 **NOTE**  
-To access/download these files, you will need a login to the Cisco portal. If you do not have a portal login, please create one and validate your access before attempting to download the files or you will get an error like this:  
+To access/download these files, you will need a login to the Cisco portal. If you do not have a portal login, please create one and validate your access before attempting to download the files, or you will receive an error like this:  
 ![Error Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_1.png)
 
 The file can be downloaded from [Cisco Software Download](https://software.cisco.com/download/home/286330811/type/282364313/release/5.0.03076). Cisco changes this download URL for each release. Prefer downloading the latest stable version of the tool.  
@@ -41,14 +42,14 @@ Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secu
 
 | Name      | Description                                                                                                                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter | Parameter Stored in the [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>) custom field for the Company.                                            |
+| Parameter | Parameter stored in the [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>) custom field for the company.                                            |
 | Output    | Stores the output of the previously executed PowerShell script, and its value changes after each execution of a PowerShell script.                                                                                         |
 
 ## Script Creation
 
 Create the company-level Custom Field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>).
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 **Name:** `Cisco Secure Client Package Installation (Windows)`  
 **Description:** `How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](<../../powershell/Install-CiscoSecureClient.md>)  
@@ -81,7 +82,7 @@ Type `-downloadURL` in the `Input Value and Variable` field and press the `Enter
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then` logic after the `Output Contains` condition.  
 Select `Script Exit` function.  
-Paste this line in the `Error Message` box and Click the `Save` button.  
+Paste this line in the `Error Message` box and click the `Save` button.  
 `Parameter is not set at the company level Custom field Cisco Secure Client Parameter.  
 Exiting script with error.`
 
@@ -89,7 +90,7 @@ Exiting script with error.`
 
 Insert a new row by clicking the `Add Row` button.  
 Select `Script Log` function.  
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Parameters Used:  
 @Parameter@`
 
@@ -97,7 +98,7 @@ Paste this line in the `Script Log Message` box and Click the `Save` button.
 
 Insert a new row by clicking the `Add Row` button.  
 Select `PowerShell Script` function.  
-Paste in the following PowerShell script, and set the expected time of script execution to `900` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `900` seconds, and click the `Save` button.
 
 ```
 #region Setup - Variables
@@ -129,13 +130,13 @@ $workingpath = $WorkingDirectory
 #endregion
 ```
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 #### Row 5 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
 Select `Script Log` function.  
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `PowerShell Output:  
 %Output%`
 
@@ -143,24 +144,24 @@ Paste this line in the `Script Log Message` box and Click the `Save` button.
 
 Insert a new row by clicking the `Add Row` button.  
 Select `PowerShell Script` function.  
-Paste in the following PowerShell script, and set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $logPath = 'C:/ProgramData/_automation/script/Install-CiscoSecureClient/Install-CiscoSecureClient-log.txt'
-if ( Test-Path $logPath ) {
+if (Test-Path $logPath) {
     Get-Content -Path $logPath 
 } else {
     return 'Log file not generated'
 }
 ```
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 #### Row 7 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
 Select `Script Log` function.  
-Paste this line in the `Script Log Message` box and Click the `Save` button.  
+Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Log Content:  
 %Output%`
 
@@ -168,18 +169,18 @@ Paste this line in the `Script Log Message` box and Click the `Save` button.
 
 Insert a new row by clicking the `Add Row` button.  
 Select `PowerShell Script` function.  
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $errorLogPath = 'C:/ProgramData/_automation/script/Install-CiscoSecureClient/Install-CiscoSecureClient-Error.txt'
-if ( Test-Path $errorlogPath ) {
+if (Test-Path $errorLogPath) {
     Get-Content -Path $errorLogPath 
 } else {
     return 'Errors Logs not generated.'
 }
 ```
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 #### Row 9 Logic: If/Then/Else
 
@@ -199,12 +200,12 @@ Click the `Save` button for the `Error Message` prompt box without adding anythi
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic in the `Else` section.  
 Select `Script Exit` function.  
-Paste this line in the `Error Message` box and Click the `Save` button.  
+Paste this line in the `Error Message` box and click the `Save` button.  
 `Error Log Content:  
 %Output%`
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-Store the proper parameter at the company level custom field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>) before scheduling or running the script.
+Store the proper parameter at the company-level custom field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>) before scheduling or running the script.
 
 ## Completed Script
 
@@ -216,7 +217,7 @@ Store the proper parameter at the company level custom field [SWM - Software Ins
 
 - Core-VPN must be installed with any additional module.
 - All modules require that Core-VPN be installed.
-- When only installing Core-VPN you can expect to see the following.
+- When only installing Core-VPN, you can expect to see the following.
 
 ![Core-VPN Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_5.png)  
 ![Core-VPN Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_6.png)  
@@ -225,7 +226,7 @@ Store the proper parameter at the company level custom field [SWM - Software Ins
 
 ### Start Before Login
 
-- SBL stands for Start Before Login, it adds no direct user GUI, however it does add an entry into programs and features.
+- SBL stands for Start Before Login; it adds no direct user GUI, however, it does add an entry into programs and features.
 - It enables the execution of the AnyConnect VPN prior to a user being logged in.
 
 ![Start Before Login Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_9.png)
@@ -233,7 +234,7 @@ Store the proper parameter at the company level custom field [SWM - Software Ins
 ### Diagnostic and Reporting Tool
 
 - DART stands for Diagnostics and Reporting Tool.
-- When installing this you can expect to see the following items.
+- When installing this, you can expect to see the following items.
 
 ![DART Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_10.png)  
 ![DART Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_11.png)  
@@ -242,7 +243,7 @@ Store the proper parameter at the company level custom field [SWM - Software Ins
 ### Network Access Manager
 
 - NAM stands for Network Access Manager.
-- When installing this module you can expect to see the following items.
+- When installing this module, you can expect to see the following items.
 
 ![NAM Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_13.png)  
 ![NAM Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_14.png)  
@@ -273,14 +274,14 @@ Store the proper parameter at the company level custom field [SWM - Software Ins
 ### Umbrella
 
 - Umbrella installs the Cisco Umbrella module.
-- When installing this module you can expect to see the following:
+- When installing this module, you can expect to see the following:
 
 ![Umbrella Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_19.png)  
 ![Umbrella Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_20.png)  
 
 ## Uninstalling
 
-- When uninstalling this package, you can simply uninstall the Core-VPN module and it will remove all embedded modules except for the DART module, that module will have to be removed separately.
+- When uninstalling this package, you can simply uninstall the Core-VPN module, and it will remove all embedded modules except for the DART module; that module will have to be removed separately.
 
 ## FAQ
 
@@ -290,15 +291,3 @@ Store the proper parameter at the company level custom field [SWM - Software Ins
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

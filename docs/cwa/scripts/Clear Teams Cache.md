@@ -8,11 +8,12 @@ tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script clears the Cache for installed Microsoft Teams on the Windows Machines.
+This script clears the cache for installed Microsoft Teams on Windows machines.
 
-**Caution:** The script will forcibly terminate Microsoft Teams if running, and the application must be restarted manually afterwards.
+**Caution:** The script will forcibly terminate Microsoft Teams if it is running, and the application must be restarted manually afterwards.
 
 ## Sample Run
 
@@ -21,14 +22,3 @@ The script clears the Cache for installed Microsoft Teams on the Windows Machine
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['networking', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script creates an RDP shortcut on the desktop of each user on a Windows computer. It takes the target computer’s address or name from the `Target` parameter.
+This document describes a script that creates an RDP shortcut on the desktop of each user on a Windows computer. The script takes the target computer’s address or name from the `Target` parameter.
 
 ## Sample Run
 
@@ -26,18 +27,6 @@ The script creates an RDP shortcut on the desktop of each user on a Windows comp
 ## Output
 
 - Script Log
-- RDP shortcut on user's desktop:
+- RDP shortcut on the user's desktop:
   ![Shortcut Image 1](../../../static/img/Desktop-Shortcut---Create---RDP/image_2.png)
   ![Shortcut Image 2](../../../static/img/Desktop-Shortcut---Create---RDP/image_3.png)
-
-
-
-
-
-
-
-
-
-
-
-

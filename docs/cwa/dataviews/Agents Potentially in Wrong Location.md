@@ -8,35 +8,25 @@ tags: ['networking', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Dataview displays the machines that are placed in the wrong location. The location is verified based on the router address. The router IP for each location must be defined at the locations tab.
+This Dataview displays the machines that are placed in the wrong location. The location is verified based on the router address. The router IP for each location must be defined in the locations tab.
 
 ## Columns
 
-| Column                  | Description                                                       |
-|------------------------|-------------------------------------------------------------------|
-| Computerid             | Computerid                                                        |
-| Agent Name             | Machine Name                                                      |
-| Current_ClientID       | Clientid of the client, the machine currently belongs to          |
-| Current_Client_Name     | Client Name the machine currently belongs to                       |
-| Current_Locationid     | Locationid of the location, the machine currently belongs to      |
-| Current_Location_Name   | Location Name the machine currently belongs to                    |
-| Machine Router Address  | Machines Router Address                                           |
-| New_Location_Router_Address | Matching locations Router address                                 |
-| New_locationid         | Matching Locations Locationid                                      |
-| New_Location_Name      | Matching Locations Name                                           |
-| New_ClientID           | Matching Clients Clientid                                         |
-| New_Client_Name        | Matching Clients Name                                             |
-
-
-
-
-
-
-
-
-
-
-
+| Column                     | Description                                                        |
+|---------------------------|--------------------------------------------------------------------|
+| Computer ID               | Computer ID                                                       |
+| Agent Name                | Machine Name                                                     |
+| Current Client ID         | Client ID of the client the machine currently belongs to          |
+| Current Client Name       | Client Name the machine currently belongs to                      |
+| Current Location ID       | Location ID of the location the machine currently belongs to      |
+| Current Location Name     | Location Name the machine currently belongs to                    |
+| Machine Router Address     | Machine's Router Address                                          |
+| New Location Router Address| Matching location's Router Address                                 |
+| New Location ID           | Matching Location's Location ID                                    |
+| New Location Name         | Matching Location's Name                                          |
+| New Client ID             | Matching Client's Client ID                                       |
+| New Client Name           | Matching Client's Name                                            |
 

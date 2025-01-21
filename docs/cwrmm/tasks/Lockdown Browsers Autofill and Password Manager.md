@@ -8,13 +8,14 @@ tags: ['browsers', 'security', 'setup', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script can disable the password manager and auto-fill address and credit card information for the Edge, Chrome, Brave, and Firefox browsers. Moreover, it can delete the saved passwords, but it will forcefully close the browsers. Microsoft Edge will also be closed if the script is used to disable the Edge Wallet.
+The script can disable the password manager and autofill address and credit card information for the Edge, Chrome, Brave, and Firefox browsers. Moreover, it can delete the saved passwords, but it will forcefully close the browsers. Microsoft Edge will also be closed if the script is used to disable the Edge Wallet.
 
 ## Lockdown Browsers Password Manager
 
-It's important to know that for browsers based on Chromium (like Google Chrome, Mozilla Firefox, and Microsoft Edge), turning off the Password Manager won't stop the Autofill (or Sign in Automatically) feature. If Autofill (or Sign in Automatically) is enabled and there are saved passwords, it will still automatically fill in credentials for websites. But, if the Password Manager is disabled, new passwords won't be saved, and the browser won't ask to store passwords. However, the saved passwords will still work.
+It's important to know that for browsers based on Chromium (like Google Chrome, Microsoft Edge, and Brave), turning off the Password Manager won't stop the Autofill (or Sign in Automatically) feature. If Autofill (or Sign in Automatically) is enabled and there are saved passwords, it will still automatically fill in credentials for websites. However, if the Password Manager is disabled, new passwords won't be saved, and the browser won't ask to store passwords. The saved passwords will still work.
 
 For Firefox, turning off the Password Manager will also disable Autofill.
 
@@ -31,7 +32,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Mozilla Firefox Setting](../../../static/img/Lockdown-Browsers-Autofill-and-Password-Manager/image_4.png)
 
 **Note:**
-- The changes will only happen once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
+- The changes will only take effect once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
 
 ## Lockdown Chromium Browsers Credit Card Autofill
 
@@ -45,7 +46,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Brave Credit Card Setting](../../../static/img/Lockdown-Browsers-Autofill-and-Password-Manager/image_7.png)
 
 **Note:**
-- The changes will only happen once the browser is restarted if it's currently open.
+- The changes will only take effect once the browser is restarted if it's currently open.
 
 ## Lockdown Chromium Browsers Address Autofill
 
@@ -59,7 +60,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Brave Address Setting](../../../static/img/Lockdown-Browsers-Autofill-and-Password-Manager/image_10.png)
 
 **Note:**
-- The changes will only happen once the browser is restarted if it's currently open.
+- The changes will only take effect once the browser is restarted if it's currently open.
 
 ## Clear Browsers Saved Passwords
 
@@ -70,7 +71,7 @@ The task is designed to remove saved passwords from the following browsers:
 - Mozilla Firefox
 
 **Note:**  
-- If any of these browsers are running they will be forcefully closed.
+- If any of these browsers are running, they will be forcefully closed.
 
 ## Disable Edge Wallet
 
@@ -78,7 +79,7 @@ The task can disable the sync between Edge Wallet and the cloud. It should be di
 ![Edge Wallet](../../../static/img/Lockdown-Browsers-Autofill-and-Password-Manager/image_11.png)
 
 **Note:**  
-- If Microsoft Edge is running it will be forcefully closed.
+- If Microsoft Edge is running, it will be forcefully closed.
 
 ## Sample Run
 
@@ -91,9 +92,9 @@ The task can disable the sync between Edge Wallet and the cloud. It should be di
 | Name                     | Example                     | Accepted Values                                   | Default | Type  | Required | Description                                                          |
 |--------------------------|-----------------------------|---------------------------------------------------|---------|-------|----------|----------------------------------------------------------------------|
 | Browser                  | Chrome, Edge, Firefox       | Chrome, Edge, Firefox, Brave, All                 | All     | Text  | False    | Name of the Browser(s) to apply the changes for.                   |
-| DisablePasswordManager    | True                        | True or False                                     | True    | Text  | False    | Set this value = false to NOT disable the password manager for the browser(s). |
-| DisableAutofillAddress   | True                        | True or False                                     | True    | Text  | False    | Set this value = false to NOT disable the auto-filling of addresses for the browser(s). |
-| DisableAutofillCreditCard | True                        | True or False                                     | True    | Text  | False    | Set this value = false to NOT disable the auto-filling of credit card details for the browser(s). |
+| DisablePasswordManager    | True                        | True or False                                     | True    | Text  | False    | Set this value to false to NOT disable the password manager for the browser(s). |
+| DisableAutofillAddress   | True                        | True or False                                     | True    | Text  | False    | Set this value to false to NOT disable the autofilling of addresses for the browser(s). |
+| DisableAutofillCreditCard | True                        | True or False                                     | True    | Text  | False    | Set this value to false to NOT disable the autofilling of credit card details for the browser(s). |
 | RemoveSavedPassword       | False                       | True or False                                     | False   | Text  | False    | Setting this to true will remove the saved passwords from the browser(s). Browser(s) will be forcefully closed if they are running. |
 | DisableEdgeWallet         | False                       | True or False                                     | False   | Text  | False    | Setting this to true will disable the Microsoft Edge Wallet's sync. Microsoft Edge will be forcefully closed if it is running. It is mandatory to set this parameter to True to remove the saved password from Microsoft Edge. |
 
@@ -106,7 +107,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 ![Create Script Step 2](../../../static/img/Lockdown-Browsers-Autofill-and-Password-Manager/image_17.png)
 
 **Name:** Lockdown Browsers Autofill and Password Manager  
-**Description:** The script can disable the password manager and auto-fill address and credit card information for the Edge, Chrome, Brave, and Firefox browsers. Moreover, it can delete the saved passwords, but it will forcefully close the browsers. Microsoft Edge will also be closed if the script is used to disable the Edge Wallet.  
+**Description:** The script can disable the password manager and autofill address and credit card information for the Edge, Chrome, Brave, and Firefox browsers. Moreover, it can delete the saved passwords, but it will forcefully close the browsers. Microsoft Edge will also be closed if the script is used to disable the Edge Wallet.  
 **Category:** Application  
 ![Category](../../../static/img/Lockdown-Browsers-Autofill-and-Password-Manager/image_18.png)
 
@@ -347,7 +348,7 @@ foreach ($app in $Browser) {
                 }
             }
         }
-        # Delete Saved Passwords for chromium
+        # Delete Saved Passwords for Chromium
         if ($RemoveSavedPassword -eq $true -and $app -ne 'Firefox') {
             Write-Information "Stopping the process for $appName if it's running." -InformationAction Continue
             Get-Process -Name $process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$false -WarningAction SilentlyContinue
@@ -410,7 +411,7 @@ try {
 }
 
 # Set Parameters
-if ( !('@Browser@' -match 'Chrome|Edge|Brave|Firefox|All') -or '@Browser@' -match 'All' ) {
+if (!('@Browser@' -match 'Chrome|Edge|Brave|Firefox|All') -or '@Browser@' -match 'All') {
     $Browser = 'All'
 } else {
     $Browser = @()
@@ -500,15 +501,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
 
 

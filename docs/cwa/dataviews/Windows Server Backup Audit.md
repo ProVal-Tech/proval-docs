@@ -8,9 +8,10 @@ tags: ['backup', 'performance', 'report', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview shows the complete Windows Server Backup report and it is useful to show how the Windows Server Backup is running on every schedule basis.
+This dataview shows the complete Windows Server Backup report and is useful for demonstrating how the Windows Server Backup operates on a scheduled basis.
 
 ## Dependencies
 
@@ -26,46 +27,46 @@ This dataview shows the complete Windows Server Backup report and it is useful t
 | Location Name                               | Location name of the agent                                         |
 | Computer Name                               | Name of the agent                                                 |
 | Operating System                            | Operating system name of the agent                                 |
-| LastContact                                 | Last contact of the agent with the RMM                            |
+| Last Contact                                | Last contact of the agent with the RMM                            |
 | Next Backup Time                            | Next backup runtime                                               |
 | Last Successful Backup Time                 | Last successful backup time                                       |
 | Last Backup Time                            | Last backup runtime                                               |
 | Last Backup Status                          | Last backup health                                                |
-| Last Backup Target                          | Destination path where last backup stored                         |
-| Backup Operation Status During ScriptRan    | This shows whether the backup is in progress or completed         |
+| Last Backup Target                          | Destination path where the last backup is stored                  |
+| Backup Operation Status During Script Ran   | Indicates whether the backup is in progress or completed          |
 | Backup Start Date                           | Backup schedule date                                              |
-| Volumes To Backup                           | Volume which is backing up                                        |
-| Files to Backup                             | Files which is backing up                                         |
-| Exclude Files From Backup                   | Files which is excluded from backing                              |
-| Components to Backup                        | Components which is backing up                                     |
-| Bare Metal Recovery                         | It stands for a complete system restore, including the operating system and all system-specific configurations |
-| SystemState Backup                          | It contains the critical system components, including the registry, Active Directory, and system files required for system recovery |
-| Overwrite Old Format VHD                    | If enabled the old VHD files will be overwritten during subsequent backups |
-| ScriptRanDate                               | Script last run time                                             |
+| Volumes To Backup                           | Volumes that are being backed up                                   |
+| Files to Backup                             | Files that are being backed up                                     |
+| Exclude Files From Backup                   | Files that are excluded from backup                                |
+| Components to Backup                        | Components that are being backed up                                 |
+| Bare Metal Recovery                         | Refers to a complete system restore, including the operating system and all system-specific configurations |
+| System State Backup                         | Contains critical system components, including the registry, Active Directory, and system files required for system recovery |
+| Overwrite Old Format VHD                    | If enabled, old VHD files will be overwritten during subsequent backups |
+| Script Ran Date                             | Last run time of the script                                       |
 
 ## SQL Representation
 
-```
+```sql
 SELECT 
   c.clientid, 
   c.locationid, 
   c.computerid, 
-  cl.name as `Client Name`, 
-  l.name as `Location Name`, 
-  c.name as `Computer Name`, 
-  c.os as `Operating System`, 
+  cl.name AS `Client Name`, 
+  l.name AS `Location Name`, 
+  c.name AS `Computer Name`, 
+  c.os AS `Operating System`, 
   c.LastContact, 
   CONCAT(
     ROUND(c.uptime / 60 / 24, 0), 
     ' Day(s)'
-  ) as `Agent Uptime`, 
+  ) AS `Agent Uptime`, 
   pw.`Next Backup Time`, 
   pw.`Last Successful Backup Time`, 
   pw.`Last Backup Time`, 
-  case when pw.`Last Backup Status` = 0 then 'Success' ELSE 'Failed' END as `Last Backup Status`, 
+  CASE WHEN pw.`Last Backup Status` = 0 THEN 'Success' ELSE 'Failed' END AS `Last Backup Status`, 
   pw.`Last Backup Target`, 
   pw.`Backup Operation Status During ScriptRan`, 
-  pw.`Backup Start Date` as `Backup Scheduled Date`, 
+  pw.`Backup Start Date` AS `Backup Scheduled Date`, 
   pw.`Volumes To Backup`, 
   pw.`Files to Backup`, 
   pw.`Exclude Files From Backup`, 
@@ -80,17 +81,3 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,17 +8,5 @@ tags: ['installation', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 It seems that there is no HTML document provided for conversion. Please provide the HTML content that you would like to be converted to Markdown, and I'll be happy to assist you!
-
-
-
-
-
-
-
-
-
-
-
-
-

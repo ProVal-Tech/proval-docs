@@ -8,6 +8,7 @@ tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Optional container to hold data retrieved from [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>).
@@ -23,18 +24,18 @@ Modified by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-Cr
 
 | Column                 | Type    | Explanation                                    |
 |-----------------------|---------|------------------------------------------------|
-| ComputerID            | INT     | The associated computerID.                     |
-| Crash_Time            | VARCHAR | The time of the crash                          |
-| Processor             | VARCHAR | The Processor type                             |
-| Full_Path             | VARCHAR | The full path to the dump file                |
+| ComputerID            | INT     | The associated computer ID.                    |
+| Crash_Time            | VARCHAR | The time of the crash.                         |
+| Processor             | VARCHAR | The processor type.                            |
+| Full_Path             | VARCHAR | The full path to the dump file.               |
 | Stack_Address_2       | VARCHAR | A stack address.                               |
-| Dump_File_Size        | VARCHAR | The dump file size                            |
-| Caused_By_Address     | VARCHAR | The address of what caused the issue          |
+| Dump_File_Size        | VARCHAR | The dump file size.                           |
+| Caused_By_Address     | VARCHAR | The address of what caused the issue.         |
 | Stack_Address_3       | VARCHAR | A stack address.                               |
-| Company               | VARCHAR | The company if known.                         |
+| Company               | VARCHAR | The company, if known.                        |
 | File_Description      | VARCHAR | The file description.                          |
 | Bug_Check_Code        | VARCHAR | The bug check code.                           |
-| Parameter_4           | VARCHAR | A parameter of some sorts.                     |
+| Parameter_4           | VARCHAR | A parameter of some sort.                     |
 | Minor_Version         | INT     | The minor version.                            |
 | Parameter_2           | VARCHAR | A parameter of sorts.                         |
 | Dump_File             | VARCHAR | The name of the dump file.                    |
@@ -46,18 +47,5 @@ Modified by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-Cr
 | Bug_Check_String      | VARCHAR | The bug check string.                         |
 | File_Version          | VARCHAR | The file version.                             |
 | Dump_File_Time        | VARCHAR | The dump file time.                           |
-| Computer_Name         | VARCHAR | The computer name, - sometimes not shown.     |
+| Computer_Name         | VARCHAR | The computer name; sometimes not shown.       |
 | Processors_count      | INT     | The number of processors.                      |
-
-
-
-
-
-
-
-
-
-
-
-
-

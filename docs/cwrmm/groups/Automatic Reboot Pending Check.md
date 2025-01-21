@@ -8,15 +8,16 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This group is designed to schedule the task 'Automatic Reboot Pending Check' to set the auto reboot pending automation by checking the custom field 'Auto_RebootPendingCheck'.
 
 ## Dependencies
 
-Auto_RebootPendingCheck --> Custom field (Endpoint)  
-[CW RMM - Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)  
-[CW RMM - Task - Reboot Pending Check Automation](<../tasks/Reboot Pending Check Automation.md>)  
+- Auto_RebootPendingCheck --> Custom field (Endpoint)  
+- [CW RMM - Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)  
+- [CW RMM - Task - Reboot Pending Check Automation](<../tasks/Reboot Pending Check Automation.md>)  
 
 ## Details
 
@@ -24,9 +25,7 @@ Auto_RebootPendingCheck --> Custom field (Endpoint)
 |-----------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Automatic Reboot Pending Check     | Dynamic group                           | This group is designed to schedule the task 'Reboot Pending Check Automation' to set the auto reboot pending automation by checking the custom field 'Auto_RebootPendingCheck'. |
 
-
-
-## Group Create
+## Group Creation
 
 1. Create Dynamic Groups:  
    ![Image](../../../static/img/Automatic-Reboot-Pending-Check/image_1.png)
@@ -39,15 +38,3 @@ Auto_RebootPendingCheck --> Custom field (Endpoint)
    - Auto_RebootPendingCheck custom field equal to False.
    - The agent available is equal to True.
    - The OS contains any of Windows 10, Windows 11, Windows 2016 Server, Windows 2019 Server, and Windows 2022 Server.
-
-
-
-
-
-
-
-
-
-
-
-

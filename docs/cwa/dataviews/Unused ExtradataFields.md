@@ -8,36 +8,25 @@ tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this Dataview is to represent the Extradatafields that have either never been populated with data or have never been modified from the default value. This includes all types of ExtradataFields.
+The purpose of this document is to represent the Extradatafields that have either never been populated with data or have never been modified from their default values. This includes all types of Extradatafields.
 
 ## Columns
 
 | Column                     | Description                                                          |
 |---------------------------|----------------------------------------------------------------------|
-| ExtraField ID             | Id of the EDF                                                       |
+| ExtraField ID             | ID of the EDF                                                       |
 | ExtraField Name           | Name of the EDF                                                     |
 | ExtraField Type           | Type of the EDF                                                     |
 | ExtraField Level          | Level of the EDF                                                   |
-| Default Value Set         | Default value has been specified for the EDF within the System Dashboard |
+| Default Value Set         | Default value specified for the EDF within the System Dashboard     |
 | Default EDF Value         | Value of the Default EDF                                           |
-| Section                   | Data Screen where EDF will appear                                   |
-| Fill                      | Describes EDF or contains the EDF's Fill value                      |
-| IsHidden                  | Represents whether EDF is hidden or not                             |
-| IsEncrypted               | Represents whether EDF is encrypted or not                          |
-| IsEditable                | Represents whether EDF is Editable or not                           |
-| IsRestricted              | Represents whether EDF is restricted or not                         |
-| (Masked/Password)        | Represents whether EDF is Masked or has a password                  |
-
-
-
-
-
-
-
-
-
-
-
-
+| Section                   | Data screen where the EDF will appear                               |
+| Fill                      | Describes the EDF or contains the EDF's fill value                  |
+| IsHidden                  | Represents whether the EDF is hidden or not                         |
+| IsEncrypted               | Represents whether the EDF is encrypted or not                      |
+| IsEditable                | Represents whether the EDF is editable or not                       |
+| IsRestricted              | Represents whether the EDF is restricted or not                     |
+| (Masked/Password)        | Represents whether the EDF is masked or has a password              |

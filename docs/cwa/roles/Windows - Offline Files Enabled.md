@@ -8,25 +8,13 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role will detect if offline files are enabled in Windows.
+This document outlines a method to detect if offline files are enabled in Windows.
 
 ## Settings
 
 | Detection String                                                                                       | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|--------|---------------|
-| \{%@powershell.exe "Get-WmiObject -Class win32_OfflineFilesCache -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled"@%} | Equals     | True   | Windows       |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| {%@powershell.exe "Get-WmiObject -Class win32_OfflineFilesCache -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled"@%} | Equals     | True   | Windows       |

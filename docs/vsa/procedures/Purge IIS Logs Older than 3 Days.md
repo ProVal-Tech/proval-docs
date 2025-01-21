@@ -8,13 +8,14 @@ tags: ['cleanup', 'iis', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will remove IIS log files older than 3 days from the path "C:/inetpub/logs/LogFiles". The script will provide the log files which show files that the script did not delete under that folder that have older than 3 days.
+This script will remove IIS log files older than 3 days from the path `C:/inetpub/logs/LogFiles`. The script will provide log files that show which files were not deleted from that folder that are older than 3 days.
 
 The script runs the PowerShell command to perform the task.
 
-Also, defined the path and threshold under the script, it is not under the ps1 file.
+Additionally, the path and threshold are defined within the script, rather than in the `.ps1` file.
 
 ## Example Agent Procedure Log
 
@@ -55,18 +56,18 @@ Also, defined the path and threshold under the script, it is not under the ps1 f
 | 9:59:46 am 12-Jul-23  | Execute Powershell Command-0003                | Success THEN          | ovais.rashid  |
 | 9:59:46 am 12-Jul-23  | Execute Powershell Command-0004                | Success ELSE          | ovais.rashid  |
 | 9:59:43 am 12-Jul-23  | Execute Powershell Command-0002                | Powershell is present. | ovais.rashid  |
-| 9:59:35 am 12-Jul-23  | Run Now - IIS Log Files Purge                  | Admin ovais.rashid scheduled procedure Run Now - IIS Log Files Purge to run at Jul 12 2023 9:59AM | ovais.rashid  |
+| 9:59:35 am 12-Jul-23  | Run Now - IIS Log Files Purge                  | Admin ovais.rashid scheduled procedure Run Now - IIS Log Files Purge to run at Jul 12 2023 9:59 AM | ovais.rashid  |
 
 | Time                   | Action                                          | Status                | User          |
 |------------------------|-------------------------------------------------|-----------------------|---------------|
 | 9:47:52 am 12-Jul-23  | IIS Log Files Purge                            | Success THEN          | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0004                       | Success ELSE          | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0003                       | Success THEN          | ovais.rashid  |
-| 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0003                       | Files older than 3 days has been removed. | ovais.rashid  |
+| 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0003                       | Files older than 3 days have been removed. | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0002                       | Success ELSE          | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0002                       | Script moving to next step | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | IIS Log Files Purge-0001                       | Success ELSE          | ovais.rashid  |
-| 9:47:52 am 12-Jul-23  | IIS Log Files Purge                            | Files older than 3 from 'C:/ProgramData/_automation/app/Soji' has been removed. | ovais.rashid  |
+| 9:47:52 am 12-Jul-23  | IIS Log Files Purge                            | Files older than 3 days from 'C:/ProgramData/_automation/app/Soji' have been removed. | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | Execute Shell command - Get Results to Variable | Success THEN          | ovais.rashid  |
 | 9:47:52 am 12-Jul-23  | Execute Shell command - Get Results to Variable-0001 | Success THEN          | ovais.rashid  |
 | 9:47:51 am 12-Jul-23  | Execute Shell command - Get Results to Variable-0010 | Success THEN          | ovais.rashid  |
@@ -92,7 +93,7 @@ Also, defined the path and threshold under the script, it is not under the ps1 f
 | 9:47:45 am 12-Jul-23  | Execute Powershell Command-0003                | Success THEN          | ovais.rashid  |
 | 9:47:45 am 12-Jul-23  | Execute Powershell Command-0004                | Success ELSE          | ovais.rashid  |
 | 9:47:43 am 12-Jul-23  | Execute Powershell Command-0002                | Powershell is present. | ovais.rashid  |
-| 9:47:34 am 12-Jul-23  | Run Now - IIS Log Files Purge                  | Admin ovais.rashid scheduled procedure Run Now - IIS Log Files Purge to run at Jul 12 2023 9:47AM | ovais.rashid  |
+| 9:47:34 am 12-Jul-23  | Run Now - IIS Log Files Purge                  | Admin ovais.rashid scheduled procedure Run Now - IIS Log Files Purge to run at Jul 12 2023 9:47 AM | ovais.rashid  |
 
 ## Dependencies
 
@@ -101,14 +102,3 @@ None
 ## Output
 
 Script Logs
-
-
-
-
-
-
-
-
-
-
-

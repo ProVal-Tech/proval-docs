@@ -8,9 +8,10 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-If a Windows Machine does not already have the [Remote Server Administration Tools](https://learn.microsoft.com/en-us/troubleshoot/windows-server/system-management-components/remote-server-administration-tools) feature enabled, the remote monitor attempts to install it and creates an Automate ticket if it fails.  
+If a Windows machine does not already have the [Remote Server Administration Tools](https://learn.microsoft.com/en-us/troubleshoot/windows-server/system-management-components/remote-server-administration-tools) feature enabled, the remote monitor attempts to install it and creates an Automate ticket if it fails.  
 
 **Note:** RSAT can be installed on the Home or Standard editions of Windows.
 
@@ -20,7 +21,7 @@ If a Windows Machine does not already have the [Remote Server Administration Too
 **Suggested Alert Style:** Once  
 **Suggested Alert Template:** `△ Custom - Ticket Creation - Computer`  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Condition    | Interval | Result |
 |--------------|----------------|------------|---------------|--------------|----------|--------|
@@ -47,17 +48,3 @@ Required Group of Machines
 ## Implementation
 
 [Implement - Remote Monitor - Add Windows Capability - RSAT](<./Add Windows Capability - RSAT.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

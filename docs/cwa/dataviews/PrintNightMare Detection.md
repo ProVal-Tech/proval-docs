@@ -8,14 +8,15 @@ tags: ['networking', 'print', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview will collectively show all required information about the PrintNightMare vulnerability.
 
 ## Dependencies
 
-- [CVE-2021-1675 - Set folder ACL (PrintNightmare)](<../scripts/CVE-2021-1675 - Set folder ACL (PrintNightmare).md>)
-- [CVE-2021-1675 - Restore folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
+- [CVE-2021-1675 - Set Folder ACL (PrintNightmare)](<../scripts/CVE-2021-1675 - Set folder ACL (PrintNightmare).md>)
+- [CVE-2021-1675 - Restore Folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
 - [Point and Print Nightmare Check](<../scripts/Point and Print Nightmare Check.md>)
 
 ## Columns
@@ -26,20 +27,7 @@ This dataview will collectively show all required information about the PrintNig
 | Location Name             | Location Name                           |
 | Computer Name             | Computer Name                           |
 | Operating System          | OS Info of Computer                    |
-| Last Contact              | Last Contact of agent with RMM         |
-| Point And Print Status    | Point And Print Registry check         |
-| CVE-2021-34527 Patch      | CVE Patch install status               |
-| Mitigation Status         | It confirms whether mitigation applied or not. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Contact              | Last contact of agent with RMM         |
+| Point And Print Status    | Point and Print Registry check         |
+| CVE-2021-34527 Patch      | CVE patch install status               |
+| Mitigation Status         | Confirms whether mitigation was applied or not. |

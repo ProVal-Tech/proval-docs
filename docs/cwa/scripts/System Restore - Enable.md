@@ -8,12 +8,13 @@ tags: ['performance', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Enables System Restore on Windows workstations.  
-While running the script don't forget to fill in the user parameter for "driveletter".  
+This guide enables System Restore on Windows workstations.  
+While running the script, don't forget to fill in the user parameter for "driveletter".
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -21,13 +22,13 @@ Time Saved by Automation: 5 Minutes
 
 ## Dependencies
 
-Windows Operating System
+- Windows Operating System
 
 ## Variables
 
 `@PSResult@` - The results from the PowerShell used to enable System Restore
 
-#### User Parameters
+### User Parameters
 
 | Name        | Example | Required | Description                                         |
 |-------------|---------|----------|-----------------------------------------------------|
@@ -35,20 +36,8 @@ Windows Operating System
 
 ## Process
 
-The script will run a PowerShell command that will enable System Restore on the target drive letter provided by the user that ran the script. The script will output the result to a log message and then exit.
+The script will run a PowerShell command that enables System Restore on the target drive letter provided by the user running the script. The script will output the result to a log message and then exit.
 
 ## Output
 
 - Script log message only
-
-
-
-
-
-
-
-
-
-
-
-

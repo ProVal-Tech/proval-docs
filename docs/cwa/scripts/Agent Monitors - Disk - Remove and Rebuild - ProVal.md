@@ -8,13 +8,14 @@ tags: ['connectwise', 'deployment']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script clears existing Disk Monitors from an agent and reinstalls new Disk Monitors.
 
-Should be run against the service plan for servers and workstations as part of the initial deployment.
+It should be run against the service plan for servers and workstations as part of the initial deployment.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -26,21 +27,9 @@ Time Saved by Automation: 5 Minutes
 
 ## Process
 
-- Runs a default script Agent Monitors - Disk - Remove to remove the existing disk monitors
-- Runs our Wrapper script [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](<./Agent Monitor Creation - Disk - WRAPPER.md>) to create new disk monitors on machines
+- Runs a default script, **Agent Monitors - Disk - Remove**, to remove the existing disk monitors.
+- Runs our wrapper script, [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](<./Agent Monitor Creation - Disk - WRAPPER.md>), to create new disk monitors on machines.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

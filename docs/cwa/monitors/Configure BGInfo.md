@@ -8,13 +8,14 @@ tags: ['setup', 'software', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Implementation Steps
 
 - Import [EPM - Software Install - Script - Winget - Install/Update - Teams](<../scripts/Winget - InstallUpdate - Teams.md>) script.
 - Run this SQL query from a RAWSQL monitor set to create the alert template.
 
 ```sql
-#Create Alert Template
+# Create Alert Template
 INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `GUID`) 
 SELECT 
 '△ Custom - Execute Script - Winget - Install/Update - Teams' AS `Name`, 
@@ -22,7 +23,7 @@ SELECT
 'PRONOC' AS `Last_User`,
 (NOW()) AS `Last_Date`,
 'e0bd7229-5390-462d-9e21-ec56567219c5' AS `GUID` 
-From (SELECT MIN(computerid) FROM computers) a
+FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM alerttemplate WHERE GUID = 'e0bd7229-5390-462d-9e21-ec56567219c5') = '0';
 ```
 
@@ -40,16 +41,16 @@ SELECT
 '0' AS `Trump`,
 '620d5c4d-e89e-455a-ab72-bf98992119e4' AS `GUID`,
 '0' AS `WarningAction` 
-From (SELECT MIN(computerid) FROM computers) a
+FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM alerttemplates WHERE GUID = '620d5c4d-e89e-455a-ab72-bf98992119e4') = '0';
 ```
 
 - Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
 
-- Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups: (The string to replace can be found at the very bottom of the query, right after **WHERE**)
+- Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the groupid(s) of the relevant groups. (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```sql
-SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = 'e0bd7229-5390-462d-9e21-ec56567219c5') ;
+SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = 'e0bd7229-5390-462d-9e21-ec56567219c5');
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -62,7 +63,7 @@ SELECT '' as `AgentID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "if (((Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -eq /'Teams Machine-Wide Installer/' }))) {return /'Deployed/'} else {return /'Not Installed/'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"if (((Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -eq /'Teams Machine-Wide Installer/' }))) {return /'Deployed/'} else {return /'Not Installed/'}\"' as `DataOut`,
 '16' as `Comparor`,
 '8|Deployed|11|(Deployed)%7C(Not Installed)|10|Not Installed' as `DataIn`,
 '' as `IDField`,
@@ -78,130 +79,4 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
-'root' as `UpdatedBy`,
-(NOW()) as `UpdateDate`
-FROM mastergroups m
-WHERE m.groupid IN (**YOUR COMMA SEPARATED LIST OF GROUPID(S)**)
-AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Deploy Teams');
-```
-
-- An example of a query with a groupid:
-
-```sql
-SET @AlertAction = (SELECT Alertactionid FROM alerttemplate WHERE `GUID` = 'e0bd7229-5390-462d-9e21-ec56567219c5') ;
-INSERT INTO groupagents 
-SELECT '' as `AgentID`,
-`groupid` as `GroupID`,
-'0' as `SearchID`,
-'ProVal - Dev - Deploy Teams' as `Name`,
-'6' as `CheckAction`,
-@AlertAction as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
-'0' as `ContactID`,
-'86400' as `interval`,
-'127.0.0.1' as `Where`,
-'7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "if (((Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -eq /'Teams Machine-Wide Installer/' }))) {return /'Deployed/'} else {return /'Not Installed/'}"' as `DataOut`,
-'16' as `Comparor`,
-'8|Deployed|11|(Deployed)%7C(Not Installed)|10|Not Installed' as `DataIn`,
-'' as `IDField`,
-'1' as `AlertStyle`,
-'0' as `ScriptID`,
-'' as `datacollector`,
-'21' as `Category`,
-'0' as `TicketCategory`,
-'1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
-'root' as `UpdatedBy`,
-(NOW()) as `UpdateDate`
-FROM mastergroups m
-WHERE m.groupid IN (2)
-AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Deploy Teams');
-```
-
-- Now execute your query from a RAWSQL monitor set.
-- Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
-
-
-
-
-
-
-
-
-
-
-
-
-
+SUBSTRING('abcdef0123456789',

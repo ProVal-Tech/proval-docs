@@ -8,11 +8,12 @@ tags: ['encryption', 'recovery', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will audit the endpoint and output the Drive and Recovery key, if available.
 
-- Checks if any drives are Bitlocker-Enabled
+- Checks if any drives are BitLocker-enabled
 - Checks to ensure encryption progress is at 100%
 - Checks for any available recovery keys
 
@@ -39,17 +40,6 @@ Document the various variables in the script. Delete any section that is not rel
 
 Sample Output:
 - BitLocker Not Enabled on Drive X:
-- Bitlocker Encryption in Progress on Drive X:
-- Bitlocker enabled on Drive X, No recovery key available
+- BitLocker Encryption in Progress on Drive X:
+- BitLocker enabled on Drive X, No recovery key available
 - Drive X: recovery key: dm9ij30d-k4i30jf0-moqiw4oid-oijqwoeij-0qiwjeoqiwj
-
-
-
-
-
-
-
-
-
-
-

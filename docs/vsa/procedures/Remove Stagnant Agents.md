@@ -8,6 +8,7 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
 Remove stagnant agents based on a set of filters passed in via a JSON file. Logs the removed agents in a file in the same directory as the executable (`yyyyMMddhhmmssfff_stagnantAgents.log`). Email notifications can be sent via the procedure.
 
@@ -18,7 +19,7 @@ Remove stagnant agents based on a set of filters passed in via a JSON file. Logs
 - [VSAToolbox](https://proval.itglue.com/5078775/docs/15281068)
 
 # Process
-Gets a list of agents that meet the set criteria (offline for `$OfflineDays` days, not in `$MachineGroupException` groups, etc) and runs the VSAAPI function `Remove-VsaAgent`, removing them from the VSA without first uninstalling the agent. Exclusion filters can be applied for `OsType`, `OsInfo` (Build caption), `IPAddress`, `Mac Address`, `Country`, `Domain`, and `Workgroup`. Filters are individually applied; applying more than one filter will remove BOTH pools from the removal list. For example, providing `-OsTypeExclusion '10'` and `-DomainWorkgroupExclusion 'proval'` will retain ALL Windows 10 machines from the list, **AND** ALL machines on the ProVal domain or Workgroup.
+Gets a list of agents that meet the set criteria (offline for `$OfflineDays` days, not in `$MachineGroupException` groups, etc.) and runs the VSAAPI function `Remove-VsaAgent`, removing them from the VSA without first uninstalling the agent. Exclusion filters can be applied for `OsType`, `OsInfo` (Build caption), `IPAddress`, `Mac Address`, `Country`, `Domain`, and `Workgroup`. Filters are individually applied; applying more than one filter will remove BOTH pools from the removal list. For example, providing `-OsTypeExclusion '10'` and `-DomainWorkgroupExclusion 'proval'` will retain ALL Windows 10 machines from the list, **AND** ALL machines on the ProVal domain or Workgroup.
 
 # Payload Usage
 ```
@@ -31,8 +32,8 @@ Removes agents offline for 30 days in all groups except `proval.development`. Do
 | Parameter                       | Required | Default | Type          | Description                                              |
 |---------------------------------|----------|---------|---------------|----------------------------------------------------------|
 | `BaseURL`                       | True     |         | String        | VSA URL                                                 |
-| `VsaUserName`                   | True     |         | String        | User with Api Access                                     |
-| `RestApiToken`                  | True     |         | String        | Rest Api Token for User                                  |
+| `VsaUserName`                   | True     |         | String        | User with API Access                                     |
+| `RestApiToken`                  | True     |         | String        | REST API Token for User                                  |
 | `OfflineDays`                   | False    | 60      | Int           | Agent Idle Days for removal                              |
 | `MachineGroupException`         | False    |         | String Array  | Groups to exclude from agent removal                     |
 | `OsTypeExclusion`               | False    |         | String Array  | Exclude agents from removal based on their OsType Field. This can be a partial match. Example Syntax: 10 (Windows 10), 2022 (Windows Server 2022), Mac (Mac OS X, All Versions) |
@@ -48,14 +49,3 @@ Location of output for log, result, and error files.
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-
-
-
-
-
-
-
-
-
-
-

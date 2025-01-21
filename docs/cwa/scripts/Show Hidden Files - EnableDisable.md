@@ -8,11 +8,12 @@ tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script will hide/unhide the hidden files based on the input parameter.
+The script will hide or unhide hidden files based on the input parameter.
 
-Time Saved by Automation: 2 Minutes
+**Time Saved by Automation:** 2 Minutes
 
 ## Sample Run
 
@@ -24,26 +25,14 @@ Time Saved by Automation: 2 Minutes
 
 | Name                  | Example | Required | Description                                          |
 |-----------------------|---------|----------|------------------------------------------------------|
-| Show hidden files     | N       | False    | Any text in here will display hidden files.         |
+| Show hidden files     | N       | False    | Any text entered here will display hidden files.     |
 
 ## Process
 
-- The script checks the input in the user parameter "Show hidden files".
-- If there is no input, it runs a PowerShell script and hides the hidden files.
+- The script checks the input in the user parameter "Show hidden files."
+- If there is no input, it runs a PowerShell script to hide the hidden files.
 - If there is any text in the user parameter, it will unhide the hidden files by running the PowerShell script.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

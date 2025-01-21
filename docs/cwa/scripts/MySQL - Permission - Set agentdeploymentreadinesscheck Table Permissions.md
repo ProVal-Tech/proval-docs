@@ -8,31 +8,22 @@ tags: ['database', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script will gather all users in the database and give all required permissions for the `agentdeploymentreadinesscheck` Table for both Hosted as well as On-Prem Clients.
+This script will gather all users in the database and grant all required permissions for the `agentdeploymentreadinesscheck` table for both Hosted and On-Prem Clients.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---Permission---Set-agentdeploymentreadinesscheck-Table-Permissions/image_1.png)
 
-It's converted to a client script and should be scheduled to run every 12-24 hours.
+The script is converted to a client script and should be scheduled to run every 12-24 hours.
 
 ## Variables
 
-| Name            | Description                                                                                             |
-|-----------------|---------------------------------------------------------------------------------------------------------|
-| UpdateStatements | The variable will store the SQL result which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
-
-
-
-
-
-
-
-
-
-
+| Name              | Description                                                                                             |
+|-------------------|---------------------------------------------------------------------------------------------------------|
+| UpdateStatements   | This variable will store the SQL result, which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
 

@@ -8,9 +8,10 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview is a reflection of the audit script, to show which versions of TLS and SSL settings are enabled through Internet Explorer.
+This data view reflects the audit script, showing which versions of TLS and SSL settings are enabled in Internet Explorer.
 
 ## Dependencies
 
@@ -24,19 +25,7 @@ This dataview is a reflection of the audit script, to show which versions of TLS
 | Location Name               | Location Name                                     |
 | Computer Name               | Computer Name                                     |
 | Operating System            | OS installed on the machine                       |
-| LastContact                 | Last time the agent checked into Automate         |
-| Contact                     | Computer's assigned Contact (if any)              |
+| Last Contact                | Last time the agent checked into Automate         |
+| Contact                     | Computer's assigned Contact (if any)             |
 | Contact Email               | Computer's assigned Contact Email (if any)       |
-| IE Advanced Security Status  | Lists out which versions of TLS and SSL are enabled |
-
-
-
-
-
-
-
-
-
-
-
-
+| IE Advanced Security Status  | Lists which versions of TLS and SSL are enabled   |

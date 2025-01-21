@@ -8,25 +8,11 @@ tags: ['disk-encryption', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Uses the v_defragmentation table and calculates systems with drive fragmentation above 16% and below 30%.
-
-Excludes USB drives.
+This document uses the `v_defragmentation` table to calculate systems with drive fragmentation above 16% and below 30%. It excludes USB drives.
 
 ## Target
 
 Workstation Service Plans
-
-
-
-
-
-
-
-
-
-
-
-
-

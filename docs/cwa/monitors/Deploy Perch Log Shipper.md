@@ -8,19 +8,19 @@ tags: ['deployment', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This Monitor detects Windows machines missing Perch Log Shipper on them. To initiate the installation on targeted client machines, the client-level EDF `Deploy Perch Log Shipper` must be checked and client-level EDF `Perch Client Install Code` or location-level EDF `Perch Location Install Code` must be populated with installation code at the client level.
+This monitor detects Windows machines that are missing the Perch Log Shipper. To initiate the installation on targeted client machines, the client-level EDF `Deploy Perch Log Shipper` must be checked, and either the client-level EDF `Perch Client Install Code` or the location-level EDF `Perch Location Install Code` must be populated with the installation code at the client level.
 
 ## Dependencies
 
-- [SWM - Software Install - Script - Deploy PerchLogShipper](https://proval.itglue.com/DOC-5078775-14986108)  
-- Client-Level EDF's to select Perch Log Shipper Deployment and to populate the installation token  
+- [SWM - Software Install - Script - Deploy Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986108)  
+- Client-Level EDFs to select Perch Log Shipper Deployment and to populate the installation token  
   ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_1.png)  
--   
-- Location-level EDF to Exclude a Location from Perch Log Shipper Deployment and to populate the installation token  
+- Location-level EDF to exclude a location from Perch Log Shipper Deployment and to populate the installation token  
   ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_2.png)  
-- Computer-level EDF to Exclude a computer from Perch Log Shipper Deployment  
+- Computer-level EDF to exclude a computer from Perch Log Shipper Deployment  
   ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_3.png)  
 
 ## Target
@@ -29,16 +29,4 @@ Windows Machines
 
 ## Alert Template
 
-- `△ Custom -  Execute Script - Deploy PerchLogShipper`
-
-
-
-
-
-
-
-
-
-
-
-
+- `△ Custom - Execute Script - Deploy Perch Log Shipper`

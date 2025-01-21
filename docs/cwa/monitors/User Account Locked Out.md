@@ -8,21 +8,11 @@ tags: ['security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor detects Automate users that have been locked out of logging in.
+This monitor detects Automate users who have been locked out of logging in.
 
 ## Target
 
 Global
-
-
-
-
-
-
-
-
-
-
-

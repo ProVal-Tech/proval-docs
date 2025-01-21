@@ -8,9 +8,10 @@ tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The script uninstalls `New Teams` from Windows machines. It will only work for the computers with a logged-in user.
+The script uninstalls `New Teams` from Windows machines. It will only work on computers with a logged-in user.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Uninstall-NewTeams/Uninstall-NewTeams.ps1`
 
@@ -26,8 +27,8 @@ The script uninstalls `New Teams` from Windows machines. It will only work for t
 
 | Name                     | Required | Example | Description                                                                                   |
 |--------------------------|----------|---------|-----------------------------------------------------------------------------------------------|
-| Ticket_On_Failure        | False    | 1       | Fill it as '1' if you would like to receive Ticket on failure else leave it blank or '0'    |
-| TicketCreationCategory    | False    | 298     | Mention the ticketcreationcategory in order to direct the tickets to the right board in Manage |
+| Ticket_On_Failure        | False    | 1       | Fill it as '1' if you would like to receive a ticket on failure; otherwise, leave it blank or enter '0'.    |
+| TicketCreationCategory    | False    | 298     | Mention the ticket creation category to direct the tickets to the right board in Manage. |
 
 ## Output
 
@@ -36,24 +37,13 @@ The script uninstalls `New Teams` from Windows machines. It will only work for t
 
 ## Ticketing
 
-Subject: `New Microsoft Teams Uninstallation Failed on %ComputerName%(%ComputerID%)`
+**Subject:** `New Microsoft Teams Uninstallation Failed on %ComputerName% (%ComputerID%)`
 
-Ticket Body: `Failed to Uninstall New Microsoft Teams from machine on %computername% at %clientname%. Here are the results returned from the installer: @psout@`
+**Ticket Body:** `Failed to uninstall New Microsoft Teams from machine on %computername% at %clientname%. Here are the results returned from the installer: @psout@`
 
 The PC information is outlined below:  
-PC Name: %computername%  
-Last Login: %lastuser%  
-PC model: @biosname@  
-OS: %os%  
-S/N OF PC: @biosver@
-
-
-
-
-
-
-
-
-
-
-
+**PC Name:** %computername%  
+**Last Login:** %lastuser%  
+**PC Model:** @biosname@  
+**OS:** %os%  
+**S/N OF PC:** @biosver@

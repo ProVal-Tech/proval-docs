@@ -8,6 +8,7 @@ tags: ['installation', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Installs or updates PowerShellGet to the latest version available in the PowerShell Gallery. CW RMM implementation of the agnostic script [Update-PowerShellGet](https://file.provaltech.com/repo/script/Update-PowerShellGet.ps1).
@@ -20,11 +21,11 @@ Installs or updates PowerShellGet to the latest version available in the PowerSh
 
 ## Dependencies
 
-[https://file.provaltech.com/repo/script/Update-PowerShellGet.ps1](https://file.provaltech.com/repo/script/Update-PowerShellGet.ps1)
+[Update-PowerShellGet Script](https://file.provaltech.com/repo/script/Update-PowerShellGet.ps1)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/Update-PowerShellGet-Module/image_3.png)
 
@@ -38,7 +39,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Update-PowerShellGet-Module/image_6.png)
 
@@ -93,11 +94,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -139,14 +140,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

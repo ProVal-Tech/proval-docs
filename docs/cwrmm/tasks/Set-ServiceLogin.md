@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This task is Used to change the service login account for a target service. This is an RMM version of [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.itglue.com/DOC-5078775-8438992). Please review the Process mentioned in [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.itglue.com/DOC-5078775-8438992) on how to use USER or SYSTEM mode in the script.
+This task is used to change the service login account for a target service. This is an RMM version of [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.itglue.com/DOC-5078775-8438992). Please review the process mentioned in [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.itglue.com/DOC-5078775-8438992) on how to use USER or SYSTEM mode in the script.
 
 ## Sample Run
 
@@ -30,18 +31,18 @@ Sets the Print Spooler service to run as 'User1'. Grants 'User1' the Logon as a 
 
 ## User Parameters
 
-| Name          | Example   | Accepted Values | Required | Default | Type   | Description                                           |
-|---------------|-----------|-----------------|----------|---------|--------|-------------------------------------------------------|
-| `Name`        | Spooler   |                 | False    |         | String | The service name to alter.                            |
-| `DisplayName` | Print Spooler |             | False    | $false  | String | The service display name to alter.                    |
-| `User`        | User1     |                 | False    |         | String | The username of the account to set the service to run as. |
-| `Password`    | p@55w0rD  |                 | False    |         | String | The password of the account to set the service to run as. |
-| `System`      | Marked    |                 | False    |         | Flag   | Use this switch to set the service to run as the Local System account. |
-| `Force`       | Marked    |                 | False    | $false  | Flag   | Intended to force DNS address updates to DHCP-enabled adapters. |
+| Name          | Example          | Accepted Values | Required | Default | Type   | Description                                           |
+|---------------|-------------------|-----------------|----------|---------|--------|-------------------------------------------------------|
+| `Name`        | Spooler           |                 | False    |         | String | The service name to alter.                            |
+| `DisplayName` | Print Spooler     |                 | False    | $false  | String | The service display name to alter.                    |
+| `User`        | User1             |                 | False    |         | String | The username of the account to set the service to run as. |
+| `Password`    | p@55w0rD          |                 | False    |         | String | The password of the account to set the service to run as. |
+| `System`      | Marked            |                 | False    |         | Flag   | Use this switch to set the service to run as the Local System account. |
+| `Force`       | Marked            |                 | False    | $false  | Flag   | Intended to force DNS address updates to DHCP-enabled adapters. |
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Step 1](../../../static/img/Set-ServiceLogin/image_4.png)
 
@@ -76,7 +77,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![Add Parameter Step 4](../../../static/img/Set-ServiceLogin/image_10.png)
 
-- Set `System` in the `Parameter Name` Field.
+- Set `System` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Toggle Default Value.
 - Set Default Value as `False`.
@@ -114,7 +115,7 @@ Add another parameter.
 
 Add another parameter.
 
-- Set `Force` in the `Parameter Name` Field.
+- Set `Force` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Toggle Default Value.
 - Set Default Value as `False`.
@@ -127,7 +128,7 @@ Parameters will look like as shown below:
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/Set-ServiceLogin/image_16.png)
 
@@ -156,60 +157,60 @@ $DisplayName = '@DisplayName@'
 $Force = '@Force@'
 
 $parameters = @{}
-#we are prioritizing Name if both Name and DisplayNames are specified
+# We are prioritizing Name if both Name and DisplayNames are specified
 if ( ($Name -Notmatch '//SAddress//S') -and ($Name -match '[A-z]{2,}') ) {
-    #For parameterSets Name and NameSystem
+    # For parameterSets Name and NameSystem
     $parameters.Add('Name', $Name)
     if ( $System -match '1|Yes|True' ) {
-        #For Parameter Set NameSystem
+        # For Parameter Set NameSystem
         $parameters.Add('System', $True)
     } else {
-        #For parameterSet Name
+        # For parameterSet Name
         if ( $user -match '/SUser/S' -or ( $null -eq $user )  ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+            throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
         } elseif ( $user.Length -lt 2 ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+            throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
         } else {
             $parameters.Add('User', $user)
         }
         if ( $pass -match '/Spass/S' -or ( $null -eq $pass )  ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+            throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
         } elseif ( $pass.Length -lt 2 ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+            throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
         } else {
             $parameters.Add('Pass', $pass)
         }
         $parameters.Add('Force', $true) # Setting it to true without checking since it's mandatory for the parameter set Name
     }
 } else {
-    #for parameter set DisplayName and DisplayName System
+    # For parameter set DisplayName and DisplayName System
     if ( ($DisplayName -Notmatch '//SAddress//S') -and ($DisplayName -match '[A-z]{2,}') ) {
         $parameters.Add('DisplayName', $DisplayName)
         if ( $System -match '1|Yes|True' ) {
-            #For Parameter Set DisplayNameSystem
+            # For Parameter Set DisplayNameSystem
             $parameters.Add('System', $True)
         } else {
-            #For parameterSet DisplayName
+            # For parameterSet DisplayName
             if ( $user -match '/SUser/S' -or ( $null -eq $user )  ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+                throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
             } elseif ( $user.Length -lt 2 ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+                throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
             } else {
                 $parameters.Add('User', $user)
             }
             if ( $pass -match '/Spass/S' -or ( $null -eq $pass )  ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+                throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
             } elseif ( $pass.Length -lt 2 ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
+                throw 'Either set the ''System'' parameter or set the ''User'' and ''Pass''.'
             } else {
                 $parameters.Add('Pass', $pass)
             }
             if ( $Force -match '1|Yes|True' ) {
-                $parameters.Add('Force', $true) # Not Setting it to true without checking since it's not mandatory for the parameter set DisplayName
+                $parameters.Add('Force', $true) # Not setting it to true without checking since it's not mandatory for the parameter set DisplayName
             }
         }
     } else {
-        throw 'Either Set the ''Name'' or the ''DisplayName'' parameter.'
+        throw 'Either set the ''Name'' or the ''DisplayName'' parameter.'
     }
 }
 ```
@@ -226,6 +227,7 @@ $Workingpath = $WorkingDirectory
 $LogPath = "$WorkingDirectory//$ProjectName-log.txt"
 $ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
+
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -239,6 +241,7 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
+
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -250,7 +253,7 @@ if ($Parameters) {
 
 ```powershell
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -272,14 +275,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
-

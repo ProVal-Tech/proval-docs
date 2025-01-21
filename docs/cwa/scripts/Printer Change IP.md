@@ -8,11 +8,12 @@ tags: ['networking']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Changes the printer with IP Address @OldIP@ to the IP address @NewIP@.
+This document describes how to change the printer's IP address from `@OldIP@` to `@NewIP@`.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -28,27 +29,15 @@ Time Saved by Automation: 10 Minutes
 
 | Name   | Example        | Required     | Description                              |
 |--------|----------------|--------------|------------------------------------------|
-| NewIP  | 192.168.1.168  | True         | The IP to assign to the printer.        |
+| NewIP  | 192.168.1.168  | True         | The IP address to assign to the printer.|
 | OldIP  | 192.168.1.16   | True/False   | The target IP address of the printer to modify. |
 
 ## Process
 
-- This script will do all the verification first.
-- If OldIP is provided and if it is valid or not.
-  - If OldIP is valid, it will replace the printer with the current IP address of OldIP with NewIP.
+- The script will perform all necessary verifications first.
+- It will check if `OldIP` is provided and whether it is valid.
+  - If `OldIP` is valid, the script will replace the printer's current IP address from `OldIP` to `NewIP`.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

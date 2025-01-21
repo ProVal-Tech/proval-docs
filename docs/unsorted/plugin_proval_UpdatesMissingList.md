@@ -8,9 +8,10 @@ tags: ['database', 'report', 'software', 'update']
 draft: true
 unlisted: false
 ---
+
 ## Purpose
 
-This table contains the missing patches details directly from the agent using PSWindowsUpdate module.
+This document contains the details of missing patches directly from the agent using the PSWindowsUpdate module.
 
 ## Dependencies
 
@@ -23,8 +24,8 @@ This table contains the missing patches details directly from the agent using PS
 
 | Column       | Type     | Explanation                             |
 |--------------|----------|-----------------------------------------|
-| computerid   | INT      | computerid of the agent                 |
-| SerialNumber | INT      | Missing patches list with incremental (1,2,3,...) |
+| computerid   | INT      | Computer ID of the agent                |
+| SerialNumber | INT      | Missing patches list with incremental (1, 2, 3, ...) |
 | KB           | VARCHAR  | Missing patches KB number               |
 | Title        | VARCHAR  | Missing patches detail                   |
 | Size         | VARCHAR  | Missing patch file size                 |
@@ -33,29 +34,16 @@ This table contains the missing patches details directly from the agent using PS
 
 ## SQL
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS `plugin_proval_UpdatesMissingList` (
   `SerialNumber` INT(5) NOT NULL AUTO_INCREMENT,
   `computerid` INT(11) NOT NULL,
   `KB` VARCHAR(50) NOT NULL,
   `Title` VARCHAR(250) NOT NULL,
-  `size` VARCHAR(50) NOT NULL,
+  `Size` VARCHAR(50) NOT NULL,
   `ReleaseDate` VARCHAR(100) NOT NULL,
   `TimeStamp` DATETIME NOT NULL,
   PRIMARY KEY (`SerialNumber`),
-  CONSTRAINT `plugin_proval_UpdatesMissingList_ibfk_1` FOREIGN KEY (`Computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
+  CONSTRAINT `plugin_proval_UpdatesMissingList_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

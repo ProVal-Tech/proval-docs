@@ -8,10 +8,10 @@ tags: ['cleanup', 'security', 'software', 'uninstallation']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes Sophos Endpoint Agent from the endpoint.  
-Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
+This document explains how to remove the Sophos Endpoint Agent from an endpoint. It utilizes [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>).
 
 ## Example Agent Procedure Log
 
@@ -26,11 +26,11 @@ Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Rem
 | 10:36:43 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: ...                                                            | provaltech.com/dan.hicks      |
 | 10:36:43 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                                             | provaltech.com/dan.hicks      |
 | 10:36:42 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as ...                                                                                | provaltech.com/dan.hicks      |
-| 10:36:42 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                                          | provaltech.com/dan.hicks      |
+| 10:36:42 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0003 | No Powershell file variable detected.                                                                          | provaltech.com/dan.hicks      |
 | 10:36:41 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                                         | provaltech.com/dan.hicks      |
 | 10:36:39 am 30-Jan-23   | Execute Powershell Command                              | Success THEN                                                                                                   | provaltech.com/dan.hicks      |
 | 10:36:38 am 30-Jan-23   | Execute Powershell Command-0011                        | Powershell command completed!                                                                                 | provaltech.com/dan.hicks      |
-| 10:36:37 am 30-Jan-23   | Execute Powershell Command-0011                        | Executing powershell ...                                                                                      | provaltech.com/dan.hicks      |
+| 10:36:37 am 30-Jan-23   | Execute Powershell Command-0011                        | Executing Powershell ...                                                                                      | provaltech.com/dan.hicks      |
 | 10:36:37 am 30-Jan-23   | Execute Powershell Command-0010                        | Not sending output to variable.                                                                                | provaltech.com/dan.hicks      |
 | 10:36:37 am 30-Jan-23   | Execute Powershell Command-0008                        | New command variable is: ...                                                                                  | provaltech.com/dan.hicks      |
 | 10:36:37 am 30-Jan-23   | Execute Powershell Command-0008                        | Custom commands detected as ...                                                                                | provaltech.com/dan.hicks      |
@@ -38,16 +38,16 @@ Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Rem
 | 10:32:29 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0011 | Executing 64-bit Powershell command as System: ...                                                            | provaltech.com/dan.hicks      |
 | 10:32:29 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0013 | Sending output to global variable.                                                                             | provaltech.com/dan.hicks      |
 | 10:32:28 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0008 | Custom commands detected as ...                                                                                | provaltech.com/dan.hicks      |
-| 10:32:28 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0003 | No powershell file variable detected.                                                                          | provaltech.com/dan.hicks      |
+| 10:32:28 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0003 | No Powershell file variable detected.                                                                          | provaltech.com/dan.hicks      |
 | 10:32:26 am 30-Jan-23   | Execute Powershell Command (64-bit, Run As System)-0002 | Powershell is present.                                                                                         | provaltech.com/dan.hicks      |
 | 10:32:23 am 30-Jan-23   | Execute Powershell Command                              | Success THEN                                                                                                   | provaltech.com/dan.hicks      |
 | 10:32:23 am 30-Jan-23   | Execute Powershell Command-0011                        | Powershell command completed!                                                                                 | provaltech.com/dan.hicks      |
-| 10:32:20 am 30-Jan-23   | Execute Powershell Command-0011                        | Executing powershell ...                                                                                      | provaltech.com/dan.hicks      |
+| 10:32:20 am 30-Jan-23   | Execute Powershell Command-0011                        | Executing Powershell ...                                                                                      | provaltech.com/dan.hicks      |
 | 10:32:20 am 30-Jan-23   | Execute Powershell Command-0010                        | Not sending output to variable.                                                                                | provaltech.com/dan.hicks      |
 | 10:32:20 am 30-Jan-23   | Execute Powershell Command-0008                        | New command variable is: ...                                                                                  | provaltech.com/dan.hicks      |
 | 10:32:20 am 30-Jan-23   | Execute Powershell Command-0008                        | Custom commands detected as ...                                                                                | provaltech.com/dan.hicks      |
 | 10:32:15 am 30-Jan-23   | Execute Powershell Command-0002                        | Powershell is present.                                                                                         | provaltech.com/dan.hicks      |
-| 10:32:06 am 30-Jan-23   | Run Now - Sophos Removal                                | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Sophos Removal to run at Jan 30 2023 10:32AM    |                               |
+| 10:32:06 am 30-Jan-23   | Run Now - Sophos Removal                                | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Sophos Removal to run at Jan 30 2023 10:32 AM    |                               |
 
 ### If Tamper Protection is NOT disabled, this is what appears in the log:
 
@@ -60,7 +60,7 @@ Uses [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Rem
 
 ## Dependencies
 
-[SophosZap](https://download.sophos.com/tools/SophosZap.exe) needs to be in the managed files and the AP needs to be modified to point to it. Otherwise, SkipZap MUST be enabled on run or the AP will fail.  
+[SophosZap](https://download.sophos.com/tools/SophosZap.exe) needs to be in the managed files, and the AP needs to be modified to point to it. Otherwise, SkipZap MUST be enabled on run, or the AP will fail.  
 Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
 
 ## Process
@@ -74,16 +74,3 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../p
 - ./Remove-Sophos-Log.txt
 - ./Remove-Sophos-Error.txt
 - Agent Procedure Log
-
-
-
-
-
-
-
-
-
-
-
-
-

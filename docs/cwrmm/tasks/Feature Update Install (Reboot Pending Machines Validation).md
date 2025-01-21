@@ -8,6 +8,7 @@ tags: ['patching', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script runs on machines where the `Feature Update Reboot Pending` custom field is flagged after the execution of the `Feature Update Install With Tracking` task, signifying a pending reboot to finalize the Feature Pack Update. Subsequently, the script updates the `Feature Update Install Failure` custom field with the outcome for monitoring purposes.
@@ -50,7 +51,7 @@ Start by adding a row. You can do this by clicking the `Add Row` button at the b
 
 ### Row 1 Function: Set User Variable
 
-Select `Set User Variable` function.
+Select the `Set User Variable` function.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_8.png) ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_9.png)
 
@@ -68,7 +69,7 @@ Insert a new row by clicking the `Add Row` button.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_13.png)
 
-Select `Set User Variable` function.
+Select the `Set User Variable` function.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_8.png) ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_9.png)
 
@@ -86,7 +87,7 @@ Insert a new row by clicking the `Add Row` button.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_13.png)
 
-Select `PowerShell Script` function.
+Select the `PowerShell Script` function.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_16.png)
 
@@ -94,7 +95,7 @@ Select `PowerShell Script` function.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_18.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $ProgressPreference = 'SilentlyContinue'
@@ -113,13 +114,13 @@ if ((Test-PendingReboot -WarningAction SilentlyContinue).IsRebootPending) { retu
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_19.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_20.png)
 
 ### Row 4 Logic: If Then
 
-Insert a new `If/Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_21.png)  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_22.png)
@@ -143,7 +144,7 @@ Search and select the `Set Custom Field` function in the new row.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_27.png)
 
-Search and select the `Feature Update Reboot Pending` Custom Field.  
+Search and select the `Feature Update Reboot Pending` custom field.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_28.png)
 
 Type `False` in the `Value` box and click the Save button.  
@@ -164,7 +165,7 @@ Search and select the `PowerShell Script` in the newly added row.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_18.png)
 
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds and click the `Save` button.
+Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
@@ -173,7 +174,7 @@ if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_33.png)
 
-Mark the `Continue on Failure` check box.
+Mark the `Continue on Failure` checkbox.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_20.png)
 
@@ -181,7 +182,7 @@ Mark the `Continue on Failure` check box.
 
 ### Step 4d Logic: If Then
 
-Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_35.png)
 
@@ -206,7 +207,7 @@ Search and select the `Set Custom Field` function in the new row.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_27.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.  
+Search and select the `Feature Update Install Failure` custom field.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_38.png)
 
 Type `Installation Failure/Error` in the `Value` box and click the Save button.  
@@ -233,7 +234,7 @@ Type `Script Failed to install the latest available feature update.` in the Erro
 
 ### Step 4e Logic: If Then
 
-Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` Dropdown menu.
+Insert a new `If/Then` logic inside the external `If Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_35.png)
 
@@ -258,7 +259,7 @@ Search and select the `Set Custom Field` function in the new row.
 
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_27.png)
 
-Search and select the `Feature Update Install Failure` Custom Field.  
+Search and select the `Feature Update Install Failure` custom field.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_38.png)
 
 Type ` ` in the `Value` box and click the `Save` button. (There is a single `space` in the `Value` field.)  
@@ -280,9 +281,9 @@ Click the `Save` button to save the Task.
 ## Deployment
 
 - Go to `Automation` > `Tasks.`
-- Search for `Feature Update Install (Reboot Pending Machines Validation)` Task.
+- Search for `Feature Update Install (Reboot Pending Machines Validation)` task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_52.png)
 
 - This screen will appear.  
@@ -294,7 +295,7 @@ Click the `Save` button to save the Task.
 - This pop-up box will appear.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_55.png)
 
-- Click `OK` button to run the Task once per day.  
+- Click the `OK` button to run the task once per day.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_56.png)
 
 - Select the relevant time to execute the script. It is suggested to run this task during working hours, when most of the workstations are online.  
@@ -310,22 +311,12 @@ Click the `Save` button to save the Task.
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_59.png)  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_60.png)
 
-- `Suspend` option can be used to `suspend/stop` the schedule.  
+- The `Suspend` option can be used to `suspend/stop` the schedule.  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_61.png)  
 ![Image](../../../static/img/Feature-Update-Install-(Reboot-Pending-Machines-Validation)/image_62.png)
 
 ## Output
 
 - Custom Field
-
-
-
-
-
-
-
-
-
-
 
 

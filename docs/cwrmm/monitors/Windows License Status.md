@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This monitor will identify computers where the license key is reported as inactivated or in a grace period.
@@ -84,15 +85,3 @@ This monitor will identify computers where the license key is reported as inacti
 
 15. Click the `Save` button to save the monitor set.  
     ![Step 15](../../../static/img/Windows-License-Status/image_18.png)
-
-
-
-
-
-
-
-
-
-
-
-

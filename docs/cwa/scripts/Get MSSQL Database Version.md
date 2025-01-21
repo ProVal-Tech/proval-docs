@@ -8,6 +8,7 @@ tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script collects the `Version` and `Patch Level` information of the MSSQL Server and then saves this data into a designated [Custom Table - pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>).
@@ -17,8 +18,6 @@ The script collects the `Version` and `Patch Level` information of the MSSQL Ser
 **First Execution:**  
 Execute the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table.  
 ![First Execution](../../../static/img/Get-MSSQL-Database-Version/image_1.png)
-
-
 
 **Regular Executions:**  
 Execute the script against the online `MSSQL` servers to gather the version.  
@@ -47,15 +46,3 @@ Execute the script against the online `MSSQL` servers to gather the version.
 - Script Log
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

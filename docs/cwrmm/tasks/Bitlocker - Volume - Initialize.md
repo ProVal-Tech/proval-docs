@@ -8,6 +8,7 @@ tags: ['disk-encryption', 'encryption', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>). The script can be used to manually encrypt a drive with BitLocker disk encryption.
@@ -31,7 +32,7 @@ This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolu
 | Name                  | Example                       | Accepted Values                                                                                                                                  | Required | Default | Type   | Description                                                                                          |
 |-----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------|--------|------------------------------------------------------------------------------------------------------|
 | Mount Point           | E:                            |                                                                                                                                                  | False    | C:      | Text   | The volume to protect. Defaults to the system drive.                                               |
-| Allow TPM/Reboot      | 3                             | 0,1,2,3                                                                                                                                         | False    | 0       | Number | Options for allowing TPM initialization and rebooting.0 = Do not allow1 = Allow TPM Initialization2 = Allow Reboot3 = Allow TPM Initialization and Reboot |
+| Allow TPM/Reboot      | 3                             | 0,1,2,3                                                                                                                                         | False    | 0       | Number | Options for allowing TPM initialization and rebooting. 0 = Do not allow, 1 = Allow TPM Initialization, 2 = Allow Reboot, 3 = Allow TPM Initialization and Reboot |
 | Key Protector Type     | RecoveryPassword              | Tpm, TpmStartup, TpmPinStartup, Password, Startup, RecoveryKey, RecoveryPassword, AdAccount                                                    | True     |         | Text   | Options for which type of protector to use for BitLocker: Tpm, TpmPin (Requires PIN/Password parameter), TpmStartup (Requires Path/ADAccount parameter), TpmPinStartup (Requires PIN/Password and Path/ADAccount parameters), Password (Requires PIN/Password parameter), Startup (Requires Path/ADAccount parameter), RecoveryKey (Requires Path/ADAccount parameter), RecoveryPassword, AdAccount (Requires Path/ADAccount parameter) |
 | PIN/Password          | - 123456- Pa$sw0rD!- 123456-654321-123456-654321-123456-654321 |                                                                                                                                                  | Semi     |         | Text   | Option for the PIN or Password needed for specific key protector types.                            |
 | Path/ADAccount        | - F://Recovery- CONTOSO//ContosoUser- CONTOSO//ContosoGroup |                                                                                                                                                  | Semi     |         | Text   | Option for the Path or AD Account needed for specific key protector types.                         |
@@ -62,8 +63,8 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ![Task Creation 2](../../../static/img/Bitlocker---Volume---Initialize/image_8.png)
 
-**Name:** Bitlocker - Volume - Initialize  
-**Description:** `Encrypts a drive with BitLocker disk encryption.`  
+**Name:** Bitlocker - Volume - Initialize  \
+**Description:** `Encrypts a drive with BitLocker disk encryption.`  \
 **Category:** Security  
 
 ![Task Creation 3](../../../static/img/Bitlocker---Volume---Initialize/image_9.png)
@@ -412,15 +413,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

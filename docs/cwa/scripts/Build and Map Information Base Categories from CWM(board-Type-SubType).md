@@ -8,11 +8,12 @@ tags: ['database', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script will create information base categories (ticket categories) for every imported manage board.
 
-Time Saved by Automation: 30 Minutes
+**Time Saved by Automation:** 30 Minutes
 
 ## Sample Run
 
@@ -20,7 +21,7 @@ Time Saved by Automation: 30 Minutes
 
 ## Dependencies
 
-CW Manage Plugin should be configured.
+The CW Manage Plugin should be configured.
 
 ## Variables
 
@@ -33,23 +34,12 @@ CW Manage Plugin should be configured.
 
 | Name                           | Example | Required | Description                                                                                           |
 |--------------------------------|---------|----------|-------------------------------------------------------------------------------------------------------|
-| I have backed up the db       | 1       | True     | This represents that the DB has been backed up prior to making any changes to Infobase categories.   |
+| I have backed up the db       | 1       | True     | This indicates that the DB has been backed up prior to making any changes to the Infobase categories. |
 
 ## Process
 
-This script will create information base categories (ticket categories) for every imported manage board. This script runs 3 SQL queries to get, ignore and update the info base categories in the CW manage Plugin.
+This script will create information base categories (ticket categories) for every imported manage board. It runs three SQL queries to retrieve, ignore, and update the info base categories in the CW Manage Plugin.
 
 ## Output
 
 CW Manage Plugin
-
-
-
-
-
-
-
-
-
-
-

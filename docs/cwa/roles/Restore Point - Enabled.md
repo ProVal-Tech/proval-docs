@@ -8,24 +8,13 @@ tags: ['database', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This role checks the registry if Restore point is enabled or not, if so it applies this role to the machine in the Automate database.
+This role checks the registry to determine if the Restore Point feature is enabled. If it is enabled, the role applies the necessary settings to the machine in the Automate database.
 
 ## Settings
 
 | Detection String                                             | Comparator | Result | Applicable OS |
 |------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/Microsoft/Windows NT/CurrentVersion/SystemRestore:RPSessionInterval-%} | Equals     | 1      | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-

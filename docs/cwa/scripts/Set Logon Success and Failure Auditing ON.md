@@ -8,11 +8,12 @@ tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script uses auditpol.exe to configure logon auditing for success and failures to ON. This applies to the default domain controller policy so it will only run on a DC.
+This script uses `auditpol.exe` to configure logon auditing for success and failure events to ON. This applies to the default domain controller policy, so it will only run on a DC.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -20,27 +21,15 @@ Time Saved by Automation: 5 Minutes
 
 ## Variables
 
-%Shellresult% - Used to Check the Auditpol command succeeded or not.
+- `%Shellresult%` - Used to check whether the Auditpol command succeeded or not.
 
 ## Process
 
-- Script checks if it's running on a DC or not, exits if the machine is not a DC
-- Runs Auditpol.exe /set /subcategory:logon /success:enable /failure:enable to enable Logon Success and failure events
-- Checks whether the command succeeded or not
-- Resends Inventory command
+- The script checks if it's running on a DC; it exits if the machine is not a DC.
+- It runs `Auditpol.exe /set /subcategory:logon /success:enable /failure:enable` to enable logon success and failure events.
+- It checks whether the command succeeded or not.
+- It resends the inventory command.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

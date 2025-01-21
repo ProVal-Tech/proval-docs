@@ -8,6 +8,7 @@ tags: ['ticketing', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is an Automate Wrapper to run the Agnostic Update-Office script.
@@ -15,7 +16,7 @@ This script is an Automate Wrapper to run the Agnostic Update-Office script.
 ## Sample Run
 
 ![Sample Run](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_1.png)  
-Set force to 1 to force Microsoft office applications to close during the update process.
+Set force to 1 to force Microsoft Office applications to close during the update process.
 
 ## Dependencies
 
@@ -29,11 +30,11 @@ Document the various variables in the script. Delete any section that is not rel
 |-------------------|--------------------------------------------------------------------------------------------------|
 | WorkingDirectory   | Standard Template Variable.                                                                      |
 | PS1Log            | Standard Template Variable.                                                                      |
-| PS!DataLog        | Standard Template Variable.                                                                      |
+| PS1DataLog        | Standard Template Variable.                                                                      |
 | PS1ErrorLog       | Standard Template Variable.                                                                      |
 | LogContent        | Standard Template Variable.                                                                      |
-| QueriedLog        | Necessary to determine if a warning is present in the log, since the agnostic script sets a warning, Selects The last two lines of the log file. |
-| AlertType         | This sets the alert type found can be a warning or error.                                       |
+| QueriedLog        | Necessary to determine if a warning is present in the log, since the agnostic script sets a warning. Selects the last two lines of the log file. |
+| AlertType         | This sets the alert type, which can be a warning or error.                                       |
 | ErrorMsg          | The associated error message for the specific script section.                                   |
 | DataLogContent    | Standard Template Variable.                                                                       |
 | TicketSubject     | The subject of the ticket.                                                                        |
@@ -43,15 +44,15 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name   | Example | Description                                                                                   |
 |--------|---------|-----------------------------------------------------------------------------------------------|
-| Force  | 1 or 0  | 1 will force the shutdown of office applications during the update process. O does not force the shutdown of office applications during the process. |
+| Force  | 1 or 0  | 1 will force the shutdown of Office applications during the update process. 0 does not force the shutdown of Office applications during the process. |
 
 ### Global Parameters
 
 | Name                | Example         | Required | Description                                                  |
 |---------------------|-----------------|----------|--------------------------------------------------------------|
 | ProjectName         | Update-Office   | True     | The name of the agnostic script minus the .ps1              |
-| TicketOnError       | 0 or 1          | True     | Toggles on / off ticketing on error.                        |
-| TicketOnWarning     | 0 or 1          | True     | Toggles on / off ticketing on warning.                      |
+| TicketOnError       | 0 or 1          | True     | Toggles on/off ticketing on error.                          |
+| TicketOnWarning     | 0 or 1          | True     | Toggles on/off ticketing on warning.                        |
 
 ## Output
 
@@ -60,15 +61,3 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/SWM---Software-Configuration---Script---Microsoft-Office-365---Update/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['webroot']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script collects the machine's Webroot hashed keycode and matches it with the keycode set up in the client EDF "Webroot Site Keycode". The results of this can be reviewed using the dataview or tickets can be automatically generated for mismatched license keys with the [Internal Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291) where the ticket category is set.
+This script collects the machine's Webroot hashed keycode and matches it with the keycode set up in the client EDF "Webroot Site Keycode". The results can be reviewed using the dataview, or tickets can be automatically generated for mismatched license keys with the [Internal Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291) where the ticket category is set.
 
 ## Sample Run
 
@@ -24,24 +25,12 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 
 | Name                                   | Level    | Required | Description                                                                                                      |
 |----------------------------------------|----------|----------|------------------------------------------------------------------------------------------------------------------|
-| Webroot Encrypted KeyCode              | Computer | True     | Stores keycode grabbed from computer                                                                             |
-| Webroot KeyCode Status                 | Computer | True     | It stores the keycode's status as either `KeyCode Matched` or `KeyCode Not Matched`                           |
-| Webroot Site KeyCode                   | Client   | True     | This stores the site keycode which is available at the portal. Follow the below document on how to get the keycode: [Webroot Site KeyCode](<./Webroot Site KeyCode.md>) |
+| Webroot Encrypted KeyCode              | Computer | True     | Stores keycode grabbed from the computer                                                                          |
+| Webroot KeyCode Status                 | Computer | True     | Stores the keycode's status as either `KeyCode Matched` or `KeyCode Not Matched`                               |
+| Webroot Site KeyCode                   | Client   | True     | Stores the site keycode which is available at the portal. Follow the document below on how to get the keycode: [Webroot Site KeyCode](<./Webroot Site KeyCode.md>) |
 
 ## Output
 
 - Script log
 - EDF
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,16 +8,17 @@ tags: ['performance', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Removes the Scheduled task that attempts to restart the VSA Agent every 15 minutes to prevent VSA agents from going offline without notification.
+This document outlines the steps to remove the scheduled task that attempts to restart the VSA Agent every 15 minutes, preventing VSA agents from going offline without notification.
 
 ## Sample Run
 
 | Time                   | Action                                             | Result                                                                                                 | User                       |
 |------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------|----------------------------|
 | 13:56:56 28-Apr-22     | Scheduled Task for Restart Agent - Remove         | Success THEN                                                                                           | provaltech.com/dan.hicks   |
-| 13:56:48 28-Apr-22     | Run Now - Scheduled Task for Restart Agent - Remove | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Scheduled Task for Restart Agent - Remove to run at Apr 28 2022 1:56PM | provaltech.com/dan.hicks   |
+| 13:56:48 28-Apr-22     | Run Now - Scheduled Task for Restart Agent - Remove | Admin provaltech.com/dan.hicks scheduled procedure Run Now - Scheduled Task for Restart Agent - Remove to run at Apr 28 2022 1:56 PM | provaltech.com/dan.hicks   |
 
 ## Dependencies
 
@@ -26,7 +27,7 @@ Removes the Scheduled task that attempts to restart the VSA Agent every 15 minut
 
 ## Process
 
-Deletes the scheduled task created by [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>).
+This process deletes the scheduled task created by [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>).
 
 ## Output
 
@@ -37,15 +38,3 @@ The location and method by which this script returns data.
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
-
-
-
-
-
-
-
-
-
-
-

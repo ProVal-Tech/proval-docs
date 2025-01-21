@@ -8,6 +8,7 @@ tags: ['cleanup', 'performance', 'registry', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script is developed to delete all contents of the **PendingFileRenameOperations** registry.
@@ -36,7 +37,7 @@ This script is developed to delete all contents of the **PendingFileRenameOperat
 | 3:28:22 am 23-Aug-22    | Remove PendingFileRenameOperations                   | HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Session Manager PendingFileRenameOperations REG_MULTI_SZ ... | provaltech.com/surender.kumar   |
 | 3:28:21 am 23-Aug-22    | Execute Shell command - Get Results to Variable      | Success THEN                                   | provaltech.com/surender.kumar   |
 | 3:28:19 am 23-Aug-22    | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: Reg Query "HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Session Manager" /v PendingFileRenameOperations >"c:/provaltech/commandresults-166058979.txt" 2>&1 | provaltech.com/surender.kumar   |
-| 3:28:11 am 23-Aug-22    | Run Now - Remove PendingFileRenameOperations          | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Remove PendingFileRenameOperations to run at Aug 23 2022 3:28AM | provaltech.com/surender.kumar   |
+| 3:28:11 am 23-Aug-22    | Run Now - Remove PendingFileRenameOperations          | Admin provaltech.com/surender.kumar scheduled procedure Run Now - Remove PendingFileRenameOperations to run at Aug 23 2022 3:28 AM | provaltech.com/surender.kumar   |
 
 ## Dependencies
 
@@ -44,22 +45,11 @@ No
 
 ## Process
 
-- AP checks the registry by the command "PendingFileRenameOperations" to see if the registry exists.
-- If the registry exists, deletes all content from the registry and re-checks whether all content is removed from the registry.
+- The agent checks the registry for the command "PendingFileRenameOperations" to see if the registry exists.
+- If the registry exists, it deletes all content from the registry and re-checks whether all content has been removed.
 
 ## Output
 
 - Agent Procedure Log
 
 Procedure_PendingFileRenameOperations_-_Registry_contents_Removal.xml
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['report', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Create a Client-level ticket with the information of all the machines which are offline for more than X days.
+Create a client-level ticket with the information of all the machines that have been offline for more than X days.
 
 ## Sample Run
 
@@ -21,7 +22,7 @@ It is a client script. Schedule it to run every `@Threshold_Offline_Days@` days.
 
 | Name                   | Default | Required | Description                                                                                                        |
 |------------------------|---------|----------|--------------------------------------------------------------------------------------------------------------------|
-| Threshold_Offline_Days | 30      | True     | This sets the threshold of how older offline agents detected.                                                      |
+| Threshold_Offline_Days | 30      | True     | This sets the threshold for how long offline agents are detected.                                                  |
 
 ## Output
 
@@ -29,7 +30,7 @@ It is a client script. Schedule it to run every `@Threshold_Offline_Days@` days.
 
 ## Ticketing
 
-For clients with multiple offline machines  
+For clients with multiple offline machines:
 
 **Subject:**  
 ```
@@ -38,7 +39,7 @@ LT - X Machines Offline > @Threshold_Offline_Days@ Days at %ClientName%
 
 **Body:**  
 ```
-There were X machines found to be offline at %ClientName%. Please review the following list of computers and find out if these can be turned on or if they need to get decommissioned.
+There were X machines found to be offline at %ClientName%. Please review the following list of computers and determine if these can be turned on or if they need to be decommissioned.
 
 The PCs in question have been listed below:
 PC Name: %ComputerName1% (Last login: %LastUserName%)
@@ -64,7 +65,7 @@ LT - 8 Machines Offline > 10 Days at Development
 ```
 **Body:**  
 ```
-There were 8 machines found to be offline at Development. Please review the following list of computers and find out if these can be turned on or if they need to get decommissioned.
+There were 8 machines found to be offline at Development. Please review the following list of computers and determine if these can be turned on or if they need to be decommissioned.
 
 The PCs in question have been listed below:
 PC Name: DEV-SERVER2012R (Last login: DEV-SERVER2012R/Administrator)
@@ -108,7 +109,7 @@ PC Model: Virtual Machine (OS: Microsoft Windows 8.1 Pro x64)
 S/N OF PC: 7236-6914-8520-4476-5686-2377-81
 ```
 
-For client with single offline machine  
+For clients with a single offline machine:
 
 **Subject:**  
 ```
@@ -117,13 +118,13 @@ LT - %computername% offline > @Threshold_Offline_Days@ days at %ClientName%/%Loc
 
 **Body:**  
 ```
-The computer %computername% at %ClientName%/%LocationName% not checked in since %LastContact%. Please find out why this machine is offline and if it should be decommissioned.
+The computer %computername% at %ClientName%/%LocationName% has not checked in since %LastContact%. Please find out why this machine is offline and if it should be decommissioned.
 
-The PC Information is outlined below:
+The PC information is outlined below:
 PC Name: %ComputerName% (Last login: %LastLoggedonUser%)
 Last Contact: %LastContact%
 PC Model: %PCModel%
-OS: %os%
+OS: %OS%
 S/N OF PC: %SerialNumber%
 ```
 
@@ -136,21 +137,10 @@ LT - DEV-WIN10-3 offline > 90 days at Development/Dev
 ```
 The computer DEV-WIN10-3 at Development/Dev has not checked in since 2023-02-22 15:28:08. Please find out why this machine is offline and if it should be decommissioned.
 
-The PC Information is outlined below:
+The PC information is outlined below:
 PC Name: DEV-WIN10-3 (Last login: DEV-WIN10-3/User)
 Last Contact: 2023-02-22 15:28:08
 PC Model: Virtual Machine
 OS: Microsoft Windows 10 Enterprise x64
 S/N OF PC: 8204-9944-0772-5397-0764-9709-12
 ```
-
-
-
-
-
-
-
-
-
-
-

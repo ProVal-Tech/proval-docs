@@ -8,6 +8,7 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This agent procedure is used to check the update channel for Microsoft Office and update to a CF.
@@ -30,36 +31,26 @@ Custom Field: **cPVAL Office Update Channel**
 
 ## Implementation
 
-Export the agent procedure from ProVal's VSA RMM instance  
-Name: Get Office Update Channel (Windows) [CF]  
-![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_1.png)  
-The export will download the necessary XML file.  
-![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_2.png)  
-Import this XML file into the partner's VSA RMM instance  
-![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_3.png)  
+1. Export the agent procedure from ProVal's VSA RMM instance.  
+   Name: Get Office Update Channel (Windows) [CF]  
+   ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_1.png)  
+   The export will download the necessary XML file.  
+   ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_2.png)  
+   
+2. Import this XML file into the partner's VSA RMM instance.  
+   ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_3.png)  
 
-Once imported, create a custom field in the partner environment  
-Name: cPVAL Office Update Channel  
-Custom Field Type: String  
-![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_4.png)  
+3. Once imported, create a custom field in the partner environment.  
+   Name: cPVAL Office Update Channel  
+   Custom Field Type: String  
+   ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_4.png)  
 
 ## Output
 
-Last Exec Status of success is expected.  
+A Last Exec Status of success is expected.  
 ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_5.png)  
 Agent Procedure Log  
 ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_6.png)  
 
 Custom Field  
 ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_7.png)  
-
-
-
-
-
-
-
-
-
-
-

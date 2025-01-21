@@ -8,6 +8,7 @@ tags: ['database', 'disk-encryption', 'performance', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Holds populated data from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
@@ -33,41 +34,28 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Dis
 | SerialNumber              | VarChar(255)   | Holds the drive serial number                    |
 | DiskSize                  | VarChar(255)   | Holds the drive size displayed as "#### GB/MB" etc. |
 | BufferSize                | VarChar(255)   | Holds the buffer size of the drive               |
-| Interface                 | VarChar(255)   | Holds the drives' interface information          |
-| TransferMode              | VarChar(255)   | Holds the drives' transfer mode information      |
-| PowerOnCount              | INT(11)        | Holds the drives' power on count                 |
-| PowerOnHours              | INT(11)        | Holds the drives' power on hours                 |
-| HostReads                 | VarChar(255)   | Holds the drives' host read count                |
-| HostWrites                | VarChar(255)   | Holds the drives' host write count               |
-| Temperature               | VarChar(255)   | Holds the drives' temperature                    |
-| HealthStatus              | VarChar(255)   | Holds the drives' current health status          |
-| Features                  | VarChar(255)   | Holds the drives' available features             |
-| APMLevel                  | VarChar(255)   | Holds the drives' APM level                      |
-| AAMLevel                  | VarChar(255)   | Holds the drives' AAM level                      |
-| CriticalWarnings           | INT(11)        | Holds the count of the drives' critical warnings |
-| CompositeTemperature       | INT(11)        | Holds the drives' current composite temperature   |
-| AvailableSpare            | INT(11)        | Holds the drives' available spare information    |
-| AvailableSpareThreshold    | INT(11)        | Holds the drives' available spare threshold information |
-| PercentageUsed            | INT(11)        | Holds the drives' percentage being used          |
+| Interface                 | VarChar(255)   | Holds the drive's interface information          |
+| TransferMode              | VarChar(255)   | Holds the drive's transfer mode information      |
+| PowerOnCount              | INT(11)        | Holds the drive's power on count                 |
+| PowerOnHours              | INT(11)        | Holds the drive's power on hours                 |
+| HostReads                 | VarChar(255)   | Holds the drive's host read count                |
+| HostWrites                | VarChar(255)   | Holds the drive's host write count               |
+| Temperature               | VarChar(255)   | Holds the drive's temperature                    |
+| HealthStatus              | VarChar(255)   | Holds the drive's current health status          |
+| Features                  | VarChar(255)   | Holds the drive's available features             |
+| APMLevel                  | VarChar(255)   | Holds the drive's APM level                      |
+| AAMLevel                  | VarChar(255)   | Holds the drive's AAM level                      |
+| CriticalWarnings          | INT(11)        | Holds the count of the drive's critical warnings |
+| CompositeTemperature       | INT(11)        | Holds the drive's current composite temperature   |
+| AvailableSpare            | INT(11)        | Holds the drive's available spare information    |
+| AvailableSpareThreshold    | INT(11)        | Holds the drive's available spare threshold information |
+| PercentageUsed            | INT(11)        | Holds the drive's percentage being used          |
 | DataUnitsRead             | INT(11)        | Holds the amount of data units read for the drive|
 | DataUnitsWritten          | INT(11)        | Holds the amount of data units written for the drive |
 | HostReadCommands          | INT(11)        | Holds the amount of Host Read Commands for the drive |
 | HostWriteCommands         | INT(11)        | Holds the amount of Host Write Commands for the drive |
-| ControllerBusyTime        | INT(11)        | Holds the drives' controller busy time           |
+| ControllerBusyTime        | INT(11)        | Holds the drive's controller busy time           |
 | UnsafeShutdowns           | INT(11)        | Holds the number of unsafe shutdowns for the drive |
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
-| DateUpdated               | DATE           | Holds the Date of the last check                 |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| DateUpdated               | DATE           | Holds the date of the last check                 |

@@ -8,11 +8,12 @@ tags: ['installation', 'logging', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script downloads and installs HP support assistant if console is logged on then verifies the installation inside the script.
+This script downloads and installs the HP Support Assistant if a user is logged in, then verifies the installation within the script.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
@@ -21,26 +22,15 @@ Time Saved by Automation: 5 Minutes
 ## Dependencies
 
 - Requires a user to be logged in
-- File Download from: [https://ftp.hp.com/pub/softpaq/sp93001-93500/sp93097.exe](https://ftp.hp.com/pub/softpaq/sp93001-93500/sp93097.exe)
+- File Download from: [HP Support Assistant Installer](https://ftp.hp.com/pub/softpaq/sp93001-93500/sp93097.exe)
 
 ## Process
 
-1. The script downloads the HP Support software from HP
-2. Queues the install with the silent switch on the logged in user
-3. Verifies if the software is detected
-   - If not, logs in Automate's scripting logs a failure to install.
+1. The script downloads the HP Support software from HP.
+2. Queues the installation with the silent switch for the logged-in user.
+3. Verifies if the software is detected.
+   - If not, logs a failure to install in Automate's scripting logs.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-

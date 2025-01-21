@@ -8,25 +8,13 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Role used to detect the servers with Certification Authority Feature installed.
+This document describes a role used to detect servers with the Certification Authority feature installed.
 
 ## Settings
 
 | Detection String                                                                                      | Comparator | Result   | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|----------|---------------|
-| \{@%powershell.exe -nologo -noprofile -command "Get-windowsFeature -Name 'ADCS-Cert-Authority' -erroraction 'SilentlyContinue' | Select-Object InstallState | Ft -hide"@%} | Contains   | Installed | Windows       |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Cert-Authority' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows       |

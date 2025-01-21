@@ -8,17 +8,18 @@ tags: ['api']
 draft: true
 unlisted: false
 ---
+
 # Overview
 
-Removes VSA Agents from the environment that exceed X days offline
+This script removes VSA agents from the environment that have been offline for a specified number of days.
 
 # Requirements
 
-Requires VSAAPI Module to be loaded.
+The VSAAPI Module must be loaded.
 
 # Process
 
-Gets a list of agents that meet the set criteria (offline for `$OfflineDays` days, not in `$MachineGroupException` groups) and runs the VSAAPI function `Remove-VsaAgent`, removing them from the VSA without first uninstalling the agent.
+The script retrieves a list of agents that meet the specified criteria (offline for `$OfflineDays` days and not in `$MachineGroupException` groups) and executes the VSAAPI function `Remove-VsaAgent`, removing them from the VSA without first uninstalling the agent.
 
 # Payload Usage
 
@@ -26,35 +27,22 @@ Gets a list of agents that meet the set criteria (offline for `$OfflineDays` day
 ./Remove-VsaStagnantAgent.ps1 -BaseURL https://vsa.provaltech.com -VsaUserName apiServiceAccount -RestApiToken abcd-efgh-ijkl-mnop -OfflineDays 30 -MachineGroupException proval.development
 ```
 
-Removes agents offline for 30 days in all groups except proval.development
+This command removes agents that have been offline for 30 days in all groups except `proval.development`.
 
 # Parameters
 
 | Parameter                  | Alias | Required | Default | Type          | Description                          |
 |---------------------------|-------|----------|---------|---------------|--------------------------------------|
 | `BaseURL`                 |       | True     |         | String        | VSA URL                              |
-| `VsaUserName`             |       | True     |         | String        | User with Api Access                 |
-| `RestApiToken`            |       | True     |         | String        | Rest Api Token for User              |
-| `OfflineDays`             |       | False    | 60      | Int           | Agent Idle Days for removal          |
+| `VsaUserName`             |       | True     |         | String        | User with API access                 |
+| `RestApiToken`            |       | True     |         | String        | REST API token for the user         |
+| `OfflineDays`             |       | False    | 60      | Int           | Number of idle days for agent removal|
 | `MachineGroupException`    |       | False    |         | String Array  | Groups to exclude from agent removal  |
 
 # Output
 
-Location of output for log, result, and error files.
+The output location for log, result, and error files is as follows:
 
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

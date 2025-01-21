@@ -8,6 +8,7 @@ tags: ['report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>).
@@ -24,19 +25,6 @@ This dataview stores the status of the MSRT scanner result from the script [Mali
 | Location               | Location name of the agent                           |
 | Computer               | The computer name of the agent                       |
 | Operating System       | The operating system of the agent                    |
-| LastContact            | The last contact of the agent with the RMM          |
-| MSRT Scanner Result    | MSRT tool scanner result conclusion recorded         |
+| Last Contact           | The last contact of the agent with the RMM          |
+| MSRT Scanner Result     | MSRT tool scanner result conclusion recorded         |
 | MSRT Scanner Date      | MSRT's last scanner date                             |
-
-
-
-
-
-
-
-
-
-
-
-
-

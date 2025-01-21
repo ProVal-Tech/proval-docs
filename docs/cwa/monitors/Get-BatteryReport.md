@@ -8,9 +8,10 @@ tags: ['data-collection']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor will check two times a day targeting only computers where the last battery report scan is greater than 24 hours ago, and the last battery report returned data, and run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
+This monitor checks twice a day, targeting only computers where the last battery report scan is greater than 24 hours ago and the last battery report returned data. It runs the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
 
 ## Dependencies
 
@@ -21,23 +22,10 @@ This monitor will check two times a day targeting only computers where the last 
 
 ## Target
 
-The nature of the monitor is to select all computers which have returned a valid battery in the past, or if the last scan was more than 24 hours ago. This Monitor then triggers the Automate Get - Battery Report script to run on any device found with the conditions above.
+The purpose of this monitor is to select all computers that have returned a valid battery report in the past or where the last scan was more than 24 hours ago. This monitor then triggers the Automate Get - Battery Report script to run on any device that meets these conditions.
 
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
-The Alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
-
-
-
-
-
-
-
-
-
-
-
-
-
+The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.

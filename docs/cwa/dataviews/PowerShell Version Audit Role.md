@@ -8,9 +8,10 @@ tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview collects the information of PowerShell Version based on role.
+This dataview collects information about the PowerShell version based on the role.
 
 ## Dependencies
 
@@ -18,25 +19,11 @@ This dataview collects the information of PowerShell Version based on role.
 
 ## Columns
 
-| Column              | Description                               |
-|---------------------|-------------------------------------------|
-| Client              | Client Name of the agent                  |
-| Location            | Location Name of the agent                |
-| Computer            | Computer Name of the agent                |
-| Operating System    | Operating System of the agent             |
-| LastContact         | Last Contact of agent with the RMM       |
-| PowerShell Version   | PowerShell Version of the agent           |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Column               | Description                               |
+|----------------------|-------------------------------------------|
+| Client               | Client name of the agent                  |
+| Location             | Location name of the agent                |
+| Computer             | Computer name of the agent                |
+| Operating System     | Operating system of the agent             |
+| Last Contact         | Last contact of the agent with the RMM   |
+| PowerShell Version    | PowerShell version of the agent           |

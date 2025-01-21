@@ -8,13 +8,17 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 # Overview
+
 Datto RMM Implementation of the ProVal Agnostic Remove-PUA.ps1
 
 # Dependencies
+
 [Remove-PUA.ps1](https://proval.itglue.com/5078775/docs/9434539)
 
 # Implementation
+
 Import PUA Removal Tool.cpt into the environment.
 
 # Datto Variables
@@ -24,19 +28,9 @@ Import PUA Removal Tool.cpt into the environment.
 | `ListBloatware`    | `Boolean`| `True`  | `Non-destructive. Lists applicable bloatware detected on the endpoint, but does not remove. Cannot be set simultaneously with any other parameter.`                     |
 | `RemoveAll`        | `Boolean`| `False` | `Remove all detected bloatware from the endpoint. USE WITH CAUTION.`                                                                                                   |
 | `Remove`           | `String` |         | `Remove the provided package(s) from the endpoint. Cannot be set simultaneously with RemoveAll.`                                                                        |
-| `DParameter`       | `String` |         | `Removes all detected bloatware in the specified categories. Requires the RemoveAll Variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps', 'WindowsStoreApps', 'XboxFeaturesApps', 'NonAppxApps'` |
-| `EParameter`       | `String` |         | `Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll Variable to be set to True.`                                                        |
+| `DParameter`       | `String` |         | `Removes all detected bloatware in the specified categories. Requires the RemoveAll variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps', 'WindowsStoreApps', 'XboxFeaturesApps', 'NonAppxApps'` |
+| `EParameter`       | `String` |         | `Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll variable to be set to True.`                                                        |
 
 # Output
+
 stdOut & stdError
-
-
-
-
-
-
-
-
-
-
-

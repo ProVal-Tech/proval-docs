@@ -8,9 +8,10 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-The goal of the solution is to monitor the trend of drive space utilization and provide forecasts on the number of days until the drive space is fully occupied.
+The goal of this solution is to monitor the trend of drive space utilization and provide forecasts on the number of days until the drive space is fully occupied.
 
 ## Associated Content
 
@@ -31,43 +32,31 @@ The goal of the solution is to monitor the trend of drive space utilization and 
 2. Reload the system cache:
    ![Reload Cache](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_1.png)
 
-3. Debug the [Predictive Volume Exhaustion Monitor Creation](<../cwa/scripts/Predictive Volume Exhaustion Monitor Creation.md>) script against any random client with the `Set_Environment` parameter set to `1` to create the system properties and the extra data fields used by the script. It will also remove the deprecated version of the solution from the environment.
+3. Debug the [Predictive Volume Exhaustion Monitor Creation](<../cwa/scripts/Predictive Volume Exhaustion Monitor Creation.md>) script against any random client with the `Set_Environment` parameter set to `1` to create the system properties and the extra data fields used by the script. This will also remove the deprecated version of the solution from the environment.
    ![Debugging](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_2.png)
 
 4. Set the `System Properties` and `EDFs` as required.
 
 5. Navigate to System > Configuration > Dashboard > Management > Scheduled Scripts
-   - Schedule the [Predictive Volume Exhaustion Monitor Creation](<../cwa/scripts/Predictive Volume Exhaustion Monitor Creation.md>) script to run once per day during afterhours.
+   - Schedule the [Predictive Volume Exhaustion Monitor Creation](<../cwa/scripts/Predictive Volume Exhaustion Monitor Creation.md>) script to run once per day after hours.
    ![Schedule Script](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_3.png)
 
 ## Notes
 
-- By default, the solution will create [Volume Space Sampling](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) monitors. The following System properties will be enabled as imported:
+- By default, the solution will create [Volume Space Sampling](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) monitors. The following system properties will be enabled as imported:
   - PVE_Monitoring_Server_Enable
   - PVE_Monitoring_Workstation_Enable
   - PVE_Monitoring_Server_AuditOnly
   - PVE_Monitoring_Workstation_AuditOnly
-- Global settings can be overridden at the client/location or computer levels using the EDFs outlined in X document.
+- Global settings can be overridden at the client/location or computer levels using the EDFs outlined in the relevant document.
 
 ## FAQ
 
-**Q:** How to enable the auditing across the entire environment?  
-**A:** Setting the following system properties to `1` will enable the auditing across the entire environment:
+**Q:** How do I enable auditing across the entire environment?  
+**A:** Setting the following system properties to `1` will enable auditing across the entire environment:
 - PVE_Monitoring_Server_Enable
 - PVE_Monitoring_Workstation_Enable
 - PVE_Monitoring_Server_AuditOnly
 - PVE_Monitoring_Workstation_AuditOnly
 
-Setting the `_AuditOnly` properties will enable the [Volume Space Sampling](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) monitors instead of [Volume Space Prediction](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Prediction.md>). The audited data is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](<../cwa/dataviews/Volume Exhaustion Estimations Remote Monitor.md>) dataview.
-
-
-
-
-
-
-
-
-
-
-
-
+Setting the `_AuditOnly` properties will enable the [Volume Space Sampling](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) monitors instead of the [Volume Space Prediction](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Prediction.md>). The audited data is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](<../cwa/dataviews/Volume Exhaustion Estimations Remote Monitor.md>) dataview.

@@ -8,20 +8,21 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The group contains the computers where the solution to disable FastBoot is enabled through the Custom Fields.
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field  - Company - Disable_FastBoot.md>)
+- [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>)
 - [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](<../custom-fields/Endpoint - FastBoot_Disabled.md>)
 - [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](<../custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>)
 - [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](<../custom-fields/Site - Disable_Fastboot_Exclusion.md>)
 
 ## Group Creation
 
-1. Navigate to `Devices` > `Device Groups`.
+1. Navigate to `Devices` > `Device Groups`.  
    ![Step 1](../../../static/img/Disable-FastBoot/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
@@ -74,15 +75,3 @@ The group contains the computers where the solution to disable FastBoot is enabl
 
 ![Completed Group 1](../../../static/img/Disable-FastBoot/image_12.png)  
 ![Completed Group 2](../../../static/img/Disable-FastBoot/image_13.png)
-
-
-
-
-
-
-
-
-
-
-
-

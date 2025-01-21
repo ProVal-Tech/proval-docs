@@ -8,6 +8,7 @@ tags: ['smb', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This client script creates a ticket for each client with the computer count where remediation is required.
@@ -24,8 +25,8 @@ This client script creates a ticket for each client with the computer count wher
 
 | Name                     | Description                                                                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @VulnerableagentCount@   | This stores the count of computers where the remediation is required marked by the script @Script: SMBv1 Enabled Detection & Remediation [DV,Param].              |
-| TicID                    | It stores the ticket ID if there is any existing open ticket detected so that commenting can be done on the same ticket.                                            |
+| @VulnerableagentCount@   | This stores the count of computers where remediation is required, marked by the script @Script: SMBv1 Enabled Detection & Remediation [DV,Param].              |
+| TicID                    | This stores the ticket ID if any existing open ticket is detected, allowing comments to be made on the same ticket.                                            |
 
 ## Output
 
@@ -40,22 +41,10 @@ This client script creates a ticket for each client with the computer count wher
    Here, @sqlname@ is the client's name.
 
    **Body**:  
-   The SMBv1 Enable status audit was detected on the @VulnerableagentCount@ computer of client "@sqlname@".  
+   The SMBv1 Enable status audit was detected on the @VulnerableagentCount@ computer(s) of client "@sqlname@".  
    Please review the dataview for the computer list.
 
    OR
 
-   The SMBv1 Enable status audit detected on @VulnerableagentCount@ computers of client "@sqlname@".  
+   The SMBv1 Enable status audit was detected on @VulnerableagentCount@ computer(s) of client "@sqlname@".  
    Please review the dataview for the computer list.
-
-
-
-
-
-
-
-
-
-
-
-

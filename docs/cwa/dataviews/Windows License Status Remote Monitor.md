@@ -8,9 +8,10 @@ tags: ['report', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This will display the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011).
+This document displays the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011).
 
 ## Dependencies
 
@@ -20,26 +21,13 @@ This will display the status of the Windows License fetched by the remote monito
 
 | Column                  | Description                                                       |
 |------------------------|-------------------------------------------------------------------|
-| ClientID               | ClientID of the computer                                          |
-| LocationID             | LocationID of the computer                                        |
-| ComputerID             | ComputerID of the computer                                        |
-| Client                 | Name of the client                                               |
-| Location               | Name of the location                                             |
-| Computer               | Name of the computer                                             |
-| Operating System       | Operating System of the computer                                  |
-| Last Contact           | Last Contact of the computer                                      |
-| Data Collection Time    | The time when the Windows License Status was fetched             |
-| Windows License Status  | The status of the windows license if it is got expired or about to expired or is licensed. |
-
-
-
-
-
-
-
-
-
-
-
-
-
+| ClientID               | Client ID of the computer                                          |
+| LocationID             | Location ID of the computer                                        |
+| ComputerID             | Computer ID of the computer                                        |
+| Client                 | Name of the client                                                |
+| Location               | Name of the location                                              |
+| Computer               | Name of the computer                                              |
+| Operating System       | Operating System of the computer                                   |
+| Last Contact           | Last contact time of the computer                                  |
+| Data Collection Time    | The time when the Windows License Status was fetched              |
+| Windows License Status  | The status of the Windows license, indicating if it has expired, is about to expire, or is licensed. |

@@ -8,6 +8,7 @@ tags: ['hyper-v', 'security', 'virtualization']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script will place the virtual machines hosted on a Hyper-V Host into Maintenance mode for 60 minutes. During this maintenance period, alerts will not be generated, and script execution will be restricted on these virtual machines.
@@ -16,18 +17,6 @@ The script will place the virtual machines hosted on a Hyper-V Host into Mainten
 
 ![Image](../../../static/img/VM-Host---Maint-Mode-Dependent-Machines/image_1.png)
 
-What will get set on all VMs running with an Automate Agent on the host:
+What will be set on all VMs running with an Automate Agent on the host:
 
 ![Image](../../../static/img/VM-Host---Maint-Mode-Dependent-Machines/image_2.png)
-
-
-
-
-
-
-
-
-
-
-
-

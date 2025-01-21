@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This dataview will display Bitlocker recovery keys that have been collected by the [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>) script.
+This dataview displays Bitlocker recovery keys that have been collected by the [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>) script.
 
 ## Dependencies
 
@@ -25,18 +26,4 @@ This dataview will display Bitlocker recovery keys that have been collected by t
 | Computer Name | The name of the endpoint                                                                         |
 | Drive Letter  | The drive letter that has been encrypted with Bitlocker                                         |
 | Recovery Key  | The recovery key for Bitlocker                                                                   |
-| Last Updated  | The last time that script was run to gather the data. Old LastUpdated dates may indicate outdated information. |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Last Updated  | The last time that the script was run to gather the data. Old Last Updated dates may indicate outdated information. |

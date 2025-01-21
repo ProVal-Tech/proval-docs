@@ -8,13 +8,14 @@ tags: ['sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Step 1
 Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only`. The alert template should not perform any action.
 
 ---
 
 ## Step 2
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well.
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well.
 
 ---
 
@@ -26,20 +27,20 @@ INSERT INTO `sensorchecks`
 SELECT 
 '' as `SensID`,
 'Windows Machines Excluding Virtual' as `Name`, 
-'SELECT 
+'SSELECT 
    computers.computerid as `Computer Id`,
    computers.name as `Computer Name`,
    clients.name as `Client Name`,
    computers.domain as `Computer Domain`,
    computers.username as `Computer User`,
-   IF((Computers.flags & 2048) \\<> 0, 1, 0) as `Computer.Hardware.IsVirtual`,
-   IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'windows')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'darwin') >0, 2, 3)) as `Computer.OS.Type`
+   IF((Computers.flags & 2048) <> 0, 1, 0) as `Computer.Hardware.IsVirtual`,
+   IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'windows') > 0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'darwin') > 0, 2, 3)) as `Computer.OS.Type`
 FROM Computers 
-LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)
-LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
-LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
- WHERE 
-((((IF((Computers.flags & 2048) \\<> 0, 1, 0)=0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'windows')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'darwin') >0, 2, 3)) = '1'))))
+LEFT JOIN inv_operatingsystem ON (Computers.ComputerId = inv_operatingsystem.ComputerId)
+LEFT JOIN Clients ON (Computers.ClientId = Clients.ClientId)
+LEFT JOIN Locations ON (Computers.LocationId = Locations.LocationID)
+WHERE 
+((((IF((Computers.flags & 2048) <> 0, 1, 0) = 0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'windows') > 0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), 'darwin') > 0, 2, 3)) = '1'))))
 ' as `SQL`,
 '4' as `QueryType`,
 'Select||=||=||=|^Select|||||||^' as `ListData`,
@@ -49,7 +50,7 @@ LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From SensorChecks where `GUID` = 'c4008496-11c3-497b-8b4d-2d53c38c9d2e') = 0 ;
+WHERE (SELECT count(*) FROM SensorChecks where `GUID` = 'c4008496-11c3-497b-8b4d-2d53c38c9d2e') = 0;
 ```
 
 ---
@@ -60,7 +61,7 @@ Obtain the groupid(s) of the group(s) that the remote monitor should be applied 
 ---
 
 ## Step 5
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Groupid(s) of the relevant groups: (The string to replace can be found at the very bottom of the query, right after **WHERE**).
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the groupid(s) of the relevant groups. (The string to replace can be found at the very bottom of the query, right after **WHERE**).
 
 Additionally, set the value of `AllowedControllerErrors` and `AllowedBadBlocks` before executing the query if necessary. The default is 20. These values can be updated in the first two lines of the provided SQL query.
 
@@ -70,9 +71,9 @@ SET @AllowedBadBlocks = 20;
 ```
 
 ```sql
-Set @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'c4008496-11c3-497b-8b4d-2d53c38c9d2e');
+SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'c4008496-11c3-497b-8b4d-2d53c38c9d2e');
 INSERT INTO groupagents 
- SELECT '' as `AgentID`,
+SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
 @searchid as `SearchID`,
 'ProVal - Production - Drive Errors and Raid Failures' as `Name`,
@@ -83,7 +84,7 @@ INSERT INTO groupagents
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}/"') as `DataOut`,
+CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}/\"') as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
@@ -98,16 +99,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -157,7 +148,7 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Drive Errors and Raid Failures');
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Drive Errors and Raid Failures');
 ```
 
 ---
@@ -171,9 +162,9 @@ SET @AllowedBadBlocks = 30;
 ```
 
 ```sql
-Set @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'c4008496-11c3-497b-8b4d-2d53c38c9d2e');
+SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'c4008496-11c3-497b-8b4d-2d53c38c9d2e');
 INSERT INTO groupagents 
- SELECT '' as `AgentID`,
+SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
 @searchid as `SearchID`,
 'ProVal - Production - Drive Errors and Raid Failures' as `Name`,
@@ -184,7 +175,7 @@ INSERT INTO groupagents
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}/"') as `DataOut`,
+CONCAT('C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= ''SilentlyContinue'';$AllowedControllerErrors =', @AllowedControllerErrors,'; $AllowedBadBlocks = ',@AllowedBadBlocks,'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages =''paging operation|was retried|surprise removed|same disk identifiers|the capacity of|is not ready for access yet''; Get-WinEvent -FilterHashtable @{LogName = ''System''; StartTime = $starttime; Level = 1,2,3; ProviderName = ''disk''} | Where-Object { $_.message -notmatch $excludeMessages} | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message } | Where-Object { $(if ( $_.Message -match ''Controller error on'' -and $AllowedControllerErrors -gt 0) { $_.Occurrences -gt $AllowedControllerErrors } elseif ($_.Message -match ''has a bad block'' -and $AllowedBadBlocks -gt 0) { $_.Occurrences -gt $AllowedBadBlocks } else { $true })}}/\"') as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
@@ -227,34 +218,19 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (2,3,856,857)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Drive Errors and Raid Failures');
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Drive Errors and Raid Failures');
 ```
 
 ---
 
 ## Step 7
-Check the concerned groups, ensure the monitor set is created and configured with the correct search.
+Check the concerned groups and ensure the monitor set is created and configured with the correct search.
 
 **Limit to:** `Windows Machines Excluding Virtual`
 
@@ -264,16 +240,3 @@ Check the concerned groups, ensure the monitor set is created and configured wit
 
 ## Step 8
 Set the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-
-
-

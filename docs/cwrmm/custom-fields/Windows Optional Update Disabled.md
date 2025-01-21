@@ -8,9 +8,10 @@ tags: ['update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This stores Disabled if the Windows optional Update is disabled by the Disable Windows Optional/Automatic Updates task.
+This document stores "Disabled" if the Windows optional update is disabled by the Disable Windows Optional/Automatic Updates task.
 
 ## Dependencies
 
@@ -20,16 +21,4 @@ This stores Disabled if the Windows optional Update is disabled by the Disable W
 
 | Field Name                        | Level      | Type  | Default | Editable | Description                                                                                  |
 |-----------------------------------|------------|-------|---------|----------|----------------------------------------------------------------------------------------------|
-| Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This stores Disabled if the Windows optional Update is disabled by the Disable Windows Optional/Automatic Updates task. |
-
-
-
-
-
-
-
-
-
-
-
-
+| Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This field stores "Disabled" if the Windows optional update is disabled by the Disable Windows Optional/Automatic Updates task. |

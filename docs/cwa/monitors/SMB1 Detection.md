@@ -8,19 +8,20 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Checks whether the SMB1 is enabled on the end machine or not. It runs the OS version [compatible command](https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3?tabs=server#how-to-detect-status-enable-and-disable-smb-protocols) to fetch the data.
+This document checks whether SMB1 is enabled on the end machine. It runs the OS version [compatible command](https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3?tabs=server#how-to-detect-status-enable-and-disable-smb-protocols) to fetch the data.
 
-**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - SMB1 Status [Remote Monitor]](<../dataviews/SMB1 Status Remote Monitor.md>) dataview. This monitor set should not be used for alerting/ticketing purposes.
+**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - SMB1 Status [Remote Monitor]](<../dataviews/SMB1 Status Remote Monitor.md>) dataview. This monitor set should not be used for alerting or ticketing purposes.
 
 ## Details
 
-**Suggested "Limit to"**: Windows Workstations and Servers  
-**Suggested Alert Style**: Continuous  
-**Suggested Alert Template**: Default Do Nothing  
+**Suggested "Limit to":** Windows Workstations and Servers  
+**Suggested Alert Style:** Continuous  
+**Suggested Alert Template:** Default Do Nothing  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------|------------|----------|--------|
@@ -33,16 +34,3 @@ Managed Windows Service Plan Groups
 ## How to Import
 
 [Import - Remote Monitor - SMB1 Detection](<./SMB1 Detection Query.md>)
-
-
-
-
-
-
-
-
-
-
-
-
-

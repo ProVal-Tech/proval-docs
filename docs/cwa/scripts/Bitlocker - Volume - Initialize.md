@@ -8,19 +8,20 @@ tags: ['disk-encryption', 'encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Encrypts a drive with Bitlocker disk encryption.
 
-*Note*: *Bitlocker Drive Encryption Feature must be enabled on Servers to encrypt a drive with Bitlocker disk encryption on it. Encryption will not work without enabling this feature.*
+*Note*: *The Bitlocker Drive Encryption feature must be enabled on servers to encrypt a drive with Bitlocker disk encryption. Encryption will not work without enabling this feature.*
 
 ## Sample Run
 
-Encrypts the system drive of the target system with a RecoveryPassword, allowing TPM to be initialized if needed and rebooting if needed.
+Encrypts the system drive of the target system with a Recovery Password, allowing TPM to be initialized if needed and rebooting if necessary.
 
 ![Image](../../../static/img/Bitlocker---Volume---Initialize/image_1.png)
 
-Encrypts the E: volume of the target system with a TPM+PIN combination, allowing a reboot if needed.
+Encrypts the E: volume of the target system with a TPM+PIN combination, allowing a reboot if necessary.
 
 ![Image](../../../static/img/Bitlocker---Volume---Initialize/image_2.png)
 
@@ -88,16 +89,3 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
-

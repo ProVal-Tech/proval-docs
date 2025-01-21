@@ -8,21 +8,22 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this monitor is to detect the machines opted for offboarding. The monitor will detect the online machine if client level EDF **`Offboard Client`** is selected or Location level EDF **`Offboard Location`** is selected or Computer level EDF **`Offboard Computer`** is selected.
+The purpose of this monitor is to detect the machines opted for offboarding. The monitor will detect the online machine if the client-level EDF **`Offboard Client`**, the location-level EDF **`Offboard Location`**, or the computer-level EDF **`Offboard Computer`** is selected.
 
 ## Dependencies
 
 - [CWM - Automate - Script - Offboarding Wrapper](<../scripts/Offboarding Wrapper.md>)
 
-- Select **`Offboard Client`** EDF to select the Whole client for offboarding  
+- Select **`Offboard Client`** EDF to select the whole client for offboarding  
   ![](../../../static/img/Offboarding/image_1.png)
 
-- Select **`Offboard Location`** EDF to select the whole location for Offboarding  
+- Select **`Offboard Location`** EDF to select the whole location for offboarding  
   ![](../../../static/img/Offboarding/image_2.png)
 
-- Select **`Offboard Computer`** EDF to select the machine for Offboarding  
+- Select **`Offboard Computer`** EDF to select the machine for offboarding  
   ![](../../../static/img/Offboarding/image_3.png)
 
 ## Target
@@ -32,15 +33,3 @@ All Operating Systems
 ## Alert Template
 
 - **`△ Custom - Execute Script - Offboarding Wrapper`**
-
-
-
-
-
-
-
-
-
-
-
-

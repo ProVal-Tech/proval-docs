@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Description
 Sets the active desktop wallpaper for all users.
 
@@ -16,14 +17,13 @@ Sets the active desktop wallpaper for all users.
 - PowerShell v5+
 
 ## Usage
-The script has two primary modes: Set and Reset
+The script has two primary modes: Set and Reset.
 
 ### Set Mode
-In set mode, the wallpaper is set based on the URI passed into the script via the `-Uri` parameter. If `-Enforce` is passed, then a scheduled task will be created to set the wallpaper to the specified wallpaper on each user login.
+In set mode, the wallpaper is set based on the URI passed into the script via the `-Uri` parameter. If `-Enforce` is passed, a scheduled task will be created to set the wallpaper to the specified image on each user login.
 
 ### Reset Mode
 In reset mode, the wallpaper for all users is reset to the last known wallpaper, and any scheduled tasks or policies are removed. Enter reset mode by passing the `-Reset` parameter.
-
 
 Sets the target image as the wallpaper for all users.
 
@@ -41,19 +41,10 @@ Downloads the image from the remote server and sets it as the current wallpaper 
 | Parameter | Required | Default | Type       | Description                                                                                         |
 | --------- | -------- | ------- | ---------- | --------------------------------------------------------------------------------------------------- |
 | `Uri`     | True     |         | System.URI | The local path or URL to the image file to set as the wallpaper. Must be a valid local path or URL. |
-| `Enforce` | False    | False   | Switch     | A scheduled task will be created to set the wallpaper of each user that logs into the machine.      |
+| `Enforce` | False    | False   | Switch     | A scheduled task will be created to set the wallpaper for each user that logs into the machine.      |
 | `Reset`   | False    | False   | Switch     | Resets each user's wallpaper to their last used wallpaper and removes enforcement.                  |
 
 ## Output
 `PSCustomObject`
 
 Returns the registry settings edited by the script.
-
-
-
-
-
-
-
-
-

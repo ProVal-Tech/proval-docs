@@ -8,24 +8,13 @@ tags: ['virtualization', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The role detects the agents on which the Remote Desktop Virtualization Host feature is installed.
+This document outlines how to detect the agents on which the Remote Desktop Virtualization Host feature is installed.
 
 ## Settings
 
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell "(Get-WindowsFeature RDS-Virtualization).Installed"@%}` | Equals     | True   | Windows        |
-
-
-
-
-
-
-
-
-
-
-
-

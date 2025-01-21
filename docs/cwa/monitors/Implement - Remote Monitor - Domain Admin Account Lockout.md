@@ -8,20 +8,21 @@ tags: ['database', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Steps to Follow
 
-### 1.
-Import the Alert Template ' `△ Custom - Ticket Creation Computer - Failures Only` '
+### 1. Import the Alert Template
+Import the alert template '`△ Custom - Ticket Creation Computer - Failures Only`'.
 
-### 2.
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]*](<../scripts/Ticket Creation - Computer Failures Only.md>) script was imported as well and the alert template is executing this script for failures only.
+### 2. Validate the Script
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md) script was imported as well and that the alert template is executing this script for failures only.
 
-### 3.
-Run this SQL query from a RAWSQL monitor set to create and set the remote monitor on the Domain Controllers group and limit to the server role - AD Infrastructure Master.
+### 3. Run SQL Query
+Run this SQL query from a RAWSQL monitor set to create and set the remote monitor on the Domain Controllers group and limit it to the server role - AD Infrastructure Master.
 
 ```sql
-SET @Groupid= (SELECT Groupid FROM mastergroups WHERE `GUID` = '3ac455da-f1fb-11e1-b4ec-1231391d2d19');
-SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
+SET @Groupid = (SELECT Groupid FROM mastergroups WHERE `GUID` = '3ac455da-f1fb-11e1-b4ec-1231391d2d19');
+SET @Searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
 
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
@@ -30,7 +31,7 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Domain Admin Account Lockout' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Domain Admin Locked Account Detected on %computername%~~~No domain admin account locked. All good.!!!Domain Admin Locked Account Detected on %computername%~~~Domain Admin Locked Account Detected on %computername%. Refer to the below detail:%RESULT%.' as `AlertMessage`,
+'Doman Admin Locked Account Detected on %computername%~~~No domain admin account locked. All good.!!!Domain Admin Locked Account Detected on %computername%~~~Domain Admin Locked Account Detected on %computername%. Refer to the below detail:%RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
@@ -50,28 +51,15 @@ UUID() as `GUID`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid = @groupid
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Domain Admin Account Lockout')
+AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Domain Admin Account Lockout')
 ```
 
-### 4.
+### 4. Check Domain Controllers Group
 Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search.  
 **Limit To:** `Server Role - AD - Infrastructure Master`  
 
 ![Image 1](../../../static/img/Implement---Remote-Monitor---Domain-Admin-Account-Lockout/image_1.png)  
 ![Image 2](../../../static/img/Implement---Remote-Monitor---Domain-Admin-Account-Lockout/image_2.png)
 
-### 5.
+### 5. Assign the Alert Template
 Assign the required alert template. It is suggested to use '`△ Custom - Ticket Creation Computer - Failures Only`' for the best results.
-
-
-
-
-
-
-
-
-
-
-
-
-

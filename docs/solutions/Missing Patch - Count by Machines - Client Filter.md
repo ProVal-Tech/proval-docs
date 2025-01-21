@@ -8,9 +8,10 @@ tags: ['database', 'report', 'security', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution provides a dataview of the Client-Level breakdown of machines missing a certain number of patches.
+This solution provides a dataview of the client-level breakdown of machines missing a certain number of patches.
 
 ## Associated Content
 
@@ -18,7 +19,7 @@ This solution provides a dataview of the Client-Level breakdown of machines miss
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------------------------------------------------------|
 | [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](<../cwa/scripts/MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status.md>)         | Script  | To create the view.                                        |
 | [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../cwa/views/Plugin_ProVal_V_Patch_Count_Status.md>)                                 | View    | Stores the data to be displayed by the dataview.          |
-| [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>)       | Dataview| Displays the Client-Level breakdown of machines missing a certain amount of patches. |
+| [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>)       | Dataview| Displays the client-level breakdown of machines missing a certain number of patches. |
 
 ## Implementation
 
@@ -26,15 +27,3 @@ This solution provides a dataview of the Client-Level breakdown of machines miss
 - Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
-
-
-
-
-
-
-
-
-
-
-
-

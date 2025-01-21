@@ -8,28 +8,17 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is a function script and is the enhanced version of the default "Successful Patch Jobs". The default script was not able to add the time taken by the patch jobs in the tickets properly. This script adds the exact time taken by patch job into the patching tickets. The default time added to the ticket will be 15 minutes.
+This script is a function script and is the enhanced version of the default "Successful Patch Jobs." The default script was unable to accurately add the time taken by the patch jobs in the tickets. This enhanced script records the exact time taken by the patch job into the patching tickets, rather than the default fixed time of 15 minutes.
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Patch Accounting](<./Patch Accounting.md>).
+This script is a function script called from [CWM - Automate - Script - Patch Accounting](./Patch%20Accounting.md).
 
 ## Dependencies
 
 | Property                   | Value |
 |---------------------------|-------|
 | _sysPatchAcctTimeToBill   | 1     |
-
-
-
-
-
-
-
-
-
-
-
-

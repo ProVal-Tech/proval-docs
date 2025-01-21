@@ -8,15 +8,16 @@ tags: ['setup', 'sql', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Steps
 
-### 1.
+### 1. Import the Alert Template
 Import the Alert Template `△ Custom - Ticket Creation Computer [Failures Only]`. The alert template should not be performing any action for the `Warning` state.
 
-### 2.
+### 2. Validate Script Import
 Validate that the [Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) was imported as well.
 
-### 3.
+### 3. Run SQL Query
 Run this SQL query from a RAWSQL monitor set to import the required search.
 
 ```sql
@@ -24,7 +25,7 @@ INSERT INTO `sensorchecks`
 SELECT
 '' as `SensID`,
 'Computers - Dell Servers' as `Name`,
-'SELECT 
+'SSELECT 
    computers.computerid as `Computer Id`,
    computers.name as `Computer Name`,
    clients.name as `Client Name`,
@@ -37,7 +38,7 @@ LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.Compu
 LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
 LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
 WHERE 
-((((Instr(Computers.BiosMFG,/'Dell/') > 0) AND (IF(INSTR(computers.os, /'server/')>0, 1, 0)\\<>0))))' as `SQL`,
+((((Instr(Computers.BiosMFG,/'Dell/') > 0) AND (IF(INSTR(computers.os, /'server/')>0, 1, 0)<>0))))' as `SQL`,
 '4' as `QueryType`,
 'READONLY' as `ListData`,
 '1' as `FolderID`,
@@ -46,14 +47,14 @@ WHERE
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
-Where (SELECT count(*) From SensorChecks where `GUID` = '9185ef1d-4eee-4430-8b72-f086f8849eb8') = 0;
+WHERE (SELECT count(*) From SensorChecks where `GUID` = '9185ef1d-4eee-4430-8b72-f086f8849eb8') = 0;
 ```
 
-### 4.
-Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+### 4. Obtain Group IDs
+Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
 
-### 5.
-Copy the following query and replace `YOUR COMMA SEPARATED LIST OF GROUPID(S)` with the Groupid(s) of the relevant groups: (The string to replace can be found at the very bottom of the query, right after **WHERE**).
+### 5. Insert Group Agents
+Copy the following query and replace `YOUR COMMA SEPARATED LIST OF GROUPID(S)` with the Group ID(s) of the relevant groups. (The string to replace can be found at the very bottom of the query, right after **WHERE**).
 
 ```sql
 Set @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '9185ef1d-4eee-4430-8b72-f086f8849eb8');
@@ -69,7 +70,7 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}\"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
@@ -84,21 +85,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
@@ -151,8 +137,8 @@ WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Dell Hardware Monitoring');
 ```
 
-### 6.
-An example of the query with groupids and modified thresholds.
+### 6. Example Query
+An example of the query with group IDs and modified thresholds.
 
 ```sql
 Set @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '9185ef1d-4eee-4430-8b72-f086f8849eb8');
@@ -168,7 +154,7 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}\"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
@@ -221,11 +207,6 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 ) as `GUID`,
 'root' as `UpdatedBy`,
@@ -235,25 +216,12 @@ WHERE m.groupid IN (855,856)
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Dell Hardware Monitoring');
 ```
 
-### 7.
-Check the concerned groups, ensure the monitor set is created and configured with the correct search.
+### 7. Check Groups
+Check the concerned groups to ensure the monitor set is created and configured with the correct search.
 
 Limit to: `Computers - Dell Servers`
 
 ![Image](../../../static/img/Implement--Dell-Hardware-Monitoring/image_1.png)
 
-### 8.
+### 8. Set Alert Template
 Set the appropriate alert template.
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script adds the registry policy for an enforced homepage in Mozilla Firefox.
 
-Time Saved by Automation: 10 Minutes
+**Time Saved by Automation:** 10 Minutes
 
 ## Sample Run
 
@@ -26,8 +27,8 @@ Time Saved by Automation: 10 Minutes
 
 ## Variables
 
-- `@PS1DataLog@` - Helps to verify if the script actually succeeded.
-- `@PS1ErrorLog@` - Helps to track failure of the script.
+- `@PS1DataLog@` - Helps verify if the script succeeded.
+- `@PS1ErrorLog@` - Helps track any failures of the script.
 
 #### User Parameters
 
@@ -38,21 +39,9 @@ Time Saved by Automation: 10 Minutes
 
 ## Process
 
-The script takes a string parameter to define the URL to set the homepage to. The applicable registry policies are applied to set the homepage to the one defined by the parameter. Optionally, switches can be used to enforce the homepage on startup.
+The script takes a string parameter to define the URL to set the homepage. The applicable registry policies are applied to set the homepage to the one defined by the parameter. Optionally, switches can be used to enforce the homepage on startup.
 
 ## Output
 
 - Script log
-- Local file on computer
-
-
-
-
-
-
-
-
-
-
-
-
+- Local file on the computer

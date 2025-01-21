@@ -8,9 +8,10 @@ tags: ['application', 'installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The task installs the latest version of `Dell Command | Update for Windows Universal` from `Winget` if it's missing or outdated. The `Argument` parameter can be used to run the specified command or argument. If the parameter is left blank, the '/scan' command will be executed.
+The task installs the latest version of `Dell Command | Update for Windows Universal` from `Winget` if it's missing or outdated. The `Argument` parameter can be used to run the specified command or argument. If the parameter is left blank, the `/scan` command will be executed.
 
 **Supported commands/arguments reference:**  
 [Supported commands/arguments reference](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us)
@@ -32,19 +33,19 @@ The task installs the latest version of `Dell Command | Update for Windows Unive
 
 | Name      | Example                                                                                                           | Accepted Values                                                                                                      | Default | Type  | Required | Description                                 |
 |-----------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------|-------|----------|---------------------------------------------|
-| Argument  | - `/version`- `/scan`- `/scan -updateType=bios,firmware,driver`- `/applyUpdates -updateType=bios,firmware -silent -reboot=disable`- `/driverInstall -silent -reboot=disable` | [Supported commands/arguments reference](https://www.dell.com/support/manuals/en-us/command-update/dellcommandupdate_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) | /scan   | Text  | False    | Command to run with Dell Command | Update  |
+| Argument  | - `/version` - `/scan` - `/scan -updateType=bios,firmware,driver` - `/applyUpdates -updateType=bios,firmware -silent -reboot=disable` - `/driverInstall -silent -reboot=disable` | [Supported commands/arguments reference](https://www.dell.com/support/manuals/en-us/command-update/dellcommandupdate_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) | /scan   | Text  | False    | Command to run with Dell Command | Update  |
 
 ![User Parameter Image](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_4.png)
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_5.png)  
 ![Task Creation Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_6.png)
 
 **Name:** Dell Command Update - Install + Command Handler  
-**Description:** The task installs the latest version of `Dell Command | Update for Windows Universal` from `Winget` if it's missing or outdated. The `Argument` parameter can be used to run the specified command or argument. If the parameter is left blank, the '/scan' command will be executed.  
+**Description:** The task installs the latest version of `Dell Command | Update for Windows Universal` from `Winget` if it's missing or outdated. The `Argument` parameter can be used to run the specified command or argument. If the parameter is left blank, the `/scan` command will be executed.  
 **Category:** Application  
 
 ![Task Creation Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_7.png)
@@ -81,7 +82,6 @@ A blank function will appear.
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-
 ![Task Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_14.png)  
 ![Task Image 4](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_15.png)
 
@@ -93,7 +93,7 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 #requires -RunAsAdministrator
 #requires -Version 5.1
-\<#
+<#
 Supported commands/arguments reference:
 https://www.dell.com/support/manuals/en-us/command-update/dellcommandupdate_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us
 Exit codes reference:
@@ -124,7 +124,7 @@ $ProgressPreference = 'SilentlyContinue'
 $iwr = (Invoke-WebRequest 'https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandUpdate/Universal' -UseBasicParsing).content
 $iwr = $iwr -split ('{') -split ('}')
 $iwr = $iwr -match 'manifests///d///Dell///CommandUpdate///'
-$iwr = $iwr -split ('/"')
+$iwr = $iwr -split ('/\"')
 $iwr = $iwr -match '^[0-9//.]{1,}$'
 $iwr = $iwr -match '[1-9][0-9]{0,}//.[0-9]{1,}//.[0-9]{1,}'
 $versions = $iwr | ForEach-Object { [version]$_ }
@@ -150,7 +150,7 @@ function Install-DCU {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
-            throw "!ERROR!: Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+            throw "!ERROR!: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
     }
 
@@ -189,7 +189,7 @@ function Install-DCU {
     & $PS1Path @Parameters
 
     if ( !(Test-Path -Path $logPath ) ) {
-        throw 'Script Failed to install Dell Command | Update. A security application seems to have interupted the installation.'
+        throw 'Script Failed to install Dell Command | Update. A security application seems to have interrupted the installation.'
     } else {
         Write-Information 'Log Content:' -InformationAction Continue
         Get-Content -Path $logPath -ErrorAction SilentlyContinue
@@ -217,14 +217,14 @@ function Convert-ExitCode {
         4 { '!ERROR!: The CLI was not launched with administrative privilege. Invoke the Dell Command | Update CLI with administrative privileges.' }
         5 { '!ERROR!: A reboot was pending from a previous operation. Reboot the system to complete the operation.' }
         6 { '!ERROR!: Another instance of the same application (UI or CLI) is already running. Close any running instance of Dell Command | Update UI or CLI and retry the operation.' }
-        7 { '!ERROR!: The application does not support the current system model. Contact your administrator if the current system model in not supported by the catalog.' }
+        7 { '!ERROR!: The application does not support the current system model. Contact your administrator if the current system model is not supported by the catalog.' }
         8 { '!ERROR!: No update filters have been applied or configured. Supply at least one update filter.' }
         100 { '!ERROR!: While evaluating the command line parameters, no parameters were detected. A command must be specified on the command line.' }
         101 { "!ERROR!: While evaluating the command line parameters, no commands were detected. Provide a valid command and options. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         102 { "!ERROR!: While evaluating the command line parameters, invalid commands were detected. Provide a command along with the supported options for that command. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         103 { "!ERROR!: While evaluating the command line parameters, duplicate commands were detected. Remove any duplicate commands and rerun the command. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
-        104 { "!ERROR!: While evaluating the command line parameters, the command syntax was incorrect. Ensure that you follow the command syntax: /\<command name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
-        105 { "!ERROR!: While evaluating the command line parameters, the option syntax was incorrect. Ensure that you follow the option syntax: -\<option name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
+        104 { "!ERROR!: While evaluating the command line parameters, the command syntax was incorrect. Ensure that you follow the command syntax: /\\<command name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
+        105 { "!ERROR!: While evaluating the command line parameters, the option syntax was incorrect. Ensure that you follow the option syntax: -\\<option name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         106 { "!ERROR!: While evaluating the command line parameters, invalid options were detected. Ensure to provide all required or only supported options. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         107 { "!ERROR!: While evaluating the command line parameters, one or more values provided to the specific option was invalid. Provide an acceptable value. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         108 { "!ERROR!: While evaluating the command line parameters, all mandatory options were not detected. If a command requires mandatory options to run, provide them. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
@@ -235,23 +235,23 @@ function Convert-ExitCode {
         113 { "!ERROR!: While evaluating the command line parameters, one or more values provided exceeds the length limit. Ensure to provide the values of the options within the length limit. `nSee Dell Command | Update CLI commands section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         500 { '!Information!: No updates were found for the system when a scan operation was performed. The system is up to date or no updates were found for the provided filters. Modify the filters and rerun the commands.' }
         501 { '!ERROR!: An error occurred while determining the available updates for the system, when a scan operation was performed. Retry the operation.' }
-        502 { '!ERROR!: The cancellation was initiated, Hence, the scan operation is canceled. Retry the operation.' }
-        503 { '!ERROR!: An error occurred while downloading a file during the scan operation. Check your network connection, ensure there is Internet connectivity and Retry the command.' }
+        502 { '!ERROR!: The cancellation was initiated, hence, the scan operation is canceled. Retry the operation.' }
+        503 { '!ERROR!: An error occurred while downloading a file during the scan operation. Check your network connection, ensure there is Internet connectivity and retry the command.' }
         1000 { '!ERROR!: An error occurred when retrieving the result of the apply updates operation. Retry the operation.' }
-        1001 { '!ERROR!: The cancellation was initiated, Hence, the apply updates operation is canceled. Retry the operation.' }
+        1001 { '!ERROR!: The cancellation was initiated, hence, the apply updates operation is canceled. Retry the operation.' }
         1002 { '!ERROR!: An error occurred while downloading a file during the apply updates operation. Check your network connection, ensure there is Internet connectivity, and retry the command.' }
         1505 { '!ERROR!: An error occurred while exporting the application settings. Verify that the folder exists or have permissions to write to the folder.' }
         1506 { '!ERROR!: An error occurred while importing the application settings. Verify that the imported file is valid.' }
         2000 { '!ERROR!: An error occurred when retrieving the result of the Advanced Driver Restore operation. Retry the operation.' }
         2001 { '!ERROR!: The Advanced Driver Restore process failed. Retry the operation.' }
         2002 { '!ERROR!: Multiple driver CABs were provided for the Advanced Driver Restore operation. Ensure that you provide only one driver CAB file.' }
-        2003 { "!ERROR!: An invalid path for the driver CAB was provided as in input for the driver install command. Ensure that the file path provided exists, has a valid extension type, is a valid SMB, UNC, or URL, does not have invalid characters, does not exceed 255 characters and has required permissions. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
-        2004 { '!ERROR!: The cancellation was initiated, Hence, the driver install operation is canceled. Retry the operation.' }
+        2003 { "!ERROR!: An invalid path for the driver CAB was provided as input for the driver install command. Ensure that the file path provided exists, has a valid extension type, is a valid SMB, UNC, or URL, does not have invalid characters, does not exceed 255 characters and has required permissions. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
+        2004 { '!ERROR!: The cancellation was initiated, hence, the driver install operation is canceled. Retry the operation.' }
         2005 { '!ERROR!: An error occurred while downloading a file during the driver install operation. Check your network connection, ensure there is Internet connectivity, and retry the command.' }
         2006 { '!ERROR!: Indicates that the Advanced Driver Restore feature is disabled. Enable the feature using ''/configure -advancedDriverRestore=enable''' }
-        2007 { '!ERROR!: Indicates that the Advanced Diver Restore feature is not supported. Disable FIPS mode on the system.' }
+        2007 { '!ERROR!: Indicates that the Advanced Driver Restore feature is not supported. Disable FIPS mode on the system.' }
         2500 { '!ERROR!: An error occurred while encrypting the password during the generate encrypted password operation. Retry the operation.' }
-        2501 { '!ERROR!: An error occurred while encrypting the password with the encryption key provided. Provide a valid encryption key and Retry the operation. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us' }
+        2501 { '!ERROR!: An error occurred while encrypting the password with the encryption key provided. Provide a valid encryption key and retry the operation. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us' }
         2502 { '!ERROR!: The encrypted password provided does not match the current encryption method. The provided encrypted password used an older encryption method. Reencrypt the password.' }
         3000 { '!ERROR!: The Dell Client Management Service is not running. Start the Dell Client Management Service in the Windows services if stopped.' }
         3001 { '!ERROR!: The Dell Client Management Service is not installed. Download and install the Dell Client Management Service from the Dell support site.' }
@@ -286,7 +286,7 @@ function Invoke-Argument {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
-            throw "!ERROR!: Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
+            throw "!ERROR!: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
     }
 
@@ -333,7 +333,7 @@ if ( !$Version ) {
 } elseif ( [Version]$version -lt [version]$maxVersion ) {
     Write-Information "Dell Command | Update is outdated. Upgrading to $maxVersion..." -InformationAction Continue
     Write-Information 'Uninstalling the existing version' -InformationAction Continue
-    cmd.exe /c wmic product Where 'Name Like "%%Dell Command %% Update%%"' Call Uninstall
+    cmd.exe /c wmic product Where 'Name Like "%%Dell Command %% Update%%" ' Call Uninstall
     if ( $LASTEXITCODE -ne 0 ) {
         Write-Information 'Failed to remove the existing version of the application. Still attempting to install the latest version.' -InformationAction Continue
     }
@@ -356,8 +356,7 @@ A blank function will appear.
 ![Task Image 8](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_13.png)
 
 Search and select the `Script Log` function.  
-![Task Image 9](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_19.png)
-
+![Task Image 9](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_19.png)  
 ![Task Image 10](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_20.png)
 
 The following function will pop up on the screen:  
@@ -376,16 +375,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

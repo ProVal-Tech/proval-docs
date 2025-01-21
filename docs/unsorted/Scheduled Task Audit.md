@@ -8,9 +8,10 @@ tags: ['database', 'report', 'sql']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
-This script audits the scheduled task to see what user account tasks are running with.
+This script audits scheduled tasks to identify which user accounts are running them.
 
 ## Sample Run
 
@@ -18,14 +19,14 @@ This script audits the scheduled task to see what user account tasks are running
 
 ## Variables
 
-| Variable          | Description                                                                                     |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| ProjectName       | Project name where script work will store                                                      |
-| JsonFileName      | This file stores the JSON file name where script data is stored                                |
-| TableName         | The table name where the script data will be stored after converting from JSON file            |
-| WorkingDirectory   | This is a directory where the project file is stored and the JSON file is stored               |
-| SQLDeleteStatement | The data cleared from the table for the computer ID                                            |
-| SQLStartStatement  | This stores query to insert the data other than duplicates                                     |
+| Variable           | Description                                                                                     |
+|--------------------|-------------------------------------------------------------------------------------------------|
+| ProjectName        | Project name where the script will store its work                                              |
+| JsonFileName       | The name of the JSON file where script data is stored                                          |
+| TableName          | The name of the table where the script data will be stored after converting from the JSON file |
+| WorkingDirectory    | The directory where the project file and the JSON file are stored                             |
+| SQLDeleteStatement  | The SQL statement used to clear data from the table for the computer ID                        |
+| SQLStartStatement   | The SQL statement used to insert data, excluding duplicates                                    |
 
 ## Dependencies
 
@@ -35,25 +36,11 @@ This script audits the scheduled task to see what user account tasks are running
 
 ## Process
 
-This script creates a table named "plugin_proval_scheduled_tasks" to store the scheduled task details in it. It then creates a ps1 file on the agent to the path "C:/ProgramData/_automation/script/@ProjectName@/ScheduledTaskAudit.ps1". It executes the ps1 using shell and stores the data into the JSON file. The JSON file is converted and then pushed into the table.
+This script creates a table named "plugin_proval_scheduled_tasks" to store the scheduled task details. It then creates a PowerShell script (ps1 file) at the path "C:/ProgramData/_automation/script/@ProjectName@/ScheduledTaskAudit.ps1". The script is executed using a shell command, and the data is stored in a JSON file. Finally, the JSON file is converted and pushed into the table.
 
 ## Output
 
 - Script log
 - plugin_proval_scheduled_tasks
-- Dataview
+- Data view
 - etc.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

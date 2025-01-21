@@ -8,9 +8,10 @@ tags: ['deployment', 'linux', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The purpose of this group is to deploy SentinelOne agent on Windows, Linux and Mac machines.
+The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ## Dependencies
 
@@ -18,47 +19,35 @@ The purpose of this group is to deploy SentinelOne agent on Windows, Linux and M
 - [CW RMM - Custom Field - Site - SentinelOne Site Key](<../custom-fields/Company - SentinelOne Site Key.md>)  
 - [CW RMM - Custom Field - Site - SentinelOne Group Key](<../custom-fields/Site - SentinelOne Group Key.md>)  
 
-## Summary
+## Overview
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_1.png)
 
 **Group Type:** Dynamic  
 **Group Name:** SentinelOne Deployment  
-**Description:** The purpose of this group is to deploy the SentinelOne agent on Windows, Linux and Mac machines.
+**Description:** The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ### Criteria
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_2.png)
 
-- Installed Software does not contain any of `Sentinel Agent,Sentinelone`
-- Endpoint type not equal to `Vmware-ESXi`
-- `SentinelOne Deployment Exclusion` custom field equal to false.
+- Installed Software does not contain any of `Sentinel Agent, Sentinelone`
+- Endpoint type is not equal to `Vmware-ESXi`
+- `SentinelOne Deployment Exclusion` custom field is equal to false.
 - Service Display name does not contain any of the `Sentinel agent`
 - Available should be True.
-- OS does not contain any of the out of support machines like `windows 7,8 and server 2003,2008,2012`  
+- OS does not include any of the out-of-support machines like `Windows 7, 8, and Server 2003, 2008, 2012`  
   Click on the Dropdown --> expand Microsoft --> Click on 7, 8 Pro, 8.1  
   ![Image](../../../static/img/SentinelOne-Deployment/image_3.png)  
-  Now Expand Server and click on 2003 R2 Service Pack 2, 2008 and 2012  
+  Now expand Server and click on 2003 R2 Service Pack 2, 2008, and 2012  
   ![Image](../../../static/img/SentinelOne-Deployment/image_4.png)  
 
-- SentinelOne Group Key should not equal to `NA`
-- SentinelOne Site Key should not equal to `NA`
+- SentinelOne Group Key should not equal `NA`
+- SentinelOne Site Key should not equal `NA`
 
 ## Group
 
-Once adding the above criteria, click the Save button to save the Group.  
+Once you have added the above criteria, click the Save button to save the Group.  
 ![Image](../../../static/img/SentinelOne-Deployment/image_5.png)  
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_6.png)  
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ tags: ['installation', 'networking', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This script installs version 3 or 4 of Dell Command Configure depending on the age of the system.
@@ -26,21 +27,10 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 
 ## Process
 
-- This script verifies whether a system is a Dell, will then download and install Dell Command | Configure version 3.3.0 for non WMI-ACPI enabled systems or version 4.3.1 for systems with WMI-ACPI enabled. The WMI-ACPI check is done via a PowerShell command to verify if the PNP Device is installed or not.
-- Confirms install as successful.
-- Removes icon from desktop if install is successful.
+- This script verifies whether a system is a Dell, then downloads and installs Dell Command | Configure version 3.3.0 for non-WMI-ACPI enabled systems or version 4.5.0 for systems with WMI-ACPI enabled. The WMI-ACPI check is done via a PowerShell command to verify if the PNP Device is installed or not.
+- Confirms installation as successful.
+- Removes the icon from the desktop if the installation is successful.
 
 ## Output
 
 **Script Log:** Success or Failure
-
-
-
-
-
-
-
-
-
-
-

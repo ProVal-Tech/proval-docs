@@ -8,9 +8,10 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The dataview presents the OneDrive Sync Status data stored in the [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>) custom table along with the basic information.
+The data view presents the OneDrive Sync Status data stored in the [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>) custom table along with the basic information.
 
 ## Dependencies
 
@@ -27,27 +28,15 @@ The dataview presents the OneDrive Sync Status data stored in the [EPM - Data Co
 | Client                 | Client Name                                        |
 | Location               | Location Name                                      |
 | Computer               | Computer Name                                      |
-| UserName               | UserName                                           |
+| UserName               | User Name                                          |
 | Folder Path            | Full Path to the OneDrive Directory                |
 | OneDrive Sync Status    | Current Sync Status of OneDrive                    |
-| Is Quota Available     | Is Quota Available ? (0/1)                        |
+| Is Quota Available     | Is Quota Available? (0/1)                         |
 | Total Quota (GB)      | Overall Size of available Quota (GB)               |
-| Used Quota (GB)       | Currently Used size of Quota (GB)                  |
+| Used Quota (GB)       | Currently Used Size of Quota (GB)                  |
 | Quota Label            | Current Status of Available Quota                  |
 | Data Collection Time    | Data Collection Time                                |
 | Last Contact           | Last Contact with Automate                          |
 | Operating System       | Operating System                                    |
 | Form Factor            | Form Factor of the machine                          |
-
-
-
-
-
-
-
-
-
-
-
-
 

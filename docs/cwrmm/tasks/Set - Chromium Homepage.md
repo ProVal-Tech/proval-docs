@@ -8,9 +8,10 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Sets an enforced homepage in certain popular browsers like Brave, Chrome, and Edge.
+This document outlines how to set an enforced homepage in popular browsers like Brave, Chrome, and Edge.
 
 ## Sample Run
 
@@ -35,13 +36,13 @@ Select `Run Now` and click on `Run Task`:
 | Homepage                 | [https://www.google.com/](https://www.google.com/) | True     | String value of the homepage to set in the browser.                                                      |
 | EnforceOnNewTab         | --                               | False    | Include this switch to force the homepage on each new tab instead of the new tab page.                  |
 | EnforceHomepageStartup    | --                               | False    | Include this switch to force the homepage to be the only open tab at startup of the browser.             |
-| Target                   | Brave, Chrome, Edge              | False    | This designates the targeted chromium-based browser to apply the setting to. You can leave the field blank if you want to set the same homepage for all the chromium browsers available. |
+| Target                   | Brave, Chrome, Edge              | False    | This designates the targeted Chromium-based browser to apply the setting to. You can leave the field blank if you want to set the same homepage for all the Chromium browsers available. |
 
 ![User Parameters Image](../../../static/img/Set---Chromium-Homepage/image_4.png)
 
 ## Implementation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Implementation Image 1](../../../static/img/Set---Chromium-Homepage/image_5.png)
 
@@ -116,11 +117,11 @@ Once all the parameters are created, it should look like this:
 
 ![Parameters Created Image](../../../static/img/Set---Chromium-Homepage/image_18.png)
 
-Proceed with the below steps to create a task.
+Proceed with the steps below to create a task.
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row Image](../../../static/img/Set---Chromium-Homepage/image_19.png)
 
@@ -140,11 +141,11 @@ The following function will pop up on the screen:
 
 ![PowerShell Script Function Image](../../../static/img/Set---Chromium-Homepage/image_23.png)
 
-Copy below PowerShell commands and paste it in the `PowerShell Script Editor` box:
+Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
 ```
-# # Parameters and Globals
-# # Parameters and Globals # # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# Parameters and Globals
+# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 
 $Homepage = '@Homepage@'
 $EnforceOnNewTab = '@EnforceOnNewTab@'
@@ -190,19 +191,19 @@ $parameters.Add( 'Target', $Browser )
 #region Setup - Variables
 $ProjectName = 'Set-ChromiumHomepage'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = '\<a href=/"https://file.provaltech.com/repo/">https://file.provaltech.com/repo\</a>&#39; 
-$PS1URL = /"$BaseURL/script/$ProjectName.ps1/"
-$WorkingDirectory = /"C://ProgramData//_automation//script//$ProjectName/"
-$PS1Path = /"$WorkingDirectory//$ProjectName.ps1/"
+$BaseURL = 'https://file.provaltech.com/repo/'
+$PS1URL = "$BaseURL/script/$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName/"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = /"$WorkingDirectory//$ProjectName-log.txt/"
-$ErrorLogPath = /"$WorkingDirectory//$ProjectName-Error.txt/"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
 if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw /"No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting./"
+    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
 } elseif ($response.StatusCode -eq 200) {
     Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
@@ -213,17 +214,17 @@ if (!(Test-Path -Path $PS1Path)) {
 #endregion
 #region Execution
 if ($Parameters) {
-    &amp; $PS1Path @Parameters
+    & $PS1Path @Parameters
 } else {
-    &amp; $PS1Path
+    & $PS1Path
 }
 #endregion
 
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -266,15 +267,3 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

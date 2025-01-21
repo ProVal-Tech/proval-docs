@@ -8,6 +8,7 @@ tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task is designed to perform the Browser Saved Password Audit or Clearance based on the custom fields selected.
@@ -28,10 +29,10 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 ![Create Task Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_4.png)
 
-Name: Clear/Audit - Browser Saved Password  
-Description: This task performs the audit or clearance of the browser-saved password based on the option provided.  
-OS Supported: Windows  
-Category: Application
+- **Name:** Clear/Audit - Browser Saved Password  
+- **Description:** This task performs the audit or clearance of the browser-saved password based on the option provided.  
+- **OS Supported:** Windows  
+- **Category:** Application
 
 ![Task Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_5.png)
 
@@ -47,7 +48,7 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 
 ![Row 1 Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_8.png)
 
-This sets the variable EdgeWallet with the value of a user parameter `@Wipe+DisableCloudSync-EdgeWallet@`.
+This sets the variable `EdgeWallet` with the value of a user parameter `@Wipe+DisableCloudSync-EdgeWallet@`.
 
 ### Row 2: Logic: If/Then/Else
 
@@ -157,12 +158,12 @@ In the script log message, type `%output%` so that the script will send the resu
 
 ![Set Custom Field Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_16.png)
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function 'Set Custom Field'. When you select `set custom field`, it will open a new window.
 
 In this window, search for the `Browser Saved Pwd Audit Data` field.
 
-**Custom Field:** `Browser Saved Pwd Audit Data`  
-**Value:** `%output%`
+- **Custom Field:** `Browser Saved Pwd Audit Data`  
+- **Value:** `%output%`
 
 ![Custom Field Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_17.png)
 
@@ -259,11 +260,11 @@ function Log-PasswordFiles {
 
 ```powershell
 # Chromium
-if ( (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave|Edge' }).DisplayName ) {
+if ((Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave|Edge' }).DisplayName) {
     Get-Process -Name chrome, msedge, brave -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
     Start-Sleep -Seconds 10
-    foreach ( $path in (Get-ChildItem -Path 'C://Users' | Where-Object { $_.Mode -match 'd' }) ) {
-        foreach ( $Browser in 'Google//Chrome', 'Microsoft//Edge', 'BraveSoftware//Brave-Browser' ) {
+    foreach ($path in (Get-ChildItem -Path 'C://Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Google//Chrome', 'Microsoft//Edge', 'BraveSoftware//Brave-Browser') {
             if (Test-Path -Path "$($path.FullName)//Appdata//Local//$Browser") {
                 Log-PasswordFiles -browserName $(($Browser -split '////') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)//Appdata//Local//$Browser//User Data//Default" -items @('Login Data', 'Login Data-journal')
             }
@@ -297,12 +298,12 @@ In the script log message, type `%output%` so that the script will send the resu
 
 ##### Row 2f(vi): Function: Set Custom Field
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function 'Set Custom Field'. When you select `set custom field`, it will open a new window.
 
 In this window, search for the `Browser Saved Pwd Audit Data` field.
 
-**Custom Field:** `Browser Saved Pwd Audit Data`  
-**Value:** `%output%`
+- **Custom Field:** `Browser Saved Pwd Audit Data`  
+- **Value:** `%output%`
 
 ![Custom Field Image 3](../../../static/img/ClearAudit---Browser-Saved-Password/image_25.png)
 
@@ -324,13 +325,13 @@ In the script Exit, leave it empty and save.
 
 ## Deployment
 
-It is suggested to run the Task daily or weekly on the groups "Clear Browser Saved Password endpoints" And "Browser Saved Password Audit Group".  
+It is suggested to run the Task daily or weekly on the groups "Clear Browser Saved Password endpoints" and "Browser Saved Password Audit Group."  
 Refer to the Group documentation: [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>) on how to create it.
 
-- Goto `Automation` > `Tasks.`
+- Go to `Automation` > `Tasks.`
 - Search for `Clear/Audit - Browser Saved Password` Task.
 - Select the concerned task.
-- Click on `Schedule` the button to schedule the task/script.
+- Click on `Schedule` to schedule the task/script.
 
 This screen will appear.
 
@@ -347,7 +348,7 @@ This screen will appear.
 
 ![Change Hours 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_32.png)
 
-- Search for `Cyrisma Sensor Deployment` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create the one and schedule the task on it.
+- Search for `Cyrisma Sensor Deployment` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
 
 ![Search Group](../../../static/img/ClearAudit---Browser-Saved-Password/image_33.png)
 
@@ -361,16 +362,3 @@ This screen will appear.
 
 - Script log
 - Custom field
-
-
-
-
-
-
-
-
-
-
-
-
-

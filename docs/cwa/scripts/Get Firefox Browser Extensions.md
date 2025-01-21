@@ -8,6 +8,7 @@ tags: ['database', 'report', 'security', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 An Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Script - Get-FirefoxExtensions](<../../powershell/Get-FirefoxExtensions.md>).
@@ -28,22 +29,10 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 - Executes the agnostic script [EPM - Data Collection - Agnostic - Script - Get-FirefoxExtensions](<../../powershell/Get-FirefoxExtensions.md>) and stores the data into a JSON file.
 - Clears the stale data.
 - Executes the [OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>) script to parse through the JSON file and insert the data into the [Plugin_ProVal_Browsers_Extensions](<../tables/Plugin_ProVal_Browsers_Extensions.md>) table.
-- Logs the Success/Failures.
+- Logs the successes and failures.
 
 ## Output
 
 - Script logs
 - Custom Table
 - Dataview
-
-
-
-
-
-
-
-
-
-
-
-

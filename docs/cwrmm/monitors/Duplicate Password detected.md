@@ -8,9 +8,10 @@ tags: ['active-directory', 'security', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor creates a ticket if accounts with Duplicate passwords are detected on a domain controller.
+This monitor creates a ticket if accounts with duplicate passwords are detected on a domain controller.
 
 ## Dependencies
 
@@ -20,22 +21,22 @@ This monitor creates a ticket if accounts with Duplicate passwords are detected 
 
 ## Target
 
-Domain Controllers  
+**Domain Controllers**  
 This should target the group 'Domain Controllers.'
 
 ## Implementation
 
-1. From the left bar select Alert Management -> Monitor  
+1. From the left bar, select **Alert Management** -> **Monitor**  
    ![Step 1 Image](../../../static/img/Duplicate-Password-detected/image_1.png)  
-   Then click 'Create Monitor'  
+   Then click **Create Monitor**  
    ![Step 1 Image](../../../static/img/Duplicate-Password-detected/image_2.png)  
 
-2. Fill in the mandatory columns on the left side.  
-   Name: Duplicate Password detected  
-   Description: This monitor creates a ticket if accounts with Duplicate passwords are detected on a domain controller.  
-   Type: Custom Field  
-   Severity: Critical Non-Impact Alerts  
-   Family: Active Directory  
+2. Fill in the mandatory fields on the left side.  
+   - **Name:** Duplicate Password Detected  
+   - **Description:** This monitor creates a ticket if accounts with duplicate passwords are detected on a domain controller.  
+   - **Type:** Custom Field  
+   - **Severity:** Critical Non-Impact Alerts  
+   - **Family:** Active Directory  
    ![Step 2 Image](../../../static/img/Duplicate-Password-detected/image_3.png)  
 
 3. Fill in the condition on the right side.  
@@ -43,9 +44,9 @@ This should target the group 'Domain Controllers.'
    ![Step 3 Image](../../../static/img/Duplicate-Password-detected/image_4.png)  
 
 4. Select the target.  
-   Click on Select Target:  
+   Click on **Select Target:**  
    ![Step 4 Image](../../../static/img/Duplicate-Password-detected/image_5.png)  
-   Then click on Device Group and then search for the word Domain and then select the 'Domain Controllers' group as shown below:  
+   Then click on **Device Group**, search for the word "Domain," and select the 'Domain Controllers' group as shown below:  
    ![Step 4 Image](../../../static/img/Duplicate-Password-detected/image_6.png)  
 
 ## Ticketing
@@ -55,15 +56,3 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
-
-
-
-
-
-
-
-
-
-
-

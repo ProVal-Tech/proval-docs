@@ -8,17 +8,7 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Retires duplicate agents from the Automate environment. The duplicate agent will be identified on the basis of serial number, name
-
-
-
-
-
-
-
-
-
-
-
+This document outlines the process for retiring duplicate agents from the ConnectWise Automate environment. Duplicate agents will be identified based on their serial number and name, ensuring effective management of agents within the system.

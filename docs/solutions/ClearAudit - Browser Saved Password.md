@@ -8,17 +8,18 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
-This solution is built to perform the Clear or Audit of the Browsers Saved Password from the endpoints.
+This solution is designed to perform the clearing or auditing of saved passwords in browsers from endpoints.
 
 ## Associated Content
 
 | Content                                                                 | Type           | Function                                                                                                                                                   |
 |-------------------------------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) | Task           | This task is designed to perform the Browser Saved Password Audit or Clearance based on the custom fields selected.                                      |
-| [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>) | Dynamic Groups | The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) and audit the failure endpoints where the browser's saved password failed to clear. |
-| [Custom Field - Clear/Audit Browsers Saved Password](<../cwrmm/custom-fields/ClearAudit Browsers Saved Password.md>) | Custom Fields  | The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>) and used in the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286). |
+| [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) | Task           | This task is designed to perform the browser saved password audit or clearance based on the custom fields selected.                                      |
+| [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>) | Dynamic Groups | The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) and audit the endpoints where the browser's saved passwords failed to clear. |
+| [Custom Field - Clear/Audit Browsers Saved Password](<../cwrmm/custom-fields/ClearAudit Browsers Saved Password.md>) | Custom Fields  | The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>) and in the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286). |
 | [Monitor - Browser Saved Password Failure Detection](<../cwrmm/monitors/Browser Saved Password Failure Detection.md>) | Monitor (Optional) | This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) in removing the browser-saved passwords. |
 
 ## Implementation
@@ -29,18 +30,5 @@ This solution is built to perform the Clear or Audit of the Browsers Saved Passw
 - (Optional) Create the [Monitor - Browser Saved Password Failure Detection](<../cwrmm/monitors/Browser Saved Password Failure Detection.md>) and follow the deployment instructions. This should be created only if the partner approves it.
 
 ## FAQ
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

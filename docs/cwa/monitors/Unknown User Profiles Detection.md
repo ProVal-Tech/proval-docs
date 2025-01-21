@@ -8,6 +8,7 @@ tags: ['database', 'security', 'ticketing']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitor identifies machines that have unknown user profiles. The data is collected by the [User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script.
@@ -44,7 +45,7 @@ Details:
 
 **%FIELDNAME%:** Number of unknown profiles
 
-**%RESULT%:** Information of Unknown profiles.
+**%RESULT%:** Information of unknown profiles.
 
 **Example %RESULT%:**
 
@@ -59,15 +60,3 @@ UserProfile: C:/Users/user2
 ProfileSizeMB: 1237
 UserSid: S-1-5-21-1327865892-1327865892-1327865892-1758
 ```
-
-
-
-
-
-
-
-
-
-
-
-

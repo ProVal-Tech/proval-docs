@@ -8,6 +8,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script is designed to export `Application` and `Security` event logs into a CSV file with configurable options. The user can control which event levels (Critical, Warning, Error) to export, set the number of days to select events from, and specify the folder path for the exported CSV file.
@@ -24,31 +25,19 @@ The script checks the size of the generated CSV file. If the file size is less t
 |-------------------|----------------------------------------------|
 | ProjectName       | Export-Eventlogs                             |
 | WorkingDirectory   | C:/ProgramData/_Automation/script/Export-Eventlogs |
-| Param             | Parameter set for the powershell script      |
+| Param             | Parameter set for the PowerShell script      |
 
 #### User Parameters
 
 | Name        | Example                     | Required | Description                                                                                                                                                        |
 |-------------|-----------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Level       | Critical,Error,Warning      | False    | Event Type to export. Supported options are `Critical, Error, and Warning`. Multiple levels can be separated by a comma (without space or quotations). The default value is `Critical`. |
+| Level       | Critical,Error,Warning      | False    | Event type to export. Supported options are `Critical`, `Error`, and `Warning`. Multiple levels can be separated by a comma (without space or quotations). The default value is `Critical`. |
 | Days        | 180                         | False    | Number of days to select event logs from. Only integer values are supported. The default value is `30`.                                                          |
 | ExportPath  | C:/Temp                     | False    | Folder path for the exported CSV file. The default value is `C:/Windows/Temp`.                                                                                   |
 
-**Quotations, (both single and double) and Spaces are not supported.**
+**Quotations (both single and double) and spaces are not supported.**
 
 ## Output
 
 - Script Logs
 - File Upload
-
-
-
-
-
-
-
-
-
-
-
-

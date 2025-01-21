@@ -8,9 +8,10 @@ tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel.
+This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the update channel.
 
 ## Sample Run
 
@@ -27,19 +28,19 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Script Editor](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_7.png)  
 ![Script Editor 2](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_8.png)  
 
 **Name:** `Microsoft 365 - Click-to-Run - Get Details`  
-**Description:** `This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel.`  
+**Description:** `This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the update channel.`  
 **Category:** Application  
 ![Category Image](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_9.png)  
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_10.png)  
 
 A blank function will appear.  
@@ -58,15 +59,15 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $C2RInfo = Get-ItemProperty -Path 'HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration' -ErrorAction SilentlyContinue
-if ( $C2RInfo ) {
-    $version = $C2rInfo.ClientVersionToReport
+if ($C2RInfo) {
+    $version = $C2RInfo.ClientVersionToReport
     $autoUpdate = if ($C2RInfo.CDNBaseUrl) {
         '1'
     } else {
         '0'
     }
-    $updateChannel = if ( $C2RInfo.UpdateChannel ) {
-        switch ( $C2RInfo.UpdateChannel -replace 'http://officecdn.microsoft.com/pr/', '' ) {
+    $updateChannel = if ($C2RInfo.UpdateChannel) {
+        switch ($C2RInfo.UpdateChannel -replace 'http://officecdn.microsoft.com/pr/', '') {
             '492350f6-3a01-4f97-b9c0-c7c6ddf67d60' {
                 'Current Channel'
             }
@@ -86,7 +87,7 @@ if ( $C2RInfo ) {
                 'Beta Channel'
             }
             'f2e724c1-748f-4b47-8fb8-8e0d210e9208' {
-                'LTSC Channel (upto Office 2019)'
+                'LTSC Channel (up to Office 2019)'
             }
             '2e148de9-61c8-4051-b103-4af54baffbb4' {
                 'LTSC Channel (Preview)'
@@ -115,7 +116,7 @@ if ( $C2RInfo ) {
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
-Search and Select the `Set User Variable` function.  
+Search and select the `Set User Variable` function.  
 ![Set User Variable](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_17.png)  
 
 The following function will pop up on the screen:  
@@ -160,7 +161,7 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ( $output -match 'Version=') {
+if ($output -match 'Version=') {
     return $($($output -split '/|')[0] -split '=')[1]
 } else {
     return ''
@@ -174,7 +175,7 @@ if ( $output -match 'Version=') {
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
@@ -203,7 +204,7 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ( $output -match 'AutoUpdate=') {
+if ($output -match 'AutoUpdate=') {
     if ($($($output -split '/|')[1] -split '=')[1] -eq 1) {
         return 'Enabled'
     } else {
@@ -221,7 +222,7 @@ if ( $output -match 'AutoUpdate=') {
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
@@ -250,7 +251,7 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ( $output -match 'UpdateChannel=') {
+if ($output -match 'UpdateChannel=') {
     return $($($output -split '/|')[2] -split '=')[1]
 } else {
     return ''
@@ -264,7 +265,7 @@ if ( $output -match 'UpdateChannel=') {
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
@@ -293,7 +294,7 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ( $output -match 'DataCollectionDate=') {
+if ($output -match 'DataCollectionDate=') {
     return $($($output -split '/|')[3] -split '=')[1]
 } else {
     return "$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))"
@@ -307,7 +308,7 @@ if ( $output -match 'DataCollectionDate=') {
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_16.png)  
 
-Search and Select the `Set Custom Field` function.  
+Search and select the `Set Custom Field` function.  
 ![Set Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_28.png)  
 
 The following function will pop up on the screen:  
@@ -331,12 +332,12 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Implementation
 
-It is suggested to run the Task once per month against the computers with the `Microsoft 365 Apps` installed.
+It is suggested to run the task once per month against computers with the `Microsoft 365 Apps` installed.
 
-- Go to `Automation` > `Tasks.`
-- Search for [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/5078775/docs/17917390#version=draft&documentMode=edit) Task.
+- Go to `Automation` > `Tasks`.
+- Search for [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/5078775/docs/17917390#version=draft&documentMode=edit) task.
 - Select the concerned task.
-- Click on `Schedule` button to schedule the task/script.  
+- Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_44.png)  
 
 This screen will appear.  
@@ -345,7 +346,7 @@ This screen will appear.
 Select the `Schedule` button and click the calendar-looking button present in front of the `Recurrence` option.  
 ![Recurrence Option](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_46.png)  
 
-Select the `Days(s)` for the `Repeat`, `14` and click the `OK` button to save the schedule.  
+Select the `Days(s)` for the `Repeat`, `14`, and click the `OK` button to save the schedule.  
 ![Save Schedule](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_47.png)  
 
 Click the `Select Targets` button to select the concerned target.  
@@ -364,15 +365,3 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_52.png)  
-
-
-
-
-
-
-
-
-
-
-
-

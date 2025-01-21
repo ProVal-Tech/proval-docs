@@ -8,14 +8,15 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This internal monitor executes the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script on online machines with Microsoft Office 365 installed on them. It will execute the script on the machines that meet the below criteria of the script states whose data is being stored by the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script.
+This internal monitor executes the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script on online machines with Microsoft Office 365 installed. It will execute the script on machines that meet the criteria outlined below, based on the data stored by the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script.
 
 - Update Channel should not be equal to "Current Channel"  
-OR
+OR  
 - Auto Update should not be equal to "Auto Enabled."  
-AND
+AND  
 - C2R Office Version should not be equal to "Not Installed."
 
 ## Dependencies
@@ -32,16 +33,3 @@ Windows Machines
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script.
-
-
-
-
-
-
-
-
-
-
-
-
-

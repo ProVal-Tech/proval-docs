@@ -8,27 +8,28 @@ tags: ['networking', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-The remote monitor retrieves information about DHCP server scopes and their corresponding IP address statistics. It filters out inactive scopes and focuses only on active ones. The monitor set then checks the number or percentage of available IP addresses within each active scope and identifies those with less than or equal to 20 and 25% of available IP addresses.
+The remote monitor retrieves information about DHCP server scopes and their corresponding IP address statistics. It filters out inactive scopes and focuses only on active ones. The monitor then checks the number or percentage of available IP addresses within each active scope and identifies those with less than or equal to 20 and 25% of available IP addresses.
 
-In other words, it detects the DHCP servers having any active DHCP Scope with less than 20 IP Addresses and 25% of IP addresses available at the same time. It ensures both conditions are true before alerting.
+In other words, it detects DHCP servers with any active DHCP scope that has less than 20 IP addresses and 25% of IP addresses available at the same time. It ensures both conditions are true before alerting.
 
-Requirement: PowerShell v5+ (Server 2016+)
+**Requirement:** PowerShell v5+ (Server 2016+)
 
 The remote monitor takes into account the reserved percentage for the DHCP failover scopes, and it will not trigger an alert for the standby DHCP server.
 
 ## Details
 
-**Suggested "Limit to"**: Windows DHCP Servers  
-**Suggested Alert Style**: Once  
-**Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
+**Suggested "Limit to":** Windows DHCP Servers  
+**Suggested Alert Style:** Once  
+**Suggested Alert Template:** △ Custom - Ticket Creation - Computer  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.01       | Run File   | REDACTED      | Regex Match | 3600     | \<Screenshot Below\> |
+| System       | 127.0.0.1      | Run File   | REDACTED      | Regex Match | 3600     | \<Screenshot Below\> |
 
 ![Screenshot](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_1.png)
 
@@ -38,7 +39,7 @@ Insert the details of the monitor in the below table.
 
 ## Target
 
-Service Plans.Windows Servers.Server Roles.Windows Servers Core Services.Windows DHCP Servers  
+Service Plans. Windows Servers. Server Roles. Windows Servers Core Services. Windows DHCP Servers  
 
 ![Target Image](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_2.png)
 
@@ -55,12 +56,12 @@ This could potentially lead to IP address allocation problems and network connec
 
 **%RESULT%:**  
 ```
-scopeid    : \\<scopeid>
-startrange : \\<startrange>
-endrange   : \\<endrange>
-free       : \\<free ip addresses>
-inuse      : \\<ip addresses in use>
-Reserved   : \\<reserved ip addresses>
+scopeid    : \<scopeid>
+startrange : \<startrange>
+endrange   : \<endrange>
+free       : \<free ip addresses>
+inuse      : \<ip addresses in use>
+Reserved   : \<reserved ip addresses>
 ```
 
 **Example:**  
@@ -87,17 +88,3 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 25% and 20 IP Addresses Available](https://proval.itglue.com/DOC-5078775-15408683)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

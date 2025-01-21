@@ -8,9 +8,10 @@ tags: ['active-directory', 'backup', 'security', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-Displays Bitlocker key protectors backed up to Active Directory.
+This document displays Bitlocker key protectors backed up to Active Directory.
 
 ## Dependencies
 
@@ -27,24 +28,10 @@ Displays Bitlocker key protectors backed up to Active Directory.
 | KeyProtectorDN     | The full DN of the audited key protector.                                   |
 | KeyProtectorName   | The name of the audited key protector.                                      |
 | Created            | The date and time that the key protector was backed up to AD.              |
-| Deleted            | True or False if the key protector was deleted from AD.                    |
+| Deleted            | True or False indicating if the key protector was deleted from AD.         |
 | RecoveryGUID       | The GUID of the key protector (KeyProtectorID on the local machine).       |
 | RecoveryPassword   | The recovery password (if applicable) for the key protector.               |
 | VolumeGUID         | The GUID of the volume that is protected by the key protector.              |
 | ParentDN           | The full DN of the parent of the key protector object in AD (generally a computer object). |
 | ParentSID          | The SID of the parent of the key protector object in AD (generally a computer object). |
-| LastScan           | The date and time that the audit was last ran.                             |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| LastScan           | The date and time that the audit was last run.                             |

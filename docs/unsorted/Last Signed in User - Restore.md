@@ -8,6 +8,7 @@ tags: ['backup', 'security', 'windows']
 draft: true
 unlisted: false
 ---
+
 ## Summary
 
 This script will restore the backup logon user to the login screen of the machine.
@@ -22,25 +23,12 @@ Document the various variables in the script. Delete any section that is not rel
 
 | Name          | Description                                               |
 |---------------|-----------------------------------------------------------|
-| LogonRestore  | This stores information about last logged on user backed or not |
+| LogonRestore  | This stores information about whether the last logged on user is backed up or not. |
 
 ## Process
 
-This script will restore the backup logon user to the login screen of the machine. This first checks for the logonbackup file i.e. 'C:/Temp/Logonbackup/logonexport.reg'. If found then restore it on the machine and remove this backup after restore.
+This script will restore the backup logon user to the login screen of the machine. It first checks for the logon backup file, i.e., 'C:/Temp/Logonbackup/logonexport.reg'. If found, it will restore it on the machine and remove this backup after restoration.
 
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-
-

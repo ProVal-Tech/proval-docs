@@ -8,9 +8,10 @@ tags: ['hyper-v', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This monitor looks for the Hyper-V integration service and tickets if it is out of date.
+This monitor checks for the Hyper-V integration service and generates tickets if it is out of date.
 
 ## Details
 
@@ -18,7 +19,7 @@ This monitor looks for the Hyper-V integration service and tickets if it is out 
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Default - Create Automate Ticket  
 
-Insert the details of the monitor in the below table.
+Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Comparator       | Interval | Result                |
 |--------------|----------------|------------|-------------------|----------|-----------------------|
@@ -26,7 +27,7 @@ Insert the details of the monitor in the below table.
 
 | **Execute Info**                                               |
 |---------------------------------------------------------------|
-| C:/Windows/system32/cmd.exe /c powershell.exe "try\{ Get-VM | Where-Object \{($_.IntegrationServicesState -eq 'Update required')} | Foreach-Object \{Write-Host /"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)/"}} catch \{}" |
+| C:/Windows/system32/cmd.exe /c powershell.exe "try{ Get-VM | Where-Object {($_.IntegrationServicesState -eq 'Update required')} | Foreach-Object {Write-Host \"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)\"}} catch {}" |
 
 ## Dependencies
 
@@ -38,19 +39,5 @@ Insert the details of the monitor in the below table.
 
 ## Implementation
 
-Please follow the below article for the implementation:  
+Please follow the article below for the implementation:  
 [Implementation Article](https://proval.itglue.com/5078775/docs/15601869)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

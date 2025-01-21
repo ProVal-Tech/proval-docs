@@ -8,15 +8,16 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is setup as the autofix for the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor. This script will rename the "reboot" file so the update orchestrator will not issue a reboot to the machine. This will prevent the update orchestrator from installing patches on the endpoint without prior approval. This script is a function script and it will not run manually.
+This script is set up as the autofix for the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor. This script will rename the "reboot" file so the update orchestrator will not issue a reboot to the machine. This will prevent the update orchestrator from installing patches on the endpoint without prior approval. This script is a function script and it will not run manually.
 
-Time Saved by Automation: 5 Minutes
+**Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
-This script is a function script and cannot be run manually. This script should only run as an autofix for the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor.
+This script is a function script and cannot be run manually. It should only run as an autofix for the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor.
 
 ## Dependencies
 
@@ -28,21 +29,8 @@ This script is dependent upon the [Update Orchestrator Service Status Detection]
 
 ## Process
 
-The monitor will check for the condition and this script will automatically execute. The script will take the "reboot" file in the UpdateOrchestrator folder and rename it to "reboot.bak". It will then verify that the results of the PowerShell were successful. On success, the script will exit with a log message indicating the file was renamed. On failure, the script will exit with an error and a log message saying the file rename failed.
+The monitor will check for the condition, and this script will automatically execute. The script will take the "reboot" file in the UpdateOrchestrator folder and rename it to "reboot.bak". It will then verify that the results of the PowerShell were successful. On success, the script will exit with a log message indicating the file was renamed. On failure, the script will exit with an error and a log message stating that the file rename failed.
 
 ## Output
 
 Script log messages only.
-
-
-
-
-
-
-
-
-
-
-
-
-

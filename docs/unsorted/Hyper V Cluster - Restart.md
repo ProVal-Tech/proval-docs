@@ -8,48 +8,49 @@ tags: ['cluster', 'hyper-v', 'performance', 'reboot']
 draft: true
 unlisted: false
 ---
+
 ## Overview
 
-Reboots all nodes of a cluster waiting for each to come back up and fallback is engaged before moving to the next.
+This script reboots all nodes of a Hyper-V cluster, waiting for each node to come back online and ensuring fallback is engaged before moving to the next.
 
 ## Requirements
 
-PowerShell V5
+- PowerShell V5
 
 ## Process
 
-1. Foreach node in the cluster determine if the node is up if not and continue not true then exit.
+1. For each node in the cluster, determine if the node is up. If not, exit.
 2. Drain the node and set up a timer.
-3. Wait for the drain to finish or the state is paused, or the elapsed time is exceeded.
-4. If the timeout is passed and the status isn't complete and the state is not paused exit.
-5. Reboot the Node.
-6. Check the node status until it's back up.
+3. Wait for the drain to finish, or until the state is paused, or the elapsed time is exceeded.
+4. If the timeout is passed and the status isn't complete and the state is not paused, exit.
+5. Reboot the node.
+6. Check the node status until it's back online.
 7. Turn the fallback on and resume the cluster.
 8. Continue to the next node.
 
-```
+```powershell
 ./Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30
 ```
-Will cycle through all nodes of ClusterName and attempt to drain the nodes stopping if the attempt to drain takes longer than 30 seconds.
+This command will cycle through all nodes of ClusterName and attempt to drain the nodes, stopping if the drain attempt takes longer than 30 seconds.
 
-```
+```powershell
 ./Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30 -Continue
 ```
-Will cycle through all nodes of ClusterName and attempt to drain the nodes stopping if the attempt to drain takes longer than 30 seconds, skipping any already offline nodes.
+This command will cycle through all nodes of ClusterName and attempt to drain the nodes, stopping if the drain attempt takes longer than 30 seconds, while skipping any nodes that are already offline.
 
-```
+```powershell
 ./Restart-HyperVCluster.ps1 -ClusterName "ClusterName" -HostTimeoutThreshold 30 -Continue -Passthru
 ```
-Will cycle through all nodes of ClusterName and attempt to drain the nodes stopping if the attempt to drain takes longer than 30 seconds, skipping any already offline nodes, and returning the Cluster Object.
+This command will cycle through all nodes of ClusterName and attempt to drain the nodes, stopping if the drain attempt takes longer than 30 seconds, skipping any already offline nodes, and returning the Cluster object.
 
 ### Parameters
 
 | Parameter                  | Alias | Required | Default | Type   | Description                                                                 |
 |----------------------------|-------|----------|---------|--------|-----------------------------------------------------------------------------|
-| `-ClusterName`             |       | True     |         | String | Holds the name of the Cluster to execute the reboot command on.           |
-| `-HostTimeoutThreshold`    |       | True     |         | Int    | The amount of time to attempt the drain and preparation for the Node restart. |
+| `-ClusterName`             |       | True     |         | String | Holds the name of the cluster to execute the reboot command on.           |
+| `-HostTimeoutThreshold`    |       | True     |         | Int    | The amount of time to attempt the drain and preparation for the node restart. |
 | `-Continue`                |       | False    |         | Switch | Allows the reboot sequence to continue if a node is currently offline.     |
-| `-Passthru`                |       | False    |         | Switch | Allows for the return of the Cluster object upon completion.               |
+| `-Passthru`                |       | False    |         | Switch | Allows for the return of the cluster object upon completion.               |
 
 ## Output
 
@@ -57,16 +58,3 @@ Will cycle through all nodes of ClusterName and attempt to drain the nodes stopp
 ./Restart-HyperVCluster-log.txt
 ./Restart-HyperVCluster-error.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

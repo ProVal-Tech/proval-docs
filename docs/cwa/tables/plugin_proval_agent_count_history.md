@@ -8,6 +8,7 @@ tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 Stores data from the monitor @Agent Counts Recorder about the number of servers, computers, and agents that have checked in within 90 days.
@@ -20,21 +21,10 @@ Stores data from the monitor @Agent Counts Recorder about the number of servers,
 
 #### plugin_proval_agent_count_history
 
-| Column   | Type | Explanation                                                   |
-|----------|------|---------------------------------------------------------------|
-| clientid | INT  | The clientid of the client associated with the agent counts.  |
-| date     | DATE | The date of the agent count measurement.                      |
-| servers  | INT  | The number of servers measured for the associated client.     |
-| computers| INT  | The number of non-servers measured for the associated client. |
-| over90   | INT  | The number of machines that have checked in within 90 days.  |
-
-
-
-
-
-
-
-
-
-
-
+| Column    | Type | Explanation                                                   |
+|-----------|------|---------------------------------------------------------------|
+| clientid  | INT  | The client ID of the client associated with the agent counts.|
+| date      | DATE | The date of the agent count measurement.                      |
+| servers   | INT  | The number of servers measured for the associated client.     |
+| computers | INT  | The number of non-servers measured for the associated client. |
+| over90    | INT  | The number of machines that have checked in within 90 days.  |

@@ -8,6 +8,7 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script generates two custom tables: [pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>) and [pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>). It calculates and records the daily online and offline times of all machines in the [pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>) table, using the data stored in the [pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>) table.
@@ -21,15 +22,5 @@ The script generates two custom tables: [pvl_automate_connection_audit](<../tabl
 ## Output
 
 - Script Log
-
-
-
-
-
-
-
-
-
-
 
 

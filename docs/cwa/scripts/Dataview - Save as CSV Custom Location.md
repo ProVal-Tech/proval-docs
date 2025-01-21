@@ -8,9 +8,10 @@ tags: ['backup', 'setup', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is a copy of [CWM - Automate - Script - Dataview - Email as CSV [Param]](<./Dataview - Email as CSV Param.md>) script. Instead of overwriting the existing Dataview CSV file, it saves a distinct copy each time it runs on a custom folder location defined by the user. Also, it does not send an email to anyone.
+This script is a copy of [CWM - Automate - Script - Dataview - Email as CSV [Param]](./Dataview - Email as CSV Param.md) script. Instead of overwriting the existing Dataview CSV file, it saves a distinct copy each time it runs in a custom folder location defined by the user. Additionally, it does not send an email to anyone.
 
 ## Sample Run
 
@@ -18,20 +19,8 @@ This script is a copy of [CWM - Automate - Script - Dataview - Email as CSV [Par
 
 #### Additional User Parameter
 
-| FoName           | Example                               | Required | Description                                                                                   |
+| Parameter        | Example                               | Required | Description                                                                                   |
 |------------------|---------------------------------------|----------|-----------------------------------------------------------------------------------------------|
-| Folder Location   | C:/ProgramData/_automation/script     | True     | Provide the folder location where you would like to preserve the Dataview File on the machine |
+| Folder Location   | C:/ProgramData/_automation/script     | True     | Provide the folder location where you would like to preserve the Dataview file on the machine |
 
-Rest all parameters are the same as [CWM - Automate - Script - Dataview - Email as CSV [Param]](<./Dataview - Email as CSV Param.md>)
-
-
-
-
-
-
-
-
-
-
-
-
+All other parameters are the same as those in [CWM - Automate - Script - Dataview - Email as CSV [Param]](./Dataview - Email as CSV Param.md).

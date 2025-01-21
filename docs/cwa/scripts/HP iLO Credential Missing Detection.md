@@ -8,11 +8,12 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This is a client script that creates the ticket for all clients which has an HP Server and have HP iLO enabled but the credentials are missing.
+This is a client script that creates tickets for all clients who have an HP Server with HP iLO enabled but are missing credentials.
 
-Flag the Computer-Level EDF `Exclude From HPE ILO Monitoring` to exclude a computer/server from generating ticket.
+Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a computer/server from generating a ticket.
 
 ## Sample Run
 
@@ -20,27 +21,16 @@ Flag the Computer-Level EDF `Exclude From HPE ILO Monitoring` to exclude a compu
 
 ## Dependencies
 
-Computer-Level EDF - Exclude From HPE ILO Monitoring
+- Computer-Level EDF - Exclude From HPE iLO Monitoring
 
 ## Implementation
 
-- Import the script
-- After import please reload the system cache and refresh the scripts to have the EDF automatically imported with the script.
+- Import the script.
+- After importing, please reload the system cache and refresh the scripts to have the EDF automatically imported with the script.
 - Schedule it from the dashboard -> Scheduled Client Scripts.  
-  Note: This is an optional feature. Please ensure the client wants the ticketing for the missing credentials alerting.
+  Note: This is an optional feature. Please ensure the client wants ticketing for the missing credentials alerting.
 
 ## Output
 
 - Script log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-

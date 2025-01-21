@@ -8,6 +8,7 @@ tags: ['installation', 'linux', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
@@ -31,19 +32,19 @@ This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ## Task Creation
 
-Create a new `Script Editor` style script in the system to implement this Task.
+Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](../../../static/img/SentinelOne-Deployment/image_9.png)
 ![Task Creation 2](../../../static/img/SentinelOne-Deployment/image_10.png)
 
-**Name:** SentinelOne Deployment  
-**Description:** This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.  
-**Category:** Security  
+**Name:** SentinelOne Deployment  \
+**Description:** This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.  \
+**Category:** Security  \
 ![Task Creation 3](../../../static/img/SentinelOne-Deployment/image_11.png)
 
 ## Task
 
-Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Row](../../../static/img/SentinelOne-Deployment/image_12.png)
 
@@ -62,7 +63,7 @@ Select the `Custom Field` from the dropdown menu.
 ![Select Custom Field 1](../../../static/img/SentinelOne-Deployment/image_15.png)
 ![Select Custom Field 2](../../../static/img/SentinelOne-Deployment/image_16.png)
 
-Search and select the `SentinelOne Group Key` custom field and type `NA` in the comparator and change Contains to Does not Equal and press `Enter`.
+Search and select the `SentinelOne Group Key` custom field, type `NA` in the comparator, change "Contains" to "Does Not Equal," and press `Enter`.
 
 ![Condition Setup](../../../static/img/SentinelOne-Deployment/image_17.png)
 
@@ -78,17 +79,17 @@ The following function will pop up on the screen:
 ![Set Pre-defined Variable Function](../../../static/img/SentinelOne-Deployment/image_20.png)
 
 - Type `S1SiteToken` in the `Variable Name` field.
-- Select the `Custom Field` Radio button.
-- Search and select the Site-level `SentinelOne Group Key` Custom Field in the `Search Custom Field` field.
+- Select the `Custom Field` radio button.
+- Search and select the Site-level `SentinelOne Group Key` custom field in the `Search Custom Field` field.
 - Click the `Save` button to save the changes.
-- Select `Windows` as Operating System.
+- Select `Windows` as the Operating System.
 
 ![Windows Selection 1](../../../static/img/SentinelOne-Deployment/image_21.png)
 ![Windows Selection 2](../../../static/img/SentinelOne-Deployment/image_22.png)
 
 #### ROW 1c Function: Set Pre-defined Variable
 
-Repeat the Row 1b steps but limit the pre-defined variable to MAC machines.
+Repeat the Row 1b steps but limit the pre-defined variable to Mac machines.
 
 ![MAC Selection 1](../../../static/img/SentinelOne-Deployment/image_23.png)
 ![MAC Selection 2](../../../static/img/SentinelOne-Deployment/image_24.png)
@@ -108,18 +109,18 @@ Add if/then/else logic in the else section.
 
 ##### ROW 1e(i) Condition: Custom Field Contains
 
-Select the `Custom Field` from the dropdown menu inside the If section of the inner If else.
+Select the `Custom Field` from the dropdown menu inside the If section of the inner if/else.
 
 ![Select Custom Field 3](../../../static/img/SentinelOne-Deployment/image_15.png)
 ![Select Custom Field 4](../../../static/img/SentinelOne-Deployment/image_16.png)
 
-Search and select the `SentinelOne Site Key` custom field and type `NA` in the comparator and change Contains to Does not Equal and press `Enter`.
+Search and select the `SentinelOne Site Key` custom field, type `NA` in the comparator, change "Contains" to "Does Not Equal," and press `Enter`.
 
 ![Condition Setup 2](../../../static/img/SentinelOne-Deployment/image_26.png)
 
 ##### ROW 1e(ii) Function: Set Pre-defined Variable
 
-Search and select the `Set Pre-defined Variable` function inside the If section of the inner If else.
+Search and select the `Set Pre-defined Variable` function inside the If section of the inner if/else.
 
 ![Set Pre-defined Variable 3](../../../static/img/SentinelOne-Deployment/image_18.png)
 ![Set Pre-defined Variable 4](../../../static/img/SentinelOne-Deployment/image_19.png)
@@ -129,17 +130,17 @@ The following function will pop up on the screen:
 ![Set Pre-defined Variable Function 2](../../../static/img/SentinelOne-Deployment/image_20.png)
 
 - Type `S1SiteToken` in the `Variable Name` field.
-- Select the `Custom Field` Radio button.
-- Search and select the Site-level `SentinelOne SiteKey` Custom Field in the `Search Custom Field` field.
+- Select the `Custom Field` radio button.
+- Search and select the Site-level `SentinelOne SiteKey` custom field in the `Search Custom Field` field.
 - Click the `Save` button to save the changes.
-- Select `Windows` as Operating System.
+- Select `Windows` as the Operating System.
 
 ![Windows Selection 3](../../../static/img/SentinelOne-Deployment/image_27.png)
 ![Windows Selection 4](../../../static/img/SentinelOne-Deployment/image_28.png)
 
 ##### ROW 1e(iii) Function: Set Pre-defined Variable
 
-Repeat the ROW 1e(ii) steps but limit the pre-defined variable to MAC machines.
+Repeat the ROW 1e(ii) steps but limit the pre-defined variable to Mac machines.
 
 ![MAC Selection 3](../../../static/img/SentinelOne-Deployment/image_29.png)
 ![MAC Selection 4](../../../static/img/SentinelOne-Deployment/image_30.png)
@@ -153,7 +154,7 @@ Repeat the ROW 1e(ii) steps but limit the pre-defined variable to Linux machines
 
 ##### ROW 1e(v) Function: Script Exit
 
-Click the `Add Row` button inside the `else` section of inner if/else.
+Click the `Add Row` button inside the `else` section of the inner if/else.
 
 ![Add Row 2](../../../static/img/SentinelOne-Deployment/image_31.png)
 ![Add Row 3](../../../static/img/SentinelOne-Deployment/image_32.png)
@@ -177,7 +178,7 @@ SentinelOne Group/Site key were not set. Please review the Company/Site custom f
 
 ##### ROW 1e(vi) Function: Script Exit
 
-Repeat the ROW 1e(v) steps but limit the Script Exit function to MAC machines.
+Repeat the ROW 1e(v) steps but limit the Script Exit function to Mac machines.
 
 ![MAC Exit](../../../static/img/SentinelOne-Deployment/image_37.png)
 
@@ -255,7 +256,7 @@ curl -o "/tmp/SentinelOneAgent-macos.pkg" "https://cwa.connectwise.com/tools/sen
 sleep 5
 
 if [ -f "/Library/Sentinel/sentinel-agent.bundle/Contents/MacOS/SentinelAgent.app/Contents/MacOS/SentinelAgent" ]; then
-    echo "SUCCESS - SentineOne agent already installed."
+    echo "SUCCESS - SentinelOne agent already installed."
     exit 0
 fi
 
@@ -264,7 +265,7 @@ sudo installer -pkg "/tmp/SentinelOneAgent-macos.pkg" -target /
 sleep 5
 
 if [ -f "/Library/Sentinel/sentinel-agent.bundle/Contents/MacOS/SentinelAgent.app/Contents/MacOS/SentinelAgent" ]; then
-    echo "SUCCESS - SentineOne agent installed."
+    echo "SUCCESS - SentinelOne agent installed."
     exit 0
 else 
     echo "ERROR - SentinelOne agent failed to install."
@@ -342,11 +343,11 @@ Add a new row by clicking the `Add Row` button.
 
 ![Add Row 5](../../../static/img/SentinelOne-Deployment/image_47.png)
 
-Search and select `Set Custom Field` function.
+Search and select the `Set Custom Field` function.
 
 ![Set Custom Field 1](../../../static/img/SentinelOne-Deployment/image_48.png)
 
-Search and select `SentinelOne Deployment Result` in the `Search Custom Field` field and set `%output%` in the `Value` field and click the `Save` button.
+Search and select `SentinelOne Deployment Result` in the `Search Custom Field` field, set `%output%` in the `Value` field, and click the `Save` button.
 
 ![Set Custom Field 2](../../../static/img/SentinelOne-Deployment/image_49.png)
 
@@ -356,13 +357,13 @@ Limit the function to Windows machines.
 
 ## Row 6 Function: Set Custom Field
 
-Repeat the ROW 5 steps but limit the function to Mac machines.
+Repeat the Row 5 steps but limit the function to Mac machines.
 
 ![Mac Limit](../../../static/img/SentinelOne-Deployment/image_51.png)
 
 ## Row 7 Function: Set Custom Field
 
-Repeat the ROW 5 steps but limit the function to Linux machines.
+Repeat the Row 5 steps but limit the function to Linux machines.
 
 ## Completed Script
 
@@ -372,11 +373,11 @@ Repeat the ROW 5 steps but limit the function to Linux machines.
 
 ## Deployment
 
-This task has to be scheduled on `SentinelOne Deployment` group for auto deployment. Script can also be run manually if required.
+This task has to be scheduled on the `SentinelOne Deployment` group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for SentinelOne Deployment.  
-Then click on Schedule and provide the parameters detail as it is necessary for the script completion.
+Then click on Schedule and provide the parameters detail as necessary for the script completion.
 
 ![Deployment](../../../static/img/SentinelOne-Deployment/image_54.png)
 
@@ -384,15 +385,3 @@ Then click on Schedule and provide the parameters detail as it is necessary for 
 
 - Script Log
 - Custom Field
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,11 +8,12 @@ tags: ['report', 'security', 'software', 'update']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This script is used to scan for possible vulnerabilities in a target system, saving information to EDFs for reporting. This script utilizes a fork of the Datto RMM provided script here: [https://github.com/datto/log4shell-tool](https://github.com/datto/log4shell-tool). The fork of the script is here: [https://github.com/ProVal-Tech/log4shell-tool](https://github.com/ProVal-Tech/log4shell-tool).
+This script is used to scan for possible vulnerabilities in a target system, saving information to EDFs for reporting. This script utilizes a fork of the Datto RMM provided script here: [Datto Log4Shell Tool](https://github.com/datto/log4shell-tool). The fork of the script is available here: [ProVal-Tech Log4Shell Tool](https://github.com/ProVal-Tech/log4shell-tool).
 
-## Update Notice: 13-June-2024
+## Update Notice: 13 June 2024
 
 The script has been updated to remove the leftovers along with the `Everything` service.
 
@@ -22,11 +23,11 @@ The script has been updated to remove the leftovers along with the `Everything` 
 
 ## Dependencies
 
-[https://github.com/ProVal-Tech/log4shell-tool](https://github.com/ProVal-Tech/log4shell-tool)
+Refer to the [ProVal-Tech Log4Shell Tool](https://github.com/ProVal-Tech/log4shell-tool) for dependencies.
 
 ## Process
 
-See [https://github.com/ProVal-Tech/log4shell-tool](https://github.com/ProVal-Tech/log4shell-tool) for detailed processes.
+See [ProVal-Tech Log4Shell Tool](https://github.com/ProVal-Tech/log4shell-tool) for detailed processes.
 
 The script will save information to the following EDFs based on the output of the script:
 
@@ -50,16 +51,3 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
-
-
-
-
-
-
-
-
-
-
-
-
-

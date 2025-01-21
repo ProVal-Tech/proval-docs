@@ -8,6 +8,7 @@ tags: []
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Displays volume information gathered by [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
@@ -24,21 +25,8 @@ Displays volume information gathered by [CWM - Automate - Script - Volume Free S
 | Computer                  | The name of the target computer                                     |
 | Client                    | The client of the target computer                                   |
 | Location                  | The location of the target computer                                 |
-| DriveLetter               | The drive letter of the volume                                      |
+| Drive Letter              | The drive letter of the volume                                      |
 | Size (GB)                 | The size of the volume in Gigabytes                                 |
 | Size Remaining (GB)       | The amount of space remaining in Gigabytes                          |
 | Estimated Exhaustion       | The date and time that this volume is estimated to run out of space. |
 | Timestamp                 | The last time data was gathered for this volume.                   |
-
-
-
-
-
-
-
-
-
-
-
-
-

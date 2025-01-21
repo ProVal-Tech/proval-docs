@@ -8,6 +8,7 @@ tags: ['patching', 'software']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The internal monitor detects computers where daytime patching is enabled and one or more patches are available for installation.
@@ -23,16 +24,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Install All Approved Patches [With Prompt]`
-
-
-
-
-
-
-
-
-
-
-
-
-

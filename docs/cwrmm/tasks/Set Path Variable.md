@@ -8,6 +8,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 Sets the provided path(s) to the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Set-PathVariable](<../../powershell/Set-PathVariable.md>).
@@ -28,7 +29,7 @@ Sets the provided path(s) to the Environmental Path variable for a Path at the M
 
 | Name | Example | Required | Type | Description |
 |------|---------|----------|------|-------------|
-| Path | - 'C://Temp'  - 'C://Temp', 'C://Temp//ProgramData', 'D://Text Files' | True | Text String | Comma Separated list of the path(s) to add to the path variable.**Requirement:** \<ul>\<li>Each path should be enclosed between single quotes.\</li>\<li>Path should exist on the end machine.\</li>\</ul> |
+| Path | - 'C://Temp'  - 'C://Temp', 'C://Temp//ProgramData', 'D://Text Files' | True | Text String | Comma-separated list of the path(s) to add to the path variable. **Requirement:** <ul><li>Each path should be enclosed in single quotes.</li><li>Path should exist on the end machine.</li></ul> |
 
 ![User Parameters Image](../../../static/img/Set-Path-Variable/image_4.png)
 
@@ -92,7 +93,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```
 #region parameters
 $Path = "@Path@"
-if ( $path -match '://' ) {
+if ($path -match '://') {
     $Path = $($Path -split ',').Trim()
 } else {
     throw 'Invalid path.'
@@ -133,11 +134,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if ( !(Test-Path $LogPath) ) {
+if (!(Test-Path $LogPath)) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+if (Test-Path $ErrorLogPath) {
+    $ErrorContent = (Get-Content -Path $ErrorLogPath)
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -179,15 +180,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-
-
-
-
-
-
-
-
-

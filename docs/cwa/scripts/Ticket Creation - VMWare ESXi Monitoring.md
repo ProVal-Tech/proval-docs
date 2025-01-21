@@ -8,6 +8,7 @@ tags: ['esxi']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
 The script will write the ESXi hosts' information to a ticket.
@@ -15,16 +16,16 @@ The script will write the ESXi hosts' information to a ticket.
 The script is designed to be used as an Autofix script with the internal monitor for the ESXi Host.
 
 Use of the script is subject to the following requirements:  
-1. The Deviceid of the ESXi host should be used as the TestValue/Result in the monitor set.  
-2. All the pertinent data to be uploaded on the ticket should be in FieldName/IdentityField.
+1. The Device ID of the ESXi host should be used as the Test Value/Result in the monitor set.  
+2. All pertinent data to be uploaded on the ticket should be in Field Name/Identity Field.
 
 The following script variables can be utilized in the monitor's alerting tab: `@ESXHostName@`, `@ESXVersion@`, `@ESXMakeModel@`, `@ESXIPAddress@`, and `@ESXSN@`.  
-"ESXi Bad Sensors Detected - @ESXHostName@ (@ESXIPAddress@)" is an illustration of a Subject.  
-In the aforementioned example, the ticket will be created with the HostName and IP address included in the ticket subject.
+"ESXi Bad Sensors Detected - @ESXHostName@ (@ESXIPAddress@)" is an illustration of a subject.  
+In the aforementioned example, the ticket will be created with the Host Name and IP address included in the ticket subject.
 
 ## Sample Run
 
-The script is attached to the "~Custom - Ticket Creation ESXi Hosts" alert template, it is not intended to be run manually.
+The script is attached to the "~Custom - Ticket Creation ESXi Hosts" alert template; it is not intended to be run manually.
 
 ## Variables
 
@@ -45,15 +46,3 @@ The only difference is that this script will write the ESXi hosts' information t
 
 - Script Log
 - Ticket
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,9 +8,10 @@ tags: ['networking', 'security', 'setup']
 draft: false
 unlisted: false
 ---
+
 ## Summary
 
-This custom field at the company level stores the Sentinel Site Key, the Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization.
+This custom field at the company level stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization.
 
 ## Dependencies
 
@@ -22,18 +23,6 @@ This custom field at the company level stores the Sentinel Site Key, the Site Ke
 |---------------------------|-------|----------|---------------|----------------------------------|----------|
 | SentinelOne Site Key      | Site  | TextBox  | NA            | The S1 site key for this company | Yes      |
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](../../../static/img/Company---SentinelOne-Site-Key/image_1.png)
-
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](../../../static/img/Company---SentinelOne-Site-Key/image_1.png)
