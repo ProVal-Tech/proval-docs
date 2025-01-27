@@ -25,7 +25,7 @@ This solution is created to deploy the SnapAgent on Windows machines using the A
 
 | Content                                                                | Type          | Function                                         |
 |------------------------------------------------------------------------|---------------|-------------------------------------------------|
-| [Agnostic - Install-SnapAgent](<../unsorted/Agnostic - Install-SnapAgent.md>) | Agnostic Ps1 | Installs SnapAgent on Windows computers.        |
+| [Install-SnapAgent](<../powershell/Install-SnapAgent.md>) | Agnostic Ps1 | Installs SnapAgent on Windows computers.        |
 
 ## Implementation
 

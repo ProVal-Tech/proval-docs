@@ -1,7 +1,7 @@
 ---
 id: '927ed9c8-98d6-4efa-b22f-a516458ef19c'
-title: 'SEC - Windows Patching - Dataview - Patching - Approved Recent Updates Audit'
-title_meta: 'SEC - Windows Patching - Dataview - Patching - Approved Recent Updates Audit'
+title: 'Patching - Approved Recent Updates Audit'
+title_meta: 'Patching - Approved Recent Updates Audit'
 keywords: ['patches', 'updates', 'computers', 'review', 'status']
 description: 'This document provides a detailed overview of the dataview that displays the latest approved patches along with their release dates. It outlines the criteria for filtering patches, the columns included in the dataview, and the SQL representation for querying the relevant data. It highlights the importance of reviewing computers that are overdue for updates or have encountered failed patch installations.'
 tags: ['database', 'report', 'update']
@@ -36,37 +36,4 @@ The dataview filters the patches that it displays based on the following require
 | Patch Approved on Date    | The date the patch was approved.                         |
 | Patch Last Attempt Date   | The date the patch installation was attempted last.      |
 | Status                    | The status of the computer at this time (Up To Date or Please Review) |
-
-## SQL Representation
-
-```sql
-SELECT
-    Computers.ComputerID,
-    clients.Name AS 'ClientName',
-    locations.Name AS 'LocationName',
-    computers.Name AS 'ComputerName',
-    MAX(patchjobs.FinishDate) AS 'PatchLastAttemptDate',
-    v_setpatches.SetTime AS 'PatchApprovedOnDate',
-    Severity,
-    KBID,
-    Title,
-    IF((MAX(FinishDate) > v_setpatches.SetTime + INTERVAL 2 MONTH) OR 
-       ((MAX(FinishDate) < v_setpatches.SetTime + INTERVAL 2 MONTH) AND operationResultCode != '2'), 
-       'Please Review', 'Up To Date') AS 'ComputerState'
-FROM
-    Computers
-    INNER JOIN Patchjobs ON Patchjobs.ComputerID = Computers.ComputerID
-    LEFT JOIN patchjobpatches ON patchjobpatches.PatchJobGuid = patchjobs.PatchJobGuid
-    LEFT JOIN locations ON locations.LocationID = computers.LocationID
-    LEFT JOIN clients ON clients.ClientID = computers.ClientID
-    LEFT JOIN v_setpatches ON v_setpatches.HotfixID = patchjobpatches.PatchID
-WHERE 
-    v_setpatches.approvalPolicyID = 6 
-    AND v_setpatches.SetTime >= NOW() - INTERVAL 2 MONTH 
-    AND v_setpatches.approvalSetting != '4' 
-    AND NOT v_setpatches.Title REGEXP '//W*(Microsoft Defender)//W*|//W*(Malicious Software Removal)//W*'
-GROUP BY ComputerID
-```
-
-
 

@@ -1,7 +1,7 @@
 ---
 id: '0f5d99f1-46bb-42f4-8cdd-006f00cbffd9'
-title: 'EPM - Window Configuration -View - cPVAL - Workstations Not Rebooted 60+ Days'
-title_meta: 'EPM - Window Configuration -View - cPVAL - Workstations Not Rebooted 60+ Days'
+title: 'cPVAL - Workstations Not Rebooted 60+ Days'
+title_meta: 'cPVAL - Workstations Not Rebooted 60+ Days'
 keywords: ['workstations', 'reboot', 'filter', 'policy']
 description: 'This document provides a summary of a view that displays workstations that have not been rebooted in the last 60 days. It includes details on dependencies and the specific filters applied to this view, ensuring users can effectively monitor workstation status.'
 tags: ['performance', 'report', 'windows']

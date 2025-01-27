@@ -25,7 +25,7 @@ For instance, if your system locale is set to English (United States) and your i
 
 ## Sample
 
-![Sample Image](../../static/img/Dynamic-Input-Language-Role/image_1.png)
+![Sample Image](../../../static/img/Dynamic-Input-Language-Role/image_1.png)
 
 
 

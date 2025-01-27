@@ -15,7 +15,7 @@ This script will create or modify the registry for multiple keys, names, values,
 
 ## Sample Run
 
-![Sample Run](../../static/img/Generic-Registry-Editor/image_1.png)
+![Sample Run](../../../static/img/Generic-Registry-Editor/image_1.png)
 
 ## Variables
 

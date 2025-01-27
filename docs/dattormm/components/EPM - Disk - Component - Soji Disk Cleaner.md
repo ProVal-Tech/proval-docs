@@ -20,7 +20,7 @@ This document describes the process of running the Soji Disk Cleaner on selected
 
 ## Implementation
 
-Import the attached component into Datto RMM.
+Import the [attached component](https://proval.itglue.com/attachments/11025946) into Datto RMM.
 
 ## Output
 

@@ -15,15 +15,15 @@ This script will use the client level EDFs to download and install a CW Control 
 
 ## Sample Run
 
-![Sample Run](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_1.png)
+![Sample Run](../../../static/img/CW-Control-Hosted-Access-Agent-Install/image_1.png)
 
 ## Dependencies
 
 **Client Level EDF**  
-![Client Level EDF](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_2.png)
+![Client Level EDF](../../../static/img/CW-Control-Hosted-Access-Agent-Install/image_2.png)
 
 **Agent Level EDF**  
-![Agent Level EDF](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_3.png)
+![Agent Level EDF](../../../static/img/CW-Control-Hosted-Access-Agent-Install/image_3.png)
 
 ## Variables
 
@@ -33,9 +33,9 @@ This script will use the client level EDFs to download and install a CW Control 
 
 [https://your.domain.com/Control/Bin/ConnectWiseControl.ClientSetup.msi?h=your.domain.com&p=8041&k=(long string of alphanumeric characters)&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=](https://your.domain.com/Control/Bin/ConnectWiseControl.ClientSetup.msi?h=your.domain.com&p=8041&k=(long string of alphanumeric characters)&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=)
 
-You can get this string by pressing the ![button](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_4.png) button and using these settings:
+You can get this string by pressing the ![button](../../../static/img/CW-Control-Hosted-Access-Agent-Install/image_4.png) button and using these settings:
 
-![Settings](../../static/img/CW-Control-Hosted-Access-Agent-Install/image_5.png)
+![Settings](../../../static/img/CW-Control-Hosted-Access-Agent-Install/image_5.png)
 
 ## Process
 
@@ -46,6 +46,4 @@ You can get this string by pressing the ![button](../../static/img/CW-Control-Ho
 ## Output
 
 **Script Log**
-
-
 

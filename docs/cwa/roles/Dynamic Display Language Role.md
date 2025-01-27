@@ -25,7 +25,7 @@ This is helpful to be used in a solution that has dependencies on the system out
 
 ## Sample
 
-![Sample Image](../../static/img/Dynamic-Display-Language-Role/image_1.png)
+![Sample Image](../../../static/img/Dynamic-Display-Language-Role/image_1.png)
 
 
 

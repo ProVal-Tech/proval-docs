@@ -37,6 +37,3 @@ Upon completion, the following log files will be generated:
 ./Uninstall-N-Able-log.txt
 ./Uninstall-N-Able-error.txt
 ```
-
-
-

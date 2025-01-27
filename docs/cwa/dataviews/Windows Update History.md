@@ -1,7 +1,7 @@
 ---
 id: 'ecf832e3-2985-4079-971c-436f1c836e53'
-title: 'EPM - Dataview - Windows Update History'
-title_meta: 'EPM - Dataview - Windows Update History'
+title: 'Windows Update History'
+title_meta: 'Windows Update History'
 keywords: ['windows', 'update', 'history', 'rmm', 'patch', 'audit']
 description: 'This document provides a comprehensive overview of Windows Update history for agents, detailing the various columns of information such as client name, operating system, patch details, and installation status. It also lists dependencies for effective auditing and management of Windows updates.'
 tags: ['performance', 'report', 'security', 'update', 'windows']
@@ -15,8 +15,8 @@ This document displays information about Windows Update history for agents.
 
 ## Dependencies
 
-- [EPM - Custom Table - pvl_windows_updates](<../cwa/tables/pvl_windows_updates.md>)
-- [EPM - Script - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093)
+- [pvl_windows_updates](<../../cwa/tables/pvl_windows_updates.md>)
+- [Windows Update History Audit](<../../cwa/scripts/Windows Update History Audit.md>)
 
 ## Columns
 

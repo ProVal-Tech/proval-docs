@@ -1,7 +1,7 @@
 ---
 id: '8c653432-1811-4651-989e-3c8aae89a7cf'
-title: 'SEC - Encryption - VSA - BitLocker Initialization'
-title_meta: 'SEC - Encryption - VSA - BitLocker Initialization'
+title: 'BitLocker Initialization'
+title_meta: 'BitLocker Initialization'
 keywords: ['bitlocker', 'encryption', 'kaseya', 'agent', 'procedure']
 description: 'This guide provides an overview of the BitLocker Initialization folder in Kaseya VSA, detailing the Agent Procedures for automating drive encryption using the Initialize-BitLockerVolume PowerShell script. It includes instructions for selecting and customizing procedures to align with specific security requirements.'
 tags: ['encryption', 'kaseya', 'security', 'setup']

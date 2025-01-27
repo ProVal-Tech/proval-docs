@@ -15,7 +15,7 @@ This script will remove and reset the 'Offline Address Books' folder for all use
 
 ## Sample Run
 
-![Sample Run](../../static/img/Outlook---Office-Address-Book-Removal/image_1.png)
+![Sample Run](../../../static/img/Outlook---Office-Address-Book-Removal/image_1.png)
 
 ## Variables
 

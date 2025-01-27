@@ -22,7 +22,7 @@ To manage Bitlocker protection on endpoints.
   - [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>)
   - [Custom Table - plugin_proval_tpm_audit](<../cwa/tables/plugin_proval_tpm_audit.md>)
 - New Content:
-  - [Dataview - Bitlocker Status - Retired Computers](<../unsorted/SEC - Encryption - Dataview - Bitlocker Status - Retired Computers.md>)
+  - [Dataview - Bitlocker Status - Retired Computers](<../cwa/dataviews/Bitlocker Status - Retired Computers.md>)
 - Sync the modified scripts from the `Prosync` plugin and run the [Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>) script against any online Windows computer with the `Set_Environment` parameter set to `1` to modify the custom tables.
 
 ![Image](../../static/img/Bitlocker/image_1.png)
@@ -37,7 +37,7 @@ To manage Bitlocker protection on endpoints.
 | [Script - Bitlocker - AD Key Protector - Audit](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>) | Script | Audits the existing backup Bitlocker key protectors from an Active Directory server. |
 | [Script - Bitlocker Recovery Password - AD Backup](https://proval.itglue.com/DOC-5078775-10672949) | Script | This script backs up Bitlocker Recovery Passwords to the associated Active Directory instance. |
 | [Dataview - Bitlocker Status](<../cwa/dataviews/Bitlocker Status.md>) | Dataview | Displays information from the [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) filled by the [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). Additionally, it displays information about the Active Directory backup status of each key protector. |
-| [Dataview - Bitlocker Status - Retired Computers](<../unsorted/SEC - Encryption - Dataview - Bitlocker Status - Retired Computers.md>) | Dataview | Displays the Bitlocker data stored in the [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) for the retired computers. |
+| [Dataview - Bitlocker Status - Retired Computers](<../cwa/dataviews/Bitlocker Status - Retired Computers.md>) | Dataview | Displays the Bitlocker data stored in the [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) for the retired computers. |
 | [SEC - Encryption - Dataview - Bitlocker - AD Backup Audit](<../cwa/dataviews/Bitlocker - AD Backup Audit.md>) | Dataview | Displays Bitlocker key protectors backed up to Active Directory. |
 | [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<../cwa/monitors/Security - Stale Bitlocker Data.md>) | Internal Monitor | Detects Windows computers where the [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>) script has not executed within the last 30 days and triggers the audit script to run. |
 | [CWM - Automate - Roles - Bitlocker](https://proval.itglue.com/DOC-5078775-17817010) | Role | These roles determine whether the Windows server is eligible for Bitlocker. They are also used in the [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<../cwa/monitors/Security - Stale Bitlocker Data.md>). |
@@ -78,7 +78,7 @@ To manage Bitlocker protection on endpoints.
 
 2. Import the following Dataviews using the ProSync Plugin:
    - [Dataview - Bitlocker Status](<../cwa/dataviews/Bitlocker Status.md>)
-   - [Dataview - Bitlocker Status - Retired Computers](<../unsorted/SEC - Encryption - Dataview - Bitlocker Status - Retired Computers.md>)
+   - [Dataview - Bitlocker Status - Retired Computers](<../cwa/dataviews/Bitlocker Status - Retired Computers.md>)
 
 3. Import the following monitors using the ProSync Plugin:
    - [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<../cwa/monitors/Security - Stale Bitlocker Data.md>)

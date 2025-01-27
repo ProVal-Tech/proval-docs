@@ -17,11 +17,11 @@ Once the registry is set, it will prompt the machine to reboot.
 
 ## Sample Run
 
-![Sample Run](../../static/img/Disable-Virtualization-based-security/image_1.png)
+![Sample Run](../../../static/img/Disable-Virtualization-based-security/image_1.png)
 
 ## Dependencies
 
-[EPM - Windows Configuration - Solution - User Prompt for Reboot](<../solutions/User Prompt for Reboot.md>)
+[EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>)
 
 ## Variables
 
