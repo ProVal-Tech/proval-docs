@@ -1,7 +1,7 @@
 ---
 id: 'bc1c7f2d-8eb4-41a3-bb12-8150cdeb0241'
-title: 'SWM - Software Management - Custom Field - cPVAL Senteon Installed'
-title_meta: 'SWM - Software Management - Custom Field - cPVAL Senteon Installed'
+title: 'cPVAL Senteon Installed'
+title_meta: 'cPVAL Senteon Installed'
 keywords: ['senteon', 'agent', 'installation', 'status', 'endpoint']
 description: 'This document provides details on the custom field used to determine if the Senteon Agent is installed on an endpoint. It includes associated content, custom field names, types, and expected output values for the agent status.'
 tags: ['installation', 'software']
@@ -15,7 +15,7 @@ This custom field is used to determine if the Senteon Agent is installed on the 
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](<../solutions/Senteon Agent.md>)
+[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
 
 ## Details
 

@@ -15,9 +15,8 @@ This document collects information about locked-out user accounts (both domain a
 
 ## Dependencies
 
-- [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>)
-- [User Management - Account Lockout Audit](<./User Management - Account Lockout Audit.md>)
-- [User Management - Account Lock Detail](<./User Management - Account Lock Detail.md>)
+- [Account LockOut Audit](<../../cwa/dataviews/Account LockOut Audit.md>)
+- [User Management - Account Lockout Audit](<../../cwa/Scripts/User Management - Account Lockout Audit.md>)
 
 ## Tables
 
@@ -33,25 +32,4 @@ This document collects information about locked-out user accounts (both domain a
 | Account Lock Date  | DATETIME | Account lock date                 |
 | Last Logon         | DATETIME | Account last login date           |
 | Script Run Time    | DATETIME | Script last execution date        |
-
-## SQL
-
-```sql
-CREATE TABLE IF NOT EXISTS `plugin_proval_account_lock` (
-  `computerid` int(11) NOT NULL,
-  `UserName` varchar(50) NOT NULL,
-  `LocalUser` tinyint(1) NOT NULL,
-  `LocalAdmin` tinyint(1) NOT NULL,
-  `LastLogon` datetime NOT NULL,
-  `password` tinyint(1) NOT NULL,
-  `Account Lock Date` datetime NOT NULL,
-  `Script Run Time` datetime DEFAULT NULL,
-  PRIMARY KEY (
-    `computerid`, `UserName`, `Account Lock Date`
-  ),
-  CONSTRAINT `plugin_proval_account_lock_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE = InnoDB DEFAULT CHARSET = utf8
-```
-
-
 

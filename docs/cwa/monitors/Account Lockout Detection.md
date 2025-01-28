@@ -23,8 +23,7 @@ This monitor detects account lockouts.
 
 ## Dependencies
 
-- [User Management - Account Lockout Audit](<../../unsorted/User Management - Account Lockout Audit.md>)  
-- [User Management - Account Lock Detail](<../../unsorted/User Management - Account Lock Detail.md>)  
+- [User Management - Account Lockout Audit](<../../cwa/Scripts/User Management - Account Lockout Audit.md>)
 
 ## Target
 

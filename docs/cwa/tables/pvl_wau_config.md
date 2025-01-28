@@ -1,7 +1,7 @@
 ---
 id: 'be117f3c-0af2-4edb-8fcc-06da1a4db062'
-title: 'SWM - Software Update - Custom Table - pvl_wau_config'
-title_meta: 'SWM - Software Update - Custom Table - pvl_wau_config'
+title: 'pvl_wau_config'
+title_meta: 'pvl_wau_config'
 keywords: ['configuration', 'whitelist', 'blacklist', 'notification', 'updateinterval', 'updatetime', 'windows']
 description: 'This document outlines the purpose and structure of the custom table used for storing the configuration settings related to the Winget Auto Update feature. It details the dependencies, the table structure, and the significance of each column in managing the auto-update settings for client computers.'
 tags: ['windows']
@@ -11,7 +11,7 @@ unlisted: false
 
 ## Purpose
 
-This document stores the current configuration set for the computer from the client-level EDFs defined in the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script document. The data stored in this custom table is used by the [Execute Script - Configure Winget Auto Update](<../cwa/monitors/Execute Script - Configure Winget Auto Update.md>) internal monitor to detect the computers after making any changes to the associated EDFs.
+This document stores the current configuration set for the computer from the client-level EDFs defined in the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) script document. The data stored in this custom table is used by the [Execute Script - Configure Winget Auto Update](<../../cwa/monitors/Execute Script - Configure Winget Auto Update.md>) internal monitor to detect the computers after making any changes to the associated EDFs.
 
 ## Dependencies
 
