@@ -29,10 +29,10 @@ If the XML has already been preconfigured and needs to be deployed, the Comstore
 
 In this circumstance, use the following modified component: **Microsoft Office 365 (Current) [WIN] [PVAL]** and replace the XML file within the component with your XML.
 
-![Image](../../static/img/SWM---Software-Install---Component---Microsoft-Office-365/image_1.png)
+![Image](../../../static/img/SWM---Software-Install---Component---Microsoft-Office-365/image_1.png)
 
 Once the file has been replaced, save the component and export it.  
-![Image](../../static/img/SWM---Software-Install---Component---Microsoft-Office-365/image_2.png)
+![Image](../../../static/img/SWM---Software-Install---Component---Microsoft-Office-365/image_2.png)
 
 # Example Usage
 
@@ -78,6 +78,3 @@ Location of output for log, result, and error files.
 ```
 StdERR / StdOut
 ```
-
-
-
