@@ -5,7 +5,7 @@ title_meta: 'CW Control Hosted Access Agent Install'
 keywords: ['install', 'cw', 'control', 'agent', 'edf', 'client', 'msi']
 description: 'This document provides a detailed guide on using client level EDFs to download and install a ConnectWise Control agent on a system. It includes sample runs, dependencies, variables, and the process involved in the installation along with logging output.'
 tags: ['connectwise', 'installation']
-draft: true
+draft: false
 unlisted: false
 ---
 

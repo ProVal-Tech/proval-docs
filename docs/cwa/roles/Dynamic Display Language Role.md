@@ -5,7 +5,7 @@ title_meta: 'Dynamic Display Language Role'
 keywords: ['locale', 'system', 'windows', 'program', 'output']
 description: 'This document explains how to detect the system locale in Windows environments using a detection string. It highlights the importance of understanding locale settings for applications that depend on system outputs, particularly in scenarios where date formats and language settings vary by region.'
 tags: ['performance', 'software', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

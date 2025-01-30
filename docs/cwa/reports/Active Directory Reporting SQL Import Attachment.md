@@ -5,7 +5,7 @@ title_meta: 'Active Directory Reporting SQL Import Attachment'
 keywords: ['import', 'ad', 'reports', 'sql', 'active', 'directory']
 description: 'This document provides a step-by-step guide to importing the All AD Reports SQL file into your Automate environment for enhanced Active Directory reporting. Follow the instructions carefully to ensure a successful import.'
 tags: ['active-directory', 'report', 'setup', 'sql']
-draft: true
+draft: false
 unlisted: false
 ---
 

@@ -5,7 +5,7 @@ title_meta: 'Windows Update History'
 keywords: ['windows', 'update', 'history', 'rmm', 'patch', 'audit']
 description: 'This document provides a comprehensive overview of Windows Update history for agents, detailing the various columns of information such as client name, operating system, patch details, and installation status. It also lists dependencies for effective auditing and management of Windows updates.'
 tags: ['performance', 'report', 'security', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

@@ -5,7 +5,7 @@ title_meta: 'Disable Virtualization based security'
 keywords: ['registry', 'windows', 'defender', 'credential', 'guard', 'reboot']
 description: 'This document provides a script to disable Windows Defender Credential Guard by modifying the registry settings as outlined in a referenced article. It includes a sample run, dependencies, and variable descriptions, ensuring a comprehensive understanding of the script operation and its output.'
 tags: ['reboot', 'security', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

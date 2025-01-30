@@ -5,7 +5,7 @@ title_meta: 'EPM - Windows Configuration - Component - Windows Enterprise Upgrad
 keywords: ['windows', 'enterprise', 'upgrade', 'kms', 'component']
 description: 'This document outlines the steps to update the Windows edition for Windows 10/11 workstations to Enterprise. It includes dependencies on KMS host setup, implementation details for exporting and importing components in Datto RMM, and expected output upon successful execution.'
 tags: ['installation', 'software', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

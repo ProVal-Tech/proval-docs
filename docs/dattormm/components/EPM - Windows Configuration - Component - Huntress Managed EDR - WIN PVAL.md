@@ -5,7 +5,7 @@ title_meta: 'EPM - Windows Configuration - Component - Huntress Managed EDR - WI
 keywords: ['huntress', 'edr', 'datto', 'component', 'management']
 description: 'This document outlines the management of the Huntress EDR agent, detailing installation, uninstallation, repair, and reinstallation processes within the Datto RMM environment. It includes necessary dependencies, implementation steps, usage instructions, and expected output for successful job execution.'
 tags: ['datto', 'installation', 'uninstallation']
-draft: true
+draft: false
 unlisted: false
 ---
 

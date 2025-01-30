@@ -5,7 +5,7 @@ title_meta: 'Monthly Computer, Domain User, Software Addition Audit'
 keywords: ['audit', 'computers', 'software', 'domain', 'users', 'client', 'environment']
 description: 'This document provides a comprehensive audit summary of newly added computers, software installations, and domain user additions within the client environment for the last month. It includes detailed information about the client and agent status, as well as specific counts and dates for each category.'
 tags: ['installation', 'software', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

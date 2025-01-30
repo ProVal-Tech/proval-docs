@@ -5,7 +5,7 @@ title_meta: 'VHDx Detail - HyperV'
 keywords: ['hyper-v', 'vhdx', 'audit', 'disk', 'information']
 description: 'This document provides an overview of a script designed to collect and store information about all VHDX type disks on a Hyper-V server. It details the script process, variables, and output, making it a useful resource for administrators managing Hyper-V environments.'
 tags: ['disk', 'hyper-v']
-draft: true
+draft: false
 unlisted: false
 ---
 

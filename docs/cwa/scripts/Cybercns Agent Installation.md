@@ -5,7 +5,7 @@ title_meta: 'Cybercns Agent Installation'
 keywords: ['cybercns', 'agent', 'installation', 'client', 'edf']
 description: 'This document provides a comprehensive guide on installing the CyberCNS agent on a computer, detailing the requirements, variables, global parameters, and the process involved in the installation.'
 tags: ['installation', 'software']
-draft: true
+draft: false
 unlisted: false
 ---
 

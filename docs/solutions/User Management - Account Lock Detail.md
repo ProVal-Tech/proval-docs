@@ -5,7 +5,7 @@ title_meta: 'User Management - Account Lock Detail'
 keywords: ['audit', 'lockout', 'user', 'account', 'monitor']
 description: 'This document outlines the user lockout account audit process, detailing associated content, implementation steps, and best practices for monitoring account lockouts in Active Directory environments.'
 tags: ['active-directory', 'report', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

@@ -5,7 +5,7 @@ title_meta: 'Patching - Approved Recent Updates Audit'
 keywords: ['patches', 'updates', 'computers', 'review', 'status']
 description: 'This document provides a detailed overview of the dataview that displays the latest approved patches along with their release dates. It outlines the criteria for filtering patches, the columns included in the dataview, and the SQL representation for querying the relevant data. It highlights the importance of reviewing computers that are overdue for updates or have encountered failed patch installations.'
 tags: ['database', 'report', 'update']
-draft: true
+draft: false
 unlisted: false
 ---
 

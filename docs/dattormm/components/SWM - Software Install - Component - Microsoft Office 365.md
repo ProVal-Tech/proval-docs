@@ -5,7 +5,7 @@ title_meta: 'SWM - Software Install - Component - Microsoft Office 365'
 keywords: ['install', 'update', 'microsoft', 'office', 'configuration', 'xml', 'drrm', 'deployment']
 description: 'This document provides a comprehensive guide on installing or updating Microsoft Office 365 using a preconfigured DRRMConfig.xml file. It outlines the requirements, process, and implementation steps necessary to ensure a successful installation on Windows environments.'
 tags: ['software', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

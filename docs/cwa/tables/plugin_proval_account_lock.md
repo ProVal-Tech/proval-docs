@@ -5,7 +5,7 @@ title_meta: 'plugin_proval_account_lock'
 keywords: ['lockout', 'audit', 'user', 'account', 'management']
 description: 'This document outlines the process of auditing locked-out user accounts, detailing the necessary dependencies, table structures, and SQL commands required to manage and retrieve information on both domain and local user accounts that have been locked out.'
 tags: ['database', 'report', 'security', 'setup']
-draft: true
+draft: false
 unlisted: false
 ---
 

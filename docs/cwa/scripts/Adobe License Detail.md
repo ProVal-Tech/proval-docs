@@ -5,7 +5,7 @@ title_meta: 'Adobe License Detail'
 keywords: ['adobe', 'license', 'edf', 'windows', 'sqlite3']
 description: 'This document outlines a script designed to collect the Adobe license key from Windows agents and store it in a custom EDF named "Adobe License Key". It details the dependencies, variables, process, and expected output, including logs and dataviews.'
 tags: ['adobe', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

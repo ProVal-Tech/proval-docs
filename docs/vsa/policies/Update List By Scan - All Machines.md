@@ -5,7 +5,7 @@ title_meta: 'Update List By Scan - All Machines'
 keywords: ['policy', 'update', 'scan', 'machines', 'monitor']
 description: 'This document outlines the policy for running the update list by scan on all machines. It includes details about the policy name, description, applied view, assigned organizations, and policy object settings.'
 tags: ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

@@ -5,7 +5,7 @@ title_meta: 'Dynamic Input Language Role'
 keywords: ['windows', 'input', 'language', 'settings', 'keyboard', 'locale']
 description: 'This document explains how to determine the input language settings on Windows systems, highlighting the differences between system locale and input locale, and how they affect keyboard layouts for multilingual users.'
 tags: ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

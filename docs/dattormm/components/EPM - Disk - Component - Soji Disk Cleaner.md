@@ -5,7 +5,7 @@ title_meta: 'EPM - Disk - Component - Soji Disk Cleaner'
 keywords: ['disk', 'cleaner', 'soji', 'endpoint', 'rmm']
 description: 'This document outlines the implementation process for running the Soji Disk Cleaner on selected endpoints within Datto RMM. It includes dependencies, implementation steps, and output details to ensure successful execution.'
 tags: ['cleanup', 'datto', 'disk-cleanup', 'software']
-draft: true
+draft: false
 unlisted: false
 ---
 

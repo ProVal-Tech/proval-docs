@@ -5,7 +5,7 @@ title_meta: 'cPVAL Senteon Installed'
 keywords: ['senteon', 'agent', 'installation', 'status', 'endpoint']
 description: 'This document provides details on the custom field used to determine if the Senteon Agent is installed on an endpoint. It includes associated content, custom field names, types, and expected output values for the agent status.'
 tags: ['installation', 'software']
-draft: true
+draft: false
 unlisted: false
 ---
 

@@ -5,7 +5,7 @@ title_meta: 'Bitlocker Status - Retired Computers'
 keywords: ['bitlocker', 'audit', 'retired', 'computers', 'encryption', 'tpm', 'active-directory']
 description: 'This document provides a comprehensive overview of the Bitlocker information displayed in the dataview for all retired computers that have executed the Bitlocker Audit script. It details the Bitlocker status of machine drives, key protectors, TPM status, and backup status in Active Directory, along with the necessary dependencies and column explanations.'
 tags: ['active-directory', 'backup', 'encryption', 'security', 'tpm', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

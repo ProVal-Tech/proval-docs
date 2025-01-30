@@ -5,7 +5,7 @@ title_meta: 'cPVAL - Workstations Not Rebooted 60+ Days'
 keywords: ['workstations', 'reboot', 'filter', 'policy']
 description: 'This document provides a summary of a view that displays workstations that have not been rebooted in the last 60 days. It includes details on dependencies and the specific filters applied to this view, ensuring users can effectively monitor workstation status.'
 tags: ['performance', 'report', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

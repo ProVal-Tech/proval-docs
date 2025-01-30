@@ -5,7 +5,7 @@ title_meta: 'Generic Registry Editor'
 keywords: ['registry', 'keys', 'modify', 'create', 'windows']
 description: 'This document provides a detailed overview of a script that enables users to create or modify multiple registry keys, including their names, values, and types. It includes sample runs, user parameters, output details, and frequently asked questions regarding registry properties.'
 tags: ['security', 'setup', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

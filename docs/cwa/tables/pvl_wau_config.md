@@ -5,7 +5,7 @@ title_meta: 'pvl_wau_config'
 keywords: ['configuration', 'whitelist', 'blacklist', 'notification', 'updateinterval', 'updatetime', 'windows']
 description: 'This document outlines the purpose and structure of the custom table used for storing the configuration settings related to the Winget Auto Update feature. It details the dependencies, the table structure, and the significance of each column in managing the auto-update settings for client computers.'
 tags: ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

@@ -5,7 +5,7 @@ title_meta: 'EPM - Windows Configuration - Component - Windows Evaluation Licens
 keywords: ['windows', 'license', 'rearm', 'evaluation', 'component']
 description: 'This document outlines the process for checking if a machine is running an evaluation copy of Windows, verifying available re-arms, and executing a rearm if necessary. It includes implementation steps for exporting and importing the component in Datto RMM, usage instructions, and expected output.'
 tags: ['setup', 'software', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
