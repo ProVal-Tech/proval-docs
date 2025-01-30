@@ -5,7 +5,7 @@ title_meta: Script Name
 keywords: []
 description: A description of the script.
 tags: []
-draft: false
+draft: true
 unlisted: false
 ---
 
