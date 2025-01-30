@@ -17,9 +17,9 @@ To provide clients with a professional-looking Active Directory report that they
 
 | Content                                                                                                           | Type     | Function                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------|
-| [Report - Active Directory User Assessment](./Active Directory User Assessment.md)                       | Report   | Displays an overall health view of the client's Active Directory along with a full user report                                     |
-| [Report - Active Directory User Groups - Detail](./Active Directory User Groups - Detail.md)                  | Report   | Displays a complete user list with all groups that each user is in, along with an overall view of which groups are used the most. |
-| [Report - Computers in Active Directory - No Agent](./Computers in Active Directory - No Agent.md)              | Report   | Displays a list of all computers that are in Active Directory but not in Automate. Can be used to clean up client Active Directories. |
+| [Report - Active Directory User Assessment](<./Active Directory User Assessment.md>)                       | Report   | Displays an overall health view of the client's Active Directory along with a full user report                                     |
+| [Report - Active Directory User Groups - Detail](<./Active Directory User Groups - Detail.md>)                  | Report   | Displays a complete user list with all groups that each user is in, along with an overall view of which groups are used the most. |
+| [Report - Computers in Active Directory - No Agent](<./Computers in Active Directory - No Agent.md>)              | Report   | Displays a list of all computers that are in Active Directory but not in Automate. Can be used to clean up client Active Directories. |
 | SubPageHeaderLandscape                                                                                             | Subreport | Used as the template for the page header on these reports.                                                                        |
 
 ## Associated Content
@@ -29,31 +29,31 @@ To provide clients with a professional-looking Active Directory report that they
 | Content                                                                                                           | Type     | Function                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------|
 | [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)     | Script   | This script utilizes the agnostic script [EPM - Accounts - Agnostic - Script - Test-Credentials](https://proval.itglue.com/DOC-5078775-9590057) to test the hashed credentials in AD against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`. |
-| [AD - Create Views/Table/Schedule for AD Reporting Solution](../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md) | Script   | This creates all of the necessary items in the database to ensure the [Active Directory Reporting Solution](./Active Directory Reporting Solution.md) functions correctly. |
+| [AD - Create Views/Table/Schedule for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>) | Script   | This creates all of the necessary items in the database to ensure the [Active Directory Reporting Solution](./Active Directory Reporting Solution.md) functions correctly. |
 
 ### Additional Content
 
 | Content                                                                                                           | Type             | Function                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [Active Directory Reporting SQL Import Attachment](../../unsorted/Active Directory Reporting SQL Import Attachment.md)               | Document         | Please download the Import_All_AD_Reports.sql attached to this document.                                                       |
-| [RSM - Active Directory - Agnostic - Test-WeakCredentials](../../powershell/Test-WeakCredentials.md)       | Agnostic Content  | Agnostic method of gathering information on users with potentially compromised passwords by querying currently available comprehensive lists of known password hashes. It is used in the Automate script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761). |
+| [Active Directory Reporting SQL Import Attachment](<../../unsorted/Active Directory Reporting SQL Import Attachment.md>)               | Document         | Please download the Import_All_AD_Reports.sql attached to this document.                                                       |
+| [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)       | Agnostic Content  | Agnostic method of gathering information on users with potentially compromised passwords by querying currently available comprehensive lists of known password hashes. It is used in the Automate script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761). |
 
 ## Dependencies
 
 These reports are dependent on the following items:
 
-1. [AD - Create Views/Table/Schedule for AD Reporting Solution](../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md)
+1. [AD - Create Views/Table/Schedule for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
 2. [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)
 3. The Active Directory Plugin must be installed and configured for these reports to function.
 
 ## Implementation
 
 1. Import the script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) (This needs to be imported before creating the Table/Views/Schedule).
-2. Import the script [AD - Create Views/Table/Schedule for AD Reporting Solution](../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md).
+2. Import the script [AD - Create Views/Table/Schedule for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>).
    - Run the script once to create the framework needed for the solution. **Delete the script afterward.**
 3. Download the attached SQL file named 'Import_All_AD_Reports.sql'.  
    Refer to the document for the attachment:  
-   [Active Directory Reporting SQL Import Attachment](../../unsorted/Active Directory Reporting SQL Import Attachment.md)  
+   [Active Directory Reporting SQL Import Attachment](<../../unsorted/Active Directory Reporting SQL Import Attachment.md>)  
 4. Import the file using System → General → Import → SQL File (The SQL file is too large for a remote monitor).
 
 ## FAQ

@@ -15,9 +15,8 @@ This document provides detailed information about account locks for both local a
 
 ## Dependencies
 
-- [User Management - Account Lockout Audit](<../../unsorted/User Management - Account Lockout Audit.md>)
-- [plugin_proval_account_lock](<../../unsorted/plugin_proval_account_lock.md>)
-- [User Management - Account Lock Detail](<../../unsorted/User Management - Account Lock Detail.md>)
+- [User Management - Account Lockout Audit](<../../cwa/Scripts/User Management - Account Lockout Audit.md>)
+- [plugin_proval_account_lock](<../../cwa/tables/plugin_proval_account_lock.md>)
 
 ## Columns
 
@@ -35,32 +34,3 @@ This document provides detailed information about account locks for both local a
 | Password           | Indicates whether the locked user’s password is set    |
 | Account Lock Date  | Date and time when the account was locked              |
 | Script Run Time    | Script run time indicating when the account lock was detected |
-
-## SQL Representation
-
-```sql
-SELECT 
-  c.clientid, 
-  c.locationid, 
-  c.computerid, 
-  cl.`Name` as `Client`, 
-  l.`Name` as `Location`, 
-  c.`Name` as `Computer`, 
-  c.`OS` as `Operating System`, 
-  c.`LastContact`, 
-  p.UserName as `User Name`, 
-  IF(p.LocalUser = 1, 'True', 'False') as `Local User`, 
-  IF(p.LocalAdmin = 1, 'True', 'False') as `Local Admin`, 
-  p.LastLogon as `Last Logon of User`, 
-  IF(p.Password = 1, 'Set', 'Not Set') as `Password`, 
-  p.`Account Lock Date`, 
-  p.`Script Run Time` as `Script Run Time` 
-FROM 
-  computers c 
-  JOIN clients cl ON cl.`ClientID` = c.`ClientID` 
-  JOIN locations l ON l.`LocationID` = c.`LocationID` 
-  JOIN plugin_proval_account_lock p ON p.computerid = c.`ComputerID`
-```
-
-
-

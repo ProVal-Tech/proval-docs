@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal. CW RMM implementation of the agnostic script [Remove SentinelOne](<../../unsorted/EPM - Software Uninstall - Agnostic - Remove SentinelOne.md>).
+This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal. CW RMM implementation of the agnostic script [Remove-SentinelOne](<../../powershell/Remove-SentinelOne.md>).
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This script identifies the installed version of the SentinelOne agent and attemp
 
 ## Dependencies
 
-[EPM - Software Uninstall - Agnostic - Remove SentinelOne](<../../unsorted/EPM - Software Uninstall - Agnostic - Remove SentinelOne.md>)
+[Remove-SentinelOne](<../../powershell/Remove-SentinelOne.md>)
 
 ## User Parameters
 

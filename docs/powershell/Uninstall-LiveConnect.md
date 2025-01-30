@@ -30,6 +30,3 @@ The script generates the following output files to log the uninstallation proces
 - `.\\Uninstall-LiveConnect-log.txt`: Contains detailed logs of the uninstallation process.
 - `.\\Uninstall-LiveConnect-data.txt`: Contains data related to the uninstallation process.
 - `.\\Uninstall-LiveConnect-error.txt`: Contains any error messages encountered during the uninstallation process.
-
-
-

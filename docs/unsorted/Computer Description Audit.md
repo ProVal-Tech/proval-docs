@@ -28,31 +28,3 @@ This dataview will show the computer description message set on the agent.
 | Operating System     | Operating system of an agent.                                    |
 | Computer Description  | Computer description set information message.                     |
 | Script Execution Date | When the last script ran on the agent to fetch the computer description message read check. |
-
-## SQL Representation
-
-```sql
-SELECT c.computerid,
-       c.clientid,
-       c.locationid,
-       cl.name as `Client Name`, 
-       l.name as `Location Name`, 
-       c.name as `Computer Name`, 
-       c.os as `Operating System`,
-       c.LastContact,
-       TRIM(SUBSTRING_INDEX(ss.value, '--', 1)) as `Computer Description`,
-       CASE 
-           WHEN TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(ss.value, '--', 2), '--', -1)) = ' ' 
-           THEN 'Not Detected' 
-           ELSE TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(ss.value, '--', 2), '--', -1)) 
-       END as `Script Execution Date`
-FROM (((computers c 
-LEFT JOIN scriptstate ss ON c.computerid = ss.computerid) 
-LEFT JOIN clients cl ON cl.clientid = c.clientid) 
-LEFT JOIN locations l ON l.locationid = c.locationid)
-WHERE ss.variable = 'ComputerDescriptionReport'
-```
-
-
-
-

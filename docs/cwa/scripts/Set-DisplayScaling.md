@@ -19,7 +19,7 @@ This script sets custom display scaling on existing as well as new users for Win
 
 ## Dependencies
 
-[Agnostic - Set-DisplayScaling](<../../unsorted/Agnostic - Set-DisplayScaling.md>)
+[Set-DisplayScaling](<../../powershell/Set-DisplayScaling.md>)
 
 ## User Parameters
 

@@ -19,7 +19,7 @@ This script is designed to install the SnapAgent on the machine.
 
 ## Dependencies
 
-[Agnostic - Install-SnapAgent](<../../unsorted/Agnostic - Install-SnapAgent.md>)  
+[Install-SnapAgent](<../../powershell/Install-SnapAgent.md>)  
 
 EDFs
 
