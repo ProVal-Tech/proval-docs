@@ -1,41 +1,26 @@
-# Website
+# ProVal Documentation Platform
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+A repo for storing all documentation for ProVal Tech content.
 
-### Installation
+## Installation
 
+Deploy with the following command:
 ```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
+cmd /C 'set "GIT_USER=myusername" && yarn deploy'
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Usage
 
-### Build
+N/A
 
-```
-$ yarn build
-```
+## Contribution
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Currently, only ProVal Tech members are allowed to contribute. However, issues are open for everyone.
 
-### Deployment
+## License
 
-Using SSH:
+All rights reserved.
 
-```
-$ USE_SSH=true yarn deploy
-```
+## Acknowledgments
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Thanks to Docusaurus for the excellent platform.
