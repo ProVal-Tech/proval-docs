@@ -1,0 +1,515 @@
+accounts:
+  label: Accounts
+  description: Documents dealing with user or system account management and related topics
+
+active-directory:
+  label: Active Directory
+  description: Documents related to Active Directory services and management
+
+adobe:
+  label: Adobe
+  description: Documents regarding Adobe software and related services
+
+alerting:
+  label: Alerting
+  description: Documents related to creating or managing alert systems and notifications
+
+amd:
+  label: AMD
+  description: Documents covering AMD products, including processors and graphics cards
+
+antivirus:
+  label: Antivirus
+  description: Documents about antivirus software and practices for malware protection
+
+api:
+  label: API
+  description: Documents related to Application Programming Interfaces and their usage
+
+application:
+  label: Application
+  description: Documents regarding software applications and their deployment
+
+auditing:
+  label: Auditing
+  description: Documents on auditing practices and tools for monitoring systems
+
+autopilot:
+  label: Autopilot
+  description: Documents related to Windows Autopilot configuration and management
+
+autotask:
+  label: Autotask
+  description: Documents on Autotask software for IT management and task automation
+
+azure:
+  label: Azure
+  description: Documents about Microsoft Azure services and cloud solutions
+
+backup:
+  label: Backup
+  description: Documents detailing backup solutions and data protection strategies
+
+battery:
+  label: Battery
+  description: Documents focused on battery management and performance optimization
+
+bios:
+  label: BIOS
+  description: Documents about BIOS configurations and updates
+
+bitlocker:
+  label: BitLocker
+  description: Documents discussing BitLocker drive encryption and configuration
+
+bluescreen:
+  label: Blue Screen
+  description: Documents related to Blue Screen of Death (BSOD) errors and troubleshooting
+
+brave:
+  label: Brave
+  description: Documents covering the Brave web browser and its features
+
+browsers:
+  label: Browsers
+  description: Documents related to internet browser applications and management
+
+caching:
+  label: Caching
+  description: Documents detailing caching solutions and strategies for optimization
+
+certificates:
+  label: Certificates
+  description: Documents on digital certificates and their implementation and management
+
+chocolatey:
+  label: Chocolatey
+  description: Documents about Chocolatey software management automation
+
+chrome:
+  label: Chrome
+  description: Documents related to Google Chrome browser and its functionalities
+
+cim:
+  label: CIM
+  description: Documents discussing Common Information Model (CIM) and its applications
+
+cisco:
+  label: Cisco
+  description: Documents covering Cisco networking equipment and configurations
+
+cleanup:
+  label: Cleanup
+  description: Documents on system cleanup processes and tools to free up resources
+
+cloud:
+  label: Cloud
+  description: Documents focusing on cloud computing services and solutions
+
+cluster:
+  label: Cluster
+  description: Documents discussing cluster computing and clustered systems management
+
+compliance:
+  label: Compliance
+  description: Documents related to compliance with industry standards and regulations
+
+connectwise:
+  label: ConnectWise
+  description: Documents on ConnectWise platforms for IT service management
+
+cpu:
+  label: CPU
+  description: Documents related to central processing units and their performance
+
+custom-fields:
+  label: Custom Fields
+  description: Documents discussing the use and management of custom fields in applications
+
+custom-table:
+  label: Custom Table
+  description: Documents on building and managing custom tables for data management
+
+cve:
+  label: CVE
+  description: Documents related to Common Vulnerabilities and Exposures (CVE)
+
+cwmanage:
+  label: CW Manage
+  description: Documents discussing ConnectWise Manage for business process management
+
+data-collection:
+  label: Data Collection
+  description: Documents about the methods and tools for collecting data securely
+
+data-theft:
+  label: Data Theft
+  description: Documents discussing data theft and strategies for prevention
+
+database:
+  label: Database
+  description: Documents related to database management systems and operations
+
+datto:
+  label: Datto
+  description: Documents concerning Datto products for IT management and business continuity
+
+dell:
+  label: Dell
+  description: Documents related to Dell hardware and associated technologies
+
+deployment:
+  label: Deployment
+  description: Documents on deploying software and services in various environments
+
+dhcp:
+  label: DHCP
+  description: Documents discussing Dynamic Host Configuration Protocol and its configuration
+
+diagnostic:
+  label: Diagnostic
+  description: Documents focused on diagnosing and troubleshooting system issues
+
+disk:
+  label: Disk
+  description: Documents related to disk management and performance
+
+disk-cleanup:
+  label: Disk Cleanup
+  description: Documents discussing tools and techniques for disk space management
+
+disk-encryption:
+  label: Disk Encryption
+  description: Documents on encrypting disk drives and data protection methods
+
+diskspace:
+  label: Disk Space
+  description: Documents related to managing disk space and optimizing storage usage
+
+dns:
+  label: DNS
+  description: Documents focused on Domain Name System management and configuration
+
+domain:
+  label: Domain
+  description: Documents related to managing domain names and services
+
+dotnet:
+  label: .NET
+  description: Documents concerning .NET development framework and applications
+
+drivers:
+  label: Drivers
+  description: Documents about device drivers and their updates
+
+dynamic-groups:
+  label: Dynamic Groups
+  description: Documents discussing dynamic group creation and management
+
+edge:
+  label: Edge
+  description: Documents related to Microsoft Edge browser and its features
+
+email:
+  label: Email
+  description: Documents about email systems and their management
+
+encryption:
+  label: Encryption
+  description: Documents discussing encryption technologies for data protection
+
+esxi:
+  label: ESXi
+  description: Documents covering VMware ESXi hypervisor and virtualization solutions
+
+eventlogs:
+  label: Event Logs
+  description: Documents on analyzing and managing system event logs
+
+exchange:
+  label: Exchange
+  description: Documents concerning Microsoft Exchange Server and email service
+
+extensions:
+  label: Extensions
+  description: Documents about browser and software extensions and add-ons
+
+firefox:
+  label: Firefox
+  description: Documents related to Mozilla Firefox browser and its configurations
+
+firewall:
+  label: Firewall
+  description: Documents about firewall configuration and security policies
+
+firmware:
+  label: Firmware
+  description: Documents concerning firmware updates and management
+
+ftp:
+  label: FTP
+  description: Documents about File Transfer Protocol and its configurations
+
+gpo:
+  label: GPO
+  description: Documents covering Group Policy Objects management and deployment
+
+hp:
+  label: HP
+  description: Documents related to HP hardware and associated technologies
+
+huntress:
+  label: Huntress
+  description: Documents discussing Huntress security solutions and threat detection
+
+hyper-v:
+  label: Hyper-V
+  description: Documents on Microsoft Hyper-V virtualization and management
+
+iis:
+  label: IIS
+  description: Documents about Internet Information Services (IIS) and web hosting
+
+installation:
+  label: Installation
+  description: Documents on installing software and configuring systems
+
+internet-explorer:
+  label: Internet Explorer
+  description: Documents discussing Internet Explorer browser and its management
+
+isp:
+  label: ISP
+  description: Documents concerning Internet Service Providers and related services
+
+kaseya:
+  label: Kaseya
+  description: Documents discussing Kaseya IT management and automation software
+
+kerberos:
+  label: Kerberos
+  description: Documents related to Kerberos authentication protocol and security
+
+lenovo:
+  label: Lenovo
+  description: Documents about Lenovo hardware and associated technologies
+
+licensing:
+  label: Licensing
+  description: Documents discussing software licensing and compliance issues
+
+linux:
+  label: Linux
+  description: Documents on Linux operating systems and open-source software solutions
+
+logging:
+  label: Logging
+  description: Documents related to log management and analysis for systems
+
+macos:
+  label: macOS
+  description: Documents covering Apple's macOS and its applications
+
+malwarebytes:
+  label: Malwarebytes
+  description: Documents discussing Malwarebytes security solutions and software
+
+memory:
+  label: Memory
+  description: Documents about memory configuration and optimization strategies
+
+microsoft365:
+  label: Microsoft 365
+  description: Documents concerning Microsoft 365 applications and services
+
+mssql:
+  label: MSSQL
+  description: Documents about Microsoft SQL Server and database management
+
+mysql:
+  label: MySQL
+  description: Documents discussing MySQL database management system
+
+n-able:
+  label: N-able
+  description: Documents related to N-able solutions for IT service management
+
+netframework:
+  label: .NET Framework
+  description: Documents concerning the .NET Framework and its development environment
+
+networking:
+  label: Networking
+  description: Documents related to network infrastructure and management practices
+
+ninite:
+  label: Ninite
+  description: Documents about Ninite software for automated application installation
+
+notifications:
+  label: Notifications
+  description: Documents related to notification systems and alert management
+
+office:
+  label: Office
+  description: Documents about Microsoft Office software and functionalities
+
+office365:
+  label: Office 365
+  description: Documents concerning Office 365 applications and cloud services
+
+onedrive:
+  label: OneDrive
+  description: Documents covering Microsoft OneDrive cloud storage and features
+
+optimization:
+  label: Optimization
+  description: Documents discussing optimization techniques for systems and applications
+
+patching:
+  label: Patching
+  description: Documents on software patch management and update installations
+
+performance:
+  label: Performance
+  description: Documents related to enhancing system and application performance
+
+permissions:
+  label: Permissions
+  description: Documents discussing access rights and permission management
+
+print:
+  label: Print
+  description: Documents about print services and printer management
+
+psa:
+  label: PSA
+  description: Documents concerning Professional Services Automation software
+
+raid:
+  label: RAID
+  description: Documents on Redundant Array of Independent Disks (RAID)
+
+reboot:
+  label: Reboot
+  description: Documents related to system reboot processes and their management
+
+recovery:
+  label: Recovery
+  description: Documents on data recovery and system restoration strategies
+
+registry:
+  label: Registry
+  description: Documents concerning system registry management and troubleshooting
+
+report:
+  label: Report
+  description: Documents focused on generating and managing reports
+
+screenconnect:
+  label: ScreenConnect
+  description: Documents about ScreenConnect for remote support and access
+
+secureboot:
+  label: Secure Boot
+  description: Documents related to Secure Boot technology and its configuration
+
+security:
+  label: Security
+  description: Documents discussing security measures and practices for IT systems
+
+setup:
+  label: Setup
+  description: Documents on setting up software and hardware configurations
+
+smb:
+  label: SMB
+  description: Documents concerning Server Message Block (SMB) protocol and file sharing
+
+software:
+  label: Software
+  description: Documents related to software applications and their lifecycle management
+
+sql:
+  label: SQL
+  description: Documents discussing Structured Query Language and database interactions
+
+storage:
+  label: Storage
+  description: Documents focused on storage solutions and memory management
+
+ticketing:
+  label: Ticketing
+  description: Documents related to ticketing systems and IT support management
+
+timezone:
+  label: Timezone
+  description: Documents dealing with time zone settings and synchronization
+
+tls:
+  label: TLS
+  description: Documents about Transport Layer Security protocols and encryption
+
+tpm:
+  label: TPM
+  description: Documents concerning Trusted Platform Module technology and security
+
+uefi:
+  label: UEFI
+  description: Documents on Unified Extensible Firmware Interface configurations
+
+unifi:
+  label: UniFi
+  description: Documents about Ubiquiti UniFi networking products and management
+
+uninstallation:
+  label: Uninstallation
+  description: Documents related to software removal and uninstallation processes
+
+update:
+  label: Update
+  description: Documents discussing software and system updates and their management
+
+usage:
+  label: Usage
+  description: Documents focused on analyzing and reporting resource usage statistics
+
+virtualization:
+  label: Virtualization
+  description: Documents covering virtualization technologies and their applications
+
+vmware:
+  label: VMware
+  description: Documents related to VMware virtualization solutions and software
+
+vpn:
+  label: VPN
+  description: Documents concerning Virtual Private Network configurations and security
+
+vulnerability:
+  label: Vulnerability
+  description: Documents about system vulnerabilities and methods for their mitigation
+
+web-browser:
+  label: Web Browser
+  description: Documents related to web browser software and internet browsing technologies
+
+webex:
+  label: Webex
+  description: Documents discussing Cisco Webex and collaboration tools
+
+webroot:
+  label: Webroot
+  description: Documents on Webroot security products and solutions
+
+windows:
+  label: Windows
+  description: Documents related to Microsoft Windows operating system and its functionalities
+
+wireless:
+  label: Wireless
+  description: Documents concerning wireless networking technologies and management
+
+wmi:
+  label: WMI
+  description: Documents discussing Windows Management Instrumentation and its applications

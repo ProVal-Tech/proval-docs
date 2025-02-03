@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>ProVal Tech Content Documentation (Under Construction 🚧)</ShortName>
-  <Description>Search ProVal Tech Content Documentation (Under Construction 🚧)</Description>
+  <ShortName>ProVal Tech Content Documentation</ShortName>
+  <Description>Search ProVal Tech Content Documentation</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://proval-tech.github.io/proval-docs/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://proval-tech.github.io/proval-docs/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://proval-tech.github.io/proval-docs/opensearch.xml" />
-  <moz:SearchForm>https://proval-tech.github.io/proval-docs/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://content.provaltech.com/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://content.provaltech.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://content.provaltech.com/opensearch.xml" />
+  <moz:SearchForm>https://content.provaltech.com/</moz:SearchForm>
 </OpenSearchDescription>
