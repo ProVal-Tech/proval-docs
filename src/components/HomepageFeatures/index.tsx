@@ -10,32 +10,62 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
+    title: 'Solutions',
+    Svg: require('@site/static/img/proval.svg').default,
+    description: (
+      <>
+        <a href='docs/solutions'>Documentation</a><br />
+        <span>Solutions are collections of scripts and tools that are designed to solve a specific problem or set of problems.</span>
+      </>
+    ),
+  },
+  {
     title: 'PowerShell',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/PowerShell.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <a href='docs/powershell'>Documentation</a><br />
+        <span>PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.</span>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'ConnectWise Automate',
+    Svg: require('@site/static/img/cwa.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <a href='docs/cwa'>Documentation</a><br />
+        <span>ConnectWise Automate is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'ConnectWise RMM',
+    Svg: require('@site/static/img/connectwise_logo_e.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <a href='docs/cwrmm'>Documentation</a><br />
+        <span>ConnectWise RMM is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
+      </>
+    ),
+  },
+  {
+    title: 'Datto RMM',
+    Svg: require('@site/static/img/datto.svg').default,
+    description: (
+      <>
+        <a href='docs/dattormm'>Documentation</a><br />
+        <span>Datto RMM is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
+      </>
+    ),
+  },
+  {
+    title: 'Kaseya VSA',
+    Svg: require('@site/static/img/kaseya.svg').default,
+    description: (
+      <>
+        <a href='docs/vsa'>Documentation</a><br />
+        <span>Kaseya VSA is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
       </>
     ),
   },
@@ -58,13 +88,13 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
-      {/* <div className="container">
+      <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }
