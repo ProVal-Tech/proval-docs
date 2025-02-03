@@ -5,12 +5,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ProVal Tech Content Documentation (Under Construction 🚧)',
+  title: 'ProVal Tech Content Documentation',
   //tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://proval-tech.github.io',
+  url: 'https://content.provaltech.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/proval-docs/',
@@ -53,7 +53,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/proval-social-card.png',
     algolia: {
       // The application ID provided by Algolia
       appId: 'R5AN5V8GUY',
