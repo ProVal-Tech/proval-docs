@@ -29,12 +29,12 @@ INSERT INTO `sensorchecks`
 SELECT
 '' as `SensID`,
 'Windows Machines Excluding Virtual' as `Name`,
-'SSELECT //r//n   computers.computerid as `Computer Id`,//r//n   computers.name as `Computer Name`,//r//n   clients.name as `Client Name`,//r//n   computers.domain as `Computer Domain`,//r//n   computers.username as `Computer User`,//r//n   IF((Computers.flags & 2048) &lt;&gt; 0, 1, 0) as `Computer.Hardware.IsVirtual`,//r//n   IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'windows//')&gt;0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'darwin//') &gt;0, 2, 3)) as `Computer.OS.Type`//r//nFROM Computers //r//nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)//r//nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)//r//nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)//r//n WHERE //r//n((((IF((Computers.flags & 2048) &lt;&gt; 0, 1, 0)=0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'windows//')&gt;0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'darwin//') &gt;0, 2, 3)) = //'1//'))))//r//n' as `SQL`,
+'SSELECT //r//n   computers.computerid as `Computer Id`,//r//n   computers.name as `Computer Name`,//r//n   clients.name as `Client Name`,//r//n   computers.domain as `Computer Domain`,//r//n   computers.username as `Computer User`,//r//n   IF((Computers.flags & 2048) <> 0, 1, 0) as `Computer.Hardware.IsVirtual`,//r//n   IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'windows//')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'darwin//') >0, 2, 3)) as `Computer.OS.Type`//r//nFROM Computers //r//nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)//r//nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)//r//nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)//r//n WHERE //r//n((((IF((Computers.flags & 2048) <> 0, 1, 0)=0) AND (IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'windows//')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), //'darwin//') >0, 2, 3)) = //'1//'))))//r//n' as `SQL`,
 '4' as `QueryType`,
 'Select||=||=||=|^Select|||||||^' as `ListData`,
 '3' as `FolderID`,
 'c4008496-11c3-497b-8b4d-2d53c38c9d2e' as `GUID`,
-'&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Hardware.IsVirtual&lt;/lon&gt;&lt;lok&gt;Computer.Hardware.IsVirtual&lt;/lok&gt;&lt;lmo&gt;IsFalse&lt;/lmo&gt;&lt;dv&gt;NULL&lt;/dv&gt;&lt;dk&gt;NULL&lt;/dk&gt;&lt;/asn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.OS.Type&lt;/lon&gt;&lt;lok&gt;Computer.OS.Type&lt;/lok&gt;&lt;lmo&gt;Equals&lt;/lmo&gt;&lt;dv&gt;Windows&lt;/dv&gt;&lt;dk&gt;1&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;' as `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Hardware.IsVirtual</lon><lok>Computer.Hardware.IsVirtual</lok><lmo>IsFalse</lmo><dv>NULL</dv><dk>NULL</dk></asn><asn><st>ComparisonNode</st><lon>Computer.OS.Type</lon><lok>Computer.OS.Type</lok><lmo>Equals</lmo><dv>Windows</dv><dk>1</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
@@ -206,6 +206,7 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ### 8.
 Set the appropriate alert template.
+
 
 
 
