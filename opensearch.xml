@@ -4,8 +4,8 @@
   <ShortName>ProVal Tech Content Documentation</ShortName>
   <Description>Search ProVal Tech Content Documentation</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://content.provaltech.com/proval-docs/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://content.provaltech.com/proval-docs/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://content.provaltech.com/proval-docs/opensearch.xml" />
-  <moz:SearchForm>https://content.provaltech.com/proval-docs/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://content.provaltech.com/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://content.provaltech.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://content.provaltech.com/opensearch.xml" />
+  <moz:SearchForm>https://content.provaltech.com/</moz:SearchForm>
 </OpenSearchDescription>
