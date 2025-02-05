@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of this script is to retire the computers that are offline in Automate for more than the days defined in the system property `AutoRetireThreshold_Days`.
+The purpose of this script is to retire the computers that are offline in Automate for more than the days defined in the system property `AutoRetireThreshold_Days`. It also ends Screenconnect session of the agent if needed and required properties are opted.
 
 ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_1.png)
 
@@ -44,7 +44,7 @@ The following EDFs can be used to exclude a client/location/computer from retire
 In order to create the system properties and EDFs utilized in the script, the 'Set_Environment' User Parameter should be set to 1 for its very first execution. The global property 'AutoRetireThreshold_Days' is set when the value in 'Set_Global_Threshold_Days' is specified. If left empty, the global property will default to '90'.
 
 1. Open the script found under ProVal/Automate/Automate - Offline Agents - Auto-Retire and hit Debug Script.
-   ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_7.png)
+   ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_10.png)
 
 2. Select any client and ensure that the 'Set_Environment' variable is set to 1. You can set the global threshold to whatever the partner requests. The default is 90 days if not specified.
    ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_8.png)
@@ -64,7 +64,9 @@ It is suggested to schedule the script to run at regular intervals, preferably w
 
 ## Dependencies
 
+[CWM - Automate - RMM+ Plugin Configuration](<../../Scripts/CWM - Automate - RMM+ Plugin Configuration.md>)
 [CWM - Automate - Solution - Offline/Broken Agents](<../../solutions/OfflineBroken Agents.md>)
+
 
 **Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair](<./Automate Agent - Auto Repair.md>) script are excluded from retirement.**
 
@@ -86,6 +88,9 @@ It is suggested to schedule the script to run at regular intervals, preferably w
 | Name                      | Example | Required | Description                                                                                                                             |
 |---------------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | AutoRetireThreshold_Days  | 90      | True     | Threshold days to retire the offline computers. The default is 90. It can either be set during the first execution of the script or manually from the dashboard. |
+| AutoRetire_Workstations_Only | 1      | False     | Set it to `1` to retire offline workstations only. Setting it to `0` or leaving it blank will include servers. |
+| AutoRetire_End_SC_Session  | 1      | False     | Set to `1` to end the ScreenConnect session when retiring the Automate agent. Set to `0` or leave blank to skip ending the session |
+| AutoRetire_Proceed_on_EndSessionFailure | 1      | False     | Set to `1` to continue Automate agent removal if ScreenConnect session fails to end. Set to `0` or leave blank to stop removal |
 
 ### Extra Data Fields
 
