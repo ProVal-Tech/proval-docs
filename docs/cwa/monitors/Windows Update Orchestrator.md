@@ -31,7 +31,7 @@ SELECT
     'Select||=||=||=|^Select|||||||^' AS `ListData`,
     '0' AS `FolderID`,
     '04a11d92-3269-4ab1-a634-43d405e37b8b' AS `GUID`,
-    '&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Services.Name&lt;/lon&gt;&lt;lok&gt;Computer.Services.Name&lt;/lok&gt;&lt;lmo&gt;Equals&lt;/lmo&gt;&lt;dv&gt;UsoSvc&lt;/dv&gt;&lt;dk&gt;UsoSvc&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;' AS `SearchXML`
+    '<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Services.Name</lon><lok>Computer.Services.Name</lok><lmo>Equals</lmo><dv>UsoSvc</dv><dk>UsoSvc</dk></asn></cn></asn></LabTechAbstractSearch>' AS `SearchXML`
 FROM
     (
         SELECT
@@ -229,6 +229,7 @@ The monitor will come up with the search `Update Orchestrator - UsoSvc` added to
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 
 

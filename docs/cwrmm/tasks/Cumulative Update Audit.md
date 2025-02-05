@@ -74,8 +74,8 @@ $ThresholdDays = '@ThresholdDays@'
 $ThresholdDays = if ( -not ($ThresholdDays -match '^[0-9]{1,}$') ) { '75' } else { $ThresholdDays }
 $url = 'https://proval.itglue.com/DOC-5078775-15739309'
 $iwr = Invoke-WebRequest -Uri $url -UseBasicParsing
-$json = $($iwr.content -split '&lt;code&gt;' -split '&lt;/code&gt;' ) -match 'plugin_proval_windows_os_support'
-$json = $json -replace '&lt;br&gt;', "`n" -replace '//', '//' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
+$json = $($iwr.content -split '<code>' -split '</code>' ) -match 'plugin_proval_windows_os_support'
+$json = $json -replace '<br>', "`n" -replace '//', '//' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
 $rows = ( $json | ConvertFrom-Json ).rows
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
 if ( !( $osinfo.caption -match '(Windows 1[01])|(Server 20(1[69]|22))' ) ) {
@@ -137,22 +137,22 @@ if (!($Build -match '[0-9]{5}//.[0-9]{3,5}')) {
 }
 $KBIDRawContent = Invoke-WebRequest -Uri $comparisionurl -UseBasicParsing
 if ( !( $osinfo.Name -Match 'Server 2022' ) ) {
-    $KBhtml = $KBIDRawContent.Rawcontent -split '&lt;tr&gt;' -split '&lt;/tr&gt;' | Select-String -Pattern $build | Select-String -Pattern 'http'
+    $KBhtml = $KBIDRawContent.Rawcontent -split '<tr>' -split '</tr>' | Select-String -Pattern $build | Select-String -Pattern 'http'
     if ($null -eq $kbhtml) {
-        $KBhtml = $KBIDRawContent.Rawcontent -split '&lt;tr&gt;' -split '&lt;/tr&gt;' | Select-String -Pattern $build
-        $ReleaseDate = $($($Kbhtml -split '&lt;td&gt;' -split '&lt;/td&gt;') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
+        $KBhtml = $KBIDRawContent.Rawcontent -split '<tr>' -split '</tr>' | Select-String -Pattern $build
+        $ReleaseDate = $($($Kbhtml -split '<td>' -split '</td>') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $KBid = ''
     } else {
-        $KBid = $($($KBhtml -split '/\"&gt;' -split '&lt;/a') -Match 'KB[0-9]{7}').Trim()
+        $KBid = $($($KBhtml -split '/\">' -split '</a') -Match 'KB[0-9]{7}').Trim()
         $SupportURL = $($($Kbhtml -Split '=/\"' -split '/\"') -match 'https').Trim()
-        $ReleaseDate = $($($Kbhtml -split '&lt;td&gt;' -split '&lt;/td&gt;') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
+        $ReleaseDate = $($($Kbhtml -split '<td>' -split '</td>') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $PatchInfoHTML = (Invoke-WebRequest -Uri $SupportUrl -UseBasicParsing).Links.OuterHTML
         $PatchInfoHTML = ($PatchInfoHTML -Match $KBid)[0]
-        $patchinfostring = ($PatchInfoHTML -split '&gt;|&lt;')[2] -replace '&amp;#x2014;', ' '
+        $patchinfostring = ($PatchInfoHTML -split '>|<')[2] -replace '&amp;#x2014;', ' '
     }
 } else {
     $patchinfohtml = ($KBIDRawContent.Links.OuterHTML -Match $build)[0]
-    $patchinfostring = ($PatchInfoHTML -split '&gt;|&lt;')[2] -replace '&amp;#x2014;', ' '
+    $patchinfostring = ($PatchInfoHTML -split '>|<')[2] -replace '&amp;#x2014;', ' '
     $ReleaseDate = ($PatchInfoString -split ' ')[0..2] -join ' '
     $ReleaseDate = [datetime]::ParseExact($ReleaseDate, 'MMMM d, yyyy', $Null)
     $ReleaseDate = $Releasedate.tostring('yyyy-MM-dd')
@@ -260,6 +260,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Custom Field**
 ![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
+
 
 
 

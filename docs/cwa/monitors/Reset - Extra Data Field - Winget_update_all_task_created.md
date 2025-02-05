@@ -36,7 +36,7 @@ unlisted: false
      computers c 
    WHERE 
      c.os REGEXP 'Windows 1[01]' 
-     AND c.clientid in (\\<strong>&lt;Clientid(s)&gt;\\</strong>); 
+     AND c.clientid in (\\<strong><Clientid(s)>\\</strong>); 
    CALL v_extradata(1, 'Computers'); 
    CALL v_extradatarefresh(1, 'Computers');
    ```
@@ -102,6 +102,7 @@ unlisted: false
 
 4. Reload the system cache to ensure all changes are updated.  
    ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_6.png)
+
 
 
 

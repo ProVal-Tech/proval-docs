@@ -76,7 +76,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **Format of the Hash Table:**
 
 ```
-@\{Subgroup=@\{'&lt;Name of the Subgroup&gt;' = @\{ <strong>PowerSetting </strong>= @\{ '&lt;Name of the Power Setting&gt;' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt; }; 'Name of the Power Setting' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt;}; '&lt;Name of the Power Setting&gt;' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt;}; '&lt;Name of the Power Setting&gt;' = @\{ AC = &lt;Value of the setting on Direct Power&gt;; DC = &lt;Value of the Setting on Battery Power&gt; }}}}}
+@\{Subgroup=@\{'<Name of the Subgroup>' = @\{ <strong>PowerSetting </strong>= @\{ '<Name of the Power Setting>' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power> }; 'Name of the Power Setting' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power>}; '<Name of the Power Setting>' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power>}; '<Name of the Power Setting>' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power> }}}}}
 ```
 
 Ensure that the name of the subgroup and the power settings match those specified in the attached CSV file. The values for both AC and DC should fall within the range defined in the CSV file or be selected from the possible settings if the range does not apply to the setting.
@@ -195,6 +195,7 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
+
 
 
 

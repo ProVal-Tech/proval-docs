@@ -87,8 +87,8 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 | NDA_Monitoring_Group_Ids      | 828     | True     | The script will create remote monitors for the domain controllers (One Domain Controller Per Domain) that belong to the groups identified by the group IDs specified in this system property. Multiple IDs can be included by separating them with a comma. |
 | NDA_Monitoring_Interval       | 3600    | True     | Controls the generated Remote Monitor run time interval. The default is 3600 seconds.                                                                                                                                                          |
 | NDA_Monitoring_AlertTemplate  | 611     | True     | This system property stores the ID of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.                          |
-| NDA_Monitoring_TicketCategory  | 124     | False    | This system property stores the ID of the `Ticket Category` to apply to the remote monitors created for the Domain Controllers. The default value is '0', i.e., `&lt;Not Specified&gt;`.                                 |
-| NDA_Monitoring_Excluded_Users | Batman,AnotherBatman,OneMoreBatman | True | This system property stores the usernames to exclude from generating the new domain admin-detected tickets. The default value will be `&lt;blank&gt;`. Multiple usernames can be added by separating them with a comma.                |
+| NDA_Monitoring_TicketCategory  | 124     | False    | This system property stores the ID of the `Ticket Category` to apply to the remote monitors created for the Domain Controllers. The default value is '0', i.e., `<Not Specified>`.                                 |
+| NDA_Monitoring_Excluded_Users | Batman,AnotherBatman,OneMoreBatman | True | This system property stores the usernames to exclude from generating the new domain admin-detected tickets. The default value will be `<blank>`. Multiple usernames can be added by separating them with a comma.                |
 
 ## Client-Level EDF
 
@@ -126,6 +126,7 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
+
 
 
 
