@@ -86,7 +86,7 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.BingFinance                     | 828B5831.HiddenCityMysteryofShadows      |                                       | Microsoft.XboxGameOverlay         | Dell Power Manager Service                               |
 | Microsoft.BingNews                        | 89006A2E.AutodeskSketchBook               |                                       | Microsoft.XboxIdentityProvider    | Dell SupportAssist OS Recovery Plugin for Dell Update   |
 | Microsoft.BingSports                      | 9E2F88E3.Twitter                          |                                       | Microsoft.XboxSpeechToTextOverlay | HP Notifications                                         |
-| Microsoft.BingWeather                     | A278AB0D.DisneyMagicKingdoms             |                                       |                                   | HP TechPulse                                           |
+| Microsoft.BingWeather                     | A278AB0D.DisneyMagicKingdoms             |                                       |  Microsoft.XboxLive                | HP TechPulse                                           |
 | Microsoft.CommsPhone                      | A278AB0D.MarchofEmpires                  |                                       |                                   | Lenovo Quick Clean                                      |
 | Microsoft.ConnectivityStore               | ActiproSoftwareLLC.562882FEEB491         |                                       |                                   | Lenovo Vantage Service                                   |
 | Microsoft.Getstarted                       | AD2F1837.HPPCHardwareDiagnosticsWindows   |                                       |                                   |                                                         |
@@ -110,7 +110,7 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.SkypeApp                        | KeeperSecurityInc.Keeper                  |                                       |                                   |                                                         |
 | Microsoft.Windows.Photos                  | king.com.BubbleWitch3Saga                 |                                       |                                   |                                                         |
 | Microsoft.WindowsAlarms                   | king.com.CandyCrushSodaSaga               |                                       |                                   |                                                         |
-| Microsoft.WindowsCamera                   |                                           |                                       |                                   |                                                         |
+| Microsoft.WindowsCamera                   | laregamesGmbH.RoyalRevolt2                |                                       |                                   |                                                         |
 | microsoft.windowscommunicationsapps       |                                           |                                       |                                   |                                                         |
 | Microsoft.WindowsFeedbackHub              |                                           |                                       |                                   |                                                         |
 | Microsoft.WindowsMaps                     |                                           |                                       |                                   |                                                         |
@@ -118,6 +118,9 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.WindowsSoundRecorder             |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
 | Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
-
-
-
+| Microsoft.OneDrive                        |                                           |                                       |                                   |                                                         |
+| Microsoft.GetHelp                         |                                           |                                       |                                   |                                                         |
+| Microsoft.PowerAutomateDesktop            |                                           |                                       |                                   |                                                         |
+| Microsoft.QuickAssist                     |                                           |                                       |                                   |                                                         |
+| Microsoft.LinkedIn                        |                                            |                                       |                                   |                                                         |
+| Microsoft.WindowsCopilot                  |                                           |                                       |                                   |                                                         |
