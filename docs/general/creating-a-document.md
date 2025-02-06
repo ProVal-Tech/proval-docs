@@ -29,3 +29,18 @@ Creating a new document in the documentation system is a simple process. This gu
 6. Commit your changes and push your branch to the repository.
 7. Create a pull request to merge your branch into the `main` branch.
 8. Once your pull request is approved and merged, your document will be live on the documentation site.
+
+# FAQ
+
+## How do I know which tags to use?
+Tags are listed in the [tags](../tags.yml) file. Choose from the list of available tags there. Try not to exceed 5 tags per document.
+
+If you need a new tag, please open an issue to request it.
+
+## How do I attach a file to a document?
+To attach a file to a document, place the file that you would like to attach in the `/static/attachments` folder. Then, in the document, use the following markdown to link to the file:
+
+```markdown
+[My Test Document](/attachments/Test.pdf)
+```
+[My Test Document](/attachments/Test.pdf)
