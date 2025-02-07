@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor is to determine if a Huntress Agent has become orphaned. An orphaned agent is one that Huntress has not received a response from for over 30 days, and whose key/token has been revoked by Huntress. At that point, the agent is unable to send or receive any data from the Huntress portal and is essentially not performing security tasks anymore.
+The purpose of this monitor is to monitor if Huntress Agent has been Orphaned or not. By Orphaned it means Huntress has not recieved a response from the agent within 30 days and the Agent's key/token has been revoked by Huntress. At that point, the agent is unable to send or receive any data from the Huntress portal and is essentially not performing security tasks anymore.
 
 ## Details
 
@@ -21,9 +21,9 @@ The purpose of this monitor is to determine if a Huntress Agent has become orpha
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result               |
-|--------------|----------------|------------|---------------|------------|----------|----------------------|
-| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based | 86400    | \<Screenshot Below>   |
+| Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result              |
+| ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ------------------- |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 86400    | \<Screenshot Below> |
 
 ![Screenshot](../../../static/img/Unresponsive-Huntress-Agents/image_1.png)
 
