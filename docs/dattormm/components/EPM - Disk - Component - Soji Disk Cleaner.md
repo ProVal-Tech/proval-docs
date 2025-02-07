@@ -15,12 +15,12 @@ This document describes the process of running the Soji Disk Cleaner on selected
 
 ## Dependencies
 
-- [Soji](https://proval.itglue.com/DOC-5078775-10338558) Agnostic Content  
+- [Soji](https://github.com/ProVal-Tech/Soji) Agnostic Content  
 - .NET 6 (Installation will be attempted by the component if not detected.)
 
 ## Implementation
 
-Import the [attached component](https://proval.itglue.com/attachments/11025946) into Datto RMM.
+Import the [attached component](/attachments/Soji_Disk_Cleaner.cpt) into Datto RMM.
 
 ## Output
 
