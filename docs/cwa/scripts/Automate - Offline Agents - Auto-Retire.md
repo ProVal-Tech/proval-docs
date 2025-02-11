@@ -15,7 +15,7 @@ The purpose of this script is to retire the computers that are offline in Automa
 
 ![Image](../../../static/img/Automate---Offline-Agents---Auto-Retire/image_1.png)
 
-The following EDFs can be used to overwrite the Threshold Days defined in the System property test `AutoRetireThreshold_Days`.
+The following EDFs can be used to overwrite the Threshold Days defined in the System property `AutoRetireThreshold_Days`.
 
 - **Client-Level EDF**: "AutoRetire Threshold Days"
 
