@@ -31,7 +31,7 @@ The purpose of the dataviews included in this solution is to present the cumulat
 |-------------------------------------------------------------------------|-------------|----------------------------------------------------|
 | [Custom Table - plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) | Custom Table | Stores the support date of different versions of the Operating System. |
 | [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) | Script      | Creates the 'Plugin_ProVal_Windows_OS_Support' table. |
-| [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) | Solution    | Fetches and stores the information of the latest installed Cumulative Update on Windows 10 and 11 computers. |
+| [Solution - Latest Installed Cumulative Update](<./Latest Installed Cumulative Update.md>) | Solution    | Fetches and stores the information of the latest installed Cumulative Update on Windows 10 and 11 computers. |
 
 ## Implementation
 
@@ -43,7 +43,7 @@ The purpose of the dataviews included in this solution is to present the cumulat
    - [CU Compliance Metrics](<../cwa/dataviews/CU Compliance Metrics.md>)
    - [CU Compliance Metrics - Clients](<../cwa/dataviews/CU Compliance Metrics - Clients.md>)
 
-3. Follow the implementation steps provided in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104) solution document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
+3. Follow the implementation steps provided in the [Latest Installed Cumulative Update](<./Latest Installed Cumulative Update.md>) solution document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
 
 4. Reload the System Cache  
    ![Reload the System Cache](../../static/img/Cumulative-Update-Compliance---Report/image_1.png)
@@ -61,6 +61,7 @@ The purpose of the dataviews included in this solution is to present the cumulat
 8. Remove the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
    - [MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>)
+
 
 
 

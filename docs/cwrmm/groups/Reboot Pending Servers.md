@@ -15,7 +15,7 @@ This group contains the server endpoints where a reboot is pending. It detects o
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)
+[CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)
 
 ## Details
 
@@ -39,6 +39,7 @@ This group contains the server endpoints where a reboot is pending. It detects o
 - The agent available equals True.
 - The OS contains any of Windows 2016, Windows 2019, or Windows 2022.
 - The Exclude reboot custom field equals False.
+
 
 
 

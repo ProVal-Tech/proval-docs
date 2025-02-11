@@ -19,10 +19,10 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Script - Webroot Keycode Verification [DV, EDF]](https://proval.itglue.com/DOC-5078775-14989420) | Script | This script collects the machine's Webroot hashed keycode and matches it with the keycode set up in the client EDF "Webroot Site Keycode." The results can be reviewed using the DV. This also creates a ticket for the Webroot keycode mismatch or during a missing case when it is mapped with the monitor [SEC - Endpoint Protection - Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291), where the ticket category is set. |
-| [Internal Monitor - Execute Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989291) | Monitor | This monitor checks the online agent to see if the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420) has not run in the last 30 days and if the agent has Webroot installed with deployment enabled. |
+| [Script - Webroot Keycode Verification [DV, EDF]](<../scripts/Webroot Keycode Verification EDF.md>) | Script | This script collects the machine's Webroot hashed keycode and matches it with the keycode set up in the client EDF "Webroot Site Keycode." The results can be reviewed using the DV. This also creates a ticket for the Webroot keycode mismatch or during a missing case when it is mapped with the monitor [SEC - Endpoint Protection - Monitor - Wrong Webroot KeyCode Detected [EDF]](<../monitors/Webroot Keycode Verification EDF.md>), where the ticket category is set. |
+| [Internal Monitor - Execute Script - Webroot Keycode Verification [EDF]](<../monitors/Webroot Keycode Verification EDF.md>) | Monitor | This monitor checks the online agent to see if the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](<../scripts/Webroot Keycode Verification EDF.md>) has not run in the last 30 days and if the agent has Webroot installed with deployment enabled. |
 | [Dataview - Webroot KeyCode Audit [Script]](<../dataviews/Webroot KeyCode AuditScript.md>) | Dataview | This dataview displays the Webroot hashed keycode present on the machine, the status of the keycode, and whether it matches the keycode set up under the Webroot plugin. |
-| △ CUSTOM - Execute Script - Webroot Keycode Verification - EDF | Alert Template | This alert template is used with the monitor [SEC - Endpoint Protection - Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291) to run the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420) as an autofix. |
+| △ CUSTOM - Execute Script - Webroot Keycode Verification - EDF | Alert Template | This alert template is used with the monitor [SEC - Endpoint Protection - Monitor - Wrong Webroot KeyCode Detected [EDF]](<../monitors/Webroot Keycode Verification EDF.md>) to run the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](<../scripts/Webroot Keycode Verification EDF.md>) as an autofix. |
 
 ### Automation Content
 
@@ -44,14 +44,14 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
 1. **Import the following scripts using the ProSync plugin:**
    - [Script - △ Install Webroot SecureAnywhere [Autofix, EDF]](<../scripts/Install Webroot SecureAnyWhere Autofix, EDF.md>)
-   - [Script - Webroot Keycode Verification [DV, EDF]](https://proval.itglue.com/DOC-5078775-14989420)
+   - [Script - Webroot Keycode Verification [DV, EDF]](<../scripts/Webroot Keycode Verification EDF.md>)
 
    **If you would like to copy license keys and deployment information from the plugin to the EDFs:**
    - Import the following script:
      - [Copy Webroot Plugin Data to EDF](<../scripts/Webroot Solution - Copy Plugin Data to EDFs.md>)
 
 2. **Import the following Internal Monitors using the ProSync plugin:**
-   - [Internal Monitor - Execute Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989291)
+   - [Internal Monitor - Execute Script - Webroot Keycode Verification [EDF]](<../monitors/Webroot Keycode Verification EDF.md>)
    - [Internal Monitor - Execute Script - Webroot Deployment [EDF]](<../monitors/Webroot Deployment EDF.md>)
 
 3. **Import the following dataview using the ProSync plugin:**
@@ -66,7 +66,7 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
 6. **Configure the solution as follows:**
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291)
+     - [Internal Monitor - Wrong Webroot KeyCode Detected [EDF]](<../monitors/Webroot Keycode Verification EDF.md>)
        - Configure with the alert template: △ Custom - Execute Script - Webroot Keycode Verification - EDF
        - Right-click and Run Now to start the monitor
      - [Internal Monitor - Webroot Deployment [EDF]](<../monitors/Webroot Deployment EDF.md>)
@@ -75,6 +75,7 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
    **Note:**
    Please read the complete EDF detailing in the script before implementing the solution: [Install Webroot SecureAnywhere [EDF]](<../scripts/Install Webroot SecureAnyWhere Autofix, EDF.md>). Additionally, follow the Other Content sections ([Webroot Site KeyCode](<../scripts/Webroot Site KeyCode.md>) and [Webroot GroupCode and GroupName Fetching](<./Webroot GroupCode and GroupName Fetching.md>)) for steps on how to obtain the Site keycode and Group Code from the Webroot Portal.
+
 
 
 

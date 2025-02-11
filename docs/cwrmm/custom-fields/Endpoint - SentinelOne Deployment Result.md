@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15806354).
+This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](<../tasks/SentinelOne Deployment.md>).
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15822040).
+[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>).
 
 ## Details
 
@@ -26,6 +26,7 @@ This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](
 ## Screenshot
 
 ![Screenshot](../../../static/img/Endpoint---SentinelOne-Deployment-Result/image_1.png)
+
 
 
 

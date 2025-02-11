@@ -15,7 +15,7 @@ This document detects the computers where the Windows 11 Installer (Beta) task h
 
 ## Dependencies
 
-- [CW RMM - Task - Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365) 
+- [CW RMM - Task - Windows 11 Installer (Beta)](<../tasks/Windows 11 Installer (Beta).md>) 
 - [CW RMM - Task - Windows 11 Installation Validation](<../tasks/Windows 11 Installation Validation.md>) 
 - [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](<../custom-fields/Endpoint - Windows 11 Upgrade Failed.md>) 
 - [CW RMM - Device Group - Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
@@ -59,6 +59,7 @@ This document detects the computers where the Windows 11 Installer (Beta) task h
 
 7. Click the `Save` button at the top-right corner of the screen to create the monitor set.  
    ![Step 7 Image](../../../static/img/Windows-11-Installation-Failed/image_10.png)
+
 
 
 

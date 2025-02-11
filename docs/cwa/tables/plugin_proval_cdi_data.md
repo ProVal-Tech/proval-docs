@@ -18,7 +18,7 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Dis
 
 - [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
 - [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)  
-- [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639)  
+- [CWM - Automate - Dataview - Disk - Critical Data](<../dataviews/Disk - Critical Data.md>)  
 
 ## Tables
 
@@ -59,6 +59,7 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Dis
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the date of the last check                 |
+
 
 
 

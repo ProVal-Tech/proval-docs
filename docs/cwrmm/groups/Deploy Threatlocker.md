@@ -15,7 +15,7 @@ This group contains the machines that are eligible for Threatlocker deployment a
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - Threatlocker Deployment](<../../solutions/Threatlocker Deployment.md>)
 
 ## Details
 
@@ -60,6 +60,7 @@ Once the above criteria are set, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Threatlocker/image_4.png)
 
 ![Image](../../../static/img/Deploy-Threatlocker/image_5.png)
+
 
 
 

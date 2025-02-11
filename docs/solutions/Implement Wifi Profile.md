@@ -30,14 +30,14 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
 | Content                                                                  | Type            | Function                                                                                               |
 |--------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------|
 | [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) | Internal Monitor | Detects the machines where approved Wi-Fi profiles are not available.                                   |
-| [Script - Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111356) | Script          | Adds and removes the Wi-Fi profiles.                                                                    |
+| [Script - Implement Wifi Profile](<../cwa/scripts/Implement Wifi Profile.md>) | Script          | Adds and removes the Wi-Fi profiles.                                                                    |
 | △ Custom - Execute Script - Implement Wifi Profile                       | Alert Template   | Executes the script against the machines detected by the [Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>) monitor set. |
 
 ## Implementation
 
 1. Import the following scripts using the Prosync plugin:
    - [Script - Get Wifi Profile](<../cwa/scripts/Get Wifi Profile.md>)
-   - [Script - Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111356)
+   - [Script - Implement Wifi Profile](<../cwa/scripts/Implement Wifi Profile.md>)
 
 2. Import the following internal monitors using the Prosync plugin:
    - [Internal Monitor - Execute Script - Get Wifi Profile](<../cwa/monitors/Execute Script - Get Wifi Profile.md>)
@@ -61,6 +61,7 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+
 
 
 

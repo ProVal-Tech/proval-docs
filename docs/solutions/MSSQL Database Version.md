@@ -20,7 +20,7 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
 | Content                                                                                                      | Type            | Function                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Internal Monitor - Execute Script - Get MSSQL Database Version](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>) | Internal Monitor | The internal monitor detects the MSSQL servers where the [Script - Get MSSQL Database Version](<../cwa/scripts/Get MSSQL Database Version.md>) has not been executed within the last week.                                         |
-| [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865)                        | Dataview        | The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](<../cwa/scripts/Get MSSQL Database Version.md>).                                       |
+| [Dataview - MSSQL Database Version](<../cwa/dataviews/MSSQL Database Version.md>)                        | Dataview        | The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](<../cwa/scripts/Get MSSQL Database Version.md>).                                       |
 | [Script - Get MSSQL Database Version](<../cwa/scripts/Get MSSQL Database Version.md>)                      | Script          | The script collects the `Version` and `Patch Level` information of the MSSQL Server.                                                                                                                                              |
 | △ Custom - Execute Script - Get MSSQL Database Version                                                      | Alert Template   | The Alert Template executes the [Script - Get MSSQL Database Version](<../cwa/scripts/Get MSSQL Database Version.md>) against the machines detected by the [Internal Monitor - Execute Script - Get MSSQL Database Version](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>). |
 
@@ -34,7 +34,7 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
 
 1. Import the following content using the ProSync Plugin:
    - [Script - Get MSSQL Database Version](<../cwa/scripts/Get MSSQL Database Version.md>)
-   - [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865)
+   - [Dataview - MSSQL Database Version](<../cwa/dataviews/MSSQL Database Version.md>)
    - [Internal Monitor - Execute Script - Get MSSQL Database](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>)
    - Alert Template - `△ Custom - Execute Script - Get MSSQL Database Version`
 
@@ -49,6 +49,7 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
      - [Internal Monitor - Execute Script - Get MSSQL Database](<../cwa/monitors/Execute Script - Get MSSQL Database Version.md>)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
+
 
 
 

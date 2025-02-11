@@ -100,7 +100,8 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 **A:** The ticket will be created for the identified device and associated with the respective Network Probe.
 
 **Q:** My VMware ESXi host is not showing up in the Virtualization Manager. What can I do to troubleshoot?  
-**A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](https://proval.itglue.com/DOC-5078775-11901041)
+**A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](<../unsorted/VMware Host Not Detected in Virtualization Manager Plugin.md>)
+
 
 
 

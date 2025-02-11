@@ -44,7 +44,7 @@ This article encompasses multiple components and contents. Please import and imp
 | Content                                                                                                         | Type            | Function                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Script - AD - Enable AD Recycle Bin](<../cwa/scripts/AD - Enable AD Recycle Bin.md>)                        | Script           | This script enables the AD Recycle Bin. [Microsoft TechNet Article](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/the-ad-recycle-bin-understanding-implementing-best-practices-and/ba-p/396944) |
-| [Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)                          | Script           | The script tests the hashed credentials in AD against a known compromised or weak list.                                                                                                               |
+| [Script - Weak Passwords - AD Test](<../cwa/scripts/Weak Passwords - AD Test.md>)                          | Script           | The script tests the hashed credentials in AD against a known compromised or weak list.                                                                                                               |
 | [Script - Active Directory - Plugin User Account - Create/Update](<../cwa/scripts/Active Directory - Plugin User Account - CreateUpdate.md>) | Script           | This script will create/update a domain admin account to be used with the AD plugin with a random password.                                                                                           |
 | [Script - Group Policy - Audit](<../cwa/scripts/Group Policy - Audit.md>)                            | Script           | This process will execute PowerShell to gather GPO data.                                                                                                                                              |
 | [AD - Create Views/Table/Schedule for AD Reporting Solution](<../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>) | Script           | This creates all the needed items in the Database to ensure the [Active Directory Reporting Solution](<../cwa/reports/Active Directory Reporting Solution.md>) functions correctly.                              |
@@ -114,7 +114,7 @@ This article encompasses multiple components and contents. Please import and imp
 ### Reporting Solution
 
 1. Import the following content from the ProSync Plugin:
-   - [Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)
+   - [Script - Weak Passwords - AD Test](<../cwa/scripts/Weak Passwords - AD Test.md>)
    - [AD - Create Views/Table/Schedule for AD Reporting Solution](<../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
 
 2. Run the [AD - Create Views/Table/Schedule for AD Reporting Solution](<../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>) script once on any random machine to create the framework needed for the solution.
@@ -315,6 +315,7 @@ The solutions presented in this section do not rely on any plugin.
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
+
 
 
 

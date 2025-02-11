@@ -15,7 +15,7 @@ This monitor detects Windows machines that are missing the Perch Log Shipper. To
 
 ## Dependencies
 
-- [SWM - Software Install - Script - Deploy Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14986108)  
+- [SWM - Software Install - Script - Deploy Perch Log Shipper](<../scripts/Deploy Perch Log Shipper.md>)  
 - Client-Level EDFs to select Perch Log Shipper Deployment and to populate the installation token  
   ![image](../../../static/img/Deploy-Perch-Log-Shipper/image_1.png)  
 - Location-level EDF to exclude a location from Perch Log Shipper Deployment and to populate the installation token  
@@ -30,6 +30,7 @@ Windows Machines
 ## Alert Template
 
 - `△ Custom - Execute Script - Deploy Perch Log Shipper`
+
 
 
 

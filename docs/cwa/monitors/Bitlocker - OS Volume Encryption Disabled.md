@@ -16,7 +16,7 @@ This monitor will return any target machine whose client has the 'Bitlocker Moni
 ## Dependencies
 
 - [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>)
-- [SEC - Encryption - Solution - Bitlocker](https://proval.itglue.com/DOC-5078775-8953721)
+- [SEC - Encryption - Solution - Bitlocker](<../../solutions/Bitlocker.md>)
 
 ## Target
 
@@ -93,6 +93,7 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---OS-Volume-Encryption-Disabled/image_1.png)
+
 
 
 

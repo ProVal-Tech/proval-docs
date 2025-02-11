@@ -22,7 +22,7 @@ Resets the value of the Monthly CF.
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Process
 
@@ -31,6 +31,7 @@ Sets the Monthly CF to 0.
 ## Output
 
 None.
+
 
 
 

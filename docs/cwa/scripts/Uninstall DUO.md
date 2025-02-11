@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This is a version of [SWM - Software Uninstall - Script - Remove Application](https://proval.itglue.com/DOC-5078775-12578871) that is being used to remove DUO specifically.
+This is a version of [SWM - Software Uninstall - Script - Remove Application](<./Remove Application.md>) that is being used to remove DUO specifically.
 
 ## Sample Run
 
@@ -38,6 +38,7 @@ This is a version of [SWM - Software Uninstall - Script - Remove Application](ht
 **Subject:** `DUO Removal - Failed - %COMPUTERNAME%`
 
 **Ticket Body:** `The script attempted to remove DUO from the computer but it failed. In addition to the primary removal script (Remove-Application.ps1), alternative uninstallation methods utilizing uninstall strings stored in Automate were also employed. Despite this, the script failed to remove the application. Manual review is required to identify the cause of the failure.`
+
 
 
 

@@ -15,7 +15,7 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 ## Sample Run
 
-- For the first execution of the script, the value of the user parameter `Set_Environment` should be set to `1`. This will create the EDF, System property, and [custom table](https://proval.itglue.com/5078775/docs/12979849) used by the [Implement Wifi Profile](https://proval.itglue.com/DOC-5078775-16111352) solution:  
+- For the first execution of the script, the value of the user parameter `Set_Environment` should be set to `1`. This will create the EDF, System property, and [custom table](https://proval.itglue.com/5078775/docs/12979849) used by the [Implement Wifi Profile](<../../solutions/Implement Wifi Profile.md>) solution:  
   ![Sample Run Image 1](../../../static/img/Get-Wifi-Profile/image_1.png)  
 
 - Regular execution:  
@@ -41,6 +41,7 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+
 
 
 

@@ -47,7 +47,7 @@ Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTime
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Process
 
@@ -56,6 +56,7 @@ Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](
 ## Output
 
 Agent Procedure Log
+
 
 
 

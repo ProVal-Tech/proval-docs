@@ -21,7 +21,7 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-[CW RMM - Custom Field - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824368)
+[CW RMM - Custom Field - PowerShell Version](<../custom-fields/PowerShell Version.md>)
 
 ## Variables
 
@@ -94,6 +94,7 @@ ProVal recommends scheduling this task using a monitor and a machine group. Plea
 
 - Script log
 - Custom Field
+
 
 
 

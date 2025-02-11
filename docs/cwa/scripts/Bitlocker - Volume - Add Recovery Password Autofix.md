@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The script is designed to add a recovery password to a drive where BitLocker is enabled but a key protector is not found. It is a copy of the [SEC - Encryption - Script - Bitlocker - Volume - Initialize](https://proval.itglue.com/DOC-5078775-8934308) script with a hardcoded parameter.
+The script is designed to add a recovery password to a drive where BitLocker is enabled but a key protector is not found. It is a copy of the [SEC - Encryption - Script - Bitlocker - Volume - Initialize](<./Bitlocker - Volume - Initialize.md>) script with a hardcoded parameter.
 
 It will disable the currently applied BitLocker protection using the [SEC - Encryption - Script - Bitlocker - Remove Volume](<./Bitlocker - Remove Volume.md>) script before re-enabling it with a Recovery Password protector.
 
@@ -42,6 +42,7 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
+
 
 
 

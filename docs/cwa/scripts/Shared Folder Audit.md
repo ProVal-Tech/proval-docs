@@ -21,7 +21,7 @@ This script collects information about shared folder details such as Share Name,
 
 ## Dependencies
 
-[Shared Folder Audit](https://proval.itglue.com/DOC-5078775-7978131)
+[Shared Folder Audit](<../dataviews/Shared Folder Audit.md>)
 
 ## Variables
 
@@ -49,6 +49,7 @@ The script will run a PowerShell script to gather data from the endpoint. It wil
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
+
 
 
 

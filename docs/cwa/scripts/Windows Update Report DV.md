@@ -17,7 +17,7 @@ Get a detailed list of patches that are installed or available on the local mach
 ## Dependencies
 
 - [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
-- [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
+- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
 - [CWM - Automate - Dataview - Windows Update Report [Script]](<../dataviews/Windows Update Report Script.md>)
 - [CWM - Automate - Custom Table - plugin_proval_windows_update_report](<../tables/plugin_proval_windows_update_report.md>)
 - [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
@@ -43,6 +43,7 @@ Get a detailed list of patches that are installed or available on the local mach
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

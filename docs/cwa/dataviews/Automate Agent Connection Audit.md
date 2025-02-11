@@ -24,7 +24,7 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 - [CWM - Automate - Custom Table - pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>)
 - [CWM - Automate - Custom Table - pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>)
 - [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](<../monitors/Update Table - pvl_automate_connection_audit.md>)
-- [CWM - Automate - script - Automate Agent Connection Audit](https://proval.itglue.com/DOC-5078775-18178745)
+- [CWM - Automate - script - Automate Agent Connection Audit](<../scripts/Automate Agent Connection Audit.md>)
 
 ## Columns
 
@@ -60,6 +60,7 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 | Online Percentage - 30 Days     | Percentage of time the computer was online in the past 30 days                                      |
 | Offline Percentage - 30 Days    | Percentage of time the computer was offline in the past 30 days                                     |
 | Days Since Data Collection       | Number of days the current calculations displayed in the dataview are based upon. It may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. It is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`. |
+
 
 
 

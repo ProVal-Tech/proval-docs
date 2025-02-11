@@ -17,12 +17,13 @@ This solution is designed to use an agent procedure to update custom fields to d
 
 | Content                                                                                     | Type              | Function                                               |
 |---------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------------|
-| [Agent Procedure](https://proval.itglue.com/DOC-5078775-13118704)                        | Agent Procedure    | Runs WinSAT to determine the scores of the endpoint.  |
-| [Custom Field](https://proval.itglue.com/DOC-5078775-13118706)                           | Custom Field       | Stores the scores from the procedure in custom fields. |
+| [Agent Procedure](<../vsa/procedures/WinSAT Scores.md>)                        | Agent Procedure    | Runs WinSAT to determine the scores of the endpoint.  |
+| [Custom Field](<../vsa/custom-fields/WinSAT Scores.md>)                           | Custom Field       | Stores the scores from the procedure in custom fields. |
 
 ## Implementation
 
 Custom fields need to be created prior to running the agent procedure.
+
 
 
 

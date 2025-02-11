@@ -18,8 +18,8 @@ The data is grouped by client.
 ## Dependencies
 
 - [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
-- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
-- [CWM - Automate - Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104)
+- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>)
+- [CWM - Automate - Solution - Latest Installed Cumulative Update](<../../solutions/Latest Installed Cumulative Update.md>)
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 - [CWM - Automate - View - pvl_patch_cu_compliance_clients](<../views/pvl_patch_cu_compliance_clients.md>)
@@ -57,6 +57,7 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | Greater than or equal to 75      |
 | CU Score %                 | Red    | Less than 75                     |
 | CU Score %                 | Green  | Greater than or equal to 75      |
+
 
 
 

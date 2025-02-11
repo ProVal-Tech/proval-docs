@@ -32,7 +32,7 @@ This is the main procedure used by all others to perform the CF update logic.
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Process
 
@@ -45,6 +45,7 @@ This is the main procedure used by all others to perform the CF update logic.
 
 - Agent Procedure Logs  
 - Solution CFs
+
 
 
 

@@ -60,12 +60,13 @@ This monitor is intentionally aimed at the Update Orchestrator group.
 ![Resources](../../../static/img/Update-Orchestrator-Bouncer/image_5.png)
 
 ## Dependencies
-- [CW RMM - Custom Field - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824368)
+- [CW RMM - Custom Field - PowerShell Version](<../custom-fields/PowerShell Version.md>)
 - [CW RMM - Task - PowerShell Version Information](<../tasks/PowerShell Version Information.md>)
-- [CW RMM - Device Groups - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824362)
+- [CW RMM - Device Groups - PowerShell Version](<../groups/PowerShell Version.md>)
 
 ## Ticketing
 This solution does technically create tickets, but the tickets are designed to autoclose as soon as the machine runs the task to update PowerShell.
+
 
 
 

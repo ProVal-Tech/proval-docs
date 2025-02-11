@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) utilizes this custom field to store information regarding the AD Recycle Bin status. It will indicate whether it is enabled or if the infrastructure master does not meet the minimum criteria.
+The [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>) utilizes this custom field to store information regarding the AD Recycle Bin status. It will indicate whether it is enabled or if the infrastructure master does not meet the minimum criteria.
 
 ## Create the Custom Field
 
@@ -25,6 +25,7 @@ The [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-1534951
 **Default Value:** 0  
 **Description:** This custom field is used by the Enable Recycle Bin Task to store the Recycle Bin status on AD Infrastructure Masters.  
 **Editable:** Yes  
+
 
 
 

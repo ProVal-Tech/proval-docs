@@ -17,12 +17,12 @@ To provide comprehensive information about which servers have Azure AD Connect s
 
 | Content                                                                                       | Type            | Function                                               |
 |-----------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------|
-| [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853853) | Policy          | Schedules the procedure against a server view         |
-| [SWM - Software Configuration - Agent Procedure - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853848) | Agent Procedure  | Pulls version data from the endpoint and saves it to a custom field (CF) |
-| [SWM - Software Configuration - Report - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853843) | Report          | Pulls a report of all endpoints with a valid version number in the CF |
-| [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853854) | Report Part     | Builds the report                                      |
-| [SWM - Software Configuration - Custom Field - xPVAL Azure AD Connect Version](https://proval.itglue.com/DOC-5078775-9853852) | Custom Field - Machine | Contains the version data                        |
-| [SWM - Software Configuration - View - xPVAL Azure AD Connect Version](https://proval.itglue.com/DOC-5078775-9853845) | View            | Filters agents' view by endpoints with a valid version in the CF |
+| [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](<../vsa/policies/Azure AD Connect Version Audit.md>) | Policy          | Schedules the procedure against a server view         |
+| [SWM - Software Configuration - Agent Procedure - Azure AD Connect Version Audit](<../vsa/procedures/Azure AD Connect Version Audit.md>) | Agent Procedure  | Pulls version data from the endpoint and saves it to a custom field (CF) |
+| [SWM - Software Configuration - Report - Azure AD Connect Version Audit](<../vsa/reports/Azure AD Connect Version Audit.md>) | Report          | Pulls a report of all endpoints with a valid version number in the CF |
+| [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](<../vsa/reports/Azure AD Connect Version Audit.md>) | Report Part     | Builds the report                                      |
+| [SWM - Software Configuration - Custom Field - xPVAL Azure AD Connect Version](<../vsa/custom-fields/xPVAL Azure AD Connect Version.md>) | Custom Field - Machine | Contains the version data                        |
+| [SWM - Software Configuration - View - xPVAL Azure AD Connect Version](<../vsa/views/xPVAL Azure AD Connect Version.md>) | View            | Filters agents' view by endpoints with a valid version in the CF |
 
 ## Implementation
 
@@ -31,6 +31,7 @@ To provide comprehensive information about which servers have Azure AD Connect s
 - Import the procedure for Azure AD Connect Version Audit
 - Import the policy for Azure AD Connect Version Audit
 - Import the report for Azure AD Connect Version Audit
+
 
 
 

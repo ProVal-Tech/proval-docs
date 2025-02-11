@@ -21,7 +21,7 @@ This solution provides information on a workstation's battery state.
 |---------------------------------------------------------------------------------------------|------------------|--------------------------------------------------------------|
 | [Script - Property - Set](<../cwa/scripts/Property - Set.md>)                             | Automate Script   | Sets Computer or System Property.                             |
 | [Script - Get - Battery Report](<../cwa/scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) | Automate Script   | Places Battery data in a custom table.                       |
-| [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11417979) | Internal Monitor   | Checks for any machine that has not reported.                |
+| [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>) | Internal Monitor   | Checks for any machine that has not reported.                |
 | △ CUSTOM - Execute Script - Get-BatteryReport                                              | Alert Template    | Executes the data collection script on the machines detected by the internal monitor. |
 | [Dataview - Proval - Battery Report](<../cwa/dataviews/Battery Report.md>)               | Dataview         | Displays Battery report information and calculates battery state using global or computer thresholds. |
 
@@ -42,7 +42,7 @@ This solution provides information on a workstation's battery state.
    - [Dataview - Proval - Battery Report](<../cwa/dataviews/Battery Report.md>)
 
 3. **Import the following Internal Monitor using the ProSync Plugin:**
-   - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11417979)
+   - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>)
 
 4. **Import the following alert template using the ProSync Plugin:**
    - `△ CUSTOM - Execute Script - Get-BatteryReport`
@@ -58,9 +58,10 @@ This solution provides information on a workstation's battery state.
 
 7. **Configure the solution as follows:**
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11417979)
+     - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>)
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
+
 
 
 

@@ -35,7 +35,7 @@ The purpose of this solution is to deploy the Threatlocker agent on Windows and 
 
 | Content                                                                                          | Type          | Description                                                                                                 |
 |--------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Task - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730645)     | Script Editor | Installs Threatlocker on both Windows and Mac operating systems.                                           |
+| [CW RMM - Task - Threatlocker Deployment](<../cwrmm/tasks/Threatlocker Deployment.md>)     | Script Editor | Installs Threatlocker on both Windows and Mac operating systems.                                           |
 
 ## Implementation
 
@@ -50,7 +50,8 @@ The purpose of this solution is to deploy the Threatlocker agent on Windows and 
    - [CW RMM - Dynamic Group - Deploy Threatlocker](<../cwrmm/groups/Deploy Threatlocker.md>)
 
 3. Create and deploy the following task:
-   - [CW RMM - Task - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730645)
+   - [CW RMM - Task - Threatlocker Deployment](<../cwrmm/tasks/Threatlocker Deployment.md>)
+
 
 
 

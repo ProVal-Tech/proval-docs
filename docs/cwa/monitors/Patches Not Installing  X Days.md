@@ -36,7 +36,7 @@ The purpose of this monitor set is to detect machines that do not have any cumul
 
 ## Dependencies
 
-- [EPM - Solution - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275092)
+- [EPM - Solution - Windows Update History Audit](<../../solutions/Windows Update History Audit.md>)
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 - [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
@@ -59,6 +59,7 @@ SQL is limiting it to machines with a managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
+
 
 
 

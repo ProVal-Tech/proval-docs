@@ -23,7 +23,7 @@ Run a scan and repair on all available drives, stopping the drives completely du
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Script - Invoke-RepairVolume](https://proval.itglue.com/DOC-5078775-11068928)
+- [EPM - Disk - Agnostic - Script - Invoke-RepairVolume](<../../powershell/Invoke-RepairVolume.md>)
 
 #### User Parameters
 
@@ -41,6 +41,7 @@ Run a scan and repair on all available drives, stopping the drives completely du
 ## Output
 
 - Script log
+
 
 
 

@@ -16,7 +16,7 @@ This dataview was created to display a detailed list of patches that are install
 ## Dependencies
 
 - [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
-- [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
+- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
 - [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
 - [CWM - Automate - Custom Table - plugin_proval_windows_update_report](<../tables/plugin_proval_windows_update_report.md>)
 
@@ -58,6 +58,7 @@ This dataview was created to display a detailed list of patches that are install
 | Recommended Memory              | Recommended Memory to install the Patch             |
 
 **Note:** Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
+
 
 
 

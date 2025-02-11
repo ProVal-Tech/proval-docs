@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This document explains how to update the channel of the Office installed on a machine, gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) task.
+This document explains how to update the channel of the Office installed on a machine, gathered by the [Microsoft 365 - Click-to-Run - Get Details](<../tasks/Microsoft 365 - Click-to-Run - Get Details.md>) task.
 
 ## Details
 
@@ -23,6 +23,7 @@ This document explains how to update the channel of the Office installed on a ma
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Update-Channel/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Update-Channel/image_2.png)
+
 
 
 

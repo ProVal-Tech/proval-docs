@@ -35,7 +35,7 @@ APs with incremental time values that call the main CF Update Script are designe
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Process
 
@@ -44,6 +44,7 @@ Uses Global Variables to set incremental values to the Automation Tracking CF.
 ## Output
 
 N/A
+
 
 
 

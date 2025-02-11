@@ -17,13 +17,14 @@ The value for this must be provided by the partner. The partner can get their M3
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](https://proval.itglue.com/DOC-5078775-16749809)
+[SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](<../../solutions/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>)
 
 ## Details
 
 | Managed Variable Name | Managed Variable Type | Description |
 |-----------------------|-----------------------|-------------|
 | M365TenantId          | Public                | Used by the agent procedure to specify the partner's M365 Tenant ID. The tenant ID is required for several of the group policies. |
+
 
 
 

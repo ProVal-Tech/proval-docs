@@ -18,16 +18,17 @@ The solution retrieves the computer's build number and compares it with Microsof
 | Content                                                                 | Type         | Function                                                       |
 |-------------------------------------------------------------------------|--------------|----------------------------------------------------------------|
 | [CW RMM - Custom Field - Latest Cumulative Update](<../cwrmm/custom-fields/Latest Cumulative Update.md>) | Custom Field | Stores and displays the result gathered by the script.        |
-| [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)      | Task         | Gathers the cumulative update details from the computer.      |
-| [CW RMM - Monitor - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029444)   | Monitor      | Monitors the result stored in the custom field and handles the alerting. |
+| [CW RMM - Task - Cumulative Update Audit](<../cwrmm/tasks/Cumulative Update Audit.md>)      | Task         | Gathers the cumulative update details from the computer.      |
+| [CW RMM - Monitor - Cumulative Update Audit](<../cwrmm/monitors/Cumulative Update Audit.md>)   | Monitor      | Monitors the result stored in the custom field and handles the alerting. |
 
 ## Implementation
 
 - Read all the associated documents carefully.
 - Create the custom field: [CW RMM - Custom Field - Latest Cumulative Update](<../cwrmm/custom-fields/Latest Cumulative Update.md>)
-- Create the task: [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
-- Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
-- Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029444)
+- Create the task: [CW RMM - Task - Cumulative Update Audit](<../cwrmm/tasks/Cumulative Update Audit.md>)
+- Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](<../cwrmm/tasks/Cumulative Update Audit.md>)
+- Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](<../cwrmm/monitors/Cumulative Update Audit.md>)
+
 
 
 

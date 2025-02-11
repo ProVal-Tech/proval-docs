@@ -35,7 +35,7 @@ This script is designed to run only when triggered by [EPM - Windows Configurati
 The following items depend on this script to function correctly:
 
 - [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>)
-- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421)
+- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](<./Reset Reboot Pending EDFs.md>)
 - [CWM - Automate - Script - Prompter](<./Prompter.md>)
 
 ### System Properties
@@ -66,6 +66,7 @@ The following items depend on this script to function correctly:
 ## Output
 
 The EDFs outlined above get updated as the script gets triggered. The monitor looks at the EDFs to confirm it is following the 'proval_RebootPromptDurBetweenPrompt' System Property.
+
 
 
 

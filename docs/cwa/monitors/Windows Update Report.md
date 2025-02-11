@@ -19,7 +19,7 @@ By default, it's a view-only monitor set, but the `default - create automate tic
 
 - [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
 - [CWM - Automate - Internal Monitor - ProVal - Development - Fetch Windows Update Report [DV]](<./Get Windows Update Report DV.md>)
-- [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
+- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
 - [CWM - Automate - Custom Table - plugin_proval_windows_update_report](<../tables/plugin_proval_windows_update_report.md>)
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 
@@ -92,6 +92,7 @@ WHERE
     'No', 
     'Yes') <> 'Yes'
 ```
+
 
 
 

@@ -43,7 +43,7 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 
 ## Dependencies
 
-[EPM - User Management - Internal Monitor - Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)
+[EPM - User Management - Internal Monitor - Local Admin Group Cleanup](<../monitors/Local Admin Group Cleanup.md>)
 
 ## Variables
 
@@ -114,6 +114,7 @@ The script attempted to ensure that the approved users/groups (@Approved_Members
 
 **Note:** Set a Ticket Category to the [ProVal - Production - Local Admin Group Cleanup](https://proval.itglue.com/5078775/docs/16783515) monitor set to enable the ticket creation feature of the script.  
 ![Ticketing Note](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_12.png)
+
 
 
 

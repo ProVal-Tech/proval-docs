@@ -70,7 +70,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 | AutomateBackup_Computerid         | 294                                    | True     | Stores the computer ID of the machine where the backup data will be saved.                          |
 | AutomateBackup_Base_Directory     | C:/CWA Solutions Backup                | False    | Stores the destination path for the backup data. The script will default to `C:/CWA Solutions Backup`. If there is a problem with the path in this variable, it will fall back to using `C:/CWAutomate`. |
 | ProVal_Alerts_Email_Address        | [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | True     | ProVal's email address to notify of the script's configuration issue. It should be `[Alerts@provaltech.com](mailto:Alerts@provaltech.com)`. |
-| Backup_Bitlocker_Audit_Data       | 1                                      | False    | Setting this system property to `1` will enable the backup of the [Bitlocker Status](https://proval.itglue.com/DOC-5078775-8946167) dataview. The default value is `1`. |
+| Backup_Bitlocker_Audit_Data       | 1                                      | False    | Setting this system property to `1` will enable the backup of the [Bitlocker Status](<../dataviews/Bitlocker Status.md>) dataview. The default value is `1`. |
 
 ## Script States
 
@@ -80,6 +80,7 @@ Creates a series of script states to keep track of each customization. There wil
 
 - Script Log
 - Files on Local Computer
+
 
 
 

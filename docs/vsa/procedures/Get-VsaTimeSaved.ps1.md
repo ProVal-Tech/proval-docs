@@ -36,7 +36,7 @@ This document generates a CSV report for the end client to show cumulative and m
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Process
 
@@ -49,6 +49,7 @@ This document generates a CSV report for the end client to show cumulative and m
 ## Output
 
 `$env:ProgramData/_automation/AgentProcedure/StackContent/TimeSavedByAutomation_$timestamp.csv`
+
 
 
 

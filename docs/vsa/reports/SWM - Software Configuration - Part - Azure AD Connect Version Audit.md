@@ -13,11 +13,11 @@ unlisted: false
 This document gathers CF data from the xPVAL Azure AD Connect Version and displays all endpoints that have a valid version.
 
 # Dependencies
-- [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853853)
-- [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853854)
-- [SWM - Software Configuration - View - xPVAL Azure AD Connect Version](https://proval.itglue.com/DOC-5078775-9853845)
-- [SWM - Software Configuration - Custom Field - xPVAL Azure AD Connect Version](https://proval.itglue.com/DOC-5078775-9853852)
-- [SWM - Software Configuration - Agent Procedure - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853848)
+- [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](<../policies/Azure AD Connect Version Audit.md>)
+- [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](<./Azure AD Connect Version Audit.md>)
+- [SWM - Software Configuration - View - xPVAL Azure AD Connect Version](<../views/xPVAL Azure AD Connect Version.md>)
+- [SWM - Software Configuration - Custom Field - xPVAL Azure AD Connect Version](<../custom-fields/xPVAL Azure AD Connect Version.md>)
+- [SWM - Software Configuration - Agent Procedure - Azure AD Connect Version Audit](<../procedures/Azure AD Connect Version Audit.md>)
 - [SWM - Software Configuration - Report - Azure AD Connect Version Audit](https://proval.itglue.com/5078775/docs/9853843)
 
 # Layout
@@ -34,6 +34,7 @@ List the report parts used. If custom report parts were designed during report c
   - **Advanced Filters (Field, Operator, Value):**
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
+
 
 
 

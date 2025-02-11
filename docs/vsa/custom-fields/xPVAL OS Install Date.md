@@ -15,13 +15,14 @@ This field is updated by the agent procedure to show the initial install date of
 
 ## Dependencies
 
-The Agent Procedure is required to populate this field: [OS Install Date Procedure](https://proval.itglue.com/DOC-5078775-12637113)
+The Agent Procedure is required to populate this field: [OS Install Date Procedure](<../procedures/OS Install Date.md>)
 
 ## Details
 
 | Field Name               | Type of Field (Machine or Organization) | Description                          |
 |--------------------------|-----------------------------------------|--------------------------------------|
 | xPVAL OS Install Date    | Machine                                 | Displays the initial install date of the OS |
+
 
 
 

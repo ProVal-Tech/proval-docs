@@ -16,7 +16,7 @@ There are four device groups related to the BitLocker drive encryption auditing 
 ## Dependencies
 
 - [CW RMM - Custom Field - BitLocker Key Backup Status](<../custom-fields/BitLocker Key Backup Status.md>)
-- [CW RMM - Custom Field - BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878960)
+- [CW RMM - Custom Field - BitLocker Status and Recovery Key Audit](<../custom-fields/BitLocker Status and Recovery Key Audit.md>)
 
 ## Create Device Groups
 
@@ -118,9 +118,10 @@ When adding criteria, please search for the **BitLocker Status and Recovery Key 
 
 This group holds all devices that have been audited for BitLocker and checks their status on a regular basis.
 
-This is the scheduled recurrence of the [CW RMM - Task - BitLocker Status and Recovery Key Audit](https://proval.itglue.com/DOC-5078775-12878983) task.
+This is the scheduled recurrence of the [CW RMM - Task - BitLocker Status and Recovery Key Audit](<../tasks/BitLocker Status and Recovery Key Audit.md>) task.
 
 ![Image](../../../static/img/BitLocker-Auditing/image_11.png)
+
 
 
 

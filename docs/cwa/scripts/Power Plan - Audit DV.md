@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Get-PowerPlan](https://proval.itglue.com/DOC-5078775-14439244) to gather data and store it in the [EPM - Data Collection - Custom Table - pvl_powerplan_audit](<../tables/pvl_powerplan_audit.md>) custom table. The data collected is subsequently displayed using the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](<../dataviews/Power Plan - Audit Script.md>) dataview.
+This is an Automate implementation of the agnostic script [EPM - Data Collection - Agnostic - Get-PowerPlan](<../../powershell/Get-PowerPlan.md>) to gather data and store it in the [EPM - Data Collection - Custom Table - pvl_powerplan_audit](<../tables/pvl_powerplan_audit.md>) custom table. The data collected is subsequently displayed using the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](<../dataviews/Power Plan - Audit Script.md>) dataview.
 
 **File Path:** C:/ProgramData/_Automation/script/Get-PowerPlan/Get-PowerPlan.ps1  
 **File Hash (Sha256):** DDE3ACC4A91AB8C7E8971A673AC07B8F4B3B34FA8DAD5849E156C5E6A80DFDF8  
@@ -27,7 +27,7 @@ This is an Automate implementation of the agnostic script [EPM - Data Collection
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Get-PowerPlan](https://proval.itglue.com/DOC-5078775-14439244)  
+- [EPM - Data Collection - Agnostic - Get-PowerPlan](<../../powershell/Get-PowerPlan.md>)  
 - [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](<../monitors/Execute Script - Power Plan - Audit.md>)  
 - [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)  
 
@@ -45,6 +45,7 @@ This is an Automate implementation of the agnostic script [EPM - Data Collection
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

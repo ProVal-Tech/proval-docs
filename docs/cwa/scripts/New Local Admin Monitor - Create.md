@@ -31,7 +31,7 @@ The generated remote monitor `ProVal - Production - New Local Admin` will use th
 
 ## Important Note
 
-The `ProVal - Production - New Local Admin Monitor` remote monitor will not be created for the machines where the [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783557) solution is enabled. Additionally, the script will remove the existing monitor after enabling the [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783557) solution for the machine.
+The `ProVal - Production - New Local Admin Monitor` remote monitor will not be created for the machines where the [Local Admin Group Cleanup](<../../solutions/Local Admin Group Cleanup.md>) solution is enabled. Additionally, the script will remove the existing monitor after enabling the [Local Admin Group Cleanup](<../../solutions/Local Admin Group Cleanup.md>) solution for the machine.
 
 ## Update Notice: 27-September-2024
 
@@ -164,6 +164,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 - **5:** **Primary Domain Controller (PDC)** — The computer is a Primary Domain Controller (PDC) in the domain. It handles user logins and manages the domain.
 
 So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meaning that it continues if the machine is **not** a domain controller.
+
 
 
 

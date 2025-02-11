@@ -35,19 +35,19 @@ To manage Bitlocker protection on endpoints.
 |---------|------|----------|
 | [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>) | Script | Gathers Bitlocker information from the target endpoint and stores it in the [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>). |
 | [Script - Bitlocker - AD Key Protector - Audit](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>) | Script | Audits the existing backup Bitlocker key protectors from an Active Directory server. |
-| [Script - Bitlocker Recovery Password - AD Backup](https://proval.itglue.com/DOC-5078775-10672949) | Script | This script backs up Bitlocker Recovery Passwords to the associated Active Directory instance. |
+| [Script - Bitlocker Recovery Password - AD Backup](<../cwa/scripts/Bitlocker Recovery Password - AD Backup.md>) | Script | This script backs up Bitlocker Recovery Passwords to the associated Active Directory instance. |
 | [Dataview - Bitlocker Status](<../cwa/dataviews/Bitlocker Status.md>) | Dataview | Displays information from the [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) filled by the [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). Additionally, it displays information about the Active Directory backup status of each key protector. |
 | [Dataview - Bitlocker Status - Retired Computers](<../cwa/dataviews/Bitlocker Status - Retired Computers.md>) | Dataview | Displays the Bitlocker data stored in the [Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>) for the retired computers. |
 | [SEC - Encryption - Dataview - Bitlocker - AD Backup Audit](<../cwa/dataviews/Bitlocker - AD Backup Audit.md>) | Dataview | Displays Bitlocker key protectors backed up to Active Directory. |
 | [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<../cwa/monitors/Security - Stale Bitlocker Data.md>) | Internal Monitor | Detects Windows computers where the [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>) script has not executed within the last 30 days and triggers the audit script to run. |
-| [CWM - Automate - Roles - Bitlocker](https://proval.itglue.com/DOC-5078775-17817010) | Role | These roles determine whether the Windows server is eligible for Bitlocker. They are also used in the [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<../cwa/monitors/Security - Stale Bitlocker Data.md>). |
+| [CWM - Automate - Roles - Bitlocker](<../cwa/roles/Bitlocker.md>) | Role | These roles determine whether the Windows server is eligible for Bitlocker. They are also used in the [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](<../cwa/monitors/Security - Stale Bitlocker Data.md>). |
 | [CWA Dataview - Bitlocker Initialize Failure Audit [Script]](<../cwa/dataviews/Bitlocker Initialize Failure Audit Script.md>) | Dataview (Optional) | This dataview contains records of computers where the BitLocker initialization failed twice due to the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../cwa/scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)". |
 
 ### Automation
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Script - Bitlocker - Initialize Volume](https://proval.itglue.com/DOC-5078775-8934308) | Script | Encrypts a drive with Bitlocker disk encryption. |
+| [Script - Bitlocker - Initialize Volume](<../cwa/scripts/Bitlocker - Volume - Initialize.md>) | Script | Encrypts a drive with Bitlocker disk encryption. |
 | [Script - Bitlocker - Remove Volume](<../cwa/scripts/Bitlocker - Remove Volume.md>) | Script | Disables Bitlocker protection on one (or all) volumes. |
 | [Internal Monitor - Bitlocker - Missing Key Protectors](<../cwa/monitors/Bitlocker - Missing Key Protectors.md>) | Internal Monitor | Detects computers where Bitlocker is enabled, and the drive is fully encrypted but does not have any key protectors. |
 | [Bitlocker - Volume - Add Recovery Password [Autofix]](<../cwa/scripts/Bitlocker - Volume - Add Recovery Password Autofix.md>) | Script | Adds a recovery password to the drive where BitLocker is enabled but a key protector is not found. It is an autofix script for the [Internal Monitor - Bitlocker - Missing Key Protectors](<../cwa/monitors/Bitlocker - Missing Key Protectors.md>) monitor set. |
@@ -71,7 +71,7 @@ To manage Bitlocker protection on endpoints.
 ## Implementation
 
 1. Import the following scripts using the ProSync plugin:
-   - [Script - Bitlocker - Initialize Volume](https://proval.itglue.com/DOC-5078775-8934308)
+   - [Script - Bitlocker - Initialize Volume](<../cwa/scripts/Bitlocker - Volume - Initialize.md>)
    - [Script - Bitlocker - Remove Volume](<../cwa/scripts/Bitlocker - Remove Volume.md>)
    - [Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>)
    - [Script - Bitlocker - AD Key Protector - Audit](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>)
@@ -86,7 +86,7 @@ To manage Bitlocker protection on endpoints.
 4. Import the following Alert Templates using the ProSync plugin:
    - △ Custom - Execute Script - Bitlocker - Audit
 
-5. Import the following roles using the SQL provided in the [CWM - Automate - Roles - Bitlocker](https://proval.itglue.com/DOC-5078775-17817010):
+5. Import the following roles using the SQL provided in the [CWM - Automate - Roles - Bitlocker](<../cwa/roles/Bitlocker.md>):
    - Windows Server Bitlocker
    - Windows Server Bitlocker-Utilities
    - Windows Server BitLocker-RemoteAdminTool
@@ -127,12 +127,12 @@ To manage Bitlocker protection on endpoints.
 
 1. If the partner would like their **recovery keys backed up into Active Directory**, a GPO must be created to support this.  
    - Import the script:  
-     [Script - Bitlocker Recovery Password - AD Backup](https://proval.itglue.com/DOC-5078775-10672949)  
+     [Script - Bitlocker Recovery Password - AD Backup](<../cwa/scripts/Bitlocker Recovery Password - AD Backup.md>)  
      [Bitlocker - AD Key Protector - Audit](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>)
    - Import the Dataview:  
      [Dataview - Bitlocker AD Backups](<../cwa/dataviews/Bitlocker - AD Backup Audit.md>)  
    - Use the following document to implement this:
-     - After the GPO has been created, run the [Script - Bitlocker Recovery Password - AD Backup](https://proval.itglue.com/DOC-5078775-10672949) on a single domain-joined workstation at that client to validate the settings.
+     - After the GPO has been created, run the [Script - Bitlocker Recovery Password - AD Backup](<../cwa/scripts/Bitlocker Recovery Password - AD Backup.md>) on a single domain-joined workstation at that client to validate the settings.
      - [Bitlocker - AD Key Protector - Audit](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>) (Tutorial at the bottom of the document)
 
 #### Missing Key Protectors
@@ -144,6 +144,7 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](<../cwa/scripts/Bitlocker - Volume - Add Recovery Password Autofix.md>).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
+
 
 
 

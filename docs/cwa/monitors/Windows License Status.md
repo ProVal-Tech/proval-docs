@@ -67,7 +67,7 @@ NonGenuineGrace: This means that the Windows installation is in the Non-Genuine 
 
 ## Implementation
 
-[Import - Remote Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-15423273)
+[Import - Remote Monitor - Windows License Status](<./Windows License Status.md>)
 
 ## FAQ
 
@@ -79,6 +79,7 @@ A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](<../sc
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
+
 
 
 

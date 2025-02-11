@@ -25,7 +25,7 @@ This script will make changes in the registry to set the update channel for Micr
 
 ## Dependencies
 
-[SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
+[SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<./Microsoft 365 - Click-to-Run - Get Details.md>)
 
 ## Client Level EDF
 
@@ -48,6 +48,7 @@ This script will make changes in the registry to set the update channel for Micr
 - Script Log
 - Custom Table
 - Dataview
+
 
 
 

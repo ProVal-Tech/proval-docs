@@ -20,20 +20,21 @@ The solution summary focuses on gathering hard drive failure data from target ma
 | [EPM - Disk - Agnostic - Get-DiskInfo](<../powershell/Get-DiskInfo.md>) | Agnostic script | PowerShell script to gather the data from the computer         |
 | [EPM - Disk - Script - Disk - Gather Critical Data](<../cwa/scripts/Disk - Gather Critical Data.md>) | Automate Script  | To execute the agnostic script and fetch the data into Automate |
 | [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../cwa/tables/plugin_proval_cdi_data.md>) | Custom Table    | To store the data gathered by the script                        |
-| [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639) | Dataview        | To display the data present in the custom table for all machines in one place |
+| [CWM - Automate - Dataview - Disk - Critical Data](<../cwa/dataviews/Disk - Critical Data.md>) | Dataview        | To display the data present in the custom table for all machines in one place |
 | [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) | Internal Monitor | To execute the Automate script at a regular interval           |
 | [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) | Internal Monitor | To generate an alert for machines where the Automate script has detected issues |
 
 ## Implementation
 
 - Import the [EPM - Disk - Script - Disk - Gather Critical Data](<../cwa/scripts/Disk - Gather Critical Data.md>) script.
-- Import the [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639) dataview.
+- Import the [CWM - Automate - Dataview - Disk - Critical Data](<../cwa/dataviews/Disk - Critical Data.md>) dataview.
 - Execute the script against any online Non-Virtual Windows workstation to generate the [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../cwa/tables/plugin_proval_cdi_data.md>) table.
 - Ensure the data for the machine is displayed in the dataview.
 - Import the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) Internal Monitor.
 - Implement the [EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data](<../cwa/monitors/Execute Script - Disk - Gather Critical Data.md>) Internal Monitor; check the monitor's document for implementation and alert template.
 - Import the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor.
 - Implement the [EPM - Disk - Internal Monitor - Predictive Hard Drive Failure](<../cwa/monitors/Predictive Hard Drive Failure.md>) Internal Monitor; check the monitor's document for implementation and alert template.
+
 
 
 

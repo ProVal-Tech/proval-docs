@@ -35,7 +35,7 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ![Client Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_3.png)
 
-**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734) internal monitor.
+**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](<../monitors/Microsoft 365 - Click-to-Run - Set Update Channel.md>) internal monitor.
 
 ## Computer Level EDF
 
@@ -45,13 +45,14 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ![Computer Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_4.png)
 
-**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17164734) internal monitor.
+**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](<../monitors/Microsoft 365 - Click-to-Run - Set Update Channel.md>) internal monitor.
 
 ## Output
 
 - Script log
 - Custom Table
 - Dataview
+
 
 
 

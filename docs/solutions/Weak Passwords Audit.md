@@ -19,8 +19,8 @@ This solution gathers information on users with potentially compromised password
 
 | Content                                                                                                    | Type  | Level    | Function                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Custom Field - Company - Weak Password Count](<../cwrmm/custom-fields/Company - Weak Password Count.md>)  | Text  | Endpoint | Holds the count of accounts with weak passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) |
-| [CW RMM - Custom Field - Company - Duplicate Password Count](<../cwrmm/custom-fields/Company - Duplicate Password Count.md>) | Text  | Endpoint | Holds the count of accounts with duplicate passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) |
+| [CW RMM - Custom Field - Company - Weak Password Count](<../cwrmm/custom-fields/Company - Weak Password Count.md>)  | Text  | Endpoint | Holds the count of accounts with weak passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](<../cwa/scripts/Weak Passwords - AD Test.md>) |
+| [CW RMM - Custom Field - Company - Duplicate Password Count](<../cwrmm/custom-fields/Company - Duplicate Password Count.md>) | Text  | Endpoint | Holds the count of accounts with duplicate passwords gathered by [RSM - Active Directory - Script - Weak Passwords - AD Test](<../cwa/scripts/Weak Passwords - AD Test.md>) |
 
 #### Device Groups
 
@@ -39,7 +39,7 @@ This solution gathers information on users with potentially compromised password
 
 | Content                                                                                                   | Description                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)              | This task utilizes the agnostic script [Test-WeakCredentials](<../powershell/Test-WeakCredentials.md>) to test the hashed credentials in AD against a known compromised or weak list. |
+| [CW RMM - Task - Weak Passwords - AD Test](<../cwrmm/tasks/Weak Passwords - AD Test.md>)              | This task utilizes the agnostic script [Test-WeakCredentials](<../powershell/Test-WeakCredentials.md>) to test the hashed credentials in AD against a known compromised or weak list. |
 
 ## Implementation
 
@@ -55,7 +55,8 @@ This solution gathers information on users with potentially compromised password
    - [CW RMM - Monitor - Duplicate Password Detected](<../cwrmm/monitors/Duplicate Password detected.md>)
 
 4. Create and deploy the following task:
-   - [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)
+   - [CW RMM - Task - Weak Passwords - AD Test](<../cwrmm/tasks/Weak Passwords - AD Test.md>)
+
 
 
 

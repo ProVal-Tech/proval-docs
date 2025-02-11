@@ -11,26 +11,26 @@ unlisted: false
 
 ## Summary
 
-The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>) and are utilized in the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).
+The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>) and are utilized in the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>).
 
 ## Dependencies
 
 - [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>)
-- [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286)
+- [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>)
 
 ## Details
 
 | Field Name                               | Level    | Type  | Default | Editable | Description                                                                                                                                                                 |
 |------------------------------------------|----------|-------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Browser Saved Pwd Audit Only             | Endpoint | Flag  | No      | Yes      | This will allow the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) to audit only on the endpoint.                          |
-| Browser Saved Pwd Audit Only             | Company  | Flag  | No      | Yes      | This field will allow the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) to audit only rather than delete it on the endpoints of the company. |
-| Exclude Browser Saved Pwd Audit          | Endpoint | Flag  | No      | Yes      | This will exclude the endpoint from executing the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).                             |
-| Exclude Browser Saved Pwd Audit          | Site     | Flag  | No      | Yes      | This will exclude the site endpoints from executing the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).                   |
-| Clear Browser Saved Pwd                  | Company  | Flag  | No      | Yes      | This will allow the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) to perform the saved password clearance from the browsers on company endpoints. |
-| Clear Browser Saved Pwd                  | Endpoint | Flag  | No      | Yes      | This will allow the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) to perform the saved password clearance from the browsers of the endpoint. |
-| Exclude Clear Browser Saved Pwd          | Site     | Flag  | No      | Yes      | This will deny the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) from performing the saved password clearance from the browsers of the site endpoints. |
-| Exclude Clear Browser Saved Pwd          | Endpoint | Flag  | No      | Yes      | This will deny the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) from performing the saved password clearance from the browsers of the endpoint. |
-| Browser Saved Pwd Audit Data             | Endpoint | Text  |         | No       | This stores the audit result of the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286).                                      |
+| Browser Saved Pwd Audit Only             | Endpoint | Flag  | No      | Yes      | This will allow the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) to audit only on the endpoint.                          |
+| Browser Saved Pwd Audit Only             | Company  | Flag  | No      | Yes      | This field will allow the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) to audit only rather than delete it on the endpoints of the company. |
+| Exclude Browser Saved Pwd Audit          | Endpoint | Flag  | No      | Yes      | This will exclude the endpoint from executing the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>).                             |
+| Exclude Browser Saved Pwd Audit          | Site     | Flag  | No      | Yes      | This will exclude the site endpoints from executing the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>).                   |
+| Clear Browser Saved Pwd                  | Company  | Flag  | No      | Yes      | This will allow the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) to perform the saved password clearance from the browsers on company endpoints. |
+| Clear Browser Saved Pwd                  | Endpoint | Flag  | No      | Yes      | This will allow the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) to perform the saved password clearance from the browsers of the endpoint. |
+| Exclude Clear Browser Saved Pwd          | Site     | Flag  | No      | Yes      | This will deny the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) from performing the saved password clearance from the browsers of the site endpoints. |
+| Exclude Clear Browser Saved Pwd          | Endpoint | Flag  | No      | Yes      | This will deny the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) from performing the saved password clearance from the browsers of the endpoint. |
+| Browser Saved Pwd Audit Data             | Endpoint | Text  |         | No       | This stores the audit result of the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>).                                      |
 
 ## Implementation
 
@@ -47,6 +47,7 @@ The custom fields described here are used in the creation of [Dynamic Groups - B
    Once the custom fields are created, please validate them by searching for them in the search input text field provided in the custom fields:  
    ![Search Custom Fields](../../../static/img/ClearAudit-Browsers-Saved-Password/image_4.png)  
    It will show you the custom fields you created.
+
 
 
 

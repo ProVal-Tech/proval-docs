@@ -28,7 +28,7 @@ To provide clients with a professional-looking Active Directory report that they
 
 | Content                                                                                                           | Type     | Function                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------|
-| [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)     | Script   | This script utilizes the agnostic script [EPM - Accounts - Agnostic - Script - Test-Credentials](https://proval.itglue.com/DOC-5078775-9590057) to test the hashed credentials in AD against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`. |
+| [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>)     | Script   | This script utilizes the agnostic script [EPM - Accounts - Agnostic - Script - Test-Credentials](https://proval.itglue.com/DOC-5078775-9590057) to test the hashed credentials in AD against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`. |
 | [AD - Create Views/Table/Schedule for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>) | Script   | This creates all of the necessary items in the database to ensure the [Active Directory Reporting Solution](./Active Directory Reporting Solution.md) functions correctly. |
 
 ### Additional Content
@@ -36,19 +36,19 @@ To provide clients with a professional-looking Active Directory report that they
 | Content                                                                                                           | Type             | Function                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | [Active Directory Reporting SQL Import Attachment](<../../unsorted/Active Directory Reporting SQL Import Attachment.md>)               | Document         | Please download the Import_All_AD_Reports.sql attached to this document.                                                       |
-| [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)       | Agnostic Content  | Agnostic method of gathering information on users with potentially compromised passwords by querying currently available comprehensive lists of known password hashes. It is used in the Automate script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761). |
+| [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)       | Agnostic Content  | Agnostic method of gathering information on users with potentially compromised passwords by querying currently available comprehensive lists of known password hashes. It is used in the Automate script [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>). |
 
 ## Dependencies
 
 These reports are dependent on the following items:
 
 1. [AD - Create Views/Table/Schedule for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
-2. [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761)
+2. [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>)
 3. The Active Directory Plugin must be installed and configured for these reports to function.
 
 ## Implementation
 
-1. Import the script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) (This needs to be imported before creating the Table/Views/Schedule).
+1. Import the script [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>) (This needs to be imported before creating the Table/Views/Schedule).
 2. Import the script [AD - Create Views/Table/Schedule for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>).
    - Run the script once to create the framework needed for the solution. **Delete the script afterward.**
 3. Download the attached SQL file named 'Import_All_AD_Reports.sql'.  
@@ -88,6 +88,7 @@ If all of your clients do not have any detected weak passwords, the auditing scr
 If no data is displayed at all in these reports, check to make sure your Active Directory Plugin is installed and configured for the client you are running it on.
 
 ![Plugin Example](../../../static/img/Active-Directory-Reporting-Solution/image_3.png)
+
 
 
 

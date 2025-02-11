@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The task involves executing a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task. Subsequently, the acquired data is formatted and stored in [Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362), facilitating enhanced auditing and monitoring processes.
+The task involves executing a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task. Subsequently, the acquired data is formatted and stored in [Custom Field - New Domain Admins](<../custom-fields/New Domain Admins.md>), facilitating enhanced auditing and monitoring processes.
 
 Importantly, this task should be scheduled against the primary domain controller for each domain.
 
@@ -26,7 +26,7 @@ The task has been updated to create a ticket. Therefore, the `New Domain Admins`
 
 ## Dependencies
 
-- [CW RMM - Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362)
+- [CW RMM - Custom Field - New Domain Admins](<../custom-fields/New Domain Admins.md>)
 - [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>)
 - [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
 - [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
@@ -40,7 +40,7 @@ The task has been updated to create a ticket. Therefore, the `New Domain Admins`
 
 ### Implementation
 
-Create the Custom Field [CW RMM - Custom Field - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033362).
+Create the Custom Field [CW RMM - Custom Field - New Domain Admins](<../custom-fields/New Domain Admins.md>).
 
 ## Create Script
 
@@ -302,6 +302,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Ticket**  
 ![Ticket Output](../../../static/img/New-Domain-Admins/image_66.png)  
+
 
 
 

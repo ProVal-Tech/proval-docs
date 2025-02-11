@@ -23,7 +23,7 @@ Check and confirm the Windows 11 installation status after running the Windows 1
 - [CW RMM - Custom Field - Windows 11 Upgrade RunTime](<../custom-fields/Endpoint - Windows 11 Upgrade RunTime.md>)
 - [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](<../custom-fields/Endpoint - Windows 11 Upgrade Failed.md>)
 - [CW RMM - Device Group - Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
-- [CW RMM - Task - Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365)
+- [CW RMM - Task - Windows 11 Installer (Beta)](<./Windows 11 Installer (Beta).md>)
 
 ## Variables
 
@@ -164,6 +164,7 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 
 - Script Log
 - Custom Field
+
 
 
 

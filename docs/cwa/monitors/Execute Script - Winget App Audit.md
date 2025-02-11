@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This document describes the execution of the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script once per week against Windows machines.
+This document describes the execution of the [Winget App Audit](<../scripts/Winget App Audit.md>) script once per week against Windows machines.
 
 ## Dependencies
 
-- [SWM - Software Update - Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895)  
+- [SWM - Software Update - Script - Winget App Audit](<../scripts/Winget App Audit.md>)  
 - [SWM - Software Update - Custom Table - pvl_winget_audit](<../tables/pvl_winget_audit.md>)  
 
 ## Target
@@ -25,6 +25,7 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Winget App Audit`
+
 
 
 

@@ -16,7 +16,7 @@ This document displays the latest audited speed test information from the last s
 ## Dependencies
 
 - [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>)
-- [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226)
+- [EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>)
 - [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>)
 
 ## Columns
@@ -51,6 +51,7 @@ This document displays the latest audited speed test information from the last s
 | ResultURL      | The URL of the speed test result.                                            |
 | DownloadMbps   | The download speed detected in Mbps.                                         |
 | UploadMbps     | The upload speed detected in Mbps.                                           |
+
 
 
 

@@ -15,7 +15,7 @@ The purpose of this group is to filter Windows Infrastructure Masters where the 
 
 ## Dependencies
 
-[CW RMM - Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513)
+[CW RMM - Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>)
 
 ## Group Details
 
@@ -42,6 +42,7 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_3.png)
 
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_4.png)
+
 
 
 

@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines whether the C2R Office Auto Update feature is enabled on the machine, as gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-17917390) task.
+This document outlines whether the C2R Office Auto Update feature is enabled on the machine, as gathered by the [Microsoft 365 - Click-to-Run - Get Details](<../tasks/Microsoft 365 - Click-to-Run - Get Details.md>) task.
 
 ## Details
 
@@ -23,6 +23,7 @@ This document outlines whether the C2R Office Auto Update feature is enabled on 
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Auto-Update/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Auto-Update/image_2.png)
+
 
 
 

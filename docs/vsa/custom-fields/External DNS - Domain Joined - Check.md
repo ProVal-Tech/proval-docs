@@ -64,11 +64,12 @@ This procedure checks to see if a machine is domain-joined and then verifies the
 
 ## Dependencies
 
-[Documentation Link](https://proval.itglue.com/DOC-5078775-13761628)
+[Documentation Link](<../../solutions/External DNS - Domain Joined - Check.md>)
 
 ## Output
 
 Procedure log files and other outputs.
+
 
 
 

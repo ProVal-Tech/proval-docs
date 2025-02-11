@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script. It is not necessary for all disks to show values for all columns/properties, as different drive models can return slightly different properties/results.
+Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk Info Report.md>) script. It is not necessary for all disks to show values for all columns/properties, as different drive models can return slightly different properties/results.
 
 ## Dependencies
 
-- [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045)  
+- [EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk Info Report.md>)  
 - [EPM - Disk - Custom Table - pvl_crystal_disk_info](<../tables/pvl_crystal_disk_info.md>)  
 
 ## Columns
@@ -61,6 +61,7 @@ Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Crystal-Disk-Info-Report/image_1.png)
+
 
 
 

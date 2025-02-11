@@ -18,16 +18,17 @@ The purpose of this document is to gather and present data about Windows Updates
 | Content                                                                                              | Type          | Function                                                                                                         |
 |------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------|
 | [EPM - Data Collection - Get-WindowsUpdateReport](<../powershell/Get-WindowsUpdateReport.md>)     | Agnostic      | Gathers the Windows Update data that the CWA script manipulates.                                               |
-| [EPM - Script - Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093)     | Script        | Calls [Get-WindowsUpdateReport](<../powershell/Get-WindowsUpdateReport.md>) and manipulates the data for insertion into [pvl_windows_updates](<../cwa/tables/pvl_windows_updates.md>). |
+| [EPM - Script - Windows Update History Audit](<../cwa/scripts/Windows Update History Audit.md>)     | Script        | Calls [Get-WindowsUpdateReport](<../powershell/Get-WindowsUpdateReport.md>) and manipulates the data for insertion into [pvl_windows_updates](<../cwa/tables/pvl_windows_updates.md>). |
 | [EPM - Custom Table - pvl_windows_updates](<../cwa/tables/pvl_windows_updates.md>)                | Custom Table  | Stores information about Windows Update history for agents.                                                     |
 | [EPM - Dataview - Windows Update History](<../unsorted/EPM - Dataview - Windows Update History.md>)| Dataview      | Displays information about Windows Update history for agents.                                                  |
 | [EPM - Internal Monitor - Patches Not Installing > X Days](<../cwa/monitors/Patches Not Installing  X Days.md>) | Internal Monitor | Monitors that uses the [pvl_windows_updates](<../cwa/tables/pvl_windows_updates.md>) table for referencing installed updates. |
 
 ## Implementation
 
-The script [Windows Update History Audit](https://proval.itglue.com/DOC-5078775-12275093) should be scheduled against all compliant Windows endpoints on a weekly basis.
+The script [Windows Update History Audit](<../cwa/scripts/Windows Update History Audit.md>) should be scheduled against all compliant Windows endpoints on a weekly basis.
 
 If required, implement the [Patches Not Installing > X Days](<../cwa/monitors/Patches Not Installing  X Days.md>) monitor following the instructions in the documentation.
+
 
 
 

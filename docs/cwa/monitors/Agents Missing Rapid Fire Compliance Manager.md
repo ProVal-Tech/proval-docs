@@ -15,7 +15,7 @@ This monitor detects the agent where the location of the agent contains the "Com
 
 ## Dependencies
 
-[CWA Script - Deploy Rapid Fire Compliance Management](https://proval.itglue.com/DOC-5078775-17700231)
+[CWA Script - Deploy Rapid Fire Compliance Management](<../scripts/Deploy Rapid Fire Compliance Management.md>)
 
 ## Target
 
@@ -26,6 +26,7 @@ Global
 *To create a ticket, please set the ticket category in the alerting section of the monitor.*
 
 ![Image](../../../static/img/Agents-Missing-Rapid-Fire-Compliance-Manager/image_1.png)
+
 
 
 

@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-Displays the list of the installed bloatware fetched by the [Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214) script.
+Displays the list of the installed bloatware fetched by the [Remove - PUA](<../scripts/Remove - PUA.md>) script.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Remove - PUA](https://proval.itglue.com/DOC-5078775-11157214)
+- [CWM - Automate - Script - Remove - PUA](<../scripts/Remove - PUA.md>)
 - [CWM - Automate - Custom Table - pvl_pua_audit](<../tables/pvl_pua_audit.md>)
 
 ## Columns
@@ -35,6 +35,7 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](https
 | Bloatware                 | Name of the Bloatware                               |
 | Category                  | Category of the Bloatware                           |
 | Data Collection Time      | Data Collection Time                                 |
+
 
 
 

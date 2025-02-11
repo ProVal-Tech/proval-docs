@@ -27,7 +27,7 @@ NOTE: In the [CWM - Automate - Dataview - Windows Update Report [Script]](<../cw
 | [CWM - Automate - Internal Monitor - ProVal - Development - Fetch Windows Update Report [DV]](<../cwa/monitors/Get Windows Update Report DV.md>) | Internal Monitor          | The purpose of this monitor set is to execute the [CWM - Automate - Script - Windows Update Report [DV]](<../cwa/scripts/Windows Update Report DV.md>) script once per week against all the machines with the Managed Patching Policy. It will execute the script against 200 online machines at a time and will run every 15 minutes to avoid overloading the script queue for larger environments. |
 | ~Fetch Windows Update Report                                                                                  | Alert Template           | Alert template to be used along with the [CWM - Automate - Internal Monitor - ProVal - Development - Fetch Windows Update Report [DV]](<../cwa/monitors/Get Windows Update Report DV.md>) Internal monitor to call the [CWM - Automate - Script - Windows Update Report [DV]](<../cwa/scripts/Windows Update Report DV.md>) script. |
 | [CWM - Automate - Internal Monitor - ProVal - Development - Windows - Patches Not Installing > 45 Days](https://proval.itglue.com/5078775/docs/10946278) | Internal Monitor          | The purpose of this monitor set is to detect the machines that do not have any Cumulative/Security Patches installed in the past 45 days. It will not detect any EOL machine, and will only detect the machines where the [CWM - Automate - Script - Windows Update Report [DV]](<../cwa/scripts/Windows Update Report DV.md>) script has been executed at least once in the past 7 days. |
-| [CWM - Automate - Internal Monitor - ProVal - Development - Script Failure - Windows Update Report](https://proval.itglue.com/DOC-5078775-11563432) | Internal Monitor          | This is an optional monitor set to keep an eye on the machines where the [CWM - Automate - Script - Windows Update Report [DV]](<../cwa/scripts/Windows Update Report DV.md>) script has executed at least twice in a month but failed to fetch any data. |
+| [CWM - Automate - Internal Monitor - ProVal - Development - Script Failure - Windows Update Report](<../cwa/monitors/Windows Update Report.md>) | Internal Monitor          | This is an optional monitor set to keep an eye on the machines where the [CWM - Automate - Script - Windows Update Report [DV]](<../cwa/scripts/Windows Update Report DV.md>) script has executed at least twice in a month but failed to fetch any data. |
 
 ## Implementation
 
@@ -45,7 +45,7 @@ NOTE: In the [CWM - Automate - Dataview - Windows Update Report [Script]](<../cw
   ```
 - If you would like to receive a ticket for the machines missing the Cumulative/Security Updates from the past 45 days, then import the [CWM - Automate - Internal Monitor - ProVal - Development - Windows - Patches Not Installing > 45 Days](https://proval.itglue.com/5078775/docs/10946278) monitor set.
 - Assign the ~Custom Ticket Creation Computer Template to this monitor set.
-- Import the [CWM - Automate - Internal Monitor - ProVal - Development - Script Failure - Windows Update Report](https://proval.itglue.com/DOC-5078775-11563432) monitor set. Do not set any alert template for this monitor set unless you want to receive a ticket for the machines that do not have any data in the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table even after the script has executed at least twice in the last 30 days.
+- Import the [CWM - Automate - Internal Monitor - ProVal - Development - Script Failure - Windows Update Report](<../cwa/monitors/Windows Update Report.md>) monitor set. Do not set any alert template for this monitor set unless you want to receive a ticket for the machines that do not have any data in the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table even after the script has executed at least twice in the last 30 days.
 
 ## FAQ
 
@@ -55,6 +55,7 @@ A: It's most likely due to permissions. Try running the [CWM - Automate - Script
 **Q: Even after executing the script, I am unable to find my computer in the dataview, and it shows 'Information Not Available' in the monitor set?**  
 A: Ensure that necessary exclusions are defined in the AV/security products. See [AV Exclusions - ProVal Standard](https://proval.itglue.com/DOC-5078775-10955006). Alternatively, a whitelist object can be defined/added in the AV/security product's portal using the certificate attached to the email to run this particular script.  
 **Note:** Whitelisting the certificate will not override any restrictions or rules that block or restrict the computers from communicating with [https://file.provaltech.com](https://file.provaltech.com).
+
 
 
 

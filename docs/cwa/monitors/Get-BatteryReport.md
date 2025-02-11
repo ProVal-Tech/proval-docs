@@ -18,7 +18,7 @@ This monitor checks twice a day, targeting only computers where the last battery
 - [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)
 - [EPM - Data Collection - Custom Table - plugin_proval_batteries](<../tables/plugin_proval_batteries.md>)
 - [CWM - Automate - Script - Property - Set](<../scripts/Property - Set.md>)
-- [EPM - Data Collection - Solution - Get-BatteryReport](https://proval.itglue.com/DOC-5078775-11149927)
+- [EPM - Data Collection - Solution - Get-BatteryReport](<../../solutions/Get-BatteryReport.md>)
 
 ## Target
 
@@ -29,6 +29,7 @@ The purpose of this monitor is to select all computers that have returned a vali
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
 The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
+
 
 
 

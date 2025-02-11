@@ -15,7 +15,7 @@ This dataview shows the current agent PowerShell versions.
 
 ## Dependencies
 
-[PowerShell Version Audit](https://proval.itglue.com/DOC-5078775-10218295)
+[PowerShell Version Audit](<../scripts/PowerShell Version Audit.md>)
 
 ## Columns
 
@@ -65,6 +65,7 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
+
 
 
 

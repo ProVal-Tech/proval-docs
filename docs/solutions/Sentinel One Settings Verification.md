@@ -17,16 +17,16 @@ The purpose of this solution is to identify instances where computers are utiliz
 
 | Content                                                                                                                                                                       | Type           | Function                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------------------|
-| [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820)                                             | Script         | Compares the Sentinel One token available on the computer with the one present in the client-level Sentinel Token EDF. |
-| [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](<../cwa/monitors/Execute Script - Sentinel One Settings Verification.md>)        | Internal Monitor| Executes the [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820) script once every 14 days against the Sentinel Managed client with the Sentinel Agent installed. |
+| [SWM - Software Configuration - Script - Sentinel One Settings Verification](<../cwa/scripts/Sentinel One Settings Verification.md>)                                             | Script         | Compares the Sentinel One token available on the computer with the one present in the client-level Sentinel Token EDF. |
+| [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](<../cwa/monitors/Execute Script - Sentinel One Settings Verification.md>)        | Internal Monitor| Executes the [SWM - Software Configuration - Script - Sentinel One Settings Verification](<../cwa/scripts/Sentinel One Settings Verification.md>) script once every 14 days against the Sentinel Managed client with the Sentinel Agent installed. |
 | △ CUSTOM - Execute Script - Sentinel One Settings Verification                                                                                                             | Alert Template  | Executes the script against the computers detected in the monitor set.                                               |
 
 ## Implementation
 
 - Read the solution-related documents carefully.
-- Import the [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820) script.
+- Import the [SWM - Software Configuration - Script - Sentinel One Settings Verification](<../cwa/scripts/Sentinel One Settings Verification.md>) script.
 - Import the [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](<../cwa/monitors/Execute Script - Sentinel One Settings Verification.md>) internal monitor.
-- Create/import the `△ CUSTOM - Execute Script - Sentinel One Settings Verification` alert template, and ensure that the alert template is running the [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820) script.
+- Create/import the `△ CUSTOM - Execute Script - Sentinel One Settings Verification` alert template, and ensure that the alert template is running the [SWM - Software Configuration - Script - Sentinel One Settings Verification](<../cwa/scripts/Sentinel One Settings Verification.md>) script.
 - Importing the script and internal monitor will not create the EDF(s), as both contents are using existing Sentinel One EDF.
 - Go to the client-level EDFs, find the name of the EDF that the partner is using to store the Sentinel One Installation Token, and set it to the script's global variable `Client_Level_Sentinel_One_Token_EDF_Name`.  
   ![Image](../../static/img/Sentinel-One-Settings-Verification/image_6.png)  
@@ -35,6 +35,7 @@ The purpose of this solution is to identify instances where computers are utiliz
   ![Image](../../static/img/Sentinel-One-Settings-Verification/image_8.png)  
 - Execute the script against a few random machines with Sentinel One installed and ensure that it's delivering as expected.
 - Implement the alert template to the internal monitor.
+
 
 
 

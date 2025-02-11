@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This dataview gathers the Windows Product Key from the [Role - Windows Product Key](https://proval.itglue.com/DOC-5078775-17415731).
+This dataview gathers the Windows Product Key from the [Role - Windows Product Key](<../roles/Windows Product Key.md>).
 
 ## Dependencies
 
-[Role - Windows Product Key](https://proval.itglue.com/DOC-5078775-17415731)
+[Role - Windows Product Key](<../roles/Windows Product Key.md>)
 
 ## Columns
 
@@ -27,6 +27,7 @@ This dataview gathers the Windows Product Key from the [Role - Windows Product K
 | Operating System    | Operating system name of the agent                  |
 | LastContact         | The last contact of the agent with ConnectWise Automate |
 | Windows Product Key  | Windows product key information of the agent        |
+
 
 
 

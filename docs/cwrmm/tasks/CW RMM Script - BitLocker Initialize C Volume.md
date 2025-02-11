@@ -20,7 +20,7 @@ The encryption methods that will be used to protect the target volume are:
 
 These two options come with custom field dependencies.  
 Refer to the document for the custom field dependencies check:  
-[CW RMM Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738)
+[CW RMM Custom Field - BitLocker Initialize C Volume](<../custom-fields/BitLocker Initialize C Volume.md>)
 
 ## Sample Run
 
@@ -30,7 +30,7 @@ Refer to the document for the custom field dependencies check:
 
 ## Dependencies
 
-[CW RMM Custom Field - BitLocker Initialize C Volume](https://proval.itglue.com/DOC-5078775-15829738)
+[CW RMM Custom Field - BitLocker Initialize C Volume](<../custom-fields/BitLocker Initialize C Volume.md>)
 
 ## Variables
 
@@ -419,6 +419,7 @@ In this window, search for the `ACP BitLocker INIT Result` field.
 **Custom Field:** `ACP BitLocker INIT Result`  
 **Value:** `%Output%`  
 ![Row 13 Custom Field](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_40.png)  
+
 
 
 

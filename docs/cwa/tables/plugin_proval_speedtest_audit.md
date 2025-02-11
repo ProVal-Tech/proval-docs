@@ -11,11 +11,11 @@ unlisted: false
 
 ## Purpose
 
-Stores results from speed tests run by the script [EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226).
+Stores results from speed tests run by the script [EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>).
 
 ## Dependencies
 
-[EPM - Network - Script - Internet Speed - Audit](https://proval.itglue.com/DOC-5078775-9166226).
+[EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>).
 
 ## Tables
 
@@ -48,6 +48,7 @@ Stores results from speed tests run by the script [EPM - Network - Script - Inte
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
+
 
 
 

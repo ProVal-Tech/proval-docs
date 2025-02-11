@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This script is a wrapper to install fonts using the agnostic [SWM - Software Install - Agnostic - Script - Install-Font](https://proval.itglue.com/DOC-5078775-10371922).
+This script is a wrapper to install fonts using the agnostic [SWM - Software Install - Agnostic - Script - Install-Font](<../../powershell/Install-Font.md>).
 
 ## Sample Run
 
@@ -24,7 +24,7 @@ This script is a wrapper to install fonts using the agnostic [SWM - Software Ins
 
 ## Dependencies
 
-- [SWM - Software Install - Agnostic - Script - Install-Font](https://proval.itglue.com/DOC-5078775-10371922)
+- [SWM - Software Install - Agnostic - Script - Install-Font](<../../powershell/Install-Font.md>)
 
 ## Variables
 
@@ -50,6 +50,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
 
 
 

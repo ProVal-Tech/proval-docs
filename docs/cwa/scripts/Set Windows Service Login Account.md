@@ -21,7 +21,7 @@ This document is used to change the service login account for a target service.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.itglue.com/DOC-5078775-8438992)
+- [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>)
 
 ## Variables
 
@@ -39,7 +39,7 @@ This document is used to change the service login account for a target service.
 
 ## Process
 
-See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.itglue.com/DOC-5078775-8438992) for process information.
+See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>) for process information.
 
 ## Output
 
@@ -49,6 +49,7 @@ See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](https://proval.i
   - `.//Set-ServiceLogin-log.txt`
   - `.//Set-ServiceLogin-data.txt`
   - `.//Set-ServiceLogin-error.txt`
+
 
 
 

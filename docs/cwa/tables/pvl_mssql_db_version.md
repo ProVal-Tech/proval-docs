@@ -11,11 +11,11 @@ unlisted: false
 
 ## Purpose
 
-The custom table stores the data gathered by the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) and is displayed in the [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865).
+The custom table stores the data gathered by the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) and is displayed in the [Dataview - MSSQL Database Version](<../dataviews/MSSQL Database Version.md>).
 
 ## Dependencies
 
-- [Dataview - MSSQL Database Version](https://proval.itglue.com/DOC-5078775-15161865)
+- [Dataview - MSSQL Database Version](<../dataviews/MSSQL Database Version.md>)
 - [Internal Monitor - Execute Script - Get MSSQL Database Version](<../monitors/Execute Script - Get MSSQL Database Version.md>)
 - [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>)
 
@@ -28,6 +28,7 @@ The custom table stores the data gathered by the [Script - Get MSSQL Database Ve
 | Version       | Varchar  | Version of the Database Instance     |
 | PatchLevel    | Varchar  | Patch Level of the Database Instance |
 | ScriptRunTime | DateTime | Data Collection Time                 |
+
 
 
 

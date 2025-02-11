@@ -24,12 +24,12 @@ Sample Ticket:
 
 - Import the script.
 - Create an alert template, such as ~Autofix - Agent ID assignment discrepancy.
-- Assign that alert template to the [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](https://proval.itglue.com/DOC-5078775-10829954) monitor set.
+- Assign that alert template to the [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](<../monitors/Agent ID assignment discrepancy.md>) monitor set.
 - Import the monitor set if it has not already been imported.
 
 ## Dependencies
 
-- [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](https://proval.itglue.com/DOC-5078775-10829954)
+- [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](<../monitors/Agent ID assignment discrepancy.md>)
 - [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>)
 - [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
 - [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](<./Automate Agent - Reinstall.md>)
@@ -63,6 +63,7 @@ Sample Ticket:
 
 - Ticket
 - Script logs
+
 
 
 

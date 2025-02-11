@@ -15,7 +15,7 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15822040)
+[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>)
 
 ## Details
 
@@ -26,6 +26,7 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---SentinelOne-Group-Key/image_1.png)
+
 
 
 

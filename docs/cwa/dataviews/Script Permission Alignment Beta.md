@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-The dataview will display the user classes that will be assigned to the stock scripts after running the [Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760857) script.
+The dataview will display the user classes that will be assigned to the stock scripts after running the [Script Permission Alignment [Beta]](<../scripts/Script Permission Alignment Beta.md>) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Script Permission Alignment [Beta]](https://proval.itglue.com/DOC-5078775-16760857)
+[CWM - Automate - Script - Script Permission Alignment [Beta]](<../scripts/Script Permission Alignment Beta.md>)
 
 ## Columns
 
@@ -27,6 +27,7 @@ The dataview will display the user classes that will be assigned to the stock sc
 | Script Path               | Full Path to the Script                              |
 | Access                    | Set of user classes who have permission to access this script |
 | User Class                | Name of the User Class(es) with access to this script |
+
 
 
 

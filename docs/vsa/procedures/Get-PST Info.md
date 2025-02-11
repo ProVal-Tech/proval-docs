@@ -65,11 +65,12 @@ This procedure gathers the name, location, and size of all the PST files on a ma
 
 ## Dependencies
 
-[Proval Documentation](https://proval.itglue.com/DOC-5078775-13650441)
+[Proval Documentation](<../custom-fields/Get-PST Info.md>)
 
 ## Output
 
 Procedure log files and computer log
+
 
 
 

@@ -15,7 +15,7 @@ This document outlines how to set up alerts for computers where the `Feature Upd
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
+- [CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)
 - [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
 
 ## Monitor
@@ -51,6 +51,7 @@ This document outlines how to set up alerts for computers where the `Feature Upd
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Failure/image_12.png)
+
 
 
 

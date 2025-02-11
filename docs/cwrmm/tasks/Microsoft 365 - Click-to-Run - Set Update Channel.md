@@ -21,7 +21,7 @@ This task will make changes in the registry to set the update channel for Micros
 
 ## Dependencies
 
-[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17435723)
+[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](<../../solutions/Microsoft 365 - Click-to-Run - Set Update Channel.md>)
 
 ## Task Creation
 
@@ -214,6 +214,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
 
 
 

@@ -17,12 +17,13 @@ This document checks endpoints to determine if they are domain-joined and report
 
 | Content                                                                 | Type            | Function                                             |
 |-------------------------------------------------------------------------|-----------------|-----------------------------------------------------|
-| [Custom Field for External DNS Results](https://proval.itglue.com/DOC-5078775-13761630) | Custom Field    | Custom field to label external DNS results          |
-| [Agent Procedure for Domain Join Detection](https://proval.itglue.com/DOC-5078775-13761629) | Agent Procedure  | Procedure to determine domain-joined machines with external DNS. |
+| [Custom Field for External DNS Results](<../vsa/custom-fields/External DNS - Domain Joined - Check.md>) | Custom Field    | Custom field to label external DNS results          |
+| [Agent Procedure for Domain Join Detection](<../vsa/custom-fields/External DNS - Domain Joined - Check.md>) | Agent Procedure  | Procedure to determine domain-joined machines with external DNS. |
 
 ## Implementation
 
 The Agent Procedure requires the Custom Field to be created beforehand.
+
 
 
 

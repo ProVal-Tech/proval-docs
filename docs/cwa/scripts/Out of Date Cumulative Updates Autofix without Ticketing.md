@@ -28,7 +28,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 
 ## Dependencies
 
-- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
+- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](<./Get Latest Installed Cumulative Update.md>)
 - [CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](<../monitors/Last Cumulative Update 75 Days ago.md>)
 - [EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>)
 - [SEC - Windows Update - Agnostic - Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>)
@@ -48,6 +48,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 ## Output
 
 - Script Log
+
 
 
 

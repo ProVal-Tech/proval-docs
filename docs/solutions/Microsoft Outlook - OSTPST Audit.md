@@ -20,7 +20,7 @@ This solution is designed to retrieve the file path and size details of OST and 
 | Content                                                                 | Type          | Function               |
 |-------------------------------------------------------------------------|---------------|------------------------|
 | [Script - Microsoft Outlook - OST/PST - Audit](<../cwa/scripts/Microsoft Outlook - OSTPST - Audit.md>)   | Script        | Fetch the data.        |
-| [Dataview - Microsoft Outlook - OST/PST Audit](https://proval.itglue.com/DOC-5078775-8023119)   | Dataview      | Display the data.      |
+| [Dataview - Microsoft Outlook - OST/PST Audit](<../cwa/dataviews/Microsoft Outlook - OSTPST Audit.md>)   | Dataview      | Display the data.      |
 | [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>) | Internal Monitor | Detects the machines.  |
 | △ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit       | Alert Template | Executes the script.   |
 
@@ -34,7 +34,7 @@ This solution is designed to retrieve the file path and size details of OST and 
 
 1. Import the following content from the `ProSync` plugin:
    - [Script - Microsoft Outlook - OST/PST - Audit](<../cwa/scripts/Microsoft Outlook - OSTPST - Audit.md>)
-   - [Dataview - Microsoft Outlook - OST/PST Audit](https://proval.itglue.com/DOC-5078775-8023119)
+   - [Dataview - Microsoft Outlook - OST/PST Audit](<../cwa/dataviews/Microsoft Outlook - OSTPST Audit.md>)
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
    - Alert Template - `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
 
@@ -45,6 +45,7 @@ This solution is designed to retrieve the file path and size details of OST and 
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../cwa/monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
+
 
 
 

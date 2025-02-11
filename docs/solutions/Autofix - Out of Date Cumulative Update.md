@@ -13,7 +13,7 @@ unlisted: false
 
 The objective of this solution is to install and report the most recent Cumulative Update (CU) on computers where a CU has not been installed within the last 75 days.
 
-It will utilize the [Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298946) solution to handle prompting and rebooting for workstations while allowing servers to manage their reboot process.
+It will utilize the [Reboot Prompter](<./Reboot Prompter.md>) solution to handle prompting and rebooting for workstations while allowing servers to manage their reboot process.
 
 The solution will only work for the following operating systems:  
 - Microsoft Windows 10  
@@ -31,7 +31,7 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 | Content                                                                 | Type    | Function                                                                                                          |
 |-------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------|
 | [Latest Cumulative Update Audit](<./Latest Cumulative Update Audit.md>) | Solution | Performs an audit of the computers where a CU has not been installed within the last 75 days.                    |
-| [Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298946)     | Solution | Handles prompting and rebooting for workstations                                                                  |
+| [Reboot Prompter](<./Reboot Prompter.md>)     | Solution | Handles prompting and rebooting for workstations                                                                  |
 
 #### Custom Field
 
@@ -68,7 +68,7 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 
 1. Import and implement the following solutions:  
    - [Latest Cumulative Update Audit](<./Latest Cumulative Update Audit.md>)  
-   - [Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298946)  
+   - [Reboot Prompter](<./Reboot Prompter.md>)  
 
 2. Create the following custom fields:  
    - Company - [Out_of_Date_CU_Autofix](<../cwrmm/custom-fields/Company - Out_of_Date_CU_Autofix.md>)  
@@ -85,6 +85,7 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 4. Create and deploy the following tasks:  
    - [Out of Date Cumulative Update (Autofix)](<../cwrmm/tasks/Out of Date Cumulative Update (Autofix).md>)  
    - [Out of Date Cumulative Update (Post Reboot Verification)](<../cwrmm/tasks/Out of Date Cumulative Update (Post Reboot Verification).md>)  
+
 
 
 

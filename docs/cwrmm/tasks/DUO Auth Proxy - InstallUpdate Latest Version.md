@@ -20,7 +20,7 @@ The script installs or updates the DUO Authentication Proxy application to the l
 
 ## Dependencies
 
-[CW RMM Custom Fields - DUO Auth Proxy Deployment](https://proval.itglue.com/DOC-5078775-17914128)
+[CW RMM Custom Fields - DUO Auth Proxy Deployment](<../custom-fields/DUO Auth Proxy Deployment.md>)
 
 ## Task Creation
 
@@ -296,6 +296,7 @@ Script log
 Custom field  
 
 ![Output](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_37.png)  
+
 
 
 

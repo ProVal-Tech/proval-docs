@@ -24,7 +24,7 @@ The script will attempt to modify the registry keys to disable fastboot on the W
 - [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](<../custom-fields/Endpoint - FastBoot_Disabled.md>) 
 - [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](<../custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) 
 - [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](<../custom-fields/Site - Disable_Fastboot_Exclusion.md>) 
-- [CW RMM - Device Group - Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) 
+- [CW RMM - Device Group - Disable FastBoot](<../groups/Disable FastBoot.md>) 
 
 ## Task Creation
 
@@ -137,7 +137,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-The task should be scheduled to run once per day against the [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) device group.
+The task should be scheduled to run once per day against the [Disable FastBoot](<../groups/Disable FastBoot.md>) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for the `Disable FastBoot` task.
@@ -156,7 +156,7 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
   ![Recurrence Updated](../../../static/img/Disable-FastBoot/image_47.png)  
 - Select the `Device Groups` option in the `Targeted Resources` section.  
   ![Targeted Resources](../../../static/img/Disable-FastBoot/image_48.png)  
-- Search and select the [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416) device group.  
+- Search and select the [Disable FastBoot](<../groups/Disable FastBoot.md>) device group.  
   ![Select Device Group](../../../static/img/Disable-FastBoot/image_49.png)  
 - Now click the `Run` button to initiate the task.  
   ![Run Task](../../../static/img/Disable-FastBoot/image_50.png)  
@@ -168,6 +168,7 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 
 - Script Log
 - Custom Field
+
 
 
 

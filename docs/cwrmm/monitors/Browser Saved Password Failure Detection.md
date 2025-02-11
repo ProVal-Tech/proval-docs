@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) in removing the browser-saved passwords.
+This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) in removing the browser-saved passwords.
 
 ## Create and Implement Monitor
 
@@ -20,7 +20,7 @@ This monitor is designed to create a ticket for the failure of the [Task - Clear
   ![Image 2](../../../static/img/Browser-Saved-Password-Failure-Detection/image_2.png)  
 
 - **Name**: Browser Saved Password Failure Detection  
-  **Description**: This monitor will detect the agents where the [Task - Clear/Audit - Browser Saved Password](https://proval.itglue.com/DOC-5078775-17309286) failed to remove the saved passwords from the browser.  
+  **Description**: This monitor will detect the agents where the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) failed to remove the saved passwords from the browser.  
   **Type**: Custom Field  
   **Severity**: Critical Non-Impact Alerts  
   **Family**: RMM Agent  
@@ -34,6 +34,7 @@ This monitor is designed to create a ticket for the failure of the [Task - Clear
   ![Image 5](../../../static/img/Browser-Saved-Password-Failure-Detection/image_5.png)  
 
 - Once all is done, click **Save**. The monitor will be created, and the ticket creation will be set.
+
 
 
 

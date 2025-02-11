@@ -15,7 +15,7 @@ This group adds the agent to the group for the "DUO Security Authentication Prox
 
 ## Dependencies
 
-[CW RMM Custom Fields - DUO Auth Proxy Deployment](https://proval.itglue.com/DOC-5078775-17914128)
+[CW RMM Custom Fields - DUO Auth Proxy Deployment](<../custom-fields/DUO Auth Proxy Deployment.md>)
 
 ## Details
 
@@ -61,6 +61,7 @@ This group adds the agent to the group for the "DUO Security Authentication Prox
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_15.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
 
 
 

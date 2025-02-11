@@ -17,15 +17,16 @@ This solution is used to check the Azure AD status of a machine. An agent proced
 
 | Content                                                                                       | Type            | Function                                           |
 |-----------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------|
-| [View Documentation](https://proval.itglue.com/DOC-5078775-12540473)                       | View            | Creates the view to allow filtering of the machines |
+| [View Documentation](<../vsa/views/Azure AD Status.md>)                       | View            | Creates the view to allow filtering of the machines |
 | [Custom Field Documentation](<../vsa/custom-fields/EPM - Data Collection - Custom Field- Azure AD Status.md>) | Custom Field    | Creates the custom field so that the procedure can update the status |
-| [Agent Procedure Documentation](https://proval.itglue.com/DOC-5078775-12540861)             | Agent Procedure  | The agent procedure updates the system info.       |
+| [Agent Procedure Documentation](<../vsa/procedures/Azure AD Status.md>)             | Agent Procedure  | The agent procedure updates the system info.       |
 
 ## Implementation
 
 - A view needs to be created.
 - A custom field needs to be created.
 - The agent procedure needs to be run once these are created.
+
 
 
 

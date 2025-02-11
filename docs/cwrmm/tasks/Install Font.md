@@ -21,7 +21,7 @@ This task is used to install fonts from a particular directory or file.
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Script - Install-Font](https://proval.itglue.com/DOC-5078775-10371922)
+[SWM - Software Install - Agnostic - Script - Install-Font](<../../powershell/Install-Font.md>)
 
 ## User Parameters
 
@@ -180,6 +180,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

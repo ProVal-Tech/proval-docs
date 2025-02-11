@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This document displays the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011).
+This document displays the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](<../monitors/Windows License Status.md>).
 
 ## Dependencies
 
-[EPM - Windows Configuration - Monitor - Windows License Status](https://proval.itglue.com/DOC-5078775-8269011).
+[EPM - Windows Configuration - Monitor - Windows License Status](<../monitors/Windows License Status.md>).
 
 ## Columns
 
@@ -31,6 +31,7 @@ This document displays the status of the Windows License fetched by the remote m
 | Last Contact           | Last contact time of the computer                                  |
 | Data Collection Time    | The time when the Windows License Status was fetched              |
 | Windows License Status  | The status of the Windows license, indicating if it has expired, is about to expire, or is licensed. |
+
 
 
 

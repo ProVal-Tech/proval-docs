@@ -16,7 +16,7 @@ This monitor creates a ticket if accounts with duplicate passwords are detected 
 ## Dependencies
 
 - [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
-- [CW RMM - Task - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-17546396)
+- [CW RMM - Task - Weak Passwords - AD Test](<../tasks/Weak Passwords - AD Test.md>)
 - [CW RMM - Solution - Weak Passwords Audit](<../../solutions/Weak Passwords Audit.md>)
 
 ## Target
@@ -56,6 +56,7 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
 
 
 
