@@ -22,7 +22,7 @@ This document outlines the process of setting both Custom Fields (CFs) to 0.
 
 ## Dependencies
 
-- [VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+- [VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Process
 
@@ -31,6 +31,7 @@ The process involves setting both CFs to 0 for ease of implementation, as empty 
 ## Output
 
 The expected output is the updated Custom Fields.
+
 
 
 

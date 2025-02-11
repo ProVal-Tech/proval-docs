@@ -13,13 +13,14 @@ unlisted: false
 
 The custom field is used by the Agent procedure of the same name.
 
-See the solution for full details: [https://proval.itglue.com/DOC-5078775-12754461](https://proval.itglue.com/DOC-5078775-12754461)
+See the solution for full details: [https://proval.itglue.com/DOC-5078775-12754461](<../solutions/Egnyte - Install.md>)
 
 ## Details
 
 | Field Name                  | Type of Field (Machine or Organization) | Description                                                    |
 |-----------------------------|-----------------------------------------|----------------------------------------------------------------|
 | cPVALEgnyteReboot          | Machine                                 | Designates whether the machine needs to be rebooted following Egnyte installation. |
+
 
 
 

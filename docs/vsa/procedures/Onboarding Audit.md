@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](https://proval.itglue.com/DOC-5078775-9733460) and places the reports into getFiles.
+Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](<../../powershell/Get-VSAAuditReports.md>) and places the reports into getFiles.
 
 ## Example Agent Procedure Log
 
@@ -38,7 +38,7 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](https://proval.itglue.com/D
 
 ## Dependencies
 
-[VSA - Kaseya - Agnostic - Get-VSAAuditReports](https://proval.itglue.com/DOC-5078775-9733460) and all associated requirements. See linked documentation for more details.
+[VSA - Kaseya - Agnostic - Get-VSAAuditReports](<../../powershell/Get-VSAAuditReports.md>) and all associated requirements. See linked documentation for more details.
 
 ## Process
 
@@ -50,6 +50,7 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](https://proval.itglue.com/D
 
 - AP Log
 - getFiles: StackContent/Audits/#ClientName#/AuditReport.xlsx
+
 
 
 

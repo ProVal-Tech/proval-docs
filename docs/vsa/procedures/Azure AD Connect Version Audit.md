@@ -40,11 +40,11 @@ Copy and paste the Agent Procedure Log showing all steps below.
 
 ## Dependencies
 
-- [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853853)
-- [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853854)
-- [SWM - Software Configuration - View - xPVAL Azure AD Connect Version](https://proval.itglue.com/DOC-5078775-9853845)
-- [SWM - Software Configuration - Custom Field - xPVAL Azure AD Connect Version](https://proval.itglue.com/DOC-5078775-9853852)
-- [SWM - Software Configuration - Agent Procedure - Azure AD Connect Version Audit](https://proval.itglue.com/DOC-5078775-9853848)
+- [SWM - Software Configuration - Policy - Azure AD Connect Version Audit](<../policies/Azure AD Connect Version Audit.md>)
+- [SWM - Software Configuration - Report Part - Azure AD Connect Version Audit](<../reports/Azure AD Connect Version Audit.md>)
+- [SWM - Software Configuration - View - xPVAL Azure AD Connect Version](<../views/xPVAL Azure AD Connect Version.md>)
+- [SWM - Software Configuration - Custom Field - xPVAL Azure AD Connect Version](<../custom-fields/xPVAL Azure AD Connect Version.md>)
+- [SWM - Software Configuration - Agent Procedure - Azure AD Connect Version Audit](<./Azure AD Connect Version Audit.md>)
 - [SWM - Software Configuration - Report - Azure AD Connect Version Audit](https://proval.itglue.com/5078775/docs/9853843)
 
 ## Variables
@@ -71,6 +71,7 @@ Document the various variables in the script. Delete any section that is not rel
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
 
 
 

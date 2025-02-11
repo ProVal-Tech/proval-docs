@@ -19,7 +19,7 @@ This document implements group policies to redirect Windows known folders (Deskt
 
 ## Associated Content
 
-- [SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](https://proval.itglue.com/DOC-5078775-16749809)
+- [SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](<../../solutions/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>)
 
 ## Implementation
 
@@ -70,6 +70,7 @@ A status of Success is expected.
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_6.png)  
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_7.png)  
+
 
 
 

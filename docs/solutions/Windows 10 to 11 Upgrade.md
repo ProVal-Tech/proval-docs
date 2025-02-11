@@ -13,7 +13,7 @@ unlisted: false
 
 The solution aims to identify Windows 10 computers that are compatible with Windows 11 for an upgrade. It initiates the upgrade to Windows 11 for compatible computers.
 
-**Note:** The solution employs a policy and package to automatically upgrade compatible Windows 10 computers. In cases where the upgrade policy fails, the [Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365) task can serve as a backup script to facilitate the upgrade.
+**Note:** The solution employs a policy and package to automatically upgrade compatible Windows 10 computers. In cases where the upgrade policy fails, the [Windows 11 Installer (Beta)](<../cwrmm/tasks/Windows 11 Installer (Beta).md>) task can serve as a backup script to facilitate the upgrade.
 
 ## Upgrade Notice: 9-November-2024
 
@@ -56,19 +56,19 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Install Windows 11](https://proval.itglue.com/DOC-5078775-18002003) | OS Patching Desktop | Policy to enable Windows 11 installation for Windows 10 machines. |
+| [Install Windows 11](<../cwrmm/policies/Install Windows 11.md>) | OS Patching Desktop | Policy to enable Windows 11 installation for Windows 10 machines. |
 
 #### Packages
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Install Windows 11](https://proval.itglue.com/DOC-5078775-18002769) | Policy Group | Enables Windows 11 installation for compatible Windows 10 computers. |
+| [Install Windows 11](<../cwrmm/packages/Install Windows 11.md>) | Policy Group | Enables Windows 11 installation for compatible Windows 10 computers. |
 
 #### Optional Tasks
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365) | Script Editor | This task can be used as a backup plan in case of Windows 11 installation policy failure. Installs Windows 11 on a compatible Windows 10 computer. The default nature of the script is to restart the computer to complete the upgrade. However, the `NoReboot` parameter provides an option to suppress the reboot. The computer should be rebooted at the earliest convenience to complete the upgrade. |
+| [Windows 11 Installer (Beta)](<../cwrmm/tasks/Windows 11 Installer (Beta).md>) | Script Editor | This task can be used as a backup plan in case of Windows 11 installation policy failure. Installs Windows 11 on a compatible Windows 10 computer. The default nature of the script is to restart the computer to complete the upgrade. However, the `NoReboot` parameter provides an option to suppress the reboot. The computer should be rebooted at the earliest convenience to complete the upgrade. |
 
 ## Implementation
 
@@ -89,10 +89,10 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - [Windows 11 Compatibility Validation](<../cwrmm/tasks/Windows 11 Compatibility Validation.md>)
 
 4. Create the following optional task:
-   - [Windows 11 Installer (Beta)](https://proval.itglue.com/DOC-5078775-15835365)
+   - [Windows 11 Installer (Beta)](<../cwrmm/tasks/Windows 11 Installer (Beta).md>)
 
 5. Create the following policy:
-   - [Install Windows 11](https://proval.itglue.com/DOC-5078775-18002003)
+   - [Install Windows 11](<../cwrmm/policies/Install Windows 11.md>)
 
    **Note of Caution:**
    - This policy document is just for reference.
@@ -100,12 +100,13 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - Making a separate patch policy group just for upgrading the OS while leaving the rest of the patching off will override the existing patch policy for that machine, and that machine won't receive any patches EXCEPT for the OS upgrade.
 
 6. Create the following policy group:
-   - [Install Windows 11](https://proval.itglue.com/DOC-5078775-18002769)
+   - [Install Windows 11](<../cwrmm/packages/Install Windows 11.md>)
 
    **Note of Caution:**
    - This policy group document is just for reference.
    - Use the existing policy in conjunction with the policy group if you have not created a new one.
    - The end goal here is to apply an `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](<../cwrmm/groups/Upgrade Enabled Windows 11 Compatible Machines.md>) group.
+
 
 
 

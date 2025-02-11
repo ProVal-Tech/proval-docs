@@ -19,7 +19,7 @@ Remove or audit potentially unwanted applications on Windows systems (PUAs).
 |-------------------------------------------------------------------------------------------------------|--------------------|-------------------------------|
 | [SWM - Software Uninstall - Agnostic - Remove-PUA](<../powershell/Remove-PUA.md>)                 | Agnostic Script     | Remove or audit PUAs.        |
 | [SWM - Software Uninstall - Agent Procedure - PUA Remove](<../vsa/procedures/PUA%20Remove.md>)   | Kaseya Procedure    | VSA implementation of Remove-PUA |
-| [CWM - Automate - Script - Remove - PUA - Command](https://proval.itglue.com/DOC-5078775-11157214) | Automate Script     | CWA implementation of Remove-PUA |
+| [CWM - Automate - Script - Remove - PUA - Command](<../cwa/scripts/Remove - PUA.md>) | Automate Script     | CWA implementation of Remove-PUA |
 
 ## Implementation
 
@@ -32,6 +32,7 @@ Remove or audit potentially unwanted applications on Windows systems (PUAs).
 1. I don't see the bloatware that I want to get rid of, and my script is erroring, telling me that it could not find the item in any list.
    1. This will happen if the passed bloatware object is not supported in our current script.
    2. You may submit a request to us to add the desired item.
+
 
 
 

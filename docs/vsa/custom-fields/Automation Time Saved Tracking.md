@@ -15,7 +15,7 @@ This document keeps a running total of the approximate amount of time saved for 
 
 ## Dependencies
 
-- [VSA - VSA Configuration - Solution - Automation Time Saved Tracking](https://proval.itglue.com/DOC-5078775-11143659)
+- [VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
 
 ## Details
 
@@ -23,6 +23,7 @@ This document keeps a running total of the approximate amount of time saved for 
 |----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
 | xPVAL Automation Time Saved Monthly     | CF                                      | Integer representing the number of minutes saved through automation. Resets monthly. |
 | xPVAL Automation Time Saved Cumulative  | CF                                      | Integer representing the total number of minutes saved through automation.    |
+
 
 
 

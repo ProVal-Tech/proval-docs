@@ -34,11 +34,11 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 |---------|------|----------|
 | [Monitor - Reboot Pending [Prompt]](<../cwa/monitors/Reboot Pending Prompt.md>) | Internal Monitor | To monitor for machines the client decides need to be rebooted and issue a script to prompt the user. |
 | [Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644) | Script | To physically handle the reboot prompting and execution. |
-| [Script - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) | Script | To clear all flags indicating the machine needs a reboot so they can be set again later. |
-| [Monitor - Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) | Internal Monitor | This internal monitor is designed to detect the agents whose reboot was done by the script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It detects the agents and triggers the script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421) to clear the EDFs so they can be re-triggered at another time. |
+| [Script - Reset Reboot Pending EDFs](<../cwa/scripts/Reset Reboot Pending EDFs.md>) | Script | To clear all flags indicating the machine needs a reboot so they can be set again later. |
+| [Monitor - Reset Reboot Pending EDFs](<../cwa/monitors/Reset Reboot Pending EDFs.md>) | Internal Monitor | This internal monitor is designed to detect the agents whose reboot was done by the script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It detects the agents and triggers the script [Reset Reboot Pending EDFs](<../cwa/scripts/Reset Reboot Pending EDFs.md>) to clear the EDFs so they can be re-triggered at another time. |
 | [Monitor - Machines with Login Bug Issue](<../cwa/monitors/Machines with Login Bug Issue.md>) | Internal Monitor | This internal monitor detects the agents with Login Bug Issues that have not been rebooted for more than 7 days since detection. |
 | △ Custom - Autofix - Prompt for Reboot with Forced Reboot | Alert Template | This template is used with the monitor [Reboot Pending [Prompt]](<../cwa/monitors/Reboot Pending Prompt.md>) to schedule the autofix script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). |
-| △ Custom - Autofix - Reset Reboot Pending EDFs | Alert Template | This template is used with the monitor [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) to schedule the autofix script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421). |
+| △ Custom - Autofix - Reset Reboot Pending EDFs | Alert Template | This template is used with the monitor [Reset Reboot Pending EDFs](<../cwa/monitors/Reset Reboot Pending EDFs.md>) to schedule the autofix script [Reset Reboot Pending EDFs](<../cwa/scripts/Reset Reboot Pending EDFs.md>). |
 | △ Custom - Ticket Creation - Computer | Alert Template | This template is used with the monitor [Machines with Login Bug Issue](<../cwa/monitors/Machines with Login Bug Issue.md>). |
 | [Dataview - User Prompt - Reboot [Audit]](<../cwa/dataviews/User Prompt - Reboot Audit.md>) | Dataview | This dataview is designed to track the workings of the [User Prompt for the Reboot](<./User Prompt for Reboot.md>) solution. |
 
@@ -47,11 +47,11 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 ### Updating Process:
 - Remove the monitor 'ProVal - Production - Reboot Pending [Prompt]' (if it exists)
   - Take note of any exclusions made to this monitor; however, there will likely be no customizations to it.
-- Remove the monitor [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-13433274) (if it exists)
+- Remove the monitor [Reset Reboot Pending EDFs](<../cwa/monitors/Reset Reboot Pending EDFs.md>) (if it exists)
 - Remove the Alert Template '~Autofix - Prompt for Reboot and Force' (or whatever is assigned to the monitor presently; we will be importing a new alert template with this solution).
   - If you cannot find any alert templates configured, skip over this step.
 - Update the script [User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644)
-- Update the script [Reset Reboot Pending EDFs](https://proval.itglue.com/DOC-5078775-9077421)
+- Update the script [Reset Reboot Pending EDFs](<../cwa/scripts/Reset Reboot Pending EDFs.md>)
 - Import both alert templates '△ Custom - Autofix - Reset Reboot Pending EDFs' and '△ Custom - Autofix - Prompt for Reboot with Forced Reboot'
 - Delete the Reset Reboot Pending EDFs Script Schedule on the All Agents group
 
@@ -161,6 +161,7 @@ Then this will pop up, explaining the reboot:
 | Disable Reboot Prompt | Checkbox | Exclusions | Client | Flag this EDF to exclude the client from the solution. |
 | Disable Reboot Prompt | Checkbox | Exclusions | Location | Flag this EDF to exclude the location from the solution. |
 | Disable Reboot Prompt | Checkbox | Exclusions | Computer | Flag this EDF to exclude the computer from the solution. |
+
 
 
 
