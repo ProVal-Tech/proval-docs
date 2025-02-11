@@ -22,14 +22,15 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Dependencies
 
 - [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
-- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
-- [CWM - Automate - Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104)
+- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](<./Get Latest Installed Cumulative Update.md>)
+- [CWM - Automate - Solution - Latest Installed Cumulative Update](<../../solutions/Latest Installed Cumulative Update.md>)
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<./MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 
 ## Output
 
 - Custom Views
+
 
 
 

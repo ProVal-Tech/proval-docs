@@ -22,7 +22,7 @@ Appends data from the agnostic script to the created table.
 ## Dependencies
 
 - [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
-- [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639)
+- [CWM - Automate - Dataview - Disk - Critical Data](<../dataviews/Disk - Critical Data.md>)
 
 ## Process
 
@@ -36,6 +36,7 @@ The location and method by which this script returns data:
 - Script state
 - Local file on computer
 - Dataview
+
 
 
 

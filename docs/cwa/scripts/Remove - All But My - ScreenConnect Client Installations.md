@@ -29,7 +29,7 @@ This script removes all instances of ScreenConnect from the machine except the o
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - Remove Additional ScreenConnect Clients](https://proval.itglue.com/DOC-5078775-15274649)
+[CWM - Automate - Internal Monitor - Remove Additional ScreenConnect Clients](<../monitors/Remove Additional ScreenConnect Clients.md>)
 
 ## Importing Script via XML
 
@@ -87,6 +87,7 @@ This script removes all instances of ScreenConnect from the machine except the o
 - Script Logs
 
 </div>
+
 
 
 

@@ -15,7 +15,7 @@ This document contains the devices where the "DUO Security Authentication Proxy"
 
 ## Dependencies
 
-[CW RMM Custom Fields - DUO Auth Proxy Deployment](https://proval.itglue.com/DOC-5078775-17914128)
+[CW RMM Custom Fields - DUO Auth Proxy Deployment](<../custom-fields/DUO Auth Proxy Deployment.md>)
 
 ## Details
 
@@ -46,6 +46,7 @@ This document contains the devices where the "DUO Security Authentication Proxy"
    - Set `Failed` in the comparison condition.  
    ![Search and Select Custom Field](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_7.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
 
 
 

@@ -24,7 +24,7 @@ To track the estimated time saved to the client via ProVal automation.
 | [VSA - VSA Configuration - Agent Procedure - Automation Time Saved Initialize](<../vsa/procedures/Automation Time Saved Initialize.md>) | AP     | Sets both CFs to 0. This is for ease of implementation, as empty Custom Fields cannot be polled with Database Views. |
 | [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../vsa/procedures/Automation Time Saved Reports.md>) | AP     | Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<../vsa/procedures/Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into GetFiles for client and consultant access. |
 | [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<../vsa/procedures/Get-VsaTimeSaved.ps1.md>) | Powershell | Generates a CSV report for the end client to show cumulative and monthly time saved values for each org in their environment, as well as the total for all orgs. |
-| [VSA - VSA Configuration - Custom Fields - xPVAL Automation Time Saved](https://proval.itglue.com/DOC-5078775-11143830) | Machine CF | Where the cumulative and monthly time saved data is stored                                   |
+| [VSA - VSA Configuration - Custom Fields - xPVAL Automation Time Saved](<../vsa/custom-fields/Automation Time Saved Tracking.md>) | Machine CF | Where the cumulative and monthly time saved data is stored                                   |
 | [VSA - VSA Configuration - Policy - Automation Time Monthly Reset Schedule](<../vsa/policies/Automation Time Monthly Reset Schedule.md>) | Policy | Schedules the Monthly CF Field Reset AP.                                                    |
 | [VSA - VSA Configuration - Policy - Automation Time Saved Report Schedule](<../vsa/policies/Automation Time Saved Report Schedule.md>) | Policy | Schedules the Report AP                                                                      |
 
@@ -49,6 +49,7 @@ For all content that needs saved time tracked, and any new content that will sav
 
 #### Monitors & Alerts
 - Set an ATSE action, Script, with the appropriate incremental AP. If the amount of time you wish to set does not exist as an incremental AP, create a new incremental AP with the desired time in minutes.
+
 
 
 

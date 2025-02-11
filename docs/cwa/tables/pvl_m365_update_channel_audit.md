@@ -11,11 +11,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script.
+Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>) script.
 
 ## Dependencies
 
-- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
+- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>)
 - [SWM - Data Collection - Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>)
 
 ## Tables
@@ -28,7 +28,8 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](htt
 | Version           | varchar   | C2R Office version installed on the machine.                                                   |
 | AutoUpdate        | tinyint   | Indicates whether Office Auto Update is enabled on the machine.                                |
 | updateChannel     | varchar   | Update Channel for Office installed on the machine.                                            |
-| dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) ran on the machine. |
+| dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>) ran on the machine. |
+
 
 
 

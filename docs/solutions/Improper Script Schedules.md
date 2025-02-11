@@ -20,13 +20,13 @@ The purpose of this document is to present the scripts that are improperly sched
 | Content                                                                                                   | Type      | Function                                       |
 |-----------------------------------------------------------------------------------------------------------|-----------|------------------------------------------------|
 | [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>) | Script    | Imports the associated view.                   |
-| [CWM - Automate - Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343) | Dataview  | Stores the improperly scheduled scripts        |
+| [CWM - Automate - Dataview - Improper Script Schedules](<../cwa/dataviews/Improper Script Schedules.md>) | Dataview  | Stores the improperly scheduled scripts        |
 
 #### Dependencies
 
 | Content                                                                                                   | Type          | Function                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - View - pvl_Scheduled_Scripts](<../cwa/views/pvl_Scheduled_Scripts.md>)         | Custom Table  | Stores and executes the SQL query utilized by the [Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343). |
+| [CWM - Automate - View - pvl_Scheduled_Scripts](<../cwa/views/pvl_Scheduled_Scripts.md>)         | Custom Table  | Stores and executes the SQL query utilized by the [Dataview - Improper Script Schedules](<../cwa/dataviews/Improper Script Schedules.md>). |
 
 ## Implementation
 
@@ -36,7 +36,7 @@ Import the following script from the `ProSync` plugin:
 
 ### 2.
 Import the following Dataview from the `ProSync` plugin:
-- [CWM - Automate - Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343)
+- [CWM - Automate - Dataview - Improper Script Schedules](<../cwa/dataviews/Improper Script Schedules.md>)
 
 ### 3.
 Reload the system cache:
@@ -46,10 +46,11 @@ Reload the system cache:
 Execute the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>) against any computer to create/update the [pvl_Scheduled_Scripts](<../cwa/views/pvl_Scheduled_Scripts.md>) Custom View. This script will automatically run the [CWM - Automate - Script - MySQL - Permission - Set Custom Table Permissions](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) to provide the necessary table permissions.
 
 ### 5.
-Validate the presence of data in the [CWM - Automate - Dataview - Improper Script Schedules](https://proval.itglue.com/DOC-5078775-16437343) dataview.
+Validate the presence of data in the [CWM - Automate - Dataview - Improper Script Schedules](<../cwa/dataviews/Improper Script Schedules.md>) dataview.
 
 ### 6.
 Remove the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](<../cwa/scripts/MySQL - View - Create (pvl_Scheduled_Scripts).md>) script.
+
 
 
 

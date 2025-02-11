@@ -16,7 +16,7 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
 ## Dependencies
 
 - Auto_RebootPendingCheck --> Custom field (Endpoint)  
-- [CW RMM - Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)  
+- [CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)  
 - [CW RMM - Task - Reboot Pending Check Automation](<../tasks/Reboot Pending Check Automation.md>)  
 
 ## Details
@@ -42,6 +42,7 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
    - The agent available equals True.
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
+
 
 
 

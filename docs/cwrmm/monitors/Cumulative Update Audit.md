@@ -13,7 +13,7 @@ unlisted: false
 
 The monitor set will generate an alert for computers in which the custom field [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>) contains 'Failed.' Furthermore, it will automatically resolve the associated ticket if 'Success' is present in the aforementioned custom field.
 
-`Failed` in the custom field indicates that a Cumulative Update has not been installed on the machine for `75` days. This threshold can be updated in `Row 1` of the [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442) task.
+`Failed` in the custom field indicates that a Cumulative Update has not been installed on the machine for `75` days. This threshold can be updated in `Row 1` of the [CW RMM - Task - Cumulative Update Audit](<./Cumulative Update Audit.md>) task.
 
 ## Monitor
 
@@ -55,7 +55,8 @@ The monitor set will generate an alert for computers in which the custom field [
 ## Dependencies
 
 - [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
-- [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
+- [CW RMM - Task - Cumulative Update Audit](<./Cumulative Update Audit.md>)
+
 
 
 

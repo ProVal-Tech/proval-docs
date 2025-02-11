@@ -20,7 +20,7 @@ This task installs Threatlocker on both Windows and Mac operating systems.
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - Threatlocker Deployment](<../../solutions/Threatlocker Deployment.md>)
 
 ## Task Creation
 
@@ -217,6 +217,7 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 ## Output
 
 Script Log
+
 
 
 

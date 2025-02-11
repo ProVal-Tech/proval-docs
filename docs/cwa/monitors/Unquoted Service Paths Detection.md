@@ -11,11 +11,12 @@ unlisted: false
 
 ## Summary
 
-The monitor set will identify any service that has a space in the path but is not enclosed in quotes. Essentially, it checks for a space between “C:/” and the first “.exe” path of the service, and there can be a space in the arguments. The monitor set will call an Autofix script [Unquoted Service Paths Detection [Autofix]](https://proval.itglue.com/DOC-5078775-9031676) to add the proper quotes to the detected service.
+The monitor set will identify any service that has a space in the path but is not enclosed in quotes. Essentially, it checks for a space between “C:/” and the first “.exe” path of the service, and there can be a space in the arguments. The monitor set will call an Autofix script [Unquoted Service Paths Detection [Autofix]](<../scripts/Unquoted Service Paths Detection.md>) to add the proper quotes to the detected service.
 
 ## Target
 
 **Windows Machines:** The SQL used in the monitor set is limited to Windows machines only.
+
 
 
 

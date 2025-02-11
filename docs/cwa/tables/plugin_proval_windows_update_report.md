@@ -16,7 +16,7 @@ Stores the data captured by the [CWM - Automate - Script - Windows Update Report
 ## Dependencies
 
 - [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
-- [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
+- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
 - [CWM - Automate - Dataview - Windows Update Report [Script]](<../dataviews/Windows Update Report Script.md>)
 - [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
 
@@ -59,6 +59,7 @@ Stores the data captured by the [CWM - Automate - Script - Windows Update Report
 | BrowseOnly                   | varchar(10)    | True | False                                     |
 | PerUser                      | varchar(10)    | True | False                                     |
 | ScriptRunTime                | varchar(50)    | Script run time                                   |
+
 
 
 

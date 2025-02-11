@@ -25,7 +25,7 @@ It appends data from that agnostic script to the created table.
 
 - [EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>)
 - [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)
-- [CWM - Automate - Dataview - Disk - Critical Data](https://proval.itglue.com/DOC-5078775-9374639)
+- [CWM - Automate - Dataview - Disk - Critical Data](<../dataviews/Disk - Critical Data.md>)
 
 #### User Parameters
 
@@ -102,6 +102,7 @@ It appends data from that agnostic script to the created table.
    
 4. **I updated this script to its newest version, and now the script fails every time.**
    - Please set the refresh table to 'Yes' on the first run after a version upgrade of this script.
+
 
 
 

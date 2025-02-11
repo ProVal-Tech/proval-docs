@@ -19,7 +19,7 @@ This script obtains the current agent PowerShell version. The script is supporte
 
 ## Dependencies
 
-[PowerShell Version Audit](https://proval.itglue.com/DOC-5078775-10218221)
+[PowerShell Version Audit](<../dataviews/PowerShell Version Audit.md>)
 
 ## Variables
 
@@ -42,6 +42,7 @@ This script runs a PowerShell query that is supported by all Windows operating s
 - Script log
 - Script state
 - Dataview
+
 
 
 

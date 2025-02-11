@@ -18,11 +18,12 @@ The purpose of this monitor set is to execute the [CWM - Automate - Script - Win
 ## Dependencies
 
 - [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
-- [CWM - Automate - Solution - Windows Update Report](https://proval.itglue.com/DOC-5078775-10861707)
+- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
 
 ## Target
 
 Limited to the Windows machines with Managed Patch Policy via SQL query.
+
 
 
 

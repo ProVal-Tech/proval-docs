@@ -15,7 +15,7 @@ This document stores information about the redirection of Desktop, Documents, an
 
 ## Dependencies
 
-[OneDrive - Backup Status](https://proval.itglue.com/DOC-5078775-8060348)
+[OneDrive - Backup Status](<../scripts/OneDrive - Backup Status.md>)
 
 ## Table
 
@@ -32,6 +32,7 @@ This document stores information about the redirection of Desktop, Documents, an
 | PicturesEnabled    | TINYINT  | 1 or 0 indicating if Pictures redirection is enabled or disabled. |
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
+
 
 
 

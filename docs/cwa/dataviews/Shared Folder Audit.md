@@ -15,7 +15,7 @@ This dataview pulls information regarding file shares and permissions from the s
 
 ## Dependencies
 
-- [Shared Folder Audit](https://proval.itglue.com/DOC-5078775-8047493)
+- [Shared Folder Audit](<../scripts/Shared Folder Audit.md>)
 
 ## Columns
 
@@ -30,6 +30,7 @@ This dataview pulls information regarding file shares and permissions from the s
 | User Having Access     | Groups or Users that have access to this share   |
 | Permission Type        | Either Allow or Deny                             |
 | Permission Right       | Full, Read, Change, or No Access                 |
+
 
 
 

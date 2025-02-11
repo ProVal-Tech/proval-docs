@@ -16,7 +16,7 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 
 ## Dependencies
 
-[CW RMM - Solution - ThreatLocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - ThreatLocker Deployment](<../../solutions/Threatlocker Deployment.md>)
 
 ## Details
 
@@ -27,6 +27,7 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerAuthKey/image_1.png)
+
 
 
 

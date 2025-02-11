@@ -11,17 +11,17 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to store and display the results of the [CW RMM - Task - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424) task.
+This custom field is used to store and display the results of the [CW RMM - Task - New Domain Admins](<../tasks/New Domain Admins.md>) task.
 
 ## Dependencies
 
-[CW RMM - Task - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424)
+[CW RMM - Task - New Domain Admins](<../tasks/New Domain Admins.md>)
 
 ## Details
 
 | Field Name        | Type of Field (Machine or Organization) | Description                                                                                                                                                                                                                      |
 |-------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| New Domain Admins | Machine                                 | This field encompasses the details of recently created domain administrators on the domain controller within the timeframe between the two most recent successful executions of the '[CW RMM - Task - New Domain Admins](https://proval.itglue.com/DOC-5078775-14033424)' task. |
+| New Domain Admins | Machine                                 | This field encompasses the details of recently created domain administrators on the domain controller within the timeframe between the two most recent successful executions of the '[CW RMM - Task - New Domain Admins](<../tasks/New Domain Admins.md>)' task. |
 
 ## Screenshot
 
@@ -34,6 +34,7 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ![Sample Value 1](../../../static/img/New-Domain-Admins/image_3.png)  
 ![Sample Value 2](../../../static/img/New-Domain-Admins/image_4.png)  
 ![Sample Value 3](../../../static/img/New-Domain-Admins/image_5.png)  
+
 
 
 

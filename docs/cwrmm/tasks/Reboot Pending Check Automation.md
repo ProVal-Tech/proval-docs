@@ -15,7 +15,7 @@ This task is designed to automatically detect the reboot pending status on endpo
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950) 
+- [CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>) 
 - Auto_RebootPendingCheck - Custom field (Endpoint)
 
 ## Sample Run
@@ -217,6 +217,7 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
+
 
 
 

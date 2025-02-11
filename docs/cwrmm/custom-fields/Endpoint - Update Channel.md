@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-Select the Update Channel from the drop-down menu to set for the computer. It is used by the [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17430050).
+Select the Update Channel from the drop-down menu to set for the computer. It is used by the [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](<../tasks/Microsoft 365 - Click-to-Run - Set Update Channel.md>).
 
 Available options are:  
 - Current Channel  
@@ -22,7 +22,7 @@ Available options are:
 
 ## Dependencies
 
-[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](https://proval.itglue.com/DOC-5078775-17435723)
+[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](<../../solutions/Microsoft 365 - Click-to-Run - Set Update Channel.md>)
 
 ## Details
 
@@ -34,6 +34,7 @@ Available options are:
 
 ![Screenshot 1](../../../static/img/Endpoint---Update-Channel/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Update-Channel/image_2.png)  
+
 
 
 

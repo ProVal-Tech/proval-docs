@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This task detects if SMB1 is enabled on the machine and saves its output to the [CW RMM - Custom Field - SMB1 Enabled](https://proval.itglue.com/DOC-5078775-14419753) custom field, which can be used to display information about the machines with SMB1 enabled.
+This task detects if SMB1 is enabled on the machine and saves its output to the [CW RMM - Custom Field - SMB1 Enabled](<../custom-fields/SMB1 Enabled.md>) custom field, which can be used to display information about the machines with SMB1 enabled.
 
 ## Sample Run
 
@@ -156,7 +156,8 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Script log
-- Custom field - [CW RMM - Custom Field - SMB1 Enabled](https://proval.itglue.com/DOC-5078775-14419753)
+- Custom field - [CW RMM - Custom Field - SMB1 Enabled](<../custom-fields/SMB1 Enabled.md>)
+
 
 
 

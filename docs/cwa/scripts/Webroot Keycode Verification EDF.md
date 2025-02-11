@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This script collects the machine's Webroot hashed keycode and matches it with the keycode set up in the client EDF "Webroot Site Keycode". The results can be reviewed using the dataview, or tickets can be automatically generated for mismatched license keys with the [Internal Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291) where the ticket category is set.
+This script collects the machine's Webroot hashed keycode and matches it with the keycode set up in the client EDF "Webroot Site Keycode". The results can be reviewed using the dataview, or tickets can be automatically generated for mismatched license keys with the [Internal Monitor - Wrong Webroot KeyCode Detected [EDF]](<../monitors/Webroot Keycode Verification EDF.md>) where the ticket category is set.
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 
 ## Dependencies
 
-[SEC - Endpoint Protection - Monitor - Wrong Webroot KeyCode Detected [EDF]](https://proval.itglue.com/DOC-5078775-14989291)
+[SEC - Endpoint Protection - Monitor - Wrong Webroot KeyCode Detected [EDF]](<../monitors/Webroot Keycode Verification EDF.md>)
 
 ## EDFs
 
@@ -34,6 +34,7 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 - Script log
 - EDF
 - Dataview
+
 
 
 

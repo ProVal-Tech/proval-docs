@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This document displays the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
+This document displays the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
+- [CWM - Automate - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>)
 - [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
 
 ## Columns
@@ -44,6 +44,7 @@ This document displays the data fetched by the [CWM - Automate - Script - Get La
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Latest-Installed-Cumulative-Update/image_1.png)
+
 
 
 

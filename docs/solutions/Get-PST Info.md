@@ -17,12 +17,13 @@ This solution is designed to search for PST files on a computer and save informa
 
 | Content                                                                 | Type            | Function          |
 |-------------------------------------------------------------------------|-----------------|-------------------|
-| [Agent Procedure](https://proval.itglue.com/DOC-5078775-13650440)     | Agent Procedure  | Run the script     |
-| [Custom Field](https://proval.itglue.com/DOC-5078775-13650441)        | Custom Field     | Stores the data    |
+| [Agent Procedure](<../vsa/procedures/Get-PST Info.md>)     | Agent Procedure  | Run the script     |
+| [Custom Field](<../vsa/custom-fields/Get-PST Info.md>)        | Custom Field     | Stores the data    |
 
 ## Implementation
 
 Once implemented, the procedure can be run, and the data will be added to the custom field.
+
 
 
 

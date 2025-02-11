@@ -16,8 +16,8 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 ## Dependencies
 
 - [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
-- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
-- [CWM - Automate - Solution - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12850104)
+- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>)
+- [CWM - Automate - Solution - Latest Installed Cumulative Update](<../../solutions/Latest Installed Cumulative Update.md>)
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 
@@ -51,6 +51,7 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 | Compliant Clients - CU                   | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                                                                                                                     |
 | Non-Compliant Clients - CU               | Total number of individual clients where `CU Score %` is less than 75.                                                                                                                                                    |
 | Compliant Clients - CU %                 | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                          |
+
 
 
 

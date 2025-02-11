@@ -19,8 +19,8 @@ The solution conducts audits on Windows 10 and 11 computers to check for the lat
 
 | Content                                                                                   | Type            | Function                                                         |
 |-------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------|
-| [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)  | Script          | Fetches the data from the machine.                               |
-| [Dataview - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849510)  | Dataview        | Displays the data fetched by the script.                         |
+| [Script - Get Latest Installed Cumulative Update](<../cwa/scripts/Get Latest Installed Cumulative Update.md>)  | Script          | Fetches the data from the machine.                               |
+| [Dataview - Latest Installed Cumulative Update](<../cwa/dataviews/Latest Installed Cumulative Update.md>)  | Dataview        | Displays the data fetched by the script.                         |
 | [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<../cwa/monitors/Execute Script - Get Latest Installed Cumulative Update.md>)  | Internal Monitor | Detects machines where the script hasn't been executed within the last 7 days. |
 | △ Custom - Execute Script - Get Latest Installed Cumulative Update                      | Alert Template   | Executes the script upon the machines detected by the internal monitor. |
 
@@ -36,7 +36,7 @@ The solution conducts audits on Windows 10 and 11 computers to check for the lat
 
 | Content                                                                                   | Type            | Function                                                         |
 |-------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------|
-| [Custom Table - pvl_win_latest_installed_cu](<../cwa/tables/pvl_win_latest_installed_cu.md>)  | Custom Table    | Stores the data fetched by the [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script. |
+| [Custom Table - pvl_win_latest_installed_cu](<../cwa/tables/pvl_win_latest_installed_cu.md>)  | Custom Table    | Stores the data fetched by the [Script - Get Latest Installed Cumulative Update](<../cwa/scripts/Get Latest Installed Cumulative Update.md>) script. |
 | [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)  | Script          | Inserts the latest version of the [plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>) custom table. |
 | [Custom Table - plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>)  | Custom Table    | Stores Windows operating systems support end date, build number, and their respective release if any. The table should be updated to the latest version to use this solution at its full potential. The custom table can be updated by the [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) script. |
 
@@ -44,7 +44,7 @@ The solution conducts audits on Windows 10 and 11 computers to check for the lat
 
 ### 1.
 Import the following scripts from the `ProSync` plugin:
-- [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478)
+- [Script - Get Latest Installed Cumulative Update](<../cwa/scripts/Get Latest Installed Cumulative Update.md>)
 - [Script - Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>)
 - [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
 
@@ -54,7 +54,7 @@ Import the following internal monitors from the `ProSync` plugin:
 - [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update 75 Days ago.md>)
 
 ### 3.
-Import the [Dataview - Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849510) dataview from the `ProSync` plugin.
+Import the [Dataview - Latest Installed Cumulative Update](<../cwa/dataviews/Latest Installed Cumulative Update.md>) dataview from the `ProSync` plugin.
 
 ### 4.
 Import the following alert templates from the `ProSync` plugin:
@@ -68,7 +68,7 @@ Reload the System Cache.
 ![Reload the System Cache](../../static/img/Latest-Installed-Cumulative-Update/image_2.png)
 
 ### 6.
-Execute the [Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) script against a couple of online Windows 10/11 computers and validate the data in the [Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849510) dataview.
+Execute the [Get Latest Installed Cumulative Update](<../cwa/scripts/Get Latest Installed Cumulative Update.md>) script against a couple of online Windows 10/11 computers and validate the data in the [Latest Installed Cumulative Update](<../cwa/dataviews/Latest Installed Cumulative Update.md>) dataview.
 
 ### 7.
 Configure the Auditing section of the solution as follows:
@@ -109,6 +109,7 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is set up to run only against machines that are not EOL or recently EOL (within 30 days). If the machine is not EOL currently, check to make sure the monitor is set up to run against the group that the machine is in.
+
 
 
 

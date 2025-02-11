@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The script should be called by the monitor set [ProVal - Development - Unquoted Service Paths Detection](https://proval.itglue.com/DOC-5078775-8930000). It will run a PowerShell script on the machine to fix the services with an unquoted path.
+The script should be called by the monitor set [ProVal - Development - Unquoted Service Paths Detection](<../monitors/Unquoted Service Paths Detection.md>). It will run a PowerShell script on the machine to fix the services with an unquoted path.
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ The script should be called by the monitor set [ProVal - Development - Unquoted 
 
 ## Dependencies
 
-[ProVal - Development - Unquoted Service Paths Detection](https://proval.itglue.com/DOC-5078775-8930000)
+[ProVal - Development - Unquoted Service Paths Detection](<../monitors/Unquoted Service Paths Detection.md>)
 
 ## Process
 
@@ -30,6 +30,7 @@ The script will fetch the new paths to be set for each unquoted service on the m
 ## Output
 
 Script log
+
 
 
 

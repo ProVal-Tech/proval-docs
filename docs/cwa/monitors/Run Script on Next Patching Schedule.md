@@ -11,17 +11,18 @@ unlisted: false
 
 ## Summary
 
-The monitor set is used to identify computers whose patching schedule ended within the last hour. When a machine meets these requirements, a script named [Run Script On Next Patching Schedule [Autofix]](https://proval.itglue.com/DOC-5078775-8288164) will be called.
+The monitor set is used to identify computers whose patching schedule ended within the last hour. When a machine meets these requirements, a script named [Run Script On Next Patching Schedule [Autofix]](<../scripts/Run Script On Next Patching Schedule.md>) will be called.
 
 ## Dependencies
 
-[Run Script On Next Patching Schedule [Autofix]](https://proval.itglue.com/DOC-5078775-8288164)
+[Run Script On Next Patching Schedule [Autofix]](<../scripts/Run Script On Next Patching Schedule.md>)
 
 ## Target
 
 Windows machines with active Automate Patching policies.
 
 ## Translated SQL
+
 
 
 

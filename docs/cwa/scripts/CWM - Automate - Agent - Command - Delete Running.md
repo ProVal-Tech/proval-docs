@@ -19,7 +19,7 @@ The script is a function script that cannot run manually.
 
 ## Dependencies
 
-[CWA - Automate - Monitor - Machines With Stuck Commands](https://proval.itglue.com/DOC-5078775-12419536)
+[CWA - Automate - Monitor - Machines With Stuck Commands](<../monitors/Machines With Stuck Commands.md>)
 
 ## Variables
 
@@ -36,6 +36,7 @@ This script will execute with the monitor and will delete all the executable com
 ## Output
 
 - Script log
+
 
 
 

@@ -15,7 +15,7 @@ This custom field at the company level stores the ThreatLocker Group key for Mac
 
 ## Dependencies
 
-[CW RMM - Solution - ThreatLocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - ThreatLocker Deployment](<../../solutions/Threatlocker Deployment.md>)
 
 ## Details
 
@@ -26,6 +26,7 @@ This custom field at the company level stores the ThreatLocker Group key for Mac
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerMacGroupKey/image_1.png)
+
 
 
 

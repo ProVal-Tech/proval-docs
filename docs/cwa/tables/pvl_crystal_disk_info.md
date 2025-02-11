@@ -11,11 +11,11 @@ unlisted: false
 
 ## Purpose
 
-The table stores the information returned by the [EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045) script.
+The table stores the information returned by the [EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk Info Report.md>) script.
 
 ## Dependencies
 
-[EPM - Disk - Script - Crystal Disk Info Report](https://proval.itglue.com/DOC-5078775-12960045)
+[EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk Info Report.md>)
 
 ## Tables
 
@@ -50,6 +50,7 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
+
 
 
 

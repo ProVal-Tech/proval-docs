@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420) has not run in the last 30 days, and the agent has Webroot installed with deployment enabled.
+This monitor checks the online agent where the script [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](<../scripts/Webroot Keycode Verification EDF.md>) has not run in the last 30 days, and the agent has Webroot installed with deployment enabled.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](https://proval.itglue.com/DOC-5078775-14989420)
+- [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](<../scripts/Webroot Keycode Verification EDF.md>)
 - EDFs:
   - Enable Webroot Deployment - Computer EDF
   - Exclude Webroot Deployment - Location EDF
@@ -30,6 +30,7 @@ To set up the ticketing for the keycode mismatch detection, it is mandatory to s
 ## Target
 
 - Global
+
 
 
 

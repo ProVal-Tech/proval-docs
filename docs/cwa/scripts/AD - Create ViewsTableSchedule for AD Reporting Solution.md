@@ -18,7 +18,7 @@ This document outlines the creation of all necessary items in the database to en
 3. View: `plugin_proval_ad_compliance`
 4. View: `plugin_proval_ad_groups`
 5. View: `plugin_proval_ad_pcinv`
-6. Schedules the script [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9590761) on the Domain Controllers group, limited by the Infrastructure Masters search.
+6. Schedules the script [RSM - Active Directory - Script - Weak Passwords - AD Test](<./Weak Passwords - AD Test.md>) on the Domain Controllers group, limited by the Infrastructure Masters search.
 
 ## Sample Run
 
@@ -40,6 +40,7 @@ Other items depend on this script being executed to function, which are listed b
 ## Output
 
 This is a one-time use script, used to install/create a table, four views, and schedule a script. After running it once, this script can be removed from the environment.
+
 
 
 

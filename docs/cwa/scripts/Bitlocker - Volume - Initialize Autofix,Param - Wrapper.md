@@ -22,7 +22,7 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 ## Dependencies
 
 - [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>)
-- [SEC - Encryption - Script - BitLocker - Volume - Initialize](https://proval.itglue.com/DOC-5078775-8934308)
+- [SEC - Encryption - Script - BitLocker - Volume - Initialize](<./Bitlocker - Volume - Initialize.md>)
 - [SEC - Encryption - Script - BitLocker - Audit](<./Bitlocker - Audit.md>)
 
 #### EDFs
@@ -48,6 +48,7 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 
 - Script log
 - Dataview
+
 
 
 

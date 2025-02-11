@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the Automate implementation of the agnostic script [Set-PowerPlan](https://proval.itglue.com/DOC-5078775-14903184), which can be used to modify or create a power plan.
+This document outlines the Automate implementation of the agnostic script [Set-PowerPlan](<../../powershell/Set-PowerPlan.md>), which can be used to modify or create a power plan.
 
 The settings for the power plan are required to create or modify the power plan. These settings can be provided to the script in two ways: through the `Settings` parameter as a hash table or from a CSV file. A template for the CSV file is attached to this ITGlue document. Details regarding the columns of the CSV file are explained later in this document.
 
@@ -156,7 +156,7 @@ Here's a breakdown of the columns in the CSV file:
 ## Dependencies
 
 - [EPM - Data Collection - Script - Power Plan - Audit [DV]](<./Power Plan - Audit DV.md>)
-- [EPM - Windows Configuration - Agnostic - Set-PowerPlan](https://proval.itglue.com/DOC-5078775-14903184)
+- [EPM - Windows Configuration - Agnostic - Set-PowerPlan](<../../powershell/Set-PowerPlan.md>)
 - [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
 
 ## Variables
@@ -195,6 +195,7 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
+
 
 
 

@@ -28,13 +28,13 @@ The purpose of this document is to outline the solution to disable the Fast Boot
 
 | Content                                                                | Type     | Function                                                                                                                |
 |------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
-| [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416)   | Dynamic  | This group contains the computers where the solution to disable Fast Boot is enabled through the Custom Fields.       |
+| [Disable FastBoot](<../cwrmm/groups/Disable FastBoot.md>)   | Dynamic  | This group contains the computers where the solution to disable Fast Boot is enabled through the Custom Fields.       |
 
 ### Task
 
 | Content                                                                | Type           | Function                                                                                                                |
 |------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)   | Script Editor  | The script will attempt to modify the registry keys to disable Fast Boot on the Windows workstations if it is not already disabled. |
+| [Disable FastBoot](<../cwrmm/tasks/Disable FastBoot.md>)   | Script Editor  | The script will attempt to modify the registry keys to disable Fast Boot on the Windows workstations if it is not already disabled. |
 
 ## Implementation
 
@@ -45,10 +45,11 @@ The purpose of this document is to outline the solution to disable the Fast Boot
    - [FastBoot_Disabled](<../cwrmm/custom-fields/Endpoint - FastBoot_Disabled.md>)  
 
 2. Create the Device Group:  
-   - [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020416)  
+   - [Disable FastBoot](<../cwrmm/groups/Disable FastBoot.md>)  
 
 3. Create the Task and deploy it against the device group:  
-   - [Disable FastBoot](https://proval.itglue.com/DOC-5078775-16020411)  
+   - [Disable FastBoot](<../cwrmm/tasks/Disable FastBoot.md>)  
+
 
 
 

@@ -13,7 +13,7 @@ unlisted: false
 
 This script will make changes in the registry and allow Microsoft 365 products to update on a monthly basis as per current channel updates.
 
-It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545) script at the end of the successful run to update the information in the [CWM - Automate - Dataview - C2R Office Version Audit](<../dataviews/C2R Office Version Audit.md>) Dataview.
+It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](<./Microsoft 365 - Click-to-Run - Get Details.md>) script at the end of the successful run to update the information in the [CWM - Automate - Dataview - C2R Office Version Audit](<../dataviews/C2R Office Version Audit.md>) Dataview.
 
 **Time Saved by Automation:** 5 Minutes
 
@@ -24,7 +24,7 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 ## Dependencies
 
 - Office installed on the target machine
-- [SWM - Script - Microsoft Office - Click-to-Run - Get Details](https://proval.itglue.com/DOC-5078775-13932545)
+- [SWM - Script - Microsoft Office - Click-to-Run - Get Details](<./Microsoft 365 - Click-to-Run - Get Details.md>)
 
 ## Process
 
@@ -35,6 +35,7 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 ## Output
 
 - Script log
+
 
 
 

@@ -20,7 +20,7 @@ This document detects Windows computers where the [SEC - Encryption - Script - B
 - *Windows Server BitLocker-RemoteAdminTool*
 
 *Run the SQL provided in the document below from RAWSQL to import these roles into Automate:*  
-[CWM - Automate - Roles - BitLocker](https://proval.itglue.com/DOC-5078775-17817010)
+[CWM - Automate - Roles - BitLocker](<../roles/Bitlocker.md>)
 
 ## Dependencies
 
@@ -39,6 +39,7 @@ Global
 *Available for import within the ProSync Plugin.*
 
 Note: Ensure the presence of the [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>) table and the [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script in the environment before creating the monitor set and importing the alert template.
+
 
 
 

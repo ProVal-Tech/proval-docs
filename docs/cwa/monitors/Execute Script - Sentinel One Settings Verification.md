@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This monitor runs the [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820) script once every 14 days against Windows and Macintosh computers with the Sentinel Agent application installed. It processes up to 100 machines per hour.
+This monitor runs the [SWM - Software Configuration - Script - Sentinel One Settings Verification](<../scripts/Sentinel One Settings Verification.md>) script once every 14 days against Windows and Macintosh computers with the Sentinel Agent application installed. It processes up to 100 machines per hour.
 
 ## Dependencies
 
-[SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820)
+[SWM - Software Configuration - Script - Sentinel One Settings Verification](<../scripts/Sentinel One Settings Verification.md>)
 
 ## Target
 
@@ -25,7 +25,8 @@ Global
 
 **Name:** △ CUSTOM - Execute Script - Sentinel One Settings Verification
 
-**Note:** Ensure to import the [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12924820) script before importing or creating the alert template, as the template should run this script.
+**Note:** Ensure to import the [SWM - Software Configuration - Script - Sentinel One Settings Verification](<../scripts/Sentinel One Settings Verification.md>) script before importing or creating the alert template, as the template should run this script.
+
 
 
 

@@ -15,7 +15,7 @@ This document specifies the organization name to be used for Threatlocker deploy
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - Threatlocker Deployment](<../../solutions/Threatlocker Deployment.md>)
 
 ## Details
 
@@ -26,6 +26,7 @@ This document specifies the organization name to be used for Threatlocker deploy
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Threatlocker_Organization_Name/image_1.png)
+
 
 
 

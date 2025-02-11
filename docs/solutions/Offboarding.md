@@ -19,8 +19,8 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
 |-------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [CWM - Automate - Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>) | Script          | This is a wrapper script that can be used to offboard machines from the client's environment by defining the scripts to be run before offboarding the machine.                                                                                 |
 | [CWM - Automate - Template - Offboarding Scripts - Partner](https://proval.itglue.com/DOC-5078775-15281996) | Template Script  | Template script to be used with [CWM - Automate - Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>) to run Child scripts. This script needs to be duplicated and modified as per the client's requirements.               |
-| [CWM - Automate - Internal Monitor - Offboarding](https://proval.itglue.com/DOC-5078775-14875676) | Internal Monitor | The purpose of this monitor is to detect the clients, locations, or machines opted for offboarding.                                                                                                                                           |
-| `△ Custom - Execute Script - Offboarding Wrapper`                       | Alert Template   | Executes the script [CWM - Automate - Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>) against the computers detected in the monitor set [CWM - Automate - Internal Monitor - Offboarding](https://proval.itglue.com/DOC-5078775-14875676). |
+| [CWM - Automate - Internal Monitor - Offboarding](<../cwa/monitors/Offboarding.md>) | Internal Monitor | The purpose of this monitor is to detect the clients, locations, or machines opted for offboarding.                                                                                                                                           |
+| `△ Custom - Execute Script - Offboarding Wrapper`                       | Alert Template   | Executes the script [CWM - Automate - Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>) against the computers detected in the monitor set [CWM - Automate - Internal Monitor - Offboarding](<../cwa/monitors/Offboarding.md>). |
 
 ## Implementation
 
@@ -28,7 +28,7 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
    - [CWM - Automate - Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>)
 
 2. Import the following monitor using the ProSync plugin:
-   - [CWM - Automate - Internal Monitor - Offboarding](https://proval.itglue.com/DOC-5078775-14875676)
+   - [CWM - Automate - Internal Monitor - Offboarding](<../cwa/monitors/Offboarding.md>)
 
 3. Import the following Alert Template using the ProSync plugin:
    - `△ Custom - Execute Script - Offboarding Wrapper`
@@ -45,13 +45,14 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
    - Ask the consultant if the client would like to set up a 'Failed Uninstall Process'.
      - If yes, select the required process from Dropdown EDF `"Failed Uninstall Process"`. For more details on this EDF, visit [CWM - Automate - Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>).
    - Navigate to Automation → Monitors within the CWA Control Center.
-     - [CWM - Automate - Internal Monitor - Offboarding](https://proval.itglue.com/DOC-5078775-14875676)
+     - [CWM - Automate - Internal Monitor - Offboarding](<../cwa/monitors/Offboarding.md>)
        - Configure with the alert template: `△ Custom - Execute Script - Offboarding Wrapper`
        - Right-click and Run Now to start the monitor.
    - The following EDFs can be selected to offboard a client, location, or machine. These EDFs are described in detail in [Script - Offboarding Wrapper](<../cwa/scripts/Offboarding Wrapper.md>).
      - Offboard Client
      - Offboard Location
      - Offboard Computer
+
 
 
 

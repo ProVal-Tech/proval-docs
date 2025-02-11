@@ -158,13 +158,14 @@ return 'Please reboot this machine to complete the installation of PowerShell V5
 
 ## Script Deployment
 
-The script is intended to run from the "[CW RMM - Custom Monitor - PowerShell Version](https://proval.itglue.com/DOC-5078775-12824363)" monitor as the "Run Automated Task."
+The script is intended to run from the "[CW RMM - Custom Monitor - PowerShell Version](<../monitors/PowerShell Version.md>)" monitor as the "Run Automated Task."
 
 This script can also run manually against any Windows-based device.
 
 ## Output
 
 - Script log
+
 
 
 

@@ -11,7 +11,7 @@ unlisted: false
 
 ## Implementation Steps
 
-- Import [EPM - Software Configuration - Script - Configure BGInfo](https://proval.itglue.com/DOC-5078775-13482616) script.
+- Import [EPM - Software Configuration - Script - Configure BGInfo](<../scripts/Configure BGInfo.md>) script.
 
 - Run the following SQL query from a RAWSQL monitor to create the alert template.
 
@@ -1007,6 +1007,7 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
 SUBSTRING('abcdef0123456789', FLOOR(RAND
+
 
 
 

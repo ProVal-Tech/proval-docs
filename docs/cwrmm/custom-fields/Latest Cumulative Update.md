@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to store and display the results of the [CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442) task.
+This custom field is used to store and display the results of the [CW RMM - Task - Cumulative Update Audit](<../tasks/Cumulative Update Audit.md>) task.
 
 ## Dependencies
 
-[CW RMM - Task - Cumulative Update Audit](https://proval.itglue.com/DOC-5078775-14029442)
+[CW RMM - Task - Cumulative Update Audit](<../tasks/Cumulative Update Audit.md>)
 
 ## Details
 
@@ -33,6 +33,7 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/Latest-Cumulative-Update/image_3.png)
+
 
 
 

@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This monitor will create tickets if the [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513) fails to enable the AD Recycle Bin on the Infrastructure master for more than three attempts.
+This monitor will create tickets if the [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>) fails to enable the AD Recycle Bin on the Infrastructure master for more than three attempts.
 
 ## Dependencies
 
-- [Task - Enable AD Recycle Bin](https://proval.itglue.com/DOC-5078775-15349513)
+- [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>)
 - [CW RMM - Custom Fields - AD Recycle Bin](<../custom-fields/AD Recycle Bin.md>)
 
 ## Monitor
@@ -50,6 +50,7 @@ This monitor will create tickets if the [Task - Enable AD Recycle Bin](https://p
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
+
 
 
 

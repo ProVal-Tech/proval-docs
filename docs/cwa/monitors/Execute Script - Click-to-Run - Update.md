@@ -17,7 +17,7 @@ Additionally, the "Microsoft Office - Click-to-Run - Update (ScriptState)" is a 
 
 ## Dependencies
 
-The ["Microsoft Office - Click-to-Run - Update (ScriptState)" script](https://proval.itglue.com/DOC-5078775-14166219) is a version of the [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script.
+The ["Microsoft Office - Click-to-Run - Update (ScriptState)" script](<../scripts/WebP Vulnerability Report.md>) is a version of the [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script.
 
 ## Target
 
@@ -28,6 +28,7 @@ Windows Workstations
 **Name:** `△ Custom - Execute Script - Microsoft Office - Click-to-Run - Update (ScriptState)`
 
 The alert template should execute the "Microsoft Office - Click-to-Run - Update (ScriptState)" script.
+
 
 
 

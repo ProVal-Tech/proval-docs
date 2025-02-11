@@ -15,7 +15,7 @@ Setting this custom field to "Yes" will exclude all the machines under that site
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](https://proval.itglue.com/DOC-5078775-17730657)
+[CW RMM - Solution - Threatlocker Deployment](<../../solutions/Threatlocker Deployment.md>)
 
 ## Details
 
@@ -26,6 +26,7 @@ Setting this custom field to "Yes" will exclude all the machines under that site
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)
+
 
 
 

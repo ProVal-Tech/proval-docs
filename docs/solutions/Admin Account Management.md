@@ -38,9 +38,9 @@ This document outlines multiple solutions that can be used to manage local and d
 
 | Content                                                                                           | Type           | Function                                                                                                    |
 |---------------------------------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------|
-| [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783557)                     | Solution       | The purpose of the solution is to manage the members in the local admin group for the Windows machines.    |
+| [Local Admin Group Cleanup](<./Local Admin Group Cleanup.md>)                     | Solution       | The purpose of the solution is to manage the members in the local admin group for the Windows machines.    |
 | [Local Admin Group Cleanup - Add/Remove](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) | Script         | Manage the addition and removal of members from the local admin group.                                     |
-| [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)                     | Internal Monitor| Detects Windows computers where the local admin group cleanup process is enabled, but the script has not been executed in the past 7 days. |
+| [Local Admin Group Cleanup](<../cwa/monitors/Local Admin Group Cleanup.md>)                     | Internal Monitor| Detects Windows computers where the local admin group cleanup process is enabled, but the script has not been executed in the past 7 days. |
 | △ Custom - Local Admin Group Cleanup                                                              | Alert Template | Run the script against the computers detected by the internal monitor.                                     |
 
 #### New Local Admin Monitor
@@ -58,6 +58,7 @@ This document outlines multiple solutions that can be used to manage local and d
 ## Implementation
 
 1. Please carefully review the solution documents for importation before implementation.
+
 
 
 

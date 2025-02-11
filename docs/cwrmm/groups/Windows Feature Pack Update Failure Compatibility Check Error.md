@@ -16,7 +16,7 @@ This document categorizes Windows 11 computers where the `Feature Update Install
 ## Dependencies
 
 - [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
-- [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
+- [CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)
 
 ## Criteria
 
@@ -46,6 +46,7 @@ Click the `Save` button to save the group.
 Click the `Save` button to save the group.
 
 ![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_7.png)
+
 
 
 

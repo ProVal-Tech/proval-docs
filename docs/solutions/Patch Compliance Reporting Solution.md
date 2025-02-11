@@ -90,12 +90,13 @@ A: If this is a workstation, you can try to update to the latest feature update 
 - If this is a server, I do not have many additional things to try other than upgrading/reloading the server.
 
 **Q: What does it mean when a machine has 'No Audit Information' provided?**  
-A: The cumulative update data is audited from the [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104). The [Script - Get Latest Installed Cumulative Update](https://proval.itglue.com/DOC-5078775-12849478) should be running against all agents every 7 days. If you see machines in this list, they are most likely offline frequently. If not, you can try running the script manually against the machine and report any errors to ProVal Technologies for further investigation.
+A: The cumulative update data is audited from the [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104). The [Script - Get Latest Installed Cumulative Update](<../cwa/scripts/Get Latest Installed Cumulative Update.md>) should be running against all agents every 7 days. If you see machines in this list, they are most likely offline frequently. If not, you can try running the script manually against the machine and report any errors to ProVal Technologies for further investigation.
 
 ## Potential Problems
 
 If you see the following error when opening one of the reports, it means at least one of the views or the custom table is missing and cannot be referenced. If they are all present, verify that you have full permissions to the table and views.  
 ![Potential Problems](../../static/img/Patch-Compliance-Reporting-Solution/image_4.png)
+
 
 
 

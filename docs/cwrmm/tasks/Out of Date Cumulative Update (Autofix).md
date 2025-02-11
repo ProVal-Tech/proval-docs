@@ -26,7 +26,7 @@ Installs the latest available Cumulative Update on the machines where a CU has n
 - [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
 - [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)
 - [CW RMM - Device Group - Out of Date CU _ Autofix Required](<../groups/Out of Date CU _ Autofix Required.md>)
-- [Custom Fields - Reboot Prompter](https://proval.itglue.com/DOC-5078775-15298950)
+- [Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)
 
 ## Variables
 
@@ -519,6 +519,7 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 
 - Script Log
 - Custom Field
+
 
 
 

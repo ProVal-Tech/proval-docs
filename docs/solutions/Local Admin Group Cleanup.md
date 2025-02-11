@@ -24,14 +24,14 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 | Content                                                                 | Type           | Function                                                                                                     |
 |-------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------|
 | [Local Admin Group Cleanup - Add/Remove](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) | Script         | Manage the addition and removal of members from the local admin group.                                      |
-| [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)            | Internal Monitor | Detects Windows computers where the local admin group cleanup process is enabled, but the script has not been executed in the past 7 days. |
+| [Local Admin Group Cleanup](<../cwa/monitors/Local Admin Group Cleanup.md>)            | Internal Monitor | Detects Windows computers where the local admin group cleanup process is enabled, but the script has not been executed in the past 7 days. |
 | △ Custom - Local Admin Group Cleanup                                     | Alert Template | Run the script against the computers detected by the internal monitor.                                      |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
    - [Script - Local Admin Group Cleanup - Add/Remove](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>)
-   - [Internal Monitor - Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)  
+   - [Internal Monitor - Local Admin Group Cleanup](<../cwa/monitors/Local Admin Group Cleanup.md>)  
    - Alert Template - △ Custom - Local Admin Group Cleanup
 
 2. Reload the system cache:  
@@ -42,14 +42,15 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515)  
+     - [Internal Monitor - Local Admin Group Cleanup](<../cwa/monitors/Local Admin Group Cleanup.md>)  
        - `Alert Template: △ Custom - Local Admin Group Cleanup`
        - Right-click and Run Now to start the monitor
 
-5. Confirm with the consultant before enabling ticketing by setting a ticket category for the [Local Admin Group Cleanup](https://proval.itglue.com/DOC-5078775-16783515) internal monitor.  
+5. Confirm with the consultant before enabling ticketing by setting a ticket category for the [Local Admin Group Cleanup](<../cwa/monitors/Local Admin Group Cleanup.md>) internal monitor.  
    ![Image](../../static/img/Local-Admin-Group-Cleanup/image_3.png)
 
 6. Set the appropriate values for the system properties and EDFs defined in the [script's](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) document, which should be provided by the consultant.
+
 
 
 

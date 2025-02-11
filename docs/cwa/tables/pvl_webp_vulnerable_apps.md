@@ -11,11 +11,11 @@ unlisted: false
 
 ## Purpose
 
-The custom table serves as a container for the data fetched by the [WebP Vulnerability Report](https://proval.itglue.com/DOC-5078775-14166219) script.
+The custom table serves as a container for the data fetched by the [WebP Vulnerability Report](<../scripts/WebP Vulnerability Report.md>) script.
 
 ## Dependencies
 
-- [EPM - Security - Script - WebP Vulnerability Report](https://proval.itglue.com/DOC-5078775-14166219)
+- [EPM - Security - Script - WebP Vulnerability Report](<../scripts/WebP Vulnerability Report.md>)
 - [EPM - Security - Internal Monitor - Execute Script - WebP Vulnerability Report](<../monitors/Execute Script - WebP Vulnerability Report.md>)
 
 ## Tables
@@ -34,6 +34,7 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 | vulnerable_cve_2023_4863     | varchar(32) | Vulnerable CVE 2023-4863 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
 | vulnerable_cve_2023_5217     | varchar(32) | Vulnerable CVE 2023-5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
 | datetime                     | datetime    | Data collection time from the endpoint                                                          |
+
 
 
 

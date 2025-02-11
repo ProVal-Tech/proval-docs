@@ -28,9 +28,9 @@ This solution assists in setting the latest DUO detection and updating older DUO
 
 | Content                                                                                                      | Type           | Function                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633)                   | Script         | Uninstalls DUO from Windows machines.                                                                              |
-| [CWM - Automate - Internal Monitor - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472632)        | Monitor        | Detects machines where DUO is installed and Duo Exclusion EDFs are selected.                                       |
-| `△ Custom - Execute Script - Uninstall DUO`                                                                 | Alert Template | Executes the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) against the machines detected by the internal monitor. |
+| [CWM - Automate - Script - Uninstall DUO](<../cwa/scripts/Uninstall DUO.md>)                   | Script         | Uninstalls DUO from Windows machines.                                                                              |
+| [CWM - Automate - Internal Monitor - Uninstall DUO](<../cwa/monitors/Uninstall DUO.md>)        | Monitor        | Detects machines where DUO is installed and Duo Exclusion EDFs are selected.                                       |
+| `△ Custom - Execute Script - Uninstall DUO`                                                                 | Alert Template | Executes the script [CWM - Automate - Script - Uninstall DUO](<../cwa/scripts/Uninstall DUO.md>) against the machines detected by the internal monitor. |
 
 ## Implementation
 
@@ -66,16 +66,17 @@ This solution assists in setting the latest DUO detection and updating older DUO
 Use the content below if the partner wants to uninstall DUO on Windows agents automatically. This will remove the application if the exclusion box has been checked on either the location or computer levels.
 
 Import the following content using the ProSync Plugin:
-- [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633)
-- [CWM - Automate - Internal Monitor - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472632)
+- [CWM - Automate - Script - Uninstall DUO](<../cwa/scripts/Uninstall DUO.md>)
+- [CWM - Automate - Internal Monitor - Uninstall DUO](<../cwa/monitors/Uninstall DUO.md>)
 - `△ Custom - Execute Script - Uninstall DUO`
 
 Configure the solution as outlined below:
 - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-  - [CWM - Automate - Internal Monitor - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472632)
+  - [CWM - Automate - Internal Monitor - Uninstall DUO](<../cwa/monitors/Uninstall DUO.md>)
     - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
-      - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](https://proval.itglue.com/DOC-5078775-17472633) bonded to it.
+      - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](<../cwa/scripts/Uninstall DUO.md>) bonded to it.
     - Right-click and Run Now to start the monitor.
+
 
 
 

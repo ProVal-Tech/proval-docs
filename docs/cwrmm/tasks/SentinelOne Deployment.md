@@ -21,7 +21,7 @@ This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](https://proval.itglue.com/DOC-5078775-15822040)
+[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>)
 
 ## Variables
 
@@ -385,6 +385,7 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 
 - Script Log
 - Custom Field
+
 
 
 

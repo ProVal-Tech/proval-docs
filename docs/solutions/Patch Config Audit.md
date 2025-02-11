@@ -31,7 +31,7 @@ Execute the [Get Patch Config](<../cwa/scripts/Get Patch Config.md>) script agai
 |--------------------------------------------------------------------------------------|----------------|---------------------|
 | [Get Patch Config](<../cwa/scripts/Get Patch Config.md>)                            | Script         | Gathers Data        |
 | [pvl_patch_config](<../cwa/tables/pvl_patch_config.md>)                            | Custom Table   | Stores Data         |
-| [Patch Config Audit](https://proval.itglue.com/DOC-5078775-16399971)               | Dataview       | Displays Data       |
+| [Patch Config Audit](<../cwa/dataviews/Patch Config Audit.md>)               | Dataview       | Displays Data       |
 | [Execute Script - Get Patch Config](<../cwa/monitors/Execute Script - Get Patch Config.md>) | Internal Monitor| Detects Windows Machines |
 | △ Custom - Execute Script - Get Patch Config                                          | Alert Template  | Executes the Script  |
 
@@ -48,7 +48,7 @@ Execute the [Get Patch Config](<../cwa/scripts/Get Patch Config.md>) script agai
 ### 1.
 Import the following auditing content using the ProSync Plugin:
 - [Script - Get Patch Config](<../cwa/scripts/Get Patch Config.md>)
-- [Dataview - Patch Config Audit](https://proval.itglue.com/DOC-5078775-16399971)
+- [Dataview - Patch Config Audit](<../cwa/dataviews/Patch Config Audit.md>)
 - [Internal Monitor - Execute Script - Get Patch Config](<../cwa/monitors/Execute Script - Get Patch Config.md>)
 - Alert Template - △ Custom - Execute Script - Get Patch Config
 
@@ -86,6 +86,7 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) script.
+
 
 
 

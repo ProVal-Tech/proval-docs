@@ -11,11 +11,11 @@ unlisted: false
 
 ## Summary
 
-This document displays the information of `Winget` supported applications fetched by the [Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895) script.
+This document displays the information of `Winget` supported applications fetched by the [Winget App Audit](<../scripts/Winget App Audit.md>) script.
 
 ## Dependencies
 
-- [SWM - Software Update - Script - Winget App Audit](https://proval.itglue.com/DOC-5078775-17973895)
+- [SWM - Software Update - Script - Winget App Audit](<../scripts/Winget App Audit.md>)
 - [SWM - Software Update - Custom Table - pvl_winget_audit](<../tables/pvl_winget_audit.md>)
 
 ## Columns
@@ -39,8 +39,9 @@ This document displays the information of `Winget` supported applications fetche
 | Source                    | Source of the application (Winget/Msstore).                                                             |
 | Is Updated                | Is the application up to date? (0/1)                                                                     |
 | App Level                 | Installation level of the application (System/User).                                                    |
-| Auto Update Enabled       | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](https://proval.itglue.com/DOC-5078775-17973896) document for detailed instructions on enabling Auto Update. |
+| Auto Update Enabled       | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) document for detailed instructions on enabling Auto Update. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
+
 
 
 

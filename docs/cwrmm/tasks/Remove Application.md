@@ -21,7 +21,7 @@ This script is designed to perform the uninstallation of the application provide
 
 ## Dependencies
 
-[CW RMM Custom Field - Remove Application](https://proval.itglue.com/DOC-5078775-16017469)  
+[CW RMM Custom Field - Remove Application](<../custom-fields/Remove Application.md>)  
 Remove Application Result - Custom Field (Endpoint)
 
 #### User Parameters
@@ -285,6 +285,7 @@ The task will start appearing in the Scheduled Tasks.
 
 - Task log
 - Custom field 'Remove Application Result'
+
 
 
 

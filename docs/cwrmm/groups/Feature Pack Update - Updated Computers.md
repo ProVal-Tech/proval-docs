@@ -18,7 +18,7 @@ This document explains how to classify Windows 10 and 11 computers that are alre
 - [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)
 - [CW RMM - Custom Field - WinFeatUpgradeAttempts](<../custom-fields/WinFeatUpgradeAttempts.md>)
 - [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)
-- [CW RMM - Custom Field - Feature Update Install Failure](https://proval.itglue.com/DOC-5078775-14592254)
+- [CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)
 - [CW RMM - Task - Feature Update Install with Tracking (Reset Custom Fields)](<../tasks/Feature Update Install with Tracking (Reset Custom Fields).md>)
 
 ## Group Details
@@ -86,6 +86,7 @@ Click the Save button to save the group.
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_13.png)
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_14.png)
+
 
 
 

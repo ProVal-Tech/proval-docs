@@ -18,7 +18,7 @@ This is a wrapper script that can be used to offboard machines from the client's
 ## Dependencies
 
 - [CWM - Automate - Template - Offboarding Scripts - Partner](https://proval.itglue.com/DOC-5078775-15281996)
-- [SWM - Software Uninstall - Script - Remove Application](https://proval.itglue.com/DOC-5078775-12578871)
+- [SWM - Software Uninstall - Script - Remove Application](<./Remove Application.md>)
 - [CW Control - Uninstall and Remove from Control Web Portal](<./CW Control - Uninstall and Remove from Control Web Portal.md>)
 
 ## Sample Run
@@ -78,6 +78,7 @@ If any application fails to uninstall, it is likely that the machine needs to be
 **Location Level Ticketing:**  
 **Subject:** `Offboarding initiated on location - %LocationName%`  
 **Ticket Body:** `It seems like "Offboard Location" EDF has been selected for %LocationName%. %ScriptName% has been initiated to offboard all machines under this location.`
+
 
 
 
