@@ -31,12 +31,12 @@ Configures power plan settings using either a provided hashtable or CSV file. If
 
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings.
 ```powershell
-.\\PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
+.//PS C://> .//Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
 ```
 
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the `$Settings` hashtable.
 ```powershell
-.\\PS C:\\> $setting = @{
+.//PS C://> $setting = @{
     Subgroup = @{
         'Hard Disk' = @{
             PowerSetting = @{
@@ -92,17 +92,17 @@ Configures a custom power plan named 'CustomPlan' with specified AC and DC power
         }
     }
 }
-.\\PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting $Settings
+.//PS C://> .//Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -Setting $Settings
 ```
 
-Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' file located in the 'C:\\Temp' directory.
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' file located in the 'C://Temp' directory.
 ```powershell
-PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'C:\\temp\\CustomPlanTemplate.csv'
+PS C://> .//Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'C://temp//CustomPlanTemplate.csv'
 ```
 
-Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https:\\file.provaltech.com\\CustomPlanTemplate.csv'.
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https://file.provaltech.com//CustomPlanTemplate.csv'.
 ```powershell
-PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https:\\file.provaltech.com\\CustomPlanTemplate.csv'
+PS C://> .//Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.provaltech.com//CustomPlanTemplate.csv'
 ```
 
 ## Parameters
@@ -113,7 +113,8 @@ PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https:\\file.
 | `Setting`         |       | True      | hashtable          | HashTable | Specifies a hashtable containing the configuration for the power plan.                                                                           |
 
 ## Output
-- .\\Set-PowerPlan-log.txt
-- .\\Set-PowerPlan-Error.txt
+- .//Set-PowerPlan-log.txt
+- .//Set-PowerPlan-Error.txt
 ## Attachments
-[PowerPlanSettingsTemplate.csv](<..\..\static\attachments\itg\14903184\PowerPlanSettingsTemplate.csv>)
+[PowerPlanSettingsTemplate.csv](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)
+

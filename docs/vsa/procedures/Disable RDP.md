@@ -57,4 +57,5 @@ Script Logs
 
 Attach the content XML VSA Export to this document.
 ## Attachments
-[Procedure_Disable_RDP.xml](<..\..\..\static\attachments\itg\10932189\Procedure_Disable_RDP.xml>)
+[Procedure_Disable_RDP.xml](<../../../static/attachments/itg/10932189/Procedure_Disable_RDP.xml>)
+

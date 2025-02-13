@@ -88,4 +88,5 @@ This script removes all instances of ScreenConnect from the machine except the o
 
 </div>
 ## Attachments
-[Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml](<..\..\..\static\attachments\itg\14767921\Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml>)
+[Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml](<../../../static/attachments/itg/14767921/Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml>)
+

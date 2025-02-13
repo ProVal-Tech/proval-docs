@@ -34,4 +34,5 @@ Provide the configuration of the profile using the following templates based on 
 - Patch reboot action is as follows: If the user is logged in, ask for permission. Do nothing if there is no response within 60 minutes. Reboot if the user is not logged in.
 - Windows Automatic Updates are disabled.
 ## Attachments
-[cPVAL_DuoDogs_Workstations_Patching.xml](<..\..\static\attachments\itg\11112429\cPVAL_DuoDogs_Workstations_Patching.xml>)
+[cPVAL_DuoDogs_Workstations_Patching.xml](<../../static/attachments/itg/11112429/cPVAL_DuoDogs_Workstations_Patching.xml>)
+

@@ -76,7 +76,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **Format of the Hash Table:**
 
 ```
-@\{Subgroup=@\{'<Name of the Subgroup>' = @\{ <strong>PowerSetting </strong>= @\{ '<Name of the Power Setting>' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power> }; 'Name of the Power Setting' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power>}; '<Name of the Power Setting>' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power>}; '<Name of the Power Setting>' = @\{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power> }}}}}
+@/{Subgroup=@/{'<Name of the Subgroup>' = @/{ <strong>PowerSetting </strong>= @/{ '<Name of the Power Setting>' = @/{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power> }; 'Name of the Power Setting' = @/{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power>}; '<Name of the Power Setting>' = @/{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power>}; '<Name of the Power Setting>' = @/{ AC = <Value of the setting on Direct Power>; DC = <Value of the Setting on Battery Power> }}}}}
 ```
 
 Ensure that the name of the subgroup and the power settings match those specified in the attached CSV file. The values for both AC and DC should fall within the range defined in the CSV file or be selected from the possible settings if the range does not apply to the setting.
@@ -84,7 +84,7 @@ Ensure that the name of the subgroup and the power settings match those specifie
 In this example, I am configuring the values for the following settings within the `Test Power Plan`:
 
 ```
-@\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}}
+@/{Subgroup=@/{'Sleep' = @/{ PowerSetting = @/{ 'Sleep after' = @/{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @/{ AC = 1; DC = 100}; 'Hibernate After' = @/{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @/{ AC = 2; DC = 2 }}}}}
 ```
 
 If the power plan named `Test Power Plan` doesn't already exist on the computer, the script will create it with the settings outlined in the table below while the rest of the settings will be copied from the currently active power plan. Otherwise, if the plan already exists, only the following settings will be modified.
@@ -101,7 +101,7 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 **PowerPlan:** Test Power Plan  
 **Setting:** 
 ```
-@\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}}
+@/{Subgroup=@/{'Sleep' = @/{ PowerSetting = @/{ 'Sleep after' = @/{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @/{ AC = 1; DC = 100}; 'Hibernate After' = @/{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @/{ AC = 2; DC = 2 }}}}}
 ```
 
 ![Run Configuration](../../../static/img/Power-Plan---SetCreate/image_6.png)
@@ -196,5 +196,6 @@ Here's a breakdown of the columns in the CSV file:
 - Script Log
 - Custom Table
 ## Attachments
-[PowerPlanSettingsTemplate.csv](<..\..\..\static\attachments\itg\15053772\PowerPlanSettingsTemplate.csv>)
-[ProVal_-_High_Performance.csv](<..\..\..\static\attachments\itg\15053772\ProVal_-_High_Performance.csv>)
+[PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/15053772/PowerPlanSettingsTemplate.csv>)
+[ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>)
+

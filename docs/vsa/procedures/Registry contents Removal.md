@@ -54,4 +54,5 @@ No
 
 Procedure_PendingFileRenameOperations_-_Registry_contents_Removal.xml
 ## Attachments
-[Procedure_Remove_PendingFileRenameOperations.xml](<..\..\..\static\attachments\itg\10533914\Procedure_Remove_PendingFileRenameOperations.xml>)
+[Procedure_Remove_PendingFileRenameOperations.xml](<../../../static/attachments/itg/10533914/Procedure_Remove_PendingFileRenameOperations.xml>)
+

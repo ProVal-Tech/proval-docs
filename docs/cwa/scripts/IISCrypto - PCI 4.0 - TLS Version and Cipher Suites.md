@@ -44,4 +44,5 @@ Registry exported to file: C:/ProgramData/_automation/script/IISCrypto_PCI_4_0/I
 Template applied: PCI 4.0
 ```
 ## Attachments
-[Pci4.0_Template.ictpl](<..\..\..\static\attachments\itg\12486318\Pci4.0_Template.ictpl>)
+[Pci4.0_Template.ictpl](<../../../static/attachments/itg/12486318/Pci4.0_Template.ictpl>)
+

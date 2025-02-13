@@ -31,4 +31,5 @@ Below are the filters applied to this view:
 
 Please attach the content XML VSA Export to this document.
 ## Attachments
-[cPVAL___Workstations_Not_Rebooted_30__Days.xml](<..\..\..\static\attachments\itg\10913901\cPVAL___Workstations_Not_Rebooted_30__Days.xml>)
+[cPVAL___Workstations_Not_Rebooted_30__Days.xml](<../../../static/attachments/itg/10913901/cPVAL___Workstations_Not_Rebooted_30__Days.xml>)
+

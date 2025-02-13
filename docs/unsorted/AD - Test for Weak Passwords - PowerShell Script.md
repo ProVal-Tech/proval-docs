@@ -50,11 +50,11 @@ If (Test-Path -Path $CWAPath) {
     # Make sure the directory for this exists
     If (Test-Path -Path "$CWAPath/$FolderName") {
         $DictFileLoc = "$CWAPath/$FolderName"
-        # Write-Host "Debug: Verified \"$CWAPath/$FolderName\" Exists"
+        # Write-Host "Debug: Verified /"$CWAPath/$FolderName/" Exists"
     }
     else {
         # Create Folder
-        # Write-Host "Debug: Verified \"$CWAPath/$FolderName\" Did not exist. Creating"
+        # Write-Host "Debug: Verified /"$CWAPath/$FolderName/" Did not exist. Creating"
         New-Item -Path $CWAPath -Name "$FolderName" -ItemType "directory"
         $DictFileLoc = "$CWAPath/$FolderName"
         If (Test-Path -Path "$CWAPath/$FolderName") {
@@ -69,7 +69,7 @@ else {
     # Make sure the directory for this exists
     If (Test-Path -Path "$((Get-Location).Drive.Name):/$FolderName") {
         $DictFileLoc = $AgnosticPath
-        # Write-Host "Debug: Looks Like Automate is not Installed - Switching to Agnostic: \"$AgnosticPath\""
+        # Write-Host "Debug: Looks Like Automate is not Installed - Switching to Agnostic: /"$AgnosticPath/""
     }
     else {
         # Create Folder
@@ -77,7 +77,7 @@ else {
         $DictFileLoc = $AgnosticPath
         If (Test-Path -Path "$((Get-Location).Drive.Name):/$FolderName") {
             # Success. No Action Required
-            # Write-Host "Debug: Verified \"$((Get-Location).Drive.Name):/$FolderName\" Exists"
+            # Write-Host "Debug: Verified /"$((Get-Location).Drive.Name):/$FolderName/" Exists"
         }
         else {
             Write-Host "Failed to create directory ($DictFileLoc). Exiting Script"
@@ -89,14 +89,14 @@ else {
 # Download 7-Zip if required
 If (Test-Path -Path "$DictFileLoc/7za.exe" -PathType leaf) {
     # No Download Required
-    # Write-Host "Debug: Verified \"$DictFileLoc/7za.exe\" Exists - No Download required"
+    # Write-Host "Debug: Verified /"$DictFileLoc/7za.exe/" Exists - No Download required"
 }
 else {
     [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
     (New-Object System.Net.WebClient).DownloadFile("https://file.provaltech.com/repo/tools/7za.exe", "$DictFileLoc/7za.exe")
     If (Test-Path -Path "$DictFileLoc/7za.exe" -PathType leaf) {
         # Success. No action Required
-        # Write-Host "Debug: Verified \"$DictFileLoc/7za.exe\" Exists after downloading"
+        # Write-Host "Debug: Verified /"$DictFileLoc/7za.exe/" Exists after downloading"
     }
     else {
         Write-Host "Failed to Download 7-Zip"
@@ -111,12 +111,12 @@ if ($PwdDict -eq "140MB") {
     $txtfilename = "rockyou.txt"
     If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
         # Success. No action Required
-        # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\". No Download Required."
+        # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/". No Download Required."
     }
     else {
         If (Test-Path -Path "$DictFileLoc/$txtfilename" -PathType leaf) {
             # Success. No action Required
-            # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" does not exist, but The Password Dictionary \"$DictFileLoc/$txtfilename\" Does Exist. No download required."
+            # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" does not exist, but The Password Dictionary /"$DictFileLoc/$txtfilename/" Does Exist. No download required."
         }
         else {
             # Download File
@@ -124,10 +124,10 @@ if ($PwdDict -eq "140MB") {
             (New-Object System.Net.WebClient).DownloadFile("http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2", "$DictFileLoc/$DictFileName")    
             If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
                 # Success. No action Required
-                # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" after downloading."
+                # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" after downloading."
             }
             else {
-                Write-Host "Failed to download the password dictionary \"$DictFileLoc/$DictFileName\". Exiting Script."
+                Write-Host "Failed to download the password dictionary /"$DictFileLoc/$DictFileName/". Exiting Script."
                 Exit
             }
         }
@@ -140,22 +140,22 @@ if ($PwdDict -eq "400MB") {
     $txtfilename = "hk_hlm_founds.txt"
     If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
         # Success. No action Required
-        # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\". No Download Required."
+        # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/". No Download Required."
     }
     else {
         If (Test-Path -Path "$DictFileLoc/$txtfilename" -PathType leaf) {
             # Success. No action Required
-            # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" does not exist, but The Password Dictionary \"$DictFileLoc/$txtfilename\" Does Exist. No download required."
+            # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" does not exist, but The Password Dictionary /"$DictFileLoc/$txtfilename/" Does Exist. No download required."
         }
         else {
             [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
             (New-Object System.Net.WebClient).DownloadFile("https://download.weakpass.com/wordlists/1256/hk_hlm_founds.txt.gz", "$DictFileLoc/$DictFileName")
             If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
                 # Success. No action Required
-                # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" after downloading."
+                # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" after downloading."
             }
             else {
-                Write-Host "Failed to download the password dictionary \"$DictFileLoc/$DictFileName\". Exiting Script."
+                Write-Host "Failed to download the password dictionary /"$DictFileLoc/$DictFileName/". Exiting Script."
                 Exit
             }
         }
@@ -168,22 +168,22 @@ if ($PwdDict -eq "12GB") {
     $txtfilename = "weakpass_3w.txt"
     If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
         # Success. No action Required
-        # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\". No Download Required."
+        # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/". No Download Required."
     }
     else {
         If (Test-Path -Path "$DictFileLoc/$txtfilename" -PathType leaf) {
             # Success. No action Required
-            # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" does not exist, but The Password Dictionary \"$DictFileLoc/$txtfilename\" Does Exist. No download required."
+            # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" does not exist, but The Password Dictionary /"$DictFileLoc/$txtfilename/" Does Exist. No download required."
         }
         else {
             [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
             (New-Object System.Net.WebClient).DownloadFile("https://download.weakpass.com/wordlists/1950/weakpass_3w.7z", "$DictFileLoc/$DictFileName")
             If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
                 # Success. No action Required
-                # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" after downloading."
+                # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" after downloading."
             }
             else {
-                Write-Host "Failed to download the password dictionary \"$DictFileLoc/$DictFileName\". Exiting Script."
+                Write-Host "Failed to download the password dictionary /"$DictFileLoc/$DictFileName/". Exiting Script."
                 Exit
             }   
         }
@@ -204,17 +204,17 @@ else {
     $DictFileName = "PasswordDict9MB.7z"
     If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
         # Success. No action Required
-        # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\". No Download Required."
+        # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/". No Download Required."
     }
     else {
         [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
         (New-Object System.Net.WebClient).DownloadFile("https://download.weakpass.com/wordlists/1937/ignis-1M.txt.7z", "$DictFileLoc/$DictFileName")
         If (Test-Path -Path "$DictFileLoc/$DictFileName" -PathType leaf) {
             # Success. No action Required
-            # Write-Host "Debug: Verified \"$DictFileLoc/$DictFileName\" after downloading."
+            # Write-Host "Debug: Verified /"$DictFileLoc/$DictFileName/" after downloading."
         }
         else {
-            Write-Host "Failed to download the password dictionary \"$DictFileLoc/$DictFileName\". Exiting Script."
+            Write-Host "Failed to download the password dictionary /"$DictFileLoc/$DictFileName/". Exiting Script."
             Exit
         }
     }   
@@ -224,17 +224,17 @@ else {
 $7zipEXE = "$DictFileLoc/7za.exe"
 If (Test-Path -Path "$DictFileLoc/$txtfilename" -PathType leaf) {
     # Success. No action Required
-    # Write-Host "Debug: Verified \"$DictFileLoc/$txtfilename\". No Extracting Required."
+    # Write-Host "Debug: Verified /"$DictFileLoc/$txtfilename/". No Extracting Required."
 }
 else {
     # 7-Zip Command Functions: https://sevenzip.osdn.jp/chm/cmdline/switches/index.htm
     Start-Process -FilePath $7zipEXE -ArgumentList "x $DictFileLoc/$DictFileName -aoa -o$DictFileLoc" -Wait -NoNewWindow -RedirectStandardOutput "./NUL"
     If (Test-Path -Path "$DictFileLoc/$txtfilename" -PathType leaf) {
         # Success. No action Required
-        # Write-Host "Debug: Verified \"$DictFileLoc/$txtfilename\" after extracting"
+        # Write-Host "Debug: Verified /"$DictFileLoc/$txtfilename/" after extracting"
     }
     else {
-        Write-Host "Failed to Extract the password dictionary \"$DictFileLoc/$txtfilename\". Exiting Script."
+        Write-Host "Failed to Extract the password dictionary /"$DictFileLoc/$txtfilename/". Exiting Script."
         Exit
     }
 }
@@ -331,4 +331,5 @@ Write-Host "$ReversibleEncryptionEnabled, $InteractiveLogonMsg, '$FinalStringDup
 |----------------------|-------------------------------------------------|
 | Kaseya               | Attached to Doc - Move wherever is recommended  |
 ## Attachments
-[TestADPasswords.ps1](<..\..\static\attachments\itg\9492883\TestADPasswords.ps1>)
+[TestADPasswords.ps1](<../../static/attachments/itg/9492883/TestADPasswords.ps1>)
+

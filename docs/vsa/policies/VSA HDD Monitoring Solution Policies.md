@@ -15,8 +15,8 @@ This document presents 25 independent policies, one for each drive letter, which
 
 # Details
 
-- **Policy Name**: Server Core HDD Monitor Drive \{LETTER}
-- **Policy Description**: Monitors server drive \{LETTER}.
+- **Policy Name**: Server Core HDD Monitor Drive /{LETTER}
+- **Policy Description**: Monitors server drive /{LETTER}.
 - **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
@@ -37,4 +37,5 @@ This document presents 25 independent policies, one for each drive letter, which
     - **Policy Object Members**: [EPM - Disk - Monitor Set - Vsa HDD Monitoring Solution Monitor Sets](https://proval.itglue.com/DOC-5078775-10793257)
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
 ## Attachments
-[Wokstation_Core_HDD_Monitor_Drive_C.xml](<..\..\..\static\attachments\itg\10793261\Wokstation_Core_HDD_Monitor_Drive_C.xml>)
+[Wokstation_Core_HDD_Monitor_Drive_C.xml](<../../../static/attachments/itg/10793261/Wokstation_Core_HDD_Monitor_Drive_C.xml>)
+

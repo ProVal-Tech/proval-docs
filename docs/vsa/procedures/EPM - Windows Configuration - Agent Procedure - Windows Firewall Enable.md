@@ -88,4 +88,5 @@ The agent procedure checks whether the machine has the firewall enabled. If not,
 
 Procedure Logs
 ## Attachments
-[Procedure_Windows_Firewall_Enable_.xml](<..\..\..\static\attachments\itg\11281545\Procedure_Windows_Firewall_Enable_.xml>)
+[Procedure_Windows_Firewall_Enable_.xml](<../../../static/attachments/itg/11281545/Procedure_Windows_Firewall_Enable_.xml>)
+

@@ -105,4 +105,5 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Files on Machine
 - Remote Monitor
 ## Attachments
-[CPUTempMon.exe](<..\..\..\static\attachments\itg\14323116\CPUTempMon.exe>)
+[CPUTempMon.exe](<../../../static/attachments/itg/14323116/CPUTempMon.exe>)
+

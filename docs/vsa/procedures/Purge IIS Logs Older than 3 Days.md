@@ -103,5 +103,6 @@ None
 
 Script Logs
 ## Attachments
-[Procedure_Purge_IIS_Logs_Older_than_3_Days.xml](<..\..\..\static\attachments\itg\13341572\Procedure_Purge_IIS_Logs_Older_than_3_Days.xml>)
-[Remove-OlderFiles.ps1](<..\..\..\static\attachments\itg\13341572\Remove-OlderFiles.ps1>)
+[Procedure_Purge_IIS_Logs_Older_than_3_Days.xml](<../../../static/attachments/itg/13341572/Procedure_Purge_IIS_Logs_Older_than_3_Days.xml>)
+[Remove-OlderFiles.ps1](<../../../static/attachments/itg/13341572/Remove-OlderFiles.ps1>)
+

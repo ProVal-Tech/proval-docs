@@ -34,4 +34,5 @@ The **eShare Install** script silently installs the eShare software on the machi
 
 - Procedure log
 ## Attachments
-[Procedure_Eshare_install.xml](<..\..\..\static\attachments\itg\9818310\Procedure_Eshare_install.xml>)
+[Procedure_Eshare_install.xml](<../../../static/attachments/itg/9818310/Procedure_Eshare_install.xml>)
+

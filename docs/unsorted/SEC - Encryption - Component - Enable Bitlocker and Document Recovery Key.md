@@ -23,4 +23,5 @@ This document enables BitLocker on the endpoint and saves the recovery key and B
 - stdOut
 - stdErr
 ## Attachments
-[_Enable_Bitlocker_and_Document_to_UDF_WIN_ProVal.cpt](<..\..\static\attachments\itg\11881196\_Enable_Bitlocker_and_Document_to_UDF_WIN_ProVal.cpt>)
+[_Enable_Bitlocker_and_Document_to_UDF_WIN_ProVal.cpt](<../../static/attachments/itg/11881196/_Enable_Bitlocker_and_Document_to_UDF_WIN_ProVal.cpt>)
+

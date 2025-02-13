@@ -28,4 +28,5 @@ Import the [attached component](/attachments/Soji_Disk_Cleaner.cpt) into Datto R
 - stdError  
 - ProgramData/_automation/app/soji/sojilogs/
 ## Attachments
-[Soji_Disk_Cleaner.cpt](<..\..\..\static\attachments\itg\11821769\Soji_Disk_Cleaner.cpt>)
+[Soji_Disk_Cleaner.cpt](<../../../static/attachments/itg/11821769/Soji_Disk_Cleaner.cpt>)
+

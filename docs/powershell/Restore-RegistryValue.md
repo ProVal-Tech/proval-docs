@@ -30,13 +30,13 @@ This document explains how to restore a backed-up registry key property or regis
 To restore the backed-up key property to its original registry location and remove the backed-up key property when finished, use the following command:
 
 ```
-Restore-RegistryValue.ps1 -Path "HKLM:\\Software\\_automation\\WindowsUpdate\\Windowsversion" -Name Windowsversion -RemoveOnRestore
+Restore-RegistryValue.ps1 -Path "HKLM://Software//_automation//WindowsUpdate//Windowsversion" -Name Windowsversion -RemoveOnRestore
 ```
 
 To restore the backed-up key property and all recursive keys and properties to their original registry locations, use the following command:
 
 ```
-Restore-RegistryValue.ps1 -Path "HKLM:\\Software\\_automation\\WindowsUpdate\\Windowsversion"
+Restore-RegistryValue.ps1 -Path "HKLM://Software//_automation//WindowsUpdate//Windowsversion"
 ```
 
 ### Parameters
@@ -52,8 +52,8 @@ Restore-RegistryValue.ps1 -Path "HKLM:\\Software\\_automation\\WindowsUpdate\\Wi
 Does the content write to the RMM log, a data file, or the console? If so, what is the syntax?
 
 ```
-.\Restore-RegistryValue-log.txt
-.\Restore-RegistryValue-error.txt
+./Restore-RegistryValue-log.txt
+./Restore-RegistryValue-error.txt
 ```
 
 ## Locations
@@ -66,5 +66,6 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | Kaseya                               |                                           |
 | Datto RMM                            |                                           |
 ## Attachments
-[Install-AnyConnect.ps1](<..\..\static\attachments\itg\10441516\Install-AnyConnect.ps1>)
-[README.md](<..\..\static\attachments\itg\10441516\README.md>)
+[Install-AnyConnect.ps1](<../../static/attachments/itg/10441516/Install-AnyConnect.ps1>)
+[README.md](<../../static/attachments/itg/10441516/README.md>)
+

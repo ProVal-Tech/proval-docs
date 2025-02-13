@@ -41,5 +41,6 @@ CustomObject
 | Kaseya                |                              |
 | Datto RMM            |                              |
 ## Attachments
-[Install-AnyConnect.ps1](<..\..\static\attachments\itg\10371907\Install-AnyConnect.ps1>)
-[README.md](<..\..\static\attachments\itg\10371907\README.md>)
+[Install-AnyConnect.ps1](<../../static/attachments/itg/10371907/Install-AnyConnect.ps1>)
+[README.md](<../../static/attachments/itg/10371907/README.md>)
+

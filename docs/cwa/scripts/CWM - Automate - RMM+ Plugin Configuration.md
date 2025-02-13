@@ -71,4 +71,5 @@ Create a session group in the ScreenConnect portal for machines that have not ch
   ![Image](../../../static/img/CWM---Automate---RMM+-Plugin-Configuration/image_9.png)  
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
 ## Attachments
-[HTTP-GET-POST.dll](<..\..\..\static\attachments\itg\9770217\HTTP-GET-POST.dll>)
+[HTTP-GET-POST.dll](<../../../static/attachments/itg/9770217/HTTP-GET-POST.dll>)
+

@@ -56,4 +56,5 @@ Modify **background.zip** to the name of the ZIP file you selected in the previo
 
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
 ## Attachments
-[Import-TeamsBackground.ps1](<..\..\..\static\attachments\itg\16245018\Import-TeamsBackground.ps1>)
+[Import-TeamsBackground.ps1](<../../../static/attachments/itg/16245018/Import-TeamsBackground.ps1>)
+

@@ -104,7 +104,8 @@ A: Dependencies and errors are as follows:
 - For `POST /MaintenanceMode`: MaintenanceMode AuthKey, ComputerId, ApplicationId, and Method must be set appropriately.  
 ![POST /MaintenanceMode Dependencies](https://proval.itglue.com/5078775/docs/16557697/images/25594739)
 ## Attachments
-[MAINTENANCEMODE_-_POST_(1)_(1).pdf](<..\..\..\static\attachments\itg\16557697\MAINTENANCEMODE_-_POST_(1)_(1).pdf>)
-[MAINTENANCEMODEBULK_-_POST_1_.pdf](<..\..\..\static\attachments\itg\16557697\MAINTENANCEMODEBULK_-_POST_1_.pdf>)
-[REPORTS_-_GET_DATA_(1)_(1).pdf](<..\..\..\static\attachments\itg\16557697\REPORTS_-_GET_DATA_(1)_(1).pdf>)
-[REQUESTS_-_GET_(1)_(1).pdf](<..\..\..\static\attachments\itg\16557697\REQUESTS_-_GET_(1)_(1).pdf>)
+[MAINTENANCEMODE_-_POST_(1)_(1).pdf](<../../../static/attachments/itg/16557697/MAINTENANCEMODE_-_POST_(1)_(1).pdf>)
+[MAINTENANCEMODEBULK_-_POST_1_.pdf](<../../../static/attachments/itg/16557697/MAINTENANCEMODEBULK_-_POST_1_.pdf>)
+[REPORTS_-_GET_DATA_(1)_(1).pdf](<../../../static/attachments/itg/16557697/REPORTS_-_GET_DATA_(1)_(1).pdf>)
+[REQUESTS_-_GET_(1)_(1).pdf](<../../../static/attachments/itg/16557697/REQUESTS_-_GET_(1)_(1).pdf>)
+

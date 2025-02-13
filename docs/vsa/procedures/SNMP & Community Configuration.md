@@ -32,9 +32,9 @@ This agent procedure is used to enable the 'SNMP' Windows Optional feature on an
 | 12:07:19 pm 3-Oct-22 | Execute Powershell Command-0002           | Powershell is present.                         | provaltech.com/surender.kumar    |
 | 12:07:17 pm 3-Oct-22 | Execute Powershell Command                 | Success THEN                                   | provaltech.com/surender.kumar    |
 | 12:07:16 pm 3-Oct-22 | Execute Powershell Command-0011           | Powershell command completed!                  | provaltech.com/surender.kumar    |
-| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "Enable-WindowsOptionalFeature -Online -FeatureName \"SNMP\"" "" | provaltech.com/surender.kumar    |
+| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0011           | Executing powershell "" -Command "Enable-WindowsOptionalFeature -Online -FeatureName /"SNMP/"" "" | provaltech.com/surender.kumar    |
 | 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0010           | Not sending output to variable.                | provaltech.com/surender.kumar    |
-| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "Enable-WindowsOptionalFeature -Online -FeatureName \"SNMP\"" | provaltech.com/surender.kumar    |
+| 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0008           | New command variable is: -Command "Enable-WindowsOptionalFeature -Online -FeatureName /"SNMP/"" | provaltech.com/surender.kumar    |
 | 12:07:11 pm 3-Oct-22 | Execute Powershell Command-0008           | Custom commands detected as Enable-WindowsOptionalFeature -Online -FeatureName "SNMP" | provaltech.com/surender.kumar    |
 | 12:07:08 pm 3-Oct-22 | Execute Powershell Command-0002           | Powershell is present.                         | provaltech.com/surender.kumar    |
 | 12:07:07 pm 3-Oct-22 | Execute Powershell Command                 | Success THEN                                   | provaltech.com/surender.kumar    |
@@ -68,4 +68,5 @@ The agent procedure checks whether the machine has the SNMP feature enabled. If 
 
 Procedure Logs
 ## Attachments
-[Procedure_SNMP___Community_Configuration.xml](<..\..\..\static\attachments\itg\10996674\Procedure_SNMP___Community_Configuration.xml>)
+[Procedure_SNMP___Community_Configuration.xml](<../../../static/attachments/itg/10996674/Procedure_SNMP___Community_Configuration.xml>)
+

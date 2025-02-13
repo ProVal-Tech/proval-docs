@@ -49,5 +49,6 @@ This command returns a list of all SQL replication instances that are not synchr
 | Kaseya                            |                                                 |
 | Datto RMM                         |                                                 |
 ## Attachments
-[Install-AnyConnect.ps1](<..\..\static\attachments\itg\10361486\Install-AnyConnect.ps1>)
-[README.md](<..\..\static\attachments\itg\10361486\README.md>)
+[Install-AnyConnect.ps1](<../../static/attachments/itg/10361486/Install-AnyConnect.ps1>)
+[README.md](<../../static/attachments/itg/10361486/README.md>)
+
