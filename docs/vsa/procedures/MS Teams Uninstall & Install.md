@@ -74,7 +74,5 @@ Agent Procedure Log
 ## Export Attachment
 
 Attach the XML VSA export content to this document.
-
-
-
-
+## Attachments
+[Procedure_MS_Teams_Uninstall___Install.xml](<..\..\..\static\attachments\itg\18036630\Procedure_MS_Teams_Uninstall___Install.xml>)

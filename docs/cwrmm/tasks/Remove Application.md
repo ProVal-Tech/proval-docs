@@ -107,10 +107,9 @@ Paste the highlighted text:
 #### Row 4c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-![Row 4c Add Row](../../../static/img/Remove-Application/image_30.png)  
 
 In the script exit message, leave it blank.  
-![Row 4c Exit](../../../static/img/Remove-Application/image_31.png)  
+
 
 ### Row 5: Function: Script Log
 
@@ -118,12 +117,12 @@ In the script exit message, leave it blank.
 
 Paste the highlighted text:  
 `Executing the PowerShell script to perform the uninstallation of the @ApplicationName@.`  
-![Row 5 Log Image](../../../static/img/Remove-Application/image_32.png)  
+ 
 
 ### Row 6: Function: PowerShell Script
 
 ![Row 6 PowerShell](../../../static/img/Remove-Application/image_22.png)  
-![Row 6 PowerShell Image](../../../static/img/Remove-Application/image_33.png)  
+ 
 
 Paste in the following PowerShell script and set the expected time of script execution to **3600** seconds.
 
@@ -222,13 +221,12 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 In this window, search for the **Remove Application Result** field.  
 **Custom Field:** Remove Application Result  
 **Value:** `Success`  
-![Row 10c Set Custom Field](../../../static/img/Remove-Application/image_36.png)  
+ 
 
 #### Row 10d: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-In the script exit message, leave it blank.  
-![Row 10d Exit](../../../static/img/Remove-Application/image_31.png)  
+In the script exit message, leave it blank.    
 
 ### Row 11: Function: Script Exit
 

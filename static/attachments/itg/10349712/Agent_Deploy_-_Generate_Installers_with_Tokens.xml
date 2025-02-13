@@ -1,0 +1,110 @@
+﻿<LabTech_Expansion
+	Version="220.166"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>7396</ScriptId>
+				<FolderId>401</FolderId>
+				<ScriptName>Agent Deploy - Generate Installers with Tokens</ScriptName>
+				<ScriptNotes>Will generate ticket with Windows MSI, Mac, and Linux installers with tokens.
+• Enter # of months until the token expires. If left blank, the default is 12
+• Enter alternative LocationID. If left blank, it will default to the Location where the script was executed from. 
+• Enter Email address if you want to receive an email with all of the links.
+• Additional PowerShell and Mac Terminal Scripts will be included to make deployments easier. 
+
+Created by Chuck Fowler 6/2020</ScriptNotes>
+				<Permission>1,4,5,20,21,25,</Permission>
+				<EditPermission>1,4,5,20,21,25,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPywrCMBRE94L/kA9oyEPTF5eA+ALRjYr72Fwhm7SkCdi/lxaFuhrmzpwLA2fXoO9xZ6LRcB861ALYpHBNftsmHzFoDmzmYP/uXBgZ1IfgrBkyckoeicwzIrnkRNbrvOYF2VyAzcpwa4Lr4gND71o/fv0/fPNjclarwq5eUpb0WSikQqChlRAl5VxxlVdKWVQ/fgKAzbcsFx/tPX5z2wAAAA==</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>57d3f228-b75e-11ea-9118-005056955de5</ScriptGuid>
+				<ScriptFlags>1</ScriptFlags>
+				<Parameters># Months Valid,TargetLocationID,Email</Parameters>
+			</Table>
+		</NewDataSet>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>7397</ScriptId>
+					<FolderId>401</FolderId>
+					<ScriptName>Generate Agent InstallerToken 1.3</ScriptName>
+					<ScriptNotes>Creates an Installer Token.
+
+Parameters:
+TargetLocationID: LocationID for the installer. Default is the LocationID for this computer.
+TokenReason: Purpose for Token Creation. Default is "Script &lt;SCRIPTID&gt;"
+ValidityPeriod: Amount of time the token is valid, as X UNITs. (1 DAY, 2 MONTH, etc.) Default is 1 day. Only MINUTE,HOUR,DAY,WEEK,MONTH are supported.
+InstallerType: 1=Windows MSI, 2=Windows EXE, 3=Linux x86, 4=Linux x86_x64, 5=macOS
+
+Returns:
+InstallerToken:  Generated Token
+TargetLocationID: LocationID for the token
+ExpirationDateUtc: Token Expiration Date String
+InstallerTypeID: InstallerTypeID for the token
+
+Darren White - Apex Technology Management - v1.3 - 20200625
+Created 20200619</ScriptNotes>
+					<Permission>1,4,5,20,21,25,</Permission>
+					<EditPermission>1,4,5,20,21,25,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>1</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPzQrCMBCE74LvkAdoSFK7rS1LQPwD0YuK9zTdQy5pSRuwby8tCvU0zM58C4NXZ8n3dDCD0fgcO9IKxax4j37fRj9Q0BLFwuHx3bkwMaRPwTVmTNglemKqTFgqU8m2VZZVsmC7G4pFGR82uG54Uehd66ev/4dvfo6u0bUtgCDf8LoAy5Uiw0ultlxKkJCXAA3Bj58BFMst69UHGvfJfNsAAAA=</LicenseData>
+					<ScriptData>H4sIAAAAAAAEAN1a7VObSBj/7oz/w7YzOaCigURMTU2EBtJiCeR4UTu11yFhtUwJUCBXnfGPvwWJAQJcL41zjX5IePZ52c1vn31eFk+0aWD7EW9GZn93B4CTBzpMCEQKt1FgxtyhDR0rBM0FY2wG5gxGMAj7uhncwEjypmZke67Ik7r3DboqNEPPJc9Nx7bs6G4MA9uzSNENI9NxYKDf+fCkmbGS2n3neBPTyUz0sKBzJIKM9+mTZn4gJ/Vublv9ybTDQOaovT/pMNN9mobm/jFNv96nKIZijo4ZxoLMwkqikPzuZvaHp+a0CPqPC+OmUbqA9CkdH87dhBatmJehskDRBeBaBbpdoA8LNJPBwwuiPoXWG3+nYwPPjWx3DuPxx+eUp4SSPbMTlcVjyhFdC7pRsmkxN0tmIVmiUANLqw4WqlUNTJ8tug8LqNQx6Dxm/StrL+W08uituGAq1t4IqPTvCGqLqsGUpisQ1ARJGOhAHMqGJOEj7hJ3vOmBk+JmWwSZYeUZWGNJNTCCALs7Q1UZATy1ia1uJAY4DWTiApKZejN/js67bT1wBykt8kRM8joyKwlDHZwpovyoG8Y8ND1Q5PjrYGmzx+sZKqe8mCpRTlSnB8vpY8Xl5G92d57Ss+jnc1xFWRfUc04CbD6ys+CRQwOe+1jhgAuhq3APnWb0iZ92R6Js6ML9e8VQ75Hm/YUgfLgfKbL+nqjYlPzUa21Ja5sOO92pSS19mqkAm81lW7YczP+YedrbhVudK2uCDvIQ9VRhLHEDATfGY0HFsUYYBbZ7E8Bw7kQo6JEYwEgMI1C4eIykABdlTVfxvCUSG2kiUqDJagnhUkASrRqJC1H+FxtHh0jgsEZAQofrEsm0a2RG3ABJMDUSinaZSOTHiYe/N+Xu94slzuFWOVptzGyE353Uh0BVZv5Et9qHzOeKgJeDfc0kxDwfQNlMh8FWAPoXfhraBH764hP7OSOOKOIqfIUfvEK8P5zozYursCrNZNTWQvxomxDv1BWUq0gU4W7/XHbpd8cB9M0AJhZTncNaFDvbVDzVl+VVVXkyFWiEyTcqr5/IH19vGkn6KSNA+7gGyjI32mz+OX4+blfdDaICSLj17SBZkm7PIEozM7+nKobM4zynC184nscNffBFF0eCpnOjMU6QxdKf2KNIKlMUDRR5wOk4tsxa8S71MFJSLlBZNeIZ3DBEHke1A4ndly0AI8vWlRPmzQga0RSJJuscKuoIzblcZpmBuIudNhuw2fgIGk63YXcbIWj42LKGKT1yYlwCWjbaunC99m/j1zVPefDqfamy1ygiVdFu9GVuPQw33kM/afCiO7WNR3pMDFnHXxEguUfJH5YQXLwXVAEUjxCbH2CxiuK7Kh/3qXL018jLdFUL/VtGyPoWulUVIu/2Okpnos+jydCftJjzvY8jp3XDy2fKW3j7/VrXhjdn3tm311RICYrX+sELM8r6s9fbSK9NVzXbW4gwfVSB8OPVmtVdvUHMvy/osoU+KMuP/bZbPB6kGAquOXGg1dODOSRX0we7MlQVuPKXAT8XxPrnKENe2w+/5wO8S7WY/DZXtbrbuM2V+aGAxJq3UT8HaFWr+6wALemBfzHcbFW/elSXYUVZE1Q9vpJWVhIrnh8gMy8oCuGlGC70AVlwv2V8IQcBRDLW27v0KdYgDd9KBx+e4kECnHOSIWi7O/hqOifLXqOQ2Ergw8hlpYuVlbpsfFu5cugwkiaLt5pksbzXjLearoryuy+izAuXuIGwxGNrSJsoShPLVyeb7b/o7er765pVQ5XAy6ZkTnQ4/drkoe94dzO0jgMz9G9PCyVe0SVegmsvAPZiEETIAcCKPwAzAov3c6DkleoP23HABIK/484NzBF8DihJfQDt7sHTbOfGLx9+u2ucr1Hkh91msxG3QMFXL4xccwYb6258RRnCez9cxzMt5FTrNVL/x8XGgk7/z+QfBBiOS3YiAAA=</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>bc75e563-b75c-11ea-9118-005056955de5</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters>InstallerType,TargetLocationID,TokenReason,ValidityPeriod</Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>401</FolderID>
+						<ParentID>400</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>f00b356a-da83-41de-b8c2-de02b33d49b9</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>400</FolderID>
+						<ParentID>0</ParentID>
+						<Name>Custom</Name>
+						<GUID>d20ba48c-190c-46f9-bf04-8bf2b1f730da</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>401</FolderID>
+					<ParentID>400</ParentID>
+					<Name>Automate - Deploy</Name>
+					<GUID>f00b356a-da83-41de-b8c2-de02b33d49b9</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>400</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Custom</Name>
+					<GUID>d20ba48c-190c-46f9-bf04-8bf2b1f730da</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

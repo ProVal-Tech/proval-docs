@@ -46,6 +46,5 @@ The location of output files for log, result, and error files is as follows:
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-
-
-
+## Attachments
+[Procedure_Stagnant_Agent_Removal_(Deprecated).xml](<..\..\..\static\attachments\itg\10619887\Procedure_Stagnant_Agent_Removal_(Deprecated).xml>)

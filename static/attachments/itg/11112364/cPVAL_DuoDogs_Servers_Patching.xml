@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+  <Policy id="825584973313652" ref="cPVAL DuoDogs Servers Patching" partitionid="1" rowDesc="cPVAL DuoDogs Servers Patching" policyTypeFK="0" markedForDelete="False" viewFK="55894756" viewName="xPVAL OS - All Servers" treeFullPath="PVAL Stack - Custom.Org Level Policies.Duodogs" sortOrder="-1" Override="0">
+    <agentMenu />
+    <agentProcedures />
+    <alerts />
+    <checkin />
+    <credential />
+    <distributeFiles />
+    <logging />
+    <machProfile />
+    <monitorSets />
+    <patchSettings />
+    <protectionPolicy />
+    <workingDir />
+    <remoteControl />
+    <patchFileSource />
+    <patchProcedureSchedule />
+    <patchRebootAction />
+    <auditSchedule />
+    <eventlogsettings />
+    <updatelistbyscan />
+    <windowsUpdate />
+  </Policy>
+</Policies>

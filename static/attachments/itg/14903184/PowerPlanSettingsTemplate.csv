@@ -1,0 +1,31 @@
+Subgroup,Power Setting,Direct Power Settings (AC),Battery Power Settings (DC),Minimum Possible Setting,Maximum Possible Setting,Possible Settings Increment,Possible Settings Units,Possible Settings,Additional Notes
+Hard disk,Turn off hard disk after,0,0,0,4294967295,1,Seconds,,0-Never
+Internet Explorer,JavaScript Timer Frequency,1,0,,,,,"0-Maximum Power Savings, 1-Maximum Performance",
+Desktop background settings,Slide show,1,1,,,,,"0-Available, 1-Paused",
+Wireless Adapter Settings,Power Saving Mode,0,2,,,,,"0-Maximum Performance, 1-Low Power Saving, 2-Medium Power Saving, 3-Maximum Power Saving",
+Sleep,Sleep after,60,60,0,4294967295,1,Seconds,,0-Never
+Sleep,Allow hybrid sleep,1,1,,,,,"0-Off, 1-On",
+Sleep,Hibernate after,0,18000,0,4294967295,1,Seconds,,0-Never
+Sleep,Allow wake timers,2,1,,,,,"0-Disable, 1-Enable, 2-Important Wake Timers Only",
+USB settings,USB selective suspend setting,1,1,,,,,"0-Disabled, 1-Enabled",
+Intel(R) Graphics Settings,Intel(R) Graphics Power Plan,2,2,,,,,"0-Maximum Battery Life, 1-Balanced, 2-Maximum Performance",
+AMD Power Slider,Overlay,2,2,,,,,"0-Battery Saver, 1-Better battery, 2-Better performance, 3-Best performance",
+Power buttons and lid,Start menu power button,0,0,,,,,"0-Sleep, 1-Hibernate, 2-Shut down",
+PCI Express,Link State Power Management,2,2,,,,,"0-Off, 1-Moderate power savings, 2-Maximum power savings",
+Processor power management,Minimum processor state,15,5,0,100,1,Percentage,,
+Processor power management,System cooling policy ,1,0,,,,,"0-Active, 1-Passive",
+Processor power management,Maximum processor state,100,100,0,100,1,Percentage,,
+Display,Turn off display after,0,0,0,4294967295,1,Seconds,,0-Never
+Display,Display brightness,100,100,0,100,1,Percentage,,
+Display,Dimmed display brightness,50,50,0,100,1,Percentage,,
+Display,Enable adaptive brightness,0,0,,,,,"0-Off, 1-On",
+Multimedia settings,When sharing media,1,0,,,,,"0-Allow the computer to sleep, 1-Prevent idling to sleep, 2-Allow the computer to enter Away Mode",
+Multimedia settings,Video playback quality bias,1,0,,,,,"0-Video playback power-saving bias, 1-Video playback performance bias",
+Multimedia settings,When playing video,0,1,,,,,"0-Optimize video quality, 1-Balanced, 2-Optimize power savings",
+Battery,Critical battery notification,1,1,,,,,"0-Off, 1-On",
+Battery,Critical battery action,2,2,,,,,"0-Do nothing, 1-Sleep, 2-Hibernate, 3-Shut down",
+Battery,Low battery level,6,6,0,100,1,Percentage,,
+Battery,Critical battery level,2,2,0,100,1,Percentage,,
+Battery,Low battery notification,1,1,,,,,"0-Off, 1-On",
+Battery,Low battery action,0,0,,,,,"0-Do nothing, 1-Sleep, 2-Hibernate, 3-Shut down",
+Battery,Reserve battery level,4,4,0,100,1,Percentage,,

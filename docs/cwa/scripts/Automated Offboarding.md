@@ -48,6 +48,5 @@ Ticketing is optional.
 
 - Script Log  
 - Ticketing on failure if enabled.
-
-
-
+## Attachments
+[Automated_Offboarding_Generic.xml](<..\..\..\static\attachments\itg\8984816\Automated_Offboarding_Generic.xml>)

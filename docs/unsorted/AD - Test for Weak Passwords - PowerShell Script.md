@@ -330,6 +330,5 @@ Write-Host "$ReversibleEncryptionEnabled, $InteractiveLogonMsg, '$FinalStringDup
 | ConnectWise Automate | Attached to Doc - Move wherever is recommended |
 |----------------------|-------------------------------------------------|
 | Kaseya               | Attached to Doc - Move wherever is recommended  |
-
-
-
+## Attachments
+[TestADPasswords.ps1](<..\..\static\attachments\itg\9492883\TestADPasswords.ps1>)

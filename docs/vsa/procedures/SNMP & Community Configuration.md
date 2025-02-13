@@ -67,6 +67,5 @@ The agent procedure checks whether the machine has the SNMP feature enabled. If 
 ## Output
 
 Procedure Logs
-
-
-
+## Attachments
+[Procedure_SNMP___Community_Configuration.xml](<..\..\..\static\attachments\itg\10996674\Procedure_SNMP___Community_Configuration.xml>)

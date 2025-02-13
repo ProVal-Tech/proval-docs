@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+  <Policy id="154432974827677" ref="Workstation Core HDD Monitor Drive C" partitionid="1" rowDesc="Workstation Core HDD Monitor Drive C" policyTypeFK="0" markedForDelete="False" viewFK="34667543" viewName="xPVAL OS - All Windows WS" treeFullPath="PVAL Policy Stack.Global Policies.Monitoring.Workstation" sortOrder="-1" Override="0">
+    <agentMenu />
+    <agentProcedures />
+    <alerts />
+    <checkin />
+    <credential />
+    <distributeFiles />
+    <logging />
+    <machProfile />
+    <monitorSets>
+      <monitorSet id="703537594528653" partitionid="1" policyObjectDataId="700478910655006" monitorSetId="1826" createAlarm="True" createTicket="False" runScript="True" scriptId="1587845075" machineId="" emailRecipients="True" emailAddresses="alerts@provaltech.com" name="xPVAL WS C: Free Space Under 2GB 72hr" scriptName="Soji - Disk Cleaner" machName="" />
+    </monitorSets>
+    <patchSettings />
+    <protectionPolicy />
+    <workingDir />
+    <remoteControl />
+    <patchFileSource />
+    <patchProcedureSchedule />
+    <patchRebootAction />
+    <auditSchedule />
+    <eventlogsettings />
+    <updatelistbyscan />
+    <windowsUpdate />
+  </Policy>
+</Policies>

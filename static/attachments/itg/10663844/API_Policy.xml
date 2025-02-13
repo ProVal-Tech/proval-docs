@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+  <Policy id="139366596908945" ref="API Calls" partitionid="1" rowDesc="VSA Automation through the use of the Kaseya RESTful API and the ProVal VSAAPI Powershell Module" policyTypeFK="0" markedForDelete="False" viewFK="43510872" viewName="xPVAL VSA Server-" treeFullPath="PVAL Policy Stack.Global Policies.Scheduled Scripts" sortOrder="-1" Override="0">
+    <agentMenu />
+    <agentProcedures>
+      <agentProcedure id="823510015161479" partitionId="1" procedureId="837894470" procedureSchedule="{&quot;startdatefrom&quot;:&quot;2021-01-19T06:00:00-05:00&quot;,&quot;starttimefrom&quot;:&quot;2021-01-19T06:00:00-05:00&quot;,&quot;startdateto&quot;:&quot;2021-01-19T06:00:00-05:00&quot;,&quot;starttimeto&quot;:&quot;2021-01-19T06:00:00-05:00&quot;,&quot;recurrencetype&quot;:&quot;DAILY&quot;,&quot;rangeofrecurrencetype&quot;:&quot;1&quot;,&quot;skipifoffline&quot;:&quot;N&quot;,&quot;powerupifoffline&quot;:&quot;N&quot;,&quot;scheduleid&quot;:&quot;0&quot;,&quot;excludetimerange&quot;:&quot;N&quot;,&quot;recurringminutesinterval&quot;:60,&quot;recurringhoursinterval&quot;:1,&quot;recurringdaysinterval&quot;:1,&quot;recurringweeksinterval&quot;:1,&quot;sundayflag&quot;:&quot;N&quot;,&quot;mondayflag&quot;:&quot;N&quot;,&quot;tuesdayflag&quot;:&quot;N&quot;,&quot;wednesdayflag&quot;:&quot;N&quot;,&quot;thursdayflag&quot;:&quot;N&quot;,&quot;fridayflag&quot;:&quot;N&quot;,&quot;saturdayflag&quot;:&quot;N&quot;,&quot;recurringmonthsinterval&quot;:1,&quot;monthlyspecificoccurrence&quot;:&quot;FIRST&quot;,&quot;monthlyspecificday&quot;:&quot;DAY&quot;,&quot;monthlyintervaltype&quot;:1,&quot;monthday&quot;:1,&quot;yearlyintervaltype&quot;:1,&quot;yearlyspecificmonth&quot;:1,&quot;yearday&quot;:1,&quot;yearlyspecificoccurrence&quot;:&quot;FIRST&quot;,&quot;yearlyspecificday&quot;:&quot;DAY&quot;,&quot;yearlyspecificmonth2&quot;:1,&quot;rangeofrecurrenceendafterinterval&quot;:1,&quot;rangeofrecurrenceenddatetime&quot;:&quot;2021-01-19T16:22:55-05:00&quot;,&quot;excludetimefrom&quot;:&quot;2021-01-19T00:00:00-05:00&quot;,&quot;excludetimeto&quot;:&quot;2021-01-19T00:00:00-05:00&quot;,&quot;createdatetime&quot;:&quot;2021-01-19T16:22:55&quot;,&quot;execwhennextonline&quot;:&quot;N&quot;,&quot;schedinagenttime&quot;:&quot;N&quot;,&quot;distribution&quot;:0}" procedureParameters="" policyObjectDataFK="185207103837843" procedureScheduleDescription="every 1 day(s) at 06:00:00  starting on 06:00:00 19-Jan-21 no end date " procedureName="- Master VSA Automation Daily Procedure -" />
+    </agentProcedures>
+    <alerts />
+    <checkin />
+    <credential />
+    <distributeFiles />
+    <logging />
+    <machProfile />
+    <monitorSets />
+    <patchSettings />
+    <protectionPolicy />
+    <workingDir />
+    <remoteControl />
+    <patchFileSource />
+    <patchProcedureSchedule />
+    <patchRebootAction />
+    <auditSchedule />
+    <eventlogsettings />
+    <updatelistbyscan />
+    <windowsUpdate />
+  </Policy>
+</Policies>

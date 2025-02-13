@@ -55,6 +55,5 @@ else{
 - Agent Procedure Log
 
 Attach the content XML VSA Export to this document.
-
-
-
+## Attachments
+[Procedure_OneDrive_Disable.xml](<..\..\..\static\attachments\itg\10318510\Procedure_OneDrive_Disable.xml>)

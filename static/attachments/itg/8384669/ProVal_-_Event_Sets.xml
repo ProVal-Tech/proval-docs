@@ -1,0 +1,1316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<event_sets>
+  <set_elements setName="xPVAL AV APP - Webroot Agent Errors" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="1000" username="*" description="Faulting application name: WRSA.exe" />
+  </set_elements>
+  <set_elements setName="xPVAL DHCP EW" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1121" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL GLOBAL APP - Global Exclude List" snmpTraps="0" Override="0">
+    <element_data ignore="1" source="*" category="*" eventId="547" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="915" username="*" description="*" />
+    <element_data ignore="1" source="ShadowProtectSvc" category="*" eventId="1155" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="3041" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="24583" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="24581" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="107" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL GLOBAL SYS - Global Exclude List" snmpTraps="0" Override="0">
+    <element_data ignore="1" source="*" category="*" eventId="1123" username="*" description="*print spooler*" />
+    <element_data ignore="1" source="NIC Agents" category="*" eventId="1291" username="*" description="*Connectivity has been lost*" />
+    <element_data ignore="1" source="Server Administrator" category="*" eventId="-1" username="*" description="*Chassis intrusion detected*" />
+    <element_data ignore="1" source="Server Administrator" category="*" eventId="2335" username="*" description="*is not a certified drive*" />
+    <element_data ignore="1" source="Server Administrator" category="*" eventId="2095" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="4319" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="25137" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="51" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="7031" username="*" description="*WRSVC*" />
+    <element_data ignore="1" source="*" category="*" eventId="55" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="7031" username="*" description="*Barracuda*" />
+    <element_data ignore="1" source="*" category="*" eventId="1030" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="5009" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="5138" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="7" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="107" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="2131" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="5161" username="*" description="*" />
+    <element_data ignore="1" source="*" category="*" eventId="7000" username="*" description="*Adobe Flash Player Update Service*" />
+    <element_data ignore="1" source="*" category="*" eventId="7031" username="*" description="*Good Mobile*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV 08 APP - Server 2008 Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Microsoft-Windows-CertificateServicesClient" category="*" eventId="1001" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Winlogon" category="*" eventId="6003" username="*" description="*" />
+    <element_data ignore="0" source="E100B" category="*" eventId="5000" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-ApplicationExperienceInfrastructure" category="*" eventId="2" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Complus" category="*" eventId="4689" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Complus" category="*" eventId="4690" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-MSDTC" category="*" eventId="4188" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PerfNet" category="*" eventId="2004" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WMI" category="*" eventId="28" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WMI" category="*" eventId="29" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WMI" category="*" eventId="5601" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV 08 SYS - Server 2008 Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="http" category="*" eventId="15016" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DistributedCOM" category="*" eventId="10001" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-FailoverClustering" category="*" eventId="1057" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-FailoverClustering" category="*" eventId="1575" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-MemoryDiagnostics-Results" category="*" eventId="1102" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-MemoryDiagnostics-Results" category="*" eventId="1202" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-MPRMSG" category="*" eventId="20092" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-MPRMSG" category="*" eventId="20072" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="87" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="81" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="10" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-RasServer" category="*" eventId="50003" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Servicing" category="*" eventId="4375" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Servicing" category="*" eventId="4385" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WinRM" category="*" eventId="10144" username="*" description="*" />
+    <element_data ignore="0" source="E100B" category="*" eventId="5002" username="*" description="*" />
+    <element_data ignore="0" source="E100B" category="*" eventId="5004" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-CorruptedFileRecovery-Server" category="*" eventId="8" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-FailoverClustering" category="*" eventId="1090" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-RasSstp" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-RasSstp" category="*" eventId="22" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-RasSstp" category="*" eventId="7" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-RasSstp" category="*" eventId="20" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Resource-Exhaustion-Resolver" category="*" eventId="1016" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Resource-Exhaustion-Resolver" category="*" eventId="1005" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TBS" category="*" eventId="521" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Eventlog" category="*" eventId="27" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Eventlog" category="*" eventId="6000" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Kernel-General" category="*" eventId="5" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="24" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Resource-Exhaustion-Detector&amp;#34;" category="*" eventId="2004" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Time-Service" category="*" eventId="30" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Time-Service" category="*" eventId="32" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="8" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="12" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="15" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="18" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="32" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="34" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="36" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="20" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="28" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="30" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="10" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="1" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="16" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="24" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="26" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="22" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="6" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="4" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="13" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WHEA-Logger" category="*" eventId="14" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Wininit" category="*" eventId="3002" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7001" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7000" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7021" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7022" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7023" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7007" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Eventlog" category="*" eventId="29" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="29" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="54" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="28" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="27" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-PrintSpooler" category="*" eventId="19" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TaskScheduler" category="*" eventId="401" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Wininit" category="*" eventId="1015" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7033" username="*" description="*" />
+    <element_data ignore="0" source="*ClusSvc*" category="*" eventId="1006" username="*" description="*Microsoft Cluster Server*communications error*" />
+    <element_data ignore="0" source="*ClusSvc*" category="*" eventId="5029" username="*" description="*Microsoft Clustering Service could not write file*" />
+    <element_data ignore="0" source="*ClusSvc*" category="*" eventId="1177" username="*" description="*Cluster service is shutting down*" />
+    <element_data ignore="0" source="*Microsoft-Windows-HttpEvent*" category="*" eventId="15009" username="*" description="*error occurred while initializing namespace reservations*" />
+    <element_data ignore="0" source="*Microsoft-Windows-NLB*" category="*" eventId="105" username="*" description="*Timer starvation has been detected*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Search*" category="*" eventId="7013" username="*" description="*update was paused because the disk* full*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="5028" username="*" description="*Service was unable to parse the new security policy*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="5029" username="*" description="*Service failed to initialize the driver*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="5030" username="*" description="*Windows Firewall Service failed to start*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="5034" username="*" description="*Windows Firewall Driver has been stopped*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="5035" username="*" description="*Windows Firewall Driver failed to start*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="5037" username="*" description="*Windows Firewall Driver detected critical runtime error*" />
+    <element_data ignore="0" source="*Microsoft-Windows-WLAN-AutoConfig*" category="*" eventId="4002" username="*" description="*WLAN AutoConfig service has failed to start*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV AUTO APP - RMM Created Alerts" snmpTraps="0" Override="0">
+    <element_data ignore="1" source="*" category="*" eventId="607" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="55520" username="*" description="*" />
+    <element_data ignore="0" source="HAL9000" category="*" eventId="555" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="55530" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV BACKUP APP - Server Backup Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="-1" username="*" description="*Error EBAB03F1*" />
+    <element_data ignore="0" source="Symantec System Recovery" category="*" eventId="-1" username="*" description="*Error*" />
+    <element_data ignore="0" source="*" category="*" eventId="57728" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57729" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57730" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57731" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57732" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57733" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57734" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57735" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57736" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57737" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57738" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57739" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57740" username="*" description="*failed*" />
+    <element_data ignore="0" source="*" category="*" eventId="57741" username="*" description="*failed*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="161" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="243" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="244" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="245" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="772" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="773" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="774" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="195" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="196" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="197" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="198" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="199" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="707" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="708" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="709" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="710" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="711" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Backup" category="*" eventId="10" username="*" description="*" />
+    <element_data ignore="0" source="SPP" category="*" eventId="16387" username="*" description="*" />
+    <element_data ignore="0" source="ShadowProtectSvc" category="*" eventId="1122" username="*" description="*" />
+    <element_data ignore="0" source="Alert Notification Server" category="*" eventId="1" username="*" description="*Backup Operation Incomplete*" />
+    <element_data ignore="0" source="NTBackup" category="*" eventId="900" username="*" description="*" />
+    <element_data ignore="0" source="ShadowProtectSvc" category="*" eventId="1121" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV CITRIX APP - Server Citrix Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Citrix*" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="9032" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="1019" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="1540" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="1541" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="0" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="2" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="4" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="384" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="137" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10102" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10112" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10123" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10179" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10184" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10187" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="3299" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="716" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="764" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV DC SEC - Account Brute Force" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="4625" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV DC SEC - AD Account Lockout" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Microsoft Windows security*" category="*" eventId="4740" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV DC SEC - AD Security" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Microsoft Windows security*" category="*" eventId="4740" username="*" description="*A user account was locked out*" />
+    <element_data ignore="0" source="*Microsoft Windows security*" category="*" eventId="4728" username="*" description="*Admin*" />
+    <element_data ignore="0" source="*Microsoft Windows security*" category="*" eventId="4729" username="*" description="*Admin*" />
+    <element_data ignore="0" source="*" category="*" eventId="54722" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="54724" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="54725" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV DC SEC - AD Trigger" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="4725" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="4724" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="4722" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV DC SYS - DC Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Time-Service" category="*" eventId="12" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV DFS - Server DFS Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="5012" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG APP - Server All Exchange Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="15004" username="*" description="*increased from Normal to High*" />
+    <element_data ignore="0" source="*" category="*" eventId="15006" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="15007" username="*" description="*" />
+    <element_data ignore="0" source="ESE*" category="*" eventId="459" username="*" description="*" />
+    <element_data ignore="0" source="ESE*" category="*" eventId="474" username="*" description="*" />
+    <element_data ignore="0" source="ESE*" category="*" eventId="482" username="*" description="*" />
+    <element_data ignore="0" source="MSADC" category="*" eventId="8138" username="*" description="*directory updates to or from the server can not be replicated*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="-1" username="*" description="*The service has stopped*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="-1" username="*" description="*Service stopping*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="-1" username="*" description="*Service stopped successfully*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1002" username="*" description="*Microsoft Exchange Site Replication Service database [EDB] could not be intialized*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1003" username="*" description="*The disk is full. Attempting to stop the Microsoft Exchange Information Store service*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1005" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1012" username="*" description="*Exchange Virtual Server*stopped*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1113" username="*" description="*The log disk is full. Attempting to stop the Microsoft Exchange Information Store service*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1159" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="2050" username="*" description="*The shared memory heap could not be created*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="6005" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="9004" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="9175" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="9518" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="9582" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="9690" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="12800" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS*" category="*" eventId="5000" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS*" category="*" eventId="9519" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Microsoft Exchange*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Microsoft Exchange*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Microsoft Exchange*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*The Microsoft Exchange Information Store service entered the stopped state*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Simple Mail Transfer Protocol*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Simple Mail Transfer Protocol*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Simple Mail Transfer Protocol*failed*" />
+    <element_data ignore="0" source="WSH" category="*" eventId="1" username="*" description="*Exchange Information Store*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1112" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1003" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1113" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1022" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="15004" username="*" description="*increased from Medium to High*" />
+    <element_data ignore="0" source="*" category="*" eventId="15021" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG INF - Server All Exchange Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="15005" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG SYS - Server All Exchange Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7024" username="*" description="*terminated with service-specific error*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG03 APP - Server Exchange 2003 Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="EXPROX" category="*" eventId="1001" username="*" description="*" />
+    <element_data ignore="0" source="EXPROX" category="*" eventId="1000" username="*" description="*" />
+    <element_data ignore="0" source="ExSMTP" category="*" eventId="754" username="*" description="*" />
+    <element_data ignore="0" source="IMAP4SVC" category="*" eventId="1016" username="*" description="*" />
+    <element_data ignore="0" source="MSADC" category="*" eventId="8141" username="*" description="*" />
+    <element_data ignore="0" source="MSADC" category="*" eventId="8113" username="*" description="*" />
+    <element_data ignore="0" source="MSExchageSA" category="*" eventId="1031" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeAdmin" category="*" eventId="1005" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeAdmin" category="*" eventId="9004" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeAdmin" category="*" eventId="2060" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeAdmin" category="*" eventId="1029" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeAdmin" category="*" eventId="9144" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeDSAccess" category="*" eventId="2103" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeDSAccess" category="*" eventId="2049" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeDSAccess" category="*" eventId="2050" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeES" category="*" eventId="5" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeFBPublish" category="*" eventId="8213" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeFBPublish" category="*" eventId="8206" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeFBPublish" category="*" eventId="8207" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="40960" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="32768" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="20481" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="24577" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="8192" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="4100" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="36875" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIM" category="*" eventId="36876" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1131" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="9144" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="9219" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="2040" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="9097" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="1004" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="2038" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="9171" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="1005" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSRS" category="*" eventId="1002" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSRS" category="*" eventId="1400" username="*" description="*" />
+    <element_data ignore="0" source="POP3SVC" category="*" eventId="1036" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG07 APP - Server Exchange 2007 Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2053" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2049" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2054" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2050" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Common" category="*" eventId="579" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2103" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2067" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ADAccess" category="*" eventId="2104" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Common" category="*" eventId="205" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Common" category="*" eventId="6003" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange AutoDiscover" category="*" eventId="3" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange AutoDiscover" category="*" eventId="2" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeFDS" category="*" eventId="1013" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange ActiveSync" category="*" eventId="1016" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange AutoDiscover" category="*" eventId="101" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange AutoDiscover" category="*" eventId="1" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange RPC Over HTTP Autoconfig" category="*" eventId="2003" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeFDS" category="*" eventId="1016" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeFDS" category="*" eventId="1020" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Antispam" category="*" eventId="318" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Antispam" category="*" eventId="306" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Antispam" category="*" eventId="303" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Antispam" category="*" eventId="315" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Store Driver" category="*" eventId="1011" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Store Driver" category="*" eventId="1009" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="9211" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="16023" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="16017" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="12014" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="12009" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="7002" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="12011" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="5021" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="1034" username="*" description="*" />
+    <element_data ignore="0" source="Message Text" category="*" eventId="1031" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="5002" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1118" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="2090" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="9559" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1160" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1131" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1080" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="5001" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1004" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1111" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="9558" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="1184" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="9564" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeIS" category="*" eventId="5000" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeMailboxAssistants" category="*" eventId="1003" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeMailSubmission" category="*" eventId="1007" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeMailSubmission" category="*" eventId="1010" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeMailSubmission" category="*" eventId="1002" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeRepl" category="*" eventId="2062" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeRepl" category="*" eventId="101" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="2038" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="2060" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeSA" category="*" eventId="1005" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="17005" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="12013" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="12012" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="17011" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="17007" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="17003" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="17006" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="1001" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="17004" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Unified Messaging" category="*" eventId="1118" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Unified Messaging" category="*" eventId="1001" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Unified Messaging" category="*" eventId="1014" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Unified Messaging" category="*" eventId="1045" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange Unified Messaging" category="*" eventId="1038" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG10 APP - Server Exchange 2010 Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="4003" username="*" description="*domain*currently unreachable*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="1112" username="*" description="*has reached the maximum allowed size*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9582" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9665" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9685" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9688" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1400" username="*" description="*Microsoft Exchange Site Replication Service could not initialize*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="6006" username="*" description="*" />
+    <element_data ignore="0" source="smtpsvc" category="*" eventId="6005" username="*" description="*" />
+    <element_data ignore="0" source="UMCore" category="*" eventId="1136" username="*" description="*error occurred*transferring the call*" />
+    <element_data ignore="0" source="UMCore" category="*" eventId="1012" username="*" description="*User*locked out of their mailbox*" />
+    <element_data ignore="0" source="UMCore" category="*" eventId="1019" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV EXG13 APP - Server Exchange 2013 Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="1112" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9582" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9665" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9685" username="*" description="*" />
+    <element_data ignore="0" source="*MSExchangeIS*" category="*" eventId="9688" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="1400" username="*" description="*" />
+    <element_data ignore="0" source="MSExchange*" category="*" eventId="6006" username="*" description="*" />
+    <element_data ignore="0" source="MSExchangeTransport" category="*" eventId="4003" username="*" description="*" />
+    <element_data ignore="0" source="smtpsvc" category="*" eventId="6005" username="*" description="*" />
+    <element_data ignore="0" source="UMCore" category="*" eventId="1012" username="*" description="*" />
+    <element_data ignore="0" source="UMCore" category="*" eventId="1019" username="*" description="*" />
+    <element_data ignore="0" source="UMCore" category="*" eventId="1136" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV HW APP - Server Hardware Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="2" username="*" description="*DISK Cluster*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="2" username="*" description="*ENV Cluster*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="1" username="*" description="*Stopped Abnormally*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="1" username="*" description="*SetServiceStatus*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="3" username="*" description="*Application Stopped*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="1" username="*" description="*Snmp and Snmptrap*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="2" username="*" description="*Attempting to Restart*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="2" username="*" description="CPU Cluster*" />
+    <element_data ignore="0" source="Compaq Insight*" category="*" eventId="1" username="*" description="*set SQL*" />
+    <element_data ignore="0" source="MR_MONITOR" category="*" eventId="96" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV HW SYS - Server Hardware Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2337" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2169" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2318" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2213" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2319" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2187" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2328" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2346" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2320" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2321" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2340" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2316" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2336" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2182" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2289" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2272" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2357" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2356" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2268" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2186" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2191" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1204" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1200" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1154" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1150" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1205" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1155" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2297" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2292" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2112" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2293" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2301" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2302" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2300" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2264" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2100" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2103" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2102" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1104" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1100" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1105" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1254" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1250" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1653" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="1455" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1450" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1255" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2206" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2150" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2149" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2146" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2342" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2273" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2099" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1404" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1004" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1006" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2265" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2295" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2299" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2207" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2203" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2204" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2201" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2283" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2049" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2094" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2106" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2108" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2110" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2109" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2211" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2349" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2307" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2306" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2048" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2282" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2080" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2083" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2163" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2314" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2107" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2270" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2347" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2348" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2350" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1504" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2313" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1500" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1704" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1700" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1306" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1300" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1354" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1350" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="1505" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1705" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1355" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2324" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2322" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1604" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1605" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1600" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1054" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1050" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1055" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2310" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2129" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2076" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2056" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2077" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2070" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2079" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator&amp;#34;" category="*" eventId="2082" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2081" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1216" username="*" description="*" />
+    <element_data ignore="0" source="HP Smart Array" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="HP Smart Array" category="*" eventId="204" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2048" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2080" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2083" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2107" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2163" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2270" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2282" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2306" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2307" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2314" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2347" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2348" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2349" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2350" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="15" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="4111" username="*" description="*" />
+    <element_data ignore="0" source="acpi" category="*" eventId="12" username="*" description="*could lead to system instability*" />
+    <element_data ignore="0" source="Adaptec Storage Manager Agent" category="*" eventId="301" username="*" description="*" />
+    <element_data ignore="0" source="Adaptec Storage Manager Agent" category="*" eventId="309" username="*" description="*" />
+    <element_data ignore="0" source="Adaptec Storage Manager Agent" category="*" eventId="401" username="*" description="*" />
+    <element_data ignore="0" source="adpu*" category="*" eventId="117" username="*" description="*port timeout due to prolonged inactivity*" />
+    <element_data ignore="0" source="afamgt" category="*" eventId="1" username="*" description="*device*" />
+    <element_data ignore="0" source="afamgt" category="*" eventId="4098" username="*" description="*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="1025" username="*" description="*Shutdown In Progress*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="2000" username="*" description="*UPS On Battery*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="3000" username="*" description="*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="3003" username="*" description="*UPS Battery Is Discharged*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="3030" username="*" description="*Insufficient Runtime Available*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="3031" username="*" description="*Output Load threshold Exceeded*" />
+    <element_data ignore="0" source="CDM" category="*" eventId="3025" username="*" description="*" />
+    <element_data ignore="0" source="CPQCISSE" category="*" eventId="24597" username="*" description="*failed*" />
+    <element_data ignore="0" source="Dell Baseboard Agent" category="*" eventId="260" username="*" description="*" />
+    <element_data ignore="0" source="Disk" category="*" eventId="7" username="*" description="*has a bad block*" />
+    <element_data ignore="0" source="Disk" category="*" eventId="51" username="*" description="*An Error was detected*" />
+    <element_data ignore="0" source="Disk" category="*" eventId="41" username="*" description="*The file system structure on the disk is corrupt and unusable*" />
+    <element_data ignore="0" source="Ntfs" category="*" eventId="50" username="*" description="*Windows was unable to save all the data for the file*" />
+    <element_data ignore="0" source="Ntfs" category="*" eventId="50" username="*" description="*The write operation failed*" />
+    <element_data ignore="0" source="ServeRAID Manager Agent" category="*" eventId="104" username="*" description="*" />
+    <element_data ignore="0" source="ServeRAID Manager Agent" category="*" eventId="338" username="*" description="*" />
+    <element_data ignore="0" source="ServeRAID Manager Agent" category="*" eventId="404" username="*" description="*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2480" username="*" description="*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2481" username="*" description="*The UPS service is not configured correctly*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2482" username="*" description="*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2484" username="*" description="*" />
+    <element_data ignore="0" source="vxio" category="*" eventId="35" username="*" description="*Uncorrectable read error*" />
+    <element_data ignore="0" source="*Server Administrator*" category="*" eventId="2057" username="*" description="*" />
+    <element_data ignore="0" source="*Server Administrator*" category="*" eventId="2123" username="*" description="*" />
+    <element_data ignore="0" source="*Storage Agents*" category="*" eventId="1200" username="*" description="*" />
+    <element_data ignore="0" source="afamgt" category="*" eventId="20" username="*" description="*device*" />
+    <element_data ignore="0" source="APCPBEAgent" category="*" eventId="2000" username="*" description="*UPS On Battery*" />
+    <element_data ignore="0" source="Atapi" category="*" eventId="26" username="*" description="*out-of-date firmware*" />
+    <element_data ignore="0" source="CDM" category="*" eventId="3025" username="*" description="*" />
+    <element_data ignore="0" source="Compaq Power" category="*" eventId="10" username="*" description="*" />
+    <element_data ignore="0" source="Compaq Power Management" category="*" eventId="0" username="*" description="*" />
+    <element_data ignore="0" source="Dell Baseboard Agent" category="*" eventId="300" username="*" description="*" />
+    <element_data ignore="0" source="diskeeper" category="*" eventId="29" username="*" description="*File System Inconsistency detected*" />
+    <element_data ignore="0" source="ftdisk" category="*" eventId="57" username="*" description="*" />
+    <element_data ignore="0" source="HP Storage Server Management Service" category="*" eventId="4160" username="*" description="*" />
+    <element_data ignore="0" source="HPQILO2" category="*" eventId="1" username="*" description="*Power supply 1 has failed*" />
+    <element_data ignore="0" source="HPQILO2" category="*" eventId="5" username="*" description="*The Power subsystem is now in a non-redundant state*" />
+    <element_data ignore="0" source="Hyper-V-Worker" category="*" eventId="3040" username="*" description="*" />
+    <element_data ignore="0" source="Ntfs" category="*" eventId="50" username="*" description="*Windows was unable to save all the data for the file*" />
+    <element_data ignore="0" source="Ntfs" category="*" eventId="50" username="*" description="*The write operation failed*" />
+    <element_data ignore="0" source="ServeRAID Manager Agent" category="*" eventId="301" username="*" description="*" />
+    <element_data ignore="0" source="Srv" category="*" eventId="2013" username="*" description="*capacity*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2480" username="*" description="*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2482" username="*" description="*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2483" username="*" description="*" />
+    <element_data ignore="0" source="UPS" category="*" eventId="2484" username="*" description="*" />
+    <element_data ignore="0" source="HP Smart Array" category="*" eventId="11" username="*" description="*" />
+    <element_data ignore="0" source="nvrd64" category="*" eventId="261" username="*" description="*" />
+    <element_data ignore="0" source="nvrd64" category="*" eventId="262" username="*" description="*" />
+    <element_data ignore="0" source="HP Sensor" category="*" eventId="3" username="*" description="*" />
+    <element_data ignore="0" source="HP Sensor" category="*" eventId="6" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="10" username="*" description="*Fan*" />
+    <element_data ignore="0" source="Server Agents" category="*" eventId="1131" username="*" description="*Fan*" />
+    <element_data ignore="0" source="HP Sensor" category="*" eventId="9" username="*" description="*Fan*" />
+    <element_data ignore="0" source="HP Sensor" category="*" eventId="1009" username="*" description="*" />
+    <element_data ignore="0" source="Server Agents" category="*" eventId="1184" username="*" description="*" />
+    <element_data ignore="0" source="Server Agents" category="*" eventId="1185" username="*" description="*" />
+    <element_data ignore="0" source="HP Smart Array" category="*" eventId="202" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV NET APP - Server Network Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Microsoft-Windows-DNS-Server-Service*" category="*" eventId="3" username="*" description="*The DNS server has shut down*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DNS-Server-Service*" category="*" eventId="10" username="*" description="*The DNS server could not start because it is dependent on the NTDS service which is not started*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1007" username="*" description="*Windows could not determine the site associated with this computer*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1080" username="*" description="*Windows could not search the Active Directory organization unit hierarchy*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1101" username="*" description="*Windows could not locate the directory object*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1110" username="*" description="*Windows could not determine if the user and computer accounts are in the same forest*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1088" username="*" description="*Windows attempted to query the list of Group Policy objects and exceeded the maximum limit*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1058" username="*" description="*Windows attempted to read the file*domain controller and was not successful*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1129" username="*" description="* lack of network connectivity to a domain controller*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1053" username="*" description="*Windows could not resolve the user name*" />
+    <element_data ignore="0" source="*Microsoft-Windows-GroupPolicy*" category="*" eventId="1055" username="*" description="*Windows could not resolve the computer name*" />
+    <element_data ignore="0" source="*Microsoft-Windows-Security-Auditing*" category="*" eventId="4935" username="*" description="*Replication failure begins*" />
+    <element_data ignore="0" source="*NPS*" category="*" eventId="4402" username="*" description="*no domain controller available for domain*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="24" username="*" description="*RADIUS Proxy could not resolve the name of remote RADIUS server*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1069" username="*" description="*Iashlpr cannot contact the NPS service*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1070" username="*" description="*Iashlpr initialization failed*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1142" username="*" description="*The DHCP server is unable to reach the NPS server*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1064" username="*" description="*There are no IP addresses available for BOOTP clients*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1000" username="*" description="*The DHCP service received the unknown option*" />
+    <element_data ignore="0" source="*NPS*" category="*" eventId="4401" username="*" description="*Domain controller*not responsive*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="9032" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="1019" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="1540" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="1541" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="0" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="2" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="4" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="384" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="137" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10102" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10112" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10123" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10179" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10184" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="10187" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="3299" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="716" username="*" description="*" />
+    <element_data ignore="0" source="Citrix*" category="*" eventId="764" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TerminalServices-RemoteConnectionManager" category="*" eventId="1052" username="*" description="*" />
+    <element_data ignore="0" source="TermService" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="TermService" category="*" eventId="154" username="*" description="*" />
+    <element_data ignore="0" source="TermService" category="*" eventId="301" username="*" description="*" />
+    <element_data ignore="0" source="TermService" category="*" eventId="1006" username="*" description="*" />
+    <element_data ignore="0" source="TermService" category="*" eventId="1008" username="*" description="*" />
+    <element_data ignore="0" source="TermService" category="*" eventId="1024" username="*" description="*" />
+    <element_data ignore="0" source="TermService*" category="*" eventId="3222" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="7" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="13" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="29" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="37" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="38" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="41" username="*" description="*" />
+    <element_data ignore="0" source="TermServLicensing" category="*" eventId="44" username="*" description="*" />
+    <element_data ignore="0" source="*Microsoft-Windows-IIS-W3SVC*" category="*" eventId="1026" username="*" description="*World Wide Web Publishing Service (WWW Service) encountered an error when it tried to secure the handle of application pool *" />
+    <element_data ignore="0" source="*Microsoft-Windows-IIS-W3SVC*" category="*" eventId="1027" username="*" description="*request to enable the application pool failed*" />
+    <element_data ignore="0" source="*Microsoft-Windows-IIS-W3SVC*" category="*" eventId="1084" username="*" description="*The HTTP.sys request to disable the application pool failed*" />
+    <element_data ignore="0" source="*Microsoft-Windows-IIS-W3SVC-WP*" category="*" eventId="2297" username="*" description="*worker process for application pool* encountered an error*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV NET DHCP SYS - Server DHCP Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1069" username="*" description="*Iashlpr cannot contact the NPS service*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1070" username="*" description="*Iashlpr initialization failed*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1142" username="*" description="*The DHCP server is unable to reach the NPS server*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1064" username="*" description="*There are no IP addresses available for BOOTP clients*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DHCP-Server*" category="*" eventId="1000" username="*" description="*The DHCP service received the unknown option*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV NET DNS SYS - Server DNS Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Microsoft-Windows-DNS-Server-Service*" category="*" eventId="3" username="*" description="*The DNS server has shut down*" />
+    <element_data ignore="0" source="*Microsoft-Windows-DNS-Server-Service*" category="*" eventId="10" username="*" description="*The DNS server could not start because it is dependent on the NTDS service which is not started*" />
+    <element_data ignore="0" source="DNS" category="*" eventId="111" username="*" description="*" />
+    <element_data ignore="0" source="DNS" category="*" eventId="4000" username="*" description="*" />
+    <element_data ignore="0" source="DNS" category="*" eventId="4015" username="*" description="*" />
+    <element_data ignore="0" source="DNS" category="*" eventId="4016" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11000" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11001" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11002" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11003" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11004" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11005" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11006" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11007" username="*" description="*" />
+    <element_data ignore="0" source="DnsApi" category="*" eventId="11050" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4000" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4001" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4002" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4003" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4004" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4007" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4011" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4012" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4013" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4014" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4015" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4016" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4018" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="4510" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="111" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="403" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="404" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="405" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="406" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="407" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DNS-Server-Service" category="*" eventId="1001" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV NET SYS - Server Network Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="AD Monitor Trusts" category="*" eventId="20083" username="*" description="*an error state*The RPC server is unavailable*" />
+    <element_data ignore="0" source="Microsoft-Windows-DHCP-Server" category="*" eventId="1020" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-DHCP-Server" category="*" eventId="1063" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-GroupPolicy" category="*" eventId="1109" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-GroupPolicy" category="*" eventId="1079" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-LanGPA" category="*" eventId="14003" username="*" description="*" />
+    <element_data ignore="0" source="netbt" category="*" eventId="4320" username="*" description="*" />
+    <element_data ignore="0" source="NTDS Replication" category="*" eventId="1203" username="*" description="*" />
+    <element_data ignore="0" source="NTDS Replication" category="*" eventId="1388" username="*" description="*" />
+    <element_data ignore="0" source="NTDS Replication" category="*" eventId="1645" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV OS APP - Server OS Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*" category="*" eventId="517" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="521" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="544" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="546" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1122" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="8001" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="9001" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="33919" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="34581" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="58053" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="58057" username="*" description="*" />
+    <element_data ignore="0" source="MR_MONITOR" category="*" eventId="150" username="*" description="*" />
+    <element_data ignore="0" source="DFSR" category="*" eventId="5002" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV OS SYS - Server OS Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Citrix*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Citrix*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Citrix*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*World Wide Web*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*World Wide Web*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*World Wide Web*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*IIS Admin*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*IIS Admin*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*IIS Admin*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Remote Procedure Call*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Remote Procedure Call*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Remote Procedure Call*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Net Logon*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Net Logon*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Net Logon*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Kerberos Key Distribution*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Kerberos Key Distribution*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Kerberos Key Distribution*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*File Replication*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*File Replication*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*File Replication*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Terminal Services*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Terminal Services*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Terminal Services*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*COM+*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*COM+*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*COM+*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DNS Server*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DNS Server*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DNS Server*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DHCP Server*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DHCP Server*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DHCP Server*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DCOM Server Process Launcher*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DCOM Server Process Launcher*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*DCOM Server Process Launcher*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Event Log*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Event Log*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Event Log*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Intersite Messaging*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Intersite Messaging*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Intersite Messaging*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*SQL Server*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*SQL Server*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*SQL Server*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Distributed Transaction Coordinator*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Distributed Transaction Coordinator*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Distributed Transaction Coordinator*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Performance Logs and Alerts*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Performance Logs and Alerts*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Performance Logs and Alerts*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Windows Management Instrumentation*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Windows Management Instrumentation*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Windows Management Instrumentation*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Windows Time*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Windows Time*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Windows Time*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Task Scheduler*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Task Scheduler*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Task Scheduler*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*ShadowProtect*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*ShadowProtect*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*ShadowProtect*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*FTP Publishing Service*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*FTP Publishing Service*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*FTP Publishing Service*failed*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Security Accounts Manager*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Security Accounts Manager*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Security Accounts Manager*failed*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7000" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7001" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7022" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7023" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7031" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Citrix*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*World Wide Web*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*IIS Admin*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Remote Procedure Call*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Net Logon*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Kerberos Key Distribution*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*File Replication*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Terminal Services*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*COM+*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*DNS Server*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*DHCP Server*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*DCOM Server Process Launcher*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Event Log*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Intersite Messaging*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*SQL Server*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Distributed Transaction Coordinator*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Performance Logs and Alerts*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Windows Management Instrumentation*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Windows Time*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Task Scheduler*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*ShadowProtect*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*FTP Publishing Service*stop control*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*System*" description="*Security Accounts Manager*stop control*" />
+    <element_data ignore="0" source="Eventlog" category="*" eventId="6008" username="*" description="*" />
+    <element_data ignore="0" source="Eventlog" category="*" eventId="6000" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="5" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="100" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="105" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="135" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="165" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="170" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="175" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Diagnosis-DPS" category="*" eventId="185" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-HttpEvent" category="*" eventId="15010" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="8193" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="8195" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="8196" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="8201" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="8210" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="8214" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="16386" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-PSync" category="*" eventId="16388" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8194" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8195" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8196" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8198" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8199" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8200" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8201" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8208" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8209" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8211" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8212" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8213" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IDMU-ServerForNIS" category="*" eventId="8241" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IIS-WMSVC" category="*" eventId="2262" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-IIS-WMSVC" category="*" eventId="2263" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="14" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="16" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="17" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="18" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="20" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="21" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="22" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="25" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="31" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="34" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="35" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="37" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="73" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="74" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="75" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="79" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="86" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="87" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="88" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="91" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="92" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="93" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="95" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="97" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="99" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="102" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="106" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="108" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="109" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="110" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="111" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="112" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="4096" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Resource-Exhaustion-Resolver" category="*" eventId="1010" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Resource-Exhaustion-Resolver" category="*" eventId="1011" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Search" category="*" eventId="3025" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Search" category="*" eventId="3026" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4654" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4775" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4881" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4960" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4961" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4962" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4963" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4978" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4983" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="4984" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5025" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5121" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5453" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5472" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5474" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5480" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5483" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-Security-Auditing" category="*" eventId="5484" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TaskScheduler" category="*" eventId="301" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TaskScheduler" category="*" eventId="303" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TaskScheduler" category="*" eventId="307" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-TaskScheduler" category="*" eventId="315" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5002" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5014" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5015" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5021" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5025" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5030" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5036" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5039" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5041" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5042" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5043" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5050" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5051" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5053" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5054" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5055" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5057" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5058" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5059" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5060" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5061" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5063" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5064" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5066" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5067" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5070" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5074" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5075" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5076" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5077" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5078" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5079" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5080" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5081" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5082" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5085" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5088" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5091" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5092" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5093" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5094" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5100" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5101" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5102" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5103" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5104" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5105" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5106" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5107" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5108" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5117" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5118" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5127" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5132" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5136" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5137" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5140" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5142" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5143" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5144" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5145" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5146" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5147" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5148" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5150" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5151" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5152" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5153" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5158" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5159" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5160" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5163" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5164" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5165" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5169" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5170" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5171" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5172" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5173" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5174" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5175" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5177" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5178" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5179" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5180" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5181" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5182" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5183" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5186" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5187" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5189" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS" category="*" eventId="5191" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS-ListenerAdapter" category="*" eventId="7001" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS-ListenerAdapter" category="*" eventId="7002" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS-ListenerAdapter" category="*" eventId="7004" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS-ListenerAdapter" category="*" eventId="7005" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WAS-ListenerAdapter" category="*" eventId="7006" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WMI" category="*" eventId="5612" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="33" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="43" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="44" username="*" description="*" />
+    <element_data ignore="0" source="tcpip" category="*" eventId="4198" username="*" description="*" />
+    <element_data ignore="0" source="tcpip" category="*" eventId="4199" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="2001" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="12103" username="*" description="*" />
+    <element_data ignore="0" source="EventLog" category="*" eventId="6001" username="*" description="*" />
+    <element_data ignore="0" source="EventLog" category="*" eventId="6006" username="*" description="*" />
+    <element_data ignore="0" source="NCP Server" category="*" eventId="2012" username="*" description="*" />
+    <element_data ignore="0" source="NCP Server" category="*" eventId="2016" username="*" description="*" />
+    <element_data ignore="0" source="ndis" category="*" eventId="5001" username="*" description="*" />
+    <element_data ignore="0" source="ndis" category="*" eventId="5005" username="*" description="*" />
+    <element_data ignore="0" source="Perfnet" category="*" eventId="2004" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager" category="*" eventId="7005" username="*" description="*" />
+    <element_data ignore="0" source="WLBS" category="*" eventId="41" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="5" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="6" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="32" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="39" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="41" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="83" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-NLB" category="*" eventId="104" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WindowsUpdateClient" category="*" eventId="21" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WindowsUpdateClient" category="*" eventId="22" username="*" description="*" />
+    <element_data ignore="0" source="Microsoft-Windows-WLAN-AutoConfig" category="*" eventId="10004" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="22" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="25" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="34" username="*" description="*" />
+    <element_data ignore="0" source="tcpip" category="*" eventId="14110" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="51" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="52" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="82" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1001" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1036" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1123" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1206" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1804" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="2019" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="2048" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="2166" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="2342" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="2346" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="4173" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="18210" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="24595" username="*" description="*" />
+    <element_data ignore="0" source="*FailoverClustering*" category="*" eventId="1177" username="*" description="*" />
+    <element_data ignore="0" source="*HP Smart Array*" category="*" eventId="8" username="*" description="*" />
+    <element_data ignore="0" source="*iScsiPrt*" category="*" eventId="1" username="*" description="*" />
+    <element_data ignore="0" source="NPS" category="*" eventId="4402" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="1306" username="*" description="*" />
+    <element_data ignore="0" source="*" category="*" eventId="1216" username="*" description="*" />
+    <element_data ignore="0" source="HP Smart Array" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="HP Smart Array" category="*" eventId="204" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2048" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2080" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2083" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2107" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2163" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2270" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2282" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2306" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2307" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2314" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2347" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2348" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2349" username="*" description="*" />
+    <element_data ignore="0" source="Server Administrator" category="*" eventId="2350" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="23" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="51" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="30" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="31" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="32" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="33" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="34" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="35" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="36" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="37" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="38" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="39" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="40" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="41" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="42" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="43" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="44" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="41" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="19" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="28" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="27" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="29" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="54" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="45" username="*" description="*" />
+    <element_data ignore="0" source="Print" category="*" eventId="24" username="*" description="*" />
+    <element_data ignore="0" source="Printer" category="*" eventId="22" username="*" description="*" />
+    <element_data ignore="0" source="Time-Service" category="*" eventId="34" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV RDS APP - Server RDS Monitoring" snmpTraps="0" Override="0" />
+  <set_elements setName="xPVAL SRV SMTP SYS - Server SMTP Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Simple Mail Transfer Protocol*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Simple Mail Transfer Protocol*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*Simple Mail Transfer Protocol*failed*" />
+  </set_elements>
+  <set_elements setName="xPVAL SRV SQL APP - Server SQL Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*MSSQL*" category="*" eventId="823" username="*" description="*" />
+    <element_data ignore="0" source="*MSSQL*" category="*" eventId="9001" username="*" description="*" />
+    <element_data ignore="0" source="*MSSQL*" category="*" eventId="9002" username="*" description="*" />
+    <element_data ignore="0" source="*MSSQL*" category="*" eventId="9003" username="*" description="*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*MSSQL$*terminated*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*MSSQL$*hung*" />
+    <element_data ignore="0" source="Service Control Manager*" category="*" eventId="-1" username="*" description="*MSSQL$*failed*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="17052" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="602" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="824" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="832" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="701" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="833" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="3314" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="4014" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="5124" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="5173" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="5242" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="5243" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="8355" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="823" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="9001" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="9002" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="9003" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3414" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3413" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7986" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7984" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5235" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5242" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5243" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1462" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1458" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3437" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3431" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="605" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7904" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7935" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7934" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7936" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7933" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7932" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7937" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="9957" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2534" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5228" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2546" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="9004" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2515" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8993" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8994" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7903" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2533" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7931" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5173" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7901" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3417" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5256" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2574" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8992" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7987" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7988" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3619" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2570" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="824" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7995" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2539" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2538" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7905" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2540" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7906" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2522" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8996" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5229" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5237" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="5250" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8974" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7907" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="7908" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3151" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8966" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="2579" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1204" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="833" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="802" username="*" description="*" />
+    <element_data ignore="0" source="msftesql" category="*" eventId="4154" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="825" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="945" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1105" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="4846" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1101" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="3260" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4423" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4147" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4394" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4395" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4355" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4421" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4357" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4384" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4383" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4382" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4112" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4185" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4418" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4135" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4163" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4126" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4359" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4148" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4160" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4209" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4195" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4168" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4169" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4197" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="4199" username="*" description="*" />
+    <element_data ignore="0" source="MSDTC" category="*" eventId="53284" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="26054" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="9692" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="32044" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8621" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8649" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="701" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8651" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="8642" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL" category="*" eventId="14420" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1401" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1461" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1406" username="*" description="*" />
+    <element_data ignore="0" source="MSSQL*" category="*" eventId="1457" username="*" description="*" />
+    <element_data ignore="0" source="Report Manager" category="*" eventId="114" username="*" description="*" />
+    <element_data ignore="0" source="Report Manager" category="*" eventId="116" username="*" description="*" />
+    <element_data ignore="0" source="Report Manager" category="*" eventId="133" username="*" description="*" />
+    <element_data ignore="0" source="Report Server (MSSQLSERVER)" category="*" eventId="112" username="*" description="*" />
+    <element_data ignore="0" source="Report Server (MSSQLSERVER)" category="*" eventId="130" username="*" description="*" />
+    <element_data ignore="0" source="SQLAgent$*" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="SQLAgent$*" category="*" eventId="210" username="*" description="*" />
+    <element_data ignore="0" source="SQLAgent$*" category="*" eventId="51" username="*" description="*" />
+    <element_data ignore="0" source="SQLAgent$*" category="*" eventId="105" username="*" description="*" />
+    <element_data ignore="0" source="SQLSERVERAGENT" category="*" eventId="103" username="*" description="*" />
+    <element_data ignore="0" source="SQLSERVERAGENT" category="*" eventId="210" username="*" description="*" />
+    <element_data ignore="0" source="SQLSERVERAGENT" category="*" eventId="51" username="*" description="*" />
+    <element_data ignore="0" source="SQLSERVERAGENT" category="*" eventId="105" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="17053" username="*" description="*" />
+    <element_data ignore="0" source="MSSQLServer*" category="*" eventId="19011" username="*" description="*" />
+  </set_elements>
+  <set_elements setName="xPVAL WS SYS - Workstation Monitoring" snmpTraps="0" Override="0">
+    <element_data ignore="0" source="*Disk*" category="*" eventId="52" username="*" description="*" />
+    <element_data ignore="0" source="*DiskDiagnostic*" category="*" eventId="1" username="*" description="*" />
+  </set_elements>
+</event_sets>

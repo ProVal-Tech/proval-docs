@@ -1,0 +1,252 @@
+﻿<LabTech_Expansion
+	Version="210.263"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6071</ScriptId>
+				<FolderId>150</FolderId>
+				<ScriptName>~Automated Offboarding*</ScriptName>
+				<ScriptNotes>This is automated to fire off on a frequency to anything placed in the Z - Defaults - Forced Offboarding Location. 
+
+This script will reset Windows Updates back to the default values and uninstall the LabTech agent from the system.
+
+Created by ProVal 12/12/2019</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPzQqDMBCE74W+Qx7AkB+NWlkCpS291EsrvQezxVyiRAP17YvSgj0NszPfwsDNtehHPJvJaGjmAbUAtircoz/10U8YNAe2cXB5Dy4sDOqmi2G0Zk5IbULbEaESIrmQpKjSslKSHGtgmz482uCG6YlhdL1fHv8fvvk1OquRq9zI8kWF5UiFQENLdcgol1lq0dpUFPmPXwFg2zn73QfX43WQ3gAAAA==</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>e056a28f-1d0e-11ea-8594-0243dedd3176</ScriptGuid>
+				<ScriptFlags>1</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6072</ScriptId>
+					<FolderId>214</FolderId>
+					<ScriptName>Offboarding Third Wall Computer</ScriptName>
+					<ScriptNotes>Auto Created Script</ScriptNotes>
+					<Permission>1,5</Permission>
+					<EditPermission>1,5</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPTQrCMBSE94J3yAEa8tOmlfLIRsWNiqi4T5pXyMK0pK3Y20uLQl0NM8M3MHD0FYYOd6Y3Gu5ji1oAmxWuQ9g2Q+gxag5s4WD/bn2cGNT3ATtnxoScmxc+LUaS8oRILgXJSrkpuSKXE7AFAbcq+rZ/YOx8E6bp/+DbHwbvdGGN5XktqRK1oUJgRS0qRbnMUofOpaLIf/wMAFseWq8+3W9qIuAAAAA=</LicenseData>
+					<ScriptData>H4sIAAAAAAAEANWUT2uEMBDF74V+By97q5hE414kUPYfQssu3W7v0WQh4MZFI/TjV7OTbRTqsaUn572XDDM/gtmxbNTVrLnh7PEhCLKbbq3o5ebTNHxIt0pWog0iFxx4wy/SyMbzdlVd8Mozbs0++kOq1gxn0dgYndp1SrBlwQuUnklI8ZmHGMsyLCSlISJJLKQQMV6mrou9YGeO/KGh3dHI632L59LAAFCBv+201bkYMk/5S+LJ0mSi44lOJpp6POrGMNTPO3zBW9XaKN3Jwb/XkO3bF3VR9oorIcm1kNpwu0yf+tJH8k1hBguZwUJ+xsIwSvsYxIgQQ08IEjLPii1W+9fD6X3zlq8XcCUZ42OuFf2/GCn9teeF/4CL0/Ab+QLJYt+JVQQAAA==</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>7bab06f2-51fa-11ec-be55-0243dedd3176</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters></Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>214</FolderID>
+						<ParentID>0</ParentID>
+						<Name>ProVal - Development</Name>
+						<GUID>a3ad0b81-54a2-4063-bd23-51edf7e7f45d</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>5968</ScriptId>
+					<FolderId>193</FolderId>
+					<ScriptName>Remove Security Agent</ScriptName>
+					<ScriptNotes>This script will uninstall Trend Micro Security Agent.</ScriptNotes>
+					<Permission>1,2,4,5,</Permission>
+					<EditPermission>1,4,5,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>1</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPwQrCMBBE74L/kA9oSLattZElICpe7EWL95BuIZe0pA3Yv9cWhQoLy8zsG1i8OUt+oLMZjcZ66kkDimXjPfpTF/1IQUsUK4WXV+/CzJCuIw2NmRJWmYnBPmGphIKVh/QzOTtWKFbH+LDB9eOTwuA6P7f+G9/8Gl2jFeStKZqSg5WKA1DByywHLqW0qYJsJ0H9+AVAsf5lu3kDbfCxEdsAAAA=</LicenseData>
+					<ScriptData>H4sIAAAAAAAEAO2aW2/aMBTH3yftO/iFl2kpSciNDkXQFqqqW4sKWx+RsQ21GhLkOL18+5HEsJCBh7p4NNJ4IceXJP75nGP/DZ0RYnTJLyCH/scPAHRyO86Mldl/4QymtQNKAhyD5rpiCBlcEE5Y7A9hHD9HDA9ZxAninWahTrS+DKIpDArd88f8WDWhUegbneZ2wVary4Riv21YM+hgTzOQ3tYMgzia17IMTdd1ZLaNlq0b7fVdsg7ZaJrF4YjbjThZbl6sh7h4AXElygdJmNlXOK0rWMXhG35jzEiIwYighFH+CnpzEvKGIGBsNTZL7Fol2yrZdgFWxLivrwaTfouy8yjkNExIWr65FnW38Ve6oFmX9aWouQrx6gVhNtJVbdEs8vqFSMLMlDFrtSXUPqUfcDUDYcQBBPc0xNFzDG5Hn0H/hXKQP/O9UDSc42E0ZRhPU1gKWRmVszJUsnIlqCzs2J4NoTZ1TCvPHpCYWGQP29ORaylhaNYpal1dgnDM6HxOGCP47PUCxg/TCDK8m1n6EHG1xS6df3G1xdA/HTOIHjd37T+txndHFtETDEQPS0q5VSfK8tyYo7ij8wd+HlD0uINFtR5q1YmdabYk7EwIZ8h1bc31kIjyqYOnpT3CTo9lKWEygen6vcd5szmZZJMyyd9+cpf36hV6lV07b1JsIXdlu+rpUJpz5evT95CGMYeBGsd1akXqgKCX5b9q0bn/Y/6wmN9MiYpQ92rlwMcM9XatSMlDXS0po1YyUepTWTjRcA6694Oz0WjSu+zfjCe94XBy0/vW74IoBA0ULZYJJyyEC9LQNibFjZOTEzWA36CKjueL8typO7rbJp6nTacQizMV3JodoIr8Iup9+6Xf0mE5YXZLJ0fd3WlzIxvs7ZmoXFupnAmptmosg2ROQ0biJODxnvOjVOXsBH17vU9WbXLNANLDlJRRuZR6D6l2lCBE4lhNQqiVgLKt/cBKA/1rMLWSMtKlaM8K9AxjkG8i8R9WIxDnHjhLguBV0cJULz103JPNygXQe8hyhSRfMa7KlcrRNpUpo1W08kgE7ts2l19AvlSfggZ5ISgtzWx1u856KaBDg/ue8oc+YxFTc/ZeuRY6YpQrzohm5bLmaL+LVbyNMWslMw72IsWhV6tfZMx0q/qv3KlyuXCAO61t8TePn+Oya1L1IQAA</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>914fa6d8-1c09-11e6-8341-000c29135019</ScriptGuid>
+					<ScriptFlags>1</ScriptFlags>
+					<Parameters>PasswordProtect</Parameters>
+				</Table>
+			</NewDataSet>
+			<PackedScript>
+				<NewDataSet>
+					<Table>
+						<ScriptId>5964</ScriptId>
+						<FolderId>193</FolderId>
+						<ScriptName>Initialize Environment Variables</ScriptName>
+						<ScriptNotes>This script will initialize environment variables.</ScriptNotes>
+						<Permission>1,2,4,5,</Permission>
+						<EditPermission>1,4,5,</EditPermission>
+						<ComputerScript>1</ComputerScript>
+						<LocationScript>0</LocationScript>
+						<MaintenanceScript>0</MaintenanceScript>
+						<FunctionScript>1</FunctionScript>
+						<LicenseData>H4sIAAAAAAAEAFWPsQrCMBiEd8F3yAM0NIltbMtPQFRc1EGLe5r8QwbTkjZi315aFOp03B3fwcHZGfQ9HvSgFdRjh4pDOivcot+30Q8YFIN04eD47lyYGFR1xN7qMSHX9oXPBgMRZUIE45JwXrGi2giyu0C6QOBuguuGB4betX7a/g++/Sk6qzIr8yLXmjZSZJRzlFSjsJQxZkSZF8xssx8/A5AuH61XHwIySevhAAAA</LicenseData>
+						<ScriptData>H4sIAAAAAAAEAOWaXW+iQBSG7zfZ/8BNbzbrCvjRdmNMKKBLikBkbLOJyWQKUzNZHAyM2/bf74BYqVmRok0jegNnPnDmyZlz5oXpuV5EFkxDDPW/fhGE3sqOU4Ob+jOLUFI7IDjwY6G5rnBQhOaY4ShXNgzCBxTkClYPu+ONSEj7Uq/5tuBNq+GS+P223+1cdRBqPHTldkOScLeBsOw3RFH05OvOlehdttdPSTukY27mB509zmV48ToLxWPZALK7rHywpKlt+EldzspPUtqatLxlt7bs9pbdyfEII9YX+XiTa1amhpQRusRJ+et9VmfHJpmTtMv6NqsxqI8pQ+lkeG3ezCPZUCjAIhdhaV3vBtP/lvwE41GgIROQcE+oHz7Fgu1+F/RnwoTVf/aaWfNPpih1Pw+jXITxZwLrA1lJR2clfSArWSxAJf0fUH8RLGeEwqfHhziGXjifI+pDHrq8P4TOsj7yW4h9oNyYOnTMydCwoGqPRoqlQTBW1FvDGmZ9Wu8CLZ/S0j4C52XMwjkP5qUAT1xgj/SxW4ls67zIcvdFM+xDTP1FSCgrRZj7rzLUNahbmmMbFqhGul170iZQA8LHY2g7qA4M3dSgCaBqGroF4GvD95HsnAPJcL5Y8l1gCZb2yJkAfVyVZrf2NJUZH8xkbBaS5Cuce+Sm1fsgXp4HRIM+hiUoGtbAroTxqvYY7wc3rpuyTGRWIcu0aUZ0OKm4uq9rT9TlI1nuyuMrki5QwKRa1pZOSlVWSzYoZhpeBOELIHNcnG4UF0BNd0z7NwTGSK+GtIJsOkGkfCoUp93KYVVty9JVYNjWAWjrL5TUlQbdsy9aq86KUVOqvyzKOPLoGbG9DrrGyQPpGBzgnvXXQBus+5JSjmnl5HQGSohH0snCRwyXi6ITR1OAfoCL1l8OSTsobmLmOsWne89qGOsviCS5LYr7UY71kX2nH4Ky/qJIkjtlULqqYlVDWH8VJMndMghX4bHaO/j6KyFJ3BcbV8k6i4+GNTxgXcv1l0EgwtQXRsSLQsHF3jIi7EVIX37swJx/5aE4DrSUimlcrr8Qungi1CfRxTRg8V9vukDeHzTD8ZQl0Kc7AJu2qpjQUdRbDplfwa9qeOuvjxJXbLh3Kkz9FRo0ZigIcPQDP+/ahq6xDgxTP8B1T0okFZ9j+OgP8PJJCaDCwwpHPgwjH13HlDiasLazU0//AFoBS1wEJQAA</ScriptData>
+						<ScriptVersion>1</ScriptVersion>
+						<ScriptGuid>4d6585aa-b624-11e6-ae2d-000c29580c74</ScriptGuid>
+						<ScriptFlags>0</ScriptFlags>
+						<Parameters></Parameters>
+					</Table>
+				</NewDataSet>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>193</FolderID>
+							<ParentID>12</ParentID>
+							<Name>Trend Micro</Name>
+							<GUID>7f6db193-d8d7-47f4-97e1-c8a930bc3366</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>12</FolderID>
+							<ParentID>0</ParentID>
+							<Name>Antivirus</Name>
+							<GUID>8261b97d-eb72-4d61-8a76-827c805f4d29</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+			</PackedScript>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>193</FolderID>
+						<ParentID>12</ParentID>
+						<Name>Trend Micro</Name>
+						<GUID>7f6db193-d8d7-47f4-97e1-c8a930bc3366</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>12</FolderID>
+						<ParentID>0</ParentID>
+						<Name>Antivirus</Name>
+						<GUID>8261b97d-eb72-4d61-8a76-827c805f4d29</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6074</ScriptId>
+					<FolderId>152</FolderId>
+					<ScriptName>Ticket Finish By ComputerID*</ScriptName>
+					<ScriptNotes>Ticket Multi-Finsh will close a range of unclosed Tickets based on a range of ticket numbers.  This script should be run against a single agent, normally your RMM server agent.
+*** the Begin and End TicketID parameters must be set when calling this script.</ScriptNotes>
+					<Permission>1,2,4,5,</Permission>
+					<EditPermission>1,4,5,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPTQrCMBSE94J3yAEa8muV8sjGihsF0eK+TV4hC9OSNmBvLy0KdTXMDN/AwMVbDAOW9VgbqKYejQC2KNxTOHYpjBgNB7ZycHr3Ps4Mmirh4OopIyVafDUYidxnRHIhiCq0LpQktyuwFQEPG30/PjEOvgvz9H/w7c/JO2NVi3nTtFQ1uaZCoKUHx3eUS60cOqfEPv/xCwBsfWi7+QA2Y/Jm4AAAAA==</LicenseData>
+					<ScriptData>H4sIAAAAAAAEAO2YbW/aMBDH30/adzhpYtqmpsQJBOhoFMZDh9SuU6HbXmJip2QFh8XOaL/9khAgsMZTUaIt0niDz45N/PP/fHe0R7bvLkUPC2y+fAHQXts8NkKz/yB8HI0OXDonHKqbgc/YxwsqqM/ND/TOZWPXvqdi2DvpM7Jpt6upp5J5F3NviuephdY/+CV8xPWYiXTU1AzVaOjt6v7I3uMXgUtMW3eoMZ06ij41agpC1FaaRK0rqlbTCSVERw1js0o8Id5gNb3DZLmRoMvtG3ZsEb9Ju5q0kv5BwGJ7SKKxlJUmgg4IaQe2fmDXDux6CoznC1MN3zf6Tvq6HhMuC2jUv20nY9f80l248ZRNMxkZMkKZwPFmwtG0mUayoyDBosmw6K1sMOa76APQnVH7HnbCAOHBT+q7ziOIGX2EFfUpcCpOAYYOWCk5WYA5DxYUKCMuuwOPgbWnPes0URz6fwZPn8FZzKsQSqhUlBoSSMRp4PpUxUrdCW+T8F5BCtZbWLGdqV1DKm3qRqMQhFreCFGBCDVVghChpwGZo/5lvzuGq863NyL2Wpe8hcHN9RWsTZ7M0/ZBmlf44SCq6M9Cq5cJLWoZErYJwg2+kwkPpt+pLSYno3FnfDvawwlfP/Zv+mB7i2UQ3rYugXOo7KwKdD71YMLDXQR8Aq/n4j3UADOyXT7uOwcrdQBWIeKvlemE5OLP0L6aoW2biaM0XS8TsT/EpbG3LERVRqkYqZLE0rRCnWS4Xqa00FHCauQNTfvXXLGywGLmUx7MRSVnr2yWCV5DBk8mOCODWoX/mJOwXAwTeN9b2V7AtoAPMJpnPY/R8V7Ur0nJtspEFrVkKeaOUgbfNPsDxs/Ny3MvX/QivVkWJbpzj0eF31o08MoKMW7yFAsUiOwkGSomR0G5FzlFskRqXebdaXhZKlz63nJNu0cdHN6Wt5z6uwzw0PuTg1lhDjgI63o7PDBKTo+6R1Hu1VChrKXCLSy9QbnXNYVCkueAv8eDnGHlXmIU+hfF0ckgyjUZRKUqM6RuGAkMBi5z+SwKI+kkMIkpHFaumAFOF8yes1cxFyPNv1GnbOzkz/9fcNza0AsYAAA=</ScriptData>
+					<ScriptVersion>1318260673</ScriptVersion>
+					<ScriptGuid>c3fe6bbf-3b64-11ec-8d05-0243dedd3176</ScriptGuid>
+					<ScriptFlags>1</ScriptFlags>
+					<Parameters>BeginTicketID,EndTicketID</Parameters>
+				</Table>
+			</NewDataSet>
+			<PackedScript>
+				<NewDataSet>
+					<Table>
+						<ScriptId>5218</ScriptId>
+						<FolderId>50</FolderId>
+						<ScriptName>Load Properties - Ticketing*</ScriptName>
+						<ScriptNotes>Wraps the Load Properties function, sets the LoadPropertyClass = 2 for Ticket Properties and calls the main function</ScriptNotes>
+						<Permission>1,2,4,5,</Permission>
+						<EditPermission>1,5,</EditPermission>
+						<ComputerScript>1</ComputerScript>
+						<LocationScript>0</LocationScript>
+						<MaintenanceScript>0</MaintenanceScript>
+						<FunctionScript>1</FunctionScript>
+						<LicenseData>H4sIAAAAAAAEAFWPTQrCMBSE94J3yAEa8tPG2vLIRq0bBVFxn6avkE1a0gbs7aVFoa6GmeEbGLg4i37AoxmNhufUoxbAFoV79Icu+hGD5sBWDk7v3oWZQV0F15gpIRXWIZowEZklRHIhSVGmquSS3K7AVgA8bHD9+MIwuM7Py//Btz9H1+imzY2quaGq5YoKgYKatDDUtrXNBMd9ust//AIAW//Zbj7hsSxZ3wAAAA==</LicenseData>
+						<ScriptData>H4sIAAAAAAAEAO1b/2+aQBz9fcn+B36jTXRyINoujswpdiS2NtV2Py4nnA0ZXwycS/3vB4gWFBDw2IbeD025Ozy59959nu+Mvanq6Es8hBhKHz8wTG/TdoOG15TfsAP90ZGODM1lWtuBR+hAE2HkRPruDHsOjUjHZrIX7ybdtiTQa8U7YnfdrXRN0hZdKM452BQXnNgEAIEmFG5hU13M1Tbg0I3Q6W5nCV4QPHMr+tDhdFOMlrtV9FUcPkB4FfaPVlbQVjRJ7LUiregigbR07OXYhhrSZrr6C2Hdeu21wrHonbwkhP18rF/w3zm8iva39+AUI8jZDpY4b2X+/7BvYFveW6+Q37+7Dscm7lg39eAl28twRLE0ZGEYLNsbjTaj4L3jlQEgnwEgAN0MCKfyWB7MmMHk+WF2ZXnKuWZGT5N7xocWOVhHLvPju/wkM/7YF/anu3Y3WA/RAq4M/OwiRxmyKbB3UmDnkmGXPsdmDW9qnw8XnSwqlIep/DRjlIfZJAp/wErjNzRWHjcv/fGzPGWuUolosIC9TmZjT9TCXvuY6AFpoEGFQPNcBtAgRa0gRa2PGzLWfc2rNKUKBl8nkQLhNgO8xC1KVmlCndDKVlqa1MKyG+zqUwruvlT9WRJuLyXadp1oqNblZBPqBmmTCybN5XFinZio0OM2NDRYc226y6/e3yfVNiuyuw61u9J2162TXvPZXXSzkhXaTZ3A+ttuFyu8R80uSlIxxd7WiYSKvE624NxA/RW2F/rbTDcRMcM7mDmX64GLj3aHjFQY72i+K2944JwCXtpuJaw3mvKyi/AoXoTTzS+Nr4ISpnFv9zni3lssRu7M/qYbxGNfbPJ8RkjzXxIvDVasygtp+DvBC88w/SXtWcKSozGwaEE+GgeTWCuoZZoLEVashe1/uhgYtksuE8ZmzWWD/MXnwTgTDbYt8FxFFsjTOHjC133nFAeTNiphrdEomLvuppteEk8FZUsj4AbGAcTo1XbWypAh6nfv8+YzvIvPfXHQ/NNP7qYqw6OZ7wTDO6fMl7hTCYuNpr3jtTef5R0wVVC5NOHt8rJ/dnwIP6lzz/jsuQxQuPjEl8xMdd8CCjT2lXdB4ZxiX9auJaw5Gv8KF+WjZ5+JvBWUM42DCN/DN2+trm3oWvDQA9s0vQW4xNwx7Q3yGeTFJ8RUfhqsWNXZqECj4gkmeU5R8cjmJSw7GhrLVOh0qzzCXkFd1ypIlioKI2jsTpb3UXWDx8ABrmrpE+h2rQJfZSCayEGq7ZQrsG3iEe6/wzDNndJ/D1wQwn8R5Lbt8CfffwC9dFDkAT4AAA==</ScriptData>
+						<ScriptVersion>1</ScriptVersion>
+						<ScriptGuid>df7a5b0a-5f05-11e1-a39a-cfbc410e8367</ScriptGuid>
+						<ScriptFlags>1</ScriptFlags>
+						<Parameters></Parameters>
+					</Table>
+				</NewDataSet>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>50</FolderID>
+							<ParentID>47</ParentID>
+							<Name>Functions</Name>
+							<GUID>5e052966-d1b5-4c3f-899d-9ff09f989e7c</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>47</FolderID>
+							<ParentID>0</ParentID>
+							<Name>_System Automation</Name>
+							<GUID>68c423ca-41a6-4fae-a052-08a4fd27ea53</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+			</PackedScript>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>152</FolderID>
+						<ParentID>8</ParentID>
+						<Name>Tickets</Name>
+						<GUID>d7574976-9f2d-479f-a466-eb95b7572863</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>8</FolderID>
+						<ParentID>0</ParentID>
+						<Name>Maintenance</Name>
+						<GUID>064548fa-1133-4823-a069-4197f8256f3e</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>150</FolderID>
+					<ParentID>8</ParentID>
+					<Name>Agent</Name>
+					<GUID>88ec5c08-a679-4e01-8add-22daeb603707</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>8</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Maintenance</Name>
+					<GUID>064548fa-1133-4823-a069-4197f8256f3e</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
