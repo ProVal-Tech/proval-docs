@@ -219,7 +219,6 @@ This pop-up box will appear.
 
 Select the `System Variable` button, set `Computer` for the `Variable Name` and `friendlyName` for the `System Variable`. `friendlyName` can be found in the `Asset` section. Click the `Save` button to save changes.  
 
-![Save Changes](../../../static/img/New-Domain-Admins/image_43.png)  
 ![Save Changes 2](../../../static/img/New-Domain-Admins/image_44.png)  
 
 ##### Row 6c Function: Create Ticket
