@@ -36,6 +36,5 @@ This document presents 25 independent policies, one for each drive letter, which
   - **Policy Object Settings**:
     - **Policy Object Members**: [EPM - Disk - Monitor Set - Vsa HDD Monitoring Solution Monitor Sets](https://proval.itglue.com/DOC-5078775-10793257)
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
-
-
-
+## Attachments
+[Wokstation_Core_HDD_Monitor_Drive_C.xml](<..\..\..\static\attachments\itg\10793261\Wokstation_Core_HDD_Monitor_Drive_C.xml>)

@@ -115,6 +115,5 @@ PS C:\\> .\\Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https:\\file.
 ## Output
 - .\\Set-PowerPlan-log.txt
 - .\\Set-PowerPlan-Error.txt
-
-
-
+## Attachments
+[PowerPlanSettingsTemplate.csv](<..\..\static\attachments\itg\14903184\PowerPlanSettingsTemplate.csv>)

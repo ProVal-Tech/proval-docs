@@ -1,0 +1,79 @@
+﻿<LabTech_Expansion
+	Version="190.250"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>1287</GroupID>
+				<ParentID>0</ParentID>
+				<Parents>,</Parents>
+				<Children>,</Children>
+				<depth>0</depth>
+				<Name>Restricted Machines</Name>
+				<FullName>Restricted Machines test</FullName>
+				<Permissions>48</Permissions>
+				<Template>33</Template>
+				<AutoJoinScript>983</AutoJoinScript>
+				<Master>2</Master>
+				<LimitToParent>1</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes></Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>2019-09-26T17:02:32-04:00</MaintWindowApplied>
+				<GroupType>1</GroupType>
+				<Priority>0</Priority>
+				<GUID>abde26c9-c90b-11e9-925e-000c295e5f18</GUID>
+				<NetworkJoin>0</NetworkJoin>
+				<NetworkJoinOptions>0</NetworkJoinOptions>
+				<ContactJoin>0</ContactJoin>
+				<ContactJoinOptions>0</ContactJoinOptions>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>983</SensID>
+					<Name>Restricted Access Machines (Marked EDF)</Name>
+					<SQL>SELECT 
+   computers.computerid as `Computer Id`,
+   computers.name as `Computer Name`,
+   clients.name as `Client Name`,
+   computers.domain as `Computer Domain`,
+   computers.username as `Computer User`,
+   IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0') as `Computer - Extra Data Field - Return Data - Restricted Access Machine`
+FROM Computers 
+LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)
+LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
+LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
+LEFT JOIN ExtraFieldData edfAssigned1 ON (edfAssigned1.id=Computers.ComputerId and edfAssigned1.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='d4872fa2-6e42-4803-8206-f512d00a0498'))
+LEFT JOIN ExtraFieldData edfDefault1 ON (edfDefault1.id=0 and edfDefault1.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='d4872fa2-6e42-4803-8206-f512d00a0499'))
+ WHERE 
+((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')&lt;&gt;0))
+</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA>Select||=||=||=|^Select|||||||^</ListDATA>
+					<FolderID>0</FolderID>
+					<SearchXML>&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Extra Data Field.Return Data.Restricted Access Machine&lt;/lon&gt;&lt;lok&gt;Computer.Edf.d4872fa2-6e42-4803-8206-f512d00a0498&lt;/lok&gt;&lt;lmo&gt;IsTrue&lt;/lmo&gt;&lt;dv&gt;NULL&lt;/dv&gt;&lt;dk&gt;NULL&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;</SearchXML>
+				</Table>
+			</NewDataSet>
+		</Search>
+		<Template>
+			<NewDataSet>
+				<Table>
+					<TemplateID>33</TemplateID>
+					<Name>Restricted Access - Ask then Deny</Name>
+					<VNCMode>3</VNCMode>
+					<ScheduleID>0</ScheduleID>
+					<RegEditMode>3</RegEditMode>
+					<FileExMode>3</FileExMode>
+					<ScreenShotMode>3</ScreenShotMode>
+					<Menus></Menus>
+					<GUID>f4c91a3c-21f6-4d87-958c-f52165b86d74</GUID>
+					<AvTemplatePolicyId>-1</AvTemplatePolicyId>
+				</Table>
+			</NewDataSet>
+		</Template>
+	</Group>
+</LabTech_Expansion>

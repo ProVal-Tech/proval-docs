@@ -56,7 +56,5 @@ Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](
 ## Output
 
 Agent Procedure Log
-
-
-
-
+## Attachments
+[Procedure_Time_Saved_Report.xml](<..\..\..\static\attachments\itg\11262292\Procedure_Time_Saved_Report.xml>)

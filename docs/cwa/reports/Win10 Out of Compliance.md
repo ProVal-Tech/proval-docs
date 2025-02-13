@@ -78,6 +78,6 @@ Header, footer
 
 ### Export Attachment
 Attach the export XML of the report to this document.
-
-
-
+## Attachments
+[out_of_complaince_report.xml](<..\..\..\static\attachments\itg\10672467\out_of_complaince_report.xml>)
+[Win10_Out_of_Compliance.xlsx](<..\..\..\static\attachments\itg\10672467\Win10_Out_of_Compliance.xlsx>)

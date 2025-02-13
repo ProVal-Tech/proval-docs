@@ -43,6 +43,5 @@ Copyright (c) 2011-2022 Nartac Software Inc.
 Registry exported to file: C:/ProgramData/_automation/script/IISCrypto_PCI_4_0/IISCrypto_PCI_4_0Backup.reg
 Template applied: PCI 4.0
 ```
-
-
-
+## Attachments
+[Pci4.0_Template.ictpl](<..\..\..\static\attachments\itg\12486318\Pci4.0_Template.ictpl>)

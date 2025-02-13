@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Views>
+  <View viewId="43402976" name="cPVAL Exclude from Malwarebytes" readWrite="1" shareAll="0" useMachFil="0" overMachFil="*" useGroupFil="0" groupIdFil="" showCheckin="0" onLineMin="1" showReboot="0" rebootMin="1" useGateway="0" onlyGateway="" useIpFil="0" ipFil="" useOs="14" useOsVer="0" osVer="*" useScriptPending="0" scriptId="0" useScriptResult="0" useScriptSince="0" scriptMin="1440" useViewColFil="0" useColFil="0" colIdFil="0" useAppName="0" appFilter="*" useAppVer="0" verFilter="0" usePatchFil="0" missingPatches="0" usePatchPolicy="0" usePatchScanPending="0" usePatchScanResult="0" usePatchScanSince="0" patchScanMin="1440" advFilter="1" advFilterId="17870096" usePatchRebootPending="0" usePatchAutoUpdateConfig="0" patchAutoUpdateConfig="0" usePatchRebootConfig="0" patchRebootConfig="0" usePatchTestStatus="0" patchTestStatus="-2" usePatchFileSrcConfig="0" patchFileSrcConfig="0,4" usePatchUnscanned="0" usePatchMissingKB="0" patchMissingKB="" showSuspended="0" useAgentCredentialStatus="0" agentCredentialStatus="-1" useMonsetFilter="0" MonsetID="0" useSNMPsetFilter="0" SNMPsetID="0" Override="0" andMachineLabelsFlag="False" showSMApprovedPatches="-1" showSMPendingReviewPatches="-1" showSMRejectedPatches="-1" showSMSuppressedPatches="-1" showSMScanProfile="-1" showSMScanProfileValue="0" showSMOverrideProfile="-1" showSMOverrideProfileValue="0" showSMDeploymentProfile="-1" showSMDeploymentProfileValue="0" showSMThirdyPartyProfile="-1" showSMThirdyPartyProfileValue="0" useSMPatchRebootPending="0" useSMPatchRebooting="0" useSMPatchScanSince="0" smPatchScanMin="1440" useSMDeploySince="0" smDeployMin="1440" showSMAlertProfile="-1" showSMAlertProfileValue="0" useSMPatchRebootConfig="-1" patchSMRebootConfig="-1" useSMPatchRebootConfigNotLoggedIn="-1" patchSMRebootConfigNotLoggedIn="-1" showSMStatus="-1" useLastDeployResult="-1" useSMWuaDisabled="0" useSMWuauservFailures="0" useSMPendingActions="-1" showSMPendingActions="-1" useSMPatchMissingKB="0" patchSMMissingKB="" useSMPatchInstalledKB="0" patchSMInstalledKB="" useSMPatchFil="0" approvedPatches="0" showSMFullyPatched="-1" useSMCVECode="0" SMCVECode="" useSMCVSSBaseScore="0" SMCVSSBaseScore="" colIdFilName="">
+    <Filters>
+      <ReportFilters filterId="17870096" colId="2047" showCol="1" filter="NOT *1*" itemId="715" />
+    </Filters>
+    <viewDefApp />
+    <viewDeflabels />
+    <viewShare>
+      <viewAcl viewId="43402976" adminId="2" partitionId="1" adminGroupName="Master" internalCode="1" />
+    </viewShare>
+  </View>
+</Views>

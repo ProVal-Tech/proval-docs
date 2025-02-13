@@ -195,9 +195,6 @@ Here's a breakdown of the columns in the CSV file:
 
 - Script Log
 - Custom Table
-
-
-
-
-
-
+## Attachments
+[PowerPlanSettingsTemplate.csv](<..\..\..\static\attachments\itg\15053772\PowerPlanSettingsTemplate.csv>)
+[ProVal_-_High_Performance.csv](<..\..\..\static\attachments\itg\15053772\ProVal_-_High_Performance.csv>)

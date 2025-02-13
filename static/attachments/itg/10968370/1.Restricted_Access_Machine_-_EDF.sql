@@ -1,0 +1,2 @@
+
+INSERT INTO `extrafield` (`Form`,`Name`,`Sort`,`NoBreak`,`FType`,`Section`,`UnEditable`,`Collapsed`,`Fill`,`LtGuid`,`IsPassword`,`IsEncrypted`,`IsHidden`,`IsRestricted`,`ViewPermissions`,`EditPermissions`) Values('1','Restricted Access Machine','0','0','1','Return Data','0','0','Marking this box will restrict access to CW Control, File Explorer, Screenshots, and Registry Editor','d4872fa2-6e42-4803-8206-f512d00a0498','False','False','False','True','5','5');

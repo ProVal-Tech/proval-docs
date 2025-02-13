@@ -106,6 +106,5 @@ The following example has been saved in our VSA:
 **File Path:** `C:/ProgramData/_Automation/script/Winget-AutoUpdate/Winget-AutoUpdate.ps1`  
 **File Hash (Sha256):** `DCC8DF84B0145829B31B89BA047A786C42189C4598C4C458E7D575D7DC1985EF`  
 **File Hash (MD5):** `07DFAD0A66AA5A4B40C946DF727BE3D8`  
-
-
-
+## Attachments
+[Winget-AutoUpdate.ps1](<..\..\..\static\attachments\itg\18062085\Winget-AutoUpdate.ps1>)

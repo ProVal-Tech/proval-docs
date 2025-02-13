@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "73cb149f-3c4e-47d7-87c6-76f9b6c45424",
+		"name": "ProSync",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProSync Get Bearer Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "snix",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Test1234!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://labtech.provaltech.com/apiidentity/connect/token",
+					"protocol": "https",
+					"host": [
+						"labtech",
+						"provaltech",
+						"com"
+					],
+					"path": [
+						"apiidentity",
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProSync Get Dataviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY0MTI3MjQ0ODEyOWJmYWRkMDk0MDMwNGM3OThjZGJlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE2Mjk5MTcyMTMsImV4cCI6MTYyOTkyMDgxMywiaXNzIjoiaHR0cHM6Ly9sYWJ0ZWNoLnByb3ZhbHRlY2guY29tL2FwaWlkZW50aXR5IiwiYXVkIjpbImh0dHBzOi8vbGFidGVjaC5wcm92YWx0ZWNoLmNvbS9hcGlpZGVudGl0eS9yZXNvdXJjZXMiLCJQcm9TeW5jQ1dBUEkiXSwiY2xpZW50X2lkIjoic25peCIsInNjb3BlIjpbIlByb1N5bmNDV0FQSSJdfQ.Y-Lt9vMQzMtAhT_HQlDOP7a8pPzzWNQzjJOWNkyY2a5inOGT_LR8iXS_xTAHhrx9k8RHrSy6IDV7cNpFkcXEqt5PfqrC3pbZ-fXn5fQ-8QNqhjgtzenrpzAfeCAaf3ROXxHNI5BHJylBNRlO1npZsPyo-D-7fD0zB2XN7fRisxS39MOpNvYNQGLssTr822eaUdC3_iq7foJxoTk8TkwBhbMxc4tev3zMTAxBJliy7HvYt5Jp3Ye801ijvCSAsaMT6vupI1psCNGedqvAihOzZ1rSdn53TTwhrJc0vVxBvjwBKGE4iiDS5EXtGYN-Tf_tvCIZJ1kSqfxhqU8eKzF9wA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://labtech.provaltech.com/api/Dataviews",
+					"protocol": "https",
+					"host": [
+						"labtech",
+						"provaltech",
+						"com"
+					],
+					"path": [
+						"api",
+						"Dataviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProSync Get Sys Props",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY0MTI3MjQ0ODEyOWJmYWRkMDk0MDMwNGM3OThjZGJlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE2Mjk5MTcyMTMsImV4cCI6MTYyOTkyMDgxMywiaXNzIjoiaHR0cHM6Ly9sYWJ0ZWNoLnByb3ZhbHRlY2guY29tL2FwaWlkZW50aXR5IiwiYXVkIjpbImh0dHBzOi8vbGFidGVjaC5wcm92YWx0ZWNoLmNvbS9hcGlpZGVudGl0eS9yZXNvdXJjZXMiLCJQcm9TeW5jQ1dBUEkiXSwiY2xpZW50X2lkIjoic25peCIsInNjb3BlIjpbIlByb1N5bmNDV0FQSSJdfQ.Y-Lt9vMQzMtAhT_HQlDOP7a8pPzzWNQzjJOWNkyY2a5inOGT_LR8iXS_xTAHhrx9k8RHrSy6IDV7cNpFkcXEqt5PfqrC3pbZ-fXn5fQ-8QNqhjgtzenrpzAfeCAaf3ROXxHNI5BHJylBNRlO1npZsPyo-D-7fD0zB2XN7fRisxS39MOpNvYNQGLssTr822eaUdC3_iq7foJxoTk8TkwBhbMxc4tev3zMTAxBJliy7HvYt5Jp3Ye801ijvCSAsaMT6vupI1psCNGedqvAihOzZ1rSdn53TTwhrJc0vVxBvjwBKGE4iiDS5EXtGYN-Tf_tvCIZJ1kSqfxhqU8eKzF9wA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://labtech.provaltech.com/api/systemproperties",
+					"protocol": "https",
+					"host": [
+						"labtech",
+						"provaltech",
+						"com"
+					],
+					"path": [
+						"api",
+						"systemproperties"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
