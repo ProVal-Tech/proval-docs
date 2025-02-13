@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScExport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.kaseya.com/vsa/2008/12/Scripting">
+  <Procedure name="Purge IIS Logs Older than 3 Days" treePres="3" id="1148597545" folderId="789502607653616" treeFullPath="Development">
+    <Body description="">
+      <Statement name="GetVariable" continueOnFail="false">
+        <Parameter xsi:type="EnumParameter" name="VariableType" value="AgentInstallDrive" />
+        <Parameter xsi:type="StringParameter" name="SourceContent" value="" />
+        <Parameter xsi:type="StringParameter" name="VariableName" value="drive" />
+      </Statement>
+      <Statement name="Execute Powershell" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Parameter1" value="" />
+        <Parameter xsi:type="StringParameter" name="Parameter2" value="New-Item -Type Directory -Path #drive#ProgramData\_automation\AgentProcedure -Name IISPURGE" />
+        <Parameter xsi:type="StringParameter" name="Parameter3" value="False" />
+      </Statement>
+      <Statement name="GetVariable" continueOnFail="false">
+        <Parameter xsi:type="EnumParameter" name="VariableType" value="ConstantValue" />
+        <Parameter xsi:type="StringParameter" name="SourceContent" value="#drive#ProgramData\_automation\AgentProcedure\IISPURGE" />
+        <Parameter xsi:type="StringParameter" name="VariableName" value="dir" />
+      </Statement>
+      <Statement name="WriteFile" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Path" value="#dir#/Remove-OlderFiles.ps1" />
+        <Parameter xsi:type="StringParameter" name="ManagedFile" value="VSASharedFiles\Client Specific Powershell\12Points\Remove-OlderFiles.ps1" />
+        <Parameter xsi:type="BooleanParameter" name="DeleteAfter" value="False" />
+      </Statement>
+      <Statement name="Execute Shell Command - Get Results to Variable" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Parameter1" value="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command &quot;&amp; '#dir#\Remove-OlderFiles.ps1' -Path 'C:\inetpub\logs\LogFiles' -ThresholdDays 3&quot;" />
+        <Parameter xsi:type="StringParameter" name="Parameter2" value="True" />
+        <Parameter xsi:type="StringParameter" name="Parameter3" value="System" />
+      </Statement>
+      <Statement name="WriteScriptLogEntry" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Comment" value="#Global:CMDResults#" />
+      </Statement>
+      <If description="">
+        <Condition name="CheckVariable">
+          <Parameter xsi:type="StringParameter" name="VariableName" value="#Global:CMDResults#" />
+          <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+          <Parameter xsi:type="StringParameter" name="Value" value="not found." />
+        </Condition>
+        <Then>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Path not present" />
+          </Statement>
+        </Then>
+      </If>
+      <If description="">
+        <Condition name="CheckVariable">
+          <Parameter xsi:type="StringParameter" name="VariableName" value="#Global:CMDResults#" />
+          <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+          <Parameter xsi:type="StringParameter" name="Value" value="failed to remove" />
+        </Condition>
+        <Then>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Script failed to remove the log files" />
+          </Statement>
+        </Then>
+        <Else>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Script moving to next step" />
+          </Statement>
+        </Else>
+      </If>
+      <If description="">
+        <Condition name="CheckVariable">
+          <Parameter xsi:type="StringParameter" name="VariableName" value="#Global:cmdresults#" />
+          <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+          <Parameter xsi:type="StringParameter" name="Value" value="Files older than" />
+        </Condition>
+        <Then>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Files older than 3 days has been removed." />
+          </Statement>
+        </Then>
+        <Else>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Script moving to next step" />
+          </Statement>
+        </Else>
+      </If>
+      <If description="">
+        <Condition name="CheckVariable">
+          <Parameter xsi:type="StringParameter" name="VariableName" value="#Global:CMDResults#" />
+          <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+          <Parameter xsi:type="StringParameter" name="Value" value="not found." />
+        </Condition>
+        <Then>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Path not present" />
+          </Statement>
+        </Then>
+      </If>
+    </Body>
+  </Procedure>
+</ScExport>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScExport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.kaseya.com/vsa/2008/12/Scripting">
+  <Procedure name="Remove PendingFileRenameOperations" treePres="3" id="1564310296" folderId="721483097514828" treeFullPath="Development">
+    <Body description="">
+      <Statement name="Execute Shell Command - Get Results to Variable" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Parameter1" value="Reg Query &quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager&quot; /v PendingFileRenameOperations" />
+        <Parameter xsi:type="StringParameter" name="Parameter2" value="True" />
+        <Parameter xsi:type="StringParameter" name="Parameter3" value="System" />
+      </Statement>
+      <Statement name="WriteScriptLogEntry" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Comment" value="#global:cmdresults#" />
+      </Statement>
+      <If description="">
+        <Condition name="CheckVariable">
+          <Parameter xsi:type="StringParameter" name="VariableName" value="#global:cmdresults#" />
+          <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+          <Parameter xsi:type="StringParameter" name="Value" value="PendingFileRenameOperations" />
+        </Condition>
+        <Then>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Registry is Present" />
+          </Statement>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Initiated command to clear registry contents" />
+          </Statement>
+          <Statement name="Write text to file" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Parameter1" value="Clear-ItemProperty -Path &quot;HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager&quot; -Name &quot;PendingFileRenameOperations&quot;" />
+            <Parameter xsi:type="StringParameter" name="Parameter2" value="%ProgramData%\_automation\AgentProcedure\ren_ops.ps1" />
+            <Parameter xsi:type="StringParameter" name="Parameter3" value="True" />
+          </Statement>
+          <Statement name="Execute Powershell Command (64-bit, Run As System)" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Parameter1" value="%ProgramData%\_automation\AgentProcedure\ren_ops.ps1" />
+            <Parameter xsi:type="StringParameter" name="Parameter2" value="" />
+            <Parameter xsi:type="StringParameter" name="Parameter3" value="True" />
+          </Statement>
+          <Statement name="Execute Shell Command - Get Results to Variable" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Parameter1" value="Reg Query &quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Manager&quot; | findstr &quot;PendingFileRenameOperations&quot;" />
+            <Parameter xsi:type="StringParameter" name="Parameter2" value="True" />
+            <Parameter xsi:type="StringParameter" name="Parameter3" value="System" />
+          </Statement>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="#global:cmdresults#" />
+          </Statement>
+          <If description="">
+            <Condition name="CheckVariable">
+              <Parameter xsi:type="StringParameter" name="VariableName" value="#global:cmdresults#" />
+              <Parameter xsi:type="EnumParameter" name="Condition" value="LessThanOrEquals" />
+              <Parameter xsi:type="StringParameter" name="Value" value="PendingFileRenameOperations REG_MULTI_SZ" />
+            </Condition>
+            <Then>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="All registry content has been cleared." />
+              </Statement>
+            </Then>
+            <Else>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="All registry content has not been cleared." />
+              </Statement>
+            </Else>
+          </If>
+        </Then>
+        <Else>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="Registry is not present." />
+          </Statement>
+        </Else>
+      </If>
+    </Body>
+  </Procedure>
+</ScExport>

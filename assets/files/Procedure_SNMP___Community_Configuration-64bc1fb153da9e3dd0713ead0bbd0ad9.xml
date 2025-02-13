@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScExport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.kaseya.com/vsa/2008/12/Scripting">
+  <Procedure name="SNMP &amp; Community Configuration" treePres="3" id="1306976788" folderId="599200743808973" treeFullPath="Development.Ready for Approval">
+    <Body description="">
+      <Statement name="Execute Powershell" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Parameter1" value="" />
+        <Parameter xsi:type="StringParameter" name="Parameter2" value="(Get-WindowsCapability -name SNMP* -online).State" />
+        <Parameter xsi:type="StringParameter" name="Parameter3" value="True" />
+      </Statement>
+      <Statement name="WriteScriptLogEntry" continueOnFail="false">
+        <Parameter xsi:type="StringParameter" name="Comment" value="#global:psresult#" />
+      </Statement>
+      <If description="">
+        <Condition name="CheckVariable">
+          <Parameter xsi:type="StringParameter" name="VariableName" value="#global:psresult#" />
+          <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+          <Parameter xsi:type="StringParameter" name="Value" value="Installed" />
+        </Condition>
+        <Then>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="SNMP Client Already Present." />
+          </Statement>
+          <If description="">
+            <Condition name="ServiceIsRunning">
+              <Parameter xsi:type="StringParameter" name="ServiceName" value="SNMP" />
+            </Condition>
+            <Then>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="SNMP Service is Running" />
+              </Statement>
+            </Then>
+            <Else>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="SNMP Service is Not Running" />
+              </Statement>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="Initiating the command to Start SNMP Service" />
+              </Statement>
+              <Statement name="Start Windows Service" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Parameter1" value="SNMP" />
+                <Parameter xsi:type="StringParameter" name="Parameter2" value="True" />
+              </Statement>
+            </Else>
+          </If>
+        </Then>
+        <Else>
+          <Statement name="Execute Powershell" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Parameter1" value="" />
+            <Parameter xsi:type="StringParameter" name="Parameter2" value="Get-WindowsCapability -name SNMP* -online | Add-WindowsCapability –Online" />
+            <Parameter xsi:type="StringParameter" name="Parameter3" value="False" />
+          </Statement>
+          <Statement name="Execute Powershell" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Parameter1" value="" />
+            <Parameter xsi:type="StringParameter" name="Parameter2" value="Enable-WindowsOptionalFeature -Online -FeatureName &quot;SNMP&quot;" />
+            <Parameter xsi:type="StringParameter" name="Parameter3" value="False" />
+          </Statement>
+          <Statement name="ExecuteShellCommand" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Command" value="reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\SNMP\Parameters\ValidCommunities /v laptops /t REG_DWORD /d 4 /f" />
+            <Parameter xsi:type="EnumParameter" name="ExecuteAccount" value="System" />
+            <Parameter xsi:type="BooleanParameter" name="Is64Bit" value="False" />
+          </Statement>
+          <Statement name="Execute Powershell" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Parameter1" value="" />
+            <Parameter xsi:type="StringParameter" name="Parameter2" value="(Get-WindowsCapability -name SNMP* -online).State" />
+            <Parameter xsi:type="StringParameter" name="Parameter3" value="True" />
+          </Statement>
+          <Statement name="WriteScriptLogEntry" continueOnFail="false">
+            <Parameter xsi:type="StringParameter" name="Comment" value="#global:psresult#" />
+          </Statement>
+          <If description="">
+            <Condition name="CheckVariable">
+              <Parameter xsi:type="StringParameter" name="VariableName" value="#global:psresult#" />
+              <Parameter xsi:type="EnumParameter" name="Condition" value="Contains" />
+              <Parameter xsi:type="StringParameter" name="Value" value="Installed" />
+            </Condition>
+            <Then>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="SNMP Client Installed." />
+              </Statement>
+              <If description="">
+                <Condition name="ServiceIsRunning">
+                  <Parameter xsi:type="StringParameter" name="ServiceName" value="SNMP" />
+                </Condition>
+                <Then>
+                  <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                    <Parameter xsi:type="StringParameter" name="Comment" value="SNMP Service is Running" />
+                  </Statement>
+                </Then>
+                <Else>
+                  <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                    <Parameter xsi:type="StringParameter" name="Comment" value="SNMP Service is Not Running" />
+                  </Statement>
+                  <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                    <Parameter xsi:type="StringParameter" name="Comment" value="Initiating the command to Start SNMP Service" />
+                  </Statement>
+                  <Statement name="Start Windows Service" continueOnFail="false">
+                    <Parameter xsi:type="StringParameter" name="Parameter1" value="SNMP" />
+                    <Parameter xsi:type="StringParameter" name="Parameter2" value="True" />
+                  </Statement>
+                </Else>
+              </If>
+            </Then>
+            <Else>
+              <Statement name="WriteScriptLogEntry" continueOnFail="false">
+                <Parameter xsi:type="StringParameter" name="Comment" value="Process Failed" />
+              </Statement>
+            </Else>
+          </If>
+        </Else>
+      </If>
+    </Body>
+  </Procedure>
+</ScExport>
