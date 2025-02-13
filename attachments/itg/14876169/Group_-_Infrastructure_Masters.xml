@@ -1,0 +1,71 @@
+﻿<LabTech_Expansion
+	Version="220.35"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>3428</GroupID>
+				<ParentID>828</ParentID>
+				<Parents>,967,853,827,1,828,</Parents>
+				<Children>,</Children>
+				<depth>5</depth>
+				<Name>Infrastructure Masters</Name>
+				<FullName>Service Plans.Windows Servers.Server Roles.Windows Servers Core Services.Domain Controllers.Infrastructure Masters</FullName>
+				<Permissions>0</Permissions>
+				<Template>0</Template>
+				<AutoJoinScript>2685</AutoJoinScript>
+				<Master>2</Master>
+				<LimitToParent>1</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes></Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>2022-02-07T15:54:15-05:00</MaintWindowApplied>
+				<GroupType>5</GroupType>
+				<Priority>5</Priority>
+				<GUID>ef175784-8857-11ec-8fb7-0e2c168d62f5</GUID>
+				<NetworkJoin>0</NetworkJoin>
+				<NetworkJoinOptions>0</NetworkJoinOptions>
+				<ContactJoin>0</ContactJoin>
+				<ContactJoinOptions>0</ContactJoinOptions>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>2685</SensID>
+					<Name>Server Role - Domain Controllers - Intra Masters</Name>
+					<SQL>SELECT 
+   computers.computerid as `Computer Id`,
+   computers.name as `Computer Name`,
+   clients.name as `Client Name`,
+   computers.domain as `Computer Domain`,
+   computers.username as `Computer User`,
+   IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0') as `Computer - Extra Data Field - Default - Under MSP Contract`,
+   IFNULL(crd2.RoleDefinitionId,0) as `AD Domain Controller-2`,
+   IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0') as `Computer - Extra Data Field - Default - Exclude MSP Contract`,
+   IF(INSTR(computers.os, 'server')&gt;0, 1, 0) as `Computer.OS.IsServer`,
+   IFNULL(crd4.RoleDefinitionId,0) as `AD Infrastructure Master-4`
+FROM Computers 
+LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)
+LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
+LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
+LEFT JOIN ExtraFieldData edfAssigned1 ON (edfAssigned1.id=Computers.ComputerId and edfAssigned1.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='45c2da7e-3bf5-11e1-92fd-c1ee63289e9e'))
+LEFT JOIN ExtraFieldData edfDefault1 ON (edfDefault1.id=0 and edfDefault1.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='45c2da7e-3bf5-11e1-92fd-c1ee63289e9e'))
+LEFT JOIN ComputerRoleDefinitions crd2 ON (crd2.ComputerId=Computers.ComputerId And crd2.RoleDefinitionId=(Select RoleDefinitionId From RoleDefinitions Where RoleDetectionGuid='c79927ec-2b6f-11e3-9392-08002788414b') And (crd2.Type=1 OR (crd2.CurrentlyDetected=1 and crd2.Type&lt;&gt;2)))
+LEFT JOIN ExtraFieldData edfAssigned3 ON (edfAssigned3.id=Computers.ComputerId and edfAssigned3.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='a72e229b-3bf5-11e1-92fd-c1ee63289e9e'))
+LEFT JOIN ExtraFieldData edfDefault3 ON (edfDefault3.id=0 and edfDefault3.ExtraFieldId =(Select ExtraField.id FROM ExtraField WHERE LTGuid='a72e229b-3bf5-11e1-92fd-c1ee63289e9e'))
+LEFT JOIN ComputerRoleDefinitions crd4 ON (crd4.ComputerId=Computers.ComputerId And crd4.RoleDefinitionId=(Select RoleDefinitionId From RoleDefinitions Where RoleDetectionGuid='e90000d4-2b70-11e3-9392-08002788414b') And (crd4.Type=1 OR (crd4.CurrentlyDetected=1 and crd4.Type&lt;&gt;2)))
+ WHERE 
+((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),'0')&lt;&gt;0) AND (IFNULL(crd2.RoleDefinitionId,0) &gt;0 ) AND (NOT ((IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),'0')&lt;&gt;0))) AND (IF(INSTR(computers.os, 'server')&gt;0, 1, 0)&lt;&gt;0) AND (IFNULL(crd4.RoleDefinitionId,0) &gt;0 ))))
+</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA></ListDATA>
+					<FolderID>6</FolderID>
+					<SearchXML>&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Extra Data Field.Default.Under MSP Contract&lt;/lon&gt;&lt;lok&gt;Computer.Edf.45c2da7e-3bf5-11e1-92fd-c1ee63289e9e&lt;/lok&gt;&lt;lmo&gt;IsTrue&lt;/lmo&gt;&lt;dv&gt;NULL&lt;/dv&gt;&lt;dk&gt;NULL&lt;/dk&gt;&lt;/asn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.LabTech.Roles&lt;/lon&gt;&lt;lok&gt;Computer.LabTech.Roles&lt;/lok&gt;&lt;lmo&gt;HasRole&lt;/lmo&gt;&lt;dv&gt;AD Domain Controller&lt;/dv&gt;&lt;dk&gt;c79927ec-2b6f-11e3-9392-08002788414b&lt;/dk&gt;&lt;/asn&gt;&lt;asn&gt;&lt;st&gt;NotNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Extra Data Field.Default.Exclude MSP Contract&lt;/lon&gt;&lt;lok&gt;Computer.Edf.a72e229b-3bf5-11e1-92fd-c1ee63289e9e&lt;/lok&gt;&lt;lmo&gt;IsTrue&lt;/lmo&gt;&lt;dv&gt;NULL&lt;/dv&gt;&lt;dk&gt;NULL&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.OS.IsServer&lt;/lon&gt;&lt;lok&gt;Computer.OS.IsServer&lt;/lok&gt;&lt;lmo&gt;IsTrue&lt;/lmo&gt;&lt;dv&gt;NULL&lt;/dv&gt;&lt;dk&gt;NULL&lt;/dk&gt;&lt;/asn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.LabTech.Roles&lt;/lon&gt;&lt;lok&gt;Computer.LabTech.Roles&lt;/lok&gt;&lt;lmo&gt;HasRole&lt;/lmo&gt;&lt;dv&gt;AD Infrastructure Master&lt;/dv&gt;&lt;dk&gt;e90000d4-2b70-11e3-9392-08002788414b&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;</SearchXML>
+				</Table>
+			</NewDataSet>
+		</Search>
+	</Group>
+</LabTech_Expansion>

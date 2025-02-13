@@ -1,0 +1,7 @@
+organization,name,password_category,username,password,url,notes
+MyMSP,Automate Server,,.\PRONOC,TempPlacementPW,,Server Name: <servername>
+MyMSP,Control Server,,.\PRONOC,TempPlacementPW,,Server Name: <servername>
+MyMSP,Automate Web Portal - <CLIENTNAME>,,PRONOC,TempPlacementPW,https://cwa.mymsp.com/automate,
+MyMSP,Connectwise Home - SSO (Support),,PRONOC@mymsp.com,TempPlacementPW,,
+MyMSP,Control Web Portal,,PRONOC,TempPlacementPW,https://control.mymsp.com:8040,
+MyMSP,OWA Web Login,,PRONOC@mymsp.com,TempPlacementPW,https://www.office.com/?auth=2&home=1,

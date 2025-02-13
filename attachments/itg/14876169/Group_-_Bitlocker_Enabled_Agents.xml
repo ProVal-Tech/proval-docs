@@ -1,0 +1,100 @@
+﻿<LabTech_Expansion
+	Version="220.35"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>3429</GroupID>
+				<ParentID>972</ParentID>
+				<Parents>,972,</Parents>
+				<Children>,</Children>
+				<depth>1</depth>
+				<Name>Bitlocker Enabled Agents</Name>
+				<FullName>_System Automation.Bitlocker Enabled Agents</FullName>
+				<Permissions>0</Permissions>
+				<Template>0</Template>
+				<AutoJoinScript>2686</AutoJoinScript>
+				<Master>2</Master>
+				<LimitToParent>1</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes></Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>2022-02-07T16:14:01-05:00</MaintWindowApplied>
+				<GroupType>4</GroupType>
+				<Priority>5</Priority>
+				<GUID>3d6caa42-8859-11ec-8fb7-0e2c168d62f5</GUID>
+				<NetworkJoin>0</NetworkJoin>
+				<NetworkJoinOptions>0</NetworkJoinOptions>
+				<ContactJoin>0</ContactJoin>
+				<ContactJoinOptions>0</ContactJoinOptions>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>2686</SensID>
+					<Name>Bitlocker Enabled</Name>
+					<SQL>SELECT 
+   computers.computerid as `Computer Id`,
+   computers.name as `Computer Name`,
+   clients.name as `Client Name`,
+   computers.domain as `Computer Domain`,
+   computers.username as `Computer User`,
+   IFNULL(crd1.RoleDefinitionId,0) as `Bitlocker Enabled - System drive-1`,
+   IFNULL(crd2.RoleDefinitionId,0) as `Bitlocker Enabled-2`
+FROM Computers 
+LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)
+LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
+LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
+LEFT JOIN ComputerRoleDefinitions crd1 ON (crd1.ComputerId=Computers.ComputerId And crd1.RoleDefinitionId=(Select RoleDefinitionId From RoleDefinitions Where RoleDetectionGuid='8ab54ff7-5225-11ec-8d42-902e16d3ca41') And (crd1.Type=1 OR (crd1.CurrentlyDetected=1 and crd1.Type&lt;&gt;2)))
+LEFT JOIN ComputerRoleDefinitions crd2 ON (crd2.ComputerId=Computers.ComputerId And crd2.RoleDefinitionId=(Select RoleDefinitionId From RoleDefinitions Where RoleDetectionGuid='8f6435dd-6b94-11e7-a794-00155d651901') And (crd2.Type=1 OR (crd2.CurrentlyDetected=1 and crd2.Type&lt;&gt;2)))
+ WHERE 
+((((IFNULL(crd1.RoleDefinitionId,0) &gt;0 ) OR (IFNULL(crd2.RoleDefinitionId,0) &gt;0 ))))
+</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA></ListDATA>
+					<FolderID>3</FolderID>
+					<SearchXML>&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;OrNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.LabTech.Roles&lt;/lon&gt;&lt;lok&gt;Computer.LabTech.Roles&lt;/lok&gt;&lt;lmo&gt;HasRole&lt;/lmo&gt;&lt;dv&gt;Bitlocker Enabled - System drive&lt;/dv&gt;&lt;dk&gt;8ab54ff7-5225-11ec-8d42-902e16d3ca41&lt;/dk&gt;&lt;/asn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.LabTech.Roles&lt;/lon&gt;&lt;lok&gt;Computer.LabTech.Roles&lt;/lok&gt;&lt;lmo&gt;HasRole&lt;/lmo&gt;&lt;dv&gt;Bitlocker Enabled&lt;/dv&gt;&lt;dk&gt;8f6435dd-6b94-11e7-a794-00155d651901&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;</SearchXML>
+				</Table>
+			</NewDataSet>
+		</Search>
+		<GroupScript>
+			<NewDataSet>
+				<Table>
+					<GScriptID>397</GScriptID>
+					<GroupID>3429</GroupID>
+					<ScriptID>7098</ScriptID>
+					<ScriptType>0</ScriptType>
+					<RunTime>2022-02-07T13:24:05-05:00</RunTime>
+					<Repeat>0</Repeat>
+					<SearchID>0</SearchID>
+					<Parameters></Parameters>
+					<GroupScriptGuid>7dcf493e-a520-4b18-ac02-ca2ce380c4a8</GroupScriptGuid>
+					<IncludeSubGroups>1</IncludeSubGroups>
+					<EffectiveStartDate>2022-02-07T00:00:00-05:00</EffectiveStartDate>
+					<DistributionWindowType>3</DistributionWindowType>
+					<DistributionWindowAmount>2</DistributionWindowAmount>
+					<ScheduleType>5</ScheduleType>
+					<Interval>0</Interval>
+					<ScheduleWeekofMonth>62</ScheduleWeekofMonth>
+					<ScheduleDayofWeek>16</ScheduleDayofWeek>
+					<RepeatType>0</RepeatType>
+					<RepeatAmount>0</RepeatAmount>
+					<RepeatStopAfter>0</RepeatStopAfter>
+					<SkipOffline>0</SkipOffline>
+					<OfflineOnly>0</OfflineOnly>
+					<WakeOffline>0</WakeOffline>
+					<WakeScript>0</WakeScript>
+					<DisableTimeZone>0</DisableTimeZone>
+					<RunScriptOnProbe>0</RunScriptOnProbe>
+					<Priority>6</Priority>
+					<Last_User>ProVal@localhost</Last_User>
+					<Last_Date>2022-02-07T16:15:52-05:00</Last_Date>
+					<ScriptTarget>1</ScriptTarget>
+				</Table>
+			</NewDataSet>
+		</GroupScript>
+	</Group>
+</LabTech_Expansion>

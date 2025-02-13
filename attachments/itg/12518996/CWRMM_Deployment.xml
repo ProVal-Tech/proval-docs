@@ -1,0 +1,83 @@
+﻿<LabTech_Expansion
+	Version="210.161"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6594</ScriptId>
+				<FolderId>254</FolderId>
+				<ScriptName>CWRMM Deployment</ScriptName>
+				<ScriptNotes>Downloads installer from CWRMM portal and installs on machine. URL to MSI's need to be adjusted in Globals and Parameters above. If deploying to multiple sites, the EDF's under Client &gt; Deployment can be set instead of the Global Variables inside of the script.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>1</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPzQrCMBCE74LvkAdoyB/WWpZc6s9FUVS8p8kWcklLmoJ9e2lRqKdhduZbGDh7i6HHvUlGw3PsUAtgs8J9CFU7hIRRc2ALB4d35+PEoD5G78yYkatNbY2RiE1GJJeCyFLxknNyuwBb9OFho+/SC2Pv2zA9/j9889PgnS6wMNvGKCqdzakQaGndSEM5NipXuXVO7H78DABbzlmvPrLkjeHeAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2aaU+jQBjH32+y34E1aaKJWBgoUNNtdHsYEo+ueOyLJpspDC5xCjpQj2+/0EJb0Y4WZ0R8xTwznD/m/xwMLcsm3k3UhRFsf/8mCK2ZHU6N2Ow9RAQmo30PYScU6tnAABI4RhEiS30HOBhBHLYvA3IdRjDyAv/89PDntoXIHSJJs1XP9kkPmV3uIj5NvHNbbtWfdjzZ62DiOW0DGVB3oSICx9ZEWUa2OHIBFCXkKpqi2Y4jN7OzTA+YPlV9+bHS01kRupnfx74dpTeQttL+/sSf2qaTjC1ZyxjkHBaQs5WcrebsxsK2AhK1pfh+k23a1wn8yPMnKOmft9Oxk/DQG3vTQ7JmOmL6DvJnLyEZXTaXkSwoULAAChbQXM2l3fmH7GvPvxJmr124gMSDI4zCVj3d41Nzkzly0yUKt7liXubUbqb9gM6rvWtdeze9bj/dXaXik9fHl2iNwg+Uxe+pB/pIiKAARKM0iFTxDiYYJ9rlK1qlSqKVJYUCTDdGUHWcpghHGhJVB0FxZDQ00bGVpgqApOpuY8VcrHWwF9+y2a29PCmfeQRlLcgqc2mrpVGWFcmADUMXbQUAUXUbSIxTAl10VQcaBpRdCKSilF/0G+uhbjB3AFxRKzQPkPN8bIWvfZksJ96EiaNcGWreSUqvlIvUAS2x6R32OmeCdf7LOjs1jw/+msfd3p/NvL2x91SJexvbG/WNbVHZmm7lLS6cjWpJlw3oeWD5GMbNSkUiquxr1i0+ReEERzUuqORK1TNUVN3g3scBdBIveWSZgunH2sYYEcElwVjYt8wTYRA/KsR8SBYobUr0oDSSece4ItPp7A4vPd8J7sPh4Vl4Zw8H0L6GVygc1sJbTGazdmcceisSIalQ7iOzr36U0kAvHOPnYlygYHrFg/JkTHULrzJ+r+4L1D2f1IPu3S90PyGYE68Cxcsn5XWBiOc+JvFmEWuyKIQcoRMQguwIP+7wAcm8uOEacBKdrP6Gu6aby7tJaYX72+2iKH4FyCnmBpkXRaXlkW9PjoQ+9PAcGOMpW6D6KXHKUomu+P7zXkIFahc6IZ6fdl/5spMTH1tS4OusYC1Fj5SYIGYKTQTbuTw9OuIDsVpFi8YihAj138d8YBaoTOgwtdLWVMuHyXzNRi9Z3nE+OL7BaKbuZ6nj9Kb4kKxWgUL5BSLOH/hEXcC8JuE52V5NpQckuIrbQj9O5EJh88HQtobmmTWIJ5kbkPFw3SQ6i0/FsmjAvE4pbbU6U/IsRY5l3HvwokTEs2vxmZuVWpkBSXn/Qb8wAebVRIm5cl5jjCcR87Ki7GR5KZpaE9tGYehOMH788RGSVCq1aFJGGaswryveIM3MTn80/Q9ZP6apdyoAAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>8e8a7fa3-2dc6-11ec-bf2a-0ef3636cdd19</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>655</ID>
+					<Form>3</Form>
+					<Name>CWRMM Server Agent URL</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Deployment</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>|Insert CWRMM Server Agent URL|.2</Fill>
+					<LtGuid>78ba4dd9-ab6e-4dea-b856-dc39422047f5</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>656</ID>
+					<Form>3</Form>
+					<Name>CWRMM Desktop Agent URL</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Deployment</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>|Insert CWRMM Desktop Agent URL Here|.2</Fill>
+					<LtGuid>1308a587-c322-4f5e-8a77-f4da88a1fa20</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>254</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWRMM</Name>
+					<GUID></GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

@@ -1,0 +1,70 @@
+﻿<LabTech_Expansion
+	Version="240.92"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>8867</ScriptId>
+				<FolderId>266</FolderId>
+				<ScriptName>Remove - All But My - ScreenConnect Client Installations</ScriptName>
+				<ScriptNotes>https://proval.itglue.com/5078775/docs/14767921</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>1,5,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>1</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPwQrCMBBE74L/kA9oyKZprZYlFxVBFETFe0i2kEta0gbs30uLQj0NszNvYfDiLYWeDmYwGp9jR1qimBXvKezbFAaKGlAsHB7fnY8TQ/raBmfGjJ1NSCaOTEHGcsgV29ZFWSvFblcUiz4+bPTd8KLY+zZMj/8P3/yUvNO2qJxztOEGXMOlJMeNVJYDgM13JZWNrH78DKBYzlmvPkAOdmreAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO2ZbW/TOhSAv1fqfzBo0O2KrHFe1rXsRkPdOir2ggj37kulyY2dziixg+MwEPDfcdJkS0sTjdEy5er2S338cmo/Pj4+xz1wPUEjeYQkctotAA7mcpwJSjz+LAVKW0eUBDgG3aLhLRIoJJKIUt1JwKcoKFXMlf2rOlHOHHjQXaxY6HWSUOx4Vg9jTPY0pGNfg5BgDUHT03Rd94y+TWwf9got2YBszt3ypHN1riTR7SpeeTKfQF7K60cJy+QxTttKUnmRcGnRxpJsLsnWkmyXeHAhHV3NN/3O64acScoSktbflvO2i/iUhjQbUhTzljHDhEmULUa1lsUykjsKNViMOixmvxqMM7izgoNuXvfIqFL7eCxWulnDivi23kN9rNnQmmqW1+9rqG9bmmdY+7blG2RfN1ZDdJ55AVVTpvhZ3sFYpOocXkTpb6JgzGKJmEfiw7yn+Uu84dp5Gxvkbeg1uCGsgOkenx4P3wOak6IYjN5dnIEoSGaUXcWeIIR5nDHiySv17dNZFXR3OD56GGejUZx7dZyrTW8ZvLGa47JLcAbnfFlnPtKqhWo2Cmq98VYgnJvct2rmP9noET/n8h0J+SdSdH6YyVqNoguN+mtLcI8QPOIiQ4OCjdxedrOQ1d/0lYdyvcz2GnXj/8Yh3viB7f2XrO/PHNj9ZhmfadcgMyusb6sIfGLwN9g+IVIbSxIqvhER8gvovH5zejaYuNyXN0iQyRn1BI+VNLmkDPObeDJMhFALynO4yT8sUxgEk786L34afslv9izTOOf4F1WBb+DymgiiXUw/qEgMfAVbV7tHNI4C9OVcpRxAC5H0rkHHzQK24TxgA8MsUO4ADTGcjsDzESwbwbjMB608ZR3wfWc3KeYQS0HZrN3yuSBIjdkGt+RU7AhAieMO+Dpn7IV4l3wmoOuVOnc/MtBlSsuUcwnM5zP58jkKo5cQGKUyTMtbLAmCuSpXIiE1NyAkAppLVCCqkm+ot1vf263/t7B2C0s/0W5Rv7xzpb0SRCaCgacjRAOCgeSqJtUF5DUBPg8CfqP2HyzOrdCzHe8MlAlslxRrH7gyi86Lzs5TtUn3DHX11YGtcxjFPJGF37cXnFS/UX69Ng5bXOZ6fTlc/9vBo+VYGaYKf75fEUg81K5XxxrOINWXiPtlYrBh7wh1NvpeYXPLjwLg7sxzxVSkYJmqlGQmkFTIU78Vps81nCnp09wzxuAaxWCq1OT7gYEveJjtypm6Xygju+rz5MlmDkOzHhxs6489xsKGvRrYNba6bjQNS/nrM4hF/7Xm47X+TH+jiQOsSRzWbUTrT+jvYUSFnP+t9QPEGvNV5RoAAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>c47ddde6-a0df-11ed-a13c-000c295e5f17</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>12432</ID>
+					<Form>3</Form>
+					<Name>Other Permitted SC Instances</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Default</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Addl instances other then integrated one here. Separate by Pipe (|) symbol</Fill>
+					<LtGuid>ef507a9d-514b-4c99-a954-c24854f2e802</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>266</FolderID>
+					<ParentID>215</ParentID>
+					<Name>ConnectWise Control</Name>
+					<GUID>838d8ecb-2c40-4d72-bd68-7f28631f2b67</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>215</FolderID>
+					<ParentID>0</ParentID>
+					<Name>ProVal</Name>
+					<GUID>cf1eba1f-7794-40eb-802e-1763b77ee3fe</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
