@@ -15,8 +15,7 @@ This document displays the list of audited group policies from the script @Group
 
 ## Dependencies
 
-- @Group Policy Audit  
-- [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)  
+- [Group Policy Audit](../scripts/group-policy-audit.md)
 
 ## Table
 

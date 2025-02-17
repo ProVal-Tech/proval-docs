@@ -1,7 +1,7 @@
 ---
 id: '337526eb-1aa7-48a3-beab-ab66d2b7aea8'
-title: 'Windows - Group Policy Object Security Filtering'
-title_meta: 'Windows - Group Policy Object Security Filtering'
+title: 'Group Policy Object Security Filtering'
+title_meta: 'Group Policy Object Security Filtering'
 keywords: ['active-directory', 'gpo', 'security', 'audit', 'policy']
 description: 'This document provides an overview of a dataview that displays information related to Group Policy Objects (GPOs) in Active Directory, focusing on security policies. It outlines dependencies, columns, and details necessary for auditing GPOs effectively.'
 tags: ['active-directory', 'gpo', 'security']
@@ -15,13 +15,10 @@ This dataview displays information related to Group Policy Objects in Active Dir
 
 ## Dependencies
 
-**Custom tables**  
+- [Group Policy Audit](../scripts/group-policy-audit.md)
 - [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)  
 - [plugin_proval_ad_gposf](<../tables/plugin_proval_ad_gposf.md>)  
 
-**Script**  
-- [RSM - Active Directory - Script - Group Policy - Audit](<../scripts/Group Policy - Audit.md>)  
-- [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)  
 
 ## Columns
 
