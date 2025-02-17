@@ -1,7 +1,7 @@
 ---
 id: '25040f3b-ef1d-4ebb-af45-e0df3d12ebae'
-title: 'GPO Modified'
-title_meta: 'GPO Modified'
+title: 'Active - Directory - GPO Modified'
+title_meta: 'Active - Directory - GPO Modified'
 keywords: ['gpo', 'monitor', 'domain', 'controller', 'alert']
 description: 'This document provides a detailed implementation guide for a Custom RAWSQL monitor that tracks GPO modifications on Domain Controllers, alerting when changes have occurred within the last day. It includes setup instructions, dependencies, and a sample ticket template for notifying administrators of detected modifications.'
 tags: ['ticketing', 'windows']
@@ -24,7 +24,7 @@ This Custom RAWSQL monitor shows the GPO modified time on the computer if the GP
 ## Dependencies
 
 - [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)  
-- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](<../scripts/Group Policy - Gather GPResult Data.md>)  
+- [Group Policy Audit](../scripts/group-policy-audit.md)
 
 ## Target
 
