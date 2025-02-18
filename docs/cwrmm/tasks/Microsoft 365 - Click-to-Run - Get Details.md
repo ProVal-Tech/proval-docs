@@ -58,7 +58,7 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
-$C2RInfo = Get-ItemProperty -Path 'HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration' -ErrorAction SilentlyContinue
+$C2RInfo = Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration' -ErrorAction SilentlyContinue
 if ($C2RInfo) {
     $version = $C2RInfo.ClientVersionToReport
     $autoUpdate = if ($C2RInfo.CDNBaseUrl) {
@@ -365,6 +365,5 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_52.png)  
-
 
 

@@ -33,12 +33,12 @@ INSERT INTO groupagents
   'ProVal - Client Specific - Time Sync Compliance' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  'Time Sync Compliance Failed - %ComputerName%~~~Successfully synced time.!!!Time Sync Compliance Failed - %ComputerName%~~~Time Sync Compliance failed for %ComputerName%. //r//n//r//nReason: //r//n%RESULT%' as `AlertMessage`,
+  'Time Sync Compliance Failed - %ComputerName%~~~Successfully synced time.!!!Time Sync Compliance Failed - %ComputerName%~~~Time Sync Compliance failed for %ComputerName%. \r\n\r\nReason: \r\n%RESULT%' as `AlertMessage`,
   '0' as `ContactID`,
   '86400' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command \"$S = //'W32Time//';$peerList = //'us.pool.ntp.org//';$syncOutput = //'//';if ((Get-Service $S).Status -ne //'Running//') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return /////\"Failed to start $S Service. Reason: $($Error.Exception.Message)/////\"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += /////\"`n/////\" + (W32tm /resync /force);if ($syncOutput -match //'The computer did not resync//') {return //'Failed: The computer did not resync.//'} else {return //'Success: The computer resynced successfully.//'}\"' as `DataOut`,
+  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$S = \'W32Time\';$peerList = \'us.pool.ntp.org\';$syncOutput = \'\';if ((Get-Service $S).Status -ne \'Running\') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return \\/\"Failed to start $S Service. Reason: $($Error.Exception.Message)\\/\"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += \\/\"`n\\/\" + (W32tm /resync /force);if ($syncOutput -match \'The computer did not resync\') {return \'Failed: The computer did not resync.\'} else {return \'Success: The computer resynced successfully.\'}\"' as `DataOut`,
   '11' as `Comparor`,
   '(The Computer did not resync)|(Failed to start)' as `DataIn`,
   '' as `IDField`,
@@ -106,12 +106,12 @@ INSERT INTO groupagents
   'ProVal - Client Specific - Time Sync Compliance' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  'Time Sync Compliance Failed - %ComputerName%~~~Successfully synced time.!!!Time Sync Compliance Failed - %ComputerName%~~~Time Sync Compliance failed for %ComputerName%. //r//n//r//nReason: //r//n%RESULT%' as `AlertMessage`,
+  'Time Sync Compliance Failed - %ComputerName%~~~Successfully synced time.!!!Time Sync Compliance Failed - %ComputerName%~~~Time Sync Compliance failed for %ComputerName%. \r\n\r\nReason: \r\n%RESULT%' as `AlertMessage`,
   '0' as `ContactID`,
   '86400' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command \"$S = //'W32Time//';$peerList = //'us.pool.ntp.org//';$syncOutput = //'//';if ((Get-Service $S).Status -ne //'Running//') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return /////\"Failed to start $S Service. Reason: $($Error.Exception.Message)/////\"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += /////\"`n/////\" + (W32tm /resync /force);if ($syncOutput -match //'The computer did not resync//') {return //'Failed: The computer did not resync.//'} else {return //'Success: The computer resynced successfully.//'}\"' as `DataOut`,
+  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$S = \'W32Time\';$peerList = \'us.pool.ntp.org\';$syncOutput = \'\';if ((Get-Service $S).Status -ne \'Running\') {Try {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}catch {return \\/\"Failed to start $S Service. Reason: $($Error.Exception.Message)\\/\"}};$syncOutput += w32tm /config /manualpeerlist:$peerList;Start-Sleep -Seconds 5;$syncOutput += \\/\"`n\\/\" + (W32tm /resync /force);if ($syncOutput -match \'The computer did not resync\') {return \'Failed: The computer did not resync.\'} else {return \'Success: The computer resynced successfully.\'}\"' as `DataOut`,
   '11' as `Comparor`,
   '(The Computer did not resync)|(Failed to start)' as `DataIn`,
   '' as `IDField`,
@@ -180,6 +180,5 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
-
 
 

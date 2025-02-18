@@ -31,13 +31,13 @@ SELECT '' as `AgentID`,
 'ProVal - Client Specific - Add Domain Group to Local Administrators' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Failed to Add Domain Group to Local Administrators~~~Successfully Added Domain Group HEIDOMAIN//ITPcSupport to local administrators.!!!Failed to Add Domain Group to Local Administrators~~~Failed to add Domain Group HEIDOMAIN//ITPcSupport to local administrators for %COMPUTERNAME%. 
+'Failed to Add Domain Group to Local Administrators~~~Successfully Added Domain Group HEIDOMAIN\ITPcSupport to local administrators.!!!Failed to Add Domain Group to Local Administrators~~~Failed to add Domain Group HEIDOMAIN\ITPcSupport to local administrators for %COMPUTERNAME%. 
 Reason: %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '604800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$Admin = Net localGroup Administrators; if ( !($Admin -match /'HEIDOMAIN.ITPcSupport/') ) {net localgroup administrators HEIDOMAIN//ITPcSupport /Add /y} else {return /'The command completed successfully./'}\"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$Admin = Net localGroup Administrators; if ( !($Admin -match /'HEIDOMAIN.ITPcSupport/') ) {net localgroup administrators HEIDOMAIN\ITPcSupport /Add /y} else {return /'The command completed successfully./'}\"' as `DataOut`,
 '10' as `Comparor`,
 'The command completed successfully.' as `DataIn`,
 '' as `IDField`,
@@ -104,13 +104,13 @@ SELECT '' as `AgentID`,
 'ProVal - Client Specific - Add Domain Group to Local Administrators' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Failed to Add Domain Group to Local Administrators~~~Successfully Added Domain Group HEIDOMAIN//ITPcSupport to local administrators.!!!Failed to Add Domain Group to Local Administrators~~~Failed to add Domain Group HEIDOMAIN//ITPcSupport to local administrators for %COMPUTERNAME%. 
+'Failed to Add Domain Group to Local Administrators~~~Successfully Added Domain Group HEIDOMAIN\ITPcSupport to local administrators.!!!Failed to Add Domain Group to Local Administrators~~~Failed to add Domain Group HEIDOMAIN\ITPcSupport to local administrators for %COMPUTERNAME%. 
 Reason: %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '604800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$Admin = Net localGroup Administrators; if ( !($Admin -match /'HEIDOMAIN.ITPcSupport/') ) {net localgroup administrators HEIDOMAIN//ITPcSupport /Add /y} else {return /'The command completed successfully./'}\"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$Admin = Net localGroup Administrators; if ( !($Admin -match /'HEIDOMAIN.ITPcSupport/') ) {net localgroup administrators HEIDOMAIN\ITPcSupport /Add /y} else {return /'The command completed successfully./'}\"' as `DataOut`,
 '10' as `Comparor`,
 'The command completed successfully.' as `DataIn`,
 '' as `IDField`,
@@ -173,6 +173,5 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
-
 
 

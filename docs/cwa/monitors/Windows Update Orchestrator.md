@@ -26,7 +26,7 @@ INSERT INTO `SensorChecks` (
 )
 SELECT
     'Update Orchestrator - UsoSvc' AS `Name`,
-    'SELECT //r//n   computers.computerid as `Computer Id`,//r//n   computers.name as `Computer Name`,//r//n   clients.name as `Client Name`,//r//n   computers.domain as `Computer Domain`,//r//n   computers.username as `Computer User`,//r//n   Services.Name as `Computer.Services.Name`//r//nFROM Computers //r//nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)//r//nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)//r//nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)//r//nLEFT JOIN Services ON (services.ComputerId = Computers.ComputerId)//r//n WHERE //r//n((Services.Name = //'UsoSvc//'))//r//n' AS `SQL`,
+    'SELECT \r\n   computers.computerid as `Computer Id`,\r\n   computers.name as `Computer Name`,\r\n   clients.name as `Client Name`,\r\n   computers.domain as `Computer Domain`,\r\n   computers.username as `Computer User`,\r\n   Services.Name as `Computer.Services.Name`\r\nFROM Computers \r\nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)\r\nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)\r\nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)\r\nLEFT JOIN Services ON (services.ComputerId = Computers.ComputerId)\r\n WHERE \r\n((Services.Name = \'UsoSvc\'))\r\n' AS `SQL`,
     '4' AS `QueryType`,
     'Select||=||=||=|^Select|||||||^' AS `ListData`,
     '0' AS `FolderID`,
@@ -68,12 +68,12 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Update Orchestrator - Reboot Prevention [Change]' as `Name`,
 '6' as `CheckAction`,
 '0' as `AlertAction`,
-'Windows update Orchestrator Monitor - Failed - %ComputerName%~~~Successfully renamed the reboot file.!!!Windows update Orchestrator Monitor - Failed - %ComputerName%~~~The reboot file at "C://Windows//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.' as `AlertMessage`,
+'Windows update Orchestrator Monitor - Failed - %ComputerName%~~~Successfully renamed the reboot file.!!!Windows update Orchestrator Monitor - Failed - %ComputerName%~~~The reboot file at "C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.' as `AlertMessage`,
 '0' as `ContactID`,
 '600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = //'None//'; if (( Get-Service -Name //'UsoSvc//' ).StartType -ne //'Automatic//' ) { Set-Service -Name //'UsoSvc//' -StartupType //'Automatic//'}; $RebootPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot////\"; $BakPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak////\"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return //'Failed to rename the reboot file//'}}"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = \'None\'; if (( Get-Service -Name \'UsoSvc\' ).StartType -ne \'Automatic\' ) { Set-Service -Name \'UsoSvc\' -StartupType \'Automatic\'}; $RebootPath = \\\"$env:windir\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot\\\"; $BakPath = \\\"$env:windir\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot.bak\\\"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return \'Failed to rename the reboot file\'}}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed to rename the reboot file' as `DataIn`,
 '' as `IDField`,
@@ -152,12 +152,12 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Windows Update Orchestrator' as `Name`,
 '6' as `CheckAction`,
 '3' as `AlertAction`,
-'Windows update Orchestrator Monitor - Failed - %ComputerName%~~~Successfully renamed the reboot file.!!!Windows update Orchestrator Monitor - Failed - %ComputerName%~~~The reboot file at "C://Windows//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.' as `AlertMessage`,
+'Windows update Orchestrator Monitor - Failed - %ComputerName%~~~Successfully renamed the reboot file.!!!Windows update Orchestrator Monitor - Failed - %ComputerName%~~~The reboot file at "C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot" failed to be renamed. The update orchestrator uses this file; it should either be deleted or renamed to prevent the update orchestrator from restarting the computer at any moment.' as `AlertMessage`,
 '0' as `ContactID`,
 '600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = //'None//'; if (( Get-Service -Name //'UsoSvc//' ).StartType -ne //'Automatic//' ) { Set-Service -Name //'UsoSvc//' -StartupType //'Automatic//'}; $RebootPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot////\"; $BakPath = ////\"$env:windir//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak////\"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return //'Failed to rename the reboot file//'}}"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ConfirmPreference = \'None\'; if (( Get-Service -Name \'UsoSvc\' ).StartType -ne \'Automatic\' ) { Set-Service -Name \'UsoSvc\' -StartupType \'Automatic\'}; $RebootPath = \\\"$env:windir\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot\\\"; $BakPath = \\\"$env:windir\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot.bak\\\"; if (Test-Path $RebootPath) {Remove-Item -Path $BakPath -Force -ErrorAction SilentlyContinue; try {Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False -ErrorAction Stop; }catch{return \'Failed to rename the reboot file\'}}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed to rename the reboot file' as `DataIn`,
 '' as `IDField`,
@@ -229,7 +229,6 @@ The monitor will come up with the search `Update Orchestrator - UsoSvc` added to
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
 
 
 

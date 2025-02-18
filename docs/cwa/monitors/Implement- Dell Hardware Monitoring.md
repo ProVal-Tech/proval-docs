@@ -43,7 +43,7 @@ WHERE
 'READONLY' as `ListData`,
 '1' as `FolderID`,
 '9185ef1d-4eee-4430-8b72-f086f8849eb8' as `GUID`,
-'\\<LabTechAbstractSearch>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.Hardware.Manufacturer\\</lon>\\<lok>Computer.Hardware.Manufacturer\\</lok>\\<lmo>Contains\\</lmo>\\<dv>Dell\\</dv>\\<dk>Dell\\</dk>\\</asn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.OS.IsServer\\</lon>\\<lok>Computer.OS.IsServer\\</lok>\\<lmo>IsTrue\\</lmo>\\<dv>NULL\\</dv>\\<dk>NULL\\</dk>\\</asn>\\</cn>\\</asn>\\</cn>\\</asn>\\</LabTechAbstractSearch>' as `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Hardware.Manufacturer</lon><lok>Computer.Hardware.Manufacturer</lok><lmo>Contains</lmo><dv>Dell</dv><dk>Dell</dk></asn><asn><st>ComparisonNode</st><lon>Computer.OS.IsServer</lon><lok>Computer.OS.IsServer</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
@@ -65,14 +65,14 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Dell Hardware Monitoring' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Dell OMSA Alert for: %CLIENTNAME%//%COMPUTERNAME%~~~No Dell Hardware alerts were detected in the last 60 minutes.!!!Dell OMSA Alert for: %CLIENTNAME%//%COMPUTERNAME%~~~Dell Open Manage has detected an issue with %Computername% at %clientname%. The message details are outlined below: %RESULT%' as `AlertMessage`,
+'Dell OMSA Alert for: %CLIENTNAME%\%COMPUTERNAME%~~~No Dell Hardware alerts were detected in the last 60 minutes.!!!Dell OMSA Alert for: %CLIENTNAME%\%COMPUTERNAME%~~~Dell Open Manage has detected an issue with %Computername% at %clientname%. The message details are outlined below: %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}\"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}\"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
+'10|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))|11|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))%7C(^((\r\n){0,}[\r\n]{0,}\s{0,})Occurrences)|10|^((\r\n){0,}[\r\n]{0,}\s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -149,14 +149,14 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Dell Hardware Monitoring' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Dell OMSA Alert for: %CLIENTNAME%//%COMPUTERNAME%~~~No Dell Hardware alerts were detected in the last 60 minutes.!!!Dell OMSA Alert for: %CLIENTNAME%//%COMPUTERNAME%~~~Dell Open Manage has detected an issue with %Computername% at %clientname%. The message details are outlined below: %RESULT%' as `AlertMessage`,
+'Dell OMSA Alert for: %CLIENTNAME%\%COMPUTERNAME%~~~No Dell Hardware alerts were detected in the last 60 minutes.!!!Dell OMSA Alert for: %CLIENTNAME%\%COMPUTERNAME%~~~Dell Open Manage has detected an issue with %Computername% at %clientname%. The message details are outlined below: %RESULT%' as `AlertMessage`,
 '0' as `ContactID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}\"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $startTime = (Get-Date).AddMinutes(-60); $excludeMessages=/'The controller write policy has been changed to Write Through|certified drive|SAS management and monitoring is not possible|older than the required .* version/'; $provider = /'Server Administrator/'; Get-WinEvent -FilterHashTable @{Logname = /'Application/',/'System/'; StartTime = $StartTime; Level = 1,2,3 } | Where-Object { $_.ProviderName -eq $Provider -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}\"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Occurrences' as `DataIn`,
+'10|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))|11|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))%7C(^((\r\n){0,}[\r\n]{0,}\s{0,})Occurrences)|10|^((\r\n){0,}[\r\n]{0,}\s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -225,6 +225,4 @@ Limit to: `Computers - Dell Servers`
 
 ### 8. Set Alert Template
 Set the appropriate alert template.
-
-
 

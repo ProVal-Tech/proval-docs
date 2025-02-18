@@ -60,12 +60,12 @@ Service Plans. Windows Servers. Server Roles. Windows Servers Core Services. Win
 **%RESULT%:**  
 
 ```
-scopeid    : \<scopeid\>
-startrange : \<startrange\>
-endrange   : \<endrange\>
-free       : \<free ip addresses\>
-inuse      : \<ip addresses in use\>
-Reserved   : \<reserved ip addresses\>
+scopeid    : <scopeid>
+startrange : <startrange>
+endrange   : <endrange>
+free       : <free ip addresses>
+inuse      : <ip addresses in use>
+Reserved   : <reserved ip addresses>
 ```
 
 **Example:**  
@@ -93,6 +93,5 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 5 IP Addresses Available](<./DHCP Scope(s)  5 IP Addresses Available.md>).
-
 
 

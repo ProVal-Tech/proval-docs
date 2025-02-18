@@ -89,7 +89,7 @@ Paste the following PowerShell script and set the `Expected time of script execu
 ```
 #region parameters
 $Title = '@Title@'
-if ( [String]::IsNullOrWhiteSpace($Title) -or $Title -match '//STitle//S' ) {
+if ( [String]::IsNullOrWhiteSpace($Title) -or $Title -match '\STitle\S' ) {
     throw 'Title is a mandatory parameter.'
 }
 $Parameters = @{
@@ -174,6 +174,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

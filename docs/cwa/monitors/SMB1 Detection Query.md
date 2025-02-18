@@ -228,12 +228,12 @@ SELECT '' as `AgentID`,
 'ProVal - Production - SMB1 Detection' as `Name`,
 '6' as `CheckAction`,
 @alertaction as `AlertAction`,
-'[No Alerting]~~~%STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!![No Alerting]~~~%STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'[No Alerting]~~~%STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!![No Alerting]~~~%STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '7200' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -nologo -noprofile -Command "$ErroractionPreference= /'SilentlyContinue/';  $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; /"$($ver.Major).$($ver.Minor)/"; if($ver -ge [version]/'6.3/') {if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne /'True/') {return /'False/'} else {return /'True/'} } else { $s =  (Get-Item HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  if ( ( -not $s ) -or ( $s -contains 1 )) {return /'True/'} else {return /'False/'} }"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -nologo -noprofile -Command "$ErroractionPreference= /'SilentlyContinue/';  $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; /"$($ver.Major).$($ver.Minor)/"; if($ver -ge [version]/'6.3/') {if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne /'True/') {return /'False/'} else {return /'True/'} } else { $s =  (Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  if ( ( -not $s ) -or ( $s -contains 1 )) {return /'True/'} else {return /'False/'} }"' as `DataOut`,
 '9' as `Comparor`,
 'True' as `DataIn`,
 '' as `IDField`,
@@ -293,6 +293,5 @@ Locate your remote monitor by opening the group(s) remote monitors tab.
 ![Remote Monitor](../../../static/img/SMB1-Detection-Query/image_1.png)
 
 Please validate that the Alert Template is properly set to "`Default - Do Nothing`".
-
 
 

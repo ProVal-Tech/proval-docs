@@ -19,8 +19,8 @@ Logs a specified user(s) out of the system.
 Uses `Get-Process` to check if a provided username or matching regex string is logged into the system, then logs out that user.
 
 ```powershell
-C:\> Invoke-UserLogout.ps1 -user john.doe
-C:\> Invoke-UserLogout.ps1 -regex '^PROVAL\\'  # Logs out members of the PROVAL domain
+C:> Invoke-UserLogout.ps1 -user john.doe
+C:> Invoke-UserLogout.ps1 -regex '^PROVAL\\'  # Logs out members of the PROVAL domain
 ```
 
 ## Parameters
@@ -35,6 +35,5 @@ Location of output for log, result, and error files.
 - `.\Invoke-UserLogout-log.txt`
 - `.\Invoke-UserLogout-data.txt`
 - `.\Invoke-UserLogout-error.txt`
-
 
 

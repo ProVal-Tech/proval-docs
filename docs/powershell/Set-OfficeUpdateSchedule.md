@@ -19,11 +19,11 @@ Office 365 (C2R) Version 16.x installed on the endpoint.
 Sets the registry key `HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\UpdateChannel` to the [Microsoft-provided](https://learn.microsoft.com/en-us/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) URI for the selected channel.
 
 ```powershell
-PS C:\> Set-OfficeUpdateSchedule.ps1
+PS C:> Set-OfficeUpdateSchedule.ps1
 Sets the update schedule to 'Current Channel'
 ```
 ```powershell
-PS C:\> Set-OfficeUpdateSchedule.ps1 -Channel 'Current Channel (Preview)'
+PS C:> Set-OfficeUpdateSchedule.ps1 -Channel 'Current Channel (Preview)'
 Sets the update schedule to 'Current Channel (Preview)'
 ```
 
@@ -35,6 +35,5 @@ Sets the update schedule to 'Current Channel (Preview)'
 ## Output
 - `.\Set-OfficeUpdateSchedule-log.txt`
 - `.\Set-OfficeUpdateSchedule-error.txt`
-
 
 

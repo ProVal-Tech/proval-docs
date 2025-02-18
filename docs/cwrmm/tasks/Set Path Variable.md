@@ -93,7 +93,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```
 #region parameters
 $Path = "@Path@"
-if ($path -match '://') {
+if ($path -match ':\') {
     $Path = $($Path -split ',').Trim()
 } else {
     throw 'Invalid path.'
@@ -180,6 +180,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

@@ -32,7 +32,7 @@ SELECT '' as `AgentID`,
 '604800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { foreach ($U in $US) {cmd.exe /c $U /S /V /qn }; $US = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { return /'Failed to remove VLC./' } else {return /'Successfully removed VLC./'}} else {return /'VLC player is not installed./'}\"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { foreach ($U in $US) {cmd.exe /c $U /S /V /qn }; $US = (Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { return /'Failed to remove VLC./' } else {return /'Successfully removed VLC./'}} else {return /'VLC player is not installed./'}\"' as `DataOut`,
 '9' as `Comparor`,
 'Failed to remove VLC' as `DataIn`,
 '' as `IDField`,
@@ -104,7 +104,7 @@ SELECT '' as `AgentID`,
 '604800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { foreach ($U in $US) {cmd.exe /c $U /S /V /qn }; $US = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { return /'Failed to remove VLC./' } else {return /'Successfully removed VLC./'}} else {return /'VLC player is not installed./'}\"' as `DataOut`,
+'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { foreach ($U in $US) {cmd.exe /c $U /S /V /qn }; $US = (Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match /'VLC Media Player/' }).UninstallString; if($US) { return /'Failed to remove VLC./' } else {return /'Successfully removed VLC./'}} else {return /'VLC player is not installed./'}\"' as `DataOut`,
 '9' as `Comparor`,
 'Failed to remove VLC' as `DataIn`,
 '' as `IDField`,
@@ -165,6 +165,5 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
-
 
 

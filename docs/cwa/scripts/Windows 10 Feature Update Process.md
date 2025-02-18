@@ -36,8 +36,8 @@ The payload of this script is a ZIP file that contains the contents of the ISO f
 $zipURL = "https://your.url.here/path/to/file/1909.zip"
 [byte[]]$targetHash = "146,151,139,92,58,82,93,198,226,27,177,213,41,217,199,194" -split ','
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-$dir = "C://temp"
-$zip = "$($dir)//1909.zip"
+$dir = "C:\temp"
+$zip = "$($dir)\1909.zip"
 mkdir -Path $dir -ErrorAction SilentlyContinue
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($zipURL, $zip)
@@ -63,8 +63,8 @@ if (-not $(Test-Path -Path $zip)) {
 $zipURL = "https://your.url.here/path/to/file/2004.zip"
 [byte[]]$targetHash = "50,89,227,156,100,0,144,217,240,87,169,198,11,8,195,245" -split ','
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-$dir = "C://temp"
-$zip = "$($dir)//2004.zip"
+$dir = "C:\temp"
+$zip = "$($dir)\2004.zip"
 mkdir -Path $dir -ErrorAction SilentlyContinue
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($zipURL, $zip)
@@ -139,12 +139,11 @@ The step-by-step process of this script is as follows:
 ## Hash Creation Process
 
 ```powershell
-$zip = "C://path//to//zipfile.zip"
+$zip = "C:\path\to\zipfile.zip"
 $md5 = [System.Security.Cryptography.MD5]::Create()
 $fileStream = [System.IO.File]::OpenRead($zip)
 $hash = $md5.ComputeHash($fileStream)
 $hash -join ','
 ```
-
 
 

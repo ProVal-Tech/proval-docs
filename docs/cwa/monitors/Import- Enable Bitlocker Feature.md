@@ -24,14 +24,14 @@ INSERT INTO groupagents
   'ProVal - Production - Enable Bitlocker Feature' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  '%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+  '%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
   '0' as `ContactID`,
   '21600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}\"' as `DataOut`,
+  'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}\"' as `DataOut`,
   '16' as `Comparor`,
-  '10|^(()%7C %7C(OK)%7C(//r//n))$|11|^(()%7C %7C(OK)%7C(//r//n))$%7C(Failed)|10|Failed' as `DataIn`,
+  '10|^(()%7C %7C(OK)%7C(\r\n))$|11|^(()%7C %7C(OK)%7C(\r\n))$%7C(Failed)|10|Failed' as `DataIn`,
   '' as `IDField`,
   '1' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -95,14 +95,14 @@ INSERT INTO groupagents
   'ProVal - Production - Enable Bitlocker Feature' as `Name`,
   '6' as `CheckAction`,
   '1' as `AlertAction`,
-  '%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+  '%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
   '0' as `ContactID`,
   '21600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}\"' as `DataOut`,
+  'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$RS=/'RSAT-Feature-Tools-BitLocker/',/'RSAT-Feature-Tools-BitLocker-RemoteAdminTool/',/'RSAT-Feature-Tools-BitLocker-BdeAducExt/';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne /'Installed/') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return /'Failed/'}}}\"' as `DataOut`,
   '16' as `Comparor`,
-  '10|^(()%7C %7C(OK)%7C(//r//n))$|11|^(()%7C %7C(OK)%7C(//r//n))$%7C(Failed)|10|Failed' as `DataIn`,
+  '10|^(()%7C %7C(OK)%7C(\r\n))$|11|^(()%7C %7C(OK)%7C(\r\n))$%7C(Failed)|10|Failed' as `DataIn`,
   '' as `IDField`,
   '1' as `AlertStyle`,
   '0' as `ScriptID`,
@@ -161,6 +161,5 @@ Now execute your query from a RAWSQL monitor set.
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
-
 
 

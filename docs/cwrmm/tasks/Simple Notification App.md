@@ -154,7 +154,7 @@ if ( '@Message@' -match 'ENTER YOUR VALUE HERE') {
 
 if ( '@Email@' -match 'ENTER YOUR VALUE HERE') {
    $Email = ''
-} elseif ('@Email@' -notmatch '.+@.+//..+') {
+} elseif ('@Email@' -notmatch '.+@.+\..+') {
    $Email = ''
 } else {
    $Email = '@Email@'
@@ -171,7 +171,7 @@ if ( '@Phone@' -match 'ENTER YOUR VALUE HERE') {
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $URL = 'https://github.com/ProVal-Tech/SimpleNotification/releases/latest/download/SimpleNotification.exe'
-$WorkingDirectory = 'C://ProgramData//_automation//script//SimpleNotification'
+$WorkingDirectory = 'C:\ProgramData\_automation\script\SimpleNotification'
 $EXEPath = Join-Path -Path $WorkingDirectory -ChildPath 'SimpleNotification.exe'
 $ConfigFile = Join-Path -Path $WorkingDirectory -ChildPath 'config.toml'
 
@@ -389,6 +389,5 @@ Click the `Run` button to initiate the schedule.
 ## Output
 
 - Script log
-
 
 

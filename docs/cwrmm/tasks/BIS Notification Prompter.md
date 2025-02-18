@@ -69,8 +69,8 @@ Paste in the following PowerShell script and leave the expected time of script e
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 #region Setup - Variables
 $URL = 'https://file.provaltech.com/repo/app/BISNotification.exe'
-$WorkingDirectory = 'C://ProgramData//_automation//app//BISNotification'
-$EXEPath = "$WorkingDirectory//BISNotification.exe"
+$WorkingDirectory = 'C:\ProgramData\_automation\app\BISNotification'
+$EXEPath = "$WorkingDirectory\BISNotification.exe"
 #endregion
 
 #region Setup - Folder Structure
@@ -112,8 +112,8 @@ if ($Phone -match '[0-9]') {
 $TaskName = 'BIS Notification'
 $Description = 'Running BIS Notification app to send the prompt'
 $ProjectName = 'BISNotification'
-$WorkingDirectory = "C://ProgramData//_automation//app//$ProjectName"
-$TaskFile = "$WorkingDirectory//$ProjectName.exe"
+$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
+$TaskFile = "$WorkingDirectory\$ProjectName.exe"
 $TaskCheck = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
 
 if ($TaskCheck) {
@@ -214,6 +214,5 @@ This task can be scheduled manually on-demand to any agent or to a certain group
   Navigate to the right side of the screen and click on the three bars as shown below:  
   ![Three Bars](../../../static/img/BIS-Notification-Prompter/image_33.png)  
   ![Three Bars Step 2](../../../static/img/BIS-Notification-Prompter/image_34.png)  
-
 
 

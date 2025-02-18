@@ -16,7 +16,7 @@ This is an advanced version of DCDiag. It offers all the options available with 
 Must be run on a domain controller.
 
 ```powershell
-.\Get-DCDiagReport.ps1 [ [-n \<NamingContext> -Skip \<TestName>,\<TestName>,...] | [-test \<TestName>,\<TestName>,...] | [-c -Skip \<TestName>,\<TestName>,...] ] [-a] [-i] [-e] [q] [s] [-Fix] [-BaseName \<LogFileName> [-ReportPath \<System.IO.Directory>] [-CSV -XML -HTML -JSON ]]
+.\Get-DCDiagReport.ps1 [ [-n <NamingContext> -Skip <TestName>,<TestName>,...] | [-test <TestName>,<TestName>,...] | [-c -Skip <TestName>,<TestName>,...] ] [-a] [-i] [-e] [q] [s] [-Fix] [-BaseName <LogFileName> [-ReportPath <System.IO.Directory>] [-CSV -XML -HTML -JSON ]]
 ```
 
 ## Parameters
@@ -42,8 +42,7 @@ Must be run on a domain controller.
 ```
 .\Get-DCDiagReport-log.txt
 .\Get-DCDiagReport-error.txt
-\<Specified Log File Path and fileName>
+<Specified Log File Path and fileName>
 ```
-
 
 

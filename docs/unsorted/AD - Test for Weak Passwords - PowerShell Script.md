@@ -259,10 +259,10 @@ else {
 $Domain = (Get-ADDomain).DistinguishedName
 $PasswordReport = Get-ADReplAccount -All -Server $DC -NamingContext $Domain | Test-PasswordQuality -WeakPasswordsFile "$DictFileLoc/$txtfilename"
 $stringArrayDuplicatePW = $PasswordReport.DuplicatePasswordGroups | % {$_}
-$stringArrayDuplicatePW = $stringArrayDuplicatePW.Replace((Get-ADDomain).NetBIOSName, '').Replace('//', '')
+$stringArrayDuplicatePW = $stringArrayDuplicatePW.Replace((Get-ADDomain).NetBIOSName, '').Replace('\', '')
 $FinalStringDuplicatePW = $stringArrayDuplicatePW -join ','
 $stringArrayWeakPW = $PasswordReport.WeakPassword | % {$_}
-$stringArrayWeakPW = $stringArrayWeakPW.Replace((Get-ADDomain).NetBIOSName, '').Replace('//', '')
+$stringArrayWeakPW = $stringArrayWeakPW.Replace((Get-ADDomain).NetBIOSName, '').Replace('\', '')
 $FinalStringWeakPW = $stringArrayWeakPW -join ','
 
 # Get Formatted Duplicate Password List
@@ -273,7 +273,7 @@ $PasswordReport.DuplicatePasswordGroups | % {
     $_ | % {$outstring += "`t$($_)`n"}
     $counter++
 }
-$FormattedDuplicatePW = $outstring.Replace((Get-ADDomain).NetBIOSName, '').Replace('//', '')
+$FormattedDuplicatePW = $outstring.Replace((Get-ADDomain).NetBIOSName, '').Replace('\', '')
 
 # Write-Host "(Duplicate Password Groups: $StringArrayDuplicatePW, Weak Passwords Reported: $StringArrayWeakPW)"
 
@@ -332,4 +332,3 @@ Write-Host "$ReversibleEncryptionEnabled, $InteractiveLogonMsg, '$FinalStringDup
 | Kaseya               | Attached to Doc - Move wherever is recommended  |
 ## Attachments
 [TestADPasswords.ps1](<../../static/attachments/itg/9492883/TestADPasswords.ps1>)
-

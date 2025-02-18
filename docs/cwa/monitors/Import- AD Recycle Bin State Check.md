@@ -34,7 +34,7 @@ From Computers, Clients
 Where Computers.ClientID = Clients.ClientID
  and ((Computers.ComputerID in (SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=/'AD Infrastructure Master/') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))))' AS `SQL`, 
     '4' AS `QueryType`, 
-    'Computer ID||\\\\<=|*(SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=/'AD Infrastructure Master/') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))|=||=|^Select|||||||^' AS `ListDATA`, 
+    'Computer ID||<=|*(SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=/'AD Infrastructure Master/') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))|=||=|^Select|||||||^' AS `ListDATA`, 
     '0' AS `FolderID`,
     'a903f855-1c5d-4ac2-9b56-35ff1b189f9c' AS `GUID`
 FROM
@@ -61,6 +61,3 @@ SELECT
     '6' as `CheckAction`,
     @Alertaction as `AlertAction`,
     '[
-
-
-

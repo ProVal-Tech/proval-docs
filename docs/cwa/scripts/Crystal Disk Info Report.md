@@ -92,41 +92,41 @@ The primary usage of the script is to be executed by the [EPM - Disk - Internal 
 **Ticket Body:**
 
 ```
-Crystal Disk Info solution detected \\<Number of Unhealthy Disks> unhealthy disk(s) on \\<ComputerName>. Please investigate the disk health for further analysis. The Crystal Disk Info solution has detected that the disk's health status is not in a good or healthy state. This indicates potential issues with the disk's performance or reliability.
+Crystal Disk Info solution detected <Number of Unhealthy Disks> unhealthy disk(s) on <ComputerName>. Please investigate the disk health for further analysis. The Crystal Disk Info solution has detected that the disk's health status is not in a good or healthy state. This indicates potential issues with the disk's performance or reliability.
 It is recommended to perform a thorough examination of the disk to identify any underlying problems and take appropriate actions. This may involve running diagnostic tests, checking for disk errors, or considering backup and replacement options if necessary.
 Please prioritize this ticket and provide the necessary support to address the disk health concerns.
 ```
 
 ```
 Disk(s) information returned by the tool are outlined below (Please refer to the ticket's internal notes for further details):
-Model: \\<Disk 1 Model>
-Serial Number: \\<Disk 1 Serial Number>
-Disk Size: \\<Disk 1 Size>
-Health Status: \\<Disk 1 Health Status>
-Drive Letter: \\<Disk 1 Drive Letter(s)>
+Model: <Disk 1 Model>
+Serial Number: <Disk 1 Serial Number>
+Disk Size: <Disk 1 Size>
+Health Status: <Disk 1 Health Status>
+Drive Letter: <Disk 1 Drive Letter(s)>
 
-Model: \\<Disk 2 Model>
-Serial Number: \\<Disk 2 Serial Number>
-Disk Size: \\<Disk 2 Size>
-Health Status: \\<Disk 2 Health Status>
-Drive Letter: \\<Disk 2 Drive Letter(s)>
+Model: <Disk 2 Model>
+Serial Number: <Disk 2 Serial Number>
+Disk Size: <Disk 2 Size>
+Health Status: <Disk 2 Health Status>
+Drive Letter: <Disk 2 Drive Letter(s)>
 
-Model: \\<Disk n Model>
-Serial Number: \\<Disk n Serial Number>
-Disk Size: \\<Disk 3 Size>
-Health Status: \\<Disk n Health Status>
-Drive Letter: \\<Disk n Drive Letter(s)>
+Model: <Disk n Model>
+Serial Number: <Disk n Serial Number>
+Disk Size: <Disk 3 Size>
+Health Status: <Disk n Health Status>
+Drive Letter: <Disk n Drive Letter(s)>
 
-\\<File Upload Comment>
+<File Upload Comment>
 ```
 
 The computer information is outlined below:
 ```
-Name: \\<Computer Name>
-Last Login: \\<Logged In User>
-Model: \\<Computer Model>
-OS: \\<Operating System>
-Serial Number: \\<Serial Number>
+Name: <Computer Name>
+Last Login: <Logged In User>
+Model: <Computer Model>
+OS: <Operating System>
+Serial Number: <Serial Number>
 ```
 
 Refer to the troubleshooting guide at [https://proval.itglue.com/5078775/docs/14394330](https://proval.itglue.com/5078775/docs/14394330).  
@@ -144,7 +144,7 @@ Comment to add to the internal notes if the script fails to find the file:
 ```
 PowerShell Script failed to generate the Crystal Disk Info report.  
 The result returned by the script is:  
-\\<PsOut>
+<PsOut>
 ```
 
 If the script finds and uploads the file:  
@@ -155,30 +155,30 @@ Crystal Disk Info tool generated a brief disk health report which is attached to
 
 The following information for each drive not showing **Good** status will be added to the ticket's internal note/comment:  
 ```
-ID: \\<DiskID>
-Model: \\<Disk Model>
-Firmware: \\<Disk Firmware>
-Serial Number: \\<Disk Serial Number>
-Disk Size: \\<Disk Size>
-Buffer Size: \\<Buffer Size>
-Queue Depth: \\<Queue Depth>
-# of Sectors: \\<Number of Sectors>
-Rotation Rate: \\<Rotation Rate>
-Interface: \\<Interface>
-Major Version: \\<Major version>
-Minor Version: \\<Minor Version>
-Transfer Mode: \\<Transfer Mode>
-Power On Hours: \\<Power On Hours>
-Power On Count: \\<Power On Count>
-Host Reads: \\<Host Reads>
-Host Writes: \\<Host Writes>
-Wear Level Count: \\<Wear Level Count>
-Temperature: \\<Disk Temperature>
-Health Status: \\<Health Status>
-Features: \\<Disk Features>
-APM Level: \\<Disk APM Level>
-AAM Level: \\<Disk AAM Level>
-Drive Letter: \\<Drive Letter(s)>
+ID: <DiskID>
+Model: <Disk Model>
+Firmware: <Disk Firmware>
+Serial Number: <Disk Serial Number>
+Disk Size: <Disk Size>
+Buffer Size: <Buffer Size>
+Queue Depth: <Queue Depth>
+# of Sectors: <Number of Sectors>
+Rotation Rate: <Rotation Rate>
+Interface: <Interface>
+Major Version: <Major version>
+Minor Version: <Minor Version>
+Transfer Mode: <Transfer Mode>
+Power On Hours: <Power On Hours>
+Power On Count: <Power On Count>
+Host Reads: <Host Reads>
+Host Writes: <Host Writes>
+Wear Level Count: <Wear Level Count>
+Temperature: <Disk Temperature>
+Health Status: <Health Status>
+Features: <Disk Features>
+APM Level: <Disk APM Level>
+AAM Level: <Disk AAM Level>
+Drive Letter: <Drive Letter(s)>
 ```
 
 Additional internal notes:  
@@ -204,7 +204,5 @@ Attached **`DiskInfo.txt`** File:
 
 e.g.,  
 ![Example Exclusion](../../../static/img/Crystal-Disk-Info-Report/image_7.png)
-
-
 
 

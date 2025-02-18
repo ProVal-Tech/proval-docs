@@ -99,7 +99,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 $xmlPath = '@XMLPath@'
 $restart = '@Restart@'
 $Parameters = @{}
-if ( $xmlPath -match '(:////)|(:////)' ) {
+if ( $xmlPath -match '(:\\)|(:\\)' ) {
     $Parameters.Add('xmlPath', $xmlPath)
 }
 if ($restart -match '1|Yes|True') {
@@ -178,6 +178,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

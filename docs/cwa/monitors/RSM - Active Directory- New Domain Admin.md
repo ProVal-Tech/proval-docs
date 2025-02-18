@@ -51,13 +51,11 @@ Please follow the instructions provided in the implementation article to impleme
 **Body:**  
 ```
 New Domain Admin(s) Detected at %domain% for %clientname%.
-\\<Newly Created Domain Admin(s)>
+<Newly Created Domain Admin(s)>
 ```
 
 **Example:**  
 ![Example](../../../static/img/RSM---Active-Directory--New-Domain-Admin/image_4.png)
 
 **Automate will never close the ticket; instead, it will keep adding new detections to the same ticket as a comment/note unless the ticket is closed/resolved manually.**
-
-
 

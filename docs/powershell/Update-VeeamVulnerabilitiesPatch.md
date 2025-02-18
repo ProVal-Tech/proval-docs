@@ -21,7 +21,7 @@ Follows guidelines from [Veeam Help Center](https://helpcenter.veeam.com/docs/ba
 Uses the `Veeam.Backup.Powershell` module to check jobs and restores before, and recover their state after, the installation.
 
 ```powershell
-C:\> .\Update-VeeamVulnerabilitiesPatch.ps1
+C:> .\Update-VeeamVulnerabilitiesPatch.ps1
 ```
 
 ## Output
@@ -30,6 +30,5 @@ Location of output for log, result, and error files:
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-log.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-error.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-patchlog.txt`
-
 
 

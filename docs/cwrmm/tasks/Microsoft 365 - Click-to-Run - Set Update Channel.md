@@ -173,7 +173,7 @@ Function Set-M365UpdateChannel {
         default { '492350f6-3a01-4f97-b9c0-c7c6ddf67d60' }
     }
 
-    $path = 'HKLM://SOFTWARE//Microsoft//Office//ClickToRun//Configuration'
+    $path = 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration'
     $Strings = @('CDNBaseUrl', 'UpdateChannel', 'UnmanagedUpdateUrl')
     $url = "http://officecdn.microsoft.com/pr/$guid"
 
@@ -214,7 +214,6 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 
 

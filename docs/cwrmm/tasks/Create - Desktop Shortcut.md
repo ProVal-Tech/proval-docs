@@ -137,7 +137,7 @@ $ShortcutName = '@ShortcutName@'
 $IconLocation = '@IconLocation@'
 $Parameters = @\{}
 
-if (($IconLocation -match '//.ico$')) \{
+if (($IconLocation -match '\.ico$')) \{
     $Parameters['IconLocation'] = $IconLocation
 }
 
@@ -154,11 +154,11 @@ $ProjectName = 'New-DesktopUriShortcut'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
-$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -230,7 +230,6 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
-
 
 
 
