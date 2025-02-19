@@ -8,8 +8,11 @@ Write-Information $Path
 $content = Get-Content -Path $Path
 $codeBlockRegex = [regex]::new('^```')
 $dfsRegex = [regex]::new("(?<!https?:)//")
-$lteRegex = [regex]::new("\\<")
-$gteRegex = [regex]::new("\\>")
+$lteRegex = [regex]::new("\\+<")
+$gteRegex = [regex]::new("\\+>")
+$sqeRegex = [regex]::new("/'")
+$comRegex = [regex]::new('-command ?\\"')
+$dqsqRegex = [regex]::new("\\`" ?'")
 
 if(-not ($content | Where-Object { $codeBlockRegex.IsMatch($_) })) {
     Write-Information "No code blocks found in file"
@@ -26,9 +29,12 @@ for ($i = 0; $i -lt $content.Length; $i++) {
     }
 
     if ($inCodeBlock -eq $true) {
-        $newLine = $dfsRegex.Replace($line, "\")
+        $newLine = $dfsRegex.Replace($line, "\\")
         $newLine = $lteRegex.Replace($newLine, "<")
         $newLine = $gteRegex.Replace($newLine, ">")
+        $newLine = $sqeRegex.Replace($newLine, "\'")
+        $newLine = $comRegex.Replace($newLine, '-command "')
+        $newLine = $dqsqRegex.Replace($newLine, "`"'")
         if($newLine -ne $line) {
             $changed = $true
             $content[$i] = $newLine
