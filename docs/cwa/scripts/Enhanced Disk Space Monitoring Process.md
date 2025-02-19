@@ -106,30 +106,30 @@ After importing the script, it should either be debugged or run against any comp
 **Ticket Body:**
 
 ```
-The <DriveLetter> Drive on <ComputerName> found at <ClientName>/<LocationName> is reporting that it has low drive space. The current threshold for this machine is set to <Threshold> of free space (<Drive Size Range>). The current drive free space is at <FreeSpaceGB>/<DriveSizeGB>.
+The \<DriveLetter> Drive on \<ComputerName> found at \<ClientName>/\<LocationName> is reporting that it has low drive space. The current threshold for this machine is set to \<Threshold> of free space (\<Drive Size Range>). The current drive free space is at \<FreeSpaceGB>/\<DriveSizeGB>.
 #The next line will be added for the virtual machines only.
 Since this machine appears to be a virtual machine, the drive may need to be expanded if nothing can be cleaned up.
-<SojiComment>
+\<SojiComment>
 Detailed Drive Information has been listed below:
-Letter: <DriveLetter>
-Make/Model: <DiskModel>
-Type: <Disk Type>
-Usage Data: <FreeSpaceGB>/<DriveSizeGB>
+Letter: \<DriveLetter>
+Make/Model: \<DiskModel>
+Type: \<Disk Type>
+Usage Data: \<FreeSpaceGB>/\<DriveSizeGB>
 
 Historical Data (Free Drive Space):
-One day ago: <FreeSpaceGB>
-Two days ago: <FreeSpaceGB>
-One week ago: <FreeSpaceGB>
-Two weeks ago: <FreeSpaceGB>
-One month ago: <FreeSpaceGB>
-Two months ago: <FreeSpaceGB>
+One day ago: \<FreeSpaceGB>
+Two days ago: \<FreeSpaceGB>
+One week ago: \<FreeSpaceGB>
+Two weeks ago: \<FreeSpaceGB>
+One month ago: \<FreeSpaceGB>
+Two months ago: \<FreeSpaceGB>
 
 The computer information is outlined below:
-Name: <ComputerName>
-Last Login: <LastLoggedInUser>
-Model: <ComputerMode>
-OS: <OperatingSystem>
-Serial Number: <SerialNumber>
+Name: \<ComputerName>
+Last Login: \<LastLoggedInUser>
+Model: \<ComputerMode>
+OS: \<OperatingSystem>
+Serial Number: \<SerialNumber>
 ```
 
 **\<SojiComment> can be different and it depends on the results returned by the disk cleanup script [EPM - Disk - Automate - Script - Soji - Disk Space Management](<./Soji - Disk Space Management.md>)**
@@ -154,17 +154,17 @@ The tool Soji (Temp File Cleanup Application) was run and failed due to an unexp
 Script logs from the Soji (Temp File Cleanup Tool) Script:
 
 The installation of .NET on %ComputerName% result was:
-<DotNetInstallationResult>
+\<DotNetInstallationResult>
 If this contains errors then either the .NET installation package could not be downloaded or was blocked from execution.
 
 The results from Soji's execution were:
-<ResultReturnedBytheDiskCleanupToolSoji>
+\<ResultReturnedBytheDiskCleanupToolSoji>
 If this contains a `1`, then one of the following errors may have occurred:
 - Soji could not be downloaded and was not present from a previous run
 - Soji was blocked or quarantined
 
 If no errors occurred with Soji, an attempt to compress the log files was made. The result of the attempted compression was:
-<ResultsReturnedWhileCompressingTheLogFilesToUploadAndAttachToTheTicket>
+\<ResultsReturnedWhileCompressingTheLogFilesToUploadAndAttachToTheTicket>
 If this is an error, then the compressed logs may be unavailable.
 ```
 
@@ -173,5 +173,6 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
 
 ![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
+
 
 

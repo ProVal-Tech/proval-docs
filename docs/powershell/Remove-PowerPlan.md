@@ -27,7 +27,7 @@ The Power Plan should exist on the computer.
 Removes the `Balanced` Power Plan from the computer.
 
 ```powershell
-PS C:> .\Remove-PowerPlan.ps1 -Name 'Balanced'
+PS C:\> .\Remove-PowerPlan.ps1 -Name 'Balanced'
 ```
 
 ## Parameters
@@ -38,5 +38,6 @@ PS C:> .\Remove-PowerPlan.ps1 -Name 'Balanced'
 ## Output
 - .\Remove-PowerPlan-log.txt
 - .\Remove-PowerPlan-Error.txt
+
 
 

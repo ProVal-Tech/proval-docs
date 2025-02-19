@@ -67,11 +67,11 @@ if($ver -ge [version]'6.3')
 } 
 else 
 {
-    $s =  (Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} ); 
+    $s =  (Get-Item HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} ); 
     if ( ( -not $s ) -or ( $s -contains 1 )) 
     {  
-        Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\Lanmanworkstation\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
-        Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
+        Set-ItemProperty -Path 'HKLM://SYSTEM//CurrentControlSet//Services//Lanmanworkstation//Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
+        Set-ItemProperty -Path 'HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
     }  
     return 'SMB1 has been successfully disabled'
     else 
@@ -175,6 +175,7 @@ It is suggested to run the task once per week against Windows computers.
 ## Output
 
 - Script log
+
 
 
 

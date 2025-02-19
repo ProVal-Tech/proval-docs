@@ -42,8 +42,8 @@ To implement this script, please create a new "PowerShell" style script in the s
 Paste the below PowerShell script directly into the "Script" field.
 
 ```
-$RebootPath = 'C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot'
-$BakPath = 'C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot.bak'
+$RebootPath = 'C://Windows//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot'
+$BakPath = 'C://Windows//System32//Tasks//Microsoft//Windows//UpdateOrchestrator//reboot.bak'
 if (Test-Path $RebootPath) {
     if (Test-Path $BakPath) {
         Remove-Item -Path $BakPath -Force -Confirm:$False
@@ -64,5 +64,6 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
+
 
 

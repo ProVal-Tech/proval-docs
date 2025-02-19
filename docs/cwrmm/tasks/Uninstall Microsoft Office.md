@@ -103,7 +103,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 #region parameters
 $version = '@version@'
 $parameters = @{}
-if ( ($version -match 'All|\SVersion\S') -or ([String]::IsNullOrWhiteSpace($version)) ) {
+if ( ($version -match 'All|//SVersion//S') -or ([String]::IsNullOrWhiteSpace($version)) ) {
     $parameters.Add('All', $true)
 } else {
     if ( $version -match '2003' ) {
@@ -134,11 +134,11 @@ $ProjectName = 'Invoke-OfficeScrub'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -207,5 +207,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 

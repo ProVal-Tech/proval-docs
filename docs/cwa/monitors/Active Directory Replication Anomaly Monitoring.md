@@ -40,7 +40,7 @@ WHERE
 'READONLY', 
 '6', 
 '430a4640-9c97-4344-bfe8-7a786b110729', 
-'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Extra Data Field.Default.Under MSP Contract</lon><lok>Computer.Edf.45c2da7e-3bf5-11e1-92fd-c1ee63289e9e</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn><asn><st>ComparisonNode</st><lon>Computer.LabTech.Roles</lon><lok>Computer.LabTech.Roles</lok><lmo>HasRole</lmo><dv>AD Infrastructure Master</dv><dk>e90000d4-2b70-11e3-9392-08002788414b</dk></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Extra Data Field.Default.Exclude MSP Contract</lon><lok>Computer.Edf.a72e229b-3bf5-11e1-92fd-c1ee63289e9e</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn></cn></asn><asn><st>ComparisonNode</st><lon>Computer.OS.IsServer</lon><lok>Computer.OS.IsServer</lok><lmo>IsTrue</lmo><dv>NULL</dv><dk>NULL</dk></asn></cn></asn></LabTechAbstractSearch>'
+'\\<LabTechAbstractSearch>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.Extra Data Field.Default.Under MSP Contract\\</lon>\\<lok>Computer.Edf.45c2da7e-3bf5-11e1-92fd-c1ee63289e9e\\</lok>\\<lmo>IsTrue\\</lmo>\\<dv>NULL\\</dv>\\<dk>NULL\\</dk>\\</asn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.LabTech.Roles\\</lon>\\<lok>Computer.LabTech.Roles\\</lok>\\<lmo>HasRole\\</lmo>\\<dv>AD Infrastructure Master\\</dv>\\<dk>e90000d4-2b70-11e3-9392-08002788414b\\</dk>\\</asn>\\<asn>\\<st>NotNode\\</st>\\<cn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.Extra Data Field.Default.Exclude MSP Contract\\</lon>\\<lok>Computer.Edf.a72e229b-3bf5-11e1-92fd-c1ee63289e9e\\</lok>\\<lmo>IsTrue\\</lmo>\\<dv>NULL\\</dv>\\<dk>NULL\\</dk>\\</asn>\\</cn>\\</asn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.OS.IsServer\\</lon>\\<lok>Computer.OS.IsServer\\</lok>\\<lmo>IsTrue\\</lmo>\\<dv>NULL\\</dv>\\<dk>NULL\\</dk>\\</asn>\\</cn>\\</asn>\\</LabTechAbstractSearch>'
 FROM (SELECT MIN(computerid) FROM computers) c 
 WHERE (SELECT COUNT(*) FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729') = 0;
 ```
@@ -65,9 +65,9 @@ For a precise understanding of the error codes returned in the `LastError` prope
            '3600' AS `interval`,
            '127.0.0.1' AS `Where`,
            '7' AS `What`,
-           'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$LRS=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationSuccess -Descending | Select-Object -First 1).LastReplicationSuccess;$LRA=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationAttempt -Descending | Select-Object -First 1).LastReplicationAttempt;if (($LRS -lt $LRA) -and ($LRA -ge $((Get-Date).AddHours(-1)))){(Get-ADReplicationFailure -Target $((Get-ADdomainController).Domain) -Scope Domain -Erroraction SilentlyContinue| Where-Object {$_.FirstFailureTime -ge $((Get-Date).AddHours(-1)) })}\"' AS `DataOut`,
+           'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$LRS=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationSuccess -Descending | Select-Object -First 1).LastReplicationSuccess;$LRA=((Get-ADReplicationPartnerMetadata -Target $((Get-ADdomainController).Domain)) | Sort-Object -Property LastReplicationAttempt -Descending | Select-Object -First 1).LastReplicationAttempt;if (($LRS -lt $LRA) -and ($LRA -ge $((Get-Date).AddHours(-1)))){(Get-ADReplicationFailure -Target $((Get-ADdomainController).Domain) -Scope Domain -Erroraction SilentlyContinue| Where-Object {$_.FirstFailureTime -ge $((Get-Date).AddHours(-1)) })}\"' AS `DataOut`,
            '16' AS `Comparor`,
-           '10|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))|11|((^((OK){0,}(\r\n){0,}[\r\n]{0,}\s{0,})$)%7C(^$))%7C(PartnerGuid)|10|PartnerGuid' AS `DataIn`,
+           '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(PartnerGuid)|10|PartnerGuid' AS `DataIn`,
            '' AS `IDField`,
            '0' AS `AlertStyle`,
            '0' AS `ScriptID`,
@@ -131,4 +131,6 @@ Validate the presence of the `ProVal - Production - Active Directory Replication
 
 ## Step 5
 Apply the relevant alert template and ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+
+
 

@@ -56,12 +56,12 @@ This could potentially lead to IP address allocation problems and network connec
 
 **%RESULT%:**  
 ```
-scopeid    : <scopeid>
-startrange : <startrange>
-endrange   : <endrange>
-free       : <free ip addresses>
-inuse      : <ip addresses in use>
-Reserved   : <reserved ip addresses>
+scopeid    : \<scopeid>
+startrange : \<startrange>
+endrange   : \<endrange>
+free       : \<free ip addresses>
+inuse      : \<ip addresses in use>
+Reserved   : \<reserved ip addresses>
 ```
 
 **Example:**  
@@ -88,5 +88,6 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 25% and 20 IP Addresses Available](https://proval.itglue.com/DOC-5078775-15408683)
+
 
 

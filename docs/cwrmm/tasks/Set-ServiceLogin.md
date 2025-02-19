@@ -158,7 +158,7 @@ $Force = '@Force@'
 
 $parameters = @{}
 # We are prioritizing Name if both Name and DisplayNames are specified
-if ( ($Name -Notmatch '\SAddress\S') -and ($Name -match '[A-z]{2,}') ) {
+if ( ($Name -Notmatch '//SAddress//S') -and ($Name -match '[A-z]{2,}') ) {
     # For parameterSets Name and NameSystem
     $parameters.Add('Name', $Name)
     if ( $System -match '1|Yes|True' ) {
@@ -184,7 +184,7 @@ if ( ($Name -Notmatch '\SAddress\S') -and ($Name -match '[A-z]{2,}') ) {
     }
 } else {
     # For parameter set DisplayName and DisplayName System
-    if ( ($DisplayName -Notmatch '\SAddress\S') -and ($DisplayName -match '[A-z]{2,}') ) {
+    if ( ($DisplayName -Notmatch '//SAddress//S') -and ($DisplayName -match '[A-z]{2,}') ) {
         $parameters.Add('DisplayName', $DisplayName)
         if ( $System -match '1|Yes|True' ) {
             # For Parameter Set DisplayNameSystem
@@ -221,11 +221,11 @@ $ProjectName = 'Set-ServiceLogin'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -275,6 +275,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
 
 
 

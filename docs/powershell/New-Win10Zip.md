@@ -40,12 +40,13 @@ Downloads a Windows 10 21H1 ISO and creates the applicable ZIP file and hash.
 Location of output for log, result, and error files.
 
 ```
-.<version>.zip
+.\<version>.zip
 .\New-Win10Zip-log.txt
 .\New-Win10Zip-data.txt
 .\New-Win10Zip-error.txt
 ```
 
 [mct]: https://github.com/AveYo/MediaCreationTool.bat
+
 
 

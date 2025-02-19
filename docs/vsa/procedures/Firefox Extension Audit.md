@@ -38,18 +38,18 @@ This document describes how to collect Firefox extensions installed on an endpoi
 8:33:08 am 23-Jan-23   Firefox Extensions Audit   Firefox Extensions: OneTab   provaltech.com/dan.hicks
 8:33:08 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)   Success THEN   provaltech.com/dan.hicks
 8:33:08 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0016   Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server.   provaltech.com/dan.hicks
-8:33:07 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0016   Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\229175768944442\GetFiles\..\docs\psoutput.txt with the new contents from c:\provaltech\psoutput.txt in THEN step 3.   provaltech.com/dan.hicks
-8:33:03 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0011   Executing 64-bit Powershell command as System: "" -command "(%ProgramData%\_automation\AgentProcedure\FirefoxExtensionAudit\Get-FirefoxExtensions.ps1).ExtensionName" >"c:\provaltech\psoutputtmp.txt"   provaltech.com/dan.hicks
+8:33:07 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0016   Informational: GetFile command overwrote the server file C://Kaseya//UserProfiles//229175768944442//GetFiles//..//docs//psoutput.txt with the new contents from c://provaltech//psoutput.txt in THEN step 3.   provaltech.com/dan.hicks
+8:33:03 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0011   Executing 64-bit Powershell command as System: "" -command "(%ProgramData%//_automation//AgentProcedure//FirefoxExtensionAudit//Get-FirefoxExtensions.ps1).ExtensionName" >"c://provaltech//psoutputtmp.txt"   provaltech.com/dan.hicks
 8:33:03 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0013   Sending output to global variable.   provaltech.com/dan.hicks
-8:33:03 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0008   Custom commands detected as (%ProgramData%\_automation\AgentProcedure\FirefoxExtensionAudit\Get-FirefoxExtensions.ps1).ExtensionName   provaltech.com/dan.hicks
+8:33:03 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0008   Custom commands detected as (%ProgramData%//_automation//AgentProcedure//FirefoxExtensionAudit//Get-FirefoxExtensions.ps1).ExtensionName   provaltech.com/dan.hicks
 8:33:03 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0003   No powershell file variable detected.   provaltech.com/dan.hicks
 8:33:01 am 23-Jan-23   Execute Powershell Command (64-bit, Run As System)-0002   Powershell is present.   provaltech.com/dan.hicks
 8:32:58 am 23-Jan-23   Execute Powershell Command   Success THEN   provaltech.com/dan.hicks
 8:32:58 am 23-Jan-23   Execute Powershell Command-0011   Powershell command completed!   provaltech.com/dan.hicks
-8:32:56 am 23-Jan-23   Execute Powershell Command-0011   Executing powershell "" -Command "New-Item -Type Directory -Path $env:ProgramData\_automation\AgentProcedure -name FirefoxExtensionAudit" ""   provaltech.com/dan.hicks
+8:32:56 am 23-Jan-23   Execute Powershell Command-0011   Executing powershell "" -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name FirefoxExtensionAudit" ""   provaltech.com/dan.hicks
 8:32:56 am 23-Jan-23   Execute Powershell Command-0010   Not sending output to variable.   provaltech.com/dan.hicks
-8:32:56 am 23-Jan-23   Execute Powershell Command-0008   New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData\_automation\AgentProcedure -name FirefoxExtensionAudit"   provaltech.com/dan.hicks
-8:32:56 am 23-Jan-23   Execute Powershell Command-0008   Custom commands detected as New-Item -Type Directory -Path $env:ProgramData\_automation\AgentProcedure -name FirefoxExtensionAudit   provaltech.com/dan.hicks
+8:32:56 am 23-Jan-23   Execute Powershell Command-0008   New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name FirefoxExtensionAudit"   provaltech.com/dan.hicks
+8:32:56 am 23-Jan-23   Execute Powershell Command-0008   Custom commands detected as New-Item -Type Directory -Path $env:ProgramData//_automation//AgentProcedure -name FirefoxExtensionAudit   provaltech.com/dan.hicks
 8:32:54 am 23-Jan-23   Execute Powershell Command-0002   Powershell is present.   provaltech.com/dan.hicks
 8:32:46 am 23-Jan-23   Run Now - Firefox Extensions Audit   Admin provaltech.com/dan.hicks scheduled procedure Run Now - Firefox Extensions Audit to run at Jan 23 2023 8:32 AM
 ```
@@ -66,5 +66,6 @@ Runs the agnostic script to collect Firefox extensions installed on an endpoint.
 
 - Agent Procedure Log
 - Custom Field: xPVAL Firefox Extensions Installed
+
 
 

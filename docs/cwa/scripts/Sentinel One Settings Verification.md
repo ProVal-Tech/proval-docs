@@ -89,13 +89,14 @@ The script will use the ticket creation category mentioned in the monitor [CWM -
 ```
 The machine details do not match the correct client details.
 The agent reports the following details:
-SentinelOne URL is: <URL>
-SentinelOne Site key is: <LicenseKey>
+SentinelOne URL is: \<URL>
+SentinelOne Site key is: \<LicenseKey>
 
 Automate is configured to install as follows:
-SentinelOne URL should be: <URL>
-SentinelOne Site key should be: <LicenseKey>
+SentinelOne URL should be: \<URL>
+SentinelOne Site key should be: \<LicenseKey>
 To resolve a license key mismatch in SentinelOne, you must uninstall and then reinstall the software using the correct license key.
 ```
+
 
 

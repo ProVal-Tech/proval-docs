@@ -160,8 +160,8 @@ if (!$TheseResults) {
     throw 'The underlying script failed to return any data. Please review script logs for additional information.'
 }
 
-$weakpw = $($TheseResults.WeakPasswords -replace '\', '\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")
-$DuplicatePW = $($TheseResults.DuplicatePasswords -replace '\', '\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")
+$weakpw = $($TheseResults.WeakPasswords -replace '//', '//' -replace "'", "//'" -replace "$([char]0x2018)|$([char]0x2019)", "//'")
+$DuplicatePW = $($TheseResults.DuplicatePasswords -replace '//', '//' -replace "'", "//'" -replace "$([char]0x2018)|$([char]0x2019)", "//'")
 $weakpwcount = $TheseResults.WeakPasswords.Count
 $DuplicatePWCount = $TheseResults.DuplicatePasswords.Count
 
@@ -282,5 +282,6 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script Log
+
 
 

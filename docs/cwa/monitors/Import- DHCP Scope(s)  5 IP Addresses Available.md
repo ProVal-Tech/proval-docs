@@ -34,9 +34,9 @@ Affected Scope(s) details:
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $t = 5; $ss = try {Get-DhcpServerv4Failover -erroraction stop | Where-Object {$_.ServerRole -eq /'Active/' -and $_.ScopeId -match /'./'}} catch {$null}; if ($ss.ServerRole -eq /'Standby/') {return}; $scopes = Get-DhcpServerv4Scope | Where-Object {$_.State -eq /'Active/'}; $DhcpScopes = foreach($scope in $scopes) {$scopeStats = $scope | Get-DhcpServerv4ScopeStatistics; [pscustomobject]@{scopeid = $scope.scopeid; startrange = $scope.startrange; endrange = $scope.endrange; free = $(if ($ss.ReservePercent -gt 0) {[Math]::Max(0, $($scopestats.free - [Math]::Round((($scopestats.free + $scopestats.InUse) * $ss.ReservePercent)/100)))} else {$scopestats.free}); inuse = $scopestats.inuse; Reserved = $scopestats.Reserved}}; $DhcpScopes | Where-Object {$_.free -le $t}\"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $t = 5; $ss = try {Get-DhcpServerv4Failover -erroraction stop | Where-Object {$_.ServerRole -eq /'Active/' -and $_.ScopeId -match /'./'}} catch {$null}; if ($ss.ServerRole -eq /'Standby/') {return}; $scopes = Get-DhcpServerv4Scope | Where-Object {$_.State -eq /'Active/'}; $DhcpScopes = foreach($scope in $scopes) {$scopeStats = $scope | Get-DhcpServerv4ScopeStatistics; [pscustomobject]@{scopeid = $scope.scopeid; startrange = $scope.startrange; endrange = $scope.endrange; free = $(if ($ss.ReservePercent -gt 0) {[Math]::Max(0, $($scopestats.free - [Math]::Round((($scopestats.free + $scopestats.InUse) * $ss.ReservePercent)/100)))} else {$scopestats.free}); inuse = $scopestats.inuse; Reserved = $scopestats.Reserved}}; $DhcpScopes | Where-Object {$_.free -le $t}\"' as `DataOut`,
 '16' as `Comparor`,
-'10|(^(\r\n%7COK%7C[\s\S])$)%7C(^$)|11|(^(\r\n%7COK%7C[\s\S])$)%7C(^$)%7C(scopeid.*?:.*?[\r\n]{0,}.*?startrange)|10|(scopeid.*?:.*?[\r\n]{0,}.*?startrange)' as `DataIn`,
+'10|(^(//r//n%7COK%7C[//s//S])$)%7C(^$)|11|(^(//r//n%7COK%7C[//s//S])$)%7C(^$)%7C(scopeid.*?:.*?[//r//n]{0,}.*?startrange)|10|(scopeid.*?:.*?[//r//n]{0,}.*?startrange)' as `DataIn`,
 '' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -135,9 +135,9 @@ Affected Scope(s) details:
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $t = 5; $ss = try {Get-DhcpServerv4Failover -erroraction stop | Where-Object {$_.ServerRole -eq /'Active/' -and $_.ScopeId -match /'./'}} catch {$null}; if ($ss.ServerRole -eq /'Standby/') {return}; $scopes = Get-DhcpServerv4Scope | Where-Object {$_.State -eq /'Active/'}; $DhcpScopes = foreach($scope in $scopes) {$scopeStats = $scope | Get-DhcpServerv4ScopeStatistics; [pscustomobject]@{scopeid = $scope.scopeid; startrange = $scope.startrange; endrange = $scope.endrange; free = $(if ($ss.ReservePercent -gt 0) {[Math]::Max(0, $($scopestats.free - [Math]::Round((($scopestats.free + $scopestats.InUse) * $ss.ReservePercent)/100)))} else {$scopestats.free}); inuse = $scopestats.inuse; Reserved = $scopestats.Reserved}}; $DhcpScopes | Where-Object {$_.free -le $t}\"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $t = 5; $ss = try {Get-DhcpServerv4Failover -erroraction stop | Where-Object {$_.ServerRole -eq /'Active/' -and $_.ScopeId -match /'./'}} catch {$null}; if ($ss.ServerRole -eq /'Standby/') {return}; $scopes = Get-DhcpServerv4Scope | Where-Object {$_.State -eq /'Active/'}; $DhcpScopes = foreach($scope in $scopes) {$scopeStats = $scope | Get-DhcpServerv4ScopeStatistics; [pscustomobject]@{scopeid = $scope.scopeid; startrange = $scope.startrange; endrange = $scope.endrange; free = $(if ($ss.ReservePercent -gt 0) {[Math]::Max(0, $($scopestats.free - [Math]::Round((($scopestats.free + $scopestats.InUse) * $ss.ReservePercent)/100)))} else {$scopestats.free}); inuse = $scopestats.inuse; Reserved = $scopestats.Reserved}}; $DhcpScopes | Where-Object {$_.free -le $t}\"' as `DataOut`,
 '16' as `Comparor`,
-'10|(^(\r\n%7COK%7C[\s\S])$)%7C(^$)|11|(^(\r\n%7COK%7C[\s\S])$)%7C(^$)%7C(scopeid.*?:.*?[\r\n]{0,}.*?startrange)|10|(scopeid.*?:.*?[\r\n]{0,}.*?startrange)' as `DataIn`,
+'10|(^(//r//n%7COK%7C[//s//S])$)%7C(^$)|11|(^(//r//n%7COK%7C[//s//S])$)%7C(^$)%7C(scopeid.*?:.*?[//r//n]{0,}.*?startrange)|10|(scopeid.*?:.*?[//r//n]{0,}.*?startrange)' as `DataIn`,
 '' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -202,5 +202,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate and Apply the Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

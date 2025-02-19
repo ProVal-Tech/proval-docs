@@ -123,27 +123,27 @@ $ProgressPreference = 'SilentlyContinue'
 ### Latest Available Version ###
 $iwr = (Invoke-WebRequest 'https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandUpdate/Universal' -UseBasicParsing).content
 $iwr = $iwr -split ('{') -split ('}')
-$iwr = $iwr -match 'manifests\/d\/Dell\/CommandUpdate\/'
+$iwr = $iwr -match 'manifests///d///Dell///CommandUpdate///'
 $iwr = $iwr -split ('/\"')
-$iwr = $iwr -match '^[0-9\.]{1,}$'
-$iwr = $iwr -match '[1-9][0-9]{0,}\.[0-9]{1,}\.[0-9]{1,}'
+$iwr = $iwr -match '^[0-9//.]{1,}$'
+$iwr = $iwr -match '[1-9][0-9]{0,}//.[0-9]{1,}//.[0-9]{1,}'
 $versions = $iwr | ForEach-Object { [version]$_ }
 $maxVersion = $versions | Sort-Object | Select-Object -Last 1
 Write-Information "Latest Available Version: $maxVersion" -InformationAction Continue
 
 ### Installed Version ###
-$version = (Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match [regex]::Escape('Dell Command | Update') }).DisplayVersion | Sort-Object | Select-Object -Last 1
+$version = (Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match [regex]::Escape('Dell Command | Update') }).DisplayVersion | Sort-Object | Select-Object -Last 1
 
 ### Install Function ###
 function Install-DCU {
     ## Variables ##
     $projectName = 'Invoke-WingetProcessor'
-    $workingDirectory = "C:\ProgramData\_Automation\Script\$projectName"
-    $logPath = "$workingDirectory\$projectName-log.txt"
-    $errorLogPath = "$workingDirectory\$projectName-error.txt"
+    $workingDirectory = "C://ProgramData//_Automation//Script//$projectName"
+    $logPath = "$workingDirectory//$projectName-log.txt"
+    $errorLogPath = "$workingDirectory//$projectName-error.txt"
     $BaseURL = 'https://file.provaltech.com/repo'
     $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-    $PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+    $PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 
     ## Directory ##
     if ( !(Test-Path $WorkingDirectory) ) {
@@ -223,8 +223,8 @@ function Convert-ExitCode {
         101 { "!ERROR!: While evaluating the command line parameters, no commands were detected. Provide a valid command and options. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         102 { "!ERROR!: While evaluating the command line parameters, invalid commands were detected. Provide a command along with the supported options for that command. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         103 { "!ERROR!: While evaluating the command line parameters, duplicate commands were detected. Remove any duplicate commands and rerun the command. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
-        104 { "!ERROR!: While evaluating the command line parameters, the command syntax was incorrect. Ensure that you follow the command syntax: /<command name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
-        105 { "!ERROR!: While evaluating the command line parameters, the option syntax was incorrect. Ensure that you follow the option syntax: -<option name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
+        104 { "!ERROR!: While evaluating the command line parameters, the command syntax was incorrect. Ensure that you follow the command syntax: /\\<command name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
+        105 { "!ERROR!: While evaluating the command line parameters, the option syntax was incorrect. Ensure that you follow the option syntax: -\\<option name>. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         106 { "!ERROR!: While evaluating the command line parameters, invalid options were detected. Ensure to provide all required or only supported options. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         107 { "!ERROR!: While evaluating the command line parameters, one or more values provided to the specific option was invalid. Provide an acceptable value. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
         108 { "!ERROR!: While evaluating the command line parameters, all mandatory options were not detected. If a command requires mandatory options to run, provide them. `nSee Command line interface reference section for more information:`n https://www.dell.com/support/manuals/en-aw/command-update/dellcommandupdate_rg/command-line-interface-reference?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us" }
@@ -279,7 +279,7 @@ function Invoke-Argument {
 
     ## Variables ##
     $projectName = 'DCU-CLI'
-    $workingDirectory = "C:\ProgramData\_Automation\Script\$projectName"
+    $workingDirectory = "C://ProgramData//_Automation//Script//$projectName"
 
     ## Directory ##
     if ( !(Test-Path $WorkingDirectory) ) {
@@ -298,10 +298,10 @@ function Invoke-Argument {
     }
 
     ## Exe Path ##
-    if ( Test-Path -Path 'C:\Program Files (x86)\Dell\CommandUpdate\dcu-cli.exe' ) {
-        $exePath = 'C:\Program Files (x86)\Dell\CommandUpdate\dcu-cli.exe'
-    } elseif ( Test-Path -Path 'C:\Program Files\Dell\CommandUpdate\dcu-cli.exe' ) {
-        $exePath = 'C:\Program Files\Dell\CommandUpdate\dcu-cli.exe'
+    if ( Test-Path -Path 'C://Program Files (x86)//Dell//CommandUpdate//dcu-cli.exe' ) {
+        $exePath = 'C://Program Files (x86)//Dell//CommandUpdate//dcu-cli.exe'
+    } elseif ( Test-Path -Path 'C://Program Files//Dell//CommandUpdate//dcu-cli.exe' ) {
+        $exePath = 'C://Program Files//Dell//CommandUpdate//dcu-cli.exe'
     } else {
         throw 'Executable for the Dell Command Update is missing.'
     }
@@ -375,4 +375,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+
 

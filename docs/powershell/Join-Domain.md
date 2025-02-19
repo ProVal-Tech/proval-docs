@@ -32,7 +32,7 @@ This command will use the online join method to join a target computer to the pr
 
 **STEP 1** - On the Domain Controller, run:
 ```powershell
-PS C:> New-DJoinFile.ps1 -TargetName Dev-Win10-2
+PS C:\> New-DJoinFile.ps1 -TargetName Dev-Win10-2
 ```
 This script will create the offline join `.txt` file used to complete the offline join method.
 
@@ -40,7 +40,7 @@ This script will create the offline join `.txt` file used to complete the offlin
 
 **STEP 3** - Run `Join-Domain.ps1` on the target machine with the following command:
 ```powershell
-PS C:> Join-Domain.ps1 -DJoinFilePath c:\somewhere\somewhereelse\Dev-Win10-2-offlineJoin.txt
+PS C:\> Join-Domain.ps1 -DJoinFilePath c:\somewhere\somewhereelse\Dev-Win10-2-offlineJoin.txt
 ```
 This command will use the provided `.txt` file to offline join the computer to the requested domain.
 
@@ -55,5 +55,6 @@ This command will use the provided `.txt` file to offline join the computer to t
 - Console: Domain join results, or nothing on error.
 - `.\\Join-Domain-log.txt`
 - `.\\Join-Domain-error.txt`
+
 
 

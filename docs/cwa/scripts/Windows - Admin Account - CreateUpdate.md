@@ -157,11 +157,12 @@ For the configuration shown in the screenshot, the solution will create `Ram_Tes
 
 **Body:**  
 ``` 
-Automate attempted to create/update the admin account <username> but failed. 
-Attempted credentials are saved as <Title> at the passwords tab of the client in Automate.
+Automate attempted to create/update the admin account \<username> but failed. 
+Attempted credentials are saved as \<Title> at the passwords tab of the client in Automate.
 ```
 ```
-Account Creation/Update Output: <Output of the PowerShell Script>
+Account Creation/Update Output: \<Output of the PowerShell Script>
 ```
+
 
 

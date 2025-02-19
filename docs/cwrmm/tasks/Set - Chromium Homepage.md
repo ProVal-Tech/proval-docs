@@ -152,7 +152,7 @@ $EnforceOnNewTab = '@EnforceOnNewTab@'
 $EnforceHomePageStartup = '@EnforceHomePageStartup@'
 $Target = '@Target@'
 
-if ( $Homepage -match '\SHomePage\S' -or ([String]::IsNullOrWhiteSpace($Homepage)) ) {
+if ( $Homepage -match '//SHomePage//S' -or ([String]::IsNullOrWhiteSpace($Homepage)) ) {
     throw 'Homepage is not set correctly.'
 } elseif ( $Homepage.Length -lt 2 ) {
     throw 'Homepage is not set correctly.'
@@ -171,7 +171,7 @@ if ( $EnforceHomePageStartup -match '1|Yes|True' ) {
 }
 
 $Browser = @()
-if ( $Target -match '\STarget\S' -or ([String]::IsNullOrWhiteSpace($Target)) ) {
+if ( $Target -match '//STarget//S' -or ([String]::IsNullOrWhiteSpace($Target)) ) {
     $Browser += 'Brave', 'Chrome', 'Edge'
 } elseif ( $target.Length -lt 2  ) {
     $Browser += 'Brave', 'Chrome', 'Edge'
@@ -193,11 +193,11 @@ $ProjectName = 'Set-ChromiumHomepage'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo/'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName/"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName/"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -267,5 +267,6 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
+
 
 

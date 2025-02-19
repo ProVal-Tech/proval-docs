@@ -60,9 +60,9 @@ SELECT '' as `AgentID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
 '10' as `Comparor`,
-'^(\r\n)|(OK)|()|( )$' as `DataIn`,
+'^(//r//n)|(OK)|()|( )$' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -144,9 +144,9 @@ SELECT '' as `AgentID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
 '10' as `Comparor`,
-'^(\r\n)|(OK)|()|( )$' as `DataIn`,
+'^(//r//n)|(OK)|()|( )$' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -210,5 +210,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 

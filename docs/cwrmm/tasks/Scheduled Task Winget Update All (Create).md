@@ -434,8 +434,8 @@ Paste in the following PowerShell script and set the expected time of script exe
 $DisableUserTask = if ( '@UserTask@' -eq 0 ) { $True } else { $False }
 $Force = 1
 $ProjectName = 'Invoke-WingetProcessor'
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$FilePath = "$WorkingDirectory\Winget-UpdateAll.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$FilePath = "$WorkingDirectory//Winget-UpdateAll.ps1"
 
 #region Setup - Folder Structure
 if ( $Force ) {
@@ -461,10 +461,10 @@ $FileContent = @"
 `$ProjectName = 'Invoke-WingetProcessor'
 `$BaseURL = 'https://file.provaltech.com/repo'
 `$PS1URL = "`$BaseURL/script/`$ProjectName.ps1"
-`$WorkingDirectory = "C:\ProgramData\_automation\script\`$ProjectName"
-`$PS1Path = "`$WorkingDirectory\`$ProjectName.ps1"
-`$LogPath = "`$WorkingDirectory\`$ProjectName-log.txt"
-`$OldLogPath = "`$WorkingDirectory\`$ProjectName-log-old.txt"
+`$WorkingDirectory = "C://ProgramData//_automation//script//`$ProjectName"
+`$PS1Path = "`$WorkingDirectory//`$ProjectName.ps1"
+`$LogPath = "`$WorkingDirectory//`$ProjectName-log.txt"
+`$OldLogPath = "`$WorkingDirectory//`$ProjectName-log-old.txt"
 #endregion
 "@
 
@@ -581,5 +581,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 - Script Log
+
 
 

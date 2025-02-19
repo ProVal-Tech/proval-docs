@@ -116,7 +116,7 @@ PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'C:/temp/CustomP
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https://file.provaltech.com//CustomPlanTemplate.csv'.
 
 ```
-PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.provaltech.com\CustomPlanTemplate.csv'
+PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.provaltech.com//CustomPlanTemplate.csv'
 ```
 
 # Parameters
@@ -134,3 +134,4 @@ PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.pr
 ```
 ## Attachments
 [PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/14956509/PowerPlanSettingsTemplate.csv>)
+

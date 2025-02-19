@@ -61,16 +61,16 @@ Refer to the client-script document. This will guide you on how to enable ticket
 
 **Body:**  
 ```
-Network Device - <Network Device Name> at <Location Name> is Unreachable from the Network Probe <Network Probe Name> since <Last Contact>.
+Network Device - \<Network Device Name> at \<Location Name> is Unreachable from the Network Probe \<Network Probe Name> since \<Last Contact>.
 ```
 **Device Information:**
 
 ```
-Name: <Network Device Name>
-IPAddress: <Network Device IP Address>
-MAC Address: <Network Device MAC Address>
-Device Manufacturer: <Network Device Manufacturer>
-Device Type: <Network Device Type>
+Name: \<Network Device Name>
+IPAddress: \<Network Device IP Address>
+MAC Address: \<Network Device MAC Address>
+Device Manufacturer: \<Network Device Manufacturer>
+Device Type: \<Network Device Type>
 ```
 
 **Ticket Category:**  
@@ -80,5 +80,6 @@ To create this ticket to a specific service board in manage, provide the categor
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
+
 
 

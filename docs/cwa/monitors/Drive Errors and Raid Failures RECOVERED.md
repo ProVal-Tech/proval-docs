@@ -26,8 +26,8 @@ SELECT
     eventlogs.`TimeGen`,  
     ': ',  
     REPLACE(
-      REPLACE(eventlogs.`message`, '\'', ''),  
-      '\n',  
+      REPLACE(eventlogs.`message`, '//'', ''),  
+      '//n',  
       ''  
     ),  
     ' (',  
@@ -62,9 +62,9 @@ WHERE
 GROUP BY  
   eventlogs.computerid,  
   eventlogs.message 
-  #HAVING `TestValue` NOT REGEXP 'controller error on.*\\(([1-9]|1[0-9]|20) events* found\\)'  
+  #HAVING `TestValue` NOT REGEXP 'controller error on.*////(([1-9]|1[0-9]|20) events* found////)'  
 HAVING  
-  `TestValue` NOT REGEXP 'has a bad block.*\\([1-9] events{0,1} found\\)'  
+  `TestValue` NOT REGEXP 'has a bad block.*////([1-9] events{0,1} found////)'  
 ```
 
 ## FAQ
@@ -82,5 +82,6 @@ is the number of events.
 Translated from programming to human, this essentially says, "Do not tell me about controller errors unless there are more than 20 of them."
 
 This could work for Paging Errors, Bad Blocks, or really anything you can match.
+
 
 

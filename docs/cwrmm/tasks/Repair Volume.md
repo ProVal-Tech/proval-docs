@@ -123,12 +123,12 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 #region parameters
 $Driveletters = '@Driveletters@'
 if ( !([String]::IsNullOrWhiteSpace($Driveletters)) ) {
-    $Driveletters = $($Driveletters -replace '\s', '').trimend(',')
+    $Driveletters = $($Driveletters -replace '//s', '').trimend(',')
 }
 $Repair = '@Repair@'
 $Full = '@Full@'
 $Parameters = @{}
-if ( $Driveletters -match '^[A-z](,(\s{0,})[A-z]){0,25}$' ) {
+if ( $Driveletters -match '^[A-z](,(//s{0,})[A-z]){0,25}$' ) {
     $Driveletters = $Driveletters -split ','
     $parameters.Add('Driveletters', $Driveletters)
 }
@@ -144,11 +144,11 @@ $ProjectName = 'Invoke-RepairVolume'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
+$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -213,6 +213,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
 
 
 

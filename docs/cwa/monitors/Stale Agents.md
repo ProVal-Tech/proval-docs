@@ -35,7 +35,7 @@ Webroot - Stale Agents detected on %COMPUTERNAME%
 
 **Message on Failure:**  
 ```
-A stale Webroot agent has been detected on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%. A Webroot stale agent means that although the machine is online and functioning, it is not reporting into the Webroot console as expected. 
+A stale Webroot agent has been detected on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%. A Webroot stale agent means that although the machine is online and functioning, it is not reporting into the Webroot console as expected. 
 
 Last Seen by Webroot: %FIELDNAME%
 Last Seen by Automate: %RESULT%
@@ -43,7 +43,8 @@ Last Seen by Automate: %RESULT%
 
 **Message on Success:**  
 ```
-The computer %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
+The computer %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
 ```
+
 
 

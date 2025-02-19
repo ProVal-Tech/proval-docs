@@ -24,10 +24,10 @@ The script has been modified to send the `Password Compliance Info` to the Ticke
 ```
 Password Compliance Info
 
-Maximum Password Age: <Max Password Age>
-Minimum Password Length: <Password Length Requirement>
-Password History Remembered: <Number of remembered passwords>
-Password Complexity: <Is Complexity Required?>
+Maximum Password Age: \<Max Password Age>
+Minimum Password Length: \<Password Length Requirement>
+Password History Remembered: \<Number of remembered passwords>
+Password Complexity: \<Is Complexity Required?>
 ```
 
 **Examples:**
@@ -148,8 +148,8 @@ Ticketing depends on the configuration of the Global Variables.
 For CreateTicket = 1 and UserAsTicketContact = 0
 
 ```
-Subject: User <UserName> password is expiring on <Expiry Date>
-Body: A password for the user <UserName> on <Expiry Date> is about to expire. Please let the user know.
+Subject: User \<UserName> password is expiring on \<Expiry Date>
+Body: A password for the user \<UserName> on \<Expiry Date> is about to expire. Please let the user know.
 
 If you believe the password has already been changed or that this is a false alert, kindly get in touch with your Automate administrator so they can review the "Active Directory Domains" plugin.
 ```
@@ -160,8 +160,8 @@ Sample:
 For CreateTicket = 1 and UserAsTicketContact = 1 and User does have an Email address.
 
 ```
-Subject: User <UserName> password is expiring on <Expiry Date>
-Body: Your Domain account password will expire on <Expiry Date>. Please reset your password at your earliest convenience.
+Subject: User \<UserName> password is expiring on \<Expiry Date>
+Body: Your Domain account password will expire on \<Expiry Date>. Please reset your password at your earliest convenience.
 
 If you believe the password has already been changed or that this is a false alert, kindly get in touch with your Automate administrator so they can review the "Active Directory Domains" plugin.
 ```
@@ -174,8 +174,8 @@ A screenshot showing the user's email address added to the ticket, as this email
 For CreateTicket = 1 and UserAsTicketContact = 1 and User does not have any email address.
 
 ```
-Subject: User <UserName> password is expiring on <Expiry Date>
-Body: A password for the user <UserName> on <Expiry Date> is about to expire. Please let the user know.
+Subject: User \<UserName> password is expiring on \<Expiry Date>
+Body: A password for the user \<UserName> on \<Expiry Date> is about to expire. Please let the user know.
 
 To generate a ticket for the user, please set the correct email address for the @FieldName@ account in Active Directory.
 
@@ -194,10 +194,10 @@ Emailing can be enabled by setting the global variable EmailUser = 1
 For EmailUser = 1 and User does have an email address 
 
 ```
-Subject: User <UserName> password is expiring on <Expiry Date>
+Subject: User \<UserName> password is expiring on \<Expiry Date>
 Body: 
-Dear <UserName>,
-Your Domain Password will expire at <Expiry Date>. Once expired, you will no longer be able to log into your computer with your domain user.
+Dear \<UserName>,
+Your Domain Password will expire at \<Expiry Date>. Once expired, you will no longer be able to log into your computer with your domain user.
 Please change your password as soon as possible.
 
 If you believe the password has already been changed or that this is a false alert, kindly get in touch with your Automate administrator so they can review the "Active Directory Domains" plugin.
@@ -211,8 +211,8 @@ Sample:
 For EmailUser = 1, User does not have an email address, and DefaultEmailAddress is set.
 
 ```
-Subject: User <UserName> password is expiring on <Expiry Date>
-Body: A password for the user <UserName> on <Expiry Date> is about to expire. Please let the user know.
+Subject: User \<UserName> password is expiring on \<Expiry Date>
+Body: A password for the user \<UserName> on \<Expiry Date> is about to expire. Please let the user know.
 To inform the user directly, please set the correct email address for the @FieldName@ account in Active Directory.
 
 If you believe the password has already been changed or that this is a false alert, kindly get in touch with your Automate administrator so they can review the "Active Directory Domains" plugin.
@@ -220,5 +220,6 @@ If you believe the password has already been changed or that this is a false ale
 
 Sample:  
 ![Default Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_10.png)
+
 
 

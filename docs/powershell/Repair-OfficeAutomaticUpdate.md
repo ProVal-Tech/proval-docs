@@ -26,12 +26,13 @@ Checks the following common failures:
   - If the task is present but not in a 'ready' state, the task will be enabled.
 
 ```powershell
-PS C:> Repair-OfficeAutomaticUpdate.ps1
+PS C:\> Repair-OfficeAutomaticUpdate.ps1
 Performs a check and repair of Office 365.
 ```
 
 ## Output
 - `.\Repair-OfficeAutomaticUpdate-log.txt`
 - `.\Repair-OfficeAutomaticUpdate-error.txt`
+
 
 

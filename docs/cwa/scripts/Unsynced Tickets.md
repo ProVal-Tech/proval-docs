@@ -70,18 +70,19 @@ Schedule:
 
 **Body:** 
 ```
-There were <Count of Unsynced Tickets> tickets that failed to sync to the PSA in the past <Threshold> hour(s). Their details have been outlined below:
+There were \<Count of Unsynced Tickets> tickets that failed to sync to the PSA in the past \<Threshold> hour(s). Their details have been outlined below:
 
-Client: <Client Name> (<ClientID>)
-Computer: <Computer Name> (<ComputerID>)
-CWA Ticket #: <CW Automate TicketID>
-Ticket Subject: <Ticket Subject>
-Ticket Creation Date: <Ticket Creation Date>
-Ticket Status: <Ticket Status>
-Ticket Body: <Ticket Body>
+Client: \<Client Name> (\<ClientID>)
+Computer: \<Computer Name> (\<ComputerID>)
+CWA Ticket #: \<CW Automate TicketID>
+Ticket Subject: \<Ticket Subject>
+Ticket Creation Date: \<Ticket Creation Date>
+Ticket Status: \<Ticket Status>
+Ticket Body: \<Ticket Body>
 ```
 
 **Sample Screenshot:**
 ![Sample Screenshot](../../../static/img/Unsynced-Tickets/image_5.png)
+
 
 

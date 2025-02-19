@@ -144,9 +144,9 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
-$regPath = 'HKLM:\SYSTEM\CurrentControlSet\Services\SentinelAgent'
+$regPath = 'HKLM://SYSTEM//CurrentControlSet//Services//SentinelAgent'
 if ( Test-Path -Path $regPath ) {
-    $ctlPath = \"$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))\.exe', 'SentinelCtl.exe' -Replace '/\"','')\"
+    $ctlPath = \"$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))//.exe', 'SentinelCtl.exe' -Replace '/\"','')\"
     if ( !(Test-Path -Path $ctlPath) ) {
         throw 'SentinelCtl.exe not found.'
     }
@@ -285,6 +285,7 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/SentinelOne-Management-Console-Validation/image_41.png)  
+
 
 
 

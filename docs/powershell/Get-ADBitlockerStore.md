@@ -29,15 +29,16 @@ Gathers all existing Bitlocker key protectors and formats them into PSObjects.
 
 ```
 Example Output Object:
-DistinguishedName       : <redacted>
+DistinguishedName       : \<redacted>
 Name                    : 2021-09-25T15:28:43-05:00{07BE58FA-493A-49FA-B300-CB5B5123EF11}
 Created                 : 9/29/2021 7:34:46 AM
 Deleted                 :
 RecoveryGUID            : 07be58fa-493a-49fa-b300-cb5b5123ef11
-RecoveryPassword        : <redacted>
+RecoveryPassword        : \<redacted>
 VolumeGUID              : bf089cd1-fd99-4b77-b4f6-f8f2673aa2ae
-ParentDistinguishedName : <redacted>
+ParentDistinguishedName : \<redacted>
 ParentSID               : S-1-5-21-3684404077-2748133095-2161390432-2690
 ```
+
 
 

@@ -23,10 +23,10 @@ Describe how the payload is executed and if it requires any parameters. Delete t
 Explanation of the usage of the below examples.
 
 ```powershell
-c:> TargetUpgradeVersion.ps1 -Version 2004
+c:\> TargetUpgradeVersion.ps1 -Version 2004
 ```
 ```powershell
-c:> TargetUpgradeVersion.ps1 -Undo
+c:\> TargetUpgradeVersion.ps1 -Undo
 ```
 
 ## Parameters
@@ -43,5 +43,6 @@ Location of output for log, result, and error files.
 .\Set-TargetUpgradeVersion-data.txt
 .\Set-TargetUpgradeVersion-error.txt
 ```
+
 
 

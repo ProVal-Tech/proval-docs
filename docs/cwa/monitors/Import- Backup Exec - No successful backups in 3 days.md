@@ -31,7 +31,7 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference = /'SilentlyContinue/'; $StartTime= (Get-Date).AddDays(-3); $EndTime= (Get-Date); if(Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=/'Application/'; id=34112; ProviderName = /'Backup Exec/'; StartTime = $StartTime; EndTime = $EndTime} ) { return /'Good/' } Else {return /'Problematic/'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference = /'SilentlyContinue/'; $StartTime= (Get-Date).AddDays(-3); $EndTime= (Get-Date); if(Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=/'Application/'; id=34112; ProviderName = /'Backup Exec/'; StartTime = $StartTime; EndTime = $EndTime} ) { return /'Good/' } Else {return /'Problematic/'}"' as `DataOut`,
 '9' as `Comparor`,
 'Problematic' as `DataIn`,
 '' as `IDField`,
@@ -120,7 +120,7 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference = /'SilentlyContinue/'; $StartTime= (Get-Date).AddDays(-3); $EndTime= (Get-Date); if(Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=/'Application/'; id=34112; ProviderName = /'Backup Exec/'; StartTime = $StartTime; EndTime = $EndTime} ) { return /'Good/' } Else {return /'Problematic/'}"' as `DataOut`,
+'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference = /'SilentlyContinue/'; $StartTime= (Get-Date).AddDays(-3); $EndTime= (Get-Date); if(Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=/'Application/'; id=34112; ProviderName = /'Backup Exec/'; StartTime = $StartTime; EndTime = $EndTime} ) { return /'Good/' } Else {return /'Problematic/'}"' as `DataOut`,
 '9' as `Comparor`,
 'Problematic' as `DataIn`,
 '' as `IDField`,
@@ -199,5 +199,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
 
 
