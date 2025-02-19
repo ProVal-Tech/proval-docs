@@ -98,14 +98,14 @@ Input the following:
 Paste in the following PowerShell script and set the expected script execution time to `1500` seconds.
 
 ```
-$installed = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+$installed = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
 if ($installed -match 'Huntress') {
     Write-Output 'Huntress agent is installed already.'
 } else {
     #region Setup - Variables
     $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C://ProgramData//_Automation//Script//Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory//Invoke-HuntressAgentCommand.ps1"
+    $WorkingDirectory = 'C:\\ProgramData\\_Automation\\Script\\Invoke-HuntressAgentCommand'
+    $PS1Path = "$WorkingDirectory\\Invoke-HuntressAgentCommand.ps1"
     $AcctKey = '@acct_key@'
     $OrgKey = '@Org_Key@'
     $Tags = '@tags@'
@@ -169,7 +169,7 @@ if ($installed -match 'Huntress') {
     #endregion
 
     Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+    $installed = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
     if ($installed -match 'Huntress') {
         Write-Output 'Huntress agent is installed successfully.'
     } else {
@@ -312,6 +312,5 @@ The other custom fields can be left blank.
 
 **Note:**  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.
-
 
 

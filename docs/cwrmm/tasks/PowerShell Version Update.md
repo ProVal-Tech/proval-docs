@@ -133,7 +133,7 @@ if ((Get-Service wuauserv).StartType -eq 'Disabled') {
 }  
 
 Write-Host "Target download URL: $url"  
-$downloadFileName = $url -split '/' | Select-Object -Last 1  
+$downloadFileName = $url -split '\' | Select-Object -Last 1  
 $downloadFilePath = "$env:TEMP/$downloadFileName"  
 $pathToMSU = "$env:TEMP/$downloadFileName"  
 (New-Object Net.WebClient).DownloadFile($url, $downloadFilePath)  
@@ -165,7 +165,6 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
-
 
 
 

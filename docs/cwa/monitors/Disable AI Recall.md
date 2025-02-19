@@ -40,7 +40,7 @@ LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)/r
 'Select||=||=||=|^Select|||||||^' AS `ListData`,
 '0' AS `FolderID`,
 'e092aede-3e39-11ef-85af-8600008a66b7' AS `GUID`,
-'\\\\<LabTechAbstractSearch>\\\\<asn>\\\\<st>AndNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%windows 11%\\\\</dv>\\\\<dk>%windows 11%\\\\</dk>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</LabTechAbstractSearch>' AS `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%windows 11%</dv><dk>%windows 11%</dk></asn></cn></asn></LabTechAbstractSearch>' AS `SearchXML`,
 '' AS `UpdatedBy`,
 '' AS `UpdateDate`
 FROM (SELECT MIN(computerid) FROM computers) a
@@ -60,14 +60,14 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Disable AI Recall' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Failed to Disable AI Recall on %COMPUTERNAME%~~~AI Recall is successfully Disabled!!!Failed to Disable AI Recall on %COMPUTERNAME%~~~Failed to Disable AI Recall on %COMPUTERNAME% on %CLIENTNAME%////%COMPUTERNAME% at %LOCATIONNAME%' as `AlertMessage`,
+'Failed to Disable AI Recall on %COMPUTERNAME%~~~AI Recall is successfully Disabled!!!Failed to Disable AI Recall on %COMPUTERNAME%~~~Failed to Disable AI Recall on %COMPUTERNAME% on %CLIENTNAME%\\\\%COMPUTERNAME% at %LOCATIONNAME%' as `AlertMessage`,
 '0' as `ContactID`,
 '1800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//system32//cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Command \"$paths = @(/'HKCU://Software//Policies//Microsoft//Windows//WindowsAI/',/'HKLM://SOFTWARE//Policies//Microsoft//Windows//WindowsAI/');$name = /'DisableAIDataAnalysis/';$value = 1;foreach ($path in $paths) {try {if (-Not (Test-Path $path)) {New-Item -Path $path -Force | out-null  }Set-ItemProperty -Path $path -Name $name -Value $value -Type DWord  | out-null }catch{Write-Output /'Failed to set $name at $path/'}}\" as `DataOut`,
+'C:\\Windows\\system32\\cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Command \"$paths = @(\'HKCU:\\Software\\Policies\\Microsoft\\Windows\\WindowsAI\',\'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI\');$name = \'DisableAIDataAnalysis\';$value = 1;foreach ($path in $paths) {try {if (-Not (Test-Path $path)) {New-Item -Path $path -Force | out-null  }Set-ItemProperty -Path $path -Name $name -Value $value -Type DWord  | out-null }catch{Write-Output \'Failed to set $name at $path\'}}\" as `DataOut`,
 '16' as `Comparor`,
-'10|^(()%7C %7C(OK)%7C(////r////n))$|11|^(()%7C %7C(OK)%7C(////r////n))$%7CFailed to set|10|Failed to set' as `DataIn`,
+'10|^(()%7C %7C(OK)%7C(\\\\r\\\\n))$|11|^(()%7C %7C(OK)%7C(\\\\r\\\\n))$%7CFailed to set|10|Failed to set' as `DataIn`,
 '' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -145,14 +145,14 @@ SELECT '' as `AgentID`,
 'ProVal - Production - Disable AI Recall' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'Failed to Disable AI Recall on %COMPUTERNAME%~~~AI Recall is successfully Disabled!!!Failed to Disable AI Recall on %COMPUTERNAME%~~~Failed to Disable AI Recall on %COMPUTERNAME% on %CLIENTNAME%////%COMPUTERNAME% at %LOCATIONNAME%' as `AlertMessage`,
+'Failed to Disable AI Recall on %COMPUTERNAME%~~~AI Recall is successfully Disabled!!!Failed to Disable AI Recall on %COMPUTERNAME%~~~Failed to Disable AI Recall on %COMPUTERNAME% on %CLIENTNAME%\\\\%COMPUTERNAME% at %LOCATIONNAME%' as `AlertMessage`,
 '0' as `ContactID`,
 '1800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//system32//cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Command \"$paths = @(/'HKCU://Software//Policies//Microsoft//Windows//WindowsAI/',/'HKLM://SOFTWARE//Policies//Microsoft//Windows//WindowsAI/');$name = /'DisableAIDataAnalysis/';$value = 1;foreach ($path in $paths) {try {if (-Not (Test-Path $path)) {New-Item -Path $path -Force | out-null  }Set-ItemProperty -Path $path -Name $name -Value $value -Type DWord  | out-null }catch{Write-Output /'Failed to set $name at $path/'}}\" as `DataOut`,
+'C:\\Windows\\system32\\cmd.exe /c powershell.exe -ExecutionPolicy Bypass -Command \"$paths = @(\'HKCU:\\Software\\Policies\\Microsoft\\Windows\\WindowsAI\',\'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI\');$name = \'DisableAIDataAnalysis\';$value = 1;foreach ($path in $paths) {try {if (-Not (Test-Path $path)) {New-Item -Path $path -Force | out-null  }Set-ItemProperty -Path $path -Name $name -Value $value -Type DWord  | out-null }catch{Write-Output \'Failed to set $name at $path\'}}\" as `DataOut`,
 '16' as `Comparor`,
-'10|^(()%7C %7C(OK)%7C(////r////n))$|11|^(()%7C %7C(OK)%7C(////r////n))$%7CFailed to set|10|Failed to set' as `DataIn`,
+'10|^(()%7C %7C(OK)%7C(\\\\r\\\\n))$|11|^(()%7C %7C(OK)%7C(\\\\r\\\\n))$%7CFailed to set|10|Failed to set' as `DataIn`,
 '' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -217,6 +217,5 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
 
 

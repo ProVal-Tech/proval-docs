@@ -26,12 +26,12 @@ INSERT INTO groupagents
 'TLS Version Check - Server' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $protocols = @(/'1.0/',/'1.1/',/'1.2/',/'1.3/'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty \"//HKLM//SYSTEM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Protocols//TLS $($protocol)//Server//\" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]/'6.1/') {$Enabled += @(/'1.0/') -Match $protocol} elseif ($osVer -lt [Version]/'6.2/') {$Enabled += @(/'1.0/',/'1.1/') -Match $protocol} else {$Enabled += @(/'1.0/',/'1.1/',/'1.2/') -Match $Protocol} }}; return $($Enabled -Join /',/')\" as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \'SilentlyContinue\'; $protocols = @(\'1.0\',\'1.1\',\'1.2\',\'1.3\'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty \"\\HKLM\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS $($protocol)\\Server\\\" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]\'6.1\') {$Enabled += @(\'1.0\') -Match $protocol} elseif ($osVer -lt [Version]\'6.2\') {$Enabled += @(\'1.0\',\'1.1\') -Match $protocol} else {$Enabled += @(\'1.0\',\'1.1\',\'1.2\') -Match $Protocol} }}; return $($Enabled -Join \',\')\" as `DataOut`,
 '12' as `Comparor`,
 '' as `DataIn`,
 '' as `IDField`,
@@ -99,12 +99,12 @@ INSERT INTO groupagents
 'TLS Version Check - Server' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/'; $protocols = @(/'1.0/',/'1.1/',/'1.2/',/'1.3/'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty \"//HKLM//SYSTEM//CurrentControlSet//Control//SecurityProviders//SCHANNEL//Protocols//TLS $($protocol)//Server//\" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]/'6.1/') {$Enabled += @(/'1.0/') -Match $protocol} elseif ($osVer -lt [Version]/'6.2/') {$Enabled += @(/'1.0/',/'1.1/') -Match $protocol} else {$Enabled += @(/'1.0/',/'1.1/',/'1.2/') -Match $Protocol} }}; return $($Enabled -Join /',/')\" as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \'SilentlyContinue\'; $protocols = @(\'1.0\',\'1.1\',\'1.2\',\'1.3\'); $Enabled = @() ;foreach ( $protocol in $protocols ) { $Enable = (Get-Itemproperty \"\\HKLM\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS $($protocol)\\Server\\\" -Erroraction SilentlyContinue).Enabled; if ($Enable -ne $Null) {if ($Enable -ge 1) {$Enabled += $protocol} } else {$OSVer = [version](Get-WmiObject Win32_OperatingSystem).Version; if($OSVer -lt [Version]\'6.1\') {$Enabled += @(\'1.0\') -Match $protocol} elseif ($osVer -lt [Version]\'6.2\') {$Enabled += @(\'1.0\',\'1.1\') -Match $protocol} else {$Enabled += @(\'1.0\',\'1.1\',\'1.2\') -Match $Protocol} }}; return $($Enabled -Join \',\')\" as `DataOut`,
 '12' as `Comparor`,
 '' as `DataIn`,
 '' as `IDField`,
@@ -168,6 +168,5 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
 
 

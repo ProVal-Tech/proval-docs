@@ -48,15 +48,14 @@ Current Status - %RESULT%
 **%FIELDNAME%:**  
 `The Drive information is outlined below:`  
 ```
-Drive Manufacturer: \\<Drive Manufacturer>
-Drive Model: \\<Drive Model>
-Disk Size: \\<Disk Size in GB>
-Disk Interface: \\<Disk Interface>
+Drive Manufacturer: <Drive Manufacturer>
+Drive Model: <Drive Model>
+Disk Size: <Disk Size in GB>
+Disk Interface: <Disk Interface>
 ```
 
 ## Alert Template
 
 △ Custom - Ticket Creation - Computer
-
 
 

@@ -14,11 +14,11 @@ unlisted: false
 This monitor checks for any problems with the drive or RAID in the past hour. You can also choose how many `Controller errors` and `bad block detected` errors you want to allow in the past hour before the monitor creates a ticket for them. You can set these numbers when you import the monitor set. If you set them to 0, the monitor will not ignore any errors. This means that the monitor will create a ticket even if there is only one of these errors when the number is set to 0. You can find more information and examples about these variables in the implementation document.
 
 ```
-SET @AllowedControllerErrors = \<How many Controller Errors you want to allow\>;
+SET @AllowedControllerErrors = <How many Controller Errors you want to allow>;
 ```
 
 ```
-SET @AllowedBadBlocks = \<How many Bad Blocks you want to allow\>;
+SET @AllowedBadBlocks = <How many Bad Blocks you want to allow>;
 ```
 
 **Warning**:  
@@ -66,6 +66,5 @@ Details:
 
 %RESULT%
 ```
-
 
 

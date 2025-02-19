@@ -95,16 +95,16 @@ SELECT '' AS `AgentID`,
 'ProVal - Production - Lockdown Chromium Browsers Credit Cards and Addresses Autofill' AS `Name`,
 '6' AS `CheckAction`,
 '1' AS `AlertAction`,
-'Chromium Browsers Credit Cards and Addresses Autofill Lockdown - Failed on %CLIENTNAME%//%COMPUTERNAME%~~~Successfully Disabled the Credit Cards and Addresses Autofill for the Installed Browsers. !!!Chromium Browsers Credit Cards and Addresses Autofill Lockdown - Failed on %CLIENTNAME%//%COMPUTERNAME%~~~Credit Cards and Addresses Autofill Lockdown Failed on %CLIENTNAME%//%COMPUTERNAME%. The script was unable to disable the Autofill of Credit Cards and Addresses on the following browsers:
+'Chromium Browsers Credit Cards and Addresses Autofill Lockdown - Failed on %CLIENTNAME%\\%COMPUTERNAME%~~~Successfully Disabled the Credit Cards and Addresses Autofill for the Installed Browsers. !!!Chromium Browsers Credit Cards and Addresses Autofill Lockdown - Failed on %CLIENTNAME%\\%COMPUTERNAME%~~~Credit Cards and Addresses Autofill Lockdown Failed on %CLIENTNAME%\\%COMPUTERNAME%. The script was unable to disable the Autofill of Credit Cards and Addresses on the following browsers:
 %RESULT%
 Manual investigation is required.' AS `AlertMessage`,
 '0' AS `ContactID`,
 '604800' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = ''SilentlyContinue'';$browsers = {''Google Chrome'' = ''HKLM://Software//Policies//Google//Chrome'';''Microsoft Edge'' = ''HKLM://SOFTWARE//Policies//Microsoft//Edge'';''Brave'' = ''HKLM://SOFTWARE//Policies//BraveSoftware//Brave''}; Function Find-Application { Param([Parameter()][String]$Name); if ( Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match /"$Name/" } ) { return $Name } else { return $false } }; Function Get-RegValue { Param([Parameter()][String]$path,$Reg); ( Get-ItemProperty -Path $path )./"$Reg/" }; Function Set-RegValue { Param([Parameter()][String]$path,$Reg); if ( ( Get-RegValue -path $path -Reg $Reg ) -ne ''0'' ) { if ( !( Test-Path $path ) ) { New-Item -Path $path -Force | Out-Null }; Set-ItemProperty -Path $path -Name $Reg -Value 0 -Force } }; $failed = @(); foreach ( $browser in $browsers.Keys ) { if ( Find-Application -Name $browser ) { foreach ( $Reg in (''AutofillAddressEnabled'', ''AutofillCreditCardEnabled'', ''PaymentMethodQueryEnabled'') ) { Set-RegValue -Path $browsers.($browser) -Reg $Reg; if ( ( Get-RegValue -path $browsers.($browser) -Reg $Reg ) -ne ''0'' ) { $failed += $browser } } } }; if ( $failed ) { return /"Failed: $($failed)/" }"' AS `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = ''SilentlyContinue'';$browsers = {''Google Chrome'' = ''HKLM:\\Software\\Policies\\Google\\Chrome'';''Microsoft Edge'' = ''HKLM:\\SOFTWARE\\Policies\\Microsoft\\Edge'';''Brave'' = ''HKLM:\\SOFTWARE\\Policies\\BraveSoftware\\Brave''}; Function Find-Application { Param([Parameter()][String]$Name); if ( Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match /"$Name/" } ) { return $Name } else { return $false } }; Function Get-RegValue { Param([Parameter()][String]$path,$Reg); ( Get-ItemProperty -Path $path )./"$Reg/" }; Function Set-RegValue { Param([Parameter()][String]$path,$Reg); if ( ( Get-RegValue -path $path -Reg $Reg ) -ne ''0'' ) { if ( !( Test-Path $path ) ) { New-Item -Path $path -Force | Out-Null }; Set-ItemProperty -Path $path -Name $Reg -Value 0 -Force } }; $failed = @(); foreach ( $browser in $browsers.Keys ) { if ( Find-Application -Name $browser ) { foreach ( $Reg in (''AutofillAddressEnabled'', ''AutofillCreditCardEnabled'', ''PaymentMethodQueryEnabled'') ) { Set-RegValue -Path $browsers.($browser) -Reg $Reg; if ( ( Get-RegValue -path $browsers.($browser) -Reg $Reg ) -ne ''0'' ) { $failed += $browser } } } }; if ( $failed ) { return /"Failed: $($failed)/" }"' AS `DataOut`,
 '16' AS `Comparor`,
-'10|(^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)|11|(^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))|10|(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))' AS `DataIn`,
+'10|(^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)|11|(^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))|10|(Failed: ((Google Chrome)%7C(Brave)%7C(Microsoft Edge)))' AS `DataIn`,
 '' AS `IDField`,
 '0' AS `AlertStyle`,
 '0' AS `ScriptID`,
@@ -173,6 +173,5 @@ Refresh Searches and Groups.
 Confirm the presence of the `ProVal - Production - Lockdown Chromium Browsers Credit Cards and Addresses Autofill` remote monitor on the `△ Lockdown Browsers Password Manager` group.
 
 ![Image](../../../static/img/Lockdown-Chromium-Browsers-Credit-Cards-and-Addresses-Autofill/image_3.png)
-
 
 

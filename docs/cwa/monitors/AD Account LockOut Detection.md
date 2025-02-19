@@ -37,9 +37,9 @@ SELECT '' as `AgentID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$st = (Get-Date).AddMinutes(-15); $r = Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=\'security\'; id=4740; startTime=$st} | ForEach-Object {$ex = ([xml]$_.ToXml()).Event; $e = [ordered]@{EventDate = [DateTime]$ex.System.TimeCreated.SystemTime};$ex.EventData.ChildNodes | ForEach-Object{$e[$_.Name] = $_.'#text'};[PsCustomObject]$e}; if ($r) { $r | Select-Object  @{n=\'EventID\';e={\'4740\'}}, @{n=\'EventDate\';e={$_.eventdate}}, @{n=\'Username\';e={$_.TargetUserName}}, @{n=\'Endpoint\';e={$_.TargetDomainName}}, @{n=\'Domain\';e={$_.SubjectDomainName}}, @{n=\'DC\'; e={$_.SubjectUserName}} | Format-List }"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$st = (Get-Date).AddMinutes(-15); $r = Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=\'security\'; id=4740; startTime=$st} | ForEach-Object {$ex = ([xml]$_.ToXml()).Event; $e = [ordered]@{EventDate = [DateTime]$ex.System.TimeCreated.SystemTime};$ex.EventData.ChildNodes | ForEach-Object{$e[$_.Name] = $_.'#text'};[PsCustomObject]$e}; if ($r) { $r | Select-Object  @{n=\'EventID\';e={\'4740\'}}, @{n=\'EventDate\';e={$_.eventdate}}, @{n=\'Username\';e={$_.TargetUserName}}, @{n=\'Endpoint\';e={$_.TargetDomainName}}, @{n=\'Domain\';e={$_.SubjectDomainName}}, @{n=\'DC\'; e={$_.SubjectUserName}} | Format-List }"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})EventID)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})EventID' as `DataIn`,
+'10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})EventID)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})EventID' as `DataIn`,
 '' as `IDField`,
 '0' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -107,6 +107,5 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
-
 
 

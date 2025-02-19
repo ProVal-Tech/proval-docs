@@ -26,12 +26,12 @@ SELECT '' as `AgentID`,
 'ProVal - Production - SMB1 Detection' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -nologo -noprofile -Command \"$ErroractionPreference= /'SilentlyContinue/';  $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; /\"$($ver.Major).$($ver.Minor)/\"; if($ver -ge [version]/'6.3/') {if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne /'True/') {return /'False/'} else {return /'True/'} } else { $s =  (Get-Item HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  if ( ( -not $s ) -or ( $s -contains 1 )) {return /'True/'} else {return /'False/'} }\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -nologo -noprofile -Command \"$ErroractionPreference= \'SilentlyContinue\';  $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; /\"$($ver.Major).$($ver.Minor)/\"; if($ver -ge [version]\'6.3\') {if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne \'True\') {return \'False\'} else {return \'True\'} } else { $s =  (Get-Item HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  if ( ( -not $s ) -or ( $s -contains 1 )) {return \'True\'} else {return \'False\'} }"' as `DataOut`,
 '12' as `Comparor`,
 '' as `DataIn`,
 '' as `IDField`,
@@ -97,12 +97,12 @@ SELECT '' as `AgentID`,
 'ProVal - Production - SMB1 Detection' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
-'%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
+'%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -nologo -noprofile -Command \"$ErroractionPreference= /'SilentlyContinue/';  $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; /\"$($ver.Major).$($ver.Minor)/\"; if($ver -ge [version]/'6.3/') {if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne /'True/') {return /'False/'} else {return /'True/'} } else { $s =  (Get-Item HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  if ( ( -not $s ) -or ( $s -contains 1 )) {return /'True/'} else {return /'False/'} }\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -nologo -noprofile -Command \"$ErroractionPreference= \'SilentlyContinue\';  $ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; /\"$($ver.Major).$($ver.Minor)/\"; if($ver -ge [version]\'6.3\') {if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne \'True\') {return \'False\'} else {return \'True\'} } else { $s =  (Get-Item HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  if ( ( -not $s ) -or ( $s -contains 1 )) {return \'True\'} else {return \'False\'} }"' as `DataOut`,
 '12' as `Comparor`,
 '' as `DataIn`,
 '' as `IDField`,
@@ -163,6 +163,5 @@ Now execute your query from a RAWSQL monitor set.
 ### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
-
 
 

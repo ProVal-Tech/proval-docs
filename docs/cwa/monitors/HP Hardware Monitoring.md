@@ -35,29 +35,28 @@ HP servers
 **%FIELDNAME%:**  
 
 ```
-Computer Name: \\<ComputerName>
-Source: \\<Event Source>
+Computer Name: <ComputerName>
+Source: <Event Source>
 
-Event ID: \\<EventID1>
+Event ID: <EventID1>
 Event Type: Error
-Message: \\<Event Message>
-TimeGen: \\<Time of Generation>
+Message: <Event Message>
+TimeGen: <Time of Generation>
 
-Event ID: \\<EventID2>
+Event ID: <EventID2>
 Event Type: Error
-Message: \\<Event Message>
-TimeGen: \\<Time of Generation>
+Message: <Event Message>
+TimeGen: <Time of Generation>
 
-Event ID: \\<EventID3>
+Event ID: <EventID3>
 Event Type: Error
-Message: \\<Event Message>
-TimeGen: \\<Time of Generation>
+Message: <Event Message>
+TimeGen: <Time of Generation>
 
-Event ID: \\<EventIDN>
+Event ID: <EventIDN>
 Event Type: Error
-Message: \\<Event Message>
-TimeGen: \\<Time of Generation>
+Message: <Event Message>
+TimeGen: <Time of Generation>
 ```
-
 
 

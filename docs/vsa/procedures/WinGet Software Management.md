@@ -59,7 +59,7 @@ The parameter must be passed as an array, so ensure it matches as seen in the sc
 12:23:19 pm 6-Jan-23   WinGet Package Install   Success THEN   provaltech.com/dan.hicks  
 12:23:19 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)   Success THEN   provaltech.com/dan.hicks  
 12:23:18 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)-0016   Powershell command complete. Results returned to global variable #global:psresult# and saved in Agent's Documents tab of server.   provaltech.com/dan.hicks  
-12:23:16 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)-0011   Executing 64-bit Powershell command as System: "\"\" -command \"%ProgramData%/_automation/AgentProcedure/WingetProcessor/Invoke-WingetProcessor.ps1 -install -AllowUpdate -PackageId notepad++.notepad++ -InformationAction Continue\" >\"c:/provaltech/psoutputtmp.txt\""   provaltech.com/dan.hicks  
+12:23:16 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)-0011   Executing 64-bit Powershell command as System: "\"\" -command "%ProgramData%/_automation/AgentProcedure/WingetProcessor/Invoke-WingetProcessor.ps1 -install -AllowUpdate -PackageId notepad++.notepad++ -InformationAction Continue\" >\"c:/provaltech/psoutputtmp.txt\""   provaltech.com/dan.hicks  
 12:23:16 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)-0013   Sending output to global variable.   provaltech.com/dan.hicks  
 12:23:16 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)-0008   Custom commands detected as %ProgramData%/_automation/AgentProcedure/WingetProcessor/Invoke-WingetProcessor.ps1 -install -AllowUpdate -PackageId notepad++.notepad++ -InformationAction Continue   provaltech.com/dan.hicks  
 12:23:16 pm 6-Jan-23   Execute Powershell Command (64-bit, Run As System)-0003   No powershell file variable detected.   provaltech.com/dan.hicks  
@@ -87,6 +87,5 @@ Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-Winge
 - Agent Procedure Log
 - Log Files Exported to GetFiles
 - Export JSON Exported to GetFiles and present on endpoint in `%ProgramData%/_automation/AgentProcedure/wingetprocessor`
-
 
 

@@ -34,7 +34,7 @@ WHERE
    'Select||=||=||=|^Select|||||||^' as `ListDATA`,
    '3' as `FolderID`,
    '664b9d5e-b0b0-4e5b-b0e3-3ea9ad184462' as `GUID`, 
-   '\\<LabTechAbstractSearch>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>AndNode\\</st>\\<cn>\\<asn>\\<st>NotNode\\</st>\\<cn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.Network.Domain\\</lon>\\<lok>Computer.Network.Domain\\</lok>\\<lmo>TextLike\\</lmo>\\<dv>DC:%\\</dv>\\<dk>DC:%\\</dk>\\</asn>\\</cn>\\</asn>\\<asn>\\<st>ComparisonNode\\</st>\\<lon>Computer.Network.Domain\\</lon>\\<lok>Computer.Network.Domain\\</lok>\\<lmo>TextLike\\</lmo>\\<dv>%.%\\</dv>\\<dk>%.%\\</dk>\\</asn>\\</cn>\\</asn>\\</cn>\\</asn>\\</LabTechAbstractSearch>' as `SearchXML`
+   '<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>AndNode</st><cn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.Network.Domain</lon><lok>Computer.Network.Domain</lok><lmo>TextLike</lmo><dv>DC:%</dv><dk>DC:%</dk></asn></cn></asn><asn><st>ComparisonNode</st><lon>Computer.Network.Domain</lon><lok>Computer.Network.Domain</lok><lmo>TextLike</lmo><dv>%.%</dv><dk>%.%</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`
 FROM  
    (SELECT MIN(computerid) FROM computers) a
 WHERE  
@@ -61,9 +61,9 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$output = cmd.exe /c nltest /sc_verify:$env:userdomain; if ($LASTEXITCODE -gt 0) { return 'Domain trust relationship failure detected.' + $($output | Out-String)}"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$output = cmd.exe /c nltest /sc_verify:$env:userdomain; if ($LASTEXITCODE -gt 0) { return 'Domain trust relationship failure detected.' + $($output | Out-String)}"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(failed: Status)|10|(failed: Status)' as `DataIn`,
+'10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(failed: Status)|10|(failed: Status)' as `DataIn`,
 '' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -160,9 +160,9 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$output = cmd.exe /c nltest /sc_verify:$env:userdomain; if ($LASTEXITCODE -gt 0) { return 'Domain trust relationship failure detected.' + $($output | Out-String)}"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$output = cmd.exe /c nltest /sc_verify:$env:userdomain; if ($LASTEXITCODE -gt 0) { return 'Domain trust relationship failure detected.' + $($output | Out-String)}"' as `DataOut`,
 '16' as `Comparor`,
-'10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(failed: Status)|10|(failed: Status)' as `DataIn`,
+'10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(failed: Status)|10|(failed: Status)' as `DataIn`,
 '' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -236,6 +236,5 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ## Step 6
 Set the appropriate alert template.
-
 
 

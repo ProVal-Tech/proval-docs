@@ -113,17 +113,17 @@ From Group:
 
 **Ticket Body (Windows OS):**  
 ```
-The agent \\<computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent; however, the Computer ID %computerid% is still not checking in. The last user according to Automate was \\<lastuser>. If this variable is blank, then Automate was unable to determine the last logged-in user.
+The agent <computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent; however, the Computer ID %computerid% is still not checking in. The last user according to Automate was <lastuser>. If this variable is blank, then Automate was unable to determine the last logged-in user.
 
 Manual remediation is required. If you can access the machine, please download the lterrors.txt file typically located in the root Windows directory in the LTSvc folder. (Typical path is C:/Windows/LTSvc/lterrors.txt) This log file may help troubleshoot why the agent isn't able to check in. Most common errors are related to .NET or TLS issues.
 
 The last 20 lines from the log file are as follows:
-\\<ParsedLogs>
+<ParsedLogs>
 ```
 
 **Ticket Body (Non-Windows OS):**  
 ```
-The agent \\<computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent; however, the Computer ID \\<computerid> is still not checking in. The last user according to Automate was \\<lastuser>. If this variable is blank, then Automate was unable to determine the last logged-in user.
+The agent <computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent; however, the Computer ID <computerid> is still not checking in. The last user according to Automate was <lastuser>. If this variable is blank, then Automate was unable to determine the last logged-in user.
 
 Manual remediation is required.
 ```
@@ -151,7 +151,6 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
-
 
 
 

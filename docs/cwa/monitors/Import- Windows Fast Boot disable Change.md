@@ -29,7 +29,7 @@ SELECT
 'Select|||||||^' as `ListData`,
 '0' as `FolderID`,
 '89790899-2354-4e0f-81a5-ceb493359b21' as `GUID`,
-'\\\\<LabTechAbstractSearch>\\\\<asn>\\\\<st>AndNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>OrNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 10%\\\\</dv>\\\\<dk>%Windows 10%\\\\</dk>\\\\</asn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 11%\\\\</dv>\\\\<dk>%Windows 11%\\\\</dk>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</LabTechAbstractSearch>' as `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>OrNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows 10%</dv><dk>%Windows 10%</dk></asn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows 11%</dv><dk>%Windows 11%</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
@@ -48,12 +48,12 @@ INSERT INTO groupagents
 'Windows Fast Boot Disable [Change]' as `Name`,
 '6' as `CheckAction`,
 @DefaultCreateTicket as `AlertAction`,
-'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
+'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$registryPath = \'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power\';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return \'Failed\'} else {return \'Success\'}} else {return \'Success\'}} else {return \'Success\'}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed' as `DataIn`,
 '' as `IDField`,
@@ -125,7 +125,7 @@ SELECT
 'Select|||||||^' as `ListData`,
 '0' as `FolderID`,
 '89790899-2354-4e0f-81a5-ceb493359b21' as `GUID`,
-'\\\\<LabTechAbstractSearch>\\\\<asn>\\\\<st>AndNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>OrNode\\\\</st>\\\\<cn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 10%\\\\</dv>\\\\<dk>%Windows 10%\\\\</dk>\\\\</asn>\\\\<asn>\\\\<st>ComparisonNode\\\\</st>\\\\<lon>Computer.OS.Name\\\\</lon>\\\\<lok>Computer.OS.Name\\\\</lok>\\\\<lmo>TextLike\\\\</lmo>\\\\<dv>%Windows 11%\\\\</dv>\\\\<dk>%Windows 11%\\\\</dk>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</cn>\\\\</asn>\\\\</LabTechAbstractSearch>' as `SearchXML`,
+'<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>OrNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows 10%</dv><dk>%Windows 10%</dk></asn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows 11%</dv><dk>%Windows 11%</dk></asn></cn></asn></cn></asn></LabTechAbstractSearch>' as `SearchXML`,
 (NULL) as `UpdatedBy`,
 (NULL) as `UpdateDate`
 FROM  (SELECT MIN(computerid) FROM computers) a
@@ -144,12 +144,12 @@ INSERT INTO groupagents
 'Windows Fast Boot Disable [Change]' as `Name`,
 '6' as `CheckAction`,
 @DefaultCreateTicket as `AlertAction`,
-'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
+'FastBoot Failed to Disable at %computername%~~~FastBoot is successfully disabled.!!!FastBoot Failed to Disable at %computername%~~~%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for result %RESULT%.' as `AlertMessage`,
 '0' as `ContactID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$registryPath = /'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power/';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return /'Failed/'} else {return /'Success/'}} else {return /'Success/'}} else {return /'Success/'}\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$registryPath = \'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power\';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return \'Failed\'} else {return \'Success\'}} else {return \'Success\'}} else {return \'Success\'}"' as `DataOut`,
 '9' as `Comparor`,
 'Failed' as `DataIn`,
 '' as `IDField`,
@@ -219,6 +219,5 @@ Locate your remote monitor by opening the group(s) remote monitors tab, then app
 
 ![Remote Monitor Tab 1](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_2.png)  
 ![Remote Monitor Tab 2](../../../static/img/Import--Windows-Fast-Boot-disable-Change/image_3.png)
-
 
 

@@ -34,7 +34,7 @@ How to enable it manually: [https://learn.microsoft.com/en-us/troubleshoot/windo
 '604800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"if((Get-CimInstance -ClassName Cim_computersystem).partofdomain -and (Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'})) {try {Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'} | Add-WindowsCapability -Online -Erroraction Stop} catch { return \"Failed to Add RSAT capability. Reason: $($Error[0].Exception.Message)\"}}\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"if((Get-CimInstance -ClassName Cim_computersystem).partofdomain -and (Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'})) {try {Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'} | Add-WindowsCapability -Online -Erroraction Stop} catch { return \"Failed to Add RSAT capability. Reason: $($Error[0].Exception.Message)\"}}"' as `DataOut`,
 '16' as `Comparor`,
 '11|(PowerShell)%7C(Failed to Add RSAT capability. Reason:)|10|PowerShell|10|Failed to Add RSAT capability. Reason:' as `DataIn`,
 '' as `IDField`,
@@ -75,7 +75,7 @@ How to enable it manually: [https://learn.microsoft.com/en-us/troubleshoot/windo
 '604800' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"if((Get-CimInstance -ClassName Cim_computersystem).partofdomain -and (Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'})) {try {Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'} | Add-WindowsCapability -Online -Erroraction Stop} catch { return \"Failed to Add RSAT capability. Reason: $($Error[0].Exception.Message)\"}}\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"if((Get-CimInstance -ClassName Cim_computersystem).partofdomain -and (Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'})) {try {Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'} | Add-WindowsCapability -Online -Erroraction Stop} catch { return \"Failed to Add RSAT capability. Reason: $($Error[0].Exception.Message)\"}}"' as `DataOut`,
 '16' as `Comparor`,
 '11|(PowerShell)%7C(Failed to Add RSAT capability. Reason:)|10|PowerShell|10|Failed to Add RSAT capability. Reason:' as `DataIn`,
 '' as `IDField`,
@@ -102,6 +102,5 @@ Now execute your query from a RAWSQL monitor set.
 ### Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.  
 While assigning the alert template, ensure that it is not performing any actions for WARNINGS unless you want to be notified for the PowerShell errors as well.
-
 
 

@@ -24,7 +24,7 @@ INSERT INTO `sensorchecks`
 SELECT
 '' AS `SensID`,
 'Windows Computers excluding Infrastructure Master' AS `Name`,
-'SSELECT computers.computerid as `Computer Id`,computers.name as `Computer Name`,clients.name as `Client Name`,computers.domain as `Computer Domain`,computers.username as `Computer User`, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'windows/')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'darwin/') >0, 2, 3)) as `Computer.OS.Type`,IFNULL(crd1.RoleDefinitionId,0) as `AD Infrastructure Master-1` FROM Computers LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId) LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId) LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID) LEFT JOIN ComputerRoleDefinitions crd1 ON(crd1.ComputerId=Computers.ComputerId And crd1.RoleDefinitionId=(Select RoleDefinitionId From RoleDefinitions Where Rolename = /'AD Infrastructure Master/') And (crd1.Type=1 OR (crd1.CurrentlyDetected=1 and crd1.Type<>2))) WHERE ((((IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'windows/')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), /'darwin/') >0, 2, 3)) = '1') AND (IFNULL(crd1.RoleDefinitionId,0) =0 ))))' AS `SQL`,
+'SSELECT computers.computerid as `Computer Id`,computers.name as `Computer Name`,clients.name as `Client Name`,computers.domain as `Computer Domain`,computers.username as `Computer User`, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'windows\')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'darwin\') >0, 2, 3)) as `Computer.OS.Type`,IFNULL(crd1.RoleDefinitionId,0) as `AD Infrastructure Master-1` FROM Computers LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId) LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId) LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID) LEFT JOIN ComputerRoleDefinitions crd1 ON(crd1.ComputerId=Computers.ComputerId And crd1.RoleDefinitionId=(Select RoleDefinitionId From RoleDefinitions Where Rolename = \'AD Infrastructure Master\') And (crd1.Type=1 OR (crd1.CurrentlyDetected=1 and crd1.Type<>2))) WHERE ((((IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'windows\')>0, 1, IF(INSTR(IFNULL(inv_operatingsystem.Name, Computers.OS), \'darwin\') >0, 2, 3)) = '1') AND (IFNULL(crd1.RoleDefinitionId,0) =0 ))))' AS `SQL`,
 '4' AS `QueryType`,
 '' AS `ListData`,
 '0' AS `FolderID`,
@@ -60,9 +60,9 @@ SELECT '' as `AgentID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \'SilentlyContinue\';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers"' as `DataOut`,
 '10' as `Comparor`,
-'^(//r//n)|(OK)|()|( )$' as `DataIn`,
+'^(\\r\\n)|(OK)|()|( )$' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -144,9 +144,9 @@ SELECT '' as `AgentID`,
 '900' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= /'SilentlyContinue/';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \'SilentlyContinue\';net accounts /maxpwage:90 1>$Null ; $FailedUsers = @(); foreach ($user in (Get-LocalUser | Where-Object {$_.Enabled -eq $True -and ($_.PasswordExpires -ge (Get-Date).AddDays(90) -or $_.PasswordExpires -eq $Null)} | Select-Object -Expandproperty Name)) { try {set-localuser -Name $user -PasswordNeverExpires:$False -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers"' as `DataOut`,
 '10' as `Comparor`,
-'^(//r//n)|(OK)|()|( )$' as `DataIn`,
+'^(\\r\\n)|(OK)|()|( )$' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -210,6 +210,5 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
 
 
