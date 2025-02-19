@@ -19,7 +19,7 @@ Run the SQL Query to import the 'AD Domain Recycle Bin Feature' role if it's not
 
 ```
 INSERT IGNORE INTO RoleDefinitions( `RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `IsRemote`, `RoleDetectionGuid`, `OSType` ) 
-VALUES('AD Domain Recycle Bin Feature', 'Domain Controller', 'Role', '{%@powershell.exe /"Get-ADOptionalFeature -Identity /'Recycle Bin Feature/'|select -exp enabledscopes|format-list;if ($enabledScopes){Write-Output -InputObject /'Enabled/'}else{Write-Output -InputObject /'Disabled/'}/"@%}', 'eq', 'Enabled', '', '', 0, 0, '', 1, 'c6de5dcd-7ef6-11e8-b703-000c295e5f17', 1);
+VALUES('AD Domain Recycle Bin Feature', 'Domain Controller', 'Role', '{%@powershell.exe /"Get-ADOptionalFeature -Identity \'Recycle Bin Feature\'|select -exp enabledscopes|format-list;if ($enabledScopes){Write-Output -InputObject \'Enabled\'}else{Write-Output -InputObject \'Disabled\'}/"@%}', 'eq', 'Enabled', '', '', 0, 0, '', 1, 'c6de5dcd-7ef6-11e8-b703-000c295e5f17', 1);
 ```
 
 ## Step 3
@@ -32,9 +32,9 @@ SELECT
     'Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as `Computer Name`, Computers.Domain, Computers.UserName as `Username`, Computers.ComputerID
 From Computers, Clients
 Where Computers.ClientID = Clients.ClientID
- and ((Computers.ComputerID in (SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=/'AD Infrastructure Master/') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))))' AS `SQL`, 
+ and ((Computers.ComputerID in (SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=\'AD Infrastructure Master\') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))))' AS `SQL`, 
     '4' AS `QueryType`, 
-    'Computer ID||\\\\<=|*(SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=/'AD Infrastructure Master/') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))|=||=|^Select|||||||^' AS `ListDATA`, 
+    'Computer ID||<=|*(SELECT DISTINCT computerid FROM computers WHERE computerid IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE rolename=\'AD Infrastructure Master\') AND CurrentlyDetected = 1) AND computerid NOT IN (SELECT DISTINCT computerid FROM computerroledefinitions WHERE roledefinitionid = (SELECT Roledefinitionid FROM `roledefinitions` WHERE roledetectionguid = 'c6de5dcd-7ef6-11e8-b703-000c295e5f17') AND CurrentlyDetected = 1))|=||=|^Select|||||||^' AS `ListDATA`, 
     '0' AS `FolderID`,
     'a903f855-1c5d-4ac2-9b56-35ff1b189f9c' AS `GUID`
 FROM
@@ -61,6 +61,5 @@ SELECT
     '6' as `CheckAction`,
     @Alertaction as `AlertAction`,
     '[
-
 
 

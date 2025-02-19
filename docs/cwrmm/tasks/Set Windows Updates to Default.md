@@ -78,15 +78,15 @@ $properties = @(
 
 # For Computer and System account
 $pathArray = @(
-    'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate',
-    'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
-    'HKLM://Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate',
-    'HKLM://Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU',
-    'HKLM://SYSTEM//Internet Communication Management//Internet Communication',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Policies//Microsoft//Windows//WindowsUpdate',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
+    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
+    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
+    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
+    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU',
+    'HKLM:\\SYSTEM\\Internet Communication Management\\Internet Communication',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
 )
 
 foreach ($regPath in $pathArray) {
@@ -108,11 +108,11 @@ foreach ($regPath in $pathArray) {
 
 # For User Account
 $pathArray = @(
-    'Software//Policies//Microsoft//Windows//WindowsUpdate',
-    'Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
-    'Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate',
-    'Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU',
-    'Software//Microsoft//Windows//CurrentVersion//Policies//Explorer'
+    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
+    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
+    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
+    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU',
+    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer'
 )
 
 foreach ($regPath in $pathArray) {
@@ -153,6 +153,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

@@ -22,7 +22,7 @@ INSERT INTO `sensorchecks`
 SELECT
 '' AS `SensID`,
 'Server Role - AD - Infrastructure Master' AS `Name`,
-'SSELECT computers.computerid as `Computer Id`, computers.name as `Computer Name`, clients.name as `Client Name`, computers.domain as `Computer Domain`, computers.username as `Computer User`, IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),//'0//') as `Computer - Extra Data Field - Default - Under MSP Contract`, IFNULL(crd2.RoleDefinitionId,0) as `AD Infrastructure Master-2`, IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),//'0//') as `Computer - Extra Data Field - Default - Exclude MSP Contract`, IF(INSTR(computers.os, //'server//')>0, 1, 0) as `Computer.OS.IsServer` FROM Computers LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId) LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId) LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID) LEFT JOIN ExtraFieldData edfAssigned1 ON (edfAssigned1.id=Computers.ComputerId AND edfAssigned1.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=//'Under MSP Contract//')) LEFT JOIN ExtraFieldData edfDefault1 ON (edfDefault1.id=0 AND edfDefault1.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=//'Under MSP Contract//')) LEFT JOIN ComputerRoleDefinitions crd2 ON (crd2.ComputerId=Computers.ComputerId AND crd2.RoleDefinitionId=(SELECT RoleDefinitionId FROM RoleDefinitions WHERE `RoleName`=//'AD Infrastructure Master//') AND (crd2.Type=1 OR (crd2.CurrentlyDetected=1 AND crd2.Type<>2))) LEFT JOIN ExtraFieldData edfAssigned3 ON (edfAssigned3.id=Computers.ComputerId AND edfAssigned3.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=//'Exclude MSP Contract//')) LEFT JOIN ExtraFieldData edfDefault3 ON (edfDefault3.id=0 AND edfDefault3.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=//'Exclude MSP Contract//')) WHERE ((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),//'0//')<>0) AND (IFNULL(crd2.RoleDefinitionId,0) >0 ) AND (NOT ((IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),//'0//')<>0))) AND (IF(INSTR(computers.os, //'server//')>0, 1, 0)<>0))))
+'SSELECT computers.computerid as `Computer Id`, computers.name as `Computer Name`, clients.name as `Client Name`, computers.domain as `Computer Domain`, computers.username as `Computer User`, IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),\\'0\\') as `Computer - Extra Data Field - Default - Under MSP Contract`, IFNULL(crd2.RoleDefinitionId,0) as `AD Infrastructure Master-2`, IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),\\'0\\') as `Computer - Extra Data Field - Default - Exclude MSP Contract`, IF(INSTR(computers.os, \\'server\\')>0, 1, 0) as `Computer.OS.IsServer` FROM Computers LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId) LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId) LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID) LEFT JOIN ExtraFieldData edfAssigned1 ON (edfAssigned1.id=Computers.ComputerId AND edfAssigned1.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=\\'Under MSP Contract\\')) LEFT JOIN ExtraFieldData edfDefault1 ON (edfDefault1.id=0 AND edfDefault1.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=\\'Under MSP Contract\\')) LEFT JOIN ComputerRoleDefinitions crd2 ON (crd2.ComputerId=Computers.ComputerId AND crd2.RoleDefinitionId=(SELECT RoleDefinitionId FROM RoleDefinitions WHERE `RoleName`=\\'AD Infrastructure Master\\') AND (crd2.Type=1 OR (crd2.CurrentlyDetected=1 AND crd2.Type<>2))) LEFT JOIN ExtraFieldData edfAssigned3 ON (edfAssigned3.id=Computers.ComputerId AND edfAssigned3.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=\\'Exclude MSP Contract\\')) LEFT JOIN ExtraFieldData edfDefault3 ON (edfDefault3.id=0 AND edfDefault3.ExtraFieldId =(SELECT ExtraField.id FROM ExtraField WHERE `name`=\\'Exclude MSP Contract\\')) WHERE ((((IFNULL(IFNULL(edfAssigned1.Value,edfDefault1.value),\\'0\\')<>0) AND (IFNULL(crd2.RoleDefinitionId,0) >0 ) AND (NOT ((IFNULL(IFNULL(edfAssigned3.Value,edfDefault3.value),\\'0\\')<>0))) AND (IF(INSTR(computers.os, \\'server\\')>0, 1, 0)<>0))))
 ' AS `SQL`,
 '4' AS `QueryType`,
 '' AS `ListData`,
@@ -54,9 +54,9 @@ SELECT '' as `AgentID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= //'SilentlyContinue//';net accounts /maxpwage:90 /domain;$FailedUsers = @();foreach ($user in (Get-ADUser -filter {Enabled -eq $True -and PasswordNeverExpires -eq $True} | Select-Object -Expandproperty Name )){ try { Set-ADUser -Identity $user -PasswordNeverExpires $false -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
+'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \\'SilentlyContinue\\';net accounts /maxpwage:90 /domain;$FailedUsers = @();foreach ($user in (Get-ADUser -filter {Enabled -eq $True -and PasswordNeverExpires -eq $True} | Select-Object -Expandproperty Name )){ try { Set-ADUser -Identity $user -PasswordNeverExpires $false -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers"' as `DataOut`,
 '10' as `Comparor`,
-'^((////r////n)|(OK)|()|( ))$' as `DataIn`,
+'^((\\\\r\\\\n)|(OK)|()|( ))$' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -127,9 +127,9 @@ SELECT '' as `AgentID`,
 '86400' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:////Windows////System32////WindowsPowerShell////v1.0////powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= //'SilentlyContinue//';net accounts /maxpwage:90 /domain;$FailedUsers = @();foreach ($user in (Get-ADUser -filter {Enabled -eq $True -and PasswordNeverExpires -eq $True} | Select-Object -Expandproperty Name )){ try { Set-ADUser -Identity $user -PasswordNeverExpires $false -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers\"' as `DataOut`,
+'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \\'SilentlyContinue\\';net accounts /maxpwage:90 /domain;$FailedUsers = @();foreach ($user in (Get-ADUser -filter {Enabled -eq $True -and PasswordNeverExpires -eq $True} | Select-Object -Expandproperty Name )){ try { Set-ADUser -Identity $user -PasswordNeverExpires $false -Erroraction Stop} catch {$FailedUsers += $User}}; $FailedUsers"' as `DataOut`,
 '10' as `Comparor`,
-'^((////r////n)|(OK)|()|( ))$' as `DataIn`,
+'^((\\\\r\\\\n)|(OK)|()|( ))$' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -183,7 +183,6 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
-
 
 
 

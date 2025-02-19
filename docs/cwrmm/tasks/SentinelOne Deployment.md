@@ -209,20 +209,20 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
 ```
-$regInstallPath = 'HKLM://SYSTEM//CurrentControlSet//Services//SentinelAgent//config'
+$regInstallPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SentinelAgent\\config'
 if (Test-Path -Path $regInstallPath) {
     return 'SUCCESS - SentinelOne agent already installed.'
 }
 $siteToken = '@S1SiteToken@'
-$tempDirectory = "$env:SystemDrive//temp"
-$installerPath = "$tempDirectory//SentinelOneAgent-Windows.msi"
+$tempDirectory = "$env:SystemDrive\\temp"
+$installerPath = "$tempDirectory\\SentinelOneAgent-Windows.msi"
 $downloadUri = "https://cwa.connectwise.com/tools/sentinelone/SentinelOneAgent-Windows_$(if([System.Environment]::Is64BitOperatingSystem) { '64' } else { '32' })bit.msi"
 mkdir $tempDirectory -ErrorAction SilentlyContinue | Out-Null
 (New-Object System.Net.WebClient).DownloadFile($downloadUri, $installerPath)
 if (!(Test-Path $installerPath)) {
     return 'ERROR - File download failed.'
 }
-Start-Process -FilePath "$env:windir//system32//msiexec.exe" -ArgumentList '/i', $installerPath, "SITE_TOKEN=$siteToken", '/QUIET', '/NORESTART', '/L*V', "$tempDirectory//S1Install.log" -Wait | Out-Null
+Start-Process -FilePath "$env:windir\\system32\\msiexec.exe" -ArgumentList '/i', $installerPath, "SITE_TOKEN=$siteToken", '/QUIET', '/NORESTART', '/L*V', "$tempDirectory\\S1Install.log" -Wait | Out-Null
 if (Test-Path -Path $regInstallPath) {
     return 'SUCCESS - SentinelOne agent installed.'
 } else {
@@ -385,7 +385,6 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 
 - Script Log
 - Custom Field
-
 
 
 

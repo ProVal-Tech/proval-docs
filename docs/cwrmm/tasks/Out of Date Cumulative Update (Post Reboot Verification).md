@@ -90,10 +90,10 @@ if ( $TaskRunTime -eq '0001-01-01 00:00:00' ) {
     return 'Exit'
 } else {
     $Uptime = ( systeminfo | Find 'System Boot Time' )
-    if ( $Uptime -match '([0-9]{1,2}///[0-9]{1,2}///[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
+    if ( $Uptime -match '([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
         $uptime = $Matches[1]
     }
-    $uptime = $uptime -replace '///', '-' -replace ',', ''
+    $uptime = $uptime -replace '\\\', '-' -replace ',', ''
     if ( [DateTime]$uptime -ge [DateTime]$TaskRunTime ) {
         return 'Rebooted'
     } else {
@@ -287,6 +287,5 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script Log
 - Custom Field
-
 
 

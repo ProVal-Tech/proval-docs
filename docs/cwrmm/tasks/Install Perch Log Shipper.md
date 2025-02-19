@@ -104,11 +104,11 @@ $ProjectName = 'Install-PerchLogShipper'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
-$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
+$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
+$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory//$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory//$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
@@ -175,6 +175,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

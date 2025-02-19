@@ -34,7 +34,7 @@ The script has various "report modes" that can be invoked at the same time. This
 In XML mode, the following commands are run to export the reports:
 
 ```powershell
-gpresult.exe /SCOPE USER /USER \\<DiscoveredUsername> /X "$Path\\gpresult_user.xml" /F
+gpresult.exe /SCOPE USER /USER <DiscoveredUsername> /X "$Path\\gpresult_user.xml" /F
 gpresult.exe /SCOPE COMPUTER /X "$Path\\gpresult_computer.xml" /F
 ```
 
@@ -42,7 +42,7 @@ gpresult.exe /SCOPE COMPUTER /X "$Path\\gpresult_computer.xml" /F
 In HTML mode, the following commands are run to export the reports:
 
 ```powershell
-gpresult.exe /SCOPE USER /USER \\<DiscoveredUsername> /H "$Path\\gpresult_user.html" /F
+gpresult.exe /SCOPE USER /USER <DiscoveredUsername> /H "$Path\\gpresult_user.html" /F
 gpresult.exe /SCOPE COMPUTER /H "$Path\\gpresult_computer.html" /F
 ```
 
@@ -50,7 +50,7 @@ gpresult.exe /SCOPE COMPUTER /H "$Path\\gpresult_computer.html" /F
 In RSOP mode, the following commands are run to export the reports:
 
 ```powershell
-gpresult.exe /SCOPE USER /USER \\<DiscoveredUsername> /R
+gpresult.exe /SCOPE USER /USER <DiscoveredUsername> /R
 gpresult.exe /SCOPE COMPUTER /R
 ```
 
@@ -79,7 +79,7 @@ The PSObject array will be returned by the cmdlet.
 In SQL mode, the same logic from PSObject mode applies; however, instead of returning an array of PSObjects, an `INSERT` statement is returned with two placeholders for the receiving process to replace. The statement will be in the following format:
 
 ```sql
-INSERT INTO \\<tablename> VALUES (\\<idvalue>, '$($gpo.Type)', '$($gpo.Principal)', '$($gpo.Domain)', '$($gpo.SOM)', '$($gpo.Name)', $($gpo.Enabled), $($gpo.IsValid), '$($gpo.SecurityFilter -join ',')'), (\\<idvalue>, ...), (\\<idvalue>, ...)
+INSERT INTO <tablename> VALUES (<idvalue>, '$($gpo.Type)', '$($gpo.Principal)', '$($gpo.Domain)', '$($gpo.SOM)', '$($gpo.Name)', $($gpo.Enabled), $($gpo.IsValid), '$($gpo.SecurityFilter -join ',')'), (<idvalue>, ...), (<idvalue>, ...)
 ```
 
 The placeholders are made as generic as possible to facilitate compatibility with various SQL engines. If both the `PSObject` and `SQL` report types are requested, then the `SQL` report will supersede the `PSObject` report.
@@ -142,6 +142,5 @@ $reportOutput = .\\Get-GPResult.ps1 -ReportType PSObject -ExcludeComputer
 - `./gpresult_user.xml`
 - `./gpresult.sql`
 - Returns a simple INSERT statement string with `tablename` and `idvalue` placeholders that can be replaced.
-
 
 

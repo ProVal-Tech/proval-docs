@@ -78,16 +78,16 @@ SELECT '' AS `AgentID`,
 'SMB1 Traffic Detection' AS `Name`,
 '6' AS `CheckAction`,
 '1' AS `AlertAction`,
-'SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic not detected.!!!SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic detected on %CLIENTNAME%//%COMPUTERNAME% in the past 1 hour. 
+'SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic not detected.!!!SMB1 Traffic Detected on %COMPUTERNAME%~~~SMB1 Traffic detected on %CLIENTNAME%\\%COMPUTERNAME% in the past 1 hour. 
 Details: 
 %RESULT%' AS `AlertMessage`,
 '0' AS `ContactID`,
 '3600' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "if ( !( (Get-SmbServerConfiguration).AuditSmb1Access ) ) { try { Set-SmbServerConfiguration –AuditSmb1Access $true -Force -confirm:$false -ErrorAction Stop } catch { return /"Failure Reason: $($Error[0].Exception.Message)/" } } else {function Get-SMB1AccessLogs { param([int[]]$Level,[int[]]$EventID,[int]$Hours); $filter = @{LogName = 'Microsoft-Windows-SMBServer*'; Level = $Level};if ($EventID) {$filter.ID = $EventID};if ($Hours) {$filter.StartTime = (Get-Date).AddHours(-$Hours)};try {Get-WinEvent -FilterHashtable $filter -ErrorAction Stop } catch { if ( $Error[0].Exception.Message -match 'No events were found' ) { return 'No events were found that match the specified selection criteria'} else { return /"Complete Failure: $($Error[0].Exception.Message)/" } } }; Get-SMB1AccessLogs -Level 4 -EventID 1001,3000 -Hours 1 | Format-List}"' AS `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "if ( !( (Get-SmbServerConfiguration).AuditSmb1Access ) ) { try { Set-SmbServerConfiguration –AuditSmb1Access $true -Force -confirm:$false -ErrorAction Stop } catch { return /"Failure Reason: $($Error[0].Exception.Message)/" } } else {function Get-SMB1AccessLogs { param([int[]]$Level,[int[]]$EventID,[int]$Hours); $filter = @{LogName = 'Microsoft-Windows-SMBServer*'; Level = $Level};if ($EventID) {$filter.ID = $EventID};if ($Hours) {$filter.StartTime = (Get-Date).AddHours(-$Hours)};try {Get-WinEvent -FilterHashtable $filter -ErrorAction Stop } catch { if ( $Error[0].Exception.Message -match 'No events were found' ) { return 'No events were found that match the specified selection criteria'} else { return /"Complete Failure: $($Error[0].Exception.Message)/" } } }; Get-SMB1AccessLogs -Level 4 -EventID 1001,3000 -Hours 1 | Format-List}"' AS `DataOut`,
 '16' AS `Comparor`,
-'10|(^$)%7C^(//r//n%7C//s%7COK)$%7C(No events were found)|11|(^$)%7C^(//r//n%7C//s%7COK)$%7C(No events were found)%7C(Microsoft-Windows-SMBServer)|10|Microsoft-Windows-SMBServer' AS `DataIn`,
+'10|(^$)%7C^(\\r\\n%7C\\s%7COK)$%7C(No events were found)|11|(^$)%7C^(\\r\\n%7C\\s%7COK)$%7C(No events were found)%7C(Microsoft-Windows-SMBServer)|10|Microsoft-Windows-SMBServer' AS `DataIn`,
 '' AS `IDField`,
 '0' AS `AlertStyle`,
 '0' AS `ScriptID`,
@@ -183,6 +183,5 @@ Validate the presence of the `SMB1 Traffic Detection` remote monitor in the grou
 ## Step 6
 
 Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) script for errors/failures.
-
 
 

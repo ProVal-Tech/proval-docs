@@ -117,7 +117,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
             },
             {
                 "ScriptParameter": 1,
-                "Value": "Type the full domain name and username used to run Network Detector (Should be an administrator) in the following format: example.company.com//administrator",
+                "Value": "Type the full domain name and username used to run Network Detector (Should be an administrator) in the following format: example.company.com\\administrator",
                 "PasswordParameter": false
             },
             {
@@ -227,7 +227,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective//nddc.exe",
+                "Value": "C:\\System\\Network Detective\\nddc.exe",
                 "PasswordParameter": false
             }
         ],
@@ -285,12 +285,12 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 1,
-                "Value": "VSASharedFiles//Procedures//Network Detective//",
+                "Value": "VSASharedFiles\\Procedures\\Network Detective\\",
                 "SpecialParameter": "FILE_DIRECTORY_PARAMETER"
             },
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective",
+                "Value": "C:\\System\\Network Detective",
                 "PasswordParameter": false
             },
             {
@@ -371,7 +371,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective",
+                "Value": "C:\\System\\Network Detective",
                 "PasswordParameter": false
             },
             {
@@ -410,12 +410,12 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 1,
-                "Value": "VSASharedFiles//Procedures//Network Detective//",
+                "Value": "VSASharedFiles\\Procedures\\Network Detective\\",
                 "SpecialParameter": "FILE_DIRECTORY_PARAMETER"
             },
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective",
+                "Value": "C:\\System\\Network Detective",
                 "PasswordParameter": false
             },
             {
@@ -663,7 +663,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective//nddc -File C://System//Network Detective//NetworkDetectiveSettings.ndp -ipranges #iprange# -credsuser #aduser# -credspwd #adpswd#",
+                "Value": "C:\\System\\Network Detective\\nddc -File C:\\System\\Network Detective\\NetworkDetectiveSettings.ndp -ipranges #iprange# -credsuser #aduser# -credspwd #adpswd#",
                 "PasswordParameter": false
             },
             {
@@ -726,7 +726,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective//scanresults.ndf",
+                "Value": "C:\\System\\Network Detective\\scanresults.ndf",
                 "PasswordParameter": false
             }
         ],
@@ -753,12 +753,12 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "C://System//Network Detective//scanresults.ndf",
+                "Value": "C:\\System\\Network Detective\\scanresults.ndf",
                 "PasswordParameter": false
             },
             {
                 "ScriptParameter": 1,
-                "Value": "C://System//Network Detective//NDOutput//#vAgentConfiguration.Workgroupdomainname#.ndf",
+                "Value": "C:\\System\\Network Detective\\NDOutput\\#vAgentConfiguration.Workgroupdomainname#.ndf",
                 "PasswordParameter": false
             },
             {
@@ -807,7 +807,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
             },
             {
                 "ScriptParameter": 2,
-                "Value": "Please check for the file in C://System//NDDC//",
+                "Value": "Please check for the file in C:\\System\\NDDC\\",
                 "PasswordParameter": false
             },
             {
@@ -1008,7 +1008,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
             },
             {
                 "ScriptParameter": 1,
-                "Value": "Type the full domain name and username used to run Network Detector (Should be an administrator) in the following format: example.company.com//administrator",
+                "Value": "Type the full domain name and username used to run Network Detector (Should be an administrator) in the following format: example.company.com\\administrator",
                 "PasswordParameter": false
             },
             {
@@ -1118,7 +1118,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "#vAgentConfiguration.agentTempDir#//NetworkDetective//nddc.exe",
+                "Value": "#vAgentConfiguration.agentTempDir#\\NetworkDetective\\nddc.exe",
                 "PasswordParameter": false
             }
         ],
@@ -1176,12 +1176,12 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 1,
-                "Value": "VSASharedFiles//Procedures//Network Detective//",
+                "Value": "VSASharedFiles\\Procedures\\Network Detective\\",
                 "SpecialParameter": "FILE_DIRECTORY_PARAMETER"
             },
             {
                 "ScriptParameter": 0,
-                "Value": "#vagentconfiguration.agenttempdir#//Network Detective",
+                "Value": "#vagentconfiguration.agenttempdir#\\Network Detective",
                 "PasswordParameter": false
             },
             {
@@ -1429,7 +1429,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "#vagentconfiguration.agenttempdir#//NetworkDetective//nddc -File #vagentconfiguration.agenttempdir#//NetworkDetective//NetworkDetectiveSettings.ndp -credsuser #aduser# -credspwd #adpswd#",
+                "Value": "#vagentconfiguration.agenttempdir#\\NetworkDetective\\nddc -File #vagentconfiguration.agenttempdir#\\NetworkDetective\\NetworkDetectiveSettings.ndp -credsuser #aduser# -credspwd #adpswd#",
                 "PasswordParameter": false
             },
             {
@@ -1540,7 +1540,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
         "ParameterValues": [
             {
                 "ScriptParameter": 0,
-                "Value": "#vagentconfiguration.agenttempdir#//NetworkDetective//scanresults.ndf",
+                "Value": "#vagentconfiguration.agenttempdir#\\NetworkDetective\\scanresults.ndf",
                 "PasswordParameter": false
             }
         ],
@@ -1572,12 +1572,12 @@ Directory: VSASharedFiles/Procedures/Network Detective
             },
             {
                 "ScriptParameter": 1,
-                "Value": "#vagentconfiguration.agenttempdir#//NetworkDetective//scanresults.ndf",
+                "Value": "#vagentconfiguration.agenttempdir#\\NetworkDetective\\scanresults.ndf",
                 "PasswordParameter": false
             },
             {
                 "ScriptParameter": 2,
-                "Value": "C://System//Network Detective//NDOutput//#vAgentConfiguration.Workgroupdomainname#.ndf",
+                "Value": "C:\\System\\Network Detective\\NDOutput\\#vAgentConfiguration.Workgroupdomainname#.ndf",
                 "PasswordParameter": false
             },
             {
@@ -1618,7 +1618,7 @@ Directory: VSASharedFiles/Procedures/Network Detective
             },
             {
                 "ScriptParameter": 2,
-                "Value": "Please check for the file in C://System//NDDC//",
+                "Value": "Please check for the file in C:\\System\\NDDC\\",
                 "PasswordParameter": false
             },
             {
@@ -1722,7 +1722,6 @@ Directory: VSASharedFiles/Procedures/Network Detective
     }
 ]
 ```
-
 
 
 

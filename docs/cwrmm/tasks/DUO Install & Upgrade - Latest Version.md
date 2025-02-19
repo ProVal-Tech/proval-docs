@@ -423,9 +423,9 @@ $ArgumentsString = $Arguments -join ' '
 $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 $Content = Invoke-WebRequest [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe) -UseBasicParsing -method Head
-$Content.RawContent -match '(duo[//-a-z0-9//.]*?//.exe)' | Out-Null
+$Content.RawContent -match '(duo[\\-a-z0-9\\.]*?\\.exe)' | Out-Null
 $DuoFilename = $Matches[1]
-if ($DuoFilename -match '(duo[//-a-z0-9//.]*?//.exe)') {
+if ($DuoFilename -match '(duo[\\-a-z0-9\\.]*?\\.exe)') {
     Write-Output "$DuoFilename"
 } else {
     return 'ERROR: URL has an issue'
@@ -439,8 +439,8 @@ $DuoRawHash = $Matches[1]
 
 #region Setup - Variables
 $URL = '[https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe)'
-$WorkingDirectory = 'C://ProgramData//_Automation//Script//DuoAuth'
-$Path = "$WorkingDirectory//DuoInstaller.exe"
+$WorkingDirectory = 'C:\\ProgramData\\_Automation\\Script\\DuoAuth'
+$Path = "$WorkingDirectory\\DuoInstaller.exe"
 #endregion
 ```
 
@@ -475,13 +475,13 @@ if (!(Test-Path -Path $Path)) {
 $DuoVersion = (Get-ItemProperty "$Path").VersionInfo.FileVersion
 $CurrentHash = (Get-FileHash -Path $Path -Algorithm SHA256).Hash
 If ($DuoRawHash -eq $CurrentHash) {
-    $DUOCurrentVersion = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
+    $DUOCurrentVersion = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
     if ($DuoVersion -eq $DUOCurrentVersion) {
         return 'DUO Windows for login is already up to date.'
     } elseif ($DUOCurrentVersion -match '[0-9]') {
         Start-Process -FilePath $Path -ArgumentList "/S /V`/\" REBOOT=ReallySuppress /qn IKEY=`/\"$DUOIKEY`/\" SKEY=`/\"$DUOSKEY`/\" HOST=`/\"$DUOHost`/\" $ArgumentsString`/\"\" -Wait -WindowStyle Hidden
         Start-Sleep -Seconds 30
-        $DUOCurrentVersion = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
+        $DUOCurrentVersion = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
         if ($DuoVersion -eq $DUOCurrentVersion) {
             Write-Output 'Duo Authentication for Windows Logon is successfully updated.'
         } else {
@@ -490,7 +490,7 @@ If ($DuoRawHash -eq $CurrentHash) {
     } else {
         Start-Process -FilePath $Path -ArgumentList "/S /V`/\" REBOOT=ReallySuppress /qn IKEY=`/\"$DUOIKEY`/\" SKEY=`/\"$DUOSKEY`/\" HOST=`/\"$DUOHost`/\" $ArgumentsString`/\"\" -Wait -WindowStyle Hidden
         Start-Sleep -Seconds 30
-        $DUOCurrentVersion = Get-ChildItem -Path HKLM://SOFTWARE//Microsoft//Windows//CurrentVersion//Uninstall, HKLM://SOFTWARE//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
+        $DUOCurrentVersion = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
         if ($DuoVersion -eq $DUOCurrentVersion) {
             Write-Output 'Duo Authentication for Windows Logon is successfully installed.'
         } else {
@@ -643,7 +643,6 @@ Custom Field
 ![Output 1](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_77.png)  
 
 Script Log  
-
 
 
 

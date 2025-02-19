@@ -58,7 +58,7 @@ if($ver -ge [version]'6.3') {
         return 'True'
     } 
 } else { 
-    $s =  (Get-Item HKLM://SYSTEM//CurrentControlSet//Services//LanmanServer//Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  
+    $s =  (Get-Item HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  
     if ( ( -not $s ) -or ( $s -contains 1 )) {
         return 'True' 
     } else {
@@ -157,7 +157,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field - [CW RMM - Custom Field - SMB1 Enabled](<../custom-fields/SMB1 Enabled.md>)
-
 
 
 

@@ -69,7 +69,7 @@ $to_Remove = @ApplicationName@
 if ($to_Remove) {
     $Applications = @()
     $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM://Software//Microsoft//Windows//CurrentVersion//Uninstall//*', 'HKLM://Software//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall//*' | Get-ItemProperty).DisplayName);
+    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*', 'HKLM:\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*' | Get-ItemProperty).DisplayName);
     $for_removal = foreach ($application in $applications) { if ($to_remove -contains $application) { $application } };
     if ($for_removal) { return "'$($for_removal -join ''',''')'" } else { return 'Not Installed' }
 } else {
@@ -137,8 +137,8 @@ $Parameters = @{
 }
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C://ProgramData//_automation//script//$ProjectName"
-$PS1Path = "$WorkingDirectory//$ProjectName.ps1"
+$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
+$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
 #endregion
 
@@ -183,7 +183,7 @@ $to_Remove = @ApplicationName@
 if ($to_Remove) {
     $Applications = @()
     $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM://Software//Microsoft//Windows//CurrentVersion//Uninstall//*', 'HKLM://Software//Wow6432Node//Microsoft//Windows//CurrentVersion//Uninstall//*' | Get-ItemProperty).DisplayName);
+    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*', 'HKLM:\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*' | Get-ItemProperty).DisplayName);
     $for_removal = foreach ($application in $applications) { if ($to_remove -contains $application) { $application } };
     if ($for_removal) { return "'$($for_removal -join ''',''')'" } else { return 'Not Installed' }
 } else {
@@ -283,7 +283,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - Task log
 - Custom field 'Remove Application Result'
-
 
 
 

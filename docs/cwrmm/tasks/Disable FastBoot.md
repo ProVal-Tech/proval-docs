@@ -55,7 +55,7 @@ Search and select the `PowerShell Script` function.
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
 ```powershell
-$registryPath = 'HKLM://SYSTEM//CurrentControlSet//Control//Session Manager//Power'
+$registryPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power'
 if (Test-Path $registryPath) {
     $hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue
     if ($hiberbootEnabled.HiberbootEnabled -eq 1) {
@@ -168,7 +168,6 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 
 - Script Log
 - Custom Field
-
 
 
 

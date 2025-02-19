@@ -68,10 +68,10 @@ Set-StrapperEnvironment
 ```powershell
 # Overwriting Disabled Windows Access for System Account
 $pathArray = @(
-    'Registry::HKEY_USERS//S-1-5-18//Software//Policies//Microsoft//Windows//WindowsUpdate',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate',
-    'Registry::HKEY_USERS//S-1-5-18//Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
+    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
 )
 foreach ($path in $pathArray) {
     if ((Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1) {
@@ -91,10 +91,10 @@ foreach ($path in $pathArray) {
 ```powershell
 # Overwriting Disabled Windows Access for Computer
 $pathArray = @(
-    'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate',
-    'HKLM://Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
-    'HKLM://Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate',
-    'HKLM://Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
+    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
+    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
+    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
+    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
 )
 foreach ($path in $pathArray) {
     if ((Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1) {
@@ -111,10 +111,10 @@ foreach ($path in $pathArray) {
 ```powershell
 # Overwriting Disabled Windows Access for Users
 $pathArray = @(
-    'Software//Policies//Microsoft//Windows//WindowsUpdate',
-    'Software//Policies//Microsoft//Windows//WindowsUpdate//AU',
-    'Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate',
-    'Software//Microsoft//Windows//CurrentVersion//Policies//WindowsUpdate//AU'
+    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
+    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
+    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
+    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
 )
 foreach ($path in $pathArray) {
     if (Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 }) {
@@ -157,6 +157,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

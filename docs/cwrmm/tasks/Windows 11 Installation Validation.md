@@ -90,10 +90,10 @@ if ( $TaskRunTime -eq 'NA' ) {
     return 'NA'
 } else {
     $Uptime = ( systeminfo | Find 'System Boot Time' )
-    if ( $Uptime -match '([0-9]{1,2}///[0-9]{1,2}///[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
+    if ( $Uptime -match '([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
         $uptime = $Matches[1]
     }
-    $uptime = $uptime -replace '///', '-' -replace ',', ''
+    $uptime = $uptime -replace '\\\', '-' -replace ',', ''
     if ( [DateTime]$uptime -ge [DateTime]$TaskRunTime ) {
         if ( ( Get-Ciminstance -ClassName Win32_OperatingSystem ).caption -contains 'Windows 10' ) {
             return 'Failed'
@@ -164,7 +164,6 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 
 - Script Log
 - Custom Field
-
 
 
 

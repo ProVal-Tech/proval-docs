@@ -75,7 +75,7 @@ $ThresholdDays = if ( -not ($ThresholdDays -match '^[0-9]{1,}$') ) { '75' } else
 $url = 'https://proval.itglue.com/DOC-5078775-15739309'
 $iwr = Invoke-WebRequest -Uri $url -UseBasicParsing
 $json = $($iwr.content -split '<code>' -split '</code>' ) -match 'plugin_proval_windows_os_support'
-$json = $json -replace '<br>', "`n" -replace '//', '//' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
+$json = $json -replace '<br>', "`n" -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
 $rows = ( $json | ConvertFrom-Json ).rows
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
 if ( !( $osinfo.caption -match '(Windows 1[01])|(Server 20(1[69]|22))' ) ) {
@@ -124,14 +124,14 @@ $comparisionurl = if ( $osinfo.Name -Match '(Windows 10)|(Server 201[69])' ) {
 if ( $comparisionurl -eq 'Unsupported Operating System' ) {
     throw $comparisionurl
 }
-$UBR = (Get-ItemProperty 'HKLM://SOFTWARE//Microsoft//Windows NT//CurrentVersion' -ErrorAction SilentlyContinue).UBR
+$UBR = (Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' -ErrorAction SilentlyContinue).UBR
 $Build = "$($osinfo.buildnumber).$($UBR)"
 $OSBuild = "$((($osinfo).Version).$($UBR))"
-if (!($Build -match '[0-9]{5}//.[0-9]{3,5}')) {
+if (!($Build -match '[0-9]{5}\\.[0-9]{3,5}')) {
     $OSBuild = (cmd.exe /c ver)
-    $OSBuild = ($OSBuild -replace '[//[//]A-z//s]', '')[1]
-    $Build = ($OsBuild -split '//.')[2, 3] -join '.'
-    if (!($build -match '[0-9]{5}//.[0-9]{3,5}')) {
+    $OSBuild = ($OSBuild -replace '[\\[\\]A-z\\s]', '')[1]
+    $Build = ($OsBuild -split '\\.')[2, 3] -join '.'
+    if (!($build -match '[0-9]{5}\\.[0-9]{3,5}')) {
         throw 'Failed to gather build number'
     }
 }
@@ -144,7 +144,7 @@ if ( !( $osinfo.Name -Match 'Server 2022' ) ) {
         $KBid = ''
     } else {
         $KBid = $($($KBhtml -split '/\">' -split '</a') -Match 'KB[0-9]{7}').Trim()
-        $SupportURL = $($($Kbhtml -Split '=/\"' -split '/\"') -match 'https').Trim()
+        $SupportURL = $($($Kbhtml -Split '=/"' -split '/"') -match 'https').Trim()
         $ReleaseDate = $($($Kbhtml -split '<td>' -split '</td>') -match '[0-9]{4}(-[0-9]{2}){2}').Trim()
         $PatchInfoHTML = (Invoke-WebRequest -Uri $SupportUrl -UseBasicParsing).Links.OuterHTML
         $PatchInfoHTML = ($PatchInfoHTML -Match $KBid)[0]
@@ -161,7 +161,7 @@ if ( !( $osinfo.Name -Match 'Server 2022' ) ) {
 $Month = $([datetime]$releasedate).Tostring('MMMM')
 $CUString = "$ReleaseDate $KBid $Month Cumulative Update$(if($patchInfoString -Match 'Preview') {' Preview'})"
 $CUInfo = [PSCustomObject]@{
-    LastInstalledCU = if ( $kbid -notmatch '[0-9]') { $null } else { $CUString -replace '////', '////' -replace "'", "/'" -replace "$([char]0x2018)|$([char]0x2019)", "/'" };
+    LastInstalledCU = if ( $kbid -notmatch '[0-9]') { $null } else { $CUString -replace '\\\\', '\\\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'" };
     OSBuild = $OSBuild
     ReleaseDate = $ReleaseDate
     KBid = $KBid
@@ -260,7 +260,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Custom Field**
 ![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
-
 
 
 
