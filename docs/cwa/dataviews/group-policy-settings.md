@@ -1,7 +1,7 @@
 ---
 id: 'ea24f672-d2cd-41bc-8b62-2dcd20085d29'
-title: 'Windows - Group Policy Settings'
-title_meta: 'Windows - Group Policy Settings'
+title: 'Group Policy Settings'
+title_meta: 'Group Policy Settings'
 keywords: ['gpo', 'audit', 'policy', 'settings', 'active-directory']
 description: 'This document provides a comprehensive overview of the GPO Audit Dataview, detailing the information about Group Policy Objects (GPOs), their applied policies, and settings. It includes dependencies and a breakdown of the data columns for better understanding and utilization.'
 tags: ['active-directory', 'gpo']
@@ -15,10 +15,9 @@ This dataview shows information about GPOs, their applied policies, and settings
 
 ## Dependencies
 
-- [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
+- [Group Policy Audit](../scripts/group-policy-audit.md)
 - [plugin_proval_ad_gp](<../tables/plugin_proval_ad_gp.md>)
 - [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
-- [RSM - Active Directory - Script - Group Policy - Audit](<../scripts/Group Policy - Audit.md>)
 
 ## Columns
 

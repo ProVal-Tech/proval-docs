@@ -1,7 +1,7 @@
 ---
 id: '1da4d5e9-4168-4c21-94cf-9b52fc565bf7'
-title: 'Windows - Group Policy Objects'
-title_meta: 'Windows - Group Policy Objects'
+title: 'Group Policy Objects'
+title_meta: 'Group Policy Objects'
 keywords: ['gpo', 'audit', 'policy', 'trustee', 'linked', 'information', 'output']
 description: 'This document provides an overview of a dataview that displays information about Group Policy Objects (GPOs), including their applied policies, linkage locations, and trustees. It also outlines the dependencies required for the dataview to function and details the columns included in the output.'
 tags: ['active-directory', 'report', 'windows']
@@ -15,9 +15,8 @@ This dataview shows information about GPOs, their applied policies, where they a
 
 ## Dependencies
 
-- [Start-GPOAudit](https://proval.itglue.com/DOC-5078775-7457846)
+- [Group Policy Audit](../scripts/group-policy-audit.md)
 - [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
-- [RSM - Active Directory - Script - Group Policy - Audit](<../scripts/Group Policy - Audit.md>)
 
 ## Columns
 
